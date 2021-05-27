@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: be21be07758c1123cdde38e3750cafe739bfb66a
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 951f78ba361a12e404a5cce2071f931eab30c43f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653686"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689218"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Evaluación de vulnerabilidades de software de exportación por dispositivo
 
@@ -37,21 +37,23 @@ ms.locfileid: "52653686"
 [!include[Prerelease information](../../includes/prerelease.md)]
 >
 >
-Devuelve todas las vulnerabilidades conocidas y sus detalles para todos los dispositivos, por dispositivo.
+Devuelve todas las vulnerabilidades de software conocidas y sus detalles para todos los dispositivos, por dispositivo.
 
 Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser muy grande, hay dos formas de recuperarlos:
 
-- **OData**  La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para _organizaciones pequeñas con menos de 100K dispositivos._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
+- [Evaluación de vulnerabilidades de software de exportación de OData](#1-export-software-vulnerabilities-assessment-odata)  La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para _organizaciones pequeñas con dispositivos de menos de 100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
 
-- **a través de archivos** Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
+- [Evaluación de vulnerabilidades de software de exportación a través de archivos](#2-export-software-vulnerabilities-assessment-via-files) Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
 
   - Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.
 
   - Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
-Los datos recopilados (para _OData_ o _a_ través de archivos) son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
+Los datos recopilados (mediante _OData_ o a través de _archivos)_ son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
 
-A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
+> [!Note]
+>
+> A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
 
 ## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. Evaluación de vulnerabilidades de software de exportación (OData)
 
@@ -93,10 +95,10 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >
 >- Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
 >
->- Las propiedades definidas en la tabla siguiente se enumeran alfanuméricamente, por identificador de propiedad.  Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en estas tablas.
+>- Las propiedades definidas en la tabla siguiente se enumeran alfabéticamente, por identificador de propiedad.  Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en esta tabla.
 >
 
-Propiedad (id) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
+Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 CveId | string | Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE). | CVE-2020-15992
 CvssScore | string | La puntuación CVSS de CVE. | 6.2
@@ -304,10 +306,8 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >
 >- Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
 >
->- Las propiedades definidas en la tabla siguiente se enumeran alfabéticamente, por identificador de propiedad.  Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en estas tablas.
->
 
-Propiedad (id) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
+Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos | cadena de \[ matriz\]  | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
 GeneratedTime | string | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z
@@ -334,7 +334,7 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessmnt-1methods-properties.md)
 

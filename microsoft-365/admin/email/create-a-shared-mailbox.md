@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 35f1de41094c6bf3f806b3e8e01c0a67949c491e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635503"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683252"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -116,42 +116,26 @@ Pero, ¿qué sucede si un administrador simplemente restablece la contraseña de
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
-2. En la lista de cuentas de usuario, busque la cuenta para el buzón de correo compartido (por ejemplo, cambie el filtro a **usuarios sin licencia**).
-
-3. Seleccione el usuario para abrir su panel de propiedades y seleccione el icono **bloquear este usuario** ![captura de pantalla del icono bloquear este usuario](../../media/block-user-icon.png).
-
-   **Nota**: Si la cuenta ya está bloqueada, se mostrará **inicio de sesión bloqueado** en la parte superior y el icono indicará **desbloquear este usuario**.
-
-4. En el panel **¿bloquear este usuario?**, seleccione **impedir que los usuarios inicien sesión** y seleccione **guardar cambios**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
-2. En la lista de cuentas de usuario, busque la cuenta para el buzón de correo compartido (por ejemplo, cambie la vista a **usuarios sin licencia**) y seleccione la cuenta.
-
-3. En el control flotante de propiedades, seleccione **bloquear inicio de sesión**.
-
-    **Nota:** si la cuenta ya se ha bloqueado, el botón diría **desbloquear inicio de sesión**.
-
-4. En el control flotante **editar el estado de inicio de sesión**, compruebe que está activada la opción Bloquear el usuario para iniciar sesión, seleccione **guardar** y, a continuación, **cerrar**.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
-
-2. En la lista de cuentas de usuario, busque la cuenta para el buzón de correo compartido (por ejemplo, cambie la vista a **usuarios sin licencia**) y seleccione la cuenta.
-
-3. En el control flotante de propiedades, seleccione **bloquear inicio de sesión**.
-
-    **Nota:** si la cuenta ya se ha bloqueado, el botón diría **desbloquear inicio de sesión**.
-
-4. En el control flotante **editar el estado de inicio de sesión**, compruebe que está activada la opción Bloquear el usuario para iniciar sesión, seleccione **guardar** y, a continuación, **cerrar**.
 ::: moniker-end
+
+1. En la lista de cuentas de usuario, busque la cuenta para el buzón de correo compartido (por ejemplo, cambie el filtro a **usuarios sin licencia**).
+
+1. Seleccione el usuario para abrir su panel de propiedades y seleccione el icono **bloquear este usuario** ![captura de pantalla del icono bloquear este usuario](../../media/block-user-icon.png).
+
+   **Nota**: Si la cuenta ya está bloqueada, se mostrará **inicio de sesión bloqueado** en la parte superior y el icono indicará **desbloquear este usuario**.
+
+1. En el panel **¿bloquear este usuario?**, seleccione **impedir que los usuarios inicien sesión** y seleccione **guardar cambios**.
 
 Para obtener instrucciones sobre cómo bloquear el inicio de sesión para cuentas con el PowerShell de Azure AD (incluyendo varias cuentas al mismo tiempo), consulte [Bloquear cuentas de usuario con PowerShell de Office 365](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
@@ -172,7 +156,6 @@ Para obtener más información sobre los buzones compartidos en Outlook, consult
 - <a href="https://support.microsoft.com/office/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2" target="_blank">Abrir una carpeta o un buzón compartido en Outlook para Mac</a>
 
 - <a href="https://support.microsoft.com/office/b0963400-2a51-4c64-afc7-b816d737d164" target="_blank">Agregar reglas a un buzón compartido</a>
-
 
 ## <a name="use-a-shared-mailbox-on-a-mobile-device-phone-or-tablet"></a>Usar un buzón compartido en un dispositivo móvil (teléfono o tableta)
 

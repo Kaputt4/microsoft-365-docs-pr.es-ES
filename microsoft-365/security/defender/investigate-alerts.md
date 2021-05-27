@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651359"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689018"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -78,6 +78,23 @@ Una página de alerta se compone de estas secciones:
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el centro Microsoft 365 seguridad":::
 
 A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (**...**) junto a cualquier entidad para ver las acciones disponibles, como abrir la página de alerta o vincular la alerta a otro incidente.
+
+### <a name="alert-sources"></a>Orígenes de alertas
+Microsoft 365 Las alertas de Defender pueden venir de soluciones como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft Cloud App Security. Es posible que observe alertas con caracteres anteponer en la alerta. En la tabla siguiente se proporcionan instrucciones que le ayudarán a comprender la asignación de orígenes de alerta en función del carácter anteponer a la alerta.
+
+> [!NOTE]
+> - Los GUID antediados son específicos solo para experiencias unificadas, como la cola de alertas unificadas, la página de alertas unificadas, la investigación unificada y el incidente unificado.<br>
+> - El carácter anteponer no cambia el GUID de la alerta. El único cambio en el GUID es el componente anteponer.<br>
+
+
+Origen de alertas | Carácter anteponer 
+:---|:---
+Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> 
+Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+
+
 
 ### <a name="analyze-affected-assets"></a>Analizar activos afectados
 
@@ -136,11 +153,11 @@ Una vez que haya terminado de analizar una alerta  y se pueda resolver, vaya al 
 
 Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

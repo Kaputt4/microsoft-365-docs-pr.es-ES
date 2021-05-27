@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar los casos principales de exhibición de documentos electrónicos. Esto incluye cerrar un caso, volver a abrir un caso cerrado y eliminar un caso.
-ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d729c91d4e81ad12d0b4b16574aa4edad8e239a3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532451"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684104"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos principal
 
@@ -92,7 +92,7 @@ Para poder eliminar un caso (ya sea activo o cerrado), primero debe eliminar tod
 
 Para eliminar una retención de exhibición de documentos electrónicos:
 
-1. Vaya a **la pestaña Retenciones** en caso de que desee eliminar.
+1. Vaya a la **pestaña Retenciones** en el caso de que desee eliminar.
 
 2. Seleccione la retención que desea eliminar.
 

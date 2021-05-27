@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Siga la ruta de un mensaje entrante a través de la pila de filtrado de amenazas en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538692"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683300"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 
@@ -111,13 +111,13 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="La fase 4 del filtrado en Defender for Office 365 es la protección posterior a la entrega.":::
 
-1. **Caja fuerte links es** la protección de tiempo de clic de MDO. Cada dirección URL de cada mensaje se ajusta para apuntar a servidores de vínculos de Microsoft Caja fuerte. Cuando se hace clic en una dirección URL, se comprueba con la reputación más reciente, antes de redirigir al usuario al sitio de destino. La dirección URL está asincrónicamente en espacio aislado para actualizar su reputación.
+1. **Caja fuerte links** es Defender para la protección de tiempo de clic de Office 365 de la cuenta. Cada dirección URL de cada mensaje se ajusta para apuntar a servidores de vínculos de Microsoft Caja fuerte. Cuando se hace clic en una dirección URL, se comprueba con la reputación más reciente, antes de redirigir al usuario al sitio de destino. La dirección URL está asincrónicamente en espacio aislado para actualizar su reputación.
 
-2. **Phish Zero-Hour Auto-purge (ZAP)** detecta y neutraliza de forma retroactiva los mensajes de suplantación de identidad malintencionados que ya se han entregado a Exchange Online buzones de correo.
+2. La purga automática de hora cero (ZAP) para la suplantación de identidad **(phishing)** detecta y neutraliza de forma retroactiva los mensajes de suplantación de identidad malintencionados que ya se han entregado a Exchange Online buzones de correo.
 
-3. **Malware ZAP** detecta y neutraliza retroactivamente los mensajes de malware malintencionados que ya se han entregado a Exchange Online buzones de correo.
+3. **ZAP para malware** detecta y neutraliza retroactivamente los mensajes de malware malintencionados que ya se han entregado a Exchange Online buzones de correo.
 
-4. **Zap de** correo no deseado detecta y neutraliza de forma retroactiva los mensajes de correo no deseado malintencionados que ya se han entregado a Exchange Online buzones de correo.
+4. **ZAP para la suplantación** de identidad (phishing) detecta y neutraliza de forma retroactiva los mensajes de correo no deseado malintencionados que ya se han entregado a Exchange Online buzones de correo.
 
 5. **Las vistas de** campaña permiten a los administradores ver la imagen general de un ataque, más rápido y completamente, de lo que cualquier equipo podría sin automatización. Microsoft aprovecha las grandes cantidades de datos contra suplantación de identidad (phishing), antispam y antimalware en todo el servicio para ayudar a identificar las campañas y, a continuación, permite a los administradores investigarlas de principio a fin, incluidos los destinos, los impactos y los flujos, que también están disponibles en una escritura de campaña descargable.
 
@@ -128,7 +128,6 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 8. La protección **para OneDrive, SharePoint** y Teams ofrece la misma protección de datos adjuntos de Caja fuerte contra archivos malintencionados, de forma nativa, dentro de OneDrive, SharePoint y Microsoft Teams.
 
 9. Cuando se selecciona una dirección URL que apunta a un archivo después de la entrega, la **detonación de** contenido vinculado muestra una página de advertencia hasta que se completa el espacio aislado del archivo y se encuentra que la dirección URL es segura.
-
 
 ## <a name="the-filtering-stack-diagram"></a>Diagrama de pila de filtrado
 

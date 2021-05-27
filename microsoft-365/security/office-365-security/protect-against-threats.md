@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624626"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683336"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -41,7 +41,7 @@ Esta es una guía de inicio rápido que divide la configuración de Defender par
 > [!IMPORTANT]
 > **La configuración recomendada inicial se incluye para** cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades de su organización específica. Espere aproximadamente 30 minutos para que las directivas o los cambios funcionen a través del centro de datos.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 ### <a name="subscriptions"></a>Suscripciones
 
@@ -78,27 +78,26 @@ Para configurar Defender para Office 365 directivas, debe tener asignado un rol 
 
 Para obtener más información, vea [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Antes de empezar, active Registro de auditoría para informes e investigación
+### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Activar registro de auditoría para informes e investigación
 
-Inicie el registro de auditoría de forma anticipada. Necesitarás que la auditoría esté **on** para algunos de los pasos que se indican a continuación. El registro de auditoría está disponible en suscripciones que incluyen [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Para ver los datos en los informes de [](view-email-security-reports.md)protección contra amenazas, como el Panel de [seguridad,](security-dashboard.md)los informes de seguridad de correo electrónico y el [Explorador,](threat-explorer.md)el registro de auditoría debe ser *On*. Para obtener más información, vea Activar o desactivar la búsqueda [del registro de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Inicie el registro de auditoría de forma anticipada. Necesitará que la auditoría esté **on** para algunos de los pasos siguientes. El registro de auditoría está disponible en suscripciones que incluyen [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Para ver los datos en los informes de [](view-email-security-reports.md)protección contra amenazas, como el Panel de [seguridad,](security-dashboard.md)los informes de seguridad de correo electrónico y el [Explorador,](threat-explorer.md)el registro de auditoría debe ser *On*. Para obtener más información, vea Activar o desactivar la búsqueda [del registro de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="part-1---anti-malware-protection"></a>Parte 1: protección contra malware
 
-[La protección contra malware](anti-malware-protection.md) está disponible en suscripciones que incluyen [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+Para obtener más información acerca de la configuración recomendada para antimalware, vea [EOP anti-malware policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
 
-1. En el [Centro de seguridad & cumplimiento,](https://protection.office.com)elija Directiva de administración de **amenazas** \>  \> **Antimalware**.
+1. Abra <https://security.microsoft.com/antimalwarev2> .
 
-2. Haga doble clic en **la directiva** Predeterminada y, a continuación, elija **configuración**.
+2. Seleccione la directiva predeterminada haciendo clic en el nombre de la directiva.
 
-3. Especifique la siguiente configuración:
+3. En el control desplegable de detalles de directiva que se abre, haga clic en **Editar** configuración de protección y, a continuación, configure las siguientes opciones:
+   - Seleccione **Habilitar el filtro de datos adjuntos** común para activar el filtro de datos adjuntos común. Haga **clic en Personalizar tipos de archivo** para agregar más tipos de archivo.
+   - Compruebe que **habilitar la purga automática de hora cero para malware** está seleccionada.
+   - Compruebe que ninguna de las opciones de configuración de la **sección Notificación** esté seleccionada.
 
-    - En la **sección Respuesta de** detección de malware, mantenga la configuración predeterminada de **No**.
+   Cuando haya terminado, haga clic en **Guardar**
 
-    - En la **sección Filtro de tipos comunes de** datos adjuntos, elija **On**.
-
-4. Haga clic en **Guardar**.
-
-Para obtener más información sobre las opciones de directiva antimalware, vea [Configure anti-malware policies](configure-anti-malware-policies.md).
+Para obtener instrucciones detalladas para configurar directivas antimalware, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
 ## <a name="part-2---anti-phishing-protection"></a>Parte 2: Protección contra la suplantación de identidad
 

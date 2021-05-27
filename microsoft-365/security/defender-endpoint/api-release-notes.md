@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5c8e9d8e1c8ec020b4d742f61d276c93f6730bec
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4f9d3b365fb735805644f33b3a843ad66e777ce4
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245557"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684128"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Notas de la versión de api de Microsoft Defender para endpoint
 
@@ -38,6 +38,10 @@ La siguiente información enumera las actualizaciones realizadas en Microsoft De
 > ```
 
 ## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>Notas de la versión: más reciente a más antigua (dd.mm.yyyyy)
+
+### <a name="05252021"></a>05.25.2021
+
+- Se agregaron nuevos métodos y propiedades de evaluación de exportación de API [por dispositivo.](get-assessmnt-1methods-properties.md)
 
 ### <a name="03052021"></a>03.05.2021
 

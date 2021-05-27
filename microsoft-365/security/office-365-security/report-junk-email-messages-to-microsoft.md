@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre las distintas formas de notificar mensajes y archivos buenos y malos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7534d5d88fe19fba39ac1ebef16c72cac25cae7
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 7b062c9529364e9fe26133fd1c039affcb8b7011
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625046"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689078"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
 
@@ -43,9 +43,9 @@ En Microsoft 365 organizaciones con buzones de correo en organizaciones de Excha
 |---|---|
 |[Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md)|El método de informes recomendado para administradores de organizaciones con Exchange Online buzones de correo (no disponible en EOP independiente).|
 |[Habilitar el mensaje de informe o los complementos de suplantación de identidad de informes](enable-the-report-message-add-in.md)|Funciona con Outlook y Outlook en la web (anteriormente conocido como Outlook Web App). <p> Según la suscripción, los mensajes que los usuarios notificaron con los complementos están disponibles en el [](view-email-security-reports.md#user-reported-messages-report)portal de envíos de administración, en los resultados de investigación y respuesta [automatizadas (AIR),](air-view-investigation-results.md)en el informe de mensajes [notificados](admin-submission.md)por el usuario y en el Explorador de [amenazas.](threat-explorer-views.md#email--submissions) <p> Puede configurar los mensajes notificados para que se copien o redirijan a un buzón que especifique. Para obtener más información, vea [Directivas de envío de usuarios](user-submission.md).
-|[Notificar falsos positivos y falsos negativos a Outlook](report-false-positives-and-false-negatives.md)|Enviar falsos positivos (correo electrónico bueno bloqueado o enviado a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o suplantación de identidad que se entregó a la bandeja de entrada) a Exchange Online Protection (EOP) mediante la característica Mensaje de informe.|
+|[Informar de falsos positivos y falsos negativos en Outlook](report-false-positives-and-false-negatives.md)|Enviar falsos positivos (correo electrónico bueno bloqueado o enviado a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o suplantación de identidad que se entregó a la bandeja de entrada) a Exchange Online Protection (EOP) mediante la característica Mensaje de informe.|
 |[Enviar mensajes manualmente a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Envíe manualmente mensajes adjuntos a direcciones de correo electrónico específicas de Microsoft para correo no deseado, no correo no deseado y suplantación de identidad.|
-|[Usar reglas de flujo de correo para ver lo que los usuarios están informando a Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Obtenga información sobre cómo crear una regla de flujo de correo (también conocida como regla de transporte) que le notifica cuándo los usuarios notifican mensajes a Microsoft para su análisis.|
+|[Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Obtenga información sobre cómo crear una regla de flujo de correo (también conocida como regla de transporte) que le notifica cuándo los usuarios notifican mensajes a Microsoft para su análisis.|
 |[Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use el Inteligencia de seguridad de Microsoft web para enviar datos adjuntos y otros archivos.|
 |
 

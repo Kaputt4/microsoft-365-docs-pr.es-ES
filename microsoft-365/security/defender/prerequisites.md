@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 69345a0db42ec838dc0758cdb0e93a49a8ba6cfd
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: f3fd597181d73c1768057ea7740ab111e5af2068
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259408"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689162"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Requisitos previos de Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "52259408"
 
 Obtenga información sobre las licencias y otros requisitos para aprovisionar [y usar Microsoft 365 Defender](microsoft-365-defender.md).
 
-## <a name="licensing-requirements"></a>Requisitos de licencia
+## <a name="licensing-requirements"></a>Requisitos de licencias
 Cualquiera de estas licencias le da acceso a las características de Microsoft 365 Defender en Microsoft 365 de seguridad sin costo adicional:
 
 - Microsoft 365 E5 o A5
@@ -73,6 +73,18 @@ Actualmente, Microsoft 365 Defender *no está* disponible para:
 - Us Government Community Cloud High (GCC High)
 - Departamento de Defensa de ESTADOS UNIDOS
 - Todas las instituciones gubernamentales de ESTADOS UNIDOS con licencias comerciales
+
+
+Actualmente, la integración de Microsoft Defender Office 365 en las características unificadas de Microsoft 365 Defender no están disponibles para los clientes en las siguientes ubicaciones Office 365 centro de datos:
+
+- Brasil 
+- Alemania 
+- Noruega 
+- Singapur 
+- Sudáfrica
+- Suiza 
+- Emiratos Árabes Unidos 
+
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Microsoft 365 Introducción al defensor](microsoft-365-defender.md)

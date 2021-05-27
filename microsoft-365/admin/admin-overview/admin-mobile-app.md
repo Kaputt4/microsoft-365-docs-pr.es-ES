@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén la Microsoft 365 admin y aprende a administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f8834aca0835a209a4df32a934eca736c5f7808f
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244025"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683240"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la Microsoft 365 móvil de administrador
 
@@ -50,6 +50,10 @@ Si es administrador y es responsable de más de una organización Microsoft 365,
   
 > [!IMPORTANT]
 > Si tienes problemas al usar la aplicación móvil administrador en iOS o Android, [envíanos](mailto:feedback365@microsoft.com) un correo electrónico feedback365@microsoft.com para que nos lo hagas saber.
+
+## <a name="before-you-begin"></a>Antes de empezar
+
+Debes ser administrador de una organización Microsoft 365 para usar la aplicación móvil de administrador.
   
 ## <a name="download-the-admin-mobile-app"></a>Descargar la aplicación móvil de administración
 
@@ -61,7 +65,7 @@ Si es administrador y es responsable de más de una organización Microsoft 365,
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
   
@@ -115,7 +119,11 @@ En el menú de navegación izquierdo, ve **a Configuración**  >  **Notificacion
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>¿Qué hago si no encuentro la respuesta a mi pregunta?
 
 Envía [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para informar de un problema con la aplicación. O puede enviar comentarios en la parte inferior de este artículo.
-  
-## <a name="related-content"></a>Contenido relacionado 
 
-[Microsoft 365 vídeos de aprendizaje para empresas](../../business-video/index.yml) (página de vínculos)
+## <a name="next-steps"></a>Pasos siguientes
+
+Una vez que hayas descargado el dispositivo móvil de administrador, puedes agregar usuarios para empezar.
+  
+## <a name="related-content"></a>Contenido relacionado
+
+[Vídeos de aprendizaje de Microsoft 365 para empresas](../../business-video/index.yml)

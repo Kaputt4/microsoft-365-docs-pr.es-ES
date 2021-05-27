@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Obtenga información sobre Power BI y cómo los usuarios de su organización pueden usar este servicio de análisis empresarial.
-ms.openlocfilehash: 34a48ed6ee854f0057e79ba86dbd888a65b41c5e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6da25932e1813744aa38bab2b399d6ac30c3429a
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537432"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683372"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI en su organización
 
@@ -83,19 +83,19 @@ Si un inquilino ha sido creado por Microsoft, puede reclamar y administrar dicho
 
 ::: moniker range="o365-worldwide"
 
-3. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com).
+3. Vaya a <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-3. Vaya a [https://portal.office.de](https://portal.office.de).
+3. Vete a <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-3. Vaya a [https://portal.partner.microsoftonline.cn](https://portal.partner.microsoftonline.cn).
+3. Vaya a <a href="https://portal.partner.microsoftonline.cn" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end
 

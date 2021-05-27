@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si quiere ser más estricto? ¿Y qué extras obtiene si también usa Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624098"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683276"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad
 
@@ -137,11 +137,11 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede publicarlo un administrador.|
-|**Filtro de tipos de datos adjuntos comunes** <p> _EnableFileFilter_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Esta configuración pone en cuarentena los mensajes que contienen datos adjuntos ejecutables según el tipo de archivo, independientemente del contenido de los datos adjuntos.|
-|**Purga automática de hora cero de malware** <p> _ZapEnabled_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
-|**Notificar a los remitentes internos** del mensaje no entregado <p> _EnableInternalSenderNotifications_|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`||
-|**Notificar a los remitentes externos** del mensaje no entregado <p> _EnableExternalSenderNotifications_|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`||
+|**Notificar a los destinatarios cuando los mensajes se ponen en cuarentena como malware** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede publicarlo un administrador.|
+|**Habilitar el filtro de datos adjuntos común** <p> _EnableFileFilter_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Esta configuración pone en cuarentena los mensajes que contienen datos adjuntos ejecutables según el tipo de archivo, independientemente del contenido de los datos adjuntos.|
+|**Habilitar la purga automática de hora cero para malware** <p> _ZapEnabled_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
+|**Notificar a los remitentes internos cuando los mensajes se ponen en cuarentena como malware** <p> _EnableInternalSenderNotifications_|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`||
+|**Notificar a remitentes externos cuando los mensajes se ponen en cuarentena como malware** <p> _EnableExternalSenderNotifications_|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>Configuración de directiva contra suplantación de identidad predeterminada de EOP

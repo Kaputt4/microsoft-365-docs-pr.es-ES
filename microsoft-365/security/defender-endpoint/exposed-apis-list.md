@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.openlocfilehash: f7a620ad56496b1a26e193a18fa93f4d217431df
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073846"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684152"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API compatibles de Microsoft Defender para punto de conexión
 
@@ -61,6 +61,7 @@ Tema | Descripción
 :---|:---
 [Búsqueda avanzada de amenazas](run-advanced-query-api.md) | Ejecutar consultas desde la API.
 [Propiedades y métodos de alerta](alerts.md) | Ejecute llamadas API como \- obtener alertas, crear alertas, actualizar alertas y mucho más.
+[Exportar métodos de evaluación y propiedades por dispositivo](get-assessmnt-1methods-properties.md) | Ejecute llamadas API como la evaluación de configuración segura de exportación, la evaluación del inventario de \- software de exportación y la evaluación de vulnerabilidades de software de exportación.
 [Propiedades y métodos de investigación automatizada](investigation.md) | Ejecute llamadas API como \- obtener la colección de Investigación.
 [Obtener alertas relacionadas con dominios](get-domain-related-alerts.md) | Ejecute llamadas API como obtener dispositivos relacionados con \- el dominio, estadísticas de dominio y mucho más.
 [Propiedades y métodos de archivo](files.md) | Ejecute llamadas API como obtener información de archivos, alertas relacionadas con \- archivos, dispositivos relacionados con archivos y estadísticas de archivos.
@@ -69,6 +70,7 @@ Tema | Descripción
 [Propiedades y métodos de máquina](machine.md) | Ejecute llamadas API como obtener dispositivos, obtener dispositivos por identificador, información sobre usuarios que han iniciado \- sesión, editar etiquetas y mucho más.
 [Métodos y propiedades de acción de máquina](machineaction.md) | Ejecute una llamada API como \- Aislamiento, Ejecutar examen antivirus y mucho más.
 [Propiedades y métodos estáticos.](recommendation.md) | Ejecute llamadas API como \- obtener recomendación por identificador.
+[Propiedades y métodos de la actividad de corrección](get-remediation-methods-properties.md) | Ejecute una llamada API como obtener todas las tareas de corrección, obtener la tarea de corrección de dispositivos expuestos y \- obtener una tarea de corrección por identificador.
 [Propiedades y métodos de puntuación](score.md) | Ejecuta llamadas API como obtener \- puntuación de exposición o obtener puntuación segura del dispositivo.
 [Propiedades y métodos de software](software.md) | Ejecute llamadas API como, \- por ejemplo, enumerar vulnerabilidades por software.
 [Métodos de usuario](user.md) | Ejecute llamadas API como obtener alertas relacionadas con \- el usuario y dispositivos relacionados con el usuario.

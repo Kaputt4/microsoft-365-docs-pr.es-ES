@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934506"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684212"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en macOS
 
@@ -48,7 +48,7 @@ Si decide implementar actualizaciones mediante las herramientas de distribución
 
 ## <a name="use-msupdate"></a>Usar msupdate
 
-MAU incluye una herramienta de línea de comandos, denominada *msupdate*, que está diseñada para los administradores de TI para que tengan un control más preciso sobre cuándo se aplican las actualizaciones. Las instrucciones para usar esta herramienta se pueden encontrar en [Update Office para Mac mediante msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
+MAU incluye una herramienta de línea de comandos, denominada *msupdate*, que está diseñada para los administradores de TI para que tengan un control más preciso sobre cuándo se aplican las actualizaciones. Las instrucciones para usar esta herramienta se pueden encontrar en [Actualizar Office para Mac mediante msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
 
 En MAU, el identificador de aplicación de Microsoft Defender para Endpoint en macOS es *WDAV00*. Para descargar e instalar las actualizaciones más recientes de Microsoft Defender para Endpoint en macOS, ejecute el siguiente comando desde una ventana de Terminal:
 
@@ -76,12 +76,12 @@ El `Current` canal contiene la versión más estable del producto.
 >[!TIP]
 >Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview` .
 
-|Section|Valor|
+|Sección|Valor|
 |:--|:--|
 | **Dominio** | `com.microsoft.autoupdate2` |
-| **Key** | ChannelName |
+| **Clave** | ChannelName |
 | **Tipo de datos** | Cadena |
-| **Posibles valores** | Beta <br/> Preview <br/> Current |
+| **Posibles valores** | Beta <br/> Versión preliminar <br/> Current |
 |||
 
 >[!WARNING]
@@ -94,10 +94,10 @@ El `Current` canal contiene la versión más estable del producto.
 
 Cambiar la frecuencia con la que MAU busca actualizaciones.
 
-|Section|Valor|
+|Sección|Valor|
 |:--|:--|
 | **Dominio** | `com.microsoft.autoupdate2` |
-| **Key** | UpdateCheckFrequency |
+| **Clave** | UpdateCheckFrequency |
 | **Tipo de datos** | Entero |
 | **Valor predeterminado** | 720 (minutos) |
 | **Comment** | Este valor se establece en minutos. |
@@ -107,10 +107,10 @@ Cambiar la frecuencia con la que MAU busca actualizaciones.
 
 Cambiar la forma en que MAU busca actualizaciones.
 
-|Section|Valor|
+|Sección|Valor|
 |:--|:--|
 | **Dominio** | `com.microsoft.autoupdate2` |
-| **Key** | HowToCheck |
+| **Clave** | HowToCheck |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | Manual <br/> AutomaticCheck <br/> AutomaticDownload |
 | **Comment** |  Ten en cuenta que AutomaticDownload realizará una descarga e instalará silenciosamente si es posible. |
@@ -120,22 +120,22 @@ Cambiar la forma en que MAU busca actualizaciones.
 
 Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualizaciones" en la interfaz de usuario de Microsoft AutoUpdate.
 
-|Section|Valor|
+|Sección|Valor|
 |:--|:--|
 | **Dominio** | `com.microsoft.autoupdate2` |
-| **Key** | EnableCheckForUpdatesButton |
+| **Clave** | EnableCheckForUpdatesButton |
 | **Tipo de datos** | Booleano |
-| **Posibles valores** | True (predeterminado) <br/> False |
+| **Posibles valores** | True (predeterminado) <br/> Falso |
 
 
 ### <a name="disable-insider-checkbox"></a>Casilla Deshabilitar Insider
 
 Se establece en true para que el "Join the Office Insider Program..." casilla no disponible / grised hacia fuera para los usuarios.
 
-|Section|Valor|
+|Sección|Valor|
 |:--|:--|
 | **Dominio** | `com.microsoft.autoupdate2` |
-| **Key** | DisableInsiderCheckbox |
+| **Clave** | DisableInsiderCheckbox |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | False (predeterminado) <br/> Verdadero |
 
@@ -144,21 +144,28 @@ Se establece en true para que el "Join the Office Insider Program..." casilla no
 
 Se establece en false para enviar datos de latido mínimos, sin uso de aplicaciones y sin detalles del entorno.
 
-|Section|Valor|
+|Sección|Valor|
 |:--|:--|
 | **Dominio** | `com.microsoft.autoupdate2` |
-| **Key** | SendAllTelemetryEnabled |
+| **Clave** | SendAllTelemetryEnabled |
 | **Tipo de datos** | Booleano |
-| **Posibles valores** | True (predeterminado) <br/> False |
+| **Posibles valores** | True (predeterminado) <br/> Falso |
 
 
 ## <a name="example-configuration-profile"></a>Perfil de configuración de ejemplo
 
 El siguiente perfil de configuración se usa para:
-- Colocar el dispositivo en el canal beta
+- Colocar el dispositivo en el canal de producción
 - Descargar e instalar actualizaciones automáticamente
 - Habilitar el botón "Buscar actualizaciones" en la interfaz de usuario
 - Permitir que los usuarios del dispositivo se inscriban en los canales de Insider
+
+
+>[!WARNING]
+>La siguiente configuración es una configuración de ejemplo y no debe usarse en producción sin la revisión adecuada de la configuración y la adaptación de las configuraciones.
+
+>[!TIP]
+>Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview` .
 
 ### <a name="jamf"></a>JAMF
 
@@ -168,7 +175,7 @@ El siguiente perfil de configuración se usa para:
 <plist version="1.0">
 <dict>
     <key>ChannelName</key>
-    <string>Beta</string>
+    <string>Production</string>
     <key>HowToCheck</key>
     <string>AutomaticDownload</string>
     <key>EnableCheckForUpdatesButton</key>
@@ -228,7 +235,7 @@ El siguiente perfil de configuración se usa para:
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Beta</string>
+            <string>Production</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>

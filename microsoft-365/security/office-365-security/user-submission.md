@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 906048609ce70c761bb014961e02c86f912cd638
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624614"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683504"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuarios
 
@@ -141,7 +141,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
 Puede configurar herramientas de informes de mensajes de terceros para enviar mensajes notificados al buzón personalizado. El único requisito es que el mensaje original se incluya como datos adjuntos en el mensaje que se envía al buzón personalizado (no solo reenvía el mensaje original al buzón personalizado).
 
-Los requisitos de formato de mensaje se describen en la sección siguiente.
+Los requisitos de formato de mensaje se describen en la sección siguiente. El formato es opcional, pero si no sigue el formato prescrito, los informes siempre se envían como suplantación de identidad.
 
 ## <a name="message-submission-format"></a>Formato de envío de mensajes
 

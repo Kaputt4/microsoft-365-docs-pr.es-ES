@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f2e20415cb64903e8dfe2c82646c1970036b8f6b
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: ab33db7fb7acf1969973a7af8f80ea97ef3d378f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653678"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689102"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exportar evaluación de configuración segura por dispositivo
 
@@ -39,19 +39,21 @@ ms.locfileid: "52653678"
 >
 Devuelve todas las configuraciones y su estado, por dispositivo.
 
-Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser muy grande, hay dos formas de recuperarlos:
+Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
 
-- **OData**  La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para _organizaciones pequeñas con menos de 100K dispositivos._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
+- [Export secure configuration assessment **OData:**](#1-export-secure-configuration-assessment-odata)la API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para _organizaciones pequeñas con dispositivos de menos de 100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
 
-- **a través de archivos** Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
+- [Exportar la evaluación de configuración **segura a través**](#2-export-secure-configuration-assessment-via-files)de archivos: esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
 
   - Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.
 
   - Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
-Los datos recopilados (para _OData_ o _a_ través de archivos) son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
+Los datos recopilados (mediante _OData_ o a través de _archivos)_ son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
 
-A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
+> [!Note]
+>
+> A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
 
 ## <a name="1-export-secure-configuration-assessment-odata"></a>1. Exportar evaluación de configuración segura (OData)
 
@@ -90,12 +92,12 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 >[!Note]
 >
->- Las propiedades definidas en la tabla siguiente se enumeran alfanuméricamente, por identificador de propiedad.  Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en estas tablas.
+>- Las propiedades definidas en la tabla siguiente se enumeran alfabéticamente, por identificador de propiedad.  Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en esta tabla.
 >
 >- Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
 >
 
-Propiedad (id) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
+Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 ConfigurationCategory | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad | Controles de seguridad
 ConfigurationId | string | Identificador único para una configuración específica | scid-10000
@@ -255,7 +257,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 >
 >- Para obtener la velocidad máxima de descarga de los datos, puede asegurarse de que está descargando desde la misma región de Azure en la que residen los datos.
 >
-Propiedad (id) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
+Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos | cadena de \[ matriz\] | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
 GeneratedTime | string | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z ]
@@ -282,7 +284,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessmnt-1methods-properties.md)
 

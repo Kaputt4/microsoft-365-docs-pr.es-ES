@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario y qué hacer con el correo electrónico del usuario y OneDrive contenido y si desea conservar la licencia del producto.
-ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 43a57a69ce0d810af2b029f49c15d32d75a4dc33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634213"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683144"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -47,7 +47,7 @@ Si es un administrador global, al eliminar un usuario también puede dar a otro 
 
 Antes de empezar, piense en lo que desea hacer con el correo electrónico del usuario y el contenido OneDrive, y si desea mantener la licencia o dejar de pagar por ella.
   
-|Item | Descripción |
+|Elemento | Descripción |
 |:-----|:-----|
 |Licencias de productos  <br/> |Puede quitar la licencia del usuario y quitarla de sus suscripciones para dejar de pagar por esa licencia. Si selecciona esta opción, la licencia se quitará automáticamente de las suscripciones.  <br/><br/> **No puede quitar la licencia si** la compró a través de un partner o una licencia por volumen. Si estás pagando un plan anual o si estás en medio de un ciclo de facturación, no podrás quitar la licencia de la suscripción hasta que se complete el compromiso.  <br/> |
 |OneDrive contenido  <br/> |Si el usuario guardó sus archivos en OneDrive, puede proporcionar a otro usuario acceso a estos archivos.  <br/><br/> Tendrás que mover los archivos que quieras conservar dentro del período de retención que se establece para los OneDrive archivos. **De forma predeterminada, el período de retención es de 30 días.** Si no mueve los archivos dentro del período de retención después de eliminar el usuario, el contenido OneDrive se eliminará permanentemente. Para aumentar el número de días que conserva los archivos OneDrive para cuentas eliminadas, vea [Set the OneDrive retention for deleted users](/onedrive/set-retention).  <br/><br/> **¡Importante!** Si el usuario eliminado usó un equipo personal para descargar archivos de SharePoint y OneDrive, no hay forma de borrar los archivos que almacenaban en su equipo. Seguirán teniendo acceso a los archivos que se sincronizaron desde OneDrive.           |
@@ -87,19 +87,11 @@ Dado que la experiencia guiada recorre los pasos para eliminar un usuario, aquí
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.  
 
-2. Seleccione los nombres de los usuarios que desea eliminar, seleccione los tres puntos (más acciones) y, a continuación,  **elija Eliminar usuario**.
-
-   Aunque eliminó la cuenta del usuario, **sigue pagando por la licencia**. Consulte el siguiente procedimiento para dejar de pagar la licencia.  O bien, puede asignar la licencia a otro usuario. No se asignará a alguien automáticamente.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
-
-2. Seleccione los nombres de los usuarios que desea eliminar y, en el panel **Acciones masivas,** elija **Eliminar usuarios**.
-
-   Aunque eliminó la cuenta del usuario, **sigue pagando por la licencia**. Consulte el siguiente procedimiento para dejar de pagar la licencia.  O bien, puede asignar la licencia a otro usuario. No se asignará a alguien automáticamente.
 
 ::: moniker-end
 
@@ -107,11 +99,11 @@ Dado que la experiencia guiada recorre los pasos para eliminar un usuario, aquí
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
-2. Seleccione los nombres de los usuarios que desea eliminar y, en el panel **Acciones masivas,** elija **Eliminar usuarios**.
+::: moniker-end
+
+2. Seleccione los nombres de los usuarios que desea eliminar, seleccione los tres puntos (más acciones) y, a continuación,  **elija Eliminar usuario**.
 
    Aunque eliminó la cuenta del usuario, **sigue pagando por la licencia**. Consulte el siguiente procedimiento para dejar de pagar la licencia.  O bien, puede asignar la licencia a otro usuario. No se asignará a alguien automáticamente.
-
-::: moniker-end
 
 ### <a name="stop-paying-for-the-license"></a>Dejar de pagar por la licencia
 
@@ -119,7 +111,19 @@ Reducir el número de licencias es un paso independiente que solo puede realizar
   
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>. Si no ves esta opción, no eres administrador global ni administrador de facturación y no puedes realizar este paso.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+::: moniker-end
 
 2. En la **pestaña Productos,** seleccione la suscripción para la que desea quitar licencias.
 
@@ -130,28 +134,6 @@ Reducir el número de licencias es un paso independiente que solo puede realizar
 5. Seleccione **Guardar**.
 
 Más adelante, cuando sigas los pasos para agregar otra persona a tu empresa, se te pedirá que compres una licencia al mismo tiempo, con un solo paso.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>. Si no ves esta opción, no eres administrador global ni administrador de facturación y no puedes realizar este paso.
-
-2. Seleccione la suscripción (si tiene más de una) y, a continuación, seleccione Agregar **o** quitar licencias para eliminar la licencia para que no la pague hasta que contrate a otra persona.  
-
-   Más adelante, cuando sigas los pasos para agregar otra persona a tu empresa, se te pedirá que compres una licencia al mismo tiempo, con un solo paso.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>. Si no ves esta opción, no eres administrador global ni administrador de facturación y no puedes realizar este paso.
-
-2. Seleccione la suscripción (si tiene más de una) y, a continuación, seleccione Agregar **o** quitar licencias para eliminar la licencia para que no la pague hasta que contrate a otra persona.  
-
-   Más adelante, cuando sigas los pasos para agregar otra persona a tu empresa, se te pedirá que compres una licencia al mismo tiempo, con un solo paso.
-
-::: moniker-end
 
 ## <a name="delete-many-users-at-the-same-time"></a>Eliminar muchos usuarios al mismo tiempo
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: 94bacc2a2fe91fdc35aad753cc2e7db80a374e29
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 24f6bb636c702438be8ca9520c6523031f297410
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876081"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683768"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
@@ -126,99 +126,6 @@ Con frecuencia, si necesita crear un diccionario de gran tamaño, puede usar pal
     ```powershell
     New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
     ```
-
-## <a name="modifying-an-existing-keyword-dictionary"></a>Modificar un diccionario de palabras clave existente
-
-Es posible que tenga que modificar palabras clave en uno de los diccionarios de palabras clave o modificar uno de los diccionarios integrados. Actualmente, solo puede actualizar un diccionario personalizado de palabras clave con PowerShell. 
-
-Por ejemplo, vamos a modificar algunos términos en PowerShell, guardar los términos localmente donde se puedan modificar en un editor y, después, actualizar los términos anteriores. 
-
-En primer lugar, recupere el objeto de diccionario:
-  
-```powershell
-$dict = Get-DlpKeywordDictionary -Name "Diseases"
-```
-
-La impresión de `$dict` mostrará las distintas variables. Las palabras clave en sí se almacenan en un objeto en el back-end, pero `$dict.KeywordDictionary` contiene una representación de cadena de estas, que usará para modificar el diccionario. 
-
-Antes de modificar el diccionario, necesita volver a convertir la cadena de términos en una matriz con el método `.split(',')`. Después, eliminará los espacios no deseados entre las palabras clave con el método `.trim()` y dejará únicamente las palabras clave con las que quiera trabajar. 
-  
-```powershell
-$terms = $dict.KeywordDictionary.split(',').trim()
-```
-
-Ahora, quitará algunos términos del diccionario. Como el diccionario de ejemplo solo tiene unas pocas palabras clave, podría fácilmente pasar a la exportación del diccionario y editarlo en el Bloc de notas, pero los diccionarios suelen contener una gran cantidad de texto, por lo que primero aprenderá esta forma de editarlos fácilmente en PowerShell.
-  
-En el último paso, guardó las palabras clave en una matriz. Hay varias formas de [quitar elementos de una matriz](/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), pero un método sencillo es crear una matriz de los términos que quiera quitar del diccionario y, después, copiar en este solo los términos que no se encuentren en la lista de términos que quiera quitar.
-  
-Ejecute el comando `$terms` para mostrar la lista de términos actual. El resultado del comando tiene este aspecto: 
-  
-`aarskog's syndrome`
-`abandonment`
-`abasia`
-`abderhalden-kaufmann-lignac`
-`abdominalgia`
-`abduction contracture`
-`abetalipoproteinemia`
-`abiotrophy`
-`ablatio`
-`ablation`
-`ablepharia`
-`abocclusion`
-`abolition`
-`aborter`
-`abortion`
-`abortus`
-`aboulomania`
-`abrami's disease`
-
-Ejecute este comando para especificar los términos que quiera quitar:
-  
-```powershell
-$termsToRemove = @('abandonment', 'ablatio')
-```
-
-Ejecute este comando para quitar los términos de la lista:
-  
-```powershell
-$updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
-```
-
-Ejecute el comando `$updatedTerms` para mostrar la lista actualizada de términos. El resultado del comando será parecido a este (se quitaron los términos especificados): 
-  
-`aarskog's syndrome`
-`abasia`
-`abderhalden-kaufmann-lignac`
-`abdominalgia`
-`abduction contracture`
-`abetalipo proteinemia`
-`abiotrophy`
-`ablation`
-`ablepharia`
-`abocclusion`
-`abolition`
-`aborter`
-`abortion`
-`abortus`
-`aboulomania`
-`abrami's disease`
-```
-
-Now save the dictionary locally and add a few more terms. You could add the terms right here in PowerShell, but you'll still need to export the file locally to ensure it's saved with Unicode encoding and contains the BOM.
-  
-Save the dictionary locally by running the following:
-  
-```powershell
-Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
-```
-
-Ahora, abra el archivo, agregue los otros términos y guárdelo con la codificación Unicode (UTF-16). Ahora, cargará los términos actualizados y actualizará el diccionario en contexto.
-  
-```powershell
-PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
-```
-
-Ahora se ha actualizado el diccionario en contexto. El campo `Identity` toma el nombre del diccionario. Si también quiere cambiar el nombre del diccionario con el cmdlet `set-`, necesita agregar el parámetro `-Name` a los comandos anteriores con el nuevo nombre del diccionario. 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Usar diccionarios de palabras clave en tipos de información confidencial personalizados y directivas DLP
 

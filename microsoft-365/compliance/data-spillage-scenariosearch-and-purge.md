@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use la exhibición de documentos electrónicos y las herramientas de búsqueda para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: f92887018a7ab1cec35526c2a36cce4b0889172e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653528"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683780"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie de soluciones de exhibición de documentos electrónicos: escenario de derrame de datos: búsqueda y purga
 
@@ -52,7 +52,7 @@ Este es un ejemplo de cómo administrar un incidente de derrame de datos:
 
 - Cuando un buzón está en espera, un mensaje eliminado permanece en la carpeta Elementos recuperables hasta que expira el período de retención o se libera la suspensión. [En el paso 6](#step-6-prepare-the-mailboxes) se describe cómo quitar la retención de los buzones. Consulte con los departamentos legales o de administración de registros antes de quitar la retención. Es posible que la organización tenga una directiva que defina si un buzón de correo en espera o un incidente de derrame de datos tiene prioridad. 
     
-- Para controlar qué buzones de usuario puede buscar y administrar quién puede tener acceso al caso, puede configurar los límites de cumplimiento y crear un grupo de roles personalizado, que se describe en el paso [1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). Para ello, debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración de roles. Si usted o el administrador de su organización ya ha establecido límites de cumplimiento, puede omitir el paso 1.
+- Para controlar qué buzones de usuario puede buscar y administrar quién puede tener acceso al caso, puede configurar los límites de cumplimiento y crear un grupo de roles personalizado, que se describe en el paso [1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). Para ello, debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración de roles. Si usted o un administrador de su organización ya ha establecido límites de cumplimiento, puede omitir el paso 1.
     
 - Para crear un caso, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos o ser miembro de un grupo de roles personalizado al que se haya asignado el rol de administración de casos. Si no es miembro, pida a un administrador de Microsoft 365 que le agregue al grupo de roles administrador de exhibición [de documentos electrónicos](assign-ediscovery-permissions.md).
     
@@ -64,7 +64,7 @@ Este es un ejemplo de cómo administrar un incidente de derrame de datos:
 
 Según la práctica organizativa, debe controlar quién puede tener acceso al caso de exhibición de documentos electrónicos usado para investigar un incidente de derrame de datos y configurar límites de cumplimiento. La forma más sencilla de hacerlo es agregar investigadores como miembros de un grupo de roles existente en el Centro de seguridad y cumplimiento de & y, a continuación, agregar el grupo de roles como miembro del caso de exhibición de documentos electrónicos. Para obtener información sobre los grupos de roles de exhibición de documentos electrónicos [integrados](assign-ediscovery-permissions.md)y cómo agregar miembros a un caso de exhibición de documentos electrónicos, vea Asignar permisos de exhibición de documentos electrónicos .
   
-También puede crear un nuevo grupo de roles que se alinee con las necesidades de la organización. Por ejemplo, es posible que desee que un grupo de investigadores de derrame de datos de la organización acceda y colabore en todos los casos de derrame de datos. Para ello, cree un grupo de roles "Data Spillage Researcher", asigne los roles adecuados (Export, RMS Decrypt, Review, Preview, Compliance Search y Case Management), agregue los investigadores de derrame de datos al grupo de roles y, a continuación, agregue el grupo de roles como miembro del caso de exhibición de documentos electrónicos de derrame de datos. Consulte [Configurar límites de cumplimiento](tagging-and-assessment-in-advanced-ediscovery.md) para las investigaciones de exhibición de documentos electrónicos en Office 365 para obtener instrucciones detalladas sobre cómo hacerlo. 
+También puede crear un nuevo grupo de roles que se alinee con las necesidades de la organización. Por ejemplo, es posible que desee que un grupo de investigadores de derrame de datos de la organización acceda y colabore en todos los casos de derrame de datos. Para ello, cree un grupo de roles "Data Spillage Researcher", asigne los roles adecuados (Export, RMS Decrypt, Review, Preview, Compliance Search y Case Management), agregue los investigadores de derrame de datos al grupo de roles y, a continuación, agregue el grupo de roles como miembro del caso de exhibición de documentos electrónicos de derrame de datos. Consulte [Configurar límites de cumplimiento](set-up-compliance-boundaries.md) para las investigaciones de exhibición de documentos electrónicos en Office 365 para obtener instrucciones detalladas sobre cómo hacerlo. 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Paso 2: Crear un caso de exhibición de documentos electrónicos
 
@@ -123,7 +123,7 @@ Puede usar el seguimiento de mensajes en el centro de seguridad y cumplimiento o
   
 - [Seguimiento de mensajes en el Centro de seguridad y cumplimiento](../security/office-365-security/message-trace-scc.md)
     
-- [Nuevo seguimiento de mensajes en el Centro de & seguridad](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Nuevo seguimiento de mensajes en el Centro de & seguridad](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-message-trace-in-office-365-security-038-compliance-center/ba-p/607893)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Paso 6: Preparar los buzones
 
@@ -205,7 +205,7 @@ Si las palabras clave de la consulta de búsqueda que creó y usó en el paso 3 
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación de derrame de datos
 
-Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para obtener más información, vea:
+Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, consulte:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 

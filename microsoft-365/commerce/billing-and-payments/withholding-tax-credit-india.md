@@ -20,18 +20,18 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 4866bcd07cb4a54088d230166f9b04f8258d7185
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331795"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689030"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Solicitar un crédito para la retención de impuestos en su cuenta (clientes de India)
 
 Los clientes de India reciben facturas de Web Direct (Azure y Microsoft 365) facturadas por Microsoft Regional Sales Pte Ltd. Singapur (MRS) y hacen pagos transfronterizos a Singapur para liquidar la factura. Si retuvo impuestos al enviar el pago, en este artículo se explica el proceso para reclamar un crédito por la retención de impuestos (WHT) en su cuenta con MRS.
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-and-wire"></a>Para los clientes de pago de facturas que pagan mediante cheque y transferencia
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Para los clientes de pago de facturas que pagan mediante cheque o transferencia
 
 Si retuvo los impuestos al enviar el pago a MRS y depositó el impuesto retenido en el Departamento de Impuestos sobre la Renta, debe enviar una solicitud WHT para liquidar el importe de impuestos retenido en su cuenta.
 
@@ -44,7 +44,7 @@ Envíe la solicitud WHT abriendo un vale con soporte técnico de Microsoft.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Para clientes que pagan con tarjeta de crédito
 
-Si su método de pago es una tarjeta de crédito y realizó un pago completo a MRS y pagó WHT al Departamento de Impuestos sobre la Renta, debe enviar una solicitud WHT para reclamar el reembolso del importe fiscal.
+Si su método de pago es una tarjeta de crédito y realizó un pago completo a MRS y también pagó WHT al Departamento de Impuestos sobre la Renta, debe enviar una solicitud WHT para reclamar el reembolso del importe fiscal.
 
 La solicitud WHT debe incluir los siguientes elementos:
 
@@ -68,11 +68,11 @@ En la tabla siguiente se muestran las fechas de vencimiento y las escalas de tie
 >
 > - Los clientes solo pueden enviar una solicitud para un reembolso del importe de WHT después de pagar la factura.
 > - El importe de la factura en el Formulario de retención de crédito fiscal debe coincidir con el importe de factura identificado en el certificado TDS. Si el importe de la factura es diferente entre los dos formularios, debe especificar el motivo de la diferencia en el Formulario de retención de crédito fiscal. Esta información es revisada por el equipo de revisión, que puede hacer preguntas aclarantes, si es necesario.
-> - Los archivos de certificado TDS deben estar en uno de los siguientes formatos de archivo: .PDF o Solo imagen (. JPEG, .PNG y .GIF). Además, los nombres de archivo no deben contener espacios ni caracteres especiales. El tamaño del archivo no puede superar 1 MB.
+> - Los archivos de certificado TDS deben estar en uno de los siguientes formatos de archivo: .PDF o Solo imagen (. JPEG, .PNG o .GIF). Además, los nombres de archivo no deben contener espacios ni caracteres especiales. El tamaño del archivo no puede superar 1 MB.
 
 Después de enviar la solicitud, entra en el proceso de aprobación donde se aprueba para su finalización o se le envía de nuevo para su corrección.
 
-Si hay un problema con su solicitud, es posible que el equipo de revisión requiera correcciones en la cantidad de retención o reemplazo del certificado TDS. Debe volver a enviar la solicitud antes de que se apruebe. El equipo de revisión aprobará la solicitud o pedirá más cambios.
+Si hay un problema con su solicitud, es posible que el equipo de revisión requiera correcciones en la cantidad de retención o reemplazo del certificado TDS. Debe volver a enviar la solicitud para poder aprobarla. El equipo de revisión aprobará la solicitud o pedirá más cambios.
 
 ## <a name="approved-requests"></a>Solicitudes aprobadas
 

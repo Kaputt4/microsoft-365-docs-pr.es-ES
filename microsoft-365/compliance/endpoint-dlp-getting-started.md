@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 34355a25283207929a12a7bc504b929fbf3041a0
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651013"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683660"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -104,7 +104,6 @@ Asegúrese de que los dispositivos con Windows 10 en los que planee implementar 
 
 4. Todos los dispositivos deben cumplir una de estas opciones:
 - [Unido a Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
-- Unido a Azure AD
 - [Unido a Azure AD híbrido ](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - [Registrado en AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
 

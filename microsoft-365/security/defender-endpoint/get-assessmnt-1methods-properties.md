@@ -1,7 +1,7 @@
 ---
 title: Exportar métodos de evaluación y propiedades por dispositivo
-description: Proporciona información sobre las API que recopilan datos de "Administración de amenazas y vulnerabilidades". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización. Dado que la cantidad de datos puede ser muy grande, hay dos formas de recuperarlos
-keywords: api, apis, evaluación de exportación, evaluación por dispositivo, informe de evaluación de vulnerabilidad, evaluación de vulnerabilidad de dispositivo, informe de vulnerabilidad de dispositivo, evaluación de configuración segura, informe de configuración segura, evaluación de vulnerabilidades de software, informe de vulnerabilidades de software, informe de vulnerabilidad por máquina,
+description: Proporciona información sobre las API que recopilan datos de "Administración de amenazas y vulnerabilidades". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos
+keywords: api, apis, evaluación de exportación, por evaluación de dispositivos, por evaluación de máquina, informe de evaluación de vulnerabilidad, evaluación de vulnerabilidad de dispositivo, informe de vulnerabilidad del dispositivo, evaluación de configuración segura, informe de configuración segura, evaluación de vulnerabilidades de software, informe de vulnerabilidad de software, informe de vulnerabilidad por máquina,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 851c792265375e5905c0c427bfc77a2366bc962d
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: e820875a3350761824c3e4e67311e55507a9cb6f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653689"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689206"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportar métodos de evaluación y propiedades por dispositivo
 
@@ -44,19 +44,25 @@ Proporciona métodos y detalles de propiedades sobre las API que Administración
 >
 > A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
 
-Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
+Hay tres métodos api que puede usar para recuperar (exportar) diferentes tipos de información:
 
-- **OData**  La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para _organizaciones pequeñas con menos de 100K dispositivos._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
+1. Exportar evaluación de configuraciones seguras
 
-- **a través de archivos** Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
+2. Exportar evaluación del inventario de software
+
+3. Exportar evaluación de vulnerabilidades de software
+
+Para cada método, hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
+
+- **OData**  La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de _100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
+
+- **a través de archivos** Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
 
   - Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.
 
   - Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
-Los datos recopilados (para _OData_ o _a_ través de archivos) son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
-
-A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
+Los datos recopilados (mediante _OData_ o a través de _archivos)_ son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
 
 ## <a name="1-export-secure-configurations-assessment"></a>1. Exportar evaluación de configuraciones seguras
 
@@ -66,8 +72,8 @@ Devuelve todas las configuraciones y su estado, por dispositivo.
 
 Método | Tipo de datos | Descripción
 :---|:---|:---
-[Exportar evaluación de configuración segura (OData)](get-assessmnt-secure-cfg.md#1-export-secure-configuration-assessment-odata) | Configuración segura por colección de dispositivos. Vea: [Propiedades 1.2 (OData)](#12-properties-odata) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. Los datos recopilados (para _OData_ o _a_ través de archivos) son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
-[Exportar evaluación de configuración segura (a través de archivos)](get-assessmnt-secure-cfg.md#2-export-secure-configuration-assessment-via-files) | configuración segura por archivos de dispositivo. Vea: [Propiedades 1.3 (a través de archivos)](#13-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
+Exportar evaluación de configuración **segura (OData)** | Configuración segura por colección de dispositivos. Vea: [Propiedades 1.2 (OData)](#12-properties-odata) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de 100 K. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados.
+Exportar evaluación de configuración segura **(a través de archivos)** | Configuración segura por colección de dispositivos. Vea: [Propiedades 1.2 (OData)](#12-properties-odata) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
 ### <a name="12-properties-odata"></a>1.2 Propiedades (OData)
 
@@ -103,8 +109,8 @@ Devuelve todo el software instalado y sus detalles en cada dispositivo.
 
 Método | Tipo de datos | Descripción
 :---|:---|:---
-[Evaluación del inventario de software de exportación (OData)](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | Inventario de software por colección de dispositivos. Vea: [Propiedades 2.2 (OData)](#22-properties-odata) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Los datos recopilados (para _OData_ o _a_ través de archivos) son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
-[Exportar evaluación de inventario de software (a través de archivos)](get-assessmnt-software-inventory.md#2-export-software-inventory-assessment-via-files) | Inventario de software por archivos de dispositivo. Vea: [Propiedades 2.3 (a través de archivos)](#23-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
+Evaluación del inventario de software **de exportación (OData)** | Inventario de software por colección de dispositivos. Vea: [Propiedades 2.2 (OData)](#22-properties-odata) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de 100 K. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados.
+Exportar evaluación de inventario de software **(a través de archivos)** | Inventario de software por archivos de dispositivo. Vea: [Propiedades 2.3 (a través de archivos)](#23-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
 ### <a name="22-properties-odata"></a>2.2 Propiedades (OData)
 
@@ -132,7 +138,7 @@ Propiedad (ID) | Tipo de datos | Descripción
 Exportar archivos | cadena de \[ matriz\] | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización.
 GeneratedTime | string | Hora en que se generó la exportación.
 
-## <a name="3-export-software-vulnerabilities-assessment-per-device"></a>3. Evaluación de vulnerabilidades de software de exportación por dispositivo
+## <a name="3-export-software-vulnerabilities-assessment"></a>3. Evaluación de vulnerabilidades de software de exportación
 
 Devuelve todas las vulnerabilidades conocidas en un dispositivo y sus detalles para todos los dispositivos.
 
@@ -140,8 +146,8 @@ Devuelve todas las vulnerabilidades conocidas en un dispositivo y sus detalles p
 
 Método | Tipo de datos | Descripción
 :---|:---|:---
-[Evaluación de vulnerabilidades de software de exportación (OData)](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | Colección Investigation Vea: [3.2 Properties (OData)](#32-properties-odata) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Los datos recopilados (para _OData_ o _a_ través de archivos) son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
-[Evaluación de vulnerabilidades de software de exportación (a través de archivos)](get-assessmnt-software-vulnerabilities.md#2-export-software-vulnerabilities-assessment-via-files) | Entidad de investigación Vea: [3.3 Propiedades (a través de archivos)](#33-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
+Evaluación de vulnerabilidades de software **de exportación (OData)** | Colección Investigation Vea: [3.2 Properties (OData)](#32-properties-odata) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de 100 K. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados.
+Evaluación de vulnerabilidades de software **de exportación (a través de archivos)** | Entidad de investigación Vea: [3.3 Propiedades (a través de archivos)](#33-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
 ### <a name="32-properties-odata"></a>Propiedades 3.2 (OData)
 
@@ -174,7 +180,7 @@ Propiedad (ID) | Tipo de datos | Descripción
 Exportar archivos | cadena de \[ matriz\]  | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización.
 GeneratedTime | string | Hora en que se generó la exportación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Exportar evaluación de configuración segura por dispositivo](get-assessmnt-secure-cfg.md)
 

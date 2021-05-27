@@ -20,12 +20,12 @@ ms.custom:
 description: En este tema se le guía a través de la configuración recomendada para la configuración de todo el espacio empresarial que afecta a la seguridad del Microsoft 365 empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 686768d05e37a4e103640c2973fd30abaa25630b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538944"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684176"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar su inquilino de Microsoft 365 para aumentar la seguridad 
 
@@ -46,12 +46,14 @@ Office 365 Puntuación segura analiza la seguridad de la organización en funci�
 
 El Microsoft 365 seguridad incluye funcionalidades que protegen el entorno. También incluye informes y paneles que puede usar para supervisar y realizar acciones. Algunas áreas vienen con configuraciones de directiva predeterminadas. Algunas áreas no incluyen directivas o reglas predeterminadas. Visite estas directivas en administración de amenazas para ajustar la configuración de administración de amenazas para un entorno más seguro.
 
+<br>
+
 ****
 
 |Área|Incluye una directiva predeterminada|Recomendación|
 |---|---|---|
 |**Anti-phishing**|Sí|<ul><li>Protección de suplantación: si tiene Defender para Office 365 y un dominio personalizado, configure la configuración de protección de suplantación en la directiva contra suplantación predeterminada para proteger las cuentas de correo electrónico de los usuarios más valiosos, como su director general, y para proteger su dominio. Más información: [Configuración de suplantación en directivas contra suplantación de](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) identidad e Información de [suplantación](impersonation-insight.md)</li><li>Inteligencia suplantación de identidad: revise los remitentes que están suplantando su dominio. Bloquee o permita a estos remitentes. Más información: [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) y [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).</li></ul>|
-|**Motor antimalware**|Sí| Edite la directiva predeterminada: <ul><li>Filtro de tipos de datos adjuntos comunes: Seleccione Activar</li></ul> <p> También puede crear directivas de filtro de malware personalizadas y aplicarlas a usuarios, grupos o dominios especificados de su organización. <p> Más información: <ul><li>[Protección contra malware](anti-malware-protection.md)</li><li>[Configurar directivas antimalware](configure-anti-malware-policies.md)</li></ul>|
+|**Motor antimalware**|Sí|Edite la directiva predeterminada: <ul><li>Seleccione **Habilitar el filtro de datos adjuntos común**</li></ul> <p> También puede crear directivas de filtro de malware personalizadas y aplicarlas a usuarios, grupos o dominios especificados de su organización. <p> Más información: <ul><li>[Protección contra malware](anti-malware-protection.md)</li><li>[Configurar directivas antimalware](configure-anti-malware-policies.md)</li></ul>|
 |**Caja fuerte Datos adjuntos de Microsoft Defender para Office 365**|No|En la página principal de Caja fuerte datos adjuntos, haga clic en **Configuración global** y active esta configuración: <ul><li>**Activar Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams**</li></ul> <p> Cree una directiva Caja fuerte datos adjuntos con esta configuración: <ul><li> **Bloquear:** seleccione **Bloquear como** respuesta de malware desconocida.</li><li>**Habilitar redireccionamiento:** active esta casilla y escriba una dirección de correo electrónico, como una cuenta de administrador o de cuarentena.</li><li>**Aplica la selección anterior si el examen de malware en busca** de datos adjuntos se encuentra en tiempo de espera o si se produce un error: Active esta casilla.</li><li>**_Se aplica a_*: **El dominio de destinatario es** seleccionar el \> dominio.</li></ul> <p> Más información: Caja fuerte datos adjuntos para [SharePoint, OneDrive y](mdo-for-spo-odb-and-teams.md) Microsoft Teams y Configurar directivas Caja fuerte [datos adjuntos](set-up-safe-attachments-policies.md)|
 |**Caja fuerte Vínculos en Microsoft Defender para Office 365**|Sí|En la página principal de vínculos Caja fuerte, haga clic en **Configuración global:** <ul><li>**Use Caja fuerte links en: Office 365 aplicaciones**: Compruebe que esta configuración está activada.</li><li>**No realice un seguimiento cuando los usuarios hagan clic Caja fuerte vínculos:** desactive esta opción para realizar un seguimiento de los clics del usuario.</li></ul> <p> Cree una directiva Caja fuerte vínculos con esta configuración: <ul><li>**Seleccione la acción para las direcciones URL potencialmente malintencionadas** desconocidas en los mensajes: Compruebe que esta configuración está **en**.</li><li>**Seleccione la acción para las direcciones** URL desconocidas o potencialmente malintencionadas en Microsoft Teams : Compruebe que esta configuración es **On**.</li><li>**Aplicar análisis de direcciones URL en** tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos : Active esta casilla.</li><li>**Espere a que se complete el examen de direcciones URL antes de entregar el mensaje**: Active esta casilla.</li><li>**Aplicar Caja fuerte vínculos a mensajes de correo electrónico enviados dentro de la organización**: Active esta casilla</li><li>**No permitir que los usuarios hagan clic en la dirección URL original:** Active esta casilla.</li><li>**Se aplica a**: **El dominio de destinatario es** seleccionar el \> dominio.</li></ul> <p> Más información: [Configurar Caja fuerte de vínculos](set-up-safe-links-policies.md).|
 |**Correo no deseado (filtrado de correo)**|Sí| Qué buscar: demasiado correo no deseado: elija la configuración personalizada y edite la directiva de filtro de correo no deseado predeterminado. Más información: Microsoft 365 protección contra correo [electrónico no deseado](anti-spam-protection.md).|
@@ -64,6 +66,8 @@ El Microsoft 365 seguridad incluye funcionalidades que protegen el entorno. Tamb
 ## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>Ver paneles e informes en el Centro de seguridad & cumplimiento
 
 Visite estos informes y paneles para obtener más información sobre el estado de su entorno. Los datos de estos informes se enriquecerán a medida que su organización use Office 365 servicios. Por ahora, familiarícese con lo que puede supervisar y realizar acciones. Para obtener más información, vea [Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md).
+
+<br>
 
 ****
 
@@ -80,6 +84,8 @@ Visite estos informes y paneles para obtener más información sobre el estado d
 
 Muchos de los controles de seguridad y protección del centro Exchange de administración también se incluyen en el centro de seguridad. No es necesario configurar estos en ambos lugares. Estos son un par de opciones de configuración adicionales que se recomiendan.
 
+<br>
+
 ****
 
 |Área|Incluye una directiva predeterminada|Recomendación|
@@ -95,6 +101,8 @@ Recomendaciones de Microsoft para configurar SharePoint de grupo en niveles crec
 SharePoint de grupo configurados en el nivel de línea base permiten compartir archivos con usuarios externos mediante vínculos de acceso anónimo. Este enfoque se recomienda en lugar de enviar archivos por correo electrónico.
 
 Para admitir los objetivos de protección de línea base, configure directivas de uso compartido en todo el espacio empresarial como se recomienda aquí. La configuración de uso compartido de sitios individuales puede ser más restrictiva que esta directiva para todo el espacio empresarial, pero no más permisiva.
+
+<br>
 
 ****
 
@@ -138,9 +146,7 @@ Dado que esta solución recomienda el plan EMS E5, le recomendamos que empiece p
 Más información:
 
 - [Implementar Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [Más información sobre Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [¿Qué es Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)
 
 ![Panel de Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)

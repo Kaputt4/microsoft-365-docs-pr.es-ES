@@ -18,21 +18,14 @@ search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus compras de autoservicio.
 ms.date: 03/17/2021
-ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536087"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683672"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a personas de su equipo. Eres responsable de pagar las compras de autoservicio que realices. Puede administrar las suscripciones en el centro de administración Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
@@ -42,12 +35,42 @@ El administrador tiene una vista de solo lectura en las suscripciones que compre
 
 Puedes ver una lista de todas las suscripciones compradas por autoservicio que compraste.
 
+::: moniker range="o365-worldwide"
+
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+::: moniker-end
 2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Cómo comprar más o reducir licencias
 
+::: moniker range="o365-worldwide"
+
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+::: moniker-end
 2. En la **pestaña Productos,** seleccione la suscripción para la que desea comprar más o reducir las licencias.
 3. Elija **Comprar licencias o** Quitar **licencias.**
 4. En el panel derecho, en el cuadro **Licencias totales,** escriba el número total de licencias que desea para esta suscripción y, a continuación, **elija Guardar**. Por ejemplo, si tiene 100 licencias y desea agregar 5 más, escriba 105.
@@ -56,7 +79,23 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 ### <a name="to-assign-licenses"></a>Para asignar licencias
 
-1. En el Centro de administración, vaya a la página **Licencias**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">de</a> facturación.
+:: moniker range="o365-worldwide"
+
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
+
+::: moniker-end
 2. Elija la suscripción a la que desea asignar licencias.
 3. Elija **Asignar licencias**.
 4. En el panel **asignar licencias a usuarios**, empiece a escribir un nombre y elíjalo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
@@ -66,7 +105,23 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 ### <a name="to-unassign-licenses"></a>Para desasignación de licencias
 
-1. En el Centro de administración, vaya a la página **Licencias**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">de</a> facturación.
+:: moniker range="o365-worldwide"
+
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
+
+::: moniker-end
 2. Elija el producto para el que desea desasignación de licencias.
 3. Elija los usuarios a los que desea desasignación de licencias.
 4. Elija **Unassign licenses**.
@@ -74,8 +129,23 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 ## <a name="cancel-a-subscription"></a>Cancelar una suscripción
 
+::: moniker range="o365-worldwide"
+
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la pestaña **Productos**, busque la suscripción que quiere cancelar. Seleccione los tres puntos (más acciones) y, a continuación, **seleccione Cancelar suscripción**.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+::: moniker-end
+2. En la pestaña **Productos**, busque la suscripción que quiere cancelar. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione los comentarios que tenga.
 4. Seleccione **Guardar**.
 

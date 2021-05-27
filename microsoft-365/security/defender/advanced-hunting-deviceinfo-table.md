@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f97947c2c9f02720facae4f0c3c29ff702416261
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023134"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689114"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -52,14 +52,24 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el equipo. |
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 7 |
 | `OSBuild` | string | Versión de compilación del sistema operativo que se ejecuta en la máquina |
-| `IsAzureADJoined` | boolean | Indicador booleano de si la máquina está unida a Azure Active Directory |
+| `IsAzureADJoined` | boolean | Indicador booleano de si la máquina está unida al Azure Active Directory |
 | `AadObjectId` | string | Identificador único del dispositivo en Azure AD |
 | `LoggedOnUsers` | string | Lista de todos los usuarios que han iniciado sesión en el equipo en el momento del evento en formato de matriz JSON |
 | `RegistryDeviceTag` | string | Etiqueta de máquina agregada a través del Registro |
 | `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el equipo. |
 | `MachineGroup` | cadena | Grupo de máquinas de la máquina. Este grupo lo usa el control de acceso basado en roles para determinar el acceso a la máquina |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
+| `OnboardingStatus` | string | Indica si el dispositivo está actualmente incorporado o no en Microsoft Defender For Endpoint o si el dispositivo no es compatible |
 |`AdditionalFields` | string | Información adicional sobre el evento en formato de matriz JSON |
+|`DeviceCategory` | string | Clasificación más amplia que agrupa determinados tipos de dispositivos en las siguientes categorías: Endpoint, Network device, IoT, Unknown |
+|`DeviceType` | string | Tipo de dispositivo basado en propósito y funcionalidad, como dispositivo de red, estación de trabajo, servidor, móvil, consola de juegos o impresora |
+|`DeviceSubType` | string | Modificador adicional para determinados tipos de dispositivos, por ejemplo, un dispositivo móvil puede ser una tableta o un smartphone |
+|`Model` | string | Nombre del modelo o número del producto del proveedor o fabricante |
+|`Vendor` | string | Nombre del proveedor o fabricante del producto |
+|`OSDistribution` | string | Distribución de la plataforma del sistema operativo, como Ubuntu o RedHat para plataformas Linux |
+|`OSVersionInfo` | string | Información adicional sobre la versión del sistema operativo, como el nombre popular, el nombre de código o el número de versión |
+|`MergedDeviceIds` | string | IDs de dispositivo anteriores que se han asignado al mismo dispositivo |
+|`MergedToDeviceId` | string | El identificador de dispositivo más reciente asignado a un dispositivo |
 
 La tabla proporciona información del dispositivo basada en latidos, que son informes `DeviceInfo` periódicos o señales de un dispositivo. Cada quince minutos, el dispositivo envía un latido parcial que contiene atributos que cambian con frecuencia, como `LoggedOnUsers` . Una vez al día, se envía un latido completo que contiene los atributos del dispositivo.
 
