@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si quiere ser más estricto? ¿Y qué extras obtiene si también usa Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: b6661c31d0cc05a1bdfd51de986af1e7b22c9d70
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683276"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696531"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad
 
@@ -44,7 +44,7 @@ Para aplicar automáticamente la configuración Estándar o Estricta a los usuar
 > [!NOTE]
 > La regla de correo no deseado debe habilitarse en los buzones para que el filtrado funcione correctamente. Está habilitado de forma predeterminada, pero debe comprobarlo si el filtrado no parece funcionar. Para obtener más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-En este artículo se describe la configuración predeterminada y también la configuración estándar y estricta recomendada para ayudar a proteger a los usuarios.
+En este artículo se describe la configuración predeterminada y también la configuración estándar y estricta recomendada para ayudar a proteger a los usuarios. Las tablas contienen la configuración del centro de seguridad de Microsoft 365 y PowerShell (Exchange Online PowerShell o powershell independiente Exchange Online Protection powershell para organizaciones sin Exchange Online buzones de correo).
 
 > [!TIP]
 > El Office 365 advanced threat protection recommended configuration analyzer (ORCA) para PowerShell puede ayudarle (administradores) a encontrar los valores actuales de esta configuración. En concreto, el cmdlet **Get-ORCAReport** genera una evaluación de la configuración contra correo no deseado, contra suplantación de identidad (phishing) y otras opciones de higiene de mensajes. Puede descargar el módulo ORCA en <https://www.powershellgallery.com/packages/ORCA/> .
@@ -65,26 +65,26 @@ Para crear y configurar directivas contra correo no deseado, vea [Configure anti
 |---|:---:|:---:|:---:|---|
 |**Acción de detección de correo** no deseado <p> _SpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de detección de correo no deseado** de elevada confianza <p> _HighConfidenceSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
-|**Acción de detección de correo electrónico** de suplantación de identidad <p> _PhishSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
-|**Acción de detección de correo electrónico de phishing de elevada** confianza <p> _HighConfidencePhishAction_|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
-|**Acción de detección masiva** de correo electrónico <p> _BulkSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
-|Umbral de correo electrónico masivo <p> _BulkThreshold_|7 |6 |4 |Para obtener más información, [vea Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).|
-|Período de retención en cuarentena <p> _QuarantineRetentionPeriod_|15 días|30 días|30 días||
-|**Seguridad Sugerencias** <p> _InlineSafetyTipsEnabled_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
+|**Acción de detección** de phishing <p> _PhishSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
+|**Acción de detección de phishing de elevada** confianza <p> _HighConfidencePhishAction_|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
+|**Acción de** detección masiva <p> _BulkSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
+|**Umbral de correo electrónico masivo** <p> _BulkThreshold_|7 |6 |4 |Para obtener más información, [vea Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|_MarkAsSpamBulkMail_|Activado|Activado|Activado|Esta configuración solo está disponible en PowerShell.|
+|**Conservar el correo no deseado en cuarentena durante estos días** <p> _QuarantineRetentionPeriod_|15 días|30 días|30 días||
+|**Habilitar sugerencias de seguridad contra correo no deseado** <p> _InlineSafetyTipsEnabled_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |Remitentes permitidos <p> _AllowedSenders_|Ninguno|Ninguno|Ninguno||
-|Dominios de remitente permitidos <p> _AllowedSenderDomains_|Ninguno|Ninguno|Ninguno|Agregar dominios a la lista de remitentes permitidos es una idea muy mala. Los atacantes podrían enviarle un correo electrónico que, de lo contrario, se filtraría. <p> Use [](learn-about-spoof-intelligence.md) la información de inteligencia de suplantación de identidad y la lista de inquilinos permitidos [o](tenant-allow-block-list.md) bloqueados en el Centro de cumplimiento de seguridad & para revisar todos los remitentes que suplanten direcciones de correo electrónico de remitente en los dominios de correo electrónico de su organización o suplanten direcciones de correo electrónico de remitente en dominios externos.|
+|Dominios de remitente permitidos <p> _AllowedSenderDomains_|Ninguno|Ninguno|Ninguno|Agregar dominios a la lista de remitentes permitidos es una idea muy mala. Los atacantes podrían enviarle un correo electrónico que, de lo contrario, se filtraría. <p> Use [](learn-about-spoof-intelligence.md) la información de inteligencia de suplantación de identidad y la lista de permitidos [o](tenant-allow-block-list.md) bloqueados de inquilinos para revisar todos los remitentes que suplanten direcciones de correo electrónico de remitente en los dominios de correo electrónico de su organización o suplanten direcciones de correo electrónico de remitente en dominios externos.|
 |Remitentes bloqueados <p> _BlockedSenders_|Ninguno|Ninguno|Ninguno||
 |Dominios de remitente bloqueados <p> _BlockedSenderDomains_|Ninguno|Ninguno|Ninguno||
 |**Habilitar las notificaciones de correo no deseado para el usuario final** <p> _EnableEndUserSpamNotifications_|Deshabilitado <p> `$false`|Habilitado <p> `$true`|Habilitado <p> `$true`||
 |**Enviar notificaciones de correo no deseado para el usuario final cada (días)** <p> _EndUserSpamNotificationFrequency_|3 días|3 días|3 días||
-|**ZAP de correo no deseado** <p> _SpamZapEnabled_|Habilitado <p> `$true`|Habilitado <p> `$true`|Habilitado <p> `$true`||
-|**Phish ZAP** <p> _PhishZapEnabled_|Habilitado <p> `$true`|Habilitado <p> `$true`|Habilitado <p> `$true`||
-|_MarkAsSpamBulkMail_|Activado|Activado|Activado|Esta configuración solo está disponible en PowerShell.|
+|Habilitar la purga automática de hora cero (ZAP) para mensajes de suplantación de identidad <p> _PhishZapEnabled_|Habilitado <p> `$true`|Habilitado <p> `$true`|Habilitado <p> `$true`||
+|Habilitar ZAP para mensajes de correo no deseado <p> _SpamZapEnabled_|Habilitado <p> `$true`|Habilitado <p> `$true`|Habilitado <p> `$true`||
 |
 
-Hay varias otras configuraciones de filtro de correo no deseado avanzado (ASF) en directivas contra correo no deseado que están en proceso de desuso. Se comunicará más información sobre las escalas de tiempo para la depreciación de estas características fuera de este artículo.
+Hay muchas configuraciones de filtro de correo no deseado avanzado (ASF) en directivas contra correo no deseado que están en proceso de desuso. Se comunicará más información sobre las escalas de tiempo para la depreciación de estas características fuera de este artículo.
 
-Se recomienda desactivar esta configuración de ASF **para** los **niveles Estándar** **y Estricto.** Para obtener más información acerca de la configuración de ASF, vea [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+Se recomienda dejar desactivada la siguiente configuración de ASF **para** los **niveles Estándar** **y** Estricto. Para obtener más información acerca de la configuración de ASF, vea [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
 <br>
 

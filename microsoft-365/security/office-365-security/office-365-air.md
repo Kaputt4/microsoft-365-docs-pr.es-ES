@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c9cd9ef649ec60fc8d880ae525469980a00f69b2
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7632efb2014af9f55e9cad700bceeeabe555fb8b
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275005"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696579"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -78,9 +78,9 @@ Durante y después de cada investigación automatizada, el equipo de operaciones
 Las funcionalidades de AIR se incluyen en [Microsoft Defender para Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2), siempre que se configuren las directivas y las alertas. ¿Necesita ayuda? Siga las instrucciones de [Protección contra amenazas](protect-against-threats.md) para configurar o configurar las siguientes opciones de protección:
 
 - [Registro de auditoría](../../compliance/turn-audit-log-search-on-or-off.md) (debe estar activado)
-- [Directivas antimalware](protect-against-threats.md#part-1---anti-malware-protection)
-- [Protección antiphishing](protect-against-threats.md#part-2---anti-phishing-protection)
-- [Protección contra correo no deseado](protect-against-threats.md#part-3---anti-spam-protection)
+- [Directivas antimalware](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [Protección contra phishing](protect-against-threats.md#part-2---anti-phishing-protection)
+- [Protección contra correo no deseado](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [Caja fuerte Vínculos y Caja fuerte datos adjuntos](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [Purga automática de hora cero para correo electrónico](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)

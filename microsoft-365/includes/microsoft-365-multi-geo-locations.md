@@ -3,6 +3,7 @@
 |:----------------------------|:-------|:---------------------------------|
 |Asia-Pacífico                 |APC     |Centros de datos de Asia oriental o Asia sudoriental|
 |Australia                    |AUS     |Centros de datos de Asia oriental o Asia sudoriental|
+|Brasil                       |BRA     |(Ubicación de datos de eDiscovery disponible próximamente)|
 |Canada                       |CAN     |Centros de datos de Estados Unidos                    |
 |Europa, Oriente medio y África|EUR     |Centros de datos de Europa                |
 |Francia                       |FRA     |Centros de datos de Europa                |

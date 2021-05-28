@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683336"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696555"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -50,6 +50,8 @@ Las características de protección contra amenazas se *incluyen* en todas las s
 > [!TIP]
 > Tenga en cuenta que, más allá de las instrucciones para activar la *auditoría,* los pasos inician antimalware, anti phishing y antispam, que se marcan como parte de Office 365 Exchange Online Protection (**EOP**). Esto puede parecer extraño en un artículo defender para Office 365, hasta que recuerde (**Defender para Office 365**) contiene e incluye EOP.
 
+<br>
+
 ****
 
 |Tipo de protección|Requisitos de suscripción|
@@ -67,6 +69,8 @@ Las características de protección contra amenazas se *incluyen* en todas las s
 
 Para configurar Defender para Office 365 directivas, debe tener asignado un rol adecuado en el Centro de [seguridad & cumplimiento](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Echa un vistazo a la tabla siguiente para ver los roles que pueden realizar estas acciones.
 
+<br>
+
 ****
 
 |Rol o grupo de roles|Dónde obtener más información|
@@ -82,20 +86,22 @@ Para obtener más información, vea [Permissions in the Security & Compliance Ce
 
 - Inicie el registro de auditoría de forma anticipada. Necesitará que la auditoría esté **on** para algunos de los pasos siguientes. El registro de auditoría está disponible en suscripciones que incluyen [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Para ver los datos en los informes de [](view-email-security-reports.md)protección contra amenazas, como el Panel de [seguridad,](security-dashboard.md)los informes de seguridad de correo electrónico y el [Explorador,](threat-explorer.md)el registro de auditoría debe ser *On*. Para obtener más información, vea Activar o desactivar la búsqueda [del registro de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
 
-## <a name="part-1---anti-malware-protection"></a>Parte 1: protección contra malware
+## <a name="part-1---anti-malware-protection-in-eop"></a>Parte 1: protección antimalware en EOP
 
 Para obtener más información acerca de la configuración recomendada para antimalware, vea [EOP anti-malware policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
 
 1. Abra <https://security.microsoft.com/antimalwarev2> .
 
-2. Seleccione la directiva predeterminada haciendo clic en el nombre de la directiva.
+2. En la **página Antimalware,** seleccione la directiva denominada **Directiva** predeterminada haciendo clic en el nombre.
 
 3. En el control desplegable de detalles de directiva que se abre, haga clic en **Editar** configuración de protección y, a continuación, configure las siguientes opciones:
    - Seleccione **Habilitar el filtro de datos adjuntos** común para activar el filtro de datos adjuntos común. Haga **clic en Personalizar tipos de archivo** para agregar más tipos de archivo.
    - Compruebe que **habilitar la purga automática de hora cero para malware** está seleccionada.
    - Compruebe que ninguna de las opciones de configuración de la **sección Notificación** esté seleccionada.
 
-   Cuando haya terminado, haga clic en **Guardar**
+   Cuando haya terminado, haga clic en **Guardar**.
+
+4. Vuelva al menú desplegable de detalles de la directiva, haga clic **en Cerrar**.
 
 Para obtener instrucciones detalladas para configurar directivas antimalware, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
@@ -135,23 +141,23 @@ En el siguiente procedimiento se describe cómo configurar una directiva contra 
 
 Para obtener más información sobre las opciones de directiva contra suplantación de identidad(phishing), consulte [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-## <a name="part-3---anti-spam-protection"></a>Parte 3: Protección contra correo no deseado
+## <a name="part-3---anti-spam-protection-in-eop"></a>Parte 3: Protección contra correo no deseado en EOP
 
-[La protección contra correo no](anti-spam-protection.md) deseado está disponible en suscripciones que incluyen [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+Para obtener más información acerca de la configuración recomendada para el correo no deseado, vea Configuración de la directiva contra correo no deseado de [EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-1. En el [Centro de seguridad & cumplimiento,](https://protection.office.com)elija Directiva de administración de **amenazas** contra correo \>  \> **no deseado.**
+1. Abra <https://security.microsoft.com/antispam> .
 
-2. En la **pestaña** Personalizado, activa Configuración personalizada.
+2. En la **página Directivas contra correo** no deseado, seleccione la directiva denominada Directiva de entrada contra **correo** no deseado de la lista haciendo clic en el nombre.
 
-3. Expanda Directiva de filtro de correo no deseado **predeterminada,** haga clic **en Editar directiva** y, a continuación, especifique la siguiente configuración:
+3. En el control desplegable de detalles de directiva que aparece, haga clic en Editar umbral de **correo** no deseado y propiedades en la sección Umbral de correo **& correo** no deseado masivo.
 
-   - En la sección Correo no deseado y acciones **masivas,** establezca el umbral en un valor de 5 o 6.
+4. En el **control desplegable de propiedades** y  umbral de correo no deseado que aparece, establezca el valor de umbral de correo electrónico masivo en 5 (Estricto) o 6 (Estándar). Cuando haya terminado, haga clic en **Guardar**
 
-   - En la **sección Permitir listas,** revise (o edite) los remitentes y dominios permitidos.
+5. Vuelva al control desplegable de detalles de la directiva, vaya a la sección Remitentes y dominios permitidos y **bloqueados** y revise o edite los remitentes permitidos y los dominios permitidos.
 
-4. Haga clic en **Guardar**.
+6. Cuando haya terminado, haga clic en **Cerrar**.
 
-Para obtener más información acerca de las opciones de directiva contra correo no deseado, vea [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+Para obtener instrucciones detalladas para configurar directivas contra correo no deseado, vea [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4: protección contra archivos y direcciones URL malintencionadas (Caja fuerte vínculos y Caja fuerte datos adjuntos en Defender para Office 365)
 

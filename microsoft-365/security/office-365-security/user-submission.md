@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 906048609ce70c761bb014961e02c86f912cd638
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 719bd2b86cae1c6a951cb34408ecb9d2b8da699a
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683504"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696591"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuarios
 
@@ -56,9 +56,9 @@ Use los artículos siguientes para configurar los requisitos previos necesarios 
 
 - Desactivar el examen de direcciones URL en los mensajes del buzón personalizado. Use Configurar directivas Caja fuerte [vínculos](set-up-safe-links-policies.md) en Defender para Office 365 para crear una directiva de vínculos de Caja fuerte con la opción **Desactivado** para **Seleccionar** la acción para direcciones URL potencialmente malintencionadas desconocidas en mensajes .
 
-- Crear una directiva antimalware para desactivar Malware Zero-hour Auto Purge. Consulte [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) to set Malware **Zero-hour Auto Purge** to **Off**.
+- Crear una directiva antimalware para desactivar Malware Zero-hour Auto Purge. Consulte [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) to set Malware **Zero-hour Auto Purge** to **Off**.
 
-- Cree una directiva de filtro de correo no deseado para deshabilitar la purga automática de hora cero (ZAP) para correo no deseado y suplantación de identidad (phishing) en el buzón personalizado. Vea [Usar el Centro de seguridad & cumplimiento para](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)  crear directivas contra correo no deseado y desactive las casillas Activar para **ZAP** de correo no deseado y ZAP **de suplantación de identidad**.
+- Cree una directiva de filtro de correo no deseado para deshabilitar la purga automática de hora cero (ZAP) para correo no deseado y suplantación de identidad (phishing) en el buzón personalizado. Vea [Usar el Centro de seguridad & cumplimiento para](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies)  crear directivas contra correo no deseado y desactive las casillas Activar para **ZAP** de correo no deseado y ZAP **de suplantación de identidad**.
 
 - Deshabilite la regla de correo no deseado en el buzón personalizado. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Una vez deshabilitado, EOP no puede mover mensajes a la carpeta  correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado o la colección de listas seguras en el buzón.
 

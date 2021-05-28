@@ -13,7 +13,7 @@
 |OFFICE.COM|N/D|N/D|N/D|N/D|✔|
 |ONEDRIVE|✔|✔|Planeado|✔|✔|
 |ONENOTE|✔|✔|✔|Planeado|✔|
-|OUTLOOK|✔|✔|Planeado|✔|✔|
+|OUTLOOK|✔|✔|✔|✔|✔|
 |PLANNER|✔|✔|N/D|N/D|N/D|
 |POWER APPS|✔|✔|N/D|N/D|Planeado|
 |POWER AUTOMATE|✔|✔|N/D|N/D|N/D|
