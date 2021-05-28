@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: Obtenga información sobre las funcionalidades multige geográficas en Exchange Online, como las limitaciones de características y la colocación de buzones.
-ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Obtenga información sobre las funcionalidades multigeo en Exchange Online, como las limitaciones de características y la colocación de buzones.
+ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923737"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694310"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades multigeográficas en Exchange Online
 
@@ -43,7 +43,7 @@ Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en
 
 - Cuando **PreferredDataLocation** no está especificada en un usuario, al aprovisionar el buzón, se aprovisionará en la ubicación geográfica central.
 
-- Si el código **PreferredDataLocation** no es correcto (por ejemplo, un tipo de NAN en lugar de NAM), el buzón se aprovisionará en la ubicación geográfica central.
+- Si el **código PreferredDataLocation** es incorrecto (por ejemplo, un error tipográfico de NAN en lugar de NAM), el buzón se aprovisionará en la ubicación geográfica central.
 
 **Nota**: las funciones de Multi-geo y las reuniones hospedadas regionalmente por Skype Empresarial Online utilizan la propiedad **PreferredDataLocation** en los objetos de usuario para buscar servicios. Si configura los valores de **PreferredDataLocation** en los objetos de usuario para reuniones hospedadas regionalmente, el buzón de correo de esos usuarios se moverá automáticamente a la ubicación geográfica especificada después de que se habilite en el espacio empresarial de Microsoft 365.
 

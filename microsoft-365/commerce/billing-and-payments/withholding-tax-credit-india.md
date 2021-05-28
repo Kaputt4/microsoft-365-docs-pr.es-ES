@@ -18,16 +18,21 @@ description: Obtenga información sobre cómo solicitar un crédito en su cuenta
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689030"
+ms.locfileid: "52694226"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Solicitar un crédito para la retención de impuestos en su cuenta (clientes de India)
+
+> [!NOTE]
+>
+> Si su organización no está basada en India, consulte Solicitar un crédito para la retención de impuestos [en su cuenta (clientes globales).](withholding-tax-credit-global.md)
 
 Los clientes de India reciben facturas de Web Direct (Azure y Microsoft 365) facturadas por Microsoft Regional Sales Pte Ltd. Singapur (MRS) y hacen pagos transfronterizos a Singapur para liquidar la factura. Si retuvo impuestos al enviar el pago, en este artículo se explica el proceso para reclamar un crédito por la retención de impuestos (WHT) en su cuenta con MRS.
 

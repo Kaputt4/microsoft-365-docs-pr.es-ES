@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934290"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694478"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Información de privacidad: Microsoft Defender para endpoint en iOS
 
@@ -39,6 +39,9 @@ ms.locfileid: "51934290"
 Defender para endpoint en iOS recopila información de los dispositivos iOS configurados y la almacena en el mismo espacio empresarial donde tiene Defender para endpoint. La información se recopila para ayudar a mantener Defender for Endpoint en iOS segura, actualizada, con el rendimiento esperado y para admitir el servicio.
 
 Para obtener más información sobre el almacenamiento de datos, vea [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
+
+
+Para obtener más información sobre las preguntas de privacidad más comunes sobre Microsoft Defender para endpoint en dispositivos móviles Android e iOS, consulta Microsoft Defender para endpoint y tu privacidad en dispositivos móviles Android e [iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
 
 ## <a name="required-data"></a>Datos necesarios 
 
@@ -60,9 +63,9 @@ Esta es una lista de los tipos de datos que se recopilan:
 
 - Información de inquilino, dispositivo y usuario 
 
-    - Id. de dispositivo de Azure Active Directory (AD) e id. de usuario de Azure: identifica de forma única el dispositivo, el usuario respectivamente en Azure Active Directory. 
+    - Azure Active Directory de dispositivo (AD) y el id. de usuario de Azure: identifica de forma única el dispositivo, el usuario respectivamente en Azure Active Directory. 
 
-    - Identificador de inquilino de Azure: GUID que identifica la organización en Azure Active Directory. 
+    - Identificador de inquilino de Azure: GUID que identifica la organización dentro de Azure Active Directory. 
 
     - Id. de la organización de Microsoft Defender para extremo: identificador único asociado a la empresa a la que pertenece el dispositivo. Permite a Microsoft identificar si hay problemas que afectan a un conjunto selecto de empresas y al número de empresas afectadas. 
 

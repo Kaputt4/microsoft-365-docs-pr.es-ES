@@ -1,5 +1,5 @@
 ---
-title: Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
+title: Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración global de vínculos seguros en Microsoft Defender para Office 365.
+description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos de Caja fuerte y configuración global de vínculos de Caja fuerte en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8b2cb8b57dcf630b3e07ac387e96ab099ca7403
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 61cb4746289a8acbdd9af7f668010604de511902
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205622"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694502"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,62 +34,65 @@ ms.locfileid: "51205622"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](defender-for-office-365.md). Si es un usuario principal que busca información sobre safelinks en Outlook, vea [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](defender-for-office-365.md). Si es un usuario principal que busca información sobre safelinks en Outlook, consulte [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Vínculos seguros es una característica de [Microsoft Defender para Office 365](defender-for-office-365.md) que proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y el tiempo de comprobación de clics de las direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, vea [Vínculos seguros en Microsoft Defender para Office 365](safe-links.md).
+Caja fuerte Vínculos es una característica de [Microsoft Defender](defender-for-office-365.md) para Office 365 que proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y el tiempo de comprobación de clics de direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, [vea Caja fuerte Links in Microsoft Defender for Office 365](safe-links.md).
 
-No hay ninguna directiva de vínculos seguros integrada o predeterminada. Para obtener el examen de vínculos seguros de las direcciones URL, debe crear una o más directivas de vínculos seguros, tal como se describe en este artículo.
+No hay ninguna directiva de vínculos integrada o Caja fuerte predeterminada. Para obtener Caja fuerte de vínculos de búsqueda de direcciones URL, debe crear una o más directivas de vínculos de Caja fuerte como se describe en este artículo.
 
 > [!NOTE]
-> Puede configurar la configuración global para la protección de vínculos seguros **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, vea [Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
+> Puede configurar la configuración global para la protección de Caja fuerte de vínculos **fuera** de Caja fuerte directivas de vínculos. Para obtener instrucciones, vea [Configure global settings for Caja fuerte Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
-Puede configurar directivas de vínculos seguros en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones elegibles de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online, pero con suscripciones de complementos de Microsoft Defender para Office 365).
+Puede configurar directivas de vínculos de Caja fuerte en el Centro de seguridad y cumplimiento de & o en PowerShell (PowerShell de Exchange Online para organizaciones Microsoft 365 elegibles con buzones de correo en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online, pero con Microsoft Defender para suscripciones de complemento Office 365).
 
-Los elementos básicos de una directiva de vínculos seguros son:
+Los elementos básicos de una directiva Caja fuerte links son:
 
-- La directiva de vínculos **seguros:** activar la protección de vínculos seguros, activar el examen de direcciones URL en tiempo real, especificar si se debe esperar a que se complete el examen en tiempo real antes de entregar el mensaje, activar el examen de mensajes internos, especificar si se va a realizar un seguimiento de los clics del usuario en las direcciones URL y especificar si se va a permitir a los usuarios hacer clic en la url original.
+- La directiva de vínculos **seguros:** active la protección de vínculos de Caja fuerte, active la detección de direcciones URL en tiempo real, especifique si debe esperar a que se complete el examen en tiempo real antes de entregar el mensaje, activar el examen de mensajes internos, especificar si se debe realizar un seguimiento de los clics de usuario en las direcciones URL y especificar si se permite a los usuarios hacer clic en la url original.
 - **La regla de vínculos seguros:** especifica la prioridad y los filtros de destinatarios (a quién se aplica la directiva).
 
-La diferencia entre estos dos elementos no es obvia al administrar las directivas de vínculos seguros en el Centro de seguridad & cumplimiento:
+> [!IMPORTANT]
+> Los administradores deben tener en cuenta las distintas opciones de configuración de SafeLinks. Una de las opciones disponibles es incluir información de identificación del usuario en SafeLinks. Esta característica permite a los *equipos de Operaciones* de seguridad investigar posibles riesgos de usuario, tomar medidas correctivas y limitar infracciones costosas.
 
-- Al crear una directiva de vínculos seguros, está creando una regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambos.
-- Al modificar una directiva de vínculos seguros, la configuración relacionada con el nombre, la prioridad, la habilitada o deshabilitada y los filtros de destinatarios modifican la regla de vínculos seguros. Todas las demás opciones modifican la directiva de vínculos seguros asociada.
-- Al quitar una directiva de vínculos seguros, se quitan la regla de vínculos seguros y la directiva de vínculos seguros asociada.
+La diferencia entre estos dos elementos no es obvia al administrar las directivas de vínculos de Caja fuerte en el Centro de seguridad & cumplimiento:
 
-En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para obtener más información, vea la sección [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) más adelante en este artículo.
+- Al crear una directiva Caja fuerte vínculos, en realidad está creando una regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambos.
+- Al modificar una directiva Caja fuerte vínculos, la configuración relacionada con el nombre, la prioridad, la habilitada o deshabilitada y los filtros de destinatarios modifican la regla de vínculos seguros. Todas las demás opciones modifican la directiva de vínculos seguros asociada.
+- Al quitar una directiva de vínculos Caja fuerte, se quitan la regla de vínculos seguros y la directiva de vínculos seguros asociada.
+
+En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para obtener más información, vea la sección [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Caja fuerte Links policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) más adelante en este artículo.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la **página Vínculos seguros,** use <https://protection.office.com/safelinksv2> .
+- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la **página Caja fuerte vínculos,** use <https://protection.office.com/safelinksv2> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Debe tener asignados permisos antes de poder realizar los procedimientos descritos en este artículo:
-  - Para crear, modificar y eliminar directivas de vínculos seguros, debe ser miembro de los grupos de  roles Administración de  la organización o Administrador de seguridad en el Centro de cumplimiento de & de seguridad y miembro del grupo de roles Administración de la organización en Exchange Online.  
-  - Para obtener acceso de solo lectura a directivas de vínculos seguros, debe ser miembro de los grupos de roles Lector **global** o **Lector de** seguridad.
+  - Para crear, modificar y eliminar directivas de vínculos de Caja fuerte, debe ser miembro de los grupos de  roles Administración de  la organización o Administrador de seguridad en el Centro de cumplimiento de & y miembro del grupo de roles Administración de la organización en Exchange Online.  
+  - Para obtener acceso de solo lectura a Caja fuerte de vínculos, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
 
   Para obtener más información, vea [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   > 
-  > - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
-  . - El **grupo de roles Administración** de la organización de solo vista en Exchange [Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
+  > - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  . - El **grupo de roles Administración** de la organización de solo vista [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
-- Para obtener la configuración recomendada para las directivas de vínculos seguros, consulte [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+- Para obtener información sobre la configuración recomendada para Caja fuerte de vínculos, [consulte Caja fuerte configuración de directiva de vínculos.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - Permitir hasta 30 minutos para que se aplique una directiva nueva o actualizada.
 
-- [Las nuevas características se agregan continuamente a Microsoft Defender para Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). A medida que se agregan nuevas características, es posible que deba realizar ajustes en las directivas de vínculos seguros existentes.
+- [Las nuevas características se agregan continuamente a Microsoft Defender para Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). A medida que se agregan nuevas características, es posible que deba realizar ajustes en las directivas de vínculos de Caja fuerte existentes.
 
-## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para crear directivas de vínculos seguros
+## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para crear directivas Caja fuerte vínculos
 
-La creación de una directiva de vínculos seguros personalizada en el Centro de seguridad & cumplimiento crea la regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambos.
+La creación de una directiva de vínculos de Caja fuerte personalizada en el Centro de seguridad y cumplimiento de & crea la regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas \> **Vínculos** seguros de ATP \> **.**
+1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
 
-2. En la **página Vínculos seguros,** haga clic **en Crear**.
+2. En la **página Caja fuerte,** haga clic en **Crear**.
 
-3. Se **abrirá el Asistente para nueva directiva de vínculos** seguros. En la **página Nombre de la directiva,** configure las siguientes opciones:
+3. Se **abrirá el Asistente para Caja fuerte de directivas de nuevos** vínculos. En la **página Nombre de la directiva,** configure las siguientes opciones:
 
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
 
@@ -97,23 +100,23 @@ La creación de una directiva de vínculos seguros personalizada en el Centro de
 
    Cuando termine, haga clic en **Siguiente**.
 
-4. En la **página Configuración** que aparece, configure las siguientes opciones:
+4. En la **Configuración** que aparece, configure las siguientes opciones:
 
-   - **Seleccione la acción para direcciones** URL potencialmente malintencionadas desconocidas en mensajes: Seleccione **Activar** para habilitar la protección de vínculos seguros para vínculos en mensajes de correo electrónico.
+   - **Seleccione la acción para direcciones** URL potencialmente  malintencionadas desconocidas en mensajes: seleccione Activar para habilitar la protección de vínculos de Caja fuerte para vínculos en mensajes de correo electrónico.
 
-   - **Seleccione la acción para las direcciones** URL desconocidas o potencialmente malintencionadas de Microsoft Teams: Seleccione Activar para habilitar la protección de vínculos seguros para vínculos en Teams. 
+   - **Seleccione la acción para direcciones** URL desconocidas o  potencialmente malintencionadas dentro de Microsoft Teams : Seleccione Activar para habilitar la protección de vínculos de Caja fuerte para vínculos de Teams.
 
    - **Aplicar análisis de direcciones URL** en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos: seleccione esta opción para habilitar el examen en tiempo real de vínculos en mensajes de correo electrónico.
 
    - **Espere a que se complete el examen** de direcciones URL antes de entregar el mensaje: seleccione esta opción para esperar a que se complete el examen de direcciones URL en tiempo real antes de entregar el mensaje.
 
-   - **Aplicar vínculos seguros a los** mensajes de correo electrónico enviados dentro de la organización: seleccione esta opción para aplicar la directiva Vínculos seguros a los mensajes entre remitentes internos y destinatarios internos.
+   - **Aplicar Caja fuerte vínculos** a mensajes de correo electrónico enviados dentro de la organización: seleccione esta opción para aplicar la directiva de vínculos de Caja fuerte a los mensajes entre remitentes internos y destinatarios internos.
 
    - **No realizar un seguimiento de los clics del** usuario: deje esta configuración sin elegir para habilitar los clics de usuario de seguimiento en las direcciones URL de los mensajes de correo electrónico.
 
    - **No permitir que los usuarios hagan clic en** la dirección URL original: seleccione esta opción para impedir que los usuarios hagan clic en la dirección URL original en las páginas de [advertencia.](safe-links.md#warning-pages-from-safe-links)
 
-   - **No vuelva a escribir las siguientes direcciones URL:** permite obtener acceso a las direcciones URL especificadas que, de lo contrario, serían bloqueadas por vínculos seguros.
+   - **No vuelva a escribir las** siguientes direcciones URL: permite obtener acceso a las direcciones URL especificadas que, de lo contrario, se bloquearían mediante Caja fuerte vínculos.
 
      En el cuadro, escriba la dirección URL o el valor que desee y, a continuación, haga clic en ![Icono de botón Agregar](../../media/ITPro-EAC-AddIcon.png).
 
@@ -121,9 +124,9 @@ La creación de una directiva de vínculos seguros personalizada en el Centro de
 
      Para obtener sintaxis de entrada, vea Sintaxis de entrada para la lista "No volver a [escribir las siguientes direcciones URL".](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
 
-   Para obtener información detallada acerca de esta configuración, vea [Safe Links settings for email messages](safe-links.md#safe-links-settings-for-email-messages) y Safe Links settings for Microsoft [Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
+   Para obtener información detallada acerca de esta configuración, consulte [Caja fuerte links settings for email messages](safe-links.md#safe-links-settings-for-email-messages) and Caja fuerte Links settings for [Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
 
-   Para obtener más información sobre los valores recomendados para la configuración de directivas estándar y estricta, consulte [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+   Para obtener más información sobre los valores recomendados para la configuración de directivas estándar y estricta, consulte [Caja fuerte configuración de directiva de vínculos](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -155,29 +158,29 @@ La creación de una directiva de vínculos seguros personalizada en el Centro de
 
    Cuando haya terminado, haga clic en **Finalizar**.
 
-## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para ver directivas de vínculos seguros
+## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para ver las directivas Caja fuerte vínculos
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas \> **Vínculos** seguros de ATP \> **.**
+1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
 
-2. En la **página Vínculos seguros,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
+2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
 
    Los detalles de la directiva aparecen en un desplegable
 
-## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para modificar directivas de vínculos seguros
+## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para modificar las directivas Caja fuerte vínculos
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas \> **Vínculos** seguros de ATP \> **.**
+1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
 
-2. En la **página Vínculos seguros,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
+2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
 
 3. En el desplegable de detalles de la directiva que aparece, haga clic **en Editar directiva**.
 
-La configuración disponible en el menú desplegable que aparece es idéntica a la descrita en la sección Usar el Centro de seguridad & cumplimiento para crear directivas [de vínculos seguros.](#use-the-security--compliance-center-to-create-safe-links-policies)
+La configuración disponible en el menú desplegable que aparece es idéntica a la descrita en la sección Usar el Centro de seguridad [y & cumplimiento](#use-the-security--compliance-center-to-create-safe-links-policies) para crear Caja fuerte de vínculos.
 
 Para habilitar o deshabilitar una directiva o establecer el orden de prioridad de la directiva, consulte las secciones siguientes.
 
-### <a name="enable-or-disable-safe-links-policies"></a>Habilitar o deshabilitar directivas de vínculos seguros
+### <a name="enable-or-disable-safe-links-policies"></a>Habilitar o deshabilitar directivas Caja fuerte vínculos
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas \> **Vínculos** seguros de ATP \> **.**
+1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
 
 2. Observe el valor de la **columna Estado:**
 
@@ -185,46 +188,46 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
    - Mueva el botón de alternancia a la derecha para habilitar la directiva: ![Activar directiva](../../media/scc-toggle-on.png).
 
-### <a name="set-the-priority-of-safe-links-policies"></a>Establecer la prioridad de las directivas de vínculos seguros
+### <a name="set-the-priority-of-safe-links-policies"></a>Establecer la prioridad de las directivas Caja fuerte vínculos
 
-De forma predeterminada, las directivas de vínculos seguros tienen una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen menor prioridad que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
+De forma predeterminada, Caja fuerte las directivas de vínculos se les da una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen menor prioridad que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
 Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
 
-Las directivas de vínculos seguros se muestran en el orden en que se procesan (la primera directiva tiene el **valor de** prioridad 0).
+Caja fuerte Las directivas de vínculos se muestran en el orden en que se procesan (la primera directiva tiene el **valor de** prioridad 0).
 
 > [!NOTE]
-> En el Centro de & seguridad, solo puede cambiar la prioridad de la directiva vínculos seguros después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (lo que puede afectar a la prioridad de las reglas existentes).
+> En el Centro de & cumplimiento, solo puede cambiar la prioridad de la directiva de vínculos de Caja fuerte después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (lo que puede afectar a la prioridad de las reglas existentes).
 
 Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista (no puede modificar directamente el número de **Prioridad** en el Centro de seguridad y cumplimiento).
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas \> **Vínculos** seguros de ATP \> **.**
+1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
 
-2. En la **página Vínculos seguros,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
+2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
 
 3. En el desplegable de detalles de la directiva que aparece, haga clic en el botón de prioridad disponible:
 
-   - La directiva Vínculos seguros con **el valor de** **prioridad 0** solo tiene disponible **el botón Disminuir** prioridad.
+   - La directiva Caja fuerte vínculos con el **valor de prioridad** **0** solo tiene disponible **el botón Disminuir** prioridad.
 
-   - La directiva Vínculos seguros con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene disponible **el botón Aumentar** prioridad.
+   - La directiva Caja fuerte vínculos con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene disponible **el botón Aumentar** prioridad.
 
-   - Si tiene tres o más directivas de vínculos seguros, las  directivas entre los valores de prioridad más alta y más baja tienen disponibles los botones Aumentar prioridad y Disminuir **prioridad.**
+   - Si tiene tres o más directivas de vínculos Caja fuerte, las directivas  entre los  valores de prioridad más alta y más baja tienen disponibles los botones Aumentar prioridad y Disminuir prioridad.
 
 4. Haga **clic en Aumentar prioridad** o Disminuir **prioridad** para cambiar el valor **De** prioridad.
 
 5. Cuando haya terminado, haga clic en **Cerrar**.
 
-## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para quitar directivas de vínculos seguros
+## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para quitar directivas Caja fuerte vínculos
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas \> **Vínculos** seguros de ATP \> **.**
+1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
 
-2. En la **página Vínculos seguros,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
+2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
 
 3. En el desplegable de detalles de directiva que aparece, haga clic en **Eliminar** directiva y, a continuación, haga clic en **Sí** en el cuadro de diálogo de advertencia que aparece.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Usar PowerShell de Exchange Online o PowerShell de EOP independiente para configurar directivas de vínculos seguros
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Usar Exchange Online PowerShell o PowerShell independiente de EOP para configurar directivas Caja fuerte vínculos
 
-Como se describió anteriormente, una directiva de vínculos seguros consta de una directiva de vínculos seguros y una regla de vínculos seguros.
+Como se describió anteriormente, una directiva Caja fuerte links consiste en una directiva de vínculos seguros y una regla de vínculos seguros.
 
 En PowerShell, la diferencia entre las directivas de vínculos seguros y las reglas de vínculos seguros es aparente. Las directivas de vínculos seguros se administran mediante los cmdlets **\* -SafeLinksPolicy** y se administran reglas de vínculos seguros mediante los cmdlets **\* -SafeLinksRule.**
 
@@ -232,9 +235,9 @@ En PowerShell, la diferencia entre las directivas de vínculos seguros y las reg
 - En PowerShell, se modifica la configuración de la directiva de vínculos seguros y la regla de vínculos seguros por separado.
 - Al quitar una directiva de vínculos seguros de PowerShell, la regla de vínculos seguros correspondiente no se quita automáticamente y viceversa.
 
-### <a name="use-powershell-to-create-safe-links-policies"></a>Usar PowerShell para crear directivas de vínculos seguros
+### <a name="use-powershell-to-create-safe-links-policies"></a>Usar PowerShell para crear directivas Caja fuerte vínculos
 
-Crear una directiva de vínculos seguros en PowerShell es un proceso de dos pasos:
+Crear una directiva Caja fuerte vínculos en PowerShell es un proceso de dos pasos:
 
 1. Cree la directiva de vínculos seguros.
 2. Cree la regla de vínculos seguros que especifica la directiva de vínculos seguros a la que se aplica la regla.
@@ -271,7 +274,7 @@ En este ejemplo se crea una directiva de vínculos seguros denominada Contoso Al
 - Activa el examen en tiempo real de las direcciones URL en las que se hace clic, incluidos los vínculos en los que se hace clic que apuntan a archivos.
 - Espere a que se complete el examen de direcciones URL antes de entregar el mensaje.
 - Activa la detección y reescritura de direcciones URL para los mensajes internos.
-- Realizar un seguimiento de los clics de usuario relacionados con la protección de vínculos seguros (no estamos usando el parámetro _DoNotTrackUserClicks_ y el valor predeterminado es $false, lo que significa que se realiza un seguimiento de los clics de usuario).
+- Realizar un seguimiento de los clics de usuario relacionados con la protección de vínculos de Caja fuerte (no estamos usando el parámetro _DoNotTrackUserClicks_ y el valor predeterminado es $false, lo que significa que se realiza un seguimiento de los clics del usuario).
 - No permitir que los usuarios hagan clic en la dirección URL original.
 
 ```PowerShell
@@ -357,7 +360,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ge
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>Usar PowerShell para modificar directivas de vínculos seguros
 
-No puede cambiar el nombre de una directiva de vínculos seguros en PowerShell (el cmdlet **Set-SafeLinksPolicy** no tiene ningún _parámetro Name)._ Al cambiar el nombre de una directiva de vínculos seguros en el Centro de seguridad & cumplimiento, solo se cambia el nombre de la regla de vínculos _seguros._
+No puede cambiar el nombre de una directiva de vínculos seguros en PowerShell (el cmdlet **Set-SafeLinksPolicy** no tiene ningún _parámetro Name)._ Al cambiar el nombre de una directiva Caja fuerte vínculos en el Centro de seguridad & cumplimiento, solo se cambia el nombre de la regla de vínculos _seguros_.
 
 La única consideración adicional para modificar directivas de vínculos seguros en PowerShell es la sintaxis disponible para el parámetro _DoNotRewriteUrls_ (la lista ["No volver](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)a escribir las siguientes direcciones URL" ):
 
@@ -390,7 +393,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [ve
 
 ### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a>Usar PowerShell para habilitar o deshabilitar reglas de vínculos seguros
 
-Habilitar o deshabilitar una regla de vínculos seguros en PowerShell habilita o deshabilita toda la directiva de vínculos seguros (la regla de vínculos seguros y la directiva de vínculos seguros asignada).
+Habilitar o deshabilitar una regla de vínculos seguros en PowerShell habilita o deshabilita toda la directiva de vínculos de Caja fuerte (la regla de vínculos seguros y la directiva de vínculos seguros asignada).
 
 Para habilitar o deshabilitar una regla de vínculos seguros en PowerShell, use esta sintaxis:
 
@@ -469,15 +472,15 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Para comprobar que vínculos seguros está analizando mensajes, compruebe los informes disponibles de Microsoft Defender para Office 365. Para obtener más información, vea [View reports for Defender for Office 365](view-reports-for-mdo.md) y Use Explorer in the Security & Compliance [Center](threat-explorer.md).
+Para comprobar que los Caja fuerte están analizando mensajes, compruebe los informes de Microsoft Defender disponibles Office 365 datos. Para obtener más información, vea [View reports for Defender for Office 365](view-reports-for-mdo.md) and Use Explorer in the Security & Compliance [Center](threat-explorer.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 
-Para comprobar que ha creado, modificado o quitado correctamente directivas de vínculos seguros, siga estos pasos:
+Para comprobar que ha creado, modificado o quitado correctamente las directivas de vínculos Caja fuerte, siga estos pasos:
 
-- En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas \> **Vínculos** seguros de ATP \> **.** Compruebe la lista de directivas, sus **valores de** estado y sus **valores de** prioridad. Para ver más detalles, seleccione la directiva de la lista y vea los detalles en el menú desplegable.
+- En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**. Compruebe la lista de directivas, sus **valores de** estado y sus **valores de** prioridad. Para ver más detalles, seleccione la directiva de la lista y vea los detalles en el menú desplegable.
 
-- En PowerShell de Exchange Online o Exchange Online Protection PowerShell, reemplace por el nombre de la directiva o regla, ejecute el siguiente comando y \<Name\> compruebe la configuración:
+- En Exchange Online PowerShell o Exchange Online Protection PowerShell, reemplace por el nombre de la directiva o regla, ejecute el siguiente comando y compruebe \<Name\> la configuración:
 
   ```PowerShell
   Get-SafeLinksPolicy -Identity "<Name>"

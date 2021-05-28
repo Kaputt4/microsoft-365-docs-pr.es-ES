@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: c72e9491303d3f14ddb184e6a302a518643f709d
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939629"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694346"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender para punto de conexión en Android: información de privacidad
 
@@ -38,6 +38,8 @@ Para obtener más información sobre el almacenamiento de datos, vea [Microsoft 
 
 La información se recopila para ayudar a mantener Defender for Endpoint for Android seguro, actualizado, con el rendimiento esperado y para admitir el servicio.
 
+Para obtener más información sobre las preguntas de privacidad más comunes sobre Microsoft Defender para endpoint en dispositivos móviles Android e iOS, consulta Microsoft Defender para endpoint y tu privacidad en dispositivos móviles Android e [iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
+
 ## <a name="required-data"></a>Datos requeridos 
 
 Los datos requeridos constan de datos necesarios para que Defender for Endpoint for Android funcione según lo esperado. Estos datos son esenciales para el funcionamiento del servicio y pueden incluir datos relacionados con el usuario final, la organización, el dispositivo y las aplicaciones. Esta es una lista de los tipos de datos que se recopilan:
@@ -47,7 +49,7 @@ Los datos requeridos constan de datos necesarios para que Defender for Endpoint 
 Información sobre **paquetes de** aplicaciones android malintencionadas (APK) en el dispositivo, incluidos los
 
 -  Instalar origen
--  Ubicación de almacenamiento (ruta de acceso de archivo) del APK
+-  Storage ubicación (ruta de acceso de archivo) del APK
 -  Tiempo de instalación, tamaño del APK y permisos
 
 ### <a name="web-page--network-information"></a>Página web / Información de red
@@ -66,9 +68,9 @@ Información sobre **paquetes de** aplicaciones android malintencionadas (APK) e
     - Identificador único global (GUID) generado aleatoriamente
 
 - Información de inquilino, dispositivo y usuario
-    -   Id. de dispositivo de Azure Active Directory (AD) e id. de usuario de Azure: identifica de forma única el dispositivo, el usuario respectivamente en Azure Active Directory.
+    -   Azure Active Directory de dispositivo (AD) y el id. de usuario de Azure: identifica de forma única el dispositivo, el usuario respectivamente en Azure Active Directory.
 
-    -   Identificador de inquilino de Azure: GUID que identifica su organización en Azure Active Directory
+    -   Identificador de inquilino de Azure: GUID que identifica la organización dentro de Azure Active Directory
 
     -   Id. de la organización de Microsoft Defender para extremo: identificador único asociado a la empresa a la que pertenece el dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de empresas y cuántas empresas se verán afectadas 
 

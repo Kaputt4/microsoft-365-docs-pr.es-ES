@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 270e38d65857de2f4d06460fb3bb77f72a165ecf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538968"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694490"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de permitidos o bloqueados del espacio empresarial
 
@@ -44,7 +44,6 @@ La lista de inquilinos permitidos o bloqueados en el Centro de seguridad & cumpl
 
 - Direcciones URL que se bloquearán.
 - Archivos que se va a bloquear.
-- Dominios de remitente de correo masivo que se permiten. Para obtener más información acerca del correo masivo, el nivel de confianza en masa (BCL) y el filtrado masivo de correo mediante directivas contra correo no deseado, vea [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).
 - Remitentes suplantados para permitir o bloquear. Si invalida el veredicto permitir o bloquear en la información de inteligencia suplantada, el remitente  suplantado se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del inquilino. [](learn-about-spoof-intelligence.md) También puede crear entradas de permitir o bloquear manualmente para remitentes suplantados aquí antes de que los detecte la inteligencia de suplantación de identidad.
 
 En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online).
@@ -76,7 +75,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Debe tener permisos asignados en Exchange Online antes de poder realizar los procedimientos de este artículo:
-  - **Direcciones URL, archivos y permitir remitentes masivos:**
+  - **Direcciones URL y archivos:**
     - Para agregar y quitar valores de la lista de inquilinos permitidos o bloqueados, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
     - Para obtener acceso de solo lectura a la lista de inquilinos permitidos o bloqueados, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
   - **Suplantación:** una de las siguientes combinaciones:
@@ -135,26 +134,6 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
-## <a name="use-the-security--compliance-center-to-create-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Usar el Centro de seguridad & cumplimiento para crear entradas de dominio de remitente de correo masivo en la lista de inquilinos permitidos o bloqueados
-
-1. En el Centro de seguridad & cumplimiento, vaya a **Administración** de amenazas Directivas \>  \> **permitir/bloquear listas de inquilinos.**
-
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña Dominios de remitente para la omisión de **BCL** y, a continuación, haga clic **en Agregar**.
-
-3. En el menú desplegable Agregar dominio de remitente para la omisión **de BCL** que aparece, configure las siguientes opciones:
-
-   - Agregar dominios de remitente para la omisión **de BCL:** escriba un dominio de origen de correo masivo bueno por línea, hasta un máximo de 20.
-
-   - **Nunca expire:** realice uno de los siguientes pasos:
-
-     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Expira en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
-
-     o
-
-     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
-
-4. Cuando haya terminado, haga clic en **Agregar**.
-
 ## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Usar el Centro de seguridad & cumplimiento para crear entradas de remitente suplantadas de identidad o de bloqueo en la lista de permitidos o bloqueados de inquilinos
 
 **Notas**:
@@ -198,11 +177,6 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
      - **Fecha de última actualización**
      - **Fecha de expiración**
      - **Nota**
-
-   - **Dominios de remitente para la omisión de BCL**
-     - **Valor:** dominio del remitente de correo masivo.
-     - **Fecha de última actualización**
-     - **Fecha de expiración**
 
    - **Spoofing**
      - **Usuario suplantado**
@@ -272,7 +246,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
    - **Spoofing**
      - **Acción:** puede cambiar el valor a **Permitir** o **Bloquear**.
 
-4. Cuando termine, haga clic en **Guardar**.
+4. Cuando haya terminado, haga clic en **Guardar**.
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Usar el Centro de & seguridad para quitar entradas de la lista de inquilinos permitidos o bloqueados
 
@@ -312,23 +286,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-add-allow-bulk-mail-sender-domain-entries-to-the-tenant-allowblock-list"></a>Usar PowerShell para agregar entradas de dominio de remitente de correo masivo a la lista de inquilinos permitidos o bloqueados
-
-Para agregar entradas de dominio de remitente de correo masivo en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
-
-```powershell
-New-TenantAllowBlockListItems -ListType BulkSender -Block:$false -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-En este ejemplo se agrega una entrada de remitente masivo permitida para el dominio especificado que nunca expira.
-
-```powershell
-New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
 ### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>Usar PowerShell para agregar entradas de remitente suplantadas de identidad o bloquear a la lista de inquilinos permitidos o bloqueados
 
 Para agregar entradas de remitente suplantadas en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
@@ -357,28 +314,6 @@ En este ejemplo se devuelven todas las direcciones URL bloqueadas.
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
-### <a name="use-powershell-to-view-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Usar PowerShell para ver entradas de dominio de remitente de correo masivo en la lista de inquilinos permitidos o bloqueados
-
-Para ver permitir entradas de dominio de remitente de correo masivo en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender [-Entry <BulkSenderDomainValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-En este ejemplo se devuelven todos los dominios de remitente de correo masivo permitidos.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender
-```
-
-En este ejemplo se devuelve información para el dominio de remitente masivo especificado.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "contosodailydeals.com"
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
@@ -427,22 +362,6 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-modify-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Usar PowerShell para modificar permitir entradas de dominio de remitente de correo masivo en la lista de inquilinos permitidos o bloqueados
-
-Para modificar permitir entradas de dominio de remitente de correo masivo en la lista de inquilinos permitidos o bloqueados, use la siguiente sintaxis:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-En este ejemplo se cambia la expiración de la entrada de dominio de remitente de correo masivo especificada para que nunca expire.
-
-```powershell
-Set-TenantAllowBlockListItems -ListType BulkSender -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -NoExpiration
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
 ### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Usar PowerShell para modificar entradas de remitente suplantadas o de permitir en la lista de inquilinos permitidos o bloqueados
 
 Para modificar permitir o bloquear entradas de remitente suplantadas en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
@@ -459,12 +378,12 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### <a name="use-powershell-to-remove-bulk-mail-sender-domain-file-and-domain-entries-from-the-tenant-allowblock-list"></a>Usar PowerShell para quitar entradas de dominio, archivo y dominio del remitente de correo masivo de la lista de inquilinos permitidos o bloqueados
+### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Usar PowerShell para quitar direcciones URL o entradas de archivo de la lista de inquilinos permitidos o bloqueados
 
-Para quitar entradas de dominio de remitente de correo masivo, bloquear entradas de archivo y bloquear entradas de dirección URL de la lista de inquilinos permitidos o bloqueados, use la siguiente sintaxis:
+Para quitar entradas de archivos y direcciones URL de la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <BulkSender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 En este ejemplo se quita la entrada de dirección URL de bloque especificada de la lista de inquilinos permitidos o bloqueados.

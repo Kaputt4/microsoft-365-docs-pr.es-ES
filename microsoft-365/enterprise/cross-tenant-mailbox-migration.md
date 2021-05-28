@@ -1,6 +1,6 @@
 ---
 title: Migración de buzones de inquilinos cruzados
-description: Cómo mover buzones entre inquilinos de Microsoft 365 u Office 365.
+description: Cómo mover buzones entre Microsoft 365 o Office 365 inquilinos.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: d52a0ca4a2dc9b799a32f70962416ffe190e16db
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: f9a4b7679a33d6722336ee5412e4992389ba915f
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876192"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694418"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -27,19 +27,19 @@ Anteriormente, cuando un inquilino de Exchange Online necesitaba mover buzones a
 
 Normalmente, durante fusiones o desinstituras, necesita la capacidad de mover usuarios y contenido a un nuevo inquilino. Cuando el administrador de inquilinos de destino ejecuta el movimiento, se denomina movimiento de extracción, similar a las migraciones locales a las migraciones de incorporación en la nube.
 
-Los administradores de inquilinos pueden realizar un autoservicio total de los movimientos de buzones de Exchange entre inquilinos, mediante interfaces conocidas que se pueden incluir en los flujos de trabajo más grandes necesarios para realizar la transición de usuarios a su nueva organización. Los administradores pueden usar el cmdlet, disponible a través del rol de administración Mover buzones, para ejecutar movimientos `New-MigrationBatch` entre inquilinos. El proceso de movimiento incluye comprobaciones de autorización de inquilino durante la sincronización y la finización de buzones. 
+Los administradores de inquilinos Exchange los movimientos de buzones de correo entre inquilinos son totalmente autoservicios, con interfaces conocidas que se pueden incluir en scripts en los flujos de trabajo más grandes necesarios para realizar la transición de usuarios a su nueva organización. Los administradores pueden usar el cmdlet, disponible a través del rol de administración Mover buzones, para ejecutar movimientos `New-MigrationBatch` entre inquilinos. El proceso de movimiento incluye comprobaciones de autorización de inquilino durante la sincronización y la finización de buzones. 
  
-Los usuarios que migran deben estar presentes en el sistema exchange online de inquilino de destino como MailUsers, marcados con atributos específicos para habilitar los movimientos entre inquilinos. El sistema producirá un error en los movimientos de los usuarios que no estén configurados correctamente en el espacio empresarial de destino.  
+Los usuarios que migran deben estar presentes en el inquilino de destino Exchange Online como MailUsers, marcado con atributos específicos para habilitar los movimientos entre inquilinos. El sistema producirá un error en los movimientos de los usuarios que no estén configurados correctamente en el espacio empresarial de destino.  
 
 Cuando se completan los movimientos, el buzón del sistema de origen se convierte en MailUser y el targetAddress (que se muestra como ExternalEmailAddress en Exchange) se marca con la dirección de enrutamiento al inquilino de destino. Este proceso deja el mailuser heredado en el inquilino de origen y permite un período de coexistencia y enrutamiento de correo. Cuando los procesos empresariales lo permiten, el inquilino de origen puede quitar el mailuser de origen o convertirlo en un contacto de correo. 
 
-Las migraciones de buzones de Exchange entre inquilinos se admiten solo para inquilinos en la nube o híbrida, o cualquier combinación de los dos.
+Las migraciones entre inquilinos Exchange buzones de correo se admiten solo para inquilinos en la nube o híbrida, o cualquier combinación de los dos.
 
 En este artículo se describe el proceso de movimientos de buzones entre inquilinos y se proporcionan instrucciones sobre cómo preparar los inquilinos de origen y de destino para el movimiento de contenido.  
 
 ## <a name="preparing-source-and-target-tenants"></a>Preparación de inquilinos de origen y de destino
 
-La característica de migración de buzones de Exchange entre inquilinos requiere autorización y ámbito para las migraciones entre inquilinos. Con la aplicación de Azure Enterprise y las soluciones de almacenamiento de Key Vault, los administradores de inquilinos ahora tienen la capacidad de administrar la autorización y el ámbito de las migraciones de buzones de Exchange Online de un inquilino a otro. Los movimientos de buzones entre inquilinos admiten un modelo de invitación y consentimiento para establecer una aplicación de Azure Active Directory (Azure AD) usada para la autenticación entre un par de inquilinos. También se requieren componentes adicionales, como una relación de organización y un extremo de migración.
+La característica de migración entre inquilinos Exchange buzón de correo requiere autorización y ámbito para las migraciones entre inquilinos. Con la aplicación de Azure Enterprise y las soluciones de almacenamiento de Key Vault, los administradores de inquilinos ahora tienen la capacidad de administrar la autorización y el ámbito de las migraciones de buzones de correo de un inquilino Exchange Online otro. Los movimientos de buzones entre inquilinos admiten un modelo de invitación y consentimiento para establecer una aplicación de Azure Active Directory (Azure AD) usada para la autenticación entre un par de inquilinos. También se requieren componentes adicionales, como una relación de organización y un extremo de migración.
 
 Esta sección no incluye los pasos específicos necesarios para preparar los objetos de usuario MailUser en el directorio de destino, ni incluye el comando de ejemplo para enviar un lote de migración. Consulte Prepare [target user objects for migration para](#prepare-target-user-objects-for-migration) obtener esta información.
 
@@ -51,9 +51,9 @@ Antes de empezar, asegúrese de que tiene los permisos necesarios para ejecutar 
 
 Además, los grupos de seguridad habilitados para correo en el espacio empresarial de origen son necesarios antes de ejecutar la instalación. Estos grupos se usan para establecer el ámbito de la lista de buzones que pueden moverse del espacio empresarial de origen (o a veces denominado recurso) al espacio empresarial de destino. Esto permite al administrador de inquilinos de origen restringir o establecer el ámbito del conjunto específico de buzones que se deben mover, lo que impide que los usuarios no intencionados se migren. No se admiten grupos anidados.
 
-También tendrá que comunicarse con su empresa asociada de confianza (con la que va a mover buzones) para obtener su identificador de inquilino de Microsoft 365. Este identificador de inquilino se usa en el campo Relación de `DomainName` la organización.
+También tendrá que comunicarse con su empresa asociada de confianza (con la que va a mover buzones) para obtener su identificador Microsoft 365 inquilino. Este identificador de inquilino se usa en el campo Relación de `DomainName` la organización.
 
-Para obtener el identificador de inquilino de una suscripción, inicie sesión en el Centro de administración de Microsoft 365 y vaya a [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Haga clic en el icono de copia de la propiedad Id. de inquilino para copiarla en el Portapapeles.
+Para obtener el identificador de inquilino de una suscripción, inicie sesión en el centro Microsoft 365 de administración y vaya a [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Haga clic en el icono de copia de la propiedad Id. de inquilino para copiarla en el Portapapeles.
 
 Este es el funcionamiento del proceso.
 
@@ -73,7 +73,7 @@ Preparar el inquilino de destino:
 
 1. Si no se proporciona un grupo de recursos de Azure existente, se crea uno nuevo (SCRIPT).
 2. Si no se proporciona un almacén de claves existente, se crea uno nuevo (SCRIPT).
-3. Se crea una nueva directiva de acceso para la aplicación de migración de buzones de Correo (SCRIPT) de Office 365 Exchange Online.
+3. Se crea una nueva directiva de acceso para la Office 365 Exchange Online de migración de buzones de correo (SCRIPT).
 4. Se crea un nuevo certificado (o uno existente, si se especifica) para mantener el secreto en la aplicación de migración (SCRIPT).
 5. Se crea una nueva aplicación de Azure AD (SCRIPT).
 6. El certificado o secreto se carga en la aplicación de migración (SCRIPT).
@@ -91,9 +91,9 @@ Preparar el espacio empresarial de origen:
 
 #### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>Instrucciones paso a paso para el administrador de inquilinos de destino
 
-1. Descargue el script SetupCrossTenantRelationshipForTargetTenant.ps1 para la configuración del inquilino de destino desde el [repositorio de GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
+1. Descargue el script SetupCrossTenantRelationshipForTargetTenant.ps1 para la instalación del espacio empresarial de destino desde [el repositorio GitHub destino](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
 2. Guarde el script (SetupCrossTenantRelationshipForTargetTenant.ps1) en el equipo desde el que va a ejecutar el script.
-3. Cree una conexión remota de PowerShell al inquilino de destino de Exchange Online. De nuevo, asegúrese de que tiene los permisos necesarios para ejecutar los scripts de implementación con el fin de configurar el certificado y el almacenamiento de Azure Key Vault, la aplicación Mover buzón de correo, el extremo de migración exo y la relación de la organización de EXO.
+3. Cree una conexión remota de PowerShell al Exchange Online de destino. De nuevo, asegúrese de que tiene los permisos necesarios para ejecutar los scripts de implementación con el fin de configurar el certificado y el almacenamiento de Azure Key Vault, la aplicación Mover buzón de correo, el extremo de migración exo y la relación de la organización de EXO.
 4. Cambie el directorio de la carpeta de archivos a la ubicación del script o compruebe que el script está guardado actualmente en la ubicación que se encuentra actualmente en la sesión remota de PowerShell.
 5. Ejecute el script con los siguientes parámetros y valores.
 
@@ -108,8 +108,9 @@ Preparar el espacio empresarial de origen:
     | -KeyVaultName                               | Instancia de Azure Key Vault que almacenará el certificado o secreto de la aplicación de migración de buzones. | Obligatorio |
     | -CertificateName                            | Nombre del certificado al generar o buscar certificado en el almacén de claves. | Obligatorio |
     | -CertificateSubject                         | Nombre de sujeto del certificado de Azure Key Vault, como CN=contoso_fabrikam. | Obligatorio |
+    | -AzureResourceLocation                      | Ubicación del grupo de recursos de Azure y del almacén de claves. | Obligatorio |
     | -ExistingApplicationId                      | Aplicación de migración de correo que se usará si ya se creó una. | Opcional |
-    | -AzureAppPermissions                        | Los permisos necesarios para concederse a la aplicación de migración de buzones, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos). | Obligatorio |
+    | -AzureAppPermissions                        | Los permisos necesarios para concederse a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos). | Obligatorio |
     | -UseAppAndCertGeneratedForSendingInvitation | Parámetro para usar la aplicación creada para la migración que se usará para enviar una invitación de vínculo de consentimiento al administrador del espacio empresarial de origen. Si no está presente, se pedirán las credenciales del administrador de destino para conectarse al Administrador de invitaciones de Azure y enviar la invitación como administrador de destino. | Opcional |
     | -KeyVaultAuditStorageAccountName            | Cuenta de almacenamiento donde se almacenarían los registros de auditoría de Key Vault. | Opcional |
     | -KeyVaultAuditStorageResourceGroup          | El grupo de recursos que contiene la cuenta de almacenamiento para almacenar registros de auditoría de Key Vault. | Opcional |
@@ -118,10 +119,10 @@ Preparar el espacio empresarial de origen:
     >[!Note]
     > Asegúrese de haber instalado el módulo de PowerShell de Azure AD antes de ejecutar los scripts. Consulte aquí ![ los pasos de ](/powershell/azure/install-az-ps?view=azps-5.1.0) instalación
 
-6. El script se pausará y le pedirá que acepte o acepte la aplicación de migración de buzones de Exchange que se creó durante este proceso. Aquí le mostramos un ejemplo.
+6. El script se pausará y le pedirá que acepte o acepte la aplicación de migración Exchange buzón de correo que se creó durante este proceso. Aquí le mostramos un ejemplo.
 
     ```powershell
-    PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
+    PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureResourceLocation "Brazil Southeast" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
 
     cmdlet Get-Credential at command pipeline position 1
     Supply values for the following parameters:
@@ -163,7 +164,7 @@ La configuración de administración de destino ya está completa.
 
 #### <a name="step-by-step-instructions-for-the-source-tenant-admin"></a>Instrucciones paso a paso para el administrador del espacio empresarial de origen
 
-1.  Inicie sesión en el buzón como -ResourceTenantAdminEmail especificado por el administrador de destino durante su instalación. Busque la invitación de correo electrónico desde el inquilino de destino y, a continuación, seleccione el **botón Introducción.**
+1.  Inicie sesión en el buzón como -ResourceTenantAdminEmail especificado por el administrador de destino durante su instalación. Busque la invitación de correo electrónico desde el inquilino de destino y, a continuación, seleccione **el Introducción** de correo electrónico.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Cuadro de diálogo invitado":::
 
@@ -176,9 +177,9 @@ La configuración de administración de destino ya está completa.
 
 3. En el Centro de administración de Microsoft 365 o en una sesión de PowerShell remoto, cree uno o varios grupos de seguridad habilitados para correo para controlar la lista de buzones permitidos por el inquilino de destino para extraer (mover) del inquilino de origen al inquilino de destino. No es necesario rellenar este grupo por adelantado, pero se debe proporcionar al menos un grupo para ejecutar los pasos de instalación (script). No se admiten grupos de anidamiento. 
 
-4. Descargue el script SetupCrossTenantRelationshipForResourceTenant.ps1 para la configuración del espacio empresarial de origen desde el repositorio de GitHub aquí: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
+4. Descargue el script SetupCrossTenantRelationshipForResourceTenant.ps1 para la configuración del espacio empresarial de origen desde el repositorio GitHub aquí: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
 
-5. Cree una conexión remota de PowerShell al espacio empresarial de origen con los permisos de administrador de Exchange. Los permisos de administración global no son necesarios para configurar el inquilino de origen, solo el inquilino de destino debido al proceso de creación de aplicaciones de Azure.
+5. Cree una conexión remota de PowerShell al espacio empresarial de origen con los Exchange de administrador. Los permisos de administración global no son necesarios para configurar el inquilino de origen, solo el inquilino de destino debido al proceso de creación de aplicaciones de Azure.
 
 6. Cambie el directorio a la ubicación del script o compruebe que el script está guardado actualmente en la ubicación actualmente en la sesión remota de PowerShell.
 
@@ -188,7 +189,7 @@ La configuración de administración de destino ya está completa.
     |-----|------|
     | -SourceMailboxMovePublishedScopes | Grupo de seguridad habilitado para correo creado por el inquilino de origen para las identidades o buzones que están en el ámbito de la migración. |
     | -ResourceTenantDomain | Nombre de dominio del espacio empresarial de origen, como contoso \. onmicrosoft.com. |
-    | -ApplicationId | Identificador de aplicación de Azure (GUID) de la aplicación usada para la migración. Id. de aplicación disponible a través de Azure Portal (Azure AD, Aplicaciones empresariales, nombre de la aplicación, id. de aplicación) o incluido en el correo electrónico de invitación.  |
+    | -ApplicationId | Identificador de aplicación de Azure (GUID) de la aplicación usada para la migración. Id. de aplicación disponible a través de Azure Portal (Azure AD, Enterprise Aplicaciones, nombre de la aplicación, id. de aplicación) o incluido en el correo electrónico de invitación.  |
     | -TargetTenantDomain | Nombre de dominio de inquilino de destino, como fabrikam \. onmicrosoft.com. |
     | -TargetTenantId | Identificador de inquilino del inquilino de destino. Por ejemplo, el identificador de inquilino de Azure AD de contoso \. onmicrosoft.com inquilino. |
     |||
@@ -215,7 +216,7 @@ Compruebe que el objeto de relación de organización se creó y configuró con 
 ```powershell
 Get-OrganizationRelationship <source tenant organization name> | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
 ```
-Aquí le mostramos un ejemplo:
+A continuación le mostramos un ejemplo:
 
 ```powershell
 PS C:\PowerShell\> Get-OrganizationRelationship fabrikam_contoso_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
@@ -273,7 +274,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 #### <a name="verify-setup-script"></a>Comprobar script de instalación
 
-Si recibe algún error durante la configuración de los inquilinos de origen o de destino, puede ejecutar el script VerifySetup.ps1 ubicado en [GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) y revisar el resultado.
+Si recibe algún error durante la configuración de los inquilinos de origen o de destino, puede ejecutar el script de VerifySetup.ps1 ubicado en [GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) y revisar el resultado.
 
 Este es un ejemplo de ejecución de VerifySetup.ps1 en el inquilino de destino:
 
@@ -293,7 +294,7 @@ Si es necesario volver a mover un buzón al espacio empresarial de origen origin
 
 ## <a name="prepare-target-user-objects-for-migration"></a>Preparar objetos de usuario de destino para la migración
 
-Los usuarios que migran deben estar presentes en el inquilino de destino y en el sistema de Exchange Online (como MailUsers) marcados con atributos específicos para habilitar los movimientos entre inquilinos. El sistema producirá un error en los movimientos de los usuarios que no estén configurados correctamente en el espacio empresarial de destino. En la siguiente sección se detallan los requisitos del objeto MailUser para el inquilino de destino.
+Los usuarios que migran deben estar presentes en el inquilino de destino y en el sistema Exchange Online (como MailUsers) marcados con atributos específicos para habilitar los movimientos entre inquilinos. El sistema producirá un error en los movimientos de los usuarios que no estén configurados correctamente en el espacio empresarial de destino. En la siguiente sección se detallan los requisitos del objeto MailUser para el inquilino de destino.
 
 ### <a name="prerequisites"></a>Requisitos previos
   
@@ -308,7 +309,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
       - UserPrincipalName: UPN se alineará con la nueva identidad o la compañía de destino del usuario (por ejemplo, user@northwindtraders.onmicrosoft.com). 
       - SMTPAddress principal: la dirección SMTP principal se alineará con la compañía NEW del usuario (por ejemplo, user@northwind.com). 
       - TargetAddress/ExternalEmailAddress: MailUser hará referencia al buzón actual del usuario hospedado en el inquilino de origen (por ejemplo, user@contoso.onmicrosoft.com). Al asignar este valor, compruebe que también ha asignado PrimarySMTPAddress o este valor establecerá primarySMTPAddress, lo que provocará errores de movimiento. 
-      - No puede agregar direcciones de proxy smtp heredadas desde el buzón de origen al mailuser de destino. Por ejemplo, no puede mantener contoso.com en el MEU en fabrikam.onmicrosoft.com objetos de inquilino). Los dominios solo están asociados a un inquilino de Azure AD o Exchange Online.
+      - No puede agregar direcciones de proxy smtp heredadas desde el buzón de origen al mailuser de destino. Por ejemplo, no puede mantener contoso.com en el MEU en fabrikam.onmicrosoft.com objetos de inquilino). Los dominios están asociados a un inquilino de Azure AD Exchange Online único.
  
      Objeto  MailUser de destino de ejemplo:
  
@@ -345,12 +346,12 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
      |                       | SMTP:Lara.Newton@contoso.com          |
      |||
 
-   - Es posible que ya se incluyan atributos adicionales en la escritura híbrida de Exchange. Si no es así, deben incluirse. 
+   - Los atributos adicionales pueden incluirse en Exchange escritura híbrida ya. Si no es así, deben incluirse. 
    - msExchBlockedSendersHash: escribe datos de remitentes seguros y bloqueados de clientes en Active Directory local.
    - msExchSafeRecipientsHash: escribe los datos de remitentes seguros y bloqueados en línea de los clientes en Active Directory local.
    - msExchSafeSendersHash: escribe los datos de remitentes seguros y bloqueados de los clientes en Active Directory local.
 
-2. Si el buzón de origen está en LitigationHold y el tamaño de elementos recuperables del buzón de origen es mayor que el valor predeterminado de nuestra base de datos (30 GB), los movimientos no se realizarán ya que la cuota de destino es menor que el tamaño del buzón de origen. Puede actualizar el objeto MailUser de destino para realizar la transición de las marcas de buzón elC del entorno de origen al destino, lo que desencadena que el sistema de destino expanda la cuota de MailUser a 100 GB, lo que permite el movimiento al destino. Estas instrucciones solo funcionarán para identidad híbrida que ejecute Azure AD Connect, ya que los comandos para marcar las marcas de ELC no se exponen a los administradores de inquilinos.
+2. Si el buzón de origen está en LitigationHold y el tamaño de elementos recuperables del buzón de origen es mayor que el valor predeterminado de nuestra base de datos (30 GB), los movimientos no se realizarán ya que la cuota de destino es menor que el tamaño del buzón de origen. Puede actualizar el objeto MailUser de destino para realizar la transición de las marcas de buzón elC del entorno de origen al destino, lo que desencadena que el sistema de destino expanda la cuota de MailUser a 100 GB, lo que permite el movimiento al destino. Estas instrucciones solo funcionarán para la identidad híbrida que ejecuta Azure AD Conectar, ya que los comandos para marcar las marcas elC no se exponen a los administradores de inquilinos.
 
     >[!Note]
     > EJEMPLO: TAL COMO ESTÁ, SIN GARANTÍA<br/>Este script supone una conexión con el buzón de origen (para obtener los valores de origen) y el Active Directory local de destino (para marcar el objeto ADUser). Si el origen tiene habilitada la recuperación de un solo elemento o litigio, esta opción se establece en la cuenta de destino.  Esto aumentará el tamaño de contenedor de la cuenta de destino a 100 GB.
@@ -362,10 +363,10 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
 
 3. Los inquilinos de destino no híbridos pueden modificar la cuota de la carpeta Elementos recuperables de MailUsers antes de la migración ejecutando el siguiente comando para habilitar la retención por juicio en el objeto MailUser y aumentar la cuota a 100 GB: `Set-MailUser -EnableLitigationHoldForMigration $TRUE` . Tenga en cuenta que esto no funcionará para los inquilinos en híbrido.
 
-4. Los usuarios de la organización de destino deben tener una licencia con las suscripciones adecuadas de Exchange Online aplicables a la organización. Puede aplicar una licencia antes de un movimiento de buzón, pero SOLO una vez que el mailuser de destino esté configurado correctamente con ExchangeGUID y las direcciones proxy. La aplicación de una licencia antes de que se aplique ExchangeGUID dará como resultado un nuevo buzón aprovisionado en la organización de destino. 
+4. Los usuarios de la organización de destino deben tener una licencia con las Exchange Online correspondientes aplicables a la organización. Puede aplicar una licencia antes de un movimiento de buzón, pero SOLO una vez que el mailuser de destino esté configurado correctamente con ExchangeGUID y las direcciones proxy. La aplicación de una licencia antes de que se aplique ExchangeGUID dará como resultado un nuevo buzón aprovisionado en la organización de destino. 
 
     > [!Note]
-    > Al aplicar una licencia en un objeto Mailbox o MailUser, todos los proxyAddresses de tipo SMTP se depuran para garantizar que solo se incluyan dominios comprobados en la matriz EmailAddresses de Exchange. 
+    > Al aplicar una licencia en un objeto Mailbox o MailUser, todos los proxyAddresses de tipo SMTP se depuran para garantizar que solo se incluyan dominios comprobados en la matriz emailAddresses Exchange de correo electrónico. 
 
 5. Debe asegurarse de que mailuser de destino no tiene ExchangeGuid anterior que no coincida con el ExchangeGuid de origen. Esto puede ocurrir si el MEU de destino tenía licencia previa para Exchange Online y aprovisionaba un buzón. Si el mailuser de destino tenía una licencia previa para o tenía un ExchangeGuid que no coincide con el ExchangeGuid de origen, debe realizar una limpieza del MEU en la nube. Para estas MEUs en la nube, puede ejecutar `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` .  
 
@@ -406,7 +407,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
 
 ## <a name="perform-mailbox-migrations"></a>Realizar migraciones de buzones
 
-Las migraciones de buzones de Exchange entre inquilinos se envían como lotes de migración iniciados desde el inquilino de destino. Esto es similar a la forma en que funcionan los lotes de migración al migrar de Exchange local a Microsoft 365. 
+Las migraciones entre inquilinos Exchange buzones de correo se envían como lotes de migración iniciados desde el inquilino de destino. Esto es similar a la forma en que los lotes de migración al abordar funcionan al migrar de Exchange local a Microsoft 365. 
 
 ### <a name="create-migration-batches"></a>Crear lotes de migración
 
@@ -424,25 +425,25 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 > [!Note]
 > La dirección de correo electrónico del archivo CSV debe ser la especificada en el inquilino de destino, no el inquilino de origen.
 
-El envío por lotes de migración también se admite desde el nuevo Centro de administración de Exchange al seleccionar la opción entre inquilinos.
+El envío por lotes de migración también se admite desde el nuevo Centro Exchange administración al seleccionar la opción entre inquilinos.
 
 #### <a name="update-on-premises-mailusers"></a>Actualizar MailUsers local
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 
 Sí, debe actualizar el targetAddress (RemoteRoutingAddress/ExternalEmailAddress) de los usuarios locales de origen cuando el buzón de inquilino de origen se mueve al inquilino de destino.  Mientras que el enrutamiento de correo puede seguir las referencias entre varios usuarios de correo con diferentes targetAddresses, las búsquedas de disponibilidad para los usuarios de correo DEBEN dirigirse a la ubicación del usuario del buzón. Las búsquedas de disponibilidad no perseguirán varios redireccionamientos. 
 
-**¿Las reuniones de Teams migran entre inquilinos?**  
+**¿Teams reuniones migran entre inquilinos?**  
 
-Las reuniones se moverán sin embargo, la dirección URL de la reunión de Teams no se actualiza cuando los elementos migran entre inquilinos. Dado que la dirección URL no será válida en el inquilino de destino, deberá quitar y volver a crear las reuniones de Teams.
+Sin embargo, las reuniones se moverán Teams la dirección URL de la reunión no se actualiza cuando los elementos migran entre inquilinos. Dado que la dirección URL no será válida en el inquilino de destino, deberá quitar y volver a crear las Teams reuniones.
 
-**¿El contenido de la carpeta de chat de Teams migra entre inquilinos?**  
+**¿El contenido Teams carpeta de chat migra entre inquilinos?**  
 
-No, el contenido de la carpeta de chat de Teams no migra entre inquilinos.  
+No, el contenido Teams carpeta de chat no migra entre inquilinos.  
 
 **¿Cómo puedo ver solo movimientos que son movimientos entre inquilinos, no mis movimientos de incorporación y de salida?**
 
@@ -492,16 +493,16 @@ Start-ADSyncSyncCycle
  
 #AADSync and FWDSync will create the target MEUs in the Target tenant 
 ```
-**¿Cómo se accede a Outlook el día 1 después de mover el buzón de uso?**
+**¿Cómo accedemos a Outlook día 1 después de mover el buzón de uso?**
 
 Dado que solo un inquilino puede ser propietario de un dominio, el smtpaddress principal anterior no se asociará al usuario en el inquilino de destino cuando se complete el movimiento del buzón; solo los dominios asociados con el nuevo inquilino. Outlook usa el nuevo UPN de los usuarios para autenticarse en el servicio y el perfil de Outlook espera encontrar el SMTPAddress principal heredado para que coincida con el buzón en el sistema de destino. Dado que la dirección heredada no está en el sistema de destino, el perfil de outlook no se conectará para buscar el buzón recién movido. 
 
 Para esta implementación inicial, los usuarios tendrán que volver a generar su perfil con su nuevo UPN, dirección SMTP principal y volver a sincronizar el contenido OST. 
 
 > [!Note]
-> Planee en consecuencia al procesar por lotes a los usuarios para su finalización. Debe tener en cuenta el uso y la capacidad de la red cuando se crean perfiles de cliente de Outlook y los archivos OST y OAB posteriores se descargan en los clientes. 
+> Planee en consecuencia al procesar por lotes a los usuarios para su finalización. Debe tener en cuenta el uso y la capacidad de la red cuando se Outlook perfiles de cliente y los archivos OST y OAB posteriores se descargan en los clientes. 
  
-**¿De qué roles RBAC de Exchange necesito ser miembro para configurar o completar un movimiento entre inquilinos?**
+**¿Exchange roles RBAC necesito ser miembro para configurar o completar un movimiento entre inquilinos?**
  
 Hay una matriz de roles basada en la suposición de tareas delegadas al ejecutar un movimiento de buzón. Actualmente, se requieren dos roles:  
 
@@ -511,7 +512,7 @@ Hay una matriz de roles basada en la suposición de tareas delegadas al ejecutar
 
 **¿Cómo se selecciona la dirección SMTP seleccionada para targetAddress (TargetDeliveryDomain) en el buzón convertido (en conversión MailUser)?**
  
-El buzón de Exchange se mueve mediante MRS craft el targetAddress en el buzón de origen original al convertir a un mailuser al hacer coincidir una dirección de correo electrónico (proxyAddress) en el objeto de destino. El proceso toma el valor -TargetDeliveryDomain pasado al comando move y, a continuación, comprueba si hay un proxy que coincida con ese dominio en el lado de destino. Cuando se encuentra una coincidencia, se usa el proxyAddress correspondiente para establecer externalEmailAddress (targetAddress) en el objeto de buzón convertido (ahora MailUser).
+Exchange buzón de correo se mueve mediante MRS craft el targetAddress en el buzón de origen original al convertir a un MailUser al hacer coincidir una dirección de correo electrónico (proxyAddress) en el objeto de destino. El proceso toma el valor -TargetDeliveryDomain pasado al comando move y, a continuación, comprueba si hay un proxy que coincida con ese dominio en el lado de destino. Cuando se encuentra una coincidencia, se usa el proxyAddress correspondiente para establecer externalEmailAddress (targetAddress) en el objeto de buzón convertido (ahora MailUser).
  
 **¿Cómo se hacen las transiciones de permisos de buzón de correo?**
 
@@ -519,7 +520,7 @@ Los permisos de buzón incluyen Enviar en nombre de y Acceso de buzones:
 
 - Enviar en nombre de (AD:publicDelegates) almacena el DN de los destinatarios con acceso al buzón de un usuario como delegado. Este valor se almacena en Active Directory y actualmente no se mueve como parte de la transición del buzón. Si el buzón de origen tiene publicDelegates establecido, tendrá que cambiar el tamaño de los publicDelegates en el buzón de destino una vez completada la conversión de MEU a buzón de correo en el entorno de destino ejecutando `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` . 
  
-- Los permisos de buzón que se almacenan en el buzón se moverán con el buzón cuando la entidad de seguridad y el delegado se muevan al sistema de destino. Por ejemplo, al usuario TestUser_7 se le concede FullAccess al buzón TestUser_8 en el espacio empresarial SourceCompany.onmicrosoft.com. Una vez completado el movimiento del buzón TargetCompany.onmicrosoft.com, se establecen los mismos permisos en el directorio de destino. A continuación se muestran ejemplos que usan *Get-MailboxPermission* TestUser_7 en los inquilinos de origen y de destino. Los cmdlets de Exchange tienen el prefijo source y target en consecuencia. 
+- Los permisos de buzón que se almacenan en el buzón se moverán con el buzón cuando la entidad de seguridad y el delegado se muevan al sistema de destino. Por ejemplo, al usuario TestUser_7 se le concede FullAccess al buzón TestUser_8 en el espacio empresarial SourceCompany.onmicrosoft.com. Una vez completado el movimiento del buzón TargetCompany.onmicrosoft.com, se establecen los mismos permisos en el directorio de destino. A continuación se muestran ejemplos que usan *Get-MailboxPermission* TestUser_7 en los inquilinos de origen y de destino. Exchange cmdlets tienen el prefijo source y target en consecuencia. 
  
 Este es un ejemplo de la salida del permiso de buzón antes de un movimiento. 
 
@@ -560,7 +561,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 **¿Dónde puedo empezar a solucionar problemas si los movimientos no funcionan?**  
 
-Empiece por ejecutar el script VerifySetup.ps1 en [GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) y revise el resultado.
+Empiece por ejecutar el script VerifySetup.ps1 ubicado [en GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) y revise el resultado.
 
 Este es un ejemplo de ejecución de VerifySetup.ps1 en el inquilino de destino:
 
@@ -584,7 +585,7 @@ Sí, pero solo guardamos los permisos de almacén como se describe en estos art�
 
 - [Microsoft Docs | Administrar permisos para destinatarios en Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
-- [Soporte técnico de Microsoft | Cómo conceder permisos de buzón de Exchange y Outlook en Office 365 dedicado](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+- [Soporte técnico de Microsoft | Cómo conceder permisos Exchange y Outlook buzón de correo en Office 365 dedicado](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
 **¿Es necesario Azure Key Vault y cuándo se realizan las transacciones?**  
 
@@ -610,7 +611,7 @@ Recuerde que esta característica está actualmente en versión preliminar y el 
 
 - **Problema: Los usuarios de correo en la nube con proxy smtp no propietarioSombre de dirección de dirección se mueve en segundo plano.** Al crear objetos MailUser de inquilino de destino, debe asegurarse de que todas las direcciones proxy SMTP pertenecen a la organización de inquilino de destino. Si existe un proxy SMTPAddress en el usuario de correo de destino que no pertenece al inquilino local, se impide la conversión de MailUser a Mailbox. Esto se debe a nuestra seguridad de que los objetos de buzón solo pueden enviar correo desde dominios para los que el inquilino es autoritativo (dominios reclamados por el inquilino): 
 
-   - Cuando sincroniza usuarios locales con Azure AD Connect, aprovisiona objetos MailUser locales con ExternalEmailAddress que apuntan al espacio empresarial de origen donde existe el buzón (laran@contoso.onmicrosoft.com) y se marca PrimarySMTPAddress como un dominio que reside en el inquilino de destino (Lara.Newton@northwind.com). Estos valores se sincronizan con el inquilino y se aprovisiona un usuario de correo adecuado y listo para la migración. Aquí se muestra un objeto de ejemplo.
+   - Al sincronizar usuarios locales con Azure AD Conectar, aprovisiona objetos MailUser locales con ExternalEmailAddress que apunta al espacio empresarial de origen donde existe el buzón (laran@contoso.onmicrosoft.com) y se marca primarySMTPAddress como un dominio que reside en el inquilino de destino (Lara.Newton@northwind.com). Estos valores se sincronizan con el inquilino y se aprovisiona un usuario de correo adecuado y listo para la migración. Aquí se muestra un objeto de ejemplo.
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -623,9 +624,9 @@ Recuerde que esta característica está actualmente en versión preliminar y el 
 
 - **Problema: Los objetos MailUser con direcciones SMTP principales "externas" se modifican o restablecen a dominios "internos" reclamados por la compañía**
 
-   Los objetos MailUser son punteros a buzones no locales. En el caso de las migraciones de buzones entre inquilinos, se usan objetos MailUser para representar el buzón de origen (desde la perspectiva de la organización de destino) o el buzón de destino (desde la perspectiva de la organización de origen). Los MailUsers tendrán una dirección ExternalEmailAddress (targetAddress) que apunta a la dirección smtp del buzón real (ProxyTest@fabrikam.onmicrosoft.com) y la dirección primarySMTP que representa la dirección SMTP mostrada del usuario del buzón en el directorio. Algunas organizaciones deciden mostrar la dirección SMTP principal como una dirección SMTP externa, no como una dirección propiedad o comprobada por el inquilino local (como fabrikam.com en lugar de como contoso.com).  Sin embargo, una vez que se aplica un objeto de plan de servicio de Exchange al MailUser mediante operaciones de licencia, la dirección SMTP principal se modifica para mostrarse como un dominio comprobado por la organización local (contoso.com). Existen dos posibles motivos:
+   Los objetos MailUser son punteros a buzones no locales. En el caso de las migraciones de buzones entre inquilinos, se usan objetos MailUser para representar el buzón de origen (desde la perspectiva de la organización de destino) o el buzón de destino (desde la perspectiva de la organización de origen). Los MailUsers tendrán una dirección ExternalEmailAddress (targetAddress) que apunta a la dirección smtp del buzón real (ProxyTest@fabrikam.onmicrosoft.com) y la dirección primarySMTP que representa la dirección SMTP mostrada del usuario del buzón en el directorio. Algunas organizaciones deciden mostrar la dirección SMTP principal como una dirección SMTP externa, no como una dirección propiedad o comprobada por el inquilino local (como fabrikam.com en lugar de como contoso.com).  Sin embargo, una vez que se aplica un objeto de plan de servicio de Exchange a MailUser mediante operaciones de licencia, la dirección SMTP principal se modifica para mostrarse como un dominio comprobado por la organización local (contoso.com). Existen dos posibles motivos:
    
-   - Cuando se aplica cualquier plan de servicio de Exchange a un MailUser, el proceso de Azure AD comienza a aplicar el uso de la depuración de proxy para garantizar que la organización local no pueda enviar correo, suplantación de suplantación o correo de otro inquilino. Cualquier dirección SMTP de un objeto de destinatario con estos planes de servicio se quitará si la organización local no comprueba la dirección. Como en el ejemplo, el inquilino de Fabikam.com no comprueba el dominio contoso.onmicrosoft.com, por lo que la depuración quita fabrikam.com dominio. Si desea conservar estos dominios externos en MailUser, ya sea antes de la migración o después de la migración, debe modificar los procesos de migración para quitar licencias una vez completado el movimiento o antes del movimiento para asegurarse de que los usuarios tienen aplicada la personalización de marca externa esperada. Deberá asegurarse de que el objeto de buzón tenga una licencia adecuada para no afectar al servicio de correo.<br/><br/>Aquí se muestra un script de ejemplo para quitar los planes de servicio de un mailuser en el Contoso.onmicrosoft.com inquilino.
+   - Cuando cualquier plan de servicio de Exchange se aplica a un mailuser, el proceso de Azure AD comienza a aplicar la depuración de proxy para asegurarse de que la organización local no pueda enviar correo, suplantación o correo de otro inquilino. Cualquier dirección SMTP de un objeto de destinatario con estos planes de servicio se quitará si la organización local no comprueba la dirección. Como en el ejemplo, el inquilino de Fabikam.com no comprueba el dominio contoso.onmicrosoft.com, por lo que la depuración quita fabrikam.com dominio. Si desea conservar estos dominios externos en MailUser, ya sea antes de la migración o después de la migración, debe modificar los procesos de migración para quitar licencias una vez completado el movimiento o antes del movimiento para asegurarse de que los usuarios tienen aplicada la personalización de marca externa esperada. Deberá asegurarse de que el objeto de buzón tenga una licencia adecuada para no afectar al servicio de correo.<br/><br/>Aquí se muestra un script de ejemplo para quitar los planes de servicio de un mailuser en el Contoso.onmicrosoft.com inquilino.
 
     ```powershell
     $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans 
@@ -691,14 +692,14 @@ Recuerde que esta característica está actualmente en versión preliminar y el 
     proxytest@fabrikam.com    e2513482-1d5b-4066-936a-cbc7f8f6f817    SMTP:proxytest@fabrikam.com 
     ```
 
-   - Cuando msExchRemoteRecipientType se establece en 8 (DeprovisionMailbox), para los MailUser locales que se migran al inquilino de destino, la lógica de depuración de proxy en Azure quitará los dominios no conocidos y restablecerá el primarySMTP a un dominio de propiedad. Al borrar msExchRemoteRecipientType en el mailuser local, la lógica de depuración de proxy ya no se aplica. <br/><br>A continuación se muestra el conjunto completo de posibles planes de servicio que incluyen Exchange Online.
+   - Cuando msExchRemoteRecipientType se establece en 8 (DeprovisionMailbox), para los MailUser locales que se migran al inquilino de destino, la lógica de depuración de proxy en Azure quitará los dominios no conocidos y restablecerá el primarySMTP a un dominio de propiedad. Al borrar msExchRemoteRecipientType en el mailuser local, la lógica de depuración de proxy ya no se aplica. <br/><br>A continuación se muestra el conjunto completo de planes de servicio posibles que incluyen Exchange Online.
 
    | Nombre                                              |
    |---------------------------------------------------|
-   | Almacenamiento de exhibición de documentos electrónicos avanzado (500 GB)               |
+   | Advanced eDiscovery Storage (500 GB)               |
    | Caja de seguridad del cliente                                  |
    | Prevención de pérdida de datos                              |
-   | Servicios CAL de Exchange Enterprise (EOP, DLP)       |
+   | Servicios de Exchange Enterprise CAL (EOP, DLP)       |
    | Exchange Essentials                               |
    | Exchange Foundation                               |
    | Exchange Online (P1)                              |
@@ -706,7 +707,7 @@ Recuerde que esta característica está actualmente en versión preliminar y el 
    | Exchange Online (plan 2)                          |
    | Archivado de Exchange Online para Exchange Online     |
    | Archivado de Exchange Online para Exchange Server     |
-   | Complemento de usuario inactivo de Exchange Online              |
+   | Exchange Online Complemento de usuario inactivo              |
    | Quiosco de Exchange Online                             |
    | Exchange Online Multi-Geo                         |
    | Plan 1 de Exchange Online                            |
@@ -716,7 +717,7 @@ Recuerde que esta característica está actualmente en versión preliminar y el 
    | Information Protection para Office 365 - Premium   |
    | Information Protection para Office 365 - Estándar  |
    | Insights de MyAnalytics                           |
-   | Auditoría avanzada de Microsoft 365                   |
+   | Microsoft 365 Auditoría avanzada                   |
    | Microsoft Bookings                                |
    | Centro de negocios de Microsoft                         |
    | Microsoft MyAnalytics (Completo)                      |
@@ -724,4 +725,4 @@ Recuerde que esta característica está actualmente en versión preliminar y el 
    | Microsoft Defender para Office 365 (Plan 1)    |
    | Microsoft Defender para Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
-   | Cifrado premium en Office 365                  |
+   | Premium Cifrado en Office 365                  |
