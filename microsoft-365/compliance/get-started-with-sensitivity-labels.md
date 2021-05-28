@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: c87289fc7017e75db3b8a5b84a8af3a42dc16a10
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302117"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689126"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -102,7 +102,7 @@ La documentación más eficaz para los usuarios finales serán la guía y las in
 - Para las etiquetas integradas: opción del menú **Más información**.
 - Para el cliente de etiquetado unificado de Azure Information Protection: opción del menú **Ayuda y comentarios** > vínculo **Más información** en el cuadro de diálogo de Azure Information Protection.
 
-Para escribir la documentación personalizada con mayor facilidad, consulte la siguiente entrada de blog para obtener un paquete de descarga que puede usar para entrenar a los usuarios e impulsar la adopción: [Formación de usuarios finales para las etiquetas de confidencialidad en M365: Cómo acelerar la adopción](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+Para ayudarle a ofrecer su documentación personalizada, consulte la siguiente página y descargas que puede usar para formar a los usuarios: [Aprendizaje para el usuario final para etiquetas de confidencialidad](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/). 
 
 También puede usar los siguientes recursos para obtener instrucciones básicas:
 

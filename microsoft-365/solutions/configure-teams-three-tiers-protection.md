@@ -22,16 +22,16 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539220"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683408"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
-En los artículo de esta serie se ofrecen recomendaciones para configurar equipos en Microsoft Teams y sus sitios de SharePoint asociados, de forma que se equilibre la seguridad con la facilidad de colaboración.
+En los artículo de esta serie se ofrecen recomendaciones para configurar equipos en Microsoft Teams y sus sitios de SharePoint asociados, de forma que se equilibre la seguridad con la facilidad de colaboración.
 
 En este artículo se definen cuatro configuraciones diferentes, comenzando por un equipo público con las directivas de uso compartido más abiertas. Cada configuración adicional representa un paso significativo en la protección, mientras que la capacidad para obtener acceso y colaborar en archivos almacenados en equipos se reduce al conjunto relevante de miembros del equipo. 
 
@@ -53,7 +53,7 @@ En la tabla siguiente se resumen las configuraciones para cada nivel. Use estas 
 |-|Línea de base (pública)|Línea de base (privada)|Confidencial|Altamente confidencial|
 |:-----|:-----|:-----|:-----|:-----|
 |Equipo privado o público|Público|Private|Private|Private|
-|¿Quién tiene acceso?|Todos los usuarios de la organización, incluidos los usuarios B2B.|Solo los miembros del equipo. Otros usuarios pueden solicitar acceso al sitio asociado.|Solo los miembros del equipo.|Solo los miembros del equipo.|
+|¿Quién tiene acceso?|Todos los usuarios de la organización, incluidos los usuarios B2B.|Solo los miembros del equipo. Otros usuarios pueden solicitar acceso al sitio asociado.|Solo los miembros del equipo.|Solo los miembros del equipo.|
 |Canales privados|Los propietarios y miembros pueden crear canales privados|Los propietarios y miembros pueden crear canales privados|Solo los propietarios pueden crear canales privados|Solo los propietarios pueden crear canales privados|
 |Acceso de invitado en el nivel de sitio|**Invitados nuevos y existentes** (predeterminado).|**Invitados nuevos y existentes** (predeterminado).|**Invitados nuevos y existentes** o **Solo las personas de su organización** en función de las necesidades del equipo.|**Invitados nuevos y existentes** o **Solo las personas de su organización** en función de las necesidades del equipo.|
 |Configuración de uso compartido del sitio |**Los propietarios y los miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|**Los propietarios y los miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|**Los propietarios y los miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|**Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio.**<br>Solicitudes de acceso **desactivadas**.|
@@ -117,6 +117,14 @@ Vea las siguientes referencias para crear un entorno de uso compartido de invita
 Para los niveles confidenciales y altamente confidenciales, restringimos el acceso al contenido de SharePoint con etiquetas de confidencialidad. El acceso condicional de Azure AD ofrece muchas opciones para determinar cómo los usuarios acceden a Microsoft 365, incluyendo limitaciones basadas en la ubicación, el riesgo, el cumplimiento de dispositivos y otros factores. Se recomienda leer [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview) y considerar otras directivas que podrían ser adecuadas para su organización.
 
 No olvide que los invitados a menudo no tienen dispositivos administrados por su organización. Si permite invitados en cualquiera de los niveles, tenga en cuenta qué tipos de dispositivos usarán para acceder a equipos y sitios, y establezca las directivas de dispositivos no administrados en consecuencia.
+
+### <a name="control-device-access-across-microsoft-365"></a>Controlar el acceso a dispositivos en Microsoft 365
+
+La configuración de dispositivos no administrados en etiquetas de confidencialidad solo afecta al acceso a SharePoint. Si quiere expandir el control de dispositivos no administrados más allá de SharePoint, puede [Crear una directiva de acceso condicional de Azure Active Directory para todas las aplicaciones y servicios de su organización](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) en su lugar. Para configurar esta directiva específicamente para [servicios de Microsoft 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), seleccione la aplicación en la nube de **Office 365** en **Aplicaciones o acciones en la nube**.
+
+![Recorte de pantalla de la aplicación en la nube de Office 365 en una directiva de acceso condicional de Azure Active Directory](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+
+Usar una directiva que afecte a todos los servicios de Microsoft 365 puede resultar en una seguridad y una experiencia mejoradas para los usuarios. Por ejemplo, cuando bloquea el acceso a dispositivos no administrados en SharePoint solo, los usuarios pueden acceder al chat de un equipo con un dispositivo no administrado, pero perderán el acceso cuando intenten acceder a la pestaña **Archivos**. Usar la aplicación en la nube de Office 365 le ayuda a evitar problemas con [dependencias del servicio](/azure/active-directory/conditional-access/service-dependencies).
 
 ## <a name="next-step"></a>Paso siguiente
 
