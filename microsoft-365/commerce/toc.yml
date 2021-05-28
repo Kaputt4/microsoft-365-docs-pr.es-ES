@@ -66,6 +66,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Acerca de la Directiva 2 de servicios de pago y de la autenticación robusta de clientes
       href: billing-and-payments/psd2.md
+    - name: Solicitar un crédito por retención fiscal en la cuenta
+      href: billing-and-payments/withholding-tax-credit-global.md
 - name: Cuentas de facturación
   items:
     - name: Comprender las cuentas de facturación
