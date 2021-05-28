@@ -1,8 +1,9 @@
 ---
 title: Información general sobre la comprensión de documentos
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información general sobre la comprensión des documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 73e217e458fb9e1ccad8b64ffc81a6c9522a04f4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7e5818a929fa0f4554a7ee4ece460b4fe0d691aa
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222760"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683828"
 ---
 # <a name="document-understanding-overview"></a>Información general sobre la comprensión de documentos
 
@@ -48,16 +49,40 @@ Puede usar archivos de ejemplo para entrenarlos y probarlos en el modelo. Los ar
 
 Después de publicar el modelo, utilice el centro de contenido para aplicarlo a cualquier biblioteca de documentos de SharePoint a la que tenga acceso.  
 
-### <a name="file-limitations"></a>Limitaciones de archivos
+## <a name="file-limitations"></a>Limitaciones de archivos
 
 En los modelos de comprensión mediante documentos se usa la tecnología de reconocimiento óptico de caracteres (OCR) para digitalizar archivos PDF, imágenes y archivos TIFF, tanto al entrenar un modelo con archivos de ejemplo como al ejecutar el modelo en archivos de una biblioteca de documentos.
 
 Tenga en cuenta las siguientes diferencias en relación con los archivos de texto basados en Microsoft Office y los archivos digitalizados con OCR (PDF, imagen o TIFF):
 
-- Archivos de Office: el límite para truncar archivos es 64 000 caracteres (durante el entrenamiento y cuando se ejecuta en archivos de una biblioteca de documentos).
+- Archivos de Office: truncados a 64 000 caracteres (durante el entrenamiento y cuando se ejecuta en archivos de una biblioteca de documentos).
+
 - Archivos digitalizados con OCR: hay un límite de 20 páginas.  
 
-#### <a name="supported-file-types"></a>Tipos de archivo compatibles
+### <a name="requirements"></a>Requisitos
+
+El procesamiento de OCR funciona mejor en documentos que cumplen los siguientes requisitos:
+
+- Formato JPG, PNG o PDF (texto o digitalizado). Los archivos PDF con texto incrustado son mejores, ya que no se producen errores en la extracción y la ubicación de caracteres.
+
+- Si sus archivos PDF están bloqueados con contraseña, debe quitar el bloqueo antes de enviarlos.
+
+- El tamaño de archivo combinado de los documentos usados para el aprendizaje no debe superar los 50 MB por colección y los documentos PDF no deben tener más de 500 páginas.
+
+- Para las imágenes, las dimensiones deben estar entre 50 × 50 y 10 000 × 10 000 píxeles.
+   > [!NOTE]
+   > Es posible que las imágenes muy anchas o con dimensiones inusuales (por ejemplo, planos de planta) se trunquen en el proceso de OCR y pierdan precisión.
+ 
+- Para los archivos PDF, las dimensiones deben ser como máximo de 17 x 17 pulgadas, que corresponden al tamaño de papel A3 o legal y tamaños menores.
+
+- Si se escanean desde documentos en papel, las digitalizaciones deberían ser imágenes de alta calidad.
+
+- Debe usar el alfabeto latino (caracteres en inglés).
+
+> [!NOTE]
+> Actualmente, el Generador de AI no admite los siguientes tipos de datos de entrada de procesamiento de formularios:<br>- Casillas o botones de radio<br>- Firmas<br>- Archivos PDF que se pueden rellenar
+
+### <a name="supported-file-types"></a>Tipos de archivo compatibles
 
 Los modelos de comprensión mediante documentos admiten los siguientes tipos de archivo:
 
