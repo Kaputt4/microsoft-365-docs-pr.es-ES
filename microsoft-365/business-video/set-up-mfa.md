@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtén información sobre cómo configurar la autenticación multifactor en el teléfono.
-ms.openlocfilehash: 4a4041777b055b03e2ab5efede72eca56afdf589
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Obtenga información sobre cómo configurar la autenticación multifactor, a veces también denominada autenticación en dos fases, en el teléfono.
+ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578668"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705659"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>Configurar la autenticación multifactor en el teléfono
+
+## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a>Watch: Configurar la autenticación multifactor con un dispositivo móvil
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 
@@ -44,7 +46,7 @@ La autenticación multifactor proporciona más seguridad para su empresa. Siga e
 1. Elija **Configurar**.
 1. Deje la **ventana Configurar aplicación móvil** abierta en el equipo.
 1. En el dispositivo móvil, ve a la tienda de aplicaciones, busca "Microsoft Authenticator", selecciónelo, instálelo y ábralo.
-1. En Authenticator, sigue las indicaciones para completar el asistente y, a continuación, elige el signo más (+) para agregar tu cuenta.
+1. En Authenticator, siga las instrucciones para completar el asistente y, a continuación, elija el signo más (+) para agregar su cuenta.
 1. Elija **Cuenta de** trabajo  o escuela, elija Permitir cuando se le pida permiso para tomar imágenes y grabar vídeo y, a continuación, siga las instrucciones para examinar el código QR en la ventana abierta del equipo.
 1. Después de agregar la cuenta, elija **Got It**.
 1. En el equipo, elija **Siguiente** y, a continuación, vuelva a **elegir** Siguiente.
