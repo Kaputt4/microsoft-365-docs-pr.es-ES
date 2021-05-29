@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implemente las funciones de Gobierno de la información de Microsoft para regir los datos de acuerdo a los requisitos normativos o de cumplimiento.
-ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a62b1a20aa07c8b5d147fd24e3867c4d4c50174e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244569"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683540"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gobierno de la información de Microsoft en Microsoft 365
 
@@ -32,7 +32,7 @@ Use las funciones de Gobierno de la información de Microsoft (a veces abreviado
 
 ¿Quiere saber cómo proteger los datos? Obtenga información sobre la [Microsoft Information Protection en Microsoft 365](information-protection.md).
 
-Para ayudarle a cumplir las normativas de privacidad de datos, hemos diseñado un flujo de trabajo para guiarle a través de un proceso de un extremo a otro para planear e implementar funcionalidades en Microsoft 365, incluido el acceso seguro, la protección contra amenazas, la protección de la información y el gobierno de datos. Para obtener más información, consulte [Implementar la protección de la información para normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+Para ayudarle a cumplir con las normativas de privacidad de datos, hemos diseñado un flujo de trabajo para guiarlo a través de un proceso integral para planear e implementar funcionalidades en Microsoft 365, incluido el acceso seguro, la protección contra amenazas, la protección de la información y el gobierno de datos. Para obtener más información, consulte [Implementar protección de la información para las normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## <a name="information-governance"></a>Información de gobierno
 
@@ -52,3 +52,7 @@ Para administrar contenido de gran valor sobre obligaciones legales, comerciales
 |Funcionalidad|¿Qué problemas se solucionan?|Introducción|
 |:------|:------------|---------------------|:----------------------------|
 |[Administración de registros](records-management.md)| Una única solución para el correo electrónico y los documentos que incorpora a los programas de retención y a los requerimientos en un plan de archivos que sea compatible con el ciclo de vida completo de su contenido con la declaración, retención y eliminación de los registros. <br /><br />Escenario de ejemplo: [Disposición de registros](disposition.md#disposition-of-records)|[Introducción a la administración de registros](get-started-with-records-management.md) |
+
+## <a name="licensing-requirements"></a>Requisitos de licencias
+
+Los requisitos de licencia para el Gobierno de información de Microsoft dependen de los escenarios y las características que use, en lugar del establecimiento de los requisitos de licencia para cada funcionalidad que se muestra en esta página. Para conocer los requisitos y las opciones de licencia, consulte las secciones [Gobierno de información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) y [Administración de registros](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) de la documentación sobre licencias de Microsoft 365 y descargue el PDF o Excel relacionado.

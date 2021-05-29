@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Establecer la comprensión del contenido en el Project Cortex.
-ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994711"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683558"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -31,7 +31,7 @@ Considere lo siguiente antes de empezar:
 
 Puede cambiar su configuración después de la configuración inicial en el Centro de administración de Microsoft 365.
 
-Antes de la configuración, asegúrese de planificar la mejor manera de configurar la comprensión del contenido en su entorno. Por ejemplo, hay que tomar las siguientes decisiones:
+Antes de la configuración, asegúrese de planear la mejor forma de configurar la comprensión del contenido en su entorno. Por ejemplo, necesita tomar las siguientes decisiones:
 
 - Los sitios de SharePoint en los que desea habilitar el procesamiento de formularios: todos, algunos o sitios seleccionados
 - El nombre y los administradores de su centro de contenido
@@ -42,6 +42,8 @@ Antes de la configuración, asegúrese de planificar la mejor manera de configur
 > Debe tener permisos de administrador global o de administrador de SharePoint para poder acceder al centro de administración de Microsoft 365 y configurar SharePoint Syntex.
 
 Como administrador, también puede realizar cambios en la configuración seleccionada en cualquier momento después de la configuración, y a lo largo de la comprensión del contenido de la configuración de administración en el Centro de administración de Microsoft 365.
+
+Si tiene previsto usar un entorno de Power Platform personalizado, deberá [instalar la aplicación *Generador de IA para Proyecto Cortex* en este entorno](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) y [asignar los créditos de Generador de AI](/power-platform/admin/capacity-add-on) a esta antes de poder crear modelos de procesamiento de formularios.
 
 ### <a name="licensing"></a>Licencias
 
@@ -67,9 +69,9 @@ Vaya al [Centro de administración de la Power Platform](https://admin.powerplat
 
 1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y luego vea la sección **Archivos y contenido**.
 
-2. En la sección **Archivos y contenido**, seleccione **Automatizar la comprensión del contenido**.<br/>
+2. En la sección **Archivos y contenido**, seleccione **Automatizar la comprensión del contenido**. Tenga en cuenta que la disponibilidad de crédito actual del Generador de IA se muestra en la sección **De un vistazo**.<br/>
 
-3. En la página para **Automatizar la comprensión del contenido**, haga clic en **Introducción** para recorrer el proceso de configuración.<br/>
+3. En la página para **Automatizar la comprensión del contenido**, haga clic en **Introducción** para recorrer el proceso de configuración. <br/>
 
     > [!div class="mx-imgBorder"]
     > ![Iniciar la instalación](../media/content-understanding/admin-content-understanding-get-started.png)</br>
@@ -93,7 +95,7 @@ Vaya al [Centro de administración de la Power Platform](https://admin.powerplat
 
     Para el **entorno de Power Platform**, puede seleccionar:
     - **Usar el entorno predeterminado** para utilizar su entorno de Power Platform predeterminado.
-    - **Usar un entorno personalizado** para utilizar un entorno personalizado. De la lista, elija el entorno que quiera utilizar. Debe instalar la aplicación *AI Builder para Proyecto Cortex* en este entorno y asignarle créditos de AI Builder antes de poder crear modelos de procesamiento de formularios.
+    - **Usar un entorno personalizado** para utilizar un entorno personalizado. De la lista, elija el entorno que quiera utilizar. ([Ver los requisitos de un entorno personalizado](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements)).
 
     Haga clic en **Siguiente**.
 
