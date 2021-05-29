@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 11055e6f27df08a1726fb3ba65a5accafbf93723
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029044"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698957"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -34,7 +34,39 @@ Ya sea agregar nuevas soluciones al centro de cumplimiento de [Microsoft 365,](m
 
 > [!TIP]
 > ¿Te interesa lo que sucede en otros centros de administración? Consulte estos artículos:<br>[Novedades del Centro de administración Microsoft 365 administración](/office365/admin/whats-new-in-preview)<br>[Novedades del Centro de administración SharePoint administración](/sharepoint/what-s-new-in-admin-center)<br>[Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
-Y visite la [guía básica](https://www.microsoft.com/en-us/microsoft-365/roadmap) de Microsoft 365 para obtener información sobre Microsoft 365 características que se iniciaron, se están implementando, están en desarrollo, se cancelaron o se publicaron anteriormente.
+Y visite la [guía básica](https://www.microsoft.com/microsoft-365/roadmap) de Microsoft 365 para obtener información sobre Microsoft 365 características que se iniciaron, se están implementando, están en desarrollo, se cancelaron o se publicaron anteriormente.
+
+## <a name="april-2021"></a>Abril de 2021
+
+### <a name="advanced-ediscovery"></a>eDiscovery avanzado
+
+- [Límites en Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Las organizaciones ahora pueden exportar hasta 5 millones de elementos o 500 MB, lo que sea menor, en una sola exportación de elementos de un conjunto de revisión.
+
+### <a name="data-classification"></a>Clasificación de datos
+
+- [Actividades de etiquetado que están disponibles en el Explorador de actividades](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
+
+### <a name="data-connectors"></a>Conectores de datos
+
+- [Configurar un conector para archivar datos de Cisco Jabber en Oracle]/microsoft-365/compliance/archive-ciscojabberonoracle-data)
+- [Configurar un conector para archivar datos de Cisco Jabber en PostgreSQL](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
+
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+- Nuevo tema para [referencia de sugerencias de directiva de prevención de](/microsoft-365/compliance/dlp-policy-tips-reference)pérdida de datos .
+- Nuevo tema para [Obtener información sobre la prevención de pérdida de datos](/microsoft-365/compliance/dlp-learn-about-dlp).
+- Nuevo tema para [Introducción al panel de alertas de](/microsoft-365/compliance/dlp-alerts-dashboard-get-started)prevención de pérdida de datos .
+
+### <a name="retention-policies-and-retention-label-policies"></a>Directivas de retención y directivas de etiquetas de retención
+
+- La ubicación Microsoft 365 Groups ahora admite la aplicación de la configuración de retención Microsoft 365 solo Microsoft 365 buzones o simplemente los sitios SharePoint conectados mediante el cmdlet [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) con el parámetro Applications.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+Outlook versiones y actualizaciones:
+- Antes solo era compatible con el cliente de etiquetado unificado AIP, el etiquetado integrado ahora admite diferentes opciones de configuración para la etiqueta predeterminada y [el etiquetado obligatorio.](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
+- Encrypt-Only es compatible con macOS, iOS y Android
+- Administrar etiquetas de confidencialidad en un [tema](/microsoft-365/compliance/sensitivity-labels-office-apps) de aplicaciones de [](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling) Office actualizado con nuevas entradas en la tabla de funcionalidades de [Outlook](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook) para Diferentes configuraciones para etiquetas predeterminadas y etiquetado obligatorio para la nueva versión de características de Outlook para el etiquetado integrado para admitir una etiqueta predeterminada diferente y la exención del etiquetado obligatorio. Además, la opción Encrypt-Only ahora es compatible con macOS/iOS/Android, y todas las marcas dinámicas con variables ahora son compatibles con todos los Outlook cliente. El etiquetado obligatorio ahora se está implementando en las plataformas restantes.
 
 ## <a name="march-2021"></a>Marzo de 2021
 
@@ -42,27 +74,27 @@ Estos son algunos de los cambios realizados en Microsoft 365 de cumplimiento nor
 
 ### <a name="advanced-ediscovery"></a>eDiscovery avanzado
 
-- **Advanced eDiscovery colecciones ahora** admiten la [nueva herramienta de colecciones y el flujo de trabajo](https://docs.microsoft.com/microsoft-365/compliance/collections-overview). Otros temas nuevos incluyen [crear una colección borrador,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection) [confirmar un borrador de](https://docs.microsoft.com/microsoft-365/compliance/commit-draft-collection)colección en un conjunto de revisión y [estadísticas e informes de colección.](https://docs.microsoft.com/microsoft-365/compliance/collection-statistics-reports)
-- **Exporte documentos** en un conjunto de revisión en una [Azure Storage](https://docs.microsoft.com/microsoft-365/compliance/download-export-jobs) cuenta.
-- **Módulo de codificación predictiva para Advanced eDiscovery**. Primero vea la nueva funcionalidad [de codificación predictiva](https://docs.microsoft.com/microsoft-365/compliance/predictive-coding-overview) que reemplaza al módulo relevancia retirado.
+- **Advanced eDiscovery colecciones ahora** admiten la [nueva herramienta de colecciones y el flujo de trabajo](/microsoft-365/compliance/collections-overview). Otros temas nuevos incluyen [crear una colección borrador,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection) [confirmar un borrador de](/microsoft-365/compliance/commit-draft-collection)colección en un conjunto de revisión y [estadísticas e informes de colección.](/microsoft-365/compliance/collection-statistics-reports)
+- **Exporte documentos** en un conjunto de revisión en una [Azure Storage](/microsoft-365/compliance/download-export-jobs) cuenta.
+- **Módulo de codificación predictiva para Advanced eDiscovery**. Primero vea la nueva funcionalidad [de codificación predictiva](/microsoft-365/compliance/predictive-coding-overview) que reemplaza al módulo relevancia retirado.
 
 ### <a name="data-classification"></a>Clasificación de los datos
 
-- **Explorador de clasificación de datos**. [Introducción al](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer) explorador de clasificación de datos.
+- **Explorador de clasificación de datos**. [Introducción al](/microsoft-365/compliance/data-classification-activity-explorer) explorador de clasificación de datos.
 
 ### <a name="data-connectors"></a>Conectores de datos
 
-- **Claves privadas**. Se ha agregado compatibilidad con claves privadas a los datos de mensajes [de Bloomberg,](https://docs.microsoft.com/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) los datos de [chat](https://docs.microsoft.com/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) ice y los conectores [de datos de Instant Bloomberg.](https://docs.microsoft.com/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys)
+- **Claves privadas**. Se ha agregado compatibilidad con claves privadas a los datos de mensajes [de Bloomberg,](/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) los datos de [chat](/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) ice y los conectores [de datos de Instant Bloomberg.](/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys)
 
 ### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
 
-- **Microsoft Teams compatibilidad con**. Compatibilidad de prevención de pérdida de datos extendida [a Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-teams-default-policy).
-- **Extensión de cumplimiento de Microsoft**. Introducción a la extensión [de cumplimiento de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/dlp-chrome-get-started).
+- **Microsoft Teams compatibilidad con**. Compatibilidad de prevención de pérdida de datos extendida [a Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy).
+- **Extensión de cumplimiento de Microsoft**. Introducción a la extensión [de cumplimiento de Microsoft](/microsoft-365/compliance/dlp-chrome-get-started).
 
 ### <a name="encryption"></a>Cifrado
 
-- **Clave de cliente para Microsoft 365**. [Información general sobre la clave de](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level) cliente Microsoft 365 en el nivel de inquilino (versión preliminar pública).
-- **Cifrado de clave doble**. Obtenga más información sobre [cómo habilitar la compatibilidad con documentos](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption) etiquetados y protegidos en SharePoint y OneDrive para la Empresa.
+- **Clave de cliente para Microsoft 365**. [Información general sobre la clave de](/microsoft-365/compliance/customer-key-tenant-level) cliente Microsoft 365 en el nivel de inquilino (versión preliminar pública).
+- **Cifrado de clave doble**. Obtenga más información sobre [cómo habilitar la compatibilidad con documentos](/microsoft-365/compliance/double-key-encryption) etiquetados y protegidos en SharePoint y OneDrive para la Empresa.
 
 ### <a name="insider-risk-management"></a>Administración de riesgos internos
 
@@ -82,16 +114,16 @@ Las siguientes actualizaciones de características de administración de riesgos
 
 Los siguientes temas se actualizaron o agregaron para admitir estas nuevas características:
 
-- [Información sobre riesgos internos de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management)
-- [Planificar la administración de riesgos internos](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-plan)
-- [Introducción a la configuración de administración de riesgos de insider](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings)
-- [Introducción a la administración de riesgos internos](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
-- [Crear y administrar directivas de riesgos internos](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-policies)
-- [Investigar alertas de riesgos internos](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-alerts)
-- [Tomar medidas en casos de riesgos internos](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-cases)
-- [Revisar actividades con el registro de auditoría de riesgo interno](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-audit-log)
-- [Revisar datos con el explorador de contenido de riesgos internos](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-content-explorer)
-- [Administrar el flujo de trabajo con el Panel de usuarios](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-users)
+- [Información sobre riesgos internos de Microsoft](/microsoft-365/compliance/insider-risk-management)
+- [Planificar la administración de riesgos internos](/microsoft-365/compliance/insider-risk-management-plan)
+- [Introducción a la configuración de administración de riesgos de insider](/microsoft-365/compliance/insider-risk-management-settings)
+- [Introducción a la administración de riesgos internos](/microsoft-365/compliance/insider-risk-management-configure)
+- [Crear y administrar directivas de riesgos internos](/microsoft-365/compliance/insider-risk-management-policies)
+- [Investigar alertas de riesgos internos](/microsoft-365/compliance/insider-risk-management-alerts)
+- [Tomar medidas en casos de riesgos internos](/microsoft-365/compliance/insider-risk-management-cases)
+- [Revisar actividades con el registro de auditoría de riesgo interno](/microsoft-365/compliance/insider-risk-management-audit-log)
+- [Revisar datos con el explorador de contenido de riesgos internos](/microsoft-365/compliance/insider-risk-management-content-explorer)
+- [Administrar el flujo de trabajo con el Panel de usuarios](/microsoft-365/compliance/insider-risk-management-users)
 
 ### <a name="records-management"></a>Administración de registros
 
@@ -102,13 +134,13 @@ Los siguientes temas se actualizaron o agregaron para admitir estas nuevas carac
 
 El contenido se agregó o actualizó en los temas siguientes:
 
-- [Introducción al tipo de información confidencial personalizada](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)
-- [Obtener más información acerca de los tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about).
-- [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Crear notificaciones para actividades exactas de coincidencia de datos](https://docs.microsoft.com/microsoft-365/compliance/sit-edm-notifications-activities)
-- [Definiciones de entidad de tipo de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-- [Crear un tipo de información confidencial personalizada con PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Crear un diccionario de palabras clave](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary)
+- [Introducción al tipo de información confidencial personalizada](/microsoft-365/compliance/create-a-custom-sensitive-information-type)
+- [Obtener más información acerca de los tipos de información confidencial](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [Crear notificaciones para actividades exactas de coincidencia de datos](/microsoft-365/compliance/sit-edm-notifications-activities)
+- [Definiciones de entidad de tipo de información confidencial](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [Crear un tipo de información confidencial personalizada con PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [Crear un diccionario de palabras clave](/microsoft-365/compliance/create-a-keyword-dictionary)
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
@@ -122,15 +154,15 @@ Estos son algunos de los cambios realizados en Microsoft 365 de cumplimiento nor
 
 ### <a name="auditing"></a>Auditoría
 
-- **Administrar directivas de retención de registros de auditoría**. Obtenga más información sobre el nuevo panel [De directivas de retención de auditoría.](https://docs.microsoft.com/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1)
-- **Busque en el registro de auditoría**. [Use el script de PowerShell para buscar en el registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/audit-log-search-script).
+- **Administrar directivas de retención de registros de auditoría**. Obtenga más información sobre el nuevo panel [De directivas de retención de auditoría.](/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1)
+- **Busque en el registro de auditoría**. [Use el script de PowerShell para buscar en el registro de auditoría](/microsoft-365/compliance/audit-log-search-script).
 
 ### <a name="data-classification-content-explorer"></a>Explorador de contenido de clasificación de datos
 
 El contenido se agregó o actualizó en los temas siguientes:
 
-- [Introducción al explorador de contenido](https://docs.microsoft.com/microsoft-365/compliance/data-classification-content-explorer)
-- [Notas de la versión de clasificación de datos](https://docs.microsoft.com/microsoft-365/compliance/data-classification-pub-preview-relnotes)
+- [Introducción al explorador de contenido](/microsoft-365/compliance/data-classification-content-explorer)
+- [Notas de la versión de clasificación de datos](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
 
@@ -179,7 +211,7 @@ El contenido se agregó o actualizó en los temas siguientes:
 
 El contenido se agregó o actualizó en los temas siguientes:
 
-- [Obtener más información acerca de los tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about).
+- [Obtener más información acerca de los tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
 - [Crear un tipo de información confidencial personalizado con PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [Crear tipos de información confidencial personalizados con clasificación basada en coincidencia exacta de datos](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
 - [Definiciones de entidad de tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
@@ -256,46 +288,3 @@ El [grupo de funciones de administración administración](get-started-with-reco
 
 - [Etiquetar automáticamente los datos en Azure Purview (versión preliminar).](/azure/purview/create-sensitivity-label) Ahora puede crear y aplicar automáticamente etiquetas de confidencialidad a activos de Azure Purview, como archivos en Azure Blob Storage y columnas de base de datos en SQL Server.
 - [Requerir que los usuarios apliquen una etiqueta a los elementos](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents). Esta nueva opción, también conocida como "etiquetado obligatorio", requiere que los usuarios elijan y apliquen una etiqueta de confidencialidad en los escenarios específicos.
-
-## <a name="november-2020"></a>Noviembre de 2020
-Solo un aviso de que a menudo publicamos características nuevas y actualizadas en estado de vista previa para aprender cómo se usan para poder perfeccionarlas y mejorarlas antes de liberarlas a la disponibilidad general. Sus comentarios son críticos durante la vista previa (y posteriores), así que asegúrese de hacernos saber lo que piensa abriendo la tarjeta comentarios en la parte inferior derecha del centro de cumplimiento.
-
-![feedback](../media/Feedback_card_MCC.JPG)
-
-### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: Endpoint data loss prevention (DLP) released
-
-[DLP de](endpoint-dlp-learn-about.md) extremo amplía las capacidades de supervisión y protección de actividad de DLP a información confidencial en Windows 10 dispositivos. Después de que [los dispositivos](dlp-configure-endpoints.md) se incorpore al Microsoft 365 de cumplimiento normativo, puedes configurar directivas DLP para proteger la información confidencial en esos dispositivos.
-
-### <a name="advanced-ediscovery"></a>eDiscovery avanzado
-
-Para facilitar la administración del contenido cifrado en el flujo de trabajo de [](ediscovery-decryption.md) exhibición de documentos electrónicos, Microsoft 365 las herramientas de exhibición de documentos electrónicos ahora incorporan el descifrado de archivos cifrados que se adjuntan Exchange. Además, los documentos cifrados almacenados en SharePoint y OneDrive se descifran en Advanced eDiscovery.
-
-### <a name="compliance-manager"></a>Administrador de cumplimiento
-
-- [Compatibilidad con suscripciones Microsoft 365 Government](compliance-manager.md). El Administrador de cumplimiento ya está disponible para los clientes Community (GCC) moderados y altos.
-- [Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento](compliance-manager-mcca.md). Nueva herramienta basada en PowerShell que le ayuda a empezar a trabajar con el Administrador de cumplimiento mediante el examen de las configuraciones actuales de la organización y la validación de Microsoft 365 procedimientos recomendados.
-- [Nuevas plantillas](compliance-manager-templates-list.md). Se han agregado 56 plantillas nuevas, lo que lleva el total de plantillas del Administrador de cumplimiento a más de 230.
-
-### <a name="data-connectors"></a>Conectores de datos
-
-[Cinco nuevos conectores Veritas en versión preliminar](archiving-third-party-data.md#third-party-data-connectors). Los nuevos conectores incluyen Reuters Dealing, Reuters FX, CellTrust, XIP, MS genérico SQL Database datos.
-
-### <a name="retention-labels-disposition-review"></a>Etiquetas de retención (revisión de disposición)
-
-Para ver los elementos durante una revisión de eliminación, los usuarios ahora deben ser miembros de los grupos de roles Visor de contenido del Explorador de contenido y Visor de listas [del Explorador de contenido.](disposition.md#permissions-for-disposition) Aunque es necesario revisar los elementos, estos grupos de roles no son necesarios para completar la revisión de eliminación.
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-- [(Versión preliminar) Configuración de uso compartido externo SharePoint sitios](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings). Al crear una etiqueta que se usará para grupos y sitios, verá una opción para controlar el uso compartido externo para los sitios SharePoint que tienen aplicada la etiqueta. Puede especificar que el uso compartido está permitido para cualquier persona, invitados nuevos y existentes, solo invitados existentes o simplemente usuarios de su organización. Cuando se aplica la etiqueta, la configuración de la etiqueta reemplazará cualquier configuración de uso compartido externo configurada [en el centro SharePoint administración](/sharepoint/change-external-sharing-site).
-- [Quite la etiqueta y el cifrado de un documento etiquetado.](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document) Para quitar una etiqueta y el cifrado que exige de un documento etiquetado en SharePoint, los administradores globales y los administradores de SharePoint pueden ejecutar el `Unlock-SPOSensitivityLabelEncryptedFile` nuevo cmdlet. Este cmdlet se ejecuta incluso si el administrador no tiene permisos de acceso al sitio o archivo, o si el servicio Azure Rights Management no está disponible.
-
-## <a name="october-2020"></a>Octubre de 2020
-
-### <a name="advanced-ediscovery"></a>eDiscovery avanzado
-
-[Compatibilidad con el idioma CJK](ediscovery-cjk-support.md). Advanced eDiscovery ahora admite idiomas de juego de caracteres de doble byte, conocidos colectivamente como idiomas CJK (incluye chino simplificado, chino tradicional, japonés y coreano). Se pueden usar en varios escenarios de conjunto de revisión avanzada.
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-- [Ámbito de etiqueta](sensitivity-labels.md#label-scopes). Al crear una etiqueta de confidencialidad, verá una nueva opción para definir el ámbito de la etiqueta. Esta opción le permite configurar etiquetas solo para archivos y correos electrónicos, contenedores (como SharePoint sitios y Teams), o ambos.
-- [Marcado de contenido dinámico](sensitivity-labels-office-apps.md#dynamic-markings-with-variables). Al configurar el marcado de contenido para una etiqueta de confidencialidad, ahora puede usar las variables dinámicas, como y en la cadena de texto del encabezado, pie de página `${Item.Label}` `${Item.Location}` o marca de agua.
