@@ -20,35 +20,39 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo unirse a un equipo como invitado en Microsoft Teams.
-ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 04ee1a32e63c6cbff1f6352362ed04b06a9791fa
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903723"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706243"
 ---
 # <a name="join-a-team-as-a-guest"></a>Unirse a un equipo como invitado
+
+## <a name="watch-join-a-team-as-a-guest"></a>Ver: Unirse a un equipo como invitado
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys?autoplay=false]
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Si recibe una invitación de Microsoft Teams para unirse a un equipo, hay un par de pasos para aceptar la invitación.
+Si recibe una invitación Microsoft Teams para unirse a un equipo, hay un par de pasos para aceptar la invitación.
 
-1. Abra la invitación por correo electrónico y  **seleccione Abrir Microsoft Teams**. Si no ve la invitación, compruebe la carpeta de correo no deseado o correo no deseado.
+1. Abra la invitación de correo electrónico y **seleccione Abrir Microsoft Teams**. Si no ve la invitación, compruebe la carpeta de correo no deseado o correo no deseado.
   1. Si su dirección de correo electrónico no se ha usado anteriormente para crear una cuenta de Microsoft, tendrá que crear una.
 
      En el  **cuadro de diálogo**  Crear cuenta, seleccione  **Siguiente** , cree una contraseña y seleccione  **Siguiente**.
   1. Para comprobar la dirección de correo electrónico, abra el correo electrónico de verificación y copie el código de seguridad.
   1. Escriba el código de seguridad en el cuadro de diálogo Comprobar  **correo**  electrónico, seleccione Siguiente  **,** escriba el CAPTCHA en la línea  **Escribir**  los caracteres que ve, seleccione  **Siguiente** y, a continuación,  **Aceptar**.
-1. Si no quieres descargar la aplicación de Microsoft Teams, selecciona **Usar la aplicación web en su lugar.**
-1. En la aplicación web de Teams puedes ver o responder a las publicaciones, o crear tus propias publicaciones, y seleccionar la pestaña  **Archivos**  para ver o editar documentos de equipo.
+1. Si no quieres descargar la aplicación Microsoft Teams, selecciona **Usar la aplicación web en su lugar.**
+1. En la Teams web puede ver o responder a las publicaciones, o crear sus propias publicaciones, y seleccionar la pestaña **Archivos** para ver o editar documentos de equipo.
 
     Si ya usas la aplicación Teams en tu organización unirte a un equipo como invitado es mucho más sencillo.
 
-1. Simplemente abre la aplicación de Microsoft Teams y elige  **Sí**  para cambiar al equipo al que estás invitado.  Ahora puede colaborar en el proyecto en Teams.
-2. Para volver al equipo de su empresa, selecciónelo en la  **lista**  desplegable Organización.
+1. Simplemente abre Microsoft Teams aplicación y elige **Sí** para cambiar al equipo al que estás invitado.  Ahora puede colaborar en el proyecto en Teams.
+1. Para volver al equipo de su empresa, selecciónelo en la  **lista**  desplegable Organización.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Experiencia de invitado en Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (artículo) Administrar la configuración de Microsoft [Teams](https://docs.microsoft.com/microsoftteams/enable-features-office-365) para su organización (artículo) Use el acceso de invitado y el acceso externo para colaborar con personas ajenas a [su](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) organización (artículo)
+[Experiencia de invitado en Teams](/microsoftteams/guest-experience) (artículo)\
+[Administrar Microsoft Teams configuración de la organización](/microsoftteams/enable-features-office-365) (artículo)\
+[Usar el acceso de invitado y el acceso externo para colaborar con personas ajenas a su organización](/microsoftteams/communicate-with-users-from-other-organizations) (artículo)

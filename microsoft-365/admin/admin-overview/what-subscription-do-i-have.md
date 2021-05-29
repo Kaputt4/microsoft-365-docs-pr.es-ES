@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Aprenda a comprobar qué suscripciones tiene su organización yendo a la página Sus productos.
 ms.date: 01/21/2021
-ms.openlocfilehash: c33ba799880e6c687a08c2d49b17cbae8e80552c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535895"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706303"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
@@ -41,10 +41,7 @@ Si eres administrador, puedes comprobar qué suscripciones tiene tu organizació
 
 ## <a name="related-content"></a>Contenido relacionado
   
-[Suscripciones y facturación](../../commerce/index.yml) (vínculos)
-
-[Ver la factura o factura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)
-
-[Pagar por la suscripción](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artículo)
-
+[Suscripciones y facturación](../../commerce/index.yml) (vínculos)\
+[Vea su factura o recibo](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)\
+[Pagar por la suscripción](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artículo)\
 [Cambiar las direcciones de facturación](../../commerce/billing-and-payments/change-your-billing-addresses.md) (artículo)

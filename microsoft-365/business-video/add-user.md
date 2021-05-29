@@ -21,22 +21,24 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo agregar usuarios en Microsoft 365 para empresas.
-ms.openlocfilehash: d1167241a7b4c6012663f900973cb2fdbb7792bb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8a9d9cbf0204d9cf4ef878116ddddbe1b2103ccb
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580719"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706411"
 ---
 # <a name="add-a-new-user"></a>Agregar un nuevo usuario
 
+## <a name="watch-add-a-user"></a>Ver: Agregar un usuario
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
-Cuando una nueva persona se une a su empresa, debe agregarla a su suscripción de Microsoft 365 Empresa Premium como nuevo usuario.
+Cuando una nueva persona se une a su empresa, debe agregarla a su Microsoft 365 Empresa Premium suscripción como un nuevo usuario.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración de Microsoft 365, vaya a **Administración de usuarios** y seleccione Agregar usuario.
+1. En el centro Microsoft 365 administración, vaya a **Administración de usuarios** y seleccione Agregar usuario.
 1. Escriba el nombre  y el apellido **del nuevo usuario.** El **nombre para** mostrar se rellena automáticamente, pero puede cambiarlo.
 1. Escriba un **nombre de usuario**. Esta será la dirección de correo electrónico del nuevo usuario. Si tiene más de un dominio, seleccione el dominio correcto en la lista desplegable.
 1. Para crear una contraseña automáticamente, **seleccione Auto-generate password**.

@@ -18,16 +18,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa Movilidad y seguridad básicas para crear directivas de dispositivo que protejan la información de la organización.
-ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023910"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706327"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Crear directivas de seguridad de dispositivos en Movilidad y seguridad básicas
 
-Puedes usar Movilidad y seguridad básicas para crear directivas de dispositivo que ayuden a proteger la información de la organización en Microsoft 365 contra el acceso no autorizado. Puedes aplicar directivas a cualquier dispositivo móvil de la organización donde el usuario del dispositivo tenga una licencia de Microsoft 365 aplicable y haya inscrito el dispositivo en Movilidad y seguridad básicas.
+Puedes usar Movilidad y seguridad básicas para crear directivas de dispositivo que ayuden a proteger la información de la organización Microsoft 365 acceso no autorizado. Puedes aplicar directivas a cualquier dispositivo móvil de la organización donde el usuario del dispositivo tenga una licencia de Microsoft 365 aplicable y haya inscrito el dispositivo en Movilidad y seguridad básicas.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -35,12 +35,12 @@ Puedes usar Movilidad y seguridad básicas para crear directivas de dispositivo 
 > Para poder crear una directiva de dispositivo móvil, debes activar y configurar La movilidad y la seguridad básicas. Para obtener más información, consulta Overview of Basic Mobility and Security.
 
 - Obtén información sobre los dispositivos, las aplicaciones de dispositivos móviles y la configuración de seguridad que admite movilidad básica y seguridad. Vea [Capabilities of Basic Mobility and Security](capabilities.md).
-- Cree grupos de seguridad que incluyan usuarios de Microsoft 365 a los que desee implementar directivas y para los usuarios que desee excluir del acceso bloqueado a Microsoft 365. Antes de implementar una nueva directiva en la organización, se recomienda probarla implementándola para un número reducido de usuarios. Puede crear y usar un grupo de seguridad que incluya solo usted o un número reducido de usuarios de Microsoft 365 que puedan probar la directiva por usted. Para obtener más información acerca de los grupos de seguridad, vea [Crear, editar o eliminar un grupo de seguridad.](../email/create-edit-or-delete-a-security-group.md)
-- Para crear e implementar directivas básicas de movilidad y seguridad en Microsoft 365, debe ser administrador global de Microsoft 365. Para obtener más información, consulta [Permisos en el Centro de seguridad & cumplimiento](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
-- Antes de implementar directivas, haga que su organización conozca los posibles impactos de inscribir un dispositivo en Movilidad y seguridad básicas. Según cómo configure las directivas, los dispositivos no compatibles pueden bloquearse para acceder a Microsoft 365 y los datos, incluidas las aplicaciones instaladas, las fotos y la información personal de un dispositivo inscrito, y los datos se pueden eliminar.
+- Cree grupos de seguridad que incluyan Microsoft 365 usuarios en los que desee implementar directivas y para los usuarios que desee excluir de que se bloquee el acceso a Microsoft 365. Antes de implementar una nueva directiva en la organización, se recomienda probarla implementándola para un número reducido de usuarios. Puede crear y usar un grupo de seguridad que incluya solo usted o un número reducido de usuarios Microsoft 365 que puedan probar la directiva por usted. Para obtener más información acerca de los grupos de seguridad, vea [Crear, editar o eliminar un grupo de seguridad.](../email/create-edit-or-delete-a-security-group.md)
+- Para crear e implementar directivas básicas de movilidad y seguridad en Microsoft 365, debe ser un Microsoft 365 global. Para obtener más información, consulta [Permisos en el Centro de seguridad & cumplimiento](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- Antes de implementar directivas, haga que su organización conozca los posibles impactos de inscribir un dispositivo en Movilidad y seguridad básicas. En función de cómo configure las directivas, se puede bloquear el acceso a los dispositivos que no sean compatibles con Microsoft 365 y los datos, incluidas las aplicaciones instaladas, las fotos y la información personal de un dispositivo inscrito, y los datos se pueden eliminar.
 
 >[!NOTE]
->Las directivas y las reglas de acceso creadas en Basic Mobility and Security for Microsoft 365 Business Standard invalidan Exchange ActiveSync directivas de buzón de dispositivo móvil y reglas de acceso de dispositivos creadas en el Centro de administración de Exchange. Una vez que un dispositivo se inscribe en Basic Mobility and Security for Microsoft 365 Business Standard Exchange ActiveSync, se omite cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivo que se aplique al dispositivo. Para obtener más información sobre Exchange ActiveSync, vea [Exchange ActiveSync en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+>Las directivas y las reglas de acceso creadas en Basic Mobility and Security for Microsoft 365 Empresa Estándar override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. Una vez que un dispositivo se inscribe en Movilidad básica y seguridad para Microsoft 365 Empresa Estándar, se omite cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivos Exchange ActiveSync aplicación al dispositivo. Para obtener más información sobre Exchange ActiveSync, vea [Exchange ActiveSync en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Paso 1: Crear una directiva de dispositivo e implementarla en un grupo de pruebas
 
@@ -48,7 +48,7 @@ Antes de empezar, asegúrese de que ha activado y configurado La movilidad y la 
 
 1. Desde el explorador, escriba [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2. Seleccione **Crear una directiva**.
+2. Seleccione **Crear directiva**.
 
    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración de directivas básicas de movilidad y seguridad":::
 
@@ -60,7 +60,7 @@ Antes de empezar, asegúrese de que ha activado y configurado La movilidad y la 
 
 6. Seleccione **Crear esta directiva**.
 
-La directiva se inserta en el dispositivo de cada usuario que la directiva se aplica a la próxima vez que inicie sesión en Microsoft 365 con su dispositivo móvil. Si los usuarios no han aplicado una directiva a su dispositivo móvil antes, después de implementar la directiva, obtienen una notificación en su dispositivo que incluye los pasos para inscribirse y activar la movilidad y seguridad básicas. Para obtener más información, consulta [Inscribir el dispositivo móvil con Movilidad y seguridad básicas.](enroll-your-mobile-device.md) Hasta que completen la inscripción en Movilidad básica y seguridad hospedada por el servicio de Intune, el acceso al correo electrónico, OneDrive y otros servicios está restringido. Después de completar la inscripción mediante la aplicación Portal de empresa de Intune, pueden usar los servicios y la directiva se aplica a su dispositivo.
+La directiva se inserta en el dispositivo de cada usuario que la directiva se aplica a la próxima vez que inicie sesión en Microsoft 365 con su dispositivo móvil. Si los usuarios no han aplicado una directiva a su dispositivo móvil antes, después de implementar la directiva, obtienen una notificación en su dispositivo que incluye los pasos para inscribirse y activar la movilidad y seguridad básicas. Para obtener más información, consulta [Inscribir el dispositivo móvil con Movilidad y seguridad básicas.](enroll-your-mobile-device.md) Hasta que completen la inscripción en Movilidad básica y seguridad hospedada por el servicio de Intune, el acceso al correo electrónico, OneDrive y otros servicios está restringido. Después de completar la inscripción mediante Portal de empresa de Intune aplicación, pueden usar los servicios y la directiva se aplica a su dispositivo.
 
 ## <a name="step-2-verify-that-your-policy-works"></a>Paso 2: Comprobar que la directiva funciona
 
@@ -85,13 +85,13 @@ La directiva se inserta en el dispositivo móvil de cada usuario que la directiv
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>Paso 4: Bloquear el acceso de correo electrónico para dispositivos no compatibles
 
-Para ayudar a proteger la información de la organización, debes bloquear el acceso de la aplicación al correo electrónico de Microsoft 365 para dispositivos móviles que no son compatibles con movilidad y seguridad básicas. Para obtener una lista de dispositivos compatibles, consulta [Dispositivos compatibles.](../../admin/basic-mobility-security/capabilities.md)
+Para proteger la información de la organización, debes bloquear el acceso de la aplicación Microsoft 365 correo electrónico para dispositivos móviles que no son compatibles con La movilidad y la seguridad básicas. Para obtener una lista de dispositivos compatibles, consulta [Dispositivos compatibles.](../../admin/basic-mobility-security/capabilities.md)
 
 **Para bloquear el acceso a la aplicación:**
 
 1. Desde el explorador, escriba [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 2. Selecciona **Administrar la configuración de acceso de dispositivos en toda la organización.**
-3. Para bloquear dispositivos no  compatibles, elija Bloquear en Si un dispositivo no es compatible con Movilidad básica y seguridad para **Microsoft 365** y, a continuación, **seleccione Guardar**.
+3. Para bloquear dispositivos no  compatibles, elija Bloquear en Si un dispositivo no es compatible con Movilidad básica y seguridad para Microsoft 365 y, **a** continuación, **seleccione Guardar**.
 
    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Opción de acceso bloqueado de movilidad básica y seguridad":::
 
@@ -105,7 +105,7 @@ Si desea excluir algunas personas de las comprobaciones de acceso condicional en
 
    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Movilidad básica y seguridad crear una opción de directiva":::
 
-3. Seleccione **Agregar** para agregar el grupo de seguridad que tiene usuarios que desea excluir de haber bloqueado el acceso a Microsoft 365. Cuando un usuario se ha agregado a esta lista, puede tener acceso al correo electrónico de Microsoft 365 cuando usa un dispositivo no compatible.
+3. Seleccione **Agregar** para agregar el grupo de seguridad que tiene usuarios que desea excluir de haber bloqueado el acceso a Microsoft 365. Cuando un usuario se ha agregado a esta lista, puede tener acceso Microsoft 365 correo electrónico cuando usa un dispositivo no compatible.
 
 4. Seleccione el grupo de seguridad que desea usar en el **panel Seleccionar** grupo.
 
@@ -126,16 +126,16 @@ Cuando aplicas una directiva a los dispositivos de usuario, el impacto en cada d
 |Bloquear sincronización de documentos|No|No|Sí|iOS: Bloquear documentos en la nube.|
 |Bloquear sincronización de fotos |No|No|Sí|iOS (nativo): Bloquear Photo Stream.|
 |Bloquear captura de pantalla |No|Sí|Sí|Se bloquea cuando se intenta.|
-|Bloquear videoconferencia |No|No|Sí|FaceTime bloqueado en iOS, no en Skype u otros usuarios.|
+|Bloquear videoconferencia |No|No|Sí|FaceTime bloqueado en iOS, no en Skype u otros.|
 |Bloquear el envío de datos de diagnóstico |No|Sí|Sí|Bloquear el envío de informes de bloqueo de Google en Android.|
 |Bloquear el acceso a la tienda de aplicaciones |No|Sí|Sí|Falta el icono de la tienda de aplicaciones en la página principal de Android, está deshabilitado en Windows, falta en iOS.|
 |Requerir contraseña para la tienda de aplicaciones |No|No|Sí|iOS: Contraseña necesaria para las compras de iTunes.|
 |Bloquear conexión a almacenamiento extraíble |No|Sí|N/D|Android: la tarjeta SD está atenuada en la configuración, Windows notifica al usuario, las aplicaciones instaladas no están disponibles|
-|Bloquear conexión Bluetooth |Ver notas|Ver notas|Sí|No podemos deshabilitar BlueTooth como una configuración en Android. En su lugar, deshabilitamos todas las transacciones que requieren BlueTooth: Distribución avanzada de audio, control remoto de audio y vídeo, dispositivos manos libres, auriculares, acceso a la libreta de teléfonos y puerto serie. Cuando se usa cualquiera de estas opciones, aparece un pequeño mensaje de aviso en la parte inferior de la página.|
+|Bloquear conexión Bluetooth |Ver notas|Ver notas|Sí|No podemos deshabilitar BlueTooth como una configuración en Android. En su lugar, deshabilitamos todas las transacciones que requieren BlueTooth: distribución avanzada de audio, control remoto de audio y vídeo, dispositivos manos libres, auriculares, acceso Teléfono libros y puerto serie. Cuando se usa cualquiera de estas opciones, aparece un pequeño mensaje de aviso en la parte inferior de la página.|
 
 ## <a name="what-happens-when-you-delete-a-policy-or-remove-a-user-from-the-policy"></a>¿Qué ocurre al eliminar una directiva o quitar un usuario de la directiva?
 
-Al eliminar una directiva o quitar un usuario de un grupo en el que se implementó la directiva, la configuración de la directiva, el perfil de correo electrónico de Microsoft 365 y los correos electrónicos almacenados en caché podrían quitarse del dispositivo del usuario. Consulta la tabla siguiente para ver qué se quita para los distintos tipos de dispositivos.
+Al eliminar una directiva o quitar un usuario de un grupo en el que se implementó la directiva, la configuración de directiva, el perfil de correo electrónico Microsoft 365 y los correos electrónicos almacenados en caché podrían quitarse del dispositivo del usuario. Consulta la tabla siguiente para ver qué se quita para los distintos tipos de dispositivos.
 
 |**Lo que se quitó**|**iOS 6 y versiones posteriores**|**Android 4 y versiones posteriores (incluido Samsung KNOX**|
 |:-----|:-----|:-----|
@@ -148,8 +148,7 @@ La directiva se quita del dispositivo móvil para cada usuario, la directiva se 
 
 También puedes borrar un dispositivo completamente o borrar selectivamente la información de la organización del dispositivo. Para obtener más información, [consulta Borrar un dispositivo móvil en Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Información general sobre Movilidad y seguridad básicas](overview.md)
-
-[Capacidades de Movilidad y seguridad básicas](capabilities.md)
+[Información general sobre movilidad y seguridad](overview.md) básicas (artículo)\
+[Capacidades de movilidad y seguridad básicas](capabilities.md) (artículo)

@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 'Quite la licencia de un buzón compartido para asignarla a otro usuario. '
-ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 'Quite una licencia de un buzón compartido para asignarla a otro usuario o devolver la licencia para que no la pague. '
+ms.openlocfilehash: d33487879506402c5f0de2f7942c3299c5698b73
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537588"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706291"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 
@@ -74,14 +74,10 @@ Los buzones compartidos normalmente no requieren una licencia. Siga estas instru
 
 6. Sigue pagando por la licencia. Para dejar de pagar por ella, [quite la licencia de la suscripción](../../commerce/licenses/buy-licenses.md).
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Acerca de los buzones compartidos](about-shared-mailboxes.md)
-
-[Crear un buzón compartido](create-a-shared-mailbox.md)
-
-[Configurar un buzón compartido](configure-a-shared-mailbox.md)
-
-[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md)
-
-[Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md)
+[Acerca de los buzones compartidos](about-shared-mailboxes.md) (artículo)\
+[Crear un buzón compartido](create-a-shared-mailbox.md) (artículo)\
+[Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)\
+[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) (artículo)\
+[Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)

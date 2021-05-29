@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo activar la autenticación multifactor.
-ms.openlocfilehash: 64e054defb407a3b2c1e4d124767d1d68f78452a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Obtenga información sobre cómo activar la autenticación multifactor, a veces conocida como autenticación en dos fases.
+ms.openlocfilehash: 7d491ac88ab928dea9b5a5316a51151b8df63eab
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578584"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706447"
 ---
 # <a name="turn-on-multi-factor-authentication"></a>Activar la autenticación multifactor
+
+## <a name="watch-turn-on-multi-factor-authentication"></a>Watch: Activar la autenticación multifactor
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
@@ -37,8 +39,8 @@ La autenticación multifactor significa que usted y sus empleados deben proporci
 ## <a name="try-it"></a>¿Se atreve?
 
 1. Vaya al Centro de administración en [https://admin.microsoft.com](https://admin.microsoft.com).
-1. Seleccione  **Mostrar todo** y, a continuación, elija el Centro de administración de Azure Active **Directory**.
-1. Seleccione **Azure Active Directory**, **Propiedades,** Administrar valores predeterminados de **seguridad**.
+1. Seleccione **Mostrar todo** y, a **continuación, elija Azure Active Directory centro de administración**.
+1. Seleccione **Azure Active Directory**, **Propiedades**, Administrar valores predeterminados **de seguridad**.
 1. En **Habilitar valores predeterminados de seguridad,** seleccione **Sí** y, a continuación, **Guarde**.
 
 > [!NOTE]

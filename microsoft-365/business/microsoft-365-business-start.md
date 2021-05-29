@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información Microsoft 365 para empresas, cómo configurarla y cómo preparar los dispositivos y equipos de los usuarios para asegurarse de que están protegidos por Microsoft 365 para empresas.
-ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293715"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706466"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introducción a Microsoft 365 para empresas
 
@@ -41,7 +41,7 @@ ms.locfileid: "52293715"
 
 Microsoft 365 para empresas es un conjunto completo de herramientas de colaboración y productividad empresarial, como Outlook, Word, Excel y otros productos Office, que siempre están actualizados. Puedes proteger los archivos de trabajo en todos los dispositivos iOS, Android y Windows 10 con seguridad de nivel empresarial que es fácil de administrar.
 
-Vea este vídeo para obtener una introducción rápida de Microsoft 365 para empresas.<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Watch: What is Microsoft 365 Empresa Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -61,11 +61,11 @@ En el siguiente diagrama se describe cómo los administradores Microsoft 365 par
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-Vea este vídeo para obtener información general sobre la configuración Microsoft 365 para empresas.<br><br>
+## <a name="watch-set-up-microsoft-365-business"></a>Watch: Configure up Microsoft 365 Empresa
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Configurar Microsoft 365 para empresas (administrador)
@@ -99,7 +99,7 @@ Si su organización usa Windows Server Active Directory local, puede configurar 
 Si conserva un Active Directory local que contiene algunos recursos locales (como recursos compartidos de archivos e impresoras), puede proporcionar a los dispositivos unidos a **Azure AD** acceso a estos recursos siguiendo los pasos que se indican a continuación: Obtener acceso a recursos locales desde un dispositivo unido a Azure AD en [Microsoft 365](access-resources.md)para empresas.
   
   
-## <a name="contact-support"></a>Contactar soporte
+## <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
 
  **Si necesita ponerse en contacto con soporte técnico:**
   
@@ -109,8 +109,7 @@ Si conserva un Active Directory local que contiene algunos recursos locales (com
     
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 documentación y recursos para empresas](./index.yml)
-  
-[Administrar Microsoft 365 para empresas Migrar](manage.md)a Microsoft 365 para[empresas](migrate-to-microsoft-365-business.md)
-
-[Vídeos de aprendizaje de Microsoft 365 para empresas](../business-video/index.yml)
+[Microsoft 365 documentación y recursos para empresas](./index.yml) (página de vínculos)\
+[Administrar Microsoft 365 para empresas](manage.md) (artículo)\
+[Migrar a Microsoft 365 para empresas](migrate-to-microsoft-365-business.md) (artículo)\
+[Microsoft 365 vídeos de aprendizaje para empresas](../business-video/index.yml) (página de vínculos)

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información Office 365 operado por 21Vianet diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 00710d53033648764ed0e55eeb51ee66518e36f7
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: bc416ca253d26cc5d391d226039223eac02720b0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297061"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706375"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -129,11 +129,11 @@ Para las organizaciones que ejecutan versiones anteriores o mixtas de Exchange S
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Sí  <br/> | Todo  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Sí  <br/> | Todos, excepto exhibición de documentos electrónicos local/archivado, acceso de OWA (vea la tabla siguiente)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Sí  <br/> | Solo libre/ocupado configurado manualmente  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | No  <br/> | Ninguna  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | No  <br/> | Ninguno  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Sí  <br/> | Solo libre/ocupado  <br/> |
 | 2007  <br/> | 2013 SP1 o 2010 SP3No  <br/> | No aplicable  <br/> | No compatible  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | No aplicable  <br/> | No compatible  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | No  <br/> | Ninguna  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | No  <br/> | Ninguno  <br/> |
 
    
 > [!IMPORTANT]
@@ -153,8 +153,8 @@ Use la siguiente tabla para obtener más información sobre la compatibilidad co
 |**Versión de Exchange local**|**MRM (archivo dividido)**|**Acceso de OWA (archivo dividido)**|**Exhibición de documentos electrónicos locales**|**Auditoría de buzones**|**Retención local/archivado**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | Todo 2013 CU5  <br/> | Compatible <br/>  | No se admite <br/>  | Compatible <br/>  | Compatible  <br/> | Compatible <br/> |
-| Todo 2010 SP3 <br/>  | No se admite <br/>  | No se admite <br/>  | Compatible<sup>con 1</sup> <br/> | Compatible  <br/> | Compatible <br/>  |
-| Al menos un servidor CU5 anterior a 2013  <br/> | Compatible<sup>con 2</sup> <br/> | No se admite  <br/> | No se admite <br/> | Compatible  <br/> | Compatible <br/> |
+| Todo 2010 SP3 <br/>  | No admitido <br/>  | No admitido <br/>  | Compatible<sup>con 1</sup> <br/> | Compatible  <br/> | Compatible <br/>  |
+| Al menos un servidor CU5 anterior a 2013  <br/> | Compatible<sup>con 2</sup> <br/> | No admitido  <br/> | No admitido <br/> | Compatible  <br/> | Compatible <br/> |
 |||
 
 <sup>1</sup> Se requieren búsquedas independientes para buzones de correo locales y Exchange Online local.  <br/> <sup>2</sup> Las directivas de movimiento a archivo de MRM se pueden usar para buzones ubicados en un servidor Exchange 2013 CU5 o posterior. 
@@ -197,7 +197,7 @@ Compartir Exchange datos de contacto en dispositivos móviles Apple con Apple iC
 |Integración del panel de investigación para Bing servicios  <br/> |No disponible.  <br/> |
 |Comprobador de accesibilidad  <br/> |No disponible.  <br/> |
 |Bloc de notas de clase  <br/> |No disponible.  <br/> |
-|Formularios  <br/> |No disponible.  <br/> |
+|Forms  <br/> |No disponible.  <br/> |
 |Lector envolvente  <br/> |No disponible.  <br/> |
 |Insertar imagen en línea  <br/> |No disponible.  <br/> |
 |Detalles de la reunión  <br/> |No disponible.  <br/> |
@@ -236,8 +236,6 @@ Para obtener más información e instrucciones, vea Solicitudes de [interesados 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Pruebe o compre una suscripción Microsoft 365 para empresas](../../commerce/try-or-buy-microsoft-365.md) (artículo)
-
-[Compatibilidad con Azure Information Protection para Office 365 operado por 21Vianet](parity-between-azure-information-protection.md) (artículo)
-
+[Pruebe o compre una suscripción Microsoft 365 para empresas](../../commerce/try-or-buy-microsoft-365.md) (artículo)\
+[Compatibilidad con Azure Information Protection para Office 365 operado por 21Vianet](parity-between-azure-information-protection.md) (artículo)\
 [Ver la factura u obtener un Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)

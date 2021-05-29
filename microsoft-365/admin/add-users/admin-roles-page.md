@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: 3c55619dc1193d7c41f8a52fc027f03f13f3c9ad
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: c1baf7fcd9189973864929550b19ca6e32d499ae
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759959"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706207"
 ---
 # <a name="get-started-with-the-roles-page"></a>Introducción a la página roles
 
@@ -43,7 +43,7 @@ Puede exportar la lista de administradores, así como buscar y filtrar por rol.
 
 |||
 |:-----|:-----|
-|  <br/> |Use **Exportar lista de administradores** para obtener una lista completa de todos los usuarios de administración de la organización. La lista se almacena en un archivo .csv de Excel.   <br/> |
+|  <br/> |Use **Exportar lista de administradores** para obtener una lista completa de todos los usuarios de administración de la organización. La lista se almacena en un Excel .csv archivo.   <br/> |
 |  <br/> |Use **La** búsqueda para buscar un rol de administrador y ver los usuarios que están asignados a ese rol.   <br/> |
 |  <br/> |Use **Filter** para cambiar la vista de los roles de administrador mostrados.   <br/> |
 
@@ -56,7 +56,7 @@ Esta no es una lista exhaustiva de todos los permisos que tienen estos roles. Se
 
 ### <a name="exchange-admin"></a>Administrador de Exchange
 
-Asigne el rol de administrador de Exchange a los usuarios que necesiten ver y administrar los buzones de correo electrónico del usuario, los grupos de Microsoft 365 y Exchange Online. También pueden abrir y administrar solicitudes de servicio para el soporte técnico de Microsoft. [Más información](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
+Asigne el Exchange de administrador a los usuarios que necesiten ver y administrar los buzones de correo electrónico del usuario, Microsoft 365 grupos y Exchange Online. También pueden abrir y administrar solicitudes de servicio para el soporte técnico de Microsoft. [Más información](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>Administrador global
 
@@ -72,15 +72,15 @@ Asigne el rol de administrador del departamento de soporte técnico a los usuari
 
 ### <a name="service-admin"></a>Administrador de servicios
 
-Asigne el rol de administrador de servicio a los usuarios que necesitan crear solicitudes de servicio para los servicios de Azure, Microsoft 365 y Office 365. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Asigne el rol de administrador del servicio a los usuarios que necesitan crear solicitudes de servicio para Azure, Microsoft 365 y Office 365 servicios. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>Administrador de SharePoint
 
-Al comprar una suscripción a Microsoft 365, se crea automáticamente un sitio de grupo y el administrador global se establece como administrador de la colección de sitios principal. Asigne el rol de administrador de SharePoint a los usuarios a los que desea acceder al Centro de administración de SharePoint. Los usuarios con el rol de administrador de SharePoint pueden crear y administrar colecciones de sitios, designar administradores de colecciones de sitios y administrar perfiles de usuario. Los usuarios con el rol de administrador de SharePoint también pueden administrar grupos de Microsoft 365 y solicitudes de servicio abiertas a través del soporte técnico de Microsoft. [Más información](/sharepoint/sharepoint-admin-role)
+Al comprar una suscripción Microsoft 365, se crea automáticamente un sitio de grupo y el administrador global se establece como administrador de la colección de sitios principal. Asigna el SharePoint de administrador a los usuarios a los que quieras acceder al centro SharePoint administración. Los usuarios con el SharePoint administrador pueden crear y administrar colecciones de sitios, designar administradores de colecciones de sitios y administrar perfiles de usuario. Los usuarios con el SharePoint de administración también pueden administrar grupos Microsoft 365 y solicitudes de servicio abiertas a través del soporte técnico de Microsoft. [Más información](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Administrador de servicios de Teams
 
-Asigna el rol de administrador de Teams a los usuarios a los que quieras acceder y administrar el Centro de administración de Skype & Teams. Los usuarios con el rol de administrador de Teams también pueden administrar grupos de Microsoft 365 y solicitudes de servicio abiertas a través del soporte técnico de Microsoft. [Más información](/MicrosoftTeams/using-admin-roles)
+Asigna el Teams de administración a los usuarios a los que quieres acceder y administrar el centro Teams & Skype administración. Los usuarios con el Teams de administración también pueden administrar grupos de Microsoft 365 y solicitudes de servicio abiertas a través del soporte técnico de Microsoft. [Más información](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Administrador de usuarios
 
@@ -96,8 +96,7 @@ En el Centro de administración:
 
 ![Figura que muestra una comparación de roles de administrador](../../media/compare-roles-list.png)
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Acerca de los roles de administración de Microsoft 365](about-admin-roles.md)
-
-[Asignar roles de administrador](assign-admin-roles.md)
+[Acerca Microsoft 365 roles de administrador](about-admin-roles.md) (artículo)\
+[Asignar roles de administrador](assign-admin-roles.md) (artículo)

@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo cambiar el nombre o la dirección de correo electrónico de un usuario.
-ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Aprenda a cambiar el nombre o la dirección de correo electrónico de un usuario cambiando un nombre para mostrar, alias o dirección de correo electrónico.
+ms.openlocfilehash: e012923ebe12a04b07c9236f5ebbd30623cd2dd5
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903735"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706423"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Cambiar el nombre o la dirección de correo electrónico de un usuario
+
+## <a name="watch-change-a-users-name-or-email-address"></a>Ver: Cambiar el nombre o la dirección de correo electrónico de un usuario
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
@@ -38,23 +40,23 @@ En ocasiones, es posible que deba cambiar el nombre o la dirección de correo el
 
 ### <a name="change-a-users-display-name"></a>Cambiar el nombre para mostrar de un usuario
 
-1. En el Centro de administración de Microsoft 365, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
+1. En el Microsoft 365 de administración, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
 1. Seleccione el usuario de la lista de usuarios activos.
 1. Seleccione **Administrar información de contacto**.
 1. Cambie el nombre para mostrar y seleccione **Guardar cambios**.
 
-    El nuevo nombre ahora se mostrará en Outlook y otras aplicaciones de Microsoft 365.
+    El nuevo nombre ahora se mostrará en Outlook y otras Microsoft 365 aplicaciones.
 
 ### <a name="add-an-email-alias"></a>Agregar un alias de correo electrónico
 
-1. En el Centro de administración de Microsoft 365, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
+1. En el Microsoft 365 de administración, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
 1. Seleccione el usuario de la lista de usuarios activos.
 1. Seleccione **Administrar alias de correo** electrónico .
 1. Escriba el nuevo alias, compruebe el dominio y seleccione **Guardar cambios**.
 
 ### <a name="change-a-username"></a>Cambiar un nombre de usuario
 
-1. En el Centro de administración de Microsoft 365, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
+1. En el Microsoft 365 de administración, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
 1. Seleccione el usuario de la lista de usuarios activos.
 1. Seleccione **Administrar nombre de usuario**.
 1. Escriba el nuevo nombre de usuario, compruebe el dominio y seleccione **Guardar cambios**.
@@ -63,4 +65,6 @@ En ocasiones, es posible que deba cambiar el nombre o la dirección de correo el
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Conceder permisos de buzón a otro usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) (artículo) Convertir un buzón de usuario [en](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) un buzón compartido (artículo) Configuración de correo electrónico [de usuario](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (artículo)
+[Conceder permisos de buzón a otro usuario](../admin/add-users/give-mailbox-permissions-to-another-user.md) (artículo)\
+[Convertir un buzón de usuario en un buzón compartido](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (artículo)\
+[Configuración de correo electrónico del usuario](../admin/email/office-365-user-email-settings.md) (artículo)

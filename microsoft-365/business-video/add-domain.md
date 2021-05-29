@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo agregar otro dominio a la suscripción.
-ms.openlocfilehash: a641005913f7dfd866366f0f8065019dd5c17fe8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Es posible que su organización necesite varios dominios para que los clientes puedan encontrarlo. Obtenga información sobre cómo agregar otro dominio a la suscripción.
+ms.openlocfilehash: 13fc3cf73a112945db4372231cce70c1837c1321
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903747"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706435"
 ---
 # <a name="add-another-domain"></a>Agregar otro dominio
 
@@ -36,14 +36,14 @@ Es posible que su empresa necesite varios nombres de dominio para fines diferent
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración de Microsoft 365, elija **Configurar**.
+1. En el centro Microsoft 365 administración, elija **Configurar**.
 1. En **Obtener la configuración del dominio personalizado,** seleccione **Ver**.
 1. Elija **Administrar** y, a **continuación, Agregar dominio**.
 1. Escriba el nuevo nombre de dominio que desea agregar y, a continuación, seleccione **Siguiente**.
 1. Inicie sesión en el registrador de dominio, en este caso GoDaddy y, a continuación, **seleccione Siguiente**.
 1. Si se le solicita, inicie sesión en el registrador y, a continuación, elija **Autorizar**.
 1. Elija **Agregar los registros DNS para mí** y, a continuación, seleccione **Siguiente**.
-1. Elija los servicios para el nuevo dominio y desactive las casillas para los servicios que se administrarán mediante un dominio diferente. Por ejemplo, si solo desea usar el nuevo dominio para correo electrónico, elija **Exchange** y desactive las casillas **de Skype** Empresarial y Administración de dispositivos móviles para **Office 365**.
+1. Elija los servicios para el nuevo dominio y desactive las casillas para los servicios que se administrarán mediante un dominio diferente. Por ejemplo, si solo desea usar el nuevo dominio para el correo electrónico,  elija **Exchange** y desactive las casillas para Skype Empresarial y **Administración de dispositivos móviles para Office 365**.
 1. Seleccione **Siguiente**, **Autorizar**, **Siguiente** y, a continuación, **Finalizar**. Se ha agregado el nuevo dominio.
 
 Para recibir correo electrónico en el nuevo dominio, deberá agregar un nuevo alias de correo electrónico para cada usuario:
@@ -56,4 +56,7 @@ Para recibir correo electrónico en el nuevo dominio, deberá agregar un nuevo a
 
 ## <a name="related-content"></a>Contenido relacionado
 
-Agregar un dominio [a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) (artículo) Agregar registros [DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) para conectar el dominio (artículo) Cambiar servidores de nombres para configurar [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) con cualquier registrador de dominios (artículo) [](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) Preguntas más frecuentes sobre dominios (artículo)
+[Agregar un dominio a Microsoft 365](../admin/setup/add-domain.md) (artículo)\
+[Agregar registros DNS para conectar el dominio](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (artículo)\
+[Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (artículo)\
+[Preguntas más frecuentes sobre dominios](../admin/setup/domains-faq.yml) (artículo)
