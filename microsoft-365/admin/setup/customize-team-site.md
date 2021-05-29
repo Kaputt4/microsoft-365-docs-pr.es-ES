@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Obtenga información sobre cómo personalizar, organizar y administrar su sitio SharePoint de grupo con bibliotecas de documentos, listas y concentradores.
-ms.openlocfilehash: aca2b2ff147fdb030540712133b27eba706b0985
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244520"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706351"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizar el sitio de grupo para el almacenamiento y uso compartido de archivos
 
@@ -103,15 +103,15 @@ Aunque el almacenamiento de archivos y la administración de documentos es un co
 
 A medida que administra el sitio de grupo, es posible que tenga que agregar o quitar usuarios. Esta es la información que le ayudará a comprender, agregar y administrar usuarios en el sitio de grupo.
   
-Ver un vídeo sobre grupos con [Comprender y administrar grupos](https://docs.microsoft.com/learn/m365/). 
+Ver un vídeo sobre grupos con [Comprender y administrar grupos](/learn/m365/). 
   
 Para agregar usuarios a un grupo Microsoft 365, vea [Agregar usuarios y asignar licencias al mismo tiempo.](../add-users/add-users.md)
   
 Obtenga información sobre cómo controlar las solicitudes de acceso [con Configurar y administrar solicitudes de acceso.](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)
   
-## <a name="here-are-more-articles-you-might-be-interested-in"></a>Estos son más artículos que podrían interesarle
+## <a name="next-steps"></a>Siguientes pasos
 
-- **Configurar las aplicaciones de Office en tabletas y teléfonos**. Debe hacerlo para poder editar los archivos almacenados en el sitio de grupo desde su tableta o teléfono. Si no instala las aplicaciones de Office en su tableta o teléfono, podrá ver los archivos en el sitio de grupo, pero no editarlos. 
+Debes configurar aplicaciones Office en tus dispositivos para que puedas editar los archivos almacenados en el sitio de grupo desde tu tableta o teléfono. Si no instala las aplicaciones de Office en su tableta o teléfono, podrá ver los archivos en el sitio de grupo, pero no editarlos. 
     
   - [Instalar y configurar Office en un dispositivo Android con Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

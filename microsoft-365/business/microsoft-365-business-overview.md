@@ -28,13 +28,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que incluye las aplicaciones de productividad de Office y protección avanzada para defender a las empresas frente a las ciberamenazas.
-ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Obtenga información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que incluye Office aplicaciones y protección avanzada contra amenazas cibernéticas.
+ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244864"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705530"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Información general sobre Microsoft 365 Empresa Premium
 
@@ -42,7 +42,7 @@ ms.locfileid: "52244864"
 
 Microsoft 365 Empresa Premium (anteriormente Microsoft 365 Empresa) es un servicio completo de suscripción para empresas de menos de 300 empleados. Incluye los servicios y las aplicaciones de productividad de Office, herramientas de colaboración como Microsoft Teams y funcionalidades avanzadas de administración de dispositivos y seguridad.
 
-Vea este vídeo para obtener información general sobre Microsoft 365 Empresa Premium.<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Watch: What is Microsoft 365 Empresa Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -105,7 +105,7 @@ Los dispositivos **están protegidos** por las siguientes medidas:
 
 Para ver la lista completa de las características de seguridad, consulte [Características de seguridad de Microsoft 365 Empresa Premium](security-features.md). Una vez que haya [configurado Microsoft 365 Empresa Premium](set-up.md), vea cómo [aumentar la protección contra amenazas](increase-threat-protection.md) y cómo [configurar las características de cumplimiento](set-up-compliance.md) para empezar a usar las características de seguridad que no se incluyen como parte de la configuración guiada. Lea también las [10 formas principales de proteger los planes de Office 365 y Microsoft 365 Empresa Premium](/office365/admin/security-and-compliance/secure-your-business-data) para obtener información sobre cómo configurar la protección contra hackers y delincuentes cibernéticos.
 
-## <a name="get-microsoft-365-business-premium"></a>Obtención de Microsoft 365 Empresa Premium
+## <a name="next-steps"></a>Siguientes pasos
 
 - Si tiene un partner, ese partner obtendrá Microsoft 365 Empresa Premium: [Obtener Microsoft 365 Empresa Premium desde el Centro de partners de Microsoft](get-microsoft-365-business.md).
 

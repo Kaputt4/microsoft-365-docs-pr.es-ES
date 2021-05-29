@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698957"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706623"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -48,7 +48,7 @@ Y visite la [guía básica](https://www.microsoft.com/microsoft-365/roadmap) de 
 
 ### <a name="data-connectors"></a>Conectores de datos
 
-- [Configurar un conector para archivar datos de Cisco Jabber en Oracle]/microsoft-365/compliance/archive-ciscojabberonoracle-data)
+- [Configurar un conector para archivar datos de Cisco Jabber en Oracle](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
 - [Configurar un conector para archivar datos de Cisco Jabber en PostgreSQL](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
 
 ### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
@@ -59,14 +59,15 @@ Y visite la [guía básica](https://www.microsoft.com/microsoft-365/roadmap) de 
 
 ### <a name="retention-policies-and-retention-label-policies"></a>Directivas de retención y directivas de etiquetas de retención
 
-- La ubicación Microsoft 365 Groups ahora admite la aplicación de la configuración de retención Microsoft 365 solo Microsoft 365 buzones o simplemente los sitios SharePoint conectados mediante el cmdlet [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) con el parámetro Applications.
+- La ubicación Microsoft 365 Groups ahora admite la aplicación de la configuración de retención Microsoft 365 solo Microsoft 365 buzones o simplemente los sitios SharePoint conectados mediante el cmdlet [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) con el parámetro *Applications.*
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
 Outlook versiones y actualizaciones:
-- Antes solo era compatible con el cliente de etiquetado unificado AIP, el etiquetado integrado ahora admite diferentes opciones de configuración para la etiqueta predeterminada y [el etiquetado obligatorio.](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
-- Encrypt-Only es compatible con macOS, iOS y Android
-- Administrar etiquetas de confidencialidad en un [tema](/microsoft-365/compliance/sensitivity-labels-office-apps) de aplicaciones de [](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling) Office actualizado con nuevas entradas en la tabla de funcionalidades de [Outlook](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook) para Diferentes configuraciones para etiquetas predeterminadas y etiquetado obligatorio para la nueva versión de características de Outlook para el etiquetado integrado para admitir una etiqueta predeterminada diferente y la exención del etiquetado obligatorio. Además, la opción Encrypt-Only ahora es compatible con macOS/iOS/Android, y todas las marcas dinámicas con variables ahora son compatibles con todos los Outlook cliente. El etiquetado obligatorio ahora se está implementando en las plataformas restantes.
+- [Ahora se admiten](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) diferentes opciones de configuración para la etiqueta predeterminada y el etiquetado obligatorio para el etiquetado integrado. Anteriormente, esta configuración solo era compatible con el cliente de etiquetado unificado AIP.
+- [Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions) ahora es compatible con macOS, iOS y Android.
+- [El etiquetado obligatorio se](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) está implementando en las plataformas restantes.
+- [Los marcados dinámicos con todas las variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) se admiten en todos los Outlook cliente.
 
 ## <a name="march-2021"></a>Marzo de 2021
 

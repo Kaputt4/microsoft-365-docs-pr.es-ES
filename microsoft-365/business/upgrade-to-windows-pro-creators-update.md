@@ -26,20 +26,20 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Descubra formas en las que puede actualizar sus Windows a Windows 10 Pro para usar características de seguridad y redes empresariales más avanzadas.
-ms.openlocfilehash: 0ed24f3560832890c1ba26f89ecbcd1f2ef7b098
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 14a1705a333b2fd4d4dda37ed5170b34acb13abe
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244744"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705562"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Actualizar Windows dispositivos a Windows 10 Pro
 
-Vea un breve vídeo sobre cómo actualizar Windows dispositivos a Windows 10 Pro.<br><br>
+## <a name="watch-upgrade-windows-10-home-to-windows-10-pro"></a>Watch: Upgrade Windows 10 Home to Windows 10 Pro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
 ## <a name="upgrade-to-windows-10-pro"></a>Actualizar a Windows 10 Pro
   
@@ -56,9 +56,11 @@ Para actualizar a Windows 10 Pro, tiene varias opciones. Puede:
 > [!NOTE]
 > Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción de Microsoft 365 para empresas te da derecho a una actualización de Windows Pro 10.
     
-Consulta [Configurar dispositivos Windows para Microsoft 365 para](set-up-windows-devices.md) que los usuarios empresariales completen la configuración Windows 10 dispositivos. 
+## <a name="next-steps"></a>Siguientes pasos
+
+Para completar la configuración de Windows 10, consulta Configurar Windows [dispositivos para Microsoft 365 usuarios empresariales.](set-up-windows-devices.md) 
   
-Consulta [Configurar dispositivos móviles para Microsoft 365 usuarios](set-up-mobile-devices.md) empresariales para completar la configuración de dispositivos Android e iOS. 
+Para completar la configuración de dispositivos Android e iOS, consulta Configurar dispositivos móviles [para Microsoft 365 usuarios empresariales.](set-up-mobile-devices.md) 
   
 ## <a name="related-content"></a>Contenido relacionado
 
