@@ -110,12 +110,14 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Crear notificaciones para actividades de coincidencia exacta de datos (vista previa)
           href: sit-edm-notifications-activities.md
-        - name: Crear un tipo de información confidencial personalizada en el Centro de seguridad y cumplimiento.
+        - name: Crear un tipo de información confidencial personalizada en el Centro de cumplimiento
           href: create-a-custom-sensitive-information-type.md
         - name: Crear un tipo de información confidencial personalizada con PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Crear un diccionario de palabras clave
           href: create-a-keyword-dictionary.md
+        - name: Modificar un diccionario de palabras clave
+          href: sit-modify-keyword-dictionary.md
         - name: Creación de huella digital de documento
           href: document-fingerprinting.md
     - name: Clasificadores que se pueden entrenar
@@ -124,8 +126,6 @@
           href: classifier-learn-about.md
         - name: Introducción a los clasificadores que se pueden entrenar
           href: classifier-get-started-with.md
-        - name: Cómo volver a entrenar un clasificador en el cumplimiento de las comunicaciones
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: Cómo volver a entrenar un clasificador en el explorador de contenido
           href: classifier-how-to-retrain-content-explorer.md
     - name: Clasificación de los datos
