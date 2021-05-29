@@ -1,5 +1,5 @@
 ---
-title: Programar una reunión de Teams con usuarios invitados
+title: Programar una reunión Teams con usuarios externos
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,30 +19,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo programar una reunión de Teams con invitados.
-ms.openlocfilehash: 1a48fa290211507453004c54637e588ad9ad6759
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Obtenga información sobre cómo programar una reunión Teams con usuarios externos.
+ms.openlocfilehash: e4fec84613dc968298569284c7f026de47005ce3
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578704"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698897"
 ---
-# <a name="schedule-a-teams-meeting-with-guests"></a>Programar una reunión de Teams con usuarios invitados
+# <a name="schedule-a-teams-meeting-with-external-users"></a>Programar una reunión Teams con usuarios externos
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-Puede invitar a personas de fuera de su organización a una reunión sin tener que agregarlas a Microsoft Teams. Así es como funciona para sus clientes o socios cuando se [unen a una reunión sin una cuenta de Teams.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)
+Puede invitar a personas de fuera de la organización a una reunión sin tener que agregarlas a Microsoft Teams. Así es como funciona para sus clientes o partners cuando se unen a una reunión sin [una Teams cuenta](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508).
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Con Microsoft Teams, puede crear nuevos equipos al iniciar nuevos proyectos o agregar clientes.
+Para programar reuniones con sus empleados, clientes, usuarios externos y otros invitados, use Microsoft Teams. 
 
-1. En la  **pestaña Teams,** seleccione **Unirse o crear un** equipo , **Crear** equipo , Crear un equipo desde cero y, **a** continuación, **Privado**.
-2. Escriba un nombre para el equipo, una descripción y, a continuación, seleccione  **Crear**.
-3. En la página Agregar  **miembros,**  agregue miembros internos buscándolos y seleccionándolos, y agregue miembros invitados especificando su dirección de correo electrónico y, a continuación,  **seleccione Agregar**.
-
-    Si ve  **No hemos encontrado ninguna** coincidencia, debe habilitar el uso compartido de invitados. Vaya al Centro de administración de Microsoft 365, elija el  Centro de administración de Teams, elija Configuración de toda la **organización,** Acceso de invitado y active Permitir acceso de invitado **en Teams.** Este cambio puede tardar hasta 24 horas.
-
-1. Seleccione  **Cerrar**. Sus invitados y miembros recibirán invitaciones al equipo.
-2. En el canal General, escriba un saludo para todos y seleccione  **Enviar**.
-3. En la  **pestaña** Archivos, agregue documentos en los que desee trabajar juntos. Puede crearlos aquí o arrastrar y colocar archivos desde el equipo.
+1. En Microsoft Teams, en el panel de navegación izquierdo, elija **Reuniones**.
+2. Elija **Programar una reunión**.
+3. En el **cuadro Nueva reunión,** escriba un **título** y **una ubicación** para la reunión.
+4. Escriba una **hora y** **una fecha** de inicio y finalización.
+5. En el **cuadro** Detalles, escriba una descripción de la reunión y cualquier otro detalle que desee agregar, como una agenda de reunión.
+6. En **Invitar personas**, escriba los nombres de los empleados o clientes que desea invitar.
+7. Si ve **Tentative** o **Busy debajo** de cualquier nombre, elija uno de los **horarios** gratuitos proporcionados o haga clic en **Asistente para** programación para obtener más opciones.
+8. Elija **Programar una reunión**.

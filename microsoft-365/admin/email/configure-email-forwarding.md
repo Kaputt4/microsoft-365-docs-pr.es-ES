@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: El reenvío de correo electrónico le permite reenviar los mensajes de correo electrónico enviados a un buzón Microsoft 365 de usuario a otro buzón dentro o fuera de la organización.
-ms.openlocfilehash: eb72204211a8eff929c024fbcede66dfe1f4b879
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635491"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698921"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurar el reenvío de correo electrónico en Microsoft 365
 
@@ -40,6 +40,8 @@ Como administrador de una organización, es posible que tenga requisitos de la c
 ## <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 
 Antes de configurar el reenvío de correo electrónico, tenga en cuenta lo siguiente:
+
+- Permitir que los mensajes reenviados automáticamente se envíen a personas en el dominio remoto. Consulta [Administrar dominios remotos](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) para obtener más información.
 
 - Una vez configurado el reenvío de correo electrónico, solo se reenviarán los correos electrónicos **nuevos** enviados al buzón de  correo electrónico de *origen*.
 
@@ -104,4 +106,3 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
 [Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)\
 [Enviar correo electrónico desde una dirección](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) diferente (artículo)\
 [Cambiar un nombre de usuario y una dirección de correo electrónico](../add-users/change-a-user-name-and-email-address.md) (artículo)
-
