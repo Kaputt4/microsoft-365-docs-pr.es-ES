@@ -18,6 +18,8 @@
           href: microsoft-365-security-mde-redirection.md
         - name: Redirigiendo Defender para Office 365 al Centro de seguridad de Microsoft 365.
           href: microsoft-365-security-mdo-redirection.md
+        - name: Microsoft 365 Integración de Defender con Azure Sentinel
+          href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: Versión preliminar de las características
           href: preview.md
         - name: Solucionar problemas
@@ -118,7 +120,7 @@
                   items:
                     - name: Correo de suplantación de identidad
                       href: first-incident-path-phishing.md
-                    - name: Identidad
+                    - name: Identity
                       href: first-incident-path-identity.md
             - name: Playbooks de respuesta a incidentes
               href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
