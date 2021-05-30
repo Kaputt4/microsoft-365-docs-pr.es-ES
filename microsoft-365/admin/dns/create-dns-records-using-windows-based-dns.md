@@ -1,5 +1,5 @@
 ---
-title: Crear registros DNS para Microsoft con DNS basado en Windows
+title: Crear registros DNS para Microsoft mediante Windows DNS basado en dns
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,34 +20,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en DNS basado en Windows para Microsoft.
-ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en dns basado Windows para Microsoft.
+ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876354"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706122"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft con DNS basado en Windows
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft mediante Windows DNS basado en dns
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
    
 Si hospeda sus propios registros DNS utilizando DNS basado en Windows, siga los pasos indicados en este artículo para configurar los registros para el correo electrónico, Skype Empresarial Online, y para otras tareas.
   
-Para empezar, debes buscar los [registros DNS](#find-your-dns-records-in-windows-based-dns) en DNS basado en Windows para que puedas actualizarlos. Además, si está planeando sincronizar su Active Directory local con Microsoft, vea Dirección de correo electrónico no enrutable usada como [UPN](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)en su Active Directory local.
+Para empezar, debe buscar los registros DNS en [un DNS](#find-your-dns-records-in-windows-based-dns) Windows para poder actualizarlos. Además, si está planeando sincronizar su Active Directory local con Microsoft, vea Dirección de correo electrónico no enrutable usada como [UPN](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)en su Active Directory local.
   
 Problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea Solucionar problemas después de cambiar el nombre de [dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Buscar los registros DNS en DNS basado en Windows
-<a name="BKMK_find_your_dns_1"></a> Vaya a la página que tiene los registros DNS de su dominio. Si estás trabajando en Windows Server 2008, ve a **Iniciar**  >  **ejecución**. Si estás trabajando en Windows Server 2012, presiona la tecla Windows y **r**. Escriba **dnsmgmnt.msc y,** a continuación, seleccione **Aceptar**. En el Administrador dns, expanda **\<DNS server name\> \> Zonas de búsqueda directa**. Seleccione su dominio. Ya está listo para crear los registros DNS.
+<a name="BKMK_find_your_dns_1"></a> Vaya a la página que tiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Iniciar**  >  **ejecución**. Si está trabajando en Windows Server 2012, presione la Windows y **r**. Escriba **dnsmgmnt.msc y,** a continuación, seleccione **Aceptar**. En el Administrador dns, expanda **\<DNS server name\> \> Zonas de búsqueda directa**. Seleccione su dominio. Ya está listo para crear los registros DNS.
    
 ## <a name="add-mx-record"></a>Agregar registro MX
 <a name="BKMK_add_MX"> </a>
 
 Agregue un registro MX para que el correo electrónico de su dominio se envíe a Microsoft.
 - El registro MX que agregará incluye un valor (el valor **Points to address)** que tiene un aspecto similar al siguiente: .mail.protection.outlook.com, donde es un valor como \<MX token\> \<MX token\> MSxxxxxxx. 
-- En la fila MX de la sección Exchange Online de la página Agregar registros DNS en Microsoft, copie el valor que aparece en Puntos para la dirección. Usará este valor en el registro que está creando en esta tarea. 
-- En la página Administrador dns del dominio, vaya a **Exchanger de** correo de  >  **acción (MX).** Para encontrar esta página para el dominio, consulta [Buscar los registros DNS en DNS basado en Windows](#find-your-dns-records-in-windows-based-dns).  
+- En la fila MX de la Exchange Online de la página Agregar registros DNS en Microsoft, copie el valor que aparece en Puntos para dirección. Usará este valor en el registro que está creando en esta tarea. 
+- En la página Administrador dns del dominio, vaya a **Exchanger de** correo de  >  **acción (MX).** Para encontrar esta página para el dominio, vea [Buscar los registros DNS en Windows DNS basado en el dominio](#find-your-dns-records-in-windows-based-dns).  
 - En el **cuadro de diálogo Nuevo registro de** recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores: 
     - Nombre de host:  
     - @Address: pegue el valor points to address que acaba de copiar de Microsoft aquí.  
@@ -119,7 +119,7 @@ Agregue el registro TXT de SPF para su dominio para prevenir el correo basura.
 - En la página Administrador dns del dominio, vaya a **Texto de** \> **acción (TXT)**. 
 -  En el **cuadro de diálogo Nuevo registro de** recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores. 
  > [!IMPORTANT]
-> En algunas versiones del Administrador de DNS de Windows, es posible que el dominio se haya configurado para que, al crear un registro txt, el nombre principal se establezca de forma predeterminada en el dominio primario. En esta situación, al agregar un registro TXT, establezca el nombre de host en blanco (ningún valor) en lugar de configurarlo para @ o el nombre de dominio. 
+> En algunas versiones de Windows DNS Manager, es posible que el dominio se haya configurado para que, al crear un registro txt, el nombre principal tenga el valor predeterminado del dominio primario. En esta situación, al agregar un registro TXT, establezca el nombre de host en blanco (ningún valor) en lugar de configurarlo para @ o el nombre de dominio. 
 
 -  Tipo de host: @
 -  Tipo de registro: TXT
@@ -160,7 +160,7 @@ Agregue el registro SRV SIP para la federación de Skype Empresarial Online.
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Agregar un registro para verificar que posee el dominio si todavía no lo ha hecho
 <a name="BKMK_verify"> </a>
 
-Antes de agregar los registros DNS para configurar los servicios de Microsoft, Microsoft debe confirmar que es el propietario del dominio que está agregando. Para ello, debe agregar un registro, siguiendo los pasos que se indican a continuación.
+Antes de agregar los registros DNS para configurar el servicios Microsoft, Microsoft debe confirmar que es el propietario del dominio que está agregando. Para ello, debe agregar un registro, siguiendo los pasos que se indican a continuación.
   
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio. 
@@ -179,7 +179,7 @@ Agregue un registro TXT.
 -  En el área Nombres  **de host** personalizados del cuadro de diálogo Nuevo registro de recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores. 
 
 > [!IMPORTANT] 
-> En algunas versiones del Administrador de DNS de Windows, es posible que el dominio se haya configurado para que, al crear un registro txt, el nombre principal se establezca de forma predeterminada en el dominio primario. En esta situación, al agregar un registro TXT, establezca el nombre de host en blanco (ningún valor) en lugar de configurarlo para @ o el nombre de dominio. 
+> En algunas versiones de Windows DNS Manager, es posible que el dominio se haya configurado para que, al crear un registro txt, el nombre principal tenga el valor predeterminado del dominio primario. En esta situación, al agregar un registro TXT, establezca el nombre de host en blanco (ningún valor) en lugar de configurarlo para @ o el nombre de dominio. 
 
 - Nombre de host: @
 - Tipo: TXT
@@ -208,8 +208,6 @@ Si está planeando sincronizar su Active Directory local con Microsoft, querrá 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Transferir un dominio de Micrsoft 365 a otro host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (artículo)
-
-[Piloto de Microsoft 365 desde mi dominio personalizado](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (artículo)
-
-[Preguntas más frecuentes sobre](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) dominios (artículo)
+[Transferir un dominio de Micrsoft 365 a otro host](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (artículo)\
+[Piloto Microsoft 365 desde mi dominio personalizado](../misc/pilot-microsoft-365-from-my-custom-domain.md) (artículo)\
+[Preguntas más frecuentes sobre dominios](../setup/domains-faq.yml) (artículo)
