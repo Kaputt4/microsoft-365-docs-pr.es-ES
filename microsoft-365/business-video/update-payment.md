@@ -28,24 +28,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "52705543"
 ---
-# <a name="update-the-payment-method-for-your-subscription"></a>Actualizar el método de pago de la suscripción
+# <a name="update-the-payment-method-for-your-subscription"></a><span data-ttu-id="59980-103">Actualizar el método de pago de la suscripción</span><span class="sxs-lookup"><span data-stu-id="59980-103">Update the payment method for your subscription</span></span>
 
-## <a name="watch-update-your-payment-method"></a>Ver: Actualizar el método de pago
+## <a name="watch-update-your-payment-method"></a><span data-ttu-id="59980-104">Ver: Actualizar el método de pago</span><span class="sxs-lookup"><span data-stu-id="59980-104">Watch: Update your payment method</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-Puedes actualizar fácilmente el método de pago de tu Microsoft 365 Empresa suscripción. Puede cambiar detalles como la tarjeta de crédito usada, el nombre o la dirección.
+<span data-ttu-id="59980-105">Puedes actualizar fácilmente el método de pago de tu Microsoft 365 Empresa suscripción.</span><span class="sxs-lookup"><span data-stu-id="59980-105">You can easily update the payment method for your Microsoft 365 Business subscription.</span></span> <span data-ttu-id="59980-106">Puede cambiar detalles como la tarjeta de crédito usada, el nombre o la dirección.</span><span class="sxs-lookup"><span data-stu-id="59980-106">You can change details such as the credit card used, the name, or the address.</span></span>
 
-## <a name="try-it"></a>¿Se atreve?
+## <a name="try-it"></a><span data-ttu-id="59980-107">¿Se atreve?</span><span class="sxs-lookup"><span data-stu-id="59980-107">Try it!</span></span>
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
-1. Seleccione **Facturación** y, a **continuación, Métodos de pago**. Verá las tarjetas de crédito que tenga en el archivo.
-1. Para editar una tarjeta existente:
-    1. Seleccione los tres puntos situados junto a la tarjeta y seleccione **Editar método de pago**.
-    1. Escriba el código de seguridad de la tarjeta.
-    1. Puede cambiar la fecha de expiración, el nombre de la tarjeta y otros detalles.
-    1. Cuando haya terminado con los cambios, seleccione **Guardar**.
-1. Para agregar una nueva tarjeta:
-    1. Seleccione **Agregar o seleccionar un método de pago**.
-    1. Elija el método de pago que desea usar en la **lista desplegable Seleccionar** un método de pago.
-    1. Escriba los detalles de la tarjeta y seleccione **Agregar**.
+1. <span data-ttu-id="59980-108">Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="59980-108">Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).</span></span>
+1. <span data-ttu-id="59980-109">Seleccione **Facturación** y, a **continuación, Métodos de pago**.</span><span class="sxs-lookup"><span data-stu-id="59980-109">Select **Billing**, then **Payment methods**.</span></span> <span data-ttu-id="59980-110">Verá las tarjetas de crédito que tenga en el archivo.</span><span class="sxs-lookup"><span data-stu-id="59980-110">You'll see any credit cards that you have on file.</span></span>
+1. <span data-ttu-id="59980-111">Para editar una tarjeta existente:</span><span class="sxs-lookup"><span data-stu-id="59980-111">To edit an existing card:</span></span>
+    1. <span data-ttu-id="59980-112">Seleccione los tres puntos situados junto a la tarjeta y seleccione **Editar método de pago**.</span><span class="sxs-lookup"><span data-stu-id="59980-112">Select the three dots beside the card, and select **Edit payment method**.</span></span>
+    1. <span data-ttu-id="59980-113">Escriba el código de seguridad de la tarjeta.</span><span class="sxs-lookup"><span data-stu-id="59980-113">Enter the security code for your card.</span></span>
+    1. <span data-ttu-id="59980-114">Puede cambiar la fecha de expiración, el nombre de la tarjeta y otros detalles.</span><span class="sxs-lookup"><span data-stu-id="59980-114">You can change the expiration date, the name on the card, and other details.</span></span>
+    1. <span data-ttu-id="59980-115">Cuando haya terminado con los cambios, seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="59980-115">When you're finished with your changes, select **Save**.</span></span>
+1. <span data-ttu-id="59980-116">Para agregar una nueva tarjeta:</span><span class="sxs-lookup"><span data-stu-id="59980-116">To add a new card:</span></span>
+    1. <span data-ttu-id="59980-117">Seleccione **Agregar o seleccionar un método de pago**.</span><span class="sxs-lookup"><span data-stu-id="59980-117">Select **Add a payment method**.</span></span>
+    1. <span data-ttu-id="59980-118">Elija el método de pago que desea usar en la **lista desplegable Seleccionar** un método de pago.</span><span class="sxs-lookup"><span data-stu-id="59980-118">Choose the payment method you want to use from the **Select a payment method** drop-down list.</span></span>
+    1. <span data-ttu-id="59980-119">Escriba los detalles de la tarjeta y seleccione **Agregar**.</span><span class="sxs-lookup"><span data-stu-id="59980-119">Enter the card details, and select **Add**.</span></span>
