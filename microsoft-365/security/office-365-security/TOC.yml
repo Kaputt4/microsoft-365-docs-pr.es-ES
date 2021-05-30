@@ -20,8 +20,6 @@
           items:
             - name: Información general de Exchange Online Protection
               href: exchange-online-protection-overview.md
-            - name: Características de EOP
-              href: eop-features.md
             - name: Flujo de correo en EOP
               href: mail-flow-in-eop.md
             - name: Cuarentena
