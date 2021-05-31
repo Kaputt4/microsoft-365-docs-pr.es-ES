@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: 007ca6eec50b243e1b820938ffa67553d7882c7b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107662"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698969"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -33,13 +33,15 @@ Al usar [directivas de retención y directivas de etiqueta de retención](retent
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Número máximo de directivas por espacio empresarial
 
-Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualquier configuración). Este número máximo incluye las diferentes directivas de retención y otras directivas de cumplimiento, como las directivas DLP.
+Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualquier configuración). Este número máximo incluye las diferentes directivas de retención y otras directivas de cumplimiento como directivas para DLP, barreras de información, retenciones de eDiscovery y etiquetas de confidencialidad.
 
-Número máximo de directivas para la retención por carga de trabajo:
+Dentro de este límite de 10 000 directivas, también hay algunos límites en el número máximo de directivas para la retención por carga de trabajo:
 
-- Exchange Online (cualquier configuración): 1800
+- Exchange Online (cualquier configuración): 1800
 - SharePoint o OneDrive (se incluyen automáticamente todos los sitios): 13
 - SharePoint o OneDrive (ubicaciones específicas incluidas o excluidas): 2600
+
+Aunque las directivas de retención para Microsoft Teams y Yammer usan buzones para almacenar datos con fines de retención, el número máximo de directivas para Exchange Online excluye las directivas de retención para Teams y Yammer.
 
 ## <a name="maximum-number-of-items-per-policy"></a>Número máximo de elementos por directiva
 
@@ -49,7 +51,7 @@ Número máximo de elementos por directiva para la retención:
 
   - 1000 buzones de correo (buzones de usuario o de grupo)
   - Grupos de Microsoft 365 1 000.
-  - 1 000 usuarios para chats privados de Teams
+  - 1 000 usuarios para chats privados de Teams
   - 100 sitios (OneDrive o SharePoint)
 
 Estas limitaciones son por directiva, por lo que si necesita usar inclusiones o exclusiones específicas por las que se superan estos números, puede crear otras directivas de retención con la misma configuración de retención. Vea la siguiente sección con [algunos escenarios de ejemplo y soluciones](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) que usan varias directivas de retención por este motivo.

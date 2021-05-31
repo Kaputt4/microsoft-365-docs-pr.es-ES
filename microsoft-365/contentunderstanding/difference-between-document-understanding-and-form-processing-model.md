@@ -1,8 +1,9 @@
 ---
 title: Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: lauriellis
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,15 +13,14 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Describe las diferencias clave entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
-ms.openlocfilehash: f12cc46e1ffcbc610f50ba327e22ad46a2591521
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222274"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706515"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
-
 
 La comprensión de contenidos en Microsoft SharePoint Syntex le permite identificar y clasificar documentos cargados en bibliotecas de documentos de SharePoint, así como extraer información relevante de cada archivo.  Por ejemplo, a medida que se carguen los archivos en una biblioteca de documentos de SharePoint, todos los archivos identificados como *Órdenes de compra* se clasifican como tales y, a continuación, se muestran en una vista personalizada de una biblioteca de documentos. Además, puede extraer información específica de cada archivo (por ejemplo, *Número de pedido de compra* y *Total*) y mostrarlo como una columna en la vista de la biblioteca de documentos. 
 
@@ -36,16 +36,14 @@ Aunque los dos modelos se usan generalmente para el mismo propósito, las siguie
 > [!NOTE]
 > Consulte la guía [Adopción de SharePoint Syntex: Introducción](./adoption-getstarted.md) para obtener más información sobre el procesamiento de formularios y ejemplos de escenarios de comprensión mediante documentos.
 
-
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenido estructurado, no estructurado y semiestructurado
 
 Use modelos de comprensión mediante documentos para identificar y extraer los datos de documentos no estructurados, como cartas o contratos, donde las entidades de texto que quiere extraer se encuentran en frases o regiones específicas del documento. Por ejemplo, un documento no estructurado podría ser una carta de renovación de contrato que pueda escribirse de varias maneras. Sin embargo, en el cuerpo de cada documento se encuentra habitualmente información de renovación de contrato, como la cadena de texto *Fecha de inicio de un servicio* seguida de una fecha.
 
-Use modelos de procesamiento de formularios para identificar archivos y extraer datos de documentos estructurados o semiestructurados, como formularios o facturas. Los modelos de procesamiento de formularios están capacitados para comprender el diseño de su formulario a partir de documentos de ejemplo y aprenden a buscar los datos que necesita extraer de ubicaciones similares. Los formularios habitualmente tienen un diseño más estructurado en el que las entidades están en la misma ubicación (por ejemplo, un número de la seguridad social en un formulario tributario).
+Use modelos de procesamiento de formularios para identificar archivos y extraer datos de documentos estructurados o semiestructurados, como formularios o facturas. Los modelos de procesamiento de formularios están capacitados para comprender el diseño de su formulario a partir de documentos de ejemplo y aprenden a buscar los datos que necesita extraer de ubicaciones similares. Los formularios tienen habitualmente un diseño más estructurado en el que las entidades están en la misma ubicación (por ejemplo, un número de la seguridad social en un formulario tributario).
 
 > [!NOTE]
 > Debe tener acceso a un sitio de centro de contenido para crear un modelo de comprensión mediante documentos o para aplicar uno a una biblioteca de documentos de SharePoint. 
-
 
 ## <a name="where-models-are-created"></a>Dónde se crean los modelos 
 
@@ -78,7 +76,7 @@ Use la siguiente tabla para comprender cuándo se usa el procesamiento de formul
 | Ubicaciones | Capacitado para una única biblioteca de documentos.| Se puede aplicar a múltiples bibliotecas.|
 | Tipos de archivo compatibles| Entrenado en formatos PDF, JPG y PNG, 50 MB y 500 páginas.| Entrenado en 5-10 archivos de PDF, Office o correo electrónico, incluyendo ejemplos negativos.<br>Los archivos de Office están truncados a 64 k caracteres. Los archivos escaneados por OCR están limitados a 20 páginas.|
 | Integrar con Metadatos administrados | No | Sí, mediante la formación del extractor de entidades que hace referencia a un campo de metadatos administrados configurados.|
-| Integración de las características de cumplimiento cuando Microsoft Information Protection está habilitado | Establecer etiquetas de retención publicadas.<br>La opción de establecer etiquetas de confidencialidad estará disponible próximamente | Establecer etiquetas de retención publicadas.<br>La opción de establecer etiquetas de confidencialidad estará disponible próximamente |
+| Integración de las características de cumplimiento cuando Microsoft Information Protection está habilitado | Establecer etiquetas de retención publicadas.<br>La opción de establecer etiquetas de confidencialidad estará disponible próximamente | Establecer etiquetas de retención publicadas.<br>Establecer etiquetas de confidencialidad publicadas. |
 | Regiones compatibles| Procesamiento de formularios basado en Power Platform. Para obtener información sobre la disponibilidad global para Power Platform y AI Builder, consulta [disponibilidad de Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Disponible en todas las regiones.|
 | Gastos transaccionales | Usar créditos de AI Builder.<br>Los créditos se pueden comprar en los de 1 M.<br>Los créditos de 1 M están incluidos en la compra de más de 300 licencias de SharePoint Syntex.<br>Los créditos de 1 M permitirán procesar 2000 páginas de archivos.<br>| N/D |
 | Capacidad | Usa el entorno de Power Platform predeterminado (entornos personalizados con soporte para la base de datos de Dataverse). | No tiene restricciones de capacidad.|
@@ -93,4 +91,4 @@ Use la siguiente tabla para comprender cuándo se usa el procesamiento de formul
 
 [Información general sobre el procesamiento de formularios](form-processing-overview.md)
 
-[Introducción a SharePoint Syntex](index.md)
+[Introducción a SharePoint Syntex](index.md)

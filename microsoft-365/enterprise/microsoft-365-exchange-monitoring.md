@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: 53dc7f990f57fd8d4da68bd424947676cbf0e85d
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
+ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572880"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52707301"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
@@ -49,9 +49,9 @@ Con la página de supervisión de **Exchange Online**, puede ver si el servicio 
 
 Esta vista previa está habilitada para los clientes que cumplan estos requisitos: 
 
-- Su organización necesita tener un número de licencias de al menos 10 000, de uno o de una combinación de estos productos: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Su organización necesita tener al menos 5000 licencias de uno o varios de estos productos: Office 365 E3, Microsoft 365 E3, Office 365 E5 o Microsoft 365 E5. 
 
-  Por ejemplo, su organización puede tener 3 000 licencias de Office 365 E3 y 8 500 de Microsoft 365 E5, con un total de 11 500 licencias de productos aptos.
+  Por ejemplo, su organización podría tener 3000 licencias de Office 365 E3 y 2500 de Microsoft 365 E5, con un total de 5500 licencias de productos aptos.
 
 - Su organización necesita tener al menos 50 usuarios activos de Exchange Online mensuales.
 
@@ -95,10 +95,10 @@ En primer lugar, asegúrese de que ha habilitado el nuevo Centro de administraci
 
 Después, asegúrese de que cumple los siguientes requisitos: 
 
-- Su organización necesita tener un número de licencias de al menos 10 000, de uno o de una combinación de estos productos: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Su organización necesita tener al menos 5000 licencias de uno o varios de estos productos: Office 365 E3, Microsoft 365 E3, Office 365 E5 o Microsoft 365 E5. 
 - Su organización necesita tener al menos 50 usuarios activos de Exchange Online mensuales.
 
-Si el número de licencias de la organización es inferior a 10 000 usuarios y los usuarios activos mensuales son menos de 50, no se habilitará la supervisión de Exchange Online hasta que se cumplan estos requisitos.
+Si el número de licencias de la organización es inferior a 5000 usuarios y los usuarios activos mensuales son menos de 50, no se habilitará la supervisión de Exchange Online hasta que se cumplan estos requisitos.
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. El número de usuarios activos en el panel de control de cada cliente parece ser bajo. Tenemos muchas licencias activas asignadas a los usuarios. ¿Qué significa esto? 
 
@@ -132,5 +132,5 @@ Para los comentarios sobre incidentes o avisos use el vínculo **¿Es útil esta
 
 #### <a name="7-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>7. ¿Dónde están los datos instrumentados para los escenarios que muestran las tendencias de actividad?
 
-Los datos se instrumentan en el servicio de Exchange Online. Si se produce un error antes de que la solicitud llegue a Exchange Online o existe un error en Exchange Online, verá una caída en la señal de actividad.
+Los datos se usan en el servicio de Exchange Online. Si se produce un error antes de que la solicitud llegue a Exchange Online o existe un error en Exchange Online, verá una caída en la señal de actividad.
 

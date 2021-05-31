@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1241e6ebb838938f82fce5dc08ea93a3038f4ace
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: fb4ba4f48d6f336444861b4407461efd4c8862d0
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624238"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694514"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -578,15 +578,15 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-set-the-priority-of-spam-filter-rules"></a>Uso de PowerShell para establecer la prioridad de las reglas de filtro de correo no deseado
 
-El valor de prioridad máximo que se puede establecer en una regla es 0. El valor mínimo que se puede establecer depende del número de reglas. Por ejemplo, si tiene cinco reglas, puede usar los valores de prioridad del 0 al 4. El cambio de prioridad de una regla existente puede tener un efecto cascada en otras reglas. Por ejemplo, si tiene cinco reglas personalizadas (prioridades del 0 al 4) y cambia la prioridad de una regla a 2, la regla existente de prioridad 2 cambia a prioridad 3 y la regla de prioridad 3 cambia a prioridad 4.
+El valor de prioridad máximo que se puede establecer en una regla es 0. El valor mínimo depende del número de reglas. Por ejemplo, si tiene cinco reglas, puede usar los valores de prioridad del 0 al 4. El cambio de prioridad de una regla existente puede tener un efecto cascada en otras reglas. Por ejemplo, si tiene cinco reglas personalizadas (prioridades del 0 al 4) y cambia la prioridad de una regla a 2, la regla existente de prioridad 2 cambia a prioridad 3 y la regla de prioridad 3 cambia a prioridad 4.
 
-Para establecer la prioridad de una regla de correo no deseado en PowerShell, use la siguiente sintaxis:
+A fin de establecer la prioridad de una regla para filtrar el correo no deseado en PowerShell, use la siguiente sintaxis:
 
 ```PowerShell
 Set-HostedContentFilterRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-Este ejemplo establece la prioridad de la regla denominada Marketing Department en 2. Todas las reglas existentes que tienen una prioridad menor o igual a 2 se reducen en 1 (sus números de prioridad aumentan en 1).
+En el ejemplo siguiente, la prioridad de la regla denominada "Marketing Department" se establece en 2. Todas las reglas existentes que tienen una prioridad menor o igual a 2 se reducen en 1 (sus números de prioridad aumentan en 1).
 
 ```PowerShell
 Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
