@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625226"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710723"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -116,7 +116,7 @@ Las directivas de retención se pueden aplicar a las siguientes ubicaciones:
 - Mensajes de canal de Teams
 - Chats de Teams
 - Mensajes de la comunidad de Yammer
-- Mensajes privados de Yammer
+- Mensajes del usuario de Yammer
 
 Puede aplicar una sola directiva en varias ubicaciones, o bien en determinadas ubicaciones o usuarios.
 
@@ -308,7 +308,7 @@ Explicación de los cuatro niveles diferentes:
     
     Los documentos de este sitio de SharePoint de marketing se conservan durante diez años, ya que este es el período de retención más largo.
 
-3. **Lo explícito sobre lo implícito.** Se aplica para determinar cuándo se eliminarán los elementos: 
+3. **El explícito supera al implícito para las eliminaciones.** Con los conflictos de retención ahora resueltos, solo quedan los conflictos por eliminación: 
     
     1. Una etiqueta de retención (sin importar cómo se haya aplicado) ofrece una retención explícita en comparación con las directivas de retención, ya que la configuración de retención se aplica a un elemento individual en lugar de asignarse implícitamente desde un contenedor. Esto significa que una acción de eliminación de una etiqueta de retención siempre tiene prioridad sobre una acción de eliminación de cualquier directiva de retención.
         
