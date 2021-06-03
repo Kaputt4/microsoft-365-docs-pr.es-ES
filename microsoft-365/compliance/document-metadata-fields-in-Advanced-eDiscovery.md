@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244605"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730503"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
@@ -47,10 +47,10 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |CC|Cc|Email_cc|Campo Cc para tipos de mensaje. Format es **DisplayName \<SMTPAddress>**.|
 |Etiquetas de cumplimiento|ComplianceLabels|Compliance_labels|[Etiquetas de](retention.md) retención aplicadas al contenido en Office 365.|
 |Ruta compuesta|CompoundPath|Compound_path|Ruta de acceso legible humana que describe el origen del elemento.|
-|Contenido*|Content||Texto extraído del elemento.|
+|Contenido*|Contenido||Texto extraído del elemento.|
 |Cuerpo de la conversación|Cuerpo de la conversación||Cuerpo de conversación del elemento.|
 |Tema de conversación|Tema de conversación||Tema de conversación del elemento.|
-|Id. de conversación|ConversationId|Email_conversation_ID|Identificador de conversación del mensaje.|
+|Id. de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje.|
 |Índice de conversación||Conversation_index|Índice de conversación del mensaje.|
 |Hora de pdf de conversación|ConversationPdfTime||Fecha en la que se creó la versión PDF de la conversación.|
 |Tiempo de grabación de redacción de conversación|ConversationRedactionBurnTime||Fecha en la que se creó la versión PDF de la conversación para Chat.|
@@ -73,12 +73,12 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Tema dominante|DominantTheme|Dominant_theme|Tema dominante calculado para análisis.|
 |Subconjunto duplicado||Duplicate_subset|Id. de grupo para duplicados exactos.|
 |EmailAction*||Email_action|Los valores **son None,** **Reply** o **Forward**; según la línea de asunto de un mensaje.|
-|Recibo de entrega de correo electrónico solicitado||Email_delivery_receipt_requested|Dirección de correo electrónico proporcionada en encabezados de Internet para el recibo de entrega.|
+|Recibo de entrega de correo electrónico solicitado||Email_delivery_receipt|Dirección de correo electrónico proporcionada en encabezados de Internet para el recibo de entrega.|
 |Importance|EmailImportance|Email_importance|Importancia del mensaje: **0** - Low; **1** : Normal; **2** - High|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Conjunto completo de encabezados de correo electrónico del mensaje de correo electrónico|
 |EmailLevel*||Email_level|Indica el nivel de un mensaje dentro del subproceso de correo electrónico al que pertenece; los datos adjuntos heredan el valor de su mensaje primario.|
 |Id. de mensaje de correo electrónico||Email_message_ID|Identificador de mensaje de Internet del mensaje.|
-|EmailReadReceiptRequested||Email_read_receipt_requested|Dirección de correo electrónico proporcionada en encabezados de Internet para recibo de lectura.|
+|EmailReadReceiptRequested||Email_read_receipt|Dirección de correo electrónico proporcionada en encabezados de Internet para recibo de lectura.|
 |Seguridad de correo electrónico|EmailSecurity|Email_security|Configuración de seguridad del mensaje: **0** - Ninguno; **1:** Firmado; **2** : cifrado; **3:** cifrado y firmado.|
 |Confidencialidad del correo electrónico|EmailSensitivity|email_sensitivity|Configuración de confidencialidad del mensaje: **0** - Ninguno; **1** Personal; **2** - Privado; **3** - CompanyConfidential.|
 |Conjunto de correo electrónico|EmailSet|Email_set|Id. de grupo para todos los mensajes del mismo conjunto de correo electrónico.|
@@ -119,7 +119,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Fecha de finalización de la reunión|MeetingEndDate|Meeting_end_date|Fecha de finalización de la reunión para reuniones.|
 |Fecha de inicio de la reunión|MeetingStartDate|Meeting_start_date|Fecha de inicio de la reunión para reuniones.|
 |Tipo de mensaje|MessageKind|Message_kind|Tipo de mensaje que se debe buscar. Valores **<br /> <br /> <br /> posibles: contacts docs <br /> email <br /> externaldata <br /> faxes im <br /> <br /> journals <br /> <br /> meetings microsoftteams** (devuelve elementos de chats, reuniones y llamadas en Microsoft Teams) notas publicaciones **<br /> <br /> <br /> rssfeeds <br /> tasks <br /> voicemail**| 
-|ModernAttachment_ParentId||ModernAttachment_ParentId||
+|Identificador principal de datos adjuntos modernos||ModernAttachment_ParentId|El identificador inmutable del elemento primario del documento.|
 |Extensión nativa|NativeExtension|Native_extension|Extensión nativa del elemento.|
 |Nombre de archivo nativo|NativeFileName|Native_file_name|Nombre de archivo nativo del elemento.|
 |NativeMD5||Native_MD5|Hash MD5 (valor hash de 128 bits) de la secuencia de archivos.|
@@ -131,7 +131,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Fecha de creación de O365||O365_date_created|Fecha de creación a partir SharePoint.|
 |Fecha de modificación de O365||O365_date_modified|Fecha de última modificación de SharePoint.|
 |O365 modificado por||O365_modified_by|Modificado por desde SharePoint.|
-|Id. principal|ParentId|Container_ID|Id. del elemento primario.|
+|Id. principal|ParentId|Parent_ID|Id. del elemento primario.|
 |ParentNode||Parent_node|El mensaje de correo electrónico anterior más cercano en el subproceso de correo electrónico.|
 |Dominios de participante|ParticipantDomains|Email_participant_domains|Lista de todos los dominios de participantes de un mensaje.|
 |Participantes|Participantes|Email_participants|Lista de todos los participantes de un mensaje; por ejemplo, Sender, To, Cc, CCO.|
@@ -164,6 +164,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Título|Título|Doc_title|Título de los metadatos del documento.|
 |To|To|Email_to|Para el campo para los tipos de mensaje. Format es **DisplayName \<SmtpAddress>**|
 |Único en el conjunto de correo electrónico|UniqueInEmailSet||**False** si hay un duplicado de los datos adjuntos en su conjunto de correo electrónico.|
+|Id. de grupo de versión||Version_Group_Id|Agrupa las distintas versiones del mismo documento.|
 |Se ha corregido|WasRemediated|Was_Remediated|**True** si el elemento se ha corregido, de lo contrario **Es False**.|
 |Word count|WordCount|Word_count|Número de palabras en el elemento.|
 |||||

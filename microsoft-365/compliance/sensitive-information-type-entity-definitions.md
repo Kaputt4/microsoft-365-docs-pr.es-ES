@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: La prevención de pérdida de datos (DLP) en el Centro de cumplimiento de seguridad incluye más de 200 tipos de información confidencial que están listos para su uso &amp; en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086733"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730479"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -38,18 +38,17 @@ nueve dígitos que pueden estar en un patrón con formato o sin formato
 
 ### <a name="pattern"></a>Patrón
 
-Con formato:
-- cuatro dígitos a partir de 0, 1, 2, 3, 6, 7 u 8
-- un guión
+- dos dígitos en los intervalos 00-12, 21-32, 61-72 u 80
+- dos dígitos
+- un guión opcional
 - cuatro dígitos
-- un guión
+- un guión opcional
 - un dígito
 
-Sin formato: nueve dígitos consecutivos a partir de 0, 1, 2, 3, 6, 7 u 8 
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No
+Sí
 
 ### <a name="definition"></a>Definición
 
@@ -619,11 +618,12 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 ### <a name="format"></a>Formato
 
-Una letra seguida de siete dígitos
+ocho o nueve caracteres alfanuméricos 
 
 ### <a name="pattern"></a>Patrón
 
-Una letra (no distingue mayúsculas de minúsculas) seguida de siete dígitos
+- una letra (N, E, D, F, A, C, U, X) seguida de 7 dígitos o
+- 2 letras (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) seguidas de 7 dígitos.
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -632,60 +632,48 @@ No
 ### <a name="definition"></a>Definición
 
 Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular Regex_australia_passport_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra Keyword_passport o Keyword_australia_passport_number.
+- La expresión regular `Regex_australia_passport_number` busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keyword_australia_passport_number` clave de.
+
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_australia_passport_number` busca contenido que coincida con el patrón.
 
 ```xml
-<!-- Australia Passport Number -->
-<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- Australia Passport Number -->
+    <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_australia_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_australia_passport_number" />
-        </Any>
-   </Pattern>
-</Entity>   
+        <Match idRef="Keyword_australia_passport_number" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_australia_passport_number" />
+      </Pattern>
+    </Entity>  
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keyword_passport"></a>Keyword_passport
-
-- Passport Number
-- Passport No
-- Passport #
-- Passport #
-- PassportID
-- Passportno
-- passportnumber
-- パスポート
-- パスポート番号
-- la ポー
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport Non
-- Passeport #
-- Passeport #
-- PasseportNon
-- Passeportn °
-
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- passport
+- passport #
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- números de pasaporte
 - passport details
 - immigration and citizenship
 - commonwealth of australia
 - department of immigration
-- residential address
-- department of immigration and citizenship
-- visa
 - national identity card
-- passport number
 - travel document
 - issuing authority
-   
+
+
 ## <a name="australia-tax-file-number"></a>Número de archivo fiscal de Australia
 
 ### <a name="format"></a>Formato

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 78ab364f8a261b1201fad17ebf86adc1a7456a46
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934465"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730844"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API 
 
@@ -41,7 +41,7 @@ Reconociendo que los entornos y estructuras de los clientes pueden variar, Defen
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Incorporación de puntos de conexión y acceso al portal 
 
-La incorporación de dispositivos está totalmente integrada en Microsoft Endpoint Manager y Microsoft Intune para dispositivos cliente y Azure Defender para dispositivos de servidor, lo que proporciona una experiencia completa de configuración, implementación y supervisión. Además, Microsoft Defender para endpoint admite la directiva de grupo y otras herramientas de terceros usadas para la administración de dispositivos.
+La incorporación de dispositivos está totalmente integrada en Microsoft Endpoint Manager y Microsoft Intune para dispositivos cliente y Azure Defender para dispositivos de servidor, lo que proporciona una experiencia completa de extremo a extremo de configuración, implementación y supervisión. Además, Microsoft Defender para endpoint admite la directiva de grupo y otras herramientas de terceros usadas para la administración de dispositivos.
 
 Defender for Endpoint proporciona un control preciso sobre lo que los usuarios con acceso al portal pueden ver y hacer a través de la flexibilidad del control de acceso basado en roles (RBAC). El modelo RBAC admite todos los sabores de la estructura de los equipos de seguridad:
 - Organizaciones distribuidas globalmente y equipos de seguridad
@@ -71,16 +71,17 @@ La **API** de investigación expone la riqueza de Defender para endpoint: expone
 
 La **API** de respuesta expone la capacidad de realizar acciones en el servicio y en los dispositivos, lo que permite a los clientes ingerir indicadores, administrar la configuración, el estado de alerta, así como realizar acciones de respuesta en dispositivos mediante programación, como aislar dispositivos de la red, archivos de cuarentena y otros. 
 
-## <a name="raw-data-streaming-api"></a>API de streaming de datos sin procesar 
-La API de streaming de datos sin procesar de Defender for Endpoint ofrece a los clientes la capacidad de enviar eventos y alertas en tiempo real desde sus instancias a medida que se producen en un único flujo de datos, lo que proporciona un mecanismo de entrega de baja latencia y alto rendimiento.
+## <a name="streaming-api"></a>Streaming API 
+La API de streaming proporciona a los clientes la capacidad de enviar eventos y alertas en tiempo real desde sus instancias a medida que se producen en un solo flujo de datos, lo que proporciona un mecanismo de entrega de baja latencia y alto rendimiento.
 
-La información del evento Defender for Endpoint se inserta directamente en Azure Storage para la retención de datos a largo plazo, o en Azure Event Hubs para su consumo por parte de servicios de visualización o motores de procesamiento de datos adicionales. 
+La información de eventos se inserta directamente en Azure Storage para la retención de datos a largo plazo, o en los Centros de eventos de Azure para su consumo mediante servicios de visualización o motores de procesamiento de datos adicionales. 
 
-Para obtener más información, vea [Raw data streaming API](raw-data-export.md).
+>[!NOTE]
+>Ahora, la API de streaming se ha movido a Microsoft 365 Defender. Para obtener más información, vea [Streaming API](raw-data-export.md).
 
 
 ## <a name="siem-api"></a>SIEM API
-Al habilitar la integración de la información de seguridad y la administración de eventos (SIEM), permite extraer detecciones del Centro de seguridad de Microsoft Defender mediante la solución SIEM o mediante la conexión directa a la API rest de detecciones. Esto activa la sección detalles de acceso al conector SIEM con valores rellenados previamente y se crea una aplicación en el inquilino de Azure Active Directory (Azure AD). Para obtener más información, vea [Integración siem](enable-siem-integration.md).
+Al habilitar la integración de la información de seguridad y la administración de eventos (SIEM), permite extraer detecciones de Centro de seguridad de Microsoft Defender mediante la solución SIEM o mediante la conexión directa a la API rest de detecciones. Esto activa la sección detalles de acceso al conector SIEM con valores rellenados previamente y se crea una aplicación en el espacio empresarial de Azure Active Directory (Azure AD). Para obtener más información, vea [Integración siem](enable-siem-integration.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Obtener acceso a las API de Microsoft Defender para puntos de conexión ](apis-intro.md)

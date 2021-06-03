@@ -1,5 +1,5 @@
 ---
-title: ACTUALIZAR API de incidentes
+title: ACTUALIZAR LA API de incidentes
 description: Obtenga información sobre cómo actualizar incidentes con la API Microsoft 365 Defender
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e3f3919d067078ef1fd1e116dc52e8a73c0726d9
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e3b445b2f9612f0113f353450ca7bf0b8a1a2bb2
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571786"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730863"
 ---
-# <a name="update-incident-api"></a>ACTUALIZAR API de incidentes
+# <a name="update-incidents-api"></a>ACTUALIZAR LA API de incidentes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -71,7 +71,7 @@ PATCH /api/incidents/{id}
 
 Nombre | Tipo | Descripción
 -|-|-
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization | String | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

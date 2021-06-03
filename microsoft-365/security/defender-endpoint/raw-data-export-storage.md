@@ -1,6 +1,6 @@
 ---
-title: Transmitir eventos de Microsoft Defender para endpoint a su cuenta de almacenamiento
-description: Obtenga información sobre cómo configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a su cuenta de almacenamiento.
+title: Transmitir eventos Microsoft 365 Defender a su Storage cuenta
+description: Obtén información sobre cómo configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a tu cuenta Storage usuario.
 keywords: Exportación de datos sin procesar, API de streaming, API, Centros de eventos, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,48 +16,49 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 19fe0c9c3dc6f2e4226a4aa9a6cd983bc95bae3a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1a1d6b63bcdf21535f36b23d4a30e5ea01833c36
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688794"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52729997"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a su cuenta de almacenamiento
+# <a name="configure--microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a tu cuenta Storage usuario
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 
 ## <a name="before-you-begin"></a>Antes de empezar:
 
-1. Cree una [cuenta de almacenamiento](https://docs.microsoft.com/azure/storage/common/storage-account-overview) en el espacio empresarial.
+1. Cree una [cuenta Storage en](/azure/storage/common/storage-account-overview) el espacio empresarial.
 
-2. Inicie sesión en el inquilino [de Azure,](https://ms.portal.azure.com/)vaya a Suscripciones > Su suscripción > proveedores de recursos > **Registrarse en Microsoft.insights**.
+2. Inicie sesión en el inquilino [de Azure,](https://ms.portal.azure.com/)vaya a Suscripciones > Su suscripción > proveedores de recursos > **Registrarse en Microsoft.Insights**.
 
 ## <a name="enable-raw-data-streaming"></a>Habilitar la transmisión de datos sin procesar:
 
-1. Inicie sesión en [el portal de Microsoft Defender para endpoint](https://securitycenter.windows.com) como * Administrador **global** _ o _* Administrador _de seguridad_**.
+1. Inicie sesión en [Microsoft 365 de](https://security.microsoft.com) seguridad de Defender como administrador **global** _ o _* Administrador _de seguridad_**.
 
-2. Vaya a [la página Configuración de exportación de datos](https://securitycenter.windows.com/interoperability/dataexport) en el Centro de seguridad de Microsoft Defender.
+2. Vaya a [La página Configuración de exportación de](https://security.microsoft.com/settings/mtp_settings/raw_data_export) datos en Centro de seguridad de Microsoft Defender.
 
 3. Haga clic en **Agregar configuración de exportación de datos.**
 
 4. Elija un nombre para la nueva configuración.
 
-5. Elija **Reenviar eventos a Azure Storage**.
+5. Elija **Reenviar eventos para Azure Storage**.
 
-6. Escriba el **identificador de recurso de la cuenta de almacenamiento**. Para obtener el identificador de recurso de la cuenta de **almacenamiento,** vaya a la página Cuenta de almacenamiento de [Azure Portal](https://ms.portal.azure.com/) > pestaña propiedades > copiar el texto en Id. de recurso de cuenta de **almacenamiento:**
+6. Escriba su **Storage de recurso de cuenta**. Para obtener el identificador de recurso de cuenta **de Storage,** vaya a la página de la cuenta de Storage en la pestaña propiedades de [Azure Portal](https://ms.portal.azure.com/) > y > copie el texto en Storage **Id.** de recurso de cuenta:
 
    ![Imagen del id. de recurso del centro de eventos1](images/storage-account-resource-id.png)
 
 7. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a>Esquema de los eventos de la cuenta de almacenamiento:
+## <a name="the-schema-of-the-events-in-the-storage-account"></a>El esquema de los eventos de la Storage cuenta:
 
 - Se creará un contenedor de blobs para cada tipo de evento: 
 
@@ -67,10 +68,10 @@ ms.locfileid: "51688794"
 
   ```
   {
-          "time": "<The time WDATP received the event>"
+          "time": "<The time Microsoft 365 Defender received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <WDATP Advanced Hunting event as Json> }
+          "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
   }               
   ```
 
@@ -78,15 +79,14 @@ ms.locfileid: "51688794"
 
 - Cada fila contiene el nombre del evento, la hora en que Defender para Endpoint recibió el evento, el inquilino al que pertenece (solo recibirá eventos de su inquilino) y el evento en formato JSON en una propiedad denominada "propiedades".
 
-- Para obtener más información sobre el esquema de eventos de Microsoft Defender para endpoint, vea [Advanced Hunting overview](advanced-hunting-overview.md).
+- Para obtener más información sobre el esquema de Microsoft 365 Defender, vea [Advanced Hunting overview](../defender/advanced-hunting-overview.md).
 
-- En Búsqueda avanzada, la **tabla DeviceInfo** tiene una columna denominada **MachineGroup** que contiene el grupo del dispositivo. Aquí todos los eventos también se decorarán con esta columna. Consulta [Grupos de dispositivos](machine-groups.md) para obtener más información.
 
 ## <a name="data-types-mapping"></a>Asignación de tipos de datos:
 
 Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo siguiente:
 
-1. Inicie sesión en el [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com) y vaya a la página Búsqueda [avanzada](https://securitycenter.windows.com/hunting-package).
+1. Inicie sesión en [el Microsoft 365 seguridad y](https://security.microsoft.com) vaya a la página Búsqueda [avanzada](https://security.microsoft.com/hunting-package).
 
 2. Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento: 
 
@@ -101,7 +101,7 @@ Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo sigu
   ![Imagen del id. de recurso del centro de eventos3](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
-- [API de Streaming de Microsoft Defender para endpoints](raw-data-export.md)
-- [Transmitir eventos de Microsoft Defender para endpoint a su cuenta de Azure Storage](raw-data-export-storage.md)
-- [Documentación de la cuenta de Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [Información general sobre la búsqueda avanzada](../defender/advanced-hunting-overview.md)
+- [Microsoft 365 Defender Streaming API](raw-data-export.md)
+- [Transmitir eventos Microsoft 365 Defender a su cuenta de Azure Storage](raw-data-export-storage.md)
+- [Azure Storage Documentación de la cuenta](/azure/storage/common/storage-account-overview)

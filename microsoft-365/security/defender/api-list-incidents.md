@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f0c92371e7e9b7a3348f90df788ee8c3a46374b
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572158"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730889"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Enumerar la API de incidentes en Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572158"
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -82,7 +82,7 @@ GET /api/incidents
 
 Nombre | Tipo | Descripción
 -|-|-
-Authorization | Cadena | Portador {token}. **Required**
+Authorization | String | Portador {token}. **Required**
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -127,7 +127,7 @@ firstActivity | Hora en la que la alerta informó por primera vez de que la acti
 title | Breve valor de cadena de identificación disponible para cada alerta. | Actividad de ransomware
 description | Valor de cadena que describe cada alerta. | El usuario Probar usuario2 (testUser2@contoso.com) manipuló 99 archivos con varias extensiones que terminan con la extensión poco común *herunterladen*. Este es un número inusual de manipulaciones de archivos y es indicativo de un posible ataque de ransomware.
 categoría | Vista visual y numérica de hasta qué punto ha progresado el ataque a lo largo de la cadena de eliminación. Alineado con el marco [&MITRE ATT ™ CK](https://attack.mitre.org/). | Impacto
-status | Clasificar las alertas *(como Nuevo,* *Activo* o *Resuelto).* Puede ayudarle a organizar y administrar la respuesta a las alertas. | Nueva
+status | Clasificar las alertas *(como Nuevo,* *Activo* o *Resuelto).* Puede ayudarle a organizar y administrar la respuesta a las alertas. | Nuevo
 severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br>Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*. | Medio
 investigationId | El identificador de investigación automatizado desencadenado por esta alerta. | 1234
 investigationState | Información sobre el estado actual de la investigación. Uno de los siguientes valores: *Unknown*, *Ended*, *SuccessfullyRemediated*, *Benign*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
@@ -151,7 +151,7 @@ osBuild | La versión de compilación del sistema operativo que se está ejecuta
 rbacGroupName | Grupo [de control de acceso basado](/azure/role-based-access-control/overview) en roles (RBAC) asociado al dispositivo. | WDATP-Ring0
 firstSeen | Hora en la que se vio el dispositivo por primera vez. | 2020-02-06T14:16:01.9330135Z
 healthStatus | El estado de mantenimiento del dispositivo. | Activa
-riskScore | La puntuación de riesgo del dispositivo. | Alta
+riskScore | La puntuación de riesgo del dispositivo. | Alto
 entidades | Todas las entidades que se han identificado para formar parte o relacionadas con una alerta determinada. | \[\] (vea los detalles de los campos de entidad a continuación)
 
 ### <a name="entity-format"></a>Formato de entidad
@@ -186,7 +186,7 @@ securityGroupId | Disponible si entityType es  *SecurityGroup*. | 301c47c8-e15f-
 securityGroupName | Disponible si entityType es  *SecurityGroup*. | Operadores de configuración de red
 registryHive | Disponible si entityType es  *Registry*. | MÁQUINA LOCAL HKEY \_ \_ |
 registryKey | Disponible si entityType es  *Registry*. | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | Disponible si entityType es  *Registry*. | Cadena
+registryValueType | Disponible si entityType es  *Registry*. | String
 registryValue | Disponible si entityType es  *Registry*. | 31-00-00-00
 deviceId | El identificador, si lo hay, del dispositivo relacionado con la entidad. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 

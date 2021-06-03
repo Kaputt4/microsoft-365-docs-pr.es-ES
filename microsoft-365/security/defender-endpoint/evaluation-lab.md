@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932792"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730646"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio de evaluación de Microsoft Defender para puntos de conexión
 
@@ -45,7 +45,7 @@ Con la experiencia de configuración simplificada, puede centrarse en ejecutar s
 
 Tendrás acceso completo a las potentes capacidades de la plataforma, como investigaciones automatizadas, búsqueda avanzada y análisis de amenazas, lo que te permite probar la pila de protección completa que ofrece Defender for Endpoint. 
 
-Puede agregar dispositivos windows 10 o Windows Server 2019 que vienen preconfigurados para tener instaladas las versiones más recientes del sistema operativo y los componentes de seguridad adecuados, así como Office 2019 Standard.
+Puede agregar dispositivos Windows 10 o Windows Server 2019 que vienen preconfigurados para tener las versiones más recientes del sistema operativo y los componentes de seguridad adecuados en su lugar, así como Office 2019 Standard instalado.
 
 También puedes instalar simuladores de amenazas. Defender for Endpoint se ha asociado con plataformas de simulación de amenazas líderes del sector para ayudarle a probar las capacidades de Defender for Endpoint sin tener que salir del portal.
 
@@ -75,9 +75,8 @@ Puede acceder al laboratorio desde el menú. En el menú de navegación, selecci
 
 >[!NOTE]
 >- Según el tipo de estructura del entorno que selecciones, los dispositivos estarán disponibles para el número especificado de horas desde el día de la activación.
->- Cada entorno se aprovisiona con un conjunto limitado de dispositivos de prueba. Cuando hayas usado los dispositivos aprovisionados, no se proporciona ningún dispositivo nuevo. Un dispositivo eliminado no actualiza el recuento de dispositivos de prueba disponibles.
->- Ya no puede usar el laboratorio cuando se han usado los recursos. No se restablece ni se actualiza.
->- Es aconsejable usar los recursos cuidadosamente. Los recursos de laboratorio son limitados. No se restablecerán ni se actualizarán. 
+>- Cada entorno se aprovisiona con un conjunto limitado de dispositivos de prueba. Cuando hayas usado los dispositivos aprovisionados y los hayas eliminado, puedes solicitar más dispositivos. 
+>- Puede solicitar recursos de laboratorio una vez al mes. 
 
 ¿Ya tienes un laboratorio? Asegúrate de habilitar los nuevos simuladores de amenazas y de tener dispositivos activos.
 
@@ -109,30 +108,27 @@ Una vez completado el proceso de configuración del laboratorio, puede agregar d
 
 
 ## <a name="add-devices"></a>Agregar dispositivos
-Cuando agregas un dispositivo a tu entorno, Defender para endpoint configura un dispositivo bien configurado con detalles de conexión. Puedes agregar dispositivos con Windows 10 o Windows Server 2019.
+Cuando agregas un dispositivo a tu entorno, Defender para endpoint configura un dispositivo bien configurado con detalles de conexión. Puede agregar dispositivos Windows 10 o Windows Server 2019.
 
 El dispositivo se configurará con la versión más actualizada del sistema operativo y Office 2019 Standard, así como con otras aplicaciones como Java, Python y SysIntenals. 
 
-   >[!TIP]
-   > ¿Necesita más dispositivos en el laboratorio? Envía un vale de soporte técnico para que el equipo de Defender for Endpoint revise tu solicitud. 
-
 Si optó por agregar un simulador de amenazas durante la configuración del laboratorio, todos los dispositivos tendrán instalado el agente del simulador de amenazas en los dispositivos que agregue.
 
-El dispositivo se incorporará automáticamente al espacio empresarial con los componentes de seguridad de Windows recomendados activados y en modo auditoría, sin ningún esfuerzo de su parte. 
+El dispositivo se incorporará automáticamente al espacio empresarial con los componentes de seguridad Windows recomendados activados y en modo auditoría, sin ningún esfuerzo de su parte. 
 
 Los siguientes componentes de seguridad están preconfigurados en los dispositivos de prueba:
 
-- [Reducción de la superficie expuesta a ataques](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
-- [Bloquear a primera vista](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [Acceso controlado a carpetas](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Protección contra vulnerabilidades de seguridad](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
-- [Protección de red](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
-- [Detección de aplicaciones potencialmente no deseadas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Protección entregada en la nube](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+- [Reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
+- [Bloquear a primera vista](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [Acceso controlado a carpetas](controlled-folders.md)
+- [Protección contra vulnerabilidades de seguridad](enable-exploit-protection.md)
+- [Protección de red](network-protection.md)
+- [Detección de aplicaciones potencialmente no deseadas](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+- [Protección entregada en la nube](cloud-protection-microsoft-defender-antivirus.md)
+- [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 >[!NOTE]
-> Antivirus de Microsoft Defender estará en (no en modo auditoría). Si Antivirus de Microsoft Defender te impide ejecutar la simulación, puedes desactivar la protección en tiempo real en el dispositivo a través de Seguridad de Windows. Para obtener más información, vea [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+> Antivirus de Microsoft Defender estará en (no en modo auditoría). Si Antivirus de Microsoft Defender te impide ejecutar la simulación, puedes desactivar la protección en tiempo real en el dispositivo a través de Seguridad de Windows. Para obtener más información, vea [Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 La configuración de investigación automatizada dependerá de la configuración del espacio empresarial. Se configurará para que sea semiautoautorista de forma predeterminada. Para obtener más información, vea [Overview of Automated investigations](automated-investigations.md).
 
@@ -141,7 +137,7 @@ La configuración de investigación automatizada dependerá de la configuración
 
 1. En el panel, selecciona **Agregar dispositivo**. 
 
-2. Elige el tipo de dispositivo que quieres agregar. Puedes elegir agregar Windows 10 o Windows Server 2019.
+2. Elige el tipo de dispositivo que quieres agregar. Puede elegir agregar Windows 10 o Windows Server 2019.
 
     ![Imagen de configuración de laboratorio con opciones de dispositivo](images/add-machine-options.png)
 
@@ -163,10 +159,29 @@ La configuración de investigación automatizada dependerá de la configuración
     ![Pestaña Imagen de dispositivos](images/machines-tab.png)
     
 
-    >[!TIP]
-    >En la **columna Estado del** simulador, puede pasar el mouse sobre el icono de información para conocer el estado de instalación de un agente.
+    > [!TIP]
+    > En la **columna Estado del** simulador, puede pasar el mouse sobre el icono de información para conocer el estado de instalación de un agente.
+
+## <a name="request-for-more-devices"></a>Solicitud de más dispositivos
+Cuando se usan y eliminan todos los dispositivos existentes, puedes solicitar más dispositivos. Puede solicitar recursos de laboratorio una vez al mes. 
 
 
+1. En el panel del laboratorio de evaluación, seleccione **Solicitar más dispositivos**.
+
+   ![Imagen de la solicitud para más dispositivos](images/request-more-devices.png)
+
+2. Elija la configuración. 
+3. Envíe la solicitud. 
+
+Cuando la solicitud se envía correctamente, verá un banner de confirmación verde y la fecha del último envío.
+ 
+Puede encontrar el estado de la solicitud en la pestaña **Acciones** del usuario, que se aprobará en cuestión de horas.
+
+Cuando se aprueben, los dispositivos solicitados se agregarán a la configuración del laboratorio y podrás crear más dispositivos. 
+
+
+> [!TIP]
+> Para obtener más información sobre su laboratorio, no olvide echar un vistazo a nuestra biblioteca de simulaciones.
 
 ## <a name="simulate-attack-scenarios"></a>Simular escenarios de ataque
 Usa los dispositivos de prueba para ejecutar tus propias simulaciones de ataque conectándose a ellos. 
@@ -175,7 +190,7 @@ Puedes simular escenarios de ataque con:
 - Escenarios de ataque ["Do It Yourself"](https://securitycenter.windows.com/tutorials)
 - Simuladores de amenazas
 
-También puede usar búsqueda avanzada [para consultar](advanced-hunting-query-language.md) datos y [análisis de](threat-analytics.md) amenazas para ver informes sobre amenazas emergentes.
+También puede usar búsqueda avanzada [para consultar](advanced-hunting-overview.md) datos y [análisis de](threat-analytics.md) amenazas para ver informes sobre amenazas emergentes.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Escenarios de ataque do-it-yourself
 Si está buscando una simulación pre-made, puede usar nuestros escenarios de ataque ["Do It Yourself".](https://securitycenter.windows.com/tutorials) Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las capacidades de Defender for Endpoint y le ayudarán a través de la experiencia de investigación.
@@ -184,11 +199,11 @@ Si está buscando una simulación pre-made, puede usar nuestros escenarios de at
 >[!NOTE]
 >La conexión a los dispositivos de prueba se realiza con RDP. Asegúrese de que la configuración del firewall permite conexiones RDP.
 
-1. Conéctese al dispositivo y ejecute una simulación de ataque **seleccionando Conectar**. 
+1. Conectar a tu dispositivo y ejecuta una simulación de ataque seleccionando **Conectar**. 
 
     ![Imagen del botón conectar para dispositivos de prueba](images/test-machine-table.png)
 
-2. Guarde el archivo RDP e inicielo **seleccionando Conectar**.
+2. Guarde el archivo RDP e inicielo seleccionando **Conectar**.
 
     ![Imagen de conexión de escritorio remoto](images/remote-connection.png)
 

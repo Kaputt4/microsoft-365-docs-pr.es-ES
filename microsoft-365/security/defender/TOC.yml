@@ -98,7 +98,7 @@
               href: incident-queue.md
             - name: Administrar
               href: manage-incidents.md
-            - name: Investigación
+            - name: Investigar
               href: investigate-incidents.md
             - name: Alertas de incidentes
               href: investigate-alerts.md
@@ -112,7 +112,7 @@
                   href: first-incident-prepare.md
                 - name: Paso 1. Triage and analyze
                   href: first-incident-analyze.md
-                - name: "Paso\_2. Corrección"
+                - name: Paso 2. Corrección
                   href: first-incident-remediate.md
                 - name: Paso 3. Revisar
                   href: first-incident-post.md
@@ -296,6 +296,8 @@
           items:
             - name: Información general sobre las API de Microsoft 365 Defender (versión preliminar)
               href: api-overview.md
+            - name: API de Microsoft 365 Defender (versión preliminar) admitidas
+              href: api-supported.md
             - name: Introducción a las API de Microsoft 365 Defender (versión preliminar)
               items:
                 - name: Licencia y términos de uso de la API de Microsoft 365 Defender
@@ -314,19 +316,25 @@
                   href: api-articles.md
             - name: Esquema y API de Microsoft 365 Defender (versión preliminar)
               items:
-                - name: API de Microsoft 365 Defender (versión preliminar) admitidas
-                  href: api-supported.md
                 - name: Códigos de error comunes de API de REST
                   href: api-error-codes.md
+                - name: Streaming API
+                  items:
+                    - name: Microsoft 365 Streaming API
+                      href: ../defender-endpoint/raw-data-export.md
+                    - name: Transmitir eventos de búsqueda avanzada de amenazas al hub de Azure Events
+                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                    - name: Transmitir eventos de búsqueda avanzada de amenazas a su cuenta de almacenamiento
+                      href: ../defender-endpoint/raw-data-export-storage.md
                 - name: API de Búsqueda avanzada de amenazas
                   href: api-advanced-hunting.md
                 - name: API de incidentes
                   items:
-                    - name: Métodos y propiedades del incidente
+                    - name: Propiedades y métodos de incidentes
                       href: api-incident.md
                     - name: Lista de Incidentes
                       href: api-list-incidents.md
-                    - name: Incidente de actualización
+                    - name: Actualizar incidentes
                       href: api-update-incidents.md
     - name: "Microsoft Defender para Office\_365"
       href: ../office-365-security/index.yml

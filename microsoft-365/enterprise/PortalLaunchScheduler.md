@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo iniciar el portal con el programador de inicio del portal
-ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694358"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730263"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal con el programador de inicio SharePoint portal de inicio
 
@@ -120,7 +120,7 @@ Anteriormente, los inicios del portal solo se podían programar a través ShareP
 
 ### <a name="launch-portal-with-over-100k-users"></a>Iniciar portal con más de 100.000 usuarios
 
-Si tiene previsto migrar más de 100 TB, por favor envíe una solicitud de soporte técnico siguiendo los pasos que se enumeran a continuación. Asegúrese de incluir toda la información solicitada.
+Si tiene previsto iniciar un portal con más de 100.000 usuarios, envíe una solicitud de soporte técnico siguiendo los pasos que se indican a continuación. Asegúrese de incluir toda la información solicitada.
 
 Siga estos pasos:
 1. Vaya a https://admin.microsoft.com
@@ -137,7 +137,7 @@ Siga estos pasos:
 8. Una vez que se haya creado el vale, asegúrese de que proporciona al agente de soporte técnico la siguiente información:
 - Iniciar dirección URL del portal 
 - Número de usuarios esperados
-- Tiempo estimado de inicio 
+- Tiempo estimado de lanzamiento 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>Realizar cambios en un inicio de portal programado
 

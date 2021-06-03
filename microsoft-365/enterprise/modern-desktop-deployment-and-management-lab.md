@@ -1,5 +1,5 @@
 ---
-title: Kit de laboratorio de implementación de Windows y Office
+title: Windows 10 y Office 365 de laboratorio de implementación
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060878"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736353"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 y Office 365 de laboratorio de implementación
 
-El kit de laboratorio de implementación de Windows y Office está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Aplicaciones de Windows 10 Enterprise y Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot y mucho más.
+El kit Windows 10 y Office 365 de laboratorio de implementación de Office 365 está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise y Aplicaciones Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, Análisis de escritorio, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 
-Este kit es muy recomendable para las organizaciones que se preparan para las actualizaciones de Windows 8.1 a Windows 10. También se aplica si actualmente usa Windows 10, Aplicaciones de Microsoft 365 para empresas (anteriormente Office 365 ProPlus) u Office 2019. Como entorno aislado, el laboratorio resultante es ideal para explorar las actualizaciones de herramientas de implementación y probar la automatización relacionada con la implementación.
+Este kit es muy recomendable para las organizaciones que se Windows 8.1 actualizaciones a Windows 10. También se aplica si actualmente usa Windows 10, Aplicaciones Microsoft 365 para empresas (anteriormente Office 365 ProPlus) o Office 2019. Como entorno aislado, el laboratorio resultante es ideal para explorar las actualizaciones de herramientas de implementación y probar la automatización relacionada con la implementación.
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -34,9 +34,9 @@ Este kit es muy recomendable para las organizaciones que se preparan para las ac
 
 El kit le proporciona un entorno de laboratorio virtual aprovisionado automáticamente, incluidos los clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. El kit contiene las versiones de evaluación más recientes de los siguientes productos:
 
-  - ¡NUEVO! Windows 10 Enterprise, versión 20H2
+  - ¡NUEVO! Windows 10 Enterprise, versión 21H1
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager, versión 2010*
+  - ¡NUEVO! Microsoft Endpoint Configuration Manager, versión 2103*
   - Windows Assessment and Deployment Kit para Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -47,6 +47,7 @@ El kit le proporciona un entorno de laboratorio virtual aprovisionado automátic
 El laboratorio resultante está diseñado para conectarse a pruebas para: 
 
   - Microsoft 365 E5
+  - Aplicaciones de Microsoft 365 para empresas
   - Office 365 E5 con Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Prácticas paso a paso
@@ -61,45 +62,46 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 ### <a name="prepare-configuration"></a>Preparar configuración   
 
-- Optimizar la entrega de actualizaciones de Windows 10   
-- Mantenimiento de Windows 10 mediante la directiva de grupo
+- Optimizar Windows 10 entrega de actualizaciones   
+- Mantenimiento de Windows 10 con la directiva de grupo
 - Mantenimiento de Windows 10 con Microsoft Intune   
 - Mantenimiento de Windows 10 con Configuration Manager   
-- Mantenimiento de aplicaciones de Microsoft 365 para empresas con Configuration Manager   
-- Mantenimiento de aplicaciones de Microsoft 365 para empresas con Intune  
+- Mantenimiento de Aplicaciones Microsoft 365 para empresas con Configuration Manager   
+- Mantenimiento de Aplicaciones Microsoft 365 para empresas con Intune  
 - Seguridad y cumplimiento   
 
 ### <a name="prepare-applications"></a>Preparar aplicaciones    
 
-- Kit de herramientas de preparación para Office  
+- Preparación Toolkit para Office  
 - Empaquetado y conversión MSIX de aplicaciones win32   
 
 ### <a name="deploy-windows-10"></a>Implementar Windows 10   
 
 - Secuencias de tareas de implementación del sistema operativo en Configuration Manager
-- Secuencias de tareas de implementación del sistema operativo en Microsoft Deployment Toolkit (MDT)
-- Windows Autopilot
+- Secuencias de tareas de implementación del sistema operativo en microsoft deployment Toolkit (MDT)
+- Windows Autopilot
 - Implementar y administrar el nuevo Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Implementación de Aplicaciones de Microsoft 365 para empresas    
 
 - Implementación administrada en la nube  
 - Implementación administrada localmente    
-- Aplicaciones de Microsoft 365 para la implementación empresarial en dispositivos no unidos a AD 
-- Implementación administrada por empresas con Configuration Manager
-- Implementación administrada por empresas con Microsoft Intune  
+- Aplicaciones Microsoft 365 para empresas Implementación en dispositivos no unidos a AD 
+- Enterprise implementación administrada con Configuration Manager
+- Enterprise implementación administrada mediante Microsoft Intune  
 - Implementación y administración de LOB con Microsoft Intune
 - Implementar Microsoft Teams
 
-### <a name="deploy-windows-virtual-desktop"></a>Implementar Windows Virtual Desktop  
+### <a name="deploy-windows-virtual-desktop"></a>Implementar Windows Escritorio virtual  
 
 - Preparar, implementar, optimizar
  
-## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>Dónde encontrar el kit de laboratorio de implementación de Windows y Office
+## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>Dónde encontrar el kit de Windows 10 y Office 365 de implementación
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* La versión de línea base instalada 2002 se puede actualizar a la versión 2010 mediante y la actualización en la consola. Use una conexión a Internet de ancho de banda amplio para descargar este contenido y permitir de 30 a 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El kit expira el 22 de julio de 2021. Antes de la expiración, se publicará una nueva versión.
+> [!NOTE]
+> Use una conexión a Internet de banda ancha para descargar este contenido y permitir de 30 a 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El kit expira el 23 de agosto de 2021. Antes de la expiración, se publicará una nueva versión.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

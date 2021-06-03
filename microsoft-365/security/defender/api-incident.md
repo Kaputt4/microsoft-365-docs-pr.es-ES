@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 API de incidentes de Defender y el tipo de recurso incident
-description: Obtenga información sobre los métodos y propiedades del tipo de recurso Incident en Microsoft 365 Defender
+title: Microsoft 365 API de incidentes de Defender y el tipo de recurso incidentes
+description: Obtenga información sobre los métodos y propiedades del tipo de recurso Incidents en Microsoft 365 Defender
 keywords: incidente, incidentes, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5cc149668e49e21b38b5fb95ae3f40db6c296e1d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572590"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730935"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 API de incidentes de Defender y el tipo de recurso incident
+# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 API de incidentes de Defender y el tipo de recurso incidents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -46,11 +46,11 @@ Puede solicitar hasta 50 llamadas por minuto o 1500 llamadas por hora. Cada mét
 
 Un código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo `429` de ejecución asignado. El cuerpo de la respuesta incluirá la hora hasta que se restablezca la cuota alcanzada.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 La API de incidentes requiere distintos tipos de permisos para cada uno de sus métodos. Para obtener más información acerca de los permisos necesarios, consulte el artículo del método respectivo.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Método | Tipo de valor devuelto | Descripción
 -|-|-

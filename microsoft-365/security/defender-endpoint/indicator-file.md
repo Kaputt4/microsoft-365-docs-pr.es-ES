@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995062"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730539"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -47,19 +47,19 @@ Hay tres formas de crear indicadores para archivos:
 
 Es importante comprender los siguientes requisitos previos antes de crear indicadores para archivos:
 
-- Esta característica está disponible si su organización usa Antivirus de **Microsoft Defender (en** modo activo) y la protección basada en la **nube está habilitada.** Para obtener más información, vea [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Esta característica está disponible si su organización usa **Antivirus de Microsoft Defender (en** modo activo) y la **protección basada en la nube está habilitada.** Para obtener más información, vea [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - La versión del cliente Antimalware debe ser 4.18.1901.x o posterior. Ver [Versiones mensuales de la plataforma y el motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
 - Compatible con dispositivos con Windows 10, versión 1703 o posterior, Windows Server 2016 y 2019.
 
-- Para empezar a bloquear archivos, primero debe activar [la característica "bloquear o permitir" en](advanced-features.md) Configuración.
+- Para empezar a bloquear archivos, primero debe activar [la característica "bloquear](advanced-features.md) o permitir" en Configuración.
 
-Esta característica está diseñada para evitar que el malware sospechoso (o los archivos potencialmente malintencionados) se descarguen de la web. Actualmente es compatible con archivos ejecutables portátiles (PE), incluidos los archivos .exe y .dll. La cobertura se extenderá con el tiempo.
+Esta característica está diseñada para evitar que el malware sospechoso (o los archivos potencialmente malintencionados) se descarguen de la web. Actualmente es compatible con archivos ejecutables portátiles (PE), incluidos .exe archivos .dll archivos. La cobertura se extenderá con el tiempo.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Crear un indicador para archivos desde la página de configuración
 
-1. En el panel de navegación, seleccione **Configuración > indicadores**.
+1. En el panel de navegación, **seleccione Configuración > Indicadores**.
 
 2. Seleccione la **pestaña Hash de**   archivo.
 
@@ -89,21 +89,21 @@ Los archivos bloqueados automáticamente por un indicador no aparecerán en el C
 
 Los conflictos de administración de directivas de Cert y File IoC seguirán el siguiente orden:
 
-- Si el archivo no está permitido por el control Windows Defender aplicación y las directivas de modo de aplicación de AppLocker, **bloquee**
+- Si el archivo no está permitido por Windows Defender control de aplicaciones y AppLocker aplican directivas o directivas de modo, **bloquee**
 
-- Si el archivo está permitido por la exclusión antivirus de Defender, **permitir**
+- Si el archivo está permitido por la exclusión Antivirus de Microsoft Defender, **permitir**
 
 - De lo contrario, si un bloqueo o un archivo de advertencia bloquean o advierten el archivo IoC, **bloquee o advierte el archivo.**
 
-- De lo contrario, si el archivo está permitido por una directiva IOC de archivo de permitido, entonces **Permitir**
+- De lo contrario, si el archivo está permitido por una directiva de IoC de archivo de permitido, **permitir**
 
 - De lo contrario, si el archivo está bloqueado por reglas ASR, CFA, AV, SmartScreen y, a continuación, **Bloquear**  
 
-- Else **Allow** (pasa Windows Defender control de & directiva de AppLocker, no se aplican reglas de IoC)
+- Else **Allow** (pasa Windows Defender control de & directiva de AppLocker, no se aplica ninguna regla de IoC)
 
 Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro (es decir, más largo). Por ejemplo, una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo MD5 si ambos tipos de hash definen el mismo archivo.
 
-Tenga en cuenta que las características de aplicaciones vulnerables de bloqueo de la administración de amenazas y vulnerabilidades usan el archivo IoCs para la aplicación y seguirán el orden de control de conflictos anterior.
+Tenga en cuenta que Administración de amenazas y vulnerabilidades aplicaciones vulnerables de bloqueo de la aplicación usa el archivo IoCs para la aplicación y seguirá el orden de control de conflictos anterior.
 
 ### <a name="examples"></a>Ejemplos
 
@@ -113,9 +113,9 @@ Tenga en cuenta que las características de aplicaciones vulnerables de bloqueo 
 |Regla de reducción de superficie de ataque |Bloquear |Permitir |Permitir
 |Control de aplicaciones de Windows Defender |Permitir |Bloquear |Permitir |
 |Control de aplicaciones de Windows Defender |Bloquear |Permitir |Bloquear
-|Exclusión del antivirus de Microsoft Defender |Permitir |Bloquear |Permitir
+|Antivirus de Microsoft Defender exclusión |Permitir |Bloquear |Permitir
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

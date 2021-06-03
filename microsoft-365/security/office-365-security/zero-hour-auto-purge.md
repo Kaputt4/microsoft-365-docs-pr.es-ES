@@ -22,12 +22,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre cómo la purga automática de cero horas (ZAP) puede mover retroactivamente los mensajes entregados en un buzón de Exchange Online a la carpeta de correo no deseado o la cuarentena que se han detectado retroactivamente como correo no deseado o suplantación de identidad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee5a3fee8e189ff9cc08f187971e728670766d6d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9612f6267a0786b6f81f1c9a3f2ac270e344d0a8
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684200"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730683"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purga automática de hora cero (ZAP) en Exchange Online
 
@@ -72,6 +72,12 @@ Para **los mensajes** leídos o no leídos que se identifican como suplantación
 De forma predeterminada, ZAP para la suplantación de identidad (phishing) está habilitado en directivas contra correo no deseado y la acción predeterminada para el veredicto de filtrado de correo electrónico de suplantación de identidad **(phishing)** es el mensaje en **cuarentena,** lo que significa que ZAP para la suplantación de identidad pone en cuarentena el mensaje de forma predeterminada.
 
 Para obtener más información acerca de cómo configurar los veredictos de filtrado de correo no deseado, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+
+### <a name="zap-for-high-confidence-phishing"></a>ZAP para phishing de elevada confianza 
+
+Para **los mensajes leídos o no leídos** que se identifican como phishing de elevada confianza después de la entrega, ZAP pone en cuarentena el mensaje. Solo los administradores pueden ver y administrar mensajes de phishing de elevada confianza desde la cuarentena. 
+
+ZAP para phishing de elevada confianza está habilitado de forma predeterminada. Para obtener más información, [vea Secure by Default en Office 365](secure-by-default.md).
 
 ### <a name="zap-for-spam"></a>ZAP para correo no deseado
 
@@ -119,6 +125,6 @@ ZAP sigue funcionando siempre y cuando el mensaje no se haya eliminado o mientra
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>¿Cómo afecta ZAP a los buzones en espera?
 
-ZAP no pone en cuarentena los mensajes de los buzones de correo en espera. ZAP puede mover mensajes a la carpeta correo no deseado en función de la acción configurada para un veredicto de correo no deseado o suplantación de identidad (phishing) en directivas contra correo no deseado.
+ZAP pondrá en cuarentena los mensajes de los buzones en espera. ZAP puede mover mensajes a la carpeta correo no deseado en función de la acción configurada para un veredicto de correo no deseado o suplantación de identidad (phishing) en directivas contra correo no deseado.
 
 Para obtener más información acerca de las Exchange Online, vea [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).

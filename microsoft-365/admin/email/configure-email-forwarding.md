@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: El reenvío de correo electrónico le permite reenviar los mensajes de correo electrónico enviados a un buzón Microsoft 365 de usuario a otro buzón dentro o fuera de la organización.
-ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: dfea738f5d786b6e476dd02dc92fd0aef452d62f
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698921"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730143"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurar el reenvío de correo electrónico en Microsoft 365
 
@@ -57,7 +57,16 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
 
 4. En la página de reenvío de correo electrónico, seleccione **Reenviar todos los mensajes enviados a este buzón**, escriba la dirección de reenvío y elija si desea conservar una copia de los correos electrónicos reenviados. Si no ve esta opción, asegúrese de tener asignada una licencia asignada a la cuenta del usuario. Seleccione **Guardar cambios**.
 
-    **Para reenviar a varias direcciones de correo**, puede pedir al usuario que configure una regla en Outlook para que se reenvía a las direcciones. Para obtener más información, consulte [Usar reglas para reenviar mensajes automáticamente](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+    **Para reenviar a varias direcciones de correo**, puede pedir al usuario que configure una regla en Outlook para que se reenvía a las direcciones. 
+    
+    1.  Abrir **reglas de**  >    >   **inicio de** outlook > Seleccionar administrar reglas & **alertas**
+    1. Seleccione **Nueva regla** Seleccione Aplicar regla en el mensaje que recibo ubicado cerca de la parte inferior de la lista y, a continuación, haga clic en  >   **Siguiente**.
+    1. Haga **clic en Sí** cuando se le pida Esta regla se aplicará a todos los mensajes que reciba. 
+    1. En la lista siguiente, seleccione las acciones que **redirigen a personas** o grupos públicos y detenga el procesamiento de más **reglas**
+    1. Haga clic en la frase subrayada **personas o grupo público** en la parte inferior de la ventana.
+    1. Escriba la **dirección de correo electrónico a** la que se reenviará el correo en el campo Para y, a continuación, haga clic en **Aceptar**.
+    1. Seleccionar **finalizar**
+    
 
      O bien, en el Centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [agregue las direcciones](add-user-or-contact-to-distribution-list.md) y luego, configure el reenvío para que apunte a la DL con las instrucciones de este artículo.
 
