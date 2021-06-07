@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informes para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25c4f7d67fd4fa876544a17df0f4bc1abfd7b3e7
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: ff91cf4c99c9552ab5f5fecd7c6d2efee8d2d9a8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782938"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789261"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar el mensaje de informe o los complementos de suplantación de identidad de informes
 
@@ -53,7 +53,6 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Tanto el complemento Report Message como el complemento Report Phishing funcionan con la mayoría Microsoft 365 suscripciones y los siguientes productos:
-
   - Outlook en la Web
   - Outlook 2013 SP1 o posterior
   - Outlook 2016 para Mac
@@ -69,6 +68,9 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
 - Los administradores deben ser miembros del grupo de roles Administradores globales. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 - Para obtener más información sobre cómo notificar un mensaje mediante la característica Mensaje de informe, vea [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
+
+> [!IMPORTANT]
+> No recomendamos la experiencia de informes integrada en Outlook porque no puede usar la directiva [de envío de usuario](./user-submission.md). Se recomienda usar el complemento Report Message o el complemento Report Phishing en su lugar.
 
 ## <a name="get-the-report-message-add-in"></a>Obtener el complemento Mensaje de informe
 

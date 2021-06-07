@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 46ea74d11f9c54cd1d967058433a74ef4c1ead19
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 018bc3549cd7a25df5bdd86d98d351e19027c31f
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300239"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796035"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -32,7 +32,7 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 |Privilegio |Permiso  |
 |---------|---------|
-|Access    |  Lectura, Escritura, Ejecución       |
+|Acceso    |  Lectura, Escritura, Ejecución       |
 |Modo de acción    |    Auditoría, Permitir, Impedir     |
 |Compatibilidad con CSP   |   Sí      |
 |Compatibilidad con GPO    |   Sí      |
@@ -68,7 +68,7 @@ Para cada propiedad de dispositivo, consulta **la sección Propiedades del** dis
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId
+    - InstancePathId: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. El número al final (por **ejemplo,&0**) representa la ranura avalable y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - VID
@@ -170,7 +170,7 @@ Para ayudarle a familiarizarse con Microsoft Defender para Endpoint Removable St
     > [!NOTE]
     > Debe reemplazar por `&` en `&amp;` el valor.
 
-2. Crear directiva
+2. Creación de la directiva
     1. Directiva 1: Bloquear el acceso de escritura y ejecución, pero permitir los USB aprobados. Un ejemplo para este caso de uso es: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** en el ejemplo Escenario 1 Block Write and Execute Access, pero permite a los [USB aprobados .xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) archivo.
     
     2. Directiva 2: Auditar el acceso de escritura y ejecución a los USB permitidos. Un ejemplo para este caso de uso es: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** en el ejemplo [Escenario 1](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) Audit Write and Execute access to approved USBs.xmlfile.
@@ -185,7 +185,7 @@ Para ayudarle a familiarizarse con Microsoft Defender para Endpoint Removable St
     > [!NOTE]
     > Debe reemplazar por `&` en `&amp;` el valor.
 
-2. Crear directiva
+2. Creación de la directiva
     1. Directiva 1: Bloquear el acceso de escritura y ejecución a todos los USB no aprobados específicos, pero bloqueados. Un ejemplo de este caso de uso es: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** en el ejemplo [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Directiva 2: Auditar el acceso de escritura y ejecución a otros usuarios. Un ejemplo de este caso de uso es: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** en el ejemplo [Escenario 2](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) Audit write and Execute access to others.xmlfile.
@@ -194,9 +194,9 @@ Para ayudarle a familiarizarse con Microsoft Defender para Endpoint Removable St
 
 La característica Storage control de acceso extraíble te permite aplicar directivas a través de la directiva de grupo a usuarios o dispositivos, o a ambos.
 
-### <a name="licensing"></a>Licencias
+### <a name="licensing"></a>Concesión de licencias
 
-Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E5.
+Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3.
 
 ### <a name="deploying-policy-via-group-policy"></a>Implementación de directivas mediante directiva de grupo
 
@@ -224,7 +224,7 @@ Antes de empezar con Removable Storage Access Control, debe confirmar su [Micr
 
 La característica Storage control de acceso extraíble permite aplicar directivas a través de OMA-URI a usuarios o dispositivos, o a ambos.
 
-### <a name="licensing"></a>Licencias
+### <a name="licensing"></a>Concesión de licencias
 
 Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3.
 
@@ -243,7 +243,7 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
 1. Para cada grupo, cree una regla OMA-URI:
     - OMA-URI: 
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b **GroupGUID**%7d/GroupData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b **GroupGUID**%7d/GroupData
 
       Por ejemplo, para cualquier almacenamiento extraíble y un grupo **de CD/DVD** en el ejemplo, el vínculo debe ser:
 
@@ -257,7 +257,7 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
 
     - OMA-URI: 
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
       Por ejemplo, para la regla Bloquear escritura y ejecutar acceso, pero permitir **usbs aprobados** en el ejemplo, el vínculo debe ser: 
 

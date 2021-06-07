@@ -288,6 +288,9 @@
 ##### [Usar cmdlets PowerShell para administrar el Antivirus de Windows Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [Usar la Instrumental de administración de Windows (WMI) para administrar el Antivirus de Microsoft Defender](use-wmi-microsoft-defender-antivirus.md)
 ##### [Usar la herramienta mpcmdrun.exe para administrar el Antivirus de Windows Defender](command-line-arguments-microsoft-defender-antivirus.md)
+##### [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
+##### [Especificar si los usuarios pueden modificar localmente la configuración de directiva del Antivirus de Microsoft Defender](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [Especificar si los usuarios pueden ver o interactuar con la interfaz de usuario del Antivirus de Windows Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [Implementación e informe en el Antivirus de Windows Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Implementación y habilitación en el Antivirus de Windows Defender](deploy-microsoft-defender-antivirus.md)
@@ -480,10 +483,10 @@
 ####### [Obtener información de usuario relacionada con alertas](get-alert-related-user-info.md)
 
 ###### [Evaluaciones de vulnerabilidades y configuraciones seguras]()
-####### [Exportar métodos y propiedades de evaluación](get-assessmnt-1methods-properties.md)
-####### [Exportar evaluación de configuración segura](get-assessmnt-secure-cfg.md)
-####### [Exportar evaluación del inventario de software](get-assessmnt-software-inventory.md)
-####### [Exportar evaluación de vulnerabilidades de software](get-assessmnt-software-vulnerabilities.md)
+####### [Exportar métodos y propiedades de evaluación](get-assessment-methods-properties.md)
+####### [Exportar evaluación de configuración segura](get-assessment-secure-config.md)
+####### [Exportar evaluación del inventario de software](get-assessment-software-inventory.md)
+####### [Exportar evaluación de vulnerabilidades de software](get-assessment-software-vulnerabilities.md)
 
 ###### [Investigación automatizada]()
 ####### [Propiedades y métodos de investigación](investigation.md)

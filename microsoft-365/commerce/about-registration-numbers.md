@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Obtenga información sobre los números de registro y las notificaciones de revisión cuando compre productos o servicios de Microsoft.
 ms.date: 03/17/2021
-ms.openlocfilehash: 8ec97356f9859e928a8ee435f406c15f4f17a4c4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 93cba6c1eebf0b41a94d6a6e3aac83693218f407
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332227"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795975"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Acerca de los números de registro y las notificaciones de revisión
 
@@ -86,7 +86,7 @@ La tabla siguiente contiene ejemplos de los números de registro recopilados par
 | **Polonia**  | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) número de identificación fiscal<br>[PESEL:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) el número de identificación nacional usado en Polonia (Powszechny Polaco Elektroniczny System Ewidencji Ludności, Sistema electrónico universal para el registro de la población) |  |  |  |  |
 | **Rusia**  | [INN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) número de identificación fiscal (ruso "Individualiy Nomer Nalogoplatelshika") |  |  |  |  |
 | **Arabia Saudí** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) número de identificación fiscal |  |  |  |  |
-| **Sudáfrica** | TRN: número de registro de tráfico |  |  |  |  |
+| **Sudáfrica** | TRN: número de referencia fiscal |  |  |  |  |
 | **Sudán del Sur** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |  |  |  |  |
 | **Tayikistán**  | INN: número de identificación fiscal<br>EIN: número de identificación del empleador<br>KPP: es un código que refleja el motivo del registro de la organización. |  |  |  |  |
 | **Tailandia** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |  |  |  |  |

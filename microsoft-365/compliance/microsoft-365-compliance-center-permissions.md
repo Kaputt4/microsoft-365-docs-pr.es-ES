@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Obtenga información sobre la administración de permisos en el Microsoft 365 de cumplimiento.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 72575fce5f7d43354715c77016a8f444e539887f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7038863c0cbcaf99cf07072445a3b001e7b8ca0b
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772544"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782854"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Permisos en el centro de Microsoft 365 cumplimiento
 
@@ -26,7 +26,7 @@ Para ver la pestaña Permisos en el centro de cumplimiento de Microsoft 365, los
 
 ![Página permisos en el centro Microsoft 365 cumplimiento](../media/m365-compliance-center-permissions.png)
 
-Los permisos del centro Microsoft 365 cumplimiento se basan en el modelo de permisos de control de acceso basado en roles (RBAC). RBAC es el mismo modelo de permisos que usa la mayoría de los servicios de Microsoft 365, por lo que si está familiarizado con la estructura de permisos de estos servicios, la concesión de permisos en el centro de cumplimiento de Microsoft 365 será familiar. Es importante recordar que los permisos administrados en el centro de cumplimiento de Microsoft 365 no cubren la administración de todos los permisos necesarios en cada servicio individual. Todavía tendrá que administrar ciertos permisos específicos del servicio en el Centro de administración para el servicio específico. Por ejemplo, si necesita asignar permisos para las directivas de archivado, auditoría y retención, deberá administrar estos permisos en el Centro de administración de Exchange administración.
+Los permisos del centro Microsoft 365 cumplimiento se basan en el modelo de permisos de control de acceso basado en roles (RBAC). RBAC es el mismo modelo de permisos que usa la mayoría de los servicios de Microsoft 365, por lo que si está familiarizado con la estructura de permisos de estos servicios, la concesión de permisos en el centro de cumplimiento de Microsoft 365 será familiar. Es importante recordar que los permisos administrados en el centro de cumplimiento de Microsoft 365 no cubren la administración de todos los permisos necesarios en cada servicio individual. Todavía tendrá que administrar ciertos permisos específicos del servicio en el Centro de administración para el servicio específico. Por ejemplo, si necesita asignar permisos para las directivas de archivado, auditoría y retención de MRM, deberá administrar estos permisos en el Centro de administración de Exchange administración.
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relación de los miembros, los roles y los grupos de roles
 
@@ -46,7 +46,7 @@ La administración de permisos en el Microsoft 365 de cumplimiento solo proporci
 
 Los roles que aparecen en la sección **Roles de Azure AD** de la Microsoft 365 de permisos del centro de cumplimiento son Azure Active Directory  >   roles.  Estos roles están diseñados para alinearse con las funciones de trabajo en el grupo de TI de su organización, lo que facilita otorgar a una persona todos los permisos necesarios para realizar su trabajo. Puede ver los usuarios asignados actualmente a cada función seleccionando un rol de administrador y viendo los detalles del panel de funciones. Para administrar miembros de un rol de Azure AD, seleccione Administrar miembros en Azure AD. Esta opción le redirige al Portal de administración de Azure.
 
-|Función|Descripción|
+|Role|Descripción|
 |:---|:----------|
 |**Administrador global**|Acceso a todas las características administrativas en todos los servicios de Microsoft 365. Los administradores globales son los únicos que pueden asignar otros roles de administrador. Para más información, consulte [Administrador global / Administrador de empresa](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
 |**Administrador de datos de cumplimiento**|Realizar un seguimiento de los datos de su organización a través de Microsoft 365, asegurarse de que están protegidos y obtener información sobre los problemas para ayudar a reducir los riesgos. Para obtener más información, consulte [Administrador de datos de cumplimiento](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|

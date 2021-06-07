@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ec5d22caa52ffaa061637cb8c510a0efaf566b6a
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770983"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782902"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365
 
@@ -56,7 +56,7 @@ En la imagen y en la tabla siguiente se enumeran los cambios en la navegación e
 |Privacidad de datos||Vea [Microsoft 365 de cumplimiento](https://compliance.microsoft.com/homepage)||
 |Búsqueda|Búsqueda|||
 |Informes|Informe|||
-|Garantía de servicio|Configuraciones|||
+|Garantía de servicio|Configuración|||
 |
 
 El [Centro mejorado de seguridad de Microsoft 365](./overview-security-center.md) en <https://security.microsoft.com> combina funciones de seguridad de portales ya existentes de seguridad de Microsoft, incluidos el Centro de seguridad de Microsoft Defender y el Centro de seguridad y cumplimiento de Office 365. Este centro mejorado ayuda a los equipos de seguridad a proteger a su organización ante las amenazas de manera más eficaz y eficiente.
@@ -139,7 +139,7 @@ Se pueden crear [reglas de detección personalizadas](/windows/security/threat-p
 
 El Centro de actividades le muestra las investigaciones creadas por las capacidades de investigación y respuesta automatizadas. Esta capacidad de recuperación automática de Microsoft 365 Defender puede ayudar a los equipos de seguridad, ya que responde de manera automática a eventos específicos.
 
-[Más información sobre el Centro de actividades](m365d-action-center.md)
+[Más información sobre el Centro de acciones](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>Análisis de amenazas
 

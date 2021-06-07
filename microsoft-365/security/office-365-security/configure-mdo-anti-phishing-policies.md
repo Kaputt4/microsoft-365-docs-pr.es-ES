@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas avanzadas contra la suplantación de identidad que están disponibles en organizaciones con Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cbe517ef2a702e3e4fd7f6af4ee1d7ed1dd13d2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 9af3824b245cd976d1e859d6ebc4efcda47325e0
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789160"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793093"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -164,7 +164,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
        En el **control** desplegable Administrar dominios personalizados para suplantación, puede quitar entradas seleccionando una o más entradas de la lista. Puede buscar entradas mediante el cuadro ![ Buscar en el icono ](../../media/m365-cc-sc-create-icon.png)  buscar.
 
-       Después de seleccionar al menos una entrada, aparece el icono Eliminar icono Eliminar, que ![ puede usar para quitar las entradas ](../../media/m365-cc-sc-delete-icon.png)  seleccionadas.
+       Después de seleccionar al menos una entrada, aparece el icono Eliminar dominios Eliminar, que puede usar ![ para quitar las entradas ](../../media/m365-cc-sc-delete-icon.png)  seleccionadas.
 
    - **Agregar remitentes y** dominios de confianza: : especifique excepciones de protección de suplantación para la directiva haciendo clic en Administrar **(nn) remitentes** de confianza y dominios . En el control desplegable Administrar dominios **personalizados** para protección de suplantación que aparece, configure las siguientes opciones:
       - **Remitentes:** compruebe que la **pestaña** Remitente está seleccionada y haga clic ![ en Agregar remitentes icono ](../../media/m365-cc-sc-create-icon.png) . En el control desplegable Agregar **remitentes de** confianza que aparece, escriba una dirección de correo electrónico en el cuadro y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario. Para quitar una entrada existente, haga clic ![ en Eliminar icono para la ](../../media/m365-cc-sc-close-icon.png) entrada.
@@ -243,7 +243,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
    Cuando termine, haga clic en **Siguiente**.
 
-7. En la página **Revisar** que aparece, revise la configuración. Puede seleccionar **Editar** en cada sección para modificar la configuración dentro de la sección.
+7. En la página **Revisar** que aparece, revise la configuración. Puede seleccionar **Editar** en cada sección para modificar la configuración dentro de la sección. También puede hacer clic en **Atrás** o seleccionar la página específica del asistente.
 
    Cuando haya terminado, haga clic en **Enviar**.
 

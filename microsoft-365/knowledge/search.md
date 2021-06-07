@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Obtenga información sobre cómo puede buscar temas en Microsoft Viva.
-ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301721"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795999"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Usar Microsoft Search para buscar temas en Temas de Microsoft Viva
 
@@ -55,8 +55,5 @@ Para los usuarios que buscan información sobre cómo reservar un viaje de traba
 - Para los usuarios que buscan generalmente "viajes", cree un tema en "Viajes" que tenga la información que esperan ver. Considere la posibilidad de agregar un vínculo al sitio externo Concur en la descripción del tema. Si el vínculo es en su lugar a un sitio de reserva de viajes interno hospedado en el espacio empresarial Microsoft 365, puede agregarlo a los "Recursos anclados".
  
 ### <a name="search-results-priority"></a>Prioridad de resultados de búsqueda 
- 
-En la experiencia de búsqueda de usuarios, cuando un usuario busca un término como "viajes", los resultados de búsqueda se mostrarán en la siguiente prioridad en Microsoft Search
-1. Temas publicados o confirmados 
-2. Marcadores
-3. Temas sugeridos
+
+En la experiencia de búsqueda del usuario, cuando un usuario busca un término como "viajes", aparecerá un marcador delante de un tema, si hay un marcador disponible.

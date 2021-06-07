@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Obtenga información sobre cómo redirigir automáticamente a Office 365 centro de seguridad y cumplimiento al centro de Microsoft 365 cumplimiento.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb667e8f19b26cbe229b3aceffe194a86133c261
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772541"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782842"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Redirigir usuarios desde el centro Office 365 seguridad y cumplimiento al centro de Microsoft 365 cumplimiento
 
@@ -51,7 +51,7 @@ Para volver al Centro Office 365 seguridad y cumplimiento (protection.microsoft.
 1. Inicie sesión en el [centro Microsoft 365 de](https://compliance.microsoft.com) cumplimiento como administrador global o con cualquier cuenta con permisos de administrador de cumplimiento en Azure Active Directory.
 2. Vaya **a** Configuración  >  **redirección del centro de cumplimiento**.
 3. Alterna la opción Redirección automática a **Desactivado**.
-4. Seleccione **Deshabilitar** y compartir comentarios cuando se le pida.
+4. Seleccione **Desactivar y** compartir comentarios cuando se le pida.
 
 Una vez deshabilitado, los usuarios ya no se enrutarán a compliance.microsoft.com y se dirigirán al Centro de seguridad y cumplimiento de Office 365 (protection.microsoft.com). Los administradores globales o de cumplimiento pueden habilitar esta configuración de nuevo en cualquier momento.
 
