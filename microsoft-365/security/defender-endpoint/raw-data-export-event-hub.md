@@ -1,6 +1,6 @@
 ---
-title: Transmitir eventos de Microsoft Defender para endpoint a Azure Event Hubs
-description: Obtén información sobre cómo configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a tu centro de eventos.
+title: Transmitir eventos de Microsoft 365 Defender a Azure Event Hubs
+description: Obtén información sobre cómo configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a tu Centro de eventos.
 keywords: Exportación de datos sin procesar, API de streaming, API, Azure Event Hubs, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,82 +16,89 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.custom: api
-ms.openlocfilehash: 03b19f3af3c140729db2b5d51bb7ae11d906497b
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 82a2e5cc3555dd3f444e7a1fc1b7126603bea489
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771655"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778226"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a><span data-ttu-id="6eb20-104">Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a los centros de eventos de Azure</span><span class="sxs-lookup"><span data-stu-id="6eb20-104">Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Azure Event Hubs</span></span>
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a><span data-ttu-id="616f6-104">Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a los centros de eventos de Azure</span><span class="sxs-lookup"><span data-stu-id="616f6-104">Configure Microsoft 365 Defender to stream Advanced Hunting events to your Azure Event Hubs</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="6eb20-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="6eb20-105">**Applies to:**</span></span>
+<span data-ttu-id="616f6-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="616f6-105">**Applies to:**</span></span>
+- [<span data-ttu-id="616f6-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="616f6-106">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [<span data-ttu-id="6eb20-106">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="6eb20-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> <span data-ttu-id="6eb20-107">¿Desea experimentar Defender for Endpoint?</span><span class="sxs-lookup"><span data-stu-id="6eb20-107">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="6eb20-108">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="6eb20-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
-## <a name="before-you-begin"></a><span data-ttu-id="6eb20-109">Antes de empezar</span><span class="sxs-lookup"><span data-stu-id="6eb20-109">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="616f6-107">Antes de empezar:</span><span class="sxs-lookup"><span data-stu-id="616f6-107">Before you begin:</span></span>
 
-1. <span data-ttu-id="6eb20-110">Cree un [centro de eventos](/azure/event-hubs/) en el espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="6eb20-110">Create an [event hub](/azure/event-hubs/) in your tenant.</span></span>
+1. <span data-ttu-id="616f6-108">Cree un [centro de eventos](/azure/event-hubs/) en el espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="616f6-108">Create an [event hub](/azure/event-hubs/) in your tenant.</span></span>
 
-2. <span data-ttu-id="6eb20-111">Inicie sesión en el inquilino de [Azure,](https://ms.portal.azure.com/)vaya a \*\*Suscripciones > Su suscripción > proveedores de recursos > Registrarse en \*\*Microsoft.insights\*\*\*\*.</span><span class="sxs-lookup"><span data-stu-id="6eb20-111">Log in to your [Azure tenant](https://ms.portal.azure.com/), go to \*\*Subscriptions > Your subscription > Resource Providers > Register to \*\*Microsoft.insights\*\*\*\*.</span></span>
+2. <span data-ttu-id="616f6-109">Inicie sesión en el inquilino [de Azure,](https://ms.portal.azure.com/)vaya a Suscripciones > Su suscripción > proveedores de recursos > **Registrarse en Microsoft.Insights**.</span><span class="sxs-lookup"><span data-stu-id="616f6-109">Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.Insights**.</span></span>
 
-## <a name="enable-raw-data-streaming"></a><span data-ttu-id="6eb20-112">Habilitar la transmisión de datos sin procesar</span><span class="sxs-lookup"><span data-stu-id="6eb20-112">Enable raw data streaming</span></span>
+3. <span data-ttu-id="616f6-110">Cree un espacio de nombres de centro de eventos, vaya a **Event Hubs > Agregar** y seleccione el nivel de precios, las unidades de rendimiento y la opción Autoinflate adecuada para la carga esperada.</span><span class="sxs-lookup"><span data-stu-id="616f6-110">Create an Event Hub Namespace, go to **Event Hubs > Add** and select the pricing tier, throughput units and Auto-Inflate appropriate for expected load.</span></span> <span data-ttu-id="616f6-111">Para obtener más información, vea [Pricing - Event Hubs | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).</span><span class="sxs-lookup"><span data-stu-id="616f6-111">For more information, see [Pricing - Event Hubs | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).</span></span>  
 
-1. <span data-ttu-id="6eb20-113">Inicie sesión en el [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com) como administrador **global** _ o _\*_Administrador de seguridad_\*\*.</span><span class="sxs-lookup"><span data-stu-id="6eb20-113">Log in to the [Microsoft Defender Security Center](https://securitycenter.windows.com) as a ***Global Administrator** _ or _*_Security Administrator_\*\*.</span></span>
+4. <span data-ttu-id="616f6-112">Una vez creado el espacio de nombres del centro de eventos, deberá agregar la entidad de seguridad del servicio de registro de aplicaciones como Lector, el receptor de datos de Azure Event Hubs y el usuario que iniciará sesión en Microsoft 365 Defender como colaborador (esto también se puede hacer a nivel de grupo de recursos o suscripción).</span><span class="sxs-lookup"><span data-stu-id="616f6-112">Once the event hub namespace is created you will need to add the App Registration Service Principal as Reader, Azure Event Hubs Data Receiver and the user who will be logging into Microsoft 365 Defender as Contributor (this can also be done at Resource Group or Subscription level).</span></span> <span data-ttu-id="616f6-113">Vaya al **espacio de nombres Event hubs > Access control (IAM) > Add** and verify en Role **assignements**.</span><span class="sxs-lookup"><span data-stu-id="616f6-113">Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **Role assignements**.</span></span>
 
-2. <span data-ttu-id="6eb20-114">Vaya a la [página Configuración de exportación de](https://securitycenter.windows.com/interoperability/dataexport) datos en Centro de seguridad de Microsoft Defender.</span><span class="sxs-lookup"><span data-stu-id="6eb20-114">Go to the [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.</span></span>
+## <a name="enable-raw-data-streaming"></a><span data-ttu-id="616f6-114">Habilitar la transmisión de datos sin procesar:</span><span class="sxs-lookup"><span data-stu-id="616f6-114">Enable raw data streaming:</span></span>
 
-3. <span data-ttu-id="6eb20-115">Haga clic en **Agregar configuración de exportación de datos.**</span><span class="sxs-lookup"><span data-stu-id="6eb20-115">Click on **Add data export settings**.</span></span>
+1. <span data-ttu-id="616f6-115">Inicie sesión en el [centro de seguridad de Microsoft 365 Defender](https://security.microsoft.com) como administrador **global**\* o administrador de seguridad __\*_\*\*.</span><span class="sxs-lookup"><span data-stu-id="616f6-115">Log in to the [Microsoft 365 Defender security center](https://security.microsoft.com) as a ***Global Administrator** _ or _*_Security Administrator_\*\*.</span></span>
 
-4. <span data-ttu-id="6eb20-116">Elija un nombre para la nueva configuración.</span><span class="sxs-lookup"><span data-stu-id="6eb20-116">Choose a name for your new settings.</span></span>
+2. <span data-ttu-id="616f6-116">Vaya a la [página Configuración de exportación de datos](https://security.microsoft.com/settings/mtp_settings/raw_data_export).</span><span class="sxs-lookup"><span data-stu-id="616f6-116">Go to the [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export).</span></span>
 
-5. <span data-ttu-id="6eb20-117">Elija **Reenviar eventos a Azure Event Hubs**.</span><span class="sxs-lookup"><span data-stu-id="6eb20-117">Choose **Forward events to Azure Event Hubs**.</span></span>
+3. <span data-ttu-id="616f6-117">Haga clic en **Agregar**.</span><span class="sxs-lookup"><span data-stu-id="616f6-117">Click on **Add**.</span></span>
 
-6. <span data-ttu-id="6eb20-118">Escriba el **nombre de event hubs** y el **identificador de recurso de Event Hubs**.</span><span class="sxs-lookup"><span data-stu-id="6eb20-118">Type your **Event Hubs name** and your **Event Hubs resource ID**.</span></span>
+4. <span data-ttu-id="616f6-118">Elija un nombre para la nueva configuración.</span><span class="sxs-lookup"><span data-stu-id="616f6-118">Choose a name for your new settings.</span></span>
 
-   <span data-ttu-id="6eb20-119">Para obtener el identificador de recurso **de Event Hubs,** vaya a la página de espacio de nombres de Azure Event Hubs en la pestaña propiedades de [Azure](https://ms.portal.azure.com/) > para > el texto en Id. de **recurso:**</span><span class="sxs-lookup"><span data-stu-id="6eb20-119">In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab > copy the text under **Resource ID**:</span></span>
+5. <span data-ttu-id="616f6-119">Elija **Reenviar eventos a Azure Event Hubs**.</span><span class="sxs-lookup"><span data-stu-id="616f6-119">Choose **Forward events to Azure Event Hubs**.</span></span>
+
+6. <span data-ttu-id="616f6-120">Puede seleccionar si desea exportar los datos de eventos a un único centro de eventos o exportar cada tabla de eventos a un concentrador par diferente en el espacio de nombres del centro de eventos.</span><span class="sxs-lookup"><span data-stu-id="616f6-120">You can select if you want to export the event data to a single event hub, or to export each event table to a different even hub in your event hub namespace.</span></span> 
+
+7. <span data-ttu-id="616f6-121">Para exportar los datos del evento a un único centro de eventos, escriba el nombre del centro de eventos **y** el identificador de recurso del centro **de eventos**.</span><span class="sxs-lookup"><span data-stu-id="616f6-121">To export the event data to a single event hub, Enter your **Event Hub name** and your **Event Hub resource ID**.</span></span>
+
+   <span data-ttu-id="616f6-122">Para obtener el identificador de recurso de **Event Hubs,** vaya a la página de espacio de nombres de Azure Event Hubs en la pestaña Propiedades de [Azure](https://ms.portal.azure.com/)> el texto en  >   **Id. de recurso**:</span><span class="sxs-lookup"><span data-stu-id="616f6-122">To get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:</span></span>
 
    ![Imagen del recurso del centro de eventos Id1](images/event-hub-resource-id.png)
 
-7. <span data-ttu-id="6eb20-121">Elija los eventos que desea transmitir y haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="6eb20-121">Choose the events you want to stream and click **Save**.</span></span>
+8. <span data-ttu-id="616f6-124">Elija los eventos que desea transmitir y haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="616f6-124">Choose the events you want to stream and click **Save**.</span></span>
 
-## <a name="the-schema-of-the-events-in-azure-event-hubs"></a><span data-ttu-id="6eb20-122">Esquema de los eventos de Azure Event Hubs</span><span class="sxs-lookup"><span data-stu-id="6eb20-122">The schema of the events in Azure Event Hubs</span></span>
+## <a name="the-schema-of-the-events-in-azure-event-hubs"></a><span data-ttu-id="616f6-125">Esquema de los eventos de Azure Event Hubs:</span><span class="sxs-lookup"><span data-stu-id="616f6-125">The schema of the events in Azure Event Hubs:</span></span>
 
 ```
 {
     "records": [
                     {
-                        "time": "<The time WDATP received the event>"
+                        "time": "<The time Microsoft 365 Defender received the event>"
                         "tenantId": "<The Id of the tenant that the event belongs to>"
                         "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                        "properties": { <WDATP Advanced Hunting event as Json> }
+                        "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
                     }
                     ...
                 ]
 }
 ```
 
-- <span data-ttu-id="6eb20-123">Cada mensaje del centro de eventos de Azure Event Hubs contiene una lista de registros.</span><span class="sxs-lookup"><span data-stu-id="6eb20-123">Each event hub message in Azure Event Hubs contains list of records.</span></span>
+- <span data-ttu-id="616f6-126">Cada mensaje del centro de eventos de Azure Event Hubs contiene una lista de registros.</span><span class="sxs-lookup"><span data-stu-id="616f6-126">Each event hub message in Azure Event Hubs contains list of records.</span></span>
 
-- <span data-ttu-id="6eb20-124">Cada registro contiene el nombre del evento, la hora en que Microsoft Defender para Endpoint recibió el evento, el inquilino al que pertenece (solo recibirá eventos del inquilino) y el evento en formato JSON en una propiedad denominada "**properties**".</span><span class="sxs-lookup"><span data-stu-id="6eb20-124">Each record contains the event name, the time Microsoft Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".</span></span>
+- <span data-ttu-id="616f6-127">Cada registro contiene el nombre del evento, la hora en que Microsoft 365 Defender recibió el evento, el inquilino al que pertenece (solo recibirá eventos del inquilino) y el evento en formato JSON en una propiedad denominada "**properties**".</span><span class="sxs-lookup"><span data-stu-id="616f6-127">Each record contains the event name, the time Microsoft 365 Defender received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".</span></span>
 
-- <span data-ttu-id="6eb20-125">Para obtener más información sobre el esquema de eventos de Microsoft Defender para endpoint, vea [Advanced Hunting overview](advanced-hunting-overview.md).</span><span class="sxs-lookup"><span data-stu-id="6eb20-125">For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](advanced-hunting-overview.md).</span></span>
+- <span data-ttu-id="616f6-128">Para obtener más información sobre el esquema de Microsoft 365 Defender, vea [Advanced Hunting overview](../defender/advanced-hunting-overview.md).</span><span class="sxs-lookup"><span data-stu-id="616f6-128">For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).</span></span>
 
-- <span data-ttu-id="6eb20-126">En Búsqueda avanzada, la **tabla DeviceInfo** tiene una columna denominada **MachineGroup** que contiene el grupo del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="6eb20-126">In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device.</span></span> <span data-ttu-id="6eb20-127">Aquí todos los eventos también se decorarán con esta columna.</span><span class="sxs-lookup"><span data-stu-id="6eb20-127">Here every event will be decorated with this column as well.</span></span> <span data-ttu-id="6eb20-128">Consulta [Grupos de dispositivos](machine-groups.md) para obtener más información.</span><span class="sxs-lookup"><span data-stu-id="6eb20-128">See [Device Groups](machine-groups.md) for more information.</span></span>
+- <span data-ttu-id="616f6-129">En Búsqueda avanzada, la **tabla DeviceInfo** tiene una columna denominada **MachineGroup** que contiene el grupo del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="616f6-129">In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device.</span></span> <span data-ttu-id="616f6-130">Aquí todos los eventos también se decorarán con esta columna.</span><span class="sxs-lookup"><span data-stu-id="616f6-130">Here every event will be decorated with this column as well.</span></span> 
 
-## <a name="data-types-mapping"></a><span data-ttu-id="6eb20-129">Asignación de tipos de datos</span><span class="sxs-lookup"><span data-stu-id="6eb20-129">Data types mapping</span></span>
+9. <span data-ttu-id="616f6-131">Para exportar cada tabla de eventos a  un centro de eventos diferente, simplemente deje el nombre del centro de eventos vacío y Microsoft 365 Defender hará el resto.</span><span class="sxs-lookup"><span data-stu-id="616f6-131">To export each event table to a different event hub, simply leave the **Event hub name** empty, and Microsoft 365 Defender will do the rest.</span></span>
 
-<span data-ttu-id="6eb20-130">Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="6eb20-130">To get the data types for event properties do the following:</span></span>
 
-1. <span data-ttu-id="6eb20-131">Inicie sesión en [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com) y vaya a [la página Búsqueda avanzada](https://securitycenter.windows.com/hunting-package).</span><span class="sxs-lookup"><span data-stu-id="6eb20-131">Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).</span></span>
+## <a name="data-types-mapping"></a><span data-ttu-id="616f6-132">Asignación de tipos de datos:</span><span class="sxs-lookup"><span data-stu-id="616f6-132">Data types mapping:</span></span>
 
-2. <span data-ttu-id="6eb20-132">Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:</span><span class="sxs-lookup"><span data-stu-id="6eb20-132">Run the following query to get the data types mapping for each event:</span></span>
+<span data-ttu-id="616f6-133">Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="616f6-133">To get the data types for event properties do the following:</span></span>
+
+1. <span data-ttu-id="616f6-134">Inicie sesión en [el Microsoft 365 seguridad y](https://security.microsoft.com) vaya a la página Búsqueda [avanzada](https://security.microsoft.com/hunting-package).</span><span class="sxs-lookup"><span data-stu-id="616f6-134">Log in to [Microsoft 365 security center](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).</span></span>
+
+2. <span data-ttu-id="616f6-135">Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:</span><span class="sxs-lookup"><span data-stu-id="616f6-135">Run the following query to get the data types mapping for each event:</span></span>
  
    ```
    {EventType}
@@ -99,13 +106,13 @@ ms.locfileid: "52771655"
    | project ColumnName, ColumnType 
    ```
 
-- <span data-ttu-id="6eb20-133">Este es un ejemplo para el evento Device Info:</span><span class="sxs-lookup"><span data-stu-id="6eb20-133">Here is an example for Device Info event:</span></span> 
+- <span data-ttu-id="616f6-136">Este es un ejemplo para el evento Device Info:</span><span class="sxs-lookup"><span data-stu-id="616f6-136">Here is an example for Device Info event:</span></span> 
 
   ![Imagen del recurso del centro de eventos Id2](images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a><span data-ttu-id="6eb20-135">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="6eb20-135">Related topics</span></span>
-- [<span data-ttu-id="6eb20-136">Información general sobre la búsqueda avanzada</span><span class="sxs-lookup"><span data-stu-id="6eb20-136">Overview of Advanced Hunting</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="6eb20-137">API de streaming de Microsoft Defender para endpoints</span><span class="sxs-lookup"><span data-stu-id="6eb20-137">Microsoft Defender for Endpoint streaming API</span></span>](raw-data-export.md)
-- [<span data-ttu-id="6eb20-138">Transmitir eventos de Microsoft Defender para endpoint a su cuenta de Azure Storage</span><span class="sxs-lookup"><span data-stu-id="6eb20-138">Stream Microsoft Defender for Endpoint events to your Azure storage account</span></span>](raw-data-export-storage.md)
-- [<span data-ttu-id="6eb20-139">Documentación de Azure Event Hubs</span><span class="sxs-lookup"><span data-stu-id="6eb20-139">Azure Event Hubs documentation</span></span>](/azure/event-hubs/)
-- [<span data-ttu-id="6eb20-140">Solucionar problemas de conectividad: Azure Event Hubs</span><span class="sxs-lookup"><span data-stu-id="6eb20-140">Troubleshoot connectivity issues - Azure Event Hubs</span></span>](/azure/event-hubs/troubleshooting-guide)
+## <a name="related-topics"></a><span data-ttu-id="616f6-138">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="616f6-138">Related topics</span></span>
+- [<span data-ttu-id="616f6-139">Información general sobre la búsqueda avanzada</span><span class="sxs-lookup"><span data-stu-id="616f6-139">Overview of Advanced Hunting</span></span>](../defender/advanced-hunting-overview.md)
+- [<span data-ttu-id="616f6-140">Microsoft 365 Defender streaming API</span><span class="sxs-lookup"><span data-stu-id="616f6-140">Microsoft 365 Defender streaming API</span></span>](raw-data-export.md)
+- [<span data-ttu-id="616f6-141">Transmitir eventos Microsoft 365 Defender a su cuenta de Azure Storage</span><span class="sxs-lookup"><span data-stu-id="616f6-141">Stream Microsoft 365 Defender events to your Azure storage account</span></span>](raw-data-export-storage.md)
+- [<span data-ttu-id="616f6-142">Documentación de Azure Event Hubs</span><span class="sxs-lookup"><span data-stu-id="616f6-142">Azure Event Hubs documentation</span></span>](/azure/event-hubs/)
+- [<span data-ttu-id="616f6-143">Solucionar problemas de conectividad: Azure Event Hubs</span><span class="sxs-lookup"><span data-stu-id="616f6-143">Troubleshoot connectivity issues - Azure Event Hubs</span></span>](/azure/event-hubs/troubleshooting-guide)

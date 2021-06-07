@@ -322,7 +322,7 @@
                   items:
                     - name: Microsoft 365 Streaming API
                       href: ../defender-endpoint/raw-data-export.md
-                    - name: Transmitir eventos de búsqueda avanzada de amenazas al hub de Azure Events
+                    - name: Transmitir evens de búsqueda avanzada al centro de eventos de Azure
                       href: ../defender-endpoint/raw-data-export-event-hub.md
                     - name: Transmitir eventos de búsqueda avanzada de amenazas a su cuenta de almacenamiento
                       href: ../defender-endpoint/raw-data-export-storage.md
