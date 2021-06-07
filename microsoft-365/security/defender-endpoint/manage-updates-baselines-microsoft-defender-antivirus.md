@@ -16,589 +16,603 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/13/2021
-ms.openlocfilehash: 17a76b39b51293de82cf9b3e5f0e323ec3d28844
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/03/2021
+ms.openlocfilehash: e67f783552cca5cc36c1563f5e5557796028ea18
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538044"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772022"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a><span data-ttu-id="32e3c-104">Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base</span><span class="sxs-lookup"><span data-stu-id="32e3c-104">Manage Microsoft Defender Antivirus updates and apply baselines</span></span>
+# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a><span data-ttu-id="240d8-104">Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base</span><span class="sxs-lookup"><span data-stu-id="240d8-104">Manage Microsoft Defender Antivirus updates and apply baselines</span></span>
 
-<span data-ttu-id="32e3c-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="32e3c-105">**Applies to:**</span></span>
+<span data-ttu-id="240d8-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="240d8-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="32e3c-106">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="32e3c-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
-- <span data-ttu-id="32e3c-107">Antivirus de Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="32e3c-107">Microsoft Defender Antivirus</span></span>
+- [<span data-ttu-id="240d8-106">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="240d8-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- <span data-ttu-id="240d8-107">Antivirus de Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="240d8-107">Microsoft Defender Antivirus</span></span>
 
-<span data-ttu-id="32e3c-108">Hay dos tipos de actualizaciones relacionadas con mantener Antivirus de Microsoft Defender actualizado:</span><span class="sxs-lookup"><span data-stu-id="32e3c-108">There are two types of updates related to keeping Microsoft Defender Antivirus up to date:</span></span>
+<span data-ttu-id="240d8-108">Hay dos tipos de actualizaciones relacionadas con mantener Antivirus de Microsoft Defender actualizado:</span><span class="sxs-lookup"><span data-stu-id="240d8-108">There are two types of updates related to keeping Microsoft Defender Antivirus up to date:</span></span>
 
-- <span data-ttu-id="32e3c-109">Actualizaciones de inteligencia de seguridad</span><span class="sxs-lookup"><span data-stu-id="32e3c-109">Security intelligence updates</span></span>
-- <span data-ttu-id="32e3c-110">Actualizaciones de productos</span><span class="sxs-lookup"><span data-stu-id="32e3c-110">Product updates</span></span>
+- <span data-ttu-id="240d8-109">Actualizaciones de inteligencia de seguridad</span><span class="sxs-lookup"><span data-stu-id="240d8-109">Security intelligence updates</span></span>
+- <span data-ttu-id="240d8-110">Actualizaciones de productos</span><span class="sxs-lookup"><span data-stu-id="240d8-110">Product updates</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="32e3c-111">Mantener Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tienen la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de ataque y malware.</span><span class="sxs-lookup"><span data-stu-id="32e3c-111">Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.</span></span>
+> <span data-ttu-id="240d8-111">Mantener Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tienen la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de ataque y malware.</span><span class="sxs-lookup"><span data-stu-id="240d8-111">Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.</span></span>
 > 
-> <span data-ttu-id="32e3c-112">Asegúrese de actualizar la protección antivirus incluso si Antivirus de Microsoft Defender se está ejecutando en [modo pasivo](./microsoft-defender-antivirus-compatibility.md).</span><span class="sxs-lookup"><span data-stu-id="32e3c-112">Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](./microsoft-defender-antivirus-compatibility.md).</span></span>
+> <span data-ttu-id="240d8-112">Asegúrese de actualizar la protección antivirus incluso si Antivirus de Microsoft Defender se está ejecutando en [modo pasivo](./microsoft-defender-antivirus-compatibility.md).</span><span class="sxs-lookup"><span data-stu-id="240d8-112">Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](./microsoft-defender-antivirus-compatibility.md).</span></span>
 > 
-> <span data-ttu-id="32e3c-113">Para ver el motor, la plataforma y la fecha de firma más actuales, visite las actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y [otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span><span class="sxs-lookup"><span data-stu-id="32e3c-113">To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span></span>
+> <span data-ttu-id="240d8-113">Para ver el motor, la plataforma y la fecha de firma más actuales, visite las actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y [otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span><span class="sxs-lookup"><span data-stu-id="240d8-113">To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span></span>
 
-## <a name="security-intelligence-updates"></a><span data-ttu-id="32e3c-114">Actualizaciones de inteligencia de seguridad</span><span class="sxs-lookup"><span data-stu-id="32e3c-114">Security intelligence updates</span></span>
+## <a name="security-intelligence-updates"></a><span data-ttu-id="240d8-114">Actualizaciones de inteligencia de seguridad</span><span class="sxs-lookup"><span data-stu-id="240d8-114">Security intelligence updates</span></span>
 
-<span data-ttu-id="32e3c-115">Antivirus de Microsoft Defender la [protección entregada](cloud-protection-microsoft-defender-antivirus.md) en la nube (también denominada Servicio de protección avanzada de Microsoft o MAPS) y descarga periódicamente actualizaciones de inteligencia de seguridad para proporcionar protección.</span><span class="sxs-lookup"><span data-stu-id="32e3c-115">Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.</span></span>
+<span data-ttu-id="240d8-115">Antivirus de Microsoft Defender la [protección entregada](cloud-protection-microsoft-defender-antivirus.md) en la nube (también denominada Servicio de protección avanzada de Microsoft o MAPS) y descarga periódicamente actualizaciones de inteligencia de seguridad para proporcionar protección.</span><span class="sxs-lookup"><span data-stu-id="240d8-115">Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="32e3c-116">Las actualizaciones se lanzan con los números KB siguientes:</span><span class="sxs-lookup"><span data-stu-id="32e3c-116">Updates are released under the below KB numbers:</span></span>  
-> - <span data-ttu-id="32e3c-117">Antivirus de Microsoft Defender: KB2267602</span><span class="sxs-lookup"><span data-stu-id="32e3c-117">Microsoft Defender Antivirus: KB2267602</span></span>  
-> - <span data-ttu-id="32e3c-118">System Center Endpoint Protection: KB2461484</span><span class="sxs-lookup"><span data-stu-id="32e3c-118">System Center Endpoint Protection: KB2461484</span></span>
+> <span data-ttu-id="240d8-116">Las actualizaciones se lanzan con los números KB siguientes:</span><span class="sxs-lookup"><span data-stu-id="240d8-116">Updates are released under the below KB numbers:</span></span>  
+> - <span data-ttu-id="240d8-117">Antivirus de Microsoft Defender: KB2267602</span><span class="sxs-lookup"><span data-stu-id="240d8-117">Microsoft Defender Antivirus: KB2267602</span></span>  
+> - <span data-ttu-id="240d8-118">System Center Endpoint Protection: KB2461484</span><span class="sxs-lookup"><span data-stu-id="240d8-118">System Center Endpoint Protection: KB2461484</span></span>
 
-<span data-ttu-id="32e3c-119">La protección entregada en la nube siempre está activada y requiere una conexión activa a Internet para funcionar.</span><span class="sxs-lookup"><span data-stu-id="32e3c-119">Cloud-delivered protection is always on and requires an active connection to the Internet to function.</span></span> <span data-ttu-id="32e3c-120">Las actualizaciones de inteligencia de seguridad se producen en una cadencia programada (configurable mediante directiva).</span><span class="sxs-lookup"><span data-stu-id="32e3c-120">Security intelligence updates occur on a scheduled cadence (configurable via policy).</span></span> <span data-ttu-id="32e3c-121">Para obtener más información, vea [Use Microsoft cloud-provided protection in Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).</span><span class="sxs-lookup"><span data-stu-id="32e3c-121">For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).</span></span> 
+<span data-ttu-id="240d8-119">La protección entregada en la nube siempre está activada y requiere una conexión activa a Internet para funcionar.</span><span class="sxs-lookup"><span data-stu-id="240d8-119">Cloud-delivered protection is always on and requires an active connection to the Internet to function.</span></span> <span data-ttu-id="240d8-120">Las actualizaciones de inteligencia de seguridad se producen en una cadencia programada (configurable mediante directiva).</span><span class="sxs-lookup"><span data-stu-id="240d8-120">Security intelligence updates occur on a scheduled cadence (configurable via policy).</span></span> <span data-ttu-id="240d8-121">Para obtener más información, vea [Use Microsoft cloud-provided protection in Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).</span><span class="sxs-lookup"><span data-stu-id="240d8-121">For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).</span></span> 
 
-<span data-ttu-id="32e3c-122">Para obtener una lista de actualizaciones de inteligencia de seguridad recientes, vea Actualizaciones de inteligencia de seguridad [para Antivirus de Microsoft Defender y otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span><span class="sxs-lookup"><span data-stu-id="32e3c-122">For a list of recent security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span></span>
+<span data-ttu-id="240d8-122">Para obtener una lista de actualizaciones de inteligencia de seguridad recientes, vea Actualizaciones de inteligencia de seguridad [para Antivirus de Microsoft Defender y otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span><span class="sxs-lookup"><span data-stu-id="240d8-122">For a list of recent security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span></span>
 
-<span data-ttu-id="32e3c-123">Las actualizaciones del motor se incluyen con actualizaciones de inteligencia de seguridad y se lanzan en una cadencia mensual.</span><span class="sxs-lookup"><span data-stu-id="32e3c-123">Engine updates are included with security intelligence updates and are released on a monthly cadence.</span></span>
+<span data-ttu-id="240d8-123">Las actualizaciones del motor se incluyen con actualizaciones de inteligencia de seguridad y se lanzan en una cadencia mensual.</span><span class="sxs-lookup"><span data-stu-id="240d8-123">Engine updates are included with security intelligence updates and are released on a monthly cadence.</span></span>
 
-## <a name="product-updates"></a><span data-ttu-id="32e3c-124">Actualizaciones de productos</span><span class="sxs-lookup"><span data-stu-id="32e3c-124">Product updates</span></span>
+## <a name="product-updates"></a><span data-ttu-id="240d8-124">Actualizaciones de productos</span><span class="sxs-lookup"><span data-stu-id="240d8-124">Product updates</span></span>
 
-<span data-ttu-id="32e3c-125">Antivirus de Microsoft Defender requiere [actualizaciones mensuales (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (conocidas como actualizaciones de *plataforma)* y recibirá actualizaciones de características principales junto con Windows 10 versiones.</span><span class="sxs-lookup"><span data-stu-id="32e3c-125">Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as *platform updates*), and will receive major feature updates alongside Windows 10 releases.</span></span>
+<span data-ttu-id="240d8-125">Antivirus de Microsoft Defender requiere [actualizaciones mensuales (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (conocidas como actualizaciones de *plataforma)* y recibirá actualizaciones de características principales junto con Windows 10 versiones.</span><span class="sxs-lookup"><span data-stu-id="240d8-125">Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as *platform updates*), and will receive major feature updates alongside Windows 10 releases.</span></span>
 
-<span data-ttu-id="32e3c-126">Puede administrar la distribución de actualizaciones a través de uno de los siguientes métodos:</span><span class="sxs-lookup"><span data-stu-id="32e3c-126">You can manage the distribution of updates through one of the following methods:</span></span> 
+<span data-ttu-id="240d8-126">Puede administrar la distribución de actualizaciones a través de uno de los siguientes métodos:</span><span class="sxs-lookup"><span data-stu-id="240d8-126">You can manage the distribution of updates through one of the following methods:</span></span> 
 
-- [<span data-ttu-id="32e3c-127">Windows Servicio de actualización de servidores (WSUS)</span><span class="sxs-lookup"><span data-stu-id="32e3c-127">Windows Server Update Service (WSUS)</span></span>](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
-- [<span data-ttu-id="32e3c-128">Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="32e3c-128">Microsoft Endpoint Configuration Manager</span></span>](/configmgr/sum/understand/software-updates-introduction)
-- <span data-ttu-id="32e3c-129">El método habitual que usa para implementar Microsoft y Windows actualizaciones en los puntos de conexión de la red.</span><span class="sxs-lookup"><span data-stu-id="32e3c-129">The usual method you use to deploy Microsoft and Windows updates to endpoints in your network.</span></span>
+- [<span data-ttu-id="240d8-127">Windows Servicio de actualización de servidores (WSUS)</span><span class="sxs-lookup"><span data-stu-id="240d8-127">Windows Server Update Service (WSUS)</span></span>](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [<span data-ttu-id="240d8-128">Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="240d8-128">Microsoft Endpoint Configuration Manager</span></span>](/configmgr/sum/understand/software-updates-introduction)
+- <span data-ttu-id="240d8-129">El método habitual que usa para implementar Microsoft y Windows actualizaciones en los puntos de conexión de la red.</span><span class="sxs-lookup"><span data-stu-id="240d8-129">The usual method you use to deploy Microsoft and Windows updates to endpoints in your network.</span></span>
 
-<span data-ttu-id="32e3c-130">Para obtener más información, vea [Manage the sources for Antivirus de Microsoft Defender protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).</span><span class="sxs-lookup"><span data-stu-id="32e3c-130">For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).</span></span>
+<span data-ttu-id="240d8-130">Para obtener más información, vea [Manage the sources for Antivirus de Microsoft Defender protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).</span><span class="sxs-lookup"><span data-stu-id="240d8-130">For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="32e3c-131">Las actualizaciones mensuales se liberan en fases, lo que da como resultado varios paquetes visibles en [los Servicios de actualización de Windows Server](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).</span><span class="sxs-lookup"><span data-stu-id="32e3c-131">Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).</span></span>
+> <span data-ttu-id="240d8-131">Las actualizaciones mensuales se liberan en fases, lo que da como resultado varios paquetes visibles en [los Servicios de actualización de Windows Server](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).</span><span class="sxs-lookup"><span data-stu-id="240d8-131">Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).</span></span>
 
-## <a name="monthly-platform-and-engine-versions"></a><span data-ttu-id="32e3c-132">Versiones mensuales de plataforma y motor</span><span class="sxs-lookup"><span data-stu-id="32e3c-132">Monthly platform and engine versions</span></span>
+## <a name="monthly-platform-and-engine-versions"></a><span data-ttu-id="240d8-132">Versiones mensuales de plataforma y motor</span><span class="sxs-lookup"><span data-stu-id="240d8-132">Monthly platform and engine versions</span></span>
 
-<span data-ttu-id="32e3c-133">Para obtener información sobre cómo actualizar o instalar la actualización de la plataforma, vea [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).</span><span class="sxs-lookup"><span data-stu-id="32e3c-133">For information how to update or install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).</span></span>
+<span data-ttu-id="240d8-133">Para obtener información sobre cómo actualizar o instalar la actualización de la plataforma, vea [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).</span><span class="sxs-lookup"><span data-stu-id="240d8-133">For information how to update or install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).</span></span>
 
-<span data-ttu-id="32e3c-134">Todas nuestras actualizaciones contienen</span><span class="sxs-lookup"><span data-stu-id="32e3c-134">All our updates contain</span></span> 
-- <span data-ttu-id="32e3c-135">mejoras en el rendimiento;</span><span class="sxs-lookup"><span data-stu-id="32e3c-135">performance improvements;</span></span>
-- <span data-ttu-id="32e3c-136">mejoras en la capacidad de servicio; y</span><span class="sxs-lookup"><span data-stu-id="32e3c-136">serviceability improvements; and</span></span> 
-- <span data-ttu-id="32e3c-137">mejoras de integración (Cloud, Microsoft 365 Defender).</span><span class="sxs-lookup"><span data-stu-id="32e3c-137">integration improvements (Cloud, Microsoft 365 Defender).</span></span>
+<span data-ttu-id="240d8-134">Todas nuestras actualizaciones contienen</span><span class="sxs-lookup"><span data-stu-id="240d8-134">All our updates contain</span></span> 
+- <span data-ttu-id="240d8-135">mejoras en el rendimiento;</span><span class="sxs-lookup"><span data-stu-id="240d8-135">performance improvements;</span></span>
+- <span data-ttu-id="240d8-136">mejoras en la capacidad de servicio; y</span><span class="sxs-lookup"><span data-stu-id="240d8-136">serviceability improvements; and</span></span> 
+- <span data-ttu-id="240d8-137">mejoras de integración (Cloud, Microsoft 365 Defender).</span><span class="sxs-lookup"><span data-stu-id="240d8-137">integration improvements (Cloud, Microsoft 365 Defender).</span></span>
 <br/>
 <details>
-<summary> <span data-ttu-id="32e3c-138">Abril-2021 (Plataforma: 4.18.2104.14 | Motor: 1.1.18100.5)</span><span class="sxs-lookup"><span data-stu-id="32e3c-138">April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</span></span></summary>
+<summary> <span data-ttu-id="240d8-138">Abril-2021 (Plataforma: 4.18.2104.14 | Motor: 1.1.18100.5)</span><span class="sxs-lookup"><span data-stu-id="240d8-138">April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</span></span></summary>
 
-<span data-ttu-id="32e3c-139">&ensp;Versión de actualización de inteligencia de seguridad: **1.337.2.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-139">&ensp;Security intelligence update version: **1.337.2.0**</span></span>  
-<span data-ttu-id="32e3c-140">&ensp;Publicado: **1 de abril de 2021**</span><span class="sxs-lookup"><span data-stu-id="32e3c-140">&ensp;Released: **April 1, 2021**</span></span>  
-<span data-ttu-id="32e3c-141">&ensp;Plataforma: **4.18.2104.14**</span><span class="sxs-lookup"><span data-stu-id="32e3c-141">&ensp;Platform: **4.18.2104.14**</span></span>  
-<span data-ttu-id="32e3c-142">&ensp;Motor: **1.1.18100.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-142">&ensp;Engine: **1.1.18100.5**</span></span>  
-<span data-ttu-id="32e3c-143">&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**</span><span class="sxs-lookup"><span data-stu-id="32e3c-143">&ensp;Support phase: **Security and Critical Updates**</span></span>
+<span data-ttu-id="240d8-139">&ensp;Versión de actualización de inteligencia de seguridad: **1.337.2.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-139">&ensp;Security intelligence update version: **1.337.2.0**</span></span>  
+<span data-ttu-id="240d8-140">&ensp;Publicado: **1 de abril de 2021**</span><span class="sxs-lookup"><span data-stu-id="240d8-140">&ensp;Released: **April 1, 2021**</span></span>  
+<span data-ttu-id="240d8-141">&ensp;Plataforma: **4.18.2104.14**</span><span class="sxs-lookup"><span data-stu-id="240d8-141">&ensp;Platform: **4.18.2104.14**</span></span>  
+<span data-ttu-id="240d8-142">&ensp;Motor: **1.1.18100.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-142">&ensp;Engine: **1.1.18100.5**</span></span>  
+<span data-ttu-id="240d8-143">&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**</span><span class="sxs-lookup"><span data-stu-id="240d8-143">&ensp;Support phase: **Security and Critical Updates**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-144">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-144">What's new</span></span>
-- <span data-ttu-id="32e3c-145">Lógica de supervisión de comportamiento adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-145">Additional behavior monitoring logic</span></span>
-- <span data-ttu-id="32e3c-146">Detección de registrador de teclas de modo kernel mejorado</span><span class="sxs-lookup"><span data-stu-id="32e3c-146">Improved kernel mode keylogger detection</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-144">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-144">What's new</span></span>
+- <span data-ttu-id="240d8-145">Lógica de supervisión de comportamiento adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-145">Additional behavior monitoring logic</span></span>
+- <span data-ttu-id="240d8-146">Detección de registrador de teclas de modo kernel mejorado</span><span class="sxs-lookup"><span data-stu-id="240d8-146">Improved kernel mode keylogger detection</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-147">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-147">Known Issues</span></span>
-<span data-ttu-id="32e3c-148">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-148">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="240d8-147">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-147">Known Issues</span></span>
+<span data-ttu-id="240d8-148">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-148">No known issues</span></span>  
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="32e3c-149">Marzo-2021 (Plataforma: 4.18.2103.7 | Motor: 1.1.18000.5)</span><span class="sxs-lookup"><span data-stu-id="32e3c-149">March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</span></span></summary>
+<summary> <span data-ttu-id="240d8-149">Marzo-2021 (Plataforma: 4.18.2103.7 | Motor: 1.1.18000.5)</span><span class="sxs-lookup"><span data-stu-id="240d8-149">March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</span></span></summary>
 
-<span data-ttu-id="32e3c-150">&ensp;Versión de actualización de inteligencia de seguridad: **1.335.36.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-150">&ensp;Security intelligence update version: **1.335.36.0**</span></span>  
-<span data-ttu-id="32e3c-151">&ensp;Publicado: **1 de abril de 2021**</span><span class="sxs-lookup"><span data-stu-id="32e3c-151">&ensp;Released: **April 1, 2021**</span></span>  
-<span data-ttu-id="32e3c-152">&ensp;Plataforma: **4.18.2103.7**</span><span class="sxs-lookup"><span data-stu-id="32e3c-152">&ensp;Platform: **4.18.2103.7**</span></span>  
-<span data-ttu-id="32e3c-153">&ensp;Motor: **1.1.18000.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-153">&ensp;Engine: **1.1.18000.5**</span></span>  
-<span data-ttu-id="32e3c-154">&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**</span><span class="sxs-lookup"><span data-stu-id="32e3c-154">&ensp;Support phase: **Security and Critical Updates**</span></span>
+<span data-ttu-id="240d8-150">&ensp;Versión de actualización de inteligencia de seguridad: **1.335.36.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-150">&ensp;Security intelligence update version: **1.335.36.0**</span></span>  
+<span data-ttu-id="240d8-151">&ensp;Publicado: **1 de abril de 2021**</span><span class="sxs-lookup"><span data-stu-id="240d8-151">&ensp;Released: **April 1, 2021**</span></span>  
+<span data-ttu-id="240d8-152">&ensp;Plataforma: **4.18.2103.7**</span><span class="sxs-lookup"><span data-stu-id="240d8-152">&ensp;Platform: **4.18.2103.7**</span></span>  
+<span data-ttu-id="240d8-153">&ensp;Motor: **1.1.18000.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-153">&ensp;Engine: **1.1.18000.5**</span></span>  
+<span data-ttu-id="240d8-154">&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**</span><span class="sxs-lookup"><span data-stu-id="240d8-154">&ensp;Support phase: **Security and Critical Updates**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-155">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-155">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-155">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-155">What's new</span></span>
 
-- <span data-ttu-id="32e3c-156">Mejora del motor de supervisión del comportamiento</span><span class="sxs-lookup"><span data-stu-id="32e3c-156">Improvement to the Behavior Monitoring engine</span></span> 
-- <span data-ttu-id="32e3c-157">Mitigaciones de ataques de fuerza bruta de red expandida</span><span class="sxs-lookup"><span data-stu-id="32e3c-157">Expanded network brute-force-attack mitigations</span></span> 
-- <span data-ttu-id="32e3c-158">Generación de eventos de intento de manipulación con error adicional cuando [la protección contra manipulaciones](prevent-changes-to-security-settings-with-tamper-protection.md) está habilitada</span><span class="sxs-lookup"><span data-stu-id="32e3c-158">Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled</span></span>
+- <span data-ttu-id="240d8-156">Mejora del motor de supervisión del comportamiento</span><span class="sxs-lookup"><span data-stu-id="240d8-156">Improvement to the Behavior Monitoring engine</span></span> 
+- <span data-ttu-id="240d8-157">Mitigaciones de ataques de fuerza bruta de red expandida</span><span class="sxs-lookup"><span data-stu-id="240d8-157">Expanded network brute-force-attack mitigations</span></span> 
+- <span data-ttu-id="240d8-158">Generación de eventos de intento de manipulación con error adicional cuando [la protección contra manipulaciones](prevent-changes-to-security-settings-with-tamper-protection.md) está habilitada</span><span class="sxs-lookup"><span data-stu-id="240d8-158">Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-159">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-159">Known Issues</span></span>
-<span data-ttu-id="32e3c-160">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-160">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="240d8-159">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-159">Known Issues</span></span>
+<span data-ttu-id="240d8-160">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-160">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="32e3c-161">Febrero-2021 (Plataforma: 4.18.2102.3 | Motor: 1.1.17900.7)</span><span class="sxs-lookup"><span data-stu-id="32e3c-161">February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</span></span></summary>
+<summary> <span data-ttu-id="240d8-161">Febrero-2021 (Plataforma: 4.18.2102.3 | Motor: 1.1.17900.7)</span><span class="sxs-lookup"><span data-stu-id="240d8-161">February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</span></span></summary>
 
-<span data-ttu-id="32e3c-162">&ensp;Versión de actualización de inteligencia de seguridad: **1.333.7.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-162">&ensp;Security intelligence update version: **1.333.7.0**</span></span>  
-<span data-ttu-id="32e3c-163">&ensp;Publicado: **9 de marzo de 2021**</span><span class="sxs-lookup"><span data-stu-id="32e3c-163">&ensp;Released: **March 9, 2021**</span></span>  
-<span data-ttu-id="32e3c-164">&ensp;Plataforma: **4.18.2102.3**</span><span class="sxs-lookup"><span data-stu-id="32e3c-164">&ensp;Platform: **4.18.2102.3**</span></span>  
-<span data-ttu-id="32e3c-165">&ensp;Motor: **1.1.17900.7**</span><span class="sxs-lookup"><span data-stu-id="32e3c-165">&ensp;Engine: **1.1.17900.7**</span></span>  
-<span data-ttu-id="32e3c-166">&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**</span><span class="sxs-lookup"><span data-stu-id="32e3c-166">&ensp;Support phase: **Security and Critical Updates**</span></span>
+<span data-ttu-id="240d8-162">&ensp;Versión de actualización de inteligencia de seguridad: **1.333.7.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-162">&ensp;Security intelligence update version: **1.333.7.0**</span></span>  
+<span data-ttu-id="240d8-163">&ensp;Publicado: **9 de marzo de 2021**</span><span class="sxs-lookup"><span data-stu-id="240d8-163">&ensp;Released: **March 9, 2021**</span></span>  
+<span data-ttu-id="240d8-164">&ensp;Plataforma: **4.18.2102.3**</span><span class="sxs-lookup"><span data-stu-id="240d8-164">&ensp;Platform: **4.18.2102.3**</span></span>  
+<span data-ttu-id="240d8-165">&ensp;Motor: **1.1.17900.7**</span><span class="sxs-lookup"><span data-stu-id="240d8-165">&ensp;Engine: **1.1.17900.7**</span></span>  
+<span data-ttu-id="240d8-166">&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**</span><span class="sxs-lookup"><span data-stu-id="240d8-166">&ensp;Support phase: **Security and Critical Updates**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-167">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-167">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-167">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-167">What's new</span></span>
 
-- <span data-ttu-id="32e3c-168">Recuperación del servicio mejorada a través de [la protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md)</span><span class="sxs-lookup"><span data-stu-id="32e3c-168">Improved service recovery through [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)</span></span>
-- <span data-ttu-id="32e3c-169">Ampliar el ámbito de protección contra alteraciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-169">Extend tamper protection scope</span></span>
+- <span data-ttu-id="240d8-168">Recuperación del servicio mejorada a través de [la protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md)</span><span class="sxs-lookup"><span data-stu-id="240d8-168">Improved service recovery through [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)</span></span>
+- <span data-ttu-id="240d8-169">Ampliar el ámbito de protección contra alteraciones</span><span class="sxs-lookup"><span data-stu-id="240d8-169">Extend tamper protection scope</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-170">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-170">Known Issues</span></span>
-<span data-ttu-id="32e3c-171">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-171">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="240d8-170">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-170">Known Issues</span></span>
+<span data-ttu-id="240d8-171">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-171">No known issues</span></span>  
 <br/>
 </details>
 
-### <a name="previous-version-updates-technical-upgrade-support-only"></a><span data-ttu-id="32e3c-172">Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas</span><span class="sxs-lookup"><span data-stu-id="32e3c-172">Previous version updates: Technical upgrade support only</span></span>
+### <a name="previous-version-updates-technical-upgrade-support-only"></a><span data-ttu-id="240d8-172">Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas</span><span class="sxs-lookup"><span data-stu-id="240d8-172">Previous version updates: Technical upgrade support only</span></span>
 
-<span data-ttu-id="32e3c-173">Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico.</span><span class="sxs-lookup"><span data-stu-id="32e3c-173">After a new package version is released, support for the previous two versions is reduced to technical support only.</span></span> <span data-ttu-id="32e3c-174">Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.</span><span class="sxs-lookup"><span data-stu-id="32e3c-174">Versions older than that are listed in this section, and are provided for technical upgrade support only.</span></span> 
+<span data-ttu-id="240d8-173">Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico.</span><span class="sxs-lookup"><span data-stu-id="240d8-173">After a new package version is released, support for the previous two versions is reduced to technical support only.</span></span> <span data-ttu-id="240d8-174">Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.</span><span class="sxs-lookup"><span data-stu-id="240d8-174">Versions older than that are listed in this section, and are provided for technical upgrade support only.</span></span> 
 <br/><br/>
 <details>
-<summary> <span data-ttu-id="32e3c-175">Enero-2021 (Plataforma: 4.18.2101.9 | Motor: 1.1.17800.5)</span><span class="sxs-lookup"><span data-stu-id="32e3c-175">January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</span></span></summary>
+<summary> <span data-ttu-id="240d8-175">Enero-2021 (Plataforma: 4.18.2101.9 | Motor: 1.1.17800.5)</span><span class="sxs-lookup"><span data-stu-id="240d8-175">January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</span></span></summary>
 
-<span data-ttu-id="32e3c-176">&ensp;Versión de actualización de inteligencia de seguridad: **1.327.1854.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-176">&ensp;Security intelligence update version: **1.327.1854.0**</span></span>  
-<span data-ttu-id="32e3c-177">&ensp;Publicado: **2 de febrero de 2021**</span><span class="sxs-lookup"><span data-stu-id="32e3c-177">&ensp;Released: **February 2, 2021**</span></span>  
-<span data-ttu-id="32e3c-178">&ensp;Plataforma: **4.18.2101.9**</span><span class="sxs-lookup"><span data-stu-id="32e3c-178">&ensp;Platform: **4.18.2101.9**</span></span>  
-<span data-ttu-id="32e3c-179">&ensp;Motor: **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-179">&ensp;Engine: **1.1.17800.5**</span></span>  
-<span data-ttu-id="32e3c-180">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-180">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-176">&ensp;Versión de actualización de inteligencia de seguridad: **1.327.1854.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-176">&ensp;Security intelligence update version: **1.327.1854.0**</span></span>  
+<span data-ttu-id="240d8-177">&ensp;Publicado: **2 de febrero de 2021**</span><span class="sxs-lookup"><span data-stu-id="240d8-177">&ensp;Released: **February 2, 2021**</span></span>  
+<span data-ttu-id="240d8-178">&ensp;Plataforma: **4.18.2101.9**</span><span class="sxs-lookup"><span data-stu-id="240d8-178">&ensp;Platform: **4.18.2101.9**</span></span>  
+<span data-ttu-id="240d8-179">&ensp;Motor: **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-179">&ensp;Engine: **1.1.17800.5**</span></span>  
+<span data-ttu-id="240d8-180">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-180">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-181">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-181">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-181">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-181">What's new</span></span>
 
-- <span data-ttu-id="32e3c-182">Mejoras en la detección de vulnerabilidades de shellcode</span><span class="sxs-lookup"><span data-stu-id="32e3c-182">Shellcode exploit detection improvements</span></span>
-- <span data-ttu-id="32e3c-183">Mayor visibilidad para intentos de robo de credenciales</span><span class="sxs-lookup"><span data-stu-id="32e3c-183">Increased visibility for credential stealing attempts</span></span>
-- <span data-ttu-id="32e3c-184">Mejoras en las características de protección contra la Antivirus de Microsoft Defender servicios</span><span class="sxs-lookup"><span data-stu-id="32e3c-184">Improvements in antitampering features in Microsoft Defender Antivirus services</span></span>
-- <span data-ttu-id="32e3c-185">Compatibilidad mejorada con la emulación ARM x64</span><span class="sxs-lookup"><span data-stu-id="32e3c-185">Improved support for ARM x64 emulation</span></span>
-- <span data-ttu-id="32e3c-186">Corrección: EDR notificación de bloqueo permanece en el historial de amenazas después de que la protección en tiempo real realizara la detección inicial</span><span class="sxs-lookup"><span data-stu-id="32e3c-186">Fix: EDR Block notification remains in threat history after real-time protection performed initial detection</span></span>
+- <span data-ttu-id="240d8-182">Mejoras en la detección de vulnerabilidades de shellcode</span><span class="sxs-lookup"><span data-stu-id="240d8-182">Shellcode exploit detection improvements</span></span>
+- <span data-ttu-id="240d8-183">Mayor visibilidad para intentos de robo de credenciales</span><span class="sxs-lookup"><span data-stu-id="240d8-183">Increased visibility for credential stealing attempts</span></span>
+- <span data-ttu-id="240d8-184">Mejoras en las características de protección contra la Antivirus de Microsoft Defender servicios</span><span class="sxs-lookup"><span data-stu-id="240d8-184">Improvements in antitampering features in Microsoft Defender Antivirus services</span></span>
+- <span data-ttu-id="240d8-185">Compatibilidad mejorada con la emulación ARM x64</span><span class="sxs-lookup"><span data-stu-id="240d8-185">Improved support for ARM x64 emulation</span></span>
+- <span data-ttu-id="240d8-186">Corrección: EDR notificación de bloqueo permanece en el historial de amenazas después de que la protección en tiempo real realizara la detección inicial</span><span class="sxs-lookup"><span data-stu-id="240d8-186">Fix: EDR Block notification remains in threat history after real-time protection performed initial detection</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-187">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-187">Known Issues</span></span>
-<span data-ttu-id="32e3c-188">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-188">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="240d8-187">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-187">Known Issues</span></span>
+<span data-ttu-id="240d8-188">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-188">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="32e3c-189">Noviembre-2020 (Plataforma: 4.18.2011.6 | Motor: 1.1.17700.4)</span><span class="sxs-lookup"><span data-stu-id="32e3c-189">November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</span></span></summary>
+<summary> <span data-ttu-id="240d8-189">Noviembre-2020 (Plataforma: 4.18.2011.6 | Motor: 1.1.17700.4)</span><span class="sxs-lookup"><span data-stu-id="240d8-189">November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</span></span></summary>
 
-<span data-ttu-id="32e3c-190">&ensp;Versión de actualización de inteligencia de seguridad: **1.327.1854.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-190">&ensp;Security intelligence update version: **1.327.1854.0**</span></span>  
-<span data-ttu-id="32e3c-191">&ensp;Publicado: **03 de diciembre de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-191">&ensp;Released: **December 03, 2020**</span></span>  
-<span data-ttu-id="32e3c-192">&ensp;Plataforma: **4.18.2011.6**</span><span class="sxs-lookup"><span data-stu-id="32e3c-192">&ensp;Platform: **4.18.2011.6**</span></span>  
-<span data-ttu-id="32e3c-193">&ensp;Motor: **1.1.17700.4**</span><span class="sxs-lookup"><span data-stu-id="32e3c-193">&ensp;Engine: **1.1.17700.4**</span></span>  
-<span data-ttu-id="32e3c-194">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-194">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-190">&ensp;Versión de actualización de inteligencia de seguridad: **1.327.1854.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-190">&ensp;Security intelligence update version: **1.327.1854.0**</span></span>  
+<span data-ttu-id="240d8-191">&ensp;Publicado: **03 de diciembre de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-191">&ensp;Released: **December 03, 2020**</span></span>  
+<span data-ttu-id="240d8-192">&ensp;Plataforma: **4.18.2011.6**</span><span class="sxs-lookup"><span data-stu-id="240d8-192">&ensp;Platform: **4.18.2011.6**</span></span>  
+<span data-ttu-id="240d8-193">&ensp;Motor: **1.1.17700.4**</span><span class="sxs-lookup"><span data-stu-id="240d8-193">&ensp;Engine: **1.1.17700.4**</span></span>  
+<span data-ttu-id="240d8-194">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-194">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-195">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-195">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-195">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-195">What's new</span></span>
 
-- <span data-ttu-id="32e3c-196">Registro de compatibilidad con el estado de [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) mejorado</span><span class="sxs-lookup"><span data-stu-id="32e3c-196">Improved [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) status support logging</span></span>
+- <span data-ttu-id="240d8-196">Registro de compatibilidad con el estado de [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) mejorado</span><span class="sxs-lookup"><span data-stu-id="240d8-196">Improved [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) status support logging</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-197">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-197">Known Issues</span></span>
-<span data-ttu-id="32e3c-198">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-198">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="240d8-197">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-197">Known Issues</span></span>
+<span data-ttu-id="240d8-198">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-198">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="32e3c-199">Octubre-2020 (Plataforma: 4.18.2010.7 | Motor: 1.1.17600.5)</span><span class="sxs-lookup"><span data-stu-id="32e3c-199">October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</span></span></summary>
+<summary> <span data-ttu-id="240d8-199">Octubre-2020 (Plataforma: 4.18.2010.7 | Motor: 1.1.17600.5)</span><span class="sxs-lookup"><span data-stu-id="240d8-199">October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</span></span></summary>
 
-<span data-ttu-id="32e3c-200">&ensp;Versión de actualización de inteligencia de seguridad: **1.327.7.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-200">&ensp;Security intelligence update version: **1.327.7.0**</span></span>  
-<span data-ttu-id="32e3c-201">&ensp;Publicado: **29 de octubre de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-201">&ensp;Released: **October 29, 2020**</span></span>  
-<span data-ttu-id="32e3c-202">&ensp;Plataforma: **4.18.2010.7**</span><span class="sxs-lookup"><span data-stu-id="32e3c-202">&ensp;Platform: **4.18.2010.7**</span></span>  
-<span data-ttu-id="32e3c-203">&ensp;Motor: **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-203">&ensp;Engine: **1.1.17600.5**</span></span>  
-<span data-ttu-id="32e3c-204">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-204">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-200">&ensp;Versión de actualización de inteligencia de seguridad: **1.327.7.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-200">&ensp;Security intelligence update version: **1.327.7.0**</span></span>  
+<span data-ttu-id="240d8-201">&ensp;Publicado: **29 de octubre de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-201">&ensp;Released: **October 29, 2020**</span></span>  
+<span data-ttu-id="240d8-202">&ensp;Plataforma: **4.18.2010.7**</span><span class="sxs-lookup"><span data-stu-id="240d8-202">&ensp;Platform: **4.18.2010.7**</span></span>  
+<span data-ttu-id="240d8-203">&ensp;Motor: **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-203">&ensp;Engine: **1.1.17600.5**</span></span>  
+<span data-ttu-id="240d8-204">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-204">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-205">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-205">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-205">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-205">What's new</span></span>
 
-- <span data-ttu-id="32e3c-206">Nuevas descripciones para categorías de amenazas especiales</span><span class="sxs-lookup"><span data-stu-id="32e3c-206">New descriptions for special threat categories</span></span>
-- <span data-ttu-id="32e3c-207">Capacidades de emulación mejoradas</span><span class="sxs-lookup"><span data-stu-id="32e3c-207">Improved emulation capabilities</span></span>
-- <span data-ttu-id="32e3c-208">Capacidades mejoradas de permitir o bloquear direcciones host</span><span class="sxs-lookup"><span data-stu-id="32e3c-208">Improved host address allow/block capabilities</span></span>
-- <span data-ttu-id="32e3c-209">Nueva opción en CSP de Defender para omitir la combinación de exclusiones de usuarios locales</span><span class="sxs-lookup"><span data-stu-id="32e3c-209">New option in Defender CSP to Ignore merging of local user exclusions</span></span>
+- <span data-ttu-id="240d8-206">Nuevas descripciones para categorías de amenazas especiales</span><span class="sxs-lookup"><span data-stu-id="240d8-206">New descriptions for special threat categories</span></span>
+- <span data-ttu-id="240d8-207">Capacidades de emulación mejoradas</span><span class="sxs-lookup"><span data-stu-id="240d8-207">Improved emulation capabilities</span></span>
+- <span data-ttu-id="240d8-208">Capacidades mejoradas de permitir o bloquear direcciones host</span><span class="sxs-lookup"><span data-stu-id="240d8-208">Improved host address allow/block capabilities</span></span>
+- <span data-ttu-id="240d8-209">Nueva opción en CSP de Defender para omitir la combinación de exclusiones de usuarios locales</span><span class="sxs-lookup"><span data-stu-id="240d8-209">New option in Defender CSP to Ignore merging of local user exclusions</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-210">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-210">Known Issues</span></span>
+### <a name="known-issues"></a><span data-ttu-id="240d8-210">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-210">Known Issues</span></span>
 
-<span data-ttu-id="32e3c-211">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-211">No known issues</span></span>  
+<span data-ttu-id="240d8-211">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-211">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="32e3c-212">Septiembre-2020 (Plataforma: 4.18.2009.7 | Motor: 1.1.17500.4)</span><span class="sxs-lookup"><span data-stu-id="32e3c-212">September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</span></span></summary>
+<summary> <span data-ttu-id="240d8-212">Septiembre-2020 (Plataforma: 4.18.2009.7 | Motor: 1.1.17500.4)</span><span class="sxs-lookup"><span data-stu-id="240d8-212">September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</span></span></summary>
 
-<span data-ttu-id="32e3c-213">&ensp;Versión de actualización de inteligencia de seguridad: **1.325.10.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-213">&ensp;Security intelligence update version: **1.325.10.0**</span></span>  
-<span data-ttu-id="32e3c-214">&ensp;Publicado: **01 de octubre de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-214">&ensp;Released: **October 01, 2020**</span></span>  
-<span data-ttu-id="32e3c-215">&ensp;Plataforma: **4.18.2009.7**</span><span class="sxs-lookup"><span data-stu-id="32e3c-215">&ensp;Platform: **4.18.2009.7**</span></span>  
-<span data-ttu-id="32e3c-216">&ensp;Motor: **1.1.17500.4**</span><span class="sxs-lookup"><span data-stu-id="32e3c-216">&ensp;Engine: **1.1.17500.4**</span></span>  
-<span data-ttu-id="32e3c-217">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-217">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-213">&ensp;Versión de actualización de inteligencia de seguridad: **1.325.10.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-213">&ensp;Security intelligence update version: **1.325.10.0**</span></span>  
+<span data-ttu-id="240d8-214">&ensp;Publicado: **01 de octubre de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-214">&ensp;Released: **October 01, 2020**</span></span>  
+<span data-ttu-id="240d8-215">&ensp;Plataforma: **4.18.2009.7**</span><span class="sxs-lookup"><span data-stu-id="240d8-215">&ensp;Platform: **4.18.2009.7**</span></span>  
+<span data-ttu-id="240d8-216">&ensp;Motor: **1.1.17500.4**</span><span class="sxs-lookup"><span data-stu-id="240d8-216">&ensp;Engine: **1.1.17500.4**</span></span>  
+<span data-ttu-id="240d8-217">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-217">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-218">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-218">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-218">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-218">What's new</span></span>
 
-- <span data-ttu-id="32e3c-219">Los permisos de administrador son necesarios para restaurar archivos en cuarentena</span><span class="sxs-lookup"><span data-stu-id="32e3c-219">Admin permissions are required to restore files in quarantine</span></span>
-- <span data-ttu-id="32e3c-220">Ahora se admiten eventos con formato XML</span><span class="sxs-lookup"><span data-stu-id="32e3c-220">XML formatted events are now supported</span></span>
-- <span data-ttu-id="32e3c-221">Compatibilidad con CSP para omitir las fusiones de exclusión</span><span class="sxs-lookup"><span data-stu-id="32e3c-221">CSP support for ignoring exclusion merges</span></span>
-- <span data-ttu-id="32e3c-222">Nuevas interfaces de administración para:</span><span class="sxs-lookup"><span data-stu-id="32e3c-222">New management interfaces for:</span></span>
-   - <span data-ttu-id="32e3c-223">Inspección UDP</span><span class="sxs-lookup"><span data-stu-id="32e3c-223">UDP Inspection</span></span>
-   - <span data-ttu-id="32e3c-224">Protección de red en server 2019</span><span class="sxs-lookup"><span data-stu-id="32e3c-224">Network Protection on Server 2019</span></span>
-   - <span data-ttu-id="32e3c-225">Exclusiones de direcciones IP para protección de red</span><span class="sxs-lookup"><span data-stu-id="32e3c-225">IP Address exclusions for Network Protection</span></span>
-- <span data-ttu-id="32e3c-226">Visibilidad mejorada de las medidas del TPM</span><span class="sxs-lookup"><span data-stu-id="32e3c-226">Improved visibility into TPM measurements</span></span>
-- <span data-ttu-id="32e3c-227">Examen mejorado Office módulo VBA</span><span class="sxs-lookup"><span data-stu-id="32e3c-227">Improved Office VBA module scanning</span></span>
+- <span data-ttu-id="240d8-219">Los permisos de administrador son necesarios para restaurar archivos en cuarentena</span><span class="sxs-lookup"><span data-stu-id="240d8-219">Admin permissions are required to restore files in quarantine</span></span>
+- <span data-ttu-id="240d8-220">Ahora se admiten eventos con formato XML</span><span class="sxs-lookup"><span data-stu-id="240d8-220">XML formatted events are now supported</span></span>
+- <span data-ttu-id="240d8-221">Compatibilidad con CSP para omitir las fusiones de exclusión</span><span class="sxs-lookup"><span data-stu-id="240d8-221">CSP support for ignoring exclusion merges</span></span>
+- <span data-ttu-id="240d8-222">Nuevas interfaces de administración para:</span><span class="sxs-lookup"><span data-stu-id="240d8-222">New management interfaces for:</span></span>
+   - <span data-ttu-id="240d8-223">Inspección UDP</span><span class="sxs-lookup"><span data-stu-id="240d8-223">UDP Inspection</span></span>
+   - <span data-ttu-id="240d8-224">Protección de red en server 2019</span><span class="sxs-lookup"><span data-stu-id="240d8-224">Network Protection on Server 2019</span></span>
+   - <span data-ttu-id="240d8-225">Exclusiones de direcciones IP para protección de red</span><span class="sxs-lookup"><span data-stu-id="240d8-225">IP Address exclusions for Network Protection</span></span>
+- <span data-ttu-id="240d8-226">Visibilidad mejorada de las medidas del TPM</span><span class="sxs-lookup"><span data-stu-id="240d8-226">Improved visibility into TPM measurements</span></span>
+- <span data-ttu-id="240d8-227">Examen mejorado Office módulo VBA</span><span class="sxs-lookup"><span data-stu-id="240d8-227">Improved Office VBA module scanning</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-228">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-228">Known Issues</span></span>
+### <a name="known-issues"></a><span data-ttu-id="240d8-228">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-228">Known Issues</span></span>
 
-<span data-ttu-id="32e3c-229">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-229">No known issues</span></span>  
+<span data-ttu-id="240d8-229">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-229">No known issues</span></span>  
 <br/>
 </details>
 <details>
-<summary> <span data-ttu-id="32e3c-230">Agosto-2020 (Plataforma: 4.18.2008.9 | Motor: 1.1.17400.5)</span><span class="sxs-lookup"><span data-stu-id="32e3c-230">August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</span></span></summary>
+<summary> <span data-ttu-id="240d8-230">Agosto-2020 (Plataforma: 4.18.2008.9 | Motor: 1.1.17400.5)</span><span class="sxs-lookup"><span data-stu-id="240d8-230">August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</span></span></summary>
 
-<span data-ttu-id="32e3c-231">&ensp;Versión de actualización de inteligencia de seguridad: **1.323.9.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-231">&ensp;Security intelligence update version: **1.323.9.0**</span></span>  
-<span data-ttu-id="32e3c-232">&ensp;Publicado: **27 de agosto de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-232">&ensp;Released: **August 27, 2020**</span></span>  
-<span data-ttu-id="32e3c-233">&ensp;Plataforma: **4.18.2008.9**</span><span class="sxs-lookup"><span data-stu-id="32e3c-233">&ensp;Platform: **4.18.2008.9**</span></span>  
-<span data-ttu-id="32e3c-234">&ensp;Motor: **1.1.17400.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-234">&ensp;Engine: **1.1.17400.5**</span></span>  
-<span data-ttu-id="32e3c-235">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-235">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-231">&ensp;Versión de actualización de inteligencia de seguridad: **1.323.9.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-231">&ensp;Security intelligence update version: **1.323.9.0**</span></span>  
+<span data-ttu-id="240d8-232">&ensp;Publicado: **27 de agosto de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-232">&ensp;Released: **August 27, 2020**</span></span>  
+<span data-ttu-id="240d8-233">&ensp;Plataforma: **4.18.2008.9**</span><span class="sxs-lookup"><span data-stu-id="240d8-233">&ensp;Platform: **4.18.2008.9**</span></span>  
+<span data-ttu-id="240d8-234">&ensp;Motor: **1.1.17400.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-234">&ensp;Engine: **1.1.17400.5**</span></span>  
+<span data-ttu-id="240d8-235">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-235">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
 
-### <a name="whats-new"></a><span data-ttu-id="32e3c-236">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-236">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-236">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-236">What's new</span></span>
 
-- <span data-ttu-id="32e3c-237">Agregar más eventos de telemetría</span><span class="sxs-lookup"><span data-stu-id="32e3c-237">Add more telemetry events</span></span>
-- <span data-ttu-id="32e3c-238">Telemetría de eventos de examen mejorada</span><span class="sxs-lookup"><span data-stu-id="32e3c-238">Improved scan event telemetry</span></span>
-- <span data-ttu-id="32e3c-239">Supervisión de comportamiento mejorada para exámenes de memoria</span><span class="sxs-lookup"><span data-stu-id="32e3c-239">Improved behavior monitoring for memory scans</span></span>
-- <span data-ttu-id="32e3c-240">Análisis mejorado de secuencias de macros</span><span class="sxs-lookup"><span data-stu-id="32e3c-240">Improved macro streams scanning</span></span>
-- <span data-ttu-id="32e3c-241">Se `AMRunningMode` agregó Get-MpComputerStatus cmdlet de PowerShell</span><span class="sxs-lookup"><span data-stu-id="32e3c-241">Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet</span></span>
-- <span data-ttu-id="32e3c-242">[Se omite DisableAntiSpyware.](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)</span><span class="sxs-lookup"><span data-stu-id="32e3c-242">[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored.</span></span> <span data-ttu-id="32e3c-243">Antivirus de Microsoft Defender se desactiva automáticamente cuando detecta otro programa antivirus.</span><span class="sxs-lookup"><span data-stu-id="32e3c-243">Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.</span></span>
+- <span data-ttu-id="240d8-237">Agregar más eventos de telemetría</span><span class="sxs-lookup"><span data-stu-id="240d8-237">Add more telemetry events</span></span>
+- <span data-ttu-id="240d8-238">Telemetría de eventos de examen mejorada</span><span class="sxs-lookup"><span data-stu-id="240d8-238">Improved scan event telemetry</span></span>
+- <span data-ttu-id="240d8-239">Supervisión de comportamiento mejorada para exámenes de memoria</span><span class="sxs-lookup"><span data-stu-id="240d8-239">Improved behavior monitoring for memory scans</span></span>
+- <span data-ttu-id="240d8-240">Análisis mejorado de secuencias de macros</span><span class="sxs-lookup"><span data-stu-id="240d8-240">Improved macro streams scanning</span></span>
+- <span data-ttu-id="240d8-241">Se `AMRunningMode` agregó Get-MpComputerStatus cmdlet de PowerShell</span><span class="sxs-lookup"><span data-stu-id="240d8-241">Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet</span></span>
+- <span data-ttu-id="240d8-242">[Se omite DisableAntiSpyware.](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)</span><span class="sxs-lookup"><span data-stu-id="240d8-242">[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored.</span></span> <span data-ttu-id="240d8-243">Antivirus de Microsoft Defender se desactiva automáticamente cuando detecta otro programa antivirus.</span><span class="sxs-lookup"><span data-stu-id="240d8-243">Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.</span></span>
 
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-244">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-244">Known Issues</span></span>
-<span data-ttu-id="32e3c-245">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-245">No known issues</span></span>  
-<br/>
-</details>
-
-<details>
-<summary> <span data-ttu-id="32e3c-246">Julio-2020 (Plataforma: 4.18.2007.8 | Motor: 1.1.17300.4)</span><span class="sxs-lookup"><span data-stu-id="32e3c-246">July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)</span></span></summary>
-
-<span data-ttu-id="32e3c-247">&ensp;Versión de actualización de inteligencia de seguridad: **1.321.30.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-247">&ensp;Security intelligence update version: **1.321.30.0**</span></span>  
-<span data-ttu-id="32e3c-248">&ensp;Publicado: **28 de julio de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-248">&ensp;Released: **July 28, 2020**</span></span>  
-<span data-ttu-id="32e3c-249">&ensp;Plataforma: **4.18.2007.8**</span><span class="sxs-lookup"><span data-stu-id="32e3c-249">&ensp;Platform: **4.18.2007.8**</span></span>  
-<span data-ttu-id="32e3c-250">&ensp;Motor: **1.1.17300.4**</span><span class="sxs-lookup"><span data-stu-id="32e3c-250">&ensp;Engine: **1.1.17300.4**</span></span>  
-<span data-ttu-id="32e3c-251">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-251">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
-    
-### <a name="whats-new"></a><span data-ttu-id="32e3c-252">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-252">What's new</span></span>
-
-- <span data-ttu-id="32e3c-253">Telemetría mejorada para BITS</span><span class="sxs-lookup"><span data-stu-id="32e3c-253">Improved telemetry for BITS</span></span>
-- <span data-ttu-id="32e3c-254">Validación mejorada del certificado de firma de código Authenticode</span><span class="sxs-lookup"><span data-stu-id="32e3c-254">Improved Authenticode code signing certificate validation</span></span>
-
-### <a name="known-issues"></a><span data-ttu-id="32e3c-255">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-255">Known Issues</span></span>
-<span data-ttu-id="32e3c-256">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-256">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="240d8-244">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-244">Known Issues</span></span>
+<span data-ttu-id="240d8-245">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-245">No known issues</span></span>  
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="32e3c-257">Junio-2020 (Plataforma: 4.18.2006.10 | Motor: 1.1.17200.2)</span><span class="sxs-lookup"><span data-stu-id="32e3c-257">June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</span></span></summary>
+<summary> <span data-ttu-id="240d8-246">Julio-2020 (Plataforma: 4.18.2007.8 | Motor: 1.1.17300.4)</span><span class="sxs-lookup"><span data-stu-id="240d8-246">July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)</span></span></summary>
 
-<span data-ttu-id="32e3c-258">&ensp;Versión de actualización de inteligencia de seguridad: **1.319.20.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-258">&ensp;Security intelligence update version: **1.319.20.0**</span></span>  
-<span data-ttu-id="32e3c-259">&ensp;Publicado: **22 de junio de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-259">&ensp;Released: **June 22, 2020**</span></span>  
-<span data-ttu-id="32e3c-260">&ensp;Plataforma: **4.18.2006.10**</span><span class="sxs-lookup"><span data-stu-id="32e3c-260">&ensp;Platform: **4.18.2006.10**</span></span>  
-<span data-ttu-id="32e3c-261">&ensp;Motor: **1.1.17200.2**</span><span class="sxs-lookup"><span data-stu-id="32e3c-261">&ensp;Engine: **1.1.17200.2**</span></span>  
-<span data-ttu-id="32e3c-262">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-262">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-247">&ensp;Versión de actualización de inteligencia de seguridad: **1.321.30.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-247">&ensp;Security intelligence update version: **1.321.30.0**</span></span>  
+<span data-ttu-id="240d8-248">&ensp;Publicado: **28 de julio de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-248">&ensp;Released: **July 28, 2020**</span></span>  
+<span data-ttu-id="240d8-249">&ensp;Plataforma: **4.18.2007.8**</span><span class="sxs-lookup"><span data-stu-id="240d8-249">&ensp;Platform: **4.18.2007.8**</span></span>  
+<span data-ttu-id="240d8-250">&ensp;Motor: **1.1.17300.4**</span><span class="sxs-lookup"><span data-stu-id="240d8-250">&ensp;Engine: **1.1.17300.4**</span></span>  
+<span data-ttu-id="240d8-251">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-251">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-263">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-263">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-252">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-252">What's new</span></span>
 
-- <span data-ttu-id="32e3c-264">Posibilidad de especificar la [ubicación de los registros de soporte técnico](./collect-diagnostic-data.md)</span><span class="sxs-lookup"><span data-stu-id="32e3c-264">Possibility to specify the [location of the support logs](./collect-diagnostic-data.md)</span></span>
-- <span data-ttu-id="32e3c-265">Omitir el examen de captura agresivo en modo pasivo.</span><span class="sxs-lookup"><span data-stu-id="32e3c-265">Skipping aggressive catchup scan in Passive mode.</span></span>
-- <span data-ttu-id="32e3c-266">Permitir que Defender actualice con conexiones medidas</span><span class="sxs-lookup"><span data-stu-id="32e3c-266">Allow Defender to update on metered connections</span></span>
-- <span data-ttu-id="32e3c-267">Se ha corregido la optimización del rendimiento cuando se deshabilita el almacenamiento en caché</span><span class="sxs-lookup"><span data-stu-id="32e3c-267">Fixed performance tuning when caching is disabled</span></span> 
-- <span data-ttu-id="32e3c-268">Consulta fija del Registro</span><span class="sxs-lookup"><span data-stu-id="32e3c-268">Fixed registry query</span></span> 
-- <span data-ttu-id="32e3c-269">Aleatorización de tiempo de examen fijo en ADMX</span><span class="sxs-lookup"><span data-stu-id="32e3c-269">Fixed scantime randomization in ADMX</span></span>
+- <span data-ttu-id="240d8-253">Telemetría mejorada para BITS</span><span class="sxs-lookup"><span data-stu-id="240d8-253">Improved telemetry for BITS</span></span>
+- <span data-ttu-id="240d8-254">Validación mejorada del certificado de firma de código Authenticode</span><span class="sxs-lookup"><span data-stu-id="240d8-254">Improved Authenticode code signing certificate validation</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-270">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-270">Known Issues</span></span>
-<span data-ttu-id="32e3c-271">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-271">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="240d8-255">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-255">Known Issues</span></span>
+<span data-ttu-id="240d8-256">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-256">No known issues</span></span>  
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="32e3c-272">Mayo-2020 (Plataforma: 4.18.2005.4 | Motor: 1.1.17100.2)</span><span class="sxs-lookup"><span data-stu-id="32e3c-272">May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</span></span></summary>
+<summary> <span data-ttu-id="240d8-257">Junio-2020 (Plataforma: 4.18.2006.10 | Motor: 1.1.17200.2)</span><span class="sxs-lookup"><span data-stu-id="240d8-257">June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</span></span></summary>
 
-<span data-ttu-id="32e3c-273">&ensp;Versión de actualización de inteligencia de seguridad: **1.317.20.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-273">&ensp;Security intelligence update version: **1.317.20.0**</span></span>  
-<span data-ttu-id="32e3c-274">&ensp;Publicado: **26 de mayo de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-274">&ensp;Released: **May 26, 2020**</span></span>  
-<span data-ttu-id="32e3c-275">&ensp;Plataforma: **4.18.2005.4**</span><span class="sxs-lookup"><span data-stu-id="32e3c-275">&ensp;Platform: **4.18.2005.4**</span></span>  
-<span data-ttu-id="32e3c-276">&ensp;Motor: **1.1.17100.2**</span><span class="sxs-lookup"><span data-stu-id="32e3c-276">&ensp;Engine: **1.1.17100.2**</span></span>  
-<span data-ttu-id="32e3c-277">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-277">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-258">&ensp;Versión de actualización de inteligencia de seguridad: **1.319.20.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-258">&ensp;Security intelligence update version: **1.319.20.0**</span></span>  
+<span data-ttu-id="240d8-259">&ensp;Publicado: **22 de junio de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-259">&ensp;Released: **June 22, 2020**</span></span>  
+<span data-ttu-id="240d8-260">&ensp;Plataforma: **4.18.2006.10**</span><span class="sxs-lookup"><span data-stu-id="240d8-260">&ensp;Platform: **4.18.2006.10**</span></span>  
+<span data-ttu-id="240d8-261">&ensp;Motor: **1.1.17200.2**</span><span class="sxs-lookup"><span data-stu-id="240d8-261">&ensp;Engine: **1.1.17200.2**</span></span>  
+<span data-ttu-id="240d8-262">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-262">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-278">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-278">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-263">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-263">What's new</span></span>
 
-- <span data-ttu-id="32e3c-279">Registro mejorado para eventos de examen</span><span class="sxs-lookup"><span data-stu-id="32e3c-279">Improved logging for scan events</span></span>
-- <span data-ttu-id="32e3c-280">Se ha mejorado el control de bloqueos del modo de usuario.</span><span class="sxs-lookup"><span data-stu-id="32e3c-280">Improved user mode crash handling.</span></span>
-- <span data-ttu-id="32e3c-281">Se agregó el seguimiento de eventos para la protección contra manipulaciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-281">Added event tracing for Tamper protection</span></span>
-- <span data-ttu-id="32e3c-282">Envío de ejemplo de AMSI fijo</span><span class="sxs-lookup"><span data-stu-id="32e3c-282">Fixed AMSI Sample submission</span></span>
-- <span data-ttu-id="32e3c-283">Se ha corregido el bloqueo de la nube de AMSI</span><span class="sxs-lookup"><span data-stu-id="32e3c-283">Fixed AMSI Cloud blocking</span></span>
-- <span data-ttu-id="32e3c-284">Registro de instalación de actualización de seguridad fija</span><span class="sxs-lookup"><span data-stu-id="32e3c-284">Fixed Security update install log</span></span>
+- <span data-ttu-id="240d8-264">Posibilidad de especificar la [ubicación de los registros de soporte técnico](./collect-diagnostic-data.md)</span><span class="sxs-lookup"><span data-stu-id="240d8-264">Possibility to specify the [location of the support logs](./collect-diagnostic-data.md)</span></span>
+- <span data-ttu-id="240d8-265">Omitir el examen de captura agresivo en modo pasivo.</span><span class="sxs-lookup"><span data-stu-id="240d8-265">Skipping aggressive catchup scan in Passive mode.</span></span>
+- <span data-ttu-id="240d8-266">Permitir que Defender actualice con conexiones medidas</span><span class="sxs-lookup"><span data-stu-id="240d8-266">Allow Defender to update on metered connections</span></span>
+- <span data-ttu-id="240d8-267">Se ha corregido la optimización del rendimiento cuando se deshabilita el almacenamiento en caché</span><span class="sxs-lookup"><span data-stu-id="240d8-267">Fixed performance tuning when caching is disabled</span></span> 
+- <span data-ttu-id="240d8-268">Consulta fija del Registro</span><span class="sxs-lookup"><span data-stu-id="240d8-268">Fixed registry query</span></span> 
+- <span data-ttu-id="240d8-269">Aleatorización de tiempo de examen fijo en ADMX</span><span class="sxs-lookup"><span data-stu-id="240d8-269">Fixed scantime randomization in ADMX</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-285">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-285">Known Issues</span></span>
-<span data-ttu-id="32e3c-286">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-286">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="240d8-270">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-270">Known Issues</span></span>
+<span data-ttu-id="240d8-271">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-271">No known issues</span></span>  
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="32e3c-287">Abril-2020 (Plataforma: 4.18.2004.6 | Motor: 1.1.17000.2)</span><span class="sxs-lookup"><span data-stu-id="32e3c-287">April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)</span></span></summary>
+<summary> <span data-ttu-id="240d8-272">Mayo-2020 (Plataforma: 4.18.2005.4 | Motor: 1.1.17100.2)</span><span class="sxs-lookup"><span data-stu-id="240d8-272">May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</span></span></summary>
 
-<span data-ttu-id="32e3c-288">&ensp;Versión de actualización de inteligencia de seguridad: **1.315.12.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-288">&ensp;Security intelligence update version: **1.315.12.0**</span></span>  
-<span data-ttu-id="32e3c-289">&ensp;Publicado: **30 de abril de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-289">&ensp;Released: **April 30, 2020**</span></span>  
-<span data-ttu-id="32e3c-290">&ensp;Plataforma: **4.18.2004.6**</span><span class="sxs-lookup"><span data-stu-id="32e3c-290">&ensp;Platform: **4.18.2004.6**</span></span>  
-<span data-ttu-id="32e3c-291">&ensp;Motor: **1.1.17000.2**</span><span class="sxs-lookup"><span data-stu-id="32e3c-291">&ensp;Engine: **1.1.17000.2**</span></span>  
-<span data-ttu-id="32e3c-292">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-292">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-273">&ensp;Versión de actualización de inteligencia de seguridad: **1.317.20.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-273">&ensp;Security intelligence update version: **1.317.20.0**</span></span>  
+<span data-ttu-id="240d8-274">&ensp;Publicado: **26 de mayo de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-274">&ensp;Released: **May 26, 2020**</span></span>  
+<span data-ttu-id="240d8-275">&ensp;Plataforma: **4.18.2005.4**</span><span class="sxs-lookup"><span data-stu-id="240d8-275">&ensp;Platform: **4.18.2005.4**</span></span>  
+<span data-ttu-id="240d8-276">&ensp;Motor: **1.1.17100.2**</span><span class="sxs-lookup"><span data-stu-id="240d8-276">&ensp;Engine: **1.1.17100.2**</span></span>  
+<span data-ttu-id="240d8-277">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-277">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-293">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-293">What's new</span></span>
-- <span data-ttu-id="32e3c-294">Mejoras de WDfilter</span><span class="sxs-lookup"><span data-stu-id="32e3c-294">WDfilter improvements</span></span>
-- <span data-ttu-id="32e3c-295">Agregar más datos de eventos que se pueden usar para atacar eventos de detección de reducción de superficie</span><span class="sxs-lookup"><span data-stu-id="32e3c-295">Add more actionable event data to attack surface reduction detection events</span></span>
-- <span data-ttu-id="32e3c-296">Información de versión fija en datos de diagnóstico y WMI</span><span class="sxs-lookup"><span data-stu-id="32e3c-296">Fixed version information in diagnostic data and WMI</span></span>
-- <span data-ttu-id="32e3c-297">Se ha corregido una versión incorrecta de la plataforma en la interfaz de usuario después de la actualización de la plataforma</span><span class="sxs-lookup"><span data-stu-id="32e3c-297">Fixed incorrect platform version in UI after platform update</span></span>
-- <span data-ttu-id="32e3c-298">Intel de dirección URL dinámica para la protección contra amenazas sin archivos</span><span class="sxs-lookup"><span data-stu-id="32e3c-298">Dynamic URL intel for Fileless threat protection</span></span>
-- <span data-ttu-id="32e3c-299">Funcionalidad de examen UEFI</span><span class="sxs-lookup"><span data-stu-id="32e3c-299">UEFI scan capability</span></span>
-- <span data-ttu-id="32e3c-300">Extender el registro para actualizaciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-300">Extend logging for updates</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-278">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-278">What's new</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="32e3c-301">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-301">Known Issues</span></span>
-<span data-ttu-id="32e3c-302">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-302">No known issues</span></span>  
+- <span data-ttu-id="240d8-279">Registro mejorado para eventos de examen</span><span class="sxs-lookup"><span data-stu-id="240d8-279">Improved logging for scan events</span></span>
+- <span data-ttu-id="240d8-280">Se ha mejorado el control de bloqueos del modo de usuario.</span><span class="sxs-lookup"><span data-stu-id="240d8-280">Improved user mode crash handling.</span></span>
+- <span data-ttu-id="240d8-281">Se agregó el seguimiento de eventos para la protección contra manipulaciones</span><span class="sxs-lookup"><span data-stu-id="240d8-281">Added event tracing for Tamper protection</span></span>
+- <span data-ttu-id="240d8-282">Envío de ejemplo de AMSI fijo</span><span class="sxs-lookup"><span data-stu-id="240d8-282">Fixed AMSI Sample submission</span></span>
+- <span data-ttu-id="240d8-283">Se ha corregido el bloqueo de la nube de AMSI</span><span class="sxs-lookup"><span data-stu-id="240d8-283">Fixed AMSI Cloud blocking</span></span>
+- <span data-ttu-id="240d8-284">Registro de instalación de actualización de seguridad fija</span><span class="sxs-lookup"><span data-stu-id="240d8-284">Fixed Security update install log</span></span>
+
+### <a name="known-issues"></a><span data-ttu-id="240d8-285">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-285">Known Issues</span></span>
+<span data-ttu-id="240d8-286">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-286">No known issues</span></span>  
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="32e3c-303">Marzo-2020 (Plataforma: 4.18.2003.8 | Motor: 1.1.16900.2)</span><span class="sxs-lookup"><span data-stu-id="32e3c-303">March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)</span></span></summary>
+<summary> <span data-ttu-id="240d8-287">Abril-2020 (Plataforma: 4.18.2004.6 | Motor: 1.1.17000.2)</span><span class="sxs-lookup"><span data-stu-id="240d8-287">April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)</span></span></summary>
 
-<span data-ttu-id="32e3c-304">&ensp;Versión de actualización de inteligencia de seguridad: **1.313.8.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-304">&ensp;Security intelligence update version: **1.313.8.0**</span></span>  
-<span data-ttu-id="32e3c-305">&ensp;Publicado: **24 de marzo de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-305">&ensp;Released: **March 24, 2020**</span></span>  
-<span data-ttu-id="32e3c-306">&ensp;Plataforma: **4.18.2003.8**</span><span class="sxs-lookup"><span data-stu-id="32e3c-306">&ensp;Platform: **4.18.2003.8**</span></span>  
-<span data-ttu-id="32e3c-307">&ensp;Motor: **1.1.16900.4**</span><span class="sxs-lookup"><span data-stu-id="32e3c-307">&ensp;Engine: **1.1.16900.4**</span></span>  
-<span data-ttu-id="32e3c-308">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-308">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-288">&ensp;Versión de actualización de inteligencia de seguridad: **1.315.12.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-288">&ensp;Security intelligence update version: **1.315.12.0**</span></span>  
+<span data-ttu-id="240d8-289">&ensp;Publicado: **30 de abril de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-289">&ensp;Released: **April 30, 2020**</span></span>  
+<span data-ttu-id="240d8-290">&ensp;Plataforma: **4.18.2004.6**</span><span class="sxs-lookup"><span data-stu-id="240d8-290">&ensp;Platform: **4.18.2004.6**</span></span>  
+<span data-ttu-id="240d8-291">&ensp;Motor: **1.1.17000.2**</span><span class="sxs-lookup"><span data-stu-id="240d8-291">&ensp;Engine: **1.1.17000.2**</span></span>  
+<span data-ttu-id="240d8-292">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-292">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="32e3c-309">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-309">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-293">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-293">What's new</span></span>
+- <span data-ttu-id="240d8-294">Mejoras de WDfilter</span><span class="sxs-lookup"><span data-stu-id="240d8-294">WDfilter improvements</span></span>
+- <span data-ttu-id="240d8-295">Agregar más datos de eventos que se pueden usar para atacar eventos de detección de reducción de superficie</span><span class="sxs-lookup"><span data-stu-id="240d8-295">Add more actionable event data to attack surface reduction detection events</span></span>
+- <span data-ttu-id="240d8-296">Información de versión fija en datos de diagnóstico y WMI</span><span class="sxs-lookup"><span data-stu-id="240d8-296">Fixed version information in diagnostic data and WMI</span></span>
+- <span data-ttu-id="240d8-297">Se ha corregido una versión incorrecta de la plataforma en la interfaz de usuario después de la actualización de la plataforma</span><span class="sxs-lookup"><span data-stu-id="240d8-297">Fixed incorrect platform version in UI after platform update</span></span>
+- <span data-ttu-id="240d8-298">Intel de dirección URL dinámica para la protección contra amenazas sin archivos</span><span class="sxs-lookup"><span data-stu-id="240d8-298">Dynamic URL intel for Fileless threat protection</span></span>
+- <span data-ttu-id="240d8-299">Funcionalidad de examen UEFI</span><span class="sxs-lookup"><span data-stu-id="240d8-299">UEFI scan capability</span></span>
+- <span data-ttu-id="240d8-300">Extender el registro para actualizaciones</span><span class="sxs-lookup"><span data-stu-id="240d8-300">Extend logging for updates</span></span>
 
-- <span data-ttu-id="32e3c-310">Opción de limitación de CPU agregada a [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)</span><span class="sxs-lookup"><span data-stu-id="32e3c-310">CPU Throttling option added to [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)</span></span>
-- <span data-ttu-id="32e3c-311">Mejorar la funcionalidad de diagnóstico</span><span class="sxs-lookup"><span data-stu-id="32e3c-311">Improve diagnostic capability</span></span>
-- <span data-ttu-id="32e3c-312">reducir el tiempo de espera de inteligencia de seguridad (5 minutos)</span><span class="sxs-lookup"><span data-stu-id="32e3c-312">reduce Security intelligence timeout (5 min)</span></span>
-- <span data-ttu-id="32e3c-313">Ampliar la funcionalidad de registro interno del motor AMSI</span><span class="sxs-lookup"><span data-stu-id="32e3c-313">Extend AMSI engine internal log capability</span></span>
-- <span data-ttu-id="32e3c-314">Mejorar la notificación para el bloqueo de procesos</span><span class="sxs-lookup"><span data-stu-id="32e3c-314">Improve notification for process blocking</span></span>
+### <a name="known-issues"></a><span data-ttu-id="240d8-301">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-301">Known Issues</span></span>
+<span data-ttu-id="240d8-302">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-302">No known issues</span></span>  
+<br/>
+</details>
+
+<details>
+<summary> <span data-ttu-id="240d8-303">Marzo-2020 (Plataforma: 4.18.2003.8 | Motor: 1.1.16900.2)</span><span class="sxs-lookup"><span data-stu-id="240d8-303">March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)</span></span></summary>
+
+<span data-ttu-id="240d8-304">&ensp;Versión de actualización de inteligencia de seguridad: **1.313.8.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-304">&ensp;Security intelligence update version: **1.313.8.0**</span></span>  
+<span data-ttu-id="240d8-305">&ensp;Publicado: **24 de marzo de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-305">&ensp;Released: **March 24, 2020**</span></span>  
+<span data-ttu-id="240d8-306">&ensp;Plataforma: **4.18.2003.8**</span><span class="sxs-lookup"><span data-stu-id="240d8-306">&ensp;Platform: **4.18.2003.8**</span></span>  
+<span data-ttu-id="240d8-307">&ensp;Motor: **1.1.16900.4**</span><span class="sxs-lookup"><span data-stu-id="240d8-307">&ensp;Engine: **1.1.16900.4**</span></span>  
+<span data-ttu-id="240d8-308">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-308">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+    
+### <a name="whats-new"></a><span data-ttu-id="240d8-309">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-309">What's new</span></span>
+
+- <span data-ttu-id="240d8-310">Opción de limitación de CPU agregada a [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)</span><span class="sxs-lookup"><span data-stu-id="240d8-310">CPU Throttling option added to [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)</span></span>
+- <span data-ttu-id="240d8-311">Mejorar la funcionalidad de diagnóstico</span><span class="sxs-lookup"><span data-stu-id="240d8-311">Improve diagnostic capability</span></span>
+- <span data-ttu-id="240d8-312">reducir el tiempo de espera de inteligencia de seguridad (5 minutos)</span><span class="sxs-lookup"><span data-stu-id="240d8-312">reduce Security intelligence timeout (5 min)</span></span>
+- <span data-ttu-id="240d8-313">Ampliar la funcionalidad de registro interno del motor AMSI</span><span class="sxs-lookup"><span data-stu-id="240d8-313">Extend AMSI engine internal log capability</span></span>
+- <span data-ttu-id="240d8-314">Mejorar la notificación para el bloqueo de procesos</span><span class="sxs-lookup"><span data-stu-id="240d8-314">Improve notification for process blocking</span></span>
    
-### <a name="known-issues"></a><span data-ttu-id="32e3c-315">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-315">Known Issues</span></span>
-<span data-ttu-id="32e3c-316">[**Fijo**] Antivirus de Microsoft Defender está omitiendo archivos al ejecutar un examen.</span><span class="sxs-lookup"><span data-stu-id="32e3c-316">[**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.</span></span>
+### <a name="known-issues"></a><span data-ttu-id="240d8-315">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-315">Known Issues</span></span>
+<span data-ttu-id="240d8-316">[**Fijo**] Antivirus de Microsoft Defender está omitiendo archivos al ejecutar un examen.</span><span class="sxs-lookup"><span data-stu-id="240d8-316">[**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.</span></span>
 
 <br/>
 </details>
 
 <details>
 
-<summary> <span data-ttu-id="32e3c-317">Febrero-2020 (Plataforma: - | Motor: 1.1.16800.2)</span><span class="sxs-lookup"><span data-stu-id="32e3c-317">February-2020 (Platform: - | Engine: 1.1.16800.2)</span></span></summary>
+<summary> <span data-ttu-id="240d8-317">Febrero-2020 (Plataforma: - | Motor: 1.1.16800.2)</span><span class="sxs-lookup"><span data-stu-id="240d8-317">February-2020 (Platform: - | Engine: 1.1.16800.2)</span></span></summary>
   
 
-<span data-ttu-id="32e3c-318">&ensp;Versión de actualización de inteligencia de seguridad: **1.311.4.0** </span><span class="sxs-lookup"><span data-stu-id="32e3c-318">&ensp;Security intelligence update version: **1.311.4.0** </span></span>  
-<span data-ttu-id="32e3c-319">&ensp;Publicado: **25 de febrero de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-319">&ensp;Released: **February 25, 2020**</span></span>  
-<span data-ttu-id="32e3c-320">&ensp;Plataforma/cliente: **-**</span><span class="sxs-lookup"><span data-stu-id="32e3c-320">&ensp;Platform/Client: **-**</span></span>  
-<span data-ttu-id="32e3c-321">&ensp;Motor: **1.1.16800.2**</span><span class="sxs-lookup"><span data-stu-id="32e3c-321">&ensp;Engine: **1.1.16800.2**</span></span>  
-<span data-ttu-id="32e3c-322">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-322">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-318">&ensp;Versión de actualización de inteligencia de seguridad: **1.311.4.0** </span><span class="sxs-lookup"><span data-stu-id="240d8-318">&ensp;Security intelligence update version: **1.311.4.0** </span></span>  
+<span data-ttu-id="240d8-319">&ensp;Publicado: **25 de febrero de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-319">&ensp;Released: **February 25, 2020**</span></span>  
+<span data-ttu-id="240d8-320">&ensp;Plataforma/cliente: **-**</span><span class="sxs-lookup"><span data-stu-id="240d8-320">&ensp;Platform/Client: **-**</span></span>  
+<span data-ttu-id="240d8-321">&ensp;Motor: **1.1.16800.2**</span><span class="sxs-lookup"><span data-stu-id="240d8-321">&ensp;Engine: **1.1.16800.2**</span></span>  
+<span data-ttu-id="240d8-322">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-322">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
      
-### <a name="whats-new"></a><span data-ttu-id="32e3c-323">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-323">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-323">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-323">What's new</span></span>
 
   
-### <a name="known-issues"></a><span data-ttu-id="32e3c-324">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-324">Known Issues</span></span>
-<span data-ttu-id="32e3c-325">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-325">No known issues</span></span>
+### <a name="known-issues"></a><span data-ttu-id="240d8-324">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-324">Known Issues</span></span>
+<span data-ttu-id="240d8-325">Sin problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-325">No known issues</span></span>
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="32e3c-326">Enero-2020 (Plataforma: 4.18.2001.10 | Motor: 1.1.16700.2)</span><span class="sxs-lookup"><span data-stu-id="32e3c-326">January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</span></span></summary>
+<summary> <span data-ttu-id="240d8-326">Enero-2020 (Plataforma: 4.18.2001.10 | Motor: 1.1.16700.2)</span><span class="sxs-lookup"><span data-stu-id="240d8-326">January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</span></span></summary>
   
 
-<span data-ttu-id="32e3c-327">Versión de actualización de inteligencia de seguridad: **1.309.32.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-327">Security intelligence update version: **1.309.32.0**</span></span>  
-<span data-ttu-id="32e3c-328">Publicado: **30 de enero de 2020**</span><span class="sxs-lookup"><span data-stu-id="32e3c-328">Released: **January 30, 2020**</span></span>  
-<span data-ttu-id="32e3c-329">Plataforma/cliente: **4.18.2001.10**</span><span class="sxs-lookup"><span data-stu-id="32e3c-329">Platform/Client: **4.18.2001.10**</span></span>  
-<span data-ttu-id="32e3c-330">Motor: **1.1.16700.2**</span><span class="sxs-lookup"><span data-stu-id="32e3c-330">Engine: **1.1.16700.2**</span></span>  
-<span data-ttu-id="32e3c-331">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="32e3c-331">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="240d8-327">Versión de actualización de inteligencia de seguridad: **1.309.32.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-327">Security intelligence update version: **1.309.32.0**</span></span>  
+<span data-ttu-id="240d8-328">Publicado: **30 de enero de 2020**</span><span class="sxs-lookup"><span data-stu-id="240d8-328">Released: **January 30, 2020**</span></span>  
+<span data-ttu-id="240d8-329">Plataforma/cliente: **4.18.2001.10**</span><span class="sxs-lookup"><span data-stu-id="240d8-329">Platform/Client: **4.18.2001.10**</span></span>  
+<span data-ttu-id="240d8-330">Motor: **1.1.16700.2**</span><span class="sxs-lookup"><span data-stu-id="240d8-330">Engine: **1.1.16700.2**</span></span>  
+<span data-ttu-id="240d8-331">&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**</span><span class="sxs-lookup"><span data-stu-id="240d8-331">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
      
-### <a name="whats-new"></a><span data-ttu-id="32e3c-332">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-332">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-332">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-332">What's new</span></span>
 
-- <span data-ttu-id="32e3c-333">BSOD fijo en WS2016 con Exchange</span><span class="sxs-lookup"><span data-stu-id="32e3c-333">Fixed BSOD on WS2016 with Exchange</span></span>
-- <span data-ttu-id="32e3c-334">Actualizaciones de plataforma de soporte técnico cuando TMP se redirige a la ruta de red</span><span class="sxs-lookup"><span data-stu-id="32e3c-334">Support platform updates when TMP is redirected to network path</span></span>
-- <span data-ttu-id="32e3c-335">Las versiones de plataforma y motor se agregan a [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span><span class="sxs-lookup"><span data-stu-id="32e3c-335">Platform and engine versions are added to [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span></span> <!-- The preceding URL must include "/en-us" -->
-- <span data-ttu-id="32e3c-336">extender la actualización de firma de emergencia [al modo pasivo](./microsoft-defender-antivirus-compatibility.md)</span><span class="sxs-lookup"><span data-stu-id="32e3c-336">extend Emergency signature update to [passive mode](./microsoft-defender-antivirus-compatibility.md)</span></span>
-- <span data-ttu-id="32e3c-337">Corrección 4.18.1911.3 hang</span><span class="sxs-lookup"><span data-stu-id="32e3c-337">Fix 4.18.1911.3 hang</span></span>
+- <span data-ttu-id="240d8-333">BSOD fijo en WS2016 con Exchange</span><span class="sxs-lookup"><span data-stu-id="240d8-333">Fixed BSOD on WS2016 with Exchange</span></span>
+- <span data-ttu-id="240d8-334">Actualizaciones de plataforma de soporte técnico cuando TMP se redirige a la ruta de red</span><span class="sxs-lookup"><span data-stu-id="240d8-334">Support platform updates when TMP is redirected to network path</span></span>
+- <span data-ttu-id="240d8-335">Las versiones de plataforma y motor se agregan a [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span><span class="sxs-lookup"><span data-stu-id="240d8-335">Platform and engine versions are added to [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span></span> <!-- The preceding URL must include "/en-us" -->
+- <span data-ttu-id="240d8-336">extender la actualización de firma de emergencia [al modo pasivo](./microsoft-defender-antivirus-compatibility.md)</span><span class="sxs-lookup"><span data-stu-id="240d8-336">extend Emergency signature update to [passive mode](./microsoft-defender-antivirus-compatibility.md)</span></span>
+- <span data-ttu-id="240d8-337">Corrección 4.18.1911.3 hang</span><span class="sxs-lookup"><span data-stu-id="240d8-337">Fix 4.18.1911.3 hang</span></span>
    
-### <a name="known-issues"></a><span data-ttu-id="32e3c-338">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-338">Known Issues</span></span>
+### <a name="known-issues"></a><span data-ttu-id="240d8-338">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-338">Known Issues</span></span>
 
-<span data-ttu-id="32e3c-339">[**Fijo**] los dispositivos que utilizan el modo [de](/windows-hardware/design/device-experiences/modern-standby) espera moderno pueden experimentar una suspensión con el controlador de filtro Windows Defender que da como resultado un vacío de protección.</span><span class="sxs-lookup"><span data-stu-id="32e3c-339">[**Fixed**] devices utilizing [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.</span></span>  <span data-ttu-id="32e3c-340">Las máquinas afectadas aparecen al cliente como que no se han actualizado a la plataforma antimalware más reciente.</span><span class="sxs-lookup"><span data-stu-id="32e3c-340">Affected machines appear to the customer as having not updated to the latest antimalware platform.</span></span>  
+<span data-ttu-id="240d8-339">[**Fijo**] los dispositivos que utilizan el modo [de](/windows-hardware/design/device-experiences/modern-standby) espera moderno pueden experimentar una suspensión con el controlador de filtro Windows Defender que da como resultado un vacío de protección.</span><span class="sxs-lookup"><span data-stu-id="240d8-339">[**Fixed**] devices utilizing [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.</span></span>  <span data-ttu-id="240d8-340">Las máquinas afectadas aparecen al cliente como que no se han actualizado a la plataforma antimalware más reciente.</span><span class="sxs-lookup"><span data-stu-id="240d8-340">Affected machines appear to the customer as having not updated to the latest antimalware platform.</span></span>  
 <br/>
 > [!IMPORTANT]
-> <span data-ttu-id="32e3c-341">Esta actualización es:</span><span class="sxs-lookup"><span data-stu-id="32e3c-341">This update is:</span></span>
-> - <span data-ttu-id="32e3c-342">que necesitan los dispositivos RS1 que ejecutan la versión inferior de la plataforma para admitir SHA2;</span><span class="sxs-lookup"><span data-stu-id="32e3c-342">needed by RS1 devices running lower version of the platform to support SHA2;</span></span>
-> - <span data-ttu-id="32e3c-343">tiene una marca de reinicio para sistemas que tienen problemas de suspensión;</span><span class="sxs-lookup"><span data-stu-id="32e3c-343">has a reboot flag for systems that have hanging issues;</span></span>
-> - <span data-ttu-id="32e3c-344">se vuelve a publicar en abril de 2020 y no se reemplazará por actualizaciones más recientes para mantener la disponibilidad futura;</span><span class="sxs-lookup"><span data-stu-id="32e3c-344">is re-released in April 2020 and will not be superseded by newer updates to keep future availability;</span></span>  
-> - <span data-ttu-id="32e3c-345">se clasifica como una actualización debido al requisito de reinicio; y</span><span class="sxs-lookup"><span data-stu-id="32e3c-345">is categorized as an update due to the reboot requirement; and</span></span>
-> - <span data-ttu-id="32e3c-346">solo se ofrece con [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).</span><span class="sxs-lookup"><span data-stu-id="32e3c-346">is only be offered with [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).</span></span>
+> <span data-ttu-id="240d8-341">Esta actualización es:</span><span class="sxs-lookup"><span data-stu-id="240d8-341">This update is:</span></span>
+> - <span data-ttu-id="240d8-342">que necesitan los dispositivos RS1 que ejecutan la versión inferior de la plataforma para admitir SHA2;</span><span class="sxs-lookup"><span data-stu-id="240d8-342">needed by RS1 devices running lower version of the platform to support SHA2;</span></span>
+> - <span data-ttu-id="240d8-343">tiene una marca de reinicio para sistemas que tienen problemas de suspensión;</span><span class="sxs-lookup"><span data-stu-id="240d8-343">has a reboot flag for systems that have hanging issues;</span></span>
+> - <span data-ttu-id="240d8-344">se vuelve a publicar en abril de 2020 y no se reemplazará por actualizaciones más recientes para mantener la disponibilidad futura;</span><span class="sxs-lookup"><span data-stu-id="240d8-344">is re-released in April 2020 and will not be superseded by newer updates to keep future availability;</span></span>  
+> - <span data-ttu-id="240d8-345">se clasifica como una actualización debido al requisito de reinicio; y</span><span class="sxs-lookup"><span data-stu-id="240d8-345">is categorized as an update due to the reboot requirement; and</span></span>
+> - <span data-ttu-id="240d8-346">solo se ofrece con [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).</span><span class="sxs-lookup"><span data-stu-id="240d8-346">is only be offered with [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).</span></span>
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="32e3c-347">Noviembre-2019 (Plataforma: 4.18.1911.3 | Motor: 1.1.16600.7)</span><span class="sxs-lookup"><span data-stu-id="32e3c-347">November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</span></span></summary>
+<summary> <span data-ttu-id="240d8-347">Noviembre-2019 (Plataforma: 4.18.1911.3 | Motor: 1.1.16600.7)</span><span class="sxs-lookup"><span data-stu-id="240d8-347">November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</span></span></summary>
 
-<span data-ttu-id="32e3c-348">Versión de actualización de inteligencia de seguridad: **1.307.13.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-348">Security intelligence update version: **1.307.13.0**</span></span>  
-<span data-ttu-id="32e3c-349">Publicado: **7 de diciembre de 2019**</span><span class="sxs-lookup"><span data-stu-id="32e3c-349">Released: **December 7, 2019**</span></span>  
-<span data-ttu-id="32e3c-350">Plataforma: **4.18.1911.3**</span><span class="sxs-lookup"><span data-stu-id="32e3c-350">Platform: **4.18.1911.3**</span></span>  
-<span data-ttu-id="32e3c-351">Motor: **1.1.17000.7**</span><span class="sxs-lookup"><span data-stu-id="32e3c-351">Engine: **1.1.17000.7**</span></span>  
-<span data-ttu-id="32e3c-352">Fase de soporte técnico: **sin compatibilidad**</span><span class="sxs-lookup"><span data-stu-id="32e3c-352">Support phase: **No support**</span></span>  
+<span data-ttu-id="240d8-348">Versión de actualización de inteligencia de seguridad: **1.307.13.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-348">Security intelligence update version: **1.307.13.0**</span></span>  
+<span data-ttu-id="240d8-349">Publicado: **7 de diciembre de 2019**</span><span class="sxs-lookup"><span data-stu-id="240d8-349">Released: **December 7, 2019**</span></span>  
+<span data-ttu-id="240d8-350">Plataforma: **4.18.1911.3**</span><span class="sxs-lookup"><span data-stu-id="240d8-350">Platform: **4.18.1911.3**</span></span>  
+<span data-ttu-id="240d8-351">Motor: **1.1.17000.7**</span><span class="sxs-lookup"><span data-stu-id="240d8-351">Engine: **1.1.17000.7**</span></span>  
+<span data-ttu-id="240d8-352">Fase de soporte técnico: **sin compatibilidad**</span><span class="sxs-lookup"><span data-stu-id="240d8-352">Support phase: **No support**</span></span>  
      
-### <a name="whats-new"></a><span data-ttu-id="32e3c-353">Novedades</span><span class="sxs-lookup"><span data-stu-id="32e3c-353">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="240d8-353">Novedades</span><span class="sxs-lookup"><span data-stu-id="240d8-353">What's new</span></span>
 
-- <span data-ttu-id="32e3c-354">Nivel de seguimiento de MpCmdRun fijo</span><span class="sxs-lookup"><span data-stu-id="32e3c-354">Fixed MpCmdRun tracing level</span></span>
-- <span data-ttu-id="32e3c-355">Información de versión de WDFilter fija</span><span class="sxs-lookup"><span data-stu-id="32e3c-355">Fixed WDFilter version info</span></span>
-- <span data-ttu-id="32e3c-356">Mejorar las notificaciones (PUA)</span><span class="sxs-lookup"><span data-stu-id="32e3c-356">Improve notifications (PUA)</span></span>
-- <span data-ttu-id="32e3c-357">agregar registros de MRT para admitir archivos</span><span class="sxs-lookup"><span data-stu-id="32e3c-357">add MRT logs to support files</span></span>
+- <span data-ttu-id="240d8-354">Nivel de seguimiento de MpCmdRun fijo</span><span class="sxs-lookup"><span data-stu-id="240d8-354">Fixed MpCmdRun tracing level</span></span>
+- <span data-ttu-id="240d8-355">Información de versión de WDFilter fija</span><span class="sxs-lookup"><span data-stu-id="240d8-355">Fixed WDFilter version info</span></span>
+- <span data-ttu-id="240d8-356">Mejorar las notificaciones (PUA)</span><span class="sxs-lookup"><span data-stu-id="240d8-356">Improve notifications (PUA)</span></span>
+- <span data-ttu-id="240d8-357">agregar registros de MRT para admitir archivos</span><span class="sxs-lookup"><span data-stu-id="240d8-357">add MRT logs to support files</span></span>
    
-### <a name="known-issues"></a><span data-ttu-id="32e3c-358">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="32e3c-358">Known Issues</span></span>
-<span data-ttu-id="32e3c-359">Cuando se instala esta actualización, el dispositivo necesita el paquete de salto 4.10.2001.10 para poder actualizar a la versión más reciente de la plataforma.</span><span class="sxs-lookup"><span data-stu-id="32e3c-359">When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.</span></span>
+### <a name="known-issues"></a><span data-ttu-id="240d8-358">Problemas conocidos</span><span class="sxs-lookup"><span data-stu-id="240d8-358">Known Issues</span></span>
+<span data-ttu-id="240d8-359">Cuando se instala esta actualización, el dispositivo necesita el paquete de salto 4.10.2001.10 para poder actualizar a la versión más reciente de la plataforma.</span><span class="sxs-lookup"><span data-stu-id="240d8-359">When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.</span></span>
 <br/>
 </details>
 
 
-## <a name="microsoft-defender-antivirus-platform-support"></a><span data-ttu-id="32e3c-360">Antivirus de Microsoft Defender de plataforma</span><span class="sxs-lookup"><span data-stu-id="32e3c-360">Microsoft Defender Antivirus platform support</span></span>
-<span data-ttu-id="32e3c-361">Las actualizaciones de plataforma y motor se proporcionan en una cadencia mensual.</span><span class="sxs-lookup"><span data-stu-id="32e3c-361">Platform and engine updates are provided on a monthly cadence.</span></span> <span data-ttu-id="32e3c-362">Para ser totalmente compatible, manténgase al día con las actualizaciones más recientes de la plataforma.</span><span class="sxs-lookup"><span data-stu-id="32e3c-362">To be fully supported, keep current with the latest platform updates.</span></span> <span data-ttu-id="32e3c-363">Nuestra estructura de soporte es dinámica, evolucionando en dos fases en función de la disponibilidad de la versión más reciente de la plataforma:</span><span class="sxs-lookup"><span data-stu-id="32e3c-363">Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:</span></span>
+## <a name="microsoft-defender-antivirus-platform-support"></a><span data-ttu-id="240d8-360">Antivirus de Microsoft Defender de plataforma</span><span class="sxs-lookup"><span data-stu-id="240d8-360">Microsoft Defender Antivirus platform support</span></span>
+<span data-ttu-id="240d8-361">Las actualizaciones de plataforma y motor se proporcionan en una cadencia mensual.</span><span class="sxs-lookup"><span data-stu-id="240d8-361">Platform and engine updates are provided on a monthly cadence.</span></span> <span data-ttu-id="240d8-362">Para ser totalmente compatible, manténgase al día con las actualizaciones más recientes de la plataforma.</span><span class="sxs-lookup"><span data-stu-id="240d8-362">To be fully supported, keep current with the latest platform updates.</span></span> <span data-ttu-id="240d8-363">Nuestra estructura de soporte es dinámica, evolucionando en dos fases en función de la disponibilidad de la versión más reciente de la plataforma:</span><span class="sxs-lookup"><span data-stu-id="240d8-363">Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:</span></span>
 
-- <span data-ttu-id="32e3c-364">**Fase de mantenimiento** de actualizaciones críticas y de seguridad: al ejecutar la versión más reciente de la plataforma, podrá recibir actualizaciones de seguridad y críticas en la plataforma antimalware.</span><span class="sxs-lookup"><span data-stu-id="32e3c-364">**Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.</span></span>
+- <span data-ttu-id="240d8-364">**Fase de mantenimiento** de actualizaciones críticas y de seguridad: al ejecutar la versión más reciente de la plataforma, podrá recibir actualizaciones de seguridad y críticas en la plataforma antimalware.</span><span class="sxs-lookup"><span data-stu-id="240d8-364">**Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.</span></span>
  
-- <span data-ttu-id="32e3c-365">**Fase de soporte** técnico (solo): después de publicar una nueva versión de la plataforma, la compatibilidad con versiones anteriores (N-2) se reducirá únicamente al soporte técnico.</span><span class="sxs-lookup"><span data-stu-id="32e3c-365">**Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only.</span></span> <span data-ttu-id="32e3c-366">Las versiones de plataforma anteriores a N-2 ya no se admiten.\*</span><span class="sxs-lookup"><span data-stu-id="32e3c-366">Platform versions older than N-2 will no longer be supported.\*</span></span>
+- <span data-ttu-id="240d8-365">**Fase de soporte** técnico (solo): después de publicar una nueva versión de la plataforma, la compatibilidad con versiones anteriores (N-2) se reducirá únicamente al soporte técnico.</span><span class="sxs-lookup"><span data-stu-id="240d8-365">**Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only.</span></span> <span data-ttu-id="240d8-366">Las versiones de plataforma anteriores a N-2 ya no se admiten.\*</span><span class="sxs-lookup"><span data-stu-id="240d8-366">Platform versions older than N-2 will no longer be supported.\*</span></span>
 
-<span data-ttu-id="32e3c-367">\*Se seguirá brindando soporte técnico para las actualizaciones de la versión de Windows 10 (consulte Versión de la plataforma incluida con [Windows 10](#platform-version-included-with-windows-10-releases)versiones) a la versión más reciente de la plataforma.</span><span class="sxs-lookup"><span data-stu-id="32e3c-367">\* Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.</span></span>
+<span data-ttu-id="240d8-367">\*Se seguirá brindando soporte técnico para las actualizaciones de la versión de Windows 10 (consulte Versión de la plataforma incluida con [Windows 10](#platform-version-included-with-windows-10-releases)versiones) a la versión más reciente de la plataforma.</span><span class="sxs-lookup"><span data-stu-id="240d8-367">\* Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.</span></span>
 
-<span data-ttu-id="32e3c-368">Durante la fase de soporte técnico (solo), los incidentes de soporte comercialmente razonables se proporcionan a través del servicio de soporte técnico de Microsoft & y las ofertas de soporte administrado de Microsoft (como soporte premier).</span><span class="sxs-lookup"><span data-stu-id="32e3c-368">During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support).</span></span> <span data-ttu-id="32e3c-369">Si un incidente de soporte requiere una escalación al desarrollo para obtener más instrucciones, requiere una actualización que no sea de seguridad o requiere una actualización de seguridad, se pedirá a los clientes que actualicen a la versión más reciente de la plataforma o a una actualización intermedia (\*).</span><span class="sxs-lookup"><span data-stu-id="32e3c-369">If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (\*).</span></span>
+<span data-ttu-id="240d8-368">Durante la fase de soporte técnico (solo), los incidentes de soporte comercialmente razonables se proporcionan a través del servicio de soporte técnico de Microsoft & y las ofertas de soporte administrado de Microsoft (como soporte premier).</span><span class="sxs-lookup"><span data-stu-id="240d8-368">During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support).</span></span> <span data-ttu-id="240d8-369">Si un incidente de soporte requiere una escalación al desarrollo para obtener más instrucciones, requiere una actualización que no sea de seguridad o requiere una actualización de seguridad, se pedirá a los clientes que actualicen a la versión más reciente de la plataforma o a una actualización intermedia (\*).</span><span class="sxs-lookup"><span data-stu-id="240d8-369">If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (\*).</span></span>
 
-### <a name="platform-version-included-with-windows-10-releases"></a><span data-ttu-id="32e3c-370">Versión de plataforma incluida con Windows 10 versiones</span><span class="sxs-lookup"><span data-stu-id="32e3c-370">Platform version included with Windows 10 releases</span></span>
-<span data-ttu-id="32e3c-371">En la tabla siguiente se proporciona Antivirus de Microsoft Defender plataforma y versiones del motor que se suministran con las versiones Windows 10 versiones más recientes:</span><span class="sxs-lookup"><span data-stu-id="32e3c-371">The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:</span></span>    
+### <a name="platform-version-included-with-windows-10-releases"></a><span data-ttu-id="240d8-370">Versión de plataforma incluida con Windows 10 versiones</span><span class="sxs-lookup"><span data-stu-id="240d8-370">Platform version included with Windows 10 releases</span></span>
+<span data-ttu-id="240d8-371">En la tabla siguiente se proporciona Antivirus de Microsoft Defender plataforma y versiones del motor que se suministran con las versiones Windows 10 versiones más recientes:</span><span class="sxs-lookup"><span data-stu-id="240d8-371">The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:</span></span>    
 
-|<span data-ttu-id="32e3c-372">Windows 10 versión</span><span class="sxs-lookup"><span data-stu-id="32e3c-372">Windows 10 release</span></span>  |<span data-ttu-id="32e3c-373">Versión de plataforma</span><span class="sxs-lookup"><span data-stu-id="32e3c-373">Platform version</span></span>  |<span data-ttu-id="32e3c-374">Versión del motor</span><span class="sxs-lookup"><span data-stu-id="32e3c-374">Engine version</span></span> |<span data-ttu-id="32e3c-375">Fase de soporte técnico</span><span class="sxs-lookup"><span data-stu-id="32e3c-375">Support phase</span></span> |
+|<span data-ttu-id="240d8-372">Windows 10 versión</span><span class="sxs-lookup"><span data-stu-id="240d8-372">Windows 10 release</span></span>  |<span data-ttu-id="240d8-373">Versión de plataforma</span><span class="sxs-lookup"><span data-stu-id="240d8-373">Platform version</span></span>  |<span data-ttu-id="240d8-374">Versión del motor</span><span class="sxs-lookup"><span data-stu-id="240d8-374">Engine version</span></span> |<span data-ttu-id="240d8-375">Fase de soporte técnico</span><span class="sxs-lookup"><span data-stu-id="240d8-375">Support phase</span></span> |
 |:---|:---|:---|:---|
-|<span data-ttu-id="32e3c-376">2004 (20H1/20H2)</span><span class="sxs-lookup"><span data-stu-id="32e3c-376">2004  (20H1/20H2)</span></span> |<span data-ttu-id="32e3c-377">4.18.1909.6</span><span class="sxs-lookup"><span data-stu-id="32e3c-377">4.18.1909.6</span></span> |<span data-ttu-id="32e3c-378">1.1.17000.2</span><span class="sxs-lookup"><span data-stu-id="32e3c-378">1.1.17000.2</span></span> | <span data-ttu-id="32e3c-379">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="32e3c-379">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="32e3c-380">1909 (19H2)</span><span class="sxs-lookup"><span data-stu-id="32e3c-380">1909  (19H2)</span></span> |<span data-ttu-id="32e3c-381">4.18.1902.5</span><span class="sxs-lookup"><span data-stu-id="32e3c-381">4.18.1902.5</span></span> |<span data-ttu-id="32e3c-382">1.1.16700.3</span><span class="sxs-lookup"><span data-stu-id="32e3c-382">1.1.16700.3</span></span> | <span data-ttu-id="32e3c-383">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="32e3c-383">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="32e3c-384">1903 (19H1)</span><span class="sxs-lookup"><span data-stu-id="32e3c-384">1903  (19H1)</span></span> |<span data-ttu-id="32e3c-385">4.18.1902.5</span><span class="sxs-lookup"><span data-stu-id="32e3c-385">4.18.1902.5</span></span> |<span data-ttu-id="32e3c-386">1.1.15600.4</span><span class="sxs-lookup"><span data-stu-id="32e3c-386">1.1.15600.4</span></span> | <span data-ttu-id="32e3c-387">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="32e3c-387">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="32e3c-388">1809 (RS5)</span><span class="sxs-lookup"><span data-stu-id="32e3c-388">1809  (RS5)</span></span> |<span data-ttu-id="32e3c-389">4.18.1807.18075</span><span class="sxs-lookup"><span data-stu-id="32e3c-389">4.18.1807.18075</span></span> |<span data-ttu-id="32e3c-390">1.1.15000.2</span><span class="sxs-lookup"><span data-stu-id="32e3c-390">1.1.15000.2</span></span> | <span data-ttu-id="32e3c-391">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="32e3c-391">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="32e3c-392">1803 (RS4)</span><span class="sxs-lookup"><span data-stu-id="32e3c-392">1803  (RS4)</span></span> |<span data-ttu-id="32e3c-393">4.13.17134.1</span><span class="sxs-lookup"><span data-stu-id="32e3c-393">4.13.17134.1</span></span> |<span data-ttu-id="32e3c-394">1.1.14600.4</span><span class="sxs-lookup"><span data-stu-id="32e3c-394">1.1.14600.4</span></span> | <span data-ttu-id="32e3c-395">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="32e3c-395">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="32e3c-396">1709 (RS3)</span><span class="sxs-lookup"><span data-stu-id="32e3c-396">1709  (RS3)</span></span> |<span data-ttu-id="32e3c-397">4.12.16299.15</span><span class="sxs-lookup"><span data-stu-id="32e3c-397">4.12.16299.15</span></span> |<span data-ttu-id="32e3c-398">1.1.14104.0</span><span class="sxs-lookup"><span data-stu-id="32e3c-398">1.1.14104.0</span></span> | <span data-ttu-id="32e3c-399">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="32e3c-399">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="32e3c-400">1703 (RS2)</span><span class="sxs-lookup"><span data-stu-id="32e3c-400">1703  (RS2)</span></span> |<span data-ttu-id="32e3c-401">4.11.15603.2</span><span class="sxs-lookup"><span data-stu-id="32e3c-401">4.11.15603.2</span></span> |<span data-ttu-id="32e3c-402">1.1.13504.0</span><span class="sxs-lookup"><span data-stu-id="32e3c-402">1.1.13504.0</span></span> | <span data-ttu-id="32e3c-403">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="32e3c-403">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="32e3c-404">1607 (RS1)</span><span class="sxs-lookup"><span data-stu-id="32e3c-404">1607 (RS1)</span></span> |<span data-ttu-id="32e3c-405">4.10.14393.3683</span><span class="sxs-lookup"><span data-stu-id="32e3c-405">4.10.14393.3683</span></span> |<span data-ttu-id="32e3c-406">1.1.12805.0</span><span class="sxs-lookup"><span data-stu-id="32e3c-406">1.1.12805.0</span></span> | <span data-ttu-id="32e3c-407">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="32e3c-407">Technical upgrade support (only)</span></span> |  
+|<span data-ttu-id="240d8-376">2004 (20H1/20H2)</span><span class="sxs-lookup"><span data-stu-id="240d8-376">2004  (20H1/20H2)</span></span> |<span data-ttu-id="240d8-377">4.18.1909.6</span><span class="sxs-lookup"><span data-stu-id="240d8-377">4.18.1909.6</span></span> |<span data-ttu-id="240d8-378">1.1.17000.2</span><span class="sxs-lookup"><span data-stu-id="240d8-378">1.1.17000.2</span></span> | <span data-ttu-id="240d8-379">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="240d8-379">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="240d8-380">1909 (19H2)</span><span class="sxs-lookup"><span data-stu-id="240d8-380">1909  (19H2)</span></span> |<span data-ttu-id="240d8-381">4.18.1902.5</span><span class="sxs-lookup"><span data-stu-id="240d8-381">4.18.1902.5</span></span> |<span data-ttu-id="240d8-382">1.1.16700.3</span><span class="sxs-lookup"><span data-stu-id="240d8-382">1.1.16700.3</span></span> | <span data-ttu-id="240d8-383">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="240d8-383">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="240d8-384">1903 (19H1)</span><span class="sxs-lookup"><span data-stu-id="240d8-384">1903  (19H1)</span></span> |<span data-ttu-id="240d8-385">4.18.1902.5</span><span class="sxs-lookup"><span data-stu-id="240d8-385">4.18.1902.5</span></span> |<span data-ttu-id="240d8-386">1.1.15600.4</span><span class="sxs-lookup"><span data-stu-id="240d8-386">1.1.15600.4</span></span> | <span data-ttu-id="240d8-387">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="240d8-387">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="240d8-388">1809 (RS5)</span><span class="sxs-lookup"><span data-stu-id="240d8-388">1809  (RS5)</span></span> |<span data-ttu-id="240d8-389">4.18.1807.18075</span><span class="sxs-lookup"><span data-stu-id="240d8-389">4.18.1807.18075</span></span> |<span data-ttu-id="240d8-390">1.1.15000.2</span><span class="sxs-lookup"><span data-stu-id="240d8-390">1.1.15000.2</span></span> | <span data-ttu-id="240d8-391">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="240d8-391">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="240d8-392">1803 (RS4)</span><span class="sxs-lookup"><span data-stu-id="240d8-392">1803  (RS4)</span></span> |<span data-ttu-id="240d8-393">4.13.17134.1</span><span class="sxs-lookup"><span data-stu-id="240d8-393">4.13.17134.1</span></span> |<span data-ttu-id="240d8-394">1.1.14600.4</span><span class="sxs-lookup"><span data-stu-id="240d8-394">1.1.14600.4</span></span> | <span data-ttu-id="240d8-395">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="240d8-395">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="240d8-396">1709 (RS3)</span><span class="sxs-lookup"><span data-stu-id="240d8-396">1709  (RS3)</span></span> |<span data-ttu-id="240d8-397">4.12.16299.15</span><span class="sxs-lookup"><span data-stu-id="240d8-397">4.12.16299.15</span></span> |<span data-ttu-id="240d8-398">1.1.14104.0</span><span class="sxs-lookup"><span data-stu-id="240d8-398">1.1.14104.0</span></span> | <span data-ttu-id="240d8-399">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="240d8-399">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="240d8-400">1703 (RS2)</span><span class="sxs-lookup"><span data-stu-id="240d8-400">1703  (RS2)</span></span> |<span data-ttu-id="240d8-401">4.11.15603.2</span><span class="sxs-lookup"><span data-stu-id="240d8-401">4.11.15603.2</span></span> |<span data-ttu-id="240d8-402">1.1.13504.0</span><span class="sxs-lookup"><span data-stu-id="240d8-402">1.1.13504.0</span></span> | <span data-ttu-id="240d8-403">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="240d8-403">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="240d8-404">1607 (RS1)</span><span class="sxs-lookup"><span data-stu-id="240d8-404">1607 (RS1)</span></span> |<span data-ttu-id="240d8-405">4.10.14393.3683</span><span class="sxs-lookup"><span data-stu-id="240d8-405">4.10.14393.3683</span></span> |<span data-ttu-id="240d8-406">1.1.12805.0</span><span class="sxs-lookup"><span data-stu-id="240d8-406">1.1.12805.0</span></span> | <span data-ttu-id="240d8-407">Soporte técnico de actualización (solo)</span><span class="sxs-lookup"><span data-stu-id="240d8-407">Technical upgrade support (only)</span></span> |  
 
-<span data-ttu-id="32e3c-408">Para obtener Windows 10 de la versión, consulte la Windows de datos del ciclo [de vida.](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)</span><span class="sxs-lookup"><span data-stu-id="32e3c-408">For Windows 10 release information, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).</span></span>
+<span data-ttu-id="240d8-408">Para obtener Windows 10 de la versión, consulte la Windows de datos del ciclo [de vida.](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)</span><span class="sxs-lookup"><span data-stu-id="240d8-408">For Windows 10 release information, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).</span></span>
 
-## <a name="updates-for-deployment-image-servicing-and-management-dism"></a><span data-ttu-id="32e3c-409">Actualizaciones para administración y mantenimiento de imágenes de implementación (DISM)</span><span class="sxs-lookup"><span data-stu-id="32e3c-409">Updates for Deployment Image Servicing and Management (DISM)</span></span>
+## <a name="updates-for-deployment-image-servicing-and-management-dism"></a><span data-ttu-id="240d8-409">Actualizaciones para administración y mantenimiento de imágenes de implementación (DISM)</span><span class="sxs-lookup"><span data-stu-id="240d8-409">Updates for Deployment Image Servicing and Management (DISM)</span></span>
 
-<span data-ttu-id="32e3c-410">Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Windows Server 2019 y las imágenes de instalación del sistema operativo Windows Server 2016 con las últimas actualizaciones de antivirus y antimalware.</span><span class="sxs-lookup"><span data-stu-id="32e3c-410">We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates.</span></span> <span data-ttu-id="32e3c-411">Mantener las imágenes de instalación del sistema operativo actualizadas ayuda a evitar un vacío en la protección.</span><span class="sxs-lookup"><span data-stu-id="32e3c-411">Keeping your OS installation images up to date helps avoid a gap in protection.</span></span> 
+<span data-ttu-id="240d8-410">Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Windows Server 2019 y las imágenes de instalación del sistema operativo Windows Server 2016 con las últimas actualizaciones de antivirus y antimalware.</span><span class="sxs-lookup"><span data-stu-id="240d8-410">We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates.</span></span> <span data-ttu-id="240d8-411">Mantener las imágenes de instalación del sistema operativo actualizadas ayuda a evitar un vacío en la protección.</span><span class="sxs-lookup"><span data-stu-id="240d8-411">Keeping your OS installation images up to date helps avoid a gap in protection.</span></span> 
 
-<span data-ttu-id="32e3c-412">Para obtener más información, vea [Actualización de Microsoft Defender para obtener Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).</span><span class="sxs-lookup"><span data-stu-id="32e3c-412">For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).</span></span>
+<span data-ttu-id="240d8-412">Para obtener más información, vea [Actualización de Microsoft Defender para obtener Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).</span><span class="sxs-lookup"><span data-stu-id="240d8-412">For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).</span></span>
 
 <details>
-<summary><span data-ttu-id="32e3c-413">1.1.2105.01</span><span class="sxs-lookup"><span data-stu-id="32e3c-413">1.1.2105.01</span></span></summary>
+<summary><span data-ttu-id="240d8-413">1.1.2106.01</span><span class="sxs-lookup"><span data-stu-id="240d8-413">1.1.2106.01</span></span></summary>
 
-<span data-ttu-id="32e3c-414">&ensp;Versión del paquete: **1.1.2105.01**  </span><span class="sxs-lookup"><span data-stu-id="32e3c-414">&ensp;Package version: **1.1.2105.01**  </span></span>  
-<span data-ttu-id="32e3c-415">&ensp;Versión de plataforma: **4.18.2103.7** </span><span class="sxs-lookup"><span data-stu-id="32e3c-415">&ensp;Platform version: **4.18.2103.7** </span></span>  
-<span data-ttu-id="32e3c-416">&ensp;Versión del motor: **1.1.18100.6**</span><span class="sxs-lookup"><span data-stu-id="32e3c-416">&ensp;Engine version: **1.1.18100.6**</span></span>  
-<span data-ttu-id="32e3c-417">&ensp;Versión de firma: **1.339.42.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-417">&ensp;Signature version: **1.339.42.0**</span></span>    
+<span data-ttu-id="240d8-414">&ensp;Versión del paquete: **1.1.2106.01**  </span><span class="sxs-lookup"><span data-stu-id="240d8-414">&ensp;Package version: **1.1.2106.01**  </span></span>  
+<span data-ttu-id="240d8-415">&ensp;Versión de la **plataforma: 4.18.2104.14** </span><span class="sxs-lookup"><span data-stu-id="240d8-415">&ensp;Platform version: **4.18.2104.14** </span></span>  
+<span data-ttu-id="240d8-416">&ensp;Versión del motor: **1.1.18100.6**</span><span class="sxs-lookup"><span data-stu-id="240d8-416">&ensp;Engine version: **1.1.18100.6**</span></span>  
+<span data-ttu-id="240d8-417">&ensp;Versión de firma: **1.339.1923.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-417">&ensp;Signature version: **1.339.1923.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="32e3c-418">Correcciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-418">Fixes</span></span>
-- <span data-ttu-id="32e3c-419">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-419">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="240d8-418">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-418">Fixes</span></span>
+- <span data-ttu-id="240d8-419">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-419">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="32e3c-420">Información adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-420">Additional information</span></span>
-- <span data-ttu-id="32e3c-421">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-421">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="240d8-420">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-420">Additional information</span></span>
+- <span data-ttu-id="240d8-421">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-421">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="32e3c-422">1.1.2104.01</span><span class="sxs-lookup"><span data-stu-id="32e3c-422">1.1.2104.01</span></span></summary>
+<summary><span data-ttu-id="240d8-422">1.1.2105.01</span><span class="sxs-lookup"><span data-stu-id="240d8-422">1.1.2105.01</span></span></summary>
 
-<span data-ttu-id="32e3c-423">&ensp;Versión del paquete: **1.1.2104.01**  </span><span class="sxs-lookup"><span data-stu-id="32e3c-423">&ensp;Package version: **1.1.2104.01**  </span></span>  
-<span data-ttu-id="32e3c-424">&ensp;Versión de plataforma: **4.18.2102.4** </span><span class="sxs-lookup"><span data-stu-id="32e3c-424">&ensp;Platform version: **4.18.2102.4** </span></span>  
-<span data-ttu-id="32e3c-425">&ensp;Versión del motor: **1.1.18000.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-425">&ensp;Engine version: **1.1.18000.5**</span></span>  
-<span data-ttu-id="32e3c-426">&ensp;Versión de firma: **1.335.232.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-426">&ensp;Signature version: **1.335.232.0**</span></span>    
+<span data-ttu-id="240d8-423">&ensp;Versión del paquete: **1.1.2105.01**  </span><span class="sxs-lookup"><span data-stu-id="240d8-423">&ensp;Package version: **1.1.2105.01**  </span></span>  
+<span data-ttu-id="240d8-424">&ensp;Versión de plataforma: **4.18.2103.7** </span><span class="sxs-lookup"><span data-stu-id="240d8-424">&ensp;Platform version: **4.18.2103.7** </span></span>  
+<span data-ttu-id="240d8-425">&ensp;Versión del motor: **1.1.18100.6**</span><span class="sxs-lookup"><span data-stu-id="240d8-425">&ensp;Engine version: **1.1.18100.6**</span></span>  
+<span data-ttu-id="240d8-426">&ensp;Versión de firma: **1.339.42.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-426">&ensp;Signature version: **1.339.42.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="32e3c-427">Correcciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-427">Fixes</span></span>
-- <span data-ttu-id="32e3c-428">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-428">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="240d8-427">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-427">Fixes</span></span>
+- <span data-ttu-id="240d8-428">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-428">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="32e3c-429">Información adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-429">Additional information</span></span>
-- <span data-ttu-id="32e3c-430">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-430">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="240d8-429">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-429">Additional information</span></span>
+- <span data-ttu-id="240d8-430">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-430">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="32e3c-431">1.1.2103.01</span><span class="sxs-lookup"><span data-stu-id="32e3c-431">1.1.2103.01</span></span></summary>
+<summary><span data-ttu-id="240d8-431">1.1.2104.01</span><span class="sxs-lookup"><span data-stu-id="240d8-431">1.1.2104.01</span></span></summary>
 
-<span data-ttu-id="32e3c-432">&ensp;Versión del paquete: **1.1.2103.01**  </span><span class="sxs-lookup"><span data-stu-id="32e3c-432">&ensp;Package version: **1.1.2103.01**  </span></span>  
-<span data-ttu-id="32e3c-433">&ensp;Versión de la **plataforma: 4.18.2101.9** </span><span class="sxs-lookup"><span data-stu-id="32e3c-433">&ensp;Platform version: **4.18.2101.9** </span></span>  
-<span data-ttu-id="32e3c-434">&ensp;Versión del motor: **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-434">&ensp;Engine version: **1.1.17800.5**</span></span>  
-<span data-ttu-id="32e3c-435">&ensp;Versión de firma: **1.331.2302.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-435">&ensp;Signature version: **1.331.2302.0**</span></span>    
+<span data-ttu-id="240d8-432">&ensp;Versión del paquete: **1.1.2104.01**  </span><span class="sxs-lookup"><span data-stu-id="240d8-432">&ensp;Package version: **1.1.2104.01**  </span></span>  
+<span data-ttu-id="240d8-433">&ensp;Versión de plataforma: **4.18.2102.4** </span><span class="sxs-lookup"><span data-stu-id="240d8-433">&ensp;Platform version: **4.18.2102.4** </span></span>  
+<span data-ttu-id="240d8-434">&ensp;Versión del motor: **1.1.18000.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-434">&ensp;Engine version: **1.1.18000.5**</span></span>  
+<span data-ttu-id="240d8-435">&ensp;Versión de firma: **1.335.232.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-435">&ensp;Signature version: **1.335.232.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="32e3c-436">Correcciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-436">Fixes</span></span>
-- <span data-ttu-id="32e3c-437">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-437">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="240d8-436">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-436">Fixes</span></span>
+- <span data-ttu-id="240d8-437">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-437">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="32e3c-438">Información adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-438">Additional information</span></span>
-- <span data-ttu-id="32e3c-439">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-439">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="240d8-438">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-438">Additional information</span></span>
+- <span data-ttu-id="240d8-439">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-439">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="32e3c-440">1.1.2102.03</span><span class="sxs-lookup"><span data-stu-id="32e3c-440">1.1.2102.03</span></span></summary>
+<summary><span data-ttu-id="240d8-440">1.1.2103.01</span><span class="sxs-lookup"><span data-stu-id="240d8-440">1.1.2103.01</span></span></summary>
 
-<span data-ttu-id="32e3c-441">&ensp;Versión del paquete: **1.1.2102.03**  </span><span class="sxs-lookup"><span data-stu-id="32e3c-441">&ensp;Package version: **1.1.2102.03**  </span></span>  
-<span data-ttu-id="32e3c-442">&ensp;Versión de plataforma: **4.18.2011.6** </span><span class="sxs-lookup"><span data-stu-id="32e3c-442">&ensp;Platform version: **4.18.2011.6** </span></span>  
-<span data-ttu-id="32e3c-443">&ensp;Versión del motor: **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-443">&ensp;Engine version: **1.1.17800.5**</span></span>  
-<span data-ttu-id="32e3c-444">&ensp;Versión de firma: **1.331.174.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-444">&ensp;Signature version: **1.331.174.0**</span></span>    
+<span data-ttu-id="240d8-441">&ensp;Versión del paquete: **1.1.2103.01**  </span><span class="sxs-lookup"><span data-stu-id="240d8-441">&ensp;Package version: **1.1.2103.01**  </span></span>  
+<span data-ttu-id="240d8-442">&ensp;Versión de la **plataforma: 4.18.2101.9** </span><span class="sxs-lookup"><span data-stu-id="240d8-442">&ensp;Platform version: **4.18.2101.9** </span></span>  
+<span data-ttu-id="240d8-443">&ensp;Versión del motor: **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-443">&ensp;Engine version: **1.1.17800.5**</span></span>  
+<span data-ttu-id="240d8-444">&ensp;Versión de firma: **1.331.2302.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-444">&ensp;Signature version: **1.331.2302.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="32e3c-445">Correcciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-445">Fixes</span></span>
-- <span data-ttu-id="32e3c-446">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-446">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="240d8-445">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-445">Fixes</span></span>
+- <span data-ttu-id="240d8-446">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-446">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="32e3c-447">Información adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-447">Additional information</span></span>
-- <span data-ttu-id="32e3c-448">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-448">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="240d8-447">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-447">Additional information</span></span>
+- <span data-ttu-id="240d8-448">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-448">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="32e3c-449">1.1.2101.02</span><span class="sxs-lookup"><span data-stu-id="32e3c-449">1.1.2101.02</span></span></summary>
+<summary><span data-ttu-id="240d8-449">1.1.2102.03</span><span class="sxs-lookup"><span data-stu-id="240d8-449">1.1.2102.03</span></span></summary>
 
-<span data-ttu-id="32e3c-450">&ensp;Versión del paquete: **1.1.2101.02**  </span><span class="sxs-lookup"><span data-stu-id="32e3c-450">&ensp;Package version: **1.1.2101.02**  </span></span>  
-<span data-ttu-id="32e3c-451">&ensp;Versión de plataforma: **4.18.2011.6** </span><span class="sxs-lookup"><span data-stu-id="32e3c-451">&ensp;Platform version: **4.18.2011.6** </span></span>  
-<span data-ttu-id="32e3c-452">&ensp;Versión del motor: **1.1.17700.4**</span><span class="sxs-lookup"><span data-stu-id="32e3c-452">&ensp;Engine version: **1.1.17700.4**</span></span>  
-<span data-ttu-id="32e3c-453">&ensp;Versión de firma: **1.329.1796.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-453">&ensp;Signature version: **1.329.1796.0**</span></span>    
+<span data-ttu-id="240d8-450">&ensp;Versión del paquete: **1.1.2102.03**  </span><span class="sxs-lookup"><span data-stu-id="240d8-450">&ensp;Package version: **1.1.2102.03**  </span></span>  
+<span data-ttu-id="240d8-451">&ensp;Versión de plataforma: **4.18.2011.6** </span><span class="sxs-lookup"><span data-stu-id="240d8-451">&ensp;Platform version: **4.18.2011.6** </span></span>  
+<span data-ttu-id="240d8-452">&ensp;Versión del motor: **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-452">&ensp;Engine version: **1.1.17800.5**</span></span>  
+<span data-ttu-id="240d8-453">&ensp;Versión de firma: **1.331.174.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-453">&ensp;Signature version: **1.331.174.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="32e3c-454">Correcciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-454">Fixes</span></span>
-- <span data-ttu-id="32e3c-455">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-455">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="240d8-454">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-454">Fixes</span></span>
+- <span data-ttu-id="240d8-455">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-455">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="32e3c-456">Información adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-456">Additional information</span></span>
-- <span data-ttu-id="32e3c-457">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-457">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="240d8-456">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-456">Additional information</span></span>
+- <span data-ttu-id="240d8-457">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-457">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="32e3c-458">1.1.2012.01</span><span class="sxs-lookup"><span data-stu-id="32e3c-458">1.1.2012.01</span></span></summary>
+<summary><span data-ttu-id="240d8-458">1.1.2101.02</span><span class="sxs-lookup"><span data-stu-id="240d8-458">1.1.2101.02</span></span></summary>
 
-<span data-ttu-id="32e3c-459">&ensp;Versión del paquete: **1.1.2012.01**  </span><span class="sxs-lookup"><span data-stu-id="32e3c-459">&ensp;Package version: **1.1.2012.01**  </span></span>  
-<span data-ttu-id="32e3c-460">&ensp;Versión de la **plataforma: 4.18.2010.7** </span><span class="sxs-lookup"><span data-stu-id="32e3c-460">&ensp;Platform version: **4.18.2010.7** </span></span>  
-<span data-ttu-id="32e3c-461">&ensp;Versión del motor: **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-461">&ensp;Engine version: **1.1.17600.5**</span></span>  
-<span data-ttu-id="32e3c-462">&ensp;Versión de firma: **1.327.1991.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-462">&ensp;Signature version: **1.327.1991.0**</span></span>    
+<span data-ttu-id="240d8-459">&ensp;Versión del paquete: **1.1.2101.02**  </span><span class="sxs-lookup"><span data-stu-id="240d8-459">&ensp;Package version: **1.1.2101.02**  </span></span>  
+<span data-ttu-id="240d8-460">&ensp;Versión de plataforma: **4.18.2011.6** </span><span class="sxs-lookup"><span data-stu-id="240d8-460">&ensp;Platform version: **4.18.2011.6** </span></span>  
+<span data-ttu-id="240d8-461">&ensp;Versión del motor: **1.1.17700.4**</span><span class="sxs-lookup"><span data-stu-id="240d8-461">&ensp;Engine version: **1.1.17700.4**</span></span>  
+<span data-ttu-id="240d8-462">&ensp;Versión de firma: **1.329.1796.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-462">&ensp;Signature version: **1.329.1796.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="32e3c-463">Correcciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-463">Fixes</span></span>
-- <span data-ttu-id="32e3c-464">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-464">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="240d8-463">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-463">Fixes</span></span>
+- <span data-ttu-id="240d8-464">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-464">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="32e3c-465">Información adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-465">Additional information</span></span>
-- <span data-ttu-id="32e3c-466">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-466">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="240d8-465">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-465">Additional information</span></span>
+- <span data-ttu-id="240d8-466">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-466">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="32e3c-467">1.1.2011.02</span><span class="sxs-lookup"><span data-stu-id="32e3c-467">1.1.2011.02</span></span></summary>
+<summary><span data-ttu-id="240d8-467">1.1.2012.01</span><span class="sxs-lookup"><span data-stu-id="240d8-467">1.1.2012.01</span></span></summary>
 
-<span data-ttu-id="32e3c-468">&ensp;Versión del paquete: **1.1.2011.02**  </span><span class="sxs-lookup"><span data-stu-id="32e3c-468">&ensp;Package version: **1.1.2011.02**  </span></span>  
-<span data-ttu-id="32e3c-469">&ensp;Versión de la **plataforma: 4.18.2010.7** </span><span class="sxs-lookup"><span data-stu-id="32e3c-469">&ensp;Platform version: **4.18.2010.7** </span></span>  
-<span data-ttu-id="32e3c-470">&ensp;Versión del motor: **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-470">&ensp;Engine version: **1.1.17600.5**</span></span>  
-<span data-ttu-id="32e3c-471">&ensp;Versión de firma: **1.327.658.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-471">&ensp;Signature version: **1.327.658.0**</span></span>    
+<span data-ttu-id="240d8-468">&ensp;Versión del paquete: **1.1.2012.01**  </span><span class="sxs-lookup"><span data-stu-id="240d8-468">&ensp;Package version: **1.1.2012.01**  </span></span>  
+<span data-ttu-id="240d8-469">&ensp;Versión de la **plataforma: 4.18.2010.7** </span><span class="sxs-lookup"><span data-stu-id="240d8-469">&ensp;Platform version: **4.18.2010.7** </span></span>  
+<span data-ttu-id="240d8-470">&ensp;Versión del motor: **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-470">&ensp;Engine version: **1.1.17600.5**</span></span>  
+<span data-ttu-id="240d8-471">&ensp;Versión de firma: **1.327.1991.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-471">&ensp;Signature version: **1.327.1991.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="32e3c-472">Correcciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-472">Fixes</span></span>
-- <span data-ttu-id="32e3c-473">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-473">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="240d8-472">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-472">Fixes</span></span>
+- <span data-ttu-id="240d8-473">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-473">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="32e3c-474">Información adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-474">Additional information</span></span>
-- <span data-ttu-id="32e3c-475">Firmas Antivirus de Microsoft Defender actualización</span><span class="sxs-lookup"><span data-stu-id="32e3c-475">Refreshed Microsoft Defender Antivirus signatures</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="240d8-474">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-474">Additional information</span></span>
+- <span data-ttu-id="240d8-475">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-475">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="32e3c-476">1.1.2011.01</span><span class="sxs-lookup"><span data-stu-id="32e3c-476">1.1.2011.01</span></span></summary>
+<summary><span data-ttu-id="240d8-476">1.1.2011.02</span><span class="sxs-lookup"><span data-stu-id="240d8-476">1.1.2011.02</span></span></summary>
 
-<span data-ttu-id="32e3c-477">&ensp;Versión del paquete: **1.1.2011.01**  </span><span class="sxs-lookup"><span data-stu-id="32e3c-477">&ensp;Package version: **1.1.2011.01**  </span></span>  
-<span data-ttu-id="32e3c-478">&ensp;Versión de plataforma: **4.18.2009.7**</span><span class="sxs-lookup"><span data-stu-id="32e3c-478">&ensp;Platform version: **4.18.2009.7**</span></span>  
-<span data-ttu-id="32e3c-479">&ensp;Versión del motor: **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-479">&ensp;Engine version: **1.1.17600.5**</span></span>  
-<span data-ttu-id="32e3c-480">&ensp;Versión de firma: **1.327.344.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-480">&ensp;Signature version: **1.327.344.0**</span></span>    
+<span data-ttu-id="240d8-477">&ensp;Versión del paquete: **1.1.2011.02**  </span><span class="sxs-lookup"><span data-stu-id="240d8-477">&ensp;Package version: **1.1.2011.02**  </span></span>  
+<span data-ttu-id="240d8-478">&ensp;Versión de la **plataforma: 4.18.2010.7** </span><span class="sxs-lookup"><span data-stu-id="240d8-478">&ensp;Platform version: **4.18.2010.7** </span></span>  
+<span data-ttu-id="240d8-479">&ensp;Versión del motor: **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-479">&ensp;Engine version: **1.1.17600.5**</span></span>  
+<span data-ttu-id="240d8-480">&ensp;Versión de firma: **1.327.658.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-480">&ensp;Signature version: **1.327.658.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="32e3c-481">Correcciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-481">Fixes</span></span>
-- <span data-ttu-id="32e3c-482">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-482">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="240d8-481">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-481">Fixes</span></span>
+- <span data-ttu-id="240d8-482">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-482">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="32e3c-483">Información adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-483">Additional information</span></span>
-- <span data-ttu-id="32e3c-484">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-484">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="240d8-483">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-483">Additional information</span></span>
+- <span data-ttu-id="240d8-484">Firmas Antivirus de Microsoft Defender actualización</span><span class="sxs-lookup"><span data-stu-id="240d8-484">Refreshed Microsoft Defender Antivirus signatures</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="32e3c-485">1.1.2009.10</span><span class="sxs-lookup"><span data-stu-id="32e3c-485">1.1.2009.10</span></span></summary>
+<summary><span data-ttu-id="240d8-485">1.1.2011.01</span><span class="sxs-lookup"><span data-stu-id="240d8-485">1.1.2011.01</span></span></summary>
 
-<span data-ttu-id="32e3c-486">&ensp;Versión del paquete: **1.1.2011.01**  </span><span class="sxs-lookup"><span data-stu-id="32e3c-486">&ensp;Package version: **1.1.2011.01**  </span></span>  
-<span data-ttu-id="32e3c-487">&ensp;Versión de plataforma: **4.18.2008.9** </span><span class="sxs-lookup"><span data-stu-id="32e3c-487">&ensp;Platform version: **4.18.2008.9** </span></span>  
-<span data-ttu-id="32e3c-488">&ensp;Versión del motor: **1.1.17400.5**</span><span class="sxs-lookup"><span data-stu-id="32e3c-488">&ensp;Engine version: **1.1.17400.5**</span></span>  
-<span data-ttu-id="32e3c-489">&ensp;Versión de firma: **1.327.2216.0**</span><span class="sxs-lookup"><span data-stu-id="32e3c-489">&ensp;Signature version: **1.327.2216.0**</span></span>    
+<span data-ttu-id="240d8-486">&ensp;Versión del paquete: **1.1.2011.01**  </span><span class="sxs-lookup"><span data-stu-id="240d8-486">&ensp;Package version: **1.1.2011.01**  </span></span>  
+<span data-ttu-id="240d8-487">&ensp;Versión de plataforma: **4.18.2009.7**</span><span class="sxs-lookup"><span data-stu-id="240d8-487">&ensp;Platform version: **4.18.2009.7**</span></span>  
+<span data-ttu-id="240d8-488">&ensp;Versión del motor: **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-488">&ensp;Engine version: **1.1.17600.5**</span></span>  
+<span data-ttu-id="240d8-489">&ensp;Versión de firma: **1.327.344.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-489">&ensp;Signature version: **1.327.344.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="32e3c-490">Correcciones</span><span class="sxs-lookup"><span data-stu-id="32e3c-490">Fixes</span></span>
-- <span data-ttu-id="32e3c-491">Ninguno</span><span class="sxs-lookup"><span data-stu-id="32e3c-491">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="240d8-490">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-490">Fixes</span></span>
+- <span data-ttu-id="240d8-491">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-491">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="32e3c-492">Información adicional</span><span class="sxs-lookup"><span data-stu-id="32e3c-492">Additional information</span></span>
-- <span data-ttu-id="32e3c-493">Se agregó compatibilidad con Windows 10 imágenes de instalación del sistema operativo RS1 o versiones posteriores.</span><span class="sxs-lookup"><span data-stu-id="32e3c-493">Added support for Windows 10 RS1 or later OS install images.</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="240d8-492">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-492">Additional information</span></span>
+- <span data-ttu-id="240d8-493">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-493">None</span></span>  
+<br/>
+</details><details>
+<summary><span data-ttu-id="240d8-494">1.1.2009.10</span><span class="sxs-lookup"><span data-stu-id="240d8-494">1.1.2009.10</span></span></summary>
+
+<span data-ttu-id="240d8-495">&ensp;Versión del paquete: **1.1.2011.01**  </span><span class="sxs-lookup"><span data-stu-id="240d8-495">&ensp;Package version: **1.1.2011.01**  </span></span>  
+<span data-ttu-id="240d8-496">&ensp;Versión de plataforma: **4.18.2008.9** </span><span class="sxs-lookup"><span data-stu-id="240d8-496">&ensp;Platform version: **4.18.2008.9** </span></span>  
+<span data-ttu-id="240d8-497">&ensp;Versión del motor: **1.1.17400.5**</span><span class="sxs-lookup"><span data-stu-id="240d8-497">&ensp;Engine version: **1.1.17400.5**</span></span>  
+<span data-ttu-id="240d8-498">&ensp;Versión de firma: **1.327.2216.0**</span><span class="sxs-lookup"><span data-stu-id="240d8-498">&ensp;Signature version: **1.327.2216.0**</span></span>    
+    
+### <a name="fixes"></a><span data-ttu-id="240d8-499">Correcciones</span><span class="sxs-lookup"><span data-stu-id="240d8-499">Fixes</span></span>
+- <span data-ttu-id="240d8-500">Ninguno</span><span class="sxs-lookup"><span data-stu-id="240d8-500">None</span></span>
+
+### <a name="additional-information"></a><span data-ttu-id="240d8-501">Información adicional</span><span class="sxs-lookup"><span data-stu-id="240d8-501">Additional information</span></span>
+- <span data-ttu-id="240d8-502">Se agregó compatibilidad con Windows 10 imágenes de instalación del sistema operativo RS1 o versiones posteriores.</span><span class="sxs-lookup"><span data-stu-id="240d8-502">Added support for Windows 10 RS1 or later OS install images.</span></span>  
 <br/>
 </details>
 
-## <a name="additional-resources"></a><span data-ttu-id="32e3c-494">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="32e3c-494">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="240d8-503">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="240d8-503">Additional resources</span></span>
 
-| <span data-ttu-id="32e3c-495">Artículo</span><span class="sxs-lookup"><span data-stu-id="32e3c-495">Article</span></span> | <span data-ttu-id="32e3c-496">Descripción</span><span class="sxs-lookup"><span data-stu-id="32e3c-496">Description</span></span>  |
+| <span data-ttu-id="240d8-504">Artículo</span><span class="sxs-lookup"><span data-stu-id="240d8-504">Article</span></span> | <span data-ttu-id="240d8-505">Descripción</span><span class="sxs-lookup"><span data-stu-id="240d8-505">Description</span></span>  |
 |:---|:---|
-|[<span data-ttu-id="32e3c-497">Actualización de Microsoft Defender para Windows de instalación del sistema operativo</span><span class="sxs-lookup"><span data-stu-id="32e3c-497">Microsoft Defender update for Windows operating system installation images</span></span>](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | <span data-ttu-id="32e3c-498">Revisar los paquetes de actualización de antimalware para las imágenes de instalación del sistema operativo (archivos WIM y VHD).</span><span class="sxs-lookup"><span data-stu-id="32e3c-498">Review antimalware update packages for your OS installation images (WIM and VHD files).</span></span> <span data-ttu-id="32e3c-499">Obtenga Antivirus de Microsoft Defender actualizaciones de Windows 10 (ediciones Enterprise, Pro y Home), Windows Server 2019 y Windows Server 2016 de instalación.</span><span class="sxs-lookup"><span data-stu-id="32e3c-499">Get Microsoft Defender Antivirus updates for Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 installation images.</span></span>  |
-|[<span data-ttu-id="32e3c-500">Administrar cómo se descargan y aplican las actualizaciones de protección</span><span class="sxs-lookup"><span data-stu-id="32e3c-500">Manage how protection updates are downloaded and applied</span></span>](manage-protection-updates-microsoft-defender-antivirus.md) | <span data-ttu-id="32e3c-501">Las actualizaciones de protección se pueden entregar a través de muchos orígenes.</span><span class="sxs-lookup"><span data-stu-id="32e3c-501">Protection updates can be delivered through many sources.</span></span> |
-|[<span data-ttu-id="32e3c-502">Administrar cuándo se deben descargar y aplicar las actualizaciones de protección</span><span class="sxs-lookup"><span data-stu-id="32e3c-502">Manage when protection updates should be downloaded and applied</span></span>](manage-protection-update-schedule-microsoft-defender-antivirus.md) | <span data-ttu-id="32e3c-503">Puede programar cuándo deben descargarse las actualizaciones de protección.</span><span class="sxs-lookup"><span data-stu-id="32e3c-503">You can schedule when protection updates should be downloaded.</span></span> |
-|[<span data-ttu-id="32e3c-504">Administrar actualizaciones de puntos de conexión que están des actualizadas</span><span class="sxs-lookup"><span data-stu-id="32e3c-504">Manage updates for endpoints that are out of date</span></span>](manage-outdated-endpoints-microsoft-defender-antivirus.md) | <span data-ttu-id="32e3c-505">Si un extremo pierde una actualización o un examen programado, puede forzar una actualización o examinar la próxima vez que un usuario inicia sesión.</span><span class="sxs-lookup"><span data-stu-id="32e3c-505">If an endpoint misses an update or scheduled scan, you can force an update or scan the next time a user signs in.</span></span> |
-|[<span data-ttu-id="32e3c-506">Administrar las actualizaciones forzadas basadas en eventos</span><span class="sxs-lookup"><span data-stu-id="32e3c-506">Manage event-based forced updates</span></span>](manage-event-based-updates-microsoft-defender-antivirus.md) | <span data-ttu-id="32e3c-507">Puede configurar las actualizaciones de protección para que se descarguen al inicio o después de determinados eventos de protección entregados en la nube.</span><span class="sxs-lookup"><span data-stu-id="32e3c-507">You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events.</span></span> |
-|[<span data-ttu-id="32e3c-508">Administrar las actualizaciones de dispositivos móviles y máquinas virtuales</span><span class="sxs-lookup"><span data-stu-id="32e3c-508">Manage updates for mobile devices and virtual machines (VMs)</span></span>](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| <span data-ttu-id="32e3c-509">Puede especificar la configuración, como si las actualizaciones deben producirse en la batería, que son especialmente útiles para dispositivos móviles y máquinas virtuales.</span><span class="sxs-lookup"><span data-stu-id="32e3c-509">You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines.</span></span> |
+|[<span data-ttu-id="240d8-506">Actualización de Microsoft Defender para Windows de instalación del sistema operativo</span><span class="sxs-lookup"><span data-stu-id="240d8-506">Microsoft Defender update for Windows operating system installation images</span></span>](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | <span data-ttu-id="240d8-507">Revisar los paquetes de actualización de antimalware para las imágenes de instalación del sistema operativo (archivos WIM y VHD).</span><span class="sxs-lookup"><span data-stu-id="240d8-507">Review antimalware update packages for your OS installation images (WIM and VHD files).</span></span> <span data-ttu-id="240d8-508">Obtenga Antivirus de Microsoft Defender actualizaciones de Windows 10 (ediciones Enterprise, Pro y Home), Windows Server 2019 y Windows Server 2016 de instalación.</span><span class="sxs-lookup"><span data-stu-id="240d8-508">Get Microsoft Defender Antivirus updates for Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 installation images.</span></span>  |
+|[<span data-ttu-id="240d8-509">Administrar cómo se descargan y aplican las actualizaciones de protección</span><span class="sxs-lookup"><span data-stu-id="240d8-509">Manage how protection updates are downloaded and applied</span></span>](manage-protection-updates-microsoft-defender-antivirus.md) | <span data-ttu-id="240d8-510">Las actualizaciones de protección se pueden entregar a través de muchos orígenes.</span><span class="sxs-lookup"><span data-stu-id="240d8-510">Protection updates can be delivered through many sources.</span></span> |
+|[<span data-ttu-id="240d8-511">Administrar cuándo se deben descargar y aplicar las actualizaciones de protección</span><span class="sxs-lookup"><span data-stu-id="240d8-511">Manage when protection updates should be downloaded and applied</span></span>](manage-protection-update-schedule-microsoft-defender-antivirus.md) | <span data-ttu-id="240d8-512">Puede programar cuándo deben descargarse las actualizaciones de protección.</span><span class="sxs-lookup"><span data-stu-id="240d8-512">You can schedule when protection updates should be downloaded.</span></span> |
+|[<span data-ttu-id="240d8-513">Administrar actualizaciones de puntos de conexión que están des actualizadas</span><span class="sxs-lookup"><span data-stu-id="240d8-513">Manage updates for endpoints that are out of date</span></span>](manage-outdated-endpoints-microsoft-defender-antivirus.md) | <span data-ttu-id="240d8-514">Si un extremo pierde una actualización o un examen programado, puede forzar una actualización o examinar la próxima vez que un usuario inicia sesión.</span><span class="sxs-lookup"><span data-stu-id="240d8-514">If an endpoint misses an update or scheduled scan, you can force an update or scan the next time a user signs in.</span></span> |
+|[<span data-ttu-id="240d8-515">Administrar las actualizaciones forzadas basadas en eventos</span><span class="sxs-lookup"><span data-stu-id="240d8-515">Manage event-based forced updates</span></span>](manage-event-based-updates-microsoft-defender-antivirus.md) | <span data-ttu-id="240d8-516">Puede configurar las actualizaciones de protección para que se descarguen al inicio o después de determinados eventos de protección entregados en la nube.</span><span class="sxs-lookup"><span data-stu-id="240d8-516">You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events.</span></span> |
+|[<span data-ttu-id="240d8-517">Administrar las actualizaciones de dispositivos móviles y máquinas virtuales</span><span class="sxs-lookup"><span data-stu-id="240d8-517">Manage updates for mobile devices and virtual machines (VMs)</span></span>](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| <span data-ttu-id="240d8-518">Puede especificar la configuración, como si las actualizaciones deben producirse en la batería, que son especialmente útiles para dispositivos móviles y máquinas virtuales.</span><span class="sxs-lookup"><span data-stu-id="240d8-518">You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines.</span></span> |
