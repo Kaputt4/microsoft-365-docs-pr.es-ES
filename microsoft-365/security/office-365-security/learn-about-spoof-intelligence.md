@@ -1,5 +1,5 @@
 ---
-title: Spoof intelligence insight
+title: Información de la inteligencia contra la suplantación de identidad
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la suplantación de inteligencia en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37c5bcb6f2c15c3814fafa198f2905e23b12ba01
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 45ecbe68072441b40477d1b27953b957aeffa9e3
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538752"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793177"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 
@@ -63,7 +63,7 @@ El resto de este artículo explica cómo usar la información de inteligencia su
 
 > [!NOTE]
 >
-> - Solo los remitentes suplantados detectados por la inteligencia suplantación aparecen en la información de inteligencia suplantada. Al invalidar el veredicto permitir o bloquear en la información, el remitente suplantado  se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del espacio empresarial. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados antes de que los detecte la inteligencia de suplantación de identidad. Para obtener más información, vea [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
+> - Solo los remitentes suplantados detectados por la inteligencia suplantación aparecen en la información de inteligencia suplantada. Al invalidar el veredicto permitir o bloquear en la información, el remitente suplantado  se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del espacio empresarial. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados antes de que los detecte la inteligencia de suplantación de identidad. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](tenant-allow-block-list.md).
 >
 > - La información sobre la  suplantación de inteligencia y la pestaña Suplantación de dominio de la lista Permitir o bloquear espacio empresarial reemplazan la funcionalidad de la directiva de inteligencia suplantación de dominio que estaba disponible en la página de directiva contra correo no deseado del Centro de seguridad & cumplimiento.
 >
@@ -88,7 +88,7 @@ El resto de este artículo explica cómo usar la información de inteligencia su
 
 - Habilitas y deshabilitas la inteligencia de suplantación de identidad en directivas contra suplantación de identidad en EOP y Microsoft Defender para Office 365. La inteligencia de suplantación está habilitada de forma predeterminada. Para obtener más información, vea [Configure anti-phishing policies in EOP o](configure-anti-phishing-policies-eop.md) [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-- Para obtener la configuración recomendada para la inteligencia de suplantación de identidad, consulte Configuración predeterminada de la directiva [contra suplantación de](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)identidad de EOP.
+- Para obtener la configuración recomendada para la inteligencia de suplantación de identidad, consulte Configuración de directiva [contra suplantación de identidad](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)de EOP .
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Abra la información de inteligencia de suplantación en el Centro de seguridad & cumplimiento
 

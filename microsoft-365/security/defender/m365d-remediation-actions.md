@@ -1,6 +1,6 @@
 ---
 title: Acciones de corrección en Microsoft 365 Defender
-description: Obtener información general sobre las acciones de corrección que siguen las investigaciones automatizadas en Microsoft 365 Defender
+description: Obtenga información general sobre las acciones de corrección que siguen las investigaciones automatizadas en Microsoft 365 Defender
 keywords: automatizada, investigación, alerta, desencadenante, acción, corrección
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 80546d44bc1ba222c736b397a272f9f1f1a01d4a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f025f23242c28f698e6f67755cc59d21c4463914
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269473"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782950"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Acciones de corrección en Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ En la tabla siguiente se resumen las acciones de corrección que se admiten actu
 |:---------|:---------|
 |- Recopilar paquete de investigación <br/>- Aislar dispositivo (esta acción se puede deshacer)<br/>- Máquina offboard <br/>- Ejecución de código de lanzamiento <br/>- Liberar de cuarentena <br/>- Ejemplo de solicitud <br/>- Restringir la ejecución de código (esta acción se puede deshacer) <br/>- Ejecutar examen antivirus <br/>- Detener y poner en cuarentena      |- Dirección URL de bloqueo (hora de hacer clic)<br/>- Eliminar mensajes de correo electrónico o clústeres<br/>- Correo electrónico en cuarentena<br/>- Poner en cuarentena datos adjuntos de correo electrónico<br/>- Desactivar el reenvío de correo externo          |
 
-Las acciones de corrección, ya sean pendientes de aprobación o ya completadas, se pueden ver en el [Centro de acciones](m365d-action-center.md).
+Las acciones de corrección, ya sean pendientes de aprobación o ya completadas, se pueden ver en el [Centro de acciones.](m365d-action-center.md)
 
 ## <a name="remediation-actions-that-follow-automated-investigations"></a>Acciones de corrección que siguen investigaciones automatizadas
 

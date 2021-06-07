@@ -21,12 +21,12 @@ description: 'El Microsoft 365 de administración: obtenga información sobre la
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769093"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779896"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades del Centro de administración Microsoft 365 administración
 
@@ -49,6 +49,18 @@ Y si quiere saber las novedades de otros servicios en la nube de Microsoft:
 - [Novedades del Centro de administración SharePoint administración](/sharepoint/what-s-new-in-admin-center)
 - [Actualizaciones de Office](/OfficeUpdates/)
 - [Cómo comprobar el estado Windows versión](/windows/deployment/update/check-release-health)
+
+## <a name="june-2021"></a>Junio de 2021
+
+### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 de centro de administración
+
+Hemos agregado un par de categorías nuevas a la funcionalidad de búsqueda.
+
+- Ahora puede buscar roles Microsoft 365 administrador en la búsqueda global y ver y administrar rápidamente las asignaciones de roles desde cualquier página. Por ejemplo, busque el administrador **de Intune**.
+
+- Ahora puede encontrar experiencias de configuración simplificadas a través de la búsqueda global. Esto puede ayudarle a usted y a su equipo a empezar rápidamente a usar nuevas características. Por ejemplo, busque establecer **la contraseña para que nunca expire**.
+
+Para obtener más información acerca de la búsqueda en el Centro de administración, vea [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).
 
 ## <a name="may-2021"></a>Mayo de 2021
 

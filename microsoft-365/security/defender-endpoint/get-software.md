@@ -1,7 +1,7 @@
 ---
 title: Enumerar software
 description: Recupera una lista de inventario de software
-keywords: apis, api de gráficos, api compatibles, get, list, file, information, software inventory, threat & vulnerability management api, Api de Microsoft Defender para Endpoint tvm
+keywords: apis, api de gráficos, api compatibles, get, list, file, information, software inventory, threat & administración de vulnerabilidades api, Api de Microsoft Defender para Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6522b546dfde7447a03b3c417be93d288e261908
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: f7e71c58396fd4b3ed40ba88aab5c2757ae41a41
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934014"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771086"
 ---
 # <a name="list-software-inventory-api"></a>Enumerar API de inventario de software
 
@@ -62,7 +64,7 @@ En blanco
 Si se realiza correctamente, este método devuelve 200 Aceptar con el inventario de software en el cuerpo.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

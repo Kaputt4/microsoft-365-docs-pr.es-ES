@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee2a5e1815dd552753ac7f3dee30df11ac4332e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.custom: api
+ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076608"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770774"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Capturar alertas desde el inquilino del cliente de MSSP
 
@@ -48,7 +49,7 @@ Paso 1: Crear una aplicación de terceros
 
 Paso 2: Obtener tokens de acceso y actualización desde el inquilino del cliente
  
-Paso 3: permitir la aplicación en el Centro de seguridad de Microsoft Defender
+Paso 3: permitir que la aplicación se Centro de seguridad de Microsoft Defender
  
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>Paso 1: Crear una aplicación en Azure Active Directory (Azure AD)
  
@@ -56,7 +57,7 @@ Deberá crear una aplicación y concederle permisos para capturar alertas desde 
 
 1. Inicie sesión en [Azure AD Portal](https://aad.portal.azure.com/).
 
-2. Seleccione **Registros de aplicaciones de Azure Active Directory**  >  .
+2. Seleccione **Azure Active Directory**  >  **registros de la aplicación**.
  
 3. Haga clic **en Nuevo registro**.
 
@@ -85,7 +86,7 @@ Deberá crear una aplicación y concederle permisos para capturar alertas desde 
  
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>Paso 2: Obtener tokens de acceso y actualización desde el inquilino del cliente
-Esta sección le guía sobre cómo usar un script de PowerShell para obtener los tokens del inquilino del cliente. Este script usa la aplicación del paso anterior para obtener los tokens de acceso y actualización mediante el flujo de código de autorización de OAuth.
+Esta sección le guía sobre cómo usar un script de PowerShell para obtener los tokens del inquilino del cliente. Este script usa la aplicación del paso anterior para obtener los tokens de acceso y actualización mediante el código de autorización de OAuth Flow.
 
 Después de proporcionar sus credenciales, deberá conceder el consentimiento a la aplicación para que la aplicación se aprovisione en el inquilino del cliente.
 
@@ -159,14 +160,14 @@ Después de proporcionar sus credenciales, deberá conceder el consentimiento a 
 
 8. En la ventana de PowerShell, recibirá un token de acceso y un token de actualización. Guarde el token de actualización para configurar el conector SIEM. 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Paso 3: Permitir la aplicación en el Centro de seguridad de Microsoft Defender
-Tendrás que permitir la aplicación que creaste en el Centro de seguridad de Microsoft Defender.
+### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Paso 3: Permitir que la aplicación se Centro de seguridad de Microsoft Defender
+Tendrás que permitir la aplicación que creaste en Centro de seguridad de Microsoft Defender.
  
 Deberá tener permiso Administrar configuración **del sistema del portal** para permitir la aplicación. De lo contrario, tendrá que solicitar al cliente que le permita la aplicación.
 
 1. Vaya a `https://securitycenter.windows.com?tid=<customer_tenant_id>` (reemplace \<customer_tenant_id\> por el identificador de inquilino del cliente.
 
-2. Haga clic **en**  >  **Configuración SIEM**. 
+2. Haga **clic Configuración**  >  **siem**. 
 
 3. Seleccione la **pestaña MSSP.**
 
@@ -186,7 +187,7 @@ Ahora puede descargar el archivo de configuración correspondiente para siem y c
 Para obtener información sobre cómo capturar alertas mediante la API de REST, vea [Extraer alertas mediante la API de REST](pull-alerts-using-rest-api.md).
 
 
-## <a name="see-also"></a>Ver también
-- [Conceder acceso de MSSP al portal](grant-mssp-access.md)
-- [Obtener acceso al portal de clientes de MSSP](access-mssp-portal.md)
-- [Configurar notificaciones de alertas](configure-mssp-notifications.md)
+## <a name="see-also"></a>Consulte también
+- [Conceder acceso a MSSP al portal](grant-mssp-access.md)
+- [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
+- [Configurar notificaciones de alerta](configure-mssp-notifications.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 531281eba6accfb2e1ffdab1e662a03b077869bd
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779763"
+ms.locfileid: "52782494"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -121,7 +121,7 @@ Cuando la herramienta completa el proceso, genera un archivo de salida en format
 - Buzón compatible: si están en un buzón habilitado para OAuth
 
 > [!NOTE]
-> La autenticación multifactor no se admite al usar el módulo PowerShell de implementación central.
+> La autenticación multifactor no se admite al usar el módulo PowerShell de implementación central. El módulo solo funciona con autenticación básica.
   
 ## <a name="user-and-group-assignments"></a>Asignaciones de usuario y de grupo
 

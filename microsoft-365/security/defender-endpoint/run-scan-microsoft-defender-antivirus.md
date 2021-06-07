@@ -11,21 +11,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 124ebde48c008743a486a4454e7772fd93f9eca7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fdca059633ab0993e07b5b1be0c6f33cfe327fcf
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275365"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789176"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
@@ -40,14 +38,12 @@ El examen rápido examina todas las ubicaciones en las que podría haber malware
 > [!IMPORTANT]
 > Antivirus de Microsoft Defender se ejecuta en el contexto de la cuenta [LocalSystem](/windows/win32/services/localsystem-account) al realizar un examen local. Para los exámenes de red, usa el contexto de la cuenta del dispositivo. Si la cuenta de dispositivo de dominio no tiene los permisos adecuados para acceder al recurso compartido, el examen no funcionará. Asegúrese de que el dispositivo tiene permisos para el recurso compartido de red de acceso.
 
-Combinado con la funcionalidad de protección siempre activa en tiempo [real](configure-real-time-protection-microsoft-defender-antivirus.md)(que revisa los archivos cuando se abren y cierran y cuando un usuario navega a una carpeta), un examen rápido ayuda a proporcionar una cobertura segura tanto para malware que comienza con el malware del sistema como del nivel de kernel.  
+Combinado con [la funcionalidad de protección](configure-real-time-protection-microsoft-defender-antivirus.md)en tiempo real siempre activa, un examen rápido ayuda a proporcionar una cobertura sólida tanto para malware que comienza con el malware del sistema como del nivel de kernel. La protección siempre activa y en tiempo real revisa los archivos cuando se abren y cierran, y siempre que un usuario navega a una carpeta. De forma predeterminada, los exámenes rápidos se ejecutan en dispositivos extraíbles montados, como unidades USB. En la mayoría de los casos, un examen rápido es adecuado para encontrar malware que no fue recogido por la protección en tiempo real.
 
-En la mayoría de los casos, un examen rápido es adecuado para encontrar malware que no fue recogido por la protección en tiempo real.
+Un examen completo puede ser útil cuando se notifica una amenaza de malware en un punto de conexión. El examen puede identificar si hay componentes inactivos que requieren una limpieza más exhaustiva. Sin embargo, Microsoft suele recomendar el uso de exámenes rápidos en lugar de exámenes completos. Un examen completo puede tardar unas horas o días en completarse, según la cantidad y el tipo de datos que se deben examinar. 
 
-Un examen completo puede ser útil en puntos de conexión que han notificado una amenaza de malware. El examen puede identificar si hay componentes inactivos que requieren una limpieza más exhaustiva. Esto es ideal si su organización está ejecutando exámenes a petición.
-
-> [!NOTE]
-> De forma predeterminada, los exámenes rápidos se ejecutan en dispositivos extraíbles montados, como unidades USB.
+> [!TIP]
+> Para obtener más información sobre las diferencias entre los exámenes rápidos y los exámenes [completos, vea Examen rápido frente al examen completo y el examen personalizado.](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan)
 
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>Usar Microsoft Endpoint Manager para ejecutar un examen
 

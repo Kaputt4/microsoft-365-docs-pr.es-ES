@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e4e230fdca7fe29fc1c7a1bc68085454ba883b9
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a9c1c6f7635b87e25adcb121db79f67d4ec1988f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624794"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789005"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -34,15 +34,15 @@ ms.locfileid: "52624794"
 > [!NOTE]
 > La característica que se describe en este artículo está en Versión preliminar, no está disponible para todos y está sujeta a cambios.
 
-Para mantener la organización segura de forma [predeterminada,](secure-by-default.md)Exchange Online Protection (EOP) no permite listas seguras ni desvío de filtrado de mensajes que resulte en veredictos de phishing de elevada confianza o malware. Pero hay escenarios específicos que requieren la entrega de mensajes sin filtrar. Por ejemplo:
+Para mantener la organización segura de forma [predeterminada,](secure-by-default.md)Exchange Online Protection (EOP) no permite listas seguras ni omitir el filtrado de mensajes identificados como malware o phishing de elevada confianza. Sin embargo, hay escenarios específicos que requieren la entrega de mensajes sin filtrar. Por ejemplo:
 
 - **Simulaciones de suplantación** de identidad de terceros: los ataques simulados pueden ayudarle a identificar usuarios vulnerables antes de que un ataque real impacte en su organización.
 - Buzones de operaciones de seguridad **(SecOps):** buzones dedicados que usan los equipos de seguridad para recopilar y analizar mensajes sin filtrar (tanto buenos como malos).
 
-Use la directiva _de entrega avanzada_ en Microsoft 365 para evitar que estos mensajes en estos _escenarios específicos_ se filtren <sup>\*</sup> . La directiva de entrega avanzada garantiza que los mensajes en estos escenarios no se filtran:
+Use la directiva _de entrega avanzada_ en Microsoft 365 para evitar que estos mensajes en estos _escenarios específicos_ se filtren. <sup>\*</sup> La directiva de entrega avanzada garantiza que los mensajes en estos escenarios consigan los siguientes resultados:
 
 - Los filtros de EOP y Microsoft Defender Office 365 realizar ninguna acción en estos mensajes.<sup>\*</sup>
-- [La purga de hora cero (ZAP)](zero-hour-auto-purge.md) para correo no deseado y suplantación de identidad no realiza ninguna acción en estos mensajes.<sup>\*</sup>
+- [La purga de hora cero (ZAP)](zero-hour-auto-purge.md) para correo no deseado y suplantación de identidad (phishing) no toma ninguna acción en estos mensajes.<sup>\*</sup>
 - [Las alertas predeterminadas](alerts.md) del sistema no se desencadenan para estos escenarios.
 - [AIR y la agrupación en clústeres en Defender para Office 365](office-365-air.md) omite estos mensajes.
 - Específicamente para simulaciones de suplantación de identidad de terceros:
@@ -62,44 +62,61 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la **página Entrega avanzada,** abra <https://protection.office.com/advanceddelivery> .
+- Puede abrir el Centro de seguridad en <https://security.microsoft.com>. Para ir directamente a la **página Entrega avanzada,** abra <https://security.microsoft.com/advanceddelivery> .
 
 - Debe tener asignados permisos antes de poder realizar los procedimientos descritos en este artículo:
-  - Para crear, modificar o quitar la configuración de la directiva de  entrega avanzada, debe ser miembro del grupo de roles  Administrador de seguridad en el Centro de cumplimiento de seguridad **&** y miembro del grupo de roles Administración de la **organización en Exchange Online**.  
+  - Para crear, modificar o quitar la configuración de la directiva de  entrega avanzada, debe  ser miembro del  grupo de roles Administrador de seguridad en el centro de seguridad y miembro del grupo de roles Administración de la organización en **Exchange Online**.  
   - Para obtener acceso de solo lectura a la directiva de entrega avanzada, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
 
-  Para obtener más información, vea [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Para obtener más información, vea [Permissions in the Microsoft 365 security center](permissions-microsoft-365-security-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-## <a name="use-the-security--compliance-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Usar el Centro de seguridad & cumplimiento para configurar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
+  > [!NOTE]
+  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los  usuarios los permisos necesarios en el centro de seguridad y los permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Administración de amenazas** \> **Entrega** avanzada de \> **directiva**.
+## <a name="use-the-security-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Usar el centro de seguridad para configurar buzones de SecOps en la directiva de entrega avanzada
 
-2. En la **página Entrega avanzada,** seleccione la pestaña **Simulación de suplantación** de identidad y, a continuación, haga clic **en Editar**.
+1. En el centro de seguridad, vaya a Correo **&** directivas de \> **colaboración &** reglas de amenazas Sección Reglas de entrega \>  \>  \> **avanzada**.
 
-3. En el flyout de simulación **de suplantación** de identidad de terceros que se abre, configure las siguientes opciones:
+2. En la **página Entrega avanzada,** compruebe que la pestaña buzón **de SecOps** está seleccionada y, a continuación, siga uno de los pasos siguientes:
+   - Haga ![ clic en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**.
+   - Si no hay simulaciones de suplantación de identidad configuradas, haga clic en **Agregar**.
 
-   - **Dominio de envío:** se requiere al menos un dominio de dirección de correo electrónico (por ejemplo, contoso.com). Puede agregar hasta 10 entradas.
-   - **Enviar IP:** se requiere al menos una dirección IPv4 válida. Puede agregar hasta 10 entradas. Los valores admitidos son:
-     - IP única: por ejemplo, 192.168.1.1.
-     - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
-     - IP cidr: por ejemplo, 192.168.0.1/25.
-   - **Direcciones URL de simulación** para permitir: Opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se debe bloquear ni detonar. Puede agregar hasta 10 entradas.
+3. En el control desplegable Editar buzones de SecOps que se abre, escriba un buzón de Exchange Online existente que desee designar como buzón de **SecOps** siguiendo uno de los pasos siguientes:
+   - Haga clic en el cuadro, deje que se resuelva la lista de buzones y, a continuación, seleccione el buzón.
+   - Haga clic en el cuadro para empezar a escribir un identificador para el buzón (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.) y seleccione el buzón (nombre para mostrar) de los resultados.
 
-4. Cuando haya terminado, haga clic en **Guardar.**
+     Repita este paso tantas veces como sea necesario. Los grupos de distribución no están permitidos.
 
-Las entradas de simulación de suplantación de identidad de terceros que configuró se muestran en la pestaña **Simulación de suplantación de** identidad. Para realizar cambios, haga clic **en Editar** en la pestaña.
-
-## <a name="use-the-security--compliance-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Usar el Centro de seguridad & cumplimiento para configurar buzones de SecOps en la directiva de entrega avanzada
-
-1. En el Centro de & cumplimiento, vaya a **Administración de** amenazas \>  \> **Entrega avanzada**.
-
-2. En la **página Entrega avanzada,** seleccione la **pestaña Buzón de SecOps** y, a continuación, haga clic **en Editar**.
-
-3. En el menú desplegable del buzón de **SecOps** que se abre, escriba las direcciones de correo electrónico de los buzones de correo Exchange Online que desea designar como buzones de SecOps. Los grupos de distribución no están permitidos.
+     Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
 4. Cuando haya terminado, haga clic en **Guardar**.
 
-Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buzón de SecOps.** Para realizar cambios, haga clic **en Editar** en la pestaña.
+Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buzón de SecOps.** Para realizar cambios, haga clic ![ en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar** en la pestaña.
+
+## <a name="use-the-security-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Usar el centro de seguridad para configurar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
+
+1. En el centro de seguridad, vaya a Correo **&** directivas de \> **colaboración &** reglas de amenazas Sección Reglas de entrega \>  \>  \> **avanzada**.
+
+2. En la **página Entrega avanzada,** seleccione la pestaña **Simulación de suplantación** de identidad y, a continuación, realice uno de los siguientes pasos:
+   - Haga ![ clic en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**.
+   - Si no hay simulaciones de suplantación de identidad configuradas, haga clic en **Agregar**.
+
+3. En el **control desplegable Editar simulación de suplantación** de identidad de terceros que se abre, configure las siguientes opciones:
+
+   - **Dominio** de envío: expanda esta configuración y escriba al menos un dominio de dirección de correo electrónico (por ejemplo, contoso.com) haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas.
+   - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores admitidos son:
+     - IP única: por ejemplo, 192.168.1.1.
+     - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
+     - IP cidr: por ejemplo, 192.168.0.1/25.
+   - Direcciones **URL** de simulación para permitir: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas.
+
+   Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+
+4. Cuando haya terminado, siga uno de los pasos siguientes:
+   - **Primera vez:** haga clic **en Agregar** y, a continuación, en **Cerrar**.
+   - **Editar existente:** haga clic **en Guardar** y, a continuación, en **Cerrar**.
+
+Las entradas de simulación de suplantación de identidad de terceros que configuró se muestran en la pestaña **Simulación de suplantación de** identidad. Para realizar cambios, haga clic ![ en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar** en la pestaña.
 
 ## <a name="additional-scenarios-that-require-filtering-bypass"></a>Escenarios adicionales que requieren la omisión de filtrado
 
@@ -107,6 +124,6 @@ Además de los dos escenarios con los que la directiva de entrega avanzada puede
 
 - **Filtros de terceros:** si el registro  MX de su dominio no apunta a Office 365 (los mensajes se enruta en otro lugar primero), [la](secure-by-default.md) seguridad de forma predeterminada no *está disponible*.
 
-  Para omitir el filtrado de Microsoft para los mensajes que ya han sido evaluados por el filtrado de terceros, use reglas de flujo de correo (también conocidas como reglas de transporte), vea Usar reglas de flujo de correo para establecer el [SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)en mensajes .
+  Para omitir el filtrado de Microsoft para los mensajes que ya han sido evaluados por el filtrado de terceros, use reglas de flujo de correo (también conocidas como reglas de transporte). Para obtener más información, vea [Usar reglas de flujo de correo para establecer el SCL en mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md).
 
-- **Falsos positivos** en revisión: es posible que desee permitir temporalmente que determinados mensajes que Microsoft sigue analizando a través de [envíos](admin-submission.md) de administrador informen de mensajes buenos conocidos que se marcan incorrectamente como incorrectos para Microsoft (falsos positivos). Al igual que con todas las invalidaciones, se recomienda **_encarecidamente_** que estas asignaciones se puedan realizar temporalmente.
+- **Falsos positivos** en revisión: es posible que desee permitir temporalmente que determinados mensajes que Microsoft sigue analizando a través de [envíos](admin-submission.md) de administrador informen de mensajes buenos conocidos que se marcan incorrectamente como incorrectos para Microsoft (falsos positivos). Al igual que con todas las invalidaciones, se **_recomienda encarecidamente_** que estas asignaciones sean temporales.

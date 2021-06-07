@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Más información sobre los tipos de explicación en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 515fd8af289ec7c64e14eb6d54b236ba3a8aa9f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Obtenga más información sobre la lista de frases, las expresiones regulares y los tipos de explicación de proximidad en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706581"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770870"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Tipos de explicación en Microsoft SharePoint Syntex
 
@@ -89,11 +89,11 @@ Esta expresión se compone de cinco partes, en este orden:
 
 1. cualquier cantidad de los siguientes caracteres:
 
-   a. letras de la "a" a la "z"
+   a. Letras de la "a" a la "z"
 
-   b. números del 0 al 9
+   b. Números del 0 al 9
 
-   c. punto, subrayado, porcentaje o guion
+   c. Punto, subrayado, porcentaje o guion
 
 2. El símbolo @
 
@@ -114,6 +114,15 @@ Para agregar un tipo de explicación de expresiones regulares:
    Cuando agregue una expresión regular con una plantilla, el nombre y la expresión regular se agregarán automáticamente al cuadro de texto. Por ejemplo, si elige la plantilla **dirección de correo electrónico**, se rellenará el panel **Crear una explicación**.
 
    ![Captura de pantalla que muestra el panel Crear una explicación con la plantilla de dirección de correo electrónico aplicada.](../media/content-understanding/create-regular-expression-email.png)
+
+### <a name="limitations"></a>Limitaciones
+
+En la tabla siguiente, se muestran las opciones de caracteres en línea que no están disponibles actualmente para su uso en patrones de expresiones regulares. 
+
+|Opción  |Estado  |Funcionalidad actual  |
+|---------|---------|---------|
+|Distinción entre mayúsculas y minúsculas | No se admite actualmente. | No hay distinción entre mayúsculas y minúsculas en todas las coincidencias que se obtienen.  |
+|Anclajes de línea     | No se admite actualmente. | No se puede especificar una posición específica en una cadena en la que debe producirse una coincidencia.   |
 
 ## <a name="proximity"></a>Proximidad 
 

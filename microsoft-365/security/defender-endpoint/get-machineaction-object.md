@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 180179d5b1362ad4952618148b11007aa9efe91c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: dcb00d0d2afc7f873ea9c4afa3174ac46babf879
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200070"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770786"
 ---
 # <a name="get-machineaction-api"></a>Obtener api machineAction
 
@@ -74,7 +76,7 @@ En blanco
 ## <a name="response"></a>Respuesta
 Si se realiza correctamente, este método devuelve 200, código de respuesta Ok con una [entidad Machine Action.](machineaction.md) Si no se encontró la entidad de acción de la máquina con el identificador especificado: 404 No encontrado.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

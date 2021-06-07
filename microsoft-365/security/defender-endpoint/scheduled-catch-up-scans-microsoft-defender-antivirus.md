@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 1748a33be2c27123eb0437784dcdb2cb7905616a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f1344026878b7fbd6242d82b1afb0e6671c32073
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274693"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789273"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurar los análisis programados rápidos o completos del Antivirus de Windows Defender
 
@@ -73,8 +73,8 @@ Use la tabla siguiente para elegir un tipo de examen.
 |Escenario  |Tipo de examen recomendado  |
 |---------|---------|
 |Desea configurar exámenes regulares y programados     | Examen rápido <p>Un examen rápido comprueba los procesos, la memoria, los perfiles y determinadas ubicaciones del dispositivo. Combinado con la protección siempre activa en tiempo [real,](configure-real-time-protection-microsoft-defender-antivirus.md)un examen rápido ayuda a proporcionar una cobertura sólida tanto para malware que comienza con el malware del sistema como del nivel de kernel. La protección en tiempo real revisa los archivos cuando se abren y cierran, y siempre que un usuario navega a una carpeta.         |
-|Las amenazas, como el malware, se detectan en un dispositivo     | Examen completo <p>Un examen completo puede ayudar a identificar si hay componentes inactivos que requieren una limpieza más exhaustiva.         |
-|Desea ejecutar un examen a [petición](run-scan-microsoft-defender-antivirus.md)     | Examen completo  <p>Un examen completo examina todos los archivos del disco del dispositivo, incluidos los archivos obsoletos, archivados y a los que no se accede diariamente.      |
+|Las amenazas, como el malware, se detectan en un dispositivo individual     | Examen rápido <p>En la mayoría de los casos, un examen rápido detectará y limpiará el malware detectado.   |
+|Desea ejecutar un examen a [petición](run-scan-microsoft-defender-antivirus.md)     | Examen rápido       |
 | Quieres asegurarte de que un dispositivo portátil, como una unidad USB, no contiene malware | Examen personalizado <p>Un examen personalizado permite seleccionar ubicaciones, carpetas o archivos específicos y ejecuta un examen rápido. |
 
 ### <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>¿Qué más necesito saber sobre los exámenes rápidos y completos?
@@ -98,7 +98,7 @@ Los exámenes programados se ejecutan en el día y la hora que especifique. Pued
 
 ### <a name="use-group-policy-to-schedule-scans"></a>Usar directiva de grupo para programar exámenes
 
-|Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
+|Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 |Examinar | Especificar el tipo de examen que se usará para un examen programado | Examen rápido |
 |Examinar | Especificar el día de la semana para ejecutar un examen programado | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
@@ -143,7 +143,7 @@ Puede establecer que el examen programado solo se produzca cuando el extremo est
 
 ### <a name="use-group-policy-to-schedule-scans"></a>Usar directiva de grupo para programar exámenes
 
-|Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
+|Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 |Examinar | Iniciar el examen programado solo cuando el equipo está en uso pero no está en uso | Los exámenes programados no se ejecutarán, a menos que el equipo esté en uso pero no esté en uso | Habilitado |
 
@@ -155,7 +155,7 @@ Use los cmdlets siguientes:
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/).
+Para más información, consulte [Usar cmdlets de PowerShell para configurar y ejecutar Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Defender](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi"></a>Use Windows Management Instruction (WMI)
 
@@ -174,7 +174,7 @@ Algunas amenazas pueden requerir un examen completo para completar su eliminaci�
 
 ### <a name="use-group-policy-to-schedule-remediation-required-scans"></a>Usar la directiva de grupo para programar exámenes necesarios para la corrección
 
-| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
 |---|---|---|---|
 |Corrección | Especificar el día de la semana para ejecutar un examen completo programado para completar la corrección | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
 |Corrección | Especificar la hora del día para ejecutar un examen completo programado para completar la corrección | Especifique el número de minutos después de la medianoche (por ejemplo, escriba **60** para la 1 a.m.) | 2 a. m. |
@@ -208,7 +208,7 @@ Puede habilitar un examen rápido diario que se puede ejecutar además de los ot
 
 ### <a name="use-group-policy-to-schedule-daily-scans"></a>Usar directiva de grupo para programar exámenes diarios
 
-|Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
+|Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 |Examinar | Especificar el intervalo para ejecutar exámenes rápidos por día | Especifique cuántas horas debe transcurrir antes del siguiente examen rápido. Por ejemplo, para ejecutarse cada dos horas, escriba **2**, para una vez al día, escriba **24**. Escriba **0** para nunca ejecutar un examen rápido diario. | Nunca |
 |Examinar | Especificar la hora de un examen rápido diario | Especifique el número de minutos después de la medianoche (por ejemplo, escriba **60** para la 1 a.m.) | 2 a. m. |
@@ -240,11 +240,11 @@ Puede forzar que se produzca un examen después de cada actualización [de prote
 
 ### <a name="use-group-policy-to-schedule-scans-after-protection-updates"></a>Usar la directiva de grupo para programar exámenes después de las actualizaciones de protección
 
-|Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada)|
+|Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada)|
 |:---|:---|:---|:---|
 |Actualizaciones de firmas | Activar el examen después de la actualización de inteligencia de seguridad | Un examen se realizará inmediatamente después de descargar una nueva actualización de protección | Habilitado |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 - [Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender](run-scan-microsoft-defender-antivirus.md)

@@ -1,7 +1,7 @@
 ---
 title: Obtener recomendaciones de seguridad
 description: Recupera una colección de recomendaciones de seguridad relacionadas con un identificador de dispositivo determinado.
-keywords: apis, api de gráficos, api compatibles, get, list, file, information, security recommendation per device, threat & vulnerability management api, Api de Microsoft Defender para Endpoint tvm
+keywords: apis, api de gráficos, api compatibles, get, list, file, information, security recommendation per device, threat & administración de vulnerabilidades api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bc209687d51b3e05bfcfd6028042ba5912b877f6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 44f64334d08d8d0d6a5ed1e8e06baa2880859ad2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935310"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771134"
 ---
 # <a name="get-security-recommendations"></a>Obtener recomendaciones de seguridad
 
@@ -64,7 +66,7 @@ En blanco
 Si se realiza correctamente, este método devuelve 200 Aceptar con las recomendaciones de seguridad del cuerpo.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

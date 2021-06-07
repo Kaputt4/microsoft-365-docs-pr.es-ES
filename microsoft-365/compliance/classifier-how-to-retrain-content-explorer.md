@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo proporcionar comentarios a un clasificador que se puede entrenar en el Explorador de contenido.
-ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918106"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793069"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo volver a entrenar un clasificador en el explorador de contenido
 
-Un clasificador entrenable de Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. Una vez formado, puede usarlo para identificar el elemento para la aplicación de etiquetas de confidencialidad de Office, directivas de cumplimiento de comunicaciones y directivas de etiquetas de retención.
+Un Microsoft 365 clasificador que se puede entrenar es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. Una vez formado, puede usarlo para identificar el elemento para la aplicación de etiquetas de Office de confidencialidad, directivas de cumplimiento de comunicaciones y directivas de etiquetas de retención.
 
 En este artículo se muestra cómo mejorar el rendimiento de los clasificadores personalizados y algunos clasificadores previamente formados proporcionando comentarios adicionales.
 
@@ -39,7 +39,7 @@ Vea este vídeo para obtener un resumen rápido del proceso de ajuste y reciclaj
 
 ## <a name="permissions"></a>Permisos
 
-Para obtener acceso a clasificadores en el Centro de cumplimiento de Microsoft 365:
+Para obtener acceso a clasificadores en el centro de Microsoft 365 cumplimiento:
 
 - el rol de administrador de cumplimiento o el administrador de datos de cumplimiento es necesario para entrenar a un clasificador
 
@@ -50,7 +50,7 @@ Necesitará cuentas con estos permisos para usar clasificadores en estos escenar
 ## <a name="overall-workflow"></a>Flujo de trabajo general
 
 > [!IMPORTANT]
-> Proporciona comentarios en el explorador de contenido para aplicar automáticamente directivas de etiquetas de retención a los elementos de Exchange y usa el clasificador como condición. **Si no tiene una directiva de retención que aplique automáticamente una etiqueta de retención a los elementos de Exchange y use un clasificador como condición, detén aquí.**
+> Proporciona comentarios en el explorador de contenido para aplicar automáticamente directivas de etiquetas de retención a Exchange elementos y usa el clasificador como condición. **Si no tiene una directiva de retención que aplique automáticamente una etiqueta de retención a los elementos Exchange y use un clasificador como condición, detén aquí.**
 
 Al usar los clasificadores, es posible que desee aumentar la precisión de las clasificaciones que están realizando. Para ello, evalúe la calidad de las clasificaciones realizadas para los elementos que ha identificado como una coincidencia o no una coincidencia. Después de realizar 30 evaluaciones para un clasificador, toma los comentarios y se vuelve a entrenar automáticamente.
 
@@ -61,7 +61,7 @@ Para obtener más información sobre el flujo de trabajo general de reentrenamie
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo volver a entrenar un clasificador en el explorador de contenido
 
-1. Inicie sesión en el Centro de cumplimiento de Microsoft 365 con acceso a roles de administrador de seguridad o administración de cumplimiento y abra el Explorador de contenido de clasificación de datos del Centro de cumplimiento de **Microsoft 365.**  >    >   
+1. Inicie sesión en el Microsoft 365 de cumplimiento con el acceso a roles de administrador de seguridad o administración de cumplimiento y **abra** Microsoft 365 explorador de contenido de clasificación  >  **de** datos del  >  **centro de cumplimiento.** 
 2. En la **lista Filtrar por etiquetas, tipos** de información o categorías, expanda **Clasificadores que se pueden entrenar.**
 
 > [!IMPORTANT]
@@ -96,7 +96,7 @@ Para obtener más información sobre el flujo de trabajo general de reentrenamie
 
 12. Revise la acción recomendada y las comparaciones de predicción de las versiones reentrenadas y publicadas actualmente del clasificador.
 13. Si está satisfecho con los resultados de la readaptación, elija **Volver a publicar**.
-14. Si no está satisfecho con los resultados del reentrenamiento, puede elegir proporcionar comentarios adicionales al clasificador en la interfaz de cumplimiento de comunicaciones e iniciar otro ciclo de reciclaje o no hacer nada en cuyo caso se seguirá usando la versión publicada actualmente del clasificador. 
+14. Si no está satisfecho con los resultados de la readaptación, puede elegir proporcionar comentarios adicionales al clasificador en la interfaz del Explorador de contenido e iniciar otro ciclo de reentrenamiento o no hacer nada en cuyo caso se seguirá usando la versión publicada actualmente del clasificador. 
 
 ## <a name="details-on-republishing-recommendations"></a>Detalles sobre recomendaciones de reedición
 
@@ -109,7 +109,7 @@ Después de un reentrenamiento, se evalúa el rendimiento del clasificador tanto
 
 Comparamos los números de rendimiento en ambos conjuntos de elementos para el clasificador reentrenado y publicado para proporcionar una recomendación sobre si hubo mejoras para volver a publicar. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Obtenga información sobre los clasificadores entrenables](classifier-learn-about.md)
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

@@ -1,5 +1,5 @@
 ---
-title: Paso 4. Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión
+title: Paso 4. Implementar la administración de puntos de conexión para sus dispositivos, PCs y otros puntos de conexión
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: 116f2a92ccae43a36a8a4ceafcd598c532a852c3
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ef43f447b819a6e5d9d0de1d979d7d30887e30fb
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028997"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789116"
 ---
-# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión
+# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para sus dispositivos, PCs y otros puntos de conexión
 
-Con los trabajadores remotos, hay que dar soporte a un número cada vez mayor de dispositivos personales. La administración de puntos de conexión es un planteamiento de seguridad basado en directivas que requiere que los dispositivos cumplan determinados criterios antes de que se les conceda acceso a los recursos. Microsoft Endpoint Manager ofrece funcionalidades de administración modernas para proteger los datos en la nube y en los entornos locales. 
+Con los trabajadores remotos, es necesario admitir un número creciente de dispositivos personales. La administración de puntos de conexión es un planteamiento de seguridad basado en directivas que requiere que los dispositivos cumplan determinados criterios antes de que se les conceda acceso a los recursos. Microsoft Endpoint Manager ofrece funcionalidades de administración modernas para proteger los datos en la nube y en los entornos locales. 
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) proporciona servicios y herramientas para administrar dispositivos móviles, equipos de escritorio, equipos virtuales, dispositivos incorporados y servidores mediante la combinación de los siguientes servicios, los cuales puede que ya conozca o esté usando.
 
@@ -38,7 +38,7 @@ Microsoft Intune es un servicio basado en la nube que se centra en la administra
 
 - **MDM:** Para los dispositivos que pertenecen a la organización, puede ejercer un control total que incluya la configuración, las características y la seguridad. Los dispositivos se "inscriben" en Intune, donde reciben las directivas de Intune con reglas y configuraciones. Por ejemplo, puede establecer requisitos para la contraseña y el PIN, crear una conexión VPN, configurar la protección contra amenazas y mucho más.
 
-- **MAM:** Es posible que los trabajadores remotos no quieran que usted tenga el control total de sus dispositivos personales, conocidos también como dispositivos Bring Your Own Device (BYOD). Puede ofrecer opciones a los trabajadores remotos y seguir protegiendo su organización. Por ejemplo, los trabajadores remotos pueden inscribir sus dispositivos si quieren acceso total a los recursos de la organización. O bien, si estos usuarios solo quieren tener acceso al correo electrónico o a Microsoft Teams, entonces use las directivas de protección de aplicaciones que requieren la autenticación multifactor (MFA) para usar estas aplicaciones.
+- **MAM:** Es posible que los trabajadores remotos no quieran que usted tenga el control total de sus dispositivos personales, conocidos también como dispositivos Bring Your Own Device (BYOD). Puede dar opciones a sus trabajadores remotos y seguir protegiendo a su organización. Por ejemplo, los trabajadores remotos pueden inscribir sus dispositivos si quieren tener acceso completo a los recursos de su organización. O bien, si estos usuarios solo quieren tener acceso al correo electrónico o a Microsoft Teams, entonces use las directivas de protección de aplicaciones que requieren la autenticación multifactor (MFA) para usar estas aplicaciones.
 
 Para obtener más información, vea esta [introducción a Microsoft Intune](/intune/fundamentals/what-is-intune).
 
@@ -70,7 +70,7 @@ Con el análisis de escritorio, puede:
 
 Para obtener más información, vea esta [introducción a Análisis de escritorio](/mem/configmgr/desktop-analytics/overview).
 
-## <a name="windows-autopilot"></a>Windows Autopilot
+## <a name="windows-autopilot"></a>Windows Autopilot
 
 Windows Autopilot es una plataforma autoservicio de implementación de Windows que no requiere intervención. Incluye una colección de tecnologías para configurar y preconfigurar nuevos dispositivos, así como para prepararlos para un uso productivo. También se puede usar Windows Autopilot para restablecer, reasignar y recuperar dispositivos. 
 
@@ -95,4 +95,4 @@ Ya está usando el conjunto de características y funcionalidades de Endpoint Ma
 
 [![Paso 5: Implementar servicios y aplicaciones de productividad para los trabajadores remotos](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
-Continúe con el [paso 5](empower-people-to-work-remotely-teams-productivity-apps.md) para que los trabajadores remotos usen las aplicaciones de productividad de Microsoft 365, como Microsoft Teams.
+Continúe con el [paso 5](empower-people-to-work-remotely-teams-productivity-apps.md)para que sus trabajadores remotos utilicen las aplicaciones de productividad de Microsoft 365, como Microsoft Teams.

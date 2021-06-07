@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 232f7133f177e3d0aa93fcb2835fb86bcfd0d37c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769328"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782878"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personalizar las reglas de la reducción de superficie expuesta a ataques
 
@@ -46,8 +46,14 @@ Puedes establecer reglas de reducción de superficie de ataque para dispositivos
 
 Puedes excluir archivos y carpetas para que no se evalúen mediante reglas de reducción de superficie de ataque. Una vez excluido, el archivo no se bloqueará para que se ejecute incluso si una regla de reducción de superficie de ataque detecta que el archivo contiene un comportamiento malintencionado.
 
+Por ejemplo, considere la regla de ransomware:
+
+La regla ransomware está diseñada para ayudar a los clientes empresariales a reducir los riesgos de ataques de ransomware al mismo tiempo que garantiza la continuidad del negocio. De forma predeterminada, la regla ransomware producirá un error en el lado de la precaución y protegerá contra los archivos que aún no han alcanzado suficiente reputación y confianza. To reemphasize, the ransomware rule only triggers on files that have not gained enough positive reputation and prevalence, based on usage metrics of millions of our customers. Normalmente, los bloques se resuelven automáticamente, ya que los valores de "reputación y confianza" de cada archivo se actualizan incrementalmente a medida que aumenta el uso no problemático.
+
+En los casos en los que los bloques no  se resuelven automáticamente de forma oportuna, los clientes pueden , bajo su propio riesgo, usar el mecanismo de autoservicio o una funcionalidad de "lista de permitidos" basada en indicador de compromiso (IOC) para desbloquear los propios archivos.  
+
 > [!WARNING]
-> Esto podría permitir que los archivos no seguros se ejecuten e infecten los dispositivos. Excluir archivos o carpetas puede reducir considerablemente la protección proporcionada por las reglas de reducción de la superficie expuesta a ataques. Los archivos que se habrían bloqueado por una regla podrán ejecutarse y no se registrará ningún informe o evento.
+> Excluir o desbloquear archivos o carpetas podría permitir potencialmente que los archivos no seguros se ejecuten e infecten los dispositivos. Excluir archivos o carpetas puede reducir considerablemente la protección proporcionada por las reglas de reducción de la superficie expuesta a ataques. Los archivos que se habrían bloqueado por una regla podrán ejecutarse y no se registrará ningún informe o evento.
 
 La exclusión se aplica a todas las reglas que permiten exclusiones. Puede especificar un archivo individual, una ruta de acceso de carpeta o el nombre de dominio completo para un recurso. Sin embargo, no se puede limitar una exclusión a una regla específica.
 
@@ -57,7 +63,7 @@ La reducción de superficie de ataque admite variables de entorno y caracteres c
 Si tiene problemas con las reglas que detectan archivos que cree que no deben detectarse, use el modo de auditoría [para probar la regla](evaluate-attack-surface-reduction.md).
 
 | Descripción de la regla | GUID |
-|:----|:----|:----|
+|:----|:----|
 | Bloquear todas Office aplicaciones de creación de procesos secundarios | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | Bloquear la ejecución de scripts potencialmente ofuscados | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
 | Bloquear llamadas a la API de Win32 desde Office macro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |

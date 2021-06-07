@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Conéctese a su espacio empresarial de Microsoft 365 mediante PowerShell para Microsoft 365 de forma que pueda realizar tareas desde el Centro de administración desde la línea de comandos.
-ms.openlocfilehash: 08005ba1cbdcbfec14585d22614129a9b33352b9
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 70d6aa1373daf2322319d21e385fc1498af3351e
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445761"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782806"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Conectarse a Microsoft 365 con PowerShell
 
@@ -42,7 +42,7 @@ Actualmente, el Módulo Azure Active Directory PowerShell para Graph no reemplaz
 
 **Sistema operativo**
 
-Debe usar una versión de 64 bits de Windows. El soporte para la versión de 32 bits de Módulo Microsoft Azure AD para Windows PowerShell finalizó en 2014.
+Use una versión de 64 bits de Windows. La compatibilidad con la versión de 32 bits de Módulo Microsoft Azure Active Directory para Windows PowerShell se descontinuó en 2014.
 
 Puede usar las siguientes versiones de Windows:
     
@@ -57,7 +57,7 @@ Puede usar las siguientes versiones de Windows:
 
 - Para el Módulo Azure Active Directory PowerShell para Graph, debe usar la versión 5.1 o posterior de PowerShell.
 
-- Para el Módulo Microsoft Azure Active Directory para Windows PowerShell, debe usar la versión 5.1 o posterior de PowerShell, hasta la versión 6. No puede usar la versión 7 de PowerShell.
+- Para el Módulo Microsoft Azure Active Directory para Windows PowerShell, debe usar la versión 5.1 o posterior de PowerShell, hasta la versión 6 de PowerShell. No puede usar la versión 7 de PowerShell.
        
 >[!Note]
 >Estos procedimientos están diseñados para los usuarios que sean miembros de un rol de administrador de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
@@ -101,7 +101,7 @@ Responda **Sí** o **Sí a todo** para continuar con la instalación.
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Paso 2: Conectarse a Azure AD para la suscripción de Microsoft 365
 
-Para conectarse a Azure Active Directory (Azure AD) para la suscripción de Microsoft 365 con un nombre de cuenta y contraseña o con la autenticación multifactor, ejecute uno de estos comandos desde un símbolo del sistema de Windows PowerShell (no tiene que ser con privilegios elevados).
+Para conectarse a Azure AD para la suscripción de Microsoft 365 con un nombre de cuenta y contraseña o con la autenticación multifactor (MFA), ejecute uno de estos comandos desde un símbolo del sistema de Windows PowerShell (no tiene que ser elevado).
 
 | Nube de Office 365 | Comando |
 |:-------|:-----|
@@ -130,7 +130,7 @@ PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory
 
 Estos pasos son necesarios solo una vez en el equipo. Pero es probable que tenga que actualizar el software periódicamente.
   
-1.  Si no ejecuta Windows 10, instale la versión de 64 bits del asistente para inicio de sesión de Microsoft Online Services: [Ayudante para el inicio de sesión de Microsoft Online Services para profesionales de TI (RTW)](https://www.microsoft.com/Download/details.aspx?id=28177).
+1.  Si no ejecuta Windows 10, instale la versión de 64 bits del asistente para inicio de sesión de Microsoft Online Services: [Ayudante para el inicio de sesión de Microsoft Online Services para profesionales de TI (RTW)](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
     
 2. Siga estos pasos para instalar el Módulo Microsoft Azure Active Directory para Windows PowerShell:
     
@@ -141,7 +141,7 @@ Estos pasos son necesarios solo una vez en el equipo. Pero es probable que tenga
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Paso 2: Conectarse a Azure AD para la suscripción de Microsoft 365
 
-Para conectarse a Azure AD para su suscripción de Microsoft 365 con un nombre de cuenta y contraseña o con la autenticación multifactor, ejecute uno de estos comandos desde un símbolo del sistema de Windows PowerShell (no tiene que ser con privilegios elevados).
+Para conectarse a Azure AD para la suscripción de Microsoft 365 con un nombre de cuenta y contraseña o con la autenticación multifactor, ejecute uno de estos comandos desde un símbolo del sistema de Windows PowerShell (no tiene que ser elevado).
 
 | Nube de Office 365 | Comando |
 |:-------|:-----|

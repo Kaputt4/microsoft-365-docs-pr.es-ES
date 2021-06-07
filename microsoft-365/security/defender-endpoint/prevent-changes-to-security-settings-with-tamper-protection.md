@@ -17,12 +17,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 05/17/2021
-ms.openlocfilehash: ed9eb425d718a2dbdaa2cdb3ab1e6899c9870124
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2d212bedf9033b0824d32e7f42afea3944d9ca67
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538894"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782818"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -78,7 +78,7 @@ En la tabla siguiente se proporcionan detalles sobre los métodos, herramientas 
 
 | Cómo se habilita la protección contra alteraciones  | Dependencia de MAPS (protección entregada en la nube)    |
 |:----|:----|
-| Microsoft Intune  | No |
+| Microsoft Intune  | No |
 | Microsoft Endpoint Configuration Manager + agregado de inquilino  |     No  |
 | Centro de seguridad de Microsoft Defender ( [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) )    |     Sí |
 | Microsoft 365 de seguridad ( [https://security.microsoft.com](https://security.microsoft.com) )  |     Sí  |
@@ -257,7 +257,7 @@ Si es una organización que usa [Microsoft Defender para](/microsoft-365/securit
 
 - [Administrar la protección contra alteraciones con Intune](#manage-tamper-protection-for-your-organization-using-intune)
 - [Administrar la protección contra alteraciones con Configuration Manager, versión 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) (actualmente en versión preliminar)
+- [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) 
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-through-my-group-policy"></a>¿Cómo afecta la configuración de la protección contra alteraciones en Intune la forma en que Antivirus de Microsoft Defender a través de mi directiva de grupo?
 
@@ -299,7 +299,7 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 [Ver información sobre intentos de manipulación](#view-information-about-tampering-attempts).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Ayudar a proteger Windows equipos con Endpoint Protection para Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 

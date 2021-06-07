@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6460860828acd5ea0c3509e9eb06061d2a9a0cc2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 88ad63d8b7cc71f7d3f809c7cb0371fc41bb9f5d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200154"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771170"
 ---
 # <a name="find-devices-by-tag-api"></a>Buscar dispositivos por API de etiqueta
 
@@ -75,7 +77,7 @@ Authorization | Cadena | Portador {token}. **Necesario**.
 Nombre | Tipo | Descripción
 :---|:---|:---
 tag | Cadena | El nombre de la etiqueta. **Necesario**.
-useStartsWithFilter | Booleano | Cuando se establece en true, la búsqueda buscará todos los dispositivos con el nombre de etiqueta que comiencen por la etiqueta dada en la consulta. Valores predeterminados de falso. **Opcional**.
+useStartsWithFilter | Boolean | Cuando se establece en true, la búsqueda buscará todos los dispositivos con el nombre de etiqueta que comiencen por la etiqueta dada en la consulta. Valores predeterminados de falso. **Opcional**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En blanco
@@ -83,7 +85,7 @@ En blanco
 ## <a name="response"></a>Respuesta
 Si se realiza correctamente: 200 Aceptar con una lista de las máquinas en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

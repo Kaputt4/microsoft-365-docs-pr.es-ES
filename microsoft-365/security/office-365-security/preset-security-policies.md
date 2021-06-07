@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en todas las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca65f003b0c206b0f7e23f3498a4ef0d0bc03fa6
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788984"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771230"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -119,7 +119,7 @@ En otras palabras,  la configuración de la  directiva de protección estricta i
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Usar el centro de seguridad para asignar directivas de seguridad preestablecidas a los usuarios
 
-1. En el centro de seguridad, vaya a Correo electrónico **&** directivas de colaboración & Reglas directivas de amenazas Plantilla sección Directivas de seguridad preestablecidas \>  \>  \>  \> .
+1. En el centro de seguridad, vaya a **Correo electrónico & directivas** de \> **colaboración & reglas** de amenazas \>  \> **preestablecidas directivas de seguridad**.
 
 2. En **Protección estándar o** Protección **estricta,** haga clic **en Editar**.
 

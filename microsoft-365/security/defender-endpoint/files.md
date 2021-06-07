@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9079a47dcc078b582586370b322502b74ce3838c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c4d392c9c7777a5ab5435d70e36822e11aa39dae
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199986"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771194"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -38,7 +39,7 @@ ms.locfileid: "51199986"
 
 Representa una entidad de archivo en Defender para endpoint.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 Método|Tipo de valor devuelto |Descripción
 :---|:---|:---
 [Obtener archivo](get-file-information.md) | [file](files.md) | Obtener un solo archivo 
@@ -57,13 +58,13 @@ Método|Tipo de valor devuelto |Descripción
 |globalLastObserved | DateTimeOffset | Última vez que se observó el archivo |
 |size | Long que admite valores NULL | Tamaño del archivo |
 |fileType | Cadena | Tipo del archivo |
-|isPeFile | Booleano | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
+|isPeFile | Boolean | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
 |filePublisher | Cadena | Editor de archivos |
 |fileProductName | Cadena | Nombre del producto |
 |firmante | Cadena | Firmante de archivos |
 |emisor | Cadena | Emisor de archivos |
 |signerHash | Cadena | Hash del certificado de firma |
-|isValidCertificate | Booleano | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
+|isValidCertificate | Boolean | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
 |determinationType | Cadena | El tipo de determinación del archivo |
 |determinationValue | Cadena | Valor de determinación |
 
