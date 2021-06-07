@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c6b3f965c7abb1cb9208f0bfa157c1fd8aa3f891
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 9da87dcb64f8c62966382e3a2888f03c49149a09
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500709"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770440"
 ---
 # <a name="get-exposure-score"></a>Obtener puntuación de exposición
 
@@ -96,7 +97,7 @@ Aquí tiene un ejemplo de la respuesta.
 
 ```
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 - [Administración de vulnerabilidades basada & riesgos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Puntuación de & vulnerabilidad de amenazas](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736353"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770678"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 y Office 365 de laboratorio de implementación
 
@@ -28,7 +28,7 @@ El kit Windows 10 y Office 365 de laboratorio de implementación de Office 365 e
 
 Este kit es muy recomendable para las organizaciones que se Windows 8.1 actualizaciones a Windows 10. También se aplica si actualmente usa Windows 10, Aplicaciones Microsoft 365 para empresas (anteriormente Office 365 ProPlus) o Office 2019. Como entorno aislado, el laboratorio resultante es ideal para explorar las actualizaciones de herramientas de implementación y probar la automatización relacionada con la implementación.
 
-[Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
+[Descargue el Windows 10 y Office 365 de laboratorio de implementación](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 ## <a name="a-complete-lab-environment"></a>Un entorno de laboratorio completo
 
@@ -36,7 +36,7 @@ El kit le proporciona un entorno de laboratorio virtual aprovisionado automátic
 
   - ¡NUEVO! Windows 10 Enterprise, versión 21H1
   - Windows 7 Enterprise
-  - ¡NUEVO! Microsoft Endpoint Configuration Manager, versión 2103*
+  - ¡NUEVO! Microsoft Endpoint Configuration Manager, versión 2103
   - Windows Assessment and Deployment Kit para Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)

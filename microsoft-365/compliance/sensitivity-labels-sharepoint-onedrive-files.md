@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para Word, Excel y PowerPoint archivos en SharePoint y OneDrive.
-ms.openlocfilehash: 16186bd1e5c4cd2ca5b1ccd81c24ec81bfd33597
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 8007f085e7bcba7f055f616954e2f0549f6f125a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684032"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770402"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Habilite las etiquetas de confidencialidad Office archivos SharePoint y OneDrive para que [](sensitivity-labels.md) los usuarios puedan aplicar las etiquetas de confidencialidad Office para la web. Cuando esta característica está habilitada,  los usuarios verán el botón Confidencialidad en la cinta de opciones para que puedan aplicar etiquetas y ver cualquier nombre de etiqueta aplicado en la barra de estado.
 
@@ -64,7 +64,7 @@ Siempre tienes la opción de deshabilitar las etiquetas de confidencialidad de O
 
 Si actualmente está protegiendo documentos en SharePoint mediante SharePoint Information Rights Management (IRM), asegúrese de comprobar la sección [SharePoint Information Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) y las etiquetas de confidencialidad de esta página. 
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Estas nuevas funcionalidades solo funcionan con [etiquetas de](sensitivity-labels.md) confidencialidad. Si actualmente tiene etiquetas de Azure Information Protection, migre primero a etiquetas de confidencialidad para que pueda habilitar estas características para los nuevos archivos que cargue. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas](/azure/information-protection/configure-policy-migrate-labels)
 
@@ -87,6 +87,8 @@ Usa la versión 19.002.0121.0008 de la aplicación de sincronización de OneDriv
     - **Cifrado de clave doble** seleccionado.
     
     Para las etiquetas con cualquiera de estas configuraciones de cifrado, las etiquetas no se muestran a los usuarios Office para la web. Además, las nuevas funcionalidades no se pueden usar con documentos etiquetados que ya tienen esta configuración de cifrado. Por ejemplo, estos documentos no se devolverán en los resultados de búsqueda, incluso si se actualizan.
+
+- Por motivos de rendimiento, al cargar o guardar un documento en SharePoint y la  etiqueta del archivo no aplica cifrado, la columna Confidencialidad de la biblioteca de documentos puede tardar un tiempo en mostrar el nombre de la etiqueta. Tenga en cuenta este retraso si usa scripts o automatización que dependen del nombre de la etiqueta en esta columna.
 
 - Los usuarios pueden experimentar retrasos al poder abrir documentos cifrados en el siguiente escenario guardar como: mediante una versión de escritorio de Office, un usuario elige Guardar como para un documento que tiene una etiqueta de confidencialidad que aplica cifrado. El usuario selecciona SharePoint o OneDrive para la ubicación y, a continuación, intenta abrir inmediatamente ese documento en Office para la web. Si el servicio sigue procesando el cifrado, el usuario ve un mensaje que indica que el documento debe abrirse en su aplicación de escritorio. Si lo intentan de nuevo en un par de minutos, el documento se abre correctamente en Office para la web. 
 
@@ -169,7 +171,8 @@ Para habilitar las nuevas funcionalidades, use el cmdlet [Set-SPOTenant](/powers
 
 1. Con una cuenta profesional o educativa que tenga privilegios de administrador global SharePoint administrador en Microsoft 365, conéctese a SharePoint. Para saber cómo hacerlo, consulte [Introducción al Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Nota: Si tiene Microsoft 365 Multi-Geo, use el parámetro -Url con [Conectar-SPOService](/powershell/module/sharepoint-online/connect-sposervice)y especifique la dirección URL del sitio del Centro de administración en línea de SharePoint para una de las ubicaciones geográficas.
+    > [!NOTE]
+    > Si ha Microsoft 365 multigeográfico, use el parámetro -Url con [Conectar-SPOService](/powershell/module/sharepoint-online/connect-sposervice)y especifique la dirección URL del sitio del Centro de administración en línea de SharePoint para una de las ubicaciones geográficas.
 
 2. Ejecute el siguiente comando y presione **Y** para confirmar:
 

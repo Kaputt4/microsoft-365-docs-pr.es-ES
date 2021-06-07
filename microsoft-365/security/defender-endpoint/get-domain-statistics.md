@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: eef06657d7f691a89e5985640431c2cc706557b4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: d2edc5d429d124412134b466753b65506d2dd7a9
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167135"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772190"
 ---
 # <a name="get-domain-statistics-api"></a>Obtener API de estadísticas de dominio
 
@@ -81,7 +82,7 @@ En blanco
 Si se realiza correctamente y el dominio existe: 200 Ok, con el objeto statistics en el cuerpo de la respuesta. Si el dominio no existe: 404 No encontrado.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

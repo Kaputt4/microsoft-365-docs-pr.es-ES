@@ -1,7 +1,7 @@
 ---
 title: Obtener KBs ausentes por id. de software
 description: Recupera las actualizaciones de seguridad que faltan por id. de software
-keywords: apis, api de gráficos, api admitidas, get, list, file, information, software id, threat & api de administración de vulnerabilidades, Api de Microsoft Defender para Endpoint tvm
+keywords: apis, api de gráficos, api admitidas, get, list, file, information, software id, threat & administración de vulnerabilidades api, Api de Microsoft Defender para Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 25ac8ce2c9fb17b2576f86dae1da984865b19018
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: d9218ad447f926f0086801036277323e7c1efb4c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933894"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770567"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Obtener KBs ausentes por id. de software
 

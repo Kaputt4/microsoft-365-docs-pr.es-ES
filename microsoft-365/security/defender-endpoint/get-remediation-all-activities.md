@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: cf7c79cb6cc76af88ce0293a013ba6edbf435d8c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: b95fa2da177a3ecb93bcf3e2085be6111c2c641e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245497"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770522"
 ---
 # <a name="list-all-remediation-activities"></a>Enumerar todas las actividades de corrección
 
@@ -82,14 +83,14 @@ requesterEmail | Cadena | Dirección de correo electrónico del creador | global
 requesterId | Cadena | Id. de objeto Creator | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | Cadena | Las notas (texto libre) que el creador agregó para esta actividad de corrección | nulo
 scid | Cadena | SCID de la recomendación de seguridad relacionada | nulo
-status | Cadena | Estado de la actividad de corrección (Activo/Completado) | Activo
+status | Cadena | Estado de la actividad de corrección (Activo/Completado) | Activa
 statusLastModifiedOn | DateTime | Fecha en la que se actualizó el campo de estado | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Número de dispositivos expuestos a los que se aplica esta corrección | 43
 title | Cadena | Título de esta actividad de corrección | Actualizar Microsoft Silverlight
-type | Cadena | Tipo de corrección | Update
+type | Cadena | Tipo de corrección | Actualizar
 vendorId | Cadena | Nombre de proveedor relacionado | Microsoft
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 
@@ -140,7 +141,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 

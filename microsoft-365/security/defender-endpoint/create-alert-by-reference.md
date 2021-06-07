@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9066bcdae549f7a6b1372714d567674eb03c1e51
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167072"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772394"
 ---
 # <a name="create-alert-api"></a>Crear API de alertas
 
@@ -96,7 +97,7 @@ categoría| Cadena | Categoría de la alerta. Los valores de propiedad son: "Gen
 
 Si se realiza correctamente, este método devuelve 200 Ok y un nuevo [objeto alert](alerts.md) en el cuerpo de la respuesta. If event with the specified properties (_reportId_, _eventTime_ and _machineId_) was not found - 404 Not Found.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

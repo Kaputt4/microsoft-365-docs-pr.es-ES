@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f8de54072c0b0ebef69b8e5586fee058b971c51f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c5de779566f1aa8e53da10b9aa5bceb92f5a0a3c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166868"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772262"
 ---
 # <a name="get-domain-related-alerts-api"></a>Obtener api de alertas relacionadas con el dominio
 
@@ -79,7 +80,7 @@ En blanco
 Si se realiza correctamente y el dominio existe: 200 Aceptar con la lista [de](alerts.md) entidades de alerta. Si el dominio no existe: 404 No encontrado.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

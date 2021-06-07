@@ -6,19 +6,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.reviewer: dansimp
 ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: ee8e7be20076bde41867981008e53a70c134e47e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 47eb80af58c948db5997dc9f5edfa5737a796837
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893919"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772370"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>Proteger los datos de la organización con el control de dispositivos
 
@@ -43,7 +43,7 @@ Los eventos de auditoría incluyen:
 
 ## <a name="monitor-device-control-security"></a>Supervisar la seguridad del control de dispositivos
 
-El control de dispositivos en Microsoft Defender para endpoint habilita a los administradores de seguridad con herramientas que les permiten realizar un seguimiento de la seguridad del control de dispositivos de su organización a través de informes. Para encontrar el informe de control de dispositivos en el Centro de seguridad de Microsoft 365, vaya a **Informes > protección de dispositivos**.
+El control de dispositivos en Microsoft Defender para endpoint habilita a los administradores de seguridad con herramientas que les permiten realizar un seguimiento de la seguridad del control de dispositivos de su organización a través de informes. Puedes encontrar el informe de control de dispositivos en el centro de Microsoft 365 de seguridad yendo a **Informes > Protección de dispositivos**.
 
 La tarjeta de protección de dispositivos del panel **Informes** muestra el número de eventos de auditoría generados por tipo de medio en los últimos 180 días.
 
@@ -61,7 +61,7 @@ Al seleccionar un evento, aparece un flyout que muestra más información:
 
 - **Detalles generales:** Fecha, modo acción y directiva de este evento.
 - **Información multimedia:** La información multimedia incluye Nombre de medios, Nombre de clase, GUID de clase, Id. de dispositivo, Id. de proveedor, Volumen, Número de serie y Tipo de bus.
-- **Detalles de ubicación:** Nombre del dispositivo e id. de dispositivo MDATP.
+- **Detalles de ubicación:** Nombre del dispositivo y MDATP id. del dispositivo.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

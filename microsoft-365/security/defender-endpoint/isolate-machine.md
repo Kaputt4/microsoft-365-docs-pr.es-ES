@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: b9c8d4da528ba065dc1b4a68ddaa816a1ad78c4a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 9f3313a08b072f4fb2f699148ab801207e56fc09
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187841"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772122"
 ---
 # <a name="isolate-machine-api"></a>AISLAR API de máquina
 
@@ -73,7 +74,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 Nombre | Tipo | Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | string | application/json. **Necesario**.
+Content-Type | cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
@@ -92,7 +93,7 @@ IsolationType   | Cadena |  Tipo de aislamiento. Los valores permitidos son: "Co
 Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

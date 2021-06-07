@@ -1,5 +1,5 @@
 ---
-title: Paso 1. Aumentar la seguridad de inicio de sesión para trabajadores remotos con MFA
+title: Paso 1. Aumentar la seguridad del inicio de sesión de los trabajadores híbridos con MFA
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,21 +16,21 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Requerir que los trabajadores remotos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: 1c69f2ee7520a554a726bc0ffd9e2d7ebca64261
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: Requerir que los trabajadores híbridos inicien sesión con autenticación multifactor (MFA).
+ms.openlocfilehash: 105c2f7170b4bea648427b0fda57ad081cb99a86
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028973"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788969"
 ---
-# <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Paso 1. Aumentar la seguridad de inicio de sesión para trabajadores remotos con MFA
+# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Paso 1. Aumentar la seguridad del inicio de sesión de los trabajadores híbridos con MFA
 
-Para aumentar la seguridad de los inicios de sesión de los trabajadores remotos, use la autenticación multifactor (MFA). MFA requiere que los inicios de sesión de usuario estén sujetos a una comprobación adicional más allá de la contraseña de la cuenta de usuario. Incluso si un usuario malintencionado determina la contraseña de una cuenta de usuario, también debe poder responder a una comprobación adicional, como un mensaje de texto que se envía a un smartphone, antes de que se otorgue el acceso.
+Para aumentar la seguridad de los inicios de sesión de sus trabajadores híbridos, utilice la autenticación multifactor (MFA). MFA requiere que los inicios de sesión de usuario estén sujetos a una comprobación adicional más allá de la contraseña de la cuenta de usuario. Incluso si un usuario malintencionado determina la contraseña de una cuenta de usuario, también debe poder responder a una comprobación adicional, como un mensaje de texto que se envía a un smartphone, antes de que se otorgue el acceso.
 
 ![La contraseña correcta más una comprobación adicional produce un inicio de sesión correcto](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Microsoft recomienda MFA para todos los trabajadores remotos, especialmente los administradores.
+Para todos los usuarios, incluidos los trabajadores híbridos y especialmente los administradores, Microsoft recomienda encarecidamente la MFA.
 
 Existen tres formas de requerir que los usuarios usen MFA basándose en su plan de Microsoft 365.
 
@@ -101,7 +101,7 @@ El Restablecimiento de Contraseña de Autoservicio (SSPR) permite a los usuarios
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Iniciar sesión en aplicaciones SaaS con Azure AD
 
-Además de proporcionar autenticación en la nube para los usuarios, Azure AD también puede ser el método centralizado para proteger todas las aplicaciones, tanto si son locales como si encuentran en la nube de Microsoft o en otra nube. Con la [integración de Azure Active Directory con las aplicaciones](/azure/active-directory/manage-apps/plan-an-application-integration), puede facilitar a los trabajadores remotos la detección de las aplicaciones que necesitan y el inicio de sesión en ellas de forma segura.
+Además de proporcionar autenticación en la nube para los usuarios, Azure AD también puede ser el método centralizado para proteger todas las aplicaciones, tanto si son locales como si encuentran en la nube de Microsoft o en otra nube. Al [ integrar sus aplicaciones en Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration), puede facilitar el descubrimiento por parte de los trabajadores híbridos de las aplicaciones que necesitan e inicien sesión en ellas de forma segura.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Recursos técnicos de administración para MFA e identidad
 

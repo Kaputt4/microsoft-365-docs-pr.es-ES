@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 9b10659f76e5b05bea11f5c6c55ca7c2a34a2db5
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241717"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772166"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Lista de dispositivos expuestos de una actividad de corrección
 
@@ -67,7 +68,7 @@ computerDnsName | Cadena | Nombre del dispositivo | PC-SRV2012R2Foo.UserNameVldN
 osPlatform | Cadena | Sistema operativo del dispositivo | WindowsServer2012R2
 rbacGroupName | Cadena | Nombre del grupo de dispositivos al que está asociado este dispositivo | Servidores
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 
@@ -113,7 +114,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 

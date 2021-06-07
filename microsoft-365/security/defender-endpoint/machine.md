@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 43a136bb3432adcd47589d29aa5de8f8f6299ba8
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7b95fc487a8ee3e82e0f215b34aa564e063534af
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683072"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772082"
 ---
 # <a name="machine-resource-type"></a>Tipo de recurso Máquina
 
@@ -44,7 +45,7 @@ Método|Tipo de valor devuelto |Descripción
 :---|:---|:---
 [Enumerar máquinas](get-machines.md) | [colección machine](machine.md) | Enumerar el conjunto [de entidades](machine.md) de máquina de la organización.
 [Obtener máquina](get-machine-by-id.md) | [máquina](machine.md) | Obtener una [máquina por](machine.md) su identidad.
-[Iniciar sesión en los usuarios](get-machine-log-on-users.md) | Colección [usario](user.md) | Obtener el conjunto de [usuario](user.md) que inició sesión en el [equipo](machine.md).
+[Iniciar sesión en los usuarios](get-machine-log-on-users.md) | Colección [user](user.md) | Obtener el conjunto de [usuario](user.md) que inició sesión en el [equipo](machine.md).
 [Obtener alertas relacionadas](get-machine-related-alerts.md) | Colección [alert](alerts.md) | Obtener el conjunto de [entidades](alerts.md) de alerta que se generaron en la [máquina](machine.md).
 [Obtener software instalado](get-installed-software.md) | [colección de software](software.md) | Recupera una colección de software instalado relacionado con un identificador de máquina determinado.
 [Obtener las vulnerabilidades detectadas](get-discovered-vulnerabilities.md) | [colección vulnerability](vulnerability.md) | Recupera una colección de vulnerabilidades detectadas relacionadas con un identificador de máquina determinado.

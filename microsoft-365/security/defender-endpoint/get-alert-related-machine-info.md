@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 70ce6adce3e14be7ee440b96587b8f9402c0b99f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ef10d2bd7193fc7b4a1604658f496ef38ef33555
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166988"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772355"
 ---
 # <a name="get-alert-related-machine-information-api"></a>Obtener API de información de máquina relacionada con alertas
 
@@ -82,7 +83,7 @@ En blanco
 ## <a name="response"></a>Respuesta
 Si se realiza correctamente y la alerta y el dispositivo existen: 200 Aceptar. Si no se encuentra la alerta o no se encuentra el dispositivo: 404 No encontrado.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

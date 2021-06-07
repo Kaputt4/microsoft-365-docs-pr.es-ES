@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: dbcde70b32f9a10280dd43e98c5a237a0027a33c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: a12ae502702b7fc9f69b01cd67857003258c20f2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167192"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770132"
 ---
 # <a name="get-ip-related-alerts-api"></a>Obtener API de alertas relacionadas con IP
 
@@ -78,7 +79,7 @@ En blanco
 Si se realiza correctamente e IP existe: 200 Aceptar con la lista [de](alerts.md) entidades de alerta en el cuerpo. Si la IP no existe: 404 No se encontró.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

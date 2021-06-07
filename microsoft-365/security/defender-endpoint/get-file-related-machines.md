@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 051bdad362e142446d248e90fad608fe5c0f016f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 211a29bcd9265ae20c4f3e1817fcaaf562260d39
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166816"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770282"
 ---
 # <a name="get-file-related-machines-api"></a>Obtener API de máquinas relacionadas con archivos
 
@@ -79,7 +80,7 @@ En blanco
 Si se realiza correctamente y el archivo existe: 200 Aceptar con la lista [de](machine.md) entidades de máquina en el cuerpo. Si el archivo no existe: 404 No encontrado.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

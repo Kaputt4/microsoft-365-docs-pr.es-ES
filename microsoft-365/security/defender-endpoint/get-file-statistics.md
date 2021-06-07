@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: ff43f6c46d89bc92cd1dc2a4fb0f329757b8f69e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 6063d29562be40aed3060e241b52b1a2936aa36d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167123"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770210"
 ---
 # <a name="get-file-statistics-api"></a>OBTENER API de estadísticas de archivos
 
@@ -81,7 +82,7 @@ En blanco
 Si se realiza correctamente y el archivo existe: 200 Aceptar con datos estadísticos en el cuerpo. Si el archivo no existe: 404 No encontrado.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

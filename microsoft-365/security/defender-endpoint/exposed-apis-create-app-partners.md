@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bc58241be69a1d8e1a78abc583b2c87dbef9cfa7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 6182b4cb0d1f648f33c3a7fc4da4c648d8996bcd
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199429"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770618"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Acceso de partners a través de Microsoft Defender para api de punto de conexión
 
@@ -36,10 +37,10 @@ ms.locfileid: "51199429"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-En esta página se describe cómo crear una aplicación de Azure Active Directory (Azure AD) para obtener acceso mediante programación a Microsoft Defender para endpoint en nombre de los clientes.
+En esta página se describe cómo crear una aplicación Azure Active Directory (Azure AD) para obtener acceso mediante programación a Microsoft Defender para endpoint en nombre de los clientes.
 
 
-Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le ayudarán a automatizar los flujos de trabajo e innovar en función de las capacidades de Microsoft Defender para puntos de conexión. El acceso a la API requiere autenticación de OAuth2.0. Para obtener más información, vea Flujo de código de autorización de [OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le ayudarán a automatizar los flujos de trabajo e innovar en función de las capacidades de Microsoft Defender para puntos de conexión. El acceso a la API requiere autenticación de OAuth2.0. Para obtener más información, vea Código de autorización [de OAuth 2.0 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En general, deberá seguir los pasos siguientes para usar las API:
 - Crear una aplicación de Azure AD **multiinquilino.**
@@ -53,9 +54,9 @@ Los siguientes pasos le guiarán sobre cómo crear una aplicación de Azure AD, 
 
 1. Inicie sesión en el inquilino [de Azure](https://portal.azure.com) con el usuario que tenga el rol **De administrador** global.
 
-2. Vaya a **Azure Active Directory** App  >  **registrations** New  >  **registration**. 
+2. Vaya a **Azure Active Directory**  >  **registros de aplicaciones** Nuevo  >  **registro**. 
 
-   ![Imagen de Microsoft Azure y navegación al registro de aplicaciones](images/atp-azure-new-app2.png)
+   ![Imagen de Microsoft Azure navegación al registro de aplicaciones](images/atp-azure-new-app2.png)
 
 3. En el formulario de registro:
 
@@ -65,7 +66,7 @@ Los siguientes pasos le guiarán sobre cómo crear una aplicación de Azure AD, 
 
     - URI de redireccionamiento: tipo: Web, URI: https://portal.azure.com
 
-    ![Imagen del registro de aplicaciones asociadas de Microsoft Azure](images/atp-api-new-app-partner.png)
+    ![Imagen del registro Microsoft Azure de la aplicación asociada](images/atp-api-new-app-partner.png)
 
 
 4. Permitir que la aplicación tenga acceso a Microsoft Defender para endpoint y asignarla con el conjunto mínimo de permisos necesarios para completar la integración.
@@ -140,7 +141,7 @@ Los siguientes pasos le guiarán sobre cómo crear una aplicación de Azure AD, 
 
 <br>Para obtener más información sobre el token de AAD, vea [tutorial de AAD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
-### <a name="using-powershell"></a>Mediante PowerShell
+### <a name="using-powershell"></a>Con PowerShell
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -200,7 +201,7 @@ Consulte Obtener [token con Python](run-advanced-query-sample-python.md#get-toke
 ### <a name="using-curl"></a>Uso de Rizos
 
 > [!NOTE]
-> El siguiente procedimiento supone que Curl para Windows ya está instalado en el equipo
+> El siguiente procedimiento supone que El Windows ya está instalado en el equipo
 
 - Abrir una ventana de comandos
 - Establecer CLIENT_ID en el identificador de aplicación de Azure
@@ -247,6 +248,6 @@ Comprobación de la cordura para asegurarse de que tiene un token correcto:
     // Do something useful with the response
     ```
 
-## <a name="see-also"></a>Vea también
-- [Compatible con Microsoft Defender para LAS API de punto de conexión](exposed-apis-list.md)
+## <a name="see-also"></a>Consulte también
+- [API compatibles de Microsoft Defender para punto de conexión](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint en nombre de un usuario](exposed-apis-create-app-nativeapp.md)

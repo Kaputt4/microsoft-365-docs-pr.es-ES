@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e47a97477500491f634e3f5134a32241bd68985b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7ac7fdf4c38846e2e8be614567ddb87a98e3a96c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935298"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772130"
 ---
 # <a name="list-software-version-distribution"></a>Enumerar distribución de versión de software 
 
@@ -63,7 +65,7 @@ En blanco
 Si se realiza correctamente, este método devuelve 200 Ok con una lista de datos de distribuciones de software en el cuerpo. 
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 
