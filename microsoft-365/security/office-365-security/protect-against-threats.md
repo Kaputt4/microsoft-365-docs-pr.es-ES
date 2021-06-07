@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: ac90aa853769b239386d422e0b196a1f6140bf95
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696555"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793201"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -101,45 +101,57 @@ Para obtener más información acerca de la configuración recomendada para anti
 
    Cuando haya terminado, haga clic en **Guardar**.
 
-4. Vuelva al menú desplegable de detalles de la directiva, haga clic **en Cerrar**.
+4. De nuevo en el control flotante de detalles de la directiva, haga clic en **Cerrar**.
 
 Para obtener instrucciones detalladas para configurar directivas antimalware, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-## <a name="part-2---anti-phishing-protection"></a>Parte 2: Protección contra la suplantación de identidad
+## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>Parte 2: Protección contra la suplantación de identidad en EOP y Defender para Office 365
 
 [La protección contra la suplantación](anti-phishing-protection.md) de identidad está disponible en suscripciones que incluyen [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). La protección contra suplantación de identidad avanzada está disponible en [Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-En el siguiente procedimiento se describe cómo configurar una directiva contra la suplantación de identidad en Microsoft Defender para Office 365. Los pasos son similares para configurar una directiva contra suplantación de identidad en EOP.
+Para obtener más información acerca de la configuración recomendada para las directivas contra suplantación de identidad(phishing), consulte [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-1. En el [Centro de seguridad & cumplimiento,](https://protection.office.com)elija Directiva de **administración** de amenazas Contra \>  \> **la suplantación de identidad**.
+En el siguiente procedimiento se describe cómo configurar la directiva contra suplantación de identidad predeterminada. Configuración que solo están disponibles en Defender para Office 365 están claramente marcados.
 
-2. Haga clic **en Directiva predeterminada**.
+1. Abra <https://security.microsoft.com/antiphishing> .
 
-3. En la **sección Suplantación,** haga clic **en Editar** y, a continuación, especifique la siguiente configuración:
+2. En la **página Anti-phishing,** seleccione la directiva denominada **Office365 AntiPhish Default (Valor predeterminado)** haciendo clic en el nombre.
 
-   - En la **pestaña Agregar usuarios para proteger,** activa la *protección.* A continuación, agregue usuarios, como los miembros de la junta directiva de su organización, su director general, director financiero y otros líderes sénior. (Puede escribir una dirección de correo electrónico individual o hacer clic para mostrar una lista).
+3. En el menú desplegable de detalles de la directiva que aparece, configure las siguientes opciones:
 
-   - En la **pestaña Agregar dominios para proteger,** active Incluir automáticamente los dominios que **tengo.** Si tiene dominios personalizados, agrégrelos ahora.
+   - **Sección Protección contra &** de suplantación de identidad: haga clic en Editar configuración de protección y configure las siguientes opciones en el control desplegable Editar configuración de protección que se abre:  
+     - **Umbral de correo electrónico de suplantación** de identidad ( Phishing email threshold : Select <sup>\*</sup> **2 - Aggressive** (Standard) or **3 - More Aggressive** (Strict).
+     - **Sección suplantación:** <sup>\*</sup> Configure los siguientes valores:
+       - Seleccione Habilitar usuarios para proteger, haga clic en el vínculo Administrar **(nn) remitentes** que aparece y, a continuación, agregue remitentes internos y externos para protegerse de la suplantación, como los miembros de la junta directiva de su organización, su director general, director financiero y otros líderes sénior.
+       - Seleccione **Habilitar dominios para proteger** y, a continuación, configure las siguientes opciones que aparecen:
+         - Seleccione **Incluir dominios de mi propiedad** para proteger los remitentes internos en los dominios aceptados (visible haciendo clic en Ver mis **dominios**) de la suplantación.
+         - Para proteger a los remitentes de otros dominios, seleccione Incluir dominios **personalizados,** haga clic en el vínculo Administrar **(nn)** dominios personalizados que aparece y, a continuación, agregue otros dominios para protegerlos de la suplantación.
+     - Sección Agregar **remitentes** y dominios de confianza: haga clic en Administrar <sup>\*</sup> **(nn) remitentes** y dominios de confianza para configurar excepciones de dominio de remitente y remitente para la protección de suplantación si es necesario.
+     - Configuración de inteligencia de buzones: compruebe que se han seleccionado Habilitar inteligencia de buzones y Habilitar inteligencia para la protección <sup>\*</sup> **de**  suplantación.
+     - **Sección Suplantación** de identidad: compruebe que se ha seleccionado Habilitar **la inteligencia de** suplantación.
 
-   - En la **pestaña Acciones,** seleccione Poner en cuarentena **el** mensaje tanto para el usuario **suplantado** como para las opciones de **dominio suplantado.** Además, activa las sugerencias de seguridad de suplantación.
+     Cuando haya terminado, haga clic en **Guardar**.
 
-   - En la **pestaña Inteligencia de** buzones de correo, asegúrese de que la inteligencia de buzones esté activada y active la protección de suplantación basada en inteligencia de buzones. En la **lista Si el correo electrónico lo envía una lista de** usuarios suplantados, elija **Poner en cuarentena el mensaje**.
+   - **Sección** Acciones: haga **clic en Editar acciones** y configure las siguientes opciones en el control desplegable **Editar** acciones que se abre:
+     - **Sección Acciones de** mensaje: Configure las siguientes opciones:
+       - **Si el mensaje se detecta como un usuario suplantado:** <sup>\*</sup> Seleccione Poner en cuarentena el **mensaje**.
+       - **Si el mensaje se detecta como un dominio suplantado:** <sup>\*</sup> Seleccione Poner en cuarentena el **mensaje**.
+       - **Si la inteligencia de buzones detecta un** usuario suplantado: seleccione Mover mensaje a las carpetas de correo no deseado (Estándar) de los destinatarios o Poner en cuarentena <sup>\*</sup> el **mensaje** (estricto). 
+       - **Si el mensaje se detecta** como suplantación: seleccione Mover mensaje a las **carpetas** de correo no deseado (Estándar) de los destinatarios o Poner en cuarentena **el mensaje** (Estricto).
+     - **Sugerencias de seguridad & de indicadores:** Configure las siguientes opciones:
+       - **Mostrar la suplantación de consejo de seguridad:** <sup>\*</sup> Seleccione (activar).
+       - **Mostrar la suplantación de dominio consejo de seguridad** <sup>\*</sup> : Seleccionar (activar).
+       - **Mostrar caracteres inusuales de suplantación de usuario consejo de seguridad** <sup>\*</sup> : Seleccionar (activar).
+       - **Mostrar (?) para remitentes no** autenticados para suplantación de identidad: Seleccione (activar).
+       - **Mostrar etiqueta "via":** seleccione (activar) si esta configuración está disponible.
 
-   - En la **pestaña Agregar remitentes y dominios** de confianza, especifique los remitentes o dominios de confianza que desee agregar.
+     Cuando haya terminado, haga clic en **Guardar**.
 
-   - **Guarda** en la **pestaña Revisar la configuración** después de revisar la configuración.
+   <sup>\*</sup>Esta configuración solo está disponible en Defender para Office 365.
 
-4. En la **sección Suplantación,** haga clic **en Editar** y, a continuación, especifique la siguiente configuración:
+4. Haga **clic en Guardar** y, a continuación, en **Cerrar**
 
-   - En la **pestaña Configuración** del filtro de suplantación, asegúrese de que la protección contra la suplantación está activada.
-
-   - En la **pestaña** Acciones, elija **Poner en cuarentena el mensaje**.
-
-   - **Guarda** en la **pestaña Revisar la configuración** después de revisar los cambios. (Si no ha realizado ningún cambio, **Cancel**.)
-
-5. Cierre la página de configuración de directiva predeterminada.
-
-Para obtener más información sobre las opciones de directiva contra suplantación de identidad(phishing), consulte [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+Para obtener instrucciones detalladas para configurar directivas contra suplantación de identidad, vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) y [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>Parte 3: Protección contra correo no deseado en EOP
 
@@ -147,15 +159,13 @@ Para obtener más información acerca de la configuración recomendada para el c
 
 1. Abra <https://security.microsoft.com/antispam> .
 
-2. En la **página Directivas contra correo** no deseado, seleccione la directiva denominada Directiva de entrada contra **correo** no deseado de la lista haciendo clic en el nombre.
+2. En la **página Directivas contra correo** no deseado, seleccione la directiva denominada Directiva de entrada contra correo no deseado **(Predeterminada)** de la lista haciendo clic en el nombre.
 
-3. En el control desplegable de detalles de directiva que aparece, haga clic en Editar umbral de **correo** no deseado y propiedades en la sección Umbral de correo **& correo** no deseado masivo.
+3. En el menú desplegable de detalles de la directiva que aparece, siga estos pasos:
+   - **Sección De umbral de correo & correo** no deseado masivo: Haga clic en Editar umbral de correo no deseado y **propiedades**. En el **control desplegable de propiedades** y  umbral de correo no deseado que aparece, establezca el valor de umbral de correo electrónico masivo en 5 (Estricto) o 6 (Estándar). Cuando haya terminado, haga clic en **Guardar**.
+   - **Sección Remitentes y** dominios permitidos y bloqueados: Revise o edite los remitentes permitidos y los dominios permitidos.
 
-4. En el **control desplegable de propiedades** y  umbral de correo no deseado que aparece, establezca el valor de umbral de correo electrónico masivo en 5 (Estricto) o 6 (Estándar). Cuando haya terminado, haga clic en **Guardar**
-
-5. Vuelva al control desplegable de detalles de la directiva, vaya a la sección Remitentes y dominios permitidos y **bloqueados** y revise o edite los remitentes permitidos y los dominios permitidos.
-
-6. Cuando haya terminado, haga clic en **Cerrar**.
+4. Cuando haya terminado, haga clic en **Cerrar**.
 
 Para obtener instrucciones detalladas para configurar directivas contra correo no deseado, vea [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
