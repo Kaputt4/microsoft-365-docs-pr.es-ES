@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 27d1b36f3e49112a2da95f9268c0e05fcaa72c89
-ms.sourcegitcommit: f0118e61e490496cb23189cc5c73b23e2ba939be
+ms.custom: api
+ms.openlocfilehash: c8403dee11070dcf0825fad2502d8d21d54933fd
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780146"
+ms.locfileid: "52782758"
 ---
 # <a name="raw-data-streaming-api"></a>API de streaming de datos sin procesar
 
@@ -34,7 +35,8 @@ ms.locfileid: "52780146"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Transmite eventos de búsqueda avanzada a centros de eventos o cuenta de Azure Storage.
 
-Defender for Endpoint admite la transmisión por streaming de todos los eventos disponibles a través de [la](advanced-hunting-overview.md) búsqueda avanzada a una cuenta [de Centro](/azure/event-hubs/) de eventos o [azure storage](/azure/event-hubs/).
+
+Microsoft Defender para endpoint admite eventos de streaming disponibles a través [de búsqueda avanzada](../defender/advanced-hunting-overview.md) en un centro de [eventos](/azure/event-hubs/) o una cuenta de Almacenamiento [de Azure.](/azure/storage/common/storage-account-overview)
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
