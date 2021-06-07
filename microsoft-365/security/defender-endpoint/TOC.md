@@ -244,17 +244,14 @@
 
 ### [Reducción de la superficie expuesta a ataques]()
 #### [Introducción a la reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)
+#### [Configurar capacidades de reducción de superficie de ataques](configure-attack-surface-reduction.md)
+#### [Obtener información sobre las reglas de reducción de superficie de los ataques](attack-surface-reduction.md)
 #### [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
-#### [Configuración de la reducción de superficie expuesta a ataques](configure-attack-surface-reduction.md)
+#### [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
+#### [Personalizar las reglas de la reducción de superficie expuesta a ataques](customize-attack-surface-reduction.md)
 #### [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.md)
-
-#### [Controles de la reducción de la superficie expuesta a ataques]()
-##### [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
-##### [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
-##### [Personalizar las reglas de la reducción de superficie expuesta a ataques](customize-attack-surface-reduction.md)
-##### [Ver eventos de la reducción de la superficie expuesta a ataques](event-views.md)
-
-#### [Usar modo de auditoría](audit-windows-defender.md)
+#### [Ver eventos de la reducción de la superficie expuesta a ataques](event-views.md)
+#### [Usar el modo de auditoría para ataques a la reducción de superficie](audit-windows-defender.md)
 
 ### Protección de última generación
 #### [Introducción al Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)
@@ -592,6 +589,13 @@
 ###### [Búsqueda avanzada de amenazas con Python](run-advanced-query-sample-python.md)
 ###### [Búsqueda avanzada de amenazas con PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Uso de consultas OData](exposed-apis-odata-samples.md)
+
+
+#### [API de streaming de datos sin procesar]()
+##### [Streaming de datos sin procesar](raw-data-export.md)
+##### [Transmitir eventos de búsqueda avanzada de amenazas al hub de Azure Events](raw-data-export-event-hub.md)
+##### [Transmitir eventos de búsqueda avanzada de amenazas a su cuenta de almacenamiento](raw-data-export-storage.md)
+
 
 #### [Integración de SIEM]()
 ##### [Comprender conceptos de inteligencia sobre amenazas](threat-indicator-concepts.md)
