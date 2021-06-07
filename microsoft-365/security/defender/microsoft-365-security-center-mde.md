@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 487fc87c613d7321e3ae608097d98d2c90f8874e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639412"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771914"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender para endpoint en el centro Microsoft 365 seguridad
 
@@ -56,7 +56,7 @@ La imagen y la tabla siguiente enumeran los cambios en la navegación entre el C
 | Administración & vulnerabilidades de amenazas | Administración de amenazas y vulnerabilidades |
 | Evaluación y tutoriales | Tutoriales & evaluación |
 | Administración de la configuración | Administración de la configuración |
-| Configuración | Configuración | 
+| Configuraciones | Configuraciones | 
 
 El centro de [Microsoft 365](overview-security-center.md) de seguridad en combina funciones de seguridad que protegen, detectan, investigan y responden a las amenazas de correo electrónico, colaboración, identidad [https://security.microsoft.com](https://security.microsoft.com) y dispositivo. Este centro de seguridad reúne las funciones de los portales de seguridad de Microsoft existentes, incluidos Centro de seguridad de Microsoft Defender y el Centro de Office 365 seguridad & cumplimiento.
 
@@ -118,7 +118,7 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 |---------|---------|
 | Informes  | Consulta informes de puntos de conexión y correo & colaboración, incluida la protección contra amenazas, el estado y cumplimiento del dispositivo y los dispositivos vulnerables. |
 | Salud  |  Actualmente se vincula a la página "Estado del servicio" en el [centro Microsoft 365 administración.](https://admin.microsoft.com/) |
-| Configuración |  Administra la configuración del centro Microsoft 365 seguridad, Microsoft 365 Defender, Endpoints, Email & collaboration, Identities y Device discovery.   |
+| Configuraciones |  Administra la configuración del centro Microsoft 365 seguridad, Microsoft 365 Defender, Endpoints, Email & collaboration, Identities y Device discovery.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 navegación y funcionalidades de seguridad
 
@@ -177,6 +177,10 @@ Si usa la [API DE SIEM de Defender para](../defender-endpoint/enable-siem-integr
 ### <a name="email-alerts"></a>Alertas de correo electrónico
 
 Puedes seguir usando alertas de correo electrónico para Defender para Endpoint. Hemos agregado nuevos vínculos en los correos electrónicos que apuntan a la página de alerta o a la página de incidentes en el centro Microsoft 365 seguridad. Para obtener más información, vea [Redirecting accounts from Microsoft Defender for Endpoint to the Microsoft 365 security center](./microsoft-365-security-mde-redirection.md).
+
+### <a name="managed-security-service-providers-mssp"></a>Proveedores de servicios de seguridad administrados (MSSP)
+
+Actualmente, no se admite el inicio de sesión en varios inquilinos simultáneamente en la misma sesión de exploración en el portal unificado. Puede optar por no participar en el redireccionamiento automático volviendo al antiguo portal de [Microsoft Defender para](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal)endpoints , para mantener esta funcionalidad hasta que se resuelva el problema.
 
 ## <a name="related-information"></a>Información relacionada
 

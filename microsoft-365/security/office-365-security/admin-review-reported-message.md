@@ -1,5 +1,5 @@
 ---
-title: Revisión de administrador para mensajes notificados
+title: Revisión del administrador para los mensajes de los que se informe
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -13,14 +13,14 @@ ms.collection:
 description: Aprende a revisar los mensajes que se notifican y a enviar comentarios a los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 619cd35b6a60f0d50aa6c13e4cad2b8d7ae947a8
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730981"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769130"
 ---
-# <a name="admin-review-for-reported-messages"></a>Revisión de administrador para mensajes notificados
+# <a name="admin-review-for-reported-messages"></a>Revisión del administrador para los mensajes de los que se informe
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -40,12 +40,12 @@ Solo podrá marcar y notificar a los usuarios los resultados de la revisión si 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Para modificar la configuración de envíos de usuarios, debe ser miembro de uno de los siguientes grupos de roles:
-    - Administración de la organización o Administrador de seguridad en [el Centro de seguridad](permissions-microsoft-365-compliance-security.md).
-    - Administración de la [organización en Exchange Online](/Exchange/permissions-exo/permissions-exo).
+  - Administración de la organización o Administrador de seguridad [en el Microsoft 365 de seguridad](permissions-microsoft-365-security-center.md).
+  - Administración de la [organización en Exchange Online](/Exchange/permissions-exo/permissions-exo).
 
 - También necesitarás acceso a la Exchange Online PowerShell. Si la cuenta que está intentando usar no tiene acceso Exchange Online PowerShell, recibirá un error que indica Especificar una dirección de correo electrónico en *su dominio*. Para obtener más información acerca de cómo habilitar o deshabilitar el acceso a Exchange Online PowerShell, consulte los siguientes temas:
-    - [Habilitar o deshabilitar el acceso a Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
-    - [Reglas de acceso de cliente en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Habilitar o deshabilitar el acceso a Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
+  - [Reglas de acceso de cliente en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>Configurar los mensajes usados para notificar a los usuarios
 

@@ -21,12 +21,12 @@ description: 'El Microsoft 365 de administración: obtenga información sobre la
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639559"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769093"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades del Centro de administración Microsoft 365 administración
 
@@ -56,17 +56,17 @@ Y si quiere saber las novedades de otros servicios en la nube de Microsoft:
 
 ### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>Realizar un seguimiento de las actualizaciones de vales de soporte técnico con la aplicación móvil Administrador
 
-Para todas las solicitudes de servicio creadas en el espacio empresarial, ahora puede realizar un seguimiento del estado del vale, ver los detalles del vale y proporcionar /solicitar información adicional agregando notas & datos adjuntos. 
+Para todas las solicitudes de servicio creadas en el espacio empresarial, ahora puede realizar un seguimiento del estado del vale, ver los detalles del vale y proporcionar /solicitar información adicional agregando notas & datos adjuntos.
 
-:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="Captura de pantalla: realizar un seguimiento de las actualizaciones de vales de soporte técnico":::
+:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="Captura de pantalla: realizar un seguimiento de las actualizaciones de vales de soporte técnico":::
 
-### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Manténgase al tanto de todas las actualizaciones principales de la aplicación y su Microsoft 365 suscripción 
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Manténgase al tanto de todas las actualizaciones principales de la aplicación y su Microsoft 365 suscripción
 
-- Mantente al tanto de todas las actualizaciones principales de tu suscripción Microsoft 365 a través de notificaciones push del Centro de mensajes (ahora habilitadas de forma predeterminada). 
+- Mantente al tanto de todas las actualizaciones principales de tu suscripción Microsoft 365 a través de notificaciones push del Centro de mensajes (ahora habilitadas de forma predeterminada).
 
 - Realiza un seguimiento de las características más recientes disponibles en la aplicación mediante **la** sección Novedades. Vaya **a Configuración**  >  **¿Qué hay de nuevo?**
 
-:::image type="content" source="../media/whats-new-updates.png" alt-text="Captura de pantalla: realizar un seguimiento de las principales actualizaciones y características":::
+:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Captura de pantalla: realizar un seguimiento de las principales actualizaciones y características":::
 
 ## <a name="april-2021"></a>Abril de 2021
 

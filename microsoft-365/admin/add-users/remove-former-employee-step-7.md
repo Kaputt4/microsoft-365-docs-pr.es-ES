@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para eliminar la cuenta de usuario de un antiguo empleado.
-ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535943"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782386"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Paso 7: Eliminar la cuenta de usuario de un antiguo empleado
 
@@ -56,7 +56,7 @@ Si su organización sincroniza las cuentas de usuario Microsoft 365 desde un ent
 
 Para obtener información sobre cómo eliminar y restaurar una cuenta de usuario en Active Directory, vea [Eliminar una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
-Si usas Azure Active Directory, consulta el cmdlet [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell.
+Si usas Azure Active Directory, consulta el cmdlet [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell.
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>Todo lo que debe saber sobre el cierre de la sesión de un empleado
 
@@ -84,8 +84,6 @@ Las operaciones anteriores se pueden realizar en tres lugares:
   
  **Más rápida para un usuario con presencia local y en el centro de datos de Exchange**: finalice la sesión mediante el Centro de administración de Azure Active Directory o el Centro de administración de Exchange Y efectúe también el cambio en el entorno local. En caso contrario, DirSync sobrescribirá el cambio realizado en el Centro de administración de Exchange o el Centro de administración Azure Active Directory.
   
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Restaurar un usuario](restore-user.md)
-
-[Restablecer contraseñas](reset-passwords.md)
+[Restaurar un usuario](restore-user.md) (artículo)/ [Restablecer contraseñas](reset-passwords.md) (artículo)

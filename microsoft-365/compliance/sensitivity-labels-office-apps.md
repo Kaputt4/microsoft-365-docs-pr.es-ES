@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd3f1e7329612755a1806b5d9af8e13f07790cd6
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a7ac7415ce5e7f88b21128846b7cff957e388fd5
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625130"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730383"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -387,54 +387,24 @@ Para obtener orientación sobre cuándo utilizar esta configuración, consulte l
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Opciones específicas de Outlook para etiquetas predeterminadas y etiquetas obligatorias
 
-Para las etiquetas integradas, identifique las versiones mínimas de Outlook compatibles con estas características mediante la tabla de [capacidades de para Outlook](#sensitivity-label-capabilities-in-outlook) en esta página, y la fila **Diferentes opciones de etiqueta predeterminada y etiqueta obligatoria**.
+Para las etiquetas integradas, identifique las versiones mínimas de Outlook compatibles con estas características mediante la tabla de [capacidades de para Outlook](#sensitivity-label-capabilities-in-outlook) en esta página, y la fila **Diferentes opciones de etiqueta predeterminada y etiqueta obligatoria**. Todas las versiones del cliente de etiquetas unificado de Azure Information Protection admiten estas opciones específicas de Outlook.
 
-De forma predeterminada, al seleccionar la configuración de directiva de etiqueta **Aplique esta etiqueta de forma predeterminada a los documentos y mensajes de correo electrónico** y **Requiere que los usuarios apliquen una etiqueta a su correo electrónico o documentos**, la opción de configuración se aplica a los correos electrónicos, así como a los documentos.
+Cuando la aplicación de Outlook sea compatible con una configuración de etiqueta predeterminada diferente a la configuración de etiqueta predeterminada para documentos:
 
-Para aplicar diferentes opciones de configuración a los correos electrónicos, use la configuración avanzada de PowerShell:
+- En el Asistente para directivas de etiqueta de la página **Aplicar una etiqueta predeterminada a los correos electrónicos**, puede especificar la elección de la etiqueta de confidencialidad que se aplicará a todos los correos electrónicos sin etiqueta o ninguna etiqueta predeterminada. Esta configuración es independiente de la configuración **Aplicar esta etiqueta de forma predeterminada a los documentos** en la página anterior **Configuración de directiva para documentos** del Asistente.
 
-- **OutlookDefault Label**: use esta configuración si quiere que Outlook aplique una etiqueta predeterminada diferente o ninguna etiqueta.
+Cuando la aplicación de Outlook no admita una configuración de etiqueta predeterminada diferente a la configuración de etiqueta predeterminada para los documentos, Outlook siempre usará el valor que especifique en **Aplicar esta etiqueta de forma predeterminada a los documentos** en la página **Configuración de directiva para documentos** del Asistente para directivas de etiqueta.
 
-- **DisableMandatoryInOutlook**: use esta configuración si quiere que Outlook no pida a los usuarios que seleccionen una etiqueta para los mensajes de correo electrónico sin etiqueta.
+Cuando la aplicación de Outlook admita desactivar la etiqueta obligatoria:
 
-Para obtener más información sobre cómo configurar estas opciones mediante PowerShell, vea la sección siguiente.
+- En el Asistente para directivas de etiqueta de la página **Configuración de directiva**, seleccione **Requerir que los usuarios apliquen una etiqueta a su correo electrónico o documentos**. Después, seleccione **Siguiente** > **Siguiente** y desactive la casilla **Requerir que los usuarios apliquen una etiqueta a sus mensajes**. Seleccione la casilla si quiere que la etiqueta obligatoria se aplique a correos electrónicos, así como a documentos.
 
-### <a name="powershell-advanced-settings-outlookdefaultlabel-and-disablemandatoryinoutlook"></a>Configuración avanzada de PowerShell OutlookDefaultLabel y DisableMandatoryInOutlook
+Cuando la aplicación de Outlook no admita desactivar la etiqueta obligatoria: si selecciona **Requerir que los usuarios apliquen una etiqueta a su correo electrónico o documentos** como configuración de directiva, Outlook siempre pedirá a los usuarios que seleccionen una etiqueta para los correos electrónicos que no la tengan.
 
-Estas opciones son compatibles con PowerShell con el parámetro *AdvancedSettings* y los cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) y [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) de [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell). Anteriormente solo admitido por el cliente de etiquetas unificado de Azure Information Protection, estas dos opciones avanzadas ahora son compatibles con las etiquetas integradas.
-
-Ejemplos de PowerShell, donde la directiva de etiqueta se denomina **global**:
-
-- Para excluir Outlook de una etiqueta predeterminada:
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
-    ````
-
-- Para excluir Outlook de la etiqueta obligatoria:
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
-    ````
-
-Actualmente, OutlookDefault Label y DisableMandatoryInOutlook son la única configuración avanzada de PowerShell que es compatible tanto con la etiqueta integrada como con el cliente de Azure Information Protection.
-
-El resto de las opciones avanzadas de PowerShell siguen siendo compatibles solo con el cliente de Azure Information Protection. Para obtener más información sobre cómo usar la configuración avanzada para el cliente de Azure Information Protection, vea una [Guía del administrador de: Configuraciones personalizadas para el cliente de etiquetas unificado de Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Sugerencias de PowerShell para especificar la configuración avanzada
-
-Para especificar una etiqueta predeterminada diferente para Outlook, identifique la etiqueta mediante el GUID. Para buscar este valor, puede usar el comando siguiente:
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-Para quitar cualquiera de estas opciones avanzadas de una directiva de etiqueta, use la misma sintaxis de parámetros AdvancedSettings pero especifique un valor de cadena nulo. Por ejemplo:
-
-````powershell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
-````
-
+> [!NOTE]
+> Si ha configurado las opciones avanzadas de PowerShell **OutlookDefaultLabel** y **DisableMandatoryInOutlook** con los cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) o [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy):
+> 
+> Los valores seleccionados para estas opciones de configuración de PowerShell se reflejan en el Asistente para directivas de etiqueta y funcionan automáticamente en las aplicaciones de Outlook compatibles con esta configuración. El resto de las opciones avanzadas de PowerShell siguen siendo compatibles solo con el cliente de etiquetado unificado de Azure Information Protection.
 
 ## <a name="end-user-documentation"></a>Documentación para el usuario final
 

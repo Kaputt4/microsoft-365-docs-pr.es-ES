@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre la extensión de cumplimiento de Microsoft (vista previa).
+title: Obtenga información sobre el Centro de cumplimiento de Microsoft
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: La extensión de cumplimiento de Microsoft extiende la supervisión y el control de las actividades de archivo y acciones protectoras al explorador Google Chrome
-ms.openlocfilehash: c8a5795b3be8b393fd3a934504449bf6db0c2f01
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113386"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730491"
 ---
-# <a name="learn-about-the-microsoft-compliance-extension-preview"></a>Obtenga información sobre la extensión de cumplimiento de Microsoft (vista previa).
+# <a name="learn-about-the-microsoft-compliance-extension"></a>Obtenga información sobre el Centro de cumplimiento de Microsoft
 
 [La prevención de pérdida de datos en punto de conexión (Endpoint DLP)](endpoint-dlp-learn-about.md) amplía la supervisión de la actividad y las capacidades de protección de la [Prevención de pérdida de datos (DLP) de Microsoft 365](dlp-learn-about-dlp.md) a elementos confidenciales que estén en dispositivos con Windows 10. Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft 365, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el[explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
 
@@ -46,7 +46,7 @@ actividad |description  | acciones compatibles de directiva|
 
 ## <a name="deployment-process"></a>Proceso de implementación
 1. [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
-2. [Herramientas y métodos de incorporación para dispositivos Windows 10](dlp-configure-endpoints.md)
+2. [Herramientas y métodos de incorporación para dispositivos Windows 10](dlp-configure-endpoints.md)
 3. [Instalar la extensión en los dispositivos de Windows 10](dlp-chrome-get-started.md)
 4. [Cree o edite directivas de DLP](create-test-tune-dlp-policy.md) que limiten la carga a servicios en la nube, o el acceso por parte de acciones de exploradores no permitidos y aplíquelas a sus dispositivos de Windows 10
 

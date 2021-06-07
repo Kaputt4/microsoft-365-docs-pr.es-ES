@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 23757c492986936125eff1203e6a99231164da22
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683324"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768950"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 
@@ -23,7 +23,7 @@ La página Personal de Bookings es donde se crea la lista de personal y se admin
 
 Aunque Bookings es una característica de Microsoft 365, no todos los miembros del personal deben tener una Microsoft 365 cuenta. Todos los miembros del personal deben tener una dirección de correo electrónico válida para que puedan recibir reservas y programar cambios.
 
-## <a name="watch-add-your-staff-in-microsoft-bookings"></a>Watch: Add your staff in Microsoft Bookings
+## <a name="watch-add-your-staff-to-bookings"></a>Watch: Add your staff to Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
@@ -67,14 +67,39 @@ Aunque Bookings es una característica de Microsoft 365, no todos los miembros d
     > [!NOTE]
     > Solo aparecerán los primeros 31 miembros del personal que agregue a la página de personal cuando asigne miembros del personal a un servicio.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Convertir a un usuario de Bookings en superusual sin agregarlos como personal en Bookings
 
-Después de agregar miembros del personal, puede programar [cierres de negocios](schedule-closures-time-off-vacation.md) y tiempo de espera y [establecer las directivas de programación.](set-scheduling-policies.md)
+Es posible que desee agregar una persona a su lista de personal en Bookings sin que esté disponible para clientes o clientes. Una vez que los conviertas en superusu usuarios, se convertirán en administradores del buzón de reserva. Ser administrador de un buzón de reserva se define como tener acceso completo y permisos de envío al buzón de reserva.
 
-## <a name="related-content"></a>Contenido relacionado
+> [!NOTE]
+> Estos pasos solo funcionan si el usuario que se va a agregar aún no tiene asignado un rol **de visor** en Bookings.
 
-[Microsoft Bookings](bookings-overview.md)
+1. [Conectar para Microsoft 365 con PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-[Programar cierres de negocios, tiempo libre y tiempo de vacaciones](schedule-closures-time-off-vacation.md)
+2. Con PowerShell, asigne acceso completo con los siguientes comandos:
 
-[Establecer las directivas de reservas](set-scheduling-policies.md)
+    ```powershell
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+    ```
+
+3. Y, a continuación, ejecute este comando para asignar permisos de envío como.
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+Este es un comando de PowerShell de ejemplo para agregar Allie Bellew al buzón de reserva de la guardería contoso.
+
+1. Ejecute primero este comando:
+
+    ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
+    ```
+
+2. A continuación, ejecute este comando:
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+**Allie Bellew** ahora tiene acceso de administrador, pero no aparece como personal que se puede reservar en Bookings.

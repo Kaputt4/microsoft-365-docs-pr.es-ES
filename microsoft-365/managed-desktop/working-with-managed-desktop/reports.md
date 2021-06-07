@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 28035a9f0a669c1daa7526d0b1fefac52a77c81a
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b37ce09a0781aa83970502224ddbb3658ed07d69
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52729973"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771890"
 ---
 # <a name="work-with-reports"></a>Trabajar con informes
 
-Escritorio administrado de Microsoft proporciona varios informes y paneles que los administradores de TI de su organización pueden usar para comprender diversos aspectos de la población de dispositivos.Encontrará informes en dos ubicaciones: en [Microsoft Endpoint Manager](https://endpoint.microsoft.com) y en el [Centro Microsoft 365 administración](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop). 
+Escritorio administrado de Microsoft proporciona varios informes y paneles que los administradores de TI de su organización pueden usar para comprender diversos aspectos de la población de dispositivos. 
 
 ## <a name="reports-in-microsoft-endpoint-manager"></a>Informes en Microsoft Endpoint Manager
 
@@ -37,6 +37,13 @@ Además, en varias ubicaciones de Microsoft Endpoint Manager puede filtrar infor
 > [!NOTE]
 > Los Escritorio administrado de Microsoft personalizados garantizan el acceso solo a los Escritorio administrado de Microsoft informes. Para obtener acceso a otras partes de Microsoft Endpoint Manager, como **Todos** los dispositivos, vea Control de acceso basado en roles [con Microsoft Intune](/mem/intune/fundamentals/role-based-access-control). 
 
+## <a name="endpoint-analytics"></a>Análisis de puntos de conexión
+Escritorio administrado de Microsoft está integrado con endpoint [analytics.](/mem/analytics/overview) Estos informes le proporcionan información para medir cómo funciona su organización y la calidad de la experiencia que se ofrece a los usuarios. El análisis de extremos se encuentra en **el menú** Informes [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Para pivotar una puntuación para incluir solo los dispositivos  administrados por Escritorio administrado de Microsoft ir a cualquier informe, seleccione la lista desplegable Filtro y, a continuación, **seleccione Escritorio administrado de Microsoft dispositivos**.
+
+Si endpoint analytics no se configuró automáticamente para su organización de Azure AD ("inquilino") durante la inscripción, puede hacerlo usted mismo. Para obtener más información, vea [Onboard in the Endpoint analytics portal](/mem/analytics/enroll-intune#bkmk_onboard). Puedes inscribir todos los dispositivos o, si quieres incluir solo  dispositivos Escritorio administrado de Microsoft, selecciona los grupos de dispositivos de lugar de trabajo modernos para Test, First, Fast y Broad. Estos informes pueden requerir permisos diferentes. Para obtener más información, vea [Permissions](/mem/analytics/overview#permissions) to ensure you have roles appropriately assigned.
+
+> [!NOTE]
+> Para respetar mejor la privacidad del usuario, debe haber más de 10 dispositivos Escritorio administrado de Microsoft inscritos en endpoint analytics para usar este filtro.
 
  ## <a name="inventory-data"></a>Datos de inventario
 

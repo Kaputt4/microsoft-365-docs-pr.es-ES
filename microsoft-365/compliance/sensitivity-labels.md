@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 171f449a8b73ff42113358d50dbe8bde909f5d4d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625190"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730251"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -182,7 +182,7 @@ Cuando configura una directiva de etiqueta, puede:
 
 - **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier usuario específico o un grupo de seguridad activado por correo electrónico, un grupo de distribución o un grupo de Microsoft 365, que puede tener [suscripción dinámica](/azure/active-directory/users-groups-roles/groups-create-rule) en Azure AD.
 
-- **Aplicar una etiqueta predeterminada** a todos los documentos y correos electrónicos nuevos sin etiqueta creados por los usuarios y grupos incluidos en la directiva de etiqueta y la misma etiqueta predeterminada a los contenedores (si ha habilitado [etiquetas de confidencialidad para Microsoft Teams, Grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)). Con esta configuración, el cliente de etiquetado unificado de Azure Information Protection también aplicará la etiqueta predeterminada a documentos ya existentes que no tengan etiqueta. Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico.
+- **Especifique una etiqueta predeterminada** para nuevos documentos, correos electrónicos sin etiqueta y nuevos contenedores (cuando haya [habilitado etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)). Puede especificar la misma etiqueta para los tres tipos de elementos o especificar etiquetas diferentes. Cuando especifique una etiqueta predeterminada para los documentos, el cliente de etiquetado unificado de Azure Information Protection también aplicará la etiqueta a documentos ya existentes que no tengan etiqueta. Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico.
     
     Considere utilizar una etiqueta predeterminada para establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. Sin embargo, sin el aprendizaje del usuario y otros controles, esta configuración también puede dar como resultado una etiqueta incorrecta. Por lo general, no es una buena idea seleccionar una etiqueta que aplique el cifrado como etiqueta predeterminada a los documentos. Por ejemplo, muchas organizaciones necesitan enviar y compartir documentos con usuarios externos que pueden no tener aplicaciones compatibles con el cifrado o que no usen una cuenta que pueda ser autorizada. Para obtener más información sobre este escenario, consulte [Uso compartido de documentos cifrados con usuarios externos](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 
@@ -190,7 +190,7 @@ Cuando configura una directiva de etiqueta, puede:
 
     ![Aviso en el que los usuarios especifican una justificación](../media/Sensitivity-label-justification-required.png)
 
-- **Requerir que los usuarios apliquen una etiqueta** con una opción para correo electrónico y documentos, y otra para contenedores. También conocidas como etiquetado obligatorio, estas opciones garantizan que se aplique una etiqueta antes de que los usuarios puedan guardar documentos y enviar mensajes de correo electrónico, y crear nuevos grupos o sitios.
+- **Requiera a los usuarios que apliquen una etiqueta** para documentos y correos electrónicos, solo para documentos y para contenedores. También conocidas como etiquetado obligatorio, estas opciones garantizan que se aplique una etiqueta antes de que los usuarios puedan guardar documentos y enviar mensajes de correo electrónico, y crear nuevos grupos o sitios.
     
     Para documentos y mensajes de correo electrónico, el usuario puede asignar una etiqueta manualmente; de forma automática como resultado de una condición configurada; o bien, de forma predeterminada (la opción de etiqueta predeterminada descrita anteriormente). Se muestra un ejemplo en Outlook cuando un usuario debe asignar una etiqueta:
 

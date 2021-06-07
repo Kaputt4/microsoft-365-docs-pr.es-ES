@@ -1,7 +1,7 @@
 ---
 title: Usar Microsoft Defender para las API de punto de conexión
 ms.reviewer: ''
-description: Aprende a diseñar una aplicación nativa de Windows para obtener acceso mediante programación a Microsoft Defender para endpoint sin un usuario.
+description: Obtén información sobre cómo diseñar una aplicación Windows nativa para obtener acceso mediante programación a Microsoft Defender para Endpoint sin un usuario.
 keywords: apis, api de gráfico, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo, búsqueda avanzada, consulta
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 5e59ff75a7933cf52af857f1a41b0925aa7bb47a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8f23a0b269986f4caa199ad3744c563fcc6ff6b2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198946"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769106"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Usar Microsoft Defender para las API de punto de conexión
 
@@ -43,7 +44,7 @@ Si necesita acceso mediante programación a Microsoft Defender para Endpoint sin
 
 Si no está seguro de qué acceso necesita, lea la [página Introducción](apis-intro.md).
 
-Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API te permitirán automatizar los flujos de trabajo e innovar en función de las capacidades de Microsoft Defender para puntos de conexión. El acceso a la API requiere autenticación de OAuth2.0. Para obtener más información, vea Flujo de código de autorización de [OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API te permitirán automatizar los flujos de trabajo e innovar en función de las capacidades de Microsoft Defender para puntos de conexión. El acceso a la API requiere autenticación de OAuth2.0. Para obtener más información, vea Código de autorización [de OAuth 2.0 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En general, deberá seguir los pasos siguientes para usar las API:
 - Crear una aplicación de AAD
@@ -63,9 +64,9 @@ En esta página se explica cómo crear una aplicación de AAD, obtener un token 
 
 1. Inicie sesión en [Azure](https://portal.azure.com) con una cuenta de usuario que tenga el rol **Administrador global.**
 
-2. Vaya a **Azure Active Directory** App  >  **registrations** New  >  **registration**. 
+2. Vaya a **Azure Active Directory**  >  **registros de aplicaciones** Nuevo  >  **registro**. 
 
-   ![Imagen de Microsoft Azure y navegación al registro de aplicaciones](images/atp-azure-new-app2.png)
+   ![Imagen de Microsoft Azure navegación al registro de aplicaciones](images/atp-azure-new-app2.png)
 
 3. Cuando aparezca la página **Registrar una aplicación**, escriba la información de registro de la aplicación:
 
@@ -195,6 +196,6 @@ Compruebe para asegurarse de que tiene un token correcto:
     // Do something useful with the response
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Microsoft Defender para api de punto de conexión](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)

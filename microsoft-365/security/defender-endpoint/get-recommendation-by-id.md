@@ -1,7 +1,7 @@
 ---
 title: Obtener recomendación por id.
 description: Recupera una recomendación de seguridad por su identificador.
-keywords: apis, api de gráficos, api admitidas, get, recomendación de seguridad, recomendación de seguridad por identificador, administración de amenazas y vulnerabilidades, api de administración de amenazas y vulnerabilidades
+keywords: apis, api de gráficos, api admitidas, get, recomendación de seguridad, recomendación de seguridad por identificador, Administración de amenazas y vulnerabilidades, api Administración de amenazas y vulnerabilidades api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 45a151fc5855a4a2b1ba63a50b54737c90e6bdd1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 4ec4758453f43cb211143918ed5fe8fe83e91c3f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199518"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771806"
 ---
-# <a name="get-recommendation-by-id"></a>Obtener recomendación por identificador
+# <a name="get-recommendation-by-id"></a>Obtener recomendación por identificación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -65,7 +67,7 @@ En blanco
 Si se realiza correctamente, este método devuelve 200 Aceptar con las recomendaciones de seguridad del cuerpo.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

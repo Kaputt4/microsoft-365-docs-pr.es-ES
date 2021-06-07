@@ -17,13 +17,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Usa Windows PowerShell para obtener detalles sobre los dispositivos de seguridad y movilidad básica de la organización.
-ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Usa Windows PowerShell para obtener detalles sobre los dispositivos de movilidad y seguridad básicas de la organización.
+ms.openlocfilehash: 7cb2369c9a31210f26db12b0453e7a4228e1cccc
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904257"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782446"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtener detalles sobre dispositivos administrados de movilidad básica y seguridad
 
@@ -45,11 +45,11 @@ Este es un desglose de los detalles del dispositivo disponibles.
 
 Hay algunas cosas que debe configurar para ejecutar los comandos y scripts descritos en este artículo.
 
-### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Paso 1: Descargar e instalar el módulo de Azure Active Directory para Windows PowerShell
+### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Paso 1: Descargar e instalar el módulo Azure Active Directory para Windows PowerShell
 
-Para obtener más información sobre estos pasos, vea [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
+Para obtener más información sobre estos pasos, vea [Conectar para Microsoft 365 con PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
 
-1. Vaya a Microsoft Online Services Sign-In asistente para profesionales de [TI RTWl](https://www.microsoft.com/download/details.aspx?id=41950)y seleccione Descargar para Microsoft Online Services   asistente de inicio de  **sesión**.
+1. Vaya a Microsoft Online Services Sign-In asistente para profesionales de [TI RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)y seleccione Descargar para Microsoft Online Services   asistente de inicio de  **sesión**.
 
 2. Instale el Módulo Microsoft Azure Active Directory para Windows PowerShell siguiendo estos pasos:
 
@@ -63,13 +63,13 @@ Para obtener más información sobre estos pasos, vea [Connect to Microsoft 36
 
     5. Después de la instalación, cierre la ventana de comandos de PowerShell.
 
-### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Paso 2: Conectarse a su suscripción a Microsoft 365
+### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Paso 2: Conectar a su Microsoft 365 suscripción
 
-1. En el Windows Azure módulo de Active Directory para Windows PowerShell, ejecute el siguiente comando.  
+1. En el Windows Azure Active Directory para Windows PowerShell, ejecute el siguiente comando.  
 
     $UserCredential = Get-Credential
 
-2. En el Windows PowerShell de diálogo Solicitud de credenciales, escriba el nombre de usuario y la contraseña de su cuenta de administrador global de Microsoft 365 y, a continuación, **seleccione Aceptar**.
+2. En el Windows PowerShell de diálogo Solicitud de credenciales, escriba el nombre de usuario y la contraseña de su cuenta de administrador global Microsoft 365 y, a continuación, seleccione **Aceptar**.
 
 3. Ejecute el comando siguiente.
 
@@ -82,7 +82,7 @@ Para obtener más información sobre estos pasos, vea [Connect to Microsoft 36
 
 Para ejecutar el script Get-MsolUserDeviceComplianceStatus.ps1, debe habilitar la ejecución de scripts de PowerShell.
 
-1. En el Escritorio de Windows, selecciona **Inicio** y, a continuación, escribe Windows PowerShell. Haga clic con el Windows PowerShell y, a continuación, **seleccione Ejecutar como administrador**.
+1. En el escritorio Windows, seleccione **Inicio** y, a continuación, escriba Windows PowerShell. Haga clic con el Windows PowerShell y, a continuación, **seleccione Ejecutar como administrador**.
 
 2. Ejecute el comando siguiente.
 
@@ -104,7 +104,7 @@ Para obtener más ejemplos,  [vea Get-MsolDevice](https://go.microsoft.com/fwl
 
 En primer lugar, guarde el script en el equipo.
 
-1. Copie y pegue el siguiente texto en el Bloc de notas.  
+1. Copie y pegue el siguiente texto en Bloc de notas.  
 
 2.  param (
 
@@ -263,7 +263,7 @@ En primer lugar, guarde el script en el equipo.
 70.  }
     
 
-71.  Guárdelo como un archivo Windows PowerShell script mediante la extensión de archivo .ps1; por ejemplo, Get-MsolUserDeviceComplianceStatus.ps1.   
+71.  Guárdelo como un archivo Windows PowerShell script mediante el uso de la extensión de .ps1; por ejemplo, Get-MsolUserDeviceComplianceStatus.ps1.   
 
 ## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Ejecutar el script para obtener información del dispositivo para una sola cuenta de usuario
 
@@ -281,7 +281,7 @@ En primer lugar, guarde el script en el equipo.
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-La información se exporta al Escritorio de Windows como un archivo CSV. Puede usar parámetros adicionales para especificar el nombre de archivo y la ruta de acceso del CSV.
+La información se exporta a su escritorio Windows como un archivo CSV. Puede usar parámetros adicionales para especificar el nombre de archivo y la ruta de acceso del CSV.
 
 ## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Ejecutar el script para obtener información del dispositivo para un grupo de usuarios
 
@@ -299,11 +299,11 @@ La información se exporta al Escritorio de Windows como un archivo CSV. Puede u
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-La información se exporta al Escritorio de Windows como un archivo CSV. Puede usar parámetros adicionales para especificar el nombre de archivo y la ruta de acceso del CSV.
+La información se exporta a su escritorio Windows como un archivo CSV. Puede usar parámetros adicionales para especificar el nombre de archivo y la ruta de acceso del CSV.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Microsoft Connect se ha retirado](/collaborate/connect-redirect)
+[Microsoft Conectar se ha retirado](/collaborate/connect-redirect)
 
 [Información general sobre Movilidad y seguridad básicas](overview.md)
 

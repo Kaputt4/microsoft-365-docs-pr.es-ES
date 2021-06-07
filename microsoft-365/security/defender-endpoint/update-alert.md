@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 94be185bd30cd36f456a66d5ae30a4361abc0c48
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 043d423e1016d77cad4a175aa41718329f464252
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688254"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768935"
 ---
 # <a name="update-alert"></a>Actualizar alerta
 
@@ -70,7 +71,7 @@ PATCH /api/alerts/{id}
 
 Nombre | Tipo | Descripción
 :---|:---|:---
-Authorization | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
 
@@ -81,17 +82,17 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 Propiedad | Tipo | Descripción
 :---|:---|:---
-status | String | Especifica el estado actual de la alerta. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
-assignedTo | String | Propietario de la alerta
+status | Cadena | Especifica el estado actual de la alerta. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
+assignedTo | Cadena | Propietario de la alerta
 classification | String | Especifica la especificación de la alerta. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'. 
-determinación | String | Especifica la determinación de la alerta. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+determinación | Cadena | Especifica la determinación de la alerta. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Comentario que se agregará a la alerta.
 
 ## <a name="response"></a>Respuesta
 Si se realiza correctamente, este método devuelve 200 Ok y la entidad [alert](alerts.md) en el cuerpo de la respuesta con las propiedades actualizadas. Si no se encontró la alerta con el identificador especificado: 404 No encontrado.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

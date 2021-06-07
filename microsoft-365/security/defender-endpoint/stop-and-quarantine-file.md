@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 670282f0f87092437bb1f3c6bf7be908e4649042
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ac14f1ecda2b6256dc19223869b8878e6e725b96
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199734"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771418"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API de archivos de detenerse y poner en cuarentena
 
@@ -68,7 +69,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 Nombre | Tipo | Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | string | application/json. **Necesario**.
+Content-Type | cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
@@ -82,7 +83,7 @@ Sha1 |  Cadena   | Sha1 del archivo para detener y poner en cuarentena en el dis
 Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

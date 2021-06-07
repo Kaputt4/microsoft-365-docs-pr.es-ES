@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925666"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730551"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
@@ -41,7 +41,7 @@ Podrá entonces, o bien publicar dichas etiquetas en una directiva de etiquetas 
 
 De forma predeterminada, la opción de etiqueta de retención para marcar contenido como un registro normativo no se muestra en el asistente de etiquetas de retención. Para mostrar esta opción, primero tiene que ejecutar un comando de PowerShell:
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365.](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
 
 2. Ejecute el siguiente cmdlet:
     
@@ -54,7 +54,7 @@ Si cambia de opinión sobre cómo ver esta opción en el asistente de etiquetas 
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurar etiquetas de retención para declarar registros
 
-Al crear o editar una etiqueta de retención de la solución **administración de registros** del Centro de cumplimiento de Microsoft 365, tiene la opción de marcar los elementos como un registro. Si ha ejecutado el comando de PowerShell de la sección anterior, como alternativa puede marcar los elementos como un registro normativo.
+Al crear una etiqueta de retención de la solución **administración de registros** del Centro de cumplimiento de Microsoft 365, tiene la opción de marcar los elementos como un registro. Si ha ejecutado el comando de PowerShell de la sección anterior, como alternativa puede marcar los elementos como un registro normativo.
 
 Por ejemplo:
 

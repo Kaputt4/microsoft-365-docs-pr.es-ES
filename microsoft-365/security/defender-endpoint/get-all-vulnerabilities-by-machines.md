@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 229c1f9e77a0cb85744155e82934b48dd63052b2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3aa58f3df4a4c3562cbd4dfbf6113c30816e2a0f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933414"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769226"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Enumerar vulnerabilidades por máquina y software
 
@@ -43,7 +44,7 @@ Recupera una lista de todas las vulnerabilidades que afectan a la organización 
 - OData ```$filter``` se admite en todas las propiedades.
 
 >[!Tip]
->Se trata de una excelente API para [la integración de Power BI.](api-power-bi.md)
+>Esta es una excelente API para [Power BI integración.](api-power-bi.md)
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
@@ -72,7 +73,7 @@ En blanco
 Si se realiza correctamente, este método devuelve 200 Ok con la lista de vulnerabilidades en el cuerpo.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 
@@ -119,5 +120,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="see-also"></a>Consulte también
 
-- [Administración de vulnerabilidades y amenazas basadas en riesgos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Riesgos basados en Administración de amenazas y vulnerabilidades](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilidades de la organización](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

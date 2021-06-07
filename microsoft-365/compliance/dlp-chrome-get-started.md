@@ -1,5 +1,5 @@
 ---
-title: Introducción a la extensión de cumplimiento de Microsoft (versión preliminar)
+title: Introducción a la extensión de cumplimiento de Microsoft
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113868"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730515"
 ---
-# <a name="get-started-with-microsoft-compliance-extension-preview"></a>Introducción a la extensión de cumplimiento de Microsoft (versión preliminar)
+# <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
 
 Use estos procedimientos para implementar la extensión de cumplimiento de Microsoft.
 
@@ -40,7 +40,7 @@ Para usar la extensión de cumplimiento de Microsoft, el dispositivo debe haber 
 - [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
-- [Herramientas y métodos de incorporación para dispositivos Windows 10](dlp-configure-endpoints.md)
+- [Herramientas y métodos de incorporación para dispositivos Windows 10](dlp-configure-endpoints.md)
 - [Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión](endpoint-dlp-configure-proxy.md)
 - [Uso de la prevención de pérdida de datos en punto de conexión](endpoint-dlp-using.md)
 
@@ -94,7 +94,7 @@ Si va a implementar la extensión de cumplimiento de Microsoft en todos sus disp
 
 1. Use los procedimientos de estos temas para incorporar sus dispositivos:
     1. [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
-    1. [Herramientas y métodos de incorporación para dispositivos Windows 10](dlp-configure-endpoints.md)
+    1. [Herramientas y métodos de incorporación para dispositivos Windows 10](dlp-configure-endpoints.md)
     1. [Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión](endpoint-dlp-configure-proxy.md)
 
 ### <a name="basic-setup-single-machine-selfhost"></a>Autohospedaje de máquina única de instalación básica
@@ -261,9 +261,8 @@ Ahora que ha quitado Chrome de la lista de aplicaciones/exploradores no permitid
 
 ### <a name="known-issues-and-limitations"></a>Problemas y limitaciones conocidos
 
-1. No se admite Arrastrar y soltar para la carga de carpetas.
-2. No se admite la Invalidación del bloqueo para la salida de la nube.
-3. No se admite el modo incógnito y se debe deshabilitar.
+1. No se admite la Invalidación del bloqueo para la salida de la nube.
+2. No se admite el modo incógnito y se debe deshabilitar.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad en el explorador de actividad, está listo para realizar el siguiente paso, donde puede crear directivas DLP que protegen los elementos confidenciales.
@@ -278,7 +277,7 @@ Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad 
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Dispositivos de Azure AD Unidos](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

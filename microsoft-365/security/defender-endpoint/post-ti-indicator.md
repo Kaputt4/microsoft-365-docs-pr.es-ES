@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 42bab0a9d20d5e1ef78b98b3538cef209240d890
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ce0dc0ce255e9717082687bd1f8bf5941739261d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187362"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771710"
 ---
 # <a name="submit-or-update-indicator-api"></a>Enviar o actualizar API de indicadores
 
@@ -66,7 +67,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 Nombre | Tipo | Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | string | application/json. **Necesario**.
+Content-Type | cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
@@ -78,7 +79,7 @@ indicatorType | Enum | Tipo del indicador. Los valores posibles son: "FileSha1",
 acción | Enum | La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "AlertAndBlock" y "Allowed". **Required**
 aplicación | Cadena | La aplicación asociada al indicador. **Optional**
 title | Cadena | Título de alerta del indicador. **Required**
-descripción | Cadena | Descripción del indicador. **Required**
+description | Cadena | Descripción del indicador. **Required**
 expirationTime | DateTimeOffset | La hora de expiración del indicador. **Optional**
 severity | Enum | Gravedad del indicador. los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
 recommendedActions | Cadena | Acciones recomendadas de alerta del indicador TI. **Optional**
@@ -89,7 +90,7 @@ rbacGroupNames | Cadena | Lista separada por comas de nombres de grupo RBAC a lo
 - Si se realiza correctamente, este método devuelve 200: código de respuesta aceptar y la entidad [Indicator](ti-indicator.md) creada o actualizada en el cuerpo de la respuesta.
 - Si no se realiza correctamente: este método devuelve 400 - Solicitud mala. La solicitud incorrecta suele indicar un cuerpo incorrecto.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

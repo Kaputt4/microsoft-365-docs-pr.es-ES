@@ -1,7 +1,7 @@
 ---
 title: Obtener KBs ausentes por id. de dispositivo
 description: Recupera las actualizaciones de seguridad que faltan por id. de dispositivo
-keywords: apis, api de gráficos, api compatibles, get, list, file, information, device id, threat & vulnerability management api, Api de Microsoft Defender para Endpoint tvm
+keywords: apis, graph api, apis admitidas, get, list, file, information, device id, threat & administración de vulnerabilidades api, Api de Microsoft Defender para Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aa22b90b95788d9f5a65d54c7a335a2e0f4c3091
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 97cad51938c4ff3498234dbf2e9d69fd48a52367
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933582"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771878"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Obtener KBs ausentes por id. de dispositivo
 

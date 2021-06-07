@@ -13,14 +13,14 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 4532afc40c2324b77725d9ddad158587083e6e9b
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 73e29109a429d8a3fffc69b79939c8dff7ecb087
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280958"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769274"
 ---
-# <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Ilustraciones de la nube de Microsoft para arquitectos empresariales
+# <a name="microsoft-cloud-for-it-architects-illustrations"></a>Ilustraciones de la nube de Microsoft para arquitectos de TI
 
 Estos pósteres de arquitectura en la nube le ofrecen información sobre los servicios en la nube de Microsoft, como Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 y soluciones híbridas locales y en la nube. 
 
@@ -28,7 +28,7 @@ Los responsables de la toma de decisiones de TI y los arquitectos pueden usar es
 
 
 <a name="identity"></a>
-### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Identidad de la nube de Microsoft para arquitectos empresariales
+### <a name="microsoft-cloud-identity-for-it-architects"></a>Identidad de nube de Microsoft para arquitectos de TI
 
 Lo que los arquitectos de TI necesitan saber sobre el diseño de la identidad para las organizaciones que usan plataformas y servicios en la nube de Microsoft.
   
@@ -37,7 +37,7 @@ Lo que los arquitectos de TI necesitan saber sobre el diseño de la identidad pa
 |[![Imagen en miniatura del modelo de identidad de Microsoft Cloud](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [Ver como un PDF](../downloads/MSFT_cloud_architecture_identity.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf) \| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx)   <br/>Actualizado en septiembre de 2020 | Este modelo contiene lo siguiente:  <ul> <li> Introducción a la identidad con la nube de Microsoft </li><li> Capacidades de IDaaS de Azure AD </li><li> Integración de cuentas locales de Servicios de dominio de Active Directory (AD DS) con Azure AD </li><li> Colocar componentes de directorio en IaaS de Azure </li><li> Opciones de AD DS para cargas de trabajo en IaaS de Azure </li></ul><br/>  <br/>|
 
 <a name="security"></a>
-### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Seguridad de nube de Microsoft para arquitectos empresariales
+### <a name="microsoft-cloud-security-for-it-architects"></a>Seguridad en la nube de Microsoft para arquitectos de TI
 
 Lo que los arquitectos de TI necesitan saber sobre la seguridad en las plataformas y los servicios en la nube de Microsoft.
   
@@ -46,7 +46,7 @@ Lo que los arquitectos de TI necesitan saber sobre la seguridad en las plataform
 |[![Miniatura del modelo de seguridad en la nube de Microsoft para arquitectos empresariales](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>Actualizado en abril de 2021 | Este modelo contiene lo siguiente: <ul><li>Responsabilidades de seguridad de Microsoft y clientes</li><li>Acceso de dispositivos e identidades</li><li>Protección contra amenazas</li><li>Protección de la información </ul><br/>|
    
 <a name="networking"></a>
-### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Redes de nube de Microsoft para arquitectos empresariales
+### <a name="microsoft-cloud-networking-for-it-architects"></a>Redes en la nube de Microsoft para arquitectos de TI
 
 Lo que los arquitectos de TI necesitan saber sobre las redes para las plataformas y los servicios en la nube de Microsoft.
   
@@ -55,7 +55,7 @@ Lo que los arquitectos de TI necesitan saber sobre las redes para las plataforma
 |[![Imagen en miniatura del modelo de redes de Microsoft Cloud](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [Ver como un PDF](../downloads/MSFT_cloud_architecture_networking.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) \| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx)   <br/>Actualizado en agosto de 2020 | Este modelo contiene lo siguiente: <ul><li> Adaptación de la red para la conectividad en la nube </li><li> Elementos comunes de la conectividad en la nube de Microsoft </li><li> ExpressRoute para la conectividad en la nube de Microsoft </li><li> Diseño de redes para SaaS de Microsoft, PaaS de Azure y IaaS de Azure </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
-### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nube híbrida de Microsoft para arquitectos empresariales
+### <a name="microsoft-hybrid-cloud-for-it-architects"></a>Nube híbrida de Microsoft para arquitectos de TI
 
 Lo que los arquitectos de TI necesitan saber sobre la nube híbrida para las plataformas y los servicios Microsoft.
   

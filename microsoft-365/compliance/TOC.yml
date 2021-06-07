@@ -694,7 +694,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: Ver documentos de un conjunto de revisión
               href: view-documents-in-review-set.md
-            - name: Consultar los datos de un conjunto de revisión
+            - name: Consultar y filtrar el contenido de un conjunto de revisión
               href: review-set-search.md
             - name: Etiquetar documentos en un conjunto de revisión
               href: tagging-documents.md

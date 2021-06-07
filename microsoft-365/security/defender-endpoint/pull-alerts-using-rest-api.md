@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.custom: api
+ms.openlocfilehash: 6716b0eb029b49ec08cb52ebefc23e50b19036ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903123"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771674"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Extraer Microsoft Defender para detecciones de puntos de conexión con la API de REST de SIEM
 
@@ -61,10 +62,10 @@ El _flujo de credenciales de cliente_ usa credenciales de cliente para autentica
 Use el siguiente método en la API de Microsoft Defender para Endpoint para extraer detecciones en formato JSON.
 
 >[!NOTE]
->El Centro de seguridad de Microsoft Defender combina detecciones de alertas similares en una sola alerta. Esta API extrae detecciones de alertas en su forma sin procesar en función de los parámetros de consulta que establezca, lo que le permite aplicar su propia agrupación y filtrado. 
+>Centro de seguridad de Microsoft Defender combina detecciones de alertas similares en una sola alerta. Esta API extrae detecciones de alertas en su forma sin procesar en función de los parámetros de consulta que establezca, lo que le permite aplicar su propia agrupación y filtrado. 
 
 ## <a name="before-you-begin"></a>Antes de empezar
-- Antes de llamar al extremo de Microsoft Defender para endpoint para extraer detecciones, deberá habilitar la aplicación de integración SIEM en Azure Active Directory (AAD). Para obtener más información, vea [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
+- Antes de llamar al extremo de Microsoft Defender para endpoint para extraer detecciones, deberá habilitar la aplicación de integración siem en Azure Active Directory (AAD). Para obtener más información, vea [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
 
 - Anote los siguientes valores en su registro de aplicaciones de Azure ya que los necesitará para configurar el flujo de OAuth en su aplicación de servicio o demonio:
   - Identificador de la aplicación (exclusivo de la aplicación)
@@ -113,7 +114,7 @@ GET| Use el URI aplicable para su región. <br><br> **Para la UE**: `https://wda
 ### <a name="request-header"></a>Encabezado de solicitud
 Encabezado | Tipo | Descripción|
 :--|:--|:--
-Authorization | string | Obligatorio. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; . |
+Authorization | string | Necesario. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; . |
 
 ### <a name="request-parameters"></a>Parámetros de la solicitud
 
@@ -127,7 +128,7 @@ ago | cadena | Extrae alertas en el siguiente intervalo de tiempo: `(current_tim
 límite | Entero | Define el número de alertas que se recuperarán. Las alertas más recientes se recuperarán en función del número definido.<br><br> **NOTA**: Cuando no se especifique, se recuperarán todas las alertas disponibles en el intervalo de tiempo.
 machinegroups | cadena | Especifica los grupos de dispositivos de los que extraer alertas. <br><br> **NOTA:** Cuando no se especifica, se recuperarán las alertas de todos los grupos de dispositivos. <br><br> Ejemplo: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | cadena | Etiqueta de dispositivo única del Registro.
-CloudCreatedMachineTags | cadena | Etiquetas de dispositivo creadas en el Centro de seguridad de Microsoft Defender.
+CloudCreatedMachineTags | cadena | Etiquetas de dispositivo que se crearon en Centro de seguridad de Microsoft Defender.
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 En el ejemplo siguiente se muestra cómo recuperar todas las detecciones de la organización.

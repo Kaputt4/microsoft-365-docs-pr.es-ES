@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9bfec2c4e65a390189556c14347eaf17236fb95e
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 14291cbbba2272d268a8e79b6df7bd87992885db
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187306"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771422"
 ---
 # <a name="software-resource-type"></a>Tipo de recurso software
 
@@ -41,16 +42,16 @@ ms.locfileid: "51187306"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Método |Tipo de valor devuelto |Descripción
 :---|:---|:---
 [Enumerar software](get-software.md) | Colección de software | Enumerar el inventario de software de la organización.
-[Obtener software por identificador](get-software-by-id.md) | Software | Obtener un software específico por su identificador de software.
-[Enumerar distribución de versiones de software](get-software-ver-distribution.md)| Colección de distribución | Enumerar la distribución de la versión de software por identificador de software.
+[Obtener software por identificación](get-software-by-id.md) | Software | Obtener un software específico por su identificador de software.
+[Enumerar distribución de versión de software](get-software-ver-distribution.md)| Colección de distribución | Enumerar la distribución de la versión de software por identificador de software.
 [Enumerar máquinas por software](get-machines-by-software.md)| Colección MachineRef | Recupera una lista de dispositivos asociados con el identificador de software.
 [Enumerar vulnerabilidades por software](get-vuln-by-software.md) | [Colección Vulnerability](vulnerability.md) | Recupera una lista de vulnerabilidades asociadas con el identificador de software.
-[Obtener KBs que faltan](get-missing-kbs-software.md) | Colección KB | Obtener una lista de KBs que faltan asociados con el identificador de software
+[Obtener los kB que faltan](get-missing-kbs-software.md) | Colección KB | Obtener una lista de KBs que faltan asociados con el identificador de software
 
 ## <a name="properties"></a>Propiedades
 
@@ -60,7 +61,7 @@ id | Cadena | Id. de software
 Nombre | Cadena | Nombre del software
 Proveedor | Cadena | Nombre del proveedor de software
 Debilidades | Long | Número de vulnerabilidades detectadas
-publicExploit | Booleano | Existe vulnerabilidad pública para algunas de las vulnerabilidades
-activeAlert | Booleano | La alerta activa está asociada con este software
+publicExploit | Boolean | Existe vulnerabilidad pública para algunas de las vulnerabilidades
+activeAlert | Boolean | La alerta activa está asociada con este software
 exposedMachines | Long | Número de dispositivos expuestos
 impactScore | Doble | Impacto de la puntuación de exposición de este software

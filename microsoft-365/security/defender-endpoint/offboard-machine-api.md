@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 03a1ef11224021703a6f33f82fa2c4f135a317a7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e2b1114cd091c9cd42aa8e4525416f9d73358a65
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934182"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771998"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera de la máquina
 
@@ -50,7 +51,7 @@ Dispositivo offboard de Defender para endpoint.
 [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 >[!Note]
-> Esta API se admite en Windows 10, versión 1703 y versiones posteriores, o Windows Server 2019 y versiones posteriores. Esta API no se admite en dispositivos MacOS o Linux.
+> Esta API se admite en Windows 10, versión 1703 y posteriores, o Windows Server 2019 y versiones posteriores. Esta API no se admite en dispositivos MacOS o Linux.
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
@@ -88,7 +89,7 @@ Comentario |   Cadena |    Comentario para asociarlo a la acción. **Necesario**
 Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

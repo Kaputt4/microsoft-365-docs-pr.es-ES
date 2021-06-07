@@ -1,5 +1,5 @@
 ---
-title: Métodos y propiedades de recomendación
+title: Propiedades y métodos estáticos.
 description: Recupera las alertas más recientes.
 keywords: apis, api de gráficos, api admitidas, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 6ab4d4e1acab0e4b837195f64c369057d7ceb417
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: bd7aa2af2c7500bbe02108bb8aa5dee452ff2998
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198238"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771602"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso Recomendación
 
@@ -38,11 +39,11 @@ ms.locfileid: "51198238"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 Método |Tipo de valor devuelto |Descripción
 :---|:---|:---
 [Enumerar todas las recomendaciones](get-all-recommendations.md) | Colección de recomendaciones | Recupera una lista de todas las recomendaciones de seguridad que afectan a la organización
-[Obtener recomendación por id.](get-recommendation-by-id.md) | Recomendación | Recupera una recomendación de seguridad por su identificador
+[Obtener recomendación por identificador](get-recommendation-by-id.md) | Recomendación | Recupera una recomendación de seguridad por su identificador
 [Obtener software de recomendación](get-recommendation-software.md)| [Software](software.md) | Recupera una recomendación de seguridad relacionada con un software específico
 [Obtener dispositivos de recomendación](get-recommendation-machines.md)|Colección MachineRef | Recupera una lista de dispositivos asociados con la recomendación de seguridad
 [Obtener vulnerabilidades de recomendación](get-recommendation-vulnerabilities.md) | [Colección Vulnerability](vulnerability.md) | Recupera una lista de vulnerabilidades asociadas con la recomendación de seguridad
@@ -60,9 +61,9 @@ recommendedVersion | Cadena | Versión recomendada
 recommendationCategory | Cadena | Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityStack
 subCategory | Cadena | Subcategoría recomendación
 severityScore | Doble | Posible impacto de la configuración en la puntuación segura de Microsoft para dispositivos de la organización (1-10)
-publicExploit | Booleano | La vulnerabilidad pública está disponible 
-activeAlert | Booleano | La alerta activa está asociada con esta recomendación
-associatedThreats | Colección de cadena | El informe de análisis de amenazas está asociado a esta recomendación
+publicExploit | Boolean | La vulnerabilidad pública está disponible 
+activeAlert | Boolean | La alerta activa está asociada con esta recomendación
+associatedThreats | Colección string | El informe de análisis de amenazas está asociado a esta recomendación
 remediationType | Cadena | Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"
 Estado | Enum | Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"
 configScoreImpact | Doble | Impacto de puntuación segura de Microsoft para dispositivos

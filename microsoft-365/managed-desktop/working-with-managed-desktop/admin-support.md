@@ -9,22 +9,22 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5e614581ee76d1f8cb026345f1c31ed22faafb8a
-ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
+ms.openlocfilehash: d35ab0f4e99d466d283d49e0f51f8e868691b9a9
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50572633"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771746"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
-Puede enviar vales de soporte técnico o solicitudes de comentarios a Microsoft mediante el Portal administrativo de escritorio administrado de Microsoft. Las solicitudes de soporte técnico siempre se priorizan sobre los envíos de comentarios. Las solicitudes de soporte técnico se triagen y se administran según la gravedad tal como se describe en la tabla de definición [de gravedad](#sev). Se revisan los comentarios y se proporciona una respuesta cuando se solicita. 
+Puede enviar vales de soporte técnico o solicitudes de comentarios a Microsoft mediante Escritorio administrado de Microsoft Administrative Portal. Las solicitudes de soporte técnico siempre se priorizan sobre los envíos de comentarios. Las solicitudes de soporte técnico se triagen y se administran según la gravedad tal como se describe en la tabla de definición [de gravedad](#sev). Se revisan los comentarios y se proporciona una respuesta cuando se solicita. 
 
 >[!IMPORTANT]
 >Asegúrate de configurar un [contacto de administrador](../get-started/add-admin-contacts.md) para el empaquetado de aplicaciones, dispositivos, seguridad y otros. No puede enviar una solicitud de soporte técnico en cualquiera de estas áreas si un contacto de administrador no está configurado.
 
 **Para enviar una solicitud de soporte técnico**
-1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú Solución de problemas **y** soporte técnico.
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **Administración de inquilinos.**
 2. Busque la sección Escritorio administrado de Microsoft, seleccione **Solicitud de servicio**.
 3. En **Solicitudes de soporte** técnico, seleccione + Nuevo vale de soporte **técnico**.
 4. Seleccione el **tipo de solicitud de soporte** técnico que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones. 
@@ -32,9 +32,9 @@ Puede enviar vales de soporte técnico o solicitudes de comentarios a Microsoft 
 
 Tipo de solicitud de soporte técnico | Cuándo usarlo
 --- | ---
-Incidente | Necesita que el equipo de operaciones de escritorio administrado de Microsoft investigue, como el impacto generalizado de un cambio o una interrupción del servicio.
-Solicitud de información | Está planeando un cambio para las redes, la configuración de proxy, los sistemas VPN, la expiración del certificado o simplemente necesita información sobre el servicio. Se recomienda una respuesta del equipo de operaciones de escritorio administrado de Microsoft al comunicar un cambio dentro de la organización.
-Solicitud de cambio | Necesita que el equipo de operaciones de escritorio administrado de Microsoft realice un cambio, como mover dispositivos entre grupos de actualización.
+Incidente | Necesita que el equipo Escritorio administrado de Microsoft operaciones de mantenimiento investigue, como el impacto generalizado de un cambio o una interrupción del servicio.
+Solicitud de información | Está planeando un cambio para las redes, la configuración de proxy, los sistemas VPN, la expiración del certificado o simplemente necesita información sobre el servicio. Se recomienda una respuesta del equipo Escritorio administrado de Microsoft operaciones al comunicar un cambio dentro de la organización.
+Solicitud de cambio | Necesita que el Escritorio administrado de Microsoft Operations Team realice un cambio, como mover dispositivos entre grupos de actualización.
 
 <span id="sev" />
 
@@ -52,7 +52,7 @@ Más detalles:
 - **Idiomas de soporte** técnico: toda la compatibilidad se proporciona en inglés.
 - **Cambios en** el nivel de gravedad: Microsoft puede degradar el nivel de gravedad si el cliente no puede proporcionar recursos o respuestas adecuados para permitir que Microsoft continúe con los esfuerzos de resolución de problemas. 
 - **Horario comercial:** para la mayoría de los países, el horario comercial es de 9:00 a.m. a 5:00 p.m., hora estándar del Pacífico.
-- **Compatibilidad de** aplicaciones: para que se tenga en cuenta un problema de compatibilidad de aplicaciones, debe haber un error reproducible, de la misma versión de la aplicación, entre la versión anterior y la actual de Windows u Office. Para resolver problemas de compatibilidad de aplicaciones, Microsoft necesita un punto de contacto del cliente con el que trabajar. La persona debe trabajar directamente con nuestro equipo de Fast Track para investigar y resolver el problema.
+- **Compatibilidad de** aplicaciones: para que se considere un problema de compatibilidad de aplicaciones, debe haber un error reproducible, de la misma versión de la aplicación, entre la versión anterior y la actual de Windows o Office. Para resolver problemas de compatibilidad de aplicaciones, Microsoft necesita un punto de contacto del cliente con el que trabajar. La persona debe trabajar directamente con nuestro equipo de Fast Track para investigar y resolver el problema.
 - **Tiempo de respuesta del cliente** Si un cliente no puede cumplir los requisitos de respuesta esperados, Microsoft disminuirá la solicitud en un nivel de gravedad, hasta un mínimo de gravedad C. Si un cliente no responde a las solicitudes de acción, Microsoft mitigará y cerrará la solicitud de soporte técnico dentro de las 48 horas siguientes a la última solicitud.
 
 ## <a name="provide-feedback"></a>Enviar comentarios
@@ -66,6 +66,6 @@ Una vez que un vale  está en estado **Mitigado** o Resuelto, puedes compartir t
 
 
 ## <a name="more-resources"></a>Más recursos
-- [Compatibilidad de usuario con Microsoft Managed Desktop](end-user-support.md). 
-- [Compatibilidad con Microsoft Managed Desktop](../service-description/support.md). 
-- Si ya se suscribe a Microsoft Managed Desktop, encontrará procedimientos detallados, flujos de proceso, instrucciones  de trabajo y preguntas frecuentes en  la Guía de administración de Escritorio administrado de Microsoft en la página Recursos en línea en la sección Escritorio administrado de **Microsoft** del menú Administración de inquilinos en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+- [Compatibilidad de usuario con Escritorio administrado de Microsoft](end-user-support.md). 
+- [Compatibilidad con Escritorio administrado de Microsoft](../service-description/support.md). 
+- Si ya se suscribe a Escritorio administrado de Microsoft, encontrará procedimientos detallados, flujos de proceso, instrucciones de trabajo y  preguntas frecuentes en la Guía de  administración de Escritorio administrado de Microsoft en la página Recursos en línea en la sección **Escritorio administrado de Microsoft** del menú Administración de inquilinos de [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).

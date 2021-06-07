@@ -17,19 +17,19 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo iniciar el portal con el programador de inicio del portal
-ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: e77668b3c21b43de1a2e30dc7181842770a24784
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730263"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769209"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal con el programador de inicio SharePoint portal de inicio
 
 Un portal es un sitio de comunicación SharePoint en la intranet que es de alto tráfico, un sitio que tiene entre 10.000 y más de 100.000 espectadores en el transcurso de varias semanas. Use el programador de inicio del portal para iniciar el portal para garantizar que los usuarios tengan una experiencia de visualización fluida al obtener acceso a su nuevo SharePoint portal.
 <br>
 <br>
-El programador de inicio del portal está diseñado para ayudarle a seguir un enfoque de implementación por fases mediante el procesamiento por lotes de visores en oleadas y la administración de los redireccionamientos de dirección URL para el nuevo portal. Durante el inicio de cada oleada, puede recopilar comentarios de los usuarios, supervisar el rendimiento del portal y pausar el inicio para resolver problemas antes de continuar con la siguiente oleada. Obtenga más información sobre cómo [planear un inicio de portal en SharePoint](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
+El programador de inicio del portal está diseñado para ayudarle a seguir un enfoque de implementación por fases mediante el procesamiento por lotes de visores en oleadas y la administración de los redireccionamientos de dirección URL para el nuevo portal. Durante el inicio de cada oleada, puede recopilar comentarios de los usuarios, supervisar el rendimiento del portal y pausar el inicio para resolver problemas antes de continuar con la siguiente oleada. Obtenga más información sobre cómo [planear un inicio de portal en SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
 
 **Hay dos tipos de redirección:**
 
@@ -116,28 +116,30 @@ Anteriormente, los inicios del portal solo se podían programar a través ShareP
 
 7. Determine quién debe ver el sitio inmediatamente e introduzca su información en el **campo Usuarios exentos de oleadas.** Estos usuarios se excluyen de las oleadas y no se redirigirán antes, durante o después del inicio.
 
+    >[!NOTE]
+    > Se pueden agregar hasta 50 usuarios o grupos de seguridad distintos como máximo. Use grupos de seguridad cuando necesite más de 50 personas para obtener acceso al portal antes de que las oleadas comiencen a iniciarse. 
+
 8.  Confirme los detalles de inicio del portal y seleccione **Programar**. Una vez programado el inicio, los cambios en la página principal del portal de SharePoint tendrán que recibir un resultado de diagnóstico correcto antes de que se reanude el inicio del portal.
 
-### <a name="launch-portal-with-over-100k-users"></a>Iniciar portal con más de 100.000 usuarios
+### <a name="launch-a-portal-with-over-100k-users"></a>Iniciar un portal con más de 100.000 usuarios
 
 Si tiene previsto iniciar un portal con más de 100.000 usuarios, envíe una solicitud de soporte técnico siguiendo los pasos que se indican a continuación. Asegúrese de incluir toda la información solicitada.
 
-Siga estos pasos:
+**Siga estos pasos:**
 1. Vaya a https://admin.microsoft.com
-2. Asegúrese de que está usando la nueva vista previa del centro de administración.
-3. En el panel de navegación izquierdo, seleccione **Soporte técnico** y luego **Nueva solicitud de servicio**. 
-
+2. Asegúrese de que está usando la nueva vista previa del centro de administración
+3. En el panel de navegación izquierdo, seleccione **Soporte** técnico y, a continuación, **nueva solicitud de servicio**
 
    Se activará el panel **¿Necesita ayuda?**, en la parte derecha de la pantalla.
 
-4.  En el **área Describir brevemente el** problema, escriba "Iniciar SharePoint portal con 100 mil usuarios".</br>
-5. Seleccione **Ponerse en contacto con el soporte técnico**.
-6. En **Descripción,** escriba "Iniciar SharePoint Portal con 100k usuarios". 
-7. Rellene el resto de la información y seleccione la **opción de contacto**.
+4. Para **describir brevemente el problema,** escriba "Iniciar SharePoint portal con 100.000 usuarios"</br>
+5. A continuación, seleccione **Ponerse en contacto con el soporte técnico**
+6. En **Descripción,** escriba "Iniciar SharePoint portal con 100 mil usuarios"
+7. Rellene la información restante y, a continuación, seleccione **Póngase en contacto conmigo**
 8. Una vez que se haya creado el vale, asegúrese de que proporciona al agente de soporte técnico la siguiente información:
-- Iniciar dirección URL del portal 
-- Número de usuarios esperados
-- Tiempo estimado de lanzamiento 
+   - Url del portal 
+   - Número de usuarios esperados
+   - Programación de inicio estimada
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>Realizar cambios en un inicio de portal programado
 

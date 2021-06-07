@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 149f3aefd963f15eafa15030a322ec588c0615ed
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7195e91a3a9b7aef6977c925f2c8689d3e461815
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186789"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771578"
 ---
 # <a name="restrict-app-execution-api"></a>Restringir api de ejecución de aplicaciones
 
@@ -72,7 +73,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 Nombre | Tipo | Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | string | application/json. **Necesario**.
+Content-Type | cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
@@ -85,7 +86,7 @@ Comentario |   Cadena |    Comentario para asociarlo a la acción. **Necesario**
 Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

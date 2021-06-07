@@ -1,5 +1,5 @@
 ---
-title: Propiedades y métodos de actividad de corrección
+title: Propiedades y métodos de la actividad de corrección
 description: La respuesta de la API contiene amenazas & administración de vulnerabilidades de corrección creadas en el espacio empresarial. Puede solicitar todas las actividades de corrección, solo una actividad de corrección o información sobre los dispositivos expuestos para una tarea de corrección seleccionada.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
 search.product: eADQiWindows 10XVcnh
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4c0ecd89c45ec2c91dc37f0c9cd0bfb868c0474e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 67009961ecc3755b5af21b2e773bc817ea46bec0
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245545"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769244"
 ---
-# <a name="remediation-activity-methods-and-properties"></a>Propiedades y métodos de actividad de corrección
+# <a name="remediation-activity-methods-and-properties"></a>Propiedades y métodos de la actividad de corrección
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -84,7 +85,7 @@ title | Cadena | Título de esta actividad de corrección
 type | Cadena | Tipo de corrección
 vendorId | Cadena | Nombre de proveedor relacionado
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)
 
