@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para eliminar la cuenta de usuario de un antiguo empleado.
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e9f87f68650394a81c735346db929bf592e91d18
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782386"
+ms.locfileid: "52779836"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Paso 7: Eliminar la cuenta de usuario de un antiguo empleado
 
@@ -84,6 +84,8 @@ Las operaciones anteriores se pueden realizar en tres lugares:
   
  **Más rápida para un usuario con presencia local y en el centro de datos de Exchange**: finalice la sesión mediante el Centro de administración de Azure Active Directory o el Centro de administración de Exchange Y efectúe también el cambio en el entorno local. En caso contrario, DirSync sobrescribirá el cambio realizado en el Centro de administración de Exchange o el Centro de administración Azure Active Directory.
   
-## <a name="related-content"></a>Contenido relacionado
+## <a name="related-articles"></a>Artículos relacionados
 
-[Restaurar un usuario](restore-user.md) (artículo)/ [Restablecer contraseñas](reset-passwords.md) (artículo)
+[Restaurar un usuario](restore-user.md)
+
+[Restablecer contraseñas](reset-passwords.md)

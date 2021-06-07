@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la comunicación: las personas experimentan la puntuación de productividad.'
-ms.openlocfilehash: 6ecde5fbbffe65a80c980c70f8195b8e31507f03
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b744f9631deabb9c7bc97ab6a0cf1ba8fc61c5dd
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579199"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779751"
 ---
 # <a name="communication--people-experiences"></a>Comunicación: experiencias de personas
 
-Productivity Score admite el viaje a la transformación digital con información sobre cómo su organización usa Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las mediciones la experiencia tecnológica y de los usuarios, y se puede comparar con los puntos de referencia de empresas de igual tamaño que la suya. La categoría de comunicación forma parte de las medidas de experiencia de las personas. Para obtener más información, consulte la información general [sobre](productivity-score.md) la puntuación de productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+La puntuación de productividad admite el viaje a la transformación digital con información sobre cómo su organización usa Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las mediciones la experiencia tecnológica y de los usuarios, y se puede comparar con los puntos de referencia de empresas de igual tamaño que la suya. La categoría de comunicación forma parte de las medidas de experiencia de las personas. Para obtener más información, consulte la información general [sobre](productivity-score.md) la puntuación de productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -36,7 +36,7 @@ Para empezar con la información de comunicación, los usuarios de la organizaci
 
 - Microsoft Teams
 - Yammer
-- Exchange en línea
+- Exchange Online
 
 Para obtener más información, vea [Asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
 
@@ -44,7 +44,7 @@ Después de que las personas hayan estado activas en los productos anteriores al
 
 ## <a name="why-your-organizations-communication-score-matters"></a>Por qué la puntuación de comunicación de su organización es importante 
 
-Microsoft entiende que las personas tienen diferentes necesidades de comunicación. Para obtener una respuesta rápida a una pregunta, es posible que elija enviar un mensaje instantáneo. Si desea enviar actualizaciones de estado a su liderazgo, puede elegir un mensaje de correo electrónico. Para llegar a una audiencia más amplia, puede elegir publicar un mensaje de la comunidad. Microsoft 365 permite esta flexibilidad en los modos de comunicación para satisfacer las necesidades de todos. La investigación muestra que el uso de herramientas de comunicación en tiempo real crea una organización más unificada y genera moral, independientemente de la ubicación. [Vea la evidencia](https://go.microsoft.com/fwlink/?linkid=2127669).
+Microsoft entiende que las personas tienen diferentes necesidades de comunicación. Para obtener una respuesta rápida a una pregunta, es posible que elija enviar un mensaje instantáneo. Si desea enviar actualizaciones de estado a su liderazgo, puede elegir un mensaje de correo electrónico. Para llegar a una audiencia más amplia, puede elegir publicar un mensaje de la comunidad. Microsoft 365 esta flexibilidad en los modos de comunicación para satisfacer las necesidades de todos. La investigación muestra que el uso de herramientas de comunicación en tiempo real crea una organización más unificada y genera moral, independientemente de la ubicación.
 
 ## <a name="how-we-calculate-the-communication-score"></a>Cómo calculamos la puntuación de comunicación
 
@@ -62,14 +62,14 @@ Microsoft 365 proporciona a los usuarios la flexibilidad para adaptarse al estil
    - Enviar mensajes a través de Teams
    - Publicación en comunidades en Yammer
 
-   Esta métrica clave se muestra como un porcentaje de todas las personas que usan dos o más de Exchange, Teams o Yammer. 
+   Esta métrica clave se muestra como un porcentaje de todas las personas que usan dos o más Exchange, Teams o Yammer. 
 
 2. **Cuerpo:** Proporciona más información sobre cómo la flexibilidad en los modos de comunicación es valiosa para los usuarios de su organización.
 
 3. **Visualización del estado actual:**
 
    - Barra horizontal donde la parte azul representa el porcentaje expresado en el encabezado
-   - Resalta el (numerador/denominador) usado para calcular el porcentaje expresado en el encabezado:
+   - Momentos el (numerador/denominador) usado para calcular el porcentaje expresado en el encabezado:
      - **Numerador:**# de personas que usan más de un modo de comunicación en los últimos 28 días
      - **Denominador:**# de personas marcadas como habilitadas para más de un producto de comunicación en los últimos 28 días
    - **El valor de punto** de referencia del mismo nivel de la métrica clave también se muestra como un porcentaje
@@ -96,7 +96,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Desglose de los modos de comunicación.]":::
 
-1. **Encabezado:** Destaca el objetivo de la información para proporcionar un desglose detallado de los distintos modos de comunicación que se consideran en Comunicación.
+1. **Encabezado:** Momentos el objetivo de la información para proporcionar un desglose detallado de los distintos modos de comunicación que se consideran en Comunicación.
 
 2. **Cuerpo:** Proporciona información sobre el valor del uso de diferentes modos para compartir conocimientos.
 
@@ -109,12 +109,12 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
      
    - **Personas que envían mensajes en Microsoft Teams:** La parte coloreada y la fracción representan el porcentaje de usuarios habilitados para Microsoft Teams que envían mensajes. Esta fracción se construye a partir de:
    
-     - **Numerador:** personas que envían mensajes en Microsoft Teams en los últimos 28 días.
+     - **Numerador:** personas que envían mensajes Microsoft Teams en los últimos 28 días.
      - **Denominador:** personas habilitadas para Microsoft Teams en los últimos 28 días.
      
    - **Personas que publiquen en comunidades:** La parte coloreada y la fracción representan el porcentaje de usuarios habilitados para Yammer que se están publicando en comunidades. Esta fracción se construye a partir de:
    
-     - **Numerador:** Personas que han publicado en comunidades de Yammer en los últimos 28 días.
+     - **Numerador:** Personas que han publicado en Yammer comunidades en los últimos 28 días.
      - **Denominador:** Personas habilitadas para Yammer en los últimos 28 días.
           
 4. **Ver contenido relacionado:** Seleccione este vínculo para ver vídeos intercalados y otro contenido de ayuda relacionado.
@@ -123,7 +123,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="! [Correos electrónicos con menciones.]":::
 
-1. **Encabezado:** Destaca el aumento en la tasa de respuesta de los nuevos subprocesos de correo electrónico iniciados en los últimos 28 días cuando contienen @mentions.
+1. **Encabezado: Momentos** el aumento en la tasa de respuesta de los nuevos subprocesos de correo electrónico que se iniciaron en los últimos 28 días cuando contienen @mentions.
 
 2. **Cuerpo:** Proporciona información sobre el valor del uso de @mentions mensajes de correo electrónico. Además, las personas que usan @mentions se expresan como un porcentaje de todos los usuarios que han enviado un correo electrónico en los últimos 28 días.
 
@@ -144,9 +144,9 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 ### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Desglose de mensajes por tipo en Microsoft Teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Tipos de mensaje de Teams.]":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Teams de mensajes.]":::
 
-1. **Encabezado:** Destaca las personas que enviaron mensajes de canal como un porcentaje de personas que enviaron cualquier tipo de mensaje (incluidos los mensajes de chat y canal) en los últimos 28 días.
+1. **Encabezado:** Momentos las personas que enviaron mensajes de canal como un porcentaje de personas que enviaron cualquier tipo de mensaje (incluidos mensajes de chat y canal) en los últimos 28 días.
 
 2. **Cuerpo:** Proporciona información sobre el valor del uso de mensajes de canal en Microsoft Teams.
 
@@ -154,13 +154,13 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
       - **Personas que envían mensajes de chat:** La parte coloreada y la fracción representan el uso de mensajes de chat dentro de las personas que enviaron mensajes en Microsoft Teams. La fracción se construye a partir de:
       
-        - **Numerador:** Personas que enviaron mensajes de chat en Microsoft Teams en los últimos 28 días.
-        - **Denominador:** Personas que enviaron mensajes en Microsoft Teams en los últimos 28 días.
+        - **Numerador:** Las personas que enviaron mensajes de chat Microsoft Teams en los últimos 28 días.
+        - **Denominador:** Las personas que enviaron mensajes Microsoft Teams en los últimos 28 días.
         
       - **Personas que envían mensajes de canal:** La parte coloreada y la fracción representan el uso de mensajes de canal dentro de las personas que envían mensajes en Microsoft Teams. La fracción se construye a partir de:
       
-        - **Numerador:** Personas que enviaron mensajes de canal en Microsoft Teams en los últimos 28 días.
-        - **Denominador:** Personas que enviaron mensajes en Microsoft Teams en los últimos 28 días.
+        - **Numerador:** Las personas que enviaron mensajes de canal Microsoft Teams en los últimos 28 días.
+        - **Denominador:** Las personas que enviaron mensajes Microsoft Teams en los últimos 28 días.
         
 4. **Ver contenido relacionado:** Seleccione este vínculo para ver vídeos intercalados y otro contenido de ayuda relacionado.
 
@@ -168,7 +168,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Preguntas y respuestas en Yammer]"::: 
 
-1. **Encabezado:** Resalta las publicaciones marcadas como preguntas en Yammer que han recibido una respuesta marcada como Mejor respuesta como porcentaje de todas las publicaciones marcadas como preguntas en Yammer en los últimos &quot; &quot; 28 días.
+1. **Encabezado:** Momentos las publicaciones marcadas como preguntas en Yammer que han recibido una respuesta marcada como Mejor respuesta como porcentaje de todas las publicaciones marcadas como preguntas en Yammer en los últimos &quot; &quot; 28 días.
 
 2. **Cuerpo:** Proporciona información sobre el valor del uso de preguntas y respuestas en Yammer para compartir conocimientos.
 
@@ -182,7 +182,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 ## <a name="related-content"></a>Contenido relacionado
 
-Estado de las aplicaciones de [Microsoft 365: experiencias tecnológicas](apps-health.md) (artículo)\
+[Microsoft 365 de aplicaciones: experiencias tecnológicas](apps-health.md) (artículo)\
 [Colaboración de contenido: experiencias de personas](content-collaboration.md) (artículo)\
 [Reuniones: experiencias de personas](meetings.md) (artículo)\
 [Movilidad: experiencias de personas](mobility.md) (artículo)\

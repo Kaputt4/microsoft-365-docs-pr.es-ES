@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: df2c01bd0cc935ae8a541b40a96f3e067926674a
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0123fc5cb22e249475f7e95426ee74f6e0939aaa
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625022"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788441"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -105,15 +105,15 @@ Microsoft es compatible con varias opciones cuando empieza a utilizar Teams en l
 |[![Póster de Soluciones de telefonía de Microsoft](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Actualizado en marzo de 2021 | Para obtener más información, vea [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page).|
 
 
-## <a name="empower-remote-workers"></a>Refuerce a sus trabajadores remotos
+## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Configurar la infraestructura para el trabajo híbrido
 
 Con Microsoft 365 y otras tecnologías en la nube de Microsoft, puede proporcionar a sus trabajadores acceso seguro a la información, herramientas y recursos locales y basados en la nube de su organización desde sus hogares. 
 
-[![Póster para aumentar la productividad de los trabajadores remotos](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)  |  [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) <br>
-Actualizado en julio de 2020
+[![Configurar la infraestructura para el póster de trabajo híbrido](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
+[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)  |  [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
+Actualizado en junio de 2021
 
-Para obtener más información, vea el artículo de este póster: Facultar a [los trabajadores remotos con Microsoft 365](empower-people-to-work-remotely.md).
+Para obtener más información, vea el artículo de este póster: Configurar la infraestructura [para el trabajo híbrido con Microsoft 365](empower-people-to-work-remotely.md).
 
 ## <a name="microsoft-teams-with-security-isolation"></a>Microsoft Teams aislamiento de seguridad
 

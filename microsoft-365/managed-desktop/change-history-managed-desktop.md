@@ -13,16 +13,44 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 6b18de29b339c3367bfacb8bdc8ec9725481e3e4
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730743"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779860"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
 En este artículo se enumeran los artículos nuevos y actualizados [de la Escritorio administrado de Microsoft documentación .](index.yml) Los artículos "actualizados" han tenido adiciones o correcciones de material; no se enumeran correcciones secundarias como la corrección de errores tipográficos, de estilo o de formato. Siempre puede ver el historial de confirmaciones específicas (incluidos los detalles de los cambios) visitando el [repositorio en GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="may-2021"></a>Mayo de 2021
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Configurar dispositivos del Escritorio administrado por Microsoft](get-started/set-up-devices.md) | Artículo actualizado
+[Informe de inventario de dispositivos](working-with-managed-desktop/device-inventory-report.md) | Artículo actualizado
+[Configuración de red para el Escritorio administrado de Microsoft](get-ready/network.md) | Artículo actualizado
+[Registro de diagnóstico](service-description/diagnostic-logs.md) | Artículo nuevo
+[Tecnologías del Escritorio administrado de Microsoft](intro/technologies.md) | Artículo actualizado
+[Requisitos previos para las cuentas de invitado](get-ready/guest-accounts.md) | Artículo actualizado
+[Trabajar con informes](working-with-managed-desktop/reports.md) | Artículo actualizado
+
+## <a name="april-2021"></a>Abril de 2021
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Perfiles de dispositivo](service-description/profiles.md) | Artículo nuevo
+[Pasos para que los Socios puedan registrar dispositivos](get-started/register-devices-partner.md) | Artículo actualizado
+[Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
+[Registre dispositivos existentes usted mismo](get-started/register-reused-devices-self.md) | Artículo actualizado
+[Dependencia de nombre de dispositivo de dirección](get-ready/address-device-names.md) | Artículo nuevo
+[Nombres del dispositivo](service-description/device-names.md) | Artículo nuevo
+[Eliminación de dispositivos](working-with-managed-desktop/remove-devices.md) | Artículo nuevo
+[Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
+[Aplicaciones en Escritorio administrado de Microsoft](get-ready/apps.md) | Artículo actualizado
+[Validar los dispositivos nuevos](get-started/validate-device.md) | Artículo nuevo
+[Configurar dispositivos del Escritorio administrado por Microsoft](get-started/set-up-devices.md) | Artículo actualizado
+[Escritorio administrado de Microsoft ciclo de vida del producto](service-description/device-lifecycle.md) | Artículo actualizado
+[Escritorio administrado de Microsoft dispositivos](service-description/device-list.md) |Artículo actualizado
 
 ## <a name="march-2021"></a>Marzo de 2021
 Artículo nuevo o modificado | Descripción

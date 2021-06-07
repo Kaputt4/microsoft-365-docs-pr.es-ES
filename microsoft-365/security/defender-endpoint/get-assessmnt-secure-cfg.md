@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: ab33db7fb7acf1969973a7af8f80ea97ef3d378f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689102"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778370"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exportar evaluación de configuración segura por dispositivo
 
@@ -99,20 +99,20 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
-ConfigurationCategory | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad | Controles de seguridad
-ConfigurationId | string | Identificador único para una configuración específica | scid-10000
-ConfigurationImpact | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) | 9 
+ConfigurationCategory | cadena | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad | Controles de seguridad
+ConfigurationId | cadena | Identificador único para una configuración específica | scid-10000
+ConfigurationImpact | cadena | Impacto valorado de la configuración en el resultado general de la configuración (1-10) | 9 
 ConfigurationName | string | Nombre para mostrar de la configuración | Incorporar dispositivos a Microsoft Defender para punto de conexión
-ConfigurationSubcategory | string | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. | Dispositivos integrados
-DeviceId | string | Identificador único del dispositivo en el servicio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | Nombre de dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com
+ConfigurationSubcategory | cadena | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. | Dispositivos integrados
+DeviceId | cadena | Identificador único del dispositivo en el servicio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | cadena | Nombre de dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com
 IsApplicable | bool | Indica si la configuración o directiva es aplicable | true
 IsCompliant | bool | Indica si la configuración o la directiva está configurada correctamente | false
 IsExpectedUserImpact | bool | Indica si habrá impacto del usuario si se aplicará la configuración | true
-OSPlatform | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información. | Windows10
-RbacGroupName | string | Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None". | Servidores
-RecommendationReference | string | Una referencia al identificador de recomendación relacionado con este software. | sca-_-scid-20000
-Timestamp | string | La última vez que se vio la configuración en el dispositivo | 2020-11-03 10:13:34.8476880
+OSPlatform | cadena | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información. | Windows10
+RbacGroupName | cadena | Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None". | Servidores
+RecommendationReference | cadena | Una referencia al identificador de recomendación relacionado con este software. | sca-_-scid-20000
+Timestamp | cadena | La última vez que se vio la configuración en el dispositivo | 2020-11-03 10:13:34.8476880
 
 ### <a name="16-examples"></a>1.6 Ejemplos
 
@@ -260,7 +260,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos | cadena de \[ matriz\] | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | string | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z ]
+GeneratedTime | cadena | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z ]
 
 ### <a name="26-examples"></a>2.6 Ejemplos
 

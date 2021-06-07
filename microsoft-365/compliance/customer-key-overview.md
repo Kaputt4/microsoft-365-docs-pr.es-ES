@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá cómo funciona el cifrado de servicio con la clave de cliente en Microsoft 365.
-ms.openlocfilehash: 3d0c86dbca02a66547f0ade643b745ecfc8f92cd
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344775"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769454"
 ---
 # <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
 
@@ -52,8 +52,11 @@ Una directiva de cifrado de datos (DEP) define la jerarquía de cifrado. El serv
 - Teams de estado
 - Información de usuario y señal para Exchange Online
 - Exchange Online buzones de correo que no están cifrados por los DEP de buzones
-- Datos de coincidencia exacta de datos mip (EDM): (esquemas de archivo de datos, paquetes de reglas y sales usadas para hash de los datos confidenciales).
-  Para la coincidencia exacta de datos de MIP (EDM) y Microsoft Teams, el DEP de varias cargas de trabajo cifra los nuevos datos desde el momento en que asigna el DEP al inquilino. Por Exchange Online, clave de cliente cifra todos los datos existentes y nuevos.
+- Microsoft Information Protection:
+
+  - Datos exactos de coincidencia de datos (EDM), incluidos los esquemas de archivo de datos, los paquetes de reglas y las sales usadas para hash de los datos confidenciales. Para EDM y Microsoft Teams, el DEP de varias cargas de trabajo cifra los nuevos datos desde el momento en que asigna el DEP al inquilino. Por Exchange Online, clave de cliente cifra todos los datos existentes y nuevos.
+
+  - Configuración de etiquetas para etiquetas de confidencialidad
 
 Los DEP de varias cargas de trabajo no cifran los siguientes tipos de datos. En su lugar, Microsoft 365 otros tipos de cifrado para proteger estos datos.
 

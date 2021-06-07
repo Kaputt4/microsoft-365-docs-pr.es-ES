@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.topic: article
+ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569748"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769334"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Ver eventos de la reducción de la superficie expuesta a ataques
 
@@ -28,7 +29,8 @@ ms.locfileid: "51569748"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> [!TIP]
+> ¿Desea experimentar Microsoft Defender para endpoint? [Registrarse para obtener una versión de prueba gratuita](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink).
 
 Revisa los eventos de reducción de superficie de ataque en el Visor de eventos para supervisar qué reglas o configuraciones funcionan. También puede determinar si alguna configuración es demasiado "ruidosa" o si afecta al flujo de trabajo diario.
 
@@ -36,17 +38,17 @@ Revisar los eventos es útil al evaluar las características. Puede habilitar el
 
 En este artículo se enumeran todos los eventos, su característica o configuración asociadas y se describe cómo crear vistas personalizadas para filtrar a eventos específicos.
 
-Obtenga informes detallados sobre eventos y bloques como parte de Seguridad de Windows si tiene una suscripción a E5 y usa [Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
+Obtenga informes detallados en eventos y bloques como parte de Seguridad de Windows si tiene una suscripción a E5 y usa [Microsoft Defender para Endpoint](microsoft-defender-endpoint.md).
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Usar vistas personalizadas para revisar las capacidades de reducción de superficie de ataque
 
-Crea vistas personalizadas en el Visor de eventos de Windows para ver solo eventos para funciones y configuraciones específicas. La forma más sencilla es importar una vista personalizada como un archivo XML. Puede copiar el XML directamente desde esta página.
+Cree vistas personalizadas en el Windows de eventos para ver solo eventos para funciones y configuraciones específicas. La forma más sencilla es importar una vista personalizada como un archivo XML. Puede copiar el XML directamente desde esta página.
 
 También puede navegar manualmente hasta el área de eventos que corresponde a la característica.
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importar una vista personalizada XML existente
 
-1. Cree un archivo .txt vacío y copie el XML de la vista personalizada que desea usar en el archivo .txt. Haga esto para cada una de las vistas personalizadas que desee usar. Cambie el nombre de los archivos de la siguiente manera (asegúrese de cambiar el tipo de .txt a .xml):
+1. Cree un archivo .txt y copie el XML de la vista personalizada que desea usar en el .txt archivo. Haga esto para cada una de las vistas personalizadas que desee usar. Cambie el nombre de los archivos de la siguiente manera (asegúrese de cambiar el tipo de .txt a .xml):
     - Vista personalizada de eventos de acceso a carpetas *controladas:cfa-events.xml*
     - Vista personalizada de eventos de protección contra *vulnerabilidades:ep-events.xml*
     - Vista personalizada de eventos de reducción de superficie *de ataque:asr-events.xml*
@@ -66,17 +68,17 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 ### <a name="copy-the-xml-directly"></a>Copiar el XML directamente
 
-1. Escriba **el visor de** eventos en el menú Inicio y abra el Visor de eventos **de** Windows .
+1. Escriba **visor de eventos** en el menú Inicio y abra el Windows de **eventos**.
 
 2. En el panel izquierdo, en **Acciones,** seleccione **Crear vista personalizada...**
 
     ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos](/windows/security/threat-protection/images/events-create)
 
-3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente.** Verá una advertencia de que no puede editar  la consulta mediante la pestaña Filtro si usa la opción XML. Seleccione **Sí**.
+3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente.** Verá una advertencia de que no puede editar  la consulta mediante la pestaña Filtro si usa la opción XML. Haga clic en **Sí**.
 
 4. Pegue el código XML de la característica desde la que desea filtrar los eventos en la sección XML.
 
-5. Elija **Aceptar**. Especifique un nombre para el filtro.
+5. Seleccione **Aceptar**. Especifique un nombre para el filtro.
 
 6. Creará una vista personalizada que filtra para mostrar solo los eventos relacionados con esa característica.
 
@@ -135,9 +137,9 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 ## <a name="list-of-attack-surface-reduction-events"></a>Lista de eventos de reducción de superficie de ataque
 
-Todos los eventos de reducción de superficie de ataque se encuentran en Registros de aplicaciones y servicios **> Microsoft > Windows** y, a continuación, la carpeta o el proveedor como se muestra en la tabla siguiente.
+Todos los eventos de reducción de superficie de ataque se encuentran en Registros de aplicaciones y **servicios > Microsoft > Windows** y, a continuación, la carpeta o el proveedor como se muestra en la tabla siguiente.
 
-Puedes acceder a estos eventos en el visor de eventos de Windows:
+Puede tener acceso a estos eventos en Windows visor de eventos:
 
 1. Abra el **menú Inicio** y escriba visor **de eventos** y, a continuación, seleccione el resultado del **Visor de** eventos.
 2. Expanda Registros de aplicaciones y **servicios > Microsoft > Windows** y, a continuación, vaya a la carpeta que aparece en **Proveedor/origen** en la tabla siguiente.
@@ -156,12 +158,12 @@ Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo ke
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 7  | Bloquear la auditoría de imágenes remotas
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 8  | Bloquear bloque de imágenes remotas
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 9  | Deshabilitar la auditoría de llamadas del sistema win32k
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 10   | Deshabilitar el bloqueo de llamadas del sistema win32k
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 10 | Deshabilitar el bloqueo de llamadas del sistema win32k
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 11 | Auditoría de protección de integridad de código
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 12  | Bloqueo de protección de integridad de código
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 13 | Auditoría del EAF
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 14  | Aplicación de EAF
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 15  | Auditoría de EAF+
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 15 | Auditoría de EAF+
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 16  | Aplicación de EAF+
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 17  | Auditoría de IAF
 Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 18  | IAF enforce

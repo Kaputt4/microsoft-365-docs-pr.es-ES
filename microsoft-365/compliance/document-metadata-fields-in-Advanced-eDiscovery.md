@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730503"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769574"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
@@ -75,6 +75,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |EmailAction*||Email_action|Los valores **son None,** **Reply** o **Forward**; según la línea de asunto de un mensaje.|
 |Recibo de entrega de correo electrónico solicitado||Email_delivery_receipt|Dirección de correo electrónico proporcionada en encabezados de Internet para el recibo de entrega.|
 |Importance|EmailImportance|Email_importance|Importancia del mensaje: **0** - Low; **1** : Normal; **2** - High|
+|Errores de procesamiento omitido|ErrorIgnored|Error_Ignored|Se omitió el error y no se corrija.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Conjunto completo de encabezados de correo electrónico del mensaje de correo electrónico|
 |EmailLevel*||Email_level|Indica el nivel de un mensaje dentro del subproceso de correo electrónico al que pertenece; los datos adjuntos heredan el valor de su mensaje primario.|
 |Id. de mensaje de correo electrónico||Email_message_ID|Identificador de mensaje de Internet del mensaje.|
@@ -88,14 +89,14 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |||Extracted_text_path|Ruta de acceso al archivo de texto extraído en la exportación.|
 |ExtractedTextLength*||Extracted_text_length|Número de caracteres en el texto extraído.|
 |FamilyDuplicateSet*||Family_duplicate_set|Identificador numérico para familias que son exactamente duplicados entre sí (mismo contenido y todos los mismos datos adjuntos).|
-|Id. de familia|FamilyId|Family_ID|Id. de familia agrupa todos los elementos; para el correo electrónico, esto incluye el mensaje y todos los datos adjuntos; para documentos, esto incluye el documento y los elementos incrustados.|
+|Id. de familia|FamilyId|Family_ID|Agrupa todos los elementos del correo electrónico. Esto incluye el mensaje y todos los datos adjuntos y los elementos extraídos.|
 |Tamaño de familia||Family_size|Número de documentos de la familia.|
 |Clase File|FileClass|File_class|Para el contenido de SharePoint y OneDrive: **Document**; para el contenido de Exchange: **Correo electrónico** o **datos adjuntos**.|
 |Id. de archivo|FileId|File_ID|Identificador de documento único dentro del caso.|
 |Fecha de creación del sistema de archivos||File_system_date_created|Fecha de creación desde el sistema de archivos (solo se aplica a datos que no Office 365 datos).|
 |Fecha de modificación del sistema de archivos||File_system_date_modified|Fecha de modificación del sistema de archivos (solo se aplica a datos que no Office 365 datos).|
 |Tipo de archivo|FileType||Tipo de archivo del elemento basado en la extensión de archivo.|
-|Id. de grupo|GroupID||Id. de grupo para contenido agrupado.|
+|Id. de grupo|Id. de grupo|Group_ID|Agrupa todos los elementos para correo electrónico y documentos. Para el correo electrónico, esto incluye el mensaje y todos los datos adjuntos y elementos extraídos. Para los documentos, esto incluye el documento y los elementos incrustados.|
 |Tiene datos adjuntos|HasAttachment|Email_has_attachment|Indica si el mensaje tiene datos adjuntos.|
 |Tiene abogado|HasAttorney||**True** cuando al menos uno de los participantes se encuentra en la lista de abogados; de lo contrario, el valor es **False**.|
 |HasText*||Has_text|Indica si el elemento tiene texto; los valores posibles **son True** y **False**.|
@@ -126,6 +127,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |NativeSHA256||Native_SHA_256|Hash SHA256 (valor hash de 256 bits) de la secuencia de archivos.|
 |Ordenación de ND/ET: excluir datos adjuntos|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenación del conjunto de subprocesos de correo electrónico (ET) y del conjunto Casi duplicado (ND). Este campo se usa para una ordenación eficaz en el momento de la revisión. Una **D** tiene el prefijo de conjuntos de ND y **una E** tiene el prefijo et sets.|
 |Ordenación de ND/ET: incluir datos adjuntos|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenación de un conjunto de subprocesos de correo electrónico (ET) y un conjunto casi duplicado (ND). Este campo se usa para una ordenación eficaz en el momento de la revisión. Una **D** tiene el prefijo de conjuntos de ND y **una E** tiene el prefijo et sets. Cada elemento de correo electrónico de un conjunto de ET va seguido de sus datos adjuntos adecuados.|
+|Conjunto casi duplicado||ND_set|Los elementos que son similares al documento dinámico comparten el mismo ND_set.|
 |Autores de O365||O365_authors|Autor de SharePoint.|
 |O365 creado por||O365_created_by|Creado por desde SharePoint.|
 |Fecha de creación de O365||O365_date_created|Fecha de creación a partir SharePoint.|
@@ -155,6 +157,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Dominio del remitente|SenderDomain|Email_sender_domain|Dominio del remitente.|
 |Sent|Sent|Email_date_sent|Fecha de envío del mensaje.|
 |Establecer orden: Primero inclusivo|SetOrderInclusivesFirst|Set_order_inclusives_first|Campo de ordenación: correo electrónico y datos adjuntos: contra cronológicos; documents: pivot first then by descending similarity score.|
+|Id. de conjunto||Set_ID|Los documentos de contenido similar (ND_set) o correo electrónico dentro del mismo subproceso de correo electrónico (Email_set) comparten el mismo Set_ID.|
 |SimilarityPercent||Similarity_percent|Indica lo parecido que es un documento al pivote del conjunto casi duplicado.|
 |Tamaño de archivo nativo|Size|Native_size|Número de bytes del elemento nativo.|
 |Subject|Subject|Email_subject|Asunto del mensaje.|

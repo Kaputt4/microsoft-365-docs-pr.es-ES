@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga más información sobre los servicios y los tipos de elementos en los que puede usar etiquetas de confidencialidad como condiciones en directivas DLP
-ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 94d5e9f53471f6113dcc755995a3f94e95a58e53
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651097"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779848"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Usar etiquetas de confidencialidad como condiciones en las directivas de DLP
 
@@ -65,6 +65,9 @@ Puede usar etiquetas de confidencialidad como condiciones para estos elementos y
 \* La detección DLP de etiquetas de confidencialidad en los datos adjuntos de correo electrónico solo es compatible con tipos de archivo de Office.
 
 \** Los datos adjuntos enviados en Teams sobre chats o canales 1:1 son cargados automáticamente en OneDrive para la Empresa y SharePoint. De modo que si SharePoint Online o OneDrive para la Empresa están incluidos como ubicaciones en su directiva de DLP, entonces los adjuntos etiquetados enviados en Teams serán incluidos de forma automática en el alcance de esta condición. No es necesario seleccionar Teams como una ubicación en la Directiva DLP.
+
+> [!NOTE]
+> La capacidad de DLP para detectar etiquetas sensibles en SharePoint y OneDrive para la Empresa es limitada. Para más información, vea [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations).
 
 ### <a name="supported-scenarios"></a>Escenarios admitidos
 

@@ -1,5 +1,5 @@
 ---
-title: Conexión de API de Microsoft Defender para puntos de conexión a Power BI
+title: Conexión de API de Microsoft Defender para endpoint a Power BI
 ms.reviewer: ''
 description: Cree un informe de Power Business Intelligence (BI) sobre las API de Microsoft Defender para endpoints.
 keywords: apis, api admitidas, Power BI, informes
@@ -15,15 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 5c76784d78837c324922ffc25539746a4921e426
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935046"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769718"
 ---
-# <a name="create-custom-reports-using-power-bi"></a>Crear informes personalizados con Power BI
+# <a name="create-custom-reports-using-power-bi"></a>Crear informes personalizados mediante Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,13 +39,13 @@ ms.locfileid: "51935046"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-En esta sección aprenderá a crear un informe de Power BI sobre las API de Defender for Endpoint.
+En esta sección aprenderás a crear un informe Power BI en la parte superior de Defender para las API de punto de conexión.
 
 El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada y el segundo ejemplo muestra una conexión a nuestras API de OData, como acciones de máquina o alertas.
 
 ## <a name="connect-power-bi-to-advanced-hunting-api"></a>Conectar Power BI a la API de búsqueda avanzada
 
-- Abrir Microsoft Power BI
+- Abra Microsoft Power BI
 
 - Haga **clic en Obtener consulta en** blanco de  >  **datos**
 
@@ -107,7 +108,7 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
 
 - Escriba sus credenciales y espere a que se haya iniciado sesión
 
-- Haga clic **en Conectar**
+- Haga **clic en Conectar**
 
     ![Imagen de set credentials2](images/power-bi-set-credentials-organizational-cont.png)
 
@@ -137,11 +138,11 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
 - También puede usar consultas OData para filtros de consultas, vea [Using OData Queries](exposed-apis-odata-samples.md)
 
 
-## <a name="power-bi-dashboard-samples-in-github"></a>Ejemplos de panel de Power BI en GitHub
-Para obtener más información, vea las plantillas [de informe de Power BI](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
+## <a name="power-bi-dashboard-samples-in-github"></a>Power BI ejemplos de panel en GitHub
+Para obtener más información, [vea el Power BI de informes](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## <a name="sample-reports"></a>Informes de ejemplo
-Vea los ejemplos de informes de Microsoft Defender para Endpoint Power BI. Para obtener más información, vea [Examinar ejemplos de código](https://docs.microsoft.com/samples/browse/?products=mdatp).
+Vea los ejemplos de informes de Microsoft Defender para Power BI punto de conexión. Para obtener más información, vea [Examinar ejemplos de código](https://docs.microsoft.com/samples/browse/?products=mdatp).
 
 
 ## <a name="related-topic"></a>Tema relacionado

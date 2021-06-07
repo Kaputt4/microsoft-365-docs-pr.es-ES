@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 29423230d0d8d4baaa1acca9a3661dc3436f303d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e4ed5a68b0f4c5e9472702d3cc2798a810e4f84e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200104"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769478"
 ---
 # <a name="get-machine-by-id-api"></a>Obtener api de máquina por id.
 
@@ -80,7 +82,7 @@ Si se realiza correctamente y el dispositivo existe: 200 Aceptar con la [entidad
 Si no se encontró el equipo con el identificador especificado: 404 No se encontró.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

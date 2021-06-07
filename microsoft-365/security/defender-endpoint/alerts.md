@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4997d7118b139d993ed94ed917137ca107940e46
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199626"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769814"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso Alert
 
@@ -36,20 +37,20 @@ ms.locfileid: "51199626"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Método |Tipo de valor devuelto |Descripción
 :---|:---|:---
 [Obtener alerta](get-alert-info-by-id.md) | [Alerta](alerts.md) | Obtener un único [objeto de](alerts.md) alerta.
-[List alerts](get-alerts.md) | [Colección Alert](alerts.md) | Enumerar [la colección de](alerts.md) alertas.
+[Listar alertas](get-alerts.md) | [Colección Alert](alerts.md) | Enumerar [la colección de](alerts.md) alertas.
 [Update alert](update-alert.md) | [Alerta](alerts.md) | Actualizar alerta [específica](alerts.md).
 [Alertas de actualización por lotes](batch-update-alerts.md) | | Actualizar un lote de [alertas](alerts.md).
 [Crear alerta](create-alert-by-reference.md)|[Alerta](alerts.md)|Crear una alerta basada en los datos de eventos obtenidos de [la búsqueda avanzada](run-advanced-query-api.md).
 [Enumerar dominios relacionados](get-alert-related-domain-info.md)|Colección domain| Enumerar las direcciones URL asociadas con la alerta.
 [Enumerar archivos relacionados](get-alert-related-files-info.md) | [Colección de](files.md) archivos |  Enumerar [las entidades](files.md) de archivo asociadas a la [alerta](alerts.md).
 [Enumerar direcciones IP relacionadas](get-alert-related-ip-info.md) | Colección IP | Enumerar direcciones IP asociadas a la alerta.
-[Obtener máquinas relacionadas](get-alert-related-machine-info.md) | [Equipo](machine.md) | El [equipo](machine.md) asociado a la [alerta](alerts.md).
-[Obtener usuarios relacionados](get-alert-related-user-info.md) | [User](user.md) | El [usuario](user.md) asociado a la [alerta](alerts.md).
+[Obtener máquinas relacionadas](get-alert-related-machine-info.md) | [Máquina](machine.md) | El [equipo](machine.md) asociado a la [alerta](alerts.md).
+[Obtener usuarios relacionados](get-alert-related-user-info.md) | [Usuario](user.md) | El [usuario](user.md) asociado a la [alerta](alerts.md).
 
 
 ## <a name="properties"></a>Propiedades
@@ -58,7 +59,7 @@ Propiedad |    Tipo    |    Descripción
 :---|:---|:---
 id | Cadena | Id. de alerta.
 title | String | Título de la alerta.
-descripción | String | Descripción de la alerta.
+description | String | Descripción de la alerta.
 alertCreationTime | DateTimeOffset que admite valores NULL | La fecha y hora (en UTC) se creó la alerta.
 lastEventTime | DateTimeOffset que admite valores NULL | La última aparición del evento que desencadenó la alerta en el mismo dispositivo.
 firstEventTime | DateTimeOffset que admite valores NULL | La primera aparición del evento que desencadenó la alerta en ese dispositivo.
@@ -78,7 +79,7 @@ threatFamilyName | Cadena | Familia de amenazas.
 threatName | Cadena | Nombre de la amenaza.
 machineId | Cadena | Id. de una [entidad de](machine.md) máquina asociada a la alerta.
 computerDnsName | Cadena | [nombre](machine.md) completo de la máquina.
-aadTenantId | Cadena | El identificador de Azure Active Directory.
+aadTenantId | Cadena | El Azure Active Directory de usuario.
 detectorId | Cadena | El identificador del detector que desencadenó la alerta.
 comments | Lista de comentarios de alerta | El objeto Alert Comment contiene: cadena de comentario, createdBy string y createTime date time.
 Evidencia | Lista de pruebas de alerta | Evidencia relacionada con la alerta. Vea el ejemplo abajo.

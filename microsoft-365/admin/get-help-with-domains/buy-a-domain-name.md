@@ -23,17 +23,17 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Obtenga información sobre cómo comprar un nombre de dominio en Microsoft 365.
-ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c4b3b0ac88671e72ed567998ad9d97486dfb6342
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635467"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779691"
 ---
 # <a name="buy-a-domain-name"></a>Comprar un nombre de dominio
 
 > [!NOTE]
-> Si su organización usa Office 365 operado por 21Vianet en China, vea How [to buy a domain for Office 365 operated by 21Vianet in China](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md).
+> Si su organización usa Office 365 operado por 21Vianet en China, vea How [to buy a domain for Office 365 operated by 21Vianet in China](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
 
  *Para agregar, modificar o quitar dominios, **debe ser** administrador **global** de un plan empresarial [o empresarial.](https://products.office.com/business/office) Estos cambios afectan a todo el inquilino, los administradores *personalizados* o los usuarios *normales* no podrán realizar estos cambios.*  
 
@@ -89,9 +89,8 @@ Solicite la transferencia en el registrador al cual desea mover su dominio. Busq
 
 
 ::: moniker range="o365-21vianet"
+
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>Cómo comprar un dominio de Office 365 ofrecido por 21Vianet
-
-
 
 Si aún no tiene su propio dominio, puede comprar fácilmente uno online en un registrador de nombres de dominio, en un revendedor de dominios o incluso en su proveedor de Internet actual. Obtendrá un nombre de dominio cuando se suscriba a Office 365 ofrecido por 21Vianet, por ejemplo, contoso.partner.onmschina.cn. Pero es posible que desee usar un nombre de dominio personalizado, como fourthcoffee.com.
   
@@ -120,5 +119,5 @@ Después de registrar el dominio (en un registrador de dominios), inicia sesión
 ## <a name="related-content"></a>Contenido relacionado
 
 [Agregar un dominio a Microsoft 365](../setup/add-domain.md) (artículo)\
-[Preguntas más frecuentes](../setup/domains-faq.yml) sobre dominios (artículo)\
+[Preguntas más frecuentes sobre dominios](../setup/domains-faq.yml) (artículo)\
 [Actualizar registros DNS para mantener su sitio web con su proveedor de hospedaje actual](../dns/update-dns-records-to-retain-current-hosting-provider.md) (artículo)

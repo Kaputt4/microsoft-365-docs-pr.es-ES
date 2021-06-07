@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ed4b04acd7fec75af4e157837312b824a8d9f98
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: b830c165d91dfdc8c5c6c47abecd73ba7a9621c8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696567"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788468"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -83,9 +83,9 @@ Para aumentar la eficacia del filtrado de correo no deseado, puede crear directi
 
 La creación de una directiva contra correo no deseado en el Centro de seguridad crea una regla de filtro de correo no deseado y la directiva de filtro de correo no deseado asociada al mismo tiempo con el mismo nombre para ambas.
 
-1. En el Centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Protección contra correo electrónico no deseado**.
+1. En el centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Antispam**.
 
-2. Haga clic en ![Crear icono](../../media/m365-cc-sc-create-icon.png) **Crear directiva** y, después, seleccione **Entrante** en la lista desplegable.
+2. En la página de directivas **antispam**, haga clic en el![icono para crea](../../media/m365-cc-sc-create-icon.png) **Crear directiva**, y luego, seleccione **Entrada** en la lista desplegable.
 
 3. Se abrirá el asistente para directivas. En la **página Asigne un nombre a la directiva**, configure estas opciones:
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
@@ -123,9 +123,9 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
       <sup>\*</sup> **Contiene idiomas específicos** y **de estos países** no forman parte de la configuración de ASF.
 
-   - **Contiene idiomas específicos**: haga clic en el cuadro y seleccione **Activar** o **Desactivar** en la lista desplegable. Si la activa, aparecerá un cuadro. Empiece a escribir el nombre de un idioma en el cuadro. Aparecerá una lista filtrada de idiomas admitidos. Cuando encuentre el idioma que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar en ![Quitar icono](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   - **Contiene idiomas específicos**: Haga clic en la casilla y seleccione **Activado** o **Desactivado** en la lista desplegable. Si la activa, aparecerá un cuadro. Empiece a escribir el nombre de un idioma en el cuadro. Aparecerá una lista filtrada de idiomas admitidos. Cuando encuentre el idioma que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar en ![Quitar icono](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-   - **De estos países** _: Haga clic en el cuadro y seleccione _ *Activar** o **Desactivar** en la lista desplegable. Si la activa, aparecerá un cuadro. Empiece a escribir el nombre de un país en el cuadro. Se mostrará una lista filtrada de países admitidos. Cuando encuentre el país que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar en ![Quitar icono](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   - **De estos países** _: Haga clic en la casilla y seleccione_ *Activar** o **Desactivar** en la lista desplegable. Si la activa, aparecerá un cuadro. Empiece a escribir el nombre de un país en el cuadro. Se mostrará una lista filtrada de países admitidos. Cuando encuentre el país que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar en ![Quitar icono](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -242,9 +242,9 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
 ## <a name="use-the-security-center-to-view-anti-spam-policies"></a>Uso del Centro de seguridad para ver directivas contra correo no deseado
 
-1. En el Centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Protección contra correo electrónico no deseado**.
+1. En el centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Antispam**.
 
-2. En la página **Directiva contra correo no deseado**, busque uno de los valores siguientes:
+2. En la página de directivas **antispam**, busque uno de los siguientes valores:
    - El valor **Tipo** es **Directiva contra el correo no deseado personalizada**
    - El valor **Nombre** es **Directiva de entrada contra el correo no deseado (predeterminado)**
 
@@ -259,9 +259,9 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
 ## <a name="use-the-security-center-to-modify-anti-spam-policies"></a>Uso del Centro de seguridad para modificar directivas contra correo no deseado
 
-1. En el Centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Protección contra correo electrónico no deseado**.
+1. En el centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Antispam**.
 
-2. En la página **Directiva contra el correo no deseado**, seleccione una directiva contra el correo no deseado en la lista. Para ello, haga clic en el nombre:
+2. En la página **Directivas contra el correo no deseado**, seleccione una directiva contra el correo no deseado en la lista. Para ello, haga clic en el nombre:
    - Una directiva personalizada que creó, cuyo valor de la columna **Tipo** es **Directiva contra correo no deseado personalizada**.
    - La directiva predeterminada denominada **Directiva de entrada contra correo no deseado (predeterminado)**.
 
@@ -275,7 +275,7 @@ Vea las secciones siguientes para habilitar o deshabilitar una directiva, establ
 
 No se puede deshabilitar la directiva contra correo no deseado predeterminada.
 
-1. En el Centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Protección contra correo electrónico no deseado**.
+1. En el centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Antispam**.
 
 2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre.
 
@@ -300,7 +300,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
 - En el Centro de seguridad, solo puede cambiar la prioridad de la directiva contra el correo no deseado después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de filtrado de correo no deseado (lo cual puede afectar a la prioridad de las reglas existentes).
 - Las directivas contra correo no deseado se procesan en el orden en el que se muestran (la primera directiva tiene el valor de **Prioridad** 0). La directiva predeterminada contra correo no deseado tiene el valor de prioridad **Más bajo** y no puede cambiarlo.
 
-1. En el Centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Protección contra correo electrónico no deseado**.
+1. En el centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Antispam**.
 
 2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre.
 
@@ -317,7 +317,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
 
 Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensaje, puede configurar las notificaciones de correo no deseado para el usuario final para que los destinatarios sepan lo que ha sucedido con los mensajes que se les han enviado. Para obtener más información acerca de estas notificaciones, consulte [Notificaciones de correo no deseado para el usuario final en EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. En el Centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Protección contra correo electrónico no deseado**.
+1. En el centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Antispam**.
 
 2. En la página **Directivas contra el correo no deseado**, seleccione una directiva contra el correo no deseado en la lista. Para ello, haga clic en el nombre:
    - Una directiva personalizada que creó, cuyo valor de la columna **Tipo** es **Directiva contra correo no deseado personalizada**.
@@ -340,11 +340,11 @@ Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensa
 
 4. De nuevo en el control flotante de detalles de la directiva, haga clic en **Cerrar**.
 
-## <a name="use-the-security-center-to-remove-anti-spam-policies"></a>Uso del Centro de seguridad para quitar directivas contra correo no deseado
+## <a name="use-the-security-center-to-remove-custom-anti-spam-policies"></a>Utilice el centro de seguridad para eliminar las directivas antispam personalizadas
 
-Cuando se usa el Centro de seguridad para quitar una directiva contra el correo no deseado, se eliminan la regla de filtrado de correo no deseado y la directiva correspondiente de filtrado de correo no deseado. No puede quitar la directiva predeterminada.
+Cuando se utiliza el centro de seguridad para eliminar una directiva antispam personalizada, se eliminan tanto la regla del filtro antispam como la directiva del filtro antispam correspondiente. No se puede eliminar la directiva antispam predeterminada.
 
-1. En el Centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Protección contra correo electrónico no deseado**.
+1. En el centro de seguridad, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Antispam**.
 
 2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en el ![Icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
 
@@ -378,9 +378,7 @@ La creación de una directiva contra correo no deseado en PowerShell es un proce
  **Notas**:
 
 - Puede crear una nueva regla de filtro de correo no deseado y asignar una directiva de filtro de correo no deseado existente sin asociar. Las reglas de filtro de correo no deseado no se pueden asociar con más de una directiva de filtro de correo no deseado.
-
 - Puede configurar las siguientes opciones de nuevas directivas de filtro de correo no deseado en PowerShell, que no estarán disponibles en el Centro de seguridad hasta que cree la directiva:
-
   - Crear la nueva directiva como deshabilitada (_Habilitada_ `$false` en el cmdlet **New-HostedContentFilterRule**).
   - Establecer la prioridad de la directiva durante la creación (_Prioridad_ _\<Number\>_) en el cmdlet **New-HostedContentFilterRule**).
 

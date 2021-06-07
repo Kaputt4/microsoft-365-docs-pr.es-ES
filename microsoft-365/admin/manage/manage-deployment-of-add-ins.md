@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para usuarios y grupos de su organización mediante la implementación centralizada en el Centro de administración.
-ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 796517ba13a4718c38d5200fcf9cbe38b5dc62d0
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636027"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779643"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
 
@@ -38,7 +38,7 @@ Para obtener más información sobre cómo determinar si su organización puede 
 Para obtener más información sobre cómo administrar complementos después de la implementación, vea [Administrar complementos en el Centro de administración](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Para Word, Excel y PowerPoint usan un Catálogo de aplicaciones de [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) para implementar complementos para los usuarios en un entorno local sin conexión Microsoft 365 ni compatibilidad con complementos SharePoint necesarios. Para Outlook usar Exchange panel de control para implementar en un entorno local sin conexión a Microsoft 365.
+>  Para Word, Excel y PowerPoint usan un Catálogo de aplicaciones de [SharePoint](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) para implementar complementos para los usuarios en un entorno local sin conexión Microsoft 365 ni compatibilidad con complementos SharePoint necesarios. Para Outlook usar Exchange panel de control para implementar en un entorno local sin conexión a Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Enfoque recomendado para implementar los Complementos de Office
 

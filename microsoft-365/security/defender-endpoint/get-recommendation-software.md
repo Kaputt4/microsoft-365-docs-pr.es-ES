@@ -1,7 +1,7 @@
 ---
-title: Obtener recomendaciones por software
+title: Obtener recomendación por software
 description: Recupera una recomendación de seguridad relacionada con un software específico.
-keywords: apis, api de gráficos, api admitidas, get, recomendación de seguridad, recomendación de seguridad para software, administración de amenazas y vulnerabilidades, api de administración de amenazas y vulnerabilidades
+keywords: apis, api de gráficos, api admitidas, get, recomendación de seguridad, recomendación de seguridad para software, Administración de amenazas y vulnerabilidades, Administración de amenazas y vulnerabilidades api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 82479b0248ceee95321d269e3f48a4eeea3ad193
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 68bc53f2ae0b44567530cc1dd733c9dd37d380ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199506"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769598"
 ---
-# <a name="get-recommendation-by-software"></a>Obtener recomendaciones por software
+# <a name="get-recommendation-by-software"></a>Obtener recomendación por software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -65,7 +67,7 @@ En blanco
 Si se realiza correctamente, este método devuelve 200 Ok con el software asociado con las recomendaciones de seguridad en el cuerpo.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

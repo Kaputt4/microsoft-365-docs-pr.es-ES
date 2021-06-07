@@ -1,7 +1,7 @@
 ---
-title: Conector de Microsoft Defender para endpoint flow
+title: Conector de microsoft defender para Flow extremo
 ms.reviewer: ''
-description: Use El conector de Microsoft Defender para endpoint flow para automatizar la seguridad y crear un flujo que se desencadenará cada vez que se produzca una nueva alerta en el espacio empresarial.
+description: Use Microsoft Defender para endpoint Flow connector para automatizar la seguridad y crear un flujo que se desencadenará cada vez que se produzca una nueva alerta en el espacio empresarial.
 keywords: flow, api admitidas, api, flujo de Microsoft, consulta, automatización
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 33a7c7b1907ac761dfdde43a70bfb8f515235150
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: dd0cc3c2da134750f905b1f80746d6ec65cc70b2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929304"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769712"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (anteriormente Microsoft Flow) y Azure Functions
 
@@ -34,9 +35,9 @@ ms.locfileid: "51929304"
 
 - ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Automatizar los procedimientos de seguridad es un requisito estándar para todos los centros de operaciones de seguridad modernos. La falta de ciberdelincuntes profesionales obliga a SOC a trabajar de la manera más eficiente y la automatización es una obligación. Microsoft Power Automate admite diferentes conectores creados exactamente para ello. Puede crear una automatización de procedimientos de extremo a extremo en unos minutos.
+Automatizar los procedimientos de seguridad es un requisito estándar para todos los centros de operaciones de seguridad modernos. La falta de ciberdelincuntes profesionales obliga a SOC a trabajar de la manera más eficiente y la automatización es una obligación. Microsoft Power Automate diferentes conectores creados exactamente para ello. Puede crear una automatización de procedimientos de extremo a extremo en unos minutos.
 
-La API de Microsoft Defender tiene un conector de flujo oficial con muchas capacidades.
+La API de Microsoft Defender tiene un Flow Connector con muchas funcionalidades.
 
 ![Imagen de las credenciales de edición1](images/api-flow-0.png)
 
@@ -46,7 +47,7 @@ La API de Microsoft Defender tiene un conector de flujo oficial con muchas capac
 
 ## <a name="usage-example"></a>Ejemplo de uso
 
-En el ejemplo siguiente se muestra cómo crear un flujo que se desencadena cada vez que se produce una nueva alerta en el espacio empresarial.
+En el ejemplo siguiente se muestra cómo crear un Flow que se desencadena cada vez que se produce una nueva alerta en el espacio empresarial.
 
 1. Inicie sesión en [Microsoft Power Automate](https://flow.microsoft.com).
 
@@ -54,11 +55,11 @@ En el ejemplo siguiente se muestra cómo crear un flujo que se desencadena cada 
 
     ![Imagen de las credenciales de edición2](images/api-flow-1.png)
 
-3. Elija un nombre para el flujo, busque "Desencadenadores de ATP de Microsoft Defender" como desencadenador y, a continuación, seleccione el nuevo desencadenador de alertas.
+3. Elija un nombre para su Flow, busque "desencadenadores de ATP de Microsoft Defender" como desencadenador y, a continuación, seleccione el nuevo desencadenador de alertas.
 
     ![Imagen de las credenciales de edición3](images/api-flow-2.png)
 
-Ahora tienes un flujo que se desencadena cada vez que se produce una nueva alerta.
+Ahora tiene un Flow que se desencadena cada vez que se produce una nueva alerta.
 
 ![Imagen de las credenciales de edición4](images/api-flow-3.png)
 
@@ -82,7 +83,7 @@ El desencadenador de alerta solo proporciona el identificador de alerta y el id.
 
 2. Compruebe si la gravedad de la alerta **es igual a** Alta.
 
-   Si es así, agrega la **acción Atp de Microsoft Defender:** aislar la acción del equipo con el id. de máquina y un comentario.
+   En caso afirmativo, agregue la **ATP de Microsoft Defender: aislar la** acción de la máquina con el id. de máquina y un comentario.
 
     ![Imagen de las credenciales de edición6](images/api-flow-5.png)
 

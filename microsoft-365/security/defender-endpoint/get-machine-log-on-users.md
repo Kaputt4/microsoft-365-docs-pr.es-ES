@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 590bd1dee14e54359dd699e86795664819c23d05
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 1c81d2978677b751a8085f88b5c4732fd4a5a247
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200105"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770054"
 ---
 # <a name="get-machine-logon-users-api"></a>Obtener API de usuarios de inicio de sesión de máquina
 
@@ -76,7 +78,7 @@ En blanco
 Si se realiza correctamente y el dispositivo existe: 200 Aceptar con la lista de [entidades](user.md) de usuario en el cuerpo. Si no se encontró el dispositivo: 404 No se encontró.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

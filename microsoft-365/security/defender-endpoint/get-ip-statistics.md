@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c47a5e58b1888447a4428fad78e71b85cfe79b69
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 55bf10d01093c17ba2d186ce0a1d1313db2c3a75
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167183"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770090"
 ---
 # <a name="get-ip-statistics-api"></a>Obtener API de estadísticas IP
 
@@ -79,7 +80,7 @@ En blanco
 Si se realiza correctamente e ip existe: 200 Aceptar con datos estadísticos en el cuerpo. IP no existe: 404 No se encuentra.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

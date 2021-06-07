@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo la Puntuación de productividad de Microsoft refleja los resultados en cuanto a las experiencias de los usuarios y la tecnología. Estos resultados se comparan con los de otras organizaciones de tamaño similar.
-ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593846"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779679"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -40,7 +40,7 @@ Proporcionamos métricas, información y recomendaciones en dos áreas:
 
 - **Experiencias de personas:** cuantifica cómo funciona la organización mediante el uso de categorías de Microsoft 365 como colaboración de contenido, movilidad, comunicación, reuniones y trabajo en equipo.  
 
-    Para cada una de las categorías mencionadas, observamos la investigación pública para identificar algunos procedimientos recomendados y ventajas asociadas en forma de efectividad organizacional. Por ejemplo, la investigación [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) ha demostrado que al colaborar y compartir contenido en la nube (en lugar de enviar datos adjuntos por correo electrónico), los usuarios pueden ahorrar hasta 100 minutos por semana. Es más, cuantificamos el uso de estos procedimientos recomendados en su organización para ayudarle a ver dónde se encuentra en el viaje de transformación digital. 
+    Para cada una de las categorías mencionadas, observamos la investigación pública para identificar algunos procedimientos recomendados y ventajas asociadas en forma de efectividad organizacional. Por ejemplo, la investigación Forrester ha demostrado que al colaborar y compartir contenido en la nube (en lugar de enviar datos adjuntos por correo electrónico), los usuarios pueden ahorrar hasta 100 minutos por semana. Es más, cuantificamos el uso de estos procedimientos recomendados en su organización para ayudarle a ver dónde se encuentra en el viaje de transformación digital. 
 
 - **Experiencias tecnológicas:** la organización depende de una tecnología confiable y de buen rendimiento, así como del uso eficiente de Microsoft 365. [El Análisis de punto de conexión](https://aka.ms/endpointanalytics) le ayuda a comprender cómo los problemas de rendimiento y estado del software y el hardware pueden afectar a la organización. El estado de las aplicaciones de Microsoft 365 le ayuda a comprender si los dispositivos de su organización ejecutan las aplicaciones de Microsoft 365 en canales recomendados.
 

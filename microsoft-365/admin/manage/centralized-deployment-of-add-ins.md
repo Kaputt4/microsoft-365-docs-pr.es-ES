@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 531281eba6accfb2e1ffdab1e662a03b077869bd
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635455"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779763"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -84,7 +84,7 @@ Póngase en contacto con el administrador de Exchange de su organización para a
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Comprobación de compatibilidad de implementación centralizada
 
-Con el control de compatibilidad de implementación centralizada, puede comprobar si los usuarios del espacio empresarial están configurados para usar la implementación centralizada para Word, Excel y PowerPoint. El Comprobador de compatibilidad no es necesario para la compatibilidad con Outlook. Descargue el Comprobador de compatibilidad [aquí](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Con el control de compatibilidad de implementación centralizada, puede comprobar si los usuarios del espacio empresarial están configurados para usar la implementación centralizada para Word, Excel y PowerPoint. El Comprobador de compatibilidad no es necesario para la compatibilidad con Outlook. Descargue el [control de compatibilidad](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
   
 #### <a name="run-the-compatibility-checker"></a>Ejecutar el control de compatibilidad
   
@@ -155,7 +155,7 @@ Si usted o sus usuarios tienen problemas para cargar el complemento mientras usa
   
 |**Plataforma**|**Información de depuración**|
 |:-----|:-----|
-|Office  <br/> | Registros Charles/Fiddler  <br/>  Id. del espacio empresarial ( [más información](/onedrive/find-your-office-365-tenant-id.md))      <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Registros Charles/Fiddler  <br/>  Id. del espacio empresarial ( [más información](/onedrive/find-your-office-365-tenant-id))      <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Clientes enriquecidos (Windows y Mac)  <br/> | Registros Charles/Fiddler  <br/>  Generar números de la aplicación cliente (preferiblemente como una captura de pantalla de **Archivo/Cuenta**)  <br/> |
 
 ## <a name="related-content"></a>Contenido relacionado

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: 7c5485a008434b351eebbec3ea1f20b10d82278a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583693"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788360"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -38,6 +38,13 @@ El nivel de confidencialidad alto ofrece las siguientes protecciones adicionales
 - Un tipo de vínculo para compartir predeterminado más restrictivo
 - Solo los propietarios del equipo podrán crear canales privados.
 - Las solicitudes de acceso para el sitio de SharePoint asociado están desactivadas.
+
+## <a name="video-demonstration"></a>Vídeo de demostración
+
+Vea este vídeo para conocer los procedimientos descritos en este artículo.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
 
 ## <a name="guest-sharing"></a>Uso compartido de invitados
 

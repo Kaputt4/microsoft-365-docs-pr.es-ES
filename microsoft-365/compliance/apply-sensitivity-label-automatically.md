@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538543"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769298"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -93,7 +93,7 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 |Datos adjuntos de Exchange verificados por condiciones|No | Sí|
 |Aplicar marcas visuales |Sí |Sí (solo correo electrónico) |
 |Reemplazar el cifrado IRM aplicado sin una etiqueta|Sí, si el usuario tiene el uso mínimo adecuado de exportar |Sí (solo correo electrónico) |
-|Etiquetar correo electrónico entrante|No |Sí (no se aplicó cifrado) |
+|Etiquetar correo electrónico entrante|No |Sí|
 
 \*El etiquetado automático no está disponible actualmente en todas las regiones. Si su espacio empresarial no es compatible con esta funcionalidad, la pestaña etiquetado automático no se puede ver en el centro de etiquetado de administración.
 

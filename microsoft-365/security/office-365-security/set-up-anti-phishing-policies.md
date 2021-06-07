@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d20d9c3839cf72d1e99a185186d0716d9a513c5f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537864"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788420"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -133,7 +133,7 @@ La configuración del remitente no autenticado forma parte de la configuración 
 - Habilitar la etiqueta **"via":** cuando esta configuración está activada, la etiqueta via (chris@contoso.com a través de fabrikam.com) se agrega en el cuadro De si el dominio de la dirección De (el remitente del mensaje que se muestra en los clientes de correo electrónico) es diferente del dominio de la firma DKIM o de la dirección <sup>\*</sup> MAIL **FROM.** <u></u> Para obtener más información acerca de estas direcciones, vea [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
 > [!NOTE]
-> Actualmente, la **configuración Habilitar la etiqueta "via"** no está disponible en todas las organizaciones. Si no tiene la opción Habilitar etiqueta **"via",**  el signo de interrogación y la etiqueta via se controlan mediante el símbolo de interrogación Habilitar **unauthenticated sender (?)** en su organización.
+> Actualmente, la **configuración Habilitar la etiqueta "via"** no está disponible en todas las organizaciones. Si no tiene la opción Habilitar etiqueta **"via",** el signo de interrogación y la etiqueta via se controlan mediante el símbolo de interrogación Habilitar **unauthenticated sender (?)** en su organización. 
 
 Para evitar que el signo de interrogación o la etiqueta a través de la etiqueta se agregó a los mensajes de remitentes específicos, tiene las siguientes opciones:
 

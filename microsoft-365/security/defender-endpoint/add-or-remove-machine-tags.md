@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 98dd513cc66683ff1b95f66d6d7b89916ce54bab
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3818fc0050790b2c3b307f95ee0760c516cbf893
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199782"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769826"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>Agregar o quitar API de etiquetas de máquina
 
@@ -73,7 +74,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 Nombre | Tipo | Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | string | application/json. **Necesario**.
+Content-Type | cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -82,14 +83,14 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 Parámetro |    Tipo    | Descripción
 :---|:---|:---
 Valor |    Cadena |    El nombre de la etiqueta. **Necesario**.
-Acción    | Enum |    Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
+Action    | Enum |    Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
 
 
 ## <a name="response"></a>Respuesta
 
 Si se realiza correctamente, este método devuelve 200: código de respuesta Aceptar y la máquina actualizada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

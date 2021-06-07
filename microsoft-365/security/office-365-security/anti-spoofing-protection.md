@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17228f634dc4aee9cfd416ca676920a5b4e0fba2
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537972"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779499"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -54,7 +54,7 @@ Las siguientes tecnologías contra la suplantación de identidad están disponib
 
 - **Permitir o bloquear remitentes a los que se les ha suplantado la identidad en la lista de permitidos y bloqueados del espacio empresarial**: al invalidar el veredicto en la información de inteligencia contra la suplantación de identidad, el remitente a que se la ha suplantado la identidad se convierte en una entrada manual de permitido o bloqueado que solo aparece en la pestaña **Suplantación de identidad** en la lista de permitidos o bloqueados del espacio empresarial. También puede crear entradas de permitidos o bloqueados manualmente para remitentes de suplantación de identidad antes de que la inteligencia contra la suplantación de identidad los detecte. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](tenant-allow-block-list.md).
 
-- **Directivas contra phishing**: en EOP, las directivas de protección contra phishing contienen las siguientes opciones de configuración contra la suplantación de identidad:
+- **Directivas contra el phishing**: En EOP y Microsoft Defender para Office 365, las directivas contra el phishing contienen las siguientes opciones de configuración contra suplantación de identidad:
   - Activar o desactivar la inteligencia contra la suplantación de identidad.
   - Activar o desactivar la identificación del remitente sin autenticar en Outlook.
   - Especificar la acción para los remitentes bloqueados a los que se les ha suplantado la identidad.
