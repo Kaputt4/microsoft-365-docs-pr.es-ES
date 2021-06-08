@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo la Puntuación de productividad de Microsoft refleja los resultados en cuanto a las experiencias de los usuarios y la tecnología. Estos resultados se comparan con los de otras organizaciones de tamaño similar.
-ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: af0e8583bec00b1ddfd62145a4757a4e568108e8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779679"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789044"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -42,7 +42,7 @@ Proporcionamos métricas, información y recomendaciones en dos áreas:
 
     Para cada una de las categorías mencionadas, observamos la investigación pública para identificar algunos procedimientos recomendados y ventajas asociadas en forma de efectividad organizacional. Por ejemplo, la investigación Forrester ha demostrado que al colaborar y compartir contenido en la nube (en lugar de enviar datos adjuntos por correo electrónico), los usuarios pueden ahorrar hasta 100 minutos por semana. Es más, cuantificamos el uso de estos procedimientos recomendados en su organización para ayudarle a ver dónde se encuentra en el viaje de transformación digital. 
 
-- **Experiencias tecnológicas:** la organización depende de una tecnología confiable y de buen rendimiento, así como del uso eficiente de Microsoft 365. [El Análisis de punto de conexión](https://aka.ms/endpointanalytics) le ayuda a comprender cómo los problemas de rendimiento y estado del software y el hardware pueden afectar a la organización. El estado de las aplicaciones de Microsoft 365 le ayuda a comprender si los dispositivos de su organización ejecutan las aplicaciones de Microsoft 365 en canales recomendados.
+- **Experiencias tecnológicas:** su organización depende de una tecnología fiable y de buen rendimiento, así como del uso eficiente de Microsoft 365. [El Análisis de punto de conexión](https://aka.ms/endpointanalytics) le ayuda a comprender cómo los problemas de rendimiento y estado del software y el hardware pueden afectar a la organización. El estado de las aplicaciones de Microsoft 365 le ayuda a comprender si los dispositivos de su organización ejecutan las aplicaciones de Microsoft 365 en canales recomendados.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -53,7 +53,7 @@ Para los datos de experiencias de personas, necesitará una suscripción a Micro
 > [!NOTE]
 > No es necesario disponer de una licencia de Workplace Analytics para obtener las características de Puntuación de productividad.
 
-La Puntuación de productividad solo está disponible en el Centro de administración de Microsoft 365 y solo pueden obtener acceso los profesionales de TI que tengan uno de los roles siguientes:  
+La puntuación de productividad solo está disponible en el Centro de administración de Microsoft 365 y solo pueden acceder a él los profesionales de TI que tengan uno de los siguientes roles:  
 
 - Administrador global
 - Administrador de Exchange
@@ -116,13 +116,13 @@ Para la conectividad de red, el punto de referencia recomendado es 80 puntos.
 
 La sección **Desglose de la puntuación** ofrece un desglose de la Puntuación de productividad con referencias por áreas de experiencia tecnológica y personas.
 
-El historial de puntuación muestra cómo ha cambiado la puntuación en cada categoría en los últimos 6 meses.
+El historial de puntuación muestra cómo ha cambiado su puntuación en cada categoría en los últimos seis meses.
 
-Las áreas de **Experiencias de personas** y **Experiencias de tecnología** contienen la información fundamental para las categorías de estas áreas. Puede hacer clic en cada categoría para ver información más detallada.
+Las áreas de **Experiencias de personas** y **Experiencias de tecnología** contienen la información fundamental para las categorías de estas áreas. Puede seleccionar cada categoría para ver información más detallada.
 
 ## <a name="category-details-pages"></a>Páginas de detalles de categoría
 
-En cada página de detalles de categoría se muestra la información principal y las métricas de apoyo, así como la investigación y las acciones relacionadas que puede llevar a cabo para impulsar el cambio en su organización. La investigación apoya la importancia y el razonamiento detrás de cada categoría de la información principal. para más información, [lea el informe Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+En cada página de detalles de categoría se muestra la información principal y las métricas de apoyo, así como la investigación y las acciones relacionadas que puede llevar a cabo para impulsar el cambio en su organización. La investigación apoya la importancia y el razonamiento detrás de cada categoría de la información principal. Para obtener más información, [lea el informe Forrester](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb).
 
 Las páginas de detalles son:
 - [Colaboración de contenido: experiencias de personas](content-collaboration.md)

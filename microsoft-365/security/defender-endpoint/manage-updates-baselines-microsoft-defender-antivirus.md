@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/04/2021
-ms.openlocfilehash: a1b7891e9e397e7345eb73a94d6298a9da781d98
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.date: 06/07/2021
+ms.openlocfilehash: 33170d4706ed53f4de687c34806bb0492a08836e
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795987"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809112"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -440,7 +440,7 @@ Fase de soporte técnico: **sin compatibilidad**
 - agregar registros de MRT para admitir archivos
    
 ### <a name="known-issues"></a>Problemas conocidos
-Cuando se instala esta actualización, el dispositivo necesita el paquete de salto 4.10.2001.10 para poder actualizar a la versión más reciente de la plataforma.
+Cuando se instala esta actualización, el dispositivo necesita el paquete de salto 4.18.2001.10 para poder actualizar a la versión más reciente de la plataforma.
 <br/>
 </details>
 

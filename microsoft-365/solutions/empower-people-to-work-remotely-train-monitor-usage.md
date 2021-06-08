@@ -1,5 +1,5 @@
 ---
-title: 'Paso 6: Proporcionar formación a los trabajadores remotos y dar respuesta a los comentarios sobre el uso'
+title: 'Paso 6: proporcione formación a sus trabajadores y dicte instrucciones mediante comentarios'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Proporcione formación a los usuarios y asegúrese de que se dé respuesta a los problemas rápidamente.
-ms.openlocfilehash: 66091269e4bb4844456feac1b8cfa28718b0ca36
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: b6581533983c2e00ab8b29d73326deebda52599f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028937"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788828"
 ---
-# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Paso 6: Proporcionar formación a los trabajadores remotos y dar respuesta a los comentarios sobre el uso
+# <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Paso 6: proporcione formación a sus trabajadores y dicte instrucciones mediante comentarios
 
-La formación de los trabajadores remotos abarca los siguientes aspectos:
+La formación de los trabajadores híbridos abarca los siguientes aspectos:
 
 - Procedimientos de inicio de sesión adecuados mediante la autenticación multifactor, incluido el registro de un método de comprobación adicional.
 - El uso de dispositivos y cómo las directivas de administración de puntos de conexión pueden servir para bloquear el acceso a dispositivos no compatibles o no administrados.
@@ -38,15 +38,15 @@ La formación de los trabajadores remotos abarca los siguientes aspectos:
 
 Esta formación debe incluir ejercicios prácticos para que los empleados puedan experimentar con las funcionalidades y sus resultados.
 
-Cree un foro para que sus trabajadores remotos hagan preguntas o solucionen problemas, como un equipo o un grupo de Yammer.
+Cree un foro para que sus trabajadores formulen preguntas o reciban respuesta a sus problemas, como un equipo o un grupo de Yammer
 
 En las semanas después de la formación haga lo siguiente:
 
-- Responda rápidamente a los comentarios de los trabajadores remotos en su foro y ajuste las directivas y configuraciones de los trabajadores remotos según sea necesario.
+- Aborde rápidamente los comentarios de los trabajadores en su foro y ajuste las directivas y configuraciones de los trabajadores según sea necesario.
 - Analice el uso de equipos, correo electrónico, sitios de SharePoint y carpetas de OneDrive y compárelo con sus expectativas de adopción por parte de los usuarios.
 
 Luego, volver a dar formación a los usuarios que lo necesiten.
 
 ## <a name="results-of-step-6"></a>Resultado del paso 6
 
-Sus trabajadores remotos están preparados y hay un foro abierto y resolutivo donde pueden proporcionar comentarios y publicar incidencias relacionadas con el acceso remoto y las aplicaciones de productividad.
+Sus trabajadores híbridos están formados y existe un foro abierto y con capacidad de respuesta para que puedan dar su opinión y plantear problemas de seguridad, cumplimiento, acceso remoto y aplicaciones de productividad.

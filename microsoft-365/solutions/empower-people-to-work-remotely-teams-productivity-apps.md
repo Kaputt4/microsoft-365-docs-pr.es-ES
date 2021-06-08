@@ -1,5 +1,5 @@
 ---
-title: Paso 5. Implementar servicios y aplicaciones de productividad para los trabajadores remotos
+title: Paso 5. Implementar aplicaciones y servicios de productividad para trabajadores híbridos
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,17 +16,17 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Facilite a los usuarios ser productivos con Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
-ms.openlocfilehash: 749719afdfa7c9f5796ff839d1743ffd697c27e4
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: Facilite a los usuarios ser productivos con Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
+ms.openlocfilehash: ed35f06f3dcee9c7981a086278040fc0a44519b3
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029009"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788909"
 ---
-# <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Paso 5. Implementar servicios y aplicaciones de productividad para los trabajadores remotos
+# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Paso 5. Implementar aplicaciones y servicios de productividad para trabajadores híbridos
 
-Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. Necesitan reunirse y charlar con voz y texto, crear contenidos nuevos y compartir información y archivos, intercambiar correos electrónicos y administrar calendarios y tareas. Microsoft 365 proporciona servicios basados en la nube para todas estas funciones clave:
+Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. Necesitan reunirse y charlar con voz y texto, crear contenidos nuevos y compartir información y archivos, intercambiar correos electrónicos y administrar calendarios y tareas. Microsoft 365 proporciona servicios basados en la nube para todas estas funciones clave:
 
 | Función IT | Componentes de Microsoft 365 | Descripción |
 |:-------|:-----|:-------|
@@ -40,11 +40,11 @@ Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. 
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Mantener a los usuarios conectados con Microsoft Teams
 
-Teams le permite charlar, reunirse, llamar y colaborar en un único sitio. Millones de personas trabajan en Teams todos los días ya que reúne todo lo que necesita para hacerlo de forma remota en un centro para el trabajo en equipo. 
+Teams le permite charlar, reunirse, llamar y colaborar en un único sitio. Millones de personas hacen su trabajo en Teams cada día porque reúne todo lo que se necesita para trabajar in situ o a distancia en un centro de trabajo en equipo. 
 
 Para obtener instrucciones detalladas, consulte [Soporte técnico para trabajadores remotos con Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
 
-Vea los webcasts [Habilitar el trabajo híbrido con Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) para obtener instrucciones y demostraciones de cómo usar Teams para trabajar de forma remota.
+Vea los webcasts [Habilitando trabajo híbrido con Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)para obtener instrucciones y demostraciones sobre el uso de Teams para el trabajo híbrido.
 
 ### <a name="chat-and-conversations"></a>Chats y conversaciones
 
@@ -52,27 +52,27 @@ Los chats y las conversaciones encadenadas se encuentran en el centro de Teams c
 
 ### <a name="meetings-and-conferencing"></a>Reuniones y conferencias 
 
-Teams puede ayudar a mantener el uso compartido de la información y las comunicaciones con trabajadores remotos, especialmente con reuniones que admiten hasta 250 personas. Las reuniones de Teams permiten reuniones interactivas y colaborativas con personas dentro y fuera de la organización. Los trabajadores remotos pueden usar las reuniones de Teams para actividades diarias como puntos de control recurrentes para el proyecto, la posibilidad de ponerse al día con colegas, sesiones de compartir ideas y facilitar la conversación con los clientes. 
+Teams puede, sin duda, ayudar a mantener la comunicación y el intercambio de información con los trabajadores híbridos, especialmente en el caso de las reuniones que admiten hasta 250 personas. Las reuniones de Teams permiten reuniones interactivas y colaborativas con personas dentro y fuera de la organización. Los trabajadores remotos pueden usar las reuniones de Teams para actividades diarias como puntos de control recurrentes para el proyecto, la posibilidad de ponerse al día con colegas, sesiones de compartir ideas y facilitar la conversación con los clientes. 
 
 ### <a name="calling"></a>Llamadas
 
-Teams es compatible con llamadas VoIP directas entre usuarios e incluso otras organizaciones que usen federación. Usa los mismos códecs que las reuniones y proporciona una gran calidad de audio en todo el mundo sin cargos RTC adicionales. Pero es posible que algunos usuarios necesiten un número de teléfono dedicado para realizar llamadas externas cuando se trabaja de forma remota. Teams puede ofrecer rápidamente un servicio de telefonía en la nube para que estos usuarios puedan realizar y recibir llamadas telefónicas.
+Teams es compatible con llamadas VoIP directas entre usuarios e incluso otras organizaciones que usen federación. Usa los mismos códecs que las reuniones y proporciona una gran calidad de audio en todo el mundo sin cargos RTC adicionales. Sin embargo, algunos usuarios pueden necesitar un número de teléfono exclusivo para recibir llamadas externas cuando trabajan in situ o a distancia. Teams puede ofrecer rápidamente un servicio de telefonía en la nube para que estos usuarios puedan realizar y recibir llamadas telefónicas.
 
 ### <a name="apps-and-workflows"></a>Aplicaciones y flujos de trabajo
 
 Teams proporciona una plataforma para las aplicaciones y los flujos de trabajo a los que puede acceder desde las versiones móviles, web y de escritorio de Teams. Teams ofrece cientos de aplicaciones proporcionadas por Microsoft y aplicaciones de terceros para interactuar con los usuarios, ayudar en la productividad e integrar los servicios empresariales usados frecuentemente en Teams. Los usuarios y administradores también pueden crear aplicaciones personalizadas y flujos de trabajo automatizados para Teams con las herramientas de desarrollo Power Apps y Power Automate con poco código.
 
-Las aplicaciones y los flujos de trabajo permiten que los trabajadores remotos sean más productivos en Teams al recopilar y compartir información esencial, automatizar tareas repetitivas y permitir que charlen con un bot interactivo. Fijar aplicaciones en un canal o en la barra de aplicaciones Teams es una buena manera para que los usuarios puedan acceder fácilmente a estas aplicaciones en un espacio relevante. Los administradores pueden anclar aplicaciones para aumentar el reconocimiento y la adopción de aquellas que todos los usuarios deberían usar.
+Las aplicaciones y los flujos de trabajo permiten a los trabajadores híbridos ser más productivos en Teams, recopilando y compartiendo información crítica, automatizando tareas repetitivas y permitiéndoles chatear con un bot interactivo. Fijar aplicaciones en un canal o en la barra de aplicaciones Teams es una buena manera para que los usuarios puedan acceder fácilmente a estas aplicaciones en un espacio relevante. Los administradores pueden anclar aplicaciones para aumentar el reconocimiento y la adopción de aquellas que todos los usuarios deberían usar.
 
 ## <a name="exchange-email-and-manage-calendars-contacts-and-tasks-with-exchange-online-and-outlook"></a>Intercambie correo electrónico y administre calendarios, contactos y tareas con Exchange Online y Outlook
 
-Outlook permite a los usuarios remotos mantenerse conectados y organizarse con el correo electrónico, los calendarios, los contactos, las tareas y otros elementos en un mismo sitio. Outlook le ayuda a mantenerse al tanto y a asignar prioridad al día basándose en lo que es relevante para usted. Outlook permite compartir datos adjuntos directamente desde OneDrive, planear y unirse a reuniones de equipo, ver y compartir calendarios y ofrecer permisos de delegado para otras personas. Conocer lo que está próximo en el trabajo y los compromisos personales y lo que necesita atención puede ayudar a que los trabajadores remotos se centren en lo que importa. Outlook proporciona métodos útiles para que los trabajadores remotos administren su tiempo y encuentren lo que necesitan fácilmente, incluidos archivos, personas de la organización y mucho más. 
+Con Outlook, los trabajadores híbridos pueden estar conectados y organizados con el correo electrónico, los calendarios, los contactos, las tareas y mucho más, todo junto en un solo lugar. Outlook le ayuda a mantenerse al tanto y a asignar prioridad al día basándose en lo que es relevante para usted. Outlook permite compartir datos adjuntos directamente desde OneDrive, planear y unirse a reuniones de equipo, ver y compartir calendarios y ofrecer permisos de delegado para otras personas. Saber lo que está por venir, tanto en el trabajo como en los compromisos personales, y lo que necesita atención, puede ayudar a los trabajadores híbridos a centrarse en lo que es importante. Outlook proporciona formas útiles para que los trabajadores híbridos administren su tiempo y encuentren fácilmente lo que necesitan, incluidos los archivos, las personas de la organización, etc. 
 
 Consulte [este artículo](../security/office-365-security/secure-email-recommended-policies.md) para ver las directivas recomendadas de identidad y acceso a dispositivos con el fin de proteger los correos electrónicos de la empresa y de los clientes, compatibles con la autenticación moderna y el acceso condicional.
 
 ## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>Almacenamiento y colaboración en archivos con SharePoint y OneDrive
 
-Para la colaboración de contenido, los trabajadores remotos pueden usar las carpetas de SharePoint y OneDrive como un sitio central en la nube para almacenar y compartir archivos, trabajar en coautoría, comunicarse y colaborar. Los usuarios remotos pueden trabajar de forma segura desde cualquier lugar desde un explorador web, desde Teams y desde aplicaciones de Office.
+Para la colaboración de contenidos, los trabajadores híbridos pueden utilizar las carpetas de SharePoint y OneDrive como lugar central en la nube para almacenar y compartir archivos, ser coautores, comunicarse y colaborar. Los usuarios remotos pueden trabajar de forma segura desde cualquier lugar desde un explorador web, desde Teams y desde aplicaciones de Office.
 
 Es posible que tenga que migrar los documentos a SharePoint o OneDrive desde:
 
@@ -83,9 +83,9 @@ Es posible que tenga que migrar los documentos a SharePoint o OneDrive desde:
 
 Vea [este artículo](../security/office-365-security/sharepoint-file-access-policies.md) para conocer las directivas de identidad y acceso de dispositivo recomendadas para proteger SharePoint y OneDrive.
 
-## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Creación y colaboración en contenido con aplicaciones de Microsoft 365
+## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Creación y colaboración en contenido con aplicaciones de Microsoft 365
 
-Las Aplicaciones de Microsoft 365 son las más productivas y seguras para empresas, lo que permite que los usuarios trabajen conjuntamente sin problemas desde cualquier lugar y en cualquier momento. Los trabajadores remotos pueden colaborar en un documento con varias personas simultáneamente, ver modificaciones y cambios en tiempo real y coautoría con otros usuarios en cualquier equipo portátil, PC o en un dispositivo móvil.
+Las Aplicaciones de Microsoft 365 son las más productivas y seguras para empresas, lo que permite que los usuarios trabajen conjuntamente sin problemas desde cualquier lugar y en cualquier momento. Los trabajadores remotos pueden colaborar en un documento con varias personas simultáneamente, ver modificaciones y cambios en tiempo real y coautoría con otros usuarios en cualquier equipo portátil, PC o en un dispositivo móvil.
 
 Para obtener más información, [Consulte la guía de implementación de para de Aplicaciones de Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps).
 

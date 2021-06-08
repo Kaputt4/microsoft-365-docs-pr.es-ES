@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Obtenga información sobre los pasos básicos de solución de problemas que puede seguir para resolver problemas comunes en Office 365 exhibición de documentos electrónicos.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060995"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809124"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar y resolver problemas comunes de exhibición de documentos electrónicos
 
@@ -52,7 +52,7 @@ Compruebe si hay usuarios duplicados o una lista de distribución con el mismo i
    > |Nombre|RecipientType|
    > |---|---|
    > |Alias, Usuario|MailUser|
-   > |Alias, Usuario|User|
+   > |Alias, Usuario|Usuario|
 
 3. Si se devuelven varios usuarios, busque y corrija el objeto en conflicto.
 
@@ -89,6 +89,20 @@ Al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye
 1. Compruebe la ubicación identificada en la búsqueda para asegurarse de que la ubicación del archivo es correcta y se agrega en las ubicaciones de búsqueda.
 
 2. Use los procedimientos de solicitar manualmente el rastreo y [la re indexación](/sharepoint/crawl-site-content) de un sitio, una biblioteca o una lista para volver a indizar el sitio.
+
+## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>Error o problema: este archivo no se exportó porque ya no existe. El archivo se incluyó en el recuento de resultados de búsqueda estimados porque aún aparece en el índice. El archivo finalmente se quitará del índice y no provocará un error en el futuro.
+
+Es posible que vea ese error al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y ubicaciones de One Drive For Business. La exhibición de documentos electrónicos se basa en el índice de SPO para identificar las ubicaciones de archivos. Si el archivo se eliminó pero el índice de SPO aún no se actualizó, puede producirse este error.
+
+### <a name="resolution"></a>Solución 
+Abra la ubicación del SPO y compruebe que este archivo no está allí.
+La solución sugerida es volver a indizar manualmente el sitio o esperar a que el sitio vuelva a indexarse mediante el proceso en segundo plano automático.
+
+
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Error o problema: este resultado de búsqueda no se descargó, ya que es una carpeta u otro artefacto que no se puede descargar por sí mismo, se descargarán los elementos dentro de la carpeta o biblioteca.
+
+Es posible que vea ese error al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y ubicaciones de One Drive For Business. Significa que ibamos a intentar exportar el elemento notificado en el índice, pero resultó ser una carpeta por lo que no lo exportamos. Como se mencionó en el error, no exportamos elementos de carpeta, pero exportamos su contenido.
+
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Error o problema: se produce un error en la búsqueda porque no se encuentra el destinatario
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia, aunque representativa, ha implementado soluciones de Microsoft 365.
-ms.openlocfilehash: 74eacd4a7de2cf60eb2f1f388f3690496c6cc0e1
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 3112dc452ff03fbd661ffff80b6b25b1f38f8a66
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028935"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788337"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Soluciones de Microsoft 365 para Contoso Corporation
 
@@ -32,10 +32,10 @@ Primero, obtenga información sobre [Contoso Corporation](../enterprise/contoso-
 
 A continuación, vea cómo Contoso ha usado Microsoft 365 para estas soluciones y situaciones:
 
-- [Infraestructura y respuesta a COVID-19 para trabajo remoto e in situ](contoso-remote-onsite-work.md)
+- [Respuesta e infraestructura a el COVID-19 para el trabajo remoto](contoso-remote-onsite-work.md)
 
 - [Un equipo aislado para un proyecto ultrasecreto](contoso-team-for-top-secret-project.md)
 
 - [Migración de los usuarios locales a Teams para la comunicación, la colaboración y la voz unificadas](/MicrosoftTeams/voice-case-study-overview)
 
-- [Configurar una directiva de lenguaje ofensivo para las comunicaciones de Microsoft Teams, Exchange y Yammer](../compliance/communication-compliance-case-study.md)
+- [Configurar una directiva de lenguaje ofensivo para las comunicaciones de Microsoft Teams, Exchange y Yammer](../compliance/communication-compliance-case-study.md)
