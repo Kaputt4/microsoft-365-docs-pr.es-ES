@@ -1,5 +1,5 @@
 ---
-title: Administrar investigaciones legales en Microsoft 365
+title: Administración de investigaciones legales en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50903464"
 ---
-# <a name="manage-legal-investigations-in-microsoft-365"></a>Administrar investigaciones legales en Microsoft 365
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
 
 Las organizaciones tienen muchas razones para responder a un caso legal que implica a determinados ejecutivos u otros empleados de la organización. Esto puede implicar encontrar y conservar rápidamente información específica de la investigación en correo electrónico, documentos, conversaciones de mensajería instantánea y otras ubicaciones de contenido usadas por las personas en sus tareas diarias de trabajo. Puede realizar estas y muchas otras actividades similares mediante las herramientas de casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento.
   
@@ -48,19 +48,19 @@ Al igual que en la sección anterior que enumeraba scripts para escenarios de b�
   
 - [Cree un informe de retención de exhibición](create-a-report-on-holds-in-ediscovery-cases.md) de documentos electrónicos que contenga información sobre todas las retenciones asociadas con casos de exhibición de documentos electrónicos en su organización.
 
-- [Agregue buzones y ubicaciones de OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) para una lista de usuarios a una retención de exhibición de documentos electrónicos.
+- [Agregue buzones y OneDrive para](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) una lista de usuarios a una retención de exhibición de documentos electrónicos.
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Administrar investigaciones legales con la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
+## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Administrar investigaciones legales con la solución Advanced eDiscovery en Microsoft 365
 
-La solución de exhibición de documentos electrónicos avanzada en Microsoft 365 se basa en las capacidades de análisis y exhibición de documentos electrónicos existentes en Office 365. Esta nueva solución, denominada *Exhibición* de documentos electrónicos avanzada, proporciona un flujo de trabajo completo para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de la organización. También permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal para comunicarse con los custodios implicados en un caso.
+La Advanced eDiscovery en Microsoft 365 se basa en las capacidades de análisis y exhibición de documentos electrónicos existentes en Office 365. Esta nueva solución, denominada *Advanced eDiscovery*, proporciona un flujo de trabajo completo para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de la organización. También permite al equipo legal gestionar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores de un caso.
 
-La exhibición de documentos electrónicos avanzada requiere una suscripción E5 para su organización de Microsoft 365 u Office 365. Para obtener más información acerca de las licencias, vea [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+Advanced eDiscovery requiere una suscripción de E5 para su Microsoft 365 o Office 365 organización. Para obtener más información acerca de las licencias, [vea Configurar Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Este es un resumen rápido del flujo de trabajo integrado en eDiscovery avanzado. Para obtener más información, vea [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
+Esta es una introducción rápida del flujo de trabajo integrado en Advanced eDiscovery. Para obtener más información, vea [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
 
 - [Cree un caso](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) para empezar.
 
-- [Administre los custodios](managing-custodians.md) agregándolos a un caso y colocando una retención legal en el contenido de su buzón, cuenta de OneDrive y Microsoft Teams del que son miembros.
+- [Administre los custodios](managing-custodians.md) agregándolos a un caso y colocando una retención legal en el contenido de su buzón, OneDrive cuenta y Microsoft Teams de la que son miembros.
 
 - [Administre las comunicaciones](managing-custodian-communications.md) con los custodios automatizando el proceso de notificación de retención legal.
 
@@ -74,4 +74,4 @@ Este es un resumen rápido del flujo de trabajo integrado en eDiscovery avanzado
 
 - [Exportar datos de casos](exporting-data-ediscover20.md) para su revisión por parte de abogados externos.
 
-- [Administrar trabajos de larga ejecución](managing-jobs-ediscovery20.md) en eDiscovery avanzada.
+- [Administrar trabajos de larga](managing-jobs-ediscovery20.md) ejecución en Advanced eDiscovery.

@@ -53,7 +53,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |**Métrica**|**Definición**|
 |Nombre del grupo  <br/> |Nombre del grupo. <br/> |
 |Administrador de grupo  <br/> |Nombre del administrador del grupo o propietario.  <br/> |
-|Deleted  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
+|Eliminada  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
 |Tipo  <br/> |Tipo de grupo, público o privado. <br/> |
 |Conectado a Office 365  <br/> |Indica si el grupo Yammer es también un Microsoft 365 grupo. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La fecha más reciente en la que el grupo leyó, publicó o gustó un mensaje.  <br/> |

@@ -417,7 +417,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, vea
 
 ### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a>Usar PowerShell para establecer la prioridad de las reglas de vínculos seguros
 
-El valor de prioridad máximo que se puede establecer en una regla es 0. El valor mínimo que se puede establecer depende del número de reglas. Por ejemplo, si tiene cinco reglas, puede usar los valores de prioridad del 0 al 4. El cambio de prioridad de una regla existente puede tener un efecto cascada en otras reglas. Por ejemplo, si tiene cinco reglas personalizadas (prioridades del 0 al 4) y cambia la prioridad de una regla a 2, la regla existente de prioridad 2 cambia a prioridad 3 y la regla de prioridad 3 cambia a prioridad 4.
+El valor de prioridad máximo que se puede establecer en una regla es 0. El valor mínimo depende del número de reglas. Por ejemplo, si tiene cinco reglas, puede usar los valores de prioridad del 0 al 4. El cambio de prioridad de una regla existente puede tener un efecto cascada en otras reglas. Por ejemplo, si tiene cinco reglas personalizadas (prioridades del 0 al 4) y cambia la prioridad de una regla a 2, la regla existente de prioridad 2 cambia a prioridad 3 y la regla de prioridad 3 cambia a prioridad 4.
 
 Para establecer la prioridad de una regla de vínculos seguros en PowerShell, use la siguiente sintaxis:
 
@@ -425,7 +425,7 @@ Para establecer la prioridad de una regla de vínculos seguros en PowerShell, us
 Set-SafeLinksRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-Este ejemplo establece la prioridad de la regla denominada Marketing Department en 2. Todas las reglas existentes que tienen una prioridad menor o igual a 2 se reducen en 1 (sus números de prioridad aumentan en 1).
+En el ejemplo siguiente, la prioridad de la regla denominada "Marketing Department" se establece en 2. Todas las reglas existentes que tienen una prioridad menor o igual a 2 se reducen en 1 (sus números de prioridad aumentan en 1).
 
 ```PowerShell
 Set-SafeLinksRule -Identity "Marketing Department" -Priority 2

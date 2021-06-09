@@ -170,7 +170,7 @@ Los sitios de portal más grandes de la organización podrían haber invertido t
 
 Si su organización ha invertido en bases de conocimiento o sitios wiki, estos pueden proporcionar una lista de temas que usar para sus esfuerzos de curación iniciales. Si son especialmente grandes, seleccione los temas más vistos o editados como punto de partida.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar temas en el Centro de temas](manage-topics.md)
 

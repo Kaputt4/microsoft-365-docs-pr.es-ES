@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 06/03/2021
 ms.locfileid: "52736458"
 ---
-# <a name="query-and-filter-content-in-a-review-set"></a>Consultar y filtrar contenido en un conjunto de revisión
+# <a name="query-and-filter-content-in-a-review-set"></a>Consultar y filtrar el contenido de un conjunto de revisión
 
 En la mayoría de los casos, será útil profundizar en el contenido de un conjunto de revisión y organizarlo para facilitar una revisión más eficaz. El uso de filtros y consultas en un conjunto de revisión le ayuda a centrarse en un subconjunto de documentos que cumplan los criterios de la revisión.
 

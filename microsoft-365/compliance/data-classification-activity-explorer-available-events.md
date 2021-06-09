@@ -227,7 +227,7 @@ Este evento se genera cada vez que una directiva DLP coincide en un documento o 
 |SharePoint Online|sí          |
 |OneDrive |sí|
 |Teams |sí   |
-|Dispositivos con Windows 10         |sí |
+|Dispositivos con Windows 10         |sí |
 |MAC         |no     |
 |local         |no|
 |MCAS     |no        | 

@@ -1,5 +1,5 @@
 ---
-title: Enrutamiento de red informado de Microsoft 365
+title: Microsoft 365 de red informado
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Enrutamiento de red informado de Microsoft 365
+description: Microsoft 365 de red informado
 ms.openlocfilehash: 5275f8ea55afaf621555b440e7fae4a6d11cad91
 ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
@@ -21,31 +21,31 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/11/2021
 ms.locfileid: "50717593"
 ---
-# <a name="microsoft-365-informed-network-routing-preview"></a>Enrutamiento de red informado de Microsoft 365 (versión preliminar)
+# <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365 enrutamiento de red informado (versión preliminar)
 
 El enrutamiento de red informado es una característica que integra varias aplicaciones de Microsoft 365 con soluciones de red definidas por software (SD-WAN) de terceros con el fin de optimizar y mejorar la conectividad de red con los puntos de conexión de servicio de Microsoft. La conectividad SD-WAN optimizada puede dar como resultado una mejor experiencia y rendimiento del usuario.
 
 >[!IMPORTANT]
->El enrutamiento de red informado de Microsoft 365 se encuentra actualmente en estado de vista previa. Para obtener más información sobre esta vista previa, incluidas las instrucciones para recibir asistencia, vea [Microsoft 365 informed network routing Public Preview](https://go.microsoft.com/fwlink/?linkid=2151565).
+>Microsoft 365 enrutamiento de red informado se encuentra actualmente en estado de vista previa. Para obtener más información sobre esta vista previa, incluidas las instrucciones para recibir asistencia, vea Microsoft 365 public preview de [enrutamiento de red informado.](https://go.microsoft.com/fwlink/?linkid=2151565)
 
 ## <a name="overview"></a>Información general
 
-El enrutamiento de red informado proporciona un canal bidireccional de uso compartido de datos entre Microsoft y la solución SD-WAN. Para cada ubicación de oficina y circuito de Internet que configure, Microsoft comparte periódicamente comentarios con la solución SD-WAN sobre la calidad de las experiencias de aplicación de Microsoft 365 seleccionadas para el tráfico de red asociado a cada circuito de Internet específico. Con estos comentarios, la solución SD-WAN puede realizar acciones de recuperación inteligente enrutando el tráfico de aplicaciones de Microsoft 365 a través de vínculos alternativos disponibles. 
+El enrutamiento de red informado proporciona un canal bidireccional de uso compartido de datos entre Microsoft y la solución SD-WAN. Para cada ubicación de oficina y circuito de Internet que configure, Microsoft comparte periódicamente comentarios con la solución SD-WAN sobre la calidad de las experiencias de aplicación de Microsoft 365 seleccionadas para el tráfico de red asociado a cada circuito de Internet específico. Con estos comentarios, la solución SD-WAN puede realizar acciones de recuperación inteligentes enrutando Microsoft 365 de aplicaciones a través de vínculos alternativos disponibles. 
 
-Las degradaciones de la calidad del servicio en la ruta de acceso de un circuito de Internet determinado, como el aumento de la latencia o la alta pérdida de paquetes, son difíciles de detectar de forma continua. Estas degradaciones pueden ser perjudiciales para las experiencias de usuario de aplicaciones como Exchange Online, SharePoint, OneDrive y Microsoft Teams. Los síntomas comunes incluyen búsqueda lenta del contenido de Exchange, tiempos de transferencia altos al interactuar con bibliotecas de documentos de SharePoint o OneDrive, o mala calidad de llamadas o reuniones en Microsoft Teams.
+Las degradaciones de la calidad del servicio en la ruta de acceso de un circuito de Internet determinado, como el aumento de la latencia o la alta pérdida de paquetes, son difíciles de detectar de forma continua. Estas degradaciones pueden ser perjudiciales para las experiencias del usuario para aplicaciones como Exchange Online, SharePoint, OneDrive y Microsoft Teams. Los síntomas comunes incluyen una búsqueda lenta de contenido Exchange, tiempos de transferencia altos al interactuar con bibliotecas de documentos SharePoint o OneDrive, o mala calidad de llamadas o reuniones en Microsoft Teams.
 
 El mecanismo de comentarios y recuperación dentro del enrutamiento informado de red busca detectar dinámicamente estos problemas en tiempo casi real e informa a la solución SD-WAN implementada para que lleve a cabo acciones de recuperación automática.
 
-El canal de uso compartido de datos también se usa para recibir periódicamente datos de óptica de nivel de red de la solución SD-WAN, incluida la información de configuración y las estadísticas de uso asociadas con el dispositivo y los circuitos conectados. No se recopila ni almacena información personal. Toda la información recopilada se agrega a ubicaciones de oficina y circuitos de Internet conectados. Esta información puede ayudar a Microsoft a resolver de forma más eficaz y eficaz los problemas notificados con el uso de aplicaciones y servicios de Microsoft 365.
+El canal de uso compartido de datos también se usa para recibir periódicamente datos de óptica de nivel de red de la solución SD-WAN, incluida la información de configuración y las estadísticas de uso asociadas con el dispositivo y los circuitos conectados. No se recopila ni almacena información personal. Toda la información recopilada se agrega a ubicaciones de oficina y circuitos de Internet conectados. Esta información puede ayudar a Microsoft a resolver de forma más eficaz y eficaz los problemas notificados con el uso de Microsoft 365 servicios y aplicaciones.
 
 >[!NOTE]
->El enrutamiento de red informado de Microsoft 365 admite inquilinos en la nube comercial de WW, pero no en las nubes GCC Moderate, GCC High, DoD, Germany o China.
+>Microsoft 365 enrutamiento de red informado admite inquilinos en la nube comercial de WW, pero no en las nube GCC s moderadas, GCC High, DoD, Alemania o China.
 
 ## <a name="requirements"></a>Requisitos
 
 ### <a name="integrated-sd-wan-solutions"></a>Soluciones SD-WAN integradas
 
-Microsoft está trabajando con varios partners para habilitar la integración con el enrutamiento de red informado de Microsoft 365. Entre las soluciones habilitadas actualmente se incluyen las siguientes:
+Microsoft está trabajando con varios partners para habilitar la integración Microsoft 365 enrutamiento de red informado. Entre las soluciones habilitadas actualmente se incluyen las siguientes:
 
 | Device Maker | Nombre de la solución | Versión mínima |
 | --- | --- | --- |
@@ -59,13 +59,13 @@ En el caso de que no haya al menos un circuito de red que proporcione acceso dir
 
 ### <a name="application-usage"></a>Uso de aplicaciones
 
-Los datos de experiencia de aplicación (reflejados a través de métricas de calidad de red) se recopilan mediante el uso de aplicaciones cliente de Microsoft específicas. Las métricas de Exchange reflejan el uso del cliente de Outlook, así como algunos usos de Outlook Web App. Las métricas de SharePoint y OneDrive reflejan el uso de los extremos de SharePoint específicos del inquilino, independientemente de la aplicación cliente. Las métricas de Teams reflejan el uso del cliente de escritorio de Teams. No se tiene en cuenta otro tráfico de aplicaciones al evaluar el estado de un circuito de red.
+Los datos de experiencia de aplicación (reflejados a través de métricas de calidad de red) se recopilan mediante el uso de aplicaciones cliente de Microsoft específicas. Exchange métricas reflejan el uso del Outlook cliente, así como algunos Outlook Web App uso. SharePoint métricas OneDrive reflejan el uso de los puntos de conexión específicos SharePoint inquilino, independientemente de la aplicación cliente. Teams métricas reflejan el uso del Teams de escritorio. No se tiene en cuenta otro tráfico de aplicaciones al evaluar el estado de un circuito de red.
 
 ## <a name="enabling-informed-network-routing"></a>Habilitar el enrutamiento de red informado
 
-Habilitar el enrutamiento de red informado requiere varios pasos, algunos de los cuales tendrán que realizarse dentro de la interfaz de configuración de la solución SD-WAN. Consulte a su proveedor de soluciones SD-WAN para obtener instrucciones sobre cómo iniciar el proceso de habilitar el enrutamiento informado de red dentro de la solución SD-WAN antes de continuar con la configuración en el Centro de administración de Microsoft 365.
+Habilitar el enrutamiento de red informado requiere varios pasos, algunos de los cuales tendrán que realizarse dentro de la interfaz de configuración de la solución SD-WAN. Consulte a su proveedor de soluciones SD-WAN para obtener instrucciones sobre cómo iniciar el proceso de habilitar el enrutamiento informado de red dentro de la solución SD-WAN antes de continuar con la configuración en el centro de administración de Microsoft 365 web.
 
-Una vez que esté listo para habilitar el enrutamiento de red informado en el Centro de administración de Microsoft 365, asegúrese de que tiene los permisos de administrador global necesarios.
+Una vez que esté listo para habilitar el enrutamiento de red informado en el centro de administración de Microsoft 365, asegúrese de que tiene los permisos de administrador global necesarios.
 
 >[!IMPORTANT]
 >Para proporcionar los permisos de aplicaciones de inquilino necesarios para que la solución SD-WAN seleccionada tenga acceso al canal de uso compartido de datos de enrutamiento de red informado, debe realizar los siguientes pasos como administrador global.
@@ -73,9 +73,9 @@ Una vez que esté listo para habilitar el enrutamiento de red informado en el Ce
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Paso 1: Abrir opciones de configuración de soluciones SD-WAN
 
-En el [Centro de administración de Microsoft 365,](https://admin.microsoft.com/)seleccione Health > Network **connectivity** en el panel de navegación izquierdo.
+En el [centro Microsoft 365 administración,](https://admin.microsoft.com/)seleccione **Estado > conectividad de** red en el panel de navegación izquierdo.
 
-En esta sección del Centro de administración se proporcionan métricas de conectividad de red agregadas para su organización y instrucciones sobre cómo mejorar la conectividad. Consulta Conectividad de red en el Centro de administración de [Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md) para obtener información adicional sobre estas características disponibles en el Centro de administración.
+En esta sección del Centro de administración se proporcionan métricas de conectividad de red agregadas para su organización y instrucciones sobre cómo mejorar la conectividad. Consulta [Conectividad de red en el Centro Microsoft 365 administración (versión preliminar)](office-365-network-mac-perf-overview.md) para obtener información adicional sobre estas características disponibles en el Centro de administración.
 
 Seleccione **Configuración > solución SD-WAN** para abrir el panel de configuración de enrutamiento de red informado. Las otras opciones que aparecen en **Configuración** se aplican a la guía general de conectividad de red en el Centro de administración y no son necesarias para habilitar el enrutamiento de red informado.
 
@@ -113,9 +113,9 @@ Seleccione **Listo** y, a continuación, cierre el panel de configuración de la
 
 Realizará gran parte de la configuración para el enrutamiento de red informado dentro de la solución SD-WAN, como configurar cómo se debe enrutar el tráfico en circunstancias normales y las rutas alternativas que deben usarse si se detectan problemas. Consulte a su proveedor de soluciones SD-WAN para obtener información detallada sobre estos pasos de configuración.
 
-Cada ubicación de oficina debe configurarse en el Centro de administración de Microsoft 365 para que el enrutamiento de red informado pueda identificar correctamente el tráfico asociado con los circuitos de red que proporcionan conectividad a estas ubicaciones.
+Cada ubicación de oficina debe configurarse en el centro de administración de Microsoft 365 para que el enrutamiento de red informado pueda identificar correctamente el tráfico asociado con los circuitos de red que proporcionan conectividad a estas ubicaciones.
 
-Las ubicaciones de Office pueden detectarse automáticamente como parte de la colección continua de telemetría de red de Microsoft. Como resultado, es posible que algunas ubicaciones se rellenen previamente en el centro de administración del inquilino. 
+Office pueden detectarse automáticamente como parte de la colección continua de telemetría de red de Microsoft. Como resultado, es posible que algunas ubicaciones se rellenen previamente en el centro de administración del inquilino. 
 
 Si estas ubicaciones son precisas, simplemente deberá habilitar la característica de enrutamiento de red informada para cada ubicación deseada y configurar los circuitos de Internet y sus direcciones IP públicas. 
 
@@ -134,9 +134,9 @@ Asegúrese de que cada ubicación de oficina en la que desee habilitar el enruta
 
 1. En la **lista Ubicaciones,** seleccione **Editar** en el menú acciones rápidas para abrir el panel de configuración de ubicación.
 
-2. Seleccione Usar el enrutamiento de red informado de **Microsoft 365 en esta ubicación**.
+2. Seleccione **Usar Microsoft 365 enrutamiento de red informado en esta ubicación**.
 
-3. Agregue todos los circuitos de red que proporcionan conectividad a Internet a esta ubicación de oficina en los **intervalos** de direcciones IP de salida en esta sección de ubicación de la oficina. Asegúrese de que cada circuito está asociado a las subredes de direcciones IP públicas únicas que representan el tráfico de red.
+3. Agregue todos los circuitos de red que proporcionan conectividad a Internet a esta ubicación de oficina en los **intervalos** de direcciones IP Egress en esta sección de ubicación de la oficina. Asegúrese de que cada circuito está asociado a las subredes de direcciones IP públicas únicas que representan el tráfico de red.
 
 4. Seleccione **Guardar** para guardar los cambios.
 
@@ -146,7 +146,7 @@ La característica de enrutamiento de red informada puede deshabilitarse para to
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Paso 1: Abrir opciones de configuración de soluciones SD-WAN
 
-En el [Centro de administración de Microsoft 365,](https://admin.microsoft.com/) seleccione Estado > conectividad **de** red en el panel de navegación izquierdo.
+En el [centro Microsoft 365 de administración,](https://admin.microsoft.com/) seleccione **Estado > conectividad de** red en el panel de navegación izquierdo.
 
 Seleccione **Configuración > solución SD-WAN** para abrir el panel de configuración de enrutamiento de red informado.
 
@@ -160,7 +160,7 @@ La configuración se ha restablecido y se ha deshabilitado el enrutamiento de re
 
 ## <a name="data-storage"></a>Almacenamiento de datos
 
-Los datos intercambiados entre Microsoft y el proveedor de soluciones SD-WAN se almacenan en la ubicación de almacenamiento de datos seleccionada durante la habilitación inicial del enrutamiento informado de red. Las opciones de ubicación de almacenamiento de datos representan áreas geográficas que contienen regiones de Microsoft Azure donde se almacenan los datos.
+Los datos intercambiados entre Microsoft y el proveedor de soluciones SD-WAN se almacenan en la ubicación de almacenamiento de datos seleccionada durante la habilitación inicial del enrutamiento informado de red. Las opciones de ubicación de almacenamiento de datos representan áreas geográficas que Microsoft Azure regiones donde se almacenan los datos.
 
 >[!NOTE]
 >Durante la fase de vista previa, la única ubicación de almacenamiento de datos disponible es **Norteamérica.** Las ubicaciones de almacenamiento de datos adicionales estarán disponibles antes de la disponibilidad general del enrutamiento de red informado.
@@ -169,6 +169,6 @@ Los datos se conservan en esta ubicación durante un máximo de 30 días. Cuando
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md)
+[Conectividad de red en el centro Microsoft 365 administración (versión preliminar)](office-365-network-mac-perf-overview.md)
 
-[Servicios de ubicación de conectividad de red de Microsoft 365 (versión preliminar)](office-365-network-mac-location-services.md)
+[Microsoft 365 Servicios de ubicación de conectividad de red (versión preliminar)](office-365-network-mac-location-services.md)

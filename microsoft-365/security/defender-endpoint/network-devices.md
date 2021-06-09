@@ -1,5 +1,5 @@
 ---
-title: Administración de vulnerabilidades y detección de dispositivos de red
+title: Detección de dispositivos de red y administración de vulnerabilidades
 description: Las recomendaciones de seguridad y la detección de vulnerabilidades ya están disponibles para sistemas operativos de conmutadores, enrutadores, controladores WLAN y firewalls.
 keywords: dispositivos de red, detección de vulnerabilidades de dispositivos de red, sistemas operativos de conmutadores, enrutadores, controladores WLAN y firewalls
 search.product: eADQiWindows 10XVcnh
@@ -25,14 +25,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2021
 ms.locfileid: "51862072"
 ---
-# <a name="network-device-discovery-and-vulnerability-management"></a>Administración de vulnerabilidades y detección de dispositivos de red
+# <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
@@ -45,9 +45,9 @@ ms.locfileid: "51862072"
 > [!NOTE]  
 > El Blog sobre detección de [dispositivos](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) de red y evaluaciones de vulnerabilidad publicado \( el 04-13-2021 proporciona información sobre las nuevas capacidades de detección de dispositivos de red en \) Defender para endpoint.  En este artículo se proporciona  información general sobre el desafío que la detección de dispositivos de red está diseñada para abordar e información detallada sobre cómo empezar a usar estas nuevas funcionalidades.
 
-Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del Centro de seguridad de Microsoft 365 y las consolas del Centro de seguridad de Microsoft Defender.  
+Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del centro Microsoft 365 seguridad y Centro de seguridad de Microsoft Defender consolas.  
 
-Se usará un dispositivo designado de Microsoft Defender para endpoint en cada segmento de red para realizar exámenes periódicos autenticados de dispositivos de red preconfigurados. Una vez descubierto, las capacidades de administración de amenazas y vulnerabilidades de Defender for Endpoint proporcionan flujos de trabajo integrados para proteger los conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace VPN.  
+Se usará un dispositivo designado de Microsoft Defender para endpoint en cada segmento de red para realizar exámenes periódicos autenticados de dispositivos de red preconfigurados. Una vez descubierto, las capacidades de Defender for Endpoint Administración de amenazas y vulnerabilidades proporcionan flujos de trabajo integrados para proteger conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace VPN.  
 
 Una vez detectados y clasificados los dispositivos de red, los administradores de seguridad podrán recibir las recomendaciones de seguridad más recientes y revisar las vulnerabilidades detectadas recientemente en los dispositivos de red implementados en sus organizaciones.
 
@@ -105,12 +105,12 @@ El primer paso es seleccionar un dispositivo que realizará los exámenes de red
 
 ## <a name="permissions"></a>Permisos
 
-Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en el Centro de seguridad**. Para encontrar el permiso, vaya a **Roles**  >  **de configuración**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
+Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en el Centro de seguridad**. Para encontrar el permiso, vaya a **Configuración**  >  **Roles**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Instalar el escáner de red
 
-1. Vaya a **Configuración de seguridad de Microsoft 365** Trabajos de evaluación de  >    >    >  **extremos** (en **Evaluaciones de red).**
-    1. En el Centro de seguridad de Microsoft Defender, vaya a Configuración y > de evaluación.
+1. Vaya a Microsoft 365 **de Configuración** de evaluación de puntos de conexión  >    >    >   (en **Evaluaciones de red).**
+    1. En la Centro de seguridad de Microsoft Defender, vaya a Configuración > de trabajos de evaluación.
 
 2. Descargue el escáner de red e instállo en el dispositivo de evaluación de Defender para endpoint designado.
 
@@ -134,7 +134,7 @@ Para completar el proceso de registro del escáner de red:
 
 ## <a name="configure-a-new-assessment-job"></a>Configurar un nuevo trabajo de evaluación  
 
-En la página Trabajos de evaluación **de Configuración,** seleccione **Agregar trabajo de evaluación de red**. Siga el proceso de configuración para elegir los dispositivos de red que se examinarán periódicamente y se agregarán al inventario de dispositivos.
+En la página Trabajos de evaluación **de Configuración**, seleccione Agregar trabajo de evaluación **de red**. Siga el proceso de configuración para elegir los dispositivos de red que se examinarán periódicamente y se agregarán al inventario de dispositivos.
 
 Para evitar la duplicación de dispositivos en el inventario de dispositivos de red, asegúrese de que cada dirección IP esté configurada solo una vez en varios dispositivos de evaluación.
 
@@ -193,7 +193,7 @@ Si aún no obtiene resultados después de 5 minutos, reinicie el servicio.
 
 Valide que el escáner se está ejecutando correctamente. A continuación, vaya a la definición de examen y seleccione "Ejecutar prueba". Compruebe qué mensajes de error devuelven de las direcciones IP relevantes.
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>Permiso de usuario de administración de vulnerabilidades y amenazas requerido
+### <a name="required-threat-and-vulnerability-management-user-permission"></a>Permiso Administración de amenazas y vulnerabilidades usuario requerido
 
 El registro finalizó con un error: "Parece que no tiene permisos suficientes para agregar un nuevo agente. El permiso requerido es "Administrar la configuración de seguridad en el Centro de seguridad".
 

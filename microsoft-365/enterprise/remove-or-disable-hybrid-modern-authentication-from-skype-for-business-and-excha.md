@@ -31,23 +31,23 @@ ms.locfileid: "50927293"
 
 Si ha habilitado la autenticación moderna híbrida (HMA) solo para encontrar que no es adecuado para el entorno actual, puede deshabilitar HMA. En este artículo se explica cómo.
   
-## <a name="who-is-this-article-for"></a>¿Para quién es este artículo?
+## <a name="who-is-this-article-for"></a>Quién Cuál es este artículo?
 
 Si ha habilitado la autenticación moderna en Skype Empresarial Online o local, y/o Exchange Online o local y ha encontrado que necesita deshabilitar HMA, estos pasos son para usted.
 
 > [!IMPORTANT]
-> Consulte el artículo '[Topologías](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)de Skype Empresarial compatibles con autenticación moderna' si está en Skype Empresarial Online o local, tiene una HMA de topología mixta y necesita ver las topologías admitidas antes de comenzar.
+> Consulte el artículo '[Skype Empresarial topologies supported with Modern Authentication](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)' si está en Skype Empresarial Online o local, tiene una HMA de topología mixta y necesita ver las topologías admitidas antes de comenzar.
   
 ## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>Cómo deshabilitar la autenticación moderna híbrida (Exchange)
 
-1. **Exchange local:** abra el Shell de administración de Exchange y ejecute los siguientes comandos: 
+1. **Exchange local:** abra el Shell de administración Exchange y ejecute los siguientes comandos: 
 
 ```powershell
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange Online:** [conéctese a Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) con PowerShell remoto. Ejecute el siguiente comando para convertir la marca  *OAuth2ClientProfileEnabled*  en "false":
+2. **Exchange Online:** Conectar [a Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) con PowerShell remoto. Ejecute el siguiente comando para convertir la marca  *OAuth2ClientProfileEnabled*  en "false":
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
@@ -55,13 +55,13 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
     
 ## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>Cómo deshabilitar la autenticación moderna híbrida (Skype Empresarial)
 
-1. **Skype Empresarial local:** ejecute los siguientes comandos en el Shell de administración de Skype Empresarial:
+1. **Skype Empresarial local:** ejecute los siguientes comandos en Skype Empresarial Shell de administración:
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **Skype Empresarial Online:** [conéctese a Skype Empresarial Online](manage-skype-for-business-online-with-microsoft-365-powershell.md) con PowerShell remoto. Ejecute el siguiente comando para deshabilitar la autenticación moderna:
+2. **Skype Empresarial Online:** [Conectar a Skype Empresarial Online](manage-skype-for-business-online-with-microsoft-365-powershell.md) con PowerShell remoto. Ejecute el siguiente comando para deshabilitar la autenticación moderna:
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed

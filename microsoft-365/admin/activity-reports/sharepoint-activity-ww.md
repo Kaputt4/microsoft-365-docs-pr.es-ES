@@ -59,7 +59,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Archivos compartidos internamente  <br/> | Recuento de archivos que se han compartido con usuarios de la organización o con usuarios de grupos (que pueden incluir usuarios externos).  <br/> |
 |Archivos compartidos externamente  <br/> |El número de archivos que se han compartido con usuarios externos a la organización. <br/>|
 |Páginas visitadas  <br/> |Las visitas a páginas únicas del usuario. <br/>|
-|Deleted  <br/> | Esto indica que se quitó la licencia del usuario.  <br/>  **NOTA:** La actividad de un usuario eliminado aún se mostrará en el informe siempre y cuando se le haya concedido una licencia en algún momento durante el período de tiempo seleccionado. En la columna Eliminado puede observar que es posible que el usuario ya no esté activo, pero ha contribuido a los datos del informe.  <br/> |
+|Eliminada  <br/> | Esto indica que se quitó la licencia del usuario.  <br/>  **NOTA:** La actividad de un usuario eliminado aún se mostrará en el informe siempre y cuando se le haya concedido una licencia en algún momento durante el período de tiempo seleccionado. En la columna Eliminado puede observar que es posible que el usuario ya no esté activo, pero ha contribuido a los datos del informe.  <br/> |
 |Fecha de eliminación  <br/> |La fecha en la que se quitó la licencia del usuario. <br/>|
 |Producto asignado  <br/> |Los Microsoft 365 que tienen licencia para el usuario.|
 |||

@@ -26,7 +26,7 @@ ms.locfileid: "52770402"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Habilite las etiquetas de confidencialidad Office archivos SharePoint y OneDrive para que [](sensitivity-labels.md) los usuarios puedan aplicar las etiquetas de confidencialidad Office para la web. Cuando esta característica está habilitada,  los usuarios verán el botón Confidencialidad en la cinta de opciones para que puedan aplicar etiquetas y ver cualquier nombre de etiqueta aplicado en la barra de estado.
 
@@ -64,7 +64,7 @@ Siempre tienes la opción de deshabilitar las etiquetas de confidencialidad de O
 
 Si actualmente está protegiendo documentos en SharePoint mediante SharePoint Information Rights Management (IRM), asegúrese de comprobar la sección [SharePoint Information Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) y las etiquetas de confidencialidad de esta página. 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Estas nuevas funcionalidades solo funcionan con [etiquetas de](sensitivity-labels.md) confidencialidad. Si actualmente tiene etiquetas de Azure Information Protection, migre primero a etiquetas de confidencialidad para que pueda habilitar estas características para los nuevos archivos que cargue. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas](/azure/information-protection/configure-policy-migrate-labels)
 

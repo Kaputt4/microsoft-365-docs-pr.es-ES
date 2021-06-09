@@ -1,5 +1,5 @@
 ---
-title: Configurar la configuración del correo no deseado en buzones de Exchange Online
+title: Configurar las opciones del correo no deseado en buzones de Exchange Online
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52624806"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar las opciones del correo no deseado en buzones de Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -54,11 +54,11 @@ Los administradores pueden usar Exchange Online PowerShell para deshabilitar, ha
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Solo puede usar Exchange Online PowerShell para realizar los procedimientos descritos en este artículo. Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+- Solo puede usar Exchange Online PowerShell para realizar los procedimientos descritos en este artículo. Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener asignados permisos en Exchange Online para poder realizar los procedimientos de este artículo. En concreto, necesita  el rol Destinatarios de correo (que está asignado a los grupos de roles  Administración de la **organización,**  Administración de  destinatarios y Destinatarios de correo **personalizados** de forma predeterminada) o el rol Opciones de usuario (que se asigna de forma predeterminada a los grupos de roles Administración de la organización y Servicio de ayuda).  Para agregar usuarios a grupos de roles en Exchange Online, vea [Modify role groups in Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Tenga en cuenta que los usuarios con permisos predeterminados pueden realizar estos mismos procedimientos en su propio buzón, siempre y cuando tengan acceso [a Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
 
-- En entornos híbridos donde EOP protege los buzones de correo Exchange locales, debe configurar reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtrado de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta correo no deseado. Para obtener más información, vea [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+- En entornos híbridos en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - Caja fuerte Los remitentes de buzones compartidos no se sincronizan con Azure AD y EOP por diseño.
 

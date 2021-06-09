@@ -1,5 +1,5 @@
 ---
-title: 'Compatibilidad con aplicaciones cliente de Microsoft 365: autenticación multifactor'
+title: 'Microsoft 365 Compatibilidad con aplicaciones cliente: autenticación multifactor'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927571"
 ---
-# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Compatibilidad con aplicaciones cliente de Microsoft 365: autenticación multifactor
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 Compatibilidad con aplicaciones cliente: autenticación multifactor
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
@@ -36,7 +36,7 @@ Obtenga más información [sobre la autenticación multifactor](/azure/active-di
 
 ## <a name="supported-clients--platforms"></a>Clientes compatibles & plataformas
 
-Las últimas versiones de los siguientes clientes y plataformas admiten la autenticación multifactor. Para obtener más información acerca de la compatibilidad con plataformas en Microsoft 365, vea Requisitos del sistema [para Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
+Las últimas versiones de los siguientes clientes y plataformas admiten la autenticación multifactor. Para obtener más información acerca de la compatibilidad de plataforma Microsoft 365, vea [Requisitos del](/microsoft-365/microsoft-365-and-office-resources)sistema para Microsoft 365 .
 <br>
 <br>
 

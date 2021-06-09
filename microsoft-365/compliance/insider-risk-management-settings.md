@@ -1,7 +1,7 @@
 ---
 title: Configuración de administración de riesgos de Insider
 description: Obtenga información sobre la configuración de administración de riesgos de insider en Microsoft 365
-keywords: Microsoft 365, administración de riesgos insider, administración de riesgos, cumplimiento
+keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -71,7 +71,7 @@ En algunos casos, es posible que desee limitar los indicadores de directiva de r
 Para definir los indicadores de directiva de riesgo de insider que están habilitados en todas las directivas de riesgo de **insider,** vaya a Configuración de riesgos de Insider Indicadores y seleccione uno o varios indicadores  >   de directiva. Los indicadores seleccionados en la página Configuración de indicadores no se pueden configurar individualmente al crear o editar una directiva de riesgo de insider en el asistente para directivas.
 
 >[!NOTE]
->Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel **Usuarios.** Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el panel Usuarios y abra la pestaña **Actividad de** usuario en el panel de detalles. 
+>Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel **Usuarios.** Las actividades de los 90 días anteriores de estos usuarios pueden tardar hasta 24 horas en aparecer. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el panel Usuarios y abra la pestaña **Actividad de** usuario en el panel de detalles. 
 
 ### <a name="enable-device-indicators-and-onboard-devices"></a>Habilitar indicadores de dispositivos y dispositivos integrados
 <a name="OnboardDevices"> </a>
@@ -108,7 +108,7 @@ En este escenario de implementación, incorporará dispositivos que aún no se h
 5. Elija la forma en que desea implementar en estos más dispositivos de la **lista Método de** implementación y, a continuación, descargue el **paquete**.
 6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
     - Incorporar equipos con Windows 10 usando Directiva de grupo
-    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
+    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
     - Incorporar equipos con Windows 10 usando un script local
     - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
@@ -130,7 +130,7 @@ Si Microsoft Defender para endpoint ya está implementado y hay puntos de conexi
 5. Elija la forma en que desea implementar en estos más dispositivos de la **lista Método de** implementación y, a continuación, Descargue el **paquete**.
 6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
     - Incorporar equipos con Windows 10 usando Directiva de grupo
-    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
+    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
     - Incorporar equipos con Windows 10 usando un script local
     - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
@@ -200,7 +200,7 @@ Las alertas de Defender para endpoint se importan diariamente. Según el estado 
 Por ejemplo, si selecciona *Nuevo* *,* En curso y Resuelto para esta configuración, cuando se genera una alerta de Microsoft Defender para extremo y el estado es *Nuevo*, se importa una actividad de alerta inicial para el usuario en riesgo interno.  Cuando el estado de evaluación de Defender for Endpoint cambia a *En* curso, se importa una segunda actividad para esta alerta para el usuario en riesgo interno. Cuando se establece el estado final de evaluación de Defender para el extremo de *Resuelto,* se importa una tercera actividad para esta alerta para el usuario en riesgo interno. Esta funcionalidad permite a los investigadores seguir la progresión de las alertas de Defender for Endpoint y elegir el nivel de visibilidad que su investigación requiere.
 
 >[!IMPORTANT]
->Tendrás que configurar Microsoft Defender para endpoint en tu organización y habilitar Defender for Endpoint para la integración de la administración de riesgos de información interna en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender for Endpoint para la integración de la administración de riesgos insider, consulte [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
+>Deberá tener configurado ATP de Microsoft Defender en su organización y habilitar Defender para punto de conexión para la integración de la administración de riesgos internos en el Centro de seguridad de Defender para importar las alertas de infracciones de seguridad. Para obtener más información sobre cómo configurar Defender para punto de conexión para la integración de la administración de riesgos internos, vea [Configurar las características avanzadas de Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### <a name="domains-preview"></a>Dominios (versión preliminar)
 
@@ -494,7 +494,7 @@ Según el número de usuarios asignados a grupos de roles de administración de 
 
 ## <a name="analytics-preview"></a>Análisis (versión preliminar)
 
-El análisis de riesgos de Insider le permite realizar una evaluación de los posibles riesgos de insider en su organización sin configurar directivas de riesgo de insider. Esta evaluación puede ayudar a su organización a identificar posibles áreas de mayor riesgo para el usuario y ayudar a determinar el tipo y el ámbito de las directivas de administración de riesgos internas que puede considerar la configuración. Los exámenes de análisis ofrecen las siguientes ventajas para su organización:
+Los análisis de riesgos internos le permiten realizar una evaluación de los posibles riesgos internos en su organización sin necesidad de configurar ninguna directiva de riesgos internos. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Los exámenes de análisis ofrecen las siguientes ventajas para su organización:
 
 - Fácil de configurar: para empezar con los exámenes de análisis, puede seleccionar Ejecutar examen cuando se le solicite la recomendación de análisis o ir a Configuración de riesgos de Insider > pestaña Análisis y habilitar análisis.
 - Requisitos mínimos de privacidad: los resultados y las perspectivas del examen se devuelven como actividad de usuario anonimizada, los revisores no identifican nombres de usuario individuales.

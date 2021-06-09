@@ -1,5 +1,5 @@
 ---
-title: Revisar conversaciones en eDiscovery avanzada
+title: Revisar conversaciones en Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre la característica de reconstrucción de conversaciones en eDiscovery avanzada (denominada subprocesos de conversación) para reconstruir, revisar y exportar conversaciones de chat en grupos de Microsoft Teams y Yammer.
+description: Obtenga información sobre la característica de reconstrucción de conversación en Advanced eDiscovery (denominado subproceso de conversación) para reconstruir, revisar y exportar conversaciones de chat en Microsoft Teams y Yammer grupos.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 12887ba8dd74c3dab445dcc76e155e274a371539
 ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
@@ -24,13 +24,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/17/2021
 ms.locfileid: "50838309"
 ---
-# <a name="conversation-threading-in-advanced-ediscovery"></a>Subprocesos de conversación en eDiscovery avanzado
+# <a name="conversation-threading-in-advanced-ediscovery"></a>Subprocesos de conversación en Advanced eDiscovery
 
-La mensajería instantánea es una forma cómoda de hacer preguntas, compartir ideas o comunicarse rápidamente entre grandes audiencias. A medida que las plataformas de mensajería instantánea, como los grupos de Microsoft Teams y Yammer, se convierten en el núcleo de la colaboración empresarial, las organizaciones deben evaluar cómo su flujo de trabajo de exhibición de documentos electrónicos aborda estas nuevas formas de comunicación y colaboración.
+La mensajería instantánea es una forma cómoda de hacer preguntas, compartir ideas o comunicarse rápidamente entre grandes audiencias. A medida que las plataformas de mensajería instantánea, como los grupos Microsoft Teams y Yammer, se convierten en el núcleo de la colaboración empresarial, las organizaciones deben evaluar cómo su flujo de trabajo de exhibición de documentos electrónicos aborda estas nuevas formas de comunicación y colaboración.
 
-La característica Reconstrucción de conversación de eDiscovery avanzada está diseñada para ayudarle a identificar contenido contextual y producir vistas de conversación distintas. Esta funcionalidad le permite revisar de forma eficaz y rápida conversaciones de mensajes instantáneos completas (también denominadas conversaciones enhebradas) que se generan en plataformas como Microsoft Teams.
+La característica De reconstrucción de Advanced eDiscovery está diseñada para ayudarle a identificar contenido contextual y producir vistas de conversación distintas. Esta funcionalidad le permite revisar de forma eficaz y rápida conversaciones de mensajes instantáneos completas (también denominadas conversaciones enhebradas) que se generan en plataformas como Microsoft Teams.
 
-Con la reconstrucción de conversación, puede usar las funciones integradas para reconstruir, revisar y exportar conversaciones en subprocesos. Use La reconstrucción avanzada de conversaciones de exhibición de documentos electrónicos para:
+Con la reconstrucción de conversación, puede usar las funciones integradas para reconstruir, revisar y exportar conversaciones en subprocesos. Use Advanced eDiscovery reconstrucción de conversación para:
 
 - Conserve metadatos únicos de nivel de mensaje en todos los mensajes de una conversación.
 
@@ -48,13 +48,13 @@ Estas son algunas definiciones que le ayudarán a empezar a usar la reconstrucci
 
 - **Conversación:** Representa una agrupación de uno o varios mensajes. En diferentes aplicaciones, las conversaciones pueden representarse de diferentes maneras. En algunas aplicaciones, hay una acción explícita que resulta de responder a un mensaje existente. Las conversaciones se forman explícitamente como resultado de esta acción del usuario. Por ejemplo, esta es una captura de pantalla de una conversación de canal en Microsoft Teams.
 
-   ![Conversación del canal de Microsoft Teams](../media/threadedchat.png)
+   ![Microsoft Teams Conversación de canal](../media/threadedchat.png)
 
-   En otras aplicaciones (como los mensajes de chat de 1xN en Teams), no hay una cadena de respuesta formal y, en su lugar, los mensajes aparecen como un "río plano de mensajes" dentro de un solo subproceso. En estos tipos de aplicaciones, las conversaciones se deducen de un grupo de mensajes que se producen en un tiempo determinado. Esta "agrupación suave" de mensajes (en lugar de una cadena de respuesta) representa la conversación "ida y vuelta" sobre un tema específico de interés.
+   En otras aplicaciones (como los mensajes de chat de 1xN en Teams), no hay una cadena de respuesta formal y, en su lugar, los mensajes aparecen como un "río plano de mensajes" dentro de un único subproceso. En estos tipos de aplicaciones, las conversaciones se deducen de un grupo de mensajes que se producen en un tiempo determinado. Esta "agrupación suave" de mensajes (en lugar de una cadena de respuesta) representa la conversación "ida y vuelta" sobre un tema específico de interés.
 
 ## <a name="step-1-create-a-draft-collection"></a>Paso 1: Crear una colección de borradores
 
-Después de identificar los custodios relevantes y las ubicaciones de contenido, puede crear una búsqueda para buscar contenido potencialmente relevante. En la **ficha Colecciones** del caso eDiscovery avanzado, puede crear una colección haciendo clic en **Nueva** colección y siguiendo el asistente. Para obtener información sobre cómo crear una colección, crear una consulta de búsqueda y obtener una vista previa de los resultados de la [búsqueda,](create-draft-collection.md)vea Create a draft collection .
+Después de identificar los custodios relevantes y las ubicaciones de contenido, puede crear una búsqueda para buscar contenido potencialmente relevante. En la **ficha Colecciones** del Advanced eDiscovery, puede crear una colección haciendo clic en **Nueva** colección y siguiendo el asistente. Para obtener información sobre cómo crear una colección, crear una consulta de búsqueda y obtener una vista previa de los resultados de la [búsqueda,](create-draft-collection.md)vea Create a draft collection .
 
 ## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>Paso 2: Confirmar un borrador de colección en un conjunto de revisión
 
@@ -66,7 +66,7 @@ Al agregar elementos de conversaciones a un conjunto de revisión, puede usar la
   
 1. Con una consulta de palabra clave y intervalo de fechas, la búsqueda devolvió un éxito en *el mensaje 3*. Este mensaje formaba parte de una conversación más grande, ilustrada por *CRC1*.
   
-2. Al agregar los datos a un conjunto de revisión y habilitar las opciones de recuperación de conversaciones, eDiscovery avanzado volverá y recopilará otros elementos en *CRC1*.
+2. Al agregar los datos a un conjunto de revisión y habilitar las opciones de recuperación de conversaciones, Advanced eDiscovery volverá y recopilará otros elementos en *CRC1*.
   
 3. Después de agregar los elementos al conjunto de revisión, puede revisar todos los mensajes individuales de *CRC1*.
 
@@ -139,7 +139,7 @@ c. Otras opciones
 
 ## <a name="more-information"></a>Más información
 
-Para obtener más información sobre cómo revisar los datos de casos en eDiscovery avanzada, vea los siguientes artículos:
+Para obtener más información sobre cómo revisar los datos de casos Advanced eDiscovery, vea los siguientes artículos:
 
 - [Ver datos de casos](view-documents-in-review-set.md)
 

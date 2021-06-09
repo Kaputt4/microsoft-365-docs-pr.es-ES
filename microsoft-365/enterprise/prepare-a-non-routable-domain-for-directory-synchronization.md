@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Obtenga información sobre qué hacer si tiene un dominio no enrutable asociado a sus cuentas de usuario locales antes de sincronizarlas con su inquilino de Microsoft 365.
+description: Obtenga información sobre qué hacer si tiene un dominio no enrutable asociado a sus cuentas de usuario locales antes de sincronizarlas con su Microsoft 365 inquilino.
 ms.openlocfilehash: e4d0e020c5792c610d501c33e8f3d5131b7a1ff0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,13 +33,13 @@ ms.locfileid: "50927401"
 
 Al sincronizar el directorio local con Microsoft 365, debe tener un dominio comprobado en Azure Active Directory (Azure AD). Solo se sincronizan los nombres de entidad de seguridad de usuario (UPN) asociados con el dominio local de Servicios de dominio de Active Directory (AD DS). Sin embargo, cualquier UPN que contenga un dominio no enrutable, como ".local" (ejemplo: billa@contoso.local), se sincronizará con un dominio .onmicrosoft.com (ejemplo: billa@contoso.onmicrosoft.com). 
 
-Si actualmente usa un dominio ".local" para sus cuentas de usuario en AD DS, se recomienda cambiarlas para usar un dominio comprobado, como billa@contoso.com, para sincronizarse correctamente con su dominio de Microsoft 365.
+Si actualmente usa un dominio ".local" para sus cuentas de usuario en AD DS, se recomienda cambiarlas para usar un dominio comprobado, como billa@contoso.com, para sincronizarse correctamente con su dominio Microsoft 365.
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>¿Qué sucede si solo tengo un dominio local ".local"?
 
-Usa Azure AD Connect para sincronizar su AD DS con el inquilino de Azure AD de su inquilino de Microsoft 365. Para obtener más información, vea [Integrating your on-premises identities with Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+Usa Azure AD Conectar para sincronizar su AD DS con el inquilino de Azure AD de su Microsoft 365 inquilino. Para obtener más información, vea [Integrating your on-premises identities with Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
   
-Azure AD Connect sincroniza el UPN y la contraseña de los usuarios para que los usuarios puedan iniciar sesión con las mismas credenciales que usan localmente. Sin embargo, Azure AD Connect solo sincroniza los usuarios con los dominios comprobados por Microsoft 365. Esto significa que Azure AD también comprueba el dominio porque las identidades de Microsoft 365 están administradas por Azure AD. En otras palabras, el dominio debe ser un dominio de Internet válido (por ejemplo, .com, .org, .net, .us). Si su AD DS interno solo usa un dominio no enrutable (por ejemplo, ".local"), esto no puede coincidir con el dominio comprobado que tiene para su inquilino de Microsoft 365. Puedes solucionar este problema cambiando el dominio principal en tu AD DS local o agregando uno o varios sufijos UPN.
+Azure AD Conectar sincroniza el UPN y la contraseña de los usuarios para que los usuarios puedan iniciar sesión con las mismas credenciales que usan localmente. Sin embargo, Azure AD Conectar solo sincroniza los usuarios con dominios comprobados por Microsoft 365. Esto significa que Azure AD también comprueba el dominio porque Microsoft 365 identidades están administradas por Azure AD. En otras palabras, el dominio debe ser un dominio de Internet válido (por ejemplo, .com, .org, .net, .us). Si tu AD DS interno solo usa un dominio no enrutable (por ejemplo, ".local"), esto no puede coincidir con el dominio comprobado que tienes para tu inquilino Microsoft 365 cliente. Puedes solucionar este problema cambiando el dominio principal en tu AD DS local o agregando uno o varios sufijos UPN.
   
 ### <a name="change-your-primary-domain"></a>Cambiar el dominio principal
 
@@ -55,9 +55,9 @@ Después de actualizar los UPN para usar el dominio comprobado, estás listo par
   
 1. En el controlador de dominio de AD DS, en el Administrador de servidores elija **Herramientas** \> **Dominios y confianzas de Active Directory**.
     
-    **O bien, si no tienes Windows Server 2012**
+    **O bien, si no tiene Windows Server 2012**
     
-    Presione **la tecla Windows + R** para abrir el cuadro de diálogo Ejecutar y, a continuación, escriba Domain.msc y, a continuación, elija **Aceptar**. 
+    Presione **Windows + R** para abrir  el cuadro de diálogo Ejecutar y, a continuación, escriba Domain.msc y, a continuación, **elija Aceptar**.
     
     ![Elija Dominios y confianzas de Active Directory.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
@@ -75,9 +75,9 @@ Después de actualizar los UPN para usar el dominio comprobado, estás listo par
   
 1. En el controlador de dominio de AD DS, en el Administrador del servidor elija **Herramientas** \> **Usuarios y equipos de Active Directory**.
     
-    **O bien, si no tienes Windows Server 2012**
+    **O bien, si no tiene Windows Server 2012**
     
-    Presione **la tecla Windows + R** para abrir el cuadro **de** diálogo Ejecutar y, a continuación, escriba Dsa.msc y, a continuación, haga clic en **Aceptar.**
+    Presione **Windows + R** para abrir  el cuadro de diálogo Ejecutar y, a continuación, escriba Dsa.msc y, a continuación, haga clic en **Aceptar**
     
 2. Seleccione un usuario, haga clic con el botón secundario y, a continuación, elija **Propiedades**.
     
@@ -99,4 +99,4 @@ Por ejemplo, puede ejecutar los siguientes comandos de PowerShell para actualiza
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("@contoso.local","@contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
 
-Consulta [Módulo de Windows PowerShell Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) para obtener más información sobre cómo usar Windows PowerShell en AD DS.
+Consulta [El módulo Windows PowerShell Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) para obtener más información sobre cómo Windows PowerShell en AD DS.

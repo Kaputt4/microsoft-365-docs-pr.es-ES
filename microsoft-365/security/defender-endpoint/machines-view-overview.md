@@ -89,7 +89,7 @@ Filtre por los siguientes estados de estado del dispositivo:
 
 ### <a name="antivirus-status"></a>Estado del antivirus
 
-Filtrar dispositivos por estado antivirus. Solo se aplica a dispositivos Windows 10 activos.
+Filtrar dispositivos por estado antivirus. Solo se aplica a dispositivos Windows 10 activo.
 
 - **Deshabilitado:** la protección contra & virus está desactivada.
 - **Not reporting:** la protección contra & amenazas de virus no está informando.
@@ -103,9 +103,9 @@ Para ver los dispositivos que pueden verse afectados por una amenaza determinada
 
 Para obtener más información sobre determinadas amenazas, consulte [Análisis de amenazas.](threat-analytics.md) Para obtener información sobre mitigación, [vea Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md).
 
-### <a name="windows-10-version"></a>Versión de Windows 10
+### <a name="windows-10-version"></a>Windows 10 versión
 
-Selecciona solo las versiones de Windows 10 que te interesan investigar.
+Seleccione solo las Windows 10 que está interesado en investigar.
 
 ### <a name="tags--groups"></a>Etiquetas & grupos
 

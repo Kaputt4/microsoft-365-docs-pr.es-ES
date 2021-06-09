@@ -431,7 +431,7 @@ El envío por lotes de migración también se admite desde el nuevo Centro Excha
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 

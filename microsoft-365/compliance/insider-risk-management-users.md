@@ -1,7 +1,7 @@
 ---
 title: Panel de usuarios de administración de riesgos de Insider
-description: Información sobre la administración de riesgos insider Panel de usuarios en Microsoft 365
-keywords: Microsoft 365, administración de riesgos insider, administración de riesgos, cumplimiento
+description: Obtenga información sobre la administración de riesgos insider Panel de usuarios en Microsoft 365
+keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -46,7 +46,7 @@ El **panel Usuarios incluye** usuarios agregados a directivas de administración
 Cuando un usuario se agrega manualmente a una directiva, las actividades de usuario de los 90 días anteriores se puntuan y se agregan a la escala **de tiempo de actividad del** usuario. Por ejemplo, actualmente no se le asignan puntuaciones de riesgo a un usuario para una directiva de riesgo de insider y el usuario tiene actividades de pérdida de datos notificadas al departamento legal de su organización. El departamento legal recomienda configurar nuevos requisitos de supervisión a corto plazo para el usuario. Puede asignar temporalmente al usuario a la *directiva de* pérdida de datos durante un período de tiempo designado (ventana de activación). Todos los usuarios agregados temporalmente  se muestran en el panel Usuarios porque se renuncia a los requisitos de eventos desencadenados.
 
 >[!NOTE]
->Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel **Usuarios.** Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el panel Usuarios y abra la pestaña **Actividad de** usuario en el panel de detalles. 
+>Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel **Usuarios.** Las actividades de los 90 días anteriores de estos usuarios pueden tardar hasta 24 horas en aparecer. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el panel Usuarios y abra la pestaña **Actividad de** usuario en el panel de detalles. 
 
 El usuario se quita  automáticamente del panel Usuarios y la puntuación se detiene cuando expira el tiempo definido en la **ventana** Activación si:
 
@@ -79,7 +79,7 @@ Cada usuario que se muestra en el **panel Usuarios** tiene la siguiente informac
 Para ver más detalles sobre la actividad de riesgo de un usuario, abra el panel de detalles del usuario haciendo doble clic en un usuario en el panel **Usuarios**. En el panel de detalles, puede ver la siguiente información:
 
 - **Pestaña Perfil de** usuario
-    - **Nombre y título:** el nombre y el título de posición del usuario de Azure Active Directory. Estos campos de usuario se anonimizarán o vaciarán si la configuración de anonimización global para la administración de riesgos de insider está habilitada.
+    - **Nombre y título:** el nombre y el título de posición del usuario desde Azure Active Directory. Estos campos de usuario se anonimizarán o vaciarán si la configuración de anonimización global para la administración de riesgos de insider está habilitada.
     - **Correo electrónico del** usuario: la dirección de correo electrónico del usuario.
     - **Alias:** alias de red para el usuario.
     - **Organización o departamento:** la organización o el departamento del usuario.
@@ -96,22 +96,22 @@ Puede haber escenarios en los que tenga que dejar de asignar puntuaciones de rie
 
 Para quitar manualmente los usuarios del estado del ámbito en todas las directivas de administración de riesgos internas, siga estos pasos:
 
-1. En el [Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com)vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Usuarios.
+1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Usuarios.
 2. En el **panel Usuarios,** seleccione el usuario o los usuarios que desea quitar de estar en el ámbito en las directivas de administración de riesgos internas.
 3. Seleccione **Quitar usuarios**.
 4. En el **panel Quitar usuario,** **seleccione** Quitar o **Cancelar** para descartar los cambios y cerrar el cuadro de diálogo.
 5. Seleccione **Quitar** en el panel de confirmación para quitar al usuario.
 
-## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Ejecutar tareas automatizadas con flujos de Power Automate para un usuario
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Ejecutar tareas automatizadas con Power Automate para un usuario
 
-Con los flujos recomendados de Power Automate, los investigadores y analistas de riesgos pueden tomar medidas rápidamente para:
+Con los flujos Power Automate recomendados, los investigadores y analistas de riesgos pueden tomar medidas rápidamente para:
 
 - Notificar a los usuarios cuando se agregan a una directiva de riesgo de insider
 
-Para ejecutar, administrar o crear flujos de Power Automate para un usuario de administración de riesgos interno:
+Para ejecutar, administrar o crear flujos de Power Automate para un usuario de administración de riesgos insider:
 
 1. Seleccione **Automatizar en** la barra de herramientas de acciones del usuario.
-2. Elija el flujo de Power Automate que se ejecutará y, a continuación, **seleccione Ejecutar flujo**.
+2. Elija el Power Automate para ejecutar y, a continuación, seleccione **Ejecutar flujo**.
 3. Una vez completado el flujo, seleccione **Listo**.
 
-Para obtener más información sobre los flujos de Power Automate para la administración de riesgos de insider, consulte Introducción a la configuración de administración de riesgos [insider](insider-risk-management-settings.md#power-automate-flows-preview).
+Para obtener más información sobre Power Automate para la administración de riesgos de insider, vea Introducción a la configuración de administración de riesgos [de insider](insider-risk-management-settings.md#power-automate-flows-preview).

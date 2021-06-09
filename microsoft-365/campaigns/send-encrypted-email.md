@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Obtenga información sobre cómo enviar correo electrónico cifrado con Outlook.
+description: Obtenga información sobre cómo enviar correo electrónico cifrado Outlook.
 ms.openlocfilehash: 209734bd52d1d97278d5632f035723758fe2e016
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -47,7 +47,7 @@ Antes de enviar correo electrónico con información confidencial o confidencial
 
 ## <a name="set-it-up"></a>Configúrelo
 
-Si desea cifrar un mensaje que no cumple con una regla predefinida o el administrador no ha configurado ninguna regla, puede aplicar una variedad de reglas de cifrado diferentes antes de enviar el mensaje. Para enviar un mensaje cifrado desde Outlook 2013 o 2016, o Outlook 2016 para Mac, seleccione Opciones **> permisos** y, a continuación, seleccione la opción de protección que necesita. También puede enviar un mensaje cifrado seleccionando el botón **Proteger** en Outlook en la web. Para obtener más información, vea [Enviar, ver y responder a](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)mensajes cifrados en Outlook para PC .
+Si desea cifrar un mensaje que no cumple con una regla predefinida o el administrador no ha configurado ninguna regla, puede aplicar una variedad de reglas de cifrado diferentes antes de enviar el mensaje. Para enviar un mensaje cifrado desde Outlook 2013 o 2016, o Outlook 2016 para Mac, seleccione Opciones **> permisos** y, a continuación, seleccione la opción de protección que necesita. También puede enviar un mensaje cifrado  seleccionando el botón Proteger en Outlook en la web. Para obtener más información, vea [Enviar, ver y](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)responder a mensajes cifrados en Outlook para PC .
 
 ## <a name="admin-settings"></a>Configuración de administrador
 
@@ -57,7 +57,7 @@ Puede obtener información sobre cómo configurar el cifrado de correo electrón
 
 Los administradores pueden crear reglas de flujo de correo para proteger automáticamente los mensajes de correo electrónico que se envían y reciben de la campaña. Configure reglas para cifrar los mensajes de correo electrónico salientes y quite el cifrado de los mensajes cifrados procedentes de dentro de la organización o de las respuestas a los mensajes cifrados enviados desde su organización.
 
-Cree reglas de flujo de correo para cifrar los mensajes de correo electrónico con las nuevas funcionalidades de cifrado de mensajes (OME) de Office 365. Definir reglas de flujo de correo para desencadenar el cifrado de mensajes con las nuevas funcionalidades de OME mediante el Centro de administración de Exchange (EAC). 
+Se crean reglas de flujo de correo para cifrar los mensajes de correo electrónico con las nuevas Cifrado de mensajes de Office 365 (OME). Defina reglas de flujo de correo para desencadenar el cifrado de mensajes con las nuevas funcionalidades de OME mediante el Exchange de administración (EAC). 
 
 1. En un explorador web, con una cuenta de trabajo o escuela a la que se han concedido permisos de administrador global, inicie sesión.
 2. Elija el icono Administrador.

@@ -45,7 +45,7 @@ En este tema se proporcionan instrucciones sobre cómo ejecutar la herramienta m
  
 2.  Inicie una [sesión de respuesta en](live-response.md#initiate-a-live-response-session-on-a-device) directo en el equipo que necesita investigar.
 
-3.  Seleccione **Cargar archivo en la biblioteca**.
+3.  Seleccione **Upload archivo a la biblioteca**.
 
     ![Imagen del archivo de carga](images/upload-file.png)
 

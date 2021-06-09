@@ -56,7 +56,7 @@ Para que su empresa aparezca como partner en la página de partners del producto
 3. Proporcione una descripción del producto de 15 palabras.
 4. Vínculo a la página de aterrizaje para que el cliente complete la entrada de integración o blog que incluirá información suficiente para los clientes. Los equipos de marketing e ingeniería deben revisar cualquier nota de prensa, incluido el nombre del producto de Microsoft Defender para endpoint. Espere al menos 10 días para que se haga el proceso de revisión.
 5.  Si usa un enfoque de Azure AD multiinquilino, necesitará el nombre de la aplicación de Azure AD para realizar un seguimiento del uso de la aplicación.
-6. Incluya el User-Agent en cada llamada api realizada a Microsoft Defender para el conjunto público endpoint de API o API de Graph Security. Esto se usará con fines estadísticos, solución de problemas y reconocimiento de partners. Además, este paso es un requisito para pertenecer a Microsoft Intelligent Security Association (MISA).
+6. Incluya el User-Agent en cada llamada api realizada a Microsoft Defender para el conjunto público endpoint de API o Graph API de seguridad. Esto se usará con fines estadísticos, solución de problemas y reconocimiento de partners. Además, este paso es un requisito para pertenecer a Microsoft Intelligent Security Association (MISA).
 
     Siga estos pasos:
     

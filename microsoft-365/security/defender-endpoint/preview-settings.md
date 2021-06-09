@@ -36,7 +36,7 @@ ms.locfileid: "51861088"
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 
-1. En el panel de navegación, seleccione **Configuración**  >  **Características avanzadas**.
+1. En el panel de navegación, **seleccione Configuración**  >  **Características avanzadas**.
 
     ![Imagen de configuración y experiencia de vista previa](images/atp-preview-features.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Crear una colección de borradores
+title: Crear una colección de borrador
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Una colección borrador es una búsqueda de exhibición de documentos electrónicos de orígenes de datos con custodia y no custodia en un caso de exhibición de documentos electrónicos avanzada que devuelve una estimación de búsqueda que coincide con la consulta de búsqueda de la colección. Puede revisar las estadísticas de búsqueda, obtener una vista previa de un muestreo de elementos y revisar y volver a ejecutar la colección antes de confirmar los resultados en un conjunto de revisión.
+description: Una colección borrador es una búsqueda de exhibición de documentos electrónicos de orígenes de datos custodiales y no custodiales en un caso Advanced eDiscovery que devuelve una estimación de búsqueda que coincide con la consulta de búsqueda de la colección. Puede revisar las estadísticas de búsqueda, obtener una vista previa de un muestreo de elementos y revisar y volver a ejecutar la colección antes de confirmar los resultados en un conjunto de revisión.
 ms.openlocfilehash: 18f018a5e00f355c3f320a963135e76ecc51f086
 ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/17/2021
 ms.locfileid: "50838953"
 ---
-# <a name="create-a-draft-collection-in-advanced-ediscovery"></a>Crear una colección borrador en eDiscovery avanzada
+# <a name="create-a-draft-collection-in-advanced-ediscovery"></a>Crear una colección borrador en Advanced eDiscovery
 
 Después de identificar a los custodios y a los orígenes de datos que no son custodios para el caso, estará listo para identificar y localizar un conjunto de documentos relevantes. Para ello, use la herramienta Colecciones para buscar en los orígenes de datos contenido relevante. Para ello, cree una colección que busque en orígenes de datos especificados contenido que coincida con los criterios de búsqueda. Tiene la opción de crear una *colección* borrador , que es una estimación de los elementos que se encuentran o puede crear una colección que agrega automáticamente los elementos a un conjunto de revisión. Al crear una colección borrador, puede ver información sobre los resultados estimados que coinciden con la consulta de búsqueda, como el número total y el tamaño de los elementos encontrados, los distintos orígenes de datos donde se encontraron y las estadísticas sobre la consulta de búsqueda. También puede obtener una vista previa de un ejemplo de los elementos devueltos por la colección. Con estas estadísticas, puede cambiar la consulta de búsqueda y volver a ejecutar la colección de borradores para restringir los resultados. Una vez que esté satisfecho con los resultados de la colección, puede confirmar la colección en un conjunto de revisión. Al confirmar un borrador de colección, los elementos devueltos por la colección se agregan a un conjunto de revisión para su revisión, análisis y exportación.
 
@@ -35,11 +35,11 @@ Después de identificar a los custodios y a los orígenes de datos que no son cu
 
   - [Agregar orígenes de datos que no son de Private a un caso](non-custodial-data-sources.md)
 
-- Puede buscar orígenes de datos adicionales (los que no se han agregado al caso como ubicaciones de custodia o no custodia) en un borrador de colección para obtener contenido que pueda ser relevante para el caso. Estos orígenes de datos pueden incluir buzones, sitios de SharePoint y Teams. Si esta situación es aplicable a su caso, compile una lista de estos orígenes de datos para que pueda agregarlos a la colección.
+- Puede buscar orígenes de datos adicionales (los que no se han agregado al caso como ubicaciones de custodia o no custodia) en un borrador de colección para obtener contenido que pueda ser relevante para el caso. Estos orígenes de datos pueden incluir buzones, SharePoint sitios y Teams. Si esta situación es aplicable a su caso, compile una lista de estos orígenes de datos para que pueda agregarlos a la colección.
 
-## <a name="create-a-draft-collection"></a>Crear una colección de borradores
+## <a name="create-a-draft-collection"></a>Crear una colección de borrador
 
-1. En el Centro de cumplimiento de Microsoft 365, abra el caso eDiscovery avanzado y, a continuación, seleccione la **pestaña Colecciones.**
+1. En el Microsoft 365 de cumplimiento, abra el Advanced eDiscovery y, a continuación, seleccione la **pestaña Colecciones.**
 
 2. En la **página Colecciones,** seleccione **Nueva colección** Colección  >  **estándar**.
 
@@ -59,16 +59,16 @@ Después de identificar a los custodios y a los orígenes de datos que no son cu
 
 6. En la **página Orígenes de datos adicionales,** puede seleccionar otros buzones y sitios para buscar como parte de la colección. Estos tipos de orígenes de datos no se agregaron como ubicaciones de datos custodiales o no custodiales en el caso. También tiene dos opciones al buscar orígenes de datos adicionales:
 
-   - Para buscar en todas las ubicaciones de contenido un servicio específico (buzones de Exchange, sitios de SharePoint y OneDrive o carpetas públicas de Exchange), haga clic en la alternancia **Seleccionar** todo correspondiente en la columna **Estado.** Esta opción buscará en todas las ubicaciones de contenido del servicio seleccionado.
+   - Para buscar en todas las ubicaciones de contenido un servicio específico (buzones de Exchange, sitios SharePoint  y OneDrive o  carpetas públicas de Exchange), haga clic en la alternancia Seleccionar todo correspondiente en la columna Estado. Esta opción buscará en todas las ubicaciones de contenido del servicio seleccionado.
 
-   - Para buscar una ubicación de contenido  específica para un  servicio, haga clic en la alternancia Seleccionar todo  correspondiente en la columna Estado y, a continuación, haga clic en **Usuarios,** grupos o equipos (para buzones de Exchange) o Elegir sitios para (sitios de SharePoint y OneDrive) para buscar ubicaciones de contenido específicas.
+   - Para buscar una ubicación de contenido  específica para un  servicio, haga clic en la alternancia Seleccionar todo correspondiente  en la columna Estado y, a continuación, haga clic en **Usuarios,** grupos o equipos (para buzones de Exchange) o Elegir sitios para (sitios de SharePoint y OneDrive) para buscar ubicaciones de contenido específicas.
 
 7. En la **página Condiciones,** puede crear la consulta de búsqueda que se usa para recopilar elementos de los orígenes de datos que ha identificado en las páginas del asistente anteriores. Puede buscar palabras clave, pares property:value o usar una lista de palabras clave. También puede agregar varias condiciones de búsqueda para restringir el ámbito de la colección. Para obtener más información, vea [Crear consultas de búsqueda para colecciones](building-search-queries.md).
 
 8. En la **página Guardar como borrador o agregar** a conjunto de revisión, seleccione **Guardar colección como borrador**.
 
    > [!NOTE]
-   > La otra opción de esta página permite recopilar elementos y agregarlos directamente a un conjunto de revisión. En lugar de crear una colección borrador para la que pueda revisar estadísticas y obtener una vista previa de un ejemplo de los resultados de la colección, esta opción omite ese proceso y agrega automáticamente la colección a un conjunto de revisión. Si selecciona la segunda opción para agregar la colección a un conjunto de revisión, tendrá opciones adicionales que configurar, como recopilar subprocesos de conversación de chat completos en Microsoft Teams y Yammer y recopilar datos adjuntos de la nube (también denominados datos adjuntos modernos). Para obtener más información acerca de esta configuración, vea [Commit a draft collection to a review set](commit-draft-collection.md).
+   > La otra opción de esta página permite recopilar elementos y agregarlos directamente a un conjunto de revisión. En lugar de crear una colección borrador para la que pueda revisar estadísticas y obtener una vista previa de un ejemplo de los resultados de la colección, esta opción omite ese proceso y agrega automáticamente la colección a un conjunto de revisión. Si selecciona la segunda opción para agregar la colección a un conjunto de revisión, tendrá opciones adicionales para configurar, como recopilar subprocesos de conversación de chat completos en Microsoft Teams y Yammer y recopilar datos adjuntos en la nube (también denominados datos adjuntos modernos). Para obtener más información acerca de esta configuración, vea [Commit a draft collection to a review set](commit-draft-collection.md).
 
 9. En la **página Revisar la colección,** puede revisar y actualizar la configuración de la colección que configuró en las páginas anteriores.
 
@@ -82,7 +82,7 @@ Después de identificar a los custodios y a los orígenes de datos que no son cu
 
 Después de crear una colección borrador, aparece en la página **Colecciones** en el caso y el estado muestra que está en curso. Un trabajo denominado **Preparación de la vista previa de** búsqueda y estimaciones también se crea y se muestra en la página **Trabajos** en el caso.
 
-Durante el proceso de borrador de colección, eDiscovery avanzada realiza una estimación de búsqueda con los criterios de búsqueda y los orígenes de datos especificados en la colección. La exhibición de documentos electrónicos avanzada también prepara un muestreo de elementos que puede obtener una vista previa. Una vez completada la colección, se actualizan las siguientes columnas y valores correspondientes en la **página** Colección:
+Durante el proceso de borrador de colección, Advanced eDiscovery realiza una estimación de búsqueda con los criterios de búsqueda y los orígenes de datos especificados en la colección. Advanced eDiscovery también prepara un muestreo de elementos que puede obtener una vista previa. Una vez completada la colección, se actualizan las siguientes columnas y valores correspondientes en la **página** Colección:
 
 ![Estados de estado de una colección borrador](../media/DraftCollectionStatus.png)
 
@@ -132,7 +132,7 @@ A continuación se descripciones de las opciones de administración.
   
   - Tamaño total (en bytes) de los elementos de cada ubicación de contenido.
 
-  - Servicio (como Exchange o SharePoint) en el que se encuentra la ubicación de contenido.
+  - El servicio (como Exchange o SharePoint) en el que se encuentra la ubicación de contenido.
 
 - **Copiar colección:** cree una nueva colección borrador copiando la configuración de una colección existente. Debe usar un nombre diferente para la nueva colección. También tiene la opción de modificar la configuración antes de enviar la nueva colección. Después de enviarla, se ejecuta la consulta de búsqueda y se generan nuevas estimaciones y estadísticas. Es una buena manera de crear rápidamente una colección de borradores adicional y, a continuación, modificar la configuración seleccionada según sea necesario mientras se conserva la información de la colección original. Esto también le permite comparar fácilmente los resultados de dos colecciones similares.
 

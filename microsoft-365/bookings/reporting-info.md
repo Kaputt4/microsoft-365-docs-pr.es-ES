@@ -20,7 +20,7 @@ ms.locfileid: "51887246"
 
 Ahora puede ver una vista de cuatro meses del calendario de Bookings en un archivo TSV. El archivo TSV le mostrará cuatro meses de datos, pero puede seleccionar diferentes períodos de cuatro meses a lo largo de un año.
 
-Esta información de nivel de cita se puede usar para visualizar la actividad del cliente alrededor del calendario de Bookings. Los archivos TSV son archivos de valores separados por tabulaciones. Puede ver o editar un archivo como este con cualquier editor de texto o programa de hoja de cálculo, como Excel.
+Esta información de nivel de cita se puede usar para visualizar la actividad del cliente alrededor del calendario de Bookings. Los archivos TSV son archivos de valores separados por tabulaciones. Puedes ver o editar un archivo como este con cualquier editor de texto u programa de hoja de cálculo, como Excel.
 
 ## <a name="see-four-months-of-booking-activity"></a>Ver cuatro meses de actividad de Booking
 
@@ -28,7 +28,7 @@ Esta información de nivel de cita se puede usar para visualizar la actividad de
 
 :::image type="content" source="../media/bookings-activities.png" alt-text="Captura de pantalla: 4 meses de actividad de Bookings":::
 
-1. Guarde el archivo con un nuevo nombre y especifique el formato .xls o xlsx.
+1. Guarde el archivo con un nuevo nombre y especifique .xls o formato xlsx.
 
 1. Abra el archivo para ver la vista de cuatro meses del calendario de Bookings.
 
@@ -43,11 +43,11 @@ El informe incluye los siguientes campos.
  - **Fecha y hora**
 - **Nombre del cliente**
 - **Correo electrónico del cliente**
-- **Teléfono del cliente**
+- **Clientes Teléfono**
 - **Dirección del cliente**
 - **Plantilla**
 - **Servicio**
-- **Ubicación**
+- **Location**
 - **Duración (minutos)**
 - **Tipo de evento**
 
@@ -58,6 +58,6 @@ El informe mejorado ahora contiene los siguientes campos.
 - **Moneda**   Tipo de moneda establecido para una empresa.
 - **Asistentes de Cc**   Los destinatarios que recibirán las notificaciones por correo electrónico de una reserva. Esto se puede especificar desde la aplicación Teams al crear una reserva.
 - **Recuento de asistentes registrados**   Cuántos clientes reservaron un servicio de reserva de grupo.
-- **Notificaciones de texto habilitadas**   Si los clientes pueden recibir notificaciones relacionadas con texto SMS.
+- **Notificaciones de texto habilitadas**   Si los clientes pueden recibir SMS notificaciones relacionadas con texto.
 - **Campos personalizados**   Todas las preguntas y respuestas relacionadas con una única reserva se combinan en este campo.
 - **Id. de reserva**   Esto es útil para identificar las mismas reservas de un servicio de grupo.

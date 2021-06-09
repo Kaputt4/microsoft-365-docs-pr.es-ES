@@ -1,5 +1,5 @@
 ---
-title: Estadísticas e informes de colección
+title: Estadística e informes de colecciones
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo obtener acceso y usar estadísticas e informes para borradores de colecciones y colecciones que se han comprometido a un conjunto de revisión en eDiscovery avanzado.
+description: Obtenga información sobre cómo obtener acceso y usar estadísticas e informes para borradores de colecciones y colecciones que se han confirmado en un conjunto de revisión en Advanced eDiscovery.
 ms.openlocfilehash: 5edbd4a3b7212e027c777ed6ce5284f4e9cf595c
 ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/17/2021
 ms.locfileid: "50838964"
 ---
-# <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Estadísticas e informes de colección en eDiscovery avanzada
+# <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Estadísticas e informes de colección en Advanced eDiscovery
 
 Después de crear una colección borrador, puede ver estadísticas de los elementos recuperados, como las ubicaciones de contenido que contienen la mayoría de los elementos que coinciden con los criterios de búsqueda y el número de elementos devueltos por la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados.
 
@@ -128,16 +128,16 @@ Al ejecutar un borrador de colección, se muestra una estimación del número de
 
 - **Opciones de configuración de colección**. Al confirmar un borrador de colección en un conjunto de revisión, debe tener la opción de incluir subprocesos de conversación, datos adjuntos en la nube y versiones de documentos. Cualquiera de estos elementos que se agregan al conjunto de revisión no se incluye en las estimaciones de la colección borrador. Solo se identifican y recopilan cuando se confirma la colección. Seleccionar estas opciones probablemente aumentará el número de elementos agregados al conjunto de revisión. 
 
-    Por ejemplo, varias versiones de documentos de SharePoint no se incluyen en la estimación de la colección borrador. Pero si selecciona la opción para incluir todas las versiones del documento al exportar los resultados de búsqueda, lo que aumentará el número real (y el tamaño total) de los elementos agregados al conjunto de opiniones. 
+    Por ejemplo, varias versiones de SharePoint documentos no se incluyen en la estimación de la colección borrador. Pero si selecciona la opción para incluir todas las versiones del documento al exportar los resultados de búsqueda, lo que aumentará el número real (y el tamaño total) de los elementos agregados al conjunto de opiniones. 
 
     Para obtener más información acerca de estas opciones, vea [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery). 
 
 Estos son otros motivos por los que los resultados estimados de una colección de borrador pueden ser diferentes que los resultados confirmados reales.
 
-- **La forma en que se calculan los resultados de las colecciones de borradores**. Una estimación de los resultados de búsqueda devueltos por una colección borrador es solo esa, una estimación (y no un recuento real) de los elementos que cumplen los criterios de consulta de colección. Para compilar la estimación de los elementos de correo electrónico, se solicita una lista de los IDs de mensaje que cumplen los criterios de búsqueda de la base de datos de Exchange. Pero al confirmar la colección en un conjunto de revisión, la colección se vuelve a ejecutar y los mensajes reales se recuperan de la base de datos de Exchange. Por lo tanto, pueden producirse diferencias debido a la forma en que se determina el número estimado de elementos y el número real de elementos.
+- **La forma en que se calculan los resultados de las colecciones de borradores**. Una estimación de los resultados de búsqueda devueltos por una colección borrador es solo esa, una estimación (y no un recuento real) de los elementos que cumplen los criterios de consulta de colección. Para compilar la estimación de elementos de correo electrónico, se solicita una lista de los IDs de mensaje que cumplen los criterios de búsqueda de la base Exchange datos. Pero cuando se confirma la colección en un conjunto de revisión, la colección se vuelve a ejecutar y los mensajes reales se recuperan de la base Exchange datos. Por lo tanto, pueden producirse diferencias debido a la forma en que se determina el número estimado de elementos y el número real de elementos.
 
 - **Cambios que ocurren entre el momento en que se estiman y confirman colecciones de borradores**. Cuando se confirma un borrador de colección en un conjunto de revisión, la búsqueda se vuelve a ejecutar para recopilar los elementos más recientes del índice de búsqueda que cumplen los criterios de búsqueda. Es posible que se crearon, enviaron o eliminaron elementos adicionales que cumplen los criterios de búsqueda en el tiempo entre la última ejecución de la colección borrador y el momento en que la colección borrador se confirma en un conjunto de revisión. También es posible que los elementos que estaban en el índice de búsqueda cuando se calcularon los resultados de la colección de borradores ya no estén ahí porque se purgaron de un origen de datos antes de confirmar la colección. Una forma de mitigar este problema es especificar un intervalo de fechas para una colección. Otra forma es colocar una retención en las ubicaciones de contenido para que los elementos se conserven y no se puedan purgar.
 
-- **Elementos sin indizar**. Si el borrador de colección incluía la búsqueda en todos los buzones de Exchange o en todos los sitios de SharePoint, solo se agregarán al conjunto de revisión elementos sin indizar de ubicaciones de contenido que contengan elementos que coincidan con los criterios de la colección. En otras palabras, si no se encuentra ningún resultado en un buzón o sitio, los elementos no indexados de ese buzón o sitio no se agregarán al conjunto de revisión. Sin embargo, los elementos sin indizar de todas las ubicaciones de contenido (incluso aquellos que no contienen elementos que coincidan con la consulta de colección) se incluirán en los resultados estimados de la colección.
+- **Elementos sin indizar**. Si la colección borrador incluía la búsqueda en todos los buzones de Exchange o en todos los sitios de SharePoint, solo se agregarán al conjunto de revisión elementos sin indizar de ubicaciones de contenido que contengan elementos que coincidan con los criterios de la colección. En otras palabras, si no se encuentra ningún resultado en un buzón o sitio, los elementos no indexados de ese buzón o sitio no se agregarán al conjunto de revisión. Sin embargo, los elementos sin indizar de todas las ubicaciones de contenido (incluso aquellos que no contienen elementos que coincidan con la consulta de colección) se incluirán en los resultados estimados de la colección.
 
     Como alternativa, si el borrador de colección incluía ubicaciones de contenido específicas  (lo que significa que se exportarán los buzones o sitios específicos que se especifican en la página Ubicaciones adicionales del asistente para borrador de colección), los elementos no indexados (que no se excluyen por los criterios de colección) de las ubicaciones de contenido especificadas en la búsqueda. En este caso, el número estimado de elementos sin indexar y el número de elementos sin indexar que se agregan al conjunto de revisión debe ser el mismo.

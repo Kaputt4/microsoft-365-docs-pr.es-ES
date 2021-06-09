@@ -1,5 +1,5 @@
 ---
-title: Archivos adjuntos seguros
+title: Datos adjuntos seguros
 f1.keywords:
 - NOCSH
 ms.author: chrisda
