@@ -1,5 +1,5 @@
 ---
-title: Artículo de marcador de posición
+title: Artículo marcador de posición
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -20,6 +20,6 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46693880"
 ---
-# <a name="placeholder-article"></a><span data-ttu-id="40659-103">Artículo de marcador de posición</span><span class="sxs-lookup"><span data-stu-id="40659-103">Placeholder article</span></span>
+# <a name="placeholder-article"></a><span data-ttu-id="c763d-103">Artículo marcador de posición</span><span class="sxs-lookup"><span data-stu-id="c763d-103">Placeholder article</span></span>
 
-<span data-ttu-id="40659-104">Este artículo es un marcador de posición por ahora.</span><span class="sxs-lookup"><span data-stu-id="40659-104">This article is a placeholder for now.</span></span>
+<span data-ttu-id="c763d-104">Este artículo es un marcador de posición por ahora.</span><span class="sxs-lookup"><span data-stu-id="c763d-104">This article is a placeholder for now.</span></span>
