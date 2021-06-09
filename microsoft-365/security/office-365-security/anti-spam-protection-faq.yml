@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > En implementaciones híbridas en las que EOP protege los buzones de correo Exchange locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en la organización Exchange local para detectar los encabezados de filtrado de correo no deseado de EOP que se agregan a los mensajes. Para obtener más información, vea [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+      > En implementaciones híbridas en las que EOP protege los buzones de correo Exchange locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en la organización Exchange local para detectar los encabezados de filtrado de correo no deseado de EOP que se agregan a los mensajes. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
        **Para mensajes salientes:** El mensaje se enruta a través del grupo de entrega de alto riesgo o se devuelve al remitente en un informe de no entrega (también conocido como NDR o mensaje de devolución). [](high-risk-delivery-pool-for-outbound-messages.md) Para obtener más información acerca de la protección contra correo no deseado saliente, vea [Controles de correo no deseado saliente.](outbound-spam-controls.md)
   - question: >
