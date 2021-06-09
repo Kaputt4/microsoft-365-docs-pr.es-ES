@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259672"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841371"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
@@ -50,7 +50,7 @@ Nuestras directivas y la línea base de seguridad proporcionan a los usuarios es
 Los administradores de TI se benefician de estas características:
 
 - Paneles de información para mantenerles constantemente actualizados sobre el uso, la confiabilidad, el estado del dispositivo y otros datos de los dispositivos y usuarios.
-- Alrededor de una *décima* parte del tiempo necesario para actualizar el 95 % de los dispositivos.
+- Alrededor de una *décima* parte del tiempo necesario para actualizar el 95 % de los dispositivos.
 - Más tiempo para centrarse en otras actividades de administración de TI, gracias a [la administración de dispositivos](#device-management) proporcionada por el servicio.
 - Mayor conocimiento del rendimiento de dispositivos y aplicaciones, y advertencia anticipada de los problemas de seguridad de ka [supervisión de dispositivos](#device-monitoring).
 
@@ -61,7 +61,7 @@ El Escritorio administrado de Microsoft asume la carga de administración de dis
 
 - **Actualizaciones:** el Escritorio administrado de Microsoft configura y administra todos los aspectos de [grupos de implementación](../service-description/updates.md) para las actualizaciones de características y calidad de Windows 10, controladores, firmware, definiciones de antivirus y actualizaciones de Aplicaciones de Microsoft 365 para empresas. Esto incluye una amplia comprobación y verificación de todas las actualizaciones, asegurando que los dispositivos registrados siempre estén actualizados y minimizando las interrupciones, lo que libera al departamento de TI de esa tarea constante.
 
-- **Apps:** como parte de Microsoft 365 Enterprise, Microsoft le proporciona (y administra) varias aplicaciones clave de Microsoft. Pero seguramente también tendrá otras aplicaciones que necesita para su empresa. En lugar de que su departamento de TI tenga que probar, empaquetar e implementar esas aplicaciones, Microsoft le puede ayudar a implementarlas con el programa [FastTrack](https://www.microsoft.com/FastTrack). Además, el programa [Asesoría de aplicaciones](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) de Microsoft puede ayudar a solucionar todos los problemas de compatibilidad de las aplicaciones que aparezcan al migrar a las últimas versiones de nuestros productos. Más información en [Aplicaciones en Escritorio administrado de Microsoft](../get-ready/apps.md)
+- **Apps:** como parte de Microsoft 365 Enterprise, Microsoft le proporciona (y administra) varias aplicaciones clave de Microsoft. Pero seguramente también tendrá otras aplicaciones que necesita para su empresa. En lugar de que su departamento de TI tenga que probar, empaquetar e implementar esas aplicaciones, Microsoft le puede ayudar a implementarlas con el programa [FastTrack](https://www.microsoft.com/FastTrack). Además, el programa [Asesoría de aplicaciones](/fasttrack/products-and-capabilities#app-assuree) de Microsoft puede ayudar a solucionar todos los problemas de compatibilidad de las aplicaciones que aparezcan al migrar a las últimas versiones de nuestros productos. Más información en [Aplicaciones en Escritorio administrado de Microsoft](../get-ready/apps.md)
 
 
 ## <a name="device-monitoring"></a>Supervisión de dispositivos

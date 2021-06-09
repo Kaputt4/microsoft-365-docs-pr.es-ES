@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 410972bd823c3a3c4fda53cacc225014d83f3457
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274933"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844015"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar acciones de corrección tras una investigación automatizada
 
@@ -39,7 +39,7 @@ Dependiendo de
 
 - el tipo de amenaza, 
 - el veredicto resultante y 
-- cómo se configuran los grupos [de dispositivos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) de la organización, 
+- cómo se configuran los grupos [de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) de la organización, 
 
 las acciones de corrección pueden producirse automáticamente o solo tras la aprobación del equipo de operaciones de seguridad de la organización. 
 
@@ -49,7 +49,7 @@ Estos son algunos ejemplos:
 
 - **Ejemplo 2:** Los dispositivos de Contoso se incluyen en un grupo de dispositivos establecido para Semi: requerir la aprobación **de cualquier corrección**. En este caso, el equipo de operaciones de seguridad de Contoso debe revisar y aprobar todas las acciones de corrección después de una investigación automatizada (vea [Revisar acciones pendientes](#review-pending-actions)).
 
-- **Ejemplo 3:** Tailspin Toys tiene sus grupos de dispositivos establecidos en **No automated response** (no recomendado). En este caso, no se producen investigaciones automatizadas. No se han realizado acciones de corrección ni [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) están pendientes y no se registra ninguna acción en el Centro de acciones para sus dispositivos (consulta [Administrar grupos de dispositivos).](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)
+- **Ejemplo 3:** Tailspin Toys tiene sus grupos de dispositivos establecidos en **No automated response** (no recomendado). En este caso, no se producen investigaciones automatizadas. No se han realizado acciones de corrección ni [](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) están pendientes y no se registra ninguna acción en el Centro de acciones para sus dispositivos (consulta [Administrar grupos de dispositivos).](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)
 
 Independientemente de si se realiza automáticamente o tras la aprobación, una investigación automatizada puede dar como resultado una o varias de las acciones de corrección:
 - Poner en cuarentena un archivo
@@ -111,8 +111,8 @@ Los niveles de automatización afectan a si determinadas acciones de corrección
 |**Semi: requerir aprobación para la corrección de carpetas principales** |Se alcanza un veredicto *de Sospechoso* para obtener una prueba. <br/><br/>Las acciones de corrección están pendientes de aprobación.  |[Aprobar (o rechazar) acciones pendientes](#review-pending-actions).|
 |**Semi: requerir aprobación para la corrección de carpetas no temporales** |Se alcanza un veredicto de malintencionado para obtener una prueba.  <br/><br/>Si el artefacto es un archivo o ejecutable que no está en una carpeta temporal, como la carpeta de descargas del usuario o la carpeta temporal, las acciones de corrección están pendientes de aprobación. <br/><br/>Si el artefacto es un archivo o ejecutable *que se encuentra* en una carpeta temporal, las acciones de corrección se toman automáticamente.  |1. [Aprobar (o rechazar) acciones pendientes](#review-pending-actions)<br/><br/>2. [Revisar las acciones completadas](#review-completed-actions)  |
 |**Semi: requerir aprobación para la corrección de carpetas no temporales** |Se alcanza un veredicto *de Sospechoso* para obtener una prueba. <br/><br/>Las acciones de corrección están pendientes de aprobación. |[Aprobar (o rechazar) acciones pendientes](#review-pending-actions)  | 
-|Cualquiera de los **niveles de automatización** completa **o** semi |Un veredicto *de No se han encontrado amenazas* se alcanza para obtener una prueba. <br/><br/>No se han realizado acciones de corrección y no hay ninguna acción pendiente de aprobación. |[Ver detalles y resultados de las investigaciones automatizadas](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
-|**Sin respuesta automatizada** (no recomendada)|No se ejecutan investigaciones automatizadas, por lo que no se alcanzan los veredictos y no se toman medidas de corrección ni se espera su aprobación. |[Considera la posibilidad de configurar o cambiar los grupos de dispositivos para usar **la automatización** completa **o** semi](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) |
+|Cualquiera de los **niveles de automatización** completa **o** semi |Un veredicto *de No se han encontrado amenazas* se alcanza para obtener una prueba. <br/><br/>No se han realizado acciones de corrección y no hay ninguna acción pendiente de aprobación. |[Ver detalles y resultados de las investigaciones automatizadas](/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
+|**Sin respuesta automatizada** (no recomendada)|No se ejecutan investigaciones automatizadas, por lo que no se alcanzan los veredictos y no se toman medidas de corrección ni se espera su aprobación. |[Considera la posibilidad de configurar o cambiar los grupos de dispositivos para usar **la automatización** completa **o** semi](/microsoft-365/security/defender-endpoint/machine-groups) |
 
 En Microsoft Defender para endpoint, se realiza un seguimiento de todos los veredictos en el [Centro de acciones](auto-investigation-action-center.md#new-a-unified-action-center).
 
@@ -122,6 +122,6 @@ En Microsoft Defender para endpoint, se realiza un seguimiento de todos los vere
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre las investigaciones automatizadas](automated-investigations.md)

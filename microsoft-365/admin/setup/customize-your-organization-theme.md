@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Aprende a cambiar el tema predeterminado de la parte superior de la barra de navegación en Microsoft 365 y personalízalo para que coincida con el logotipo o color de tu empresa.
-ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809052"
+ms.locfileid: "52841311"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el Microsoft 365 de la organización
 
@@ -82,20 +82,13 @@ Puede crear hasta cuatro temas de grupo adicionales.
 
 En la **página Logotipos,** puede agregar los logotipos y especificar la dirección URL a la que navegarán los usuarios cuando seleccionen el logotipo.
 
-- **Logotipo predeterminado:** agregue una ubicación URL que apunta al logotipo. Asegúrese de que la dirección URL usa HTTPS y de que la imagen tiene al menos 200 x 30 píxeles. El logotipo predeterminado puede estar en formato JPG, PNG, GIF o SVG.
+- **Logotipo predeterminado:** agregue una ubicación URL que apunta al logotipo. Asegúrese de que la dirección URL usa HTTPS. Si va a cargar un logotipo, asegúrese de que es inferior a 10 kb. El logotipo predeterminado puede estar en formato JPG, PNG, GIF o SVG. En el caso de las imágenes SVG, se cambiarán el tamaño para que se ajusten verticalmente a 24 píxeles. Las imágenes JPG, PNG y GIF se escalarán para que se ajusten a 200 x 48 píxeles.
 - **Logotipo alternativo:** agregue una ubicación URL que apunta al logotipo. El logotipo alternativo debe optimizarse para su uso en Office temas oscuros. Los mismos requisitos que el logotipo predeterminado.
-- **Logotipo predeterminado pequeño:** agregue una ubicación URL que apunta al logotipo. La imagen debe tener al menos 48 x 48 píxeles. Puedes escalar esta imagen para que se ajuste a dispositivos más pequeños o móviles.
-- **Logotipo alternativo pequeño:** agregue una ubicación URL que apunta al logotipo. Esta imagen tiene los mismos requisitos que el logotipo predeterminado pequeño.
 - **Vínculo Al hacer clic:** agregue una ubicación URL que apunta al logotipo. Puede usar el logotipo como un vínculo a cualquier recurso de la compañía, por ejemplo, el sitio web de su empresa.
 
 Seleccione **Guardar** para guardar los cambios.
 
 Puedes quitar los logotipos en cualquier momento. Solo tiene que volver a la **página Logotipos** y seleccione **Quitar**.
-
-:::image type="content" source="../../media/default-theme-logos.png" alt-text="Captura de pantalla: pestaña Logotipos que muestra el logotipo de tema predeterminado para su organización":::
-
-> [!NOTE]
-> De forma predeterminada, primero mostramos selecciones de logotipo que la mayoría de las organizaciones usan. Para ver todas las selecciones de logotipo, vaya a la parte inferior de la lista y seleccione **Ver opciones avanzadas.**
   
 ## <a name="colors-choose-theme-colors"></a>Colores: elegir colores del tema
 
@@ -109,7 +102,7 @@ En la **página Colores,** puede establecer los colores predeterminados y elegir
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores predeterminados del tema para su organización":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mi organización ya tiene un tema para todos los empleados. ¿Cómo cambiará esto?
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: d4b0751938b66cc22dd59e2e7035077c5ef59ff9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: e52471e1b3e9ee3a410de493b536f9d360d60624
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274825"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844447"
 ---
 # <a name="overview-of-automated-investigations"></a>Información general sobre las investigaciones automatizadas
 
@@ -72,12 +72,12 @@ A medida que se desencadenan las alertas y se ejecuta una investigación automat
 
 A medida que se alcanzan los veredictos, las investigaciones automatizadas pueden dar lugar a una o más acciones de corrección. Entre los ejemplos de acciones de corrección se incluyen el envío de un archivo a la cuarentena, la detención de un servicio, la eliminación de una tarea programada y mucho más. Para obtener más información, vea [Acciones de corrección](manage-auto-investigation.md#remediation-actions).  
 
-Según el nivel [de](automation-levels.md) automatización establecido para su organización, así como otras opciones de configuración de seguridad, las acciones de corrección pueden producirse automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. La configuración de seguridad adicional que puede afectar a la corrección automática incluye [la protección de aplicaciones potencialmente no deseadas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA). 
+Según el nivel [de](automation-levels.md) automatización establecido para su organización, así como otras opciones de configuración de seguridad, las acciones de corrección pueden producirse automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. La configuración de seguridad adicional que puede afectar a la corrección automática incluye [la protección de aplicaciones potencialmente no deseadas](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA). 
 
-Todas las acciones de corrección, ya sean pendientes o completadas, se realiza un seguimiento en el [Centro de acciones.](auto-investigation-action-center.md) Si es necesario, el equipo de operaciones de seguridad puede deshacer una acción de corrección. Para obtener más información, vea [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation).
+Todas las acciones de corrección, ya sean pendientes o completadas, se realiza un seguimiento en el [Centro de acciones.](auto-investigation-action-center.md) Si es necesario, el equipo de operaciones de seguridad puede deshacer una acción de corrección. Para obtener más información, vea [Review and approve remediation actions following an automated investigation](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Consulte la nueva página de investigación unificada en el Centro de seguridad de Microsoft 365. Para obtener más información, vea [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Consulte la nueva página de investigación unificada en el centro Microsoft 365 seguridad. Para obtener más información, vea [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 
 ## <a name="requirements-for-air"></a>Requisitos para AIR
@@ -86,9 +86,9 @@ Su organización debe tener Defender para endpoint (consulte [Requisitos mínimo
 
 Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - Windows Server 2019
-- Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)o posterior
+- Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) o posterior
 - Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)o posterior
-- Windows 10, versión [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) o posterior
+- Windows 10, versión [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) o posterior
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -96,8 +96,8 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Protección de LA PUA](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Investigación y respuesta automatizadas en Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Protección de LA PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)
+- [Investigación y respuesta automatizadas en Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1d8f4452273047684a30db3b18d1281f40f46378
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0b52b6f9b457dbe1a5984c3d68c7077f7037d498
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903303"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845083"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Investigar incidentes en Microsoft Defender para endpoint
 
@@ -83,7 +83,7 @@ Cada una de las entidades analizadas se marcará como infectado, corregido o sos
 Microsoft Defender para endpoint agrega la información de amenazas en un incidente para que pueda ver los patrones y correlaciones que vienen desde varios puntos de datos. Puede ver dicha correlación a través del gráfico de incidentes.
 
 ### <a name="incident-graph"></a>Gráfico de incidentes
-Graph **cuenta** la historia del ataque de ciberseguridad. Por ejemplo, muestra cuál era el punto de entrada, qué indicador de riesgo o actividad se observó en qué dispositivo. etc.
+El **Graph** cuenta la historia del ataque de ciberseguridad. Por ejemplo, muestra cuál era el punto de entrada, qué indicador de riesgo o actividad se observó en qué dispositivo. etc.
 
 ![Imagen del gráfico de incidentes](images/atp-incident-graph-tab.png)
 
@@ -92,6 +92,6 @@ Puede hacer clic en los círculos del gráfico de incidentes para ver los detall
 ![Imagen de los detalles del incidente](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Cola de incidentes](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [Investigar incidentes en Microsoft Defender para endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-incidents)
-- [Administrar Microsoft Defender para incidentes de punto de conexión](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-incidents)
+- [Cola de incidentes](/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Investigar incidentes en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/investigate-incidents)
+- [Administrar Microsoft Defender para incidentes de punto de conexión](/microsoft-365/security/defender-endpoint/manage-incidents)

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: ba206002415fcd4ae968cc88563136399b78f435
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6d453a8b6e5c4947c0fb03131c539b083227c28a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274780"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844651"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en capacidades automatizadas de investigación y corrección
 
@@ -52,7 +52,7 @@ En la tabla siguiente se describe cada nivel de automatización y cómo funciona
 |**Semi: requerir aprobación para cualquier corrección** <br/>(también denominada *semiauto* automatización )| Con este nivel de semi automatización, se requiere la aprobación para *cualquier* acción de corrección. Estas acciones pendientes se pueden ver y aprobar en el [Centro de acciones](auto-investigation-action-center.md), en la **pestaña** Pendiente.<br/><br/>*Este nivel de semi automatización está seleccionado de forma predeterminada para los inquilinos que se crearon antes del 16 de agosto de 2020 con Microsoft Defender para endpoint, sin que se haya definido ningún grupo de dispositivos.*|
 |**Semi: requerir aprobación para la corrección de carpetas principales** <br/>(también un tipo de *semi automatización)*  | Con este nivel de semiautomización, se requiere la aprobación para las acciones de corrección necesarias en archivos o ejecutables que se encuentran en carpetas principales. Las carpetas principales incluyen directorios del sistema operativo, como **el Windows** ( `\windows\*` ).<br/><br/>Las acciones de corrección se pueden realizar automáticamente en archivos o archivos ejecutables que se encuentran en otras carpetas (no principales). <br/><br/>Las acciones pendientes de archivos o ejecutables en carpetas principales se pueden ver y aprobar en el [Centro](auto-investigation-action-center.md)de acciones , en la **pestaña** Pendiente. <br/><br/>Las acciones realizadas en archivos o ejecutables de otras carpetas se pueden ver en el Centro de acciones [,](auto-investigation-action-center.md)en la **pestaña** Historial. |
 |**Semi: requerir aprobación para la corrección de carpetas no temporales** <br/>(también un tipo de *semi automatización)*| Con este nivel de semiautomización, se requiere la aprobación para las acciones de corrección necesarias en archivos o ejecutables que *no* se encuentran en carpetas temporales. <br/><br/>Las carpetas temporales pueden incluir los siguientes ejemplos: <br/>- `\users\*\appdata\local\temp\*`<br/>- `\documents and settings\*\local settings\temp\*` <br/>- `\documents and settings\*\local settings\temporary\*`<br/>- `\windows\temp\*`<br/>- `\users\*\downloads\*`<br/>- `\program files\` <br/>- `\program files (x86)\*`<br/>- `\documents and settings\*\users\*`<br/><br/>Las acciones de corrección se pueden realizar automáticamente en archivos o archivos ejecutables que se encuentran en carpetas temporales. <br/><br/>Las acciones pendientes de archivos o ejecutables que no están en carpetas temporales se pueden ver y aprobar en el Centro de [acciones,](auto-investigation-action-center.md)en la **pestaña** Pendiente.<br/><br/>Las acciones realizadas en archivos o ejecutables en carpetas temporales se pueden ver y aprobar en el Centro de acciones [,](auto-investigation-action-center.md)en la **pestaña** Historial.   |
-|**Sin respuesta automatizada** <br/>(también se conoce como *sin automatización*) | Sin automatización, la investigación automatizada no se ejecuta en los dispositivos de la organización. Como resultado, no se toman medidas de corrección ni están pendientes como resultado de una investigación automatizada. Sin embargo, otras características [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)de protección contra amenazas, como la protección contra aplicaciones potencialmente no deseadas, pueden estar en vigor, en función de cómo se configuren el antivirus y las características de protección de próxima generación.<br/><br/>***No se *recomienda usar* la opción sin** automatización, ya que reduce la posición de seguridad de los dispositivos de la organización. [Considere la posibilidad de configurar el nivel de automatización en automatización completa (o](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups)al menos semi automatización) *. |
+|**Sin respuesta automatizada** <br/>(también se conoce como *sin automatización*) | Sin automatización, la investigación automatizada no se ejecuta en los dispositivos de la organización. Como resultado, no se toman medidas de corrección ni están pendientes como resultado de una investigación automatizada. Sin embargo, otras características [](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)de protección contra amenazas, como la protección contra aplicaciones potencialmente no deseadas, pueden estar en vigor, en función de cómo se configuren el antivirus y las características de protección de próxima generación.<br/><br/>***No se *recomienda usar* la opción sin** automatización, ya que reduce la posición de seguridad de los dispositivos de la organización. [Considere la posibilidad de configurar el nivel de automatización en automatización completa (o](/microsoft-365/security/defender-endpoint/machine-groups)al menos semi automatización) *. |
 
 ## <a name="important-points-about-automation-levels"></a>Puntos importantes sobre los niveles de automatización
 
@@ -62,10 +62,10 @@ En la tabla siguiente se describe cada nivel de automatización y cómo funciona
 
 - Si el equipo de seguridad ha definido grupos de dispositivos con un nivel de automatización, la nueva configuración predeterminada que se está implementando no cambia esa configuración. 
 
-- Puedes mantener la configuración de automatización predeterminada o cambiarla según tus necesidades organizativas. Para cambiar la configuración, [establezca el nivel de automatización](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups).
+- Puedes mantener la configuración de automatización predeterminada o cambiarla según tus necesidades organizativas. Para cambiar la configuración, [establezca el nivel de automatización](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-- [Visitar el Centro de acciones](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
+- [Visitar el Centro de acciones](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)

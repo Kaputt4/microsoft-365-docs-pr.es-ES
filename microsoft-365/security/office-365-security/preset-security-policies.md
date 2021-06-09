@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en todas las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771230"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822291"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -105,7 +105,7 @@ En otras palabras,  la configuración de la  directiva de protección estricta i
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el centro Microsoft 365 seguridad en <https://security.microsoft.com/> . Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
+- Abra el centro Microsoft 365 seguridad en <https://security.microsoft.com> . Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -119,7 +119,7 @@ En otras palabras,  la configuración de la  directiva de protección estricta i
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Usar el centro de seguridad para asignar directivas de seguridad preestablecidas a los usuarios
 
-1. En el centro de seguridad, vaya a **Correo electrónico & directivas** de \> **colaboración & reglas** de amenazas \>  \> **preestablecidas directivas de seguridad**.
+1. En el centro de seguridad, vaya a Correo electrónico **&** directivas de colaboración & Reglas directivas de amenazas Plantilla sección Directivas de seguridad preestablecidas \>  \>  \>  \> .
 
 2. En **Protección estándar o** Protección **estricta,** haga clic **en Editar**.
 

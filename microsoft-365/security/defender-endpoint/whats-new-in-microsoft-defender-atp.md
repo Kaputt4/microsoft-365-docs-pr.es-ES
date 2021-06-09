@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 28d956e11b4ea26cbc816c4c3c0d915ec18c5810
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782974"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844195"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -43,7 +43,7 @@ Para obtener más información sobre las características de vista previa, vea [
 > Fuente RSS: recibe una notificación cuando se actualiza esta página copiando y pegando la siguiente dirección URL en el lector de fuentes: 
 > 
 > ```https
-> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 ## <a name="march-2021"></a>Marzo de 2021
@@ -146,7 +146,7 @@ Para obtener más información sobre las características de vista previa, vea [
 
 
 ## <a name="october-2018"></a>Octubre de 2018
-- [Reglas de reducción de la superficie expuesta a ataques](attack-surface-reduction.md)<BR>Todas las reglas de reducción de superficie de ataque ahora son compatibles Windows Server 2019.
+- [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)<BR>Todas las reglas de reducción de superficie de ataque ahora son compatibles Windows Server 2019.
 
 - [Acceso controlado a carpetas](enable-controlled-folders.md)<BR> El acceso controlado a carpetas ahora es compatible Windows Server 2019.
 
@@ -178,7 +178,7 @@ Threat Analytics es un conjunto de informes interactivos publicados por el equip
 - [Búsqueda avanzada de amenazas](advanced-hunting-overview.md) <BR>
 Consulta datos con búsqueda avanzada en Microsoft Defender para endpoint.
 
-- [Reglas de reducción de la superficie expuesta a ataques](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
+- [Reglas de la reducción de la superficie expuesta a ataques](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
     Nuevas reglas de reducción de superficie de ataque: 
   - Usar protección avanzada contra ransomware
   - Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)

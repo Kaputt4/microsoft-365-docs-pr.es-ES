@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8f589da32ae72383bbe2da7624c9bb846265679
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 26695df0e34c0e06adc4f58acf3fea83122c1982
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809339"
+ms.locfileid: "52844483"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Crear un proceso de implementación gradual personalizado para actualizaciones de Microsoft Defender
 
@@ -42,7 +42,7 @@ Para crear su propio proceso de implementación gradual personalizado para actua
 
 En la tabla siguiente se enumeran las opciones de directiva de grupo disponibles para configurar canales de actualización:
 
-| Título de configuración  | Description  | Ubicación  |
+| Título de configuración  | Descripción  | Ubicación  |
 |-|-|-|
 | Seleccionar el canal de lanzamiento de actualización mensual de la plataforma gradual de Microsoft Defender  | Habilite esta directiva para especificar cuándo los dispositivos reciben actualizaciones de la plataforma de Microsoft Defender durante el lanzamiento gradual mensual. Canal beta: los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba (manuales) y un número limitado de dispositivos.  <br><br>  Canal actual (versión preliminar): los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual mensual. Sugerido para entornos de preproducción/validación.  <br><br>  Canal actual (por fases): se ofrecerán actualizaciones a los dispositivos después del ciclo de lanzamiento gradual mensual. Se sugiere aplicar a una parte pequeña y representativa de la población de producción (~10%).  <br><br>  Canal actual (amplio): los dispositivos solo se ofrecerán actualizaciones una vez completado el ciclo de lanzamiento gradual. Se recomienda aplicar a un amplio conjunto de dispositivos de la población de producción (~10-100%).  <br><br>   Si deshabilitas o no configuras esta directiva, el dispositivo se mantendrá actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos.  | Windows Componentes\Antivirus de Microsoft Defender  |
 | Seleccionar el canal de lanzamiento de actualización mensual del motor de Microsoft Defender gradual  | Habilite esta directiva para especificar cuándo los dispositivos reciben actualizaciones del motor de Microsoft Defender durante el lanzamiento gradual mensual.  <br><br>  Canal beta: los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba (manuales) y un número limitado de dispositivos.  <br><br>  Canal actual (versión preliminar): los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual mensual. Sugerido para entornos de preproducción/validación.  <br><br>  Canal actual (por fases): se ofrecerán actualizaciones a los dispositivos después del ciclo de lanzamiento gradual mensual. Se sugiere aplicar a una parte pequeña y representativa de la población de producción (~10%).  <br><br>  Canal actual (amplio): los dispositivos solo se ofrecerán actualizaciones una vez completado el ciclo de lanzamiento gradual. Se recomienda aplicar a un amplio conjunto de dispositivos de la población de producción (~10-100%).  <br><br>  Si deshabilitas o no configuras esta directiva, el dispositivo se mantendrá actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos.  | Windows Componentes\Antivirus de Microsoft Defender  |
@@ -54,7 +54,7 @@ En la tabla siguiente se enumeran las opciones de directiva de grupo disponibles
 > [!NOTE]
 > Se publicará una plantilla ADMX de Defender actualizada junto con la versión 21H2 de Windows 10.
 
-Puede usar la [directiva de grupo](https://docs.microsoft.com/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)para configurar y administrar Antivirus de Microsoft Defender en los puntos de   conexión.
+Puede usar la [directiva de grupo](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)para configurar y administrar Antivirus de Microsoft Defender en los puntos de   conexión.
 
 En general, puede usar el siguiente procedimiento para configurar o cambiar la configuración Antivirus de Microsoft Defender de directiva de grupo:
 
@@ -74,7 +74,7 @@ En general, puede usar el siguiente procedimiento para configurar o cambiar la c
 
 Siga las instrucciones del siguiente vínculo para crear una directiva personalizada en Intune:
 
-[Agregar configuración personalizada para Windows 10 dispositivos en Microsoft Intune: Azure \| Microsoft Docs](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)
+[Agregar configuración personalizada para Windows 10 dispositivos en Microsoft Intune: Azure \| Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
 
 ## <a name="powershell"></a>PowerShell
 
@@ -94,4 +94,4 @@ Ejemplo:
 
 Se `Set-MpPreference -PlatformUpdatesChannel Beta` usa para configurar las actualizaciones de la plataforma para que lleguen desde el canal beta.
 
-Para obtener más información sobre los parámetros y cómo configurarlos, vea [Set-MpPreference (Defender) | Microsoft Docs](https://docs.microsoft.com/powershell/module/defender/set-mppreference?view=windowsserver2019-ps).
+Para obtener más información sobre los parámetros y cómo configurarlos, vea [Set-MpPreference (Defender) | Microsoft Docs](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps).

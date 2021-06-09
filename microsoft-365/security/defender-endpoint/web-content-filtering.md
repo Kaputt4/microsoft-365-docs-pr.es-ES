@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302069"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822327"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -57,15 +57,15 @@ La protección de red proporciona la experiencia de bloqueo de los exploradores 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Antes de probar esta característica, asegúrese de que tiene los siguientes requisitos:
+Antes de probar esta característica, asegúrese de cumplir los siguientes requisitos:
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5 complemento o la licencia independiente de Microsoft Defender para endpoint. 
 - Acceso a Centro de seguridad de Microsoft Defender portal ( https://securitycenter.windows.com) .
-- Dispositivos que Windows 10 actualización de aniversario (versión 1607) o posterior con la actualización más reciente de MoCAMP.
+- Dispositivos que Windows 10 actualización de aniversario (versión 1607) o posterior con la última actualización del motor antimalware de Microsoft Defender.
 
 ## <a name="data-handling"></a>Control de datos
 
-Seguiremos la región que haya elegido usar como parte de la configuración de administración de datos de [Microsoft Defender para endpoint.](data-storage-privacy.md) Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
+Los datos se almacenan en la región seleccionada como parte de la configuración de administración de datos de [Microsoft Defender para](data-storage-privacy.md)endpoint. Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
 
 ## <a name="turn-on-web-content-filtering"></a>Activar el filtrado de contenido web
 
@@ -91,14 +91,10 @@ Para agregar una nueva directiva:
 
 5. Revise el resumen y guarde la directiva. La actualización de la directiva puede tardar hasta 2 horas en aplicarse a los dispositivos seleccionados.
 
-> [!TIP]
-> Puedes implementar una directiva sin seleccionar ninguna categoría en un grupo de dispositivos. Esta acción creará una directiva de solo auditoría para ayudarle a comprender el comportamiento de los usuarios antes de crear una directiva de bloqueo.
-
->[!NOTE]
->Si quita una directiva o cambia los grupos de dispositivos al mismo tiempo, esto puede provocar un retraso en la implementación de directivas.
-
->[!IMPORTANT]
->El bloqueo de la categoría "Uncategorized" puede provocar resultados inesperados y no deseados.  
+> [!NOTE]
+> - Puedes implementar una directiva sin seleccionar ninguna categoría en un grupo de dispositivos. Esta acción creará una directiva de solo auditoría para ayudarle a comprender el comportamiento de los usuarios antes de crear una directiva de bloqueo.
+> - Si quita una directiva o cambia los grupos de dispositivos al mismo tiempo, esto puede provocar un retraso en la implementación de directivas.
+> - El bloqueo de la categoría "Uncategorized" puede provocar resultados inesperados y no deseados.  
 
 ### <a name="allow-specific-websites"></a>Permitir sitios web específicos
 
@@ -120,7 +116,7 @@ Se abrirá un panel donde puede seleccionar la prioridad y agregar detalles adic
 
 ## <a name="web-content-filtering-cards-and-details"></a>Detalles y tarjetas de filtrado de contenido web
 
-Seleccione **Informes > protección web para** ver tarjetas con información sobre el filtrado de contenido web y la protección contra amenazas web. Las siguientes tarjetas proporcionan información resumida sobre el filtrado de contenido web.
+Seleccione **Protección**  >  **web de informes** para ver tarjetas con información sobre el filtrado de contenido web y la protección contra amenazas web. Las siguientes tarjetas proporcionan información resumida sobre el filtrado de contenido web.
 
 ### <a name="web-activity-by-category"></a>Actividad web por categoría
 
@@ -166,9 +162,4 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 - Actualmente, los informes de filtrado de contenido web están limitados a mostrar los 5000 registros principales. Por ejemplo, el informe Dominios solo mostrará un máximo de los 5000 dominios principales para una consulta de filtro determinada, si procede. 
 
-## <a name="related-topics"></a>Temas relacionados
 
-- [Introducción a protección web](web-protection-overview.md)
-- [Protección contra amenazas web](web-threat-protection.md)
-- [Supervisar la seguridad web](web-protection-monitoring.md)
-- [Responder a amenazas web](web-protection-response.md)

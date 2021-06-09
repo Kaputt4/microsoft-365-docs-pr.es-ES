@@ -1,7 +1,7 @@
 ---
 title: Usar Microsoft Search para buscar temas en Temas de Microsoft Viva
-ms.author: efrene
-author: efrene
+ms.author: chuckedmonson
+author: chucked
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Obtenga información sobre cómo puede buscar temas en Microsoft Viva.
-ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795999"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844737"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Usar Microsoft Search para buscar temas en Temas de Microsoft Viva
 
@@ -23,7 +23,7 @@ Aunque los usuarios de Viva Topics pueden encontrar temas a través de temas des
 
 ## <a name="topic-answer"></a>Respuesta al tema
 
-Cuando busque un tema específico en Microsoft Search (por ejemplo, "Saturno"), si existe y se encuentra un tema, mostrará el resultado en el formato de sugerencia Respuestas.
+Cuando se busca un tema específico en Microsoft Search (por ejemplo, "Saturn"), si existe y se encuentra un tema, se mostrará el resultado en el formato de sugerencia de respuesta del tema.
 
 La respuesta al tema mostrará:
 - Nombre del tema
@@ -56,4 +56,4 @@ Para los usuarios que buscan información sobre cómo reservar un viaje de traba
  
 ### <a name="search-results-priority"></a>Prioridad de resultados de búsqueda 
 
-En la experiencia de búsqueda del usuario, cuando un usuario busca un término como "viajes", aparecerá un marcador delante de un tema, si hay un marcador disponible.
+En la experiencia de búsqueda del usuario, cuando un usuario busca un término como "viajes", aparecerá un marcador en lugar de un tema, si hay un marcador disponible.

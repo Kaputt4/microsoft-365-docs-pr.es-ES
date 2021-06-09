@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba48adcf93c5b768b2280729b33a1a7d361919cb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074232"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844087"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -60,20 +60,20 @@ Algunas acciones requieren ciertos permisos. En la tabla siguiente se describe q
 
 Para obtener más información sobre los roles, vea [Create and manage roles for role-based access control](user-roles.md).
 
-## <a name="stop-and-quarantine-files-in-your-network"></a>Detener y poner en cuarentena los archivos de la red
+## <a name="stop-and-quarantine-files-in-your-network"></a>Detener y poner en cuarentena archivos de la red
 
 Puede contener un ataque en su organización al detener el proceso malintencionado y anular el archivo donde se observó.
 
 > [!IMPORTANT]
 > Solo puede realizar esta acción si:
 >
-> - El dispositivo en el que estás tomando la acción está ejecutando Windows 10, versión 1703 o posterior
+> - El dispositivo en el que estás llevando a Windows 10, versión 1703 o posterior
 > - El archivo no pertenece a editores de terceros de confianza o no está firmado por Microsoft
-> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, vea [Compatibilidad de Antivirus de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 La **acción Detener y poner en** cuarentena archivo incluye la detención de procesos en ejecución, la cuarentena de los archivos y la eliminación de datos persistentes, como las claves del Registro.
 
-Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o posterior, donde el archivo se observó en los últimos 30 días.
+Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o posterior, donde se observó el archivo en los últimos 30 días.
 
 > [!NOTE]
 > Podrás restaurar el archivo desde la cuarentena en cualquier momento.
@@ -116,7 +116,7 @@ En la escala de tiempo del dispositivo, se agrega un nuevo evento para cada disp
 
 Se muestra una advertencia antes de implementar la acción para los archivos que se usan ampliamente en toda la organización. Es para validar que la operación está diseñada.
 
-## <a name="restore-file-from-quarantine"></a>Restaurar archivo desde cuarentena
+## <a name="restore-file-from-quarantine"></a>Restaurar archivo de la cuarentena
 
 Puede revertir y quitar un archivo de la cuarentena si ha determinado que está limpio después de una investigación. Ejecute el siguiente comando en cada dispositivo en el que se ha puesto en cuarentena el archivo.
 
@@ -140,9 +140,9 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 > [!IMPORTANT]
 > Es posible que un archivo que se haya puesto en cuarentena como una amenaza de red potencial no pueda recuperarse. Si un usuario intenta restaurar el archivo después de la cuarentena, es posible que ese archivo no sea accesible. Esto puede deberse a que el sistema ya no tiene credenciales de red para tener acceso al archivo. Normalmente, esto es el resultado de un inicio de sesión temporal en un sistema o carpeta compartida y los tokens de acceso expiraron.
 
-## <a name="download-or-collect-file"></a>Descargar o recopilar archivo
+## <a name="download-or-collect-file"></a>Descargar o copiar archivos
 
-Al seleccionar **Descargar archivo de** las acciones de respuesta, puede descargar un archivo .zip local protegido con contraseña que contenga el archivo. Aparecerá un flyout donde puede registrar un motivo para descargar el archivo y establecer una contraseña.
+Si selecciona **Descargar archivo de** las acciones de respuesta, puede descargar un archivo local protegido con contraseña .zip que contenga el archivo. Aparecerá un flyout donde puede registrar un motivo para descargar el archivo y establecer una contraseña.
 
 De forma predeterminada, no podrá descargar archivos que estén en cuarentena.
 
@@ -160,11 +160,11 @@ Impedir la propagación posterior de un ataque en la organización mediante la p
 
 > [!IMPORTANT]
 >
-> - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender y la protección entregada en la nube está habilitada. Para obtener más información, vea [Manage cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender y la protección entregada en la nube está habilitada. Para obtener más información, vea [Manage cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - La versión del cliente Antimalware debe ser 4.18.1901.x o posterior.
-> - Esta característica está diseñada para evitar que el malware sospechoso (o los archivos potencialmente malintencionados) se descarguen de la web. Actualmente es compatible con archivos ejecutables portátiles (PE), incluidos los archivos _.exe_ y _.dll._ La cobertura se extenderá con el tiempo.
-> - Esta acción de respuesta está disponible para dispositivos con Windows 10, versión 1703 o posterior.
+> - Esta característica está diseñada para evitar que el malware sospechoso (o los archivos potencialmente malintencionados) se descarguen de la web. Actualmente es compatible con archivos ejecutables portátiles (PE), incluidos _.exe_ archivos _.dll_ archivos. La cobertura se extenderá con el tiempo.
+> - Esta acción de respuesta está disponible para dispositivos Windows 10 versión 1703 o posterior.
 > - La función permitir o bloquear no se puede realizar en archivos si la clasificación del archivo existe en la memoria caché del dispositivo antes de la acción permitir o bloquear.
 
 > [!NOTE]
@@ -174,7 +174,7 @@ Impedir la propagación posterior de un ataque en la organización mediante la p
 
 ### <a name="enable-the-block-file-feature"></a>Habilitar la característica de archivo de bloqueo
 
-Para empezar a bloquear archivos, primero debe activar [la característica Bloquear **o**](advanced-features.md) permitir en Configuración.
+Para empezar a bloquear archivos, primero debe activar la característica [ **Bloquear**](advanced-features.md) o permitir en Configuración.
 ### <a name="allow-or-block-file"></a>Permitir o bloquear archivo
 
 Cuando agregas un hash de indicador para un archivo, puedes elegir generar una alerta y bloquear el archivo siempre que un dispositivo de la organización intente ejecutarlo.
@@ -185,15 +185,15 @@ Consulta [Administrar indicadores para](manage-indicators.md) obtener más infor
 
 Para detener el bloqueo de un archivo, quite el indicador. Puede hacerlo a través de la acción **Editar indicador** en la página de perfil del archivo. Esta acción estará visible en la  misma posición que la acción Agregar indicador, antes de agregar el indicador.
 
-También puede editar indicadores desde la página **Configuración,** en **Indicadores**  >  **de reglas**. Los indicadores se enumeran en esta área mediante el hash de su archivo.
+También puede editar indicadores desde la **página Configuración,** en   >  **Indicadores de reglas**. Los indicadores se enumeran en esta área mediante el hash de su archivo.
 
 ## <a name="consult-a-threat-expert"></a>Consultar a un experto en amenazas
 
-Consulta a un experto en amenazas de Microsoft para obtener más información sobre un dispositivo potencialmente en peligro o dispositivos que ya están en peligro. Los expertos en amenazas de Microsoft se comprometen directamente desde el Centro de seguridad de Microsoft Defender para obtener una respuesta rápida y precisa. Los expertos proporcionan información sobre un dispositivo potencialmente comprometido y te ayudan a comprender las amenazas complejas y las notificaciones de ataque dirigidas. También pueden proporcionar información sobre las alertas o un contexto de inteligencia de amenazas que se ve en el panel del portal.
+Consulta a un experto en amenazas de Microsoft para obtener más información sobre un dispositivo potencialmente en peligro o dispositivos que ya están en peligro. Expertos en amenazas de Microsoft se contratan directamente desde dentro del Centro de seguridad de Microsoft Defender para una respuesta rápida y precisa. Los expertos proporcionan información sobre un dispositivo potencialmente comprometido y te ayudan a comprender las amenazas complejas y las notificaciones de ataque dirigidas. También pueden proporcionar información sobre las alertas o un contexto de inteligencia de amenazas que se ve en el panel del portal.
 
-Consulte [Consulte a un experto en amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) para obtener más información.
+Consulte [Consulte a un experto en amenazas de Microsoft](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) para obtener más información.
 
-## <a name="check-activity-details-in-action-center"></a>Comprobar los detalles de la actividad en el Centro de actividades
+## <a name="check-activity-details-in-action-center"></a>Comprobar los detalles de actividad en el Centro de actividades
 
 El **Centro de acciones** proporciona información sobre las acciones realizadas en un dispositivo o archivo. Puede ver los siguientes detalles:
 
@@ -206,12 +206,12 @@ También se muestran todos los demás detalles relacionados, como la fecha y hor
 
 ![Imagen del centro de acción con información](images/action-center-details.png)
 
-## <a name="deep-analysis"></a>Análisis profundo
+## <a name="deep-analysis"></a>Análisis detallado
 
 Las investigaciones de seguridad cibernética suelen desencadenarse mediante una alerta. Las alertas están relacionadas con uno o varios archivos observados que a menudo son nuevos o desconocidos. La selección de un archivo le lleva a la vista de archivos donde puede ver los metadatos del archivo. Para enriquecer los datos relacionados con el archivo, puede enviar el archivo para un análisis profundo.
 
 La característica análisis profundo ejecuta un archivo en un entorno de nube seguro y totalmente instrumentado. Los resultados de análisis profundo muestran las actividades del archivo, los comportamientos observados y los artefactos asociados, como archivos eliminados, modificaciones del Registro y comunicación con ip.
-Actualmente, el análisis profundo admite un amplio análisis de archivos ejecutables portátiles (PE) (incluidos los archivos _.exe_ y _.dll)._
+Actualmente, el análisis profundo admite un amplio análisis de archivos ejecutables portátiles (PE) (incluidos _.exe_ archivos _.dll_ portátil).
 
 El análisis profundo de un archivo tarda varios minutos. Una vez completado el análisis de archivos, la pestaña Análisis profundo se actualizará para mostrar un resumen y la fecha y hora de los últimos resultados disponibles.
 
@@ -224,10 +224,10 @@ Use la característica de análisis profundo para investigar los detalles de cua
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
 
-**Enviar para un análisis** profundo está habilitado cuando el archivo está disponible en la colección de muestras back-end de Defender for Endpoint, o si se observó en un dispositivo Windows 10 que admite el envío a un análisis profundo.
+**Enviar** para análisis profundo está habilitado cuando el archivo está disponible en la colección de muestras back-end de Defender for Endpoint, o si se observó en un dispositivo Windows 10 que admite el envío a un análisis profundo.
 
 > [!NOTE]
-> Solo los archivos de Windows 10 se pueden recopilar automáticamente.
+> Solo los archivos Windows 10 pueden recopilarse automáticamente.
 
 También puedes enviar un ejemplo a través del Portal del Centro de seguridad de [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si  el archivo no se observó en un dispositivo Windows 10 y esperar a que el botón Enviar para análisis profundo esté disponible.
 
@@ -249,12 +249,12 @@ Cuando se recopila el ejemplo, Defender for Endpoint ejecuta el archivo en un en
    ![Solo puede enviar archivos PE en la sección de detalles del archivo](images/submit-file.png)
 
    > [!NOTE]
-   > Solo se admiten archivos PE, incluidos los archivos _.exe_ y _.dll._
+   > Solo se admiten archivos PE, incluidos _.exe_ y _.dll_ archivos.
 
 Se muestra una barra de progreso y proporciona información sobre las distintas etapas del análisis. A continuación, puede ver el informe cuando se haya realizado el análisis.
 
 > [!NOTE]
-> Según la disponibilidad del dispositivo, el tiempo de recolección de muestras puede variar. Hay un tiempo de espera de 3 horas para la colección de muestras. La colección producirá un error y la operación se anulará si no hay informes de dispositivos windows 10 en línea en ese momento. Puede volver a enviar archivos para un análisis profundo para obtener datos nuevos en el archivo.
+> Según la disponibilidad del dispositivo, el tiempo de recolección de muestras puede variar. Hay un tiempo de espera de 3 horas para la colección de muestras. La colección producirá un error y la operación se anulará si no hay informes de dispositivos Windows 10 en línea en ese momento. Puede volver a enviar archivos para un análisis profundo para obtener datos nuevos en el archivo.
 
 ### <a name="view-deep-analysis-reports"></a>Ver informes de análisis profundo
 
@@ -276,7 +276,7 @@ Los detalles proporcionados pueden ayudarle a investigar si hay indicaciones de 
 
 Si encuentra un problema al intentar enviar un archivo, pruebe cada uno de los siguientes pasos de solución de problemas.
 
-1. Asegúrese de que el archivo en cuestión es un archivo PE. Los archivos PE suelen tener _extensiones .exe_ o _.dll_ (aplicaciones o programas ejecutables).
+1. Asegúrese de que el archivo en cuestión es un archivo PE. Los archivos PE suelen _tener.exe_ _o.dll_ (aplicaciones o programas ejecutables).
 2. Asegúrese de que el servicio tiene acceso al archivo, que todavía existe y que no se ha dañado ni modificado.
 3. Espere un poco e intente enviar el archivo de nuevo. La cola puede estar llena o hubo un error de comunicación o conexión temporal.
 4. Si la directiva de colección de ejemplo no está configurada, el comportamiento predeterminado es permitir la colección de muestras. Si está configurado, compruebe que la configuración de directiva permite la colección de muestras antes de enviar el archivo de nuevo. Cuando se configura la colección de ejemplo, compruebe el siguiente valor del Registro:

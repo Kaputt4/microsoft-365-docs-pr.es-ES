@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f77ce94fda63a9e7e8a9484a67a22eeec136d619
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 481a8f15d6a41bda8dc866ce40d98c4f3717223d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935886"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844063"
 ---
 # <a name="troubleshoot-network-protection"></a>Solucionar problemas de protección de red
 
@@ -51,10 +51,10 @@ Hay cuatro pasos para solucionar estos problemas:
 La protección de red solo funcionará en dispositivos con las siguientes condiciones:
 
 >[!div class="checklist"]
-> - Los puntos de conexión ejecutan Windows 10 Pro o Enterprise edition, versión 1709 o posterior.
-> - Los puntos de conexión usan Antivirus de Microsoft Defender como única aplicación de protección antivirus. [Vea lo que sucede cuando usa una solución antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)que no sea de Microsoft .
-> - [La protección en tiempo real](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) está habilitada.
-> - [La protección entregada en la nube](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) está habilitada.
+> - Los puntos de conexión se Windows 10 Pro o Enterprise edición, versión 1709 o posterior.
+> - Los puntos de conexión usan Antivirus de Microsoft Defender como la única aplicación de protección antivirus. [Vea lo que sucede cuando usa una solución antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)que no sea de Microsoft .
+> - [La protección en tiempo real](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) está habilitada.
+> - [La protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) está habilitada.
 > - El modo auditoría no está habilitado. Use [la directiva de](enable-network-protection.md#group-policy) grupo para establecer la regla en **Deshabilitado** (valor: **0**).
 
 ## <a name="use-audit-mode"></a>Usar modo de auditoría
@@ -91,7 +91,7 @@ Para permitir el sitio web que se está bloqueando (falso positivo), agregue su 
 
 Cuando informe de un problema con la protección de red, se le pedirá que recopile y envíe datos de diagnóstico que puedan usar los equipos de soporte técnico e ingeniería de Microsoft para ayudar a solucionar problemas.
 
-1. Abra un símbolo del sistema con privilegios elevados y cambie al Windows Defender:
+1. Abra un símbolo del sistema con privilegios elevados y cambie al Windows Defender directorio:
 
    ```console
    cd c:\program files\windows defender
@@ -120,12 +120,12 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
-Puede configurar la clave del Registro mediante PowerShell, Microsoft Endpoint Manager o la directiva de grupo. Estos son algunos recursos para ayudar:
+Puede configurar la clave del Registro mediante PowerShell, Microsoft Endpoint Manager o directiva de grupo. Estos son algunos recursos para ayudar:
 - [Trabajar con claves del Registro](/powershell/scripting/samples/working-with-registry-keys)
-- [Configurar opciones de cliente personalizadas para Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [Configurar las opciones de cliente personalizadas para Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [Usar la configuración de directiva de grupo para administrar Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Protección de red](network-protection.md)
 - [Evaluar protección de red](evaluate-network-protection.md)

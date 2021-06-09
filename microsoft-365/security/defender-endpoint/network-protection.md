@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b6b664d471e238e2feb1e1aedd100c1299fc5bbe
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861160"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844267"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -33,9 +33,9 @@ ms.locfileid: "51861160"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-La protección de red ayuda a reducir la superficie de ataque de los dispositivos a partir de eventos basados en Internet. Impide que los empleados utilicen cualquier aplicación para tener acceso a dominios peligrosos que pueden hospedar estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad y otro contenido malintencionado en Internet. La protección de red expande el ámbito de [SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) de Microsoft Defender para bloquear todo el tráfico HTTP saliente que intente conectarse a orígenes de baja reputación (según el dominio o el nombre de host).
+La protección de red ayuda a reducir la superficie de ataque de los dispositivos a partir de eventos basados en Internet. Impide que los empleados utilicen cualquier aplicación para tener acceso a dominios peligrosos que pueden hospedar estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad y otro contenido malintencionado en Internet. La protección de red expande el ámbito de [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) para bloquear todo el tráfico HTTP saliente que intente conectarse a orígenes de reputación baja (según el dominio o el nombre de host).
 
-La protección de red se admite en Windows, a partir de Windows 10, versión 1709. La protección de red aún no se admite en otros sistemas operativos, pero la protección web se admite con el nuevo Microsoft Edge basado en Chromium. Para obtener más información, vea [Protección web](web-protection-overview.md).
+La protección de red se admite Windows, empezando por Windows 10, versión 1709. La protección de red aún no se admite en otros sistemas operativos, pero la protección web se admite mediante el nuevo Microsoft Edge según Chromium. Para obtener más información, vea [Protección web](web-protection-overview.md).
 
 La protección de red amplía la protección de [la protección web](web-protection-overview.md) al nivel del sistema operativo. Proporciona funcionalidad de protección web en Edge a otros exploradores compatibles y aplicaciones que no son exploradores. Además, la protección de red proporciona visibilidad y bloqueo de indicadores de peligro (IIC) cuando se usa con detección [y respuesta de extremos.](overview-endpoint-detection-response.md) Por ejemplo, la protección de red funciona con los [indicadores personalizados](manage-indicators.md).
 
@@ -52,11 +52,11 @@ También puede usar el modo [de auditoría para](audit-windows-defender.md) eval
 
 ## <a name="requirements"></a>Requisitos
 
-La protección de red requiere Windows 10 Pro o Enterprise y la protección en tiempo real del Antivirus de Microsoft Defender.
+La protección de red Windows 10 Pro o Enterprise y Antivirus de Microsoft Defender protección en tiempo real.
 
-| Versión de Windows | Microsoft Defender Antivirus |
+| Versión de Windows | Antivirus de Microsoft Defender |
 |:---|:---|
-| Windows 10 versión 1709 o posterior <p>Windows Server 1803 o posterior | [La protección en tiempo real de Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) de Microsoft Defender y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas |
+| Windows 10 versión 1709 o posterior <p>Windows Servidor 1803 o posterior | [Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas |
 
 Después de habilitar los servicios, es posible que deba configurar la red o firewall para permitir las conexiones entre los servicios y los dispositivos (también denominados puntos de conexión).  
 
@@ -76,9 +76,9 @@ DeviceEvents
 | where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en el Visor de eventos de Windows
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos
 
-Puedes revisar el registro de eventos de Windows para ver los eventos que se crean cuando la protección de red bloquea (o audita) el acceso a un dominio o IP malintencionado:
+Puede revisar el registro Windows eventos para ver los eventos que se crean cuando la protección de red bloquea (o audita) el acceso a una IP o dominio malintencionado:
 
 1. [Copie el XML directamente](event-views.md).
 
@@ -92,15 +92,15 @@ Este procedimiento crea una vista personalizada que filtra para mostrar solo los
 | 1125 | Evento cuando la protección de red se dispara en modo auditoría |
 | 1126 | Evento cuando la protección de red se desen llamas en modo de bloqueo |
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Consideraciones para el escritorio virtual de Windows que ejecuta Windows 10 Enterprise Multi-Session
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Consideraciones para Windows escritorio virtual que se Windows 10 Enterprise multi-sesión
 
-Debido a la naturaleza multiusual de Windows 10 Enterprise, ten en cuenta los siguientes puntos:
+Debido a la naturaleza de varios usuarios de Windows 10 Enterprise, tenga en cuenta los siguientes puntos:
 
 1. La protección de red es una característica de todo el dispositivo y no se puede dirigir a sesiones de usuario específicas.
 
 2. Las directivas de filtrado de contenido web también están en todo el dispositivo.
 
-3. Si necesitas diferenciar entre grupos de usuarios, considera la posibilidad de crear asignaciones y grupos de host de Escritorio virtual de Windows independientes.
+3. Si necesita diferenciar entre grupos de usuarios, considere la posibilidad de crear asignaciones Windows grupos de host de Escritorio virtual.
 
 4. Pruebe la protección de red en modo auditoría para evaluar su comportamiento antes de implementarla. 
 
@@ -108,7 +108,7 @@ Debido a la naturaleza multiusual de Windows 10 Enterprise, ten en cuenta los si
 
 ### <a name="alternative-option-for-network-protection"></a>Opción alternativa para la protección de red
 
-Para Windows 10 Enterprise Multi-Session 1909 y versiones 2, que se usan en Windows Virtual Desktop en Azure, la protección de red para Microsoft Edge se puede habilitar mediante el siguiente método:
+Para Windows 10 Enterprise Multi-Session 1909 y versiones 2010, que se usan en Windows Virtual Desktop en Azure, la protección de red para Microsoft Edge puede habilitarse mediante el siguiente método:
 
 1. Use [Activar la protección de red](enable-network-protection.md) y siga las instrucciones para aplicar la directiva.
 

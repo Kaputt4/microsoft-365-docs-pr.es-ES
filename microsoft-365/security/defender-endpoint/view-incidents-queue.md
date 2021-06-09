@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 56fd5aa10cf30e7bdcad213a68430b460e65647c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499938"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844231"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Ver y organizar la cola de Microsoft Defender para incidentes de extremo
 
@@ -53,7 +53,7 @@ En la navegación superior puede:
 ## <a name="sort-and-filter-the-incidents-queue"></a>Ordenar y filtrar la cola de incidentes
 Puede aplicar los siguientes filtros para limitar la lista de incidentes y obtener una vista más centrada.
 
-### <a name="severity"></a>Severity
+### <a name="severity"></a>Gravedad
 
 Gravedad del incidente | Descripción
 :---|:---
@@ -84,8 +84,8 @@ Por ejemplo: *Incidente de varias fases en varios puntos de conexión notificado
 > Los incidentes que existían antes de la implementación de la nomenclatura automática de incidentes conservarán su nombre.
 
 
-## <a name="see-also"></a>Consulta también
-- [Cola de incidentes](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+## <a name="see-also"></a>Consulte también
+- [Cola de incidentes](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)
 

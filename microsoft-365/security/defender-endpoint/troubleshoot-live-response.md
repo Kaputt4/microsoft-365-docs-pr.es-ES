@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 2601001687fc22da98ca3cd81010237d12705ea4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 99a52188dd5f6eca2f8368aa3c114d0bfb950b10
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687416"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844159"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Solucionar problemas de respuesta en directo de Microsoft Defender para puntos de conexión
 
@@ -64,10 +64,10 @@ Si al intentar realizar una acción durante una sesión de respuesta en directo,
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>Retrasos o sesiones de respuesta en directo lentas durante las conexiones iniciales
 La respuesta en directo aprovecha el registro del sensor defender para puntos de conexión con el servicio WNS en Windows. Si tiene problemas de conectividad con la respuesta en directo, confirme los siguientes detalles:
 1. `notify.windows.com` no está bloqueado en el entorno. Para obtener más información, vea [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
-2. WpnService (Windows Push Notifications System Service) no está deshabilitado.
+2. WpnService (Windows del sistema de notificaciones de inserción) no está deshabilitado.
 
 Consulte los artículos siguientes para comprender completamente el comportamiento y los requisitos del servicio WpnService:
-- [Información general Notification Services Windows Push (WNS)](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Configuraciones de proxy y firewall de empresa para admitir el tráfico WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windows Introducción Notification Services inserción (WNS)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Enterprise Configuraciones de firewall y proxy para admitir tráfico de WNS](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Intervalos ip públicos del Servicio de notificaciones de inserción de Microsoft (MPNS)](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

@@ -1,5 +1,5 @@
 ---
-title: Usar permisos básicos para acceder al Centro de seguridad de Microsoft Defender
+title: Use permisos básicos para obtener acceso a Centro de seguridad de Microsoft Defender
 description: Obtenga información sobre cómo usar permisos básicos para obtener acceso al portal de Microsoft Defender para endpoints.
 keywords: asignar roles de usuario, asignar acceso de lectura y escritura, asignar acceso de solo lectura, usuario, roles de usuario, roles
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb5762d2a9e4b62432aba6dacd1033ddc3c7daf2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163676"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844663"
 ---
-# <a name="use-basic-permissions-to-access-the-portal"></a>Usar permisos básicos para obtener acceso al portal
+# <a name="use-basic-permissions-to-access-the-portal"></a>Uso de permisos básicos para acceder al portal
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +38,11 @@ Consulte las instrucciones siguientes para usar la administración de permisos b
 
 Puede usar cualquiera de las siguientes soluciones:
 - Azure PowerShell
-- Azure Portal
+- Portal de Azure
 
 Para el control granular sobre los permisos, [cambie al control de](rbac.md)acceso basado en roles .
 
-## <a name="assign-user-access-using-azure-powershell"></a>Asignar acceso de usuario con Azure PowerShell
+## <a name="assign-user-access-using-azure-powershell"></a>Asignar acceso de usuario mediante Azure PowerShell
 Puede asignar usuarios con uno de los siguientes niveles de permisos:
 - Acceso completo (lectura y escritura)
 - Acceso de solo lectura
@@ -54,7 +54,7 @@ Puede asignar usuarios con uno de los siguientes niveles de permisos:
     > [!NOTE]
     > Debe ejecutar los cmdlets de PowerShell en una línea de comandos con privilegios elevados.
 
-- Conéctese a Azure Active Directory. Para obtener más información, [vea Connect-MsolService](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
+- Conectar a su Azure Active Directory. Para obtener más información, [vea Conectar-MsolService](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
 
 **Acceso completo** <br>
 Los usuarios con acceso completo pueden iniciar sesión, ver toda la información del sistema y resolver alertas, enviar archivos para un análisis profundo y descargar el paquete de incorporación.
@@ -79,12 +79,12 @@ Siga estos pasos para asignar roles de seguridad:
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-Para obtener más información, vea [Agregar o quitar miembros del grupo con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
+Para obtener más información, vea [Add or remove group members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>Asignar acceso de usuario mediante Azure Portal
 
-Para obtener más información, vea Asignar roles de administrador y [no administrador a usuarios con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+Para obtener más información, vea [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 ## <a name="related-topic"></a>Tema relacionado
 
-- [Administrar el acceso al portal mediante RBAC](rbac.md)
+- [Administrar el acceso al portal con RBAC](rbac.md)

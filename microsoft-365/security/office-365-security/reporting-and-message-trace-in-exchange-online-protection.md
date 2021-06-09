@@ -15,12 +15,12 @@ ms.custom:
 description: En este artículo, aprenderá sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online protección contra errores (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae55ded9d907754161813c9f7bfa7eeb14c558a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625034"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841443"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 
@@ -46,11 +46,8 @@ En Microsoft 365 organizaciones con buzones en organizaciones Exchange Online o 
 Consulte los siguientes recursos para obtener más información:
 
 - [Microsoft 365 Informes en el Centro de administración: Microsoft 365 grupos](../../admin/activity-reports/office-365-groups.md)
-
 - [Microsoft 365 Informes en el Centro de administración: actividad de correo electrónico](../../admin/activity-reports/email-activity.md)
-
 - [Microsoft 365 Informes en el Centro de administración: uso de aplicaciones de correo electrónico](../../admin/activity-reports/email-apps-usage.md)
-
 - [Microsoft 365 Informes en el Centro de administración: uso del buzón](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Informes de & cumplimiento normativo en el Centro Microsoft 365 administración

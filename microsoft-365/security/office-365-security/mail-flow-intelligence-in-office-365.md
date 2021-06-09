@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocidos como inteligencia de flujo de correo).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cb52e5865415440b3b2924a3ebcc96a7f8e17e5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44f2272c98f0c011c05cbe728e720f4d3180c09d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207278"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844675"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 
@@ -30,7 +30,7 @@ ms.locfileid: "51207278"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, normalmente se usa un conector para enrutar mensajes de correo electrónico de EOP a su entorno de correo electrónico local. También puede usar un conector para enrutar mensajes de Microsoft 365 a una organización asociada. Cuando Microsoft 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 seguirá reintentiendo la entrega de cada mensaje durante 24 horas. Después de 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como NDR o mensaje de devolución).
+En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, normalmente se usa un conector para enrutar mensajes de correo electrónico de EOP a su entorno de correo electrónico local. También puede usar un conector para enrutar mensajes Microsoft 365 a una organización asociada. Cuando Microsoft 365 no pueden entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 continuará reintentiendo la entrega de cada mensaje durante 24 horas. Después de 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como NDR o mensaje de devolución).
 
 Microsoft 365 genera un error cuando no se puede entregar un mensaje mediante un conector. Los errores más comunes y sus soluciones se describen en este artículo. Colectivamente, los errores de cola y notificación de mensajes no entregados enviados a través de conectores se conocen como inteligencia de _flujo de correo_.
 
@@ -52,7 +52,7 @@ Normalmente, este error significa que Microsoft 365 intentó conectarse al host 
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>Código de error: 450 4.4.315 Tiempo de espera de conexión
 
-Normalmente, esto significa que Microsoft 365 no puede conectarse al servidor de correo electrónico de destino. Los detalles del error explicarán el problema. Por ejemplo:
+Normalmente, esto significa Microsoft 365 no se puede conectar al servidor de correo electrónico de destino. Los detalles del error explicarán el problema. Por ejemplo:
 
 - El servidor de correo electrónico local no está disponible.
 
@@ -66,25 +66,23 @@ Normalmente, esto significa que Microsoft 365 no puede conectarse al servidor de
 
 ## <a name="error-code-450-44316-connection-refused"></a>Código de error: 450 4.4.316 Conexión rechazada
 
-Normalmente, este error significa que Microsoft 365 encontró un error de conexión cuando intentó conectarse al servidor de correo electrónico de destino. Una causa probable de este error es que el firewall bloquea las conexiones de direcciones IP de Microsoft 365. O bien, este error puede deberse al diseño si ha migrado completamente el sistema de correo electrónico local a Microsoft 365 y ha apagado el entorno de correo electrónico local.
+Normalmente, este error significa Microsoft 365 un error de conexión cuando intentó conectarse al servidor de correo electrónico de destino. Una causa probable de este error es que el firewall bloquea las conexiones Microsoft 365 direcciones IP. O bien, este error puede ser por diseño si ha migrado completamente el sistema de correo electrónico local para Microsoft 365 y apagar el entorno de correo electrónico local.
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>¿Cómo se corrige el código de error 450 4.4.316?
 
-- Si tiene buzones en el entorno local, debe modificar la configuración del firewall para permitir conexiones de direcciones IP de Microsoft 365 en el puerto TCP 25 a los servidores de correo electrónico locales. Para obtener una lista de las direcciones IP de Microsoft 365, vea Direcciones URL e [intervalos de direcciones IP de Microsoft 365](../../enterprise/urls-and-ip-address-ranges.md).
+- Si tiene buzones en el entorno local, debe modificar la configuración del firewall para permitir conexiones desde direcciones IP de Microsoft 365 en el puerto TCP 25 a los servidores de correo electrónico locales. Para obtener una lista de las direcciones IP Microsoft 365, [vea Microsoft 365 URL e intervalos de direcciones IP](../../enterprise/urls-and-ip-address-ranges.md).
 
 - Si no se deben entregar más mensajes en  el entorno local, haga clic en Corregir ahora en la alerta para que Microsoft 365 pueda rechazar inmediatamente los mensajes con destinatarios no válidos. Esto reducirá el riesgo de exceder la cuota de la organización para destinatarios no válidos, lo que podría afectar a la entrega normal de mensajes. O bien, puede usar las siguientes instrucciones para solucionar manualmente el problema:
 
-  - En el [Centro de administración de Exchange (EAC),](/Exchange/exchange-admin-center)deshabilite o elimine el conector que entrega correo electrónico de Microsoft 365 a su entorno de correo electrónico local:
+  - En el [Centro Exchange administración (EAC),](/Exchange/exchange-admin-center)deshabilite o elimine el conector que entrega correo electrónico de Microsoft 365 al entorno de correo electrónico local:
 
     1. En el EAC, vaya a **Flujo de correo** \> **Conectores**.
 
-    2. Seleccione el conector con el valor **De** de  **Office 365** y el valor **Para** del servidor de correo electrónico de su organización y siga uno de los pasos siguientes:
-
+    2. Seleccione el conector con los **valores From** **Office 365** **y To** value **Your organization's email server** y siga uno de los pasos siguientes:
        - Para eliminar el conector, haga clic **en Eliminar** ![ icono Quitar](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
-
        - Para deshabilitar el conector, **haga clic en Editar** icono editar y desactive ![ ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **Activar**.
 
-  - Cambie el dominio aceptado en Microsoft 365 asociado al entorno de correo electrónico local de **Retransmisión interna** a **Autoritativo.** Para obtener instrucciones, vea [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+  - Cambie el dominio aceptado en Microsoft 365 que está asociado con el entorno de correo electrónico local de **Retransmisión interna** a **Autoritativo**. Para obtener instrucciones, consulte [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
   **Nota:** Estos cambios suelen tardar entre 30 minutos y una hora en tener efecto. Después de una hora, compruebe que ya no recibe el error.
 
@@ -92,54 +90,45 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Código de error: 450 4.4.317 No se puede conectar al servidor remoto
 
-Normalmente, este error significa Microsoft 365 conectado al servidor de correo electrónico de destino, pero el servidor respondió con un error inmediato o no cumple los requisitos de conexión. Los detalles del error explicarán el problema. Por ejemplo:
+Normalmente, este error Microsoft 365 conectado al servidor de correo electrónico de destino, pero el servidor respondió con un error inmediato o no cumple los requisitos de conexión. Los detalles del error explicarán el problema. Por ejemplo:
 
 - El servidor de correo electrónico de destino respondió con un error "Servicio no disponible", que indica que el servidor no puede mantener la comunicación con Microsoft 365.
-
 - El conector está configurado para requerir TLS, pero el servidor de correo electrónico de destino no admite TLS.
 
 ### <a name="how-do-i-fix-error-code-450-44317"></a>¿Cómo se corrige el código de error 450 4.4.317?
 
 - Compruebe la configuración de TLS y los certificados en los servidores de correo electrónico locales y la configuración de TLS en el conector.
-
 - Si el error es de su organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), debe ponerse en contacto con su partner para solucionar el problema.
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Código de error: 450 4.4.318 Connection se cerró abruptamente
 
-Normalmente, este error significa que Microsoft 365 tiene dificultades para comunicarse con el entorno de correo electrónico local, por lo que se ha descartado la conexión. Las causas posibles de este error son:
+Por lo general, este error Microsoft 365 está teniendo dificultades para comunicarse con el entorno de correo electrónico local, por lo que se ha descartado la conexión. Las causas posibles de este error son:
 
 - El firewall usa reglas de examen de paquete SMTP y esas reglas no funcionan correctamente.
-
 - El servidor de correo electrónico local no funciona correctamente (por ejemplo, el servicio se bloquea, se bloquea o tiene pocos recursos del sistema), lo que hace que el servidor de tiempo de espera y cierre la conexión a Microsoft 365.
-
 - Hay problemas de red entre el entorno local y Microsoft 365.
 
 ### <a name="how-do-i-fix-error-code-450-44318"></a>¿Cómo se corrige el código de error 450 4.4.318?
 
 - Descubra qué escenario se aplica a usted y realice las correcciones necesarias.
-
 - Si el problema se debe a problemas de red entre el entorno local y Microsoft 365, póngase en contacto con el equipo de red para solucionar el problema.
-
 - Si el error es de su organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), debe ponerse en contacto con su partner para solucionar el problema.
 
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Código de error: error en la validación del certificado 4.7.320 450
 
-Normalmente, este error significa que Microsoft 365 encontró un error al intentar validar el certificado del servidor de correo electrónico de destino. Los detalles del error explicarán el error. Por ejemplo:
+Normalmente, este error significa Microsoft 365 un error al intentar validar el certificado del servidor de correo electrónico de destino. Los detalles del error explicarán el error. Por ejemplo:
 
 - Certificado expirado
-
 - Error de coincidencia del asunto del certificado
-
 - El certificado ya no es válido
 
 ### <a name="how-do-i-fix-error-code-450-47320"></a>¿Cómo se corrige el código de error 450 4.7.320?
 
-- Corrija el certificado o la configuración del conector para que se puedan entregar los mensajes en cola en Microsoft 365.
-
+- Corrija el certificado o la configuración del conector para que los mensajes en cola Microsoft 365 se puedan entregar.
 - Si el error es de su organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), debe ponerse en contacto con su partner para solucionar el problema.
 
 ## <a name="other-error-codes"></a>Otros códigos de error
 
-Microsoft 365 tiene dificultades para entregar mensajes a su servidor de correo electrónico local o asociado. Use la **información del servidor** de destino en el error para examinar el problema en el entorno o modificar el conector si hay un error de configuración.
+Microsoft 365 está teniendo dificultades para entregar mensajes a su servidor de correo electrónico local o asociado. Use la **información del servidor** de destino en el error para examinar el problema en el entorno o modificar el conector si hay un error de configuración.
 
 Si el error es de su organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), debe ponerse en contacto con su partner para solucionar el problema.

@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Obtenga información sobre los pasos básicos de solución de problemas que puede seguir para resolver problemas comunes en Office 365 exhibición de documentos electrónicos.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809124"
+ms.locfileid: "52822243"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar y resolver problemas comunes de exhibición de documentos electrónicos
 
@@ -226,7 +226,7 @@ Este es un problema del lado cliente y, para corregirlo, intente los pasos sigui
 
 1. Intente usar otro cliente o máquina para descargar.
 
-2. Quite las búsquedas antiguas que ya no son necesarias con el cmdlet [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch].
+2. Quite las búsquedas antiguas que ya no son necesarias con el cmdlet [Remove-ComplianceSearch.](/powershell/module/exchange/remove-compliancesearch)
 
 3. Asegúrese de descargar en una unidad local.
 

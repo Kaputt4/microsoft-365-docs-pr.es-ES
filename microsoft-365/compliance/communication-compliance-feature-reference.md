@@ -18,24 +18,24 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: da88bc2aa0e001d714d4317948e28cdca633d17d
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: 5a9f5a6b218ec7a0e1fe9b05524ea1898b03e370
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736365"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822134"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
 ## <a name="policies"></a>Directivas
 
 >[!Important]
->No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la solución de cumplimiento de [comunicaciones de Microsoft 365](https://compliance.microsoft.com/supervisoryreview).
+>No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [Microsoft 365 de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
 
-Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el Centro de cumplimiento de Microsoft 365. Las directivas de cumplimiento de comunicación definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe hacer las revisiones. Los usuarios asignados *al* rol de administrador de cumplimiento de comunicaciones pueden configurar directivas y cualquier persona que tenga asignada esta función puede acceder a la página Cumplimiento de comunicaciones y a la configuración global en el Centro de cumplimiento de Microsoft 365.  Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, los elementos escalados y los elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no sea necesario.
+Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el Centro de cumplimiento de Microsoft 365. Las directivas de cumplimiento de comunicación definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe hacer las revisiones. Los usuarios asignados *al* rol de administrador de cumplimiento de comunicaciones pueden configurar directivas y cualquier persona que tenga asignada esta función puede tener acceso a la página Cumplimiento de comunicaciones y a la configuración global del centro de Microsoft 365 cumplimiento.  Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, los elementos escalados y los elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no sea necesario.
 
 >[!NOTE]
->Las directivas de supervisión creadas en el Centro de & de cumplimiento para suscripciones de Office 365 no pueden migrar a Microsoft 365. Si está migrando de una suscripción de Office 365 a una suscripción de Microsoft 365, deberá crear nuevas directivas de cumplimiento de comunicaciones para reemplazar las directivas de supervisión existentes.
+>Las directivas de supervisión creadas en el Centro de seguridad & cumplimiento para Office 365 suscripciones no pueden migrar a Microsoft 365. Si está migrando de una suscripción de Office 365 a una suscripción de Microsoft 365, deberá crear nuevas directivas de cumplimiento de comunicaciones para reemplazar las directivas de supervisión existentes.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -67,12 +67,12 @@ El estado de la directiva de las directivas en pausa puede indicar varios estado
 
 Para reanudar una directiva, vaya a la **página** Directiva, seleccione una directiva y, a continuación, seleccione **Reanudar directiva** en la barra de herramientas acciones. En el **panel Desanudez** de directivas, confirme que desea reanudar la directiva seleccionando **Reanudar**. En algunos casos, una directiva puede tardar hasta 24 horas en reanudarse. Una vez que se reanude la directiva, se crearán alertas para los mensajes que coincidan con la directiva y estarán disponibles para investigación, revisión y corrección.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 >[!Important]
 >De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Los roles asignados en este paso son necesarios antes de que se pueda acceder a las características de cumplimiento de comunicaciones.
 
-Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que **el** cumplimiento de la comunicación esté disponible como una opción de menú en el  Centro  de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe asignarse a los grupos de roles Cumplimiento de comunicaciones o Administración de cumplimiento de comunicaciones. Para obtener acceso y administrar las características de cumplimiento de comunicaciones después de la configuración inicial, los usuarios deben ser miembros de al menos un grupo de roles de cumplimiento de comunicaciones.
+Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que **el** cumplimiento de la comunicación esté disponible como una opción de menú en  el Centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe asignarse a los grupos de roles Cumplimiento de comunicaciones o Administración de cumplimiento *de* comunicaciones. Para obtener acceso y administrar las características de cumplimiento de comunicaciones después de la configuración inicial, los usuarios deben ser miembros de al menos un grupo de roles de cumplimiento de comunicaciones.
 
 Dependiendo de cómo desee administrar las directivas de comunicación y las alertas, deberá asignar usuarios a grupos de roles específicos. Puede elegir asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicación. O puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de roles *Cumplimiento* de comunicaciones. Use un único grupo de roles o varios grupos de roles para ajustarse mejor a sus requisitos de administración de cumplimiento.
 
@@ -130,7 +130,7 @@ Con las directivas de cumplimiento de comunicaciones, puede elegir examinar mens
 
     - **Para Teams de chat:** Asignar usuarios individuales o asignar un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la directiva de cumplimiento de comunicaciones. Esta configuración es para relaciones de usuario/chat de uno a uno o de uno a varios.
     - **Para Teams de canal:** Asigne cada Microsoft Teams canal o Microsoft 365 grupo que desee examinar que contenga un usuario específico a la directiva de cumplimiento de comunicaciones. Si agrega el mismo usuario a otros canales de Microsoft Teams o grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la directiva de cumplimiento de comunicaciones. Si algún miembro del canal es un usuario  supervisado dentro de una directiva y la dirección de entrada está configurada en una directiva, todos los mensajes enviados dentro del canal están sujetos a revisión y posibles coincidencias de directiva (incluso para los usuarios del canal que no están supervisados explícitamente). Por ejemplo, el usuario A es el propietario o miembro de un canal. El usuario B y el usuario C son miembros del mismo canal y usan un idioma que coincide con la directiva de idioma ofensivo que supervisa solo al usuario A. El usuario B y el usuario C crean coincidencias de directiva para las conversaciones dentro del canal aunque no estén supervisadas directamente en la directiva de idioma ofensivo. Teams conversaciones entre el usuario B y el usuario C que están fuera del canal que incluye el usuario A no estarían sujetas a la directiva de idioma ofensivo que incluye el usuario A. Para excluir a los miembros del canal de la supervisión cuando  otros miembros del canal se supervisan explícitamente, desactive la configuración Dirección de comunicación entrante en la directiva de cumplimiento de comunicaciones aplicable.
-    - Para Teams de chat con entornos de correo electrónico **híbridos:** el cumplimiento de las comunicaciones puede supervisar los mensajes de chat de los usuarios de organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección de usuarios y grupos supervisados en el asistente para directivas. 
+    - Para Teams de chat con entornos de correo electrónico **híbridos:** el cumplimiento de las comunicaciones puede supervisar los mensajes de chat de los usuarios de organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección de usuarios y grupos supervisados en el asistente para directivas.  Para obtener más información acerca de los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad Teams para los usuarios locales, vea [Search for Teams chat data for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 - **Exchange** correo electrónico: los buzones hospedados en Exchange Online como parte de la suscripción Microsoft 365 o Office 365 son aptos para el examen de mensajes. Exchange mensajes de correo electrónico y datos adjuntos que coincidan con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de comunicaciones son los mismos que los [tipos de archivo admitidos en las inspecciones de contenido de reglas de flujo de correo de Exchange](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
@@ -195,20 +195,20 @@ Los clasificadores globales y capacitados para el cumplimiento de la comunicaci�
 - **Imágenes** rácidas: busca imágenes sexualmente sugerentes en la naturaleza, pero que contienen contenido menos explícito que las imágenes que se consideran adultos.
 - **Imágenes de gory:** busca imágenes que represente violencia y sangre.
 
-Los *clasificadores* de imágenes Adult, *Racy* y *Gory* analizan archivos en formatos .jpeg, .png, .gif y .bmp. El tamaño de los archivos de imagen debe ser inferior a 4 megabytes (MB) y las dimensiones de las imágenes deben ser mayores de 50 x 50 píxeles y superiores a 50 kilobytes (KB) para que la imagen pueda ser valorada. La identificación de imágenes es compatible con los mensajes de correo electrónico de Exchange Online y los canales y chats de Microsoft Teams.
+Los *clasificadores* de imágenes Adult, *Racy* y *Gory* analizan archivos en formatos .jpeg, .png, .gif y .bmp. El tamaño de los archivos de imagen debe ser inferior a 4 megabytes (MB) y las dimensiones de las imágenes deben ser mayores de 50 x 50 píxeles y superiores a 50 kilobytes (KB) para que la imagen pueda ser valorada. La identificación de imágenes es compatible Exchange Online mensajes de correo electrónico y Microsoft Teams canales y chats.
 
 Los clasificadores globales y los clasificadores integrados no proporcionan una lista exhaustiva de términos o imágenes en estas áreas. Además, los estándares lingüísticos y culturales cambian continuamente y, a la luz de estas realidades, Microsoft se reserva el derecho de actualizar clasificadores a su discreción. Aunque los clasificadores pueden ayudar a su organización a supervisar estas áreas, los clasificadores no están diseñados para proporcionar el único medio de supervisión o dirección de su organización. Su organización, no Microsoft, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, el examen y el bloqueo del idioma y las imágenes en estas áreas, incluido el cumplimiento de la privacidad local y otras leyes aplicables. Microsoft anima a consultar con abogados antes de la implementación y el uso.
 
 >[!NOTE]
 >Las directivas que usan clasificadores inspeccionarán y evaluarán los mensajes con un recuento de palabras de seis o más. Los mensajes que contienen menos de seis palabras no se evalúan en las directivas mediante clasificadores. Para identificar y tomar medidas en mensajes más cortos que contengan contenido inadecuado, se recomienda incluir un diccionario de palabras clave personalizado para supervisar las directivas de cumplimiento de comunicación para este tipo de contenido.
 
-Para obtener información acerca de los clasificadores que se pueden entrenar en Microsoft 365, vea Introducción a [clasificadores que se pueden entrenar.](classifier-get-started-with.md)
+Para obtener información acerca de los clasificadores que se pueden entrenar en Microsoft 365, vea [Getting started with trainable classifiers](classifier-get-started-with.md).
 
 ### <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 
 Configure directivas de cumplimiento de comunicación integradas o personalizadas para examinar e identificar texto impreso o escrito a mano de imágenes que puedan ser inapropiadas en su organización. La compatibilidad integrada de [Azure Cognitive Services](/azure/cognitive-services/computer-vision/overview-ocr) y el examen óptico para identificar texto en imágenes ayudan a los analistas e investigadores a detectar y actuar en casos en los que se puede perder una conducta inapropiada en comunicaciones que no son principalmente textuales.
 
-Puede habilitar el reconocimiento óptico de caracteres (OCR) en nuevas directivas de plantillas, directivas personalizadas o actualizar directivas existentes para ampliar la compatibilidad con el procesamiento de imágenes incrustadas y datos adjuntos. Cuando se habilita en una directiva creada a partir de una plantilla de directiva, se admite el examen automático para imágenes incrustadas o adjuntas en mensajes de correo electrónico y de chat de Microsoft Teams. Para las directivas personalizadas, una o más configuraciones condicionales asociadas con palabras clave, clasificadores integrados o tipos de información confidencial deben configurarse en la directiva para habilitar la selección del examen OCR.
+Puede habilitar el reconocimiento óptico de caracteres (OCR) en nuevas directivas de plantillas, directivas personalizadas o actualizar directivas existentes para ampliar la compatibilidad con el procesamiento de imágenes incrustadas y datos adjuntos. Cuando se habilita en una directiva creada a partir de una plantilla de directiva, se admite el examen automático para imágenes incrustadas o adjuntas en el correo electrónico Microsoft Teams mensajes de chat. Para las directivas personalizadas, una o más configuraciones condicionales asociadas con palabras clave, clasificadores integrados o tipos de información confidencial deben configurarse en la directiva para habilitar la selección del examen OCR.
 
 Las imágenes de 50 KB a 4 MB en los siguientes formatos de imagen se examinan y procesan:
 
@@ -321,7 +321,7 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar mensaje
 | **Clase File** | Clase del mensaje basada en el tipo de mensaje, ya sea *mensaje o* *datos adjuntos.* |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje según el tipo de mensaje, el correo electrónico, el chat de Microsoft Team, Bloomberg, etc. Para obtener más información sobre tipos de elementos y clases de mensaje comunes, vea [Tipos de elementos y clases de mensaje](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
-| **Dominios de destinatarios** | Dominio al que se envió el mensaje. Este dominio es normalmente el dominio de suscripción de Microsoft 365 de forma predeterminada. |
+| **Dominios de destinatarios** | Dominio al que se envió el mensaje. Normalmente, este dominio es su Microsoft 365 de suscripción de forma predeterminada. |
 | **Destinatario** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | Dominio que envió el mensaje. |
@@ -353,11 +353,11 @@ Puede cambiar la configuración predeterminada para desencadenadores en número 
 
 Si desea cambiar el nivel de gravedad asignado en una directiva de alerta para una directiva de cumplimiento de comunicación específica, siga estos pasos:
 
-1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
+1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
-2. En el Centro de cumplimiento de Microsoft 365, vaya a **Directivas**.
+2. En el centro Microsoft 365 cumplimiento, vaya a **Directivas**.
 
-3. Seleccione **Alerta de Office 365** en  la página Directivas para abrir la página Directivas de alertas en el Centro de seguridad & cumplimiento de **Office 365.** 
+3. Seleccione **Office 365 alerta en** la **página** Directivas para abrir la página Directivas **de** alertas en el Centro de Office 365 seguridad **& cumplimiento**.
 
 4. Active la casilla de verificación de la directiva de cumplimiento de comunicaciones que desea actualizar y, a continuación, **seleccione Editar directiva**.
 
@@ -367,48 +367,48 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alerta para u
 
 7. Seleccione **Cerrar para** salir de la página de detalles de la directiva de alertas.
 
-## <a name="power-automate-flows"></a>Flujos de Power Automate
+## <a name="power-automate-flows"></a>Power Automate flujos
 
-[Microsoft Power Automate es](/power-automate/getting-started) un servicio de flujo de trabajo que automatiza las acciones entre aplicaciones y servicios. Mediante el uso de flujos de plantillas o creados manualmente, puede automatizar tareas comunes asociadas con estas aplicaciones y servicios. Al habilitar los flujos de Power Automate para el cumplimiento de las comunicaciones, puede automatizar tareas importantes para alertas y usuarios. Puede configurar los flujos de Power Automate para notificar a los administradores cuando los usuarios tienen alertas de cumplimiento de comunicaciones y otras aplicaciones.
+[Microsoft Power Automate](/power-automate/getting-started) es un servicio de flujo de trabajo que automatiza las acciones entre aplicaciones y servicios. Mediante el uso de flujos de plantillas o creados manualmente, puede automatizar tareas comunes asociadas con estas aplicaciones y servicios. Al habilitar los flujos Power Automate para el cumplimiento de las comunicaciones, puede automatizar tareas importantes para alertas y usuarios. Puede configurar los flujos Power Automate para notificar a los administradores cuando los usuarios tienen alertas de cumplimiento de comunicaciones y otras aplicaciones.
 
-Los clientes con suscripciones de Microsoft 365 que incluyen el cumplimiento de comunicaciones no necesitan licencias de Power Automate adicionales para usar la plantilla de Power Automate de cumplimiento de comunicaciones predeterminada recomendada. La plantilla predeterminada se puede personalizar para admitir la organización y cubrir los escenarios principales de cumplimiento de comunicaciones. Si elige usar las características premium de Power Automate en estas plantillas, crear una plantilla personalizada con el conector de cumplimiento de Microsoft 365 o usar plantillas de Power Automate para otras áreas de cumplimiento en Microsoft 365, puede que necesite licencias de Power Automate adicionales.
+Los clientes con Microsoft 365 que incluyen el cumplimiento de la comunicación no necesitan licencias Power Automate para usar la plantilla de cumplimiento de comunicaciones Power Automate recomendada. La plantilla predeterminada se puede personalizar para admitir la organización y cubrir los escenarios principales de cumplimiento de comunicaciones. Si elige usar características de Power Automate premium en estas plantillas, cree una plantilla personalizada con el conector de cumplimiento de Microsoft 365 o use plantillas Power Automate para otras áreas de cumplimiento en Microsoft 365, puede que necesite licencias Power Automate adicionales.
 
 >[!IMPORTANT]
->¿Recibe avisos para la validación de licencias adicionales al probar los flujos de Power Automate? Es posible que su organización aún no haya recibido actualizaciones de servicio para esta característica de vista previa. Se están implementando actualizaciones y todas las organizaciones con suscripciones de Microsoft 365 que incluyan el cumplimiento de comunicaciones deben tener compatibilidad con licencias para los flujos creados a partir de las plantillas de Power Automate recomendadas antes del 30 de octubre de 2020.
+>¿Recibe avisos para la validación de licencias adicionales al probar Power Automate flujos? Es posible que su organización aún no haya recibido actualizaciones de servicio para esta característica de vista previa. Las actualizaciones se implementan y todas las organizaciones con suscripciones Microsoft 365 que incluyan el cumplimiento de comunicaciones deben tener compatibilidad con licencias para los flujos creados a partir de las plantillas Power Automate recomendadas antes del 30 de octubre de 2020.
 
-![Power Automate de cumplimiento de comunicaciones](../media/communication-compliance-power-automate.png)
+![Cumplimiento de Power Automate](../media/communication-compliance-power-automate.png)
 
-La siguiente plantilla de Power Automate se proporciona a los clientes para admitir la automatización de procesos para alertas de cumplimiento de comunicaciones:
+La siguiente Power Automate se proporciona a los clientes para admitir la automatización de procesos para alertas de cumplimiento de comunicaciones:
 
 - **Notificar al administrador cuando un usuario tiene una alerta** de cumplimiento de comunicación: es posible que algunas organizaciones necesiten recibir una notificación de administración inmediata cuando un usuario tiene una alerta de cumplimiento de comunicación. Cuando se configura y selecciona este flujo, se envía un mensaje de correo electrónico al administrador del usuario del caso con la siguiente información sobre todas las alertas:
     - Directiva aplicable para la alerta
     - Fecha y hora de la alerta
     - Nivel de gravedad de la alerta
 
-### <a name="create-a-power-automate-flow"></a>Crear un flujo de Power Automate
+### <a name="create-a-power-automate-flow"></a>Crear un flujo Power Automate de datos
 
-Para crear un flujo de Power Automate a partir de una plantilla predeterminada recomendada, usarás la opción Administrar flujos de **Power Automate** desde el control **Automatizar** cuando trabajes directamente en una alerta. Para crear un flujo de Power Automate con Administrar flujos **de Power Automate,** debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
+Para crear un flujo Power Automate de una plantilla predeterminada recomendada, usará la opción Administrar flujos **de Power Automate** desde el control **Automatizar** al trabajar directamente en una alerta. Para crear un flujo de Power Automate con **Administrar Power Automate,** debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
 
-Siga estos pasos para crear un flujo de Power Automate a partir de una plantilla predeterminada:
+Siga estos pasos para crear un flujo Power Automate de una plantilla predeterminada:
 
-1. En el Centro de cumplimiento de Microsoft 365, vaya a **Directivas** de cumplimiento de comunicaciones y seleccione la directiva con  >   la alerta que desea revisar.
+1. En el centro Microsoft 365 cumplimiento, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
-3. Seleccione **Power Automate en** el menú de acción de alerta.
-4. En la **página Power Automate,** seleccione una plantilla predeterminada en la sección Plantillas de cumplimiento de comunicación que le pueden **gustar** en la página.
+3. Seleccione **Power Automate** en el menú de acción de alerta.
+4. En la **Power Automate,** seleccione una plantilla predeterminada de la sección Plantillas de cumplimiento de comunicación que le pueden **gustar** en la página.
 5. El flujo enumerará las conexiones incrustadas necesarias para el flujo y se mostrará si los estados de conexión están disponibles. Si es necesario, actualice las conexiones que no se muestran como disponibles. Seleccione **Continuar**.
-6. De forma predeterminada, los flujos recomendados están preconfigurados con el cumplimiento de comunicaciones recomendado y los campos de datos de servicio de Microsoft 365 necesarios para completar la tarea asignada para el flujo. Si es necesario, personalice los componentes de flujo mediante el control **Mostrar** opciones avanzadas y configurando las propiedades disponibles para el componente de flujo.
+6. De forma predeterminada, los flujos recomendados están preconfigurados con el cumplimiento de comunicaciones recomendado y los campos de datos de servicio Microsoft 365 necesarios para completar la tarea asignada para el flujo. Si es necesario, personalice los componentes de flujo mediante el control **Mostrar** opciones avanzadas y configurando las propiedades disponibles para el componente de flujo.
 7. Si es necesario, agregue cualquier paso adicional al flujo seleccionando el **botón Nuevo** paso. En la mayoría de los casos, este cambio no debe ser necesario para las plantillas predeterminadas recomendadas.
 8. Seleccione **Guardar borrador** para guardar el flujo para una configuración posterior o seleccione **Guardar** para completar la configuración del flujo.
-9. Seleccione **Cerrar** para volver a la página flujo de Power Automate. La nueva plantilla aparecerá como un flujo en la pestaña **Mis** flujos y estará disponible automáticamente desde el control Power Automate para el usuario que creó el flujo al trabajar con alertas de cumplimiento de comunicaciones.
+9. Seleccione **Cerrar** para volver a la página Power Automate flujo. La nueva plantilla aparecerá como un  flujo en la pestaña Mis flujos y estará disponible automáticamente desde el control Power Automate para el usuario que creó el flujo al trabajar con alertas de cumplimiento de comunicaciones.
 
-### <a name="share-a-power-automate-flow"></a>Compartir un flujo de Power Automate
+### <a name="share-a-power-automate-flow"></a>Compartir un flujo Power Automate de datos
 
-De forma predeterminada, los flujos de Power Automate creados por un usuario solo están disponibles para ese usuario. Para que otros usuarios de cumplimiento de comunicaciones tengan acceso y usen un flujo, el creador del flujo debe compartir el flujo. Para compartir un flujo, usarás el control **Power Automate** cuando trabajes directamente en una alerta.
+De forma predeterminada, Power Automate flujos creados por un usuario solo están disponibles para ese usuario. Para que otros usuarios de cumplimiento de comunicaciones tengan acceso y usen un flujo, el creador del flujo debe compartir el flujo. Para compartir un flujo, usará el control Power Automate **cuando** trabaje directamente en una alerta.
 
-Para compartir un flujo de Power Automate, debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
-Siga estos pasos para compartir un flujo de Power Automate:
+Para compartir un flujo Power Automate, debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
+Siga estos pasos para compartir un flujo Power Automate datos:
 
-1. En el Centro de cumplimiento de Microsoft 365, vaya a **Directivas** de cumplimiento de comunicaciones y seleccione la directiva con  >   la alerta que desea revisar.
+1. En el centro Microsoft 365 cumplimiento, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la **página Power Automate flujos,** seleccione la **pestaña Mis flujos** o Flujos **de** equipo.

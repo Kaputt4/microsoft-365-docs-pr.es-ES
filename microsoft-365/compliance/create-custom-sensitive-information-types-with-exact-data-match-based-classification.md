@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b729cb8a4c30ec13e22f36f9721cb55ecc93942d
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: ff190fa85e631562a07dcecc1f75713ecacdf07e
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779872"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822122"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -610,7 +610,7 @@ Estas ubicaciones son compatibles con los tipos de información confidencial de 
 - Microsoft Teams (conversaciones)
 - DLP para SharePoint (archivos)
 - Directivas DLP para la seguridad de las aplicaciones en la nube de Microsoft
-- Directivas de etiquetado automático del lado servidor
+- Directivas de etiquetado automático del lado servidor: disponibles para clientes comerciales en la nube <!--, UNCOMMENT THIS ON 6/15 and government cloud customers-->
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Para crear una directiva DLP con EDM
 

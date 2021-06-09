@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la suplantación de inteligencia en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 45ecbe68072441b40477d1b27953b957aeffa9e3
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 2fc591bbaf2ecc6f59c2b569acde521453887c2a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793177"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822360"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 
@@ -53,17 +53,17 @@ Cuando un remitente suplanta una dirección de correo electrónico, parece que e
   - El remitente está en una lista de correo (también conocida como lista de discusión) y la lista de correo retransmite el correo electrónico del remitente original a todos los participantes de la lista de correo.
   - Una empresa externa envía correo electrónico en nombre de otra compañía (por ejemplo, un informe automatizado o una compañía de software como servicio).
 
-Puede usar  la información de inteligencia suplantada en el Centro de seguridad y cumplimiento de & para identificar rápidamente remitentes suplantados que le envían correo electrónico no autenticado (mensajes de dominios que no pasan comprobaciones de SPF, DKIM o DMARC) y permitir manualmente dichos remitentes.
+Puede usar  la información de inteligencia suplantada en el centro de seguridad de Microsoft 365 para identificar rápidamente remitentes suplantados que le envían correo electrónico no autenticado (mensajes de dominios que no pasan comprobaciones de SPF, DKIM o DMARC) y permitir manualmente dichos remitentes.
 
 Al permitir que los remitentes conocidos envíen mensajes falsos desde ubicaciones conocidas, puede reducir los falsos positivos (buen correo electrónico marcado como malo). Al supervisar los remitentes suplantados permitidos, proporciona un nivel de seguridad adicional para evitar que los mensajes no seguros lleguen a la organización.
 
 Del mismo modo, puede revisar remitentes suplantados permitidos por la inteligencia de suplantación de identidad y bloquear manualmente a esos remitentes de la información de inteligencia suplantada.
 
-El resto de este artículo explica cómo usar la información de inteligencia suplantación en el Centro de seguridad y cumplimiento de & y en PowerShell (PowerShell Exchange Online para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online).
+En el resto de este artículo se explica cómo usar la información de inteligencia suplantación en el centro de seguridad y en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones Exchange Online).
 
 > [!NOTE]
 >
-> - Solo los remitentes suplantados detectados por la inteligencia suplantación aparecen en la información de inteligencia suplantada. Al invalidar el veredicto permitir o bloquear en la información, el remitente suplantado  se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del espacio empresarial. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados antes de que los detecte la inteligencia de suplantación de identidad. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](tenant-allow-block-list.md).
+> - Solo los remitentes suplantados detectados por la inteligencia suplantación aparecen en la información de inteligencia suplantada. Cuando se invalida el veredicto permitir o bloquear en la información, el remitente suplantado se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados de inquilinos.  También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados antes de que los detecte la inteligencia de suplantación de identidad. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](tenant-allow-block-list.md).
 >
 > - La información sobre la  suplantación de inteligencia y la pestaña Suplantación de dominio de la lista Permitir o bloquear espacio empresarial reemplazan la funcionalidad de la directiva de inteligencia suplantación de dominio que estaba disponible en la página de directiva contra correo no deseado del Centro de seguridad & cumplimiento.
 >
@@ -71,7 +71,7 @@ El resto de este artículo explica cómo usar la información de inteligencia su
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la **página Anti-phishing,** use <https://protection.office.com/antiphishing> .
+- Puede abrir el Centro de seguridad en <https://security.microsoft.com/>. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> . Para ir directamente a la **página Spoof intelligence insight,** use <https://security.microsoft.com/spoofintelligence> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -90,31 +90,30 @@ El resto de este artículo explica cómo usar la información de inteligencia su
 
 - Para obtener la configuración recomendada para la inteligencia de suplantación de identidad, consulte Configuración de directiva [contra suplantación de identidad](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)de EOP .
 
-## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Abra la información de inteligencia de suplantación en el Centro de seguridad & cumplimiento
+## <a name="open-the-spoof-intelligence-insight-in-the-security-center"></a>Abrir la información de inteligencia suplantación en el centro de seguridad
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas Contra la \>  \> **suplantación de identidad**.
+1. En el centro de seguridad, vaya a Correo electrónico **& directivas** de colaboración & De directivas de amenazas de reglas \>  \>  \>  sección \> **Anti-phishing**.
 
-2. En la página **principal contra la suplantación de** identidad , la información de inteligencia suplantación de identidad tiene dos modos:
+2. En la **página Anti-phishing,** la información de inteligencia suplantación de identidad tiene este aspecto:
+
+   ![Spoof intelligence insight on the Anti-phishing policy page](../../media/m365-sc-spoof-intelligence-insight.png)
+
+   La información tiene dos modos:
 
    - **Modo de información:** si la inteligencia de suplantación está habilitada, la información muestra cuántos mensajes se detectaron mediante la inteligencia de suplantación de dominio durante los últimos siete días.
    - **Modo de** suplantación: si la inteligencia de suplantación  está deshabilitada, la información muestra cuántos mensajes se habrían detectado mediante la inteligencia de suplantación durante los últimos siete días.
 
-   En cualquier caso, los dominios suplantados que se muestran en la información se separan en dos categorías: **dominios** sospechosos y **dominios no sospechosos.**
-
-   - **Los dominios sospechosos** incluyen:
-
-     - Suplantación de confianza alta: en función de los patrones de envío históricos y la puntuación de reputación de los dominios, estamos muy seguros de que los dominios están suplantando la suplantación y es más probable que los mensajes de estos dominios sean malintencionados.
-
-     - Suplantación de confianza moderada: en función de los patrones de envío históricos y la puntuación de reputación de los dominios, estamos moderadamente seguros de que los dominios están suplantando y que los mensajes enviados desde estos dominios son legítimos. Los falsos positivos son más probables en esta categoría que la suplantación de confianza alta.
-
-   **Dominios no sospechosos:** el dominio no pudo comprobar la autenticación explícita de correo [electrónico SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md)). Sin embargo, el dominio pasó nuestras comprobaciones implícitas de autenticación de correo electrónico ([autenticación compuesta](email-validation-and-authentication.md#composite-authentication)). Como resultado, no se ha realizado ninguna acción contra la suplantación en el mensaje.
+Para ver información sobre las detecciones de inteligencia suplantación, haga clic en **Ver** actividad de suplantación en la información de inteligencia suplantación.
 
 ### <a name="view-information-about-spoofed-messages"></a>Ver información sobre mensajes suplantados
 
-En la información de inteligencia suplantada, haga clic en **Dominios** sospechosos o Dominios no sospechosos para ir a la **página Spoof intelligence insight.**  La página contiene la siguiente información:
+> [!NOTE]
+> Recuerde que en esta página solo aparecen remitentes suplantados detectados por la inteligencia suplantación de identidad. Cuando se invalida el veredicto permitir o bloquear en la información, el remitente suplantado se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados de inquilinos. 
 
-- **Dominio suplantado:** dominio del usuario suplantado que se muestra en el **cuadro** De de los clientes de correo electrónico. Esta dirección también se conoce como `5322.From` la dirección.
-- **Infraestructura:** también conocida como la _infraestructura de envío_. Este será uno de los siguientes valores:
+En la **página Spoof intelligence insight** que aparece después de hacer clic en **Ver** actividad de suplantación en la información de inteligencia suplantación, la página contiene la siguiente información:
+
+- **Usuario suplantado:** **dominio** del usuario suplantado que se muestra en el **cuadro** De de los clientes de correo electrónico. La dirección De también se conoce como `5322.From` la dirección.
+- **Infraestructura de** envío: también conocida como _infraestructura_. La infraestructura de envío será uno de los siguientes valores:
   - El dominio encontrado en una búsqueda DNS inversa (registro PTR) de la dirección IP del servidor de correo electrónico de origen.
   - Si la dirección IP de origen no tiene ningún registro PTR, la infraestructura de envío se identifica como \<source IP\> /24 (por ejemplo, 192.168.100.100/24).
 - **Recuento de** mensajes: el número de mensajes de  la combinación del dominio suplantado y la infraestructura de envío a la organización en los últimos 7 días.
@@ -122,35 +121,34 @@ En la información de inteligencia suplantada, haga clic en **Dominios** sospech
 - **Tipo de suplantación:** uno de los siguientes valores:
   - **Interno:** el remitente suplantado está en un dominio que pertenece a su organización (un [dominio aceptado).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
   - **Externo:** el remitente suplantado está en un dominio externo.
-- **Permitido suplantar:** el valor depende de  si ha hecho clic en Dominios sospechosos o **Dominios** no sospechosos en la información:
-  - **Dominios sospechosos:** **el valor permitido para suplantar** siempre es **No**. Los mensajes de la combinación del  dominio suplantado y la infraestructura de envío se marcan como malos por la inteligencia suplantada. La acción que se toma en los mensajes suplantados se controla mediante la directiva contra suplantación de identidad predeterminada o las directivas personalizadas contra suplantación de identidad (el valor predeterminado es **Mover** mensaje a la carpeta correo no deseado ). Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
-  - **Dominios no sospechosos:** el **valor permitido para suplantar** siempre es **Sí**. Los mensajes de la combinación del  dominio suplantado y la infraestructura de envío se marcan como buenos mediante la inteligencia suplantada.
+- **Action**: este valor es **Allowed** o **Blocked**:
+  - **Permitido:** el dominio no pudo comprobar la autenticación explícita de correo [electrónico SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md)). Sin embargo, el dominio pasó nuestras comprobaciones implícitas de autenticación de correo electrónico ([autenticación compuesta](email-validation-and-authentication.md#composite-authentication)). Como resultado, no se ha realizado ninguna acción contra la suplantación en el mensaje.
+  - **Bloqueado:** los mensajes de la combinación  del dominio suplantado y la infraestructura de envío se marcan como malos por la inteligencia suplantada. La acción que se toma en los mensajes suplantados se controla mediante la directiva contra suplantación de identidad predeterminada o las directivas personalizadas contra suplantación de identidad (el valor predeterminado es **Mover** mensaje a la carpeta correo no deseado ). Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 Puede hacer clic en los encabezados de columna seleccionados para ordenar los resultados.
 
 Para filtrar los resultados, tiene las siguientes opciones:
 
-- Use el **cuadro Filtrar dominio suplantado** para especificar una lista separada por comas de valores de dominio suplantados para filtrar los resultados.
-- Use el **cuadro Filtrar infraestructura** para escribir una lista separada por comas de valores de infraestructura para filtrar los resultados.
-- Haga clic **en el botón** Filtrar para filtrar los resultados por tipo de **suplantación**.
+- Haga clic en **el botón** Filtrar. En el **menú** desplegable Filtro que aparece, puede filtrar los resultados por:
+  - **Tipo de suplantación**
+  - **Action**
+- Use el **cuadro Buscar** para escribir una lista separada por comas de valores de dominio suplantados o enviar valores de infraestructura para filtrar los resultados.
 
 ### <a name="view-details-about-spoofed-messages"></a>Ver detalles sobre mensajes suplantados
 
-Seleccione un elemento de la lista para ver detalles. Aparece un menú desplegable con la siguiente información y características:
+Al seleccionar una entrada de la lista, aparece un desplegable de detalles que contiene la siguiente información y características:
 
-- **Permitido suplantación:** use esta alternancia para invalidar el veredicto de suplantación de inteligencia:
-  - Si seleccionó originalmente **dominios sospechosos** en la información, se desactivará **Permitir suplantación.** To turn it on, which moves the entry from the spoof intelligence insight to the Tenant Allow/Block List as an allow entry for spoof, slide the toggle to on: ![ Toggle on ](../../media/scc-toggle-on.png) .
-  - Si seleccionó originalmente dominios **no sospechosos** en la información, Se permite **suplantar** está activado. Para desactivarla, que mueve la entrada de la información de inteligencia de suplantación a la lista de inquilinos permitidos o bloqueados como una entrada de bloque para suplantación, deslice el botón de alternancia a desactivado: ![ Desactivar ](../../media/scc-toggle-off.png) .
-
+-  Permitir suplantar o bloquear la suplantación: seleccione uno de estos valores para invalidar el veredicto de suplantación de inteligencia original y mover la entrada de la información de inteligencia de suplantación de dominio a la lista de permitidos o bloqueados de inquilinos como una entrada de permitir o bloquear para la suplantación.
 - Por qué lo capturamos.
 - Lo que necesita hacer.
 - Un resumen de dominio que incluye la mayor parte de la misma información de la página de inteligencia de suplantación principal.
 - WhoIs datos sobre el remitente.
+- Un vínculo para abrir [el Explorador de amenazas](threat-explorer.md) para ver detalles adicionales sobre el remitente (Microsoft Defender para Office 365).
 - Mensajes similares que hemos visto en el inquilino del mismo remitente.
 
 ### <a name="about-allowed-spoofed-senders"></a>Acerca de remitentes suplantados permitidos
 
-Un remitente suplantado  permitido en dominios no sospechosos en la información  de inteligencia suplantada o un remitente bloqueado en dominios sospechosos que  cambió manualmente a **Permitido** para suplantar solo permite mensajes de la combinación del dominio suplantado y la infraestructura de envío. No permite el correo electrónico del dominio suplantado desde ningún origen, ni permite el correo electrónico de la infraestructura de envío para ningún dominio.
+Un remitente suplantado permitido en la información de inteligencia de suplantación de identidad o un remitente suplantado bloqueado que cambió  manualmente a **Permitir** para suplantación solo permite mensajes de la combinación del dominio suplantado y la infraestructura de envío. No permite el correo electrónico del dominio suplantado desde ningún origen, ni permite el correo electrónico de la infraestructura de envío para ningún dominio.
 
 Por ejemplo, el siguiente remitente suplantado puede suplantación de identidad:
 

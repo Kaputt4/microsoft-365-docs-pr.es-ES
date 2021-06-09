@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a051742775c3d4e8b36bf0ba7a4fd2502763014
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: b4c2d586cd23a346db1bcebf891689ff648b639b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694466"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844711"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender para punto de conexión en iOS
 
@@ -45,20 +45,20 @@ ms.locfileid: "52694466"
 
 **Para usuarios finales**
 
-- Licencia de Microsoft Defender para endpoint asignada a los usuarios finales de la aplicación. Consulta [Requisitos de licencias de Microsoft Defender para puntos de conexión.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+- Licencia de Microsoft Defender para endpoint asignada a los usuarios finales de la aplicación. Consulta [Requisitos de licencias de Microsoft Defender para puntos de conexión.](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
 
-- Los dispositivos se [inscriben a](https://docs.microsoft.com/mem/intune/user-help/enroll-your-device-in-intune-ios) través de la Portal de empresa de Intune para aplicar directivas de cumplimiento de dispositivos de Intune. Esto requiere que al usuario final se le asigne una Microsoft Intune licencia.
+- Los dispositivos se [inscriben a](/mem/intune/user-help/enroll-your-device-in-intune-ios) través de la Portal de empresa de Intune para aplicar directivas de cumplimiento de dispositivos de Intune. Esto requiere que al usuario final se le asigne una Microsoft Intune licencia.
     - Portal de empresa de Intune la aplicación se puede descargar desde la [Tienda de aplicaciones de Apple.](https://apps.apple.com/us/app/intune-company-portal/id719171358)
     - Ten en cuenta que Apple no permite que los usuarios redireccionamientos descarguen otras aplicaciones de la tienda de aplicaciones y, por lo tanto, este paso debe realizarlo el usuario antes de incorporarse a la aplicación Microsoft Defender para endpoint.
 
-- Para obtener más información sobre cómo asignar licencias, vea [Assign licenses to users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
+- Para obtener más información sobre cómo asignar licencias, vea [Assign licenses to users](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 **Para administradores**
 
 - Acceso al portal Centro de seguridad de Microsoft Defender web.
 
     > [!NOTE]
-    > Microsoft Intune es la única solución de administración de dispositivos móviles (MDM) compatible para implementar Microsoft Defender para endpoint en iOS. Actualmente solo se admiten dispositivos inscritos para aplicar Defender para Endpoint en directivas de cumplimiento de dispositivos relacionados con iOS en Intune.
+    > Microsoft Intune es la única solución de administración unificada de puntos de conexión (UEM) compatible para implementar Microsoft Defender para endpoints y aplicar directivas de cumplimiento de dispositivos relacionados con Defender for Endpoint en Intune.
 
 - Acceso a [Microsoft Endpoint Manager de administración](https://go.microsoft.com/fwlink/?linkid=2109431), para implementar la aplicación en grupos de usuarios inscritos en su organización.
 
@@ -68,12 +68,9 @@ ms.locfileid: "52694466"
 
 - El dispositivo está inscrito con la [Portal de empresa de Intune aplicación](https://apps.apple.com/us/app/intune-company-portal/id719171358).
 
-> [!NOTE]
-> **Microsoft Defender para endpoint en iOS está disponible en [La Tienda de aplicaciones de Apple.](https://aka.ms/mdatpiosappstore)**
-
 ## <a name="installation-instructions"></a>Instrucciones de instalación
 
-La implementación de Microsoft Defender para endpoint en iOS es a través de Microsoft Intune (MDM) y se admiten dispositivos supervisados y no supervisados.
+La implementación de Microsoft Defender para endpoint en iOS es a través de Microsoft Intune (MDM) y se admiten dispositivos supervisados y no supervisados. Los usuarios finales también pueden instalar directamente la aplicación desde la [Tienda de aplicaciones de Apple](https://aka.ms/mdatpiosappstore).
 Para obtener más información, vea [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
 
 ## <a name="resources"></a>Recursos

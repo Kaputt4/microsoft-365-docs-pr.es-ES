@@ -245,7 +245,7 @@
               href: dlp-teams-default-policy.md
             - name: Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
               href: dlp-on-premises-scanner-learn.md
-            - name: Obtenga información sobre el Centro de cumplimiento de Microsoft (versión preliminar).
+            - name: Obtenga información sobre el Centro de cumplimiento de Microsoft
               href: dlp-chrome-learn-about.md
             - name: Obtenga información sobre el panel de alertas de prevención de pérdida de datos
               href: dlp-alerts-dashboard-learn.md
@@ -267,7 +267,7 @@
               href: endpoint-dlp-getting-started.md
             - name: Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
               href: endpoint-dlp-configure-proxy.md
-            - name: Introducción al Centro de cumplimiento de Microsoft (versión preliminar).
+            - name: Introducción a la extensión de cumplimiento de Microsoft
               href: dlp-chrome-get-started.md
             - name: Introducción al panel de alertas de prevención de pérdida de datos
               href: dlp-alerts-dashboard-get-started.md
@@ -694,14 +694,14 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Revisar el contenido del caso
           items:
-            - name: Usar el panel de conjunto de revisión
-              href: advanced-ediscovery-dashboard.md
-            - name: Ver documentos de un conjunto de revisión
-              href: view-documents-in-review-set.md
             - name: Consultar y filtrar el contenido de un conjunto de revisión
               href: review-set-search.md
             - name: Etiquetar documentos en un conjunto de revisión
               href: tagging-documents.md
+            - name: Ver documentos de un conjunto de revisión
+              href: view-documents-in-review-set.md
+            - name: Usar el panel de conjunto de revisión
+              href: advanced-ediscovery-dashboard.md
         - name: Analizar el contenido del caso
           href: analyzing-data-in-review-set.md
           items:
@@ -711,12 +711,20 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Temas
               href: themes-in-advanced-ediscovery.md
-            - name: Módulo de codificación predictiva (versión preliminar)
+        - name: Usar codificación predictiva (vista previa)
+          items:
+            - name: 'Inicio rápido: codificación predictiva'
+              href: predictive-coding-quick-start.md
+            - name: Obtenga información sobre la codificación predictiva
               href: predictive-coding-overview.md
-            - name: Usar el módulo de relevancia para analizar el contenido
-              href: using-relevance.md
-            - name: Retirada del módulo de relevancia
-              href: relevance-module-retirement.md
+            - name: Crear un modelo de codificación predictiva
+              href: predictive-coding-create-model.md
+            - name: Entrenar un modelo de codificación predictiva
+              href: predictive-coding-train-model.md
+            - name: Aplicar filtro de puntuación de predicción
+              href: predictive-coding-apply-prediction-filter.md
+            - name: Referencia de codificación predictiva
+              href: predictive-coding-reference.md
         - name: Exportar contenido de un caso
           href: exporting-data-ediscover20.md
           items:

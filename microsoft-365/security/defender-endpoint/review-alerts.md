@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: b791f2b62cb4a3f8062c80ceeb04ccfa72f704bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b17af7931b181a5fa30271a3eee07c7abf10a010
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070171"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844027"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Revisar alertas en Microsoft Defender para endpoint
 
@@ -46,7 +46,7 @@ Si selecciona el nombre de una alerta en Defender for Endpoint, aparecerá en su
 
 1. **El título de la** alerta muestra el nombre de la alerta y está allí para recordarle qué alerta inició la investigación actual independientemente de lo que haya seleccionado en la página.
 2. [**Los activos afectados**](#review-affected-assets) enumeran tarjetas de dispositivos y usuarios afectados por esta alerta que se pueden hacer clic para obtener más información y acciones.
-3. El **artículo de alerta** muestra todas las entidades relacionadas con la alerta, interconectadas por una vista de árbol. La alerta del título será la que esté en foco cuando llegues por primera vez a la página de la alerta seleccionada. Las entidades del artículo de alertas se pueden expandir y hacer clic, para proporcionar información adicional y acelerar la respuesta, ya que permiten realizar acciones directamente en el contexto de la página de alerta. Use el artículo de alerta para iniciar la investigación. Obtenga información sobre [cómo en Investigar alertas en Microsoft Defender para endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts).
+3. El **artículo de alerta** muestra todas las entidades relacionadas con la alerta, interconectadas por una vista de árbol. La alerta del título será la que esté en foco cuando llegues por primera vez a la página de la alerta seleccionada. Las entidades del artículo de alertas se pueden expandir y hacer clic, para proporcionar información adicional y acelerar la respuesta, ya que permiten realizar acciones directamente en el contexto de la página de alerta. Use el artículo de alerta para iniciar la investigación. Obtenga información sobre [cómo en Investigar alertas en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/investigate-alerts).
 4. El **panel de detalles** mostrará los detalles de la alerta seleccionada al principio, con detalles y acciones relacionadas con esta alerta. Si selecciona cualquiera de los activos o entidades afectados en el artículo de alerta, el panel de detalles cambiará para proporcionar información contextual y acciones para el objeto seleccionado.
 
 Tenga en cuenta el estado de detección de la alerta. 

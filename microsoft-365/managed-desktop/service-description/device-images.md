@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 00943eb85abbfd2d237ae5544eb69d3ec4d9f875
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245509"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841287"
 ---
 # <a name="device-images"></a>Imágenes del dispositivo
 
@@ -79,13 +79,13 @@ Los equipos comerciales de HP que se suministran con la imagen de HP Corporate R
 
 Estos pasos quitarán todos los datos del dispositivo, por lo que antes de iniciar debes hacer una copia de seguridad de los datos que quieras conservar.
 
-1. [Crea una unidad USB de arranque](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) con WinPE.
+1. [Crea una unidad USB de arranque](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) con WinPE.
 2. Copie estos archivos de C: \\ SOURCES en la unidad USB:
     - El archivo WIM de recuperación de fábrica (por ejemplo, HP \_ EliteBook \_ 840 \_ G7 \_ Notebook PC CR \_ \_ \_ 2004.wim)
     - IMPLEMENTAR. CMD
     - ReCreatePartitions.txt
 3. [Arranque el dispositivo en WinPE](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) Unidad USB.
-4. En un símbolo del sistema, ejecute [Diskpart.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/diskpart#additional-references).
+4. En un símbolo del sistema, ejecute [Diskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references).
 5. En Diskpart, ejecute y, a continuación, anote el número de disco de `list disk` almacenamiento principal (normalmente, Disco 0).
 6. Salga de Diskpart escribiendo `exit` .
 7. En el símbolo del sistema, ejecute , donde sys_disk es el número de disco del disco de almacenamiento principal que acaba de determinar y recovery_wim es el nombre `deploy.cmd <sys_disk> <recovery_wim>` de archivo del archivo .   ARCHIVO WIM que copió anteriormente.

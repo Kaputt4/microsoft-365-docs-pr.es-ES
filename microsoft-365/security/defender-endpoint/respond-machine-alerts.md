@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ae8b08ce3d5bcc34e91f031223108fca053348ce
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: aab9c191e590b0717a0f1be62ed88a699d3b5b57
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572398"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844057"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -51,9 +51,9 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
  Puedes encontrar páginas de dispositivo en cualquiera de las siguientes vistas:
 
 - **Panel de operaciones de seguridad:** seleccione un nombre de dispositivo en la tarjeta Dispositivos en riesgo.
-- **Cola de alertas:** seleccione el nombre del dispositivo junto al icono del dispositivo en la cola de alertas.
+- **Cola de alertas**: seleccione el nombre del dispositivo junto al icono de dispositivo en la cola de alertas.
 - **Lista de dispositivos:** seleccione el título del nombre del dispositivo de la lista de dispositivos.
-- **Cuadro de búsqueda:** seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.
+- **Cuadro de búsqueda**: seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.
 
 >[!IMPORTANT]
 > - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10 versión 1703 o posterior. 
@@ -61,7 +61,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 
 ## <a name="manage-tags"></a>Administrar etiquetas
 
-Agregar o administrar etiquetas para crear una afiliación de grupo lógico. Las etiquetas de dispositivo admiten la asignación adecuada de la red, lo que te permite adjuntar diferentes etiquetas para capturar el contexto y habilitar la creación de listas dinámicas como parte de un incidente.
+Agregar o administrar etiquetas para crear una afiliación de grupo lógico. Las etiquetas de dispositivo son compatibles con la asignación adecuada de la red, lo que permite adjuntar diferentes etiquetas para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente.
 
 Para obtener más información sobre el etiquetado de dispositivos, consulta [Crear y administrar etiquetas de dispositivo.](machine-tags.md)
 
@@ -124,7 +124,7 @@ Como parte del proceso de investigación o respuesta, puedes iniciar de forma re
 
 >[!IMPORTANT]
 >- Esta acción está disponible para dispositivos Windows 10 versión 1709 o posterior.
->- Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+>- Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 Uno que haya seleccionado **Ejecutar examen antivirus,** seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
 
@@ -134,7 +134,7 @@ El Centro de acciones mostrará la información del examen y la escala de tiempo
 
 >[!NOTE]
 >Al desencadenar un examen con la acción de respuesta de Defender for Endpoint, el valor "ScanAvgCPULoadFactor" del antivirus de Microsoft Defender sigue aplicando y limitando el impacto de la CPU del examen.<br> Si ScanAvgCPULoadFactor no está configurado, el valor predeterminado es un límite del 50 % de carga máxima de CPU durante un examen.<br>
->Para obtener más información, [vea configure-advanced-scan-types-microsoft-defender-antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
+>Para obtener más información, [vea configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
 ## <a name="restrict-app-execution"></a>Restringir ejecución de aplicación
 
@@ -143,7 +143,7 @@ Además de contener un ataque al detener procesos malintencionados, también pue
 >[!IMPORTANT]
 > - Esta acción está disponible para dispositivos Windows 10 versión 1709 o posterior.
 > - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender.
-> - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender control de aplicaciones. Para obtener más información, vea [Code integrity policy formats and signing](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+> - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender control de aplicaciones. Para obtener más información, vea [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
 Para restringir la ejecución de una aplicación, se aplica una directiva de integridad de código que solo permite que los archivos se ejecuten si están firmados por un certificado emitido por Microsoft. Este método de restricción puede ayudar a evitar que un atacante controle los dispositivos en peligro y realice más actividades malintencionadas.
 
@@ -191,7 +191,7 @@ Cuando se aísla un dispositivo, se muestra la siguiente notificación para info
 
 Puedes consultar a un experto en amenazas de Microsoft para obtener más información sobre un dispositivo potencialmente en peligro o ya comprometido. Expertos en amenazas de Microsoft puede usarse directamente desde dentro del Centro de seguridad de Microsoft Defender para una respuesta rápida y precisa. Los expertos proporcionan información no solo sobre un dispositivo potencialmente en peligro, sino también para comprender mejor las amenazas complejas, las notificaciones de ataque dirigidas que recibes o si necesitas más información sobre las alertas o un contexto de inteligencia de amenazas que veas en el panel del portal.
 
-Consulte [Consulte a un experto en amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) para obtener más información.
+Consulte [Consulte a un experto en amenazas de Microsoft](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) para obtener más información.
 
 
 ## <a name="check-activity-details-in-action-center"></a>Comprobar los detalles de actividad en el Centro de actividades
@@ -209,4 +209,4 @@ También se muestran todos los demás detalles relacionados, por ejemplo, fecha 
 
 ## <a name="related-topic"></a>Tema relacionado
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
-- [Imprecisión de informe](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
+- [Imprecisión de informe](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
