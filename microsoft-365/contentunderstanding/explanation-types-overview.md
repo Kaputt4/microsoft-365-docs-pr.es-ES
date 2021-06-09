@@ -13,40 +13,40 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga más información sobre la lista de frases, las expresiones regulares y los tipos de explicación de proximidad en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: cfc217d9e671f2a3a9daa89f80e7d932adeac2c0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770870"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843355"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Tipos de explicación en Microsoft SharePoint Syntex
 
 Las explicaciones se utilizan para ayudar a definir la información que desea etiquetar y extraer en los modelos de comprensión de documentos en Microsoft SharePoint Syntex. Al crear una explicación, debe seleccionar un tipo de explicación. Este artículo le ayudará a comprender los distintos tipos de explicación y cómo se usan.
 
-![Captura de pantalla del panel Crear una explicación que muestra los tres tipos de explicación.](../media/content-understanding/explanation-types.png) 
-   
+![Captura de pantalla del panel Crear una explicación que muestra los tres tipos de explicación.](../media/content-understanding/explanation-types.png)
+
 Estos son los tipos de explicación disponibles:
 
 - [**Lista de frases**](#phrase-list): lista de palabras, frases, números u otros caracteres que se pueden usar en el documento o la información que se va a extraer. Por ejemplo, la cadena de texto *médico remitente* está en todos los documentos de derivación médica que identifica. O la cadena *número de teléfono* del médico remitente está en todos los documentos de derivación médica que identifica.
 
 - [**Expresión regular**](#regular-expression): usa una notación que coincida con patrones de caracteres específicos. Por ejemplo, puede usar una expresión regular para buscar todas las instancias de una *dirección de correo electrónico* en un conjunto de documentos.
 
-- [**Proximidad**](#proximity): describe la cercanía que existe entre varias explicaciones. Por ejemplo, el *número de la calle* se mostrará justo antes de la lista de *nombre de la calle*, sin tokens entre ellas (aprenderá sobre los tokens más adelante en este artículo). Usar el tipo de proximidad requiere que tenga al menos dos explicaciones en su modelo o la opción se deshabilitará. 
+- [**Proximidad**](#proximity): describe la cercanía que existe entre varias explicaciones. Por ejemplo, el *número de la calle* se mostrará justo antes de la lista de *nombre de la calle*, sin tokens entre ellas (aprenderá sobre los tokens más adelante en este artículo). Usar el tipo de proximidad requiere que tenga al menos dos explicaciones en su modelo o la opción se deshabilitará.
 
 ## <a name="phrase-list"></a>Lista de frases
 
 Un tipo de explicación de la lista de frases se usa normalmente para identificar y clasificar un documento a través del modelo. Como se describe en el ejemplo de etiqueta *médico remitente*, se trata de una cadena de palabras, frases, números o caracteres que aparece uniformemente en los documentos que se identifican.
 
-Aunque no es obligatorio, puede tener más éxito con su explicación si la frase que captura se encuentra habitualmente en el mismo lugar en los documentos. Por ejemplo, puede que la etiqueta *médico remitente* se encuentre siempre en el primer párrafo del documento. También puede usar la opción avanzada **[Configurar dónde aparecen las frases en el documento](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#configure-where-phrases-occur-in-the-document)** para seleccionar áreas específicas donde se encuentra la frase, especialmente si existe la posibilidad de que la frase aparezca en varias ubicaciones del documento.
+Aunque no es obligatorio, puede tener más éxito con su explicación si la frase que captura se encuentra habitualmente en el mismo lugar en los documentos. Por ejemplo, puede que la etiqueta *médico remitente* se encuentre siempre en el primer párrafo del documento. También puede usar la opción avanzada **[Configurar dónde aparecen las frases en el documento](explanation-types-overview.md#configure-where-phrases-occur-in-the-document)** para seleccionar áreas específicas donde se encuentra la frase, especialmente si existe la posibilidad de que la frase aparezca en varias ubicaciones del documento.
 
 Si la distinción de mayúsculas y minúsculas es un requisito para identificar la etiqueta, usar el tipo Lista de frases le permite especificarla en la explicación si activa la casilla de verificación **Solo mayúsculas exactas**.
 
-![Distinción entre mayúsculas y minúsculas](../media/content-understanding/case-sensitivity.png) 
+![Distinción entre mayúsculas y minúsculas](../media/content-understanding/case-sensitivity.png)
 
-Un tipo de frase es especialmente útil cuando crea una explicación que identifica y extrae información en diferentes formatos, como fechas, números de teléfono y números de tarjetas de crédito. Por ejemplo, una fecha puede mostrarse en diferentes formatos (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, 1 de enero de 2020, etc.). Definir una lista de frases hace que su explicación sea más eficiente cuando capture cualquier posible variación en los datos que trata de identificar y extraer. 
+Un tipo de frase es especialmente útil cuando crea una explicación que identifica y extrae información en diferentes formatos, como fechas, números de teléfono y números de tarjetas de crédito. Por ejemplo, una fecha puede mostrarse en diferentes formatos (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, 1 de enero de 2020, etc.). Definir una lista de frases hace que su explicación sea más eficiente cuando capture cualquier posible variación en los datos que trata de identificar y extraer.
 
-Para el ejemplo del *número de teléfono*, extraiga el número de teléfono de cada médico remitente de todos los documentos de derivación médica que el modelo identifique. Cuando cree la explicación, escriba los distintos formatos que pueda mostrar un número de teléfono en el documento para poder capturar posibles variaciones. 
+Para el ejemplo del *número de teléfono*, extraiga el número de teléfono de cada médico remitente de todos los documentos de derivación médica que el modelo identifique. Cuando cree la explicación, escriba los distintos formatos que pueda mostrar un número de teléfono en el documento para poder capturar posibles variaciones.
 
 ![Patrones de frases de número de teléfono](../media/content-understanding/pattern-list.png)
 
@@ -71,7 +71,7 @@ Si tiene requisitos de usar mayúsculas y minúsculas en su lista de frases, pue
 ![Solo usar mayúsculas y minúsculas exactamente](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> En lugar de crear manualmente una explicación de las listas de frases, utilice la [Biblioteca de explicación](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) para usar plantillas de listas de frases para las listas de frases comunes, como *fecha*, *números de teléfono* o *número de tarjeta de crédito*.
+> En lugar de crear manualmente una explicación de las listas de frases, utilice la [Biblioteca de explicación](explanation-types-overview.md#use-explanation-templates) para usar plantillas de listas de frases para las listas de frases comunes, como *fecha*, *números de teléfono* o *número de tarjeta de crédito*.
 
 ## <a name="regular-expression"></a>Expresión regular
 
@@ -81,7 +81,7 @@ Un tipo de explicación de expresiones regulares le permite crear patrones que a
 - Validar el texto para asegurarse de que coincida con un patrón predefinido (por ejemplo, una dirección de correo electrónico).
 - Extraer, editar, reemplazar o eliminar subcadenas de texto.
 
-Un tipo de expresión regular es especialmente útil cuando se crea una explicación que identifica y extrae información en formatos regulares, como direcciones de correo electrónico, números de cuentas bancarias o direcciones URL. Por ejemplo, una dirección de correo electrónico, como megan@contoso.com, se muestra siempre con un patrón determinado (en el ejemplo, "megan" es la primera parte y "com" es la última). 
+Un tipo de expresión regular es especialmente útil cuando se crea una explicación que identifica y extrae información en formatos regulares, como direcciones de correo electrónico, números de cuentas bancarias o direcciones URL. Por ejemplo, una dirección de correo electrónico, como megan@contoso.com, se muestra siempre con un patrón determinado (en el ejemplo, "megan" es la primera parte y "com" es la última).
 
 La expresión regular de una dirección de correo electrónico es: **[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,6}**.
 
@@ -117,18 +117,18 @@ Para agregar un tipo de explicación de expresiones regulares:
 
 ### <a name="limitations"></a>Limitaciones
 
-En la tabla siguiente, se muestran las opciones de caracteres en línea que no están disponibles actualmente para su uso en patrones de expresiones regulares. 
+En la tabla siguiente, se muestran las opciones de caracteres en línea que no están disponibles actualmente para su uso en patrones de expresiones regulares.
 
 |Opción  |Estado  |Funcionalidad actual  |
 |---------|---------|---------|
 |Distinción entre mayúsculas y minúsculas | No se admite actualmente. | No hay distinción entre mayúsculas y minúsculas en todas las coincidencias que se obtienen.  |
 |Anclajes de línea     | No se admite actualmente. | No se puede especificar una posición específica en una cadena en la que debe producirse una coincidencia.   |
 
-## <a name="proximity"></a>Proximidad 
+## <a name="proximity"></a>Proximidad
 
-El tipo de explicación de proximidad ayuda al modelo a identificar los datos definiendo la proximidad que otros datos tienen con estos. Por ejemplo, en su modelo ha definido dos explicaciones que etiquetan tanto el *número de la dirección de la calle* como el *número de teléfono* del cliente. 
+El tipo de explicación de proximidad ayuda al modelo a identificar los datos definiendo la proximidad que otros datos tienen con estos. Por ejemplo, en su modelo ha definido dos explicaciones que etiquetan tanto el *número de la dirección de la calle* como el *número de teléfono* del cliente.
 
-Sabemos que los números de teléfono del cliente siempre aparecen antes que el número de la calle. 
+Sabemos que los números de teléfono del cliente siempre aparecen antes que el número de la calle.
 
 Alex Wilburn<br>
 555-555-5555<br>
@@ -141,7 +141,7 @@ Use la explicación de proximidad para definir el número de teléfono que se de
 
 #### <a name="what-are-tokens"></a>¿Qué son los tokens?
 
-Para usar el tipo de explicación de proximidad es necesario comprender qué es un token. El número de tokens muestra cómo la explicación de proximidad mide la distancia entre una explicación y otra. Un token es un intervalo continuo (sin incluir espacios ni signos de puntuación) de letras y números. 
+Para usar el tipo de explicación de proximidad es necesario comprender qué es un token. El número de tokens muestra cómo la explicación de proximidad mide la distancia entre una explicación y otra. Un token es un intervalo continuo (sin incluir espacios ni signos de puntuación) de letras y números.
 
 En la siguiente tabla se muestran algunos ejemplos de cómo determinar el número de tokens en una frase.
 
@@ -207,8 +207,8 @@ Puede seleccionar una de las siguientes opciones para este valor:
 
    ![Intervalo personalizado](../media/content-understanding/custom-file.png)
 
-    En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. Para esta opción, necesita seleccionar una posición **Inicio** y una posición **Fin**. Estos valores representan el número de tokens desde el principio del documento. Aunque puede escribir los valores manualmente, es más fácil ajustarlos en el cuadro de selección en el visor. 
-   
+    En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. Para esta opción, necesita seleccionar una posición **Inicio** y una posición **Fin**. Estos valores representan el número de tokens desde el principio del documento. Aunque puede escribir los valores manualmente, es más fácil ajustarlos en el cuadro de selección en el visor.
+
 ## <a name="use-explanation-templates"></a>Usar plantillas de explicación
 
 Aunque se pueden agregar manualmente varios valores de la lista de frases para la explicación, puede resultar más fácil usar las plantillas que se le proporcionan en la biblioteca de explicación.
@@ -216,34 +216,34 @@ Aunque se pueden agregar manualmente varios valores de la lista de frases para l
 Por ejemplo, en lugar de añadir manualmente todas las variaciones para *fecha*, puede utilizar la plantilla de la lista de frases para *fecha* que ya incluye una serie de valores de la lista de frases:
 
 ![Biblioteca de explicación](../media/content-understanding/explanation-template.png)
- 
+
 La biblioteca de explicación incluye varias explicaciones de la *lista de frases* más utilizadas, entre las que se incluyen:
 
 - Fecha: fechas del calendario, todos los formatos. Incluye texto y números (por ejemplo, "9 de diciembre de 2020").
 - Fecha (numérica): fechas del calendario, todos los formatos. Incluye números (por ejemplo, 1-11-2020).
 - Hora: formatos de 12 y 24 horas.
-- Número: números positivos y negativos, hasta 2 decimales. 
+- Número: números positivos y negativos, hasta 2 decimales.
 - Porcentaje: una lista de patrones que representan un porcentaje. Por ejemplo, 1 %, 11 %, 100 % o 11,11 %.
 - Número de teléfono: formatos comunes de EE. UU. e internacionales. Por ejemplo, 000 000 0000, 000-000-0000, (000)000-0000 o (000) 000-0000.
 - Código postal: formatos de código postal de Estados Unidos. Por ejemplo, 11111, 11111-1111.
-- Primera palabra de una frase: patrones comunes para palabras de hasta nueve caracteres. 
+- Primera palabra de una frase: patrones comunes para palabras de hasta nueve caracteres.
 - Final de una oración: signos de puntuación comunes para el final de una oración
-- Tarjeta de crédito: formatos de número de tarjeta de crédito comunes. Por ejemplo, 1111-1111-1111-1111. 
-- Número de la seguridad social: formato de número del seguro social de EE. UU. Por ejemplo, 111-11-1111. 
+- Tarjeta de crédito: formatos de número de tarjeta de crédito comunes. Por ejemplo, 1111-1111-1111-1111.
+- Número de la seguridad social: formato de número del seguro social de EE. UU. Por ejemplo, 111-11-1111.
 - Casilla: una lista de frases que representa variaciones en una casilla rellenada. Por ejemplo, _X_, _ _X_.
-- Moneda: principales símbolos internacionales. Por ejemplo: .$ 
+- Moneda: principales símbolos internacionales. Por ejemplo: .$
 - Correo electrónico CC: lista de frases con el término "CC:" que se suele encontrar cerca de los nombres o direcciones de correo electrónico de otras personas o grupos a los que se envió el mensaje.
 - Fecha del correo electrónico: lista de frases con el término "Enviado el:", que se suele encontrar cerca de la fecha en que se envió el correo electrónico.
 - Saludo de correo electrónico: líneas de apertura comunes de los correos electrónicos.
-- Destinatario de correo electrónico: lista de frases con el término "Para:", que a menudo se encuentra cerca de los nombres o direcciones de correo electrónico de personas o grupos a los que se envió el mensaje. 
-- Remitente de correo electrónico: lista de frases con el término "De:" que se suele encontrar cerca del nombre o la dirección de correo del remitente. 
+- Destinatario de correo electrónico: lista de frases con el término "Para:", que a menudo se encuentra cerca de los nombres o direcciones de correo electrónico de personas o grupos a los que se envió el mensaje.
+- Remitente de correo electrónico: lista de frases con el término "De:" que se suele encontrar cerca del nombre o la dirección de correo del remitente.
 - Asunto del correo electrónico: lista de frases con el término "Asunto:" que se suele encontrar cerca del asunto del correo electrónico.
 
 La biblioteca de explicación incluye varias explicaciones de *expresiones regulares* frecuentemente utilizadas, entre ellas:
 
 - Números de 6 a 17 dígitos: coincide con cualquier número de 6 a 17 dígitos de longitud. Los números de cuenta bancaria de EE. UU. se ajustan a este patrón.
 - Correo electrónico: coincide con un tipo común de dirección de correo electrónico como meganb@contoso.com
-- Número de identificación fiscal de los EE. UU.: coincide con un número de tres dígitos que empieza por nueve seguido de un número de seis dígitos que empieza por siete u ocho. 
+- Número de identificación fiscal de los EE. UU.: coincide con un número de tres dígitos que empieza por nueve seguido de un número de seis dígitos que empieza por siete u ocho.
 - Dirección web (URL): coincide con el formato de una dirección web que empieza por http:// o https://.
 
 La biblioteca de explicación también incluye tres tipos de plantillas automáticas que funcionan con los datos que ha etiquetado en los archivos de ejemplo:
@@ -263,7 +263,7 @@ Al seleccionar la plantilla de explicación Antes de la etiqueta, buscará el pr
 Puede seleccionar **Agregar** para crear una explicación a partir de la plantilla.  A medida que agregue más archivos de ejemplo, se identificarán y agregarán palabras adicionales a la lista de frases.
 
 ![Agregar la etiqueta](../media/content-understanding/before-label-add.png)
- 
+
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Para usar una plantilla de la biblioteca de explicación
 
 1. En la sección de **Explicaciones** de la página de **Entrenamiento** de su modelo, seleccione **Nuevo**, y luego seleccione **De Una Plantilla**.
@@ -274,7 +274,7 @@ Puede seleccionar **Agregar** para crear una explicación a partir de la plantil
 
     ![Seleccionar una plantilla](../media/content-understanding/phone-template.png)
 
-3. La información de la plantilla que ha seleccionado se mostrará en la página **Crear una explicación**. Si es necesario, edite el nombre de la explicación y agregue o elimine elementos de la lista de frases.  
+3. La información de la plantilla que ha seleccionado se mostrará en la página **Crear una explicación**. Si es necesario, edite el nombre de la explicación y agregue o elimine elementos de la lista de frases.
 
     ![Editar plantilla](../media/content-understanding/phone-template-live.png)
 

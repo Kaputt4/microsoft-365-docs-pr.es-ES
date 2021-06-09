@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c028289a58247075c33e85d6d6f3797b3ddad7b4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 204530b8b4a87215053ddcb0434e40e45271da3d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297193"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841011"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Ejemplo de un ataque basado en identidad
 
@@ -44,7 +44,7 @@ Microsoft 365 Defender permite a los analistas filtrar alertas por origen de det
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Ejemplo de filtrado del origen de detección de Defender for Identity":::
 
-Al seleccionar la **alerta de ataque** sospechoso de sobrepaso de hash, se pasa a una página de Microsoft Cloud App Security que muestra información más detallada. Siempre puedes obtener más información sobre una  alerta o ataque seleccionando [](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) Obtener más información sobre este tipo de alerta para leer una descripción del ataque, así como sugerencias de corrección.
+Al seleccionar la **alerta de ataque** sospechoso de sobrepaso de hash, se pasa a una página de Microsoft Cloud App Security que muestra información más detallada. Siempre puedes obtener más información sobre una  alerta o ataque seleccionando [](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) Obtener más información sobre este tipo de alerta para leer una descripción del ataque, así como sugerencias de corrección.
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Ejemplo de una alerta de ataque sospechoso de sobrepaso de hash"::: 
 
@@ -91,7 +91,7 @@ Un analista puede buscar rápidamente palabras clave escribiendo la palabra clav
 
 Consulta la ruta [de la investigación de suplantación](first-incident-path-phishing.md) de identidad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

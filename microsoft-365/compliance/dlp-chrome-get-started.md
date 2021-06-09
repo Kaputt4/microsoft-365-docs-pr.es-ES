@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730515"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843835"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
 
@@ -55,7 +55,7 @@ Antes de empezar, debe confirmar la [Suscripción a Microsoft 365](https://www.m
 - Gobierno y protección de información de Microsoft 365 E5
 - Gobierno y protección de información de Microsoft 365 A5
 
-Para una guía detallada sobre las licencias, vea: [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Para una guía detallada sobre las licencias, vea: [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 - Su organización debe tener la licencia de DLP para punto de conexión
 - Sus dispositivos deben ejecutar Windows 10 x64 compilación 1809 o posterior.
@@ -169,7 +169,7 @@ Antes de agregar la extensión de cumplimiento de Microsoft a la lista de extens
 
 Si no quiere usar Microsoft Endpoint Manager, puede usar directivas de grupo para implementar la extensión de cumplimiento de Microsoft en toda la organización
 
-1. Sus dispositivos deben poder ser administrados mediante la directiva de grupo, y debe importar todos los ADMX de Chrome en el almacén central de la directiva de grupo. Para más información, consulte [Cómo crear y administrar el almacén central de plantillas administrativas de directiva de grupo en Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
+1. Sus dispositivos deben poder ser administrados mediante la directiva de grupo, y debe importar todos los ADMX de Chrome en el almacén central de la directiva de grupo. Para más información, consulte [Cómo crear y administrar el almacén central de plantillas administrativas de directiva de grupo en Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
 2.  Crear un script de PowerShell mediante este comando de PowerShell:
 
@@ -276,8 +276,8 @@ Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
-- [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
+- [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Dispositivos de Azure AD Unidos](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Dispositivos de Azure AD Unidos](/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

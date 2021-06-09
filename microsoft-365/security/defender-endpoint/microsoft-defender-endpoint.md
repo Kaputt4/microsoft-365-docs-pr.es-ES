@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender para punto de conexión
 description: Microsoft Defender para endpoint es una plataforma de seguridad de extremo de empresa que ayuda a defenderse de las amenazas persistentes avanzadas.
-keywords: introducción a Microsoft Defender para endpoint, introducción a Microsoft Defender para endpoint, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, sensor de comportamiento de máquina, seguridad en la nube, análisis, inteligencia de amenazas, reducción de superficie de ataque, protección de última generación, investigación automatizada y corrección, expertos en amenazas de Microsoft, puntuación segura, búsqueda avanzada, Microsoft 365 Defender, búsqueda de amenazas cibernéticas
+keywords: introducción a Microsoft Defender para endpoint, introducción a Microsoft Defender para endpoint, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, sensor de comportamiento de máquina, seguridad en la nube, análisis, inteligencia de amenazas, reducción de superficie de ataque, protección de última generación, investigación automatizada y corrección, expertos en amenazas de Microsoft, puntuación segura, búsqueda avanzada, Microsoft 365 Defender, búsqueda de amenazas cibernéticas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3bab9d0248a2ed8e83807f3c38215e653cba26eb
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935934"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843559"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -33,7 +33,7 @@ ms.locfileid: "51935934"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Para obtener más información acerca de las características y funcionalidades de Windows 10 Enterprise Edition, consulta [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
+> Para obtener más información sobre Windows 10 Enterprise y la funcionalidad de Windows 10 Enterprise [Edition, consulte Windows 10 Enterprise Edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
 Microsoft Defender para endpoint es una plataforma de seguridad de extremo de empresa diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas.
 <p></p>
@@ -45,7 +45,7 @@ Defender for Endpoint usa la siguiente combinación de tecnología integrada en 
 -   **Sensores** de comportamiento de extremo: incrustados en Windows 10, estos sensores recopilan y procesan señales de comportamiento del sistema operativo y envían estos datos de sensor a la instancia privada, aislada y en la nube de Microsoft Defender para Endpoint.
 
 
--   **Análisis** de seguridad en la nube: aprovechando los datos grandes, el aprendizaje de dispositivos y la óptica única de Microsoft en todo el ecosistema de Windows, los productos en la nube empresarial (como Office 365) y los activos en línea, las señales de comportamiento se traducen en información, detecciones y respuestas recomendadas a amenazas avanzadas.
+-   Análisis de seguridad en la **nube:** aprovechar los datos grandes, el aprendizaje de dispositivos y la óptica única de Microsoft en todo el ecosistema de Windows, los productos en la nube empresarial (como Office 365) y los activos en línea, las señales de comportamiento se traducen en información, detecciones y respuestas recomendadas a amenazas avanzadas.
 
 -   Inteligencia de **amenazas:** generada por cazadores de Microsoft, equipos de seguridad y aumentada por la inteligencia de amenazas proporcionada por socios, la inteligencia de amenazas permite a Defender for Endpoint identificar herramientas, técnicas y procedimientos de atacantes y generar alertas cuando se observan en datos de sensor recopilados.
 
@@ -89,7 +89,7 @@ El conjunto de capacidades de reducción de superficie de ataque proporciona la 
 
 <a name="ngp"></a>
 
-**[Protección de última generación](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[Protección de última generación](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para endpoint usa la protección de última generación diseñada para detectar todo tipo de amenazas emergentes.
 
 <a name="edr"></a>
@@ -114,8 +114,8 @@ Defender for Endpoint incluye Puntuación segura de Microsoft para dispositivos 
 El nuevo servicio de búsqueda de amenazas administradas de Microsoft Defender para Endpoint proporciona búsqueda proactiva, priorización y contexto y conocimientos adicionales que permiten a los centros de operaciones de seguridad (SOC) identificar y responder a las amenazas de forma rápida y precisa.
 
 >[!IMPORTANT]
->Los clientes de Defender for Endpoint deben solicitar el servicio de búsqueda de amenazas administradas por Expertos en amenazas de Microsoft para obtener notificaciones proactivas de ataques dirigidos y colaborar con expertos a petición. Expertos a petición es un servicio de complemento. Las notificaciones de ataques dirigidos siempre se incluyen después de haber sido aceptados en el servicio de búsqueda de amenazas administrado por expertos en amenazas de Microsoft.<p>
-><p>Si aún no está inscrito y desea experimentar sus <b></b> ventajas, vaya a Configuración > <b>General</b> > <b>Advanced features</b> Microsoft Threat > <b>Experts</b> para aplicar. Una vez aceptado, se obtienen las ventajas de las notificaciones de ataque dirigido e inicia una prueba de 90 días de Expertos a petición. Póngase en contacto con su representante de Microsoft para obtener una suscripción completa a Expertos a petición.
+>Los clientes de Defender for Endpoint deben solicitar el servicio de búsqueda de amenazas administradas Expertos en amenazas de Microsoft para obtener notificaciones proactivas de ataques dirigidos y colaborar con expertos a petición. Expertos a petición es un servicio de complemento. Las notificaciones de ataques dirigidos siempre se incluyen después de haber sido aceptados en Expertos en amenazas de Microsoft servicio de búsqueda de amenazas administradas.<p>
+><p>Si aún no está inscrito y desea experimentar sus ventajas, vaya <b>a</b> Configuración > <b>características</b> > <b></b> avanzadas generales > <b>Expertos en amenazas de Microsoft</b> aplicar. Una vez aceptado, se obtienen las ventajas de las notificaciones de ataque dirigido e inicia una prueba de 90 días de Expertos a petición. Póngase en contacto con su representante de Microsoft para obtener una suscripción completa a Expertos a petición.
 
 <a name="apis"></a>
 
@@ -134,8 +134,8 @@ Defender for Endpoint se integra directamente con varias soluciones de Microsoft
 - Microsoft Defender para Office
 - Skype Empresarial
 
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
-Con Microsoft 365 Defender, Defender para endpoint y varias soluciones de seguridad de Microsoft forman un conjunto de aplicaciones de defensa empresarial unificado previo y posterior a la infracción que se integra de forma nativa en los puntos de conexión, identidad, correo electrónico y aplicaciones para detectar, prevenir, investigar y responder automáticamente a ataques sofisticados.
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+Con Microsoft 365 Defender, Defender for Endpoint y varias soluciones de seguridad de Microsoft forman un conjunto de aplicaciones de defensa empresarial unificado previo y posterior a la infracción que se integra de forma nativa entre puntos de conexión, identidad, correo electrónico y aplicaciones para detectar, prevenir, investigar y responder automáticamente a ataques sofisticados.
 
 
 ## <a name="related-topic"></a>Tema relacionado

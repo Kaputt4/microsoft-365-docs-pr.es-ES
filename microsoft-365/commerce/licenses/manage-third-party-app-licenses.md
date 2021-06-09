@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
-ms.reviewer: argani
 search.appverid:
 - MET150
 description: Obtén información sobre cómo administrar licencias para aplicaciones de terceros en el centro de administración Microsoft 365 usuarios.
-ms.openlocfilehash: 91c2a75aefe28b3525996522f7fdd55d22524d43
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.date: 04/30/2021
+ms.openlocfilehash: 2b74c8a43f759ca2cdcecac6a59fca5c0952b44f
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107727"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821408"
 ---
 # <a name="manage-third-party-app-licenses-in-the-microsoft-365-admin-center"></a>Administrar licencias de aplicaciones de terceros en el Centro Microsoft 365 administración
 
@@ -32,7 +33,7 @@ Una aplicación de terceros es una aplicación que compras a un proveedor de sof
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="assign-third-party-app-licenses-to-users-or-groups"></a>Asignar licencias de aplicaciones de terceros a usuarios o grupos
 

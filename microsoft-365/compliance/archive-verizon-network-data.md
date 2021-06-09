@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos SMS MMS y de la red de Verizon en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 22647a244878242789aa0a3e671747f113ccea1b
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: c72f17c21439827cf0c00e32a427eb1d6fd0c20c
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077327"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821396"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Configurar un conector para archivar datos de Red De Verizon
 
@@ -41,7 +41,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
    Además de la asignación automática  de usuarios mediante el valor de la propiedad Dirección de correo electrónico del usuario, también puede implementar la asignación personalizada cargando un archivo de asignación CSV. Este archivo de asignación contiene el número de teléfono móvil y la dirección Microsoft 365 de correo electrónico correspondiente para los usuarios de la organización. Si habilita la asignación automática de usuarios y la asignación personalizada, por cada elemento de Verizon, el conector primero busca el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que corresponda al número de teléfono móvil de un usuario, el conector usará los valores de la propiedad de dirección de correo electrónico del elemento que está intentando importar. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizado o en la propiedad de dirección de correo electrónico del elemento de Verizon, el elemento no se importará.
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 
 Algunos de los pasos de implementación necesarios para archivar datos de Red De Verizon son externos a Microsoft 365 y deben completarse antes de poder crear un conector en el centro de cumplimiento.
 
@@ -54,6 +54,8 @@ Algunos de los pasos de implementación necesarios para archivar datos de Red De
 - Sus empleados deben tener teléfonos móviles corporativos y de responsabilidad corporativa en la red móvil de Verizon. El archivado de mensajes Microsoft 365 no está disponible para dispositivos de propiedad de los empleados o Bring Your Own Devices (BYOD).
 
 - Al usuario que crea un conector de red de Verizon se le debe asignar el rol De importación de buzones de Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** del centro de Microsoft 365 cumplimiento. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+
+- Este conector de datos está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="create-a-verizon-network-connector"></a>Crear un conector de red de Verizon
 

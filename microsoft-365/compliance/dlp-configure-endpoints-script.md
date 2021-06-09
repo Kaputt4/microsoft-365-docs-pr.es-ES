@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Use un script local para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: e9efa76af72f9169bdec1acf35d72066ac0a776e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 55109d8fda52db6651d4398cd84ffd6668b4d871
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893311"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843451"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Incorporar dispositivos Windows 10 mediante un script local
 
@@ -34,7 +34,7 @@ También puede incorporar manualmente dispositivos individuales para Microsoft 3
 >
 > Para implementar a escala, use [otras opciones de implementación.](dlp-configure-endpoints.md) Por ejemplo, puede implementar un script de incorporación en más de 10 dispositivos en producción con el script disponible en [Onboard Windows 10 devices using Group Policy](dlp-configure-endpoints-gp.md).
 
-## <a name="onboard-devices"></a>Dispositivos integrados
+## <a name="onboard-devices"></a>Incorporar dispositivos
  
 1.  Abra el archivo de configuración .zip GP (*DeviceComplianceOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com)
 
@@ -93,7 +93,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 
 ## <a name="monitor-device-configuration"></a>Supervisar la configuración del dispositivo
-Puede seguir los diferentes pasos de comprobación en [Solucionar problemas de incorporación](( para comprobar que el script se completó correctamente https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) y que el agente se está ejecutando.
+Puede seguir los distintos pasos de comprobación de [Solucionar problemas de incorporación](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) para comprobar que el script se completó correctamente y que el agente se está ejecutando.
 
 La supervisión también se puede realizar directamente en el portal o mediante las distintas herramientas de implementación.
 

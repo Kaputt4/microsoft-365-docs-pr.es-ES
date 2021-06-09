@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 55c001781ff016d7a23dc5db286d454b39fac5de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904051"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841059"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Investigar eventos de conexión que ocurren tras los servidores proxy de reenvío
 
@@ -45,11 +45,11 @@ La supervisión de la conexión de red detrás de un proxy de reenvío es posibl
 
 La protección de red se puede controlar con los siguientes modos:
 
-- **Bloquear** <br> Los usuarios o aplicaciones no se conectarán a dominios peligrosos. Podrás ver esta actividad en el Centro de seguridad de Microsoft Defender.
-- **Auditoría** <br> Los usuarios o aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. Sin embargo, seguirás teniendo esta actividad en el Centro de seguridad de Microsoft Defender.
+- **Bloquear** <br> Los usuarios o aplicaciones no se conectarán a dominios peligrosos. Podrás ver esta actividad en Centro de seguridad de Microsoft Defender.
+- **Auditoría** <br> Los usuarios o aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. Sin embargo, seguirás teniendo esta actividad en Centro de seguridad de Microsoft Defender.
 
 
-Si desactivas la protección de red, no se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. No verá ninguna actividad de red en el Centro de seguridad de Microsoft Defender.
+Si desactivas la protección de red, no se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. No verá ninguna actividad de red en Centro de seguridad de Microsoft Defender.
 
 Si no lo configura, el bloqueo de red se desactivará de forma predeterminada.
 
@@ -94,4 +94,4 @@ DeviceNetworkEvents
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Aplicación de protección de red con GP: CSP de directiva](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [Aplicación de protección de red con GP: CSP de directiva](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

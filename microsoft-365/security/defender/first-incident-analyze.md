@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8eb36ca630a9748de07c5cbe84f0e43ef23a47cf
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297229"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841083"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Triage and analyze your first incident
 
@@ -45,10 +45,10 @@ Una vez detectado un incidente de seguridad, Microsoft 365 Defender presenta los
 Microsoft 365 Defender recibe alertas y eventos de varias plataformas de seguridad de Microsoft como orígenes de detección para crear una imagen holística y un contexto de actividad malintencionada. Estos son los posibles orígenes de detección:
 
 - [Microsoft Defender para endpoint](../defender-endpoint/microsoft-defender-endpoint.md) es una solución detección y respuesta de puntos de conexión (EDR) que usa antivirus de Microsoft Defender, así como protección contra amenazas avanzada habilitada en la nube con Microsoft Security Graph. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta. Protege los puntos de conexión de ciberamenazas, detecta ataques avanzados e infracciones de datos, automatiza los incidentes de seguridad y mejora la posición de seguridad. 
-- [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is) es una solución de seguridad basada en la nube que usa las señales locales de Servicios de dominio de Active Directory (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. 
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) actúa como un guardián para el acceso de agente en tiempo real entre los usuarios de la empresa y los recursos en la nube que usan, independientemente del dispositivo que estén usando. 
+- [Microsoft Defender for Identity](/defender-for-identity/what-is) es una solución de seguridad basada en la nube que usa las señales locales de Servicios de dominio de Active Directory (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. 
+- [Microsoft Cloud App Security](/cloud-app-security/) actúa como un guardián para el acceso de agente en tiempo real entre los usuarios de la empresa y los recursos en la nube que usan, independientemente del dispositivo que estén usando. 
 - [Microsoft Defender para Office 365](../office-365-security/overview.md) protege su organización contra amenazas malintencionadas en mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. 
-- [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction) es un sistema de administración de seguridad de infraestructura unificado que refuerza la posición de seguridad de los centros de datos y proporciona protección contra amenazas avanzada en las cargas de trabajo híbridas en la nube, así como en las instalaciones. 
+- [Azure Security Center](/azure/security-center/security-center-introduction) es un sistema de administración de seguridad de infraestructura unificado que refuerza la posición de seguridad de los centros de datos y proporciona protección contra amenazas avanzada en las cargas de trabajo híbridas en la nube, así como en las instalaciones. 
 
 En Microsoft 365 Defender, los incidentes se identifican mediante la correlación de [alertas](incidents-overview.md) de estos diferentes orígenes de detección. En lugar de gastar recursos en cadenas o distinguir varias alertas en sus respectivos incidentes, puedes empezar con la cola de incidentes en Microsoft 365 Defender inmediatamente. Esto le permite realizar triajes de incidentes de manera eficaz en puntos de conexión, identidades, correo electrónico y aplicaciones, y reducir los daños causados por un ataque.
 
@@ -133,7 +133,7 @@ Aquí le mostramos un ejemplo:
 
 Obtenga información sobre [cómo corregir incidentes](first-incident-remediate.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

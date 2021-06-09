@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: cbd95ed3ee70b69b395f73c83852a9f37a269f0b
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 1a0297271c3e0e8fb94a476982f146aa8c221e7a
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259492"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809136"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -70,6 +70,9 @@ Cuando la configuración de **Acceso por aplicaciones y exploradores no permitid
 > [!IMPORTANT]
 > No incluya la ruta de acceso al archivo ejecutable, solo el nombre del archivo ejecutable (por ejemplo, browser.exe).
 
+### <a name="unallowed-bluetooth-apps"></a>Aplicaciones de Bluetooth no permitidas
+
+Evite que los usuarios transfieran archivos protegidos por las directivas a través de aplicaciones Bluetooth específicas.
 
 ### <a name="browser-and-domain-restrictions"></a>Restricciones del dominio y del explorador:
 Restrinja el uso compartido de los archivos confidenciales que coincidan con las directivas con dominios de servicio en la nube sin restricciones.
@@ -97,6 +100,11 @@ Puede controlar cómo interactúan los usuarios con la opción de justificación
 - Los usuarios solo pueden seleccionar una justificación integrada.
 - Los usuarios solo pueden introducir su propia justificación.
 
+### <a name="always-audit-file-activity-for-devices"></a>Auditar siempre la actividad de archivos para dispositivos
+
+De forma predeterminada cuando los dispositivos están integrados, la actividad de los archivos Office, PDF y CSV se audita automáticamente y está disponible para su revisión en el Explorador de actividades. Desactive esta característica si quiere que esta actividad se audite solo cuando los dispositivos integrados estén incluidos en una directiva activa.
+
+La actividad de archivo se auditará siempre en los dispositivos integrados, independientemente de si están o no incluidos en una directiva activa.
 
 ## <a name="tying-dlp-settings-together"></a>Vincular las opciones de configuración DLP
 
@@ -221,7 +229,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
-- [Herramientas y métodos de incorporación para equipos con Windows 10](/microsoft-365/compliance/dlp-configure-endpoints).
+- [Herramientas y métodos de incorporación para equipos con Windows 10](/microsoft-365/compliance/dlp-configure-endpoints).
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Unido a Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargue el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

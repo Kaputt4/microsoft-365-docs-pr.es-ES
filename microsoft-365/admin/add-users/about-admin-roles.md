@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador, como los administradores de servicios, se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 3163b7a4037a923122d2da170ac5ea9e8c2d0185
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 68a5c92faa6f5cdbbd56678649441a45a600ed04
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634201"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809040"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
-La suscripción a Microsoft 365 u Office 365 incluye un conjunto de roles de administrador que puede asignar a los usuarios de su organización usando el Centro de administración de Microsoft 365. Cada rol de administrador se asigna a una función empresarial común y da permisos a los usuarios de su organización para realizar tareas específicas en los centros de administración.
+Microsoft Office 365 o la subscripción a Office 365 incluye un conjunto de roles de administrador que puede asignar a usuarios de su organización que usen el Centro de administración de Microsoft 365. Cada rol de administrador corresponde a una función común de la empresa y concede permisos a los usuarios de su organización para realizar tareas específicas en los Centros de administración.
 
 El Centro de administración de Microsoft 365 le permite administrar roles de Azure AD y de Microsoft Intune. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure AD y en el centro de administración de Intune.
 
@@ -76,14 +76,17 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Administrador de licencias    |   Asigne el rol de administrador de licencias a los usuarios que necesiten asignar y quitar licencias a usuarios y editar su ubicación de uso. <br/><br/> Los administradores de licencias también pueden: <br> - Volver a procesar asignaciones de licencia para licencias basadas en grupos <br> - Asignar licencias de producto a grupos de licencias basadas en grupos  |
 |Administrador de aplicaciones de Office    |   Asigne el rol de administrador de aplicaciones de Office a los usuarios que necesiten hacer lo siguiente: <br> - Usar el servicio de directivas en la nube de Office para crear y administrar directivas basadas en la nube para Office <br> - Crear y administrar solicitudes de servicio <br> - Administrar el contenido de Novedades que los usuarios ven en sus aplicaciones de Office   <br> - Supervisar el estado del servicio  |
 |Administrador de contraseñas  |   Asigne el rol de administrador de contraseñas a un usuario que necesite restablecer las contraseñas de los no administradores y los administradores de contraseñas.   |
-|Administrador de soporte técnico del servicio   |   Asigne el rol de administrador de soporte técnico de servicio como un rol adicional a los administradores o usuarios que necesitan hacer lo siguiente, además de su rol de administrador habitual: <br> - Abrir y administrar solicitudes de servicio <br> - Ver y compartir publicaciones del centro de mensajes <br> - Supervisar el estado del servicio   |
+|Lector del Centro de mensajes |   Asigne el rol de lector de informes a los usuarios que necesiten hacer lo siguiente: <br> - Supervisar las notificaciones del Centro de mensajes <br> - Obtener resúmenes semanales por correo electrónico de las publicaciones y actualizaciones del Centro de mensajes <br> - Compartir publicaciones del Centro de mensajes <br> - Tener acceso de solo lectura a servicios de Azure AD, como usuarios y grupos|
+|Administrador de Power Platform |   Asigne el rol de lector de informes a los usuarios que necesiten hacer lo siguiente: <br> - Administrar todas las características de administrador para PowerApps, Microsoft Flow y prevención de pérdida de datos <br> - Crear y administrar solicitudes de servicio <br> - Supervisar el estado del servicio  |
+|Lector de informes |   Asigne el rol de lector de informes a los usuarios que necesiten hacer lo siguiente: <br> - Ver datos de uso e informes de actividad en el Centro de administración de Microsoft 365 <br> - Obtener acceso al paquete de contenido de adopción de Power BI <br> - Obtener acceso a los informes de inicio de sesión y a la actividad en Azure AD <br> - Ver datos devueltos por la API de informes de Microsoft Graph|
+|Administrador de soporte técnico del servicio   |   Asigne el rol de administrador de soporte técnico de servicio como un rol adicional a los administradores o usuarios que necesiten hacer, además de su rol de administrador habitual, lo siguiente: <br> - Abrir y administrar solicitudes de servicio <br> - Ver y compartir publicaciones del centro de mensajes <br> - Supervisar el estado del servicio   |
 |Administrador de SharePoint    |   Asigne el rol de administrador de SharePoint a los usuarios que necesiten acceder y administrar el centro de administración de SharePoint Online. <br><br>Los administradores de SharePoint también pueden: <br> - Crear y eliminar sitios <br> - Administrar colecciones de sitios y la configuración global de SharePoint   |
 |Administrador de servicios de Teams    |   Asigne el rol de administrador de servicios de Teams a los usuarios que necesiten acceder y administrar el centro de administración de Teams. <br><br>Los administradores de servicio de Teams también pueden: <br> - Administrar reuniones <br> - Administrar puentes de conferencia <br> - Administrar la configuración de toda la organización, incluida la federación, la actualización de equipos y la configuración de cliente de equipos   |
 |Administrador de usuarios     |    Asigne el rol de administrador de usuarios a los usuarios que necesiten hacer lo siguiente para todos los usuarios: <br> - Agregar usuarios y grupos <br> - Asignar licencias <br> - Administrar las propiedades de la mayoría de los usuarios <br> - Crear y administrar vistas de usuarios <br> - Actualizar las directivas de expiración de contraseña <br> - Administrar solicitudes de servicio <br> - Supervisar el estado del servicio <br><br>  El administrador de usuario también puede realizar las siguientes acciones para los usuarios que no sean administradores y para los usuarios que tengan asignados los siguientes roles: Lector de directorios, Invitador de usuarios invitados, Administrador del departamento de soporte técnico, Lector del centro de mensajes y Lector de informes: <br> - Administrar nombres de usuario<br> - Eliminar y restaurar usuarios<br> - Restablecer contraseñas <br> - Forzar a los usuarios a cerrar sesión <br> - Actualizar claves de dispositivo (FIDO)   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administración delegada para Microsoft Partners
 
-Si está trabajando con un partner de Microsoft, puede asignarle roles de administrador. Por su parte, los partners pueden asignar roles de administrador a los usuarios en sus propias empresas o bien en la suya. Es posible que quiera que lo hagan si, por ejemplo, están configurando y administrando la organización online por usted.
+Si está trabajando con un partner de Microsoft, puede asignarle roles de administrador. Por su parte, los partners pueden asignar roles de administrador a los usuarios de su empresa, o bien de la suya propia. Es posible que usted quiera que lo hagan si, por ejemplo, son ellos quienes configuran y administran su organización en línea por usted.
   
 Un partner puede asignar estos roles: 
   

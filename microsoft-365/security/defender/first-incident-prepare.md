@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4fc124bf8787d5880d78a4f5208bd66329da07a0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: da9147955c5da9ea727854420b3d4d160583ef73
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539040"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840951"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparar la posición de seguridad para el primer incidente
 
@@ -40,14 +40,14 @@ Prepararse para el tratamiento de incidentes implica configurar la protección s
 
 Microsoft 365 Defender puede ayudar a abordar varios aspectos de la prevención de incidentes: 
 
-- Implementación de un [marco de confianza](https://docs.microsoft.com/security/zero-trust/) cero
+- Implementación de un [marco de confianza](/security/zero-trust/) cero
 - Determinación de la posición de seguridad mediante la asignación de una puntuación con [puntuación segura de Microsoft](microsoft-secure-score.md)
 - Prevención de amenazas mediante evaluaciones de vulnerabilidad en [Administración de amenazas y vulnerabilidades](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Descripción de las amenazas de seguridad más recientes para que pueda prepararse para ellas
 
 ## <a name="step-1-implement-zero-trust"></a>Paso 1. Implementar la confianza cero
 
-[Zero Trust](https://docs.microsoft.com/security/zero-trust/) es una filosofía de seguridad integrada y una estrategia integral que tiene en cuenta la naturaleza compleja de cualquier entorno moderno, incluidos los trabajadores móviles y los usuarios, dispositivos, aplicaciones y datos, dondequiera que estén ubicados. Al proporcionar un único panel de cristal para administrar todas las detecciones de forma coherente, Microsoft 365 Defender puede facilitar que el equipo de operaciones de seguridad implemente los [principios](https://docs.microsoft.com/security/zero-trust/#guiding-principles-of-zero-trust) de guía de la confianza cero. 
+[Zero Trust](/security/zero-trust/) es una filosofía de seguridad integrada y una estrategia integral que tiene en cuenta la naturaleza compleja de cualquier entorno moderno, incluidos los trabajadores móviles y los usuarios, dispositivos, aplicaciones y datos, dondequiera que estén ubicados. Al proporcionar un único panel de cristal para administrar todas las detecciones de forma coherente, Microsoft 365 Defender puede facilitar que el equipo de operaciones de seguridad implemente los [principios](/security/zero-trust/#guiding-principles-of-zero-trust) de guía de la confianza cero. 
 
 Los componentes de Microsoft 365 Defender pueden mostrar infracciones de reglas que se han implementado para establecer directivas de acceso condicional para la confianza cero mediante la integración de datos de Microsoft Defender para endpoint (MDE) u otros proveedores de seguridad móvil como origen de información para las directivas de cumplimiento de dispositivos y la implementación de directivas de acceso condicional basadas en dispositivos. 
 
@@ -55,7 +55,7 @@ El riesgo del dispositivo influye directamente en los recursos a los que podrá 
 
 La automatización es una parte fundamental de la implementación y el mantenimiento de un entorno de confianza cero, al tiempo que se reduce el número de alertas que podrían dar lugar a eventos de respuesta a incidentes (IR). Los componentes de Microsoft 365 Defender se [](m365d-autoir.md) pueden automatizar, como acciones de corrección (conocidas como investigaciones de un incidente en el centro de seguridad de Microsoft 365), acciones de notificación e incluso la creación de vales de soporte técnico, como [en ServiceNow](https://microsoft.service-now.com/sp/).
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>Paso 2. Determinar la posición de seguridad de la organización
+## <a name="step-2-determine-your-organizations-security-posture"></a>Paso 2. Determinar la posición de seguridad de la organización
 
 A continuación, las organizaciones pueden usar la puntuación segura de [Microsoft](microsoft-secure-score.md) en Microsoft 365 Defender para determinar su posición de seguridad actual y considerar recomendaciones sobre cómo mejorarla. Cuanto mayor sea la puntuación, más recomendaciones de seguridad y acciones de mejora han sido tomadas por la organización. Las recomendaciones de puntuación segura se pueden tomar en diferentes productos y permitir que las organizaciones eleven sus puntuaciones incluso más alto. 
 

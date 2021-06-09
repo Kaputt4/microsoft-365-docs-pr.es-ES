@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 71daccdbcb223ac48d80721bf0a296d9c1a7c98c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: a7f343db64174fe3c48eaf8b584b03b53921edcb
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770102"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843619"
 ---
 # <a name="list-exposure-score-by-device-group"></a>Puntuación de exposición de lista por grupo de dispositivos
 
@@ -106,5 +106,5 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Administración de vulnerabilidades basada & riesgos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Puntuación de & vulnerabilidad de amenazas](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Puntuación de & vulnerabilidad de amenazas](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

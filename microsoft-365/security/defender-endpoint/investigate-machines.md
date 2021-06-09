@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929114"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843583"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión
 
@@ -39,7 +39,7 @@ ms.locfileid: "51929114"
 Investigue los detalles de una alerta que se genera en un dispositivo específico para identificar otros comportamientos o eventos que puedan estar relacionados con la alerta o el ámbito potencial de la infracción.
 
 > [!NOTE]
-> Como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Este es el modo: [Recopilar paquete de investigación de dispositivos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
+> Como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Este es el modo: [Recopilar paquete de investigación de dispositivos](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
 
 Puedes hacer clic en los dispositivos afectados siempre que los veas en el portal para abrir un informe detallado sobre ese dispositivo. Los dispositivos afectados se identifican en las siguientes áreas:
 
@@ -109,12 +109,12 @@ La **pestaña Escala** de tiempo proporciona una vista cronológica de los event
 La escala de tiempo también permite profundizar selectivamente en los eventos que se produjeron en un período de tiempo determinado. Puedes ver la secuencia temporal de eventos que se produjeron en un dispositivo durante un período de tiempo seleccionado. Para controlar aún más la vista, puede filtrar por grupos de eventos o personalizar las columnas.
 
 >[!NOTE]
-> Para que se muestren eventos de firewall, deberá habilitar la directiva de auditoría, consulte [Audit Filtering Platform connection](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
+> Para que se muestren eventos de firewall, deberá habilitar la directiva de auditoría, consulte [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
 >Firewall cubre los siguientes eventos
 >
->- [5025:](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) servicio de firewall detenido
->- [5031:](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) aplicación bloqueada para no aceptar conexiones entrantes en la red
->- [5157:](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) conexión bloqueada
+>- [5025:](/windows/security/threat-protection/auditing/event-5025) servicio de firewall detenido
+>- [5031:](/windows/security/threat-protection/auditing/event-5031) aplicación bloqueada para no aceptar conexiones entrantes en la red
+>- [5157:](/windows/security/threat-protection/auditing/event-5157) conexión bloqueada
 
 ![Imagen de la escala de tiempo del dispositivo con eventos](images/timeline-device.png)
 

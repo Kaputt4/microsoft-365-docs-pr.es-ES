@@ -1,7 +1,7 @@
 ---
-title: Corregir vulnerabilidades con la administración de amenazas y vulnerabilidades
-description: Corrija las debilidades de seguridad detectadas a través de recomendaciones de seguridad y cree excepciones si es necesario en la administración de amenazas y vulnerabilidades.
-keywords: Microsoft Defender para la corrección de endpoint tvm, Microsoft Defender para Endpoint tvm, administración de amenazas y vulnerabilidades, administración de vulnerabilidades de & amenazas, corrección de la administración de vulnerabilidades de &, intune de corrección de tvm, sccm de corrección de tvm
+title: Corregir vulnerabilidades con Administración de amenazas y vulnerabilidades
+description: Corrija las debilidades de seguridad detectadas mediante recomendaciones de seguridad y cree excepciones si es necesario, en Administración de amenazas y vulnerabilidades.
+keywords: Microsoft Defender para la corrección de endpoint tvm, Microsoft Defender para Endpoint tvm, Administración de amenazas y vulnerabilidades, threat & administración de vulnerabilidades, threat & administración de vulnerabilidades remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,52 +18,52 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56b6c809e31285bbfae47a5fdcc0446890919e8b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 602a38d8ad27505e81628db265681ac89218e593
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934074"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840916"
 ---
-# <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corregir vulnerabilidades con la administración de amenazas y vulnerabilidades
+# <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corregir vulnerabilidades con Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="request-remediation"></a>Corrección de solicitudes
 
-La capacidad de administración de amenazas y vulnerabilidades en Microsoft Defender para endpoints hace que se solucione la diferencia entre los administradores de SEGURIDAD y TI a través del flujo de trabajo de solicitud de corrección. Los administradores de seguridad como usted pueden solicitar al administrador de TI que corrija una vulnerabilidad de las **páginas** de recomendaciones de seguridad a Intune.
+La Administración de amenazas y vulnerabilidades de Microsoft Defender para endpoints se abate entre los administradores de seguridad y TI a través del flujo de trabajo de solicitud de corrección. Los administradores de seguridad como usted pueden solicitar al administrador de TI que corrija una vulnerabilidad de las **páginas** de recomendaciones de seguridad a Intune.
 
-### <a name="enable-microsoft-intune-connection"></a>Habilitar la conexión de Microsoft Intune
+### <a name="enable-microsoft-intune-connection"></a>Habilitar Microsoft Intune conexión
 
-Para usar esta funcionalidad, habilite las conexiones de Microsoft Intune. En el Centro de seguridad de Microsoft Defender, vaya **a Configuración**  >  **General**  >  **Advanced features**. Desplácese hacia abajo y busque **la conexión de Microsoft Intune**. De forma predeterminada, la alternancia está desactivada. Activar la **alternancia de conexión de Microsoft Intune** . 
+Para usar esta funcionalidad, habilite las Microsoft Intune conexión. En el Centro de seguridad de Microsoft Defender, vaya **a** Configuración  >  **características**  >  **avanzadas generales**. Desplácese hacia abajo y busque **Microsoft Intune conexión**. De forma predeterminada, la alternancia está desactivada. Activar la **Microsoft Intune de** **conexión** activa .
 
 **Nota:** Si tienes habilitada la conexión de Intune, obtienes una opción para crear una tarea de seguridad de Intune al crear una solicitud de corrección. Esta opción no aparece si la conexión no está establecida.
 
-Consulta [Usar Intune para corregir las vulnerabilidades identificadas por Microsoft Defender para obtener más](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) información.
+Consulta [Usar Intune para corregir las vulnerabilidades identificadas por Microsoft Defender para obtener más](/intune/atp-manage-vulnerabilities) información.
 
 ### <a name="remediation-request-steps"></a>Pasos de solicitud de corrección
 
-1. Vaya al menú de navegación de administración de amenazas y vulnerabilidades en el Centro de seguridad de Microsoft Defender y seleccione [**Recomendaciones de seguridad**](tvm-security-recommendation.md).
+1. Vaya al menú Administración de amenazas y vulnerabilidades navegación de la Centro de seguridad de Microsoft Defender y seleccione [**Recomendaciones de seguridad**](tvm-security-recommendation.md).
 
 2. Seleccione una recomendación de seguridad para la que desea solicitar corrección y, a continuación, seleccione **Opciones de corrección**.
 
 3. Rellene el formulario, incluidos los grupos de dispositivos aplicables, la prioridad, la fecha de vencimiento y las notas opcionales.
     1. Si elige la opción de corrección "atención requerida", la selección de una fecha de vencimiento no estará disponible ya que no hay ninguna acción específica.
 
-4. Seleccione **Enviar solicitud**. Enviar una solicitud de corrección crea un elemento de actividad de corrección dentro de la administración de amenazas y vulnerabilidades, que se puede usar para supervisar el progreso de corrección de esta recomendación. Esto no desencadenará una corrección ni aplicará ningún cambio en los dispositivos.
+4. Seleccione **Enviar solicitud**. Enviar una solicitud de corrección crea un elemento de actividad de corrección dentro de Administración de amenazas y vulnerabilidades, que se puede usar para supervisar el progreso de corrección de esta recomendación. Esto no desencadenará una corrección ni aplicará ningún cambio en los dispositivos.
 
 5. Notifique al administrador de TI acerca de la nueva solicitud y haga que inicie sesión en Intune para aprobar o rechazar la solicitud e iniciar una implementación de paquete.
 
 6. Vaya a la [**página Corrección**](tvm-remediation.md) para ver el estado de la solicitud de corrección.
 
-Si quieres comprobar cómo se muestra el vale en Intune, consulta Usar Intune para corregir las vulnerabilidades identificadas por [Microsoft Defender](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) para endpoint para obtener más información.
+Si quieres comprobar cómo se muestra el vale en Intune, consulta Usar Intune para corregir las vulnerabilidades identificadas por [Microsoft Defender](/intune/atp-manage-vulnerabilities) para endpoint para obtener más información.
 
 >[!NOTE]
 >Si la solicitud implica la corrección de más de 10 000 dispositivos, solo podemos enviar 10 000 dispositivos para su corrección a Intune.
@@ -74,7 +74,7 @@ Reduzca la exposición de su organización a las vulnerabilidades y aumente la c
 
 ## <a name="view-your-remediation-activities"></a>Ver las actividades de corrección
 
-Cuando envía una solicitud de corrección desde la página Recomendaciones de seguridad, inicia una actividad de corrección. Se crea una tarea de seguridad que se puede  realizar un seguimiento en la página de corrección de la administración de amenazas y vulnerabilidades, y se crea un vale de corrección en Microsoft Intune.
+Cuando envía una solicitud de corrección desde la página Recomendaciones de seguridad, inicia una actividad de corrección. Se crea una tarea de seguridad que se puede realizar un seguimiento en la página Administración de amenazas y vulnerabilidades **corrección** y se crea un vale de corrección en Microsoft Intune.
 
 Si elige la opción de corrección "atención requerida", no habrá ninguna barra de progreso, estado de vale o fecha de vencimiento, ya que no hay ninguna acción real que podamos supervisar.
 
@@ -96,12 +96,12 @@ Realice un seguimiento de quién cerró la actividad de corrección con la colum
 
 ### <a name="top-remediation-activities-in-the-dashboard"></a>Principales actividades de corrección en el panel
 
-Ver **las principales actividades de corrección** en el panel de administración de amenazas y [vulnerabilidades.](tvm-dashboard-insights.md) Seleccione cualquiera de las entradas para ir a la **página Corrección.** Puede marcar la actividad de corrección como completada después de que el equipo de administración de TI corrija la tarea.
+Ver **las principales actividades de** corrección en el Administración de amenazas y vulnerabilidades [panel](tvm-dashboard-insights.md). Seleccione cualquiera de las entradas para ir a la **página Corrección.** Puede marcar la actividad de corrección como completada después de que el equipo de administración de TI corrija la tarea.
 
 ![Ejemplo de tarjeta de actividades de corrección superior con una tabla que enumera las actividades principales que se generaron a partir de recomendaciones de seguridad.](images/tvm-remediation-activities-card.png)
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Información general sobre amenazas administración de vulnerabilidades amenazas](next-gen-threat-and-vuln-mgt.md)
 - [Panel](tvm-dashboard-insights.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)

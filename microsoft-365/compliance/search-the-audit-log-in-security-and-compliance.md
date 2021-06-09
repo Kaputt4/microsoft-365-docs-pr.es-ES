@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536051"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809148"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -158,7 +158,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 1. Vaya a [https://protection.office.com](https://protection.office.com).
 
     > [!TIP]
-    > Use una sesión de exploración privada (no una sesión normal) para obtener acceso al centro de seguridad y cumplimiento, ya que esto evitará que las credenciales con las que inició sesión actualmente sean usadas. Para abrir una ventana de Exploración de InPrivate en Internet Explorer o en Microsoft Edge, pulse las teclas CTRL+SHIFT+P. Para abrir una sesión de explorador privada en Google Chrome (denominada ventana de incógnito), presione CTRL+MAYÚS+N.
+    > Use una sesión de exploración privada (que no sea periódica) para obtener acceso al centro de cumplimiento de seguridad &, ya que esto evita que se puedan usar las credenciales con las que ha iniciado sesión actualmente. Para abrir una sesión de Exploración de InPrivate en Internet Explorer o Microsoft Edge, solo tiene que presionar CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana de incógnito), presione CTRL + MAYÚS + N.
 
 2. Inicie sesión con su cuenta profesional o educativa.
 
@@ -454,7 +454,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Archivo eliminado marcado como un registro|RecordDelete|Se eliminó un documento o un correo electrónico que se marcó como un registro. Un documento se considera un registro cuando se le aplica una etiqueta de retención que marca el contenido como un registro.|
 |Desfase detectado de la sensibilidad del documento |DocumentSensitivityMismatchDetected|El usuario carga un documento a un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de mayor prioridad que la que se aplica al sitio. Por ejemplo, un documento con la etiqueta Confidential se carga en un sitio con la etiqueta General. <br/><br/> Este evento no se activa si el documento tiene una etiqueta de confidencialidad de menor prioridad que la que se ha aplicado al sitio. Por ejemplo, un documento con la etiqueta General se carga en un sitio con la etiqueta Confidential. Para obtener más información sobre la prioridad de las etiquetas de confidencialidad, vea [prioridad de etiquetas (el orden importa)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware detectado en archivo|FileMalwareDetected|El antivirus de SharePoint detecta el malware en un archivo.|
-|Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) la extracción del repositorio de un archivo. Eso significa que cualquier cambio que haya realizado en el archivo cuando estaba extraído del repositorio se descarta y no se guarda en la versión del documento de la biblioteca de documentos.|
+|Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) un archivo extraído. Esto significa que los cambios que realice en el archivo cuando se desprotegieron se descartan y no se guardan en la versión del documento de la biblioteca de documentos.|
 |Archivo descargado|FileDownloaded|El usuario descarga un documento de un sitio.|
 |Archivo modificado|FileModified|La cuenta del sistema o usuario modifica el contenido o las propiedades de un documento ubicado en un sitio.|
 |(ninguno)|FileModifiedExtended|Esto está relacionado con la actividad "Archivo modificado" (FileModified). Un evento de FileModifiedExtended se registra cuando la misma persona modifica continuamente un archivo durante un período prolongado (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileModifiedExtended es reducir el número de eventos FileModified que se registran cuando se modifica continuamente un archivo. Esto ayuda a reducir el ruido de varios registros de FileModified para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento FileModified inicial (el más importante).|

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dccc623bfa6c3f5e8fe4d88ccfafd66d3e53482a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932816"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840903"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Asegurarse de que los dispositivos estén configurados de manera adecuada
 
@@ -44,7 +44,7 @@ Haga **clic en Administración de** configuración en el menú de navegación pa
 ![Página de administración de configuración de seguridad](images/secconmgmt_main.png)<br>
 *Página de administración de configuración de dispositivos*
 
-Puedes realizar un seguimiento del estado de configuración en un nivel organizativo y tomar medidas rápidamente en respuesta a una cobertura de incorporación deficiente, problemas de cumplimiento y mitigaciones de superficies de ataque mal optimizadas a través de vínculos directos y profundos a páginas de administración de dispositivos en Microsoft Intune y el centro de seguridad de Microsoft 365.
+Puedes realizar un seguimiento del estado de configuración en un nivel organizativo y tomar medidas rápidamente en respuesta a una cobertura de incorporación deficiente, problemas de cumplimiento y mitigaciones de superficie de ataque mal optimizadas a través de vínculos directos y profundos a páginas de administración de dispositivos en Microsoft Intune y Microsoft 365 seguridad.
 
 Al hacerlo, se beneficia de:
 - Visibilidad completa de los eventos en los dispositivos
@@ -54,15 +54,15 @@ Al hacerlo, se beneficia de:
 
 ## <a name="enroll-devices-to-intune-management"></a>Inscribir dispositivos en la administración de Intune
 
-La administración de configuración de dispositivos funciona estrechamente con la administración de dispositivos de Intune para establecer el inventario de los dispositivos de la organización y la configuración de seguridad de línea base. Podrás realizar un seguimiento y administrar problemas de configuración en dispositivos Windows 10 administrados por Intune.
+La administración de configuración de dispositivos funciona estrechamente con la administración de dispositivos de Intune para establecer el inventario de los dispositivos de la organización y la configuración de seguridad de línea base. Podrás realizar un seguimiento y administrar problemas de configuración en dispositivos Windows 10 Intune.
 
-Antes de garantizar que los dispositivos estén configurados correctamente, inscríbalos en la administración de Intune. La inscripción de Intune es sólida y tiene varias opciones de inscripción para dispositivos Windows 10. Para obtener más información acerca de las opciones de inscripción de Intune, lee sobre [cómo configurar la inscripción para dispositivos Windows](https://docs.microsoft.com/intune/windows-enroll).
+Antes de garantizar que los dispositivos estén configurados correctamente, inscríbalos en la administración de Intune. La inscripción de Intune es sólida y tiene varias opciones de inscripción para Windows 10 dispositivos. Para obtener más información acerca de las opciones de inscripción de Intune, lea acerca de cómo configurar la inscripción [para Windows dispositivos](/intune/windows-enroll).
 
 >[!NOTE]
->Para inscribir dispositivos Windows en Intune, los administradores deben tener ya asignadas licencias. [Lea acerca de la asignación de licencias para la inscripción de dispositivos.](https://docs.microsoft.com/intune/licenses-assign)
+>Para inscribir Windows dispositivos en Intune, los administradores ya deben tener asignadas licencias. [Lea acerca de la asignación de licencias para la inscripción de dispositivos.](/intune/licenses-assign)
 
 >[!TIP] 
->Para optimizar la administración de dispositivos a través de Intune, [conecte Intune a Defender para endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
+>Para optimizar la administración de dispositivos a través de Intune, [conecte Intune a Defender para endpoint](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
 
 ## <a name="obtain-required-permissions"></a>Obtener los permisos necesarios
 De forma predeterminada, solo los usuarios a los que se haya asignado el rol Administrador global o administrador de servicio de Intune en Azure AD pueden administrar y asignar los perfiles de configuración de dispositivos necesarios para incorporar dispositivos e implementar la línea base de seguridad.
@@ -78,13 +78,13 @@ Si se le han asignado otros roles, asegúrese de que tiene los permisos necesari
 *Permisos de configuración de dispositivos en Intune*
 
 >[!TIP] 
->Para obtener más información sobre la asignación de permisos en Intune, [lea acerca de cómo crear roles personalizados](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role).
+>Para obtener más información sobre la asignación de permisos en Intune, [lea acerca de cómo crear roles personalizados](/intune/create-custom-role#to-create-a-custom-role).
 
 ## <a name="in-this-section"></a>En esta sección
 Tema | Descripción
 :---|:---
 [Obtener dispositivos incorporados a Defender for Endpoint](configure-machines-onboarding.md)| Realice un seguimiento del estado de incorporación de dispositivos administrados por Intune e incorpore más dispositivos a través de Intune. 
 [Aumentar el cumplimiento de la línea base de seguridad de Defender for Endpoint](configure-machines-security-baseline.md) | Realizar un seguimiento del cumplimiento de línea base y el incumplimiento. Implemente la línea base de seguridad en más dispositivos administrados por Intune.
-[Optimizar la implementación y detecciones de reglas ASR](configure-machines-asr.md) | Revise la implementación de reglas y ajuste las detecciones con herramientas de análisis de impacto en el Centro de seguridad de Microsoft 365.
+[Optimizar la implementación y detecciones de reglas ASR](configure-machines-asr.md) | Revise la implementación de reglas y ajuste las detecciones con herramientas de análisis de impacto Microsoft 365 centro de seguridad.
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

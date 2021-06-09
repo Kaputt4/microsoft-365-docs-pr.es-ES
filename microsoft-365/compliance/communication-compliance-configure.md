@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: eed486120673abc513490f4892069ee8fd9bba21
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e258a7fec21bd3499553fe726730ac685ff990b5
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636163"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821384"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -133,7 +133,7 @@ Use el siguiente gráfico para ayudarle a configurar grupos en su organización 
   
 Al asignar un grupo de distribución en la directiva, la directiva supervisa todos los mensajes de correo electrónico y Teams chats de cada usuario del grupo de distribución. Al asignar un grupo de Microsoft 365 en la directiva, la directiva supervisa todos los mensajes de correo electrónico y los chats Teams enviados a ese grupo, no los correos electrónicos individuales y los chats recibidos por cada miembro del grupo.
 
-Si es una organización con una implementación local de Exchange o un proveedor de correo electrónico externo y desea supervisar los chats de Microsoft Teams para los usuarios, debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Más adelante en estos pasos, asignará  este grupo de distribución como la selección de usuarios y grupos supervisados en el asistente para directivas.
+Si es una organización con una implementación local de Exchange o un proveedor de correo electrónico externo y desea supervisar los chats de Microsoft Teams para los usuarios, debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Más adelante en estos pasos, asignará  este grupo de distribución como la selección de usuarios y grupos supervisados en el asistente para directivas. Para obtener más información acerca de los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad Teams para los usuarios locales, vea [Search for Teams chat data for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Para administrar usuarios supervisados en organizaciones empresariales grandes, es posible que deba supervisar todos los usuarios en grupos grandes. Puede usar PowerShell para configurar un grupo de distribución para una directiva de cumplimiento de comunicaciones global para el grupo asignado. Esto le permite supervisar a miles de usuarios con una única directiva y mantener actualizada la directiva de cumplimiento de comunicaciones a medida que los nuevos empleados se unan a su organización.
 
@@ -212,7 +212,7 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
 
     - Elija los revisores de la directiva. Los revisores son usuarios individuales y todos los revisores deben tener buzones hospedados en Exchange Online. Los revisores agregados aquí son los revisores que puede elegir al escalar una alerta en el flujo de trabajo de investigación y corrección. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
 
-    - Elija los canales de comunicación que desea examinar, incluidos Exchange, Microsoft Teams, Yammer o Skype Empresarial. También tendrá que examinar los orígenes de terceros si configuró un conector en Microsoft 365.
+    - Elija los canales de comunicación que desea examinar, incluidos Exchange, Microsoft Teams, Yammer o Skype Empresarial. También tendrá que examinar los orígenes de terceros si configuró un conector en Microsoft 365.
 
     - Elija la dirección de comunicación que desea supervisar, incluidas las comunicaciones entrantes, salientes o internas.
 

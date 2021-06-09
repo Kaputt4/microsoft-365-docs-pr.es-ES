@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Introducción a la definición y administración de alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 7f070dd960cc00ad7899c75117cd2a3fcf679973
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760766"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843871"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Introducción al panel de alertas de prevención de pérdida de datos
 
@@ -39,20 +39,20 @@ Antes de comenzar, asegúrese de que tiene los requisitos previos necesarios:
 
 -   Licencias para el panel de administración de alertas DLP
 -   Licencias para opciones de configuración de alertas
--   Roles
+-   Funciones
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Licencias para el panel de administración de alertas DLP
 
-Todos los inquilinos elegibles para DLP de Office 365 pueden tener acceso al panel de administración de alertas DLP. Para empezar, debe ser elegible para Dlp de Office 365 para Exchange Online, SharePoint Online y OneDrive para la Empresa. Para obtener más información acerca de los requisitos de licencias para DLP de Office 365, vea ¿Qué licencias proporcionan los derechos para que un usuario se beneficie [del servicio?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+Todos los inquilinos elegibles para Office 365 DLP pueden acceder al panel de administración de alertas DLP. Para empezar, debes ser elegible para dlp Office 365 para Exchange Online, SharePoint Online y OneDrive para la Empresa. Para obtener más información acerca de los requisitos de licencia para Office 365 DLP, vea ¿Qué licencias proporcionan los derechos para que un usuario se beneficie [del servicio?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-Los clientes que usan [DLP](endpoint-dlp-learn-about.md) de extremo que son aptos para DLP de Teams verán sus alertas de directiva [DLP](dlp-microsoft-teams.md) de extremo y las alertas de directiva DLP de Teams en el panel de administración de alertas dlp.
+Los clientes que usan [DLP](endpoint-dlp-learn-about.md) de extremo que son elegibles para [Teams DLP](dlp-microsoft-teams.md) verán sus alertas de directiva DLP de punto de conexión y Teams de directivas DLP en el panel de administración de alertas dlp.
 
 La **característica de vista previa** de contenido solo está disponible para estas licencias:
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - Complemento de cumplimiento avanzado (E5)
-- Gobierno y protección de la información de Microsoft 365 E5/A5
+- Microsoft 365 E5/A5 Information Protection and Governance
 - Cumplimiento de Microsft 365 E5/A5
 
 ### <a name="licensing-for-alert-configuration-options"></a>Licencias para opciones de configuración de alertas
@@ -65,9 +65,9 @@ Configuración de alerta de evento **único:** las organizaciones que tienen una
 - Una suscripción E1, F1 o G1 o una suscripción A3 o G3 que incluye una de las siguientes características:
     - Protección contra amenazas avanzada de Office 365 (plan 2)
     - Cumplimiento de Microsoft 365 E5
-    - Licencia de complemento de exhibición de documentos electrónicos y auditoría de Microsoft 365
+    - Microsoft 365 de complementos de eDiscovery y Audit
 
-### <a name="roles"></a>Roles
+### <a name="roles"></a>Funciones
 
 
 Si desea ver el panel de administración de alertas DLP o editar las opciones de configuración de alertas en una directiva DLP, debe ser miembro de uno de estos grupos de roles:
@@ -84,7 +84,7 @@ Para obtener acceso al panel de administración de alertas DLP, necesita:
 
 y cualquiera de estos dos roles:
 
-- Administración de cumplimiento dlp
+- Administración de cumplimiento de DLP
 - View-Only de cumplimiento dlp
 
 Para obtener acceso a la característica de vista previa de contenido y a las características de contexto y contenido confidencial coincidentes, debe ser miembro de:
@@ -115,7 +115,7 @@ Si su organización tiene licencia para [opciones](#licensing-for-alert-configur
 
 Para trabajar con el panel de administración de alertas DLP:
 
-1. En el [Centro de cumplimiento de Microsoft 365,](https://www.compliance.microsoft.com)vaya a **Prevención de pérdida de datos.**
+1. En el [centro Microsoft 365 cumplimiento,](https://www.compliance.microsoft.com)vaya a **Prevención de pérdida de datos**.
 2. Seleccione la **pestaña Alertas** para ver el panel de alertas dlp.
 3. Seleccione una alerta para ver los detalles:
 
@@ -139,7 +139,7 @@ Para trabajar con el panel de administración de alertas DLP:
 - Para ver el historial de administración de flujos de trabajo, elija **Registro de administración**.
 - Después de realizar la acción necesaria para la alerta, establezca el estado de la alerta en **Resuelto**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Obtenga información sobre las alertas de prevención de pérdida de datos y el panel de alertas](dlp-alerts-dashboard-learn.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)

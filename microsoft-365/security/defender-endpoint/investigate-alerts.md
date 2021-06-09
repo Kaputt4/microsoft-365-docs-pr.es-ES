@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 8b3b864e716957c24893d2097249440b0a90f10a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 626be9e949170fcda1f0bcf2a88e1b9780bbe764
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186106"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841095"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Investigar alertas en Microsoft Defender para endpoint
 
@@ -40,7 +40,7 @@ Investigue las alertas que afectan a la red, comprenda lo que significan y cómo
 
 Seleccione una alerta de la cola de alertas para ir a la página de alertas. Esta vista contiene el título de alerta, los activos afectados, el panel lateral de detalles y el artículo de alerta.
 
-En la página de alertas, comience la investigación seleccionando los activos afectados o cualquiera de las entidades en la vista de árbol del artículo de alerta. El panel de detalles se rellena automáticamente con más información sobre lo que ha seleccionado. Para ver qué tipo de información puede ver aquí, lea [Review alerts in Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/review-alerts).
+En la página de alertas, comience la investigación seleccionando los activos afectados o cualquiera de las entidades en la vista de árbol del artículo de alerta. El panel de detalles se rellena automáticamente con más información sobre lo que ha seleccionado. Para ver qué tipo de información puede ver aquí, lea [Review alerts in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/review-alerts).
 
 ## <a name="investigate-using-the-alert-story"></a>Investigar con el artículo de alerta
 

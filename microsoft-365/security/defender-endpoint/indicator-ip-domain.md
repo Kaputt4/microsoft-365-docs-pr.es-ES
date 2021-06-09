@@ -1,5 +1,5 @@
 ---
-title: Crear indicadores para direcciones IP y direcciones URL/dominios
+title: Crear indicadores para direcciones IP y URL/dominios
 ms.reviewer: ''
 description: Cree indicadores para direcciones IP y direcciones URL/dominios que definan la detección, prevención y exclusión de entidades.
 keywords: ip, url, domain, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7dc11fe709a6d04b6309706df90f0ebbc177e25
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198488"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841071"
 ---
-# <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y direcciones URL/dominios 
+# <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51198488"
 > ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-Defender for Endpoint puede bloquear lo que Microsoft considera direcciones IP/DIRECCIONES URL malintencionadas, a través de Windows Defender SmartScreen para exploradores de Microsoft y a través de Network Protection para exploradores que no son de Microsoft o llamadas realizadas fuera de un explorador.
+Defender for Endpoint puede bloquear lo que Microsoft considera direcciones IP o direcciones URL malintencionadas, a través de Windows Defender SmartScreen para exploradores de Microsoft y a través de Network Protection para exploradores que no son de Microsoft o llamadas realizadas fuera de un explorador.
 
 Microsoft ha administrado el conjunto de datos de inteligencia de amenazas para esto.
 
@@ -52,13 +52,13 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 - La dirección URL/IP permiten y bloquean la protección de red del componente Defender for Endpoint para habilitarse en modo de bloqueo. Para obtener más información sobre la protección de red y las instrucciones de configuración, vea [Enable network protection](enable-network-protection.md).
 - La versión del cliente Antimalware debe ser 4.18.1906.x o posterior. 
 - Compatible con máquinas en Windows 10, versión 1709 o posterior. 
-- Asegúrese de **que los indicadores de red personalizados** están habilitados en el Centro de seguridad de **Microsoft Defender > configuración > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
-- Para obtener compatibilidad con indicadores en iOS, vea [Configure custom indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
+- Asegúrese de **que los indicadores de red personalizados** **están habilitados Centro de seguridad de Microsoft Defender > Configuración > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
+- Para obtener compatibilidad con indicadores en iOS, vea [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
 
 > [!IMPORTANT]
 > Solo se pueden agregar direcciones IP externas a la lista de indicadores. Los indicadores no se pueden crear para ip internas.
-> Para escenarios de protección web, se recomienda usar las funcionalidades integradas en Microsoft Edge. Microsoft Edge aprovecha [Network Protection para](network-protection.md) inspeccionar el tráfico de red y permite bloques para TCP, HTTP y HTTPS (TLS). Si hay directivas de indicador de dirección URL en conflicto, se aplica la ruta de acceso más larga. Por ejemplo, la directiva de indicador de dirección URL `https:\\support.microsoft.com/en-us/office` tiene prioridad sobre la directiva de indicador de dirección URL `https:\\support.microsoft.com` .
+> Para escenarios de protección web, se recomienda usar las funciones integradas en Microsoft Edge. Microsoft Edge aprovecha [Network Protection para](network-protection.md) inspeccionar el tráfico de red y permite bloques para TCP, HTTP y HTTPS (TLS). Si hay directivas de indicador de dirección URL en conflicto, se aplica la ruta de acceso más larga. Por ejemplo, la directiva de indicador de dirección URL `https:\\support.microsoft.com/en-us/office` tiene prioridad sobre la directiva de indicador de dirección URL `https:\\support.microsoft.com` .
 
 > [!NOTE]
 > Para todos los demás procesos, los escenarios de protección web aprovechan la protección de red para la inspección y la aplicación: 
@@ -73,7 +73,7 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 
 ### <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Crear un indicador de direcciones IP, direcciones URL o dominios desde la página de configuración
 
-1. En el panel de navegación, seleccione  >  **Indicadores de configuración**.  
+1. En el panel de navegación, **seleccione Configuración**  >  **Indicadores**.  
 
 2. Seleccione la **pestaña Direcciones IP o DIRECCIONES URL/Dominios.**
 
@@ -88,6 +88,6 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Crear indicadores](manage-indicators.md)
-- [Crear indicadores para archivos](indicator-file.md)
+- [Crear indicadores para los archivos](indicator-file.md)
 - [Crear indicadores basados en certificados](indicator-certificates.md)
 - [Administrar indicadores](indicator-manage.md)

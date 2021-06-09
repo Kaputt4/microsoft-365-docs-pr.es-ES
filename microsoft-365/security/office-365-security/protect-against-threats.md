@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac90aa853769b239386d422e0b196a1f6140bf95
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 4c32026ab4f33a68b1f63cb000807671839f6bad
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793201"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821288"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -278,7 +278,7 @@ Para obtener más información acerca de las alertas, vea [Create activity alert
 > Cuando haya terminado de configurar, use estos vínculos para iniciar investigaciones de carga de trabajo:
 >
 >- [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
->- [Usar el Centro de seguridad & cumplimiento para administrar archivos en cuarentena](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [Use el Centro de seguridad para administrar archivos en cuarentena en Defender para Office 365](manage-quarantined-messages-and-files.md#use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365)
 >- [Qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, OneDrive o Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
 
