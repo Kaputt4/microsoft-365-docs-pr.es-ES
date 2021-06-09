@@ -19,6 +19,6 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 07/29/2020
 ms.locfileid: "46521104"
 ---
-# <a name="multi-national-design-principles-for-microsoft-365"></a><span data-ttu-id="af25d-103">Principios de diseño nacionales para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="af25d-103">Multi-national design principles for Microsoft 365</span></span>
+# <a name="multi-national-design-principles-for-microsoft-365"></a><span data-ttu-id="79e3c-103">Principios de diseño nacionales para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="79e3c-103">Multi-national design principles for Microsoft 365</span></span>
 
-<span data-ttu-id="af25d-104">Texto</span><span class="sxs-lookup"><span data-stu-id="af25d-104">Text</span></span>
+<span data-ttu-id="79e3c-104">Texto</span><span class="sxs-lookup"><span data-stu-id="79e3c-104">Text</span></span>

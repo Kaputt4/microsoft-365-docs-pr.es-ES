@@ -23,70 +23,70 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/11/2021
 ms.locfileid: "52311993"
 ---
-# <a name="troubleshoot-siem-tool-integration-issues"></a><span data-ttu-id="8e969-104">Solucionar problemas de integración de la herramienta SIEM</span><span class="sxs-lookup"><span data-stu-id="8e969-104">Troubleshoot SIEM tool integration issues</span></span>
+# <a name="troubleshoot-siem-tool-integration-issues"></a><span data-ttu-id="f5d61-104">Solucionar problemas de integración de la herramienta SIEM</span><span class="sxs-lookup"><span data-stu-id="f5d61-104">Troubleshoot SIEM tool integration issues</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="8e969-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="8e969-105">**Applies to:**</span></span>
-- [<span data-ttu-id="8e969-106">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="8e969-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="8e969-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8e969-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="f5d61-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="f5d61-105">**Applies to:**</span></span>
+- [<span data-ttu-id="f5d61-106">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="f5d61-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="f5d61-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f5d61-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> <span data-ttu-id="8e969-108">¿Desea experimentar Defender for Endpoint?</span><span class="sxs-lookup"><span data-stu-id="8e969-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="8e969-109">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="8e969-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> <span data-ttu-id="f5d61-108">¿Desea experimentar Defender for Endpoint?</span><span class="sxs-lookup"><span data-stu-id="f5d61-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="f5d61-109">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="f5d61-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
-<span data-ttu-id="8e969-110">Es posible que deba solucionar problemas al extraer detecciones en las herramientas SIEM.</span><span class="sxs-lookup"><span data-stu-id="8e969-110">You might need to troubleshoot issues while pulling detections in your SIEM tools.</span></span>
+<span data-ttu-id="f5d61-110">Es posible que deba solucionar problemas al extraer detecciones en las herramientas SIEM.</span><span class="sxs-lookup"><span data-stu-id="f5d61-110">You might need to troubleshoot issues while pulling detections in your SIEM tools.</span></span>
 
-<span data-ttu-id="8e969-111">En esta página se proporcionan pasos detallados para solucionar problemas que puedan surgir.</span><span class="sxs-lookup"><span data-stu-id="8e969-111">This page provides detailed steps to troubleshoot issues you might encounter.</span></span>
-
-
-## <a name="learn-how-to-get-a-new-client-secret"></a><span data-ttu-id="8e969-112">Obtenga información sobre cómo obtener un nuevo secreto de cliente</span><span class="sxs-lookup"><span data-stu-id="8e969-112">Learn how to get a new client secret</span></span>
-<span data-ttu-id="8e969-113">Si el secreto de cliente expira o si ha perdido la copia proporcionada al habilitar la aplicación de herramienta SIEM, tendrá que obtener un nuevo secreto.</span><span class="sxs-lookup"><span data-stu-id="8e969-113">If your client secret expires or if you've misplaced the copy provided when you were enabling the SIEM tool application,  you'll need to get a new secret.</span></span>
-
-1. <span data-ttu-id="8e969-114">Inicie sesión en [el Portal de administración de Azure](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="8e969-114">Login to the [Azure management portal](https://portal.azure.com).</span></span>
-
-2. <span data-ttu-id="8e969-115">Seleccione **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="8e969-115">Select **Azure Active Directory**.</span></span>
-
-3. <span data-ttu-id="8e969-116">Seleccione el espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="8e969-116">Select your tenant.</span></span>
-
-4. <span data-ttu-id="8e969-117">Haga **clic en Registros de aplicaciones**.</span><span class="sxs-lookup"><span data-stu-id="8e969-117">Click **App registrations**.</span></span> <span data-ttu-id="8e969-118">A continuación, en la lista aplicaciones, seleccione la aplicación.</span><span class="sxs-lookup"><span data-stu-id="8e969-118">Then in the applications list, select the application.</span></span>
-
-5. <span data-ttu-id="8e969-119">Seleccione **Certificados & secretos,** Haga clic en Nuevo secreto de cliente y, a continuación, proporcione una descripción y especifique la duración de validez.</span><span class="sxs-lookup"><span data-stu-id="8e969-119">Select **Certificates & Secrets** section, Click on New Client Secret, then provide a description and specify the validity duration.</span></span>
-
-6. <span data-ttu-id="8e969-120">Haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="8e969-120">Click **Save**.</span></span> <span data-ttu-id="8e969-121">Se muestra el valor de la clave.</span><span class="sxs-lookup"><span data-stu-id="8e969-121">The key value is displayed.</span></span>
-
-7. <span data-ttu-id="8e969-122">Copie el valor y guárdelo en un lugar seguro.</span><span class="sxs-lookup"><span data-stu-id="8e969-122">Copy the value and save it in a safe place.</span></span>
+<span data-ttu-id="f5d61-111">En esta página se proporcionan pasos detallados para solucionar problemas que puedan surgir.</span><span class="sxs-lookup"><span data-stu-id="f5d61-111">This page provides detailed steps to troubleshoot issues you might encounter.</span></span>
 
 
-## <a name="error-when-getting-a-refresh-access-token"></a><span data-ttu-id="8e969-123">Error al obtener un token de acceso de actualización</span><span class="sxs-lookup"><span data-stu-id="8e969-123">Error when getting a refresh access token</span></span>
-<span data-ttu-id="8e969-124">Si se produce un error al intentar obtener un token de actualización al usar la API de inteligencia de amenazas o las herramientas SIEM, deberá agregar la dirección URL de respuesta para la aplicación relevante en Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="8e969-124">If you encounter an error when trying to get a refresh token when using the threat intelligence API or SIEM tools, you'll need to add reply URL for relevant application in Azure Active Directory.</span></span>
+## <a name="learn-how-to-get-a-new-client-secret"></a><span data-ttu-id="f5d61-112">Obtenga información sobre cómo obtener un nuevo secreto de cliente</span><span class="sxs-lookup"><span data-stu-id="f5d61-112">Learn how to get a new client secret</span></span>
+<span data-ttu-id="f5d61-113">Si el secreto de cliente expira o si ha perdido la copia proporcionada al habilitar la aplicación de herramienta SIEM, tendrá que obtener un nuevo secreto.</span><span class="sxs-lookup"><span data-stu-id="f5d61-113">If your client secret expires or if you've misplaced the copy provided when you were enabling the SIEM tool application,  you'll need to get a new secret.</span></span>
 
-1. <span data-ttu-id="8e969-125">Inicie sesión en [el Portal de administración de Azure](https://ms.portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="8e969-125">Login to the [Azure management portal](https://ms.portal.azure.com).</span></span>
+1. <span data-ttu-id="f5d61-114">Inicie sesión en [el Portal de administración de Azure](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="f5d61-114">Login to the [Azure management portal](https://portal.azure.com).</span></span>
 
-2. <span data-ttu-id="8e969-126">Seleccione **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="8e969-126">Select **Azure Active Directory**.</span></span>
+2. <span data-ttu-id="f5d61-115">Seleccione **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="f5d61-115">Select **Azure Active Directory**.</span></span>
 
-3. <span data-ttu-id="8e969-127">Seleccione el espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="8e969-127">Select your tenant.</span></span>
+3. <span data-ttu-id="f5d61-116">Seleccione el espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="f5d61-116">Select your tenant.</span></span>
 
-4. <span data-ttu-id="8e969-128">Haga **clic en Registros de aplicaciones**.</span><span class="sxs-lookup"><span data-stu-id="8e969-128">Click **App Registrations**.</span></span> <span data-ttu-id="8e969-129">A continuación, en la lista aplicaciones, seleccione la aplicación.</span><span class="sxs-lookup"><span data-stu-id="8e969-129">Then in the applications list, select the application.</span></span>
+4. <span data-ttu-id="f5d61-117">Haga **clic en Registros de aplicaciones**.</span><span class="sxs-lookup"><span data-stu-id="f5d61-117">Click **App registrations**.</span></span> <span data-ttu-id="f5d61-118">A continuación, en la lista aplicaciones, seleccione la aplicación.</span><span class="sxs-lookup"><span data-stu-id="f5d61-118">Then in the applications list, select the application.</span></span>
 
-5. <span data-ttu-id="8e969-130">Agregue la siguiente dirección URL:</span><span class="sxs-lookup"><span data-stu-id="8e969-130">Add the following URL:</span></span>
-   - <span data-ttu-id="8e969-131">Para la Unión Europea: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`</span><span class="sxs-lookup"><span data-stu-id="8e969-131">For the European Union: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`</span></span>
-   - <span data-ttu-id="8e969-132">Para el Reino Unido: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`</span><span class="sxs-lookup"><span data-stu-id="8e969-132">For the United Kingdom: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`</span></span>
-   - <span data-ttu-id="8e969-133">Para Estados Unidos:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` .</span><span class="sxs-lookup"><span data-stu-id="8e969-133">For the United States:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.</span></span>
+5. <span data-ttu-id="f5d61-119">Seleccione **Certificados & secretos,** Haga clic en Nuevo secreto de cliente y, a continuación, proporcione una descripción y especifique la duración de validez.</span><span class="sxs-lookup"><span data-stu-id="f5d61-119">Select **Certificates & Secrets** section, Click on New Client Secret, then provide a description and specify the validity duration.</span></span>
+
+6. <span data-ttu-id="f5d61-120">Haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="f5d61-120">Click **Save**.</span></span> <span data-ttu-id="f5d61-121">Se muestra el valor de la clave.</span><span class="sxs-lookup"><span data-stu-id="f5d61-121">The key value is displayed.</span></span>
+
+7. <span data-ttu-id="f5d61-122">Copie el valor y guárdelo en un lugar seguro.</span><span class="sxs-lookup"><span data-stu-id="f5d61-122">Copy the value and save it in a safe place.</span></span>
+
+
+## <a name="error-when-getting-a-refresh-access-token"></a><span data-ttu-id="f5d61-123">Error al obtener un token de acceso de actualización</span><span class="sxs-lookup"><span data-stu-id="f5d61-123">Error when getting a refresh access token</span></span>
+<span data-ttu-id="f5d61-124">Si se produce un error al intentar obtener un token de actualización al usar la API de inteligencia de amenazas o las herramientas SIEM, deberá agregar la dirección URL de respuesta para la aplicación relevante en Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="f5d61-124">If you encounter an error when trying to get a refresh token when using the threat intelligence API or SIEM tools, you'll need to add reply URL for relevant application in Azure Active Directory.</span></span>
+
+1. <span data-ttu-id="f5d61-125">Inicie sesión en [el Portal de administración de Azure](https://ms.portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="f5d61-125">Login to the [Azure management portal](https://ms.portal.azure.com).</span></span>
+
+2. <span data-ttu-id="f5d61-126">Seleccione **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="f5d61-126">Select **Azure Active Directory**.</span></span>
+
+3. <span data-ttu-id="f5d61-127">Seleccione el espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="f5d61-127">Select your tenant.</span></span>
+
+4. <span data-ttu-id="f5d61-128">Haga **clic en Registros de aplicaciones**.</span><span class="sxs-lookup"><span data-stu-id="f5d61-128">Click **App Registrations**.</span></span> <span data-ttu-id="f5d61-129">A continuación, en la lista aplicaciones, seleccione la aplicación.</span><span class="sxs-lookup"><span data-stu-id="f5d61-129">Then in the applications list, select the application.</span></span>
+
+5. <span data-ttu-id="f5d61-130">Agregue la siguiente dirección URL:</span><span class="sxs-lookup"><span data-stu-id="f5d61-130">Add the following URL:</span></span>
+   - <span data-ttu-id="f5d61-131">Para la Unión Europea: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`</span><span class="sxs-lookup"><span data-stu-id="f5d61-131">For the European Union: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`</span></span>
+   - <span data-ttu-id="f5d61-132">Para el Reino Unido: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`</span><span class="sxs-lookup"><span data-stu-id="f5d61-132">For the United Kingdom: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`</span></span>
+   - <span data-ttu-id="f5d61-133">Para Estados Unidos:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` .</span><span class="sxs-lookup"><span data-stu-id="f5d61-133">For the United States:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.</span></span>
  
-6. <span data-ttu-id="8e969-134">Haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="8e969-134">Click **Save**.</span></span>
+6. <span data-ttu-id="f5d61-134">Haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="f5d61-134">Click **Save**.</span></span>
 
-## <a name="error-while-enabling-the-siem-connector-application"></a><span data-ttu-id="8e969-135">Error al habilitar la aplicación de conector SIEM</span><span class="sxs-lookup"><span data-stu-id="8e969-135">Error while enabling the SIEM connector application</span></span>
-<span data-ttu-id="8e969-136">Si se produce un error al intentar habilitar la aplicación de conector SIEM, compruebe la configuración del bloqueador de elementos emergentes del explorador.</span><span class="sxs-lookup"><span data-stu-id="8e969-136">If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser.</span></span> <span data-ttu-id="8e969-137">Puede que esté bloqueando la nueva ventana que se abre al habilitar la funcionalidad.</span><span class="sxs-lookup"><span data-stu-id="8e969-137">It might be blocking the new window being opened when you enable the capability.</span></span>
-
-
+## <a name="error-while-enabling-the-siem-connector-application"></a><span data-ttu-id="f5d61-135">Error al habilitar la aplicación de conector SIEM</span><span class="sxs-lookup"><span data-stu-id="f5d61-135">Error while enabling the SIEM connector application</span></span>
+<span data-ttu-id="f5d61-136">Si se produce un error al intentar habilitar la aplicación de conector SIEM, compruebe la configuración del bloqueador de elementos emergentes del explorador.</span><span class="sxs-lookup"><span data-stu-id="f5d61-136">If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser.</span></span> <span data-ttu-id="f5d61-137">Puede que esté bloqueando la nueva ventana que se abre al habilitar la funcionalidad.</span><span class="sxs-lookup"><span data-stu-id="f5d61-137">It might be blocking the new window being opened when you enable the capability.</span></span>
 
 
-><span data-ttu-id="8e969-138">¿Desea experimentar Microsoft Defender para endpoint?</span><span class="sxs-lookup"><span data-stu-id="8e969-138">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="8e969-139">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="8e969-139">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
-## <a name="related-topics"></a><span data-ttu-id="8e969-140">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="8e969-140">Related topics</span></span>
-- [<span data-ttu-id="8e969-141">Habilitar la integración de SIEM en Microsoft Defender para endpoint</span><span class="sxs-lookup"><span data-stu-id="8e969-141">Enable SIEM integration in Microsoft Defender for Endpoint</span></span>](enable-siem-integration.md)
-- [<span data-ttu-id="8e969-142">Configurar ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión</span><span class="sxs-lookup"><span data-stu-id="8e969-142">Configure ArcSight to pull Microsoft Defender for Endpoint detections</span></span>](configure-arcsight.md)
-- [<span data-ttu-id="8e969-143">Extraer detecciones a las herramientas SIEM</span><span class="sxs-lookup"><span data-stu-id="8e969-143">Pull detections to your SIEM tools</span></span>](configure-siem.md)
-- [<span data-ttu-id="8e969-144">Campos de Microsoft Defender para detección de puntos de conexión</span><span class="sxs-lookup"><span data-stu-id="8e969-144">Microsoft Defender for Endpoint Detection fields</span></span>](api-portal-mapping.md)
-- [<span data-ttu-id="8e969-145">Extraer Microsoft Defender para detecciones de puntos de conexión mediante la API de REST</span><span class="sxs-lookup"><span data-stu-id="8e969-145">Pull Microsoft Defender for Endpoint detections using REST API</span></span>](pull-alerts-using-rest-api.md)
+
+><span data-ttu-id="f5d61-138">¿Desea experimentar Microsoft Defender para endpoint?</span><span class="sxs-lookup"><span data-stu-id="f5d61-138">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f5d61-139">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="f5d61-139">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+
+## <a name="related-topics"></a><span data-ttu-id="f5d61-140">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="f5d61-140">Related topics</span></span>
+- [<span data-ttu-id="f5d61-141">Habilitar la integración de SIEM en Microsoft Defender para endpoint</span><span class="sxs-lookup"><span data-stu-id="f5d61-141">Enable SIEM integration in Microsoft Defender for Endpoint</span></span>](enable-siem-integration.md)
+- [<span data-ttu-id="f5d61-142">Configurar ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión</span><span class="sxs-lookup"><span data-stu-id="f5d61-142">Configure ArcSight to pull Microsoft Defender for Endpoint detections</span></span>](configure-arcsight.md)
+- [<span data-ttu-id="f5d61-143">Extraer detecciones a las herramientas SIEM</span><span class="sxs-lookup"><span data-stu-id="f5d61-143">Pull detections to your SIEM tools</span></span>](configure-siem.md)
+- [<span data-ttu-id="f5d61-144">Campos de Microsoft Defender para detección de puntos de conexión</span><span class="sxs-lookup"><span data-stu-id="f5d61-144">Microsoft Defender for Endpoint Detection fields</span></span>](api-portal-mapping.md)
+- [<span data-ttu-id="f5d61-145">Extraer Microsoft Defender para detecciones de puntos de conexión mediante la API de REST</span><span class="sxs-lookup"><span data-stu-id="f5d61-145">Pull Microsoft Defender for Endpoint detections using REST API</span></span>](pull-alerts-using-rest-api.md)

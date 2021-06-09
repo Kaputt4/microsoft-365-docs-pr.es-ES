@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Bookings
-summary: Programar y administrar citas con Microsoft Bookings. Incluye integración con Outlook y notificaciones automatizadas.
+summary: Programar y administrar citas con Microsoft Bookings. Incluye la integración con Outlook y notificaciones automatizadas.
 metadata:
   title: Microsoft Bookings
-  description: Programar y administrar citas con Microsoft Bookings. Incluye integración con Outlook y notificaciones automatizadas.
+  description: Programar y administrar citas con Microsoft Bookings. Incluye la integración con Outlook y notificaciones automatizadas.
   ms.service: bookings
   ms.topic: landing-page
   author: dmaguire
@@ -38,11 +38,11 @@ landingContent:
       url: set-scheduling-policies.md
     - text: Definir las ofertas de servicio
       url: define-service-offerings.md
-    - text: Establecer las horas laborables de los empleados
+    - text: Establecer el horario laboral de los empleados
       url: employee-hours.md
     - text: Personalizar y publicar la página de reserva
       url: customize-booking-page.md
-    - text: Crear y crear personal para las reservas
+    - text: Crear y personalr sus reservas
       url: create-a-manual-booking.md
 - title: Invitar a personas a reservar citas
   linkLists:
