@@ -22,7 +22,7 @@
               href: setup/setup-apps-for-business.md
         - name: Explorar la página y el Asistente de configuración
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: "Proteger equipos con Windows\_10"
+        - name: Proteger equipos con Windows 10
           href: ../business/secure-win-10-pcs.md
         - name: Descargar software y claves de producto
           href: setup/download-software-licenses-csp.md
@@ -326,7 +326,7 @@
             - name: Configurar las características de cumplimiento
               href: ../business/set-up-compliance.md
         - name: Puntuación de seguridad
-          href: 'https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score'
+          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: Una guía para cumplimiento normativo RGPD
           href: security-and-compliance/gdpr-compliance.md
     - name: Administra los dispositivos y datos de las aplicaciones
