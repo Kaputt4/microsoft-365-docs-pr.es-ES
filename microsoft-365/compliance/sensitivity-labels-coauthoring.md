@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332731"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796059"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -48,7 +48,7 @@ Para leer el anuncio de lanzamiento, consulte la publicación del blog [Anuncian
 
 Antes de habilitar esta configuración para admitir la coautoría en las aplicaciones de escritorio de Office, es importante comprender que esta acción realiza cambios en los metadatos de etiquetado que se guardan y leen desde archivos de Office.
 
-En los metadatos de etiquetado se incluye información que identifica el espacio empresarial y la etiqueta de confidencialidad aplicada. El cambio que realiza esta configuración es el formato de metadatos y la ubicación de los archivos no cifrados para Word, Excel y PowerPoint. No hay cambios en los metadatos de etiquetado para los correos electrónicos o archivos cifrados.
+En los metadatos de etiquetado se incluye información que identifica el espacio empresarial y la etiqueta de confidencialidad aplicada. El cambio que realiza esta configuración es el formato de metadatos y la ubicación para los archivos Word, Excel y PowerPoint. No necesita realizar ninguna acción para archivos cifrados o correos electrónicos; el cambio de metadatos de los archivos cifrados es compatible con versiones anteriores y no hay cambios en los correos electrónicos. Sin embargo necesita ser consciente de los cambios de metadatos de los archivos cifrados que se pueden actualizar automáticamente pero que no son compatibles con versiones anteriores.
 
 Este cambio afecta a los archivos que acaba de etiquetar y a los archivos que ya están etiquetados. Cuando use aplicaciones y servicios compatibles con la configuración de coautoría:
 - Para los archivos que se etiquetaron recientemente, solo se usan el nuevo formato y la ubicación para los metadatos de etiquetado.
@@ -104,7 +104,7 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
     - **Aplicaciones y servicios que usan el SDK de Microsoft Information Protection:** 
         - Versión mínima de 1.7 
 
-Los servicios de Microsoft 365 admiten automáticamente los nuevos metadatos de etiquetado cuando habilita esta característica. Por ejemplo:
+Los servicios de Microsoft 365 admiten automáticamente los nuevos metadatos de etiquetado cuando habilita esta característica. Por ejemplo:
 
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md)
