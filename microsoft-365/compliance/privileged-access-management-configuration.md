@@ -30,27 +30,27 @@ ms.locfileid: "50126537"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Introducción a la administración del acceso con privilegios
 
-Este tema le guiará a través de la habilitación y configuración de la administración de acceso con privilegios en su organización. Puede usar el Centro de administración de Microsoft 365 o Exchange Management PowerShell para administrar y usar el acceso con privilegios.
+Este tema le guía a través de la habilitación y configuración de la administración de acceso con privilegios en su organización. Puede usar el Centro de administración Microsoft 365 o Exchange PowerShell de administración para administrar y usar el acceso con privilegios.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Antes de empezar con la administración del acceso con privilegios, debe confirmar su suscripción a [Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) y cualquier complemento. Para acceder y usar la administración de acceso con privilegios, la organización debe tener una de las siguientes suscripciones o complementos:
+Antes de empezar con la administración de acceso con privilegios, debe confirmar la [Microsoft 365 suscripción y](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) los complementos. Para obtener acceso y usar la administración de acceso con privilegios, la organización debe tener una de las siguientes suscripciones o complementos:
 
-- Suscripción a Microsoft 365 E5 (versión de pago o de prueba)
-- Suscripción de Microsoft 365 E3 (o suscripción a Office 365 E3 + Enterprise Mobility y suscripción de Seguridad E3) + el complemento Cumplimiento de Microsoft 365 E5
-- Cualquier suscripción de Microsoft 365, Office 365, Exchange, SharePoint o OneDrive para la Empresa + el complemento De administración de riesgos de Microsoft 365 E5 Insider  
-- Suscripción a Microsoft 365 A5 (versión de pago o de prueba)
-- Suscripción a Microsoft 365 A3 (o suscripción a Office 365 A3 + enterprise mobility and Security A3) + el complemento de cumplimiento de Microsoft A5
-- Cualquier suscripción a Microsoft 365, Office 365, Exchange, SharePoint o OneDrive para la Educación + el complemento De administración de riesgos de Microsoft 365 A5 Insider
-- Suscripción a Office 365 Enterprise E5 (versión de pago o de prueba)
-- Suscripción a Office 365 Enterprise E3 + el complemento de cumplimiento avanzado de Office 365 (ya no está disponible para nuevas suscripciones, vea la nota)
+- Microsoft 365 E5 suscripción (versión de pago o de prueba)
+- Microsoft 365 E3 (o Office 365 de E3 + Enterprise de movilidad y seguridad E3) + Cumplimiento de Microsoft 365 E5 complemento
+- Cualquier Microsoft 365, Office 365, Exchange, SharePoint o OneDrive para la Empresa suscripción + el complemento de administración de riesgos Microsoft 365 E5 Insider  
+- Microsoft 365 Suscripción A5 (versión de pago o de prueba)
+- Microsoft 365 Suscripción A3 (o Office 365 A3 suscripción + Enterprise de movilidad y seguridad A3) + el complemento de cumplimiento de Microsoft A5
+- Cualquier suscripción Microsoft 365, Office 365, Exchange, SharePoint o OneDrive para Educación + el complemento de administración de riesgos Microsoft 365 A5 Insider
+- Office 365 Enterprise Suscripción E5 (versión de pago o de prueba)
+- Office 365 Enterprise Suscripción E3 + Cumplimiento avanzado de Office 365 complemento (ya no está disponible para las nuevas suscripciones, vea la nota)
 
 Los usuarios que envíen y respondan a solicitudes de administración de acceso con privilegios deben tener asignada una de las licencias anteriores.
 
 >[!IMPORTANT]
->El cumplimiento avanzado de Office 365 ya no se vende como una suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o características de cumplimiento adicionales.
+>Cumplimiento avanzado de Office 365 ya no se vende como una suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas o adicionales características de cumplimiento.
 
-Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar la administración del acceso con privilegios, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) a su suscripción [existente de](https://www.microsoft.com/microsoft-365/enterprise) Office 365 o registrarse para una versión de prueba de Microsoft 365 Enterprise E5.
+Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar la administración de acceso con privilegios, [](https://www.microsoft.com/microsoft-365/enterprise) puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) a la suscripción Office 365 existente o registrarse para una prueba de Microsoft 365 Enterprise E5.
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Habilitar y configurar la administración de acceso con privilegios
 
@@ -58,36 +58,36 @@ Siga estos pasos para configurar y usar el acceso con privilegios en su organiza
 
 - [Paso 1: Crear un grupo de aprobadores](privileged-access-management-configuration.md#step1)
 
-    Antes de empezar a usar el acceso con privilegios, determine quién necesita autoridad de aprobación para las solicitudes entrantes de acceso a tareas con privilegios elevados y con privilegios. Cualquier usuario que forma parte del grupo aprobadores puede aprobar solicitudes de acceso. Este grupo se habilita mediante la creación de un grupo de seguridad habilitado para correo en Office 365.
+    Antes de empezar a usar el acceso con privilegios, determine quiénes necesitan la autoridad de aprobaciones para las solicitudes entrantes de acceso a tareas con privilegios o privilegios elevados. Cualquier usuario que forme parte del grupo de aprobadores podrá aprobar las solicitudes de acceso. Este grupo se habilita mediante la creación de un grupo de seguridad habilitado para correo en Office 365.
 
 - [Paso 2: Habilitar el acceso con privilegios](privileged-access-management-configuration.md#step2)
 
-    El acceso con privilegios debe habilitarse explícitamente en Office 365 con el grupo de aprobadores predeterminado, incluido un conjunto de cuentas del sistema que desea excluir del control de acceso de administración de acceso con privilegios.
+    El acceso con privilegios debe habilitarse explícitamente en Office 365 con el grupo predeterminado de aprobadores, incluido el conjunto de cuentas del sistema que desee excluir del control de acceso de Privileged Access Management.
 
 - [Paso 3: Crear una directiva de acceso](privileged-access-management-configuration.md#step3)
 
-    La creación de una directiva de aprobación permite definir los requisitos de aprobación específicos en las tareas individuales. Las opciones de tipo de aprobación **son Auto** o **Manual**.
+    La creación de una directiva de aprobación le permite definir requisitos de aprobación específicos para cada tarea. Las opciones de tipo de aprobación son **Automática** o **Manual**.
 
-- [Paso 4: Enviar y aprobar solicitudes de acceso con privilegios](privileged-access-management-configuration.md#step4)
+- [Paso 4: Enviar o aprobar solicitudes de acceso con privilegios](privileged-access-management-configuration.md#step4)
 
-    Una vez habilitado, el acceso con privilegios requiere aprobaciones para cualquier tarea que tenga definida una directiva de aprobación asociada. Para las tareas incluidas en una directiva de aprobación, los usuarios deben solicitar y obtener la aprobación de acceso para tener los permisos necesarios para ejecutar la tarea.
+    Tras habilitar el acceso con privilegios, este requiere la aprobación de toda tarea que tenga una directiva de aprobación definida asociada a ella. En el caso de las tareas incluidas en una directiva de aprobación, los usuarios deberán solicitar y obtener la aprobación de acceso para contar con los permisos necesarios para ejecutar la tarea.
 
-Una vez concedida la aprobación, el usuario solicitante puede ejecutar la tarea prevista y el acceso con privilegios autorizará y ejecutará la tarea en nombre del usuario. La aprobación sigue siendo válida durante la duración solicitada (la duración predeterminada es de 4 horas), durante las cuales el solicitante puede ejecutar la tarea prevista varias veces. Todas estas ejecuciones se registran y están disponibles para la auditoría de seguridad y cumplimiento. 
+Una vez que se concede la aprobación, el usuario que realizó la solicitud puede ejecutar la tarea prevista y el acceso con privilegios autorizará y ejecutará la tarea en nombre del usuario. La aprobación será válida durante el período de tiempo solicitado (la duración predeterminada es de cuatro horas), a lo largo del cual el solicitante puede ejecutar la tarea prevista varias veces. Todas esas ejecuciones se registran y pasan a estar disponibles para las auditorías de seguridad y cumplimiento. 
 
 >[!NOTE]
->Si desea usar PowerShell de administración de Exchange para habilitar y configurar el acceso con privilegios, siga los pasos descritos en Conectarse a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa) con la autenticación multifactor para conectarse a Exchange Online PowerShell con sus credenciales de Office 365. No es necesario habilitar la autenticación multifactor para que su organización siga los pasos para habilitar el acceso con privilegios al conectarse a Exchange Online PowerShell. La conexión con la autenticación multifactor crea un token de OAuth que usa el acceso con privilegios para firmar las solicitudes.
+>Si desea usar PowerShell de administración de Exchange para habilitar y configurar el acceso con privilegios, siga los pasos de Conectar para Exchange Online PowerShell mediante la autenticación [multifactor](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa) para conectarse Exchange Online PowerShell con sus credenciales Office 365. No es necesario habilitar la autenticación multifactor para que la organización use los pasos necesarios para habilitar el acceso con privilegios al conectarse Exchange Online PowerShell. La conexión con la autenticación multifactor crea un token de OAuth que usa el acceso con privilegios para firmar las solicitudes.
 
 <a name="step1"> </a>
 
 ## <a name="step-1-create-an-approvers-group"></a>Paso 1: Crear un grupo de aprobadores
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
+1. Inicie sesión en el [Microsoft 365 de administración](https://admin.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
 
-2. En el Centro de administración, vaya a **Grupos**  >  **agregar un grupo.**
+2. En el Centro de administración, vaya a **Grupos**  >  **Agregar un grupo**.
 
-3. Seleccione **el grupo de seguridad habilitado para correo** y, a continuación, complete los campos **Nombre,** Dirección de correo **electrónico** del grupo y Descripción para el nuevo grupo. 
+3. Seleccione **grupo de seguridad habilitado para correo** y,  a continuación, complete los campos **Nombre,** Dirección de **correo electrónico** del grupo y Descripción del nuevo grupo.
 
-4. Guarde el grupo. El grupo puede tardar unos minutos en configurarse completamente y aparecer en el Centro de administración de Microsoft 365.
+4. Guarde el grupo.  La configuración completa del grupo y su aparición en el Centro de administración de Microsoft 365 pueden tardar unos minutos.
 
 5. Seleccione el grupo del nuevo aprobador y **seleccione Editar** para agregar usuarios al grupo.
 
@@ -97,19 +97,19 @@ Una vez concedida la aprobación, el usuario solicitante puede ejecutar la tarea
 
 ## <a name="step-2-enable-privileged-access"></a>Paso 2: Habilitar el acceso con privilegios
 
-### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
+### <a name="in-the-microsoft-365-admin-center"></a>En el Centro Microsoft 365 administración
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
+1. Inicie sesión en el [Centro Microsoft 365 administración](https://admin.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
 
-2. En el Centro de administración, vaya **a** Configuración de configuración de la  >    >  **organización seguridad & acceso con**  >  **privilegios de privacidad.**
+2. En el Centro de administración, vaya **a Configuración**  >  **Org Configuración** Security &  >  **Privacy**  >  **Privileged access**.
 
 3. Habilite el **control Requerir aprobaciones para tareas con privilegios.**
 
-4. Asigne el grupo del aprobador que creó en el paso 1 como grupo **de aprobadores predeterminados.**
+4. Asigne el grupo del aprobador que creó en el paso 1 como **grupo Aprobadores predeterminados.**
 
 5. **Guardar** y **cerrar**.
 
-### <a name="in-exchange-management-powershell"></a>En Exchange Management PowerShell
+### <a name="in-exchange-management-powershell"></a>En Exchange PowerShell de administración
 
 Para habilitar el acceso con privilegios y asignar el grupo del aprobador, ejecute el siguiente comando en Exchange Online PowerShell:
 
@@ -124,7 +124,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 ```
 
 >[!NOTE]
->La característica de cuentas del sistema está disponible para garantizar que determinadas automatización de las organizaciones puedan funcionar sin dependencias en el acceso con privilegios, pero se recomienda que estas exclusiones sean excepcionales y que las permitidas se aprueben y auditan periódicamente.
+>La característica cuentas del sistema está disponible para garantizar que ciertas automatizacións dentro de las organizaciones puedan funcionar sin dependencia del acceso con privilegios, pero se recomienda que estas exclusiones sean excepcionales y que las permitidas se aprueben y audite periódicamente.
 
 <a name="step3"> </a>
 
@@ -132,31 +132,31 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 Puede crear y configurar hasta 30 directivas de acceso con privilegios para su organización.
 
-### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
+### <a name="in-the-microsoft-365-admin-center"></a>En el Centro Microsoft 365 administración
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
+1. Inicie sesión en el [Centro Microsoft 365 administración](https://admin.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
 
-2. En el Centro de administración, vaya **a** Configuración de configuración de la  >    >  **organización seguridad & acceso con**  >  **privilegios de privacidad.**
+2. En el Centro de administración, vaya **a Configuración**  >  **Org Configuración** Security &  >  **Privacy**  >  **Privileged access**.
 
-3. Seleccione **Administrar directivas de acceso y solicitudes.**
+3. Seleccione **Administrar directivas y solicitudes de acceso.**
 
-4. Seleccione **Configurar directivas** y agregar una **directiva.**
+4. Seleccione **Configurar directivas** y seleccione Agregar una **directiva**.
 
 5. En los campos desplegables, seleccione los valores adecuados para su organización:
     
-    **Tipo de directiva:** tarea, rol o grupo de roles
+    **Tipo de directiva**: tarea, rol o grupo de roles
 
-    **Ámbito de directiva:** Exchange
+    **Ámbito de la directiva**: Exchange
 
-    **Nombre de la** directiva: seleccionar entre las directivas disponibles
+    **Nombre de la directiva**: seleccionar entre las directivas disponibles
 
-    **Tipo de aprobación:** manual o automático
+    **Tipo de aprobación**: manual o automática
 
-    **Grupo de aprobación:** seleccionar el grupo de aprobadores creado en el paso 1
+    **Grupo de aprobación**: seleccionar el grupo de aprobadores creado en el paso 1
 
-6. Seleccione **Crear** y, a continuación, **Cerrar**. La directiva puede tardar unos minutos en configurarse y habilitarse completamente.
+6. Seleccione **Crear** y, a continuación, **Cerrar**. La directiva puede tardar unos minutos en estar totalmente configurada y habilitada.
 
-### <a name="in-exchange-management-powershell"></a>En Exchange Management PowerShell
+### <a name="in-exchange-management-powershell"></a>En Exchange PowerShell de administración
 
 Para crear y definir una directiva de aprobación, ejecute el siguiente comando en Exchange Online PowerShell:
 
@@ -172,35 +172,35 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 <a name="step4"> </a>
 
-## <a name="step-4-submitapprove-privileged-access-requests"></a>Paso 4: Enviar y aprobar solicitudes de acceso con privilegios
+## <a name="step-4-submitapprove-privileged-access-requests"></a>Paso 4: Enviar o aprobar solicitudes de acceso con privilegios
 
-### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Solicitar autorización de elevación para ejecutar tareas con privilegios
+### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Solicitud de autorización de elevación para ejecutar tareas privilegiadas
 
-Las solicitudes de acceso con privilegios son válidas hasta 24 horas después de enviar la solicitud. Si no se aprueba o se deniega, las solicitudes expiran y no se aprueba el acceso.
+Las solicitudes de acceso con privilegios son válidas hasta 24 horas después de que se hayan enviado. Si ni se aprueban ni se deniegan, las solicitudes expiran y el acceso no se aprueba.
 
-#### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
+#### <a name="in-the-microsoft-365-admin-center"></a>En el Centro Microsoft 365 administración
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales.
+1. Inicie sesión en el [Centro Microsoft 365 administración](https://admin.microsoft.com) con sus credenciales.
 
-2. En el Centro de administración, vaya **a** Configuración de configuración de la  >    >  **organización seguridad & acceso con**  >  **privilegios de privacidad.**
+2. En el Centro de administración, vaya **a Configuración**  >  **Org Configuración** Security &  >  **Privacy**  >  **Privileged access**.
 
-3. Seleccione **Administrar directivas de acceso y solicitudes.**
+3. Seleccione **Administrar directivas y solicitudes de acceso.**
 
-4. Seleccione **Nueva solicitud.** En los campos desplegables, seleccione los valores adecuados para su organización:
+4. Seleccione **Nueva solicitud**. En los campos desplegables, seleccione los valores adecuados para su organización:
 
-    **Tipo de solicitud:** tarea, rol o grupo de roles
+    **Tipo de solicitud**: tarea, rol o grupo de roles
 
-    **Ámbito de solicitud:** Exchange
+    **Ámbito de la solicitud**: Exchange
 
-    **Solicitud de:** Seleccionar entre las directivas disponibles
+    **Solicitud de**: seleccionar entre las directivas disponibles
 
-    **Duración (horas):** número de horas de acceso solicitado. No hay un límite en el número de horas que se pueden solicitar.
+    **Duración (horas)**: número de horas del acceso solicitado No hay un límite en el número de horas que se pueden solicitar.
 
-    **Comentarios:** campo de texto para los comentarios relacionados con la solicitud de acceso
+    **Comentarios:** Campo de texto para los comentarios relacionados con la solicitud de acceso
 
-5. Seleccione **Guardar** y, a continuación, **Cerrar**. Su solicitud se enviará al grupo del aprobador por correo electrónico.
+5. Seleccione **Guardar** y, a continuación, **Cerrar**. La solicitud se enviará al grupo del aprobador por correo electrónico.
 
-#### <a name="in-exchange-management-powershell"></a>En Exchange Management PowerShell
+#### <a name="in-exchange-management-powershell"></a>En Exchange PowerShell de administración
 
 Ejecute el siguiente comando en Exchange Online PowerShell para crear y enviar una solicitud de aprobación al grupo del aprobador:
 
@@ -216,19 +216,19 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 ### <a name="view-status-of-elevation-requests"></a>Ver el estado de las solicitudes de elevación
 
-Después de crear una solicitud de aprobación, el estado de la solicitud de elevación se puede revisar en el centro de administración o en Exchange Management PowerShell con el identificador de solicitud asociado.
+Después de crear una solicitud de aprobación, el estado de la solicitud de elevación se puede revisar en el Centro de administración o en powerShell de administración Exchange mediante el identificador de solicitud asociado.
 
 #### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
 
-1. Inicie sesión en el Centro de administración de [Microsoft 365](https://admin.microsoft.com) con sus credenciales.
+1. Inicie sesión en el [Microsoft 365 de administración con](https://admin.microsoft.com) sus credenciales.
 
-2. En el centro de administración, vaya **a** Configuración de configuración de la  >    >  **organización seguridad & acceso con**  >  **privilegios de privacidad.**
+2. En el Centro de administración, vaya **a Configuración**  >  **Org Configuración** Security &  >  **Privacy**  >  **Privileged access**.
 
-3. Seleccione **Administrar directivas de acceso y solicitudes.**
+3. Seleccione **Administrar directivas y solicitudes de acceso.**
 
-4. Seleccione **Ver** para filtrar las solicitudes enviadas por estado **Pendiente,** **Aprobado,** **Denegado** o Caja de **seguridad del** cliente.
+4. Seleccione **Ver** para filtrar las solicitudes enviadas por estado **Pendiente,** **Aprobado,** **Denegado** o **Caja de seguridad del** cliente.
 
-#### <a name="in-exchange-management-powershell"></a>En Exchange Management PowerShell
+#### <a name="in-exchange-management-powershell"></a>En Exchange PowerShell de administración
 
 Ejecute el siguiente comando en Exchange Online PowerShell para ver el estado de una solicitud de aprobación para un identificador de solicitud específico:
 
@@ -244,21 +244,21 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 ### <a name="approving-an-elevation-authorization-request"></a>Aprobar una solicitud de autorización de elevación
 
-Cuando se crea una solicitud de aprobación, los miembros del grupo de aprobadores relevante reciben una notificación por correo electrónico y pueden aprobar la solicitud asociada con el identificador de solicitud. Se notifica al solicitante la aprobación o denegación de la solicitud mediante un mensaje de correo electrónico.
+Cuando se crea una solicitud de aprobación, los miembros del grupo de aprobadores correspondiente reciben una notificación por correo electrónico y pueden aprobar la solicitud asociada con el identificador de solicitud. Se notificará al solicitante de la aprobación o denegación de la solicitud por correo electrónico.
 
 #### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
 
-1. Inicie sesión en el Centro de administración de [Microsoft 365](https://admin.microsoft.com) con sus credenciales.
+1. Inicie sesión en el [Microsoft 365 de administración con](https://admin.microsoft.com) sus credenciales.
 
-2. En el centro de administración, vaya **a** Configuración de configuración de la  >    >  **organización seguridad & acceso con**  >  **privilegios de privacidad.**
+2. En el Centro de administración, vaya **a Configuración**  >  **Org Configuración** Security &  >  **Privacy**  >  **Privileged access**.
 
-3. Seleccione **Administrar directivas de acceso y solicitudes.**
+3. Seleccione **Administrar directivas y solicitudes de acceso.**
 
 4. Seleccione una solicitud enumerada para ver los detalles y tomar medidas en la solicitud.
 
-5. Seleccione **Aprobar** para aprobar la solicitud o **Denegar** para denegar la solicitud. Las solicitudes aprobadas anteriormente pueden tener acceso revocado seleccionando **Revocar**.
+5. Seleccione **Aprobar** para aprobar la solicitud o **seleccione Denegar** para denegar la solicitud. Las solicitudes aprobadas anteriormente pueden tener acceso revocado seleccionando **Revocar**.
 
-#### <a name="in-exchange-management-powershell"></a>En Exchange Management PowerShell
+#### <a name="in-exchange-management-powershell"></a>En Exchange PowerShell de administración
 
 Para aprobar una solicitud de autorización de elevación, ejecute el siguiente comando en Exchange Online PowerShell:
 
@@ -290,19 +290,19 @@ Si ya no es necesario en su organización, puede eliminar una directiva de acces
 
 ### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
+1. Inicie sesión en el [Microsoft 365 de administración](https://admin.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
 
-2. En el centro de administración, vaya **a** Configuración de configuración de la  >    >  **organización seguridad & acceso con**  >  **privilegios de privacidad.**
+2. En el Centro de administración, vaya **a Configuración**  >  **Org Configuración** Security &  >  **Privacy**  >  **Privileged access**.
 
-3. Seleccione **Administrar directivas de acceso y solicitudes.**
+3. Seleccione **Administrar directivas y solicitudes de acceso.**
 
-4. Seleccione **Configurar directivas.**
+4. Seleccione **Configurar directivas**.
 
-5. Seleccione la directiva que desea eliminar y, a continuación, **seleccione Quitar directiva.**
+5. Seleccione la directiva que desea eliminar y, a continuación, **seleccione Quitar directiva**.
 
 6. Seleccione **Cerrar**.
 
-### <a name="in-exchange-management-powershell"></a>En Exchange Management PowerShell
+### <a name="in-exchange-management-powershell"></a>En Exchange PowerShell de administración
 
 Para eliminar una directiva de acceso con privilegios, ejecute el siguiente comando en Exchange Online Powershell:
 
@@ -312,17 +312,17 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 ## <a name="disable-privileged-access-in-office-365"></a>Deshabilitar el acceso con privilegios en Office 365
 
-Si es necesario, puede deshabilitar la administración del acceso con privilegios para su organización. Deshabilitar el acceso con privilegios no elimina ninguna de las directivas de aprobación o grupos de aprobadores asociados.
+Si es necesario, puede deshabilitar la administración de acceso con privilegios para su organización. Deshabilitar el acceso con privilegios no elimina ninguna de las directivas de aprobación o grupos de aprobadores asociados.
 
 ### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador de su organización.
+1. Inicie sesión en el [Microsoft 365 de administración](https://admin.microsoft.com) con credenciales para una cuenta de administrador de su organización.
 
-2. En el Centro de administración, vaya **a** Configuración de configuración de la  >    >  **organización seguridad & acceso con**  >  **privilegios de privacidad.**
+2. En el Centro de administración, vaya **a Configuración**  >  **Org Configuración** Security &  >  **Privacy**  >  **Privileged access**.
 
 3. Habilite requerir **aprobaciones para el** control de acceso con privilegios.
 
-### <a name="in-exchange-management-powershell"></a>En Exchange Management PowerShell
+### <a name="in-exchange-management-powershell"></a>En Exchange PowerShell de administración
 
 Para deshabilitar el acceso con privilegios, ejecute el siguiente comando en Exchange Online Powershell:
 

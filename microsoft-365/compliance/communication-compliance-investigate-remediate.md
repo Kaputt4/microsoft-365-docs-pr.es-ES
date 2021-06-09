@@ -128,4 +128,4 @@ Ahora que ha revisado los detalles del mensaje para la alerta, puede elegir vari
 
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>Paso 4: Determinar si los detalles del mensaje deben archivarse fuera del cumplimiento de la comunicación
 
-Los detalles del mensaje se pueden exportar o descargar si necesita archivar los mensajes en una solución de almacenamiento independiente. Al seleccionar el control **Descargar** los mensajes seleccionados se agregan automáticamente a un archivo .ZIP que se puede guardar en almacenamiento fuera de Microsoft 365.
+Los detalles del mensaje se pueden exportar o descargar si necesita archivar los mensajes en una solución de almacenamiento independiente. Al seleccionar el control **Descargar** los mensajes seleccionados se agregan automáticamente a un archivo .ZIP que se puede guardar en almacenamiento fuera de Microsoft 365.

@@ -25,7 +25,7 @@ ms.locfileid: "50926560"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Recopilar información de diagnóstico de eDiscovery
 
-En ocasiones, los ingenieros de soporte técnico de Microsoft requieren información específica sobre el problema al abrir un caso de soporte técnico relacionado con eDiscovery principal o eDiscovery avanzado. En este artículo se proporcionan instrucciones sobre cómo recopilar información de diagnóstico para ayudar a los ingenieros a investigar y resolver problemas. Normalmente, no es necesario recopilar esta información hasta que un ingeniero de soporte técnico de Microsoft lo pida.
+En ocasiones, los ingenieros de soporte técnico de Microsoft requieren información específica sobre el problema al abrir un caso de soporte técnico relacionado con la exhibición de documentos electrónicos principal o Advanced eDiscovery. En este artículo se proporcionan instrucciones sobre cómo recopilar información de diagnóstico para ayudar a los ingenieros a investigar y resolver problemas. Normalmente, no es necesario recopilar esta información hasta que un ingeniero de soporte técnico de Microsoft lo pida.
 
 > [!IMPORTANT]
 > El resultado de los cmdlets y la información de diagnóstico que se describe en este artículo puede incluir información confidencial sobre litigios o investigaciones internas en su organización. Antes de enviar la información de diagnóstico sin procesar al Soporte técnico de Microsoft, debe revisar la información y redactar cualquier información confidencial (como nombres u otra información sobre partes en litigio o investigación) reemplazando por `XXXXXXX` . El uso de este método también indicará al ingeniero de soporte técnico de Microsoft que se redactó la información.
@@ -39,7 +39,7 @@ Para ejecutar los cmdlets siguientes, [conéctese a </span> PowerShell & Centro 
 Después de revisar el archivo de texto generado y de redactar información confidencial, envíelo al ingeniero de soporte técnico de Microsoft que trabaja en su caso.
 
 > [!NOTE]
-> También puede ejecutar los comandos de esta sección para recopilar información  de diagnóstico de las búsquedas y exportaciones que aparecen en la página Búsqueda de contenido en el Centro de cumplimiento de Microsoft 365.
+> También puede ejecutar los comandos de esta sección para recopilar información  de diagnóstico de las búsquedas y exportaciones que aparecen en la página Búsqueda de contenido en el centro de Microsoft 365 cumplimiento.
 
 ### <a name="collect-information-about-searches"></a>Recopilar información sobre búsquedas
 
@@ -67,25 +67,25 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>Recopilar toda la información de casos
 
-A veces, no es aparente qué información requiere el soporte técnico de Microsoft para investigar el problema. En esta situación, puede recopilar toda la información de diagnóstico para un caso de exhibición de documentos electrónicos principal. El nombre de caso de *eDiscovery* principal del siguiente comando es el mismo que el nombre de un caso que se muestra en la página **eDiscovery** principal del Centro de cumplimiento de Microsoft 365.
+A veces, no es aparente qué información requiere el soporte técnico de Microsoft para investigar el problema. En esta situación, puede recopilar toda la información de diagnóstico para un caso de exhibición de documentos electrónicos principal. El *nombre* del caso de exhibición de documentos electrónicos principal en el siguiente  comando es el mismo que el nombre de un caso que se muestra en la página Exhibición de documentos electrónicos principales en el centro de cumplimiento de Microsoft 365 de documentos electrónicos.
 
 ```powershell
 Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
-## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>Recopilar información de diagnóstico para eDiscovery avanzada
+## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>Recopilar información de diagnóstico para Advanced eDiscovery
 
-La **pestaña** Configuración de un caso de exhibición de documentos electrónicos avanzada le permite copiar rápidamente la información de diagnóstico del caso. La información de diagnóstico se guarda en el Portapapeles para que puedas pegarla en un archivo de texto y enviarla al Soporte técnico de Microsoft.
+La **Configuración** en un caso Advanced eDiscovery permite copiar rápidamente la información de diagnóstico del caso. La información de diagnóstico se guarda en el Portapapeles para que puedas pegarla en un archivo de texto y enviarla al Soporte técnico de Microsoft.
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic **en Mostrar > eDiscovery > Advanced**.
 
-2. Seleccione un caso y, a continuación, haga clic **en la pestaña** Configuración.
+2. Seleccione un caso y, a **continuación, haga** clic en Configuración pestaña.
 
 3. En **Información de casos**, haga clic **en Seleccionar**.
 
 4. En la página desplegable, haz clic en **Copiar información de diagnóstico** para copiar la información en el Portapapeles.
 
-5. Abra un archivo de texto (en el Bloc de notas) y pegue la información en el archivo de texto.
+5. Abra un archivo de texto (en Bloc de notas) y pegue la información en el archivo de texto.
 
 6. Guarde el archivo de texto y así lo asigne un nombre `AeD Diagnostic Info YYYY.MM.DD` parecido (por ejemplo, `AeD Diagnostic Info 2020.11.03` ).
 

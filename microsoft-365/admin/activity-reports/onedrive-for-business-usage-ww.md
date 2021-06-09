@@ -53,7 +53,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |URL  <br/> |La dirección web del usuario OneDrive. <br/> |
-|Deleted  <br/> |El estado de eliminación del OneDrive. Pueden pasar al menos 7 días hasta que las cuentas se marquen como eliminadas.  <br/> |
+|Eliminada  <br/> |El estado de eliminación del OneDrive. Pueden pasar al menos 7 días hasta que las cuentas se marquen como eliminadas.  <br/> |
 |Propietario  <br/> |Nombre de usuario del administrador principal de la OneDrive.   <br/> |
 |Nombre principal del propietario  <br/> |La dirección de correo electrónico del propietario del OneDrive. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La última fecha en que se realizó una actividad de archivo en el OneDrive. Si la OneDrive no ha tenido actividad de archivos, el valor se mostrará en blanco.  <br/> |

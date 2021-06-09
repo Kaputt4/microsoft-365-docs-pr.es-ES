@@ -52,7 +52,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Dirección URL del sitio  <br/> |La dirección URL completa del sitio. <br/> |
-|Deleted  <br/> |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  <br/> |
+|Eliminada  <br/> |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  <br/> |
 |Propietario del sitio  <br/> |Nombre de usuario del propietario principal del sitio.   <br/> |
 |Nombre principal del propietario del sitio  <br/> |La dirección de correo electrónico del propietario del sitio. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La fecha de la última vez que se detectó la actividad del archivo o una página se visualizó en el sitio.  <br/> |

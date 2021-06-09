@@ -19,16 +19,16 @@ ms.locfileid: "50107734"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Cambiar el nombre del centro de temas en Temas de Microsoft Viva
 
-Puede cambiar el nombre del centro de temas en el Centro de administración de [Microsoft 365.](https://admin.microsoft.com) Debe ser administrador global o administrador de SharePoint para realizar estas tareas.
+Puede cambiar el nombre del centro de temas en el centro [Microsoft 365 de administración.](https://admin.microsoft.com) Debe ser un administrador global o SharePoint administrador para realizar estas tareas.
 
-## <a name="to-access-topics-management-settings"></a>Para obtener acceso a la configuración de administración de temas:
+## <a name="to-access-topics-management-settings"></a>Para acceder a la configuración de administración de temas:
 
-1. En el Centro de administración de Microsoft 365, haga clic **en Configuración** y, a continuación, en Configuración de **la organización.**
-2. En la **pestaña Servicios,** haga clic en **Experiencias del tema.**
+1. En el Centro Microsoft 365 administración, haga clic **en Configuración** y, a continuación, en Configuración de **la organización.**
+2. En la **pestaña Servicios,** haga clic en **Experiencias del tema**.
 
-    ![Conectar a las personas con el conocimiento](../media/admin-org-knowledge-options-completed.png) 
+    ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
 
-3. Seleccione la **pestaña Centro de** temas. Consulta las siguientes secciones para obtener información sobre cada configuración.
+3. Seleccione la **pestaña Centro de** temas. Vea las secciones siguientes para obtener información sobre cada configuración.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
@@ -36,16 +36,16 @@ Puede cambiar el nombre del centro de temas en el Centro de administración de [
 
 Para cambiar el nombre del centro de temas
 
-1. En la **pestaña Centro de** temas, en Nombre del centro de **temas,** **seleccione Editar**.
-2. En la página Editar nombre  del centro **de** temas, en el cuadro Nombre del centro de temas, escriba el nuevo nombre del centro de temas.
+1. En la **ficha Centro de** temas, en Nombre del centro de **temas,** seleccione **Editar**.
+2. En la **página Editar nombre del centro de** temas, en el cuadro Nombre del centro de temas, escriba el nuevo nombre del centro de temas. 
 3. Seleccione **Guardar**.
 
-    ![Editar el nombre del centro del tema](../media/manage-topic-center-name.png)  
+    ![Editar nombre del centro de temas](../media/manage-topic-center-name.png)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Administrar la detección de temas en temas de Microsoft Viva](topic-experiences-discovery.md)
+[Administrar la detección de temas en Temas de Microsoft Viva](topic-experiences-discovery.md)
 
-[Administrar la visibilidad de temas en Temas de Microsoft Viva](topic-experiences-knowledge-rules.md)
+[Administrar visibilidad de temas en Temas de Microsoft Viva](topic-experiences-knowledge-rules.md)
 
-[Administrar permisos de temas en temas de Microsoft Viva](topic-experiences-user-permissions.md)
+[Administrar permisos de temas en Temas de Microsoft Viva](topic-experiences-user-permissions.md)

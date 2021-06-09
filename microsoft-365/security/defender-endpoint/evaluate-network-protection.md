@@ -39,7 +39,7 @@ Este artículo le ayuda a evaluar la protección de red habilitando la caracter�
 
 Habilite la protección de red en modo auditoría para ver qué direcciones IP y dominios se habrían bloqueado. Puedes asegurarte de que no afecta a las aplicaciones de línea de negocio u obtener una idea de la frecuencia con la que se producen los bloqueos.
 
-1. Escriba **powershell** en el menú Inicio, haga clic con el Windows PowerShell **y** seleccione Ejecutar como **administrador**
+1. Escriba **powershell** en el menú Inicio, haga clic con el botón Windows PowerShell **y** seleccione Ejecutar como **administrador**
 2. Escriba el siguiente cmdlet:
 
     ```PowerShell
@@ -54,11 +54,11 @@ Habilite la protección de red en modo auditoría para ver qué direcciones IP y
 
 Se permitirá la conexión de red y se mostrará un mensaje de prueba.
 
-![Notificación de ejemplo que indica conexión bloqueada: el administrador de TI hizo que Seguridad de Windows bloqueara esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Notificación de ejemplo que indica Conexión bloqueada: el administrador de TI Seguridad de Windows bloquear esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](/microsoft-365/security/defender-endpoint/images/np-notif)
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en el Visor de eventos de Windows
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos
 
-Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de eventos y filtre el identificador de evento 1125 en el registro operativo/Microsoft-Windows-Windows-Defender. En la tabla siguiente se enumeran todos los eventos de protección de red.
+Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de eventos y filtre el identificador de evento 1125 en el registro de Microsoft-Windows-Windows-Defender/Operational. En la tabla siguiente se enumeran todos los eventos de protección de red.
 
 | Id. de evento | Provide/Source | Descripción |
 |-|-|-|

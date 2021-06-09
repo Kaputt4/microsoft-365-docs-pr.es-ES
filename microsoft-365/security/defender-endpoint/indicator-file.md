@@ -115,7 +115,7 @@ Tenga en cuenta que Administración de amenazas y vulnerabilidades aplicaciones 
 |Control de aplicaciones de Windows Defender |Bloquear |Permitir |Bloquear
 |Antivirus de Microsoft Defender exclusión |Permitir |Bloquear |Permitir
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

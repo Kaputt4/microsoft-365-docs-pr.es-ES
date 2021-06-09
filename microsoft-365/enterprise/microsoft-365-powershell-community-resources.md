@@ -25,11 +25,11 @@ ms.locfileid: "48754697"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>Recursos de la comunidad de Microsoft 365 para PowerShell
 
-Conéctese a estas comunidades para llegar a sus compañeros y obtener respuestas para sus preguntas de PowerShell para Microsoft 365. 
+Conectar a estas comunidades para llegar a sus compañeros y obtener respuestas para su PowerShell para Microsoft 365 preguntas. 
   
 - [Microsoft 365 Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
-- [Exchange Server foro de la comunidad de TechNet](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
+- [Exchange Server Foro de la comunidad de TechNet](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 ## <a name="see-also"></a>Consulte también
 

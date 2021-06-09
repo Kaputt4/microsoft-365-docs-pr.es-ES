@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
-description: Use las guías del entorno de pruebas para crear soluciones y escenarios de Microsoft 365 en un entorno de desarrollo y pruebas.
+description: Use Guías del laboratorio de pruebas para crear Microsoft 365 soluciones y escenarios en un entorno de desarrollo y pruebas.
 ms.openlocfilehash: 10ddfc9cb9f9135b352be50c555811342ae0bd2b
 ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
@@ -34,6 +34,6 @@ Las TLG también le permiten crear entornos representativos para desarrollo y pr
   
 ![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Pruebe [esta guía del entorno de pruebas](team-security-isolation-dev-test.md) para configurar un equipo con aislamiento de seguridad.
+Pruebe [esta Guía del laboratorio de pruebas](team-security-isolation-dev-test.md) para configurar un equipo con aislamiento de seguridad.
 
-Para obtener guías adicionales sobre las características y la configuración de Microsoft 365, consulte Guías del entorno de pruebas de [Microsoft 365 para empresas.](../enterprise/m365-enterprise-test-lab-guides.md)
+Para obtener guías adicionales para Microsoft 365 y configuración, consulte Microsoft 365 para guías de laboratorio [de pruebas empresariales.](../enterprise/m365-enterprise-test-lab-guides.md)

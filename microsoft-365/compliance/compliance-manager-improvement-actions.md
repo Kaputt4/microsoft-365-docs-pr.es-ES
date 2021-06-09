@@ -58,7 +58,7 @@ Una vez que identifique al destinatario adecuado, asegúrese de que tienen un ro
 
 3. Seleccione **Guardar y cerrar**. El usuario asignado recibirá un correo electrónico explicando que se les ha asignado la acción de mejora, con un vínculo directo a la acción de mejora. 
 > [!NOTE]
-> Los clientes de la Comunidad gubernamental de Estados Unidos (GCC) altos y del Departamento de Defensa (DoD) no recibirán un correo electrónico cuando se les asignen acciones de mejora.
+> Los clientes Community administración pública (GCC) altos y del Departamento de Defensa (DoD) no recibirán un correo electrónico cuando se les asignen acciones de mejora.
 
 A continuación, el usuario asignado puede realizar las acciones recomendadas.
 
@@ -171,4 +171,4 @@ Tenga en cuenta que al volver a la página de acciones de mejora, es posible que
 
 ## <a name="export-a-report"></a>Exportar un informe
 
-Seleccione **Exportar** en la esquina superior izquierda de la pantalla para descargar una hoja de cálculo de Excel que contenga todas las acciones de mejora y las categorías de filtro que se muestran en la página acciones de mejora.
+Seleccione **Exportar** en la esquina superior izquierda de la pantalla para descargar una hoja de cálculo Excel que contenga todas las acciones de mejora y las categorías de filtro que se muestran en la página acciones de mejora.

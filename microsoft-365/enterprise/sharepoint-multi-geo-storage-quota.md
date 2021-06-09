@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Obtenga información sobre las cuotas de almacenamiento de SharePoint en entornos multigemicos y cómo el administrador de SharePoint Online puede administrar las cuotas.
+description: Obtenga información sobre SharePoint de almacenamiento en entornos multige geográficos y cómo el administrador de SharePoint Online puede administrar las cuotas.
 ms.openlocfilehash: ec736a6bd6061f8b028fca7a1c34d5278a84db89
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

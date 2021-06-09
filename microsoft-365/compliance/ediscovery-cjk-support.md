@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad con CJK/Double Byte para eDiscovery avanzada
+title: Compatibilidad con CJK/Double Byte para Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo la exhibición de documentos electrónicos avanzada en Microsoft 365 admite los idiomas chino, japonés y coreano (CJK), que usan un juego de caracteres de doble byte.
+description: Obtenga información sobre Advanced eDiscovery en Microsoft 365 idiomas chino, japonés y coreano (CJK), que usan un juego de caracteres de doble byte.
 ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50926606"
 ---
-# <a name="cjk-language-support-for-advanced-ediscovery"></a>Compatibilidad con lenguaje CJK para exhibición de documentos electrónicos avanzada
+# <a name="cjk-language-support-for-advanced-ediscovery"></a>Compatibilidad con lenguaje CJK para Advanced eDiscovery
 
-La exhibición de documentos electrónicos avanzada admite idiomas de juego de caracteres de doble byte (entre los que se incluyen chino simplificado, chino tradicional, japonés y coreano, que se conocen colectivamente como idiomas *CJK)* para los siguientes escenarios avanzados de un conjunto de opiniones:
+Advanced eDiscovery admite idiomas de juego de caracteres de doble byte (estos incluyen chino simplificado, chino tradicional, japonés y coreano, que se conocen colectivamente como *idiomas CJK)* para los siguientes escenarios avanzados de un conjunto de opiniones:
 
 - Al consultar [los datos de un conjunto de revisión](review-set-search.md).
 
@@ -37,7 +37,7 @@ La exhibición de documentos electrónicos avanzada admite idiomas de juego de c
 
 **¿Cómo puedo crear una búsqueda para recopilar elementos que contengan caracteres CJK?**
 
-Puede usar caracteres CJK para [búsquedas](building-search-queries.md#keyword-searches)de palabras clave, consultas [de](keyword-queries-and-search-conditions.md) palabras clave y condiciones de búsqueda al buscar contenido en eDiscovery avanzada. También se admite la búsqueda de caracteres CJK al buscar contenido en la exhibición de documentos electrónicos principal y la búsqueda de contenido.
+Puede usar caracteres CJK para [búsquedas](building-search-queries.md#keyword-searches)de palabras clave, consultas [de](keyword-queries-and-search-conditions.md) palabras clave y condiciones de búsqueda al buscar contenido en Advanced eDiscovery. También se admite la búsqueda de caracteres CJK al buscar contenido en la exhibición de documentos electrónicos principal y la búsqueda de contenido.
 
 Proporcionamos compatibilidad con CJK para todos [los](keyword-queries-and-search-conditions.md#search-operators) operadores de búsqueda y las condiciones de [búsqueda,](keyword-queries-and-search-conditions.md#search-conditions)incluidos los operadores **booleanos AND**, **OR**, **NOT** y **NEAR**.
 
@@ -47,13 +47,13 @@ Si está seguro de que las ubicaciones de contenido o los elementos contienen ca
 
 Depende del escenario de búsqueda.
 
-- Al consultar [datos en un conjunto de revisión](review-set-search.md) de eDiscovery avanzado, puede buscar varios idiomas.
+- Al consultar [datos en un conjunto de revisión](review-set-search.md) Advanced eDiscovery, puede buscar varios idiomas.
 
 - Al crear [una búsqueda para recopilar datos,](create-search-to-collect-data.md)cree una búsqueda independiente para cada idioma de destino. Por ejemplo, si está buscando un documento que contenga chino y coreano, seleccione Chino para la primera consulta y seleccione Coreano para la segunda consulta.
 
 **No veo el icono de idioma-país o región de consulta para seleccionar un idioma para las consultas de un conjunto de revisión. ¿Cómo puedo especificar un idioma de consulta en una búsqueda de conjunto de revisión?**
 
-Para las consultas de conjunto de revisión, no es necesario especificar un idioma del documento. La exhibición de documentos electrónicos avanzada detecta automáticamente los idiomas de los documentos al agregar contenido a un conjunto de revisión. Esto le ayuda a optimizar los resultados de la consulta en un conjunto de revisión.
+Para las consultas de conjunto de revisión, no es necesario especificar un idioma del documento. Advanced eDiscovery detecta automáticamente los idiomas de los documentos al agregar contenido a un conjunto de revisión. Esto le ayuda a optimizar los resultados de la consulta en un conjunto de revisión.
 
 **¿Puedo ver idiomas detectados en metadatos [de archivo?](view-documents-in-review-set.md#file-metadata)**
 
@@ -69,7 +69,7 @@ No, ninguna de las búsquedas y conjuntos de revisión existentes cambiará. No 
 
 **¿Cómo puedo cambiar mi idioma de presentación a chino, japonés o coreano?**
 
-Para obtener información sobre cómo cambiar el idioma para mostrar y la zona horaria, vea [How to set language and region settings for Office 365](/office365/troubleshoot/access-management/set-language-and-region).
+Para obtener información sobre cómo cambiar el idioma para mostrar y la zona [horaria,](/office365/troubleshoot/access-management/set-language-and-region)vea How to set language and region settings for Office 365 .
 
 ## <a name="known-issues"></a>Problemas conocidos
 

@@ -1,6 +1,6 @@
 ---
-title: Configurar la detección de dispositivos
-description: Obtenga información sobre cómo configurar la detección de dispositivos en Microsoft 365 Defender mediante la detección básica o estándar
+title: Configuración de la detección de dispositivo
+description: Obtenga información sobre cómo configurar la detección de dispositivos en Microsoft 365 Defender con la detección básica o estándar
 keywords: básico, estándar, configurar la detección de puntos de conexión, la detección de dispositivos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -27,7 +27,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "51765256"
 ---
-# <a name="configure-device-discovery"></a>Configurar la detección de dispositivos
+# <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,17 +40,17 @@ ms.locfileid: "51765256"
 
 La detección se puede configurar para que esté en modo estándar o básico. Usa la opción estándar para buscar activamente dispositivos en tu red, lo que garantizará mejor la detección de puntos de conexión y proporcionará una clasificación de dispositivos más enriquecte. 
 
-Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente solo dispositivos Windows 10) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo. 
+Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente, solo dispositivos Windows 10) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo. 
 
 
 > [!IMPORTANT]
-> Para obtener una vista previa, primero tendrás que activar las características de vista previa en el Centro de seguridad de Microsoft Defender.
-> A continuación, puedes acceder a la configuración de detección de dispositivos en el Centro de seguridad de Microsoft 365. La lista de dispositivos no administrados y recomendaciones de seguridad estará disponible tanto en el Centro de seguridad de Microsoft Defender como en el Centro de seguridad de Microsoft 365, mientras que los iconos del panel solo estarán disponibles en el Centro de seguridad de Microsoft 365.
+> Para obtener una vista previa, primero tendrás que activar las características de vista previa en Centro de seguridad de Microsoft Defender.
+> A continuación, puedes acceder a la configuración de detección de dispositivos Microsoft 365 centro de seguridad. La lista de dispositivos no administrados y recomendaciones de seguridad estará disponible en el centro de seguridad de Centro de seguridad de Microsoft Defender y Microsoft 365, mientras que los iconos del panel solo estarán disponibles en Microsoft 365 centro de seguridad.
 
 
-Siga los siguientes pasos de configuración en el Centro de seguridad de Microsoft 365:
+Siga los siguientes pasos de configuración en Microsoft 365 de seguridad:
 
-1.  Vaya a **Configuración > Detección de dispositivos**.
+1.  Vaya a **Configuración > detección de dispositivos**.
 2.  Selecciona el modo de detección que quieres usar en los dispositivos integrados. 
 3.  Si has seleccionado usar la detección estándar, selecciona qué dispositivos usar para el sondeo activo: todos los dispositivos o en un subconjunto especificando sus etiquetas de dispositivo.
 4. Haga clic en **Guardar**.
@@ -103,6 +103,6 @@ Elegir la clasificación de detección inicial significa aplicar el estado prede
 
 
 
-## <a name="see-also"></a>Vea también
-- [Introducción a la detección de dispositivos](device-discovery.md)
+## <a name="see-also"></a>Consulte también
+- [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

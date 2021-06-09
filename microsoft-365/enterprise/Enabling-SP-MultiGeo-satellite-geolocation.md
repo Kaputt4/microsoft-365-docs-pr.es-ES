@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: En este artículo se proporciona información a los administradores globales o de SharePoint sobre cómo habilitar SharePoint Multi-Geo en ubicaciones geográficas satélite.
+description: En este artículo se proporciona información a los administradores globales SharePoint sobre cómo habilitar SharePoint Multi-Geo en ubicaciones geográficas satélite.
 ms.openlocfilehash: 78f0e925a333dd48a6016bc749459b13e1ac21c0
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

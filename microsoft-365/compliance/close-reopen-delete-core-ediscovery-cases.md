@@ -36,7 +36,7 @@ Cuando se complete el caso legal o la investigación admitida por un caso de exh
 
 - Cerrar un caso solo desactiva las retenciones que están asociadas a ese caso. Si otras retenciones se colocan en una ubicación de contenido (como una retención por juicio, una directiva de retención o una retención de un caso de exhibición de documentos electrónicos principal diferente) esas retenciones se mantendrán.
 
-- El caso sigue en la lista en la página eDiscovery principal del centro de Microsoft 365 cumplimiento. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
+- El caso sigue en la lista en la página eDiscovery principal del centro de Microsoft 365 cumplimiento. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
 
 - Puede editar un caso después de cerrarlo. Por ejemplo, puede agregar o quitar miembros, crear búsquedas y exportar resultados de búsqueda. La diferencia principal entre los casos activos y cerrados es que las retenciones de exhibición de documentos electrónicos se apagan cuando se cierra un caso.
 

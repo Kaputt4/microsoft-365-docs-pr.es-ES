@@ -1,6 +1,6 @@
 ---
 title: Usar cmdlets de PowerShell para configurar y ejecutar MICROSOFT Defender AV
-description: En Windows 10, puedes usar cmdlets de PowerShell para ejecutar exámenes, actualizar inteligencia de seguridad y cambiar la configuración en Antivirus de Microsoft Defender.
+description: En Windows 10, puede usar cmdlets de PowerShell para ejecutar exámenes, actualizar inteligencia de seguridad y cambiar la configuración en Antivirus de Microsoft Defender.
 keywords: scan, línea de comandos, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "51765304"
 ---
-# <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar cmdlets de PowerShell para configurar y administrar Antivirus de Microsoft Defender
+# <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Use cmdlets de PowerShell para configurar y administrar Antivirus de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,10 +37,10 @@ Puede usar PowerShell para realizar varias funciones en Windows Defender. Al igu
 
 Para obtener una lista de los cmdlets y sus funciones y parámetros disponibles, consulte el [tema Cmdlets de](/powershell/module/defender) Defender.
 
-Los cmdlets de PowerShell son más útiles en entornos de Windows Server que no dependen de una interfaz gráfica de usuario (GUI) para configurar software.
+Los cmdlets de PowerShell son más útiles Windows entornos de servidor que no dependen de una interfaz gráfica de usuario (GUI) para configurar software.
 
 > [!NOTE]
-> Los cmdlets de PowerShell no deben usarse como reemplazo de una infraestructura de administración de directivas de red completa, como [Microsoft Endpoint Configuration Manager,](/configmgr) [la](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))Consola de administración de directivas de grupo o las plantillas ADMX de directiva de grupo antivirus de [Microsoft Defender.](https://www.microsoft.com/download/101445)
+> Los cmdlets de PowerShell no deben usarse como reemplazo de una infraestructura [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de administración de directivas de red completa, como [Microsoft Endpoint Configuration Manager,](/configmgr)consola de administración de directivas de grupo o plantillas [ADMX](https://www.microsoft.com/download/101445)de directiva de grupo Antivirus de Microsoft Defender .
 
 Los cambios realizados con PowerShell afectarán a la configuración local en el punto de conexión donde se implementan o realizan los cambios. Esto significa que las implementaciones de directivas con directiva de grupo, Microsoft Endpoint Configuration Manager o Microsoft Intune pueden sobrescribir los cambios realizados con PowerShell.
 
@@ -48,9 +48,9 @@ Puede configurar [qué opciones se pueden invalidar localmente con invalidacione
 
 PowerShell normalmente se instala en la carpeta `%SystemRoot%\system32\WindowsPowerShell` .
 
-## <a name="use-microsoft-defender-antivirus-powershell-cmdlets"></a>Usar cmdlets de PowerShell antivirus de Microsoft Defender
+## <a name="use-microsoft-defender-antivirus-powershell-cmdlets"></a>Usar Antivirus de Microsoft Defender cmdlets de PowerShell
 
-1. En la barra de búsqueda de Windows, escriba **powershell**.
+1. En la barra Windows búsqueda, escriba **powershell**.
 2. Seleccione **Windows PowerShell** de los resultados para abrir la interfaz.
 3. Escriba el comando de PowerShell y los parámetros.
 
@@ -69,4 +69,4 @@ Omita el `-online` parámetro para obtener ayuda almacenada localmente en caché
 
 - [Temas de referencia para herramientas de administración y configuración](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Antivirus Cmdlets](/powershell/module/defender)
+- [Antivirus de Microsoft Defender Cmdlets](/powershell/module/defender)
