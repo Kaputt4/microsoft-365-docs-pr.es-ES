@@ -30,15 +30,15 @@ ms.locfileid: "50907623"
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Cuando usa PowerShell para Microsoft 365 para crear sitios de SharePoint Online y agregar usuarios, puede realizar tareas de forma rápida y repetida mucho más rápido de lo que puede en el Centro de administración de Microsoft 365. También puede realizar tareas que no son posibles realizar en el Centro de administración de Microsoft 365. 
+Cuando usa PowerShell para Microsoft 365 para crear sitios de SharePoint Online y agregar usuarios, puede realizar tareas de forma rápida y repetida mucho más rápido de lo que puede en el Centro de administración de Microsoft 365. También puede realizar tareas que no son posibles realizar en el centro Microsoft 365 administración. 
 
 ## <a name="connect-to-sharepoint-online"></a>Conexión a SharePoint Online
 
-Los procedimientos de este tema requieren que se conecte a SharePoint Online. Para obtener instrucciones, vea [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Los procedimientos de este tema requieren que se conecte a SharePoint Online. Para obtener instrucciones, [vea Conectar to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>Paso 1: Crear nuevas colecciones de sitios con PowerShell
 
-Cree varios sitios con PowerShell y un archivo .csv que cree con el código de ejemplo proporcionado y el Bloc de notas. Para este procedimiento, reemplazará la información de marcador de posición que se muestra entre corchetes por su propia información específica del sitio y del espacio empresarial. Este proceso le permite crear un solo archivo y ejecutar un único comando de PowerShell que usa ese archivo. Esto hace que las acciones realizadas puedan repetirse y portátiles y elimine muchos errores, si no todos, que pueden venir de escribir comandos largos en el Shell de administración de SharePoint Online. Este procedimiento tiene dos partes. Primero creará un archivo .csv y, a continuación, hará referencia a ese archivo .csv con PowerShell, que usará su contenido para crear los sitios.
+Cree varios sitios con PowerShell y un archivo .csv que cree con el código de ejemplo proporcionado y Bloc de notas. Para este procedimiento, reemplazará la información de marcador de posición que se muestra entre corchetes por su propia información específica del sitio y del espacio empresarial. Este proceso le permite crear un solo archivo y ejecutar un único comando de PowerShell que usa ese archivo. Esto hace que las acciones realizadas se puedan repetir y portátiles y elimina muchos errores, si no todos, que pueden venir de escribir comandos largos en el Shell de administración en línea de SharePoint. Este procedimiento tiene dos partes. Primero creará un archivo .csv y, a continuación, hará referencia a ese archivo .csv mediante PowerShell, que usará su contenido para crear los sitios.
 
 El cmdlet de PowerShell importa el archivo .csv y lo canaliza a un bucle dentro de los corchetes que lee la primera línea del archivo como encabezados de columna. A continuación, el cmdlet de PowerShell recorre en iteración los registros restantes, crea una nueva colección de sitios para cada registro y asigna propiedades de la colección de sitios según los encabezados de columna.
 
@@ -56,7 +56,7 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>Donde *tenant* es el nombre de su inquilino y *owner* es el nombre de usuario del usuario del inquilino al que desea conceder el rol de administrador de la colección de sitios principal.<br/>(Puede presionar Ctrl+H cuando use el Bloc de notas para reemplazar en masa más rápido).<br/>
+<br/>Donde *tenant* es el nombre de su inquilino y *owner* es el nombre de usuario del usuario del inquilino al que desea conceder el rol de administrador de la colección de sitios principal.<br/>(Puede presionar Ctrl+H cuando use Bloc de notas reemplazar masivamente más rápido).<br/>
 
 2. Guarde el archivo en el escritorio como **SiteCollections.csv**.<br/>
 
@@ -82,7 +82,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 4. Observe que las nuevas colecciones de sitios figuran en la lista. Con nuestro archivo CSV de ejemplo, vería las siguientes colecciones de sitios: **TeamSite01**, **Blog01**, **Project01** y **Community01**
 
-Eso es todo. Ha creado varias colecciones de sitios con el archivo .csv que creó y un único Windows PowerShell sitio. Ya está listo para crear y asignar usuarios a estos sitios.
+Eso es todo. Ha creado varias colecciones de sitios mediante el archivo .csv que creó y un único Windows PowerShell sitio. Ya está listo para crear y asignar usuarios a estos sitios.
 
 ## <a name="step-2-add-users-and-groups"></a>Paso 2: agregar usuarios y grupos
 
@@ -158,7 +158,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 5. Antes de continuar, espere a que el símbolo del sistema vuelva. Primero verá que los grupos aparecen según se han creado y, luego, verá la lista de grupos repetida a medida que se vayan agregando usuarios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Conectarse a SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 

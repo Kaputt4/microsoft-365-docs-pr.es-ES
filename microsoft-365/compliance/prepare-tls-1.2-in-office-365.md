@@ -36,7 +36,7 @@ Ya hemos comenzado la interrupción de TLS 1.0 y 1.1 a partir de enero de 2020. 
 
 Recomendamos que todas las combinaciones de cliente-servidor y navegador-servidor utilicen TLS 1.2 (o una versión posterior) para mantener la conexión con los servicios de Office 365. Es posible que tenga que actualizar ciertas combinaciones cliente-servidor y navegador-servidor.
 
-Deberá actualizar las aplicaciones que llaman a las API de Microsoft 365 a través de TLS 1.0 o TLS 1.1 para usar TLS 1.2. .NET 4.5 tiene como valor predeterminado TLS 1.1. Para actualizar la configuración de .NET, vea [How to enable Transport Layer Security (TLS) 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+Deberá actualizar las aplicaciones que llamen Microsoft 365 a través de TLS 1.0 o TLS 1.1 para usar TLS 1.2. .NET 4.5 tiene como valor predeterminado TLS 1.1. Para actualizar la configuración de .NET, vea [How to enable Transport Layer Security (TLS) 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
 Se sabe que los siguientes clientes no pueden usar TLS 1.2. Actualice los clientes para garantizar un acceso ininterrumpido al servicio.
 

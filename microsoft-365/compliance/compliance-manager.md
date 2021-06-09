@@ -51,7 +51,7 @@ El Administrador de cumplimiento ayuda a simplificar el cumplimiento y reducir l
 
 - Evaluaciones predefinidas para estándares y normativas regionales y del sector comunes, o evaluaciones personalizadas para satisfacer sus necesidades de cumplimiento únicas (las evaluaciones disponibles dependen de su contrato de licencia; [más información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)).
 
-- Capacidades de flujo de trabajo para ayudarle a completar eficazmente sus evaluaciones de riesgos a través de una sola herramienta.
+- Funcionalidades de flujo de trabajo que permiten completar de manera eficiente las evaluaciones de riesgos a través de una sola herramienta.
 
 - Instrucciones detalladas paso a paso sobre las acciones de mejora sugeridas para ayudarle a cumplir con los estándares y normativas más relevantes para su organización. Para las acciones administradas por Microsoft, verá los detalles de implementación y los resultados de auditoría.
 
@@ -79,7 +79,7 @@ El Administrador de cumplimiento usa varios elementos de datos para ayudarle a a
 
 ### <a name="controls"></a>Controles
 
-Un control es un requisito de un reglamento, estándar o directiva. Define cómo evaluar y administrar la configuración del sistema, el proceso organizativo y las personas responsables de cumplir un requisito específico de un reglamento, estándar o directiva.
+Un control es un requisito de una normativa, un estándar o una directiva. Define cómo se evalúa y administra la configuración de un sistema, el proceso organizativo y las personas responsables de cumplir un requisito específico de un reglamento, un estándar o una directiva.
 
 El Administrador de cumplimiento realiza un seguimiento de los siguientes tipos de controles:
 
@@ -95,7 +95,7 @@ El Administrador de cumplimiento realiza un seguimiento de los siguientes tipos 
 
 ### <a name="assessments"></a>Evaluaciones
 
-Una evaluación es la agrupación de controles de un reglamento, estándar o directiva específicos. Completar las acciones dentro de una evaluación le ayudará a cumplir los requisitos de una norma, reglamento o ley. Por ejemplo, es posible que tenga una evaluación que, al completar todas las acciones dentro de ella, ayude a que la configuración de Microsoft 365 se alinee con los requisitos iso 27001.
+Una evaluación es la agrupación de controles de un reglamento, estándar o directiva específicos. Completar las acciones en una evaluación le ayuda a cumplir con los requisitos de unos estándares, una regulación o una ley. Por ejemplo, es posible que tenga una evaluación que, al completar todas las acciones dentro de ella, ayude a que la configuración de Microsoft 365 se alinee con los requisitos iso 27001.
 
 Las evaluaciones tienen varios componentes:
 

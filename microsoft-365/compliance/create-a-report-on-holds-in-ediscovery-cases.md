@@ -29,7 +29,7 @@ ms.locfileid: "50908414"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Crear un informe de suspensiones en casos de eDiscovery
 
-El script de este artículo permite a los administradores de exhibición de documentos electrónicos y a los administradores de exhibición de documentos electrónicos generar un informe que contenga información sobre todas las retenciones asociadas con casos de exhibición de documentos electrónicos en el centro de cumplimiento de Office 365 o Microsoft 365. El informe contiene información como el nombre del caso al que está asociada una retención, las ubicaciones de contenido que se colocan en espera y si la retención está basada en consultas. Si hay casos que no tienen ninguna retención, el script creará un informe adicional con una lista de casos sin retenciones.
+El script de este artículo permite a los administradores de exhibición de documentos electrónicos y a los administradores de exhibición de documentos electrónicos generar un informe que contenga información sobre todas las retenciones asociadas con casos de exhibición de documentos electrónicos en el centro de cumplimiento en Office 365 o Microsoft 365. El informe contiene información como el nombre del caso al que está asociada una retención, las ubicaciones de contenido que se colocan en espera y si la retención está basada en consultas. Si hay casos que no tienen ninguna retención, el script creará un informe adicional con una lista de casos sin retenciones.
 
 Vea la [sección Más información](#more-information) para obtener una descripción detallada de la información incluida en el informe.
 
@@ -41,9 +41,9 @@ Vea la [sección Más información](#more-information) para obtener una descripc
 
 - Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
 
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Paso 1: Conectarse al PowerShell del Centro de & seguridad
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Paso 1: Conectar PowerShell del Centro de & seguridad
 
-El primer paso es conectarse a PowerShell del Centro de & seguridad para su organización. Para obtener instrucciones paso a paso, vea [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+El siguiente paso es conectarse al PowerShell del Centro de seguridad y cumplimiento de la organización. Para obtener instrucciones paso a paso, vea [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Paso 2: Ejecutar el script para informar sobre las retenciones asociadas con casos de exhibición de documentos electrónicos
 
@@ -178,7 +178,7 @@ El informe de casos que se crea al ejecutar el script de este artículo contiene
 
 - Si se cierra un caso, la persona que lo cerró y la hora y la fecha en que se cerró.
 
-- Los buzones de Exchange y las ubicaciones de sitios de SharePoint que están en espera.
+- Los Exchange buzones de correo y SharePoint de sitios que están en espera.
 
 - Si la retención está basada en consultas, la sintaxis de consulta.
 

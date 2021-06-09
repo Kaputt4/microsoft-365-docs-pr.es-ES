@@ -18,7 +18,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
-description: En este artículo se muestra cómo diagnosticar problemas comunes con el sitio de SharePoint Online mediante las herramientas para desarrolladores de Internet Explorer.
+description: En este artículo se muestra cómo diagnosticar problemas comunes con el sitio SharePoint Online mediante las herramientas de desarrollador de Internet Explorer.
 ms.openlocfilehash: 6a29b8b2df54d74d8237418828a7aa89efdbcfaf
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.locfileid: "50927617"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosticar problemas de rendimiento con SharePoint Online
 
-En este artículo se muestra cómo diagnosticar problemas comunes con el sitio de SharePoint Online mediante las herramientas para desarrolladores de Internet Explorer.
+En este artículo se muestra cómo diagnosticar problemas comunes con el sitio SharePoint Online mediante las herramientas de desarrollador de Internet Explorer.
   
 Hay tres formas diferentes de identificar que una página de un sitio de SharePoint Online tiene un problema de rendimiento con las personalizaciones.
   
@@ -36,9 +36,9 @@ Hay tres formas diferentes de identificar que una página de un sitio de SharePo
 
 - Comparación con una línea base no personalizada
 
-- Métricas de encabezado de respuesta de SharePoint Online
+- SharePoint Métricas de encabezado de respuesta en línea
 
-En este tema se describe cómo usar cada uno de estos métodos para diagnosticar problemas de rendimiento. Una vez que haya descubierto la causa del problema, puede trabajar para obtener una solución con los artículos sobre cómo mejorar el rendimiento de SharePoint que puede encontrar en https://aka.ms/tune .
+En este tema se describe cómo usar cada uno de estos métodos para diagnosticar problemas de rendimiento. Una vez que haya descubierto la causa del problema, puede trabajar en una solución con los artículos sobre cómo mejorar SharePoint rendimiento que puede encontrar en https://aka.ms/tune .
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Uso de la barra de herramientas F12 para diagnosticar el rendimiento en SharePoint Online
 <a name="F12ToolInfo"> </a>
@@ -66,14 +66,14 @@ Esto proporciona una representación visual del tiempo que tardó el archivo en 
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>Configurar una línea base no personalizada para SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-La mejor manera de determinar los puntos débiles de rendimiento del sitio es configurar una colección de sitios completamente lista para usar en SharePoint Online. De este modo, puede comparar todos los distintos aspectos de su sitio con lo que se obtiene sin personalización en la página. La página principal de OneDrive para la Empresa es un buen ejemplo de una colección de sitios independiente que es poco probable que tenga personalizaciones.
+La mejor manera de determinar los puntos débiles de rendimiento del sitio es configurar una colección de sitios completamente lista para usar en SharePoint Online. De este modo, puede comparar todos los distintos aspectos de su sitio con lo que se obtiene sin personalización en la página. La OneDrive para la Empresa principal es un buen ejemplo de una colección de sitios independiente que es poco probable que tenga personalizaciones.
   
-## <a name="viewing-sharepoint-response-header-information"></a>Visualización de información de encabezado de respuesta de SharePoint
+## <a name="viewing-sharepoint-response-header-information"></a>Ver SharePoint de encabezado de respuesta
 <a name="F12ToolInfo"> </a>
 
-En SharePoint Online, puede obtener acceso a la información que se envía al explorador en el encabezado de respuesta de cada archivo. El valor más útil para diagnosticar problemas de rendimiento es **SPRequestDuration,** que muestra la cantidad de tiempo que la solicitud tardó en procesarse en el servidor. Esto puede ayudar a determinar si la solicitud es muy pesada e intensiva en recursos. Esta es la mejor información que tiene sobre cuánto trabajo está realizando el servidor para servir a la página.
+En SharePoint Online, puede obtener acceso a la información que se envía de nuevo al explorador en el encabezado de respuesta de cada archivo. El valor más útil para diagnosticar problemas de rendimiento es **SPRequestDuration,** que muestra la cantidad de tiempo que la solicitud tardó en procesarse en el servidor. Esto puede ayudar a determinar si la solicitud es muy pesada e intensiva en recursos. Esta es la mejor información que tiene sobre cuánto trabajo está realizando el servidor para servir a la página.
 
-### <a name="to-view-sharepoint-response-header-information"></a>Para ver información del encabezado de respuesta de SharePoint
+### <a name="to-view-sharepoint-response-header-information"></a>Para ver la SharePoint de encabezado de respuesta
   
 1. Asegúrese de que tiene instaladas las herramientas F12. Para obtener más información sobre cómo descargar e instalar estas herramientas, vea [Novedades de las herramientas F12](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85)).
 
@@ -90,7 +90,7 @@ En SharePoint Online, puede obtener acceso a la información que se envía al ex
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>¿Qué está causando problemas de rendimiento en SharePoint Online?
 <a name="F12ToolInfo"> </a>
 
-En el artículo Opciones de navegación para [SharePoint Online](navigation-options-for-sharepoint-online.md) se muestra un ejemplo de uso del valor SPRequestDuration para determinar que la navegación estructural complicada estaba provocando que la página tardara mucho tiempo en procesarse en el servidor. Al tomar un valor para un sitio de línea base (sin personalización), es posible determinar si un archivo determinado tarda mucho tiempo en cargarse. El ejemplo usado en [Opciones de navegación para SharePoint Online](navigation-options-for-sharepoint-online.md) es el archivo .aspx principal. Ese archivo contiene la mayoría del código ASP.NET que se ejecuta para la carga de la página. Según la plantilla de sitio que use, podría ser start.aspx, home.aspx, default.aspx u otro nombre si personaliza la página principal. Si este número es considerablemente mayor que el sitio de línea base, es una buena indicación de que hay algo complejo en la página que está causando problemas de rendimiento.
+En el artículo Opciones de navegación para [SharePoint Online](navigation-options-for-sharepoint-online.md) se muestra un ejemplo de uso del valor SPRequestDuration para determinar que la navegación estructural complicada estaba provocando que la página tardara mucho tiempo en procesarse en el servidor. Al tomar un valor para un sitio de línea base (sin personalización), es posible determinar si un archivo determinado tarda mucho tiempo en cargarse. El ejemplo usado en [Opciones de navegación para SharePoint Online](navigation-options-for-sharepoint-online.md) es el archivo .aspx principal. Ese archivo contiene la mayor parte del ASP.NET que se ejecuta para la carga de la página. Según la plantilla de sitio que use, podría ser start.aspx, home.aspx, default.aspx u otro nombre si personaliza la página principal. Si este número es considerablemente mayor que el sitio de línea base, es una buena indicación de que hay algo complejo en la página que está causando problemas de rendimiento.
   
 Una vez que haya identificado que un problema específico del sitio, la forma recomendada de averiguar lo que está causando un rendimiento deficiente es eliminar todas las causas posibles, como personalizaciones de página y, a continuación, volver a agregarlas al sitio uno por uno. Una vez que haya quitado suficientes personalizaciones que la página está realizando bien, puede agregar personalizaciones específicas una por una.
   

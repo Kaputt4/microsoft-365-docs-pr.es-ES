@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b3534f5d0572b2656711850b483651270b9e3315
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687363"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822146"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
@@ -77,7 +77,7 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
    5. **Duración:** es la cantidad de tiempo que se conservarán los registros de auditoría que cumplan los criterios de la directiva.
 
-   6. **Prioridad:** este valor determina el orden en el que se procesan las directivas de retención de registros de auditoría de su organización. Un valor más alto indica una prioridad mayor. Por ejemplo, una directiva con un valor de prioridad de **5** tendría prioridad sobre una directiva con un valor de prioridad de **0**. Como se ha explicado anteriormente, cualquier directiva de retención de registros de auditoría personalizada tiene prioridad sobre la directiva predeterminada para su organización.
+   6. **Prioridad:** este valor determina el orden en el que se procesan las directivas de retención de registros de auditoría de su organización. Un valor inferior indica mayor prioridad. Las prioridades válidas son valores numéricos entre **1** y **10 000**. Un valor de **1** tiene la prioridad más alta y un valor de **10 000** tiene la prioridad más baja. Por ejemplo, una directiva con un valor de **5** tiene prioridad sobre una directiva con un valor de **10**. Como se ha explicado anteriormente, cualquier directiva de retención de registros de auditoría personalizada tiene prioridad sobre la directiva predeterminada para su organización.
 
 5. Haga clic en **Guardar** para crear la nueva directiva de retención de registros de auditoría.
 

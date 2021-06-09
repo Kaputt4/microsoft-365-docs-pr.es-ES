@@ -46,7 +46,7 @@ Las organizaciones obtienen acceso a visualizaciones sólidas de métricas y ten
 
 ![Página principal de puntuación segura](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Se le dan puntos para las siguientes acciones:
 
@@ -117,7 +117,7 @@ Con el acceso de lectura y escritura, puede realizar cambios e interactuar direc
 
 Con el acceso de solo lectura, no puedes editar el estado ni las notas de una acción de mejora, editar zonas de puntuación o editar comparaciones personalizadas.
 
-* Administrador del departamento de soporto técnico
+* Administrador del departamento de soporte técnico
 * Administrador de usuarios
 * Administrador de servicios
 * Lector de seguridad

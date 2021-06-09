@@ -35,7 +35,7 @@ ms.locfileid: "51578255"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Proteger los archivos de trabajo después de la pérdida o robo de un dispositivo móvil
 
-La configuración de directiva determina lo que ocurre automáticamente para proteger un dispositivo perdido o robado. Te recomendamos que aceptes los valores predeterminados durante la instalación para crear directivas de aplicación para Android, iOS y Windows 10 que se aplican a todos los usuarios. Podrá crear más directivas cuando se complete la configuración.
+La configuración de directiva determina lo que ocurre automáticamente para proteger un dispositivo perdido o robado. Se recomienda aceptar los valores predeterminados durante la instalación para crear directivas de aplicación para Android, iOS y Windows 10 que se aplican a todos los usuarios. Podrá crear más directivas cuando se complete la configuración.
   
 ## <a name="settings-that-protect-work-files"></a>Opciones de configuración que protegen los archivos de trabajo
 

@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: Obtén información sobre cómo validar la configuración de protección de aplicaciones de Microsoft 365 Empresa Premium en tus dispositivos Android o iOS.
+description: Obtén información sobre cómo validar la configuración Microsoft 365 Empresa Premium protección de aplicaciones en tus dispositivos Android o iOS.
 ms.openlocfilehash: a0a4a6e6cff59f66a506929e97c99d361472a68b
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -42,9 +42,9 @@ Después de [establecer las configuraciones de la aplicación para dispositivos 
   
 En primer lugar, asegúrate de que la directiva se aplica a la aplicación en la que vas a validarla.
   
-1. En el Centro de administración de Microsoft 365 Empresa [Premium,](https://portal.office.com)vaya a **Directiva** \> **de edición de directivas.**
+1. En el Centro Microsoft 365 Empresa Premium [administración,](https://portal.office.com)vaya a **Directiva** \> **de edición de directivas.**
     
-2. Elija **Directiva de aplicación para Android** para la configuración que creó en el programa de instalación u otra directiva que creó y compruebe que se aplica para Outlook, por ejemplo. 
+2. Elija **Directiva de aplicación** para Android para la configuración que creó en el programa de instalación u otra directiva que haya creado y compruebe que se aplica para Outlook, por ejemplo. 
     
     ![Shows all the apps for which this policy protects files.](../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
@@ -52,9 +52,9 @@ En primer lugar, asegúrate de que la directiva se aplica a la aplicación en la
 
 En el panel **Editar directiva**, elija **Editar** junto a **Control de acceso a documentos de Office**, expanda **Administrar la forma en la que los usuarios obtienen acceso a los archivos de Office desde dispositivos móviles** y asegúrese de que **Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office** esté establecido en **Activado**.
   
-![Asegúrese de que requerir un PIN o huella digital para tener acceso a las aplicaciones de Office está establecido en On.](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![Asegúrate de que requerir un PIN o huella digital para tener acceso a Office aplicaciones está establecida en On.](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario.
+1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium usuario.
     
 2. También se le pedirá que escriba un PIN o use una huella digital.
     
@@ -62,9 +62,9 @@ En el panel **Editar directiva**, elija **Editar** junto a **Control de acceso a
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>Validar la opción Restablecer el PIN después del número de intentos fallidos indicado
 
-En el **panel** Editar  directiva, elija Editar junto al control de acceso de documentos de **Office,** expanda Administrar cómo los usuarios acceden a los archivos de **Office** en dispositivos móviles y asegúrese de que restablecer el **PIN** después del número de intentos fallidos esté establecido en algún número. Esto es 5 de forma predeterminada. 
+En  el panel Editar  directiva, elija Editar junto **al control** de acceso Office documentos, expanda Administrar cómo los usuarios acceden Office los archivos **en** dispositivos móviles y asegúrese de que restablecer el **PIN** después del número de intentos fallidos esté establecido en algún número. Esto es 5 de forma predeterminada. 
   
-1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario.
+1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium usuario.
     
 2. Escriba un PIN incorrecto tantas veces como haya especificado en la directiva. Verá un mensaje que indica el límite **de intento de PIN alcanzado** para restablecer el PIN. 
     
@@ -93,15 +93,15 @@ En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la
   
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>Validar la opción Requerir que un usuario inicie sesión de nuevo si las aplicaciones de Office han estado inactivas durante un período de tiempo especificado
 
-En  el panel Editar  directiva, elija Editar junto al control de acceso de documentos de **Office,** expanda Administrar cómo los usuarios tienen acceso a los archivos de **Office** en dispositivos móviles y asegúrese de que Requerir que los usuarios inicien sesión de nuevo después de que las aplicaciones de **Office** hayan estado inactivas se establezca en un número de minutos. Esto es 30 minutos de forma predeterminada. 
+En  el panel Editar  directiva, elija Editar junto **al control** de acceso Office documentos, expanda Administrar cómo los usuarios **acceden Office archivos en** dispositivos móviles y asegúrese de que Requerir que los usuarios inicien sesión de nuevo después de **que** Office las aplicaciones hayan estado inactivas esté establecida en un número de minutos. Esto es 30 minutos de forma predeterminada. 
   
 1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y escriba un PIN si se solicita.
     
 2. Ahora debería ver la Bandeja de entrada de Outlook. No toque el dispositivo Android durante al menos 30 minutos (o algún otro período de tiempo, más de lo que ha especificado en la directiva). Es probable que se atenúe el dispositivo.
     
-3. Vuelva a tener acceso a Outlook en el dispositivo Android.
+3. Accede Outlook en el dispositivo Android de nuevo.
     
-4. Se te pedirá que escribas el PIN antes de poder volver a tener acceso a Outlook.
+4. Se te pedirá que escribas el PIN antes de poder acceder a Outlook nuevo.
     
 ### <a name="validate-protect-work-files-with-encryption"></a>Validar la opción Proteger los archivos de trabajo mediante cifrado
 
@@ -131,9 +131,9 @@ Después de [establecer las configuraciones de la aplicación para dispositivos 
   
 En primer lugar, asegúrate de que la directiva se aplica a la aplicación en la que vas a validarla.
   
-1. En el Centro de administración de Microsoft 365 Empresa [Premium,](https://portal.office.com)vaya a **Directiva** \> **de edición de directivas.**
+1. En el Centro Microsoft 365 Empresa Premium [administración,](https://portal.office.com)vaya a **Directiva** \> **de edición de directivas.**
     
-2. Elija **Directiva de aplicación para iOS** para la configuración que creó en el programa de instalación u otra directiva que creó y compruebe que se aplica para Outlook, por ejemplo. 
+2. Elija **Directiva de aplicación para iOS** para la configuración que creó en el programa de instalación u otra directiva que haya creado y compruebe que se aplica para Outlook por ejemplo. 
     
     ![Shows all the apps for which this policy protects files.](../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
@@ -141,9 +141,9 @@ En primer lugar, asegúrate de que la directiva se aplica a la aplicación en la
 
 En el panel **Editar directiva**, elija **Editar** junto a **Control de acceso a documentos de Office**, expanda **Administrar la forma en la que los usuarios obtienen acceso a los archivos de Office desde dispositivos móviles** y asegúrese de que **Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office** esté establecido en **Activado**.
   
-![Asegúrese de que requerir un PIN o huella digital para tener acceso a las aplicaciones de Office está establecido en On.](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![Asegúrate de que requerir un PIN o huella digital para tener acceso a Office aplicaciones está establecida en On.](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario.
+1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium usuario.
     
 2. También se le pedirá que escriba un PIN o use una huella digital.
     
@@ -151,9 +151,9 @@ En el panel **Editar directiva**, elija **Editar** junto a **Control de acceso a
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>Validar la opción Restablecer el PIN después del número de intentos fallidos indicado
 
-En el **panel** Editar  directiva, elija Editar junto al control de acceso de documentos de **Office,** expanda Administrar cómo los usuarios acceden a los archivos de **Office** en dispositivos móviles y asegúrese de que restablecer el **PIN** después del número de intentos fallidos esté establecido en algún número. Esto es 5 de forma predeterminada. 
+En  el panel Editar  directiva, elija Editar junto **al control** de acceso Office documentos, expanda Administrar cómo los usuarios acceden Office los archivos **en** dispositivos móviles y asegúrese de que restablecer el **PIN** después del número de intentos fallidos esté establecido en algún número. Esto es 5 de forma predeterminada. 
   
-1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario.
+1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium usuario.
     
 2. Escriba un PIN incorrecto tantas veces como haya especificado en la directiva. Verá un mensaje que indica el límite **de intento de PIN alcanzado** para restablecer el PIN. 
     
@@ -173,21 +173,21 @@ En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la
     
     ![Tap the Save option after you open an attachment to try to save it.](../media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
-3. Solo debería ver una opción para OneDrive para la Empresa. Si no es así, pulsa **Agregar cuenta** y **selecciona OneDrive para** la Empresa en la pantalla Agregar cuenta **de** almacenamiento. Proporcione a Microsoft 365 Empresa Premium del usuario final que inicie sesión cuando se le pida. 
+3. Solo debería ver una opción para OneDrive para la Empresa. Si no es así, pulsa **Agregar cuenta** **y OneDrive para la Empresa** en la pantalla Agregar **Storage** cuenta. Proporcione la información del usuario Microsoft 365 Empresa Premium iniciar sesión cuando se le solicite. 
     
     Pulse **Guardar** y seleccione **OneDrive para la Empresa**.
     
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>Validar la opción Requerir que un usuario inicie sesión de nuevo si las aplicaciones de Office han estado inactivas durante un período de tiempo especificado
 
-En  el panel Editar  directiva, elija Editar junto al control de acceso de documentos de **Office,** expanda Administrar cómo los usuarios tienen acceso a los archivos de **Office** en dispositivos móviles y asegúrese de que Requerir que los usuarios inicien sesión de nuevo después de que las aplicaciones de **Office** hayan estado inactivas se establezca en un número de minutos. Esto es 30 minutos de forma predeterminada. 
+En  el panel Editar  directiva, elija Editar junto **al control** de acceso Office documentos, expanda Administrar cómo los usuarios **acceden Office archivos en** dispositivos móviles y asegúrese de que Requerir que los usuarios inicien sesión de nuevo después de **que** Office las aplicaciones hayan estado inactivas esté establecida en un número de minutos. Esto es 30 minutos de forma predeterminada. 
   
 1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y escriba un PIN si se solicita.
     
 2. Ahora debería ver la Bandeja de entrada de Outlook. No toque el dispositivo iOS durante al menos 30 minutos (o algún otro período de tiempo, más de lo que ha especificado en la directiva). Es probable que se atenúe el dispositivo.
     
-3. Vuelva a tener acceso a Outlook en el dispositivo iOS.
+3. Vuelve Outlook acceso al dispositivo iOS.
     
-4. Se te pedirá que escribas el PIN antes de poder volver a tener acceso a Outlook.
+4. Se te pedirá que escribas el PIN antes de poder acceder a Outlook nuevo.
     
 ### <a name="validate-protect-work-files-with-encryption"></a>Validar la opción Proteger los archivos de trabajo mediante cifrado
 

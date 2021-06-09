@@ -50,7 +50,7 @@ En la tabla siguiente se enumeran los límites para las retenciones asociadas co
 
 | Descripción del límite | Límite |
 |:-----|:-----|
-|Número máximo de buzones en una única retención de casos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos. <br/> |1,000  <br/> |
+|Número máximo de buzones en una única retención de casos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos. <br/> |1.000  <br/> |
 |Número máximo de sitios en una única retención de casos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Límites de indexación
@@ -74,14 +74,14 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |:-----|:-----|
 |Número máximo de buzones o sitios que se pueden buscar en una sola búsqueda. |Sin límite|
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo. |Sin límite |
-|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. |10   | 
+|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. |10 | 
 |Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones). |10 000 &nbsp; <sup>2</sup>|
-|Número máximo de caracteres para una consulta de búsqueda para SharePoint y OneDrive para la Empresa (incluidos los operadores y las condiciones). |10,000<br>4.000 con caracteres comodín &nbsp; <sup>2</sup>|
+|Número máximo de caracteres para una consulta de búsqueda para SharePoint y OneDrive para la Empresa (incluidos los operadores y las condiciones). |10 000<br>4.000 con caracteres comodín &nbsp; <sup>2</sup>|
 |Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **un \* *_ o _* set \***.|3 |  
 |Variantes máximas devueltas cuando se usa el carácter comodín de prefijo para buscar una frase exacta o cuando se usa un prefijo comodín y el **operador booleano NEAR.** |10 000 &nbsp; <sup>3</sup>|
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |100|
-|Número máximo de elementos de todos los buzones que se muestran en la página de vista previa para las búsquedas.|1,000|
-|Número máximo de buzones que se pueden obtener una vista previa de los resultados de la búsqueda.  Si hay más de 1000 buzones que contienen elementos que coinciden con la consulta de búsqueda, solo los 1.000 buzones con más resultados están disponibles para la vista previa.|1,000|
+|Número máximo de elementos de todos los buzones que se muestran en la página de vista previa para las búsquedas.|1.000|
+|Número máximo de buzones que se pueden obtener una vista previa de los resultados de la búsqueda.  Si hay más de 1000 buzones que contienen elementos que coinciden con la consulta de búsqueda, solo los 1.000 buzones con más resultados están disponibles para la vista previa.|1.000|
 |Número máximo de elementos de los sitios SharePoint y OneDrive para la Empresa que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |200|
 |Número máximo de SharePoint y OneDrive para la Empresa que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios que contienen elementos que coinciden con la consulta de búsqueda, solo los 200 sitios principales con más resultados están disponibles para la vista previa.|200|
 |Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas. |100|
@@ -96,7 +96,7 @@ Microsoft recopila información de rendimiento para las búsquedas ejecutadas po
   | Número de buzones | Promedio de tiempo de búsqueda |
   |:-----|:-----|
   |100  <br/> |30 segundos  <br/> |
-  |1,000  <br/> |45 segundos  <br/> |
+  |1.000  <br/> |45 segundos  <br/> |
   |10 000  <br/> |4 minutos  <br/> |
   |25 000  <br/> |10 minutos  <br/> |
   |50 000  <br/> |20 minutos  <br/> |

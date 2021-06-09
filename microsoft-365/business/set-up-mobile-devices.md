@@ -47,7 +47,7 @@ Vea un breve vídeo sobre cómo configurar Office aplicaciones en dispositivos i
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
 Vaya al **App Store** y, en el campo de búsqueda, escriba Microsoft Outlook.
   
@@ -79,7 +79,7 @@ Vea un vídeo sobre cómo instalar Outlook y Office dispositivos Android.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
 Para comenzar la configuración en tu teléfono Android, ve a la Play Store.
   

@@ -56,14 +56,14 @@ Todas las actividades supervisadas por DLP se registran en [el registro](search-
 
 Normalmente, una implementación dlp sigue estas fases principales.
 
-- [Planeación de DLP](#plan-for-dlp)
+- [Plan para DLP](#plan-for-dlp)
 - [Prepararse para DLP](#prepare-for-dlp)
 - [Implementar las directivas en producción](#deploy-your-policies-in-production)
 
 
 <!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
 
-### <a name="plan-for-dlp"></a>Planeación de DLP
+### <a name="plan-for-dlp"></a>Plan para DLP
 
 Microsoft 365 La supervisión y protección dlp son nativas de las aplicaciones que los usuarios usan todos los días. Esto ayuda a proteger los elementos confidenciales de las organizaciones de actividades arriesgadas, incluso si los usuarios no están acostumbrados a las prácticas y el pensamiento de prevención de pérdida de datos. Si su organización y sus usuarios son nuevos en las prácticas de prevención de pérdida de datos, la adopción de DLP puede requerir un cambio en los procesos empresariales y habrá un cambio de cultura para los usuarios. Sin embargo, con una planeación, prueba y ajuste adecuados, las directivas DLP protegerán los elementos confidenciales al tiempo que minimizarán las posibles interrupciones de los procesos empresariales.
 
@@ -90,7 +90,7 @@ Puede aplicar directivas DLP a datos en reposo, datos en uso y datos en movimien
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
 - Microsoft Cloud App Security
-- Dispositivos con Windows 10
+- Dispositivos con Windows 10
 - Repositorios locales
 
 Cada uno tiene requisitos previos diferentes. Los elementos confidenciales de algunas ubicaciones, como Exchange en línea, se pueden traer bajo el paraguas DLP simplemente configurando una directiva que se aplique a ellos. Otros, como los repositorios de archivos locales, requieren una implementación del escáner de Azure Information Protection (AIP). Deberá preparar el entorno, redactar directivas de código y probarlas exhaustivamente antes de activar cualquier acción de bloqueo.

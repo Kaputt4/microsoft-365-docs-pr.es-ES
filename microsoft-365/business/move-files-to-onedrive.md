@@ -37,7 +37,7 @@ Vea un breve vídeo sobre cómo mover archivos a OneDrive para la Empresa.<br><b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para la Empresa

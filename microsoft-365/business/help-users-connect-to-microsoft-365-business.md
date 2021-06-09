@@ -37,12 +37,12 @@ ms.locfileid: "51578455"
 ---
 # <a name="help-users-connect-to-microsoft-365-business-premium"></a>Ayudar a los usuarios a conectarse a Microsoft 365 Empresa Premium
 
-Después de completar la configuración, las directivas de dispositivo predeterminadas están en su lugar y listas para aplicarse. En dispositivos móviles, los usuarios descargan aplicaciones de Office. A continuación, se aplican directivas cuando el usuario inicia sesión con su cuenta laboral o educativa. Necesita completar tareas adicionales antes de aplicar las directivas en equipos PC con Windows, como la actualización local. Vea y comparta los siguientes temas para ayudar a los usuarios a configurarse y conectarse:
+Después de completar la configuración, las directivas de dispositivo predeterminadas están en su lugar y listas para aplicarse. En dispositivos móviles, los usuarios descargan Office aplicaciones. A continuación, se aplican directivas cuando el usuario inicia sesión con su cuenta laboral o educativa. Necesita completar tareas adicionales antes de aplicar las directivas en equipos PC con Windows, como la actualización local. Vea y comparta los siguientes temas para ayudar a los usuarios a configurarse y conectarse:
   
-[Configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium](set-up-windows-devices.md)
+[Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios](set-up-windows-devices.md)
   
 [Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot](add-autopilot-devices-and-profile.md)
   
-[Configurar dispositivos móviles para usuarios de Microsoft 365 Empresa Premium](set-up-mobile-devices.md)
+[Configurar dispositivos móviles para Microsoft 365 Empresa Premium usuarios](set-up-mobile-devices.md)
   
 

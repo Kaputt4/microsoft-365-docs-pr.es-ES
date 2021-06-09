@@ -77,6 +77,6 @@ Vaya a la Microsoft Store y descargue e instale Portal de empresa de Intune
 
 Para conectar y configurar el Windows teléfono o equipo con el portal de la empresa para Microsoft 365, consulte Windows inscripción de [dispositivos en Portal de empresa de Intune](/intune-user-help/windows-enrollment-company-portal).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de inscribir el dispositivo en Movilidad y seguridad básicas, puedes empezar a usar Office aplicaciones en el dispositivo para trabajar con correo electrónico, calendario, contactos y documentos.

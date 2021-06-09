@@ -37,7 +37,7 @@ Después de crear el libro de recetas, cree una carpeta de archivos dentro de la
 
 `mkdir mdatp/files`
 
-Transfiera el archivo zip de incorporación de Linux Server que se puede descargar desde el portal del Centro de seguridad de Microsoft Defender a esta nueva carpeta de archivos.
+Transfiera el archivo zip de incorporación de linux server que se puede descargar desde el portal de Centro de seguridad de Microsoft Defender a esta nueva carpeta de archivos.
 
 En la estación de trabajo de Chef, vaya a la carpeta mdatp/recipes. Esta carpeta se crea cuando se generó el libro de recetas. Use el editor de texto preferido (como vi o nano) para agregar las siguientes instrucciones al final del archivo default.rb:
 -   include_recipe '::onboard_mdatp'
@@ -127,7 +127,7 @@ end
 Para incluir este paso como parte de la receta, simplemente agregue include_recipe ":: settings_mdatp" al archivo default.rb dentro de la carpeta de recetas.
 También puede usar crontab para programar actualizaciones automáticas Programe una actualización [de Microsoft Defender para Endpoint (Linux).](linux-update-MDE-Linux.md)
 
-Desinstalar el libro de recetas MDATP:
+Desinstalar MDATP de recetas:
 
 ```powershell
 #Uninstall the Defender package

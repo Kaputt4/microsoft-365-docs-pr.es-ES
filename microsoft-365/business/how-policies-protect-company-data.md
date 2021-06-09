@@ -1,5 +1,5 @@
 ---
-title: Cómo protegen las directivas de Microsoft 365 para empresas los datos de la empresa
+title: Cómo las directivas de Microsoft 365 para empresas protegen los datos de la empresa
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -34,18 +34,18 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578435"
 ---
-# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Cómo protegen las directivas de Microsoft 365 para empresas los datos de la empresa
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Cómo las directivas de Microsoft 365 para empresas protegen los datos de la empresa
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
 
 Las directivas que cree son específicas del tipo de dispositivo y se pueden aplicar en grupos de usuarios específicos. Esto quiere decir que podría crear una directiva para aplicarla a sus ejecutivos y otra directiva para aplicarla en el resto de los usuarios.
   
-Para dispositivos Android y iOS, puede agregar o editar directivas de aplicación que protejan las aplicaciones de Office y los archivos de trabajo usados por las aplicaciones de Office. Podemos controlar los dispositivos con Windows 10 un poco más, por lo que las directivas de aplicación pueden incluir más opciones de configuración, como cifrado y protección para ubicaciones de red y nube. También puedes crear directivas de dispositivo para dispositivos con Windows 10 que exijan opciones de configuración como la protección antivirus y las actualizaciones automáticas. Se recomienda seguir las directivas creadas durante la instalación, pero si desea ajustar las directivas o agregar más, consulte estos artículos:
+Para dispositivos Android y iOS, puede agregar o editar directivas de aplicación que protejan las aplicaciones de Office y los archivos de trabajo usados por las aplicaciones de Office. Podemos controlar los dispositivos Windows 10 un poco más, por lo que las directivas de aplicación pueden incluir más opciones de configuración, como cifrado y protección para ubicaciones de red y nube. También puedes crear directivas de dispositivo para dispositivos con Windows 10 que exijan opciones de configuración como la protección antivirus y las actualizaciones automáticas. Se recomienda seguir las directivas creadas durante la instalación, pero si desea ajustar las directivas o agregar más, consulte estos artículos:
   
 [Establecer configuraciones de aplicación para dispositivos con Android o iOS](app-protection-settings-for-android-and-ios.md)
   
 [Establecer configuraciones de dispositivo para equipos PC con Windows 10](protection-settings-for-windows-10-pcs.md)
   
-[Establecer la configuración de protección de aplicaciones para dispositivos Windows 10](protection-settings-for-windows-10-devices.md)
+[Establecer la configuración de protección de aplicaciones para Windows 10 dispositivos](protection-settings-for-windows-10-devices.md)
   
 

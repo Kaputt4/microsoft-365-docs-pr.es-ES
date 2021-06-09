@@ -1,5 +1,5 @@
 ---
-title: Buscar documentos y formación
+title: Buscar documentos y entrenamiento
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -28,7 +28,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52245233"
 ---
-# <a name="find-docs-and-training"></a>Buscar documentos y formación
+# <a name="find-docs-and-training"></a>Buscar documentos y entrenamiento
 
 Si tiene una pregunta o necesita ayuda con Microsoft 365 Empresa Premium, tiene varias opciones para obtener ayuda.
 

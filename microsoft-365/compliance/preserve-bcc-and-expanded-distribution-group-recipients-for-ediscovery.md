@@ -11,7 +11,7 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: In-Place de retención, retención por juicio y retención de Microsoft 365 permiten conservar el contenido del buzón para cumplir los requisitos de cumplimiento normativo y exhibición de documentos electrónicos.
+description: In-Place de retención, retención por juicio y directivas de retención Microsoft 365 permiten conservar el contenido del buzón para cumplir los requisitos de cumplimiento normativo y exhibición de documentos electrónicos.
 ms.openlocfilehash: f00ed951fb68778b9c62ae874c2cca964bd6cb5c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "50927946"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservar los destinatarios de grupos de distribución expandidos y CCO para la exhibición de documentos electrónicos
   
-In-Place de retención, retención por juicio y directivas de retención de [Microsoft 365](./retention.md) (creadas en el Centro de seguridad & cumplimiento) le permiten conservar el contenido del buzón para cumplir los requisitos de cumplimiento normativo y exhibición de documentos electrónicos. La información sobre los destinatarios directamente dirigidos en los campos Para y Cc de un mensaje se incluye en todos los mensajes de forma predeterminada. Pero su organización puede requerir la capacidad de buscar y reproducir detalles sobre todos los destinatarios de un mensaje. Incluye lo siguiente:
+In-Place de retención, retención por [](./retention.md) juicio y directivas de retención de Microsoft 365 (creadas en el Centro de cumplimiento de seguridad &) permiten conservar el contenido del buzón para cumplir los requisitos de cumplimiento normativo y exhibición de documentos electrónicos. La información sobre los destinatarios directamente dirigidos en los campos Para y Cc de un mensaje se incluye en todos los mensajes de forma predeterminada. Pero su organización puede requerir la capacidad de buscar y reproducir detalles sobre todos los destinatarios de un mensaje. Esto incluye:
   
 - **Destinatarios dirigidos mediante el campo CCO de un mensaje:** Los destinatarios CCO se almacenan en el mensaje en el buzón del remitente, pero no se incluyen en los encabezados del mensaje entregado a los destinatarios. 
     
@@ -33,13 +33,13 @@ Exchange Online y Exchange Server 2013 (actualización acumulativa 7 y versiones
 
 Tal como se mencionó anteriormente, la información los destinatarios CCO se almacena con el mensaje en el buzón de correo del remitente. Esta información está indizada y disponible para las búsquedas y retenciones de exhibición de documentos electrónicos. 
   
-La información sobre los destinatarios del grupo de distribución expandido se almacena con el mensaje después de que se coloca en un buzón de correo en conservación local o retención por juicio. En Office 365, esta información también se almacena cuando se aplica una directiva de retención de Microsoft 365 a un buzón. La pertenencia al grupo de distribución se determina en el momento en el que se envía el mensaje. La lista de destinatarios ampliada almacenada con el mensaje no se ve afectada por los cambios realizados en la pertenencia del grupo después de que se envía el mensaje. 
+La información sobre los destinatarios del grupo de distribución expandido se almacena con el mensaje después de que se coloca en un buzón de correo en conservación local o retención por juicio. En Office 365, esta información también se almacena cuando se aplica una directiva Microsoft 365 de retención a un buzón. La pertenencia al grupo de distribución se determina en el momento en el que se envía el mensaje. La lista de destinatarios ampliada almacenada con el mensaje no se ve afectada por los cambios realizados en la pertenencia del grupo después de que se envía el mensaje. 
   
 | La información sobre... | se almacena en... | ¿se almacena de forma predeterminada? | es accesible para... |
 |:-----|:-----|:-----|:-----|
 |Destinatarios de Para y CC  <br/> |Propiedades del mensaje en los buzones de correo del remitente y los destinatarios  <br/> |Sí  <br/> |Remitente, destinatarios y responsables de cumplimiento normativo  <br/> |
 |Destinatarios CCO  <br/> |Propiedad del mensaje en el buzón de correo del remitente  <br/> |Sí  <br/> |Remitente y responsables de cumplimento normativo  <br/> |
-|Destinatarios del grupo de distribución expandido  <br/> |Propiedades del mensaje en el buzón de correo del remitente  <br/> |No. La información de destinatarios del grupo de distribución expandido se almacena después de que un buzón se coloca en In-Place retención o retención por juicio, o se asigna a una directiva de retención de Microsoft 365.  <br/> |Responsables de cumplimento normativo  <br/> |
+|Destinatarios del grupo de distribución expandido  <br/> |Propiedades del mensaje en el buzón de correo del remitente  <br/> |No. La información de destinatarios del grupo de distribución expandido se almacena después de que un buzón se coloca en In-Place retención o retención por juicio, o se asigna a una directiva Microsoft 365 retención.  <br/> |Responsables de cumplimento normativo  <br/> |
    
 ## <a name="searching-for-messages-sent-to-bcc-and-expanded-distribution-group-recipients"></a>Buscar mensajes enviados a destinatarios CCO y del grupo de distribución expandido
 
@@ -72,11 +72,11 @@ Escenario 2: Bob le envía un correo electrónico a John (Para/CC) y Jack (CCO d
 
  **P. ¿Cuándo y dónde se almacena la información de destinatarios CCO?**
   
-R. La información de CCO se conserva de forma predeterminada en el mensaje original en el buzón de correo del remitente. Si el destinatario CCO es un grupo de distribución, la pertenencia al grupo de distribución solo se expande si el buzón del remitente está en espera o se asigna a una directiva de retención de Microsoft 365.
+R. La información de CCO se conserva de forma predeterminada en el mensaje original en el buzón de correo del remitente. Si el destinatario CCO es un grupo de distribución, la pertenencia al grupo de distribución solo se expande si el buzón del remitente está en espera o se asigna a una directiva de retención Microsoft 365 distribución.
   
  **P. ¿Cuándo y dónde está almacenada la lista de destinatarios del grupo de distribución expandido?**
   
-R. La pertenencia al grupo se expande en el momento en el que se envía el mensaje. La lista de miembros del grupo de distribución expandido se almacena en el mensaje original en el buzón de correo del remitente. El buzón del remitente debe estar en In-Place, retención por juicio o asignado a una directiva de retención de Microsoft 365.
+R. La pertenencia al grupo se expande en el momento en el que se envía el mensaje. La lista de miembros del grupo de distribución expandido se almacena en el mensaje original en el buzón de correo del remitente. El buzón del remitente debe estar en In-Place, retención por juicio o asignado a una directiva Microsoft 365 retención.
   
  **P. ¿Los destinatarios incluidos en Para/CC: pueden ver qué destinatarios figuran en CCO?**
   
@@ -84,7 +84,7 @@ R. No. Esta información no se incluye en los encabezados del mensaje y no está
   
  **P. ¿Cómo puedo asegurarme de que los destinatarios de grupos de distribución expandido siempre se conservan?**
   
-A. Para asegurarse de que los miembros del grupo de distribución expandido siempre se conservan con un [mensaje,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) coloque todos los buzones en espera o cree una directiva de retención de Microsoft 365 en toda la organización. 
+R: Para asegurarse de que los miembros del grupo de distribución expandido siempre se conservan con un [mensaje,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) coloque todos los buzones en espera o cree una directiva de retención Microsoft 365 organización. 
   
  **P. ¿Qué tipos de grupos se admiten?**
   

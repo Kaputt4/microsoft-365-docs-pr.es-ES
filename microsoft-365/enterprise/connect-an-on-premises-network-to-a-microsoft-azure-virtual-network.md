@@ -31,7 +31,7 @@ ms.locfileid: "50907713"
 
 Una red virtual de Azure entre locales se conecta a la red local, extendiendo la red para incluir subredes y máquinas virtuales hospedadas en servicios de infraestructura de Azure. Esta conexión permite a los equipos de la red local obtener acceso directamente a máquinas virtuales en Azure, y viceversa. 
 
-Por ejemplo, un servidor de sincronización de directorios que se ejecuta en una máquina virtual de Azure debe consultar a los controladores de dominio locales para que realicen cambios en las cuentas y sincronizar esos cambios con la suscripción de Microsoft 365. En este artículo se muestra cómo configurar una red virtual de Azure entre locales mediante una conexión de red privada virtual (VPN) de sitio a sitio que esté lista para hospedar máquinas virtuales de Azure.
+Por ejemplo, un servidor de sincronización de directorios que se ejecuta en una máquina virtual de Azure debe consultar a los controladores de dominio locales para que realicen cambios en las cuentas y sincronizar esos cambios con su Microsoft 365 suscripción. En este artículo se muestra cómo configurar una red virtual de Azure entre locales mediante una conexión de red privada virtual (VPN) de sitio a sitio que esté lista para hospedar máquinas virtuales de Azure.
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>Configurar una red virtual de Azure entre locales
 
@@ -336,4 +336,4 @@ Esta es la configuración resultante.
   
 ## <a name="next-step"></a>Paso siguiente
   
-[Implementar la sincronización de directorios de Microsoft 365 en Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Implementar Microsoft 365 sincronización de directorios en Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

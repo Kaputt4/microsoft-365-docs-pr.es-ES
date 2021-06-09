@@ -40,7 +40,7 @@ Vea un breve vídeo sobre Microsoft 365 Empresa Premium instalación.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
 La mayoría de los pasos de configuración se pueden realizar en la configuración guiada, pero también se enumeran las otras opciones.
 

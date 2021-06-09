@@ -1,5 +1,5 @@
 ---
-title: Windows 10 y Office 365 de laboratorio de implementación
+title: Kit del laboratorio de implementación de Office 365 y Windows 10
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770678"
 ---
-# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 y Office 365 de laboratorio de implementación
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit del laboratorio de implementación de Office 365 y Windows 10
 
 El kit Windows 10 y Office 365 de laboratorio de implementación de Office 365 está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise y Aplicaciones Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, Análisis de escritorio, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 

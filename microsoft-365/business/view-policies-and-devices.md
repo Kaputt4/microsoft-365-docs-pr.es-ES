@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Para ver las directivas y acciones de dispositivos, inicie sesión en Microsoft 365 para empresas con credenciales de administrador global.
+description: Para ver las directivas y acciones de dispositivo, inicie sesión en Microsoft 365 para empresas con credenciales de administrador global.
 ms.openlocfilehash: 39d88e8fa84055e4bac62899a1b84bdf42f366a2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT

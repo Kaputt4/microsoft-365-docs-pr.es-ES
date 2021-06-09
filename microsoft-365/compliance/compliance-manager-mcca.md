@@ -110,7 +110,7 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
   | 7  | Japón |
   | 8  | Corea |
   | 9  | Norteamérica (excepto Canadá) |
-  | 10   | Sudamérica |
+  | 10 | Sudamérica |
   | 11 | Sudáfrica |
   | 12  | Suiza |
   | 13 | Emiratos Árabes Unidos |

@@ -1,5 +1,5 @@
 ---
-title: Proteger equipos con Windows 10
+title: Proteger equipos con Windows 10
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Aprende a proteger equipos con Windows 10 después de configurar Microsoft 365 Empresa Premium.
+description: Obtenga información sobre cómo proteger Windows 10 equipos después de configurar Microsoft 365 Empresa Premium.
 ms.openlocfilehash: a45e941ebc407eea5defdccbbe3f06e6eb1e7dea
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -30,24 +30,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578195"
 ---
-# <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
+# <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
 
-Después de [configurar](set-up.md) Microsoft 365 Empresa Premium, es el momento de proteger los equipos con Windows 10 de su organización contra robos y amenazas malintencionadas como virus y malware.
+Una vez que haya configurado [Microsoft 365 Empresa Premium,](set-up.md) es el momento de proteger los equipos Windows 10 de su organización contra robos y amenazas malintencionadas como virus y malware.
 
-## <a name="to-secure-your-windows-10-computers"></a>Para proteger los equipos con Windows 10
+## <a name="to-secure-your-windows-10-computers"></a>Para proteger los Windows 10 equipos
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales de administrador global. 
-2. En la navegación izquierda, seleccione **Configurar** y, a continuación, en Inicio de sesión **y** seguridad, elija **Proteger los equipos con Windows 10**. Elija **Ver** para empezar.
-3. En la **página Proteger los equipos con Windows 10,** lee toda la información para comprender qué estás activar y cuál es el impacto del usuario.
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales de administrador global. 
+2. En el panel de navegación izquierdo, seleccione **Configurar** y, a continuación, en Inicio de sesión y **seguridad,** elija Proteger los **Windows 10 equipos**. Elija **Ver** para empezar.
+3. En la **página Proteger Windows 10 equipos,** lea toda la información para comprender lo que está activar y cuál es el impacto del usuario.
 
     En la parte superior de la página, elija **Introducción.**
 
-4. En el **panel Proteger los equipos con Windows 10,** selecciona las opciones que quieras activar. Para obtener más información acerca de la configuración, [consulta Proteger dispositivos Windows 10](secure-windows-10-devices.md). 
+4. En el **panel Proteger Windows 10 equipos,** seleccione las opciones que desea activar. Para obtener más información acerca de la configuración, [vea Secure Windows 10 devices](secure-windows-10-devices.md). 
     
-    Para la mayoría de las organizaciones, las opciones aquí ofrecen un buen nivel de seguridad, pero si tu organización tiene necesidades de seguridad más complejas, también puedes usar líneas base de seguridad predefinidas para proteger tus dispositivos Windows 10. Para obtener más información, consulta [Líneas base de seguridad para dispositivos Windows 10.](/mem/intune/protect/security-baselines)   
+    Para la mayoría de las organizaciones, las opciones aquí ofrecen un buen nivel de seguridad, pero si su organización tiene necesidades de seguridad más complejas, también puede usar líneas base de seguridad predefinidas para proteger los dispositivos Windows 10 seguridad. Para obtener más información, consulte [security baselines for Windows 10 devices](/mem/intune/protect/security-baselines).   
 
 1. Elija **Aplicar configuración**.
 
-    Esta configuración se aplicará a todos los usuarios de la organización. Para configurar diferentes directivas para diferentes grupos de seguridad, consulta Establecer la configuración de protección [de dispositivos para equipos con Windows 10.](protection-settings-for-windows-10-pcs.md)
+    Esta configuración se aplicará a todos los usuarios de la organización. Para configurar diferentes directivas para diferentes grupos de seguridad, consulta Establecer la configuración de protección de [dispositivos para Windows 10 equipos](protection-settings-for-windows-10-pcs.md).
