@@ -37,7 +37,7 @@ Al exportar un informe, los archivos de informe se descargan en una carpeta del 
 
 ## <a name="before-you-export-a-search-report"></a>Antes de exportar un informe de búsqueda
 
-- Para exportar un informe de búsqueda, debe tener asignado el rol de administración Búsqueda de cumplimiento en el Centro de seguridad & cumplimiento. Este rol se asigna de forma predeterminada a los grupos de roles integrados eDiscovery Manager y Organization Management. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+- Para exportar un informe de búsqueda, debe tener asignado el rol de administración Búsqueda de cumplimiento en el Centro de seguridad & cumplimiento. Este rol se asigna de forma predeterminada a los grupos de roles integrados eDiscovery Manager y Organization Management. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 
 - Al exportar un informe, los datos se almacenan temporalmente en una ubicación Azure Storage en la nube de Microsoft antes de que se descarguen en el equipo local. Asegúrese de que su organización puede conectarse al punto de conexión de Azure, que **\* es .blob.core.windows.net** (el comodín representa un identificador único para la exportación). Los datos de resultados de búsqueda se eliminan de la Azure Storage dos semanas después de su creación.
 
@@ -53,7 +53,7 @@ Al exportar un informe, los archivos de informe se descargan en una carpeta del 
 
     O
 
-  - Microsoft Internet Explorer 10 versiones posteriores
+  - Microsoft Internet Explorer 10 y versiones posteriores
 
   > [!NOTE]
   > <sup>1</sup> Microsoft no fabrica extensiones de terceros ni complementos para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.<br/>
@@ -130,7 +130,7 @@ El siguiente paso es descargar el informe del área Azure Storage en el equipo l
 
 7. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo.
   
-    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez completado el proceso de exportación, puede obtener acceso a los archivos en la ubicación donde se descargaron.
+    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Cuando el proceso de exportación se completa, puede acceder a los archivos en la ubicación donde se descargaron.
   
 ## <a name="whats-included-in-the-report"></a>Lo que se incluye en el informe
 

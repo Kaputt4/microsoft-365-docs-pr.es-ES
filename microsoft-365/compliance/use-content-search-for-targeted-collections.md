@@ -35,7 +35,7 @@ La herramienta de búsqueda de contenido en el centro de cumplimiento de Microso
 
 ## <a name="before-you-run-a-targeted-collection"></a>Antes de ejecutar una colección de destino
 
-- Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de seguridad y & cumplimiento para ejecutar el script en el paso 1. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+- Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de seguridad y & cumplimiento para ejecutar el script en el paso 1. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 
 - También debe tener asignado el rol Destinatarios de correo en su Exchange Online organización. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics,** que se incluye en el script. De forma predeterminada, el rol Destinatarios de correo se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online. Para obtener más información acerca de cómo asignar permisos en Exchange Online, vea [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help). También puede crear un grupo de roles personalizado, asignarle el rol Destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, consulte [Administrar grupos de roles](/Exchange/permissions-exo/role-groups).
 
@@ -234,7 +234,7 @@ Después de ejecutar el script para recopilar una lista de id. de carpeta o vín
 
     - Junto a Exchange correo electrónico, haga clic en Elegir usuarios, grupos o equipos **y,** **a** continuación, agregue el mismo buzón que especificó al ejecutar el script en el paso 1.
 
-      O bien
+      O bien:
 
     - Junto a **SharePoint,** haga  clic en Elegir sitios y, a continuación, agregue la misma dirección URL del sitio que especificó al ejecutar el script en el paso 1.
 

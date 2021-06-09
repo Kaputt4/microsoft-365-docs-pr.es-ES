@@ -19,9 +19,9 @@ ms.locfileid: "45430464"
 ---
 # <a name="get-started-with-app-control"></a>Introducción al control de aplicaciones
 
-Antes de habilitar el control de aplicaciones en su entorno, asegúrese de revisar y comprender cómo lo implementa Escritorio administrado de [Microsoft](../service-description/app-control.md) y sus roles y responsabilidades.
+Antes de habilitar el control de aplicaciones en el entorno, asegúrate de revisar y comprender cómo [Escritorio administrado de Microsoft lo implementa](../service-description/app-control.md) y tus roles y responsabilidades.
 
-Escritorio administrado de Microsoft simplifica el control de aplicaciones al ocuparse de los aspectos más difíciles de obtener una directiva base segura. Los administradores de TI aún deben probar las aplicaciones en el anillo de prueba y revisar los registros en busca de advertencias o errores. Si una aplicación necesita una exención, puedes presentar una solicitud, o la operación de escritorio administrado de Microsoft podría, en función de quién la detecte primero.
+Escritorio administrado de Microsoft simplifica el control de aplicaciones al ocuparse de los aspectos más difíciles de obtener una directiva base segura. Los administradores de TI aún deben probar las aplicaciones en el anillo de prueba y revisar los registros en busca de advertencias o errores. Si una aplicación necesita una exención, puedes presentar una solicitud o Escritorio administrado de Microsoft operación, según quién la detecte primero.
 
 ## <a name="initial-deployment-of-apps"></a>Implementación inicial de aplicaciones
 
@@ -29,7 +29,7 @@ Al implementar aplicaciones por primera vez, Escritorio administrado de Microsof
 
 ### <a name="devices-not-yet-in-use"></a>Dispositivos que aún no están en uso
 
-Si aún no tiene ningún dispositivo en uso, abra un vale de servicio con operaciones de Escritorio administrado de Microsoft solicitando que activemos el control de aplicaciones. Las operaciones implementarán de forma progresiva directivas en grupos de implementación siguiendo esta programación:
+Si aún no tienes ningún dispositivo en uso, abre un vale de servicio con Escritorio administrado de Microsoft Operations solicitando que activemos el control de la aplicación. Las operaciones implementarán de forma progresiva directivas en grupos de implementación siguiendo esta programación:
 
 |Grupo de implementación  |Tipo de directiva  |Timing  |
 |---------|---------|---------|
@@ -38,24 +38,24 @@ Si aún no tiene ningún dispositivo en uso, abra un vale de servicio con operac
 |Rápida     | Enforced        |  Día 2       |
 |Amplias     | Enforced        |  Día 3       |
 
-Siempre puede abrir otra solicitud de servicio para pausar o revertir parte de esta implementación en cualquier momento durante la implementación.
+Siempre puede abrir otra solicitud de servicio para pausar o revertir parte de esta implementación en cualquier momento durante el lanzamiento.
 
 ### <a name="devices-already-in-use"></a>Dispositivos que ya están en uso
 
-Si ya tiene al menos un dispositivo de Escritorio administrado de Microsoft en uso, siga estos pasos:
+Si ya tiene al menos Escritorio administrado de Microsoft dispositivo en uso, siga estos pasos:
 
-1. Abra un vale de servicio con operaciones de escritorio administrado de Microsoft solicitando que activemos el control de aplicaciones. Las operaciones implementarán una [directiva de auditoría](../service-description/app-control.md#audit-policy) en todos los dispositivos.
-2. [Pruebe las aplicaciones](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) para ver si alguna se bloquearía. Si se bloqueara una aplicación, abra una solicitud [de firmante.](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer) 
-3. Una vez que haya completado las pruebas (independientemente de los resultados), notifique a las operaciones y notifique las solicitudes de firmante pendientes. Las operaciones implementarán de forma progresiva directivas en grupos de implementación siguiendo esta programación:
+1. Abra un vale de servicio con Escritorio administrado de Microsoft operaciones solicitando que activemos el control de la aplicación. Las operaciones implementarán una [directiva de auditoría](../service-description/app-control.md#audit-policy) en todos los dispositivos.
+2. [Pruebe las aplicaciones](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) para ver si se bloquearía alguna. Si se bloquearía una aplicación, abra una [solicitud de firmante](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer). 
+3. Una vez que haya completado las pruebas (independientemente de los resultados), notifique a Operaciones y notifique las solicitudes de firmante pendientes. Las operaciones implementarán de forma progresiva directivas en grupos de implementación siguiendo esta programación:
 
 |Grupo de implementación  |Tipo de directiva  |Timing  |
 |---------|---------|---------|
 |Prueba     |  Auditoría       |  Día 0       |
 |Primero     | Enforced        | Día 1        |
-|Rápida     | Enforced        |  En pausa, lanzamiento a petición       |
-|Amplias     | Enforced        |  En pausa, lanzamiento a petición       |
+|Rápida     | Enforced        |  Paused, rollout on request       |
+|Amplias     | Enforced        |  Paused, rollout on request       |
 
-Siempre puede abrir otra solicitud de servicio para pausar o revertir parte de esta implementación en cualquier momento durante la implementación.
+Siempre puede abrir otra solicitud de servicio para pausar o revertir parte de esta implementación en cualquier momento durante el lanzamiento.
 
 
 

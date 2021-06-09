@@ -1,6 +1,6 @@
 ---
-title: Definir cómo se actualizan los dispositivos móviles mediante Antivirus de Microsoft Defender
-description: Administrar la forma en que los dispositivos móviles, como los portátiles, deben actualizarse con las actualizaciones de protección antivirus de Microsoft Defender.
+title: Definir cómo se actualizan los dispositivos móviles Antivirus de Microsoft Defender
+description: Administrar cómo los dispositivos móviles, como los portátiles, deben actualizarse con Antivirus de Microsoft Defender de protección.
 keywords: actualizaciones, protección, actualizaciones de programación, batería, dispositivo móvil, portátil, bloc de notas, opt-in, microsoft update, wsus, override
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -53,7 +53,7 @@ Puedes participar en Microsoft Update en el dispositivo móvil de una de las sig
 
 - Cambie la configuración con la directiva de grupo.
 - Use un VBScript para crear un script y, a continuación, ejecutarlo en cada equipo de la red.
-- Opte manualmente por todos los equipos de la red a través del **menú** Configuración.
+- Opte manualmente por todos los equipos de la red a través **del Configuración** menú.
 
 ### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>Usar la directiva de grupo para participar en Microsoft Update
 
@@ -63,7 +63,7 @@ Puedes participar en Microsoft Update en el dispositivo móvil de una de las sig
 
 3. Seleccione **Directivas y,** **a continuación, Plantillas administrativas.**
 
-4. Expande el árbol a **Componentes de Windows** Actualizaciones de firma de Antivirus  >  de Microsoft **Defender.**  >  
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones  >    >  **de firma**.
 
 5. Establezca **Permitir actualizaciones de inteligencia de seguridad de Microsoft Update** en **Habilitado** y, a continuación, seleccione  **Aceptar**.
 
@@ -76,7 +76,7 @@ Puedes participar en Microsoft Update en el dispositivo móvil de una de las sig
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>Participar manualmente en Microsoft Update
 
-1. Abre **Windows Update** en Update & configuración **de** seguridad en el equipo en el que quieras participar.
+1. Abre **Windows actualización en** Actualizar & configuración **de** seguridad en el equipo en el que quieras participar.
 
 2. Seleccione **Opciones** avanzadas.
 
@@ -84,7 +84,7 @@ Puedes participar en Microsoft Update en el dispositivo móvil de una de las sig
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Impedir actualizaciones de inteligencia de seguridad al ejecutarse con batería
 
-Puede configurar Antivirus de Microsoft Defender para que solo descargue actualizaciones de protección cuando el equipo esté conectado a una fuente de alimentación por cable. 
+Puede configurar el Antivirus de Microsoft Defender para descargar solo las actualizaciones de protección cuando el equipo está conectado a una fuente de alimentación cableada. 
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Usar la directiva de grupo para evitar actualizaciones de inteligencia de seguridad en la batería
 
@@ -94,11 +94,11 @@ Puede configurar Antivirus de Microsoft Defender para que solo descargue actuali
 
 3.  Seleccione **Directivas y,** **a continuación, Plantillas administrativas.**
 
-4.  Expande el árbol a **Componentes de Windows** Actualizaciones de firma de Antivirus de Microsoft Defender y, a continuación, establece Permitir actualizaciones de inteligencia de seguridad al ejecutar la batería en  >    >   **Deshabilitado.**  A continuación, seleccione **Aceptar**. 
+4.  Expanda el árbol para **Windows componentes** Antivirus de Microsoft Defender de firma  >    >  y, a continuación, establezca **Permitir** actualizaciones de inteligencia de seguridad al ejecutar la batería en Deshabilitado . A continuación, seleccione **Aceptar**. 
 
 Esta acción impide que las actualizaciones de protección se descarguen cuando el equipo está en batería.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Actualizar y administrar antivirus de Microsoft Defender en Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Actualizar y administrar Antivirus de Microsoft Defender en Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

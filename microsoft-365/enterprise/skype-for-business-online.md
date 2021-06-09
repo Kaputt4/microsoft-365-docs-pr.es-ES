@@ -21,7 +21,7 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Como administrador, busque ayuda para configurar partes de Skype Empresarial Online, como la red, las reuniones y la mensajería instantánea, y el acceso externo para los usuarios.
+description: Como administrador, busque ayuda para configurar partes de Skype Empresarial Online, incluida la red, las reuniones y la mensajería instantánea, y el acceso externo para los usuarios.
 ms.openlocfilehash: 1e3807199fc83d642399b29870f2cac477d2ec75
 ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
@@ -67,11 +67,11 @@ Vea también:
 
 - [Establecer opciones personales en Skype Empresarial](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
-- [¿Necesita ayuda para iniciar sesión en Skype Empresarial?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
+- [¿Necesita ayuda para iniciar sesión Skype Empresarial?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [Vídeo: Iniciar y cerrar sesión en Skype Empresarial](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [Vídeo: Iniciar y cerrar sesión Skype Empresarial](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
-- [Establecer opciones de dispositivos de audio en Skype Empresarial](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
+- [Establecer opciones de dispositivo de audio en Skype Empresarial](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [Unirse a una reunión de Skype Empresarial](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
@@ -89,6 +89,6 @@ Vea también:
     
 - [Iniciar una llamada de conferencia de Skype Empresarial](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **Para obtener más artículos para los usuarios, [consulte la ayuda de Skype Empresarial.](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)**
+ **Para obtener más artículos para los usuarios, [vea Skype Empresarial ayuda](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
   
 

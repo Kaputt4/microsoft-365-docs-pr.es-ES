@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo cancelar la suscripción a Google Workspace pero mantener su dominio.
+description: Obtén información sobre cómo cancelar la suscripción a Google Workspace pero mantener el dominio.
 ms.openlocfilehash: 1ad7e4ae3583063281ac5b5e9510be539b1378dd
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -31,12 +31,12 @@ ms.locfileid: "49928263"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Cancelar suscripción a Google Workspace
 
-1. Inicie sesión en [el administrador de Google](https://admin.google.com/) y vaya a **Facturación.**
-1. En la **lista Suscripciones,** elija su suscripción de G Suite, **Cancelar** suscripción y, a continuación, **elija Continuar**.
+1. Inicie sesión en [Google Admin](https://admin.google.com/) y vaya a **Facturación**.
+1. En la **lista Suscripciones,** elija su suscripción de G Suite, **Cancelar suscripción** y, a continuación, **elija Continuar**.
 
     > [!IMPORTANT]
-    > la suscripción se cancelará inmediatamente y no podrá deshacer esta acción.
+    > su suscripción se cancelará inmediatamente y no puede deshacer esta acción.
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Captura de pantalla de la página Facturación del administrador de Google.":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Captura de pantalla de la página Facturación de administración de Google.":::
 
-Tenga en cuenta que es posible que no vea el registro de dominio en la lista de suscripciones si su proveedor de host DNS no es dominios de Google.
+Ten en cuenta que es posible que no veas Registro de dominio en la lista suscripciones si el proveedor de host DNS no es dominios de Google.

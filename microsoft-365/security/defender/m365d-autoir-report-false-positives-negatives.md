@@ -35,7 +35,7 @@ ms.locfileid: "52269585"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-En ocasiones, se pueden producir falsos positivos o negativos con cualquier solución de protección contra amenazas. Si [las capacidades automatizadas](m365d-autoir.md) de investigación y respuesta en Microsoft 365 Defender no se detectaron o detectaron incorrectamente algo, hay pasos que el equipo de operaciones de seguridad puede seguir:
+En ocasiones, se pueden producir falsos positivos o negativos con cualquier solución de protección contra amenazas. Si [las capacidades automatizadas](m365d-autoir.md) de investigación y respuesta en Microsoft 365 Defender no detectaron o detectaron algo incorrectamente, hay pasos que el equipo de operaciones de seguridad puede seguir:
 
 - [Notificar un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Ajustar las alertas](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si es necesario)
@@ -47,14 +47,14 @@ En las secciones siguientes se describe cómo realizar estas tareas.
 
 |Elemento perdido o detectado incorrectamente |Servicio  |Qué hacer  |
 |---------|---------|---------|
-|- Mensaje de correo electrónico <br/>- Datos adjuntos de correo electrónico <br/>- DIRECCIÓN URL en un mensaje de correo electrónico<br/>- DIRECCIÓN URL en un archivo de Office      |[Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Enviar correo no deseado, phishing, direcciones URL y archivos sospechosos a Microsoft para su análisis](../office-365-security/admin-submission.md)         |
+|- Mensaje de correo electrónico <br/>- Datos adjuntos de correo electrónico <br/>- DIRECCIÓN URL en un mensaje de correo electrónico<br/>- DIRECCIÓN URL en un Office archivo      |[Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Enviar correo no deseado, phishing, direcciones URL y archivos sospechosos a Microsoft para su análisis](../office-365-security/admin-submission.md)         |
 |Archivo o aplicación en un dispositivo    |[Microsoft Defender para punto de conexión](/windows/security/threat-protection)         |[Enviar un archivo a Microsoft para análisis de malware](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajustar una alerta para evitar que los falsos positivos se repitan
 
 |Escenario |Servicio |Qué hacer |
 |--------|--------|--------|
-|- Una alerta se desencadena por uso legítimo <br/>- Una alerta es inexacta    |[Microsoft Cloud App Security](/cloud-app-security)<br/> o <br/>[Protección contra amenazas de Azure](/azure/security/fundamentals/threat-detection)         |[Administrar alertas en el portal de Cloud App Security](/cloud-app-security/managing-alerts)         |
+|- Una alerta se desencadena por uso legítimo <br/>- Una alerta es inexacta    |[Microsoft Cloud App Security](/cloud-app-security)<br/> o <br/>[Protección contra amenazas de Azure](/azure/security/fundamentals/threat-detection)         |[Administrar alertas en el portal Cloud App Security web](/cloud-app-security/managing-alerts)         |
 |Un archivo, dirección IP, dirección URL o dominio se trata como malware en un dispositivo, aunque sea seguro|[Microsoft Defender para punto de conexión](/windows/security/threat-protection) |[Crear un indicador personalizado con una acción "Permitir"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Deshacer una acción de corrección que se ha realizado en un dispositivo
@@ -69,7 +69,7 @@ Si se ha realizado una acción de corrección en una entidad (como un dispositiv
 > [!TIP]
 > Vea [Deshacer acciones completadas](m365d-autoir-actions.md#undo-completed-actions).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada en Microsoft 365 Defender](advanced-hunting-overview.md)

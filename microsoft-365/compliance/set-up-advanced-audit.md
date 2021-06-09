@@ -30,7 +30,7 @@ ms.locfileid: "52314414"
 
 Si su organización tiene una suscripción y una licencia de usuario final compatible con la auditoría avanzada, siga estos pasos para configurar y usar las funciones adicionales en Auditoría avanzada.
 
-![Flujo de trabajo para configurar auditoría avanzada](../media/AdvancedAuditWorkflow.png)
+![Flujo de trabajo para configurar la auditoría avanzada](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step1-set-up-advanced-audit-for-users"></a>Paso 1: Configurar auditoría avanzada para usuarios
 
@@ -70,7 +70,7 @@ Si el comando para habilitar la auditoría de las consultas de búsqueda se ejec
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>Paso 3: Configurar directivas de retención de auditoría
 
-Además de la directiva predeterminada que conserva los registros de auditoría de Exchange, SharePoint y Azure AD durante un año, puede crear directivas de retención de registros de auditoría adicionales para cumplir los requisitos de las operaciones de seguridad, TI y equipos de cumplimiento de la organización. Para obtener más información, vea [administrar directivas de retención de los registros de auditoría](audit-log-retention-policies.md).
+Además de la directiva predeterminada que conserva los registros de auditoría de Exchange, SharePoint y Azure AD durante un año, puede crear otras directivas de retención de registros de auditoría para cumplir los requisitos de los equipos de operaciones de seguridad, TI y cumplimiento de su organización. Para obtener más información, vea [administrar directivas de retención de los registros de auditoría](audit-log-retention-policies.md).
 
 ## <a name="step-4-search-for-crucial-events"></a>Paso 4: Buscar eventos cruciales
 

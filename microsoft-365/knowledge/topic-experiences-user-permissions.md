@@ -1,5 +1,5 @@
 ---
-title: Administrar permisos de temas en temas de Microsoft Viva
+title: Administrar permisos de temas en Temas de Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,23 +17,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 02/04/2021
 ms.locfileid: "50107415"
 ---
-# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Administrar permisos de temas en temas de Microsoft Viva
+# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Administrar permisos de temas en Temas de Microsoft Viva
 
-Puede administrar la configuración de permisos de temas en el [Centro de administración de Microsoft 365.](https://admin.microsoft.com) Debe ser administrador global o administrador de SharePoint para realizar estas tareas.
+Puede administrar la configuración de permisos de temas en el [centro Microsoft 365 de administración.](https://admin.microsoft.com) Debe ser un administrador global o SharePoint administrador para realizar estas tareas.
 
 Con la configuración de permisos de tema puede elegir:
 
-- Qué usuarios pueden crear y editar temas: cree nuevos temas que no se encontraron durante la detección o edite los detalles de los temas existentes.
-- Qué usuarios pueden administrar los temas: obtener acceso al centro de administración de temas y ver comentarios sobre los temas, así como mover temas durante el ciclo de vida.
+- Qué usuarios pueden crear y editar temas: cree nuevos temas que no se encontraron durante la detección o editar detalles de temas existentes.
+- Qué usuarios pueden administrar los temas: obtener acceso al centro de administración de temas y ver comentarios sobre temas, así como mover temas a lo largo del ciclo de vida.
 
-## <a name="to-access-topics-management-settings"></a>Para obtener acceso a la configuración de administración de temas:
+## <a name="to-access-topics-management-settings"></a>Para acceder a la configuración de administración de temas:
 
-1. En el Centro de administración de Microsoft 365, haga clic **en Configuración** y, a continuación, en Configuración de **la organización.**
-2. En la **pestaña Servicios,** haga clic en **Experiencias del tema.**
+1. En el Centro Microsoft 365 administración, haga clic **en Configuración** y, a continuación, en Configuración de **la organización.**
+2. En la **pestaña Servicios,** haga clic en **Experiencias del tema**.
 
-    ![Conectar a las personas con el conocimiento](../media/admin-org-knowledge-options-completed.png) 
+    ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
 
-3. Seleccione la **pestaña Permisos del** tema. Consulta las siguientes secciones para obtener información sobre cada configuración.
+3. Seleccione la **pestaña Permisos de tema.** Vea las secciones siguientes para obtener información sobre cada configuración.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-permissions.png) 
 
@@ -41,8 +41,8 @@ Con la configuración de permisos de tema puede elegir:
 
 Para actualizar quién tiene permisos para crear y editar temas:
 
-1. En la **pestaña Permisos del tema,** en **Quién puede crear y editar temas,** seleccione **Editar**.
-2. En la **página Quién puede crear y editar temas,** puede seleccionar:
+1. En la **pestaña Permisos del tema,** en **Quién puede crear** y editar temas , seleccione **Editar**.
+2. En la **Quién puede crear y editar temas,** puede seleccionar:
     - **Todos en su organización**
     - **Solo personas o grupos de seguridad seleccionados**
     - **Nadie**
@@ -53,8 +53,8 @@ Para actualizar quién tiene permisos para crear y editar temas:
 
 Para actualizar quién tiene permisos para administrar temas:
 
-1. En la **pestaña Permisos de tema,** en **Quién puede administrar temas,** seleccione **Editar**.
-2. En la **página Quién puede administrar temas,** puede seleccionar:
+1. En la **pestaña Permisos del tema,** en **Quién puede administrar temas,** seleccione **Editar**.
+2. En la **Quién puede administrar temas,** puede seleccionar:
     - **Todos en su organización**
     - **Personas o grupos de seguridad seleccionados**
 
@@ -62,10 +62,10 @@ Para actualizar quién tiene permisos para administrar temas:
 
 3. Seleccione **Guardar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar la detección de temas en Temas de Microsoft Viva](topic-experiences-discovery.md)
 
-[Administrar la visibilidad de los temas en Temas de Microsoft Viva](topic-experiences-knowledge-rules.md)
+[Administrar visibilidad de temas en Temas de Microsoft Viva](topic-experiences-knowledge-rules.md)
 
 [Cambiar el nombre del centro de temas en Temas de Microsoft Viva](topic-experiences-administration.md)

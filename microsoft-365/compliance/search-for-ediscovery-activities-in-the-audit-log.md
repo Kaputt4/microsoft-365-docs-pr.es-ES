@@ -46,7 +46,7 @@ Para obtener más información acerca de la búsqueda en el registro de auditor�
 
 Actualmente, debe hacer algunas cosas específicas para ver las actividades de exhibición de documentos electrónicos en el registro de auditoría. Aquí se muestra cómo hacerlo.
   
-1. Vaya a <https://compliance.microsoft.com> e inicie sesión con su cuenta laboral o educativa.
+1. Vaya a <https://compliance.microsoft.com> e inicie sesión con su cuenta profesional o educativa.
 
 2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en **Mostrar todo** y, a continuación, haga clic en **Auditar**.
 
@@ -67,7 +67,7 @@ Actualmente, debe hacer algunas cosas específicas para ver las actividades de e
 
     Se **muestra** una página desplegable Detalles que contiene las propiedades detalladas del registro de eventos. Para mostrar detalles adicionales, haga clic **en Más información**. Para obtener una descripción de estas propiedades, vea la [sección Propiedades detalladas para actividades de exhibición de documentos electrónicos.](#detailed-properties-for-ediscovery-activities)
 
-9. Si lo desea, puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, usar la característica Excel Power Query para dar formato y filtrar estos registros. Para más información, consulte[Exportar, configurar y ver registros de auditoría](export-view-audit-log-records.md).
+9. Si lo desea, puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, usar la característica Excel Power Query para dar formato y filtrar estos registros. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
 
 ## <a name="ediscovery-activities"></a>Actividades de eDiscovery
 

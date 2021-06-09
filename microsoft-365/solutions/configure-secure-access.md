@@ -1,5 +1,5 @@
 ---
-title: Configurar el acceso seguro a los servicios de Microsoft 365
+title: Configurar el acceso seguro a Microsoft 365 servicios
 description: 'Encuentre instrucciones prescriptivas para implementar MFA, acceso condicional y directivas relacionadas para tres niveles de protección: línea base, confidencial, altamente confidencial.'
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050891"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a>Configurar el acceso seguro a los servicios de Microsoft 365
+# <a name="configure-secure-access-to-microsoft-365-services"></a>Configurar el acceso seguro a Microsoft 365 servicios
 
 Esta solución se basa en la "configuración dorada de[M365":](../security/defender-365-security/microsoft-365-policies-configurations.md)instrucciones prescriptivas para implementar MFA, acceso condicional y directivas relacionadas para tres niveles de protección: línea base, confidencial, altamente confidencial.

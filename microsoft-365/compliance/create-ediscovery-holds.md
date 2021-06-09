@@ -52,15 +52,15 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 
 6. En la **página Nombre del** asistente para retención, asigne a la retención un nombre y agregue una descripción opcional y, a continuación, haga clic en **Siguiente**. El nombre de la suspensión debe ser exclusivo en la organización.
 
-7. En la **página Asistente** para elegir ubicaciones, elija las ubicaciones de contenido que desea poner en espera. Puede poner buzones, sitios y carpetas públicas en espera.
+7. En la **página Asistente** para elegir ubicaciones, elija las ubicaciones de contenido que desea poner en espera. Puede retener buzones, sitios y carpetas públicas.
 
     ![Elegir las ubicaciones de contenido para colocar en suspensión](../media/eDiscoveryHoldLocations.png)
   
-   1. **Exchange buzones** de correo: establece la alternancia en **Activar** y, a continuación, haz clic en Elegir **usuarios,** grupos o equipos para especificar los buzones que se colocarán en espera. Use el cuadro de búsqueda para buscar buzones de usuario y grupos de distribución (para colocar una retención en los buzones de los miembros del grupo) para colocar en espera. También puede colocar una retención en el buzón asociado para un grupo de Microsoft, Office 365 grupo y Yammer grupo. Para obtener más información acerca de los datos de la aplicación que se conservan cuando se coloca un buzón en espera, vea Contenido almacenado en buzones [para exhibición de](what-is-stored-in-exo-mailbox.md)documentos electrónicos.
+   1. **Buzones de Exchange**: establezca el botón de alternancia en **Activado** y después haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones para colocar en suspensión. Use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución (para colocar una suspensión en los buzones de miembros de grupo) para suspenderlos. También puede colocar una retención en el buzón asociado para un grupo de Microsoft, Office 365 grupo y Yammer grupo. Para obtener más información acerca de los datos de la aplicación que se conservan cuando se coloca un buzón en espera, vea Contenido almacenado en buzones [para exhibición de](what-is-stored-in-exo-mailbox.md)documentos electrónicos.
 
-   1. **SharePoint:** establece la alternancia en **Activar**  y, a continuación, haz clic en Elegir sitios para especificar SharePoint sitios y OneDrive cuentas que se colocarán en espera. Escriba la dirección URL de cada sitio que quiere suspender. También puede agregar la dirección URL del sitio SharePoint para un grupo de Microsoft, Office 365 grupo o un Yammer grupo.
+   1. **Sitios de SharePoint**: establezca el botón de alternancia en **Activado** y haga clic en **Elegir sitios** para especificar los sitios de SharePoint y las cuentas de OneDrive que se deben colocar en suspensión. Escriba la dirección URL de cada sitio que quiere colocar en suspensión. También puede agregar la dirección URL del sitio SharePoint para un grupo de Microsoft, Office 365 grupo o un Yammer grupo.
   
-   1. **Exchange carpetas públicas:** establece la alternancia en **Activar** para poner todas las carpetas públicas de la Exchange Online organización en espera. No puede elegir carpetas públicas específicas para poner en espera. Deje el botón de alternancia desactivado si no desea poner una retención en carpetas públicas.
+   1. **Carpetas públicas de Exchange**: establezca la opción de alternancia en **Activado** para poner todas las carpetas públicas en su organización de Exchange Online en suspensión. No puede elegir carpetas públicas específicas para poner en suspensión. Deje el botón de alternancia desactivado si no quiere establecer una suspensión en las carpetas públicas.
 
    > [!NOTE]
    > Debe agregar al menos una ubicación de contenido a la retención. De lo contrario, las estadísticas de retención de exhibición de documentos electrónicos mostrarán que no hay elementos en espera.
@@ -220,10 +220,10 @@ En la tabla siguiente se enumeran los límites para los casos de exhibición de 
   | Descripción del límite | Límite |
   |:-----|:-----|
   |Número máximo de casos para una organización.  <br/> |Sin límite  <br/> |
-  |Número máximo de retenciones de exhibición de documentos electrónicos para una organización.  <br/> |10,000  <br/> |
-  |Número máximo de buzones en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |1,000  <br/> |
+  |Número máximo de retenciones de exhibición de documentos electrónicos para una organización.  <br/> |10 000  <br/> |
+  |Número máximo de buzones en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |1.000  <br/> |
   |Número máximo de sitios en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |100  <br/> |
-  |Número máximo de casos que se muestran en la página principal de exhibición de documentos electrónicos y el número máximo de elementos que se muestran en las pestañas Retenciones, Búsquedas y Exportación dentro de un caso. <sup>1</sup> |1,000|
+  |Número máximo de casos que se muestran en la página principal de exhibición de documentos electrónicos y el número máximo de elementos que se muestran en las pestañas Retenciones, Búsquedas y Exportación dentro de un caso. <sup>1</sup> |1.000|
   |||
 
    > [!NOTE]

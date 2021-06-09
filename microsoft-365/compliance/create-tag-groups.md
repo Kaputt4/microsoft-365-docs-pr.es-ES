@@ -1,5 +1,5 @@
 ---
-title: Crear un nuevo caso en eDiscovery avanzado
+title: Crear un nuevo caso en Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -25,7 +25,7 @@ ms.locfileid: "42077107"
 ---
 # <a name="create-tag-groups"></a>Crear grupos de etiquetas
 
-Antes de que usted u otras personas puedan etiquetar documentos en un conjunto de revisión, deben crearse las etiquetas. Para ello, puede crear grupos de etiquetas que contengan etiquetas secundarias. Las etiquetas se muestran en el panel de etiquetado al revisar los documentos de un conjunto de revisión.
+Para que usted u otras personas puedan etiquetar documentos en un conjunto de revisión, deben crearse las etiquetas. Para ello, cree grupos de etiquetas que contengan etiquetas secundarias. Las etiquetas se muestran en el panel de etiquetado al revisar documentos de un conjunto de revisión.
 
 Para crear un grupo de etiquetas:
 
@@ -33,13 +33,13 @@ Para crear un grupo de etiquetas:
 
     ![Haga clic en Administrar conjunto de revisión](../media/ED-managews.png)
 
-2.  En el icono **Etiquetas,** haga clic **en Administrar etiquetas.**
+2.  En el icono **Etiquetas,** haga clic **en Administrar etiquetas**.
 
     ![Haga clic en Administrar etiquetas en el icono Etiquetas](../media/ED-managetags.png)
 
-Una vez dentro de la administración de etiquetas, se pueden crear etiquetas para satisfacer los requisitos de su caso. Puede empezar creando un grupo de etiquetas.
+Una vez dentro de la administración de etiquetas, se pueden crear etiquetas para cumplir los requisitos de su caso. Puede empezar creando un grupo de etiquetas.
 
-1.  Haga clic **en Agregar sección.**
+1.  Haga clic **en Agregar sección**.
 
     ![Agregar un grupo de etiquetas](../media/ED-addtagsection.png)
 
@@ -51,13 +51,13 @@ Una vez dentro de la administración de etiquetas, se pueden crear etiquetas par
     
     ![Creación de etiquetas en un grupo de etiquetas](../media/ED-createtag.png)
 
-   - **Las etiquetas de** opción obligarán a los usuarios a seleccionar una etiqueta de un grupo de etiquetas.
+   - **Las etiquetas** de opción forzarán a los usuarios a seleccionar una etiqueta de un grupo de etiquetas.
    
    - **Las etiquetas de** casilla permitirán a los usuarios seleccionar cualquier combinación de etiquetas. |
 
 ## <a name="nested-tags"></a>Etiquetas anidadas
 
-Para anidar etiquetas, haga clic en los puntos suspensivos situados junto a una etiqueta y, a continuación, seleccione una nueva etiqueta para agregarla.
+Para anidar etiquetas, haga clic en los puntos suspensivos situados junto a una etiqueta y, a continuación, seleccione una nueva etiqueta para agregar.
 
-![Anidamiento de etiquetas](../media/ED-tagnesting.png)
+![Etiquetas de anidamiento](../media/ED-tagnesting.png)
 

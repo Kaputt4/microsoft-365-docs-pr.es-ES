@@ -12,30 +12,24 @@ metadata:
   manager: serdars
   audience: Admin
   ms.date: 09/04/2020
-  ms.openlocfilehash: 8c7158c72700a7db866051a4de10bbc890ad4478
-  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "47420128"
 additionalContent:
   sections:
-  - items:
-    - title: ¿Qué es Microsoft Bookings?
-      summary: Programe y administre citas con un calendario y una aplicación de reserva basados en web, incluida la integración de Outlook para su personal y los correos electrónicos de notificación automatizados.
-      url: bookings-overview.md
-    - title: Escribir la información de su empresa
-      summary: Escriba su página Acerca de nosotros, incluido el nombre comercial, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-      url: enter-business-information.md
-    - title: Obtener la aplicación Bookings
-      summary: Cambia el tema de color y configura el aspecto que tendrá la página de reservas de cliente externo.
-      url: customize-booking-page.md
-    - title: Agregar personal a Bookings
-      summary: Cree su lista de miembros del personal y administre los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-      url: add-staff.md
-    - title: Programar cierres de negocios, tiempo libre y tiempo de vacaciones
-      summary: Programe los cierres de oficina y el tiempo libre de los empleados del calendario de Bookings para que los empleados se marquen como no disponibles para las reservas durante las horas especificadas.
-      url: schedule-closures-time-off-vacation.md
-    - title: Horario laboral de los empleados en Microsoft Bookings
-      summary: Establecer el horario laboral y la disponibilidad de los empleados en Microsoft Bookings.
-      url: employee-hours.md
+    - items:
+        - title: ¿Qué es Microsoft Bookings?
+          summary: 'Programe y administre citas con un calendario y una aplicación de reserva basados en web, incluida Outlook integración para el personal y mensajes de correo electrónico de notificación automatizados.'
+          url: bookings-overview.md
+        - title: Escribir la información de su empresa
+          summary: 'Escribe tu página Acerca de nosotros, incluido el nombre de empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.'
+          url: enter-business-information.md
+        - title: Obtener la aplicación Bookings
+          summary: Cambia el tema de color y configura el aspecto que tendrá la página de reserva del cliente externo.
+          url: customize-booking-page.md
+        - title: Agregar personal a Bookings
+          summary: 'Cree su lista de personal y administre los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.'
+          url: add-staff.md
+        - title: 'Programar cierres de negocios, tiempo libre y tiempo de vacaciones'
+          summary: Programe los cierres de oficina y el tiempo de descanso de los empleados del calendario de Bookings para que los empleados se marquen como no disponibles para las reservas durante las horas especificadas.
+          url: schedule-closures-time-off-vacation.md
+        - title: Horario laboral de los empleados en Microsoft Bookings
+          summary: Establecer la disponibilidad y el horario laboral de los empleados en Microsoft Bookings.
+          url: employee-hours.md

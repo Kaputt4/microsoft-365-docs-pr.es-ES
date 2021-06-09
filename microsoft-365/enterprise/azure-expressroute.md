@@ -123,10 +123,10 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
 
-[Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md)
+[Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md)
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

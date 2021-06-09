@@ -164,7 +164,7 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
      }
    ```
 
-2. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/exchange-online-powershell).
+2. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/exchange-online-powershell).
 
 3. En PowerShell & Centro de seguridad y cumplimiento, vaya a la carpeta donde guardó el script en el paso 1 y, a continuación, ejecute el script; por ejemplo:
 
@@ -183,6 +183,6 @@ Este es un ejemplo de la salida devuelta por el script.
 > 
 > - Etiquetas de error de lista y los tipos de archivo correspondientes para los que se produjo el error.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Elementos parcialmente indizados en eDiscovery](partially-indexed-items-in-content-search.md)

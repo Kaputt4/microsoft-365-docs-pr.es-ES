@@ -1,6 +1,6 @@
 ---
-title: Regiones compatibles
-description: Regiones admitidas por Microsoft Managed Desktop
+title: Regiones admitidas
+description: Regiones admitidas por Escritorio administrado de Microsoft
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -19,19 +19,19 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/30/2021
 ms.locfileid: "51445315"
 ---
-# <a name="microsoft-managed-desktop-supported-regions"></a>Regiones compatibles con Escritorio administrado de Microsoft
+# <a name="microsoft-managed-desktop-supported-regions"></a>Escritorio administrado de Microsoft regiones admitidas
 
-En este artículo se proporcionan detalles sobre las regiones en las que puede usar Microsoft Managed Desktop y dónde se admite. Para obtener más información acerca de los idiomas admitidos por Microsoft Managed Desktop para la experiencia del usuario, vea Localización de dispositivos [para usuarios.](../get-started/localization.md)
+En este artículo se proporcionan detalles sobre las regiones donde puede usar Escritorio administrado de Microsoft y dónde se admite. Para obtener más información acerca de los idiomas admitidos por Escritorio administrado de Microsoft para la experiencia del usuario, vea [Localización](../get-started/localization.md)de dispositivos para usuarios .
 
-Todavía puede usar dispositivos administrados fuera de estas regiones sin interrupción en el servicio de Escritorio administrado de Microsoft. Por ejemplo, un empleado basado en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja a Asia, Europa o Sudamérica.
+Todavía puede usar dispositivos administrados fuera de estas regiones sin interrumpir el Escritorio administrado de Microsoft servicio. Por ejemplo, un empleado basado en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja a Asia, Europa o Sudamérica.
 
-Para obtener más información sobre los idiomas admitidos por Microsoft Managed Desktop para experiencias de usuario y administrador, vea [Localize the user experience](../get-started/localization.md).
+Para obtener más información sobre los idiomas admitidos por Escritorio administrado de Microsoft experiencias de usuario y administrador, vea [Localize the user experience](../get-started/localization.md).
 
-Para obtener más información acerca de la compatibilidad de usuarios con Microsoft Managed Desktop, consulte [Support for Microsoft Managed Desktop](support.md).
+Para obtener más información acerca de la compatibilidad de usuario Escritorio administrado de Microsoft, vea [Support for Escritorio administrado de Microsoft](support.md).
 
 ## <a name="availability-of-the-service"></a>Disponibilidad del servicio
 
-Las organizaciones de los siguientes países pueden suscribirse a Microsoft Managed Desktop:
+Las organizaciones de los siguientes países pueden suscribirse a Escritorio administrado de Microsoft:
 
 - Estados Unidos
 - Canadá (excluyendo Quebec)

@@ -36,7 +36,7 @@ Esto es lo que sucede al cerrar un Advanced eDiscovery caso:
 
 - Cerrar un caso solo desactiva las retenciones que están asociadas a ese caso. Si otras retenciones se encuentran en una ubicación de contenido (como una retención por juicio, una retención de exhibición de documentos electrónicos principal o una retención de un caso Advanced eDiscovery diferente) esas retenciones se mantendrán.
 
-- El caso aún se muestra en la página exhibición de documentos electrónicos en el centro de Microsoft 365 cumplimiento. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
+- El caso aún se muestra en la página exhibición de documentos electrónicos en el centro de Microsoft 365 cumplimiento. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
 
 - Puede editar un caso después de cerrarlo. Por ejemplo, puede agregar o quitar miembros, crear búsquedas, exportar resultados de búsqueda y preparar resultados de búsqueda para el análisis en Advanced eDiscovery. La principal diferencia entre los casos activos y cerrados es que las retenciones se desactivarán cuando se cierra un caso.
 
@@ -60,7 +60,7 @@ Para volver a abrir un caso cerrado:
 
 1. En la página de **eDiscovery avanzado**, seleccione el caso que quiere volver a abrir.
 
-2. En la pestaña **Configuración**, en **Información del**, haga clic en **Seleccionar**.
+2. En la pestaña **Configuración**, en **Información de caso**, haga clic en **Seleccionar**.
 
 3. En la parte inferior de la **página desplegable Información** de casos, haga clic en (**...**) **Más opciones y,** a continuación, haga clic **en Abrir caso**.
 
