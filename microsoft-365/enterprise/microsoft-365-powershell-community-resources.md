@@ -23,16 +23,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/24/2020
 ms.locfileid: "48754697"
 ---
-# <a name="microsoft-365-community-resources-for-powershell"></a><span data-ttu-id="81dab-103">Recursos de la comunidad de Microsoft 365 para PowerShell</span><span class="sxs-lookup"><span data-stu-id="81dab-103">Microsoft 365 community resources for PowerShell</span></span>
+# <a name="microsoft-365-community-resources-for-powershell"></a><span data-ttu-id="6c11b-103">Recursos de la comunidad de Microsoft 365 para PowerShell</span><span class="sxs-lookup"><span data-stu-id="6c11b-103">Microsoft 365 community resources for PowerShell</span></span>
 
-<span data-ttu-id="81dab-104">Conéctese a estas comunidades para llegar a sus compañeros y obtener respuestas para sus preguntas de PowerShell para Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="81dab-104">Connect to these communities to reach your peers and get answers for your PowerShell for Microsoft 365 questions.</span></span> 
+<span data-ttu-id="6c11b-104">Conectar a estas comunidades para llegar a sus compañeros y obtener respuestas para su PowerShell para Microsoft 365 preguntas.</span><span class="sxs-lookup"><span data-stu-id="6c11b-104">Connect to these communities to reach your peers and get answers for your PowerShell for Microsoft 365 questions.</span></span> 
   
-- [<span data-ttu-id="81dab-105">Microsoft 365 Microsoft Tech Community</span><span class="sxs-lookup"><span data-stu-id="81dab-105">Microsoft 365 Microsoft Tech Community</span></span>](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
+- [<span data-ttu-id="6c11b-105">Microsoft 365 Microsoft Tech Community</span><span class="sxs-lookup"><span data-stu-id="6c11b-105">Microsoft 365 Microsoft Tech Community</span></span>](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
-- [<span data-ttu-id="81dab-106">Exchange Server foro de la comunidad de TechNet</span><span class="sxs-lookup"><span data-stu-id="81dab-106">Exchange Server TechNet community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
+- [<span data-ttu-id="6c11b-106">Exchange Server Foro de la comunidad de TechNet</span><span class="sxs-lookup"><span data-stu-id="6c11b-106">Exchange Server TechNet community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
-## <a name="see-also"></a><span data-ttu-id="81dab-107">Consulte también</span><span class="sxs-lookup"><span data-stu-id="81dab-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6c11b-107">Consulte también</span><span class="sxs-lookup"><span data-stu-id="6c11b-107">See also</span></span>
 
-[<span data-ttu-id="81dab-108">Administrar Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="81dab-108">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="6c11b-108">Administrar Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="6c11b-108">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="81dab-109">Introducción a PowerShell para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="81dab-109">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="6c11b-109">Introducción a PowerShell para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="6c11b-109">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
