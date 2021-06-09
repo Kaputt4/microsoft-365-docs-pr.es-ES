@@ -1,5 +1,5 @@
 ---
-title: Visualización de documentos en un conjunto de revisión en eDiscovery avanzado
+title: Visualización de documentos en un conjunto de revisión en Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Puede anotar y censurar documentos en un conjunto de revisión de eDiscovery avanzado.
+description: Puede anotar y redactar documentos en un conjunto de revisión en Advanced eDiscovery.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 664045a3df50cdceb650208459c122049dba7c7c
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -25,6 +25,6 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285546"
 ---
-# <a name="annotate-and-redact-documents-in-a-review-set-in-advanced-ediscovery"></a><span data-ttu-id="f5c6a-103">Anotar y censurar documentos en un conjunto de revisión en eDiscovery avanzado</span><span class="sxs-lookup"><span data-stu-id="f5c6a-103">Annotate and redact documents in a review set in Advanced eDiscovery</span></span>
+# <a name="annotate-and-redact-documents-in-a-review-set-in-advanced-ediscovery"></a><span data-ttu-id="74f0c-103">Anotar y redactar documentos en un conjunto de revisión en Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="74f0c-103">Annotate and redact documents in a review set in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="f5c6a-104">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="f5c6a-104">Content coming soon.</span></span>
+<span data-ttu-id="74f0c-104">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="74f0c-104">Content coming soon.</span></span>

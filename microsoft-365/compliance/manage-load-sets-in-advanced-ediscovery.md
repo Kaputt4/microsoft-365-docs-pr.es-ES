@@ -1,5 +1,5 @@
 ---
-title: Administrar conjuntos de carga en eDiscovery avanzado
+title: Administrar conjuntos de carga en Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Obtenga información sobre cómo administrar conjuntos de carga en eDiscovery avanzado.
+description: Obtenga información sobre cómo administrar conjuntos de carga en Advanced eDiscovery.
 ms.openlocfilehash: 38eb0e19c7e62a42df85343d3328b941332adc03
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
@@ -23,6 +23,6 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285610"
 ---
-# <a name="manage-load-sets-in-advanced-ediscovery"></a><span data-ttu-id="72808-103">Administrar conjuntos de carga en eDiscovery avanzado</span><span class="sxs-lookup"><span data-stu-id="72808-103">Manage load sets in Advanced eDiscovery</span></span>
+# <a name="manage-load-sets-in-advanced-ediscovery"></a><span data-ttu-id="355da-103">Administrar conjuntos de carga en Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="355da-103">Manage load sets in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="72808-104">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="72808-104">Content coming soon.</span></span>
+<span data-ttu-id="355da-104">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="355da-104">Content coming soon.</span></span>
