@@ -30,11 +30,11 @@ Una red virtual (VNet) en servicios de infraestructura de Azure que esté conect
 - La longitud del prefijo de la subred de puerta de enlace puede tener una longitud máxima de prefijo de 29 (por ejemplo, 10.119.255.248/29), pero la recomendación actual es que use una longitud de prefijo de 27 (por ejemplo, 10.119.255.224/27).
 - Al definir el espacio de direcciones de la subred de puerta de enlace, use la última parte del espacio de direcciones de la red virtual.
 
-Para la segunda recomendación, puede determinar el espacio de direcciones de la subred de puerta de enlace estableciendo los bits usados para la subred de puerta de enlace en 0 y los bits restantes en el espacio de direcciones de VNET en 1. Para calcular rápidamente el espacio de direcciones de la subred de puerta de enlace sin tener que convertir a binario y volver a decimales, puede usar una aplicación de consola escrita en C# o Python o con un bloque de comandos de PowerShell.
+Para la segunda recomendación, puede determinar el espacio de direcciones de la subred de puerta de enlace estableciendo los bits usados para la subred de puerta de enlace en 0 y los bits restantes en el espacio de direcciones de la red virtual en 1. Para calcular rápidamente el espacio de direcciones de subred de puerta de enlace sin tener que convertir a binario y volver a decimal, puede usar una aplicación de consola escrita en C# o Python o con un bloque de comandos de PowerShell.
 
-Este artículo contiene bloques de código de C#, Python y PowerShell que calculan el espacio de direcciones de la subred de puerta de enlace en función de los valores de w.x.y.z/n para el prefijo de dirección de red virtual y la longitud del prefijo de subred de puerta de enlace.
+Este artículo contiene C#, Python y bloques de código de PowerShell que calculan el espacio de direcciones de subred de puerta de enlace en función de los valores de w.x.y.z/n para el prefijo de dirección de red virtual y la longitud del prefijo de subred de puerta de enlace.
 
-## <a name="c-code-block"></a>Bloque de código C#
+## <a name="c-code-block"></a>C# de código
 
 Usa este bloque de código para crear una aplicación de consola en C#.
 
@@ -149,7 +149,7 @@ print(gwAddrPref)
 
 ## <a name="powershell-command-block"></a>Bloque de comandos de PowerShell
 
-Rellene los valores y ejecute el bloque de comandos resultante en una ventana de PowerShell o en el Entorno de scripts integrado (ISE) de PowerShell.
+Rellene los valores y ejecute el bloque de comandos resultante en una ventana de PowerShell o en el Entorno de script integrado (ISE) de PowerShell.
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 

@@ -83,7 +83,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 Parámetro |    Tipo    | Descripción
 :---|:---|:---
 Valor |    Cadena |    El nombre de la etiqueta. **Necesario**.
-Action    | Enum |    Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
+Acción    | Enum |    Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
 
 
 ## <a name="response"></a>Respuesta

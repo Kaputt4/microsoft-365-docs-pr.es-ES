@@ -1,5 +1,5 @@
 ---
-title: Recuperar datos de informes de inquilinos de clientes Windows PowerShell para partners de DAP
+title: Recuperar datos de informes de inquilinos de clientes con Windows PowerShell para partners de DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -28,9 +28,9 @@ ms.locfileid: "50927221"
 
 Use el Windows PowerShell remoto para Microsoft Exchange Online para recuperar informes de inquilinos de clientes individuales.
   
-Los asociados de proveedor de soluciones en la nube (CSP) y de sindicación pueden acceder a los datos que forma parte de los informes de inquilinos del cliente directamente a través de Windows PowerShell para Exchange Online PowerShell. Esto permite a los asociados recopilar y guardar los datos de los informes para luego realizar otras operaciones con ellos. Después de abrir una conexión remota, recuperar datos de informes sobre un arrendamiento de cliente es igual que ejecutar cualquier cmdlet en un arrendamiento de cliente..
+Los partners de distribución Proveedor de soluciones en la nube (CSP) pueden tener acceso a los datos que forma parte de los informes de inquilino del cliente directamente a través de Windows PowerShell remoto para Exchange Online PowerShell. Esto permite a los asociados recopilar y guardar los datos de los informes para luego realizar otras operaciones con ellos. Después de abrir una conexión remota, recuperar datos de informes sobre un arrendamiento de cliente es igual que ejecutar cualquier cmdlet en un arrendamiento de cliente..
   
-En este artículo, se usa Windows PowerShell para Exchange Online para conectarse a un solo arrendamiento de cliente y recuperar un informe. De forma predeterminada, Windows PowerShell no admite agregar datos de informes de varios arrendamientos de cliente. Los informes que recupera con este procedimiento son solo para el  _DelegatedOrg_ al que se conecta.
+En este artículo, se usa Windows PowerShell remoto para Exchange Online conectarse a un solo arrendamiento de cliente y recuperar un informe. De forma predeterminada, Windows PowerShell no admite agregar datos de informes de varios arrendamientos de cliente. Los informes que recupera con este procedimiento son solo para el  _DelegatedOrg_ al que se conecta.
   
  
 ## <a name="before-you-begin"></a>Antes de empezar

@@ -53,7 +53,7 @@ Al comprar Microsoft 365 Empresa Premium, tiene la opción de usar un dominio de
 
 ### <a name="add-your-domain-to-personalize-sign-in"></a>Agregar su dominio para personalizar el inicio de sesión
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales de administrador global. 
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales de administrador global. 
 
 2. Para iniciar el asistente, seleccione **Ir a la configuración**.
 

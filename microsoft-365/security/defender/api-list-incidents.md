@@ -82,7 +82,7 @@ GET /api/incidents
 
 Nombre | Tipo | Descripción
 -|-|-
-Authorization | String | Portador {token}. **Required**
+Authorization | Cadena | Portador {token}. **Required**
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -107,7 +107,7 @@ lastUpdateTime | Hora en la que el incidente se actualizó por última vez en el
 assignedTo | Propietario del incidente o *null* si no se asigna ningún propietario. | secop2@contoso.com
 classification | La especificación del incidente. Los valores de propiedad son: *Unknown*, *FalsePositive*, *TruePositive* | Unknown
 determinación | Especifica la determinación del incidente. Los valores de propiedad son: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* | NotAvailable
-status | Clasifice los incidentes *(como Activos* o *Resueltos).* Puede ayudarle a organizar y administrar su respuesta a incidentes. | Activa
+status | Clasifice los incidentes *(como Activos* o *Resueltos).* Puede ayudarle a organizar y administrar su respuesta a incidentes. | Activo
 severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br /><br />Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*. | Medio
 tags | Matriz de etiquetas personalizadas asociadas a un incidente, por ejemplo para marcar un grupo de incidentes con una característica común. | \[\]
 comments | Matriz de comentarios creados por secops al administrar el incidente, por ejemplo información adicional sobre la selección de clasificación. | \[\]
@@ -150,7 +150,7 @@ osPlatform | La plataforma del sistema operativo que se está ejecutando el disp
 osBuild | La versión de compilación del sistema operativo que se está ejecutando el dispositivo. | 14393
 rbacGroupName | Grupo [de control de acceso basado](/azure/role-based-access-control/overview) en roles (RBAC) asociado al dispositivo. | WDATP-Ring0
 firstSeen | Hora en la que se vio el dispositivo por primera vez. | 2020-02-06T14:16:01.9330135Z
-healthStatus | El estado de mantenimiento del dispositivo. | Activa
+healthStatus | El estado de mantenimiento del dispositivo. | Activo
 riskScore | La puntuación de riesgo del dispositivo. | Alto
 entidades | Todas las entidades que se han identificado para formar parte o relacionadas con una alerta determinada. | \[\] (vea los detalles de los campos de entidad a continuación)
 
@@ -186,11 +186,11 @@ securityGroupId | Disponible si entityType es  *SecurityGroup*. | 301c47c8-e15f-
 securityGroupName | Disponible si entityType es  *SecurityGroup*. | Operadores de configuración de red
 registryHive | Disponible si entityType es  *Registry*. | MÁQUINA LOCAL HKEY \_ \_ |
 registryKey | Disponible si entityType es  *Registry*. | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | Disponible si entityType es  *Registry*. | String
+registryValueType | Disponible si entityType es  *Registry*. | Cadena
 registryValue | Disponible si entityType es  *Registry*. | 31-00-00-00
 deviceId | El identificador, si lo hay, del dispositivo relacionado con la entidad. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

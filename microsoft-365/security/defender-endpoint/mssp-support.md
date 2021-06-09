@@ -43,7 +43,7 @@ Para hacer frente a esta demanda, los proveedores de servicios de seguridad admi
 
 Defender for Endpoint agrega oportunidades de asociación para este escenario y permite a los MSSP realizar las siguientes acciones:
 
-- Obtener acceso al portal del Centro de seguridad de Microsoft Defender del cliente de MSSP
+- Obtener acceso al portal de Centro de seguridad de Microsoft Defender MSSP
 - Obtener notificaciones por correo electrónico y 
 - Capturar alertas a través de herramientas de administración de eventos y de información de seguridad (SIEM)
 

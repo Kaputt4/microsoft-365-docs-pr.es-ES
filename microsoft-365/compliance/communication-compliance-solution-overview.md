@@ -25,15 +25,15 @@ ms.locfileid: "50423228"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de comunicaciones en Microsoft 365
 
-Proteger la información confidencial y detectar y actuar en incidentes de acoso en el lugar de trabajo es una parte importante del cumplimiento de las directivas y estándares internos. El cumplimiento de las comunicaciones en Microsoft 365 ayuda a minimizar estos riesgos al ayudarle a detectar, capturar y realizar rápidamente acciones de corrección para el correo electrónico y las comunicaciones de Microsoft Teams. Entre ellas se incluyen comunicaciones inapropiadas que contienen palabras profanas, amenazas y hostigamiento y comunicaciones que comparten información confidencial dentro y fuera de su organización.
+Proteger la información confidencial y detectar y actuar en incidentes de acoso en el lugar de trabajo es una parte importante del cumplimiento de las directivas y estándares internos. El cumplimiento de las comunicaciones en Microsoft 365 ayuda a minimizar estos riesgos al ayudarle a detectar, capturar y tomar rápidamente acciones de corrección para el correo electrónico y Microsoft Teams comunicaciones. Entre ellas se incluyen comunicaciones inapropiadas que contienen palabras profanas, amenazas y hostigamiento y comunicaciones que comparten información confidencial dentro y fuera de su organización.
 
-## <a name="configure-communication-compliance-for-microsoft-365"></a>Configurar el cumplimiento de comunicaciones para Microsoft 365
+## <a name="configure-communication-compliance-for-microsoft-365"></a>Configurar el cumplimiento de la comunicación para Microsoft 365
 
 Siga estos pasos para configurar el cumplimiento de las comunicaciones para su organización:
 
 ![Pasos de cumplimiento de la comunicación de soluciones de riesgo de Insider](../media/ir-solution-cc-steps.png)
 
-1. Información sobre [el cumplimiento de la](communication-compliance.md) comunicación en Microsoft 365
+1. Obtenga información [sobre el cumplimiento de la](communication-compliance.md) comunicación en Microsoft 365
 2. Planear el cumplimiento [de las comunicaciones y](communication-compliance-plan.md) comprobar las [licencias](communication-compliance-configure.md#subscriptions-and-licensing)
 3. Revisar [las funcionalidades de solución y referencia de características](communication-compliance-feature-reference.md)
 4. Configurar [requisitos previos](communication-compliance-configure.md#step-2-required-enable-the-audit-log) [y permisos](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
@@ -42,4 +42,4 @@ Siga estos pasos para configurar el cumplimiento de las comunicaciones para su o
 ## <a name="more-information-about-communication-compliance"></a>Más información sobre el cumplimiento de la comunicación
 
 - [Investigar y corregir alertas](communication-compliance-investigate-remediate.md)
-- [Caso práctico: Contoso configura rápidamente una directiva de idioma ofensivo para las comunicaciones de Microsoft Teams, Exchange y Yammer](communication-compliance-case-study.md)
+- [Caso práctico: Contoso configura rápidamente una directiva de idioma ofensivo para Microsoft Teams, Exchange y Yammer comunicaciones](communication-compliance-case-study.md)

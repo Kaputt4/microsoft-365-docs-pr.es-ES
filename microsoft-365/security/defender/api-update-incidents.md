@@ -71,7 +71,7 @@ PATCH /api/incidents/{id}
 
 Nombre | Tipo | Descripción
 -|-|-
-Authorization | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -81,7 +81,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos que deben ac
 Propiedad | Tipo | Descripción
 -|-|-
 status | Enum | Especifica el estado actual del incidente. Los valores posibles son: ```Active``` ```Resolved``` , y ```Redirected``` .
-assignedTo | string | Propietario del incidente.
+assignedTo | cadena | Propietario del incidente.
 classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
 determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | lista de cadenas | Lista de etiquetas de incidentes.
@@ -91,7 +91,7 @@ comment | string | Comentario que se agregará al incidente.
 
 Si se realiza correctamente, este método devuelve `200 OK` . El cuerpo de la respuesta contendrá la entidad incident con propiedades actualizadas. Si no se encontró un incidente con el identificador especificado, el método devuelve `404 Not Found` .
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

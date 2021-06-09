@@ -1,5 +1,5 @@
 ---
-title: Importar custodios a un caso de exhibición de documentos electrónicos avanzada
+title: Importar custodios a un Advanced eDiscovery caso
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Use la herramienta de importación dto agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en eDiscovery avanzado.
+description: Use la herramienta de importación dto agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en Advanced eDiscovery.
 ms.openlocfilehash: 98ff3690fe7fd8c956fce436585014ef0db82a26
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -22,13 +22,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50421617"
 ---
-# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importar custodios a un caso de exhibición de documentos electrónicos avanzada
+# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importar custodios a un Advanced eDiscovery caso
 
-Para los casos de exhibición de documentos electrónicos avanzados que implican a muchos custodios, puede importar varios custodios a la vez mediante un archivo CSV que contiene la información necesaria para agregarlos a un caso.
+Para Advanced eDiscovery casos en los que participan muchos custodios, puede importar varios custodios a la vez mediante un archivo CSV que contiene la información necesaria para agregarlos a un caso.
 
 ## <a name="import-custodians"></a>Importar custodios
 
-1. Abra el caso eDiscovery avanzado y seleccione la **pestaña Orígenes de** datos.
+1. Abra el Advanced eDiscovery y seleccione la **pestaña Orígenes de** datos.
 
 2. Haga **clic en Agregar orígenes de datos** Importar  >  **custodios**.
 
@@ -48,14 +48,14 @@ Para los casos de exhibición de documentos electrónicos avanzados que implican
 
 Después de descargar la plantilla de custodia CSV, puede agregar custodios y su origen de datos en cada fila. Asegúrese de no cambiar los nombres de columna de la fila de encabezado. Use el tipo de carga de trabajo y las columnas de ubicación de carga de trabajo para asociar otros orígenes de datos a un administrador.
 
-| Nombre de columna|Description|
+| Nombre de columna|Descripción|
 |:------- |:------------------------------------------------------------|
 |**Contacto de custodiaEmail**     |Dirección de correo electrónico UPN del custodio. Por ejemplo, sarad@contoso.onmicrosoft.com.           |
-|**Habilitado para Exchange** | Valor TRUE/FALSE para incluir o no incluir el buzón del custodio.      |
-|**OneDrive habilitado** | Valor TRUE/FALSE para incluir o no incluir la cuenta de OneDrive para la Empresa del custodio. |
+|**Exchange Habilitado** | Valor TRUE/FALSE para incluir o no incluir el buzón del custodio.      |
+|**OneDrive Habilitado** | Valor TRUE/FALSE para incluir o no incluir la cuenta OneDrive para la Empresa custodia. |
 |**Is OnHold**        | Valor TRUE/FALSE para indicar si se deben poner en espera los orígenes de datos de custodia. <sup>1</sup>     |
 |**Tipo Workload1**         |Valor de cadena que indica el tipo de origen de datos que se asociará con el custodio. Los valores posibles son: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
-|**Ubicación workload1**     | Según el tipo de carga de trabajo, esta sería la ubicación del origen de datos. Por ejemplo, la dirección de correo electrónico de un buzón de Exchange o la dirección URL de un sitio de SharePoint. |
+|**Ubicación workload1**     | Según el tipo de carga de trabajo, esta sería la ubicación del origen de datos. Por ejemplo, la dirección de correo electrónico de un buzón Exchange o la dirección URL de un SharePoint sitio. |
 |||
 
 > [!NOTE]
@@ -63,7 +63,7 @@ Después de descargar la plantilla de custodia CSV, puede agregar custodios y su
 
 Este es un ejemplo de un archivo CSV con información de custodia:<br/><br/>
 
-|Contacto de custodiaEmail      | Habilitado para Exchange | OneDrive habilitado | Is OnHold | Tipo Workload1 | Ubicación workload1             |
+|Contacto de custodiaEmail      | Exchange Habilitado | OneDrive Habilitado | Is OnHold | Tipo Workload1 | Ubicación workload1             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
 |robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
@@ -71,7 +71,7 @@ Este es un ejemplo de un archivo CSV con información de custodia:<br/><br/>
 
 ## <a name="custodian-and-data-source-validation"></a>Validación de custodia y origen de datos
 
-Después de cargar el archivo CSV de custodia, eDiscovery avanzado hace lo siguiente:
+Después de cargar el archivo CSV de custodia, Advanced eDiscovery las siguientes acciones:
 
 1. Valida los custodios y sus orígenes de datos.
 
@@ -79,15 +79,15 @@ Después de cargar el archivo CSV de custodia, eDiscovery avanzado hace lo sigui
 
 ### <a name="custodian-validation"></a>Validación de custodia
 
-Actualmente, solo se admite la importación de custodios que se incluyen en Azure Active Directory (Azure AD) de su organización.
+Actualmente, solo se admite la importación de custodios que se incluyen en la organización Azure Active Directory (Azure AD).
 
 La herramienta de importación de custodia busca y valida a los custodios mediante el valor UPN de la columna **ContactEmail** de custodia del archivo CSV. Los custodios validados se agregan automáticamente al caso y se enumeran en la **pestaña Orígenes de** datos del caso. Si no se puede validar un custodio, aparecen en el registro de errores  del trabajo BulkAddCustodian que aparece en la pestaña Trabajos en el caso. Los custodios no confirmados no se agregan al caso ni aparecen en la **pestaña Orígenes de** datos.
 
 ### <a name="data-source-validation"></a>Validación del origen de datos
 
-Una vez validados y agregados los custodios al caso, se agregan cada buzón principal y una cuenta de OneDrive asociada a un custodio.
+Después de que los custodios se validan y se agregan al caso, se agregan cada buzón principal y OneDrive cuenta asociada a un custodio.
 
-Sin embargo, si no se encuentra ninguno de los otros orígenes de datos (como sitios de SharePoint, Microsoft Teams, grupos de Microsoft 365  o grupos de Yammer) asociados con un custodio, ninguno de ellos se asigna al administrador y el valor No validado se muestra en la columna Estado junto al custodio en la pestaña **Orígenes** de datos. 
+Sin embargo, si no se encuentra ninguno de los otros orígenes de datos (como sitios de SharePoint, Microsoft Teams, grupos de Microsoft 365 o grupos de Yammer) asociados con  un custodio, ninguno de ellos se asigna al custodio y el valor No validado se muestra en la columna Estado situada junto al custodio en la ficha **Orígenes** de datos. 
 
 Para agregar orígenes de datos validados para un custodio:
 
@@ -105,7 +105,7 @@ Para agregar y asociar manualmente un origen de datos que no era válido anterio
 
 1. En la **pestaña Orígenes de** datos, seleccione un custodio para agregar y asociar manualmente un origen de datos que no era válido anteriormente.
 
-2. Haga **clic en** Editar en la parte superior de la página desplegable para asociar buzones, sitios, grupos de Teams o Yammer al custodio. Para ello, haga clic **en Editar** junto al tipo de ubicación de datos correspondiente.
+2. Haga **clic en** Editar en la parte superior de la página desplegable para asociar buzones, sitios, Teams o Yammer grupos al custodio. Para ello, haga clic **en Editar** junto al tipo de ubicación de datos correspondiente.
 
 3. Haga **clic en** Siguiente para mostrar la página Configuración **de** retención y configurar la configuración de retención para los orígenes de datos que agregó.
 

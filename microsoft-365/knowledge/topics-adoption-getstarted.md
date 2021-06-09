@@ -24,33 +24,33 @@ Antes de empezar con la adopción, debe comprender los conceptos relacionados co
 
 ![Arquitectura de Temas de Viva](../media/knowledge-management/topic-management-architecture.png)
 
-- **Detección:** los usuarios pueden descubrir conocimientos en las aplicaciones que usan cada día a través de tarjetas de temas; también pueden descubrir temas en Microsoft Search.
-- **Curación:** los expertos en la materia (PYME) refinan los temas a través de las páginas de temas y la inteligencia artificial aprende de sus aportaciones. El Centro de temas contiene páginas de temas que los usuarios pueden explorar y los expertos pueden administrar.
-- **Identificación:** con los conocimientos de Microsoft Graph y la Inteligencia Artificial (IA) y las personas (temas, habilidades, entre otros) se identifican y organizan automáticamente en temas relacionados. El contenido de SharePoint se indiza con contenido de seguridad.
-- **Extensión:** con los conectores de contenido de Microsoft Graph (próximamente), puede ingerir conocimientos de servicios externos y repositorios de datos.
+- **Detección**: los usuarios pueden descubrir información en las aplicaciones que usan a diario a través de tarjetas de tema; también pueden descubrir temas en Búsqueda de Microsoft.
+- **Conservación**: los expertos en la materia (SME) refinan los temas a través de las páginas de temas e IA se enriquece de su entrada. El Centro de temas contiene páginas de temas que los usuarios pueden explorar y los expertos pueden administrar.
+- **Identificación**: con conocimientos de Microsoft Graph e inteligencia artificial (IA) y las personas (temas, aptitudes, etc.) se identifican y organizan automáticamente en temas relacionados. El contenido de SharePoint está indexado con contenido de seguridad.
+- **Extensión:** con microsoft Graph de contenido (próximamente), puede ingerir conocimientos de repositorios de datos y servicios externos.
 
 Para obtener más información, puede revisar la [introducción](topic-experiences-overview.md) para una introducción.
 
 Tenga en cuenta que:
 
-- La detección de temas se mejora cuando hay más contenido disponible.
+- La detección de temas mejorará cuando haya más contenido disponible.
 - La seguridad, la privacidad y la ubicación de los datos se conservan aunque la información se presente en una nueva experiencia.
-- Los usuarios necesitan una licencia para ver Temas de Viva.
-- La detección se encuentra inicialmente en el contenido en inglés.
+- Los usuarios necesitan una licencia para ver Temas Viva.
+- Descubrimiento está inicialmente en contenido en inglés.
 
 Para ayudar a prepararse, piense en estas preguntas:
 
-- ¿Qué contenido se debe usar para la detección de temas?
+- ¿Qué contenido debería usarse para el descubrimiento de temas?
 - ¿Quién administrará los temas?
-- ¿Quién verá las tarjetas de temas y los aspectos destacados?
-- ¿Qué temas se esperan?
+- ¿Quién verá las tarjetas de tema y contenidos destacados?
+- ¿Qué Temas se esperan?
 
-Revise esta lista de requisitos previos para sacar el máximo partido a los temas de Viva:
+Revise esta lista de requisitos previos para sacar el máximo partido a Temas Viva:
 
 |Producto o característica |Descripción |
 |:-------|:--------|
-|SharePoint Online con páginas modernas de SharePoint |La minería de temas solo incluye contenido en sitios de SharePoint y las tarjetas de tema solo se pueden ver en páginas modernas.|
-|Microsoft Graph |Puedes controlar si los temas se incluyen o se excluyen de Search o Delve con la configuración de Microsoft Graph. |
+|SharePoint Online con páginas modernas de SharePoint |La minería de temas solo incluye contenido SharePoint sitios y las tarjetas de tema solo se pueden ver en páginas modernas.|
+|Microsoft Graph |Puede controlar si los temas se incluyen o excluyen de la búsqueda o Delve con la configuración de Microsoft Graph. |
 
 ## <a name="plan-for-adoption"></a>Planear la adopción
 
@@ -63,25 +63,25 @@ Para planear la adopción de Viva Topics, debe:
     - Piense en las [partes interesadas y](#identify-stakeholders) los miembros del equipo del proyecto que necesita haber participado.  
     - Averiguar qué impacto empresarial desea impulsar y cómo va a medir [el éxito](#create-a-success-plan).
 
-2. Interactúe con su organización:
+2. Involucre a su organización:
     - Identifique los grupos empresariales y los equipos empresariales que deben participar y obtener alineación entre ellos y los escenarios que está planeando.
-    - Empieza a pensar en cómo interactuar con algunos usuarios iniciales para obtener comentarios críticos y anticipados para que puedas iterar para llegar a la mejor solución.
+    - Empiece a pensar cómo implicar a algunos participantes pioneros para obtener comentarios críticos y anticipados, de modo que pueda iterar para obtener la mejor solución.
     - Comience a crear la comunidad y piense en cómo estos diferentes grupos pueden usar Temas de Viva en toda la organización.
 
 3. Entrenar a su organización: la mayoría de las personas comprenderá intuitivamente el concepto de temas y cómo las tarjetas de temas compilan información relevante, y comprenderán y verán el valor. Pero es posible que desee crear un aprendizaje que se adapte a su propia cultura y organización, para mostrar cómo desea que se utilicen Los temas de Viva. Algunos recursos de aprendizaje:
-    - [Centro de recursos de Project Cortex](https://aka.ms/projectcortex). Incluye información general e información de características, vídeos y presentaciones grabados de horas de oficina, e información sobre los partners y sus ofertas.
+    - [Project Centro de recursos de Cortex](https://aka.ms/projectcortex). Incluye información general e información de características, vídeos y presentaciones grabados de horas de oficina, e información sobre los partners y sus ofertas.
     - Próximamente, vídeos de aprendizaje y ayuda para los usuarios finales.
 
 4. [Crear una red de campeones:](#build-a-champion-network)
-    - Es posible que ya haya comunidades de prácticas o redes de campeones. Estas son excelentes maneras de socializar y evangelizar y hacer que los compañeros participen en la ayuda mutua. Y pueden compartir historias de éxito que pueden ser valiosas. Pueden ofrecer consejos y generar entusiasmo.
+    - Puede que ya tenga comunidades de práctica o redes de campeones. Estas son formas excelentes de socializar, dar a conocer y animar a ayudarse entre compañeros. Y pueden compartir historias de éxito que pueden ser valiosas. Pueden ofrecer consejos y generar entusiasmo.
 
 ### <a name="target-scenarios"></a>Escenarios de destino
 
 Determine cómo desea usar Viva Topics en su organización para usarlos correctamente. Estos son algunos escenarios en los que la administración del conocimiento y los temas pueden ayudar a su organización:
 
-- Incorporación de roles & aprendizaje: comprender la terminología, los proyectos clave y la cultura de una nueva organización son pasos importantes en la incorporación. La detección sencilla de temas puede ayudar a los nuevos empleados a aumentar rápidamente los nuevos trabajos, roles o proyectos.
+- Incorporación de roles & aprendizaje: comprender la terminología, los proyectos clave y la cultura de una nueva organización son pasos importantes en la incorporación. La detección sencilla de temas puede ayudar a los nuevos empleados a ponerse en marcha rápidamente con nuevos trabajos, roles o proyectos.
 - Búsqueda de experiencia y uso compartido de información: cuando los temas se administran y comparten, los usuarios de sus organizaciones pueden encontrar más fácilmente información y expertos para ayudarles en su trabajo diario.
-- Toma de decisiones expandida y tiempo de salida al mercado mejorado: cuando la información y los expertos son fáciles de alcanzar, puedes tomar decisiones con mayor facilidad y apurar el tiempo de espera de los proyectos.
+- Toma de decisiones expandida y tiempo mejorado de llegada al mercado: cuando la información y los expertos son fáciles de alcanzar, puede tomar decisiones más fácilmente y ahorrar tiempo a los proyectos.
 
 #### <a name="example-scenario-for-role-onboarding"></a>Escenario de ejemplo para la incorporación de roles
 
@@ -91,16 +91,16 @@ Por ejemplo:
 
 - Un empleado (Jordania) está tomando un nuevo rol, o ha sido recién contratado y está empezando por un rol. Jordania quiere implicarse y ser productivo lo más rápido posible. Pero Jordania también necesita ayuda para encontrar un lugar de partida.
 - Un compañero (Kim) que estaba en el rol antes de que Jordan creara páginas de temas que puedan ayudar a los nuevos empleados y a cualquier otra persona que busque esa información.
-- Kim era un SME y tenía permisos para ver páginas de temas no confirmadas. Las páginas de temas no confirmadas son excelentes puntos de partida para lo que la IA ha descubierto y creado, y Kim pudo editarlas para agregar recursos expertos, definiciones y anclar otros recursos.
-- A medida que Jordan lee una nueva publicación en SharePoint, ven un tema destacado y mantienen el mouse sobre él para obtener rápidamente una definición del término y con quién ponerse en contacto con más preguntas. Antes, Jordan podría haber tenido que buscar esta información y ponerse en contacto con compañeros para ver a quién preguntar sobre algo.
-- Exponer esta información a través de temas puede ser eficaz, ya que aunque esta información puede haber estado disponible antes, podría haber sido siloada y difícil de encontrar. Incorporarlo a las aplicaciones que Jordan usa y ayudarles a encontrar a estos expertos también puede impulsar una sensación de compromiso y comunidad. También puede ayudarles a sentirse más potenciados al tratar con el nuevo rol.
+- Kim era un SME y tenía permisos para ver páginas de temas no confirmadas. Las páginas de temas sin confirmar son excelentes puntos de partida para lo que la IA ha descubierto y creado, y Carlota pudo editarlas para agregar recursos de expertos, definiciones y anclar otros recursos.
+- A medida que Jordan lee una nueva publicación en SharePoint, ven un tema destacado y mantienen el mouse sobre él para obtener rápidamente una definición del término y con quién ponerse en contacto con más preguntas. Antes, Julia habría tenido que buscar esta información y ponerse en contacto con compañeros para averiguar a quién debía preguntar.
+- Exponer esta información a través de temas puede ser eficaz, porque aunque puede haber estado disponible anteriormente, es posible que haya acabado en un silo y sea difícil de encontrar. Incorporarlo a las aplicaciones que Jordan usa y ayudarles a encontrar a estos expertos también puede impulsar una sensación de compromiso y comunidad. También ayuda a los trabajadores a sentirse más capacitados al trabajar en el nuevo rol.
 
 Al automatizar este escenario, puede asegurarse de que:
 
-- Los nuevos empleados pueden conectarse rápidamente con las personas correctas en los proyectos adecuados.
-- Los nuevos empleados tienen acceso instantáneo a la información más reciente del proyecto dentro del flujo de su trabajo.
-- Los tiempos de búsqueda se reducen considerablemente.
-- Los tiempos de incorporación se reducen considerablemente.
+- Los nuevos empleados puedan conectar rápidamente con los usuarios adecuados en los proyectos adecuados.
+- Los nuevos empleados tengan acceso instantáneo a la información más reciente del proyecto dentro del flujo de su trabajo.
+- Se reduzcan en gran medida los tiempos de búsqueda.
+- Se reduzcan en gran medida los tiempos de incorporación.
 
 #### <a name="example-scenario-for-customer-call-center"></a>Escenario de ejemplo para el centro de llamadas de cliente
 
@@ -110,39 +110,39 @@ Por ejemplo, un representante de soporte técnico debe encontrar rápidamente ar
 
 Al automatizar este escenario con Temas de Viva, puede asegurarse de que:
 
-- Se reducen los tiempos de llamadas de soporte técnico.
-- Se reducen las escalaciones a la compatibilidad con los niveles 2 y 3.
-- Se reduce el número de llamadas en un caso determinado.
+- Los tiempos de las llamadas de soporte técnico se reducen.
+- Las escalaciones para la compatibilidad con 2.º y 3º nivel se reducen.
+- El número de devoluciones de llamada en un caso determinado se reduce.
 - La satisfacción del cliente aumenta.
 
 #### <a name="prioritize-your-scenarios"></a>Priorizar los escenarios
 
 Después de identificar los escenarios, puede priorizar los escenarios:
 
-Una forma de priorizarlos es trazar los escenarios en una cuadrícula que muestre el impacto frente a la facilidad de implementación. Busque escenarios que tengan un alto impacto y que sean fáciles de implementar y hagan de esos escenarios su prioridad principal. Los escenarios de bajo impacto y difíciles de implementar son su prioridad más baja. Cuando tienes una victoria rápida con un escenario de alto impacto y fácil de implementar, ayuda a los usuarios a emocionarse y ver las posibilidades de usar temas.
+Una forma de priorizarlos es trazar los escenarios en una cuadrícula que muestre el impacto frente a la facilidad de implementación. Busque escenarios que tengan un alto impacto y que sean fáciles de implementar y hagan de esos escenarios su prioridad principal. Los escenarios de impacto bajo y difíciles de implementar son la prioridad más baja. Cuando usted obtiene un resultado rápido con un escenario de alto impacto y fácil de implementar, este ayuda a que las personas se entusiasmen y vean las posibilidades de usar temas.
 
 ![Los escenarios de alto impacto y fáciles de implementar son de alta prioridad](../media/knowledge-management/topics-prioritize-scenarios.png)
 
-Elija un par de escenarios clave en los que centrarse inicialmente, trabaje con los primeros usuarios para obtener algunos comentarios y, a continuación, descúese por fases. De esta forma, puede iterar, realizar mejoras y obtener comentarios para que pueda aumentar la adopción con el tiempo.
+Seleccione un par de escenarios clave en los que centrarse inicialmente, trabaje con sus primeras adopciones para obtener algunos comentarios y, a continuación, impleméntelos en fases. De esta forma, puede iterar, realizar mejoras y obtener comentarios para que pueda aumentar la adopción con el tiempo.
 
 ### <a name="identify-stakeholders"></a>Identificación de las partes interesadas
 
-Identificar las partes interesadas del proyecto. Los roles clave son el patrocinador ejecutivo, el propietario del éxito y los campeones.
+Identifique las partes interesadas del proyecto. Los roles clave son el patrocinador ejecutivo, el propietario del éxito y los campeones.
 
-|Función |Responsibilities |Department |
+|Rol |Responsabilidades |Departamento |
 |:-------|:-------|:--------|
-| Patrocinadores ejecutivos   | Comunicar la visión y los valores de alto nivel a la empresa   |  Liderazgo ejecutivo   |
-| Clientes potenciales del proyecto | Supervisar todo el proceso de ejecución e implementación del inicio | Administración de proyectos |
-| Administradores de conocimientos| Configurar y configurar Temas de Viva | Departamento de TI |
-| Administradores de conocimientos | Administrar temas y supervisar la taxonomía | Cualquier departamento |
+| Patrocinadores ejecutivos   | Comunicar a la empresa valores y visión de alto nivel   |  Liderazgo ejecutivo   |
+| Project clientes potenciales | Supervisar todo el proceso de ejecución e implementación del lanzamiento | Administración de proyectos |
+| Administradores de información| Instalar y configurar Temas Viva | Departamento de TI |
+| Gerentes de información | Administrar temas y supervisar la taxonomía | Cualquier departamento |
 | Administradores de taxonomía | Supervisar la taxonomía | Cualquier departamento |
 | Expertos en la materia y colaboradores de temas | Generar o revisar temas y descripciones | Cualquier departamento |
-| Expertos: | Ayudar a evangelizar y administrar el tratamiento de las objeciones | Cualquier departamento (personal) |
-| Administrador de inquilinos | Configurar las opciones de nivel de inquilino | Departamento de TI |
-| Administrador de Power Platform| Configurar un entorno de servicios de datos común | Departamento de TI |
-| Administrador o administrador de búsqueda | Configuración de las opciones de búsqueda | Departamento de TI |
+| Expertos: | Ayudar a promocionar y administrar el tratamiento de objeción | Cualquier departamento (personal) |
+| Administrador de inquilinos | Configurar la configuración de nivel de inquilino | Departamento de TI |
+| Administrador de Power Platform| Configurar el entorno de servicios de datos comunes | Departamento de TI |
+| Administrador de búsqueda o gerente | Configurar las opciones de búsqueda | Departamento de TI |
 
-En una organización más grande, es posible que también tenga varias personas en estos roles y tendrá que impulsar la coordinación entre ellos. En una compañía más pequeña, una sola persona puede realizar varios de estos roles. Los roles diferentes pueden estar más implicados en distintas fases del proyecto. Por ejemplo, los administradores de inquilinos participan más en la configuración de las características, mientras que los expertos en temas y campeones no participan hasta que empiezas a definir temas.
+En una organización más grande, es posible que también tenga varias personas en estos roles y tendrá que impulsar la coordinación entre ellos. En una empresa más pequeña, una sola persona puede realizar varios de estos roles. Los diferentes roles participan de varias maneras en las distintas fases del proyecto. Por ejemplo, los administradores de inquilinos participan más en la configuración de las características, mientras que los expertos en temas y campeones no participan hasta que empiezas a definir temas.
  
 Aunque se recomienda que cada uno de estos roles se cumpla a lo largo de la implementación, es posible que no necesite todos ellos para empezar con la solución identificada.
 
@@ -152,9 +152,9 @@ Use estos indicadores para medir el éxito de Viva Topics en su organización. M
 
 1. Uso del tema:
       - Impresiones de temas
-      - Cantidad de temas: confirmados y no confirmados en la lista de temas seleccionados.
-      - Número de páginas de temas publicados.
-1. Comentarios del usuario final de las tarjetas de tema.
+      - Cantidad de temas: tanto los que están confirmados como los que no están confirmados en la lista de temas seleccionados.
+      - Número de páginas de temas publicadas.
+1. Comentarios de usuarios finales de tarjetas de tema.
 1. Realizar encuestas de satisfacción de los empleados. Los temas de Viva deben mejorar la capacidad de los empleados para encontrar información, por lo que encontrará formas de recopilar sus comentarios y comentarios sobre esa experiencia.
 1. Impacto positivo en el análisis de búsqueda. Dado que los temas aparecen en la experiencia de búsqueda, con el tiempo es posible que se reduzcan las tasas de búsquedas abandonadas porque los usuarios pueden encontrar más fácilmente los temas en la búsqueda. 
 
@@ -167,7 +167,7 @@ Cree una red de campeones en su organización. Los campeones son importantes por
 
 Puede contratar a campeones de diferentes roles: administradores de conocimientos y expertos en la materia.
 
-Muchas redes campeonas usan Yammer como plataforma. En Yammer, los usuarios pueden publicar preguntas, obtener respuestas y compartir historias de éxito. Es difícil obtener la palabra solo, por lo que puede confiar en la red de personas de toda la empresa para ofrecer consejos a sus compañeros y mostrar cómo su equipo usa Viva Topics para que otros equipos puedan pensar en sus propios escenarios.
+Muchas redes de campeones usan Yammer como plataforma. En Yammer, las personas pueden publicar preguntas, obtener respuestas y compartir historias de éxito. Es difícil obtener la palabra solo, por lo que puede confiar en la red de personas de toda la empresa para ofrecer consejos a sus compañeros y mostrar cómo su equipo usa Viva Topics para que otros equipos puedan pensar en sus propios escenarios.
 
 Algunas organizaciones usan hackathons (formales o informales, virtuales o en persona) para reunir grupos de personas para trabajar en un proyecto específico. Por ejemplo, podría reunir a los expertos en la materia y hacer que trabajen juntos para curar un conjunto de páginas de temas.
 
@@ -175,17 +175,17 @@ Piensa en cómo puedes reconocer a tus campeones. Recompensar sus actividades, d
 
 Ahora que ya está listo para su implementación, desea asegurarse de que está fomentando la participación continua.
 
-- Mantener los grupos de Yammer activos para los campeones.
-- Compartir casos de éxito.
+- Mantenga los grupos Yammer activos para los campeones.
+- Compartir historias de éxito.
 - Hospedar periódicamente eventos de participación para compartir historias o introducir nuevas características.
 - Establece desafíos para las personas y ejecuta las competencias.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Cuando estés listo para realizar Los temas de Viva, tendrás que involucrar a las personas.
+Cuando esté listo para dar a conocer Temas Viva, tendrá que involucrar a la gente.
 
-- Empiece a introducir el conjunto de características y haga que piensen en sus escenarios.
+- Empiece a presentar el conjunto de características y haga que piensen en sus escenarios.
 - Reúna a las partes interesadas y cree escenarios.
-- Drive the community and think about how you're going to engage them.
+- Impulse la comunidad y piense en cómo va a conseguir su participación.
 - A continuación, complete los pasos de preparación. Algunas pueden ser preparación técnica y otras preparación empresarial.
 - Por último, socialice y promueva.

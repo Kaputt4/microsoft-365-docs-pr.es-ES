@@ -70,7 +70,7 @@ Use los [escenarios de ejemplo y los casos de uso](adoption-scenarios.md) para p
 
 Determine who in your organization will build and manage the models? Los siguientes roles pueden estar implicados:
 
-| SharePoint/Administrador de conocimientos | Administrador de Power Platform | Administrador de conocimientos | Propietario del modelo |
+| SharePoint/Administrador de conocimientos | Administrador de Power Platform | Responsable de la información | Propietario del modelo |
 |:-------|:-------|:-------|:-------|
 | Rol AAD| Rol AAD | Rol AAD | Expertos: |
 | Configurar el procesamiento del formulario | Configurar el entorno de servicio de datos común para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso empresarial |

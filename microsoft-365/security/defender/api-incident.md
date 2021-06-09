@@ -46,7 +46,7 @@ Puede solicitar hasta 50 llamadas por minuto o 1500 llamadas por hora. Cada mét
 
 Un código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo `429` de ejecución asignado. El cuerpo de la respuesta incluirá la hora hasta que se restablezca la cuota alcanzada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 La API de incidentes requiere distintos tipos de permisos para cada uno de sus métodos. Para obtener más información acerca de los permisos necesarios, consulte el artículo del método respectivo.
 
@@ -67,10 +67,10 @@ Propiedad | Tipo | Descripción
 -|-|-
 incidentId | largo | Identificador único de incidente.
 redirectIncidentId | long nullable | El identificador de incidente con el que se ha combinado el incidente actual.
-incidentName | string | Nombre del incidente.
+incidentName | cadena | Nombre del incidente.
 createdTime | DateTimeOffset | La fecha y hora (en UTC) que se creó el incidente.
 lastUpdateTime | DateTimeOffset | La fecha y hora (en UTC) se actualizó por última vez el incidente.
-assignedTo | string | Propietario del incidente.
+assignedTo | cadena | Propietario del incidente.
 severity | Enum | Gravedad del incidente. Los valores posibles son: ```UnSpecified``` , , , y ```Informational``` ```Low``` ```Medium``` ```High``` .
 status | Enum | Especifica el estado actual del incidente. Los valores posibles son: ```Active``` ```Resolved``` , y ```Redirected``` .
 classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.

@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo comprar el complemento microsoft 365 Business Voice.
+description: Obtenga información sobre cómo comprar el Microsoft 365 Business Voice complemento.
 ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -36,7 +36,7 @@ Con Microsoft 365 Business Voice, puede realizar y recibir llamadas, usar audioc
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración de Microsoft 365, vaya a **Facturación** y seleccione **Servicios de compra.**
+1. En el centro Microsoft 365 administración, vaya a **Facturación** y seleccione **Servicios de compra.**
 1. Desplácese hacia abajo y **elija Complementos**. 
 1. Seleccione **Microsoft 365 Business Voice**.
 
