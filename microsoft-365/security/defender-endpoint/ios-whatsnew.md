@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 64a96256ff4bb4b77ec634195f6d89b92252142a
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 894b628575c0788b6a5d4bb23a8fe512d7c467bc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301769"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845611"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novedades de Microsoft Defender para endpoint en iOS
 
@@ -34,6 +34,12 @@ ms.locfileid: "52301769"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1117240101"></a>1.1.17240101
+- La compatibilidad con la administración de aplicaciones móviles (MAM) a través de Intune suele estar disponible con esta versión. Para obtener más información, consulta [Microsoft Defender para las señales](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322) de riesgo de punto de conexión disponibles para las directivas de protección de aplicaciones
+- **Jailbreak Detection** suele estar disponible. Para obtener más información, consulte [Setup Conditional Access Policy based on device risk signals](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
+- **La configuración automática del perfil VPN** para dispositivos inscritos mediante Microsoft Endpoint Manager (Intune) suele estar disponible. Para obtener más información, [consulte Auto-Setup VPN profile for enrolled iOS devices](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
+- Correcciones de errores.
 
 ## <a name="1115140101"></a>1.1.15140101
 

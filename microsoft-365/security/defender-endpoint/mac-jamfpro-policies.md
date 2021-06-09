@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84d0b37632dc23615a37bbbd73c17fe509dedae5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e26bb85fc74b6be49a9f8116792a7f28e8fa7e05
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934686"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842271"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -40,7 +40,7 @@ Deberá seguir los pasos siguientes:
 
 1. [Obtener el paquete de incorporación de Microsoft Defender para endpoint](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 
-2. [Crear un perfil de configuración en Jamf Pro con el paquete de incorporación](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
+2. [Crear un perfil de configuración en Jamf Pro el paquete de incorporación](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 
 3. [Configurar Microsoft Defender para la configuración del punto de conexión](#step-3-configure-microsoft-defender-for-endpoint-settings)
 
@@ -56,18 +56,18 @@ Deberá seguir los pasos siguientes:
 
 9. [Configurar extensión de red](#step-9-configure-network-extension)
 
-10. [Programar exámenes con Microsoft Defender para endpoint en macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [Programar exámenes con Microsoft Defender para endpoint en macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
 11. [Implementar Microsoft Defender para endpoint en macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>Paso 1: Obtener el paquete de incorporación de Microsoft Defender para endpoint
 
-1. En [el Centro de seguridad de Microsoft Defender,](https://securitycenter.microsoft.com )vaya a Configuración > **incorporación**. 
+1. En [Centro de seguridad de Microsoft Defender](https://securitycenter.microsoft.com ), vaya **a Configuración > Onboarding**. 
 
 2. Seleccione macOS como sistema operativo y Administración de dispositivos móviles /Microsoft Intune como método de implementación.
 
-    ![Imagen del Centro de seguridad de Microsoft Defender](images/onboarding-macos.png)
+    ![Imagen de Centro de seguridad de Microsoft Defender](images/onboarding-macos.png)
 
 3. Seleccione **Descargar paquete de incorporación** (WindowsDefenderATPOnboardingPackage.zip).
 
@@ -76,31 +76,31 @@ Deberá seguir los pasos siguientes:
 5. Copie el archivo en su ubicación preferida. Por ejemplo, `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
 
-## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>Paso 2: Crear un perfil de configuración en Jamf Pro con el paquete de incorporación
+## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>Paso 2: Crear un perfil de configuración en Jamf Pro el paquete de incorporación
 
 1. Busque el archivo `WindowsDefenderATPOnboarding.plist` de la sección anterior.
 
    ![Imagen del archivo WindowsDefenderATPOnboarding](images/plist-onboarding-file.png)
 
  
-2. En el panel de Jamf Pro, seleccione **Nuevo**.
+2. En el panel de Pro Jamf, seleccione **Nuevo**.
 
-    ![Imagen de creación de un nuevo panel de Jamf Pro](images/jamf-pro-configure-profile.png)
+    ![Imagen de creación de un nuevo panel de Pro Jamf](images/jamf-pro-configure-profile.png)
 
 3. Escriba los siguientes detalles:
 
    **General**
-   - Nombre: incorporación de MDATP para macOS
-   - Descripción: incorporación de MDATP EDR para macOS
+   - Nombre: MDATP incorporación para macOS
+   - Descripción: MDATP EDR incorporación para macOS
    - Categoría: Ninguna
    - Método distribution: Install Automatically
    - Nivel: Nivel de equipo
 
-4. En **Configuración & configuración personalizada,** seleccione **Configurar**.
+4. En **Application & Custom Configuración** seleccione **Configure**.
 
     ![Imagen de configuración de la aplicación y la configuración personalizada](images/jamfpro-mac-profile.png)
 
-5. Seleccione **Cargar archivo (archivo PLIST) y,** a continuación, en **Dominio de preferencia** escriba: `com.microsoft.wdav.atp` . 
+5. Seleccione **Upload archivo (archivo PLIST)** y, a continuación, en **Dominio de preferencia** escriba: `com.microsoft.wdav.atp` . 
 
     ![Imagen del archivo de carga de jamfpro plist](images/jamfpro-plist-upload.png)
 
@@ -110,7 +110,7 @@ Deberá seguir los pasos siguientes:
 
     ![Imagen del archivo de incorporación](images/jamfpro-plist-file-onboard.png)
 
-8. Seleccione **Cargar**. 
+8. Seleccione **Upload**. 
 
     ![Imagen de la carga del archivo plist](images/jamfpro-upload-plist.png)
 
@@ -271,31 +271,31 @@ Deberá seguir los pasos siguientes:
 2. Guarde el archivo como `MDATP_MDAV_configuration_settings.plist` .
 
 
-3.  En el panel de Jamf Pro, seleccione **General**.
+3.  En el panel de Pro Jamf, seleccione **General**.
 
-    ![Imagen del nuevo panel de Jamf Pro](images/644e0f3af40c29e80ca1443535b2fe32.png)
+    ![Imagen del nuevo panel de Pro Jamf](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
 4. Escriba los siguientes detalles:
 
     **General**
     
-    - Nombre: opciones de configuración de MDATP MDAV
+    - Nombre: MDATP configuración de MDAV
     - Descripción:\<blank\>
     - Categoría: Ninguno (predeterminado)
     - Método distribution: Install Automatically (default)
     - Nivel: Nivel del equipo (predeterminado)
 
-    ![Imagen de las opciones de configuración de MDATP MDAV](images/3160906404bc5a2edf84d1d015894e3b.png)
+    ![Imagen de MDATP configuración de MDAV](images/3160906404bc5a2edf84d1d015894e3b.png)
 
-5. En **Configuración & configuración personalizada,** seleccione **Configurar**.
+5. En **Application & Custom Configuración** seleccione **Configure**.
 
     ![Imagen de la aplicación y la configuración personalizada](images/e1cc1e48ec9d5d688087b4d771e668d2.png)
 
-6. Seleccione **Cargar archivo (archivo PLIST).**
+6. Seleccione **Upload archivo (archivo PLIST).**
 
     ![Imagen del archivo plist de configuración](images/6f85269276b2278eca4bce84f935f87b.png)
 
-7. En **Dominio de preferencias,** escriba `com.microsoft.wdav` y, a continuación,  **seleccione Cargar archivo PLIST**.
+7. En **Dominio de preferencias,** escriba , `com.microsoft.wdav` a **continuación, seleccione Upload archivo PLIST**.
 
     ![Imagen del dominio de preferencias de configuración](images/db15f147dd959e872a044184711d7d46.png)
 
@@ -307,7 +307,7 @@ Deberá seguir los pasos siguientes:
 
     ![Imagen de las opciones de configuración de mdatpmdav](images/98acea3750113b8dbab334296e833003.png)
 
-10. Seleccione **Cargar**.
+10. Seleccione **Upload**.
 
     ![Imagen de la carga de configuración](images/0adb21c13206861ba9b30a879ade93d3.png)
 
@@ -349,12 +349,12 @@ Deberá seguir los pasos siguientes:
 
 Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
-1. En el panel de Jamf Pro, seleccione **Equipos** y, a continuación, **Perfiles de configuración.**
+1. En el panel de Pro Jamf, seleccione **Equipos** y, a continuación, **Perfiles de configuración.**
 
 2. Haga **clic en** Nuevo y escriba los siguientes detalles para **Opciones:**
     
     - Ficha **General**: 
-        - **Nombre:** configuración de notificación MDATP MDAV
+        - **Nombre:** configuración MDATP notificación MDAV
         - **Descripción:** macOS 10.15 (Catalina) o posterior
         - **Categoría**: None *(valor predeterminado)*
         - **Método Distribution:** Instalar automáticamente *(predeterminado)*
@@ -373,7 +373,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
         ![Imagen de la bandeja de notificaciones mdatpmdav de configuración](images/7f9138053dbcbf928e5182ee7b295ebe.png)
 
-    - Tab **Notifications**, click **Add** one more time, scroll down to **New Notifications Settings**
+    - Tab **Notifications**, click **Add** one more time, scroll down to **New Notifications Configuración**
         - **Id. de agrupación:**`com.microsoft.autoupdate2`
         - Configure el resto de la configuración en los mismos valores anteriores
 
@@ -421,7 +421,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
 2. Guárdelo como `MDATP_MDAV_MAU_settings.plist` .
 
-3. En el panel de Jamf Pro, seleccione **General**. 
+3. En el panel de Pro Jamf, seleccione **General**. 
 
     ![Imagen de la imagen general de configuración](images/eaba2a23dd34f73bf59e826217ba6f15.png)
 
@@ -429,21 +429,21 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
     **General** 
     
-    - Nombre: configuración de MDATP MDAV MAU
+    - Nombre: MDATP de MDAV MAU
     - Descripción: Configuración de Microsoft AutoUpdate para MDATP para macOS
     - Categoría: Ninguno (predeterminado)
     - Método distribution: Install Automatically (default)
     - Nivel: Nivel del equipo (predeterminado)
 
-5. En **Configuración & configuración personalizada,** seleccione **Configurar**.
+5. En **Application & Custom Configuración** seleccione **Configure**.
 
     ![Imagen de la aplicación de configuración y la configuración personalizada](images/1f72e9c15eaafcabf1504397e99be311.png)
 
-6. Seleccione **Cargar archivo (archivo PLIST).**
+6. Seleccione **Upload archivo (archivo PLIST).**
 
     ![Imagen de la configuración plist](images/1213872db5833aa8be535da57653219f.png)  
 
-7. En **Dominio de preferencia** escriba: , luego seleccione Cargar archivo `com.microsoft.autoupdate2` **PLIST**.
+7. En **Dominio de preferencia** escriba: , luego seleccione Upload archivo `com.microsoft.autoupdate2` **PLIST**.
 
     ![Imagen del dominio de configuración previa a la configuración](images/1213872db5833aa8be535da57653219f.png)
 
@@ -455,7 +455,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
     ![Imagen de la configuración mdatpmdavmau settings](images/a26bd4967cd54bb113a2c8d32894c3de.png)
 
-10. Seleccione **Cargar**.
+10. Seleccione **Upload**.
     ![Imagen de configuración de configuración uplimage](images/4239ca0528efb0734e4ca0b490bfb22d.png)
 
     ![Imagen de configuración de configuración uplimg](images/4ec20e72c8aed9a4c16912e01692436a.png)
@@ -482,7 +482,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
 ## <a name="step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint"></a>Paso 6: Conceder acceso en disco completo a Microsoft Defender para endpoint
 
-1. En el panel de Jamf Pro, seleccione **Perfiles de configuración**.
+1. En el panel de Pro Jamf, seleccione **Perfiles de configuración**.
 
     ![Imagen del perfil de configuración de configuración](images/264493cd01e62c7085659d6fdc26dc91.png)
 
@@ -569,7 +569,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
     
     ![Imagen de la configuración de donimg2](images/6c8b406ee224335a8c65d06953dc756e.png)
 
-Como alternativa, puede descargar [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) y cargarlo en los perfiles de configuración de JAMF, como se describe en [Deploying Custom Configuration Profiles using Jamf Pro| Método 2: Cargar un perfil de configuración en Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+Como alternativa, puede descargar [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) y cargarlo en los perfiles de configuración de JAMF, como se describe en [Deploying Custom Configuration Profiles using Jamf Pro| Método 2: Upload un perfil de configuración a Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a>Paso 7: Aprobar extensión de kernel para Microsoft Defender para endpoint
 
@@ -584,8 +584,8 @@ Como alternativa, puede descargar [fulldisk.mobileconfig](https://github.com/mic
 
     **General** 
     
-    - Nombre: MDATP MDAV Kernel Extension
-    - Descripción: extensión de kernel MDATP (kext)
+    - Nombre: MDATP de kernel MDAV
+    - Descripción: MDATP kernel (kext)
     - Categoría: Ninguna
     - Método distribution: Install Automatically
     - Nivel: Nivel de equipo
@@ -624,7 +624,7 @@ Como alternativa, puede descargar [fulldisk.mobileconfig](https://github.com/mic
 
     ![Imagen de configuración doneimag](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
-Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) y cargarlo en los perfiles de configuración de JAMF, como se describe en [Deploying Custom Configuration Profiles using Jamf Pro| Método 2: Cargar un perfil de configuración en Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) y cargarlo en los perfiles de configuración de JAMF, como se describe en [Deploying Custom Configuration Profiles using Jamf Pro| Método 2: Upload un perfil de configuración a Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-8-approve-system-extensions-for-microsoft-defender-for-endpoint"></a>Paso 8: Aprobar extensiones de sistema para Microsoft Defender para endpoint
 
@@ -636,8 +636,8 @@ Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microso
 
     **General**
     
-    - Nombre: MDATP MDAV System Extensions
-    - Descripción: extensiones del sistema MDATP
+    - Nombre: MDATP mdav system extensions
+    - Descripción: MDATP extensiones del sistema
     - Categoría: Ninguna
     - Método distribution: Install Automatically
     - Nivel: Nivel de equipo
@@ -681,23 +681,23 @@ Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microso
 
 ## <a name="step-9-configure-network-extension"></a>Paso 9: Configurar extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal Centro de seguridad de Microsoft Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
-1. En el panel de Jamf Pro, seleccione **Equipos** y, a continuación, **Perfiles de configuración.**
+1. En el panel de Pro Jamf, seleccione **Equipos** y, a continuación, **Perfiles de configuración.**
 
 2. Haga **clic en** Nuevo y escriba los siguientes detalles para **Opciones:**
 
     - Ficha **General**: 
-        - **Nombre**: Extensión de red atp de Microsoft Defender
+        - **Name**: ATP de Microsoft Defender Network Extension
         - **Descripción:** macOS 10.15 (Catalina) o posterior
         - **Categoría**: None *(valor predeterminado)*
         - **Método Distribution:** Instalar automáticamente *(predeterminado)*
         - **Nivel:** Nivel de equipo *(predeterminado)*
 
     - Filtro **de contenido de pestaña**:
-        - **Nombre del filtro:** Filtro de contenido de ATP de Microsoft Defender
+        - **Nombre del filtro:** ATP de Microsoft Defender filtro de contenido
         - **Identificador**: `com.microsoft.wdav`
         - Dejar **en blanco dirección de** servicio , **organización**, nombre **de** usuario , **contraseña**, **certificado** (**Incluir** *no está* seleccionado)
         - **Orden de filtro:** Inspector
@@ -729,11 +729,11 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
     ![Imagen de la configuración netextfinal](images/netext-final.png)
 
-Como alternativa, puede descargar [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) y cargarlo en los perfiles de configuración de JAMF, como se describe en [Deploying Custom Configuration Profiles using Jamf Pro| Método 2: Cargar un perfil de configuración en Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+Como alternativa, puede descargar [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) y cargarlo en los perfiles de configuración de JAMF, como se describe en [Deploying Custom Configuration Profiles using Jamf Pro| Método 2: Upload un perfil de configuración a Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Paso 10: Programar exámenes con Microsoft Defender para endpoint en macOS
-Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpoint en macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpoint en macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Paso 11: Implementar Microsoft Defender para endpoint en macOS
@@ -746,7 +746,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpo
 
     ![Imagen del explorador de archivos1 wdavmdmpkg](images/fb2220fed3a530f4b3ef36f600da0c27.png)
 
-3. Abra el panel de Jamf Pro.
+3. Abra el panel de Pro Jamf.
 
     ![Imagen de la configuración jamfpro](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
 
@@ -770,7 +770,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpo
     
     ![Captura de pantalla de una pantalla de equipo Descripción generada automáticamente](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-7. Seleccione **Abrir**. Establece el **nombre para mostrar en** Protección contra amenazas avanzada de Microsoft Defender y Antivirus de Microsoft **Defender**.
+7. Seleccione **Abrir**. Establezca el **nombre para** mostrar en Protección contra amenazas avanzada de Microsoft Defender **y Antivirus de Microsoft Defender**.
 
     **El archivo de** manifiesto no es necesario. Microsoft Defender para endpoint funciona sin archivo de manifiesto.
     
@@ -799,7 +799,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpo
 
 11. En **General,** escriba los siguientes detalles:
 
-    - Nombre para mostrar: MDATP Onboarding Contoso 200329 v100.86.92 o posterior
+    - Nombre para mostrar: MDATP incorporación de Contoso 200329 v100.86.92 o posterior
 
     ![Imagen de configuraciónmdatponboard ](images/625ba6d19e8597f05e4907298a454d28.png)
 
@@ -814,9 +814,9 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpo
  
     ![Imagen de configuración del paquete de configuración configurar](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
-15. Selecciona el **botón Agregar** junto a Protección contra amenazas avanzada de Microsoft Defender y Antivirus de **Microsoft Defender.**
+15. Seleccione el **botón** Agregar junto **a Protección contra amenazas avanzada de Microsoft Defender y Antivirus de Microsoft Defender**.
 
-    ![Imagen de configuración MDATP y MDA add](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
+    ![Imagen de las opciones de configuración MDATP y MDA add](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
 16. Seleccione **Guardar**.
 

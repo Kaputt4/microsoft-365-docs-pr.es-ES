@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b95fa2da177a3ecb93bcf3e2085be6111c2c641e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 60f80e78a5f5c7da44a218c30f4b0173d4ecc829
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770522"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845143"
 ---
 # <a name="list-all-remediation-activities"></a>Enumerar todas las actividades de corrección
 
@@ -55,7 +55,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 :---|:---|:---
 Aplicación | RemediationTask.Read.All | \'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
-Delegado (cuenta profesional o educativa) | RemediationTask.Read.Read | \'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
+Delegado (cuenta profesional o educativa) | RemediationTask.Read | \'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
 
 ## <a name="properties"></a>Propiedades
 
@@ -66,7 +66,7 @@ completerEmail | Cadena | Si alguien completó manualmente la actividad de corre
 completerId | Cadena | Si alguien completó la actividad de corrección manualmente, esta columna contiene su identificador de objeto | nulo
 completionMethod | Cadena | Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada" | Automático
 createdOn | DateTime | Hora en que se creó esta actividad de corrección | 2021-01-12T18:54:11.5499478Z
-description | Cadena | Descripción de esta actividad de corrección | Actualiza Microsoft Silverlight a una versión posterior para mitigar las vulnerabilidades conocidas que afectan a los dispositivos.
+descripción | Cadena | Descripción de esta actividad de corrección | Actualiza Microsoft Silverlight a una versión posterior para mitigar las vulnerabilidades conocidas que afectan a los dispositivos.
 dueOn | DateTime | Fecha de vencimiento que el creador estableció para esta actividad de corrección | 2021-01-13T00:00:00Z
 fixedDevices | . | Número de dispositivos que se han corregido | 2
 id | Cadena | Identificador de esta actividad de corrección | 097d9735-5479-4899-b1b7-77398899df92
@@ -83,7 +83,7 @@ requesterEmail | Cadena | Dirección de correo electrónico del creador | global
 requesterId | Cadena | Id. de objeto Creator | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | Cadena | Las notas (texto libre) que el creador agregó para esta actividad de corrección | nulo
 scid | Cadena | SCID de la recomendación de seguridad relacionada | nulo
-status | Cadena | Estado de la actividad de corrección (Activo/Completado) | Activa
+status | Cadena | Estado de la actividad de corrección (Activo/Completado) | Activo
 statusLastModifiedOn | DateTime | Fecha en la que se actualizó el campo de estado | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Número de dispositivos expuestos a los que se aplica esta corrección | 43
 title | Cadena | Título de esta actividad de corrección | Actualizar Microsoft Silverlight

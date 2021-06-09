@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87305f28975b8997afce211ffa4de3711d26be6b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246373"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845479"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -167,7 +167,7 @@ Al activar esta característica, podrás incorporar datos de Microsoft Defender 
 > [!NOTE]
 > Tendrás que tener la licencia adecuada para habilitar esta característica.
 
-Para recibir la integración contextual de dispositivos en Office 365 inteligencia de amenazas, deberás habilitar la configuración de Defender para endpoints en el panel Seguridad & cumplimiento. Para obtener más información, vea [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
+Para recibir la integración contextual de dispositivos en Office 365 inteligencia de amenazas, deberás habilitar la configuración de Defender para endpoints en el panel Seguridad & cumplimiento. Para obtener más información, vea [Threat investigation and response](/microsoft-365/security/office-365-security/office-365-ti).
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Expertos en amenazas de Microsoft: notificaciones de ataque dirigido
 
@@ -212,7 +212,7 @@ Después de configurar los indicadores de infracción de directivas de seguridad
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune conexión
 
-Defender for Endpoint se puede integrar con [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) para habilitar el acceso condicional basado en riesgos [del dispositivo.](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) Al activar [esta característica,](configure-conditional-access.md)podrás compartir información de dispositivo defender para endpoint con Intune, lo que mejora la aplicación de directivas.
+Defender for Endpoint se puede integrar con [Microsoft Intune](/intune/what-is-intune) para habilitar el acceso condicional basado en riesgos [del dispositivo.](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) Al activar [esta característica,](configure-conditional-access.md)podrás compartir información de dispositivo defender para endpoint con Intune, lo que mejora la aplicación de directivas.
 
 > [!IMPORTANT]
 > Tendrás que habilitar la integración en Intune y Defender for Endpoint para usar esta característica. Para obtener más información sobre pasos específicos, vea [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
@@ -220,7 +220,7 @@ Defender for Endpoint se puede integrar con [Microsoft Intune](https://docs.micr
 Esta característica solo está disponible si tiene lo siguiente:
 
 - Un inquilino con licencia para Enterprise Mobility + Security E3 y Windows E5 (o Microsoft 365 Enterprise E5)
-- Un entorno Microsoft Intune activo, con dispositivos administrados por Intune Windows 10 [unidos a Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)
+- Un entorno Microsoft Intune activo, con dispositivos administrados por Intune Windows 10 [unidos a Azure AD.](/azure/active-directory/devices/concept-azure-ad-join/)
 
 
 ### <a name="conditional-access-policy"></a>Directiva de acceso condicional
@@ -228,7 +228,7 @@ Esta característica solo está disponible si tiene lo siguiente:
 Al habilitar la integración de Intune, Intune creará automáticamente una directiva clásica de acceso condicional (CA). Esta directiva de ca clásica es un requisito previo para configurar informes de estado en Intune. No se debe eliminar.
 
 > [!NOTE]
-> La directiva de CA clásica creada por Intune es distinta de las directivas modernas de acceso [condicional,](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)que se usan para configurar puntos de conexión.
+> La directiva de CA clásica creada por Intune es distinta de las directivas modernas de acceso [condicional,](/azure/active-directory/conditional-access/overview/)que se usan para configurar puntos de conexión.
 
 
 ## <a name="device-discovery"></a>Detección de dispositivo

@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo configurar una Exchange Server local para usar la autenticación moderna híbrida (HMA), lo que le ofrece una autenticación y autorización de usuario más seguras.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f52b7c011b717c5dcb91270ab0a7dd2015131c0e
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694454"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841635"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
@@ -183,12 +183,12 @@ También debe mantener presionada la tecla CTRL al mismo tiempo que haga clic co
 
 Si es un cliente local que usa un servidor Exchange tcp 443, omita el procesamiento de tráfico para los siguientes intervalos de direcciones IP:
 
-```
+```text
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-La aplicación Outlook para iOS y Android está diseñada como la mejor manera de experimentar Microsoft 365 o Office 365 en tu dispositivo móvil mediante el uso de servicios Microsoft para ayudar a encontrar, planear y priorizar tu vida diaria y trabajo. Para obtener más información, consulte [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019).
+La aplicación Outlook para iOS y Android está diseñada como la mejor manera de experimentar Microsoft 365 o Office 365 en tu dispositivo móvil mediante el uso de servicios Microsoft para ayudar a encontrar, planear y priorizar tu vida diaria y trabajo. Para obtener más información, consulte [Using hybrid Modern Authentication with Outlook for iOS and Android](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ## <a name="related-topics"></a>Temas relacionados
 

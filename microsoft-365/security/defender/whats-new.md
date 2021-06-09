@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 91029f03e089f44f49800bfe2d18536a8d415411
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: c974701b83fbb6dbcac1cc597578a97144b2b482
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029033"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845599"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -36,19 +36,19 @@ Por lo general, las siguientes características están disponibles (GA) en la ve
 
 Fuente RSS: recibe una notificación cuando se actualiza esta página copiando y pegando la siguiente dirección URL en el lector de fuentes:
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
+/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
 ## <a name="april-2021"></a>Abril de 2021
-- Centro de seguridad mejorado de Microsoft 365 <br> Ahora, el [Centro de seguridad de Microsoft 365](https://security.microsoft.com) está accesible en forma de versión preliminar pública. Esta nueva experiencia incluye Defender para punto de conexión, Defender para Office 365, Microsoft 365 Defender y más en el Centro de seguridad de Microsoft 365. Este es el nuevo hogar para administrar los controles de seguridad. [Ver las novedades](./overview-security-center.md).
+- Centro de seguridad Microsoft 365 mejorado <br> Ahora, el [Centro de seguridad de Microsoft 365](https://security.microsoft.com) está accesible en forma de versión preliminar pública. Esta nueva experiencia incluye Defender para punto de conexión, Defender para Office 365, Microsoft 365 Defender y más en el Centro de seguridad de Microsoft 365. Este es el nuevo hogar para administrar los controles de seguridad. [Ver las novedades](./overview-security-center.md).
 
-- [Informe de análisis de amenazas de Microsoft 365 Defender](threat-analytics.md)<br>
- El análisis de amenazas te ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por las soluciones de Microsoft 365 Defender y realizar acciones de prevención que mitiguen el riesgo de una mayor exposición y aumenten la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para los titulares de licencias de Microsoft Defender para Endpoint y Microsoft Defender para Office E5.
+- [Microsoft 365 Informe de análisis de amenazas de Defender](threat-analytics.md)<br>
+ El análisis de amenazas te ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender y realizar acciones de prevención que mitiguen el riesgo de exposición adicional y aumenten la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para Microsoft Defender para Endpoint y Microsoft Defender para los Office de licencias de E5.
 
 ## <a name="march-2021"></a>Marzo de 2021
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Encuentre información sobre eventos en varias aplicaciones y servicios en la nube cubiertos por Microsoft Cloud App Security. Esta tabla también incluye información disponible anteriormente en `AppFileEvents` .
 ## <a name="february-2021"></a>Febrero de 2021
-- (Versión preliminar) El centro [de seguridad mejorado https://security.microsoft.com) de Microsoft 365 (](https://security.microsoft.com) ya está disponible en versión preliminar pública. Esta nueva experiencia lleva a Defender para Endpoint y Defender para Office 365 al centro. [Más información sobre los cambios](./overview-security-center.md).
+- (Versión preliminar) El centro [de Microsoft 365 de https://security.microsoft.com) seguridad mejorada (](https://security.microsoft.com) ahora está disponible en versión preliminar pública. Esta nueva experiencia lleva a Defender for Endpoint and Defender para Office 365 al centro. [Más información sobre los cambios](./overview-security-center.md).
 
 ## <a name="september-2020"></a>Septiembre de 2020
 - [Tabla IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Buscar eventos que impliquen un controlador de dominio local que ejecute Active Directory (AD). Esta [tabla de esquema](advanced-hunting-overview.md) de búsqueda avanzada abarca una serie de eventos relacionados con la identidad y eventos del sistema en el controlador de dominio.

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cc2fcd7410c2f3122fb3ce49a40e93bfa0767331
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9970bb6d410f39ff5d796dec678a750342f0f599
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539028"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842031"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidentes en Microsoft 365 Defender
 
@@ -185,5 +185,5 @@ Las tareas diarias, mensuales, trimestrales y anuales se pueden usar para actual
 
   - Realizar [investigaciones](investigate-incidents.md) de incidentes.
 
-- Consulta estos [libros de reproducción de respuesta a](https://docs.microsoft.com/security/compass/incident-response-playbooks) incidentes para obtener instrucciones detalladas sobre los ataques de suplantación de identidad (phishing), el uso de contraseñas y la concesión de consentimiento de la aplicación.
+- Consulta estos [libros de reproducción de respuesta a](/security/compass/incident-response-playbooks) incidentes para obtener instrucciones detalladas sobre los ataques de suplantación de identidad (phishing), el uso de contraseñas y la concesión de consentimiento de la aplicación.
 

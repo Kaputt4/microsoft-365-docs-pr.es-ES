@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4742a32fd899f41d4e7772c52415891cdd8895bf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2d78b7ea31c45220735a8579d728f9c0f7bda181
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769526"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842115"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Crear una aplicación para tener acceso a Microsoft Defender para endpoint sin un usuario
 
@@ -39,7 +39,7 @@ ms.locfileid: "52769526"
 
 En esta página se describe cómo crear una aplicación para obtener acceso mediante programación a Defender for Endpoint sin un usuario. Si necesita acceso mediante programación a Defender for Endpoint en nombre de un usuario, vea [Obtener acceso con contexto de usuario](exposed-apis-create-app-nativeapp.md). Si no está seguro de qué acceso necesita, vea [Introducción.](apis-intro.md)
 
-Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le ayudarán a automatizar los flujos de trabajo e innovar en función de las capacidades de Defender para endpoints. El acceso a la API requiere autenticación de OAuth2.0. Para obtener más información, vea Código de autorización [de OAuth 2.0 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le ayudarán a automatizar los flujos de trabajo e innovar en función de las capacidades de Defender para endpoints. El acceso a la API requiere autenticación de OAuth2.0. Para obtener más información, vea Código de autorización [de OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En general, deberá seguir los pasos siguientes para usar las API:
 - Crear una aplicación Azure Active Directory (Azure AD).
@@ -116,7 +116,7 @@ En este artículo se explica cómo crear una aplicación de Azure AD, obtener un
 
 ## <a name="get-an-access-token"></a>Obtener un token de acceso
 
-Para obtener más información sobre los tokens de Azure AD, consulte el [tutorial de Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Para obtener más información sobre los tokens de Azure AD, consulte el [tutorial de Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### <a name="use-powershell"></a>Usar PowerShell
 

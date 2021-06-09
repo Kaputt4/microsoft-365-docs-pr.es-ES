@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c5c76553ff3f0b32def5fbafbf2c8f010e49eeb2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935226"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845428"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solucionar problemas de reglas de reducción de superficie de ataque
 
@@ -56,11 +56,11 @@ Hay cuatro pasos para solucionar estos problemas:
 
 Las reglas de reducción de superficie de ataque solo funcionarán en dispositivos con las siguientes condiciones:
 
-- Los puntos de conexión ejecutan Windows 10 Enterprise, versión 1709 (también conocido como Fall Creators Update).
+- Los puntos de conexión Windows 10 Enterprise, versión 1709 (también conocida como fall Creators Update).
 
-- Los puntos de conexión usan Antivirus de Microsoft Defender como única aplicación de protección antivirus. [El uso de cualquier otra aplicación antivirus hará que Microsoft Defender AV se deshabilite a sí mismo.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- Los puntos de conexión usan Antivirus de Microsoft Defender como la única aplicación de protección antivirus. [El uso de cualquier otra aplicación antivirus hará que Microsoft Defender AV se deshabilite a sí mismo.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
-- [La protección en tiempo real](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) está habilitada.
+- [La protección en tiempo real](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) está habilitada.
 
 - El modo auditoría no está habilitado. Use la directiva de grupo para establecer la regla en **Deshabilitado** (valor: **0**) como se describe en Habilitar reglas de reducción [de superficie de ataque](enable-attack-surface-reduction.md).
 
@@ -68,7 +68,7 @@ Si se han cumplido todos estos requisitos previos, continúe con el siguiente pa
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>Usar el modo de auditoría para probar la regla
 
-Puedes visitar el sitio web de pruebas de Windows Defender en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que las reglas de reducción de superficie de ataques suelen funcionar para escenarios y procesos preconfigurados en un dispositivo, o puedes usar el modo de auditoría, que permite reglas solo para informes.
+Puedes visitar el sitio web de prueba de Windows Defender en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que las reglas de reducción de superficie de ataques suelen funcionar para escenarios y procesos preconfigurados en un dispositivo, o puedes usar el modo de auditoría, que permite reglas solo para informes.
 
 Sigue estas instrucciones en [Use the demo tool to see how attack surface reduction rules work](evaluate-attack-surface-reduction.md) to test the specific rule you're encountering problems with.
 
@@ -100,13 +100,13 @@ Para agregar una exclusión, consulta [Personalizar reducción de superficie de 
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Informar de un falso positivo o falso negativo
 
-Use el [Windows Defender de](https://www.microsoft.com/wdsi/filesubmission) envío basado en web de Inteligencia de seguridad para informar de un falso negativo o falso positivo para la protección de red. Con una suscripción a Windows E5, también puedes [proporcionar un vínculo a cualquier alerta asociada.](alerts-queue.md)
+Use el [Windows Defender de](https://www.microsoft.com/wdsi/filesubmission) envío basado en web de Inteligencia de seguridad para informar de un falso negativo o falso positivo para la protección de red. Con una Windows de E5, también puede proporcionar [un vínculo a cualquier alerta asociada](alerts-queue.md).
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Recopilar datos de diagnóstico para envíos de archivos
 
 Cuando informes de un problema con las reglas de reducción de superficie de ataque, se te pedirá que recopile y envíe datos de diagnóstico que puedan usar los equipos de soporte técnico e ingeniería de Microsoft para ayudar a solucionar problemas.
 
-1. Abra un símbolo del sistema con privilegios elevados y cambie al Windows Defender:
+1. Abra un símbolo del sistema con privilegios elevados y cambie al Windows Defender directorio:
 
    ```console
    cd "c:\program files\windows defender"

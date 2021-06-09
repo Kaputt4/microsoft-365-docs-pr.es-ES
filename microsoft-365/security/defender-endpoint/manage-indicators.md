@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: fb87f36c5289d622df2615046c5bb2fd8fad9543
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470898"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842247"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -68,7 +68,7 @@ Puede crear un indicador para:
 
 
 > [!NOTE]
-> Hay un límite de 15.000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para Antivirus de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten en Antivirus de Microsoft Defender cuando está en modo pasivo. 
+> Hay un límite de 15.000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten Antivirus de Microsoft Defender cuando está en modo pasivo. 
 
 
 ## <a name="related-topics"></a>Temas relacionados

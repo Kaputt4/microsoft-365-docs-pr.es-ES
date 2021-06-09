@@ -1,7 +1,7 @@
 ---
 title: Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop
-description: Lee más en este artículo sobre la incorporación de dispositivos multi-sesión de Windows 10 en Windows Virtual Desktop
-keywords: Windows Virtual Desktop, WVD, microsoft defender, endpoint, onboard
+description: Lea más en este artículo sobre la incorporación Windows 10 dispositivos de varias sesiones en Windows Escritorio virtual
+keywords: Windows Escritorio virtual, WVD, microsoft defender, punto de conexión, incorporación
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,30 +15,30 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764322"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841851"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop 
 6 minutos para leer 
 
 Se aplica a: 
-- Windows 10 multi-session que se ejecuta en Windows Virtual Desktop (WVD) 
+- Windows 10 varias sesiones que se ejecutan en Windows Virtual Desktop (WVD) 
 
-Microsoft Defender para endpoint admite la supervisión de sesiones de VDI y Windows Virtual Desktop. Según las necesidades de la organización, es posible que deba implementar sesiones de VDI o Windows Virtual Desktop para ayudar a los empleados a tener acceso a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para endpoint, puede supervisar estas máquinas virtuales en busca de actividad anómala.
+Microsoft Defender para endpoint admite la supervisión de VDI y Windows sesiones de Escritorio virtual. Según las necesidades de la organización, es posible que deba implementar sesiones de VDI o Windows Virtual Desktop para ayudar a los empleados a tener acceso a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para endpoint, puede supervisar estas máquinas virtuales en busca de actividad anómala.
 
  ## <a name="before-you-begin"></a>Antes de empezar
-Familiarícese con las [consideraciones para VDI no persistente.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Aunque [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) no proporciona opciones de no persistencia, sí proporciona formas de usar una imagen dorada de Windows que se puede usar para aprovisionar nuevos hosts y volver a implementar máquinas. Esto aumenta la inestabilidad en el entorno y, por lo tanto, afecta a las entradas que se crean y mantienen en el portal de Microsoft Defender para endpoints, lo que potencialmente reduce la visibilidad de los analistas de seguridad.
+Familiarícese con las [consideraciones para VDI no persistente.](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Aunque [Windows Virtual Desktop](/azure/virtual-desktop/overview) no proporciona opciones de no persistencia, sí proporciona formas de usar una imagen de Windows dorada que se puede usar para aprovisionar nuevos hosts y volver a implementar máquinas. Esto aumenta la inestabilidad en el entorno y, por lo tanto, afecta a las entradas que se crean y mantienen en el portal de Microsoft Defender para endpoints, lo que potencialmente reduce la visibilidad de los analistas de seguridad.
 
 > [!NOTE]
 > Según la elección del método de incorporación, los dispositivos pueden aparecer en el portal de Microsoft Defender para endpoints como: 
 > - Entrada única para cada escritorio virtual 
 > - Varias entradas para cada escritorio virtual 
 
-Microsoft recomienda incorporar Windows Virtual Desktop como una sola entrada por escritorio virtual. Esto garantiza que la experiencia de investigación en el portal de puntos de conexión de Microsoft Defender se encuentra en el contexto de un dispositivo basado en el nombre del equipo. Las organizaciones que suelen eliminar y volver a implementar hosts WVD deben considerar encarecidamente el uso de este método, ya que impide que se cree varios objetos para la misma máquina en el portal de Microsoft Defender para endpoint. Esto puede provocar confusión al investigar incidentes. Para entornos de prueba o no volátiles, puede optar por elegir de forma diferente. 
+Microsoft recomienda la incorporación Windows Escritorio virtual como una única entrada por escritorio virtual. Esto garantiza que la experiencia de investigación en el portal de puntos de conexión de Microsoft Defender se encuentra en el contexto de un dispositivo basado en el nombre del equipo. Las organizaciones que suelen eliminar y volver a implementar hosts WVD deben considerar encarecidamente el uso de este método, ya que impide que se cree varios objetos para la misma máquina en el portal de Microsoft Defender para endpoint. Esto puede provocar confusión al investigar incidentes. Para entornos de prueba o no volátiles, puede optar por elegir de forma diferente. 
 
 Microsoft recomienda agregar el script de incorporación de Microsoft Defender para endpoint a la imagen dorada de WVD. De esta forma, puede asegurarse de que este script de incorporación se ejecute inmediatamente al primer arranque. Se ejecuta como un script de inicio al inicio en todas las máquinas WVD aprovisionadas desde la imagen dorada de WVD. Sin embargo, si usa una de las imágenes de la galería sin modificaciones, coloque el script en una ubicación compartida y llámelo desde una directiva de grupo local o de dominio. 
 
@@ -61,16 +61,16 @@ Siga las instrucciones de una sola entrada para cada dispositivo.
 #### <a name="scenario-2-using-domain-group-policy"></a>*Escenario 2: Uso de la directiva de grupo de dominio*
 Este escenario usa un script ubicado centralmente y lo ejecuta mediante una directiva de grupo basada en dominio. También puede colocar el script en la imagen dorada y ejecutarlo de la misma manera.
 
-**Descargue el archivo WindowsDefenderATPOnboardingPackage.zip desde el Centro Windows Defender seguridad**
+**Descargue el WindowsDefenderATPOnboardingPackage.zip desde el Centro de seguridad Windows Defender de seguridad**
 
-1. Abra el archivo .zip del paquete de configuración VDI (WindowsDefenderATPOnboardingPackage.zip)  
+1. Abra el archivo de configuración .zip VDI (WindowsDefenderATPOnboardingPackage.zip)  
 
-    1. En el panel de navegación del Centro de seguridad de Microsoft Defender, seleccione **Configuración**  >  **incorporación**. 
-    1. Selecciona Windows 10 como sistema operativo. 
+    1. En el panel Centro de seguridad de Microsoft Defender navegación, **seleccione Configuración**  >  **Incorporación**. 
+    1. Seleccione Windows 10 como sistema operativo. 
     1. En el **campo Método de** implementación, seleccione Scripts de incorporación de VDI para puntos de conexión no persistentes. 
-    1. Haga **clic en Descargar paquete** y guarde el archivo .zip. 
+    1. Haga **clic en Descargar paquete** y guarde el .zip archivo. 
 
-2. Extrae el contenido del archivo .zip en una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada **OptionalParamsPolicy** y los archivos **WindowsDefenderATPOnboardingScript.cmd** **yOnboard-NonPersistentMachine.ps1**.
+2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada **OptionalParamsPolicy** y los archivos **WindowsDefenderATPOnboardingScript.cmd** **yOnboard-NonPersistentMachine.ps1**.
 
 **Usar la consola de administración de directivas de grupo para ejecutar el script cuando se inicia la máquina virtual**
 
@@ -78,7 +78,7 @@ Este escenario usa un script ubicado centralmente y lo ejecuta mediante una dire
 
 2. En el Editor de administración de directivas de grupo, vaya a **Configuración** del equipo Preferencias \>  \> **configuración Configuración del panel de control .** 
 
-3. Haz clic con el **botón secundario en Tareas programadas,** haz clic en **Nuevo** y, a continuación, haz clic en **Tarea inmediata** (al menos Windows 7). 
+3. Haga clic con el botón secundario en **Tareas programadas,** haga clic en **Nuevo** y, a continuación, haga clic en Tarea **inmediata** (al menos Windows 7). 
 
 4. En la ventana Tarea que se abre, vaya a la **pestaña General.** En **Opciones de seguridad,** **haga clic en Cambiar usuario o grupo** y escriba SISTEMA. Haga **clic en Comprobar nombres** y, a continuación, en Aceptar. NT AUTHORITY\SYSTEM aparece como la cuenta de usuario en la que se ejecutará la tarea. 
 
@@ -98,10 +98,10 @@ Este escenario usa un script ubicado centralmente y lo ejecuta mediante una dire
 
 Si planea administrar las máquinas con una herramienta de administración, puede incorporar dispositivos con Microsoft Endpoint Configuration Manager.
 
-Para obtener más información, [consulta Incorporación de dispositivos Windows 10 con Configuration Manager.](configure-endpoints-sccm.md)
+Para obtener más información, vea [Onboard Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> Si tiene previsto usar reglas de reducción de superficie de [ataque,](attack-surface-reduction.md)tenga en cuenta que no se debe usar la regla " Bloquear creaciones de procesos que se originen a partir de comandos[PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)y WMI", ya que esa regla es incompatible con la administración a través de Microsoft Endpoint Configuration Manager. La regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente. 
+> Si tienes previsto usar reglas de reducción de superficie de [ataque,](attack-surface-reduction.md)ten en cuenta que no se debe usar la regla " Bloquear creaciones de proceso que se originen a partir de comandos[PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)y WMI", ya que dicha regla es incompatible con la administración a través de Microsoft Endpoint Configuration Manager. La regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente. 
 
 > [!TIP]
 > Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que el dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado. 
@@ -144,7 +144,7 @@ Además, si usa perfiles de usuario FSlogix, se recomienda excluir los siguiente
 
 `%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
 
-#### <a name="licensing-requirements"></a>Requisitos de licencia 
+#### <a name="licensing-requirements"></a>Requisitos de licencias 
 
-Nota sobre las licencias: al usar windows 10 Enterprise multi-sesión, según sus requisitos, puede elegir que todos los usuarios tengan licencia a través de Microsoft Defender para Endpoint (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o tener la vm con licencia a través de Azure Defender.
+Nota sobre las licencias Windows 10 Enterprise: cuando se usa una sesión múltiple, según sus requisitos, puede elegir que todos los usuarios tengan licencia a través de Microsoft Defender para Endpoint (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o que la máquina virtual tenga licencia a través de Azure Defender.
 Los requisitos de licencia para Microsoft Defender para el punto de conexión se pueden encontrar en: [Requisitos de licencias](minimum-requirements.md#licensing-requirements).

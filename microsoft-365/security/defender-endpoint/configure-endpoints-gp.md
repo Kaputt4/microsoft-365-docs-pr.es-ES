@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 81a3b41fb8e38a224a030571093b2145d2efb3d4
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593434"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841839"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación Windows 10 dispositivos con directiva de grupo 
 
@@ -62,7 +62,7 @@ Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 
 2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada *OptionalParamsPolicy* y el archivo *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Abra la [Consola de administración de directivas de](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) grupo (GPMC), haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
+3. Abra la [Consola de administración de directivas de](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) grupo (GPMC), haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
 
 4. En el **Editor de administración de directivas de** grupo, vaya a Configuración **del** equipo , luego Preferencias **y,** a continuación, **Configuración del panel de control.**
 
@@ -97,7 +97,7 @@ Puede usar la directiva de grupo (GP) para configurar opciones, como las opcione
 
     - Copiar _AtpConfiguration.adml_ en _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions \\ en-US_
 
-2.  Abra la [Consola de administración de directivas de grupo,](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)haga clic con el botón secundario en el GPO que desea configurar y haga clic en **Editar**.
+2.  Abra la [Consola de administración de directivas de grupo,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)haga clic con el botón secundario en el GPO que desea configurar y haga clic en **Editar**.
 
 3.  En el **Editor de administración de directivas de** grupo, vaya a Configuración del **equipo**.
 
@@ -148,7 +148,7 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 Directiva | Configuración 
 :---|:---
-Desactivar la protección en tiempo real|Deshabilitada
+Desactivar la protección en tiempo real|Deshabilitado
 Activar la supervisión del comportamiento|Habilitado
 Examinar todos los archivos y datos adjuntos descargados|Habilitado
 Supervisar la actividad de archivos y programas en el equipo|Habilitado
@@ -208,7 +208,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Abra la [Consola de administración de directivas de](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) grupo (GPMC), haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
+3. Abra la [Consola de administración de directivas de](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) grupo (GPMC), haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
 
 4. En el **Editor de administración de directivas de** grupo, vaya a Configuración del **equipo, preferencias** **y,** a continuación, **configuración del panel de control.**
 

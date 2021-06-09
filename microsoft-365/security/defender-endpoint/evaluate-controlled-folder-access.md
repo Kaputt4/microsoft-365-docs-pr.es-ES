@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 15ea4696052a6c987314e3c7b0dd282a49ed4df8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569910"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842919"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Evaluar acceso controlado a carpetas
 
@@ -31,7 +31,7 @@ ms.locfileid: "51569910"
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[El acceso controlado](controlled-folders.md) a carpetas es una característica que ayuda a proteger los documentos y archivos contra modificaciones de aplicaciones sospechosas o malintencionadas. El acceso controlado a carpetas es compatible con clientes de Windows Server 2019 y Windows 10.
+[El acceso controlado](controlled-folders.md) a carpetas es una característica que ayuda a proteger los documentos y archivos contra modificaciones de aplicaciones sospechosas o malintencionadas. El acceso controlado a carpetas se admite Windows Server 2019 y Windows 10 cliente.
 
 Es especialmente útil para ayudar a proteger contra [ransomware](https://www.microsoft.com/wdsi/threats/ransomware) que intenta cifrar los archivos y retenerlos como rehenes.
 
@@ -52,11 +52,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > Si quieres auditar completamente cómo funcionará el acceso controlado a carpetas en tu organización, tendrás que usar una herramienta de administración para implementar esta configuración en dispositivos de tus redes.
-También puedes usar la directiva de grupo, Intune, la administración de dispositivos móviles (MDM) o Microsoft Endpoint Manager para configurar e implementar la configuración, como se describe en el tema principal acceso controlado a [carpetas](controlled-folders.md).
+También puedes usar la directiva de grupo, Intune, la administración de dispositivos móviles (MDM) o Microsoft Endpoint Manager para configurar e implementar la configuración, como se describe en el tema principal de acceso controlado a [carpetas](controlled-folders.md).
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Revisar eventos de acceso controlado a carpetas en el Visor de eventos de Windows
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Revisar los eventos de acceso controlado a carpetas Windows visor de eventos
 
-Los siguientes eventos de acceso controlado a carpetas aparecen en el Visor de eventos de Windows en la carpeta Microsoft/Windows/Windows Defender/Operational.
+Los siguientes eventos de acceso controlado a carpetas aparecen en Windows visor de eventos en la carpeta Microsoft/Windows/Windows Defender/Operational.
 
 Id. de evento | Descripción
 -|-
@@ -65,7 +65,7 @@ Id. de evento | Descripción
  1123 | Evento de acceso controlado a carpetas bloqueadas
 
 > [!TIP]
-> Puedes configurar una suscripción de [reenvío de eventos de Windows](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) para recopilar los registros de forma centralizada. 
+> Puede configurar una suscripción Windows [de reenvío](/windows/win32/wec/setting-up-a-source-initiated-subscription) de eventos para recopilar los registros de forma centralizada. 
 
 ## <a name="customize-protected-folders-and-apps"></a>Personalizar aplicaciones y carpetas protegidas
 

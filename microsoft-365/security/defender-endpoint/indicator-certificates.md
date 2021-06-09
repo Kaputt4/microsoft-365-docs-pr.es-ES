@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf611e38bc781c2302f70f6491bb827410235b0
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164686"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845459"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Crear indicadores basados en certificados
 
@@ -46,9 +46,9 @@ Puede crear indicadores para certificados. Algunos casos de uso comunes incluyen
 
 Es importante comprender los siguientes requisitos antes de crear indicadores para certificados:
 
-- Esta característica está disponible si su organización usa Windows Defender antivirus y la protección basada en la nube está habilitada. Para obtener más información, vea [Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Esta característica está disponible si su organización usa Antivirus de Windows Defender y la protección basada en la nube está habilitada. Para obtener más información, vea [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - La versión del cliente Antimalware debe ser 4.18.1901.x o posterior.
-- Compatible con máquinas en Windows 10, versión 1703 o posterior, Windows Server 2016 y 2019.
+- Compatible con máquinas de Windows 10, versión 1703 o posterior, Windows 2016 y 2019.
 - Las definiciones de protección contra virus y amenazas deben estar actualizadas.
 - Actualmente, esta característica admite la introducción de . CER o . Extensiones de archivo PEM.
 
@@ -62,7 +62,7 @@ Es importante comprender los siguientes requisitos antes de crear indicadores pa
 >[!IMPORTANT]
 > Puede tardar hasta 3 horas en crear y quitar un certificado IoC.
 
-1. En el panel de navegación, seleccione  >  **Indicadores de configuración**.  
+1. En el panel de navegación, **seleccione Configuración**  >  **Indicadores**.  
 
 2. Seleccione la **pestaña** Certificado.
 
@@ -77,6 +77,6 @@ Es importante comprender los siguientes requisitos antes de crear indicadores pa
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Crear indicadores](manage-indicators.md)
-- [Crear indicadores para archivos](indicator-file.md)
-- [Crear indicadores para direcciones IP y direcciones URL/dominios](indicator-ip-domain.md)
+- [Crear indicadores para los archivos](indicator-file.md)
+- [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)
 - [Administrar indicadores](indicator-manage.md)

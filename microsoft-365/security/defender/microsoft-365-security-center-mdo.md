@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365
-description: Obtenga información sobre cambios del Centro de seguridad y cumplimiento de Office 365 y del Centro de seguridad de Microsoft 365.
-keywords: Microsoft 365 seguridad, Introducción al centro de seguridad de Microsoft 365, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, panel único de cristal, nuevo portal de seguridad, nuevo portal de seguridad de defender
+title: Microsoft Defender para Office 365 en Microsoft 365 Defender
+description: Obtenga información sobre los cambios desde el centro Office 365 seguridad y cumplimiento a Microsoft 365 Defender.
+keywords: Microsoft 365 seguridad, Introducción a Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, panel único de cristal, nuevo portal de seguridad, nuevo portal de seguridad de defender
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,14 +17,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: ec5d22caa52ffaa061637cb8c510a0efaf566b6a
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 95471f444117e1a44abe8de76c95cda52d5f7930
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782902"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842608"
 ---
-# <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365
+# <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender para Office 365 en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "52782902"
 
 ## <a name="quick-reference"></a>Referencia rápida
 
-En la imagen y en la tabla siguiente se enumeran los cambios en la navegación entre el Centro de Office 365 seguridad & cumplimiento y el centro Microsoft 365 seguridad.
+La imagen y la tabla siguiente enumeran los cambios en la navegación entre el Centro de Office 365 seguridad & cumplimiento y Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Imagen de lo que se movió a dónde](../../media/mdo-m3d-security-center.png)
@@ -44,7 +44,7 @@ En la imagen y en la tabla siguiente se enumeran los cambios en la navegación e
 
 ****
 
-|Centro de seguridad y cumplimiento de Office 365|Centro de seguridad de Microsoft 365|Centro de cumplimiento de Microsoft 365|Centro de administración de Exchange|
+|Centro de seguridad y cumplimiento de Office 365|Microsoft 365 Defender|Centro de cumplimiento de Microsoft 365|Centro de administración de Exchange|
 |---|---|---|---|
 |Alertas|Colaboración y correos electrónicos|||
 |Clasificación||Vea [Microsoft 365 de cumplimiento](https://compliance.microsoft.com/homepage)||
@@ -59,11 +59,11 @@ En la imagen y en la tabla siguiente se enumeran los cambios en la navegación e
 |Garantía de servicio|Configuración|||
 |
 
-El [Centro mejorado de seguridad de Microsoft 365](./overview-security-center.md) en <https://security.microsoft.com> combina funciones de seguridad de portales ya existentes de seguridad de Microsoft, incluidos el Centro de seguridad de Microsoft Defender y el Centro de seguridad y cumplimiento de Office 365. Este centro mejorado ayuda a los equipos de seguridad a proteger a su organización ante las amenazas de manera más eficaz y eficiente.
+[Microsoft 365 Defender](./overview-security-center.md) combina las capacidades de seguridad de los portales de seguridad de Microsoft existentes, incluidos Centro de seguridad de Microsoft Defender y el Centro de Office 365 <https://security.microsoft.com> seguridad & cumplimiento. Este centro mejorado ayuda a los equipos de seguridad a proteger a su organización ante las amenazas de manera más eficaz y eficiente.
 
-Si conoce el portal de Seguridad y cumplimiento de Office 365 (protection.office.com), este artículo le resultará útil, ya que describe algunos de los cambios y mejoras que se han realizado en el Centro de seguridad de Microsoft 365.
+Si está familiarizado con el portal de seguridad y cumplimiento de Office 365 (protection.office.com), en este artículo se describen algunos de los cambios y mejoras de Microsoft 365 Defender.
 
-Más información sobre las ventajas: [Información general sobre el Centro de Seguridad de Microsoft 365](overview-security-center.md)
+Obtenga más información sobre las ventajas: [Información general sobre Microsoft 365 Defender](overview-security-center.md)
 
 Si está buscando elementos relacionados con el cumplimiento, visite el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage).
 
@@ -79,7 +79,7 @@ Esta tabla es una referencia rápida de ámbitos relacionados con el correo elec
 |---|---|
 |[Página de la entidad de correo electrónico](../office-365-security/mdo-email-entity-page.md)|Esta página **unifica** la información sobre correos electrónicos que se ido publicando en diferentes páginas o vistas en el pasado. Se ha *centralizado* la investigación de correos electrónicos para encontrar amenazas y tendencias. La información del encabezado y la vista previa del correo electrónico son accesibles desde la misma página de correo electrónico, junto con más información útil relacionada con correos electrónicos. Igualmente, el estado de detonación de direcciones URL o archivos adjuntos malintencionados se puede encontrar en una pestaña en la misma página. La página de entidad de correo electrónico ofrece a los administradores y equipos de operaciones de seguridad los recursos necesarios para permitirles entender con rapidez una amenaza de correo electrónico y su estado, para que puedan decidir de inmediato qué acciones tomar.|
 |[Investigación](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center)|Aúna capacidades de AIR en [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) y [Microsoft Defender para punto de conexión](../defender-endpoint/automated-investigations.md). Con estas actualizaciones y mejoras, su equipo de operaciones de seguridad podrá ver detalles sobre investigaciones automatizadas y acciones de corrección en todos sus correos electrónicos, contenido de colaboración, cuentas de usuario y dispositivos, todo en un mismo sitio.|
-|[Vista de alertas](../../compliance/alert-policies.md)|El panel flotante **Ver alertas** en el Centro de seguridad y cumplimiento de Office incluye ahora vínculos al Centro de seguridad de Microsoft 365. Haga clic en el vínculo de **Abrir página de alertas** y se abrirá el Centro de seguridad de Microsoft 365. Puede acceder la página **Ver alertas** si hace clic en cualquier alerta de Office 365 en la cola de Alertas.|
+|[Vista de alertas](../../compliance/alert-policies.md)|El panel desplegable Ver **alertas** en el centro de seguridad y cumplimiento Office ahora incluye vínculos a Microsoft 365 Defender. Haga clic en el **vínculo Abrir página de** alerta y se Microsoft 365 Defender. Puede acceder la página **Ver alertas** si hace clic en cualquier alerta de Office 365 en la cola de Alertas.|
 |[Aprendizaje de simulación de ataque](../office-365-security/attack-simulation-training-insights.md)|Use el aprendizaje de simulación de ataque para ejecutar escenarios realistas de ataque en su organización. Estos ataques simulados pueden ayudar a formar a su personal antes de que un ataque real impacte a su organización. El aprendizaje de simulación de ataque incluye más opciones, informes mejorados y flujos de aprendizaje mejorados que contribuyen a que resulte más sencillo llevar a cabo y administrar la simulación de ataque y los escenarios de aprendizaje.|
 |
 
@@ -98,9 +98,9 @@ Asimismo, eche un vistazo a la sección **Información relacionada** al final de
 > El Microsoft 365 security portal ( <https://security.microsoft.com> ) combina características de seguridad en y <https://securitycenter.windows.com> <https://protection.office.com> . Sin embargo, lo que vea dependerá de su suscripción. Por ejemplo, si solo tiene el plan 1 o 2 de Microsoft Defender para Office 365 como suscripción independiente, no verá funciones de Seguridad para puntos de conexión y los clientes del plan 1 de Defender para Office no verán elementos como el análisis de amenazas.
 
 > [!TIP]
-> Todas Exchange Online Protection (EOP) se incluirán en el centro de seguridad de Microsoft 365, ya que EOP es un elemento principal de Defender para Office 365.
+> Todas Exchange Online Protection (EOP) se incluirán en Microsoft 365 Defender, ya que EOP es un elemento principal de Defender para Office 365.
 
-## <a name="microsoft-365-security-center-home-page"></a>Página principal del Centro de seguridad de Microsoft 365
+## <a name="microsoft-365-defender-home-page"></a>Microsoft 365 Página principal de Defender
 
 La página principal del portal muestra:
 
@@ -148,7 +148,7 @@ Obtenga inteligencia sobre amenazas de investigadores expertos de Seguridad de M
 - Detecciones y mitigaciones relacionadas con correos electrónicos de Microsoft Defender para Office 365. Estos se suman a los datos del punto de conexión ya disponibles de Microsoft Defender para punto de conexión.
 - Vista de incidentes relacionados con las amenazas.
 - Experiencia mejorada para identificar con rapidez y usar información accionable en los informes.
-Puede acceder al análisis de amenazas desde la barra de navegación en la esquina superior izquierda del Centro de seguridad de Microsoft 365 o desde una tarjeta de panel dedicado que muestra las principales amenazas de su organización.
+Puedes acceder al análisis de amenazas desde la barra de navegación superior izquierda de Microsoft 365 Defender o desde una tarjeta de panel dedicada que muestra las principales amenazas de la organización.
 
 Obtenga más información sobre cómo [Supervisar amenazas emergentes y responder a las mismas con el análisis de amenazas](./threat-analytics.md)
 
@@ -156,16 +156,16 @@ Obtenga más información sobre cómo [Supervisar amenazas emergentes y responde
 
 Supervise e investigue amenazas para los correos electrónicos, campañas de supervisión, etc., de sus usuarios. Si ya ha usado el Centro de seguridad y cumplimiento de Office 365, esto le resultará familiar.
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="El menú de inicio rápido para correos electrónicos y colaboración (o MSDO) en el lado izquierdo del Centro de seguridad de Microsoft 365":::.
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="Menú de inicio rápido para Correo & Collab (o MSDO), en el lado izquierdo de Microsoft 365 Defender.":::
 
 ### <a name="access-and-reports"></a>Accesos e informes
 
 Ver informes, cambiar la configuración y modificar roles de usuario.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="El menú de inicio rápido de los permisos y creación de informes del Centro de seguridad de Microsoft 365, en el lado izquierdo del Centro de seguridad":::.
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Menú de inicio rápido para Microsoft 365 permisos e informes de Defender, en el lado izquierdo del centro de seguridad.":::
 
 > [!NOTE]
-> Para los usuarios de Defender para  Office 365, ahora puede administrar y girar claves de correo identificado (DKIM) de DomainKeys a través del centro de seguridad de Microsoft 365: , o navegar a Directivas & directivas de amenazas <https://security.microsoft.com/threatpolicy>  \>  \> **DKIM**.
+> Para defender para Office 365 usuarios, ahora  puede administrar y girar claves de correo identificado (DKIM) de DomainKeys a través de Microsoft 365 Defender: , o navegar a Directivas & directivas de amenazas <https://security.microsoft.com/threatpolicy>  \>  \> **DKIM**.
 
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Ejemplo de búsqueda avanzada de amenazas para Microsoft Defender para Office 365
 
@@ -213,7 +213,7 @@ Los datos de esta consulta aparecerán en el panel de resultados bajo la propia 
 
 ## <a name="related-information"></a>Información relacionada
 
-- [Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365](microsoft-365-security-center-mdo.md)
+- [Microsoft Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [El centro de actividades](./m365d-action-center.md)
 - [Alertas de colaboración y correos electrónicos](../../compliance/alert-policies.md#default-alert-policies)
 - [Buscar amenazas entre dispositivos, correos electrónicos, aplicaciones e identidades](./advanced-hunting-query-emails-devices.md)

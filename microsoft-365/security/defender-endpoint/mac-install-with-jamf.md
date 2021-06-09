@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d102635a284ec5c802e352f097d1632e2f20e166
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b41c5ec827e110e0101c50ce7babeb6442096edb
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929066"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842895"
 ---
 # <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Implementación de Microsoft Defender para endpoint en macOS con Jamf Pro
 
@@ -36,10 +36,10 @@ ms.locfileid: "51929066"
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Aprende a implementar Microsoft Defender para Endpoint en macOS con Jamf Pro.
+Obtenga información sobre cómo implementar Microsoft Defender para Endpoint en macOS con Jamf Pro.
 
 > [!NOTE]
-> Si usa macOS Catalina (10.15.4) o versiones más recientes de macOS, consulte [New configuration profiles for macOS Catalina](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-sysext-policies)y las versiones más recientes de macOS .
+> Si usa macOS Catalina (10.15.4) o versiones más recientes de macOS, consulte [New configuration profiles for macOS Catalina](/microsoft-365/security/defender-endpoint/mac-sysext-policies)y las versiones más recientes de macOS .
 
 Este es un proceso de varios pasos. Deberá completar todos los pasos siguientes:
 

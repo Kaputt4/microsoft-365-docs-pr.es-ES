@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893502"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845587"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Aplicaciones conectadas en Microsoft Defender para endpoint
 
@@ -37,9 +37,9 @@ ms.locfileid: "51893502"
 
 Las aplicaciones conectadas se integran con la plataforma Defender for Endpoint mediante API. 
 
-Las aplicaciones usan el protocolo estándar OAuth 2.0 para autenticar y proporcionar tokens para su uso con Microsoft Defender para las API de extremo.  Además, las aplicaciones de Azure Active Directory (Azure AD) permiten a los administradores de inquilinos establecer un control explícito sobre las API a las que se puede tener acceso mediante la aplicación correspondiente.
+Las aplicaciones usan el protocolo estándar OAuth 2.0 para autenticar y proporcionar tokens para su uso con Microsoft Defender para las API de extremo.  Además, las Azure Active Directory (Azure AD) permiten a los administradores de inquilinos establecer un control explícito sobre las API a las que se puede tener acceso mediante la aplicación correspondiente.
  
-Deberá seguir estos pasos [para](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) usar las API con la aplicación conectada.
+Deberá seguir estos pasos [para](/microsoft-365/security/defender-endpoint/apis-intro) usar las API con la aplicación conectada.
  
 ## <a name="access-the-connected-application-page"></a>Acceder a la página de la aplicación conectada
 En el menú de navegación izquierdo, seleccione **Partners & API**  >  **conectadas aplicaciones de AAD**.

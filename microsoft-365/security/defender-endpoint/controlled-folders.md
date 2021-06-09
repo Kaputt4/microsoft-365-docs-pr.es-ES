@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b937dd41f0296f2cf4102f41f8ab10bd55e1c35d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200286"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845575"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -36,10 +36,10 @@ ms.locfileid: "51200286"
 
 ## <a name="what-is-controlled-folder-access"></a>¿Qué es el acceso controlado a carpetas?
 
-El acceso controlado a carpetas ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas protege los datos comprobando las aplicaciones en una lista de aplicaciones conocidas y de confianza. Compatible con clientes de Windows Server 2019 y Windows 10, el acceso controlado a carpetas puede estar activado mediante la aplicación de seguridad de Windows, Microsoft Endpoint Configuration Manager o Intune (para dispositivos administrados). 
+El acceso controlado a carpetas ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas protege los datos comprobando las aplicaciones en una lista de aplicaciones conocidas y de confianza. Compatible con clientes de Windows Server 2019 y Windows 10, el acceso controlado a carpetas se puede desactivar con la aplicación Seguridad de Windows, Microsoft Endpoint Configuration Manager o Intune (para dispositivos administrados). 
 
 > [!NOTE]
-> Los motores de scripting no son de confianza y no se les puede permitir el acceso a carpetas protegidas controladas.  Por ejemplo, PowerShell no es de confianza mediante el acceso controlado a carpetas, incluso si permite con indicadores de certificado [e archivo](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates). 
+> Los motores de scripting no son de confianza y no se les puede permitir el acceso a carpetas protegidas controladas.  Por ejemplo, PowerShell no es de confianza mediante el acceso controlado a carpetas, incluso si permite con indicadores de certificado [e archivo](/microsoft-365/security/defender-endpoint/indicator-certificates). 
 
 El acceso controlado a carpetas funciona mejor con [Microsoft Defender para](microsoft-defender-endpoint.md)endpoint, lo que le ofrece informes detallados sobre los eventos y bloques de acceso controlado a carpetas como parte de los escenarios habituales de investigación de [alertas.](investigate-alerts.md)
 
@@ -65,12 +65,12 @@ Las [carpetas protegidas](#review-controlled-folder-access-events-in-windows-eve
 Puede usar el [modo de auditoría para](audit-windows-defender.md) evaluar cómo el acceso controlado a carpetas afectaría a su organización si estuviera habilitado. También puede visitar el sitio web Windows Defender prueba en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que la característica funciona y ver cómo funciona.
 
 El acceso controlado a carpetas se admite en las siguientes versiones de Windows:
-- [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) y versiones posteriores
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) y versiones posteriores
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Las carpetas del sistema Windows están protegidas de forma predeterminada
+## <a name="windows-system-folders-are-protected-by-default"></a>Windows carpetas del sistema están protegidas de forma predeterminada
 
-Las carpetas del sistema windows están protegidas de forma predeterminada, junto con otras carpetas: 
+Windows carpetas del sistema están protegidas de forma predeterminada, junto con otras carpetas: 
 
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
@@ -83,17 +83,17 @@ Las carpetas del sistema windows están protegidas de forma predeterminada, junt
 - `c:\Users\<username>\Favorites`
 
 > [!NOTE]
-> Puedes configurar carpetas adicionales como protegidas, pero no puedes quitar las carpetas del sistema windows que están protegidas de forma predeterminada.
+> Puede configurar carpetas adicionales como protegidas, pero no puede quitar las Windows del sistema que están protegidas de forma predeterminada.
 
 ## <a name="requirements-for-controlled-folder-access"></a>Requisitos para el acceso controlado a carpetas
 
-El acceso controlado a carpetas requiere habilitar la protección [en tiempo real de Antivirus de Microsoft Defender.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+El acceso controlado a carpetas [requiere Antivirus de Microsoft Defender protección en tiempo real.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>Revisar eventos de acceso controlado a carpetas en el Centro de seguridad de Microsoft Defender
 
 Defender for Endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de [investigación de alertas.](investigate-alerts.md)
 
-Puede consultar datos de punto de conexión de Microsoft Defender mediante [búsqueda avanzada](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). Si usa el modo [de auditoría,](audit-windows-defender.md)puede usar la búsqueda avanzada para ver cómo la configuración de acceso controlado a carpetas afectaría al entorno si estuvieran habilitadas. [](advanced-hunting-overview.md)
+Puede consultar datos de punto de conexión de Microsoft Defender mediante [búsqueda avanzada](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). Si usa el modo [de auditoría,](audit-windows-defender.md)puede usar la búsqueda avanzada para ver cómo la configuración de acceso controlado a carpetas afectaría al entorno si estuvieran habilitadas. [](advanced-hunting-overview.md)
 
 Consulta de ejemplo:
 
@@ -102,12 +102,12 @@ DeviceEvents
 | where ActionType in ('ControlledFolderAccessViolationAudited','ControlledFolderAccessViolationBlocked')
 ```
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Revisar eventos de acceso controlado a carpetas en el Visor de eventos de Windows
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Revisar los eventos de acceso controlado a carpetas Windows visor de eventos
 
-Puedes revisar el registro de eventos de Windows para ver los eventos que se crean cuando el acceso controlado a carpetas bloquea (o audita) una aplicación:
+Puedes revisar el registro Windows eventos para ver los eventos que se crean cuando el acceso controlado a carpetas bloquea (o audita) una aplicación:You can review the Windows event log to see events that are created when controlled folder access blocks (or audits) an app:
 
 1. Descargue el [paquete de evaluación](https://aka.ms/mp7z2w) y extraiga el archivo *cfa-events.xml* a una ubicación de fácil acceso en el dispositivo.
-2. Escribe **Visor de eventos** en el menú Inicio para abrir el Visor de eventos de Windows.
+2. Escriba **Visor de eventos** en el menú Inicio para abrir el Windows de eventos.
 3. En el panel izquierdo, en **Acciones**, seleccione **Importar vista personalizada...**.
 4. Navegue hasta donde ha extraído *cfa-events.xml* y selecciónelo. Como alternativa, [copie el XML directamente](event-views.md).
 5. Seleccione **Aceptar**.
@@ -124,8 +124,8 @@ En la tabla siguiente se muestran los eventos relacionados con el acceso control
 
 Puedes usar la aplicación Seguridad de Windows para ver la lista de carpetas protegidas por el acceso controlado a carpetas. 
 
-1. En el dispositivo Windows 10, abre la aplicación Seguridad de Windows.
-2. Seleccione **Protección contra & virus**.
+1. En el Windows 10, abre la aplicación Seguridad de Windows usuario.
+2. Seleccione **Protección antivirus y contra amenazas**.
 3. En **Protección contra ransomware,** seleccione **Administrar protección contra ransomware**.
 4. Si el acceso controlado a carpetas está desactivado, tendrás que activarlo. Seleccione **carpetas protegidas**.
 5. Realice uno de los pasos siguientes:
@@ -133,10 +133,10 @@ Puedes usar la aplicación Seguridad de Windows para ver la lista de carpetas pr
    - Para quitar una carpeta, selecciónelo y, a continuación, **seleccione Quitar**. 
 
 > [!NOTE]
-> [Las carpetas del](#windows-system-folders-are-protected-by-default) sistema windows están protegidas de forma predeterminada y no puedes quitarlas de la lista.
+> [Windows las carpetas del](#windows-system-folders-are-protected-by-default) sistema están protegidas de forma predeterminada y no se pueden quitar de la lista.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Evaluar el acceso controlado a carpetas](evaluate-controlled-folder-access.md)
+- [Evaluar acceso controlado a carpetas](evaluate-controlled-folder-access.md)
 - [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
 - [Proteger más carpetas](customize-controlled-folders.md#protect-additional-folders)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6348d688103c51176fbed36c923a660c77a2258d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651277"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842787"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
@@ -163,7 +163,7 @@ ms.locfileid: "52651277"
 
 ## <a name="1010031"></a>101.00.31
 
-- Experiencia de [incorporación de productos mejorada para usuarios de Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
+- Experiencia de [incorporación de productos mejorada para usuarios de Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Las [exclusiones antivirus ahora admiten caracteres comodín](mac-exclusions.md#supported-exclusion-types)
 - Se agregó la capacidad de desencadenar exámenes antivirus desde el menú contextual de macOS. Ahora puedes hacer clic con el botón secundario en un archivo o una carpeta en Finder y seleccionar **Examinar con Microsoft Defender para endpoint**
 - Las degradaciones de productos locales ahora son explícitamente no permitidos por el instalador. Si necesita degradar, desinstale primero la versión existente y vuelva a configurar el dispositivo

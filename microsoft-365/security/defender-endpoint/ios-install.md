@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f2b9a1365a27bb7397aea51dcd5bc9e2631afe2
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 371208433cbb0f65ab5a2808318c03dae6bb6d8b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624710"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842308"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
@@ -44,7 +44,7 @@ En este tema se describe la implementación de Defender for Endpoint en iOS en P
 - Asegúrese de que la inscripción de iOS se realiza para los usuarios. Los usuarios deben tener asignada una licencia de Defender for Endpoint para poder usar Defender para Endpoint en iOS. Consulte [Asignar licencias a los usuarios para](/azure/active-directory/users-groups-roles/licensing-groups-assign) obtener instrucciones sobre cómo asignar licencias.
 
 > [!NOTE]
-> Microsoft Defender para endpoint en iOS ya está disponible en [la Tienda de aplicaciones de Apple](https://aka.ms/mdatpiosappstore).
+> Microsoft Defender para endpoint en iOS está disponible en [la Tienda de aplicaciones de Apple.](https://aka.ms/mdatpiosappstore)
 
 ## <a name="deployment-steps"></a>Pasos para la implementación
 
@@ -78,9 +78,6 @@ Implemente Defender para endpoint en iOS mediante Portal de empresa de Intune.
 
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Incorporación automática del perfil vpn (incorporación simplificada)
 
-> [!NOTE]
-> La incorporación automática del perfil VPN está actualmente en versión preliminar y los pasos mencionados en esta sección pueden modificarse considerablemente antes de su lanzamiento comercial.
-
 Los administradores pueden configurar automáticamente el perfil de VPN. Esto configurará automáticamente el perfil de DEFENDER para ENDPOINT VPN sin que el usuario lo haga durante la incorporación. Tenga en cuenta que la VPN se usa para proporcionar la característica de Protección web. No se trata de una VPN normal y es una VPN local o auto-looping que no toma tráfico fuera del dispositivo.
 
 1. En [el Centro de administración de Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a **Perfiles**  ->  **de configuración de dispositivos** Crear  ->  **perfil**.
@@ -107,7 +104,7 @@ Los administradores pueden configurar automáticamente el perfil de VPN. Esto co
 
     ![Captura de pantalla de una descripción de teléfono inteligente generada automáticamente](images/41627a709700c324849bf7e13510c516.png)
 
-2. Pulsa el icono de la aplicación Defender para endpoint y sigue las instrucciones en pantalla para completar los pasos de incorporación. Los detalles incluyen la aceptación por parte del usuario final de los permisos de iOS requeridos por Defender para endpoint en iOS.
+2. Pulsa el icono de la aplicación Defender para endpoint (MSDefender) y sigue las instrucciones en pantalla para completar los pasos de incorporación. Los detalles incluyen la aceptación por parte del usuario final de los permisos de iOS requeridos por Defender para endpoint en iOS.
 
 3. Tras la incorporación correcta, el dispositivo empezará a aparecer en la lista dispositivos de Centro de seguridad de Microsoft Defender.
 
@@ -133,7 +130,7 @@ Intune te permite configurar la aplicación Defender para iOS a través de una d
 1. En la *página Crear directiva de configuración de aplicaciones,* proporcione la siguiente información:
     - Nombre de la directiva
     - Plataforma: seleccione iOS/iPadOS
-    - Aplicación dirigida: seleccione **ATP de Microsoft Defender** de la lista
+    - Aplicación dirigida: seleccione Punto de **conexión de Microsoft Defender** en la lista
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager Admin Center5](images/ios-deploy-5.png)

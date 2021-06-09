@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892846"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845635"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 
@@ -46,9 +46,9 @@ Es importante conocer los roles específicos que tienen permiso para abrir casos
 Como mínimo, debe tener un rol de administrador de soporte técnico **o** de administrador de soporte técnico.
 
 
-Para obtener más información sobre qué roles tienen permiso, vea [Security Administrator permissions](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). Los roles que incluyen la acción `microsoft.office365.supportTickets/allEntities/allTasks` pueden enviar un caso.
+Para obtener más información sobre qué roles tienen permiso, vea [Security Administrator permissions](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). Los roles que incluyen la acción `microsoft.office365.supportTickets/allEntities/allTasks` pueden enviar un caso.
 
-Para obtener información general sobre los roles de administrador, vea [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
+Para obtener información general sobre los roles de administrador, vea [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
 
 ## <a name="access-the-widget"></a>Acceder al widget
@@ -58,7 +58,7 @@ El acceso al nuevo widget de soporte técnico se puede realizar de dos maneras:
 
     ![Imagen del widget cuando se selecciona el signo de interrogación](images/support-widget.png)
 
-2. Hacer clic en **el botón ¿Necesita ayuda?**  en la parte inferior derecha del Centro de seguridad de Microsoft Defender:
+2. Hacer clic en **el botón ¿Necesita ayuda?**  en la parte inferior derecha de la Centro de seguridad de Microsoft Defender:
 
 
     ![Imagen del botón de ayuda de necesidad](images/need-help.png)
@@ -82,7 +82,7 @@ Para obtener información sobre cómo abrir vales de soporte técnico, póngase 
 > [!Note]
 > Si tiene un contrato de soporte técnico de permier con Microsoft, verá la etiqueta premier en el widget. Si no es así, póngase en contacto con el administrador de cuentas de Microsoft.
 
-### <a name="contact-support"></a>Contactar soporte
+### <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
 Esta opción está disponible haciendo clic en el icono que parece un auricular. A continuación, recibirá la siguiente página para enviar el caso de soporte técnico:
 
 ![Imagen del widget abrir una solicitud de servicio](images/Support4.png)

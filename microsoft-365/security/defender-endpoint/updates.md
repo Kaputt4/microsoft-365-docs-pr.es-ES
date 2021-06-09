@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f5db08e4eb98dd3fe6f7e8a84fb0c49e889fb73f
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 435a77432caa9d7335a22993f85cae69eff6cd38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809340"
+ms.locfileid: "52841767"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Administrar el proceso de implementación gradual para actualizaciones de Microsoft Defender
 
@@ -56,7 +56,7 @@ Se sigue el siguiente modelo de implementación gradual:
 
 1. La primera versión se publica a los suscriptores del canal beta.
 2. Después de la validación, los comentarios y las correcciones, iniciamos el proceso de implementación gradual de una manera limitada y a Los suscriptores del canal de vista previa primero.
-3. A continuación, procedemos a liberar la actualización para el resto de la población global, escalando de 10 a 100 %.
+3. A continuación, procedemos a liberar la actualización al resto de la población global, escalando de 10 a 100 %.
 
 Nuestros ingenieros supervisan continuamente el impacto y escalan los problemas para crear una solución según sea necesario.
 
@@ -79,7 +79,7 @@ Para obtener más información sobre cómo configurar actualizaciones, vea [Crea
 
 Los siguientes canales de actualización están disponibles:
 
-| Nombre del canal  | Description  | Aplicación  |
+| Nombre del canal  | Descripción  | Aplicación  |
 |-|-|-|
 | Canal beta: versión preliminar  | Probar actualizaciones antes que otras  | Los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones mensuales. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba.  |
 | Canal actual (vista previa)  | Obtener actualizaciones del canal actual **antes** durante la versión gradual  | Los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual. Sugerido para entornos de preproducción/validación.  |
@@ -91,7 +91,7 @@ Los siguientes canales de actualización están disponibles:
 
 Puede asignar una máquina a un canal de actualización para definir la cadencia en la que una máquina recibe actualizaciones de definiciones diarias.
   
-| Nombre del canal  | Description  | Aplicación  |
+| Nombre del canal  | Descripción  | Aplicación  |
 |-|-|-|
 | Canal actual (por fases)  | Obtener actualizaciones del canal actual más adelante durante la versión gradual  | Los dispositivos se ofrecerán actualizaciones más adelante durante el ciclo de lanzamiento gradual. Se sugiere aplicar a una parte pequeña y representativa de la población de dispositivos (~10%).  |
 | Canal actual (ancho) | Obtener actualizaciones al final de la versión gradual  | Los dispositivos se ofrecerán actualizaciones después del ciclo de lanzamiento gradual. Ideal para máquinas de centros de datos que solo reciben actualizaciones limitadas. Nota: esta configuración se aplica a todas las actualizaciones de Defender.  |

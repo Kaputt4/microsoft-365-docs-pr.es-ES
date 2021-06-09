@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: fdaa4d7cbc24ae2ebe28d0856b413f4982fe6b01
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929054"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845647"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -38,7 +38,7 @@ ms.locfileid: "51929054"
 
 ## <a name="overview"></a>Información general
 
-El panorama de amenazas actual está saturado por [malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) sin archivos y que vive fuera de la tierra, amenazas altamente polimórficas que mutan más rápido que las soluciones tradicionales pueden mantenerse al día y ataques operados por humanos que se adaptan a lo que los adversarios encuentran en dispositivos en peligro. Las soluciones de seguridad tradicionales no son suficientes para detener estos ataques; necesitas capacidades de respaldo de inteligencia artificial (IA) y aprendizaje de dispositivos (ML), como el bloqueo y la contención del comportamiento, incluidos [en Defender for Endpoint](https://docs.microsoft.com/windows/security). 
+El panorama de amenazas actual está saturado por [malware](/windows/security/threat-protection/intelligence/fileless-threats) sin archivos y que vive fuera de la tierra, amenazas altamente polimórficas que mutan más rápido que las soluciones tradicionales pueden mantenerse al día y ataques operados por humanos que se adaptan a lo que los adversarios encuentran en dispositivos en peligro. Las soluciones de seguridad tradicionales no son suficientes para detener estos ataques; necesitas inteligencia artificial (IA) y capacidades de aprendizaje de dispositivos (ML), como el bloqueo y la contención del comportamiento, incluidos [en Defender for Endpoint](/windows/security). 
 
 Las capacidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. Las características y los componentes de protección de última generación, EDR y Defender para endpoint funcionan juntos en las capacidades de contención y bloqueo de comportamiento. 
 
@@ -46,11 +46,11 @@ Las capacidades de bloqueo y contención del comportamiento pueden ayudar a iden
 
 Las capacidades de bloqueo de comportamiento y contención funcionan con varios componentes y características de Defender para endpoint para detener los ataques inmediatamente e impedir que los ataques progresen.
 
-- [La protección de última](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) generación (que incluye Antivirus de Microsoft Defender) puede detectar amenazas mediante el análisis de comportamientos y detener las amenazas que se han empezado a ejecutar.
+- [La protección de última](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) generación (que incluye Antivirus de Microsoft Defender) puede detectar amenazas mediante el análisis de comportamientos y detener las amenazas que se han empezado a ejecutar.
 
-- [La detección y respuesta de puntos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) de conexión (EDR) recibe señales de seguridad en toda la red, los dispositivos y el comportamiento del kernel. A medida que se detectan las amenazas, se crean alertas. Varias alertas del mismo tipo se agregan a incidentes, lo que facilita al equipo de operaciones de seguridad investigar y responder.
+- [La detección y respuesta de](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) puntos de conexión (EDR) recibe señales de seguridad en toda la red, dispositivos y comportamiento del kernel. A medida que se detectan las amenazas, se crean alertas. Varias alertas del mismo tipo se agregan a incidentes, lo que facilita al equipo de operaciones de seguridad investigar y responder.
 
-- [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) tiene una amplia gama de ópticas entre identidades, correo electrónico, datos y aplicaciones, además de las señales de comportamiento de red, punto de conexión y kernel recibidas a través de EDR. Un componente de [Microsoft 365 Defender,](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)Defender para endpoint procesa y correlaciona estas señales, genera alertas de detección y conecta alertas relacionadas en incidentes.
+- [Defender for Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) tiene una amplia gama de ópticas entre identidades, correo electrónico, datos y aplicaciones, además de las señales de comportamiento de red, punto de conexión y kernel recibidas a través de EDR. Un componente de [Microsoft 365 Defender,](/microsoft-365/security/defender/microsoft-threat-protection)Defender for Endpoint procesa y correlaciona estas señales, genera alertas de detección y conecta alertas relacionadas en incidentes.
 
 Con estas capacidades, se pueden evitar o bloquear más amenazas, incluso si comienzan a ejecutarse. Cada vez que se detecta un comportamiento sospechoso, se contiene la amenaza, se crean alertas y se detienen las amenazas en sus seguimientos. 
 
@@ -60,15 +60,15 @@ En la siguiente imagen se muestra un ejemplo de una alerta que se desencadenó m
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Componentes del bloqueo y la contención del comportamiento
 
-- Reglas de reducción de superficie de **[ataques](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)** controladas por directivas en el cliente Los comportamientos de ataque comunes predefinidos no se pueden ejecutar, de acuerdo con las reglas de reducción de superficie de ataque. Cuando estos comportamientos intentan ejecutarse, se pueden ver en el Centro de seguridad de Microsoft Defender [https://securitycenter.windows.com](https://securitycenter.windows.com) como alertas informativos. (Las reglas de reducción de superficie de ataque no están habilitadas de forma predeterminada; se configuran las directivas en el Centro de seguridad de Microsoft Defender).
+- Reglas de reducción de superficie de **[ataques](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** controladas por directivas en el cliente Los comportamientos de ataque comunes predefinidos no se pueden ejecutar, de acuerdo con las reglas de reducción de superficie de ataque. Cuando estos comportamientos intentan ejecutarse, se pueden ver en el Centro de seguridad de Microsoft Defender [https://securitycenter.windows.com](https://securitycenter.windows.com) como alertas informativos. (Las reglas de reducción de superficie de ataque no están habilitadas de forma predeterminada; se configuran las directivas en el Centro de seguridad de Microsoft Defender).
 
 - **[Bloqueo de comportamiento del cliente](client-behavioral-blocking.md)** Las amenazas en los puntos de conexión se detectan a través del aprendizaje automático y, a continuación, se bloquean y corrigen automáticamente. (El bloqueo de comportamiento del cliente está habilitado de forma predeterminada). 
 
 - **[Bloqueo de bucle de comentarios](feedback-loop-blocking.md)** (también denominado protección rápida) Las detecciones de amenazas se observan a través de la inteligencia de comportamiento. Las amenazas se detienen e impiden que se ejecuten en otros puntos de conexión. (El bloqueo de bucle de comentarios está habilitado de forma predeterminada). 
 
-- **[Detección y respuesta de extremos (EDR) en modo de bloqueo](edr-in-block-mode.md)** Los artefactos o comportamientos malintencionados que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloqueo funciona incluso si Antivirus de Microsoft Defender no es la solución antivirus principal. (EDR en modo de bloqueo no está habilitado de forma predeterminada; se activa en el Centro de seguridad de Microsoft Defender). 
+- **[Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo](edr-in-block-mode.md)** Los artefactos o comportamientos malintencionados que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloqueo funciona incluso si Antivirus de Microsoft Defender no es la solución antivirus principal. (EDR en modo de bloque no está habilitado de forma predeterminada; se activa en el Centro de seguridad de Microsoft Defender). 
 
-Espere más en el área del bloqueo y la contención del comportamiento, ya que Microsoft sigue mejorando las características y capacidades de protección contra amenazas. Para ver lo que se planea y se está implementando ahora, visite la guía básica [de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+Espere más en el área del bloqueo y la contención del comportamiento, ya que Microsoft sigue mejorando las características y capacidades de protección contra amenazas. Para ver lo que se planea y se está implementando ahora, visite el mapa [Microsoft 365 ruta de trabajo](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>Ejemplos de bloqueo de comportamiento y contención en la acción
 
@@ -118,14 +118,14 @@ Unos minutos después de que se bloqueó el artefacto, se bloquearon varias inst
 
 En este ejemplo se muestra que, con las capacidades de contención y bloqueo de comportamiento, las amenazas se detectan, contienen y bloquean automáticamente. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- [Más información sobre Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [Más información sobre Defender for Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 
 - [Configurar las reglas de reducción de superficie de ataque](attack-surface-reduction.md)
 
-- [Habilitar EDR en modo de bloqueo](edr-in-block-mode.md)
+- [Habilitar EDR en modo de bloque](edr-in-block-mode.md)
 
 - [Ver la actividad de amenazas globales reciente](https://www.microsoft.com/wdsi/threats)
 
-- [Obtener información general sobre Microsoft 365 Defender ](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- [Obtener información general sobre Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)

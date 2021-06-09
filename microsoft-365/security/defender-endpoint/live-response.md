@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d5e48f1e4f6bc2cfaa836d90e24f2ce8ba3f2114
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246470"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845335"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -55,11 +55,11 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 Los dispositivos deben ejecutar una de las siguientes versiones de Windows
 
   - **Windows 10**
-    - [Versión 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) o posterior  
-    - [Versión 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) con [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
-    - [Versión 1809 (RS 5)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-    - [Versión 1803 (RS 4)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
-    - [Versión 1709 (RS 3)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+    - [Versión 1909](/windows/whats-new/whats-new-windows-10-version-1909) o posterior  
+    - [Versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) con [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
+    - [Versión 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Versión 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
   - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) posterior 
@@ -172,7 +172,7 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 
 ## <a name="use-live-response-commands"></a>Usar comandos de respuesta en directo
 
-Los comandos que se pueden usar en la consola siguen principios similares a [Windows comandos](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
+Los comandos que se pueden usar en la consola siguen principios similares a [Windows comandos](/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 Los comandos avanzados ofrecen un conjunto más sólido de acciones que te permiten realizar acciones más eficaces, como descargar y cargar un archivo, ejecutar scripts en el dispositivo y realizar acciones de corrección en una entidad.
 
@@ -197,7 +197,7 @@ Para permitir que el equipo de operaciones de seguridad continúe investigando u
 Estos son algunos ejemplos:
 
 
-|Command  |Qué hace  |
+|Comando  |Qué hace  |
 |---------|---------|
 |`getfile "C:\windows\some_file.exe" &`     |Inicia la descarga de un archivo *denominadosome_file.exe* en segundo plano.         |
 |`fg 1234`     |Devuelve una descarga con el identificador de comando *1234* en primer plano.         |

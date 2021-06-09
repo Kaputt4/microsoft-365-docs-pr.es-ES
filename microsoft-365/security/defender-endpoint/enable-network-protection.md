@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a2bc36f9d3a3e9179f07662da8d97f4c55e72a24
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 6afdcc16493839e83771ac831831fdbb121663a1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302057"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841779"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -81,7 +81,7 @@ Habilite la protección de red mediante cualquiera de estos métodos:
 
 ### <a name="mobile-device-management-mdm"></a>Administración de dispositivos móviles (MDM)
 
-Use [el proveedor ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) para habilitar o deshabilitar la protección de red o habilitar el modo de auditoría.
+Use [el proveedor ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) para habilitar o deshabilitar la protección de red o habilitar el modo de auditoría.
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (anteriormente Intune)
 
@@ -127,7 +127,7 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
    * 1=On
    * 2=Auditoría
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Protección de red](network-protection.md)
 * [Evaluar protección de red](evaluate-network-protection.md)

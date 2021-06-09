@@ -6,17 +6,17 @@
       items:
         - name: ¿Qué es Microsoft 365 Defender?
           href: microsoft-365-defender.md
-        - name: Centro de seguridad de Microsoft 365
+        - name: Microsoft 365 Introducción al defensor
           href: overview-security-center.md
         - name: Novedades de Microsoft 365 Defender
           href: whats-new.md
-        - name: Defender para punto de conexión en el Centro de seguridad de Microsoft 365.
+        - name: Defender for Endpoint in Microsoft 365 Defender
           href: microsoft-365-security-center-mde.md
-        - name: Defender para Office 365 en el Centro de seguridad de Microsoft 365.
+        - name: Defender para Office 365 en Microsoft 365 Defender
           href: microsoft-365-security-center-mdo.md
-        - name: Redirigiendo Defender para punto de conexión al Centro de seguridad de Microsoft 365.
+        - name: Redirigir Defender for Endpoint a Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: Redirigiendo Defender para Office 365 al Centro de seguridad de Microsoft 365.
+        - name: Redirigir el centro Office 365 seguridad y cumplimiento a Microsoft 365 Defender
           href: microsoft-365-security-mdo-redirection.md
         - name: Microsoft 365 Integración de Defender con Azure Sentinel
           href: microsoft-365-defender-integration-with-azure-sentinel.md
@@ -120,10 +120,10 @@
                   items:
                     - name: Correo de suplantación de identidad
                       href: first-incident-path-phishing.md
-                    - name: Identity
+                    - name: Identidad
                       href: first-incident-path-identity.md
             - name: Playbooks de respuesta a incidentes
-              href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
+              href: /security/compass/incident-response-playbooks
             - name: Notificaciones de correo electrónico
               href: get-incident-notifications.md
         - name: Análisis de amenazas
@@ -321,11 +321,11 @@
                 - name: Streaming API
                   items:
                     - name: Microsoft 365 Streaming API
-                      href: ../defender-endpoint/raw-data-export.md
-                    - name: Transmitir evens de búsqueda avanzada al centro de eventos de Azure
-                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                      href: streaming-api.md
+                    - name: Transmitir eventos de búsqueda avanzada de amenazas al hub de Azure Events
+                      href: streaming-api-event-hub.md
                     - name: Transmitir eventos de búsqueda avanzada de amenazas a su cuenta de almacenamiento
-                      href: ../defender-endpoint/raw-data-export-storage.md
+                      href: streaming-api-storage.md
                 - name: API de Búsqueda avanzada de amenazas
                   href: api-advanced-hunting.md
                 - name: API de incidentes

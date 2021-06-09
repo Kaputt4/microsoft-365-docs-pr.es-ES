@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f025f23242c28f698e6f67755cc59d21c4463914
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: c8d3838194c25ba49b2611dc355b21e228291b01
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782950"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842535"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Acciones de corrección en Microsoft 365 Defender
 
@@ -74,7 +74,7 @@ Además de las acciones de corrección que siguen investigaciones automatizadas,
 - Acción de correo electrónico manual, como la eliminación suave de mensajes de correo electrónico 
 - [Acción de búsqueda](../defender-endpoint/advanced-hunting-overview.md) avanzada en dispositivos o correo electrónico
 - [Acción](../office-365-security/threat-explorer.md) del explorador en el contenido de correo electrónico, como mover correo electrónico a correo no deseado, eliminar correo electrónico de forma suave o eliminar correo electrónico de forma permanente
-- Acción [de respuesta en](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) directo manual, como eliminar un archivo, detener un proceso y quitar una tarea programada
+- Acción [de respuesta en](/windows/security/threat-protection/microsoft-defender-atp/live-response) directo manual, como eliminar un archivo, detener un proceso y quitar una tarea programada
 - Acción de respuesta en directo [con Microsoft Defender para API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)de punto de conexión, como aislar un dispositivo, ejecutar un examen antivirus y obtener información sobre un archivo
 
 ## <a name="next-steps"></a>Pasos siguientes

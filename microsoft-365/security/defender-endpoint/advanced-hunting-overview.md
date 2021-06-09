@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 906ae4bdebcc46e210fa9c5dcb5387c880fdbb38
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 9f1934de8f710a21bc362e735bb6f1eab7a2d287
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939665"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845443"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Búsqueda proactiva de amenazas con búsqueda avanzada
 
@@ -43,8 +43,8 @@ Vea este vídeo para obtener una introducción rápida a la búsqueda avanzada y
 Puede usar las mismas consultas de búsqueda de amenazas para crear reglas de detección personalizadas. Estas reglas se ejecutan automáticamente para buscar y responder a una actividad de infracción sospechosa, máquinas mal configuradas y otras conclusiones.
 
 >[!TIP]
->Use la búsqueda avanzada en [Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) para buscar amenazas con datos de Defender for Endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender for Identity. [Active Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
-Obtenga más información sobre cómo mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender en Migrar consultas avanzadas de búsqueda de [Microsoft Defender para endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+>Usa la búsqueda avanzada en [Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) para buscar amenazas con datos de Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. [Active Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
+Obtenga más información sobre cómo mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender en Migrar consultas avanzadas de búsqueda de [Microsoft Defender para endpoint.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="get-started-with-advanced-hunting"></a>Introducción a la búsqueda avanzada
 
@@ -54,7 +54,7 @@ Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamen
 
 | Objetivo de aprendizaje | Descripción | Recurso |
 |--|--|--|
-| **Aprender el idioma** | La búsqueda avanzada se basa en [el lenguaje de consulta Kusto,](https://docs.microsoft.com/azure/kusto/query/)que admite la misma sintaxis y operadores. Empiece a aprender el lenguaje de consulta mediante la ejecución de la primera consulta. | [Introducción al lenguaje de consulta](advanced-hunting-query-language.md) |
+| **Aprender el idioma** | La búsqueda avanzada se basa en [el lenguaje de consulta Kusto,](/azure/kusto/query/)que admite la misma sintaxis y operadores. Empiece a aprender el lenguaje de consulta mediante la ejecución de la primera consulta. | [Introducción al lenguaje de consulta](advanced-hunting-query-language.md) |
 | **Obtenga información sobre cómo usar los resultados de la consulta** | Obtenga información sobre gráficos y diversas formas de ver o exportar los resultados. Explore cómo puede ajustar rápidamente las consultas y profundizar para obtener información más enriquecente. | [Trabajar con resultados de consulta](advanced-hunting-query-results.md) |
 | **Entender el esquema** | Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Obtenga información sobre dónde buscar datos al crear las consultas. | [Referencia del esquema](advanced-hunting-schema-reference.md) |
 | **Usar consultas predefinidas** | Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas. | [Consultas compartidas](advanced-hunting-shared-queries.md) |

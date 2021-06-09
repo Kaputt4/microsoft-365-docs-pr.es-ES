@@ -1,7 +1,7 @@
 ---
 title: Obtener dispositivos incorporados a Microsoft Defender para endpoint
 description: Realice un seguimiento de la incorporación de dispositivos administrados por Intune a Microsoft Defender para Endpoint y aumente la velocidad de incorporación.
-keywords: onboard, administración de Intune, Microsoft Defender para Endpoint, Microsoft Defender, Windows Defender, administración de configuración
+keywords: onboard, administración de Intune, Microsoft Defender para endpoint, Microsoft Defender, Windows Defender, administración de configuración
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e0d5a13b0c33516209bd2d18361a1de6ab9245c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7798f3b6bd2f99d48a8fa85ecf088023f4629b7b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932946"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841575"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtener dispositivos incorporados a Microsoft Defender para endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "51932946"
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Cada dispositivo incorporado agrega un sensor de detección y respuesta de puntos de conexión (EDR) adicional y aumenta la visibilidad sobre la actividad de vulneración en la red. La incorporación también garantiza que un dispositivo se pueda comprobar si hay componentes vulnerables, así como problemas de configuración de seguridad y puede recibir acciones críticas de corrección durante los ataques.
+Cada dispositivo incorporado agrega un sensor detección y respuesta de puntos de conexión (EDR) adicional y aumenta la visibilidad sobre la actividad de vulneración en la red. La incorporación también garantiza que un dispositivo se pueda comprobar si hay componentes vulnerables, así como problemas de configuración de seguridad y puede recibir acciones críticas de corrección durante los ataques.
 
 Antes de poder realizar un seguimiento y administrar la incorporación de dispositivos:
 - [Inscribir los dispositivos en la administración de Intune](configure-machines.md#enroll-devices-to-intune-management)
@@ -41,17 +41,17 @@ Antes de poder realizar un seguimiento y administrar la incorporación de dispos
 
 ## <a name="discover-and-track-unprotected-devices"></a>Detectar y realizar un seguimiento de dispositivos sin protección
 
-La **tarjeta** de incorporación proporciona una descripción general de alto nivel de la tasa de incorporación comparando el número de dispositivos Windows 10 que se han incorporado realmente a Defender para Endpoint con el número total de dispositivos Windows 10 administrados por Intune.
+La **tarjeta** de incorporación proporciona una descripción general de alto nivel de la tasa de incorporación comparando el número de dispositivos Windows 10 que realmente se han incorporado a Defender for Endpoint con el número total de dispositivos Windows 10 administrados por Intune.
 
 ![Tarjeta de incorporación de administración de configuración de dispositivos](images/secconmgmt_onboarding_card.png)<br>
-*Tarjeta que muestra dispositivos incorporados en comparación con el número total de dispositivos Windows 10 administrados por Intune*
+*Tarjeta que muestra dispositivos incorporados en comparación con el número total de dispositivos administrados Windows 10 Intune*
 
 >[!NOTE]
 >Si usó Security Center Configuration Manager, el script de incorporación u otros métodos de incorporación que no usan perfiles de Intune, es posible que encuentre discrepancias de datos. Para resolver estas discrepancias, crea un perfil de configuración de Intune correspondiente para la incorporación de Defender for Endpoint y asigna ese perfil a los dispositivos.
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Incorporación de más dispositivos con perfiles de Intune
 
-Defender for Endpoint proporciona varias opciones convenientes para [incorporar dispositivos Windows 10.](onboard-configure.md) Sin embargo, en el caso de los dispositivos administrados por Intune, puede aprovechar los perfiles de Intune para implementar cómodamente el sensor Defender for Endpoint para seleccionar dispositivos, incorporando estos dispositivos de forma eficaz al servicio.
+Defender for Endpoint proporciona varias opciones convenientes para [la incorporación Windows 10 dispositivos](onboard-configure.md). Sin embargo, en el caso de los dispositivos administrados por Intune, puede aprovechar los perfiles de Intune para implementar cómodamente el sensor Defender for Endpoint para seleccionar dispositivos, incorporando estos dispositivos de forma eficaz al servicio.
 
 En la **tarjeta incorporación,** selecciona **Incorporar más dispositivos** para crear y asignar un perfil en Intune. El vínculo te lleva a la página de cumplimiento del dispositivo en Intune, que proporciona una introducción similar al estado de incorporación.
 
@@ -59,7 +59,7 @@ En la **tarjeta incorporación,** selecciona **Incorporar más dispositivos** pa
    *Página de cumplimiento de dispositivos de Microsoft Defender para endpoint en la administración de dispositivos de Intune*
 
 >[!TIP]
->Como alternativa, puede navegar a la página de cumplimiento de incorporación de Defender for Endpoint en [Microsoft Azure Portal](https://portal.azure.com/) desde Todos los servicios > Intune > Cumplimiento de dispositivos > ATP de Microsoft **Defender.**
+>Como alternativa, puede navegar a la página De defender para el cumplimiento de la incorporación de puntos de conexión en el portal de [Microsoft Azure](https://portal.azure.com/) desde Todos los servicios > Intune > Cumplimiento de **dispositivos > ATP de Microsoft Defender**.
 
 >[!NOTE]
 > Si quieres ver los datos de dispositivo más actualizados, haz clic en Lista de **dispositivos sin sensor ATP**.
@@ -69,7 +69,7 @@ Desde la página de cumplimiento del dispositivo, crea un perfil de configuraci�
 - Selecciona **Crear un perfil de configuración de dispositivo para configurar el sensor DE ATP** para empezar con un perfil de configuración de dispositivo predefinido.
 - Crea el perfil de configuración del dispositivo desde cero.
 
-Para obtener más información, [lea acerca del uso de perfiles](https://docs.microsoft.com/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)de configuración de dispositivos de Intune para incorporar dispositivos a Defender para endpoint .
+Para obtener más información, [lea acerca del uso de perfiles](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)de configuración de dispositivos de Intune para incorporar dispositivos a Defender para endpoint .
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 

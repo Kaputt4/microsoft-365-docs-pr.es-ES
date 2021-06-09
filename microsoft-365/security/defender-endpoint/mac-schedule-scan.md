@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2c1dc16dc3fbb61a77e1d7348d47fdfd778c56e2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a93ea3427c72eb5529715b92cb18d01462493cc6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934518"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842859"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Programar exámenes con Microsoft Defender para endpoint en macOS
 
@@ -104,4 +104,4 @@ Puedes crear una programación de análisis mediante el demonio que *se* inicia 
 
 También puede programar exámenes con Microsoft Intune. El [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible en Scripts para Microsoft Defender para [Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) persistirá cuando el dispositivo reanude el modo de suspensión. 
 
-Consulta [Usar scripts de shell en dispositivos macOS en Intune](https://docs.microsoft.com/mem/intune/apps/macos-shell-scripts) para obtener instrucciones más detalladas sobre cómo usar este script en tu empresa.
+Consulta [Usar scripts de shell en dispositivos macOS en Intune](/mem/intune/apps/macos-shell-scripts) para obtener instrucciones más detalladas sobre cómo usar este script en tu empresa.
