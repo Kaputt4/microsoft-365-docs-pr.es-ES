@@ -133,7 +133,7 @@ Estos son los componentes del acceso a dispositivos y identidades, incluidos los
 
 ![Componentes de identidad y acceso a dispositivos](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
-### <a name="microsoft-intune"></a>Microsoft Intune
+### <a name="microsoft-intune"></a>Microsoft Intune
 
 [Intune](/intune/introduction-intune) es el servicio de administración de dispositivos móviles basado en la nube de Microsoft. En esta guía se recomienda la administración de dispositivos Windows equipos con Intune y se recomiendan las configuraciones de directivas de cumplimiento de dispositivos. Intune determina si los dispositivos son compatibles y envía estos datos a Azure AD para usarlos al aplicar directivas de acceso condicional.
 

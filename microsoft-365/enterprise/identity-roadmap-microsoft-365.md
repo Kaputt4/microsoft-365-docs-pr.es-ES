@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom: ''
-description: Guía básica para la identidad de Microsoft 365.
+description: El mapa de ruta para la identidad de Microsoft 365.
 ms.openlocfilehash: 456841bfc15d143409535140f2b5a63ee72e99d2
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -25,23 +25,23 @@ ms.locfileid: "51051311"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Plan de identidad para Microsoft 365
 
-En Microsoft 365 para empresas, una infraestructura de identidades bien planeada y ejecutada allana el camino para reforzar la seguridad, incluida la restricción del acceso a las cargas de trabajo de productividad y sus datos a solo usuarios y dispositivos autenticados.
+En Microsoft 365 empresa, una infraestructura de identidades bien planeada y ejecutada allana el camino para una seguridad más sólida, incluida la restricción del acceso a las cargas de trabajo de productividad y sus datos a solo usuarios y dispositivos autenticados.
 
-Para obtener información general sobre los modelos de identidad y la autenticación para Microsoft 365 para empresas, vea este vídeo.
+Para obtener información general sobre los modelos de identidad y la autenticación Microsoft 365 para empresas, vea este vídeo.
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Para obtener información sobre las características de identidad de cada plan de Microsoft 365 para empresas, el rol de Azure Active Directory, los componentes locales y basados en la nube y las configuraciones de autenticación más comunes, consulte el póster infraestructura de identidad [.](../downloads/m365e-identity-infra.pdf)
+Para obtener información sobre las características de identidad de cada plan de Microsoft 365 para empresas, el rol de Azure Active Directory, tanto los componentes locales y basados en la nube, como las configuraciones de autenticación más comunes, vea el póster infraestructura de identidad [.](../downloads/m365e-identity-infra.pdf)
 
 [![El póster Infraestructura de identidad](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-Revise este póster de dos páginas para aumentar rápidamente los conceptos de identidad y las configuraciones de Microsoft 365 para empresas.
+Revise este póster de dos páginas para aumentar rápidamente los conceptos de identidad y las configuraciones para Microsoft 365 empresa.
 
 También puede descargar [este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) y imprimirlo en formato carta, legal o tabloide (11 x 17).
 
-## <a name="plan"></a>Plan
+## <a name="plan"></a>Planear
 
 Para planear la implementación de identidad:
 
@@ -67,7 +67,7 @@ Para ayudar a garantizar un personal seguro y productivo, Microsoft proporciona 
 
 ## <a name="manage"></a>Administrar
 
-Para administrar la implementación de identidades de Microsoft 365, vea:
+Para administrar la implementación Microsoft 365 identidad, vea:
 
 - [Cuentas de usuario](manage-microsoft-365-accounts.md)
 - [Licencias](assign-licenses-to-user-accounts.md)
@@ -76,7 +76,7 @@ Para administrar la implementación de identidades de Microsoft 365, vea:
 - [Gobierno](manage-microsoft-365-identity-governance.md)
 - [Sincronización de directorios](view-directory-synchronization-status.md)
 
-## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Cómo microsoft hace identidad para Microsoft 365
+## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Cómo Microsoft hace identidad para Microsoft 365
 
 Aprenda como los expertos de IT en Microsoft[administran identidades y acceso seguro](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
 
@@ -86,7 +86,7 @@ Aprenda como los expertos de IT en Microsoft[administran identidades y acceso se
 
 ## <a name="how-contoso-did-identity-for-microsoft-365"></a>Cómo contoso hizo identidad para Microsoft 365
 
-Para obtener un ejemplo de cómo una organización multinacional ficticia pero representativa ha implementado una infraestructura de identidad híbrida para los servicios en la nube de Microsoft 365, vea [Identity for the Contoso Corporation](contoso-identity.md).
+Para obtener un ejemplo de cómo una organización multinacional ficticia pero representativa ha implementado una infraestructura de identidad híbrida para Microsoft 365 en la nube, vea [Identity for the Contoso Corporation](contoso-identity.md).
 
 ## <a name="next-step"></a>Paso siguiente
 

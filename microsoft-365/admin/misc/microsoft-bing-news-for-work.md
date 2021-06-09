@@ -25,7 +25,7 @@ Manténgase al día con lo que está sucediendo en su sector. Cada mañana, podr
 
 ## <a name="what-is-it"></a>¿Qué es?
 
-Aprovechando la potencia del motor de búsqueda de Bing de Microsoft, Las actualizaciones del sector es una colección de las noticias de trabajo más importantes de toda la web, seleccionadas solo para usted.
+Aprovechando el poder del motor de búsqueda Bing de Microsoft, Las actualizaciones del sector es una recopilación de las noticias de trabajo más importantes de toda la web, seleccionadas solo para usted.
 
 ## <a name="how-does-it-work"></a>¿Cómo funciona?
 
@@ -33,7 +33,7 @@ Personalice su experiencia siguiendo temas e intereses. Obtén noticias sobre tu
 
 ## <a name="how-do-i-customize-my-industry-updates-email"></a>¿Cómo puedo personalizar el correo electrónico de actualizaciones del sector?
 
-Para personalizar tu experiencia, visita la página de configuración para seguir los temas e intereses importantes para ti. Para acceder a la página de configuración personal, marca el marcador Personalizar el contenido en el boletín de actualizaciones de [Bing, Edge](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) e Industria o haciendo clic en el botón configuración del correo electrónico actualizaciones del sector.
+Para personalizar tu experiencia, visita la página de configuración para seguir los temas e intereses importantes para ti. Para acceder a la página de configuración personal, marca el marcador Personalizar el contenido en el [boletín Bing, Actualizaciones](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) perimetrales y del sector o haciendo clic en el botón configuración del correo electrónico actualizaciones del sector.
 
 [Suscribirse](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form=BAWLOG&frb=1) y obtener el correo electrónico de actualizaciones del sector entregado a su bandeja de entrada hoy mismo.
 

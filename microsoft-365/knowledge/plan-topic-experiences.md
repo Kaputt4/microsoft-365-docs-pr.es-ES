@@ -142,7 +142,7 @@ Cuando configures experiencias de tema, necesitarás los siguientes elementos a 
 > * Lista de temas confidenciales que se excluirán de la detección de temas
 > * Un nombre para el sitio del centro de temas
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 [Configurar las experiencias temáticas](set-up-topic-experiences.md)
 

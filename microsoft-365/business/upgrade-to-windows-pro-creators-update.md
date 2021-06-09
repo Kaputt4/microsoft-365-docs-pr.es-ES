@@ -56,7 +56,7 @@ Para actualizar a Windows 10 Pro, tiene varias opciones. Puede:
 > [!NOTE]
 > Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción de Microsoft 365 para empresas te da derecho a una actualización de Windows Pro 10.
     
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para completar la configuración de Windows 10, consulta Configurar Windows [dispositivos para Microsoft 365 usuarios empresariales.](set-up-windows-devices.md) 
   

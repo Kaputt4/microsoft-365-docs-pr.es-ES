@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
-description: En este artículo, aprenderá a exportar, configurar y ver registros de registro de auditoría de Microsoft 365.
+description: En este artículo, aprenderá a exportar, configurar y ver Microsoft 365 registros de auditoría.
 ms.openlocfilehash: 4cea867b46d3bda7d3b3a8cd38f3d01938da8764
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50906872"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportar, configurar y ver registros de registro de auditoría
 
-Después de buscar en el registro de auditoría y descargar los resultados de la búsqueda en un archivo CSV, el archivo contiene una columna denominada **AuditData**, que contiene información adicional sobre cada evento. Los datos de esta columna tienen formato de objeto JSON, que contiene varias propiedades configuradas como pares *property:value* separados por comas. Puede usar la característica de transformación JSON en el Editor de power query en Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en varias columnas para que cada propiedad tenga su propia columna. Esto le permite ordenar y filtrar una o varias de estas propiedades, lo que puede ayudarle a localizar rápidamente los datos de auditoría específicos que está buscando.
+Después de buscar en el registro de auditoría y descargar los resultados de la búsqueda en un archivo CSV, el archivo contiene una columna denominada **AuditData**, que contiene información adicional sobre cada evento. Los datos de esta columna tienen formato de objeto JSON, que contiene varias propiedades configuradas como pares *property:value* separados por comas. Puede usar la característica de transformación JSON en el Editor de power query de Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en varias columnas para que cada propiedad tenga su propia columna. Esto le permite ordenar y filtrar una o varias de estas propiedades, lo que puede ayudarle a localizar rápidamente los datos de auditoría específicos que está buscando.
 
 ## <a name="step-1-export-audit-log-search-results"></a>Paso 1: Exportar resultados de búsqueda de registros de auditoría
 
@@ -52,7 +52,7 @@ El primer paso es buscar en el registro de auditoría y, a continuación, export
 
 ## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>Paso 2: Dar formato al registro de auditoría exportado con el Editor de power query
 
-El siguiente paso es usar la característica de transformación JSON en el Editor de power query en Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en su propia columna. A continuación, se filtran columnas para ver registros en función de los valores de propiedades específicas. Esto puede ayudarle a localizar rápidamente los datos de auditoría específicos que está buscando.
+El siguiente paso es usar la característica de transformación JSON en el Editor de power query de Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en su propia columna. A continuación, se filtran columnas para ver registros en función de los valores de propiedades específicas. Esto puede ayudarle a localizar rápidamente los datos de auditoría específicos que está buscando.
 
 1. Abra un libro en blanco en Excel para Office 365, Excel 2019 o Excel 2016.
 
@@ -100,13 +100,13 @@ El siguiente paso es usar la característica de transformación JSON en el Edito
 
     La **columna AuditData** se divide en varias columnas. Cada nueva columna corresponde a una propiedad del objeto JSON AuditData. Cada fila de la columna contiene el valor de la propiedad. Si la propiedad no contiene un valor, se muestra el *valor* nulo. En Excel, las celdas con valores nulos están vacías.
   
-10. En la **pestaña** Inicio, haga clic **en Cerrar & cargar** para cerrar el Editor de power query y abrir el archivo CSV transformado en un libro de Excel.
+10. En la **pestaña** Inicio, haga clic en Cerrar **& cargar** para cerrar el Editor de power query y abrir el archivo CSV transformado en un libro Excel usuario.
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Usar PowerShell para buscar y exportar registros de registro de auditoría
 
 En lugar de usar la herramienta de búsqueda de registro de auditoría en el Centro de seguridad y cumplimiento de &, puede usar el cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell para exportar los resultados de una búsqueda de registro de auditoría a un archivo CSV. A continuación, puede seguir el mismo procedimiento descrito en el paso 2 para dar formato al registro de auditoría mediante el editor de Power Query. Una ventaja de usar el cmdlet de PowerShell es que puede buscar eventos de un servicio específico mediante el *parámetro RecordType.* Estos son algunos ejemplos de uso de PowerShell para exportar registros de auditoría a un archivo CSV para que pueda usar el editor de Power Query para transformar el objeto JSON en la columna **AuditData** tal como se describe en el paso 2.
 
-En este ejemplo, ejecute los siguientes comandos para devolver todos los registros relacionados con las operaciones de uso compartido de SharePoint.
+En este ejemplo, ejecute los siguientes comandos para devolver todos los registros relacionados con SharePoint operaciones de uso compartido.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
@@ -118,9 +118,9 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 Los resultados de la búsqueda se exportan a un archivo CSV denominado *PowerShellAuditlog* que contiene cuatro columnas: CreationDate, UserIds, RecordType, AuditData).
 
-También puede usar el nombre o el valor de enumeración para el tipo de registro como el valor del *parámetro RecordType.* Para obtener una lista de nombres de tipo de registro y sus valores de enumeración correspondientes, vea la *tabla AuditLogRecordType* en el esquema de la API de actividad de administración [de Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
+También puede usar el nombre o el valor de enumeración para el tipo de registro como el valor del *parámetro RecordType.* Para obtener una lista de nombres de tipo de registro y sus valores de enumeración correspondientes, vea la *tabla AuditLogRecordType* [en Office 365 de la API de actividad de administración.](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)
 
-Solo puede incluir un solo valor para el *parámetro RecordType.* Para buscar registros de auditoría para otros tipos de registros, debe volver a ejecutar los dos comandos anteriores para especificar un tipo de registro diferente y anexar esos resultados al archivo CSV original. Por ejemplo, ejecutaría los dos comandos siguientes para agregar actividades de archivo de SharePoint desde el mismo intervalo de fechas al PowerShellAuditlog.csv archivo.
+Solo puede incluir un solo valor para el *parámetro RecordType.* Para buscar registros de auditoría para otros tipos de registros, debe volver a ejecutar los dos comandos anteriores para especificar un tipo de registro diferente y anexar esos resultados al archivo CSV original. Por ejemplo, ejecutaría los dos comandos siguientes para agregar SharePoint de archivos desde el mismo intervalo de fechas al PowerShellAuditlog.csv archivo.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
@@ -134,6 +134,6 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 Estos son algunos consejos y ejemplos de exportación y visualización del registro de auditoría antes y después de usar la característica de transformación JSON para dividir la columna **AuditData** en varias columnas.
 
-- Filtre **la columna RecordType** para mostrar solo los registros de un servicio o área funcional específicos. Por ejemplo, para mostrar eventos relacionados con el uso compartido de SharePoint, seleccionaría **14** (el valor de enumeración de los registros desencadenados por las actividades de uso compartido de SharePoint). Para obtener una lista de los servicios que corresponden a los valores de enumeración que se muestran en la **columna RecordType,** vea Propiedades detalladas [en el registro de auditoría](detailed-properties-in-the-office-365-audit-log.md).
+- Filtre **la columna RecordType** para mostrar solo los registros de un servicio o área funcional específicos. Por ejemplo, para mostrar eventos relacionados SharePoint uso compartido, seleccionaría **14** (el valor de enumeración de los registros desencadenados por SharePoint de uso compartido). Para obtener una lista de los servicios que corresponden a los valores de enumeración que se muestran en la **columna RecordType,** vea Propiedades detalladas [en el registro de auditoría](detailed-properties-in-the-office-365-audit-log.md).
 
 - Filtre la **columna** Operaciones para mostrar los registros de actividades específicas. Para obtener una lista de la mayoría de las operaciones que corresponden a una actividad que se puede buscar en la herramienta de búsqueda del registro de auditoría en el Centro de cumplimiento de seguridad &, vea la sección "Actividades auditadas" en Buscar el registro de auditoría en el Centro de seguridad y cumplimiento de [&](search-the-audit-log-in-security-and-compliance.md#audited-activities).

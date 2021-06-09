@@ -23,7 +23,7 @@ ms.locfileid: "52809324"
 
 Microsoft Defender para Endpoint Device Control Printer Protection bloquea la impresión de personas a través de impresoras no corporativas o impresoras USB no aprobadas.
 
-## <a name="licensing"></a>Concesión de licencias 
+## <a name="licensing"></a>Licencias 
 
 Antes de empezar a usar Printer Protection, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). Para obtener acceso y usar la protección de impresoras, debe tener lo siguiente:
 
@@ -62,7 +62,7 @@ Asegúrese de que los dispositivos Windows 10 que planee implementar Printer Pro
 
 Puedes implementar la directiva a través de la directiva de grupo o Intune.
 
-| Title | Description | Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en usuarios | Compatibilidad basada en máquina |
+| Title | Descripción | Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en usuarios | Compatibilidad basada en máquina |
 |:--|:--|:--|:--|:--|:--|
 |**Habilitar restricciones de impresión del control de dispositivos**|Bloquear la impresión de personas a través de impresoras no corporativas|Sí|Sí|Sí|Sí|
 |**Lista de dispositivos de impresión conectados a USB aprobados**\*|Permitir una impresora USB específica|Sí|Sí|Sí|Sí|

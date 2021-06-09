@@ -19,7 +19,7 @@ ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: En este artículo se le guían los procedimientos recomendados que puede adoptar para usar Office 365 en una red lenta.
+description: Este artículo le guía a través de los procedimientos recomendados que puede adoptar para usar Office 365 en una red lenta.
 ms.openlocfilehash: effa1038b03a9fcafc74166a1f53682186688906
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "50905265"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedimientos recomendados para usar Office 365 en una red lenta
 
-¿No sería bueno que la conexión a Internet siempre fuera rápida y nunca bajara? Tal vez ese día llegará. Pero mientras tanto, hay cosas prácticas que puede hacer para trabajar alrededor de una red desastrosa y seguir trabajando día a día. Aunque Office 365 es un servicio basado en la nube, también proporciona muchas maneras de trabajar con el contenido sin conexión y mantener los cambios sincronizados sin problemas. Además, a veces es más eficaz trabajar con contenido sin conexión solo porque las aplicaciones se ejecutan más rápido y la interfaz de usuario es más dinámica. El punto es este: Office 365 le ofrece lo mejor de ambos mundos. Este es el modo de aprovecharlo. 
+¿No sería bueno que la conexión a Internet siempre fuera rápida y nunca bajara? Tal vez ese día llegará. Pero mientras tanto, hay cosas prácticas que puede hacer para trabajar alrededor de una red desastrosa y seguir trabajando día a día. Aunque Office 365 es un servicio basado en la nube, también proporciona muchas formas de trabajar con el contenido sin conexión y mantener los cambios sincronizados sin problemas. Además, a veces es más eficaz trabajar con contenido sin conexión solo porque las aplicaciones se ejecutan más rápido y la interfaz de usuario es más dinámica. El punto es este: Office 365 te ofrece lo mejor de ambos mundos. Este es el modo de aprovecharlo. 
   
 > [!TIP]
 > ¿Desea ver lo lenta (o rápida) que es la conexión de red? Pruebe la [ prueba de velocidad de OOKLA ](https://www.speedtest.net/) o la aplicación de prueba de velocidad de [red](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70). 
@@ -60,11 +60,11 @@ Siempre que experimentes problemas de rendimiento, primero asegúrate de que el 
 
 - Si es posible, compre más memoria. Agregar memoria es la forma más sencilla y a menudo más eficaz de mejorar el rendimiento en el dispositivo. Es especialmente útil cuando se trabaja con archivos y vídeos grandes.
 
-Para obtener más información, consulta [Rendimiento y](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) mantenimiento de Windows y Sugerencias para mejorar el rendimiento del equipo en [Windows 10.](https://support.microsoft.com/en-za/help/4002019/windows-10-improve-pc-performance)
+Para obtener más información, [vea Windows Performance and maintenance](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) and Sugerencias to improve PC performance in [Windows 10](https://support.microsoft.com/en-za/help/4002019/windows-10-improve-pc-performance).
 
 ## <a name="best-practices-for-using-your-browser"></a>Procedimientos recomendados para usar el explorador
 
-El explorador es la puerta de enlace a Office 365, por lo que puede tener un impacto en el rendimiento, especialmente con el tiempo que se tarda en cargar una página y la frecuencia con la que se realiza un recorrido de ida y vuelta al servicio de Office 365.
+El explorador es la puerta de enlace a Office 365, por lo que puede tener un impacto en el rendimiento, especialmente con el tiempo que se tarda en cargar una página y la frecuencia con la que se realiza un viaje de ida y vuelta al servicio Office 365 web.
   
  **Exploradores en general**
   
@@ -100,36 +100,36 @@ Estas son algunas sugerencias para su explorador específico:
 
 Leer, escribir y organizar el correo electrónico es una parte importante del día de todos. Tanto Outlook como Outlook Web App (OWA) ofrecen compatibilidad sin conexión. El uso de una aplicación de correo electrónico en el teléfono inteligente es otra alternativa útil. Use las siguientes opciones que mejor se adapten a sus necesidades:
   
-- Actualice a la versión más reciente de Outlook para obtener mejoras sustanciales en el rendimiento con respecto a las versiones anteriores. 
+- Actualice a la versión más reciente de Outlook para obtener mejoras sustanciales de rendimiento con respecto a las versiones anteriores. 
 
--  Outlook Web App le permite crear mensajes, contactos y eventos de calendario sin conexión que se cargan cuando OWA puede conectarse a Office 365. Para obtener más información acerca de cómo configurar y usar OWA en modo sin conexión, vea [Using Outlook Web App offline](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36).
+-  Outlook Web App permite crear mensajes, contactos y eventos de calendario sin conexión que se cargan cuando OWA puede conectarse a Office 365. Para obtener más información acerca de cómo configurar y usar OWA en modo sin conexión, vea [Using Outlook Web App offline](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36).
 
-- Outlook le permite trabajar en modo caché, en el que se conecta automáticamente siempre que sea posible. Puede hacer que Outlook descargue todo el buzón o solo una parte de él. Para obtener más información, vea Activar el modo [caché de Exchange](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) y Trabajar sin conexión en [Outlook](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633).
+- Outlook permite trabajar en modo caché, en el que se conecta automáticamente siempre que sea posible. Puede hacer que Outlook todo el buzón o solo una parte de él. Para obtener más información, vea Activar el modo [Exchange caché](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) y Trabajar sin conexión en [Outlook](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633).
 
-- Outlook también ofrece un modo sin conexión. Para usar esto, primero debe configurar el modo almacenado en caché para que la información de su cuenta se copie en el equipo. En modo sin conexión, Outlook intentará conectarse con la configuración de envío y recepción, o cuando la configure manualmente para que funcione en línea. Para obtener más información, vea [Trabajar](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282)sin conexión para evitar cargos por conexión de [datos,](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a)Cambiar la configuración de envío y recepción cuando trabaje sin conexión y Cambiar de trabajar sin conexión a [en línea.](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9)
+- Outlook también ofrece un modo sin conexión. Para usar esto, primero debe configurar el modo almacenado en caché para que la información de su cuenta se copie en el equipo. En modo sin conexión, Outlook intentará conectarse con la configuración de envío y recepción, o cuando se configura manualmente para que funcione en línea. Para obtener más información, vea [Trabajar](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282)sin conexión para evitar cargos por conexión de [datos,](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a)Cambiar la configuración de envío y recepción cuando trabaje sin conexión y Cambiar de trabajar sin conexión a [en línea.](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9)
 
 - Si tienes un teléfono inteligente, puedes usarlo para realizar una triaje del correo electrónico y el calendario a través de la red del operador de telefonía.
 
 > [!NOTE]
-> Esta es una guía sobre cuándo usar Outlook o OWA. Si el espacio en disco no es un problema en el dispositivo, Outlook tiene un conjunto completo de características y puede funcionar mejor para usted. Si el espacio en disco es un problema en el dispositivo, considera la posibilidad de usar OWA, que tiene un subconjunto de características, pero que también funciona mejor en una situación en línea. Por supuesto, se puede usar porque funcionan bien juntos.
+> Esta es una guía sobre cuándo usar Outlook o OWA. Si el espacio en disco no es un problema en el dispositivo, Outlook tiene un conjunto completo de características y puede funcionar mejor para ti. Si el espacio en disco es un problema en el dispositivo, considera la posibilidad de usar OWA, que tiene un subconjunto de características, pero que también funciona mejor en una situación en línea. Por supuesto, se puede usar porque funcionan bien juntos.
   
 ## <a name="best-practices-for-using-onedrive-for-business"></a>Procedimientos recomendados para usar OneDrive para la Empresa
 
 OneDrive para la Empresa está diseñado desde cero para trabajar con los archivos en línea y sin conexión. Una vez configurado, la sincronización de los cambios se produce de forma automática y confiable en cualquier lugar y cada vez que se realicen. Si la red es lenta, puede trabajar con la versión sin conexión de los archivos.
   
-La aplicación de sincronización de OneDrive para la Empresa viene con una [](https://support.microsoft.com/kb/2903984) suscripción empresarial de SharePoint Online y Office 365, o puede descargar la aplicación de sincronización de OneDrive para la Empresa de forma gratuita. Esta aplicación también es más rápida que usar los comandos **Abrir en el Explorador** o Cargar.  Para obtener más información, vea Configurar el equipo para sincronizar los archivos de [OneDrive para la Empresa en Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
+La OneDrive para la Empresa de sincronización viene con una SharePoint online y una suscripción Office 365 [](https://support.microsoft.com/kb/2903984) empresa, o puedes descargar la OneDrive para la Empresa de sincronización de forma gratuita. Esta aplicación también es más rápida que usar los comandos **Abrir en el Explorador** o **Upload** comandos. Para obtener más información, vea [Configurar el equipo para sincronizar](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16)los archivos OneDrive para la Empresa en Office 365 .
   
-Estas son algunas instrucciones adicionales para usar la aplicación de sincronización de OneDrive para la Empresa:
+Estas son algunas instrucciones adicionales para usar la OneDrive para la Empresa de sincronización:
   
 - Si está sincronizando una biblioteca grande por primera vez, inicie la sincronización durante horas de espera, por ejemplo, durante la noche.
 
-- Puedes usar la característica Detener la sincronización de una biblioteca con la característica de aplicación [de OneDrive para](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) la Empresa para detener temporalmente la sincronización de actualizaciones. Sin embargo, use esta característica durante períodos breves, como unas pocas horas a la vez, para evitar hacer cola en un gran número de actualizaciones y para minimizar el riesgo de conflictos de combinación si varias personas trabajan en el mismo documento.
+- Puedes usar stop [syncing a library with the OneDrive para la Empresa app](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) feature to temporarily stop syncing updates. Sin embargo, use esta característica durante períodos breves, como unas pocas horas a la vez, para evitar hacer cola en un gran número de actualizaciones y para minimizar el riesgo de conflictos de combinación si varias personas trabajan en el mismo documento.
   
 ## <a name="best-practices-for-using-onenote"></a>Procedimientos recomendados para usar OneNote
 
-Cada sitio de grupo de SharePoint tiene un bloc de notas de OneNote integrado y puede crear fácilmente el suyo propio. OneNote es una excelente manera de recopilar información a tiempo que necesita todos los días para realizar tareas. Por ejemplo, muchos equipos usan OneNote como punto de recopilación para reuniones semanales, notas del proyecto, ideas, planes e informes de estado. Puede organizar esta información de forma clara mediante páginas, secciones y pestañas.
+Cada SharePoint de grupo tiene un bloc de notas integrado OneNote y puede crear fácilmente el suyo propio. OneNote es una excelente manera de recopilar información a tiempo que necesita todos los días para realizar tareas. Por ejemplo, muchos equipos usan OneNote como punto de recopilación para reuniones semanales, notas del proyecto, ideas, planes e informes de estado. Puede organizar esta información de forma clara mediante páginas, secciones y pestañas.
   
-La belleza de OneNote es que puedes acceder al contenido desde prácticamente cualquier dispositivo, ya sea un escritorio, un portátil, una tableta o un teléfono inteligente. Y no tiene que preocuparse por guardar o sincronizar porque OneNote lo hace por usted.
+La mejor OneNote es que puedes acceder al contenido desde prácticamente cualquier dispositivo, ya sea un escritorio, un portátil, una tableta o un teléfono inteligente. Y no tiene que preocuparse por guardar o sincronizar porque OneNote lo hace por usted.
   
 Para obtener más información, [vea Microsoft OneNote](https://office.microsoft.com/onenote).
 
@@ -143,15 +143,15 @@ Las siguientes son instrucciones generales para usar Skype Empresarial o Lync On
 
 - Asegúrate de que el dispositivo de audio esté aprobado. Para obtener más información, vea [Teléfonos y dispositivos calificados para Microsoft Lync](/skypeforbusiness/lync-cert/ip-phones).
 
-- Al usar PowerPoint en una presentación en línea, reduzca el tamaño y la complejidad de las diapositivas. Para obtener más información, vea [Tips for improving the performance of your presentation](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949).
+- Al usar PowerPoint en una presentación en línea, reduzca el tamaño y la complejidad de las diapositivas. Para obtener más información, [vea Sugerencias para mejorar el rendimiento de la presentación](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949).
 
 - El rendimiento de vídeo depende mucho del rendimiento de la red. Evite usar vídeo si la red es lenta.
 
-Para obtener más información, vea [Mala calidad de audio](https://support.microsoft.com/kb/2386655)o vídeo en Lync Online o cómo solucionar problemas de conexión en Skype [Empresarial.](https://support.office.com/article/troubleshoot-connection-issues-in-skype-for-business-ca302828-783f-425c-bbe2-356348583771)
+Para obtener más información, vea [Mala calidad de audio](https://support.microsoft.com/kb/2386655)o vídeo en Lync Online o cómo solucionar problemas de conexión en [Skype Empresarial](https://support.office.com/article/troubleshoot-connection-issues-in-skype-for-business-ca302828-783f-425c-bbe2-356348583771).
   
-## <a name="best-practices-for-using-sharepoint-lists"></a>Procedimientos recomendados para usar listas de SharePoint
+## <a name="best-practices-for-using-sharepoint-lists"></a>Procedimientos recomendados para usar SharePoint listas
 
-Trabajar con datos de lista sin conexión para "limpiar", analizar o informar datos es una excelente manera de minimizar el impacto de una red lenta. Puede leer y escribir la mayoría de las listas de Microsoft Access 2019 y Microsoft Access 2016 vincule a ellas. También puede exportar una lista a una tabla de Excel, que crea una conexión de datos uni-way entre la tabla de Excel y la lista. Obtenga información sobre [cómo trabajar sin conexión con tablas vinculadas a listas de SharePoint](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e).
+Trabajar con datos de lista sin conexión para "limpiar", analizar o informar datos es una excelente manera de minimizar el impacto de una red lenta. Puede leer y escribir la mayoría de las listas de Microsoft Access 2019 y Microsoft Access 2016 vincularlas. También puede exportar una lista a una tabla Excel, que crea una conexión de datos uni-way entre la tabla Excel y la lista. Obtenga información sobre [cómo trabajar sin conexión con tablas vinculadas a SharePoint listas](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e).
   
 Para obtener más información, vea la sección "Más información sobre la administración de listas grandes" en [Manage large lists and libraries in Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784).
   
@@ -165,11 +165,11 @@ Para obtener más información, vea [Tune SharePoint Online performance](tune-sh
 
 Las siguientes directrices pueden ayudar a mejorar el rendimiento de la red.
   
-- Project Online y SharePoint Online requieren sincronización, lo que puede llevar mucho tiempo. Si los equipos de proyecto tienen un bajo volumen de negocio, deshabilita Project Site Sync para mejorar el rendimiento de project publish y project detail pages. Limitar la sincronización de Active Directory a grupos de recursos que realmente necesitan usar el sistema y supervisar los posibles problemas de permisos después de la sincronización de grupos grandes.
+- Project Online y SharePoint Online requieren sincronización, lo que puede llevar mucho tiempo. Si los equipos de proyecto tienen un bajo volumen de negocio, deshabilite la sincronización Project sitio para mejorar el rendimiento Project publicar y Project páginas de detalles. Limitar la sincronización de Active Directory a grupos de recursos que realmente necesitan usar el sistema y supervisar los posibles problemas de permisos después de la sincronización de grupos grandes.
 
 - Si su organización usa sitios de proyecto, creelos a petición en lugar de hacerlo automáticamente. Esto acelera la primera experiencia de publicación y evita la creación de sitios y contenido innecesarios.
 
-- Las páginas de detalles del proyecto (PDP) pueden desencadenar una actualización de todo el proyecto y iniciar acciones de flujo de trabajo, que pueden ser operaciones que requieren un alto rendimiento. Para evitar desencadenar dos procesos de actualización al mismo tiempo en el mismo PDP, evite actualizar los campos de calendario (Fecha de inicio, Fecha de finalización, Fecha de estado y Fecha actual) y los campos no programados (nombre del proyecto, descripción y propietario).
+- Project Las páginas de detalles (PDP) pueden desencadenar una actualización de todo el proyecto y iniciar acciones de flujo de trabajo, que pueden ser operaciones de alto rendimiento. Para evitar desencadenar dos procesos de actualización al mismo tiempo en el mismo PDP, evite actualizar los campos de calendario (Fecha de inicio, Fecha de finalización, Fecha de estado y Fecha actual) y los campos no programados (nombre del proyecto, descripción y propietario).
 
 - Reduzca el número de campos elementos web y personalizados que se muestran en cada PDP. Cree un PDP dedicado con los únicos campos que requieren actualización para mejorar la carga y ahorrar tiempo.
 
@@ -179,9 +179,9 @@ Para obtener más información, vea [Tune Project Online performance](https://su
   
 ## <a name="whats-the-best-way-to-report-problems"></a>¿Cuál es la mejor manera de informar de problemas?
 
-Microsoft mejora continuamente el rendimiento general de Office 365 mediante la supervisión de la red, la medición del ancho de banda y la latencia, la mejora del tiempo de carga de la página, la reducción de E/S de disco, el rediseño de páginas para usar la estrategia de descarga mínima, la adición de hardware a los centros de datos y la adición de más centros de datos. Para obtener más información acerca de cómo comprobar el estado actual y los problemas de informes, vea [How to check Office 365 service health](view-service-health.md).
+Microsoft mejora continuamente el rendimiento general de Office 365 mediante la supervisión de la red, la medición del ancho de banda y la latencia, la mejora del tiempo de carga de la página, la reducción de E/S de disco, el rediseño de páginas para usar la estrategia de descarga mínima, la adición de hardware a los centros de datos y la adición de más centros de datos. Para obtener más información sobre cómo comprobar el estado actual y los problemas de informes, vea [How to check Office 365 service health](view-service-health.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Planeamiento de red y ajuste del rendimiento para Office 365](network-planning-and-performance.md)
   

@@ -1,5 +1,5 @@
 ---
-title: Automatizar las licencias y la pertenencia a grupos para el entorno de prueba de Microsoft 365 para empresas
+title: Automatizar las licencias y la pertenencia a grupos para Microsoft 365 entorno de pruebas empresariales
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Configure las licencias basadas en grupos y la pertenencia dinámica a grupos en el entorno de prueba de Microsoft 365 para empresas.
+description: Configure las licencias basadas en grupos y la pertenencia a grupos dinámicos en su Microsoft 365 entorno de prueba empresarial.
 ms.openlocfilehash: 26840e2884202a0fa9c4bb563f3d7c653482ef87
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,23 +22,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905373"
 ---
-# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatizar las licencias y la pertenencia a grupos para el entorno de prueba de Microsoft 365 para empresas
+# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatizar las licencias y la pertenencia a grupos para Microsoft 365 entorno de pruebas empresariales
 
-*Esta Guía del laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
+*Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
 
-Las licencias basadas en grupos asignan o quitan automáticamente las licencias de una cuenta de usuario en función de la pertenencia a grupos. La pertenencia dinámica a grupos agrega o quita miembros a un grupo en función de las propiedades de la cuenta de usuario, como **Department** o **Country**. En este artículo se le indican las demostraciones de agregar y quitar miembros del grupo en el entorno de prueba de Microsoft 365 para empresas.
+Las licencias basadas en grupos asignan o quitan automáticamente las licencias de una cuenta de usuario en función de la pertenencia a grupos. La pertenencia dinámica a grupos agrega o quita miembros a un grupo en función de las propiedades de la cuenta de usuario, como **Department** o **Country**. En este artículo se le indican las demostraciones de agregar y quitar miembros de grupo en el entorno Microsoft 365 de prueba empresarial.
 
-Configurar las licencias automáticas y la pertenencia dinámica a grupos en el entorno de prueba de Microsoft 365 para empresas implica dos fases:
+La configuración de licencias automáticas y la pertenencia a grupos dinámicos en su Microsoft 365 entorno de prueba empresarial implica dos fases:
 
-- [Fase 1: Crear el entorno de prueba de Microsoft 365 para empresas](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fase 1: Crear su Microsoft 365 entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fase 2: Configurar y probar la pertenencia dinámica a grupos y las licencias automáticas](#phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing)
 
 ![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para](../downloads/Microsoft365EnterpriseTLGStack.pdf)enterprise Test Lab Guide Stack .
+> Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Crear el entorno de prueba de Microsoft 365 para empresas
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Crear su Microsoft 365 entorno de prueba empresarial
 
 Si solo desea probar las licencias automatizadas y la pertenencia a grupos de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -51,11 +51,11 @@ Si desea probar las licencias automatizadas y la pertenencia a grupos en una emp
 
 En primer lugar, cree un nuevo grupo denominado Ventas y agregue  una regla de pertenencia a grupos dinámicos para que las cuentas de usuario con el Departamento establecido en **Ventas** se unan automáticamente al grupo Ventas.
 
-1. En una instancia privada de su explorador de Internet, inicie sesión en el Centro de administración de [Microsoft 365](https://admin.microsoft.com) con la cuenta de administrador global de su suscripción al laboratorio de pruebas de Microsoft 365 E5.
+1. En una instancia privada de su explorador de Internet, inicie sesión en el centro de administración de [Microsoft 365](https://admin.microsoft.com) con la cuenta de administrador global de la suscripción Microsoft 365 E5 laboratorio de pruebas.
 2. En una pestaña independiente del explorador, vaya a Azure Portal en [https://portal.azure.com](https://portal.azure.com) .
 3. En Azure Portal, escriba **grupos en** el cuadro de búsqueda y, a continuación, **seleccione Grupos**.
 4. en el **panel Todos los** grupos, seleccione Nuevo **grupo**.
-5. En **Tipo de grupo**, seleccione Microsoft **365**.
+5. En **Tipo de grupo,** **seleccione Microsoft 365**.
 6. En **Nombre del grupo**, escriba **Ventas**.
 7. En **Tipo de pertenencia,** seleccione **Usuario dinámico**.
 8. Seleccione **Miembros de usuario dinámicos**.
@@ -66,19 +66,19 @@ En primer lugar, cree un nuevo grupo denominado Ventas y agregue  una regla de p
 10. Seleccione **Guardar**.
 11. Seleccione **Crear**.
 
-Después, configure el grupo Ventas para que los miembros se asignen automáticamente la licencia de Microsoft 365 E5.
+A continuación, configure el grupo Ventas para que los miembros se asignen automáticamente la Microsoft 365 E5 licencia.
 
 1. Seleccione el **grupo** Ventas y, a continuación, **licencias**.
-2. En el **panel Actualizar asignaciones de licencias,** **seleccione Microsoft 365 E5** y, a continuación, **seleccione Guardar**.
+2. En el **panel Actualizar asignaciones de** licencias, seleccione **Microsoft 365 E5** y, a continuación, **seleccione Guardar**.
 3. En el explorador, cierre la pestaña Azure Portal.
 
 A continuación, pruebe la pertenencia a grupos dinámicos y las licencias automáticas en la cuenta de usuario 4:
 
 1. En la **Microsoft Office inicio** del explorador, seleccione **Administrador**.
-2. En la pestaña Centro de administración de **Microsoft 365,** seleccione **Usuarios activos.**
+2. En la **pestaña Microsoft 365 centro de administración,** seleccione Usuarios **activos**.
 3. En la **página Usuarios activos,** seleccione la **cuenta Usuario 4.**
 4. En el **panel Usuario 4,** seleccione **Editar para** licencias **de producto.**
-5. En el **panel Licencias de productos,** deshabilite la licencia de **Microsoft 365 E5** y, a continuación, **seleccione Guardar**  >  **cerrar**.
+5. En el **panel Licencias de productos,** deshabilite **la Microsoft 365 E5** y, a continuación, **seleccione Guardar**  >  **cerrar**.
 6. En las propiedades de la cuenta de usuario 4, compruebe que no se han asignado licencias de productos y que no hay pertenencias a grupos.
 7. Para **Información de contacto,** seleccione **Editar**.
 8. En el **panel Editar información de contacto,** seleccione Información de **contacto**.
@@ -88,7 +88,7 @@ A continuación, pruebe la pertenencia a grupos dinámicos y las licencias autom
 Con el tiempo, debería ver lo siguiente:
 
 - **Propiedad pertenencias a grupos** actualizada con el **grupo** Ventas.
-- **Propiedad de licencias de productos** actualizada con la licencia de Microsoft **365 E5.**
+- **Propiedad de licencias de** producto actualizada con **la Microsoft 365 E5** licencia.
 
 Vea estos artículos para implementar la pertenencia dinámica a grupos y las licencias automáticas en producción:
 

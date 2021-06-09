@@ -242,6 +242,8 @@
 
 ### [Dispositivos de red](network-devices.md)
 
+### [Informes de firewalls de host en Microsoft Defender para punto de conexión](host-firewall-reporting.md)
+
 ### [Reducción de la superficie expuesta a ataques]()
 #### [Introducción a la reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)
 #### [Configurar capacidades de reducción de superficie de ataques](configure-attack-surface-reduction.md)
@@ -278,6 +280,8 @@
 #### [Obtener actualizaciones contra malware y antivirus](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Administrar la programación para cuándo se han de descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+#####  [Administrar un proceso de lanzamiento gradual de actualizaciones de Microsoft Defender](updates.md)
+#####  [Configurar un proceso de lanzamiento gradual de actualizaciones de Microsoft Defender](configure-updates.md)
 ##### [Administrar las actualizaciones y análisis del Antivirus de Windows Defender para puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Administrar las actualizaciones de dispositivos móviles y máquinas virtuales](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -351,6 +355,7 @@
 ##### [Controlar dispositivos USB](control-usb-devices-using-intune.md)
 ##### [Protección de almacenamiento extraíble](device-control-removable-storage-protection.md)
 ##### [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)
+##### [Protección de la impresora de control de dispositivo](printer-protection.md)
 
 #### [Bloqueo y contención de comportamientos]()
 ##### [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)

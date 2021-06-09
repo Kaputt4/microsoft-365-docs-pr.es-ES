@@ -236,7 +236,7 @@ Para ver a qué categoría está asignada una directiva de alerta predeterminada
 |Hold|||||||
 |Administrar alertas||||||![Marca de verificación](../media/checkmark.png)|
 |Configuración de la organización||||||![Marca de verificación](../media/checkmark.png)|
-|Preview|||||||
+|Versión preliminar|||||||
 |Administración de registros|![Marca de verificación](../media/checkmark.png)||||||
 |Administración de retención|![Marca de verificación](../media/checkmark.png)||||||
 |Revisar|||||||

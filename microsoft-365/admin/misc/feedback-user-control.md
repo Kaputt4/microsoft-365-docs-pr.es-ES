@@ -31,7 +31,7 @@ ms.locfileid: "51650077"
 Los comentarios de los usuarios son una señal crítica para que Microsoft comprenda las experiencias de usuario con los productos de Microsoft. Microsoft valora las opiniones de nuestros usuarios. Los comentarios de los usuarios van directamente a nuestros ingenieros y nos ayudan a definir el futuro de los productos y servicios de Microsoft para todos nuestros usuarios.  
 En este tema, encontrará información sobre qué tipos de comentarios existen, cómo los recopilamos, qué recopilamos y cómo manejamos los datos.
 
-Como administrador, puede administrar la señal de comentarios de su organización. Presentamos un nuevo conjunto de opciones de directiva para ayudarle a administrar la recopilación de comentarios de los usuarios en las aplicaciones de Microsoft 365 para su organización. Esta configuración de directiva le ayudará a dirigirse a grupos de Azure Active Directory y configurar la experiencia de recopilación de comentarios para su organización. Los comentarios de los usuarios van directamente a nuestros ingenieros y nos ayudan a definir el futuro de los productos y servicios de Microsoft para todos nuestros usuarios. Puede obtener más información sobre esta configuración de directiva, a qué aplicaciones se aplican y procedimientos recomendados en Administrar comentarios de [Microsoft para su organización.](../manage/manage-feedback-ms-org.md)
+Como administrador, puede administrar la señal de comentarios de su organización. Estamos presentando un nuevo conjunto de configuraciones de directiva para ayudarle a administrar la recopilación de comentarios de los usuarios dentro de las Microsoft 365 de la organización. Esta configuración de directiva le ayudará a dirigirse Azure Active Directory grupos y configurar la experiencia de recopilación de comentarios para su organización. Los comentarios de los usuarios van directamente a nuestros ingenieros y nos ayudan a definir el futuro de los productos y servicios de Microsoft para todos nuestros usuarios. Puede obtener más información sobre esta configuración de directiva, a qué aplicaciones se aplican y procedimientos recomendados en Administrar comentarios de [Microsoft para su organización.](../manage/manage-feedback-ms-org.md)
 
 ## <a name="feedback-types"></a>Tipos de comentarios
 
@@ -42,12 +42,12 @@ Si los usuarios usan una de las aplicaciones de Microsoft y desean proporcionar 
 #### <a name="in-product-feedback-examples"></a>Ejemplos de comentarios en el producto
 
 :::image type="content" source="../../media/In-appfeedbackbackstage.png" alt-text="Captura de pantalla: ejemplo de comentarios en el producto":::
-:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="Captura de pantalla: ejemplo de comentarios de Windows en el producto ":::
-:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="Captura de pantalla: ejemplo de comentarios de Teams en el producto":::
+:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="Captura de pantalla: Windows de comentarios del producto":::
+:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="Captura de pantalla: Teams de comentarios en el producto":::
 
 ### <a name="in-product-surveys"></a>Encuestas desde el producto
 
-Los usuarios también pueden calificar su experiencia y proporcionar información adicional sobre su experiencia a través de solicitudes de encuesta iniciadas por el sistema. Estos avisos se producen en los productos de Microsoft 365 de vez en cuando. Cuando se le pida, los usuarios pueden elegir si desean proporcionar comentarios. Los mensajes de la encuesta normalmente aparecen en la parte inferior derecha de la aplicación. Si el usuario decide proporcionar comentarios, descarta el mensaje o deja que el mensaje desaparezca por sí mismo, ese usuario no volverá a ver la encuesta durante algún tiempo. Microsoft también aprovecha un proceso de gobierno para limitar el número de estas encuestas iniciadas por el sistema.  El objetivo del gobierno es garantizar que los usuarios no se sientan abrumados por el número de solicitudes de encuesta.
+Los usuarios también pueden calificar su experiencia y proporcionar información adicional sobre su experiencia a través de solicitudes de encuesta iniciadas por el sistema. Estos avisos se producen en el Microsoft 365 de vez en cuando. Cuando se le pida, los usuarios pueden elegir si desean proporcionar comentarios. Los mensajes de la encuesta normalmente aparecen en la parte inferior derecha de la aplicación. Si el usuario decide proporcionar comentarios, descarta el mensaje o deja que el mensaje desaparezca por sí mismo, ese usuario no volverá a ver la encuesta durante algún tiempo. Microsoft también aprovecha un proceso de gobierno para limitar el número de estas encuestas iniciadas por el sistema.  El objetivo del gobierno es garantizar que los usuarios no se sientan abrumados por el número de solicitudes de encuesta.
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Example of in-product feedback request":::
 
@@ -57,7 +57,7 @@ Los usuarios también pueden calificar su experiencia y proporcionar informació
 
 Los comentarios detallados y de acción son fundamentales para realizar cambios y mejoras en los productos de Microsoft. Si los usuarios tienen problemas o sugerencias sobre cómo podemos mejorar, nos gustaría escucharlo. A continuación se muestran algunos consejos y ejemplos sobre los comentarios que se pueden usar enviados a Microsoft.
 
-- **Título conciso y descriptivo**   Los títulos descriptivos y específicos nos ayudan a comprender el problema que se está notificando. Ejemplo: la lista archivos **recientes de** Excel no incluye archivos de OneDrive agregados recientemente.
+- **Título conciso y descriptivo**   Los títulos descriptivos y específicos nos ayudan a comprender el problema que se está notificando. Ejemplo: Excel lista de archivos **recientes** no incluye los archivos OneDrive agregados recientemente.
 - **Centrarse en un problema a la vez**   Proporcionar comentarios para un problema o recomendación un elemento a la vez. Esto garantiza que los registros y los datos correctos se reciban con cada envío y se puedan asignar para el seguimiento. Si tiene más de un problema, envíe una nueva solicitud de comentarios para cada problema. Esto nos ayuda a identificar el volumen de comentarios que estamos recibiendo en un problema en particular.
 - **Escribir detalles en el cuadro Descripción**   La información sobre el dispositivo, el sistema operativo y las aplicaciones se incluye automáticamente en cada comentario notificado. Agrega cualquier información adicional sobre un problema que creas importante. Por ejemplo, incluya pasos detallados para reproducir el problema.
 
@@ -82,7 +82,7 @@ Cuando un usuario envía comentarios, la información de la aplicación suele re
 - **Compilación de aplicaciones**   Número de compilación del producto de Microsoft que se capturó en el envío.
 - **Idioma de la aplicación**   Idioma del producto de Microsoft que se capturó en el envío.
 - **Datos adjuntos**   Si hay datos adjuntos (es decir, screenshots, files) collected as part of the feedback? (Sí/No).
-- **TenantId**   Si se envían comentarios desde una cuenta de Azure Active Directory, a la que tenantId estaba asociado.
+- **TenantId**   Si se envían comentarios desde una cuenta Azure Active Directory, que TenantId estaba asociado.
 
 ## <a name="data-handling-and-privacy"></a>Privacidad y tratamiento de datos
 
@@ -93,4 +93,4 @@ Te colocamos en control de tu privacidad con herramientas fáciles de usar y opc
 
 ## <a name="how-can-i-see-my-users-feedback"></a>¿Cómo puedo ver los comentarios de mi usuario?
 
-Próximamente, compartiremos los datos de comentarios que recopilamos para los productos de Microsoft. Estamos trabajando en una nueva experiencia en el Centro de administración de Microsoft 365 que le permite ver, eliminar y exportar los datos de comentarios de su organización. Esto le ofrece transparencia directa e información útil sobre las experiencias de los usuarios con los productos de Microsoft 365.
+Próximamente, compartiremos los datos de comentarios que recopilamos para los productos de Microsoft. Estamos trabajando en una nueva experiencia en el centro de administración de Microsoft 365 que le permita ver, eliminar y exportar los datos de comentarios de su organización. Esto le ofrece transparencia directa e información útil sobre las experiencias de los usuarios con Microsoft 365 productos.

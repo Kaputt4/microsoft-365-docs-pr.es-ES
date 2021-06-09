@@ -34,7 +34,7 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global o de facturación para realizar las tareas descritas en este artículo. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+- Debe ser un administrador global o de facturación para realizar las tareas descritas en este artículo. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 - Puede agregar [usuarios y asignar licencias al mismo tiempo.](../../admin/add-users/add-users.md)
 - Si compró su Microsoft 365 para empresas o Office 365 Enterprise a través de un partner de terceros, debe comprar licencias adicionales a través de ese partner.
 

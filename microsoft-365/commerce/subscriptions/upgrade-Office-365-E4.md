@@ -57,7 +57,7 @@ Actualizar planes manualmente significa completar los siguientes procedimientos 
 
 ## <a name="find-out-if-you-can-use-the-upgrade-tab-to-upgrade-to-a-new-plan"></a>Descubra si puede usar la pestaña Actualizar para actualizar a un nuevo plan
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. Seleccione su Office 365 E4.
 3. Seleccione la **pestaña** Actualizar. Si ves otros planes enumerados, significa que puedes actualizar los planes automáticamente.
 4. Si no puede actualizar automáticamente, verá un mensaje que describe el motivo por el que no puede actualizar.
@@ -82,7 +82,7 @@ A continuación, le detallamos algunos aspectos importantes que ha de conocer an
 
 ### <a name="start-the-upgrade-by-using-the-upgrade-tab"></a>Inicie la actualización mediante la pestaña Actualizar
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. Seleccione su Office 365 E4.
 3. En la página detalles de la suscripción, seleccione la **pestaña** Actualizar.
 4. Busque la suscripción que desea comprar y, a continuación, seleccione **Actualizar**.
@@ -120,7 +120,7 @@ Antes de pasar al siguiente paso, es importante asegurarse de que se hayan confi
 > [!NOTE]
 > Si optó por pagar la nueva suscripción mediante factura, es posible que se requiera una comprobación de crédito. Puede tardar hasta dos días laborables antes de que la suscripción esté disponible.
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **lista desplegable Estado** de suscripción, seleccione **Activo**.
 3. Asegúrese de que se muestra la nueva suscripción y de que el número de licencias es el mismo que el que tenía para Office 365 E4.
 4. Si necesita comprar más licencias, siga los pasos de [Comprar o quitar licencias de suscripción.](../licenses/buy-licenses.md)

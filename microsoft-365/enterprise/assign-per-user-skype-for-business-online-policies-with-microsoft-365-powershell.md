@@ -1,5 +1,5 @@
 ---
-title: Asignar directivas de Skype Empresarial Online por usuario con PowerShell para Microsoft 365
+title: Asignar directivas por usuario Skype Empresarial Online con PowerShell para Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Summary: Use PowerShell for Microsoft 365 to assign per-user communication settings with Skype for Business Online policies.'
+description: 'Summary: Use PowerShell for Microsoft 365 to assign per-user communication settings with Skype Empresarial Online policies.'
 ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905409"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignar directivas de Skype Empresarial Online por usuario con PowerShell para Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignar directivas por usuario Skype Empresarial Online con PowerShell para Microsoft 365
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-El uso de PowerShell para Microsoft 365 es una forma eficaz de asignar la configuración de comunicación por usuario con directivas de Skype Empresarial Online.
+El uso de PowerShell para Microsoft 365 es una forma eficaz de asignar la configuración de comunicación por usuario con Skype Empresarial en línea.
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>Prepararse para ejecutar los comandos de PowerShell
 
@@ -43,11 +43,11 @@ Use estas instrucciones para configurarse para ejecutar los comandos (omita los 
    Connect-MicrosoftTeams
    ```
 
-   Cuando se le pida, escriba el nombre y la contraseña de la cuenta de administrador de Skype Empresarial Online.
+   Cuando se le pida, escriba su Skype Empresarial nombre y contraseña de la cuenta de administrador en línea.
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Actualización de la configuración de comunicación externa para una cuenta de usuario
 
-Supongamos que desea cambiar la configuración de comunicación externa en una cuenta de usuario. Por ejemplo, desea permitir que Alex se comunique con usuarios federados (EnableFederationAccess es igual a True), pero no con usuarios Windows Live (EnablePublicCloudAccess es igual a False). Para ello, debe hacer dos cosas:
+Supongamos que desea cambiar la configuración de comunicación externa en una cuenta de usuario. Por ejemplo, desea permitir que Alex se comunique con usuarios federados (EnableFederationAccess es igual a True), pero no con usuarios de Live Windows (EnablePublicCloudAccess es igual a False). Para ello, debe hacer dos cosas:
   
 1. Buscar una directiva de acceso externo que cumpla nuestros criterios.
     
@@ -59,7 +59,7 @@ Supongamos que desea cambiar la configuración de comunicación externa en una c
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-A menos que haya creado instancias personalizadas de ExternalAccessPolicy, ese comando devuelve una directiva que cumple nuestros criterios (FederationOnly). Aquí le mostramos un ejemplo:
+A menos que haya creado instancias personalizadas de ExternalAccessPolicy, ese comando devuelve una directiva que cumple nuestros criterios (FederationOnly). A continuación le mostramos un ejemplo:
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -71,7 +71,7 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-Ahora que sabe qué directiva asignar a Alex, podemos asignar esa directiva mediante el cmdlet [Grant-CsExternalAccessPolicy.](/powershell/module/skype/Get-CsExternalAccessPolicy) Aquí le mostramos un ejemplo:
+Ahora que sabe qué directiva asignar a Alex, podemos asignar esa directiva mediante el cmdlet [Grant-CsExternalAccessPolicy.](/powershell/module/skype/Get-CsExternalAccessPolicy) A continuación le mostramos un ejemplo:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
@@ -135,7 +135,7 @@ $count = 0
 
 Esto encontrará 500 usuarios a la vez que no tienen una directiva de cliente. Se les concederá la directiva de cliente "ClientPolicyNoIMURL" y la directiva de acceso externo "FederationAndPicDefault". Los resultados se agrupan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar Skype Empresarial Online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

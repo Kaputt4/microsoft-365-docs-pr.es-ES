@@ -42,7 +42,7 @@ ms.locfileid: "52705530"
 
 Microsoft 365 Empresa Premium (anteriormente Microsoft 365 Empresa) es un servicio completo de suscripción para empresas de menos de 300 empleados. Incluye los servicios y las aplicaciones de productividad de Office, herramientas de colaboración como Microsoft Teams y funcionalidades avanzadas de administración de dispositivos y seguridad.
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>Watch: What is Microsoft 365 Empresa Premium
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Ver: Qué es Microsoft 365 Empresa Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -105,7 +105,7 @@ Los dispositivos **están protegidos** por las siguientes medidas:
 
 Para ver la lista completa de las características de seguridad, consulte [Características de seguridad de Microsoft 365 Empresa Premium](security-features.md). Una vez que haya [configurado Microsoft 365 Empresa Premium](set-up.md), vea cómo [aumentar la protección contra amenazas](increase-threat-protection.md) y cómo [configurar las características de cumplimiento](set-up-compliance.md) para empezar a usar las características de seguridad que no se incluyen como parte de la configuración guiada. Lea también las [10 formas principales de proteger los planes de Office 365 y Microsoft 365 Empresa Premium](/office365/admin/security-and-compliance/secure-your-business-data) para obtener información sobre cómo configurar la protección contra hackers y delincuentes cibernéticos.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene un partner, ese partner obtendrá Microsoft 365 Empresa Premium: [Obtener Microsoft 365 Empresa Premium desde el Centro de partners de Microsoft](get-microsoft-365-business.md).
 

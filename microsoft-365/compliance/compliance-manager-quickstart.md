@@ -31,9 +31,9 @@ Tanto si va a ir al Administrador de cumplimiento por primera vez, como si está
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>Primera visita: conocer al Administrador de cumplimiento
 
-El Administrador de cumplimiento se encuentra en el Centro de cumplimiento de Microsoft 365 en https://compliance.microsoft.com . El administrador global de la organización tendrá que configurar los permisos de usuario y asignar [roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) antes de empezar a usar el Administrador de cumplimiento.
+El Administrador de cumplimiento se encuentra en el Microsoft 365 de cumplimiento en https://compliance.microsoft.com . El administrador global de la organización tendrá que configurar los permisos de usuario y asignar [roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) antes de empezar a usar el Administrador de cumplimiento.
 
-La primera vez que visite el Administrador de cumplimiento, verá una puntuación de cumplimiento para su organización. El Administrador de cumplimiento ya está evaluando el entorno actual de Microsoft 365 con respecto a la línea base de protección de datos. La mejor manera de empezar a familiarizarse con el Administrador de cumplimiento es comprender lo que le muestra, sus elementos clave y cómo personalizar el panel.
+La primera vez que visite el Administrador de cumplimiento, verá una puntuación de cumplimiento para su organización. El Administrador de cumplimiento ya está evaluando el entorno Microsoft 365 actual con respecto a la línea base de protección de datos. La mejor manera de empezar a familiarizarse con el Administrador de cumplimiento es comprender lo que le muestra, sus elementos clave y cómo personalizar el panel.
 
 Nuestra [página de información general del Administrador de](compliance-manager.md) cumplimiento es la mejor primera parada para una revisión completa de lo que es el Administrador de cumplimiento y cómo funciona. Es posible que también quieras ir directamente a las secciones clave de nuestra documentación mediante los vínculos siguientes:
 
@@ -58,7 +58,7 @@ Una vez que esté familiarizado con los conceptos básicos, es el momento de con
 
 Cuando se sienta cómodo al administrar evaluaciones en el Administrador de cumplimiento, puede trabajar con plantillas para modificar una evaluación del Administrador de cumplimiento con sus propias acciones y controles. También puede crear su propia evaluación personalizada. Las evaluaciones personalizadas son útiles para:
 
-- Administrar el cumplimiento de productos que no son de Microsoft 365, como aplicaciones y servicios de terceros, aplicaciones locales y otros activos.
+- Administrar el cumplimiento de productos no Microsoft 365 como aplicaciones y servicios de terceros, aplicaciones locales y otros activos.
 - Administrar sus propios controles de cumplimiento personalizados o específicos de la empresa.
 
 También puede configurar pruebas automatizadas de todas o un subconjunto de acciones de mejora. Visite los vínculos siguientes para comprender la funcionalidad más avanzada en el Administrador de cumplimiento:

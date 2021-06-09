@@ -58,7 +58,7 @@ Vea estas rutas de investigación adicionales:
 - [Ataque basado en identidad](first-incident-path-identity.md)
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

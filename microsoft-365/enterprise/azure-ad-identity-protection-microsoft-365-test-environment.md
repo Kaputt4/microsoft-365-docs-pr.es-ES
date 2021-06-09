@@ -1,5 +1,5 @@
 ---
-title: Azure AD Identity Protection para el entorno de prueba de Microsoft 365 para empresas
+title: Azure AD Identity Protection para el entorno de prueba Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Configure Azure AD Identity Protection y analice las cuentas actuales en su entorno de prueba de Microsoft 365 para empresas.
+description: Configure Azure AD Identity Protection y analice las cuentas actuales de su entorno de prueba Microsoft 365 entorno de prueba empresarial.
 ms.openlocfilehash: 0cb0acf3faee13676573b04178bd6b4d3d36da4d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,23 +22,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905349"
 ---
-# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>Azure AD Identity Protection para el entorno de prueba de Microsoft 365 para empresas
+# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>Azure AD Identity Protection para el entorno de prueba Microsoft 365 para empresas
 
-*Esta Guía del laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
+*Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
 
 Puede usar Azure Active Directory (Azure AD) Identity Protection para detectar posibles vulnerabilidades que afecten a las identidades de su organización, configurar respuestas automatizadas e investigar incidentes. En este artículo se describe cómo usar Azure AD Identity Protection para ver el análisis de las cuentas del entorno de prueba.
 
-La configuración de Azure AD Identity Protection en el entorno de prueba de Microsoft 365 para empresas implica dos fases:
+La configuración de Azure AD Identity Protection en el entorno Microsoft 365 de prueba empresarial implica dos fases:
 
-- [Fase 1: Crear el entorno de prueba de Microsoft 365 para empresas](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fase 1: Crear su Microsoft 365 entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fase 2: Usar Azure AD Identity Protection](#phase-2-use-azure-ad-identity-protection)
 
 ![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para](../downloads/Microsoft365EnterpriseTLGStack.pdf)enterprise Test Lab Guide Stack .
+> Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Crear el entorno de prueba de Microsoft 365 para empresas
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Crear su Microsoft 365 entorno de prueba empresarial
 
 Si solo desea probar Azure AD Identity Protection de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -49,7 +49,7 @@ Si desea probar Azure AD Identity Protection en una empresa simulada, siga las i
   
 ## <a name="phase-2-use-azure-ad-identity-protection"></a>Fase 2: Usar Azure AD Identity Protection
 
-1. Abra una instancia privada del explorador e inicie sesión en Azure Portal con la cuenta de administrador global de su entorno de prueba de [https://portal.azure.com](https://portal.azure.com) Microsoft 365 para empresas.
+1. Abra una instancia privada del explorador e inicie sesión en Azure Portal con la cuenta de administrador global de su entorno de [https://portal.azure.com](https://portal.azure.com) prueba Microsoft 365 para empresas.
 2. En Azure Portal, escriba **Identity Protection** en el cuadro de búsqueda y, a continuación, seleccione Azure AD **Identity Protection**.
 3. En la **hoja Identity Protection - Overview,** seleccione cada informe para ver lo que está informando.
 4. En **Notificar**, seleccione **Usuarios en riesgo alertas detectadas**.

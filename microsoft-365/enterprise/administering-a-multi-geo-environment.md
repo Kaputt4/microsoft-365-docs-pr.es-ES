@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Los administradores pueden obtener información sobre cómo administrar los servicios de SharePoint y OneDrive en un entorno multigeónico.
+description: Los administradores pueden obtener información sobre cómo administrar SharePoint y OneDrive en un entorno multige geográfico.
 ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -107,4 +107,4 @@ Sin embargo, Stream no aún está disponible en las siguientes regiones que actu
 
 ## <a name="yammer"></a>Yammer
 
-Yammer no es una carga de trabajo Multi-Geo. Los subprocesos de Yammer almacenados en Yammer se colocarán en la ubicación central del inquilino. Yammer está implementando un cambio de almacenamiento de archivos que almacenará los archivos de Yammer en SharePoint. Los archivos de Yammer almacenados en SharePoint se colocarán en el sitio de SharePoint asociado al grupo Yammer. Los sitios de grupo de SharePoint se basan en la lógica PDL, tal como se describe en [Sitios y grupos de SharePoint.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)
+Yammer no es una carga de trabajo Multi-Geo. Yammer subprocesos almacenados en Yammer se colocarán en la ubicación central del espacio empresarial. Yammer está implementando un cambio de almacenamiento de archivos que almacenará los Yammer dentro de SharePoint. Yammer archivos almacenados en SharePoint se colocará el SharePoint asociado con el Yammer grupo. SharePoint los sitios de grupo se basan en la lógica pdl, tal como se describe [en SharePoint sitios y grupos](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).

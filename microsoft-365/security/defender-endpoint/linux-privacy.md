@@ -88,7 +88,7 @@ Hay cierta información acerca de los eventos que es común a todos, independien
 
 Los siguientes campos se consideran comunes para todos los eventos:
 
-| Campo                   | Descripción |
+| Field                   | Descripción |
 | ----------------------- | ----------- |
 | plataforma                | La clasificación general de la plataforma en la que se ejecuta la aplicación. Permite a Microsoft identificar en qué plataformas se puede producir un problema para que se pueda priorizar correctamente. |
 | machine_guid            | Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados. |
@@ -113,7 +113,7 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 Se recopilan los siguientes campos:
 
-| Campo            | Descripción |
+| Field            | Descripción |
 | ---------------- | ----------- |
 | correlation_id   | Identificador único asociado a la instalación. |
 | version          | Versión del paquete. |
@@ -125,7 +125,7 @@ Se recopilan los siguientes campos:
 
 Se recopilan los siguientes campos:
 
-| Campo                                               | Descripción |
+| Field                                               | Descripción |
 | --------------------------------------------------- | ----------- |
 | antivirus_engine.enable_real_time_protection        | Si la protección en tiempo real está habilitada en el dispositivo o no. |
 | antivirus_engine.passive_mode                       | Si el modo pasivo está habilitado en el dispositivo o no. |
@@ -147,7 +147,7 @@ Se recopilan los siguientes campos:
 
 Se recopilan los siguientes campos:
 
-| Campo            | Descripción |
+| Field            | Descripción |
 | ---------------- | ----------- |
 | from_version     | Versión original de inteligencia de seguridad. |
 | to_version       | Nueva versión de inteligencia de seguridad. |
@@ -162,7 +162,7 @@ Se recopilan los siguientes campos:
 
 Se recopilan los siguientes campos:
 
-| Campo            | Descripción |
+| Field            | Descripción |
 | ---------------- | ----------- |
 | version          | Versión de Defender para Endpoint en Linux. |
 | instance_id      | Identificador único generado en el inicio de extensión de kernel. |
@@ -196,7 +196,7 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 Se recopilan los siguientes campos:
 
-| Campo                                              | Descripción |
+| Field                                              | Descripción |
 | -------------------------------------------------- | ----------- |
 | connection_retry_timeout                           | Tiempo de espera de reintento de conexión cuando se comunica con la nube. |
 | file_hash_cache_maximum                            | Tamaño de la memoria caché del producto. |
@@ -218,7 +218,7 @@ Se recopilan los siguientes campos:
 
 Se recopilan los siguientes campos:
 
-| Campo                       | Descripción |
+| Field                       | Descripción |
 | --------------------------- | ----------- |
 | how_to_check                | Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales). |
 | channel_name                | Actualizar canal asociado al dispositivo. |
@@ -231,7 +231,7 @@ Se recopilan los siguientes campos:
 
 Se recopilan los siguientes campos:
 
-| Campo            | Descripción |
+| Field            | Descripción |
 | ---------------- | ----------- |
 | sha256           | Identificador SHA256 del registro de soporte técnico. |
 | size             | Tamaño del registro de soporte técnico. |
@@ -242,7 +242,7 @@ Se recopilan los siguientes campos:
 
 Se recopilan los siguientes campos:
 
-| Campo            | Descripción |
+| Field            | Descripción |
 | ---------------- | ----------- |
 | request_id       | Identificador de correlación para la solicitud de carga del registro de soporte técnico. |
 | sha256           | Identificador SHA256 del registro de soporte técnico. |
@@ -258,7 +258,7 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 Se recopilan los siguientes campos:
 
-| Campo                          | Descripción |
+| Field                          | Descripción |
 | ------------------------------ | ----------- |
 | pkt_ack_timeout                | Las siguientes propiedades son valores numéricos agregados, que representan el recuento de eventos que se han producido desde el inicio de la extensión del kernel. |
 | pkt_ack_conn_timeout             | |

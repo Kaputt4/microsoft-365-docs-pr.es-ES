@@ -16,7 +16,7 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Use la prevención de pérdida de datos (DLP) en SharePoint Online para detectar documentos que contienen datos confidenciales en todo el espacio empresarial.
+description: Use prevención de pérdida de datos (DLP) en SharePoint Online para detectar documentos que contienen datos confidenciales en todo el espacio empresarial.
 ms.openlocfilehash: 9582974a26e0e112a6b3851494d057cad2010796
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,10 +26,10 @@ ms.locfileid: "50906784"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Crear una consulta para buscar datos confidenciales almacenados en los sitios
 
-Los usuarios suelen almacenar datos confidenciales, como números de tarjeta de crédito, números de seguridad social o personales, en sus sitios, y con el tiempo esto puede exponer a una organización a un riesgo significativo de pérdida de datos. Los documentos almacenados en sitios(incluidos los sitios de OneDrive para la Empresa) podrían compartirse con personas de fuera de la organización que no deberían tener acceso a la información. Con la prevención de pérdida de datos (DLP) en SharePoint Online, puede detectar documentos que contienen datos confidenciales en todo el espacio empresarial. Después de descubrir los documentos, puede trabajar con los propietarios de documentos para proteger los datos. Este tema puede ayudarle a crear una consulta para buscar datos confidenciales.
+Los usuarios suelen almacenar datos confidenciales, como números de tarjeta de crédito, números de seguridad social o personales, en sus sitios, y con el tiempo esto puede exponer a una organización a un riesgo significativo de pérdida de datos. Los documentos almacenados en sitios, incluidos OneDrive para la Empresa web, podrían compartirse con personas de fuera de la organización que no deberían tener acceso a la información. Con prevención de pérdida de datos (DLP) en SharePoint Online, puede detectar documentos que contienen datos confidenciales en todo el espacio empresarial. Después de descubrir los documentos, puede trabajar con los propietarios de documentos para proteger los datos. Este tema puede ayudarle a crear una consulta para buscar datos confidenciales.
   
 > [!NOTE]
-> La detección electrónica o eDiscovery y DLP son características premium que requieren [SharePoint Online Plan 2](https://go.microsoft.com/fwlink/?LinkId=510080). 
+> La detección electrónica o la exhibición de documentos electrónicos y DLP son características premium que requieren [SharePoint Plan 2 en línea.](https://go.microsoft.com/fwlink/?LinkId=510080) 
   
 ## <a name="forming-a-basic-dlp-query"></a>Formación de una consulta básica de DLP
 
@@ -39,11 +39,11 @@ Una consulta básica de DLP está formada por tres partes: SensitiveType, interv
   
 ### <a name="sensitive-type---required"></a>Tipo confidencial: obligatorio
 
-¿Qué es cada parte? Las consultas DLP de SharePoint suelen comenzar con la propiedad y un nombre de tipo de información del inventario de tipos de información `SensitiveType:"` confidencial y terminan con un [](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) `"` . También puede usar el nombre de un tipo [de información confidencial personalizado](create-a-custom-sensitive-information-type.md) que creó para su organización. Por ejemplo, tal vez esté buscando documentos que contienen números de tarjetas de crédito. En tal caso, usaría el siguiente formato:  `SensitiveType:"Credit Card Number"` . Dado que no incluye el intervalo de recuento ni el intervalo de confianza, la consulta devuelve todos los documentos en los que se detecta un número de tarjeta de crédito. Esta es la consulta más sencilla que se puede ejecutar y devuelve la mayoría de los resultados. Tenga en cuenta que la ortografía y el espaciado del tipo confidencial son importantes. 
+¿Qué es cada parte? SharePoint Las consultas DLP suelen comenzar con la propiedad y un nombre de tipo de información del inventario de tipos de información `SensitiveType:"` confidencial y terminan con un [](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) `"` . También puede usar el nombre de un tipo [de información confidencial personalizado](create-a-custom-sensitive-information-type.md) que creó para su organización. Por ejemplo, tal vez esté buscando documentos que contienen números de tarjetas de crédito. En tal caso, usaría el siguiente formato:  `SensitiveType:"Credit Card Number"` . Dado que no incluye el intervalo de recuento ni el intervalo de confianza, la consulta devuelve todos los documentos en los que se detecta un número de tarjeta de crédito. Esta es la consulta más sencilla que se puede ejecutar y devuelve la mayoría de los resultados. Tenga en cuenta que la ortografía y el espaciado del tipo confidencial son importantes. 
   
 ### <a name="ranges---optional"></a>Intervalos: opcionales
 
-Las dos partes siguientes son rangos, por lo que vamos a examinar rápidamente cómo es un rango. En las consultas DLP de SharePoint, un intervalo básico se representa mediante dos números separados por dos puntos, que tiene este aspecto:  `[number]..[number]` . Por ejemplo, si  `10..20` se usa, ese intervalo capturaría números del 10 al 20. Hay muchas combinaciones de intervalos diferentes y varias de ellas se tratan en este tema. 
+Las dos partes siguientes son rangos, por lo que vamos a examinar rápidamente cómo es un rango. En SharePoint de DLP, un intervalo básico se representa mediante dos números separados por dos puntos, que tiene este aspecto: `[number]..[number]` . Por ejemplo, si  `10..20` se usa, ese intervalo capturaría números del 10 al 20. Hay muchas combinaciones de intervalos diferentes y varias de ellas se tratan en este tema. 
   
 Vamos a agregar un intervalo de recuento a la consulta. Puede usar el intervalo de recuento para definir el número de repeticiones de información confidencial que debe contener un documento antes de incluirlo en los resultados de la consulta. Por ejemplo, si desea que la consulta devuelva solo documentos que contengan exactamente cinco números de tarjeta de crédito, use esto:  `SensitiveType:"Credit Card Number|5"` . El intervalo de recuento también puede ayudar a identificar los documentos que suponen altos niveles de riesgo. Por ejemplo, su organización puede considerar como un riesgo alto los documentos con cinco o más números de tarjeta de crédito. Para buscar documentos que se ajusten a este criterio, use esta consulta:  `SensitiveType:"Credit Card Number|5.."` . Como alternativa, puede encontrar documentos con cinco o menos números de tarjeta de crédito mediante esta consulta:  `SensitiveType:"Credit Card Number|..5"` . 
   
@@ -58,7 +58,7 @@ Por último, el intervalo de confianza es el nivel de confianza con el que el ti
 
 DLP en SharePoint también presenta la propiedad LastSensitiveContentScan, que puede ayudarle a buscar archivos analizados en un período de tiempo específico. Para obtener ejemplos de consulta con la  `LastSensitiveContentScan` propiedad, vea [los ejemplos de consultas complejas](#examples-of-complex-queries) en la sección siguiente. 
   
-No solo puede usar propiedades específicas de DLP para crear una consulta, sino también propiedades de búsqueda de exhibición de documentos electrónicos estándar de SharePoint como  `Author` o  `FileExtension` . Puede usar operadores para crear consultas complejas. Para obtener la lista de propiedades y operadores disponibles, vea la entrada de blog [Using Search Properties and Operators with eDiscovery.](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) 
+No solo puede usar propiedades específicas de DLP para crear una consulta, sino también propiedades SharePoint búsqueda de exhibición de documentos electrónicos como `Author` o `FileExtension` . Puede usar operadores para crear consultas complejas. Para obtener la lista de propiedades y operadores disponibles, vea la entrada de blog [Using Search Properties and Operators with eDiscovery.](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) 
   
 ## <a name="examples-of-complex-queries"></a>Ejemplos
 
