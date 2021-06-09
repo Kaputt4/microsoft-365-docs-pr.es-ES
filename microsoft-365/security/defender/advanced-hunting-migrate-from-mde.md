@@ -38,7 +38,7 @@ ms.locfileid: "52470693"
 Mueva los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint para buscar de forma proactiva amenazas mediante un conjunto más amplio de datos. En Microsoft 365 Defender, obtiene acceso a los datos de otras Microsoft 365 de seguridad, como:
 
 - Microsoft Defender para punto de conexión
-- Microsoft Defender para Office 365
+- Microsoft Defender para Office 365
 - Microsoft Cloud App Security
 - Microsoft Defender for Identity
 
@@ -178,7 +178,7 @@ AlertInfo
 | where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Activar Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)

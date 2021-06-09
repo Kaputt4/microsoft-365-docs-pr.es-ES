@@ -1,6 +1,6 @@
 ---
-title: Plantillas y iconos de arquitectura de Microsoft 365
-description: Iconos para usar en diagramas de arquitectura de creación para Microsoft 365.
+title: Microsoft 365 y plantillas de arquitectura
+description: Iconos para su uso en la creación de diagramas de arquitectura para Microsoft 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -17,34 +17,34 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "49688824"
 ---
-# <a name="microsoft-365-architecture-icons-and-templates"></a>Plantillas y iconos de arquitectura de Microsoft 365
+# <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365 y plantillas de arquitectura
 
-Es importante ayudar a nuestros partners y clientes a diseñar y diseñar nuevas soluciones. Los diagramas de arquitectura como los incluidos en nuestras instrucciones pueden ayudar a comunicar las decisiones de diseño y las relaciones entre los componentes de un entorno. Usamos un conjunto de símbolos e iconos junto con las plantillas de Visio para crear los diagramas de arquitectura que ofrecemos y proporcionamos estas herramientas aquí para ayudarle a crear un diagrama de arquitectura personalizado para la siguiente solución.
+Es importante ayudar a nuestros socios y clientes a diseñar y diseñar nuevas soluciones. Diagramas de arquitectura como los incluidos en nuestra guía pueden ayudar a comunicar las decisiones de diseño y las relaciones entre los componentes de un entorno. Usamos un conjunto de símbolos e iconos junto con plantillas de Visio para crear los diagramas de arquitectura que ofrecemos y proporcionamos estas herramientas aquí para ayudarle a crear un diagrama de arquitectura personalizado para su próxima solución.
 
-Puedes ver estos iconos, símbolos y plantillas en acción en archivos descargables disponibles en las páginas siguientes:
+Puede ver estos iconos, símbolos y plantillas en acción en los archivos descargables disponibles en las páginas siguientes:
 
 - [Ilustraciones de productividad](productivity-illustrations.md)
 - [Modelos de arquitectura de la nube de Microsoft](cloud-architecture-models.md)
 
 ## <a name="terms-and-download"></a>Términos y descarga
 
-Microsoft permite el uso de estos iconos en diagramas de arquitectura, materiales de aprendizaje o documentación. Puede copiar, distribuir y mostrar los iconos solo para el uso permitido a menos que Microsoft le conceda un permiso explícito. Microsoft reserves all other rights.
+Microsoft permite el uso de estos iconos en diagramas de arquitectura, materiales de aprendizaje o documentación. Puede copiar, distribuir y mostrar los iconos solo para el uso permitido a menos que Microsoft le conceda permiso explícito. Microsoft reserves all other rights.
 
 
  > [!div class="button"]
  > [Descargar iconos SVG y PNG](https://go.microsoft.com/fwlink/?linkid=869455)
 
  > [!div class="button"]
- > [Descargar plantillas y galerías de símbolos de Visio](https://go.microsoft.com/fwlink/?linkid=2056186)
+ > [Descargar Visio plantillas y galerías de símbolos](https://go.microsoft.com/fwlink/?linkid=2056186)
 
 ## <a name="example-architecture-diagrams"></a>Diagramas de arquitectura de ejemplo
 
-Puede usar estos iconos y plantillas para crear diagramas como los siguientes ejemplos:
+Puede usar estos iconos y plantillas para crear diagramas como los ejemplos siguientes:
 
 1. Diagrama de arquitectura de búsqueda de ejemplo para SharePoint:
 
     ![Arquitectura de búsqueda de ejemplo para SharePoint](../media/configure-search-for-multi-geo-image1-1.png)
 
-2. Diagrama de arquitectura del ciclo de vida de retención de Teams:
+2. Teams arquitectura del ciclo de vida de retención:
 
-    ![Ciclo de vida de retención de Teams](../media/TeamsRetentionLifecycle.png)
+    ![Teams de retención](../media/TeamsRetentionLifecycle.png)

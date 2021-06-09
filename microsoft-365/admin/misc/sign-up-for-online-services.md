@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: 'Aprenda a usar el correo electrónico de trabajo o escuela para registrarse en los servicios en línea de Microsoft sin la intervención de su departamento de TI. '
+description: 'Aprenda a usar el correo electrónico de trabajo o escuela para registrarse en los servicios en línea de Microsoft sin que su departamento de TI se implique. '
 ms.openlocfilehash: ad46d698398da32d88d0c1617499b326e8fcb163
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644872"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Es posible que su dominio esté en uso si otra persona se suscribió a él
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Su dominio puede estar en uso si otra persona se ha registrado con él
 
 Los usuarios con un correo electrónico profesional o educativo pueden [registrarse para algunos servicios en línea de Microsoft](self-service-sign-up.md) sin la intervención de su departamento de TI. Por ejemplo, servicios como Office 365, Power BI y Rights Management Services. Al completar el registro de autoservicio, que hacen al proporcionar las direcciones de correo electrónico profesionales o educativas, tienen acceso a características incluidas en el servicio, pero no podrán administrar el servicio (agregar usuarios, agregar licencias, administrar el dominio, etc.). 
   

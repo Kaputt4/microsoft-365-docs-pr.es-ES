@@ -35,16 +35,16 @@ Cuando los criterios de una directiva de prevención de pérdida de datos (DLP) 
 
 ## <a name="workloads"></a>Cargas de trabajo
 
-El [panel de administración de alertas DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)en el Centro de cumplimiento de Microsoft [365,](https://compliance.microsoft.com/)muestra alertas de directivas DLP en estas cargas de trabajo:
+El [panel de administración de alertas DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts), en el centro de Microsoft 365 [cumplimiento,](https://compliance.microsoft.com/)muestra alertas para directivas DLP en estas cargas de trabajo:
 
 - Exchange
 - SharePoint
 - OneDrive
 - Teams
-- Dispositivos Windows 10 
+- Dispositivos con Windows 10 
 
 > [!TIP]
-> Los clientes que usan [DLP](endpoint-dlp-learn-about.md) de extremo que son aptos para DLP de Teams verán sus alertas de directiva [DLP](dlp-microsoft-teams.md) de extremo y las alertas de directiva DLP de Teams en el panel de administración de alertas dlp.
+> Los clientes que usan [DLP](endpoint-dlp-learn-about.md) de extremo que son elegibles para [Teams DLP](dlp-microsoft-teams.md) verán sus alertas de directiva DLP de punto de conexión y Teams de directivas DLP en el panel de administración de alertas dlp.
 
 ## <a name="single-alert-and-aggregate-alert"></a>Alerta única y alerta agregada
 
@@ -62,7 +62,7 @@ Estos son algunos de los eventos asociados con una alerta. En la interfaz de usu
 
 |Nombre de propiedad  |Descripción  |Tipos de eventos  |
 |---------|---------|---------|
-|Id. |id. único asociado con el evento |todos los eventos |
+|ID |id. único asociado con el evento |todos los eventos |
 |Ubicación |carga de trabajo donde se detectó el evento|todos los eventos |
 |tiempo de actividad     |tiempo de la actividad del usuario que coincide con los criterios de la directiva DLP |
 
@@ -70,23 +70,23 @@ Estos son algunos de los eventos asociados con una alerta. En la interfaz de usu
 
 |Nombre de propiedad |Descripción| Tipos de eventos|
 |---------|---------|---------|
-|usuario | usuario que realizó la acción que causó la coincidencia de la directiva | todos los eventos|
+|Usuario | usuario que realizó la acción que causó la coincidencia de la directiva | todos los eventos|
 |nombre de host | nombre de host del equipo donde se produjo la coincidencia de directiva DLP | eventos de dispositivo|
 |Dirección IP | Dirección IP del equipo donde se produjo la coincidencia de directiva DLP | eventos de dispositivo|
 |sha1 |Hash SHA-1 del archivo | eventos de dispositivo|
 |sha256 | Hash SHA-256 del archivo | eventos de dispositivo|
-|Id. de dispositivo MDATP | Id. MDATP del dispositivo de extremo|
-|tamaño de archivo | tamaño del archivo| Eventos de SharePoint, OneDrive y dispositivo|
-|ruta de acceso del archivo | la ruta de acceso absoluta del elemento implicado con la coincidencia de directiva DLP | Eventos de SharePoint, OneDrive y dispositivos|
-|destinatarios de correo electrónico |si un correo electrónico era el elemento confidencial que coincidía con la directiva DLP, este campo incluye los destinatarios de ese correo electrónico| Eventos de Exchange|
-|asunto del correo electrónico |asunto del correo electrónico que coincide con la directiva DLP |Eventos de Exchange|
-|datos adjuntos de correo electrónico | nombres de los datos adjuntos del correo electrónico que coinciden con la directiva DLP| Eventos de Exchange|
-|propietario del sitio |nombre del propietario del sitio| Eventos de SharePoint y OneDrive|
-|URL del sitio |completa de la dirección URL del sitio de SharePoint o OneDrive donde se produjo la coincidencia de directiva DLP |Eventos de SharePoint y OneDrive|
-|archivo creado |tiempo de creación del archivo que coincide con la directiva DLP |Eventos de SharePoint y OneDrive|
-|archivo modificado por última vez | la última vez que se cambió el archivo que coincidía con la directiva DLP | Eventos de SharePoint y OneDrive|
-|tamaño de archivo | tamaño del archivo que coincide con la directiva DLP |Eventos de SharePoint y OneDrive|
-|propietario del archivo |propietario del archivo que coincide con la directiva DLP |Eventos de SharePoint y OneDrive|  
+|MDATP de dispositivo | identificador de dispositivo de MDATP extremo|
+|tamaño de archivo | tamaño del archivo| SharePoint, OneDrive y eventos de dispositivo|
+|ruta de acceso del archivo | la ruta de acceso absoluta del elemento implicado con la coincidencia de directiva DLP | SharePoint, OneDrive y eventos de dispositivos|
+|destinatarios de correo electrónico |si un correo electrónico era el elemento confidencial que coincidía con la directiva DLP, este campo incluye los destinatarios de ese correo electrónico| Exchange eventos|
+|asunto del correo electrónico |asunto del correo electrónico que coincide con la directiva DLP |Exchange eventos|
+|datos adjuntos de correo electrónico | nombres de los datos adjuntos del correo electrónico que coinciden con la directiva DLP| Exchange eventos|
+|propietario del sitio |nombre del propietario del sitio| SharePoint y OneDrive eventos|
+|URL del sitio |completa de la dirección URL del sitio SharePoint o OneDrive donde se produjo la coincidencia de directiva DLP |SharePoint y OneDrive eventos|
+|archivo creado |tiempo de creación del archivo que coincide con la directiva DLP |SharePoint y OneDrive eventos|
+|archivo modificado por última vez | la última vez que se cambió el archivo que coincidía con la directiva DLP | SharePoint y OneDrive eventos|
+|tamaño de archivo | tamaño del archivo que coincide con la directiva DLP |SharePoint y OneDrive eventos|
+|propietario del archivo |propietario del archivo que coincide con la directiva DLP |SharePoint y OneDrive eventos|  
 
 ### <a name="policy-details"></a>Detalles de la directiva
 

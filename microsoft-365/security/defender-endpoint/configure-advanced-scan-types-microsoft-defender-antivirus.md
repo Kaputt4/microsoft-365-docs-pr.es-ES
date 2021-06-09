@@ -58,17 +58,17 @@ Vea [How to create and deploy antimalware policies: Scan settings](/configmgr/pr
 
 | Ubicación y elemento de directiva | Configuración predeterminada (si no está configurada) | Parámetro de PowerShell `Set-MpPreference` o propiedad WMI para `MSFT_MpPreference` clase |
 |---|---|---|
-| Análisis de correo electrónico <p> **Examen**  >  **Activar el examen de correo electrónico**<p>Vea [Limitaciones del examen de correo](#email-scanning-limitations) electrónico (en este artículo) | Deshabilitada | `-DisableEmailScanning` |
-|Examinar [puntos de repetición](/windows/win32/fileio/reparse-points) <p> **Examen**  >  **Activar el examen de puntos de repetición** | Deshabilitada | No disponible <p>Ver [Puntos de reanco](/windows/win32/fileio/reparse-points)  |
-| Examinar unidades de red asignadas <p> **Examen**  >  **Ejecutar examen completo en unidades de red asignadas** | Deshabilitada | `-DisableScanningMappedNetworkDrivesForFullScan`|
+| Análisis de correo electrónico <p> **Examen**  >  **Activar el examen de correo electrónico**<p>Vea [Limitaciones del examen de correo](#email-scanning-limitations) electrónico (en este artículo) | Deshabilitado | `-DisableEmailScanning` |
+|Examinar [puntos de repetición](/windows/win32/fileio/reparse-points) <p> **Examen**  >  **Activar el examen de puntos de repetición** | Deshabilitado | No disponible <p>Ver [Puntos de reanco](/windows/win32/fileio/reparse-points)  |
+| Examinar unidades de red asignadas <p> **Examen**  >  **Ejecutar examen completo en unidades de red asignadas** | Deshabilitado | `-DisableScanningMappedNetworkDrivesForFullScan`|
 | Examinar archivos de archivo (como .zip o .rar archivos).  <p> **Examen**  >  **Examinar archivos de archivo** | Habilitado | `-DisableArchiveScanning` <p>La [lista de exclusiones de extensiones](configure-extension-file-exclusions-microsoft-defender-antivirus.md) tendrá prioridad sobre esta configuración.|
-| Examinar archivos en la red <p> **Examen**  >  **Examinar archivos de red** | Deshabilitada | `-DisableScanningNetworkFiles` |
+| Examinar archivos en la red <p> **Examen**  >  **Examinar archivos de red** | Deshabilitado | `-DisableScanningNetworkFiles` |
 | Examinar archivos ejecutables empaquetados <p> **Examen**  >  **Examinar archivos ejecutables empaquetados** | Habilitado | No disponible |
-| Examinar solo unidades extraíbles durante exámenes completos <p> **Examen**  >  **Examinar unidades extraíbles** | Deshabilitada | `-DisableRemovableDriveScanning` |
+| Examinar solo unidades extraíbles durante exámenes completos <p> **Examen**  >  **Examinar unidades extraíbles** | Deshabilitado | `-DisableRemovableDriveScanning` |
 | Especificar el nivel de subcarpetas dentro de una carpeta de archivo para examinar <p>**Examen**  >  **Especificar la profundidad máxima para examinar archivos de archivo** | 0 | No disponible |
 | Especifique la carga máxima de CPU (como porcentaje) durante un examen. <p> **Examen**  >  **Especificar el porcentaje máximo de uso de CPU durante un examen** | 50 |  `-ScanAvgCPULoadFactor` <p>**NOTA:** La carga máxima de CPU no es un límite difícil, pero es una guía para que el motor de análisis no supere el máximo en promedio. Los exámenes de ejecución manual omitirán esta configuración y se ejecutarán sin límites de CPU. |
 | Especifique el tamaño máximo (en kilobytes) de los archivos de archivo que deben examinarse. <p> **Examen**  >  **Especificar el tamaño máximo de los archivos de archivo que se examinarán** | Sin límite | No disponible <p>El valor predeterminado de 0 no aplica ningún límite |
-| Configurar una prioridad de CPU baja para exámenes programados <p> **Examen**  >  **Configurar una prioridad de CPU baja para exámenes programados** | Deshabilitada | No disponible |
+| Configurar una prioridad de CPU baja para exámenes programados <p> **Examen**  >  **Configurar una prioridad de CPU baja para exámenes programados** | Deshabilitado | No disponible |
  
 > [!NOTE]
 > Si la protección en tiempo real está activada, los archivos se examinan antes de tener acceso a ellos y ejecutarse. El ámbito de examen incluye todos los archivos, incluidos los archivos en medios extraíbles montados, como las unidades USB. Si el dispositivo que realiza el examen tiene activada la protección en tiempo real o la protección en tiempo real, el examen también incluirá recursos compartidos de red.

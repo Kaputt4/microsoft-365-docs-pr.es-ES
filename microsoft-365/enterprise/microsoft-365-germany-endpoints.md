@@ -1,5 +1,5 @@
 ---
-title: Puntos de conexión de Office 365 para Alemania
+title: Office 365 de conexión para Alemania
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -29,13 +29,13 @@ ms.locfileid: "51759899"
 ---
 # <a name="office-365-germany-endpoints"></a>Puntos de conexión de Office 365 de Alemania
 
- *Se aplica a: Administrador de Office 365*
+ *Se aplica a: Office 365 Admin*
 
-Office 365 requiere conectividad a Internet. Los puntos de conexión siguientes deben ser accesibles solo para los clientes que usan planes de **Office 365 Germany.**
+Office 365 requiere conectividad a Internet. Los puntos de conexión siguientes deben ser accesibles para los clientes que **usan Office 365 planes de** Alemania.
 
 > [!NOTE]
-> Para los clientes, que están en la transición a la nueva región del centro de datos de Microsoft 365 en Alemania, los puntos de conexión cambiarán.
-> Para obtener información adicional, consulte Migración de [Microsoft Cloud Deutschland a los servicios de Office 365](ms-cloud-germany-transition.md)en las nuevas regiones del centro de datos alemán.
+> Para los clientes, que están en la transición a la nueva región Microsoft 365 centro de datos en Alemania, los puntos de conexión cambiarán.
+> Para obtener información adicional, consulte [Migración de Microsoft Cloud Deutschland a Office 365 servicios](ms-cloud-germany-transition.md)en las nuevas regiones del centro de datos alemán.
   
  **Puntos de conexión de Office 365:** [mundial (incluido GCC)](urls-and-ip-address-ranges.md)  | [Office 365 operado por 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany*  |  [Office 365 Administración Pública de Estados Unidos (DoD)](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 Administración Pública de Estados Unidos (GCC High)](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
@@ -47,7 +47,7 @@ Comience por [Administración de puntos de conexión de Office 365](managing-off
 
 Los datos que se muestran en la página siguiente se generan a partir de los servicios web basados en REST. Si usa un script o un dispositivo de red para tener acceso a estos datos, debería ir al [servicio web](microsoft-365-ip-web-service.md) directamente.
 
-Los datos de punto de conexión siguientes enumeran los requisitos de conectividad desde el equipo de un usuario a Office 365. No incluye conexiones de red de Microsoft a una red de clientes, a veces denominadas conexiones de red híbridas o entrantes.
+Los datos de punto de conexión siguientes enumeran los requisitos de conectividad desde la máquina de un usuario a Office 365. No incluye conexiones de red de Microsoft a una red de clientes, a veces denominadas conexiones de red híbridas o entrantes.
 
 Los puntos de conexión se agrupan en cuatro áreas de servicio. Las tres primeras se pueden seleccionar por separado para la conectividad; la cuarta área de servicio es una dependencia común (denominada de Microsoft 365 Common y Office) y debe disponer de conectividad de red en todo momento.
 

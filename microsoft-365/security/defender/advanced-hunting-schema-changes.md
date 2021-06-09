@@ -60,7 +60,7 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 | `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Rebranding |
 | `DetectionSource` | CustomerTI |  TI personalizada | Rebranding |
-| `DetectionSource` | OfficeATP | Microsoft Defender para Office 365 | Rebranding |
+| `DetectionSource` | OfficeATP | Microsoft Defender para Office 365 | Rebranding |
 | `DetectionSource` | MTP   | Microsoft 365 Defender | Rebranding |
 | `DetectionSource` | AzureATP |    Microsoft Defender for Identity | Rebranding |
 | `DetectionSource` | CustomDetection   | Detección personalizada | Rebranding |
@@ -69,7 +69,7 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 | `DetectionSource` | TI de terceros | Sensores de terceros | Rebranding |
 | `ServiceSource` | ATP de Microsoft Defender| Microsoft Defender para punto de conexión | Rebranding |
 |`ServiceSource` |Protección contra amenazas de Microsoft   | Microsoft 365 Defender | Rebranding |
-| `ServiceSource` | ATP de Office 365  |Microsoft Defender para Office 365 | Rebranding |
+| `ServiceSource` | ATP de Office 365  |Microsoft Defender para Office 365 | Rebranding |
 | `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | Rebranding |
 
 `DetectionSource`está disponible en la [tabla AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`está disponible en las [tablas AlertEvidence](advanced-hunting-alertevidence-table.md) [y AlertInfo.](advanced-hunting-alertinfo-table.md) 

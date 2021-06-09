@@ -79,7 +79,7 @@ Para obtener preguntas más frecuentes acerca del uso del trasvase de unidades p
     
 - El trasvase de unidades está disponible a través Enterprise Agreement (EA) de Microsoft. El envío de unidades no está disponible mediante un Contrato de productos y servicios de Microsoft (MPSA).
     
-- El costo de importar archivos PST a Microsoft 365 buzones de correo mediante el trasvase de unidades es de 2 USD por GB de datos. Por ejemplo, si envía una unidad de disco duro que contiene 1000 GB (1 TB) de archivos PST, el costo es 2000 USD. Puede colaborar con un asociado para abonar la cuota de importación. Para obtener información sobre cómo buscar un asociado, consulte [Buscar un asociado o distribuidor de Microsoft](../admin/manage/find-your-partner-or-reseller.md).
+- El costo de la importación de los archivos PST a los buzones de Microsoft 365 mediante el envío de unidades es de 2 $ por cada GB de datos. Por ejemplo, si envía una unidad de disco duro que contiene 1000 GB (1 TB) de archivos PST, el costo es 2000 USD. Puede colaborar con un asociado para abonar la cuota de importación. Para obtener información sobre cómo buscar un asociado, consulte [Buscar un asociado o distribuidor de Microsoft](../admin/manage/find-your-partner-or-reseller.md).
     
 - Usted o su organización debe tener una cuenta con FedEx o DHL. 
     
@@ -124,7 +124,7 @@ El primer paso es descargar la clave de almacenamiento seguro y la herramienta y
     > [!NOTE]
     > Como se ha indicado anteriormente, debe tener asignados  los permisos adecuados para tener acceso a la página Importar en el centro de Microsoft 365 cumplimiento. 
   
-3. En la **pestaña Importar,** haga clic ![ en Agregar icono Nuevo trabajo de ](../media/ITPro-EAC-AddIcon.gif) **importación**.
+3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
     
 4. En el Asistente para importar trabajo, escriba un nombre para el trabajo de importación de PST y, a continuación, haga clic **en Siguiente**. Use letras minúsculas, números, guiones y caracteres de subrayado. Las letras en mayúscula no se pueden usar ni se pueden incluir espacios en el nombre.
     
@@ -179,7 +179,7 @@ El siguiente paso es usar la herramienta WAImportExport.exe para copiar archivos
     | `/t:` <br/> |Especifica la letra de la unidad de disco duro cuando se conecta a su equipo local.  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |Especifica el nombre de la sesión de copia. Cada vez que ejecuta la herramienta WAImportExport.exe para copiar los archivos en la unidad de disco duro, se define una sesión. Los archivos PST se copian en una carpeta cuyo nombre es el nombre de la sesión especificado por este parámetro.   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |Especifica el directorio de origen de la organización que contiene los archivos PST que se copiarán durante la sesión. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |Especifica el directorio de destino en el Azure Storage en la nube de Microsoft donde se cargarán los PST. Debe usar el valor  `ingestiondata/` . No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> Opcionalmente, también puede agregar una ruta de acceso de archivo adicional al valor de este parámetro. Por ejemplo, puede usar la ruta de acceso del archivo del directorio de origen en la unidad de disco duro (convertida a un formato de dirección URL), que se especifica en el  `/srcdir:` parámetro. Por ejemplo,  `\\FILESERVER01\PSTs` se cambia a  `FILESERVER01/PSTs` . En este caso, aún debe incluir en  `ingestiondata` la ruta de acceso del archivo. Por lo tanto, en este ejemplo, el valor del  `/dstdir:` parámetro sería  `"ingestiondata/FILESERVER01/PSTs"` .  <br/> Si tiene archivos PST con el mismo nombre de archivo, debería agregar la ruta de acceso de archivo adicional.  <br/> > [!NOTE]> Si incluye el pathname opcional, el espacio de nombres de un archivo PST después de cargarlo en el área Azure Storage incluye el nombre de ruta de acceso y el nombre del archivo PST; por ejemplo, `FILESERVER01/PSTs/annb.pst` . Si no incluye un nombre de ruta de acceso, el espacio de nombres es solo el nombre de archivo PST; por ejemplo  `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> O bien  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |Especifica el directorio de destino en el Azure Storage en la nube de Microsoft donde se cargarán los PST. Debe usar el valor  `ingestiondata/` . No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> Opcionalmente, también puede agregar una ruta de acceso de archivo adicional al valor de este parámetro. Por ejemplo, puede usar la ruta de acceso del archivo del directorio de origen en la unidad de disco duro (convertida a un formato de dirección URL), que se especifica en el  `/srcdir:` parámetro. Por ejemplo,  `\\FILESERVER01\PSTs` se cambia a  `FILESERVER01/PSTs` . En este caso, aún debe incluir en  `ingestiondata` la ruta de acceso del archivo. Por lo tanto, en este ejemplo, el valor del  `/dstdir:` parámetro sería  `"ingestiondata/FILESERVER01/PSTs"` .  <br/> Si tiene archivos PST con el mismo nombre de archivo, debería agregar la ruta de acceso de archivo adicional.  <br/> > [!NOTE]> Si incluye el pathname opcional, el espacio de nombres de un archivo PST después de cargarlo en el área Azure Storage incluye el nombre de ruta de acceso y el nombre del archivo PST; por ejemplo, `FILESERVER01/PSTs/annb.pst` . Si no incluye un nombre de ruta de acceso, el espacio de nombres es solo el nombre de archivo PST; por ejemplo  `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> O bien:  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/sk:` <br/> |Especifica la clave de la cuenta de almacenamiento que obtuvo en el paso 1. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
     | `/blobtype:` <br/> |Especifica el tipo de blobs en el área Azure Storage a la que se importarán los archivos PST. Para importar archivos PST, use el valor **BlockBlob**. Este parámetro es obligatorio.   <br/> | `/blobtype:BlockBlob` <br/> |
     | `/encrypt` <br/> |Este modificador activa BitLocker en la unidad de disco duro. Este parámetro es necesario la primera vez que ejecuta la herramienta WAImportExport.exe.  <br/> La BitLocker de cifrado se copia en el archivo de diario y el archivo de registro que se crea si se usa el `/logfile:` parámetro. Como se ha explicado anteriormente, el archivo de diario se guarda en la misma carpeta en la que se encuentra la herramienta WAImportExport.exe.  <br/> | `/encrypt` <br/> |
@@ -255,7 +255,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
 
 2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en **Importar gobierno de** \> **información.**
 
-3. En la **pestaña Importar,** haga clic ![ en Agregar icono Nuevo trabajo de ](../media/ITPro-EAC-AddIcon.gif) **importación**.
+3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
 
     > [!NOTE]
     > Como se ha indicado anteriormente, debe tener asignados  los permisos adecuados para tener acceso a la página Importar en el centro de Microsoft 365 cumplimiento.
@@ -402,9 +402,9 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel izquierdo del centro de Microsoft 365 cumplimiento, haga clic en **Gobierno de > Importar**.
+2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Control de la información > Importar**.
 
-3. En la **pestaña Importar,** haga clic ![ en Agregar icono Nuevo trabajo de ](../media/ITPro-EAC-AddIcon.gif) **importación**.
+3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
 
 4. En el Asistente para importar trabajo, escriba un nombre para el trabajo de importación de PST y, a continuación, haga clic **en Siguiente**. Use letras minúsculas, números, guiones y caracteres de subrayado. Las letras en mayúscula no se pueden usar ni se pueden incluir espacios en el nombre.
 

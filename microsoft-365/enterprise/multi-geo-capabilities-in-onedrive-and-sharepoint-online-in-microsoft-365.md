@@ -27,7 +27,7 @@ ms.locfileid: "48995914"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Capacidades multigeográficas de OneDrive y SharePoint Online
 
-Las capacidades multige geográficas de OneDrive y SharePoint Online permiten controlar recursos compartidos como sitios de grupo de SharePoint y buzones de grupo de Microsoft 365 almacenados en reposo en un país o región.
+Las funcionalidades multigeón en OneDrive y SharePoint Online permiten controlar recursos compartidos como sitios de grupo de SharePoint y buzones de grupo de Microsoft 365 almacenados en reposo en un país o región.
 
 Todos los usuarios, buzones de grupo y sitios de SharePoint tienen una Ubicación de datos preferida (PDL) que indica la ubicación geográfica donde están almacenados los datos relacionados. Los datos personales de los usuarios (buzón de Exchange y OneDrive), junto con los Grupos de Microsoft 365 o los sitios de SharePoint que creen, pueden almacenarse en la ubicación geográfica especificada para cumplir los requisitos de residencia de datos. También puede [especificar administradores diferentes para cada ubicación geográfica](add-a-sharepoint-geo-admin.md).
 

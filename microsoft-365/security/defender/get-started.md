@@ -1,7 +1,7 @@
 ---
 title: Introducción a Microsoft 365 Defender
 ms.reviewer: ''
-description: Obtenga información sobre los pasos que debe seguir para empezar a trabajar con Microsoft 365 Defender
+description: Obtenga información sobre los pasos que debe seguir para empezar a usar Microsoft 365 Defender
 keywords: introducción, microsoft 365 defender, activar, incorporar, implementar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -37,7 +37,7 @@ Microsoft 365 Defender es una experiencia unificada donde puede supervisar y adm
 
 Tanto si es nuevo en el conjunto de productos de seguridad de Microsoft como si está familiarizado con flujos de trabajo individuales, este tema le guiará en los sencillos pasos que debe seguir para empezar a trabajar con Microsoft 365 Defender.
 
-![Imagen de introducción a los pasos de Microsoft 365 Defender](../../media/mtp/get-started-m365d.png)
+![Imagen de introducción a los pasos Microsoft 365 Defender](../../media/mtp/get-started-m365d.png)
 
 En general, deberá seguir los siguientes pasos para empezar:
 
@@ -47,17 +47,17 @@ En general, deberá seguir los siguientes pasos para empezar:
     A continuación, se pasa por una configuración sencilla y, a continuación, se puede confirmar que el servicio está en.
 
 - **[Paso 2: Implementar servicios compatibles](deploy-supported-services.md)** <br>
-    Después de completar los pasos iniciales, tendrás que implementar los servicios compatibles que vienen con Microsoft 365 Defender. La implementación efectiva de servicios aumenta la visibilidad de las señales de los activos en toda la red.
+    Después de completar los pasos iniciales, deberá implementar los servicios compatibles que vienen con Microsoft 365 Defender. La implementación efectiva de servicios aumenta la visibilidad de las señales de los activos en toda la red.
 
 
 ## <a name="key-capabilities"></a>Principales funcionalidades
-Activar Microsoft 365 Defender e implementar servicios le dará acceso a las siguientes funcionalidades clave:
+Al activar Microsoft 365 Defender e implementar servicios, tendrá acceso a las siguientes funcionalidades clave:
 
 
 | Funcionalidad | Descripción |
 | ------ | ------ |
 | Microsoft Defender para punto de conexión | Conjunto de aplicaciones de protección de puntos de conexión que se basa en sensores de comportamiento eficaces, análisis en la nube e inteligencia de amenazas |
-|Microsoft Defender para Office 365 | Protección avanzada para sus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
+|Microsoft Defender para Office 365 | Protección avanzada para tus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
 | Microsoft Defender for Identity | Defenderse de amenazas avanzadas, identidades comprometidas e información interna malintencionada mediante señales correlacionadas de Active Directory |
 | Microsoft Cloud App Security | Identificar y combatir ciberamenazas en los servicios en la nube de Microsoft y de terceros |
 

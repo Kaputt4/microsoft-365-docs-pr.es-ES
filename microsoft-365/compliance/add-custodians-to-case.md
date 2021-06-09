@@ -1,5 +1,5 @@
 ---
-title: Agregar administradores a un caso de eDiscovery avanzado
+title: Agregar custodios a un Advanced eDiscovery caso
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre cómo usar la herramienta de administración de administradores integrada en eDiscovery avanzado para coordinar los flujos de trabajo e identificar orígenes de datos relevantes en un caso.
+description: Obtenga información sobre cómo usar la herramienta de administración de custodia integrada en Advanced eDiscovery coordinar los flujos de trabajo e identificar orígenes de datos relevantes en un caso.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 9468fb889e9115b3652d1dba8a6c6632bb367fe3
 ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
@@ -24,94 +24,94 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 12/31/2020
 ms.locfileid: "49740347"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar administradores a un caso de eDiscovery avanzado
+# <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un Advanced eDiscovery caso
 
-Use la herramienta de administración de administradores integrada en eDiscovery avanzado para coordinar los flujos de trabajo en torno a la administración de administradores e identificación de orígenes de datos relevantes y de custodia asociados a un caso. Cuando agrega un administrador, el sistema puede identificar y colocar automáticamente una retención en su buzón de Exchange y en su cuenta de OneDrive para la Empresa. Durante el proceso de detección de la investigación, es posible que también identifique otros orígenes de datos (como buzones, sitios o Teams) a los que un administrador ha accedido o al que ha colaborado. En esta situación, puede usar la herramienta de administración de administradores para asociar esos orígenes de datos a un administrador específico. Después de agregar administradores a un caso y asociar otros orígenes de datos con ellos, puede conservar rápidamente los datos y buscar en los datos de custodia.
+Use la herramienta de administración de custodia integrada en Advanced eDiscovery para coordinar los flujos de trabajo en torno a la administración de custodios e identificación de orígenes de datos relevantes y custodiales asociados con un caso. Al agregar un custodio, el sistema puede identificar y colocar automáticamente una retención en su Exchange buzón y OneDrive para la Empresa cuenta. Durante el proceso de detección de la investigación, también puede identificar otros orígenes de datos (como buzones, sitios o Teams) a los que un custodio ha accedido o contribuido. En esta situación, puede usar la herramienta de administración de custodia para asociar esos orígenes de datos a un custodio específico. Después de agregar custodios a un caso y asociar otro origen de datos con ellos, puede conservar rápidamente los datos y buscar en los datos de custodia.
 
-Puede agregar y administrar administradores en casos de eDiscovery avanzado en cuatro pasos:
+Puede agregar y administrar custodios en Advanced eDiscovery casos en cuatro pasos:
 
-1. Identifique a los administradores.
+1. Identifique a los custodios.
 
-2. Elija ubicaciones de datos de administrador.
+2. Elija ubicaciones de datos de custodia.
 
 3. Configure las opciones de retención.
 
-4. Revise los administradores y complete el proceso.
+4. Revise a los custodios y complete el proceso.
 
-   [![Pestaña Orígenes en caso de eDiscovery avanzado ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
+   [![Ficha Orígenes en Advanced eDiscovery caso ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Asegúrese de que tiene los permisos necesarios
 
-Para agregar administradores a un caso, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos. Esto le proporciona los permisos necesarios para agregar administradores a un caso y retener los orígenes de datos de administrador. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions).
+Para agregar custodios a un caso, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos. Esto le proporciona los permisos necesarios para agregar custodios a un caso y colocar una retención en los orígenes de datos de custodia. Para más información, consulte [Asignar permisos de eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions).
 
-## <a name="step-1-identify-custodians"></a>Paso 1: Identificar administradores
+## <a name="step-1-identify-custodians"></a>Paso 1: Identificar custodios
 
-1. Vaya e inicie sesión con una cuenta de usuario a la que se hayan asignado los permisos de exhibición de documentos [https://compliance.microsoft.com](https://compliance.microsoft.com) electrónicos adecuados.
+1. Vaya a e inicie sesión con una cuenta de usuario a la que se han [https://compliance.microsoft.com](https://compliance.microsoft.com) asignado los permisos de exhibición de documentos electrónicos adecuados.
 
-2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en **eDiscovery > avanzado.**
+2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, luego, seleccione **eDiscovery > Avanzado**.
 
-3. En la **página eDiscovery**  avanzado, haga clic en la pestaña Casos y, a continuación, seleccione el caso al que desea agregar administradores.
+3. En la **Advanced eDiscovery,** haga clic en la pestaña **Casos** y, a continuación, seleccione el caso al que desea agregar custodios.
 
-4. Haga clic en **la pestaña Orígenes de** datos y, a continuación, haga clic en Agregar origen **de** datos Agregar  >  **nuevos administradores.**
+4. Haga clic en **la pestaña Orígenes de** datos y, a continuación, haga clic en **Agregar** origen de datos Agregar  >  **nuevos custodios.**
 
-5. Agregue uno o más usuarios de su organización como administradores al caso escribiendo la primera parte del nombre o alias de una persona. Después de encontrar a la persona correcta, seleccione su nombre para agregarlo a la lista.
+5. Agregue uno o varios usuarios de la organización como custodios al caso escribiendo la primera parte del nombre o alias de una persona. Después de encontrar a la persona correcta, seleccione su nombre para agregarlo a la lista.
 
-## <a name="step-2-choose-custodian-data-locations"></a>Paso 2: Elegir ubicaciones de datos de administrador
+## <a name="step-2-choose-custodian-data-locations"></a>Paso 2: Elegir ubicaciones de datos de custodia
 
-Después de seleccionar administradores, el sistema intenta identificar y comprobar automáticamente estos usuarios y sus orígenes de datos. Después de agregar administradores a la lista, la herramienta incluye automáticamente el buzón principal y la cuenta de OneDrive para cada administrador. Puede optar por no incluir estos orígenes de datos al agregar administradores al caso.
+Después de seleccionar custodios, el sistema intenta identificar y comprobar automáticamente estos usuarios y sus orígenes de datos. Después de agregar custodios a la lista, la herramienta incluye automáticamente el buzón principal y OneDrive cuenta para cada custodio. Puede elegir no incluir estos orígenes de datos al agregar custodios al caso.
 
-Además del buzón de un administrador y una cuenta de OneDrive, también puede asociar otras ubicaciones de datos a un administrador, como un sitio de SharePoint o un equipo de Microsoft del que el administrador es miembro. Esto le permite conservar, recopilar, analizar y revisar el contenido de otros orígenes de datos asociados con los administradores del caso.
+Además del buzón de un custodio y una cuenta de OneDrive, también puede asociar otras ubicaciones de datos a un administrador, como un sitio SharePoint o un equipo de Microsoft del que el custodio es miembro. Esto le permite conservar, recopilar, analizar y revisar contenido en otros orígenes de datos asociados con los custodios del caso.
 
-Para anular la selección del buzón principal y la cuenta de OneDrive para un administrador:
+Para anular la selección del buzón principal y OneDrive cuenta para un custodio:
 
-1. Expanda el administrador para ver las ubicaciones de datos principales que se han asociado automáticamente a cada administrador.
+1. Expanda el custodio para ver las ubicaciones de datos principales que se han asociado automáticamente a cada uno de los custodios.
 
-2. Seleccione **Borrar** junto a **Buzón** de correo o **OneDrive** para quitar el buzón de un administrador o cuenta de OneDrive para que no se asocie como ubicación de datos para este administrador.
+2. Seleccione **Borrar** junto  a **Buzón** o OneDrive para quitar el buzón o la cuenta de OneDrive de un custodio para que no se asocie como ubicación de datos para este custodio.
 
-   ![Configurar ubicaciones para asociar a un administrador](../media/ConfigureCustodianLocations.png)
+   ![Configurar ubicaciones para asociar a un custodio](../media/ConfigureCustodianLocations.png)
 
-Para asociar otros buzones, sitios, Teams o grupos de Yammer a un administrador específico:
+Para asociar otros buzones, sitios, Teams o grupos Yammer a un administrador específico:
 
-1. Expanda un administrador para mostrar los siguientes servicios para asociar ubicaciones de datos con el administrador. Haga **clic en** Editar junto a un servicio para agregar una ubicación de datos.
+1. Expanda un custodio para mostrar los siguientes servicios para asociar ubicaciones de datos con el custodio. Haga **clic en** Editar junto a un servicio para agregar una ubicación de datos.
 
-   - **Exchange:** se usa para asociar otros buzones al administrador. Escriba en el cuadro de búsqueda el nombre o el alias (un mínimo de tres caracteres) de los buzones de usuario o grupos de distribución. Seleccione los buzones que desea asignar al administrador y, a continuación, haga clic **en Agregar**.
+   - **Exchange:** se usa para asociar otros buzones al custodio. Escriba en el cuadro de búsqueda el nombre o el alias (un mínimo de tres caracteres) de los buzones de usuario o grupos de distribución. Seleccione los buzones que desea asignar al custodio y, a continuación, haga clic **en Agregar**.
 
-   - **SharePoint:** se usa para asociar sitios de SharePoint al administrador. Seleccione un sitio en la lista o busque un sitio escribiendo una dirección URL en el cuadro de búsqueda. Seleccione los sitios que desea asignar al administrador y, a continuación, haga clic en **Agregar**.
+   - **SharePoint:** se usa para asociar SharePoint sitios al custodio. Seleccione un sitio en la lista o busque un sitio escribiendo una dirección URL en el cuadro de búsqueda. Seleccione los sitios que desea asignar al custodio y, a continuación, haga clic **en Agregar**.
 
-   - **Teams:** se usa para asignar a Microsoft Teams el administrador del que es miembro actualmente. Seleccione los equipos que desea asignar al administrador y, a continuación, haga clic **en Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el sitio de SharePoint y el buzón de grupo asociados a ese equipo y los asigna al administrador.
+   - **Teams:** se usa para asignar el Microsoft Teams del que el custodio es miembro actualmente. Seleccione los equipos que desea asignar al custodio y, a continuación, haga clic **en Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el buzón SharePoint sitio y grupo asociados a ese equipo y los asigna al administrador.
 
-   - **Yammer:** se usa para asignar los grupos de Yammer de los que el administrador es miembro actualmente. Seleccione los grupos que desea asignar al administrador y, a continuación, haga clic en **Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el sitio de SharePoint y el buzón de grupo asociados a ese grupo y los asigna al administrador.
-
-   > [!NOTE]
-   > Puede usar los selectores de ubicación de **Exchange** y **SharePoint** para asociar otros equipos o grupos de Yammer (de los que un administrador no es miembro) a un administrador. Para ello, debe agregar el buzón y el sitio asociados con cada equipo o grupo de Yammer.
-
-2. Puede ver el número total de buzones, sitios, equipos y grupos de Yammer asignados a cada administrador expandiendo cada uno de los administradores en la tabla. Cuando haya finalizado las ubicaciones de datos asignadas para cada administrador, estas asociaciones se mantendrán y usarán durante las fases de recopilación, procesamiento y revisión en el flujo de trabajo de eDiscovery avanzado.
-
-3. Después de agregar administradores y configurar sus ubicaciones de datos, haga clic en Siguiente **para** ir a la página Configuración **de retención.**  
-
-## <a name="step-3-configure-hold-settings"></a>Paso 3: Configurar la retención
-
- Una vez que haya finalizado los administradores y sus ubicaciones de datos, puede poner algunos o todos los administradores en retención. Cuando se coloca a un administrador en retención, todo el contenido de todas las ubicaciones de contenido asociadas con el administrador se conserva hasta que se quita la retención o se libera al administrador de la retención. En algunos casos, es posible que desee agregar administradores a un caso sin ponerlos en retención.
-
-Para poner los administradores y los orígenes de datos en retención:
-
-1. En la **página Configuración de** retención, puede aplicar una retención a los administradores individuales activando la casilla de la columna **Retención.**
-
-   Como alternativa, puede poner a todos los administradores en retención activando la casilla Detención en la parte superior de la columna. 
-
-2. Compruebe las selecciones de retención de administrador y, a continuación, haga clic en **Siguiente**.
+   - **Yammer:** se usa para asignar los grupos Yammer de los que el custodio es miembro actualmente. Seleccione los grupos que desea asignar al custodio y, a continuación, haga clic **en Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el sitio SharePoint y el buzón de grupo asociados a ese grupo y los asigna al custodio.
 
    > [!NOTE]
-   > Si no coloca una retención en un administrador, el administrador y sus orígenes de datos asociados se agregarán al caso, pero el contenido de esos orígenes de datos no se conservará por la retención asociada al caso.
+   > Puede usar  los selectores de Exchange y **SharePoint** para asociar otros equipos o grupos de Yammer (de los que un custodio no es miembro) a un custodio. Para ello, debe agregar el buzón y el sitio asociados con cada grupo o Yammer grupo.
 
-## <a name="step-4-review-the-custodians-and-complete-the-process"></a>Paso 4: Revisar los administradores y completar el proceso
+2. Puede ver el número total de buzones, sitios, Teams y grupos de Yammer asignados a cada custodio expandiendo cada uno de los custodios de la tabla. Cuando haya finalizado las ubicaciones de datos asignadas para cada custodio, estas asociaciones se mantendrán y usarán durante las fases de recopilación, procesamiento y revisión del flujo de trabajo Advanced eDiscovery usuario.
 
-Antes de agregar realmente los administradores al caso, puede revisar la lista de administradores, las ubicaciones de datos asignadas a ellos y la configuración de retención.
+3. Después de agregar custodios y configurar sus ubicaciones de datos, haga clic en **Siguiente** para ir a la **página Configuración de retención.**  
 
-1. Compruebe y revise todos los recuentos de orígenes de datos y la configuración de retención asociada con cada administrador de la tabla. Si es necesario, vuelva a  las páginas de configuración de identificación **de** administrador o retención para realizar cambios.
+## <a name="step-3-configure-hold-settings"></a>Paso 3: Configurar las opciones de retención
 
-2. Haga **clic en** Enviar para agregar administradores y sus ubicaciones de datos al caso y aplicar toda la configuración de retención de administradores.
+ Después de finalizar los custodios y sus ubicaciones de datos, puede poner algunos o todos los custodios en espera. Al poner a un custodio en espera, todo el contenido de todas las ubicaciones de contenido asociadas con el custodio se conserva hasta que quite la retención o libere al custodio de la retención. En algunos casos, es posible que desee agregar custodios a un caso sin ponerlos en espera.
 
-   Los nuevos administradores se agregan al caso y se muestran en la **pestaña Orígenes de** datos.
+Para poner en espera a los custodios y orígenes de datos:
 
-   [![Administradores enumerados en la pestaña Orígenes de datos ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)
+1. En la **página Configuración de** retención, puede aplicar una retención a los custodios individuales seleccionando la casilla debajo de la **columna** Retención.
+
+   Como alternativa, puede poner en espera a todos  los custodios activando la casilla Detención en la parte superior de la columna.
+
+2. Compruebe las selecciones de retención de custodia y, a continuación, haga clic **en Siguiente**.
+
+   > [!NOTE]
+   > Si no coloca una retención en un custodio, el custodio y sus orígenes de datos asociados se agregarán al caso, pero el contenido de esos orígenes de datos no se conservará mediante la retención asociada al caso.
+
+## <a name="step-4-review-the-custodians-and-complete-the-process"></a>Paso 4: Revisar los custodios y completar el proceso
+
+Antes de agregar realmente los custodios al caso, puede revisar la lista de custodios, las ubicaciones de datos asignadas a ellos y la configuración de retención.
+
+1. Compruebe y revise todos los orígenes de datos y la configuración de retención asociada a cada uno de los custodios de la tabla. Si es necesario, vuelve a las páginas **Identificar custodia o** Configuración de **retención** para realizar cualquier cambio.
+
+2. Haga **clic en** Enviar para agregar custodios y sus ubicaciones de datos al caso y aplicar toda la configuración de retención de custodia.
+
+   Los nuevos custodios se agregan al caso y se muestran en la **pestaña Orígenes de** datos.
+
+   [![Custodios enumerados en la pestaña Orígenes de datos ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)
