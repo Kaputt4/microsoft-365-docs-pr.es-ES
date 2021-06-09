@@ -46,10 +46,10 @@ La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en cons
 
 Puede usar las mismas consultas de búsqueda de amenazas para crear reglas de detección personalizadas. Estas reglas se ejecutan automáticamente para buscar y responder a una actividad de infracción sospechosa, máquinas mal configuradas y otras conclusiones.
 
-Esta funcionalidad es similar a la [búsqueda avanzada en Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponible en el Centro de seguridad de Microsoft 365, esta funcionalidad admite consultas que comprueban un conjunto de datos más amplio desde:
+Esta funcionalidad es similar a la [búsqueda avanzada en Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponible en Microsoft 365 de seguridad, esta funcionalidad admite consultas que comprueban un conjunto de datos más amplio desde:
 
 - Microsoft Defender para punto de conexión
-- Microsoft Defender para Office 365
+- Microsoft Defender para Office 365
 - Microsoft Cloud App Security
 - Microsoft Defender for Identity
 
@@ -69,7 +69,7 @@ Se recomienda seguir varios pasos para empezar rápidamente con la búsqueda ava
 | **Crear reglas de detección personalizadas** | Comprenda cómo puede usar consultas de búsqueda avanzadas para desencadenar alertas y realizar acciones de respuesta automáticamente. | - [Introducción a las detecciones personalizadas](custom-detections-overview.md) <br />- [Reglas de detección personalizadas](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Obtener acceso
-Para usar la búsqueda avanzada u otras capacidades de [Microsoft 365 Defender,](microsoft-365-defender.md) necesita un rol adecuado en Azure Active Directory. [Obtenga información sobre los roles y permisos necesarios para la búsqueda avanzada.](custom-roles.md)
+Para usar la búsqueda avanzada u [otras Microsoft 365 Defender,](microsoft-365-defender.md) necesita un rol adecuado en Azure Active Directory. [Obtenga información sobre los roles y permisos necesarios para la búsqueda avanzada.](custom-roles.md)
 
 Además, el acceso a los datos del punto de conexión viene determinado por la configuración del control de acceso basado en roles (RBAC) en Microsoft Defender para endpoint. [Obtenga información sobre cómo administrar el acceso a Microsoft 365 Defender](m365d-permissions.md).
 

@@ -90,7 +90,7 @@ Si tiene permisos crear y editar temas, puede:
 - [Crear nuevos temas:](create-a-topic.md)puede crear nuevos temas para los que no se encontraron a través de la detección, o si las herramientas de inteligencia artificial no encontraron suficiente evidencia para crear un tema.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 [Administrar temas en el Centro de temas](manage-topics.md)
 

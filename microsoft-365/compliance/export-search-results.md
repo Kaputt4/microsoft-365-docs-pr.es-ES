@@ -51,7 +51,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   
     O
 
-  - Microsoft Internet Explorer 10 versiones posteriores
+  - Microsoft Internet Explorer 10 y versiones posteriores
   
   > [!NOTE]
   > <sup>1</sup> Microsoft no fabrica extensiones de terceros ni complementos para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.<br/>
@@ -173,7 +173,7 @@ El siguiente paso es descargar los resultados de la búsqueda desde la Azure Sto
 
 7. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo.
   
-    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez completado el proceso de exportación, puede obtener acceso a los archivos en la ubicación donde se descargaron.
+    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Cuando el proceso de exportación se completa, puede acceder a los archivos en la ubicación donde se descargaron.
 
 ## <a name="more-information"></a>Más información
 
@@ -183,7 +183,7 @@ A continuación, encontrará más información sobre la exportación de resultad
   
 [Exportar informes](#export-reports)
   
-[Exportar elementos parcialmente indizados](#exporting-partially-indexed-items)
+[Exportar elementos indexados parcialmente](#exporting-partially-indexed-items)
 
 [Exportación de mensajes individuales o archivos PST](#exporting-individual-messages-or-pst-files)
 
@@ -238,7 +238,7 @@ Para obtener información acerca de los límites al exportar resultados de búsq
     > [!NOTE]
     > Solo puede exportar estos documentos sin tener que exportar los resultados de búsqueda reales. Vea [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md).
   
-### <a name="exporting-partially-indexed-items"></a>Exportar elementos parcialmente indizados
+### <a name="exporting-partially-indexed-items"></a>Investigación de elementos indexados parcialmente
   
 - Si exporta elementos de buzón de correo de una búsqueda de contenido que devuelve todos los elementos de buzón de los resultados de la búsqueda (ya que no hay palabras clave incluidas en la consulta de búsqueda), los elementos parcialmente indizados no se copiarán en el archivo PST que contiene los elementos sin indizar. Esto se debe a que todos los elementos, incluidos los elementos parcialmente indizados, se incluyen automáticamente en los resultados de búsqueda normales. Esto significa que los elementos parcialmente indizados se incluirán en un archivo PST (o como mensajes individuales) que contenga los otros elementos indizados.
 

@@ -1,5 +1,5 @@
 ---
-title: Asignar licencias de Microsoft 365 a cuentas de usuario
+title: Asignar Microsoft 365 a cuentas de usuario
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,7 +25,7 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Describe cómo asignar licencias de Microsoft 365 a cuentas de usuario, ya sea individualmente o en función de la pertenencia a grupos.
+description: Describe cómo asignar licencias Microsoft 365 a cuentas de usuario, ya sea individualmente o en función de la pertenencia a grupos.
 ms.openlocfilehash: 2fe1e2f959fae8b0bc82a7dcd4f65f33b21c368a
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -33,19 +33,19 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51051537"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Asignar licencias de Microsoft 365 a cuentas de usuario
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Asignar Microsoft 365 a cuentas de usuario
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Para el modelo de identidad de solo nube, puede asignar licencias de Microsoft 365 a cuentas de usuario a medida que se crean, según cómo las cree.
+Para el modelo de identidad de solo nube, puede asignar licencias de Microsoft 365 a las cuentas de usuario a medida que se crean, en función de cómo las cree.
 
-Para el modelo de identidad híbrida, cuando las cuentas de usuario de Servicios de dominio de Active Directory (AD DS) se sincronizan por primera vez, no se les asigna automáticamente una ubicación ni una licencia de Microsoft 365. **Debe configurar cada cuenta de usuario con una ubicación de usuario antes o junto con la asignación de una licencia.**
+Para el modelo de identidad híbrida, cuando las cuentas de usuario de Servicios de dominio de Active Directory (AD DS) se sincronizan por primera vez, no se les asigna automáticamente una ubicación o una Microsoft 365 licencia. **Debe configurar cada cuenta de usuario con una ubicación de usuario antes o junto con la asignación de una licencia.**
 
-En cualquier caso, debe asignar una licencia a las cuentas de usuario para que los usuarios puedan tener acceso a los servicios de Microsoft 365, como el correo electrónico y Microsoft Teams.
+En cualquier caso, debe asignar una licencia a cuentas de usuario para que los usuarios puedan acceder a Microsoft 365 servicios, como correo electrónico y Microsoft Teams.
 
 Puede asignar licencias a cuentas de usuario de forma individual o automática a través de la pertenencia a grupos.
 
-Para asignar licencias de Microsoft 365 a cuentas de usuario individuales, puede usar:
+Para asignar Microsoft 365 a cuentas de usuario individuales, puede usar:
 
 - [Centro de administración de Microsoft 365](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
@@ -68,6 +68,6 @@ Para obtener más información, consulte [group-based licensing in Azure AD](/az
 Con el conjunto adecuado de cuentas de usuario a las que se han asignado licencias, ya está listo para:
 
 - [Implementar la seguridad](../security/defender-365-security/security-roadmap.md)
-- [Implementar software cliente, como Aplicaciones de Microsoft 365](/DeployOffice/deployment-guide-microsoft-365-apps)
+- [Implementar software cliente, como Aplicaciones Microsoft 365](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Configurar la administración de dispositivos](device-management-roadmap-microsoft-365.md)
 - [Configurar servicios y aplicaciones](configure-services-and-applications.md)

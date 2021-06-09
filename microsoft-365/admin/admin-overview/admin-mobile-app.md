@@ -65,7 +65,7 @@ Debes ser administrador de una organización Microsoft 365 para usar la aplicaci
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
   

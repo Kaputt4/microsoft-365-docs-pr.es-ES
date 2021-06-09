@@ -118,7 +118,7 @@ Si desea realizar cualquier cambio en la propuesta después de la revisión, pó
 
 La propuesta contiene la siguiente información:
 
-| Sección | Description |
+| Sección | Descripción |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | La fecha en que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para comunicarles que aún está interesado en la propuesta. |

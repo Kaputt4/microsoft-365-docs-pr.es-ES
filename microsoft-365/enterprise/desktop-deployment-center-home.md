@@ -26,7 +26,7 @@ El cuerpo del contenido que comprendía el Centro de implementación de escritor
 
 Use estos recursos para implementar escritorios modernos:
 
-- [Implementación de Windows 10](/windows/deployment/)
+- [Windows 10 implementación](/windows/deployment/)
 - [Implementar Aplicaciones de Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Directivas de acceso a dispositivos e identidades](../security/defender-365-security/microsoft-365-policies-configurations.md)
@@ -37,6 +37,6 @@ También puede encontrar ayuda para la implementación de escritorio de socios d
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
-Este kit te ayuda a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise y Aplicaciones de Microsoft 365 para empresas. Los laboratorios abarcan el uso de Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot y mucho más.
+Este kit le ayuda a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise y Aplicaciones Microsoft 365 para empresas. Los laboratorios cubren con Microsoft Endpoint Configuration Manager, Análisis de escritorio, Office personalización, OneDrive, Windows Autopilot y mucho más.
 
-Consulta [Windows y Office Deployment Lab Kit](modern-desktop-deployment-and-management-lab.md) para obtener más información.
+Consulte [Windows y Office Deployment Lab Kit](modern-desktop-deployment-and-management-lab.md) para obtener más información.

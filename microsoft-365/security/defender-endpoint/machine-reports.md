@@ -1,6 +1,6 @@
 ---
 title: Informe de cumplimiento y estado del dispositivo en Microsoft Defender para endpoint
-description: Realizar un seguimiento de las detecciones de estado de estado del dispositivo, el estado del antivirus, la plataforma del sistema operativo y las versiones de Windows 10 con el informe de estado y cumplimiento del dispositivo
+description: Realizar un seguimiento de las detecciones de estado de estado del dispositivo, el estado del antivirus, la plataforma del sistema operativo y las Windows 10 con el informe de estado y cumplimiento del dispositivo
 keywords: estado de mantenimiento, antivirus, plataforma del sistema operativo, versión de Windows 10, versión, estado, estado
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,11 +35,11 @@ ms.locfileid: "51860296"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-El informe de estado de dispositivos proporciona información de alto nivel sobre los dispositivos de la organización. El informe incluye información de tendencias que muestra el estado del sensor, el estado del antivirus, las plataformas del sistema operativo y las versiones de Windows 10.
+El informe de estado de dispositivos proporciona información de alto nivel sobre los dispositivos de la organización. El informe incluye información de tendencias que muestra el estado de mantenimiento del sensor, el estado del antivirus, las plataformas del sistema operativo y Windows 10 versiones.
 
 El panel está estructurado en dos secciones: ![ Imagen del informe del dispositivo](images/device-reports.png)
  
-Section | Descripción
+Sección | Descripción
 :---|:---
 1 | Tendencias de dispositivos
 2 | Resumen del dispositivo (día actual)
@@ -72,11 +72,11 @@ El informe está hecho de tarjetas que muestran los siguientes atributos de disp
  
 - **Estado de** mantenimiento: muestra información sobre el estado del sensor en los dispositivos, lo que proporciona una vista agregada de los dispositivos que están activos, que experimentan comunicaciones deficientes, inactivos o donde no se ven datos del sensor.
   
-- **Estado del antivirus para dispositivos windows 10** activos: muestra el número de dispositivos y el estado de Antivirus de Microsoft Defender.
+- **Estado del antivirus para dispositivos Windows 10** activos: muestra el número de dispositivos y el estado de Antivirus de Microsoft Defender.
     
 - **Plataformas del sistema** operativo: muestra la distribución de las plataformas del sistema operativo que existen en la organización. 
  
-- **Versiones de Windows 10:** muestra la distribución de dispositivos Windows 10 y sus versiones en la organización.
+- **Windows 10:** muestra la distribución de Windows 10 dispositivos y sus versiones en la organización.
  
  
  
@@ -89,10 +89,10 @@ Puedes seleccionar varios filtros para aplicar desde los atributos del dispositi
 >[!NOTE]
 >Estos filtros se aplican a **todas** las tarjetas del informe.
  
-Por ejemplo, para mostrar datos sobre dispositivos Windows 10 con estado de mantenimiento del sensor activo:
+Por ejemplo, para mostrar datos sobre Windows 10 dispositivos con estado de mantenimiento del sensor activo:
  
 1. En **Filtros > Estado de mantenimiento del sensor > Active**.
-2. A **continuación, selecciona Plataformas del sistema > Windows 10**.
+2. A continuación, seleccione **Plataformas del sistema operativo > Windows 10**.
 3. Seleccione **Aplicar**.
 
 

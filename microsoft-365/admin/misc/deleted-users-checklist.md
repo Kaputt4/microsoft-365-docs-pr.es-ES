@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: Siga esta lista de comprobación mientras elimina la cuenta de Microsoft 365 de un usuario.
+description: Siga esta lista de comprobación mientras elimina la cuenta Microsoft 365 usuario.
 ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50914767"
 
 Por lo tanto, ha decidido eliminar un usuario de su organización. Por ejemplo, puede eliminar un usuario una vez que esa persona abandone la organización. Hay algunas cosas que debe hacer antes y después de eliminar ese usuario. Esta lista de comprobación rápida le ayuda con los pasos.
   
-## <a name="remove-the-microsoft-365-license-from-the-user"></a>Quitar la licencia de Microsoft 365 del usuario
+## <a name="remove-the-microsoft-365-license-from-the-user"></a>Quitar la Microsoft 365 del usuario
 
 Para quitar una licencia de un usuario, busque el usuario en la página principal o en la página **Usuarios** activos y, a continuación, selecciónelos. En la **pestaña Licencias y aplicaciones,** desactive la casilla de la licencia que desea quitar del usuario. [Lea el artículo completo](../manage/remove-licenses-from-users.md).
   

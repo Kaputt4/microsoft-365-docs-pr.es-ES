@@ -52,6 +52,6 @@ Los artículos e ilustraciones técnicas que detallamos a continuación ofrecen 
 |**[Arquitecturas de Microsoft Azure para SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |En este artículo se describe cómo diseñar arquitecturas de Azure para hospedar soluciones de SharePoint.|
 |
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 [Centro de soluciones y arquitectura de Microsoft 365](../solutions/index.yml)

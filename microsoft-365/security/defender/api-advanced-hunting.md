@@ -54,7 +54,7 @@ Las siguientes condiciones se relacionan con todas las consultas.
 > [!NOTE]
 > Todas las cuotas enumeradas anteriormente (por ejemplo, 15 llamadas por minuto) son por tamaño de espacio empresarial. Estas cuotas son las mínimas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Uno de los siguientes permisos es necesario para llamar a la API de búsqueda avanzada. Para obtener más información, incluido cómo elegir permisos, consulte [Access the Microsoft 365 Defender Protection API](api-access.md)
 

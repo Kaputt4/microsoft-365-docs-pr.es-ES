@@ -19,7 +19,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: Encuentre vínculos a artículos con información para ayudarle a configurar su red para Microsoft 365, incluida una descripción general de conectividad de red y una lista de puntos de conexión.
+description: Busque vínculos a artículos con información que le ayuden a configurar la red para Microsoft 365, incluida una introducción a la conectividad de red y una lista de puntos de conexión.
 ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -31,21 +31,21 @@ ms.locfileid: "46693682"
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Una parte importante de la incorporación de Microsoft 365 es asegurarse de que la red y las conexiones a Internet estén configuradas para un acceso optimizado. La configuración de la red local para tener acceso a una nube de Software como servicio (SaaS) distribuida globalmente es diferente de una red tradicional que está optimizada para el tráfico a centros de datos locales y una conexión a Internet central. 
+Una parte importante de la incorporación Microsoft 365 es garantizar que las conexiones de red e Internet estén configuradas para un acceso optimizado. La configuración de la red local para tener acceso a una nube de Software como servicio (SaaS) distribuida globalmente es diferente de una red tradicional optimizada para el tráfico a centros de datos locales y una conexión central a Internet. 
 
 Use estos artículos para comprender las principales diferencias, así como para modificar los dispositivos perimetrales, los equipos cliente y la red local a fin de obtener el mejor rendimiento para sus usuarios locales.
 
-## <a name="how-microsoft-365-networking-works"></a>Funcionamiento de las redes de Microsoft 365
+## <a name="how-microsoft-365-networking-works"></a>Cómo Microsoft 365 de red
 
-Consulte estos artículos para obtener información general sobre la conectividad de Microsoft 365:
+Vea estos artículos para obtener información general sobre la conectividad para Microsoft 365:
 
 - [Información general de conectividad de red de Microsoft 365](microsoft-365-networking-overview.md)
 - [Principios de conectividad de red de Microsoft 365](microsoft-365-network-connectivity-principles.md)
 - [Evaluar la conectividad de red de Microsoft 365](assessing-network-connectivity.md)
 
-Para obtener consejos sobre cómo mejorar el rendimiento, consulte Planeación de red y ajuste del rendimiento [de Microsoft 365.](network-planning-and-performance.md)
+Para obtener consejos sobre cómo mejorar el rendimiento, vea [Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md).
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Admitir redes de Microsoft 365 como proveedor de equipos de red
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Compatibilidad Microsoft 365 redes como proveedor de equipos de red
 
 Si es un proveedor de equipos de red, únase al [Programa para partners de redes de Office 365](microsoft-365-networking-partner-program.md). Inscríbase en el programa para compilar principios de conectividad de red de Office 365 en sus productos y soluciones. 
 
@@ -59,7 +59,7 @@ Vea [Administrar puntos de conexión de Office 365](managing-office-365-endpoint
 
 Actualmente, hay cinco nubes diferentes de Office 365. En esta tabla se le indicará la lista de puntos de conexión de cada una.
 
-| Puntos de conexión | Description |
+| Puntos de conexión | Descripción |
 |:-------|:-----|
 | [Puntos de conexión mundiales](urls-and-ip-address-ranges.md) | Puntos de conexión para suscripciones a Office 365 de todo el mundo, que incluyen Government Community Cloud (GCC) de Estados Unidos. |
 | [Puntos de conexión de DoD de Estados Unidos](microsoft-365-u-s-government-dod-endpoints.md) | Puntos de conexión para las suscripciones del Department of Defense (DoD) de Estados Unidos. |
@@ -76,9 +76,9 @@ Para consultar puntos de conexión adicionales, vea estos artículos:
 - [Solicitudes de red en Office 2016 para Mac](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-microsoft-365-networking"></a>Temas adicionales para redes de Microsoft 365
+## <a name="additional-topics-for-microsoft-365-networking"></a>Temas adicionales para Microsoft 365 redes
 
-Consulte estos artículos para obtener temas especializados sobre redes de Microsoft 365:
+Vea estos artículos para obtener temas especializados en Microsoft 365 redes:
 
 - [Redes de entrega de contenido](content-delivery-networks.md)
 - [Compatibilidad con IPv6 en servicios de Office 365](ipv6-support.md)

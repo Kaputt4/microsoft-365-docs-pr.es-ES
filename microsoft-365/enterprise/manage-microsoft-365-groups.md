@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Obtenga información sobre cómo administrar grupos de Microsoft 365.
+description: Obtenga información sobre cómo administrar Microsoft 365 grupos.
 ms.openlocfilehash: 529bdb874661329497b103a1207b90625ad33a4b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,11 +33,11 @@ ms.locfileid: "50911012"
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede administrar grupos de Microsoft 365 de varias maneras diferentes, según la configuración. Puede administrar cuentas de usuario en el Centro de administración de [Microsoft 365](../admin/add-users/index.yml), PowerShell, en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
+Puede administrar los Microsoft 365 de varias maneras, según la configuración. Puede administrar cuentas de usuario en el Centro de administración de [Microsoft 365](../admin/add-users/index.yml), PowerShell, en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planear dónde y cómo administrará los grupos
 
-Dónde y cómo puede administrar sus cuentas de usuario depende del modelo de identidad que desee usar para Su Microsoft 365. Los dos modelos generales son híbridos y solo en la nube.
+Dónde y cómo puede administrar sus cuentas de usuario depende del modelo de identidad que desee usar para su Microsoft 365. Los dos modelos generales son híbridos y solo en la nube.
   
 ### <a name="cloud-only"></a>Solo de nube
 
@@ -49,7 +49,7 @@ Puede crear y administrar grupos con:
     
 ### <a name="hybrid"></a>Híbrido
 
-Los grupos de AD DS se sincronizan con Microsoft 365 desde AD DS, por lo que debes usar las herramientas locales de AD DS para administrar estos grupos.
+Los grupos de AD DS se sincronizan con Microsoft 365 de AD DS, por lo que debes usar las herramientas locales de AD DS para administrar estos grupos.
 
 También puede crear y administrar grupos de Azure AD independientes de los grupos de AD DS, pero que pueden contener usuarios y grupos de AD DS. En este caso, puede usar:
 

@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo ejecutar un script para agregar buzones & sitios de OneDrive para la Empresa a una nueva retención asociada con un caso de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
+description: Obtenga información sobre cómo ejecutar un script para agregar buzones & OneDrive para la Empresa sitios a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de Microsoft 365 cumplimiento.
 ms.openlocfilehash: d6e6ff1ca053fd8c729054490e78ef42dc64e829
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,9 +29,9 @@ ms.locfileid: "50909920"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Usar un script para agregar usuarios a una retención en un caso de exhibición de documentos electrónicos principal
 
-PowerShell & Centro de seguridad y cumplimiento proporciona cmdlets que le permiten automatizar tareas que consumen mucho tiempo relacionadas con la creación y administración de casos de exhibición de documentos electrónicos. Actualmente, el uso del caso de exhibición de documentos electrónicos principal en el Centro de seguridad y cumplimiento de & para poner un gran número de ubicaciones de contenido de custodia en espera lleva tiempo y preparación. Por ejemplo, antes de crear una retención, debe recopilar la dirección URL de cada sitio de OneDrive para la Empresa que desee poner en espera. A continuación, para cada usuario que desee poner en espera, debe agregar su buzón y su sitio de OneDrive para la Empresa a la retención. Puede usar el script de este artículo para automatizar este proceso.
+PowerShell & Centro de seguridad y cumplimiento proporciona cmdlets que le permiten automatizar tareas que consumen mucho tiempo relacionadas con la creación y administración de casos de exhibición de documentos electrónicos. Actualmente, el uso del caso de exhibición de documentos electrónicos principal en el Centro de seguridad y cumplimiento de & para poner un gran número de ubicaciones de contenido de custodia en espera lleva tiempo y preparación. Por ejemplo, antes de crear una retención, debe recopilar la dirección URL de cada OneDrive para la Empresa sitio que desee poner en espera. A continuación, para cada usuario que desee poner en espera, debe agregar su buzón y su OneDrive para la Empresa sitio a la retención. Puede usar el script de este artículo para automatizar este proceso.
   
-El script le pide el nombre del dominio de Mi sitio de su organización (por ejemplo, en la dirección URL , el nombre de un caso de exhibición de documentos electrónicos existente, el nombre de la nueva retención asociada al caso, una lista de direcciones de correo electrónico de los usuarios que desea poner en espera y una consulta de búsqueda que se usará si desea crear una retención basada en `contoso` https://contoso-my.sharepoint.com) consultas. A continuación, el script obtiene la dirección URL del sitio de OneDrive para la Empresa para cada usuario de la lista, crea la nueva retención y, a continuación, agrega el buzón y el sitio de OneDrive para la Empresa para cada usuario de la lista a la retención. El script también genera archivos de registro que contienen información sobre la nueva retención.
+El script le pide el nombre del dominio de Mi sitio de su organización (por ejemplo, en la dirección URL , el nombre de un caso de exhibición de documentos electrónicos existente, el nombre de la nueva retención asociada al caso, una lista de direcciones de correo electrónico de los usuarios que desea poner en espera y una consulta de búsqueda que se usará si desea crear una retención basada en `contoso` https://contoso-my.sharepoint.com) consultas. A continuación, el script obtiene la dirección URL del sitio de OneDrive para la Empresa para cada usuario de la lista, crea la nueva retención y, a continuación, agrega el buzón y el sitio OneDrive para la Empresa para cada usuario de la lista a la retención. El script también genera archivos de registro que contienen información sobre la nueva retención.
   
 Estos son los pasos para que esto suceda:
   
@@ -45,29 +45,29 @@ Estos son los pasos para que esto suceda:
 
 - Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento de & y administrador de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, vea [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
-- Se puede agregar un máximo de 1.000 buzones y 100 sitios a una retención asociada a un caso de exhibición de documentos electrónicos en el Centro de seguridad & cumplimiento. Suponiendo que todos los usuarios que quieras poner en espera tienen un sitio de OneDrive para la Empresa, puedes agregar un máximo de 100 usuarios a una retención mediante el script de este artículo.
+- Se puede agregar un máximo de 1.000 buzones y 100 sitios a una retención asociada a un caso de exhibición de documentos electrónicos en el Centro de seguridad & cumplimiento. Suponiendo que todos los usuarios que desee poner en espera tienen un sitio de OneDrive para la Empresa, puede agregar un máximo de 100 usuarios a una retención mediante el script de este artículo.
 
 - Asegúrese de guardar la lista de usuarios que cree en el paso 2 y el script del paso 3 en la misma carpeta. Esto facilitará la ejecución del script.
 
 - El script agrega la lista de usuarios a una nueva retención asociada a un caso existente. Asegúrese de que el caso con el que desea asociar la retención se crea antes de ejecutar el script.
 
-- El script de este artículo admite la autenticación moderna al conectarse a PowerShell & Centro de seguridad y Shell de administración de SharePoint Online. Puede usar el script tal como está si es una organización de Microsoft 365 o una organización GCC de Microsoft 365. Si es una organización de Office 365 Germany, una organización de Microsoft 365 GCC High o una organización de Microsoft 365 DoD, tendrá que editar el script para ejecutarlo correctamente. En concreto, debe editar la línea y usar los parámetros ConnectionUri y `Connect-IPPSSession` *AzureADAuthorizationEndpointUri* (y los valores adecuados para el tipo de organización) para conectarse a *PowerShell* del Centro de seguridad & cumplimiento. Para obtener más información, vea los ejemplos de [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- El script de este artículo admite la autenticación moderna al conectarse a PowerShell del Centro de seguridad & cumplimiento y SharePoint Shell de administración en línea. Puede usar el script tal como está si es un Microsoft 365 o una Microsoft 365 GCC organización. Si es una organización de Office 365 Alemania, una organización de Microsoft 365 GCC High o una organización de Microsoft 365 DoD, tendrá que editar el script para ejecutarlo correctamente. En concreto, debe editar la línea y usar los parámetros ConnectionUri y `Connect-IPPSSession` *AzureADAuthorizationEndpointUri* (y los valores adecuados para el tipo de organización) para conectarse a *PowerShell* del Centro de seguridad & cumplimiento. Para obtener más información, vea los ejemplos de [Conectar a PowerShell del Centro de & seguridad.](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)
 
-- El script se desconecta automáticamente de PowerShell & Centro de seguridad y shell de administración de SharePoint Online.
+- El script se desconecta automáticamente de PowerShell & Centro de seguridad y cumplimiento y SharePoint Shell de administración en línea.
 
-- El script incluye un control de errores mínimo. Su objetivo principal es poner en espera de forma rápida y sencilla el buzón y el sitio de OneDrive para la Empresa de cada usuario.
+- El script incluye un control de errores mínimo. Su objetivo principal es poner de forma rápida y sencilla el buzón y el OneDrive para la Empresa sitio de cada usuario en espera.
 
 - Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Paso 1: Instalar el Shell de administración de SharePoint Online
 
-El primer paso es instalar el Shell de administración de SharePoint Online si aún no está instalado en el equipo local. No es necesario usar el shell en este procedimiento, pero debe instalarlo porque contiene los requisitos previos requeridos por el script que ejecuta en el paso 3. Estos requisitos previos permiten que el script se comunique con SharePoint Online para obtener las direcciones URL de los sitios de OneDrive para la Empresa.
+El primer paso es instalar el Shell SharePoint administración en línea si aún no está instalado en el equipo local. No es necesario usar el shell en este procedimiento, pero debe instalarlo porque contiene los requisitos previos requeridos por el script que ejecuta en el paso 3. Estos requisitos previos permiten que el script se comunique con SharePoint Online para obtener las direcciones URL de los OneDrive para la Empresa web.
   
-Vaya a Configurar el entorno del Shell de administración de [SharePoint Online Windows PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) y realice los pasos 1 y 2 para instalar el Shell de administración de SharePoint Online en el equipo local.
+Vaya [a Configurar el](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) entorno Windows PowerShell del Shell de administración en línea de SharePoint y realice los pasos 1 y 2 para instalar el Shell de administración en línea de SharePoint en el equipo local.
 
 ## <a name="step-2-generate-a-list-of-users"></a>Paso 2: Generar una lista de usuarios
 
-El script del paso 3 creará una retención asociada a un caso de exhibición de documentos electrónicos y agregará los buzones y los sitios de OneDrive para la Empresa de una lista de usuarios a la retención. Solo puede escribir las direcciones de correo electrónico en un archivo de texto o puede ejecutar un comando en Windows PowerShell para obtener una lista de direcciones de correo electrónico y guardarlas en un archivo (ubicado en la misma carpeta en la que guardará el script en el paso 3).
+El script del paso 3 creará una retención asociada a un caso de exhibición de documentos electrónicos y agregará los buzones y los sitios OneDrive para la Empresa de una lista de usuarios a la retención. Solo puede escribir las direcciones de correo electrónico en un archivo de texto o puede ejecutar un comando en Windows PowerShell para obtener una lista de direcciones de correo electrónico y guardarlas en un archivo (ubicado en la misma carpeta en la que guardará el script en el paso 3).
   
 Este es un comando de PowerShell (que se ejecuta mediante PowerShell remoto conectado a la organización de Exchange Online) para obtener una lista de direcciones de correo electrónico para todos los usuarios de la organización y guardarlo en un archivo de texto denominado HoldUsers.txt.
   
@@ -81,9 +81,9 @@ Después de ejecutar este comando, abra el archivo de texto y quite el encabezad
 
 Al ejecutar el script en este paso, se le pedirá la siguiente información. Asegúrese de tener esta información lista antes de ejecutar el script.
   
-- **Sus credenciales de usuario:** El script usará sus credenciales para conectarse al Centro de seguridad & cumplimiento con PowerShell. También usará estas credenciales para obtener acceso a SharePoint Online para obtener las direcciones URL de OneDrive para la Empresa para la lista de usuarios.
+- **Sus credenciales de usuario:** El script usará sus credenciales para conectarse al Centro de seguridad & cumplimiento con PowerShell. También usará estas credenciales para obtener acceso a SharePoint Online para obtener las OneDrive para la Empresa url de la lista de usuarios.
 
-- **Nombre del dominio de SharePoint:** El script le pide que escriba este nombre para que pueda conectarse al Centro de administración de SharePoint. También usa el nombre de dominio para las direcciones URL de OneDrive de la organización. Por ejemplo, si la dirección URL del centro de administración es y la dirección URL de OneDrive es , escribiría cuando el script le pida `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com` el nombre de `contoso` dominio.
+- **Nombre del dominio SharePoint:** El script le pide que escriba este nombre para que pueda conectarse al centro SharePoint administración. También usa el nombre de dominio para las direcciones ONEDRIVE url de la organización. Por ejemplo, si la dirección URL del centro de administración es y la dirección URL de OneDrive es , escribiría cuando el script le pida `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com` el nombre de `contoso` dominio.
 
 - **Nombre del caso:** Nombre de un caso existente. El script creará una nueva retención asociada a este caso.
 
@@ -285,10 +285,10 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 Una vez que el script ha terminado de ejecutarse, crea los siguientes archivos de registro y los guarda en la carpeta donde se encuentra el script.
   
-- **LocationsOnHold.txt:** Contiene una lista de buzones y sitios de OneDrive para la Empresa que el script colocó correctamente en espera.
+- **LocationsOnHold.txt:** Contiene una lista de buzones y sitios OneDrive para la Empresa que el script colocó correctamente en espera.
 
-- **LocationsNotOnHold.txt:** Contiene una lista de buzones y sitios de OneDrive para la Empresa que el script no ha puesto en espera. Si un usuario tiene un buzón, pero no un sitio de OneDrive para la Empresa, el usuario se incluiría en la lista de sitios de OneDrive para la Empresa que no estaban en espera.
+- **LocationsNotOnHold.txt:** Contiene una lista de buzones y OneDrive para la Empresa sitios que el script no ha puesto en espera. Si un usuario tiene un buzón, pero no un sitio OneDrive para la Empresa, el usuario se incluiría en la lista de sitios OneDrive para la Empresa que no se colocaron en espera.
 
-- **GetCaseHoldPolicy.txt:** Contiene el resultado del cmdlet **Get-CaseHoldPolicy** para la nueva retención, que el script ejecutó después de crear la nueva retención. La información devuelta por este cmdlet incluye una lista de usuarios cuyos buzones y sitios de OneDrive para la Empresa se colocaron en espera y si la retención está habilitada o deshabilitada. 
+- **GetCaseHoldPolicy.txt:** Contiene el resultado del cmdlet **Get-CaseHoldPolicy** para la nueva retención, que el script ejecutó después de crear la nueva retención. La información devuelta por este cmdlet incluye una lista de usuarios cuyos buzones y sitios OneDrive para la Empresa se colocaron en espera y si la retención está habilitada o deshabilitada. 
 
 - **GetCaseHoldRule.txt:** Contiene el resultado del cmdlet **Get-CaseHoldRule** para la nueva retención, que el script ejecutó después de crear la nueva retención. La información devuelta por este cmdlet incluye la consulta de búsqueda si usó el script para crear una retención basada en consultas.

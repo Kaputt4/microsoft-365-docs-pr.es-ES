@@ -45,7 +45,7 @@ Microsoft 365 para empresas es un servicio de suscripción que le permite ejecut
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Probar una suscripción de prueba gratuita
 
@@ -134,10 +134,10 @@ El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solic
 
 Si tiene una cuenta nueva y está configurando su primera suscripción, puede usar los artículos de configuración guiados para ayudarle a empezar.
 
-- [Configurar Microsoft 365 Empresa Básico](../admin/setup/setup-business-basic.md)
-- [Configurar Microsoft 365 Empresa Estándar](../admin/setup/setup-business-standard.md)
-- [Configurar Microsoft 365 Empresa Premium](../business/set-up.md)
-- [Configurar Aplicaciones de Microsoft 365 para negocios](../admin/setup/setup-apps-for-business.md)
+- [Configurar Microsoft 365 Empresa Básico](../admin/setup/setup-business-basic.md)
+- [Configurar Microsoft 365 Empresa Estándar](../admin/setup/setup-business-standard.md)
+- [Configurar Microsoft 365 Empresa Premium](../business/set-up.md)
+- [Configurar Aplicaciones de Microsoft 365 para negocios](../admin/setup/setup-apps-for-business.md)
 
 Si ya tienes una suscripción y estás agregando una nueva suscripción, puedes mover usuarios a ella. Para obtener información sobre cómo, vea [Mover usuarios a una suscripción diferente.](subscriptions/move-users-different-subscription.md)
 

@@ -21,13 +21,13 @@ ms.locfileid: "50913771"
 Las reservas pueden estar activadas o desactivadas para toda la organización o para usuarios específicos. Cuando activas Bookings para los usuarios, pueden crear una página de Bookings, crear un calendario y permitir que otras personas reserven tiempo con ellos.
 
 > [!NOTE]
-> Los controles de administración que se describen en estas secciones no están disponibles para los clientes de Office 365 operados por 21Vianet (China).
+> Los controles de administración que se describen en estas secciones no están disponibles Office 365 los clientes de 21Vianet (China).
 
-## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Activar o desactivar Bookings para su organización con el Centro de administración de Microsoft 365
+## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Activar o desactivar Bookings para su organización mediante el Centro Microsoft 365 administración
 
-1. Inicie sesión en el Centro de administración de Microsoft 365 como administrador global.
+1. Inicie sesión en el centro Microsoft 365 de administración como administrador global.
 
-2. En el Centro de administración, vaya a  **Configuración**   \> **de la organización y** seleccione **Bookings**.
+2. En el Centro de administración, vaya  **a Configuración**   \> **Org Configuración** y seleccione **Bookings**.
 
 3. Active la casilla **Permitir que su organización use Bookings** para habilitar o deshabilitar Bookings para su organización.
 
@@ -38,7 +38,7 @@ Las reservas pueden estar activadas o desactivadas para toda la organización o 
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>Activar o desactivar Bookings para su organización con PowerShell
 
-Para activar o desactivar Bookings para su organización con el cmdlet de PowerShell [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), conéctese a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) y ejecute el siguiente comando:
+Para activar o desactivar Bookings para su organización con el cmdlet de PowerShell [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), Conectar a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) y ejecute el siguiente comando:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
@@ -48,7 +48,7 @@ Para activar o desactivar Bookings para su organización con el cmdlet de PowerS
 
 Puedes deshabilitar Bookings para usuarios individuales.
 
-1. Vaya al Centro de administración de Microsoft 365 y, a continuación, seleccione **Usuarios** \> **usuarios activos.**
+1. Vaya al Centro Microsoft 365 administración y, a continuación, seleccione **Usuarios** \> **usuarios activos.**
 
 1. Seleccione el usuario deseado y, a continuación, **seleccione Licencias y aplicaciones.**
 
@@ -56,17 +56,17 @@ Puedes deshabilitar Bookings para usuarios individuales.
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Requerir aprobaciones de personal antes de compartir información de disponibilidad
 
-Los administradores pueden exigir a los empleados de su organización que opten por participar antes de compartir su información de disponibilidad a través de Bookings y antes de poder reservar a través de una página de reserva. Esta configuración está disponible en el Centro de administración de Microsoft 365 en **Configuración** \> **De** \> **bookings**.
+Los administradores pueden exigir a los empleados de su organización que opten por participar antes de compartir su información de disponibilidad a través de Bookings y antes de poder reservar a través de una página de reserva. Esta configuración está disponible en el Centro Microsoft 365 administración en **Configuración** \> **Configuración** \> **Bookings**.
 
 Cuando esta configuración está habilitada, los empleados agregados como personal en los calendarios de reserva encontrarán un vínculo Aprobar o rechazar en la notificación de correo electrónico que reciben.
 
-Esta característica se está implementando gradualmente en todo el mundo para los clientes de Microsoft 365. Si no ve esta opción en el Centro de administración de Microsoft 365, vuelva pronto.
+Esta característica se está implementando gradualmente en todo el mundo para Microsoft 365 clientes. Si no ve esta opción en el centro de administración de Microsoft 365, vuelva pronto.
 
 ## <a name="block-social-sharing-options"></a>Bloquear opciones de uso compartido social
 
-Los administradores pueden controlar cómo se comparten las páginas de reserva en las redes sociales. Esta configuración está disponible en el Centro de administración de Microsoft 365 en **Configuración** \> **De** \> **bookings**.
+Los administradores pueden controlar cómo se comparten las páginas de reserva en las redes sociales. Esta configuración está disponible en el Centro Microsoft 365 administración en **Configuración** \> **Configuración** \> **Bookings**.
 
-Esta característica se está implementando gradualmente en todo el mundo para los clientes de Microsoft 365. Si no ve esta opción en el Centro de administración de Microsoft 365, vuelva pronto.
+Esta característica se está implementando gradualmente en todo el mundo para Microsoft 365 clientes. Si no ve esta opción en el centro de administración de Microsoft 365, vuelva pronto.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Permitir que solo los usuarios seleccionados creen calendarios de Bookings
 
@@ -74,10 +74,10 @@ Al usar restricciones de directiva, puede restringir a los usuarios con licencia
 
 Los usuarios incluidos en esta directiva pueden crear nuevos calendarios de Bookings y pueden agregarse como personal con cualquier capacidad (incluido el rol de administrador) a los calendarios de Bookings existentes. Los usuarios que no están incluidos en esta directiva no podrán crear nuevos calendarios de Bookings y recibirán un mensaje de error si intentan hacerlo.
 
-Deberá ejecutar los siguientes comandos con Exchange Online PowerShell. Para obtener más información sobre cómo ejecutar cmdlets de Exchange Online, vea [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Deberá ejecutar los siguientes comandos con Exchange Online PowerShell. Para obtener más información sobre cómo Exchange Online cmdlets, vea [Conectar to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 > [!IMPORTANT]
-> Los pasos siguientes suponen que no se han creado otras directivas de buzón de Outlook Web App (OWA) en su organización.
+> Los pasos siguientes suponen que no se han creado otras Outlook Web App de buzones de correo (OWA) en su organización.
 
 1. Cree una nueva directiva de buzón de correo para los usuarios que deben tener permiso para crear calendarios de Bookings. (La creación de calendario de Bookings está permitida de forma predeterminada por las nuevas directivas de buzón).
 
@@ -105,6 +105,6 @@ Deberá ejecutar los siguientes comandos con Exchange Online PowerShell. Para ob
 
 Para obtener más información sobre las directivas de buzones de OWA, consulte los siguientes temas:
 
-- [Crear una directiva de buzón de correo de Outlook en la web en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Crear una Outlook en la directiva de buzón de correo web en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
-- [Aplicar o quitar una directiva de buzón de correo de Outlook en la web en un buzón de Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Aplicar o quitar una Outlook en la directiva de buzón de correo web en un buzón en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)

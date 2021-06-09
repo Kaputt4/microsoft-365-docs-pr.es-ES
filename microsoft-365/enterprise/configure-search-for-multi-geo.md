@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Obtenga información sobre cómo configurar la búsqueda en un entorno multige geográfico. Solo algunos clientes, como OneDrive para la Empresa, pueden devolver resultados en un entorno multigeónico.
+description: Obtenga información sobre cómo configurar la búsqueda en un entorno multige geográfico. Solo algunos clientes, como OneDrive para la Empresa, pueden devolver resultados en un entorno multige geográfico.
 ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -44,7 +44,7 @@ En cuanto se haya configurado el entorno multigeográfico, los usuarios que busq
 
 En cuanto se haya configurado el entorno multigeográfico, los usuarios que busquen en Delve obtendrán resultados de todas las ubicaciones geográficas.
 
-La fuente de Delve y la tarjeta de perfil solo muestran vistas previas de los archivos almacenados en la ubicación central. Para los archivos que se almacenan en ubicaciones satélite, se muestra el icono del tipo de archivo en su lugar.
+La fuente de Delve y la tarjeta de perfil solo muestran vistas previas de los archivos almacenados en la ubicación central. Para los archivos que se almacenan en ubicaciones por satélite, se muestra el icono del tipo de archivo en su lugar.
 
 ### <a name="the-sharepoint-home-page"></a>Página principal de SharePoint
 
@@ -131,7 +131,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, n
 
 Todos los clientes de búsqueda usan la API REST de SharePoint Search existente para interactuar con los índices de búsqueda.
 
-![Diagrama que muestra cómo interactúan las API de REST de SharePoint Search con los índices de búsqueda](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagrama que muestra cómo interactúan SharePoint API de REST de búsqueda con los índices de búsqueda](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un cliente de búsqueda llama al punto de conexión de REST de búsqueda con la propiedad EnableMultiGeoSearch= true.
 2. La consulta se envía a todas las ubicaciones geográficas del espacio empresarial.
@@ -168,7 +168,7 @@ Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar i
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Obtener aplicaciones de búsqueda personalizada que muestren los resultados de todas o algunas de las ubicaciones geográficas
 
-Las aplicaciones de búsqueda personalizadas obtienen resultados de todas o algunas ubicaciones geográficas especificando parámetros de consulta con la solicitud a la API de REST de Búsqueda de SharePoint. Según los parámetros de consulta, la consulta se abate a todas las ubicaciones geográficas o a algunas ubicaciones geográficas. Por ejemplo, si solo necesita consultar un subconjunto de ubicaciones geográficas para encontrar información relevante, puede controlar el ventilador solo a estas. Si la solicitud se realiza correctamente, la API de REST de Búsqueda de SharePoint devuelve datos de respuesta.
+Las aplicaciones de búsqueda personalizada obtienen resultados de todas o algunas de las ubicaciones geográficas especificando parámetros de consulta con la solicitud a la API REST de SharePoint Search. En función de los parámetros de consulta, se efectúa una distribución ramificada de la consulta a todas o a algunas de las ubicaciones geográficas. Por ejemplo, si solo tiene que consultar un subconjunto de las ubicaciones geográficas para encontrar información relevante, puede controlar la distribución ramificada a solo estas. Si la solicitud se realiza correctamente, la API REST de SharePoint Search devuelve datos de respuesta.
 
 ### <a name="requirement"></a>Requisito
 

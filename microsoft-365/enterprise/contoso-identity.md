@@ -23,7 +23,7 @@ ms.locfileid: "51051525"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
-Microsoft proporciona Identidad como servicio (IDaaS) en sus ofertas en la nube a través de Azure Active Directory (Azure AD). Para adoptar Microsoft 365 para empresas, la solución IDaaS de Contoso tenía que usar su proveedor de identidades local e incluir la autenticación federada con sus proveedores de identidades de terceros de confianza existentes.
+Microsoft proporciona Identity as a Service (IDaaS) en sus ofertas en la nube a través Azure Active Directory (Azure AD). Para adoptar Microsoft 365 empresa, la solución IDaaS de Contoso tenía que usar su proveedor de identidades local e incluir la autenticación federada con sus proveedores de identidades de terceros de confianza existentes.
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>El bosque de Servicios de dominio de Active Directory de Contoso
 
@@ -33,7 +33,7 @@ Este es el bosque contoso con dominios regionales para las diferentes partes del
 
 ![Bosque y dominios de Contoso en todo el mundo](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso decidió usar las cuentas y grupos del bosque com contoso para la autenticación y autorización de sus cargas de trabajo y servicios de \. Microsoft 365.
+Contoso decidió usar las cuentas y grupos del bosque com contoso para la autenticación y autorización para sus \. Microsoft 365 cargas de trabajo y servicios.
 
 ## <a name="the-contoso-federated-authentication-infrastructure"></a>La infraestructura de autenticación federada de Contoso
 
@@ -52,13 +52,13 @@ Contoso decidió mantener esta infraestructura y dedicarse a la autenticación d
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>Identidad híbrida con sincronización de hash de contraseña para la autenticación basada en la nube
 
-Contoso quería usar su bosque de AD DS local para la autenticación en recursos en la nube de Microsoft 365. Decidió usar la sincronización de hash de contraseña (PHS).
+Contoso quería usar su bosque de AD DS local para la autenticación para Microsoft 365 en la nube. Decidió usar la sincronización de hash de contraseña (PHS).
 
 PHS sincroniza el bosque de AD DS local con el inquilino de Azure AD de su suscripción de Microsoft 365 para empresas, copiando cuentas de usuario y grupo y una versión hash de contraseñas de cuentas de usuario.
 
-Para realizar la sincronización de directorios, Contoso implementó la herramienta Azure AD Connect en un servidor de su centro de datos de París.
+Para realizar la sincronización de directorios, Contoso implementó la herramienta Conectar Azure AD en un servidor de su centro de datos de París.
 
-Este es el servidor que ejecuta Azure AD Connect para buscar cambios en el bosque de Contoso AD DS y, a continuación, sincronizar esos cambios con el inquilino de Azure AD.
+Este es el servidor que ejecuta Azure AD Conectar el bosque de Contoso AD DS en busca de cambios y, a continuación, sincroniza esos cambios con el inquilino de Azure AD.
 
 ![La infraestructura de sincronización de directorios de CONTOSO PHS](../media/contoso-identity/contoso-identity-fig4.png)
  
@@ -76,9 +76,9 @@ Este es el conjunto resultante de directivas de identidad y dispositivo de acces
  
 ## <a name="next-step"></a>Paso siguiente
 
-Obtenga información sobre cómo Contoso usa su infraestructura de Microsoft Endpoint Configuration Manager para implementar y mantener [Windows 10 Enterprise](contoso-win10.md) actual en toda su organización.
+Obtenga información sobre cómo Contoso usa su Microsoft Endpoint Configuration Manager para [implementar y](contoso-win10.md) mantener las Windows 10 Enterprise en toda su organización.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Plan de identidad para Microsoft 365](identity-roadmap-microsoft-365.md)
 

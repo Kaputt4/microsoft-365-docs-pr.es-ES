@@ -39,8 +39,8 @@ Al ejecutar una aplicación cliente que funcione con Office 365, como Skype Empr
   
 Si en su dominio falta este registro CNAME, estas aplicaciones usarán un extremo de autenticación predeterminado que está ubicado en Estados Unidos, por lo que la autenticación puede ser más lenta. Si este registro CNAME no se configura correctamente (por ejemplo, si la **dirección de destino** contiene un error ortográfico), estas aplicaciones no podrán completar la autenticación.
   
- **Si Office 365 administra los registros DNS de su dominio,** Office 365 configura este registro CNAME automáticamente. 
+ **Si Office 365 los registros DNS** del dominio, Office 365 configurar este registro CNAME automáticamente. 
   
  **Si va a administrar registros DNS para su** dominio en el host DNS, cree este registro usted mismo siguiendo las instrucciones del host [DNS](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
   
-Si está planeando una implementación de Office 365 y desea obtener más información sobre todos los registros DNS que puede que necesite agregar o actualizar, lea acerca de ellos en Referencia: Registros del sistema de nombres de dominio externos para [Office 365](../../enterprise/external-domain-name-system-records.md).
+Si está planeando una implementación de Office 365 y desea obtener más información sobre todos los registros DNS que puede que necesite agregar o actualizar, lea acerca de ellos en [Referencia:](../../enterprise/external-domain-name-system-records.md)Registros del sistema de nombres de dominio externos para Office 365 .

@@ -1,6 +1,6 @@
 ---
 title: Guía básica de administración de dispositivos para Microsoft 365
-keywords: Microsoft 365, Microsoft 365 para empresas, documentación de Microsoft 365, administración de dispositivos móviles, Intune
+keywords: Microsoft 365, Microsoft 365 para empresas, documentación Microsoft 365, administración de dispositivos móviles, Intune
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -33,15 +33,15 @@ Hay dos opciones para la administración de dispositivos:
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Puede usar Microsoft Intune para administrar el acceso a su organización mediante la administración de dispositivos móviles o la administración de aplicaciones móviles. La administración de dispositivos móviles es cuando los usuarios "inscriben" sus dispositivos en Intune. Después de inscribir un dispositivo, es un dispositivo administrado; por lo tanto, puede recibir las directivas, reglas y configuración de la organización. Por ejemplo, puedes instalar aplicaciones específicas, crear una directiva de contraseña, instalar una conexión VPN y mucho más.
+Puedes usar Microsoft Intune para administrar el acceso a tu organización mediante la administración de dispositivos móviles o la administración de aplicaciones móviles. La administración de dispositivos móviles es cuando los usuarios "inscriben" sus dispositivos en Intune. Después de inscribir un dispositivo, es un dispositivo administrado; por lo tanto, puede recibir las directivas, reglas y configuración de la organización. Por ejemplo, puedes instalar aplicaciones específicas, crear una directiva de contraseña, instalar una conexión VPN y mucho más.
 
-Es posible que los usuarios con sus propios dispositivos personales no quieran inscribir sus dispositivos o que Intune y las directivas de su organización lo administren. Pero aún necesita proteger los recursos y los datos de su organización. En este escenario, puedes proteger tus aplicaciones mediante la administración de aplicaciones móviles. Por ejemplo, puede usar una directiva de administración de aplicaciones móviles que requiere que un usuario escriba un PIN al acceder a SharePoint Online en el dispositivo.
+Es posible que los usuarios con sus propios dispositivos personales no quieran inscribir sus dispositivos o que Intune y las directivas de su organización lo administren. Pero aún necesita proteger los recursos y los datos de su organización. En este escenario, puedes proteger tus aplicaciones mediante la administración de aplicaciones móviles. Por ejemplo, puedes usar una directiva de administración de aplicaciones móviles que requiere que un usuario escriba un PIN al acceder a SharePoint Online en el dispositivo.
 
 También determinarás cómo vas a administrar dispositivos personales y dispositivos propiedad de la organización. Es posible que quieras tratar los dispositivos de forma diferente, según sus usos.
 
 ## <a name="basic-mobility-and-security"></a>Movilidad y seguridad básicas
 
-Esto está integrado en Microsoft 365 y te ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhones, iPads, Android y teléfonos Windows. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
+Esto está integrado en Microsoft 365 y le ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhones, iPads, Androides y Windows teléfonos. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
 
 ## <a name="choose-between-the-two-options"></a>Elegir entre las dos opciones
 
@@ -59,6 +59,6 @@ Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidad
 - [Requisitos previos](../security/defender-365-security/identity-access-prerequisites.md)
 - [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Cómo contoso hizo la administración de dispositivos para Microsoft 365
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Cómo Contoso hizo la administración de dispositivos Microsoft 365
 
-Para obtener información sobre cómo una empresa multinacionales ficticia pero representativa implementó su infraestructura de administración de dispositivos móviles con los servicios en la nube de Microsoft 365, vea Administración de dispositivos [móviles para Contoso](contoso-mdm.md).
+Para obtener información sobre cómo una empresa multinacionales ficticia pero representativa implementó su infraestructura de administración de dispositivos móviles con Microsoft 365 en la nube, consulte Administración de dispositivos [móviles para Contoso](contoso-mdm.md).

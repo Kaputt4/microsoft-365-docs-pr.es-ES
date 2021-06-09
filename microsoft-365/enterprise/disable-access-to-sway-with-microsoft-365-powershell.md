@@ -17,7 +17,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
-description: Obtenga información sobre dónde descargar ManageSway.ps1 script de PowerShell que le permite deshabilitar el acceso a Sway en su organización de Microsoft 365.
+description: Obtenga información sobre dónde descargar ManageSway.ps1 script de PowerShell que le permite deshabilitar el acceso a Sway en su Microsoft 365 organización.
 ms.openlocfilehash: bec96c6232eee88355997f56e49f1f99b8cc2fbd
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.locfileid: "46693844"
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-El ManageSway.ps1 script de PowerShell le permite ver y deshabilitar servicios en su organización de Microsoft 365, incluido Sway. Este script automatiza los procedimientos que se describen en los siguientes temas:
+El ManageSway.ps1 script de PowerShell le permite ver y deshabilitar servicios en su Microsoft 365, incluido Sway. Este script automatiza los procedimientos que se describen en los siguientes temas:
   
 - [Ver licencias y servicios con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-- [Deshabilitar el acceso a los servicios con PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
+- [Deshabilitar el acceso a servicios con PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
     
 Debe descargar los dos archivos que están asociados con el script:
   

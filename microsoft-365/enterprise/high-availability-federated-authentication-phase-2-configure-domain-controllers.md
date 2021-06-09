@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 'Resumen: configure los controladores de dominio y el servidor de sincronización de directorios para la autenticación federada de alta disponibilidad para Microsoft 365 en Microsoft Azure.'
+description: 'Summary: Configure the domain controllers and directory synchronization server for your high availability federated authentication for Microsoft 365 in Microsoft Azure.'
 ms.openlocfilehash: 751d332ce5f5606fe5f833182f002a1f4b6f29ad
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,12 +23,12 @@ ms.locfileid: "50909815"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
 
-En esta fase de implementación de alta disponibilidad para la autenticación federada de Microsoft 365 en los servicios de infraestructura de Azure, se configuran dos controladores de dominio y el servidor de sincronización de directorios en la red virtual de Azure. Después, las solicitudes web de los clientes para la autenticación se pueden autenticar en la red virtual de Azure, en lugar de enviar ese tráfico de autenticación por la conexión VPN de sitio a sitio a la red local.
+En esta fase de implementación de alta disponibilidad para Microsoft 365 autenticación federada en los servicios de infraestructura de Azure, se configuran dos controladores de dominio y el servidor de sincronización de directorios en la red virtual de Azure. Después, las solicitudes web de los clientes para la autenticación se pueden autenticar en la red virtual de Azure, en lugar de enviar ese tráfico de autenticación por la conexión VPN de sitio a sitio a la red local.
   
 > [!NOTE]
 > Los Servicios de federación de Active Directory (AD FS) no pueden usar Azure Active Directory (Azure AD) como sustituto de los controladores de dominio de Servicios de dominio de Active Directory (AD DS). 
   
-Debe completar esta fase antes de pasar a [fase 3: Configurar servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Consulte Implementar la autenticación federada de alta disponibilidad [para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) para todas las fases.
+Debe completar esta fase antes de pasar a [fase 3: Configurar servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Consulte [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) para todas las fases.
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Crear las máquinas virtuales del controlador de dominio en Azure
 
@@ -44,7 +44,7 @@ Primero, necesita rellenar la columna de **Nombre de la máquina virtual** de la
 |6.  <br/> |![línea](../media/Common-Images/TableLine.png) (primer servidor proxy de aplicación web, ejemplo WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |7.  <br/> |![línea](../media/Common-Images/TableLine.png) (segundo servidor proxy de aplicación web, ejemplo WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **Tabla M: máquinas virtuales para la autenticación federada de alta disponibilidad para Microsoft 365 en Azure**
+ **Tabla M: máquinas virtuales para la autenticación federada de alta disponibilidad para Microsoft 365 azure**
   
 Para obtener la lista completa de tamaños de máquinas virtuales, vea [Tamaños de máquinas virtuales](/azure/virtual-machines/virtual-machines-windows-sizes).
   
@@ -70,7 +70,7 @@ Recuerde que ha definido las tablas R, V, S, I y A en [la fase 1: Configurar Azu
 Después de especificar todos los valores correctos, ejecute el bloque resultante en el símbolo del sistema de Azure PowerShell o en el Entorno de scripting integrado (ISE) de PowerShell en el equipo local.
   
 > [!TIP]
-> Para generar bloques de comandos de PowerShell listos para ejecutarse en función de la configuración personalizada, use este libro [de configuración de Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> Para generar bloques de comandos de PowerShell listos para ejecutarse en función de la configuración personalizada, use este [Microsoft Excel de configuración](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 ```powershell
 # Set up variables common to both virtual machines
@@ -175,7 +175,7 @@ Se le pedirá que especifique las credenciales de una cuenta de administrador de
 
 Use el cliente de Escritorio remoto que prefiera y cree una conexión a Escritorio remoto a la máquina virtual del segundo controlador de dominio. Use el nombre DNS de la intranet o el nombre de equipo y las credenciales de la cuenta de administrador local.
   
-A continuación, debe agregar el disco de datos adicional al segundo controlador de dominio con este comando desde un símbolo del sistema de Windows PowerShell en la segunda máquina virtual del **controlador de dominio:**
+A continuación, debe agregar el disco de datos adicional al segundo controlador de dominio con este comando desde un símbolo del sistema de Windows PowerShell en la segunda máquina virtual del controlador **de dominio:**
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -245,16 +245,16 @@ Esta es la configuración completada después de la finalización correcta de es
   
 **Fase 2: Controladores de dominio y servidor de sincronización de directorios para la infraestructura de autenticación federada de alta disponibilidad en Azure**
 
-![Fase 2 de la infraestructura de autenticación federada de Microsoft 365 de alta disponibilidad en Azure con controladores de dominio](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Fase 2 de la infraestructura de autenticación federada Microsoft 365 alta disponibilidad en Azure con controladores de dominio](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Paso siguiente
 
 Usar [la fase 3: Configurar los servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) para seguir configurando esta carga de trabajo.
   
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Identidad federada para el entorno de desarrollo y pruebas de Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Identidad federada para el entorno Microsoft 365 de desarrollo y pruebas](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Centro de soluciones y arquitectura de Microsoft 365](../solutions/index.yml)

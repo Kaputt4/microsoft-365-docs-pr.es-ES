@@ -1,5 +1,5 @@
 ---
-title: Administrar el gobierno de identidades de Microsoft 365
+title: Administrar Microsoft 365 de identidades
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Obtenga información sobre cómo usar las características de gobierno de identidades de Microsoft 365.
+description: Obtenga información sobre cómo usar Microsoft 365 de gobierno de identidades.
 ms.openlocfilehash: 6a97ca24c609724a2cab93feec9e90f25d3361e3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50910959"
 ---
-# <a name="manage-microsoft-365-identity-governance"></a>Administrar el gobierno de identidades de Microsoft 365
+# <a name="manage-microsoft-365-identity-governance"></a>Administrar Microsoft 365 de identidades
 
 El gobierno de identidades consiste en proteger, supervisar y auditar el acceso a recursos críticos mientras se garantiza la productividad de los empleados. Por ejemplo, con la gobernanza de identidades puede asegurarse de que los usuarios adecuados tengan el acceso adecuado a los recursos adecuados y determinar si este acceso cambia a lo largo del tiempo.
 
-Para obtener más información, vea esta [introducción al gobierno de identidades para Azure Active Directory (Azure AD).](/azure/active-directory/governance/identity-governance-overview)
+Para obtener más información, vea esta introducción al gobierno de [identidades para Azure Active Directory (Azure AD).](/azure/active-directory/governance/identity-governance-overview)
 
 ## <a name="set-up-azure-ad-access-reviews"></a>Revisiones de acceso de Azure AD
 
@@ -59,6 +59,6 @@ Administración de derechos de Azure AD wiht, puede administrar la identidad y e
 
 Los empleados necesitan acceso a varios grupos, aplicaciones y sitios para realizar su trabajo. Administrar este acceso puede ser difícil porque cambian los requisitos, se agregan nuevas aplicaciones o los usuarios necesitan derechos de acceso adicionales. Al colaborar con otras organizaciones, es posible que no sepa quién de la otra organización necesita acceso a los recursos de la organización y los usuarios externos no sabrán qué aplicaciones, grupos o sitios usa su organización.
 
-La administración de derechos de Azure AD puede ayudarle a administrar de forma más eficaz el acceso a grupos, aplicaciones y sitios de SharePoint para usuarios internos y externos.
+La administración de derechos de Azure AD puede ayudarle a administrar de forma más eficaz el acceso a grupos, aplicaciones y sitios SharePoint para usuarios internos y externos.
  
 Para obtener más información, vea [la introducción a la administración de derechos de Azure AD](/azure/active-directory/governance/entitlement-management-overview).

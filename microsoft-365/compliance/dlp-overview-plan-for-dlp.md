@@ -1,5 +1,5 @@
 ---
-title: Planear la prevención de pérdida de datos
+title: Plan de prevención de pérdida de datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -222,5 +222,5 @@ Las normativas, las leyes y los estándares del sector a los que está sujeta su
 ### On-premises Scanner
 -->
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
