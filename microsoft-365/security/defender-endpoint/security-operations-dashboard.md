@@ -1,5 +1,5 @@
 ---
-title: Panel de operaciones de seguridad del Centro de seguridad de Microsoft Defender
+title: Centro de seguridad de Microsoft Defender Panel de operaciones de seguridad
 description: Use el panel para identificar dispositivos en riesgo, realizar un seguimiento del estado del servicio y ver estadísticas e información sobre dispositivos y alertas.
 keywords: panel, alertas, nuevas, en curso, resuelto, riesgo, dispositivos en riesgo, infecciones, informes, estadísticas, gráficos, gráficos, estado, detecciones de malware activo, categoría de amenazas, categorías, robo de contraseñas, ransomware, exploit, amenaza, baja gravedad, malware activo
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51072952"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Panel de operaciones de seguridad del Centro de seguridad de Microsoft Defender
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centro de seguridad de Microsoft Defender Panel de operaciones de seguridad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51072952"
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
-El **panel de operaciones de seguridad** es donde se muestra la detección de puntos de conexión y las capacidades de respuesta. Proporciona una introducción de alto nivel de dónde se han visto las detecciones y resalta dónde se necesitan acciones de respuesta. 
+El **panel de operaciones de seguridad** es donde se detección y respuesta de puntos de conexión funcionalidades. Proporciona una introducción de alto nivel de dónde se han visto las detecciones y resalta dónde se necesitan acciones de respuesta. 
 
 El panel muestra una instantánea de:
 

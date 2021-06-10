@@ -19,7 +19,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: En este artículo, obtenga información sobre cómo usar PowerShell para Microsoft 365 para administrar usuarios, grupos y sitios de SharePoint Online.
+description: En este artículo, obtenga información sobre cómo usar PowerShell para Microsoft 365 administrar SharePoint, grupos y sitios en línea.
 ms.openlocfilehash: cc977355f1182b18d2f2e90b573683ed69299c1c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "50916731"
 
 Si es un administrador de SharePoint Online que trabaja con listas grandes de cuentas de usuario o grupos y quiere una forma más sencilla de administrarlas, puede usar PowerShell para Microsoft 365. 
 
-Antes de comenzar, los procedimientos de este tema requieren que se conecte a SharePoint Online. Para obtener instrucciones, vea [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Antes de comenzar, los procedimientos de este tema requieren que se conecte a SharePoint Online. Para obtener instrucciones, [vea Conectar to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>Obtener una lista de sitios, grupos y usuarios
 
@@ -79,11 +79,11 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
-Puede copiar y pegar estos comandos en el Bloc de notas, cambiar los valores de variables de $tenant, $site y $user a valores reales del entorno y, a continuación, pegarlo en la ventana del Shell de administración de SharePoint Online para ejecutarlos.
+Puede copiar y pegar estos comandos en Bloc de notas, cambiar los valores de variable de $tenant, $site y $user a valores reales del entorno y, a continuación, pegarlo en la ventana del Shell de administración en línea de SharePoint para ejecutarlos.
 
 ## <a name="add-a-user-to-other-site-collection-groups"></a>Agregar un usuario a otros grupos de colecciones de sitios
 
-En esta tarea, usaremos el cmdlet para agregar un usuario a un grupo de `Add-SPOUser` SharePoint en una colección de sitios.
+En esta tarea, usaremos el cmdlet para agregar un usuario a un `Add-SPOUser` grupo SharePoint una colección de sitios.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -106,7 +106,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ## <a name="create-a-site-collection-group"></a>Crear un grupo de colecciones de sitios
 
-Use el `New-SPOSiteGroup` cmdlet para crear un nuevo grupo de SharePoint y agregarlo a una colección de sitios.
+Use el `New-SPOSiteGroup` cmdlet para crear un nuevo grupo SharePoint y agregarlo a una colección de sitios.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -131,9 +131,9 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 A veces, es necesario quitar un usuario de un sitio o incluso de todos los sitios. Tal vez el empleado se mueva de una división a otra o abandone la compañía. Puede hacer esto fácilmente para un empleado en la interfaz de usuario, pero no es tan fácil cuando hay que mover una división completa de un sitio a otro.
 
-Sin embargo, al usar el Shell de administración de SharePoint Online y los archivos CSV, esto es rápido y fácil. En esta tarea, vamos a usar Windows PowerShell para quitar un usuario de un grupo de seguridad de la colección de sitios. A continuación, puede usar un archivo CSV y quitar muchos usuarios de distintos sitios. 
+Sin embargo, al usar SharePoint Shell de administración en línea y archivos CSV, esto es rápido y fácil. En esta tarea, vamos a usar Windows PowerShell para quitar un usuario de un grupo de seguridad de la colección de sitios. A continuación, puede usar un archivo CSV y quitar muchos usuarios de distintos sitios. 
 
-Usaremos el cmdlet "Remove-SPOUser" para quitar un solo usuario de Microsoft 365 de un grupo de colecciones de sitios para que podamos ver la sintaxis de comandos. Este es el aspecto de la sintaxis:
+Usaremos el cmdlet "Remove-SPOUser" para quitar un único usuario de Microsoft 365 de un grupo de colecciones de sitios para que podamos ver la sintaxis de comandos. Este es el aspecto de la sintaxis:
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -165,9 +165,9 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>Automatizar la administración de grandes listas de usuarios y grupos
 
-Para agregar un gran número de cuentas a sitios de SharePoint y concederles permisos, puede usar el Centro de administración de Microsoft 365, comandos de PowerShell individuales o PowerShell un archivo CSV. De estas opciones, el uso del archivo CSV es la forma más rápida de automatizar esta tarea.
+Para agregar un gran número de cuentas SharePoint sitios y concederles permisos, puede usar el Centro de administración de Microsoft 365, comandos de PowerShell individuales o PowerShell un archivo CSV. De estas opciones, el uso del archivo CSV es la forma más rápida de automatizar esta tarea.
 
-El proceso básico consiste en crear un archivo CSV que tiene encabezados (columnas) que se corresponden con los parámetros que el script de Windows PowerShell necesita. Puede crear fácilmente dicha lista en Excel y luego exportarla como un archivo CSV. A continuación, puede usar un script de Windows PowerShell para iterar a través de registros (filas) en el archivo CSV, agregar los usuarios a los grupos y los grupos a los sitios. 
+El proceso básico consiste en crear un archivo CSV que tiene encabezados (columnas) que se corresponden con los parámetros que el script de Windows PowerShell necesita. Puede crear fácilmente dicha lista en Excel luego exportarla como un archivo CSV. A continuación, puede usar un script de Windows PowerShell para iterar a través de registros (filas) en el archivo CSV, agregar los usuarios a los grupos y los grupos a los sitios. 
 
 Por ejemplo, vamos a crear un archivo CSV para definir un grupo de colecciones de sitios, grupos y permisos. A continuación, vamos a crear un archivo CSV para rellenar los grupos con usuarios. Por último, vamos a crear y ejecutar un script de Windows PowerShell que cree y rellene los grupos.
 
@@ -274,9 +274,9 @@ Sin embargo, ¿qué pasa si quisiera hacer esto para cada sitio? Puede hacerlo s
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Este informe es bastante sencillo y podemos agregar más código para crear informes más específicos o que incluyan información más detallada. Pero esto debería darle una idea de cómo usar el Shell de administración de SharePoint Online para administrar usuarios en el entorno de SharePoint Online.
+Este informe es bastante sencillo y podemos agregar más código para crear informes más específicos o que incluyan información más detallada. Pero esto debería darle una idea de cómo usar el Shell de administración en línea de SharePoint para administrar usuarios en el entorno SharePoint Online.
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Conectarse a SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 

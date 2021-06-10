@@ -39,14 +39,14 @@ La protección contra amenazas web forma parte de [la protección web](web-prote
 >Los dispositivos pueden tardar hasta una hora en recibir nuevos indicadores personalizados.
 
 ## <a name="prerequisites"></a>Requisitos previos
-La protección web usa la protección de red para proporcionar seguridad de exploración web en Microsoft Edge y exploradores web de terceros.
+La protección web usa la protección de red para proporcionar seguridad de navegación web Microsoft Edge exploradores web de terceros.
 
 Para activar la protección de red en los dispositivos:
 - Edite la línea base de seguridad de Defender for Endpoint en **Web & Network Protection** para habilitar la protección de red antes de implementarla o volver a implementarla. [Obtenga información sobre cómo revisar y asignar la línea base de seguridad de Defender for Endpoint](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)
 - Activa la protección de red con la configuración de dispositivos de Intune, SCCM, la directiva de grupo o la solución MDM. [Más información sobre cómo habilitar la protección de red](enable-network-protection.md)  
 
 >[!Note]
->Si establece la protección de red en **Solo auditoría,** el bloqueo no estará disponible. Además, solo podrá detectar e registrar intentos de acceso a sitios web malintencionados y no deseados en Microsoft Edge.
+>Si establece la protección de red en **Solo auditoría,** el bloqueo no estará disponible. Además, podrás detectar e registrar intentos de acceso a sitios web malintencionados y no deseados en Microsoft Edge solo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

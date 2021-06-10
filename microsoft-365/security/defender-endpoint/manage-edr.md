@@ -1,5 +1,5 @@
 ---
-title: Administrar capacidades de detección y respuesta de puntos de conexión
+title: Administrar detección y respuesta de puntos de conexión capacidades
 ms.reviewer: ''
 description: ''
 keywords: ''
@@ -25,7 +25,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51073011"
 ---
-# <a name="manage-endpoint-detection-and-response-capabilities"></a>Administrar capacidades de detección y respuesta de puntos de conexión
+# <a name="manage-endpoint-detection-and-response-capabilities"></a>Administrar detección y respuesta de puntos de conexión capacidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ Administrar la cola de alertas, investigar los dispositivos de la lista de dispo
 ## <a name="in-this-section"></a>En esta sección
 Tema | Descripción 
 :---|:---
-[Cola de alertas](alerts-queue-endpoint-detection-response.md)| Vea las alertas que se han presentado en el Centro de seguridad de Microsoft Defender.
+[Cola de alertas](alerts-queue-endpoint-detection-response.md)| Ver las alertas que se han presentado en Centro de seguridad de Microsoft Defender.
 [Lista de dispositivos](machines-view-overview.md) | Obtén información sobre cómo puedes ver y administrar la lista de dispositivos, administrar grupos de dispositivos e investigar alertas relacionadas con dispositivos. 
 [Realizar acciones de respuesta](respond-machine-alerts.md)| Realizar acciones de respuesta en dispositivos y archivos para responder rápidamente a los ataques detectados y contener amenazas.
 [Consultar datos con búsqueda avanzada](advanced-hunting-query-language.md)| Busque de forma proactiva posibles amenazas en toda la organización mediante una herramienta de búsqueda y consulta eficaz.

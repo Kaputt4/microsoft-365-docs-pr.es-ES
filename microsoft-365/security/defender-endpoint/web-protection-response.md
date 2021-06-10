@@ -1,6 +1,6 @@
 ---
 title: Responder a amenazas web en Microsoft Defender para endpoint
-description: Responder a alertas relacionadas con sitios web malintencionados y no deseados. Comprender cómo la protección contra amenazas web informa a los usuarios finales a través de sus exploradores web y notificaciones de Windows
+description: Responder a alertas relacionadas con sitios web malintencionados y no deseados. Comprender cómo la protección contra amenazas web informa a los usuarios finales a través de sus exploradores web y Windows notificaciones
 keywords: protección web, protección contra amenazas web, exploración web, alertas, respuesta, seguridad, phishing, malware, vulnerabilidad, sitios web, protección de red, Edge, Internet Explorer, Chrome, Firefox, explorador web, notificaciones, usuarios finales, notificaciones de Windows, página de bloqueo,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -66,15 +66,15 @@ También puedes comprobar el dispositivo que intentó obtener acceso a una direc
 
 [Más información sobre las páginas de entidad de dispositivo](investigate-machines.md)
 
-## <a name="web-browser-and-windows-notifications-for-end-users"></a>Notificaciones de Windows y explorador web para usuarios finales
+## <a name="web-browser-and-windows-notifications-for-end-users"></a>Explorador web y notificaciones Windows para usuarios finales
 
-Con la protección web en Microsoft Defender para endpoint, los usuarios finales no podrán visitar sitios web malintencionados o no deseados con Microsoft Edge u otros exploradores. Dado que el bloqueo se realiza [mediante la protección de red,](network-protection.md)verán un error genérico desde el explorador web. También verán una notificación de Windows.
+Con la protección web en Microsoft Defender para endpoint, los usuarios finales no podrán visitar sitios web malintencionados o no deseados Microsoft Edge otros exploradores. Dado que el bloqueo se realiza [mediante la protección de red,](network-protection.md)verán un error genérico desde el explorador web. También verán una notificación de Windows.
 
-![Imagen de Microsoft Edge que muestra un error 403 y la amenaza web de notificación de Windows ](images/wtp-browser-blocking-page.png)
- *bloqueada en Microsoft Edge*
+![Imagen de Microsoft Edge muestra un error 403 y la Windows notificación ](images/wtp-browser-blocking-page.png)
+ *web bloqueada en Microsoft Edge*
 
-![Imagen del explorador web Chrome que muestra una advertencia de conexión segura y la amenaza web de notificación de Windows ](images/wtp-chrome-browser-blocking-page.png)
- *bloqueada en Chrome*
+![Imagen del explorador web Chrome que muestra una advertencia de conexión segura y la Windows notificación ](images/wtp-chrome-browser-blocking-page.png)
+ *web bloqueada en Chrome*
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Introducción a protección web](web-protection-overview.md)

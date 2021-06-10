@@ -41,7 +41,7 @@ El panel está estructurado en dos secciones:
 
 ![Imagen del informe de protección contra amenazas](images/threat-protection-reports.png)
 
-Section | Descripción 
+Sección | Descripción 
 :---|:---
 1 | Tendencias de alertas
 2 | Resumen de alertas
@@ -61,7 +61,7 @@ De forma predeterminada, las tendencias de alerta muestran información de alert
 ## <a name="alert-summary"></a>Resumen de alertas
 Aunque las tendencias de alerta muestran información de alerta de tendencias, el resumen de alerta muestra información de alerta en el ámbito del día actual.
 
- El resumen de alerta le permite explorar en profundidad una cola de alertas determinada con el filtro correspondiente aplicado. Por ejemplo, al hacer clic en la barra de EDR de la tarjeta Orígenes de detección, aparecerá la cola de alertas con resultados que muestran solo alertas generadas a partir de detecciones de EDR. 
+ El resumen de alerta le permite explorar en profundidad una cola de alertas determinada con el filtro correspondiente aplicado. Por ejemplo, al hacer clic en la barra de EDR de la tarjeta Orígenes de detección, se mostrará la cola de alertas con resultados que muestran solo las alertas generadas EDR detecciones. 
 
 >[!NOTE]
 >Los datos reflejados en la sección de resumen están en el ámbito de 180 días antes de la fecha actual. Por ejemplo, si la fecha de hoy es el 5 de noviembre de 2019, los datos de la sección de resumen reflejarán números a partir del 5 de mayo de 2019 al 5 de noviembre de 2019.<br>

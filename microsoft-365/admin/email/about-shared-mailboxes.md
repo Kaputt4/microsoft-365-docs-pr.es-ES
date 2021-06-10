@@ -70,5 +70,5 @@ Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son alg
 [Crear un buzón compartido](create-a-shared-mailbox.md) (artículo)\
 [Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)\
 [Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) (artículo)\
-[Quitar una licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)\
+[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)\
 [Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)

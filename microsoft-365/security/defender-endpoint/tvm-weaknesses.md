@@ -1,7 +1,7 @@
 ---
-title: 'Vulnerabilidades en mi organización: administración de amenazas y vulnerabilidades'
-description: Enumera el identificador de vulnerabilidades y exposiciones (CVE) común de las debilidades encontradas en el software que se ejecuta en la organización. Detectada por la funcionalidad de administración de amenazas y vulnerabilidades de Microsoft Defender para puntos de conexión.
-keywords: Microsoft Defender para endpoint threat & vulnerability management, threat and vulnerability management, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
+title: 'Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades'
+description: Enumera el identificador de vulnerabilidades y exposiciones (CVE) común de las debilidades encontradas en el software que se ejecuta en la organización. Detectada por la funcionalidad de Microsoft Defender para Administración de amenazas y vulnerabilidades punto de conexión.
+keywords: Microsoft Defender para endpoint threat & administración de vulnerabilidades, Administración de amenazas y vulnerabilidades, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,23 +25,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933078"
 ---
-# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilidades en mi organización: administración de amenazas y vulnerabilidades
+# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-La administración de amenazas y vulnerabilidades usa las mismas señales en Defender para la protección de puntos de conexión de Endpoint para examinar y detectar vulnerabilidades.
+Threat y administración de vulnerabilidades usa las mismas señales en Defender for Endpoint's endpoint protection para examinar y detectar vulnerabilidades.
 
 En la página Puntos débiles se enumeran las vulnerabilidades de software a las que se exponen los dispositivos al enumerar el identificador vulnerabilidades y **exposiciones** comunes (CVE). También puede ver la gravedad, la clasificación del Sistema de puntuación de vulnerabilidad común (CVSS), la prevalencia en su organización, la vulneración correspondiente, las perspectivas de amenazas y mucho más.
 
 >[!NOTE]
->Si no hay ningún identificador CVE oficial asignado a una vulnerabilidad, el nombre de vulnerabilidad se asigna mediante la administración de amenazas y vulnerabilidades.
+>Si no hay ningún identificador CVE oficial asignado a una vulnerabilidad, el nombre de vulnerabilidad se asigna mediante Administración de amenazas y vulnerabilidades.
 
 >[!TIP]
 >Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
@@ -50,12 +50,12 @@ En la página Puntos débiles se enumeran las vulnerabilidades de software a las
 
 Acceder a la página Puntos débiles de varias maneras diferentes:
 
-- Selección de **puntos débiles** en el menú de navegación de administración de amenazas y vulnerabilidades en el Centro de [seguridad de Microsoft Defender](portal-overview.md)
+- Selección de **puntos débiles** en el menú Administración de amenazas y vulnerabilidades navegación de la [Centro de seguridad de Microsoft Defender](portal-overview.md)
 - Búsqueda global
 
 ### <a name="navigation-menu"></a>Menú navegación
 
-Ve al menú de navegación de administración de amenazas y vulnerabilidades y selecciona **Puntos débiles** para abrir la lista de CVEs.
+Vaya al menú Administración de amenazas y vulnerabilidades navegación y seleccione **Puntos débiles** para abrir la lista de CVEs.
 
 ### <a name="vulnerabilities-in-global-search"></a>Vulnerabilidades en la búsqueda global
 
@@ -97,7 +97,7 @@ Si seleccionas una CVE, se abrirá un panel desplegable con más información, c
 
 ### <a name="software-that-isnt-supported"></a>Software que no es compatible
 
-Las CVE para software que actualmente no son compatibles con amenazas & la administración de vulnerabilidades aún está presente en la página Debilidades. Dado que el software no es compatible, solo estarán disponibles datos limitados.
+Las CVE para software que actualmente no son compatibles con amenazas & administración de vulnerabilidades todavía está presente en la página Debilidades. Dado que el software no es compatible, solo estarán disponibles datos limitados.
 
 La información de dispositivo expuesta no estará disponible para las CVE con software no compatible. Filtre por software no compatible seleccionando la opción "No disponible" en la sección "Dispositivos expuestos".
 
@@ -107,7 +107,7 @@ La información de dispositivo expuesta no estará disponible para las CVE con s
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>Software vulnerable superior en el panel
 
-1. Ve al panel de administración de amenazas y [vulnerabilidades](tvm-dashboard-insights.md) y desplázate hacia abajo hasta el **widget de software vulnerable** superior. Verás el número de vulnerabilidades encontradas en cada software, junto con la información sobre amenazas y una vista de alto nivel de la exposición del dispositivo con el tiempo.
+1. Ve al panel [de Administración de amenazas y vulnerabilidades y](tvm-dashboard-insights.md) desplázate hacia abajo hasta el widget de software **vulnerable** superior. Verás el número de vulnerabilidades encontradas en cada software, junto con la información sobre amenazas y una vista de alto nivel de la exposición del dispositivo con el tiempo.
 
     ![Tarjeta de software vulnerable superior con cuatro columnas: software, debilidades, amenazas, dispositivos expuestos.](images/tvm-top-vulnerable-software500.png)
 
@@ -115,13 +115,13 @@ La información de dispositivo expuesta no estará disponible para las CVE con s
 3. Seleccione la **pestaña Vulnerabilidades detectadas.**
 4. Seleccione la vulnerabilidad que desea investigar para obtener más información sobre los detalles de vulnerabilidad
 
-    ![Información general sobre Windows Server 2019.](images/windows-server-drilldown.png)
+    ![Windows Información general sobre server 2019.](images/windows-server-drilldown.png)
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>Detectar vulnerabilidades en la página del dispositivo
 
 Ver información de puntos débiles relacionados en la página del dispositivo.
 
-1. Ve a la barra de menús de navegación del Centro de seguridad de Microsoft Defender y selecciona el icono del dispositivo. Se **abre la página de lista** Dispositivos.
+1. Ve a la barra Centro de seguridad de Microsoft Defender menú de navegación y, a continuación, selecciona el icono del dispositivo. Se **abre la página de lista** Dispositivos.
 2. En la **página de lista** Dispositivos, selecciona el nombre del dispositivo que quieras investigar.
 
     ![Lista de dispositivos con el dispositivo seleccionado para investigar.](images/tvm_machinetoinvestigate.png)
@@ -137,7 +137,7 @@ Ver información de puntos débiles relacionados en la página del dispositivo.
 
 De forma similar a la evidencia de software, ahora mostramos la lógica de detección que aplicamos en un dispositivo para decir que es vulnerable. La nueva sección se denomina "Lógica de detección" (en cualquier vulnerabilidad detectada en la página del dispositivo) y muestra la lógica y el origen de detección.
 
-La categoría "Característica del sistema operativo" también se muestra en escenarios relevantes. Una CVE afectaría a los dispositivos que ejecutan un sistema operativo vulnerable solo si se habilita un componente del sistema operativo específico. Supongamos que Windows Server 2019 tiene vulnerabilidad en su componente DNS. Con esta nueva funcionalidad, solo adjuntaremos esta CVE a los dispositivos Windows Server 2019 con la funcionalidad DNS habilitada en su sistema operativo.
+La categoría "Característica del sistema operativo" también se muestra en escenarios relevantes. Una CVE afectaría a los dispositivos que ejecutan un sistema operativo vulnerable solo si se habilita un componente del sistema operativo específico. Supongamos que Windows Server 2019 tiene vulnerabilidad en su componente DNS. Con esta nueva funcionalidad, solo adjuntaremos esta CVE a los dispositivos de Windows Server 2019 con la funcionalidad DNS habilitada en su sistema operativo.
 
 ![Ejemplo de lógica de detección que enumera el software detectado en el dispositivo y los KB.](images/tvm-cve-detection-logic.png)
 
@@ -148,11 +148,11 @@ Informe de un falso positivo cuando vea información imprecisa, inexacta o incom
 1. Abra CVE en la página Puntos débiles.
 2. Seleccione **Informar de imprecisión y** se abrirá un panel desplegable.
 3. Seleccione la categoría de imprecisión en el menú desplegable y rellene la dirección de correo electrónico y los detalles de imprecisión.
-4. Seleccione **Enviar**. Sus comentarios se envían inmediatamente a los expertos en administración de amenazas y vulnerabilidades.
+4. Seleccione **Enviar**. Sus comentarios se envían inmediatamente a los Administración de amenazas y vulnerabilidades expertos.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Información general sobre amenazas administración de vulnerabilidades amenazas](next-gen-threat-and-vuln-mgt.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)
 - [Inventario de software](tvm-software-inventory.md)
 - [Panel de Conclusiones](tvm-dashboard-insights.md)

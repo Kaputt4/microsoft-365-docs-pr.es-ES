@@ -1,5 +1,5 @@
 ---
-title: Quitar licencias existentes
+title: Quitar las licencias existentes
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -28,7 +28,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51072632"
 ---
-# <a name="remove-existing-licenses"></a>Quitar licencias existentes
+# <a name="remove-existing-licenses"></a>Quitar las licencias existentes
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r?autoplay=false]
 

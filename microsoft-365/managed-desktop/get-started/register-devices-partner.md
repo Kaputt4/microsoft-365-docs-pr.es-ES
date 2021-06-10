@@ -1,6 +1,6 @@
 ---
 title: Pasos para que los Socios puedan registrar dispositivos
-description: Cómo los partners pueden registrar dispositivos para que puedan ser administrados por Microsoft Managed Desktop
+description: Cómo los partners pueden registrar dispositivos para que puedan administrarse mediante Escritorio administrado de Microsoft
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -21,7 +21,7 @@ ms.locfileid: "51689238"
 # <a name="steps-for-partners-to-register-devices"></a>Pasos para que los Socios puedan registrar dispositivos
 
 
-En este artículo se describen los pasos que deben seguir los partners para registrar dispositivos. El proceso para registrar dispositivos usted mismo se documenta en Registrar dispositivos [en Microsoft Managed Desktop usted mismo.](register-devices-self.md)
+En este artículo se describen los pasos que deben seguir los partners para registrar dispositivos. El proceso para registrar dispositivos usted mismo se documenta en Registrar dispositivos [en Escritorio administrado de Microsoft usted mismo.](register-devices-self.md)
 
 
 
@@ -30,7 +30,7 @@ Antes de completar el registro de un cliente, primero debe establecer una relaci
 
 
 > [!NOTE]
-> Esta documentación es solo para partners y OEM. El proceso de autoinscripción se documenta en Registrar dispositivos [en Microsoft Managed Desktop usted mismo.](register-devices-self.md)
+> Esta documentación es solo para partners y OEM. El proceso de autoinscripción se documenta en Registrar dispositivos [en Escritorio administrado de Microsoft usted mismo](register-devices-self.md).
 
 
 ## <a name="register-devices-by-using-partner-center"></a>Registrar dispositivos mediante el Centro de partners
@@ -50,12 +50,12 @@ Una vez establecida la relación con los clientes, puede usar el Centro de partn
 |Estándar     | **Microsoft365Managed \_ Standard**        |
 
 > [!IMPORTANT]
-> El nombre del grupo debe coincidir exactamente con los enumerados en la tabla, incluidas las mayúsculas y los caracteres especiales. Esto permitirá que los dispositivos recién registrados se asignen con el perfil de Microsoft Managed Desktop Autopilot.
+> El nombre del grupo debe coincidir exactamente con los enumerados en la tabla, incluidas las mayúsculas y los caracteres especiales. Esto permitirá que los dispositivos recién registrados se asignen con el Escritorio administrado de Microsoft de Autopilot.
 
 >[!NOTE]
-> Deberías haber recibido este archivo .csv con la compra del dispositivo. Si no has recibido un archivo .csv, puedes crear uno tú mismo siguiendo los pasos descritos en Agregar dispositivos a [Windows Autopilot](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell). El Windows PowerShell script es diferente del que se usa para el portal de administración de [Escritorio administrado de Microsoft](./register-devices-self.md#obtain-the-hardware-hash). Los partners deben [usar Get-WindowsAutoPilotInfo para](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) registrar dispositivos para dispositivos de Escritorio administrado de Microsoft en el Centro de partners.
+> Deberías haber recibido este archivo .csv con la compra del dispositivo. Si no recibió un archivo .csv, puede crear uno usted mismo siguiendo los pasos descritos en Agregar dispositivos a Windows [Autopilot](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell). El Windows PowerShell script es diferente del que se usa para el portal Escritorio administrado de Microsoft [administración.](./register-devices-self.md#obtain-the-hardware-hash) Los partners deben [usar Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) para registrar dispositivos Escritorio administrado de Microsoft dispositivos en el Centro de partners.
 
-Si recibe un mensaje de error al intentar cargar el archivo .csv, compruebe el formato del archivo. Asegúrate de que el orden de columna coincida con lo que se describe en Usar perfiles de [Windows Autopilot](/partner-center/autopilot#add-devices-to-a-customers-account)en nuevos dispositivos para personalizar la experiencia de un cliente de forma personalizada. También puedes usar el archivo .csv de ejemplo proporcionado desde el vínculo junto a **Agregar dispositivos** para crear una lista de dispositivos. 
+Si recibe un mensaje de error al intentar cargar el archivo .csv, compruebe el formato del archivo. Asegúrese de que el orden de columna coincide con lo que se describe en [Use Windows Autopilot profiles on new devices to customize a customer's out-of-box experience](/partner-center/autopilot#add-devices-to-a-customers-account). También puedes usar el archivo de .csv de ejemplo proporcionado desde el vínculo junto a **Agregar dispositivos** para crear una lista de dispositivos. 
 
 Para obtener más información acerca de Autopilot en escenarios de partners, vea [Agregar dispositivos a la cuenta de un cliente.](/partner-center/autopilot#add-devices-to-a-customers-account)
 
@@ -74,4 +74,4 @@ Una vez establecida la relación, puedes empezar a registrar dispositivos para c
 |Estándar     | **Microsoft365Managed \_ Standard**      |
 
 > [!IMPORTANT]
-> Las etiquetas de grupo deben coincidir exactamente con las que aparecen en la tabla, incluidas las mayúsculas y los caracteres especiales. Esto permitirá que los dispositivos recién registrados se asignen con el perfil de Microsoft Managed Desktop Autopilot.
+> Las etiquetas de grupo deben coincidir exactamente con las que aparecen en la tabla, incluidas las mayúsculas y los caracteres especiales. Esto permitirá que los dispositivos recién registrados se asignen con el Escritorio administrado de Microsoft de Autopilot.

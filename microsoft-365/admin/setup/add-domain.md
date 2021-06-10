@@ -136,7 +136,7 @@ Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ah
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Preguntas más frecuentes](domains-faq.yml) sobre dominios (artículo)\
+[Preguntas más frecuentes sobre dominios](domains-faq.yml) (artículo)\
 [¿Qué es un dominio?](../get-help-with-domains/what-is-a-domain.md) (artículo)\
 [Comprar un nombre de dominio en Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artículo)\
 [Configurar el dominio](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (artículo)

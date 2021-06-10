@@ -28,7 +28,7 @@ Puedes cambiar los [perfiles de dispositivo asignados](../service-description/pr
 
 El perfil de dispositivo que selecciones se aplicará a todos los dispositivos que selecciones en el primer paso. Para mover dispositivos independientes a diferentes perfiles, tendrás que repetir este proceso para cada perfil de dispositivo. 
 
-1. En Microsoft Endpoint Manager, seleccione **Dispositivos**   en el panel izquierdo. En la **sección Escritorio administrado** de Microsoft del menú, seleccione  **Dispositivos**.  
+1. En Microsoft Endpoint Manager, seleccione **Dispositivos**   en el panel izquierdo. En la **Escritorio administrado de Microsoft** del menú, seleccione  **Dispositivos**.  
 2. Active las casillas de los dispositivos que desea modificar. 
 3. Seleccione **Cambiar perfil de dispositivo;** se abre un fly-in.
 4. Usa el menú desplegable para seleccionar el nuevo perfil de dispositivo.

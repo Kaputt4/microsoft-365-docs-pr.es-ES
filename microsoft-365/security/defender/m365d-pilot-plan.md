@@ -1,7 +1,7 @@
 ---
-title: Planeación del proyecto piloto de Microsoft 365 Defender
-description: Planee su proyecto piloto de Microsoft 365 Defender con las partes interesadas para administrar las expectativas y garantizar un resultado correcto.
-keywords: Piloto de Microsoft 365 Defender, proyecto piloto de Microsoft 365 Defender, evaluación de Microsoft 365 Defender en producción, proyecto piloto de Microsoft 365 Defender, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
+title: Planeación del proyecto piloto Microsoft 365 Defender
+description: Planee su proyecto piloto Microsoft 365 Defender con las partes interesadas para administrar las expectativas y garantizar un resultado correcto.
+keywords: Microsoft 365 Piloto de Defender, plan piloto de proyecto de Microsoft 365 Defender, evaluar Microsoft 365 Defender en producción, proyecto piloto de Microsoft 365 Defender, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932552"
 ---
-# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planeación del proyecto piloto de Microsoft 365 Defender 
+# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planeación del proyecto piloto Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -57,9 +57,9 @@ El ámbito del piloto determinará la amplitud de la prueba, en función del ent
 - Entorno de producción con Microsoft 365, Azure, servicios de Active Directory, puntos de conexión y servidores
 
 >[!NOTE]
->Si aún no tiene las licencias completa, puede obtener licencias de prueba para evaluar [Microsoft 365 Defender:](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) planee, prepare, configure, configure y ejecute el proyecto piloto. Las partes interesadas desempeñarán un papel importante en ayudar a facilitar el proceso de principio a fin.
+>Si aún no tiene las licencias completa, puede obtener licencias de prueba para evaluar [Microsoft 365 Defender:](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) planear, preparar, configurar, configurar y ejecutar el proyecto piloto. Las partes interesadas desempeñarán un papel importante en ayudar a facilitar el proceso de principio a fin.
 
-Los tipos de sistemas operativos que se deben evaluar también deben definirse en función de la composición de la organización. Esto puede incluir lo siguiente: [puntos de conexión de Mac](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), Servidores [Linux](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), puntos de conexión de [Windows 10](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
+Los tipos de sistemas operativos que se deben evaluar también deben definirse en función de la composición de la organización. Esto puede incluir lo siguiente: [extremos de Mac](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), Servidores [Linux](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), [Windows 10 extremos](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
 
 ## <a name="use-cases"></a>Casos de uso
 
@@ -89,11 +89,11 @@ Una forma de unir todos los elementos del plan puede ser crear un cuadro de mand
 | Caso de uso | Requisitos | Requisitos de configuración | Plan de pruebas | Resultado previsto | Estado de la prueba | Puntuación | Notas |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Administración de incidencias|- Microsoft 365 Defender  </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender para endpoint </br></br>- Microsoft Cloud App Security (opcional)|Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información |[Simular ataque](m365d-pilot-simulate.md) <br></br>[Investigar el incidente](./m365d-pilot-simulate.md#investigate-an-incident) |Los investigadores pueden comprender el alcance y el impacto del incidente y administrar el incidente||||
-|AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender para endpoint |Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información <br>Habilitar AutoIR  |[Simular ataque](m365d-pilot-simulate.md) <br></br>[Investigación automatizada](m365d-pilot-simulate.md#automated-investigation-and-remediation) |Microsoft 365 Defender corrige automáticamente las alertas e incidentes||||
-|Búsqueda avanzada|- Microsoft 365 Defender </br></br>- Microsoft Defender para endpoint </br></br>-Microsoft Defender para Office 365 |Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información|[Escenario de búsqueda avanzada](./m365d-pilot-simulate.md#advanced-hunting-scenario) |Los investigadores pueden encontrar datos a través de búsquedas avanzadas, pivotando en entidades afectadas y creando detecciones personalizadas||||
+|AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender para endpoint |Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información <br>Habilitar AutoIR  |[Simular ataque](m365d-pilot-simulate.md) <br></br>[Investigación automatizada](m365d-pilot-simulate.md#automated-investigation-and-remediation) |Las alertas e incidentes son corregidos automáticamente por Microsoft 365 Defender||||
+|Búsqueda avanzada de amenazas|- Microsoft 365 Defender </br></br>- Microsoft Defender para endpoint </br></br>-Microsoft Defender para Office 365 |Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información|[Escenario de búsqueda avanzada](./m365d-pilot-simulate.md#advanced-hunting-scenario) |Los investigadores pueden encontrar datos a través de búsquedas avanzadas, pivotando en entidades afectadas y creando detecciones personalizadas||||
 
 
 
 ## <a name="next-step"></a>Paso siguiente
-|![Fase de preparación](../../media/mtp/prep.png) <br>[Fase de preparación](prepare-m365d-eval.md) | Preparar el entorno piloto de Microsoft 365 Defender
+|![Fase de preparación](../../media/mtp/prep.png) <br>[Fase de preparación](prepare-m365d-eval.md) | Preparar el entorno piloto Microsoft 365 Defender
 |:-------|:-----|

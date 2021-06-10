@@ -120,7 +120,7 @@ Para trabajar con el panel de administración de alertas DLP:
     |                   | Ubicación                      | Carga de trabajo donde se detectó el evento                                      | Todos los eventos                               |
     |                   | Tiempo de actividad              | Hora de la actividad del usuario que provocó la infracción de DLP                    | Todos los eventos                               |
     |*Entidades afectadas*||
-    |  | User                          | Usuario que causó la infracción de DLP                                          | Todos los eventos                               |
+    |  | Usuario                          | Usuario que causó la infracción de DLP                                          | Todos los eventos                               |
     |                   | Nombre de host                      | Nombre de host del equipo donde se detectó la infracción de DLP              | Eventos de dispositivos                           |
     |                   | Dirección IP                    | Dirección IP del equipo                                                  | Eventos de dispositivos                           |
     |                   | Ruta de acceso de archivo                     | Ruta absoluta del archivo implicado en la infracción                        | SharePoint, eventos OneDrive y Dispositivos |

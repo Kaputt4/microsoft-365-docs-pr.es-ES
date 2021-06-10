@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 'Resumen: use PowerShell para administrar las propiedades de la cuenta de usuario de Skype Empresarial Online con directivas.'
+description: 'Summary: Use PowerShell to manage your Skype Empresarial Online user account properties with policies.'
 ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -44,11 +44,11 @@ Use estas instrucciones para configurarse para ejecutar los comandos (omita los 
    Connect-MicrosoftTeams -Credential $userCredential
    ```
 
-   Cuando se le pida, escriba el nombre y la contraseña de la cuenta de administrador de Skype Empresarial Online.
+   Cuando se le pida, escriba su Skype Empresarial nombre y contraseña de la cuenta de administrador en línea.
     
 ## <a name="manage-user-account-policies"></a>Administrar directivas de cuenta de usuario
 
-Muchas propiedades de cuenta de usuario de Skype Empresarial Online se configuran mediante directivas. Las directivas son simplemente colecciones de configuraciones que se pueden aplicar a uno o varios usuarios. Para echar un vistazo a cómo se ha configurado una directiva, puede ejecutar este comando de ejemplo para la directiva FederationAndPICDefault:
+Muchas Skype Empresarial de cuentas de usuario en línea se configuran mediante directivas. Las directivas son simplemente colecciones de configuraciones que se pueden aplicar a uno o varios usuarios. Para echar un vistazo a cómo se ha configurado una directiva, puede ejecutar este comando de ejemplo para la directiva FederationAndPICDefault:
   
 ```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
@@ -66,13 +66,13 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-En este ejemplo, los valores de esta directiva determinan lo que un uso puede o no puede hacer cuando se trata de comunicarse con usuarios federados. Por ejemplo, la propiedad EnableOutsideAccess debe establecerse en True para que un usuario pueda comunicarse con personas fuera de la organización. Tenga en cuenta que esta propiedad no aparece en el Centro de administración de Microsoft 365. En su lugar, la propiedad se establece automáticamente en True o False en función de las demás selecciones que realice. Las otras dos propiedades de interés son:
+En este ejemplo, los valores de esta directiva determinan lo que un uso puede o no puede hacer cuando se trata de comunicarse con usuarios federados. Por ejemplo, la propiedad EnableOutsideAccess debe establecerse en True para que un usuario pueda comunicarse con personas fuera de la organización. Tenga en cuenta que esta propiedad no aparece en el centro Microsoft 365 administración. En su lugar, la propiedad se establece automáticamente en True o False en función de las demás selecciones que realice. Las otras dos propiedades de interés son:
   
 - **EnableFederationAccess** indica si el usuario puede comunicarse con usuarios de dominios federados.
     
 - **EnablePublicCloudAccess** indica si el usuario puede comunicarse con usuarios de Windows Live.
     
-Por lo tanto, no cambia directamente las propiedades relacionadas con la federación en cuentas de usuario (por ejemplo, **Set-CsUser -EnableFederationAccess $True**). En su lugar, asigne a una cuenta una directiva de acceso externo que tenga preconfigurados los valores de propiedad deseados. Si queremos que un usuario pueda comunicarse con usuarios federados y con usuarios Windows Live, esa cuenta de usuario debe tener asignada una directiva que permita esos tipos de comunicación.
+Por lo tanto, no cambia directamente las propiedades relacionadas con la federación en cuentas de usuario (por ejemplo, **Set-CsUser -EnableFederationAccess $True**). En su lugar, asigne a una cuenta una directiva de acceso externo que tenga preconfigurados los valores de propiedad deseados. Si queremos que un usuario pueda comunicarse con usuarios federados y con usuarios de Windows Live, esa cuenta de usuario debe tener asignada una directiva que permita esos tipos de comunicación.
   
 Si desea saber si alguien puede comunicarse o no con usuarios de fuera de la organización, debe:
   
@@ -88,7 +88,7 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Este comando busca la directiva asignada al usuario y, a continuación, busca las capacidades habilitadas o deshabilitadas dentro de esa directiva.
   
-Para administrar directivas de Skype Empresarial Online con PowerShell, vea los cmdlets para:
+Para administrar Skype Empresarial en línea con PowerShell, consulte los cmdlets para:
 
 - [Directiva de cliente](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
 - [Directiva de conferencia](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
@@ -98,7 +98,7 @@ Para administrar directivas de Skype Empresarial Online con PowerShell, vea los 
 
 
 > [!NOTE]
-> Un plan de marcado de Skype Empresarial Online es una directiva en todos los aspectos excepto el nombre. El nombre "plan de marcado" se eligió en lugar de, por ejemplo, "directiva de marcado" para proporcionar compatibilidad con versiones anteriores con Office Communications Server y con Exchange. 
+> Un Skype Empresarial de marcado en línea es una directiva en todos los aspectos excepto el nombre. El nombre "plan de marcado" se eligió en lugar de, por ejemplo, "directiva de marcado" para proporcionar compatibilidad con versiones anteriores con Office Communications Server y con Exchange. 
   
 Por ejemplo, para ver todas las directivas de voz disponibles para su uso, ejecute este comando:
   
@@ -116,7 +116,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 El parámetro ApplicableTo limita los datos devueltos a las directivas que se pueden asignar al usuario especificado (por ejemplo, Alex Darrow). Según las licencias y las restricciones de ubicación de uso, eso puede representar un subconjunto de todas las directivas disponibles. 
   
-En algunos casos, las propiedades de las directivas no se usan con Microsoft 365, mientras que otras solo las puede administrar el personal de soporte técnico de Microsoft. 
+En algunos casos, las propiedades de las directivas no se usan Microsoft 365, mientras que otras solo pueden administrarse por el personal de soporte técnico de Microsoft. 
   
 Con Skype Empresarial Online, los usuarios deben administrarse mediante una directiva de algún tipo. Si una propiedad válida relacionada con la directiva está en blanco, significa que el usuario en cuestión está administrado por una directiva global, que es una directiva que se aplica automáticamente a un usuario a menos que se le asigne específicamente una directiva por usuario. Dado que no vemos una directiva de cliente enumerada para una cuenta de usuario, se administra mediante la directiva global. Puede determinar la directiva de cliente global con este comando:
   
@@ -124,7 +124,7 @@ Con Skype Empresarial Online, los usuarios deben administrarse mediante una dire
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar Skype Empresarial Online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

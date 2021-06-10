@@ -122,7 +122,7 @@ Lea el artículo [He olvidado el nombre de usuario o la contraseña de la cuenta
   
 ## <a name="related-content"></a>Contenido relacionado
   
-[Permitir que los usuarios restablezcan sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)\
+[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)\
 [Restablecer contraseñas](../add-users/reset-passwords.md) (artículo)\
 [Establecer la contraseña de un usuario individual para que nunca expire](set-password-to-never-expire.md) (artículo)\
 [Establecer la directiva de expiración de contraseña para su organización](../manage/set-password-expiration-policy.md) (artículo)\

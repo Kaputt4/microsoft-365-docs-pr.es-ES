@@ -38,7 +38,7 @@ ms.locfileid: "51932970"
 [La búsqueda avanzada](advanced-hunting-overview.md) en Microsoft 365 Defender te permite buscar de forma proactiva amenazas en:
 - Dispositivos administrados por Microsoft Defender para endpoint
 - Correos electrónicos procesados por Microsoft 365
-- Actividades de aplicaciones en la nube, eventos de autenticación y actividades de controlador de dominio rastreadas por Microsoft Cloud App Security y Microsoft Defender for Identity
+- Actividades de aplicación en la nube, eventos de autenticación y actividades de controlador de dominio que realiza el seguimiento de Microsoft Cloud App Security y Microsoft Defender for Identity
 
 Con este nivel de visibilidad, puede buscar rápidamente amenazas que atraviesan secciones de la red, incluidas las intrusiones sofisticadas que llegan al correo electrónico o a la web, elevar los privilegios locales, adquirir credenciales de dominio con privilegios y moverse lateralmente a través de los dispositivos. 
 

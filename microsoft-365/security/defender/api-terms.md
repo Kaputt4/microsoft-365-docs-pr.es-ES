@@ -1,5 +1,5 @@
 ---
-title: Licencia y términos de uso de las API de Microsoft 365 Defender
+title: Microsoft 365 Licencia y términos de uso de las API de Defender
 description: Descripción de la licencia y los términos de uso de las API en Microsoft 365 Defender
 keywords: api, apis, licencia, términos, apis, legal, avisos, código de conducta
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51070072"
 ---
-# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Licencia y términos de uso de las API de Microsoft 365 Defender
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Licencia y términos de uso de las API de Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,13 +40,13 @@ ms.locfileid: "51070072"
 
 ## <a name="official-terms"></a>Términos oficiales
 
-Las API de Microsoft 365 Defender se rigen por la licencia de las API de [Microsoft y los términos de uso.](/legal/microsoft-apis/terms-of-use)
+Microsoft 365 Las API de Defender se rigen por la licencia de las API de [Microsoft y los términos de uso.](/legal/microsoft-apis/terms-of-use)
 
 ## <a name="legal-notices"></a>Avisos legales
 
 Microsoft y los colaboradores le conceden una licencia para la documentación de Microsoft y otro contenido de este [repositorio,](https://github.com/MicrosoftDocs/microsoft-365-docs)en virtud de la Creative Commons Attribution 4.0 International Public License. Para obtener más información, vea el [archivo LICENSE.](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE)
 
-Microsoft, Windows, Microsoft Azure u otros productos y servicios de Microsoft a los que se hace referencia en la documentación pueden ser marcas comerciales o marcas comerciales registradas de Microsoft en los Estados Unidos y/u otros países.
+Microsoft, Windows, Microsoft Azure y/u otros productos y servicios de Microsoft a los que se hace referencia en la documentación pueden ser marcas comerciales o marcas comerciales registradas de Microsoft en los Estados Unidos y/u otros países.
 
 Las licencias de este proyecto no le conceden derechos para usar nombres, logotipos o marcas comerciales de Microsoft. Las directrices generales de marcas comerciales de Microsoft se pueden encontrar en [Microsoft Trademarks](https://go.microsoft.com/fwlink/?LinkID=254653).
 
@@ -63,7 +63,7 @@ La API de búsqueda avanzada tiene algunas limitaciones en el número de [result
 
 ### <a name="quotas-and-resource-allocation"></a>Cuotas y asignación de recursos
 
-Las API de Microsoft 365 Defender tienen umbrales de limitación.
+Las API Microsoft 365 Defender tienen umbrales de limitación.
 
 - **API de incidentes:** hasta 50 llamadas por minuto o 1500 llamadas por hora.
 - **API de búsqueda avanzada:** hasta 15 llamadas por minuto, 10 minutos de tiempo de ejecución por hora y 4 horas de tiempo de ejecución al día.
@@ -74,6 +74,6 @@ Si la solicitud ha sido limitada, el cuerpo de la respuesta indicará la hora en
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Introducción a las API de Microsoft 365 Defender](api-overview.md)
+- [Microsoft 365 Introducción a las API de Defender](api-overview.md)
 - [API de Microsoft 365 Defender (versión preliminar) admitidas](api-supported.md)
-- [Obtener acceso a las API de Microsoft 365 Defender](api-access.md)
+- [Acceder a las API Microsoft 365 Defender](api-access.md)

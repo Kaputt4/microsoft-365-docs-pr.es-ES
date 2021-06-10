@@ -99,13 +99,13 @@ Vaya a la **sección Informe de** analistas para leer la escritura detallada del
 En la **sección Mitigaciones,** revise la lista de recomendaciones específicas que se pueden usar y que pueden ayudarle a aumentar la resistencia de la organización frente a la amenaza. La lista de mitigaciones rastreadas incluye:
 
 - **Actualizaciones de seguridad:** implementación de actualizaciones de seguridad o revisiones para vulnerabilidades
-- **Configuración del Antivirus de Microsoft Defender**
+- **Antivirus de Microsoft Defender configuración**
   - Versión de inteligencia de seguridad
   - Protección entregada en la nube  
   - Protección de aplicaciones potencialmente no deseadas (PUA)
   - Protección en tiempo real
  
-La información de mitigación [](next-gen-threat-and-vuln-mgt.md)de esta sección incorpora datos de la administración de amenazas y vulnerabilidades, que también proporciona información detallada de los distintos vínculos del informe.
+La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md), que también proporciona información detallada de detalles de varios vínculos del informe.
 
 ![Imagen de la sección mitigaciones de un informe de análisis de amenazas Sección ](images/ta-mitigations.png)
  _Mitigaciones de un informe de análisis de amenazas_
@@ -117,7 +117,7 @@ Al usar los informes, tenga en cuenta lo siguiente:
 - Los gráficos reflejan solo las mitigaciones a las que se realiza un seguimiento. Compruebe en el informe información general para ver mitigaciones adicionales que no se muestran en los gráficos.
 - Las mitigaciones no garantizan una resistencia completa. Las mitigaciones proporcionadas reflejan las mejores acciones posibles necesarias para mejorar la resistencia.
 - Los dispositivos se cuentan como "no disponibles" si no han transmitido datos al servicio.
-- Las estadísticas relacionadas con antivirus se basan en la configuración de Antivirus de Microsoft Defender. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
+- Las estadísticas relacionadas con el antivirus se basan en Antivirus de Microsoft Defender configuración. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md) 

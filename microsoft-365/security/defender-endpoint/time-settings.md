@@ -1,6 +1,6 @@
 ---
-title: Configuración de zona horaria del Centro de seguridad de Microsoft Defender
-description: Usa la información que se incluye aquí para configurar la configuración de zona horaria del Centro de seguridad de Microsoft Defender y ver la información de licencia.
+title: Centro de seguridad de Microsoft Defender de zona horaria
+description: Usa la información que se incluye aquí para configurar la configuración Centro de seguridad de Microsoft Defender zona horaria y ver la información de licencia.
 keywords: configuración, Microsoft Defender, inteligencia de amenazas de ciberseguridad, Microsoft Defender para endpoint, zona horaria, utc, hora local, licencia
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932636"
 ---
-# <a name="microsoft-defender-security-center-time-zone-settings"></a>Configuración de zona horaria del Centro de seguridad de Microsoft Defender
+# <a name="microsoft-defender-security-center-time-zone-settings"></a>Centro de seguridad de Microsoft Defender de zona horaria
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -68,12 +68,12 @@ Para establecer la zona horaria:
 3. Seleccione **Zona horaria UTC** o la zona horaria local, por ejemplo -7:00.
 
 ### <a name="regional-settings"></a>Configuración regional
-Para aplicar diferentes formatos de fecha para Microsoft Defender para endpoint, usa la configuración regional para Internet Explorer (IE) y Microsoft Edge (Edge). Si usas otro explorador como Google Chrome, sigue los pasos necesarios para cambiar la configuración de hora y fecha de ese explorador. 
+Para aplicar diferentes formatos de fecha para Microsoft Defender para Endpoint, usa la configuración regional para Internet Explorer (IE) y Microsoft Edge (Edge). Si usas otro explorador como Google Chrome, sigue los pasos necesarios para cambiar la configuración de hora y fecha de ese explorador. 
 
 
 **Internet Explorer (IE) y Microsoft Edge**
 
-IE y Microsoft Edge usan la **configuración de** región configurada en la **opción Relojes, Idioma y Región** del panel de control. 
+IE y Microsoft Edge la configuración **de** región configurada en la opción **Relojes, Idioma** y Región del panel de control. 
 
 
 #### <a name="known-issues-with-regional-formats"></a>Problemas conocidos con formatos regionales

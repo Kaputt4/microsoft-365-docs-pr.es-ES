@@ -69,7 +69,7 @@ Agregue la siguiente carga de JAMF para conceder acceso en disco completo a Micr
 
 ### <a name="network-extension-policy"></a>Directiva de extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal Centro de seguridad de Microsoft Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 >[!NOTE]
 >JAMF no tiene compatibilidad integrada con directivas de filtrado de contenido, que son un requisito previo para habilitar las extensiones de red que Microsoft Defender para Endpoint en macOS instala en el dispositivo. Además, JAMF a veces cambia el contenido de las directivas que se implementan.
@@ -170,7 +170,7 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
-5. En el portal jamf, vaya a **Perfiles de configuración** y haga clic en **el botón** Cargar. Seleccione `com.microsoft.network-extension.signed.mobileconfig` cuando se le pida el archivo.
+5. En el portal jamf, vaya a **Perfiles de configuración** y haga clic en **el botón Upload** configuración. Seleccione `com.microsoft.network-extension.signed.mobileconfig` cuando se le pida el archivo.
 
 ## <a name="intune"></a>Intune
 

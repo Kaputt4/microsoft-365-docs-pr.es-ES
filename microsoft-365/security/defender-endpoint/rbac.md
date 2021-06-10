@@ -1,5 +1,5 @@
 ---
-title: Usar el control de acceso basado en roles para conceder acceso preciso al Centro de seguridad de Microsoft Defender
+title: Use el control de acceso basado en roles para conceder acceso personalizado a Centro de seguridad de Microsoft Defender
 description: Cree roles y grupos dentro de las operaciones de seguridad para conceder acceso al portal.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
 search.product: eADQiWindows 10XVcnh
@@ -51,7 +51,7 @@ Defender for Endpoint RBAC está diseñado para admitir el modelo de opciones ba
   - Crea roles personalizados y controla a qué capacidades de Defender for Endpoint pueden acceder con granularidad.
  
 - **Controlar quién puede ver información sobre grupos o grupos de dispositivos específicos**
-  - [Cree grupos de](machine-groups.md) dispositivos por criterios específicos, como nombres, etiquetas, dominios y otros, y, a continuación, conceda acceso a los roles mediante un grupo de usuarios específico de Azure Active Directory (Azure AD).
+  - [Cree grupos de](machine-groups.md) dispositivos por criterios específicos, como nombres, etiquetas, dominios y otros, y, a continuación, conceda acceso a los roles mediante un grupo de usuarios de Azure Active Directory (Azure AD).
 
 Para implementar el acceso basado en roles, deberá definir roles de administrador, asignar los permisos correspondientes y asignar grupos de usuarios de Azure AD asignados a los roles.
 
@@ -63,12 +63,12 @@ Antes de usar RBAC, es importante que comprenda los roles que pueden conceder pe
 > [!WARNING]
 > Antes de habilitar la característica, es importante que tenga un rol de administrador global o de administrador de seguridad en Azure AD y que tenga los grupos de Azure AD listos para reducir el riesgo de que se bloquee el portal. 
 
-Al iniciar sesión por primera vez en el Centro de seguridad de Microsoft Defender, se le concede acceso completo o acceso de solo lectura. Los derechos de acceso completo se conceden a los usuarios con roles de administrador de seguridad o administrador global en Azure AD. El acceso de solo lectura se concede a los usuarios con un rol lector de seguridad en Azure AD. 
+Al iniciar sesión por primera vez en Centro de seguridad de Microsoft Defender, se le concede acceso completo o acceso de solo lectura. Los derechos de acceso completo se conceden a los usuarios con roles de administrador de seguridad o administrador global en Azure AD. El acceso de solo lectura se concede a los usuarios con un rol lector de seguridad en Azure AD. 
 
 Alguien con un rol de administrador global de Defender for Endpoint tiene acceso sin restricciones a todos los dispositivos, independientemente de su asociación de grupo de dispositivos y las asignaciones de grupos de usuarios de Azure AD
 
 > [!WARNING]
-> Inicialmente, solo aquellos con derechos de administrador global de Azure AD o administrador de seguridad podrán crear y asignar roles en el Centro de seguridad de Microsoft Defender, por lo que es importante tener los grupos adecuados listos en Azure AD.
+> Inicialmente, solo aquellos con derechos de administrador global de Azure AD o administrador de seguridad podrán crear y asignar roles en Centro de seguridad de Microsoft Defender, por lo tanto, es importante tener los grupos adecuados listos en Azure AD.
 >
 > **Al activar el control de acceso basado en roles, los usuarios con permisos de solo lectura (por ejemplo, los usuarios asignados al rol de lector de seguridad de Azure AD) perderán el acceso hasta que se les asigne un rol.** 
 >

@@ -54,7 +54,7 @@ La **pestaña Estado actual** muestra el estado actual del servicio Defender par
 - Tiempo de actualización
 - Resumen del impacto
 - Causa raíz preliminar
-- Siguientes pasos
+- Pasos siguientes
 - Tiempo de resolución esperado
 
 Las actualizaciones sobre el progreso de un problema se reflejan en la página a medida que se resuelve el problema. Verá actualizaciones sobre la información, como una estimación actualizada del tiempo de resolución o los pasos siguientes.
