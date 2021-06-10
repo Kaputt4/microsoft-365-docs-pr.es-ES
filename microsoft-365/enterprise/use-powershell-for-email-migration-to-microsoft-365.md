@@ -27,7 +27,7 @@ ms.locfileid: "51581123"
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-A menudo, los administradores migran correo electrónico desde sistemas existentes cuando se configura Microsoft 365 por primera vez. En los siguientes artículos se describe cómo migrar el correo electrónico mediante Windows PowerShell:
+Los administradores suelen migrar correo electrónico desde sistemas existentes cuando se configura por primera vez Microsoft 365. En los siguientes artículos se describe cómo migrar el correo electrónico mediante Windows PowerShell:
   
 - [Usar PowerShell para realizar una migración total a Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md)
     
@@ -45,6 +45,6 @@ A menudo, los administradores migran correo electrónico desde sistemas existent
   
 [Usar Windows PowerShell para crear informes en Microsoft 365](use-windows-powershell-to-create-reports-in-microsoft-365.md)
 
-[Por qué necesita usar PowerShell de Microsoft 365](why-you-need-to-use-microsoft-365-powershell.md)
+[Por qué necesita usar Microsoft 365 PowerShell](why-you-need-to-use-microsoft-365-powershell.md)
   
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

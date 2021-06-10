@@ -32,7 +32,7 @@ ms.locfileid: "51580419"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
-La suplantación de identidad (phishing) es un ataque malintencionado en el que un correo electrónico parece enviado desde un origen conocido, pero intenta recopilar su información personal. De forma predeterminada, Microsoft 365 incluye protección contra suplantación de identidad (phishing), pero puede aumentar esa protección mediante la refinación de la configuración. Echemos un vistazo.
+La suplantación de identidad (phishing) es un ataque malintencionado en el que un correo electrónico parece enviado desde un origen conocido, pero intenta recopilar su información personal. De forma predeterminada, Microsoft 365 protección contra suplantación de identidad (phishing), pero puede aumentar esa protección refinando la configuración. Echemos un vistazo.
 
 ## <a name="try-it"></a>¿Se atreve?
 

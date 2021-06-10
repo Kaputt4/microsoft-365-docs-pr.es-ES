@@ -1,5 +1,5 @@
 ---
-title: Colaborar con Outlook y Teams
+title: Colabore con Outlook y Teams
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -29,7 +29,7 @@ ms.locfileid: "51580671"
 ---
 # <a name="use-outlook-and-teams-together"></a>Usar Outlook y Teams conjuntamente
 
-Cuando se comunique con sus empleados, socios, clientes y otros usuarios de su pequeña empresa, use Outlook y Teams en Microsoft 365. En Outlook, encontrará correo electrónico, calendarios, contactos y tareas, mientras que en Teams encontrará conversaciones, archivos, reuniones y acceso rápido a Aplicaciones de Microsoft y de terceros. Este es un resumen de cómo puede usar cada uno en su empresa.
+Cuando se comunique con sus empleados, socios, clientes y otros usuarios de su pequeña empresa, use Outlook y Teams en Microsoft 365. En Outlook, encontrarás correo electrónico, calendarios, contactos y tareas, mientras que en Teams encontrarás conversaciones, archivos, reuniones y acceso rápido a Aplicaciones de Microsoft y de terceros. Este es un resumen de cómo puede usar cada uno en su empresa.
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
@@ -45,13 +45,13 @@ Cuando se comunique con sus empleados, socios, clientes y otros usuarios de su p
 - Tenga conversaciones enriquecciones en tiempo real con su equipo e invite a clientes o invitados a la conversación.
 - Tener chats o llamadas privadas y compartir la pantalla entre sí.
 - Programar y unirse a reuniones con empleados e invitados.
-- Agregar o compartir archivos desde el sitio de SharePoint asociado o OneDrive para la Empresa.
-- Agrega más aplicaciones como Planner, Power BI o GitHub a Teams.
+- Agregue o comparta archivos desde el sitio SharePoint asociado o OneDrive para la Empresa.
+- Agrega más aplicaciones como Planner, Power BI o GitHub para Teams.
 
-:::image type="content" source="../media/teams-model.png" alt-text="Una imagen estilizada de la página principal de Microsoft Teams."::: 
+:::image type="content" source="../media/teams-model.png" alt-text="Una imagen estilizada de Microsoft Teams página principal."::: 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[¿Qué es Outlook?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
+[¿Qué Outlook?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Introducción a Teams](/MicrosoftTeams/Teams-overview)
+[Teams introducción](/MicrosoftTeams/Teams-overview)

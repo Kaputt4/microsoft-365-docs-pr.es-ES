@@ -29,7 +29,7 @@ ms.locfileid: "51052098"
 
 Puede crear una alerta de actividad que le enviará una notificación por correo electrónico cuando los usuarios realicen actividades específicas en Office 365. Las alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría, excepto que se te enviará un mensaje de correo electrónico cuando se produce un evento para una actividad para la que has creado una alerta. 
   
- **¿Por qué usar alertas de actividad en lugar de buscar en el registro de auditoría?** Puede haber ciertos tipos de actividad o actividad realizadas por usuarios específicos que realmente quieras conocer. En lugar de tener que recordar buscar en el registro de auditoría esas actividades, puede usar alertas de actividad para que Microsoft 365 le envíe un mensaje de correo electrónico cuando los usuarios realicen esas actividades. Por ejemplo, puede crear una alerta de actividad para notificarle cuándo un usuario elimina archivos en SharePoint o puede crear una alerta para notificarle cuando un usuario elimina permanentemente mensajes de su buzón. La notificación de correo electrónico que se le envió incluye información sobre qué actividad se realizó y el usuario que la realizó.
+ **¿Por qué usar alertas de actividad en lugar de buscar en el registro de auditoría?** Puede haber ciertos tipos de actividad o actividad realizadas por usuarios específicos que realmente quieras conocer. En lugar de tener que recordar buscar en el registro de auditoría esas actividades, puede usar alertas de actividad para Microsoft 365 enviar un mensaje de correo electrónico cuando los usuarios realizan esas actividades. Por ejemplo, puede crear una alerta de actividad para notificarle cuándo un usuario elimina archivos en SharePoint o puede crear una alerta para notificarle cuando un usuario elimina permanentemente mensajes de su buzón. La notificación de correo electrónico que se le envió incluye información sobre qué actividad se realizó y el usuario que la realizó.
 
 > [!NOTE]
 > Las alertas de actividad están en desuso. Se recomienda empezar a usar directivas de alerta en el centro de seguridad y cumplimiento en lugar de crear nuevas alertas de actividad. Las directivas de alertas proporcionan funciones adicionales, como la capacidad de crear una directiva de  alerta que desencadena una alerta cuando un usuario realiza una actividad especificada y muestra alertas en la página Ver alertas en el Centro de seguridad y cumplimiento. Para obtener más información, vea [Directivas de alerta](alert-policies.md).
@@ -108,7 +108,7 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
     > [!TIP]
     > Es posible que desee crear una alerta de actividad para una sola actividad que realice cualquier usuario. O puede que desee crear una alerta de actividad que realice un seguimiento de varias actividades realizadas por uno o varios usuarios. 
   
-    En la tabla siguiente se enumeran algunas actividades comunes relacionadas con documentos en SharePoint o OneDrive para la Empresa.
+    En la tabla siguiente se enumeran algunas actividades comunes relacionadas con documentos SharePoint o OneDrive para la Empresa.
     
     |**Cuando un usuario hace esto...**|**Crear una alerta para esta actividad**|**Grupo de actividades**|
     |:-----|:-----|:-----|
@@ -118,7 +118,7 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
     |Carga o descarga un documento.  <br/> |Archivo cargado  <br/> And/or  <br/> Archivo descargado  <br/> |Actividades de archivos y carpetas  <br/> |
     |Cambia los permisos de acceso a un sitio.  <br/> |Permisos de sitio modificados  <br/> |Actividades de administración del sitio  <br/> |
 
-    En la tabla siguiente se enumeran algunas actividades comunes relacionadas con el correo electrónico en Exchange Online.
+    En la tabla siguiente se enumeran algunas actividades comunes relacionadas con el correo electrónico Exchange Online.
 
     |**Cuando un usuario hace esto...**|**Crear una alerta para esta actividad**|**Grupo de actividades**|
     |:-----|:-----|:-----|

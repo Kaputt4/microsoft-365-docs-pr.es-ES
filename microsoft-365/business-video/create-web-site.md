@@ -40,4 +40,4 @@ Microsoft 365 no incluye un sitio web público para su empresa. Para configurar 
      Es posible que le resulte más fácil elegir el generador de sitios web en la misma compañía donde está registrado el nombre de dominio.
 1. Diseña el sitio web de tu empresa, asegurándote de incluir el logotipo de la empresa, el propósito de la empresa, el texto, las imágenes y los vínculos.
 1. Para integrar el sitio web con Microsoft 365, puede agregar su correo electrónico empresarial al sitio web y un vínculo a Microsoft Teams, SharePoint u otra herramienta de colaboración.
-1. Asegúrese de conectar el sitio web al nombre de dominio, que&#39;también usa para correo electrónico en Microsoft 365.
+1. Asegúrese de conectar el sitio web al nombre de dominio, que&#39;también usa para el correo electrónico en Microsoft 365.

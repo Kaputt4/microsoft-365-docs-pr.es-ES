@@ -32,11 +32,11 @@ ms.locfileid: "51580503"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
 
-Microsoft 365 ayuda a proteger su negocio contra ransomware al impedir que se abran en Outlook archivos potencialmente peligrosos, como JavaScript, por lotes y ejecutables. Para aumentar este nivel de protección mediante la adición de reglas que bloquean o advierten de tipos de archivos adicionales, siga estos pasos.
+Microsoft 365 ayuda a proteger su negocio contra ransomware al impedir que los archivos potencialmente peligrosos, como JavaScript, por lotes y ejecutables, se abran en Outlook. Para aumentar este nivel de protección mediante la adición de reglas que bloquean o advierten de tipos de archivos adicionales, siga estos pasos.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración de [https://admin.microsoft.com](https://admin.microsoft.com) , elija Exchange **en** Centros **de administración**.
+1. En el Centro de administración de [https://admin.microsoft.com](https://admin.microsoft.com) , elija **Exchange** en Centros **de administración**.
 1. En el menú de la izquierda, elija **flujo de correo**.
 1. En la pestaña reglas, elija la flecha situada junto al símbolo más (+) y, a continuación, **elija Crear una nueva regla**.
 1. En la **página nueva regla,** escriba un nombre para la regla, desplácese hasta la parte inferior y, a continuación, elija **Más opciones**.

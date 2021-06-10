@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtén información sobre cómo instalar la aplicación móvil de administración de Microsoft 365 en tu teléfono.
+description: Obtén información sobre cómo instalar la Microsoft 365 móvil administrador en el teléfono.
 ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580707"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Instalar la aplicación móvil de administración de Microsoft 365 en el teléfono
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Instalar la Microsoft 365 móvil administrador en el teléfono
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-Puedes usar la aplicación móvil De administración de Microsoft 365 para administrar usuarios, supervisar el estado del servicio y realizar otras tareas de administración desde el teléfono.
+Puedes usar la aplicación Microsoft 365 móvil administrador para administrar usuarios, supervisar el estado del servicio y realizar otras tareas de administración desde el teléfono.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Para obtener la aplicación móvil De administración de Microsoft 365, busca administrador de  **Microsoft 365**  en la tienda de aplicaciones para el dispositivo e instálla.
+1. Para obtener la Microsoft 365 móvil administrador, busca **Microsoft 365 administrador** en la tienda de aplicaciones para el dispositivo e instálla.
 2. Inicie sesión con su dirección de correo electrónico de administrador global y vea el panel para ver el estado del servicio, supervisar las licencias de usuario y ver mensajes y solicitudes de servicio.
 3. Estas son algunas tareas comunes que puedes hacer con la aplicación:
 
@@ -56,6 +56,6 @@ Puedes usar la aplicación móvil De administración de Microsoft 365 para admin
 
 ### <a name="turn-on-notifications"></a>Activar notificaciones
 
-1. En el menú principal, elija  **Configuración**.
+1. En el menú principal, elija **Configuración**.
 2. En  **Configuración de la aplicación,** elija  **Notificaciones**.
 3. Active las casillas situadas junto **a Estado del servicio** y Centro de **mensajes.**

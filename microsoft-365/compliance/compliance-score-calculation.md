@@ -1,5 +1,5 @@
 ---
-title: Cálculo de puntuación de cumplimiento
+title: Cálculo de la puntuación de cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -22,12 +22,12 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51052118"
 ---
-# <a name="compliance-score-calculation"></a>Cálculo de puntuación de cumplimiento
+# <a name="compliance-score-calculation"></a>Cálculo de la puntuación de cumplimiento
 
 **En este artículo:** Obtenga información sobre cómo el Administrador de cumplimiento calcula una puntuación de cumplimiento para su organización. En este artículo se explica cómo  **interpretar** la puntuación , lo que incluye la evaluación de línea base de protección de **datos,** la supervisión continua y cómo se administran y puntuan los distintos tipos **de acciones.**
 
 > [!IMPORTANT]
-> Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Debe evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los Términos [de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también instrucciones [de licencias de Microsoft 365 para seguridad y cumplimiento.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Debe evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los Términos [de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también Microsoft 365 [de licencias para seguridad y cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="how-to-read-your-compliance-score"></a>Cómo leer la puntuación de cumplimiento
 
@@ -45,17 +45,17 @@ Se asigna un valor de puntuación en tres niveles:
 
 La puntuación general de cumplimiento se calcula con puntuaciones de acción, donde cada acción de Microsoft se cuenta una vez, cada acción técnica que administra se cuenta una vez y cada acción no técnica que administre se cuenta una vez por grupo. Esta lógica está diseñada para proporcionar la contabilidad más precisa de cómo se implementan y prueban las acciones en la organización. Es posible que observe que esto puede hacer que la puntuación general de cumplimiento sea diferente de la media de las puntuaciones de evaluación. Obtenga más información a [continuación sobre cómo se puntuan las acciones](#action-types-and-points).
 
-## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Puntuación inicial basada en la línea base de protección de datos de Microsoft 365
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Puntuación inicial basada en Microsoft 365 base de protección de datos
   
-El Administrador de cumplimiento le ofrece una puntuación inicial basada en la línea base de protección de datos de Microsoft 365. Esta línea base es un conjunto de controles que incluye normativas y estándares clave para la protección de datos y el gobierno general de datos. Esta línea base se basa en elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y GDPR (Reglamento general de protección de datos de la Unión Europea).
+El Administrador de cumplimiento le proporciona una puntuación inicial basada en la línea Microsoft 365 base de protección de datos. Esta línea base es un conjunto de controles que incluye normativas y estándares clave para la protección de datos y el gobierno general de datos. Esta línea base se basa en elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y GDPR (Reglamento general de protección de datos de la Unión Europea).
 
-La puntuación inicial se calcula de acuerdo con la evaluación predeterminada de la línea base de protección de datos proporcionada a todas las organizaciones. Tras su primera visita, el Administrador de cumplimiento ya está recopilando señales de sus soluciones de Microsoft 365. Verá de un vistazo el rendimiento de su organización con respecto a los estándares y normativas clave de protección de datos y verá las acciones de mejora sugeridas que deben realizarse.
+La puntuación inicial se calcula de acuerdo con la evaluación predeterminada de la línea base de protección de datos proporcionada a todas las organizaciones. Tras su primera visita, el Administrador de cumplimiento ya está recopilando señales de sus Microsoft 365 soluciones. Verá de un vistazo el rendimiento de su organización con respecto a los estándares y normativas clave de protección de datos y verá las acciones de mejora sugeridas que deben realizarse.
 
 Dado que cada organización tiene necesidades específicas, el Administrador de cumplimiento depende de usted para configurar y administrar evaluaciones que ayuden a minimizar y mitigar los riesgos de la forma más completa posible.
 
 ## <a name="how-compliance-manager-continuously-assesses-controls"></a>Cómo el Administrador de cumplimiento evalúa continuamente los controles
 
-El Administrador de cumplimiento examina automáticamente el entorno de Microsoft 365 y detecta la configuración del sistema, actualizando de forma continua y automática el estado de la acción técnica. Puntuación segura de Microsoft es el motor subyacente que realiza la supervisión.
+El Administrador de cumplimiento examina automáticamente el entorno Microsoft 365 y detecta la configuración del sistema, actualizando de forma continua y automática el estado de la acción técnica. Puntuación segura de Microsoft es el motor subyacente que realiza la supervisión.
 
 El estado de la acción se actualiza en el panel cada 24 horas. Una vez que sigas una recomendación para implementar un control, normalmente verás el estado del control actualizado al día siguiente.
 
@@ -98,25 +98,25 @@ A las acciones se les asigna un valor de puntuación en función de si son oblig
 
  - **Las acciones obligatorias** no se pueden omitir, ya sea de forma intencionada o accidental. Un ejemplo de una acción obligatoria es una directiva de contraseña administrada centralmente que establece los requisitos de longitud, complejidad y expiración de la contraseña. Los usuarios deben cumplir estos requisitos para acceder al sistema.
   
- - **Las acciones discrecionales** dependen de los usuarios para comprender y cumplir una directiva. Por ejemplo, una directiva que requiere que los usuarios bloqueen su equipo cuando lo dejen es una acción discrecional porque depende del usuario.
+ - **Las acciones discrecionales** dependen de los usuarios para comprender y cumplir una directiva. Por ejemplo, una directiva que requiere que los usuarios bloqueen el equipo cuando lo abandonen es una acción discrecional porque depende del usuario.
   
 ### <a name="preventative-detective-and-corrective-actions"></a>Acciones preventivas, de detectives y correctivas
   
- - **Las acciones preventivas** abordan riesgos específicos. Por ejemplo, proteger la información en reposo mediante cifrado es una acción preventiva contra ataques e infracciones. La separación de funciones es una acción preventiva para administrar conflictos de interés y protegerse contra el fraude.
+ - Las **acciones preventivas** abordan unos riesgos determinados. Por ejemplo, proteger la información en reposo con cifrado es una acción preventiva contra ataques y vulneraciones. La separación de tareas es una acción preventiva para administrar los conflictos de intereses y proteger contra el fraude.
   
  - **Las acciones de detective** supervisan activamente los sistemas para identificar condiciones o comportamientos irregulares que representan un riesgo o que se pueden usar para detectar intrusiones o infracciones. Algunos ejemplos son la auditoría de acceso al sistema y las acciones administrativas con privilegios. Las auditorías de cumplimiento normativo son un tipo de acción de detective que se usa para encontrar problemas de proceso.
   
-- **Las acciones correctivas** intentan mantener los efectos adversos de un incidente de seguridad al mínimo, tomar medidas correctivas para reducir el efecto inmediato y revertir el daño si es posible. La respuesta a incidentes de privacidad es una acción correctiva para limitar los daños y restaurar los sistemas a un estado operativo después de una infracción.
+- **Las acciones correctivas** intentan mantener los efectos adversos de un incidente de seguridad al mínimo, tomar medidas correctivas para reducir el efecto inmediato y revertir el daño si es posible. La respuesta a incidentes de privacidad es una acción correctiva para limitar el daño y restaurar los sistemas a un estado operativo después de una infracción.
   
 Cada acción tiene un valor asignado en el Administrador de cumplimiento en función del riesgo que representa:
 
 |**Tipo**|**Puntuación asignada**|
 |:-----|:-----|
 | Obligatorio preventivo | 27 |
-| Discrecionalidad preventiva | 9  |
+| Discrecional preventiva | 9  |
 | Detective obligatorio | 3 |
 | Detective discrecional | 1 |
-| Obligatorio correctivo | 3 |
+| Obligatoria correctiva | 3 |
 | Discrecionalidad correctiva | 1 |
   
 ![Valores de punto de acción del Administrador de cumplimiento](../media/compliance-score-action-scoring.png "Valores de punto de acción del Administrador de cumplimiento")

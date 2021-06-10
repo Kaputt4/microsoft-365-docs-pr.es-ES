@@ -19,7 +19,7 @@ ms.locfileid: "51581039"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Comprobador de la evaluación de preparación descargable
 
-Para funcionar bien con Microsoft Managed Desktop, los dispositivos deben cumplir ciertos requisitos de hardware y configuración. Además, cada dispositivo debe poder alcanzar puntos de conexión clave. Descargue y ejecute esta herramienta para obtener un informe HTML, ver los resultados y, a continuación, realizar acciones. Deberás descargar la herramienta y los archivos de soporte técnico y, a continuación, ejecutarla manualmente en cada dispositivo que quieras inscribir en Microsoft Managed Desktop.
+Para funcionar bien con Escritorio administrado de Microsoft, los dispositivos deben cumplir ciertos requisitos de hardware y configuración. Además, cada dispositivo debe poder alcanzar puntos de conexión clave. Descargue y ejecute esta herramienta para obtener un informe HTML, ver los resultados y, a continuación, realizar acciones. Deberás descargar la herramienta y los archivos de soporte técnico y, a continuación, ejecutarla manualmente en cada dispositivo en el que quieras inscribirte Escritorio administrado de Microsoft.
 
 Para cada comprobación, la herramienta mostrará uno de los tres resultados posibles:
 
@@ -32,7 +32,7 @@ Para cada comprobación, la herramienta mostrará uno de los tres resultados pos
 
 ## <a name="obtain-the-checker"></a>Obtener el control
 
-Descargue el archivo .zip de https://aka.ms/mmddratoolv0 .
+Descargue el .zip archivo de https://aka.ms/mmddratoolv0 .
 
 > [!NOTE]
 > El usuario que ejecuta la herramienta debe tener derechos de administrador local en el dispositivo donde la está ejecutando.
@@ -44,7 +44,7 @@ Descargue el archivo .zip de https://aka.ms/mmddratoolv0 .
 3. Ejecute **Microsoft.MMD.DeviceReadinessAssessmentTool.exe**.
 4. Cuando aparezca el símbolo del sistema control de acceso de usuario, seleccione **Sí**. La herramienta se ejecuta y abre un informe en el explorador predeterminado.
 
-También puedes descargar y extraer el archivo .zip en una ubicación compartida, acceder aMicrosoft.MMD.DeviceReadinessAssessmentTool.exe **desde** cada dispositivo y, a continuación, ejecutarlo localmente.
+También puedes descargar y extraer el archivo .zip a una ubicación compartida, acceder aMicrosoft.MMD.DeviceReadinessAssessmentTool.exe **desde** cada dispositivo y, a continuación, ejecutarlo localmente.
 
 
 ## <a name="checks"></a>Comprobaciones
@@ -53,39 +53,39 @@ La herramienta descargable comprueba estos elementos relacionados con el disposi
 
 ### <a name="hardware"></a>Hardware
 
-Los dispositivos deben cumplir requisitos de hardware específicos para trabajar con Microsoft Managed Desktop. Actualmente, solo se [pueden](../service-description/device-list.md) inscribir dispositivos aprobados específicos. 
+Los dispositivos deben cumplir requisitos de hardware específicos para trabajar con Escritorio administrado de Microsoft. Actualmente, solo se [pueden](../service-description/device-list.md) inscribir dispositivos aprobados específicos. 
 
-Si el dispositivo falla alguna de las comprobaciones, no es compatible con Microsoft Managed Desktop.
+Si el dispositivo falla alguna de las comprobaciones, no es compatible con Escritorio administrado de Microsoft.
 
 ### <a name="network-endpoints"></a>Puntos de conexión de red
 
-Los dispositivos pueden llegar a varios [puntos de conexión clave](network.md) para trabajar con Microsoft Managed Desktop.
+Los dispositivos pueden llegar a varios [puntos de conexión clave](network.md) para trabajar con Escritorio administrado de Microsoft.
 
 Si la herramienta informa de **un resultado** no listo, consulte el informe detallado para averiguar qué puntos de conexión no eran accesibles. A continuación, ajuste el firewall u otra configuración de red para asegurarse de que se pueda alcanzar esos puntos de conexión.
 
 ### <a name="other-settings"></a>Otras opciones de configuración
 
-#### <a name="enterprise-wi-fi-profiles"></a>Perfiles wi-fi empresariales
+#### <a name="enterprise-wi-fi-profiles"></a>Enterprise de wi-fi
 
 Un **resultado de asesoramiento** significa que está usando algunos perfiles wi-fi que necesitan certificados y perfiles para funcionar correctamente. Para obtener más información, vea [Deploy certificates and Wi-Fi/VPN profile](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile).
 
 #### <a name="lan-profiles"></a>Perfiles DE LAN
 
-Un **resultado de asesoramiento** significa que tiene LAN que necesitan certificados y perfiles para funcionar correctamente. Para obtener más información, vea [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
+Un **resultado de asesoramiento** significa que tiene LAN que necesitan certificados y perfiles para funcionar correctamente. Para obtener más información, vea [Prepare certificates and network profiles for Escritorio administrado de Microsoft](certs-wifi-lan.md).
 
 #### <a name="vpn-profiles"></a>Perfiles vpn
 
-Un **resultado de aviso** significa que está usando una red privada virtual (VPN). Cree un perfil de VPN que implemente certificados integrados con Microsoft Intune. Para obtener más información, vea [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
+Un **resultado de aviso** significa que está usando una red privada virtual (VPN). Cree un perfil de VPN que implemente certificados integrados con Microsoft Intune. Para obtener más información, vea [Prepare certificates and network profiles for Escritorio administrado de Microsoft](certs-wifi-lan.md).
 
 #### <a name="mapped-drives"></a>Unidades asignadas
 
-Un **resultado de aviso** significa que tiene algunas unidades asignadas, lo que no se recomienda. Para obtener más información, vea [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md).
+Un **resultado de aviso** significa que tiene algunas unidades asignadas, lo que no se recomienda. Para obtener más información, vea [Prepare mapped drives for Escritorio administrado de Microsoft](mapped-drives.md).
 
 #### <a name="print-queues"></a>Colas de impresión
 
-Un **resultado de aviso** significa que tiene algunas colas de impresión pendientes, que no se recomiendan. Una solución es usar la impresión en la nube. Para obtener más información, vea [Prepare printing resources for Microsoft Managed Desktop](printing.md).
+Un **resultado de aviso** significa que tiene algunas colas de impresión pendientes, que no se recomiendan. Una solución es usar la impresión en la nube. Para obtener más información, vea [Prepare printing resources for Escritorio administrado de Microsoft](printing.md).
 
 #### <a name="proxies"></a>Proxies
 
-Un **resultado de aviso** significa que tiene un servidor proxy en uso. Para obtener más información, vea [Configuración de red para Microsoft Managed Desktop](network.md).
+Un **resultado de aviso** significa que tiene un servidor proxy en uso. Para obtener más información, vea [Configuración de red para Escritorio administrado de Microsoft](network.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Personalizar los informes en análisis de uso de Microsoft 365
+title: Personalizar los informes en el análisis Microsoft 365 de uso
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: Aprenda a personalizar informes en el explorador y Power BI Desktop.
+description: Aprenda a personalizar los informes en el explorador y Power BI Desktop.
 ms.openlocfilehash: 0ef2364c82318dfea93e8df4e64d53a66caa8d74
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580779"
 ---
-# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizar los informes en análisis de uso de Microsoft 365
+# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizar los informes en el análisis Microsoft 365 de uso
 
-El análisis de uso de Microsoft 365 proporciona un panel en Power BI que ofrece información sobre cómo los usuarios adoptan y usan Microsoft 365. El panel es tan solo un punto de inicio para interactuar con los datos de uso. Los informes se pueden ajustar para obtener información más personalizada.
+Microsoft 365 análisis de uso proporciona un panel en Power BI que ofrece información sobre cómo los usuarios adoptan y usan Microsoft 365. El panel es tan solo un punto de inicio para interactuar con los datos de uso. Los informes se pueden ajustar para obtener información más personalizada.
   
 También puede usar Power BI Desktop para personalizar aún más los informes al conectarlos a otros orígenes de datos para obtener información avanzada sobre su negocio.
   
@@ -43,7 +43,7 @@ En este ejemplo se muestra cómo modificar la pestaña **Activación** del **inf
   
 1. Dentro del **informe Activación/licencias,** seleccione la **pestaña** Activación.
     
-2. Para entrar en el modo de edición, elija el botón **Editar** de la parte superior a través del botón Más ![ página en Power ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) BI. 
+2. Para entrar en el  modo de edición, elija el botón Editar de la parte superior a través del botón Más página ![ en Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) página. 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -61,11 +61,11 @@ En este ejemplo se muestra cómo modificar la pestaña **Activación** del **inf
 
 En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un seguimiento de nuevos usuarios de Yammer de forma mensual.
   
-1. Vaya al informe **de uso del** producto con la navegación izquierda y seleccione la pestaña **Yammer.**
+1. Vaya al informe **de uso del** producto con la navegación izquierda y seleccione Yammer pestaña. 
     
-2. Cambie al modo de edición seleccionando El botón Más ![ página en Power BI y ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) **Editar**. 
+2. Cambie al modo de edición seleccionando El botón más página en ![ Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) y **Editar**. 
     
-3. En la parte inferior de la página, seleccione el ![Botón agregar página en Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) para crear una nueva página.
+3. En la parte inferior de la página, seleccione el ![El botón agregar página en Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) para crear una nueva página.
   
 4. En el **área Visualizaciones** a la derecha, elija el gráfico de barras **apiladas** (fila superior, primero desde la izquierda).
 
@@ -87,9 +87,9 @@ En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un
 
 11. En el área **Tipo de filtro** que se muestre, active la casilla **Yammer**.
 
-    ![Casilla de verificación Seleccionar Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Active Yammer casilla de verificación](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Justo debajo de la lista de visualizaciones, elija **el** icono Formato icono Formato en Power ![ BI Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
+12. Justo debajo de la lista de visualizaciones, elija **el** icono Formato icono Formato en ![ Power BI Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
 
 13. Expanda el título y cambie el valor de **Texto del título** a **Nuevos usuarios de Yammer por mes**.
     
@@ -105,7 +105,7 @@ Para la mayoría de los clientes, modificar los informes y los objetos visuales 
   
 ### <a name="use-the-reporting-apis"></a>Usar las API de informes
 
-Para empezar, puede conectarse directamente a las API de informes de ODATA de Microsoft 365 que potencian estos informes.
+Para empezar, puede conectarse directamente a las API de informes de ODATA Microsoft 365 que enciendan estos informes.
   
 1. Vaya a **Obtener datos** \> **Otros** \> **Fuente de OData** \> **Conectar**.
     
@@ -115,9 +115,9 @@ Para empezar, puede conectarse directamente a las API de informes de ODATA de Mi
   
     ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. Escriba sus credenciales de administrador de Microsoft 365 (organización o escuela) para autenticarse en Microsoft 365 cuando se le pida.
+3. Escriba sus Microsoft 365 de administrador (organización o escuela) para autenticarse en Microsoft 365 cuando se le pida.
     
-    Consulta las [preguntas más frecuentes](usage-analytics.md#faq) para obtener más información sobre quién puede acceder a los informes de la aplicación de plantilla de adopción de Microsoft 365. 
+    Consulta las [preguntas más](usage-analytics.md#faq) frecuentes para obtener más información acerca de quién tiene permiso para acceder a los Microsoft 365 de aplicación de plantilla de adopción. 
     
 4. Cuando se autorice la conexión, verá la ventana Navegador, donde se muestran los conjuntos de datos a los que puede conectarse.
     
@@ -127,11 +127,11 @@ Para empezar, puede conectarse directamente a las API de informes de ODATA de Mi
     
     ![Valores de ODATA disponibles en la API de informes](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
-### <a name="use-the-microsoft-365-usage-analytics-template"></a>Usar la plantilla de análisis de uso de Microsoft 365
+### <a name="use-the-microsoft-365-usage-analytics-template"></a>Usar la plantilla Microsoft 365 análisis de uso
 
-También puede usar el archivo de plantilla de Power BI que corresponde a los informes de análisis de uso de Microsoft 365 como punto de partida para conectarse a los datos. La ventaja de usar el archivo pbit es que ya tiene establecida la cadena de conexión. También puede aprovecharse de todas las medidas personalizadas creadas, además de los datos devueltos por el esquema base.
+También puede usar el archivo de plantilla Power BI que corresponde a los informes Microsoft 365 análisis de uso como punto de partida para conectarse a los datos. La ventaja de usar el archivo pbit es que ya tiene establecida la cadena de conexión. También puede aprovecharse de todas las medidas personalizadas creadas, además de los datos devueltos por el esquema base.
   
-Puede descargar el archivo de plantilla de Power BI desde el [Centro de descarga de Microsoft](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit). Después de descargar el archivo de plantilla de Power BI, siga estos pasos para empezar:
+Puede descargar el archivo Power BI de plantilla desde el [Centro de descarga de Microsoft](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit). Después de descargar el archivo Power BI plantilla, siga estos pasos para empezar:
   
 1. Abra el archivo pbit.
     
@@ -139,9 +139,9 @@ Puede descargar el archivo de plantilla de Power BI desde el [Centro de descarga
     
     ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
-3. Escriba sus credenciales de administrador para autenticarse en Microsoft 365 cuando se le solicite.
+3. Escriba sus credenciales de administrador para autenticarse en Microsoft 365 cuando se le pida.
     
-     para obtener más información sobre quién puede acceder a los informes de análisis de uso de Microsoft 365. 
+     para obtener más información sobre quién tiene permiso para acceder a los Microsoft 365 de análisis de uso. 
     
     Cuando reciba la autorización, los datos se actualizarán en el archivo de Power BI.
     

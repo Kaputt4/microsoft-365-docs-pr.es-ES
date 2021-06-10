@@ -1,6 +1,6 @@
 ---
 title: Introducción al Centro de seguridad de Microsoft Defender
-description: Obtenga información sobre las características del Centro de seguridad de Microsoft Defender, incluido el modo en que funcionan las alertas y sugerencias sobre cómo investigar posibles infracciones y ataques.
+description: Obtenga información sobre las características de Centro de seguridad de Microsoft Defender, incluido cómo funcionan las alertas, y sugerencias sobre cómo investigar posibles infracciones y ataques.
 keywords: panel, cola de alertas, administrar alertas, investigar, investigar alertas, investigar dispositivos, enviar archivos, análisis profundo, alto, medio, bajo, gravedad, ioc, ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51581099"
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
 
-El Centro de seguridad de Microsoft Defender es el portal donde puede obtener acceso a las funcionalidades de Microsoft Defender para puntos de conexión.
+Centro de seguridad de Microsoft Defender es el portal donde puede obtener acceso a las funcionalidades de Microsoft Defender para endpoints.
 
 Use el **panel de operaciones de** seguridad para obtener información sobre las distintas alertas en dispositivos y usuarios de la red.
 
@@ -46,7 +46,7 @@ Use el panel **análisis de** amenazas para evaluar y controlar continuamente la
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Guía interactiva de Microsoft Defender para endpoint
 En esta guía interactiva, aprenderá a investigar las amenazas a su organización con Microsoft Defender para endpoint. Verá cómo Microsoft Defender para Endpoint puede ayudarle a identificar actividades sospechosas, investigar riesgos para su organización y corregir amenazas.
 
-[Consulte la guía interactiva](https://aka.ms/MSDE-IG)
+[Eche un vistazo a la guía interactiva](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>En esta sección
 

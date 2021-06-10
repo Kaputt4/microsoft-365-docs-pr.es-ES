@@ -39,7 +39,7 @@ Las directivas de prevención de pérdida de datos ayudan a identificar y proteg
 1. Para empezar, vaya al Centro [de administración](https://admin.microsoft.com)y seleccione **Configurar**.
 1. Desplácese hacia abajo **hasta Configurar la prevención de pérdida de datos** y, a continuación, seleccione **Ver** y, a continuación, **Administrar**.
 1. Para editar una directiva, selecciónelo, elija **Editar directiva** y, a continuación, seleccione qué cambiar. Por ejemplo, seleccione **Ubicaciones** para cambiar lo que se examina.
-1. Para habilitar el examen de contenido en Microsoft Teams, active el modificador de alternancia en la **posición On** y, a continuación, **seleccione Guardar**.
+1. Para habilitar el examen de contenido en Microsoft Teams,  gire el modificador de alternancia a la posición On y, a continuación, **seleccione Guardar**.
 1. Para editar la configuración de directiva, seleccione **Editar**.
 1. Deberá establecer reglas independientes que se apliquen a pequeñas y grandes cantidades de contenido confidencial detectado. Expanda la regla de bajo volumen. Elija **Editar regla**.
 1. Revisa la configuración y ajustala según sea necesario. Por ejemplo, puede elegir personalizar el **texto del correo electrónico** y personalizar el texto de sugerencia de **directiva**. Seleccione **Guardar**.

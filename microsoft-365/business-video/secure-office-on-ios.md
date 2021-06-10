@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo proteger las aplicaciones de Office en iOS con Microsoft 365 Empresa Premium.
+description: Obtén información sobre cómo proteger Office aplicaciones en iOS con Microsoft 365 Empresa Premium.
 ms.openlocfilehash: 5a5f52f87fe63fdec6df9611a5ea44a2ecf4466b
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -39,13 +39,13 @@ Puede configurar una directiva de acceso de usuario que requiera que los usuario
 1. Inicie sesión en el Centro de administración de Microsoft 365.
 1. En **Directivas,** elija **Agregar directiva**.
 1. En el **panel Agregar directiva,** escriba un nombre en **Nombre** de directiva y elija el tipo de directiva que desee en Tipo **de directiva**.
-1. Activar Administrar **cómo los usuarios acceden a** los archivos de Office en dispositivos móviles y, a continuación, asegúrese de que las tres opciones de configuración siguientes están activadas:
+1. Activa Administrar **cómo los usuarios acceden Office archivos en** dispositivos móviles y, a continuación, asegúrate de que las tres opciones de configuración siguientes estén activadas:
     - **Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office**
     - **Proteger los archivos de trabajo cuando se pierden o se roban dispositivos**
     - **Cifrar archivos de trabajo**
 
-1. En **Archivos de estas aplicaciones se protegerán,** seleccione las aplicaciones de Office que desea proteger en dispositivos móviles.
-1. En **¿Quién va a obtener esta configuración?**, todos  los usuarios están seleccionados de forma predeterminada, pero puede elegir Cambiar para seleccionar los grupos de seguridad que haya creado.
+1. En **Archivos de estas aplicaciones se protegerán,** selecciona las Office que quieras proteger en dispositivos móviles.
+1. En **Quién se obtiene esta configuración?**, todos los usuarios están  seleccionados de forma predeterminada, pero puede elegir Cambiar para seleccionar los grupos de seguridad que haya creado.
 1. Para finalizar la creación de la directiva, elija **Agregar**.
 1. En la **página Agregar directiva,** elija **Cerrar**.
 1. En la página principal del Centro de administración, confirme  que la nueva directiva se agregó eligiendo Directivas y revisando la directiva en la **página** Directivas.

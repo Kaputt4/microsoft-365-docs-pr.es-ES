@@ -1,5 +1,5 @@
 ---
-title: Deshabilitar el acceso a los servicios de Microsoft 365 al asignar licencias de usuario
+title: Deshabilitar el acceso a Microsoft 365 servicios al asignar licencias de usuario
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,15 +25,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50929437"
 ---
-# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Deshabilitar el acceso a los servicios de Microsoft 365 al asignar licencias de usuario
+# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Deshabilitar el acceso a Microsoft 365 servicios al asignar licencias de usuario
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Las suscripciones de Microsoft 365 vienen con planes de servicio para servicios individuales. Los administradores de Microsoft 365 a menudo necesitan deshabilitar determinados planes al asignar licencias a los usuarios. Con las instrucciones de este artículo, puede asignar una licencia de Microsoft 365 mientras deshabilita planes de servicio específicos con PowerShell para una cuenta de usuario individual o varias cuentas de usuario.
+Microsoft 365 suscripciones vienen con planes de servicio para servicios individuales. Microsoft 365 a menudo los administradores deben deshabilitar determinados planes al asignar licencias a los usuarios. Con las instrucciones de este artículo, puede asignar una licencia Microsoft 365 a la vez que deshabilita planes de servicio específicos mediante PowerShell para una cuenta de usuario individual o varias cuentas de usuario.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer [lugar, conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer [lugar, conéctese a su Microsoft 365 inquilino](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 
 A continuación, enumera los planes de licencia de tu inquilino con este comando.
@@ -67,7 +67,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-En primer [lugar, conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer [lugar, conéctese a su Microsoft 365 inquilino](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 A continuación, ejecute este comando para ver las suscripciones actuales:
   
@@ -81,7 +81,7 @@ Get-MsolAccountSku
 
 En la presentación del  `Get-MsolAccountSku` comando:
   
-- **AccountSkuId** es una suscripción para su organización en \<OrganizationName> : \<Subscription> format. Es el valor que proporcionó al inscribirse \<OrganizationName> en Microsoft 365 y es único para su organización. El \<Subscription> valor es para una suscripción específica. Por ejemplo, para litwareinc:ENTERPRISEPACK, el nombre de la organización es litwareinc y el nombre de la suscripción es ENTERPRISEPACK (Office 365 Enterprise E3).
+- **AccountSkuId** es una suscripción para su organización en \<OrganizationName> : \<Subscription> format. Es el valor que proporcionó al inscribirse en \<OrganizationName> Microsoft 365 y es único para su organización. El \<Subscription> valor es para una suscripción específica. Por ejemplo, para litwareinc:ENTERPRISEPACK, el nombre de la organización es litwareinc y el nombre de la suscripción es ENTERPRISEPACK (Office 365 Enterprise E3).
     
 - **ActiveUnits es** el número de licencias que ha comprado para la suscripción.
     
@@ -89,9 +89,9 @@ En la presentación del  `Get-MsolAccountSku` comando:
     
 - **ConsumedUnits es** el número de licencias que has asignado a los usuarios para la suscripción.
     
-Tenga en cuenta accountSkuId para la suscripción a Microsoft 365 que contiene los usuarios que desea licenciar. Además, asegúrese de que hay suficientes licencias para asignar (resta **ConsumedUnits** de **ActiveUnits** ).
+Tenga en cuenta accountSkuId para la Microsoft 365 que contiene los usuarios que desea licenciar. Además, asegúrese de que hay suficientes licencias para asignar (resta **ConsumedUnits** de **ActiveUnits** ).
   
-A continuación, ejecute este comando para ver los detalles sobre los planes de servicio de Microsoft 365 que están disponibles en todas las suscripciones:
+A continuación, ejecute este comando para ver los detalles sobre los Microsoft 365 de servicio que están disponibles en todas las suscripciones:
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -99,9 +99,9 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 Desde la presentación de este comando, determine qué planes de servicio desea deshabilitar al asignar licencias a los usuarios.
   
-Esta es una lista parcial de planes de servicio y sus correspondientes servicios de Microsoft 365.
+Esta es una lista parcial de planes de servicio y sus correspondientes Microsoft 365 servicios.
 
-En la tabla siguiente se muestran los planes de servicio de Microsoft 365 y sus nombres descriptivos para los servicios más comunes. Su lista de planes de servicio puede ser diferente. 
+En la tabla siguiente se muestran los Microsoft 365 de servicio y sus nombres descriptivos para los servicios más comunes. Su lista de planes de servicio puede ser diferente. 
   
 |**Plan de servicio**|**Descripción**|
 |:-----|:-----|
@@ -109,7 +109,7 @@ En la tabla siguiente se muestran los planes de servicio de Microsoft 365 y sus 
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Aplicaciones de Microsoft 365 para empresas *(anteriormente denominada Office 365 ProPlus)*  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Aplicaciones Microsoft 365 para empresas *(anteriormente denominado Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype Empresarial Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
@@ -147,7 +147,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 
 ### <a name="for-multiple-users"></a>Para varios usuarios
 
-Para realizar esta tarea de administración para varios usuarios, cree un archivo de texto de valores separados por comas (CSV) que contenga los campos UserPrincipalName y UsageLocation. Aquí le mostramos un ejemplo:
+Para realizar esta tarea de administración para varios usuarios, cree un archivo de texto de valores separados por comas (CSV) que contenga los campos UserPrincipalName y UsageLocation. A continuación le mostramos un ejemplo:
   
 ```powershell
 UserPrincipalName,UsageLocation
@@ -184,9 +184,9 @@ Este bloque de comandos de PowerShell:
     
 - Crea un archivo CSV con todos los usuarios que se procesaron y muestra su estado de licencia.
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Deshabilitar el acceso a los servicios de Microsoft 365 con PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
+[Deshabilitar el acceso a Microsoft 365 con PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
   
 [Deshabilitar el acceso a Sway con PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md)
   
