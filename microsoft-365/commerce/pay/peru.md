@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536363"
 ---
-# <a name="payment-information-for-peru"></a><span data-ttu-id="d8ee6-103">Información de pago para Perú</span><span class="sxs-lookup"><span data-stu-id="d8ee6-103">Payment information for Peru</span></span>
+# <a name="payment-information-for-peru"></a><span data-ttu-id="f9548-103">Información de pago para Perú</span><span class="sxs-lookup"><span data-stu-id="f9548-103">Payment information for Peru</span></span>
 
-<span data-ttu-id="d8ee6-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="d8ee6-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="f9548-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="f9548-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="d8ee6-105">Pague solo en USD y haga referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="d8ee6-105">Please pay in USD only and reference invoice number(s) on the payment remittance.</span></span>
+<span data-ttu-id="f9548-105">Pague solo en USD y haga referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="f9548-105">Please pay in USD only and reference invoice number(s) on the payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="d8ee6-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="d8ee6-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="f9548-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="f9548-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="d8ee6-107">**Banco:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="d8ee6-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="d8ee6-108">**Rama:** Dallas</span><span class="sxs-lookup"><span data-stu-id="d8ee6-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="d8ee6-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="d8ee6-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="d8ee6-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="d8ee6-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="d8ee6-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="d8ee6-111">**Account Name:** Microsoft</span></span>
+<span data-ttu-id="f9548-107">**Banco:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="f9548-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="f9548-108">**Rama:** Dallas</span><span class="sxs-lookup"><span data-stu-id="f9548-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="f9548-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="f9548-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="f9548-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="f9548-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="f9548-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="f9548-111">**Account Name:** Microsoft</span></span>
