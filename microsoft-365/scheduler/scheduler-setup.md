@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Configuración del Programador para Microsoft 365.
-ms.openlocfilehash: c17cdbbf71359a2725a3b0a145cba5feffd7c853
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: ba1e178545001473bf73eea3eb02b5ab1c7bf084
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809196"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861484"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuración del programador para Microsoft 365
 
@@ -55,7 +55,7 @@ Para descubrir qué buzón de correo de la organización está establecido actua
  
 ```powershell
 
-Get-mailbox -Organization contoso.com | where {($_.PersistedCapabilities -like "SchedulerAssistant")}
+Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 
 ```
 

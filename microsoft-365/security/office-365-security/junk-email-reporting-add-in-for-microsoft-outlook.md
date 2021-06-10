@@ -34,7 +34,7 @@ ms.locfileid: "51205469"
 > [!NOTE]
 > Si actualmente no usa el complemento De informes de correo electrónico no deseado, se recomienda el complemento Report [Message](enable-the-report-message-add-in.md) o el complemento [Report Phishing.](enable-the-report-phish-add-in.md) Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-El complemento de informes de correo no deseado para Microsoft Outlook permite a los usuarios enviar falsos positivos (buen correo electrónico marcado como correo no deseado), falsos negativos (correo electrónico no deseado permitido) y mensajes de suplantación de identidad a Microsoft. Si su organización no usa Exchange Online Protection (por ejemplo, exchange local o servicios de correo electrónico distintos de Exchange Online), el envío del informe de correo no deseado no afectará al filtrado de correo no deseado.
+El complemento de informes de correo no deseado para Microsoft Outlook permite a los usuarios enviar falsos positivos (correo electrónico bueno marcado como correo no deseado), falsos negativos (correo electrónico no deseado permitido) y mensajes de suplantación de identidad a Microsoft. Si su organización no usa Exchange Online Protection (por ejemplo, servicios de correo electrónico o Exchange locales distintos de Exchange Online), el envío del informe de correo no deseado no afectará al filtrado de correo no deseado.
 
 En este tema se explica cómo instalar y usar el complemento De informes de correo no deseado.
 
@@ -45,7 +45,7 @@ En este tema se explica cómo instalar y usar el complemento De informes de corr
 - El complemento De informes de correo no deseado funciona con las siguientes versiones de Outlook:
 
   - Outlook 2013 o posterior
-  - Outlook incluido con Aplicaciones de Microsoft 365 para empresas
+  - Outlook se incluye con Aplicaciones Microsoft 365 para empresas
 
 - Para obtener más información acerca de cómo notificar mensajes a Microsoft, vea [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -111,20 +111,20 @@ En este tema se explica cómo instalar y usar el complemento De informes de corr
 
 - Debe tener privilegios de administrador en el equipo donde va a instalar el complemento.
 
-- Vaya a y descargue el archivo .msi adecuado para su versión de Office en una ubicación fácil <https://www.microsoft.com/download/details.aspx?id=18275> de encontrar:
+- Vaya a y descargue el archivo de .msi adecuado para su versión de Office a una ubicación que <https://www.microsoft.com/download/details.aspx?id=18275> sea fácil de encontrar:
 
   - **32 bits:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
   - **64 bits:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- Para Outlook 2013 o posterior, el único requisito previo es microsoft .NET Framework 2.0. En Windows 10, no instalas el .NET Framework 2.0 desde una descarga.
+- Para Outlook 2013 o posterior, el único requisito previo es microsoft .NET Framework 2.0. En Windows 10, no se instala el .NET Framework 2.0 desde una descarga.
 
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Instalar el complemento de informes de correo no deseado con el Asistente para la instalación
 
 1. En el equipo, cierre Outlook.
 
-2. En Windows 10, comprueba que el .NET Framework 2.0 está habilitado. Para obtener instrucciones, vea [Enable the .NET Framework 3.5 in Control Panel](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).
+2. En Windows 10, compruebe que el .NET Framework 2.0 está habilitado. Para obtener instrucciones, vea [Enable the .NET Framework 3.5 in Control Panel](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).
 
-3. Busque el archivo .msi que descargó y haga doble clic en él.
+3. Busque el .msi que descargó y haga doble clic en él.
 
 4. En la página de **bienvenida a la instalación del complemento de notificación de correo no deseado de Microsoft**, haga clic en **Siguiente**.
 
@@ -142,7 +142,7 @@ Elija la flecha abajo que aparece junto a **Correo no deseado** para ver más op
 
 1. En el equipo, cierre Outlook.
 
-2. En Windows 10, instala el .NET Framework 2.0 ejecutando el siguiente comando:
+2. En Windows 10, instale el .NET Framework 2.0 ejecutando el siguiente comando:
 
    ```dos
    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
@@ -173,7 +173,7 @@ Elija la flecha abajo que aparece junto a **Correo no deseado** para ver más op
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" MaxMessageSelection=20 BccEmailAddress="junkreports@contoso.com; hollyd@treyresearch.net"
    ```
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que ha instalado correctamente el complemento de informes de correo no deseado, siga estos pasos en Outlook:
 
@@ -212,21 +212,21 @@ Para comprobar que ha instalado correctamente el complemento de informes de corr
 
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>Desinstalar el complemento de notificación de correo no deseado
 
-Después de cerrar Outlook, use cualquiera de los procedimientos siguientes para desinstalar el complemento de informes de correo no deseado:
+Después de cerrar Outlook, use cualquiera de los siguientes procedimientos para desinstalar el complemento de informes de correo no deseado:
 
-- **Panel de** control: presione la tecla Windows + R. En el **cuadro de** diálogo Ejecutar que se abre, escriba `control appwiz.cpl` y, a continuación, haga clic en **Aceptar**.
+- **Panel de** control: presione Windows tecla + R. En el **cuadro de** diálogo Ejecutar que se abre, escriba `control appwiz.cpl` y, a continuación, haga clic en **Aceptar**.
 
   Busque y seleccione **Complemento de informes** de correo no deseado de Microsoft en la lista y, a continuación, haga clic en **Desinstalar**.
 
-- **Paquete de Windows Installer:** busque o descargue el archivo .msi adecuado y haga doble clic en él.
+- **Windows installer:** busque o descargue el archivo .msi adecuado y haga doble clic en él.
 
   - **32 bits:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
   - **64 bits:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  En el cuadro de diálogo que aparece, seleccione Quitar complemento de informes de correo no deseado de **Microsoft para Outlook** y, a continuación, haga clic en **Siguiente**.
+  En el cuadro de diálogo que aparece, seleccione Quitar complemento de informes de correo no deseado de Microsoft para Outlook, a **continuación,** haga clic en **Siguiente**.
 
-- **Modo silencioso:** busque o descargue el archivo .msi adecuado. En una ventana del símbolo del sistema, reemplace por la ubicación del archivo .msi y \<PathToFile\> ejecute uno de los siguientes comandos:
+- **Modo silencioso:** busque o descargue el archivo .msi archivo. En una ventana del símbolo del sistema, reemplace por la ubicación del \<PathToFile\> archivo .msi y ejecute uno de los siguientes comandos:
 
   - **32 bits:**
 
@@ -240,11 +240,11 @@ Después de cerrar Outlook, use cualquiera de los procedimientos siguientes para
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-Al abrir Outlook después de la desinstalación, las opciones de informes de correo no deseado, no correo no deseado y suplantación de identidad deben haber desaparecido.
+Cuando se abre Outlook después de la desinstalación, las opciones de informes de correo no deseado, no de correo no deseado y suplantación de identidad deben haber desaparecido.
 
 ## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>Solución de problemas del complemento de informes de correo no deseado
 
-En ocasiones, es posible que tenga problemas con Outlook después de agregar el complemento de informes de correo no deseado. En esta sección se describen los problemas que puede encontrar, junto con sugerencias para resolver estos problemas.
+En ocasiones, es posible que tenga problemas Outlook después de agregar el complemento de informes de correo no deseado. En esta sección se describen los problemas que puede encontrar, junto con sugerencias para resolver estos problemas.
 
 ### <a name="troubleshooting-for-users"></a>Solución de problemas para usuarios
 
@@ -268,7 +268,7 @@ Para otros métodos que puede usar para enviar mensajes a Microsoft, vea [Report
 
 1. Compruebe o establezca la clave `LoggingLevel` del Registro en el valor "Verbose":
 
-   - **Outlook de 32 bits en Windows de 32 bits:**
+   - **32 bits Outlook de 32 bits Windows**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -277,7 +277,7 @@ Para otros métodos que puede usar para enviar mensajes a Microsoft, vea [Report
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook de 32 bits en Windows de 64 bits:**
+   - **32 bits Outlook de 64 bits Windows**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -286,7 +286,7 @@ Para otros métodos que puede usar para enviar mensajes a Microsoft, vea [Report
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook de 64 bits:**
+   - **64 bits Outlook**:
 
      ```text
      Windows Registry Editor Version 5.00

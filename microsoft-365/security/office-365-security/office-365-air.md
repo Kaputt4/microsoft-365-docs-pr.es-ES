@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793165"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877889"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -46,7 +46,7 @@ Este artículo describe:
 - El [flujo general de AIR](#the-overall-flow-of-air);
 - [Cómo obtener AIR](#how-to-get-air); y
 - Los [permisos necesarios para](#required-permissions-to-use-air-capabilities) configurar o usar las funcionalidades de AIR.
-- Cambios que se van a realizar próximamente en el centro de seguridad
+- Cambios que se van a realizar próximamente en el portal de Microsoft 365 Defender
 
 En este artículo también se [incluyen los pasos siguientes](#next-steps)y los recursos para obtener más información.
 
@@ -89,7 +89,11 @@ Además, asegúrese de revisar [las](../../compliance/alert-policies.md)directiv
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>¿Qué directivas de alerta desencadenan investigaciones automatizadas?
 
-Microsoft 365 proporciona muchas directivas de alerta integradas que ayudan Exchange identificar el uso indebido de permisos de administrador, la actividad de malware, las posibles amenazas externas e internas y los riesgos de gobierno de la información. Varias de las [directivas de alerta predeterminadas](../../compliance/alert-policies.md#default-alert-policies) pueden desencadenar investigaciones automatizadas. En la tabla siguiente se describen las alertas que desencadenan investigaciones automatizadas, su gravedad en el centro de seguridad de Microsoft 365 y cómo se generan:
+Microsoft 365 proporciona muchas directivas de alerta integradas que ayudan Exchange identificar el uso indebido de permisos de administrador, la actividad de malware, las posibles amenazas externas e internas y los riesgos de gobierno de la información. Varias de las [directivas de alerta predeterminadas](../../compliance/alert-policies.md#default-alert-policies) pueden desencadenar investigaciones automatizadas. En la tabla siguiente se describen las alertas que desencadenan investigaciones automatizadas, su gravedad en el portal de Microsoft 365 Defender y cómo se generan:
+
+<br>
+
+****
 
 |Alerta|Gravedad|Cómo se genera la alerta|
 |---|---|---|
@@ -108,10 +112,15 @@ Microsoft 365 proporciona muchas directivas de alerta integradas que ayudan Exch
 
 Los permisos se conceden a través de determinados roles, como los que se describen en la tabla siguiente:
 
+<br>
+
+****
+
 |Tarea|Rol(s) obligatorio(s)|
 |---|---|
 |Configurar características de AIR|Uno de los siguientes roles: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [Centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).|
 |Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar acciones recomendadas|Uno de los siguientes roles, asignados en [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el Centro de [seguridad & cumplimiento:](permissions-in-the-security-and-compliance-center.md) <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Operador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Buscar y purgar (este rol solo se asigna en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md). Es posible que tenga que crear un nuevo grupo de roles allí y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
+|
 
 ## <a name="required-licenses"></a>Licencias necesarias
 
@@ -121,16 +130,16 @@ Los permisos se conceden a través de determinados roles, como los que se descri
 - El equipo de operaciones de seguridad de la organización (incluidos los lectores de seguridad y los que tienen el rol **Buscar y** purgar)
 - Usuarios finales
 
-## <a name="changes-are-coming-soon-in-your-security-center"></a>Los cambios se realizarán próximamente en el centro de seguridad
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Los cambios se realizarán próximamente en el portal de Microsoft 365 Defender
 
-Si ya estás usando funcionalidades de AIR en Microsoft Defender para Office 365, estás a punto de ver algunos cambios en el centro de seguridad Microsoft 365 [de seguridad.](../defender/overview-security-center.md)
+Si ya estás usando las funcionalidades de AIR en Microsoft Defender para Office 365, estás a punto de ver algunos cambios en el portal mejorado de [Microsoft 365 Defender](../defender/overview-security-center.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificadas":::
 
-El nuevo y mejorado centro de seguridad reúne las capacidades de AIR en [Microsoft Defender](defender-for-office-365.md) para Office 365 y en Microsoft Defender [para endpoint](../defender-endpoint/automated-investigations.md). Con estas actualizaciones y mejoras, su equipo de operaciones de seguridad podrá ver detalles sobre investigaciones automatizadas y acciones de corrección en todos sus correos electrónicos, contenido de colaboración, cuentas de usuario y dispositivos, todo en un mismo sitio.
+El nuevo y mejorado portal de Microsoft 365 Defender reúne las capacidades de AIR en [Microsoft Defender](defender-for-office-365.md) para Office 365 y en Microsoft Defender [para endpoint.](../defender-endpoint/automated-investigations.md) Con estas actualizaciones y mejoras, su equipo de operaciones de seguridad podrá ver detalles sobre investigaciones automatizadas y acciones de corrección en todos sus correos electrónicos, contenido de colaboración, cuentas de usuario y dispositivos, todo en un mismo sitio.
 
 > [!TIP]
-> El nuevo Microsoft 365 de seguridad ( <https://security.microsoft.com> ) reemplaza a los siguientes centros:
+> El nuevo portal Microsoft 365 Microsoft 365 Defender ( <https://security.microsoft.com> ) reemplaza a los siguientes centros:
 >
 > - Office 365 Centro & cumplimiento normativo ( <https://protection.office.com> )
 > - Centro de seguridad de Microsoft Defender ( <https://securitycenter.windows.com> )
@@ -140,6 +149,10 @@ El nuevo y mejorado centro de seguridad reúne las capacidades de AIR en [Micros
 ### <a name="what-to-expect"></a>Qué esperar
 
 En la tabla siguiente se enumeran los cambios y mejoras que se han realizado en AIR en Microsoft Defender para Office 365.
+
+<br>
+
+****
 
 |Elemento|¿Qué está cambiando?|
 |---|---|

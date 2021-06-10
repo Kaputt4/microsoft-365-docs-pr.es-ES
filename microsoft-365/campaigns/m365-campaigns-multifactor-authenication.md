@@ -37,8 +37,8 @@ La autenticación multifactor proporciona más seguridad para su empresa. Despu�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Vea más en [Configurar la autenticación multifactor en Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Vea más información [en Configurar la autenticación multifactor en Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## <a name="use-the-outlook-app-in-your-devices"></a>Usar la aplicación de Outlook en los dispositivos
+## <a name="use-the-outlook-app-in-your-devices"></a>Usar la Outlook en tus dispositivos
 
-Después de que el administrador le haya requerido que use MFA y haya configurado una aplicación de autenticación como una segunda forma de autenticación, le recomendamos que instale y use solo la aplicación de Outlook para tener acceso a su correo electrónico de Microsoft 365. Consulte [Configurar dispositivos móviles](../business/set-up-mobile-devices.md) para instalar aplicaciones de Office, incluido Outlook, en el teléfono.
+Después de que el administrador te haya requerido que uses MFA y hayas configurado una aplicación de autenticación como una segunda forma de autenticación, te recomendamos que instales y solo uses la aplicación Outlook para tener acceso a tu correo Microsoft 365 correo electrónico. Consulta [Configurar dispositivos móviles](../business/set-up-mobile-devices.md) para obtener información sobre cómo instalar Office aplicaciones, incluidas Outlook, en el teléfono.

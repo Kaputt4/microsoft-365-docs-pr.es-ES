@@ -42,13 +42,13 @@ Después de completar la incorporación, puede comprobar la selección en la pá
 ## <a name="verify-data-storage-location"></a>Comprobar la ubicación de almacenamiento de datos
 Durante la [fase de configuración,](production-deployment.md)habría seleccionado la ubicación para almacenar los datos. 
 
-Para comprobar la ubicación de los datos, vaya a **Configuración**  >  **Retención de datos**.
+Para comprobar la ubicación de los datos, vaya a **Configuración**  >  **retención de datos**.
 
 ## <a name="update-data-retention-settings"></a>Actualizar la configuración de retención de datos
 
 Puede actualizar la configuración de retención de datos. De forma predeterminada, el período de retención es de 180 días. 
 
-1. En el panel de navegación, seleccione **Configuración Retención**  >  **de datos**.
+1. En el panel de navegación, **seleccione Configuración** Retención  >  **de datos**.
 
 2. Seleccione la duración de retención de datos de la lista desplegable.
 

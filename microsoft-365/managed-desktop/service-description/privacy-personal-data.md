@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908179"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861688"
 ---
 # <a name="privacy-and-personal-data"></a>Privacidad y datos personales
 
@@ -109,10 +109,8 @@ Para obtener más información acerca de la recopilación de datos de diagnósti
 El acceso directo a los almacenes de datos internos de Escritorio administrado de Microsoft está restringido de varias maneras:
 
 - Requiere la aprobación del nivel de cliente potencial de ingeniería.
-- Se audita y el tiempo es limitado.
-- Requiere el uso de una estación de trabajo altamente protegida y restringida.
+- Se limita al tiempo y se audita.
 - Todos los datos se cifran mientras se almacenan.
-- No hay acceso permanente.
 - El acceso al Escritorio administrado de Microsoft de administración interna de Escritorio administrado de Microsoft requiere una estación de trabajo altamente protegida y restringida.
 
 ## <a name="processing-personal-data-in-a-compliant-manner"></a>Procesamiento de datos personales de forma compatible

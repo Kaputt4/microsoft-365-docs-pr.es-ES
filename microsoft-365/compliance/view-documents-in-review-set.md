@@ -1,5 +1,5 @@
 ---
-title: Ver documentos en un conjunto de revisión en exhibición de documentos electrónicos avanzada
+title: Ver documentos en un conjunto de revisión en Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Elija cómo ver el contenido de la exhibición de documentos electrónicos avanzada, como texto, anotación, vista convertida o nativa.
+description: Elija cómo ver el contenido en Advanced eDiscovery, como texto, anotación, vista convertida o nativa.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: aa8e8e9ea22469ab6d0b223c1bcc9285e2c2ef40
 ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
@@ -22,32 +22,32 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/31/2021
 ms.locfileid: "51471073"
 ---
-# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Ver documentos en un conjunto de revisión en exhibición de documentos electrónicos avanzada
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Ver documentos en un conjunto de revisión en Advanced eDiscovery
 
-La exhibición de documentos electrónicos avanzada muestra contenido a través de varios visores cada uno con diferentes propósitos. Los distintos visores se pueden usar haciendo clic en cualquier documento dentro de un conjunto de revisión. Los visores proporcionados actualmente son:
+eDiscovery avanzado muestra contenido mediante varios visores, cada uno con distintos fines. Puede usar varios visores haciendo clic en cualquier documento de un conjunto de revisión. Los visores proporcionados actualmente son:
 
 - Metadatos de archivo
 - Vista nativa
-- Vista texto
-- Vista Anotar
+- Vista de Texto
+- Vista de Anotar
 
 ## <a name="file-metadata"></a>Metadatos de archivo
 
-Este panel se puede activar y desactivar para mostrar varios metadatos asociados con el documento. Aunque la cuadrícula de resultados de búsqueda se puede personalizar para mostrar metadatos específicos, hay instancias en las que el desplazamiento horizontal puede ser difícil al revisar los datos. El panel Metadatos de archivo permite a un usuario alternar en una vista dentro del visor.
+Este panel se puede activar y desactivar para mostrar varios metadatos asociados con el documento. Aunque la cuadrícula de resultados de búsqueda puede personalizarse para mostrar metadatos específicos, hay instancias en las que desplazarse horizontalmente puede ser difícil durante la revisión de datos. El panel de Metadatos de archivo permite a los usuarios activar o desactivar una vista dentro del visor.
 
 ![Panel de metadatos de archivos
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Vista nativa
 
-El visor nativo muestra la vista más enriquecente de un documento. Es compatible con cientos de tipos de archivos y está diseñado para mostrar la experiencia nativa más fiel posible. Para Microsoft Office, el visor usa la versión web de las aplicaciones de Office para mostrar contenido como comentarios de documentos, fórmulas de Excel, filas o columnas ocultas y notas de PowerPoint.
+El visor nativo muestra la vista más enriquecente de un documento. Es compatible con cientos de tipos de archivo y su intención es mostrar la experiencia nativa más verdadera posible. En el caso de los archivos de Microsoft Office, el visor usa la versión web de las aplicaciones de Office para mostrar contenido como comentarios de documentos, fórmulas de Excel, filas o columnas ocultas, y notas de PowerPoint.
 
 ![Vista nativa
 ](../media/Reviewimage3.png)
 
-## <a name="text-view"></a>Vista texto
+## <a name="text-view"></a>Vista de Texto
 
-El visor de texto proporciona una vista del texto extraído de un archivo. Omite las imágenes incrustadas y el formato, pero es muy eficaz si intenta comprender el contenido rápidamente. La vista texto también incluye estas características:
+El visor de Texto proporciona una vista del texto extraído de un archivo. Pasa por alto las imágenes incrustadas y el formato, pero es muy eficaz si intenta comprender el contenido rápidamente. La vista de Texto también incluye estas características:
 
   - El contador de líneas facilita la referencia a partes específicas de un documento
 
@@ -55,13 +55,13 @@ El visor de texto proporciona una vista del texto extraído de un archivo. Omite
 
   - La vista Diferencia proporciona una vista de comparación que resalta las diferencias textuales al ver documentos casi duplicados
 
-![Vista texto
+![Vista de Texto
 ](../media/Reviewimage4.png)
 
 ![Vista Diff
 ](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a>Vista Anotar
+## <a name="annotate-view"></a>Vista de Anotar
 
 La vista Anotación proporciona características que permiten a los usuarios aplicar marcado en un documento, como:
 
@@ -85,7 +85,7 @@ La vista Anotación proporciona características que permiten a los usuarios apl
 
   - Búsqueda: el usuario puede buscar en un documento y navegar a los distintos aciertos del documento
     
-    ![Vista Anotar
+    ![Vista de Anotar
     ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Vista panel 

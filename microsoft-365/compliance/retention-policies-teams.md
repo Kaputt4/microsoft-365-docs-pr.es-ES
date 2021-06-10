@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 607fbdd02cfaccfee79df67c4946c178ff3eb383
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280804"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861580"
 ---
-# <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
+# <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -33,7 +33,7 @@ ms.locfileid: "52280804"
 > 
 > La información de esta página es para los administradores de TI que gestionan estas directivas de retención.
 
-La información de este artículo complementa [Obtenga más información sobre la retención](retention.md) porque tiene información específica para los mensajes de Microsoft Teams.
+La información de este artículo complementa [Obtenga más información sobre la retención](retention.md) porque tiene información específica para los mensajes de Microsoft Teams.
 
 Para otras cargas de trabajo, vea:
 
@@ -46,13 +46,13 @@ Para otras cargas de trabajo, vea:
 Los mensajes de chat y de canal de Teams se pueden eliminar mediante directivas de retención para Teams y, además del texto de los mensajes, se pueden conservar los elementos siguientes por motivos de cumplimiento: imágenes incrustadas, tablas, vínculos de hipertexto, vínculos a otros mensajes y archivos de Teams y [contenido de tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat incluyen todos los nombres de los usuarios en el chat y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporcionó). 
 
 > [!NOTE]
-> La inclusión del contenido de la tarjeta en una política de retención para Teams es una adición bastante reciente. Para obtener más información, consulte las [funcionalidades de cumplimiento de Microsoft 365 para contenido de tarjetas adaptables en las aplicaciones de Teams que están disponibles ahora](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
+> La inclusión del contenido de la tarjeta en una política de retención para Teams es una adición bastante reciente. Para obtener más información, consulte las [funcionalidades de cumplimiento de Microsoft 365 para contenido de tarjetas adaptables en las aplicaciones de Teams que están disponibles ahora](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Actualmente, los mensajes de Teams en canales privados no son compatibles con las políticas de retención. Los fragmentos de código, las notas de voz grabadas del cliente móvil de Teams, las miniaturas, las imágenes de anuncios y las reacciones de otros en forma de emoticonos no se conservan cuando usa políticas de retención para Teams.
 
 Los correos electrónicos y archivos que usa con Teams no se incluyen en las políticas de retención de Teams. Estos elementos tienen sus propias políticas de retención.
 
-## <a name="how-retention-works-with-microsoft-teams"></a>Cómo funciona la retención con Microsoft Teams
+## <a name="how-retention-works-with-microsoft-teams"></a>Cómo funciona la retención con Microsoft Teams
 
 Use esta sección para comprender cómo los procesos y el almacenamiento de backend cumplen sus requisitos de cumplimiento, y las herramientas de exhibición de documentos electrónicos deben verificarlos en lugar de los mensajes que están visibles actualmente en la aplicación Teams.
 
@@ -76,6 +76,9 @@ Aunque los datos de los mensajes de canales y chats de Teams se almacenan en los
 Una vez que se configura una directiva de retención para los mensajes del chat y de los canales, un trabajo de temporizador del servicio de Exchange evalúa de manera periódica los elementos de la carpeta oculta en la que se almacenan estos mensajes de Teams. El trabajo de temporizador tarda entre 1 y 7 días en ejecutarse. Cuando el período de retención de estos elementos caduca, se trasladan a la carpeta SubstrateHolds, otra carpeta oculta ubicada en cada buzón de usuario o grupo para almacenar los elementos "eliminados temporalmente" antes de que se eliminen de forma permanente. 
 
 Los mensajes permanecen en la carpeta SubstrateHolds durante al menos 1 día y, luego, si son elegibles para su eliminación, el trabajo del temporizador los elimina permanentemente la próxima vez que se ejecuta.
+
+> [!NOTE]
+> Debido al [primer principio de retención](retention.md#the-principles-of-retention-or-what-takes-precedence), la eliminación permanente siempre se suspende si el mismo elemento debe conservarse debido a otra directiva de retención o está en retención en eDiscovery por motivos legales o de investigación.
 
 Una vez que se configura una directiva de retención para los mensajes del chat y de los canales, las rutas que seguirá el contenido dependerán de si la directiva de retención se configura para retener y luego eliminar, solo retener, o solo eliminar.
 
@@ -191,7 +194,7 @@ Cuando se incluyen usuarios externos en una reunión que su organización organi
 
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 
-Si un usuario que tiene un buzón de correo en Exchange Online deja la organización y su cuenta de Microsoft 365 se elimina, los mensajes de chat que estén sujetos a la retención se almacenarán en un buzón inactivo. El contenido de los mensajes de chat seguirá sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estado inactivo, y el contenido está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md). 
+Si un usuario que tiene un buzón de correo en Exchange Online deja la organización y su cuenta de Microsoft 365 se elimina, los mensajes de chat que estén sujetos a la retención se almacenarán en un buzón inactivo. El contenido de los mensajes de chat seguirá sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estado inactivo, y el contenido está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 Si el usuario ha guardado archivos en Teams, consulte la [sección equivalente](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) para SharePoint y OneDrive.
 
@@ -203,6 +206,6 @@ Estamos trabajando continuamente en la optimización de la funcionalidad de rete
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
+Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
 
 Si está listo para configurar una directiva de retención para Teams, consulte [Crear y configurar directivas de retención](create-retention-policies.md).

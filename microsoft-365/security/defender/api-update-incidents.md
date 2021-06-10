@@ -1,5 +1,5 @@
 ---
-title: ACTUALIZAR LA API de incidentes
+title: ACTUALIZAR API de incidentes
 description: Obtenga información sobre cómo actualizar incidentes con la API Microsoft 365 Defender
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e3b445b2f9612f0113f353450ca7bf0b8a1a2bb2
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730863"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861508"
 ---
 # <a name="update-incidents-api"></a>ACTUALIZAR LA API de incidentes
 
@@ -91,7 +91,7 @@ comment | string | Comentario que se agregará al incidente.
 
 Si se realiza correctamente, este método devuelve `200 OK` . El cuerpo de la respuesta contendrá la entidad incident con propiedades actualizadas. Si no se encontró un incidente con el identificador especificado, el método devuelve `404 Not Found` .
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
 **Solicitud**
 

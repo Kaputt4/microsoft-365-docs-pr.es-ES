@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la suplantación de inteligencia en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fc591bbaf2ecc6f59c2b569acde521453887c2a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 280743e87ce6039f456cec0b89bff57a31d75691
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822360"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877829"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 
@@ -53,13 +53,13 @@ Cuando un remitente suplanta una dirección de correo electrónico, parece que e
   - El remitente está en una lista de correo (también conocida como lista de discusión) y la lista de correo retransmite el correo electrónico del remitente original a todos los participantes de la lista de correo.
   - Una empresa externa envía correo electrónico en nombre de otra compañía (por ejemplo, un informe automatizado o una compañía de software como servicio).
 
-Puede usar  la información de inteligencia suplantada en el centro de seguridad de Microsoft 365 para identificar rápidamente remitentes suplantados que le envían correo electrónico no autenticado (mensajes de dominios que no pasan comprobaciones de SPF, DKIM o DMARC) y permitir manualmente dichos remitentes.
+Puede usar  la información de inteligencia suplantada en el portal de Microsoft 365 Defender para identificar rápidamente remitentes suplantados que le envían correo electrónico no autenticado (mensajes de dominios que no pasan comprobaciones de SPF, DKIM o DMARC) y permitir manualmente dichos remitentes.
 
 Al permitir que los remitentes conocidos envíen mensajes falsos desde ubicaciones conocidas, puede reducir los falsos positivos (buen correo electrónico marcado como malo). Al supervisar los remitentes suplantados permitidos, proporciona un nivel de seguridad adicional para evitar que los mensajes no seguros lleguen a la organización.
 
 Del mismo modo, puede revisar remitentes suplantados permitidos por la inteligencia de suplantación de identidad y bloquear manualmente a esos remitentes de la información de inteligencia suplantada.
 
-En el resto de este artículo se explica cómo usar la información de inteligencia suplantación en el centro de seguridad y en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones Exchange Online).
+En el resto de este artículo se explica cómo usar la información de inteligencia suplantación en el portal de Microsoft 365 Defender y en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online).
 
 > [!NOTE]
 >
@@ -69,9 +69,9 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 >
 >- La información de inteligencia suplantada muestra datos de 7 días. El cmdlet **Get-SpoofIntelligenceInsight** muestra datos de 30 días.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Puede abrir el Centro de seguridad en <https://security.microsoft.com/>. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> . Para ir directamente a la **página Spoof intelligence insight,** use <https://security.microsoft.com/spoofintelligence> .
+- Abra el portal Microsoft 365 Defender en <https://security.microsoft.com/> . Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> . Para ir directamente a la **página Spoof intelligence insight,** use <https://security.microsoft.com/spoofintelligence> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -90,9 +90,9 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 
 - Para obtener la configuración recomendada para la inteligencia de suplantación de identidad, consulte Configuración de directiva [contra suplantación de identidad](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)de EOP .
 
-## <a name="open-the-spoof-intelligence-insight-in-the-security-center"></a>Abrir la información de inteligencia suplantación en el centro de seguridad
+## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Abra la información de inteligencia de suplantación en el portal de Microsoft 365 Defender
 
-1. En el centro de seguridad, vaya a Correo electrónico **& directivas** de colaboración & De directivas de amenazas de reglas \>  \>  \>  sección \> **Anti-phishing**.
+1. En el portal Microsoft 365 Defender, vaya a Email **& Collaboration** Policies \> **& Rules** Threat \> **policies** \> **section** \> **Anti-phishing**.
 
 2. En la **página Anti-phishing,** la información de inteligencia suplantación de identidad tiene este aspecto:
 

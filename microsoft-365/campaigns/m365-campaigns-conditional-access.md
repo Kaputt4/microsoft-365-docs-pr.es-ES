@@ -41,15 +41,15 @@ Si la suscripción se creó el 22 de octubre de 2019 o después, es posible que 
 
 Para habilitar los valores predeterminados de seguridad en Azure Active Directory (Azure AD) o para comprobar si ya están habilitados:
 
-1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> con credenciales de administrador global.
+1. Inicie sesión en el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administración con</a> credenciales de administrador global.
 
 2. En el panel izquierdo, seleccione **Mostrar todo y, a continuación,** en Centros de **administración,** **seleccione Azure Active Directory**.
 
-3. En el panel izquierdo del Centro de **administración de Azure Active Directory,** seleccione Azure Active **Directory**.
+3. En el panel izquierdo del centro **Azure Active Directory administración,** seleccione **Azure Active Directory**.
 
 4. En el menú izquierdo del panel, en la **sección Administrar,** seleccione **Propiedades**.
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Captura de pantalla del Centro de administración de Azure Active Directory que muestra la ubicación del elemento de menú Propiedades.":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Captura de pantalla del Azure Active Directory de administración que muestra la ubicación del elemento de menú Propiedades.":::
 
 5. En la parte inferior de la **página Propiedades,** seleccione **Administrar valores predeterminados de seguridad**.
 
@@ -71,7 +71,7 @@ Los valores predeterminados de seguridad están disponibles para todos los clien
 - Azure Active Directory Premium P1 o P2
 - Microsoft 365 Empresa Premium
 - Microsoft 365 E3 o E5
-- Enterprise Mobility & Security E3 o E5
+- Enterprise Movilidad & seguridad E3 o E5
 
 Si desea usar el acceso condicional para configurar directivas equivalentes a las habilitadas por los valores predeterminados de seguridad, consulte las siguientes guías paso a paso:
 

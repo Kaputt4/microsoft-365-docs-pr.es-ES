@@ -39,7 +39,7 @@ Si no cumple estas políticas y directrices, es posible que nuestro equipo de so
 
 ## <a name="general-microsoft-policies"></a>Directivas generales de Microsoft
 
-El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir con todas las directivas de Microsoft que rigen la transmisión de correo electrónico y el uso de Microsoft 365.
+El correo electrónico enviado a Microsoft 365 usuarios debe cumplir con todas las directivas de Microsoft que rigen la transmisión y el uso de correo electrónico Microsoft 365.
 
 - Términos de servicios aplicables a Microsoft 365; en particular, la prohibición de usar el servicio para correo no deseado o distribuir malware.
 
@@ -47,7 +47,7 @@ El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir con 
 
 ## <a name="governmental-regulations"></a>Regulaciones gubernamentales
 
-El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir todas las leyes y reglamentos aplicables que rigen las comunicaciones de correo electrónico en la jurisdicción aplicable.
+El correo electrónico enviado a Microsoft 365 usuarios debe cumplir todas las leyes y reglamentos aplicables que rigen las comunicaciones de correo electrónico en la jurisdicción aplicable.
 
 - [Ley estadounidense CAN-SPAM: guía de cumplimiento para empresas](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,13 +55,13 @@ El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir toda
 
 ## <a name="technical-guidelines"></a>Directrices técnicas
 
-El correo electrónico enviado a Microsoft 365 debe cumplir con las recomendaciones aplicables enumeradas en los documentos siguientes (algunos vínculos solo están disponibles en inglés).
+El correo electrónico enviado Microsoft 365 cumplir con las recomendaciones aplicables que se enumeran en los documentos siguientes (algunos vínculos solo están disponibles en inglés).
 
 - [RFC 2505: Recomendaciones frente a correo electrónico no deseado para MTA de SMTP](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: Extensión de servicio SMTP para la canalización de comandos](https://www.ietf.org/rfc/rfc2920.txt)
 
-Además, los servidores de correo electrónico que se conectan a Microsoft 365 deben cumplir los siguientes requisitos:
+Además, los servidores de correo electrónico que se Microsoft 365 deben cumplir los siguientes requisitos:
 
 - El remitente debe cumplir todas las normas técnicas para la transmisión de correo electrónico de Internet, conforme publica el Grupo de trabajo de ingeniería de Internet (IETF) de The Internet Society, incluidos RFC 5321, RFC 5322 y otros.
 
@@ -81,9 +81,9 @@ Además, los servidores de correo electrónico que se conectan a Microsoft 365 d
 
 Los remitentes, ISP y otros proveedores de servicios deben administrar activamente la reputación de sus direcciones IP salientes.
 
-## <a name="microsoft-365-limits"></a>Límites de Microsoft 365
+## <a name="microsoft-365-limits"></a>Microsoft 365 límites
 
-Los remitentes deben cumplir los límites de Microsoft 365 enumerados [en Límites](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)de Exchange Online Protection .
+Los remitentes deben cumplir Microsoft 365 límites enumerados [en Exchange Online Protection límites](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## <a name="email-delivery-resources-and-organizations"></a>Organizaciones y recursos de entrega de correo electrónico
 

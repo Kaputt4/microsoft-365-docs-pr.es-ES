@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido de usuario que un administrador de exhibición de documentos electrónicos puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 1a84bc77cb78a9da3cfe873849a4148e55501137
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706611"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878033"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de exhibición de documentos electrónicos
 
@@ -92,6 +92,9 @@ Esta es una lista de atributos de usuario de Azure AD que puede usar para los l�
 Aunque hay más atributos de usuario disponibles, especialmente para Exchange buzones de correo, los atributos enumerados anteriormente son los únicos admitidos actualmente por OneDrive.
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Paso 2: Presentar una solicitud con el soporte técnico de Microsoft para sincronizar el atributo de usuario con OneDrive cuentas
+
+> [!IMPORTANT]
+> Este paso ya no es necesario. A partir de junio de 2021, los filtros de buzones se aplicarán a OneDrive para la Empresa. Las solicitudes de compatibilidad para sincronizar el atributo OneDrive se rechazarán porque ya no es necesario. Este artículo se actualizará próximamente.
 
 El siguiente paso es presentar una solicitud con el soporte técnico de Microsoft para sincronizar el atributo de Azure AD que eligió en el paso 1 con todas las OneDrive de la organización. Después de que se produzca esta sincronización, el atributo (y su valor) que eligió en el paso 1 se asignará a una propiedad administrada oculta denominada `ComplianceAttribute` . Este atributo se usa para crear el filtro de permisos de búsqueda OneDrive en el paso 4.
   
@@ -309,7 +312,7 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 - No se recomienda usar filtros de exclusión (como usar en un filtro de permisos de búsqueda) para un límite de cumplimiento `-not()` basado en contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indizado el contenido con atributos actualizados recientemente. 
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **Quién puede crear y administrar filtros de permisos de búsqueda (con New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter cmdlets)?**
   

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Información general de Temas Viva.
-ms.openlocfilehash: c7a5af9d2a038c2b9cc5f26d851eb3776a00c71f
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866696"
+ms.locfileid: "52877817"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de Temas Microsoft Viva 
 
@@ -70,7 +70,7 @@ Cuando se identifica un tema y la inteligencia artificial determina que tiene su
 
 Los administradores de información pueden rastrear todos los sitios de SharePoint de su espacio empresarial por temas o seleccionar algunos determinados.
 
-Vea [Detección de temas y curación](./topic-experiences-discovery-curation.md).
+Para obtener más información, vea [Detección de temas y curación.](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Funciones
 
@@ -80,7 +80,7 @@ Al usar Temas Viva en su entorno de Microsoft 365, los usuarios tendrán las si
 
 - Colaboradores: Usuarios que tienen permisos para editar los temas existentes o crear nuevos. Los administradores de información asignan permisos de colaborador a los usuarios a través de la configuración de Temas Viva en el Centro de administración de Microsoft 365. Tenga en cuenta que también puede dar permiso a todos los visualizadores de temas para editar y crear temas para que todos puedan colaborar en los temas que ven.
 
-- Gestores de información: Usuarios que guían los temas a través de su ciclo de vida. Los administradores  de conocimientos usan la página Administrar temas del Centro de temas para confirmar los temas sugeridos por AI, quitar temas que ya no son relevantes, así como editar temas existentes o crear otros nuevos, y son los únicos usuarios que tienen acceso a él. Los administradores de información asignan permisos de gestores de información a los usuarios a través de la configuración de Temas Viva en el Centro de administración de Microsoft 365. 
+- Gestores de información: Usuarios que guían los temas a través de su ciclo de vida. Los administradores  de conocimientos usan la página Administrar temas del centro de temas para confirmar temas sugeridos por la IA, quitar temas que ya no son relevantes, así como editar temas existentes o crear otros nuevos y son los únicos usuarios que tienen acceso a él. Los administradores de información asignan permisos de gestores de información a los usuarios a través de la configuración de Temas Viva en el Centro de administración de Microsoft 365. 
 
 - Administradores de conocimientos: los administradores establecen Temas de Viva y lo administran a través de los controles de administración del centro Microsoft 365 administración. Actualmente, un administrador del servicio SharePoint o global de Microsoft 365 puede servir como administrador del información.
 
@@ -90,15 +90,15 @@ Para obtener más información, vea [Roles de Temas de Viva](topic-experiences-r
 
 La administración de temas se realiza en la **página Administrar temas** del centro de temas de su *organización.* El centro de temas se crea durante la instalación y sirve como centro de conocimiento para su organización. 
 
-Aunque todos los usuarios con licencia pueden ver temas con  los que están conectados en el Centro de temas, solo los usuarios con permisos administrar temas (administradores de conocimientos) pueden ver y usar la página Administrar **temas.**
+Aunque todos los usuarios con licencia pueden ver los temas  con los que están conectados en el centro de temas, solo los usuarios con permisos administrar temas (administradores de conocimientos) pueden ver y usar la página Administrar **temas.**
 
 Los gestores de información pueden realizar las siguientes acciones:
 
 - Confirmar o quitar los temas detectados en su espacio empresarial.
 - Crear nuevos temas manualmente según sea necesario (por ejemplo, si no se ha proporcionado suficiente información para que lo detecte la inteligencia artificial).
-- Editar páginas de temas existentes.<br/>
+- Editar páginas de temas existentes.
 
-Para obtener más información, vea [Administrar temas en el Centro de temas](manage-topics.md).  
+Para obtener más información, vea [Manage topics in the topic center](manage-topics.md).  
 
 ## <a name="admin-controls"></a>Controles de administración
 
@@ -125,6 +125,6 @@ Además, los usuarios con los permisos adecuados pueden etiquetar elementos, com
 
 Para obtener más información, vea [Detección de temas y curación.](./topic-experiences-discovery-curation.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Usar Microsoft Search para buscar temas en Temas de Viva](./search.md)

@@ -6,10 +6,10 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Obtenga más información sobre como utilizar el esquema de coincidencia de datos exactos y el asistente de tipo de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2081de887e09794350222dac3527bb3ff932837a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
-ms.translationtype: HT
+ms.openlocfilehash: d9d6f870239b963ee7483b9f08e93e40b10f4f0b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49699157"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878009"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Utilice el esquema de coincidencia de datos exactos y el asistente para tipos de información confidencial
 
-[Crear un tipo de información confidencial personalizada con una clasificación basada en la coincidencia exacta de datos (EDM) ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)implica muchos pasos.  Puede utilizar este asistente para crear su esquema y archivos de tipo de información confidencial (paquete de reglas) para ayudar a simplificar el proceso.
+[Crear un tipo de información confidencial personalizada con una clasificación basada en la coincidencia exacta de datos (EDM) ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)implica muchos pasos.  Puede usar este asistente para crear los archivos de patrón de esquema y de tipo de información confidencial (SIT) (paquete de reglas) para simplificar el proceso.
 
 > [!NOTE]
 > El Esquema de coincidencia exacta de datos y el Asistente para tipos de información confidencial solo están disponibles para las nubes en todo el mundo y GCC.
@@ -42,7 +42,7 @@ pasos en la[Parte 1: establecer la clasificación basada en el EDM.](create-cust
 
 1. Familiarícese con los pasos para crear un tipo de información confidencial personalizada con el [ flujo de trabajo del EDM de un vistazo](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).
 
-2. Realice los pasos de la sección [Guardar datos confidenciales en formato .csv](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format).
+2. Realice los pasos descritos en [Guardar datos confidenciales en .csv formato .tsv o .tsv](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format).
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usar el Esquema de coincidencia exacta de datos y el asistente para información de tipo confidencial
 
@@ -54,7 +54,7 @@ pasos en la[Parte 1: establecer la clasificación basada en el EDM.](create-cust
 
 3. Rellene con un **Nombre** y una **Descripción apropiados**.
 
-4. Elija **Ignorar delimitadores y puntuaciones para todos los campos del esquema** si quiere ese comportamiento. Para obtener más información sobre la configuración del EDM para ignorar mayúsculas y minúsculas o delimitar, consulte [Creación de un tipo de información confidencial personalizada con clasificación basada en la coincidencia de datos exactos (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+4. Elija **Omitir delimitadores y puntuación** para todos los campos de esquema si desea ese comportamiento. Para obtener más información acerca de cómo configurar EDM para omitir mayúsculas o minúsculas, vea [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 5. Rellene los valores deseados para el **Campo #1 del esquema** y agregue más campos según sea necesario. 
 
@@ -77,7 +77,7 @@ pasos en la[Parte 1: establecer la clasificación basada en el EDM.](create-cust
 
 13. Elija su **Nivel de confianza y la proximidad de su personaje**.  Este será el valor por defecto para todo el tipo de información confidencial EDM
 
-13. Elija **Crear patrón** si quiere crear patrones adicionales para su tipo de información confidencial EDM.
+13. Elige **Crear patrón** si quieres crear patrones adicionales para el tipo de información confidencial de EDM.
 
 14. Elija **Siguiente** y rellene con un **Nombre** y una **Descripción para los administradores**.
 
@@ -88,6 +88,23 @@ Puedes borrar o editar el patrón de tipo de información confidencial seleccion
 > [!IMPORTANT]
 > Si desea eliminar un esquema, y ya está asociado a un tipo de información sensible EDM, primero debe borrar el tipo de información confidencial EDM, luego puede eliminar el esquema.
 
-## <a name="post-steps"></a>Pasos posteriores
+## <a name="post-creation-steps"></a>Pasos posteriores a la creación
 
 Después de haber usado este asistente para crear sus archivos de esquemas y patrones EDM (paquete de reglas), todavía tiene que realizar los pasos de la [Parte 2: hash y cargar los datos confidenciales](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-2-hash-and-upload-the-sensitive-data) antes de poder usar el tipo de información confidencial personalizada EDM.
+
+Después de comprobar que la tabla de información confidencial se ha cargado correctamente, puede probar que funciona correctamente.
+
+1. Open **Compliance center** Data  >  **classification** Sensitive Information  >  **Types**.
+2. Seleccione su SIT de EDM en la lista y, a continuación, **seleccione Probar** en el panel desplegable. 
+3. Upload elemento que contiene datos que desea detectar, por ejemplo, cree un elemento que contenga algunos de los datos de la tabla de información confidencial. Si usó la característica de coincidencia configurable en el esquema para definir delimitadores ignorados, asegúrese de que el elemento incluye ejemplos con y sin esos delimitadores.
+4. Después de cargar y examinar el archivo, compruebe si hay coincidencias en su SIT de EDM.
+5. Si la **función Test** del SIT detecta una coincidencia, compruebe que no la está recortando o extrayendo incorrectamente. Por ejemplo, extrayendo solo una subcadena de la cadena completa que se supone que debe detectar, o tomando solo la primera palabra de una cadena de varias palabras, o incluyendo símbolos o caracteres adicionales en la extracción. Consulte [Lenguaje de expresión regular: referencia rápida para](/dotnet/standard/base-types/regular-expression-language-quick-reference) la referencia del lenguaje de expresión regular. 
+
+### <a name="troubleshooting"></a>Solución de problemas
+
+Si no encuentra ninguna coincidencia, pruebe lo siguiente:
+- Confirme que los datos confidenciales se cargaron correctamente con los comandos que se explican en las instrucciones para cargar los datos confidenciales [mediante la herramienta EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- Compruebe que los ejemplos especificados en el elemento están presentes en la tabla de información confidencial y que los delimitadores omitido son correctos.
+- **Pruebe** el SIT que usó al configurar el elemento principal en cada uno de los patrones. Esto confirmará que el SIT puede coincidir con los ejemplos del elemento. 
+  -  Si el SIT que seleccionó para un elemento principal del tipo EDM no encuentra una coincidencia en el elemento o encuentra menos coincidencias de las esperadas, compruebe que admite separadores y delimitadores que existen en el contenido. Asegúrese de incluir los delimitadores omitidos definidos en el esquema. 
+  -  Si la **función Test** no detecta ningún contenido, compruebe si el SIT seleccionado incluye requisitos para palabras clave adicionales u otras validaciones. Para los SIT [integrados,](sensitive-information-type-entity-definitions.md) vea Sensitive information types entity definitions to verify what the minimum requirements are for matching each type.

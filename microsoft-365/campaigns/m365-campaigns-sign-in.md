@@ -1,5 +1,5 @@
 ---
-title: Iniciar sesión en Microsoft 365
+title: Inicie sesión en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -30,14 +30,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/27/2021
 ms.locfileid: "51398179"
 ---
-# <a name="sign-in-to-microsoft-365"></a>Iniciar sesión en Microsoft 365
+# <a name="sign-in-to-microsoft-365"></a>Inicie sesión en Microsoft 365
 
 ## <a name="for-business-or-campaign-admins"></a>Para administradores de campañas o empresas
 
-Si te has registrado en Microsoft 365, eres el administrador de Microsoft 365. Este es el modo de iniciar sesión:
+Si te has registrado para Microsoft 365, eres el administrador Microsoft 365 usuario. Este es el modo de iniciar sesión:
 
 1. Busque el nombre de usuario y la contraseña que hemos enviado a la dirección de correo electrónico que nos ha dado en el paso 2 de [Pasos para registrarse.](m365-campaigns-sign-up.md#steps-to-sign-up)
-2. En el explorador, vaya al Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
+2. En el explorador, vaya al centro Microsoft 365 de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
 3. Escriba su nombre de usuario y contraseña. Seleccione **Iniciar sesión**.
 4. En la parte superior derecha de la página, busque el control **Vista previa en.** Selecciona **Vista previa para** poder usar todos los controles que se describen en Protección contra actualizaciones para la [campaña](m365-campaigns-security-overview.md).
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para Word, Excel y PowerPoint archivos en SharePoint y OneDrive.
-ms.openlocfilehash: 8007f085e7bcba7f055f616954e2f0549f6f125a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 695084443ee10de87f091d358b63fad079e03093
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770402"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861520"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -220,7 +220,11 @@ Use la propiedad administrada **InformationProtectionLabelId** para buscar todos
 
 Por ejemplo, para buscar todos los documentos etiquetados como "Confidencial" y esa etiqueta tiene un GUID de "8faca7b8-8d20-48a3-8ea2-0f96310a848e", en el cuadro de búsqueda, escriba:
 
-`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`    
+```
+InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
+```
+
+La búsqueda no encontrará documentos etiquetados en un archivo comprimido, como un archivo .zip comprimido.
 
 Para obtener los GUID de las etiquetas de confidencialidad, use el cmdlet [Get-Label:](/powershell/module/exchange/get-label)    
 

@@ -38,9 +38,9 @@ Todas las evaluaciones se enumeran en la página de evaluaciones. Obtenga más i
 
 ## <a name="data-protection-baseline-default-assessment"></a>Evaluación predeterminada de línea base de protección de datos
 
-Para empezar, Microsoft proporciona  una evaluación predeterminada en el Administrador de cumplimiento para la línea base de protección de datos de **Microsoft 365**. Esta evaluación de línea base tiene un conjunto de controles para los reglamentos y estándares clave para la protección de datos y el gobierno general de datos. Esta línea base se basa en elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y GDPR (Reglamento general de protección de datos de la Unión Europea).
+Para empezar, Microsoft proporciona  una evaluación predeterminada en el Administrador de cumplimiento para el Microsoft 365 línea base **de protección de datos**. Esta evaluación de línea base tiene un conjunto de controles para los reglamentos y estándares clave para la protección de datos y el gobierno general de datos. Esta línea base se basa en elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y GDPR (Reglamento general de protección de datos de la Unión Europea).
 
-Esta evaluación se usa para calcular la puntuación de cumplimiento inicial la primera vez que se llega al Administrador de cumplimiento, antes de configurar cualquier otra evaluación. El Administrador de cumplimiento recopila las señales iniciales de las soluciones de Microsoft 365. Verá de un vistazo el rendimiento de su organización con respecto a los estándares y normativas clave de protección de datos y verá las acciones de mejora sugeridas que deben realizarse.
+Esta evaluación se usa para calcular la puntuación de cumplimiento inicial la primera vez que se llega al Administrador de cumplimiento, antes de configurar cualquier otra evaluación. El Administrador de cumplimiento recopila las señales iniciales de Microsoft 365 soluciones. Verá de un vistazo el rendimiento de su organización con respecto a los estándares y normativas clave de protección de datos y verá las acciones de mejora sugeridas que deben realizarse.
 
 El Administrador de cumplimiento se vuelve más útil a medida que crea y administra sus propias evaluaciones para satisfacer las necesidades específicas de su organización.
 
@@ -96,7 +96,7 @@ Los grupos no se pueden crear como entidades independientes. Un grupo debe conte
 - Una vez que agregue una evaluación a un grupo, no se podrá cambiar la agrupación.
 - Los controles de evaluación relacionados en distintas evaluaciones dentro del mismo grupo se actualizan automáticamente cuando se completan.
 - Si agrega una nueva evaluación a un grupo existente, la información común de las evaluaciones de ese grupo se copiará en la nueva evaluación.
-- Los grupos pueden contener evaluaciones para la misma certificación o reglamento, pero cada grupo solo puede contener una evaluación para un par específico de certificación de productos. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 y NIST CSF. Un grupo puede contener varias evaluaciones para el mismo producto solo si la certificación o regulación correspondientes para cada uno es diferente.
+- Los grupos pueden contener evaluaciones para la misma certificación o reglamento, pero cada grupo solo puede contener una evaluación para un par específico de certificación de productos. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 NIST CSF. Un grupo puede contener varias evaluaciones para el mismo producto solo si la certificación o regulación correspondientes para cada uno es diferente.
 - Al eliminar una evaluación, se rompe la relación entre esa evaluación y el grupo.
 - Los grupos no se pueden eliminar.
 - Cuando se realiza un cambio en una mejora que aparece en varios grupos, ese cambio se refleja en todos los casos de esa acción de mejora.
@@ -143,7 +143,7 @@ Para completar este proceso, empiece en la página **de** plantillas de evaluaci
 
 **Antes de empezar**
 
-Para prepararse para este proceso, primero deberá ensamblar una hoja de cálculo de Excel con un formato especial para importar los datos de plantilla necesarios. Existen requisitos especiales para los archivos [de Excel con formato usados](compliance-manager-templates.md#formatting-your-template-data-with-excel) en el proceso de extensión. Vea estos puntos adicionales para ayudar a evitar errores en el proceso de importación:
+Para prepararse para este proceso, primero tendrá que ensamblar una hoja de cálculo con un formato especial Excel para importar los datos de plantilla necesarios. Existen requisitos especiales para los archivos [Excel formato usados](compliance-manager-templates.md#formatting-your-template-data-with-excel) en el proceso de extensión. Vea estos puntos adicionales para ayudar a evitar errores en el proceso de importación:
 
 - La hoja de cálculo solo debe contener las acciones y controles que desee agregar a la evaluación. 
 - La hoja de cálculo no puede contener ninguno de los controles o acciones que ya existen en la evaluación que desea modificar.
@@ -165,13 +165,13 @@ Después de dar formato a la hoja de cálculo, siga los pasos siguientes.
 
 6. En la siguiente pantalla se muestra la plantilla seleccionada. Si es correcto, seleccione **Siguiente**. (Si es incorrecto, **elija Seleccionar una plantilla diferente** para volver a elegir).
 
-7. En la **pantalla Cargar archivo,** seleccione **Examinar** para buscar y cargar el archivo de Excel con formato que contiene todos los datos de plantilla necesarios.
+7. En la **Upload de** archivos,  seleccione Examinar para buscar y cargar el archivo Excel formato que contiene todos los datos de plantilla necesarios.
 
-8. Si no hay ningún problema con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, seleccione **Cargar un archivo diferente**).
+8. Si no hay ningún problema con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, **seleccione Upload otro archivo**).
 
     - Si hay un problema con el archivo, un mensaje de error en la parte superior explica lo que está mal. Tendrás que corregir y volver a cargar el archivo. Los errores se producen si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos.
  
-9. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Siguiente**. (Si necesita realizar cambios, seleccione **Cargar un archivo diferente**.)
+9. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Siguiente**. (Si necesita realizar cambios, seleccione **Upload otro archivo**.)
 
 10. La última pantalla confirma que se ha creado una plantilla nueva. Seleccione **Listo** para salir del asistente.
 
@@ -179,11 +179,11 @@ Después de dar formato a la hoja de cálculo, siga los pasos siguientes.
 
 ## <a name="create-your-own-custom-assessment"></a>Crear su propia evaluación personalizada
 
-Crear una evaluación personalizada en el Administrador de cumplimiento requiere que cree su propia plantilla. Para crear su propia plantilla, primero ensamblará una hoja de cálculo de Excel con formato para importar los datos de plantilla necesarios. También ayuda a decidir con antelación a qué grupo asignará la evaluación al crearla (obtenga más información sobre [los grupos).](#what-are-groups)
+Crear una evaluación personalizada en el Administrador de cumplimiento requiere que cree su propia plantilla. Para crear su propia plantilla, primero ensamblará una hoja de cálculo Excel formato para importar los datos de plantilla necesarios. También ayuda a decidir con antelación a qué grupo asignará la evaluación al crearla (obtenga más información sobre [los grupos).](#what-are-groups)
 
 **Siga los pasos siguientes para crear la evaluación personalizada:**
 
-1. **Dar formato al archivo de Excel.** Comience por dar formato a los datos de la plantilla en una hoja de cálculo de Excel con [estas instrucciones](compliance-manager-templates.md#formatting-your-template-data-with-excel).
+1. **Formatee el Excel archivo.** Comience por dar formato a los datos de la plantilla en una Excel hoja de cálculo con [estas instrucciones](compliance-manager-templates.md#formatting-your-template-data-with-excel).
 
 2. **Cree la plantilla** siguiendo [estas instrucciones](compliance-manager-templates.md#create-a-new-template).
 
@@ -291,7 +291,7 @@ Después de seleccionar **Revisar actualización en** la página detalles de la 
 - Información general que explica la actualización
 - Detalles específicos sobre los cambios, incluido el impacto en la puntuación de cumplimiento, la cantidad de progreso hacia la finalización de la evaluación y el número específico de cambios en las acciones y controles de mejora.
 
-Al seleccionar el **vínculo Plantilla** actualizada, se descargará un archivo de Excel que contenga datos de control para la versión de la plantilla con las actualizaciones pendientes. Al seleccionar el **vínculo Plantilla actual,** se descarga un archivo de la plantilla existente sin los cambios.
+Al seleccionar el **vínculo Plantilla** actualizada, se descargará un archivo Excel que contenga datos de control para la versión de la plantilla con las actualizaciones pendientes. Al seleccionar el **vínculo Plantilla actual,** se descarga un archivo de la plantilla existente sin los cambios.
 
 Para aceptar la actualización y realizar los cambios en la evaluación, seleccione **Aceptar actualización**. Los cambios aceptados son permanentes.
 
@@ -307,6 +307,6 @@ Si está en medio de completar una evaluación, es posible que desee asegurarse 
 
 ## <a name="export-an-assessment-report"></a>Exportar un informe de evaluación
 
-Puede exportar una evaluación a un archivo de Excel para las partes interesadas en el cumplimiento de la organización o para auditores y reguladores externos. En la página de detalles de la evaluación, seleccione el botón **Generar** informe cerca de la parte superior de la página, que crea un archivo de Excel que puede guardar y compartir.
+Puede exportar una evaluación a un archivo Excel para las partes interesadas en el cumplimiento de la organización o para auditores y reguladores externos. En la página de detalles de la evaluación, seleccione el botón **Generar** informe cerca de la parte superior de la página, que crea un archivo Excel que puede guardar y compartir.
 
 El informe es una instantánea de la evaluación a partir de la fecha y hora de la exportación. Contiene los detalles de los controles administrados por usted y Microsoft, incluidos el estado de implementación, la fecha de prueba y los resultados de la prueba.

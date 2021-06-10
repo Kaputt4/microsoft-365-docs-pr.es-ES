@@ -16,12 +16,12 @@ description: Ver e investigar intentos de suplantación de identidad de malware.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2a6d3d10cfa21c0ad2da948bff130cb9336ebd8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297632"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877901"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Seguridad de correo electrónico con el Explorador de amenazas en Microsoft Defender para Office 365
 
@@ -45,7 +45,9 @@ En este artículo se explica cómo ver e investigar los intentos de malware y su
 
 Para ver el malware detectado en el correo electrónico ordenado por Microsoft 365, use la vista Correo [> malware](threat-explorer-views.md#email--malware) del Explorador (o detecciones en tiempo real). El malware es la vista predeterminada, por lo que puede seleccionarse tan pronto como abra el Explorador.
 
-1. En el Centro de seguridad & cumplimiento ( ), elija Explorador de administración de amenazas <https://protection.office.com>  \>  (o **Detecciones en tiempo real**). (En este ejemplo se usa Explorer). Si está en el centro de seguridad Microsoft 365 ( desplácese hasta https://security.microsoft.com/) Correo electrónico & explorador de   >  **colaboración**.
+1. En el Centro de seguridad & cumplimiento ( ), elija Explorador de administración de amenazas <https://protection.office.com>  \>  (o **Detecciones en tiempo real**). (En este ejemplo se usa Explorer).
+
+   Si está en el portal convergente de Microsoft 365 Defender ( ) desplácese hasta Correo electrónico <https://security.microsoft.com> **& explorador de**  >  **colaboración**.
 
    A partir de aquí, comience en la vista, elija un período de tiempo determinado para investigar (si es necesario) y centre los filtros, según el recorrido [del Explorador.](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)
 

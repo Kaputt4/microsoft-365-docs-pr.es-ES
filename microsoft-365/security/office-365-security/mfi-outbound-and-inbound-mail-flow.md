@@ -37,7 +37,7 @@ El widget muestra el cifrado TLS que se usa para la conexión cuando se entregan
 
 La información del widget está relacionada con conectores y protección de mensajes TLS en Microsoft 365. Para obtener más información, vea estos temas:
 
-- [Configurar el flujo de correo con conectores](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- [Configurar un flujo de correo mediante conectores](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 - [Cómo Exchange Online usa TLS para proteger las conexiones del correo electrónico](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
 - [Detalles de referencia técnica sobre el cifrado en Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
 
@@ -49,9 +49,9 @@ Al hacer clic en **Ver** detalles en el widget, el control flotante Mensaje prot
 
 Actualmente, TLS 1.2 es la versión más segura de TLS que ofrece Microsoft 365. A menudo, necesitará conocer el cifrado TLS que se usa para las auditorías de cumplimiento. Probablemente no tenga una relación directa con la mayoría de los servidores de correo electrónico de origen y destino (no los posee ni Microsoft), por lo que no tiene muchas opciones para mejorar el cifrado TLS que usan esos servidores.
 
-Sin embargo, puede usar [conectores para](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) garantizar la mejor protección TLS disponible para los mensajes que se envían entre los servidores de correo electrónico y Microsoft 365. El flujo de correo entre Microsoft 365 y sus propios servidores o servidores de correo electrónico que pertenecen a sus socios suele ser más importante y confidencial que los mensajes normales, por lo que querrá aplicar seguridad y vigilancia adicionales a esos mensajes.
+Sin embargo, puede usar conectores [para](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) garantizar la mejor protección TLS disponible para los mensajes que se envían entre los servidores de correo electrónico y Microsoft 365. El flujo de correo entre Microsoft 365 y sus propios servidores de correo electrónico o servidores que pertenecen a sus socios suele ser más importante y confidencial que los mensajes normales, por lo que querrá aplicar seguridad y vigilancia adicionales a esos mensajes.
 
-Puede actualizar o corregir sus propios servidores de correo electrónico para mejorar el cifrado TLS que se está utilizando o comunicarse con sus asociados para hacer lo mismo. El **informe del conector** muestra el volumen de flujo de correo y el cifrado TLS para los mensajes que usan los conectores de Microsoft 365.
+Puede actualizar o corregir sus propios servidores de correo electrónico para mejorar el cifrado TLS que se está utilizando o comunicarse con sus asociados para hacer lo mismo. El **informe de conector** muestra el volumen de flujo de correo y el cifrado TLS para los mensajes que usan los conectores Microsoft 365 correo.
 
 Puede hacer clic en el **vínculo Informe de conector** para ir al informe de [Conector.](view-mail-flow-reports.md#connector-report) Las siguientes perspectivas podrían estar disponibles en la página de informe **de Connector** si se ha detectado la condición asociada:
 
@@ -60,6 +60,6 @@ Puede hacer clic en el **vínculo Informe de conector** para ir al informe de [C
 
 Para las conexiones TLS 1.0, realmente necesita actualizar o solucionar el servidor de correo electrónico o el servidor de su partner para evitar cualquier problema cuando la compatibilidad con TLS 1.0 esté en desuso en Microsoft 365.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

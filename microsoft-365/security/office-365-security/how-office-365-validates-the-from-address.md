@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden obtener información sobre los tipos de direcciones de correo electrónico aceptadas o rechazadas por Exchange Online Protection (EOP) y Outlook.com ayudar a evitar el phishing.
+description: Los administradores pueden obtener información sobre los tipos de direcciones de correo electrónico aceptadas o rechazadas por Exchange Online Protection (EOP) y Outlook.com para ayudar a evitar el phishing.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51205379"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Los ataques de suplantación de identidad son una amenaza constante para cualquier organización de correo electrónico. Además de usar direcciones de correo electrónico de remitente suplantadas [(falsificadas),](anti-spoofing-protection.md)los atacantes suelen usar valores en la dirección From que infringen los estándares de Internet. Para ayudar a evitar este tipo de phishing, Exchange Online Protection (EOP) y Outlook.com ahora requieren que los mensajes entrantes incluyan una dirección From compatible con RFC, como se describe en este artículo. Esta aplicación se ha habilitado en noviembre de 2017.
+Los ataques de suplantación de identidad son una amenaza constante para cualquier organización de correo electrónico. Además de usar direcciones de correo electrónico de remitente suplantadas [(falsificadas),](anti-spoofing-protection.md)los atacantes suelen usar valores en la dirección From que infringen los estándares de Internet. Para ayudar a evitar este tipo de suplantación de identidad, Exchange Online Protection (EOP) y Outlook.com ahora requieren que los mensajes entrantes incluyan una dirección From compatible con RFC, como se describe en este artículo. Esta aplicación se ha habilitado en noviembre de 2017.
 
 **Notas**:
 
@@ -90,7 +90,7 @@ Las siguientes direcciones de correo electrónico De son válidas:
 
 Las siguientes direcciones de correo electrónico De no son válidas:
 
-- **No Dirección de origen:** algunos mensajes automatizados no incluyen una dirección De. En el pasado, cuando Microsoft 365 o Outlook.com recibió un mensaje sin una dirección From, el servicio agregó la siguiente dirección predeterminada From: para que el mensaje sea entregable:
+- **No Dirección de origen:** algunos mensajes automatizados no incluyen una dirección De. En el pasado, cuando Microsoft 365 o Outlook.com recibían un mensaje sin una dirección From, el servicio agregaba la siguiente dirección predeterminada From: para que el mensaje fuera entregable:
 
   `From: <>`
 
@@ -124,7 +124,7 @@ Por ejemplo:
 noreply.contoso.com IN MX .
 ```
 
-Para obtener más información acerca de la configuración de registros MX, vea [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Para obtener más información acerca de cómo configurar registros MX, vea [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 Para obtener más información acerca de la publicación de un MX nulo, [vea RFC 7505](https://tools.ietf.org/html/rfc7505).
 
@@ -132,8 +132,8 @@ Para obtener más información acerca de la publicación de un MX nulo, [vea RFC
 
 Para omitir los requisitos de direcciones de origen para el correo electrónico entrante, puede usar la lista de direcciones IP permitidos (filtrado de conexiones) o las reglas de flujo de correo (también conocidas como reglas de transporte) como se describe en Crear listas de remitentes seguros en [Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-No puede invalidar los requisitos de dirección De para el correo electrónico saliente que envíe desde Microsoft 365. Además, Outlook.com no permitirá invalidaciones de ningún tipo, incluso a través de la compatibilidad.
+No puede invalidar los requisitos de dirección De para el correo electrónico saliente que envíe desde Microsoft 365. Además, Outlook.com no permitirá invalidaciones de ningún tipo, incluso a través del soporte técnico.
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Otras formas de evitar y proteger contra los delitos cibernéticos en Microsoft 365
 
-Para obtener más información sobre cómo reforzar la organización contra el phishing, el correo no deseado, las vulneraciones de datos y otras amenazas, vea [Top 10 ways to secure Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md).
+Para obtener más información sobre cómo reforzar la organización contra la suplantación de identidad (phishing), el correo no deseado, las vulneraciones de datos y otras amenazas, vea [Top 10 ways to secure Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md).

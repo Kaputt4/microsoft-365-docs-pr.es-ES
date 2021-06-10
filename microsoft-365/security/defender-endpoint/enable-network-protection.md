@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6afdcc16493839e83771ac831831fdbb121663a1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: b62659360e990467524ec632968dfea313d0b164
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841779"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861676"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -43,7 +43,7 @@ Compruebe si la protección de red se ha habilitado en un dispositivo local medi
 
 2. Elija **HKEY_LOCAL_MACHINE** en el menú lateral
 
-3. Navegue por los menús anidados hasta **Directivas**  >  **de**  >  **SOFTWARE Microsoft**  >  **Windows Defender**  >  **Policy Manager** 
+3. Navegue por los menús anidados a **SOFTWARE**  >  **Microsoft**  >  **Windows Defender**  >  **Windows Defender Protección de red de Protección contra**  >  **vulnerabilidades de seguridad**
 
 4. Selecciona **EnableNetworkProtection** para ver el estado actual de la protección de red en el dispositivo
 
@@ -120,7 +120,7 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
 
 1. Seleccione **Inicio** y escriba **regedit** para abrir **el Editor del Registro**.
 
-2. Vaya a **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
+2. Vaya a **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Seleccione **EnableNetworkProtection** y confirme el valor:
    * 0=Off

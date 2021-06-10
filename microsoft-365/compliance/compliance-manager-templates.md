@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo de Excel con formato.
+description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
 ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
 ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "51499017"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
-**En este artículo:** Comprenda **cómo funcionan las plantillas** y cómo **administrarlas desde** la página de plantillas de evaluación. Obtenga instrucciones para **crear nuevas** plantillas, **modificar** plantillas existentes, dar formato a los datos de la plantilla **con Excel** y exportar informes de **plantilla**.
+**En este artículo:** Comprenda **cómo funcionan las plantillas** y cómo **administrarlas desde** la página de plantillas de evaluación. Obtenga instrucciones para **crear nuevas** **plantillas,** modificar plantillas existentes, dar formato a los datos de la plantilla **con Excel** y exportar informes de **plantilla**.
 
 > [!IMPORTANT]
 > Las plantillas de evaluación que están disponibles para su organización dependen del contrato de licencia. [Revise los detalles](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
@@ -41,7 +41,7 @@ Una plantilla es un marco de controles para crear una evaluación en el Administ
 Las plantillas disponibles para su uso se basan en el contrato de licencia de su organización ([ver detalles de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). Hay dos categorías de plantillas: incluidas y premium.
 
 1. **Las plantillas incluidas** están disponibles para su uso como parte del contrato de licencia de su organización.
-2. **Las plantillas** Premium deben adquirirse para crear evaluaciones a partir de ellas. Una vez comprado, puede crear tantas evaluaciones de una plantilla como sea necesario. [Obtén información sobre cómo puedes comprar plantillas premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+2. **Premium las plantillas** deben adquirirse para crear evaluaciones a partir de ellas. Una vez comprado, puede crear tantas evaluaciones de una plantilla como sea necesario. [Obtén información sobre cómo puedes comprar plantillas premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 #### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 
@@ -70,7 +70,7 @@ Seleccione una plantilla de su fila para mostrar su página de detalles. Esta p�
 
 ## <a name="creating-and-modifying-templates-overview"></a>Introducción a la creación y modificación de plantillas
 
-Para modificar una plantilla existente o crear su propia plantilla nueva, usará una hoja de cálculo de Excel con un formato especial ([descargue](https://go.microsoft.com/fwlink/?linkid=2124865)un ejemplo ) para ensamblar los datos de control necesarios. Después de completar la hoja de cálculo, se importa en el Administrador de cumplimiento durante el proceso de creación o modificación de una plantilla.
+Para modificar una plantilla existente o crear su propia plantilla nueva, usará una hoja de cálculo de Excel con formato especial[(](https://go.microsoft.com/fwlink/?linkid=2124865)descargue un ejemplo ) para ensamblar los datos de control necesarios. Después de completar la hoja de cálculo, se importa en el Administrador de cumplimiento durante el proceso de creación o modificación de una plantilla.
 
 > [!NOTE]
 > La hoja de cálculo tiene un formato y un esquema específicos que deben usarse o no se importarán correctamente en el Administrador de cumplimiento. A [continuación se muestran las](#formatting-your-template-data-with-excel) instrucciones de formato.
@@ -86,8 +86,8 @@ Para crear su propia plantilla nueva (usada para crear evaluaciones personalizad
 1. Vaya a la página **plantillas de evaluación** en el Administrador de cumplimiento.
 2. Seleccione **Crear nueva plantilla**. Se abrirá un asistente para la creación de plantillas.
 3. Elija el tipo de plantilla que desea crear. En este caso, seleccione **Crear una plantilla personalizada** y, a continuación, seleccione **Siguiente**.
-4. En la **pantalla** Cargar  archivo, seleccione Examinar para buscar y cargar el archivo de Excel con formato que contiene todos los datos de plantilla necesarios (vea las instrucciones para dar el formato correcto [al archivo](#formatting-your-template-data-with-excel)).
-5. Si no hay ningún problema con el archivo, se mostrará el nombre del archivo cargado. Seleccione **Siguiente** para continuar. (Si necesita cambiar el archivo, seleccione **Cargar un archivo diferente**).
+4. En la **pantalla Upload** archivo,  seleccione Examinar para buscar y cargar el archivo Excel con formato que contiene todos los datos de plantilla necesarios (vea las instrucciones para dar el formato correcto al [archivo](#formatting-your-template-data-with-excel)).
+5. Si no hay ningún problema con el archivo, se mostrará el nombre del archivo cargado. Seleccione **Siguiente** para continuar. (Si necesita cambiar el archivo, **seleccione Upload un archivo diferente**).
     - Si hay un error en el archivo, un mensaje de error en la parte superior explica lo que está mal. Tendrás que corregir el archivo y cargarlo de nuevo. Los errores se producen si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos (consulte de nuevo las instrucciones [de formato).](#formatting-your-template-data-with-excel)  
     
 6. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Crear plantilla.** (Si necesita realizar cambios, seleccione **Atrás**.)
@@ -96,7 +96,7 @@ Para crear su propia plantilla nueva (usada para crear evaluaciones personalizad
 
 ## <a name="formatting-your-template-data-with-excel"></a>Dar formato a los datos de la plantilla con Excel
 
-La hoja de cálculo de Excel usada para crear plantillas contiene cuatro pestañas, tres de las cuales son necesarias:
+La Excel de cálculo usada para crear plantillas contiene cuatro pestañas, tres de las cuales son necesarias:
 
 1. [Plantilla](#template-tab) (obligatorio)
 2. [ControlFamily](#controlfamily-tab) (obligatorio)
@@ -107,7 +107,7 @@ Al rellenar la hoja de cálculo con datos de plantilla, la hoja de cálculo debe
 
 ##### <a name="template-tab"></a>Ficha Plantilla
 
-Se **requiere la pestaña** Plantilla. La información de esta pestaña proporciona metadatos sobre la plantilla. Hay cuatro columnas necesarias. Las columnas deben conservar el orden en la hoja de Excel como se muestra a continuación. Puede agregar su propia columna después **de** las cuatro columnas para proporcionar sus propias dimensiones. Si lo hace, asegúrese de agregarlos a la pestaña **Dimensiones** con las [instrucciones siguientes](#dimensions-tab).
+Se **requiere la pestaña** Plantilla. La información de esta pestaña proporciona metadatos sobre la plantilla. Hay cuatro columnas necesarias. Las columnas deben conservar el orden en la Excel como se muestra a continuación. Puede agregar su propia columna después **de** las cuatro columnas para proporcionar sus propias dimensiones. Si lo hace, asegúrese de agregarlos a la pestaña **Dimensiones** con las [instrucciones siguientes](#dimensions-tab).
 
 - **title:** este es el título de la plantilla, que debe ser único. No puede compartir un nombre con otra plantilla que tenga en el Administrador de cumplimiento, incluidas sus propias plantillas o una plantilla de Administrador de cumplimiento.
 
@@ -115,7 +115,7 @@ Se **requiere la pestaña** Plantilla. La información de esta pestaña proporci
 
 - **certificación:** este es el reglamento que está usando para la plantilla.
 
-- **inScopeServices:** estos son los servicios del producto que aborda esta evaluación (por ejemplo, si enumera Office 365 como el producto, Microsoft Teams podría ser un servicio en el ámbito). Puede enumerar varios servicios separados por dos puntos y comas.
+- **inScopeServices:** estos son los servicios del producto que aborda esta evaluación (por ejemplo, si aparece Office 365 como el producto, Microsoft Teams podría ser un servicio en el ámbito). Puede enumerar varios servicios separados por dos puntos y comas.
 
 > [!NOTE]
 > Los datos que inserte  en las celdas **de** producto y certificación no se pueden editar después de importar la hoja de cálculo para crear o personalizar una plantilla. Además, un grupo no puede contener dos evaluaciones que tengan la misma **combinación de producto y** certificación. Puede tener varias plantillas con la misma combinación de producto y certificación.
@@ -166,7 +166,7 @@ Puede ver las dimensiones existentes yendo a **Administración de** inquilinos y
 
 ## <a name="modify-a-template"></a>Modificar una plantilla
 
-Es posible que desee modificar una plantilla que ya ha creado, como agregar controles o agregar o quitar acciones de mejora. El proceso es similar al proceso de creación de plantillas en el que cargará un archivo de Excel con formato con los datos de la plantilla.
+Es posible que desee modificar una plantilla que ya ha creado, como agregar controles o agregar o quitar acciones de mejora. El proceso es similar al proceso de creación de plantillas en el que cargarás un archivo Excel con los datos de la plantilla.
 
 Sin embargo, hay detalles concretos que debe tener en cuenta a medida que da formato al archivo con cambios en los datos de plantilla existentes. **Te recomendamos que revises estas instrucciones cuidadosamente para asegurarte de que no sobrescriba los datos existentes que quieras conservar.**
 
@@ -175,12 +175,12 @@ Sin embargo, hay detalles concretos que debe tener en cuenta a medida que da for
 Para modificar una plantilla, siga los pasos siguientes:
 
 1. En la **página plantillas de** evaluación, seleccione la plantilla que desea modificar, que mostrará su página de detalles.
-2. Seleccione **Exportar a Excel**. Se descargará un archivo de Excel con todos los datos de la plantilla. Guarde el archivo en el equipo local.
-3. Realice los cambios de plantilla [modificando el archivo de Excel con las instrucciones siguientes](#formatting-your-excel-file-to-modify-a-template).
-4. Cuando haya terminado de realizar cambios en el archivo de Excel, guarde el archivo.
+2. Seleccione **Exportar a Excel**. Se descargará Excel archivo con todos los datos de la plantilla. Guarde el archivo en el equipo local.
+3. Realice los cambios de plantilla [modificando el archivo Excel con las instrucciones siguientes](#formatting-your-excel-file-to-modify-a-template).
+4. Cuando haya terminado de realizar cambios en el archivo Excel, guarde el archivo.
 5. En la página de detalles de la plantilla, seleccione **Modificar plantilla** para iniciar el asistente de modificación. 
-6. En la **pantalla Cargar archivo,** seleccione **Examinar** para buscar y cargar el archivo de Excel.
-7. Si no hay ningún problema con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, seleccione **Cargar un archivo diferente**).
+6. En la **Upload de archivos,** seleccione **Examinar** para buscar y cargar el Excel archivo.
+7. Si no hay ningún problema con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, **seleccione Upload otro archivo**).
     - Si hay un problema con el archivo, un mensaje de error en la parte superior explica lo que está mal. Tendrás que corregir el archivo y cargarlo de nuevo. Los errores se producen si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos.
 
 8. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Siguiente**.
@@ -191,7 +191,7 @@ La plantilla ahora incluirá los cambios realizados. Las evaluaciones que usen e
 > [!NOTE]
 > Si usa el Administrador de cumplimiento en un idioma distinto del inglés, observará que algún texto aparece en inglés al exportar una plantilla a Excel. Los títulos de las acciones (tanto las acciones de mejora como las acciones de Microsoft) deben estar en inglés para ser reconocidos por los controles. Si realiza cambios en un título de acción, asegúrese de escribirlo en inglés para que el archivo se importe correctamente.
 
-### <a name="formatting-your-excel-file-to-modify-a-template"></a>Dar formato al archivo de Excel para modificar una plantilla
+### <a name="formatting-your-excel-file-to-modify-a-template"></a>Formato del archivo Excel para modificar una plantilla
 
 Vaya a una sección a continuación para encontrar rápidamente las instrucciones que necesita:
 
@@ -256,8 +256,8 @@ Al volver a importar la hoja de cálculo a la plantilla, el control se quitará 
 
 ## <a name="export-a-template"></a>Exportar una plantilla
 
-Puede exportar un archivo de Excel que contenga todos los datos de una plantilla. Tendrás que exportar una plantilla para modificar la plantilla, ya que este será el archivo de Excel que edites y cargas en el [proceso de modificación.](#modify-a-template)
+Puede exportar un archivo Excel que contenga todos los datos de una plantilla. Tendrás que exportar una plantilla para modificar la plantilla, ya que este será el archivo Excel editar y cargar en el proceso [de modificación.](#modify-a-template)
 
-Para exportar la plantilla, vaya a la página de detalles de la plantilla y seleccione el **botón Exportar a Excel.**
+Para exportar la plantilla, vaya a la página de detalles de la plantilla y seleccione el botón Exportar **a Excel** plantilla.
 
 Tenga en cuenta que al exportar una plantilla que extendió desde una plantilla del Administrador de cumplimiento, el archivo exportado solo contendrá los atributos que agregó a la plantilla. El archivo exportado no incluirá los datos de plantilla originales proporcionados por Microsoft. Para obtener dicho informe, vea las instrucciones para [exportar un informe de evaluación](compliance-manager-assessments.md#export-an-assessment-report).

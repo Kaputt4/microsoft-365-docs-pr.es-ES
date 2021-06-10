@@ -17,7 +17,7 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Obtenga información sobre cómo usar las características de alertas en el Centro de seguridad y cumplimiento de Office 365 & para ver y administrar alertas, incluida la administración de alertas avanzadas.
+description: Obtenga información sobre cómo usar las características de alertas en el Centro de Office 365 seguridad & cumplimiento para ver y administrar alertas, incluida la administración de alertas avanzadas.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -36,7 +36,7 @@ ms.locfileid: "51205526"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-Use las características de alertas del Centro de seguridad & cumplimiento para ver y administrar alertas para su organización, incluida la administración de alertas avanzadas como parte de la información general de [Microsoft Cloud App Security.](/cloud-app-security/what-is-cloud-app-security)
+Use las características de alertas del Centro de seguridad & cumplimiento para ver y administrar alertas para su organización, incluida la administración de alertas avanzadas como parte de [Microsoft Cloud App Security información general.](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="how-to-get-to-the-alerts-features"></a>Cómo llegar a las características de alertas
 
@@ -69,5 +69,5 @@ En la tabla siguiente se describen las herramientas que están disponibles en **
 |Herramienta|Descripción|
 |---|---|
 |[Administrar alertas](../../compliance/create-activity-alerts.md)|Use alertas de actividad para enviar notificaciones por correo electrónico a usted u otros administradores cuando los usuarios realicen actividades específicas en Microsoft 365. Las alertas de actividad son similares a buscar eventos en el registro de auditoría, excepto que se le enviará un mensaje de correo electrónico cuando se produzca un evento para el que haya creado una alerta.|
-|[Administrar alertas avanzadas](/cloud-app-security/what-is-cloud-app-security)|Use la **característica** Administrar alertas avanzadas de Microsoft 365 Cloud App Security para configurar directivas que puedan alertar sobre actividades sospechosas y anómalas en Microsoft 365. Después de recibir una alerta, puede investigar situaciones potencialmente problemáticas y, si es necesario, tomar medidas para solucionar problemas de seguridad.|
+|[Administrar alertas avanzadas](/cloud-app-security/what-is-cloud-app-security)|Use la **característica Administrar alertas** avanzadas de Microsoft 365 Cloud App Security para configurar directivas que puedan alertar sobre actividades sospechosas y anómalas en Microsoft 365. Después de recibir una alerta, puede investigar situaciones potencialmente problemáticas y, si es necesario, tomar medidas para solucionar problemas de seguridad.|
 |

@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624054"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861532"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
@@ -58,7 +58,7 @@ Dado que Microsoft quiere mantener a nuestros clientes seguros de forma predeter
 Encontrará más información sobre estas invalidaciones en [Crear listas de remitentes seguros.](create-safe-sender-lists-in-office-365.md)
 
 > [!NOTE]
-> Estamos en el proceso de desaprovechar la acción Mover mensaje a carpeta de correo no deseado para un veredicto de correo electrónico de **suplantación** de identidad de confianza alta en las directivas contra correo no deseado de EOP.  Las directivas contra correo no deseado que usan esta acción para mensajes de suplantación de identidad de elevada confianza se convertirán en **mensaje en cuarentena.** La **acción Redirigir mensaje a dirección de correo** electrónico para mensajes de suplantación de identidad de elevada confianza no se ha afectado.
+> Hemos dejado en  desuso la acción Mover mensaje a carpeta de correo no deseado para un veredicto de correo electrónico de **suplantación** de identidad de confianza alta en las directivas contra correo no deseado de EOP. Las directivas contra correo no deseado que usan esta acción para mensajes de suplantación de identidad de elevada confianza se convertirán en **mensaje en cuarentena.** La **acción Redirigir mensaje a dirección de correo** electrónico para mensajes de suplantación de identidad de elevada confianza no se ha afectado.
 
 Proteger de forma predeterminada no es una configuración que se puede desactivar o desactivar, pero es la forma en que nuestro filtrado funciona de forma predeterminada para mantener mensajes potencialmente peligrosos o no deseados fuera de los buzones. El malware y los mensajes de phishing de elevada confianza deben estar en cuarentena. Solo los administradores pueden administrar mensajes que se ponen en cuarentena como malware o phishing de elevada confianza, y también pueden notificar falsos positivos a Microsoft desde allí. Para obtener más información, vea [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
 

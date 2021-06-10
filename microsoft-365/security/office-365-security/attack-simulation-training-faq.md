@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el aprendizaje en organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
+description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el aprendizaje en Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
@@ -29,7 +29,7 @@ ms.locfileid: "51205210"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  
 
-El entrenamiento de simulación de ataques [ya está disponible en general.](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291) El aprendizaje de simulación de ataques permite a las organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2 medir y administrar los riesgos de ingeniería social al permitir la creación y administración de simulaciones de suplantación de identidad (phishing) que funcionan con cargas de suplantación de identidad sin armas reales. El aprendizaje hiperespacio, impartido en asociación con la seguridad de Terranova, ayuda a mejorar el conocimiento y cambiar el comportamiento de los empleados.
+El entrenamiento de simulación de ataques [ya está disponible en general.](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291) El aprendizaje de simulación de ataques permite a Microsoft 365 E5 o Microsoft Defender para las organizaciones del Plan 2 de Office 365 medir y administrar los riesgos de ingeniería social al permitir la creación y administración de simulaciones de suplantación de identidad (phishing) con tecnología de cargas de suplantación de identidad sin armas del mundo real. El aprendizaje hiperespacio, impartido en asociación con la seguridad de Terranova, ayuda a mejorar el conocimiento y cambiar el comportamiento de los empleados.
 
 Para obtener más información sobre cómo empezar con el aprendizaje de simulación de ataques, consulta [Introducción al entrenamiento de simulación de ataques.](attack-simulation-training-get-started.md)
 
@@ -37,15 +37,15 @@ Aunque toda la experiencia de creación y programación de simulación se ha dis
 
 ## <a name="issues-with-end-user-experiences"></a>Problemas con las experiencias del usuario final
 
-### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Direcciones URL de simulación de suplantación de identidad bloqueadas por Google Safe Browsing
+### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Direcciones URL de simulación de suplantación de identidad bloqueadas por Google Caja fuerte exploración
 
-Un servicio de reputación de direcciones URL puede identificar una o varias de las direcciones URL que usa el entrenamiento de simulación de ataques como no seguras. Google Safe Browsing en Google Chrome bloquea algunas de las direcciones URL de suplantación de identidad simuladas con un mensaje de sitio **engañoso** delante. Aunque trabajamos con muchos proveedores de reputación de direcciones URL para permitir siempre nuestras direcciones URL de simulación, no siempre tenemos cobertura completa.
+Un servicio de reputación de direcciones URL puede identificar una o varias de las direcciones URL que usa el entrenamiento de simulación de ataques como no seguras. Google Caja fuerte Exploración en Google Chrome bloquea algunas de las direcciones URL de suplantación de identidad simuladas con un **mensaje de** sitio engañoso. Aunque trabajamos con muchos proveedores de reputación de direcciones URL para permitir siempre nuestras direcciones URL de simulación, no siempre tenemos cobertura completa.
 
 ![Advertencia de sitio engañoso en Google Chrome](../../media/attack-sim-chrome-deceptive-site-message.png)
 
-Tenga en cuenta que este problema no afecta a Microsoft Edge.
+Tenga en cuenta que este problema no afecta Microsoft Edge.
 
-Como parte de la fase de planeación, asegúrese de comprobar la disponibilidad de la dirección URL en los exploradores web compatibles antes de usar la dirección URL en una campaña de suplantación de identidad. Si Google Safe Browsing bloquea las direcciones URL, [sigue](https://support.google.com/chrome/a/answer/7532419) estas instrucciones de Google para permitir el acceso a las direcciones URL.
+Como parte de la fase de planeación, asegúrese de comprobar la disponibilidad de la dirección URL en los exploradores web compatibles antes de usar la dirección URL en una campaña de suplantación de identidad. Si Google bloquea las direcciones URL Caja fuerte [exploración,](https://support.google.com/chrome/a/answer/7532419) sigue estas instrucciones de Google para permitir el acceso a las direcciones URL.
 
 Consulta Introducción [al aprendizaje de simulación de ataque](attack-simulation-training-get-started.md) para obtener la lista de direcciones URL que usa actualmente el entrenamiento de simulación de ataques.
 
@@ -124,7 +124,7 @@ Los informes de simulación en el entrenamiento del simulador de ataque proporci
 - Usuarios que entregaron sus credenciales.
 - Usuarios que informaron del mensaje como suplantación de identidad.
 
-Si los mensajes que los usuarios informaron como suplantación de identidad no se capturan en los informes de simulación de simulación de ataques, puede haber una regla de flujo de correo de Exchange (también conocida como regla de transporte) que bloquee la entrega de los mensajes notificados a Microsoft. Compruebe que las reglas de flujo de correo no bloquean la entrega a las siguientes direcciones de correo electrónico:
+Si los mensajes que los usuarios han notificado como suplantación de identidad no se capturan en los informes de simulación de simulación de ataque, puede haber una regla de flujo de correo de Exchange (también conocida como regla de transporte) que bloquee la entrega de los mensajes notificados a Microsoft. Compruebe que las reglas de flujo de correo no bloquean la entrega a las siguientes direcciones de correo electrónico:
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
@@ -160,7 +160,7 @@ Dicho esto, puede crear su propia carga en el idioma que prefiera con la experie
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>P: ¿Cómo puedo cambiar a otros idiomas para mi experiencia de aprendizaje y portal de administración?
 
-A: En Microsoft 365 u Office 365, la configuración de idioma es específica y centralizada para cada cuenta de usuario. Para obtener instrucciones sobre cómo cambiar la configuración de idioma, vea Cambiar el idioma para mostrar y la zona horaria [en Microsoft 365 para empresas](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
+A: En Microsoft 365 o Office 365, la configuración de idioma es específica y centralizada para cada cuenta de usuario. Para obtener instrucciones sobre cómo cambiar la configuración de idioma, vea Cambiar el idioma de presentación y la zona horaria [en Microsoft 365 para empresas](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
 
 Tenga en cuenta que el cambio de configuración puede tardar hasta 30 minutos en sincronizarse en todos los servicios.
 

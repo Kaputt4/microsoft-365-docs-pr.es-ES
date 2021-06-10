@@ -40,7 +40,7 @@ Ahora es el momento de crear la carga útil. Introduzca el nombre del remitente,
 
 Hay disponible un editor de texto enriquecido para crear la carga. También puedes importar un correo electrónico que hayas creado previamente. A medida que cree el cuerpo del correo electrónico, aproveche las etiquetas **dinámicas** para personalizar el correo electrónico a sus destinos. Haga clic en El vínculo Suplantación de identidad **(phishing)** para agregar la dirección URL de suplantación de identidad seleccionada anteriormente en el cuerpo del mensaje.
 
-![Vínculo de phishing y etiquetas dinámicas resaltadas en la creación de cargas para Microsoft Defender para Office 365](../../media/attack-sim-preview-payload-email-body.png)
+![Vínculo de suplantación de identidad y etiquetas dinámicas resaltadas en la creación de cargas para Microsoft Defender para Office 365](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > Para ahorrar tiempo, active la opción para reemplazar todos los vínculos del mensaje **de correo electrónico por el vínculo de suplantación de identidad**.

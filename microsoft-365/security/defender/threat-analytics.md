@@ -2,7 +2,7 @@
 title: Seguimiento y respuesta a amenazas emergentes con análisis de amenazas
 ms.reviewer: ''
 description: Obtenga información sobre las amenazas emergentes y las técnicas de ataque y cómo detenerlos. Evalúe su impacto en la organización y evalúe la resistencia de la organización.
-keywords: análisis de amenazas, evaluación de riesgos, Microsoft 365 Defender, M365D, estado de mitigación, configuración segura, Microsoft Defender para Office 365, análisis de amenazas de Microsoft Defender para Office 365, análisis de amenazas de MDO, datos de análisis de amenazas MDE y MDO integrados, integración de datos de análisis de amenazas, análisis de amenazas integrado de Microsoft 365 Defender
+keywords: análisis de amenazas, evaluación de riesgos, Microsoft 365 Defender, M365D, estado de mitigación, configuración segura, Microsoft Defender para Office 365, Microsoft Defender para análisis de amenazas de Office 365, análisis de amenazas de MDO, datos de análisis de amenazas MDE y MDO integrados, integración de datos de análisis de amenazas, análisis de amenazas integrado de Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -53,7 +53,7 @@ Vea este breve vídeo para obtener más información sobre cómo los análisis d
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-Puede acceder al análisis de amenazas desde la parte superior izquierda de la barra de navegación del portal de seguridad de Microsoft 365 o desde una tarjeta de panel dedicada que muestra las principales amenazas de su organización. Obtener visibilidad de las campañas activas o en curso y saber qué hacer a través del análisis de amenazas puede ayudar a dotar a su equipo de operaciones de seguridad de decisiones fundamentadas. 
+Puedes acceder al análisis de amenazas desde la parte superior izquierda de la barra de navegación del portal de seguridad de Microsoft 365 o desde una tarjeta de panel dedicada que muestra las principales amenazas de la organización. Obtener visibilidad de las campañas activas o en curso y saber qué hacer a través del análisis de amenazas puede ayudar a dotar a su equipo de operaciones de seguridad de decisiones fundamentadas. 
 
 ![Imagen del panel de análisis de amenazas](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
@@ -87,7 +87,7 @@ _Panel de análisis de amenazas. También puedes hacer clic en el icono Buscar p
 
 Cada informe de análisis de amenazas proporciona información en varias secciones: 
 
-- [**Información general**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses) 
+- [**<mrk mtype="seg" mid="221">Información general</mrk>**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses) 
 - [**Informe de analistas**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
 - [**Incidentes relacionados**](#related-incidents-view-and-manage-related-incidents)
 - [**Activos afectados**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
@@ -131,7 +131,7 @@ _Sección incidentes relacionados de un informe de análisis de amenazas_
 ### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>Activos afectados: obtener una lista de dispositivos y buzones afectados
 Un activo se considera afectado si se ve afectado por una alerta activa y sin resolver. La **pestaña Activos afectados** enumera los siguientes tipos de activos afectados:
 - **Dispositivos afectados:** puntos de conexión que tienen alertas de Microsoft Defender para puntos de conexión sin resolver. Estas alertas suelen dispararse en avistamientos de indicadores y actividades de amenazas conocidos.
-- **Buzones afectados: buzones** que han recibido mensajes de correo electrónico que han desencadenado alertas de Microsoft Defender para Office 365. Aunque la mayoría de los mensajes que desencadenan alertas suelen estar bloqueados, las directivas de nivel de usuario o de organización pueden invalidar los filtros.
+- **Buzones afectados:** buzones que han recibido mensajes de correo electrónico que han desencadenado Microsoft Defender para Office 365 alertas. Aunque la mayoría de los mensajes que desencadenan alertas suelen estar bloqueados, las directivas de nivel de usuario o de organización pueden invalidar los filtros.
 
 ![Imagen de la sección activos afectados de un informe de análisis de amenazas](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
@@ -140,7 +140,7 @@ _Sección activos afectados de un informe de análisis de amenazas_
 ### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>Intentos de correo electrónico impedidos: ver mensajes de correo electrónico bloqueados o de amenazas no deseados
 Microsoft Defender para Office 365 normalmente bloquea los correos electrónicos con indicadores de amenazas conocidos, incluidos vínculos malintencionados o datos adjuntos. En algunos casos, los mecanismos de filtrado proactivo que comprueban el contenido sospechoso enviarán correos electrónicos de amenazas a la carpeta de correo no deseado. En cualquier caso, se reducen las posibilidades de que la amenaza inicie código de malware en el dispositivo.
 
-La **pestaña Intentos** de correo electrónico impedido enumera todos los correos electrónicos que Microsoft Defender para Office 365 ha bloqueado antes de la entrega o enviados a la carpeta de correo no deseado. 
+La **pestaña Intentos** de correo electrónico impedido enumera todos los correos electrónicos que Microsoft Defender ha bloqueado antes de la entrega o que Microsoft Defender ha enviado a la carpeta de correo no deseado Office 365. 
 
 ![Imagen de la sección intentos de correo electrónico impedidos de un informe de análisis de amenazas](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
@@ -155,7 +155,7 @@ En la **sección Mitigaciones,** revise la lista de recomendaciones específicas
   - Protección de aplicaciones potencialmente no deseadas (PUA)
   - Protección en tiempo real
  
-La información de mitigación [](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)de esta sección incorpora datos de la administración de amenazas y vulnerabilidades, que también proporciona información detallada de los distintos vínculos del informe.
+La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), que también proporciona información detallada de detalles de varios vínculos del informe.
 
 ![Imagen de la sección mitigaciones de un informe de análisis de amenazas que muestra detalles de configuración segura Imagen de la sección mitigaciones de un informe de análisis de amenazas que muestra detalles ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ de vulnerabilidad](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -164,19 +164,19 @@ _Sección Mitigaciones de un informe de análisis de amenazas_
 
 ## <a name="additional-report-details-and-limitations"></a>Detalles y limitaciones adicionales del informe
 >[!NOTE]
->Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible no solo para Microsoft Defender para Endpoint, sino también para los poseedores de licencias de Microsoft Defender para Office E5.
->Si no usa el portal de seguridad de Microsoft 365 (Microsoft 365 Defender), también puede ver los detalles del informe (sin los datos de Microsoft Defender para Office) en el portal del Centro de seguridad de Microsoft Defender (Microsoft Defender para endpoint). 
+>Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible no solo para Microsoft Defender para Endpoint, sino también para Microsoft Defender para los Office licencias de E5.
+>Si no usa el portal de seguridad de Microsoft 365 (Microsoft 365 Defender), también puede ver los detalles del informe (sin Microsoft Defender para datos Office) en el portal de Centro de seguridad de Microsoft Defender (Microsoft Defender para endpoint). 
 
-Para obtener acceso al informe de análisis de amenazas, necesita ciertos roles y permisos. Consulta Roles personalizados en el control de acceso [basado en roles para Microsoft 365 Defender](custom-roles.md) para obtener más información.
-  - Para ver alertas, incidentes o datos de activos afectados, debe tener permisos para Microsoft Defender para Office o Microsoft Defender para los datos de alertas de extremo, o ambos.
-  - Para ver los intentos de correo electrónico impedidos, debe tener permisos para los datos de búsqueda de Microsoft Defender para Office. 
-  - Para ver mitigaciones, debe tener permisos para los datos de administración de amenazas y vulnerabilidades en Microsoft Defender para endpoint.
+Para obtener acceso al informe de análisis de amenazas, necesita ciertos roles y permisos. Consulta [Roles personalizados en el control de](custom-roles.md) acceso basado en roles para obtener Microsoft 365 Defender para obtener más información.
+  - Para ver alertas, incidentes o datos de activos afectados, debe tener permisos para Microsoft Defender para los datos de alertas de Office o Microsoft Defender para puntos de conexión, o ambos.
+  - Para ver los intentos de correo electrónico impedidos, debe tener permisos para Microsoft Defender para obtener Office de búsqueda. 
+  - Para ver las mitigaciones, debe tener permisos para Administración de amenazas y vulnerabilidades datos en Microsoft Defender para endpoint.
 
 Al ver los datos de análisis de amenazas, recuerde los siguientes factores:
 - Los gráficos reflejan solo las mitigaciones a las que se realiza un seguimiento. Compruebe en el informe información general para ver mitigaciones adicionales que no se muestran en los gráficos.
 - Las mitigaciones no garantizan una resistencia completa. Las mitigaciones proporcionadas reflejan las mejores acciones posibles necesarias para mejorar la resistencia.
 - Los dispositivos se cuentan como "no disponibles" si no han transmitido datos al servicio.
-- Las estadísticas relacionadas con antivirus se basan en la configuración de Antivirus de Microsoft Defender. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
+- Las estadísticas relacionadas con el antivirus se basan en Antivirus de Microsoft Defender configuración. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md) 
