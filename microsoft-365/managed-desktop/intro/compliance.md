@@ -1,6 +1,6 @@
 ---
 title: Cumplimiento
-description: En este artículo se enumeran los estándares de cumplimiento relevantes para Microsoft Managed Desktop.
+description: En este artículo se enumeran los estándares de cumplimiento relevantes para Escritorio administrado de Microsoft.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -18,11 +18,11 @@ ms.locfileid: "50918435"
 ---
 # <a name="compliance"></a>Cumplimiento
 
-Cuando usa Microsoft Managed Desktop, Microsoft le proporciona un conjunto completo de ofertas de cumplimiento. Este esfuerzo ayuda a su organización a cumplir los distintos requisitos de cumplimiento.
+Al usar Escritorio administrado de Microsoft, Microsoft le proporciona un conjunto completo de ofertas de cumplimiento. Este esfuerzo ayuda a su organización a cumplir los distintos requisitos de cumplimiento.
 
 ## <a name="compliance-coverage"></a>Cobertura de cumplimiento
 
-Microsoft Managed Desktop ha logrado las siguientes certificaciones:
+Escritorio administrado de Microsoft ha logrado las siguientes certificaciones:
 
 - [Iso 27001 Information Security Management Standards (ISMS)](/compliance/regulatory/offering-ISO-27001)
 - [Sistema de administración de información de privacidad ISO 27701 (PIMS)](/compliance/regulatory/offering-iso-27701)
@@ -42,10 +42,10 @@ Microsoft Managed Desktop ha logrado las siguientes certificaciones:
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Informes de auditor y certificados de cumplimiento
 
-Puede encontrar información relevante, incluidos los requisitos técnicos y de control, en el Portal de confianza de servicios [(STP),](https://servicetrust.microsoft.com/)el repositorio central para dicha información sobre las ofertas del servicio en la nube de Microsoft. Puede descargar informes de auditor, certificados de cumplimiento y mucho más desde la sección [Informes de](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) auditoría del STP.
+Puede encontrar información relevante, incluidos los requisitos técnicos y de control, en el Portal de confianza de servicios [(STP),](https://servicetrust.microsoft.com/)el repositorio central para dicha información sobre Microsoft Cloud Service ofertas. Puede descargar informes de auditor, certificados de cumplimiento y mucho más desde la sección [Informes de](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) auditoría del STP.
 
 > [!NOTE]
-> Dado que Microsoft Managed Desktop se ejecuta en Azure, los documentos relevantes suelen tener nombres de archivo como "Microsoft Azure, Dynamics 365 y otros servicios en línea". En esos documentos, normalmente puede encontrar Microsoft Managed Desktop en la categoría "Microsoft Online Services" o "Supervisión y administración".
+> Dado Escritorio administrado de Microsoft se ejecuta en Azure, los documentos relevantes suelen tener nombres de archivo como "Microsoft Azure, Dynamics 365 y otros Servicios en línea". En esos documentos, normalmente puede encontrar Escritorio administrado de Microsoft en la categoría "Microsoft Online Services" o "Supervisión y administración".
 
 ## <a name="shared-responsibility"></a>Responsabilidad compartida
 

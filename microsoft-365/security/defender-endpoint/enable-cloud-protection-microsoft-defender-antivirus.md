@@ -37,7 +37,7 @@ Antivirus de Microsoft Defender varias tecnologías de detección y prevención 
 
 Puede activar o desactivar la Antivirus de Microsoft Defender de entrega en la nube de varias maneras:
 
-- Microsoft Intune
+- Microsoft Intune
 - Microsoft Endpoint Manager
 - Directiva de grupo
 - Cmdlets de PowerShell.

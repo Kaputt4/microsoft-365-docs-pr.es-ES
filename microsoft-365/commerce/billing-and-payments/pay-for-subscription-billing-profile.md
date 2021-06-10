@@ -219,7 +219,7 @@ Si tu perfil de facturación está con el respaldo de una factura, recibes un co
 
 ## <a name="can-i-pay-my-invoice-online"></a>¿Puedo pagar mi factura en línea?
 
-Si la facturación periódica está desactivada para tu perfil de facturación, puedes usar una tarjeta de crédito para pagar la factura en línea. Para realizar un pago, usa el **botón Pagar ahora** en tu factura en el Centro de administración de Microsoft 365. Para buscar la factura, vea [Ver la factura o factura](view-your-bill-or-invoice.md).
+Si la facturación periódica está desactivada para tu perfil de facturación, puedes usar una tarjeta de crédito para pagar la factura en línea. Para realizar un pago, usa el **botón Pagar ahora** en tu factura en el centro Microsoft 365 administración. Para buscar la factura, vea [Ver la factura o factura](view-your-bill-or-invoice.md).
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>¿Puedo cambiar del método de pago actual al pago mediante factura?
 

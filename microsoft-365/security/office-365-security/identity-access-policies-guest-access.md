@@ -28,7 +28,7 @@ ms.locfileid: "51615500"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Directivas para permitir el acceso de invitado y el acceso de usuarios externos B2B
 
-En este artículo se describe cómo ajustar las directivas recomendadas de acceso a identidades y dispositivos para permitir el acceso a invitados y usuarios externos que tienen una cuenta de Azure Active Directory (Azure AD) empresa a empresa (B2B). Esta guía se basa en las directivas [comunes de acceso a dispositivos y identidades.](identity-access-policies.md)
+En este artículo se describe cómo ajustar las directivas recomendadas de acceso a identidades y dispositivos para permitir el acceso a invitados y usuarios externos que tienen una cuenta de empresa a empresa (B2B) de Azure Active Directory (Azure AD). Esta guía se basa en las directivas [comunes de acceso a dispositivos y identidades.](identity-access-policies.md)
 
 Estas recomendaciones están diseñadas para aplicarse al nivel **de protección** de línea base. Pero también puede ajustar las recomendaciones en función de sus necesidades específicas de protección **confidencial** **y altamente** regulada.
 
@@ -54,7 +54,7 @@ Para incluir o excluir **invitados** y usuarios externos en directivas de acceso
 
 ## <a name="more-information"></a>Más información
 
-### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Acceso de invitados y usuarios externos con Microsoft Teams
+### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Invitados y acceso de usuario externo con Microsoft Teams
 
 Microsoft Teams define los siguientes usuarios:
 
@@ -64,7 +64,7 @@ Microsoft Teams define los siguientes usuarios:
 
 Para obtener más información, vea la [comparación entre invitados y el acceso de usuarios externos para teams](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
-Para obtener más información sobre cómo proteger las directivas de acceso a dispositivos y identidades para Teams, consulta Recomendaciones de directivas para proteger [chats,](teams-access-policies.md)grupos y archivos de Teams.
+Para obtener más información sobre cómo proteger las directivas de acceso a dispositivos y identidades para Teams, consulte [Policy recommendations for securing Teams chats, groups, and files](teams-access-policies.md).
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Requerir MFA siempre para usuarios invitados y externos
 
@@ -82,7 +82,7 @@ Solo una organización puede administrar un dispositivo. Si no excluyes a los in
 
 ## <a name="next-step"></a>Paso siguiente
 
-![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365 y Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube y Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurar directivas de acceso condicional para:
 

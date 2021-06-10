@@ -23,7 +23,7 @@ ms.locfileid: "51600012"
 
 Dentro del aprendizaje de simulación de ataque, Microsoft le proporciona información basada en los resultados de simulaciones y aprendizajes que los empleados han pasado. Estas conclusiones le ayudarán a mantenerse informado sobre el progreso de preparación de amenazas de sus empleados, así como a recomendar los siguientes pasos para preparar mejor a los empleados y su entorno para los ataques.
 
-Estamos trabajando continuamente en la expansión de los conocimientos que están disponibles para usted. El impacto del comportamiento y las acciones recomendadas están disponibles actualmente. Para empezar, dirígete a Formación de simulación de ataques en el Centro de seguridad [de Microsoft 365](https://security.microsoft.com/attacksimulator?viewid=overview).
+Estamos trabajando continuamente en la expansión de los conocimientos que están disponibles para usted. El impacto del comportamiento y las acciones recomendadas están disponibles actualmente. Para empezar, dirígete al [entrenamiento de simulación de ataque en el centro Microsoft 365 seguridad](https://security.microsoft.com/attacksimulator?viewid=overview).
 
 ## <a name="behavior-impact-on-compromise-rate"></a>Impacto del comportamiento en la tasa de compromiso
 
@@ -31,7 +31,7 @@ En la **pestaña Información general** del aprendizaje de simulación de ataque
 
 En el gráfico puede ver:
 
-- **Tasa de compromiso** predicho que refleja la tasa de compromiso promedio para las simulaciones que usan el mismo tipo de carga en otros inquilinos de Microsoft 365 que usan el aprendizaje de simulación de ataques.
+- **Tasa de compromiso predicho** que refleja la tasa de compromiso promedio de las simulaciones que usan el mismo tipo de carga en otros inquilinos de Microsoft 365 que usan el aprendizaje de simulación de ataques.
 - **La tasa de compromiso real** refleja el porcentaje de empleados que han caído en la simulación.
 
 Además, refleja la diferencia entre el número real de empleados comprometidos por el ataque y la tasa de compromiso `<number> less susceptible to phishing` predicho. Es menos probable que este número de empleados se vea comprometido por ataques similares en el futuro, mientras que indica cómo lo hacían los empleados en general en contraste con la tasa de `<percent%> better than predicted rate` compromiso predicho.

@@ -25,17 +25,17 @@ ms.locfileid: "50917996"
 
 **Se aplica a:**
 
-- [Prevención de pérdida de datos del extremo de Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
+- [Microsoft 365 Prevención de pérdida de datos de extremo (DLP)](./endpoint-dlp-learn-about.md)
 
-Puedes usar soluciones de administración de dispositivos móviles (MDM) para configurar dispositivos. Microsoft 365 Endpoint data loss prevention supports MDMs by providing OMA-URIs to create policies to manage devices.
+Puedes usar soluciones de administración de dispositivos móviles (MDM) para configurar dispositivos. Microsoft 365 La prevención de pérdida de datos de puntos de conexión admite MDM proporcionando OMA-URIs para crear directivas para administrar dispositivos.
 
 
 ## <a name="before-you-begin"></a>Antes de empezar
-Si usas Microsoft Intune, debes tener el dispositivo MDM inscrito. De lo contrario, la configuración no se aplicará correctamente. 
+Si estás usando Microsoft Intune, debes tener el dispositivo MDM inscrito. De lo contrario, la configuración no se aplicará correctamente. 
 
 Para obtener más información sobre cómo habilitar MDM con Microsoft Intune, consulta [Inscripción de dispositivos (Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
 
-## <a name="onboard-devices-using-microsoft-intune"></a>Incorporación de dispositivos con Microsoft Intune
+## <a name="onboard-devices-using-microsoft-intune"></a>Incorporar dispositivos con Microsoft Intune
 
 Siga las instrucciones de [Intune](/intune/advanced-threat-protection).
 
@@ -51,21 +51,21 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 1. Obtenga el paquete de offboarding del [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com/).
 
-2. En el panel de navegación, seleccione **Configuración**  >  **La incorporación de**  >  **dispositivos fuera del panel de navegación**.
+2. En el panel de navegación, **seleccione Configuración** Incorporación  >  **de**  >  **dispositivos offboarding**.
 
 3. En el **campo Método de** implementación, seleccione Administración de **dispositivos móviles / Microsoft Intune**.
     
-4. Haga **clic en Descargar paquete** y guarde el archivo .zip.
+4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
-5. Extraiga el contenido del archivo .zip en una ubicación compartida de solo lectura a la que puedan tener acceso los administradores de red que implementarán el paquete. Debe tener un archivo denominado *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
+5. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que puedan tener acceso los administradores de red que implementarán el paquete. Debe tener un archivo denominado *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
-6. Use la directiva de configuración personalizada de Microsoft Intune para implementar la siguiente configuración de OMA-URI compatible.
+6. Use la Microsoft Intune de configuración personalizada para implementar la siguiente configuración de OMA-URI compatible.
 
       OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding      
       Tipo de fecha: String      
       Valor: [Copiar y pegar el valor del contenido del archivo DeviceCompliance_valid_until_YYYY-MM-DD.offboarding]
 
-Para obtener más información sobre la configuración de directivas de Microsoft Intune, vea Configuración de directivas de [Windows 10 en Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
+Para obtener más información sobre Microsoft Intune configuración de directiva, [consulte Windows 10 configuración de directiva en Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
 > [!NOTE]
 > La **directiva Estado de mantenimiento para dispositivos fuera deborde** usa propiedades de solo lectura y no se puede corregir.
@@ -74,8 +74,8 @@ Para obtener más información sobre la configuración de directivas de Microsof
 > Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación de dispositivos Windows 10 con la directiva de grupo](dlp-configure-endpoints-gp.md)
-- [Incorporación de dispositivos Windows 10 con Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [Incorporación Windows 10 dispositivos con directiva de grupo](dlp-configure-endpoints-gp.md)
+- [Incorporar Windows 10 dispositivos con Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Incorporar dispositivos Windows 10 mediante un script local](dlp-configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](dlp-configure-endpoints-vdi.md)
-- [Solucionar problemas de incorporación de Protección contra amenazas avanzada de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Solucionar Protección contra amenazas avanzada de Microsoft Defender problemas de incorporación](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

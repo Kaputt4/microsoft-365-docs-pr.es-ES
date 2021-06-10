@@ -39,7 +39,7 @@ Actualmente, los requisitos de verificación para esta directiva que usan la aut
 
 ### <a name="customer-actions"></a>Acciones del cliente
 
-El banco puede requerir la verificación mediante la autenticación multifactor. Algunos ejemplos son:
+El banco puede requerir la verificación mediante la autenticación multifactor. Algunos ejemplos incluyen:
 
 - Registrarse para una nueva suscripción
 - Agregar licencias a una suscripción

@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: Use el script de PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en el centro de cumplimiento de Office 365 o Microsoft 365.
+description: Use el script de PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en el centro de cumplimiento en Office 365 o Microsoft 365.
 ms.openlocfilehash: c64cec2415819dc53f30c303c241e3902f34017d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50918066"
 ---
 # <a name="clone-a-content-search"></a>Clonar una búsqueda de contenido
 
-Crear una búsqueda de contenido en el centro de cumplimiento en Office 365 o Microsoft 365 que busque muchos buzones o sitios de SharePoint y OneDrive para la Empresa puede tardar un tiempo. La especificación de los sitios en los que se va a buscar también puede ser propenso a errores si se escribir mal una dirección URL. Para evitar estos problemas, puede usar el script Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente. Al clonar una búsqueda, se crea una nueva búsqueda (con un nombre diferente) que contiene las mismas propiedades (como las ubicaciones de contenido y la consulta de búsqueda) que la búsqueda original. A continuación, puede editar la nueva búsqueda cambiando la consulta de palabras clave o el intervalo de fechas y ejecutarla.
+Crear una búsqueda de contenido en el centro de cumplimiento en Office 365 o Microsoft 365 que busque muchos buzones o sitios SharePoint y OneDrive para la Empresa pueden tardar un tiempo. La especificación de los sitios en los que se va a buscar también puede ser propenso a errores si se escribir mal una dirección URL. Para evitar estos problemas, puede usar el script Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente. Al clonar una búsqueda, se crea una nueva búsqueda (con un nombre diferente) que contiene las mismas propiedades (como las ubicaciones de contenido y la consulta de búsqueda) que la búsqueda original. A continuación, puede editar la nueva búsqueda cambiando la consulta de palabras clave o el intervalo de fechas y ejecutarla.
   
 ¿Por qué clonar búsquedas de contenido?
   
@@ -53,7 +53,7 @@ Crear una búsqueda de contenido en el centro de cumplimiento en Office 365 o Mi
 
 El script de este paso creará una nueva búsqueda de contenido clonando una existente. Al ejecutar este script, se le pedirá la siguiente información:
   
-- **Sus credenciales de usuario:** el script usará sus credenciales para conectarse al Centro de seguridad y & cumplimiento de su organización con Windows PowerShell. Como se ha indicado anteriormente, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de & de seguridad para ejecutar el script. 
+- **Sus credenciales de usuario:** el script usará sus credenciales para conectarse al Centro de seguridad y & cumplimiento para su organización con Windows PowerShell. Como se ha indicado anteriormente, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de & de seguridad para ejecutar el script. 
     
 - **Nombre de la búsqueda existente:** se trata de la búsqueda de contenido que desea clonar. 
     

@@ -31,14 +31,14 @@ El Administrador de cumplimiento de Microsoft puede ayudarle a administrar mejor
 En este artículo se proporcionan instrucciones sobre el uso de esta herramienta con fines de privacidad de datos.
 
 >[!Note]
->Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Debe evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los Términos [de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también instrucciones [de licencias de Microsoft 365 para seguridad y cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Debe evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los Términos [de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también Microsoft 365 [de licencias para seguridad y cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
 ## <a name="getting-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
 #### <a name="what-is-compliance-manager"></a>Qué es el Administrador de cumplimiento
 
-[Compliance Manager](../compliance/compliance-manager.md) es una herramienta de evaluación de riesgos basada en flujos de trabajo en el Centro de cumplimiento de Microsoft 365 para administrar las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de su suscripción a Microsoft 365 o Azure Active Directory (Azure AD), el Administrador de cumplimiento le ayuda a administrar el cumplimiento normativo dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft.
+[Compliance Manager](../compliance/compliance-manager.md) es una herramienta de evaluación de riesgos basada en flujos de trabajo en el centro de Microsoft 365 cumplimiento normativo para administrar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de la suscripción Microsoft 365 o Azure Active Directory (Azure AD), el Administrador de cumplimiento le ayuda a administrar el cumplimiento normativo dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft.
 
 **Evaluaciones listas para usar**
 
@@ -66,7 +66,7 @@ La [guía de inicio rápido del Administrador](../compliance/compliance-manager-
     - Realizar trabajos de implementación y pruebas en acciones de mejora para completar controles en las evaluaciones
     - Comprender cómo afectan las distintas acciones a la puntuación de cumplimiento
 - [Escalado vertical: use la funcionalidad avanzada para satisfacer sus necesidades personalizadas](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Creación de evaluaciones personalizadas para realizar un seguimiento de productos que no son de Microsoft 365
+    - Creación de evaluaciones personalizadas para realizar un seguimiento de productos que no Microsoft 365 datos
     - Modificación de plantillas existentes para agregar o quitar controles
     - Configuración de pruebas automatizadas de acciones de mejora
 

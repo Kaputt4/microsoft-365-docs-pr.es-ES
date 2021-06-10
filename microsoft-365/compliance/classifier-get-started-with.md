@@ -17,7 +17,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Un clasificador de Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
+description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
 ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50918184"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se pueden entrenar
 
-Un clasificador entrenable de Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. Una vez formado, puede usarlo para identificar el elemento para la aplicación de etiquetas de confidencialidad de Office, directivas de cumplimiento de comunicaciones y directivas de etiquetas de retención.
+Un Microsoft 365 clasificador que se puede entrenar es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. Una vez formado, puede usarlo para identificar el elemento para la aplicación de etiquetas de Office de confidencialidad, directivas de cumplimiento de comunicaciones y directivas de etiquetas de retención.
 
 Crear un clasificador personalizado para entrenar primero implica darle muestras que son humanas seleccionada y coinciden positivamente con la categoría. A continuación, después de procesarlos, se prueba la capacidad de los clasificadores para predecir al darle una combinación de muestras positivas y negativas. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo mejorar el rendimiento de clasificadores personalizados y clasificadores previamente formados a lo largo de su vida a través de la readaptación.
 
@@ -42,9 +42,9 @@ Vea este vídeo para ver un resumen rápido de la creación de un clasificador q
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-### <a name="licensing-requirements"></a>Requisitos de licencia
+### <a name="licensing-requirements"></a>Requisitos de licencias
 
-Los clasificadores son una característica de cumplimiento de Microsoft 365 E5 o E5. Debe tener una de estas suscripciones para poder usarlas.
+Los clasificadores son una característica Microsoft 365 E5 o cumplimiento de E5. Debe tener una de estas suscripciones para poder usarlas.
 
 ### <a name="permissions"></a>Permisos
 
@@ -73,7 +73,7 @@ Esta escala de tiempo refleja una implementación de ejemplo de clasificadores e
 ![trainable-classifier-timeline](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> El opt-in es necesario la primera vez para clasificadores que se pueden entrenar. Microsoft 365 tarda doce días en completar una evaluación de línea base del contenido de la organización. Póngase en contacto con el administrador global para iniciar el proceso de suscripción.
+> El opt-in es necesario la primera vez para clasificadores que se pueden entrenar. El proceso tarda doce días Microsoft 365 completar una evaluación de línea base del contenido de la organización. Póngase en contacto con el administrador global para iniciar el proceso de suscripción.
 
 ### <a name="overall-workflow"></a>Flujo de trabajo general
 
@@ -95,7 +95,7 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Cómo crear un clasificador que se puede entrenar
 
-1. Recopilar entre 50 y 500 elementos de contenido de ed. Estos deben ser solo ejemplos que representen fuertemente el tipo de contenido que desea que el clasificador capacitado identifique positivamente como en la categoría de clasificación. Consulte Extensiones de nombre de archivo rastreadas predeterminadas y tipos de archivo analizadas en [SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para los tipos de archivo admitidos.
+1. Recopilar entre 50 y 500 elementos de contenido de ed. Estos deben ser solo ejemplos que representen fuertemente el tipo de contenido que desea que el clasificador capacitado identifique positivamente como en la categoría de clasificación. Consulte Default [crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
    > [!IMPORTANT]
    > Los elementos de ejemplo de seed y test no deben cifrarse y deben estar en inglés.
@@ -103,12 +103,12 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
    > [!IMPORTANT]
    > Asegúrese de que los elementos del conjunto de posiciones **son ejemplos** sólidos de la categoría. El clasificador que se puede entrenar crea inicialmente su modelo en función de con qué lo edificó. El clasificador asume que todas las muestras de ed.0 son positivos fuertes y no tiene forma de saber si una muestra es una coincidencia débil o negativa con la categoría.
 
-2. Coloque el contenido de la ed.ed en una carpeta de SharePoint Online dedicada a mantener *el contenido de ed.* Anote la dirección URL del sitio, la biblioteca y la carpeta.
+2. Coloque el contenido de la ed.ed en una carpeta SharePoint Online dedicada a mantener el *contenido de la ed.* Anote la dirección URL del sitio, la biblioteca y la carpeta.
 
    > [!TIP]
    > Si crea un nuevo sitio y una carpeta para los datos de edificadores, permita al menos una hora para que esa ubicación se indexe antes de crear el clasificador que se puede entrenar que usará los datos de ed.
 
-3. Inicie sesión en el Centro de cumplimiento de Microsoft 365 con acceso al rol de administrador de seguridad o administrador de cumplimiento y abra el Centro de cumplimiento de **Microsoft 365** o la clasificación de datos del centro de seguridad de **Microsoft 365.**  >  
+3. Inicie sesión en el Microsoft 365 de cumplimiento con acceso a roles de administrador de cumplimiento o de administración de seguridad y abra Microsoft 365 centro de cumplimiento **o** Microsoft 365 **de** datos del centro de  >  **seguridad**.
 
 4. Elija la **pestaña Clasificadores que se pueden entrenar.**
 
@@ -116,7 +116,7 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
 
 6. Rellene los valores adecuados para los campos y de la categoría de elementos que desea que identifique este `Name` `Description` clasificador entrenable.
 
-7. Elija la dirección URL del sitio, la biblioteca y la carpeta de SharePoint Online para el sitio de contenido de ed. del paso 2. Elija `Add` .
+7. Elija la dirección URL SharePoint sitio, biblioteca y carpeta en línea para el sitio de contenido de ed. del paso 2. Elija `Add` .
 
 8. Revise la configuración y elija `Create trainable classifier` .
 
@@ -127,19 +127,19 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
     > [!div class="mx-imgBorder"]
     > ![clasificador trainable listo para pruebas](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Recopile al menos 200 elementos de contenido de prueba (10 000 como máximo) para obtener mejores resultados. Estos deben ser una combinación de elementos que son positivos fuertes, negativos fuertes y algunos que son un poco menos obvios en su naturaleza. Consulte Extensiones de nombre de archivo rastreadas predeterminadas y tipos de archivo analizadas en [SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para los tipos de archivo admitidos.
+11. Recopile al menos 200 elementos de contenido de prueba (10 000 como máximo) para obtener mejores resultados. Estos deben ser una combinación de elementos que son positivos fuertes, negativos fuertes y algunos que son un poco menos obvios en su naturaleza. Consulte Default [crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
     > [!IMPORTANT]
     > Los elementos de ejemplo no deben cifrarse y deben estar en inglés.
 
-12. Coloque el contenido de prueba en una carpeta de SharePoint Online dedicada únicamente a contener *el contenido de prueba.* Anote la dirección URL del sitio, la biblioteca y la carpeta de SharePoint Online.
+12. Coloque el contenido de prueba en una carpeta SharePoint Online dedicada a mantener *el contenido de prueba solo*. Anote la dirección URL SharePoint sitio, biblioteca y carpeta en línea.
 
     > [!TIP]
     > Si crea un nuevo sitio y una carpeta para los datos de prueba, permita al menos una hora para que esa ubicación se indexe antes de crear el clasificador que se puede entrenar que usará los datos de ed.
 
 13. Elija `Add items to test` .
 
-14. Seleccione la dirección URL del sitio, biblioteca y carpeta de SharePoint Online para el sitio de contenido de prueba del paso 12. Elija `Add` .
+14. Elija la dirección URL SharePoint sitio, biblioteca y carpeta en línea para el sitio de contenido de prueba del paso 12. Elija `Add` .
 
 15. Para finalizar el asistente, elija `Done` . El clasificador que se puede entrenar llevará hasta una hora procesar los archivos de prueba.
 
@@ -162,4 +162,4 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
 
 20. Publique el clasificador.
 
-21. Una vez publicado, el clasificador estará disponible como una condición en el etiquetado automático de [Office](apply-sensitivity-label-automatically.md)con etiquetas de confidencialidad, [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) aplicar automáticamente la directiva de etiquetas de retención según una condición y en Cumplimiento de [comunicaciones.](communication-compliance.md)
+21. Una vez publicado, el clasificador estará disponible como condición en Office [autoetiquete](apply-sensitivity-label-automatically.md)con etiquetas de [confidencialidad,](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) aplicar automáticamente la directiva de etiqueta de retención según una condición y en cumplimiento de [comunicaciones.](communication-compliance.md)

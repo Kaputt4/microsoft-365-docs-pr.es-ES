@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo se usan los grupos de entrega para proteger la reputación de los servidores de correo electrónico en los centros de datos de Microsoft 365.
+description: Obtenga información sobre cómo se usan los grupos de entrega para proteger la reputación de los servidores de correo electrónico en Microsoft 365 centros de datos.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
@@ -33,12 +33,12 @@ ms.locfileid: "51599916"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Los servidores de correo electrónico de los centros de datos de Microsoft 365 podrían ser temporalmente responsables de enviar correo no deseado. Por ejemplo, un ataque de malware o correo no deseado malintencionado en una organización de correo electrónico local que envía correo saliente a través de Microsoft 365 o cuentas de Microsoft 365 comprometidas. Los atacantes también intentan evitar la detección retransmitiendo mensajes a través del reenvío de Microsoft 365.
+Los servidores de correo electrónico Microsoft 365 centros de datos podrían ser temporalmente responsables de enviar correo no deseado. Por ejemplo, un ataque de malware o correo no deseado malintencionado en una organización de correo electrónico local que envía correo saliente a través de Microsoft 365 o cuentas Microsoft 365 comprometidas. Los atacantes también intentan evitar la detección retransmitiendo mensajes a través Microsoft 365 reenvío.
 
-Estos escenarios pueden dar como resultado que la dirección IP de los servidores de centros de datos de Microsoft 365 afectados aparezcan en listas de bloqueo de terceros. Las organizaciones de correo electrónico de destino que usan estas listas de bloqueo rechazarán el correo electrónico de esos orígenes de mensajes.
+Estos escenarios pueden dar como resultado que la dirección IP de los servidores de centros de datos Microsoft 365 de datos afectados aparezcan en listas de bloqueo de terceros. Las organizaciones de correo electrónico de destino que usan estas listas de bloqueo rechazarán el correo electrónico de esos orígenes de mensajes.
 
 ## <a name="high-risk-delivery-pool"></a>Grupo de entrega de alto riesgo
-Para evitar esto, todos los mensajes salientes de los servidores de centros de datos [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) de Microsoft 365 que se determina que son correo no deseado o que superan los límites de envío del servicio o las directivas de [correo](configure-the-outbound-spam-policy.md) no deseado saliente se envían a través del grupo de entrega de alto _riesgo._
+Para evitar esto, todos los mensajes salientes de servidores de centros de datos [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) de Microsoft 365 [](configure-the-outbound-spam-policy.md) que se determina que son correo no deseado o que superan los límites de envío del servicio o las directivas de correo no deseado saliente se envían a través del grupo de entrega de alto riesgo _._
 
 El grupo de entrega de alto riesgo es un grupo de direcciones IP independiente para el correo electrónico saliente que solo se usa para enviar mensajes de "baja calidad" (por ejemplo, correo no deseado y [backscatter](backscatter-messages-and-eop.md)). El uso del grupo de entrega de alto riesgo ayuda a evitar que el grupo de direcciones IP normal para el correo saliente envíe correo no deseado. El grupo de direcciones IP normal para el correo electrónico saliente mantiene la reputación enviando mensajes de "alta calidad", lo que reduce la probabilidad de que estas direcciones IP aparezcan en listas de direcciones IP bloqueados.
 

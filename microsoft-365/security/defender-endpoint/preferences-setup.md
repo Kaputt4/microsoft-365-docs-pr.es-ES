@@ -1,5 +1,5 @@
 ---
-title: Configurar la configuración del Centro de seguridad de Microsoft Defender
+title: Configurar Centro de seguridad de Microsoft Defender configuración
 description: Use la página de configuración para configurar la configuración general, los permisos, las api y las reglas.
 keywords: configuración, configuración general, permisos, api, reglas
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "51604350"
 ---
-# <a name="configure-microsoft-defender-security-center-settings"></a>Configurar la configuración del Centro de seguridad de Microsoft Defender
+# <a name="configure-microsoft-defender-security-center-settings"></a>Configurar Centro de seguridad de Microsoft Defender configuración
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51604350"
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
-Use el **menú Configuración** para modificar la configuración general, las características avanzadas, habilitar la experiencia de vista previa, las notificaciones por correo electrónico y la característica de inteligencia de amenazas personalizada.
+Use el **menú Configuración** para modificar la configuración general, las características avanzadas, habilitar la experiencia de vista previa, las notificaciones de correo electrónico y la característica de inteligencia de amenazas personalizada.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -42,6 +42,6 @@ Tema | Descripción
 Configuración general | Modifique la configuración general que se definió anteriormente como parte del proceso de incorporación.
 Permisos | Administrar el acceso al portal mediante RBAC, así como grupos de dispositivos.
 API | Habilitar la integración de intel e SIEM de amenazas.
-Reglas | Configurar reglas de supresión y opciones de automatización.
+Rules | Configurar reglas de supresión y opciones de automatización.
 Administración de dispositivos | Dispositivos integrados y fuera de la pantalla.
 Evaluaciones de red | Elige los dispositivos que se examinarán periódicamente y se agregarán al inventario de dispositivos.

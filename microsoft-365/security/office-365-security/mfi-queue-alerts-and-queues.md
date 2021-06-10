@@ -33,7 +33,7 @@ Cuando los mensajes no se pueden enviar desde su organización a los servidores 
 - El conector está configurado incorrectamente.
 - Ha habido cambios de red o firewall en el entorno local.
 
-Microsoft 365 seguirá reintentar la entrega durante 24 horas. Después de 24 horas, los mensajes expirarán y se devolverán a los remitentes en informes de no entrega (también conocidos como NDR o mensajes de devolución).
+Microsoft 365 volverá a intentar la entrega durante 24 horas. Después de 24 horas, los mensajes expirarán y se devolverán a los remitentes en informes de no entrega (también conocidos como NDR o mensajes de devolución).
 
 Si el volumen de correo electrónico en cola supera el umbral predefinido (el valor predeterminado es 200 mensajes), la información estará disponible en las siguientes ubicaciones:
 
@@ -81,7 +81,7 @@ Incluso si el volumen de mensajes en cola no ha superado el  umbral y ha [](mail
 Si hace clic en el número de mensajes del widget, aparecerá un **control** flotante Mensajes en cola con la siguiente información:
 
 - **Número de mensajes en cola**
-- **Nombre del conector:** haga clic en el nombre del conector para administrar el conector en el Centro de administración de Exchange (EAC).
+- **Nombre del conector:** haga clic en el nombre del conector para administrar el conector en el centro Exchange administración (EAC).
 - **Hora de inicio de cola**
 - **Mensajes más antiguos expirados**
 - **Servidor de destino**
@@ -95,6 +95,6 @@ Se muestra el mismo menú desplegable después de hacer clic en **Ver cola** en 
 
 ![Los mensajes se han retrasado en los detalles de alerta en el Centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

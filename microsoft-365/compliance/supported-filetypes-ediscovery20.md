@@ -1,5 +1,5 @@
 ---
-title: Tipos de archivo compatibles en eDiscovery avanzada
+title: Tipos de archivo admitidos en Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Una lista de tipos de archivo compatibles en exhibición de documentos electrónicos avanzada de Microsoft 365, incluidos los tipos de archivo de imagen admitidos por la funcionalidad OCR en eDiscovery avanzada.
+description: Una lista de tipos de archivo admitidos en Microsoft 365 Advanced eDiscovery, incluidos los tipos de archivo de imagen admitidos por la funcionalidad OCR en Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 719a0474d45825114cf4ea3fbd19082bb8df7622
 ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
@@ -23,9 +23,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51599835"
 ---
-# <a name="supported-file-types-in-advanced-ediscovery"></a>Tipos de archivo compatibles en eDiscovery avanzada
+# <a name="supported-file-types-in-advanced-ediscovery"></a>Tipos de archivo admitidos en Advanced eDiscovery
 
-La exhibición de documentos electrónicos avanzada admite muchos tipos de archivo en muchos niveles diferentes. Los tipos de archivos de soporte técnico se describen en las tablas siguientes de este artículo. Esta lista no se ha finalizado y agregaremos nuevos tipos de archivo a medida que continuamos las pruebas de validación. Estas tablas indican si se admite un tipo de archivo para la extracción de texto (y reconocimiento óptico de caracteres o extracción de texto OCR para archivos de imagen), que se puede ver en el visor nativo y también se admite en el visor anotado en exhibición de documentos electrónicos avanzados.
+Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes. Los tipos de archivos de soporte técnico se describen en las tablas siguientes de este artículo. Esta lista no se ha finalizado y agregaremos nuevos tipos de archivo a medida que continuamos las pruebas de validación. Estas tablas indican si se admite un tipo de archivo para la extracción de texto (y reconocimiento óptico de caracteres o extracción de texto OCR para archivos de imagen), que se puede ver en el visor nativo y también se admite en el visor anotado de Advanced eDiscovery.
 
 ## <a name="archive--container"></a>Archivo /contenedor
 

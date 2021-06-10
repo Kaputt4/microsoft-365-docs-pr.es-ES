@@ -1,5 +1,5 @@
 ---
-title: Ver informes de Defender para Office 365 en el panel informes
+title: Ver Defender para obtener Office 365 informes en el panel informes
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -27,7 +27,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51599904"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Ver informes de Defender para Office 365 en el panel Informes del Centro de seguridad & cumplimiento
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Ver Defender para obtener Office 365 informes en el panel Informes del Centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,41 +35,41 @@ ms.locfileid: "51599904"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Las organizaciones de Microsoft Defender para Office 365 (por ejemplo, suscripciones a Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 1 o complementos del Plan 2 de Microsoft Defender para Office 365) contienen una variedad de informes relacionados con la seguridad. Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)puede ver estos informes en el Centro de seguridad & cumplimiento yendo al **Panel de** \> **informes**. Para ir directamente al panel Informes, abra <https://protection.office.com/insightdashboard> .
+Microsoft Defender para organizaciones Office 365 (por ejemplo, suscripciones Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 1 o Microsoft Defender para complementos del Plan 2 de Office 365) contienen una variedad de informes relacionados con la seguridad. Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)puede ver estos informes en el Centro de seguridad & cumplimiento yendo al **Panel de** \> **informes**. Para ir directamente al panel Informes, abra <https://protection.office.com/insightdashboard> .
 
 ![El panel Informes del Centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="defender-for-office-365-file-types-report"></a>Informe de tipos de archivo de Microsoft Defender para Office 365
 
-El informe tipos de archivo de **Defender para Office 365** muestra el tipo de archivos detectados como malintencionados por [datos adjuntos seguros.](safe-attachments.md)
+El **informe Defender for Office 365 file types muestra** el tipo de archivos detectados como malintencionados por Caja fuerte [Attachments](safe-attachments.md).
 
  La vista agregada del informe permite 90 días de filtrado, mientras que la vista de detalles solo permite 10 días de filtrado.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Defender para tipos de archivo de \>  **Office 365**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=ATPFileReport> .
+Para ver el informe, abra el Centro de  [seguridad & cumplimiento](https://protection.office.com), vaya al Panel de informes y seleccione Defender para Office 365 tipos \>  **de archivo**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=ATPFileReport> .
 
-![Widget Tipos de archivo de Defender para Office 365 en el panel Informes](../../media/atp-file-types-report-widget.png)
+![Widget Defender para Office 365 tipos de archivo en el panel Informes](../../media/atp-file-types-report-widget.png)
 
 > [!NOTE]
-> La información de este informe también está disponible en el informe de eliminación de mensajes de [Defender para Office 365](#defender-for-office-365-message-disposition-report).
+> La información de este informe también está disponible en el [informe Defender for Office 365 message disposition](#defender-for-office-365-message-disposition-report).
 
-### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Vista de informe para el informe de tipos de archivo de Defender para Office 365
+### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Vista informe para el informe defender para Office 365 tipos de archivo
 
-Las vistas siguientes están disponibles:
+Están disponibles las siguientes vistas:
 
 - **Ver datos por: Archivo:** El gráfico contiene la siguiente información:
 
-  - **Datos adjuntos malintencionados de Excel**
+  - **Datos adjuntos Excel malintencionados**
   - **Datos adjuntos de Flash malintencionados**
   - **Datos adjuntos de PDF malintencionados**
-  - **Datos adjuntos malintencionados de PowerPoint**
+  - **Datos adjuntos PowerPoint malintencionados**
   - **Direcciones URL malintencionadas**
   - **Datos adjuntos de Word malintencionados**
   - **Datos adjuntos ejecutables malintencionados**
   - **Otros**
 
-  Cuando mantiene el mouse sobre un día determinado (punto de datos), puede [](safe-attachments.md) ver el desglose de los tipos de archivos malintencionados detectados por datos adjuntos seguros y protección [contra malware en EOP](anti-malware-protection.md).
+  Cuando mantiene el mouse sobre un día determinado (punto de datos), puede ver el desglose de los tipos de archivos malintencionados detectados por [Caja fuerte Attachments](safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
 
-  ![Vista de archivos en el informe Tipos de archivo de Defender para Office 365](../../media/atp-file-types-report-file-view.png)
+  ![Vista de archivos en el informe Defender for Office 365 file types](../../media/atp-file-types-report-file-view.png)
 
   Si hace clic **en Filtros,** puede modificar el informe con los filtros siguientes:
 
@@ -81,16 +81,16 @@ Las vistas siguientes están disponibles:
   - **Bloquear acceso**
   - **Mensajes reemplazados**
   - **Mensajes supervisados**
-  - **Reemplazado por entrega dinámica de correo** electrónico: para obtener más información, vea Dynamic Delivery in Safe Attachments [policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Reemplazado por entrega dinámica de** correo electrónico: para obtener más información, vea Dynamic Delivery in Caja fuerte Attachments [policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
-  ![Vista de mensajes en el informe tipos de archivo de Defender para Office 365](../../media/atp-file-types-report-message-view.png)
+  ![Vista de mensajes en el informe Defender for Office 365 file types](../../media/atp-file-types-report-message-view.png)
 
   Si hace clic **en Filtros,** puede modificar el informe con los filtros siguientes:
 
   - **Fecha de inicio** y **fecha de finalización**
   - Los mismos valores de disposición de mensajes que están disponibles en el gráfico y el valor **de mensajes pasados** adicional.
 
-### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Vista de tabla de detalles para el informe de tipos de archivo de Defender para Office 365
+### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Vista de tabla Detalles del informe Defender para Office 365 tipos de archivo
 
 Si hace clic **en Ver tabla de detalles,** el informe proporciona una vista casi en tiempo real de todos los clics que ocurren en la organización durante los últimos 10 días. La información que se muestra depende del gráfico que estaba viendo:
 
@@ -114,7 +114,7 @@ Si hace clic **en Ver tabla de detalles,** el informe proporciona una vista casi
   - **Dirección del remitente**
   - **Id. de mensaje**
   - **Archivo**
-  - **Subject**
+  - **Asunto**
 
   Si hace clic **en Filtros,** puede modificar los resultados con los filtros siguientes:
 
@@ -127,25 +127,25 @@ Para volver a la vista informes, haga clic **en Ver informe**.
 
 El **informe de eliminación de** mensajes atp muestra las acciones que se realizaron para los mensajes de correo electrónico que se detectaron como con contenido malintencionado.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento](https://protection.office.com), vaya al Panel de informes y seleccione Defender para \>  Office **365 eliminación de mensajes**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=ATPMessageReport> .
+Para ver el informe, abra el Centro de  [seguridad & cumplimiento](https://protection.office.com), vaya al Panel de informes y seleccione Defender para obtener Office 365 \>  **de mensajes**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=ATPMessageReport> .
 
-![Widget de disposición de mensajes de Defender para Office 365 en el panel informes](../../media/atp-message-disposition-report-widget.png)
+![Defender para Office 365 de eliminación de mensajes en el panel Informes](../../media/atp-message-disposition-report-widget.png)
 
 > [!NOTE]
-> La información de este informe también está disponible en el informe Tipos de archivo de [Defender para Office 365](#defender-for-office-365-file-types-report).
+> La información de este informe también está disponible en el informe [Defender for Office 365 file types](#defender-for-office-365-file-types-report).
 
-### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Vista Informe para el informe de eliminación de mensajes de Defender para Office 365
+### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Vista De informe para el informe de eliminación de Office 365 defender
 
-Las vistas siguientes están disponibles:
+Están disponibles las siguientes vistas:
 
 - **Ver datos por: Mensaje:** El gráfico contiene la siguiente información:
 
   - **Bloquear acceso**
   - **Mensajes reemplazados**
   - **Mensajes supervisados**
-  - **Reemplazado por entrega dinámica de correo** electrónico: para obtener más información, vea Dynamic Delivery in Safe Attachments [policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Reemplazado por entrega dinámica de** correo electrónico: para obtener más información, vea Dynamic Delivery in Caja fuerte Attachments [policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
-  ![Vista de mensajes en el informe tipos de archivo de Defender para Office 365](../../media/atp-file-types-report-message-view.png)
+  ![Vista de mensajes en el informe Defender for Office 365 file types](../../media/atp-file-types-report-message-view.png)
 
   Si hace clic **en Filtros,** puede modificar el informe con los filtros siguientes:
 
@@ -154,25 +154,25 @@ Las vistas siguientes están disponibles:
 
 - **Ver datos por: Archivo:** El gráfico contiene la siguiente información:
 
-  - **Datos adjuntos malintencionados de Excel**
+  - **Datos adjuntos Excel malintencionados**
   - **Datos adjuntos de Flash malintencionados**
   - **Datos adjuntos de PDF malintencionados**
-  - **Datos adjuntos malintencionados de PowerPoint**
+  - **Datos adjuntos PowerPoint malintencionados**
   - **Direcciones URL malintencionadas**
   - **Datos adjuntos de Word malintencionados**
   - **Datos adjuntos ejecutables malintencionados**
   - **Otros**
 
-  Cuando mantiene el mouse sobre un día determinado (punto de datos), puede [](safe-attachments.md) ver el desglose de los tipos de archivos malintencionados detectados por datos adjuntos seguros y protección [contra malware en EOP](anti-malware-protection.md).
+  Cuando mantiene el mouse sobre un día determinado (punto de datos), puede ver el desglose de los tipos de archivos malintencionados detectados por [Caja fuerte Attachments](safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
 
-  ![Vista de archivos en el informe Tipos de archivo de Defender para Office 365](../../media/atp-file-types-report-file-view.png)
+  ![Vista de archivos en el informe Defender for Office 365 file types](../../media/atp-file-types-report-file-view.png)
 
   Si hace clic **en Filtros,** puede modificar el informe con los filtros siguientes:
 
   - **Fecha de inicio** y **fecha de finalización**
   - Los mismos valores de tipo de archivo que están visibles en el gráfico.
 
-### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Vista de tabla detalles del informe de eliminación de mensajes de Defender para Office 365
+### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Vista de tabla De detalles para el informe de Office 365 de eliminación de mensajes
 
 Si hace clic **en Ver tabla de detalles,** el informe proporciona una vista casi en tiempo real de todos los clics que ocurren en la organización durante los últimos 10 días. La información que se muestra depende del gráfico que estaba viendo:
 
@@ -183,7 +183,7 @@ Si hace clic **en Ver tabla de detalles,** el informe proporciona una vista casi
   - **Dirección del remitente**
   - **Id. de mensaje**
   - **Archivo**
-  - **Subject**
+  - **Asunto**
 
   Si hace clic **en Filtros,** puede modificar los resultados con los filtros siguientes:
 
@@ -262,11 +262,11 @@ La tabla de detalles contiene la misma información en cada pestaña.
 
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
-El **informe de** estado de protección contra amenazas es una vista única que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por Exchange Online [Protection](exchange-online-protection-overview.md) (EOP) y Microsoft Defender para Office 365. Para obtener más información, vea [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
+El **informe de estado** de protección contra amenazas es una única vista que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) y Microsoft Defender para Office 365. Para obtener más información, vea [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
 
 ## <a name="url-threat-protection-report"></a>Informe de protección contra amenazas de url
 
-El **informe de protección contra** amenazas url proporciona vistas de resumen y tendencias para las amenazas detectadas y las acciones realizadas en los clics de dirección URL como parte de [vínculos seguros.](safe-links.md) Este informe no tendrá los datos de clic de los usuarios en los que la directiva vínculos seguros aplicada tenga seleccionada la opción No realizar un seguimiento de los **clics del** usuario.
+El **informe de protección contra** amenazas url proporciona vistas de resumen y tendencias para las amenazas detectadas y las acciones realizadas en los clics de dirección URL como parte de Caja fuerte [vínculos](safe-links.md). Este informe no tendrá los datos de clic de los usuarios en los que la directiva de vínculos de Caja fuerte tiene seleccionada la opción No realizar seguimiento de los **clics del** usuario.
 
 Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Informe de \>  protección de **direcciones URL**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
@@ -285,7 +285,7 @@ El **informe de protección contra** amenazas de dirección URL tiene dos vistas
   - **Bloqueado y hecho clic (el** usuario ha elegido continuar navegando a la dirección URL)
   - **Se ha hecho clic durante el examen** (el usuario ha hecho clic en el vínculo antes de completar el examen)
 
-  Un clic indica que el usuario ha hecho clic en la página de bloqueo al sitio web malintencionado (los administradores pueden deshabilitar el clic en las directivas de vínculos seguros).
+  Un clic indica que el usuario ha hecho clic a través de la página de bloqueo en el sitio web malintencionado (los administradores pueden deshabilitar el clic en las directivas de vínculos Caja fuerte usuario).
 
   Si hace clic **en Filtros,** puede modificar el informe con los filtros siguientes:
 
@@ -294,7 +294,7 @@ El **informe de protección contra** amenazas de dirección URL tiene dos vistas
 
   ![Vista de acción de protección de clic de url en el informe de protección contra amenazas de url](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **Clic en dirección URL por aplicación:** muestra el número de clics de dirección URL de las aplicaciones que admiten vínculos seguros:
+- **Clic en dirección URL por** aplicación: muestra el número de clics de dirección URL de las aplicaciones que admiten Caja fuerte vínculos:
 
   - **Cliente de correo electrónico**
   - **PowerPoint**
@@ -318,7 +318,7 @@ Si hace clic **en Ver** tabla de detalles, el informe proporciona una vista casi
 - **Usuario**
 - **URL**
 - **Action**
-- **App**
+- **Aplicación**
 
 Si hace clic **en Filtros** en la vista tabla de detalles, puede filtrar  por  los mismos criterios que en la vista de informe y también por dominios o destinatarios separados por comas.
 
@@ -335,15 +335,15 @@ Además de los informes descritos en este artículo, hay otros informes disponib
 
 |Informe|Tema|
 |---|---|
-|**Explorer** (Microsoft Defender para Office 365 Plan 2) o detecciones en tiempo **real** (Microsoft Defender para Office 365 Plan 1)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
+|**Explorer** (Microsoft Defender para Office 365 plan 2) o detecciones en tiempo **real** (Microsoft Defender para Office 365 Plan 1)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
 |**Informes de seguridad de** correo electrónico, como el informe de remitentes y destinatarios principales, el informe de correo suplantación de identidad y el informe de detecciones de correo no deseado.|[Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)|
 |**Informes de flujo de** correo, como el informe de reenvío, el informe de estado de flujo de correo y el informe Principales remitentes y destinatarios.|[Ver informes de flujo de correo en el Centro de seguridad & cumplimiento](view-mail-flow-reports.md)|
-|**Seguimiento de direcciones URL para vínculos seguros** (solo PowerShell). El resultado de este cmdlet muestra los resultados de las acciones vínculos seguros de los últimos siete días.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
-|**Resultados de tráfico de correo para EOP y Microsoft Defender para Office 365** (solo PowerShell). El resultado de este cmdlet contiene información sobre Dominio, Fecha, Tipo de evento, Dirección, Acción y Recuento de mensajes.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
-|**Informes de detalles de correo para detecciones de EOP y Defender para Office 365** (solo PowerShell). El resultado de este cmdlet contiene detalles sobre archivos o direcciones URL malintencionados, intentos de suplantación, suplantación y otras amenazas potenciales en el correo electrónico o los archivos.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|**Seguimiento de direcciones URL para Caja fuerte (solo** PowerShell). El resultado de este cmdlet muestra los resultados de las acciones Caja fuerte links en los últimos siete días.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
+|**Resultados de tráfico de correo para EOP** y Microsoft Defender para Office 365 (solo PowerShell). El resultado de este cmdlet contiene información sobre Dominio, Fecha, Tipo de evento, Dirección, Acción y Recuento de mensajes.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
+|**Informes de detalles de correo para EOP y Defender para Office 365 (solo** PowerShell). El resultado de este cmdlet contiene detalles sobre archivos o direcciones URL malintencionados, intentos de suplantación, suplantación y otras amenazas potenciales en el correo electrónico o los archivos.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>¿Qué permisos se necesitan para ver los informes de Defender para Office 365?
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>¿Qué permisos se necesitan para ver el Defender para Office 365 informes?
 
 Para ver y usar los informes descritos en este artículo, debe ser miembro de uno de los siguientes grupos de roles en el Centro de seguridad & cumplimiento:
 
@@ -352,16 +352,16 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 - **Lector de seguridad**
 - **Lector global**
 
-Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-**Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft  365 proporciona a los usuarios los permisos necesarios en el Centro de seguridad & cumplimiento y permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a  los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento de & y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
-Si no ve datos en los informes de Defender para Office 365, compruebe que las directivas están configuradas correctamente. Su organización debe tener [](set-up-safe-attachments-policies.md) [definidas directivas de vínculos](set-up-safe-links-policies.md) seguros y directivas de datos adjuntos seguros para que la protección de Defender para Office 365 esté en su lugar. Vea también Protección contra correo no deseado y [antimalware.](anti-spam-and-anti-malware-protection.md)
+Si no ve datos en defender para los informes Office 365, compruebe que las directivas están configuradas correctamente. Su organización debe tener definidas [Caja fuerte de](set-up-safe-links-policies.md) vínculos y Caja fuerte [de](set-up-safe-attachments-policies.md) datos adjuntos para que Defender Office 365 protección esté en su lugar. Vea también Protección contra correo no deseado y [antimalware.](anti-spam-and-anti-malware-protection.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
 
-[Permisos de roles (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Permisos de función (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

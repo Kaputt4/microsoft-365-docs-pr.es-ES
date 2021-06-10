@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Los usuarios deben tener asignados permisos en el Centro de seguridad y cumplimiento de Microsoft 365 & para poder administrar cualquiera de sus características de seguridad o cumplimiento.
+description: Los usuarios deben tener asignados permisos en el Centro de Microsoft 365 seguridad & cumplimiento para poder administrar cualquiera de sus características de seguridad o cumplimiento.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -40,13 +40,13 @@ Los usuarios deben tener asignados permisos en el Centro de seguridad & cumplimi
 
 Para obtener más información acerca de los diferentes permisos que puede conceder a los usuarios en el Centro de seguridad & y cumplimiento, consulte Permisos en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Debe ser administrador global o miembro del grupo de roles OrganizationManagement en el Centro de seguridad & cumplimiento, para completar los pasos de este artículo.
 
-- Los grupos de roles del Centro de & seguridad pueden tener nombres similares a los grupos de roles en Exchange Online, pero no son los mismos.
+- Los grupos de roles del Centro de seguridad & cumplimiento pueden tener nombres similares a los grupos de roles de Exchange Online, pero no son los mismos.
 
-- Las pertenencias a grupos de roles no se comparten entre Exchange Online y el Centro de & seguridad.
+- Las pertenencias a grupos de roles no se comparten entre Exchange Online y el Centro de seguridad & cumplimiento.
 
 - Los asociados de permisos de acceso delegados (DAP) con permisos Administrar en nombre de (AOBO) no pueden acceder al Centro de seguridad & cumplimiento.
 
@@ -64,7 +64,7 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usar PowerShell & centro de seguridad y cumplimiento para dar a otro usuario acceso al Centro de seguridad & cumplimiento
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Utilice la siguiente sintaxis:
 
@@ -82,7 +82,7 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 Para obtener información detallada acerca de los problemas de sintaxis y parámetros, [vea Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que ha concedido acceso correctamente al Centro de seguridad y & cumplimiento, siga uno de estos pasos:
 

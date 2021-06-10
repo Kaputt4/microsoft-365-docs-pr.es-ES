@@ -34,7 +34,7 @@ La **página Notificaciones de facturación** le permite administrar quién reci
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global para realizar los pasos descritos en este artículo. Los administradores de facturación pueden realizar algunos de estos cambios, como se indica en las secciones siguientes. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global para realizar los pasos descritos en este artículo. Los administradores de facturación pueden realizar algunos de estos cambios, como se indica en las secciones siguientes. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="change-the-language-you-receive-email-in"></a>Cambiar el idioma en el que recibe el correo electrónico
 
