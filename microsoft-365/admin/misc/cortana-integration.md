@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Los usuarios con cuentas profesionales o educativas válidas pueden obtener Cortana en experiencias Microsoft 365 que cumplan Office 365 promesas de seguridad de nivel empresarial.
-ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e4b934a8991837637869074d43df89e70b09924d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635803"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866624"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -89,19 +89,17 @@ El asistente de voz de Cortana en la aplicación móvil de Teams y en dispositiv
 
 **Control del administrador**
 
-El asistente de voz de Cortana estará habilitado de manera predeterminada para los espacios empresariales. Los administradores pueden controlar qué miembros de su espacio empresarial pueden usar el asistente de voz de Cortana en Teams mediante una directiva (TeamsCortanaPolicy). Esta directiva se puede establecer a nivel de cuenta del usuario o a nivel del espacio empresarial. Además, los administradores pueden usar el campo CortanaVoiceInvocationMode de este control de directiva para determinar si Cortana está deshabilitada, habilitada con activación solo con botón de comando o habilitada con activación también mediante una palabra (aplicable a dispositivos que lo admitan, como la pantalla de Microsoft Teams). Tenga en cuenta que, en el momento de lanzamiento inicial para usuarios de Microsoft 365 Enterprise en los Estados Unidos en inglés, la aplicación móvil de Teams no será compatible con la activación mediante una palabra, pero será compatible en el futuro.
+El asistente de voz de Cortana estará habilitado de manera predeterminada para los espacios empresariales. Los administradores pueden controlar qué miembros de su espacio empresarial pueden usar el asistente de voz de Cortana en Teams mediante una directiva (TeamsCortanaPolicy). Esta directiva se puede establecer a nivel de cuenta del usuario o a nivel del espacio empresarial. Además, los administradores pueden usar el campo CortanaVoiceInvocationMode de este control de directiva para determinar si Cortana está deshabilitada, habilitada con activación solo con botón de comando o habilitada con activación también mediante una palabra (aplicable a dispositivos que lo admitan, como la pantalla de Microsoft Teams). 
 
 **Control de usuario**
 
-Los usuarios individuales pueden probar el asistente de voz de Cortana en la aplicación móvil de Teams si hacen clic en el botón del micrófono. Para probar el asistente de voz de Cortana en dispositivos de pantalla de Microsoft Teams, pueden decir &#8220;Cortana.&#8221; También pueden controlar si Cortana está habilitada en Teams para su dispositivo mediante una configuración en la aplicación móvil de Teams o en la pantalla de Microsoft Teams: 
+Los usuarios individuales pueden probar el asistente de voz de Cortana en la aplicación móvil de Teams si hacen clic en el botón del micrófono. Pueden probar la asistencia de voz de Cortana en dispositivos de presentación Microsoft Teams simplemente diciendo &#8220;Cortana.&#8221; También pueden controlar si Cortana responde a la invocación de la palabra de activación. 
 
-1. Abra la aplicación móvil de Teams o vaya a la pantalla del entorno (inicio) en la pantalla de Microsoft Teams.
+1.  Abrir Teams móvil
+2.  Vaya a Configuración
+3.  Seleccionar Cortana
+4.  Cambiar la alternancia activación de voz
 
-2. En la aplicación móvil de Teams, vaya a **Configuración**. En la pantalla de Microsoft Teams, seleccione el avatar de usuario y seleccione Configuración. Si Cortana está habilitada, diga &#8220;Cortana, ir a Configuración.&#8221;
-
-3. Seleccione **Cortana**.
-
-4. Cambie el botón de alternancia entre **Activado** o **Desactivado**, según si quiere tener el asistente de voz de Cortana en el dispositivo.
 
 [Obtener más información sobre el asistente de voz de Cortana en Teams](/microsoftteams/cortana-in-teams)
 

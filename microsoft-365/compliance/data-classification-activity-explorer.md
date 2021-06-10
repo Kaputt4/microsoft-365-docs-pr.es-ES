@@ -114,5 +114,5 @@ El valor de comprender qué acciones se están haciendo con el contenido etiquet
 
 - [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Más información sobre las directivas y las etiquetas de retención](retention.md)
-- [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md).
-- [Más información sobre la clasificación de datos](data-classification-overview.md)
+- [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md)
+- [Obtenga información sobre la clasificación de datos.](data-classification-overview.md)

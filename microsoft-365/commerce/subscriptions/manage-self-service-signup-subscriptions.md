@@ -34,7 +34,7 @@ Hay un número limitado de suscripciones de registro de autoservicio gratuitas d
 
 ## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Ver una lista de suscripciones de registro de autoservicio
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Libre**. Se muestra una lista de todas las suscripciones de registro de autoservicio.
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>¿En qué se diferencian estas suscripciones de las suscripciones de compra sin servicio?
@@ -50,7 +50,7 @@ Use el cmdlet [**Set-MsolCompanySettings**](/powershell/module/msonline/set-msol
 > [!IMPORTANT]
 > Al eliminar una suscripción de registro de autoservicio, se bloquea a todos los usuarios el acceso a sus datos y correo electrónico y se eliminan todos los datos y el correo electrónico.
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Libre**.
 3. Seleccione la suscripción de registro de autoservicio que desea eliminar. 
 4. En la página detalles de la suscripción, en la sección **Suscripciones y configuración de pago,** seleccione Eliminar **suscripción**.

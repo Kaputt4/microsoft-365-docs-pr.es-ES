@@ -74,7 +74,7 @@ Microsoft 365 viene con cinco clasificadores previamente formados:
 - **Código fuente:** detecta elementos que contienen un conjunto de instrucciones y instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub
     - ActionScript
     - C
-    - C #
+    - C#
     - C++
     - Clojure
     - CoffeeScript
@@ -133,7 +133,7 @@ Puede ayudar a mejorar la precisión de todos los clasificadores personalizados 
 
 ![Flujo de trabajo de reciclaje de clasificadores](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

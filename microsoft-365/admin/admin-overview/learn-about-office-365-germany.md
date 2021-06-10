@@ -61,7 +61,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
     
 - Microsoft 365 Vídeo
     
-- Project para la web
+- Project para la Web
     
 - Visio para la web
     
@@ -73,7 +73,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
     
 - Exhibición avanzada de documentos electrónicos
     
-- Microsoft Defender para Office 365
+- Microsoft Defender para Office 365
     
 - Inteligencia de amenazas de Office 365
     

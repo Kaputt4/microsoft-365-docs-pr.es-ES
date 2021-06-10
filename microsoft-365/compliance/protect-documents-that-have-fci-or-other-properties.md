@@ -152,7 +152,7 @@ Para obtener más información, vea [Solicitar manualmente el rastreo y una nuev
 
 ## <a name="more-information"></a>Más información
 
-- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
+- [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
 
 - [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
 

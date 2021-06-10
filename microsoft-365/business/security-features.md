@@ -63,7 +63,7 @@ Puedes administrar muchas de las Microsoft 365 Empresa Premium de seguridad en e
 
 Las características avanzadas de Microsoft 365 Empresa Premium están disponibles para ayudarle a proteger su empresa frente a amenazas cibernéticos y proteger la información confidencial.
   
-- **[Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md)**
+- **[Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md)**
     
     Microsoft Defender para Office 365 ayuda a proteger su empresa contra ataques sofisticados de suplantación de identidad (phishing) y ransomware diseñados para poner en peligro la información de los empleados o clientes. Entre las características se incluyen:
     

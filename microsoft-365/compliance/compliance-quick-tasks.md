@@ -84,7 +84,7 @@ Cuando el contenido está sujeto a una directiva de retención, las personas pue
 
 Puede establecer rápidamente una directiva de retención para varias ubicaciones del entorno de Microsoft 365, como correo Exchange, sitios de SharePoint, cuentas de OneDrive y grupos Microsoft 365. No hay límites en el número de buzones o sitios que esta directiva puede incluir automáticamente. Pero si necesita ser más selectivo, puede hacerlo configurando una directiva de retención para ubicaciones específicas e incluir o excluir sitios o usuarios.
 
-Para obtener instrucciones paso a paso para configurar una directiva de retención, vea [Create and configure retention policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
+Para obtener instrucciones paso a paso para configurar una directiva de retención, vea [Create and configure retention policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Tarea 7: Configurar la información confidencial y las directivas de lenguaje ofensivo
 
@@ -146,7 +146,7 @@ Defina tipos de información confidencial en función del patrón contenido en l
 
 Para obtener instrucciones paso a paso para definir tipos de información confidencial personalizados, vea [Create a custom sensitive information type in the Security & Compliance Center](./create-a-custom-sensitive-information-type.md).
 
-### <a name="prevent-data-loss"></a>Prevenir la pérdida de datos
+### <a name="prevent-data-loss"></a>Prevención de la pérdida de datos
 
 [Las directivas de prevención](dlp-learn-about-dlp.md) de pérdida de datos (DLP) le permiten identificar, supervisar y proteger automáticamente la información confidencial en toda Microsoft 365 organización. Use directivas DLP para identificar elementos confidenciales en servicios Microsoft, evitar el uso compartido accidental de elementos confidenciales y ayudar a los usuarios a aprender a cumplir sin interrumpir su flujo de trabajo.
 

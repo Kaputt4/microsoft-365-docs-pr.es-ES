@@ -19,18 +19,16 @@ ms.custom:
 search.appverid: MET150
 description: Aprende a activar y administrar aplicaciones de terceros en Microsoft 365 de administración.
 ms.date: 04/15/2021
-ms.openlocfilehash: 5a486dba03fbd34fe2e409bba8ba41c1f9873141
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: f061137270416d13db1f1cd32aa17f50f2f8c5d2
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331627"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866612"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administrar suscripciones de aplicaciones de terceros para su organización
 
 Puedes administrar las licencias y la facturación de aplicaciones de terceros en el nuevo centro Microsoft 365 administración. Las características actualizadas incluyen una administración de suscripción mejorada, un acceso mejorado a la información de facturación y una mayor flexibilidad para administrar facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como servicio que los clientes compran directamente o a un proveedor de terceros.
-
-Puedes administrar las licencias y la facturación de aplicaciones de terceros en Microsoft 365 centro de administración con el modo de vista previa activado. Las características actualizadas incluyen una administración de suscripción mejorada, un acceso mejorado a la información de facturación y una mayor flexibilidad para administrar facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como servicio que los clientes compran directamente o a un proveedor de terceros.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Cómo obtener aplicaciones de software como servicio
 

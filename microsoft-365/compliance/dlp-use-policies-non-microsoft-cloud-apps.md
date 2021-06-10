@@ -83,7 +83,7 @@ Al crear una regla en la directiva DLP, puedes seleccionar una acción para apli
 
 Para obtener información sobre cómo crear y configurar directivas DLP, vea [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md?view=o365-worldwide).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear pruebas y ajustar una directiva DLP](./create-test-tune-dlp-policy.md?view=o365-worldwide)
 - [Introducción a la directiva predeterminada de DLP](./get-started-with-the-default-dlp-policy.md?view=o365-worldwide)

@@ -186,7 +186,7 @@ Además, puede desactivar cada regla individualmente editando la directiva  y, a
   
 ## <a name="more-information"></a>Más información
 
-- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
+- [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
 - [Enviar notificaciones y mostrar sugerencias de directivas para directivas DLP](use-notifications-and-policy-tips.md)
 - [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
