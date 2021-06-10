@@ -64,7 +64,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 Nombre | Tipo | Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | string | application/json. **Necesario**.
+Content-Type | cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
@@ -78,7 +78,7 @@ Indicadores | Indicador<[lista](ti-indicator.md)> | Lista de [indicadores](ti-in
 - Si se realiza correctamente, este método devuelve 200: código de respuesta aceptar con una lista de resultados de importación por indicador, vea el ejemplo siguiente.
 - Si no se realiza correctamente: este método devuelve 400 - Solicitud mala. La solicitud incorrecta suele indicar un cuerpo incorrecto.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

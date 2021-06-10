@@ -25,19 +25,19 @@ Después de definir [directivas](information-barriers-policies.md)de barrera de 
 
 ## <a name="what-do-you-want-to-do"></a>¿Qué quiere hacer?
 
-|**Acción**|**Descripción**|
+|**Action**|**Descripción**|
 |:---------|:--------------|
-| [Editar atributos de cuenta de usuario](#edit-user-account-attributes) | Rellene atributos en Azure Active Directory que se pueden usar para definir segmentos.<br/>Edite los atributos de cuenta de usuario cuando los usuarios no se incluyan en los segmentos en los que deben estar, para cambiar los segmentos en los que se encuentran los usuarios o para definir segmentos con atributos diferentes. |
+| [Editar atributos de cuenta de usuario](#edit-user-account-attributes) | Rellene los atributos de Azure Active Directory que se pueden usar para definir segmentos.<br/>Editar atributos de cuenta de usuario cuando los usuarios no están incluidos en los segmentos en los que deberían estar, para cambiar en qué segmentos se encuentran los usuarios o para definir segmentos con atributos diferentes. |
 | [Editar un segmento](#edit-a-segment) | Edite segmentos cuando desee cambiar la forma en que se define un segmento. <br/>Por ejemplo, es posible que haya definido segmentos originalmente con *Department* y ahora quiera usar otro atributo, *como MemberOf*. |
-| [Editar una directiva](#edit-a-policy) | Edite una directiva de barrera de información cuando desee cambiar el funcionamiento de una directiva.<br/>Por ejemplo, en lugar de bloquear las comunicaciones entre dos segmentos, es posible que decida permitir que las comunicaciones se produzcan solo entre ciertos segmentos. |
+| [Editar una directiva](#edit-a-policy) | Edite una directiva de barrera de información cuando quiera cambiar el funcionamiento de una directiva.<br/>Por ejemplo, en lugar de bloquear las comunicaciones entre dos segmentos, es posible que decida permitir que las comunicaciones se produzcan solo entre ciertos segmentos. |
 | [Establecer una directiva en estado inactivo](#set-a-policy-to-inactive-status) |Establece una directiva en estado inactivo cuando quieras realizar cambios en una directiva o cuando no quieras que una directiva esté en vigor. |
 | [Quitar una directiva](#remove-a-policy) | Quite una directiva de barrera de información cuando ya no necesite una directiva en particular. |
 | [Detener una aplicación de directiva](#stop-a-policy-application) | Tome esta acción cuando desee detener el proceso de aplicación de directivas de barrera de información.<br/> Detener una aplicación de directiva no es instantáneo y no deshacer directivas que ya se han aplicado a los usuarios. |
-| [Definir directivas para barreras de información](information-barriers-policies.md) | Defina una directiva de barrera de información cuando aún no haya establecido dichas directivas y debe restringir o limitar las comunicaciones entre grupos específicos de usuarios. |
+| [Definir directivas de barreras de información](information-barriers-policies.md) | Defina una directiva de barrera de información cuando aún no haya establecido dichas directivas y debe restringir o limitar las comunicaciones entre grupos específicos de usuarios. |
 | [Solución de problemas de barreras de información](information-barriers-troubleshooting.md) | Consulte este artículo cuando se encontrará con problemas inesperados con las barreras de información. |
 
 > [!IMPORTANT]
-> Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como uno de los siguientes:<br/>- Administrador global de Microsoft 365 Enterprise<br/>- Administrador global<br/>- Administrador de cumplimiento<br/>- Administración de cumplimiento de IB (este es un nuevo rol!<br><br>Para obtener más información sobre los requisitos previos para las barreras de información, vea [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Asegúrese de [conectarse al PowerShell del Centro & de seguridad.](/powershell/exchange/connect-to-scc-powershell)
+> Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como uno de los siguientes:<br/>- Microsoft 365 Enterprise administrador global<br/>- Administrador global<br/>- Administrador de cumplimiento<br/>- Administración de cumplimiento de IB (este es un nuevo rol!<br><br>Para obtener más información sobre los requisitos previos para las barreras de información, vea [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Asegúrese de [conectarse al PowerShell del Centro & de seguridad.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Editar atributos de cuenta de usuario
 
@@ -53,7 +53,7 @@ Use este procedimiento para editar los atributos que se usan para segmentar usua
 
 3. Edite una o varias cuentas de usuario para incluir valores para el atributo que seleccionó en el paso anterior. Para realizar esta acción, use uno de los siguientes procedimientos:
 
-    - Para editar una sola cuenta, vea Agregar o actualizar la información de perfil de un usuario [con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - Para editar una sola cuenta, vea [Agregar o actualizar la información](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)de perfil de un usuario mediante Azure Active Directory .
 
     - Para editar varias cuentas (o usar PowerShell para editar una sola cuenta), vea [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
@@ -165,9 +165,9 @@ Después de empezar a aplicar directivas de barrera de información, si desea im
 ## <a name="resources"></a>Recursos
 
 - [Obtener información general sobre las barreras de información](information-barriers.md)
-- [Definir directivas para barreras de información](information-barriers-policies.md)
-- [Más información sobre las barreras de información en Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
-- [Más información sobre las barreras de información en SharePoint Online](/sharepoint/information-barriers)
-- [Más información sobre las barreras de información en OneDrive](/onedrive/information-barriers)
+- [Definir directivas de barreras de información](information-barriers-policies.md)
+- [Obtenga más información sobre las barreras de información en Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Obtenga más información sobre las barreras de información en SharePoint Online](/sharepoint/information-barriers)
+- [Obtenga más información sobre las barreras de información en OneDrive](/onedrive/information-barriers)
 - [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
 - [Solución de problemas de barreras de información](information-barriers-troubleshooting.md)

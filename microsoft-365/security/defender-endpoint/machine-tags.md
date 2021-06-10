@@ -1,5 +1,5 @@
 ---
-title: Crear y administrar etiquetas de dispositivo
+title: Crear y administrar etiquetas de dispositivos
 description: Usar etiquetas de dispositivo para agrupar dispositivos para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente
 keywords: etiquetas, etiquetas de dispositivo, grupos de dispositivos, grupos, corrección, nivel, reglas, grupo de aad, rol, asignación, clasificación
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51187594"
 ---
-# <a name="create-and-manage-device-tags"></a>Crear y administrar etiquetas de dispositivo
+# <a name="create-and-manage-device-tags"></a>Crear y administrar etiquetas de dispositivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,30 +33,30 @@ ms.locfileid: "51187594"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Agregue etiquetas en dispositivos para crear una afiliación de grupo lógico. Las etiquetas de dispositivo admiten la asignación adecuada de la red, lo que te permite adjuntar diferentes etiquetas para capturar el contexto y habilitar la creación de listas dinámicas como parte de un incidente. Las etiquetas se pueden usar como filtro en la **vista de lista** Dispositivos o para agrupar dispositivos. Para obtener más información sobre la agrupación de dispositivos, consulta [Crear y administrar grupos de dispositivos.](machine-groups.md)
+Agregue etiquetas en los dispositivos para crear una afiliación de grupos lógica. Las etiquetas de dispositivo son compatibles con la asignación adecuada de la red, lo que permite adjuntar diferentes etiquetas para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente. Las etiquetas se pueden usar como filtro en la **vista de lista** Dispositivos o para agrupar dispositivos. Para obtener más información sobre la agrupación de dispositivos, consulta [Crear y administrar grupos de dispositivos.](machine-groups.md)
 
 Puedes agregar etiquetas en dispositivos de las siguientes maneras:
 
-- Uso del portal
-- Establecer un valor de clave del Registro
+- Usando el portal
+- Estableciendo un valor de clave de registro
 
 > [!NOTE]
 > Puede haber cierta latencia entre el momento en que se agrega una etiqueta a un dispositivo y su disponibilidad en la lista de dispositivos y la página del dispositivo.  
 
-Para agregar etiquetas de dispositivo mediante API, consulta [Agregar o quitar la API de etiquetas de dispositivo.](add-or-remove-machine-tags.md)
+Para agregar etiquetas de dispositivo con la API, consulte [API para agregar o quitar etiquetas de dispositivo](add-or-remove-machine-tags.md).
 
 ## <a name="add-and-manage-device-tags-using-the-portal"></a>Agregar y administrar etiquetas de dispositivo con el portal
 
-1. Selecciona el dispositivo en el que quieres administrar las etiquetas. Puedes seleccionar o buscar un dispositivo desde cualquiera de las siguientes vistas:
+1. Seleccione el dispositivo en el que quiere administrar las etiquetas. Puede seleccionar o buscar un dispositivo desde cualquiera de las siguientes vistas:
 
    - **Panel de operaciones de seguridad:** seleccione el nombre del dispositivo en la sección Dispositivos principales con alertas activas.
-   - **Cola de alertas:** seleccione el nombre del dispositivo junto al icono del dispositivo en la cola de alertas.
-   - **Lista de dispositivos:** seleccione el nombre del dispositivo de la lista de dispositivos.
-   - **Cuadro de búsqueda:** seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.
+   - **Cola de alertas**: seleccione el nombre del dispositivo junto al icono de dispositivo en la cola de alertas.
+   - **Lista de dispositivos**: seleccione el nombre del dispositivo de la lista de dispositivos.
+   - **Cuadro de búsqueda**: seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.
 
-     También puede acceder a la página de alerta a través del archivo y las vistas IP.
+     También puede acceder a la página de la alerta a través del archivo y las vistas IP.
 
-2. Seleccione **Administrar etiquetas** en la fila de acciones de respuesta.
+2. Seleccione **Administrar etiquetas** en la fila Acciones de respuesta.
 
     ![Imagen del botón administrar etiquetas](images/manage-tags.png)
 
@@ -79,7 +79,7 @@ También puede eliminar etiquetas de esta vista.
 >[!NOTE]
 > Solo se aplica a los siguientes dispositivos:
 >- Windows 10, versión 1709 o posterior
->- Windows Server, versión 1803 o posterior
+>- Windows Servidor, versión 1803 o posterior
 >- Windows Server 2016
 >- Windows Server 2012 R2
 >- Windows Server 2008 R2 SP1

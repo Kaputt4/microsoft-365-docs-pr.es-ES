@@ -62,7 +62,7 @@ En blanco
 Si se realiza correctamente y el usuario existe: 200 Aceptar con [la entidad de](user.md) usuario en el cuerpo. Si el usuario no existe: 404 No encontrado.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

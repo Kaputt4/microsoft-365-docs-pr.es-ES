@@ -58,7 +58,7 @@ En blanco
 ## <a name="response"></a>Respuesta
 Si se realiza correctamente: 200 Aceptar.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

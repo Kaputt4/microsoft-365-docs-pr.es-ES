@@ -31,7 +31,7 @@ ms.locfileid: "50925676"
 
 En este artículo se describe cómo funciona la desduplicación de los resultados de búsqueda de exhibición de documentos electrónicos y se explican las limitaciones del algoritmo de desduplicación.
   
-Al usar herramientas de exhibición de documentos electrónicos para exportar los resultados de una búsqueda de exhibición de documentos electrónicos, tiene la opción de desduplicar los resultados exportados. Escenario Cuando habilita la desduplicación (de forma predeterminada, la desduplicación no está habilitada), solo se exporta una copia de un mensaje de correo electrónico aunque se hayan encontrado varias instancias del mismo mensaje en los buzones que se buscaron. La desduplicación le ayuda a ahorrar tiempo al reducir el número de elementos que debe revisar y analizar después de exportar los resultados de la búsqueda. Pero es importante comprender cómo funciona la desduplicación y tener en cuenta que hay limitaciones en el algoritmo que pueden hacer que un elemento único se marque como duplicado durante el proceso de exportación.
+Al usar herramientas de exhibición de documentos electrónicos para exportar los resultados de una búsqueda de exhibición de documentos electrónicos, tiene la opción de desduplicar los resultados exportados. ¿Qué significa esto? Cuando habilita la desduplicación (de forma predeterminada, la desduplicación no está habilitada), solo se exporta una copia de un mensaje de correo electrónico aunque se hayan encontrado varias instancias del mismo mensaje en los buzones que se buscaron. La desduplicación le ayuda a ahorrar tiempo al reducir el número de elementos que debe revisar y analizar después de exportar los resultados de la búsqueda. Pero es importante comprender cómo funciona la desduplicación y tener en cuenta que hay limitaciones en el algoritmo que pueden hacer que un elemento único se marque como duplicado durante el proceso de exportación.
   
 ## <a name="how-duplicate-messages-are-identified"></a>Cómo se identifican los mensajes duplicados
 
@@ -41,17 +41,17 @@ Las herramientas de exhibición de documentos electrónicos usan una combinació
 
 - **ConversationTopic:** esta propiedad especifica el asunto del subproceso de conversación de un mensaje. El valor de la **propiedad ConversationTopic** es la cadena que describe el tema general de la conversación. Una conservación consta de un mensaje inicial y todos los mensajes enviados en respuesta al mensaje inicial. Los mensajes de la misma conversación tienen el mismo valor para la **propiedad ConversationTopic.** El valor de esta propiedad suele ser la línea Subject del mensaje inicial que generó la conversación. 
 
-- **BodyTagInfo:** se trata de una propiedad interna del almacén de Exchange. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar diferencias en el cuerpo de los mensajes. 
+- **BodyTagInfo:** se trata de una propiedad Exchange store interna. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar diferencias en el cuerpo de los mensajes. 
 
 Durante el proceso de exportación de exhibición de documentos electrónicos, estas tres propiedades se comparan por cada mensaje que coincida con los criterios de búsqueda. Si estas propiedades son idénticas para dos (o más) mensajes, estos mensajes se determinan como duplicados y el resultado es que solo se exportará una copia del mensaje si la desduplicación está habilitada. El mensaje que se exporta se conoce como "elemento de origen". La información sobre los mensajes duplicados se incluye en los **Results.csv** y **Manifest.xml** que se incluyen con los resultados de búsqueda exportados. En el **Results.csv,** se identifica un mensaje duplicado al tener un valor en la **columna Duplicado a elemento.** El valor de esta columna coincide con el valor de la columna **Identidad** del elemento para el mensaje que se exportó. 
   
 Los siguientes gráficos muestran cómo se muestran los mensajes duplicados en los informes **Results.csv** y **Manifest.xml** que se exportan con los resultados de búsqueda. Estos informes no incluyen las propiedades de correo electrónico descritas anteriormente, que se usan en el algoritmo de desduplicación. En su lugar, los informes incluyen la **propiedad Item Identity** que el almacén de Exchange asigna a los elementos. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv (visto en Excel)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv (se ve en Excel)
   
 ![Ver información sobre elementos duplicados en el informe Results.csv datos](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml (visto en Excel)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml (se ve en Excel)
   
 ![Ver información sobre elementos duplicados en el informe Manifest.xml datos](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
@@ -72,7 +72,7 @@ Los mensajes únicos también se pueden marcar como duplicados cuando se habilit
 
 - La información de este artículo es aplicable al exportar resultados de búsqueda mediante una de las siguientes herramientas de exhibición de documentos electrónicos:
 
-  - Búsqueda de contenido en el Centro de cumplimiento en Office 365
+  - Búsqueda de contenido en el centro de cumplimiento en Office 365
 
   - Exhibición de documentos electrónicos local en Exchange Online
 

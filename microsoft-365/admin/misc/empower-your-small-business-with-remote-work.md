@@ -1,5 +1,5 @@
 ---
-title: Capacitar a su pequeña empresa con trabajo remoto
+title: Potencie su pequeña empresa con el trabajo a distancia
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -14,7 +14,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: Encuentre la información más reciente sobre cómo hacerlo, sugerencias, recursos y instrucciones sobre el trabajo remoto para empresas que usan Microsoft 365.
+description: Encuentre la información de instrucciones más reciente, sugerencias, recursos y instrucciones sobre el trabajo remoto para empresas que usan Microsoft 365.
 ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
 ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
@@ -22,12 +22,12 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52023742"
 ---
-# <a name="empower-your-small-business-with-remote-work"></a>Capacitar a su pequeña empresa con trabajo remoto
+# <a name="empower-your-small-business-with-remote-work"></a>Potencie su pequeña empresa con el trabajo a distancia
 
 A medida que las empresas se adaptan a la creciente necesidad de que las personas trabajen de forma remota y se conecten con sus clientes virtualmente, este sitio se actualiza con la información más reciente sobre cómo hacerlo, sugerencias, recursos y instrucciones sobre el trabajo remoto para empresas que usan Microsoft 365.
 
 >[!TIP]
->¿No tiene Microsoft_Teams? Obtenga 6 meses de Microsoft Teams en Office de forma gratuita (cuando se registra durante 1 año). Obtenga las tecnologías descritas en este artículo como parte de la oferta. Para obtener más información, [vea Try 1 month free](https://aka.ms/SMBTeamsOffer).
+>¿No tiene Microsoft_Teams? Obtenga 6 meses de Microsoft Teams en Office gratis (cuando se registra durante 1 año). Obtenga las tecnologías descritas en este artículo como parte de la oferta. Para obtener más información, [vea Try 1 month free](https://aka.ms/SMBTeamsOffer).
 
 ## <a name="remote-work-for-your-small-business-video"></a>Trabajo remoto para su pequeña empresa (vídeo)
 
@@ -39,9 +39,9 @@ A la luz del brote de COVID-19 (Coronavirus novel), muchos propietarios de empre
 
 Para obtener más información, vea [Introducción a Microsoft Teams en su pequeña empresa.](../../business-video/get-started-teams-small-business.md)
 
-¿Ya tienes una suscripción pero necesitas configurarla? Consulte [Microsoft 365 small business training](../../business-video/index.yml).
+¿Ya tienes una suscripción pero necesitas configurarla? Vea [Microsoft 365 aprendizaje para pequeñas empresas](../../business-video/index.yml).
 
-## <a name="connect-with-employees-and-customers"></a>Conectarse con empleados y clientes
+## <a name="connect-with-employees-and-customers"></a>Conectar con empleados y clientes
 
 Todavía puede conectarse con empleados, clientes, clientes y partners, incluso si no puede encontrarse cara a cara. Use Microsoft Teams para seguir haciendo negocios y conectarse con sus clientes. 
 
@@ -55,7 +55,7 @@ Para obtener más información, vea [Host online meetings](../../business-video/
 
 Coloque los documentos empresariales en la nube y compárlos de forma segura, tanto interna como externamente.
 
-Para obtener más información, vea esta [introducción al uso compartido de archivos empresariales](../../business-video/overview-file-sharing.md) y Cargar y compartir [archivos](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12).
+Para obtener más información, vea esta [introducción al](../../business-video/overview-file-sharing.md) uso compartido de archivos [empresariales](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)y Upload y compartir archivos .
 
 ### <a name="collaborate-with-customers"></a>Colaborar con clientes
 
@@ -81,13 +81,13 @@ Para obtener más información, consulta [Administrar dispositivos](../../busine
 
 ### <a name="more-for-admins-and-partners"></a>Más para administradores y partners
 
-El centro de documentación técnica para Microsoft 365 Empresa se actualiza con nuevas instrucciones de trabajo remoto seguro.
+El centro de documentación técnica Microsoft 365 Empresa se actualiza con nuevas instrucciones de trabajo remoto seguro.
 
-Para obtener más información, [vea Recursos de Microsoft 365 Empresa.](https://docs.microsoft.com/microsoft-365/business)
+Para obtener más información, [vea Microsoft 365 Empresa recursos](https://docs.microsoft.com/microsoft-365/business).
 
 ## <a name="need-to-ask-a-question"></a>¿Necesita hacer una pregunta? 
 
-Pregunte en el [foro de Teams](https://answers.microsoft.com/msteams/forum) o en el foro de [administradores de Office](https://answers.microsoft.com).
+Pregunte en el [Teams o](https://answers.microsoft.com/msteams/forum) en el foro [Office administradores](https://answers.microsoft.com).
 
 > [!NOTE]
-> La mayoría de las tareas de este artículo y vídeo se pueden realizar con una suscripción a Microsoft 365 Empresa Basic (anteriormente Office 365 Business Essentials), pero algunas requieren una suscripción premium. 
+> La mayoría de las tareas de este artículo y vídeo se pueden realizar con una suscripción a Microsoft 365 Empresa Básico (anteriormente Office 365 Empresa Essentials), pero algunas requieren una suscripción premium. 

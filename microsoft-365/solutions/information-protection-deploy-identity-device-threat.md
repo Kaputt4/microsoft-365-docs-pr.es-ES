@@ -34,7 +34,7 @@ Aunque los reglamentos de privacidad de datos varían en su especificidad, la es
 
 - Los datos personales se procesarán de manera que se garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra pérdidas, destrucción o daños accidentales, mediante medidas técnicas o organizativas apropiadas ("integridad y confidencialidad").
 
-Debido a que las infracciones de datos personales suelen deberse a un riesgo administrativo o a una cuenta de usuario final y al acceso malintencionado al sistema. Por ejemplo, un hackeo de una cuenta de administrador puede provocar la filtración de números de tarjeta de crédito del cliente u otra información personal. Toda la identidad, dispositivo y protección contra amenazas generalmente recomendables disponibles con Microsoft 365 potencialmente debe implementarse, lo que se reflejará en la puntuación de cumplimiento, que se encuentra en el Administrador de cumplimiento.
+Debido a que las infracciones de datos personales suelen deberse a un riesgo administrativo o a una cuenta de usuario final y al acceso malintencionado al sistema. Por ejemplo, un hackeo de una cuenta de administrador puede provocar la filtración de números de tarjeta de crédito del cliente u otra información personal. Toda la identidad, dispositivo y protección contra amenazas generalmente recomendables disponibles con Microsoft 365 posiblemente debe implementarse, lo que se reflejará en la puntuación de cumplimiento, que se encuentra en el Administrador de cumplimiento.
 
 ## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Uso de los resultados del trabajo de evaluación y el Administrador de cumplimiento
 
@@ -46,7 +46,7 @@ El Administrador de cumplimiento incluye la identidad, el dispositivo y la prote
  
 Si se seleccionan en nuestro conjunto de ejemplo de cuatro normativas principales de privacidad de datos, el Administrador de cumplimiento especifica 90 acciones de mejora, la mayoría de las cuales se puntuan como "27". Dado que el Administrador de cumplimiento llama a un número tan grande para estas categorías, algunos de los más comunes se enumeran aquí, como referencia.
 
-Use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) para la identidad y la categoría Control **Access,** con la que puede:
+Use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) para la identidad y la categoría **Control Access,** con la que puede:
 
 - Implementar la autenticación resistente a la reproducción (para evitar ataques "Man in the middle")
 - Bloquear la autenticación heredada.
@@ -58,24 +58,24 @@ Use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/act
 - Auditar cuentas de usuario y cambios de estado.
 - Revise los cambios administrativos y del grupo de roles.
 
-Usa [Microsoft Endpoint Manager para](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) dispositivos y la categoría Administrar **dispositivos,** con la que puedes:
+Usa [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) dispositivos y la **categoría Administrar dispositivos,** con la que puedes:
 
 - Bloquear la cárcel de dispositivos móviles rotos y arraigados.
 - Configurar Intune para la administración de dispositivos móviles.
-- Crea directivas de cumplimiento para dispositivos Android, iOS, macOS y Windows.
-- Crea un perfil de configuración de dispositivos para dispositivos Android, iOS, macOS y Windows.
+- Crea directivas de cumplimiento para dispositivos Android, iOS, macOS y Windows dispositivos.
+- Crea un perfil de configuración de dispositivo para dispositivos Android, iOS, macOS y Windows dispositivos.
 - Crear directivas de protección de aplicaciones para iOS y Windows.
 - Ocultar información con pantalla de bloqueo.
 - Implementar directivas de contraseña para dispositivos móviles.
 - Requerir que los dispositivos móviles bloquee la inactividad.
 - Requerir que los dispositivos móviles borren varios errores de inicio de sesión.
 
-Use [Exchange Online Protection y Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md) para la categoría **Proteger** contra amenazas, con la que puede:
+Usa [Exchange Online Protection y Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md) para la categoría **Proteger** contra amenazas, con la que puedes:
 
 - Habilitar la autenticación del remitente (SPF, DMARC y DKIM).
-- Configurar Las directivas contra suplantación de identidad de Microsoft Defender para Office 365.
-- Implementar datos adjuntos seguros.
-- Implementar vínculos seguros.
+- Configurar Microsoft Defender para las directivas Office 365 anti phishing.
+- Implemente Caja fuerte adjuntos.
+- Implemente Caja fuerte vínculos.
 - Implementar directivas de detección y respuesta de malware.
 - Implementar directivas de correo no deseado salientes y entrantes.
 

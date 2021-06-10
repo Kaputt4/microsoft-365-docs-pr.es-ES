@@ -23,9 +23,9 @@ ms.locfileid: "51199554"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades solo para la nube en el entorno de prueba de Microsoft 365
 
-*Esta Guía del laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
+*Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
 
-[Las configuraciones de acceso](../security/office-365-security/microsoft-365-policies-configurations.md) a dispositivos y identidades son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
+[Las configuraciones de](../security/office-365-security/microsoft-365-policies-configurations.md) acceso a dispositivos y identidades son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
 
 En este artículo describe cómo configurar un entorno de prueba de Microsoft 365 que cumpla con los requisitos de la [configuración de requisitos previos solo para la nube](../security/office-365-security/identity-access-prerequisites.md#prerequisites) para el acceso de dispositivos e identidades.
 
@@ -35,7 +35,7 @@ Existen ocho fases para configurar el entorno de pruebas:
 2. Configurar ubicaciones con nombre
 3. Configurar el autoservicio de restablecimiento de contraseñas
 4. Configurar la autenticación multifactor
-5. Habilitar el registro automático de dispositivos de equipos Windows unidos a un dominio
+5. Habilitar el registro automático de dispositivos de equipos unidos Windows dominio
 6. Configurar la protección con contraseña de Azure AD 
 7. Habilitar Azure AD Identity Protection
 8. Habilitar la autenticación moderna para Exchange Online y Skype Empresarial Online
@@ -77,9 +77,9 @@ Siga las instrucciones en [Guía del laboratorio de pruebas, fase 2 de la autent
 
 Pruebe la autenticación multifactor solo para la cuenta Usuario 2.
 
-## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Fase 5: Habilitar el registro automático de dispositivos de equipos Windows unidos a un dominio 
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Fase 5: Habilitar el registro automático de dispositivos de equipos unidos Windows dominio 
 
-Sigue [estas instrucciones para](/azure/active-directory/devices/hybrid-azuread-join-plan) habilitar el registro automático de dispositivos de equipos Windows unidos a un dominio.
+Siga [estas instrucciones para](/azure/active-directory/devices/hybrid-azuread-join-plan) habilitar el registro automático de dispositivos de equipos unidos Windows dominio.
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>Fase 6: Configurar la protección con contraseña de Azure AD 
 

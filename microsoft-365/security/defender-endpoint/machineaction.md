@@ -45,14 +45,14 @@ ms.locfileid: "51187390"
 | [Enumerar MachineActions](get-machineactions-collection.md)           | [Acción de máquina](machineaction.md) | Enumerar [entidades de acción](machineaction.md) de máquina.           |
 | [Obtener MachineAction](get-machineaction-object.md)                  | [Acción de máquina](machineaction.md) | Obtener una sola [entidad De acción de](machineaction.md) máquina.     |
 | [Recopilar paquete de investigación](collect-investigation-package.md) | [Acción de máquina](machineaction.md) | Recopilar el paquete de investigación de una [máquina](machine.md). |
-| [Obtener uri de SAS del paquete de investigación](get-package-sas-uri.md)       | [Acción de máquina](machineaction.md) | Obtener URI para descargar el paquete de investigación.          |
+| [Obtener identificador URI de SAS de paquete de investigación](get-package-sas-uri.md)       | [Acción de máquina](machineaction.md) | Obtener URI para descargar el paquete de investigación.          |
 | [Aislar máquina](isolate-machine.md)                             | [Acción de máquina](machineaction.md) | [Aísle el equipo](machine.md) de la red.                 |
-| [Liberar el equipo del aislamiento](unisolate-machine.md)            | [Acción de máquina](machineaction.md) | Libere [el equipo](machine.md) de Aislamiento.               |
-| [Restringir la ejecución de aplicaciones](restrict-code-execution.md)              | [Acción de máquina](machineaction.md) | Restringir la ejecución de la aplicación.                             |
-| [Quitar restricción de aplicaciones](unrestrict-code-execution.md)            | [Acción de máquina](machineaction.md) | Quitar la restricción de ejecución de aplicaciones.                   |
-| [Ejecutar examen antivirus](run-av-scan.md)                              | [Acción de máquina](machineaction.md) | Ejecute un examen av con Windows Defender (cuando corresponda).    |
-| [Máquina offboard](offboard-machine-api.md)                       | [Acción de máquina](machineaction.md) | Equipo fuera [de la máquina](machine.md) de Microsoft Defender para endpoint. |
-| [Detener y poner en cuarentena el archivo](stop-and-quarantine-file.md)           | [Acción de máquina](machineaction.md) | Detenga la ejecución de un archivo en un equipo y elimínelo.        |
+| [Liberar máquina del aislamiento](unisolate-machine.md)            | [Acción de máquina](machineaction.md) | Libere [el equipo](machine.md) de Aislamiento.               |
+| [Restringir ejecución de aplicación](restrict-code-execution.md)              | [Acción de máquina](machineaction.md) | Restringir la ejecución de la aplicación.                             |
+| [Quitar restricción de aplicación](unrestrict-code-execution.md)            | [Acción de máquina](machineaction.md) | Quitar la restricción de ejecución de aplicaciones.                   |
+| [Ejecutar examen antivirus](run-av-scan.md)                              | [Acción de máquina](machineaction.md) | Ejecute un examen antivirus con Windows Defender (cuando corresponda).    |
+| [Retirar máquina](offboard-machine-api.md)                       | [Acción de máquina](machineaction.md) | Equipo fuera [de la máquina](machine.md) de Microsoft Defender para endpoint. |
+| [Detener y poner en cuarentena un archivo](stop-and-quarantine-file.md)           | [Acción de máquina](machineaction.md) | Detenga la ejecución de un archivo en un equipo y elimínelo.        |
 
 <br>
 

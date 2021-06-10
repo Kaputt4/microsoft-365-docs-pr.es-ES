@@ -1,5 +1,5 @@
 ---
-title: Permisos en el centro de Microsoft 365 cumplimiento
+title: Permisos en el Centro de cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,7 +18,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 06/05/2021
 ms.locfileid: "52782854"
 ---
-# <a name="permissions-in-the-microsoft-365-compliance-center"></a>Permisos en el centro de Microsoft 365 cumplimiento
+# <a name="permissions-in-the-microsoft-365-compliance-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365
 
 El Microsoft 365 de cumplimiento se ha actualizado recientemente y ahora admite la administración directa de permisos para los usuarios que realizan tareas de cumplimiento en Microsoft 365. Esta actualización significa que Office 365 ya no tendrá que usar el Centro de seguridad & cumplimiento para administrar los permisos de las soluciones de cumplimiento. Con la nueva página Permisos en el centro de cumplimiento de Microsoft 365, puede administrar permisos a los usuarios para tareas de cumplimiento en características como administración de **dispositivos,** prevención de pérdida de datos, exhibición de documentos electrónicos, administración de riesgos insider, retención y muchas otras. Los usuarios solo pueden realizar las tareas de cumplimiento a las que se les conceda acceso explícitamente.
 
@@ -34,7 +34,7 @@ Un rol concede permisos para realizar un conjunto de tareas; por ejemplo, el rol
 
 Un grupo de roles es un conjunto de roles que permiten a los usuarios realizar su trabajo en las soluciones de cumplimiento del centro Microsoft 365 cumplimiento. Por ejemplo, al agregar usuarios al grupo de roles De administración de riesgos de *Insider,* los administradores, analistas, investigadores y auditores designados se configuran para los permisos de administración de riesgos insider necesarios en un solo grupo. El Microsoft 365 de cumplimiento incluye grupos de roles predeterminados para tareas y funciones para cada solución de cumplimiento a la que necesite asignar personas. Por lo general, se recomienda simplemente agregar usuarios individuales como miembros a los grupos de roles de cumplimiento predeterminados según sea necesario.
 
-![Diagrama que muestra la relación de los grupos de roles con los roles y los miembros](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagrama que muestra la relación de los grupos de roles con los roles y miembros](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>Permisos necesarios para usar características en el centro de Microsoft 365 cumplimiento
 
@@ -46,7 +46,7 @@ La administración de permisos en el Microsoft 365 de cumplimiento solo proporci
 
 Los roles que aparecen en la sección **Roles de Azure AD** de la Microsoft 365 de permisos del centro de cumplimiento son Azure Active Directory  >   roles.  Estos roles están diseñados para alinearse con las funciones de trabajo en el grupo de TI de su organización, lo que facilita otorgar a una persona todos los permisos necesarios para realizar su trabajo. Puede ver los usuarios asignados actualmente a cada función seleccionando un rol de administrador y viendo los detalles del panel de funciones. Para administrar miembros de un rol de Azure AD, seleccione Administrar miembros en Azure AD. Esta opción le redirige al Portal de administración de Azure.
 
-|Role|Descripción|
+|Función|Descripción|
 |:---|:----------|
 |**Administrador global**|Acceso a todas las características administrativas en todos los servicios de Microsoft 365. Los administradores globales son los únicos que pueden asignar otros roles de administrador. Para más información, consulte [Administrador global / Administrador de empresa](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
 |**Administrador de datos de cumplimiento**|Realizar un seguimiento de los datos de su organización a través de Microsoft 365, asegurarse de que están protegidos y obtener información sobre los problemas para ayudar a reducir los riesgos. Para obtener más información, consulte [Administrador de datos de cumplimiento](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
@@ -55,8 +55,8 @@ Los roles que aparecen en la sección **Roles de Azure AD** de la Microsoft 365 
 |**Lector de seguridad**|Ver e investigar amenazas activas a usuarios, dispositivos y contenido de Microsoft 365, pero, a diferencia del operador de seguridad, no tienen permisos para responder realizando una acción. Para obtener más información, vea [Lector de seguridad](/azure/active-directory/roles/permissions-reference#security-reader).|
 |**Administrador de seguridad**|Controlar la seguridad global de la organización mediante la administración de directivas de seguridad, la revisión de análisis de seguridad y los informes en los productos de Microsoft 365, así como mantenerse al día con el panorama de amenazas. Para obtener más información, vea [Administrador de seguridad](/azure/active-directory/roles/permissions-reference#security-administrator).|
 |**Lector global**|La versión de solo lectura del rol de **Administrador global**. Ver todas las configuraciones e información administrativa en Microsoft 365. Para más información, vea [Lector global](/azure/active-directory/roles/permissions-reference#global-reader).|
-|**Administrador de simulación de ataques**|Cree y administre todos los aspectos de la creación de simulación de ataque, el inicio/programación de una simulación y la revisión de los resultados de la simulación. Para obtener más información, vea [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
-|**Autor de carga de ataques**|Crea cargas de ataque pero no las inicias ni programas. Para obtener más información, vea [Attack Payload Author](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
+|**Administrador de simulación de ataque**|Crea y administra todos los aspectos de la creación de simulación de ataques, el lanzamiento o la programación de la simulación y la revisión de los resultados de la misma. Para más información, consulte [Administrador de simulación de ataque](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
+|**Autor de carga de ataque**|Crea cargas de ataques pero no las inicia ni programa. Para más información, consulte [Autor de carga de ataques](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 
 ## <a name="add-users-to-a-compliance-role-group"></a>Agregar usuarios a un grupo de roles de cumplimiento

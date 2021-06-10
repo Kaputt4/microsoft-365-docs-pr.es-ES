@@ -1,5 +1,5 @@
 ---
-title: Crear una regla de notificación de incorporación o de salida
+title: Crear una regla de notificación de incorporación o retirada
 description: Obtener una notificación cuando se usa un script local de incorporación o offboarding.
 keywords: incorporación, offboarding, local, script, notificación, regla
 search.product: eADQiWindows 10XVcnh
@@ -44,8 +44,8 @@ Cree una regla de notificación para que cuando se utilice un script local de in
 
 ## <a name="before-you-begin"></a>Antes de empezar
 Tendrás que tener acceso a:
- - Microsoft Flow (plan de flujo 1 como mínimo). Para obtener más información, vea [Flow pricing page](https://flow.microsoft.com/pricing/).
- - Tabla de Azure o Lista de SharePoint o Biblioteca /SQL DB
+ - Microsoft Flow (Flow plan 1 como mínimo). Para obtener más información, [vea Flow de precios](https://flow.microsoft.com/pricing/).
+ - Azure Table o SharePoint List or Library /SQL DB
 
 ## <a name="create-the-notification-flow"></a>Crear el flujo de notificaciones
 
@@ -63,7 +63,7 @@ Tendrás que tener acceso a:
 
     ![Imagen del flujo de notificación](images/build-flow.png)
 
-4. Seleccione el botón + para agregar una nueva acción. La nueva acción será una solicitud HTTP a la API del Centro de seguridad de Defender para puntos de conexión. También puede reemplazarlo por el "Conector WDATP" (acción: "Máquinas- Obtener lista de máquinas"). 
+4. Seleccione el botón + para agregar una nueva acción. La nueva acción será una solicitud HTTP a la API del Centro de seguridad de Defender para puntos de conexión. También puede reemplazarlo por el "Conector WDATP&quot; (acción: &quot;Máquinas- Obtener lista de máquinas"). 
 
     ![Imagen de periodicidad y acción de agregar](images/recurrence-add.png)
 
@@ -73,11 +73,11 @@ Tendrás que tener acceso a:
    - Método: "GET" como valor para obtener la lista de dispositivos.
    - URI: escriba `https://api.securitycenter.microsoft.com/api/machines` .
    - Autenticación: seleccione "OAuth de Active Directory".
-   - Inquilino: inicie sesión y vaya a Azure Active Directory > registros de aplicaciones https://portal.azure.com y obtenga el valor de Identificador de inquilino. 
+   - Inquilino: inicie sesión y vaya a https://portal.azure.com Azure Active Directory > registros de **aplicaciones** y obtenga el valor de Identificador de inquilino.
    - Audiencia: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - Id. de cliente: inicie sesión y vaya a Azure Active Directory > registros de aplicaciones https://portal.azure.com y obtenga el valor id. de cliente. 
+   - Id. de cliente: inicie sesión y https://portal.azure.com vaya a Azure Active Directory > registros de **aplicaciones** y obtenga el valor id. de cliente.
    - Tipo de credencial: seleccione "Secreto".
-   - Secreto: inicie sesión y vaya a Azure Active Directory > registros de aplicaciones https://portal.azure.com y obtenga el valor de identificador de inquilino. 
+   - Secreto: inicie sesión y navegue hasta Azure Active Directory > https://portal.azure.com **registros de aplicaciones** y obtenga el valor de Identificador de inquilino.
 
     ![Imagen de las condiciones HTTP](images/http-conditions.png)
 
@@ -178,7 +178,7 @@ Tendrás que tener acceso a:
 
 10.  Extraiga los valores de la llamada JSON y compruebe si los dispositivos incorporados ya están registrados en la lista de SharePoint como ejemplo:
 - Si es así, no se activará ninguna notificación
-- Si no, registrará los nuevos dispositivos incorporados en la lista de SharePoint y se enviará una notificación al administrador de Defender for Endpoint
+- Si no, registrará los nuevos dispositivos incorporados en la lista SharePoint y se enviará una notificación al administrador de Defender for Endpoint
 
     ![Imagen de aplicar a cada uno](images/flow-apply.png)
 

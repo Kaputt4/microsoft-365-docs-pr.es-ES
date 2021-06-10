@@ -55,4 +55,4 @@ Estas opciones quitan el cumplimiento básico de movilidad y seguridad para disp
 3.  En el cuadro de diálogo Advertencia, seleccione **Sí**.
 
 >[!NOTE]
->Para obtener más pasos para desbloquear dispositivos si los dispositivos de la organización siguen en estado bloqueado, vea la entrada de blog Quitar el control de acceso de la administración de dispositivos móviles [para Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).
+>Para obtener más pasos para desbloquear dispositivos si los dispositivos de la organización siguen en estado [bloqueado,](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)consulta la entrada de blog Quitar control de acceso de Administración de dispositivos móviles para Office 365 .

@@ -47,13 +47,13 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `IsSigned` | boolean | Indica si el archivo está firmado |
-| `SignatureType` | string | Indica si la información de firma se leyó como contenido incrustado en el propio archivo o si se leyó desde un archivo de catálogo externo. |
-| `Signer` | string | Información sobre el firmante del archivo |
-| `SignerHash` | string | Valor hash único que identifica el firmante |
-| `Issuer` | string | Información sobre la entidad emisora de certificados (CA) |
-| `IssuerHash` | string | Valor hash único que identifica la entidad emisora de certificados (CA) |
-| `CertificateSerialNumber` | string | Identificador del certificado que es único para la entidad emisora de certificados (CA) |
-| `CrlDistributionPointUrls` | string |  Matriz JSON que enumera las direcciones URL de recursos compartidos de red que contienen certificados y listas de revocación de certificados (CRL) |
+| `SignatureType` | cadena | Indica si la información de firma se leyó como contenido incrustado en el propio archivo o si se leyó desde un archivo de catálogo externo. |
+| `Signer` | cadena | Información sobre el firmante del archivo |
+| `SignerHash` | cadena | Valor hash único que identifica el firmante |
+| `Issuer` | cadena | Información sobre la entidad emisora de certificados (CA) |
+| `IssuerHash` | cadena | Valor hash único que identifica la entidad emisora de certificados (CA) |
+| `CertificateSerialNumber` | cadena | Identificador del certificado que es único para la entidad emisora de certificados (CA) |
+| `CrlDistributionPointUrls` | cadena |  Matriz JSON que enumera las direcciones URL de recursos compartidos de red que contienen certificados y listas de revocación de certificados (CRL) |
 | `CertificateCreationTime` | datetime | Fecha y hora en que se creó el certificado |
 | `CertificateExpirationTime` | datetime | Fecha y hora en que el certificado está establecido para expirar |
 | `CertificateCountersignatureTime` | datetime | Fecha y hora en que se contrasignó el certificado |
