@@ -19,24 +19,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296845"
 ---
-# <a name="contact-support-for-burkina-faso"></a><span data-ttu-id="640e7-103">Póngase en contacto con el soporte técnico de Burkina Faso</span><span class="sxs-lookup"><span data-stu-id="640e7-103">Contact support for Burkina Faso</span></span>
+# <a name="contact-support-for-burkina-faso"></a><span data-ttu-id="82fdd-103">Póngase en contacto con el soporte técnico de Burkina Faso</span><span class="sxs-lookup"><span data-stu-id="82fdd-103">Contact support for Burkina Faso</span></span>
 
-<span data-ttu-id="640e7-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="640e7-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="82fdd-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="82fdd-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="640e7-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="640e7-105">Phone number</span></span>
-<span data-ttu-id="640e7-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="640e7-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="82fdd-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="82fdd-105">Phone number</span></span>
+<span data-ttu-id="82fdd-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="82fdd-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="640e7-107">Horas</span><span class="sxs-lookup"><span data-stu-id="640e7-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="640e7-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="640e7-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="82fdd-107">Horas</span><span class="sxs-lookup"><span data-stu-id="82fdd-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="82fdd-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="82fdd-108">Billing Support:</span></span>
 
-<span data-ttu-id="640e7-109">Francés: Mon-Fri 8AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="640e7-109">French: Mon-Fri 8AM-4 PM</span></span>
+<span data-ttu-id="82fdd-109">Francés: Mon-Fri 8AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="82fdd-109">French: Mon-Fri 8AM-4 PM</span></span>
 
-<span data-ttu-id="640e7-110">Inglés: Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="640e7-110">English: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="82fdd-110">Inglés: Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="82fdd-110">English: Mon-Fri 8 AM-4 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="640e7-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="640e7-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="82fdd-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="82fdd-111">Technical Support:</span></span>
 
-<span data-ttu-id="640e7-112">Francés: Mon-Fri 7 AM-8 PM</span><span class="sxs-lookup"><span data-stu-id="640e7-112">French: Mon-Fri 7 AM-8 PM</span></span>
+<span data-ttu-id="82fdd-112">Francés: Mon-Fri 7 AM-8 PM</span><span class="sxs-lookup"><span data-stu-id="82fdd-112">French: Mon-Fri 7 AM-8 PM</span></span>
 
-<span data-ttu-id="640e7-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="640e7-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="82fdd-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="82fdd-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="640e7-114">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="640e7-114">International call charges apply</span></span>
+<span data-ttu-id="82fdd-114">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="82fdd-114">International call charges apply</span></span>

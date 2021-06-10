@@ -19,20 +19,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296977"
 ---
-# <a name="contact-support-for-antigua-and-barbuda"></a><span data-ttu-id="5691f-103">Póngase en contacto con el soporte técnico de Antigua y Barbuda</span><span class="sxs-lookup"><span data-stu-id="5691f-103">Contact support for Antigua and Barbuda</span></span>
+# <a name="contact-support-for-antigua-and-barbuda"></a><span data-ttu-id="c77e8-103">Póngase en contacto con el soporte técnico de Antigua y Barbuda</span><span class="sxs-lookup"><span data-stu-id="c77e8-103">Contact support for Antigua and Barbuda</span></span>
 
-<span data-ttu-id="5691f-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="5691f-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="c77e8-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c77e8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5691f-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="5691f-105">Phone number</span></span>
-<span data-ttu-id="5691f-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="5691f-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c77e8-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="c77e8-105">Phone number</span></span>
+<span data-ttu-id="c77e8-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="c77e8-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5691f-107">Horas</span><span class="sxs-lookup"><span data-stu-id="5691f-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5691f-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="5691f-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c77e8-107">Horas</span><span class="sxs-lookup"><span data-stu-id="c77e8-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c77e8-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="c77e8-108">Billing Support:</span></span>
 
-<span data-ttu-id="5691f-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="5691f-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c77e8-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="c77e8-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5691f-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="5691f-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c77e8-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="c77e8-110">Technical Support:</span></span>
 
-<span data-ttu-id="5691f-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="5691f-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c77e8-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="c77e8-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="5691f-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="5691f-112">International call charges apply</span></span>
+<span data-ttu-id="c77e8-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="c77e8-112">International call charges apply</span></span>

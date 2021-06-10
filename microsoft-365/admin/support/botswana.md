@@ -19,20 +19,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296881"
 ---
-# <a name="contact-support-for-botswana"></a><span data-ttu-id="e2f88-103">Póngase en contacto con el soporte técnico de Botsuana</span><span class="sxs-lookup"><span data-stu-id="e2f88-103">Contact support for Botswana</span></span>
+# <a name="contact-support-for-botswana"></a><span data-ttu-id="67eaa-103">Póngase en contacto con el soporte técnico de Botsuana</span><span class="sxs-lookup"><span data-stu-id="67eaa-103">Contact support for Botswana</span></span>
 
-<span data-ttu-id="e2f88-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="e2f88-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="67eaa-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="67eaa-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="e2f88-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="e2f88-105">Phone number</span></span>
-<span data-ttu-id="e2f88-106">+27 21 427 3315</span><span class="sxs-lookup"><span data-stu-id="e2f88-106">+27 21 427 3315</span></span>
+## <a name="phone-number"></a><span data-ttu-id="67eaa-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="67eaa-105">Phone number</span></span>
+<span data-ttu-id="67eaa-106">+27 21 427 3315</span><span class="sxs-lookup"><span data-stu-id="67eaa-106">+27 21 427 3315</span></span>
 
-## <a name="hours"></a><span data-ttu-id="e2f88-107">Horas</span><span class="sxs-lookup"><span data-stu-id="e2f88-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="e2f88-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="e2f88-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="67eaa-107">Horas</span><span class="sxs-lookup"><span data-stu-id="67eaa-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="67eaa-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="67eaa-108">Billing Support:</span></span>
 
-<span data-ttu-id="e2f88-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="e2f88-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="67eaa-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="67eaa-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="e2f88-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="e2f88-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="67eaa-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="67eaa-110">Technical Support:</span></span>
 
-<span data-ttu-id="e2f88-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="e2f88-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="67eaa-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="67eaa-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="e2f88-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="e2f88-112">International call charges apply</span></span>
+<span data-ttu-id="67eaa-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="67eaa-112">International call charges apply</span></span>

@@ -19,22 +19,22 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296628"
 ---
-# <a name="contact-support-for-aruba"></a><span data-ttu-id="8c898-103">Póngase en contacto con el soporte técnico de Aruba</span><span class="sxs-lookup"><span data-stu-id="8c898-103">Contact support for Aruba</span></span>
+# <a name="contact-support-for-aruba"></a><span data-ttu-id="a5687-103">Póngase en contacto con el soporte técnico de Aruba</span><span class="sxs-lookup"><span data-stu-id="a5687-103">Contact support for Aruba</span></span>
 
-<span data-ttu-id="8c898-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="8c898-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="a5687-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="a5687-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="8c898-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="8c898-105">Phone number</span></span>
-<span data-ttu-id="8c898-106">+1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="8c898-106">+1 312 843 5146</span></span>
+## <a name="phone-number"></a><span data-ttu-id="a5687-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="a5687-105">Phone number</span></span>
+<span data-ttu-id="a5687-106">+1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="a5687-106">+1 312 843 5146</span></span>
 
-## <a name="hours"></a><span data-ttu-id="8c898-107">Horas</span><span class="sxs-lookup"><span data-stu-id="8c898-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="8c898-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="8c898-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="a5687-107">Horas</span><span class="sxs-lookup"><span data-stu-id="a5687-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="a5687-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="a5687-108">Billing Support:</span></span>
 
-<span data-ttu-id="8c898-109">Neerlandés: Mon-Fri 4:00 a.m.</span><span class="sxs-lookup"><span data-stu-id="8c898-109">Dutch: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="a5687-109">Neerlandés: Mon-Fri 4:00 a.m.</span><span class="sxs-lookup"><span data-stu-id="a5687-109">Dutch: Mon-Fri 4 AM-noon</span></span>
 
-<span data-ttu-id="8c898-110">Inglés: Mon-Fri 4:00 a.m.</span><span class="sxs-lookup"><span data-stu-id="8c898-110">English: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="a5687-110">Inglés: Mon-Fri 4:00 a.m.</span><span class="sxs-lookup"><span data-stu-id="a5687-110">English: Mon-Fri 4 AM-noon</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="8c898-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="8c898-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="a5687-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="a5687-111">Technical Support:</span></span>
 
-<span data-ttu-id="8c898-112">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="8c898-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="a5687-112">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="a5687-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="8c898-113">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="8c898-113">International call charges apply</span></span>
+<span data-ttu-id="a5687-113">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="a5687-113">International call charges apply</span></span>

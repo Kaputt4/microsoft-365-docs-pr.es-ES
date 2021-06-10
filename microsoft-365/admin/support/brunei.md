@@ -19,22 +19,22 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296857"
 ---
-# <a name="contact-support-for-brunei"></a><span data-ttu-id="b62d9-103">Póngase en contacto con el soporte técnico de Brunei</span><span class="sxs-lookup"><span data-stu-id="b62d9-103">Contact support for Brunei</span></span>
+# <a name="contact-support-for-brunei"></a><span data-ttu-id="556fe-103">Póngase en contacto con el soporte técnico de Brunei</span><span class="sxs-lookup"><span data-stu-id="556fe-103">Contact support for Brunei</span></span>
 
-<span data-ttu-id="b62d9-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b62d9-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="556fe-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="556fe-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b62d9-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="b62d9-105">Phone number</span></span>
-<span data-ttu-id="b62d9-106">800 1111 673</span><span class="sxs-lookup"><span data-stu-id="b62d9-106">800 1111 673</span></span>
+## <a name="phone-number"></a><span data-ttu-id="556fe-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="556fe-105">Phone number</span></span>
+<span data-ttu-id="556fe-106">800 1111 673</span><span class="sxs-lookup"><span data-stu-id="556fe-106">800 1111 673</span></span>
 
-<span data-ttu-id="b62d9-107">Después de marcar, escriba</span><span class="sxs-lookup"><span data-stu-id="b62d9-107">After dialing, enter</span></span>
+<span data-ttu-id="556fe-107">Después de marcar, escriba</span><span class="sxs-lookup"><span data-stu-id="556fe-107">After dialing, enter</span></span>
 
-<span data-ttu-id="b62d9-108">877 413 1767</span><span class="sxs-lookup"><span data-stu-id="b62d9-108">877 413 1767</span></span>
+<span data-ttu-id="556fe-108">877 413 1767</span><span class="sxs-lookup"><span data-stu-id="556fe-108">877 413 1767</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b62d9-109">Horas</span><span class="sxs-lookup"><span data-stu-id="b62d9-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b62d9-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="b62d9-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="556fe-109">Horas</span><span class="sxs-lookup"><span data-stu-id="556fe-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="556fe-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="556fe-110">Billing Support:</span></span>
 
-<span data-ttu-id="b62d9-111">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="b62d9-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="556fe-111">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="556fe-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b62d9-112">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="b62d9-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="556fe-112">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="556fe-112">Technical Support:</span></span>
 
-<span data-ttu-id="b62d9-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="b62d9-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="556fe-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="556fe-113">English: 24 hours a day, 7 days a week</span></span>
