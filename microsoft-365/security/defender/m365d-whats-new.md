@@ -27,18 +27,18 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51072739"
 ---
-# <a name="whats-new-in-microsoft-365-security"></a><span data-ttu-id="0c870-104">Novedades de Seguridad de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="0c870-104">What's new in Microsoft 365 Security</span></span>
+# <a name="whats-new-in-microsoft-365-security"></a><span data-ttu-id="4472d-104">Novedades de Seguridad de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="4472d-104">What's new in Microsoft 365 Security</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="0c870-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="0c870-105">**Applies to:**</span></span>
-- <span data-ttu-id="0c870-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0c870-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="4472d-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="4472d-105">**Applies to:**</span></span>
+- <span data-ttu-id="4472d-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="4472d-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="0c870-107">Este tema abarcará las funciones que están generalmente disponibles (GA) en la versión más reciente de la Seguridad de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="0c870-107">This topic will cover capabilities that are generally available (GA) in the latest release of Microsoft 365 Security.</span></span> 
+<span data-ttu-id="4472d-107">Este tema abarcará las funciones que están generalmente disponibles (GA) en la versión más reciente de la Seguridad de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="4472d-107">This topic will cover capabilities that are generally available (GA) in the latest release of Microsoft 365 Security.</span></span> 
 
-<span data-ttu-id="0c870-108">Para obtener más información sobre la vista previa de las características, vea [Versión preliminar de las características](preview.md)</span><span class="sxs-lookup"><span data-stu-id="0c870-108">For more information on preview features, see [Preview features](preview.md)</span></span>
+<span data-ttu-id="4472d-108">Para obtener más información sobre la vista previa de las características, vea [Versión preliminar de las características](preview.md)</span><span class="sxs-lookup"><span data-stu-id="4472d-108">For more information on preview features, see [Preview features](preview.md)</span></span>
 
 

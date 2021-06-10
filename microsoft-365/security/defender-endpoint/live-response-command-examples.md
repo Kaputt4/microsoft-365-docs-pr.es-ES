@@ -23,23 +23,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/13/2021
 ms.locfileid: "51689095"
 ---
-# <a name="live-response-command-examples"></a><span data-ttu-id="ef87d-104">Ejemplos de comandos de respuesta en vivo</span><span class="sxs-lookup"><span data-stu-id="ef87d-104">Live response command examples</span></span>
+# <a name="live-response-command-examples"></a><span data-ttu-id="8298a-104">Ejemplos de comandos de respuesta en vivo</span><span class="sxs-lookup"><span data-stu-id="8298a-104">Live response command examples</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="ef87d-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="ef87d-105">**Applies to:**</span></span>
-- [<span data-ttu-id="ef87d-106">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="ef87d-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="ef87d-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="ef87d-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="8298a-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="8298a-105">**Applies to:**</span></span>
+- [<span data-ttu-id="8298a-106">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="8298a-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="8298a-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8298a-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="ef87d-108">¿Desea experimentar Defender for Endpoint?</span><span class="sxs-lookup"><span data-stu-id="ef87d-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="ef87d-109">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="ef87d-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="8298a-108">¿Desea experimentar Defender for Endpoint?</span><span class="sxs-lookup"><span data-stu-id="8298a-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="8298a-109">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="8298a-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-<span data-ttu-id="ef87d-110">Obtenga información sobre los comandos comunes usados en la respuesta en directo y vea ejemplos sobre cómo se usan normalmente.</span><span class="sxs-lookup"><span data-stu-id="ef87d-110">Learn about common commands used in live response and see examples on how they are typically used.</span></span>
+<span data-ttu-id="8298a-110">Obtenga información sobre los comandos comunes usados en la respuesta en directo y vea ejemplos sobre cómo se usan normalmente.</span><span class="sxs-lookup"><span data-stu-id="8298a-110">Learn about common commands used in live response and see examples on how they are typically used.</span></span>
 
-<span data-ttu-id="ef87d-111">Según el rol que se le haya concedido, puede ejecutar comandos de respuesta en directo básicos o avanzados.</span><span class="sxs-lookup"><span data-stu-id="ef87d-111">Depending on the role that's been granted to you, you can run basic or advanced live response commands.</span></span> <span data-ttu-id="ef87d-112">Para obtener más información sobre los comandos básicos y avanzados, vea Investigar entidades en [dispositivos con respuesta en directo.](live-response.md)</span><span class="sxs-lookup"><span data-stu-id="ef87d-112">For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).</span></span>
+<span data-ttu-id="8298a-111">Según el rol que se le haya concedido, puede ejecutar comandos de respuesta en directo básicos o avanzados.</span><span class="sxs-lookup"><span data-stu-id="8298a-111">Depending on the role that's been granted to you, you can run basic or advanced live response commands.</span></span> <span data-ttu-id="8298a-112">Para obtener más información sobre los comandos básicos y avanzados, vea Investigar entidades en [dispositivos con respuesta en directo.](live-response.md)</span><span class="sxs-lookup"><span data-stu-id="8298a-112">For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).</span></span>
 
 
-## <a name="analyze"></a><span data-ttu-id="ef87d-113">analizar</span><span class="sxs-lookup"><span data-stu-id="ef87d-113">analyze</span></span> 
+## <a name="analyze"></a><span data-ttu-id="8298a-113">analizar</span><span class="sxs-lookup"><span data-stu-id="8298a-113">analyze</span></span> 
 
 ```
 # Analyze the file malware.txt
@@ -51,7 +51,7 @@ analyze file c:\Users\user\Desktop\malware.txt
 analyze process 1234
 ```
 
-## <a name="connections"></a><span data-ttu-id="ef87d-114">conexiones</span><span class="sxs-lookup"><span data-stu-id="ef87d-114">connections</span></span>
+## <a name="connections"></a><span data-ttu-id="8298a-114">conexiones</span><span class="sxs-lookup"><span data-stu-id="8298a-114">connections</span></span>
 
 ```
 # List active connections in json format using parameter name
@@ -63,7 +63,7 @@ connections -output json
 connections json
 ```
 
-## <a name="dir"></a><span data-ttu-id="ef87d-115">dir</span><span class="sxs-lookup"><span data-stu-id="ef87d-115">dir</span></span>
+## <a name="dir"></a><span data-ttu-id="8298a-115">dir</span><span class="sxs-lookup"><span data-stu-id="8298a-115">dir</span></span>
 
 ```
 # List files and sub-folders in the current folder
@@ -80,21 +80,21 @@ dir C:\Users\user\Desktop\
 dir -output json
 ```
 
-## <a name="fileinfo"></a><span data-ttu-id="ef87d-116">fileinfo</span><span class="sxs-lookup"><span data-stu-id="ef87d-116">fileinfo</span></span>
+## <a name="fileinfo"></a><span data-ttu-id="8298a-116">fileinfo</span><span class="sxs-lookup"><span data-stu-id="8298a-116">fileinfo</span></span>
 
 ```
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
-## <a name="findfile"></a><span data-ttu-id="ef87d-117">findfile</span><span class="sxs-lookup"><span data-stu-id="ef87d-117">findfile</span></span>
+## <a name="findfile"></a><span data-ttu-id="8298a-117">findfile</span><span class="sxs-lookup"><span data-stu-id="8298a-117">findfile</span></span>
 
 ```
 # Find file by name
 findfile test.txt
 ```
 
-## <a name="getfile"></a><span data-ttu-id="ef87d-118">getfile</span><span class="sxs-lookup"><span data-stu-id="ef87d-118">getfile</span></span>
+## <a name="getfile"></a><span data-ttu-id="8298a-118">getfile</span><span class="sxs-lookup"><span data-stu-id="8298a-118">getfile</span></span>
 
 ```
 # Download a file from a machine
@@ -108,18 +108,18 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 >[!NOTE]
 >
-> <span data-ttu-id="ef87d-119">Los siguientes tipos de **archivo no se** pueden descargar con este comando desde Live Response:</span><span class="sxs-lookup"><span data-stu-id="ef87d-119">The following file types **cannot** be downloaded using this command from within Live Response:</span></span>
+> <span data-ttu-id="8298a-119">Los siguientes tipos de **archivo no se** pueden descargar con este comando desde Live Response:</span><span class="sxs-lookup"><span data-stu-id="8298a-119">The following file types **cannot** be downloaded using this command from within Live Response:</span></span>
 >
-> * [<span data-ttu-id="ef87d-120">Archivos de punto de repetición</span><span class="sxs-lookup"><span data-stu-id="ef87d-120">Reparse point files</span></span>](/windows/desktop/fileio/reparse-points/)
-> * [<span data-ttu-id="ef87d-121">Archivos dispersos</span><span class="sxs-lookup"><span data-stu-id="ef87d-121">Sparse files</span></span>](/windows/desktop/fileio/sparse-files/)
-> * <span data-ttu-id="ef87d-122">Archivos vacíos</span><span class="sxs-lookup"><span data-stu-id="ef87d-122">Empty files</span></span>
-> * <span data-ttu-id="ef87d-123">Archivos virtuales o archivos que no están totalmente presentes localmente</span><span class="sxs-lookup"><span data-stu-id="ef87d-123">Virtual files, or files that are not fully present locally</span></span>
+> * [<span data-ttu-id="8298a-120">Archivos de punto de repetición</span><span class="sxs-lookup"><span data-stu-id="8298a-120">Reparse point files</span></span>](/windows/desktop/fileio/reparse-points/)
+> * [<span data-ttu-id="8298a-121">Archivos dispersos</span><span class="sxs-lookup"><span data-stu-id="8298a-121">Sparse files</span></span>](/windows/desktop/fileio/sparse-files/)
+> * <span data-ttu-id="8298a-122">Archivos vacíos</span><span class="sxs-lookup"><span data-stu-id="8298a-122">Empty files</span></span>
+> * <span data-ttu-id="8298a-123">Archivos virtuales o archivos que no están totalmente presentes localmente</span><span class="sxs-lookup"><span data-stu-id="8298a-123">Virtual files, or files that are not fully present locally</span></span>
 >
-> <span data-ttu-id="ef87d-124">PowerShell **admite** estos tipos [de archivo.](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="ef87d-124">These file types **are** supported by [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true).</span></span>
+> <span data-ttu-id="8298a-124">PowerShell **admite** estos tipos [de archivo.](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="8298a-124">These file types **are** supported by [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true).</span></span>
 >
-> <span data-ttu-id="ef87d-125">Use PowerShell como alternativa, si tiene problemas al usar este comando desde Live Response.</span><span class="sxs-lookup"><span data-stu-id="ef87d-125">Use PowerShell as an alternative, if you have problems using this command from within Live Response.</span></span>
+> <span data-ttu-id="8298a-125">Use PowerShell como alternativa, si tiene problemas al usar este comando desde Live Response.</span><span class="sxs-lookup"><span data-stu-id="8298a-125">Use PowerShell as an alternative, if you have problems using this command from within Live Response.</span></span>
 
-## <a name="processes"></a><span data-ttu-id="ef87d-126">procesos</span><span class="sxs-lookup"><span data-stu-id="ef87d-126">processes</span></span>
+## <a name="processes"></a><span data-ttu-id="8298a-126">procesos</span><span class="sxs-lookup"><span data-stu-id="8298a-126">processes</span></span>
 ```
 # Show all processes
 processes
@@ -140,7 +140,7 @@ processes -pid 123
 processes -name notepad.exe
 ```
 
-## <a name="putfile"></a><span data-ttu-id="ef87d-127">putfile</span><span class="sxs-lookup"><span data-stu-id="ef87d-127">putfile</span></span>
+## <a name="putfile"></a><span data-ttu-id="8298a-127">putfile</span><span class="sxs-lookup"><span data-stu-id="8298a-127">putfile</span></span>
 
 ```
 # Upload file from library
@@ -157,7 +157,7 @@ putfile get-process-by-name.ps1 -overwrite
 putfile get-process-by-name.ps1 -keep
 ```
 
-## <a name="registry"></a><span data-ttu-id="ef87d-128">registro</span><span class="sxs-lookup"><span data-stu-id="ef87d-128">registry</span></span>
+## <a name="registry"></a><span data-ttu-id="8298a-128">registro</span><span class="sxs-lookup"><span data-stu-id="8298a-128">registry</span></span>
 
 ```
 # Show information about the values in a registry key
@@ -170,7 +170,7 @@ registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 
-## <a name="remediate"></a><span data-ttu-id="ef87d-129">remediate</span><span class="sxs-lookup"><span data-stu-id="ef87d-129">remediate</span></span>
+## <a name="remediate"></a><span data-ttu-id="8298a-129">remediate</span><span class="sxs-lookup"><span data-stu-id="8298a-129">remediate</span></span>
 
 ```
 # Remediate file in specific path
@@ -187,7 +187,7 @@ remediate process 7960
 remediate list
 ```
 
-## <a name="run"></a><span data-ttu-id="ef87d-130">ejecutar</span><span class="sxs-lookup"><span data-stu-id="ef87d-130">run</span></span>
+## <a name="run"></a><span data-ttu-id="8298a-130">ejecutar</span><span class="sxs-lookup"><span data-stu-id="8298a-130">run</span></span>
 
 ```
 # Run PowerShell script from the library without arguments
@@ -200,10 +200,10 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
 >[!NOTE]
 >
-> <span data-ttu-id="ef87d-131">Para los comandos de larga ejecución como '**run**' o '**getfile**', es posible que desee usar el símbolo ' ' al final del comando para realizar esa acción en **&** segundo plano.</span><span class="sxs-lookup"><span data-stu-id="ef87d-131">For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.</span></span>
-> <span data-ttu-id="ef87d-132">Esto le permitirá seguir investigando la máquina y volver al comando en segundo plano cuando termine con '**fg**' [comando básico](live-response.md#basic-commands).</span><span class="sxs-lookup"><span data-stu-id="ef87d-132">This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).</span></span>
+> <span data-ttu-id="8298a-131">Para los comandos de larga ejecución como '**run**' o '**getfile**', es posible que desee usar el símbolo ' ' al final del comando para realizar esa acción en **&** segundo plano.</span><span class="sxs-lookup"><span data-stu-id="8298a-131">For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.</span></span>
+> <span data-ttu-id="8298a-132">Esto le permitirá seguir investigando la máquina y volver al comando en segundo plano cuando termine con '**fg**' [comando básico](live-response.md#basic-commands).</span><span class="sxs-lookup"><span data-stu-id="8298a-132">This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).</span></span>
 >
-## <a name="scheduledtask"></a><span data-ttu-id="ef87d-133">scheduledtask</span><span class="sxs-lookup"><span data-stu-id="ef87d-133">scheduledtask</span></span>
+## <a name="scheduledtask"></a><span data-ttu-id="8298a-133">scheduledtask</span><span class="sxs-lookup"><span data-stu-id="8298a-133">scheduledtask</span></span>
 
 ```
 # Get all scheduled tasks
@@ -221,7 +221,7 @@ scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Eva
 ```
 
 
-## <a name="undo"></a><span data-ttu-id="ef87d-134">deshacer</span><span class="sxs-lookup"><span data-stu-id="ef87d-134">undo</span></span>
+## <a name="undo"></a><span data-ttu-id="8298a-134">deshacer</span><span class="sxs-lookup"><span data-stu-id="8298a-134">undo</span></span>
 
 ```
 # Restore remediated registry
