@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841191"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861724"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -42,13 +42,17 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
 Implemente el control Storage de acceso extraíble en dispositivos Windows 10 que tengan la versión de cliente antimalware **4.18.2103.3 o posterior.**
-1. **4.18.2104 o** posterior: Agregar SerialNumberId, VID_PID, compatibilidad con GPO basada en filepath
+1. **4.18.2104 o** posterior: Agregar SerialNumberId, VID_PID, compatibilidad con GPO basada en ruta de archivo, ComputerSid
 
 2. **4.18.2105** o posterior: Agregar compatibilidad con caracteres comodín para HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinación de usuario específico en una máquina específica, SSD extraíble (un SSD extremo de SanDisk)/compatibilidad con SCSI conectada a USB (UAS)
 
 :::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell":::
 
+   > [!NOTE]
+   > Ninguno de Seguridad de Windows componentes deben estar activos, puede ejecutar Removable Storage Access Control independientemente Seguridad de Windows estado.
+
 ## <a name="policy-properties"></a>Propiedades de la directiva
+
 
 Puede usar las siguientes propiedades para crear un grupo de almacenamiento extraíble:
 
@@ -87,6 +91,8 @@ Para cada propiedad de dispositivo, consulta **la sección Propiedades del** dis
 
     - MatchAny: los atributos de descriptorIdList serán **o** relación; por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema hará la aplicación siempre que el USB tenga un valor **DeviceID** o **InstanceID** idéntico.
 
+
+
 Las siguientes son las propiedades de la directiva de control de acceso:
 
 **Nombre de la propiedad: PolicyRuleId**
@@ -124,6 +130,14 @@ En el ejemplo siguiente se muestra el uso de GroupID:
     - AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar.**
 
 Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto **es Allow** y **Deny**.
+
+**Nombre de la propiedad: Sid**
+
+1. Descripción: define si se aplica esta directiva a usuarios o grupos de usuarios específicos; una entrada puede tener como máximo un Sid y una entrada sin ningún Sid significa aplicar la directiva sobre la máquina.
+
+**Nombre de la propiedad: ComputerSid**
+
+1. Descripción: define si se aplica esta directiva a un equipo o grupo de máquinas específicos; una entrada puede tener como máximo un ComputerSid y una entrada sin ningún ComputerSid significa aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue Sid y ComputerSid a la misma entrada.
 
 **Nombre de la propiedad: Opciones**
 

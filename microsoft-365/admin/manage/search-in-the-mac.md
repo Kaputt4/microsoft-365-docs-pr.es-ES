@@ -75,7 +75,7 @@ Los resultados proporcionan una forma de navegar rápidamente a una página espe
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Captura de pantalla: resultados de búsqueda que muestran la ruta de navegación en el Centro de administración":::
 
-## <a name="settings"></a>Configuraciones
+## <a name="settings"></a>Configuración
 
 Busque la configuración de nivel de aplicación compatible relacionada con su organización, los servicios a los que se suscriba y la configuración de seguridad y privacidad.
 
@@ -93,7 +93,7 @@ Una búsqueda de documentación proporciona documentación de ayuda relevante ba
 
 :::image type="content" source="../../media/search-for-docs-mac.png" alt-text="Captura de pantalla: búsqueda que muestra los resultados de la documentación en el Centro de administración":::
 
-## <a name="send-us-feedback"></a>Envíenos comentarios
+## <a name="send-us-feedback"></a>Enviarnos comentarios
 
 Use esta sección para enviar comentarios sobre la experiencia de búsqueda. No podemos responder a todos los comentarios, pero lo leemos todo y usamos sus comentarios para mejorar la experiencia de búsqueda. Asegúrate de proporcionar tantos detalles como puedas en tus comentarios.
 

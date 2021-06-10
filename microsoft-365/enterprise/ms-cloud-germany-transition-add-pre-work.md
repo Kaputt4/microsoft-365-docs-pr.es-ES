@@ -113,7 +113,7 @@ Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add
 | Limite SharePoint flujos de trabajo de 2013, úsenlo durante la SharePoint en línea. | Reduzca SharePoint flujos de trabajo de 2013 y complete los flujos de trabajo en el vuelo antes de las transiciones. | La inacción puede provocar confusión del usuario y llamadas al servicio de ayuda. |
 ||||
 
-## <a name="exchange-online"></a>Exchange en línea
+## <a name="exchange-online"></a>Exchange Online
 
 <!-- before phase 5 -->
 

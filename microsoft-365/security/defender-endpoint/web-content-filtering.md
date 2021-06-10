@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822327"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861700"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -61,7 +61,9 @@ Antes de probar esta característica, asegúrese de cumplir los siguientes requi
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5 complemento o la licencia independiente de Microsoft Defender para endpoint. 
 - Acceso a Centro de seguridad de Microsoft Defender portal ( https://securitycenter.windows.com) .
-- Dispositivos que Windows 10 actualización de aniversario (versión 1607) o posterior con la última actualización del motor antimalware de Microsoft Defender.
+- Dispositivos que Windows 10 actualización de aniversario (versión 1607) o posterior con la actualización más reciente de MoCAMP.
+- Windows Defender SmartScreen y protección de red habilitadas.
+
 
 ## <a name="data-handling"></a>Control de datos
 
@@ -162,4 +164,11 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 - Actualmente, los informes de filtrado de contenido web están limitados a mostrar los 5000 registros principales. Por ejemplo, el informe Dominios solo mostrará un máximo de los 5000 dominios principales para una consulta de filtro determinada, si procede. 
 
+
+
+- [Introducción a protección web](web-protection-overview.md)
+- [Protección contra amenazas web](web-threat-protection.md)
+- [Supervisar la seguridad web](web-protection-monitoring.md)
+- [Responder a amenazas web](web-protection-response.md)
+- [Requisitos de protección de red](web-content-filtering.md)
 

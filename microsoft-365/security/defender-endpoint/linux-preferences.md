@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346383"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861556"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -139,7 +139,7 @@ Se usa para excluir contenido del examen por ruta de acceso de archivo completa.
 
 **Tipo de ruta de acceso (archivo/directorio)**
 
-Indica si la *propiedad path* hace referencia a un archivo o directorio. 
+Indica si la *propiedad path* hace referencia a un archivo o directorio.
 
 |||
 |:---|:---|
@@ -397,7 +397,7 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
          },
          {
             "$type":"excludedFileExtension",
-            "extension":"pdf"
+            "extension":".pdf"
          },
          {
             "$type":"excludedFileName",
@@ -444,7 +444,7 @@ python -m json.tool mdatp_managed.json
 Si el JSON está bien formado, el comando anterior lo devuelve al Terminal y devuelve un código de salida de `0` . De lo contrario, se muestra un error que describe el problema y el comando devuelve un código de salida de `1` .
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Comprobar que el archivo mdatp_managed.jsestá funcionando según lo esperado
-Para comprobar que el /etc/opt/microsoft/mdatp/managed/mdatp_managed.json funciona correctamente, debería ver "[administrado]" junto a esta configuración:  
+Para comprobar que el /etc/opt/microsoft/mdatp/managed/mdatp_managed.json funciona correctamente, debería ver "[administrado]" junto a esta configuración:
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
 - passice_mode_enabled

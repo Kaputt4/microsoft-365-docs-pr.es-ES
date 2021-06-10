@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista de remitentes bloqueados de Microsoft 365.
+description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista Microsoft 365 remitentes bloqueados.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c4488f5e5607d71da35b2921e863fb02195467e2
@@ -40,7 +40,7 @@ ms.locfileid: "51206078"
 
 ## <a name="what-is-the-blocked-senders-list"></a>¿Qué es la lista de remitentes bloqueados?
 
-Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes contra el spam, la suplantación de identidad y los ataques de phishing. La dirección IP del servidor de correo, es decir, la dirección que el servidor de correo usa para identificarse en Internet, se etiquetó como una amenaza potencial para Microsoft 365 por una variedad de motivos. Cuando Microsoft 365 agrega la dirección IP a la lista, impide toda comunicación adicional entre la dirección IP y cualquiera de nuestros clientes a través de nuestros centros de datos.
+Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes contra el spam, la suplantación de identidad y los ataques de phishing. La dirección IP del servidor de correo, es decir, la dirección que el servidor de correo usa para identificarse en Internet, se etiquetó como una amenaza potencial para Microsoft 365 por una variedad de motivos. Cuando Microsoft 365 la dirección IP a la lista, impide toda comunicación adicional entre la dirección IP y cualquiera de nuestros clientes a través de nuestros centros de datos.
 
 Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje de correo que incluya un error similar al siguiente:
 
