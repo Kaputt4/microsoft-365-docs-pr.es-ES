@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Obtén información sobre cómo configurar directivas de dispositivos para Windows 10 que se aplican a todos los usuarios de la organización, asegurándose de que se conecten de forma segura.
+description: Obtenga información sobre cómo configurar directivas de dispositivos para Windows 10 que se aplican a todos los usuarios de la organización, lo que garantiza que se conecten de forma segura.
 ms.openlocfilehash: c7d27b903734f9348471bb7765b88650caeed9d5
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -35,12 +35,12 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580282"
 ---
-# <a name="configure-windows-10-devices"></a><span data-ttu-id="2a390-103">Configurar dispositivos con Windows 10</span><span class="sxs-lookup"><span data-stu-id="2a390-103">Configure Windows 10 devices</span></span>
+# <a name="configure-windows-10-devices"></a><span data-ttu-id="e22b1-103">Configurar dispositivos con Windows 10</span><span class="sxs-lookup"><span data-stu-id="e22b1-103">Configure Windows 10 devices</span></span>
 
-<span data-ttu-id="2a390-104">Durante la instalación, creas una directiva de dispositivo para Windows 10 que se aplica a todos los usuarios de tu organización.</span><span class="sxs-lookup"><span data-stu-id="2a390-104">During setup, you create a device policy for Windows 10 that applies to all users in your organization.</span></span> <span data-ttu-id="2a390-105">Cuando un usuario inicia sesión en una aplicación de Office en su dispositivo Windows 10 con su cuenta laboral o educativa, la configuración que configura se aplica automáticamente para asegurarse de que el usuario se conecta de forma segura.</span><span class="sxs-lookup"><span data-stu-id="2a390-105">When a user signs in to an Office app on their Windows 10 device with their work or school account, the settings you configure are automatically applied to make sure that the user is connecting in a secure way.</span></span>
+<span data-ttu-id="e22b1-104">Durante la instalación, creas una directiva de dispositivo para Windows 10 que se aplica a todos los usuarios de la organización.</span><span class="sxs-lookup"><span data-stu-id="e22b1-104">During setup, you create a device policy for Windows 10 that applies to all users in your organization.</span></span> <span data-ttu-id="e22b1-105">Cuando un usuario inicia sesión en un Aplicación de Office en su dispositivo Windows 10 con su cuenta laboral o educativa, la configuración que configura se aplica automáticamente para asegurarse de que el usuario se conecta de forma segura.</span><span class="sxs-lookup"><span data-stu-id="e22b1-105">When a user signs in to an Office app on their Windows 10 device with their work or school account, the settings you configure are automatically applied to make sure that the user is connecting in a secure way.</span></span>
   
-<span data-ttu-id="2a390-106">Le recomendamos que acepte las opciones predeterminadas durante la configuración.</span><span class="sxs-lookup"><span data-stu-id="2a390-106">We recommend that you accept the default configuration during setup.</span></span> <span data-ttu-id="2a390-107">Después de la instalación, puede crear más directivas y dirigirlas a grupos específicos de usuarios.</span><span class="sxs-lookup"><span data-stu-id="2a390-107">After setup, you can create more policies and target them to specific groups of users.</span></span>
+<span data-ttu-id="e22b1-106">Le recomendamos que acepte las opciones predeterminadas durante la configuración.</span><span class="sxs-lookup"><span data-stu-id="e22b1-106">We recommend that you accept the default configuration during setup.</span></span> <span data-ttu-id="e22b1-107">Después de la instalación, puede crear más directivas y dirigirlas a grupos específicos de usuarios.</span><span class="sxs-lookup"><span data-stu-id="e22b1-107">After setup, you can create more policies and target them to specific groups of users.</span></span>
   
-<span data-ttu-id="2a390-108">Para agregar una directiva para administrar configuraciones de dispositivo con Windows 10, vea [Establecer configuraciones de dispositivo para equipos PC con Windows 10](protection-settings-for-windows-10-pcs.md).</span><span class="sxs-lookup"><span data-stu-id="2a390-108">To add a policy to manage Windows 10 device configurations, see [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).</span></span>
+<span data-ttu-id="e22b1-108">Para agregar una directiva para administrar configuraciones de dispositivo con Windows 10, vea [Establecer configuraciones de dispositivo para equipos PC con Windows 10](protection-settings-for-windows-10-pcs.md).</span><span class="sxs-lookup"><span data-stu-id="e22b1-108">To add a policy to manage Windows 10 device configurations, see [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).</span></span>
   
 

@@ -28,43 +28,43 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "52706423"
 ---
-# <a name="change-a-users-name-or-email-address"></a><span data-ttu-id="1c624-103">Cambiar el nombre o la dirección de correo electrónico de un usuario</span><span class="sxs-lookup"><span data-stu-id="1c624-103">Change a user's name or email address</span></span>
+# <a name="change-a-users-name-or-email-address"></a><span data-ttu-id="dd22d-103">Cambiar el nombre o la dirección de correo electrónico de un usuario</span><span class="sxs-lookup"><span data-stu-id="dd22d-103">Change a user's name or email address</span></span>
 
-## <a name="watch-change-a-users-name-or-email-address"></a><span data-ttu-id="1c624-104">Ver: Cambiar el nombre o la dirección de correo electrónico de un usuario</span><span class="sxs-lookup"><span data-stu-id="1c624-104">Watch: Change a user's name or email address</span></span>
+## <a name="watch-change-a-users-name-or-email-address"></a><span data-ttu-id="dd22d-104">Ver: Cambiar el nombre o la dirección de correo electrónico de un usuario</span><span class="sxs-lookup"><span data-stu-id="dd22d-104">Watch: Change a user's name or email address</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
-<span data-ttu-id="1c624-105">En ocasiones, es posible que deba cambiar el nombre o la dirección de correo electrónico de un usuario.</span><span class="sxs-lookup"><span data-stu-id="1c624-105">Occasionally, you may need to change a user's name or email address.</span></span> <span data-ttu-id="1c624-106">Para ello, cambie su nombre para mostrar, su alias o su dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="1c624-106">You can do this by changing their display name, their alias, or their email address.</span></span> 
+<span data-ttu-id="dd22d-105">En ocasiones, es posible que deba cambiar el nombre o la dirección de correo electrónico de un usuario.</span><span class="sxs-lookup"><span data-stu-id="dd22d-105">Occasionally, you may need to change a user's name or email address.</span></span> <span data-ttu-id="dd22d-106">Para ello, cambie su nombre para mostrar, su alias o su dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="dd22d-106">You can do this by changing their display name, their alias, or their email address.</span></span> 
 
-## <a name="try-it"></a><span data-ttu-id="1c624-107">¿Se atreve?</span><span class="sxs-lookup"><span data-stu-id="1c624-107">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="dd22d-107">¿Se atreve?</span><span class="sxs-lookup"><span data-stu-id="dd22d-107">Try it!</span></span>
 
-### <a name="change-a-users-display-name"></a><span data-ttu-id="1c624-108">Cambiar el nombre para mostrar de un usuario</span><span class="sxs-lookup"><span data-stu-id="1c624-108">Change a user's display name</span></span>
+### <a name="change-a-users-display-name"></a><span data-ttu-id="dd22d-108">Cambiar el nombre para mostrar de un usuario</span><span class="sxs-lookup"><span data-stu-id="dd22d-108">Change a user's display name</span></span>
 
-1. <span data-ttu-id="1c624-109">En el Microsoft 365 de administración, seleccione **Usuarios** y, a continuación, **Usuarios activos.**</span><span class="sxs-lookup"><span data-stu-id="1c624-109">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
-1. <span data-ttu-id="1c624-110">Seleccione el usuario de la lista de usuarios activos.</span><span class="sxs-lookup"><span data-stu-id="1c624-110">Select the user from the list of active users.</span></span>
-1. <span data-ttu-id="1c624-111">Seleccione **Administrar información de contacto**.</span><span class="sxs-lookup"><span data-stu-id="1c624-111">Select **Manage contact information**.</span></span>
-1. <span data-ttu-id="1c624-112">Cambie el nombre para mostrar y seleccione **Guardar cambios**.</span><span class="sxs-lookup"><span data-stu-id="1c624-112">Change the display name, and select **Save changes**.</span></span>
+1. <span data-ttu-id="dd22d-109">En el Microsoft 365 de administración, seleccione **Usuarios** y, a continuación, **Usuarios activos.**</span><span class="sxs-lookup"><span data-stu-id="dd22d-109">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
+1. <span data-ttu-id="dd22d-110">Seleccione el usuario de la lista de usuarios activos.</span><span class="sxs-lookup"><span data-stu-id="dd22d-110">Select the user from the list of active users.</span></span>
+1. <span data-ttu-id="dd22d-111">Seleccione **Administrar información de contacto**.</span><span class="sxs-lookup"><span data-stu-id="dd22d-111">Select **Manage contact information**.</span></span>
+1. <span data-ttu-id="dd22d-112">Cambie el nombre para mostrar y seleccione **Guardar cambios**.</span><span class="sxs-lookup"><span data-stu-id="dd22d-112">Change the display name, and select **Save changes**.</span></span>
 
-    <span data-ttu-id="1c624-113">El nuevo nombre ahora se mostrará en Outlook y otras Microsoft 365 aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="1c624-113">The new name will now be displayed in Outlook and other Microsoft 365 apps.</span></span>
+    <span data-ttu-id="dd22d-113">El nuevo nombre ahora se mostrará en Outlook y otras Microsoft 365 aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="dd22d-113">The new name will now be displayed in Outlook and other Microsoft 365 apps.</span></span>
 
-### <a name="add-an-email-alias"></a><span data-ttu-id="1c624-114">Agregar un alias de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="1c624-114">Add an email alias</span></span>
+### <a name="add-an-email-alias"></a><span data-ttu-id="dd22d-114">Agregar un alias de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="dd22d-114">Add an email alias</span></span>
 
-1. <span data-ttu-id="1c624-115">En el Microsoft 365 de administración, seleccione **Usuarios** y, a continuación, **Usuarios activos.**</span><span class="sxs-lookup"><span data-stu-id="1c624-115">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
-1. <span data-ttu-id="1c624-116">Seleccione el usuario de la lista de usuarios activos.</span><span class="sxs-lookup"><span data-stu-id="1c624-116">Select the user from the list of active users.</span></span>
-1. <span data-ttu-id="1c624-117">Seleccione **Administrar alias de correo** electrónico .</span><span class="sxs-lookup"><span data-stu-id="1c624-117">Select **Manage email aliases**.</span></span>
-1. <span data-ttu-id="1c624-118">Escriba el nuevo alias, compruebe el dominio y seleccione **Guardar cambios**.</span><span class="sxs-lookup"><span data-stu-id="1c624-118">Enter the new alias, verify the domain, and select **Save changes**.</span></span>
+1. <span data-ttu-id="dd22d-115">En el Microsoft 365 de administración, seleccione **Usuarios** y, a continuación, **Usuarios activos.**</span><span class="sxs-lookup"><span data-stu-id="dd22d-115">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
+1. <span data-ttu-id="dd22d-116">Seleccione el usuario de la lista de usuarios activos.</span><span class="sxs-lookup"><span data-stu-id="dd22d-116">Select the user from the list of active users.</span></span>
+1. <span data-ttu-id="dd22d-117">Seleccione **Administrar alias de correo** electrónico .</span><span class="sxs-lookup"><span data-stu-id="dd22d-117">Select **Manage email aliases**.</span></span>
+1. <span data-ttu-id="dd22d-118">Escriba el nuevo alias, compruebe el dominio y seleccione **Guardar cambios**.</span><span class="sxs-lookup"><span data-stu-id="dd22d-118">Enter the new alias, verify the domain, and select **Save changes**.</span></span>
 
-### <a name="change-a-username"></a><span data-ttu-id="1c624-119">Cambiar un nombre de usuario</span><span class="sxs-lookup"><span data-stu-id="1c624-119">Change a username</span></span>
+### <a name="change-a-username"></a><span data-ttu-id="dd22d-119">Cambiar un nombre de usuario</span><span class="sxs-lookup"><span data-stu-id="dd22d-119">Change a username</span></span>
 
-1. <span data-ttu-id="1c624-120">En el Microsoft 365 de administración, seleccione **Usuarios** y, a continuación, **Usuarios activos.**</span><span class="sxs-lookup"><span data-stu-id="1c624-120">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
-1. <span data-ttu-id="1c624-121">Seleccione el usuario de la lista de usuarios activos.</span><span class="sxs-lookup"><span data-stu-id="1c624-121">Select the user from the list of active users.</span></span>
-1. <span data-ttu-id="1c624-122">Seleccione **Administrar nombre de usuario**.</span><span class="sxs-lookup"><span data-stu-id="1c624-122">Select **Manage username**.</span></span>
-1. <span data-ttu-id="1c624-123">Escriba el nuevo nombre de usuario, compruebe el dominio y seleccione **Guardar cambios**.</span><span class="sxs-lookup"><span data-stu-id="1c624-123">Enter the new username, verify the domain, and select **Save changes**.</span></span>
+1. <span data-ttu-id="dd22d-120">En el Microsoft 365 de administración, seleccione **Usuarios** y, a continuación, **Usuarios activos.**</span><span class="sxs-lookup"><span data-stu-id="dd22d-120">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
+1. <span data-ttu-id="dd22d-121">Seleccione el usuario de la lista de usuarios activos.</span><span class="sxs-lookup"><span data-stu-id="dd22d-121">Select the user from the list of active users.</span></span>
+1. <span data-ttu-id="dd22d-122">Seleccione **Administrar nombre de usuario**.</span><span class="sxs-lookup"><span data-stu-id="dd22d-122">Select **Manage username**.</span></span>
+1. <span data-ttu-id="dd22d-123">Escriba el nuevo nombre de usuario, compruebe el dominio y seleccione **Guardar cambios**.</span><span class="sxs-lookup"><span data-stu-id="dd22d-123">Enter the new username, verify the domain, and select **Save changes**.</span></span>
 
-    <span data-ttu-id="1c624-124">Como resultado de este cambio, el usuario tendrá que iniciar sesión en Microsoft 365 con este nuevo nombre de usuario y agregar la nueva cuenta de correo electrónico a Outlook.</span><span class="sxs-lookup"><span data-stu-id="1c624-124">As a result of this change, the user will need to sign in to Microsoft 365 with this new username and add the new email account to Outlook.</span></span>
+    <span data-ttu-id="dd22d-124">Como resultado de este cambio, el usuario tendrá que iniciar sesión en Microsoft 365 con este nuevo nombre de usuario y agregar la nueva cuenta de correo electrónico a Outlook.</span><span class="sxs-lookup"><span data-stu-id="dd22d-124">As a result of this change, the user will need to sign in to Microsoft 365 with this new username and add the new email account to Outlook.</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="1c624-125">Contenido relacionado</span><span class="sxs-lookup"><span data-stu-id="1c624-125">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="dd22d-125">Contenido relacionado</span><span class="sxs-lookup"><span data-stu-id="dd22d-125">Related content</span></span>
 
-<span data-ttu-id="1c624-126">[Conceder permisos de buzón a otro usuario](../admin/add-users/give-mailbox-permissions-to-another-user.md) (artículo)</span><span class="sxs-lookup"><span data-stu-id="1c624-126">[Give mailbox permissions to another user](../admin/add-users/give-mailbox-permissions-to-another-user.md) (article)</span></span>\
-<span data-ttu-id="1c624-127">[Convertir un buzón de usuario en un buzón compartido](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (artículo)</span><span class="sxs-lookup"><span data-stu-id="1c624-127">[Convert a user mailbox to a shared mailbox](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (article)</span></span>\
-<span data-ttu-id="1c624-128">[Configuración de correo electrónico del usuario](../admin/email/office-365-user-email-settings.md) (artículo)</span><span class="sxs-lookup"><span data-stu-id="1c624-128">[User email settings](../admin/email/office-365-user-email-settings.md) (article)</span></span>
+<span data-ttu-id="dd22d-126">[Conceder permisos de buzón a otro usuario](../admin/add-users/give-mailbox-permissions-to-another-user.md) (artículo)</span><span class="sxs-lookup"><span data-stu-id="dd22d-126">[Give mailbox permissions to another user](../admin/add-users/give-mailbox-permissions-to-another-user.md) (article)</span></span>\
+<span data-ttu-id="dd22d-127">[Convertir un buzón de usuario en un buzón compartido](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (artículo)</span><span class="sxs-lookup"><span data-stu-id="dd22d-127">[Convert a user mailbox to a shared mailbox](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (article)</span></span>\
+<span data-ttu-id="dd22d-128">[Configuración de correo electrónico del usuario](../admin/email/office-365-user-email-settings.md) (artículo)</span><span class="sxs-lookup"><span data-stu-id="dd22d-128">[User email settings](../admin/email/office-365-user-email-settings.md) (article)</span></span>
