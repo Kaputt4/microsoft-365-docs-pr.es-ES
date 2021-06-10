@@ -19,26 +19,26 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298859"
 ---
-# <a name="contact-support-for-france"></a><span data-ttu-id="112ab-103">Póngase en contacto con el soporte técnico de Francia</span><span class="sxs-lookup"><span data-stu-id="112ab-103">Contact support for France</span></span>
+# <a name="contact-support-for-france"></a><span data-ttu-id="091f8-103">Póngase en contacto con el soporte técnico de Francia</span><span class="sxs-lookup"><span data-stu-id="091f8-103">Contact support for France</span></span>
 
-<span data-ttu-id="112ab-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="112ab-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="091f8-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="091f8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="112ab-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="112ab-105">Phone number</span></span>
-<span data-ttu-id="112ab-106">0805 540 594</span><span class="sxs-lookup"><span data-stu-id="112ab-106">0805 540 594</span></span>
+## <a name="phone-number"></a><span data-ttu-id="091f8-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="091f8-105">Phone number</span></span>
+<span data-ttu-id="091f8-106">0805 540 594</span><span class="sxs-lookup"><span data-stu-id="091f8-106">0805 540 594</span></span>
 
-## <a name="hours"></a><span data-ttu-id="112ab-107">Horas</span><span class="sxs-lookup"><span data-stu-id="112ab-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="112ab-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="112ab-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="091f8-107">Horas</span><span class="sxs-lookup"><span data-stu-id="091f8-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="091f8-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="091f8-108">Billing Support:</span></span>
 
-<span data-ttu-id="112ab-109">Francés: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="112ab-109">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="091f8-109">Francés: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="091f8-109">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="112ab-110">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="112ab-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="091f8-110">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="091f8-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="112ab-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="112ab-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="091f8-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="091f8-111">Technical Support:</span></span>
 
-<span data-ttu-id="112ab-112">Francés: Mon-Fri 8 AM-9 PM</span><span class="sxs-lookup"><span data-stu-id="112ab-112">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="091f8-112">Francés: Mon-Fri 8 AM-9 PM</span><span class="sxs-lookup"><span data-stu-id="091f8-112">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="112ab-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="112ab-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="091f8-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="091f8-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="112ab-114">Número Teléfono alternativa: 01 57 32 42 97</span><span class="sxs-lookup"><span data-stu-id="112ab-114">Alternative Phone Number: 01 57 32 42 97</span></span>
+<span data-ttu-id="091f8-114">Número Teléfono alternativa: 01 57 32 42 97</span><span class="sxs-lookup"><span data-stu-id="091f8-114">Alternative Phone Number: 01 57 32 42 97</span></span>
 
-<span data-ttu-id="112ab-115">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="112ab-115">Local call charges apply</span></span>
+<span data-ttu-id="091f8-115">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="091f8-115">Local call charges apply</span></span>

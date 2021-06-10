@@ -19,24 +19,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297853"
 ---
-# <a name="contact-support-for-portugal"></a><span data-ttu-id="ca725-103">Póngase en contacto con el soporte técnico para Portugal</span><span class="sxs-lookup"><span data-stu-id="ca725-103">Contact support for Portugal</span></span>
+# <a name="contact-support-for-portugal"></a><span data-ttu-id="a65e8-103">Póngase en contacto con el soporte técnico para Portugal</span><span class="sxs-lookup"><span data-stu-id="a65e8-103">Contact support for Portugal</span></span>
 
-<span data-ttu-id="ca725-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="ca725-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="a65e8-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="a65e8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="ca725-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="ca725-105">Phone number</span></span>
-<span data-ttu-id="ca725-106">800 208 745</span><span class="sxs-lookup"><span data-stu-id="ca725-106">800 208 745</span></span>
+## <a name="phone-number"></a><span data-ttu-id="a65e8-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="a65e8-105">Phone number</span></span>
+<span data-ttu-id="a65e8-106">800 208 745</span><span class="sxs-lookup"><span data-stu-id="a65e8-106">800 208 745</span></span>
 
-## <a name="hours"></a><span data-ttu-id="ca725-107">Horas</span><span class="sxs-lookup"><span data-stu-id="ca725-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="ca725-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="ca725-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="a65e8-107">Horas</span><span class="sxs-lookup"><span data-stu-id="a65e8-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="a65e8-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="a65e8-108">Billing Support:</span></span>
 
-<span data-ttu-id="ca725-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="ca725-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="a65e8-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="a65e8-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="ca725-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="ca725-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="a65e8-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="a65e8-110">Technical Support:</span></span>
 
-<span data-ttu-id="ca725-111">Portugués: Mon-Fri 8 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="ca725-111">Portuguese: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="a65e8-111">Portugués: Mon-Fri 8 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="a65e8-111">Portuguese: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="ca725-112">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="ca725-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="a65e8-112">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="a65e8-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="ca725-113">Número Teléfono alternativa: 21 366 5030</span><span class="sxs-lookup"><span data-stu-id="ca725-113">Alternative Phone Number: 21 366 5030</span></span>
+<span data-ttu-id="a65e8-113">Número Teléfono alternativa: 21 366 5030</span><span class="sxs-lookup"><span data-stu-id="a65e8-113">Alternative Phone Number: 21 366 5030</span></span>
 
-<span data-ttu-id="ca725-114">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="ca725-114">Local call charges apply</span></span>
+<span data-ttu-id="a65e8-114">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="a65e8-114">Local call charges apply</span></span>

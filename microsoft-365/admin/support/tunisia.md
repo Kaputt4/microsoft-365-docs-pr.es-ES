@@ -19,34 +19,34 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297529"
 ---
-# <a name="contact-support-for-tunisia"></a><span data-ttu-id="c7442-103">Póngase en contacto con el soporte técnico de Túnez</span><span class="sxs-lookup"><span data-stu-id="c7442-103">Contact support for Tunisia</span></span>
+# <a name="contact-support-for-tunisia"></a><span data-ttu-id="dc2c3-103">Póngase en contacto con el soporte técnico de Túnez</span><span class="sxs-lookup"><span data-stu-id="dc2c3-103">Contact support for Tunisia</span></span>
 
-<span data-ttu-id="c7442-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c7442-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="dc2c3-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="dc2c3-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c7442-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="c7442-105">Phone number</span></span>
-<span data-ttu-id="c7442-106">71 168 700</span><span class="sxs-lookup"><span data-stu-id="c7442-106">71 168 700</span></span>
+## <a name="phone-number"></a><span data-ttu-id="dc2c3-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="dc2c3-105">Phone number</span></span>
+<span data-ttu-id="dc2c3-106">71 168 700</span><span class="sxs-lookup"><span data-stu-id="dc2c3-106">71 168 700</span></span>
 
-<span data-ttu-id="c7442-107">Seleccionar la opción 1</span><span class="sxs-lookup"><span data-stu-id="c7442-107">Select option 1</span></span>
+<span data-ttu-id="dc2c3-107">Seleccionar la opción 1</span><span class="sxs-lookup"><span data-stu-id="dc2c3-107">Select option 1</span></span>
 
-<span data-ttu-id="c7442-108">Seleccionar la opción 9</span><span class="sxs-lookup"><span data-stu-id="c7442-108">Select option 9</span></span>
+<span data-ttu-id="dc2c3-108">Seleccionar la opción 9</span><span class="sxs-lookup"><span data-stu-id="dc2c3-108">Select option 9</span></span>
 
-<span data-ttu-id="c7442-109">Escriba el código 7703</span><span class="sxs-lookup"><span data-stu-id="c7442-109">Enter code 7703</span></span>
+<span data-ttu-id="dc2c3-109">Escriba el código 7703</span><span class="sxs-lookup"><span data-stu-id="dc2c3-109">Enter code 7703</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c7442-110">Horas</span><span class="sxs-lookup"><span data-stu-id="c7442-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c7442-111">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="c7442-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="dc2c3-110">Horas</span><span class="sxs-lookup"><span data-stu-id="dc2c3-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="dc2c3-111">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="dc2c3-111">Billing Support:</span></span>
 
-<span data-ttu-id="c7442-112">Árabe: Sun-Thu 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="c7442-112">Arabic: Sun-Thu 9 AM-5 PM</span></span>
+<span data-ttu-id="dc2c3-112">Árabe: Sun-Thu 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="dc2c3-112">Arabic: Sun-Thu 9 AM-5 PM</span></span>
 
-<span data-ttu-id="c7442-113">Francés: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="c7442-113">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="dc2c3-113">Francés: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="dc2c3-113">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="c7442-114">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="c7442-114">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="dc2c3-114">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="dc2c3-114">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c7442-115">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="c7442-115">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="dc2c3-115">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="dc2c3-115">Technical Support:</span></span>
 
-<span data-ttu-id="c7442-116">Árabe: Sun-Thu 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="c7442-116">Arabic: Sun-Thu 9 AM-5 PM</span></span>
+<span data-ttu-id="dc2c3-116">Árabe: Sun-Thu 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="dc2c3-116">Arabic: Sun-Thu 9 AM-5 PM</span></span>
 
-<span data-ttu-id="c7442-117">Francés: Mon-Fri 8 AM-9 PM</span><span class="sxs-lookup"><span data-stu-id="c7442-117">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="dc2c3-117">Francés: Mon-Fri 8 AM-9 PM</span><span class="sxs-lookup"><span data-stu-id="dc2c3-117">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="c7442-118">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="c7442-118">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="dc2c3-118">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="dc2c3-118">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="c7442-119">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="c7442-119">Local call charges apply</span></span>
+<span data-ttu-id="dc2c3-119">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="dc2c3-119">Local call charges apply</span></span>

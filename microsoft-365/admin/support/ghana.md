@@ -19,24 +19,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298811"
 ---
-# <a name="contact-support-for-ghana"></a><span data-ttu-id="c7ca6-103">Póngase en contacto con el soporte técnico de Ghana</span><span class="sxs-lookup"><span data-stu-id="c7ca6-103">Contact support for Ghana</span></span>
+# <a name="contact-support-for-ghana"></a><span data-ttu-id="1cabe-103">Póngase en contacto con el soporte técnico de Ghana</span><span class="sxs-lookup"><span data-stu-id="1cabe-103">Contact support for Ghana</span></span>
 
-<span data-ttu-id="c7ca6-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c7ca6-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="1cabe-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="1cabe-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c7ca6-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="c7ca6-105">Phone number</span></span>
-<span data-ttu-id="c7ca6-106">+234 1 271 0156</span><span class="sxs-lookup"><span data-stu-id="c7ca6-106">+234 1 271 0156</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1cabe-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="1cabe-105">Phone number</span></span>
+<span data-ttu-id="1cabe-106">+234 1 271 0156</span><span class="sxs-lookup"><span data-stu-id="1cabe-106">+234 1 271 0156</span></span>
 
-<span data-ttu-id="c7ca6-107">Seleccionar la opción 9</span><span class="sxs-lookup"><span data-stu-id="c7ca6-107">Select option 9</span></span>
+<span data-ttu-id="1cabe-107">Seleccionar la opción 9</span><span class="sxs-lookup"><span data-stu-id="1cabe-107">Select option 9</span></span>
 
-<span data-ttu-id="c7ca6-108">Escriba el código 7704</span><span class="sxs-lookup"><span data-stu-id="c7ca6-108">Enter code 7704</span></span>
+<span data-ttu-id="1cabe-108">Escriba el código 7704</span><span class="sxs-lookup"><span data-stu-id="1cabe-108">Enter code 7704</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c7ca6-109">Horas</span><span class="sxs-lookup"><span data-stu-id="c7ca6-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c7ca6-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="c7ca6-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1cabe-109">Horas</span><span class="sxs-lookup"><span data-stu-id="1cabe-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1cabe-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="1cabe-110">Billing Support:</span></span>
 
-<span data-ttu-id="c7ca6-111">Inglés: Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="c7ca6-111">English: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="1cabe-111">Inglés: Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="1cabe-111">English: Mon-Fri 8 AM-4 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c7ca6-112">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="c7ca6-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1cabe-112">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="1cabe-112">Technical Support:</span></span>
 
-<span data-ttu-id="c7ca6-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="c7ca6-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1cabe-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="1cabe-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="c7ca6-114">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="c7ca6-114">International call charges apply</span></span>
+<span data-ttu-id="1cabe-114">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="1cabe-114">International call charges apply</span></span>

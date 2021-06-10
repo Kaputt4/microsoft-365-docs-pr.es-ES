@@ -19,20 +19,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297959"
 ---
-# <a name="contact-support-for-norfolk-island"></a><span data-ttu-id="37b06-103">Póngase en contacto con el soporte técnico de Norfolk Island</span><span class="sxs-lookup"><span data-stu-id="37b06-103">Contact support for Norfolk Island</span></span>
+# <a name="contact-support-for-norfolk-island"></a><span data-ttu-id="041cc-103">Póngase en contacto con el soporte técnico de Norfolk Island</span><span class="sxs-lookup"><span data-stu-id="041cc-103">Contact support for Norfolk Island</span></span>
 
-<span data-ttu-id="37b06-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="37b06-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="041cc-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="041cc-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="37b06-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="37b06-105">Phone number</span></span>
-<span data-ttu-id="37b06-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="37b06-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="041cc-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="041cc-105">Phone number</span></span>
+<span data-ttu-id="041cc-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="041cc-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="37b06-107">Horas</span><span class="sxs-lookup"><span data-stu-id="37b06-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="37b06-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="37b06-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="041cc-107">Horas</span><span class="sxs-lookup"><span data-stu-id="041cc-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="041cc-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="041cc-108">Billing Support:</span></span>
 
-<span data-ttu-id="37b06-109">Inglés: Mon-Fri 12 PM-8 PM</span><span class="sxs-lookup"><span data-stu-id="37b06-109">English: Mon-Fri 12 PM-8 PM</span></span>
+<span data-ttu-id="041cc-109">Inglés: Mon-Fri 12 PM-8 PM</span><span class="sxs-lookup"><span data-stu-id="041cc-109">English: Mon-Fri 12 PM-8 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="37b06-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="37b06-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="041cc-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="041cc-110">Technical Support:</span></span>
 
-<span data-ttu-id="37b06-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="37b06-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="041cc-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="041cc-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="37b06-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="37b06-112">International call charges apply</span></span>
+<span data-ttu-id="041cc-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="041cc-112">International call charges apply</span></span>

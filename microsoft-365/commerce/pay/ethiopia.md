@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52535559"
 ---
-# <a name="payment-information-for-ethiopia"></a><span data-ttu-id="06702-103">Información de pago para Etiopía</span><span class="sxs-lookup"><span data-stu-id="06702-103">Payment information for Ethiopia</span></span>
+# <a name="payment-information-for-ethiopia"></a><span data-ttu-id="adb59-103">Información de pago para Etiopía</span><span class="sxs-lookup"><span data-stu-id="adb59-103">Payment information for Ethiopia</span></span>
 
-<span data-ttu-id="06702-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="06702-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="adb59-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="adb59-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="06702-105">Pague solo en USD y haga referencia a los números de factura en su remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="06702-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="adb59-105">Pague solo en USD y haga referencia a los números de factura en su remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="adb59-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="06702-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="06702-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="adb59-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="adb59-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="06702-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="06702-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="06702-108">**Código SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="06702-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="06702-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="06702-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="06702-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="06702-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="06702-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="06702-111">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="adb59-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="adb59-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="adb59-108">**Código SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="adb59-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="adb59-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="adb59-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="adb59-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="adb59-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="adb59-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="adb59-111">**Account Name:** MICROSOFT</span></span>

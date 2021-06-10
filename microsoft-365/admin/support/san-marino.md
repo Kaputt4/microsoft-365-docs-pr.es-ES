@@ -19,24 +19,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297769"
 ---
-# <a name="contact-support-for-san-marino"></a><span data-ttu-id="18a41-103">Póngase en contacto con el soporte técnico de San Marino</span><span class="sxs-lookup"><span data-stu-id="18a41-103">Contact support for San Marino</span></span>
+# <a name="contact-support-for-san-marino"></a><span data-ttu-id="73be2-103">Póngase en contacto con el soporte técnico de San Marino</span><span class="sxs-lookup"><span data-stu-id="73be2-103">Contact support for San Marino</span></span>
 
-<span data-ttu-id="18a41-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="18a41-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="73be2-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="73be2-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="18a41-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="18a41-105">Phone number</span></span>
-<span data-ttu-id="18a41-106">+1 312 843 5154</span><span class="sxs-lookup"><span data-stu-id="18a41-106">+1 312 843 5154</span></span>
+## <a name="phone-number"></a><span data-ttu-id="73be2-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="73be2-105">Phone number</span></span>
+<span data-ttu-id="73be2-106">+1 312 843 5154</span><span class="sxs-lookup"><span data-stu-id="73be2-106">+1 312 843 5154</span></span>
 
-## <a name="hours"></a><span data-ttu-id="18a41-107">Horas</span><span class="sxs-lookup"><span data-stu-id="18a41-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="18a41-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="18a41-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="73be2-107">Horas</span><span class="sxs-lookup"><span data-stu-id="73be2-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="73be2-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="73be2-108">Billing Support:</span></span>
 
-<span data-ttu-id="18a41-109">Italiano: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="18a41-109">Italian: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="73be2-109">Italiano: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="73be2-109">Italian: Mon-Fri 10 AM-6 PM</span></span>
 
-<span data-ttu-id="18a41-110">Inglés: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="18a41-110">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="73be2-110">Inglés: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="73be2-110">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="18a41-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="18a41-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="73be2-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="73be2-111">Technical Support:</span></span>
 
-<span data-ttu-id="18a41-112">Italiano: Mon-Fri 9 AM-10 PM</span><span class="sxs-lookup"><span data-stu-id="18a41-112">Italian: Mon-Fri 9 AM-10 PM</span></span>
+<span data-ttu-id="73be2-112">Italiano: Mon-Fri 9 AM-10 PM</span><span class="sxs-lookup"><span data-stu-id="73be2-112">Italian: Mon-Fri 9 AM-10 PM</span></span>
 
-<span data-ttu-id="18a41-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="18a41-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="73be2-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="73be2-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="18a41-114">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="18a41-114">International call charges apply</span></span>
+<span data-ttu-id="73be2-114">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="73be2-114">International call charges apply</span></span>

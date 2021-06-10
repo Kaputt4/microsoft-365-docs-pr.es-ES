@@ -19,18 +19,18 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297877"
 ---
-# <a name="contact-support-for-peru"></a><span data-ttu-id="fe9ec-103">Póngase en contacto con el soporte técnico para Perú</span><span class="sxs-lookup"><span data-stu-id="fe9ec-103">Contact support for Peru</span></span>
+# <a name="contact-support-for-peru"></a><span data-ttu-id="1b72a-103">Póngase en contacto con el soporte técnico para Perú</span><span class="sxs-lookup"><span data-stu-id="1b72a-103">Contact support for Peru</span></span>
 
-<span data-ttu-id="fe9ec-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="fe9ec-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="1b72a-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="1b72a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="fe9ec-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="fe9ec-105">Phone number</span></span>
-<span data-ttu-id="fe9ec-106">0800 77 464</span><span class="sxs-lookup"><span data-stu-id="fe9ec-106">0800 77 464</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1b72a-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="1b72a-105">Phone number</span></span>
+<span data-ttu-id="1b72a-106">0800 77 464</span><span class="sxs-lookup"><span data-stu-id="1b72a-106">0800 77 464</span></span>
 
-## <a name="hours"></a><span data-ttu-id="fe9ec-107">Horas</span><span class="sxs-lookup"><span data-stu-id="fe9ec-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="fe9ec-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="fe9ec-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1b72a-107">Horas</span><span class="sxs-lookup"><span data-stu-id="1b72a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1b72a-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="1b72a-108">Billing Support:</span></span>
 
-<span data-ttu-id="fe9ec-109">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="fe9ec-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="1b72a-109">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="1b72a-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="fe9ec-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="fe9ec-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1b72a-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="1b72a-110">Technical Support:</span></span>
 
-<span data-ttu-id="fe9ec-111">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="fe9ec-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1b72a-111">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="1b72a-111">Spanish: 24 hours a day, 7 days a week</span></span>

@@ -19,20 +19,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298883"
 ---
-# <a name="contact-support-for-falkland-islands"></a><span data-ttu-id="a33a8-103">Póngase en contacto con el soporte técnico de islas Malvinas</span><span class="sxs-lookup"><span data-stu-id="a33a8-103">Contact support for Falkland Islands</span></span>
+# <a name="contact-support-for-falkland-islands"></a><span data-ttu-id="bac22-103">Póngase en contacto con el soporte técnico de islas Malvinas</span><span class="sxs-lookup"><span data-stu-id="bac22-103">Contact support for Falkland Islands</span></span>
 
-<span data-ttu-id="a33a8-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="a33a8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="bac22-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="bac22-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a33a8-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="a33a8-105">Phone number</span></span>
-<span data-ttu-id="a33a8-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="a33a8-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="bac22-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="bac22-105">Phone number</span></span>
+<span data-ttu-id="bac22-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="bac22-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a33a8-107">Horas</span><span class="sxs-lookup"><span data-stu-id="a33a8-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a33a8-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="a33a8-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="bac22-107">Horas</span><span class="sxs-lookup"><span data-stu-id="bac22-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="bac22-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="bac22-108">Billing Support:</span></span>
 
-<span data-ttu-id="a33a8-109">Inglés: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="a33a8-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="bac22-109">Inglés: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="bac22-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a33a8-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="a33a8-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="bac22-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="bac22-110">Technical Support:</span></span>
 
-<span data-ttu-id="a33a8-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="a33a8-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="bac22-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="bac22-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="a33a8-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="a33a8-112">International call charges apply</span></span>
+<span data-ttu-id="bac22-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="bac22-112">International call charges apply</span></span>
