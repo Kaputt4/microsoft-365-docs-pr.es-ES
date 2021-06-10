@@ -57,10 +57,10 @@ En la tabla siguiente se resume lo que sucede con Antivirus de Microsoft Defende
 
 | Versión de Windows   | Solución antivirus/antimalware  | Incorporado a <br/> ¿Defender para endpoint? | Antivirus de Microsoft Defender estado     |
 |------|------|-------|-------|
-| Windows 10  | Antivirus de Microsoft Defender | Sí  | Modo activo | 
-| Windows 10  | Antivirus de Microsoft Defender | No   | Modo activo |
-| Windows 10  | Una solución antivirus o antimalware que no es de Microsoft | Sí  | Modo pasivo (automáticamente) |
-| Windows 10  | Una solución antivirus o antimalware que no es de Microsoft | No   | Modo deshabilitado (automáticamente)    |
+| Windows 10  | Antivirus de Microsoft Defender | Sí  | Modo activo | 
+| Windows 10  | Antivirus de Microsoft Defender | No   | Modo activo |
+| Windows 10  | Una solución antivirus o antimalware que no es de Microsoft | Sí  | Modo pasivo (automáticamente) |
+| Windows 10  | Una solución antivirus o antimalware que no es de Microsoft | No   | Modo deshabilitado (automáticamente)    |
 | Windows Servidor, versión 1803 o posterior <p> Windows Server 2019 | Antivirus de Microsoft Defender  | Sí |         Modo activo  |
 | Windows Servidor, versión 1803 o posterior <p> Windows Server 2019 | Antivirus de Microsoft Defender | No  | Modo activo |
 | Windows Servidor, versión 1803 o posterior <p> Windows Server 2019 | Una solución antivirus o antimalware que no es de Microsoft | Sí  | Antivirus de Microsoft Defender debe establecerse en modo pasivo (manualmente) <sup> [[1](#fn1)]<sup>  | 
@@ -99,7 +99,7 @@ En la tabla de esta sección se resumen las funciones y características que est
 > [!IMPORTANT]
 > No desactive las funcionalidades, como la protección en tiempo real, la protección entregada en la nube o el examen periódico limitado, si usa Antivirus de Microsoft Defender en modo pasivo o está usando EDR en modo de bloqueo. 
 
-|Protection |Modo activo |Modo pasivo |EDR en modo bloqueo |Deshabilitado o desinstalado |
+|Protección |Modo activo |Modo pasivo |EDR en modo bloqueo |Deshabilitado o desinstalado |
 |:---|:---|:---|:---|:---|
 | [Protección en tiempo real y](configure-real-time-protection-microsoft-defender-antivirus.md) protección entregada en la [nube](enable-cloud-protection-microsoft-defender-antivirus.md) | Sí | No <sup> [[3](#fn3)]<sup> | No | No |
 | [Disponibilidad limitada de análisis periódico](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | No | Sí |

@@ -4,6 +4,7 @@ keywords: Acceso controlado a carpetas, windows 10, Windows Defender, ransomware
 description: Obtenga información sobre cómo proteger los archivos importantes habilitando acceso controlado a carpetas
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1d09eaf04999478a0cd0b4907667a522a23fb39f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841983"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861229"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -36,7 +37,7 @@ ms.locfileid: "52841983"
 Puede habilitar el acceso controlado a carpetas mediante cualquiera de estos métodos:
 
 * [Seguridad de Windows app](#windows-security-app)
-* [Microsoft Intune](#intune)
+* [Microsoft Endpoint Manager](#endpoint-manager)
 * [Administración de dispositivos móviles (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Directiva de grupo](#group-policy)
@@ -64,24 +65,30 @@ Para obtener más información sobre cómo deshabilitar la combinación de lista
 > Si la característica está establecida en **modo auditoría** con cualquiera de estas herramientas, la Seguridad de Windows aplicación mostrará el estado como **Desactivado**.
 > Si protege los datos de perfil de usuario, se recomienda que el perfil de usuario esté en la unidad de instalación Windows usuario predeterminada.
 
-## <a name="intune"></a>Intune
+## <a name="endpoint-manager"></a>Endpoint Manager
 
-1. Inicie sesión en [Azure Portal y](https://portal.azure.com) abra Intune.
+1. Inicie sesión en el [Endpoint Manager](https://endpoint.microsoft.com) y abra **Endpoint Security**.
 
-2. Vaya a **Perfiles de configuración**  >  **de dispositivo Crear**  >  **perfil**.
+2. Ve a **Directiva de reducción de superficie de**  >  **ataque**.
 
-3. Asigne un nombre al perfil, **elija Windows 10 y posterior y** Endpoint **protection**. <br/> ![Crear perfil de protección de puntos de conexión](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. Selecciona **Plataforma,** elige **Windows 10 y posteriores** y selecciona el perfil Reglas de **reducción** de superficie de ataque  >  **Crear**.
 
-4. Vaya a **Configure Windows Defender**  >  **Exploit Guard** Controlled folder  >  **access**  >  **Enable**.
+4.  Asigne un nombre a la directiva y agregue una descripción. Seleccione **Siguiente**.
 
-5. Escriba la ruta de acceso a cada aplicación que tenga acceso a carpetas protegidas y la ruta de acceso a cualquier carpeta adicional que necesite protección. Seleccione **Agregar**.<br/> ![Habilitar el acceso controlado a carpetas en Intune](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5.  Desplácese hacia abajo hasta la parte inferior, seleccione la lista desplegable **Habilitar** protección de carpetas y elija **Habilitar**.
+
+6.  Seleccione **Lista de carpetas adicionales que deben protegerse** y agregue las carpetas que deben protegerse.
+
+7.  Selecciona **Lista de aplicaciones que tienen acceso a carpetas** protegidas y agrega las aplicaciones que tienen acceso a carpetas protegidas.
+
+8.  Selecciona **Excluir archivos y rutas de acceso de** las reglas de reducción de superficie de ataque y agrega los archivos y rutas de acceso que deben excluirse de las reglas de reducción de superficie de ataque.
+
+9.  Seleccione el perfil Asignaciones , asignar a **Todos los usuarios & Todos** los **dispositivos** y seleccione **Guardar**.
+
+10.  Seleccione **Siguiente** para guardar cada hoja abierta y, a continuación, **Crear**.
 
    > [!NOTE]
-   > Wilcard es compatible con aplicaciones, pero no para carpetas. Las subcarpetas no están protegidas. Las aplicaciones permitidas seguirán desencadenando eventos hasta que se reinicien.
-
-6. Seleccione **Aceptar** para guardar cada hoja abierta y **Crear**.
-
-7. Seleccione el perfil **Asignaciones**, asignar a Todos los usuarios & Todos los **dispositivos** y **Guardar**.
+   > Los caracteres comodín se admiten para aplicaciones, pero no para carpetas. Las subcarpetas no están protegidas. Las aplicaciones permitidas seguirán desencadenando eventos hasta que se reinicien.
 
 ## <a name="mobile-device-management-mdm"></a>Administración de dispositivos móviles (MDM)
 

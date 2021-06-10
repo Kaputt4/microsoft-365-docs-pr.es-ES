@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 61c7c8022ed89a4d10e5737e2dcdf92a4375bedd
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770414"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788840"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API compatibles de Microsoft Defender para punto de conexión
 
@@ -62,7 +62,7 @@ Tema | Descripción
 :---|:---
 [Búsqueda avanzada de amenazas](run-advanced-query-api.md) | Ejecutar consultas desde la API.
 [Propiedades y métodos de alerta](alerts.md) | Ejecute llamadas API como \- obtener alertas, crear alertas, actualizar alertas y mucho más.
-[Exportar métodos de evaluación y propiedades por dispositivo](get-assessmnt-1methods-properties.md) | Ejecute llamadas API como la evaluación de configuración segura de exportación, la evaluación del inventario de \- software de exportación y la evaluación de vulnerabilidades de software de exportación.
+[Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md) | Ejecute llamadas API como la evaluación de configuración segura de exportación, la evaluación del inventario de \- software de exportación y la evaluación de vulnerabilidades de software de exportación.
 [Propiedades y métodos de investigación automatizada](investigation.md) | Ejecute llamadas API como \- obtener la colección de Investigación.
 [Obtener alertas relacionadas con dominios](get-domain-related-alerts.md) | Ejecute llamadas API como obtener dispositivos relacionados con \- el dominio, estadísticas de dominio y mucho más.
 [Propiedades y métodos de archivo](files.md) | Ejecute llamadas API como obtener información de archivos, alertas relacionadas con \- archivos, dispositivos relacionados con archivos y estadísticas de archivos.

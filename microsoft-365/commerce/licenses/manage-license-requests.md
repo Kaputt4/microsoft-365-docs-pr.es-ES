@@ -41,7 +41,7 @@ Para ver y administrar solicitudes de licencia, el administrador usa la **pesta�
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global para realizar las tareas de este artículo. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global para realizar las tareas de este artículo. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-your-own-request-process"></a>Usar su propio proceso de solicitud
 

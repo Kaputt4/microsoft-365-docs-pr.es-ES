@@ -64,7 +64,7 @@ Otras acciones se pueden realizar en mensajes específicos seleccionando **Accio
 
 Consulta la [ruta de investigación de ataques basada](first-incident-path-identity.md) en identidades.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

@@ -98,7 +98,7 @@ Los exámenes programados se ejecutan en el día y la hora que especifique. Pued
 
 ### <a name="use-group-policy-to-schedule-scans"></a>Usar directiva de grupo para programar exámenes
 
-|Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
+|Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 |Examinar | Especificar el tipo de examen que se usará para un examen programado | Examen rápido |
 |Examinar | Especificar el día de la semana para ejecutar un examen programado | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
@@ -143,7 +143,7 @@ Puede establecer que el examen programado solo se produzca cuando el extremo est
 
 ### <a name="use-group-policy-to-schedule-scans"></a>Usar directiva de grupo para programar exámenes
 
-|Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
+|Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 |Examinar | Iniciar el examen programado solo cuando el equipo está en uso pero no está en uso | Los exámenes programados no se ejecutarán, a menos que el equipo esté en uso pero no esté en uso | Habilitado |
 
@@ -174,7 +174,7 @@ Algunas amenazas pueden requerir un examen completo para completar su eliminaci�
 
 ### <a name="use-group-policy-to-schedule-remediation-required-scans"></a>Usar la directiva de grupo para programar exámenes necesarios para la corrección
 
-| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |---|---|---|---|
 |Corrección | Especificar el día de la semana para ejecutar un examen completo programado para completar la corrección | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
 |Corrección | Especificar la hora del día para ejecutar un examen completo programado para completar la corrección | Especifique el número de minutos después de la medianoche (por ejemplo, escriba **60** para la 1 a.m.) | 2 a. m. |
@@ -208,7 +208,7 @@ Puede habilitar un examen rápido diario que se puede ejecutar además de los ot
 
 ### <a name="use-group-policy-to-schedule-daily-scans"></a>Usar directiva de grupo para programar exámenes diarios
 
-|Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
+|Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 |Examinar | Especificar el intervalo para ejecutar exámenes rápidos por día | Especifique cuántas horas debe transcurrir antes del siguiente examen rápido. Por ejemplo, para ejecutarse cada dos horas, escriba **2**, para una vez al día, escriba **24**. Escriba **0** para nunca ejecutar un examen rápido diario. | Nunca |
 |Examinar | Especificar la hora de un examen rápido diario | Especifique el número de minutos después de la medianoche (por ejemplo, escriba **60** para la 1 a.m.) | 2 a. m. |
@@ -240,7 +240,7 @@ Puede forzar que se produzca un examen después de cada actualización [de prote
 
 ### <a name="use-group-policy-to-schedule-scans-after-protection-updates"></a>Usar la directiva de grupo para programar exámenes después de las actualizaciones de protección
 
-|Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada)|
+|Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada)|
 |:---|:---|:---|:---|
 |Actualizaciones de firmas | Activar el examen después de la actualización de inteligencia de seguridad | Un examen se realizará inmediatamente después de descargar una nueva actualización de protección | Habilitado |
 

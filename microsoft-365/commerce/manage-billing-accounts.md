@@ -1,5 +1,5 @@
 ---
-title: Comprender cuentas de facturación
+title: Comprender las cuentas de facturación
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,7 +26,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52535643"
 ---
-# <a name="understand-billing-accounts"></a>Comprender cuentas de facturación
+# <a name="understand-billing-accounts"></a>Comprender las cuentas de facturación
 
 Se crea una cuenta de facturación cuando se registra para probar o comprar productos de Microsoft. Usas tu cuenta de facturación para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras. Puedes tener acceso a varias cuentas de facturación. Por ejemplo, se inscribió en Microsoft 365 directamente, o bien tiene acceso al contrato de servicios de Enterprise Agreement de productos de & Microsoft o al contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendrías una cuenta de facturación independiente.
 

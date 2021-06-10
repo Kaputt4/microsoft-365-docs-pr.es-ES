@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841851"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861184"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop 
 6 minutos para leer 
@@ -148,3 +148,7 @@ Además, si usa perfiles de usuario FSlogix, se recomienda excluir los siguiente
 
 Nota sobre las licencias Windows 10 Enterprise: cuando se usa una sesión múltiple, según sus requisitos, puede elegir que todos los usuarios tengan licencia a través de Microsoft Defender para Endpoint (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o que la máquina virtual tenga licencia a través de Azure Defender.
 Los requisitos de licencia para Microsoft Defender para el punto de conexión se pueden encontrar en: [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
+
+#### <a name="related-links"></a>Vínculos relacionados
+
+[Agregar exclusiones para Microsoft Defender mediante PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)
