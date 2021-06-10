@@ -1,7 +1,7 @@
 ---
 title: Casos de administración de riesgos de Insider
 description: Obtenga información sobre los casos de administración de riesgos de insider en Microsoft 365
-keywords: Microsoft 365, administración de riesgos insider, administración de riesgos, cumplimiento
+keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -206,9 +206,9 @@ Para enviar un aviso al usuario asignado a un caso:
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
 5. Seleccione **Enviar** para enviar el aviso al usuario o **seleccione Cancelar** cerrar el cuadro de diálogo sin enviar el aviso al usuario. Todos los avisos enviados se agregan a la cola de notas de caso en el panel **notas del** caso.
 
-### <a name="escalate-for-investigation"></a>Remitir para investigación
+### <a name="escalate-for-investigation"></a>Escalar para investigación
 
-Escala el caso para la investigación del usuario en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del usuario. Esta extensión abre un nuevo caso de eDiscovery avanzado en su organización de Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Asignar un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información sobre los casos de exhibición avanzada de documentos electrónicos, [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
+Escala el caso para la investigación del usuario en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del usuario. Esta extensión abre un nuevo caso de exhibición avanzada de documentos electrónicos en su organización de Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Asignar un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información sobre los casos de eDiscovery avanzado, consulte [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
 
 Para escalar un caso a una investigación de usuario:
 

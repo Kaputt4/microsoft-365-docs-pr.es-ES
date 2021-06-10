@@ -42,14 +42,14 @@ Las reglas de detección personalizadas son reglas que puedes diseñar y ajustar
 
 Para administrar detecciones personalizadas, debe tener asignado uno de estos roles:
 
-- **Administrador de** seguridad: los usuarios con este rol [de Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) pueden administrar la configuración de seguridad en el Centro de seguridad de Microsoft 365 y otros portales y servicios.
+- **Administrador de** seguridad: los usuarios [con este Azure Active Directory pueden](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) administrar la configuración de seguridad en Microsoft 365 de seguridad y otros portales y servicios.
 
-- **Operador de** seguridad: los usuarios con este rol de [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) pueden administrar alertas y tener acceso global de solo lectura a características relacionadas con la seguridad, incluida toda la información del Centro de seguridad de Microsoft 365. Este rol es suficiente para administrar detecciones personalizadas solo si el control de acceso basado en roles (RBAC) está desactivado en Microsoft Defender para endpoint. Si tiene RBAC configurado, también necesita el permiso administrar la configuración **de seguridad** para Defender para endpoint.
+- **Operador de** seguridad: los usuarios con este [rol Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) pueden administrar alertas y tener acceso global de solo lectura a las características relacionadas con la seguridad, incluida toda la información del Microsoft 365 de seguridad. Este rol es suficiente para administrar detecciones personalizadas solo si el control de acceso basado en roles (RBAC) está desactivado en Microsoft Defender para endpoint. Si tiene RBAC configurado, también necesita el permiso administrar la configuración **de seguridad** para Defender para endpoint.
 
 Para administrar los permisos necesarios, un **administrador global** puede:
 
-- Asigne el **rol de administrador de seguridad** o operador de seguridad en el Centro de administración de Microsoft [365](https://admin.microsoft.com/) en **Roles** Security   >  **admin**.
-- Compruebe la configuración de RBAC para Microsoft Defender para Endpoint en El Centro de seguridad [de Microsoft Defender](https://securitycenter.windows.com/) en **Configuración**  >  **Permisos**  >  **Roles**. Seleccione el rol correspondiente para asignar el **permiso administrar la configuración de** seguridad.
+- Asigne el **rol de administrador de seguridad** o operador **de** seguridad en Microsoft 365 centro [de administración](https://admin.microsoft.com/) en **Roles**  >  **Security admin**.
+- Compruebe la configuración de RBAC para Microsoft Defender para endpoint [en Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/) en **Configuración** roles  >  **de permisos**  >  . Seleccione el rol correspondiente para asignar el **permiso administrar la configuración de** seguridad.
 
 > [!NOTE]
 > Para administrar detecciones personalizadas,  los operadores de seguridad necesitarán el permiso administrar la configuración de seguridad en Microsoft Defender para endpoint si RBAC está activado. 
@@ -57,7 +57,7 @@ Para administrar los permisos necesarios, un **administrador global** puede:
 ## <a name="create-a-custom-detection-rule"></a>Crear una regla de detección personalizada
 ### <a name="1-prepare-the-query"></a>1. Prepare la consulta.
 
-En el Centro de seguridad de Microsoft 365, vaya a **Búsqueda avanzada** y seleccione una consulta existente o cree una nueva consulta. Al usar una nueva consulta, ejecute la consulta para identificar errores y comprender los posibles resultados.
+En Microsoft 365 seguridad, vaya a **Búsqueda avanzada** y seleccione una consulta existente o cree una nueva consulta. Al usar una nueva consulta, ejecute la consulta para identificar errores y comprender los posibles resultados.
 
 >[!IMPORTANT]
 >Para evitar que el servicio devuelva demasiadas alertas, cada regla se limita a generar solo 100 alertas cada vez que se ejecuta. Antes de crear una regla, ajusta la consulta para evitar alertas de actividad normal del día a día.
@@ -145,7 +145,7 @@ La regla de detección personalizada puede realizar automáticamente acciones en
 Estas acciones se aplican a los dispositivos de la `DeviceId` columna de los resultados de la consulta:
 - **Aislar dispositivo:** usa Microsoft Defender para Endpoint para aplicar aislamiento total de red, lo que impide que el dispositivo se conecte a cualquier aplicación o servicio. [Más información sobre el aislamiento de la máquina de Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **Recopilar paquete de investigación:** recopila información del dispositivo en un archivo ZIP. [Obtenga más información sobre el paquete de investigación de Microsoft Defender para endpoints](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Ejecutar examen antivirus:** realiza un examen completo Windows Defender antivirus en el dispositivo
+- **Ejecutar examen antivirus:** realiza un examen Antivirus de Windows Defender completo en el dispositivo
 - **Iniciar investigación:** inicia una [investigación automatizada](m365d-autoir.md) en el dispositivo
 - **Restringir la ejecución de** aplicaciones: establece restricciones en el dispositivo para permitir que solo se ejecuten los archivos que están firmados con un certificado emitido por Microsoft. [Más información sobre las restricciones de la aplicación con Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
@@ -153,7 +153,7 @@ Estas acciones se aplican a los dispositivos de la `DeviceId` columna de los res
 Cuando se selecciona, puede optar por aplicar la acción Archivo **de** cuarentena en los archivos de `SHA1` la columna , , o de los `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` resultados de la consulta. Esta acción elimina el archivo de su ubicación actual y coloca una copia en cuarentena.
 
 #### <a name="actions-on-users"></a>Acciones en usuarios
-Cuando se selecciona, la acción Marcar **al usuario como** comprometida se toma en los usuarios de la columna , o de los `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` resultados de la consulta. Esta acción establece el nivel de riesgo de los usuarios en "alto" en Azure Active Directory, desencadenando las directivas de [protección de identidades correspondientes.](/azure/active-directory/identity-protection/overview-identity-protection)
+Cuando se selecciona, la acción Marcar **al usuario como** comprometida se toma en los usuarios de la columna , o de los `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` resultados de la consulta. Esta acción establece el nivel de riesgo de los usuarios en "alto" en Azure Active Directory, desencadenando las directivas [de protección de identidades correspondientes.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
 > La acción permitir o bloquear para reglas de detección personalizadas actualmente no se admite en Microsoft 365 Defender.
@@ -222,9 +222,9 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >Para ver rápidamente la información y realizar acciones en un elemento de una tabla, use la columna de selección [&#10003;] a la izquierda de la tabla.
 
 >[!NOTE]
->Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+>Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

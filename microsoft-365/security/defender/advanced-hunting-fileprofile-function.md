@@ -74,7 +74,7 @@ invoke FileProfile(x,y)
 
 ## <a name="examples"></a>Ejemplos
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>Proyecte solo la columna SHA1 y enriquezcala
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Project solo la columna SHA1 y enriquecer
 
 ```kusto
 DeviceFileEvents

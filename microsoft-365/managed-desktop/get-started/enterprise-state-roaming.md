@@ -18,19 +18,19 @@ ms.locfileid: "50921959"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Habilitar Enterprise State Roaming
 
-Para obtener la mejor experiencia con Microsoft Managed Desktop, habilite [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview), que permite a los usuarios sincronizar de forma segura los datos de configuración de usuario y aplicación en la nube. Esto significa que tendrán la misma experiencia independientemente del dispositivo Windows en el que inicien sesión. Por ejemplo, si reemplaza uno de sus dispositivos de Escritorio administrado de Microsoft por uno nuevo, tendrá el mismo aspecto que el último y se comportará exactamente igual que el último.
+Para obtener la mejor experiencia con Escritorio administrado de Microsoft, habilite [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview), que permite a los usuarios sincronizar de forma segura los datos de configuración de usuario y aplicación en la nube. Esto significa que tendrán la misma experiencia independientemente Windows dispositivo en el que inicien sesión. Por ejemplo, si reemplaza uno de sus dispositivos Escritorio administrado de Microsoft por uno nuevo, se verá y se comportará exactamente igual que el último.
 
-Para habilitar Enterprise State Roaming, siga los pasos descritos en [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable)y, a continuación, vuelva a esta documentación.
+Para habilitar Enterprise itinerancia de estado, siga los pasos descritos en [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable)y, a continuación, vuelva a esta documentación.
 
-Si tiene alguna dificultad con Enterprise State Roaming, póngase en contacto con el soporte técnico [de administración.](../working-with-managed-desktop/admin-support.md)
+Si tiene alguna dificultad con la itinerancia Enterprise estado, póngase en contacto con el soporte técnico [de administración.](../working-with-managed-desktop/admin-support.md)
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
 
 1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
 2. [Ajustar el acceso condicional](conditional-access.md)
 3. [Asignar licencias](assign-licenses.md)
 4. [Desplegar el portal de empresa de Intune](company-portal.md)
-5. Habilitar la itinerancia de estado de empresa (este tema)
+5. Habilitar Enterprise itinerancia de estado (este tema)
 6. [Instalar dispositivos](set-up-devices.md)
 7. [Prepare a los usuarios para que usen los dispositivos](get-started-devices.md)
 8. [Implementar aplicaciones](deploy-apps.md)

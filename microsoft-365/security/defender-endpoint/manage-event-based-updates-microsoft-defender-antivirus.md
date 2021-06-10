@@ -70,7 +70,7 @@ Use los cmdlets siguientes:
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/index).
+Para más información, consulte [Usar cmdlets de PowerShell para configurar y ejecutar Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Defender](/powershell/module/defender/index).
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Use Windows Management Instruction (WMI) para buscar actualizaciones de protección antes de ejecutar un examen
 
@@ -159,7 +159,7 @@ Si ha habilitado la protección de entrega en la nube, Microsoft Defender AV env
 > [!NOTE]
 > **Permitir que las notificaciones deshabilite los informes basados** en definiciones permite a Microsoft MAPS deshabilitar esas definiciones conocidas por causar informes falsos positivos. Debe configurar el equipo para que se una a Microsoft MAPS para que esta función funcione.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Implementar Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)

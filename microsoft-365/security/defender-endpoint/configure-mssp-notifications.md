@@ -49,6 +49,6 @@ Estas casillas deben estar activadas:
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Conceder acceso de MSSP al portal](grant-mssp-access.md)
-- [Obtener acceso al portal de clientes de MSSP](access-mssp-portal.md)
-- [Capturar alertas desde el inquilino del cliente](fetch-alerts-mssp.md)
+- [Conceder acceso a MSSP al portal](grant-mssp-access.md)
+- [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
+- [Capturar alertas del espacio empresarial del cliente](fetch-alerts-mssp.md)

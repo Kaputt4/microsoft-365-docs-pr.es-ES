@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51165254"
 ---
-# <a name="configure-managed-security-service-provider-integration"></a>Configurar la integración del proveedor de servicios de seguridad administrada
+# <a name="configure-managed-security-service-provider-integration"></a>Configurar la integración del proveedor de servicios de seguridad administrados
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,20 +44,20 @@ Deberá seguir los siguientes pasos de configuración para habilitar la integrac
 
 La integración permitirá a los MSSP realizar las siguientes acciones:
 
-- Obtener acceso al portal del Centro de seguridad de Microsoft Defender del cliente de MSSP
+- Obtener acceso al portal de Centro de seguridad de Microsoft Defender MSSP
 - Obtener notificaciones por correo electrónico y 
 - Capturar alertas a través de herramientas de administración de eventos y de información de seguridad (SIEM)
 
 Antes de que los MSSP puedan llevar a cabo estas acciones, el cliente de MSSP tendrá que conceder acceso a su inquilino de Defender for Endpoint para que el MSSP pueda acceder al portal. 
  
 
-Normalmente, los clientes de MSSP toman los pasos de configuración iniciales para conceder a los MSSP acceso a su Windows Defender de Security Central. Una vez concedido el acceso, el cliente MSSP o el MSSP pueden realizar otros pasos de configuración.
+Normalmente, los clientes de MSSP toman los pasos de configuración iniciales para conceder a los MSSP acceso a su inquilino Windows Defender Security Central. Una vez concedido el acceso, el cliente MSSP o el MSSP pueden realizar otros pasos de configuración.
 
 
 En general, deben realizarse los siguientes pasos de configuración:
 
 
-- **Conceder al MSSP acceso al Centro de seguridad de Microsoft Defender** <br>
+- **Conceda al MSSP acceso a Centro de seguridad de Microsoft Defender** <br>
 Esta acción debe realizarla el cliente de MSSP. Concede al MSSP acceso al inquilino Defender for Endpoint del cliente de MSSP.
  
 
@@ -75,8 +75,8 @@ Para obtener información sobre cómo implementar un acceso delegado multiinquil
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Conceder acceso de MSSP al portal](grant-mssp-access.md)
-- [Obtener acceso al portal de clientes de MSSP](access-mssp-portal.md)
-- [Configurar notificaciones de alertas](configure-mssp-notifications.md)
-- [Capturar alertas desde el inquilino del cliente](fetch-alerts-mssp.md)
+- [Conceder acceso a MSSP al portal](grant-mssp-access.md)
+- [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
+- [Configurar notificaciones de alerta](configure-mssp-notifications.md)
+- [Capturar alertas del espacio empresarial del cliente](fetch-alerts-mssp.md)
 

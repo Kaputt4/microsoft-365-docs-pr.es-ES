@@ -37,15 +37,15 @@ En Temas de Viva, puede editar un tema existente. Es posible que deba hacerlo si
 ## <a name="requirements"></a>Requisitos
 
 Para editar un tema existente, debe:
-- Tener una licencia de Viva Topics.
-- Tener permisos para [**quién puede crear o editar temas**](./topic-experiences-user-permissions.md). Los administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema Temas de Viva. 
+- Tener una licencia de Temas Microsoft Viva.
+- Tener permisos para [**Quién crear o editar temas**](./topic-experiences-user-permissions.md). Los Administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Temas Viva. 
 
 > [!Note] 
 > Los usuarios que tienen permiso para administrar temas en el Centro de temas (administradores de conocimientos) ya tienen permisos para crear y editar temas.
 
 ## <a name="how-to-edit-a-topic-page"></a>Cómo editar una página de tema
 
-Los usuarios  que tienen el permiso Quién puede crear o editar temas pueden editar un <b></b> tema abriendo la página del tema desde un resaltado de tema y, a continuación, seleccionando el botón Editar en la parte superior derecha de la página del tema. La página de temas también se puede abrir desde la página principal del centro de temas, donde puede encontrar todos los temas a los que tiene una conexión.
+Los usuarios que tienen el **permiso Quién** crear o editar temas pueden editar un tema abriendo la <b></b> página del tema desde un resaltado de tema y, a continuación, seleccionando el botón Editar en la parte superior derecha de la página del tema. La página de temas también se puede abrir desde la página principal del centro de temas, donde puede encontrar todos los temas a los que tiene una conexión.
 
    ![Botón Editar](../media/knowledge-management/edit-button.png) </br> 
 
@@ -55,44 +55,44 @@ Los administradores de conocimientos también pueden editar temas directamente d
 
 ### <a name="to-edit-a-topic-page"></a>Para editar una página de tema
 
-1. En la página del tema, seleccione **Editar**. Esto le permite realizar cambios según sea necesario en la página del tema.
+1. En la página del tema, seleccione **Editar**. Esto le permite realizar cambios según sea necesario en la página de tema.
 
    ![Control De edición](../media/knowledge-management/topic-page-edit.png) </br>  
 
 
-2. En la <b>sección Nombres alternativos,</b> escriba cualquier otro nombre al que se pueda hacer referencia al tema. 
+2. En la sección <b>Nombres alternativos</b>, escriba cualquier otro nombre con el que se pueda hacer referencia al tema. 
 
     ![Nombres alternativos](../media/knowledge-management/alt-names.png) </br> 
-3. En la <b>sección Descripción,</b> escriba un par de oraciones que describan el tema. O bien, si ya existe una descripción, actualícla si es necesario.
+3. En la sección <b>Descripción</b>, escriba un par de frases que describan el tema. O bien, si hay una descripción existente, actualícela si es necesario.
 
     ![Sección Descripción](../media/knowledge-management/description.png)</br>
 
-4. En la <b>sección Personas</b> ancladas, puede "anclar" a una persona para que muestre que tiene una conexión el tema (por ejemplo, un propietario de un recurso conectado). Comience escribiendo su nombre o dirección de correo electrónico en el cuadro Agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar de los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar <b>de la</b> lista en la tarjeta de usuario.
+4. En la sección <b>Personas ancladas</b>, puede "anclar" a un usuario para mostrarle que tiene una conexión con el tema (por ejemplo, el propietario de un recurso conectado). Comience escribiendo su nombre o dirección de correo electrónico en el cuadro Agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar de los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar <b>de la</b> lista en la tarjeta de usuario.
  
     ![Agregar personas ancladas](../media/knowledge-management/pinned-people.png)</br>
 
-    La <b>sección Personas sugeridas</b> muestra a los usuarios que AI cree que podrían estar conectados al tema desde su conexión a los recursos sobre el tema. Puede cambiar su estado de Sugerido a Anclado seleccionando el icono de patilla en la tarjeta de usuario.
+    En la sección <b>Personas sugeridas</b> se muestran los usuarios que la IA cree que podrían estar conectadas al tema por su conexión con los recursos relacionados con el tema. Puede cambiar su estado de Sugeridos a Anclados seleccionando el icono del ancla en la tarjeta de usuario.
 
    ![Anclar personas sugeridas](../media/knowledge-management/suggested-people.png)</br>
 
-5. En la <b>sección Archivos anclados y</b> páginas, puede agregar o "anclar" un archivo o página de sitio de SharePoint que esté asociado al tema.
+5. En la sección de <b>Archivos y páginas anclados</b>, agregue o "ancle" un archivo o página de sitio de SharePoint asociada con el tema.
 
    ![Sección de páginas y archivos anclados](../media/knowledge-management/pinned-files-and-pages.png)</br>
  
-    Para agregar un nuevo archivo, seleccione <b>Agregar</b>, seleccione el sitio de SharePoint de los sitios Frecuentes o Seguidos y, a continuación, seleccione el archivo de la biblioteca de documentos del sitio.
+    Para agregar un nuevo archivo, seleccione <b>Agregar</b>, seleccione el sitio SharePoint de los sitios Frecuentes o Seguidos y, a continuación, seleccione el archivo de la biblioteca de documentos del sitio.
 
-    También puede usar la opción <b>De un vínculo</b> para agregar un archivo o página proporcionando la dirección URL. 
+    También puede usar la opción <b>Desde un vínculo</b> para agregar un archivo o una página proporcionando la dirección URL. 
 
    > [!Note] 
-   > Los archivos y las páginas que agregue deben encontrarse en el mismo inquilino de Microsoft 365. Si desea agregar un vínculo a un recurso externo en el tema, puede agregarlo a través del icono del lienzo en el paso 9.
+   > Los archivos y las páginas que agregue deben encontrarse en el mismo Microsoft 365 inquilino. Si desea agregar un vínculo a un recurso externo en el tema, puede agregarlo a través del icono del lienzo en el paso 9.
 
 6. La <b>sección Archivos y páginas</b> sugeridos muestra los archivos y páginas que AI sugiere que se asocie al tema.
 
    ![Sección De archivos y páginas sugeridas](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    Puede cambiar un archivo o página sugeridos a un archivo o página anclados seleccionando el icono anclado.
+    Puede cambiar un archivo o una página sugeridos a un archivo o página anclado seleccionando el icono de anclado.
 
-7.  La <b>sección Sitios relacionados</b> muestra los sitios que tienen información sobre el tema. 
+7.  En la sección <b>Sitios relacionados</b> se muestran los sitios con información sobre el tema. 
 
     ![Sección Sitios relacionados](../media/knowledge-management/related-sites.png)</br>
 
@@ -100,7 +100,7 @@ Los administradores de conocimientos también pueden editar temas directamente d
     
     ![Seleccionar un sitio](../media/knowledge-management/sites.png)</br>
 
-8. La <b>sección Temas relacionados</b> muestra las conexiones que existen entre los temas. Puede agregar una conexión a otro tema seleccionando el botón Conectarse a un tema relacionado y, <b>a</b> continuación, escribiendo el nombre del tema relacionado y seleccionándose en los resultados de la búsqueda. 
+8. La <b>sección Temas relacionados</b> muestra las conexiones que existen entre los temas. Para agregar una conexión a otro tema, seleccione el <b>Conectar a</b> un botón de tema relacionado y, a continuación, escriba el nombre del tema relacionado y selecciónelo en los resultados de la búsqueda. 
 
    ![Sección Temas relacionados](../media/knowledge-management/related-topic.png)</br>  
 
@@ -108,7 +108,7 @@ Los administradores de conocimientos también pueden editar temas directamente d
 
    ![Descripción de temas relacionados](../media/knowledge-management/related-topics-update.png)</br> 
 
-   El tema relacionado que agregó se mostrará como un tema conectado.
+   El tema relacionado que agregó se mostrará como tema conectado.
 
    ![Temas relacionados conectados](../media/knowledge-management/related-topics-final.png)</br> 
 
@@ -121,7 +121,7 @@ Los administradores de conocimientos también pueden editar temas directamente d
    ![Confirmar quitar](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
-9. También puede agregar elementos estáticos a la página (como texto, imágenes o vínculos) seleccionando el icono del lienzo, que puede encontrar debajo de la breve descripción. Si lo selecciona, se abrirá el cuadro de herramientas de SharePoint desde el que puede elegir el elemento que desea agregar a la página.
+9. También puede agregar elementos estáticos a la página, como texto, imágenes o vínculos, seleccionando el icono de lienzo, el cual se encuentra debajo de la descripción breve. Si lo selecciona, se abrirá SharePoint cuadro de herramientas desde el que puede elegir el elemento que desea agregar a la página.
 
    ![Icono de lienzo](../media/knowledge-management/webpart-library.png)</br> 
 

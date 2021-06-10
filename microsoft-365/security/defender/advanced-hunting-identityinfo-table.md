@@ -35,7 +35,7 @@ ms.locfileid: "51935826"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-La tabla del esquema de búsqueda avanzada contiene información sobre las cuentas de usuario obtenidas de varios `IdentityInfo` servicios, incluido Azure Active Directory. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La tabla del esquema de búsqueda avanzada contiene información sobre las cuentas de usuario obtenidas de varios `IdentityInfo` servicios, incluidos [](advanced-hunting-overview.md) Azure Active Directory. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!NOTE]
 >Esta tabla cambió el nombre de `AccountInfo` . Durante los cambios de nombre, todas las consultas guardadas en el portal se actualizan automáticamente. Comprueba las consultas que has guardado en otro lugar.

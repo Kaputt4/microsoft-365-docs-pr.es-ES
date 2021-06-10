@@ -25,7 +25,7 @@ ms.locfileid: "50919346"
 
 ## <a name="summary"></a>Resumen
 
-Para cumplir con los últimos estándares de cumplimiento del Programa federal de administración de riesgos y autorización (FedRAMP), deshabilitamos las versiones 1.1 y 1.0 de Seguridad de la capa de transporte (TLS) en Microsoft 365 para entornos de GCC High y DoD. Este cambio se anunció anteriormente a través del soporte técnico de Microsoft en [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+Para cumplir con los últimos estándares de cumplimiento del Programa federal de administración de riesgos y autorización (FedRAMP), deshabilitamos las versiones 1.1 y 1.0 de seguridad de la capa de transporte (TLS) en Microsoft 365 para entornos de alta y doD GCC. Este cambio se anunció anteriormente a través del soporte técnico de Microsoft en Preparación para el uso obligatorio de [TLS 1.2 en Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
 
 La seguridad de los datos es importante y estamos comprometidos con la transparencia sobre los cambios que podrían afectar al uso del servicio.
 
@@ -35,15 +35,15 @@ Aunque la [implementación de Microsoft TLS 1.0](https://support.microsoft.com/h
 
 ## <a name="more-information"></a>Más información
 
-A partir del 15 de enero de 2020, Microsoft 365 en los entornos GCC High y DoD deshabilitará TLS 1.1 y 1.0.
+A partir del 15 de enero de 2020, Microsoft 365 en los entornos GCC High y DoD deshabilitarán TLS 1.1 y 1.0.
 
-Para el 15 de enero de 2020, todas las combinaciones de servidores cliente y servidores de explorador deben usar TLS versión 1.2 (o una versión posterior) para asegurarse de que todas las conexiones se pueden realizar sin problemas con Microsoft 365. Esto puede requerir actualizaciones de determinadas combinaciones de servidores cliente y servidores de explorador.
+Para el 15 de enero de 2020, todas las combinaciones de servidores cliente y servidores de explorador deben usar TLS versión 1.2 (o una versión posterior) para asegurarse de que todas las conexiones se pueden realizar sin problemas para Microsoft 365. Esto puede requerir actualizaciones de determinadas combinaciones de servidores cliente y servidores de explorador.
 
 Para SharePoint y OneDrive, deberá actualizar y configurar .NET para admitir TLS 1.2. Para obtener información, [vea How to enable TLS 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
 Debe actualizar los equipos cliente para asegurarse de mantener el acceso ininterrumpido a Office 365 GCC High y DoD.
 
-Deberá actualizar las aplicaciones que llaman a las API de Microsoft 365 a través de TLS 1.0 o TLS 1.1 para usar TLS 1.2. .NET 4.5 tiene como valor predeterminado TLS 1.1. Para actualizar la configuración de .NET, vea [How to enable Transport Layer Security (TLS) 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client). Para obtener más información, vea [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+Deberá actualizar las aplicaciones que llamen Microsoft 365 a través de TLS 1.0 o TLS 1.1 para usar TLS 1.2. .NET 4.5 tiene como valor predeterminado TLS 1.1. Para actualizar la configuración de .NET, vea [How to enable Transport Layer Security (TLS) 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client). Para obtener más información, vea [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
 
 Sabemos que las siguientes aplicaciones cliente no pueden usar TLS 1.2:
 
@@ -61,4 +61,4 @@ Además de las interrupciones que puede experimentar si usa los clientes enumera
 
 ## <a name="references"></a>Referencias
 
-Para obtener instrucciones y referencias para asegurarse de que los clientes usan TLS 1.2, vea [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+Para obtener instrucciones y referencias para ayudar a asegurarse de que los clientes usan TLS 1.2, consulte [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).

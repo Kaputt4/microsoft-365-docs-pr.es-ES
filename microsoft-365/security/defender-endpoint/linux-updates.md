@@ -1,5 +1,5 @@
 ---
-title: Implementar actualizaciones para Microsoft Defender para Endpoint en Linux
+title: Implementar actualizaciones de Microsoft Defender para punto de conexión en Linux
 ms.reviewer: ''
 description: Describe cómo implementar actualizaciones para Microsoft Defender para Endpoint en Linux en entornos empresariales.
 keywords: microsoft, defender, Microsoft Defender para endpoint, linux, actualizaciones, implementación
@@ -26,7 +26,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274729"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en Linux
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Implementar actualizaciones de Microsoft Defender para punto de conexión en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

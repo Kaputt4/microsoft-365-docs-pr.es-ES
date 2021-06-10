@@ -42,7 +42,7 @@ Las detecciones personalizadas proporcionan:
 - Alertas para detecciones basadas en reglas creadas a partir de consultas de búsqueda avanzadas
 - Acciones de respuesta automáticas
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear y administrar reglas de detección personalizadas](custom-detection-rules.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Migrar consultas de búsqueda avanzada desde Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md)

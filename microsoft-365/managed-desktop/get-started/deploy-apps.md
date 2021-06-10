@@ -1,7 +1,7 @@
 ---
 title: Implementar aplicaciones en dispositivos
-description: Información para agregar e implementar aplicaciones en dispositivos de Escritorio administrado de Microsoft.
-keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones lob
+description: Información para agregar e implementar aplicaciones en Escritorio administrado de Microsoft dispositivos.
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -17,56 +17,56 @@ ms.lasthandoff: 03/19/2021
 ms.locfileid: "50922031"
 ---
 # <a name="deploy-apps-to-devices"></a>Implementar aplicaciones en dispositivos
-Parte de la incorporación a Microsoft Managed Desktop incluye agregar e implementar aplicaciones en los dispositivos del usuario. Una vez que estés usando el portal de Escritorio administrado de Microsoft, puedes agregar e implementar tus aplicaciones. 
+Parte de la incorporación a Escritorio administrado de Microsoft incluye agregar e implementar aplicaciones en los dispositivos del usuario. Una vez que estés usando el portal Escritorio administrado de Microsoft, puedes agregar e implementar tus aplicaciones. 
 
 El proceso general tiene este aspecto:
-1. [Agregar aplicaciones al portal](#1) de Escritorio administrado de Microsoft: pueden ser aplicaciones de línea de negocio (LOB) existentes o aplicaciones de Microsoft Store para empresas que haya sincronizado con Intune. 
-2. [Crear grupos de Azure Active Directory (AD)](#2) para la asignación de aplicaciones: usará estos grupos para administrar la asignación de aplicaciones.
+1. [Agregar aplicaciones Escritorio administrado de Microsoft portal:](#1) pueden ser aplicaciones de línea de negocio (LOB) existentes o aplicaciones de Microsoft Store para Empresas que haya sincronizado con Intune. 
+2. [Crear Azure Active Directory (AD) para la](#2) asignación de aplicaciones: usará estos grupos para administrar la asignación de aplicaciones.
 3. [Asignar aplicaciones a los usuarios](#3)
 
 <span id="1" />
 
-## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Paso 1: Agregar aplicaciones al portal de Escritorio administrado de Microsoft
-Puedes agregar aplicaciones basadas en Windows MSI o [Win32](#lob-apps)o microsoft [Store para](#msfb-apps) empresas a Microsoft Managed Desktop y, a continuación, implementarlas en dispositivos de Escritorio administrado de Microsoft.
+## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Paso 1: Agregar aplicaciones a Escritorio administrado de Microsoft portal
+Puedes agregar [win32 o](#lob-apps)Windows aplicaciones basadas en [](#msfb-apps) MSI o Microsoft Store para Empresas aplicaciones a Escritorio administrado de Microsoft y, a continuación, implementarlas en Escritorio administrado de Microsoft dispositivos.
 
 <span id="lob-apps">
 
-###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Aplicaciones basadas en Msi de Windows o Win32 para Microsoft Managed Desktop
+###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32 o Windows aplicaciones basadas en MSI para Escritorio administrado de Microsoft
 
-Puedes agregar las aplicaciones de línea de negocio (LOB) al portal de escritorio administrado de Microsoft. Para obtener información sobre los requisitos de las aplicaciones instaladas en dispositivos de Escritorio administrado de Microsoft, vea Requisitos de la aplicación [de Escritorio administrado de Microsoft.](../service-description/mmd-app-requirements.md)
+Puedes agregar las aplicaciones de línea de negocio (LOB) a Escritorio administrado de Microsoft portal. Para obtener información sobre los requisitos de las aplicaciones instaladas en Escritorio administrado de Microsoft dispositivos, consulte [Escritorio administrado de Microsoft de aplicaciones.](../service-description/mmd-app-requirements.md)
 
 En este procedimiento, seleccionarás el tipo de aplicación que quieres agregar y, a continuación, configurarás y cargarás el origen de la aplicación. 
 
-**Para agregar la aplicación lob o la aplicación de Windows al portal de escritorio administrado de Microsoft**
+**Para agregar la aplicación de LOB o Windows aplicación a Escritorio administrado de Microsoft portal**
 
-Puede iniciar sesión en el portal de Escritorio administrado de Microsoft o iniciar sesión en Intune y, a continuación, buscar Microsoft Managed Desktop. Mostraremos el inicio de sesión en el portal de Escritorio administrado de Microsoft. 
+Puede iniciar sesión en Escritorio administrado de Microsoft portal o iniciar sesión en Intune y, a continuación, buscar Escritorio administrado de Microsoft. Mostraremos el inicio de sesión en Escritorio administrado de Microsoft portal. 
 
-1.    Inicie sesión en [el portal de administración de Escritorio administrado de Microsoft](https://aka.ms/mmdportal). 
+1.    Inicie sesión en [Escritorio administrado de Microsoft portal de administración](https://aka.ms/mmdportal). 
 2.    En **Inventario,** seleccione **Aplicaciones**.
 3.    En la carga de trabajo Aplicaciones, seleccione **Agregar**.
-4.    En **Agregar aplicación,** selecciona **Aplicación de línea de negocio** o Aplicación de Windows **(Win32).**
+4.    En **Agregar aplicación,** selecciona **Aplicación de línea de negocio** o Windows aplicación **(Win32).**
     - Si seleccionaste **Aplicación** de línea de negocio, consulta Agregar una aplicación de línea de negocio de [Windows a Microsoft Intune](/intune/lob-apps-windows) para obtener instrucciones sobre cómo agregar y configurar aplicaciones de línea de negocio.
-    - Si seleccionaste **la aplicación de Windows (Win32),** consulta Administración de aplicaciones de [Win32](/intune/apps-win32-app-management) para obtener instrucciones sobre cómo agregar y configurar aplicaciones de Windows.
+    - Si **seleccionaste Windows aplicación (Win32),** consulta Administración de aplicaciones de [Win32](/intune/apps-win32-app-management) para obtener instrucciones sobre cómo agregar y configurar Windows aplicaciones.
 
 <span id="msfb-apps">
 
-### <a name="microsoft-store-for-business-apps"></a>Aplicaciones de Microsoft Store para empresas
-Si no te has registrado en Microsoft Store para empresas, puedes registrarte cuando compres aplicaciones. Después de tener las aplicaciones, puedes sincronizarlas con Microsoft Managed Desktop. 
+### <a name="microsoft-store-for-business-apps"></a>Microsoft Store para Empresas aplicaciones
+Si no te has registrado con Microsoft Store para Empresas, puedes registrarte cuando compres aplicaciones. Después de tener las aplicaciones, puedes sincronizarlas con Escritorio administrado de Microsoft. 
 
-**Para comprar aplicaciones en la Microsoft Store para empresas**
+**Para comprar aplicaciones desde el Microsoft Store para Empresas**
 
-1. Inicia sesión en [microsoft store para empresas](https://businessstore.microsoft.com) con tu cuenta de administrador de microsoft store para empresas.
+1. Inicie sesión en [Microsoft Store para Empresas](https://businessstore.microsoft.com) con su cuenta Microsoft Store para Empresas administrador.
 2. Seleccione **Tienda para mi grupo**.
 3. Usa Buscar para buscar la aplicación que quieras y selecciona la aplicación.
-4. En los detalles del producto, selecciona **Obtener la aplicación**. Microsoft Store agrega la aplicación a **Tus productos** para tu organización.
+4. En los detalles del producto, selecciona **Obtener la aplicación**. Microsoft Store agrega la aplicación a **Los productos** de la organización.
 
-**Para forzar una sincronización entre Intune y Microsoft Store para empresas**
-1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecciona **Tenant administration**  >  **Connectors and tokens** Microsoft Store for  >  **Business**.
-3. Selecciona **Sincronizar** para obtener las aplicaciones que compraste de Microsoft Store en Intune.
+**Para forzar una sincronización entre Intune y Microsoft Store para Empresas**
+1. Inicie sesión en el centro [Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Conectores de administración** de  >  **inquilinos y tokens**  >  **Microsoft Store para Empresas**.
+3. Selecciona **Sincronizar** para obtener las aplicaciones que has comprado de la Microsoft Store en Intune.
 
-**Para comprobar que está activa una sincronización entre Intune y Microsoft Store para empresas**
-1. Inicia sesión en [microsoft store para empresas](https://businessstore.microsoft.com) con tu cuenta de administrador de microsoft store para empresas.
+**Para comprobar que una sincronización entre Intune y Microsoft Store para Empresas está activa**
+1. Inicie sesión en [Microsoft Store para Empresas](https://businessstore.microsoft.com) con su cuenta Microsoft Store para Empresas administrador.
 2. Seleccione **Administrar**.
 3. Seleccione **Configuración** y, a continuación, **seleccione Distribuir**.
 4. En **Herramientas de administración,** compruebe que Intune aparece y que el estado es **Activo**.  
@@ -79,11 +79,11 @@ Crea tres grupos de Azure AD para cada aplicación. En esta tabla se describen l
 
 Tipo de asignación de aplicaciones |    Uso en grupo    | Nombre de Ejemplo de Azure AD
 --- | --- | ---
-Disponible |  La aplicación estará disponible desde la aplicación o el sitio web del Portal de empresa. | MMD– *nombre de la aplicación:* disponible
+Disponible |  La aplicación estará disponible desde Portal de empresa o sitio web. | MMD– *nombre de la aplicación:* disponible
 Obligatorio |  La aplicación se instala en dispositivos de los grupos seleccionados. | MMD– *nombre de la aplicación:* obligatorio
-Uninstall |  La aplicación se desinstala de los dispositivos de los grupos seleccionados. | MMD : *nombre de la aplicación:* desinstalar
+Desinstalar |  La aplicación se desinstala de los dispositivos de los grupos seleccionados. | MMD : *nombre de la aplicación:* desinstalar
 
-Agrega a los usuarios a estos grupos para que la aplicación esté disponible, instale la aplicación o quite la aplicación de su dispositivo de Escritorio administrado de Microsoft. 
+Agrega usuarios a estos grupos para que la aplicación esté disponible, instale la aplicación o quite la aplicación de su Escritorio administrado de Microsoft dispositivo. 
 
 <span id="3" />
 
@@ -91,14 +91,14 @@ Agrega a los usuarios a estos grupos para que la aplicación esté disponible, i
 
 **Para asignar la aplicación a los usuarios**
 
-1. Inicie sesión en [el portal de administración de Escritorio administrado de Microsoft](https://aka.ms/mmdportal).
+1. Inicie sesión en [Escritorio administrado de Microsoft portal de administración](https://aka.ms/mmdportal).
 2. En el panel Escritorio administrado, seleccione **Aplicaciones**.
 3. En la carga de trabajo Aplicaciones, selecciona la aplicación a la que quieres asignar usuarios y selecciona **Asignar grupos de usuarios.**
 4. Para la aplicación específica, selecciona un tipo de asignación (Disponible, Obligatorio, Desinstalar) y asigna el grupo adecuado.
 5. En el panel Asignar aplicaciones, seleccione **Aceptar**.
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
 
 1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
 2. [Ajustar el acceso condicional](conditional-access.md)

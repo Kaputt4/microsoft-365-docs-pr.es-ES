@@ -1,6 +1,6 @@
 ---
 title: Configurar Micro Focus ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión
-description: Configurar Micro Focus ArcSight para recibir y extraer detecciones del Centro de seguridad de Microsoft Defender
+description: Configurar Micro Focus ArcSight para recibir y extraer detecciones de Centro de seguridad de Microsoft Defender
 keywords: configurar Micro Focus ArcSight, herramientas de administración de eventos y información de seguridad, arcsight
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -42,11 +42,11 @@ Tendrás que instalar y configurar algunos archivos y herramientas para usar Mic
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-La configuración de la herramienta Micro Focus ArcSight Connector requiere varios archivos de configuración para que extraiga y analice las detecciones de la aplicación de Azure Active Directory (AAD).
+La configuración de la herramienta Micro Focus ArcSight Connector requiere varios archivos de configuración para que extraiga y analice las detecciones de la aplicación Azure Active Directory (AAD).
 
 Esta sección le guía para obtener la información necesaria para establecer y usar correctamente los archivos de configuración necesarios.
 
-- Asegúrese de que ha habilitado la característica de integración siem desde el **menú** Configuración. Para obtener más información, vea [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
+- Asegúrese de que ha habilitado la característica de integración siem desde **el Configuración** menú. Para obtener más información, vea [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
 
 - Tenga listo el archivo guardado para habilitar la característica de integración siem. Deberá obtener los siguientes valores:
   - URL de actualización de tokens de OAuth 2.0
@@ -69,7 +69,7 @@ Esta sección le guía para obtener la información necesaria para establecer y 
 
 En los pasos siguientes se supone que ha completado todos los pasos necesarios en [Antes de comenzar](#before-you-begin).
 
-1. Instala el instalador más reciente de Windows FlexConnector de 32 bits. Puedes encontrarlo en el Centro de software de HPE. La herramienta suele instalarse en la siguiente ubicación predeterminada: `C:\Program Files\ArcSightFlexConnectors\current\bin` .</br></br>Puede elegir dónde guardar la herramienta, por ejemplo C: folder_location \\ \current\bin donde *folder_location* representa la ubicación de instalación.
+1. Instale el último instalador de FlexConnector Windows de 32 bits. Puedes encontrarlo en el Centro de software de HPE. La herramienta suele instalarse en la siguiente ubicación predeterminada: `C:\Program Files\ArcSightFlexConnectors\current\bin` .</br></br>Puede elegir dónde guardar la herramienta, por ejemplo C: folder_location \\ \current\bin donde *folder_location* representa la ubicación de instalación.
 
 2. Siga el asistente de instalación a través de las siguientes tareas:
    - Introducción
@@ -105,7 +105,7 @@ En los pasos siguientes se supone que ha completado todos los pasos necesarios e
     </tr>
     <tr>
     <td>Archivo de configuración</td>
-    <td>Escriba el nombre del archivo de propiedad de cliente. El nombre debe coincidir con el archivo proporcionado en el archivo .zip que descargó.
+    <td>Escriba el nombre del archivo de propiedad de cliente. El nombre debe coincidir con el archivo proporcionado en el .zip que descargó.
 Por ejemplo, si el archivo de configuración del directorio flexagent se denomina &quot; &quot;WDATP-Connector.js&quot; onparser.properties , debe escribir &quot; &quot; WDATP-Connector &quot; como el nombre del archivo de propiedad del cliente.</td>
     </tr>
     <td>Dirección URL de eventos</td>
@@ -116,7 +116,7 @@ Por ejemplo, si el archivo de configuración del directorio flexagent se denomin
     <td>OAuth 2</td>
     </tr>
     <td>Archivo de propiedades de cliente de OAuth 2</td>
-    <td>Vaya a la ubicación del <em>archivo wdatp-connector.properties.</em> El nombre debe coincidir con el archivo proporcionado en el archivo .zip que descargó.</td>
+    <td>Vaya a la ubicación del <em>archivo wdatp-connector.properties.</em> El nombre debe coincidir con el archivo proporcionado en el .zip que descargó.</td>
     <tr>
     <td>Token de actualización</td>
     <td>Puede obtener un token de actualización de dos maneras: generando un token de actualización desde la página de configuración de <b>SIEM</b> o usando la herramienta restutil. <br><br> Para obtener más información sobre cómo <b></b> generar un token de actualización desde la configuración de preferencias, vea <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">Enable SIEM integration in Defender for Endpoint</a>. </br> </br><b>Obtenga el token de actualización con la herramienta restutil:</b> </br> a. Abra un símbolo del sistema. Vaya a C:\<em>folder_location</em>\current\bin donde <em>folder_location</em> representa la ubicación donde instaló la herramienta. </br></br> b. Tipo: <code>arcsight restutil token -config</code> desde el directorio bin. Por ejemplo: <b>arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> Se abrirá una ventana del explorador web. </br> </br>c. Escriba sus credenciales y, a continuación, haga clic en el campo de contraseña para permitir que la página redirija. En el símbolo del sistema de inicio de sesión, escriba sus credenciales. </br> </br>d. Se muestra un token de actualización en el símbolo del sistema. </br></br> e. Cópielo y péguelo en el <b>campo Actualizar token.</b>
@@ -177,7 +177,7 @@ Por ejemplo, si el archivo de configuración del directorio flexagent se denomin
 
 9. Vaya a **Active channel set** New  >  **Condition**  >  **Device**  >  **Device Product**.
 
-10. Establecer **producto de dispositivo = ATP de Microsoft Defender**. Cuando hayas comprobado que los eventos fluyen a la herramienta, detén el proceso de nuevo y ve a Servicios de Windows e inicia el REST de ArcSight FlexConnector.
+10. Set **Device Product = ATP de Microsoft Defender**. Cuando haya comprobado que los eventos fluyen a la herramienta, detenga el proceso de nuevo y vaya a Windows Services e inicie el REST de ArcSight FlexConnector.
 
 Ahora puede ejecutar consultas en la consola de Micro Focus ArcSight.
 
@@ -209,4 +209,4 @@ Defender para detecciones de puntos de conexión aparecerá como eventos discret
 - [Habilitar la integración de SIEM en Defender for Endpoint](enable-siem-integration.md)
 - [Extraer detecciones a las herramientas SIEM](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)
 - [Pull Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)
-- [Solucionar problemas de integración de herramientas SIEM](troubleshoot-siem.md)
+- [Solucionar problemas de integración de la herramienta SIEM](troubleshoot-siem.md)

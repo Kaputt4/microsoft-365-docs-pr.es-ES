@@ -27,11 +27,11 @@ ms.locfileid: "50921497"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Restablecimiento de contraseña para el entorno de prueba de Microsoft 365
 
-*Esta Guía del laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
+*Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
 
 El restablecimiento de contraseña de autoservicio (SSPR) de Azure Active Directory (Azure AD) permite a los usuarios restablecer o desbloquear sus contraseñas o cuentas.
 
-En este artículo se describe cómo configurar y probar restablecimientos de contraseña en el entorno de prueba de Microsoft 365.
+En este artículo se describe cómo configurar y probar los restablecimientos de contraseña en el Microsoft 365 de prueba.
 
 La configuración de SSPR implica tres fases:
 - [Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -41,7 +41,7 @@ La configuración de SSPR implica tres fases:
 ![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para](../downloads/Microsoft365EnterpriseTLGStack.pdf)enterprise Test Lab Guide Stack .
+> Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
@@ -70,11 +70,11 @@ En esta fase, configure el restablecimiento de contraseña en el inquilino de Az
 En primer lugar, habilite el restablecimiento de contraseña de cuentas en un determinado grupo de Azure AD.
 
 1. Desde una instancia privada del explorador, abra [https://portal.azure.com](https://portal.azure.com) y después inicie sesión con las credenciales de la cuenta de administrador global.
-2. En Azure Portal, seleccione **Grupos de Azure Active Directory** Nuevo  >    >  **grupo**.
+2. En Azure Portal, seleccione **Azure Active Directory**  >  **grupos**  >  **Nuevo grupo**.
 3. Configure **Tipo de grupo** como **Seguridad**, **Nombre del grupo** como **PWReset** y **Tipo de pertenencia** como **Asignado**.
 4. Seleccione **Miembros**, busque y seleccione **Usuario 3**, **Seleccione Seleccionar** y, a continuación, seleccione **Crear**.
 5. Cierre el panel **Grupos**.
-6. En el panel Azure Active Directory, seleccione **Restablecimiento de contraseña** en la navegación izquierda.
+6. En el Azure Active Directory, seleccione **Restablecimiento de contraseña** en la navegación izquierda.
 7. En el panel **Propiedades - Restablecer contraseña**, debajo de la opción **Habilitar autoservicio de restablecimiento de contraseña**, elija **Seleccionado**.
 8. Seleccione **Seleccionar grupo,** seleccione el **grupo PWReset** y, a continuación, **seleccione Seleccionar**  >  **Guardar**.
 9. Cierre la instancia de explorador privada.

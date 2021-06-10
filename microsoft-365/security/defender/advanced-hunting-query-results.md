@@ -122,7 +122,7 @@ El siguiente gráfico de líneas resalta claramente los períodos de tiempo con 
 ## <a name="export-tables-and-charts"></a>Exportar tablas y gráficos
 Después de ejecutar una consulta, **seleccione Exportar** para guardar los resultados en un archivo local. La vista elegida determina cómo se exportan los resultados:
 
-- **Vista tabla:** los resultados de la consulta se exportan en forma tabular como un libro de Microsoft Excel
+- **Vista tabla:** los resultados de la consulta se exportan en forma tabular como un libro Microsoft Excel tabla
 - **Cualquier gráfico:** los resultados de la consulta se exportan como una imagen JPEG del gráfico representado
 
 ## <a name="drill-down-from-query-results"></a>Profundizar en los resultados de la consulta
@@ -155,7 +155,7 @@ Para refinar la consulta, seleccione los botones o de los valores que desea incl
 Cuando aplica el filtro para modificar la consulta y, a continuación, ejecuta la consulta, los resultados se actualizan en consecuencia.
 
 >[!NOTE]
->Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+>Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

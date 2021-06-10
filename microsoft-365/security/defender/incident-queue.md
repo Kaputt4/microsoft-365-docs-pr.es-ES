@@ -90,7 +90,7 @@ Después de determinar qué incidente requiere la prioridad más alta, selecció
 - [Administrar](manage-incidents.md) las propiedades del incidente para etiquetas, asignación, resolución inmediata de incidentes falsos positivos y comentarios.
 - Comience las [investigaciones](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)

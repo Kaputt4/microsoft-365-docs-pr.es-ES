@@ -91,7 +91,7 @@ comment | String | Comentario que se agregará a las alertas especificadas.
 Si se realiza correctamente, este método devuelve 200 Ok, con un cuerpo de respuesta vacío.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

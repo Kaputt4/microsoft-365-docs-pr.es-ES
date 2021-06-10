@@ -35,17 +35,17 @@ ms.locfileid: "52274681"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Con Microsoft 365 Defender, cuando se ejecuta una investigación automatizada, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. [](m365d-autoir.md) Si tiene los [permisos necesarios](m365d-action-center.md#required-permissions-for-action-center-tasks), puede ver esos detalles en la vista de detalles de la investigación. Esta vista le proporciona el estado actualizado y la capacidad de aprobar cualquier acción pendiente. 
+Con Microsoft 365 Defender, cuando se ejecuta una [investigación](m365d-autoir.md) automatizada, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los [permisos necesarios](m365d-action-center.md#required-permissions-for-action-center-tasks), puede ver esos detalles en la vista de detalles de la investigación. Esta vista le proporciona el estado actualizado y la capacidad de aprobar cualquier acción pendiente. 
 
 ![Detalles de la investigación](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a>(¡NUEVO!) Página de investigación unificada
 
-La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para Endpoint y Microsoft Defender para [Office 365](../office-365-security/defender-for-office-365.md). Para acceder a la página de investigación unificada, seleccione el vínculo en el banner amarillo que verá en:
+La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para endpoint y Microsoft Defender [para Office 365](../office-365-security/defender-for-office-365.md). Para acceder a la página de investigación unificada, seleccione el vínculo en el banner amarillo que verá en:
 
-- Cualquier página de investigación en el Centro de seguridad y & office 365 ( [https://protection.office.com](https://protection.office.com) )
-- Cualquier página de investigación en el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Cualquier incidente o experiencia del Centro de acción en el Centro de seguridad de Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Cualquier página de investigación en el Centro Office 365 seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) )
+- Cualquier página de investigación del Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
+- Cualquier incidente o experiencia del Centro de acción en el Microsoft 365 de seguridad ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>Abrir la vista de detalles de la investigación
 
@@ -100,12 +100,12 @@ Use la vista detalles de la investigación para ver la actividad pasada, actual 
 En la vista de detalles de la investigación, puede ver información en las pestañas **gráfico de investigación**, **alertas**, **dispositivos**, **identidades**, **resultados clave**, **entidades**, **registro**, y **acciones pendientes**, que se describen en la siguiente tabla.
 
 > [!NOTE]
-> Las pestañas específicas que se ven en una página de detalles de investigación dependen de lo que incluya la suscripción. Por ejemplo, si su suscripción no incluye Microsoft Defender para Office 365 Plan 2, no verá una pestaña **Buzones.**
+> Las pestañas específicas que se ven en una página de detalles de investigación dependen de lo que incluya la suscripción. Por ejemplo, si su suscripción no incluye Microsoft Defender para Office 365 plan 2, no verá una pestaña **Buzones.**
 
 | Pestaña | Descripción |
 |:--------|:--------|
 | **Gráfico de investigación**   | Proporciona una representación visual de la investigación. Se muestra una lista de las entidades y se muestran las amenazas, junto con las alertas y si hay acciones pendientes de aprobación.<br/>Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono  **Evidencia,** te llevará a la pestaña Evidencia, donde puedes ver las entidades detectadas y sus veredictos. |
-| **Alertas**    | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones de Office, Microsoft Cloud App Security y otras características de Microsoft 365 Defender.|
+| **Alertas**    | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Microsoft Cloud App Security y otras características Microsoft 365 Defender.|
 | **Dispositivos** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden [al nivel de automatización de los grupos de dispositivos](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)).) |
 | **Buzones** |Enumera los buzones que se verán afectados por las amenazas detectadas.  |
 | **Usuarios**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |

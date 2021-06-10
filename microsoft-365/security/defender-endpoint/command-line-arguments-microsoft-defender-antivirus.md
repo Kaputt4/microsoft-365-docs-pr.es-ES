@@ -83,7 +83,7 @@ En la tabla siguiente se enumeran los errores comunes que pueden producirse al u
 | **ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=800722F0D** | El firewall bloquea la conexión o realiza una inspección SSL. |
 | **ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=80072EE7 httpcode=451)** | El firewall bloquea la conexión o realiza una inspección SSL. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar las funciones del Antivirus de Microsoft Defender](configure-microsoft-defender-antivirus-features.md)
 - [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)

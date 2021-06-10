@@ -92,7 +92,7 @@ Microsoft 365 Las características entre productos de Defender incluyen:
 - **Búsqueda de amenazas** entre productos: los equipos de seguridad pueden aprovechar sus conocimientos organizativos únicos para buscar signos de peligro mediante la creación de sus propias consultas personalizadas sobre los datos sin procesar recopilados por los distintos productos de protección. Microsoft 365 Defender proporciona acceso basado en consultas a 30 días de señales sin procesar históricas y datos de alerta en todos los puntos de conexión y Microsoft Defender para obtener Office 365 datos. 
 
 
-## <a name="get-started"></a>Comenzar
+## <a name="get-started"></a>Introducción
 Microsoft 365 Los requisitos de licencias de Defender deben cumplirse antes de poder habilitar el servicio en el centro de seguridad de Microsoft 365 en [security.microsoft.com](https://security.microsoft.com). Para obtener más información, lea:
 - [Requisitos de licencias](prerequisites.md#licensing-requirements)
 - [Activar Microsoft 365 Defender](m365d-enable.md)

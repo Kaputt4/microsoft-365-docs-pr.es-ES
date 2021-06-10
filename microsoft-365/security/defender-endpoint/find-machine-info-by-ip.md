@@ -67,7 +67,7 @@ Si se realiza correctamente y la máquina existe: 200 Aceptar.
 Si no se encuentra ninguna máquina: 404 No se encontró.
 
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 **Solicitud**
 

@@ -23,9 +23,9 @@ ms.locfileid: "50922054"
 
 ¿Tiene alguna pregunta sobre cómo funciona el cifrado de doble clave? Busca una respuesta aquí.
 
-## <a name="what-is-double-key-encryption-for-microsoft-365-dke"></a>¿Qué es el cifrado de doble clave para Microsoft 365 (DKE)?
+## <a name="what-is-double-key-encryption-for-microsoft-365-dke"></a>¿Qué es el cifrado de clave doble Microsoft 365 (DKE)?
 
-El cifrado de doble clave para Microsoft 365 permite a los clientes proteger sus datos altamente confidenciales para cumplir los requisitos especializados. Ayuda a los clientes a mantener el control total de sus claves de cifrado. Usa dos claves para proteger los datos; una clave en el control y una segunda clave almacenada de forma segura en Microsoft Azure. La visualización de datos protegidos con cifrado de clave doble requiere acceso a ambas claves. Dado que Microsoft solo puede tener acceso a una de estas claves, los datos protegidos siguen siendo inaccesibles para Microsoft, lo que garantiza que tenga control total sobre la privacidad y la seguridad de los datos.  
+Double Key Encryption for Microsoft 365 permite a los clientes proteger sus datos altamente confidenciales para cumplir los requisitos especializados. Ayuda a los clientes a mantener el control total de sus claves de cifrado. Usa dos claves para proteger los datos; una clave en el control y una segunda clave almacenada de forma segura en Microsoft Azure. La visualización de datos protegidos con cifrado de clave doble requiere acceso a ambas claves. Dado que Microsoft solo puede tener acceso a una de estas claves, los datos protegidos siguen siendo inaccesibles para Microsoft, lo que garantiza que tenga control total sobre la privacidad y la seguridad de los datos.  
 
 Puede hospedar el servicio de cifrado de clave doble que se usa para solicitar la clave, en una ubicación de su elección (servidor de administración de claves local o en la nube). El servicio se mantiene como lo haría con cualquier otra aplicación. Double Key Encryption permite controlar el acceso al servicio de cifrado de clave doble. Puede almacenar los datos altamente confidenciales localmente o moverlo a la nube. Puede estar seguro de impedir el acceso de terceros porque mantiene el control total de la clave. Double Key Encryption te permite almacenar los datos y la clave en la misma ubicación.
 
@@ -35,9 +35,9 @@ DKE le ayuda a cumplir los requisitos normativos en varios reglamentos y estánd
 
 Deberá usar el cliente de etiquetado unificado de Azure Information Protection para proteger los documentos con cifrado de clave doble. Actualmente, no puede usar el Microsoft Office de confidencialidad integrado.
 
-## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>¿Qué aplicaciones de Microsoft 365 puedo usar con DKE?
+## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>¿Aplicaciones Microsoft 365 puedo usar con DKE?
 
-Puede usar etiquetas DKE para proteger documentos con las versiones de escritorio de Word, Excel y PowerPoint en Windows. Asegúrese de que está usando *.12711 o versiones posteriores (versiones de escritorio de Word, PowerPoint y Excel) en Windows.
+Puede usar etiquetas DKE para proteger documentos mediante las versiones de escritorio de Word, Excel y PowerPoint en Windows. Asegúrese de que está usando *.12711 o versiones posteriores (versiones de escritorio de Word, PowerPoint y Excel) en Windows.
 
 ## <a name="how-is-double-key-encryption-different-from-the-existing-hold-your-own-key-hyok-solution"></a>¿En qué se diferencia el cifrado de clave doble de la solución de retención existente de su propia clave (HYOK)?
 

@@ -27,11 +27,11 @@ ms.locfileid: "50921485"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Escritura diferida de contraseña para el entorno de prueba de Microsoft 365
 
-*Esta Guía del laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
+*Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
 
 Los usuarios pueden usar la reescribición de contraseñas para actualizar sus contraseñas a través de Azure Active Directory (Azure AD), que luego se replica en los Servicios de dominio de Active Directory (AD DS) locales. Con la reescribición de contraseñas, los usuarios no tienen que actualizar sus contraseñas a través del AD DS local donde se almacenan sus cuentas de usuario originales. Esto ayuda a los usuarios móviles o remotos que no tienen una conexión de acceso remoto a su red local.
 
-En este artículo se describe cómo configurar el entorno de prueba de Microsoft 365 para la reescribición de contraseñas.
+En este artículo se describe cómo configurar el entorno Microsoft 365 prueba para la reescribición de contraseñas.
 
 La configuración del entorno de prueba para la reescribición de contraseñas implica dos fases:
 - [Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -40,7 +40,7 @@ La configuración del entorno de prueba para la reescribición de contraseñas i
 ![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para](../downloads/Microsoft365EnterpriseTLGStack.pdf)enterprise Test Lab Guide Stack .
+> Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
@@ -109,9 +109,9 @@ A continuación, configure Azure AD Connect en APP1 para la escritura diferida d
 
 4. En la **página Tareas adicionales,** seleccione **Personalizar opciones de sincronización** y, a continuación, seleccione **Siguiente**.
 
-5. En la **página Conectarse a Azure AD,** escriba las credenciales de la cuenta de administrador global y, a continuación, **seleccione Siguiente**.
+5. En la **Conectar a Azure AD,** escriba las credenciales de su cuenta de administrador global y, a continuación, **seleccione Siguiente**.
 
-6. En las **páginas Conectar directorios** y **Filtrado de dominio/OU,** seleccione **Siguiente**.
+6. En los **directorios Conectar** y páginas de filtrado **dominio/ou,** seleccione **Siguiente**.
 
 7. En la **página Características opcionales,** seleccione **Reescribición de** contraseña y, a continuación, **seleccione Siguiente**.
 
@@ -127,7 +127,7 @@ La configuración resultante tiene este aspecto:
 
 Esta configuración se compone de:
 
-- Una versión de prueba de Microsoft 365 E5 o suscripciones de pago con el dominio DNS TESTLAB.\<*your domain name*> registrado.
+- Una Microsoft 365 E5 de prueba o de pago con el dominio DNS TESTLAB.\<*your domain name*> registrado.
 - Una intranet de organización simplificada conectada a Internet, formada por las máquinas virtuales DC1, APP1 y CLIENT1 en una subred de una red virtual de Azure.
 - Azure AD Connect se ejecuta en APP1 para sincronizar la lista de cuentas y grupos desde el espacio empresarial de Azure AD de sus suscripciones de Microsoft 365 con el dominio de TESTLAB AD DS.
 - La escritura diferida de contraseña está habilitada para que los usuarios puedan cambiar sus contraseñas a través de Azure AD sin tener que estar conectados a la intranet simplificada.

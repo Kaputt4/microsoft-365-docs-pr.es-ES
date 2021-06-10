@@ -58,7 +58,7 @@ Los nombres de tabla y columna también se enumeran en el Centro de seguridad de
 
 | Nombre de tabla | Descripción |
 |------------|-------------|
-| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Alertas en el Centro de seguridad de Microsoft Defender |
+| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Alertas en Centro de seguridad de Microsoft Defender |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Información del dispositivo, incluida la información del sistema operativo |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propiedades de red de dispositivos, incluidos adaptadores, direcciones IP y MAC, así como redes y dominios conectados |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Creación de procesos y eventos relacionados |
@@ -67,7 +67,7 @@ Los nombres de tabla y columna también se enumeran en el Centro de seguridad de
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Creación y modificación de entradas de registro |
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Inicios de sesión y otros eventos de autenticación |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Eventos de carga de DLL |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad como antivirus de Microsoft Defender y protección contra vulnerabilidades de seguridad |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad como Antivirus de Microsoft Defender protección contra vulnerabilidades y vulnerabilidades de seguridad |
 | **[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)** | Información de certificado de archivos firmados obtenidos de eventos de comprobación de certificados en puntos de conexión |
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventario de software instalado en dispositivos, incluida la información de versión y el estado de fin de soporte técnico |
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Vulnerabilidades de software encontradas en dispositivos y la lista de actualizaciones de seguridad disponibles que abordan cada vulnerabilidad |
@@ -76,8 +76,8 @@ Los nombres de tabla y columna también se enumeran en el Centro de seguridad de
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Base de conocimiento de las configuraciones de seguridad utilizadas por la administración de amenazas y vulnerabilidades para evaluar dispositivos, incluidas las asignaciones a diferentes estándares y criterios de referencia |
 
 >[!TIP]
->Use la búsqueda avanzada en [Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) para buscar amenazas con datos de Defender for Endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender for Identity. [Activar Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)<br><br>
-Obtenga más información sobre cómo mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender en Migrar consultas avanzadas de búsqueda de [Microsoft Defender para endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+>Usa la búsqueda avanzada en [Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) para buscar amenazas con datos de Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. [Activar Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)<br><br>
+Obtenga más información sobre cómo mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender en Migrar consultas avanzadas de búsqueda de [Microsoft Defender para endpoint.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

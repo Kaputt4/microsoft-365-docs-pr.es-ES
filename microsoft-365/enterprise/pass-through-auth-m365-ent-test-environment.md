@@ -27,7 +27,7 @@ ms.locfileid: "50921533"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticación de paso a través para el entorno de prueba de Microsoft 365
 
-*Esta guía del laboratorio de pruebas se puede usar para entornos de prueba de Microsoft 365 para empresas y office 365 Enterprise.*
+*Esta Guía del laboratorio de pruebas se puede usar tanto Microsoft 365 entornos de prueba empresariales como Office 365 Enterprise de prueba.*
 
 Las organizaciones que quieren usar directamente su infraestructura de Active Directory Domain Services (AD DS) local para la autenticación de aplicaciones y servicios en la nube de Microsoft pueden usar la autenticación de paso a través. Este artículo describe cómo configurar el entorno de prueba de Microsoft 365 para la autenticación de paso a través, lo que resulta en la siguiente configuración:
   
@@ -51,7 +51,7 @@ Siga las instrucciones de [Sincronización de hash de contraseñas para Microsof
   
 Esta configuración se compone de: 
   
-- Suscripción de prueba o de pago de Microsoft 365 E5.
+- Microsoft 365 E5 de prueba o de pago.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Azure AD Connect se ejecuta en APP1 para sincronizar periódicamente el dominio TESTLAB de AD DS con el espacio empresarial de Azure AD de sus suscripciones de Microsoft 365.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Fase 2: configurar Azure AD Connect en APP1 para la autenticación de paso a través
@@ -94,7 +94,7 @@ Esta es la configuración resultante:
  
 Esta configuración se compone de:
 
-- Una versión de prueba de Microsoft 365 E5 o suscripciones de pago con el testlab de dominio DNS.\<your domain name> registrado.
+- Una Microsoft 365 E5 de prueba o de pago con el testlab de dominio DNS.\<your domain name> registrado.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Un Agente de autenticación se ejecuta en APP1 para administrar las solicitudes de autenticación de paso a través desde el inquilino de Azure AD de las suscripciones de Microsoft 365.
 
 ## <a name="next-step"></a>Paso siguiente

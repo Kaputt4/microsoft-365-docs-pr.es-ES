@@ -20,7 +20,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: Obtenga información sobre cómo reducir el tiempo de carga de las páginas de SharePoint Online mediante JavaScript para retrasar la carga de imágenes y JavaScript no esencial.
+description: Obtenga información sobre cómo reducir el tiempo de carga de SharePoint en línea mediante JavaScript para retrasar la carga de imágenes y JavaScript no esencial.
 ms.openlocfilehash: 86b93c4e1e102132bb0c1bfb9a413233529adecb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,9 +32,9 @@ ms.locfileid: "50919169"
 
 En este artículo se describe cómo puede reducir el tiempo de carga de las páginas de SharePoint Online mediante JavaScript para retrasar la carga de imágenes y esperar a cargar JavaScript no esencial hasta después de que se cargue la página.
   
-Las imágenes pueden afectar negativamente a las velocidades de carga de página en SharePoint Online. De forma predeterminada, la mayoría de los exploradores de Internet modernos capturan previamente imágenes al cargar una página HTML. Esto puede hacer que la página se cargue innecesariamente lentamente si las imágenes no están visibles en la pantalla hasta que el usuario se desplaza hacia abajo. Las imágenes pueden impedir que el explorador cargue la parte visible de la página. Para solucionar este problema, puede usar JavaScript para omitir la carga de las imágenes en primer lugar. Además, la carga de JavaScript no esencial también puede ralentizar los tiempos de descarga en las páginas de SharePoint. En este tema se describen algunos métodos que puede usar para mejorar los tiempos de carga de página con JavaScript en SharePoint Online.
+Las imágenes pueden afectar negativamente a las velocidades de carga de página en SharePoint Online. De forma predeterminada, la mayoría de los exploradores de Internet modernos capturan previamente imágenes al cargar una página HTML. Esto puede hacer que la página se cargue innecesariamente lentamente si las imágenes no están visibles en la pantalla hasta que el usuario se desplaza hacia abajo. Las imágenes pueden impedir que el explorador cargue la parte visible de la página. Para solucionar este problema, puede usar JavaScript para omitir la carga de las imágenes en primer lugar. Además, la carga de JavaScript no esencial también puede ralentizar los tiempos de descarga en SharePoint páginas. En este tema se describen algunos métodos que puede usar para mejorar los tiempos de carga de página con JavaScript en SharePoint Online.
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Mejorar los tiempos de carga de página retrasando la carga de imágenes en páginas de SharePoint Online mediante JavaScript
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Mejorar los tiempos de carga de página retrasando la carga de imágenes en SharePoint en línea mediante JavaScript
 
 Puede usar JavaScript para evitar que un explorador web obtenga imágenes previamente. Esto acelera la representación general de documentos. Para ello, se quita el valor del atributo src de la etiqueta y se reemplaza por la ruta de acceso a un archivo en un atributo de datos \<img\> como: data-src. Por ejemplo:
   
@@ -99,7 +99,7 @@ $('#s4-workspace').on("scroll", function () {
 
 Guarde el archivo de texto como un archivo JavaScript con la extensión .js, por ejemplo, delayLoadImages.js.
   
-Una vez que haya terminado de escribir delayLoadImages.js, puede agregar el contenido del archivo a una página maestra en SharePoint Online. Para ello, agregue un vínculo de script al encabezado de la página maestra. Una vez que esté en una página maestra, JavaScript se aplicará a todas las páginas del sitio de SharePoint Online que usen ese diseño de página maestra. Como alternativa, si solo desea usarlo en una página del sitio, use el elemento web editor de scripts para insertar JavaScript en la página. Vea estos temas para obtener más información:
+Una vez que haya terminado de escribir delayLoadImages.js, puede agregar el contenido del archivo a una página maestra en SharePoint Online. Para ello, agregue un vínculo de script al encabezado de la página maestra. Una vez que esté en una página maestra, JavaScript se aplicará a todas las páginas del sitio SharePoint Online que usan ese diseño de página maestra. Como alternativa, si solo desea usarlo en una página del sitio, use el elemento web editor de scripts para insertar JavaScript en la página. Vea estos temas para obtener más información:
   
 - [Aplicar una página maestra a un sitio de SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
@@ -117,13 +117,13 @@ La siguiente captura de pantalla muestra el resto de las imágenes que se descar
   
 Retrasar la carga de imágenes mediante JavaScript puede ser una técnica eficaz para aumentar el rendimiento; sin embargo, si la técnica se aplica en un sitio web público, los motores de búsqueda no podrán rastrear las imágenes de la misma manera que rastrearían una imagen formada regularmente. Esto puede afectar a las clasificaciones de los motores de búsqueda porque los metadatos de la imagen en sí no están realmente allí hasta que se carga la página. Los rastreadores del motor de búsqueda solo leen el CÓDIGO HTML y, por lo tanto, no verán las imágenes como contenido en la página. Las imágenes son uno de los factores que se usan para clasificar las páginas en los resultados de búsqueda. Una forma de evitar esto es usar texto introductorio para las imágenes.
   
-## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Ejemplo de código de GitHub: insertar JavaScript para mejorar el rendimiento
+## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub ejemplo de código: insertar JavaScript para mejorar el rendimiento
 
-No se pierda el artículo y el ejemplo de código sobre la inyección [de JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) proporcionado en GitHub.
+No se pierda el artículo y el ejemplo de código sobre la inyección [de JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) que se proporciona en GitHub.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Exploradores compatibles en Office 2013 y Aplicaciones de Microsoft 365 para empresas](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Exploradores compatibles en Office 2013 y Aplicaciones Microsoft 365 para empresas](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [Aplicar una página maestra a un sitio de SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
   

@@ -1,5 +1,5 @@
 ---
-title: Buscar en el buzón & sitio de OneDrive para la Empresa para obtener una lista de usuarios con búsqueda de contenido
+title: Busque en el & OneDrive para la Empresa de correo una lista de usuarios con búsqueda de contenido
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
-description: Use la búsqueda de contenido y el script de este artículo para buscar en los buzones y los sitios de OneDrive para la Empresa un grupo de usuarios.
+description: Use búsqueda de contenido y el script de este artículo para buscar en los buzones y OneDrive para la Empresa para un grupo de usuarios.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 51e668438c6016a0c5f2c914dc2b2e86cc56f49e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -28,29 +28,29 @@ ms.locfileid: "50922472"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa
 
-El Centro de & seguridad proporciona una serie de cmdlets Windows PowerShell que le permiten automatizar tareas relacionadas con la exhibición de documentos electrónicos que requieren mucho tiempo. Actualmente, la creación de una búsqueda de contenido en el Centro de seguridad & cumplimiento para buscar un gran número de ubicaciones de contenido de custodia lleva tiempo y preparación. Antes de crear una búsqueda, debe recopilar la dirección URL de cada sitio de OneDrive para la Empresa y, a continuación, agregar cada buzón y sitio de OneDrive para la Empresa a la búsqueda. En versiones futuras, esto será más fácil de hacer en el Centro de seguridad & cumplimiento. Hasta entonces, puede usar el script de este artículo para automatizar este proceso. Este script solicita el nombre del dominio MySite de la organización (por ejemplo, **contoso** en la dirección URL), una lista de direcciones de correo electrónico de usuario, el nombre de la nueva búsqueda de contenido y la consulta de búsqueda que se va `https://contoso-my.sharepoint.com` a usar. El script obtiene la dirección URL de OneDrive para la Empresa para cada usuario de la lista y, a continuación, crea e inicia una búsqueda de contenido que busca en el buzón y en el sitio de OneDrive para la Empresa para cada usuario de la lista, mediante la consulta de búsqueda que proporcione.
+El Centro de seguridad & cumplimiento proporciona una serie de cmdlets Windows PowerShell que le permiten automatizar tareas relacionadas con la exhibición de documentos electrónicos que requieren mucho tiempo. Actualmente, la creación de una búsqueda de contenido en el Centro de seguridad & cumplimiento para buscar un gran número de ubicaciones de contenido de custodia lleva tiempo y preparación. Antes de crear una búsqueda, debe recopilar la dirección URL de cada sitio OneDrive para la Empresa y, a continuación, agregar cada buzón OneDrive para la Empresa sitio a la búsqueda. En versiones futuras, esto será más fácil de hacer en el Centro de seguridad & cumplimiento. Hasta entonces, puede usar el script de este artículo para automatizar este proceso. Este script solicita el nombre del dominio MySite de la organización (por ejemplo, **contoso** en la dirección URL), una lista de direcciones de correo electrónico de usuario, el nombre de la nueva búsqueda de contenido y la consulta de búsqueda que se va `https://contoso-my.sharepoint.com` a usar. El script obtiene la dirección URL de OneDrive para la Empresa para cada usuario de la lista y, a continuación, crea e inicia una búsqueda de contenido que busca en el buzón y el sitio OneDrive para la Empresa para cada usuario de la lista, mediante la consulta de búsqueda que proporcione.
   
 ## <a name="permissions-and-script-information"></a>Permisos e información de script
 
-- Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento de & y un administrador global de SharePoint Online para ejecutar el script en el paso 3.
+- Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento de & y administrador global de SharePoint Online para ejecutar el script en el paso 3.
 
 - Asegúrese de guardar la lista de usuarios que cree en el paso 2 y el script del paso 3 en la misma carpeta. Esto facilitará la ejecución del script.
 
-- El script incluye un control de errores mínimo. Su objetivo principal es buscar de forma rápida y sencilla el buzón y el sitio de OneDrive para la Empresa de cada usuario.
+- El script incluye un control de errores mínimo. Su objetivo principal es buscar de forma rápida y sencilla el buzón de correo y OneDrive para la Empresa sitio de cada usuario.
 
 - Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Paso 1: Instalar el Shell de administración de SharePoint Online
 
-El primer paso es instalar el Shell de administración de SharePoint Online. No es necesario usar el shell en este procedimiento, pero debe instalarlo porque contiene los requisitos previos requeridos por el script que ejecuta en el paso 3. Estos requisitos previos permiten que el script se comunique con SharePoint Online para obtener las direcciones URL de los sitios de OneDrive para la Empresa.
+El primer paso es instalar el Shell de administración SharePoint en línea. No es necesario usar el shell en este procedimiento, pero debe instalarlo porque contiene los requisitos previos requeridos por el script que ejecuta en el paso 3. Estos requisitos previos permiten que el script se comunique con SharePoint Online para obtener las direcciones URL de los OneDrive para la Empresa web.
   
-Vaya a Configurar el entorno del Shell de administración de [SharePoint Online Windows PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) y realice los pasos 1 y 2 para instalar el Shell de administración de SharePoint Online.
+Vaya [a Configurar el entorno SharePoint del Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) de administración en línea Windows PowerShell y realice los pasos 1 y 2 para instalar SharePoint Shell de administración en línea.
   
 ## <a name="step-2-generate-a-list-of-users"></a>Paso 2: Generar una lista de usuarios
 
-El script del paso 3 creará una búsqueda de contenido para buscar en los buzones y cuentas de OneDrive una lista de usuarios. Solo puede escribir las direcciones de correo electrónico en un archivo de texto o puede ejecutar un comando en Windows PowerShell para obtener una lista de direcciones de correo electrónico y guardarlas en un archivo (ubicado en la misma carpeta en la que guardará el script en el paso 3).
+El script del paso 3 creará una búsqueda de contenido para buscar en los buzones y OneDrive cuentas de una lista de usuarios. Solo puede escribir las direcciones de correo electrónico en un archivo de texto o puede ejecutar un comando en Windows PowerShell para obtener una lista de direcciones de correo electrónico y guardarlas en un archivo (ubicado en la misma carpeta en la que guardará el script en el paso 3).
   
-Este es un comando de [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) de Exchange Online que puede ejecutar para obtener una lista de direcciones de correo electrónico para todos los usuarios de su organización y guardarlo en un archivo de texto denominado `Users.txt` . 
+Este es un comando [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) que puede ejecutar para obtener una lista de direcciones de correo electrónico para todos los usuarios de su organización y guardarlo en un archivo de texto denominado `Users.txt` . 
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
@@ -64,7 +64,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
   
 - **Sus credenciales de** usuario: el script usará sus credenciales para obtener acceso a SharePoint Online para obtener las direcciones URL de OneDrive para la Empresa y para conectarse al Centro de seguridad & cumplimiento con PowerShell remoto. 
     
-- **Nombre del dominio de MySite:** el dominio MySite es el dominio que contiene todos los sitios de OneDrive para la Empresa de la organización. Por ejemplo, si la dirección URL del dominio de MySite es , escribiría cuando el script le pida el nombre del **https://contoso-my.sharepoint.com**  `contoso` dominio de MySite. 
+- **Nombre del dominio de MySite:** el dominio MySite es el dominio que contiene todos los OneDrive para la Empresa de la organización. Por ejemplo, si la dirección URL del dominio de MySite es , escribiría cuando el script le pida el nombre del **https://contoso-my.sharepoint.com**  `contoso` dominio de MySite. 
     
 - **Pathname del archivo de texto del paso 2:** el nombre de ruta del archivo de texto que creó en el paso 2. Si el archivo de texto y el script se encuentran en la misma carpeta, escriba el nombre del archivo de texto. De lo contrario, escriba el nombre de ruta de acceso completo para el archivo de texto. 
     
@@ -187,4 +187,4 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
     
     - La consulta de búsqueda (deje esto en blanco para devolver todos los elementos de las ubicaciones de contenido).
     
-    El script obtiene las direcciones URL de cada sitio de OneDrive para la Empresa y, a continuación, crea e inicia la búsqueda. Puede ejecutar el cmdlet **Get-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento para mostrar las  estadísticas y los resultados de la búsqueda, o bien puede ir a la página Búsqueda de contenido en el Centro de seguridad & cumplimiento para ver información sobre la búsqueda.
+    El script obtiene las direcciones URL de cada OneDrive para la Empresa sitio y, a continuación, crea e inicia la búsqueda. Puede ejecutar el cmdlet **Get-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento para mostrar las  estadísticas y los resultados de la búsqueda, o bien puede ir a la página Búsqueda de contenido en el Centro de seguridad & cumplimiento para ver información sobre la búsqueda.

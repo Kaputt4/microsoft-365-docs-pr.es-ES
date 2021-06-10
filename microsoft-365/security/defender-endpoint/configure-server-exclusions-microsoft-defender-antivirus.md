@@ -1,8 +1,8 @@
 ---
-title: Configurar exclusiones de Antivirus de Microsoft Defender en Windows Server
+title: Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 ms.reviewer: ''
 manager: dansimp
-description: Windows Server incluye exclusiones automáticas, según el rol de servidor. También puede agregar exclusiones personalizadas.
+description: Windows El servidor incluye exclusiones automáticas, según el rol de servidor. También puede agregar exclusiones personalizadas.
 keywords: exclusiones, servidor, exclusiones automáticas, automáticas, personalizadas, exámenes, Antivirus de Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274765"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar exclusiones de Antivirus de Microsoft Defender en Windows Server
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "52274765"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Antivirus de Microsoft Defender en Windows Server 2016 y Windows Server 2019 te inscribe automáticamente en determinadas exclusiones, tal como se define en el rol de servidor especificado. Estas exclusiones no aparecen en las listas de exclusión estándar que se muestran en la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
+Antivirus de Microsoft Defender en Windows Server 2016 y Windows Server 2019 lo inscribe automáticamente en determinadas exclusiones, tal como lo define el rol de servidor especificado. Estas exclusiones no aparecen en las listas de exclusión estándar que se muestran en la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 
 > [!NOTE]
 > Las exclusiones automáticas solo se aplican al examen de protección en tiempo real (RTP). Las exclusiones automáticas no se respetan durante un examen completo/rápido o a petición.
@@ -47,14 +47,14 @@ Tenga en cuenta los siguientes puntos importantes:
 - Las exclusiones personalizadas tienen prioridad sobre las exclusiones automáticas.
 - Las exclusiones automáticas solo se aplican al examen de protección en tiempo real (RTP). Las exclusiones automáticas no se respetan durante un examen completo/rápido o a petición.
 - Las exclusiones personalizadas y duplicadas no están en conflicto con las exclusiones automáticas.
-- Microsoft Defender Antivirus usa las herramientas de administración y mantenimiento de imágenes de implementación (DISM) para determinar qué roles están instalados en el equipo.
+- Antivirus de Microsoft Defender usa las herramientas de administración y mantenimiento de imágenes de implementación (DISM) para determinar qué roles están instalados en el equipo.
 
 ## <a name="opt-out-of-automatic-exclusions"></a>No participar en exclusiones automáticas
 
-En Windows Server 2016 y Windows Server 2019, las exclusiones predefinidas que entregan las actualizaciones de inteligencia de seguridad solo excluyen las rutas predeterminadas para un rol o característica. Si instaló un rol o una característica en una ruta de acceso personalizada o desea controlar manualmente el conjunto de exclusiones, asegúrese de no participar en las exclusiones automáticas que se entregan en Actualizaciones de inteligencia de seguridad. Pero tenga en cuenta que las exclusiones que se entregan automáticamente están optimizadas para los roles de Windows Server 2016 y 2019. Consulta [Recomendaciones para definir exclusiones antes](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) de definir las listas de exclusión.
+En Windows Server 2016 y Windows Server 2019, las exclusiones predefinidas que entregan las actualizaciones de inteligencia de seguridad solo excluyen las rutas predeterminadas para un rol o característica. Si instaló un rol o una característica en una ruta de acceso personalizada o desea controlar manualmente el conjunto de exclusiones, asegúrese de no participar en las exclusiones automáticas que se entregan en Actualizaciones de inteligencia de seguridad. Pero tenga en cuenta que las exclusiones que se entregan automáticamente están optimizadas para los roles Windows Server 2016 y 2019. Consulte [Recomendaciones para definir exclusiones antes](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) de definir las listas de exclusión.
 
 > [!WARNING]
-> La exclusión automática puede afectar negativamente al rendimiento o provocar daños en los datos. Las exclusiones que se entregan automáticamente están optimizadas para los roles de Windows Server 2016 y Windows Server 2019.
+> La exclusión automática puede afectar negativamente al rendimiento o provocar daños en los datos. Las exclusiones que se entregan automáticamente se optimizan para Windows Server 2016 y Windows roles de Server 2019.
 
 Dado que las exclusiones predefinidas solo excluyen las rutas predeterminadas **,** si mueve NTDS y SYSVOL a otra unidad o ruta de acceso que sea diferente de la ruta de acceso *original,* debe agregar exclusiones manualmente con la información aquí [.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)
 
@@ -62,9 +62,9 @@ Puede deshabilitar las listas de exclusión automática con la directiva de grup
 
 ### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Usar la directiva de grupo para deshabilitar la lista de exclusiones automáticas en Windows Server 2016 y Windows Server 2019
 
-1. En el equipo de administración de directivas de grupo, abra la Consola [de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y, a continuación, haga clic en **Editar**.
+1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y, a continuación, haga clic en **Editar**.
 2. En el **Editor de administración de directivas de** grupo, vaya a Configuración **del** equipo y, a continuación, haga clic en **Plantillas administrativas.**
-3. Expande el árbol a **Componentes de Windows**  >  **Exclusiones de Antivirus** de Microsoft Defender  >  .
+3. Expanda el árbol para **Windows componentes**  >  **Antivirus de Microsoft Defender**  >  **exclusiones**.
 4. Haga doble clic **en Desactivar exclusiones automáticas** y establezca la opción en **Habilitado**. Después, haga clic en **Aceptar**. 
 
 ### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>Usar cmdlets de PowerShell para deshabilitar la lista de exclusiones automáticas en Windows Server 2016 y 2019
@@ -77,10 +77,10 @@ Set-MpPreference -DisableAutoExclusions $true
 
 Para obtener más información, consulte los siguientes recursos:
 
-- [Use cmdlets de PowerShell para configurar y ejecutar Antivirus de Microsoft Defender.](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [Use cmdlets de PowerShell para configurar y ejecutar Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 - [Use PowerShell con Antivirus de Microsoft Defender](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Usar Windows Management Instruction (WMI) para deshabilitar la lista de exclusiones automáticas en Windows Server 2016 y Windows Server 2019
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Use Windows Management Instruction (WMI) para deshabilitar la lista de exclusiones automáticas en Windows Server 2016 y Windows Server 2019
 
 Utilice el **método Set** de la [clase MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) para las siguientes propiedades:
 
@@ -89,7 +89,7 @@ DisableAutoExclusions
 ```
 
 Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="list-of-automatic-exclusions"></a>Lista de exclusiones automáticas
 
@@ -97,17 +97,17 @@ Las secciones siguientes contienen las exclusiones que se entregan con rutas de 
 
 ### <a name="default-exclusions-for-all-roles"></a>Exclusiones predeterminadas para todos los roles
 
-En esta sección se enumeran las exclusiones predeterminadas para todos los roles de Windows Server 2016 y 2019.
+En esta sección se enumeran las exclusiones predeterminadas para todos los Windows Server 2016 y 2019.
 
 > [!NOTE]
 > Las ubicaciones predeterminadas pueden ser diferentes de las que se enumeran en este artículo.
 
-#### <a name="windows-tempedb-files"></a>Archivos "temp.edb" de Windows
+#### <a name="windows-tempedb-files"></a>Windows Archivos "temp.edb"
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
 
-#### <a name="windows-update-files-or-automatic-update-files"></a>Archivos de Windows Update o archivos de actualización automática
+#### <a name="windows-update-files-or-automatic-update-files"></a>Windows Actualizar archivos o archivos de actualización automática
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -115,7 +115,7 @@ En esta sección se enumeran las exclusiones predeterminadas para todos los role
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
-#### <a name="windows-security-files"></a>Archivos de seguridad de Windows
+#### <a name="windows-security-files"></a>Seguridad de Windows archivos
 
 - `%windir%\Security\database\*.chk`
 - `%windir%\Security\database\*.edb`
@@ -259,9 +259,9 @@ En esta sección se enumeran las exclusiones de archivos y carpetas y las exclus
 
 - `%systemroot%\System32\dns.exe`
 
-### <a name="file-and-storage-services-exclusions"></a>Exclusiones de servicios de almacenamiento y archivos
+### <a name="file-and-storage-services-exclusions"></a>Exclusiones de Storage de archivos y servicios
 
-En esta sección se enumeran las exclusiones de archivos y carpetas que se entregan automáticamente al instalar el rol Servicios de almacenamiento y archivo. Las exclusiones enumeradas a continuación no incluyen exclusiones para el rol Agrupación en clústeres.
+En esta sección se enumeran las exclusiones de archivos y carpetas que se entregan automáticamente al instalar el rol Archivo y Storage servicios. Las exclusiones enumeradas a continuación no incluyen exclusiones para el rol Agrupación en clústeres.
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
@@ -335,7 +335,7 @@ En esta sección se enumeran las exclusiones de carpetas que se entregan automá
 - `%systemroot%\SoftwareDistribution\Datastore`
 - `%systemroot%\SoftwareDistribution\Download`
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

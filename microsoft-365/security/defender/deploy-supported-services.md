@@ -1,6 +1,6 @@
 ---
 title: Implementar servicios compatibles con Microsoft 365 Defender
-description: Obtenga información sobre los servicios de seguridad de Microsoft que Microsoft 365 Defender puede integrar, sus requisitos de licencia y los procedimientos de implementación
+description: Obtenga información sobre los servicios de seguridad de Microsoft que puede integrar Microsoft 365 Defender, sus requisitos de licencia y los procedimientos de implementación
 keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -39,15 +39,15 @@ ms.locfileid: "51935682"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Microsoft 365 Defender](microsoft-365-defender.md) integra varios servicios de seguridad de Microsoft para proporcionar capacidades centralizadas de detección, prevención e investigación contra ataques sofisticados. En este artículo se describen los servicios admitidos, sus requisitos de licencia, las ventajas y limitaciones asociadas con la implementación de uno o varios servicios y vínculos a cómo puede implementarlos completamente individualmente.
+[Microsoft 365 Defender integra](microsoft-365-defender.md) varios servicios de seguridad de Microsoft para proporcionar capacidades centralizadas de detección, prevención e investigación contra ataques sofisticados. En este artículo se describen los servicios admitidos, sus requisitos de licencia, las ventajas y limitaciones asociadas con la implementación de uno o varios servicios y vínculos a cómo puede implementarlos completamente individualmente.
 
 ## <a name="supported-services"></a>Servicios compatibles
-Una licencia de seguridad de Microsoft 365 E5, E5 Security, A5 o A5 o una combinación válida de licencias proporciona acceso a los siguientes servicios compatibles y le da derecho a usar Microsoft 365 Defender en el centro de seguridad de Microsoft 365. [Ver requisitos de licencias](prerequisites.md#licensing-requirements)
+Una Microsoft 365 E5, E5 Security, A5 o A5 Security o una combinación válida de licencias proporciona acceso a los siguientes servicios compatibles y le da derecho a usar Microsoft 365 Defender en un centro de seguridad Microsoft 365. [Ver requisitos de licencias](prerequisites.md#licensing-requirements)
 
 | Servicio compatible | Descripción |
 | ------ | ------ |
 | Microsoft Defender para punto de conexión | Conjunto de aplicaciones de protección de puntos de conexión que se basa en sensores de comportamiento eficaces, análisis en la nube e inteligencia de amenazas |
-|Microsoft Defender para Office 365 | Protección avanzada para sus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
+|Microsoft Defender para Office 365 | Protección avanzada para tus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
 | Microsoft Defender for Identity | Defenderse de amenazas avanzadas, identidades comprometidas e información interna malintencionada mediante señales correlacionadas de Active Directory |
 | Microsoft Cloud App Security | Identificar y combatir ciberamenazas en los servicios en la nube de Microsoft y de terceros |
 
@@ -68,7 +68,7 @@ En la tabla siguiente se muestra cómo cada servicio admitido proporciona datos 
 | Servicio | Datos (señales & información correlacionada) | Ámbito de respuesta & corrección |
 | ------ | ------ | ------ |
 | Microsoft Defender para punto de conexión | - Estados de extremo y eventos sin procesar<br />- Detecciones y alertas de puntos de conexión, incluidos antivirus, EDR, reducción de superficie de ataque<br />- Información sobre archivos y otras entidades observadas en puntos de conexión | Puntos de conexión |
-|Microsoft Defender para Office 365 | - Estados de correo y buzón de correo y eventos sin procesar<br />- Detecciones de correo electrónico, datos adjuntos y vínculos | - Buzones<br />- Cuentas de Microsoft 365 |
+|Microsoft Defender para Office 365 | - Estados de correo y buzón de correo y eventos sin procesar<br />- Detecciones de correo electrónico, datos adjuntos y vínculos | - Buzones<br />- Microsoft 365 cuentas |
 | Microsoft Defender for Identity | - Señales de Active Directory, incluidos los eventos de autenticación<br />- Detecciones de comportamiento relacionadas con la identidad | Identidades |
 | Microsoft Cloud App Security | - Detección de servicios y aplicaciones en la nube no cedida (TECNOLOGÍA de la sombra)<br />- Exposición de datos a aplicaciones en la nube<br />- Actividad de amenazas asociada a aplicaciones en la nube | Aplicaciones en la nube |
 
@@ -78,7 +78,7 @@ Por lo general, la implementación de cada servicio requiere el aprovisionamient
 | Servicio | Instrucciones de aprovisionamiento | Configuración inicial |
 | ------ | ------ | ------ |
 | Microsoft Defender para punto de conexión | [Guía de implementación de Microsoft Defender para puntos de conexión](../defender-endpoint/deployment-phases.md) | *Ver instrucciones de aprovisionamiento* |
-|Microsoft Defender para Office 365 | *Ninguno, aprovisionado con Office 365* | [Configurar las directivas de Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
+|Microsoft Defender para Office 365 | *Ninguno, aprovisionado con Office 365* | [Configurar las directivas de Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | Microsoft Defender for Identity | [Inicio rápido: crear la instancia de Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step1) | *Ver instrucciones de aprovisionamiento* |
 | Microsoft Cloud App Security | *Ninguna* | [Inicio rápido: Introducción a Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
 
@@ -86,9 +86,9 @@ Una vez que haya implementado los servicios compatibles, [active Microsoft 365 D
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Introducción a Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft 365 Introducción al defensor](microsoft-365-defender.md)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 - [Introducción a Microsoft Defender para puntos de conexión](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Introducción a Microsoft Defender para Office 365](../office-365-security/defender-for-office-365.md)
-- [Introducción a Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Introducción a Microsoft Defender para Office 365 web](../office-365-security/defender-for-office-365.md)
+- [Información general sobre Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
 - [Introducción a Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)

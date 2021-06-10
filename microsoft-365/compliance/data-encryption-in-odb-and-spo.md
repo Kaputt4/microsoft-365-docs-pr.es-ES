@@ -50,7 +50,7 @@ En OneDrive para la Empresa y SharePoint Online, hay dos escenarios en los que l
 
 El cifrado en reposo incluye dos componentes: cifrado de nivel de disco de BitLocker y cifrado por archivo del contenido del cliente.
   
-BitLocker se implementa para OneDrive para la Empresa y SharePoint Online en todo el servicio. El cifrado por archivo también está en OneDrive para la Empresa y SharePoint Online en Microsoft 365 multiinquilino y en nuevos entornos dedicados basados en tecnología multiinquilino.
+BitLocker se implementa para OneDrive para la Empresa y SharePoint Online en todo el servicio. El cifrado por archivo también está en OneDrive para la Empresa y SharePoint Online en Microsoft 365 entornos multiinquilino y nuevos entornos dedicados basados en tecnología multiinquilino.
   
 Mientras que BitLocker cifra todos los datos en un disco, el cifrado por archivo va más allá al incluir una clave de cifrado única para cada archivo. Además, la actualización de cada archivo se cifra mediante su propia clave de cifrado. Antes de almacenarse, las claves del contenido cifrado se almacenan en una ubicación físicamente independiente del contenido. Cada paso de este cifrado usa el Estándar de cifrado avanzado (AES) con claves de 256 bits y cumple el Estándar federal de procesamiento de información (FIPS) 140-2. El contenido cifrado se distribuye entre varios contenedores en el centro de datos y cada contenedor tiene credenciales exclusivas. Estas credenciales se almacenan en una ubicación física independiente del contenido o de las claves de contenido.
   

@@ -1,6 +1,6 @@
 ---
-title: Habilitar la característica de análisis periódica limitada de Antivirus de Microsoft Defender
-description: El análisis periódico limitado te permite usar Antivirus de Microsoft Defender además de tus otros proveedores de ANTIVIRUS instalados
+title: Habilitar la característica de examen periódico Antivirus de Microsoft Defender limitada
+description: El análisis periódico limitado te permite usar Antivirus de Microsoft Defender además de los otros proveedores de ANTIVIRUS instalados
 keywords: lps, limited, periodic, scan, scanning, compatibility, 3rd party, other av, disable
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -31,9 +31,9 @@ ms.locfileid: "52274606"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-El examen periódico limitado es un tipo especial de detección y corrección de amenazas que se puede habilitar cuando se instala otro producto antivirus en un dispositivo Windows 10.
+El examen periódico limitado es un tipo especial de detección y corrección de amenazas que se puede habilitar cuando se instala otro producto antivirus en un Windows 10 dispositivo.
 
-Solo se puede habilitar en determinadas situaciones. Para obtener más información sobre el examen periódico limitado y cómo funciona Antivirus de Microsoft Defender con otros productos antivirus, vea [Compatibilidad de Antivirus de Microsoft Defender.](microsoft-defender-antivirus-compatibility.md)
+Solo se puede habilitar en determinadas situaciones. Para obtener más información sobre el examen periódico limitado y cómo Antivirus de Microsoft Defender con otros productos antivirus, [vea Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md).
 
 **Microsoft no recomienda usar esta característica en entornos empresariales. Esta es una característica destinada principalmente a los consumidores.** Esta característica solo usa un subconjunto limitado de las capacidades de Antivirus de Microsoft Defender para detectar malware y no podrá detectar la mayoría de malware y software potencialmente no deseado. Además, las capacidades de administración e informes serán limitadas. Microsoft recomienda a las empresas elegir su solución antivirus principal y usarla exclusivamente.
 
@@ -43,11 +43,11 @@ De forma predeterminada, Antivirus de Microsoft Defender se habilitará en un di
 
 Si Antivirus de Microsoft Defender está habilitado, aparecerán las opciones habituales para configurarlo en ese dispositivo:
 
-![Aplicación de Seguridad de Windows que muestra las opciones de ANTIVIRUS de Microsoft Defender, incluidas las opciones de examen, la configuración y las opciones de actualización](images/vtp-wdav.png)
+![Seguridad de Windows que muestra las opciones de ANTIVIRUS de Microsoft Defender, incluidas las opciones de examen, la configuración y las opciones de actualización](images/vtp-wdav.png)
 
-Si otro producto antivirus está instalado y funciona correctamente, Antivirus de Microsoft Defender se deshabilitará a sí mismo. La aplicación Seguridad de Windows cambiará la sección Protección contra **&** virus para mostrar el estado del producto ANTIVIRUS y proporcionar un vínculo a las opciones de configuración del producto.
+Si otro producto antivirus está instalado y funciona correctamente, Antivirus de Microsoft Defender se deshabilitará a sí mismo. La aplicación Seguridad de Windows cambiará la sección Protección contra amenazas de **virus &** para mostrar el estado del producto antivirus y proporcionará un vínculo a las opciones de configuración del producto.
 
-Debajo de cualquier producto ANTIVIRUS de terceros, aparecerá un nuevo vínculo como opciones **de Antivirus de Microsoft Defender.** Al hacer clic en este vínculo, se expandirá para mostrar la alternancia que habilita el examen periódico limitado. Tenga en cuenta que la opción periódica limitada es una alternancia para habilitar o deshabilitar el examen periódico. 
+Debajo de cualquier producto ANTIVIRUS de terceros, aparecerá un nuevo vínculo como **Antivirus de Microsoft Defender opciones**. Al hacer clic en este vínculo, se expandirá para mostrar la alternancia que habilita el examen periódico limitado. Tenga en cuenta que la opción periódica limitada es una alternancia para habilitar o deshabilitar el examen periódico. 
 
 Al deslizar el conmutador a **On,** se mostrarán las opciones estándar de Antivirus de Microsoft Defender debajo del producto ANTIVIRUS de terceros. La opción de examen periódico limitado aparecerá en la parte inferior de la página.
 

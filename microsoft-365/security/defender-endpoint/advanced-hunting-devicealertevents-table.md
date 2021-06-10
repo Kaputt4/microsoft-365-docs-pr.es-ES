@@ -35,7 +35,7 @@ ms.locfileid: "51939655"
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-La `DeviceAlertEvents` tabla del esquema de [búsqueda](advanced-hunting-overview.md) avanzada contiene información sobre alertas en el Centro de seguridad de Microsoft Defender. Use esta referencia para crear consultas que devuelvan información de la tabla.
+La `DeviceAlertEvents` tabla del esquema de [búsqueda](advanced-hunting-overview.md) avanzada contiene información sobre las alertas de Centro de seguridad de Microsoft Defender. Use esta referencia para crear consultas que devuelvan información de la tabla.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, vea la referencia de esquema [de búsqueda avanzada](advanced-hunting-schema-reference.md).
 

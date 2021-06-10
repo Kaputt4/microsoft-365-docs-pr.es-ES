@@ -41,7 +41,7 @@ Con el acceso condicional, puedes controlar el acceso a la información empresar
 
 Puedes definir las condiciones de seguridad en las que los dispositivos y las aplicaciones pueden ejecutarse y acceder a la información desde la red aplicando directivas para impedir que las aplicaciones se ejecuten hasta que un dispositivo vuelva a un estado compatible. 
 
-La implementación del acceso condicional en Defender para endpoint se basa en las directivas de cumplimiento de dispositivos de Microsoft Intune (Intune) y las directivas de acceso condicional de Azure Active Directory (Azure AD). 
+La implementación del acceso condicional en Defender para endpoint se basa en directivas de cumplimiento de dispositivos de Microsoft Intune (Intune) y directivas de acceso condicional Azure Active Directory (Azure AD). 
 
 La directiva de cumplimiento se usa con acceso condicional para permitir que solo los dispositivos que cumplan una o más reglas de directiva de cumplimiento de dispositivos puedan acceder a las aplicaciones. 
 

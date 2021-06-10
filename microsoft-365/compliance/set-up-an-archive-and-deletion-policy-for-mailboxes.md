@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo crear una directiva de archivado y eliminación en Microsoft 365 que mueva automáticamente los elementos al buzón de archivo de un usuario.
+description: Obtenga información sobre cómo crear una directiva de archivado y eliminación en Microsoft 365 que mueve automáticamente los elementos al buzón de archivo de un usuario.
 ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -52,9 +52,9 @@ Puede seguir algunos o todos los pasos de este artículo para configurar una dir
 
 - Debe ser un administrador global de la organización para realizar los pasos descritos en este tema. 
 
-- Al crear una nueva cuenta de usuario y asignar al usuario una licencia de Exchange Online, se crea automáticamente un buzón para el usuario. Cuando se crea el buzón, se asigna automáticamente una directiva de retención predeterminada, denominada Directiva de MRM predeterminada. En este artículo, creará una nueva directiva de retención y, a continuación, la asignará a los buzones de usuario, reemplazando la directiva de MRM predeterminada. Un buzón solo puede tener asignada una directiva de retención a la vez.
+- Al crear una nueva cuenta de usuario y asignar al usuario una Exchange Online, se crea automáticamente un buzón para el usuario. Cuando se crea el buzón, se asigna automáticamente una directiva de retención predeterminada, denominada Directiva de MRM predeterminada. En este artículo, creará una nueva directiva de retención y, a continuación, la asignará a los buzones de usuario, reemplazando la directiva de MRM predeterminada. Un buzón solo puede tener asignada una directiva de retención a la vez.
 
-- Para obtener más información sobre las etiquetas de retención y las directivas de retención en Exchange Online, vea [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
+- Para obtener más información sobre las etiquetas de retención y las directivas de retención Exchange Online, vea [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
 
 ## <a name="step-1-enable-archive-mailboxes-for-users"></a>Paso 1: Habilitar buzones de archivo para usuarios
 
@@ -98,7 +98,7 @@ En este paso, creará las tres etiquetas de retención personalizadas descritas 
 
 - Elementos eliminados de Alpine House 5 años Eliminar y permitir la recuperación (etiqueta personalizada para la carpeta Elementos eliminados)
 
-Para crear nuevas etiquetas de retención, usará el Centro de administración de Exchange (EAC) en su organización de Exchange Online. Asegúrese de usar la versión clásica del EAC.
+Para crear nuevas etiquetas de retención, usará el Centro Exchange administración (EAC) de su Exchange Online organización. Asegúrese de usar la versión clásica del EAC.
   
 1. Vaya a [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) e inicie sesión con sus credenciales.
   
@@ -114,7 +114,7 @@ En primer lugar, creará una etiqueta de directiva predeterminada de archivo per
 
 2. En la **página Nueva etiqueta aplicada automáticamente a todo el buzón (predeterminado),** complete los siguientes campos: 
 
-    ![Configuración para crear una nueva etiqueta de directiva predeterminada de archivo](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![Configuración crear una nueva etiqueta de directiva predeterminada de archivo](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
    1. **Nombre** Escriba un nombre para la nueva etiqueta de retención. 
 
@@ -136,7 +136,7 @@ A continuación, creará otro DPT personalizado, pero éste será una directiva 
 
 2. En la **página Nueva etiqueta aplicada automáticamente a todo el buzón (predeterminado),** complete los siguientes campos: 
 
-    ![Configuración para crear una nueva etiqueta de directiva predeterminada de eliminación](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![Configuración crear una nueva etiqueta de directiva predeterminada de eliminación](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
    1. **Nombre** Escriba un nombre para la nueva etiqueta de retención. 
 
@@ -158,7 +158,7 @@ La última etiqueta de retención que creará es una etiqueta de directiva de re
 
 2. En la **etiqueta Nueva aplicada automáticamente a una página de carpeta** predeterminada, complete los siguientes campos:
 
-    ![Configuración para crear una nueva etiqueta de directiva de retención para la carpeta Elementos eliminados](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Configuración crear una nueva etiqueta de directiva de retención para la carpeta Elementos eliminados](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
    1. **Nombre** Escriba un nombre para la nueva etiqueta de retención. 
 
@@ -231,11 +231,11 @@ Cuando se crea un nuevo buzón, se le asigna de forma predeterminada una directi
 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Opcional) Paso 5: Ejecutar el Asistente para carpetas administradas para aplicar la nueva configuración
 
-Después de aplicar la nueva directiva de retención a los buzones en el paso 4, puede tardar hasta 7 días en Exchange Online para que la nueva configuración de retención se aplique a los buzones. Esto se debe a que un proceso denominado *Asistente para* carpeta administrada procesa buzones al menos una vez cada 7 días. En lugar de esperar a que se ejecute el Asistente para carpetas administradas, puede forzar que esto suceda ejecutando el cmdlet **Start-ManagedFolderAssistant** en Exchange Online PowerShell.
+Después de aplicar la nueva directiva de retención a los buzones en el paso 4, puede tardar hasta 7 días en Exchange Online que se aplique la nueva configuración de retención a los buzones. Esto se debe a que un proceso denominado *Asistente para* carpeta administrada procesa buzones al menos una vez cada 7 días. En lugar de esperar a que se ejecute el Asistente para carpetas administradas, puede forzar que esto suceda ejecutando el cmdlet **Start-ManagedFolderAssistant** en Exchange Online PowerShell.
 
  **¿Qué sucede al ejecutar el Asistente para carpetas administradas?** Aplica la configuración de la directiva de retención inspeccionando los elementos del buzón y determinando si están sujetos a retención. A continuación, marca los elementos sujetos a retención con la etiqueta de retención adecuada y, a continuación, realiza la acción de retención especificada en los elementos que han pasado su antigüedad de retención.
   
-Estos son los pasos para conectarse a Exchange Online PowerShell y, a continuación, ejecutar el Asistente para carpetas administradas en todos los buzones de la organización.
+Estos son los pasos para conectarse Exchange Online PowerShell y, a continuación, ejecutar el Asistente para carpetas administradas en todos los buzones de la organización.
 
 1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
   
@@ -256,7 +256,7 @@ Y eso es todo. Ha configurado una directiva de archivo y eliminación para la or
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>(Opcional) Paso 6: Hacer que la nueva directiva de retención sea la predeterminada para su organización
 
-En el paso 4, debe asignar la nueva directiva de retención a los buzones existentes. Pero puede configurar Exchange Online para que la nueva directiva de retención se asigne a los nuevos buzones que se crean en el futuro. Para ello, use Exchange Online PowerShell para actualizar el plan de buzones predeterminado de la organización. Un *plan de buzón* de correo es una plantilla que configura automáticamente las propiedades en los buzones nuevos.  En este paso opcional, puede reemplazar la directiva de retención actual que está asignada al plan de buzones de correo (de forma predeterminada, la directiva de MRM predeterminada) por la directiva de retención que creó en el paso 3. Después de actualizar el plan de buzones, la nueva directiva de retención se asignará a nuevos buzones.
+En el paso 4, debe asignar la nueva directiva de retención a los buzones existentes. Sin embargo, puede configurar Exchange Online para que la nueva directiva de retención se asigne a los nuevos buzones que se crean en el futuro. Para ello, use Exchange Online PowerShell para actualizar el plan de buzones predeterminado de la organización. Un *plan de buzón* de correo es una plantilla que configura automáticamente las propiedades en los buzones nuevos.  En este paso opcional, puede reemplazar la directiva de retención actual que está asignada al plan de buzones de correo (de forma predeterminada, la directiva de MRM predeterminada) por la directiva de retención que creó en el paso 3. Después de actualizar el plan de buzones, la nueva directiva de retención se asignará a nuevos buzones.
 
 1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -294,6 +294,6 @@ En el paso 4, debe asignar la nueva directiva de retención a los buzones existe
     |No eliminar nunca  <br/> |Esta etiqueta impide que los elementos se eliminen mediante una directiva de retención.  <br/> |Integrado  <br/> |Personal; los usuarios pueden aplicar esta etiqueta.  <br/> |
     |Mover al archivo después de 1 años en forma personal  <br/> |Mueve elementos al buzón de archivo después de 1 año.  <br/> |Integrado  <br/> |Personal; los usuarios pueden aplicar esta etiqueta.  <br/> |
 
-    > <sup>\*</sup> Los usuarios pueden usar la herramienta Recuperar elementos eliminados en Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada es de 14 días en Exchange Online. Un administrador puede usar Windows PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: Recuperar elementos [eliminados en Outlook para Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y Cambiar el período de retención de elementos eliminados para un buzón en Exchange [Online](https://www.microsoft.com/?ref=go)
+    > <sup>\*</sup>Los usuarios pueden usar la herramienta Recuperar elementos eliminados en Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada es de 14 días en Exchange Online. Un administrador puede usar Windows PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: Recuperar elementos eliminados en Outlook para [Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y Cambiar el período de retención de elementos eliminados para un buzón [en Exchange Online](https://www.microsoft.com/?ref=go)
   
 - El uso de la etiqueta de retención Mover a archivo de elementos recuperables **durante 14** días ayuda a liberar espacio de almacenamiento en la carpeta Elementos recuperables del buzón principal del usuario. Esto resulta útil cuando el buzón de un usuario está en espera, lo que significa que nunca se elimina permanentemente el buzón del usuario. Sin mover elementos al buzón de archivo, es posible que se alcance la cuota de almacenamiento para la carpeta Elementos recuperables en el buzón principal. Para obtener más información sobre esto y cómo evitarlo, vea Aumentar la cuota de elementos recuperables para [buzones en espera.](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)

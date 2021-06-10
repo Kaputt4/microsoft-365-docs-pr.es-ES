@@ -28,7 +28,7 @@ ms.locfileid: "51165662"
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Pasos de migración de AD FS para la migración desde Microsoft Cloud Deutschland
 
 Este cambio de configuración debe aplicarse en cualquier momento antes de que se inicie la fase 2.
-Una vez completada la fase 2, el cambio de configuración funcionará y podrá iniciar sesión a través de puntos de conexión globales de Office 365, como `https://portal.office.com` . Si va a implementar el cambio de configuración antes de la fase  2, los extremos globales de Office 365 aún no funcionarán, pero la nueva confianza de usuario de confianza sigue formando parte de la configuración de servicios de federación de Active Directory (AD FS).
+Una vez completada la fase 2, el cambio de configuración funcionará y podrá iniciar sesión a través de Office 365 extremos globales como `https://portal.office.com` . Si va a implementar el cambio de configuración antes de la  fase 2, los puntos de conexión globales de Office 365 aún no funcionarán, pero la nueva confianza de usuario de confianza sigue formando parte de la configuración de servicios de federación de Active Directory (AD FS).
 
 Los clientes que usan la autenticación federada con Servicios de federación de Active Directory (AD FS) no deben realizar cambios en los URI del emisor que se usan para todas las autenticaciones con servicios de dominio de Active Directory (AD DS) locales durante la migración. Cambiar los URI del emisor provocará errores de autenticación para los usuarios del dominio. Los URI del emisor se pueden cambiar directamente en AD  FS o cuando un dominio se convierte de administrado a _federado_ y viceversa. Se recomienda no agregar, quitar ni convertir un dominio federado en el inquilino de Azure AD que se ha migrado. Los URI del emisor se pueden cambiar una vez completada la migración.
 
@@ -53,9 +53,9 @@ Una vez completada y probada la copia de seguridad de AD FS, siga estos pasos pa
 
 5. En la **página Seleccionar origen de** datos, seleccione Importar datos sobre el usuario de confianza publicado en línea o en una red **local**. El **valor de dirección de metadatos de** federación (nombre de host o dirección URL) debe establecerse en `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` . Haga clic en **Siguiente**.
 
-6. En la **página Especificar nombre para** mostrar, escriba el nombre para mostrar como Microsoft Office **365 Identity Platform WorldWide**. Haga clic en **Siguiente**.
+6. En la **página Especificar nombre para** mostrar, escriba el nombre para mostrar como Microsoft Office 365 Identity Platform **WorldWide**. Haga clic en **Siguiente**.
 
-7. Si estás usando ADFS en Windows Server 2012, en la página del asistente Configurar la autenticación **multifactor ahora?**, selecciona la opción adecuada según tus requisitos de autenticación. Si sigue con el valor predeterminado, seleccione No quiero configurar la configuración de autenticación **multifactor** para esta confianza de usuario de confianza en este momento . Puede cambiar esta configuración más adelante si lo desea.
+7. Si usa ADFS en Windows Server 2012, en la página del asistente Configurar la autenticación **multifactor ahora?**, seleccione la opción adecuada según sus requisitos de autenticación. Si sigue con el valor predeterminado, seleccione No quiero configurar la configuración de autenticación **multifactor** para esta confianza de usuario de confianza en este momento . Puede cambiar esta configuración más adelante si lo desea.
 
 8. For AD FS 2012: On the **Choose Issuance Authorization Rules**, keep Permit all users to access this **relying party** selected and click **Next**.
 
@@ -65,12 +65,12 @@ Una vez completada y probada la copia de seguridad de AD FS, siga estos pasos pa
 
 11. Haga **clic en** Cerrar en la **página** Finalizar.
 
-Al cerrar el asistente, se establece la confianza de usuario de confianza con el servicio global de Office 365. Sin embargo, aún no se han configurado reglas de transformación de emisión.
+Al cerrar el asistente, se establece la confianza de usuario de confianza con el Office 365 global. Sin embargo, aún no se han configurado reglas de transformación de emisión.
 
 Puedes usar la [Ayuda de AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) para generar las reglas de transformación de emisión correctas. Las reglas de notificación generadas creadas con la Ayuda de AD FS se pueden agregar manualmente a través de la consola de administración de AD FS o con PowerShell. La Ayuda de AD FS generará los scripts de PowerShell necesarios que deben ejecutarse.  
 
 > [!NOTE]
-> [La Ayuda de AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) generará las reglas de transformación de emisión estándar que se envían con el producto. Sin embargo, si las reglas de transformación de emisión personalizadas se aplican en la confianza de usuario de confianza de usuario de confianza de Microsoft Cloud Deutschland (por ejemplo, URI de emisor personalizado, IDs inmutables no estándar o cualquier otra personalización), las reglas generadas por la ayuda de AD FS deben modificarse de forma que se ajusten a la lógica personalizada que se aplica actualmente para la confianza de usuario de confianza de Microsoft Cloud Deutschland. Si estas personalizaciones no están integradas en las reglas generadas a través de la Ayuda  de [AD FS,](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)la autenticación **en Microsoft Office 365 Identity Platform WorldWide** probablemente no funcionará para las identidades federadas.
+> [La Ayuda de AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) generará las reglas de transformación de emisión estándar que se envían con el producto. Sin embargo, si las reglas de transformación de emisión personalizadas se aplican en la confianza de usuario de confianza de usuario de confianza de Microsoft Cloud Deutschland (por ejemplo, URI de emisor personalizado, IDs inmutables no estándar o cualquier otra personalización), las reglas generadas por la ayuda de AD FS deben modificarse de forma que se ajusten a la lógica personalizada que se aplica actualmente para la confianza de usuario de confianza de Microsoft Cloud Deutschland. Si estas personalizaciones no están integradas en las reglas generadas a través de  la Ayuda de [AD FS,](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)lo más probable es que la autenticación **en Microsoft Office 365 Identity Platform WorldWide** no funcione para las identidades federadas.
 
 1. Ejecute **Generar notificaciones** en la Ayuda de AD [FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) y copie el script de PowerShell con la **opción Copiar** en la esquina superior derecha del script.
 
@@ -88,7 +88,7 @@ Puedes usar la [Ayuda de AD FS](https://adfshelp.microsoft.com/AadTrustClaims/Cl
    Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
    ```
 
-3. Compruebe que hay dos confianzas de usuario de confianza; uno para Microsoft Cloud Deutschland y otro para el servicio global de Office 365. El siguiente comando se puede aprovechar para la comprobación. Debe devolver dos filas y los nombres e identificadores respectivos.
+3. Compruebe que hay dos confianzas de usuario de confianza; uno para Microsoft Cloud Deutschland y otro para el Office 365 global. El siguiente comando se puede aprovechar para la comprobación. Debe devolver dos filas y los nombres e identificadores respectivos.
 
    ```powershell
    Get-AdfsRelyingPartyTrust | Where-Object {$_.Identifier -like 'urn:federation:MicrosoftOnline*'} | Select-Object Name, Identifier
@@ -140,7 +140,7 @@ Si la granja de servidores ha fallado por completo y no hay ninguna forma de vol
 
 Introducción:
 
-- [Migración de Microsoft Cloud Deutschland a servicios de Office 365 en las nuevas regiones del centro de datos alemán](ms-cloud-germany-transition.md)
+- [Migración de Microsoft Cloud Deutschland a Office 365 servicios en las nuevas regiones del centro de datos alemán](ms-cloud-germany-transition.md)
 - [Asistencia para la migración a Microsoft Cloud Alemania](https://aka.ms/germanymigrateassist)
 - [Cómo participar en la migración](ms-cloud-germany-migration-opt-in.md)
 - [Experiencia del cliente durante la migración](ms-cloud-germany-transition-experience.md)
