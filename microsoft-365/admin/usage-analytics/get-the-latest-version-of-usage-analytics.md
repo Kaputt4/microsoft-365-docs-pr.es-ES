@@ -1,5 +1,5 @@
 ---
-title: Obtener la versión más reciente del análisis de uso de Microsoft 365
+title: Obtener la versión más reciente de Microsoft 365 análisis de uso
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6561a052-02bb-479d-93ca-5a0f16faf2ee
-description: Obtenga la versión más reciente del análisis de uso de Microsoft 365.
+description: Obtenga la versión más reciente de Microsoft 365 análisis de uso.
 ms.openlocfilehash: 2cc58814f1f2d01dd8e779751cdc6b0287faf29f
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,8 +27,8 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580767"
 ---
-# <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a><span data-ttu-id="97821-103">Obtener la versión más reciente del análisis de uso de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="97821-103">Get the latest version of Microsoft 365 usage analytics</span></span>
+# <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a><span data-ttu-id="ff9f7-103">Obtener la versión más reciente de Microsoft 365 análisis de uso</span><span class="sxs-lookup"><span data-stu-id="ff9f7-103">Get the latest version of Microsoft 365 usage analytics</span></span>
 
-<span data-ttu-id="97821-104">La aplicación de plantilla puede actualizarse con nuevos datos o nuevas visualizaciones varias veces al año.</span><span class="sxs-lookup"><span data-stu-id="97821-104">The template app may be refreshed with new data or new visualizations several times per year.</span></span> <span data-ttu-id="97821-105">La instancia existente seguirá funcionando, pero si desea obtener la versión más reciente, se debe crear una nueva instancia y se deben aplicar las personalizaciones a la nueva instancia.</span><span class="sxs-lookup"><span data-stu-id="97821-105">Your existing instance will continue to work, but if you would like to get the latest version, a new instance must be created and any customizations must be applied to the new instance.</span></span> <span data-ttu-id="97821-106">Consulte Habilitar análisis de [uso de Microsoft 365](enable-usage-analytics.md).</span><span class="sxs-lookup"><span data-stu-id="97821-106">See [Enable Microsoft 365 usage analytics](enable-usage-analytics.md).</span></span> 
+<span data-ttu-id="ff9f7-104">La aplicación de plantilla puede actualizarse con nuevos datos o nuevas visualizaciones varias veces al año.</span><span class="sxs-lookup"><span data-stu-id="ff9f7-104">The template app may be refreshed with new data or new visualizations several times per year.</span></span> <span data-ttu-id="ff9f7-105">La instancia existente seguirá funcionando, pero si desea obtener la versión más reciente, se debe crear una nueva instancia y se deben aplicar las personalizaciones a la nueva instancia.</span><span class="sxs-lookup"><span data-stu-id="ff9f7-105">Your existing instance will continue to work, but if you would like to get the latest version, a new instance must be created and any customizations must be applied to the new instance.</span></span> <span data-ttu-id="ff9f7-106">Consulte [Enable Microsoft 365 usage analytics](enable-usage-analytics.md).</span><span class="sxs-lookup"><span data-stu-id="ff9f7-106">See [Enable Microsoft 365 usage analytics](enable-usage-analytics.md).</span></span> 
   
 
