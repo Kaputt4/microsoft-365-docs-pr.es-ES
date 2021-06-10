@@ -37,7 +37,7 @@ ms.locfileid: "51185950"
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-1. En el panel de navegación, seleccione  >  **Indicadores de configuración**.
+1. En el panel de navegación, **seleccione Configuración**  >  **Indicadores**.
 
 2. Seleccione la pestaña del tipo de entidad que desea administrar.  
 
@@ -49,7 +49,7 @@ También puede elegir cargar un archivo CSV que defina los atributos de los indi
 
 Descargue el CSV de ejemplo para conocer los atributos de columna admitidos.
 
-1. En el panel de navegación, seleccione  >  **Indicadores de configuración**.
+1. En el panel de navegación, **seleccione Configuración**  >  **Indicadores**.
 
 2. Seleccione la pestaña del tipo de entidad para la que desea importar los indicadores.
 
@@ -67,19 +67,19 @@ indicatorType | Enum | Tipo del indicador. Los valores posibles son: "FileSha1",
 indicatorValue | Cadena | Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
 acción | Enum | La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "AlertAndBlock" y "Allowed". **Required**
 title | Cadena | Título de alerta del indicador. **Required**
-descripción | Cadena |  Descripción del indicador. **Required**
+description | Cadena |  Descripción del indicador. **Required**
 expirationTime | DateTimeOffset | La hora de expiración del indicador con el siguiente formato YYYY-MM-DDTHH:MM:SS.0Z. **Optional**
 severity | Enum | Gravedad del indicador. Los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
 recommendedActions | Cadena | Acciones recomendadas de alerta del indicador TI. **Optional**
 rbacGroupNames | Cadena | Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
 categoría | Cadena | Categoría de la alerta. Algunos ejemplos son: Ejecución y acceso a credenciales. **Optional**
-mitretechniques| Cadena | Código/id de técnicas MITRE (separados por comas). Para obtener más información, vea [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Opcional** Se recomienda agregar un valor en categoría cuando se utiliza una técnica MITRE.
+mitretechniques| Cadena | Código/id de técnicas MITRE (separados por comas). Para obtener más información, [vea Enterprise tácticas](https://attack.mitre.org/tactics/enterprise/). **Opcional** Se recomienda agregar un valor en categoría cuando se utiliza una técnica MITRE.
 
 Para obtener más información, vea Microsoft Defender para las categorías de alertas de punto de conexión ahora están alineadas con [MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear indicadores](manage-indicators.md)
-- [Crear indicadores para archivos](indicator-file.md)
-- [Crear indicadores para direcciones IP y direcciones URL/dominios](indicator-ip-domain.md)
+- [Crear indicadores para los archivos](indicator-file.md)
+- [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)
 - [Crear indicadores basados en certificados](indicator-certificates.md)

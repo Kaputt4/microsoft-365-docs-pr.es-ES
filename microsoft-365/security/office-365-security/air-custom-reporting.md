@@ -46,7 +46,7 @@ Con [Microsoft Defender para Office 365,](defender-for-office-365.md)obtiene inf
 |[Esquema de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-schema)|Obtenga información general sobre el [esquema común](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) y el esquema de investigación y respuesta de defender para [Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) y amenazas para obtener información sobre tipos específicos de datos disponibles a través de la API de actividad de administración Office 365 administración.|
 |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Investigación y respuesta automatizadas en Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

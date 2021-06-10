@@ -59,7 +59,7 @@ Para habilitar y configurar la protección siempre activa:
        | Configuración | Descripción | Configuración predeterminada |
        |-----------------------------|------------------------|-------------------------------|
        | Permitir el inicio del servicio antimalware con prioridad normal | Puede reducir la prioridad del motor de Antivirus de Microsoft Defender, que puede ser útil en implementaciones ligeras donde desea tener un proceso de inicio lo más delgado posible. Esto puede afectar a la protección en el extremo. | Habilitado
-       | Permitir que el servicio antimalware siga ejecutándose siempre | Si las actualizaciones de protección se han deshabilitado, puede Antivirus de Microsoft Defender para que se ejecuten. Esto reduce la protección en el extremo. | Deshabilitada |
+       | Permitir que el servicio antimalware siga ejecutándose siempre | Si las actualizaciones de protección se han deshabilitado, puede Antivirus de Microsoft Defender para que se ejecuten. Esto reduce la protección en el extremo. | Deshabilitado |
     
     1. Configure la configuración según corresponda y haga clic en **Aceptar**.
     

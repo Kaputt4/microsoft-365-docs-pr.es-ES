@@ -118,6 +118,6 @@ También puede especificar dónde se creará el .cab de diagnóstico mediante un
      ![Captura de pantalla de configuración personalizada de ruta de acceso de directorio habilitada](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. Seleccione **Aceptar** o **Aplicar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Solucionar problemas Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

@@ -46,10 +46,10 @@ Una vez en la página de perfil detallada, puede cambiar entre los diseños de p
 Puede obtener información de las siguientes secciones en la vista de archivos:
 
 - Detalles del archivo, Detección de malware, Prevalencia de archivos
-- Análisis profundo
+- Análisis detallado
 - Alertas
 - Observado en la organización
-- Análisis profundo
+- Análisis detallado
 - Nombres de archivo
 
 También puede realizar acciones en un archivo de esta página.
@@ -96,7 +96,7 @@ La **pestaña Observed in organization** le permite especificar un intervalo de 
 
 Use el control deslizante o el selector de intervalos para especificar rápidamente un período de tiempo que desea comprobar si hay eventos relacionados con el archivo. Puede especificar una ventana de tiempo tan pequeña como un solo día. Esto le permitirá ver solo los archivos que se comunicaron con esa dirección IP en ese momento, lo que reduce drásticamente el desplazamiento y la búsqueda innecesarios.
 
-## <a name="deep-analysis"></a>Análisis profundo
+## <a name="deep-analysis"></a>Análisis detallado
 
 La **pestaña Análisis** profundo le permite enviar el archivo para un análisis profundo, para descubrir más detalles sobre el comportamiento del archivo, así como el efecto que está teniendo dentro de sus organizaciones. [](respond-file-alerts.md#deep-analysis) Después de enviar el archivo, el informe de análisis profundo aparecerá en esta pestaña una vez que estén disponibles los resultados. Si el análisis profundo no encontró nada, el informe estará vacío y el espacio de resultados permanecerá en blanco.
 

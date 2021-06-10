@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ca429ca1fea125450fdbb8d1f3a0e3a745513d8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 56d4ac95ab49310cc5fc74168158672e7a0d65d1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245701"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843227"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 
@@ -64,8 +64,8 @@ Las dos reglas específicas siguientes no admiten exclusiones:
 
 |Nombre de regla|GUID|Exclusiones & carpetas de archivos|
 |:--|:--|:--|
-|Impedir que JavaScript o VBScript inicien contenido ejecutable descargado|D3E037E1-3EB8-44C8-A917-57927947596D|No se admite|
-|Bloquear la persistencia a través de la suscripción de eventos WMI|e6db77e5-3df2-4cf1-b95a-636979351e5b|No se admite|
+|Impedir que JavaScript o VBScript inicien contenido ejecutable descargado|D3E037E1-3EB8-44C8-A917-57927947596D|No admitido|
+|Bloquear la persistencia a través de la suscripción de eventos WMI|e6db77e5-3df2-4cf1-b95a-636979351e5b|No admitido|
 
 Las exclusiones de reglas ASR admiten caracteres comodín, rutas de acceso y variables de entorno. Para obtener más información sobre cómo usar caracteres comodín en reglas ASR, vea [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
 
@@ -127,7 +127,7 @@ Mantenga la regla en modo auditoría durante unos 30 días para obtener una buen
 
 ## <a name="im-making-the-switch-from-a-third-party-security-solution-to-defender-for-endpoint-is-there-an-easy-way-to-export-rules-from-another-security-solution-to-asr"></a>Estoy cambiando de una solución de seguridad de terceros a Defender for Endpoint. ¿Hay una forma "fácil" de exportar reglas de otra solución de seguridad a ASR?
 
-En la mayoría de los casos, es más fácil y mejor empezar con las recomendaciones de línea base sugeridas por [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) que intentar importar reglas de otra solución de seguridad. A continuación, usa herramientas como el modo de auditoría, la supervisión y el análisis para configurar la nueva solución para que se adapte a tus necesidades únicas. 
+En la mayoría de los casos, es más fácil y mejor empezar con las recomendaciones de línea base sugeridas por [Defender for Endpoint](/windows/security/threat-protection) que intentar importar reglas de otra solución de seguridad. A continuación, usa herramientas como el modo de auditoría, la supervisión y el análisis para configurar la nueva solución para que se adapte a tus necesidades únicas. 
 
 La configuración predeterminada para la mayoría de las reglas ASR, combinada con la protección en tiempo real de Defender for Endpoint, protegerá contra un gran número de vulnerabilidades y vulnerabilidades.
 
@@ -135,7 +135,7 @@ Desde Defender para endpoint, puedes actualizar tus defensas con indicadores per
 
 ## <a name="does-asr-support-file-or-folder-exclusions-that-include-system-variables-and-wildcards-in-the-path"></a>¿ASR admite exclusiones de archivos o carpetas que incluyen variables del sistema y caracteres comodín en la ruta de acceso?
 
-Sí. Consulte [Exclude files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para obtener más información sobre la exclusión de archivos o carpetas de reglas ASR, y Configure and validate exclusions based on file extension and folder location para obtener más información sobre cómo usar variables del sistema y caracteres comodín en rutas de acceso de archivo [excluidas.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
+Sí. Consulte [Exclude files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para obtener más información sobre la exclusión de archivos o carpetas de reglas ASR, y Configure and validate exclusions based on file extension and folder location para obtener más información sobre cómo usar variables del sistema y caracteres comodín en rutas de acceso de archivo [excluidas.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 
 ## <a name="do-asr-rules-cover-all-applications-by-default"></a>¿Las reglas ASR cubren todas las aplicaciones de forma predeterminada?
 
@@ -175,14 +175,14 @@ Dado que muchos procesos legítimos a lo largo de un día típico lsass.exe para
 
 ## <a name="is-it-a-good-idea-to-enable-the-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-alongside-lsa-protection"></a>¿Es una buena idea habilitar la regla Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad *local (lsass.exe),* junto con la protección de LSA?
 
-Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
+Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Introducción a la reducción de superficie de ataque](attack-surface-reduction.md)
 * [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
 * [Personalizar las reglas de la reducción de superficie expuesta a ataques](customize-attack-surface-reduction.md)
 * [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
-* [Compatibilidad de Microsoft Defender con otros antivirus/antimalware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+* [Compatibilidad de Microsoft Defender con otros antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 

@@ -37,7 +37,7 @@ Con Microsoft Defender para [](automated-investigations.md) endpoint, cuando se 
 
 ## <a name="new-unified-investigation-page"></a>(¡NUEVO!) Página de investigación unificada
 
-La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](microsoft-defender-endpoint.md)  para Endpoint y Microsoft Defender para [Office 365](/microsoft-365/security/office-365-security/office-365-atp). 
+La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](microsoft-defender-endpoint.md) para endpoint y Microsoft Defender [para Office 365](/microsoft-365/security/office-365-security/office-365-atp). 
 
 > [!TIP]
 > Para obtener más información sobre lo que está cambiando, vea [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/mtp/mtp-autoir-results).
@@ -78,12 +78,12 @@ Use la vista detalles de la investigación para ver la actividad pasada, actual 
 En la vista de detalles de la investigación, puede ver información en las pestañas **gráfico de investigación**, **alertas**, **dispositivos**, **identidades**, **resultados clave**, **entidades**, **registro**, y **acciones pendientes**, que se describen en la siguiente tabla.
 
 > [!NOTE]
-> Las pestañas específicas que se ven en una página de detalles de investigación dependen de lo que incluya la suscripción. Por ejemplo, si su suscripción no incluye Microsoft Defender para Office 365 Plan 2, no verá una pestaña **Buzones.**
+> Las pestañas específicas que se ven en una página de detalles de investigación dependen de lo que incluya la suscripción. Por ejemplo, si su suscripción no incluye Microsoft Defender para Office 365 plan 2, no verá una pestaña **Buzones.**
 
 | Pestaña | Descripción |
 |:--------|:--------|
 | **Gráfico de investigación**   | Proporciona una representación visual de la investigación. Se muestra una lista de las entidades y se muestran las amenazas, junto con las alertas y si hay acciones pendientes de aprobación.<br/>Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono  **Evidencia,** te llevará a la pestaña Evidencia, donde puedes ver las entidades detectadas y sus veredictos. |
-| **Alertas**    | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones de Office, Cloud App Security y otras características de Microsoft 365 Defender.|
+| **Alertas**    | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en Office aplicaciones, Cloud App Security y otras características de Microsoft 365 Defender.|
 | **Dispositivos** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden al [nivel de automatización de los grupos de dispositivos](automation-levels.md)).) |
 | **Buzones** |Enumera los buzones que se verán afectados por las amenazas detectadas.  |
 | **Usuarios**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
@@ -92,7 +92,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |**Log**    | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 | **Acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) para aprobar acciones pendientes. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Revisar acciones de corrección tras una investigación automatizada](manage-auto-investigation.md)
 - [Ver y organizar la cola de Microsoft Defender para incidentes de extremo](view-incidents-queue.md)

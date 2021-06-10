@@ -34,7 +34,7 @@ Si ha integrado los Servicios de dominio de Active Directory (AD DS) locales con
   
 ## <a name="view-directory-synchronization-status"></a>Ver el estado de sincronización de directorios
 
-- Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) y elija Estado de **DirSync en** la página principal.
+- Inicie sesión en el [centro Microsoft 365 administración y](https://admin.microsoft.com) elija Estado de **DirSync** en la página principal.
 - Como alternativa, puede ir a **Usuarios** usuarios activos y, en la \> página **Usuarios activos,** elija **Más sincronización** de \> **directorios.** En el panel **Sincronización de** directorios, elija Ir a Administración **de DirSync**.
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Información en la página Administrar sincronización de directorios
@@ -43,16 +43,16 @@ En la tabla siguiente se enumeran las características de las que puede obtener 
   
 Si hay un problema con la sincronización de directorios, los errores también se enumeran en esta página. Para obtener más información acerca de los diferentes errores que puede encontrar, vea Identificar errores de sincronización de [directorios en Microsoft 365](identify-directory-synchronization-errors.md).
   
-|Item|Para qué sirve|
+|Elemento|Para qué sirve|
 |:-----|:-----|
-|**Dominios comprobados** | Número de dominios del inquilino de Microsoft 365 que ha comprobado que es propietario. |
+|**Dominios comprobados** | Número de dominios de su Microsoft 365 inquilino que ha comprobado que es propietario. |
 |**Dominios no comprobados** | Dominios que ha agregado, pero no comprobados. |
 |**Sincronización de directorios habilitada** |Verdadero o Falso Especifica si ha habilitado la sincronización de directorios. |
 |**Sincronización de directorios más reciente** | Última vez que se ejecutó la sincronización de directorios. Mostrará una advertencia y un vínculo a una herramienta de solución de problemas si la última sincronización fue hace más de tres días. |
-|**Sincronización de contraseña habilitada** | Verdadero o Falso Especifica si tiene sincronización de hash de contraseña entre nuestro espacio empresarial local y el inquilino de Microsoft 365. |
+|**Sincronización de contraseña habilitada** | Verdadero o Falso Especifica si tiene sincronización hash de contraseña entre nuestro espacio empresarial local y Microsoft 365 local. |
 |**Last Password Sync** | La última vez que se ejecutó la sincronización de hash de contraseña. Mostrará una advertencia y un vínculo a una herramienta de solución de problemas si la última sincronización fue hace más de tres días. |
-|**Versión del cliente de sincronización de directorios** | Contiene un vínculo de descarga si se ha publicado una nueva versión de Azure AD Connect. |
-|**Cuenta de servicio de sincronización de directorios** | Muestra el nombre de su cuenta de servicio de sincronización de directorios de Microsoft 365. |
+|**Versión del cliente de sincronización de directorios** | Contiene un vínculo de descarga si se ha publicado una nueva versión Conectar azure AD. |
+|**Cuenta de servicio de sincronización de directorios** | Muestra el nombre de la cuenta de servicio Microsoft 365 de sincronización de directorios. |
 |||
 
 ## <a name="monitor-synchronization-health"></a>Supervisión del estado de sincronización

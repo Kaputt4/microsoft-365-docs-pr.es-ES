@@ -95,7 +95,7 @@ Para ver solo eventos o técnicas, selecciona **Filtros en** la escala de tiempo
 
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 - [Ver y organizar la lista de dispositivos](machines-view-overview.md)
 - [Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión](device-timeline-event-flag.md) 
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 3872be343e51c4e28f946192256932b048a23791
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933906"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843215"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
 
@@ -63,15 +63,15 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>Para Windows 10 o Windows Server 2019
 
-1.  Abra el archivo .zip del paquete de configuración VDI (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete del Centro de seguridad [de Microsoft Defender:](https://securitycenter.windows.com/)
+1.  Abra el archivo de configuración .zip VDI (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/):
 
-    1.  En el panel de navegación, seleccione **Configuración**  >  **incorporación**.
+    1.  En el panel de navegación, **seleccione Configuración**  >  **Incorporación**.
 
-    1. Selecciona Windows 10 como sistema operativo.
+    1. Seleccione Windows 10 como sistema operativo.
 
     1.  En el **campo Método de** implementación, seleccione Scripts de incorporación de VDI para puntos de conexión no **persistentes.**
 
-    1. Haga **clic en Descargar paquete** y guarde el archivo .zip.
+    1. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
 2. Copie los archivos de la carpeta WindowsDefenderATPOnboardingPackage extraída del archivo .zip en la imagen `golden/master` de la ruta de acceso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
 
@@ -82,7 +82,7 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
     > [!NOTE]
     > Si no ve la `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` carpeta, podría estar oculta. Tendrás que elegir la opción Mostrar **archivos y carpetas** ocultos en el Explorador de archivos.
 
-3. Abra una ventana del Editor de directivas de grupo local y vaya a **Configuración** del equipo Configuración de  >  **Windows**  >  **Scripts**  >  **Inicio**.
+3. Abra una ventana Editor de directivas de grupo local y vaya a **Configuración** del  >  **equipo Windows Configuración** inicio de  >    >  **scripts.**
 
    > [!NOTE]
    > La directiva de grupo de dominio también se puede usar para incorporar dispositivos VDI no persistentes.
@@ -95,7 +95,7 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
    
    - Para varias entradas para cada dispositivo:
    
-     Selecciona la **pestaña Scripts** y, a continuación, haz clic en **Agregar** (el Explorador de Windows se abrirá directamente en la ruta de acceso en la que has copiado el script de incorporación anteriormente). Vaya al script bash de incorporación `WindowsDefenderATPOnboardingScript.cmd` .
+     Seleccione la **pestaña Scripts** y, a continuación, haga clic en Agregar **(Windows** Explorer se abrirá directamente en la ruta de acceso en la que copió el script de incorporación anteriormente). Vaya al script bash de incorporación `WindowsDefenderATPOnboardingScript.cmd` .
 
 5. Pruebe la solución:
 
@@ -111,11 +111,11 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
    
       - Para una sola entrada para cada dispositivo: 
     
-        Compruebe solo una entrada en el Centro de seguridad de Microsoft Defender.
+        Compruebe solo una entrada en Centro de seguridad de Microsoft Defender.
 
       - Para varias entradas para cada dispositivo: 
        
-        Compruebe varias entradas en el Centro de seguridad de Microsoft Defender.
+        Compruebe varias entradas en Centro de seguridad de Microsoft Defender.
 
 6. Haga **clic en Lista de** dispositivos en el panel de navegación.
 
@@ -155,9 +155,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 Para obtener más información sobre los comandos DISM y el mantenimiento sin conexión, consulte los artículos siguientes:
-- [Modificar una imagen de Windows con DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [Opciones de administración de imágenes Command-Line DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Reducir el tamaño del almacén de componentes en una imagen de Windows sin conexión](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [Modificar una imagen Windows con DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Opciones de administración de imágenes Command-Line DISM](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [Reducir el tamaño del almacén de componentes en una imagen Windows sin conexión](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 Si el mantenimiento sin conexión no es una opción viable para el entorno VDI no persistente, se deben seguir los siguientes pasos para garantizar la coherencia y el estado del sensor:
 
@@ -184,8 +184,8 @@ Si el mantenimiento sin conexión no es una opción viable para el entorno VDI n
 5. Vuelva a sellar la imagen dorada/maestra como lo haría normalmente.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación de dispositivos Windows 10 con la directiva de grupo](configure-endpoints-gp.md)
-- [Incorporación de dispositivos Windows 10 con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Incorporación Windows 10 dispositivos con directiva de grupo](configure-endpoints-gp.md)
+- [Incorporar Windows 10 dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
 - [Incorporar dispositivos Windows 10 mediante un script local](configure-endpoints-script.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

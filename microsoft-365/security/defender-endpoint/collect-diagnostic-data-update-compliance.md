@@ -70,6 +70,6 @@ En al menos dos dispositivos que no se informen o se muestren en Update Complian
     Please contact me at:
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Solucionar problemas Windows Defender Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

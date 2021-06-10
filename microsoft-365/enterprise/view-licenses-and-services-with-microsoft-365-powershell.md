@@ -1,5 +1,5 @@
 ---
-title: Ver licencias y servicios de Microsoft 365 con PowerShell
+title: Ver Microsoft 365 licencias y servicios con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: Explica cómo usar PowerShell para ver información sobre los planes de licencias, los servicios y las licencias que están disponibles en su organización de Microsoft 365.
+description: Explica cómo usar PowerShell para ver información sobre los planes de licencias, los servicios y las licencias que están disponibles en su Microsoft 365 organización.
 ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,24 +27,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924641"
 ---
-# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Ver licencias y servicios de Microsoft 365 con PowerShell
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Ver Microsoft 365 licencias y servicios con PowerShell
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Cada suscripción a Microsoft 365 consta de los siguientes elementos:
+Cada Microsoft 365 suscripción consta de los siguientes elementos:
 
-- **Planes de licencias** También se conocen como planes de licencia o planes de Microsoft 365. Los planes de licencias definen los servicios de Microsoft 365 que están disponibles para los usuarios. Su suscripción a Microsoft 365 puede contener varios planes de licencias. Un plan de licencias de ejemplo sería Microsoft 365 E3.
+- **Planes de licencias** También se conocen como planes de licencia o Microsoft 365 de licencia. Los planes de licencias definen los Microsoft 365 que están disponibles para los usuarios. Su Microsoft 365 puede contener varios planes de licencias. Un plan de licencias de ejemplo sería Microsoft 365 E3.
     
-- **Servicios** También se conocen como planes de servicio. Los servicios son los productos, características y capacidades de Microsoft 365 que están disponibles en cada plan de licencias, por ejemplo, Exchange Online y Aplicaciones de Microsoft 365 para empresas (anteriormente denominada Office 365 ProPlus). Los usuarios pueden tener varias licencias asignadas que provengan de diferentes planes de licencias, y les permitan obtener acceso a diferentes servicios.
+- **Servicios** También se conocen como planes de servicio. Los servicios son los Microsoft 365, características y funcionalidades que están disponibles en cada plan de licencias, por ejemplo, Exchange Online y Aplicaciones Microsoft 365 para empresas (anteriormente denominados Office 365 ProPlus). Los usuarios pueden tener varias licencias asignadas que provengan de diferentes planes de licencias, y les permitan obtener acceso a diferentes servicios.
     
-- **Licencias** Los planes de licencias contienen el número de licencias que haya adquirido. Se asignan licencias a los usuarios para que puedan usar los servicios de Microsoft 365 definidos por el plan de licencias. Cada cuenta de usuario requiere al menos una licencia de un plan de licencias para que puedan iniciar sesión en Microsoft 365 y usar los servicios.
+- **Licencias** Los planes de licencias contienen el número de licencias que haya adquirido. Las licencias se asignan a los usuarios para que puedan usar Microsoft 365 servicios definidos por el plan de licencias. Cada cuenta de usuario requiere al menos una licencia de un plan de licencias para que puedan iniciar sesión en Microsoft 365 y usar los servicios.
     
-Puede usar PowerShell para Microsoft 365 para ver detalles sobre los planes de licencias, licencias y servicios disponibles en su organización de Microsoft 365. Para obtener más información sobre los productos, las características y los servicios disponibles en las diferentes suscripciones de Office 365, consulte [Opciones de planes de Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
+Puede usar PowerShell para Microsoft 365 ver detalles sobre los planes de licencias, licencias y servicios disponibles en su Microsoft 365 organización. Para obtener más información sobre los productos, las características y los servicios disponibles en las diferentes suscripciones de Office 365, consulte [Opciones de planes de Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer [lugar, conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer [lugar, conéctese a su Microsoft 365 inquilino](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Para ver información resumida sobre los planes de licencias actuales y las licencias disponibles para cada plan, ejecute este comando:
   
@@ -60,7 +60,7 @@ Los resultados contienen:
     
 - **ConsumedUnits**: es el número de licencias asignadas a los usuarios de un plan de licencias específico.
     
-Para ver detalles sobre los servicios de Microsoft 365 que están disponibles en todos los planes de licencia, primero muestre una lista de sus planes de licencia.
+Para ver detalles sobre los Microsoft 365 que están disponibles en todos los planes de licencia, primero muestre una lista de los planes de licencia.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
@@ -103,10 +103,10 @@ Para obtener una lista completa de los planes de licencia (también conocidos co
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-En primer [lugar, conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer [lugar, conéctese a su Microsoft 365 inquilino](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 >[!Note]
->Hay un script de PowerShell que automatiza los procedimientos descritos en este tema. En concreto, el script le permite ver y deshabilitar los servicios de su organización de Microsoft 365, incluido Sway. Para obtener más información, vea [Disable access to Sway with PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
+>Hay un script de PowerShell que automatiza los procedimientos descritos en este tema. En concreto, el script le permite ver y deshabilitar servicios en su Microsoft 365 organización, incluido Sway. Para obtener más información, vea [Disable access to Sway with PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
 >
     
 Para ver información resumida sobre los planes de licencias actuales y las licencias disponibles para cada plan, ejecute el siguiente comando:
@@ -129,13 +129,13 @@ Los resultados contienen la siguiente información:
     
 - **ConsumedUnits**: es el número de licencias asignadas a los usuarios de un plan de licencias específico.
     
-Para ver detalles sobre los servicios de Microsoft 365 que están disponibles en todos los planes de licencia, ejecute el siguiente comando:
+Para ver detalles sobre los servicios Microsoft 365 que están disponibles en todos los planes de licencia, ejecute el siguiente comando:
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-En la tabla siguiente se muestran los planes de servicio de Microsoft 365 y sus nombres descriptivos para los servicios más comunes. Su lista de planes de servicio puede ser diferente. 
+En la tabla siguiente se muestran los Microsoft 365 de servicio y sus nombres descriptivos para los servicios más comunes. Su lista de planes de servicio puede ser diferente. 
   
 |**Plan de servicio**|**Descripción**|
 |:-----|:-----|
@@ -143,7 +143,7 @@ En la tabla siguiente se muestran los planes de servicio de Microsoft 365 y sus 
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Aplicaciones de Microsoft 365 para empresas *(anteriormente denominada Office 365 ProPlus)*  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Aplicaciones Microsoft 365 para empresas *(anteriormente denominado Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype Empresarial Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
@@ -151,7 +151,7 @@ En la tabla siguiente se muestran los planes de servicio de Microsoft 365 y sus 
    
 Para obtener una lista completa de los planes de licencia (también conocidos como nombres de producto), sus planes de servicio incluidos y sus nombres [descriptivos correspondientes,](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)vea Nombres de productos e identificadores de plan de servicio para licencias.
 
-Para ver detalles sobre los servicios de Microsoft 365 que están disponibles en un plan de licencias específico, use la siguiente sintaxis.
+Para ver detalles sobre los servicios Microsoft 365 que están disponibles en un plan de licencias específico, use la siguiente sintaxis.
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
@@ -163,7 +163,7 @@ En este ejemplo se muestran los servicios disponibles en el plan de licencias li
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

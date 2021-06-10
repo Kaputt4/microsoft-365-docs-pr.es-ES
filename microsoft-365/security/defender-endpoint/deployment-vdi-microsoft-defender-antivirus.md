@@ -161,7 +161,7 @@ Puede especificar el tipo de examen que se debe realizar durante un examen progr
 
 4. Seleccione **Aceptar**. 
 
-5. Implemente el objeto de directiva de grupo como suele hacer.
+5. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
 ## <a name="prevent-notifications"></a>Impedir notificaciones
 
@@ -173,7 +173,7 @@ A veces, Antivirus de Microsoft Defender notificaciones se pueden enviar o conse
 
 3. Establezca la directiva en **Habilitado** y, a continuación, seleccione **Aceptar**.
 
-4. Implemente el objeto de directiva de grupo como suele hacer.
+4. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
 La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
@@ -198,7 +198,7 @@ Deshabilitar un examen después de una actualización impedirá que se produzca 
 
 4. Seleccione **Aceptar**.
 
-5. Implemente el objeto de directiva de grupo como suele hacer.
+5. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
 Esta directiva impide que un examen se ejecute inmediatamente después de una actualización.
 

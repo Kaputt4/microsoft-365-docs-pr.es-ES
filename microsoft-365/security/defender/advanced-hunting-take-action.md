@@ -1,5 +1,5 @@
 ---
-title: Realizar acciones en resultados de consulta de búsqueda avanzada en Microsoft 365 Defender
+title: Realizar acciones en los resultados de consulta de búsqueda avanzada en Microsoft 365 Defender
 description: Abordar rápidamente las amenazas y los activos afectados en los resultados avanzados de la consulta de búsqueda
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, tomar medidas
 search.product: eADQiWindows 10XVcnh
@@ -46,7 +46,7 @@ Puede contener rápidamente amenazas o solucionar activos en peligro que encuent
 ## <a name="required-permissions"></a>Permisos necesarios
 Para poder tomar medidas a través de la búsqueda avanzada, necesita un rol en Microsoft Defender para Endpoint con permisos para enviar acciones de corrección [en dispositivos](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si no puede tomar medidas, póngase en contacto con un administrador global para obtener el siguiente permiso:
 
-*Acciones de corrección activas > administración de amenazas y vulnerabilidades: control de corrección*
+*Acciones de corrección activas > amenazas y administración de vulnerabilidades: control de corrección*
 
 ## <a name="take-various-actions-on-devices"></a>Realizar varias acciones en dispositivos
 Puede realizar las siguientes acciones en dispositivos identificados por la `DeviceId` columna en los resultados de la consulta:
@@ -81,7 +81,7 @@ Para realizar cualquiera de las acciones descritas, seleccione uno o más regist
 Cada acción se registra individualmente en el centro [de acciones](m365d-action-center.md) en Historial **del centro** de acciones (  >   [security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Vaya al centro de acciones para comprobar el estado de cada acción.
  
 >[!NOTE]
->Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+>Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

@@ -41,7 +41,7 @@ Por ejemplo, si agrega *exe* y *bat* como nombres de extensión de archivo o dat
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>Agregue nombres de extensión de archivo y nombres de extensión de datos adjuntos.
 
-1. En el panel de navegación, seleccione **Settings**  >  **Automation file uploads**. 
+1. En el panel de navegación, **seleccione Configuración** carga de archivos  >  **de automatización**. 
 
 2. Alterna la configuración del análisis de contenido **entre On** y **Off**.
 
@@ -50,4 +50,4 @@ Por ejemplo, si agrega *exe* y *bat* como nombres de extensión de archivo o dat
   
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Administrar exclusiones de carpetas de automatización](manage-automation-folder-exclusions.md)
+- [Administrar las exclusiones de carpeta de automatización](manage-automation-folder-exclusions.md)

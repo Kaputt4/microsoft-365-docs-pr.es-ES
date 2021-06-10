@@ -1,5 +1,5 @@
 ---
-title: Investigar problemas de estado de agente
+title: Investigar problemas de estado del agente
 description: Obtenga información sobre los valores devueltos al ejecutar el comando de mantenimiento mdatp
 keywords: estado de mdatp, comando, estado, estado, comando, estado de incorporación
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52281305"
 ---
-# <a name="investigate-agent-health-issues"></a>Investigar problemas de estado de agente
+# <a name="investigate-agent-health-issues"></a>Investigar problemas de estado del agente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

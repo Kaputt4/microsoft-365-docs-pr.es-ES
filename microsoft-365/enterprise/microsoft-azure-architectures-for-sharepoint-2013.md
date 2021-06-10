@@ -15,7 +15,7 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: Obtenga información sobre qué tipos de soluciones de SharePoint 2013 se pueden hospedar en máquinas virtuales de Microsoft Azure y cómo configurar Azure para hospedar una.
+description: Obtenga información sobre qué SharePoint soluciones de 2013 se pueden hospedar en Microsoft Azure máquinas virtuales y cómo configurar Azure para hospedar una.
 ms.openlocfilehash: eed74e2dcbe383f0f63e7f6ea2fc70fe7b51b1b3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "50924181"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquitecturas de Microsoft Azure para SharePoint 2013
 
-Azure es un buen entorno para hospedar una solución de SharePoint Server 2013. En la mayoría de los casos, se recomienda Microsoft 365, pero una granja de servidores de SharePoint Server hospedada en Azure puede ser una buena opción para soluciones específicas. En este artículo se describe cómo diseñar soluciones de SharePoint para que sean adecuadas en la plataforma de Azure. Se usan como ejemplo las dos soluciones específicas siguientes:
+Azure es un buen entorno para hospedar una solución SharePoint Server 2013. En la mayoría de los casos, recomendamos Microsoft 365, pero una granja de servidores de SharePoint hospedada en Azure puede ser una buena opción para soluciones específicas. En este artículo se describe cómo diseñar SharePoint soluciones para que sean adecuadas en la plataforma de Azure. Se usan como ejemplo las dos soluciones específicas siguientes:
   
 - [Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,14 +39,14 @@ Los servicios de infraestructura de Azure son una opción atractiva para hospeda
 |:-----|:-----|
 |Entornos de desarrollo y pruebas  <br/> |Es fácil crear y administrar estos entornos.  <br/> |
 |Recuperación ante desastres de granjas de SharePoint locales para Azure  <br/> |**Centro de datos secundario y hospedado** Use Azure en lugar de invertir en un centro de datos secundario de una región diferente. <br/> **Entornos de recuperación ante desastres de coste más bajo** Mantenga y pague menos recursos que un entorno local de recuperación ante desastres. El número de recursos depende del entorno de recuperación ante desastres que elija: espera pasiva, estado de espera semiactiva o espera activa.<br/> **Plataforma más elástica** En caso de desastre, escale fácil y horizontalmente la granja de SharePoint de recuperación para satisfacer los requisitos de carga. Reduzca horizontalmente cuando ya no necesite los recursos.<br/> Vea [Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Sitios orientados a Internet que usan características y escala no están disponibles en Microsoft 365  <br/> |**Centre sus esfuerzos** Concéntrese en crear el mejor sitio posible y no en tener que crear la infraestructura necesaria. <br/> **Aproveche la flexibilidad de Azure** Asigne el tamaño a la granja según la demanda mediante la adición de servidores nuevos y pague únicamente los recursos que necesita. No se admite la asignación dinámica de máquinas (escala automática).<br/> **Use Azure Active Directory (AD)** Aproveche Azure AD para cuentas de clientes. <br/> **Agregar funcionalidad de SharePoint no disponible en Microsoft 365** Agregue informes profundos y análisis web. <br/> Vea [Sitios de Internet en Microsoft Azure con SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|Granjas de aplicaciones para admitir entornos locales o de Microsoft 365  <br/> |**Cree, pruebe y hospede a aplicaciones** en Azure para admitir entornos locales y en la nube. <br/> **Hospede a este rol** en Azure en lugar de comprar hardware nuevo para entornos locales. <br/> |
+|Sitios con conexión a Internet que usan características y escala no están disponibles en Microsoft 365  <br/> |**Centre sus esfuerzos** Concéntrese en crear el mejor sitio posible y no en tener que crear la infraestructura necesaria. <br/> **Aproveche la flexibilidad de Azure** Asigne el tamaño a la granja según la demanda mediante la adición de servidores nuevos y pague únicamente los recursos que necesita. No se admite la asignación dinámica de máquinas (escala automática).<br/> **Use Azure Active Directory (AD)** Aproveche Azure AD para cuentas de clientes. <br/> **Agregar SharePoint funcionalidad no disponible en Microsoft 365** Agregue informes profundos y análisis web. <br/> Vea [Sitios de Internet en Microsoft Azure con SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Granjas de aplicaciones para admitir Microsoft 365 entornos locales o locales  <br/> |**Cree, pruebe y hospede a aplicaciones** en Azure para admitir entornos locales y en la nube. <br/> **Hospede a este rol** en Azure en lugar de comprar hardware nuevo para entornos locales. <br/> |
    
 Para intranet y cargas de trabajo y soluciones de colaboración, considere las siguientes opciones:
   
-- Determine si Microsoft 365 cumple los requisitos de su empresa o puede formar parte de la solución. Microsoft 365 proporciona un conjunto de características enriquecido que siempre está actualizado.
+- Determine si Microsoft 365 sus requisitos empresariales o puede formar parte de la solución. Microsoft 365 proporciona un conjunto de características enriquecido que siempre está actualizado.
     
-- Si Microsoft 365 no cumple todos los requisitos empresariales, considere una implementación estándar de SharePoint 2013 local desde Microsoft Consulting Services (MCS). Una arquitectura estándar puede ser una solución más rápida, económica y sencilla que una solución personalizada. 
+- Si Microsoft 365 no cumple todos los requisitos empresariales, considere la posibilidad de una implementación estándar de SharePoint 2013 local desde Microsoft Consulting Services (MCS). Una arquitectura estándar puede ser una solución más rápida, económica y sencilla que una solución personalizada. 
     
 - Si una implementación estándar no cumple los requisitos empresariales, considere una solución local personalizada.
     
@@ -217,7 +217,7 @@ Cuando agregamos conjuntos de disponibilidad a los niveles de la granja de servi
   
 Este diagrama muestra el conjunto de servidores de SharePoint implementado en los servicios de infraestructura de Azure, con conjuntos de disponibilidad para proporcionar dominios de error para los servidores de cada nivel.
   
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 [Centro de soluciones y arquitectura de Microsoft 365](../solutions/index.yml)
   

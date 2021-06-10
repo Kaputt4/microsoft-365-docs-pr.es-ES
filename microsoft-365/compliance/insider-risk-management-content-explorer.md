@@ -1,7 +1,7 @@
 ---
 title: Explorador de contenido de administración de riesgos de Insider
 description: Obtenga información sobre la administración de riesgos de insider Explorador de contenido en Microsoft 365
-keywords: Microsoft 365, administración de riesgos insider, administración de riesgos, cumplimiento
+keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article

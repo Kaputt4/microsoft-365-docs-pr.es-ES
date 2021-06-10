@@ -19,7 +19,7 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Use los cmdlets de PowerShell de implementación centralizada para ayudarle a implementar y administrar complementos de Office para su organización de Microsoft 365.
+description: Use los cmdlets de PowerShell de implementación centralizada para ayudarle a implementar y administrar Office complementos para su Microsoft 365 organización.
 ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,27 +29,27 @@ ms.locfileid: "50924677"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 
-Como administrador global de Microsoft 365, puede implementar complementos de Office para los usuarios a través de la característica Implementación centralizada (vea [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)). Además de implementar complementos de Office a través del Centro de administración de Microsoft 365, también puede usar Microsoft PowerShell. Instale el [módulo de implementación centralizada Add-In O365 para Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+Como administrador global Microsoft 365, puede implementar complementos de Office para los usuarios mediante la característica implementación centralizada (vea [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)). Además de implementar Office complementos a través del centro de administración de Microsoft 365, también puede usar Microsoft PowerShell. Instale el [módulo de implementación centralizada Add-In O365 para Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
 
-Después de descargar el módulo, abra una ventana Windows PowerShell normal y ejecute el siguiente cmdlet:
+Después de descargar el módulo, abra una ventana de Windows PowerShell y ejecute el siguiente cmdlet:
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a>Conectarse con sus credenciales de administrador
+## <a name="connect-using-your-admin-credentials"></a>Conectar usar las credenciales de administrador
 
 Para poder usar los cmdlets de implementación centralizada, debe iniciar sesión.
   
 1. Inicie PowerShell.
     
-2. Conéctese a PowerShell con las credenciales de administrador de la empresa. Ejecute el siguiente cmdlet.
+2. Conectar a PowerShell mediante las credenciales de administrador de la empresa. Ejecute el siguiente cmdlet.
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. En la **página Escribir credenciales,** escriba sus credenciales de administrador global de Microsoft 365. Como alternativa, puede escribir sus credenciales directamente en el cmdlet. 
+3. En la **página Escribir credenciales,** escriba su Microsoft 365 de administración global. Como alternativa, puede escribir sus credenciales directamente en el cmdlet. 
     
     Ejecute el siguiente cmdlet que especifica las credenciales de administrador de la empresa como un objeto PSCredential.
     
@@ -60,9 +60,9 @@ Para poder usar los cmdlets de implementación centralizada, debe iniciar sesió
   ```
 
 > [!NOTE]
-> Para obtener más información acerca del uso de PowerShell, vea [Connect to Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md). 
+> Para obtener más información acerca del uso de PowerShell, [vea Conectar para Microsoft 365 con PowerShell](./connect-to-microsoft-365-powershell.md). 
   
-## <a name="upload-an-add-in-manifest"></a>Cargar un manifiesto de complemento
+## <a name="upload-an-add-in-manifest"></a>Upload un manifiesto de complemento
 
 Ejecute el cmdlet **New-OrganizationAdd-In** para cargar un manifiesto de complemento desde una ruta de acceso, que puede ser una ubicación de archivo o una dirección URL. En el ejemplo siguiente se muestra una ubicación de archivo para el valor del _parámetro ManifestPath._ 
   
@@ -76,9 +76,9 @@ También puede ejecutar el cmdlet **New-OrganizationAdd-In** para cargar un comp
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Cargar un complemento desde la Tienda Office
+## <a name="upload-an-add-in-from-the-office-store"></a>Upload un complemento de la Tienda Office datos
 
-Ejecute el cmdlet **New-OrganizationAddIn** para cargar un manifiesto desde la Tienda Office.
+Ejecute el cmdlet **New-OrganizationAddIn** para cargar un manifiesto desde Office Store.
   
 En el ejemplo siguiente, el cmdlet **New-OrganizationAddIn** especifica el AssetId de un complemento para un mercado de contenido y ubicación de Estados Unidos.
   
@@ -86,12 +86,12 @@ En el ejemplo siguiente, el cmdlet **New-OrganizationAddIn** especifica el Asset
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Para determinar el valor del parámetro  _AssetId,_ puede copiarlo desde la dirección URL de la página web de la Tienda Office para el complemento. AssetIds siempre comienza con "WA" seguido de un número. Por ejemplo, en el ejemplo anterior, el origen del valor AssetId de WA104099688 es la dirección URL de la página web de la Tienda Office para el complemento: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
+Para determinar el valor del parámetro _AssetId,_ puedes copiarlo desde la dirección URL de la página web de la Tienda Office para el complemento. AssetIds siempre comienza con "WA" seguido de un número. Por ejemplo, en el ejemplo anterior, el origen del valor AssetId de WA104099688 es la dirección URL de la página web de la Tienda Office para el complemento: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
   
 Los valores del  _parámetro Locale_ y el parámetro  _ContentMarket_ son idénticos e indican el país o región desde el que está intentando instalar el complemento. El formato es en-US, fr-FR. y así sucesivamente. 
   
 > [!NOTE]
-> Los complementos cargados desde la Tienda Office se actualizarán automáticamente unos días después de que la última actualización esté disponible en la Tienda Office. 
+> Los complementos cargados desde la Tienda Office se actualizarán automáticamente unos días después de que la última actualización esté disponible en Office Store. 
   
 ## <a name="get-details-of-an-add-in"></a>Obtener detalles de un complemento
 
@@ -162,7 +162,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> Los complementos cargados desde la Tienda Office se actualizarán automáticamente unos días después de que la última actualización esté disponible en la Tienda Office. 
+> Los complementos cargados desde la Tienda Office se actualizarán automáticamente unos días después de que la última actualización esté disponible en Office Store. 
   
 ## <a name="delete-an-add-in"></a>Eliminar un complemento
 

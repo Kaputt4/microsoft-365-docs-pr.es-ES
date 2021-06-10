@@ -84,7 +84,7 @@ En el Centro de acciones, puede ver las acciones de corrección que se realizaro
 4. Seleccione un elemento. Se abre el panel desplegable.
 5. En el panel desplegable, seleccione **Deshacer**. (Solo las acciones que se pueden deshacer tendrán **un botón Deshacer).**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Investigaciones automatizadas en Microsoft Defender para Office 365](office-365-air.md)

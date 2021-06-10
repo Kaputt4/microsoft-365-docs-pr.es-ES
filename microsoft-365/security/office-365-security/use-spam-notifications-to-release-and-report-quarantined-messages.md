@@ -56,7 +56,7 @@ Una notificación de correo no deseado del usuario final contiene la siguiente i
 
 - **Fecha:** la fecha y hora (en UTC) en que el mensaje se ha puesto en cuarentena.
 
-- **Bloquear remitente:** haga clic en este vínculo para agregar el remitente a la lista Remitentes bloqueados del buzón. Para obtener más información, vea [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- **Bloquear remitente:** haga clic en este vínculo para agregar el remitente a la lista Remitentes bloqueados del buzón. Para más información, consulte [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Versión:** para mensajes de correo no deseado (no suplantación de identidad), puede liberar el mensaje aquí sin ir a Poner en cuarentena el Centro de seguridad & cumplimiento.
 

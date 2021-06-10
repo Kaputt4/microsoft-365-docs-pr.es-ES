@@ -368,7 +368,7 @@ Para obtener más información, vea los artículos siguientes:
 <dt>Categoría: &lt; Descripción de &gt; categoría , por ejemplo, cualquier tipo de amenaza o malware.</dt> 
 <dt>Ruta de acceso: &lt; Origen &gt; de detección</dt>de ruta de 
 <dt> acceso de &lt; archivo: Origen de &gt; detección, por ejemplo:<ul>
-<li>Desconocido</li>
+<li>Unknown</li>
 <li>Equipo local</li>
 <li>Recurso compartido de red</li>
 <li>Internet</li>
@@ -782,7 +782,7 @@ Antivirus de Microsoft Defender ha detectado un comportamiento sospechoso.<br/>P
 <dt>Ruta de acceso: &lt; Origen &gt; de detección</dt>de ruta de 
 <dt> acceso de &lt; archivo: Origen de &gt; detección, por ejemplo:
 <ul>
-<li>Desconocido</li>
+<li>Unknown</li>
 <li>Equipo local</li>
 <li>Recurso compartido de red</li>
 <li>Internet</li>
@@ -857,7 +857,7 @@ Antivirus de Microsoft Defender ha detectado malware u otro software potencialme
 <dt>Ruta de acceso: &lt; Origen &gt; de detección</dt>de ruta de 
 <dt> acceso de &lt; archivo: Origen de &gt; detección, por ejemplo:
 <ul>
-<li>Desconocido</li>
+<li>Unknown</li>
 <li>Equipo local</li>
 <li>Recurso compartido de red</li>
 <li>Internet</li>
@@ -936,7 +936,7 @@ Antivirus de Microsoft Defender ha tomado medidas para proteger esta máquina de
 <dt>Ruta de acceso: &lt; Origen &gt; de detección</dt>de ruta de 
 <dt> acceso de &lt; archivo: Origen de &gt; detección, por ejemplo:
 <ul>
-<li>Desconocido</li>
+<li>Unknown</li>
 <li>Equipo local</li>
 <li>Recurso compartido de red</li>
 <li>Internet</li>
@@ -1058,7 +1058,7 @@ Antivirus de Microsoft Defender ha encontrado un error no crítico al tomar medi
 <dt>Ruta de acceso: &lt; Origen &gt; de detección</dt>de ruta de 
 <dt> acceso de &lt; archivo: Origen de &gt; detección, por ejemplo:
 <ul>
-<li>Desconocido</li>
+<li>Unknown</li>
 <li>Equipo local</li>
 <li>Recurso compartido de red</li>
 <li>Internet</li>
@@ -1150,7 +1150,7 @@ Antivirus de Microsoft Defender ha encontrado un error crítico al tomar medidas
 <dt>Ruta de acceso: &lt; Origen &gt; de detección</dt>de ruta de 
 <dt> acceso de &lt; archivo: Origen de &gt; detección, por ejemplo:
 <ul>
-<li>Desconocido</li>
+<li>Unknown</li>
 <li>Equipo local</li>
 <li>Recurso compartido de red</li>
 <li>Internet</li>
@@ -1353,18 +1353,18 @@ Descripción:
 Informe de estado del cliente antivirus.
 <dl>
 <dt>Versión de la plataforma: &lt; &gt;</dt>Versión actual del motor de la
-<dt>plataforma: &lt; &gt; </dt>versión Antimalware Engine Versión del motor de inspección en tiempo real de
-<dt> &lt; &gt; red:</dt>Versión de firma del motor de inspección en tiempo real de red
-<dt>Versión &lt; &gt; </dt>de firma antivirus Versión de firma
-<dt>antispyware: Versión de firma &lt; antispyware &gt; </dt>Versión de firma de inspección en tiempo
-<dt>real: &lt; &gt; </dt>Estado RTP de la firma de inspección en tiempo real de red: Estado de OA de protección en tiempo real (habilitado o
-<dt> &lt; &gt; deshabilitado):</dt>Estado de IOAV de estado de acceso (habilitado o
-<dt> &lt; &gt; deshabilitado):</dt>I Descargas de Outlook Express Attachments state
-<dt> &lt; &gt; (Enabled or Disabled)</dt>Estado DE LA BM: Estado de supervisión del comportamiento (habilitado o
-<dt> &lt; &gt; deshabilitado)</dt>Antigüedad de firma
-<dt>antivirus: &lt; &gt; </dt>Antigüedad de firma antispyware antivirus (en días) Antigüedad de firma
+<dt>plataforma: &lt; versión &gt; </dt>Antimalware Engine Versión del motor de inspección en tiempo real de
+<dt>red: &lt; &gt; </dt>Versión de firma del motor de inspección en tiempo real de red
+<dt>Versión &lt; &gt; </dt>de firma antivirus versión de firma
+<dt> &lt; antispyware: &gt; </dt>versión de firma antispyware Versión de firma de inspección en tiempo real
+<dt>de red: &lt; &gt; </dt>Estado rtp de la firma de inspección en tiempo real de red: protección en tiempo real estado (habilitado o
+<dt> &lt; &gt; deshabilitado)</dt>Estado de
+<dt>la OA: Estado de IOAV de estado de acceso &lt; &gt; (habilitado</dt>o deshabilitado): Descargas de
+<dt>I Outlook E y estado de datos adjuntos rápidos &lt; &gt; (habilitados</dt>o deshabilitados) estado BM: Estado de supervisión del comportamiento (habilitado o
+<dt> &lt; &gt; deshabilitado)</dt>Antigüedad de firma del antivirus: antigüedad de firma del
+<dt>antivirus &lt; &gt; (en días) </dt>Antigüedad de firma antispyware: Antigüedad de firma 
 <dt> &lt; antispyware &gt; (en días)</dt>Última antigüedad del examen rápido: Última antigüedad del examen rápido
-<dt> &lt; &gt; (en días)</dt>Última antigüedad completa del examen
+<dt> &lt; &gt; (en días)</dt>Última antigüedad completa del examen: Última antigüedad completa del examen
 <dt> &lt; &gt; (en días)</dt>Tiempo de creación de firmas
 <dt>antivirus: ? &lt; Hora de &gt; creación de firmas antivirus</dt>Tiempo de
 <dt>creación de firmas antispyware: ? &lt; Hora de creación &gt; de firmas antispyware</dt>
@@ -2608,7 +2608,7 @@ Use la información de estas tablas para ayudar a solucionar Antivirus de Micros
 <th colspan="2">Código de error: 0x80508007</th>
 </tr>
 <tr>
-<td>Message</td>
+<td>Mensaje</td>
 <td>
 <b>ERR_MP_NO_MEMORY </b>
 </td>
@@ -2634,7 +2634,7 @@ Este error indica que es posible que se haya quedo sin memoria.
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x8050800C</th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_BAD_INPUT_DATA</b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2658,7 +2658,7 @@ Nota: El tamaño del archivo de definiciones descargado del sitio puede superar 
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x80508020</th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2668,7 +2668,7 @@ Este error indica que puede haber un error de configuración del motor; normalme
 <tr>
 <th colspan="2">Código de error: 0x805080211
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2678,7 +2678,7 @@ Este error indica que Antivirus de Microsoft Defender no pudo poner en cuarenten
 <tr>
 <th colspan="2">Código de error: 0x80508022
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2689,7 +2689,7 @@ Este error indica que se requiere un reinicio para completar la eliminación de 
 <th colspan="2">
 0x80508023
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2703,7 +2703,7 @@ Ejecute el <a href="https://www.microsoft.com/security/scanner/default.aspx">Exa
 <tr>
 <th colspan="2">Código de error: 0x80508024 </th></tr>
 <tr>
-<td>Message</td>
+<td>Mensaje</td>
 <td><b>ERR_MP_FULL_SCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2717,7 +2717,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508025
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2728,7 +2728,7 @@ Siga los pasos de corrección manuales descritos en la Enciclopedia de Protecci�
 <tr>
 <th colspan="2">Código de error: 0x80508026
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2740,7 +2740,7 @@ Antivirus de Microsoft Defender no es capaz de corregir las amenazas detectadas 
 <tr>
 <th colspan="2">Código de error: 0x80508027
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2752,7 +2752,7 @@ Compruebe las amenazas detectadas y resuelvalas según sea necesario.
 <tr>
 <th colspan="2">Código de error: 0x80508029
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2764,7 +2764,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508030
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2776,7 +2776,7 @@ Ejecute sin conexión Antivirus de Microsoft Defender. Puede leer sobre cómo ha
 <tr>
 <th colspan="2">Código de error: 0x80508031
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Posible motivo</td>
 <td>

@@ -48,7 +48,7 @@ Para obtener una lista completa de los comandos de migración, consulte [Cmdlets
 
 ### <a name="step-1-prepare-for-a-staged-migration"></a>Paso 1: Prepararse para una migración preconfigurada
 
-Antes de migrar buzones a Microsoft 365 mediante una migración por fases, hay algunos cambios que debe realizar en el entorno de Exchange.
+Antes de migrar buzones a Microsoft 365 mediante una migración por fases, hay algunos cambios que debe realizar en el entorno Exchange usuario.
   
  **Configure Outlook en cualquier lugar en su Exchange Server** local El servicio de migración de correo electrónico utiliza Outlook en cualquier lugar (también conocido como RPC sobre HTTP) para conectarse a su Exchange Server local. Para obtener información acerca de cómo configurar Outlook en cualquier lugar para Exchange Server 2007 y Exchange 2003, consulte los temas siguientes:
   
@@ -75,7 +75,7 @@ Antes de migrar buzones a Microsoft 365 mediante una migración por fases, hay a
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **Establecer permisos** La cuenta de usuario local que use para conectarse a la organización local de Exchange (también denominada administrador de migración) debe tener los permisos necesarios para tener acceso a los buzones locales que desea migrar a Microsoft 365. Esta cuenta de usuario se utiliza cuando se conecta a su sistema de correo electrónico creando un extremo de migración más adelante en este procedimiento ([Paso 3: Crear un extremo de migración](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Endpoint) ).
+ **Establecer permisos** La cuenta de usuario local que use para conectarse Exchange su organización local de Exchange (también denominada administrador de migración) debe tener los permisos necesarios para tener acceso a los buzones locales que desea migrar Microsoft 365. Esta cuenta de usuario se utiliza cuando se conecta a su sistema de correo electrónico creando un extremo de migración más adelante en este procedimiento ([Paso 3: Crear un extremo de migración](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Endpoint) ).
   
 Para migrar los buzones de correo, el administrador debe tener uno de los siguientes conjuntos de permisos:
   
@@ -89,15 +89,15 @@ Para migrar los buzones de correo, el administrador debe tener uno de los siguie
     
 - Reciba el permiso **ReceiveAs** en la base de datos de buzones local en la que se almacenan los buzones de los usuarios y el permiso **WriteProperty** para modificar la propiedad **TargetAddress** en las cuentas de usuario locales.
     
-Para obtener instrucciones sobre cómo establecer estos permisos, vea Asignar permisos para migrar [buzones a Microsoft 365](/Exchange/mailbox-migration/assign-permissions-for-migration).
+Para obtener instrucciones sobre cómo establecer estos permisos, vea Asignar permisos [para migrar buzones a Microsoft 365](/Exchange/mailbox-migration/assign-permissions-for-migration).
   
  **Deshabilitar mensajería unificada (UM)** Si la mensajería unificada está activada para los buzones locales que se van a migrar, desactive la mensajería unificada antes de la migración. Active la mensajería unificada para los buzones una vez completada la migración. Para obtener información sobre procedimientos, consulte [Cómo deshabilitar la mensajería unificada para un usuario](/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80)).
   
- **Use la sincronización de directorios para crear nuevos usuarios en Microsoft 365.** La sincronización de directorios se usa para crear todos los usuarios locales de la organización de Microsoft 365.
+ **Use la sincronización de directorios para crear nuevos usuarios en Microsoft 365.** La sincronización de directorios se usa para crear todos los usuarios locales de la Microsoft 365 organización.
   
 Debe autorizar a los usuarios después de crearlos. Dispone de 30 días para agregar licencias después de haber creado los usuarios. Para conocer los pasos para agregar licencias, consulte [Paso 8: Finalizar las tareas posteriores a la migración](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Postmigration).
   
- Puede usar la Herramienta de sincronización de Microsoft Azure Active Directory (Azure AD) o los Servicios de sincronización de Microsoft Azure AD para sincronizar y crear usuarios locales en Microsoft 365. Una vez que los buzones se migran a Microsoft 365, se administran cuentas de usuario en la organización local y se sincronizan con la organización de Microsoft 365. Para más información, consulte [Integración de Directory](/previous-versions/azure/azure-services/jj573653(v=azure.100)).
+ Puede usar la herramienta de sincronización Microsoft Azure Active Directory (Azure AD) o los servicios de sincronización de Microsoft Azure AD para sincronizar y crear los usuarios locales en Microsoft 365. Una vez que los buzones se migran a Microsoft 365, se administran cuentas de usuario en la organización local y se sincronizan con la Microsoft 365 organización. Para más información, consulte [Integración de Directory](/previous-versions/azure/azure-services/jj573653(v=azure.100)).
   
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>Paso 2: Crear un archivo CSV para un lote de migración preconfigurada
 
@@ -112,9 +112,9 @@ El archivo CSV para una migración preconfigurada es compatible con los tres atr
   
 |**Atributo**|**Descripción**|**Obligatorio**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |Especifica la dirección de correo electrónico SMTP principal (por ejemplo, pilarp@contoso.com) para los buzones locales.  <br/> Use la dirección SMTP principal para los buzones locales y no los id. de usuario de Microsoft 365. Por ejemplo, si el dominio local se denomina contoso.com pero el dominio de correo electrónico de Microsoft 365 se denomina service.contoso.com, usaría el nombre de dominio contoso.com para las direcciones de correo electrónico del archivo CSV.  <br/> |Necesario  <br/> |
-|Contraseña  <br/> |La contraseña que se establecerá para el nuevo buzón de Microsoft 365. Las restricciones de contraseña que se aplican a su organización de Microsoft 365 también se aplican a las contraseñas incluidas en el archivo CSV.  <br/> |Opcional  <br/> |
-|ForceChangePassword  <br/> |Especifica si un usuario debe cambiar la contraseña la primera vez que inicie sesión en su nuevo buzón de Microsoft 365. Use **True** o **False** como valor de este parámetro. <br/> > [!NOTE]> Si ha implementado una solución de inicio de sesión único (SSO) implantando los servicios de federación de Active Directory (AD FS) o superior en la organización local, debe usar **False** como valor del atributo **ForceChangePassword**.          |Opcional  <br/> |
+|EmailAddress  <br/> |Especifica la dirección de correo electrónico SMTP principal (por ejemplo, pilarp@contoso.com) para los buzones locales.  <br/> Use la dirección SMTP principal para los buzones locales y no los id. de usuario de la Microsoft 365. Por ejemplo, si el dominio local se denomina contoso.com pero el dominio de correo electrónico de Microsoft 365 se denomina service.contoso.com, usaría el nombre de dominio contoso.com para las direcciones de correo electrónico del archivo CSV.  <br/> |Necesario  <br/> |
+|Contraseña  <br/> |La contraseña que se establecerá para el nuevo buzón Microsoft 365 correo. Las restricciones de contraseña que se aplican a su Microsoft 365 también se aplican a las contraseñas incluidas en el archivo CSV.  <br/> |Opcional  <br/> |
+|ForceChangePassword  <br/> |Especifica si un usuario debe cambiar la contraseña la primera vez que inicie sesión en su nuevo buzón Microsoft 365 usuario. Use **True** o **False** como valor de este parámetro. <br/> > [!NOTE]> Si ha implementado una solución de inicio de sesión único (SSO) implantando los servicios de federación de Active Directory (AD FS) o superior en la organización local, debe usar **False** como valor del atributo **ForceChangePassword**.          |Opcional  <br/> |
    
  **Formato del archivo CSV**
   
@@ -139,7 +139,7 @@ Use cualquier editor de texto, o bien una aplicación como Excel para crear el a
 ### <a name="step-3-create-a-migration-endpoint"></a>Paso 3: Crear un extremo de migración
 <a name="BK_Endpoint"> </a>
 
-Para migrar correo electrónico correctamente, Microsoft 365 debe conectarse y comunicarse con el sistema de correo electrónico de origen. Para ello, Microsoft 365 usa un extremo de migración. Para crear un extremo de migración de Outlook en cualquier lugar con PowerShell, para la migración preconfigurada, primero debe [Conectarse a Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). 
+Para migrar el correo electrónico correctamente, Microsoft 365 debe conectarse y comunicarse con el sistema de correo electrónico de origen. Para ello, Microsoft 365 un extremo de migración. Para crear un extremo de migración de Outlook en cualquier lugar con PowerShell, para la migración preconfigurada, primero debe [Conectarse a Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). 
   
 Para obtener una lista completa de los comandos de migración, consulte [Cmdlets de movimiento y migración](/powershell/exchange/).
   
@@ -200,16 +200,16 @@ Para obtener más información sobre el cmdlet **Get-MigrationBatch**, consulte 
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>Paso 5: Convertir los buzones locales en usuarios habilitados para correo electrónico
 <a name="BK_Endpoint"> </a>
 
-Después de haber migrado correctamente un lote de buzones, se necesita alguna manera para que los usuarios puedan obtener acceso a su correo. Un usuario cuyo buzón se ha migrado ahora tiene un buzón local y otro en Microsoft 365. Los usuarios que tienen un buzón en Microsoft 365 dejarán de recibir correo nuevo en su buzón local. 
+Después de haber migrado correctamente un lote de buzones, se necesita alguna manera para que los usuarios puedan obtener acceso a su correo. Un usuario cuyo buzón se ha migrado ahora tiene un buzón local y otro en Microsoft 365. Los usuarios que tengan un buzón en Microsoft 365 dejarán de recibir correo nuevo en su buzón local. 
   
-Dado que no ha terminado con las migraciones, aún no está listo para dirigir a todos los usuarios a Microsoft 365 para su correo electrónico. ¿Qué debe hacer en el caso de las personas que tienen ambos buzones? Lo que puede hacer es cambiar los correos locales que ya ha migrado a usuarios habilitados para correo. Al cambiar de un buzón a un usuario habilitado para correo, puede dirigir el usuario a Microsoft 365 para su correo electrónico en lugar de ir a su buzón local. 
+Dado que no ha terminado con las migraciones, todavía no está listo para dirigir a todos los usuarios a Microsoft 365 para su correo electrónico. ¿Qué debe hacer en el caso de las personas que tienen ambos buzones? Lo que puede hacer es cambiar los correos locales que ya ha migrado a usuarios habilitados para correo. Al cambiar de un buzón a un usuario habilitado para correo, puede dirigir al usuario a Microsoft 365 para su correo electrónico en lugar de ir a su buzón local. 
   
 Otro motivo importante para convertir buzones locales en usuarios habilitados para correo es conservar las direcciones proxy de los buzones de Microsoft 365 copiando direcciones proxy a los usuarios habilitados para correo. Esto permite administrar los usuarios basados en la nube de la organización local mediante Active Directory. Además, si decide retirar la organización de Exchange Server local después de migrar todos los buzones a Microsoft 365, las direcciones proxy que haya copiado a los usuarios habilitados para correo permanecerán en su Active Directory local.
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Paso 6: Eliminar un lote de migración preconfigurada
 <a name="BK_Endpoint"> </a>
 
- Cuando haya migrado correctamente todos los buzones de un lote de migración y haya convertido los buzones locales del lote en usuarios habilitados para correo, ya estará listo para eliminar un lote de migración preconfigurada. Asegúrese de comprobar que el correo se reenvía a los buzones de Microsoft 365 en el lote de migración. Cuando elimina un lote de migración preconfigurada, el servicio de migración limpia todos los registros relacionados con el lote de migración y elimina dicho lote.
+ Cuando haya migrado correctamente todos los buzones de un lote de migración y haya convertido los buzones locales del lote en usuarios habilitados para correo, ya estará listo para eliminar un lote de migración preconfigurada. Asegúrese de comprobar que el correo se reenvía a los buzones Microsoft 365 en el lote de migración. Cuando elimina un lote de migración preconfigurada, el servicio de migración limpia todos los registros relacionados con el lote de migración y elimina dicho lote.
   
 Para eliminar el lote de migración "StagedBatch1" en Exchange Online PowerShell, ejecute el comando siguiente.
   
@@ -231,17 +231,17 @@ El comando devolverá el lote de migración con un estado **Quitando** o devolve
   
 Para obtener más información sobre el cmdlet **Get-MigrationBatch**, consulte [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
   
-### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Paso 7: Asignar licencias a usuarios de Microsoft 365
+### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Paso 7: Asignar licencias a Microsoft 365 usuarios
 <a name="BK_Endpoint"> </a>
 
-Active las cuentas de usuario de Microsoft 365 para las cuentas migradas mediante la asignación de licencias. Si no asigna una licencia, el buzón se deshabilitará cuando finalice el periodo de gracia (30 días). Para asignar una licencia en el Centro de administración de Microsoft 365, vea Asignar o [desasignación de licencias.](../admin/manage/assign-licenses-to-users.md)
+Active Microsoft 365 de usuario para las cuentas migradas mediante la asignación de licencias. Si no asigna una licencia, el buzón se deshabilitará cuando finalice el periodo de gracia (30 días). Para asignar una licencia en el centro Microsoft 365 administración, vea Asignar o [desasignación de licencias](../admin/manage/assign-licenses-to-users.md).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Paso 8: Finalizar las tareas posteriores a la migración
 <a name="BK_Postmigration"> </a>
 
-- **Cree un registro DNS de Detección automática para que los usuarios puedan acceder fácilmente a sus buzones.** Después de migrar todos los buzones locales a Microsoft 365, puede configurar un registro DNS de detección automática para su organización de Microsoft 365 para permitir a los usuarios conectarse fácilmente a sus nuevos buzones de Microsoft 365 con Outlook y clientes móviles. Este nuevo registro DNS de detección automática debe usar el mismo espacio de nombres que está usando para su organización de Microsoft 365. Por ejemplo, si el espacio de nombres basado en la nube es cloud.contoso.com, el registro DNS de Detección automática que se debe crear es autodiscover.cloud.contoso.com.
+- **Cree un registro DNS de Detección automática para que los usuarios puedan acceder fácilmente a sus buzones.** Después de migrar todos los buzones locales a Microsoft 365, puede configurar un registro DNS de detección automática para su organización de Microsoft 365 para permitir a los usuarios conectarse fácilmente a sus nuevos buzones de Microsoft 365 con clientes Outlook y móviles. Este nuevo registro DNS de detección automática debe usar el mismo espacio de nombres que está usando para su Microsoft 365 organización. Por ejemplo, si el espacio de nombres basado en la nube es cloud.contoso.com, el registro DNS de Detección automática que se debe crear es autodiscover.cloud.contoso.com.
     
-    Microsoft 365 usa un registro CNAME para implementar el servicio de detección automática para outlook y clientes móviles. El registro CNAME de Detección automática debe contener la información siguiente:
+    Microsoft 365 un registro CNAME para implementar el servicio de detección automática para clientes Outlook móviles. El registro CNAME de Detección automática debe contener la información siguiente:
     
   - **Alias:** autodiscover
     

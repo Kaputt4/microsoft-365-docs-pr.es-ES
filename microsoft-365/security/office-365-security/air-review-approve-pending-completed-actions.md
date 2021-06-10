@@ -74,6 +74,6 @@ Estas acciones de corrección no se toman a menos que el equipo de operaciones d
 - [Usar el Explorador de amenazas](threat-explorer.md)
 - [Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ver detalles y resultados de una investigación automatizada en Office 365](air-view-investigation-results.md)

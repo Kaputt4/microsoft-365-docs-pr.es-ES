@@ -1,5 +1,5 @@
 ---
-title: Aprender el lenguaje avanzado de consulta de búsqueda en Microsoft 365 Defender
+title: Aprenda el lenguaje avanzado de consulta de búsqueda en Microsoft 365 Defender
 description: Cree su primera consulta de búsqueda de amenazas y obtenga información sobre los operadores comunes y otros aspectos del lenguaje de consulta de búsqueda avanzada
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, idioma, aprender, primera consulta, telemetría, eventos, telemetría, detecciones personalizadas, esquema, kusto, operadores, tipos de datos, descarga de powershell, ejemplo de consulta
 search.product: eADQiWindows 10XVcnh
@@ -40,7 +40,7 @@ La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](/azure/kusto/qu
 
 ## <a name="try-your-first-query"></a>Pruebe la primera consulta
 
-En el Centro de seguridad de Microsoft 365, vaya a **Hunting** para ejecutar la primera consulta. Utilice el ejemplo siguiente:
+En Microsoft 365 de seguridad, vaya a **Hunting** para ejecutar la primera consulta. Utilice el ejemplo siguiente:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -176,14 +176,14 @@ La sección **Comenzar** ofrece algunas consultas sencillas con operadores de us
 ![Imagen de la ventana de búsqueda avanzada](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Además de los ejemplos de consultas básicas, también puede acceder a [consultas compartidas](advanced-hunting-shared-queries.md) done encontrará escenarios específicos de búsqueda de amenazas. Explore las consultas compartidas en el lado izquierdo de la página o el [repositorio de consultas de GitHub](https://aka.ms/hunting-queries).
+>Además de los ejemplos de consultas básicas, también puede acceder a [consultas compartidas](advanced-hunting-shared-queries.md) done encontrará escenarios específicos de búsqueda de amenazas. Explore las consultas compartidas en el lado izquierdo de la página o el [GitHub de consultas](https://aka.ms/hunting-queries).
 
 ## <a name="access-query-language-documentation"></a>Acceso a documentación del lenguaje de consulta
 
 Para más información sobre el lenguaje de consulta Kusto y los operadores compatibles, vaya a la [documentación del lenguaje de consulta Kusto](/azure/kusto/query/).
 
 >[!NOTE]
->Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+>Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

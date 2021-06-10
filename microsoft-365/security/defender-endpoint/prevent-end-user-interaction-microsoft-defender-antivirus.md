@@ -1,6 +1,6 @@
 ---
-title: Ocultar la interfaz antivirus de Microsoft Defender
-description: Puedes ocultar el icono de protección contra virus y amenazas en la aplicación Seguridad de Windows.
+title: Ocultar la Antivirus de Microsoft Defender interfaz
+description: Puedes ocultar el icono de protección contra virus y amenazas en la Seguridad de Windows aplicación.
 keywords: bloqueo de ui, modo sin cabeza, ocultar aplicación, ocultar configuración, ocultar interfaz
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274921"
 ---
-# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedir que los usuarios vean o interactúen con la interfaz de usuario de Antivirus de Microsoft Defender
+# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,26 +32,26 @@ ms.locfileid: "52274921"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Puede usar la directiva de grupo para impedir que los usuarios de los puntos de conexión vean la interfaz de Antivirus de Microsoft Defender. También puede evitar que pauten los exámenes.
+Puede usar la directiva de grupo para impedir que los usuarios de los puntos de conexión vean la interfaz Antivirus de Microsoft Defender usuario. También puede evitar que pauten los exámenes.
 
-## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Ocultar la interfaz antivirus de Microsoft Defender
+## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Ocultar la Antivirus de Microsoft Defender interfaz
 
-En Windows 10, versión 1703, ocultar la interfaz ocultará las notificaciones del Antivirus de Microsoft Defender e impedirá que el icono protección contra amenazas de Virus & aparezca en la aplicación seguridad de Windows.
+En Windows 10, versión 1703, ocultar la interfaz ocultará las notificaciones de Antivirus de Microsoft Defender e impedirá que el icono protección contra amenazas de Virus & aparezca en la aplicación Seguridad de Windows.
 
 Con la configuración establecida en **Enabled**:
 
-![Captura de pantalla de Seguridad de Windows sin el icono de escudo y la sección protección contra virus y amenazas](images/defender/wdav-headless-mode-1703.png)
+![Captura de pantalla Seguridad de Windows sin el icono de escudo y la sección protección contra virus y amenazas](images/defender/wdav-headless-mode-1703.png)
 
 Con la configuración establecida en **Deshabilitado** o no configurada:
 
-![Captura de pantalla de Seguridad de Windows que muestra el icono del escudo y la sección protección contra virus y amenazas](images/defender/wdav-headless-mode-off-1703.png)
+![Captura de pantalla Seguridad de Windows muestra el icono de escudo y la sección protección contra virus y amenazas](images/defender/wdav-headless-mode-off-1703.png)
 
 >[!NOTE]
->Ocultar la interfaz también impedirá que las notificaciones de Antivirus de Microsoft Defender aparezcan en el punto de conexión. Las notificaciones de Microsoft Defender para puntos de conexión seguirán apareciendo. También puede configurar [individualmente las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
+>Ocultar la interfaz también impedirá que Antivirus de Microsoft Defender notificaciones en el punto de conexión. Las notificaciones de Microsoft Defender para puntos de conexión seguirán apareciendo. También puede configurar [individualmente las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
 
 En versiones anteriores de Windows 10, la configuración ocultará la interfaz Windows Defender cliente. Si el usuario intenta abrirlo, recibirá una advertencia que indica: "El administrador del sistema ha restringido el acceso a esta aplicación".
 
-![Mensaje de advertencia cuando el modo sin cabeza está habilitado en Windows 10, versiones anteriores a 1703](images/defender/wdav-headless-mode-1607.png)
+![Mensaje de advertencia cuando el modo sin cabeza está habilitado Windows 10 versiones anteriores a 1703](images/defender/wdav-headless-mode-1607.png)
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>Usar la directiva de grupo para ocultar la interfaz av de Microsoft Defender a los usuarios
 
@@ -61,7 +61,7 @@ En versiones anteriores de Windows 10, la configuración ocultará la interfaz W
 
 3. Haga clic **en Plantillas administrativas**.
 
-4. Expande el árbol a **componentes de Windows > Microsoft Defender Antivirus > interfaz de cliente.**
+4. Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender > interfaz de cliente**.
 
 5. Haz doble clic en **la opción Habilitar modo de interfaz de** usuario sin cabeza y establece la opción en **Habilitado**. Haga clic en **Aceptar**. 
 
@@ -82,7 +82,7 @@ Puede impedir que los usuarios pauten los exámenes, lo que puede ser útil para
 
 3. Haga clic **en Plantillas administrativas**.
 
-4. Expande el árbol a **Componentes de Windows** Antivirus  >  Scan de Microsoft **Defender**  >  .
+4. Expanda el árbol para Windows **componentes**  >  **Antivirus de Microsoft Defender**  >  **Scan**.
 
 5. Haga doble clic en **la opción Permitir a los usuarios pausar el** examen y establezca la opción en **Deshabilitado**. Haga clic en **Aceptar**. 
 

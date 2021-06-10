@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 f1.keywords:
 - NOCSH
-description: Este artículo contiene información sobre el uso de elementos emergentes lean para mejorar el rendimiento de descarga de mensajes en Outlook en la web.
+description: Este artículo contiene información sobre el uso de elementos emergentes lean para mejorar el rendimiento de descarga de mensajes Outlook en la web.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 0fec3e0267b7299e34de541a184cf92e99e260f1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -24,9 +24,9 @@ ms.locfileid: "50925261"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Usar popouts lean para reducir la memoria usada al leer mensajes de correo
 
-Este artículo contiene información para mejorar el rendimiento de descarga de mensajes en Outlook en la web. Este artículo forma parte del proyecto Planeación de red y ajuste del rendimiento [para Office 365.](./network-planning-and-performance.md)
+Este artículo contiene información para mejorar el rendimiento de descarga de mensajes Outlook en la web. Este artículo forma parte del plan de red y el ajuste del rendimiento [para Office 365](./network-planning-and-performance.md) proyecto.
   
-Como administrador global de Office 365, puede configurar Outlook en la web para ofrecer ventanas emergentes lean, una versión más pequeña y con menos memoria de _determinados_ mensajes de correo electrónico en Microsoft Edge o Internet Explorer. Cuando se configuran popouts lean para Outlook en la web, se cargan componentes representados del lado servidor que optimizan el rendimiento.
+Como administrador global de Office 365, puede configurar Outlook en la web para ofrecer _popouts_ lean, una versión más pequeña y con menos memoria de determinados mensajes de correo electrónico en Microsoft Edge o Internet Explorer. Cuando se configuran popouts lean para Outlook en la web, se cargan componentes representados del lado servidor que optimizan el rendimiento.
   
 > [!NOTE]
 > A partir de marzo de 2018, los elementos emergentes lean no están disponibles para los mensajes que especifican restricciones de derechos de uso, como Information Rights Management (IRM).
@@ -35,11 +35,11 @@ Estas características seguirán funcionando en la ventana principal, pero no es
   
 - Complementos de Outlook
   
-- Presencia de Skype Empresarial
+- Skype Empresarial presencia
   
-## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>Para configurar popouts lean para todos los usuarios de la organización de Office 365
+## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>Para configurar popouts lean para todos los usuarios de la Office 365 organización
   
-1. [Conectarse a Exchange Online mediante PowerShell remoto.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectar para Exchange Online con PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
   
 2. Ejecute el cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) con el parámetro LeanPopoutEnabled de la siguiente manera:
 

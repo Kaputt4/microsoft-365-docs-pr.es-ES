@@ -50,7 +50,7 @@ Si aún no se ha asignado una alerta, puedes seleccionar **Asignarme** para asig
 
 
 ## <a name="suppress-alerts"></a>Suprimir alertas
-Es posible que haya escenarios en los que necesite suprimir las alertas para que no aparezcan en el Centro de seguridad de Microsoft Defender. Defender for Endpoint te permite crear reglas de supresión para alertas específicas que se sabe que son inocuas, como herramientas o procesos conocidos de la organización.
+Puede haber escenarios en los que necesite suprimir las alertas para que no aparezcan en Centro de seguridad de Microsoft Defender. Defender for Endpoint te permite crear reglas de supresión para alertas específicas que se sabe que son inocuas, como herramientas o procesos conocidos de la organización.
 
 Las reglas de supresión se pueden crear a partir de una alerta existente. Se pueden deshabilitar y volver a habilitar si es necesario.
 
@@ -98,7 +98,7 @@ Cree reglas personalizadas para controlar cuándo se suprimen o resuelven las al
 
 #### <a name="view-the-list-of-suppression-rules"></a>Ver la lista de reglas de supresión
 
-1. En el panel de navegación, seleccione **Configuración**  >  **supresión de alertas**.
+1. En el panel de navegación, **seleccione Configuración**  >  **supresión de alertas**.
 
 2. La lista de reglas de supresión muestra todas las reglas que los usuarios de la organización han creado.
 

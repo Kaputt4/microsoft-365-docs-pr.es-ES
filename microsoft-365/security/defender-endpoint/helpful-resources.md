@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 727576ab75d77d12be0595c081586f411887da49
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165446"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843075"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>ÚtilEs recursos de Microsoft Defender para puntos de conexión
 
@@ -37,7 +37,7 @@ ms.locfileid: "51165446"
 Obtenga acceso a recursos útiles, como vínculos a blogs y otros recursos relacionados con Microsoft Defender para endpoint.
 
 ## <a name="endpoint-protection-platform"></a>Plataforma de protección de puntos de conexión
-- [Puntuación superior en pruebas del sector](https://docs.microsoft.com/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
+- [Puntuación superior en pruebas del sector](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
 
 - [Inside out: Conozca las tecnologías avanzadas en el núcleo de Defender para la protección de próxima generación de Endpoint](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 
@@ -61,4 +61,4 @@ Obtenga acceso a recursos útiles, como vínculos a blogs y otros recursos relac
 
 - [Cómo la automatización aporta valor a los equipos de seguridad](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 
-- [Dirección de falsos positivos/negativos en Microsoft Defender para endpoint](defender-endpoint-false-positives-negatives.md)
+- [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)

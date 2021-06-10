@@ -48,7 +48,7 @@ La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Revisar la configuración de protección contra virus y amenazas en la Seguridad de Windows aplicación
 
-![Captura de pantalla de la etiqueta De & protección contra amenazas de virus en la Seguridad de Windows aplicación](images/defender/wdav-protection-settings-wdsc.png)
+![Captura de pantalla de la etiqueta Protección contra virus y amenazas en la aplicación Seguridad de Windows](images/defender/wdav-protection-settings-wdsc.png)
 
 1. Abra la Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio de **Defender**.
 
@@ -57,7 +57,7 @@ La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y
 En las secciones siguientes se describe cómo realizar algunas de las tareas más comunes al revisar o interactuar con la protección contra amenazas proporcionada por Antivirus de Microsoft Defender en la Seguridad de Windows aplicación.
 
 > [!NOTE]
-> Si estas opciones de configuración se configuran e implementan mediante la directiva de grupo, la configuración descrita en esta sección será gris y no estará disponible para su uso en puntos de conexión individuales. Los cambios realizados a través de un objeto de directiva de grupo deben implementarse primero en puntos de conexión individuales antes de que la configuración se actualice en Windows Configuración. El [tema Configure end-user interaction with Antivirus de Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md) describe cómo se puede configurar la configuración de invalidación de directiva local.
+> Si estas opciones de configuración se configuran e implementan mediante la directiva de grupo, la configuración descrita en esta sección será gris y no estará disponible para su uso en puntos de conexión individuales. Los cambios realizados a través de un objeto de directiva de grupo deben implementarse en primer lugar en los extremos individuales antes de que se actualice la configuración en la configuración de Windows. El [tema Configure end-user interaction with Antivirus de Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md) describe cómo se puede configurar la configuración de invalidación de directiva local.
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>Ejecutar un examen con la Seguridad de Windows aplicación
 
@@ -138,5 +138,5 @@ Para obtener más información, consulte los siguientes recursos:
 
 5. Para configurar las opciones  de recuperación de ransomware, selecciona Configurar en Recuperación de datos ransomware y sigue las instrucciones para vincular o configurar tu cuenta de OneDrive para que puedas recuperarte fácilmente de un ataque de ransomware. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

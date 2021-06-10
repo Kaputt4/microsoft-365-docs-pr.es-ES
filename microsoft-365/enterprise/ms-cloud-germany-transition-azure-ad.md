@@ -1,5 +1,5 @@
 ---
-title: Información adicional de Azure Active Directory para la migración desde Microsoft Cloud Deutschland
+title: Información Azure Active Directory para la migración desde Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,7 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Resumen: información adicional de Azure Active Directory al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a los servicios de Office 365 en la nueva región del centro de datos alemán.'
+description: 'Resumen: información Azure Active Directory información adicional al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
 ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,19 +25,19 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923855"
 ---
-# <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional de Azure Active Directory para la migración desde Microsoft Cloud Deutschland
+# <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información Azure Active Directory para la migración desde Microsoft Cloud Deutschland
 
-Para completar el traslado de la nube de Azure German a la nube pública de Azure, recomendamos que el punto de conexión de autenticación, el graph de Azure Active Directory (Azure AD) y los puntos de conexión de MS Graph para las aplicaciones se actualicen a los de la nube comercial cuando el extremo OpenID Connect (OIDC), comience a informar de los puntos de conexión de nube `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` comerciales. 
+Para completar el traslado de la nube de Azure German a la nube pública de Azure, recomendamos que los puntos de conexión de autenticación, Azure Active Directory (Azure AD) Graph y MS Graph para las aplicaciones se actualicen a los de la nube comercial cuando el extremo de Conectar de OpenID (OIDC), comience a notificar los puntos de conexión de nube `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` comercial. 
  
 **¿Cuándo debo realizar este cambio?**
 
-Recibirá una notificación en Azure/Office Portal cuando el inquilino complete la migración de la nube alemana a la nube comercial. Tienes 30 días después de recibir esta notificación para completar estas actualizaciones para que la aplicación siga funcionando para los inquilinos que se migran de la nube de Azure Germany a la nube pública de Azure.
+Recibirá una notificación en Azure/Office portal cuando el inquilino complete la migración de la nube alemana a la nube comercial. Tienes 30 días después de recibir esta notificación para completar estas actualizaciones para que la aplicación siga funcionando para los inquilinos que se migran de la nube de Azure Germany a la nube pública de Azure.
  
 Existen tres condiciones previas para actualizar la entidad de inicio de sesión:
 
  - El punto de conexión de detección de OIDC para el inquilino devuelve puntos de conexión de nube pública `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` de Azure AD.
 
- - Si el inquilino está configurado para federación, los Servicios de federación de Active Directory (AD FS) se actualizan para sincronizarse con Azure AD Public. Puedes seguir las instrucciones para actualizar la configuración de Azure AD Connect para realizar este cambio.
+ - Si el inquilino está configurado para federación, los Servicios de federación de Active Directory (AD FS) se actualizan para sincronizarse con Azure AD Public. Puedes seguir las instrucciones para actualizar la configuración Conectar azure AD para realizar este cambio.
 
  - Las aplicaciones de recursos, si las hay, se modifican para aceptar tokens firmados por Azure AD Germany y Azure AD Public.
  
@@ -59,16 +59,16 @@ Una aplicación puede ser cualquiera de las siguientes:
 
 **¿Qué necesito actualizar?**
 
-1. Si hospeda una aplicación en Azure Germany que se usa para autenticar usuarios de Azure Germany u Office 365 Germany, asegúrese de que se usa como autoridad en el contexto `https://login.microsoftonline.com` de autenticación.
+1. Si hospeda una aplicación en Azure Germany que se usa para autenticar usuarios de Azure Germany o Office 365 Alemania, asegúrese de que se usa como autoridad en el contexto `https://login.microsoftonline.com` de autenticación.
 
     - Consulte Contextos de autenticación de Azure AD.
     - Esto se aplica tanto a la autenticación a la aplicación como a la autenticación a cualquier API que la aplicación pueda llamar (es decir, Microsoft Graph, Azure AD Graph, Azure Resource Manager).
 
-2. Actualice el extremo de Azure AD Graph para que sea `https://graph.windows.net` .
+2. Actualizar el punto Graph azure AD para que sea `https://graph.windows.net` .
 
-3. Actualizar el extremo de MS Graph para que sea `https://graph.microsoft.com` .
+3. Actualizar el punto Graph MS para que sea `https://graph.microsoft.com` .
 
-4. Actualice los extremos de la nube alemán (como los de Exchange Online y SharePoint Online) que las aplicaciones usan para que sean los de la nube pública.
+4. Actualice los puntos de conexión de la nube alemán (como los de Exchange Online y SharePoint Online) que usan las aplicaciones para que sean los de la nube pública.
 
 5. Actualice los parámetros del entorno `AzurePublic` para que sean (en lugar de ) `AzureGermany` en herramientas administrativas y scripts para:
 
@@ -95,35 +95,35 @@ Estas son algunas consideraciones adicionales para Azure AD:
 
   - La creación de redes con nombre IPv6 no funciona en Azure Portal, `http://portal.microsoftazure.de/` . Use Azure Portal at `https://portal.azure.com` para crear redes con nombre IPv6.
  
-   - No puede crear intervalos de direcciones IP de confianza para la configuración del servicio Azure Multi-Factor Authentication (MFA) desde el portal de Microsoft Cloud Deutschland. Use los servicios de Azure AD Portal para Office 365 para crear intervalos de direcciones IP de confianza de Azure MFA.
+   - No puede crear intervalos de direcciones IP de confianza para la configuración del servicio Azure Multi-Factor Authentication (MFA) desde el portal de Microsoft Cloud Deutschland. Use Azure AD Portal para los Office 365 para crear intervalos de direcciones IP de confianza de Azure MFA.
 
 
 - Para acceso condicional: 
 
-  - Las directivas de acceso condicional con los siguientes controles de concesión no se admiten hasta que se complete la migración a los servicios de Office 365 (después de finalizar la fase de migración de [Azure AD):](ms-cloud-germany-transition.md#how-is-the-migration-organized)
+  - Las directivas de acceso condicional con los siguientes controles de concesión no se admiten hasta que se complete la migración a Office 365 servicios (después de finalizar la fase de migración de [Azure AD):](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
     - Requerir dispositivo compatible
     - Requerir aplicación aprobada
     - Requerir directiva de protección de aplicaciones
     
-  - La interfaz de directiva de acceso condicional proporciona una advertencia falsa sobre los valores predeterminados de seguridad que se habilitan para el inquilino incluso cuando está deshabilitado, y las directivas de acceso condicional ya existen para el inquilino. Debe omitir la advertencia o usar el portal de servicios de Office 365 para administrar directivas de acceso condicional. 
+  - La interfaz de directiva de acceso condicional proporciona una advertencia falsa sobre los valores predeterminados de seguridad que se habilitan para el inquilino incluso cuando está deshabilitado, y las directivas de acceso condicional ya existen para el inquilino. Debe omitir la advertencia o usar el portal de servicios Office 365 para administrar directivas de acceso condicional. 
 
 - Los escenarios de Intune solo se admiten en los puntos de conexión de todo el mundo una vez completada la migración de inquilinos, incluidas todas las migraciones de cargas de trabajo de office.
 
-- Los usuarios de Microsoft Cloud Deutschland que usan el método Mobile App Notification para las solicitudes MFA ven el ObjectId (un GUID) del usuario en lugar del nombre principal de usuario (UPN) en la aplicación Microsoft Authenticator. Una vez completada la migración del inquilino de Azure AD y hospedada en los servicios de Office 365, las nuevas activaciones de Microsoft Authenticator mostrarán los UPN de los usuarios. Las cuentas existentes de Microsoft Authenticator seguirán mostrando el ObjectId de usuario, pero seguirán funcionando para las notificaciones de aplicaciones móviles. 
+- Los usuarios de Microsoft Cloud Deutschland que usan el método Mobile App Notification para solicitudes MFA ven el ObjectId (un GUID) del usuario en lugar del nombre principal de usuario (UPN) en la aplicación Microsoft Authenticator. Una vez completada la migración del inquilino de Azure AD y hospedada en servicios Office 365, las nuevas Microsoft Authenticator activaciones mostrarán los UPN de los usuarios. Las Microsoft Authenticator existentes seguirán mostrar el ObjectId del usuario, pero seguirán funcionando para las notificaciones de aplicaciones móviles. 
 
-- Para los inquilinos que se crean después del 22 de octubre de 2019, los valores predeterminados de seguridad pueden habilitarse automáticamente para el inquilino cuando se migra al servicio de Office 365. Los administradores de inquilinos pueden optar por dejar habilitados los valores predeterminados de seguridad y registrarse en MFA, o bien pueden deshabilitar la característica. Para obtener más información, vea [Deshabilitar valores predeterminados de seguridad](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults). 
+- Para los inquilinos que se crean después del 22 de octubre de 2019, los valores predeterminados de seguridad pueden habilitarse automáticamente para el inquilino cuando se migra al servicio Office 365 cliente. Los administradores de inquilinos pueden optar por dejar habilitados los valores predeterminados de seguridad y registrarse en MFA, o bien pueden deshabilitar la característica. Para obtener más información, vea [Deshabilitar valores predeterminados de seguridad](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults). 
 
   > [!NOTE]
-  > Las organizaciones que no están habilitadas automáticamente durante la migración aún pueden inscribirse automáticamente en el futuro, ya que la característica para habilitar los valores predeterminados de seguridad se incluye en el servicio de Office 365. Los administradores que deciden deshabilitar o habilitar explícitamente los valores predeterminados de seguridad pueden hacerlo actualizando la característica en **Azure Active Directory > Propiedades**. Después de que el administrador habilite explícitamente la característica, no se habilitará automáticamente.
+  > Es posible que las organizaciones que no están habilitadas automáticamente durante la migración aún se inscriban automáticamente en el futuro, ya que la característica para habilitar los valores predeterminados de seguridad se incluye en el servicio Office 365 migración. Los administradores que decidan deshabilitar o habilitar explícitamente los valores predeterminados de seguridad pueden hacerlo actualizando la característica en **Azure Active Directory > propiedades**. Después de que el administrador habilite explícitamente la característica, no se habilitará automáticamente.
 
-- Habrá advertencias sobre la versión de Azure AD Connect en el portal de Office 365 Germany, así como en el portal de Office 365 una vez que el inquilino esté en migración. Esto puede omitirse si la advertencia de versión ya no muestra la advertencia una vez completada la migración. Si hay una advertencia, antes o después de la migración, en cualquiera de los dos portales, Azure AD Connect debe actualizarse. El mensaje de advertencia indica: "Hemos detectado que está usando una herramienta de sincronización de directorios obsoleta. Se recomienda ir al Centro de descarga de Microsoft para obtener la versión más reciente de Azure AD Connect".
+- Habrá advertencias sobre la versión de Azure AD Conectar en el portal de Office 365 Alemania, así como en el portal de Office 365 una vez que el inquilino esté en migración. Esto puede omitirse si la advertencia de versión ya no muestra la advertencia una vez completada la migración. Si hay una advertencia, antes o después de la migración, en cualquiera de los dos portales, se Conectar azure AD. El mensaje de advertencia indica: "Hemos detectado que está usando una herramienta de sincronización de directorios obsoleta. Se recomienda ir al Centro de descarga de Microsoft para obtener la versión más reciente de Azure AD Conectar".
 
 ## <a name="more-information"></a>Más información
 
 Introducción:
 
-- [Migración de Microsoft Cloud Deutschland a servicios de Office 365 en las nuevas regiones del centro de datos alemán](ms-cloud-germany-transition.md)
+- [Migración de Microsoft Cloud Deutschland a Office 365 servicios en las nuevas regiones del centro de datos alemán](ms-cloud-germany-transition.md)
 - [Asistencia para la migración a Microsoft Cloud Alemania](https://aka.ms/germanymigrateassist)
 - [Cómo participar en la migración](ms-cloud-germany-migration-opt-in.md)
 - [Experiencia del cliente durante la migración](ms-cloud-germany-transition-experience.md)

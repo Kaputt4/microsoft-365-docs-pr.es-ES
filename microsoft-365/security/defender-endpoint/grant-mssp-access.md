@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 311903cdd1409f4ab997641cc842ff199ce2500d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932756"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843111"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Conceder acceso al proveedor de servicios de seguridad administrado (MSSP) (versión preliminar)
 
@@ -41,9 +41,9 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
 1. Habilite [el control de acceso basado en roles](rbac.md) en Defender para endpoint y conéctese con grupos de Active Directory (AD).
 
-2. Configurar [paquetes de acceso de gobierno](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) para la solicitud de acceso y el aprovisionamiento.
+2. Configurar [paquetes de acceso de gobierno](/azure/active-directory/governance/identity-governance-overview) para la solicitud de acceso y el aprovisionamiento.
 
-3. Administrar solicitudes de acceso y auditorías [en Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve).
+3. Administrar solicitudes de acceso y auditorías [en Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint"></a>Habilitar controles de acceso basados en roles en Microsoft Defender para endpoint
 
@@ -58,7 +58,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
 2. Cree roles de Defender para endpoint para niveles de acceso adecuados en Customer Defender for Endpoint.
 
-    Para habilitar RBAC en el Centro de seguridad de Microsoft Defender del cliente, acceda a Configuración > Permisos **> Roles** y "Activar roles", desde una cuenta de usuario con derechos de administrador global o administrador de seguridad.
+    Para habilitar RBAC en la cuenta de cliente Centro de seguridad de Microsoft Defender, acceda a **Configuración > Permissions > Roles** y "Activar roles", desde una cuenta de usuario con derechos de administrador global o administrador de seguridad.
 
     ![Imagen del acceso de MSSP](images/mssp-access.png)
 
@@ -92,7 +92,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     ![Imagen del nuevo catálogo](images/goverance-catalog.png)
 
-    Para obtener más información, vea [Create a catalog of resources](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create).
+    Para obtener más información, vea [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
 
 3. **Crear paquetes de acceso para recursos MSSP Customer AAD: Identity Governance**
@@ -109,7 +109,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
     > [!div class="mx-imgBorder"]
     > ![Imagen del nuevo paquete de acceso](images/new-access-package.png)
 
-    Para obtener más información, vea [Create a new access package](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create).
+    Para obtener más información, vea [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
 
 4. **Proporcionar vínculo de solicitud de acceso a recursos MSSP desde customer AAD: Identity Governance**
@@ -132,7 +132,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
     Ejemplo:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Aprobar o denegar solicitudes en la sección **Aprobaciones** de la interfaz de usuario.
 
-    En este momento, se ha aprovisionado el acceso de analistas y cada analista debe tener acceso al Centro de seguridad de Microsoft Defender del cliente: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    En este momento, se ha aprovisionado el acceso de analistas y cada analista debe tener acceso a la información del Centro de seguridad de Microsoft Defender:`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Acceder al portal de clientes de MSSP](access-mssp-portal.md)

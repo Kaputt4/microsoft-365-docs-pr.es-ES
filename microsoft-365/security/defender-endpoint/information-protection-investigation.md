@@ -1,5 +1,5 @@
 ---
-title: Usar etiquetas de confidencialidad para priorizar la respuesta a incidentes
+title: Usar etiquetas de confidencialidad para dar prioridad a una respuesta a incidentes
 description: Obtenga información sobre cómo usar etiquetas de confidencialidad para priorizar e investigar incidentes
 keywords: información, protección, datos, pérdida, prevención, etiquetas, dlp, incidente, investigación, investigación
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51186130"
 ---
-# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Usar etiquetas de confidencialidad para priorizar la respuesta a incidentes  
+# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Usar etiquetas de confidencialidad para dar prioridad a una respuesta a incidentes  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,9 +41,9 @@ Defender for Endpoint ayuda a que la priorización de incidentes de seguridad se
 Aprenda a usar etiquetas de confidencialidad de datos para priorizar la investigación de incidentes.
 
 >[!NOTE]
->Las etiquetas se detectan para Windows 10, versión 1809 o posterior.
+>Las etiquetas se detectan Windows 10, versión 1809 o posterior.
 
-1. En el Centro de seguridad de Microsoft Defender, seleccione **Incidentes**. 
+1. En Centro de seguridad de Microsoft Defender, seleccione **Incidentes**. 
 
 2. Desplácese a la derecha para ver la **columna Confidencialidad de** datos. Esta columna refleja las etiquetas de confidencialidad que se han observado en dispositivos relacionados con los incidentes, lo que indica si el incidente puede afectar a los archivos confidenciales.
 
