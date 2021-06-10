@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536207"
 ---
-# <a name="payment-information-for-venezuela"></a><span data-ttu-id="d3326-103">Información de pago para Venezuela</span><span class="sxs-lookup"><span data-stu-id="d3326-103">Payment information for Venezuela</span></span>
+# <a name="payment-information-for-venezuela"></a><span data-ttu-id="9eede-103">Información de pago para Venezuela</span><span class="sxs-lookup"><span data-stu-id="9eede-103">Payment information for Venezuela</span></span>
 
-<span data-ttu-id="d3326-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="d3326-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="9eede-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="9eede-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="d3326-105">Pague solo en USD y haga referencia a los números de factura en su remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="d3326-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="9eede-105">Pague solo en USD y haga referencia a los números de factura en su remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="9eede-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="d3326-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="d3326-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="9eede-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="9eede-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="d3326-107">**Banco:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="d3326-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="d3326-108">**Rama:** Dallas</span><span class="sxs-lookup"><span data-stu-id="d3326-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="d3326-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="d3326-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="d3326-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="d3326-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="d3326-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="d3326-111">**Account Name:** Microsoft</span></span>
+<span data-ttu-id="9eede-107">**Banco:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="9eede-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="9eede-108">**Rama:** Dallas</span><span class="sxs-lookup"><span data-stu-id="9eede-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="9eede-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="9eede-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="9eede-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="9eede-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="9eede-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="9eede-111">**Account Name:** Microsoft</span></span>
