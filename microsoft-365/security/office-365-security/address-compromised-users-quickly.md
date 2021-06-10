@@ -32,7 +32,7 @@ ms.locfileid: "51934698"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[El Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) incluye potentes capacidades de investigación y respuesta [automatizadas](office-365-air.md) (AIR). Estas capacidades pueden ahorrarle mucho tiempo y esfuerzo al equipo de operaciones de seguridad que se ocupa de las amenazas. Microsoft sigue mejorando las capacidades de seguridad. Recientemente, las capacidades de AIR se han mejorado para incluir un libro de juegos de seguridad de usuario en peligro (actualmente en versión preliminar). Lea este artículo para obtener más información sobre el libro de juegos de seguridad del usuario en peligro. Vea la entrada de blog Acelerar el tiempo para detectar y responder a los compromisos del usuario y limitar el ámbito de infracción con [Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) para obtener más detalles.
+[Microsoft Defender para Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) incluye potentes capacidades de investigación y respuesta [automatizadas](office-365-air.md) (AIR). Estas capacidades pueden ahorrarle mucho tiempo y esfuerzo al equipo de operaciones de seguridad que se ocupa de las amenazas. Microsoft sigue mejorando las capacidades de seguridad. Recientemente, las capacidades de AIR se han mejorado para incluir un libro de juegos de seguridad de usuario en peligro (actualmente en versión preliminar). Lea este artículo para obtener más información sobre el libro de juegos de seguridad del usuario en peligro. Y consulta la entrada de blog Acelerar el tiempo para detectar y responder a los compromisos del usuario y limitar el ámbito de infracción con [Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) para obtener Office 365 detalles adicionales.
 
 ![Investigación automatizada para un usuario en peligro](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -46,7 +46,7 @@ El libro de juegos de seguridad de usuario comprometido permite al equipo de seg
 
 ## <a name="compromised-user-alerts"></a>Alertas de usuario comprometidas
 
-Cuando una cuenta de usuario está en peligro, se producen comportamientos atípicos o anómalos. Por ejemplo, los mensajes de suplantación de identidad y correo no deseado pueden enviarse internamente desde una cuenta de usuario de confianza. Defender para Office 365 puede detectar estas anomalías en los patrones de correo electrónico y la actividad de colaboración dentro de Office 365. Cuando esto sucede, se desencadenan alertas y comienza el proceso de mitigación de amenazas.
+Cuando una cuenta de usuario está en peligro, se producen comportamientos atípicos o anómalos. Por ejemplo, los mensajes de suplantación de identidad y correo no deseado pueden enviarse internamente desde una cuenta de usuario de confianza. Defender for Office 365 puede detectar estas anomalías en los patrones de correo electrónico y la actividad de colaboración dentro de Office 365. Cuando esto sucede, se desencadenan alertas y comienza el proceso de mitigación de amenazas.
 
 Por ejemplo, esta es una alerta que se desencadenó debido al envío de correo electrónico sospechoso:
 
@@ -99,7 +99,7 @@ Para obtener más información, [vea Ver detalles de una investigación](air-vie
 
 - **No confíe en una alerta de inicio de sesión sospechosa como su único indicador**. Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechosa. A veces es la serie de actividades que se producen después de que se pone en peligro una cuenta que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Vea [Directivas de alerta](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisar los permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 
@@ -107,4 +107,4 @@ Para obtener más información, [vea Ver detalles de una investigación](air-vie
 
 - [Obtenga información sobre AIR en Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Visite la guía básica de Microsoft 365 para ver lo que se está implementando próximamente](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Visite el Microsoft 365 guía de desarrollo para ver lo que se está implementando próximamente](https://www.microsoft.com/microsoft-365/roadmap?filters=)

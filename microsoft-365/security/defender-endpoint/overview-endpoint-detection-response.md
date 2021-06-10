@@ -1,8 +1,8 @@
 ---
-title: Información general sobre las capacidades de detección y respuesta de puntos de conexión
+title: Información general sobre detección y respuesta de puntos de conexión funcionalidades
 ms.reviewer: ''
-description: Obtenga información sobre las capacidades de detección y respuesta de puntos de conexión en Microsoft Defender para endpoint
-keywords: Microsoft Defender para endpoint, detección y respuesta de puntos de conexión, respuesta, detección, ciberseguridad, protección
+description: Obtenga información sobre las detección y respuesta de puntos de conexión de Microsoft Defender para endpoint
+keywords: Microsoft Defender para endpoint, detección y respuesta de puntos de conexión, response, detection, cybersecurity, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933522"
 ---
-# <a name="overview-of-endpoint-detection-and-response"></a>Información general sobre la detección y respuesta de puntos de conexión
+# <a name="overview-of-endpoint-detection-and-response"></a>Información general sobre detección y respuesta de puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51933522"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Las capacidades de detección y respuesta de puntos de conexión de Defender para endpoints proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas.
+Las capacidades de defender para detección y respuesta de puntos de conexión endpoint proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas.
 
 Cuando se detecta una amenaza, se crean alertas en el sistema para que un analista la investigue. Las alertas con las mismas técnicas de ataque o atribuidas al mismo atacante se agregan a una entidad denominada _incidente_. Agregar alertas de esta manera permite a los analistas investigar y responder de forma colectiva a las amenazas con facilidad.
 

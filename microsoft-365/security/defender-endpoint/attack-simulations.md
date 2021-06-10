@@ -72,5 +72,5 @@ Lea el documento del tutorial proporcionado con cada escenario de ataque. Cada d
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Dispositivos integrados](onboard-configure.md)
+- [Incorporar dispositivos](onboard-configure.md)
 - [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)

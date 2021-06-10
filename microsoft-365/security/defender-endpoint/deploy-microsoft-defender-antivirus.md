@@ -1,6 +1,6 @@
 ---
 title: Implementación y habilitación en el Antivirus de Windows Defender
-description: Implemente Antivirus de Microsoft Defender para proteger los puntos de conexión con Microsoft Intune, Microsoft Endpoint Configuration Manager, directiva de grupo, cmdlets de PowerShell o WMI.
+description: Implemente Antivirus de Microsoft Defender protección de los puntos de conexión con Microsoft Intune, Microsoft Endpoint Configuration Manager, directiva de grupo, cmdlets de PowerShell o WMI.
 keywords: implementar, habilitar, Antivirus de Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -32,16 +32,16 @@ ms.locfileid: "52274501"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Según la herramienta de administración que use, es posible que deba habilitar o configurar específicamente la protección antivirus de Microsoft Defender. 
+Según la herramienta de administración que use, es posible que deba habilitar o configurar específicamente la protección Antivirus de Microsoft Defender administración. 
 
-Consulta la tabla de [Implementar,](deploy-manage-report-microsoft-defender-antivirus.md#ref2) administrar e informar sobre Antivirus de Microsoft Defender para obtener instrucciones sobre cómo habilitar la protección con Microsoft Intune, Microsoft Endpoint Configuration Manager, Directiva de grupo, Active Directory, Microsoft Azure, cmdlets de PowerShell e Instrucciones de administración de Windows (WMI).
+Consulte la tabla de [Implementar,](deploy-manage-report-microsoft-defender-antivirus.md#ref2) administrar e informar sobre Antivirus de Microsoft Defender para obtener instrucciones sobre cómo habilitar la protección con Microsoft Intune, Microsoft Endpoint Configuration Manager, directiva de grupo, Active Directory, Microsoft Azure, cmdlets de PowerShell e instrucción de administración de Windows (WMI).
 
-Algunos escenarios requieren más instrucciones sobre cómo implementar o configurar correctamente la protección antivirus de Microsoft Defender, como entornos de infraestructura de escritorio virtual (VDI).
+Algunos escenarios requieren más instrucciones sobre cómo implementar o configurar correctamente la protección Antivirus de Microsoft Defender, como Infraestructura de escritorio virtual (VDI).
 
-El artículo restante de esta sección proporciona consejos completos y procedimientos recomendados para configurar Microsoft Defender Antivirus en máquinas virtuales (VM) en un entorno de VDI o servicios de escritorio remoto [(RDS).](deployment-vdi-microsoft-defender-antivirus.md)
+El artículo restante de esta sección proporciona consejos completos y procedimientos recomendados para configurar Antivirus de Microsoft Defender en máquinas virtuales (VM) en un entorno de VDI o servicios de escritorio remoto [(RDS).](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Implementar, administrar actualizaciones e informar sobre antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Implementar, administrar actualizaciones e informar sobre Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual](deployment-vdi-microsoft-defender-antivirus.md)

@@ -1,7 +1,7 @@
 ---
-title: Generar una alerta de Prueba de Microsoft 365 Defender
-description: Generar una alerta de prueba para probar cómo funciona el entorno de laboratorio de Microsoft 365 Defender
-keywords: Simulación de Microsoft 365 Defender, prueba Microsoft 365 Defender, genera alerta de prueba en Microsoft 365 Defender, alerta de prueba en el laboratorio de evaluación de Microsoft 365 Defender
+title: Generar una alerta de Microsoft 365 Defender
+description: Generar una alerta de prueba para probar cómo funciona Microsoft 365 entorno de laboratorio de Defender
+keywords: Microsoft 365 Simulación de defender, probar Microsoft 365 Defender, generar alerta de prueba en Microsoft 365 Defender, alerta de prueba en Microsoft 365 laboratorio de evaluación de Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,12 +35,12 @@ ms.locfileid: "51935658"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Ahora que ha completado la configuración y configuración del laboratorio de evaluación de Microsoft 365 Defender, puede ejecutar una simulación de ataque de amenazas para experimentar las capacidades de detección, correlación de alertas y corrección de recuperación automática de la solución de seguridad integrada.  
+Ahora que ha completado la configuración y configuración del laboratorio de evaluación de Microsoft 365 Defender, puede ejecutar una simulación de ataque de amenazas para experimentar las capacidades de detección, correlación de alertas y corrección automática de la solución de seguridad integrada.  
 
 1. Inicie sesión en https://security.microsoft.com
-2. En la página principal, busque un icono titulado **Simulation**.  Revise la guía del tutorial para ver los pasos para crear un incidente de prueba en Microsoft 365 Defender.
-<br>![Imagen de la tarjeta de simulación en el panel seguridad de Microsoft 365](../../media/mtp-eval-73.png) <br>
+2. En la página principal, busque un icono titulado **Simulation**.  Revisa la guía del tutorial para ver los pasos para crear un incidente de prueba en Microsoft 365 Defender.
+<br>![Imagen de la tarjeta de simulación en el panel Microsoft 365 seguridad](../../media/mtp-eval-73.png) <br>
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-Explore el Centro de arquitectura y soluciones de [Microsoft 365](../../solutions/index.yml) para comprender cómo diseñar la solución y la arquitectura adecuada para su organización.
+Examine el centro [de Microsoft 365 y](../../solutions/index.yml) arquitectura para comprender cómo diseñar la solución y la arquitectura adecuada para su organización.

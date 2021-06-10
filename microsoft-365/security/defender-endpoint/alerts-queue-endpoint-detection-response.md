@@ -1,7 +1,7 @@
 ---
-title: Cola de alertas en el Centro de seguridad de Microsoft Defender
+title: Cola de alertas en Centro de seguridad de Microsoft Defender
 ms.reviewer: ''
-description: Ver y administrar las alertas que se han presentado en el Centro de seguridad de Microsoft Defender
+description: Ver y administrar las alertas que se han presentado en Centro de seguridad de Microsoft Defender
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51075440"
 ---
-# <a name="alerts-queue-in-microsoft-defender-security-center"></a>Cola de alertas en el Centro de seguridad de Microsoft Defender
+# <a name="alerts-queue-in-microsoft-defender-security-center"></a>Cola de alertas en Centro de seguridad de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,6 +46,6 @@ Tema | Descripción
 [Investigar dispositivos](investigate-machines.md)| Investigar los detalles de un dispositivo asociado a una alerta, comportamiento o evento específicos. 
 [Investigar una dirección IP](investigate-ip.md) | Examine las posibles comunicaciones entre dispositivos de la red y las direcciones IP (protocolos de Internet externos).
 [Investigar un dominio](investigate-domain.md) | Investigue un dominio para ver si los dispositivos y servidores de la red se han estado comunicando con un dominio malintencionado conocido. 
-[Investigar una cuenta de usuario](investigate-user.md) | Identifique las cuentas de usuario con las alertas más activas e investigue los casos de posibles credenciales comprometidas.  
+[Reactivar una cuenta de usuario](investigate-user.md) | Identifique las cuentas de usuario con las alertas más activas e investigue los casos de posibles credenciales comprometidas.  
 
 

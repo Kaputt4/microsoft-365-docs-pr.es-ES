@@ -52,7 +52,7 @@ Si puede reproducir un problema, aumente primero el nivel de registro, ejecute e
 
 2. Reproduce el problema.
 
-3. Ejecute el siguiente comando para realizar una copia de seguridad de Defender para los registros del extremo. Los archivos se almacenarán dentro de un archivo .zip.
+3. Ejecute el siguiente comando para realizar una copia de seguridad de Defender para los registros del extremo. Los archivos se almacenarán dentro de un .zip archivo.
 
    ```bash
    sudo mdatp diagnostic create
@@ -79,7 +79,7 @@ Si se produce un error durante la instalación, el instalador solo informará de
 
 El registro detallado se guardará en `/var/log/microsoft/mdatp_install.log` . Si tiene problemas durante la instalación, envíenos este archivo para que podamos diagnosticar la causa.
 
-## <a name="uninstall"></a>Uninstall
+## <a name="uninstall"></a>Desinstalar
 
 Hay varias maneras de desinstalar Defender for Endpoint en Linux. Si usa una herramienta de configuración como Puppet, siga las instrucciones de desinstalación del paquete para la herramienta de configuración.
 
@@ -97,7 +97,7 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 
 De forma predeterminada, la herramienta de línea de comandos genera el resultado en formato legible. Además, la herramienta también admite la salida del resultado como JSON, lo que resulta útil para escenarios de automatización. Para cambiar el resultado a JSON, pase `--output json` a cualquiera de los comandos siguientes.
 
-### <a name="supported-commands"></a>Comandos compatibles
+### <a name="supported-commands"></a>Comandos admitidos
 
 En la tabla siguiente se enumeran los comandos de algunos de los escenarios más comunes. Ejecute `mdatp help` desde terminal para ver la lista completa de comandos admitidos.
 
@@ -120,14 +120,14 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Configuración         |Activar la protección de LA PUA                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |Configuración         |Desactivar la protección de LA PUA                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |Configuración         |Activar el modo de auditoría para la protección de PUA                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
-|Diagnóstico           |Cambiar el nivel de registro                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|Diagnóstico           |Generar registros de diagnóstico                                |`mdatp diagnostic create --path [directory]`                           |
+|Diagnostics           |Cambiar el nivel de registro                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
+|Diagnostics           |Generar registros de diagnóstico                                |`mdatp diagnostic create --path [directory]`                           |
 |Salud                |Comprobar el estado del producto                              |`mdatp health`                                                         |
-|Protection            |Examinar una ruta de acceso                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
-|Protection            |Realizar un examen rápido                                         |`mdatp scan quick`                                                     |
-|Protection            |Realizar un examen completo                                          |`mdatp scan full`                                                      |
-|Protection            |Cancelar un examen a petición en curso                        |`mdatp scan cancel`                                                    |
-|Protection            |Solicitar una actualización de inteligencia de seguridad                  |`mdatp definitions update`                                             |
+|Protección            |Examinar una ruta de acceso                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
+|Protección            |Realizar un examen rápido                                         |`mdatp scan quick`                                                     |
+|Protección            |Realizar un examen completo                                          |`mdatp scan full`                                                      |
+|Protección            |Cancelar un examen a petición en curso                        |`mdatp scan cancel`                                                    |
+|Protección            |Solicitar una actualización de inteligencia de seguridad                  |`mdatp definitions update`                                             |
 |Historial de protección    |Imprimir el historial de protección completo                       |`mdatp threat list`                                                    |
 |Historial de protección    |Obtener detalles de amenazas                                      |`mdatp threat get --id [threat-id]`                                    |
 |Administración de cuarentena |Enumerar todos los archivos en cuarentena                              |`mdatp threat quarantine list`                                         |
@@ -145,7 +145,7 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 En el portal de Defender para endpoint, verá dos categorías de información:
 
 - Alertas antivirus, incluidas:
-  - Severity
+  - Gravedad
   - Tipo de examen
   - Información del dispositivo (nombre de host, identificador de dispositivo, identificador de inquilino, versión de aplicación y tipo de sistema operativo)
   - Información de archivo (nombre, ruta de acceso, tamaño y hash)
@@ -163,8 +163,8 @@ En el portal de Defender para endpoint, verá dos categorías de información:
 
 ### <a name="known-issues"></a>Problemas conocidos
 
-- Es posible que vea "Sin datos de sensores, comunicaciones deficientes" en la página de información de la máquina del portal del Centro de seguridad de Microsoft Defender, aunque el producto funciona como se esperaba. Estamos trabajando en solucionar este problema.
-- Los usuarios que han iniciado sesión no aparecen en el portal del Centro de seguridad de Microsoft Defender.
+- Es posible que vea "Sin datos de sensor, comunicaciones deficientes" en la página de información de la máquina del portal de Centro de seguridad de Microsoft Defender, aunque el producto funciona como se esperaba. Estamos trabajando en solucionar este problema.
+- Los usuarios que han iniciado sesión no aparecen en Centro de seguridad de Microsoft Defender portal.
 - En las distribuciones de SUSE, si se produce un error en la instalación de *libatomic1,* debe validar que el sistema operativo está registrado:
 
    ```bash

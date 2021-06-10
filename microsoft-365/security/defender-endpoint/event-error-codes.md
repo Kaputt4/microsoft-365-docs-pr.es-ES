@@ -42,11 +42,11 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 
 **Abra el Visor de eventos y busque el registro de eventos de servicio de Microsoft Defender para puntos de conexión:**
 
-1. Haga **clic en** Inicio en el menú Windows, escriba Visor de **eventos** y presione **Entrar**.
+1. Haga **clic en** Inicio en Windows menú, escriba Visor de **eventos** y presione **Entrar**.
 
 2. En la lista de registros, en **Resumen del registro,** desplácese hasta que vea **Microsoft-Windows-SENSE/Operational**. Haga doble clic en el elemento para abrir el registro.
 
-   a.  También puede acceder al registro expandiendo Registros de aplicaciones y servicios  >  **Microsoft**  >  **Windows**  >  **SENSE** y haga clic en **Operativo**.
+   a.  También puede obtener acceso al registro expandiendo **Registros** de aplicaciones y servicios  >  **microsoft**  >  **Windows**  >  **SENSE** y haga clic en **Operativo**.
 
    > [!NOTE]
    > SENSE es el nombre interno que se usa para hacer referencia al sensor de comportamiento que potencia Microsoft Defender para Endpoint.
@@ -57,9 +57,9 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 <tbody style="vertical-align:top;">
 <tr>
 <th>Identificador de evento</th>
-<th>Message</th>
+<th>Mensaje</th>
 <th>Descripción</th>
-<th>Action</th>
+<th>Acción</th>
 </tr>
 <tr>
 <td>1</td>
@@ -99,14 +99,14 @@ El servicio no pudo ponerse en contacto con los servidores de procesamiento exte
 <td>El dispositivo no se incorporó correctamente y no se va a informar al portal.</td>
 <td>La incorporación debe ejecutarse antes de iniciar el servicio.<br>
 Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
 <td>7 </td>
 <td>Microsoft Defender para el servicio de extremo no pudo leer los parámetros de incorporación. Error: <code>variable</code> .</td>
 <td>Variable = descripción detallada del error. El dispositivo no se incorporó correctamente y no se va a informar al portal.</td>
 <td>Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
 <td>8 </td>
@@ -114,21 +114,21 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 <td><b>Durante la incorporación:</b> El servicio no pudo limpiar su configuración durante la incorporación. El proceso de incorporación continúa. <br><br> <b>Durante el offboarding:</b> El servicio no pudo limpiar su configuración durante el offboarding. El proceso de offboarding ha finalizado, pero el servicio sigue ejecutándose.
  </td>
 <td><b>Incorporación:</b> No se requiere ninguna acción. <br><br> <b>Offboarding:</b> Reinicie el sistema.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
 <td>9 </td>
 <td>Microsoft Defender para el servicio de extremo no pudo cambiar su tipo de inicio. Código de error: <code>variable</code> .</td>
 <td><b>Durante la incorporación:</b> El dispositivo no se incorporó correctamente y no se va a informar al portal. <br><br><b>Durante el offboarding:</b> No se pudo cambiar el tipo de inicio del servicio. El proceso de offboarding continúa. </td>
 <td>Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
-<td>10  </td>
+<td>10</td>
 <td>Microsoft Defender para el servicio de extremo no pudo conservar la información de incorporación. Código de error: <code>variable</code> .</td>
 <td>El dispositivo no se incorporó correctamente y no se va a informar al portal.</td>
 <td>Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
 <td>11</td>
@@ -150,7 +150,7 @@ El dispositivo puede tardar varias horas en aparecer en el portal.</td>
 <td>Notificación de funcionamiento normal; no se requiere ninguna acción.</td>
 </tr>
 <tr>
-<td>15 </td>
+<td>15</td>
 <td>Microsoft Defender para endpoint no puede iniciar el canal de comandos con dirección URL: <code>variable</code> .</td>
 <td>Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint.<br>
 El servicio no pudo ponerse en contacto con los servidores de procesamiento externos en esa dirección URL.</td>
@@ -159,29 +159,29 @@ El servicio no pudo ponerse en contacto con los servidores de procesamiento exte
 <tr>
 <td>17 </td>
 <td>Microsoft Defender para el servicio de extremo no pudo cambiar la ubicación del servicio Telemetría y experiencias del usuario conectado. Código de error: <code>variable</code> .</td>
-<td>Se produjo un error con el servicio de telemetría de Windows.</td>
+<td>Se produjo un error con el servicio Windows telemetría.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Asegúrese de que el servicio de datos de diagnóstico está habilitado.</a><br>
 Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
 <td>18 </td>
-<td>OOBE (Windows Welcome) se ha completado.</td>
-<td>El servicio solo se iniciará después de que las actualizaciones de Windows terminen de instalarse.</td>
+<td>OOBE (Windows bienvenida) se ha completado.</td>
+<td>El servicio solo se iniciará después de que Windows actualizaciones haya terminado de instalarse.</td>
 <td>Notificación de funcionamiento normal; no se requiere ninguna acción.</td>
 </tr>
 <tr>
 <td>19</td>
-<td>OOBE (Windows Welcome) aún no se ha completado.</td>
-<td>El servicio solo se iniciará después de que las actualizaciones de Windows terminen de instalarse.</td>
+<td>OOBE (Windows bienvenida) aún no se ha completado.</td>
+<td>El servicio solo se iniciará después de que Windows actualizaciones haya terminado de instalarse.</td>
 <td>Notificación de funcionamiento normal; no se requiere ninguna acción.<br>
-Si este error persiste después de reiniciar el sistema, asegúrate de que todas las actualizaciones de Windows se han instalado por completo.</td>
+Si este error persiste después de reiniciar el sistema, asegúrese de que todas Windows actualizaciones se han instalado por completo.</td>
 </tr>
 <tr>
 <td>20</td>
-<td>No se puede esperar a que se complete OOBE (Windows Welcome). Código de error: <code>variable</code> .</td>
+<td>No se puede esperar a que se complete la OOBE (Windows welcome). Código de error: <code>variable</code> .</td>
 <td>Error interno.</td>
-<td>Si este error persiste después de reiniciar el sistema, asegúrate de que todas las actualizaciones de Windows se han instalado por completo.</td>
+<td>Si este error persiste después de reiniciar el sistema, asegúrese de que todas Windows actualizaciones se han instalado por completo.</td>
 </tr>
 <tr>
 <td>25</td>
@@ -189,7 +189,7 @@ Si este error persiste después de reiniciar el sistema, asegúrate de que todas
 <td>El dispositivo no se incorporó correctamente.
 Se presentará en el portal, pero es posible que el servicio no aparezca como registrado en SCCM o en el Registro.</td>
 <td>Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
 <td>26</td>
@@ -197,23 +197,23 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 <td>El dispositivo no se incorporó correctamente.<br>
 Se presentará en el portal, pero es posible que el servicio no aparezca como registrado en SCCM o en el Registro.</td>
 <td>Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
 <td>27</td>
-<td>El servicio de Microsoft Defender para puntos de conexión no pudo habilitar el modo consciente de SENSE en El Antivirus de Microsoft Defender. Error en el proceso de incorporación. Código de error: <code>variable</code> .</td>
-<td>Normalmente, Antivirus de Microsoft Defender entrará en un estado pasivo especial si otro producto antimalware en tiempo real se ejecuta correctamente en el dispositivo y el dispositivo informa a Defender para endpoint.</td>
+<td>El servicio de Microsoft Defender para puntos de conexión no pudo habilitar el modo consciente de SENSE en Antivirus de Microsoft Defender. Error en el proceso de incorporación. Código de error: <code>variable</code> .</td>
+<td>Normalmente, Antivirus de Microsoft Defender un estado pasivo especial si otro producto antimalware en tiempo real se ejecuta correctamente en el dispositivo y el dispositivo informa a Defender para endpoint.</td>
 <td>Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.<br>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.<br>
 Asegúrese de que la protección antimalware en tiempo real se está ejecutando correctamente.</td>
 </tr>
 <tr>
 <td>28</td>
 <td>Error en el registro del servicio de telemetría y experiencias de usuario conectado de Microsoft Defender para puntos de conexión. Código de error: <code>variable</code> .</td>
-<td>Se produjo un error con el servicio de telemetría de Windows.</td>
+<td>Se produjo un error con el servicio Windows telemetría.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Asegúrese de que el servicio de datos de diagnóstico está habilitado.</a><br>
 Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
 <td>29</td>
@@ -224,16 +224,16 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 <tr>
 <td>30</td>
 <td>Microsoft Defender para el servicio de extremo no pudo deshabilitar el modo consciente de SENSE en Antivirus de Microsoft Defender. Código de error: <code>variable</code> .</td>
-<td>Normalmente, Antivirus de Microsoft Defender entrará en un estado pasivo especial si otro producto antimalware en tiempo real se ejecuta correctamente en el dispositivo y el dispositivo informa a Defender para endpoint.</td>
+<td>Normalmente, Antivirus de Microsoft Defender un estado pasivo especial si otro producto antimalware en tiempo real se ejecuta correctamente en el dispositivo y el dispositivo informa a Defender para endpoint.</td>
 <td>Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a><br>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a><br>
 Asegúrese de que la protección antimalware en tiempo real se está ejecutando correctamente.</td>
 </tr>
 <tr>
 <td>31</td>
 <td>Error en la anulación de la registro de Microsoft Defender para experiencias de usuario conectadas a puntos de conexión y servicio de telemetría. Código de error: <code>variable</code> .</td>
-<td>Se produjo un error con el servicio de telemetría de Windows durante la incorporación. El proceso de offboarding continúa.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Compruebe si hay errores con el servicio de telemetría de Windows</a>.</td>
+<td>Se produjo un error con el Windows de telemetría durante la incorporación. El proceso de offboarding continúa.</td>
+<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Compruebe si hay errores con el servicio Windows telemetría</a>.</td>
 </tr>
 <tr>
 <td>32</td>
@@ -251,17 +251,17 @@ Si el identificador no persiste, es posible que el mismo dispositivo aparezca do
 <tr>
 <td>34</td>
 <td>Microsoft Defender para el servicio de extremo no pudo agregarse a sí mismo como dependencia del servicio de telemetría y experiencias del usuario conectado, lo que provocó un error en el proceso de incorporación. Código de error: <code>variable</code> .</td>
-<td>Se produjo un error con el servicio de telemetría de Windows.</td>
+<td>Se produjo un error con el servicio Windows telemetría.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Asegúrese de que el servicio de datos de diagnóstico está habilitado.</a><br>
 Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración.<br>
-Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación de dispositivos Windows 10</a>.</td>
+Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Incorporación Windows 10 dispositivos</a>.</td>
 </tr>
 <tr>
 <td>35</td>
 <td>Microsoft Defender para el servicio de extremo no pudo quitarse a sí mismo como dependencia del servicio telemetría y experiencias del usuario conectado. Código de error: <code>variable</code> .</td>
-<td>Se produjo un error con el servicio de telemetría de Windows durante el offboarding. El proceso de offboarding continúa.
+<td>Se produjo un error con el Windows de telemetría durante el offboarding. El proceso de offboarding continúa.
 </td>
-<td>Compruebe si hay errores con el servicio de datos de diagnóstico de Windows.</td>
+<td>Compruebe si hay errores con el Windows de datos de diagnóstico.</td>
 </tr>
 <tr>
 <td>36</td>
@@ -494,7 +494,7 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 </tr>
 <tr>
    <td>84</td>
-   <td>Establece Windows Defender modo de ejecución de Antivirus. Forzar el modo pasivo: %1, código de resultado: %2.</td>
+   <td>Establece Antivirus de Windows Defender modo de ejecución. Forzar el modo pasivo: %1, código de resultado: %2.</td>
    <td>Establece el modo de ejecución del defensor (activo o pasivo).</td>
    <td>Notificación de funcionamiento normal; no se requiere ninguna acción.</td>
 </tr>
@@ -613,5 +613,5 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
-- [Configurar el proxy de dispositivo y la configuración de conectividad a Internet](configure-proxy-internet.md)
+- [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md)
 - [Solucionar problemas de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)

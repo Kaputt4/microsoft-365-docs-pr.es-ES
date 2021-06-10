@@ -96,7 +96,7 @@ Office 365 Extra File Storage está disponible para las siguientes suscripciones
 - Microsoft 365 Empresa Premium
 - Microsoft 365 E3
 - Microsoft 365 E5
-- Microsoft 365 F1
+- Microsoft 365 F1
 
 > [!NOTE]
 > Office 365 Extra File Storage también está disponible para planes GCC, GCC High y DOD.

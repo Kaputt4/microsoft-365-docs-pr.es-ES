@@ -1,6 +1,6 @@
 ---
 title: Crear y administrar roles para el control de acceso basado en roles
-description: Crear roles y definir los permisos asignados al rol como parte de la implementación del control de acceso basado en roles en el Centro de seguridad de Microsoft Defender
+description: Cree roles y defina los permisos asignados al rol como parte de la implementación de control de acceso basada en roles en el Centro de seguridad de Microsoft Defender
 keywords: roles de usuario, roles, acceso a rbac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,13 +35,13 @@ ms.locfileid: "51073987"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Crear roles y asignar el rol a un grupo de Azure Active Directory
+## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Crear roles y asignar el rol a un Azure Active Directory grupo
 
-Los siguientes pasos le guían sobre cómo crear roles en el Centro de seguridad de Microsoft Defender. Se supone que ya ha creado grupos de usuarios de Azure Active Directory.
+Los siguientes pasos le guían sobre cómo crear roles en Centro de seguridad de Microsoft Defender. Se supone que ya ha creado Azure Active Directory grupos de usuarios.
 
-1. Inicie sesión en [el Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/) con una cuenta con un administrador de seguridad o un rol de administrador global asignado.
+1. Inicie sesión en [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/) cuenta con un administrador de seguridad o un rol de administrador global asignado.
 
-2. En el panel de navegación, seleccione **Configuración > Roles**.
+2. En el panel de navegación, **seleccione Configuración > Roles**.
 
 3. Seleccione **Agregar elemento**.
 
@@ -62,12 +62,12 @@ Los siguientes pasos le guían sobre cómo crear roles en el Centro de seguridad
 
 - **Ver datos**
     - **Operaciones de seguridad:** ver todos los datos de operaciones de seguridad en el portal
-    - **Administración de amenazas y vulnerabilidades:** ver los datos de administración de amenazas y vulnerabilidades en el portal
+    - **Amenaza y administración de vulnerabilidades:** ver Administración de amenazas y vulnerabilidades datos en el portal
 
 - **Acciones de corrección activas**
     - **Operaciones de seguridad:** realizar acciones de respuesta, aprobar o descartar acciones de corrección pendientes, administrar listas permitidas o bloqueadas para automatización e indicadores
-    - **Administración de amenazas y vulnerabilidades: control de excepciones:** crear nuevas excepciones y administrar excepciones activas
-    - **Administración de amenazas y vulnerabilidades: control de** corrección: enviar nuevas solicitudes de corrección, crear vales y administrar las actividades de corrección existentes
+    - **Amenazas y administración de vulnerabilidades: control de excepciones:** crear nuevas excepciones y administrar excepciones activas
+    - **Amenazas y administración de vulnerabilidades: control de** corrección: enviar nuevas solicitudes de corrección, crear vales y administrar las actividades de corrección existentes
 
 - **Investigación de alertas:** administrar alertas, iniciar investigaciones automatizadas, ejecutar exámenes, recopilar paquetes de investigación, administrar etiquetas de dispositivo y descargar solo archivos ejecutables portátiles (PE) 
 
@@ -85,7 +85,7 @@ Los siguientes pasos le guían sobre cómo crear roles en el Centro de seguridad
     - **Comandos** avanzados:
         - Descargar un archivo desde el dispositivo remoto a través de una respuesta en directo
         - Descargar archivos PE y que no son PE de la página de archivos
-        - Cargar un archivo en el dispositivo remoto
+        - Upload un archivo al dispositivo remoto
         - Ver un script desde la biblioteca de archivos
         - Ejecutar un script en el dispositivo remoto desde la biblioteca de archivos
 
@@ -93,9 +93,9 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
   
 ## <a name="edit-roles"></a>Editar roles
 
-1. Inicie sesión en [el Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/) con una cuenta con el administrador de seguridad o el rol de administrador global asignado.
+1. Inicie sesión [en](https://securitycenter.windows.com/) Centro de seguridad de Microsoft Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
-2. En el panel de navegación, seleccione **Configuración > Roles**.
+2. En el panel de navegación, **seleccione Configuración > Roles**.
 
 3. Seleccione el rol que desea editar.
 
@@ -107,9 +107,9 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
 
 ## <a name="delete-roles"></a>Eliminar roles
 
-1. Inicie sesión en [el Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/) con una cuenta con el administrador de seguridad o el rol de administrador global asignado.
+1. Inicie sesión [en](https://securitycenter.windows.com/) Centro de seguridad de Microsoft Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
-2. En el panel de navegación, seleccione **Configuración > Roles**.
+2. En el panel de navegación, **seleccione Configuración > Roles**.
 
 3. Seleccione el rol que desea eliminar.
 

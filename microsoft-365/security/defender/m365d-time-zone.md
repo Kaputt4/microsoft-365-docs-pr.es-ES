@@ -1,5 +1,5 @@
 ---
-title: Establecer la zona horaria para las características de Microsoft 365 Defender
+title: Establecer la zona horaria para las Microsoft 365 Defender
 description: Obtenga información sobre cómo elegir la zona horaria para la información de fecha y hora asociada a los incidentes, la investigación y la corrección automatizada y la búsqueda avanzada.
 keywords: zona horaria, fecha, hora, Microsoft 365 Defender, M365, seguridad, incidentes, investigación automatizada y respuesta, AIR, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
@@ -42,4 +42,4 @@ Microsoft 365 Defender puede mostrar información de fecha y hora con su zona ho
 - Investigación y corrección automatizada, incluyendo el centro de actividades
 - Búsqueda avanzada
 
-Para establecer la zona horaria de estas características, vaya a **Configuración** de la zona horaria  >  **de Microsoft 365 Defender**  >  .
+Para establecer la zona horaria de estas características, vaya **a Configuración**  >  **Microsoft 365 zona** horaria de  >  **Defender**.

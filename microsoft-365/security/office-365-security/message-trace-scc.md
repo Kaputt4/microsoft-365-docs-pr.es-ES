@@ -30,17 +30,17 @@ ms.locfileid: "52274477"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-El seguimiento de mensajes en el Centro de seguridad & cumplimiento sigue los mensajes de correo electrónico a medida que viajan a través de la organización de Exchange Online. Puede determinar si el servicio recibió, rechazó, aplazó o entregó un mensaje. También muestra qué acciones se realizaron en el mensaje antes de alcanzar su estado final.
+El seguimiento de mensajes en el Centro de seguridad & cumplimiento sigue los mensajes de correo electrónico a medida que se desplazan por la Exchange Online organización. Puede determinar si el servicio recibió, rechazó, aplazó o entregó un mensaje. También muestra qué acciones se realizaron en el mensaje antes de alcanzar su estado final.
 
 Puede usar la información del seguimiento de mensajes para responder eficazmente a las preguntas del usuario sobre lo que ocurrió con los mensajes, solucionar problemas de flujo de correo y validar los cambios de directiva.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Debe ser miembro de los grupos de  roles **Administración** de la **organización,** Administración de cumplimiento o Servicio de ayuda en **Exchange Online** para usar el seguimiento de mensajes. Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
+- Debe ser miembro de los grupos de  roles **Administración** de  la **organización,** Administración de cumplimiento o Servicio de Exchange Online para usar el seguimiento de mensajes. Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Notas:** La pertenencia al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Notas:** La pertenencia al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
-- El número máximo de mensajes que se muestran en los resultados de un seguimiento de mensajes depende del tipo de informe seleccionado (vea la sección Elegir tipo [de](#choose-report-type) informe para obtener más información). El cmdlet [Get-HistoricalSearch en](/powershell/module/exchange/get-historicalsearch) PowerShell de Exchange Online o powerShell de EOP independiente devuelve todos los mensajes de los resultados.
+- El número máximo de mensajes que se muestran en los resultados de un seguimiento de mensajes depende del tipo de informe seleccionado (vea la sección Elegir tipo [de](#choose-report-type) informe para obtener más información). El cmdlet [Get-HistoricalSearch de](/powershell/module/exchange/get-historicalsearch) Exchange Online PowerShell o PowerShell independiente de EOP devuelve todos los mensajes de los resultados.
 
 ## <a name="open-message-trace"></a>Seguimiento de mensajes abierto
 
@@ -105,7 +105,7 @@ Puede dejar el valor predeterminado **All** seleccionado o puede seleccionar uno
 - **Error:** el mensaje no se entregó.
 - **En cuarentena:** el mensaje se ha puesto en cuarentena (como correo no deseado, correo masivo o suplantación de identidad). Para obtener más información, vea [Quarantined email messages in EOP](quarantine-email-messages.md).
 - **Filtrado como correo no** deseado: el mensaje se identificó como correo no deseado y se rechazó o bloqueó (no se ha puesto en cuarentena).
-- **Obtener el estado:** Microsoft 365 recibió recientemente el mensaje, pero aún no hay otros datos de estado disponibles. Vuelva en unos minutos.
+- **Obtener el estado:** El mensaje fue recibido recientemente por Microsoft 365, pero aún no hay otros datos de estado disponibles. Vuelva en unos minutos.
 
 > [!NOTE]
 > Los valores **Pending,** **Quarantined** y **Filter as spam** solo están disponibles para búsquedas de menos de 10 días. Además, puede haber un retraso de 5 a 10 minutos entre el estado de entrega real e notificado.
@@ -114,7 +114,7 @@ Puede dejar el valor predeterminado **All** seleccionado o puede seleccionar uno
 
 Este es el identificador de mensaje de Internet (también conocido como id. de cliente) que se encuentra en el campo de encabezado **Message-ID:** en el encabezado del mensaje. Los usuarios pueden darle este valor para investigar mensajes específicos.
 
-Este valor es constante mientras dura el mensaje. Para los mensajes creados en Microsoft 365 o Exchange, el valor tiene el formato `<GUID@ServerFQDN>` , incluidos los corchetes angulares ( \< \> ). Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Otros sistemas de mensajería pueden usar diferentes sintaxis o valores. Se supone que este valor es único, pero no todos los sistemas de correo electrónico siguen estrictamente este requisito. Si el **campo de encabezado Message-ID:** no existe o está en blanco para los mensajes entrantes de orígenes externos, se asigna un valor arbitrario.
+Este valor es constante mientras dura el mensaje. Para los mensajes creados Microsoft 365 o Exchange, el valor tiene el formato , incluidos los `<GUID@ServerFQDN>` corchetes angulares ( \< \> ). Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Otros sistemas de mensajería pueden usar diferentes sintaxis o valores. Se supone que este valor es único, pero no todos los sistemas de correo electrónico siguen estrictamente este requisito. Si el **campo de encabezado Message-ID:** no existe o está en blanco para los mensajes entrantes de orígenes externos, se asigna un valor arbitrario.
 
 Cuando use el **identificador de mensaje** para filtrar los resultados, asegúrese de incluir la cadena completa, incluidos los corchetes angulares.
 
@@ -140,7 +140,7 @@ Los tipos de informe disponibles son:
 >
 > - Los informes ampliados y de resumen mejorados se preparan con datos de seguimiento de mensajes archivados y pueden tardar hasta varias horas antes de que el informe esté disponible para su descarga. Dependiendo del número de administradores que también han enviado solicitudes de informe al mismo tiempo, es posible que también observe un retraso antes de que comience a procesarse la solicitud en cola.
 > - Aunque puede seleccionar un resumen mejorado o un informe extendido para cualquier intervalo de fecha y hora, normalmente las últimas cuatro horas de datos archivados todavía no estarán disponibles para estos dos tipos de informes.
-> - El tamaño máximo de un informe descargable es de 500 MB. Si un informe descargable supera los 500 MB, no puede abrir el informe en Excel ni en el Bloc de notas.
+> - El tamaño máximo de un informe descargable es de 500 MB. Si un informe descargable supera los 500 MB, no puede abrir el informe en Excel o Bloc de notas.
 
 Al hacer clic en **Siguiente,** se le muestra una página de resumen que enumera las opciones de filtrado que seleccionó, un título único (editable) para el informe y la dirección de correo electrónico que recibe la notificación cuando se completa el seguimiento del mensaje (también editable y debe estar en uno de los dominios aceptados de la organización). Haga **clic en Preparar informe** para enviar el seguimiento del mensaje. En la página **de seguimiento de mensajes** principal, puede ver el estado del informe en la sección Informes **descargables.**
 
@@ -228,7 +228,7 @@ Los informes de resumen mejorados disponibles (completados) están disponibles e
 - **network_message_id:** un valor de identificador de mensaje único que persiste en todas las copias del mensaje que podrían crearse debido a la bifurcación o a la expansión del grupo de distribución. Un valor de ejemplo es `1341ac7b13fb42ab4d4408cf7f55890f` .
 - **original_client_ip:** la dirección IP del cliente del remitente.
 - **direccionalidad:** indica si el mensaje se envió de entrada (1) a la organización o si se envió saliente (2) desde la organización.
-- **connector_id:** el nombre del conector de origen o de destino. Para obtener más información acerca de los conectores en Exchange Online, vea [Configure mail flow using connectors in Office 365](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+- **connector_id:** el nombre del conector de origen o de destino. Para obtener más información acerca de los conectores de Exchange Online, vea [Configure mail flow using connectors in Office 365](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 - **delivery_priority:** <sup>*</sup> si el mensaje se envió con **prioridad Alta,** Baja o **Normal.**
 
 <sup>*</sup> Estas propiedades solo están disponibles en informes de resumen mejorados.
@@ -244,12 +244,12 @@ Los informes extendidos disponibles (completados) están disponibles en la secci
 - **source_context:** información adicional asociada al **campo de** origen. Por ejemplo:
   - `Protocol Filter Agent`
   - `3489061114359050000`
-- **source:** el componente de Exchange Online responsable del evento. Por ejemplo:
+- **source:** el Exchange Online que es responsable del evento. Por ejemplo:
   - `AGENT`
   - `MAILBOXRULE`
   - `SMTP`
 - **event_id:** se corresponden con los **valores** de evento Message que se explican en la sección Buscar registros [relacionados para este](#find-related-records-for-this-message) mensaje.
-- **internal_message_id:** identificador de mensaje asignado por el servidor de Exchange Online que procesa actualmente el mensaje.
+- **internal_message_id:** identificador de mensaje asignado por el servidor Exchange Online que procesa actualmente el mensaje.
 - **recipient_address:** las direcciones de correo electrónico de los destinatarios del mensaje. Si hay varias direcciones de correo electrónico, se separan por punto y coma (;).
 - **recipient_count:** el número total de destinatarios del mensaje.
 - **related_recipient_address**: Se usa con , y eventos para mostrar otras direcciones de correo electrónico de `EXPAND` `REDIRECT` destinatarios `RESOLVE` asociadas con el mensaje.
@@ -262,15 +262,15 @@ Los informes extendidos disponibles (completados) están disponibles en la secci
   - **MAILBOXRULE:** contiene el **internal_message_id** del mensaje entrante que hizo que la regla bandeja de entrada generara el mensaje saliente. Para otros tipos de eventos, este campo suele estar en blanco.
 - **return_path:** la dirección de correo electrónico de devolución especificada por el comando **MAIL FROM** que envió el mensaje. Aunque este campo nunca está vacío, puede tener el valor de dirección del remitente nulo representado como `<>` .
 - **message_info:** información adicional sobre el mensaje. Por ejemplo:
-  - Fecha y hora de origen del mensaje en UTC y `DELIVER` `SEND` eventos. La fecha y hora de origen es la hora en que el mensaje entró por primera vez en la organización de Exchange Online. La fecha y hora UTC se representa en el formato de fecha y hora ISO 8601: , donde = año, = mes, = día, indica el principio del componente de `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` hora, `hh` = hora, `mm` = minuto, = `ss` segundo, = fracciones `fff` `Z` `Zulu` de un segundo y significa , que es otra forma de indicar UTC.
+  - Fecha y hora de origen del mensaje en UTC y `DELIVER` `SEND` eventos. La fecha y hora de origen es la hora en que el mensaje entró por primera vez en la Exchange Online organización. La fecha y hora UTC se representa en el formato de fecha y hora ISO 8601: , donde = año, = mes, = día, indica el principio del componente de `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` hora, `hh` = hora, `mm` = minuto, = `ss` segundo, = fracciones `fff` `Z` `Zulu` de un segundo y significa , que es otra forma de indicar UTC.
   - Errores de autenticación. Por ejemplo, es posible que vea el valor y el tipo de autenticación `11a` que se usó cuando se produjo el error de autenticación.
-- **tenant_id:** valor GUID que representa la organización de Exchange Online (por ejemplo, `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
+- **tenant_id:** un valor GUID que representa la Exchange Online organización (por ejemplo, `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
 - **original_server_ip:** la dirección IP del servidor original.
 - **custom_data:** contiene datos relacionados con tipos de eventos específicos. Para obtener más información, consulte las secciones siguientes.
 
 #### <a name="custom_data-values"></a>custom_data valores
 
-El **custom_data** para un evento lo usan diversos agentes de `AGENTINFO` Exchange Online para registrar detalles de procesamiento de mensajes. Algunos de los agentes más interesantes se describen en las secciones siguientes.
+El **custom_data** para un evento lo usan varios agentes Exchange Online `AGENTINFO` para registrar detalles de procesamiento de mensajes. Algunos de los agentes más interesantes se describen en las secciones siguientes.
 
 #### <a name="spam-filter-agent"></a>Agente de filtro de correo no deseado
 
@@ -344,8 +344,8 @@ Un **custom_data** que empieza por es del agente de regla de transporte para las
 |---|---|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y hora en UTC cuando se produjo la coincidencia de reglas.|
-|`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de acciones disponibles, vea [Acciones de regla de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|El modo de la regla. Los valores admitidos son:<ul><li>**Exigir:** se aplicarán todas las acciones de la regla.</li><li>**Prueba con sugerencias de directiva:**: se enviarán todas las acciones de sugerencia de directiva, pero no se actuarán otras acciones de aplicación.</li><li>**Probar sin sugerencias de** directiva: las acciones aparecerán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y las acciones de aplicación no se actuarán.</li></ul>|
+|`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de acciones disponibles, vea [Acciones de regla de flujo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)de correo en Exchange Online .|
+|`Mode=<Mode>`|El modo de la regla. Los valores admitidos son:<ul><li>**Exigir:** se aplicarán todas las acciones de la regla.</li><li>**Pruebe con la directiva Sugerencias:**: se enviarán las acciones de sugerencia de directiva, pero no se actuarán otras acciones de aplicación.</li><li>**Probar sin directiva Sugerencias:** las acciones aparecerán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y las acciones de cumplimiento no se actuarán.</li></ul>|
 |
 
 Un ejemplo **custom_data** valor de un mensaje que coincide con las condiciones de una regla de flujo de correo tiene este aspecto:

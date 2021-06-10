@@ -39,7 +39,7 @@ ms.locfileid: "51935034"
 En este artículo se proporciona información sobre cómo definir exclusiones que se aplican a los exámenes a petición y la protección y supervisión en tiempo real.
 
 >[!IMPORTANT]
->Las exclusiones descritas en este artículo no se aplican a otras funcionalidades de Defender para Endpoint en Mac, incluida la detección y respuesta de puntos de conexión (EDR). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar alertas de EDR y otras detecciones.
+>Las exclusiones descritas en este artículo no se aplican a otras funcionalidades de Defender para Endpoint en Mac, incluidas detección y respuesta de puntos de conexión (EDR). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones.
 
 Puedes excluir determinados archivos, carpetas, procesos y archivos abiertos por proceso de los exámenes de Defender para Endpoint en Mac.
 
@@ -56,7 +56,7 @@ Exclusión | Definición | Ejemplos
 ---|---|---
 Extensión de archivo | Todos los archivos con la extensión, en cualquier lugar del equipo | `.test`
 Archivo | Un archivo específico identificado por la ruta de acceso completa | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | Todos los archivos de la carpeta especificada (recursivamente) | `/var/log/`<br/>`/var/*/`
+Carpeta | Todos los archivos de la carpeta especificada (recursivamente) | `/var/log/`<br/>`/var/*/`
 Proceso | Un proceso específico (especificado por la ruta de acceso completa o el nombre de archivo) y todos los archivos abiertos por él | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:

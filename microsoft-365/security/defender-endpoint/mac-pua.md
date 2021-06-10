@@ -53,8 +53,8 @@ Cuando se detecta una PUA en un punto de conexión, Microsoft Defender para Endp
 La protección de PUA en Microsoft Defender para endpoint en macOS se puede configurar de una de las siguientes maneras:
 
 - **Desactivado:** la protección de LA PUA está deshabilitada.
-- **Auditoría:** los archivos PUA se notifican en los registros del producto, pero no en el Centro de seguridad de Microsoft Defender. No se presenta ninguna notificación al usuario y el producto no hace ninguna acción.
-- **Bloquear:** los archivos PUA se notifican en los registros del producto y en el Centro de seguridad de Microsoft Defender. El usuario recibe una notificación y el producto toma una acción.
+- **Auditoría:** los archivos PUA se notifican en los registros del producto, pero no en Centro de seguridad de Microsoft Defender. No se presenta ninguna notificación al usuario y el producto no hace ninguna acción.
+- **Bloquear:** los archivos PUA se notifican en los registros del producto y en Centro de seguridad de Microsoft Defender. El usuario recibe una notificación y el producto toma una acción.
 
 >[!WARNING]
 >De forma predeterminada, la protección pua está configurada en **modo auditoría.**

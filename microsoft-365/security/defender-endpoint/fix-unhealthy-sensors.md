@@ -45,7 +45,7 @@ Un dispositivo inactivo no está marcado necesariamente debido a un problema. La
 Si el dispositivo no se ha utilizado durante más de siete días por cualquier motivo, permanecerá en estado "Inactivo" en el portal.
 
 ### <a name="device-was-reinstalled-or-renamed"></a>El dispositivo se reinstaló o cambió el nombre
-Un dispositivo reinstalado o cambiado de nombre generará una nueva entidad de dispositivo en el Centro de seguridad de Microsoft Defender. La entidad de dispositivo anterior permanecerá con el estado "Inactivo" en el portal. Si reinstalaste un dispositivo e implementaste el paquete Defender for Endpoint, busca el nuevo nombre del dispositivo para comprobar que el dispositivo está informando normalmente.
+Un dispositivo reinstalado o cambiado de nombre generará una nueva entidad de dispositivo en Centro de seguridad de Microsoft Defender. La entidad de dispositivo anterior permanecerá con el estado "Inactivo" en el portal. Si reinstalaste un dispositivo e implementaste el paquete Defender for Endpoint, busca el nuevo nombre del dispositivo para comprobar que el dispositivo está informando normalmente.
 
 ### <a name="device-was-offboarded"></a>El dispositivo se ha desactivado
 Si el dispositivo se ha desactivado, seguirá apareciendo en la lista de dispositivos. Después de siete días, el estado de mantenimiento del dispositivo debe cambiar a inactivo.
@@ -86,10 +86,10 @@ Siga estas acciones para corregir problemas conocidos relacionados con un dispos
 - [Asegurarse de que el servicio de datos de diagnóstico está habilitado](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
 Si los dispositivos no están informando correctamente, es posible que deba comprobar que el servicio de datos de diagnóstico de Windows 10 está configurado para iniciarse automáticamente y se está ejecutando en el punto de conexión.
 
-- [Asegúrese de que el Antivirus de Microsoft Defender no está deshabilitado por la directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-Si los dispositivos ejecutan un cliente antimalware de terceros, el agente de Defender for Endpoint necesita que se habilite el controlador antimalware de inicio anticipado (ELAM) de Antivirus de Microsoft Defender.
+- [Asegúrese de que Antivirus de Microsoft Defender no está deshabilitada por la directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+Si los dispositivos ejecutan un cliente antimalware de terceros, el agente de Defender for Endpoint necesita que el controlador antimalware de inicio anticipado (ELAM) de Antivirus de Microsoft Defender esté habilitado.
 
 Si has tomado medidas correctivas y el estado del dispositivo sigue mal configurado, [abre un vale de soporte técnico.](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 - [Comprobar el estado del sensor en Microsoft Defender para endpoint](check-sensor-status.md)

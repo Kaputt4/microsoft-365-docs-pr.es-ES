@@ -49,7 +49,7 @@ Cada sección corresponde a un artículo independiente de esta solución.
 
 |Fase | Descripción | 
 |:-------|:-----|
-| [Fase 1: Preparar](prepare-deployment.md)| Obtenga información sobre lo que debe tener en cuenta al implementar Defender for Endpoint, como aprobaciones de partes interesadas, consideraciones del entorno, permisos de acceso y orden de adopción de capacidades. 
+| [Fase 1: Preparación](prepare-deployment.md)| Obtenga información sobre lo que debe tener en cuenta al implementar Defender for Endpoint, como aprobaciones de partes interesadas, consideraciones del entorno, permisos de acceso y orden de adopción de capacidades. 
 | [Fase 2: Configuración](production-deployment.md)|  Obtenga instrucciones sobre los pasos iniciales que debe seguir para tener acceso al portal, como validar licencias, completar el asistente de instalación y configuración de red. 
 | [Fase 3: Incorporación](onboarding.md) | Obtenga información sobre cómo usar anillos de implementación, herramientas de incorporación compatibles basadas en el tipo de extremo y cómo configurar las capacidades disponibles. 
 
@@ -75,7 +75,7 @@ Aunque Microsoft Defender para endpoint proporciona muchas funcionalidades, el o
 
 Funcionalidad | Descripción 
 :---|:---
-Detección y respuesta de puntos de conexión. | Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas.
+EDR | Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas.
 Protección de última generación | Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para endpoint usa la protección de última generación diseñada para detectar todo tipo de amenazas emergentes.
 Reducción de la superficie expuesta a ataques |  Proporcione la primera línea de defensa en la pila. Al garantizar que las opciones de configuración se establecen correctamente y se aplican técnicas de mitigación de vulnerabilidades, este conjunto de capacidades resiste los ataques y la explotación.
 
@@ -87,7 +87,7 @@ Todas estas funcionalidades están disponibles para microsoft defender para los 
 
 -   Uso de Microsoft Endpoint Manager y Microsoft Endpoint Manager para incorporar puntos de conexión en el servicio y configurar funcionalidades
 
--   Habilitar las capacidades de detección y respuesta de puntos de conexión (EDR) de Defender para endpoints
+-   Habilitar las funcionalidades de Defender detección y respuesta de puntos de conexión endpoint (EDR)
 
 -   Habilitar las capacidades de defender para la plataforma de protección de puntos de conexión (EPP)
 
@@ -107,8 +107,8 @@ Los siguientes están fuera del ámbito de esta guía de implementación:
 
 
 
-## <a name="see-also"></a>Ver también
-- [Fase 1: Preparar](prepare-deployment.md)
-- [Fase 2: Configurar](production-deployment.md)
+## <a name="see-also"></a>Consulte también
+- [Fase 1: Preparación](prepare-deployment.md)
+- [Fase 2: Configuración](production-deployment.md)
 - [Fase 3: Incorporación](onboarding.md)
 - [Planeación de la implementación](deployment-strategy.md)

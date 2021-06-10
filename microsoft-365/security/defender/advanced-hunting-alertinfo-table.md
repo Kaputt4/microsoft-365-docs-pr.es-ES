@@ -37,7 +37,7 @@ ms.locfileid: "51933702"
 
 
 
-La tabla del esquema de búsqueda avanzada contiene información sobre alertas de `AlertInfo` Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La tabla del esquema de búsqueda avanzada contiene información sobre alertas de Microsoft Defender para `AlertInfo` endpoint, Microsoft Defender para Office 365, [](advanced-hunting-overview.md) Microsoft Cloud App Security y Microsoft Defender para Identity. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 

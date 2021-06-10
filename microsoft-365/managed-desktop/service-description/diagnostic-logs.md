@@ -1,5 +1,5 @@
 ---
-title: Registros de diagnóstico
+title: Registro de diagnóstico
 description: Registros que pueden recopilarse de dispositivos durante la solución de problemas y cómo se almacenan
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -16,7 +16,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52272900"
 ---
-# <a name="diagnostic-logs"></a>Registros de diagnóstico
+# <a name="diagnostic-logs"></a>Registro de diagnóstico
 
 Cuando solucionemos un problema en un dispositivo administrado por Escritorio administrado de Microsoft, ya sea uno que haya notificado o uno identificado por nuestro servicio, es posible que tendrán que recopilar ciertos registros de diagnóstico del dispositivo sin intervención del usuario. No recopilamos ningún contenido o información generado por el usuario de directorios de usuario. Solo recopilamos datos de diagnóstico y registro que tienen que ver con el estado y el estado del dispositivo.
 

@@ -50,7 +50,7 @@ Para obtener una lista completa, vea [About Computer Enrollment](https://docs.ja
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>Método de inscripción 1: Invitaciones de inscripción
 
-1. En el panel de Jamf Pro, vaya a **Invitaciones de inscripción**.
+1. En el panel de Pro Jamf, vaya a **Invitaciones de inscripción**.
 
     ![Imagen de las opciones de configuración1](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
@@ -80,7 +80,7 @@ Para obtener una lista completa, vea [About Computer Enrollment](https://docs.ja
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>Método enrollment 2: Prestage Enrollments
 
-1. En el panel de Jamf Pro, vaya a **Prestage enrollments**.
+1. En el panel de Pro Jamf, vaya a **Prestage enrollments**.
 
     ![Imagen de configuración9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
@@ -90,24 +90,24 @@ Para obtener una lista completa, vea [About Computer Enrollment](https://docs.ja
 
 1. Seleccione **Continuar** e instale el certificado de ca desde una **ventana preferencias del** sistema.
 
-    ![Imagen de inscripción de Jamf Pro1](images/jamfpro-ca-certificate.png)
+    ![Imagen de Jamf Pro enrollment1](images/jamfpro-ca-certificate.png)
 
 2. Una vez instalado el certificado de entidad de certificación, vuelva a la ventana del explorador y seleccione **Continuar** e instale el perfil mdm. 
 
-    ![Imagen de inscripción de Jamf Pro2](images/jamfpro-install-mdm-profile.png)
+    ![Imagen de Jamf Pro enrollment2](images/jamfpro-install-mdm-profile.png)
 
 3. Selecciona **Permitir** descargas desde JAMF.
 
-    ![Imagen de inscripción de Jamf Pro3](images/jamfpro-download.png)
+    ![Imagen de Jamf Pro enrollment3](images/jamfpro-download.png)
 
 4. Selecciona **Continuar** para continuar con la instalación del perfil MDM. 
 
-    ![Imagen de inscripción de Jamf Pro4](images/jamfpro-install-mdm.png)
+    ![Imagen de Jamf Pro enrollment4](images/jamfpro-install-mdm.png)
 
 5. Selecciona **Continuar** para instalar el perfil mdm.
 
-    ![Imagen de la inscripción de Jamf Pro5](images/jamfpro-mdm-unverified.png)
+    ![Imagen de Jamf Pro enrollment5](images/jamfpro-mdm-unverified.png)
 
 6. Seleccione **Continuar**  para completar la configuración. 
 
-    ![Imagen de inscripción de Jamf Pro6](images/jamfpro-mdm-profile.png)
+    ![Imagen de Jamf Pro enrollment6](images/jamfpro-mdm-profile.png)

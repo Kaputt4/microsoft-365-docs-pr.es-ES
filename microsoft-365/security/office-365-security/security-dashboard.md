@@ -3,7 +3,7 @@ title: Introducción al panel de seguridad
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 description: Use el nuevo Panel de seguridad para revisar el Office 365 protección contra amenazas y ver y actuar en alertas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71c077853c8dbb68b78c8073f650bcb2df4d1b9a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246458"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274417"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -71,7 +71,7 @@ Los detalles dependen de si la suscripción Microsoft 365 incluye [Exchange Onli
 |Si la suscripción incluye...|Verá estos detalles|
 |---|---|
 |EOP pero no Microsoft Defender para Office 365|Correo electrónico malintencionado detectado y bloqueado por EOP.<p> Consulte [Informe de estado de protección contra amenazas (EOP).](view-email-security-reports.md#threat-protection-status-report)|
-|Microsoft Defender para Office 365|Contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por EOP y Defender para Office 365 <p> Recuento agregado de mensajes de correo electrónico únicos con [](zero-hour-auto-purge.md)contenido malintencionado bloqueado por el motor antimalware, purga automática de cero horas y Defender para características de Office 365 (incluidos los vínculos [de Caja fuerte,](safe-links.md)los datos adjuntos de [Caja fuerte](safe-attachments.md)y la suplantación de identidad en Defender [para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Consulte [Informe de estado de protección contra amenazas](view-reports-for-mdo.md#threat-protection-status-report).|
+|Microsoft Defender para Office 365|Contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por EOP y Defender para Office 365 <p> Recuento agregado de mensajes de correo electrónico únicos con [](zero-hour-auto-purge.md)contenido malintencionado bloqueado por el motor antimalware, purga automática de cero horas y Defender para características de Office 365 (incluidos los vínculos [de Caja fuerte,](safe-links.md)los datos adjuntos de [Caja fuerte](safe-attachments.md)y la suplantación de identidad en Defender [para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Consulte [Informe de estado de protección contra amenazas](view-reports-for-mdo.md#threat-protection-status-report).|
 
 Para ver o obtener acceso al widget Estado de protección contra amenazas, debe tener permisos para ver Defender para Office 365 informes. Para obtener más información, vea [¿Qué permisos son necesarios para ver los](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports) informes de defender Office 365 datos?
 

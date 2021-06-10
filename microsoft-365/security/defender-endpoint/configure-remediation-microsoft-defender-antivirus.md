@@ -52,7 +52,7 @@ También puede usar el [ `Set-MpPreference` cmdlet de PowerShell](/powershell/mo
 
 |Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
-|Examinar | Crear un punto de restauración del sistema | Se creará un punto de restauración del sistema cada día antes de intentar limpiar o examinar | Deshabilitada|
+|Examinar | Crear un punto de restauración del sistema | Se creará un punto de restauración del sistema cada día antes de intentar limpiar o examinar | Deshabilitado|
 |Examinar | Activar la eliminación de elementos de la carpeta historial de examen | Especificar cuántos días deben mantenerse los elementos en el historial de examen | 30 días |
 |Raíz | Desactivar la corrección rutinaria | Puede especificar si Antivirus de Microsoft Defender corrige automáticamente las amenazas o si debe preguntar al usuario del extremo qué hacer. | Deshabilitado (las amenazas se corrigen automáticamente) |
 |Cuarentena | Configurar la eliminación de elementos de la carpeta cuarentena | Especificar cuántos días deben mantenerse en cuarentena los elementos antes de quitarse | 90 días |
@@ -68,7 +68,7 @@ También puede usar el [ `Set-MpPreference` cmdlet de PowerShell](/powershell/mo
 
 Vea también [Configure remediation-required scheduled full Antivirus de Microsoft Defender scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) for more remediation-related settings.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar opciones de análisis del Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)

@@ -51,7 +51,7 @@ La notificación por correo electrónico incluye información básica sobre la a
 Puede crear reglas que determinen los dispositivos y las gravedades de alerta para enviar notificaciones por correo electrónico y los destinatarios de las notificaciones.
 
 
-1. En el panel de navegación, seleccione **Configuración Notificaciones** de  >  **correo electrónico**.
+1. En el panel de navegación, **seleccione Configuración** notificaciones de  >  **correo electrónico**.
 
 2. Haga clic **en Agregar elemento**.
 

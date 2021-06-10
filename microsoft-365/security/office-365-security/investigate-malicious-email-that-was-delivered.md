@@ -36,7 +36,7 @@ ms.locfileid: "51933378"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender para Office 365](defender-for-office-365.md) le permite investigar actividades que ponen en riesgo a los usuarios de su organización y tomar medidas para proteger su organización. Por ejemplo, si forma parte del equipo de seguridad de su organización, puede buscar e investigar mensajes de correo electrónico sospechosos que se entregaron. Para ello, use el Explorador de amenazas [(o detecciones en](threat-explorer.md)tiempo real).
+[Microsoft Defender para Office 365](defender-for-office-365.md) permite investigar actividades que ponen en riesgo a los usuarios de la organización y tomar medidas para proteger su organización. Por ejemplo, si forma parte del equipo de seguridad de su organización, puede buscar e investigar mensajes de correo electrónico sospechosos que se entregaron. Para ello, use el Explorador de amenazas [(o detecciones en](threat-explorer.md)tiempo real).
 
 > [!NOTE]
 > Vaya al artículo de corrección [aquí](remediate-malicious-email-delivered-office-365.md).
@@ -45,7 +45,7 @@ ms.locfileid: "51933378"
 
 Asegúrese de que se cumplen los siguientes requisitos:
 
-- Su organización tiene [Microsoft Defender para Office 365](defender-for-office-365.md) y las licencias se asignan a los [usuarios.](../../admin/manage/assign-licenses-to-users.md)
+- Su organización tiene [Microsoft Defender para Office 365](defender-for-office-365.md) y las licencias se asignan a los [usuarios](../../admin/manage/assign-licenses-to-users.md).
 
 - [el registro de auditoría](../../compliance/turn-audit-log-search-on-or-off.md) está activado para su organización.
 
@@ -63,14 +63,14 @@ Para realizar determinadas acciones, como ver encabezados de mensaje o descargar
 |---|---|---|
 |Usar el Explorador de amenazas (y detecciones en tiempo real) para analizar amenazas |Administrador global <p> Administrador de seguridad <p> Lector de seguridad|No|
 |Usar el Explorador de amenazas (y detecciones en tiempo real) para ver encabezados de mensajes de correo electrónico, así como obtener una vista previa y descargar mensajes de correo electrónico en cuarentena|Administrador global <p> Administrador de seguridad <p> Lector de seguridad|No|
-|Usar el Explorador de amenazas para ver encabezados, obtener una vista previa del correo electrónico (solo en la página de entidad de correo electrónico) y descargar mensajes de correo electrónico entregados a buzones de correo|Administrador global <p> Administrador de seguridad <p> Lector de seguridad <p> Preview|Sí|
+|Usar el Explorador de amenazas para ver encabezados, obtener una vista previa del correo electrónico (solo en la página de entidad de correo electrónico) y descargar mensajes de correo electrónico entregados a buzones de correo|Administrador global <p> Administrador de seguridad <p> Lector de seguridad <p> Versión preliminar|Sí|
 |
 
 > [!NOTE]
-> *La* vista previa es un rol y no un grupo de funciones; el rol Vista previa debe agregarse a un grupo de roles existente para Office 365 (en <https://protection.office.com> ). Vaya a **Permisos y,** a continuación, edite un grupo de roles existente o agregue un nuevo grupo de funciones con el **rol Vista** previa asignado.
-> El rol Administrador global se asigna al Centro de administración de Microsoft 365 ( ), y los roles Administrador de seguridad y Lector de seguridad se asignan en el Centro de <https://admin.microsoft.com> seguridad & cumplimiento ( <https://protection.office.com> ). Para obtener más información sobre roles y permisos, vea Permisos en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+> *La* vista previa es un rol y no un grupo de funciones; el rol Vista previa debe agregarse a un grupo de funciones existente para Office 365 (at <https://protection.office.com> ). Vaya a **Permisos y,** a continuación, edite un grupo de roles existente o agregue un nuevo grupo de funciones con el **rol Vista** previa asignado.
+> El rol Administrador global se asigna al centro de administración de Microsoft 365 ( ), y los roles Administrador de seguridad y Lector de seguridad se asignan en el Centro de <https://admin.microsoft.com> seguridad & cumplimiento ( <https://protection.office.com> ). Para obtener más información sobre roles y permisos, vea Permisos en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-Entendemos que la vista previa y la descarga de correo electrónico son actividades confidenciales, por lo que la auditoría está habilitada para estas. Una vez que un administrador realiza estas actividades en correos electrónicos, los registros de auditoría se generan para la misma y se pueden ver en el Centro de seguridad y & cumplimiento de Office 365 ( <https://protection.office.com> ). Vaya a **Búsqueda de** registro de auditoría  >  **de búsqueda** y filtre el nombre de administrador en la sección Búsqueda. Los resultados filtrados mostrarán la **actividad AdminMailAccess**. Seleccione una fila para ver detalles en la **sección Más información** sobre el correo electrónico descargado o con vista previa.
+Entendemos que la vista previa y la descarga de correo electrónico son actividades confidenciales, por lo que la auditoría está habilitada para estas. Una vez que un administrador realiza estas actividades en mensajes de correo Office 365 electrónico, los registros de auditoría se generan para el mismo y se pueden ver en el Centro de seguridad & cumplimiento ( <https://protection.office.com> ). Vaya a **Búsqueda de** registro de auditoría  >  **de búsqueda** y filtre el nombre de administrador en la sección Búsqueda. Los resultados filtrados mostrarán la **actividad AdminMailAccess**. Seleccione una fila para ver detalles en la **sección Más información** sobre el correo electrónico descargado o con vista previa.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Buscar correo electrónico sospechoso que se entregó
 
@@ -79,7 +79,7 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
 > [!NOTE]
 > Actualmente, las búsquedas predeterminadas en el Explorador no incluyen elementos zapped.  Esto se aplica a todas las vistas, por ejemplo, vistas de malware o phish. Para incluir elementos zapped, debe agregar un conjunto de acciones **de** entrega para incluir **Removed by ZAP**. Si incluye todas las opciones, verá todos los resultados de la acción de entrega, incluidos los elementos zapped.
 
-1. **Vaya al Explorador de amenazas:** vaya a e inicie sesión con su cuenta laboral o <https://protection.office.com> educativa para Office 365. Esto le llevará al Centro de seguridad & cumplimiento.
+1. **Vaya al Explorador de amenazas:** vaya a e inicie sesión con su cuenta de trabajo o <https://protection.office.com> escuela para Office 365. Esto le llevará al Centro de seguridad & cumplimiento.
 
 2. En el inicio rápido de navegación izquierdo, elija **Explorador de administración de** \> **amenazas.**
 
@@ -93,7 +93,7 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
 
     La *vista Malware* es actualmente el valor predeterminado y captura correos electrónicos donde se detecta una amenaza de malware. La *vista Phish* funciona de la misma manera, para phishing.
 
-    Sin embargo, *todas las vistas* de correo electrónico enumeran todos los correos recibidos por la organización, independientemente de si se detectaron o no amenazas. Como puede imaginar, se trata de una gran cantidad de datos, por lo que esta vista muestra un marcador de posición que pide que se aplique un filtro. (Esta vista solo está disponible para los clientes de Defender para Office 365 P2).
+    Sin embargo, *todas las vistas* de correo electrónico enumeran todos los correos recibidos por la organización, independientemente de si se detectaron o no amenazas. Como puede imaginar, se trata de una gran cantidad de datos, por lo que esta vista muestra un marcador de posición que pide que se aplique un filtro. (Esta vista solo está disponible para Defender para Office 365 clientes de P2).
 
     *La vista Envíos* muestra todos los correos enviados por el administrador o el usuario que se han notificado a Microsoft.
 
@@ -122,7 +122,7 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
     - **Entregado:** el correo electrónico se entregó a la bandeja de entrada o carpeta de un usuario y el usuario puede acceder directamente a él.
     - **Correo no** deseado (entregado a la correo no deseado): el correo electrónico se envió a la carpeta de correo no deseado del usuario o a la carpeta eliminada y el usuario tiene acceso a los mensajes de correo electrónico en su carpeta Correo no deseado o Eliminado.
     - **Bloqueado:** cualquier mensaje de correo electrónico que se ponga en cuarentena, que falle o que se haya descartado. (Esto es completamente inaccesible para el usuario).
-    - **Reemplazado:** cualquier correo electrónico en el que los datos adjuntos malintencionados se reemplazan por archivos .txt que den como que los datos adjuntos son malintencionados
+    - **Reemplazado:** cualquier correo electrónico en el que los datos adjuntos malintencionados se reemplazan por .txt que los datos adjuntos son malintencionados.
 
     **Ubicación de** entrega: el filtro ubicación de entrega está disponible para ayudar a los administradores a comprender dónde terminó el correo malintencionado sospechoso y qué acciones se llevaron a cabo en él. Los datos resultantes se pueden exportar a hoja de cálculo. Las ubicaciones de entrega posibles son:
 
@@ -179,7 +179,7 @@ La acción de entrega es la acción realizada en un correo electrónico debido a
 
 - **Bloqueado:** cualquier mensaje de correo electrónico que se ponga en cuarentena, que falle o que se haya descartado. (Esto es completamente inaccesible para el usuario).
 
-- **Reemplazado:** cualquier correo electrónico en el que los datos adjuntos malintencionados se reemplazan por archivos .txt que den como que los datos adjuntos son malintencionados.
+- **Reemplazado:** cualquier correo electrónico en el que los datos adjuntos malintencionados se reemplazan .txt los archivos adjuntos que den a los datos adjuntos son malintencionados.
 
 La ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción realizada cuando se encuentra un correo con problemas. Estos son los posibles valores de la ubicación de entrega:
 

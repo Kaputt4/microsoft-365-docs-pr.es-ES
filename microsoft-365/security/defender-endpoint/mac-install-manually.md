@@ -47,14 +47,14 @@ Antes de empezar, consulta la página principal de Microsoft Defender para Endpo
 
 ## <a name="download-installation-and-onboarding-packages"></a>Descargar paquetes de instalación e incorporación
 
-Descargue los paquetes de instalación e incorporación del Centro de seguridad de Microsoft Defender:
+Descargue los paquetes de instalación e incorporación de Centro de seguridad de Microsoft Defender:
 
-1. En el Centro de seguridad de Microsoft Defender, vaya **a Configuración > Administración de dispositivos > incorporación**.
+1. En Centro de seguridad de Microsoft Defender, vaya **a Configuración > Device Management > Onboarding**.
 2. En la sección 1 de la página, establezca el sistema operativo en **macOS** y el método Deployment en **Script local**.
 3. En la sección 2 de la página, seleccione **Descargar paquete de instalación**. Guárdelo como wdav.pkg en un directorio local.
 4. En la sección 2 de la página, seleccione **Descargar paquete de incorporación**. Guárdelo WindowsDefenderATPOnboardingPackage.zip en el mismo directorio.
 
-    ![Captura de pantalla del Centro de seguridad de Microsoft Defender](images/atp-portal-onboarding-page.png)
+    ![Centro de seguridad de Microsoft Defender captura de pantalla](images/atp-portal-onboarding-page.png)
 
 5. Desde un símbolo del sistema, compruebe que tiene los dos archivos.
     
@@ -107,11 +107,11 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 5. Repita los pasos 3 & 4 para todas las extensiones del sistema distribuidas con Microsoft Defender para Endpoint en Mac.
 
-6. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en Mac inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. Cuando se le pida que conceda a Microsoft Defender permisos de extremo para filtrar el tráfico de red, seleccione **Permitir**.
+6. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en Mac inspecciona el tráfico de sockets e informa de esta información al portal de Centro de seguridad de Microsoft Defender. Cuando se le pida que conceda a Microsoft Defender permisos de extremo para filtrar el tráfico de red, seleccione **Permitir**.
 
     ![Preferencias de seguridad de extensión del sistema2](images/big-sur-install-4.png)
 
-7. Abra **System Preferences** Security & Privacidad y vaya a la pestaña Privacidad. Conceda permiso de acceso en disco completo a Atp de Microsoft Defender y Extensión de seguridad de punto de conexión de ATP de Microsoft  >   **Defender.**   
+7. Abra **Preferencias** del sistema Seguridad & privacidad y vaya a la pestaña Privacidad. Conceda permiso de acceso en disco completo a ATP de Microsoft Defender y ATP de Microsoft Defender  >   Endpoint Security **Extension**.   
 
     ![Acceso en disco completo](images/big-sur-install-5.png)
 
@@ -170,11 +170,11 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
         mdatp threat list
         ```
 
-3. Ejecute una prueba de detección de EDR para comprobar que el dispositivo está correctamente incorporado e informando al servicio. Realice los pasos siguientes en el dispositivo recién incorporado:
+3. Ejecute una EDR de detección para comprobar que el dispositivo está correctamente incorporado e informando al servicio. Realice los pasos siguientes en el dispositivo recién incorporado:
 
    1. En el explorador, como Microsoft Edge para Mac o Safari.
 
-   1. Descargue MDATP MacOS DIY.zip https://aka.ms/mdatpmacosdiy y extraiga.
+   1. Descargue MDATP macOS DIY.zip https://aka.ms/mdatpmacosdiy y extraiga.
 
       Es posible que se le pida lo siguiente:
 
@@ -185,40 +185,40 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 5. Abra **Descargas**.
 
-6. Debería ver **MDATP MacOS DIY**.
+6. Debería ver el **MDATP de bricolaje de MacOS**.
 
    > [!TIP]
    > Si hace doble clic, recibirá el siguiente mensaje:
    > 
-   > > **"MDATP MacOS DIY" no se puede abrir porque el desarrollador no puede ser verificador.**<br/>
+   > > **"MDATP DE BRICOLAJE de MacOS" no se puede abrir porque el desarrollador no puede ser verificador.**<br/>
    > > macOS no puede comprobar que esta aplicación está libre de malware.<br/>
    > > **\[ Pasar a \] Cancelar papelera** **\[ \]** 
   
 7. Haga clic en **Cancelar**.
 
-8. Haga clic con el botón **secundario en MDATP MacOS DIY** y, a continuación, haga clic en **Abrir**. 
+8. Haga clic con el **botón MDATP en MacOS BRICOLAJE** y, a continuación, haga clic **en Abrir**. 
 
     El sistema debe mostrar el siguiente mensaje:
 
-    > **macOS no puede comprobar el desarrollador de **MDATP MacOS DIY**. ¿Está seguro de que desea abrirlo?**<br/>
+    > **macOS no puede comprobar el desarrollador de **MDATP KIT DE BRICOLAJE de MacOS**. ¿Está seguro de que desea abrirlo?**<br/>
     > Al abrir esta aplicación, invalidará la seguridad del sistema, que puede exponer su equipo y su información personal a malware que pueda dañar su Mac o poner en peligro su privacidad.
 
 10. Haga clic en **Open** (Abrir).
 
     El sistema debe mostrar el siguiente mensaje:
 
-    > Microsoft Defender para endpoint: archivo de prueba de bricolaje de macOS EDR<br/>
-    > La alerta correspondiente estará disponible en el portal MDATP.
+    > Microsoft Defender para endpoint: macOS EDR de prueba DE BRICOLAJE<br/>
+    > La alerta correspondiente estará disponible en el MDATP portal.
 
 11. Haga clic en **Open** (Abrir).
 
-    En unos minutos se debe generar una alerta denominada "alerta de prueba de macOS EDR".
+    En unos minutos se debe generar una alerta denominada "macOS EDR Test Alert".
 
-12. Vaya al Centro de seguridad de Microsoft Defender ( https://SecurityCenter.microsoft.com) .
+12. Vaya a Centro de seguridad de Microsoft Defender ( https://SecurityCenter.microsoft.com) .
 
 13. Vaya a la cola de alertas.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Ejemplo de una alerta de prueba de macOS EDR que muestra gravedad, categoría, origen de detección y un menú de acciones contraído.":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Ejemplo de una alerta de prueba EDR macOS que muestra gravedad, categoría, origen de detección y un menú de acciones contraído.":::
     
     Consulta los detalles de la alerta y la escala de tiempo del dispositivo y realiza los pasos de investigación habituales.
 

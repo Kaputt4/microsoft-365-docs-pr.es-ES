@@ -29,7 +29,7 @@ ms.locfileid: "51934338"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
@@ -54,18 +54,18 @@ En la navegación superior puede:
 
 Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener una vista más centrada de las alertas.
 
-### <a name="severity"></a>Severity
+### <a name="severity"></a>Gravedad
 
 Gravedad de alerta | Descripción
 :---|:---
 Alto </br>(Rojo) | Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.
-Mediano </br>(Naranja) | Alertas de comportamientos de detección de puntos de conexión y respuesta posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
+Medio </br>(Naranja) | Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
 Bajo </br>(Amarillo) | Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.
 Informativo </br>(Gris) | Alertas que podrían no considerarse nocivas para la red, pero que pueden aumentar el conocimiento de la seguridad de la organización en posibles problemas de seguridad.
 
 #### <a name="understanding-alert-severity"></a>Descripción de la gravedad de la alerta
 
-Las gravedades de alerta de Microsoft Defender Antivirus (Antivirus de Microsoft Defender) y Defender para endpoints son diferentes porque representan distintos ámbitos.
+Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) y Defender para las gravedades de alerta de extremo son diferentes porque representan distintos ámbitos.
 
 La gravedad de la amenaza antivirus de Microsoft Defender representa la gravedad absoluta de la amenaza detectada (malware) y se asigna en función del riesgo potencial para el dispositivo individual, si está infectado.
 
@@ -121,7 +121,7 @@ Puede elegir entre mostrar las alertas que se le han asignado o la automatizaci�
 
 ### <a name="detection-source"></a>Origen de detección
 
-Seleccione el origen que desencadenó la detección de alertas. Los participantes de vista previa de Microsoft Threat Experts ahora pueden filtrar y ver detecciones desde el nuevo servicio de búsqueda administrado por expertos en amenazas.
+Seleccione el origen que desencadenó la detección de alertas. Expertos en amenazas de Microsoft los participantes de vista previa ahora pueden filtrar y ver detecciones desde el nuevo servicio de búsqueda administrado por expertos en amenazas.
 
 >[!NOTE]
 >El filtro Antivirus solo aparecerá si los dispositivos usan Antivirus de Microsoft Defender como el producto antimalware de protección en tiempo real predeterminado.
@@ -135,7 +135,7 @@ Seleccione el origen que desencadenó la detección de alertas. Los participante
 | TI personalizada                         | CustomerTI                 |
 | EDR                               | WindowsDefenderAtp         |
 | Microsoft 365 Defender            | MTP                        |
-| Microsoft Defender para Office 365 | OfficeATP                  |
+| Microsoft Defender para Office 365 | OfficeATP                  |
 | Expertos en amenazas de Microsoft          | ThreatExperts              |
 | SmartScreen                       | WindowsDefenderSmartScreen |
 

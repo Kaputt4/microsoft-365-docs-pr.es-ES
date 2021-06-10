@@ -34,7 +34,7 @@ ms.locfileid: "51934818"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. Aunque [Microsoft 365 Defender](microsoft-365-defender.md) proporciona muchas funcionalidades que detectan y bloquean las actividades de intrusión asociadas y ransomware, realizar comprobaciones proactivas en busca de signos de peligro puede ayudar a mantener la red protegida.
+Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. Aunque [Microsoft 365 Defender](microsoft-365-defender.md) proporciona muchas capacidades que detectan y bloquean las actividades de intrusión asociadas y ransomware, realizar comprobaciones proactivas para detectar signos de peligro puede ayudar a proteger la red.
 
 > [Leer sobre ransomware operado por humanos](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
@@ -43,7 +43,7 @@ Con [la búsqueda avanzada](advanced-hunting-overview.md) en Microsoft 365 Defen
 ## <a name="signs-of-ransomware-activity"></a>Signos de actividad ransomware
 Los investigadores de seguridad de Microsoft han observado varios artefactos comunes pero sutiles en muchas campañas de ransomware iniciadas por intrusos sofisticados. Estos signos implican principalmente el uso de herramientas del sistema para prepararse para el cifrado, evitar la detección y borrar evidencias forenses.
 
-| Actividad ransomware | Herramientas comunes | Intent |
+| Actividad de ransomware | Herramientas comunes | Intent |
 |--|--|--|
 | Detener procesos | _taskkill.exe_, _net stop_ | Asegúrese de que los archivos destinados al cifrado no están bloqueados por varias aplicaciones. |
 | Desactivar servicios | _sc.exe_ | - Asegúrese de que los archivos destinados al cifrado no están bloqueados por varias aplicaciones.<br>- Impedir que el software de seguridad interrumpa el cifrado y otra actividad ransomware.<br>- Impedir que el software de copia de seguridad cree copias recuperables.  |

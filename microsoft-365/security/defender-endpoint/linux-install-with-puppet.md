@@ -51,13 +51,13 @@ Además, para la implementación de Puppet, debes familiarizarte con las tareas 
 
 ## <a name="download-the-onboarding-package"></a>Descargar el paquete de incorporación
 
-Descargue el paquete de incorporación del Centro de seguridad de Microsoft Defender:
+Descargue el paquete de incorporación desde Centro de seguridad de Microsoft Defender:
 
-1. En el Centro de seguridad de Microsoft Defender, vaya **a Configuración > Administración de dispositivos > incorporación**.
+1. En Centro de seguridad de Microsoft Defender, vaya **a Configuración > Device Management > Onboarding**.
 2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de** administración de configuración de Linux preferida como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Captura de pantalla del Centro de seguridad de Microsoft Defender](images/atp-portal-onboarding-linux-2.png)
+    ![Centro de seguridad de Microsoft Defender captura de pantalla](images/atp-portal-onboarding-linux-2.png)
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo. 
 

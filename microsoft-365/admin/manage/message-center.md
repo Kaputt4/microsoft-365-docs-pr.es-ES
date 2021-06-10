@@ -58,7 +58,7 @@ También puedes usar la aplicación [Microsoft 365 administración](https://go.m
 Para cancelar la suscripción a los correos electrónicos del Centro de mensajes, consulte Cancelar la suscripción a los correos [electrónicos del Centro](#unsubscribe-from-message-center-emails) de mensajes en este artículo.
 
   
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 |**Pregunta**|**Respuesta**|
 |:-----|:-----|

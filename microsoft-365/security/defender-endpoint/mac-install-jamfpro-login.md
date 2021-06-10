@@ -37,15 +37,15 @@ ms.locfileid: "51935586"
 
 1. Escriba sus credenciales.
 
-    ![Imagen del panel de Jamf Pro1](images/jamf-pro-portal1.png)
+    ![Imagen de Jamf Pro dashboard1](images/jamf-pro-portal1.png)
 
 2. Seleccione **Equipos**.
 
-    ![Imagen del panel de Jamf Pro2](images/jamf-pro-dashboard.png)
+    ![Imagen de Jamf Pro dashboard2](images/jamf-pro-dashboard.png)
 
 3. Verá la configuración que está disponible.
 
-     ![Imagen del panel de Jamf Pro3](images/jamfpro-settings.png)
+     ![Imagen de Jamf Pro dashboard3](images/jamfpro-settings.png)
 
 
 ## <a name="next-step"></a>Paso siguiente

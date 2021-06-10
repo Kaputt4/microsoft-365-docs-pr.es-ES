@@ -117,7 +117,7 @@ Si no tiene idea de con quién ponerse en contacto en su trabajo o escuela para 
 
 Mientras esté en el Centro de administración, puede  enviar comentarios a Microsoft sobre su experiencia seleccionando Dar comentarios justo al lado del botón ¿Necesita **ayuda?** en la parte inferior de cada página. Díganos lo que le gusta y lo que podríamos hacer mejor. Además, puede obtener encuestas emergentes de vez en cuando preguntando sobre sus impresiones generales o una experiencia determinada que se acaba de publicar. También puede enviar comentarios al final de este artículo seleccionando **¿Esta información fue útil?**
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ¿No ve sus preguntas contestadas aquí? Vaya a la **sección** Comentarios de la parte inferior de esta página y haga su pregunta. 
   

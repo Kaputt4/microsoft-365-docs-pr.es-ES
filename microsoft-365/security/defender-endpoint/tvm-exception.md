@@ -1,7 +1,7 @@
 ---
-title: 'Crear y ver excepciones para recomendaciones de seguridad: administración de amenazas y vulnerabilidades'
-description: Crear y supervisar excepciones para recomendaciones de seguridad en la administración de amenazas y vulnerabilidades.
-keywords: Microsoft Defender para la corrección de endpoint tvm, Microsoft Defender para Endpoint tvm, administración de amenazas y vulnerabilidades, administración de vulnerabilidades de & amenazas, corrección de la administración de vulnerabilidades de &, intune de corrección de tvm, sccm de corrección de tvm
+title: 'Crear y ver excepciones para recomendaciones de seguridad: Administración de amenazas y vulnerabilidades'
+description: Cree y supervise excepciones para las recomendaciones de seguridad en Administración de amenazas y vulnerabilidades.
+keywords: Microsoft Defender para la corrección de endpoint tvm, Microsoft Defender para Endpoint tvm, Administración de amenazas y vulnerabilidades, threat & administración de vulnerabilidades, threat & administración de vulnerabilidades remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,14 +25,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933750"
 ---
-# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: administración de amenazas y vulnerabilidades
+# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -62,9 +62,9 @@ Aplica la excepción a todos los grupos de dispositivos actuales o elige grupos 
 
 #### <a name="filtered-views"></a>Vistas filtradas
 
-Si has filtrado por grupo de dispositivos en cualquiera de las páginas de administración de amenazas y vulnerabilidades, solo los grupos de dispositivos filtrados aparecerán como opciones.
+Si has filtrado por grupo de dispositivos en cualquiera de las Administración de amenazas y vulnerabilidades, solo los grupos de dispositivos filtrados aparecerán como opciones.
 
-Este es el botón para filtrar por grupo de dispositivos en cualquiera de las páginas de administración de amenazas y vulnerabilidades: 
+Este es el botón para filtrar por grupo de dispositivos en cualquiera de las Administración de amenazas y vulnerabilidades: 
 
 ![Mostrar el filtro de grupos de dispositivos seleccionados.](images/tvm-selected-device-groups.png)
 
@@ -128,7 +128,7 @@ Selecciona el grupo de dispositivos específico para cancelar la excepción. Apa
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>Ver impacto después de aplicar excepciones
 
-En la página Recomendaciones de seguridad, seleccione **Personalizar** columnas y active las **casillas Dispositivos expuestos (después** de excepciones) e **Impacto (después de excepciones).**
+En la página Recomendaciones seguridad,  seleccione Personalizar columnas y active las **casillas dispositivos expuestos (después** de excepciones) e **Impacto (después de excepciones).**
 
 ![Mostrar opciones de personalizar columnas.](images/tvm-after-exceptions.png)
 
@@ -140,7 +140,7 @@ El impacto (después de las excepciones) muestra el impacto restante en la puntu
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Información general sobre amenazas administración de vulnerabilidades amenazas](next-gen-threat-and-vuln-mgt.md)
 - [Corregir puntos vulnerables](tvm-remediation.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)
 - [Puntuación de exposición](tvm-exposure-score.md)

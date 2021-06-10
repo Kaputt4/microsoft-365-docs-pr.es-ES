@@ -1,7 +1,7 @@
 ---
 title: Puntuación de seguridad de Microsoft para dispositivos
 description: La puntuación de los dispositivos muestra el estado de configuración de seguridad colectiva de los dispositivos en todos los controles de aplicación, sistema operativo, red, cuentas y seguridad.
-keywords: Puntuación segura de Microsoft para dispositivos, Puntuación segura de Microsoft Defender para dispositivos, puntuación segura, puntuación de configuración, administración de amenazas y vulnerabilidades, controles de seguridad, oportunidades de mejora, puntuación de configuración de seguridad con el tiempo, posición de seguridad, línea base
+keywords: Puntuación segura de Microsoft para dispositivos, Puntuación segura de Microsoft Defender para dispositivos, puntuación segura, puntuación de configuración, Administración de amenazas y vulnerabilidades, controles de seguridad, oportunidades de mejora, puntuación de configuración de seguridad con el tiempo, posición de seguridad, línea base
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -32,16 +32,16 @@ ms.locfileid: "51934086"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 >[!NOTE]
-> La puntuación de configuración ahora forma parte de la administración de amenazas y vulnerabilidades como Puntuación segura de Microsoft para dispositivos.
+> La puntuación de configuración ahora forma Administración de amenazas y vulnerabilidades como puntuación segura de Microsoft para dispositivos.
 
-La puntuación de los dispositivos está visible en el panel de [administración](tvm-dashboard-insights.md) de amenazas y vulnerabilidades del Centro de seguridad de Microsoft Defender. Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad. Refleja el estado de configuración de seguridad colectiva de los dispositivos en las siguientes categorías:
+La puntuación de los dispositivos está visible [en Administración de amenazas y vulnerabilidades panel de la](tvm-dashboard-insights.md) Centro de seguridad de Microsoft Defender. Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad. Refleja el estado de configuración de seguridad colectiva de los dispositivos en las siguientes categorías:
 
 - Aplicación
 - Sistema operativo
@@ -57,7 +57,7 @@ Reenvía Microsoft Defender para las señales de punto de conexión, lo que ofre
 
 Los cambios pueden tardar hasta unas horas en reflejarse en el panel.
 
-1. En el panel de navegación, vaya a **Configuración**  >  **Características avanzadas** 
+1. En el panel de navegación, vaya **a Configuración**  >  **características avanzadas** 
 
 2. Desplácese hacia abajo **hasta Puntuación segura de Microsoft** y cambie la configuración a **On**.
 
@@ -79,7 +79,7 @@ Los datos de la tarjeta Puntuación segura de Microsoft para dispositivos son el
 
 Mejore la configuración de seguridad mediante la corrección de problemas de la lista de recomendaciones de seguridad. Al hacerlo, la puntuación segura de Microsoft para dispositivos mejora y la organización se vuelve más resistente frente a las amenazas y vulnerabilidades de ciberseguridad.
 
-1. En la tarjeta Puntuación segura de Microsoft para dispositivos en el panel de administración de amenazas y vulnerabilidades, seleccione una de las categorías. Verá la lista de recomendaciones relacionadas con esa categoría. Le llevará a la página Recomendaciones [**de**](tvm-security-recommendation.md) seguridad. Si desea ver todas las recomendaciones de seguridad, una vez que llegue a la página Recomendaciones de seguridad, desactive el campo de búsqueda.
+1. En la tarjeta Puntuación segura de Microsoft para dispositivos del panel de Administración de amenazas y vulnerabilidades, seleccione una de las categorías. Verá la lista de recomendaciones relacionadas con esa categoría. Le llevará a la página Recomendaciones [**de**](tvm-security-recommendation.md) seguridad. Si desea ver todas las recomendaciones de seguridad, una vez que llegue a la página Recomendaciones de seguridad, desactive el campo de búsqueda.
 
 2. Seleccione un elemento en la lista. El panel desplegable se abrirá con detalles relacionados con la recomendación. Seleccione **Opciones de corrección**.
 
@@ -110,7 +110,7 @@ Mejore la configuración de seguridad mediante la corrección de problemas de la
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Información general sobre amenazas administración de vulnerabilidades amenazas](next-gen-threat-and-vuln-mgt.md)
 - [Panel](tvm-dashboard-insights.md)
 - [Puntuación de exposición](tvm-exposure-score.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)

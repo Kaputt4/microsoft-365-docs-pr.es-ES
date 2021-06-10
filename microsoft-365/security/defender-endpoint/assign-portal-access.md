@@ -1,5 +1,5 @@
 ---
-title: Asignar acceso de usuario al Centro de seguridad de Microsoft Defender
+title: Asignar acceso de usuario a Centro de seguridad de Microsoft Defender
 description: Asigne acceso de solo lectura y escritura o de solo lectura al portal de Microsoft Defender para endpoint.
 keywords: asignar roles de usuario, asignar acceso de lectura y escritura, asignar acceso de solo lectura, usuario, roles de usuario, roles
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164782"
 ---
-# <a name="assign-user-access-to-microsoft-defender-security-center"></a>Asignar acceso de usuario al Centro de seguridad de Microsoft Defender
+# <a name="assign-user-access-to-microsoft-defender-security-center"></a>Asignar acceso de usuario a Centro de seguridad de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,5 +52,5 @@ Defender for Endpoint admite dos formas de administrar permisos:
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Usar permisos básicos para obtener acceso al portal](basic-permissions.md)
-- [Administrar el acceso al portal mediante RBAC](rbac.md)
+- [Uso de permisos básicos para acceder al portal](basic-permissions.md)
+- [Administrar el acceso al portal con RBAC](rbac.md)

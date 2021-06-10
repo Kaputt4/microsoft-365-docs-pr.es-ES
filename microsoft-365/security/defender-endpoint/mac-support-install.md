@@ -58,7 +58,7 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 En este ejemplo, el motivo real tiene el prefijo `[ERROR]` .
 Error en la instalación porque no se admite una degradación entre estas versiones.
 
-## <a name="mdatp-install-log-missing-or-not-updated"></a>Falta o no se actualiza el registro de instalación de MDATP
+## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP falta o no se actualiza el registro de instalación
 
 En raras ocasiones, la instalación no deja ningún seguimiento en el archivo /Library/Logs/Microsoft/mdatp/install.log de MDATP.
 Puedes comprobar que se ha producido una instalación y analizar posibles errores consultando registros de macOS (esto resulta útil en la implementación de MDM, cuando no hay ninguna interfaz de usuario de cliente). Se recomienda usar una ventana de tiempo limitado para ejecutar una consulta y filtrar por el nombre del proceso de registro, ya que habrá una gran cantidad de información.

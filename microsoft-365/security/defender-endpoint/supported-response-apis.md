@@ -47,7 +47,7 @@ Ejecutar examen antivirus | Inicie de forma remota un examen antivirus para ayud
 Detener y poner en cuarentena un archivo |  Ejecute esta llamada para detener la ejecución de procesos, poner en cuarentena archivos y eliminar la persistencia, como las claves del Registro.
 Ejemplo de solicitud | Ejecute esta llamada para solicitar una muestra de un archivo desde un dispositivo específico. El archivo se recopilará desde el dispositivo y se cargará en un almacenamiento seguro.
 Bloquear archivo | Ejecute esta API para evitar la propagación posterior de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso. 
-Desbloquear archivo | Permitir que un archivo se ejecute en la organización con Antivirus de Microsoft Defender.
+Desbloquear archivo | Permitir que un archivo se ejecute en la organización mediante Antivirus de Microsoft Defender.
 Obtener EL URI de SAS del paquete | Ejecute esta API para obtener un URI que permita descargar un paquete de investigación.
 Obtener objeto MachineAction | Ejecute esta API para obtener el objeto MachineAction.
 Obtener colección MachineActions | Ejecute esto para obtener la colección MachineAction.

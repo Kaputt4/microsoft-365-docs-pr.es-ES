@@ -1,7 +1,7 @@
 ---
-title: Ejecutar las simulaciones de ataque de Microsoft 365 Defender
-description: Ejecuta simulaciones de ataque para el proyecto piloto de Microsoft 365 Defender para ver cómo se desarrolla y se corrige rápidamente.
-keywords: Simulación de ataque piloto de Microsoft 365 Defender, ejecutar simulación de ataque piloto de Microsoft 365 Defender, simular ataque en Microsoft 365 Defender, proyecto piloto de Microsoft 365 Defender, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
+title: Ejecutar las simulaciones de ataque Microsoft 365 Defender
+description: Ejecute simulaciones de ataque para el proyecto piloto de Microsoft 365 Defender para ver cómo se desarrolla y se corrige rápidamente.
+keywords: Microsoft 365 Simulación de ataque piloto de Defender, ejecución de simulación de ataque piloto de Microsoft 365 Defender, simulación de ataque en Microsoft 365 Defender, proyecto piloto de Microsoft 365 Defender, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934482"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ejecutar las simulaciones de ataque de Microsoft 365 Defender
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ejecutar las simulaciones de ataque Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -58,18 +58,18 @@ Dado que ya configuró el entorno piloto durante la fase de preparación, asegú
 
 2. Compruebe la configuración del controlador de dominio de prueba:
 
-   - El dispositivo se ejecuta con Windows Server 2008 R2 o una versión posterior.
+   - El dispositivo se ejecuta Windows Server 2008 R2 o una versión posterior.
    - Controlador de dominio de prueba para [Microsoft Defender para Identidad](/azure/security-center/security-center-wdatp) y habilitar la administración [remota.](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)
-   - Compruebe que [la integración de Microsoft Defender for Identity y Microsoft Cloud App Security](/cloud-app-security/mdi-integration) se ha habilitado.
+   - Compruebe que [microsoft defender para la identidad y Microsoft Cloud App Security la integración](/cloud-app-security/mdi-integration) se han habilitado.
    - Se crea un usuario de prueba en el dominio: no se necesitan permisos de administrador.
 
 3. Comprobar la configuración del dispositivo de prueba:
 
-   1. El dispositivo se ejecuta con Windows 10 versión 1903 o una versión posterior.
+   1. El dispositivo se ejecuta Windows 10 versión 1903 o una versión posterior.
 
    1. El dispositivo de prueba está unido al dominio de prueba.
 
-   1. [Active el antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Windows Defender Antivirus, vea este [tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+   1. [Active la Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Antivirus de Windows Defender, consulte este tema [de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
    1. Compruebe que el dispositivo de prueba [está incorporado a Microsoft Defender para endpoint).](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 
@@ -99,9 +99,9 @@ Para ejecutar la simulación del escenario de ataque:
 4. En el símbolo del sistema, pegue y ejecute el script copiado.
 
 > [!NOTE]
-> Si ejecuta PowerShell con el protocolo de escritorio remoto (RDP), use el comando Escribir texto del Portapapeles en el cliente RDP porque es posible que la tecla rápida **CTRL-V** o el método de clic y pegado con el botón secundario no funcionen. En ocasiones, las versiones recientes de PowerShell tampoco aceptarán ese método, es posible que primero tenga que copiarlo en el Bloc de notas en la memoria, copiarlo en la máquina virtual y, a continuación, pegarlo en PowerShell.
+> Si ejecuta PowerShell con el protocolo de escritorio remoto (RDP), use el comando Escribir texto del Portapapeles en el cliente RDP porque es posible que la tecla rápida **CTRL-V** o el método de clic y pegado con el botón secundario no funcionen. Las versiones recientes de PowerShell a veces tampoco aceptarán ese método, es posible que deba copiarlo en Bloc de notas en la memoria primero, copiarlo en la máquina virtual y, a continuación, pegarlo en PowerShell.
 
-Unos segundos más tarde, <i>notepad.exe</i> se abrirá. Se insertará un código de ataque simulado en notepad.exe. Mantenga abierta la instancia del Bloc de notas generada automáticamente para experimentar el escenario completo.
+Unos segundos más tarde, <i>notepad.exe</i> se abrirá. Se insertará un código de ataque simulado en notepad.exe. Mantenga abierta la instancia de Bloc de notas generada automáticamente para experimentar el escenario completo.
 
 El código de ataque simulado intentará comunicarse con una dirección IP externa (simulando el servidor C2) y, a continuación, intentará reconocimiento con el controlador de dominio a través de SMB.
 
@@ -111,7 +111,7 @@ Verá un mensaje que se muestra en la consola de PowerShell cuando se complete e
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-Para ver la característica De incidentes y respuesta automatizados en acción, mantenga el notepad.exe proceso abierto. Verá El incidente automatizado y la respuesta detienen el proceso del Bloc de notas.
+Para ver la característica De incidentes y respuesta automatizados en acción, mantenga el notepad.exe proceso abierto. Verá El incidente automatizado y la respuesta detienen el Bloc de notas proceso.
 
 ## <a name="investigate-an-incident"></a>Investigar un incidente
 
@@ -120,13 +120,13 @@ Para ver la característica De incidentes y respuesta automatizados en acción, 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Al cambiar al punto de vista del analista de SOC, ahora puede empezar a investigar el ataque en el portal del Centro de seguridad de Microsoft 365.
+Al cambiar al punto de vista del analista de SOC, ahora puede empezar a investigar el ataque en el portal Microsoft 365 Centro de seguridad.
 
-1. Abra la cola de incidentes del portal del Centro de seguridad de [Microsoft 365](https://security.microsoft.com/incidents) desde cualquier dispositivo.
+1. Abra la cola Microsoft 365 incidentes del [portal del Centro](https://security.microsoft.com/incidents) de seguridad desde cualquier dispositivo.
 
 2. Vaya a **Incidentes desde** el menú.
 
-    ![Captura de pantalla de incidentes como se muestra en el menú del lado izquierdo del Centro de seguridad de Microsoft 365](../../media/mtp/fig1.png)
+    ![Captura de pantalla de incidentes como se muestra en Microsoft 365 menú del lado izquierdo del Centro de seguridad](../../media/mtp/fig1.png)
 
 3. El nuevo incidente del ataque simulado aparecerá en la cola de incidentes.
 
@@ -148,7 +148,7 @@ Para ver el incidente:
 
    ![Captura de pantalla de la página de incidentes donde se agregan alertas generadas durante la simulación](../../media/mtp/fig4.png)
 
-   Las alertas que se muestran en el panel se pueden filtrar en función de los recursos de servicio: Microsoft Defender para la identidad, Microsoft Cloud App Security, Microsoft Defender para endpoint, Microsoft 365 Defender y Microsoft Defender para Office 365.
+   Las alertas que se muestran en el panel se pueden filtrar en función de los recursos de servicio: Microsoft Defender para identity, Microsoft Cloud App Security, Microsoft Defender para endpoint, Microsoft 365 Defender y Microsoft Defender para Office 365.
 
 3. Seleccione **Abrir página de incidentes** para obtener más información sobre el incidente.
 
@@ -165,11 +165,11 @@ Para ver el incidente:
 Veamos algunas de las alertas generadas durante el ataque simulado.
 
 > [!NOTE]
-> Solo recorreremos algunas de las alertas generadas durante el ataque simulado. Dependiendo de la versión de Windows y los productos de Microsoft 365 Defender que se ejecutan en el dispositivo de prueba, es posible que veas más alertas que aparecen en un orden ligeramente diferente.
+> Solo recorreremos algunas de las alertas generadas durante el ataque simulado. Según la versión de Windows y los productos de Microsoft 365 Defender que se ejecutan en el dispositivo de prueba, es posible que veas más alertas que aparecen en un orden ligeramente diferente.
 
 ![Captura de pantalla de alertas generadas](../../media/mtp/fig6.png)
 
-#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>Alerta: Se observó una inyección de proceso sospechosa (Origen: Microsoft Defender para endpoint EDR)
+#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>Alerta: Se observó una inyección de proceso sospechosa (Origen: Microsoft Defender para endpoints EDR)
 
 Los atacantes avanzados usan métodos sofisticados y furtivos para conservar la memoria y ocultarse de las herramientas de detección. Una técnica común es operar desde dentro de un proceso de sistema de confianza en lugar de un ejecutable malintencionado, lo que hace difícil que las herramientas de detección y las operaciones de seguridad detecten el código malintencionado.
 
@@ -177,7 +177,7 @@ Para permitir que los analistas de SOC puedan detectar estos ataques avanzados, 
 
 ![Captura de pantalla de la alerta para la inyección de código potencialmente malintencionado](../../media/mtp/fig7.png)
 
-#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>Alerta: comportamiento inesperado observado por un proceso ejecutado sin argumentos de línea de comandos (Source: Microsoft Defender for Endpoint EDR)
+#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>Alerta: Comportamiento inesperado observado por un proceso ejecutado sin argumentos de línea de comandos (Source: Microsoft Defender for Endpoint EDR)
 
 Las detecciones de Puntos de conexión de Microsoft Defender suelen tener como destino el atributo más común de una técnica de ataque. Este método garantiza la durabilidad y aumenta la barra para que los atacantes cambien a tácticas más recientes.
 
@@ -227,7 +227,7 @@ En la página incidente, seleccione la **pestaña Usuarios** para mostrar la lis
 
 Seleccione el nombre de usuario para abrir la página de perfil del usuario donde se puede llevar a cabo una investigación adicional. [Obtenga más información sobre cómo investigar usuarios de riesgo.](/cloud-app-security/tutorial-ueba#identify)
 
-![Captura de pantalla de la página de usuario de Cloud App Security](../../media/mtp/fig13.png)
+![Captura de pantalla de Cloud App Security página de usuario](../../media/mtp/fig13.png)
 
 ## <a name="automated-investigation-and-remediation"></a>Investigación y corrección automatizadas
 
@@ -236,7 +236,7 @@ Seleccione el nombre de usuario para abrir la página de perfil del usuario dond
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Vuelva al incidente en el portal del Centro de seguridad de Microsoft 365. La **pestaña Investigaciones** de **la** página Incidentes muestra las investigaciones automatizadas desencadenadas por Microsoft Defender para Identity y Microsoft Defender para endpoint. La captura de pantalla siguiente muestra solo la investigación automatizada desencadenada por Defender for Endpoint. De forma predeterminada, Defender para endpoint corrige automáticamente los artefactos encontrados en la cola, lo que requiere corrección.
+Vuelva al incidente en el portal del centro Microsoft 365 seguridad. La **pestaña Investigaciones** de **la** página Incidentes muestra las investigaciones automatizadas desencadenadas por Microsoft Defender para Identity y Microsoft Defender para endpoint. La captura de pantalla siguiente muestra solo la investigación automatizada desencadenada por Defender for Endpoint. De forma predeterminada, Defender para endpoint corrige automáticamente los artefactos encontrados en la cola, lo que requiere corrección.
 
 ![Captura de pantalla de las investigaciones automatizadas relacionadas con el incidente](../../media/mtp/fig14.png)
 
@@ -262,7 +262,7 @@ Una vez completada la investigación y confirmada su corrección, cierre el inci
 
 Seleccione **Administrar incidente**. Establezca el estado en **Resolver incidente** y seleccione la clasificación correspondiente.
 
-Cuando se resuelve el incidente, cierra todas las alertas asociadas en el Centro de seguridad de Microsoft 365 y en los portales relacionados.
+Cuando se resuelve el incidente, cierra todas las alertas asociadas en Microsoft 365 de seguridad y en los portales relacionados.
 
 ![Captura de pantalla de la página incidentes con el panel administrar incidentes abierto donde puede hacer clic en el modificador para resolver incidentes](../../media/mtp/fig16.png)
 
@@ -281,15 +281,15 @@ Hay un único buzón interno y un dispositivo necesarios para este escenario. Ta
 
 1. Compruebe que el inquilino ha [habilitado Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 2. Identificar un buzón de destino que se usará para recibir correo electrónico.
-    a. Microsoft Defender para Office 365 b debe supervisar este buzón. El dispositivo del requisito 3 debe tener acceso a este buzón
-3. Configurar un dispositivo de prueba: a. Asegúrate de usar Windows 10 versión 1903 o una versión posterior.
+    a. Microsoft Defender debe supervisar este buzón Office 365 b. El dispositivo del requisito 3 debe tener acceso a este buzón
+3. Configurar un dispositivo de prueba: a. Asegúrese de que está usando Windows 10 versión 1903 o posterior.
     b. Une el dispositivo de prueba al dominio de prueba.
-    c. [Active el antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Windows Defender Antivirus, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Active la Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Antivirus de Windows Defender, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
     d. [Incorporación a Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### <a name="run-the-simulation"></a>Ejecutar la simulación
 
-1. Desde una cuenta de correo electrónico externa, envíe un correo electrónico al buzón identificado en el paso 2 de la sección requisitos del entorno de prueba. Incluya datos adjuntos que se permitirán a través de las directivas de filtro de correo electrónico existentes. Este archivo no necesita ser malintencionado ni ejecutable. Los tipos de archivo sugeridos <i>son .pdf,</i> <i>.exe</i> (si se permite) u documentos de Office como un archivo de Word.
+1. Desde una cuenta de correo electrónico externa, envíe un correo electrónico al buzón identificado en el paso 2 de la sección requisitos del entorno de prueba. Incluya datos adjuntos que se permitirán a través de las directivas de filtro de correo electrónico existentes. Este archivo no necesita ser malintencionado ni ejecutable. Los tipos de archivo <i>sugeridos.pdf</i>, <i>.exe</i> (si está permitido) o Office como un archivo de Word.
 2. Abra el correo electrónico enviado desde el dispositivo configurado como se define en el paso 3 de la sección de requisitos del entorno de prueba. Abra los datos adjuntos o guarde el archivo en el dispositivo.
 
 #### <a name="go-hunting"></a>Ir a buscar
@@ -432,10 +432,10 @@ Las detecciones personalizadas ejecutarán la consulta según la frecuencia que 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ejercicios de búsqueda avanzada adicionales
 
-Para obtener más información sobre la búsqueda avanzada, las siguientes difusión por web le ayudarán a través de las capacidades de búsqueda avanzada en Microsoft 365 Defender para crear consultas entre columnas, pivotar a las entidades y crear detecciones personalizadas y acciones de corrección.
+Para obtener más información sobre la búsqueda avanzada, las siguientes difusión por web le ayudarán a través de las capacidades de búsqueda avanzada en Microsoft 365 Defender para crear consultas entre columnas, pivotar en las entidades y crear detecciones personalizadas y acciones de corrección.
 
 > [!NOTE]
-> Esté preparado con su propia cuenta de GitHub para ejecutar las consultas de búsqueda en el entorno del laboratorio de prueba piloto.
+> Esté preparado con su propia cuenta GitHub para ejecutar las consultas de búsqueda en el entorno de laboratorio de prueba piloto.
 
 |Title|Descripción|Descargar MP4|Ver en YouTube|Archivo CSL que se usará|
 |---|---|---|---|---|
@@ -447,5 +447,5 @@ Para obtener más información sobre la búsqueda avanzada, las siguientes difus
 
 ## <a name="next-step"></a>Paso siguiente
 
-|![Fase de cierre y resumen](../../media/mtp/close.png) <br>[Fase de cierre y resumen](m365d-pilot-close.md)|Analice el resultado piloto de Microsoft 365 Defender, presentarlos a las partes interesadas y dar el siguiente paso.
+|![Fase de cierre y resumen](../../media/mtp/close.png) <br>[Fase de cierre y resumen](m365d-pilot-close.md)|Analice el resultado Microsoft 365 piloto de Defender, presentarlos a las partes interesadas y dar el siguiente paso.
 |:-----|:-----|

@@ -1,7 +1,7 @@
 ---
-title: Recomendaciones de seguridad por la administración de amenazas y vulnerabilidades
-description: Obtenga recomendaciones de seguridad de acción priorizadas por amenaza, probabilidad de vulneración y valor en la administración de amenazas y vulnerabilidades.
-keywords: administración de amenazas y vulnerabilidades, recomendación de seguridad de Microsoft Defender para endpoint tvm, recomendación de ciberseguridad, recomendación de seguridad que se puede actuar
+title: Recomendaciones de seguridad de Administración de amenazas y vulnerabilidades
+description: Obtenga recomendaciones de seguridad de acción priorizadas por amenaza, probabilidad de vulneración y valor en Administración de amenazas y vulnerabilidades.
+keywords: Administración de amenazas y vulnerabilidades, recomendación de seguridad de Microsoft Defender para endpoint tvm, recomendación de ciberseguridad, recomendación de seguridad que se puede tomar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,21 +25,21 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933738"
 ---
-# <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: administración de amenazas y vulnerabilidades
+# <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Las debilidades de seguridad cibernética identificadas en su organización se asignan a recomendaciones de seguridad que se pueden usar y se priorizan por su impacto. Las recomendaciones prioritarias ayudan a acortar el tiempo para mitigar o corregir las vulnerabilidades e impulsar el cumplimiento.
 
-Cada recomendación de seguridad incluye pasos de corrección que se pueden tomar. Para ayudar con la administración de tareas, la recomendación también se puede enviar con Microsoft Intune y Microsoft Endpoint Configuration Manager. Cuando cambia el panorama de amenazas, la recomendación también cambia a medida que recopila continuamente información del entorno.
+Cada recomendación de seguridad incluye pasos de corrección que se pueden tomar. Para ayudar con la administración de tareas, la recomendación también se puede enviar mediante Microsoft Intune y Microsoft Endpoint Configuration Manager. Cuando cambia el panorama de amenazas, la recomendación también cambia a medida que recopila continuamente información del entorno.
 
 >[!TIP]
 >Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
@@ -58,8 +58,8 @@ Cada dispositivo de la organización se puntua en función de tres factores impo
 
 Acceda a la página Recomendaciones de seguridad de varias maneras diferentes:
 
-- Menú de navegación de administración de amenazas y vulnerabilidades en el [Centro de seguridad de Microsoft Defender](portal-overview.md)
-- Recomendaciones de seguridad principales en el panel de administración de [amenazas y vulnerabilidades](tvm-dashboard-insights.md)
+- Amenaza y administración de vulnerabilidades menú de navegación en el [Centro de seguridad de Microsoft Defender](portal-overview.md)
+- Recomendaciones de seguridad principales en el [Administración de amenazas y vulnerabilidades panel](tvm-dashboard-insights.md)
 
 Vea las recomendaciones de seguridad relacionadas en los siguientes lugares:
 
@@ -68,11 +68,11 @@ Vea las recomendaciones de seguridad relacionadas en los siguientes lugares:
 
 ### <a name="navigation-menu"></a>Menú navegación
 
-Vaya al menú de navegación de administración de amenazas y vulnerabilidades y seleccione **Recomendaciones de seguridad.** La página contiene una lista de recomendaciones de seguridad para las amenazas y vulnerabilidades encontradas en su organización.
+Vaya al menú Administración de amenazas y vulnerabilidades navegación y seleccione **Recomendaciones de seguridad**. La página contiene una lista de recomendaciones de seguridad para las amenazas y vulnerabilidades encontradas en su organización.
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>Recomendaciones de seguridad principales en el panel de administración de amenazas y vulnerabilidades
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>Recomendaciones de seguridad principales en el Administración de amenazas y vulnerabilidades panel
 
-En un día determinado como administrador de seguridad, [](tvm-dashboard-insights.md) puedes echar un vistazo [](tvm-exposure-score.md) al panel de administración de amenazas y vulnerabilidades para ver la puntuación de exposición en paralelo con la puntuación segura de Microsoft para [dispositivos.](tvm-microsoft-secure-score-devices.md) El objetivo es reducir **la** exposición de la  organización frente a vulnerabilidades y aumentar la seguridad del dispositivo de la organización para que sea más resistente frente a los ataques de amenazas de ciberseguridad. La lista de recomendaciones de seguridad superior puede ayudarle a lograr ese objetivo.
+En un día determinado como administrador de seguridad, puedes echar un vistazo [](tvm-exposure-score.md) al panel de [Administración de amenazas y vulnerabilidades](tvm-dashboard-insights.md) para ver la puntuación de exposición en paralelo con la puntuación segura de Microsoft para [dispositivos](tvm-microsoft-secure-score-devices.md). El objetivo es reducir **la** exposición de la  organización frente a vulnerabilidades y aumentar la seguridad del dispositivo de la organización para que sea más resistente frente a los ataques de amenazas de ciberseguridad. La lista de recomendaciones de seguridad superior puede ayudarle a lograr ese objetivo.
 
 ![Ejemplo de tarjeta de recomendaciones de seguridad superior, con cuatro recomendaciones de seguridad.](images/top-security-recommendations350.png)
 
@@ -85,7 +85,7 @@ Vea recomendaciones, número de puntos débiles encontrados, componentes relacio
 El color del gráfico de **dispositivos expuestos** cambia a medida que cambia la tendencia. Si el número de dispositivos expuestos va en aumento, el color cambia a rojo. Si hay una disminución en el número de dispositivos expuestos, el color del gráfico cambiará a verde.
 
 >[!NOTE]
->La administración de amenazas y vulnerabilidades muestra los dispositivos que estaban en uso hasta **hace 30** días. Esto es diferente del resto de Microsoft Defender para Endpoint, donde si un dispositivo no ha estado en uso durante más de 7 días tiene un estado "Inactivo".
+>Amenazas y administración de vulnerabilidades muestra dispositivos que estaban en uso hasta **hace 30** días. Esto es diferente del resto de Microsoft Defender para Endpoint, donde si un dispositivo no ha estado en uso durante más de 7 días tiene un estado "Inactivo".
 
 ![Ejemplo de la página de aterrizaje para recomendaciones de seguridad.](images/tvmsecrec-updated.png)
 
@@ -106,12 +106,12 @@ En el menú desplegable, puede elegir cualquiera de las siguientes opciones:
 
 - **Página de software abierto:** abra la página de software para obtener más contexto en el software y cómo se distribuye. La información puede incluir contexto de amenaza, recomendaciones asociadas, debilidades detectadas, número de dispositivos expuestos, vulnerabilidades detectadas, nombres y detalles de dispositivos con el software instalado y distribución de versiones.
 
-- [**Opciones de corrección:**](tvm-remediation.md) envíe una solicitud de corrección para abrir un vale en Microsoft Intune para que el administrador de TI pueda recoger y dirigirse. Realice un seguimiento de la actividad de corrección en la página Corrección.
+- [**Opciones de corrección:**](tvm-remediation.md) envíe una solicitud de corrección para abrir un vale en Microsoft Intune que el administrador de TI pueda recoger y dirigirse. Realice un seguimiento de la actividad de corrección en la página Corrección.
 
 - [**Opciones de excepción:**](tvm-exception.md) envíe una excepción, proporcione una justificación y establezca la duración de la excepción si aún no puede corregir el problema.
 
 >[!NOTE]
->Cuando se realiza un cambio de software en un dispositivo, normalmente los datos tardan dos horas en reflejarse en el portal de seguridad. Sin embargo, a veces puede tardar más tiempo. Los cambios de configuración pueden tardar entre 4 y 24 horas.
+>Cuando se realiza un cambio de software en un dispositivo, normalmente los datos tardan dos horas en reflejarse en el portal de seguridad. Sin embargo, a veces pueden tardar más. Los cambios de configuración pueden tardar entre 4 y 24 horas.
 
 ### <a name="investigate-changes-in-device-exposure-or-impact"></a>Investigar los cambios en la exposición o el impacto del dispositivo
 
@@ -123,7 +123,7 @@ If there is a large jump in the number of exposed devices, or a sharp increase i
 
 ## <a name="request-remediation"></a>Corrección de solicitudes
 
-La capacidad de corrección de la administración de amenazas y vulnerabilidades separa la brecha entre los administradores de SEGURIDAD y TI a través del flujo de trabajo de solicitud de corrección. Los administradores de seguridad como puede solicitar al administrador de TI que corrija una vulnerabilidad desde la página Recomendación **de** seguridad a Intune. [Más información sobre las opciones de corrección](tvm-remediation.md)
+La Administración de amenazas y vulnerabilidades de corrección puentea la brecha entre los administradores de seguridad y TI a través del flujo de trabajo de solicitud de corrección. Los administradores de seguridad como puede solicitar al administrador de TI que corrija una vulnerabilidad desde la página Recomendación **de** seguridad a Intune. [Más información sobre las opciones de corrección](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>Cómo solicitar corrección
 
@@ -157,11 +157,11 @@ Puede informar de un falso positivo cuando vea información imprecisa, inexacta,
 
 3. En el panel desplegable, seleccione la categoría de imprecisión en el menú desplegable, rellene su dirección de correo electrónico y detalles sobre la imprecisión.
 
-4. Seleccione **Enviar**. Sus comentarios se envían inmediatamente a los expertos en administración de amenazas y vulnerabilidades.
+4. Seleccione **Enviar**. Sus comentarios se envían inmediatamente a los Administración de amenazas y vulnerabilidades expertos.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Información general sobre amenazas administración de vulnerabilidades amenazas](next-gen-threat-and-vuln-mgt.md)
 - [Panel](tvm-dashboard-insights.md)
 - [Puntuación de exposición](tvm-exposure-score.md)
 - [Puntuación de seguridad de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md)

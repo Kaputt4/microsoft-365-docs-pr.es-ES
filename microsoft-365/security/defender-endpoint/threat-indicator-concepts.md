@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51074120"
 ---
-# <a name="understand-threat-intelligence-concepts"></a>Comprender conceptos de inteligencia de amenazas
+# <a name="understand-threat-intelligence-concepts"></a>Comprender conceptos de inteligencia sobre amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -64,12 +64,12 @@ Los IIC tienen una relación de varios a uno con definiciones de alerta, de modo
 Tema | Descripción
 :---|:---
 [Extraer detecciones a las herramientas SIEM](configure-siem.md)| Obtenga información sobre diferentes formas de extraer detecciones.
-[Habilitar la integración de SIEM en Microsoft Defender para endpoint](enable-siem-integration.md)| Obtenga información sobre cómo habilitar  la característica de integración siem en la página Configuración del portal para que pueda usar y generar la información necesaria para configurar las herramientas SIEM compatibles.
+[Habilitar la integración de SIEM en Microsoft Defender para endpoint](enable-siem-integration.md)| Obtenga información sobre cómo habilitar la característica de integración siem en la **página Configuración** en el portal para que pueda usar y generar la información necesaria para configurar las herramientas SIEM compatibles.
 [Configurar Splunk para extraer Microsoft Defender para detecciones de puntos de conexión](configure-siem.md)| Obtenga información sobre cómo instalar la aplicación de entrada modular de la API de REST y otras opciones de configuración para habilitar Splunk para extraer Microsoft Defender para las detecciones de puntos de conexión.
 [Configurar HP ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)| Obtenga información sobre cómo instalar el paquete REST FlexConnector de HP ArcSight y los archivos que necesita para configurar ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión.
-[Campos de Microsoft Defender para detección de puntos de conexión](api-portal-mapping.md) | Comprender qué campos de datos se exponen como parte de la API de alertas y cómo se asignan al Centro de seguridad de Microsoft Defender.
+[Campos de Microsoft Defender para detección de puntos de conexión](api-portal-mapping.md) | Comprender qué campos de datos se exponen como parte de la API de alertas y cómo se asignan a Centro de seguridad de Microsoft Defender.
 [Extraer Microsoft Defender para detecciones de puntos de conexión mediante la API de REST](pull-alerts-using-rest-api.md) | Use el flujo de OAuth 2.0 de credenciales de cliente para extraer detecciones de Microsoft Defender para endpoint mediante la API de REST.
-[Solucionar problemas de integración de herramientas SIEM](troubleshoot-siem.md) | Solucionar problemas que puede encontrar al usar la característica de integración siem.
+[Solucionar problemas de integración de la herramienta SIEM](troubleshoot-siem.md) | Solucionar problemas que puede encontrar al usar la característica de integración siem.
 
 
 

@@ -98,7 +98,7 @@ para esta aplicación, a menos que otros términos acompañen esos elementos. En
 
     2.  El proveedor de almacén de aplicaciones respectivo y sus subsidiarias son terceros beneficiarios de estos Términos y, tras la aceptación de estos Términos, los proveedores de la tienda de aplicaciones tendrán derecho a exigir directamente y confiar en cualquier disposición de estos Términos que les conceda un beneficio o derechos.
 
-9.  **AVISOS DE MARCA COMERCIAL.** Microsoft, Microsoft Defender para Endpoint y Microsoft 365 son marcas comerciales registradas o de derecho común de Microsoft Corporation en los Estados Unidos y/u otros países.
+9.  **AVISOS DE MARCA COMERCIAL.** Microsoft, Microsoft Defender para endpoint y Microsoft 365 son marcas comerciales registradas o de derecho común de Microsoft Corporation en los Estados Unidos y/u otros países.
 
 10. **ENTIRE AGREEMENT.** Este contrato y los términos de los complementos, actualizaciones, servicios basados en Internet y servicios de soporte técnico que use son el contrato completo para los servicios de soporte técnico y de aplicaciones.
 

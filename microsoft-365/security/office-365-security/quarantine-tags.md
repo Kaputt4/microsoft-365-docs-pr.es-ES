@@ -59,7 +59,7 @@ Los permisos individuales disponibles y lo que se incluye o no en los grupos de 
 
 Si no le gustan los permisos predeterminados en los grupos de permisos preestablecidos, puede usar permisos personalizados al crear o modificar etiquetas de cuarentena personalizadas. Para obtener más información acerca de lo que hace cada permiso, vea la sección Detalles del permiso de etiqueta de [cuarentena](#quarantine-tag-permission-details) más adelante en este artículo.
 
-Puede crear y asignar etiquetas de cuarentena en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones de Exchange Online; PowerShell de EOP independiente en organizaciones EOP sin buzones de Exchange Online).
+Puede crear y asignar etiquetas de cuarentena en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones de correo de Exchange Online; PowerShell de EOP independiente en organizaciones EOP sin buzones Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -111,7 +111,7 @@ Ahora ya está listo para asignar la etiqueta de cuarentena a una característic
 
 ### <a name="create-quarantine-tags-in-powershell"></a>Crear etiquetas de cuarentena en PowerShell
 
-Si prefiere usar PowerShell para crear etiquetas de cuarentena, conéctese a Exchange Online PowerShell o Exchange Online Protection PowerShell y use el cmdlet **New-QuarantineTag.** Tiene dos métodos diferentes entre los que elegir:
+Si prefiere usar PowerShell para crear etiquetas de cuarentena, conéctese Exchange Online PowerShell o Exchange Online Protection PowerShell y use el cmdlet **New-QuarantineTag.** Tiene dos métodos diferentes entre los que elegir:
 
 - Use el _parámetro EndUserQuarantinePermissionsValue._
 - Use el _parámetro EndUserQuarantinePermissions._
@@ -168,7 +168,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ne
 
 Para crear una etiqueta en cuarentena con el _parámetro EndUserQuarantinePermissionsValue,_ siga estos pasos:
 
-A. Almacene un objeto de permisos de cuarentena en una variable mediante el cmdlet **New-QuarantinePermissions.**
+R: Almacene un objeto de permisos de cuarentena en una variable mediante el cmdlet **New-QuarantinePermissions.**
 
 <p>
 
@@ -245,7 +245,7 @@ En _las características_ de protección admitidas que ponen en cuarentena mensa
 |[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|No aplicable|
 |
 
-<sup>\*</sup> La configuración de protección de suplantación solo está disponible en las directivas contra suplantación de identidad en Microsoft Defender para Office 365.
+<sup>\*</sup>La configuración de protección de suplantación solo está disponible en las directivas contra suplantación de identidad en Microsoft Defender para Office 365.
 
 Si está contento con los permisos de usuario final proporcionados por las etiquetas de cuarentena predeterminadas, no necesita hacer nada. Si desea personalizar las capacidades del usuario final (botones disponibles) en las notificaciones de correo no deseado del usuario final o en los detalles del mensaje en cuarentena, puede asignar una etiqueta de cuarentena personalizada.
 
@@ -320,7 +320,7 @@ La configuración global de las etiquetas de cuarentena permite personalizar las
 
 3. En el **control desplegable De** notificaciones de cuarentena que se abre, configure algunas o todas las opciones siguientes:
 
-   - **Usar el logotipo de mi** empresa: seleccione esta opción para reemplazar el logotipo predeterminado de Microsoft que se usa en la parte superior de las notificaciones de correo no deseado del usuario final. Antes de hacerlo, debes seguir las instrucciones de Personalizar el tema [de Microsoft 365](../../admin/setup/customize-your-organization-theme.md) para que tu organización cargue el logotipo personalizado.
+   - **Usar el logotipo de mi** empresa: seleccione esta opción para reemplazar el logotipo predeterminado de Microsoft que se usa en la parte superior de las notificaciones de correo no deseado del usuario final. Antes de hacerlo, debes seguir las instrucciones de Personalizar el [tema Microsoft 365 de](../../admin/setup/customize-your-organization-theme.md) la organización para cargar el logotipo personalizado.
 
      La siguiente captura de pantalla muestra un logotipo personalizado en una notificación de correo no deseado del usuario final:
 
@@ -465,7 +465,7 @@ Si la etiqueta de cuarentena asigna los permisos **de** acceso completo (todos l
 
 - **Notificaciones de correo no deseado del** usuario final: los botones siguientes están disponibles:
   - **Bloquear remitente**
-  - **Release**
+  - **Versión**
   - **Revisar**
 
   ![Botones disponibles en la notificación de correo no deseado del usuario final si la etiqueta de cuarentena concede al usuario permisos de acceso total](../../media/quarantine-tags-esn-full-access.png)
@@ -477,7 +477,7 @@ Si la etiqueta de cuarentena asigna los permisos **de** acceso completo (todos l
 
 #### <a name="allow-sender-permission"></a>Permitir permiso de remitente
 
-El permiso permitir **remitente** (_PermissionToAllowSender_) controla el acceso al botón que permite a los usuarios agregar cómodamente el remitente del mensaje en cuarentena a su lista de remitentes seguros.
+El permiso Permitir **remitente** (_PermissionToAllowSender_) controla el acceso al botón que permite a los usuarios agregar cómodamente el remitente del mensaje en cuarentena a su lista Caja fuerte remitentes.
 
 - **Detalles del mensaje en cuarentena:**
   - **Permitir permiso de** remitente habilitado: **el botón Permitir remitente** está disponible.
@@ -485,7 +485,7 @@ El permiso permitir **remitente** (_PermissionToAllowSender_) controla el acceso
 
 - **Notificaciones de correo no deseado del usuario final:** Sin efecto.
 
-Para obtener más información acerca de la lista remitentes seguros, vea Impedir que los [remitentes](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) de confianza se bloqueen y [Use Exchange Online PowerShell para](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)configurar la colección de listas seguras en un buzón.
+Para obtener más información acerca de la lista Caja fuerte remitentes, vea Prevent [trusted senders from being blocked](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) y Use Exchange Online [PowerShell to configure the safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### <a name="block-sender-permission"></a>Bloquear el permiso del remitente
 
@@ -499,7 +499,7 @@ El **permiso bloquear remitente** (_PermissionToBlockSender_) controla el acceso
   - **Bloquear el permiso** del remitente deshabilitado: **el botón Bloquear remitente** no está disponible.
   - **Bloquear permiso de** remitente habilitado: el **botón Bloquear remitente** está disponible.
 
-Para obtener más información acerca de la lista Remitentes bloqueados, vea [Bloquear](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) mensajes de alguien y Usar PowerShell de Exchange Online para configurar la colección de listas seguras [en un buzón.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
+Para obtener más información acerca de la lista Remitentes bloqueados, vea [Bloquear](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) mensajes de alguien y Usar Exchange Online PowerShell para configurar la colección de listas seguras [en un buzón.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
 
 #### <a name="delete-permission"></a>Permiso de eliminación
 

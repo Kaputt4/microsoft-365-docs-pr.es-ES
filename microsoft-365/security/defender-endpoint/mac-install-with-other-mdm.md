@@ -68,7 +68,7 @@ La mayoría de las soluciones MDM usan el mismo modelo para administrar disposit
 
 ### <a name="package"></a>Paquete
 
-Configure la implementación de un [paquete de aplicación](mac-install-with-jamf.md)necesario, con el paquete de instalación (wdav.pkg) descargado del Centro de seguridad de Microsoft [Defender](mac-install-with-jamf.md).
+Configure la implementación de un [paquete de aplicación](mac-install-with-jamf.md)necesario, con el paquete de instalación (wdav.pkg) descargado de [Centro de seguridad de Microsoft Defender](mac-install-with-jamf.md).
 
 Para implementar el paquete en tu empresa, usa las instrucciones asociadas con la solución MDM.
 
@@ -76,9 +76,9 @@ Para implementar el paquete en tu empresa, usa las instrucciones asociadas con l
 
 Configurar un [perfil de configuración del sistema](mac-install-with-jamf.md). 
 
-La solución MDM puede llamarla algo así como "Perfil de configuración personalizada", ya que Microsoft Defender para Endpoint en macOS no forma parte de macOS.
+La solución MDM puede llamarlo algo así como "Perfil Configuración personalizado", ya que Microsoft Defender para Endpoint en macOS no forma parte de macOS.
 
-Usa la lista de propiedades, jamf/WindowsDefenderATPOnboarding.plist, que se puede extraer de un paquete de incorporación descargado del Centro de seguridad [de Microsoft Defender](mac-install-with-jamf.md).
+Usa la lista de propiedades, jamf/WindowsDefenderATPOnboarding.plist, que se puede extraer de un paquete de incorporación descargado de [Centro de seguridad de Microsoft Defender](mac-install-with-jamf.md).
 El sistema puede admitir una lista de propiedades arbitrarias en formato XML. Puedes cargar el archivo jamf/WindowsDefenderATPOnboarding.plist tal como está en ese caso.
 Como alternativa, es posible que primero necesites convertir la lista de propiedades a otro formato.
 
@@ -116,7 +116,7 @@ Conceder acceso en disco completo a los siguientes componentes:
 
 ### <a name="network-extension-policy"></a>Directiva de extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal Centro de seguridad de Microsoft Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 - Tipo de filtro: Complemento
 - Identificador de agrupación de complementos: `com.microsoft.wdav`

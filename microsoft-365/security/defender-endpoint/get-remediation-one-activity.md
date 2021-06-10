@@ -85,7 +85,7 @@ requesterEmail | Cadena | Dirección de correo electrónico del creador | global
 requesterId | Cadena | Id. de objeto Creator | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | Cadena | Las notas (texto libre) que el creador agregó para esta actividad de corrección | nulo
 scid | Cadena | SCID de la recomendación de seguridad relacionada | nulo
-status | Cadena | Estado de la actividad de corrección (Activo/Completado) | Activa
+status | Cadena | Estado de la actividad de corrección (Activo/Completado) | Activo
 statusLastModifiedOn | DateTime | Fecha en la que se actualizó el campo de estado | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Número de dispositivos expuestos a los que se aplica esta corrección | 43
 title | Cadena | Título de esta actividad de corrección | Microsoft Silverlight

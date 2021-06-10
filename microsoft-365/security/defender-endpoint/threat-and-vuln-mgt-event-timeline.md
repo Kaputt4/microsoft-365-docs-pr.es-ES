@@ -1,7 +1,7 @@
 ---
-title: Escala de tiempo de eventos en la administración de amenazas y vulnerabilidades
+title: Escala de tiempo del evento en Administración de amenazas y vulnerabilidades
 description: La escala de tiempo de eventos es una fuente de noticias de riesgo que le ayuda a interpretar cómo se introduce el riesgo en la organización y qué mitigaciones se han producido para reducirlo.
-keywords: escala de tiempo del evento, escala de tiempo del evento de Microsoft Defender para Endpoint, escala de tiempo de eventos de Microsoft Defender para Endpoint tvm, administración de amenazas y vulnerabilidades, Microsoft Defender para endpoint
+keywords: escala de tiempo del evento, escala de tiempo del evento de Microsoft Defender para Endpoint, escala de tiempo del evento de Microsoft Defender para Endpoint tvm, Administración de amenazas y vulnerabilidades, Microsoft Defender para endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933486"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>Escala de tiempo de eventos: administración de amenazas y vulnerabilidades
+# <a name="event-timeline---threat-and-vulnerability-management"></a>Escala de tiempo del evento: Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,7 +45,7 @@ La escala de tiempo [](tvm-exposure-score.md) del evento también cuenta la hist
 
 ## <a name="navigate-to-the-event-timeline-page"></a>Vaya a la página Escala de tiempo de eventos
 
-También hay tres puntos de entrada del panel de administración de amenazas [y vulnerabilidades:](tvm-dashboard-insights.md)
+También hay tres puntos de entrada del [panel de Administración de amenazas y vulnerabilidades:](tvm-dashboard-insights.md)
 
 - **Tarjeta de puntuación de** exposición de la organización: mantenga el mouse sobre los puntos del evento en el gráfico "Puntuación de exposición con el tiempo" y seleccione "Ver todos los eventos de este día". Los eventos representan vulnerabilidades de software.
 - **Puntuación segura de Microsoft** para dispositivos: mantenga el mouse sobre los puntos de evento en el gráfico "Su puntuación para dispositivos con el tiempo" y seleccione "Ver todos los eventos de este día". Los eventos representan nuevas evaluaciones de configuración.
@@ -53,7 +53,7 @@ También hay tres puntos de entrada del panel de administración de amenazas [y 
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>Puntuación de exposición y puntuación segura de Microsoft para gráficos de dispositivos
 
-En el panel de administración de amenazas y vulnerabilidades, mantenga el mouse sobre el gráfico puntuación de exposición para ver los eventos de vulnerabilidad de software principales de ese día que afectaron a sus dispositivos. Mantenga el mouse sobre el gráfico Puntuación segura de Microsoft para dispositivos para ver las nuevas evaluaciones de configuración de seguridad que afectan a su puntuación.
+En el panel Administración de amenazas y vulnerabilidades, mantenga el mouse sobre el gráfico puntuación de exposición para ver los eventos de vulnerabilidad de software principales de ese día que afectaron a los dispositivos. Mantenga el mouse sobre el gráfico Puntuación segura de Microsoft para dispositivos para ver las nuevas evaluaciones de configuración de seguridad que afectan a su puntuación.
 
 Si no hay eventos que afecten a los dispositivos o a la puntuación de los dispositivos, no se mostrará ninguno.
 
@@ -84,7 +84,7 @@ Los dos números grandes en la parte superior de la página muestran el número 
 
 ![Página escala de tiempo de eventos](images/tvm-event-timeline-overview-mixed-type.png)
 
-### <a name="columns"></a>Columnas
+### <a name="columns"></a>Columns
 
 - **Fecha:** mes, día, año
 - **Evento:** evento de impacto, incluido el componente, el tipo y el número de dispositivos afectados
@@ -132,7 +132,7 @@ Vaya a la pestaña escala de tiempo del evento para ver todos los eventos relaci
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Información general sobre amenazas administración de vulnerabilidades amenazas](next-gen-threat-and-vuln-mgt.md)
 - [Panel](tvm-dashboard-insights.md)
 - [Puntuación de exposición](tvm-exposure-score.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)

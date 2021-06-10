@@ -76,10 +76,10 @@ La directiva de control de dispositivos se incluye en el perfil de configuració
 
 Dentro del perfil de configuración, la directiva de control de dispositivos se define en la siguiente sección:
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | deviceControl |
+| **Clave** | deviceControl |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -96,10 +96,10 @@ Cuando se aplica la directiva de control de dispositivos que has puesto en march
 
 Cuando los usuarios finales hacen clic en esta notificación, se abre una página web en el explorador predeterminado. Puede configurar la dirección URL que se abre cuando los usuarios finales hacen clic en la notificación.
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | navigationTarget |
+| **Clave** | navigationTarget |
 | **Tipo de datos** | Cadena |
 | **Comments** | Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto. |
 
@@ -110,10 +110,10 @@ La sección de medios extraíbles de la directiva de control de dispositivos se 
 > [!NOTE]
 > Actualmente se admiten los siguientes tipos de medios extraíbles y se pueden incluir en la directiva: dispositivos de almacenamiento USB.
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | removableMediaPolicy |
+| **Clave** | removableMediaPolicy |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -143,10 +143,10 @@ En la sección medios extraíbles, hay una opción para establecer el nivel de c
 - `audit` - En este nivel de aplicación, si el acceso a un dispositivo está restringido, se muestra una notificación al usuario, pero aún se puede usar el dispositivo. Este nivel de cumplimiento puede ser útil para evaluar la eficacia de una directiva.
 - `block` - En este nivel de cumplimiento, las operaciones que el usuario puede realizar en el dispositivo se limitan a lo que se define en la directiva. Además, se genera una notificación al usuario. 
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | enforcementLevel |
+| **Clave** | enforcementLevel |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | auditoría (valor predeterminado) <br/> bloque |
 
@@ -168,10 +168,10 @@ Esta configuración se puede establecer en:
 > [!NOTE]
 > El `execute` permiso solo hace referencia a la ejecución de archivos binarios de Mach-O. No incluye la ejecución de scripts u otros tipos de cargas.
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | permiso |
+| **Clave** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | ninguno <br/> read <br/> write <br/> execute |
 
@@ -183,35 +183,35 @@ En el nivel superior de la directiva de medios extraíbles, opcionalmente puede 
 
 El `vendors` diccionario contiene una o más entradas, con cada entrada identificada por el identificador de proveedor.
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | proveedores |
+| **Clave** | proveedores |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 
 Para cada proveedor, puede especificar el nivel de permisos deseado para los dispositivos de ese proveedor.
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | permiso |
+| **Clave** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
 Además, puede especificar opcionalmente el conjunto de productos que pertenecen a ese proveedor para el que se definen permisos más granulares. El diccionario contiene una o más entradas, con `products` cada entrada identificada por el identificador del producto. 
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | productos |
+| **Clave** | productos |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 
 Para cada producto, puede especificar el nivel de permisos deseado para ese producto.
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | permiso |
+| **Clave** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
@@ -219,18 +219,18 @@ Además, puede especificar un conjunto opcional de números de serie para los qu
 
 El `serialNumbers` diccionario contiene una o más entradas, con cada entrada identificada por el número de serie.
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | serialNumbers |
+| **Clave** | serialNumbers |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 
 Para cada número de serie, puede especificar el nivel de permisos deseado.
 
-|Section|Valor|
+|Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | permiso |
+| **Clave** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
