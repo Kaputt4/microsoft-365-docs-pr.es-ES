@@ -27,26 +27,26 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
 ms.locfileid: "52331759"
 ---
-# <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a><span data-ttu-id="eda84-103">Agregar licencias a una suscripción comprada en el Centro de servicios de licencias por volumen</span><span class="sxs-lookup"><span data-stu-id="eda84-103">Add licenses to a subscription purchased through the Volume Licensing Service Center</span></span>
+# <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a><span data-ttu-id="b051c-103">Agregar licencias a una suscripción comprada en el Centro de servicios de licencias por volumen</span><span class="sxs-lookup"><span data-stu-id="b051c-103">Add licenses to a subscription purchased through the Volume Licensing Service Center</span></span>
 
-<span data-ttu-id="eda84-104">Si compró su plan Microsoft 365 para empresas o Office 365 Enterprise a través de un partner de terceros, debe comprar licencias adicionales a través de ese partner.</span><span class="sxs-lookup"><span data-stu-id="eda84-104">If you purchased your Microsoft 365 for business or Office 365 Enterprise plan through a third party partner, you must buy additional licenses through that partner.</span></span> <span data-ttu-id="eda84-105">Si Microsoft conoce al partner donde adquirió la suscripción, puede averiguar cómo ponerse en contacto con él usando el procedimiento siguiente.</span><span class="sxs-lookup"><span data-stu-id="eda84-105">If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.</span></span>
+<span data-ttu-id="b051c-104">Si compró su plan Microsoft 365 para empresas o Office 365 Enterprise a través de un partner de terceros, debe comprar licencias adicionales a través de ese partner.</span><span class="sxs-lookup"><span data-stu-id="b051c-104">If you purchased your Microsoft 365 for business or Office 365 Enterprise plan through a third party partner, you must buy additional licenses through that partner.</span></span> <span data-ttu-id="b051c-105">Si Microsoft conoce al partner donde adquirió la suscripción, puede averiguar cómo ponerse en contacto con él usando el procedimiento siguiente.</span><span class="sxs-lookup"><span data-stu-id="b051c-105">If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.</span></span>
   
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="eda84-106">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="eda84-106">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="b051c-106">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="b051c-106">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="eda84-107">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="eda84-107">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="b051c-107">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="b051c-107">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="eda84-108">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="eda84-108">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="b051c-108">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="b051c-108">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.</span></span>
 ::: moniker-end
 
-2. <span data-ttu-id="eda84-109">Seleccione la suscripción a la que desea agregar licencias y, a continuación, seleccione el vínculo Centro de servicios de licencias por volumen **(VLSC).**</span><span class="sxs-lookup"><span data-stu-id="eda84-109">Select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
+2. <span data-ttu-id="b051c-109">Seleccione la suscripción a la que desea agregar licencias y, a continuación, seleccione el vínculo Centro de servicios de licencias por volumen **(VLSC).**</span><span class="sxs-lookup"><span data-stu-id="b051c-109">Select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
 
-3. <span data-ttu-id="eda84-110">Siga los pasos del VLSC para completar la compra.</span><span class="sxs-lookup"><span data-stu-id="eda84-110">Follow the steps in the VLSC to complete your purchase.</span></span>
+3. <span data-ttu-id="b051c-110">Siga los pasos del VLSC para completar la compra.</span><span class="sxs-lookup"><span data-stu-id="b051c-110">Follow the steps in the VLSC to complete your purchase.</span></span>
