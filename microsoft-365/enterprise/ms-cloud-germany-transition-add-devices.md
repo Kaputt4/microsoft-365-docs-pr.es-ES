@@ -17,7 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Resumen: información adicional del dispositivo sobre los servicios al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a los servicios de Office 365 en la nueva región del centro de datos alemán.'
+description: 'Resumen: información adicional del dispositivo sobre los servicios al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
 ms.openlocfilehash: 21188372f03af394fe1c0e227c1adeabbad02a85
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -45,15 +45,15 @@ Es fundamental para el éxito que solo desinscribas y vuelvas a registrar los di
 
 **¿Cómo restaure el estado de mi dispositivo después de la migración?**
 
-En el caso de los dispositivos Windows híbridos unidos a Azure AD y propiedad de la empresa que están registrados en Azure AD, los administradores podrán administrar la migración de estos dispositivos a través de flujos de trabajo desencadenados de forma remota que anularán el registro de los estados de dispositivo antiguos.
+Para los dispositivos Windows híbridos unidos a Azure AD y propiedad de la compañía que están registrados en Azure AD, los administradores podrán administrar la migración de estos dispositivos a través de flujos de trabajo desencadenados de forma remota que anularán el registro de los estados de dispositivo antiguos.
   
-Para todos los demás dispositivos, incluidos los dispositivos Personales de Windows registrados en Azure AD, el usuario final debe realizar estos pasos manualmente. Para los dispositivos unidos a Azure AD, los usuarios deben tener una cuenta de administrador local para anular el registro y volver a registrar sus dispositivos.
+Para todos los demás dispositivos, incluidos los dispositivos Windows personales que están registrados en Azure AD, el usuario final debe realizar estos pasos manualmente. Para los dispositivos unidos a Azure AD, los usuarios deben tener una cuenta de administrador local para anular el registro y volver a registrar sus dispositivos.
 
 Microsoft publicará instrucciones sobre cómo restaurar correctamente el estado del dispositivo. 
  
 **¿Cómo sé que todos mis dispositivos están registrados en la nube pública?**
 
-Para comprobar si los dispositivos están registrados en la nube pública, debe exportar y descargar la lista de dispositivos del portal de Azure AD a una hoja de cálculo de Excel. A continuación, filtre los dispositivos registrados (mediante la columna _registeredTime)_ después de la fase de migración [Independiente de Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
+Para comprobar si los dispositivos están registrados en la nube pública, debe exportar y descargar la lista de dispositivos del portal de Azure AD a una Excel de cálculo. A continuación, filtre los dispositivos registrados (mediante la columna _registeredTime)_ después de la fase de migración [Independiente de Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
 El registro del dispositivo se desactiva después de la migración del inquilino y no se puede habilitar ni deshabilitar. Si no se usa Intune, inicie sesión en la suscripción y ejecute este comando para volver a activar la opción:
 
@@ -63,11 +63,11 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 ## <a name="hybrid-azure-ad-join"></a>Unión a Azure AD híbrido
 
-### <a name="windows-down-level"></a>Nivel inferior de Windows
+### <a name="windows-down-level"></a>Windows nivel inferior
 
-Los dispositivos de nivel inferior de _Windows_ son dispositivos Windows que actualmente ejecutan versiones anteriores de Windows (como Windows 8.1 o Windows 7) o que ejecutan versiones de Windows Server anteriores a 2019 y 2016. Si estos dispositivos se registraron antes, tendrás que anular el registro y volver a registrar esos dispositivos. 
+_Windows_ de nivel inferior son dispositivos Windows que actualmente ejecutan versiones anteriores de Windows (como Windows 8.1 o Windows 7) o que ejecutan versiones de servidor de Windows anteriores a 2019 y 2016. Si estos dispositivos se registraron antes, tendrás que anular el registro y volver a registrar esos dispositivos. 
 
-Para determinar si un dispositivo de nivel inferior de Windows se unió previamente a Azure AD, use el siguiente comando en el dispositivo:
+Para determinar si un Windows de nivel inferior se unió previamente a Azure AD, use el siguiente comando en el dispositivo:
 
 ```console
 %programfiles%\Microsoft Workplace Join\autoworkplace /status
@@ -94,15 +94,15 @@ Solo para dispositivos que muestran que el dispositivo está unido (en virtud de
 "%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
 ```
 
-El comando anterior solo debe ejecutarse una vez por usuario de dominio que inicie sesión en el dispositivo de nivel inferior de Windows. Este comando debe ejecutarse en el contexto del inicio de sesión del usuario del dominio. 
+El comando anterior solo debe ejecutarse una vez por usuario de dominio que inicie sesión en Windows dispositivo de nivel inferior. Este comando debe ejecutarse en el contexto del inicio de sesión del usuario del dominio. 
 
 Debe tenerse suficiente cuidado para no ejecutar este comando cuando el usuario inicia sesión posteriormente. Cuando se ejecute el comando anterior, borrará el estado unido del equipo híbrido local unido a Azure AD para el usuario que ha iniciado sesión. Y, si el equipo aún está configurado para que esté unido a Azure AD híbrido en el espacio empresarial, intentará unirse cuando el usuario vuelva a abrir sesión.
 
-### <a name="windows-current"></a>Windows Current
+### <a name="windows-current"></a>Windows Actual
 
 #### <a name="unjoin"></a>Unjoin
 
-Para determinar si el dispositivo Windows 10 se unió previamente a Azure AD, ejecute el siguiente comando en el dispositivo:
+Para determinar si el Windows 10 se unió previamente a Azure AD, ejecute el siguiente comando en el dispositivo:
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -128,7 +128,7 @@ Solo para dispositivos que muestran que el dispositivo está unido a Azure AD, e
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-El comando anterior solo debe ejecutarse una vez en un contexto administrativo en el dispositivo Windows.
+El comando anterior solo debe ejecutarse una vez en un contexto administrativo en el Windows dispositivo.
 
 #### <a name="hybrid-ad-joinre-registration"></a>Unión a AD híbrida\Nuevo registro
 
@@ -137,7 +137,7 @@ El dispositivo se une automáticamente a Azure AD sin intervención del usuario 
 
 ## <a name="azure-ad-join"></a>Unión a Azure AD
 
-**IMPORTANTE:** La entidad de servicio de Intune se habilitará después de la migración comercial, lo que implica la activación del registro de dispositivos de Azure AD. Si bloqueó el registro de dispositivos de Azure AD antes de la migración, debe deshabilitar la entidad de servicio de Intune con PowerShell para deshabilitar de nuevo el registro de dispositivos de Azure AD con el portal de Azure AD. Puede deshabilitar la entidad de servicio de Intune con este comando en el módulo Azure Active Directory PowerShell para Graph.
+**IMPORTANTE:** La entidad de servicio de Intune se habilitará después de la migración comercial, lo que implica la activación del registro de dispositivos de Azure AD. Si bloqueó el registro de dispositivos de Azure AD antes de la migración, debe deshabilitar la entidad de servicio de Intune con PowerShell para deshabilitar de nuevo el registro de dispositivos de Azure AD con el portal de Azure AD. Puede deshabilitar la entidad de servicio de Intune con este comando en el Azure Active Directory PowerShell para Graph módulo.
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
@@ -145,7 +145,7 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 ### <a name="unjoin"></a>Unjoin
 
-Para determinar si el dispositivo Windows 10 se unió previamente a Azure AD, el usuario o administrador puede ejecutar el siguiente comando en el dispositivo:
+Para determinar si el Windows 10 se unió previamente a Azure AD, el usuario o administrador puede ejecutar el siguiente comando en el dispositivo:
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -173,16 +173,16 @@ Administrador: si el administrador de la organización quiere unirse a los dispo
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-El comando anterior solo debe ejecutarse una vez en un contexto administrativo en el dispositivo Windows. 
+El comando anterior solo debe ejecutarse una vez en un contexto administrativo en el Windows dispositivo. 
 
 ### <a name="azure-ad-joinre-registration"></a>Unirse o volver a registrarse de Azure AD
 
-El usuario puede unir el dispositivo a Azure AD desde la configuración de Windows: Configuración > Cuentas > **Access Work Or School > Connect**.
+El usuario puede unir el dispositivo a Azure AD desde Windows configuración: Configuración > cuentas > **Acceso a trabajo o escuela > Conectar**.
  
 
 ## <a name="azure-ad-registered-company-owned"></a>Azure AD Registrado (propiedad de la compañía)
 
-Para determinar si el dispositivo Windows 10 está registrado en Azure AD, ejecute el siguiente comando en el dispositivo:
+Para determinar si el Windows 10 está registrado en Azure AD, ejecute el siguiente comando en el dispositivo:
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -203,7 +203,7 @@ Para quitar la cuenta registrada de Azure AD existente en el dispositivo:
 
 - Para quitar la cuenta registrada de Azure AD en el dispositivo, use CleanupWPJ, una herramienta que puede descargar desde aquí: [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
 
-- Extraiga el archivo ZIP y ejecute **WPJCleanup.cmd**. Esta herramienta iniciará el archivo ejecutable correcto en función de la versión de Windows en el dispositivo.
+- Extraiga el archivo ZIP y ejecute **WPJCleanup.cmd**. Esta herramienta iniciará el ejecutable correcto en función de la versión de Windows en el dispositivo.
 
 - Mediante un mecanismo como la directiva de grupo, el administrador puede ejecutar el comando en el dispositivo en el contexto de cualquier usuario que haya iniciado sesión en el dispositivo.
 
@@ -218,52 +218,52 @@ La presencia de este valor del Registro debe bloquear la unión al lugar de trab
 
 ## <a name="android"></a>Android
 
-Para Android, los usuarios tendrán que anular el registro y volver a registrar sus dispositivos. Esto se puede hacer a través de la aplicación Microsoft Authenticator o la aplicación Portal de empresa. 
+Para Android, los usuarios tendrán que anular el registro y volver a registrar sus dispositivos. Esto se puede hacer a través de la Microsoft Authenticator o la Portal de empresa aplicación. 
 
-- Desde la aplicación Microsoft Authenticator, los usuarios pueden ir **a Configuración > Registro de dispositivos.** Desde allí, los usuarios pueden anular el registro y volver a registrar su dispositivo.
+- Desde la Microsoft Authenticator, los usuarios pueden ir a **Configuración > Registro de dispositivos.** Desde allí, los usuarios pueden anular el registro y volver a registrar su dispositivo.
  
-- Desde el Portal de empresa, los usuarios pueden ir a **la pestaña Dispositivos** y quitar el dispositivo. Después, vuelva a inscribir el dispositivo mediante el Portal de empresa.
+- Desde el Portal de empresa, los usuarios pueden ir a la **pestaña Dispositivos** y quitar el dispositivo. Después, vuelva a inscribir el dispositivo mediante Portal de empresa.
  
 - Los usuarios también pueden anular el registro y volver a registrarse quitando la cuenta de la página de configuración de la cuenta y, a continuación, agregando de nuevo la cuenta de trabajo.
 
-Para anular el registro y volver a registrar el dispositivo en Android mediante la aplicación Microsoft Authenticator:
+Para anular el registro y volver a registrar el dispositivo en Android mediante la Microsoft Authenticator aplicación:
 
-1.  Abre la aplicación Microsoft Authenticator y ve a **Configuración**.
+1.  Abre la Microsoft Authenticator y ve **a Configuración**.
 2.  Seleccione **Registro de dispositivos**.
 3.  Anula el registro del dispositivo **seleccionando Anular registro**.
 4.  Para **registro de dispositivos,** vuelva a registrar el dispositivo escribiendo la dirección de correo electrónico y, a continuación, **seleccione Registrar**.
 
-Para anular el registro y volver a registrar un dispositivo Android con la página Configuración de Android:
+Para anular el registro y volver a registrar un dispositivo Android con la Configuración Android:
 
-1.  Abra **Configuración del dispositivo** y vaya a **Cuentas**.
+1.  Abra **Device Configuración** y vaya a **Cuentas**.
 2.  Seleccione la cuenta de trabajo que desea volver a registrar y seleccione **Quitar cuenta**.
 3.  Después de quitar la cuenta, en la **página Cuentas,** seleccione **Agregar cuenta > cuenta de trabajo**.
 4.  En **Workplace Join**, escriba su dirección de correo electrónico y seleccione **Unirse** para completar el registro del dispositivo.
 
-Para anular el registro y volver a registrar el dispositivo en Android desde el Portal de empresa:
+Para anular el registro y volver a registrar el dispositivo en Android desde Portal de empresa:
 
 1.  Inicie Portal de empresa y vaya a **la pestaña Dispositivos.**
 2.  Selecciona el dispositivo para ver los detalles del dispositivo.
 3.  En el menú puntos suspensivos (tres puntos), selecciona **Quitar** dispositivo y completa la eliminación confirmando en el cuadro de diálogo.
-4.  Ahora debes haber cerrado sesión en la aplicación Portal de empresa. Selecciona **Iniciar sesión** para volver a registrar el dispositivo.
+4.  Ahora debes haber cerrado sesión en la Portal de empresa aplicación. Selecciona **Iniciar sesión** para volver a registrar el dispositivo.
 
 Para obtener más información sobre las acciones necesarias durante la fase de migración de esta carga de trabajo, o el impacto en la administración o el uso, revise la información sobre Azure Active Directory (Azure AD) en Información adicional de Azure AD para la migración desde [Microsoft Cloud Deutschland](ms-cloud-germany-transition-azure-ad.md).
 
 ## <a name="ios"></a>iOS
 
-En dispositivos iOS, un usuario tendrá que quitar manualmente las cuentas almacenadas en caché de Microsoft Authenticator, anular el registro del dispositivo y cerrar sesión de cualquier aplicación nativa del dispositivo.
+En dispositivos iOS, un usuario tendrá que quitar manualmente las cuentas almacenadas en caché del Microsoft Authenticator, anular el registro del dispositivo y cerrar sesión de cualquier aplicación nativa del dispositivo.
 
-### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Paso 1: Si está presente, quite la cuenta de la aplicación Microsoft Authenticator
+### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Paso 1: Si está presente, quite la cuenta de la Microsoft Authenticator aplicación
 
-1. Pulsa la cuenta en la aplicación Microsoft Authenticator.
-2. Pulsa el **icono Configuración** en la esquina superior derecha. Si no ve el icono **Configuración,** es posible que no esté usando la versión más reciente de Microsoft Authenticator.
+1. Pulsa la cuenta en la Microsoft Authenticator aplicación.
+2. Pulsa el **Configuración** en la esquina superior derecha. Si no ve el  icono Configuración, es posible que no esté usando la versión más reciente de Microsoft Authenticator.
 3. Pulsa el **botón Quitar cuenta.**
 4. Pulsa **Todas las aplicaciones en este dispositivo**.
  
-### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>Paso 2: Anular el registro del dispositivo desde la aplicación Microsoft Authenticator
+### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>Paso 2: Anular el registro del dispositivo desde la Microsoft Authenticator aplicación
 
 1. Pulsa el icono del menú en la esquina superior derecha.
-2. Pulsa **Configuración** y, a continuación, **Registro de dispositivos.**
+2. Pulsa **Configuración** y, a continuación, **Registro de dispositivos**.
 4. Si se muestra tu cuenta, pulsa **Anular registro del dispositivo** y **Continuar** en el cuadro de diálogo. No debería ver ninguna cuenta después de eso.
  
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>Paso 3: Cerrar sesión de aplicaciones individuales si es necesario
@@ -274,7 +274,7 @@ Los usuarios pueden ir a aplicaciones individuales como Outlook, Teams y OneDriv
 
 Introducción:
 
-- [Migración de Microsoft Cloud Deutschland a servicios de Office 365 en las nuevas regiones del centro de datos alemán](ms-cloud-germany-transition.md)
+- [Migración de Microsoft Cloud Deutschland a Office 365 servicios en las nuevas regiones del centro de datos alemán](ms-cloud-germany-transition.md)
 - [Asistencia para la migración a Microsoft Cloud Alemania](https://aka.ms/germanymigrateassist)
 - [Cómo participar en la migración](ms-cloud-germany-migration-opt-in.md)
 - [Experiencia del cliente durante la migración](ms-cloud-germany-transition-experience.md)

@@ -35,7 +35,7 @@ ms.locfileid: "52771014"
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Código de error |Código de estado HTTP |Message 
+Código de error |Código de estado HTTP |Mensaje 
 :---|:---|:---
 BadRequest | BadRequest (400) | Mensaje de error General Bad Request.
 ODataError | BadRequest (400) | Consulta URI de OData no válida (se especifica el error específico).

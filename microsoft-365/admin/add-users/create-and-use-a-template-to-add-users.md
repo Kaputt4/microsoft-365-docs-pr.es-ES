@@ -43,8 +43,8 @@ Al crear una plantilla después de agregar un usuario, los valores que elija par
 - Ubicación de la licencia
 - Opciones de licencia
 - Opciones de aplicación
-- Role
-- La mayoría de la información de perfil, como Perfil de **trabajo,** **Departamento,** **Office,** **Teléfono de Office** y Dirección de **calle** 
+- Función
+- La mayoría de la información de perfil, como **Perfil** de trabajo, **Departamento**, **Office**, **Office teléfono** y Dirección de **la calle** 
 
 La siguiente información es específica del usuario y no se guarda en la plantilla:
 

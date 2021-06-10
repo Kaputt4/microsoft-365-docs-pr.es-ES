@@ -30,18 +30,18 @@ ms.locfileid: "51578764"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Cambiar de Google Workspace: información general
 
-Siga estos pasos para mover los datos, el correo electrónico y los usuarios de Google Workspace a Microsoft 365 para empresas.
+Complete los siguientes pasos para mover los datos, el correo electrónico y los usuarios de Google Workspace a Microsoft 365 para empresas.
 
 
 | Paso  |Descripción  |
 |---------|---------|
-|Paso 1 |  [Registrarse en](../sign-up.md) Microsoft 365 Empresa Premium       |
-|Paso 2 |   [Configurar Microsoft 365 para la migración de Google Workspace](set-up-microsoft-365-forgoogle.md). </br> En este paso, validará el dominio que use en Google Workspace, agregará usuarios y configurará la seguridad básica para dispositivos. |
-|Paso 3 | [Configurar directivas de seguridad para dispositivos Windows](../secure-win10-pcs.md).</br> La seguridad de Windows se configura por separado en la página De instalación del Centro de administración de Microsoft 365. |
+|Paso 1 |  [Regístrate](../sign-up.md) para Microsoft 365 Empresa Premium       |
+|Paso 2 |   [Configurar Microsoft 365 migración de Google Workspace](set-up-microsoft-365-forgoogle.md). </br> En este paso, validará el dominio que use en Google Workspace, agregará usuarios y configurará la seguridad básica para dispositivos. |
+|Paso 3 | [Configurar directivas de seguridad para Windows dispositivos](../secure-win10-pcs.md).</br> Windows seguridad se configura por separado en la página Configuración del centro Microsoft 365 administración. |
 |Paso 4|[Agregar el dominio de Google Workspace a Microsoft 365](add-google-domain.md) </br> Después de comprobar que es el propietario del dominio que está usando para el correo electrónico, usted y todos los demás usuarios pueden empezar a usar su correo electrónico antiguo para iniciar sesión en Microsoft 365 Empresa premium. |
-|Paso 5 | [Instalar aplicaciones de Office y Microsoft Teams](../install-office.md).</br> Todas las personas que tienen licencias de Microsoft 365 deben instalar las aplicaciones de Office en sus dispositivos de trabajo.|
-|Paso 6 | [Migre los elementos de calendario y correo electrónico de todos.](migrate-email.md)</br> En este paso, ejecutará una migración de Exchange Online para mover el correo electrónico, el calendario y los contactos de todos los usuarios desde Google Workspace.  |
-|Paso 7 | [Conectar dominio a Microsoft 365](connect-domain-tom365.md). </br> Después de conectar el correo electrónico de dominio, empezará a ir a Microsoft 365 y todos los servicios de Microsoft 365 funcionarán.|
-|Paso 8|Usa [Mover para mover los datos de](mover-migrate-files.md) todos los usuarios de Drive a OneDrive y de unidades compartidas a sitios de grupo.</br> En este paso, todos los datos de las unidades personales y compartidas se copian y se mueven a Microsoft 365.|
+|Paso 5 | [Instalar Office aplicaciones y Microsoft Teams](../install-office.md).</br> Todas las personas que tienen Microsoft 365 licencias deben instalar las Office en sus dispositivos de trabajo.|
+|Paso 6 | [Migre los elementos de calendario y correo electrónico de todos.](migrate-email.md)</br> En este paso, ejecutará una migración Exchange Online para mover el correo electrónico, el calendario y los contactos de todos los usuarios desde Google Workspace.  |
+|Paso 7 | [Conectar dominio a Microsoft 365](connect-domain-tom365.md). </br> Después de conectar el correo electrónico de dominio, empezará a Microsoft 365 y todos los servicios Microsoft 365 funcionarán.|
+|Paso 8|Use [Mover para mover los datos de](mover-migrate-files.md) todos los usuarios de Drive a OneDrive y de unidades compartidas a sitios de grupo.</br> En este paso, todos los datos de las unidades personales y compartidas se copian y se mueven a Microsoft 365.|
 |Paso 9| [Discontinue Google Workspace pero](cancel-google.md) mantenga el dominio. </br> Si Google administra tu dominio, puedes mantenerlo allí incluso después de interrumpir la suscripción a Google Workspace. También puede elegir moverlo a otro host DNS si lo desea.|
 |||

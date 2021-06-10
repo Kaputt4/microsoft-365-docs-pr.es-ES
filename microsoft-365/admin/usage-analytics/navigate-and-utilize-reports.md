@@ -65,13 +65,13 @@ El usuario que haya instanciado la aplicación de plantilla tendrá la capacidad
 
 Para compartir los informes, solo tiene que seleccionar el botón compartir ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) en la parte superior de la página.
 
-Para obtener información sobre cómo personalizar los informes, consulte Personalización de los informes en análisis de uso de [Microsoft 365](customize-reports.md).
+Para obtener información sobre cómo personalizar los informes, consulte [Customizing the reports in Microsoft 365 usage analytics](customize-reports.md).
 
 Encontrará una gran cantidad de información adicional en la documentación de ayuda de Power BI:
 
-- [Conceptos básicos de Power BI](/power-bi/service-basic-concepts)
+- [Power BI conceptos básicos](/power-bi/service-basic-concepts)
 
-    Obtenga información sobre paneles, conjuntos de datos, informes y otros conceptos de Power BI.
+    Obtenga información sobre el panel, los conjuntos de datos, los informes y otros Power BI de datos.
 
 - [Introducción a Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 

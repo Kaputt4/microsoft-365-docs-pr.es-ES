@@ -109,7 +109,7 @@ Para agregar usuarios a un grupo Microsoft 365, vea [Agregar usuarios y asignar 
   
 Obtenga información sobre cómo controlar las solicitudes de acceso [con Configurar y administrar solicitudes de acceso.](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Debes configurar aplicaciones Office en tus dispositivos para que puedas editar los archivos almacenados en el sitio de grupo desde tu tableta o teléfono. Si no instala las aplicaciones de Office en su tableta o teléfono, podrá ver los archivos en el sitio de grupo, pero no editarlos. 
     

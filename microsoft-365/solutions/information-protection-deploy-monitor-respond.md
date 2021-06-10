@@ -26,9 +26,9 @@ ms.locfileid: "50928429"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisar y responder a incidentes de privacidad de datos en su organización
 
-Las características de Microsoft 365 están disponibles para ayudarle a supervisar, investigar y responder a incidentes de privacidad de datos en su organización a medida que opera las capacidades relacionadas. Tener procesos, procedimientos y otra documentación para cada uno de ellos también puede ser importante para demostrar el cumplimiento de los organismos reguladores.
+Microsoft 365 están disponibles para ayudarle a supervisar, investigar y responder a incidentes de privacidad de datos en su organización a medida que opera las capacidades relacionadas. Tener procesos, procedimientos y otra documentación para cada uno de ellos también puede ser importante para demostrar el cumplimiento de los organismos reguladores.
 
-Entre ellos se incluyen: 
+Entre ellas se incluyen: 
 
 - Directivas de auditoría y alerta
 - Solicitudes del interesado (incluida la búsqueda de contenido y la exhibición de documentos electrónicos)
@@ -56,7 +56,7 @@ Por lo general, los reglamentos de privacidad de datos piden lo siguiente para l
 
 Es posible que su organización también desee realizar actividades de supervisión y respuesta para otros fines, como otras necesidades de cumplimiento o por motivos empresariales. Establecer el esquema de supervisión y respuesta para la privacidad de datos debe realizarse como parte de la planeación, implementación y administración de la supervisión y respuesta generales.
 
-Para ayudarle a empezar con un esquema de supervisión y respuesta en Microsoft 365 para las regulaciones de privacidad de datos, en este artículo se enumeran las funcionalidades útiles de Microsoft 365 para responder a preguntas como: 
+Para ayudarle a empezar con un esquema de supervisión y respuesta en Microsoft 365 para las regulaciones de privacidad de datos, en este artículo se enumeran las funcionalidades útiles en Microsoft 365 para responder a preguntas como: 
 
 - ¿Qué tipo de técnicas diarias de supervisión, investigación e informes están disponibles para los distintos tipos de datos y orígenes?
 - Qué mecanismos se necesitan para controlar las solicitudes de interesados (DSR) y las acciones correctivas, como anonimización, redacción y eliminación.
@@ -76,8 +76,8 @@ Consulte Solicitudes del interesado para el RGPD y [el CCPA](/compliance/regulat
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Administrar usuarios eliminados en Microsoft Stream
 
-Para Microsoft Stream, cuando un usuario se elimina de Azure Active Directory (Azure AD), si su nombre estaba asociado con un vídeo stream publicado antes de ese punto, su dirección de correo electrónico permanece asociada al vídeo. Consulta [Administrar usuarios eliminados de Microsoft Stream](/stream/managing-deleted-users) para quitarlo.
+Para Microsoft Stream, cuando se elimina un usuario de Azure Active Directory (Azure AD), si su nombre estaba asociado a un vídeo stream publicado antes de ese punto, su dirección de correo electrónico permanece asociada al vídeo. Consulta [Administrar usuarios eliminados de Microsoft Stream](/stream/managing-deleted-users) para quitarlo.
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Administración de riesgos de Insider como herramienta de investigación
 
-La administración de riesgos de Insider en [Microsoft 365](../compliance/insider-risk-management.md) es una característica del Centro de administración de cumplimiento de Microsoft para ayudarle a minimizar los riesgos internos, ya que le permite detectar, investigar y tomar medidas en actividades de riesgo en su organización.
+La administración de riesgos de [Insider](../compliance/insider-risk-management.md) en Microsoft 365 es una característica del Centro de administración de Cumplimiento de Microsoft para ayudarle a minimizar los riesgos internos, ya que le permite detectar, investigar y tomar medidas en actividades de riesgo en su organización.

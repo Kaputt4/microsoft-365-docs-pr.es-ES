@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Descubra las opciones para comprar Microsoft 365 Empresa Premium e instrucciones paso a paso para comprarla en el Centro de partners de Microsoft.
+description: Descubra las opciones para comprar Microsoft 365 Empresa Premium instrucciones paso a paso para comprarla en el Centro de partners de Microsoft.
 ms.openlocfilehash: 9e88229f22bdfbfc0b363b5bf56ed2def4db9b8c
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -38,11 +38,11 @@ ms.locfileid: "51580242"
 
 Si no tiene un socio y desea obtener Microsoft 365 Empresa Premium, puede [comprarlo aquí](https://www.microsoft.com/en-US/microsoft-365/business).
 
-Consulta [Registrarse en Microsoft 365 Empresa Premium para](sign-up.md) obtener instrucciones detalladas.
+Consulta [Registrarse para obtener Microsoft 365 Empresa Premium](sign-up.md) instrucciones detalladas.
 
-También puedes dirigirte a una [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) para comprar Microsoft 365 Empresa Premium y obtener ayuda para la configuración.
+También puedes dirigirte [a](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) un Microsoft Store para comprar Microsoft 365 Empresa Premium y obtener ayuda de configuración.
   
-## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Obtener Microsoft 365 Empresa Premium desde el Centro de partners de Microsoft
+## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Obtener Microsoft 365 Empresa Premium del Centro de partners de Microsoft
 
 1. Inicie sesión en el [Centro de partners de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=849910) con las credenciales que creó al inscribirse en el programa de proveedor de soluciones en la nube (CSP). 
     
@@ -50,9 +50,9 @@ También puedes dirigirte a una [Microsoft Store](https://www.microsoft.com/en-u
     
     ![En el Centro de partners de Microsoft, agregue un cliente.](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. En la página Suscripción **del** cliente, seleccione **Agregar** suscripción, elija la opción Pequeña empresa en Catálogo y, a continuación, elija **Microsoft 365 Empresa Premium**.
+3. En la página Suscripción **del** cliente, seleccione **Agregar** **suscripción,** elija la opción Pequeña empresa en Catálogo y, a continuación, elija Microsoft 365 Empresa Premium .
     
-    Seleccione el número de licencias que necesita (hasta 300). Si tiene más de 300 usuarios, consulte [Microsoft 365 Enterprise](../enterprise/index.yml) en su lugar. 
+    Seleccione el número de licencias que necesita (hasta 300). Si tiene más de 300 usuarios, vea [Microsoft 365 Enterprise](../enterprise/index.yml) en su lugar. 
     
     ![En la página Nueva suscripción, elija pequeña empresa.](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   

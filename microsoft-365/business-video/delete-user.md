@@ -40,7 +40,7 @@ Cuando un empleado deja la empresa, deberá quitarlos de Microsoft 365 para empr
 1. Seleccione el usuario que desea quitar y, a continuación, **seleccione Eliminar usuario**.
 1. Active la casilla para quitar su licencia y active la casilla para quitar sus alias de correo electrónico.
 1. Si el usuario tenía permisos delegados de buzón de correo, puede quitar los que hay aquí.
-1. Active la casilla para dar a otro usuario acceso a OneDrive del antiguo empleado y buscarlo.
+1. Active la casilla para dar a otro usuario acceso a la OneDrive del antiguo empleado y buscar ese usuario.
 1. Seleccione su nombre.
 1. Este usuario ahora tendrá 30 días para mover los archivos a una nueva ubicación.
 1. Active la casilla para dar a otro usuario acceso al correo electrónico del antiguo empleado y elija Seleccionar un usuario **y establecer opciones de correo electrónico.**

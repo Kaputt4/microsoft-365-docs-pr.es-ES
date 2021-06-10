@@ -32,9 +32,9 @@ ms.locfileid: "51579223"
 ---
 # <a name="device-list-csv-file"></a>Lista de dispositivos CSV-file
 
-## <a name="device-list-csv-file-format"></a>Formato de archivo .csv de lista de dispositivos
+## <a name="device-list-csv-file-format"></a>Lista de dispositivos .csv formato de archivo
 
-Para administrar e implementar dispositivos a través de Windows Autopilot, necesitarás un archivo .csv que contenga información específica sobre los dispositivos.
+Para administrar e implementar dispositivos mediante Windows Autopilot, necesitarás un archivo .csv que contenga información específica sobre los dispositivos.
   
 Las columnas del archivo de lista de dispositivos deben tener los siguientes encabezados en el orden especificado:
   
@@ -50,7 +50,7 @@ Al agregar dispositivos, también debes agregarlos a un perfil. Un perfil se usa
   
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Documentación y recursos de Microsoft 365 para empresas](../../business/index.yml)
+[Microsoft 365 documentación y recursos para empresas](../../business/index.yml)
   
 [Introducción a Microsoft 365 para empresas](../../business/microsoft-365-business-overview.md)
   

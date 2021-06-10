@@ -26,12 +26,12 @@ ms.locfileid: "50909351"
 ---
 # <a name="tune-microsoft-365-performance"></a>Optimizar el rendimiento de Microsoft 365
 
-En este artículo se incluyen cursos de formación, blogs, artículos y otros recursos que le dicen cómo mejorar el rendimiento de Microsoft 365.
+En este artículo se incluyen cursos de formación, blogs, artículos y otros recursos que te dicen cómo mejorar el rendimiento de Microsoft 365.
   
-Este artículo forma parte del proyecto Planeación de red y ajuste del rendimiento [para Microsoft 365.](./network-planning-and-performance.md)
+Este artículo forma parte de la planeación [de red y](./network-planning-and-performance.md) el ajuste del rendimiento para Microsoft 365 proyecto.
    
-## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>Artículos sobre cómo ajustar el rendimiento de Microsoft 365 y Office 365
+## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>Artículos sobre el ajuste Microsoft 365 y Office 365 rendimiento
 
-Echa un vistazo a las 10 sugerencias principales para optimizar y solucionar problemas de conectividad de red de [Office 365](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) de Paul Collinge. 
+Echa un vistazo a las [10](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) sugerencias principales para optimizar y solucionar problemas de la conectividad Office 365 red de Paul Collinge. 
   
-Para obtener información acerca del uso de la traducción de direcciones de red con Microsoft 365, vea [Compatibilidad con NAT con Microsoft 365](nat-support-with-microsoft-365.md).
+Para obtener información acerca del uso de la traducción de direcciones de red Microsoft 365, consulte [Compatibilidad con NAT con Microsoft 365](nat-support-with-microsoft-365.md).

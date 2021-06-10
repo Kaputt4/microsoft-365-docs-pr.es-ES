@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Obtenga información sobre los distintos estados del dispositivo en la lista Acciones del dispositivo en la página Principal de administración de Microsoft 365 para empresas.
+description: Obtén información sobre los distintos estados del dispositivo en la lista Acciones del dispositivo en la página Principal de administración Microsoft 365 para empresas.
 ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -44,8 +44,8 @@ Los dispositivos de la lista **Acciones de dispositivo** (página principal del 
 |**Estado**|**Descripción**|
 |:-----|:-----|
 |Administrado por Intune  <br/> |Administrado por Microsoft 365 Empresa Premium.  <br/> |
-|Pendiente de retirada  <br/> |Microsoft 365 Empresa Premium se prepara para quitar los datos de la empresa del dispositivo.  <br/> |
-|Retirada en curso  <br/> |Microsoft 365 Empresa Premium está quitando actualmente los datos de la compañía del dispositivo.  <br/> |
+|Pendiente de retirada  <br/> |Microsoft 365 Empresa Premium está preparándose para quitar los datos de la compañía del dispositivo.  <br/> |
+|Retirada en curso  <br/> |Microsoft 365 Empresa Premium está quitando datos de la compañía del dispositivo.  <br/> |
 |Error de retirada  <br/> | No se pudo completar la acción para quitar los datos de la compañía.  <br/> |
 |Retirada cancelada  <br/> |Se canceló la acción Retirar.  <br/> |
 |Borrado pendiente  <br/> |Esperando a que se inicie el restablecimiento de fábrica.  <br/> |

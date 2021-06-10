@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Obtén información sobre cómo configurar directivas de dispositivos para Windows 10 que se aplican a todos los usuarios de la organización, asegurándose de que se conecten de forma segura.
+description: Obtenga información sobre cómo configurar directivas de dispositivos para Windows 10 que se aplican a todos los usuarios de la organización, lo que garantiza que se conecten de forma segura.
 ms.openlocfilehash: c7d27b903734f9348471bb7765b88650caeed9d5
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,7 +37,7 @@ ms.locfileid: "51580282"
 ---
 # <a name="configure-windows-10-devices"></a>Configurar dispositivos con Windows 10
 
-Durante la instalación, creas una directiva de dispositivo para Windows 10 que se aplica a todos los usuarios de tu organización. Cuando un usuario inicia sesión en una aplicación de Office en su dispositivo Windows 10 con su cuenta laboral o educativa, la configuración que configura se aplica automáticamente para asegurarse de que el usuario se conecta de forma segura.
+Durante la instalación, creas una directiva de dispositivo para Windows 10 que se aplica a todos los usuarios de la organización. Cuando un usuario inicia sesión en un Aplicación de Office en su dispositivo Windows 10 con su cuenta laboral o educativa, la configuración que configura se aplica automáticamente para asegurarse de que el usuario se conecta de forma segura.
   
 Le recomendamos que acepte las opciones predeterminadas durante la configuración. Después de la instalación, puede crear más directivas y dirigirlas a grupos específicos de usuarios.
   

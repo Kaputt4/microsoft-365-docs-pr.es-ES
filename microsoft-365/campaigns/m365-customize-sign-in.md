@@ -33,7 +33,7 @@ ms.locfileid: "51579811"
 
 Su empresa o campaña puede facilitar a las agencias de seguridad presentar cargos legales contra los criminales en línea agregando un aviso de privacidad y consentimiento a la página de inicio de sesión.
 
-Puede personalizar la página de inicio de sesión con la personalización de marca. También puede agregar texto para ayudar a los usuarios a iniciar sesión o para señalar requisitos legales o restricciones para obtener acceso a los recursos de Microsoft 365.
+Puede personalizar la página de inicio de sesión con la personalización de marca. También puede agregar texto para ayudar a los usuarios a iniciar sesión o para señalar requisitos legales o restricciones para obtener acceso a Microsoft 365 recursos.
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>Personalización de diseño del texto de la página de inicio de sesión
 

@@ -32,14 +32,14 @@ ms.locfileid: "51579018"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 
-Descubra cómo los empleados usan los servicios de Microsoft 365, como el correo electrónico o OneDrive, y tome medidas.
+Descubra cómo los empleados usan Microsoft 365 servicios como correo electrónico o OneDrive, y tome medidas.
 
 En el [Centro de administración,](https://admin.microsoft.com)puede ver todos los informes disponibles.
 
 ## <a name="try-it"></a>¿Se atreve?
 
 1. Vaya a **Informes** y, a continuación, **Uso**. Para obtener más información sobre cualquier informe, seleccione uno. El informe Usuarios activos muestra los servicios que más usan las personas de su empresa.
-1. Por ejemplo, veamos el informe de OneDrive. Aquí podemos ver cuántas personas tienen una cuenta, también puede ver el número de archivos totales y activos, así como el almacenamiento usado. Para ver todos los demás informes, vaya al menú desplegable.
+1. Como ejemplo, vamos a seguir adelante y veamos el informe OneDrive datos. Aquí podemos ver cuántas personas tienen una cuenta, también puede ver el número de archivos totales y activos, así como el almacenamiento usado. Para ver todos los demás informes, vaya al menú desplegable.
 1. Aquí podemos echar un vistazo al informe de uso de la aplicación de correo electrónico y ver los métodos que los empleados usan más para acceder a su correo electrónico. También puede ver información específica de un individuo, pero los detalles están ocultos de forma predeterminada. Para mostrar los detalles individuales del usuario, vaya **a Configuración** y, a continuación, Servicios **& complementos**.
 1. En el panel de informes, podemos activar el identificador anónimo. Ahora vamos a cerrar el panel y volver a **informes,** **uso** y actividad **de correo electrónico**. Aquí podemos ver información específica de un individuo.
 

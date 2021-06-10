@@ -32,7 +32,7 @@ landingContent:
       url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
-    - text: Configurar la inscripción automática para dispositivos Windows 10
+    - text: Configurar la inscripción automática para Windows 10 dispositivos
       url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: Configurar la inscripción de Android
       url: /mem/intune/enrollment/android-enroll
@@ -46,7 +46,7 @@ landingContent:
       url: ../../business/view-policies-and-devices.md
     - text: Eliminar datos de la empresa de dispositivos
       url: ../../business/remove-company-data.md
-    - text: Restablecer los dispositivos Windows a la configuración de fábrica
+    - text: Restablecer Windows dispositivos a la configuración de fábrica
       url: ../../business/reset-devices-to-factory-settings.md
 - title: Administrar dispositivos y datos de aplicaciones con Microsoft 365 para empresas
   linkLists:
@@ -54,7 +54,7 @@ landingContent:
     links:
     - text: Información general sobre Microsoft 365 para empresas
       url: ../../enterprise/microsoft-365-overview.md
-    - text: Mapa de ruta de administración de dispositivos para Microsoft 365 para empresas
+    - text: Mapa de ruta de administración de dispositivos Microsoft 365 para empresas
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
 - title: Administrar dispositivos y datos de aplicaciones con movilidad y seguridad básicas
   linkLists:

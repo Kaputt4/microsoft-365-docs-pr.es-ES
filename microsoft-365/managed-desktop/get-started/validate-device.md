@@ -1,5 +1,5 @@
 ---
-title: Validar nuevos dispositivos
+title: Validar los dispositivos nuevos
 description: Antes de ordenar dispositivos, obtenga uno de cada modelo y pruebelo
 ms.service: m365-md
 author: jaimeo
@@ -18,7 +18,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52246293"
 ---
-# <a name="validate-new-devices"></a>Validar nuevos dispositivos
+# <a name="validate-new-devices"></a>Validar los dispositivos nuevos
 
 Independientemente de si eres completamente nuevo en Escritorio administrado de Microsoft o un suscriptor de larga duración, lo mejor es probar un ejemplo de cualquier modelo de dispositivo que estés inscribiendo en el servicio por primera vez. Esto es así si está ordenando dispositivos nuevos o reusando los existentes, incluidos los dispositivos recomendados para Escritorio administrado de Microsoft en el sitio de dispositivos profesionales Windows 10 Pro [tienda.](https://www.microsoft.com/windowsforbusiness/view-all-devices) En ese sitio, vea los dispositivos recomendados para  su uso con el servicio expandiendo **Características** en el área Filtrar por y, a continuación, **seleccionando Escritorio administrado de Microsoft**. La validación de dispositivos garantiza que ofrecerán la experiencia de usuario que esperas.
 

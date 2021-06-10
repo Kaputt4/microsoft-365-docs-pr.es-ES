@@ -27,11 +27,11 @@ ms.locfileid: "50928010"
 En caso de que las personas se tomen problemas inesperados después de que haya barreras de información, hay algunos pasos que puede seguir para resolver esos problemas. Use este artículo como guía.
 
 > [!IMPORTANT]
-> Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como uno de los siguientes:<br/>- Administrador global de Microsoft 365 Enterprise<br/>- Administrador global<br/>- Administrador de cumplimiento<br/>- Administración de cumplimiento de IB (este es un nuevo rol!<p>Para obtener más información sobre los requisitos previos para las barreras de información, vea [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Asegúrese de [conectarse a PowerShell & centro de seguridad y cumplimiento.](/powershell/exchange/connect-to-scc-powershell)
+> Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como uno de los siguientes:<br/>- Microsoft 365 Enterprise administrador global<br/>- Administrador global<br/>- Administrador de cumplimiento<br/>- Administración de cumplimiento de IB (este es un nuevo rol!<p>Para obtener más información sobre los requisitos previos para las barreras de información, vea [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Asegúrese de [conectarse a PowerShell & centro de seguridad y cumplimiento.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problema: Los usuarios se bloquean inesperadamente para que no se comuniquen con otros usuarios en Microsoft Teams 
 
-En este caso, los usuarios están informando de problemas inesperados que se comunican con otros usuarios de Microsoft Teams. Por ejemplo:
+En este caso, las personas informan de problemas inesperados que se comunican con otros usuarios en Microsoft Teams. Por ejemplo:
 
 - Un usuario busca, pero no puede encontrar, otro usuario en Microsoft Teams.
 - Un usuario puede encontrar, pero no seleccionar, otro usuario en Microsoft Teams.
@@ -108,7 +108,7 @@ Compruebe que los usuarios en cuestión están incluidos en una directiva de bar
 
 ## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>Problema: necesito quitar un solo usuario de una directiva de barrera de información
 
-En este caso, las directivas de barrera de información están en vigor y uno o varios usuarios se bloquean inesperadamente para que no se comuniquen con otros usuarios de Microsoft Teams. En lugar de quitar las directivas de barrera de información por completo, puede quitar uno o más usuarios individuales de las directivas de barrera de información.
+En este caso, las directivas de barrera de información están en vigor y uno o varios usuarios se bloquean inesperadamente para que no se comuniquen con otros usuarios en Microsoft Teams. En lugar de quitar las directivas de barrera de información por completo, puede quitar uno o más usuarios individuales de las directivas de barrera de información.
 
 ### <a name="what-to-do"></a>Qué hacer
 
@@ -157,7 +157,7 @@ En este caso, ha definido segmentos, ha definido directivas de barrera de inform
 
 ### <a name="what-to-do"></a>Qué hacer
 
-Asegúrese de que su organización no tiene directivas de libreta de [direcciones de Exchange](/exchange/address-books/address-book-policies/address-book-policies) en su lugar. Estas directivas impedirán la aplicación de directivas de barrera de información.
+Asegúrese de que su organización no tiene Exchange [directivas de libreta de direcciones](/exchange/address-books/address-book-policies/address-book-policies) en su lugar. Estas directivas impedirán la aplicación de directivas de barrera de información.
 
 1. Conéctese a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -165,7 +165,7 @@ Asegúrese de que su organización no tiene directivas de libreta de [direccione
 
     |**Resultados**|**Paso siguiente**|
     |:----------|:------------|
-    | Se enumeran las directivas de libreta de direcciones de Exchange | [Quitar directivas de libreta de direcciones](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | Exchange se enumeran las directivas de libreta de direcciones | [Quitar directivas de libreta de direcciones](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | No existen directivas de libreta de direcciones |Revisar los registros de auditoría para averiguar por qué se está fallando la aplicación de directiva |
 
 3. [Ver el estado de cuentas de usuario, segmentos, directivas o aplicación de directiva](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
@@ -211,5 +211,5 @@ Por ejemplo:
 
 ## <a name="resources"></a>Recursos
 
-- [Definir directivas para barreras de información en Microsoft Teams](information-barriers-policies.md)
+- [Definir directivas para las barreras de información en Microsoft Teams](information-barriers-policies.md)
 - [Barreras de información](information-barriers.md)

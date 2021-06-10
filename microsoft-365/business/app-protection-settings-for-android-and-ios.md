@@ -46,7 +46,7 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
     
 4. En **Tipo de directiva,** elija **Administración de aplicaciones** para Android o Administración de aplicaciones para **iOS,** en función del conjunto de directivas que desee crear. 
     
-5. Expanda **Proteger archivos de trabajo cuando se pierden** o roban dispositivos y Administrar cómo los usuarios acceden a los archivos de Office en **dispositivos móviles.** Configure las opciones de configuración que le gustarían. **Administrar cómo los usuarios tienen acceso a** los archivos de Office  en dispositivos móviles está desactivado de forma predeterminada, pero se recomienda activarlo y aceptar los valores predeterminados.  Para obtener más información, vea [Configuración disponible](#available-settings). 
+5. Expande **Proteger archivos de trabajo cuando se pierden o** roban dispositivos y Administrar cómo los usuarios acceden Office archivos en **dispositivos móviles.** Configure las opciones de configuración que le gustarían. **Administrar cómo los usuarios acceden Office archivos** en dispositivos móviles está  desactivado de forma predeterminada, pero se recomienda activarlo y aceptar los valores predeterminados.  Para obtener más información, vea [Configuración disponible](#available-settings). 
     
     Siempre puede usar el vínculo **Restablecer la configuración predeterminada** para volver a la configuración predeterminada. 
     
@@ -74,9 +74,9 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
     
 ## <a name="available-settings"></a>Configuración disponible
 
-En las tablas siguientes se proporciona información detallada sobre la configuración disponible para proteger los archivos de trabajo en dispositivos y la configuración que controla cómo los usuarios tienen acceso a los archivos de Office desde sus dispositivos móviles.
+En las tablas siguientes se proporciona información detallada acerca de la configuración disponible para proteger los archivos de trabajo en dispositivos y la configuración que controla la forma en que los usuarios acceden Office archivos desde sus dispositivos móviles.
   
- Para obtener más información, vea [How do protection features in Microsoft 365 Business Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
+ Para obtener más información, [vea How do protection features in Microsoft 365 Empresa Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
   
 ### <a name="settings-that-protect-work-files"></a>Opciones de configuración que protegen los archivos de trabajo
 
@@ -96,8 +96,8 @@ Las siguientes opciones de configuración permiten administrar la forma en que l
 |||
 |:-----|:-----|
 |Configuración  <br/> |Descripción  <br/> |
-|Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office  <br/> |Si esta configuración es **On,** los usuarios deben proporcionar otra forma de autenticación, además de su nombre de usuario y contraseña, para poder usar aplicaciones de Office en sus dispositivos móviles.<br/> |
+|Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office  <br/> |Si esta configuración es **On,** los usuarios deben proporcionar otra forma de autenticación, además de su nombre de usuario y contraseña, para poder usar Office aplicaciones en sus dispositivos móviles.<br/> |
 |Restablecer el PIN cuando no se haya podido iniciar sesión el siguiente número de veces  <br/> |Para impedir que un usuario no autorizado adivine aleatoriamente un PIN, este se restablecerá después de que se escriba de forma errónea el número de veces que especifique.  <br/> |
 |Requerir que los usuarios inicien sesión de nuevo si las aplicaciones de Office han estado inactivas durante  <br/> |Esta configuración determina cuánto tiempo puede estar inactivo un usuario antes de que se le pida que inicie sesión de nuevo.  <br/> |
 |Denegar el acceso a los archivos de trabajo en dispositivos con jailbreak o rooting  <br/> |Puede que algunos usuarios habilidosos tengan un dispositivo con jailbreak o rooting. Esto quiere decir que el usuario puede modificar el sistema operativo, lo que podría hacer que el dispositivo sea más vulnerable ante ataques de malware. Estos dispositivos se bloquean cuando esta configuración está **activada**.  <br/> |
-|No permitir que los usuarios copien contenido de aplicaciones de Office en aplicaciones personales  <br/> |Se permite de manera predeterminada, pero si la configuración está **activada**, el usuario podría copiar información de un archivo de trabajo en uno personal. Si la configuración está **desactivada**, el usuario no podrá copiar información de una cuenta de trabajo a una aplicación o cuenta personales.  <br/> |
+|No permitir que los usuarios copien contenido de aplicaciones Office en aplicaciones personales  <br/> |Se permite de manera predeterminada, pero si la configuración está **activada**, el usuario podría copiar información de un archivo de trabajo en uno personal. Si la configuración está **desactivada**, el usuario no podrá copiar información de una cuenta de trabajo a una aplicación o cuenta personales.  <br/> |

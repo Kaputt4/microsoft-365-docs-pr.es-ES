@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Determine las regulaciones de privacidad de datos, los escenarios relevantes, su preparación y los tipos de información confidencial que se encuentran en su entorno de Microsoft 365.
+description: Determine las normativas de privacidad de datos, los escenarios relevantes, la preparación y los tipos de información confidencial que se encuentran en su Microsoft 365 datos.
 ms.openlocfilehash: 6801f0af70e08d2b4efdc9e27f1cb1f1d636b821
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "50929173"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de datos e identificar elementos confidenciales con Microsoft 365
 
-Evaluar los riesgos y regulaciones de privacidad de datos a los que está sujeta su organización es un primer paso clave antes de implementar cualquier acción de mejora relacionada, incluidas las que se pueden lograr con las características y servicios de Microsoft 365. 
+Evaluar los riesgos y regulaciones de privacidad de datos a los que está sujeta su organización es un primer paso clave antes de implementar cualquier acción de mejora relacionada, incluidas las que se pueden lograr con Microsoft 365 características y servicios. 
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>Normativas de privacidad de datos potencialmente aplicables
 
@@ -52,7 +52,7 @@ En los Estados Unidos, se incluyen la Ley de protección del consumidor de Calif
 
 En todo el mundo, ejemplos adicionales incluyen la Ley de implementación del RGPD nacional de Alemania (BDSG), la Ley de protección de datos de Brasil (LGPD) y muchos otros.
 
-## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Asignación de regulación a categorías de control técnico de Microsoft 365
+## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Asignación de reglamentación Microsoft 365 categorías de control técnico
 
 Muchas de las normativas relacionadas con la privacidad de datos tienen requisitos superpuestos, por lo que debe comprender a qué normativas están sujetas antes de desarrollar cualquier esquema de control técnico. 
 
@@ -60,22 +60,22 @@ Para referencia posterior en los artículos de esta solución general, esta tabl
 
 | Reglamento | Artículo o sección | Extracto | Categorías de control técnico aplicables |
 |:-------|:-----|:-------|:-------|
-| RGPD | Artículo 5(1)(f) | Los datos personales se procesarán de manera que se garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra pérdidas, destrucción o daños accidentales, mediante las medidas técnicas o organizativas apropiadas ("integridad y confidencialidad".  |  (Todos) <br> Identity <br> Device <br> Protección contra amenazas <br> Proteger la información <br> Información de Govern <br> Detectar y responder |
-|  | Artículo (32)(1)(a) | Teniendo en cuenta el estado de la técnica, los costos de implementación y la naturaleza, el ámbito, el contexto y los fines del procesamiento, así como el riesgo de que la probabilidad y la gravedad de los derechos y libertades de las personas físicas varían, el responsable del tratamiento y el encargado implementarán las medidas técnicas y organizativas adecuadas para garantizar un nivel de seguridad adecuado para el riesgo. , incluyendo, entre otras cosas, según corresponda: (a) la seudónimo y el cifrado de datos personales. | Proteger la información |
-|  | Artículo (13)(2)(a) | "... el responsable del tratamiento, en el momento en que se obtengan los datos personales, proporcionará al interesado la siguiente información adicional necesaria para garantizar un procesamiento justo y transparente: (a) el período durante el cual se almacenarán los datos personales o, si no es posible, los criterios usados para determinar dicho período. | Información de Govern |
-|  | Artículo (15)(1)(e) | El interesado tendrá derecho a obtener de la confirmación del responsable del tratamiento si se están procesando o no los datos personales que le conciernen y, en ese caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho a solicitar al responsable la rectificación o eliminación de datos personales o la restricción del tratamiento de datos personales relativos al interesado o a oponerse a dicho procesamiento. | Detectar y responder |
-| LGPD | Artículo 46 | Los agentes de procesamiento adoptarán medidas de seguridad, técnicas y administrativas que puedan proteger los datos personales de accesos no autorizados y situaciones accidentales o ilegales de destrucción, pérdida, alteración, comunicación o cualquier tipo de procesamiento incorrecto o ilegal. | Proteger la información <br> Información de Govern <br> Detectar y responder|
-|  | Artículo 48 | El responsable debe comunicar a la autoridad nacional y al interesado todo incidente de seguridad que pueda dar lugar a riesgos o daños relevantes a los interesados. | Detectar y responder |
-| HIPPA-HITECH | 45 CFR 164.312(e)(1) | Implementar medidas técnicas de seguridad para protegerse contra el acceso no autorizado a información de salud protegida electrónicamente que se transmite a través de una red de comunicaciones electrónicas. | Proteger la información |
-|  | 45 C.F.R. 164.312(e)(2)(ii) | Implementar un mecanismo para cifrar información de salud protegida electrónicamente cuando se considere necesario. | Proteger la información |
-|  | 45 CFR 164.312(c)(2) | Implementar mecanismos electrónicos para corroborar que la información de salud protegida electrónicamente no se ha modificado o destruido de forma no autorizada. | Información de Govern |
-|  | 45 CFR 164.316(b)(1)(i) | Si esta subparte requiere que se documente una acción, actividad o evaluación, mantenga un registro escrito (que puede ser electrónico) de la acción, actividad o evaluación | Información de Govern |
-|  | 45 CFR 164.316(b)(1)(ii) | Conservar la documentación exigida por el párrafo (b)(1) de esta sección durante 6 años a partir de la fecha de creación o la fecha en que fue efectiva por última vez, la que sea posterior. | Información de Govern |
-|  | 45 C.F.R. 164.308(a)(1)(ii)(D) | Implementar procedimientos para revisar periódicamente los registros de actividad del sistema de información, como registros de auditoría, informes de acceso e informes de seguimiento de incidentes de seguridad | Detectar y responder |
-|  | 45 C.F.R. 164.308(a)(6)(ii) | Identificar y responder a incidentes de seguridad sospechosos o conocidos; mitigar, en la medida de lo posible, efectos negativos de los incidentes de seguridad que se conozcan en la entidad cubierta o la empresa asociada y documentar incidencias de seguridad y sus resultados. | Detectar y responder |
-|  | 45 C.F.R. 164.312(b) | Implemente mecanismos de hardware, software y procedimientos que registren y examinen la actividad en sistemas de información que contienen o usan información de salud protegida electrónicamente. | Detectar y responder |
-| CCPA | 1798.105(c) | Una empresa que reciba una solicitud verificable de un consumidor para eliminar la información personal del consumidor de acuerdo con la subdivisión (a) de esta sección eliminará la información personal del consumidor de sus registros y dirigirá a los proveedores de servicios a eliminar la información personal del consumidor de sus registros. | Detectar y responder |
-|  | 1798.105(d) | (excepciones a 1798.105(c) <br> No se requiere que una empresa o un proveedor de servicios cumplan con la solicitud de un consumidor de eliminar la información personal del consumidor si es necesario que la empresa o el proveedor de servicios mantengan la información personal del consumidor con el fin de: (consulte el reglamento actual para obtener información adicional). | Detectar y responder |
+| RGPD | Artículo 5(1)(f) | Los datos personales se procesarán de manera que se garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra pérdidas, destrucción o daños accidentales, mediante las medidas técnicas o organizativas apropiadas ("integridad y confidencialidad".  |  (Todos) <br> Identidad <br> Dispositivo <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detección y respuesta |
+|  | Artículo (32)(1)(a) | Teniendo en cuenta el estado de la técnica, los costos de implementación y la naturaleza, el ámbito, el contexto y los fines del procesamiento, así como el riesgo de que la probabilidad y la gravedad de los derechos y libertades de las personas físicas varían, el responsable del tratamiento y el encargado implementarán las medidas técnicas y organizativas adecuadas para garantizar un nivel de seguridad adecuado para el riesgo. , incluyendo, entre otras cosas, según corresponda: (a) la seudónimo y el cifrado de datos personales. | Protección de la información |
+|  | Artículo (13)(2)(a) | "... el responsable del tratamiento, en el momento en que se obtengan los datos personales, proporcionará al interesado la siguiente información adicional necesaria para garantizar un procesamiento justo y transparente: (a) el período durante el cual se almacenarán los datos personales o, si no es posible, los criterios usados para determinar dicho período. | Gobernanza de la información |
+|  | Artículo (15)(1)(e) | El interesado tendrá derecho a obtener de la confirmación del responsable del tratamiento si se están procesando o no los datos personales que le conciernen y, en ese caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho a solicitar al responsable rectificar o eliminar datos personales o restringir el tratamiento de datos personales relativos al interesado o a oponerse a dichos datos. procesamiento | Detección y respuesta |
+| LGPD | Artículo 46 | Los agentes de procesamiento adoptarán medidas de seguridad, técnicas y administrativas que puedan proteger los datos personales de accesos no autorizados y situaciones accidentales o ilegales de destrucción, pérdida, alteración, comunicación o cualquier tipo de procesamiento incorrecto o ilegal. | Protección de la información <br> Gobernanza de la información <br> Detección y respuesta|
+|  | Artículo 48 | El responsable debe comunicar a la autoridad nacional y al interesado todo incidente de seguridad que pueda dar lugar a riesgos o daños relevantes a los interesados. | Detección y respuesta |
+| HIPPA-HITECH | 45 CFR 164.312(e)(1) | Implementar medidas técnicas de seguridad para protegerse contra el acceso no autorizado a información de salud protegida electrónicamente que se transmite a través de una red de comunicaciones electrónicas. | Protección de la información |
+|  | 45 C.F.R. 164.312(e)(2)(ii) | Implementar un mecanismo para cifrar información de salud protegida electrónicamente cuando se considere necesario. | Protección de la información |
+|  | 45 CFR 164.312(c)(2) | Implementar mecanismos electrónicos para corroborar que la información de salud protegida electrónicamente no se ha modificado o destruido de forma no autorizada. | Gobernanza de la información |
+|  | 45 CFR 164.316(b)(1)(i) | Si esta subparte requiere que se documente una acción, actividad o evaluación, mantenga un registro escrito (que puede ser electrónico) de la acción, actividad o evaluación | Gobernanza de la información |
+|  | 45 CFR 164.316(b)(1)(ii) | Conservar la documentación exigida por el párrafo (b)(1) de esta sección durante 6 años a partir de la fecha de creación o la fecha en que fue efectiva por última vez, la que sea posterior. | Gobernanza de la información |
+|  | 45 C.F.R. 164.308(a)(1)(ii)(D) | Implementar procedimientos para revisar periódicamente los registros de actividad del sistema de información, como registros de auditoría, informes de acceso e informes de seguimiento de incidentes de seguridad | Detección y respuesta |
+|  | 45 C.F.R. 164.308(a)(6)(ii) | Identificar y responder a incidentes de seguridad sospechosos o conocidos; mitigar, en la medida de lo posible, efectos negativos de los incidentes de seguridad que se conozcan en la entidad cubierta o la empresa asociada y documentar incidencias de seguridad y sus resultados. | Detección y respuesta |
+|  | 45 C.F.R. 164.312(b) | Implemente mecanismos de hardware, software y procedimientos que registren y examinen la actividad en sistemas de información que contienen o usan información de salud protegida electrónicamente. | Detección y respuesta |
+| CCPA | 1798.105(c) | Una empresa que reciba una solicitud verificable de un consumidor para eliminar la información personal del consumidor de acuerdo con la subdivisión (a) de esta sección eliminará la información personal del consumidor de sus registros y dirigirá a los proveedores de servicios a eliminar la información personal del consumidor de sus registros. | Detección y respuesta |
+|  | 1798.105(d) | (excepciones a 1798.105(c) <br> No se requiere que una empresa o un proveedor de servicios cumplan con la solicitud de un consumidor de eliminar la información personal del consumidor si es necesario que la empresa o el proveedor de servicios mantengan la información personal del consumidor con el fin de: (consulte el reglamento actual para obtener información adicional). | Detección y respuesta |
 |||||
 
 >[!Important]
@@ -96,7 +96,7 @@ Los datos también se mueven con el tiempo a medida que se procesan, se refina y
  
 ### <a name="where-the-personal-data-is"></a>Dónde están los datos personales
 
-Para abordar las regulaciones de privacidad de datos, no puede basarse en nociones generales de dónde cree que pueden existir datos personales, ya sea ahora o en el futuro. Las normativas de privacidad de datos requieren que las organizaciones demuestren que saben dónde están los datos personales de forma continua. Esto hace que sea importante tomar una instantánea inicial de todos los orígenes de datos para el posible almacenamiento de información personal, incluido el entorno de Microsoft 365, y establecer mecanismos para la supervisión y detección continuas.
+Para abordar las regulaciones de privacidad de datos, no puede basarse en nociones generales de dónde cree que pueden existir datos personales, ya sea ahora o en el futuro. Las normativas de privacidad de datos requieren que las organizaciones demuestren que saben dónde están los datos personales de forma continua. Esto hace que sea importante tomar una instantánea inicial de todos los orígenes de datos para el posible almacenamiento de información personal, incluido el entorno Microsoft 365, y establecer mecanismos para la supervisión y detección continuas.
 
 Si aún no ha evaluado la preparación general y los riesgos asociados con las normativas de privacidad de datos, use el siguiente marco de 3 pasos para empezar. 
 
@@ -110,7 +110,7 @@ Si aún no ha evaluado la preparación general y los riesgos asociados con las n
 
 Debe medir la exposición a los riesgos de privacidad de datos en función del tipo de datos personales que administra actualmente, dónde se almacenan, qué controles de protección se colocan en él, cómo se administra su ciclo de vida y quién tiene acceso a ellos. 
 
-Como punto de partida, es importante realizar un inventario de qué tipos de datos personales existen en el entorno de Microsoft 365. Use estas categorías:
+Como punto de partida, es importante realizar un inventario de los tipos de datos personales que existen en el entorno Microsoft 365 usuario. Use estas categorías:
 
 - Datos de empleados necesarios para llevar a cabo funciones empresariales diarias
 - Datos que la organización tiene sobre sus clientes empresariales, partners y otras relaciones en el escenario de negocio a empresa (B2B)
@@ -120,7 +120,7 @@ Este es un ejemplo de los diferentes tipos de datos para los departamentos típi
 
 ![Tipos de datos personales](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-Gran parte de los datos personales que están sujetos a la regulación de privacidad de datos normalmente se recopilan y almacenan fuera de Microsoft 365. Cualquier dato personal de aplicaciones móviles o web orientadas al consumidor tendría que haber sido exportado de dichas aplicaciones a Microsoft 365 para estar sujeto al escrutinio de privacidad de datos dentro de Microsoft 365. 
+La mayoría de los datos personales que están sujetos a la regulación de privacidad de datos normalmente se recopilan y almacenan fuera de Microsoft 365. Los datos personales de aplicaciones móviles o web orientadas al consumidor tendrían que haber sido exportados de dichas aplicaciones a Microsoft 365 para estar sujetos al examen de privacidad de datos dentro de Microsoft 365. 
 
 La exposición a la privacidad de datos en Microsoft 365 puede ser más limitada en relación con las aplicaciones web y los sistemas CRM, que esta solución no aborda.
 
@@ -143,7 +143,7 @@ Si una persona deja una empresa, las organizaciones suelen tener procesos, proce
 Para satisfacer estas necesidades, las organizaciones deben tener procesos y procedimientos que acojan las necesidades de prevención, investigación y corrección para facilitar dichas solicitudes, y señalar que cierta información sobre un empleado puede considerarse razonablemente crucial para la continuidad empresarial. Por ejemplo, información de que un individuo hizo un archivo o realizó una función. 
 
 >[!Note]
->Para obtener información sobre técnicas de investigación y corrección de datos personales en Microsoft 365, vea el [artículo supervisar y responder](information-protection-deploy-monitor-respond.md). También puede usar esquemas automatizados de clasificación y protección para asegurarse de que los datos personales se controlan mientras están dentro de la organización, así como evitar que abandone la organización en situaciones de actor malintencionado. Vea el [artículo de información de protección](information-protection-deploy-protect-information.md) para obtener más información.
+>Para obtener técnicas de investigación y corrección para datos personales en Microsoft 365, vea el [artículo supervisar y responder](information-protection-deploy-monitor-respond.md). También puede usar esquemas automatizados de clasificación y protección para asegurarse de que los datos personales se controlan mientras están dentro de la organización, así como evitar que abandone la organización en situaciones de actor malintencionado. Vea el [artículo de información de protección](information-protection-deploy-protect-information.md) para obtener más información.
 >
  
 ### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>Datos que la organización tiene sobre sus clientes empresariales en el escenario B2B
@@ -169,7 +169,7 @@ Comprender su exposición a los riesgos y a la regulación de privacidad de dato
 
 Si no tiene datos personales de consumidores en su entorno de Microsoft 365 o se limita a determinadas partes del entorno y la necesidad de un control técnico se basa en que existe una exposición de datos de tipo consumidor, es posible que ese control técnico solo necesite emplearse en partes de alto riesgo del entorno, no en todas partes.
 
-Aunque una recomendación de conjunto de controles estándar o de organización externa, como el Administrador de cumplimiento en Microsoft 365, puede ayudar a informar a la estrategia de control, la elección de la implementación debe estar controlada por el reconocimiento del inventario de datos para cuantificar la exposición real a riesgos.
+Aunque una recomendación de conjunto de controles estándar o de organización externa, como por ejemplo desde el Administrador de cumplimiento en Microsoft 365, puede ayudar a informar a su estrategia de control, la elección de la implementación debe estar controlada por el reconocimiento del inventario de datos para cuantificar su exposición real a riesgos.
 
 La mayoría de las organizaciones estarán expuestas a uno de los escenarios anteriores. Es importante adoptar un enfoque holístico para la evaluación.
 
@@ -181,7 +181,7 @@ Las organizaciones sujetas a otras normativas de privacidad de datos, como CCPA 
 
 La evaluación del RGPD consta de estas secciones:
 
-| Section | Descripción |
+| Sección | Descripción |
 |:-------|:-----|
 | Gobierno | <ol><li>¿La directiva de privacidad establece explícitamente qué información de datos se está procesando? </li><li>¿Ejecuta periódicamente evaluaciones de impacto en la privacidad (CA)? </li><li> ¿Usa una herramienta para administrar la información personal (PI)? </li><li> ¿Tiene autoridad legal para llevar a cabo negocios con datos de PI en una determinada persona? ¿Realiza un seguimiento del consentimiento de los datos? </li><li> ¿Realiza un seguimiento, implementa y administra controles de auditoría? ¿Supervisa las pérdidas de datos? </li></ol>|
 | Eliminación y notificación | <ol><li>¿Da instrucciones explícitas sobre cómo se puede acceder a los datos de los usuarios? </li><li> ¿Tiene procesos documentados para controlar el consentimiento de no participar? </li><li> ¿Tiene un proceso de eliminación automatizada para los datos? </li><li>   ¿Tiene un proceso para validar la identidad al interactuar con un cliente? </li></ol>|
@@ -189,11 +189,11 @@ La evaluación del RGPD consta de estas secciones:
 | Administración de directivas | <ol><li>¿Cómo administra las reglas corporativas de enlace (BCR)? </li><li>¿Realiza un seguimiento del consentimiento de los datos? </li><li> En una escala de 1 a 5, con 5 cubiertos por completo, ¿los contratos cubren las clasificaciones de datos y los requisitos de tratamiento? </li><li>¿Tiene y prueba periódicamente un plan de respuesta a incidentes? </li><li>¿Qué directiva usa para administrar el acceso? </li></ol>|
 |||
  
-## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Paso 3: Identificar los tipos de información confidencial que se producen en el entorno de Microsoft 365. 
+## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Paso 3: Identificar los tipos de información confidencial que se producen en el Microsoft 365 de datos. 
 
-Este paso implica la identificación de tipos de información confidencial específicos que están sujetos a controles normativos específicos, así como la aparición de ellos en el entorno de Microsoft 365. 
+Este paso implica la identificación de tipos de información confidencial específicos que están sujetos a controles normativos específicos, así como la aparición de ellos en el entorno Microsoft 365 específico. 
 
-Encontrar contenido en el entorno que contiene contenido personal puede ser una tarea formidable, que anteriormente implicaba una combinación de uso de búsqueda de cumplimiento, exhibición de documentos electrónicos, exhibición de documentos electrónicos avanzada, DLP y auditoría. 
+Encontrar contenido en el entorno que contenga personal puede ser una tarea formidable, que anteriormente implicaba una combinación de usar búsqueda de cumplimiento, exhibición de documentos electrónicos, Advanced eDiscovery, DLP y auditoría. 
 
 Con la  nueva solución de clasificación de datos en el [](../compliance/data-classification-content-explorer.md) Centro de administración de Cumplimiento de Microsoft, esto se ha vuelto mucho más fácil con la funcionalidad explorador de contenido, que funciona con tipos de información confidencial integrados o personalizados, incluidos los relacionados con datos personales.
  
@@ -212,18 +212,18 @@ También puede personalizar un tipo de información confidencial integrada exist
 Vea estos artículos para obtener más información:
 
 - [Personalizar un tipo de información confidencial integrado](../compliance/customize-a-built-in-sensitive-information-type.md)
-- [Obtener más información acerca de los tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md).
+- [Obtener más información acerca de los tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md)
 - [Crear un tipo de información confidencial personalizado en el Centro de seguridad y cumplimiento](../compliance/create-a-custom-sensitive-information-type.md)
 - [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Explorador de contenido
 
-Una herramienta importante que para determinar la aparición de [](../compliance/data-classification-content-explorer.md) elementos confidenciales en su entorno es el nuevo Explorador de contenido en el Centro de administración de cumplimiento de Microsoft 365. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción de Microsoft 365 para la aparición de tipos de información confidencial y la presentación de los resultados.
+Una herramienta importante que para determinar la aparición de [](../compliance/data-classification-content-explorer.md) elementos confidenciales en su entorno es el nuevo Explorador de contenido en el centro de administración Microsoft 365 cumplimiento. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción Microsoft 365 para la aparición de tipos de información confidencial y la presentación de los resultados.
  
 La nueva herramienta explorador de contenido le permite identificar rápidamente las ubicaciones de elementos confidenciales en su entorno, con tipos de información confidencial integrados o personalizados. Esto puede implicar el establecimiento de un proceso y la responsabilidad asignada de investigar periódicamente la presencia y ubicación de elementos confidenciales.
 
-Junto con los otros pasos resaltados en este artículo, esto proporciona un punto de partida para identificar la exposición general al riesgo, la preparación y la ubicación de los elementos confidenciales para proteger mediante la configuración y supervisión planeada de Microsoft 365. 
+Junto con los otros pasos resaltados en este artículo, esto proporciona un punto de partida para identificar la exposición general al riesgo, la preparación y la ubicación de los elementos confidenciales para proteger mediante la configuración y supervisión Microsoft 365 planeada. 
 
 ### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>Otros métodos para identificar datos personales en su entorno
 
@@ -231,7 +231,7 @@ Además del Explorador de contenido, las organizaciones tienen acceso a la funci
 
 En este artículo se proporcionan instrucciones detalladas sobre el uso de la búsqueda de contenido para la detección de [datos personales.](/compliance/regulatory/gdpr) La búsqueda de contenido y otras técnicas de detección también se exploran en [los DSR para el RGPD y el CCPA.](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs)
 
-En el artículo supervisar y responder se proporcionan información adicional sobre técnicas de investigación y corrección de datos [personales](information-protection-deploy-monitor-respond.md)en Microsoft 365.
+En el artículo supervisar y responder se proporcionan información adicional sobre las técnicas de investigación y corrección de datos personales Microsoft 365 en el [artículo de supervisión y respuesta](information-protection-deploy-monitor-respond.md).
 
 > [!NOTE]
 > Para encontrar la información confidencial que tiene en los archivos almacenados localmente, consulte [Azure Information Protection](/azure/information-protection/quickstart-findsensitiveinfo).

@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: Descubra cómo, con Microsoft 365 Empresa Premium, puede asegurarse automáticamente de que los usuarios tengan la versión más reciente de Office en todos sus dispositivos Windows 10.
+description: Descubra cómo, Microsoft 365 Empresa Premium, puede asegurarse automáticamente de que los usuarios tienen la versión más reciente de Office en todos sus Windows 10 dispositivos.
 ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,6 +37,6 @@ ms.locfileid: "51580182"
 
 ![Banner que apunta a https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
-Esta opción está desactivada de forma predeterminada. Puedes activarla para asegurarte de que los usuarios tengan la versión más reciente de Office en todos sus dispositivos Windows 10, pero primero comprueba que se cumplen todos los requisitos previos. Los usuarios deben tener una licencia para Microsoft 365 Empresa Premium para esta configuración para insertar el software en el dispositivo, además de otros requisitos descritos en [Prepare for Office client deployment by Microsoft 365 Business Premium](prepare-for-office-client-deployment.md).
+Esta opción está desactivada de forma predeterminada. Puede activarlo para asegurarse de que los usuarios tienen la versión más reciente de Office en todos sus dispositivos Windows 10, pero primero compruebe que se cumplen todos los requisitos previos. Los usuarios deben tener licencia para Microsoft 365 Empresa Premium esta configuración para insertar el software en el dispositivo, además de otros requisitos descritos en [Prepare for Office client deployment by Microsoft 365 Empresa Premium](prepare-for-office-client-deployment.md).
   
 Se recomienda aceptar la configuración predeterminada durante la instalación.

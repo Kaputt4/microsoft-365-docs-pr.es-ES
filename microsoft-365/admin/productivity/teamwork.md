@@ -28,7 +28,7 @@ ms.locfileid: "51579163"
 ---
 # <a name="teamwork--people-experiences"></a>Trabajo en equipo: experiencias de personas
 
-Productivity Score proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las mediciones de la experiencia de personas y tecnología y se puede comparar con los puntos de referencia de organizaciones similares al tuyo. La categoría de trabajo en equipo forma parte de las medidas que se enmarcan en las experiencias de las personas. Para obtener más información, consulte la información general [sobre](productivity-score.md) la puntuación de productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las mediciones de la experiencia de personas y tecnología y se puede comparar con los puntos de referencia de organizaciones similares al tuyo. La categoría de trabajo en equipo forma parte de las medidas que se enmarcan en las experiencias de las personas. Para obtener más información, consulte la información general [sobre](productivity-score.md) la puntuación de productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -36,7 +36,7 @@ Para empezar a trabajar en equipo, los usuarios de la organización deben tener 
 
 - Microsoft Teams
 - SharePoint
-- Exchange en línea
+- Exchange Online
 
 Para obtener más información, vea [Asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
 
@@ -52,17 +52,17 @@ Proporcionamos una información principal sobre la experiencia que contiene las 
 
 ### <a name="primary-insight"></a>Información principal
 
-La información principal examina todas las personas que se comunican mediante correo electrónico y mensajes en Microsoft Teams e interactúan con el contenido en la nube en áreas de trabajo compartidas. Dentro de Microsoft 365, los grupos de Microsoft 365 son la base para que las personas se unan en un área de trabajo compartida con la capacidad de enviar correos electrónicos al buzón de grupo, compartir archivos en el sitio de grupo de SharePoint y enviar mensajes de canal a través de Microsoft Teams.
+La información principal examina todas las personas que se comunican mediante correo electrónico y mensajes en Microsoft Teams e interactúan con el contenido en la nube en áreas de trabajo compartidas. Dentro de Microsoft 365, los grupos de Microsoft 365 son la base para que las personas se unan en un área de trabajo compartida con la capacidad de enviar correos electrónicos al buzón de grupo, compartir archivos en el sitio de grupo de SharePoint y enviar mensajes de canal Microsoft Teams.
 
 :::image type="content" source="../../media/teamwork-score.png" alt-text="Gráfico que muestra información principal sobre la puntuación de trabajo en equipo.":::
 
 1. **Encabezado:** Proporciona la métrica clave de las personas de su organización que realizan cualquiera de las siguientes actividades:
-      - Enviar correo electrónico a un buzón de grupo a través de Exchange.
-      - Envío de mensajes de canal a través de Teams
-      - Lectura y creación de contenido (lo que colectivamente nos referimos como interacción de contenido) en los sitios de grupo de SharePoint.
+      - Enviar correo electrónico a un buzón de grupo a través Exchange.
+      - Enviar mensajes de canal a través de Teams
+      - Leer y crear contenido (a lo que colectivamente nos referimos como interacción de contenido) en SharePoint de grupo.
 
         Como porcentaje de todas las personas de la organización que realizan cualquiera de las siguientes actividades (dentro o fuera de áreas de trabajo compartidas):
-        - Enviar correo electrónico a través de Exchange.
+        - Enviar correo electrónico a través Exchange.
         - Enviar mensajes (chat o mensajes de canal) en Microsoft Teams.
         - Leer y crear contenido en OneDrive o SharePoint.
 
@@ -71,8 +71,8 @@ La información principal examina todas las personas que se comunican mediante c
 1. **Cuerpo:** Proporciona más información sobre cómo la comunicación e interacción con el contenido, cuando se realiza dentro de un área de trabajo compartida, puede tener resultados positivos para la productividad de la organización.
 2. **Visualización (estado actual):**
       - Barra horizontal donde la parte azul representa el porcentaje expresado en el encabezado
-      - Resalta la fracción (numerador/denominador) usada para calcular el porcentaje que se muestra en el encabezado
-        - Numerador: el número de personas de la organización que envían correo electrónico a un buzón de grupo a través de Exchange, O que envían mensajes de canal a través de Teams, O leer y crear contenido en sitios de grupo de SharePoint.
+      - Momentos la fracción (numerador/denominador) usada para calcular el porcentaje que se muestra en el encabezado
+        - Numerador: el número de personas de la organización que envían correo electrónico a un buzón de grupo a través de Exchange, O que envían mensajes de canal a través de Teams, O leer y crear contenido en sitios de grupo SharePoint.
         - Denominador: el número de personas de la organización que envían correos electrónicos a través de Exchange, O envían mensajes (mensajes de chat o canal) en Microsoft Teams, O leen y crean contenido en OneDrive o SharePoint, Y tienen acceso a al menos uno de los siguientes servicios: Exchange, Microsoft Teams o SharePoint.
    - El valor de referencia del mismo nivel de la métrica clave también se muestra como un porcentaje.
 3. **Ver recursos sobre el trabajo en equipo:** Seleccione este vínculo para ver el contenido de la ayuda.
@@ -103,12 +103,12 @@ También proporcionamos información adicional sobre cómo los usuarios de su or
       - **Enviar correo** electrónico: la parte coloreada y la fracción representan el porcentaje de personas que envían correo electrónico a buzones de grupo. La fracción se compone de:
         - Numerador: personas que envían correos electrónicos a buzones de grupo en los últimos 28 días.
         - Denominador: personas que envían correos electrónicos en los últimos 28 días. Este es el mismo grupo de personas que se marcan como enviar correo electrónico en la información principal de la puntuación de productividad de la comunicación.
-      - **Enviar mensajes:** la parte coloreada y la fracción representan el porcentaje de personas que envían mensajes en canales de Microsoft Teams. La fracción se compone de:
+      - **Enviar mensajes:** la parte coloreada y la fracción representan el porcentaje de personas que envían mensajes en canales en Microsoft Teams. La fracción se compone de:
         - Numerador: personas que envían mensajes de canal en los últimos 28 días.
-        - Denominador: personas que envían mensajes de chat o canal en los últimos 28 días. Este es el mismo grupo de personas que se marcan como enviar mensajes en Microsoft Teams en la información principal de la categoría de comunicación en La puntuación de productividad.
-    - **Creación de contenido:** la parte coloreada y la fracción representan el porcentaje de personas que leen o crean contenido en sitios de grupo de SharePoint de Microsoft 365.
-        - Numerador: número de personas que leen o crean contenido en sitios de grupo conectados a grupos de Microsoft 365.
-        - Denominador: número de personas con acceso a SharePoint, que leyeron o crearon contenido de cualquier tipo en sitios de OneDrive o SharePoint en los últimos 28 días.
+        - Denominador: personas que envían mensajes de chat o canal en los últimos 28 días. Este es el mismo grupo de personas que se marcan como enviar mensajes en Microsoft Teams información principal de la categoría de comunicación en Puntuación de productividad.
+    - **Creación de contenido:** la parte coloreada y la fracción representan el porcentaje de personas que leen o crean contenido en Microsoft 365 SharePoint de grupo.
+        - Numerador: número de personas que leen o crean contenido en Microsoft 365 de grupo conectados a grupos.
+        - Denominador: número de personas con acceso a SharePoint, que leyeron o crearon contenido de cualquier tipo en sitios OneDrive o SharePoint en los últimos 28 días.
 4. **Ver contenido relacionado:** Seleccione este vínculo para ver el contenido de la ayuda.
 
 ### <a name="breakdown-of-workspace-engagement-by-size-and-age"></a>Desglose de la interacción del área de trabajo por tamaño y antigüedad
@@ -143,21 +143,21 @@ También proporcionamos información adicional sobre cómo los usuarios de su or
 
 ### <a name="use-of-teams-within-microsoft-teams"></a>Uso de equipos en Microsoft Teams
 
-:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Gráfico que muestra el número de áreas de trabajo compartidas que usa Microsoft Teams.":::
+:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Gráfico que muestra el número de áreas de trabajo compartidas que Microsoft Teams.":::
 
-1. **Encabezado:** Muestra el número de áreas de trabajo compartidas que tienen asociado un equipo de Microsoft Teams.
-2. **Cuerpo:** Proporciona información sobre el valor de tener un equipo de Microsoft Teams unido a las áreas de trabajo compartidas, para ayudar a que las personas asociadas a ellos sean más eficaces en el trabajo en equipo.
-3. **Visualización:** La parte coloreada del gráfico de donas refleja el porcentaje de áreas de trabajo que tienen un equipo de Microsoft Teams unido a ellos. El porcentaje se calcula de la siguiente manera:
+1. **Encabezado:** Muestra el número de áreas de trabajo compartidas que tienen un Microsoft Teams asociado con ellos.
+2. **Cuerpo:** Proporciona información sobre el valor de tener un equipo Microsoft Teams unido a las áreas de trabajo compartidas, para ayudar a que las personas asociadas a ellos sean más eficaces en el trabajo en equipo.
+3. **Visualización:** La parte coloreada del gráfico de donas refleja el porcentaje de áreas de trabajo que tienen un Microsoft Teams equipo adjunto a ellos. El porcentaje se calcula de la siguiente manera:
 
-      - Numerador: número de áreas de trabajo compartidas de la organización que tenían un equipo de Microsoft Teams asociado en los últimos 28 días
+      - Numerador: número de áreas de trabajo compartidas de la organización que tenían un equipo Microsoft Teams asociado a ellos en los últimos 28 días
       - Denominador: el número de áreas de trabajo compartidas de la organización en los últimos 28 días
 
-        El número en el centro del gráfico de donas representa el número total de áreas de trabajo compartidas que tienen asociado un equipo de Microsoft Teams.
+        El número en el centro del gráfico de donas representa el número total de áreas de trabajo compartidas que tienen un equipo Microsoft Teams asociado a ellos.
 4. **Ver contenido relacionado:** Seleccione este vínculo para ver el contenido de la ayuda.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-Estado de las aplicaciones de [Microsoft 365: experiencias tecnológicas](apps-health.md) (artículo)\
+[Microsoft 365 de aplicaciones: experiencias tecnológicas](apps-health.md) (artículo)\
 [Comunicación: experiencias de personas](communication.md) (artículo)\
 [Colaboración de contenido: experiencias de personas](content-collaboration.md) (artículo)\
 [Reuniones: experiencias de personas](meetings.md) (artículo)\

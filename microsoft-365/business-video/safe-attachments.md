@@ -32,7 +32,7 @@ ms.locfileid: "51578716"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
-Microsoft Defender para Office 365 , anteriormente denominado Atp de Microsoft 365, o Protección contra amenazas avanzada, ayuda a proteger su negocio contra archivos que contienen contenido malintencionado en Outlook, OneDrive, SharePoint y Teams.
+Microsoft Defender para Office 365 , anteriormente denominado ATP de Microsoft 365 o Protección contra amenazas avanzada, ayuda a proteger su empresa contra archivos que contienen contenido malintencionado en Outlook, OneDrive, SharePoint y Teams.
 
 ## <a name="try-it"></a>¿Se atreve?
 

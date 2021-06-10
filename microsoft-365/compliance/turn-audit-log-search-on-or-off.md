@@ -71,7 +71,7 @@ Si la auditoría no está activada para su organización, puede activarla en el 
 
 ### <a name="use-powershell-to-turn-on-auditing"></a>Usar PowerShell para activar la auditoría
 
-1. [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectarse al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Ejecute el siguiente comando de PowerShell para activar la auditoría en Office 365.
 
@@ -85,7 +85,7 @@ Si la auditoría no está activada para su organización, puede activarla en el 
 
 Debe usar powershell Exchange Online para desactivar la auditoría.
   
-1. [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectarse al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Ejecute el siguiente comando de PowerShell para desactivar la auditoría.
 

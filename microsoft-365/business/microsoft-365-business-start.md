@@ -41,7 +41,7 @@ ms.locfileid: "52706466"
 
 Microsoft 365 para empresas es un conjunto completo de herramientas de colaboración y productividad empresarial, como Outlook, Word, Excel y otros productos Office, que siempre están actualizados. Puedes proteger los archivos de trabajo en todos los dispositivos iOS, Android y Windows 10 con seguridad de nivel empresarial que es fácil de administrar.
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>Watch: What is Microsoft 365 Empresa Premium
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Ver: Qué es Microsoft 365 Empresa Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -99,7 +99,7 @@ Si su organización usa Windows Server Active Directory local, puede configurar 
 Si conserva un Active Directory local que contiene algunos recursos locales (como recursos compartidos de archivos e impresoras), puede proporcionar a los dispositivos unidos a **Azure AD** acceso a estos recursos siguiendo los pasos que se indican a continuación: Obtener acceso a recursos locales desde un dispositivo unido a Azure AD en [Microsoft 365](access-resources.md)para empresas.
   
   
-## <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
+## <a name="contact-support"></a>Contactar soporte
 
  **Si necesita ponerse en contacto con soporte técnico:**
   

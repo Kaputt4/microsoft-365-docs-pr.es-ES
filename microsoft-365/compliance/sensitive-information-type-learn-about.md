@@ -104,7 +104,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Número de identidad nacional de Argentina 
-- Identity 
+- Identidad 
 - Identificación tarjeta de identidad nacional 
 - DNI 
 - Registro nacional de personas de NIC 

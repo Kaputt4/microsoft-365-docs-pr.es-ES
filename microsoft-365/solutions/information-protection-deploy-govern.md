@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Use directivas y etiquetas de retención de Microsoft 365 para administrar datos personales en su entorno de Microsoft 365.
+description: Use Microsoft 365 directivas y etiquetas de retención para administrar los datos personales en su Microsoft 365 de retención.
 ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -54,7 +54,7 @@ Para el gobierno de la información, las normativas de privacidad de datos suele
 - Los datos personales deben protegerse contra el procesamiento accidental, la pérdida o la alteración mediante métodos verificables.
 - Cualquier acción ejecutada con datos personales debe documentarse y esa documentación debe conservarse durante un período especificado.
 
-Dado que las normativas de privacidad de datos no son muy específicas en lo que respecta a la retención y eliminación de datos, es necesario tener en cuenta otros factores que pueden dictar directrices de gobierno de la información para la información personal almacenada en su suscripción a Microsoft 365. Estos son algunos ejemplos:
+Dado que las normativas de privacidad de datos no son muy específicas en lo que respecta a la retención y eliminación de datos, es necesario tener en cuenta otros factores que pueden dictar directrices de gobierno de la información para la información personal almacenada en su suscripción Microsoft 365 datos. Estos son algunos ejemplos:
 
 - El envejecimiento de las cuentas de consumidor después de 5 años de inactividad y requiere la eliminación o anonimización de los datos de la cuenta después de ese punto, lo que requiere una orquestación entre el sistema que almacena los datos y los flujos de trabajo relacionados con las notificaciones y otras automatizacións.
 - Configurar reglas para mantener las directivas y procedimientos relacionados con el RGPD durante tres años después de su sustitución, lo que se alinea con la programación de retención de la organización para las directivas y procedimientos.
@@ -64,7 +64,7 @@ Una pregunta clave para responder es:
 
 - ¿Durante cuánto tiempo es necesario mantener la información que contiene datos personales por motivos empresariales válidos para evitar prácticas de "mantenerla para siempre"? Esto debe equilibrarse con las necesidades de retención para la continuidad empresarial.
 
-Independientemente de los motivos legales y empresariales para mantener o eliminar la información personal, Microsoft proporciona una serie de capacidades para implementar el esquema de gobierno de datos en Microsoft 365.
+Independientemente de los motivos legales y empresariales para mantener la información personal o eliminarla, Microsoft proporciona una serie de capacidades para implementar el esquema de gobierno de datos en Microsoft 365.
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>Administración del gobierno de la información en Microsoft 365
 
@@ -84,10 +84,10 @@ Tenga en cuenta lo siguiente:
 
 ### <a name="retention-policies-and-retention-labels"></a>Directivas de retención y etiquetas de retención
 
-Use [directivas de retención y etiquetas de](../compliance/retention.md) retención para retener o eliminar contenido en Microsoft 365 que contenga o se espera que contenga datos personales.
+Use [directivas de retención y etiquetas de](../compliance/retention.md) retención para retener o eliminar contenido Microsoft 365 que contiene o se espera que contenga datos personales.
 
 ### <a name="records-management"></a>Administración de registros
 
-Use etiquetas de retención que [](../compliance/records-management.md) declaren el contenido un registro para implementar una solución de administración de registros para datos en Microsoft 365.
+Use etiquetas de retención que declaren el contenido un registro para implementar [una](../compliance/records-management.md) solución de administración de registros para los datos de Microsoft 365.
 
 Para la privacidad de los datos, las solicitudes de interesados (DSR) recibidas por el departamento legal se declaran un registro y se pueden almacenar indefinidamente o eliminarse con pruebas, para cumplir con las especificaciones de retención de actividades reglamentarias.
