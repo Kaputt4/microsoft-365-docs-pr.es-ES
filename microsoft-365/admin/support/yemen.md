@@ -19,30 +19,30 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297421"
 ---
-# <a name="contact-support-for-yemen"></a><span data-ttu-id="bcc90-103">Póngase en contacto con el soporte técnico para Yemen</span><span class="sxs-lookup"><span data-stu-id="bcc90-103">Contact support for Yemen</span></span>
+# <a name="contact-support-for-yemen"></a><span data-ttu-id="334ab-103">Póngase en contacto con el soporte técnico para Yemen</span><span class="sxs-lookup"><span data-stu-id="334ab-103">Contact support for Yemen</span></span>
 
-<span data-ttu-id="bcc90-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="bcc90-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="334ab-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="334ab-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="bcc90-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="bcc90-105">Phone number</span></span>
-<span data-ttu-id="bcc90-106">+974 44 119418</span><span class="sxs-lookup"><span data-stu-id="bcc90-106">+974 44 119418</span></span>
+## <a name="phone-number"></a><span data-ttu-id="334ab-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="334ab-105">Phone number</span></span>
+<span data-ttu-id="334ab-106">+974 44 119418</span><span class="sxs-lookup"><span data-stu-id="334ab-106">+974 44 119418</span></span>
 
-<span data-ttu-id="bcc90-107">Seleccionar la opción 2</span><span class="sxs-lookup"><span data-stu-id="bcc90-107">Select option 2</span></span>
+<span data-ttu-id="334ab-107">Seleccionar la opción 2</span><span class="sxs-lookup"><span data-stu-id="334ab-107">Select option 2</span></span>
 
-<span data-ttu-id="bcc90-108">Seleccionar la opción 9</span><span class="sxs-lookup"><span data-stu-id="bcc90-108">Select option 9</span></span>
+<span data-ttu-id="334ab-108">Seleccionar la opción 9</span><span class="sxs-lookup"><span data-stu-id="334ab-108">Select option 9</span></span>
 
-<span data-ttu-id="bcc90-109">Escriba el código 7700</span><span class="sxs-lookup"><span data-stu-id="bcc90-109">Enter code 7700</span></span>
+<span data-ttu-id="334ab-109">Escriba el código 7700</span><span class="sxs-lookup"><span data-stu-id="334ab-109">Enter code 7700</span></span>
 
-## <a name="hours"></a><span data-ttu-id="bcc90-110">Horas</span><span class="sxs-lookup"><span data-stu-id="bcc90-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="bcc90-111">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="bcc90-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="334ab-110">Horas</span><span class="sxs-lookup"><span data-stu-id="334ab-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="334ab-111">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="334ab-111">Billing Support:</span></span>
 
-<span data-ttu-id="bcc90-112">Árabe: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="bcc90-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="334ab-112">Árabe: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="334ab-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="bcc90-113">Inglés: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="bcc90-113">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="334ab-113">Inglés: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="334ab-113">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="bcc90-114">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="bcc90-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="334ab-114">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="334ab-114">Technical Support:</span></span>
 
-<span data-ttu-id="bcc90-115">Árabe: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="bcc90-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="334ab-115">Árabe: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="334ab-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="bcc90-116">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="bcc90-116">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="334ab-116">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="334ab-116">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="bcc90-117">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="bcc90-117">International call charges apply</span></span>
+<span data-ttu-id="334ab-117">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="334ab-117">International call charges apply</span></span>

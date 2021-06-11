@@ -19,20 +19,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296196"
 ---
-# <a name="contact-support-for-gambia"></a><span data-ttu-id="3c8c8-103">Póngase en contacto con el soporte técnico de Gambia</span><span class="sxs-lookup"><span data-stu-id="3c8c8-103">Contact support for Gambia</span></span>
+# <a name="contact-support-for-gambia"></a><span data-ttu-id="a1aeb-103">Póngase en contacto con el soporte técnico de Gambia</span><span class="sxs-lookup"><span data-stu-id="a1aeb-103">Contact support for Gambia</span></span>
 
-<span data-ttu-id="3c8c8-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="3c8c8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="a1aeb-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="a1aeb-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="3c8c8-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="3c8c8-105">Phone number</span></span>
-<span data-ttu-id="3c8c8-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="3c8c8-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="a1aeb-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="a1aeb-105">Phone number</span></span>
+<span data-ttu-id="a1aeb-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="a1aeb-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="3c8c8-107">Horas</span><span class="sxs-lookup"><span data-stu-id="3c8c8-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="3c8c8-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="3c8c8-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="a1aeb-107">Horas</span><span class="sxs-lookup"><span data-stu-id="a1aeb-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="a1aeb-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="a1aeb-108">Billing Support:</span></span>
 
-<span data-ttu-id="3c8c8-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="3c8c8-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="a1aeb-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="a1aeb-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="3c8c8-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="3c8c8-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="a1aeb-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="a1aeb-110">Technical Support:</span></span>
 
-<span data-ttu-id="3c8c8-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="3c8c8-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="a1aeb-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="a1aeb-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="3c8c8-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="3c8c8-112">International call charges apply</span></span>
+<span data-ttu-id="a1aeb-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="a1aeb-112">International call charges apply</span></span>
