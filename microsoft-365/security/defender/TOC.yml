@@ -336,6 +336,8 @@
                       href: api-list-incidents.md
                     - name: Actualizar incidentes
                       href: api-update-incidents.md
+                    - name: Obtener incidente
+                      href: api-get-incident.md
     - name: "Microsoft Defender para Office\_365"
       href: ../office-365-security/index.yml
     - name: Microsoft Defender para punto de conexión
