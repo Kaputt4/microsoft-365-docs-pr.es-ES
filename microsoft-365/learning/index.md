@@ -37,12 +37,12 @@ Los recursos de esta sección le ayudan a obtener más información sobre lo que
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
 |Más información sobre Viva Learning (versión preliminar)|[Introducción a Microsoft Viva Learning (versión preliminar)](overview-viva-learning.md)|
-|Buscar recursos en el Centro de recursos de la comunidad de Microsoft Tech|[Comunidad tecnológica de Microsoft Viva Learning (versión preliminar)](https://resources.techcommunity.microsoft.com/viva-learning/)|
+|Buscar recursos en el Centro de recursos Community Microsoft Tech|[Microsoft Viva Learning (versión preliminar) Tech Community](https://resources.techcommunity.microsoft.com/viva-learning/)|
 |Buscar instrucciones de Viva Learning (versión preliminar) para usuarios finales|[Ayuda de Microsoft Viva Learning (versión preliminar)](https://support.microsoft.com/office/learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a)|
 
 ## <a name="set-up-and-administration"></a>Configuración y administración
 
-Los recursos de esta sección ayudan al administrador de su organización a configurar Viva Learning (versión preliminar) en su entorno de Microsoft 365.
+Los recursos de esta sección ayudan al administrador de su organización a configurar Viva Learning (versión preliminar) en su Microsoft 365 organización.
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|

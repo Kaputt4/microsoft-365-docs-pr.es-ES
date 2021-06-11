@@ -41,8 +41,8 @@ En la tabla siguiente se enumeran los límites de búsqueda al usar la herramien
 |El número máximo de búsquedas en toda la organización que se pueden ejecutar al mismo tiempo. <br/> |3  <br/> |
 |El número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. Este límite es más probable que se cumpla cuando el usuario intente iniciar varias búsquedas mediante el comando **Get-ComplianceSearch \| Start-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento.  <br/> |10  <br/> |
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda de contenido.  <br/> |100  <br/> |
-|El número máximo de elementos encontrados en todos los buzones de usuario que se muestran en la página de vista previa al obtener una vista previa de los resultados de la búsqueda. Se muestran los elementos más recientes.  <br/> |1,000  <br/> |
-|El número máximo de buzones de usuario de los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 1000 buzones que contienen contenido que coincide con la consulta de búsqueda, solo estarán disponibles los primeros 1000 buzones con la mayoría de resultados de búsqueda para la vista previa.  <br/> |1,000  <br/> |
+|El número máximo de elementos encontrados en todos los buzones de usuario que se muestran en la página de vista previa al obtener una vista previa de los resultados de la búsqueda. Se muestran los elementos más recientes.  <br/> |1.000  <br/> |
+|El número máximo de buzones de usuario de los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 1000 buzones que contienen contenido que coincide con la consulta de búsqueda, solo estarán disponibles los primeros 1000 buzones con la mayoría de resultados de búsqueda para la vista previa.  <br/> |1.000  <br/> |
 |Número máximo de elementos que se encuentran en SharePoint y OneDrive para la Empresa que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda. Se muestran los elementos más recientes.  <br/> |200  <br/> |
 |El número máximo de sitios (en SharePoint y OneDrive para la Empresa) que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios totales que contienen contenido que coincide con la consulta de búsqueda, solo los 200 sitios principales con más resultados de búsqueda estarán disponibles para la vista previa.  <br/> |200  <br/> |
 |Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda de contenido.  <br/> |100  <br/> |
@@ -64,7 +64,7 @@ Microsoft recopila información de rendimiento para las búsquedas ejecutadas po
 |Número de buzones|Promedio de tiempo de búsqueda|
 |:-----|:-----|
 |100|30 segundos|
-|1,000|45 segundos|
+|1.000|45 segundos|
 |10 000|4 minutos|
 |25 000|10 minutos|
 |50 000|20 minutos|

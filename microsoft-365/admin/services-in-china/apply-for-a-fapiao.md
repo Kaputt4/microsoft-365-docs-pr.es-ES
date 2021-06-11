@@ -41,7 +41,7 @@ Hay dos formas de solicitar un Fapiao:
   
 1. Después de realizar un pago en el Office 365 operado por el sitio web de 21Vianet, recibirá un correo electrónico de confirmación de pedido que contiene su número de pedido y un vínculo al sistema de administración de Fapiao. Puede usar el vínculo del correo electrónico para crear una cuenta en el sistema de administración de información <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao</a>.
 
-    O bien
+    O bien:
 
 2. Puede solicitar un Fapiao desde el Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">de administración.</a>
 

@@ -32,7 +32,7 @@ En este artículo se explica cómo descargar claves de licencia de software y pr
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global para realizar los pasos descritos en este artículo. Para más información, vea [Sobre los roles de administrador](../add-users/about-admin-roles.md).
+Debe ser un administrador global para realizar los pasos descritos en este artículo. Para obtener más información, vea [Sobre los roles de administrador](../add-users/about-admin-roles.md).
 
 ## <a name="download-software-and-product-license-keys"></a>Descargar claves de licencia de software y producto
 

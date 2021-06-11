@@ -82,7 +82,7 @@ Para obtener información sobre cómo abrir vales de soporte técnico, póngase 
 > [!Note]
 > Si tiene un contrato de soporte técnico de permier con Microsoft, verá la etiqueta premier en el widget. Si no es así, póngase en contacto con el administrador de cuentas de Microsoft.
 
-### <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
+### <a name="contact-support"></a>Contactar soporte
 Esta opción está disponible haciendo clic en el icono que parece un auricular. A continuación, recibirá la siguiente página para enviar el caso de soporte técnico:
 
 ![Imagen del widget abrir una solicitud de servicio](images/Support4.png)

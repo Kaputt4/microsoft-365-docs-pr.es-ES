@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 55171429d3ea447de32eb7e2ec12b8b2c3542e95
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861712"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538392"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender para Endpoint Device Control Removable Storage Protection
 
@@ -35,7 +35,7 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection imp
 
 **Funcionalidades:** impedir la instalación con o sin exclusión basada en varias propiedades del dispositivo.
 
-**Windows 10 de soporte técnico**
+**Descripción**
 - Se aplica a nivel de máquina: se aplica la misma directiva para cualquier usuario que haya iniciado sesión.
 - Admite MEM y GPO.
 - Compatible con '[Propiedades de dispositivo](#device-properties)' como se muestra.
@@ -43,7 +43,7 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection imp
 
 **Plataforma compatible:** Windows 10
 
-**Detalles de soporte técnico de macOS**
+**Descripción**
 - Se aplica a nivel de máquina: se aplica la misma directiva para cualquier usuario que haya iniciado sesión
 - Para obtener información específica de macOS, consulta [Control de dispositivos para macOS](mac-device-control-overview.md).
  
@@ -55,7 +55,7 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection imp
 - *Auditoría* Acceso de lectura o escritura o ejecución al almacenamiento extraíble basado en varias propiedades del dispositivo, con o sin exclusión.
 - *Impedir* Acceso de lectura o escritura o ejecución con o sin exclusión: permitir un dispositivo específico basado en varias propiedades del dispositivo.
 
-**Windows 10 de soporte técnico**
+**Descripción**
 - Se aplica a la máquina o al usuario o a ambos: solo permite a personas específicas que realizan lectura,escritura/ejecución acceder al almacenamiento extraíble específico en un equipo específico.
 - Admite MEM OMA-URI y GPO.
 - Compatible con '[Propiedades de dispositivo](#device-properties)' como se muestra.
@@ -63,7 +63,7 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection imp
 
 **Plataforma compatible:** Windows 10
 
-**Detalles de soporte técnico de macOS**
+**Descripción**
 - Se aplica a nivel de máquina: se aplica la misma directiva para cualquier usuario que haya iniciado sesión.
 - Para obtener información específica de macOS, consulta [Control de dispositivos para macOS](mac-device-control-overview.md).
  

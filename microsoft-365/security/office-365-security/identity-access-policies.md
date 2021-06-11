@@ -197,7 +197,7 @@ En la segunda **sección Asignaciones:**
 
 |Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Access|**Permitir acceso**||Select|
+|Acceso|**Permitir acceso**||Select|
 |||**Exigir cambio de contraseña**|Cheque|
 |
 

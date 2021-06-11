@@ -94,7 +94,7 @@ Si su escuela no califica como una institución académica calificada de Microso
 
 Si tiene preguntas sobre la decisión de elegibilidad académica de su escuela, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener información sobre cómo implementar Microsoft 365 para su escuela, visite [Microsoft 365 Educación documentación y recursos](/microsoft-365/education/deploy/). A continuación, [puede agregar usuarios y asignar licencias al mismo tiempo.](../../admin/add-users/add-users.md) Si es necesario, también puede comprar [más licencias para su suscripción.](../licenses/buy-licenses.md)
 

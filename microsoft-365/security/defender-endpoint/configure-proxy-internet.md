@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/21/2021
 ms.locfileid: "52594102"
 ---
-# <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar el proxy de dispositivo y la configuración de conectividad a Internet
+# <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

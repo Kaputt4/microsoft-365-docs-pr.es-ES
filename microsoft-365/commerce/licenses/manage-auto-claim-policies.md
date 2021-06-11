@@ -59,7 +59,7 @@ De forma predeterminada, la característica de directiva de notificación autom�
 
 Solo un administrador global puede desactivar una configuración de directiva de notificación automática.
 
-1. En el Centro de administración, vaya a la **página Configuración** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">la organización.</a>
+1. En el Centro de administración, vaya a la **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">configuración de la organización.</a>
 2. Cerca de la parte inferior de la tabla, seleccione Aplicaciones y servicios **de propiedad del usuario.**
 3. En el panel derecho, desactive el cuadro Permitir a los usuarios **auto-reclamar licencias la primera vez que inicien sesión.**
 
@@ -157,7 +157,7 @@ Si tienes productos de copia de seguridad asignados a la directiva, puedes cambi
 2. Seleccione **Ver informe**. La **página Informe de directiva de notificación** automática enumera todas las licencias asignadas de cada directiva en los últimos 90 días. De forma predeterminada, la página muestra los últimos 90 días.
 3. Para cambiar el período de tiempo que se muestra, seleccione la **lista desplegable Pasados 30** días. Puede ver informes de los últimos 1, 7, 30 y 90 días.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Puede volver periódicamente a la pestaña **Directiva** de notificación automática para ver una lista de usuarios que han reclamado licencias en las directivas que creó.
 
