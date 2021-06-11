@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da3722294957593fc9cb89abfaec13e45106eefc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a3b017a9a05964c15411668787b035f1052c68cf
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187390"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878285"
 ---
 # <a name="machineaction-resource-type"></a>Tipo de recurso MachineAction
 
@@ -40,7 +40,7 @@ ms.locfileid: "51187390"
 
 - Para obtener más información, vea [Response Actions](respond-machine-alerts.md). 
 
-| Método                                                            | Tipo de valor devuelto                        | Descripción                                                 |
+| Método                                                            | Tipo de valor devuelto                        | Description                                                 |
 |:------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------|
 | [Enumerar MachineActions](get-machineactions-collection.md)           | [Acción de máquina](machineaction.md) | Enumerar [entidades de acción](machineaction.md) de máquina.           |
 | [Obtener MachineAction](get-machineaction-object.md)                  | [Acción de máquina](machineaction.md) | Obtener una sola [entidad De acción de](machineaction.md) máquina.     |
@@ -53,6 +53,9 @@ ms.locfileid: "51187390"
 | [Ejecutar examen antivirus](run-av-scan.md)                              | [Acción de máquina](machineaction.md) | Ejecute un examen antivirus con Windows Defender (cuando corresponda).    |
 | [Retirar máquina](offboard-machine-api.md)                       | [Acción de máquina](machineaction.md) | Equipo fuera [de la máquina](machine.md) de Microsoft Defender para endpoint. |
 | [Detener y poner en cuarentena un archivo](stop-and-quarantine-file.md)           | [Acción de máquina](machineaction.md) | Detenga la ejecución de un archivo en un equipo y elimínelo.        |
+| [Ejecutar respuesta en directo](run-live-response.md)                     | [Acción de máquina](machineaction.md)  | Ejecuta una secuencia de comandos de respuesta en directo en un dispositivo                       |
+| [Obtener resultado de respuesta en directo](get-live-response-result.md) | Entidad URL      | Recupera el vínculo de descarga de resultados del comando de respuesta en directo específico por su índice. |
+|[Cancelar la acción del equipo](cancel-machine-action.md)                                | [Acción de máquina](machineaction.md)  | Cancelar una acción de máquina activa.                                            |
 
 <br>
 
@@ -71,6 +74,7 @@ ms.locfileid: "51187390"
 | creationDateTimeUtc | DateTimeOffset | Fecha y hora en que se creó la acción.                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | La última fecha y hora en que se actualizó el estado de la acción.                                                                                                                                                     |
 | relatedFileInfo     | Clase          | Contiene dos propiedades. string ```fileIdentifier``` , ```fileIdentifierType``` Enumerar con los valores posibles: "Sha1", "Sha256" y "Md5".                                                                         |
+
 
 
 ## <a name="json-representation"></a>Representación json

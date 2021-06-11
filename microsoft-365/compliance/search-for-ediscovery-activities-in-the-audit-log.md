@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre qué eventos se registran cuando los usuarios asignados a permisos de exhibición de documentos electrónicos realizan búsquedas de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery tareas en el centro de Microsoft 365 cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b1f3f235f3411e2f637e4e32104c6179643757d
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: cca0cdc02e2c23231637acf6eba2b07144266e36
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657698"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888414"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
 
@@ -48,7 +48,7 @@ Actualmente, debe hacer algunas cosas específicas para ver las actividades de e
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con su cuenta profesional o educativa.
 
-2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en **Mostrar todo** y, a continuación, haga clic en **Auditar**.
+2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en **Auditar**.
 
 3. En la **lista** desplegable Actividades, en **Actividades** de exhibición de documentos electrónicos **o** Advanced eDiscovery, haga clic en una o más actividades para buscar.
 
@@ -71,10 +71,10 @@ Actualmente, debe hacer algunas cosas específicas para ver las actividades de e
 
 ## <a name="ediscovery-activities"></a>Actividades de eDiscovery
 
-En la tabla siguiente se describen las actividades de búsqueda de contenido y exhibición de documentos electrónicos principales que se registran cuando un administrador o administrador de exhibición de documentos electrónicos realiza una actividad relacionada con la exhibición de documentos electrónicos mediante el centro de cumplimiento o ejecutando el cmdlet correspondiente en PowerShell del Centro de seguridad & cumplimiento. Tenga en cuenta también que algunas actividades realizadas en Advanced eDiscovery pueden devolverse al buscar actividades en esta lista.
+En la tabla siguiente se describen las actividades de búsqueda de contenido y exhibición de documentos electrónicos principales que se registran cuando un administrador o administrador de exhibición de documentos electrónicos realiza una actividad relacionada con la exhibición de documentos electrónicos mediante el centro de cumplimiento Microsoft 365 contenido. Algunas actividades realizadas en Advanced eDiscovery pueden devolverse al buscar actividades en esta lista.
   
 > [!NOTE]
-> Las actividades de exhibición de documentos electrónicos descritas en esta sección proporcionan información similar a las actividades del cmdlet eDiscovery descritas en la sección siguiente. Se recomienda usar las actividades de exhibición de documentos electrónicos que se describen en esta sección porque aparecerán en los resultados de búsqueda del registro de auditoría en 30 minutos. Las actividades del cmdlet eDiscovery tardan hasta 24 horas en aparecer en los resultados de búsqueda del registro de auditoría.
+> Las actividades de exhibición de documentos electrónicos descritas en esta sección proporcionan información similar a las actividades del cmdlet eDiscovery descritas en la sección siguiente. Se recomienda usar las actividades de exhibición de documentos electrónicos que se describen en esta sección porque aparecerán en los resultados de búsqueda del registro de auditoría en 30 minutos. Las actividades del cmdlet eDiscovery pueden tardar hasta 24 horas en aparecer en los resultados de búsqueda del registro de auditoría.
   
 |**Nombre descriptivo**|**Operación**|**Cmdlet correspondiente**|**Descripción**|
 |:-----|:-----|:-----|:-----|
@@ -86,7 +86,7 @@ En la tabla siguiente se describen las actividades de búsqueda de contenido y e
 |Filtro de permisos de búsqueda modificado  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |Se cambió un filtro de permisos de búsqueda.  <br/> |
 |Consulta de búsqueda modificada para retención de casos de exhibición de documentos electrónicos  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |Se cambió una retención basada en consultas asociada a un caso de exhibición de documentos electrónicos. Los posibles cambios incluyen la edición de la consulta o el intervalo de fechas de una retención basada en consulta.  <br/> |
 |Elemento de vista previa de búsqueda de contenido descargado  <br/> |PreviewItemDownloaded  <br/> |N/D  <br/> |Un usuario descargó un elemento en su equipo local (haciendo clic en el vínculo **Descargar elemento original)** al obtener una vista previa de los resultados de la búsqueda.  <br/> |
-|Elemento de vista previa de búsqueda de contenido enumerado  <br/> |PreviewItemListed  <br/> |N/D  <br/> |Un usuario hizo clic en **Vista** previa de resultados de búsqueda para mostrar la página de resultados de búsqueda de vista previa, que enumera hasta 1000 elementos de los resultados de una búsqueda de contenido.  <br/> |
+|Elemento de vista previa de búsqueda de contenido enumerado  <br/> |PreviewItemListed  <br/> |N/D  <br/> |Un usuario **hizo** clic en Vista previa de resultados de búsqueda para mostrar la página de resultados de búsqueda de vista previa, que enumera hasta 1.000 elementos de los resultados de una búsqueda.  <br/> |
 |Elemento de vista previa de búsqueda de contenido visto  <br/> |PreviewItemRendered  <br/> |N/D  <br/> |Un administrador de exhibición de documentos electrónicos ha visto un elemento haciendo clic en él al obtener una vista previa de los resultados de la búsqueda.  <br/> |
 |Búsqueda de contenido creada  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |Se creó una nueva búsqueda de contenido.  <br/> |
 |Administrador de exhibición de documentos electrónicos creado  <br/> |CaseAdminAdded  <br/> |Add-eDiscoveryCaseAdmin  <br/> |Se agregó un usuario como administrador de exhibición de documentos electrónicos en la organización.  <br/> |
@@ -108,14 +108,14 @@ En la tabla siguiente se describen las actividades de búsqueda de contenido y e
 |Se quitó la acción de purga realizada en la búsqueda de contenido  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de purga de búsqueda de contenido.  <br/> |
 |Informe de búsqueda quitado  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de informe de exportación de búsqueda de contenido.  <br/> |
 |Análisis iniciado de búsqueda de contenido  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |Los resultados de una búsqueda de contenido se prepararon para el análisis en Advanced eDiscovery.  <br/> |
-|Búsqueda de contenido iniciada  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |Se inició una búsqueda de contenido. Al crear o cambiar una búsqueda de contenido mediante la GUI Microsoft 365 centro de cumplimiento, la búsqueda se inicia automáticamente. Si crea o cambia una búsqueda mediante el cmdlet **New-ComplianceSearch** o **Set-ComplianceSearch,** debe ejecutar el cmdlet **Start-ComplianceSearch** para iniciar la búsqueda.  <br/> |
+|Búsqueda de contenido iniciada  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |Se inició una búsqueda de contenido. Al crear o cambiar una búsqueda de contenido mediante el centro de Microsoft 365 de cumplimiento, la búsqueda se inicia automáticamente.<br/> |
 |Exportación iniciada de búsqueda de contenido  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |Un usuario exportó los resultados de una búsqueda de contenido.  <br/> |
 |Informe de exportación iniciado  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Un usuario exportó un informe de búsqueda de contenido.  <br/> |
 |Búsqueda de contenido detenida  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Un usuario detuvo una búsqueda de contenido.  <br/> |
-|(ninguno)|CaseViewed|Get-ComplianceCase|Un usuario ha visto la lista de casos en la página **eDiscovery** principal o en la página **Advanced eDiscovery** en el centro de cumplimiento o ejecutando el cmdlet Get-ComplianceCase web.|
-|(ninguno)|SearchViewed|Get-ComplianceSearch|Un usuario ha visto la lista en  búsquedas de contenido (enumeradas en la pestaña Búsquedas) en el centro de cumplimiento o ejecutando el cmdlet. Esta actividad también se registra cuando un usuario ve la lista de búsquedas de contenido asociadas con un caso de exhibición de documentos electrónicos (haciendo clic en la pestaña Búsquedas en un caso) o ejecutando el comando **Get-ComplianceSearch -Case.** |
-|(ninguno)|ViewedSearchExported|Get-ComplianceSearchAction -Export|Un usuario ha visto la lista de trabajos  de exportación de búsqueda de contenido (enumerados en la pestaña Exportaciones) en el centro de cumplimiento o ejecutando el cmdlet. Esta actividad también se registra cuando un usuario ve la lista de  trabajos de exportación en un caso de exhibición de documentos electrónicos (enumerado en la pestaña Exportaciones en un caso) o ejecutando el comando **Get-ComplianceSearchAction -Case -Export.**|
-|(ninguno)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|Un usuario obtiene una vista previa de los resultados de una búsqueda de contenido en el centro de cumplimiento o ejecutando el cmdlet.|
+|(ninguno)|CaseViewed|Get-ComplianceCase|Un usuario ha visto un caso de exhibición de documentos electrónicos principal en el centro de cumplimiento. El registro de auditoría de este evento incluye el nombre del caso que se ha visto. |
+|(ninguno)|SearchViewed|Get-ComplianceSearch|Un usuario ha visto una búsqueda de contenido en  el centro de cumplimiento accediendo a la búsqueda en la pestaña Búsquedas de un caso de exhibición de documentos electrónicos principal o accediendo a ella en la página **Búsqueda de** contenido. El registro de auditoría de este evento incluye la identidad de la búsqueda que se ha visto.|
+|(ninguno)|ViewedSearchExported|Get-ComplianceSearchAction -Export|Un usuario ha visto una exportación de búsqueda de contenido en el centro de cumplimiento accediendo a la exportación en la **pestaña** Exportaciones de la **página Búsqueda de** contenido. Esta actividad también se registra cuando un usuario ve una exportación asociada a un caso de exhibición de documentos electrónicos principal.|
+|(ninguno)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|Un usuario ha obtenido una vista previa de los resultados de una búsqueda de contenido en el centro de cumplimiento. Esta actividad también se registra cuando un usuario muestra una vista previa de los resultados de una búsqueda asociada a un caso de exhibición de documentos electrónicos principal.|
 |||||
   
 ## <a name="advanced-ediscovery-activities"></a>Actividades de eDiscovery avanzado
@@ -153,7 +153,7 @@ En la tabla siguiente se describen las Advanced eDiscovery registradas en el reg
 
 En la tabla siguiente se enumeran los registros de registro de auditoría del cmdlet que se registran cuando un administrador o usuario realiza una actividad relacionada con la exhibición de documentos electrónicos mediante el centro de cumplimiento o ejecutando el cmdlet correspondiente en PowerShell del Centro de seguridad & cumplimiento. La información detallada del registro de auditoría es diferente para las actividades de cmdlet que se enumeran en esta tabla y las actividades de exhibición de documentos electrónicos descritas en la sección anterior.
   
-Como se ha indicado anteriormente, las actividades del cmdlet eDiscovery tardan hasta 24 horas en aparecer en los resultados de búsqueda del registro de auditoría.
+Como se ha indicado anteriormente, las actividades del cmdlet eDiscovery pueden tardar hasta 24 horas en aparecer en los resultados de búsqueda del registro de auditoría.
   
 > [!TIP]
 > Los cmdlets de la **columna Operación** de la tabla siguiente están vinculados al tema de ayuda del cmdlet correspondiente en TechNet. Vaya al tema de ayuda del cmdlet para obtener una descripción de los parámetros disponibles para cada cmdlet. El parámetro y el valor del parámetro que se usaron con un cmdlet se incluyen en la entrada del registro de auditoría para cada actividad del cmdlet de exhibición de documentos electrónicos que se registra. 
@@ -185,6 +185,10 @@ Como se ha indicado anteriormente, las actividades del cmdlet eDiscovery tardan 
 |Administrador de exhibición de documentos electrónicos creado  <br/> |[Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) <br/> |Se agregó un usuario como administrador de exhibición de documentos electrónicos en la organización.  <br/> |
 |Administrador de exhibición de documentos electrónicos eliminado  <br/> |[Remove-eDiscoveryCaseAdmin](/powershell/module/exchange/remove-ediscoverycaseadmin) <br/> |Se eliminó un administrador de exhibición de documentos electrónicos de la organización.  <br/> |
 |Pertenencia de administrador de exhibición de documentos electrónicos modificada  <br/> |[Update-eDiscoveryCaseAdmin](/powershell/module/exchange/update-ediscoverycaseadmin) <br/> |Se cambió la lista de administradores de exhibición de documentos electrónicos de la organización. Esta actividad se registra cuando la lista de administradores de exhibición de documentos electrónicos se reemplaza por un grupo de nuevos usuarios. Si se agrega o quita un solo usuario, se registra la operación **Add-eDiscoveryCaseAdmin** o **Remove-eDiscoveryCaseAdmin.**  <br/> |
+|(ninguno)|[Get-ComplianceCase](/powershell/module/exchange/get-compliancecase) <br/>|Esta actividad se registra cuando un usuario ve una lista de documentos electrónicos principales o Advanced eDiscovery casos. Esta actividad también se registra cuando un usuario ve un caso específico en eDiscovery principal. Cuando un usuario ve un caso específico, el registro de auditoría incluye la identidad del caso que se ha visto. Si el usuario solo ha visto una lista de casos, el registro de auditoría no contiene una identidad de caso.|
+|(ninguno)|[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)|Esta actividad se registra cuando un usuario ve una lista de búsquedas de contenido o búsquedas asociadas con un caso de exhibición de documentos electrónicos principal. Esta actividad también se registra cuando un usuario ve una búsqueda de contenido específica o cuando ve una búsqueda específica asociada con un caso de exhibición de documentos electrónicos principal. Cuando un usuario ve una búsqueda específica, el registro de auditoría incluye la identidad de la búsqueda que se ha visto. Si el usuario solo ha visto una lista de búsquedas, el registro de auditoría no contiene una identidad de búsqueda.
+|(ninguno)|[Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)|Esta actividad se registra cuando un usuario ve una lista de acciones de búsqueda de cumplimiento (como exportaciones, vistas previas o purgas) o acciones asociadas con un caso de exhibición de documentos electrónicos principal. Esta actividad también se registra cuando un usuario ve una acción de búsqueda de cumplimiento específica (como una exportación) o cuando ve una acción específica asociada a un caso de exhibición de documentos electrónicos principal. Cuando un usuario ve una acción de búsqueda, el registro de auditoría incluye la identidad de la acción de búsqueda que se ha visto. Si el usuario solo ha visto una lista de acciones, el registro de auditoría no contiene una identidad de acción.|
+||||
 
 ## <a name="detailed-properties-for-ediscovery-activities"></a>Propiedades detalladas para actividades de exhibición de documentos electrónicos
 
@@ -207,7 +211,7 @@ En la tabla siguiente se describen  las propiedades  que se incluyen al hacer cl
 |ExtendedProperties  <br/> |Propiedades adicionales de una búsqueda de contenido, una acción de búsqueda de contenido o retención en un caso de exhibición de documentos electrónicos, como el GUID del objeto y los parámetros de cmdlet y cmdlet correspondientes que se usaron cuando se realizó la actividad.  <br/> |
 |Id  <br/> |El identificador de la entrada del informe. El identificador identifica de forma única la entrada del registro de auditoría.  <br/> |
 |NonPIIParameters  <br/> |Una lista de los parámetros (sin valores) que se usaron con el cmdlet identificado en la propiedad Operation. Los parámetros enumerados en esta propiedad son los mismos que los enumerados en la propiedad Parameters.  <br/> |
-|ObjectId  <br/> |Guid o nombre del objeto (por ejemplo, una búsqueda de contenido o un caso de exhibición de documentos electrónicos) que la actividad enumera en la propiedad Operation creó, cambió o eliminó. Este objeto también se identifica en la columna Elemento de los resultados de búsqueda del registro de auditoría.  <br/> |
+|ObjectId  <br/> |Guid o nombre del objeto (por ejemplo, una búsqueda de contenido o un caso de exhibición de documentos electrónicos principal) que la actividad enumerada en la propiedad Operation creó, tuvo acceso, cambió o eliminó. Este objeto también se identifica en la columna Elemento de los resultados de búsqueda del registro de auditoría.  <br/> |
 |ObjectType  <br/> |El tipo de objeto de exhibición de documentos electrónicos que el usuario creó, eliminó o modificó; por ejemplo, una acción de búsqueda de contenido (vista previa, exportación o purga), un caso de exhibición de documentos electrónicos o una búsqueda de contenido.  <br/> |
 |Operación  <br/> |Nombre de la operación que corresponde a la actividad de exhibición de documentos electrónicos que se realizó.  <br/> |
 |OrganizationId  <br/> |GUID de la Microsoft 365 organización.  <br/> |

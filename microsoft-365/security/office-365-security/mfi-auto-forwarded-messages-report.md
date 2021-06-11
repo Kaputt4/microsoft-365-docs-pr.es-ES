@@ -53,13 +53,13 @@ Al hacer clic en el número de mensajes del widget, aparece un panel flotante qu
 
 ![Control de detalles del informe de mensajes reenviados automáticamente en el Centro de seguridad y & cumplimiento](../../media/mfi-auto-forwarded-messages-details.png)
 
-## <a name="insights"></a>Enfoques
+## <a name="insights"></a>Insights
 
 Se generan dos perspectivas en función de los datos del informe:
 
 - [Nuevos usuarios reenviar correo electrónico](mfi-new-users-forwarding-email.md)
 - [Nuevos dominios que se reenvía correo electrónico](mfi-new-domains-being-forwarded-email.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

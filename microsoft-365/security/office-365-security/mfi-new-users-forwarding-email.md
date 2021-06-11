@@ -102,11 +102,11 @@ Si selecciona una fila de la tabla, **aparecerá** un menú desplegable Detalles
 
 - **Nombre:** esta es la dirección de correo electrónico del remitente (desde Mostrar datos **para: Vista** Nuevos usuarios de reenvío) o el dominio de correo electrónico del remitente (desde Mostrar datos **para:** Vista Nuevos dominios de reenvío).
 - **Tipo de reenvío**
-- **Recipient**
+- **Destinatario**
 - **Detalles**
 - **Count**
 - **Fecha de comienzo**
-- **Recomendación:** Desde aquí, puede hacer clic en el vínculo para administrar el usuario en el Centro de administración de Microsoft 365.
+- **Recomendación:** Desde aquí, puede hacer clic en el vínculo para administrar el usuario en el centro Microsoft 365 administración.
 
 ![Los detalles se desván de la tabla de detalles de la vista Nuevos usuarios de reenvío en el informe Modificaciones de reenvío](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

@@ -37,7 +37,7 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 ||Controle quién puede compartir archivos, carpetas y sitios.|[Configurar y administrar solicitudes de acceso](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Acceso condicional|||
 ||Autenticación multifactor|[Autenticación multifactor de Azure AD](/azure/active-directory/authentication/concept-mfa-howitworks)|
-||Controle el acceso a dispositivos según la confidencialidad de grupo, equipo o sitio.|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Controle el acceso a dispositivos según la confidencialidad de grupo, equipo o sitio.|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Limitar el acceso al sitio para dispositivos no administrados.|[Controlar SharePoint acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices)|
 ||Controlar el acceso al sitio en función de la ubicación|[Controlar el acceso a los datos de SharePoint y OneDrive en función de la ubicación de red](/sharepoint/control-access-based-on-network-location)|
 |Acceso de invitado|||
@@ -48,7 +48,7 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 ||Controlar la expiración de los vínculos de uso compartido anónimo.|[Establezca una fecha de expiración de los vínculos para Cualquiera](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)|
 ||Controla el tipo de vínculo de uso compartido que se muestra a los usuarios de forma predeterminada.|[Cambiar el tipo de vínculo predeterminado para un sitio](/sharepoint/change-default-sharing-link)|
 ||Limitar el uso compartido externo a personas específicas.|[Limitar el uso compartido externo a grupos de seguridad especificados](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
-||Controle el acceso de invitado a un grupo, equipo o sitio en función de la confidencialidad de la información.|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Controle el acceso de invitado a un grupo, equipo o sitio en función de la confidencialidad de la información.|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Desactivar las opciones de uso compartido.|[Limitar el uso compartido en Microsoft 365](./microsoft-365-limit-sharing.md)|
 |Administración de usuarios|||
 ||Revise la pertenencia a grupos y equipos de forma periódica.|[¿Qué son las revisiones de acceso de Azure AD?](/azure/active-directory/governance/access-reviews-overview)|
@@ -78,7 +78,7 @@ Con Microsoft 365, puede requerir autenticación multifactor para personas dentr
 
 Si tienes información confidencial en algunos de tus grupos y equipos, puedes aplicar directivas de administración de dispositivos basadas en la etiqueta de confidencialidad de un grupo o equipo. Puede bloquear el acceso por completo desde dispositivos no administrados o permitir el acceso limitado y solo web:
 
-- [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
+- [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 En SharePoint, puede restringir el acceso a los sitios desde ubicaciones de red especificadas.
 
@@ -120,7 +120,7 @@ Si su organización tiene datos confidenciales que necesita compartir con invita
 
 Los grupos y Teams tienen opciones de configuración de nivel de organización que permiten o deniegan el acceso de invitado. Aunque puede restringir el acceso de invitado a grupos o equipos específicos mediante [Microsoft PowerShell,](per-group-guest-access.md)se recomienda hacerlo mediante una etiqueta de confidencialidad. Con las etiquetas de confidencialidad puede permitir o denegar automáticamente el acceso de invitado en función de la etiqueta aplicada:
 
-- [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
+- [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 En un entorno en el que suele invitar invitados a grupos y equipos, considere la posibilidad de configurar revisiones de acceso de invitado programadas periódicamente. Se puede solicitar a los propietarios que revisen a los invitados de sus grupos y equipos y aprueben o denieguen el acceso.
 

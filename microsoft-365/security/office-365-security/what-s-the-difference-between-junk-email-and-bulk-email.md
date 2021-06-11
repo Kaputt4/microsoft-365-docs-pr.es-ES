@@ -35,7 +35,7 @@ ms.locfileid: "51207554"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los clientes a veces preguntan: "¿cuál es la diferencia entre el correo electrónico no deseado y el correo masivo?". En este tema se explica la diferencia y se describen los controles que están disponibles en EOP.
+En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de correo de Exchange Online, los clientes a veces preguntan: "¿cuál es la diferencia entre el correo electrónico no deseado y el correo masivo?". En este tema se explica la diferencia y se describen los controles que están disponibles en EOP.
 
 - **El correo no** deseado es correo no deseado, que son mensajes no solicitados y universalmente no deseados (cuando se identifican correctamente). De forma predeterminada, EOP rechaza el correo no deseado en función de la reputación del servidor de correo electrónico de origen. Si un mensaje pasa la inspección IP de origen, se envía al filtrado de correo no deseado. Si el mensaje se clasifica como correo no deseado mediante el filtrado de correo no deseado, el mensaje se entrega (de forma predeterminada) a los destinatarios previstos y se mueve a su carpeta correo no deseado.
 

@@ -52,6 +52,6 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con 
 
 ![Control de detalles que aparece después de hacer clic en Ver detalles en la información de corregir posibles bucles de correo](../../media/mfi-fix-possible-mail-loop-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

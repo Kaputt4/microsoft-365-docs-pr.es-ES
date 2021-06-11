@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff190fa85e631562a07dcecc1f75713ecacdf07e
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 6839401bc1dd00acc45992f902a6360eb7f20120
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822122"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878201"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
 
 
-[Los tipos de información confidencial personalizada](sensitive-information-type-learn-about.md) se usan para ayudar a identificar los elementos confidenciales y así evitar que se compartan de forma inadvertida o inapropiada. Defina un tipo de información confidencial personalizada a partir de lo siguiente:
+[Los tipos de información confidencial personalizada](sensitive-information-type-learn-about.md) se usan para ayudar a identificar los elementos confidenciales y así evitar que se compartan de forma inadvertida o inapropiada. Se define un tipo de información confidencial personalizado (SIT) basado en:
 
 - patrones
 - evidencia de palabras clave como *empleado*, *distintivo* o *id.*
@@ -93,21 +93,22 @@ La clasificación basada en EDM se incluye en estas suscripciones
 
 La configuración y la configuración de la clasificación basada en EDM incluye lo siguiente:
 
-1. [Guardar datos confidenciales en formato .csv](#save-sensitive-data-in-csv-format)
+1. [Guardar datos confidenciales en .csv o en formato .tsv](#save-sensitive-data-in-csv-or-tsv-format)
 2. [Definir el esquema de la base de datos de su información confidencial](#define-the-schema-for-your-database-of-sensitive-information)
 3. [Crear un paquete de reglas](#set-up-a-rule-package)
 
 
-#### <a name="save-sensitive-data-in-csv-format"></a>Guardar datos confidenciales en formato .csv
+#### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>Guardar datos confidenciales en .csv o en formato .tsv
 
-1. Identifique la información confidencial que quiera usar. Exporte los datos a una aplicación, como Microsoft Excel, y guarde el archivo en formato .csv. El archivo de datos puede incluir un máximo de:
+1. Identifique la información confidencial que quiera usar. Exporte los datos a una aplicación, como Microsoft Excel, y guarde el archivo en un archivo de texto. El archivo se puede guardar en .csv (valores separados por comas), .tsv (valores separados por tabulaciones) o en formato separado por |). El formato .tsv se recomienda en casos en los que los valores de datos pueden incluir comas, como direcciones de calle.
+El archivo de datos puede incluir un máximo de:
       - Hasta 100 millones de filas de datos confidenciales
       - Hasta 32 columnas (campos) por origen de datos
       - Hasta 5 columnas (campos) marcadas como utilizables en búsquedas
 
-2. Estructure los datos confidenciales en el archivo .csv de forma que la primera fila incluya los nombres de los campos que se usan para la clasificación basada en EDM. En el archivo .csv, puede tener nombres de campo como "NSS", "FechaNacimiento", "Nombre", "Apellido", etc. Los nombres de encabezado de las columnas no pueden contener espacios ni guiones bajos. Por ejemplo, el archivo .csv de ejemplo que usamos en este artículo se denomina *RegistrosPacientes.csv* y sus columnas *IdPaciente*, *NEM*, *Apellido*, *Nombre*, *NSS*, etc.
+2. Estructura los datos confidenciales del archivo .csv o .tsv de forma que la primera fila incluya los nombres de los campos usados para la clasificación basada en EDM. En el archivo, es posible que tenga nombres de campo como "ssn", "fecha de nacimiento", "nombre", "apellido". Los nombres de encabezado de las columnas no pueden contener espacios ni guiones bajos. Por ejemplo, el archivo .csv de ejemplo que usamos en este artículo se denomina *RegistrosPacientes.csv* y sus columnas *IdPaciente*, *NEM*, *Apellido*, *Nombre*, *NSS*, etc.
 
-3. Preste atención al formato de los campos de datos confidenciales. En particular, los campos que pueden contener comas en su contenido (por ejemplo, una dirección postal que contenga el valor "Seattle, WA") se analizarán como dos campos separados cuando los analice la herramienta EDM. Para evitar este problema, debe asegurarse de que los campos estén entre comillas simples o dobles en la tabla de datos confidenciales. Si los campos con comas también pueden contener espacios, tendrá que crear un tipo de información confidencial personalizado que coincida con el formato correspondiente (por ejemplo, una cadena de varias palabras que contenga comas y espacios) para asegurarse de que la cadena se haya emparejado correctamente al digitalizar el documento.
+3. Preste atención al formato de los campos de datos confidenciales. En concreto, los campos que pueden contener comas en su contenido, por ejemplo, una dirección de calle que contiene el valor "Seattle,WA" se analizarán como dos campos independientes cuando se analice si se selecciona el formato .csv. Para evitar esto, use el formato .tsv o rodeado de la coma que contiene valores entre comillas dobles en la tabla de datos confidenciales. Si las comas que contienen valores también contienen espacios, debe crear un SIT personalizado que coincida con el formato correspondiente. Por ejemplo, un SIT que detecta cadenas de varias palabras con comas y espacios en ella.
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Definir el esquema de la base de datos de información confidencial
 
@@ -205,7 +206,7 @@ En este ejemplo, donde se usan tanto `caseInsensitive` como `ignoredDelimiters`,
 
 1. Cree un paquete de reglas en formato XML (con codificación Unicode), similar al siguiente ejemplo: (Puede copiar, modificar y usar nuestro ejemplo).
 
-      Cuando configure el paquete de reglas, asegúrese de hacer referencia correctamente al archivo .csv y al archivo **edm.xml**. Puede copiar, modificar y usar nuestro ejemplo. En este XML de ejemplo, debe personalizar los siguientes campos para crear el tipo confidencial de EDM:
+      Al configurar el paquete de reglas, asegúrese de hacer referencia correctamente al archivo .csv o .tsv y **edm.xml** archivo. Puede copiar, modificar y usar nuestro ejemplo. En este XML de ejemplo, debe personalizar los siguientes campos para crear el tipo confidencial de EDM:
 
       - **RulePack id y ExactMatch id**: use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) para generar un GUID.
 
@@ -385,7 +386,7 @@ Si no desea que se muestre el archivo de datos confidenciales de texto no cifrad
 - un equipo con Windows 10 o Windows Server 2016 con .NET versión 4.6.2 para ejecutar el EDMUploadAgent
 - un directorio en el equipo de carga para lo siguiente:
     -  EDMUploadAgent
-    - el archivo de elementos confidenciales en formato CSV **RegistrosPacientes.csv** en nuestros ejemplos
+    - el archivo de elemento confidencial en .csv formato .tsv o .tsv, **PatientRecords.csv** en nuestros ejemplos
     -  los archivos hash y de sal de salida
     - el nombre del almacén de datos del archivo **edm.xml** que para este ejemplo es `PatientRecords`
 - Si ha usado el [esquema de coincidencia exacta de datos y el Asistente para el tipo de información confidencial](sit-edm-wizard.md) entonces ***debe*** descargarlo
@@ -404,7 +405,7 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
 > Antes de comenzar este procedimiento, asegúrese de que es miembro del grupo de seguridad **EDM\_DataUploaders**.
 
 > [!TIP]
-> De forma opcional, puede ejecutar una validación en el archivo CSV antes de cargarlo ejecutando lo siguiente:
+> Opcionalmente, puede ejecutar una validación en el archivo .csv o .tsv antes de cargarlo ejecutando:
 >
 >`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -443,11 +444,12 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
 
 4. Para crear un hash y cargar los datos confidenciales, ejecute el siguiente comando en la ventana del Símbolo del sistema:
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
 
    Por ejemplo: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   Esto agregará automáticamente un valor de sal generado de manera aleatoria al hash para una mayor seguridad. De forma opcional, si quiere usar su propio valor de sal, agregue **/Salt <saltvalue>** al comando. Este valor debe tener 64 caracteres de longitud y solo puede contener los caracteres a-z y 0-9.
+   El formato predeterminado del archivo de datos confidenciales son valores separados por comas. Puede especificar un archivo separado por tabulaciones indicando la opción "{Tab}" con el parámetro /ColumnSeparator, o bien puede especificar un archivo separado por canalización indicando la opción "|".  
+   Este comando agregará automáticamente un valor de sal generado aleatoriamente al hash para mayor seguridad. De forma opcional, si quiere usar su propio valor de sal, agregue **/Salt <saltvalue>** al comando. Este valor debe tener 64 caracteres de longitud y solo puede contener los caracteres a-z y 0-9.
 
 5. Compruebe el estado de la carga al ejecutar este comando:
 
@@ -477,7 +479,7 @@ OPCIONAL: Si usó el esquema de coincidencia exacta de datos y el Asistente para
    - .EdmHash
    - .EdmSalt
 
-2. Copie estos archivos de forma segura al equipo que usará para cargar el archivo CSV de elementos confidenciales (RegistrosPacientes) en su espacio empresarial.
+2. Copie estos archivos de forma segura en el equipo que usará para cargar los elementos confidenciales .csv o archivo .tsv (PatientRecords) a su inquilino.
 
    Para cargar los datos con hash, ejecute el siguiente comando en el Símbolo del sistema de Windows:
 
@@ -508,10 +510,10 @@ Puede actualizar la base de datos de información confidencial diariamente y la 
 
 1. Determine el proceso y la frecuencia (diaria o semanal) para actualizar la base de datos de información confidencial.
 
-2. Vuelva a exportar los datos confidenciales a una aplicación, como Microsoft Excel, y guarde el archivo en formato .csv. Mantenga el mismo nombre de archivo y ubicación que usó cuando siguió los pasos descritos en [Crear un hash y cargar los datos confidenciales](#part-2-hash-and-upload-the-sensitive-data).
+2. Vuelva a exportar los datos confidenciales a una aplicación, como Microsoft Excel, y guarde el archivo en formato .csv o .tsv. Mantenga el mismo nombre de archivo y ubicación que usó cuando siguió los pasos descritos en [Crear un hash y cargar los datos confidenciales](#part-2-hash-and-upload-the-sensitive-data).
 
       > [!NOTE]
-      > Si no hay ningún cambio en la estructura (nombres de campo) del archivo .csv, no necesita realizar cambios en el archivo de esquema de la base de datos al actualizar los datos. Pero si necesita realizar cambios, asegúrese de editar el esquema de la base de datos y su paquete de reglas consecuentemente.
+      > Si no hay cambios en la estructura (nombres de campo) del archivo .csv o .tsv, no tendrá que realizar cambios en el archivo de esquema de base de datos al actualizar los datos. Pero si necesita realizar cambios, asegúrese de editar el esquema de la base de datos y su paquete de reglas consecuentemente.
 
 3. Use el [Programador de tareas](/windows/desktop/TaskSchd/task-scheduler-start-page) para automatizar los pasos 2 y 3 en el procedimiento [Hash y carga de los datos confidenciales](#part-2-hash-and-upload-the-sensitive-data). Puede programar tareas con varios métodos:
 
@@ -535,7 +537,7 @@ $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
@@ -571,7 +573,7 @@ $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $edmext = '.EdmHash'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 $hashFile = "$fileLocation\\$dataStoreName$edmext"
 \# Assuming Schema file name is same as data store name

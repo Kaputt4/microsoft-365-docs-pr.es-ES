@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: deb29b768c136c9c952d2abe791b310f2fd1dbdd
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538711"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878249"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -38,6 +38,9 @@ Después de crear un archivo XML con formato correcto, puede cargarlo en Microso
 Consulte [Posibles problemas de validación a tener en cuenta](#potential-validation-issues-to-be-aware-of) en este tema.
 
 Para obtener más información sobre el motor Boost.RegEx (anteriormente conocido como RegEx++) que se usa para el procesamiento de texto, vea [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
+
+> [!NOTE]
+> Si usa un carácter de yerba (&) como parte de una palabra clave en el tipo de información confidencial personalizada, tenga en cuenta que hay un problema conocido. Debe agregar un término adicional con espacios alrededor del carácter para asegurarse de que el carácter está correctamente identificado, por ejemplo, L & P _no_ L&P.
 
 ## <a name="sample-xml-of-a-rule-package"></a>XML de ejemplo de un paquete de reglas
 

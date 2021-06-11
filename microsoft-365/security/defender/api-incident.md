@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730935"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888438"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 API de incidentes de Defender y el tipo de recurso incidents
 
@@ -56,6 +56,7 @@ Método | Tipo de valor devuelto | Descripción
 -|-|-
 [Lista de Incidentes](api-list-incidents.md) | [Lista de](api-incident.md) incidentes | Obtener una lista de incidentes.
 [Incidente de actualización](api-update-incidents.md) | [Incidente](api-incident.md) | Actualice un incidente específico.
+[Obtener incidente](api-get-incident.md) | [Incidente](api-incident.md) | Obtener un solo incidente.
 
 ## <a name="request-body-response-and-examples"></a>Cuerpo de la solicitud, respuesta y ejemplos
 
@@ -67,10 +68,10 @@ Propiedad | Tipo | Descripción
 -|-|-
 incidentId | largo | Identificador único de incidente.
 redirectIncidentId | long nullable | El identificador de incidente con el que se ha combinado el incidente actual.
-incidentName | cadena | Nombre del incidente.
+incidentName | string | Nombre del incidente.
 createdTime | DateTimeOffset | La fecha y hora (en UTC) que se creó el incidente.
 lastUpdateTime | DateTimeOffset | La fecha y hora (en UTC) se actualizó por última vez el incidente.
-assignedTo | cadena | Propietario del incidente.
+assignedTo | string | Propietario del incidente.
 severity | Enum | Gravedad del incidente. Los valores posibles son: ```UnSpecified``` , , , y ```Informational``` ```Low``` ```Medium``` ```High``` .
 status | Enum | Especifica el estado actual del incidente. Los valores posibles son: ```Active``` ```Resolved``` , y ```Redirected``` .
 classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.

@@ -1,5 +1,5 @@
 ---
-title: Dispositivos archivados de Microsoft Managed Desktop
+title: Escritorio administrado de Microsoft archivados
 description: Dispositivos que se acercan a la jubilación que aún se pueden inscribir, pero que tendrán una vida útil de soporte acortada
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -18,23 +18,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51218741"
 ---
-# <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivos archivados de Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-archived-devices"></a>Escritorio administrado de Microsoft archivados
 
-Para garantizar la mejor experiencia del usuario, Microsoft Managed Desktop retira la compatibilidad con dispositivos en un momento determinado. En este artículo se enumeran los dispositivos que están a punto de retirarse en los próximos años, a los que llamamos "archivados". Si estás empezando con Microsoft Managed Desktop con dispositivos que ya tienes, debes comprobar detenidamente esta lista.
+Para garantizar la mejor experiencia del usuario, Escritorio administrado de Microsoft la compatibilidad con dispositivos en un momento determinado. En este artículo se enumeran los dispositivos que están a punto de retirarse en los próximos años, a los que llamamos "archivados". Si estás empezando a usar Escritorio administrado de Microsoft los dispositivos que ya tienes, debes comprobar esta lista detenidamente.
 
 >[!IMPORTANT]
->Todavía puedes inscribir estos dispositivos hoy, pero tendrán una vida de servicio más corta con Microsoft Managed Desktop. Si va a comprar nuevos dispositivos, debe usar modelos de la [lista de dispositivos activos.](./device-list.md)
+>Todavía puedes inscribir estos dispositivos hoy, pero tendrán una vida de servicio más corta con Escritorio administrado de Microsoft. Si va a comprar nuevos dispositivos, debe usar modelos de la [lista de dispositivos activos.](./device-list.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Para inscribirse en Microsoft Managed Desktop, un dispositivo debe ser uno de los siguientes modelos y cumplir o superar las especificaciones enumeradas para ram, familia de procesadores y espacio en disco. No se admite ninguna otra personalización.
+Para inscribirse en Escritorio administrado de Microsoft, un dispositivo debe ser uno de los siguientes modelos y cumplir o superar las especificaciones enumeradas para ram, familia de procesadores y espacio en disco. No se admite ninguna otra personalización.
 
 
 
 >[!NOTE]
->En esta tabla, la "fecha de retiro" es la fecha en la que este modelo ya no será compatible con Microsoft Managed Desktop. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán del Escritorio administrado de Microsoft, independientemente de cuándo se inscribieron.
+>En esta tabla, la "fecha de retiro" es la fecha en la que este modelo ya no será compatible con Escritorio administrado de Microsoft en absoluto. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán de Escritorio administrado de Microsoft, independientemente de cuándo se inscribieron.
 
-#### <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivos archivados de Microsoft Managed Desktop
+#### <a name="microsoft-managed-desktop-archived-devices"></a>Escritorio administrado de Microsoft archivados
 
 | Model  | Especificaciones mínimas  | Requisitos adicionales   | Fecha de retiro |
 |---------|---------|---------|---------|
@@ -69,16 +69,16 @@ Para inscribirse en Microsoft Managed Desktop, un dispositivo debe ser uno de lo
 |Estación de trabajo móvil HP ZBook Firefly 14/15 G7 |256 GB / Intel i5 / 8 GB ram |SKU con 9MZ22AV, se requiere cámara IR| **30 de noviembre de 2024** |
 |Surface Book 2| 256 GB / Intel i5 / 8 GB ram | Ninguno | **16 de noviembre de 2022** |
 |Surface Go| 128 GB / Intel 4415Y / 8 GB de RAM | Ninguno | **2 de agosto de 2023** |
-|Portátil Surface| 256 GB / Intel i5 / 8 GB ram | Ninguno | **20 de mayo de 2022** |
+|Surface Laptop| 256 GB / Intel i5 / 8 GB ram | Ninguno | **20 de mayo de 2022** |
 |Surface Laptop 2| 128 GB / Intel i5 / 8 GB de RAM | Ninguno | **16 de octubre de 2023** |
 |Surface Pro| 256 GB / Intel i5 / 8 GB ram | Ninguno | **15 de junio de 2022** |
 |Surface Pro 6| 128 GB / Intel i5 / 8 GB de RAM | Ninguno | **16 de octubre de 2023** |
 
 Además, el dispositivo también debe:
 
-- Tener una imagen aprobada por Microsoft Managed Desktop. Cuando ordene dispositivos, asegúrese de especificar que se usan con Microsoft Managed Desktop.
-- No ha completado la experiencia de primera ejecución de Windows.
-- Estar registrado en Microsoft Managed Desktop con la [característica Registro de](../get-started/register-devices-self.md) dispositivos
+- Tener una imagen aprobada por Escritorio administrado de Microsoft. Cuando ordene dispositivos, asegúrese de especificar que se usan con Escritorio administrado de Microsoft.
+- No se ha completado la Windows primera ejecución.
+- Estar registrado con Escritorio administrado de Microsoft la característica [Registro de](../get-started/register-devices-self.md) dispositivos
 
 #### <a name="more-help"></a>Más ayuda
 

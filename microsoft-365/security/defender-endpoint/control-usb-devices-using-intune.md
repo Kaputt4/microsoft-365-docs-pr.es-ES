@@ -140,7 +140,7 @@ Para evitar la instalación de dispositivos que coincidan con cualquiera de esto
 
 Puedes usar el Administrador de dispositivos para buscar un identificador de dispositivo.
 
-1. Abre el Administrador de dispositivos.
+1. Abra el Administrador de dispositivos.
 2. Haga **clic en** Ver y seleccione **Dispositivos por conexión.**
 3. En el árbol, haga clic con el botón secundario en el dispositivo y seleccione **Propiedades**.
 4. En el cuadro de diálogo del dispositivo seleccionado, haga clic en la **pestaña** Detalles.

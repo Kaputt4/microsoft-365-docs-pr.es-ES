@@ -43,4 +43,4 @@ DKIM valida un mensaje firmado digitalmente que aparece en el DKIM-Signature enc
 > [!NOTE]
 > Para obtener más información acerca del Authentication-Results, vea RFC 7001 ([Message Header Field for Indicating Message Authentication Status](https://www.rfc-editor.org/rfc/rfc7001.txt). La implementación dkim de Microsoft se ajusta a esta RFC.
 
-Los administradores pueden crear reglas [de flujo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de correo de Exchange (también conocidas como reglas de transporte) en los resultados de la validación DKIM. Estas reglas de flujo de correo permitirán a los administradores filtrar o enrutar mensajes según sea necesario.
+Los administradores pueden crear Exchange [de flujo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de correo (también conocidas como reglas de transporte) en los resultados de la validación DKIM. Estas reglas de flujo de correo permitirán a los administradores filtrar o enrutar mensajes según sea necesario.

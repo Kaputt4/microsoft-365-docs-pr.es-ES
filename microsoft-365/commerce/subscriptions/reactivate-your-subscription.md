@@ -34,7 +34,7 @@ Puede reactivar la suscripción en el centro de administración si: la suscripci
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para reactivar una suscripción. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para reactivar una suscripción. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 **¿No es un administrador?** Póngase en contacto con su administración para reactivar la suscripción.
 

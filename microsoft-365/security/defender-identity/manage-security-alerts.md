@@ -88,6 +88,6 @@ En el panel derecho, verá los detalles **de la alerta**. Aquí puede ver más d
     >[!NOTE]
     >En el Excel, ahora tiene dos vínculos disponibles: Ver en **Microsoft Defender** para identidad y ver en **Microsoft 365 Defender**. Cada vínculo le llevará al portal correspondiente y le proporcionará información sobre la alerta allí.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Investigar alertas en Microsoft 365 Defender](../defender/investigate-alerts.md)

@@ -35,7 +35,7 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 ||Retener el correo de grupos y SharePoint contenido|[Más información sobre las directivas de retención para SharePoint y OneDrive](../compliance/retention-policies-sharepoint.md)|
 ||Retener chat y mensajes|[Más información sobre las directivas de retención para Microsoft Teams](../compliance/retention-policies-teams.md)|
 |Clasificación de información|||
-||Clasificar grupos y equipos|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Clasificar grupos y equipos|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Clasificar automáticamente contenido confidencial|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](../compliance/apply-sensitivity-label-automatically.md)|
 ||Cifrar contenido confidencial|[Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](../compliance/encryption-sensitivity-labels.md)|
 |Protección de la información|||
@@ -75,7 +75,7 @@ Recursos adicionales:
 
 Puede usar etiquetas de confidencialidad para administrar el acceso de invitados, la privacidad de grupos y equipos y el acceso mediante dispositivos no administrados para grupos y equipos. Al aplicar la etiqueta, estas opciones se configuran automáticamente según lo especificado por la configuración de la etiqueta.
 
-- [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
+- [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 Puede configurar Microsoft 365 para aplicar automáticamente etiquetas de confidencialidad a archivos y correos electrónicos en función de los criterios que especifique, incluida la detección de tipos de información confidencial o la coincidencia de patrones con clasificadores entrenables.
 
@@ -89,7 +89,7 @@ Puede usar etiquetas de confidencialidad para cifrar archivos, lo que permite qu
 
 Recursos adicionales:
 
-- [Más información sobre las etiquetas de confidencialidad](../compliance/sensitivity-labels.md)
+- [Información sobre las etiquetas de confidencialidad](../compliance/sensitivity-labels.md)
 
 
 ## <a name="information-protection"></a>Protección de la información

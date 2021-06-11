@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo se proporciona información para solucionar problemas relacionados con el envío de correo electrónico a bandejas de entrada en Microsoft 365 & procedimientos recomendados para el envío masivo de correo a clientes de Microsoft 365.
+description: En este artículo se proporciona información para solucionar problemas relacionados con el envío de correo electrónico a bandejas de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a Microsoft 365 clientes.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
@@ -34,11 +34,11 @@ ms.locfileid: "51207226"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-En este artículo se proporciona información de solución de problemas para los remitentes que tienen problemas al intentar enviar correo electrónico a bandejas de entrada en Microsoft 365 y procedimientos recomendados para el envío masivo de correo a los clientes.
+En este artículo se proporciona información de solución de problemas para los remitentes que tienen problemas al intentar enviar correo electrónico a las bandejas de entrada en Microsoft 365 y procedimientos recomendados para el envío masivo de correo a los clientes.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>¿Está administrando la reputación de envío de dominios e IP?
 
-Las tecnologías de filtrado de EOP están diseñadas para proporcionar protección contra correo no deseado para Microsoft 365, así como para otros productos de Microsoft como Exchange Server. También aprovechamos SPF, DKIM y DMARC; tecnologías de autenticación de correo electrónico que ayudan a solucionar el problema de la suplantación de identidad y phishing al comprobar que el dominio que envía el correo electrónico está autorizado a hacerlo. El filtrado de EOP se ve influenciado por una serie de factores relacionados con la IP de envío, dominio, autenticación, precisión de lista, tasas de denuncia, contenido, etc. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
+Las tecnologías de filtrado de EOP están diseñadas para proporcionar protección contra correo no deseado para Microsoft 365 y otros productos de Microsoft como Exchange Server. También aprovechamos SPF, DKIM y DMARC; tecnologías de autenticación de correo electrónico que ayudan a solucionar el problema de la suplantación de identidad y phishing al comprobar que el dominio que envía el correo electrónico está autorizado a hacerlo. El filtrado de EOP se ve influenciado por una serie de factores relacionados con la IP de envío, dominio, autenticación, precisión de lista, tasas de denuncia, contenido, etc. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>¿Está enviando correo electrónico desde direcciones IP nuevas?
 
@@ -84,11 +84,11 @@ Ha recibido el NDR porque se ha detectado actividad sospechosa procedente de la 
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>No puedo recibir correo electrónico de remitentes en Microsoft 365
 
- Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, vea [Exchange Online Protection IP addresses](../../enterprise/urls-and-ip-address-ranges.md).
+ Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, [vea Exchange Online Protection ip addresses](../../enterprise/urls-and-ip-address-ranges.md).
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedimientos recomendados para el envío masivo de correo electrónico a usuarios de Microsoft 365
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedimientos recomendados para el envío masivo de correo electrónico Microsoft 365 usuarios
 
-Si suele realizar campañas masivas de correo electrónico a usuarios de Microsoft 365 y desea asegurarse de que los correos electrónicos lleguen de forma segura y oportuna, siga las sugerencias de esta sección.
+Si suele realizar campañas masivas de correo electrónico Microsoft 365 usuarios y desea asegurarse de que los correos electrónicos lleguen de forma segura y oportuna, siga las sugerencias de esta sección.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Asegúrese de que el nombre De refleja quién envía el mensaje
 

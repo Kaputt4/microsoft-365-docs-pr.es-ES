@@ -69,12 +69,12 @@ El panel flujo de correo está disponible para los miembros de los siguientes gr
 
 - **Administración de la** organización en el Centro de & seguridad (administradores globales).
 
-- **[Administrador de Exchange](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** en Azure Active Directory.
+- **[Exchange administrador de](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Azure Active Directory.
 
-- **Administrador de MailFlow** en el Centro de seguridad & cumplimiento. Si la cuenta no es también miembro de los grupos de roles Administración de la organización o Administrador de Exchange, tenga en cuenta los siguientes problemas:
+- **Administrador de MailFlow** en el Centro de seguridad & cumplimiento. Si la cuenta no es también miembro de los grupos de roles administración de la organización o Exchange administrador, tenga en cuenta los siguientes problemas:
   - El usuario debe iniciar sesión en el Centro de seguridad & cumplimiento directamente en <https://protection.office.com> .
   - El usuario solo tendrá permiso de solo lectura para el panel flujo de correo.
-  - El usuario no tendrá acceso al Centro de administración de Microsoft 365.
+  - El usuario no tendrá acceso al centro Microsoft 365 administración.
 
 Para obtener más información acerca de los permisos, vea Permisos en el Centro de seguridad [& cumplimiento](permissions-in-the-security-and-compliance-center.md) y Conceder a los usuarios acceso al Centro de seguridad [& cumplimiento](grant-access-to-the-security-and-compliance-center.md).
 
