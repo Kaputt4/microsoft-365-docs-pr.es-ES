@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los clientes de Microsoft Defender para Office 365 E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
-ms.openlocfilehash: c45b45101c27e92dd0fa8776ca5d8ee9eb3af5b7
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878465"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539100"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -34,17 +34,12 @@ Los administradores de Microsoft Defender para Office 365 (o MDO) E5 y MDO P1 y 
 
 ## <a name="reach-the-email-entity-page"></a>Llegar a la página de entidad de correo electrónico
 
-El Centro de seguridad & cumplimiento o el nuevo portal de Microsoft 365 Defender le permitirán ver y usar la página de entidad de correo electrónico.
-
-<br>
-
-****
+El Centro de seguridad & cumplimiento (protection.office.com) o el nuevo centro de seguridad de Microsoft 365 (security.microsoft.com) le permitirán ver y usar la página de entidad de correo electrónico.
 
 |Hacia el centro|URL|Navegación|
 |---|---|---|
-|Centro de seguridad y cumplimiento|<https://protection.office.com>|Explorador de administración de \> amenazas|
-|Microsoft 365 Portal de Defender|<https://security.microsoft.com>|Correo & Explorador de \> colaboración|
-|
+|Seguridad y cumplimiento |protection.office.com|Explorador de administración de \> amenazas|
+|Centro de seguridad de Microsoft 365 |security.microsoft.com|Correo & Explorador de \> colaboración|
 
 En el Explorador de amenazas, seleccione el asunto de un correo electrónico que está investigando. Se mostrará una barra dorada en la parte superior del menú desplegable de correo electrónico para ese correo. En esta invitación a la nueva página, se lee "Pruebe nuestra nueva página de entidad de correo electrónico con datos enriquecidos...". Seleccione esta opción para ver la nueva página.
 
@@ -94,20 +89,17 @@ Los administradores pueden obtener una vista previa de los correos electrónicos
 
 ### <a name="detonation-details"></a>Detalles de detonación
 
-Estos detalles son específicos de los datos adjuntos y las direcciones URL de correo electrónico. Los usuarios pueden ver estos detalles yendo  al Explorador y aplicando el filtro de tecnología de detección establecido en detonación de archivos o detonación de dirección URL. Los correos electrónicos filtrados para la detonación de archivos contendrán un archivo malintencionado con detalles de detonación, y los filtrados para direcciones URL contienen una dirección URL malintencionada y sus detalles de detonación.
+Estos detalles son específicos de los datos adjuntos y las direcciones URL de correo electrónico.
 
-Los usuarios verán detalles enriquecidos de detonación para datos adjuntos malintencionados conocidos o direcciones URL encontradas en sus correos electrónicos, que se detonaron para su inquilino específico. Constará de la cadena de detonación, el resumen de detonación, la captura de pantalla y los detalles del comportamiento observado para ayudar a los clientes a comprender por qué los datos adjuntos o la dirección URL se consideraron malintencionados y detonados.
+Los usuarios verán detalles enriquecidos de detonación para los datos adjuntos o hipervínculos malintencionados conocidos que se encuentran en sus buzones, incluida la cadena de detonación, el resumen de detonación, la captura de pantalla y los detalles del comportamiento observado para ayudar a los clientes a comprender por qué los datos adjuntos o la dirección URL se consideraron malintencionados y detonados.
 
-1. *Cadena de detonación*. Un único archivo o detonación de dirección URL puede desencadenar varias detonaciones. La cadena Detonación realiza un seguimiento de la ruta de las detonaciones, incluido el archivo malintencionado original o la dirección URL que causó el veredicto, y el resto de archivos o direcciones URL que se han producido por la detonación. Es posible que estas direcciones URL o archivos adjuntos no se presenten directamente en el correo electrónico, pero incluir ese análisis es importante para determinar por qué se encontró que el archivo o la dirección URL son malintencionados.  
-    > [!NOTE]
-    > Esto puede mostrar solo el elemento de nivel superior si no se encontró que ninguna de las entidades vinculadas a él era problemática o se detonó.
-
-1.  Resumen de detonación proporciona un resumen básico para la detonación, como el tiempo de *análisis,* la hora en que se produjo la detonación, el sistema operativo y la aplicación, el sistema operativo y la aplicación en la que se produjo la detonación, el tamaño del archivo y el motivo del veredicto.
-1. *Las capturas de* pantalla muestran las capturas de pantalla capturadas durante la detonación. Puede haber varias capturas de pantalla durante la detonación. No se capturan capturas de pantalla para
-    - Archivos de tipo contenedor como .zip o .rar.
-    - Si se abre una dirección URL en un vínculo que descarga directamente un archivo. Sin embargo, verá el archivo descargado en la cadena de detonación.
-1. *Los* detalles de comportamiento son una exportación que muestra detalles de comportamiento como eventos exactos que tuvieron lugar durante la detonación y observables que contienen direcciones URL, IP, dominios y archivos que se encontraron durante la detonación (y pueden ser problemáticos o benignos). Tenga en cuenta que puede que no haya detalles de comportamiento para:
-    - Archivos contenedor como .zip o .rar que retienen otros archivos.
+- *Cadena de detonación:* un solo archivo o detonación de dirección URL puede desencadenar varias detonaciones. La cadena Detonación realiza un seguimiento de la ruta de las detonaciones, incluido el archivo malintencionado original o la dirección URL que causó el veredicto, y el resto de archivos o direcciones URL que se han producido por la detonación. Es posible que estas direcciones URL o archivos adjuntos no se presenten directamente en el correo electrónico, pero incluir ese análisis es importante para determinar por qué se encontró que el archivo o la dirección URL son malintencionados.
+- *Resumen de detonación:* proporciona información sobre:
+  - Intervalo de tiempo de detonación.
+  - Veredicto del archivo adjunto o dirección URL.
+  - Información relacionada (número de archivo, direcciones URL, DIRECCIONES IP o dominios), que son otras entidades examinadas durante la detonación.
+- *Captura de pantalla de detonación:* muestra capturas de pantalla tomadas durante el proceso de detonación.
+- *Detalles de detonación:* estos son los detalles de comportamiento exactos de cada proceso que tuvo lugar durante la detonación.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Captura de pantalla del resumen de detonación que muestra la cadena, el resumen, los detalles de detonación y la captura de pantalla bajo el título *Análisis profundo*.":::
 

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo configurar temas de Microsoft Viva
-ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930226"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893769"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurar temas de Microsoft Viva
 
@@ -60,8 +60,10 @@ Los usuarios pueden tardar hasta una hora en obtener acceso a temas después de 
 
 ## <a name="set-up-topics"></a>Configurar Temas
 
-Para configurar temas
+> [!Note]
+> La primera vez que se habilita la detección de temas, puede tardar hasta dos semanas en aparecer todos los temas sugeridos en la vista Administrar temas. La detección de temas continúa a medida que se realizan nuevas actualizaciones o contenido. Es normal que haya variaciones en el número de temas sugeridos en su organización mientras Viva Topics evalúa nueva información.
 
+Para configurar temas
 1. En el [Microsoft 365 de administración,](https://admin.microsoft.com)seleccione **Configurar** y, a continuación, vea la sección Archivos **y** contenido.
 2. En la **sección Archivos y contenido,** haga **clic Conectar para que los usuarios lo den a conocer.**
 
@@ -144,8 +146,6 @@ Para configurar temas
 
     ![Configuración aplicada](../media/ksetup7.png)    
 
-Tenga en cuenta que la primera vez que se habilita la detección de temas, puede tardar hasta dos semanas en que todos los temas sugeridos aparezcan en la vista Administrar temas. La detección de temas continúa a medida que se realizan nuevas actualizaciones o contenido. Es normal que haya variaciones en el número de temas sugeridos en su organización mientras Viva Topics evalúa nueva información.
-
 ## <a name="manage-topic-experiences"></a>Administrar experiencias de temas
 
 Una vez configurados los temas, puede cambiar la configuración que eligió durante la instalación en el [centro Microsoft 365 administración.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Vea las referencias siguientes:
@@ -155,6 +155,6 @@ Una vez configurados los temas, puede cambiar la configuración que eligió dura
 - [Administrar permisos de temas en Temas de Microsoft Viva](topic-experiences-user-permissions.md)
 - [Cambiar el nombre del centro de temas en Temas de Microsoft Viva](topic-experiences-administration.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Introducción a las experiencias del tema](topic-experiences-overview.md)

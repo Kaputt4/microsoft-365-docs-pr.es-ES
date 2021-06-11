@@ -63,7 +63,7 @@ Proceso | Un proceso específico (especificado por la ruta de acceso completa o 
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:
 
-Carácter comodín | Description | Ejemplo | Coincidencias | No coincide
+Carácter comodín | Descripción | Ejemplo | Coincidencias | No coincide
 ---|---|---|---|---
 \* |    Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
 ? | Coincide con cualquier carácter | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`

@@ -58,7 +58,7 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | antivirusEngine |
+| **Clave** | antivirusEngine |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -69,7 +69,7 @@ Especifique si se va a habilitar la protección en tiempo real, que examina los 
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | enableRealTimeProtection |
+| **Clave** | enableRealTimeProtection |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
 
@@ -85,7 +85,7 @@ Especifique si el motor antivirus se ejecuta en modo pasivo. El modo pasivo tien
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | passiveMode |
+| **Clave** | passiveMode |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | false (predeterminado) <br/> true |
 | **Comments** | Disponible en Microsoft Defender para endpoint versión 100.67.60 o posterior. |
@@ -97,7 +97,7 @@ Especifique la directiva de combinación para exclusiones. Puede ser una combina
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | exclusionsMergePolicy |
+| **Clave** | exclusionsMergePolicy |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | merge (valor predeterminado) <br/> admin_only |
 | **Comments** | Disponible en Microsoft Defender para endpoint versión 100.83.73 o posterior. |
@@ -110,7 +110,7 @@ Especifique las entidades que no se han analizado. Las exclusiones se pueden esp
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | exclusiones |
+| **Clave** | exclusiones |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -121,7 +121,7 @@ Especifique el contenido excluido de ser examinado por tipo.
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | $type |
+| **Clave** | $type |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 
@@ -132,7 +132,7 @@ Especifique el contenido excluido de ser examinado por la ruta de acceso de arch
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | path |
+| **Clave** | path |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | rutas de acceso válidas |
 | **Comments** | Aplicable solo *si $type* *se excluyePath* |
@@ -153,7 +153,7 @@ Proceso | Un proceso específico (especificado por la ruta de acceso completa o 
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:
 
-Carácter comodín | Description | Ejemplo | Coincidencias | No coincide
+Carácter comodín | Descripción | Ejemplo | Coincidencias | No coincide
 ---|---|---|---|---
 \* |    Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
 ? | Coincide con cualquier carácter | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
@@ -165,7 +165,7 @@ Indica si la *propiedad path* hace referencia a un archivo o directorio.
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | isDirectory |
+| **Clave** | isDirectory |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | false (predeterminado) <br/> true |
 | **Comments** | Aplicable solo *si $type* *se excluyePath* |
@@ -177,7 +177,7 @@ Especifique el contenido excluido de la extensión de archivo.
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | extensión |
+| **Clave** | extensión |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | extensiones de archivo válidas |
 | **Comments** | Aplicable solo *si $type* *se excluyeFileExtension* |
@@ -189,7 +189,7 @@ Especifique un proceso para el que se excluya toda la actividad de archivo del e
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | name |
+| **Clave** | name |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | cualquier cadena |
 | **Comments** | Aplicable solo *si $type* *se excluyeFileName* |
@@ -201,7 +201,7 @@ Especifica las amenazas por nombre que no estén bloqueadas por Defender para En
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | allowedThreats |
+| **Clave** | allowedThreats |
 | **Tipo de datos** | Matriz de cadenas |
 
 #### <a name="disallowed-threat-actions"></a>Acciones de amenazas no permitidos
@@ -211,7 +211,7 @@ Restringe las acciones que el usuario local de un dispositivo puede realizar cua
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | disallowedThreatActions |
+| **Clave** | disallowedThreatActions |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | permitir (restringe a los usuarios permitir amenazas) <br/> restore (restringe a los usuarios la restauración de amenazas desde la cuarentena) |
 | **Comments** | Disponible en Microsoft Defender para endpoint versión 100.83.73 o posterior. |
@@ -223,7 +223,7 @@ Especifica cómo se controlan determinados tipos de amenazas por Microsoft Defen
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | threatTypeSettings |
+| **Clave** | threatTypeSettings |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -234,7 +234,7 @@ Especifique tipos de amenazas.
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | clave |
+| **Clave** | clave |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | potentially_unwanted_application <br/> archive_bomb |
 
@@ -249,7 +249,7 @@ Especifique qué acción realizar cuando se detecte una amenaza del tipo especif
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | valor |
+| **Clave** | valor |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | auditoría (valor predeterminado) <br/> bloque <br/> off |
 
@@ -260,7 +260,7 @@ Especifique la directiva de combinación para la configuración del tipo de amen
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | threatTypeSettingsMergePolicy |
+| **Clave** | threatTypeSettingsMergePolicy |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | merge (valor predeterminado) <br/> admin_only |
 | **Comments** | Disponible en Microsoft Defender para endpoint versión 100.83.73 o posterior. |
@@ -272,7 +272,7 @@ Especifica el número de días que los resultados se conservan en el historial d
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | scanResultsRetentionDays |
+| **Clave** | scanResultsRetentionDays |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | 90 (valor predeterminado). Los valores permitidos van de 1 día a 180 días. |
 | **Comments** | Disponible en Microsoft Defender para endpoint versión 101.07.23 o posterior. |
@@ -284,7 +284,7 @@ Especifique el número máximo de entradas que se deben conservar en el historia
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | scanHistoryMaximumItems |
+| **Clave** | scanHistoryMaximumItems |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | 10000 (valor predeterminado). Los valores permitidos van de 5000 elementos a 15000 elementos. |
 | **Comments** | Disponible en Microsoft Defender para endpoint versión 101.07.23 o posterior. |
@@ -296,7 +296,7 @@ Configure las características de protección controlada por la nube de Microsof
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | cloudService |
+| **Clave** | cloudService |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -307,7 +307,7 @@ Especifica si se va a habilitar la protección entregada en la nube del disposit
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | habilitado |
+| **Clave** | habilitado |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
 
@@ -318,7 +318,7 @@ Los datos de diagnóstico se usan para mantener Microsoft Defender for Endpoint 
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | diagnosticLevel |
+| **Clave** | diagnosticLevel |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | opcional (predeterminado) <br/> necesario |
 
@@ -329,7 +329,7 @@ Determina si se envían muestras sospechosas (que probablemente contengan amenaz
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | automaticSampleSubmission |
+| **Clave** | automaticSampleSubmission |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
 
@@ -339,7 +339,7 @@ Determina si las actualizaciones de inteligencia de seguridad se instalan autom�
 
 |Sección|Valor|
 |:---|:---|
-| **Key** | automaticDefinitionUpdateEnabled |
+| **Clave** | automaticDefinitionUpdateEnabled |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
 
@@ -350,7 +350,7 @@ Administrar las preferencias de la interfaz de usuario de Microsoft Defender par
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | userInterface |
+| **Clave** | userInterface |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -361,7 +361,7 @@ Especifique si desea mostrar u ocultar el icono del menú de estado en la esquin
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | hideStatusMenuIcon |
+| **Clave** | hideStatusMenuIcon |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | false (predeterminado) <br/> true |
 
@@ -372,7 +372,7 @@ Especifica si los usuarios pueden enviar comentarios a Microsoft yendo a `Help` 
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | userInitiatedFeedback |
+| **Clave** | userInitiatedFeedback |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | habilitado (predeterminado) <br/> deshabilitado |
 | **Comments** | Disponible en Microsoft Defender para endpoint versión 101.19.61 o posterior. |
@@ -384,7 +384,7 @@ Administrar las preferencias del componente detección y respuesta de puntos de 
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | edr |
+| **Clave** | edr |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -397,7 +397,7 @@ Especifique un nombre de etiqueta y su valor.
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | tags |
+| **Clave** | tags |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -408,7 +408,7 @@ Especifica el tipo de etiqueta
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | clave |
+| **Clave** | clave |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | `GROUP` |
 
@@ -419,7 +419,7 @@ Especifica el valor de la etiqueta
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | valor |
+| **Clave** | valor |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | cualquier cadena |
 
