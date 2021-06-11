@@ -19,20 +19,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295552"
 ---
-# <a name="contact-support-for-philippines"></a><span data-ttu-id="37e03-103">Póngase en contacto con el soporte técnico de Filipinas</span><span class="sxs-lookup"><span data-stu-id="37e03-103">Contact support for Philippines</span></span>
+# <a name="contact-support-for-philippines"></a><span data-ttu-id="c4cd2-103">Póngase en contacto con el soporte técnico de Filipinas</span><span class="sxs-lookup"><span data-stu-id="c4cd2-103">Contact support for Philippines</span></span>
 
-<span data-ttu-id="37e03-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="37e03-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="c4cd2-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c4cd2-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="37e03-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="37e03-105">Phone number</span></span>
-<span data-ttu-id="37e03-106">1800 1441 0625 (PLDT)</span><span class="sxs-lookup"><span data-stu-id="37e03-106">1800 1441 0625 (PLDT)</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c4cd2-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="c4cd2-105">Phone number</span></span>
+<span data-ttu-id="c4cd2-106">1800 1441 0625 (PLDT)</span><span class="sxs-lookup"><span data-stu-id="c4cd2-106">1800 1441 0625 (PLDT)</span></span>
 
-<span data-ttu-id="37e03-107">1800 8908 6422 (Globo)</span><span class="sxs-lookup"><span data-stu-id="37e03-107">1800 8908 6422 (Globe)</span></span>
+<span data-ttu-id="c4cd2-107">1800 8908 6422 (Globo)</span><span class="sxs-lookup"><span data-stu-id="c4cd2-107">1800 8908 6422 (Globe)</span></span>
 
-## <a name="hours"></a><span data-ttu-id="37e03-108">Horas</span><span class="sxs-lookup"><span data-stu-id="37e03-108">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="37e03-109">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="37e03-109">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c4cd2-108">Horas</span><span class="sxs-lookup"><span data-stu-id="c4cd2-108">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c4cd2-109">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="c4cd2-109">Billing Support:</span></span>
 
-<span data-ttu-id="37e03-110">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="37e03-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c4cd2-110">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="c4cd2-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="37e03-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="37e03-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c4cd2-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="c4cd2-111">Technical Support:</span></span>
 
-<span data-ttu-id="37e03-112">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="37e03-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c4cd2-112">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="c4cd2-112">English: 24 hours a day, 7 days a week</span></span>

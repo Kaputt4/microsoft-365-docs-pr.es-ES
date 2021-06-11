@@ -23,13 +23,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52845095"
 ---
-# <a name="get-software-by-id"></a><span data-ttu-id="f1013-104">Obtener software por identificador</span><span class="sxs-lookup"><span data-stu-id="f1013-104">Get software by Id</span></span>
+# <a name="get-software-by-id"></a><span data-ttu-id="4f4f7-104">Obtener software por identificador</span><span class="sxs-lookup"><span data-stu-id="4f4f7-104">Get software by Id</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="f1013-105">**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="f1013-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="4f4f7-105">**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="4f4f7-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="f1013-106">¿Desea experimentar Microsoft Defender para endpoint?</span><span class="sxs-lookup"><span data-stu-id="f1013-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f1013-107">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="f1013-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="4f4f7-106">¿Desea experimentar Microsoft Defender para endpoint?</span><span class="sxs-lookup"><span data-stu-id="4f4f7-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="4f4f7-107">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="4f4f7-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,47 +37,47 @@ ms.locfileid: "52845095"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-<span data-ttu-id="f1013-108">Recupera los detalles del software por identificador.</span><span class="sxs-lookup"><span data-stu-id="f1013-108">Retrieves software details by ID.</span></span>
+<span data-ttu-id="4f4f7-108">Recupera los detalles del software por identificador.</span><span class="sxs-lookup"><span data-stu-id="4f4f7-108">Retrieves software details by ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f1013-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="f1013-109">Permissions</span></span>
-<span data-ttu-id="f1013-110">Se requiere uno de los siguientes permisos para llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="f1013-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="f1013-111">Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.</span><span class="sxs-lookup"><span data-stu-id="f1013-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
+## <a name="permissions"></a><span data-ttu-id="4f4f7-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="4f4f7-109">Permissions</span></span>
+<span data-ttu-id="4f4f7-110">Se requiere uno de los siguientes permisos para llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="4f4f7-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="4f4f7-111">Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.</span><span class="sxs-lookup"><span data-stu-id="4f4f7-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
 
-<span data-ttu-id="f1013-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="f1013-112">Permission type</span></span> |   <span data-ttu-id="f1013-113">Permiso</span><span class="sxs-lookup"><span data-stu-id="f1013-113">Permission</span></span>  |   <span data-ttu-id="f1013-114">Nombre para mostrar de permisos</span><span class="sxs-lookup"><span data-stu-id="f1013-114">Permission display name</span></span>
+<span data-ttu-id="4f4f7-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="4f4f7-112">Permission type</span></span> |   <span data-ttu-id="4f4f7-113">Permiso</span><span class="sxs-lookup"><span data-stu-id="4f4f7-113">Permission</span></span>  |   <span data-ttu-id="4f4f7-114">Nombre para mostrar de permisos</span><span class="sxs-lookup"><span data-stu-id="4f4f7-114">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="f1013-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="f1013-115">Application</span></span> | <span data-ttu-id="f1013-116">Software.Read.All</span><span class="sxs-lookup"><span data-stu-id="f1013-116">Software.Read.All</span></span> | <span data-ttu-id="f1013-117">'Leer información de software de administración de amenazas y vulnerabilidades'</span><span class="sxs-lookup"><span data-stu-id="f1013-117">'Read Threat and Vulnerability Management Software information'</span></span>
-<span data-ttu-id="f1013-118">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="f1013-118">Delegated (work or school account)</span></span> | <span data-ttu-id="f1013-119">Software.Read</span><span class="sxs-lookup"><span data-stu-id="f1013-119">Software.Read</span></span> | <span data-ttu-id="f1013-120">'Leer información de software de administración de amenazas y vulnerabilidades'</span><span class="sxs-lookup"><span data-stu-id="f1013-120">'Read Threat and Vulnerability Management Software information'</span></span>
+<span data-ttu-id="4f4f7-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="4f4f7-115">Application</span></span> | <span data-ttu-id="4f4f7-116">Software.Read.All</span><span class="sxs-lookup"><span data-stu-id="4f4f7-116">Software.Read.All</span></span> | <span data-ttu-id="4f4f7-117">'Leer información de software de administración de amenazas y vulnerabilidades'</span><span class="sxs-lookup"><span data-stu-id="4f4f7-117">'Read Threat and Vulnerability Management Software information'</span></span>
+<span data-ttu-id="4f4f7-118">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="4f4f7-118">Delegated (work or school account)</span></span> | <span data-ttu-id="4f4f7-119">Software.Read</span><span class="sxs-lookup"><span data-stu-id="4f4f7-119">Software.Read</span></span> | <span data-ttu-id="4f4f7-120">'Leer información de software de administración de amenazas y vulnerabilidades'</span><span class="sxs-lookup"><span data-stu-id="4f4f7-120">'Read Threat and Vulnerability Management Software information'</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f1013-121">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="f1013-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4f4f7-121">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="4f4f7-121">HTTP request</span></span>
 ```
 GET /api/Software/{Id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f1013-122">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="f1013-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4f4f7-122">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="4f4f7-122">Request headers</span></span>
 
-| <span data-ttu-id="f1013-123">Nombre</span><span class="sxs-lookup"><span data-stu-id="f1013-123">Name</span></span>        | <span data-ttu-id="f1013-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="f1013-124">Type</span></span> | <span data-ttu-id="f1013-125">Descripción</span><span class="sxs-lookup"><span data-stu-id="f1013-125">Description</span></span>
+| <span data-ttu-id="4f4f7-123">Nombre</span><span class="sxs-lookup"><span data-stu-id="4f4f7-123">Name</span></span>        | <span data-ttu-id="4f4f7-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="4f4f7-124">Type</span></span> | <span data-ttu-id="4f4f7-125">Descripción</span><span class="sxs-lookup"><span data-stu-id="4f4f7-125">Description</span></span>
 |:--------------|:-------|:--------------|
-| <span data-ttu-id="f1013-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="f1013-126">Authorization</span></span> | <span data-ttu-id="f1013-127">Cadena</span><span class="sxs-lookup"><span data-stu-id="f1013-127">String</span></span> | <span data-ttu-id="f1013-128">Portador {token}. **Obligatorio**.</span><span class="sxs-lookup"><span data-stu-id="f1013-128">Bearer {token}.**Required**.</span></span>
+| <span data-ttu-id="4f4f7-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="4f4f7-126">Authorization</span></span> | <span data-ttu-id="4f4f7-127">Cadena</span><span class="sxs-lookup"><span data-stu-id="4f4f7-127">String</span></span> | <span data-ttu-id="4f4f7-128">Portador {token}. **Obligatorio**.</span><span class="sxs-lookup"><span data-stu-id="4f4f7-128">Bearer {token}.**Required**.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="f1013-129">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="f1013-129">Request body</span></span>
-<span data-ttu-id="f1013-130">En blanco</span><span class="sxs-lookup"><span data-stu-id="f1013-130">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="4f4f7-129">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="4f4f7-129">Request body</span></span>
+<span data-ttu-id="4f4f7-130">En blanco</span><span class="sxs-lookup"><span data-stu-id="4f4f7-130">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="f1013-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f1013-131">Response</span></span>
-<span data-ttu-id="f1013-132">Si se realiza correctamente, este método devuelve 200 Aceptar con los datos de software especificados en el cuerpo.</span><span class="sxs-lookup"><span data-stu-id="f1013-132">If successful, this method returns 200 OK with the specified software data in the body.</span></span> 
+## <a name="response"></a><span data-ttu-id="4f4f7-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4f4f7-131">Response</span></span>
+<span data-ttu-id="4f4f7-132">Si se realiza correctamente, este método devuelve 200 Aceptar con los datos de software especificados en el cuerpo.</span><span class="sxs-lookup"><span data-stu-id="4f4f7-132">If successful, this method returns 200 OK with the specified software data in the body.</span></span> 
 
 
-## <a name="example"></a><span data-ttu-id="f1013-133">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="f1013-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4f4f7-133">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="4f4f7-133">Example</span></span>
 
-<span data-ttu-id="f1013-134">**Solicitud**</span><span class="sxs-lookup"><span data-stu-id="f1013-134">**Request**</span></span>
+<span data-ttu-id="4f4f7-134">**Solicitud**</span><span class="sxs-lookup"><span data-stu-id="4f4f7-134">**Request**</span></span>
 
-<span data-ttu-id="f1013-135">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="f1013-135">Here is an example of the request.</span></span>
+<span data-ttu-id="4f4f7-135">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="4f4f7-135">Here is an example of the request.</span></span>
 
 ```
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 ```
 
-<span data-ttu-id="f1013-136">**Respuesta**</span><span class="sxs-lookup"><span data-stu-id="f1013-136">**Response**</span></span>
+<span data-ttu-id="4f4f7-136">**Respuesta**</span><span class="sxs-lookup"><span data-stu-id="4f4f7-136">**Response**</span></span>
 
-<span data-ttu-id="f1013-137">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f1013-137">Here is an example of the response.</span></span>
+<span data-ttu-id="4f4f7-137">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4f4f7-137">Here is an example of the response.</span></span>
 
 ```json
 
@@ -94,6 +94,6 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 }
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="f1013-138">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="f1013-138">Related topics</span></span>
-- [<span data-ttu-id="f1013-139">Administración de vulnerabilidades basada & riesgos</span><span class="sxs-lookup"><span data-stu-id="f1013-139">Risk-based Threat & Vulnerability Management</span></span>](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [<span data-ttu-id="f1013-140">Inventario & de software de vulnerabilidad</span><span class="sxs-lookup"><span data-stu-id="f1013-140">Threat & Vulnerability software inventory</span></span>](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+## <a name="related-topics"></a><span data-ttu-id="4f4f7-138">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="4f4f7-138">Related topics</span></span>
+- [<span data-ttu-id="4f4f7-139">Administración de vulnerabilidades basada & riesgos</span><span class="sxs-lookup"><span data-stu-id="4f4f7-139">Risk-based Threat & Vulnerability Management</span></span>](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="4f4f7-140">Inventario & de software de vulnerabilidad</span><span class="sxs-lookup"><span data-stu-id="4f4f7-140">Threat & Vulnerability software inventory</span></span>](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

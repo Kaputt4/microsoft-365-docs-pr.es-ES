@@ -19,26 +19,26 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295432"
 ---
-# <a name="contact-support-for-senegal"></a><span data-ttu-id="8ce56-103">Póngase en contacto con el soporte técnico de Senegal</span><span class="sxs-lookup"><span data-stu-id="8ce56-103">Contact support for Senegal</span></span>
+# <a name="contact-support-for-senegal"></a><span data-ttu-id="444b3-103">Póngase en contacto con el soporte técnico de Senegal</span><span class="sxs-lookup"><span data-stu-id="444b3-103">Contact support for Senegal</span></span>
 
-<span data-ttu-id="8ce56-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="8ce56-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="444b3-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="444b3-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="8ce56-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="8ce56-105">Phone number</span></span>
-<span data-ttu-id="8ce56-106">800 103 072</span><span class="sxs-lookup"><span data-stu-id="8ce56-106">800 103 072</span></span>
+## <a name="phone-number"></a><span data-ttu-id="444b3-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="444b3-105">Phone number</span></span>
+<span data-ttu-id="444b3-106">800 103 072</span><span class="sxs-lookup"><span data-stu-id="444b3-106">800 103 072</span></span>
 
-<span data-ttu-id="8ce56-107">Después de marcar, escriba</span><span class="sxs-lookup"><span data-stu-id="8ce56-107">After dialing, enter</span></span>
+<span data-ttu-id="444b3-107">Después de marcar, escriba</span><span class="sxs-lookup"><span data-stu-id="444b3-107">After dialing, enter</span></span>
 
-<span data-ttu-id="8ce56-108">877 867 2337</span><span class="sxs-lookup"><span data-stu-id="8ce56-108">877 867 2337</span></span>
+<span data-ttu-id="444b3-108">877 867 2337</span><span class="sxs-lookup"><span data-stu-id="444b3-108">877 867 2337</span></span>
 
-## <a name="hours"></a><span data-ttu-id="8ce56-109">Horas</span><span class="sxs-lookup"><span data-stu-id="8ce56-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="8ce56-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="8ce56-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="444b3-109">Horas</span><span class="sxs-lookup"><span data-stu-id="444b3-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="444b3-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="444b3-110">Billing Support:</span></span>
 
-<span data-ttu-id="8ce56-111">Francés: Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="8ce56-111">French: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="444b3-111">Francés: Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="444b3-111">French: Mon-Fri 8 AM-4 PM</span></span>
 
-<span data-ttu-id="8ce56-112">Inglés: Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="8ce56-112">English: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="444b3-112">Inglés: Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="444b3-112">English: Mon-Fri 8 AM-4 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="8ce56-113">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="8ce56-113">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="444b3-113">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="444b3-113">Technical Support:</span></span>
 
-<span data-ttu-id="8ce56-114">Francés: Mon-Fri 7 AM-8 PM</span><span class="sxs-lookup"><span data-stu-id="8ce56-114">French: Mon-Fri 7 AM-8 PM</span></span>
+<span data-ttu-id="444b3-114">Francés: Mon-Fri 7 AM-8 PM</span><span class="sxs-lookup"><span data-stu-id="444b3-114">French: Mon-Fri 7 AM-8 PM</span></span>
 
-<span data-ttu-id="8ce56-115">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="8ce56-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="444b3-115">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="444b3-115">English: 24 hours a day, 7 days a week</span></span>

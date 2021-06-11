@@ -19,20 +19,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295872"
 ---
-# <a name="contact-support-for-maldives"></a><span data-ttu-id="bfc09-103">Póngase en contacto con el soporte técnico de Maldivas</span><span class="sxs-lookup"><span data-stu-id="bfc09-103">Contact support for Maldives</span></span>
+# <a name="contact-support-for-maldives"></a><span data-ttu-id="90235-103">Póngase en contacto con el soporte técnico de Maldivas</span><span class="sxs-lookup"><span data-stu-id="90235-103">Contact support for Maldives</span></span>
 
-<span data-ttu-id="bfc09-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="bfc09-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="90235-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="90235-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="bfc09-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="bfc09-105">Phone number</span></span>
-<span data-ttu-id="bfc09-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="bfc09-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="90235-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="90235-105">Phone number</span></span>
+<span data-ttu-id="90235-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="90235-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="bfc09-107">Horas</span><span class="sxs-lookup"><span data-stu-id="bfc09-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="bfc09-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="bfc09-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="90235-107">Horas</span><span class="sxs-lookup"><span data-stu-id="90235-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="90235-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="90235-108">Billing Support:</span></span>
 
-<span data-ttu-id="bfc09-109">Inglés: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="bfc09-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="90235-109">Inglés: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="90235-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="bfc09-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="bfc09-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="90235-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="90235-110">Technical Support:</span></span>
 
-<span data-ttu-id="bfc09-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="bfc09-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="90235-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="90235-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="bfc09-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="bfc09-112">International call charges apply</span></span>
+<span data-ttu-id="90235-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="90235-112">International call charges apply</span></span>
