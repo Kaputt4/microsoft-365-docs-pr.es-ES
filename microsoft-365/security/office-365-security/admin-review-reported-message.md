@@ -13,12 +13,12 @@ ms.collection:
 description: Aprende a revisar los mensajes que se notifican y a enviar comentarios a los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769130"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893733"
 ---
 # <a name="admin-review-for-reported-messages"></a>Revisión del administrador para los mensajes de los que se informe
 
@@ -37,21 +37,23 @@ Esta característica está diseñada para enviar comentarios a los usuarios, per
 
 Solo podrá marcar y notificar a los usuarios los resultados de la revisión si el mensaje se notificó como [falsos positivos o falsos negativos](report-false-positives-and-false-negatives.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+
+- Abra el portal Microsoft 365 Defender en <https://security.microsoft.com/> . Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
 
 - Para modificar la configuración de envíos de usuarios, debe ser miembro de uno de los siguientes grupos de roles:
-  - Administración de la organización o Administrador de seguridad [en el Microsoft 365 de seguridad](permissions-microsoft-365-security-center.md).
-  - Administración de la [organización en Exchange Online](/Exchange/permissions-exo/permissions-exo).
+  - Administración de la organización o administrador de seguridad [en el portal Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
+  - Administración de la [organización en Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- También necesitarás acceso a la Exchange Online PowerShell. Si la cuenta que está intentando usar no tiene acceso Exchange Online PowerShell, recibirá un error que indica Especificar una dirección de correo electrónico en *su dominio*. Para obtener más información acerca de cómo habilitar o deshabilitar el acceso a Exchange Online PowerShell, consulte los siguientes temas:
+- También necesitarás acceso a Exchange Online PowerShell. Si la cuenta que está intentando usar no tiene acceso Exchange Online PowerShell, recibirá un error que indica Especificar una dirección de correo electrónico en *su dominio*. Para obtener más información acerca de cómo habilitar o deshabilitar el acceso a Exchange Online PowerShell, consulte los siguientes temas:
   - [Habilitar o deshabilitar el acceso a Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Reglas de acceso de cliente en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>Configurar los mensajes usados para notificar a los usuarios
 
-1. En el [centro Microsoft 365 seguridad,](../defender/overview-security-center.md)vaya a **Directivas &** Directivas de amenazas Configuración del \>  \> **mensaje notificado por el usuario.**
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Sección Otras opciones de configuración de \>  \>  \>  \> **mensajes notificados por el usuario.**
 
-2. Si desea especificar el nombre para mostrar del remitente **Office 365,** active la casilla especificar una dirección de correo electrónico para usarla como remitente en la sección Notificaciones de correo electrónico para los **resultados** de la revisión de administrador y escriba el nombre que desea usar. Esta es la dirección de correo electrónico que estará visible en Outlook y a la que se dirigirán las respuestas.
+2. En la página **Envíos** de usuario, si desea especificar el nombre para mostrar del remitente **Office 365,** active la casilla Especificar una dirección de correo electrónico para usarla como remitente en la sección Notificaciones de correo electrónico para los **resultados** de la revisión de administrador y escriba el nombre que desea usar. Esta es la dirección de correo electrónico que estará visible en Outlook y a la que se dirigirán las respuestas.
 
 3. Si desea personalizar cualquiera de las plantillas, haga clic **en Personalizar notificación de correo electrónico.** En este menú desplegable, solo podrá personalizar lo siguiente:
     - Suplantación de identidad (phishing)

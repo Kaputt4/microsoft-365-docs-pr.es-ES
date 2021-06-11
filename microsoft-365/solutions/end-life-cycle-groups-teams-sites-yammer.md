@@ -34,7 +34,7 @@ En la tabla siguiente se describen los servicios asociados con grupos y equipos 
 |Servicio|Tipos de contenido|
 |:------|:---------------|
 |Teams|Conversaciones de canal, archivos en canales|
-|Formularios|Estructura y resultados de la encuesta|
+|Forms|Estructura y resultados de la encuesta|
 |OneNote|Bloc de notas|
 |Outlook|Correo y calendario|
 |Planner|Project estado y la información de tareas|
@@ -107,7 +107,7 @@ Aunque las conversaciones de canal del equipo y SharePoint contenido del sitio e
 - Los vídeos aún se pueden cargar, modificar y eliminar en Stream.
 - Los flujos Power Automate pueden crearse, modificarse, eliminarse y se seguirán ejecutando. (No obstante, se producirá un error si es necesario para publicar un mensaje en un canal del equipo archivado).
 
-## <a name="forms"></a>Formularios
+## <a name="forms"></a>Forms
 
 Aunque un formulario se puede mover de una cuenta individual a un grupo, no se puede mover ni copiar de un grupo a otro. Hay tres opciones disponibles para un formulario cuando se elimina un equipo.
 

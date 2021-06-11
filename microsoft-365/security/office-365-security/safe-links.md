@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos de Caja fuerte en Defender for Office 365 para proteger su organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d42d7563b5267f805756125d1764d506f1700e13
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 406450752085817cb49e3cf08a90c0087af3d94b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793033"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879293"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte Vínculos en Microsoft Defender para Office 365
 
@@ -220,7 +220,7 @@ La siguiente Caja fuerte de vínculos está disponible para Office 365 aplicacio
 
 - No permitir que los usuarios hagan clic en vínculos seguros [](#warning-pages-from-safe-links) a la **dirección URL original:** permite o impide que los usuarios hagan clic en la página de advertencia a la dirección URL original en las versiones de escritorio Word, Excel, PowerPoint y Visio. El valor predeterminado y recomendado es **On**.
 
-Para configurar la configuración Caja fuerte vínculos para Office 365 aplicaciones, consulta Configurar la protección de Caja fuerte [vínculos para Office 365 aplicaciones](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security-center).
+Para configurar la configuración Caja fuerte vínculos para Office 365 aplicaciones, consulta Configurar la protección de Caja fuerte [vínculos para Office 365 aplicaciones](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
 Para obtener más información acerca de los valores recomendados para la configuración de directivas estándar y estricta, vea [Configuración global para Caja fuerte vínculos](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links).
 
@@ -257,7 +257,7 @@ La **lista Bloquear las siguientes direcciones URL** define los vínculos que si
 
 Cuando un usuario de una directiva de vínculos Caja fuerte activa hace clic en un vínculo bloqueado en una aplicación compatible, se le traslada a la página de advertencia url [bloqueada.](#blocked-url-warning)
 
-La lista de direcciones URL se configura en la configuración global de Caja fuerte vínculos. Para obtener instrucciones, [vea Configure the "Block the following URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security-center).
+La lista de direcciones URL se configura en la configuración global de Caja fuerte vínculos. Para obtener instrucciones, [vea Configure the "Block the following URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal).
 
 **Notas**:
 

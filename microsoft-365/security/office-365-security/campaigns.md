@@ -19,12 +19,12 @@ ms.collection:
 description: Obtenga información sobre las vistas de campaña en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779470"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879137"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "52779470"
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-Vistas de campaña es una característica de Microsoft Defender para Office 365 Plan 2 (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento defender para Office 365 Plan 2). Las vistas de campaña en el Microsoft 365 de seguridad identifican y clasifican los ataques de suplantación de identidad en el servicio. Vistas de la campaña puede ayudarle a:
+Vistas de campaña es una característica de Microsoft Defender para Office 365 Plan 2 (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento defender para Office 365 Plan 2). Las vistas de campaña en el portal de Microsoft 365 Defender identifican y clasifican los ataques de suplantación de identidad en el servicio. Vistas de la campaña puede ayudarle a:
 
 - Investigar y responder eficazmente a los ataques de suplantación de identidad.
 - Entender mejor el alcance del ataque.
@@ -54,11 +54,11 @@ Microsoft aprovecha las grandes cantidades de datos contra suplantación de iden
 
 Una campaña puede ser de corta duración o puede abarcar varios días, semanas o meses con períodos activos e inactivos. Una campaña puede iniciarse en su organización específica o su organización puede formar parte de una campaña más grande en varias empresas.
 
-## <a name="campaign-views-in-the-security-center"></a>Vistas de campaña en el centro de seguridad
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Vistas de campaña en el portal de Microsoft 365 Defender
 
-Las vistas de campaña están disponibles en [el centro Microsoft 365 seguridad](https://security.microsoft.com) en Email & **collaboration** \> **Campaigns**, o directamente en <https://security.microsoft.com/campaigns> .
+Las vistas de campaña están disponibles en el portal de Microsoft 365 Defender ( ) en <https://security.microsoft.com> **Email &** \> **collaboration Campaigns**, o directamente en <https://security.microsoft.com/campaigns> .
 
-![Introducción a las campañas en el centro Microsoft 365 seguridad](../../media/campaigns-overview.png)
+![Introducción a las campañas en el portal Microsoft 365 Defender](../../media/campaigns-overview.png)
 
 También puedes acceder a vistas de campaña desde:
 
@@ -67,7 +67,7 @@ También puedes acceder a vistas de campaña desde:
 - **Colaboración & correo electrónico** \> **Explorador** \> **Ver** \> **Phish** \> **Pestaña Campaña**
 - **Colaboración & correo electrónico** \> **Explorador** \> **Ver** \> **Malware** \> **Pestaña Campaña**
 
-Para obtener acceso a las vistas de campaña, debe ser  miembro de los grupos de roles Administración de la **organización,** Administrador de seguridad o Lector de seguridad en el centro de seguridad. Para obtener más información, vea [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](permissions-microsoft-365-security-center.md).
+Para tener acceso a vistas de campaña, debe ser miembro  de los grupos de roles Administración de la **organización,** Administrador de seguridad o Lector de seguridad en el portal de Microsoft 365 Defender. Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 ## <a name="campaigns-overview"></a>Introducción a las campañas
 
@@ -214,7 +214,7 @@ El diagrama contiene la información siguiente:
 
   ****
 
-  |Valor|Veredicto de filtro de correo no deseado|Descripción|
+  |Valor|Veredicto de filtro de correo no deseado|Description|
   |---|---|---|
   |**Permitido**|`SFV:SKN` <p> `SFV:SKI`|El mensaje se marcó como no correo no deseado o filtrado omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, una regla de flujo de correo (también conocida como regla de transporte) marcó el mensaje como no correo no deseado. <p> El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
   |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, mediante una regla de flujo de correo.|

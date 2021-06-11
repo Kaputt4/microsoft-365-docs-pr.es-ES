@@ -54,7 +54,7 @@ Las reglas de flujo de correo permiten la mayor flexibilidad para garantizar que
 >
 > - EOP y Outlook inspeccionar distintas propiedades del mensaje para determinar el remitente del mensaje. Para obtener más información, vea la sección [Consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este artículo.
 
-En cambio, también tiene varias opciones para bloquear el correo electrónico de orígenes específicos mediante _listas de remitentes bloqueados._ Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)
+En cambio, también tiene varias opciones para bloquear el correo electrónico de orígenes específicos mediante _listas de remitentes bloqueados._ Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Recomendado) Usar reglas de flujo de correo
 

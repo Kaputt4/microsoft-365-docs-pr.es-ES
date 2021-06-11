@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3bab9d0248a2ed8e83807f3c38215e653cba26eb
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 23a9b99a71d700bdeddb3398c592eeb778ceef23
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843559"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879269"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -49,7 +49,7 @@ Defender for Endpoint usa la siguiente combinación de tecnología integrada en 
 
 -   Inteligencia de **amenazas:** generada por cazadores de Microsoft, equipos de seguridad y aumentada por la inteligencia de amenazas proporcionada por socios, la inteligencia de amenazas permite a Defender for Endpoint identificar herramientas, técnicas y procedimientos de atacantes y generar alertas cuando se observan en datos de sensor recopilados.
 
-<center><h2>Microsoft Defender para punto de conexión</center></h2>
+<center><h2>Microsoft Defender para endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Administración & vulnerabilidades de amenazas</b></center></a></td>
@@ -74,7 +74,7 @@ Defender for Endpoint usa la siguiente combinación de tecnología integrada en 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0] 
 
 > [!TIP]
-> - Obtenga información sobre las mejoras más recientes en Defender para endpoint: [Novedades de Microsoft Defender para endpoint.](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
+> - Obtenga información sobre las mejoras más recientes en Defender para endpoint: [Novedades de Microsoft Defender para endpoint.](whats-new-in-microsoft-defender-atp.md)
 > - Microsoft Defender para endpoint demostró las capacidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 <a name="tvm"></a>

@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/11/2021
 ms.locfileid: "52310861"
 ---
-# <a name="export-content-from-a-core-ediscovery-case"></a>Exportar contenido desde un caso de exhibición de documentos electrónicos principal
+# <a name="export-content-from-a-core-ediscovery-case"></a>Exportar contenido desde un caso básico de eDiscovery
 
 Después de ejecutar correctamente una búsqueda asociada a un caso de exhibición de documentos electrónicos principal, puede exportar los resultados de la búsqueda. Al exportar los resultados de la búsqueda, los elementos del buzón se descargan en archivos PST o como mensajes individuales. Al exportar contenido de sitios SharePoint y OneDrive para la Empresa, se exportan copias de documentos Office documentos nativos y otros documentos. Un Results.csv que contiene información sobre cada elemento que se exporta y también se exporta un archivo de manifiesto (en formato XML) que contiene información sobre cada resultado de búsqueda.
   

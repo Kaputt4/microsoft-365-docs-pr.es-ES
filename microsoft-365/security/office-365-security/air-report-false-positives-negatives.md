@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275089"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878885"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -68,23 +68,27 @@ En la mayoría de los casos, si se ha realizado una acción de corrección en un
 
 Con el Explorador de amenazas, el equipo de operaciones de seguridad puede encontrar un correo electrónico afectado por una acción y potencialmente deshacer la acción.
 
+<br>
+
+****
+
 |Escenario|Opciones de deshacer|Más información|
 |---|---|---|
-|Un mensaje de correo electrónico se enrutó a la carpeta correo no deseado de un usuario|- Mover el mensaje a la carpeta Elementos eliminados del usuario<br/>- Mover el mensaje a la Bandeja de entrada del usuario<br/>- Eliminar el mensaje|[Busque e investigue el correo electrónico malintencionado que se entregó en Office 365](investigate-malicious-email-that-was-delivered.md)|
-|Se ha puesto en cuarentena un mensaje de correo electrónico o un archivo|- Liberar el correo electrónico o el archivo<br/>- Eliminar el correo electrónico o el archivo|[Administrar mensajes en cuarentena como administrador](manage-quarantined-messages-and-files.md)|
+|Un mensaje de correo electrónico se enrutó a la carpeta correo no deseado de un usuario|<ul><li>Mover el mensaje a la carpeta Elementos eliminados del usuario</li><li>Mover el mensaje a la Bandeja de entrada del usuario</li><li>Eliminar el mensaje.</li></ul>|[Busque e investigue el correo electrónico malintencionado que se entregó en Office 365](investigate-malicious-email-that-was-delivered.md)|
+|Se ha puesto en cuarentena un mensaje de correo electrónico o un archivo|<ul><li>Liberar el correo electrónico o el archivo</li><li> Eliminar el correo electrónico o el archivo</li></ul>|[Administrar mensajes en cuarentena como administrador](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-in-the-action-center"></a>Deshacer una acción en el Centro de acciones
 
 En el Centro de acciones, puede ver las acciones de corrección que se realizaron y potencialmente deshacer la acción.
 
-1. Vaya al centro Microsoft 365 de seguridad ( <https://security.microsoft.com> ).
+1. Vaya al portal Microsoft 365 Defender ( <https://security.microsoft.com> ).
 2. En el panel de navegación, seleccione **Centro de acciones**.
 3. Seleccione la **pestaña** Historial para ver la lista de acciones completadas.
 4. Seleccione un elemento. Se abre el panel desplegable.
 5. En el panel desplegable, seleccione **Deshacer**. (Solo las acciones que se pueden deshacer tendrán **un botón Deshacer).**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Investigaciones automatizadas en Microsoft Defender para Office 365](office-365-air.md)

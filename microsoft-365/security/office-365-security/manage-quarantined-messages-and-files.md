@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b484cc3a8462115b5151b34ba93ba0c041e16b4
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 01d5011248d1c0fc0daab0d04e1cca39e26e34bd
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822303"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878897"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -41,11 +41,11 @@ Los administradores pueden ver, liberar y eliminar todos los tipos de mensajes e
 
 Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden ver, descargar y eliminar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 
-Puede ver y administrar mensajes en cuarentena en el centro de seguridad de Microsoft 365 o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones Exchange Online).
+Puede ver y administrar mensajes en cuarentena en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Para abrir el centro de seguridad, vaya a <https://security.microsoft.com> . Para abrir directamente la página de Cuarentena, vaya a <https://security.microsoft.com/quarantine>.
+- Para abrir el portal Microsoft 365 Defender, vaya a <https://security.microsoft.com> . Para abrir directamente la página de cuarentena, vaya a <https://security.microsoft.com/quarantine>.
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -68,11 +68,11 @@ Puede ver y administrar mensajes en cuarentena en el centro de seguridad de Micr
 
   Cuando un mensaje expira de la cuarentena, no se puede recuperar.
 
-## <a name="use-the-security-center-to-manage-quarantined-email-messages"></a>Usar el centro de seguridad para administrar mensajes de correo electrónico en cuarentena
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>Usar el portal Microsoft 365 Defender para administrar mensajes de correo electrónico en cuarentena
 
 ### <a name="view-quarantined-email"></a>Ver correo electrónico en cuarentena
 
-1. En el centro de seguridad, vaya a **Correo & de colaboración** \> **Revisar** \> **cuarentena**.
+1. En el portal Microsoft 365 Defender, vaya a **Email & collaboration** \> **Review** \> **Quarantine**.
 
 2. En la **página Cuarentena,** compruebe que **View quarantined** está establecido en el valor **predeterminado** email .
 
@@ -108,7 +108,7 @@ Puede ver y administrar mensajes en cuarentena en el centro de seguridad de Micr
      - **Correo no deseado**
      - **Phish de elevada confianza**
    - **Tipo de directiva**: Filtrar mensajes por tipo de directiva:
-     - **Directiva antimalware**
+     - **directiva antimalware**
      - **Caja fuerte Directiva de datos adjuntos**
      - **Política Antiphishing**
      - **Directiva de filtro de contenido alojado** (directiva anti-spam)
@@ -195,7 +195,7 @@ Cuando selecciona varios mensajes en cuarentena en la lista (hasta 100), aparece
 
 Cuando haya terminado, haga clic en **Cerrar**.
 
-## <a name="use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365"></a>Use el Centro de seguridad para administrar archivos en cuarentena en Defender para Office 365
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Use el portal Microsoft 365 Defender para administrar archivos en cuarentena en Defender para Office 365
 
 > [!NOTE]
 > Los procedimientos para los archivos en cuarentena de esta sección solo están disponibles para Microsoft Defender Office 365 los suscriptores del Plan 1 y plan 2.
@@ -204,7 +204,7 @@ En organizaciones con Defender para Office 365, los administradores pueden admin
 
 ### <a name="view-quarantined-files"></a>Ver archivos en cuarentena
 
-1. En el centro de seguridad, vaya a **Correo & de colaboración** \> **Revisar** \> **cuarentena**.
+1. En el portal Microsoft 365 Defender, vaya a **Email & collaboration** \> **Review** \> **Quarantine**.
 
 2. En la **página Cuarentena,** cambie **Ver en cuarentena** a los archivos de **valor**. Puede ordenar un campo haciendo clic en un encabezado de columna disponible.
 

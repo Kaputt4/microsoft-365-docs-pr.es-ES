@@ -19,12 +19,12 @@ description: Durante y después de una investigación automatizada en Microsoft 
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2923a6375d54c663f20c440b1fa395bd529429d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fc7c61fae83f2d10f8b66cbfce86bcee6e3a5bd6
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275053"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878429"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
@@ -32,17 +32,21 @@ ms.locfileid: "52275053"
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Cuando se [produce una investigación](office-365-air.md) automatizada en Microsoft [Defender](defender-for-office-365.md)para Office 365 , los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en el centro Microsoft 365 seguridad. Los detalles de la investigación le proporcionan el estado actualizado y la capacidad de aprobar cualquier acción pendiente.
+Cuando se [produce una investigación](office-365-air.md) automatizada en Microsoft [Defender](defender-for-office-365.md)para Office 365 , los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en el portal de Microsoft 365 Defender. Los detalles de la investigación le proporcionan el estado actualizado y la capacidad de aprobar cualquier acción pendiente.
 
 > [!TIP]
-> Consulte la nueva página de investigación unificada en el centro Microsoft 365 seguridad. Para obtener más información, vea [(¡NUEVO!) Página de investigación unificada](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Consulte la nueva página de investigación unificada en el portal de Microsoft 365 Defender. Para obtener más información, vea [(¡NUEVO!) Página de investigación unificada](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## <a name="investigation-status"></a>Estado de la investigación
 
 El estado de la investigación indica el progreso del análisis y las acciones. A medida que se ejecuta la investigación, el estado cambia para indicar si se encontraron amenazas y si se han aprobado acciones.
 
+<br>
+
+****
+
 |Estado|Descripción|
-|:---|:---|
+|---|---|
 |**Iniciando**|La investigación se ha desencadenado y está a la espera de empezar a ejecutarse.|
 |**En funcionamiento**|El proceso de investigación ha comenzado y está en curso. Este estado también se produce cuando se [aprueban acciones](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) pendientes.|
 |**No se encontró ninguna amenaza**|La investigación ha finalizado y no se ha identificado ninguna amenaza (cuenta de usuario, mensaje de correo electrónico, dirección URL o archivo). <p> **SUGERENCIA:** Si sospecha que se ha perdido algo (como un falso negativo), puede tomar medidas con el Explorador [de amenazas](threat-explorer.md).|
@@ -58,7 +62,7 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 
 ## <a name="view-details-of-an-investigation"></a>Ver detalles de una investigación
 
-1. Vaya al centro Microsoft 365 seguridad ( <https://security.microsoft.com> ) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
 2. En el panel de navegación, seleccione **Centro de acciones**.
 3. En las **pestañas Pendiente** o **Historial,** seleccione una acción. Se abre el panel desplegable.
 4. En el panel desplegable, seleccione **Abrir página de investigación**. 
@@ -68,10 +72,10 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 
 Ciertos tipos de alertas desencadenan una investigación automatizada en Microsoft 365. Para obtener más información, vea [directivas de alerta que desencadenan investigaciones automatizadas.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
 
-1. Vaya al centro Microsoft 365 seguridad ( <https://security.microsoft.com> ) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
 2. En el panel de navegación, seleccione **Centro de acciones**.
 3. En las **pestañas Pendiente** o **Historial,** seleccione una acción. Se abre el panel desplegable.
-4. En el panel desplegable, seleccione **Abrir página de investigación**. 
+4. En el panel desplegable, seleccione **Abrir página de investigación**.
 5. Seleccione la **pestaña** Alertas para ver una lista de todas las alertas asociadas con esa investigación.
 6. Seleccione un elemento de la lista para abrir su panel desplegable. Allí, puede ver más información sobre la alerta.
 

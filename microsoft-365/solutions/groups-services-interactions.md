@@ -114,14 +114,14 @@ En la tabla siguiente se proporciona información general sobre Microsoft 365 de
 |:---|:---|:---|:---|:---|
 |Azure AD|Pertenencia, Controles de grupo, Invitados|Sí|Sí|Sí|
 |Exchange|Calendario, buzón|Sí|Sí|Sí|
-|Formularios|Form|Sí|No|No|
+|Forms|Form|Sí|No|No|
 |OneNote|Bloc de notas|Sí|No|No|
 |Planner|Panel de tareas|No|Sí|Sí|
 |Power Apps app|Aplicación|Sí|No|No|
 |Power Automate|Flujo de trabajo|Sí|No|No|
 |Power BI (clásico)|Workspace|No|Sí|Sí|
 |Power BI (nuevo)|Workspace|Sí|No|Sí|
-|Project para la web|Project plan|Sí|Sí|No|
+|Project para la Web|Project plan|Sí|Sí|No|
 |Guía básica|Guía básica|Sí|Sí|No|
 |SharePoint|Site|Sí|Sí|Sí|
 |Stream|Canal, vídeo|Sí|Sí|Sí|
@@ -236,7 +236,7 @@ No, el buzón y el calendario no se pueden cambiar a un grupo diferente. Sin emb
 
 Sí, al eliminar el buzón de Exchange se eliminará el grupo, así como los servicios y el contenido asociados al grupo.
 
-## <a name="forms"></a>Formularios
+## <a name="forms"></a>Forms
 
 Forms proporciona encuestas y cuestionarios basados en web.
 
@@ -335,7 +335,7 @@ No, sin embargo, al copiar un plan se crea un nuevo grupo.
 
 Sí, al eliminar el plan se eliminará el contenido y los servicios asociados al grupo.
 
-## <a name="power-apps"></a>Power Apps
+## <a name="power-apps"></a>PowerApps
 
 Power Apps proporciona un lienzo para el desarrollo de aplicaciones sin código.
 
@@ -470,7 +470,7 @@ Sí y no. Un área de trabajo creada por Power BI solo se puede asociar a un sol
 
 Sí, al eliminar el área de trabajo en Power BI se eliminará el contenido y los servicios asociados al grupo.
 
-## <a name="project-for-the-web"></a>Project para la web
+## <a name="project-for-the-web"></a>Project para la Web
 
 Project web ofrece la posibilidad de crear planes de proyecto, gráficos de Gantt y mapas de ruta.
 Características clave que se proporcionan a los grupos.

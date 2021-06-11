@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebde023db5196117a02a2372784a3110839c51fa
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 956fb591154df374c8010d875645e1122f3419b2
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843535"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879245"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -45,9 +45,9 @@ Este servicio de búsqueda de amenazas administradas proporciona información y 
 > [!NOTE]
 > Analice los requisitos de elegibilidad con su proveedor de servicios técnicos de Microsoft y el equipo de cuenta antes de aplicar al servicio de búsqueda de amenazas administradas.
 
-Si eres cliente de Microsoft Defender para endpoints, debes solicitar Expertos en amenazas de Microsoft: Notificaciones de **ataques dirigidos** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas de tu entorno para que puedas responder a ellas rápidamente
+Si eres cliente de Microsoft Defender para endpoints, debes solicitar Expertos en amenazas de Microsoft: Notificaciones de ataque **dirigidas** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas del entorno para que puedas responder a ellas rápidamente.
 
-Para inscribirse en Expertos en amenazas de Microsoft: ventajas de notificaciones de ataque dirigidas, vaya **a** Configuración  >  **General**  >  **Advanced features**  >  **Expertos en amenazas de Microsoft- Targeted Attack Notifications** to apply. Una vez aceptado, recibirás las ventajas de las notificaciones de ataque dirigido.
+Para inscribirse en Expertos en amenazas de Microsoft: ventajas de notificaciones de ataque dirigidas, vaya **a Configuración**  >  **Endpoints**  >  **General**  >  **Advanced features**  >  **Expertos en amenazas de Microsoft- Targeted Attack Notifications** to apply. Una vez aceptado, recibirás las ventajas de las notificaciones de ataque dirigido.
 
 Póngase en contacto con su equipo de cuenta o representante de Microsoft para suscribirse **a Expertos en amenazas de Microsoft:** expertos a petición para consultar con nuestros expertos en amenazas sobre las detecciones y los conflictos relevantes a los que se enfrenta su organización.
 

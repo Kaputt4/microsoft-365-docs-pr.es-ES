@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en todas las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822291"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879017"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -103,9 +103,9 @@ En otras palabras,  la configuración de la  directiva de protección estricta i
 
 ## <a name="assign-preset-security-policies-to-users"></a>Asignar directivas de seguridad preestablecidas a los usuarios
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+### <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Abra el centro Microsoft 365 seguridad en <https://security.microsoft.com> . Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
+- Abra el portal Microsoft 365 Defender en <https://security.microsoft.com> . Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -117,9 +117,9 @@ En otras palabras,  la configuración de la  directiva de protección estricta i
 
   **Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
-### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Usar el centro de seguridad para asignar directivas de seguridad preestablecidas a los usuarios
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Usar el portal Microsoft 365 Defender para asignar directivas de seguridad preestablecidas a los usuarios
 
-1. En el centro de seguridad, vaya a Correo electrónico **&** directivas de colaboración & Reglas directivas de amenazas Plantilla sección Directivas de seguridad preestablecidas \>  \>  \>  \> .
+1. En el portal Microsoft 365 Defender, vaya a Email **& collaboration** Policies \> **& Rules** Threat \> **Policies** \> **Templated policies** section Preset Security \> **Policies**.
 
 2. En **Protección estándar o** Protección **estricta,** haga clic **en Editar**.
 
@@ -144,9 +144,9 @@ En otras palabras,  la configuración de la  directiva de protección estricta i
 
 5. En la **página Revisar y confirmar los cambios,** compruebe las selecciones y, a continuación, haga clic en **Confirmar**.
 
-### <a name="use-the-security-center-to-modify-the-assignments-of-preset-security-policies"></a>Usar el centro de seguridad para modificar las asignaciones de directivas de seguridad preestablecidas
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>Usar el portal Microsoft 365 Defender para modificar las asignaciones de directivas de seguridad preestablecidas
 
-Los pasos para modificar la asignación de la **directiva** de seguridad de protección estándar o de protección estricta son los mismos que cuando se asignaron inicialmente las directivas de seguridad preestablecidas [a los usuarios.](#use-the-security-center-to-assign-preset-security-policies-to-users) 
+Los pasos para modificar la asignación de la **directiva** de seguridad de protección estándar o de protección estricta son los mismos que cuando se asignaron inicialmente las directivas de seguridad preestablecidas [a los usuarios.](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users) 
 
 Para deshabilitar las  **directivas de** seguridad Protección estándar o Protección estricta a la vez que se conservan las condiciones y excepciones existentes, deslice el botón de alternancia a **Desactivado.** ![ ](../../media/scc-toggle-off.png) Para habilitar las directivas, deslice el botón de alternancia a **Activado** ![ activar ](../../media/scc-toggle-on.png) .
 
