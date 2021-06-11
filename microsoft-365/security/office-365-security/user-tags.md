@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft Defender para Office 365 Plan 2. El filtrado de etiquetas está disponible en alertas, informes e investigaciones en Microsoft Defender para Office 365 identificar rápidamente a los usuarios etiquetados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fb948d63f7bc42839d6fae8a2138d4ad48d81f6
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 105e927e50f7b1d1217587587b8d7ee3b7d6bd4c
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879173"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904109"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft Defender para Office 365
 
@@ -41,7 +41,9 @@ Si su organización tiene Defender para Office 365 Plan 2 (incluido en la suscri
 Después de aplicar etiquetas del sistema o etiquetas personalizadas a los usuarios, puede usar esas etiquetas como filtros en alertas, informes e investigaciones:
 
 - [Alertas](alerts.md)
+- [Directivas de alerta personalizadas](../../compliance/alert-policies.md#viewing-alerts)
 - [Explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
+- [Página de la entidad de correo electrónico](mdo-email-entity-page.md#other-innovations)
 - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 - [Vistas de campañas](campaigns.md)
 - Para las cuentas de prioridad, puede usar el [informe](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Problemas de correo electrónico para cuentas de prioridad en el Centro Exchange administración (EAC).

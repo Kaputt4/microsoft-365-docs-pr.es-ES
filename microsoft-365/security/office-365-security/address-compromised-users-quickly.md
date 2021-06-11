@@ -11,20 +11,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 02/25/2020
+ms.date: 06/10/2021
 description: Obtenga información sobre cómo acelerar el proceso de detección y tratamiento de cuentas de usuario comprometidas con capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934698"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904145"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Solucionar cuentas de usuario comprometidas con investigación y respuesta automatizadas
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -71,7 +69,7 @@ Cuando una cuenta de usuario está en peligro, se desencadenan alertas. Y en alg
 
 Tiene algunas opciones para navegar a una lista de usuarios restringidos. Por ejemplo, en el Centro de seguridad & cumplimiento, puede ir a **Administración** de amenazas \> **Revisar** \> **usuarios restringidos**. En el siguiente procedimiento se describe la navegación mediante el panel **de** alertas, que es una buena manera de ver varios tipos de alertas que podrían haber sido desencadenadas.
 
-1. Vaya a <https://protection.office.com> e inicie sesión.
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión.
 
 2. En el panel de navegación, elija **Panel de** \> **alertas**.
 
@@ -99,7 +97,7 @@ Para obtener más información, [vea Ver detalles de una investigación](air-vie
 
 - **No confíe en una alerta de inicio de sesión sospechosa como su único indicador**. Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechosa. A veces es la serie de actividades que se producen después de que se pone en peligro una cuenta que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Vea [Directivas de alerta](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Revisar los permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

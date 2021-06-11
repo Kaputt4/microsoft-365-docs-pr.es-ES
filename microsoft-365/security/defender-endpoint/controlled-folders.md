@@ -11,18 +11,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 02/03/2021
+ms.date: 06/10/2021
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c60620d2a589c8473764b810d1fcb0e24f674451
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845575"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904061"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -89,9 +89,9 @@ Windows carpetas del sistema están protegidas de forma predeterminada, junto co
 
 El acceso controlado a carpetas [requiere Antivirus de Microsoft Defender protección en tiempo real.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>Revisar eventos de acceso controlado a carpetas en el Centro de seguridad de Microsoft Defender
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Revisar eventos de acceso controlado a carpetas en el portal de Microsoft 365 Defender
 
-Defender for Endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de [investigación de alertas.](investigate-alerts.md)
+Defender for Endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de investigación de [alertas](investigate-alerts.md) en el portal de Microsoft 365 Defender. (Vea [Microsoft Defender para Endpoint en Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)).)
 
 Puede consultar datos de punto de conexión de Microsoft Defender mediante [búsqueda avanzada](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). Si usa el modo [de auditoría,](audit-windows-defender.md)puede usar la búsqueda avanzada para ver cómo la configuración de acceso controlado a carpetas afectaría al entorno si estuvieran habilitadas. [](advanced-hunting-overview.md)
 
@@ -135,8 +135,4 @@ Puedes usar la aplicación Seguridad de Windows para ver la lista de carpetas pr
 > [!NOTE]
 > [Windows las carpetas del](#windows-system-folders-are-protected-by-default) sistema están protegidas de forma predeterminada y no se pueden quitar de la lista.
 
-## <a name="see-also"></a>Consulte también
 
-- [Evaluar acceso controlado a carpetas](evaluate-controlled-folder-access.md)
-- [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
-- [Proteger más carpetas](customize-controlled-folders.md#protect-additional-folders)

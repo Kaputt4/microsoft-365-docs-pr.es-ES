@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 4e416aa9484f251280649035247a59dcc82ce750
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: fcf2310929937d1dacfc9c101d3e14414bad262b
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795963"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903749"
 ---
 # <a name="client-behavioral-blocking"></a>Bloqueo de comportamiento del cliente
 
@@ -32,7 +32,7 @@ ms.locfileid: "52795963"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Información general
 
@@ -46,7 +46,7 @@ La protección antivirus funciona mejor cuando se combina con la protección en 
 
 [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) detectar comportamientos sospechosos, código malintencionado, ataques sin archivos y en memoria, y mucho más en un dispositivo. Cuando se detectan comportamientos sospechosos, Antivirus de Microsoft Defender supervisa y envía esos comportamientos sospechosos y sus árboles de proceso al servicio de protección en la nube. El aprendizaje automático diferencia entre aplicaciones malintencionadas y comportamientos buenos en milisegundos y clasifica cada artefacto. En tiempo casi real, tan pronto como se encuentra que un artefacto es malintencionado, se bloquea en el dispositivo. 
 
-Cada vez que se detecta un comportamiento sospechoso, [se genera](alerts-queue.md) una alerta y está visible en el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+Cada vez que se [](alerts-queue.md) detecta un comportamiento sospechoso, se genera una alerta y está visible en [Microsoft 365 Defender](microsoft-defender-security-center.md) (anteriormente el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )).
 
 El bloqueo de comportamiento del cliente es eficaz porque no solo ayuda a evitar que se inicie un ataque, sino que puede ayudar a detener un ataque que se ha comenzado a ejecutar. Además, con el [bloqueo de bucle de comentarios](feedback-loop-blocking.md) (otra capacidad de bloqueo y contención del comportamiento), se evitan ataques en otros dispositivos de la organización.
 

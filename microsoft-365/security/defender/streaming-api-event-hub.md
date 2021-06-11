@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c62f175fc8227f64b9f18de78a2a793b2201691c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782374"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903821"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Centro de eventos de Azure
 
@@ -42,9 +42,12 @@ ms.locfileid: "52782374"
 3. Cree un espacio de nombres de centro de eventos, vaya a **Event Hub > Agregar** y seleccione el nivel de precios, las unidades de rendimiento y la opción Autoinflate adecuada para la carga esperada. Para obtener más información, vea [Pricing - Event Hub | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
 ### <a name="add-contributor-permissions"></a>Agregar permisos de colaborador 
-Una vez creado el espacio de nombres del Centro de eventos, deberá agregar la entidad de seguridad del servicio de registro de aplicaciones como Lector, el receptor de datos del Centro de eventos de Azure y el usuario que iniciará sesión en Microsoft 365 Defender como colaborador (esto también se puede hacer a nivel de grupo de recursos o suscripción). 
+Una vez creado el espacio de nombres de Event Hub, tendrá que:
+1. Defina el usuario que va a iniciar sesión en Microsoft 365 Defender como colaborador.
 
-Vaya al espacio de nombres Event hubs > Control de **acceso (IAM)** > Agregar y comprobar en **Asignaciones de roles**.
+2. Si se está conectando a una aplicación, agregue la entidad de seguridad del servicio de registro de aplicaciones como Lector, receptor de datos del centro de eventos de Azure (esto también se puede hacer en el nivel de grupo de recursos o suscripción). 
+
+    Vaya al espacio de nombres Event hubs > Control de **acceso (IAM)** > Agregar y comprobar en **Asignaciones de roles**.
 
 ## <a name="enable-raw-data-streaming"></a>Habilitar la transmisión de datos sin procesar
 
@@ -70,7 +73,7 @@ Vaya al espacio de nombres Event hubs > Control de **acceso (IAM)** > Agregar y 
 
 ## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Esquema de los eventos en Azure Event Hub
 
-```
+```JSON
 {
     "records": [
                     {
@@ -103,7 +106,7 @@ Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
 
 2. Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:
  
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 

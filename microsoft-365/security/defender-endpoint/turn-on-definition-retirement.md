@@ -10,18 +10,18 @@ ms.sitesec: library
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/07/2021
+ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 66b2e882a0f6de21e27dabb3a4bfe2fe113bcb32
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 505270d319a78de20bf6fed01b7ca79c9fc2b400
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296497"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903809"
 ---
 # <a name="turn-on-definition-retirement"></a>Activar la retirada de definiciones
 
@@ -50,10 +50,3 @@ Puede configurar la retirada de definiciones mediante la directiva de grupo. La 
 > [!TIP]
 > ¿Usa objetos de directiva de grupo local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante el análisis](/mem/intune/configuration/group-policy-analytics)de directivas de grupo en Microsoft Endpoint Manager - Vista previa . 
   
-## <a name="related-articles"></a>Artículos relacionados
-
-- [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)
- 
-- [Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
-
-- [Cómo crear e implementar directivas antimalware: Servicio de protección en la nube](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

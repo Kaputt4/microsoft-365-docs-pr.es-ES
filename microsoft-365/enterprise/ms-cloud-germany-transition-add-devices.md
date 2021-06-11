@@ -18,129 +18,76 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional del dispositivo sobre los servicios al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 27426a26befab85bf62a0a143861e447dd722724
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: cdb3278e1d96b2ebdced122ab53db716c3195d8c
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861311"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903890"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional del dispositivo para la migración desde Microsoft Cloud Deutschland
 
-Los dispositivos unidos y registrados de Azure AD conectados a Microsoft Cloud Deutschland deben migrarse después de la fase 9 y antes de la fase 10. La migración de un dispositivo depende del tipo de dispositivo, el sistema operativo y la relación AAD. 
+Los dispositivos unidos y registrados de Azure AD conectados a Microsoft Cloud Deutschland deben migrarse después de la fase 9 y antes de la fase 10. La migración de un dispositivo depende del tipo de dispositivo, el sistema operativo y la relación de Azure AD. 
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
-
-**¿Cómo puedo saber si mi organización está afectada?**
-
-Los administradores deben comprobar si tienen dispositivos registrados o unidos `https://portal.microsoftazure.de` a Azure AD. Si su organización tiene dispositivos registrados, se verá afectado.
-
-**¿Cuál es el impacto en mis usuarios?**
-
-Los usuarios de un dispositivo registrado ya no podrán iniciar sesión después de que se haya completado la fase de migración [10](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) y se hayan deshabilitado los puntos de conexión de Microsoft Cloud Deutschland.  
-
-Asegúrese de que todos los dispositivos estén registrados en el punto de conexión mundial antes de que su organización se desconecte de Microsoft Cloud Deutschland.
-  
-**¿Cuándo los usuarios vuelvan a registrar sus dispositivos?**
-
-Es fundamental para el éxito que solo desinscriba y vuelva a registrar los dispositivos una vez completada la [fase 9.](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) Debes finalizar el nuevo registro antes de que se inicie la fase 10, de lo contrario podrías perder el acceso al dispositivo.
-
-**¿Cómo restaure el estado de mi dispositivo después de la migración?**
-
-En el caso de los dispositivos Windows propiedad de la compañía que están registrados en Azure AD, los administradores podrán administrar la migración de estos dispositivos a través de flujos de trabajo desencadenados de forma remota que anularán el registro de los estados de dispositivo antiguos.
-  
-Para todos los demás dispositivos, incluidos los dispositivos Windows personales que están registrados en Azure AD, el usuario final debe realizar estos pasos manualmente. Para los dispositivos unidos a Azure AD, los usuarios deben tener una cuenta de administrador local para anular el registro y volver a registrar sus dispositivos.
-
-Consulta instrucciones detalladas sobre cómo restaurar correctamente los estados del dispositivo a continuación. 
- 
-**¿Cómo sé que todos mis dispositivos están registrados en la nube pública?**
-
-Para comprobar si los dispositivos están registrados en la nube pública, debe exportar y descargar la lista de dispositivos del portal de Azure AD a una Excel de cálculo. A continuación, filtre los dispositivos registrados (mediante la columna _registeredTime)_ después de la fase de migración [Independiente de Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
-
-## <a name="additional-considerations"></a>Consideraciones adicionales
-El registro del dispositivo se desactiva después de la migración del inquilino y no se puede habilitar ni deshabilitar. 
-
-Si no se usa Intune, inicie sesión en la suscripción y ejecute este comando para volver a activar la opción:
-
-```powershell
-Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
-```
-**IMPORTANTE:** La entidad de servicio de Intune se habilitará después de la migración comercial, lo que implica la activación del registro de dispositivos de Azure AD. Si bloqueó el registro de dispositivos de Azure AD antes de la migración, debe deshabilitar la entidad de servicio de Intune con PowerShell para deshabilitar de nuevo el registro de dispositivos de Azure AD con el portal de Azure AD. Puede deshabilitar la entidad de servicio de Intune con este comando en el Azure Active Directory PowerShell para Graph módulo.
-
-```powershell
-Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
-```
-
-
-## <a name="azure-ad-join"></a>Unión a Azure AD
-Esto se aplica a Windows 10 dispositivos. 
-
-Si un dispositivo está unido a Azure AD, debe desconectarse de Azure AD y volver a conectarse. 
+## <a name="azure-ad-joined-windows-10-devices"></a>Dispositivos unidos Windows 10 Azure AD
+Si un Windows 10 está unido a Azure AD, debe desconectarse de Azure AD y debe conectarse de nuevo. 
 
 [![Azure AD Device Re-Join Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-Si el usuario es un administrador en el dispositivo Windows 10, el usuario puede anular el registro del dispositivo de Azure AD y volver a unirlo. Si no tiene privilegios de administrador, el usuario necesita credenciales de una cuenta de administrador local en este equipo. 
+Si el usuario es un administrador en el dispositivo Windows 10, el usuario puede anular el registro del dispositivo de Azure AD y volver a unirlo en tres pasos. 
 
+### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>Paso 1: Determinar si el dispositivo está unido a Azure ID.
+1.  Inicie sesión con su cuenta profesional.
+2.  Vaya a **Configuración**  >  **cuentas acceso** a trabajo o  >  **escuela**. 
+3.  Buscar una cuenta en la lista con **conectado a [...]' s Azure AD**. 
+4.  Si existe una cuenta conectada, continúe con el paso 2. 
+### <a name="step-2-disconnect-the-device-from-azure-ad"></a>Paso 2: Desconectar el dispositivo de Azure AD
+1.  Haga **clic en** Desconectar en el trabajo conectado o cuenta educativa. 
+2.  Confirme la desconexión dos veces. 
+3.  Escriba un nombre de usuario y una contraseña de administrador local. El dispositivo está desconectado.
+4.  Reinicie el dispositivo.
+### <a name="step-3-join-the-device-to-azure-ad"></a>Paso 3: Unir el dispositivo a Azure AD
+1.  Inicie sesión con las credenciales del administrador local.
+2.  Vaya a **Configuración**  >  **cuentas acceso** a trabajo o  >  **escuela**.
+3.  Haga clic en **Conectar**.
+4.  **IMPORTANTE:** Haga clic **en Unirse a Azure AD**.
+5.  Escriba la dirección de correo electrónico y la contraseña de su cuenta de trabajo. El dispositivo está conectado.
+6.  Reinicie el dispositivo.
+7.  Inicie sesión con la dirección de correo electrónico y la contraseña de su cuenta de trabajo.
 
-Un administrador puede crear una cuenta de administrador local en el dispositivo que sigue esta ruta de configuración:
+Si el usuario no es un administrador del dispositivo, un administrador global de Azure AD puede crear la cuenta de administrador local en el dispositivo siguiendo esta ruta de configuración y deshacer la conexión del dispositivo:
 
 *Configuración > cuentas > otras cuentas > credenciales desconocidas > Agregar usuario sin Microsoft-Account*
 
-### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>Paso 1: Determinar si el dispositivo está unido a Azure ID.
-1.  Inicie sesión con los usuarios Correo electrónico y contraseña.
-2.  Vaya a Configuración > cuentas > Access Work Or School. 
-3.  Busque un usuario en la lista con **conectado a ... 's Azure AD**. 
-4.  Si existe un usuario conectado, continúe con el paso 2. Si no es así, no se requiere ninguna acción adicional.
+Para volver a unirse, las credenciales de cualquier cuenta de trabajo de su organización se pueden usar en este paso. 
+
+Ten en cuenta que la cuenta de trabajo usada para unirse al dispositivo se promocionará automáticamente como administrador del dispositivo.
+Cualquier otra cuenta de trabajo de la organización puede iniciar sesión en el dispositivo, pero no tiene privilegios de administrador.
+
+## <a name="azure-ad-registered-workplace-joined-windows-10-devices"></a>Azure AD registrado (unido al lugar de trabajo) Windows 10 dispositivos
+Si un Windows 10 está registrado en Azure AD, debe desconectarse de Azure AD y conectarse de nuevo.
+
+[![Azure AD Device Re-Registration Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+
+### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>Paso 1: Determinar si el dispositivo está registrado en Azure ID.
+1.  Inicie sesión con el usuario.
+2.  Vaya a **Configuración**  >  **cuentas acceso** a trabajo o  >  **escuela**. 
+3.  Descubrir la cuenta de trabajo en la lista y comprobar si está **conectada a [...]' s Azure AD**.
+
+    Si la cuenta de trabajo está en la lista pero NO está conectada a azure AD, continúe con el paso 2.
+
+    De lo contrario, el dispositivo es un dispositivo unido a Azure AD y tiene que hacer referencia a [Azure AD Joined Windows 10 devices](#azure-ad-joined-windows-10-devices).
+
 ### <a name="step-2-disconnect-the-device-from-azure-ad"></a>Paso 2: Desconectar el dispositivo de Azure AD
-1.  Pulsa **Desconectar** en el trabajo conectado o cuenta educativa. 
-2.  Confirme la desconexión dos veces. 
-3.  Escriba el nombre de usuario y la contraseña del administrador local. El dispositivo está desconectado.
-4.  Reinicie el dispositivo.
-### <a name="step-3-join-the-device-to-azure-ad"></a>Paso 3: Unir el dispositivo a Azure AD
-1.  el usuario inicia sesión con las credenciales del administrador local
-2.  Vaya a **Configuración,** a **continuación, Cuentas** y **acceso a trabajo o escuela**
-3.  Pulsa **Conectar**
-4.  **IMPORTANTE:** Pulsa **Unirse a Azure AD**
-5.  Escriba la dirección de correo electrónico y la contraseña del usuario. El dispositivo está conectado
-6.  Reiniciar el dispositivo 
-7.  firmar con su dirección de correo electrónico y contraseña
-
-## <a name="azure-ad-registered-company-owned"></a>Azure AD Registrado (propiedad de la compañía)
-
-Para determinar si el Windows 10 está registrado en Azure AD, ejecute el siguiente comando en el dispositivo:
-
-```console
-%SystemRoot%\system32\dsregcmd.exe /status
-```
-
-Si el dispositivo está registrado en Azure AD, verá el siguiente resultado:
-
-```console
-+----------------------------------------------------------------------+
-| User State                                                           |
-+----------------------------------------------------------------------+
-           WorkplaceJoined : YES
-          WamDefaultSet : NO
-          WamDefaultAuthority : organizations
-```
-
-Para quitar la cuenta registrada de Azure AD existente en el dispositivo:
-
-- Para quitar la cuenta registrada de Azure AD en el dispositivo, use CleanupWPJ, una herramienta que puede descargar desde aquí: [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
-
-- Extraiga el archivo ZIP y ejecute **WPJCleanup.cmd**. Esta herramienta iniciará el ejecutable correcto en función de la versión de Windows en el dispositivo.
-
-- Mediante un mecanismo como la directiva de grupo, el administrador puede ejecutar el comando en el dispositivo en el contexto de cualquier usuario que haya iniciado sesión en el dispositivo.
-
-Para deshabilitar los mensajes del Administrador de cuentas web para registrar el dispositivo en Azure AD, agregue este valor del Registro: 
-
-- Ubicación: HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin
-- Tipo: DWORD (32 bits)
-- Nombre: BlockAADWorkplaceJoin
-- Datos de valor: 1
-
-La presencia de este valor del Registro debe bloquear la unión al lugar de trabajo e impedir que los usuarios vean mensajes para unirse al dispositivo.
+1.  Haz clic en tu cuenta de trabajo. Aparecen los botones *Información* *y* Desconectar.
+2.  Haga clic **en Desconectar**. 
+3.  Para confirmar la eliminación de la cuenta del dispositivo, haga clic **en Sí**.
+### <a name="step-3-connect-the-device-to-azure-ad"></a>Paso 3: Conectar el dispositivo a Azure AD
+1.  Haga clic en **Conectar**.
+2.  Escriba la dirección de correo electrónico de su cuenta de trabajo y haga clic **en Siguiente**.
+3.  Escriba la contraseña de su cuenta de trabajo y haga clic **en Iniciar sesión.**
+4.  Confirme haciendo clic en **Listo**. La cuenta de trabajo aparece de nuevo.
 
 ## <a name="android"></a>Android
 
@@ -195,6 +142,29 @@ En dispositivos iOS, un usuario tendrá que quitar manualmente las cuentas almac
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>Paso 3: Cerrar sesión de aplicaciones individuales si es necesario
 
 Los usuarios pueden ir a aplicaciones individuales como Outlook, Teams y OneDrive y quitar cuentas de esas aplicaciones.
+
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+
+**¿Cómo puedo saber si mi organización está afectada?**
+
+Los administradores deben comprobar si tienen dispositivos de Azure AD registrados o unidos `https://portal.microsoftazure.de` a Azure AD. Si su organización tiene dispositivos de Azure AD registrados o unidos a Azure AD, la organización debe seguir las instrucciones de esta página.
+
+**¿Cuándo los usuarios vuelvan a registrar sus dispositivos?**
+
+Es fundamental para el éxito que solo desinscriba y vuelva a registrar los dispositivos una vez completada la [fase 9.](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) Debes finalizar el nuevo registro antes de que se inicie la fase 10, de lo contrario podrías perder el acceso al dispositivo.
+
+**¿Cómo sé que todos mis dispositivos están registrados en la nube pública?**
+
+Para comprobar si los dispositivos están registrados en la nube pública, debe exportar y descargar la lista de dispositivos del portal de Azure AD a una Excel de cálculo. A continuación, filtre los dispositivos registrados (mediante la columna _registeredTime)_ después de la fecha en que la organización ha pasado la [fase 9 del proceso de migración](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization).
+
+## <a name="additional-considerations"></a>Consideraciones adicionales
+
+> [!IMPORTANT]
+> La entidad de servicio de Intune se habilitará después de la [fase 3](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer)del proceso de migración, lo que implica la activación del registro de dispositivos de Azure AD. Si bloqueó el registro de dispositivos de Azure AD antes de la migración, debe deshabilitar la entidad de servicio de Intune con PowerShell para deshabilitar de nuevo el registro de dispositivos de Azure AD con el portal de Azure AD. Puede deshabilitar la entidad de servicio de Intune con este comando en el Azure Active Directory PowerShell para Graph módulo.
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ## <a name="more-information"></a>Más información
 

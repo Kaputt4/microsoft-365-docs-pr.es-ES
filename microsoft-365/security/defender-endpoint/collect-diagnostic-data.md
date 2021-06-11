@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7686f28646135986a78b4c269e41e2fc3a70dff9
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274789"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904049"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Recopilar datos de diagnóstico antivirus de Microsoft Defender
 
@@ -43,9 +43,9 @@ En al menos dos dispositivos que están experimentando el mismo problema, obteng
 
     a. Abra el **menú** Inicio.
 
-    b. Escriba **cmd**. Haga clic con el botón secundario en **el símbolo del sistema** y haga clic en Ejecutar como **administrador.**
+    b. Escriba **cmd**. Haga clic con el botón secundario en **el símbolo del sistema** y, a continuación, seleccione Ejecutar como **administrador**.
 
-    c. Escriba las credenciales de administrador o apruebe el mensaje.
+    c. Especifique las credenciales de administrador o apruebe el símbolo del sistema.
 
 2. Vaya al directorio de Microsoft Defender. El valor predeterminado es `C:\Program Files\Windows Defender`
 
