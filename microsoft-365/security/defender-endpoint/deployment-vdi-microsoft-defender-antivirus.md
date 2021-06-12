@@ -10,22 +10,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/28/2020
+ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ce200ca12bacc3ae8d9f7b48d36274ca54322586
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275257"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908034"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 
@@ -175,7 +172,7 @@ A veces, Antivirus de Microsoft Defender notificaciones se pueden enviar o conse
 
 4. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
-La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en [el portal Microsoft 365 Defender](microsoft-defender-security-center.md).
 
 > [!TIP]
 > Para abrir el Centro de acciones en Windows 10, siga uno de los pasos siguientes:

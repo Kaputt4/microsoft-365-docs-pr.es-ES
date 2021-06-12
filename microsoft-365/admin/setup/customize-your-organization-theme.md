@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Aprende a cambiar el tema predeterminado de la parte superior de la barra de navegación en Microsoft 365 y personalízalo para que coincida con el logotipo o color de tu empresa.
-ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841311"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908166"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el Microsoft 365 de la organización
 
@@ -89,6 +89,9 @@ En la **página Logotipos,** puede agregar los logotipos y especificar la direcc
 Seleccione **Guardar** para guardar los cambios.
 
 Puedes quitar los logotipos en cualquier momento. Solo tiene que volver a la **página Logotipos** y seleccione **Quitar**.
+
+> [!NOTE]
+> De forma predeterminada, primero mostramos selecciones de logotipo que la mayoría de las organizaciones usan. La opción de carga solo se aplica a los temas predeterminados y no a los temas de grupo.
   
 ## <a name="colors-choose-theme-colors"></a>Colores: elegir colores del tema
 
@@ -102,7 +105,7 @@ En la **página Colores,** puede establecer los colores predeterminados y elegir
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores predeterminados del tema para su organización":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mi organización ya tiene un tema para todos los empleados. ¿Cómo cambiará esto?
 

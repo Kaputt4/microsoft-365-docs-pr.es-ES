@@ -3,7 +3,7 @@ title: Información general de Temas Microsoft Viva
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: cjtan
+ms.reviewer: cjtan; lauris
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Información general de Temas Viva.
-ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302129"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908332"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de Temas Microsoft Viva 
 
-Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para acercar conocimientos Microsoft 365 los usuarios en aplicaciones que usan todos los días, empezando por SharePoint páginas modernas, Búsqueda de Microsoft y Búsqueda en Word, PowerPoint, Outlook y Excel.
+Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para aportar conocimiento SharePoint a los usuarios en las aplicaciones de Microsoft 365 que usan todos los días, empezando por páginas modernas, Búsqueda de Microsoft y Búsqueda en Word, PowerPoint, Outlook y Excel.
 
 <br/>
 
@@ -31,28 +31,49 @@ Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsof
 
 <br/>
 
-Temas Viva ayuda a solucionar un importante problema comercial de muchas empresas, proporcionando información a los usuarios cuando la necesitan. Por ejemplo, los nuevos empleados necesitan obtener mucha información nueva rápidamente y se encuentran con términos que no conocen al leer el contenido de la compañía. Para obtener más información, es posible que el usuario deba dejar lo que está haciendo y dedicar un tiempo valioso a buscar detalles, como información sobre qué es el término, quién en la organización es un experto en la materia y quizás sitios y documentos relacionados con el término.
+Viva Topics ayuda a abordar un problema empresarial clave en muchas empresas, ya que proporciona la información a los usuarios cuando la necesitan. Por ejemplo, los nuevos empleados necesitan obtener mucha información nueva rápidamente y se encuentran con términos que no conocen al leer el contenido de la compañía. Para obtener más información, es posible que el usuario deba dejar lo que está haciendo y dedicar un tiempo valioso a buscar detalles, como información sobre qué es el término, quién en la organización es un experto en la materia y quizás sitios y documentos relacionados con el término.
 
-Temas Viva usa inteligencia artificial para buscar e identificar automáticamente **temas** en su organización. Compilan información sobre ellos, como una breve descripción, personas que trabajan en el tema y sitios, archivos y páginas relacionados con él. Un gestores de información o colaborador puede actualizar la información del tema según sea necesario. Los temas están disponibles para los usuarios, lo que significa que, para cada instancia del tema que aparece en las noticias y páginas de un sitio moderno de SharePoint, el texto se resaltará. Los usuarios pueden seleccionar el tema para obtener más información sobre él en los detalles del tema. Los temas también pueden encontrarse en la búsqueda de SharePoint.
-
+Temas Viva usa inteligencia artificial para buscar e identificar automáticamente *temas* en su organización. Compilan información sobre ellos, como una breve descripción, personas que trabajan en el tema y sitios, archivos y páginas relacionados con él. Un gestores de información o colaborador puede actualizar la información del tema según sea necesario. Los temas están disponibles para los usuarios, lo que significa que, para cada instancia del tema que aparece en las noticias y páginas de un sitio moderno de SharePoint, el texto se resaltará. Los usuarios pueden seleccionar el tema para obtener más información sobre él en los detalles del tema. Los temas también pueden encontrarse en la búsqueda de SharePoint.
 
 ## <a name="how-topics-are-displayed-to-users"></a>Cómo se muestran los temas a los usuarios
 
-Cuando se menciona un tema en el contenido de noticias y páginas de SharePoint, lo verá resaltado. Puede abrir el resumen del tema desde el contenido resaltado. Abra los detalles del tema en el título del resumen. El tema mencionado podría identificarse automáticamente o el autor de la página podría agregarlo a la página con una referencia directa al tema. 
+Los temas se muestran a los usuarios a través de:
 
-   ![Contenido destacado del tema](../media/knowledge-management/saturn.png) 
+- [Resaltados de temas](topic-experiences-overview.md#topic-highlights) en SharePoint páginas
+- Respuestas de temas en [los resultados de búsqueda](topic-experiences-overview.md#search-results)
+- Búsqueda en [aplicaciones de office](topic-experiences-overview.md#office-application-search)
+- [Página principal del centro](topic-experiences-overview.md#topic-center) de temas
 
-Cuando se usa la búsqueda en Word, PowerPoint, Outlook o Excel, ya sea a través del cuadro de búsqueda o seleccionando **Buscar** en el menú contextual, los resultados que se muestran también pueden mostrar el resumen del tema.
+### <a name="topic-highlights"></a>Contenido destacado del tema
+
+Cuando se menciona un tema en el contenido de noticias y páginas de SharePoint, lo verá resaltado. Puede abrir el resumen del tema desde el contenido resaltado. Abra los detalles del tema desde el título del resumen para ver la página de tema completa. El tema mencionado podría identificarse automáticamente o podría haber sido agregado a la página con una referencia directa al tema por el autor de la página. 
+
+   ![Captura de pantalla que muestra los aspectos destacados del tema.](../media/knowledge-management/saturn.png) 
+
+### <a name="search-results"></a>Resultados de la búsqueda
+
+Puede ver [](search.md#topic-answer) una respuesta de tema en los resultados de la búsqueda cuando busca desde la página de inicio de SharePoint, la búsqueda en Office.com o la búsqueda desde un sitio de SharePoint después de cambiar el ámbito de búsqueda para incluir la organización completa. La respuesta al tema aparecerá en el tema de la lista de resultados y le dará un breve conjunto de información relacionada con ese tema. 
+
+   ![Captura de pantalla que muestra los resultados de una búsqueda SharePoint sitio web.](../media/knowledge-management/site-search-results.png) 
+
+### <a name="office-application-search"></a>Office búsqueda de aplicaciones
+
+Cuando usas la búsqueda en aplicaciones de Office como Word, PowerPoint, Outlook o Excel, ya sea a  través del cuadro de búsqueda o seleccionando Buscar en el menú contextual, las respuestas de los temas se muestran en los resultados de la búsqueda.
 
    ![Captura de pantalla que muestra la búsqueda en Word a través del cuadro Buscar.](../media/knowledge-management/word-search-2.png)
 
    ![Captura de pantalla que muestra la búsqueda en Word a través del menú contextual Buscar.](../media/knowledge-management/word-search-1.png)
 
+### <a name="topic-center"></a>Centro de temas
+
+Los usuarios pueden ver los temas de su organización a los que tienen una conexión en la página principal [del centro de temas](topic-center-overview.md#home-page).
+
 ## <a name="knowledge-indexing"></a>Indexación de información
 
-Temas Viva usa tecnología de inteligencia artificial de Microsoft para identificar los **temas** de su entorno de Microsoft 365.
+Temas Viva usa tecnología de inteligencia artificial de Microsoft para identificar los *temas* de su entorno de Microsoft 365.
 
 Un tema es una frase o un término que es significativo o importante para la organización. Tiene un significado específico en la organización y cuenta con recursos relacionados que pueden ayudar a comprender qué es y a encontrar más información acerca de él. Hay muchos tipos diferentes de temas que serán importantes para su organización. Inicialmente, la tecnología de inteligencia artificial de Microsoft se centra en los siguientes tipos:
+
 - Proyecto
 - Evento
 - Organización
@@ -61,8 +82,7 @@ Un tema es una frase o un término que es significativo o importante para la org
 - Trabajo creativo
 - Campo de estudio
 
-
-Cuando se identifica un tema y la inteligencia artificial determina que tiene suficiente información para que sea un tema sugerido, una **página de tema** muestra la información que se ha recopilado a través de la indexación del tema, como la siguiente:
+Cuando se identifica un tema y la inteligencia artificial determina que tiene suficiente información para que sea un tema sugerido, una *página de tema* muestra la información que se ha recopilado a través de la indexación del tema, como la siguiente:
 
 - Nombres y acrónimos alternativos.
 - Breve descripción del tema.
@@ -71,7 +91,7 @@ Cuando se identifica un tema y la inteligencia artificial determina que tiene su
 
 Los administradores de información pueden rastrear todos los sitios de SharePoint de su espacio empresarial por temas o seleccionar algunos determinados.
 
-Vea [Detección de temas y curación](./topic-experiences-discovery-curation.md).
+Para obtener más información, vea [Detección de temas y curación.](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Funciones
 
@@ -81,26 +101,25 @@ Al usar Temas Viva en su entorno de Microsoft 365, los usuarios tendrán las si
 
 - Colaboradores: Usuarios que tienen permisos para editar los temas existentes o crear nuevos. Los administradores de información asignan permisos de colaborador a los usuarios a través de la configuración de Temas Viva en el Centro de administración de Microsoft 365. Tenga en cuenta que también puede dar permiso a todos los visualizadores de temas para editar y crear temas para que todos puedan colaborar en los temas que ven.
 
-- Gestores de información: Usuarios que guían los temas a través de su ciclo de vida. Los gestores de información usan la página **Administrar temas** del centro de temas para confirmar los temas sugeridos por la inteligencia artificial, quitar temas que ya no son relevantes y editar temas existentes o crear nuevos, y son los únicos usuarios que tienen acceso a él. Los administradores de información asignan permisos de gestores de información a los usuarios a través de la configuración de Temas Viva en el Centro de administración de Microsoft 365. 
+- Gestores de información: Usuarios que guían los temas a través de su ciclo de vida. Los administradores  de conocimientos usan la página Administrar temas del centro de temas para confirmar temas sugeridos por la IA, quitar temas que ya no son relevantes, así como editar temas existentes o crear otros nuevos y son los únicos usuarios que tienen acceso a él. Los administradores de información asignan permisos de gestores de información a los usuarios a través de la configuración de Temas Viva en el Centro de administración de Microsoft 365. 
 
-- Administradores de información: Los administradores de información configuran Temas Viva y los gestionan mediante los controles del administrador en el Centro de administración de Microsoft 365. Actualmente, un administrador del servicio SharePoint o global de Microsoft 365 puede servir como administrador del información.
+- Administradores de conocimientos: los administradores establecen Temas de Viva y lo administran a través de los controles de administración del centro Microsoft 365 administración. Actualmente, un administrador del servicio SharePoint o global de Microsoft 365 puede servir como administrador del información.
 
-Vea las [Funciones de Temas Viva](topic-experiences-roles.md) para obtener más información.
+Para obtener más información, vea [Roles de Temas de Viva](topic-experiences-roles.md).
 
 ## <a name="topic-management"></a>Administración de temas
 
-La administración de temas se realiza en la página **Administrar temas** del **centro de temas** de su organización. El centro de temas se crea durante la configuración y sirve como centro de información para su organización. 
+La administración de temas se realiza en la **página Administrar temas** del centro de temas de su *organización.* El centro de temas se crea durante la instalación y sirve como centro de conocimiento para su organización. 
 
-Aunque todos los usuarios con licencia pueden ver los temas con los que están relacionados en el centro de temas, solo los usuarios con los permisos *Administrar temas* (gestores de conocimientos) pueden ver y usar la página Administrar temas.
+Aunque todos los usuarios con licencia pueden ver los temas  con los que están conectados en el centro de temas, solo los usuarios con permisos administrar temas (administradores de conocimientos) pueden ver y usar la página Administrar **temas.**
 
 Los gestores de información pueden realizar las siguientes acciones:
 
 - Confirmar o quitar los temas detectados en su espacio empresarial.
 - Crear nuevos temas manualmente según sea necesario (por ejemplo, si no se ha proporcionado suficiente información para que lo detecte la inteligencia artificial).
-- Editar páginas de temas existentes.<br/>
+- Editar páginas de temas existentes.
 
-Consulte [Administrar temas en el centro de temas](manage-topics.md) para obtener más información.  
-
+Para obtener más información, vea [Manage topics in the topic center](manage-topics.md).  
 
 ## <a name="admin-controls"></a>Controles de administración
 
@@ -113,20 +132,20 @@ Los controles de administración en Microsoft 365 centro de administración le p
 - Controlar qué usuarios pueden crear y editar temas.
 - Controlar qué usuarios pueden ver temas.
 
-Vea [asignar permisos de usuario](./plan-topic-experiences.md#user-permissions), [administrar visibilidad de tema](./topic-experiences-knowledge-rules.md) y [administrar detección de temas](./topic-experiences-discovery.md) para obtener más información sobre los controles de administración.
+Para obtener más información acerca de los controles de administración, vea [asignar permisos de usuario,](./plan-topic-experiences.md#user-permissions)administrar la [visibilidad del](./topic-experiences-knowledge-rules.md)tema y administrar la [detección de temas.](./topic-experiences-discovery.md)
 
 ## <a name="topic-curation--feedback"></a>Comentarios y conservación de temas
 
 La inteligencia artificial trabajará sin descanso para ofrecerle sugerencias para mejorar los temas a medida que se produzcan cambios en su entorno. 
 
-Los usuarios con permisos de edición o creación de temas pueden hacer actualizaciones en las páginas de temas directamente si quieren realizar correcciones o agregar información adicional. También pueden agregar nuevos temas que la inteligencia artificial no ha sido capaz de identificar. Si existe suficiente información sobre estos temas agregados manualmente y la inteligencia artificial puede identificar este tipo de tema, las sugerencias adicionales de la inteligencia artificial pueden mejorar estos temas agregados manualmente. 
+Los usuarios con permisos de edición o creación de temas pueden hacer actualizaciones en las páginas de temas directamente si quieren realizar correcciones o agregar información adicional. También pueden agregar nuevos temas que la inteligencia artificial no ha sido capaz de identificar. Si hay suficiente información sobre estos temas agregados manualmente y AI puede identificar este tipo de tema, las sugerencias adicionales de AI podrían mejorar estos temas agregados manualmente.
 
 Es posible que se pregunte a los usuarios a los que permite acceder a ver temas en su trabajo diario si estos les han resultado útiles. El sistema examina estas respuestas y las usa para mejorar el contenido resaltado del tema y ayudar a determinar lo que se muestra en los resúmenes y detalles de los temas.
 
 Además, los usuarios con los permisos adecuados pueden etiquetar elementos, como la conversación de Yammer, que sean relevantes para un tema y agregarlos a un tema específico. 
 
-Vea [Detección de temas y curación](./topic-experiences-discovery-curation.md).
+Para obtener más información, vea [Detección de temas y curación.](./topic-experiences-discovery-curation.md)
 
-<!--
-## See also
--->
+## <a name="see-also"></a>Consulte también
+
+[Usar Microsoft Search para buscar temas en Temas de Viva](./search.md)

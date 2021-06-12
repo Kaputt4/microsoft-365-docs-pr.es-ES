@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Los Office 365 clientes deben enviar una solicitud antes de la fecha límite para que su país pueda mover sus datos de servicios Microsoft 365 a su nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e68feeca842061c43c7be70d9b8b930f068d8e4e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4421b034c31adc3e8b0b017067b12086d364564
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927317"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908250"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -74,7 +74,7 @@ A partir de enero de 2020, los clientes de países Office 365 elegibles pueden p
 
 [Mover datos principales a nuevas Office 365 del centro de datos](moving-data-to-new-datacenter-geos.md)
 
-[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
+[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.yml)
 
 [Nuevas geos del centro de datos para Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

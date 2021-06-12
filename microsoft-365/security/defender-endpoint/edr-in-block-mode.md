@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 05/08/2021
+ms.date: 06/11/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 86bb27005365b625ee07feaa067c0ac488c3bb4b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302045"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908346"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo
 
@@ -62,7 +62,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 > [!IMPORTANT]
 > Asegúrese de que se [cumplen](#requirements-for-edr-in-block-mode) los requisitos antes de activar EDR en modo de bloque.
 
-1. Vaya al Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e inicie sesión. 
+1. Vaya al portal [Microsoft 365 Defender e](microsoft-defender-security-center.md) inicie sesión. 
 
 2. Elija **Configuración**  >  **características avanzadas**.
 
@@ -86,7 +86,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 > [!IMPORTANT]
 > Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales y de que las [exclusiones están configuradas.](configure-exclusions-microsoft-defender-antivirus.md) EDR en modo de bloque respeta las exclusiones que se definen para Antivirus de Microsoft Defender.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes 
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-even-when-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Necesito activar el EDR en modo de bloqueo incluso cuando tengo Antivirus de Microsoft Defender en dispositivos?
 

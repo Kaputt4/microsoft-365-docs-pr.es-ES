@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre las nuevas Office 365 del centro de datos y cómo usar la opción de residencia de datos para solicitar un movimiento de los datos principales a una nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60e04525843e8e7557eab2f804680d6d5dddd4d8
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 797ac69e2c60c2e4c3ece38b376406027ff65e36
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904097"
+ms.locfileid: "52908310"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Mover datos principales a nuevas Microsoft 365 del centro de datos
 
@@ -70,7 +70,7 @@ Los movimientos de datos a la nueva ubicación geográfica del centro de datos s
  
 [Cómo solicitar el movimiento de datos](request-your-data-move.md)
     
-[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.md)
+[Preguntas más frecuentes sobre el movimiento de datos](data-move-faq.yml)
   
 [Nuevas geos del centro de datos para Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

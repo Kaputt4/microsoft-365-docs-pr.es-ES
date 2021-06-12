@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: a8c5f5e04c629eb82a7e6f63f92d61030c544de4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ccbcbcb71d60dadf24b6f94bab126a1f1ca1c322
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841921"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908286"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Administrar Microsoft Defender para endpoint con Intune
 
@@ -81,15 +81,13 @@ En la tabla siguiente se enumeran varias tareas que puede realizar para configur
 
 ## <a name="configure-your-microsoft-defender-security-center"></a>Configurar el Centro de seguridad de Microsoft Defender
 
-Si aún no lo ha hecho, configure su **Centro de seguridad de Microsoft Defender** ( ) para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su [https://securitycenter.windows.com](https://securitycenter.windows.com) organización. 
-
-También puede configurar si los usuarios finales pueden ver y qué características pueden ver en el Centro de seguridad de Microsoft Defender.
+Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su organización. Vea [Centro de seguridad de Microsoft Defender](microsoft-defender-security-center.md). También puede configurar si los usuarios finales pueden ver y qué características pueden ver en el portal de Microsoft 365 Defender.
 
 - [Información general sobre el Centro de seguridad de Microsoft Defender](/microsoft-365/security/defender-endpoint/use)
 
 - [Protección de extremo: Centro de seguridad de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga información general sobre Administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
