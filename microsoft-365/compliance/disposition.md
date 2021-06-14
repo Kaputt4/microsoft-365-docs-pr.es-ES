@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594078"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878129"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -38,7 +38,7 @@ Use la página **Eliminación** de **Administración de registros** en el Centro
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Requisitos previos para ver las eliminaciones de contenido
 
-Para administrar las revisiones de eliminación y confirmar que los registros se han eliminado, debe tener los permisos necesarios y la auditoría debe estar habilitada.
+Para administrar las revisiones de eliminación y confirmar que los registros se han eliminado, debe tener los permisos necesarios y la auditoría debe estar habilitada. Además, tenga en cuenta cualquier [limitación](retention-limits.md#maximum-number-of-items-for-disposition) de eliminación.
 
 ### <a name="permissions-for-disposition"></a>Permisos para la eliminación
 
@@ -215,8 +215,6 @@ Use la pestaña **Eliminación** en la página **Administración de registros** 
 Estos elementos muestran **Registros eliminados** en la columna **Tipo**. Por ejemplo:
 
 ![Elementos que se eliminaron sin una revisión para eliminación](../media/records-disposed2.png)
-
-Los elementos que se muestran en la pestaña **Elementos eliminados** se guardan hasta siete años después de que se elimine el elemento, con un límite de un millón artículos por registro para ese período. Si ve que el número de **Recuento** está a punto de alcanzar este límite de un millón y necesita una prueba de eliminación de los registros, póngase en contacto con el [Soporte técnico de Microsoft](../business-video/get-help-support.md).
 
 > [!NOTE]
 > Esta funcionalidad usa la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría se [habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se puedan capturar los eventos correspondientes.

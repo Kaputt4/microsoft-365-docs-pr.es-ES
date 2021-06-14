@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244629"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878189"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Todas las soluciones de Microsoft Information Protection (a veces abreviado como MIP) se implementan con [etiquetas de confidencialidad](sensitivity-labels.md). Para crear y publicar estas etiquetas, vaya al [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). También puede usar el portal más antiguo, el Centro de seguridad y cumplimiento de Office 365.
+Todas las soluciones de Microsoft Information Protection (a veces abreviado como MIP) se implementan con [etiquetas de confidencialidad](sensitivity-labels.md). Para crear y publicar estas etiquetas, vaya al [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). También puede usar el portal más antiguo, el Centro de seguridad y cumplimiento de Office 365.
 
 En primer lugar, cree y configure las etiquetas de confidencialidad que quiera que estén disponibles para las aplicaciones y otros servicios. Por ejemplo, las etiquetas que quiere que vean los usuarios para que se apliquen desde las aplicaciones de Office. 
 
@@ -180,7 +180,10 @@ Para editar una directiva de etiquetas existente, selecciónela y, a continuaci�
 
 Este botón inicia el asistente para **Crear directivas**, que le permite editar las etiquetas que se incluirán y su configuración. Cuando finalice el asistente, todos los cambios se aplicarán automáticamente a los usuarios y servicios seleccionados.
 
-Al usar etiquetas integradas para aplicaciones de Office en Windows, macOS, iOS y Android, los usuarios verán las nuevas etiquetas en un plazo de cuatro horas, y en una hora para Word, Excel y PowerPoint en la Web al actualizar el explorador. Sin embargo, permita hasta 24 horas para que los cambios se repliquen en todas las aplicaciones y servicios.
+Al usar etiquetas integradas para aplicaciones de Office en Windows, macOS, iOS y Android, los usuarios verán las nuevas etiquetas en un plazo de cuatro horas, y en una hora para Word, Excel y PowerPoint en la Web al actualizar el explorador. Sin embargo, permita hasta 24 horas para que los cambios se repliquen en todas las aplicaciones y servicios.
+
+> [!NOTE]
+> Otras aplicaciones y servicios que admiten etiquetas de confidencialidad pueden actualizarse con una frecuencia superior a las 24 horas con sus propios programas de actualización y desencadenadores de actualizaciones de directivas. Consulte la documentación para obtener más información. Por ejemplo, para el cliente de etiquetas unificado de Azure Information Protection, vea la fila **Actualización de la directiva** en la tabla [Comparaciones detalladas de los clientes de Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Configuración adicional de las directivas de etiquetas con PowerShell del Centro de seguridad y cumplimiento
 
@@ -219,7 +222,7 @@ En comparación, al eliminar una etiqueta:
 
 - Para Office en la Web: los usuarios no podrán ver el nombre de la etiqueta en la barra de estado ni en la columna de **Confidencialidad**. La información de etiqueta de los metadatos solo permanece si la etiqueta no aplicó el cifrado. Si la etiqueta aplicó el cifrado y ha habilitado las [etiquetas de confidencialidad para SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), se quitará la información de la etiqueta de los metadatos y se quitará el cifrado. 
 
-Cuando quita una etiqueta de confidencialidad de una directiva de etiqueta, o elimina una etiqueta de confidencialidad, estos cambios pueden tardar hasta 24 horas en replicarse en todos los usuarios y servicios.
+Cuando quita una etiqueta de confidencialidad de una directiva de etiqueta, o elimina una etiqueta de confidencialidad, estos cambios pueden tardar hasta 24 horas en replicarse en todos los usuarios y servicios.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

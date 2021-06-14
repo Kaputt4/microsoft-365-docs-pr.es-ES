@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender para Office 365 incluye archivos adjuntos seguros, vínculos seguros, herramientas avanzadas antiphishing, herramientas de creación de informes y funciones de inteligencia sobre amenazas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7570a925f4f24148874eada8a835ae473efaeb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650355"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904121"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "51650355"
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si utiliza Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal, y está buscando información sobre los vínculos seguros o los datos adjuntos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com para suscriptores de Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Microsoft Defender para Office 365 protege su organización contra las amenazas malintencionadas ocultas en mensajes de correo electrónico, vínculos (direcciones URL) y herramientas de colaboración. Microsoft Defender para Office 365 incluye:
+Microsoft Defender para Office 365 protege su organización frente a las amenazas dañinas que representan los mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. Microsoft Defender para Office 365 incluye:
 
 - **[Directivas de protección contra amenazas](#configure-microsoft-defender-for-office-365-policies)**: defina directivas de protección contra amenazas para establecer el nivel de protección adecuado para su organización.
 
@@ -147,7 +147,7 @@ El Plan 2 de Microsoft Defender para Office 365 incluye las mejores [herramienta
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Permisos necesarios para usar las características de Microsoft Defender para Office 365
 
-Para acceder a las características de Microsoft Defender para Office 365 en el Centro de seguridad y cumplimiento, debe tener asignado un rol adecuado. En la tabla siguiente se ofrecen algunos ejemplos:
+Para obtener acceso a las características de Microsoft Defender para Office 365 en el Centro de seguridad y cumplimiento, debe tener asignado un rol adecuado. En la tabla siguiente se incluyen algunos ejemplos:
 
 |Rol o grupo de roles|Recursos para obtener más información|
 |---|---|
@@ -174,7 +174,7 @@ Microsoft Defender para Office 365 está incluido en determinadas suscripciones,
 
 Se agregan nuevas características a Microsoft Defender para Office 365 continuamente. Para obtener más información, consulte los siguientes recursos:
 
-- El [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) ofrece una lista de las nuevas características en proceso de desarrollo e implementación.
+- El [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365) ofrece una lista de las nuevas características en proceso de desarrollo e implementación.
 
 - [La descripción del servicio de Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) describe las características y la disponibilidad de los planes de Microsoft Defender para Office 365.
 

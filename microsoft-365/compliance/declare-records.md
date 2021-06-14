@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730551"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903905"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
@@ -79,6 +79,18 @@ Cuando las etiquetas de retención que marcan elementos como un registro o como 
 Ejemplo de un documento marcado como registro con una etiqueta de retención:
 
 ![Panel de detalles para los documentos etiquetados como registro](../media/recordversioning7.png)
+
+## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>Buscar en el registro de auditoría elementos etiquetados que se declararon como registros
+
+Las acciones de etiquetado para declarar elementos como registros se registran en el registro de auditoría.
+
+Para elementos de SharePoint: 
+- En **Actividades de archivos y páginas**, seleccione **Etiqueta de retención cambiada para un archivo**. Este evento de auditoría es para etiquetas de retención que marcan elementos como registros, registros normativos o que son etiquetas de retención estándar.
+
+Para elementos de Exchange:
+- En **Actividades del buzón de Exchange**, seleccione **Mensaje etiquetado como registro**. Este evento de auditoría es para las etiquetas de retención que marcan los elementos como registros o registros reglamentarios.
+
+Para obtener más información sobre cómo buscar estos eventos, vea [Buscar en el registro de auditoría del Centro de Seguridad y Cumplimiento](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

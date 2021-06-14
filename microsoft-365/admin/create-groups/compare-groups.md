@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Los miembros de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, Stream y un Planner.
-ms.openlocfilehash: 3e4fa36520247179b653f799f7b2a061b9d9f4a9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635599"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903845"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
@@ -89,7 +89,7 @@ Los buzones compartidos incluyen un calendario que se puede usar para la colabor
 
 Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del buzón si el administrador le ha concedido permisos de usuario para hacerlo. Esto es especialmente útil para los buzones de ayuda y soporte técnico, ya que los usuarios pueden enviar mensajes de correo electrónico desde "Soporte técnico de Contoso" o "Escritorio de recepción del edificio A".
 
-Actualmente, no es posible migrar un buzón compartido a un grupo de Microsoft 365. ¿Le gustaría que fuese posible? Infórmenos. **[Vote aquí](https://go.microsoft.com/fwlink/?linkid=871518)**.
+No es posible migrar un buzón compartido a un grupo de Microsoft 365. 
 
 ## <a name="related-content"></a>Contenido relacionado
 

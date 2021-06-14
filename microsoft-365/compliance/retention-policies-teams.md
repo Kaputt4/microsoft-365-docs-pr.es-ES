@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 607fbdd02cfaccfee79df67c4946c178ff3eb383
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861580"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908274"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -44,9 +44,6 @@ Para otras cargas de trabajo, vea:
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
 Los mensajes de chat y de canal de Teams se pueden eliminar mediante directivas de retención para Teams y, además del texto de los mensajes, se pueden conservar los elementos siguientes por motivos de cumplimiento: imágenes incrustadas, tablas, vínculos de hipertexto, vínculos a otros mensajes y archivos de Teams y [contenido de tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat incluyen todos los nombres de los usuarios en el chat y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporcionó). 
-
-> [!NOTE]
-> La inclusión del contenido de la tarjeta en una política de retención para Teams es una adición bastante reciente. Para obtener más información, consulte las [funcionalidades de cumplimiento de Microsoft 365 para contenido de tarjetas adaptables en las aplicaciones de Teams que están disponibles ahora](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Actualmente, los mensajes de Teams en canales privados no son compatibles con las políticas de retención. Los fragmentos de código, las notas de voz grabadas del cliente móvil de Teams, las miniaturas, las imágenes de anuncios y las reacciones de otros en forma de emoticonos no se conservan cuando usa políticas de retención para Teams.
 
@@ -71,7 +68,7 @@ Teams usa un servicio de chat con tecnología de Azure como almacenamiento princ
 Aunque los datos de los mensajes de canales y chats de Teams se almacenan en los buzones de correo, debe configurar una directiva de retención para los **mensajes de canal de Teams** y las ubicaciones de los **chats de Teams**. Los mensajes de canal y los chats de Teams no se incluyen en las políticas de retención configuradas para buzones de correo de usuarios o grupos de Exchange.
 
 > [!NOTE]
-> Si un usuario está incluido en una directiva de retención activa que retiene los mensajes de Teams y elimina el buzón de un usuario incluido en esta directiva, para retener los datos de Teams, el buzón se convierte en un [buzón inactivo](inactive-mailboxes-in-office-365.md). Si no necesita retener los datos de Teams para el usuario, excluye la cuenta del usuario de la directiva de retención antes de eliminar su buzón.
+> Si un usuario está incluido en una directiva de retención activa que retiene los mensajes de Teams y usted elimina el buzón de un usuario incluido en esta directiva, para retener los datos de Teams, el buzón se convierte en un [buzón inactivo](inactive-mailboxes-in-office-365.md). Si no necesita retener los datos de Teams para el usuario, excluye la cuenta del usuario de la directiva de retención antes de eliminar su buzón.
 
 Una vez que se configura una directiva de retención para los mensajes del chat y de los canales, un trabajo de temporizador del servicio de Exchange evalúa de manera periódica los elementos de la carpeta oculta en la que se almacenan estos mensajes de Teams. El trabajo de temporizador tarda entre 1 y 7 días en ejecutarse. Cuando el período de retención de estos elementos caduca, se trasladan a la carpeta SubstrateHolds, otra carpeta oculta ubicada en cada buzón de usuario o grupo para almacenar los elementos "eliminados temporalmente" antes de que se eliminen de forma permanente. 
 

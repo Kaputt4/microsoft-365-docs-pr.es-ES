@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5c54b9c9b9046a1c410418a9ae5a922bdad9c442
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730251"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878081"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -196,8 +196,7 @@ Cuando configura una directiva de etiqueta, puede:
 
     ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
-    > [!NOTE]
-    > El etiquetado obligatoria para documentos y mensajes de correo electrónico no está disponible para todas las aplicaciones o para todas las plataformas. Para más información, consulte [Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos.](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)
+    Para obtener más información sobre las etiquetas obligatorias para documentos y correos electrónicos, consulte [Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
     Para los contenedores, se debe asignar una etiqueta al momento de crear el grupo o sitio.
     

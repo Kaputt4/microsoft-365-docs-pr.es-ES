@@ -19,11 +19,11 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Interprete los cargos, la facturación y la información de pago en su Microsoft 365 factura o factura empresarial, y cómo cambiar un número de pedido de compra.
+description: Interpretar los cargos, la facturación y la información de pago en su factura de Microsoft 365 para empresas, y cómo cambiar un número de pedido de compra.
 ms.date: 05/04/2021
 ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
 ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/10/2021
 ms.locfileid: "52888378"
@@ -68,7 +68,7 @@ La tabla siguiente describe los campos que es posible que vea en su factura. Alg
   
 |**Nombre**|**Descripción**|
 |:-----|:-----|
-|Precio anual|Las suscripciones se facturan mensual o anualmente. Si seleccionó facturación anual al comprar la suscripción, el precio de la licencia anual se reflejará en la factura. Si desea cambiar la frecuencia de facturación, tendrá que cancelar la suscripción y volver a comprarla con la nueva frecuencia de facturación.|
+|Precio anual|Las suscripciones se facturan mensual o anualmente. Si escogió facturación anual durante la compra de la suscripción, el precio de la licencia anual se refleja en la factura. Si desea cambiar la frecuencia de facturación, tendrá que cancelar la suscripción y volver a comprarla con la nueva frecuencia de facturación.|
 |Período de facturación|Período de facturación es el período de tiempo desde la última fecha de la factura. Período de servicio es el período de tiempo durante el cual se le cobrará por usar el servicio.|
 |Facturar a|Esta es la dirección de su departamento de facturación y suele ser la misma que la dirección del solicitante. Para actualizar la dirección de facturación, consulte [Cambiar las direcciones de facturación](change-your-billing-addresses.md).|
 |Cargos|La página 1 de la factura resume todos los cargos para el período de facturación de esta. La página 2 muestra los cargos detallados para cada suscripción.|
@@ -78,11 +78,11 @@ La tabla siguiente describe los campos que es posible que vea en su factura. Alg
 |Días|Cada transacción de facturación está asociada a un período de servicio. La columna Días indica el número de días en ese período de servicio.|
 |Descuentos|La página 1 de la factura resume todos los descuentos para el período de facturación de esta. La página 2 muestra los descuentos detallados para cada suscripción.|
 |Fecha de vencimiento|La fecha en la que vence el pago de la factura. Si la suscripción se paga con tarjeta de crédito o cuenta bancaria, el cobro se efectuará en la tarjeta de crédito o en la cuenta bancaria el día siguiente a la fecha de facturación.<br/> **NOTA** El pago a través de una cuenta bancaria no está disponible en algunos países o regiones.           |
-|Transferencia electrónica de fondos|Si ha seleccionado "factura" como el método de pago de la suscripción, la página 1 contiene la información de la cuenta bancaria de Microsoft para pagos electrónicos (transferencia, ACH, SEPA, etc.). Por lo general, su banco tendrá un campo de referencia que completa cuando envía un pago. Haga referencia al número de factura que se muestra en este campo.|
+|Transferencia electrónica de fondos|Si ha elegido "factura" como el método de pago de la suscripción, la página 1 contiene la información de la cuenta bancaria de Microsoft para pagos electrónicos (transferencia, ACH, SEPA, etc.). Por lo general, su banco tendrá un campo de referencia que completa cuando envía un pago. Haga referencia al número de factura que se muestra en este campo.|
 |Total general|Esta fila incluye los importes totales de todas las columnas de cargos, descuentos, créditos, subtotal, impuestos y total para todas las suscripciones que aparecen en la factura.|
 |Fecha de la factura|La fecha en la que se creó la factura. La fecha de facturación es el día posterior al final de su período de facturación. Por ejemplo, si el período de facturación comprende del 15 de enero al 14 de febrero, la fecha de facturación es el 15 de febrero.|
 |Número de factura|El único número asignado a la factura. Haga referencia al número de factura en su pago.|
-|Precio mensual|Las suscripciones se facturan mensual o anualmente. Si seleccionó facturación mensual durante la compra de la suscripción, el precio de la licencia mensual se reflejará en la factura. Si desea cambiar la frecuencia de facturación, tendrá que cancelar la suscripción y volver a comprarla con la nueva frecuencia de facturación.|
+|Precio mensual|Las suscripciones se facturan mensual o anualmente. Si escogió la facturación mensual durante la compra de la suscripción, el precio de licencia mensual se refleja en la factura. Si desea cambiar la frecuencia de facturación, tendrá que cancelar la suscripción y volver a comprarla con la nueva frecuencia de facturación.|
 |Número de pedido|Cada vez que compra una nueva suscripción, se crea un pedido. Cada mes, recibirá una factura para cada pedido.|
 |Instrucciones de pago|Si paga con tarjeta de crédito, verá "No pague - se ha cargado a la tarjeta de crédito del archivo". Si paga mediante factura, verá instrucciones para pagar mediante Transferencia electrónica de fondos (EFT) y cheque (si procede).|
 |Términos de pago|El número de días desde la fecha de facturación cuando el pago vence. El estándar es de 30 días.|
@@ -122,15 +122,15 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 1. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.
 
-1. En la página detalles de la suscripción, en la sección Configuración de **suscripción y pago,** seleccione **Editar factura**.
+1. En la página de detalles de la suscripción, en **Configuración de pago y suscripción**, seleccione **Editar factura**.
 
-1. En la parte inferior del **panel Editar detalles para** pagar por voz, escriba el número de pedido y, a continuación, seleccione **Guardar**.
+1. En la parte inferior del panel **Editar detalles para pagar con un mensaje de voz**, escriba su número de pedido de compra y, después, seleccione **Guardar**.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Obtenga información sobre cómo buscar y ver su factura](view-your-bill-or-invoice.md) o factura (artículo)\
-[Información de facturación Microsoft 365 para empresas en México](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (artículo) \
+[Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md) (artículo)\
+[Información de facturación de Microsoft 365 para empresas en México](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (artículo)\
 [Cambiar las direcciones de facturación](change-your-billing-addresses.md) (artículo)\
-[Cambiar la dirección de su organización, el correo electrónico de contacto técnico y otra información](../../admin/manage/change-address-contact-and-more.md) (artículo)\
-[Pagar por su suscripción Microsoft 365 para empresas](pay-for-your-subscription.md) (artículo)\
+[Cambiar la dirección de la organización y otra información del perfil](../../admin/manage/change-address-contact-and-more.md) (artículo)\
+[Pagar la suscripción a Microsoft 365 para empresas](pay-for-your-subscription.md) (artículo)\
 [Opciones de pago de Minecraft: Education Edition](/education/windows/school-get-minecraft) (artículo)
