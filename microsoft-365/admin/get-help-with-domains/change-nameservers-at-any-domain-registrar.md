@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que los servicios como correo electrónico y Skype Empresarial Online usen su propio nombre de dominio.
-ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9c26f9afcf17857c4b3b8f05b89253272cf20e56
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683132"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924508"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores de nombres para configurar Microsoft 365 con cualquier registrador de dominio
 
@@ -66,18 +66,17 @@ En función de si se está creando un registro TXT o un registro MX, siga uno de
   
 **Si crea un registro TXT, utilice estos valores:**
     
-|||||
+
+|Tipo de registro<br/> |Alias o nombre de host <br/> |Valor <br/> |TTL<br/> |
 |:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Alias** o **Nombre de host** <br/> |**Valor** <br/> |**TTL** <br/> |
 |TXT  <br/> |Realice una de las siguientes acciones: escriba **@**, deje el campo vacío o escriba el nombre de dominio.    <br/> > [!NOTE]> Los distintos hosts DNS tienen requisitos distintos para este campo.           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc.  <br/> |
+|MS=ms *XXXXXXXX*  <br/>**Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc.  <br/> |
    
 **Si crea un registro MX, utilice estos valores:**
     
-||||||
+|Tipo de registro|Alias o nombre de host|Valor|Prioridad|TTL|
 |:-----|:-----|:-----|:-----|:-----|
-|**Tipo de registro**|**Alias** o **Nombre de host**|**Valor**|**Prioridad**|**TTL**|
-|MX|Escriba **@** o el nombre del dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |Para **Prioridad**, para evitar conflictos con el registro MX usado para el flujo de correo, use una prioridad más baja que la prioridad de cualquier registro MX existente. Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc. |
+|MX|Escriba **@** o el nombre del dominio. |MS=ms *XXXXXXXX* **Nota:** este es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |Para **Prioridad**, para evitar conflictos con el registro MX usado para el flujo de correo, use una prioridad más baja que la prioridad de cualquier registro MX existente. Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc. |
    
 ### <a name="save-the-record"></a>Guardar el registro
 
@@ -110,13 +109,12 @@ Para cambiar los servidores DNS en el sitio web del registrador de dominios uste
 1. Busque el área en el sitio web del registrador de dominios donde puede cambiar los servidores de nombres de su dominio o un área donde puede usar servidores de nombres personalizados.
     
 2. Cree registros de servidor de nombres o edite los registros de servidor de nombres existentes para que coincidan con los siguientes valores:
-    
-|||
-|:-----|:-----|
-|Primer servidor de nombres  <br/> |ns1.bdm.microsoftonline.com  <br/> |
-|Segundo servidor de nombres  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Tercer servidor de nombres  <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|Cuarto servidor de nombres  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
+    - Primer servidor de nombres: ns1.bdm.microsoftonline.com
+    - Segundo servidor de nombres: ns2.bdm.microsoftonline.com
+    - Tercer servidor de nombres: ns3.bdm.microsoftonline.com
+    - Cuarto servidor de nombres: ns4.bdm.microsoftonline.com
+      
    
    > [!TIP]
    > Es mejor agregar los cuatro registros, pero si el registrador solo admite dos, agregue ns1.bdm.microsoftonline.com **y** **ns2.bdm.microsoftonline.com**. 
@@ -133,12 +131,10 @@ Para cambiar los servidores DNS en el sitio web del registrador de dominios uste
 1. En el sitio web del registrador de dominios, busque el área donde poder modificar los servidores DNS del dominio.
     
 2. Cree dos registros de servidor DNS o modifique los existentes para que coincidan con los valores siguientes:
+
+   - Primer servidor de nombres: ns1.dns.partner.microsoftonline.cn
+   - Segundo servidor de nombres: ns2.dns.partner.microsoftonline.cn
     
-|||
-|:-----|:-----|
-|Primer servidor de nombres  <br/> |ns1.dns.partner.microsoftonline.cn  <br/> |
-|Segundo servidor de nombres  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
-   
    > [!TIP]
    > Debe usar al menos dos registros de servidor de nombres. Si hay otros servidores de nombres enumerados, puede eliminarlos o cambiarlos a **ns3.dns.partner.microsoftonline.cn** y **ns4.dns.partner.microsoftonline.cn**. 
   

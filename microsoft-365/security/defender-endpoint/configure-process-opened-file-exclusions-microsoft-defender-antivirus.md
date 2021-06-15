@@ -4,27 +4,25 @@ description: Puede excluir archivos de los exámenes si se han abierto mediante 
 keywords: Antivirus de Microsoft Defender, proceso, exclusión, archivos, exámenes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 2fdc646cf616ff6a6fa36a83be3d2b1dd0432fbe
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 0470f4f03ba5fd6fc768a1e652f51b8c44207107
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274621"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925560"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurar exclusiones para archivos abiertos por procesos
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
@@ -37,7 +35,7 @@ En este artículo se describe cómo configurar listas de exclusión.
 
 ## <a name="examples-of-exclusions"></a>Ejemplos de exclusiones
 
-|Exclusión | Ejemplo: |
+|Exclusión | Ejemplo |
 |---|---|
 |Cualquier archivo del equipo que abra cualquier proceso con un nombre de archivo específico | Especificar `test.exe` excluiría los archivos abiertos por: <br/>`c:\sample\test.exe`<br/>`d:\internal\files\test.exe` |  
 |Cualquier archivo del equipo que abra cualquier proceso en una carpeta específica | Especificar `c:\test\sample\*` excluiría los archivos abiertos por:<br/>`c:\test\sample\test.exe`<br/>`c:\test\sample\test2.exe`<br/>`c:\test\sample\utility.exe` | 

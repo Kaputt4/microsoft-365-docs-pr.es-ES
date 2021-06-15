@@ -11,18 +11,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
 ms.date: 05/17/2021
-ms.openlocfilehash: 2d212bedf9033b0824d32e7f42afea3944d9ca67
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: f6217cccf79b951c3103e1024ac74669d68645cd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782818"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925940"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -35,7 +35,7 @@ La protección contra alteraciones está disponible para dispositivos que ejecut
 - Windows 10
 - Windows Server 2019
 - Windows Servidor, versión 1803 o posterior
-- Windows Server 2016
+- Windows Server 2016
 
 ## <a name="overview"></a>Información general
 
@@ -299,7 +299,7 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 [Ver información sobre intentos de manipulación](#view-information-about-tampering-attempts).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Ayudar a proteger Windows equipos con Endpoint Protection para Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 

@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Obtenga información sobre los números de registro y las notificaciones de revisión cuando compre productos o servicios de Microsoft.
 ms.date: 03/17/2021
-ms.openlocfilehash: 93cba6c1eebf0b41a94d6a6e3aac83693218f407
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: ad1d4fe68ad42a33a2cdfa8b78c1bb5b168e9059
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795975"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925228"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Acerca de los números de registro y las notificaciones de revisión
 
@@ -69,31 +69,31 @@ La siguiente captura de pantalla muestra la notificación que se muestra en la p
 
 La tabla siguiente contiene ejemplos de los números de registro recopilados para cada país.  En los casos en los que se enumeran varios IDs, solo se requiere uno.
 
-| País o región | Detalles |  |  |  |  |
-|:--|:--|:--|:--|:--|:--|
-| **Armenia** | INN: número de identificación fiscal<br>Número de IVA: también conocido como número de registro de IVA. Este es el número único que identifica una persona imponible (empresa) o una entidad jurídica no imponible que está registrada para el IVA.<br>Número de servicio público |  |  | |  |
-| **Azerbaiyán**  | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) número de identificación fiscal<br>INN: número de identificación fiscal |  |  |  |  |
-| **Belarús**  | UNP: se trata de un número de nueve dígitos (numérico para organizaciones, alfanumérico para individuos) que contiene un identificador de región, un número de serie por región y un dígito de comprobación. |  |  |  |  |
-|**Brasil** | [CNPJ](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Brazil-TIN.pdf) – (Cadastro Nacional da Pessoa Jurídica, o Registro Nacional de Entidades Jurídicas). Este es un número de identificación emitido a empresas brasileras por el Departamento de Ingresos Federales de Brasil  |  |  |  |  |
-| **China** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/China-TIN.pdf) número de identificación fiscal |  |  |  |  |
-| **Hungría**  | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Hungary-TIN.pdf) número de identificación fiscal |  |  |  |  |
-| **India** | Id. de impuestos<br>[PAN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) (presencia en toda la nación) PAN India Implicación significa que hay una organización que está operando en varias ubicaciones en india. |  |  |  |  |
-| **Irak** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |  |  |  |  |
-| **Kazajistán**  | BIN: número de identificación bancaria<br>IIN: número de identificación del emisor |  |  |  |  |
-| **Kirguistán**  | INN: número de identificación fiscal |  |  |  |  |
-| **Moldova**  | IDNO: número de identificación de estado único asignado a la entidad jurídica (también conocido como. Código fiscal).<br>IDNP: código personal de nacimiento ("Numarul de Identificare") |  |  |  |  |
-| **Myanmar** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |  |  |  |  |
-| **Polonia**  | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) número de identificación fiscal<br>[PESEL:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) el número de identificación nacional usado en Polonia (Powszechny Polaco Elektroniczny System Ewidencji Ludności, Sistema electrónico universal para el registro de la población) |  |  |  |  |
-| **Rusia**  | [INN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) número de identificación fiscal (ruso "Individualiy Nomer Nalogoplatelshika") |  |  |  |  |
-| **Arabia Saudí** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) número de identificación fiscal |  |  |  |  |
-| **Sudáfrica** | TRN: número de referencia fiscal |  |  |  |  |
-| **Sudán del Sur** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |  |  |  |  |
-| **Tayikistán**  | INN: número de identificación fiscal<br>EIN: número de identificación del empleador<br>KPP: es un código que refleja el motivo del registro de la organización. |  |  |  |  |
-| **Tailandia** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |  |  |  |  |
-| **Turquía** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Turkey-TIN.pdf) número de identificación fiscal<br>NIN |  |  |  |  |
-| **Ucrania**  | EGRPOU<br>EDRPOU: id. local |  |  |  |  |
-| **Emiratos Árabes Unidos** | Id. de impuestos<br>[Número de IVA:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/UAE-TIN.pdf) también conocido como número de registro de IVA. Este es el número único que identifica una persona imponible (empresa) o una entidad jurídica no imponible que está registrada para el IVA. |  |  |  |  |
-| **Estados Unidos** | [EIN:](https://irs.ein-forms-gov.com/?keyword=employer%20identification%20number&source=Google&network=o&device=c&devicemodel=&mobile=&adposition%5d&targetid=kwd-81501461534755:loc-190&msclkid=458d3159f6051392f5286e8e75ed79ce) número de identificación del empleador |  |  |  |  |
-| **Uzbekistán**  | INN: número de identificación fiscal |  |  |  |  |
-| **Vietnam** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |  |  |  |  |
-| **Venezuela** | RIF: es un número de impuestos ("Registro de identificación fiscal") |  |  |  |  |
+| País o región | Detalles |
+|:--|:--|
+| **Armenia** | INN: número de identificación fiscal<br>Número de IVA: también conocido como número de registro de IVA. Este es el número único que identifica una persona imponible (empresa) o una entidad jurídica no imponible que está registrada para el IVA.<br>Número de servicio público |
+| **Azerbaiyán**  | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) número de identificación fiscal<br>INN: número de identificación fiscal |
+| **Belarús**  | UNP: se trata de un número de nueve dígitos (numérico para organizaciones, alfanumérico para individuos) que contiene un identificador de región, un número de serie por región y un dígito de comprobación. |
+|**Brasil** | [CNPJ](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Brazil-TIN.pdf) – (Cadastro Nacional da Pessoa Jurídica, o Registro Nacional de Entidades Jurídicas). Este es un número de identificación emitido a empresas brasileras por el Departamento de Ingresos Federales de Brasil  |
+| **China** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/China-TIN.pdf) número de identificación fiscal |
+| **Hungría**  | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Hungary-TIN.pdf) número de identificación fiscal |
+| **India** | Id. de impuestos<br>[PAN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) (presencia en toda la nación) PAN India Implicación significa que hay una organización que está operando en varias ubicaciones en india. |
+| **Irak** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |
+| **Kazajistán**  | BIN: número de identificación bancaria<br>IIN: número de identificación del emisor |
+| **Kirguistán**  | INN: número de identificación fiscal |
+| **Moldova**  | IDNO: número de identificación de estado único asignado a la entidad jurídica (también conocido como. Código fiscal).<br>IDNP: código personal de nacimiento ("Numarul de Identificare") |
+| **Myanmar** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |
+| **Polonia**  | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) número de identificación fiscal<br>[PESEL:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) el número de identificación nacional usado en Polonia (Powszechny Polaco Elektroniczny System Ewidencji Ludności, Sistema electrónico universal para el registro de la población) |
+| **Rusia**  | [INN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) número de identificación fiscal (ruso "Individualiy Nomer Nalogoplatelshika") |
+| **Arabia Saudí** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) número de identificación fiscal |
+| **Sudáfrica** | TRN: número de referencia fiscal |
+| **Sudán del Sur** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |
+| **Tayikistán**  | INN: número de identificación fiscal<br>EIN: número de identificación del empleador<br>KPP: es un código que refleja el motivo del registro de la organización. |
+| **Tailandia** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |
+| **Turquía** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Turkey-TIN.pdf) número de identificación fiscal<br>NIN |
+| **Ucrania**  | EGRPOU<br>EDRPOU: id. local |
+| **Emiratos Árabes Unidos** | Id. de impuestos<br>[Número de IVA:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/UAE-TIN.pdf) también conocido como número de registro de IVA. Este es el número único que identifica una persona imponible (empresa) o una entidad jurídica no imponible que está registrada para el IVA. |
+| **Estados Unidos** | [EIN:](https://irs.ein-forms-gov.com/?keyword=employer%20identification%20number&source=Google&network=o&device=c&devicemodel=&mobile=&adposition%5d&targetid=kwd-81501461534755:loc-190&msclkid=458d3159f6051392f5286e8e75ed79ce) número de identificación del empleador |
+| **Uzbekistán**  | INN: número de identificación fiscal |
+| **Vietnam** | [TIN:](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) número de identificación fiscal |
+| **Venezuela** | RIF: es un número de impuestos ("Registro de identificación fiscal") |

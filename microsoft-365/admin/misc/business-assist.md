@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre el programa De asistencia empresarial y cómo puede ayudar a su organización con ayuda y uso mejorados para Microsoft 365 para empresas.
-ms.openlocfilehash: ee0884ec1c95795a6a7847dfeaffdfcb2fac4beb
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52768986"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924592"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Ayuda empresarial para Microsoft 365
 
@@ -33,7 +33,7 @@ Obtenga el máximo partido de su suscripción con el asesoramiento de expertos d
 
 |&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|**Get up and running quickly** <br> Trabaje con un especialista de pequeñas empresas para configurar Microsoft 365 características que protejan su negocio y le den un aspecto profesional. |**Capacitar a todos los usuarios de su empresa** <br> Todos los empleados, no solo la persona a cargo de TI, pueden ir directamente a los expertos de Microsoft para obtener un soporte continuo más rápido. |**Desbloquear potencial de negocio** <br> Obtenga información sobre las características infrautilizadas y obtenga consejos sobre formas de obtener más valor de la suscripción. |
+|Trabaje con un especialista de pequeñas empresas para configurar Microsoft 365 características que protejan su negocio y le den un aspecto profesional. |Todos los empleados, no solo la persona a cargo de TI, pueden ir directamente a los expertos de Microsoft para obtener un soporte continuo más rápido. |Obtenga información sobre las características infrautilizadas y obtenga consejos sobre formas de obtener más valor de la suscripción. |
 |**Acelerar la migración en la nube** <br> Obtenga ayuda personalizada para mover todos los archivos actuales (correo electrónico, almacenamiento, documentos y comunicación) a Microsoft 365. |**Acceder a especialistas con facilidad** <br> Nuestro equipo recogerá la conversación donde la dejó por última vez. Sin entradas para realizar un seguimiento, sin robots, sin tiempos de espera largos. |**Manténgase actualizado** <br> Check-ups regulares que le ayudan a mantenerse al día a medida que se agregan nuevas funcionalidades de servicio y las necesidades de su empresa evolucionan. |
 | | | |
 

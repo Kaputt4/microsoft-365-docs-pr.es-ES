@@ -1,6 +1,6 @@
 ---
 title: Preparar Microsoft Defender para la implementación de puntos de conexión
-description: Preparar la aprobación de las partes interesadas, las escalas de tiempo, las consideraciones del entorno y el orden de adopción al implementar Microsoft Defender para endpoint
+description: Preparar la aprobación de las partes interesadas, las escalas de tiempo, las consideraciones del entorno y el orden de adopción para implementar Microsoft Defender para endpoint
 keywords: implementar, preparar, partes interesadas, escala de tiempo, entorno, punto de conexión, servidor, administración, adopción
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 13748662f6e53db86352b903828978729f78e6a8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842439"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925656"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Preparar Microsoft Defender para la implementación de puntos de conexión
 
@@ -105,7 +105,7 @@ Defender for Endpoint admite dos formas de administrar permisos:
 
 Microsoft recomienda aprovechar RBAC para asegurarse de que solo los usuarios que tienen una justificación empresarial puedan acceder a Defender for Endpoint.
 
-Puede encontrar detalles sobre las directrices de permisos [aquí](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
+Puede encontrar detalles sobre las directrices de permisos aquí: [Crear roles y asignar el](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)rol a un Azure Active Directory grupo .
 
 La siguiente tabla de ejemplo sirve para identificar la estructura del Centro de operaciones de Cyber Defense en su entorno que le ayudará a determinar la estructura RBAC necesaria para su entorno.
 
@@ -135,5 +135,6 @@ Elija el componente de Defender para endpoint que se va a usar y quite los que n
 
 ## <a name="next-step"></a>Paso siguiente
 
-![Fase 2: Configuración](images/setup.png) <br>[Fase 2: Configuración |](production-deployment.md) Configurar Microsoft Defender para la implementación de puntos de conexión
-
+|||
+|:-------|:-----|
+|![Fase 2: Configuración](images/setup.png) <br>[Fase 2: Configuración](production-deployment.md) | Configurar Microsoft Defender para la implementación de puntos de conexión |

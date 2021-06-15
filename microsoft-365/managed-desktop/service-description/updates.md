@@ -7,14 +7,16 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5961ac4eb16928754849f5f32ecd06d4d2e4650d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d93bf492f7cfea5a1ff863205085d853c4bbadb
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917721"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925436"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Cómo se controlan las actualizaciones en Escritorio administrado de Microsoft
 
@@ -38,7 +40,7 @@ Escritorio administrado de Microsoft cuatro grupos de Azure AD para administrar 
 - **Broad:** último grupo que tiene actualizaciones de características y calidad disponibles. Este grupo contiene la mayoría de los usuarios del espacio empresarial y, por lo tanto, favorece la estabilidad sobre la velocidad en la implementación. Las pruebas de aplicaciones deben realizarse aquí, ya que el entorno es más estable. 
 
 ### <a name="moving-devices-between-update-groups"></a>Mover dispositivos entre grupos de actualización
-Es posible que quieras que algunos dispositivos reciban actualizaciones en último lugar y otros que quieras ir primero. Para mover estos dispositivos al grupo de actualización adecuado, [envíe una](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) solicitud de soporte técnico de administrador y moveremos los dispositivos por usted. 
+Es posible que quieras que algunos dispositivos reciban actualizaciones en último lugar y otros que quieras ir primero. Para mover estos dispositivos al grupo de actualización adecuado, [envíe una](../working-with-managed-desktop/admin-support.md) solicitud de soporte técnico de administrador y moveremos los dispositivos por usted. 
 
 > [!NOTE]
 > Si necesita mover un usuario a un grupo de actualización diferente, envíe una solicitud de soporte técnico. No mueva dispositivos entre grupos de actualización usted mismo. Hay consecuencias graves si un dispositivo se mueve incorrectamente. El dispositivo podría actualizarse inesperadamente y las directivas podrían estar en conflicto, cambiando la configuración del dispositivo.

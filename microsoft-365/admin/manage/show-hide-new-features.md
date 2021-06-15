@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Decida qué características Office mostrar u ocultar cuando un usuario elija Ayuda > Novedades de su Aplicación de Office en Windows mediante la característica "Novedades de Office" en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: b9d20e3df4a2de540316dce0e6a6905c07e65176
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915032"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924840"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Administrar qué Office aparecen en Novedades
 
@@ -60,9 +60,8 @@ Puede filtrar las características que aparecen en la página Administrar **qué
 
 Las nuevas características aparecen en la página según la siguiente programación:
 
-||||
+|Canal|Fecha|Tomar medidas|
 |:-----|:-----|:-----|
-|**Canal** <br/> |**Fecha** <br/> |**Tomar medidas** <br/> |
 |**Current** <br/> |15 del mes  <br/> |1 - 3 semanas antes de la versión mensual <br/> |
 |**Empresarial mensual** <br/> |Primera del mes  <br/> |Dos semanas antes de la versión principal que trae nuevas características |
 |**Versión semianual Enterprise (versión preliminar)** <br/> |1 de septiembre y 1 de marzo <br/> | 2 semanas antes de la versión principal que trae nuevas características|

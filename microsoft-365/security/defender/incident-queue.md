@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636271"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925892"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -83,6 +83,23 @@ En esta tabla se enumeran los nombres de filtro disponibles.
 | Estado | Puede limitar la lista de incidentes que se muestra en función de su estado para ver cuáles están activos o resueltos. |
 |||
 
+## <a name="save-defined-filters-as-urls"></a>Guardar filtros definidos como direcciones URL
+
+Una vez que haya configurado un filtro útil en la cola de incidentes, puede marcar la dirección URL de la pestaña del explorador o guardarla como un vínculo en una página web, un documento de Word o un lugar de su elección. Esto le dará acceso con un solo clic a las vistas clave de la cola de incidentes, como:
+
+- Nuevos incidentes
+- Incidentes de alta gravedad
+- Incidentes sin firma
+- Incidentes de gravedad alta y sin firma
+- Incidentes asignados a mí
+- Incidentes asignados a mí y a Microsoft Defender para endpoint
+- Incidentes con una etiqueta o etiquetas específicas
+- Incidentes con una categoría de amenaza específica
+- Incidentes con una amenaza asociada específica
+- Incidentes con un actor específico
+
+Una vez que haya compilado y almacenado la lista de vistas de filtro útiles como direcciones [](manage-incidents.md) URL, puede usarla rápidamente para procesar y priorizar los incidentes de la cola y administrarlos para su análisis posterior.
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 Después de determinar qué incidente requiere la prioridad más alta, selecciónelo y:
@@ -90,7 +107,7 @@ Después de determinar qué incidente requiere la prioridad más alta, selecció
 - [Administrar](manage-incidents.md) las propiedades del incidente para etiquetas, asignación, resolución inmediata de incidentes falsos positivos y comentarios.
 - Comience las [investigaciones](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)

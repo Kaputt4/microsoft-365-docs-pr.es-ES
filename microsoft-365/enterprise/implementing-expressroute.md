@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Obtenga información sobre cómo implementar ExpressRoute para Office 365, que proporciona una ruta de enrutamiento alternativa a muchos servicios Office 365 Internet.
-ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ad6102193a12325de0e4bb2ff16087738688587
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051371"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924944"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
@@ -103,10 +103,10 @@ Para cada servicio que requiera una conexión entrante, necesitará información
   
 Las conexiones entrantes deben revisarse independientemente de si se conectan a través de Internet o ExpressRoute para garantizar que no se haya introducido el enrutamiento asimétrico. En algunos casos, los puntos de conexión locales a los que los servicios Office 365 inician conexiones entrantes también pueden tener acceso otros microsoft y no servicios Microsoft. Es fundamental que habilitar el enrutamiento de ExpressRoute a estos servicios Office 365 no rompa otros escenarios. En muchos casos, es posible que los clientes necesiten implementar cambios específicos en su red interna, como NAT basada en origen, para garantizar que los flujos entrantes de Microsoft permanezcan simétricos después de habilitar ExpressRoute.
   
-Este es un ejemplo del nivel de detalle requerido. En este caso, Exchange híbrido se enrutaría al sistema local a través de ExpressRoute.
+Este es un ejemplo del nivel de detalle requerido. En este caso, Exchange híbrido se enrutaría al sistema local a través de ExpressRoute. 
 
-|**Connection (propiedad)**|**Valor**|
-|:-----|:-----|
+|Connection (propiedad)   |Valor  |
+|----------|-----------|
 |**Dirección del tráfico de red** <br/> |Entrada  <br/> |
 |**Servicio** <br/> |Exchange Hybrid  <br/> |
 |**Extremo Office 365 público (origen)** <br/> |Exchange Online (direcciones IP)  <br/> |
@@ -115,15 +115,15 @@ Este es un ejemplo del nivel de detalle requerido. En este caso, Exchange híbri
 |**¿Este extremo local se usará para otros usuarios (que no Office 365) servicios Microsoft** <br/> |No  <br/> |
 |**¿Los usuarios o sistemas de Internet usarán este extremo local?** <br/> |Sí  <br/> |
 |**Sistemas internos publicados a través de puntos de conexión públicos** <br/> |Exchange Server de acceso de cliente (local) 192.168.101, 192.168.102, 192.168.103  <br/> |
-|**Anuncio DE IP del extremo público** <br/> |**Para Internet**: 5.5.0.0/16  <br/> **To ExpressRoute**: 5.5.5.0/24  <br/> |
-|**Controles de seguridad/perímetro** <br/> |**Ruta de acceso a Internet:** DeviceID_002  <br/> **Ruta de acceso de ExpressRoute:** DeviceID_003  <br/> |
-|**Alta disponibilidad** <br/> |Activo/Activo en 2 redundancia geográfica  <br/> Circuitos de ExpressRoute: Chicago y Dallas  <br/> |
-|**Control de simetría de ruta** <br/> |**Método**: NAT de origen  <br/> **Ruta de acceso a Internet:** conexiones entrantes NAT de origen a 192.168.5.5  <br/> |Ruta de acceso **de ExpressRoute:** conexiones NAT de origen a 192.168.1.0 (Chicago) y 192.168.2.0 (Dallas)  <br/> |
+|**Anuncio DE IP del extremo público** <br/> |**To Internet**: 5.5.0.0/16 **To ExpressRoute**: 5.5.5.0/24  <br/> |
+|**Controles de seguridad/perímetro** <br/> |**Ruta de** acceso a Internet: DeviceID_002  **de ExpressRoute**: DeviceID_003  <br/> |
+|**Alta disponibilidad** <br/> |Activo/Activo en 2 circuitos de ExpressRoute con redundancia geográfica: Chicago y Dallas  <br/> |
+|**Control de simetría de ruta** <br/> |**Método**: Ruta de acceso NAT de **origen a Internet:** Conexiones entrantes NAT de origen a 192.168.5.5 Ruta de **acceso de ExpressRoute:** Conexiones NAT de origen a 192.168.1.0 (Chicago) y 192.168.2.0 (Dallas)  <br/> |
 
 Este es un ejemplo de un servicio que solo es saliente:
 
 |**Connection (propiedad)**|**Valor**|
-|:-----|:-----|
+|----------|-----------|
 |**Dirección del tráfico de red** <br/> |Salida  <br/> |
 |**Servicio** <br/> |SharePoint Online  <br/> |
 |**Extremo local (origen)** <br/> |Estación de trabajo de usuario  <br/> |
@@ -189,9 +189,10 @@ Esto significa que la consideración más importante que debe tener en cuenta al
   
 A menudo, hay varias ubicaciones de reunión que podrían seleccionarse dentro de una región con una proximidad relativa a los usuarios. Rellene la tabla siguiente para guiar sus decisiones.
 
-|**Ubicaciones de reunión de Planned ExpressRoute en California y Nueva York**||
-|:-----|:-----|
+**Ubicaciones de reunión de Planned ExpressRoute en California y Nueva York**
+
 |Ubicación  <br/> |Número de personas  <br/> |Latencia esperada en la red de Microsoft a través de la salida de Internet  <br/> |Latencia esperada en la red de Microsoft a través de ExpressRoute  <br/> |
+|----------|-----------|----------|-----------|
 |Los Ángeles  <br/> |10 000  <br/> |~15 ms  <br/> |~10ms (a través de Silicon Valley)  <br/> |
 |Washington DC  <br/> |15 000  <br/> |~20ms  <br/> |~10ms (a través de Nueva York)  <br/> |
 |Dallas  <br/> |5.000  <br/> |~15 ms  <br/> |~40ms (a través de Nueva York)  <br/> |
@@ -225,7 +226,7 @@ El plan de implementación debe incluir tanto los detalles técnicos de la confi
 
 - Decida hasta dónde se anunciarán las rutas de ExpressRoute en la red y cuál es el mecanismo para que los clientes seleccionen la ruta de Acceso de Internet o ExpressRoute; por ejemplo, enrutamiento directo o proxy de aplicación.
 
-- Planear cambios en los registros DNS, incluidas las entradas [del marco](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) de directivas de remitente.
+- Planear cambios en los registros DNS, incluidas las entradas [del marco](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) de directivas de remitente.
 
 - Planeación de la estrategia NAT, incluido NAT de origen saliente y entrante.
 

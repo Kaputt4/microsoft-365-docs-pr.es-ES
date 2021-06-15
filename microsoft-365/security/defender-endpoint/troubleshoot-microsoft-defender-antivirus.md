@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,13 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: cd222760f3a5cc005c679bf28365237cc70e8950
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: cba7a9d6ed23ac1dc72ef6cbcecfdfc7a0f4c60b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275353"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926288"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -361,7 +361,7 @@ Para obtener más información, vea los artículos siguientes:
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -433,7 +433,7 @@ Antivirus de Microsoft Defender ha tomado medidas para proteger esta máquina de
 <dt> Gravedad: Gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -485,7 +485,7 @@ Antivirus de Microsoft Defender ha encontrado un error al tomar medidas en malwa
 <dt> Gravedad: Gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -539,7 +539,7 @@ Antivirus de Microsoft Defender ha restaurado un elemento de cuarentena. Para ob
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -581,7 +581,7 @@ Antivirus de Microsoft Defender ha encontrado un error al intentar restaurar un 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -625,7 +625,7 @@ Antivirus de Microsoft Defender ha eliminado un elemento de la cuarentena.<br/>P
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -668,7 +668,7 @@ Para obtener más información, vea los artículos siguientes:
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -774,7 +774,7 @@ Antivirus de Microsoft Defender ha detectado un comportamiento sospechoso.<br/>P
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -849,7 +849,7 @@ Antivirus de Microsoft Defender ha detectado malware u otro software potencialme
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -928,7 +928,7 @@ Antivirus de Microsoft Defender ha tomado medidas para proteger esta máquina de
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -1050,7 +1050,7 @@ Antivirus de Microsoft Defender ha encontrado un error no crítico al tomar medi
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -1142,7 +1142,7 @@ Antivirus de Microsoft Defender ha encontrado un error crítico al tomar medidas
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
 <li>Bajo</li>
 <li>Moderado</li>
-<li>Alto</li>
+<li>Alta</li>
 <li>Grave</li>
 </ul>
 </dt>

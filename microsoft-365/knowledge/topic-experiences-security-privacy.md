@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo planear la seguridad y privacidad de Microsoft Viva Topics
-ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114067"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925496"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Seguridad y privacidad de Microsoft Viva Topics
 
@@ -58,6 +58,10 @@ En la tabla siguiente se describe lo que los usuarios (visores de temas, colabor
 |Páginas|Las páginas solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 |Sitios|Los sitios solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 
+## <a name="users-personal-and-private-data"></a>Datos personales y privados de los usuarios
+
+Viva Topics solo detecta temas en los SharePoint que especifique. El almacenamiento personal de los usuarios, como correo personal o OneDrive no se incluye.
+
 ## <a name="best-practices"></a>Procedimientos recomendados
 
 Los temas presentan información a los usuarios en función de sus permisos existentes para el contenido. Microsoft 365 proporciona varias formas de garantizar que el contenido confidencial esté restringido a los usuarios adecuados. Además de los permisos estándar de [](../compliance/sensitivity-labels.md) grupo [](../compliance/dlp-learn-about-dlp.md) o sitio, puede usar etiquetas de confidencialidad o prevención de pérdida de datos para restringir el acceso al contenido y las revisiones de acceso para revisar periódicamente el acceso de los usuarios a la información confidencial. [](/azure/active-directory/governance/access-reviews-overview)
@@ -82,7 +86,7 @@ Además, se recomiendan estos procedimientos recomendados:
 
 Aunque puede cambiar los permisos de las páginas de temas individuales para restringir el acceso a un grupo específico de usuarios, no se recomienda este enfoque porque se necesita un alto grado de esfuerzo administrativo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Configurar Teams con tres niveles de protección](../solutions/configure-teams-three-tiers-protection.md)
 

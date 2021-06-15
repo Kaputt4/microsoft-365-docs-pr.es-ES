@@ -1,6 +1,6 @@
 ---
-title: Ejecutar y personalizar exámenes programados y a petición
-description: Personalice e inicie Antivirus de Microsoft Defender exámenes en puntos de conexión en toda la red.
+title: Ejecute y personalice exámenes programados y a petición.
+description: Personalizar e iniciar exámenes Antivirus de Microsoft Defender en puntos de conexión en toda la red
 keywords: análisis, programación, personalización, exclusiones, excluir archivos, corrección, resultados del examen, cuarentena, eliminación de amenazas, examen rápido, examen completo, Antivirus de Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 31dbfa2ac6d5537f6d42c0bad612be5ef059368d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bce3fe1b6490803cb571a1a8a2387c19cc589114
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275281"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926252"
 ---
 # <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección
 

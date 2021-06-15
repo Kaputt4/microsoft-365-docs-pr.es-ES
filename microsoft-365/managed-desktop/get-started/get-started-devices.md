@@ -1,20 +1,22 @@
 ---
 title: Prepare a los usuarios para que usen dispositivos
-description: ''
+description: Información que le ayudará a preparar a los usuarios para usar dispositivos.
 keywords: Escritorio administrado de Microsoft, dispositivo, introducción, Microsoft 365
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8f0726215c3bad5616882588360703e218bfaab4
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: fd730017a20f121281c0aba2c2ecca4cbd23a8a7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289452"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925724"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Prepare a los usuarios para que usen dispositivos
 

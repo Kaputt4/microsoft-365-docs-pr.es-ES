@@ -7,21 +7,21 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr
-ms.topic: article
 manager: dansimp
 ms.technology: mde
 ms.date: 05/08/2021
-ms.openlocfilehash: 072ad4e536f753550462fa80650bef392a147e64
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: e4675626e9debf3ef3a295f7c797ac254e82395f
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301757"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926024"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Antivirus de Microsoft Defender compatibilidad
 
@@ -65,10 +65,10 @@ En la tabla siguiente se resume lo que sucede con Antivirus de Microsoft Defende
 | Windows Servidor, versión 1803 o posterior <p> Windows Server 2019 | Antivirus de Microsoft Defender | No  | Modo activo |
 | Windows Servidor, versión 1803 o posterior <p> Windows Server 2019 | Una solución antivirus o antimalware que no es de Microsoft | Sí  | Antivirus de Microsoft Defender debe establecerse en modo pasivo (manualmente) <sup> [[1](#fn1)]<sup>  | 
 | Windows Servidor, versión 1803 o posterior <p> Windows Server 2019 | Una solución antivirus o antimalware que no es de Microsoft | No  | Antivirus de Microsoft Defender debe deshabilitarse (manualmente) <sup> [[2](#fn2)]<sup></sup>  |
-| Windows Server 2016 | Antivirus de Microsoft Defender | Sí | Modo activo |
-| Windows Server 2016 | Antivirus de Microsoft Defender | No | Modo activo |
-| Windows Server 2016 | Una solución antivirus o antimalware que no es de Microsoft | Sí | Antivirus de Microsoft Defender debe deshabilitarse (manualmente) <sup> [[2](#fn2)]<sup> |
-| Windows Server 2016 | Una solución antivirus o antimalware que no es de Microsoft | No | Antivirus de Microsoft Defender debe deshabilitarse (manualmente) <sup> [[2](#fn2)]<sup> |
+| Windows Server 2016 | Antivirus de Microsoft Defender | Sí | Modo activo |
+| Windows Server 2016 | Antivirus de Microsoft Defender | No | Modo activo |
+| Windows Server 2016 | Una solución antivirus o antimalware que no es de Microsoft | Sí | Antivirus de Microsoft Defender debe deshabilitarse (manualmente) <sup> [[2](#fn2)]<sup> |
+| Windows Server 2016 | Una solución antivirus o antimalware que no es de Microsoft | No | Antivirus de Microsoft Defender debe deshabilitarse (manualmente) <sup> [[2](#fn2)]<sup> |
 
 (<a id="fn1">1</a>) En Windows Server, versión 1803 o posterior, o Windows Server 2019, Antivirus de Microsoft Defender no entra en modo pasivo automáticamente al instalar un producto antivirus que no sea de Microsoft. En esos casos, [establezca Antivirus de Microsoft Defender en modo pasivo](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode) para evitar problemas causados por tener varios productos antivirus instalados en un servidor. Puede establecer el Antivirus de Microsoft Defender en modo pasivo mediante PowerShell, directiva de grupo o una clave del Registro.
 

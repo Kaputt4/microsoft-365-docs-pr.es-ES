@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: c1baf7fcd9189973864929550b19ca6e32d499ae
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Los roles de administrador se asignan a funciones empresariales y proporcionan permisos para realizar tareas específicas en el Centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
+ms.openlocfilehash: 4e2b1db207a2a590855f7fb2d0bf2019d4b57ea5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706207"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924568"
 ---
 # <a name="get-started-with-the-roles-page"></a>Introducción a la página roles
 
@@ -41,11 +41,12 @@ Puede exportar la lista de administradores, así como buscar y filtrar por rol.
 
 ![Filtrar o importar roles de administrador](../../media/admin-role-page-options.png)
 
-|||
-|:-----|:-----|
-|  <br/> |Use **Exportar lista de administradores** para obtener una lista completa de todos los usuarios de administración de la organización. La lista se almacena en un Excel .csv archivo.   <br/> |
-|  <br/> |Use **La** búsqueda para buscar un rol de administrador y ver los usuarios que están asignados a ese rol.   <br/> |
-|  <br/> |Use **Filter** para cambiar la vista de los roles de administrador mostrados.   <br/> |
+- Use Exportar lista de administradores para obtener una lista completa de todos los usuarios de administración de la organización. La lista se almacena en un Excel .csv archivo.
+
+- Use La búsqueda para buscar un rol de administrador y ver los usuarios que están asignados a ese rol.
+
+- Use Filter para cambiar la vista de los roles de administrador mostrados.
+
 
 ## <a name="get-the-most-out-of-the-roles"></a>Sacar el máximo partido de los roles
 

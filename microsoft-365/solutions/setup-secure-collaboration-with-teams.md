@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo configurar la colaboración de contenido seguro en Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: 12c8bfd2c7c59e1cc4dcf149e394d2c7dc456530
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7a5b8f58cc5e4a23d2d143419f99ecdd87b949c1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539064"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924364"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Configurar la colaboración segura con Microsoft 365 y Microsoft Teams
 
@@ -178,7 +178,7 @@ Estos módulos de aprendizaje pueden ayudar a los usuarios a usar Teams, grupos 
 |:---|:---|
 |![Configurar y personalizar el icono de aprendizaje de equipo](../media/set-up-customize-team-training.png)<br>**[Configurar y personalizar el equipo](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint compartir y sincronizar el icono de aprendizaje](../media/sharepoint-share-sync-training.png)<br>**[Compartir y sincronizar](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams cargar y encontrar el icono de aprendizaje de archivos](../media/smc-teams-upload-find-files-training.png)<br>**[Upload y buscar archivos](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![Icono Colaborar en equipos y canales](../media/teams-collaborate-channels-training.png)<br>**[Colaborar en equipos y canales](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![Icono Colaborar en equipos y canales](../media/teams-collaborate-channels-training.png)<br>**[Colaborar en equipos y canales](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## <a name="illustrations"></a>Ilustraciones
 
@@ -204,7 +204,7 @@ Cuando esté listo para implementar esta solución, siga estos pasos:
 1. Configure los [tres niveles de protección diferentes para Teams](configure-teams-three-tiers-protection.md).
 2. Configurar las opciones [para compartir información de cualquier confidencialidad con personas fuera de la organización.](collaborate-with-people-outside-your-organization.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Documentación de Seguridad de Microsoft 365](../security/index.yml)
 

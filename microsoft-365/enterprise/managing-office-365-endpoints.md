@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Obtenga información sobre cómo administrar los Office 365 para que funcionen con la arquitectura de red de la organización empresarial.
-ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fa727c5c80521b6ff67c50d202d0c11c643b021e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905121"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925868"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
@@ -161,7 +161,7 @@ Estas redirecciones de CNAME son una parte normal del DNS y son transparentes pa
 
 Un servidor proxy valida la dirección URL inicial, que en el ejemplo anterior es serviceA.office.com, y esta dirección URL se incluiría en Office 365 publicación. El servidor proxy solicita la resolución DNS de esa dirección URL a una dirección IP y recibirá IP_1. No valida los registros del redireccionamiento CNAME de intermediarios.
 
-Las configuraciones codificadas de forma automática o las listas blancas basadas en los FQDN indirectos Office 365 no se recomiendan, no son compatibles con Microsoft y se sabe que causan problemas de conectividad de clientes. Las soluciones DNS que se bloquean en el redireccionamiento CNAME o que, de lo contrario, resuelven incorrectamente las entradas DNS Office 365, se pueden resolver a través de reenviadores DNS con recursión DNS habilitada o mediante sugerencias de raíz dns. Muchos productos perimetrales de red de terceros integran de forma nativa las listas blancas recomendadas Office 365 punto de conexión en su configuración mediante el servicio web de dirección IP y [dirección URL de Office 365.](microsoft-365-ip-web-service.md)
+Las configuraciones codificadas de forma automática o el uso de una lista de permitidos basadas en nombres de dominio Office 365 no se recomiendan, no son compatibles con Microsoft y se sabe que causan problemas de conectividad de clientes. Las soluciones DNS que se bloquean en el redireccionamiento CNAME o que, de lo contrario, resuelven incorrectamente las entradas DNS Office 365, se pueden resolver a través de reenviadores DNS con recursión DNS habilitada o mediante sugerencias de raíz dns. Muchos productos perimetrales de red de terceros integran de forma nativa el extremo Office 365 recomendado para incluir una lista de permitidos en su configuración mediante el servicio web de dirección IP y [dirección URL Office 365](microsoft-365-ip-web-service.md).
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>¿Por qué veo nombres como nsatc.net o akadns.net en los nombres de dominio de Microsoft?

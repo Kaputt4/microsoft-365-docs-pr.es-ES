@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento de Microsoft 365 y el uso compartido de archivos de Microsoft 365.
-ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635647"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924616"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurar el almacenamiento y el uso compartido de archivos de Microsoft 365
 
@@ -56,12 +56,12 @@ OneDrive y los sitios de grupo permiten el acceso desde cualquier lugar para ust
   
 ![Diagrama que muestra cómo los productos de Microsoft 365 pueden usar OneDrive o sitios de grupo.](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
-Estas son algunas recomendaciones sobre lo que puede almacenar en cada ubicación al usar OneDrive y sitios de grupo de forma simultánea:
+Estas son algunas recomendaciones sobre lo que puede almacenar en cada ubicación al usar OneDrive y sitios de grupo de forma simultánea:<br/>
+
   
-||||
+|Ubicación de almacenamiento|Para qué se trata|Qué almacenar aquí|
 |:-----|:-----|:-----|
-|**Ubicación de almacenamiento** <br/> |**Para qué sirve** <br/> |**Qué almacenar aquí** <br/> |
-|**OneDrive** <br/> |Almacenar contenido en OneDrive es como almacenar archivos en su equipo: nadie más puede obtener acceso a ellos fácilmente.  <br/> Para obtener más información, vea [¿Qué es OneDrive para la Empresa?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Archivos empresariales en los que otros miembros del equipo no necesiten colaborar ni para los que necesiten tener acceso de forma habitual.  <br/> |
+|**OneDrive** |Almacenar contenido en OneDrive es como almacenar archivos en su equipo: nadie más puede obtener acceso a ellos fácilmente.<br/> Para obtener más información, vea [¿Qué es OneDrive para la Empresa?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Archivos empresariales en los que otros miembros del equipo no necesiten colaborar ni para los que necesiten tener acceso de forma habitual.<br/> |
 |**Sitios de grupo de SharePoint** <br/> |Colaboración. Cuando usted o sus usuarios crean un grupo de Microsoft 365 (como, por ejemplo, en el Centro de administración de Microsoft 365, en Outlook o al crear un equipo en Microsoft Teams) se crea un sitio de grupo de SharePoint para ese grupo. Del mismo modo, al crear un nuevo sitio de grupo de SharePoint desde la página principal de SharePoint o desde el nuevo Centro de administración de SharePoint, también se crea un grupo de Microsoft 365. Para obtener más información, vea [¿Qué es un sitio de grupo de SharePoint?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) y [Crear un sitio de grupo en SharePoint Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Archivos que tengan propiedad compartida. Se recomienda usar sitios de grupo independientes para cada unidad de trabajo de la organización. Por ejemplo, para mantener los documentos financieros y del personal en privado para un pequeño equipo, cree un sitio de grupo independiente.  <br/> |
 
 > [!NOTE]

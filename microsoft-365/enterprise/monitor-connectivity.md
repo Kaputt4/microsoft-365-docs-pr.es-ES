@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: En este artículo, aprenderá sobre las herramientas y técnicas que puede usar para supervisar y mantener Microsoft 365 conectividad.
-ms.openlocfilehash: dfba158085e6642856049d7894b4156f42353236
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8fa0820cf9b7778001be5184041e5c96930a29dd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538812"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924204"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Supervisar la conectividad de Microsoft 365
 
@@ -33,7 +33,7 @@ Una vez que haya implementado Microsoft 365, puede mantener la conectividad Micr
   
 ## <a name="monitoring-microsoft-365-connectivity"></a>Supervisión Microsoft 365 conectividad
 
-|||
+|Tipo de supervisión |Descripción |
 |:-----|:-----|
 |**Recibir notificaciones de nuevos Microsoft 365 de conexión** <br/> |Si está administrando puntos de conexión Microsoft 365, querrá recibir notificaciones cuando publiquemos nuevos puntos de conexión, puede suscribirse [a](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)nuestra fuente RSS con su lector RSS favorito. Aquí le explicamos cómo [suscribirse Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) o puede enviar por correo electrónico las actualizaciones de fuentes [RSS.](https://go.microsoft.com/fwlink/p/?LinkId=532417)  <br/> |
 |**Use System Center para supervisar Microsoft 365** <br/> |Si usa Microsoft System Center, puede descargar el módulo de administración de [System Center](https://www.microsoft.com/download/details.aspx?id=43708) para Office 365 para empezar a supervisar Microsoft 365 hoy. Para obtener instrucciones más detalladas, consulte la guía de operaciones del módulo de administración. <br/> |
