@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,73 +18,73 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Obtenga información sobre cómo permitir que los miembros del grupo envíen correo electrónico como Microsoft 365 grupo o envíen correo electrónico en nombre de un Microsoft 365 grupo.
-ms.openlocfilehash: 07db8f415da46e6235c051e262237de79e61c8b9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 437040700361c6a09b107a87d8228d2a156375d1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538260"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926144"
 ---
-# <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a><span data-ttu-id="4de7b-103">Permitir que los miembros envíen como o envíen en nombre de un grupo</span><span class="sxs-lookup"><span data-stu-id="4de7b-103">Allow members to send as or send on behalf of a group</span></span>
+# <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a><span data-ttu-id="35ad0-103">Permitir que los miembros envíen como o envíen en nombre de un grupo</span><span class="sxs-lookup"><span data-stu-id="35ad0-103">Allow members to send as or send on behalf of a group</span></span>
 
-<span data-ttu-id="4de7b-104">Un miembro de un Microsoft 365 a quien  se  le hayan concedido permisos Enviar como o Enviar en nombre puede enviar correo electrónico como grupo o en nombre del grupo.</span><span class="sxs-lookup"><span data-stu-id="4de7b-104">A member of a Microsoft 365 group who has been granted **Send as** or **Send on behalf** permissions can send email as the group, or on behalf of the group.</span></span> <span data-ttu-id="4de7b-105">(No se pueden conceder estos permisos a los invitados del grupo).</span><span class="sxs-lookup"><span data-stu-id="4de7b-105">(Guests in the group cannot be granted these permissions.)</span></span>
+<span data-ttu-id="35ad0-104">Un miembro de un Microsoft 365 a quien  se  le hayan concedido permisos Enviar como o Enviar en nombre puede enviar correo electrónico como grupo o en nombre del grupo.</span><span class="sxs-lookup"><span data-stu-id="35ad0-104">A member of a Microsoft 365 group who has been granted **Send as** or **Send on behalf** permissions can send email as the group, or on behalf of the group.</span></span> <span data-ttu-id="35ad0-105">(No se pueden conceder estos permisos a los invitados del grupo).</span><span class="sxs-lookup"><span data-stu-id="35ad0-105">(Guests in the group cannot be granted these permissions.)</span></span>
 
-<span data-ttu-id="4de7b-106">En este artículo se explica cómo un administrador global Exchange puede establecer estos permisos.</span><span class="sxs-lookup"><span data-stu-id="4de7b-106">This article explains how a global or Exchange administrator can set these permissions.</span></span>
+<span data-ttu-id="35ad0-106">En este artículo se explica cómo un administrador global Exchange puede establecer estos permisos.</span><span class="sxs-lookup"><span data-stu-id="35ad0-106">This article explains how a global or Exchange administrator can set these permissions.</span></span>
   
-<span data-ttu-id="4de7b-107">Por ejemplo, si Megan Bowen  forma parte del grupo  Microsoft 365 de aprendizaje y tiene permisos Enviar como en el grupo, si envía un correo electrónico como grupo, parecerá que el grupo de aprendizaje envió el correo electrónico. </span><span class="sxs-lookup"><span data-stu-id="4de7b-107">For example, if Megan Bowen is part of the **Training** Microsoft 365 group, and has **Send as** permissions on the group, if she sends an email as the group, it will look like the **Training** group sent the email.</span></span> 
+<span data-ttu-id="35ad0-107">Por ejemplo, si Megan Bowen  forma parte del grupo  Microsoft 365 de aprendizaje y tiene permisos Enviar como en el grupo, si envía un correo electrónico como grupo, parecerá que el grupo de aprendizaje envió el correo electrónico. </span><span class="sxs-lookup"><span data-stu-id="35ad0-107">For example, if Megan Bowen is part of the **Training** Microsoft 365 group, and has **Send as** permissions on the group, if she sends an email as the group, it will look like the **Training** group sent the email.</span></span> 
   
-<span data-ttu-id="4de7b-108">El **permiso Enviar en nombre** permite que un usuario envíe correo electrónico en nombre de un Microsoft 365 grupo.</span><span class="sxs-lookup"><span data-stu-id="4de7b-108">The **Send on Behalf** permission lets a user send email on behalf of a Microsoft 365 group.</span></span> <span data-ttu-id="4de7b-109">Por ejemplo, si Alex Wilber forma parte del grupo **Marketing** Microsoft 365 y tiene permisos Enviar en nombre y envía un correo electrónico como grupo, el correo electrónico parece que lo envió **Alex Wilber en** nombre de Marketing . </span><span class="sxs-lookup"><span data-stu-id="4de7b-109">For example, if Alex Wilber is a part of the **Marketing** Microsoft 365 group, and has **Send on Behalf** permissions and sends an email as the group, the email looks like it was sent by **Alex Wilber on behalf of Marketing**.</span></span>
+<span data-ttu-id="35ad0-108">El **permiso Enviar en nombre** permite que un usuario envíe correo electrónico en nombre de un Microsoft 365 grupo.</span><span class="sxs-lookup"><span data-stu-id="35ad0-108">The **Send on Behalf** permission lets a user send email on behalf of a Microsoft 365 group.</span></span> <span data-ttu-id="35ad0-109">Por ejemplo, si Alex Wilber forma parte del grupo **Marketing** Microsoft 365 y tiene permisos Enviar en nombre y envía un correo electrónico como grupo, el correo electrónico parece que lo envió **Alex Wilber en** nombre de Marketing . </span><span class="sxs-lookup"><span data-stu-id="35ad0-109">For example, if Alex Wilber is a part of the **Marketing** Microsoft 365 group, and has **Send on Behalf** permissions and sends an email as the group, the email looks like it was sent by **Alex Wilber on behalf of Marketing**.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="4de7b-110">Puede configurar **Enviar como** o Enviar en **nombre** de un usuario determinado, pero no ambos.</span><span class="sxs-lookup"><span data-stu-id="4de7b-110">You can configure **Send as** or **Send on behalf** for a given user, but not both.</span></span> <span data-ttu-id="4de7b-111">Si configura ambos, se establecerá de forma predeterminada **en Enviar como**.</span><span class="sxs-lookup"><span data-stu-id="4de7b-111">If you configure both, it will default to **Send as**.</span></span>
+> <span data-ttu-id="35ad0-110">Puede configurar **Enviar como** o Enviar en **nombre** de un usuario determinado, pero no ambos.</span><span class="sxs-lookup"><span data-stu-id="35ad0-110">You can configure **Send as** or **Send on behalf** for a given user, but not both.</span></span> <span data-ttu-id="35ad0-111">Si configura ambos, se establecerá de forma predeterminada **en Enviar como**.</span><span class="sxs-lookup"><span data-stu-id="35ad0-111">If you configure both, it will default to **Send as**.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="4de7b-112">Consulte [Enviar correo](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) electrónico desde o en nombre de un grupo de Microsoft 365 para obtener información sobre cómo usar Outlook y Outlook en la Web para enviar correo electrónico desde un grupo.</span><span class="sxs-lookup"><span data-stu-id="4de7b-112">See [Send email from or on behalf of a Microsoft 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) to learn how to use Outlook and Outlook on the Web to send email from a group.</span></span>
+> <span data-ttu-id="35ad0-112">Consulte [Enviar correo](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) electrónico desde o en nombre de un grupo de Microsoft 365 para obtener información sobre cómo usar Outlook y Outlook en la Web para enviar correo electrónico desde un grupo.</span><span class="sxs-lookup"><span data-stu-id="35ad0-112">See [Send email from or on behalf of a Microsoft 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) to learn how to use Outlook and Outlook on the Web to send email from a group.</span></span>
     
-## <a name="allow-members-to-send-email-as-a-group"></a><span data-ttu-id="4de7b-113">Permitir que los miembros envíen correo electrónico como grupo</span><span class="sxs-lookup"><span data-stu-id="4de7b-113">Allow members to send email as a group</span></span>
+## <a name="allow-members-to-send-email-as-a-group"></a><span data-ttu-id="35ad0-113">Permitir que los miembros envíen correo electrónico como grupo</span><span class="sxs-lookup"><span data-stu-id="35ad0-113">Allow members to send email as a group</span></span>
 
-<span data-ttu-id="4de7b-114">En esta sección se explica cómo permitir a [](https://go.microsoft.com/fwlink/p/?linkid=2059104) los usuarios enviar correo electrónico como grupo en el Centro de administración de Exchange (EAC) en Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="4de7b-114">This section explains how to allow users to send email as a group in the [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) in Exchange Online.</span></span>
+<span data-ttu-id="35ad0-114">En esta sección se explica cómo permitir a [](https://go.microsoft.com/fwlink/p/?linkid=2059104) los usuarios enviar correo electrónico como grupo en el Centro de administración de Exchange (EAC) en Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="35ad0-114">This section explains how to allow users to send email as a group in the [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) in Exchange Online.</span></span>
   
-1. <span data-ttu-id="4de7b-115">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.</span><span class="sxs-lookup"><span data-stu-id="4de7b-115">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.</span></span>
+1. <span data-ttu-id="35ad0-115">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.</span><span class="sxs-lookup"><span data-stu-id="35ad0-115">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.</span></span>
     
-2. <span data-ttu-id="4de7b-116">Seleccione **Editar icono** editar grupo en el grupo que desea permitir que los usuarios envíen ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) como.  </span><span class="sxs-lookup"><span data-stu-id="4de7b-116">Select **Edit**  ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as.</span></span> 
+2. <span data-ttu-id="35ad0-116">Seleccione **Editar icono** editar grupo en el grupo que desea permitir que los usuarios envíen ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) como.  </span><span class="sxs-lookup"><span data-stu-id="35ad0-116">Select **Edit**  ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as.</span></span> 
     
-3. <span data-ttu-id="4de7b-117">Seleccione **delegación de grupo**.</span><span class="sxs-lookup"><span data-stu-id="4de7b-117">Select **group delegation**.</span></span>
+3. <span data-ttu-id="35ad0-117">Seleccione **delegación de grupo**.</span><span class="sxs-lookup"><span data-stu-id="35ad0-117">Select **group delegation**.</span></span>
     
-4. <span data-ttu-id="4de7b-118">En la **sección Enviar como,** seleccione el signo para agregar los **+** usuarios que desea enviar como grupo.</span><span class="sxs-lookup"><span data-stu-id="4de7b-118">In the **Send As** section, select the **+** sign to add the users that you want to send as the Group.</span></span> 
+4. <span data-ttu-id="35ad0-118">En la **sección Enviar como,** seleccione el signo para agregar los **+** usuarios que desea enviar como grupo.</span><span class="sxs-lookup"><span data-stu-id="35ad0-118">In the **Send As** section, select the **+** sign to add the users that you want to send as the Group.</span></span> 
     
     ![Captura de pantalla del cuadro de diálogo Enviar como](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
-5. <span data-ttu-id="4de7b-120">Escriba para buscar o seleccionar un usuario de la lista.</span><span class="sxs-lookup"><span data-stu-id="4de7b-120">Type to search or pick a user from the list.</span></span> <span data-ttu-id="4de7b-121">Seleccione **Aceptar** y **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="4de7b-121">Select **OK** and **Save**.</span></span>
+5. <span data-ttu-id="35ad0-120">Escriba para buscar o seleccionar un usuario de la lista.</span><span class="sxs-lookup"><span data-stu-id="35ad0-120">Type to search or pick a user from the list.</span></span> <span data-ttu-id="35ad0-121">Seleccione **Aceptar** y **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="35ad0-121">Select **OK** and **Save**.</span></span>
     
     ![Escriba para buscar o seleccionar un usuario de la lista](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
-## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a><span data-ttu-id="4de7b-123">Permitir que los miembros envíen correo electrónico en nombre de un grupo</span><span class="sxs-lookup"><span data-stu-id="4de7b-123">Allow members to send email on behalf of a group</span></span>
+## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a><span data-ttu-id="35ad0-123">Permitir que los miembros envíen correo electrónico en nombre de un grupo</span><span class="sxs-lookup"><span data-stu-id="35ad0-123">Allow members to send email on behalf of a group</span></span>
 
-<span data-ttu-id="4de7b-124">En esta sección se explica cómo permitir a los usuarios enviar correo electrónico en nombre de un grupo en el Centro de administración de Exchange (EAC) en Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="4de7b-124">This section explains how to allow users to send email on behalf of a group in the Exchange admin center (EAC) in Exchange Online.</span></span>
+<span data-ttu-id="35ad0-124">En esta sección se explica cómo permitir a los usuarios enviar correo electrónico en nombre de un grupo en el Centro de administración de Exchange (EAC) en Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="35ad0-124">This section explains how to allow users to send email on behalf of a group in the Exchange admin center (EAC) in Exchange Online.</span></span>
   
-1. <span data-ttu-id="4de7b-125">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.</span><span class="sxs-lookup"><span data-stu-id="4de7b-125">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.</span></span>
+1. <span data-ttu-id="35ad0-125">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.</span><span class="sxs-lookup"><span data-stu-id="35ad0-125">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.</span></span>
     
-2. <span data-ttu-id="4de7b-126">Seleccione **Editar icono** editar grupo en el grupo que desea permitir que los usuarios envíen ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) como.</span><span class="sxs-lookup"><span data-stu-id="4de7b-126">Select **Edit** ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as.</span></span> 
+2. <span data-ttu-id="35ad0-126">Seleccione **Editar icono** editar grupo en el grupo que desea permitir que los usuarios envíen ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) como.</span><span class="sxs-lookup"><span data-stu-id="35ad0-126">Select **Edit** ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as.</span></span> 
     
-3. <span data-ttu-id="4de7b-127">Seleccione **delegación de grupo**.</span><span class="sxs-lookup"><span data-stu-id="4de7b-127">Select **group delegation**.</span></span>
+3. <span data-ttu-id="35ad0-127">Seleccione **delegación de grupo**.</span><span class="sxs-lookup"><span data-stu-id="35ad0-127">Select **group delegation**.</span></span>
     
-4. <span data-ttu-id="4de7b-128">En la sección Enviar en nombre, seleccione el signo para agregar los **+** usuarios que desea enviar como grupo.</span><span class="sxs-lookup"><span data-stu-id="4de7b-128">In the Send on Behalf section, select the **+** sign to add the users that you want to send as the Group.</span></span> 
+4. <span data-ttu-id="35ad0-128">En la sección Enviar en nombre, seleccione el signo para agregar los **+** usuarios que desea enviar como grupo.</span><span class="sxs-lookup"><span data-stu-id="35ad0-128">In the Send on Behalf section, select the **+** sign to add the users that you want to send as the Group.</span></span> 
     
     ![Captura de pantalla del envío en nombre del cuadro de diálogo](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
-5. <span data-ttu-id="4de7b-130">Escriba para buscar o seleccionar un usuario de la lista.</span><span class="sxs-lookup"><span data-stu-id="4de7b-130">Type to search or pick a user from the list.</span></span> <span data-ttu-id="4de7b-131">Seleccione **Aceptar** y **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="4de7b-131">Select **OK** and **Save**.</span></span>
+5. <span data-ttu-id="35ad0-130">Escriba para buscar o seleccionar un usuario de la lista.</span><span class="sxs-lookup"><span data-stu-id="35ad0-130">Type to search or pick a user from the list.</span></span> <span data-ttu-id="35ad0-131">Seleccione **Aceptar** y **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="35ad0-131">Select **OK** and **Save**.</span></span>
     
     ![Escriba para buscar o seleccionar un usuario de la lista](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
-## <a name="related-articles"></a><span data-ttu-id="4de7b-133">Artículos relacionados</span><span class="sxs-lookup"><span data-stu-id="4de7b-133">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="35ad0-133">Artículos relacionados</span><span class="sxs-lookup"><span data-stu-id="35ad0-133">Related articles</span></span>
 
-[<span data-ttu-id="4de7b-134">Planeación paso a paso de gobierno de colaboración</span><span class="sxs-lookup"><span data-stu-id="4de7b-134">Collaboration governance planning step-by-step</span></span>](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[<span data-ttu-id="35ad0-134">Planeación paso a paso de gobierno de colaboración</span><span class="sxs-lookup"><span data-stu-id="35ad0-134">Collaboration governance planning step-by-step</span></span>](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[<span data-ttu-id="4de7b-135">Crear el plan de gobierno de colaboración</span><span class="sxs-lookup"><span data-stu-id="4de7b-135">Create your collaboration governance plan</span></span>](collaboration-governance-first.md)
+[<span data-ttu-id="35ad0-135">Crear el plan de gobierno de colaboración</span><span class="sxs-lookup"><span data-stu-id="35ad0-135">Create your collaboration governance plan</span></span>](collaboration-governance-first.md)
 
-[<span data-ttu-id="4de7b-136">Obtenga más información sobre Microsoft 365 grupos</span><span class="sxs-lookup"><span data-stu-id="4de7b-136">Learn more about Microsoft 365 groups</span></span>](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[<span data-ttu-id="35ad0-136">Obtenga más información sobre Microsoft 365 grupos</span><span class="sxs-lookup"><span data-stu-id="35ad0-136">Learn more about Microsoft 365 groups</span></span>](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[<span data-ttu-id="4de7b-137">Add-RecipientPermission</span><span class="sxs-lookup"><span data-stu-id="4de7b-137">Add-RecipientPermission</span></span>](/powershell/module/exchange/add-recipientpermission)
+[<span data-ttu-id="35ad0-137">Add-RecipientPermission</span><span class="sxs-lookup"><span data-stu-id="35ad0-137">Add-RecipientPermission</span></span>](/powershell/module/exchange/add-recipientpermission)
 
-[<span data-ttu-id="4de7b-138">Set-UnifiedGroup</span><span class="sxs-lookup"><span data-stu-id="4de7b-138">Set-UnifiedGroup</span></span>](/powershell/module/exchange/set-unifiedgroup)
+[<span data-ttu-id="35ad0-138">Set-UnifiedGroup</span><span class="sxs-lookup"><span data-stu-id="35ad0-138">Set-UnifiedGroup</span></span>](/powershell/module/exchange/set-unifiedgroup)
