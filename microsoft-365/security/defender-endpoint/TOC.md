@@ -8,7 +8,7 @@
 ### [Almacenamiento de datos y privacidad](data-storage-privacy.md)
 ### [Introducción al Centro de seguridad de Microsoft Defender](use.md)
 ### [Introducción al portal](portal-overview.md)
-### [Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU.](gov.md)
+### [Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU](gov.md)
 ### [Microsoft Defender para punto de conexión en plataformas que no sean de Windows](non-windows.md)
 
 ## [Funcionalidades de evaluación](evaluation-lab.md)
@@ -55,7 +55,7 @@
 #### [Incorporar dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md)
 #### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
 #### [Incorporar dispositivos Windows 10 mediante la directiva de grupo]()
-##### [Herramientas y métodos de incorporación para equipos con Windows 10](configure-endpoints.md).
+##### [Herramientas y métodos de incorporación para equipos con Windows 10](configure-endpoints.md)
 ##### [Incorporar dispositivos con la directiva de grupo](configure-endpoints-gp.md)
 ##### [Incorporar dispositivos con el Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 ##### [Incorporar dispositivos con las herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
@@ -273,7 +273,10 @@
 #### [Detectar y bloquear aplicaciones potencialmente no deseadas](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Corregir la detección de correcciones para el Antivirus de Windows Defender](configure-remediation-microsoft-defender-antivirus.md)
-#### [Configurar los análisis programados rápidos o completos del Antivirus de Windows Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+#### [Configurar el examen bajo petición en el Antivirus de Microsoft Defender](schedule-antivirus-scans.md)
+##### [Programar los exámenes de antivirus con la directiva de grupo](schedule-antivirus-scans-group-policy.md)
+##### [Programar los exámenes de antivirus con PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Programar los exámenes de antivirus con Instrumental de administración de Windows (WMI)](schedule-antivirus-scans-wmi.md)
 #### [Usar el análisis rápido limitado en el Antivirus de Windows Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibilidad con otros productos para la seguridad](microsoft-defender-antivirus-compatibility.md)
 
@@ -468,6 +471,8 @@
 ###### [Obtener acceso con el contexto de la aplicación](exposed-apis-create-app-webapp.md)
 ###### [Obtener acceso con el contexto de usuario](exposed-apis-create-app-nativeapp.md)
 ###### [Obtener acceso a aplicaciones de asociados](exposed-apis-create-app-partners.md)
+
+
 ##### [Esquema de API de Microsoft Defender para punto de conexión]()
 ###### [API compatibles de Microsoft Defender para punto de conexión](exposed-apis-list.md)
 ###### [Códigos de error comunes de API de REST](common-errors.md)
@@ -520,10 +525,11 @@
 ####### [Obtener alertas relacionadas con IP](get-ip-related-alerts.md)
 ####### [Obtener estadísticas de IP](get-ip-statistics.md)
 
+
 ###### [Máquina]()
 ####### [Propiedades y métodos de máquina](machine.md)
 ####### [Enumerar máquinas](get-machines.md)
-####### [Obtener máquina por id.](get-machine-by-id.md)
+####### [Obtener máquina por id](get-machine-by-id.md)
 ####### [Obtener registro de máquina en usuarios](get-machine-log-on-users.md)
 ####### [Obtener alertas relacionadas con máquina](get-machine-related-alerts.md)
 ####### [Obtener software instalado](get-installed-software.md)
@@ -535,22 +541,26 @@
 ####### [Obtener los kB que faltan](get-missing-kbs-machine.md)
 ####### [Establecer valor de dispositivo](set-device-value.md)
 
+
 ###### [Acción de máquina]()
 ####### [Métodos y propiedades de acción de máquina](machineaction.md)
 ####### [Enumerar acciones de máquina](get-machineactions-collection.md)
 ####### [Obtener acción de máquina](get-machineaction-object.md)
 ####### [Recopilar paquete de investigación](collect-investigation-package.md)
 ####### [Obtener identificador URI de SAS de paquete de investigación](get-package-sas-uri.md)
+####### [Obtener resultado de respuesta en directo](get-live-response-result.md)
 ####### [Aislar máquina](isolate-machine.md)
 ####### [Liberar máquina del aislamiento](unisolate-machine.md)
 ####### [Restringir ejecución de aplicación](restrict-code-execution.md)
 ####### [Quitar restricción de aplicación](unrestrict-code-execution.md)
 ####### [Ejecutar examen antivirus](run-av-scan.md)
+####### [Ejecutar respuesta directa](run-live-response.md) 
 ####### [Retirar máquina](offboard-machine-api.md)
 ####### [Detener y poner en cuarentena un archivo](stop-and-quarantine-file.md)
+####### [Cancelar acción de máquina](cancel-machine-action.md)
 
 ###### [Recomendación]()
-####### [Propiedades y métodos estáticos.](recommendation.md)
+####### [Propiedades y métodos estáticos](recommendation.md)
 ####### [Enumerar todas las recomendaciones](get-all-recommendations.md)
 ####### [Obtener recomendación por identificación](get-recommendation-by-id.md)
 ####### [Obtener recomendación por software](get-recommendation-software.md)
@@ -559,7 +569,7 @@
 
 ###### [Actividad de corrección]()
 ####### [Propiedades y métodos de la actividad de corrección](get-remediation-methods-properties.md)
-####### [Obtener una actividad de corrección de acuerdo con su id.](get-remediation-one-activity.md)
+####### [Obtener una actividad de corrección de acuerdo con su id](get-remediation-one-activity.md)
 ####### [Enumerar todas las actividades de corrección](get-remediation-all-activities.md)
 ####### [Lista de dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md)
 
