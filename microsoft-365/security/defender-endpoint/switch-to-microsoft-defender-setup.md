@@ -17,16 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 2ea8cc323220024406a49eda8d6a7c0b42ca71a4
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 82c734d8a394be048f9be862be114fae7f90e6b3
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594054"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930480"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Cambiar a Microsoft Defender para endpoint - Fase 2: Configuración
 
@@ -93,14 +95,15 @@ La clave del Registro [DisableAntiSpyware](/windows-hardware/customize/desktop/u
 1. Como administrador local en el punto de conexión o dispositivo, abra Windows PowerShell.
 
 2. Ejecute los siguientes cmdlets de PowerShell: <br/>   
+
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-   > [!NOTE]
-   > Cuando se usa el comando DISM en una secuencia de tareas que ejecuta PS, se requiere la siguiente ruta de cmd.exe.
-   > Ejemplo:<br/>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   Cuando se usa el comando DISM en una secuencia de tareas que ejecuta PS, se requiere la siguiente ruta de cmd.exe.
+   Ejemplo:<br/>
+   
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. Para comprobar Antivirus de Microsoft Defender se está ejecutando, use el siguiente cmdlet de PowerShell: <br/>
    `Get-Service -Name windefend`
@@ -113,6 +116,7 @@ La clave del Registro [DisableAntiSpyware](/windows-hardware/customize/desktop/u
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Edite (o cree) una entrada DWORD denominada **ForcePassiveMode** y especifique la siguiente configuración:
+
    - Establezca el valor de DWORD en **1**.
    - En **Base**, seleccione **Hexadecimal**.
 

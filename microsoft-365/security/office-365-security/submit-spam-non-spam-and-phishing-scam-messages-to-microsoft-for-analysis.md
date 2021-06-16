@@ -18,12 +18,12 @@ description: Los administradores y los usuarios finales pueden aprender a enviar
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3a02c710472a996245a38d996ff4485efd1748
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 4d277df764ce2fb135f11c6320bc990e4d4142d6
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624030"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929772"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes manualmente a Microsoft para su análisis
 
@@ -35,7 +35,7 @@ ms.locfileid: "52624030"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Si es administrador de una organización con buzones de correo Exchange Online, le recomendamos que use el portal de envíos en el Centro de seguridad & cumplimiento. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Si es administrador de una organización con buzones de correo Exchange Online, le recomendamos que use el portal de envíos en el portal de Microsoft 365 Defender. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 Puede ser frustrante cuando los usuarios de la organización reciben mensajes de correo no deseado o mensajes de suplantación de identidad en su Bandeja de entrada, o si no reciben un mensaje de correo electrónico legítimo porque está marcado como correo no deseado. Estamos ajustando constantemente nuestros filtros de correo no deseado para que sean más precisos.
 

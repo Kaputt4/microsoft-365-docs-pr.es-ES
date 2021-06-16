@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4337b29e0718e23f43b441526232ec6ef66be1d
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 4827ce149632d0e37dbe9c3dc5fc8325dbfa8afa
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879209"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929880"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuarios
 
@@ -56,21 +56,21 @@ Use los artículos siguientes para configurar los requisitos previos necesarios 
 
 - Desactivar el examen de direcciones URL en los mensajes del buzón personalizado. Use Configurar directivas Caja fuerte [vínculos](set-up-safe-links-policies.md) en Defender para Office 365 para crear una directiva de vínculos de Caja fuerte con la opción **Desactivado** para **Seleccionar** la acción para direcciones URL potencialmente malintencionadas desconocidas en mensajes .
 
-- Crear una directiva antimalware para desactivar Malware Zero-hour Auto Purge. Consulte [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) to set Malware **Zero-hour Auto Purge** to **Off**.
+- Crear una directiva antimalware para desactivar Malware Zero-hour Auto Purge. Consulta [Usar el portal Microsoft 365 Defender para crear](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) directivas contra correo no deseado para establecer Malware **Zero-hour Auto Purge** en **Off**.
 
-- Cree una directiva de filtro de correo no deseado para deshabilitar la purga automática de hora cero (ZAP) para correo no deseado y suplantación de identidad (phishing) en el buzón personalizado. Vea [Usar el Centro de seguridad & cumplimiento para](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)  crear directivas contra correo no deseado y desactive las casillas Activar para **ZAP** de correo no deseado y ZAP **de suplantación de identidad**.
+- Cree una directiva de filtro de correo no deseado para deshabilitar la purga automática de hora cero (ZAP) para correo no deseado y suplantación de identidad (phishing) en el buzón personalizado. Consulte [Usar el portal de Microsoft 365 Defender para](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) crear  directivas contra correo no deseado y desactive las casillas Activar para **ZAP** de correo no deseado y ZAP **de suplantación de identidad**.
 
 - Deshabilite la regla de correo no deseado en el buzón personalizado. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Una vez deshabilitado, EOP no puede mover mensajes a la carpeta  correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado o la colección de listas seguras en el buzón.
 
-Después de comprobar que el buzón cumple todos los requisitos previos aplicables, use el Centro de seguridad & cumplimiento para configurar el buzón de [envíos](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) de usuario (en este artículo).
+Después de comprobar que el buzón cumple todos los requisitos previos aplicables, implemente el procedimiento especificado en [Use the Microsoft 365 Defender portal to configure the user submissions mailbox](#use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la **página Envíos de usuario,** use <https://protection.office.com/userSubmissionsReportMessage> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
 
 - Para modificar la configuración de envíos de usuarios, debe ser miembro de uno de los siguientes grupos de roles:
 
-  - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  - **Administración de** la organización **o administrador de** seguridad en el portal de Microsoft 365 [Defender](permissions-in-the-security-and-compliance-center.md).
   - **Administración de** la [organización en Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Necesita tener acceso a Exchange Online PowerShell. Si la cuenta que está intentando usar no tiene acceso Exchange Online PowerShell, recibirá un error similar al siguiente al especificar el buzón de envío:
@@ -82,9 +82,9 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
   - [Habilitar o deshabilitar el acceso a Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [Reglas de acceso de cliente en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Usar el Centro de seguridad & cumplimiento para configurar el buzón de envíos de usuario
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Usar el portal Microsoft 365 Defender para configurar el buzón de envíos de usuario
 
-1. En el Centro de & cumplimiento, vaya a **Administración** de amenazas \>  \> **Envíos de usuario de directiva**.
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Reglas de amenazas Directivas de amenazas Configuración de mensajes \>  \> **notificada** por el \> **usuario Envíos de usuario.**
 
 2. En la **página Envíos de** usuario que aparece, seleccione una de las siguientes opciones:
 

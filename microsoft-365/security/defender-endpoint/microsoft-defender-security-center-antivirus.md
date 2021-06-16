@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ccb0d4cf168bbb4d3c1575c1e6611829909d0817
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275413"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926540"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
 
@@ -138,5 +138,5 @@ Para obtener más información, consulte los siguientes recursos:
 
 5. Para configurar las opciones  de recuperación de ransomware, selecciona Configurar en Recuperación de datos ransomware y sigue las instrucciones para vincular o configurar tu cuenta de OneDrive para que puedas recuperarte fácilmente de un ataque de ransomware. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 - [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

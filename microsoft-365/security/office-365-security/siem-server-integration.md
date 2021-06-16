@@ -18,12 +18,12 @@ ms.custom:
 description: Obtenga información general sobre la integración del servidor de administración de eventos y información de seguridad (SIEM) con Microsoft 365 y aplicaciones en la nube
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599952"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929796"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de administración de eventos y de información de seguridad (SIEM) Microsoft 365 servicios y aplicaciones
 
@@ -69,7 +69,7 @@ Un servidor SIEM puede recibir datos de una amplia variedad de Microsoft 365 y a
 
 Asegúrese de que el registro de auditoría esté activado antes de configurar la integración del servidor SIEM.
 
-- Para SharePoint Online, OneDrive para la Empresa y Azure Active Directory, el registro de auditoría está activado en el Centro de [seguridad & cumplimiento](../../compliance/turn-audit-log-search-on-or-off.md).
+- Para SharePoint Online, OneDrive para la Empresa y Azure Active Directory, el registro de auditoría está activado en el [portal de Microsoft 365 Defender](../../compliance/turn-audit-log-search-on-or-off.md).
 
 - Para Exchange Online, vea [Manage mailbox auditing](../../compliance/enable-mailbox-auditing.md).
 

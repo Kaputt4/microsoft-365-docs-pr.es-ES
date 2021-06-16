@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932886"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930276"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Códigos de error Microsoft 365 API de REST de Defender
 
@@ -62,7 +62,7 @@ DisabledFeature | Prohibido (403) | La característica inquilino no está habili
 DisallowedOperation | Prohibido (403) | \<the disallowed operation and the reason\>.
 NotFound | No encontrado (404) | Mensaje de error General No encontrado.
 ResourceNotFound | No encontrado (404) | No \<the requested resource\> se encontró el recurso.
-InternalServerError | Error interno del servidor (500) | *Nota: No hay mensaje de error, vuelva a intentar la operación o póngase en contacto con Microsoft si no se resuelve*
+InternalServerError | Error interno del servidor (500) | *Nota: No hay mensaje de error, vuelva a intentar la operación o [póngase en contacto con Microsoft](/microsoft-365/business-video/get-help-support) si no se resuelve*
 
 ## <a name="examples"></a>Ejemplos
 

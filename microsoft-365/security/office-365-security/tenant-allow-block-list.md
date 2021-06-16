@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12139708fc5cde133819713fd7185435e594a1a9
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809184"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929736"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de permitidos o bloqueados del espacio empresarial
 
@@ -40,17 +40,17 @@ ms.locfileid: "52809184"
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un mensaje bueno puede marcarse como malo (un falso positivo) o un mensaje malo se puede permitir a través (un falso negativo).
 
-La lista de inquilinos permitidos o bloqueados en el Centro de seguridad & cumplimiento le ofrece una forma de invalidar manualmente los Microsoft 365 de filtrado. La lista de inquilinos permitidos o bloqueados se usa durante el flujo de correo y en el momento de los clics del usuario. Puede especificar los siguientes tipos de invalidaciones:
+La lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender le ofrece una forma de invalidar manualmente los Microsoft 365 de filtrado. La lista de inquilinos permitidos o bloqueados se usa durante el flujo de correo y en el momento de los clics del usuario. Puede especificar los siguientes tipos de invalidaciones:
 
 - Direcciones URL que se bloquearán.
 - Archivos que se va a bloquear.
 - Remitentes suplantados para permitir o bloquear. Si invalida el veredicto permitir o bloquear en la información de inteligencia suplantada, el remitente  suplantado se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del inquilino. [](learn-about-spoof-intelligence.md) También puede crear entradas de permitir o bloquear manualmente para remitentes suplantados aquí antes de que los detecte la inteligencia de suplantación de identidad.
 
-En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online).
+En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **Lista de inquilinos permitidos o bloqueados,** use <https://protection.office.com/tenantAllowBlockList> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList> .
 
 - Los archivos se especifican mediante el valor hash SHA256 del archivo. Para buscar el valor hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema:
 
@@ -90,9 +90,9 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
   >
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
-## <a name="use-the-security--compliance-center-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Usar el Centro de seguridad & cumplimiento para crear entradas de dirección URL de bloque en la lista de inquilinos permitidos o bloqueados
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para crear entradas de dirección URL de bloque en la lista de inquilinos permitidos o bloqueados
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Administración** de amenazas Directivas \>  \> **permitir/bloquear listas de inquilinos.**
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** reglas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
 
 2. En la **página Lista de inquilinos permitidos o** bloqueados, compruebe que la pestaña **Direcciones** URL está seleccionada y, a continuación, haga clic en **Bloquear**
 
@@ -112,9 +112,9 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
-## <a name="use-the-security--compliance-center-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Usar el Centro de seguridad & cumplimiento para crear entradas de archivo de bloqueo en la lista de inquilinos permitidos o bloqueados
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para crear entradas de archivo de bloque en la lista de inquilinos permitidos o bloqueados
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Administración** de amenazas Directivas \>  \> **permitir/bloquear listas de inquilinos.**
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Directivas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
 
 2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la **pestaña** Archivos y, a continuación, haga clic en **Bloquear**.
 
@@ -134,7 +134,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
-## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Usar el Centro de seguridad & cumplimiento para crear entradas de remitente suplantadas de identidad o de bloqueo en la lista de permitidos o bloqueados de inquilinos
+## <a name="use-the-microsoft-365-defender-portal-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para crear entradas de remitente suplantadas de identidad en la lista de inquilinos permitidos o bloqueados
 
 **Notas**:
 
@@ -142,7 +142,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 - Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia suplantación.
 - Las entradas de remitentes suplantados nunca expiran.
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Administración** de amenazas Directivas \>  \> **permitir/bloquear listas de inquilinos.**
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Directivas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
 
 2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña **Suplantación** y, a continuación, haga clic **en Agregar**.
 
@@ -158,9 +158,9 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Usar el Centro de seguridad & cumplimiento para ver entradas en la lista de inquilinos permitidos o bloqueados
+## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para ver entradas en la lista de inquilinos permitidos o bloqueados
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Administración** de amenazas Directivas \>  \> **permitir/bloquear listas de inquilinos.**
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Directivas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
 
 2. Seleccione la pestaña que desee. Las columnas disponibles dependen de la pestaña seleccionada:
 
@@ -220,9 +220,9 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
    Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic **en Filtrar** y, en el **menú** desplegable Filtro que aparece, haga clic en **Borrar filtros**.
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Usar el Centro de seguridad & cumplimiento para modificar las entradas de la lista de inquilinos permitidos o bloqueados
+## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para modificar entradas en la lista de inquilinos permitidos o bloqueados
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Administración** de amenazas Directivas \>  \> **permitir/bloquear listas de inquilinos.**
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Directivas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea modificar:
    - **DIRECCIONES URL**
@@ -248,9 +248,9 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 4. Cuando haya terminado, haga clic en **Guardar**.
 
-## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Usar el Centro de & seguridad para quitar entradas de la lista de inquilinos permitidos o bloqueados
+## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para quitar entradas de la lista de inquilinos permitidos o bloqueados
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Administración** de amenazas Directivas \>  \> **permitir/bloquear listas de inquilinos.**
+1. En el portal Microsoft 365 Defender, vaya a **Administración** de amenazas Directivas \>  \> **de inquilino Permitir/Bloquear listas**.
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea quitar:
    - **DIRECCIONES URL**

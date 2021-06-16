@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844879"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929700"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -334,6 +334,8 @@ Los pasos siguientes proporcionan instrucciones para el siguiente escenario:
 - El dispositivo se apaga o se reinicia antes de que el usuario final realice un primer inicio de sesión
 - En este escenario, el servicio SENSE no se iniciará automáticamente aunque se haya implementado el paquete de incorporación
 
+<div class="alert"><b>NOTA:</b> El inicio de sesión del usuario después de OOBE ya no es necesario para que el servicio SENSE se inicie en las siguientes o más recientes versiones de Windows: Windows 10, versión 1809 o Windows Server 2019 con paquete acumulativo de actualizaciones del 22 de abril de [2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, versión 1909 con paquete acumulativo de actualizaciones de [abril de 2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, versión 2004/20H2 con paquete acumulativo de actualizaciones del 28 de abril de [2021](https://support.microsoft.com/kb/5001391) </div> 
+<br></br>
 > [!NOTE]
 > Los pasos siguientes solo son relevantes al usar Microsoft Endpoint Configuration Manager. Para obtener más información acerca de la incorporación mediante Microsoft Endpoint Configuration Manager, vea [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 

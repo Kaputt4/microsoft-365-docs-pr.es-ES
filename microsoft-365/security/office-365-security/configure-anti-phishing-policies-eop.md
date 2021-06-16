@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en organizaciones de Exchange Online Protection (EOP) con o sin buzones Exchange Online correo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec944a2bf6fa7600a9970a7354332d140293ab5e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9cd006146d8ae41196b63c658ae54e875d730bcc
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878549"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932859"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
@@ -58,9 +58,9 @@ Cada organización tiene una directiva contra suplantación de identidad integra
 
 Para aumentar la eficacia de la protección contra phishing, puede crear directivas personalizadas contra suplantación de identidad con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <https://security.microsoft.com> . Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -190,7 +190,7 @@ De nuevo en la página principal de la directiva, el valor **Estado** de la dire
 
 De forma predeterminada, las directivas contra suplantación de identidad tienen una prioridad que se basa en el orden en que se crearon (las directivas más recientes son de menor prioridad que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
-Para cambiar la prioridad de  una directiva, haga clic en Aumentar prioridad o Disminuir  prioridad en las propiedades de la directiva (no puede modificar directamente el número de prioridad en el portal de Microsoft 365 Defender).  Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
+Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad** o en **Reducir la prioridad** en las propiedades de la directiva (no se puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
 
  **Notas**:
 
@@ -202,9 +202,9 @@ Para cambiar la prioridad de  una directiva, haga clic en Aumentar prioridad o D
 2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá **Aumentar la prioridad** o **Disminuir la prioridad** en función del valor de prioridad actual y del número de directivas personalizadas:
-   - La directiva contra suplantación de identidad con el valor **de** prioridad **0** solo tiene disponible **la opción Disminuir** prioridad.
-   - La directiva contra suplantación de identidad con el valor **priority** más bajo (por ejemplo, **3**) solo tiene disponible **la opción Aumentar** prioridad.
-   - Si tiene tres o más directivas contra la suplantación de identidad, las directivas entre los valores de prioridad más alta y más baja tienen disponibles las opciones **Aumentar** prioridad y **Disminuir** prioridad.
+   - La directiva con el **valor de prioridad** **0** solo tiene disponible la **opción Disminuir** prioridad.
+   - La directiva con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene disponible **la opción Aumentar** prioridad.
+   - Si tiene tres o más directivas, las directivas entre los valores de prioridad más alta y más baja tienen disponibles las opciones **Aumentar** prioridad y **Disminuir** prioridad.
 
    Haga clic en el ![Icono Aumentar la prioridad](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
 

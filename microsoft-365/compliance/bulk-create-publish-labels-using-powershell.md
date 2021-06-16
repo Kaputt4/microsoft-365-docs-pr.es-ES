@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 ms.date: ''
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar PowerShell para crear y publicar etiquetas de retención desde la línea de comandos, de manera independiente del centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918226"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924968"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención con PowerShell
 
@@ -43,7 +44,7 @@ Información general:
   
 ## <a name="disclaimer"></a>Aviso de declinación de responsabilidades
 
-Los scripts de ejemplo que aparecen en este artículo no son compatibles con ningún programa o servicio de soporte técnico estándar de Microsoft. Los scripts de ejemplo aparecen "TAL CUAL", sin garantía de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Cualquier riesgo resultante del uso o resultado de los scripts y la documentación de ejemplo será únicamente responsabilidad suya. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
+Los scripts de ejemplo que se proporcionan en este artículo no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas, sin limitarse a ellas, las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitarse a ellos, los daños debidos a la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
   
 ## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Paso 1: Cree un archivo .csv para crear las etiquetas de retención
 

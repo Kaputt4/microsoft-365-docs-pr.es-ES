@@ -6,19 +6,19 @@
       items:
         - name: ¿Qué es Microsoft 365 Defender?
           href: microsoft-365-defender.md
-        - name: Microsoft 365 Introducción al defensor
+        - name: Evaluación de Microsoft 365 Defender
           href: overview-security-center.md
         - name: Novedades de Microsoft 365 Defender
           href: whats-new.md
-        - name: Defender for Endpoint in Microsoft 365 Defender
+        - name: Microsoft Defender para punto de conexión en Microsoft 365 Defender
           href: microsoft-365-security-center-mde.md
         - name: Defender para Office 365 en Microsoft 365 Defender
           href: microsoft-365-security-center-mdo.md
-        - name: Redirigir Defender for Endpoint a Microsoft 365 Defender
+        - name: Redirigiendo Defender para punto de conexión a Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: Redirigir el centro Office 365 seguridad y cumplimiento a Microsoft 365 Defender
+        - name: Redirigiendo el Centro de seguridad y cumplimiento de Office 365 a Microsoft 365 Defender
           href: microsoft-365-security-mdo-redirection.md
-        - name: Microsoft 365 Integración de Defender con Azure Sentinel
+        - name: Integración de Microsoft 365 Defender con Azure Sentinel.
           href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: Versión preliminar de las características
           href: preview.md
@@ -84,9 +84,9 @@
               href: microsoft-secure-score-whats-coming.md
             - name: Novedades
               href: microsoft-secure-score-whats-new.md
-        - name: Proteger las identidades
+        - name: Proteja sus identidades
           items:
-            - name: Administrar alertas de seguridad
+            - name: Administre alertas de seguridad
               href: ../defender-identity/manage-security-alerts.md
     - name: Investigar y responder a amenazas
       items:
@@ -98,55 +98,55 @@
               href: incident-queue.md
             - name: Administrar
               href: manage-incidents.md
-            - name: Investigar
+            - name: Investigación
               href: investigate-incidents.md
             - name: Alertas de incidentes
               href: investigate-alerts.md
-            - name: Usuarios de incidentes
+            - name: Usuarios con incidentes
               href: investigate-users.md
-            - name: Responder a su primer incidente
+            - name: Responder al primer incidente
               items:
                 - name: Introducción
                   href: first-incident-overview.md
-                - name: Preparación
+                - name: Preparar
                   href: first-incident-prepare.md
-                - name: Paso 1. Triage and analyze
+                - name: Paso 1. Evaluar y analizar
                   href: first-incident-analyze.md
-                - name: Paso 2. Corrección
+                - name: Paso 2. Corregir
                   href: first-incident-remediate.md
-                - name: Paso 3. Revisar
+                - name: 'Paso 3: Revisar la configuración'
                   href: first-incident-post.md
                 - name: Ejemplos de incidentes adicionales
                   items:
-                    - name: Correo de suplantación de identidad
+                    - name: Correo de phishing
                       href: first-incident-path-phishing.md
                     - name: Identidad
                       href: first-incident-path-identity.md
-            - name: Playbooks de respuesta a incidentes
+            - name: Cuadernos de estrategias de respuesta a incidentes
               href: /security/compass/incident-response-playbooks
             - name: Notificaciones de correo electrónico
               href: get-incident-notifications.md
         - name: Análisis de amenazas
           items:
-            - name: Seguimiento y respuesta a amenazas emergentes
+            - name: Seguir las amenazas emergentes y responder a ellas
               href: threat-analytics.md
-            - name: Comprender el informe de analistas
+            - name: 'Comprender el informe de análisis '
               href: threat-analytics-analyst-reports.md
-        - name: Investigación y respuesta automatizada
+        - name: Investigación y respuesta automatizadas
           items:
             - name: Información general
               href: m365d-autoir.md
-            - name: Configurar capacidades
+            - name: Configurar las capacidades
               href: m365d-configure-auto-investigation-response.md
             - name: Acciones de corrección
               href: m365d-remediation-actions.md
-            - name: Usar el Centro de acciones
+            - name: Visite el Centro de actividades
               href: m365d-action-center.md
-            - name: Ver y administrar acciones de corrección
+            - name: Ver y aprobar acciones de corrección
               href: m365d-autoir-actions.md
             - name: Ver detalles y resultados
               href: m365d-autoir-results.md
-            - name: Dirección de falsos positivos y negativos
+            - name: Abordar falsos positivos y falsos negativos
               href: m365d-autoir-report-false-positives-negatives.md
         - name: Búsqueda avanzada
           items:
@@ -318,11 +318,11 @@
               items:
                 - name: Códigos de error comunes de API de REST
                   href: api-error-codes.md
-                - name: Streaming API
+                - name: API de streaming
                   items:
-                    - name: Microsoft 365 Streaming API
+                    - name: API de streaming de Microsoft 365
                       href: streaming-api.md
-                    - name: Transmitir eventos de búsqueda avanzada de amenazas al hub de Azure Events
+                    - name: Transmitir eventos de búsqueda avanzada de amenazas al centro de Azure Events
                       href: streaming-api-event-hub.md
                     - name: Transmitir eventos de búsqueda avanzada de amenazas a su cuenta de almacenamiento
                       href: streaming-api-storage.md
@@ -330,15 +330,15 @@
                   href: api-advanced-hunting.md
                 - name: API de incidentes
                   items:
-                    - name: Propiedades y métodos de incidentes
+                    - name: Métodos y propiedades del incidente
                       href: api-incident.md
                     - name: Lista de Incidentes
                       href: api-list-incidents.md
-                    - name: Actualizar incidentes
+                    - name: Actualizar los incidentes
                       href: api-update-incidents.md
-                    - name: Obtener incidente
+                    - name: Obtener el incidente
                       href: api-get-incident.md
-    - name: "Microsoft Defender para Office\_365"
+    - name: Microsoft Defender para Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender para punto de conexión
       href: ../defender-endpoint/index.yml

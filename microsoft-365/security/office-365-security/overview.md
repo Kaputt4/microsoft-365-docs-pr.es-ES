@@ -3,7 +3,7 @@ title: Seguridad de Office 365, Microsoft Defender para Office 365, EOP, MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/13/2020
+ms.date: 06/11/2021
 audience: Admin
 ms.topic: conceptual
 localization_priority: Normal
@@ -16,26 +16,25 @@ ms.collection:
 description: Seguridad en Office 365, desde EOP a Defender para Office 365 Planes 1 y 2, Configuraciones de seguridad estándar vs. estrictas y mucho más. Comprenda qué tiene y cómo proteger sus propiedades.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db37718ce2feae9c79ff6b323eb22e30f24e72b2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6ecdfe324ded6224745b0e2eac087e432ac76c83
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205838"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930252"
 ---
-# <a name="office-365-security-overview"></a>Información general sobre la Seguridad de Office 365
+# <a name="microsoft-defender-for-office-365-security-overview"></a>Introducción a la seguridad Office 365 Microsoft Defender para Office 365 seguridad
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-
-En este artículo, se presentan las nuevas propiedades de seguridad en la nube. Ya sea que forme parte de un Centro de operaciones de seguridad, es un Administrador de seguridad nuevo en el espacio o quiera hacer un repaso, puede empezar por aquí.
+En este artículo se le presentará el nuevo Microsoft Defender para Office 365 de seguridad en la nube. Ya sea que forme parte de un Centro de operaciones de seguridad, es un Administrador de seguridad nuevo en el espacio o quiera hacer un repaso, puede empezar por aquí.
 
 > [!CAUTION]
 > Si usa **Outlook.com**, **Microsoft 365 Familia** o **Microsoft 365 Personal** y necesita información sobre *Vínculos seguros* o *Datos adjuntos seguros*, ***haga clic en este vínculo***: [Seguridad avanzada de Outlook.com para los suscriptores Microsoft 365](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-## <a name="office-365-security-spelled-out"></a>Detalles de la seguridad de Office 365
+## <a name="what-is-defender-for-office-365-security"></a>What is Defender for Office 365 security
 
 Todas las suscripciones de Office 365 cuentan con funcionalidades de seguridad. Los objetivos y acciones que puede realizar dependen del foco de las diferentes suscripciones. En la seguridad de Office 365, existen tres servicios (o productos) de seguridad principales vinculados al tipo de suscripción:
 
@@ -57,8 +56,6 @@ Puede que esté acostumbrado a ver estos tres componentes de esta manera:
 
 En cuanto a la arquitectura, podemos imaginar las piezas como capas acumulativas de seguridad, cada una con un énfasis de seguridad. Más resultados similares:
 
-<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
-
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP y Microsoft Defender para Office 365 y sus relaciones entre sí con énfasis de servicio, incluida una nota para la autenticación de correo electrónico.":::
 
 Aunque cada uno de estos servicios destaca un objetivo entre Proteger, Detectar, Investigar y Responder, ***todos** _ los servicios pueden llevar a cabo_ *_cualquiera_** de los objetivos de proteger, detectar, investigar y responder.
@@ -73,8 +70,6 @@ Si tiene Office 365 E3 o inferior, tiene EOP, pero con la opción de comprar Def
 > Si su suscripción no es de Office 365 E3 ni E5, igualmente puede comprobar si tiene la opción de actualizar a Microsoft Defender para Office 365 P1. Si está interesado, [esta página web](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) enumera las suscripciones elegibles para la actualización de Microsoft Defender para Office 365 P1 (verifique el final de la página para ver las condiciones).
 
 ## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>La escalera de seguridad de Office 365 desde EOP hasta Microsoft Defender para Office 365
-
-![El énfasis de seguridad de EOP y Microsoft Defender para Office 365 incluye desde Proteger y Detectar, hasta Investigar y Responder. La configuración de autenticación del correo electrónico (al menos DKIM y DMARC) debe ajustarse para EOP y versiones posteriores.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 > [!IMPORTANT]
 > Obtenga más información en estas páginas: [Exchange Online Protection](exchange-online-protection-overview.md) y [Defender para Office 365](defender-for-office-365.md).
@@ -117,7 +112,7 @@ Ganancias con **Defender para Office 365, Plan 2** (hasta la fecha):
 
 Por lo tanto, Microsoft Defender para Office 365 P2 amplía el aspecto de ***investigación y respuesta*** y añade un nuevo punto de seguridad a la búsqueda. Automatización.
 
-En Microsoft Defender para Office 365 P2, la herramienta principal de búsqueda se denomina **Explorador de amenazas** en lugar de Detecciones en tiempo real. Si ve el Explorador de amenazas al ir al Centro de seguridad, está en Microsoft Defender para Office 365 P2.
+En Microsoft Defender para Office 365 P2, la herramienta principal de búsqueda se denomina **Explorador de amenazas** en lugar de Detecciones en tiempo real. Si ve el Explorador de amenazas al navegar al portal de Microsoft 365 Defender, está en Microsoft Defender para Office 365 P2.
 
 Para obtener más información sobre Microsoft Defender para Office 365 P1 y P2, **[vaya a este artículo](defender-for-office-365.md)**.
 
@@ -159,3 +154,4 @@ Póngase al día con las [Novedades de Microsoft Defender para Office 365 (que i
 [Usar el Explorador de amenazas o las Detecciones en tiempo real](threat-explorer.md)
 
 Usar el [Simulador de ataques de Microsoft Defender para Office 365](attack-simulator.md)
+

@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/09/2021
-ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
-ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
+ms.date: 06/14/2021
+ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52862152"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929448"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -31,17 +31,13 @@ ms.locfileid: "52862152"
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 - Antivirus de Microsoft Defender
 
-Hay dos tipos de actualizaciones relacionadas con mantener Antivirus de Microsoft Defender actualizado:
+Mantener Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tienen la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de ataque y malware. Asegúrese de actualizar la protección antivirus, incluso si Antivirus de Microsoft Defender se está ejecutando en [modo pasivo](microsoft-defender-antivirus-compatibility.md). Hay dos tipos de actualizaciones relacionadas con mantener Antivirus de Microsoft Defender actualizado:
 
 - Actualizaciones de inteligencia de seguridad
 - Actualizaciones de productos
 
-> [!IMPORTANT]
-> Mantener Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tienen la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de ataque y malware.
-> 
-> Asegúrese de actualizar la protección antivirus incluso si Antivirus de Microsoft Defender se está ejecutando en [modo pasivo](./microsoft-defender-antivirus-compatibility.md).
-> 
-> Para ver el motor, la plataforma y la fecha de firma más actuales, visite las actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y [otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+> [!TIP]
+> Para ver el motor, la plataforma y la fecha de firma más actuales, visite las actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender [y otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## <a name="security-intelligence-updates"></a>Actualizaciones de inteligencia de seguridad
 
@@ -81,7 +77,7 @@ Todas nuestras actualizaciones contienen
 - mejoras en el rendimiento;
 - mejoras en la capacidad de servicio; y 
 - mejoras de integración (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
-<br/>
+<br/><br/>
 <details>
 <summary> Mayo-2021 (Plataforma: 4.18.2105.4 | Motor: 1.1.18200.4)</summary>
 

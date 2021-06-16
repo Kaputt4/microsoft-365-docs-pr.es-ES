@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado saliente en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13b25300b6e5b42c860c58546f9c084a244b5f1f
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9dadea740267225ff2df316b96ba7ccef92fe01e
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878921"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933136"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -66,9 +66,9 @@ Cada organización tiene una directiva de correo no deseado de salida integrada 
 
 Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crear directivas de correo no deseado saliente personalizadas con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <https://security.microsoft.com> . Para ir directamente a la página **Configuración contra correo no deseado**, use <https://security.microsoft.com/antispam>.
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Configuración contra correo no deseado**, use <https://security.microsoft.com/antispam>.
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -91,7 +91,7 @@ Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crea
 
 La creación de una directiva de correo no deseado saliente personalizada en el portal de Microsoft 365 Defender crea la regla de filtro de correo no deseado y la directiva de filtro de correo no deseado asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo** electrónico & directivas de colaboración & directivas de amenazas de reglas \>  \>  \>  sección Directivas contra correo \> **no deseado.**
+1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Contra correo electrónico no deseado**.
 
 2. En la **página Directivas contra correo** no deseado, haga clic en Crear icono Crear directiva y, a continuación, seleccione ![ ](../../media/m365-cc-sc-create-icon.png)  **Saliente** en la lista desplegable.
 
@@ -177,7 +177,7 @@ La creación de una directiva de correo no deseado saliente personalizada en el 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>Usar el portal de Microsoft 365 Defender para ver directivas de correo no deseado saliente
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo** electrónico & directivas de colaboración & directivas de amenazas de reglas \>  \>  \>  sección Directivas contra correo \> **no deseado.**
+1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Contra correo electrónico no deseado**.
 
 2. En la página de directivas **antispam**, busque uno de los siguientes valores:
    - El **valor Type** es Directiva de correo no deseado de salida **personalizada**
@@ -194,7 +194,7 @@ La creación de una directiva de correo no deseado saliente personalizada en el 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>Usar el portal de Microsoft 365 Defender para modificar directivas de correo no deseado saliente
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo** electrónico & directivas de colaboración & directivas de amenazas de reglas \>  \>  \>  sección Directivas contra correo \> **no deseado.**
+1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Contra correo electrónico no deseado**.
 
 2. En la **página Directivas contra correo** no deseado, seleccione una directiva de correo no deseado saliente de la lista haciendo clic en el nombre:
    - Una directiva personalizada que creó donde el valor de la columna **Tipo** es **Directiva de correo no deseado de salida personalizada.**
@@ -210,7 +210,7 @@ Vea las secciones siguientes para habilitar o deshabilitar una directiva, establ
 
 No puede deshabilitar la directiva de correo no deseado saliente predeterminada.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo** electrónico & directivas de colaboración & directivas de amenazas de reglas \>  \>  \>  sección Directivas contra correo \> **no deseado.**
+1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Contra correo electrónico no deseado**.
 
 2. En la **página Directivas contra correo** no  deseado, seleccione una directiva con el valor Tipo de directiva de **correo** no deseado de salida personalizada de la lista haciendo clic en el nombre.
 
@@ -228,14 +228,14 @@ De nuevo en la página principal de la directiva, el valor **Estado** de la dire
 
 De forma predeterminada, las directivas de correo no deseado salientes tienen una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen menor prioridad que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
-Para cambiar la prioridad de  una directiva, haga clic en Aumentar prioridad o Disminuir  prioridad en las propiedades de la directiva (no puede modificar directamente el número de prioridad en el portal de Microsoft 365 Defender).  Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
+Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad** o en **Reducir la prioridad** en las propiedades de la directiva (no se puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
 
  **Notas**:
 
 - En el portal Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva de correo no deseado saliente después de crearla. En PowerShell, puede reemplazar la prioridad predeterminada al crear la regla de filtro de correo no deseado (que puede afectar a la prioridad de las reglas existentes).
 - Las directivas de correo no deseado saliente se procesan en el orden en que se muestran (la primera directiva tiene el **valor de** prioridad 0). La directiva de correo no deseado saliente predeterminada tiene el valor de prioridad **Lowest** y no puede cambiarla.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo** electrónico & directivas de colaboración & directivas de amenazas de reglas \>  \>  \>  sección Directivas contra correo \> **no deseado.**
+1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Contra correo electrónico no deseado**.
 
 2. En la **página Directivas contra correo** no deseado, seleccione una directiva con el valor Tipo de directiva de **correo** no deseado saliente personalizada de la lista haciendo clic en el nombre. 
 
@@ -252,7 +252,7 @@ Para cambiar la prioridad de  una directiva, haga clic en Aumentar prioridad o D
 
 Cuando usa el portal de Microsoft 365 Defender para quitar una directiva de correo no deseado saliente personalizada, se eliminan tanto la regla de filtro de correo no deseado como la directiva de filtro de correo no deseado correspondiente. No puede quitar la directiva de correo no deseado saliente predeterminada.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo** electrónico & directivas de colaboración & directivas de amenazas de reglas \>  \>  \>  sección Directivas contra correo \> **no deseado.**
+1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de** directivas \> **Contra correo electrónico no deseado**.
 
 2. En la **página Directivas contra correo** no  deseado, seleccione una directiva con el valor Tipo de directiva de **correo** no deseado de salida personalizada de la lista haciendo clic en el nombre. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en el ![Icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
 

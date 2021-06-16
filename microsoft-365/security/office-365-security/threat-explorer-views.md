@@ -13,16 +13,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Obtenga información sobre cómo usar el Explorador de amenazas y el informe de detecciones en tiempo real para investigar y responder a las amenazas en el Centro de seguridad & cumplimiento.
+description: Obtenga información sobre cómo usar el Explorador de amenazas y el informe de detecciones en tiempo real para investigar y responder a las amenazas en el portal de Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78c03b45063f4bc34b47ab003bcf00d2befab886
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1c79cc717a2dbe345627f99830590c674fa02f09
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207331"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929667"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el Explorador de amenazas y detecciones en tiempo real
 
@@ -33,9 +33,9 @@ ms.locfileid: "51207331"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![Explorador de amenazas](../../media/ThreatExplorerFirstOpened.png)
+![Explorador de amenazas](../../media/explorer.png)
 
-[El Explorador de](threat-explorer.md) amenazas (y el informe de detecciones en tiempo real) es una herramienta eficaz y casi en tiempo real que ayuda a los equipos de operaciones de seguridad a investigar y responder a las amenazas en el Centro de seguridad & cumplimiento. El Explorador (y el informe de detecciones en tiempo real) muestra información sobre el malware sospechoso y la suplantación de identidad (phish) en el correo electrónico y los archivos de Office 365, así como otras amenazas y riesgos de seguridad para su organización.
+[El Explorador de](threat-explorer.md) amenazas (y el informe de detecciones en tiempo real) es una herramienta eficaz y casi en tiempo real que ayuda a los equipos de operaciones de seguridad a investigar y responder a las amenazas en el portal de Microsoft 365 Defender. El Explorador (y el informe de detecciones en tiempo real) muestra información sobre el malware sospechoso y la suplantación de identidad (phish) en el correo electrónico y los archivos de Office 365, así como otras amenazas y riesgos de seguridad para su organización.
 
 - Si tienes [Microsoft Defender para Office 365](defender-for-office-365.md) plan 2, tienes Explorer.
 - Si tienes Microsoft Defender para Office 365 plan 1, tienes detecciones en tiempo real.
@@ -44,7 +44,7 @@ Al abrir por primera vez el Explorador (o el informe de detecciones en tiempo re
 
 ****
 
-|Suscripción|Utilidad|Días de datos|
+|Suscripción |Utilidad|Días de datos|
 |---|---|---|
 |Prueba de Microsoft Defender Office 365 P1|Detecciones en tiempo real|7 |
 |Microsoft Defender para Office 365 P1 pagado|Detecciones en tiempo real|30|
@@ -58,7 +58,7 @@ Al abrir por primera vez el Explorador (o el informe de detecciones en tiempo re
 
 Use el **menú** Ver para cambiar la información que se muestra. Las herramientas le ayudan a determinar qué vista usar.
 
-![Menú Vista del Explorador de amenazas](../../media/ThreatExplorerViewMenu.png)
+![Menú Vista del Explorador de amenazas](../../media/all-email.png)
 
 Una vez que haya seleccionado una vista, puede aplicar filtros y configurar consultas para realizar análisis adicionales. Las secciones siguientes proporcionan una breve introducción a las distintas vistas disponibles en el Explorador (o detecciones en tiempo real).
 
@@ -66,7 +66,7 @@ Una vez que haya seleccionado una vista, puede aplicar filtros y configurar cons
 
 Para ver este informe, en el Explorador (o detecciones en tiempo real), elija **Ver** malware \>  \> **de correo electrónico**. Esta vista muestra información sobre los mensajes de correo electrónico que se identificaron como que contienen malware.
 
-![Ver datos sobre el correo electrónico identificado como malware](../../media/ExplorerEmailMalwareMenu.png)
+![Ver datos sobre el correo electrónico identificado como malware](../../media/detection-technology.png)
 
 Haga **clic en** Remitente para abrir la lista de opciones de visualización. Use esta lista para ver datos por remitente, destinatarios, dominio del remitente, asunto, tecnología de detección, estado de protección y mucho más.
 
@@ -82,13 +82,13 @@ Debajo del gráfico, vea más detalles sobre mensajes específicos. Al seleccion
 
 Para ver este informe, en el Explorador (o detecciones en tiempo real), elija **Ver** \> **suplantación de** identidad \> **de correo electrónico**. En esta vista se muestran los mensajes de correo electrónico identificados como intentos de suplantación de identidad.
 
-![Ver datos sobre el correo electrónico identificado como intentos de suplantación de identidad](../../media/ThreatExplorerEmailPhish.png)
+![Ver datos sobre el correo electrónico identificado como intentos de suplantación de identidad](../../media/phish.png)
 
 Haga **clic en** Remitente para abrir la lista de opciones de visualización. Use esta lista para ver los datos por remitente, destinatarios, dominio del remitente, IP del remitente, dominio url, veredicto de clic y mucho más.
 
 Por ejemplo, para ver qué acciones se realizaron cuando las personas hicieron clic en direcciones URL que se identificaron como intentos de suplantación de identidad, elija Hacer clic en veredicto en la lista, seleccione una o más opciones y, a continuación, haga clic en el botón Actualizar. 
 
-![Haga clic en opciones de veredicto para el informe de suplantación de identidad](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![Haga clic en opciones de veredicto para el informe de suplantación de identidad](../../media/click-verdict.png)
 
 Debajo del gráfico, vea más detalles sobre mensajes específicos, clics de dirección URL, direcciones URL y origen de correo electrónico.
 
@@ -135,7 +135,7 @@ Para ver este informe, en el Explorador (o detecciones en tiempo real), elija **
 
 Ver información por familia de malware, tecnología de detección (cómo se detectó el malware) y carga de trabajo (OneDrive, SharePoint o Teams).
 
-![Ver datos sobre malware detectado](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
+![Ver datos sobre malware detectado](../../media/malware-family.png)
 
 Debajo del gráfico, vea más detalles sobre archivos específicos, como el nombre de archivo de datos adjuntos, la carga de trabajo, el tamaño del archivo, quién modificó por última vez el archivo y mucho más.
 

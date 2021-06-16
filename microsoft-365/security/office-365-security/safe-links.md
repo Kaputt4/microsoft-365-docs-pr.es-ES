@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos de Caja fuerte en Defender for Office 365 para proteger su organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 406450752085817cb49e3cf08a90c0087af3d94b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9775c67a35d45595f68cd364dc4d70e9985b7e9e
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879293"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930528"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte Vínculos en Microsoft Defender para Office 365
 
@@ -294,7 +294,7 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 
 Cada directiva Caja fuerte links contiene una lista Do **not rewrite the following URLs** que puede usar para especificar direcciones URL que no se reescriban mediante el examen de vínculos Caja fuerte. En otras palabras, la lista permite a los usuarios incluidos en la directiva obtener acceso a las direcciones URL especificadas que, de lo contrario, se bloquearían mediante Caja fuerte vínculos. Puede configurar diferentes listas en diferentes directivas Caja fuerte vínculos. El procesamiento de directivas se detiene después de que se aplique la primera directiva (probablemente, la prioridad más alta) al usuario. Por lo tanto, solo se aplica una no **reescritura** de la siguiente lista de direcciones URL a un usuario que se incluye en varias directivas de vínculos Caja fuerte activas.
 
-Para agregar entradas a la lista en directivas de vínculos de Caja fuerte nuevas o existentes, vea [Create Caja fuerte Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) o Modify Caja fuerte Links [policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
+Para agregar entradas a la lista en directivas de vínculos de Caja fuerte nuevas o existentes, vea Use [the Microsoft 365 Defender portal to create Caja fuerte Links policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) o Use the Microsoft 365 Defender portal to modify Caja fuerte Links [policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies).
 
 **Notas**:
 

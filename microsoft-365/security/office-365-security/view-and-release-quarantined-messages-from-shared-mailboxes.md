@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Los usuarios pueden aprender a ver y actuar en mensajes en cuarentena que se enviaron a buzones compartidos a los que tienen permisos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb915ad6ad6e6130d8704339559f4c370cef3a20
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 4d6aed4a6e3bc725635558a5e8394b671d11f47c
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599516"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929856"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Ver y liberar mensajes en cuarentena de buzones compartidos
 
@@ -35,9 +35,9 @@ Anteriormente, la capacidad de los usuarios para administrar los mensajes en cua
 
 Ahora, la automapping ya no es necesaria para que los usuarios administren los mensajes en cuarentena que se enviaron a buzones compartidos. Solo funciona. Hay dos métodos diferentes para obtener acceso a los mensajes en cuarentena que se enviaron a un buzón compartido:
 
-- Si el administrador ha habilitado las notificaciones de correo no deseado del usuario final en directivas contra correo no  [deseado,](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)cualquier usuario que tenga acceso a las notificaciones de correo no deseado del usuario final en el buzón compartido puede hacer clic en el botón Revisar de la notificación para pasar a la cuarentena en el Centro de seguridad & cumplimiento. Tenga en cuenta que este método solo permite a los usuarios administrar mensajes en cuarentena que se enviaron al buzón compartido. Los usuarios no pueden administrar sus propios mensajes de cuarentena en este contexto.
+- Si el administrador ha habilitado las notificaciones de correo no deseado del usuario final en directivas contra correo no  [deseado,](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)cualquier usuario que tenga acceso a las notificaciones de correo no deseado del usuario final en el buzón compartido puede hacer clic en el botón Revisar de la notificación para pasar a la cuarentena en el portal de Microsoft 365 Defender. Tenga en cuenta que este método solo permite a los usuarios administrar mensajes en cuarentena que se enviaron al buzón compartido. Los usuarios no pueden administrar sus propios mensajes de cuarentena en este contexto.
 
-- El usuario puede [ir a la cuarentena en el Centro de seguridad & cumplimiento](find-and-release-quarantined-messages-as-a-user.md). De forma predeterminada, solo se muestran los mensajes que se enviaron al usuario. Sin embargo, el usuario puede  cambiar los resultados de ordenación **(el** botón Id. de  mensaje de forma predeterminada) a Dirección de correo electrónico del **destinatario,** escribir la dirección de correo electrónico del buzón compartido y, a continuación, hacer clic en Actualizar para ver los mensajes en cuarentena que se enviaron al buzón compartido.
+- El usuario puede [ir a la cuarentena en el portal de Microsoft 365 Defender](find-and-release-quarantined-messages-as-a-user.md). De forma predeterminada, solo se muestran los mensajes que se enviaron al usuario. Sin embargo, el usuario puede  cambiar los resultados de ordenación **(el** botón Id. de  mensaje de forma predeterminada) a Dirección de correo electrónico del **destinatario,** escribir la dirección de correo electrónico del buzón compartido y, a continuación, hacer clic en Actualizar para ver los mensajes en cuarentena que se enviaron al buzón compartido.
 
   ![Ordenar los mensajes en cuarentena por dirección de correo electrónico del destinatario.](../../media/quarantine-sort-results-by-recipient-email-address.png)
 

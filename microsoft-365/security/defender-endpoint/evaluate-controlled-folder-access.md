@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 15ea4696052a6c987314e3c7b0dd282a49ed4df8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4254c5ea24d8c901ac5f6337b0c626afe02747e2
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842919"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926648"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Evaluar acceso controlado a carpetas
 
@@ -73,7 +74,7 @@ Durante la evaluación, es posible que quieras agregar a la lista de carpetas pr
 
 Vea [Proteger carpetas](controlled-folders.md) importantes con acceso controlado a carpetas para configurar la característica con herramientas de administración, como la directiva de grupo, PowerShell y los proveedores de servicios de configuración mdm (CSP).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 * [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 * [Microsoft Defender para punto de conexión](evaluate-mde.md)

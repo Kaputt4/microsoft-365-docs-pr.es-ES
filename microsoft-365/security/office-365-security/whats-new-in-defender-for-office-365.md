@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2895598c8d891b08229f072b7bff6b6549639093
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796071"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929559"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -89,7 +89,7 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
   - Filtros NO avanzados (se trata de opciones avanzadas de filtrado que incluyen que no contienen, no incluyen, etc.)
   - Filtros de hora granulares (día, hora, media hora)
 
-- El **widget Incidentes es** ahora el widget Centro **de** acciones. (Para ver los widgets de seguridad, en el Centro de seguridad & cumplimiento, vaya a **Administración de amenazas** \> **Revisar**.) (Microsoft Defender para Office 365 plan 2)
+- El **widget Incidentes es** ahora el widget Centro **de** acciones. (Para ver los widgets de seguridad, en el portal de Microsoft 365 Defender, vaya a Correo electrónico **& colaboración** \> **Revisar**.) (Microsoft Defender para Office 365 plan 2)
 
 - [Caja fuerte documentos en Microsoft 365](safe-docs.md) **(versión preliminar)**
 
@@ -127,7 +127,7 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Microsoft 365 guía básica](https://www.microsoft.com/microsoft-365/roadmap)
 

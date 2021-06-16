@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1b03c2671939a3e8e3011b78b8f1484ef02979ea
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245382"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930192"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -111,15 +111,14 @@ Con el acceso de lectura y escritura, puede realizar cambios e interactuar direc
 * Administrador de seguridad
 * Administrador de Exchange
 * Administrador de SharePoint
-* Administrador de cuentas
 
 ### <a name="read-only-roles"></a>Roles de solo lectura
 
 Con el acceso de solo lectura, no puedes editar el estado ni las notas de una acción de mejora, editar zonas de puntuación o editar comparaciones personalizadas.
 
-* Administrador del departamento de soporte técnico
+* Administrador del departamento de soporto técnico
 * Administrador de usuarios
-* Administrador de servicios
+* Administrador de soporte técnico de servicio
 * Lector de seguridad
 * Operador de seguridad
 * Lector global

@@ -20,12 +20,12 @@ ms.custom:
 description: En este tema se le guía a través de la configuración recomendada para la configuración de todo el espacio empresarial que afecta a la seguridad del Microsoft 365 empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 623ea316d1ad92790b8818504970a1d35401f617
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879221"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929580"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar su inquilino de Microsoft 365 para aumentar la seguridad 
 
@@ -63,15 +63,15 @@ El portal Microsoft 365 Defender incluye funcionalidades que protegen el entorno
 > [!NOTE]
 > Para implementaciones no estándar de SPF, implementaciones híbridas y solución de problemas: cómo Microsoft 365 usa [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md)para evitar la suplantación de identidad .
 
-## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>Ver paneles e informes en el Centro de seguridad & cumplimiento
+## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>Ver paneles e informes en el portal de Microsoft 365 Defender
 
-Visite estos informes y paneles para obtener más información sobre el estado de su entorno. Los datos de estos informes se enriquecerán a medida que su organización use Office 365 servicios. Por ahora, familiarícese con lo que puede supervisar y realizar acciones. Para obtener más información, vea [Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md).
+Visite estos informes y paneles para obtener más información sobre el estado de su entorno. Los datos de estos informes se enriquecerán a medida que su organización use Office 365 servicios. Por ahora, familiarícese con lo que puede supervisar y realizar acciones. Para obtener más información, vea [Reports in the Microsoft 365 Defender portal](../../compliance/reports-in-security-and-compliance.md).
 
 <br>
 
 ****
 
-|Panel|Description|
+|Panel|Descripción|
 |---|---|
 |[Panel de administración de amenazas](security-dashboard.md)|En  la sección Administración de amenazas del portal de Microsoft 365 Defender, use este panel para ver las amenazas que ya se han manipulado y como una herramienta práctica para informar a los responsables de la toma de decisiones empresariales sobre las capacidades de investigación y respuesta de amenazas que ya han hecho para proteger su negocio.|
 |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)|Esto también se encuentra en la **sección Administración de** amenazas del portal de Microsoft 365 Defender. Si está investigando o experimentando un ataque contra su inquilino, use explorer (o detecciones en tiempo real) para analizar las amenazas. El Explorador (y el informe de detecciones en tiempo real) muestra el volumen de ataques con el tiempo y puede analizar estos datos por familias de amenazas, infraestructura de atacantes y mucho más. También puede marcar cualquier correo electrónico sospechoso para la lista incidentes.|

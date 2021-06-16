@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos de Caja fuerte y configuración global de vínculos de Caja fuerte en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61cb4746289a8acbdd9af7f668010604de511902
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 40ae52cfce53c3fa14253a94e72f1a2bccda9a86
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694502"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929832"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -43,7 +43,7 @@ No hay ninguna directiva de vínculos integrada o Caja fuerte predeterminada. Pa
 > [!NOTE]
 > Puede configurar la configuración global para la protección de Caja fuerte de vínculos **fuera** de Caja fuerte directivas de vínculos. Para obtener instrucciones, vea [Configure global settings for Caja fuerte Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
-Puede configurar directivas de vínculos de Caja fuerte en el Centro de seguridad y cumplimiento de & o en PowerShell (PowerShell de Exchange Online para organizaciones Microsoft 365 elegibles con buzones de correo en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online, pero con Microsoft Defender para suscripciones de complemento Office 365).
+Puede configurar directivas de vínculos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (powershell de Exchange Online para organizaciones Microsoft 365 elegibles con buzones de correo en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online, pero con Microsoft Defender para suscripciones de complemento Office 365).
 
 Los elementos básicos de una directiva Caja fuerte links son:
 
@@ -53,7 +53,7 @@ Los elementos básicos de una directiva Caja fuerte links son:
 > [!IMPORTANT]
 > Los administradores deben tener en cuenta las distintas opciones de configuración de SafeLinks. Una de las opciones disponibles es incluir información de identificación del usuario en SafeLinks. Esta característica permite a los *equipos de Operaciones* de seguridad investigar posibles riesgos de usuario, tomar medidas correctivas y limitar infracciones costosas.
 
-La diferencia entre estos dos elementos no es obvia al administrar las directivas de vínculos de Caja fuerte en el Centro de seguridad & cumplimiento:
+La diferencia entre estos dos elementos no es obvia al administrar las Caja fuerte links en el portal de Microsoft 365 Defender:
 
 - Al crear una directiva Caja fuerte vínculos, en realidad está creando una regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambos.
 - Al modificar una directiva Caja fuerte vínculos, la configuración relacionada con el nombre, la prioridad, la habilitada o deshabilitada y los filtros de destinatarios modifican la regla de vínculos seguros. Todas las demás opciones modifican la directiva de vínculos seguros asociada.
@@ -63,19 +63,19 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la **página Caja fuerte vínculos,** use <https://protection.office.com/safelinksv2> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la **página Caja fuerte vínculos,** use <https://security.microsoft.com/safelinksv2> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Debe tener asignados permisos antes de poder realizar los procedimientos descritos en este artículo:
-  - Para crear, modificar y eliminar directivas de vínculos de Caja fuerte, debe ser miembro de los grupos de  roles Administración de  la organización o Administrador de seguridad en el Centro de cumplimiento de & y miembro del grupo de roles Administración de la organización en Exchange Online.  
+  - Para crear, modificar y eliminar directivas de vínculos de Caja fuerte,  debe  ser miembro de los grupos de roles Administración de  la organización o Administrador de seguridad en el **portal** de Microsoft 365 Defender y miembro del grupo de roles Administración de la organización en Exchange Online.
   - Para obtener acceso de solo lectura a Caja fuerte de vínculos, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
 
-  Para obtener más información, vea [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   > 
-  > - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   . - El **grupo de roles Administración** de la organización de solo vista [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para obtener información sobre la configuración recomendada para Caja fuerte de vínculos, [consulte Caja fuerte configuración de directiva de vínculos.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
@@ -84,11 +84,11 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 - [Las nuevas características se agregan continuamente a Microsoft Defender para Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). A medida que se agregan nuevas características, es posible que deba realizar ajustes en las directivas de vínculos de Caja fuerte existentes.
 
-## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para crear directivas Caja fuerte vínculos
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Usar el portal Microsoft 365 Defender para crear directivas Caja fuerte vínculos
 
-La creación de una directiva de vínculos de Caja fuerte personalizada en el Centro de seguridad y cumplimiento de & crea la regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambos.
+La creación de una directiva Caja fuerte links personalizada en el portal de Microsoft 365 Defender crea la regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
+1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
 
 2. En la **página Caja fuerte,** haga clic en **Crear**.
 
@@ -158,29 +158,29 @@ La creación de una directiva de vínculos de Caja fuerte personalizada en el Ce
 
    Cuando haya terminado, haga clic en **Finalizar**.
 
-## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para ver las directivas Caja fuerte vínculos
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Use el portal Microsoft 365 Defender para ver las directivas Caja fuerte vínculos
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
+1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
 
 2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
 
    Los detalles de la directiva aparecen en un desplegable
 
-## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para modificar las directivas Caja fuerte vínculos
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Usar el portal Microsoft 365 Defender para modificar las directivas Caja fuerte vínculos
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
+1. En el portal Microsoft 365 Defender, vaya a ***Directivas & reglas** de \> **amenazas** \> **Caja fuerte vínculos**.
 
 2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
 
 3. En el desplegable de detalles de la directiva que aparece, haga clic **en Editar directiva**.
 
-La configuración disponible en el menú desplegable que aparece es idéntica a la descrita en la sección Usar el Centro de seguridad [y & cumplimiento](#use-the-security--compliance-center-to-create-safe-links-policies) para crear Caja fuerte de vínculos.
+La configuración disponible en el menú desplegable que aparece es idéntica a la descrita en la sección Usar el [portal de Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) para crear Caja fuerte directivas de vínculos.
 
 Para habilitar o deshabilitar una directiva o establecer el orden de prioridad de la directiva, consulte las secciones siguientes.
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Habilitar o deshabilitar directivas Caja fuerte vínculos
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
+1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
 
 2. Observe el valor de la **columna Estado:**
 
@@ -197,11 +197,11 @@ Para obtener más información sobre el orden de prioridad y cómo se evalúan y
 Caja fuerte Las directivas de vínculos se muestran en el orden en que se procesan (la primera directiva tiene el **valor de** prioridad 0).
 
 > [!NOTE]
-> En el Centro de & cumplimiento, solo puede cambiar la prioridad de la directiva de vínculos de Caja fuerte después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (lo que puede afectar a la prioridad de las reglas existentes).
+> En el portal Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva de vínculos de Caja fuerte después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (lo que puede afectar a la prioridad de las reglas existentes).
 
-Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista (no puede modificar directamente el número de **Prioridad** en el Centro de seguridad y cumplimiento).
+Para cambiar la prioridad de una directiva, mueva la directiva hacia arriba  o hacia abajo en la lista (no puede modificar directamente el número de prioridad en el portal de Microsoft 365 Defender).
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
+1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
 
 2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
 
@@ -217,9 +217,9 @@ Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista
 
 5. Cuando haya terminado, haga clic en **Cerrar**.
 
-## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>Usar el Centro de seguridad & cumplimiento para quitar directivas Caja fuerte vínculos
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Usar el portal de Microsoft 365 Defender para quitar directivas Caja fuerte vínculos
 
-1. En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**.
+1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
 
 2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
 
@@ -246,12 +246,12 @@ Crear una directiva Caja fuerte vínculos en PowerShell es un proceso de dos pas
 > 
 > - Puede crear una nueva regla de vínculos seguros y asignarle una directiva de vínculos seguros existente y sin asociar. Una regla de vínculos seguros no se puede asociar a más de una directiva de vínculos seguros.
 > 
-> - Puede configurar las siguientes opciones en nuevas directivas de vínculos seguros en PowerShell que no estén disponibles en el Centro de seguridad y cumplimiento de & hasta después de crear la directiva:
+> - Puede configurar las siguientes opciones en nuevas directivas de vínculos seguros en PowerShell que no estén disponibles en el portal de Microsoft 365 Defender hasta después de crear la directiva:
 > 
 >   - Cree la nueva directiva como deshabilitada (_Habilitada_ `$false` en el cmdlet **New-SafeLinksRule).**
 >   - Establezca la prioridad de la directiva durante la creación (_Prioridad_ _\<Number\>_ ) en el cmdlet **New-SafeLinksRule).**
 > 
-> - Una nueva directiva de vínculos seguros que cree en PowerShell no está visible en el Centro de seguridad & cumplimiento hasta que asigne la directiva a una regla de vínculos seguros.
+> - Una nueva directiva de vínculos seguros que cree en PowerShell no será visible en el portal de Microsoft 365 Defender hasta que asigne la directiva a una regla de vínculos seguros.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Paso 1: Usar PowerShell para crear una directiva de vínculos seguros
 
@@ -360,7 +360,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ge
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>Usar PowerShell para modificar directivas de vínculos seguros
 
-No puede cambiar el nombre de una directiva de vínculos seguros en PowerShell (el cmdlet **Set-SafeLinksPolicy** no tiene ningún _parámetro Name)._ Al cambiar el nombre de una directiva Caja fuerte vínculos en el Centro de seguridad & cumplimiento, solo se cambia el nombre de la regla de vínculos _seguros_.
+No puede cambiar el nombre de una directiva de vínculos seguros en PowerShell (el cmdlet **Set-SafeLinksPolicy** no tiene ningún _parámetro Name)._ Al cambiar el nombre de una directiva Caja fuerte links en el portal de Microsoft 365 Defender, solo se cambia el nombre de la regla de vínculos _seguros._
 
 La única consideración adicional para modificar directivas de vínculos seguros en PowerShell es la sintaxis disponible para el parámetro _DoNotRewriteUrls_ (la lista ["No volver](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)a escribir las siguientes direcciones URL" ):
 
@@ -472,13 +472,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Para comprobar que los Caja fuerte están analizando mensajes, compruebe los informes de Microsoft Defender disponibles Office 365 datos. Para obtener más información, vea [View reports for Defender for Office 365](view-reports-for-mdo.md) and Use Explorer in the Security & Compliance [Center](threat-explorer.md).
+Para comprobar que los Caja fuerte están analizando mensajes, compruebe los informes de Microsoft Defender disponibles Office 365 datos. Para obtener más información, vea Ver informes de [Defender para Office 365](view-reports-for-mdo.md) y Usar explorador en el portal de Microsoft 365 [Defender](threat-explorer.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 
 Para comprobar que ha creado, modificado o quitado correctamente las directivas de vínculos Caja fuerte, siga estos pasos:
 
-- En el Centro de seguridad & cumplimiento, vaya a **Directiva de administración** de amenazas ATP Caja fuerte \>  \> **Vínculos**. Compruebe la lista de directivas, sus **valores de** estado y sus **valores de** prioridad. Para ver más detalles, seleccione la directiva de la lista y vea los detalles en el menú desplegable.
+- En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** De amenazas \> **Caja fuerte** \> **Vínculos**. Compruebe la lista de directivas, sus **valores de** estado y sus **valores de** prioridad. Para ver más detalles, seleccione la directiva de la lista y vea los detalles en el menú desplegable.
 
 - En Exchange Online PowerShell o Exchange Online Protection PowerShell, reemplace por el nombre de la directiva o regla, ejecute el siguiente comando y compruebe \<Name\> la configuración:
 

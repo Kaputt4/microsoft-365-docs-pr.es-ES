@@ -17,16 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 92dfc279344b003ab651110375982b0f065dfb0d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 56a63c09690e28f0ca4990dcbcbcb6cfff7d5eef
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594174"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929508"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
 
@@ -61,7 +63,7 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 
 ¿Necesita ayuda para actualizar los dispositivos de su organización? Vea los siguientes recursos:
 
-|Sistema operativo | Resource |
+|Sistema operativo | Recurso |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|

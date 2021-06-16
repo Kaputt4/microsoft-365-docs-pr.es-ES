@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698969"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908106"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -37,7 +37,7 @@ Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualqui
 
 Dentro de este límite de 10 000 directivas, también hay algunos límites en el número máximo de directivas para la retención por carga de trabajo:
 
-- Exchange Online (cualquier configuración): 1800
+- Exchange (cualquier configuración): 1800
 - SharePoint o OneDrive (se incluyen automáticamente todos los sitios): 13
 - SharePoint o OneDrive (ubicaciones específicas incluidas o excluidas): 2600
 
@@ -49,10 +49,16 @@ Deben tenerse en cuenta ciertos límites por directiva si usa la configuración 
 
 Número máximo de elementos por directiva para la retención:
 
-  - 1000 buzones de correo (buzones de usuario o de grupo)
-  - Grupos de Microsoft 365 1 000.
-  - 1 000 usuarios para chats privados de Teams
-  - 100 sitios (OneDrive o SharePoint)
+- Buzones de Exchange: 1000
+- Grupos de Microsoft 365: 1000
+- Mensajes de canal de Teams: 1000
+- Chats de Teams: 1000
+- Mensajes de la comunidad de Yammer: 1000
+- Mensajes del usuario de Yammer: 1000
+- Sitios de SharePoint: 100
+- Cuentas de OneDrive: 100
+
+Skype Empresarial debe limitarse a usuarios específicos y el número máximo admitido por directiva es 1000.
 
 Estas limitaciones son por directiva, por lo que si necesita usar inclusiones o exclusiones específicas por las que se superan estos números, puede crear otras directivas de retención con la misma configuración de retención. Vea la siguiente sección con [algunos escenarios de ejemplo y soluciones](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) que usan varias directivas de retención por este motivo.
 
@@ -82,3 +88,13 @@ Ejemplo de SharePoint:
 - **Solución**: cree 20 directivas de retención para SharePoint con un período de retención de 10 años que incluya 100 sitios específicos y cree 80 directivas de retención para SharePoint con un período de retención de 4 años que incluya 100 sitios específicos.
     
     Como es necesario retener todos los sitios de SharePoint, debe crear directivas de retención que especifiquen los sitios específicos. Como una directiva de retención no admite más de 100 sitios específicos, debe crear varias directivas para los dos períodos de retención. Estas directivas de retención tienen el número máximo de sitios incluidos, por lo que el siguiente sitio nuevo que necesita retenerse requerirá una nueva directiva de retención, independientemente del periodo de retención.
+
+## <a name="maximum-number-of-items-for-disposition"></a>Número máximo de elementos para eliminar
+
+Para la [eliminación del contenido](disposition.md), hay algunos límites que deben tenerse en cuenta:
+
+- 1 000 000 elementos pendientes de eliminación por fase para cada etiqueta de retención
+
+- Prueba de eliminación hasta siete años después de eliminar el elemento, con un límite de 1 000 000 de elementos por etiqueta de retención para ese período. 
+    
+Si necesita una prueba de eliminación superior a ese límite de 1 000 000 para los elementos que se marcan como registros, póngase en contacto con el [Soporte técnico de Microsoft](../business-video/get-help-support.md).

@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Use el Explorador de amenazas o las detecciones en tiempo real en el Centro de cumplimiento de seguridad para investigar &amp; y responder a las amenazas de forma eficaz.
+description: Use el Explorador de amenazas o las detecciones en tiempo real en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65fe67103d9a380c63a0362594c23290457ea3aa
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 71052cc5a3874da250772bfa628417824ba51c63
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295327"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930138"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Búsqueda de amenazas en el Explorador de amenazas para Microsoft Defender para Office 365
 
@@ -42,7 +42,7 @@ En este artículo:
 
 Si su organización tiene [Microsoft Defender](defender-for-office-365.md)para Office 365 y tiene los [permisos,](#required-licenses-and-permissions)puede usar detecciones en tiempo **real** o **explorador** para detectar y corregir amenazas. 
 
-En el **Centro de & seguridad,** vaya a **Administración** de amenazas y, a continuación, elija **Explorador**  o **Detecciones en tiempo real.**
+En el **portal Microsoft 365 Defender,** vaya **a Correo electrónico & colaboración** y, a continuación, **elija Explorador**.
 
 <br>
 
@@ -50,7 +50,7 @@ En el **Centro de & seguridad,** vaya a **Administración** de amenazas y, a con
 
 |Con Microsoft Defender para Office 365 plan 2, verá:|Con Microsoft Defender para Office 365 plan 1, verá:|
 |---|---|
-|![Explorador de amenazas](../../media/threatmgmt-explorer.png)|![Detecciones en tiempo real](../../media/threatmgmt-realtimedetections.png)|
+|![Explorador de amenazas](../../media/path-to-explorer.png)|![Detecciones en tiempo real](../../media/threatmgmt-realtimedetections.png)|
 |
 
 Con estas herramientas, puede:
@@ -68,15 +68,15 @@ En Microsoft Defender para Office 365, hay dos planes de suscripción: plan 1 y 
 
 Defender for Office 365 Plan 1 usa detecciones en tiempo *real,* que es un subconjunto de la herramienta de búsqueda Explorador de amenazas *(también* denominada *Explorador)* del Plan 2. En esta serie de artículos, la mayoría de los ejemplos se crearon con el Explorador de amenazas completo. Los administradores deben probar los pasos de las detecciones en tiempo real para ver dónde se aplican.
 
-Para abrir la herramienta Explorador, vaya **a Security & Compliance Center** Threat  >  **management**  >  **Explorer** (o **Real-time detections**). De forma predeterminada, llegarás a la página  **Malware,** pero usa la lista desplegable Ver para familiarizarte con tus opciones. Si estás buscando phishing o buscando en una campaña de amenazas, elige esas vistas.
+Para abrir la herramienta Explorador, vaya **a Microsoft 365 Portal de Defender** Correo electrónico & explorador de  >    >  **colaboración.** De forma predeterminada, llegarás a la página  **Malware,** pero usa la lista desplegable Ver para familiarizarte con tus opciones. Si estás buscando phishing o buscando en una campaña de amenazas, elige esas vistas.
 
 > [!div class="mx-imgBorder"]
-> ![Vista desplegable en el Explorador de amenazas](../../media/threat-explorer-view-drop-down.png)
+> ![Vista desplegable en el Explorador de amenazas](../../media/view-drop-down.png)
 
 Una vez que una persona de operaciones de seguridad (Operaciones de sec) selecciona los datos que desea ver, si el  ámbito es una vista estrecha como **envíos** de usuario o una vista más amplia, como Todo el correo **electrónico,** puede usar el botón Remitente para filtrar aún más. Recuerde seleccionar Actualizar para completar las acciones de filtrado.
 
 > [!div class="mx-imgBorder"]
-> ![Botón Remitente en el Explorador de amenazas](../../media/threat-explorer-sender-button.png)
+> ![Botón Remitente en el Explorador de amenazas](../../media/sender-drop-down.png)
 
 El enfoque de refinamiento en el Explorador o la detección en tiempo real se puede pensar en capas. El primero es **View**. El segundo se puede pensar como un *foco filtrado.* Por ejemplo, puede volver a seguir los pasos que realizó para encontrar una amenaza registrando sus decisiones como esta: Para encontrar el problema en el Explorador, elegí la vista malware con un foco de filtro **de destinatarios**. Esto facilita el retraso de los pasos.
 
@@ -86,7 +86,7 @@ El enfoque de refinamiento en el Explorador o la detección en tiempo real se pu
 Los refinamientos se pueden realizar en intervalos de fechas mediante los controles de intervalo de fechas. Aquí puede ver explorador en la vista **Malware,** con un foco de filtro **de tecnología** de detección. Pero es el botón **Filtro** avanzado el que permite a los equipos de Sec Ops profundizar. 
 
 > [!div class="mx-imgBorder"]
-> ![Filtro avanzado en el Explorador de amenazas](../../media/threat-explorer-advanced-filter.png)
+> ![Filtro avanzado en el Explorador de amenazas](../../media/advanced-filter.png)
 
 Al hacer **clic en** el filtro Avanzado, aparece un panel que permitirá a los cazacarros de Sec Ops crear consultas por sí mismos, lo que les permite incluir o excluir la información que necesitan ver. Tanto el gráfico como la tabla de la página Explorador reflejarán sus resultados. 
 
@@ -99,7 +99,7 @@ Use el **botón Opciones de** columna para obtener el tipo de información de la
 > ![Botón De opciones de columna resaltado](../../media/threat-explorer-column-options.png)
 
 > [!div class="mx-imgBorder"]
-> ![Opciones disponibles en columnas](../../media/threat-explorer-column-options-details.png)
+> ![Opciones disponibles en columnas](../../media/column-options.png)
 
 En el mismo mien, asegúrate de probar las opciones de visualización. Diferentes audiencias reaccionarán bien a diferentes presentaciones de los mismos datos. Para algunos visores, el mapa **Orígenes** de correo electrónico puede mostrar que una amenaza es generalizada o discreta más rápidamente que la opción Mostrar **campaña** justo al lado. Sec Ops puede hacer uso de estas pantallas para hacer puntos que subrayan la necesidad de seguridad y protección, o para la comparación posterior, para demostrar la eficacia de sus acciones. 
 
@@ -144,7 +144,7 @@ Aquí, el analista puede realizar acciones como notificar el correo como correo 
 
 Al navegar desde una alerta al Explorador de amenazas, **la vista** se filtrará mediante el identificador **de alerta**. Esto también se aplica en la detección en tiempo real. Se muestran los mensajes relevantes para la alerta específica y un total de correo electrónico (un recuento). Podrás ver si un mensaje formaba parte de una alerta, así como navegar de ese mensaje a la alerta relacionada.
 
-Por último, el identificador de alerta se incluye en la dirección URL, por ejemplo: `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+Por último, el identificador de alerta se incluye en la dirección URL, por ejemplo: `https://https://security.microsoft.com/viewalerts`
 
 > [!div class="mx-imgBorder"]
 > ![Filtrado del identificador de alerta](../../media/AlertID-Filter.png)
@@ -252,7 +252,7 @@ Debe tener [Microsoft Defender para Office 365](defender-for-office-365.md) usar
 
 Para ver y usar detecciones en tiempo real o explorador, debe tener lo siguiente:
 
-- Para el Centro de & seguridad:
+- Para el portal Microsoft 365 Defender:
 
   - Administración de la organización
   - Administrador de seguridad (se puede asignar en el centro Azure Active Directory de administración ( <https://aad.portal.azure.com> )
@@ -267,7 +267,7 @@ Para ver y usar detecciones en tiempo real o explorador, debe tener lo siguiente
 
 Para obtener más información sobre roles y permisos, consulte los siguientes recursos:
 
-- [Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)
+- [Permisos en el portal de Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)
 - [Permisos de características de Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: Office 365 GCC High y DoD tienen requisitos de seguridad de red adicionales'
 hideEdit: true
-ms.openlocfilehash: 4817edfcea638324e26eb855d1ea33936be1bfb4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f4c03d364e84d89a1b12e4d858ab46eb3be6ae5e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693915"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926564"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Requisitos de seguridad de conexión de red adicionales para Office 365 GCC High y DOD
 
@@ -44,18 +44,18 @@ Para permitir que el servicio se comunique con  los puntos de conexión locales,
 > [!WARNING]
 > Todas las solicitudes tienen **un** SLA de tres semanas y no se pueden acelerar debido a los controles de seguridad y cumplimiento requeridos y las canalizaciones de implementación.  Esto incluye solicitudes de red de incorporación iniciales, así como cualquier cambio después de migrar al servicio.  Asegúrese de que los equipos de red son conscientes de esta escala de tiempo e incluirla en sus ciclos de planeación.
 
-Envíe un correo electrónico a [Office 365 Administración Pública lista blanca de red](mailto:o365gwlt@microsoft.com) con la siguiente información:
+Envíe un correo electrónico [a Office 365 Administración Pública Allow-List solicitudes](mailto:o365gwlt@microsoft.com) con la siguiente información:
 
-* **To**: [Office 365 Administración Pública Network Whitelist](mailto:o365gwlt@microsoft.com)
+* **To**: [Office 365 Administración Pública Allow-List Requests](mailto:o365gwlt@microsoft.com)
 * **From**: A tenant administrator: the send email **must** match a Global Administrator contact in your tenant
-* **Asunto de** correo electrónico: Office 365 GCC solicitud de red alta: contoso.onmicrosoft.us (reemplace esto por su nombre de inquilino)
+* **Asunto de correo** electrónico: Office 365 GCC solicitud de red alta : contoso.onmicrosoft.us (reemplace por el nombre del inquilino)
 
 El cuerpo del mensaje debe incluir los siguientes datos:
 
-* Nombre Microsoft Online Services inquilino (es decir, contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
+* Nombre Microsoft Online Services inquilino (por ejemplo, contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
 * Una lista de distribución de correo electrónico con la que Microsoft se comunicará para las comunicaciones en marcha relacionadas con los cambios de red o el seguimiento de subredes no válidas
-* Indicar si planea usar la Microsoft Teams híbrida con las implementaciones locales
-* Dirección URL accesible externamente (por ejemplo, sts.contoso.com) e intervalo de direcciones IP en la notación CIDR (por ejemplo, 10.1.1.0/28)
+* Indica si planeas usar la Microsoft Teams híbrida con las implementaciones locales
+* Dirección URL accesible externamente del sistema de identidad federada (por ejemplo, sts.contoso.com) e intervalo de direcciones IP en la notación CIDR (por ejemplo, . 10.1.1.0/28)
 * Dirección URL de lista de revocación de certificados PKI local e intervalo de direcciones IP en notación CIDR
 * Dirección URL y intervalo de direcciones IP accesibles externamente para Exchange Server implementación local en notación CIDR
 * Dirección URL y intervalo de direcciones IP accesibles externamente para Skype Empresarial implementación local en notación CIDR

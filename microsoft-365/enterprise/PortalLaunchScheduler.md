@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo iniciar el portal con el programador de inicio del portal
-ms.openlocfilehash: bf01f6ae93b424543a6a509f89961a1b7a0c9ad7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb092ea2500aaa139a34e511d224ec4419e04cb5
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841671"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930264"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal con el programador de inicio SharePoint portal de inicio
 
@@ -116,7 +116,10 @@ Anteriormente, los inicios del portal solo se podían programar a través ShareP
 7. Determine quién debe ver el sitio inmediatamente e introduzca su información en el **campo Usuarios exentos de oleadas.** Estos usuarios se excluyen de las oleadas y no se redirigirán antes, durante o después del inicio.
 
     > [!NOTE]
-    > Se pueden agregar hasta 50 usuarios o grupos de seguridad distintos como máximo. Use grupos de seguridad cuando necesite más de 50 personas para obtener acceso al portal antes de que las oleadas comiencen a iniciarse.
+    > Se pueden usar hasta 50 usuarios o grupos de seguridad distintos como máximo para todo el inicio. Cada inicio es independiente entre sí, por lo que si programa un inicio en otro portal, podría usar hasta 50 usuarios o grupos de seguridad para ese inicio. Además, puede usar hasta 20 usuarios o grupos de seguridad distintos por oleada. 
+
+>El programador de inicio del portal admite grupos de seguridad y grupos de seguridad habilitados para correo. 
+
 
 8. Confirme los detalles de inicio del portal y seleccione **Programar**. Una vez programado el inicio, los cambios en la página principal del portal de SharePoint tendrán que recibir un resultado de diagnóstico correcto antes de que se reanude el inicio del portal.
 

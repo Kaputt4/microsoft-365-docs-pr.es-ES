@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado del usuario final para mensajes en cuarentena en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f5eafbb51cd0ff32c69fa0cff85729ef95d3d1f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 30f82abc245a2f6022bd1a75b57e9d20e3e32a32
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274993"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929892"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Usar notificaciones de correo no deseado de usuario para liberar e informar de mensajes en cuarentena
 
@@ -58,9 +58,9 @@ Una notificación de correo no deseado del usuario final contiene la siguiente i
 
 - **Bloquear remitente:** haga clic en este vínculo para agregar el remitente a la lista Remitentes bloqueados del buzón. Para más información, consulte [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-- **Versión:** para mensajes de correo no deseado (no suplantación de identidad), puede liberar el mensaje aquí sin ir a Poner en cuarentena el Centro de seguridad & cumplimiento.
+- **Versión:** para mensajes de correo no deseado (no suplantación de identidad), puede liberar el mensaje aquí sin ir a Cuarentena del portal de Microsoft 365 Defender.
 
-- **Revisar:** haga clic en este vínculo para ir a Cuarentena en el Centro de seguridad y cumplimiento de &, donde puede (según por qué el mensaje se ha puesto en cuarentena) ver, liberar, eliminar o notificar los mensajes en cuarentena. Para obtener más información, vea Buscar y liberar mensajes [en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md).
+- **Review**: Click this link to go to Quarantine in the Microsoft 365 Defender portal, where you can (depending on why the message was quarantined) view, release, delete or report your quarantined messages. Para obtener más información, vea Buscar y liberar mensajes [en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md).
 
 ![Ejemplo de notificación de correo no deseado para el usuario final](../../media/end-user-spam-notification.png)
 

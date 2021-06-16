@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Summary: Understand what has changed for moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591785"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930408"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Qué cambiará después de la migración a Office 365 en las nuevas regiones del centro de datos alemán
 
@@ -68,13 +68,19 @@ Consideraciones a tener en cuenta:
 
 - Después de la migración de las cargas de trabajo individuales, las funciones adicionales están disponibles a través de los servicios Office 365 (como Microsoft Planner y Microsoft Flow) debido a las nuevas suscripciones de Office 365 servicios. Si es apropiado para su organización, el inquilino o el administrador de licencias pueden deshabilitar los nuevos planes de servicio mientras planea la administración de cambios para introducir los nuevos servicios. Para obtener instrucciones sobre cómo deshabilitar los planes de servicio asignados a las licencias de los usuarios, [vea Disable access to Microsoft 365 services while assigning user licenses](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 - Exchange de recursos de transición del extremo de Alemania heredado al punto de `outlook.office.de` conexión Office 365 servicios después de la `outlook.office365.com` migración. Los usuarios pueden tener acceso a su buzón migrado mediante la dirección URL heredada hasta que se complete la migración. Los clientes deben realizar la transición de usuarios a la nueva dirección URL tan pronto como sea posible Exchange la migración para evitar que afecte a la retirada del entorno de Alemania. Las Office 365 de servicios de Outlook solo estarán disponibles después de que Exchange la migración.
 
 - Los buzones se migran como un proceso back-end. Los usuarios de la organización pueden estar en Microsoft Cloud Deutschland o en la región alemana durante la transición y formar parte de la misma organización Exchange (en la misma lista global de direcciones).
 
 - Los usuarios del Outlook Web App que tienen acceso al servicio mediante una dirección URL donde no reside su buzón de correo verán un mensaje de autenticación adicional. Por ejemplo, si el buzón del usuario está en los servicios de Office 365 y la conexión Outlook Web App del usuario usa el extremo heredado , el usuario primero se autenticará en y, a continuación, en `outlook.office.de` `login.microsoftonline.de` `login.microsoftonline.com` . Una vez completada la migración, el usuario puede obtener acceso a la nueva dirección URL ( ), y solo verá la solicitud de inicio de sesión única `https://outlook.office365.com` y esperada. 
+
+## <a name="sharepoint-online"></a>SharePoint Online
+
+En SharePoint Online y OneDrive para la Empresa, puede compartir elementos a través de Outlook. Después de presionar el Outlook, se crea un vínculo que se puede compartir y se inserta en un nuevo mensaje en el Outlook Web App.
+
+Compartir elementos en SharePoint Online y OneDrive para la Empresa a través de Outlook ya no funciona después de que se haya completado la migración de SharePoint Online. Reconocemos que se trata de un problema conocido. Sin embargo, dado Outlook esta característica está en la ruta de desuso, la solución del problema no está planeada hasta que se desaproteba.
 
 ## <a name="office-services"></a>Office Servicios
 

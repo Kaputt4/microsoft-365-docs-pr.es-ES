@@ -17,16 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 939fea5b815827f5afbe6cdf78fd9335da6337e8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 832414e9b2a88114cafafbba78e22ea656cc7949
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594066"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930468"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 
@@ -67,7 +69,7 @@ Los métodos de implementación varían según el sistema operativo y los métod
 | Windows 10     | [Directiva de grupo](configure-endpoints-gp.md)<p>[Configuration Manager](configure-endpoints-sccm.md)<p>[Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<p>[Script local](configure-endpoints-script.md) <p>**NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.         |
 | Windows 8.1 Enterprise <p>Windows 8.1 Pro <p>Windows 7 SP1 Enterprise <p>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<p>**NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).        |
 | Windows Server 2019 y versiones posteriores <p>Windows Edición principal de Server 2019 <p>Windows Server version 1803 and later | [Script local](configure-endpoints-script.md) <p>[Directiva de grupo](configure-endpoints-gp.md) <p>[Configuration Manager](configure-endpoints-sccm.md) <p>[System Center Configuration Manager](configure-endpoints-sccm.md) <p>[Scripts de incorporación de VDI para dispositivos no persistentes](configure-endpoints-vdi.md) <p>**NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.    |
-| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Centro de seguridad de Microsoft Defender](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
+| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Centro de seguridad de Microsoft Defender](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
 | macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave) | [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
 | iOS | [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
 | Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o LTS superior<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
@@ -78,7 +80,7 @@ Para comprobar que los dispositivos incorporados están correctamente conectados
 
 |Sistema operativo  |Instrucciones  |
 |---------|---------|
-| Windows 10 <p>Windows Server 2019 <p>Windows Servidor, versión 1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     | Consulte [Ejecutar una prueba de detección.](run-detection-test.md) <p>Visite el sitio de escenarios de demostración de Defender for Endpoint ( ) y [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) pruebe uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de** protección entregado en la nube.    |
+| Windows 10 <p>Windows Server 2019 <p>Windows Servidor, versión 1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     | Consulte [Ejecutar una prueba de detección.](run-detection-test.md) <p>Visite el sitio de escenarios de demostración de Defender for Endpoint ( ) y [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) pruebe uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de** protección entregado en la nube.    |
 | macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)    | Descargue y use la aplicación DE BRICOLAJE en [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <p>Para obtener más información, [vea Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).        |
 | Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o LTS superior<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | 1. Ejecute el siguiente comando y busque un resultado de **1**: <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Abra una ventana terminal y ejecute el siguiente comando: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: <br/>`mdatp threat list`. <p>Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
 

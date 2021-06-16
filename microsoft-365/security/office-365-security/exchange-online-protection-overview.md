@@ -15,12 +15,12 @@ ms.custom:
 description: Obtenga información sobre Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad083e828fbed27cce4b8929c1bee3081c983c17
-ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
+ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52707289"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930168"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -34,7 +34,7 @@ ms.locfileid: "52707289"
 Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que protege su organización contra correo no deseado, malware y otras amenazas de correo electrónico. EOP se incluye en todas las Microsoft 365 con Exchange Online buzones de correo.
 
 > [!NOTE]
-> EOP también está disponible por sí mismo para proteger los buzones locales y en entornos híbridos para proteger los buzones de correo Exchange locales. Para obtener más información, vea [Standalone Exchange Online Protection](/exchange/standalone-eop/standaonline-eop).
+> EOP también está disponible por sí mismo para proteger los buzones locales y en entornos híbridos para proteger los buzones de correo Exchange locales. Para obtener más información, vea [Standalone Exchange Online Protection](/exchange/standalone-eop/standalone-eop).
 
 Los pasos para configurar las características de seguridad de EOP y una comparación con la seguridad agregada que obtiene en Microsoft Defender para Office 365, consulte [Protect against threats](protect-against-threats.md). La configuración recomendada para las características de EOP está disponible en Configuración recomendada para EOP y [Microsoft Defender para Office 365 seguridad.](recommended-settings-for-eop-and-office365.md)
 

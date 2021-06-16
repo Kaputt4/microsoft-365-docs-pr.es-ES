@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ade50e85dbfcf5f59921a65d5b97bb47d21e5b12
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 03d05966401c8f3a8bdcec413e85c9a6d2a3ec5c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570929"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926576"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
@@ -66,7 +67,7 @@ Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de evento
 |1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
 |1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 * [Protección de red](network-protection.md)
 * [Habilitar la protección de red](enable-network-protection.md)

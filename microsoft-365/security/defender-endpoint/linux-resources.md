@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933330"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930372"
 ---
 # <a name="resources"></a>Recursos
 
@@ -31,6 +31,7 @@ ms.locfileid: "51933330"
 
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -69,6 +70,7 @@ Si puede reproducir un problema, aumente primero el nivel de registro, ejecute e
    ```bash
    mdatp log level set --level info
    ```
+
    ```Output
    Log level configured successfully
    ```
@@ -77,7 +79,8 @@ Si puede reproducir un problema, aumente primero el nivel de registro, ejecute e
 
 Si se produce un error durante la instalación, el instalador solo informará de un error general.
 
-El registro detallado se guardará en `/var/log/microsoft/mdatp_install.log` . Si tiene problemas durante la instalación, envíenos este archivo para que podamos diagnosticar la causa.
+El registro detallado se guardará en `/var/log/microsoft/mdatp/install.log` .
+Si tiene problemas durante la instalación, envíenos este archivo para que podamos diagnosticar la causa.
 
 ## <a name="uninstall"></a>Desinstalar
 
@@ -101,10 +104,10 @@ De forma predeterminada, la herramienta de línea de comandos genera el resultad
 
 En la tabla siguiente se enumeran los comandos de algunos de los escenarios más comunes. Ejecute `mdatp help` desde terminal para ver la lista completa de comandos admitidos.
 
-|Group                 |Escenario                                                |Comando                                                                |
+|Grupo                 |Escenario                                                |Comando                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Configuración         |Activar/desactivar la protección en tiempo real                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|Configuración         |Activar/desactivar la supervisión del comportamiento                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
+|Configuración         |Activar/desactivar la supervisión del comportamiento                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |Configuración         |Activar/desactivar la protección en la nube                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |Configuración         |Activar/desactivar diagnósticos de productos                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |Configuración         |Activar/desactivar el envío automático de muestra                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
@@ -120,8 +123,8 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Configuración         |Activar la protección de LA PUA                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |Configuración         |Desactivar la protección de LA PUA                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |Configuración         |Activar el modo de auditoría para la protección de PUA                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
-|Diagnostics           |Cambiar el nivel de registro                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|Diagnostics           |Generar registros de diagnóstico                                |`mdatp diagnostic create --path [directory]`                           |
+|Diagnóstico           |Cambiar el nivel de registro                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
+|Diagnóstico           |Generar registros de diagnóstico                                |`mdatp diagnostic create --path [directory]`                           |
 |Salud                |Comprobar el estado del producto                              |`mdatp health`                                                         |
 |Protección            |Examinar una ruta de acceso                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
 |Protección            |Realizar un examen rápido                                         |`mdatp scan quick`                                                     |

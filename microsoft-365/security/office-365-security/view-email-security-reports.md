@@ -1,5 +1,5 @@
 ---
-title: Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
+title: Ver informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el Centro de seguridad & cumplimiento.
+description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el portal Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bb7570722fcc957ca86d68f6b42ef254578d7bd7
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531023"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930330"
 ---
-# <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,9 +35,9 @@ ms.locfileid: "52531023"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Hay varios informes disponibles en el Centro de seguridad y cumplimiento de & para ayudarle [a](https://protection.office.com) ver cómo las características de seguridad del correo electrónico, como el correo no deseado, antimalware y las características de cifrado en Microsoft 365 protegen su organización. Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-these-reports)puede ver estos informes en el Centro de seguridad & cumplimiento yendo al **Panel de** \> **informes**. Para ir directamente al panel Informes, abra <https://protection.office.com/insightdashboard> .
+Hay varios informes disponibles en el portal de [Microsoft 365 Defender](https://security.microsoft.com) para ayudarle a ver cómo las características de seguridad de correo electrónico, como el correo no deseado, antimalware y las características de cifrado en Microsoft 365 protegen su organización. Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-these-reports)puede ver estos informes en el  portal de Microsoft 365 Defender yendo a Informes de correo electrónico & colaboración Correo electrónico & informes de \>  \> **colaboración**. Para ir directamente al panel Informes, abra <https://security.microsoft.com/emailandcollabreport> .
 
-![Panel de informes en el Centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Panel de informes en el portal de Microsoft 365 Defender](../../media/email-collaboration-reports.png)
 
 ## <a name="compromised-users-report"></a>Informe de usuarios comprometidos
 
@@ -50,7 +50,7 @@ El **informe Usuarios comprometidos** muestra el número de  cuentas  de usuario
 
 La vista de agregado muestra los datos de los últimos 90 días y la vista de detalles muestra los datos de los últimos 30 días.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione \>  **Usuarios comprometidos.** Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=CompromisedUsers> .
+Para ver el informe, abra el portal  de [Microsoft 365 Defender](https://security.microsoft.com), vaya a Informes De correo electrónico & colaboración Correo electrónico & informes de colaboración y haga clic en Ver detalles en Usuarios en \>  \>   **peligro.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/CompromisedUsers> .
 
 Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **Filtros** y seleccionando uno o varios de los siguientes valores:
 
@@ -80,7 +80,7 @@ El **informe de cifrado** está disponible en EOP (suscripciones con buzones en 
 
 La vista de agregado permite filtrar durante los últimos 90 días, mientras que la vista de detalles permite filtrar durante 10 días.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel \> **de informes** y seleccione **Informe de cifrado**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=EncryptionReport> .
+Para ver el informe, abra el portal  de [Microsoft 365 Defender](https://security.microsoft.com), vaya a Informes De correo electrónico & colaboración Informes de & de colaboración y haga clic en Ver detalles en \>  \>  Informe **de cifrado**.  Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=EncryptionReport> .
 
 Para obtener más información sobre el cifrado, vea [Cifrado de correo electrónico en Microsoft 365](../../compliance/email-encryption.md).
 
@@ -153,7 +153,7 @@ El **informe Detecciones de** malware en el correo electrónico muestra informac
 
  El filtro de vista agregado permite 90 días, mientras que el filtro de tabla de detalles solo permite 10 días.
 
-Para ver el informe, abra el Centro de  [seguridad y & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Detecciones de \>  malware en el **correo electrónico**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=MalwareDetections> .
+Para ver el informe, abra el portal de  [Microsoft 365 Defender](https://security.microsoft.com), vaya a Informes De correo electrónico & colaboración Informes de colaboración correo electrónico & y haga clic en Ver detalles en Malware detectado en correo \>  \>  **electrónico**.  Para ir directamente al informe, abra <https://security.microsoft.com/reports/MalwareDetections> .
 
 ![Detecciones de malware en el widget de correo electrónico en el panel Informes](../../media/malware-detections-widget.png)
 
@@ -191,7 +191,7 @@ El **informe Detecciones de** correo no deseado muestra los mensajes de correo e
 
 La vista de agregado permite el filtrado de 90 días, mientras que la tabla de detalles permite el filtrado de 10 días.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Detecciones de correo \>  no **deseado.** Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=SpamDetections> .
+Para ver el informe, abra el portal de  [Microsoft 365 Defender](https://security.microsoft.com), vaya a Informes de colaboración de correo electrónico \> **&** Correo electrónico \> **&**  informes de colaboración y haga clic en Ver detalles en Detecciones de correo **no** deseado . Para ir directamente al informe, abra <https://security.microsoft.com/reports/SpamDetections> .
 
 ![Widget de detecciones de correo no deseado en el panel Informes](../../media/spam-detections-report-widget.png)
 
@@ -255,7 +255,7 @@ La vista de agregado del informe permite 45 días de filtrado, mientras que la v
 
 <sup>\*</sup> Con el tiempo, podrás usar hasta 90 días de filtrado.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y \>  seleccione **Detecciones de suplantación de seguridad.** Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=SpoofMailReport> .
+Para ver el informe, abra el portal de  [Microsoft 365 Defender](https://security.microsoft.com), vaya a Informes de correo electrónico & colaboración Informes de colaboración correo electrónico & y haga clic en Ver detalles en Detecciones de suplantación \>  \>  .   Para ir directamente al informe, abra <https://security.microsoft.com/reports/SpoofMailReport> .
 
 ![Widget Detecciones de suplantación en el panel Informes](../../media/spoof-detections-widget.png)
 
@@ -301,7 +301,7 @@ El informe proporciona el recuento de mensajes de correo electrónico con conten
 
 **Nota:** Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como cinco mensajes diferentes y no un mensaje.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Estado de protección \>  **contra amenazas**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
+Para ver el informe, abra el portal de  [Microsoft 365 Defender](https://security.microsoft.com), vaya a Informes de correo electrónico & colaboración Correo electrónico & informes de colaboración y haga clic en Ver detalles en Estado de protección contra \>  \>   **amenazas.** Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
 - Microsoft Defender para Office 365:<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
@@ -430,7 +430,7 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
 - **Ver datos por: Contenido \> Malware**:
 
   - **Fecha**
-  - **Location**
+  - **Ubicación**
   - **Dirigido por**
   - **Nombre de malware**
 
@@ -479,7 +479,7 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
 
 El **informe de malware** top muestra los distintos tipos de malware detectados por la protección [antimalware en EOP](anti-malware-protection.md).
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel \> **de informes** y seleccione Top **malware**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=TopMalware> .
+Para ver el informe, abra el portal  de [Microsoft 365 Defender](https://security.microsoft.com), vaya a Informes de correo electrónico & colaboración Correo electrónico & informes de colaboración y haga clic en Ver detalles en Top \>  \>  **malware**.  Para ir directamente al informe, abra <https://security.microsoft.com/reports/TopMalware> .
 
 ![Widget de malware superior en el panel Informes](../../media/top-malware-report-widget.png)
 
@@ -504,31 +504,29 @@ El **informe** de mensajes notificados por el usuario muestra información sobre
 
 Los detalles están disponibles para cada mensaje, incluido el motivo de entrega, como una excepción de directiva de correo no deseado o una regla de flujo de correo configurada para su organización. Para ver detalles, seleccione un elemento en la lista de  informes de usuario y, a continuación, vea la información en las pestañas Resumen **y** Detalles.
 
-![El informe User-Reported mensajes muestra los mensajes que los usuarios etiquetan como correo no deseado, no como correo no deseado o intentos de suplantación de identidad.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![El informe De mensajes notificados por el usuario muestra los mensajes que los usuarios etiquetan como correo no deseado, no como correo no deseado o intentos de suplantación de identidad.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
-Para ver este informe, en el Centro de [seguridad & cumplimiento](https://protection.office.com), realice una de las siguientes acciones:
+Para ver este informe, en el [portal de Microsoft 365 Defender,](https://security.microsoft.com)vaya a Informes de correo electrónico & colaboración Correo electrónico & informes de colaboración  \>  \> **Mensajes** \> **notificados por el usuario.**
 
-- Vaya a **Administración de amenazas** \> **Mensajes** \> **notificados por el usuario.**
+- Vaya a **Informes Correo** electrónico \> **& colaboración** Correo & informes de \> **colaboración Del** \> **usuario.**
 
-- Vaya a **Administración de amenazas** \> **Revisar** \> **mensajes notificados por el usuario**.
-
-![En el Centro de seguridad & cumplimiento, elija Administración de amenazas \> Revisar \> mensajes notificados por el usuario](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![En el portal de Microsoft 365 Defender, elija Informes de correo electrónico & colaboración Correo & informes de colaboración \> \> Mensajes \> notificados por el usuario](../../media/user-reported-messages.png)
 
 > [!IMPORTANT]
-> Para que el informe de mensajes notificados  por el usuario funcione correctamente, el registro de auditoría debe estar activado para el Office 365 usuario. Esto lo suele hacer alguien que tenga el rol Registros de auditoría asignado en Exchange Online. Para obtener más información, vea Activar Microsoft 365 o desactivar la búsqueda del [registro de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
+> Para que el informe de mensajes notificados por el usuario funcione **correctamente,** el registro de auditoría debe estar activado para el Office 365 usuario. Esto lo suele hacer alguien que tenga el rol Registros de auditoría asignado en Exchange Online. Para obtener más información, vea Activar Microsoft 365 o desactivar la búsqueda del [registro de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos se necesitan para ver estos informes?
 
-Para ver y usar los informes descritos en este artículo, debe ser miembro de uno de los siguientes grupos de roles en el Centro de seguridad & cumplimiento:
+Para ver y usar los informes descritos en este artículo, debe ser miembro de uno de los siguientes grupos de roles en el portal de Microsoft 365 Defender:
 
 - **Administración de organizaciones**
 - **Administrador de seguridad**
 - **Lector de seguridad**
 - **Lector global**
 
-Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a  los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento de & y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
@@ -538,8 +536,8 @@ Si no ve datos en los informes, compruebe que las directivas están configuradas
 
 [Protección contra correo no deseado y antimalware en EOP](anti-spam-and-anti-malware-protection.md)
 
-[Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
+[Informes e información inteligentes en el portal de Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
 
-[Ver informes de flujo de correo en el Centro de seguridad & cumplimiento](view-mail-flow-reports.md)
+[Ver informes de flujo de correo en el portal de Microsoft 365 Defender](view-mail-flow-reports.md)
 
 [Ver informes de Defender para Office 365](view-reports-for-mdo.md)

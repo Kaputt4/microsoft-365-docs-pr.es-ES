@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: En este artículo se proporciona información sobre cómo proteger el acceso de administrador global a su Microsoft 365 suscripción.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ade5fd8070a656f976caa75c16ab92cadb7b64a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1c929651f3e70a1aeef16cdf48d853d675820833
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929053"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926552"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Proteger las cuentas Microsoft 365 de administrador global
 
@@ -180,6 +180,6 @@ Si va a configurar la identidad de su Microsoft 365 suscripción, vea:
 - [Preparar la sincronización de](prepare-for-directory-synchronization.md) directorios si usa la identidad híbrida
 
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Microsoft 365 guía de seguridad](/office365/securitycompliance/security-roadmap)
