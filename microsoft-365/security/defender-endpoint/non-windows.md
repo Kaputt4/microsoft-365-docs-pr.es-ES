@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4714ad9a4388654cbf865ed54afe260a67d724f
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: dc5710a73685c67eff17c0f281bd14e48707e60f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957508"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964793"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender para punto de conexión para plataformas que no sean de Windows
 
@@ -47,11 +47,26 @@ Microsoft Defender para endpoint en macOS ofrece funcionalidades de antivirus y 
 
 Para obtener más información sobre cómo empezar, visite la documentación de Defender for Endpoint en [macOS](microsoft-defender-endpoint-mac.md).
 
+>[!NOTE]
+>Actualmente, no se admiten las siguientes funcionalidades en los puntos de conexión de macOS:
+>- Prevención de pérdida de datos
+>- Respuesta en directo
+>- SIEM
+
+
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
 Microsoft Defender para Endpoint en Linux ofrece capacidades de prevención (AV) para servidores Linux. Esto incluye una experiencia completa de línea de comandos para configurar y administrar el agente, iniciar exámenes y administrar amenazas. Se admiten versiones recientes de las seis distribuciones más comunes de Linux Server: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS o superior LTS, SLES 12+, Debian 9+y Oracle Linux 7.2. Microsoft Defender para Endpoint en Linux se puede implementar y configurar con Puppet, Ansible o con la herramienta de administración de configuración de Linux existente. Para obtener información sobre las características y ventajas clave, lea nuestros [anuncios](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux).
 
 Para obtener más información sobre cómo empezar, visite la documentación de Microsoft Defender para Endpoint en [Linux](microsoft-defender-endpoint-linux.md).
+
+>[!NOTE]
+>Actualmente, no se admiten las siguientes funcionalidades en los puntos de conexión de Linux:
+>- Prevención de pérdida de datos
+>- Respuesta en directo
+>- SIEM
+
+
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender para punto de conexión en Android
 
@@ -69,7 +84,7 @@ Para obtener más información sobre cómo empezar, visite la documentación de 
 
 Los usuarios con licencia elegibles pueden usar Microsoft Defender para Endpoint en hasta cinco dispositivos simultáneos. Microsoft Defender para endpoint también está disponible para la compra desde un Proveedor de soluciones en la nube (CSP).
 
-Los clientes pueden obtener Microsoft Defender para Endpoint en macOS a través de una licencia independiente de Microsoft Defender para Endpoint, como parte de Microsoft 365 A5/E5 o Microsoft 365 Security.
+Los clientes pueden obtener Microsoft Defender para Endpoint en macOS a través de una licencia independiente de Microsoft Defender para Endpoint, como parte de Microsoft 365 A5/E5, o Microsoft 365 Seguridad.
 
 Las funcionalidades anunciadas recientemente de Microsoft Defender para Endpoint en Android e iOS se incluyen en las ofertas mencionadas anteriormente como parte de los cinco dispositivos calificados para usuarios con licencia elegibles.
 

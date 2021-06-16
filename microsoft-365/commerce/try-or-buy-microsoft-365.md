@@ -16,15 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-search.appverid: MET150
+search.appverid: GEA150
 description: Regístrate para una prueba gratuita de 30 días para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios.
 ms.date: 08/07/2020
-ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583453"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950052"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción Microsoft 365 para empresas
 
@@ -45,7 +45,7 @@ Microsoft 365 para empresas es un servicio de suscripción que le permite ejecut
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Probar una suscripción de prueba gratuita
 
@@ -62,7 +62,7 @@ Al final del período de prueba gratuito, la suscripción de prueba se convierte
 
 Si quieres comprar la suscripción antes de que la versión de prueba se ha terminado, sigue estos pasos:
 
-1. En el centro Microsoft 365 administración,  vaya a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus productos.</a>
+1. En el Centro de administración de Microsoft 365, vaya  a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus</a> productos.
 2. En la **página Sus productos,** busque la suscripción que desea comprar.
 3. En la **sección Licencias,** seleccione **Comprar suscripción**.
 4. Elija un compromiso mensual o anual para su suscripción y, a continuación, seleccione **Checkout**.
@@ -83,13 +83,13 @@ Cuando estés listo para comprar, consulta [Comprar la versión de prueba](#buy-
 
 ## <a name="cancel-your-free-trial-subscription"></a>Cancelar la suscripción de prueba gratuita
 
-Si decide cancelar la suscripción de prueba antes de que finalice el período de prueba gratuito, vaya al Centro de administración de Microsoft 365 y desactive [Facturación periódica.](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) La versión de prueba expirará automáticamente cuando finalice el mes y no se cargará \' la tarjeta de crédito.
+Si decide cancelar la suscripción de prueba antes de que finalice el período de prueba gratuito, vaya al Centro de administración de Microsoft 365 y [desactive Facturación periódica](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). La versión de prueba expirará automáticamente cuando finalice el mes y no se cargará \' la tarjeta de crédito.
 
 ## <a name="try-a-different-subscription"></a>Probar una suscripción diferente
 
-Si ya tienes una suscripción Microsoft 365 para empresas, puedes usar el Centro de administración de Microsoft 365 para probar una suscripción diferente.
+Si ya tienes una suscripción Microsoft 365 para empresas, puedes usar el Centro de administración de Microsoft 365 probar una suscripción diferente.
 
-Al agregar una suscripción a través del centro de administración de Microsoft 365, la nueva suscripción se asocia a la misma organización (espacio de nombres de dominio) que la suscripción existente. Esta asociación facilita el traslado de usuarios de la organización entre suscripciones o la asignación de una licencia para los productos adicionales que necesitan.
+Al agregar una suscripción a través del Centro de administración de Microsoft 365, la nueva suscripción se asocia a la misma organización (espacio de nombres de dominio) que la suscripción existente. Esta asociación facilita el traslado de usuarios de la organización entre suscripciones o la asignación de una licencia para los productos adicionales que necesitan.
 
 1. En el Centro de administración, vaya a la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
 2. En la **página Servicios de** compra, verá los planes que están disponibles para su organización. Elija el Microsoft 365 que desea probar.
@@ -130,7 +130,7 @@ El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solic
 > No se aceptan tarjetas de crédito internacionales.
 ::: moniker-end
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si tiene una cuenta nueva y está configurando su primera suscripción, puede usar los artículos de configuración guiados para ayudarle a empezar.
 

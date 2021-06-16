@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Información general de Temas Viva.
-ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908332"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950028"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de Temas Microsoft Viva 
 
-Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para aportar conocimiento SharePoint a los usuarios en las aplicaciones de Microsoft 365 que usan todos los días, empezando por páginas modernas, Búsqueda de Microsoft y Búsqueda en Word, PowerPoint, Outlook y Excel.
+Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para aportar conocimiento a los usuarios en las aplicaciones de Microsoft 365 que usan todos los días, empezando por SharePoint páginas modernas, Búsqueda de Microsoft y Búsqueda en Word, PowerPoint, Outlook y Excel.
 
 <br/>
 
@@ -103,7 +103,7 @@ Al usar Temas Viva en su entorno de Microsoft 365, los usuarios tendrán las si
 
 - Gestores de información: Usuarios que guían los temas a través de su ciclo de vida. Los administradores  de conocimientos usan la página Administrar temas del centro de temas para confirmar temas sugeridos por la IA, quitar temas que ya no son relevantes, así como editar temas existentes o crear otros nuevos y son los únicos usuarios que tienen acceso a él. Los administradores de información asignan permisos de gestores de información a los usuarios a través de la configuración de Temas Viva en el Centro de administración de Microsoft 365. 
 
-- Administradores de conocimientos: los administradores establecen Temas de Viva y lo administran a través de los controles de administración del centro Microsoft 365 administración. Actualmente, un administrador del servicio SharePoint o global de Microsoft 365 puede servir como administrador del información.
+- Administradores de conocimientos: los administradores establecen Viva Topics y lo administran a través de los controles de administración de la Centro de administración de Microsoft 365. Actualmente, un administrador del servicio SharePoint o global de Microsoft 365 puede servir como administrador del información.
 
 Para obtener más información, vea [Roles de Temas de Viva](topic-experiences-roles.md).
 
@@ -123,7 +123,7 @@ Para obtener más información, vea [Manage topics in the topic center](manage-t
 
 ## <a name="admin-controls"></a>Controles de administración
 
-Los controles de administración en Microsoft 365 centro de administración le permiten administrar Temas de Viva. Permiten a un administrador del servicio SharePoint o global de Microsoft 365 realizar las siguientes acciones:
+Los controles de administración Centro de administración de Microsoft 365 permiten administrar Temas de Viva. Permiten a un administrador del servicio SharePoint o global de Microsoft 365 realizar las siguientes acciones:
 
 - Controlar qué usuarios de su organización pueden ver temas en las páginas modernas de SharePoint o en los resultados de la búsqueda de SharePoint.
 - Controlar los sitios de SharePoint que se rastrearán para identificar temas.
@@ -142,10 +142,8 @@ Los usuarios con permisos de edición o creación de temas pueden hacer actualiz
 
 Es posible que se pregunte a los usuarios a los que permite acceder a ver temas en su trabajo diario si estos les han resultado útiles. El sistema examina estas respuestas y las usa para mejorar el contenido resaltado del tema y ayudar a determinar lo que se muestra en los resúmenes y detalles de los temas.
 
-Además, los usuarios con los permisos adecuados pueden etiquetar elementos, como la conversación de Yammer, que sean relevantes para un tema y agregarlos a un tema específico. 
-
 Para obtener más información, vea [Detección de temas y curación.](./topic-experiences-discovery-curation.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-[Usar Microsoft Search para buscar temas en Temas de Viva](./search.md)
+[Use Búsqueda de Microsoft para buscar temas en Temas de Viva](./search.md)

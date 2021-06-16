@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de seguridad y cumplimiento en Office 365 y Microsoft 365 para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: 4d1948f841719aac246736294ea8791473ddb7ec
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 2fe23f3e6d6889c3fc80b94be6a07095e06d3d68
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639432"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950124"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el Centro de seguridad y cumplimiento
 
@@ -116,7 +116,7 @@ En la tabla también se indica Office 365 Enterprise y Office 365 plan del Gobie
 |**Se detectó un clic de dirección URL potencialmente malintencionado**|Genera una alerta cuando un usuario protegido por [Caja fuerte vínculos de](../security/office-365-security/safe-links.md) la organización hace clic en un vínculo malintencionado. Este evento se desencadena cuando Microsoft Defender identifica los cambios de veredicto de url para Office 365 o cuando los usuarios invalidan las páginas de vínculos de Caja fuerte (según la directiva de vínculos de Microsoft 365 para empresas de Caja fuerte de la organización). Esta directiva de alerta tiene **una configuración de** gravedad alta. Para los clientes de Defender Office 365 P2, E5, G5, esta alerta desencadena automáticamente la investigación automatizada y la respuesta [en Office 365](../security/office-365-security/office-365-air.md). Para obtener más información sobre los eventos que desencadenan esta alerta, vea [Configurar Caja fuerte de vínculos](../security/office-365-security/set-up-safe-links-policies.md).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Resultado de envío de administrador completado**|Genera una alerta cuando un [envío de](../security/office-365-security/admin-submission.md) administrador completa el nuevo análisis de la entidad enviada. Se activará una alerta cada vez que se represente un resultado de nuevo análisis desde un envío de administrador. Estas alertas están diseñadas para recordarle que revise los resultados de envíos anteriores, envíe mensajes [notificados](https://protection.office.com/reportsubmission)por el usuario para obtener los últimos veredictos de comprobación de directivas y volver a examinar, y le ayudarán a determinar si las directivas de filtrado de su organización están teniendo el impacto previsto. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas|E1/F1, E3/F3 o E5|
 |**Investigación manual de correo electrónico desencadenada por el administrador**|Genera una alerta cuando un administrador desencadena la investigación manual de un correo electrónico desde el Explorador de amenazas. Para obtener más información, vea [Ejemplo: un administrador de seguridad desencadena una investigación desde el Explorador de amenazas](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). Esta alerta notifica a la organización que se inició la investigación. La alerta proporciona información sobre quién la desencadenó e incluye un vínculo a la investigación. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas| E5/G5 o Microsoft Defender para una Office 365 de complemento P2| 
-|**Creación de una regla de reenvío o redirección**|Genera una alerta cuando alguien de la organización crea una regla de bandeja de entrada para su buzón que reenvía o redirige mensajes a otra cuenta de correo electrónico. Esta directiva solo realiza un seguimiento de las reglas de bandeja de entrada que se crean mediante Outlook en la web (anteriormente conocida como Outlook Web App) o Exchange Online PowerShell. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información acerca del uso de reglas de bandeja de entrada para reenviar y redirigir el correo electrónico en Outlook en la web, vea Usar reglas en Outlook en la web para reenviar automáticamente mensajes a otra [cuenta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
+|**Creación de una regla de reenvío o redirección**|Genera una alerta cuando alguien de la organización crea una regla de bandeja de entrada para su buzón que reenvía o redirige mensajes a otra cuenta de correo electrónico. Esta directiva solo realiza un seguimiento de las reglas de bandeja de entrada que se crean Outlook en la Web (anteriormente conocidas como Outlook Web App) o Exchange Online PowerShell. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información acerca del uso de reglas de bandeja de entrada para reenviar y redirigir el correo electrónico en Outlook en la Web, vea Usar reglas en Outlook en la Web para reenviar automáticamente mensajes [a otra cuenta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Búsqueda de exhibición de documentos electrónicos iniciada o exportada**|Genera una alerta cuando alguien usa la herramienta de búsqueda de contenido en el Centro de seguridad y cumplimiento. Cuando se realizan las siguientes actividades de búsqueda de contenido, se desencadena una alerta: <br/><br/>* Se inicia una búsqueda de contenido<br/>* Los resultados de una búsqueda de contenido se exportan<br/>* Se exporta un informe de búsqueda de contenido<br/><br/>Las alertas también se desencadenan cuando las actividades de búsqueda de contenido anteriores se realizan en asociación con un caso de exhibición de documentos electrónicos. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información acerca de las actividades de búsqueda de contenido, vea [Buscar actividades de exhibición de documentos electrónicos en el registro de auditoría.](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Elevación de Exchange privilegio de administrador**|Genera una alerta cuando alguien tiene asignados permisos administrativos en su Exchange Online organización. Por ejemplo, cuando se agrega un usuario al grupo de roles Administración de la organización en Exchange Online. Esta directiva tiene una **configuración de** gravedad baja.|Permisos|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Mensajes de correo electrónico que contienen malware quitados después de la entrega**|Genera una alerta cuando los mensajes que contienen malware se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo Exchange Online mediante la purga automática de hora [cero](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una **configuración de** gravedad informativo y desencadena automáticamente la investigación y respuesta [automatizadas en Office 365](../security/office-365-security/office-365-air.md).|Administración de amenazas|E5/G5 o Microsoft Defender para una Office 365 de complemento P2|
@@ -186,7 +186,7 @@ Cuando se producen varios eventos que coinciden con las condiciones de una direc
 
 La longitud del intervalo de agregación depende de la Office 365 o Microsoft 365 suscripción.
 
-|Suscripción|Intervalo de agregación|
+|Suscripción |Intervalo de agregación|
 |:---------|:---------:|
 |Office 365 o Microsoft 365 E5/G5|1 minuto|
 |Defender para Office 365 Plan 2 |1 minuto|
@@ -275,37 +275,37 @@ Una vez generadas y mostradas las alertas en la página Ver alertas en el Centro
 
 - **Asignar un estado a las alertas.** Puede asignar uno de los siguientes estados a alertas: **Active** (el valor predeterminado), **Investigating**, **Resolved** o **Dismissed**. A continuación, puede filtrar esta configuración para mostrar alertas con la misma configuración de estado. Esta configuración de estado puede ayudar a realizar un seguimiento del proceso de administración de alertas.
 
-- **Ver detalles de alerta.** Puede seleccionar una alerta para mostrar una página desplegable con detalles sobre la alerta. La información detallada depende de la directiva de alerta correspondiente, pero normalmente incluye lo siguiente: nombre de la operación real que desencadenó la alerta (como un cmdlet), una descripción de la actividad que desencadenó la alerta, el usuario (o lista de usuarios) que desencadenó la alerta y el nombre (y vínculo a) de la directiva de alerta correspondiente.
+- **Ver detalles de alerta.** Puede seleccionar una alerta para mostrar una página desplegable con detalles sobre la alerta. La información detallada depende de la directiva de alerta correspondiente, pero normalmente incluye lo siguiente:
 
   - Nombre de la operación real que desencadenó la alerta, como un cmdlet o una operación de registro de auditoría.
 
   - Descripción de la actividad que desencadenó la alerta.
 
-  - El usuario que desencadenó la alerta. Esto se incluye solo para las directivas de alerta configuradas para realizar un seguimiento de un único usuario o una sola actividad.
+  - El usuario (o lista de usuarios) que desencadenó la alerta. Esto se incluye solo para las directivas de alerta configuradas para realizar un seguimiento de un único usuario o una sola actividad.
 
   - El número de veces que se realizó el seguimiento de la actividad por parte de la alerta. Es posible que este número no coincida con el número real de alertas relacionadas enumeradas en la página Ver alertas porque es posible que se hayan desencadenado más alertas.
 
   - Un vínculo a una lista de actividades que incluye un elemento para cada actividad que se realizó que desencadenó la alerta. Cada entrada de esta lista identifica cuándo se produjo la actividad, el nombre de la operación real (como "FileDeleted") y el usuario que realizó la actividad, el objeto (como un archivo, un caso de exhibición de documentos electrónicos o un buzón) en el que se realizó la actividad y la dirección IP del equipo del usuario. Para las alertas relacionadas con malware, esto se vincula a una lista de mensajes.
 
-  - Nombre (y vínculo a) de la directiva de alerta correspondiente.
+  - Nombre (y vínculo) de la directiva de alerta correspondiente.
 
 - **Suprimir notificaciones de correo electrónico.** Puedes desactivar (o suprimir) las notificaciones de correo electrónico de la página desplegable de una alerta. Al suprimir las notificaciones de correo electrónico, Microsoft no enviará notificaciones cuando las actividades o eventos que coincidan con las condiciones de la directiva de alertas. Pero las alertas se desencadenarán cuando las actividades realizadas por los usuarios coincidan con las condiciones de la directiva de alerta. También puede desactivar las notificaciones de correo electrónico editando la directiva de alertas.
 
 - **Resolver alertas.** Puede marcar una alerta como resuelta en la página desplegable de una alerta (que establece el estado de la alerta en **Resuelto**). A menos que cambie el filtro, las alertas resueltas no se mostrarán en la **página Ver alertas.**
 
-## <a name="viewing-cloud-app-security-alerts"></a>Visualización de Cloud App Security alertas
+## <a name="viewing-cloud-app-security-alerts"></a>Visualización de alertas de Cloud App Security
 
-Las alertas que se desencadenan Office 365 Cloud App Security directivas  se muestran ahora en la página Ver alertas en el Centro de seguridad y cumplimiento. Esto incluye alertas desencadenadas por directivas de actividad y alertas desencadenadas por directivas de detección de anomalías en Office 365 Cloud App Security. Esto significa que puede ver todas las alertas en el centro de seguridad y cumplimiento. Office 365 Cloud App Security solo está disponible para organizaciones con una suscripción Office 365 Enterprise E5 o Office 365 us Government G5. Para obtener más información, vea [Overview of Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
+Las alertas desencadenadas por las directivas de Office 365 Cloud App Security ahora se muestran en la página Ver alertas en el Centro de seguridad y cumplimiento.  Esto incluye alertas desencadenadas por directivas de actividad y alertas desencadenadas por directivas de detección de anomalías en Office 365 Cloud App Security. Esto significa que puede ver todas las alertas en el centro de seguridad y cumplimiento. Office 365 Cloud App Security solo está disponible para organizaciones con una suscripción a Office 365 Enterprise E5 u Office 365 US Government G5. Para obtener más información, vea [Overview of Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
-Las organizaciones que Microsoft Cloud App Security como parte de una suscripción Enterprise Mobility + Security E5 o como un servicio independiente también pueden ver alertas de Cloud App Security relacionadas con aplicaciones y servicios de Office 365 en el Centro de seguridad y cumplimiento de &.
+Las organizaciones que tienen Microsoft Cloud App Security como parte de una suscripción a Enterprise Mobility + Security E5 o como un servicio independiente también pueden ver alertas de Cloud App Security relacionadas con aplicaciones y servicios de Office 365 en el Centro de seguridad y cumplimiento de &.
 
-Para mostrar solo Cloud App Security alertas en el centro de seguridad y cumplimiento, use el filtro **Origen** y **seleccione Cloud App Security**.
+Para mostrar solo alertas de Cloud App Security en el centro de seguridad y cumplimiento, use el filtro **Origen** y seleccione **Cloud App Security**.
 
-![Usar el filtro De origen para mostrar solo Cloud App Security alertas](../media/FilterCASAlerts.png)
+![Usar el filtro Origen para mostrar solo alertas de Cloud App Security](../media/FilterCASAlerts.png)
 
-De forma similar a una alerta desencadenada por una directiva de alerta en el centro de seguridad y cumplimiento, puede seleccionar una alerta de Cloud App Security para mostrar una página de control desplegable con detalles sobre la alerta. La alerta incluye un vínculo para ver los detalles y administrar la alerta en el portal de Cloud App Security y un vínculo a la directiva de Cloud App Security correspondiente que desencadenó la alerta. Vea [Supervisar alertas en Cloud App Security](/cloud-app-security/monitor-alerts).
+De forma similar a una alerta desencadenada por una directiva de alerta en el centro de seguridad y cumplimiento, puede seleccionar una alerta de Cloud App Security para mostrar una página de control desplegable con detalles sobre la alerta. La alerta incluye un vínculo para ver los detalles y administrar la alerta en el portal de Cloud App Security y un vínculo a la directiva de Cloud App Security correspondiente que desencadenó la alerta. Consulta [Supervisar alertas en Cloud App Security](/cloud-app-security/monitor-alerts).
 
-![Los detalles de alerta contienen vínculos al portal Cloud App Security web](../media/CASAlertDetail.png)
+![Los detalles de alerta contienen vínculos al portal de Cloud App Security](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> Cambiar el estado de una alerta Cloud App Security en el centro de seguridad y cumplimiento no actualizará el estado de resolución de la misma alerta en el portal de Cloud App Security cumplimiento. Por ejemplo, si marca el estado de la alerta como **Resuelto** en el centro de seguridad y cumplimiento, el estado de la alerta en el portal de Cloud App Security no cambia. Para resolver o descartar una alerta Cloud App Security, administre la alerta en el portal Cloud App Security cliente.
+> Cambiar el estado de una alerta de Cloud App Security en el centro de seguridad y cumplimiento no actualizará el estado de resolución de la misma alerta en el portal de Cloud App Security. Por ejemplo, si marca el estado de la alerta como **Resuelto** en el Centro de seguridad y cumplimiento, el estado de la alerta en el portal de Cloud App Security no cambiará. Para resolver o descartar una alerta de Cloud App Security, administra la alerta en el portal de Cloud App Security.

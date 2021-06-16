@@ -21,35 +21,35 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere la planeación y configuración de Microsoft 365 o Office 365 con las guías de configuración.
-ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d2e4f29a3f6d484c8586194258c3157bc73fb9e1
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454152"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964625"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
-Microsoft 365 y Office 365 de configuración le proporcionan instrucciones y recursos personalizados para planear e implementar el espacio empresarial, las aplicaciones y los servicios. Estas guías se crean con los mismos procedimientos recomendados que comparten Microsoft 365 especialistas de incorporación de [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) en interacciones individuales, y están disponibles para todos los administradores del centro de administración Microsoft 365 administración. Proporcionan información sobre la configuración del producto, habilitan características de seguridad, implementan herramientas de colaboración y proporcionan scripts para acelerar las implementaciones avanzadas.
+Microsoft 365 y Office 365 de configuración le proporcionan instrucciones y recursos personalizados para planear e implementar el espacio empresarial, las aplicaciones y los servicios. Estas guías se crean con [](https://www.microsoft.com/fasttrack/microsoft-365) los mismos procedimientos recomendados que comparten Microsoft 365 FastTrack especialistas de incorporación en interacciones individuales, y están disponibles para todos los administradores dentro del Centro de administración de Microsoft 365. Proporcionan información sobre la configuración del producto, habilitan características de seguridad, implementan herramientas de colaboración y proporcionan scripts para acelerar las implementaciones avanzadas.
 
-## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Cómo obtener acceso a las guías de configuración en el centro Microsoft 365 administración
+## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Cómo obtener acceso a las guías de configuración en el Centro de administración de Microsoft 365
 
-Se puede obtener acceso a las guías de configuración desde la página de instrucciones [del](https://aka.ms/setupguidance) programa de instalación Microsoft 365 centro de administración. Puedes realizar un seguimiento del estado del progreso y tienes la opción de volver en cualquier momento para completar una guía. Para llegar a la **página de instrucciones del programa de** instalación:
+Se puede obtener acceso a las guías de configuración desde la página [de](https://aka.ms/setupguidance) instrucciones del programa de instalación Centro de administración de Microsoft 365. Puedes realizar un seguimiento del estado del progreso y tienes la opción de volver en cualquier momento para completar una guía. Para llegar a la **página de instrucciones del programa de** instalación:
 
-1. En el [Microsoft 365 de administración,](https://admin.microsoft.com/)vaya a la **página** principal.
+1. En el [Centro de administración de Microsoft 365](https://admin.microsoft.com/), vaya a la **página** principal.
 
 2. Busque la **tarjeta guías de &** aprendizaje. 
 
-   ![Tarjeta & guías de aprendizaje en el centro Microsoft 365 administración](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![Tarjeta & guías de aprendizaje en el Centro de administración de Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
 3. Seleccione **Instrucciones de configuración personalizadas**.
 
-   ![Captura de pantalla de la página de instrucciones del programa de instalación en Microsoft 365 centro de administración](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![Captura de pantalla de la página de instrucciones del programa de instalación en el Centro de administración de Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 >[!NOTE]
->Los permisos de administrador de inquilinos son necesarios para tener acceso al Microsoft 365 de administración.
+>Los permisos de administrador de inquilinos son necesarios para tener acceso al Centro de administración de Microsoft 365.
 
-## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>¿Cómo funcionan las guías de instalación en el centro Microsoft 365 administración?
+## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>¿Cómo funcionan las guías de configuración en el Centro de administración de Microsoft 365?
 
 Cada guía le proporciona instrucciones paso a paso, recursos, artículos y, cuando sea necesario, scripts que puede usar para realizar cambios de configuración. Estas guías le proporcionan opciones que reflejan las necesidades específicas de organizaciones pequeñas y grandes. Además, la guía incluye asistencia para administradores nuevos y con más experiencia.
 
@@ -96,11 +96,11 @@ Microsoft Edge se ha reconstruido desde cero para ofrecerte una compatibilidad y
 
 La guía de configuración de Microsoft Edge le ayudará a configurar la detección de sitios de [Enterprise](https://aka.ms/edgeadvisor) para ver qué sitios a los que se puede tener acceso en su organización para usar el modo IE, revisar y configurar características de seguridad importantes, configurar directivas de privacidad y directivas adicionales para satisfacer los requisitos de su organización y administrar el acceso web en sus dispositivos. Puede descargar Microsoft Edge dispositivos individuales o le mostraremos cómo implementar en varios usuarios de su organización con Configuration Manager o Microsoft Intune. 
 
-### <a name="microsoft-search-setup-guide"></a>Guía de configuración de Microsoft Search
+### <a name="microsoft-search-setup-guide"></a>Búsqueda de Microsoft de configuración
 
-Microsoft Search ayuda a su organización a encontrar lo que necesita para completar lo que está trabajando. Ya sea que busque personas, archivos, gráficos de organizaciones, sitios o respuestas a preguntas comunes, su organización puede usar Microsoft Search durante toda su jornada laboral para obtener respuestas.
+Búsqueda de Microsoft ayuda a su organización a encontrar lo que necesitan para completar lo que están trabajando. Ya sea que busque personas, archivos, gráficos de organizaciones, sitios o respuestas a preguntas comunes, su organización puede usar Búsqueda de Microsoft durante su día laborable para obtener respuestas.
 
-La [guía de configuración de Microsoft Search](https://aka.ms/MicrosoftSearchSetup) le ayuda a configurar Microsoft Search tanto si desea realizar pruebas piloto para un grupo de usuarios como si lo desea para todos los usuarios de su organización. Asignarás administradores de búsqueda y editores de búsqueda y, a continuación, personalizarás la experiencia de búsqueda de los usuarios con respuestas y opciones adicionales, como agregar la extensión Bing a Chrome o configurar Bing como motor de búsqueda predeterminado.
+La [Búsqueda de Microsoft de](https://aka.ms/MicrosoftSearchSetup) configuración le ayuda a configurar Búsqueda de Microsoft si desea realizar pruebas piloto para un grupo de usuarios o bien para todos los usuarios de su organización. Asignarás administradores de búsqueda y editores de búsqueda y, a continuación, personalizarás la experiencia de búsqueda de los usuarios con respuestas y opciones adicionales, como agregar la extensión Bing a Chrome o configurar Bing como motor de búsqueda predeterminado.
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guía de configuración de administración en equipo de Intune Configuration Manager
 
@@ -163,7 +163,7 @@ Use la guía de configuración de [Exchange Online Protection](https://aka.ms/EO
 
 El asesor de [Microsoft Defender para Office 365](https://aka.ms/oatpsetup) protege su organización contra amenazas malintencionadas que su entorno pueda encontrar a través de mensajes de correo electrónico, vínculos y herramientas de colaboración de terceros. Esta guía le proporciona los recursos y la información que le ayudarán a preparar e identificar el plan defender para Office 365 que se adapte a las necesidades de su organización. 
 
-### <a name="microsoft-information-protection-setup-guide"></a>Guía de configuración de Microsoft Information Protection
+### <a name="microsoft-information-protection-setup-guide"></a>protección de la información de Microsoft de configuración
 
 Obtenga información general sobre las capacidades que puede aplicar a su estrategia de Protección de la información para que pueda estar seguro de que su información confidencial está protegida. Aplique un planteamiento de ciclo de vida de cuatro fases con el que detectar, clasificar, proteger y supervisar la información confidencial. La [Guía de configuración de Microsoft Information Protection](https://aka.ms/mipsetupguide) contiene instrucciones para completar cada una de esas fases.
 
@@ -215,10 +215,5 @@ Use la guía Implementar [Office](https://aka.ms/officeremoteinstall) a usuarios
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Implementar y actualizar Aplicaciones Microsoft 365 con Configuration Manager
 
-Para las organizaciones que usan Configuration Manager, puede usar el asesor Implementar y actualizar Aplicaciones Microsoft 365 con [Configuration Manager](https://aka.ms/oppinstall) para generar un script que configurará automáticamente la implementación de Aplicaciones Microsoft 365 mediante los procedimientos recomendados por los ingenieros de FastTrack. Use esta guía para crear grupos de implementación, personalizar las aplicaciones y características de Office, configurar instalaciones dinámicas o lean y, a continuación, ejecutar el script para crear las aplicaciones, las reglas de implementación automática y las colecciones de dispositivos que necesita para dirigirse a la implementación. 
+Para las organizaciones que usan Configuration Manager, puede usar el asesor Implementar y actualizar Aplicaciones Microsoft 365 con [Configuration Manager](https://aka.ms/oppinstall) para generar un script que configurará automáticamente la implementación de Aplicaciones Microsoft 365 mediante los procedimientos recomendados por FastTrack ingenieros. Use esta guía para crear grupos de implementación, personalizar las aplicaciones y características de Office, configurar instalaciones dinámicas o lean y, a continuación, ejecutar el script para crear las aplicaciones, las reglas de implementación automática y las colecciones de dispositivos que necesita para dirigirse a la implementación. 
 
-### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Integrar una aplicación en la nube de terceros con Azure AD
-
-Mejore la experiencia del usuario y proporcione una capa adicional de seguridad integrando la aplicación de terceros con Azure Active Directory (Azure AD). Con esta experiencia de extremo a extremo, puede realizar la mayor parte de la configuración directamente desde este asistente. Cuando corresponda, le redirigiremos a la página de configuración correspondiente.
-
-Usa el [Asistente para integrar aplicaciones en](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) la nube de terceros para integrar una aplicación en la nube de terceros con Azure AD.

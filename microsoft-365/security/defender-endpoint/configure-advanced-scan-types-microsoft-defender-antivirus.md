@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 05/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 34f423222068236271afdda13afb95cffa58b709
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 96e4dab96f8ceb149916c908991079bb2dfa866f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683816"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964902"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurar opciones de análisis del Antivirus de Microsoft Defender
 
@@ -31,14 +31,11 @@ ms.locfileid: "52683816"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Usar Microsoft Intune para configurar opciones de examen
 
-Vea los siguientes recursos: 
-
-- [Configurar las opciones de restricción de dispositivo en Microsoft Intune](/intune/device-restrictions-configure) 
-- [Antivirus de Microsoft Defender de restricción de dispositivos para Windows 10 en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Para obtener más información, vea [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and Antivirus de Microsoft Defender device restriction settings for Windows 10 in [Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus). 
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Usar Microsoft Endpoint Manager para configurar opciones de examen
 
-Vea [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
+Para obtener más información sobre cómo Microsoft Endpoint Manager (rama actual), vea [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Usar la directiva de grupo para configurar opciones de examen
 
@@ -49,6 +46,7 @@ Vea [How to create and deploy antimalware policies: Scan settings](/configmgr/pr
 3. En el **Editor de administración de directivas de grupo,** vaya a Configuración del equipo **y** haga clic en **Plantillas administrativas.**
 
 4. Expanda el árbol para **Windows componentes Antivirus de Microsoft Defender** y, a continuación, seleccione una ubicación  >  (consulte Configuración [y ubicaciones](#settings-and-locations) de este artículo).
+
 
 5. Edite el objeto de directiva. 
 
@@ -69,13 +67,15 @@ Vea [How to create and deploy antimalware policies: Scan settings](/configmgr/pr
 | Especifique la carga máxima de CPU (como porcentaje) durante un examen. <p> **Examen**  >  **Especificar el porcentaje máximo de uso de CPU durante un examen** | 50 |  `-ScanAvgCPULoadFactor` <p>**NOTA:** La carga máxima de CPU no es un límite difícil, pero es una guía para que el motor de análisis no supere el máximo en promedio. Los exámenes de ejecución manual omitirán esta configuración y se ejecutarán sin límites de CPU. |
 | Especifique el tamaño máximo (en kilobytes) de los archivos de archivo que deben examinarse. <p> **Examen**  >  **Especificar el tamaño máximo de los archivos de archivo que se examinarán** | Sin límite | No disponible <p>El valor predeterminado de 0 no aplica ningún límite |
 | Configurar una prioridad de CPU baja para exámenes programados <p> **Examen**  >  **Configurar una prioridad de CPU baja para exámenes programados** | Deshabilitado | No disponible |
+
  
 > [!NOTE]
 > Si la protección en tiempo real está activada, los archivos se examinan antes de tener acceso a ellos y ejecutarse. El ámbito de examen incluye todos los archivos, incluidos los archivos en medios extraíbles montados, como las unidades USB. Si el dispositivo que realiza el examen tiene activada la protección en tiempo real o la protección en tiempo real, el examen también incluirá recursos compartidos de red.
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>Usar PowerShell para configurar opciones de examen
 
-Vea los siguientes recursos:
+
+Para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender, vea
 
 - [Administrar Antivirus de Microsoft Defender con cmdlets de PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Cmdlets de Defender](/powershell/module/defender/)
@@ -99,7 +99,13 @@ Si Antivirus de Microsoft Defender detecta una amenaza dentro de un mensaje de c
 - Asunto del correo electrónico
 - Nombre de datos adjuntos
 
-## <a name="see-also"></a>Consulte también
+
+## <a name="scanning-mapped-network-drives"></a>Examinar unidades de red asignadas
+
+En cualquier sistema operativo, solo se examinan las unidades de red asignadas a nivel del sistema. Las unidades de red asignadas a nivel de usuario no se examinan. Las unidades de red asignadas a nivel de usuario son aquellas que un usuario asigna en su sesión manualmente y usan sus propias credenciales.
+
+## <a name="see-also"></a>Vea también
+
 
 - [Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender](run-scan-microsoft-defender-antivirus.md)

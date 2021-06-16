@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aacd0745ff507356035f8f460ed2b4307e9da6ed
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932970"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964878"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Buscar amenazas entre dispositivos, correos electrónicos, aplicaciones e identidades
 
@@ -35,7 +35,7 @@ ms.locfileid: "51932970"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-[La búsqueda avanzada](advanced-hunting-overview.md) en Microsoft 365 Defender te permite buscar de forma proactiva amenazas en:
+[La búsqueda](advanced-hunting-overview.md) avanzada en Microsoft 365 Defender permite buscar de forma proactiva amenazas en:
 - Dispositivos administrados por Microsoft Defender para endpoint
 - Correos electrónicos procesados por Microsoft 365
 - Actividades de aplicación en la nube, eventos de autenticación y actividades de controlador de dominio que realiza el seguimiento de Microsoft Cloud App Security y Microsoft Defender for Identity
@@ -100,6 +100,90 @@ DeviceInfo
 | join AlertInfo on AlertId
 | project AlertId, Timestamp, Title, Severity, Category 
 ```
+
+
+### <a name="get-file-event-information"></a>Obtener información de eventos de archivo
+
+Use la siguiente consulta para obtener información sobre eventos relacionados con archivos. 
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceFileEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="get-network-event-information"></a>Obtener información de eventos de red
+
+Use la siguiente consulta para obtener información sobre eventos relacionados con la red.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-agent-version-information"></a>Obtener información de versión del agente de dispositivo
+
+Use la siguiente consulta para obtener la versión del agente que se ejecuta en un dispositivo.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="example-query-for-macos-devices"></a>Consulta de ejemplo para dispositivos macOS
+
+Use la siguiente consulta de ejemplo para ver todos los dispositivos que ejecutan macOS con una versión anterior a Catalina.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OSPlatform == "macOS" and  OSVersion !contains "10.15" and OSVersion !contains "11."
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-status-info"></a>Obtener información de estado del dispositivo
+
+Usa la siguiente consulta para obtener el estado de un dispositivo. En el siguiente ejemplo, la consulta comprueba si el dispositivo está incorporado.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OnboardingStatus != "Onboarded"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
 
 ## <a name="hunting-scenarios"></a>Escenarios de búsqueda
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7841197594941354b21bd2104cd27ef37a1a25c9
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925656"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964601"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Preparar Microsoft Defender para la implementación de puntos de conexión
 
@@ -95,7 +95,7 @@ Microsoft recomienda usar el concepto de privilegios mínimos. Defender for Endp
 | Administrador de infraestructura |       |                             |           |
 | Propietario/interesado de la empresa   |       |                             |           |
 
-Microsoft recomienda usar [Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure) administrar los roles para proporcionar auditoría, control y revisión de acceso adicionales para los usuarios con permisos de directorio.
+Microsoft recomienda [usar](/azure/active-directory/active-directory-privileged-identity-management-configure) Administración de identidades con privilegios administrar los roles para proporcionar auditoría, control y revisión de acceso adicionales para los usuarios con permisos de directorio.
 
 Defender for Endpoint admite dos formas de administrar permisos:
 
@@ -135,6 +135,7 @@ Elija el componente de Defender para endpoint que se va a usar y quite los que n
 
 ## <a name="next-step"></a>Paso siguiente
 
-|||
-|:-------|:-----|
-|![Fase 2: Configuración](images/setup.png) <br>[Fase 2: Configuración](production-deployment.md) | Configurar Microsoft Defender para la implementación de puntos de conexión |
+
+![Fase 2: Configuración](images/setup.png) <br>[Fase 2: Configuración](production-deployment.md) 
+ 
+Configurar Microsoft Defender para la implementación de puntos de conexión 

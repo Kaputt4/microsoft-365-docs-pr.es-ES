@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788420"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964890"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -143,7 +143,7 @@ Para evitar que el signo de interrogación o la etiqueta a través de la etiquet
   - Para el signo de interrogación de la foto del remitente, SPF o DKIM son los más importantes.
   - Para la etiqueta via, confirme que el dominio de la firma DKIM o la dirección **MAIL FROM** coincide (o es un subdominio de) el dominio en la dirección De.
 
-Para obtener más información, vea Identificar mensajes sospechosos [en Outlook.com](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206) y Outlook en la web
+Para obtener más información, vea [Identificar mensajes sospechosos en Outlook.com y Outlook en la Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración exclusiva en directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -209,10 +209,14 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **Sugerencia para** caracteres inusuales: la dirección De contiene conjuntos de caracteres inusuales (por ejemplo, símbolos matemáticos y texto o una combinación de letras mayúsculas y minúsculas) en un remitente o dominio protegido.
 
   > [!IMPORTANT]
+  > Incluso si las sugerencias de seguridad  de suplantación están desactivadas, se recomienda usar una regla de flujo de correo (también conocida como regla de transporte) para agregar el siguiente encabezado de mensaje a los mensajes:
   >
-  > Incluso cuando las sugerencias de seguridad de suplantación están desactivadas, se recomienda usar una regla de flujo de correo (también conocida como regla de  transporte) para agregar un encabezado de mensaje denominado **X-MS-Exchange-EnableFirstContactSafetyTip** con valor habilitado para los mensajes.  Un consejo de seguridad notificará a los destinatarios la primera vez que reciba un mensaje del remitente o si no suelen recibir mensajes del remitente. Esta funcionalidad agrega una capa adicional de protección de seguridad contra posibles ataques de suplantación.
+  > - Nombre de encabezado: **X-MS-Exchange-EnableFirstContactSafetyTip**
+  > - Valor de encabezado: **Habilitar**
   >
-  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="El texto de la consejo de seguridad protección de suplantación con varios destinatarios.":::
+  > Un consejo de seguridad notificará a los destinatarios la primera vez que reciba un mensaje del remitente o si no suelen recibir mensajes del remitente. Esta funcionalidad agrega una capa adicional de protección de seguridad contra posibles ataques de suplantación.
+  >
+  > ![El texto de la consejo de seguridad protección de suplantación con varios destinatarios.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 - **Inteligencia de buzones:** habilita o deshabilita la inteligencia artificial (IA) que determina los patrones de correo electrónico del usuario con sus contactos frecuentes. Esta configuración ayuda a la IA a distinguir entre mensajes de remitentes legítimos y suplantados.
 
