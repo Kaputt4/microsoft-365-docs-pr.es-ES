@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,24 +19,31 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso de reglamento general de protección de datos (RGPD).
-ms.openlocfilehash: c00dec46e47bde8afef8ffb2cd67dfc00ea98950
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 147843fab8fcb8d2d1793a21f9bb897cb4a59672
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914503"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929472"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: Una guía para su pequeña empresa
 
- *Uso de Microsoft 365 para empresas para mitigar y administrar el cumplimiento de RGPD* 
+ *Uso de Microsoft 365 para empresas para ayudarle a mitigar y administrar el cumplimiento del RGPD* 
   
-El reglamento general de protección de datos (RGPD) es una normativa de la Unión Europea (UE) que regula la forma en que una organización debe administrar los datos personales. El RGPD entrará en vigor el 25 de mayo de 2018. Si su empresa vende, proporciona servicios o emplea a ciudadanos de la Unión Europea, entonces el [RGPD](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) le afectará. 
-  
-Este artículo le ayuda a comprender qué es el RGPD, por qué surgió y cómo Microsoft 365 para empresas puede ayudar a su organización a cumplir con el RGPD.
+El Reglamento general de protección de datos (RGPD) es una normativa de la Unión Europea (UE) que regula la forma en que una organización debe administrar los datos personales. Si su empresa vende, proporciona servicios o emplea a ciudadanos de la Unión Europea, entonces el [RGPD](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) le afectará. 
+
+Como administrador de una pequeña empresas, probablemente se pregunte "¿cómo puedo empezar"? Esto puede ser especialmente cierto si su empresa no controla los datos personales como una actividad empresarial básica o si el RGPD es totalmente nuevo para usted.
+
+Puede empezar revisando este artículo, que tiene como objetivo ayudarle a comprender qué es el RGPD, por qué surgió y cómo Microsoft 365 para empresas puede ayudar a su organización a cumplir con el RGPD.
+
+También incluye respuestas a preguntas comunes sobre el RGPD que pueden tener las pequeñas empresas y destaca los pasos que puede seguir una pequeña empresa para prepararse para el RGPD.
+
+> [!IMPORTANT]
+> Las soluciones y recomendaciones de Microsoft 365 en este artículo son herramientas y recursos que pueden ayudarle a administrar y proteger sus datos, pero no son una garantía de cumplimiento del RGPD. Depende de usted evaluar su propio estado de cumplimiento. Consulte con sus propios asesores legales o profesionales cuando sea necesario. 
   
 ## <a name="a-quick-overview-of-the-gdpr"></a>Información general rápida del RGPD
 
-El RGPD es una normativa de la UE que actualiza y expande la Directiva de protección de datos (PDD) anterior, aprobada por primera vez en 1995. El RGPD se refiere a la privacidad de los datos de una persona, ya sea de un cliente, un cliente, un empleado o un socio comercial. El objetivo del RGPD es reforzar la protección de datos personales para los ciudadanos de la UE, tanto si se encuentran en la UE como en otro lugar. La normativa establece expectativas y recomienda cómo lograrlas. Cuando el RGPD sea aplicable a finales de mayo de 2018, las organizaciones deben tener medidas que cumplan los requisitos del RGPD.
+El RGPD es una normativa de la UE que actualiza y expande la Directiva de protección de datos (PDD) anterior, aprobada por primera vez en 1995. El RGPD se refiere a la privacidad de los datos de una persona, ya sea de un cliente, un cliente, un empleado o un socio comercial. El objetivo del RGPD es reforzar la protección de datos personales para los ciudadanos de la UE, tanto si se encuentran en la UE como en otro lugar. La normativa establece expectativas y recomienda cómo lograrlas. Las organizaciones deben contar con medidas que cumplan los requisitos del RGPD.
   
 El RGPD trata los datos y la manera en que se usan Piense que los datos tienen un ciclo de vida. El ciclo comienza cuando se recopilan datos, continúa mientras los almacena y los usa (se procesa) y termina cuando se eliminan completamente de sus sistemas. 
   
@@ -73,6 +80,97 @@ El RGPD establece los derechos de los interesados, lo que significa que, con res
 - **Objeto:** una persona puede oponerse a que sus datos se utilicen para varios fines, incluido el marketing directo. 
     
 - **Pida que no esté sujeto a la toma de decisiones automatizada, incluida la recopilación:** El RGPD tiene reglas estrictas sobre el uso de datos para crear perfiles de personas y automatizar decisiones basadas en ese proceso. 
+
+
+## <a name="steps-to-prepare-for-gdpr"></a>Pasos para prepararse para el RGPD
+
+En esta sección se describen los pasos que una pequeña empresa puede seguir para prepararse para el RGPD. Gran parte de la información de estos pasos se proporcionó a través de [Siete pasos para que las empresas se preparen para el Reglamento general de protección de datos](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), una publicación ofrecida a través de la Oficina de publicaciones de la Unión Europea.
+
+Una buena manera para que una pequeña empresa empiece con el RGPD es asegurarse de aplicar los siguientes principios clave al recopilar datos personales:
+
+- Recopile datos personales con fines claramente definidos para su uso y no los use para nada más. Por ejemplo, si les pide a sus clientes que proporcionen sus direcciones de correo electrónico para que puedan recibir sus nuevas ofertas o promociones, solo puede usar sus direcciones de correo electrónico para ese propósito específico.
+- No recopile más datos de los que necesita. Por ejemplo, si su empresa requiere una dirección de envío para poder entregar productos, necesita la dirección de un cliente y un nombre, pero no necesita conocer el estado civil de la persona.
+
+
+### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>Paso 1: Conocer los datos personales que recopila y usa en su empresa y los motivos por los que los necesita
+
+Como pequeña empresa, uno de los primeros pasos que debe seguir es realizar un inventario de los datos personales que recopila y usa dentro de su empresa, y por qué son necesarios. Esto incluye los datos tanto de los empleados como de los clientes.
+
+Por ejemplo, es posible que necesite los datos personales de su empleado en función del contrato laboral y por motivos legales (por ejemplo, declarar impuestos al Servicio de Impuestos Internos).
+
+Como otro ejemplo, puede administrar listas de clientes individuales para enviarles avisos sobre ofertas especiales, si han dado su consentimiento a esto.
+
+#### <a name="microsoft-365-features-that-can-help"></a>Características de Microsoft 365 que pueden ayudar
+[Microsoft Information Protection en Microsoft 365](/microsoft-365/compliance/information-protection) puede ayudar a descubrir, clasificar y proteger la información confidencial en su empresa. Puede usar clasificadores capacitados para ayudarle a identificar y etiquetar los tipos de documento que contienen datos personales. 
+
+### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Paso 2: Informar a sus clientes, empleados y otras personas cuando necesite recopilar sus datos personales
+
+Las personas deben saber que usted procesa sus datos personales y con qué propósito. Por ejemplo, si un cliente necesita crear un perfil de cliente para acceder al sitio en línea de su empresa, asegúrese de indicar específicamente lo que quiere hacer con su información.
+
+Pero no es necesario informar a los usuarios cuando ya saben cómo se usarán los datos. Por ejemplo, cuando le proporcionan una dirección particular para hacer una entrega que han solicitado.
+
+También tiene que ser capaz de informar a las personas que lo soliciten sobre los datos personales que tiene sobre ellas y darles acceso a sus datos. Ser organizado con los datos hará que sea más fácil proporcionarlos, si es necesario. 
+
+### <a name="step-3-keep-personal-data-for-only-as-long-as-necessary"></a>Paso 3: Conservar los datos personales solo durante el tiempo necesario
+
+En el caso de los datos de los empleados, consérvelos mientras se mantenga la relación laboral y para las obligaciones legales relacionadas.
+En el caso de los datos de los clientes, consérvelos durante la relación con ellos y para las obligaciones legales relacionadas (por ejemplo, con fines fiscales).
+Elimine los datos cuando ya no sean necesarios para los fines para los que los recopiló.
+
+#### <a name="microsoft-365-features-that-can-help"></a>Características de Microsoft 365 que pueden ayudar
+[Las directivas de retención y las etiquetas](/microsoft-365/compliance/retention) pueden usarse para ayudarle a conservar los datos personales durante un tiempo determinado y eliminarlos cuando ya no sean necesarios.
+
+
+### <a name="step-4-secure-the-personal-data-you-are-processing"></a>Paso 4: Proteger los datos personales que está procesando
+
+Si almacena datos personales en un sistema de TI, limite el acceso a los archivos que contienen los datos, por ejemplo, mediante una contraseña segura. Actualice periódicamente la configuración de seguridad del sistema.
+
+> [!NOTE]
+> El RGPD no ordena el uso de ningún sistema de TI específico, pero exige que el sistema tenga el nivel de seguridad adecuado. Consulte el [Artículo 32 del RGPD: Seguridad del procesamiento](https://gdpr.eu/article-32-security-of-processing/) para obtener más información.
+
+Si almacena documentos físicos con datos personales, asegúrese de que no sean accesibles para personas no autorizadas.
+
+Si decide almacenar datos personales en la nube, como a través de Microsoft 365, cuenta con características de seguridad como la capacidad de ayudarle a administrar permisos para archivos y carpetas, ubicaciones seguras centralizadas para guardar los archivos (bibliotecas de documentos de OneDrive o SharePoint) y cifrado de datos al enviar o recuperar los archivos. 
+
+#### <a name="microsoft-365-features-that-can-help"></a>Características de Microsoft 365 que pueden ayudar
+Puede usar la [Prevención de pérdida de datos (DLP) de Microsoft](/microsoft-365/business-video/set-up-dlp) para ayudar a proteger la información confidencial de su empresa. Puede [configurar una directiva DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) que use la [Plantilla del RGPD](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+
+### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>Paso 5: Mantener documentación sobre sus actividades de procesamiento de datos
+
+Prepare un documento breve que explique qué datos personales posee y por cuáles motivos. Es posible que deba poner la documentación a disposición de la autoridad de protección de datos nacional si es necesario.
+
+Esos documentos deben incluir la información que se muestra a continuación.
+
+| Información | Ejemplos |
+|---|---|
+|El propósito del procesamiento de datos|Alertar a los clientes sobre ofertas especiales, como proporcionar entrega en casa; proveedores de pago; cobertura de salario y seguridad social para empleados|
+|Los tipos de datos personales|Detalles de contacto de los clientes; detalles de contacto de los proveedores; datos de empleados|
+|Las categorías de personas interesadas|Empleados; clientes; proveedores|
+|Las categorías de destinatarios|Autoridades laborales; autoridades fiscales|
+|Los períodos de almacenamiento|Los datos personales de los empleados hasta la finalización del contrato laboral (y las obligaciones legales relacionadas); los datos personales de los clientes hasta la finalización de la relación contractual/cliente|
+|Las medidas de seguridad técnicas y organizativas para proteger los datos personales|Soluciones del sistema de TI actualizadas periódicamente; ubicación protegida; control de acceso; cifrado de datos; copia de seguridad de datos|
+|Si los datos personales se transfieren a destinatarios fuera de la UE|Uso de un procesador fuera de la UE (por ejemplo, almacenamiento en la nube); ubicación de datos del procesador; compromisos contractuales|
+
+</br>
+
+Puede encontrar los compromisos contractuales de Microsoft con relación al RGPD en el [Anexo de protección de datos de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=DPA), que proporciona los compromisos de privacidad y seguridad de Microsoft, los términos de procesamiento de datos y los términos del RGPD para los servicios hospedados por Microsoft a los que los clientes se suscriben en virtud de un contrato de licencias por volumen. 
+
+
+### <a name="step-6-make-sure-your-subcontractors-respect-the-rules"></a>Paso 6: Asegurarse de que los subcontratistas respeten las reglas
+
+Si subcontrata el procesamiento de datos personales a otra empresa, solo use un proveedor de servicios que garantice el procesamiento de acuerdo con los requisitos del RGPD (por ejemplo, medidas de seguridad). 
+
+
+
+### <a name="step-7-assign-someone-to-oversee-personal-data-protection"></a>Paso 7: Asignar a alguien para supervisar la protección de datos personales
+ 
+Para proteger mejor los datos personales, es posible que las organizaciones tengan que designar un <b>Delegado de protección de datos (DPO)</b>. Sin embargo, es posible que no tenga que designar un Delegado de protección de datos si el procesamiento de datos personales no es una parte fundamental de su empresa o si es una pequeña empresa. Por ejemplo, si su empresa solo recopila datos de los clientes para la entrega en casa, no debería tener que designar un DPO. Incluso si necesita hacer uso de un DPO, estas tareas pueden asignarse a un empleado existente, además de sus otras tareas. O bien, podría elegir contratar a un consultor externo para este trabajo, según sea necesario.
+
+Normalmente no es necesario llevar a cabo una [Evaluación del impacto de la protección de datos](https://gdpr.eu/article-35-impact-assessment/). Esto está reservado para las empresas que suponen más riesgo para los datos personales (por ejemplo, si realizan una supervisión a gran escala de un área de acceso público, como la vigilancia de vídeo).
+
+Si es una pequeña empresa que administra los salarios de los empleados y una lista de clientes, normalmente no es necesario realizar una Evaluación del impacto en la protección de datos.  
+ 
+
     
 ## <a name="common-small-business-questions-about-the-gdpr"></a>Preguntas comunes de pequeña empresa sobre el RGPD
 
@@ -118,7 +216,7 @@ En el RGPD, si recopila datos, se verá afectado hasta cierto punto. El RGPD tie
 
 Debe asegurarse de que sus clientes, incluso los que ha tenido durante años, hayan dado su consentimiento para utilizar sus datos para fines de marketing. Es posible que haya capturado anteriormente consentimiento, así como un registro para mostrarlo. Si es así, está listo para continuar con el marketing. De lo contrario, debe obtener el permiso del cliente para continuar comercializando con él. Esto generalmente implica enviar un correo electrónico pidiendo a los clientes que vayan a su sitio y seleccionen una opción para dar su consentimiento para recibir futuros correos electrónicos. 
   
-### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>¿Tengo que preocuparme del RGPD cuando tengo que contratar nuevos empleados? ¿Qué pasa con los empleados actuales?
+### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>¿Tengo que preocuparme sobre el RGPD cuando tengo que contratar nuevos empleados?
 
 El RGPD no solo afecta a los datos de clientes; también se extiende a los datos de los empleados. Las nuevas empresas se suelen localizar con plataformas de medios sociales, como LinkedIn. Asegúrese de no almacenar ningún dato potencial para obtener datos sin su expreso consentimiento.
   
@@ -143,14 +241,16 @@ Microsoft 365 para empresas puede ayudarle con el proceso de RGPD de las siguien
     Las herramientas como los registros de auditoría le permiten realizar un seguimiento e informar sobre el movimiento de datos. Los informes incluyen la clasificación de los datos que recopila y almacena, lo que hace con los datos y las transferencias de los datos. 
     
 Los clientes, empleados y clientes son cada vez más conscientes de la importancia de la privacidad de los datos y ahora esperan que una empresa u organización respeta esa privacidad. Microsoft 365 para empresas le proporciona las herramientas para conseguir y mantener el cumplimiento de RGPD sin tener que alcanzar un aumento masivo de su negocio.
-  
+
+
+
 ## <a name="next-steps"></a>Siguientes pasos
 
 Para prepararse para el RGPD, estas son algunas sugerencias para los pasos siguientes que debe realizar:
   
 - Apoye a su programa de RGPD con las [Listas de comprobación de preparación de responsabilidad](/compliance/regulatory/gdpr-arc)
     
-- Investigue [la implementación de Microsoft 365 para](https://www.microsoft.com/microsoft-365/business) como solución para lograr y mantener el cumplimiento con RGPD. 
+- Investigue [la implementación de Microsoft 365 para](/microsoft-365/business) como solución para lograr y mantener el cumplimiento con RGPD. 
    
 
 > [!IMPORTANT]
