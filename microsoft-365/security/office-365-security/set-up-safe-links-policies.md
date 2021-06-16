@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos de Caja fuerte y configuración global de vínculos de Caja fuerte en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40ae52cfce53c3fa14253a94e72f1a2bccda9a86
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: fb157792f0f9e80e4a974b59aebaa2e1991c5d0b
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929832"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933124"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -36,12 +36,15 @@ ms.locfileid: "52929832"
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](defender-for-office-365.md). Si es un usuario principal que busca información sobre safelinks en Outlook, consulte [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Caja fuerte Vínculos es una característica de [Microsoft Defender](defender-for-office-365.md) para Office 365 que proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y el tiempo de comprobación de clics de direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, [vea Caja fuerte Links in Microsoft Defender for Office 365](safe-links.md).
+Caja fuerte Los vínculos de [Microsoft Defender para Office 365](defender-for-office-365.md) proporcionan el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y el momento de la comprobación de clics de direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, [vea Caja fuerte Links in Microsoft Defender for Office 365](safe-links.md).
 
 No hay ninguna directiva de vínculos integrada o Caja fuerte predeterminada. Para obtener Caja fuerte de vínculos de búsqueda de direcciones URL, debe crear una o más directivas de vínculos de Caja fuerte como se describe en este artículo.
 
 > [!NOTE]
+>
 > Puede configurar la configuración global para la protección de Caja fuerte de vínculos **fuera** de Caja fuerte directivas de vínculos. Para obtener instrucciones, vea [Configure global settings for Caja fuerte Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
+>
+> Los administradores deben tener en cuenta las diferentes opciones de configuración para Caja fuerte vínculos. Una de las opciones disponibles es incluir información de identificación del usuario en Caja fuerte vínculos. Esta característica permite a los *equipos de Operaciones* de seguridad investigar posibles riesgos de usuario, tomar medidas correctivas y limitar infracciones costosas.
 
 Puede configurar directivas de vínculos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (powershell de Exchange Online para organizaciones Microsoft 365 elegibles con buzones de correo en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online, pero con Microsoft Defender para suscripciones de complemento Office 365).
 
@@ -49,9 +52,6 @@ Los elementos básicos de una directiva Caja fuerte links son:
 
 - La directiva de vínculos **seguros:** active la protección de vínculos de Caja fuerte, active la detección de direcciones URL en tiempo real, especifique si debe esperar a que se complete el examen en tiempo real antes de entregar el mensaje, activar el examen de mensajes internos, especificar si se debe realizar un seguimiento de los clics de usuario en las direcciones URL y especificar si se permite a los usuarios hacer clic en la url original.
 - **La regla de vínculos seguros:** especifica la prioridad y los filtros de destinatarios (a quién se aplica la directiva).
-
-> [!IMPORTANT]
-> Los administradores deben tener en cuenta las distintas opciones de configuración de SafeLinks. Una de las opciones disponibles es incluir información de identificación del usuario en SafeLinks. Esta característica permite a los *equipos de Operaciones* de seguridad investigar posibles riesgos de usuario, tomar medidas correctivas y limitar infracciones costosas.
 
 La diferencia entre estos dos elementos no es obvia al administrar las Caja fuerte links en el portal de Microsoft 365 Defender:
 
@@ -74,7 +74,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
   Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > 
+  >
   > - Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   . - El **grupo de roles Administración** de la organización de solo vista [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
@@ -88,39 +88,45 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 La creación de una directiva Caja fuerte links personalizada en el portal de Microsoft 365 Defender crea la regla de vínculos seguros y la directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
+1. En el portal de Microsoft 365 Defender, vaya **a Directivas &** de reglas de amenazas sección Directivas de amenazas \>  \>  \> **Caja fuerte Vínculos**.
 
-2. En la **página Caja fuerte,** haga clic en **Crear**.
+2. En la **página Caja fuerte,** haga clic ![ en Crear icono ](../../media/m365-cc-sc-create-icon.png) **Crear**.
 
 3. Se **abrirá el Asistente para Caja fuerte de directivas de nuevos** vínculos. En la **página Nombre de la directiva,** configure las siguientes opciones:
 
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
-
    - **Descripción**: escriba una descripción opcional para la directiva.
 
    Cuando termine, haga clic en **Siguiente**.
 
-4. En la **Configuración** que aparece, configure las siguientes opciones:
+4. En la **página Usuarios y dominios** que aparece, identifique los destinatarios internos a los que se aplica la directiva (condiciones de destinatario):
+   - **Usuarios**: los buzones, usuarios de correo o contactos de correo especificados de su organización.
+   - **Grupos**: los grupos de distribución, los grupos de seguridad habilitados para correo electrónico o los Grupos de Microsoft 365 especificados de la organización.
+   - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
-   - **Seleccione la acción para direcciones** URL potencialmente  malintencionadas desconocidas en mensajes: seleccione Activar para habilitar la protección de vínculos de Caja fuerte para vínculos en mensajes de correo electrónico.
+   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
+   Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
+
+   Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
+
+   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones a los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
+
+   Cuando termine, haga clic en **Siguiente**.
+
+5. En la **página Configuración de** protección que aparece, configure las siguientes opciones:
+   - **Seleccione la acción para direcciones** URL potencialmente  malintencionadas desconocidas en mensajes: seleccione Activar para habilitar la protección de vínculos de Caja fuerte para vínculos en mensajes de correo electrónico. Si activa esta configuración, estará disponible la siguiente configuración:
+     - **Aplicar análisis de direcciones URL** en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos: seleccione esta opción para habilitar el examen en tiempo real de vínculos en mensajes de correo electrónico. Si activa esta opción en la siguiente configuración, estará disponible:
+       - **Espere a que se** complete el examen de direcciones URL antes de entregar el mensaje: seleccione esta opción para esperar a que se complete el examen de direcciones URL en tiempo real antes de entregar el mensaje.
+     - **Aplicar Caja fuerte vínculos** a mensajes de correo electrónico enviados dentro de la organización: seleccione esta opción para aplicar la directiva de vínculos de Caja fuerte a los mensajes entre remitentes internos y destinatarios internos.
    - **Seleccione la acción para direcciones** URL desconocidas o  potencialmente malintencionadas dentro de Microsoft Teams : Seleccione Activar para habilitar la protección de vínculos de Caja fuerte para vínculos de Teams.
-
-   - **Aplicar análisis de direcciones URL** en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos: seleccione esta opción para habilitar el examen en tiempo real de vínculos en mensajes de correo electrónico.
-
-   - **Espere a que se complete el examen** de direcciones URL antes de entregar el mensaje: seleccione esta opción para esperar a que se complete el examen de direcciones URL en tiempo real antes de entregar el mensaje.
-
-   - **Aplicar Caja fuerte vínculos** a mensajes de correo electrónico enviados dentro de la organización: seleccione esta opción para aplicar la directiva de vínculos de Caja fuerte a los mensajes entre remitentes internos y destinatarios internos.
-
    - **No realizar un seguimiento de los clics del** usuario: deje esta configuración sin elegir para habilitar los clics de usuario de seguimiento en las direcciones URL de los mensajes de correo electrónico.
-
    - **No permitir que los usuarios hagan clic en** la dirección URL original: seleccione esta opción para impedir que los usuarios hagan clic en la dirección URL original en las páginas de [advertencia.](safe-links.md#warning-pages-from-safe-links)
-
    - **No vuelva a escribir las** siguientes direcciones URL: permite obtener acceso a las direcciones URL especificadas que, de lo contrario, se bloquearían mediante Caja fuerte vínculos.
 
-     En el cuadro, escriba la dirección URL o el valor que desee y, a continuación, haga clic en ![Icono de botón Agregar](../../media/ITPro-EAC-AddIcon.png).
+     En el cuadro, escriba la dirección URL o el valor que desee y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario.
 
-     Para quitar una entrada existente, selecciónelo y, a continuación, haga clic en ![Icono del botón Eliminar](../../media/ITPro-EAC-DeleteIcon.png).
+     Para quitar una entrada existente, haga clic en ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto a la entrada.
 
      Para obtener sintaxis de entrada, vea Sintaxis de entrada para la lista "No volver a [escribir las siguientes direcciones URL".](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
 
@@ -130,100 +136,88 @@ La creación de una directiva Caja fuerte links personalizada en el portal de Mi
 
    Cuando termine, haga clic en **Siguiente**.
 
-5. En la **página Aplicada a** que aparece, identifique los destinatarios internos a los que se aplica la directiva.
-
-   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
-
-   Haga **clic en Agregar una condición**. En el desplegable que aparece, seleccione una condición en **Aplicada si**:
-
-   - **El destinatario es**: especifica uno o varios buzones, usuarios de correo o contactos de correo de la organización.
-   - **El destinatario es miembro de**: Especifica uno o más grupos de la organización.
-   - **El dominio del destinatario es**: especifica los destinatarios en uno o varios de los dominios aceptados configurados en su organización.
-
-   Después de seleccionar la condición, aparece un desplegable correspondiente con **un cuadro Cualquiera de estos.**
-
-   - Haga clic en el cuadro y desplácese por la lista de valores que desea seleccionar.
-   - Haga clic en el cuadro y empiece a escribir para filtrar la lista y seleccionar un valor.
-   - Para agregar valores adicionales, haga clic en un área vacía del cuadro.
-   - Para quitar entradas individuales, haga clic **en Quitar** ![ icono Quitar del ](../../media/scc-remove-icon.png) valor.
-   - Para quitar toda la condición, haga clic **en Quitar** icono Quitar en ![ la ](../../media/scc-remove-icon.png) condición.
-
-   Para agregar una condición adicional, haga clic **en Agregar una condición** y seleccione un valor restante en Aplicado **si**.
-
-   Para agregar excepciones, haga clic **en Agregar una condición** y seleccione una excepción en Excepto **si**. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
+6. En la **página Notificación** que aparece, seleccione uno de los siguientes valores para ¿Cómo desea notificar a **los usuarios?**:
+   - **Usar el texto de notificación predeterminado**
+   - **Usar texto de notificación personalizado:** si selecciona este valor, aparecerá la siguiente configuración:
+     - **Usar Microsoft Traductor para la localización automática**
+     - **Texto de notificación personalizado:** escriba el texto de notificación personalizado en este cuadro.
 
    Cuando termine, haga clic en **Siguiente**.
 
-6. En la **página Revisar la configuración** que aparece, revisa la configuración. Puede hacer clic **en Editar** en cada configuración para modificarla.
+7. En la página **Revisar** que aparece, revise la configuración. Puede seleccionar **Editar** en cada sección para modificar la configuración dentro de la sección. También puede hacer clic en **Volver atrás** o seleccionar la página específica del asistente.
 
-   Cuando haya terminado, haga clic en **Finalizar**.
+   Cuando haya terminado, haga clic en **Enviar**.
+
+8. En la página de confirmación que aparece, haga clic en **Listo**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Use el portal Microsoft 365 Defender para ver las directivas Caja fuerte vínculos
 
-1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
+1. En el portal de Microsoft 365 Defender, vaya **a Directivas &** de reglas de amenazas sección Directivas de amenazas \>  \>  \> **Caja fuerte Vínculos**.
 
-2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
+2. En la **página Caja fuerte vínculos,** se muestran las siguientes propiedades en la lista de directivas Caja fuerte vínculos:
+   - **Nombre**
+   - **Estado**
+   - **Prioridad**
 
-   Los detalles de la directiva aparecen en un desplegable
+3. Al seleccionar una directiva haciendo clic en el nombre, la configuración de la directiva se muestra en un menú desplegable.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Usar el portal Microsoft 365 Defender para modificar las directivas Caja fuerte vínculos
 
-1. En el portal Microsoft 365 Defender, vaya a ***Directivas & reglas** de \> **amenazas** \> **Caja fuerte vínculos**.
+1. En el portal de Microsoft 365 Defender, vaya **a Directivas &** de reglas de amenazas sección Directivas de amenazas \>  \>  \> **Caja fuerte Vínculos**.
 
-2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
+2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista haciendo clic en el nombre.
 
-3. En el desplegable de detalles de la directiva que aparece, haga clic **en Editar directiva**.
-
-La configuración disponible en el menú desplegable que aparece es idéntica a la descrita en la sección Usar el [portal de Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) para crear Caja fuerte directivas de vínculos.
+3. En el control flotante de detalles de la directiva que aparece, seleccione **Editar** en cada sección para modificar la configuración dentro de la sección. Para obtener más información acerca de la configuración, vea la sección anterior Usar el portal de [Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) para crear directivas de vínculos Caja fuerte en este artículo.  
 
 Para habilitar o deshabilitar una directiva o establecer el orden de prioridad de la directiva, consulte las secciones siguientes.
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Habilitar o deshabilitar directivas Caja fuerte vínculos
 
-1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
+1. En el portal Microsoft 365 Defender, vaya a Email **& Collaboration** Policies \> **& Rules** Threat \> **policies** \> **section** \> **Caja fuerte Links**.
 
-2. Observe el valor de la **columna Estado:**
+2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista haciendo clic en el nombre.
 
-   - Mueva el botón de alternancia a la izquierda para deshabilitar la directiva: ![Desactivar directiva](../../media/scc-toggle-off.png).
+3. En la parte superior del control flotante de detalles de la directiva que aparece, verá uno de los siguientes valores:
+   - **Directiva desactivada**: para activar la directiva, haga clic en el ![Icono Activar](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar**.
+   - **Directiva activada**: Para desactivar la directiva, haga clic en el ![Icono desactivar](../../media/m365-cc-sc-turn-on-off-icon.png) y **Desactivar**.
 
-   - Mueva el botón de alternancia a la derecha para habilitar la directiva: ![Activar directiva](../../media/scc-toggle-on.png).
+4. En el cuadro de diálogo de confirmación que aparece, haga clic **Activar** o **Desactivar**.
+
+5. Haga clic en **Cerrar** en el control flotante de detalles de la directiva.
+
+De nuevo en la página principal de la directiva, el valor **Estado** de la directiva estará **Activado** o **Desactivado**.
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>Establecer la prioridad de las directivas Caja fuerte vínculos
 
-De forma predeterminada, Caja fuerte las directivas de vínculos se les da una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen menor prioridad que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
+De forma predeterminada, Caja fuerte a los vínculos se les da una prioridad que se basa en el orden en que se crearon (las directivas más recientes son de menor prioridad que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
-Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
+Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad** o en **Reducir la prioridad** en las propiedades de la directiva (no se puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
 
-Caja fuerte Las directivas de vínculos se muestran en el orden en que se procesan (la primera directiva tiene el **valor de** prioridad 0).
+**Nota**:
 
-> [!NOTE]
-> En el portal Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva de vínculos de Caja fuerte después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (lo que puede afectar a la prioridad de las reglas existentes).
+- En el portal Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva de vínculos de Caja fuerte después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (lo que puede afectar a la prioridad de las reglas existentes).
+- Caja fuerte Las directivas de vínculos se procesan en el orden en que se muestran (la primera directiva tiene el **valor de** prioridad 0). Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
 
-Para cambiar la prioridad de una directiva, mueva la directiva hacia arriba  o hacia abajo en la lista (no puede modificar directamente el número de prioridad en el portal de Microsoft 365 Defender).
+1. En el portal Microsoft 365 Defender, vaya a Email **& Collaboration** Policies \> **& Rules** Threat \> **policies** \> **section** \> **Caja fuerte Links**.
 
-1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
+2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista haciendo clic en el nombre.
 
-2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
+3. En la parte superior del control flotante de detalles de la directiva que aparece, verá **Aumentar la prioridad** o **Disminuir la prioridad** en función del valor de prioridad actual y del número de directivas personalizadas:
+   - La directiva con el **valor de prioridad** **0** solo tiene disponible la **opción Disminuir** prioridad.
+   - La directiva con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene disponible **la opción Aumentar** prioridad.
+   - Si tiene tres o más directivas, las directivas entre los valores de prioridad más alta y más baja tienen disponibles las opciones **Aumentar** prioridad y **Disminuir** prioridad.
 
-3. En el desplegable de detalles de la directiva que aparece, haga clic en el botón de prioridad disponible:
+   Haga clic en el ![Icono Aumentar la prioridad](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
 
-   - La directiva Caja fuerte vínculos con el **valor de prioridad** **0** solo tiene disponible **el botón Disminuir** prioridad.
-
-   - La directiva Caja fuerte vínculos con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene disponible **el botón Aumentar** prioridad.
-
-   - Si tiene tres o más directivas de vínculos Caja fuerte, las directivas  entre los  valores de prioridad más alta y más baja tienen disponibles los botones Aumentar prioridad y Disminuir prioridad.
-
-4. Haga **clic en Aumentar prioridad** o Disminuir **prioridad** para cambiar el valor **De** prioridad.
-
-5. Cuando haya terminado, haga clic en **Cerrar**.
+4. Cuando haya terminado, haga clic en **Cerrar** en el control flotante de detalles de la directiva.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Usar el portal de Microsoft 365 Defender para quitar directivas Caja fuerte vínculos
 
-1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas** de amenazas \> **Caja fuerte** \> **vínculos**.
+1. En el portal Microsoft 365 Defender, vaya a Email **& Collaboration** Policies \> **& Rules** Threat \> **policies** \> **section** \> **Caja fuerte Links**.
 
-2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista y haga clic en ella (no active la casilla).
+2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista haciendo clic en el nombre. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en el ![Icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
 
-3. En el desplegable de detalles de directiva que aparece, haga clic en **Eliminar** directiva y, a continuación, haga clic en **Sí** en el cuadro de diálogo de advertencia que aparece.
+3. En el cuadro de diálogo de confirmación que aparece, haga clic en **Sí**.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Usar Exchange Online PowerShell o PowerShell independiente de EOP para configurar directivas Caja fuerte vínculos
 
@@ -243,14 +237,13 @@ Crear una directiva Caja fuerte vínculos en PowerShell es un proceso de dos pas
 2. Cree la regla de vínculos seguros que especifica la directiva de vínculos seguros a la que se aplica la regla.
 
 > [!NOTE]
-> 
+>
 > - Puede crear una nueva regla de vínculos seguros y asignarle una directiva de vínculos seguros existente y sin asociar. Una regla de vínculos seguros no se puede asociar a más de una directiva de vínculos seguros.
-> 
+>
 > - Puede configurar las siguientes opciones en nuevas directivas de vínculos seguros en PowerShell que no estén disponibles en el portal de Microsoft 365 Defender hasta después de crear la directiva:
-> 
 >   - Cree la nueva directiva como deshabilitada (_Habilitada_ `$false` en el cmdlet **New-SafeLinksRule).**
 >   - Establezca la prioridad de la directiva durante la creación (_Prioridad_ _\<Number\>_ ) en el cmdlet **New-SafeLinksRule).**
-> 
+>
 > - Una nueva directiva de vínculos seguros que cree en PowerShell no será visible en el portal de Microsoft 365 Defender hasta que asigne la directiva a una regla de vínculos seguros.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Paso 1: Usar PowerShell para crear una directiva de vínculos seguros
@@ -262,9 +255,9 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 ```
 
 > [!NOTE]
-> 
+>
 > - Para obtener más información acerca de la sintaxis de entrada que se va a usar para el parámetro _DoNotRewriteUrls,_ vea [Entry syntax for the "Do not rewrite the following URLs" list](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
-> 
+>
 > - Para obtener una sintaxis adicional que puede usar para el parámetro _DoNotRewriteUrls_ al modificar las directivas de vínculos seguros existentes mediante el cmdlet **Set-SafeLinksPolicy,** vea la sección Usar [PowerShell](#use-powershell-to-modify-safe-links-policies) para modificar directivas de vínculos seguros más adelante en este artículo.
 
 En este ejemplo se crea una directiva de vínculos seguros denominada Contoso All con los siguientes valores:

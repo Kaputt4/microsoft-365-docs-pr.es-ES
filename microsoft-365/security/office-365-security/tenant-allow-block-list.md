@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 67c3badb86f1cfb9bf644cc202ed67e3163a6772
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929736"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933160"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de permitidos o bloqueados del espacio empresarial
 
@@ -92,44 +92,36 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para crear entradas de dirección URL de bloque en la lista de inquilinos permitidos o bloqueados
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** reglas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** de reglas de amenazas Sección Reglas de directivas de amenazas. \>  \>  \> 
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, compruebe que la pestaña **Direcciones** URL está seleccionada y, a continuación, haga clic en **Bloquear**
+2. En la **página Lista de inquilinos permitidos o** bloqueados, compruebe que la pestaña **Direcciones** URL está seleccionada y, a continuación, haga clic en Bloquear ![ icono ](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
 3. En el **menú desplegable Bloquear direcciones URL** que aparece, configure las siguientes opciones:
-
-   - **Agregar direcciones URL para bloquear:** escriba una dirección URL por línea, hasta un máximo de 20. Para obtener más información acerca de la sintaxis de las entradas de dirección URL, vea la sintaxis de dirección URL de la sección Lista de [permitidos o](#url-syntax-for-the-tenant-allowblock-list) bloqueados del espacio empresarial más adelante en este artículo.
-
+   - **Agregar direcciones URL con caracteres comodín:** escriba una dirección URL por línea, hasta un máximo de 20. Para obtener más información acerca de la sintaxis de las entradas de dirección URL, vea la sintaxis de dirección URL de la sección Lista de [permitidos o](#url-syntax-for-the-tenant-allowblock-list) bloqueados del espacio empresarial más adelante en este artículo.
    - **Nunca expire:** realice uno de los siguientes pasos:
-
-     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Expira en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
+     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
 
        o
 
      - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
-
    - **Nota opcional:** escriba texto descriptivo para las entradas.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para crear entradas de archivo de bloque en la lista de inquilinos permitidos o bloqueados
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Directivas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** de reglas de amenazas Sección Reglas de directivas de amenazas. \>  \>  \> 
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la **pestaña** Archivos y, a continuación, haga clic en **Bloquear**.
+2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la **pestaña** Archivos y, a continuación, haga clic en Bloquear ![ icono ](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
-3. En el menú desplegable **Agregar archivos** para bloquear que aparece, configure las siguientes opciones:
-
+3. En el menú desplegable **Bloquear** archivos que aparece, configure las siguientes opciones:
    - **Agregar hash de archivo:** escriba un valor hash SHA256 por línea, hasta un máximo de 20.
-
    - **Nunca expire:** realice uno de los siguientes pasos:
-
-     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Expira en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
+     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
 
      o
 
      - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
-
    - **Nota opcional:** escriba texto descriptivo para las entradas.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
@@ -142,42 +134,37 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 - Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia suplantación.
 - Las entradas de remitentes suplantados nunca expiran.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Directivas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** de reglas de amenazas Sección Reglas de directivas de amenazas. \>  \>  \> 
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña **Suplantación** y, a continuación, haga clic **en Agregar**.
+2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña **Suplantación** y, a continuación, haga clic ![ en Bloquear icono ](../../media/m365-cc-sc-create-icon.png) **Agregar**.
 
 3. En el **menú desplegable Agregar nuevos pares de** dominio que aparece, configure las siguientes opciones:
-
    - **Agregar nuevos pares de dominio con caracteres comodín:** escriba un par de dominio por línea, hasta un máximo de 20. Para obtener más información acerca de la sintaxis de las entradas de remitente suplantadas, vea la sintaxis del par de dominios para las entradas de remitente suplantadas en la sección Lista de [permitidos/bloqueados](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) del espacio empresarial más adelante en este artículo.
-
    - **Tipo de suplantación:** seleccione uno de los siguientes valores:
      - **Interno:** el remitente suplantado está en un dominio que pertenece a su organización (un [dominio aceptado).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Externo:** el remitente suplantado está en un dominio externo.
-
    - **Acción:** seleccione **Permitir** o **Bloquear**.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para ver entradas en la lista de inquilinos permitidos o bloqueados
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Directivas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** de reglas de amenazas Sección Reglas de directivas de amenazas. \>  \>  \> 
 
 2. Seleccione la pestaña que desee. Las columnas disponibles dependen de la pestaña seleccionada:
 
    - **DIRECCIONES URL:**
      - **Value**: La dirección URL.
      - **Action**: El valor **Block**.
-     - **Fecha de última actualización**
-     - **Fecha de expiración**
-     - **Nota**
-
+     - **Actualizado por última vez**
+     - **Quitar en**
+     - **Notas**
    - **Files**
      - **Valor:** hash de archivo.
      - **Action**: El valor **Block**.
-     - **Fecha de última actualización**
-     - **Fecha de expiración**
-     - **Nota**
-
+     - **Actualizado por última vez**
+     - **Quitar en**
+     - **Notas**
    - **Spoofing**
      - **Usuario suplantado**
      - **Infraestructura de envío**
@@ -190,10 +177,9 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
    - **DIRECCIONES URL:** puede agrupar los resultados por **Acción**.
    - **Archivos:** puede agrupar los resultados por **Acción**.
-   - **Dominios de remitente para la omisión de BCL:** **el** grupo no está disponible en esta pestaña.
    - **Suplantación:** puede agrupar los resultados por **tipo Action** o **Spoof**.
 
-   Haga **clic en** Buscar, escriba todo o parte de un valor y, a continuación, presione ENTRAR para buscar un valor específico. Cuando haya terminado, haga clic en **Borrar búsqueda** Borrar icono ![ de ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) búsqueda.
+   Haga **clic en** Buscar, escriba todo o parte de un valor y, a continuación, presione ENTRAR para buscar un valor específico. Cuando haya terminado, haga clic en ![ Borrar icono de búsqueda Borrar ](../../media/m365-cc-sc-close-icon.png) **búsqueda.**
 
    Haga **clic en** Filtrar para filtrar los resultados. Los valores que están disponibles en **el** control desplegable Filtro que aparece dependen de la pestaña seleccionada:
 
@@ -201,19 +187,12 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
      - **Action**
      - **No expirar nunca**
      - **Fecha de última actualización**
-     - **Fecha de expiración**
-
+     - **Quitar en**
    - **Files**
      - **Action**
      - **No expirar nunca**
-     - **Fecha de última actualización**
-     - **Fecha de expiración**
-
-   - **Dominios de remitente para la omisión de BCL**
-     - **No expirar nunca**
-     - **Fecha de última actualización**
-     - **Fecha de expiración**
-
+     - **Actualizado por última vez**
+     - **Quitar en**
    - **Spoofing**
      - **Action**
      - **Tipo de suplantación**
@@ -222,43 +201,34 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para modificar entradas en la lista de inquilinos permitidos o bloqueados
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Directivas de amenazas Directivas de inquilino \>  \> **Permitir/Bloquear listas**.
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** de reglas de amenazas Sección Reglas de directivas de amenazas. \>  \>  \> 
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea modificar:
    - **DIRECCIONES URL**
    - **Files**
-   - **Dominios de remitente para la omisión de BCL**
    - **Spoofing**
 
-3. Seleccione la entrada que desea modificar y, a continuación, haga clic **en Editar** icono ![ Editar ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) . Los valores que puede modificar en el control desplegable que aparece dependen de la pestaña seleccionada en el paso anterior:
-
+3. Seleccione la entrada que desea modificar y, a continuación, haga clic ![ en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**. Los valores que puede modificar en el control desplegable que aparece dependen de la pestaña seleccionada en el paso anterior:
    - **DIRECCIONES URL**
      - **No expire nunca** ni la fecha de expiración.
      - **Nota opcional**
-
    - **Files**
      - **No expire nunca** ni la fecha de expiración.
      - **Nota opcional**
-
-   - **Dominios de remitente para la omisión de BCL**
-     - **No expire nunca** ni la fecha de expiración.
-
    - **Spoofing**
      - **Acción:** puede cambiar el valor a **Permitir** o **Bloquear**.
-
 4. Cuando haya terminado, haga clic en **Guardar**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para quitar entradas de la lista de inquilinos permitidos o bloqueados
 
-1. En el portal Microsoft 365 Defender, vaya a **Administración** de amenazas Directivas \>  \> **de inquilino Permitir/Bloquear listas**.
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** de reglas de amenazas Sección Reglas de directivas de amenazas. \>  \>  \> 
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea quitar:
    - **DIRECCIONES URL**
    - **Files**
-   - **Dominios de remitente para la omisión de BCL**
    - **Spoofing**
 
-3. Seleccione la entrada que desea quitar y, a continuación, haga clic **en Eliminar** icono ![ Eliminar ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) .
+3. Seleccione la entrada que desea quitar y, a continuación, haga clic ![ en Eliminar icono ](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
 
 4. En el cuadro de diálogo de advertencia que aparece, haga clic **en Eliminar**.
 
@@ -662,7 +632,7 @@ Estos son algunos ejemplos de pares de dominio válidos para identificar remiten
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-El número máximo de entradas de remitente suplantadas es 1000. 
+El número máximo de entradas de remitente suplantadas es 1000.
 
 Agregar un par de dominio solo permite o bloquea *la* combinación del usuario suplantado *y la* infraestructura de envío. No permite el correo electrónico del usuario suplantado de ningún origen, ni permite el correo electrónico del origen de la infraestructura de envío para ningún usuario suplantado. 
 
