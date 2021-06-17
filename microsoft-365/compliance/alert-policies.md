@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de seguridad y cumplimiento en Office 365 y Microsoft 365 para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: 2fe23f3e6d6889c3fc80b94be6a07095e06d3d68
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 4bca7bb15900dbdd7caadb74ce7938b9483be03e
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950124"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964733"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el Centro de seguridad y cumplimiento
 
@@ -285,11 +285,11 @@ Una vez generadas y mostradas las alertas en la página Ver alertas en el Centro
 
   - El número de veces que se realizó el seguimiento de la actividad por parte de la alerta. Es posible que este número no coincida con el número real de alertas relacionadas enumeradas en la página Ver alertas porque es posible que se hayan desencadenado más alertas.
 
-  - Un vínculo a una lista de actividades que incluye un elemento para cada actividad que se realizó que desencadenó la alerta. Cada entrada de esta lista identifica cuándo se produjo la actividad, el nombre de la operación real (como "FileDeleted") y el usuario que realizó la actividad, el objeto (como un archivo, un caso de exhibición de documentos electrónicos o un buzón) en el que se realizó la actividad y la dirección IP del equipo del usuario. Para las alertas relacionadas con malware, esto se vincula a una lista de mensajes.
+  - Un vínculo a una lista de actividades que incluye un elemento para cada actividad que se realizó que desencadenó la alerta. Cada entrada de esta lista identifica cuándo se produjo la actividad, el nombre de la operación real (como "FileDeleted"), el usuario que realizó la actividad, el objeto (como un archivo, un caso de exhibición de documentos electrónicos o un buzón) en el que se realizó la actividad y la dirección IP del equipo del usuario. Para las alertas relacionadas con malware, esto se vincula a una lista de mensajes.
 
   - Nombre (y vínculo) de la directiva de alerta correspondiente.
 
-- **Suprimir notificaciones de correo electrónico.** Puedes desactivar (o suprimir) las notificaciones de correo electrónico de la página desplegable de una alerta. Al suprimir las notificaciones de correo electrónico, Microsoft no enviará notificaciones cuando las actividades o eventos que coincidan con las condiciones de la directiva de alertas. Pero las alertas se desencadenarán cuando las actividades realizadas por los usuarios coincidan con las condiciones de la directiva de alerta. También puede desactivar las notificaciones de correo electrónico editando la directiva de alertas.
+- **Suprimir notificaciones de correo electrónico.** Puedes desactivar (o suprimir) las notificaciones de correo electrónico de la página desplegable de una alerta. Al suprimir las notificaciones de correo electrónico, Microsoft no enviará notificaciones cuando se produzcan actividades o eventos que coincidan con las condiciones de la directiva de alertas. Pero las alertas se desencadenarán cuando las actividades realizadas por los usuarios coincidan con las condiciones de la directiva de alerta. También puede desactivar las notificaciones de correo electrónico editando la directiva de alertas.
 
 - **Resolver alertas.** Puede marcar una alerta como resuelta en la página desplegable de una alerta (que establece el estado de la alerta en **Resuelto**). A menos que cambie el filtro, las alertas resueltas no se mostrarán en la **página Ver alertas.**
 
