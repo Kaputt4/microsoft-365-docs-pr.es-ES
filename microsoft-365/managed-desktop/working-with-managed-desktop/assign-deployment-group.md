@@ -1,0 +1,39 @@
+---
+title: Asignar dispositivos a un grupo de implementación
+description: Cómo especificar el grupo de implementación en el que desea que los dispositivos se
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
+ms.service: m365-md
+author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 19465d2d2f077859490c106b9c01f08beb6e3906
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985641"
+---
+# <a name="assign-devices-to-a-deployment-group"></a><span data-ttu-id="b0496-104">Asignar dispositivos a un grupo de implementación</span><span class="sxs-lookup"><span data-stu-id="b0496-104">Assign devices to a deployment group</span></span>
+
+<span data-ttu-id="b0496-105">Escritorio administrado de Microsoft asignará dispositivos a los distintos grupos de implementación, pero puedes especificar o cambiar el grupo que un dispositivo se asigna a un dispositivo mediante el portal de administración.</span><span class="sxs-lookup"><span data-stu-id="b0496-105">Microsoft Managed Desktop will assign devices to the various deployment groups, but you can specify or change group a device is assigned to a device by using the Admin portal.</span></span> <span data-ttu-id="b0496-106">Cambias la asignación después de registrar un dispositivo o después de que un usuario se haya inscrito.</span><span class="sxs-lookup"><span data-stu-id="b0496-106">You change the assignment after a device is registered or after a user has enrolled.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="b0496-107">Si cambias la asignación, las directivas específicas de ese grupo se aplicarán al dispositivo.</span><span class="sxs-lookup"><span data-stu-id="b0496-107">If you change the assignment, policies that are specific to that group will be applied to the device.</span></span> <span data-ttu-id="b0496-108">El cambio puede instalar la versión más reciente de Windows 10 (incluidas las nuevas características o actualizaciones de calidad).</span><span class="sxs-lookup"><span data-stu-id="b0496-108">The change might install the latest version of Windows 10 (including any new feature or quality updates).</span></span> <span data-ttu-id="b0496-109">Es mejor mover solo unos pocos dispositivos al principio y, a continuación, comprobar la experiencia de usuario resultante.</span><span class="sxs-lookup"><span data-stu-id="b0496-109">It's best to move just a few devices at first and then check the resulting user experience.</span></span> <span data-ttu-id="b0496-110">Ten en cuenta que determinadas actualizaciones reiniciarán el dispositivo.</span><span class="sxs-lookup"><span data-stu-id="b0496-110">Be aware that certain updates will restart the device.</span></span> <span data-ttu-id="b0496-111">Comprueba que has seleccionado los dispositivos adecuados para asignar.</span><span class="sxs-lookup"><span data-stu-id="b0496-111">Double-check that you've selected the right devices to assign.</span></span> <span data-ttu-id="b0496-112">La asignación puede tardar hasta 24 horas en tener efecto.</span><span class="sxs-lookup"><span data-stu-id="b0496-112">It can take up to 24 hours for the assignment to take effect.</span></span>
+
+<span data-ttu-id="b0496-113">Para asignar dispositivos a un grupo de implementación, siga estos pasos.</span><span class="sxs-lookup"><span data-stu-id="b0496-113">To assign devices to a deployment group, follow these steps.</span></span> <span data-ttu-id="b0496-114">Si quieres mover dispositivos separados a diferentes grupos, repite estos pasos para cada grupo.</span><span class="sxs-lookup"><span data-stu-id="b0496-114">If you want to move separate devices to different groups, repeat these steps for each group.</span></span>
+
+1. <span data-ttu-id="b0496-115">En Microsoft Endpoint Manager, seleccione **Dispositivos** en el panel izquierdo.</span><span class="sxs-lookup"><span data-stu-id="b0496-115">In Microsoft Endpoint Manager, select **Devices** in the left pane.</span></span> <span data-ttu-id="b0496-116">En la **Escritorio administrado de Microsoft,** seleccione **Dispositivos**.</span><span class="sxs-lookup"><span data-stu-id="b0496-116">In the **Microsoft Managed Desktop** section, select **Devices**.</span></span>
+2. <span data-ttu-id="b0496-117">Selecciona los dispositivos que quieras asignar.</span><span class="sxs-lookup"><span data-stu-id="b0496-117">Select the devices you want to assign.</span></span> <span data-ttu-id="b0496-118">Todos los dispositivos seleccionados se asignarán al grupo que especifiques.</span><span class="sxs-lookup"><span data-stu-id="b0496-118">All selected devices will be assigned to the group you specify.</span></span>
+3. <span data-ttu-id="b0496-119">Selecciona **Acciones de dispositivo** en el menú.</span><span class="sxs-lookup"><span data-stu-id="b0496-119">Select **Device actions** from the menu.</span></span>
+4. <span data-ttu-id="b0496-120">Selecciona **Asignar dispositivo al grupo**.</span><span class="sxs-lookup"><span data-stu-id="b0496-120">Select **Assign device to group**.</span></span> <span data-ttu-id="b0496-121">Se abre un fly-in.</span><span class="sxs-lookup"><span data-stu-id="b0496-121">A fly-in opens.</span></span>
+5. <span data-ttu-id="b0496-122">Usa el menú desplegable para seleccionar el grupo al que mover los dispositivos y, a continuación, selecciona **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="b0496-122">Use the drop-down menu to select the group to move devices to, and then select **Save**.</span></span> <span data-ttu-id="b0496-123">El **grupo asignado por** cambiará a **Pendiente**.</span><span class="sxs-lookup"><span data-stu-id="b0496-123">The **Group assigned by** will change to **Pending**.</span></span>
+
+<span data-ttu-id="b0496-124">Una vez completada la asignación, **Grupo** asignado por cambiará a **Administrador**  (indicado que realizó el cambio) y la columna Grupo mostrará la nueva asignación de grupo.</span><span class="sxs-lookup"><span data-stu-id="b0496-124">When the assignment is complete, **Group assigned by** will change to **Admin** (indicated that you made the change) and the **Group** column will show the new group assignment.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="b0496-125">No puedes mover dispositivos a otros grupos si están en el estado de registro "error" o "pendiente".</span><span class="sxs-lookup"><span data-stu-id="b0496-125">You can't move devices to other groups if they're in the "error" or "pending" registration state.</span></span>
+>
+><span data-ttu-id="b0496-126">Si un dispositivo no se ha quitado correctamente, podría mostrar un estado de "listo".</span><span class="sxs-lookup"><span data-stu-id="b0496-126">If a device hasn't been properly removed, it could show a status of "ready."</span></span> <span data-ttu-id="b0496-127">Si mueves un dispositivo de este tipo, es posible que el movimiento no se complete.</span><span class="sxs-lookup"><span data-stu-id="b0496-127">If you move such a device, it's possible that the move won't complete.</span></span> <span data-ttu-id="b0496-128">Si no ves  Grupo asignado por cambio a **Pendiente** en el paso 5, comprueba que el dispositivo está disponible buscándolo en Intune.</span><span class="sxs-lookup"><span data-stu-id="b0496-128">If you don't see **Group assigned by** change to **Pending** in Step 5, check that the device is available by searching for it in Intune.</span></span> <span data-ttu-id="b0496-129">Para más información, consulte [Ver detalles de dispositivos de Intune](/mem/intune/remote-actions/device-inventory).</span><span class="sxs-lookup"><span data-stu-id="b0496-129">For more information, see [See device details in Intune](/mem/intune/remote-actions/device-inventory).</span></span>
