@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional para proveedores de soluciones en la nube relevante para la migración desde Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 7a7c377d8e0b72a0179ff28a93018f88d22a5325
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52931058"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984921"
 ---
 # <a name="additional-information-for-cloud-solution-providers"></a>Información adicional para proveedores de soluciones en la nube
 
@@ -37,6 +37,6 @@ Los inquilinos de clientes csp se migrarán a la nueva región del centro de dat
 
 ## <a name="missing-subscriptions-in-azure"></a>Faltan suscripciones en Azure
 
-Una vez completada la transición de suscripción y licencia [(fase 3),](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) los proveedores de soluciones en la nube ya no tendrán acceso a la suscripción de Azure.
+Una vez completada la transición de suscripción y licencia [(fase 3),](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer) los proveedores de soluciones en la nube ya no tendrán acceso a la suscripción de Azure.
 
 Para recuperar el acceso, siga estos pasos para elevar el acceso para administrar todas las [suscripciones y grupos de administración de Azure.](/azure/role-based-access-control/elevate-access-global-admin)

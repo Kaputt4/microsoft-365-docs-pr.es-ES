@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Información general de Temas Viva.
-ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 785fddb7c951bb6f7c170971f0af4eb7ac8f9a83
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950028"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984909"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de Temas Microsoft Viva 
 
@@ -39,14 +39,14 @@ Temas Viva usa inteligencia artificial para buscar e identificar automáticament
 
 Los temas se muestran a los usuarios a través de:
 
-- [Resaltados de temas](topic-experiences-overview.md#topic-highlights) en SharePoint páginas
+- [Temas resaltados](topic-experiences-overview.md#sharepoint-highlights) en SharePoint páginas
 - Respuestas de temas en [los resultados de búsqueda](topic-experiences-overview.md#search-results)
 - Búsqueda en [aplicaciones de office](topic-experiences-overview.md#office-application-search)
 - [Página principal del centro](topic-experiences-overview.md#topic-center) de temas
 
-### <a name="topic-highlights"></a>Contenido destacado del tema
+### <a name="sharepoint-highlights"></a>SharePoint destacados
 
-Cuando se menciona un tema en el contenido de noticias y páginas de SharePoint, lo verá resaltado. Puede abrir el resumen del tema desde el contenido resaltado. Abra los detalles del tema desde el título del resumen para ver la página de tema completa. El tema mencionado podría identificarse automáticamente o podría haber sido agregado a la página con una referencia directa al tema por el autor de la página. 
+Cuando se menciona un tema en el contenido de noticias y páginas de SharePoint, lo verá resaltado. Puede abrir el resumen del tema desde el contenido resaltado. Abra los detalles del tema desde el título del resumen para ver la página de tema completa. El tema mencionado podría identificarse automáticamente o el autor de la página podría haber hecho referencia directamente al tema. 
 
    ![Captura de pantalla que muestra los aspectos destacados del tema.](../media/knowledge-management/saturn.png) 
 

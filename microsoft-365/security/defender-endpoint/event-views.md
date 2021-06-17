@@ -14,18 +14,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769334"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985479"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Ver eventos de la reducción de la superficie expuesta a ataques
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +39,7 @@ Revisar los eventos es útil al evaluar las características. Puede habilitar el
 
 En este artículo se enumeran todos los eventos, su característica o configuración asociadas y se describe cómo crear vistas personalizadas para filtrar a eventos específicos.
 
-Obtenga informes detallados en eventos y bloques como parte de Seguridad de Windows si tiene una suscripción a E5 y usa [Microsoft Defender para Endpoint](microsoft-defender-endpoint.md).
+Obtenga informes detallados sobre eventos, bloques y advertencias como parte de Seguridad de Windows si tiene una suscripción a E5 y usa [Microsoft Defender para Endpoint](microsoft-defender-endpoint.md).
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Usar vistas personalizadas para revisar las capacidades de reducción de superficie de ataque
 
@@ -58,7 +59,8 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 3. Seleccionar **acción**  >  **Importar vista personalizada...**
 
-    ![Animación resaltando Importar vista personalizada a la izquierda de la ventana Visor par](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![Animación resaltando Importar vista personalizada a la izquierda de la ventana Visor par](images/events-import.gif)
 
 4. Navegue hasta donde extrajo el archivo XML para la vista personalizada que desee y selecciónelo.
 
@@ -68,19 +70,18 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 ### <a name="copy-the-xml-directly"></a>Copiar el XML directamente
 
-1. Escriba **visor de eventos** en el menú Inicio y abra el Windows de **eventos**.
+1. Escriba **el visor** de eventos en el menú Inicio y abra el Windows de **eventos**.
 
 2. En el panel izquierdo, en **Acciones,** seleccione **Crear vista personalizada...**
 
-    ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos](images/events-create.gif)
 
-3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente.** Verá una advertencia de que no puede editar  la consulta mediante la pestaña Filtro si usa la opción XML. Haga clic en **Sí**.
+3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente.** Verá una advertencia de que no puede editar  la consulta mediante la pestaña Filtro si usa la opción XML. Seleccione **Sí**.
 
 4. Pegue el código XML de la característica desde la que desea filtrar los eventos en la sección XML.
 
-5. Seleccione **Aceptar**. Especifique un nombre para el filtro.
-
-6. Creará una vista personalizada que filtra para mostrar solo los eventos relacionados con esa característica.
+5. Seleccione **Aceptar**. Especifique un nombre para el filtro. Esto crea una vista personalizada que filtra para mostrar solo los eventos relacionados con esa característica.
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>XML para eventos de regla de reducción de superficie de ataque
 
@@ -145,7 +146,7 @@ Puede tener acceso a estos eventos en Windows visor de eventos:
 2. Expanda Registros de aplicaciones y **servicios > Microsoft > Windows** y, a continuación, vaya a la carpeta que aparece en **Proveedor/origen** en la tabla siguiente.
 3. Haga doble clic en el sub elemento para ver los eventos. Desplácese por los eventos para encontrar el que está buscando.
 
-   ![Animación que muestra con el Visor de eventos](/windows/security/threat-protection/images/event-viewer)
+   ![Animación que muestra con el Visor de eventos](images/event-viewer.gif)
 
 Característica | Proveedor/origen | Id. de evento | Descripción
 :-|:-|:-:|:-

@@ -1,6 +1,5 @@
 ---
-title: Introducción al centro de temas en Temas de Microsoft Viva
-description: Obtenga información sobre el Centro de temas en Temas de Microsoft Viva.
+title: Introducción al centro de temas en Temas Microsoft Viva
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
@@ -14,16 +13,17 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+description: Obtenga información sobre el centro de temas en Temas Microsoft Viva.
+ms.openlocfilehash: f782be90e6cd6fa12e57df87ebb1057e58bdca19
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583597"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984933"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Introducción al centro de temas en Temas de Microsoft Viva
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Introducción al centro de temas en Temas Microsoft Viva
 
-En Temas de Microsoft Viva, el centro de temas es un sitio SharePoint moderno que sirve como centro de conocimientos para su organización. Se crea durante la instalación de [Viva Topics](set-up-topic-experiences.md) en el centro Microsoft 365 administración.
+En Temas Microsoft Viva, el centro de temas es un sitio SharePoint moderno que sirve como centro de conocimiento para su organización. Se crea durante la configuración [de Viva Topics](set-up-topic-experiences.md) en el Centro de administración de Microsoft 365.
 
 El centro de temas tiene una página principal predeterminada con el elemento web **Temas** donde todos los usuarios con licencia pueden ver los temas a los que tienen una conexión. 
 
@@ -34,7 +34,7 @@ Aunque todos los usuarios con licencia que puedan ver temas tendrán acceso al c
 El centro de temas se crea durante la instalación de Viva Topics. Una vez completada la instalación, un administrador puede encontrar la dirección URL en la [página de administración del centro de temas.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
-1. En el centro Microsoft 365 administración, **seleccione Configuración** y, a continuación, seleccione **Configuración de la organización**.
+1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y, a continuación, seleccione **Configuración de la organización**.
 2. En la **pestaña Servicios,** seleccione **Experiencias del tema**.
 
     ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
@@ -69,7 +69,7 @@ Una vez que un usuario confirma su conexión a un tema, el usuario puede realiza
 
 ## <a name="manage-topics-page"></a>Página Administrar temas
 
-Para trabajar en la página **Administrar temas** del centro de temas, debe tener los permisos necesarios administrar temas necesarios para el rol de administrador de conocimientos. El administrador puede asignar estos [](set-up-topic-experiences.md)permisos a los usuarios durante la configuración de administración de [conocimientos,](topic-experiences-knowledge-rules.md) o un administrador puede agregar nuevos usuarios después a través del centro de administración Microsoft 365 administración.
+Para trabajar en la página **Administrar temas** del centro de temas, debe tener los permisos necesarios administrar temas necesarios para el rol de administrador de conocimientos. El administrador puede asignar estos permisos a los usuarios durante [](topic-experiences-knowledge-rules.md) la configuración de [Temas de Viva,](set-up-topic-experiences.md)o un administrador puede agregar nuevos usuarios después a través del Centro de administración de Microsoft 365.
 
 En la **página Administrar temas,** el panel de temas muestra todos los temas, a los que tiene acceso, que se identificaron desde las ubicaciones de origen especificadas. Cada tema mostrará la fecha en que se descubrió el tema. Un usuario al que se asignaron permisos administrar temas puede revisar los temas no confirmados y elegir:
 
@@ -90,7 +90,7 @@ Si tiene permisos crear y editar temas, puede:
 - [Crear nuevos temas:](create-a-topic.md)puede crear nuevos temas para los que no se encontraron a través de la detección, o si las herramientas de inteligencia artificial no encontraron suficiente evidencia para crear un tema.
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar temas en el Centro de temas](manage-topics.md)
 

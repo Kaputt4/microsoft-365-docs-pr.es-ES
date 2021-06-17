@@ -14,16 +14,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6b9814180df2cad2553c4565ebb65891b5cf9bf5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782878"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985425"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personalizar las reglas de la reducción de superficie expuesta a ataques
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,6 +38,7 @@ ms.locfileid: "52782878"
 Aprende a personalizar las reglas [](#exclude-files-and-folders) de reducción [](#customize-the-notification) de superficie de ataques excluyendo archivos y carpetas o agregando texto personalizado a la alerta de notificación que aparece en el equipo de un usuario.
 
 Puedes establecer reglas de reducción de superficie de ataque para dispositivos que ejecuten cualquiera de las siguientes ediciones y versiones de Windows:
+
 - Windows 10 Pro versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows 10 Enterprise, versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows Servidor, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
@@ -44,11 +46,11 @@ Puedes establecer reglas de reducción de superficie de ataque para dispositivos
 
 ## <a name="exclude-files-and-folders"></a>Excluir archivos y carpetas
 
-Puedes excluir archivos y carpetas para que no se evalúen mediante reglas de reducción de superficie de ataque. Una vez excluido, el archivo no se bloqueará para que se ejecute incluso si una regla de reducción de superficie de ataque detecta que el archivo contiene un comportamiento malintencionado.
+Puedes excluir archivos y carpetas para que no se evalúen mediante reglas de reducción de superficie de ataque. Cuando se excluye, no se bloqueará la ejecución del archivo incluso si una regla de reducción de superficie de ataque detecta que el archivo contiene comportamiento malintencionado.
 
 Por ejemplo, considere la regla de ransomware:
 
-La regla ransomware está diseñada para ayudar a los clientes empresariales a reducir los riesgos de ataques de ransomware al mismo tiempo que garantiza la continuidad del negocio. De forma predeterminada, la regla ransomware producirá un error en el lado de la precaución y protegerá contra los archivos que aún no han alcanzado suficiente reputación y confianza. To reemphasize, the ransomware rule only triggers on files that have not gained enough positive reputation and prevalence, based on usage metrics of millions of our customers. Normalmente, los bloques se resuelven automáticamente, ya que los valores de "reputación y confianza" de cada archivo se actualizan incrementalmente a medida que aumenta el uso no problemático.
+La regla ransomware está diseñada para ayudar a los clientes empresariales a reducir los riesgos de ataques de ransomware al mismo tiempo que garantiza la continuidad del negocio. De forma predeterminada, los errores de la regla ransomware en el lado de la precaución y proteger contra archivos que aún no han alcanzado suficiente reputación y confianza. To reemphasize, the ransomware rule only triggers on files that have not gained enough positive reputation and prevalence, based on usage metrics of millions of our customers. Normalmente, los bloques se resuelven automáticamente, ya que los valores de "reputación y confianza" de cada archivo se actualizan incrementalmente a medida que aumenta el uso no problemático.
 
 En los casos en los que los bloques no  se resuelven automáticamente de forma oportuna, los clientes pueden , bajo su propio riesgo, usar el mecanismo de autoservicio o una funcionalidad de "lista de permitidos" basada en indicador de compromiso (IOC) para desbloquear los propios archivos.  
 
@@ -97,7 +99,7 @@ Consulta el tema [de reducción de](attack-surface-reduction.md) superficie de a
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>Usar PowerShell para excluir archivos y carpetas
 
-1. Escriba **powershell** en el menú Inicio, haga clic con el botón Windows PowerShell **y** seleccione Ejecutar como **administrador**
+1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**
 2. Escriba el siguiente cmdlet:
 
     ```PowerShell
@@ -119,7 +121,7 @@ Puedes personalizar la notificación para cuando se desencadena una regla y bloq
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Reducir superficies de ataque con reglas de reducción de superficie de ataque](attack-surface-reduction.md)
-* [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
-* [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
-* [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
+- [Reducir superficies de ataque con reglas de reducción de superficie de ataque](attack-surface-reduction.md)
+- [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
+- [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
+- [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)

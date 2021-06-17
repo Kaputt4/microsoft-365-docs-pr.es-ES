@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3a65fb6d5d3e5c6e68e100aa3ea2b4cf896dc281
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789403"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984849"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportar evaluación de inventario de software por dispositivo
 
@@ -34,14 +34,12 @@ ms.locfileid: "52789403"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
->
 >
 Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
 
 - [Export software inventory assessment **OData**](#1-export-software-inventory-assessment-odata)  La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de _100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
 
-- [Exportar evaluación de inventario de software **a través de archivos**](#2-export-software-inventory-assessment-via-files)  Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
+- [Exportar evaluación de inventario de software **a través de archivos**](#2-export-software-inventory-assessment-via-files)  Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Almacenamiento de Azure. Esta API le permite descargar todos los datos de Almacenamiento de Azure de la siguiente manera:
 
   - Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.
 
@@ -98,20 +96,20 @@ GET /api/machines/SoftwareInventoryByMachine
 
 Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
-DeviceId | cadena | Identificador único del dispositivo en el servicio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | cadena | Nombre de dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com
+DeviceId | string | Identificador único del dispositivo en el servicio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | string | Nombre de dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com
 DiskPaths | Array[string]  | Prueba en disco de que el producto está instalado en el dispositivo. | [ "C: \\ Archivos de programa (x86) \\ Microsoft \\ Silverlight \\ Application \\silverlight.exe" ]
-EndOfSupportDate | cadena | La fecha en la que la compatibilidad con este software tiene o finalizará. | 2020-12-30
-EndOfSupportStatus | cadena | Estado de finalización de la compatibilidad. Puede contener estos valores posibles: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software. | Próximos EOS
+EndOfSupportDate | string | La fecha en la que la compatibilidad con este software tiene o finalizará. | 2020-12-30
+EndOfSupportStatus | string | Estado de finalización de la compatibilidad. Puede contener estos valores posibles: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software. | Próximos EOS
 Id | string | Identificador único del registro. | 123ABG55_573AG&mnp!
-NumberOfWeaknesses | Entero | Número de debilidades de este software en este dispositivo | 3
-OSPlatform | cadena | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información. | Windows10
-RbacGroupName | cadena | Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None". | Servidores
+NumberOfWeaknesses | int | Número de debilidades de este software en este dispositivo | 3
+OSPlatform | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información. | Windows10
+RbacGroupName | string | Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None". | Servidores
 RegistryPaths | Array[string] | El Registro evidencia que el producto está instalado en el dispositivo. | [ "HKEY_LOCAL_MACHINE \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
-SoftwareFirstSeenTimestamp | cadena | La primera vez que se vio este software en el dispositivo. | 2019-04-07 02:06:47
-SoftwareName | cadena | Nombre del producto de software. | Silverlight
-SoftwareVendor | cadena | Nombre del proveedor de software. | microsoft
-SoftwareVersion | cadena | Número de versión del producto de software. | 81.0.4044.138
+SoftwareFirstSeenTimestamp | string | La primera vez que se vio este software en el dispositivo. | 2019-04-07 02:06:47
+SoftwareName | string | Nombre del producto de software. | Silverlight
+SoftwareVendor | string | Nombre del proveedor de software. | microsoft
+SoftwareVersion | string | Número de versión del producto de software. | 81.0.4044.138
 
 ### <a name="16-examples"></a>1.6 Ejemplos
 
@@ -257,7 +255,7 @@ GET /api/machines/SoftwareInventoryExport
 Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos | cadena de \[ matriz\] | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | cadena | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z ]
+GeneratedTime | string | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z ]
 
 ### <a name="26-examples"></a>2.6 Ejemplos
 
@@ -281,7 +279,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 

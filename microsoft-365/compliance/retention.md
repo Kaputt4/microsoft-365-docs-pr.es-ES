@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 44761199eea1cf2649a15b6a36ccc08eda99c570
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932871"
+ms.locfileid: "52950064"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -268,7 +268,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 
 **Nota al pie.**
 
-<sup>\*</sup> Para las etiquetas de retención que no marcan el contenido como un registro o un registro normativo, los eventos de auditoría se limitan a cuando un elemento de SharePoint tiene una etiqueta aplicada, modificada o quitada. Para obtener detalles de la auditoría de las etiquetas de retención, consulte la sección [Auditoría de acciones de retención](#auditing-retention-actions) en esta página.
+<sup>\*</sup> Para las etiquetas de retención que no marcan el contenido como un registro o un registro normativo, los eventos de auditoría se limitan a cuando un elemento de SharePoint o OneDrive tiene una etiqueta aplicada, modificada o quitada. Para obtener detalles de la auditoría de las etiquetas de retención, consulte la sección [Auditoría de acciones de retención](#auditing-retention-actions) en esta página.
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Combinación de directivas de retención y etiquetas de retención
 
@@ -395,7 +395,7 @@ Para obtener la lista completa de los eventos de auditoría, consulte las [Activ
 
 Las acciones de retención que se registran como eventos de auditoría solo están disponibles para las etiquetas de retención y no para las directivas de retención:
 
-- Cuando se aplica, cambia o quita una etiqueta de retención de un elemento en SharePoint:
+- Cuando se aplica, cambia o quita una etiqueta de retención de un elemento en SharePoint o OneDrive:
     - En **Actividades de archivos y páginas**, seleccione **Etiqueta de retención cambiada para un archivo**. 
 
 - Cuando un elemento etiquetado en SharePoint se marca como un registro, y un usuario lo desbloquea o bloquea:
@@ -404,7 +404,7 @@ Las acciones de retención que se registran como eventos de auditoría solo est�
 - Cuando se aplica una etiqueta de retención que marca el contenido como un registro o un registro normativo a un elemento en Exchange:
     - En **Actividades del buzón de Exchange**, seleccione **Mensaje etiquetado como un registro**.
 
-- Cuando un elemento etiquetado en SharePoint o Exchange se marca como un registro o registro normativo, y se elimina de manera permanente:
+- Cuando un elemento etiquetado en SharePoint, OneDrive o Exchange se marca como un registro o registro normativo, y se elimina de manera permanente:
     - En **Actividades de archivos y páginas**, seleccione **Archivo eliminado marcado como un registro.**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlets de PowerShell para directivas de retención y etiquetas de retención

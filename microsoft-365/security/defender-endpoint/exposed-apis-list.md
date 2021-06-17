@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: d0efd97359440ffb3d4b39b6389b477203c56084
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788840"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985005"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API compatibles de Microsoft Defender para punto de conexión
 
@@ -62,7 +62,7 @@ Tema | Descripción
 :---|:---
 [Búsqueda avanzada de amenazas](run-advanced-query-api.md) | Ejecutar consultas desde la API.
 [Propiedades y métodos de alerta](alerts.md) | Ejecute llamadas API como \- obtener alertas, crear alertas, actualizar alertas y mucho más.
-[Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md) | Ejecute llamadas API como la evaluación de configuración segura de exportación, la evaluación del inventario de \- software de exportación y la evaluación de vulnerabilidades de software de exportación.
+[Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md) | Ejecute llamadas api para recopilar evaluaciones de vulnerabilidades por dispositivo, como: evaluación de configuración segura de exportación, evaluación de inventario de software de exportación, evaluación de vulnerabilidades de software de exportación y evaluación de vulnerabilidades de software de exportación \- delta.
 [Propiedades y métodos de investigación automatizada](investigation.md) | Ejecute llamadas API como \- obtener la colección de Investigación.
 [Obtener alertas relacionadas con dominios](get-domain-related-alerts.md) | Ejecute llamadas API como obtener dispositivos relacionados con \- el dominio, estadísticas de dominio y mucho más.
 [Propiedades y métodos de archivo](files.md) | Ejecute llamadas API como obtener información de archivos, alertas relacionadas con \- archivos, dispositivos relacionados con archivos y estadísticas de archivos.
@@ -70,14 +70,14 @@ Tema | Descripción
 [Obtener alertas relacionadas con IP](get-ip-related-alerts.md) | Ejecute llamadas API como \- obtener alertas relacionadas con IP y obtener estadísticas de IP.
 [Propiedades y métodos de máquina](machine.md) | Ejecute llamadas API como obtener dispositivos, obtener dispositivos por identificador, información sobre usuarios que han iniciado \- sesión, editar etiquetas y mucho más.
 [Métodos y propiedades de acción de máquina](machineaction.md) | Ejecute una llamada API como \- Aislamiento, Ejecutar examen antivirus y mucho más.
-[Propiedades y métodos estáticos.](recommendation.md) | Ejecute llamadas API como \- obtener recomendación por identificador.
+[Propiedades y métodos estáticos](recommendation.md) | Ejecute llamadas API como \- obtener recomendación por identificador.
 [Propiedades y métodos de la actividad de corrección](get-remediation-methods-properties.md) | Ejecute una llamada API como obtener todas las tareas de corrección, obtener la tarea de corrección de dispositivos expuestos y \- obtener una tarea de corrección por identificador.
 [Propiedades y métodos de puntuación](score.md) | Ejecuta llamadas API como obtener \- puntuación de exposición o obtener puntuación segura del dispositivo.
 [Propiedades y métodos de software](software.md) | Ejecute llamadas API como, \- por ejemplo, enumerar vulnerabilidades por software.
 [Métodos de usuario](user.md) | Ejecute llamadas API como obtener alertas relacionadas con \- el usuario y dispositivos relacionados con el usuario.
 [Propiedades y métodos de vulnerabilidad](vulnerability.md) | Ejecute llamadas API, como \- los dispositivos de lista por vulnerabilidad.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Microsoft Defender para api de punto de conexión](apis-intro.md)
 

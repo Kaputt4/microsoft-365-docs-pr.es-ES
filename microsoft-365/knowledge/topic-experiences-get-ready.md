@@ -1,6 +1,6 @@
 ---
-title: Preparar el entorno para los temas de Microsoft Viva
-description: Prepare el entorno para que pueda proporcionar todo el contenido posible a los usuarios con Temas de Microsoft Viva.
+title: Prepare el entorno para Temas Microsoft Viva
+description: Prepare el entorno para que pueda proporcionar tanto contenido como sea posible a los usuarios con Temas Microsoft Viva.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,26 +10,26 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2db8654bf7bb1bc5ef4759c1617a84ae2153553a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917397"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984885"
 ---
-# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Preparar el entorno para los temas de Microsoft Viva
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Prepare el entorno para Temas Microsoft Viva
 
 Para disfrutar al máximo de Los temas de Viva, desea incluir todo el contenido posible para la detección de temas, de modo que pueda tener un amplio conjunto de temas para los usuarios. Pero, ¿qué contenido se debe usar para la detección de temas? ¿Cómo se maximiza el contenido indizado mientras se mantiene el control? Entre más contenido esté en el ámbito, mejor será la información que pueda descubrir la inteligencia artificial. Este artículo le guía por los pasos de planeación para asegurarse de que está incluyendo el contenido adecuado y de que tiene las personas y recursos adecuados para realizar una buena experiencia para los usuarios.
 
 Para planear temas de Viva, debe:
 
-![Migrar, conectar, modernizar, proteger e identificar los pasos para la incorporación a la administración de conocimientos](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![Migre, conecte, modernice, proteja e identifique los pasos para la incorporación a Temas de Viva.](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [Migrar contenido a SharePoint](#1-migrate-content-to-microsoft-365)
     - La indización de temas solo incluye contenido en SharePoint web.
       - Siempre que sea posible, migre contenido valioso a SharePoint Online desde orígenes externos.
       - Priorizar orígenes de contenido con alto potencial para conocimientos tácitos.
-      - Resalte las ventajas de la administración de conocimientos para animar a los usuarios a mover contenido de OneDrive a SharePoint sitios.
+      - Resalte las ventajas de Viva Topics para animar a los usuarios a mover contenido de OneDrive a SharePoint sitios.
 
 2. [Conectar información a Microsoft Graph](#2-connect-information-to-microsoft-graph)
     - En el futuro, el contenido externo puede entrar en el gráfico de conocimientos y estar disponible.
@@ -73,7 +73,7 @@ A su vez, realice la migración al máximo:
 
 Si no puede migrar contenido, conéctelo con microsoft Graph:
 
-- Considere la posibilidad [de implementar Graph Content Connectors](/microsoftsearch/connectors-overview). Con conectores, el contenido externo se puede indizar en microsoft Graph, donde los usuarios pueden descubrirlo a través de Microsoft Search.
+- Considere la posibilidad [de implementar Graph Content Connectors](/microsoftsearch/connectors-overview). Con conectores, el contenido externo se puede indizar en microsoft Graph, donde los usuarios pueden descubrirlo a través de Búsqueda de Microsoft.
 - Los desarrollos futuros aportarán datos externos a Los temas de Viva.
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. Modernizar SharePoint páginas
@@ -104,7 +104,7 @@ La buena administración de permisos es fundamental aquí. Y la buena administra
 
 Además de los permisos, también puede controlar el ámbito de lo que se puede detectar a través de los temas. Siempre tiene el control de lo que está indizado.
 
-Los administradores pueden configurar la indización en el Centro Microsoft 365 administración. Al configurar Administración [de conocimientos,](set-up-topic-experiences.md)puede:
+Los administradores pueden configurar la indización en el Centro Administración de Microsoft 365 datos. Al configurar Temas [de Viva,](set-up-topic-experiences.md)puede:
 
 - Permita la detección en todos los sitios de SharePoint o especifique sitios para incluirlos o excluirlos como orígenes de temas.
 - Si tiene términos confidenciales, también puede excluir temas por nombre. Por ejemplo, si tiene el nombre de un proyecto confidencial, donde no quiere que se muestre una tarjeta o contenido destacado, independientemente de los permisos del usuario, puede excluir ese nombre de proyecto.
@@ -128,9 +128,9 @@ Dependiendo de la organización, es posible que haya pocas o muchas personas que
 | Configurar temas de Viva | Posee la administración y la calidad de los temas | Contribuye a temas basados en su experiencia. |
 | Garantiza que se cumplan los estándares de seguridad y cumplimiento y comprende el contrato de licencia.| Realiza tareas de administración de temas como crear, editar, eliminar y rechazar temas. Admite colaboradores de temas con sus tareas. | Cura la información y el contenido de las páginas de temas, incluidas las personas y los recursos anclados a ese tema. |
 
-Momentos y las tarjetas aparecerán a los usuarios en el contexto de su trabajo, por ejemplo, mientras exploran páginas modernas en SharePoint. Puede controlar la experiencia del usuario final para los temas.
+Los resaltados y las tarjetas aparecerán a los usuarios en el contexto de su trabajo, por ejemplo, mientras exploran páginas modernas en SharePoint. Puede controlar la experiencia del usuario final para los temas.
 
-- Quién Puede ver temas? La visibilidad del tema se configura en el Centro Microsoft 365 administración. Elija qué grupos permitir ver temas:
+- Quién Puede ver temas? La visibilidad del tema se configura en el Centro Administración de Microsoft 365 temas. Elija qué grupos permitir ver temas:
   - Todos los usuarios de mi organización. "Todos" no incluye invitados, son todos los usuarios internos del directorio
   - Solo personas seleccionadas o grupos de seguridad (esta opción es buena mientras sigues implementando Temas de Viva, para que puedas probar con un subconjunto de usuarios). Si desea que los invitados consulten Temas, tendrá que usar la opción "personas seleccionadas o grupos de seguridad" y concederles una licencia.
   - Con nadie.

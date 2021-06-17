@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador, como los administradores de servicios, se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 801a5a85479e431b46883c69e75b1ea909892ca1
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908058"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964577"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
@@ -77,7 +77,7 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Administrador de aplicaciones de Office    |   Asigne el rol de administrador de aplicaciones de Office a los usuarios que necesiten hacer lo siguiente: <br> - Usar el servicio de directivas en la nube de Office para crear y administrar directivas basadas en la nube para Office <br> - Crear y administrar solicitudes de servicio <br> - Administrar el contenido de Novedades que los usuarios ven en sus aplicaciones de Office   <br> - Supervisar el estado del servicio  |
 |Administrador de contraseñas  |   Asigne el rol de administrador de contraseñas a un usuario que necesite restablecer las contraseñas de los no administradores y los administradores de contraseñas.   |
 |Lector del Centro de mensajes |   Asigne el rol de lector de informes a los usuarios que necesiten hacer lo siguiente: <br> - Supervisar las notificaciones del Centro de mensajes <br> - Obtener resúmenes semanales por correo electrónico de las publicaciones y actualizaciones del Centro de mensajes <br> - Compartir publicaciones del Centro de mensajes <br> - Tener acceso de solo lectura a servicios de Azure AD, como usuarios y grupos|
-|Administrador de Power Platform |   Asigne el rol de lector de informes a los usuarios que necesiten hacer lo siguiente: <br> - Administrar todas las características de administrador para PowerApps, Microsoft Flow y prevención de pérdida de datos <br> - Crear y administrar solicitudes de servicio <br> - Supervisar el estado del servicio  |
+|Administrador de Power Platform |   Asigne el rol de lector de informes a los usuarios que necesiten hacer lo siguiente: <br> - Administrar todas las características de administración de Power Apps, Power Automate y prevención de pérdida de datos <br> - Crear y administrar solicitudes de servicio <br> - Supervisar el estado del servicio  |
 |Lector de informes |   Asigne el rol de lector de informes a los usuarios que necesiten hacer lo siguiente: <br> - Ver datos de uso e informes de actividad en el Centro de administración de Microsoft 365 <br> - Obtener acceso al paquete de contenido de adopción de Power BI <br> - Obtener acceso a los informes de inicio de sesión y a la actividad en Azure AD <br> - Ver datos devueltos por la API de informes de Microsoft Graph|
 |Administrador de soporte técnico del servicio   |   Asigne el rol de administrador de soporte técnico de servicio como un rol adicional a los administradores o usuarios que necesiten hacer, además de su rol de administrador habitual, lo siguiente: <br> - Abrir y administrar solicitudes de servicio <br> - Ver y compartir publicaciones del centro de mensajes <br> - Supervisar el estado del servicio   |
 |Administrador de SharePoint    |   Asigne el rol de administrador de SharePoint a los usuarios que necesiten acceder y administrar el centro de administración de SharePoint Online. <br><br>Los administradores de SharePoint también pueden: <br> - Crear y eliminar sitios <br> - Administrar colecciones de sitios y la configuración global de SharePoint   |

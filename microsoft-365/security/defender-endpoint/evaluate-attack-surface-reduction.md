@@ -14,17 +14,16 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a5fa8e46de0a6561d3377ce77e38bd59aa97f3c4
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861232"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984729"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Evaluar las reglas de la reducción de la superficie expuesta a ataques
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 
@@ -33,7 +32,7 @@ ms.locfileid: "52861232"
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Las reglas de reducción de superficie de ataque ayudan a evitar las acciones que suele usar el malware para poner en peligro dispositivos o redes. Las reglas de reducción de superficie de ataque ayudan a cerrar muchos de los puntos de entrada comunes usados por malware y ransomware. 
+Las reglas de reducción de superficie de ataque ayudan a evitar las acciones que suele usar el malware para poner en peligro dispositivos o redes. Las reglas de reducción de superficie de ataque ayudan a cerrar muchos de los puntos de entrada comunes usados por malware y ransomware.
 
 Establecer reglas de reducción de superficie de ataque para dispositivos que ejecuten cualquiera de las siguientes ediciones y versiones de Windows:
 
@@ -43,9 +42,9 @@ Establecer reglas de reducción de superficie de ataque para dispositivos que ej
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 > [!WARNING]
-> La habilitación de reglas de reducción de servicios de ataque Windows Server 2016 provocar resultados inesperados e impactar en el rendimiento del servidor. No se recomienda habilitar o implementar reglas de reducción de superficie de ataque en plataformas no admitidas.
+> La habilitación de reglas de reducción de servicios de ataque Windows Server 2016 provocar resultados inesperados y afectar al rendimiento del servidor. No se recomienda habilitar o implementar reglas de reducción de superficie de ataque en plataformas no admitidas.
 
-Aprende a evaluar las reglas de reducción de superficie de ataque habilitando el modo de auditoría para probar la característica directamente en tu organización.
+Aprende a evaluar las reglas de reducción de superficie de ataque habilitando el modo [de](audit-windows-defender.md) auditoría para probar la característica directamente en tu organización.
 
 > [!TIP]
 > También puede visitar el sitio web de escenario de demostración de Microsoft Defender para endpoint en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que la característica funciona y ver cómo funciona.
@@ -89,8 +88,8 @@ Durante la evaluación, es posible que desee configurar cada regla individualmen
 
 Consulta [Personalizar reglas de reducción de](customize-attack-surface-reduction.md) superficie de ataque para obtener información sobre cómo configurar la característica con herramientas de administración, incluidas directivas de grupo y directivas de CSP de MDM.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-* [Reducir superficies de ataque con reglas de reducción de superficie de ataque](attack-surface-reduction.md)
-* [Usar el modo de auditoría para evaluar Windows Defender](audit-windows-defender.md)
-* [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
+- [Reducir superficies de ataque con reglas de reducción de superficie de ataque](attack-surface-reduction.md)
+- [Usar el modo de auditoría para evaluar Windows Defender](audit-windows-defender.md)
+- [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
