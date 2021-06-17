@@ -27,36 +27,36 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 06/16/2021
 ms.locfileid: "52964878"
 ---
-# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a><span data-ttu-id="789d8-104">Buscar amenazas entre dispositivos, correos electrónicos, aplicaciones e identidades</span><span class="sxs-lookup"><span data-stu-id="789d8-104">Hunt for threats across devices, emails, apps, and identities</span></span>
+# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a><span data-ttu-id="89d83-104">Buscar amenazas entre dispositivos, correos electrónicos, aplicaciones e identidades</span><span class="sxs-lookup"><span data-stu-id="89d83-104">Hunt for threats across devices, emails, apps, and identities</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="789d8-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="789d8-105">**Applies to:**</span></span>
-- <span data-ttu-id="789d8-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="789d8-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="89d83-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="89d83-105">**Applies to:**</span></span>
+- <span data-ttu-id="89d83-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="89d83-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="789d8-107">[La búsqueda](advanced-hunting-overview.md) avanzada en Microsoft 365 Defender permite buscar de forma proactiva amenazas en:</span><span class="sxs-lookup"><span data-stu-id="789d8-107">[Advanced hunting](advanced-hunting-overview.md) in Microsoft 365 Defender allows you to proactively hunt for threats across:</span></span>
-- <span data-ttu-id="789d8-108">Dispositivos administrados por Microsoft Defender para endpoint</span><span class="sxs-lookup"><span data-stu-id="789d8-108">Devices managed by Microsoft Defender for Endpoint</span></span>
-- <span data-ttu-id="789d8-109">Correos electrónicos procesados por Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="789d8-109">Emails processed by Microsoft 365</span></span>
-- <span data-ttu-id="789d8-110">Actividades de aplicación en la nube, eventos de autenticación y actividades de controlador de dominio que realiza el seguimiento de Microsoft Cloud App Security y Microsoft Defender for Identity</span><span class="sxs-lookup"><span data-stu-id="789d8-110">Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Cloud App Security and Microsoft Defender for Identity</span></span>
+<span data-ttu-id="89d83-107">[La búsqueda](advanced-hunting-overview.md) avanzada en Microsoft 365 Defender permite buscar de forma proactiva amenazas en:</span><span class="sxs-lookup"><span data-stu-id="89d83-107">[Advanced hunting](advanced-hunting-overview.md) in Microsoft 365 Defender allows you to proactively hunt for threats across:</span></span>
+- <span data-ttu-id="89d83-108">Dispositivos administrados por Microsoft Defender para endpoint</span><span class="sxs-lookup"><span data-stu-id="89d83-108">Devices managed by Microsoft Defender for Endpoint</span></span>
+- <span data-ttu-id="89d83-109">Correos electrónicos procesados por Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="89d83-109">Emails processed by Microsoft 365</span></span>
+- <span data-ttu-id="89d83-110">Actividades de aplicación en la nube, eventos de autenticación y actividades de controlador de dominio que realiza el seguimiento de Microsoft Cloud App Security y Microsoft Defender for Identity</span><span class="sxs-lookup"><span data-stu-id="89d83-110">Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Cloud App Security and Microsoft Defender for Identity</span></span>
 
-<span data-ttu-id="789d8-111">Con este nivel de visibilidad, puede buscar rápidamente amenazas que atraviesan secciones de la red, incluidas las intrusiones sofisticadas que llegan al correo electrónico o a la web, elevar los privilegios locales, adquirir credenciales de dominio con privilegios y moverse lateralmente a través de los dispositivos.</span><span class="sxs-lookup"><span data-stu-id="789d8-111">With this level of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices.</span></span> 
+<span data-ttu-id="89d83-111">Con este nivel de visibilidad, puede buscar rápidamente amenazas que atraviesan secciones de la red, incluidas las intrusiones sofisticadas que llegan al correo electrónico o a la web, elevar los privilegios locales, adquirir credenciales de dominio con privilegios y moverse lateralmente a través de los dispositivos.</span><span class="sxs-lookup"><span data-stu-id="89d83-111">With this level of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices.</span></span> 
 
-<span data-ttu-id="789d8-112">Estas son técnicas generales y consultas de ejemplo basadas en diversos escenarios de búsqueda que pueden ayudarle a explorar cómo puede crear consultas al buscar amenazas tan sofisticadas.</span><span class="sxs-lookup"><span data-stu-id="789d8-112">Here are general techniques and sample queries based on various hunting scenarios that can help you explore how you might construct queries when hunting for such sophisticated threats.</span></span>
+<span data-ttu-id="89d83-112">Estas son técnicas generales y consultas de ejemplo basadas en diversos escenarios de búsqueda que pueden ayudarle a explorar cómo puede crear consultas al buscar amenazas tan sofisticadas.</span><span class="sxs-lookup"><span data-stu-id="89d83-112">Here are general techniques and sample queries based on various hunting scenarios that can help you explore how you might construct queries when hunting for such sophisticated threats.</span></span>
 
-## <a name="get-entity-info"></a><span data-ttu-id="789d8-113">Obtener información de entidad</span><span class="sxs-lookup"><span data-stu-id="789d8-113">Get entity info</span></span>
-<span data-ttu-id="789d8-114">Use estas consultas para obtener información sobre las cuentas de usuario, los dispositivos y los archivos rápidamente.</span><span class="sxs-lookup"><span data-stu-id="789d8-114">Use these queries to learn how you can quickly get information about user accounts, devices, and files.</span></span> 
+## <a name="get-entity-info"></a><span data-ttu-id="89d83-113">Obtener información de entidad</span><span class="sxs-lookup"><span data-stu-id="89d83-113">Get entity info</span></span>
+<span data-ttu-id="89d83-114">Use estas consultas para obtener información sobre las cuentas de usuario, los dispositivos y los archivos rápidamente.</span><span class="sxs-lookup"><span data-stu-id="89d83-114">Use these queries to learn how you can quickly get information about user accounts, devices, and files.</span></span> 
 
-### <a name="obtain-user-accounts-from-email-addresses"></a><span data-ttu-id="789d8-115">Obtener cuentas de usuario a través de las direcciones de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="789d8-115">Obtain user accounts from email addresses</span></span>
-<span data-ttu-id="789d8-116">Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario.</span><span class="sxs-lookup"><span data-stu-id="789d8-116">When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses.</span></span> <span data-ttu-id="789d8-117">Por lo general, puede hacerlo para la dirección de destinatario o remitente mediante el *host local* desde la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="789d8-117">You can generally do this for either recipient or sender address using the *local-host* from the email address.</span></span>
+### <a name="obtain-user-accounts-from-email-addresses"></a><span data-ttu-id="89d83-115">Obtener cuentas de usuario a través de las direcciones de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="89d83-115">Obtain user accounts from email addresses</span></span>
+<span data-ttu-id="89d83-116">Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario.</span><span class="sxs-lookup"><span data-stu-id="89d83-116">When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses.</span></span> <span data-ttu-id="89d83-117">Por lo general, puede hacerlo para la dirección de destinatario o remitente mediante el *host local* desde la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="89d83-117">You can generally do this for either recipient or sender address using the *local-host* from the email address.</span></span>
 
-<span data-ttu-id="789d8-118">En el fragmento de código siguiente, usamos la función [Kusto tostring()](/azure/data-explorer/kusto/query/tostringfunction) para extraer el host local justo antes de las direcciones de correo electrónico del destinatario de `@` la columna `RecipientEmailAddress` .</span><span class="sxs-lookup"><span data-stu-id="789d8-118">In the snippet below, we use the [tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto function to extract the local-host right before the `@` from recipient email addresses in the column `RecipientEmailAddress`.</span></span>
+<span data-ttu-id="89d83-118">En el fragmento de código siguiente, usamos la función [Kusto tostring()](/azure/data-explorer/kusto/query/tostringfunction) para extraer el host local justo antes de las direcciones de correo electrónico del destinatario de `@` la columna `RecipientEmailAddress` .</span><span class="sxs-lookup"><span data-stu-id="89d83-118">In the snippet below, we use the [tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto function to extract the local-host right before the `@` from recipient email addresses in the column `RecipientEmailAddress`.</span></span>
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
 AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ```
-<span data-ttu-id="789d8-119">La siguiente consulta muestra cómo se puede usar este fragmento de código:</span><span class="sxs-lookup"><span data-stu-id="789d8-119">The query below shows how this snippet can be used:</span></span>
+<span data-ttu-id="89d83-119">La siguiente consulta muestra cómo se puede usar este fragmento de código:</span><span class="sxs-lookup"><span data-stu-id="89d83-119">The query below shows how this snippet can be used:</span></span>
 
 ```kusto
 EmailEvents
@@ -64,9 +64,9 @@ EmailEvents
 | project RecipientEmailAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 ```
 
-### <a name="merge-the-identityinfo-table"></a><span data-ttu-id="789d8-120">Combinar la tabla IdentityInfo</span><span class="sxs-lookup"><span data-stu-id="789d8-120">Merge the IdentityInfo table</span></span>
+### <a name="merge-the-identityinfo-table"></a><span data-ttu-id="89d83-120">Combinar la tabla IdentityInfo</span><span class="sxs-lookup"><span data-stu-id="89d83-120">Merge the IdentityInfo table</span></span>
 
-<span data-ttu-id="789d8-121">Puede obtener nombres de cuenta y otra información de cuenta combinando o uniendo la [tabla IdentityInfo](advanced-hunting-identityinfo-table.md).</span><span class="sxs-lookup"><span data-stu-id="789d8-121">You can get account names and other account information by merging or joining the [IdentityInfo table](advanced-hunting-identityinfo-table.md).</span></span> <span data-ttu-id="789d8-122">La siguiente consulta obtiene la lista de detecciones de phishing y malware de la tabla [EmailEvents](advanced-hunting-emailevents-table.md) y, a continuación, une esa información con la tabla para obtener información detallada sobre `IdentityInfo` cada destinatario.</span><span class="sxs-lookup"><span data-stu-id="789d8-122">The query below obtains the list of phishing and malware detections from the [EmailEvents table](advanced-hunting-emailevents-table.md) and then joins that information with the `IdentityInfo` table to get detailed information about each recipient.</span></span> 
+<span data-ttu-id="89d83-121">Puede obtener nombres de cuenta y otra información de cuenta combinando o uniendo la [tabla IdentityInfo](advanced-hunting-identityinfo-table.md).</span><span class="sxs-lookup"><span data-stu-id="89d83-121">You can get account names and other account information by merging or joining the [IdentityInfo table](advanced-hunting-identityinfo-table.md).</span></span> <span data-ttu-id="89d83-122">La siguiente consulta obtiene la lista de detecciones de phishing y malware de la tabla [EmailEvents](advanced-hunting-emailevents-table.md) y, a continuación, une esa información con la tabla para obtener información detallada sobre `IdentityInfo` cada destinatario.</span><span class="sxs-lookup"><span data-stu-id="89d83-122">The query below obtains the list of phishing and malware detections from the [EmailEvents table](advanced-hunting-emailevents-table.md) and then joins that information with the `IdentityInfo` table to get detailed information about each recipient.</span></span> 
 
 ```kusto
 EmailEvents
@@ -82,11 +82,11 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
-### <a name="get-device-information"></a><span data-ttu-id="789d8-123">Obtener información del dispositivo</span><span class="sxs-lookup"><span data-stu-id="789d8-123">Get device information</span></span>
-<span data-ttu-id="789d8-124">El [esquema de búsqueda avanzada](advanced-hunting-schema-tables.md) proporciona información extensa del dispositivo en varias tablas.</span><span class="sxs-lookup"><span data-stu-id="789d8-124">The [advanced hunting schema](advanced-hunting-schema-tables.md) provides extensive device information in various tables.</span></span> <span data-ttu-id="789d8-125">Por ejemplo, la [tabla DeviceInfo proporciona](advanced-hunting-deviceinfo-table.md) información completa del dispositivo basada en datos de eventos agregados periódicamente.</span><span class="sxs-lookup"><span data-stu-id="789d8-125">For example, the [DeviceInfo table](advanced-hunting-deviceinfo-table.md) provides comprehensive device information based on event data aggregated regularly.</span></span> <span data-ttu-id="789d8-126">Esta consulta usa la tabla para comprobar si un usuario potencialmente comprometido ( ) ha iniciado sesión en cualquier dispositivo y, a continuación, enumera las alertas que se han desencadenado `DeviceInfo` `<account-name>` en esos dispositivos.</span><span class="sxs-lookup"><span data-stu-id="789d8-126">This query uses the `DeviceInfo` table to check if a potentially compromised user (`<account-name>`) has logged on to any devices and then lists the alerts that have been triggered on those devices.</span></span>
+### <a name="get-device-information"></a><span data-ttu-id="89d83-123">Obtener información del dispositivo</span><span class="sxs-lookup"><span data-stu-id="89d83-123">Get device information</span></span>
+<span data-ttu-id="89d83-124">El [esquema de búsqueda avanzada](advanced-hunting-schema-tables.md) proporciona información extensa del dispositivo en varias tablas.</span><span class="sxs-lookup"><span data-stu-id="89d83-124">The [advanced hunting schema](advanced-hunting-schema-tables.md) provides extensive device information in various tables.</span></span> <span data-ttu-id="89d83-125">Por ejemplo, la [tabla DeviceInfo proporciona](advanced-hunting-deviceinfo-table.md) información completa del dispositivo basada en datos de eventos agregados periódicamente.</span><span class="sxs-lookup"><span data-stu-id="89d83-125">For example, the [DeviceInfo table](advanced-hunting-deviceinfo-table.md) provides comprehensive device information based on event data aggregated regularly.</span></span> <span data-ttu-id="89d83-126">Esta consulta usa la tabla para comprobar si un usuario potencialmente comprometido ( ) ha iniciado sesión en cualquier dispositivo y, a continuación, enumera las alertas que se han desencadenado `DeviceInfo` `<account-name>` en esos dispositivos.</span><span class="sxs-lookup"><span data-stu-id="89d83-126">This query uses the `DeviceInfo` table to check if a potentially compromised user (`<account-name>`) has logged on to any devices and then lists the alerts that have been triggered on those devices.</span></span>
 
 >[!Tip]
-> <span data-ttu-id="789d8-127">Esta consulta se `kind=inner` usa para especificar una combinación [interna](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), que evita la desduplicación de los valores del lado izquierdo para `DeviceId` .</span><span class="sxs-lookup"><span data-stu-id="789d8-127">This query uses `kind=inner` to specify an [inner-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), which prevents deduplication of left side values for `DeviceId`.</span></span>
+> <span data-ttu-id="89d83-127">Esta consulta se `kind=inner` usa para especificar una combinación [interna](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), que evita la desduplicación de los valores del lado izquierdo para `DeviceId` .</span><span class="sxs-lookup"><span data-stu-id="89d83-127">This query uses `kind=inner` to specify an [inner-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), which prevents deduplication of left side values for `DeviceId`.</span></span>
 
 ```kusto
 DeviceInfo
@@ -102,9 +102,9 @@ DeviceInfo
 ```
 
 
-### <a name="get-file-event-information"></a><span data-ttu-id="789d8-128">Obtener información de eventos de archivo</span><span class="sxs-lookup"><span data-stu-id="789d8-128">Get file event information</span></span>
+### <a name="get-file-event-information"></a><span data-ttu-id="89d83-128">Obtener información de eventos de archivo</span><span class="sxs-lookup"><span data-stu-id="89d83-128">Get file event information</span></span>
 
-<span data-ttu-id="789d8-129">Use la siguiente consulta para obtener información sobre eventos relacionados con archivos.</span><span class="sxs-lookup"><span data-stu-id="789d8-129">Use the following query to get information on file related events.</span></span> 
+<span data-ttu-id="89d83-129">Use la siguiente consulta para obtener información sobre eventos relacionados con archivos.</span><span class="sxs-lookup"><span data-stu-id="89d83-129">Use the following query to get information on file related events.</span></span> 
 
 ```kusto
 DeviceInfo
@@ -119,25 +119,9 @@ DeviceInfo
 ```
 
 
-### <a name="get-network-event-information"></a><span data-ttu-id="789d8-130">Obtener información de eventos de red</span><span class="sxs-lookup"><span data-stu-id="789d8-130">Get network event information</span></span>
+### <a name="get-network-event-information"></a><span data-ttu-id="89d83-130">Obtener información de eventos de red</span><span class="sxs-lookup"><span data-stu-id="89d83-130">Get network event information</span></span>
 
-<span data-ttu-id="789d8-131">Use la siguiente consulta para obtener información sobre eventos relacionados con la red.</span><span class="sxs-lookup"><span data-stu-id="789d8-131">Use the following query to get information on network related events.</span></span>
-
-```kusto
-DeviceInfo
-| where Timestamp > ago(1d)
-| where ClientVersion startswith "20.1"
-| summarize by DeviceId
-| join kind=inner (
-    DeviceNetworkEvents 
-    | where Timestamp > ago(1d)
-) on DeviceId
-| take 10
-```
-
-### <a name="get-device-agent-version-information"></a><span data-ttu-id="789d8-132">Obtener información de versión del agente de dispositivo</span><span class="sxs-lookup"><span data-stu-id="789d8-132">Get device agent version information</span></span>
-
-<span data-ttu-id="789d8-133">Use la siguiente consulta para obtener la versión del agente que se ejecuta en un dispositivo.</span><span class="sxs-lookup"><span data-stu-id="789d8-133">Use the following query to get the version of the agent running on a device.</span></span>
+<span data-ttu-id="89d83-131">Use la siguiente consulta para obtener información sobre eventos relacionados con la red.</span><span class="sxs-lookup"><span data-stu-id="89d83-131">Use the following query to get information on network related events.</span></span>
 
 ```kusto
 DeviceInfo
@@ -151,10 +135,26 @@ DeviceInfo
 | take 10
 ```
 
+### <a name="get-device-agent-version-information"></a><span data-ttu-id="89d83-132">Obtener información de versión del agente de dispositivo</span><span class="sxs-lookup"><span data-stu-id="89d83-132">Get device agent version information</span></span>
 
-### <a name="example-query-for-macos-devices"></a><span data-ttu-id="789d8-134">Consulta de ejemplo para dispositivos macOS</span><span class="sxs-lookup"><span data-stu-id="789d8-134">Example query for macOS devices</span></span>
+<span data-ttu-id="89d83-133">Use la siguiente consulta para obtener la versión del agente que se ejecuta en un dispositivo.</span><span class="sxs-lookup"><span data-stu-id="89d83-133">Use the following query to get the version of the agent running on a device.</span></span>
 
-<span data-ttu-id="789d8-135">Use la siguiente consulta de ejemplo para ver todos los dispositivos que ejecutan macOS con una versión anterior a Catalina.</span><span class="sxs-lookup"><span data-stu-id="789d8-135">Use the following example query to see all devices running macOS with a version older than Catalina.</span></span>
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="example-query-for-macos-devices"></a><span data-ttu-id="89d83-134">Consulta de ejemplo para dispositivos macOS</span><span class="sxs-lookup"><span data-stu-id="89d83-134">Example query for macOS devices</span></span>
+
+<span data-ttu-id="89d83-135">Use la siguiente consulta de ejemplo para ver todos los dispositivos que ejecutan macOS con una versión anterior a Catalina.</span><span class="sxs-lookup"><span data-stu-id="89d83-135">Use the following example query to see all devices running macOS with a version older than Catalina.</span></span>
 
 ```kusto
 DeviceInfo
@@ -168,9 +168,9 @@ DeviceInfo
 | take 10
 ```
 
-### <a name="get-device-status-info"></a><span data-ttu-id="789d8-136">Obtener información de estado del dispositivo</span><span class="sxs-lookup"><span data-stu-id="789d8-136">Get device status info</span></span>
+### <a name="get-device-status-info"></a><span data-ttu-id="89d83-136">Obtener información de estado del dispositivo</span><span class="sxs-lookup"><span data-stu-id="89d83-136">Get device status info</span></span>
 
-<span data-ttu-id="789d8-137">Usa la siguiente consulta para obtener el estado de un dispositivo.</span><span class="sxs-lookup"><span data-stu-id="789d8-137">Use the following query to get status of a device.</span></span> <span data-ttu-id="789d8-138">En el siguiente ejemplo, la consulta comprueba si el dispositivo está incorporado.</span><span class="sxs-lookup"><span data-stu-id="789d8-138">In the following example, the query checks to see if the device is onboarded.</span></span>
+<span data-ttu-id="89d83-137">Usa la siguiente consulta para obtener el estado de un dispositivo.</span><span class="sxs-lookup"><span data-stu-id="89d83-137">Use the following query to get status of a device.</span></span> <span data-ttu-id="89d83-138">En el siguiente ejemplo, la consulta comprueba si el dispositivo está incorporado.</span><span class="sxs-lookup"><span data-stu-id="89d83-138">In the following example, the query checks to see if the device is onboarded.</span></span>
 
 ```kusto
 DeviceInfo
@@ -185,10 +185,10 @@ DeviceInfo
 ```
 
 
-## <a name="hunting-scenarios"></a><span data-ttu-id="789d8-139">Escenarios de búsqueda</span><span class="sxs-lookup"><span data-stu-id="789d8-139">Hunting scenarios</span></span>
+## <a name="hunting-scenarios"></a><span data-ttu-id="89d83-139">Escenarios de búsqueda</span><span class="sxs-lookup"><span data-stu-id="89d83-139">Hunting scenarios</span></span>
 
-### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a><span data-ttu-id="789d8-140">Enumerar las actividades de inicio de sesión de los usuarios que recibieron correos electrónicos que no se zapped correctamente</span><span class="sxs-lookup"><span data-stu-id="789d8-140">List logon activities of users that received emails that were not zapped successfully</span></span>
-<span data-ttu-id="789d8-141">[La purga automática de hora cero (ZAP)](../office-365-security/zero-hour-auto-purge.md) aborda correos electrónicos malintencionados después de que se hayan recibido.</span><span class="sxs-lookup"><span data-stu-id="789d8-141">[Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) addresses malicious emails after they have been received.</span></span> <span data-ttu-id="789d8-142">Si SE produce un error en ZAP, es posible que el código malintencionado se ejecute en el dispositivo y deje las cuentas en peligro.</span><span class="sxs-lookup"><span data-stu-id="789d8-142">If ZAP fails, malicious code might eventually run on the device and leave accounts compromised.</span></span> <span data-ttu-id="789d8-143">Esta consulta busca la actividad de inicio de sesión realizada por los destinatarios de los correos electrónicos que ZAP no ha abordado correctamente.</span><span class="sxs-lookup"><span data-stu-id="789d8-143">This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.</span></span>
+### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a><span data-ttu-id="89d83-140">Enumerar las actividades de inicio de sesión de los usuarios que recibieron correos electrónicos que no se zapped correctamente</span><span class="sxs-lookup"><span data-stu-id="89d83-140">List logon activities of users that received emails that were not zapped successfully</span></span>
+<span data-ttu-id="89d83-141">[La purga automática de hora cero (ZAP)](../office-365-security/zero-hour-auto-purge.md) aborda correos electrónicos malintencionados después de que se hayan recibido.</span><span class="sxs-lookup"><span data-stu-id="89d83-141">[Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) addresses malicious emails after they have been received.</span></span> <span data-ttu-id="89d83-142">Si SE produce un error en ZAP, es posible que el código malintencionado se ejecute en el dispositivo y deje las cuentas en peligro.</span><span class="sxs-lookup"><span data-stu-id="89d83-142">If ZAP fails, malicious code might eventually run on the device and leave accounts compromised.</span></span> <span data-ttu-id="89d83-143">Esta consulta busca la actividad de inicio de sesión realizada por los destinatarios de los correos electrónicos que ZAP no ha abordado correctamente.</span><span class="sxs-lookup"><span data-stu-id="89d83-143">This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.</span></span>
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -204,8 +204,8 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a><span data-ttu-id="789d8-144">Obtener intentos de inicio de sesión por cuentas de dominio destinadas al robo de credenciales</span><span class="sxs-lookup"><span data-stu-id="789d8-144">Get logon attempts by domain accounts targeted by credential theft</span></span>
-<span data-ttu-id="789d8-145">Esta consulta identifica primero todas las alertas de acceso a credenciales de la `AlertInfo` tabla.</span><span class="sxs-lookup"><span data-stu-id="789d8-145">This query first identifies all credential access alerts in the `AlertInfo` table.</span></span> <span data-ttu-id="789d8-146">A continuación, combina o une la tabla, que analiza los nombres de las cuentas de destino y filtra solo para cuentas unidas `AlertEvidence` a un dominio.</span><span class="sxs-lookup"><span data-stu-id="789d8-146">It then merges or joins the `AlertEvidence` table, which it parses for the names of the targeted accounts and filters for domain-joined accounts only.</span></span> <span data-ttu-id="789d8-147">Por último, comprueba la tabla para obtener todas las actividades de inicio de sesión de las cuentas de destino unidas `IdentityLogonEvents` al dominio.</span><span class="sxs-lookup"><span data-stu-id="789d8-147">Finally, it checks the `IdentityLogonEvents` table to get all logon activities by the domain-joined targeted accounts.</span></span>
+### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a><span data-ttu-id="89d83-144">Obtener intentos de inicio de sesión por cuentas de dominio destinadas al robo de credenciales</span><span class="sxs-lookup"><span data-stu-id="89d83-144">Get logon attempts by domain accounts targeted by credential theft</span></span>
+<span data-ttu-id="89d83-145">Esta consulta identifica primero todas las alertas de acceso a credenciales de la `AlertInfo` tabla.</span><span class="sxs-lookup"><span data-stu-id="89d83-145">This query first identifies all credential access alerts in the `AlertInfo` table.</span></span> <span data-ttu-id="89d83-146">A continuación, combina o une la tabla, que analiza los nombres de las cuentas de destino y filtra solo para cuentas unidas `AlertEvidence` a un dominio.</span><span class="sxs-lookup"><span data-stu-id="89d83-146">It then merges or joins the `AlertEvidence` table, which it parses for the names of the targeted accounts and filters for domain-joined accounts only.</span></span> <span data-ttu-id="89d83-147">Por último, comprueba la tabla para obtener todas las actividades de inicio de sesión de las cuentas de destino unidas `IdentityLogonEvents` al dominio.</span><span class="sxs-lookup"><span data-stu-id="89d83-147">Finally, it checks the `IdentityLogonEvents` table to get all logon activities by the domain-joined targeted accounts.</span></span>
 
 ```kusto
 AlertInfo
@@ -224,8 +224,8 @@ AlertInfo
 | project AccountDisplayName, TargetAccountSid, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a><span data-ttu-id="789d8-148">Compruebe si entre sus dispositivos se encuentran archivos de un remitente malintencionado conocido.</span><span class="sxs-lookup"><span data-stu-id="789d8-148">Check if files from a known malicious sender are on your devices</span></span>
-<span data-ttu-id="789d8-149">Suponiendo que conoce una dirección de correo electrónico que envía archivos malintencionados ( ), puede ejecutar esta consulta para determinar si existen archivos de este `MaliciousSender@example.com` remitente en sus dispositivos.</span><span class="sxs-lookup"><span data-stu-id="789d8-149">Assuming you know of an email address sending malicious files (`MaliciousSender@example.com`), you can run this query to determine if files from this sender exist on your devices.</span></span> <span data-ttu-id="789d8-150">Puede usar esta consulta, por ejemplo, para identificar los dispositivos afectados por una campaña de distribución de malware.</span><span class="sxs-lookup"><span data-stu-id="789d8-150">You can use this query, for example, to identify devices affected by a malware distribution campaign.</span></span>
+### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a><span data-ttu-id="89d83-148">Compruebe si entre sus dispositivos se encuentran archivos de un remitente malintencionado conocido.</span><span class="sxs-lookup"><span data-stu-id="89d83-148">Check if files from a known malicious sender are on your devices</span></span>
+<span data-ttu-id="89d83-149">Suponiendo que conoce una dirección de correo electrónico que envía archivos malintencionados ( ), puede ejecutar esta consulta para determinar si existen archivos de este `MaliciousSender@example.com` remitente en sus dispositivos.</span><span class="sxs-lookup"><span data-stu-id="89d83-149">Assuming you know of an email address sending malicious files (`MaliciousSender@example.com`), you can run this query to determine if files from this sender exist on your devices.</span></span> <span data-ttu-id="89d83-150">Puede usar esta consulta, por ejemplo, para identificar los dispositivos afectados por una campaña de distribución de malware.</span><span class="sxs-lookup"><span data-stu-id="89d83-150">You can use this query, for example, to identify devices affected by a malware distribution campaign.</span></span>
 
 ```kusto
 EmailAttachmentInfo
@@ -240,8 +240,8 @@ DeviceFileEvents
 | project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
 ```
 
-### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a><span data-ttu-id="789d8-151">Revisar los intentos de inicio de sesión después de recibir mensajes de correo electrónico malintencionados.</span><span class="sxs-lookup"><span data-stu-id="789d8-151">Review logon attempts after receipt of malicious emails</span></span>
-<span data-ttu-id="789d8-152">Esta consulta busca los 10 últimos inicios de sesión realizados por destinatarios de correo electrónico en un plazo de 30 minutos después de haber recibido mensajes de correo electrónico conocidos por parte del remitente malintencionado </span><span class="sxs-lookup"><span data-stu-id="789d8-152">This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails.</span></span> <span data-ttu-id="789d8-153">Puede utilizar esta consulta para comprobar si las cuentas de los destinatarios del correo electrónico se han visto comprometidas.</span><span class="sxs-lookup"><span data-stu-id="789d8-153">You can use this query to check whether the accounts of the email recipients have been compromised.</span></span>
+### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a><span data-ttu-id="89d83-151">Revisar los intentos de inicio de sesión después de recibir mensajes de correo electrónico malintencionados.</span><span class="sxs-lookup"><span data-stu-id="89d83-151">Review logon attempts after receipt of malicious emails</span></span>
+<span data-ttu-id="89d83-152">Esta consulta busca los 10 últimos inicios de sesión realizados por destinatarios de correo electrónico en un plazo de 30 minutos después de haber recibido mensajes de correo electrónico conocidos por parte del remitente malintencionado </span><span class="sxs-lookup"><span data-stu-id="89d83-152">This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails.</span></span> <span data-ttu-id="89d83-153">Puede utilizar esta consulta para comprobar si las cuentas de los destinatarios del correo electrónico se han visto comprometidas.</span><span class="sxs-lookup"><span data-stu-id="89d83-153">You can use this query to check whether the accounts of the email recipients have been compromised.</span></span>
 
 ```kusto
 //Define new table for malicious emails
@@ -260,8 +260,8 @@ IdentityLogonEvents
 | take 10
 ```
 
-### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a><span data-ttu-id="789d8-154">Revisar las actividades de PowerShell después de recibir mensajes de correo electrónico conocidos por parte del remitente malintencionado </span><span class="sxs-lookup"><span data-stu-id="789d8-154">Review PowerShell activities after receipt of emails from known malicious sender</span></span>
-<span data-ttu-id="789d8-155">Los mensajes malintencionados suelen contener documentos y otros datos adjuntos especialmente diseñados para ejecutar comandos de PowerShell para ofrecer cargas adicionales.</span><span class="sxs-lookup"><span data-stu-id="789d8-155">Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads.</span></span> <span data-ttu-id="789d8-156">Si conoce los correos electrónicos procedentes de un remitente malintencionado conocido ( ), puede usar esta consulta para enumerar y revisar las actividades de PowerShell que se produjeron en un plazo de 30 minutos después de recibir un correo electrónico del `MaliciousSender@example.com` remitente.</span><span class="sxs-lookup"><span data-stu-id="789d8-156">If you are aware of emails coming from a known malicious sender (`MaliciousSender@example.com`), you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender.</span></span>  
+### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a><span data-ttu-id="89d83-154">Revisar las actividades de PowerShell después de recibir mensajes de correo electrónico conocidos por parte del remitente malintencionado </span><span class="sxs-lookup"><span data-stu-id="89d83-154">Review PowerShell activities after receipt of emails from known malicious sender</span></span>
+<span data-ttu-id="89d83-155">Los mensajes malintencionados suelen contener documentos y otros datos adjuntos especialmente diseñados para ejecutar comandos de PowerShell para ofrecer cargas adicionales.</span><span class="sxs-lookup"><span data-stu-id="89d83-155">Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads.</span></span> <span data-ttu-id="89d83-156">Si conoce los correos electrónicos procedentes de un remitente malintencionado conocido ( ), puede usar esta consulta para enumerar y revisar las actividades de PowerShell que se produjeron en un plazo de 30 minutos después de recibir un correo electrónico del `MaliciousSender@example.com` remitente.</span><span class="sxs-lookup"><span data-stu-id="89d83-156">If you are aware of emails coming from a known malicious sender (`MaliciousSender@example.com`), you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender.</span></span>  
 
 ```kusto
 //Define new table for emails from specific sender
@@ -282,10 +282,10 @@ DeviceProcessEvents
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="789d8-157">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="789d8-157">Related topics</span></span>
-- [<span data-ttu-id="789d8-158">Información general sobre la búsqueda avanzada de amenazas</span><span class="sxs-lookup"><span data-stu-id="789d8-158">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="789d8-159">Aprender el lenguaje de consulta</span><span class="sxs-lookup"><span data-stu-id="789d8-159">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="789d8-160">Trabajar con resultados de consulta</span><span class="sxs-lookup"><span data-stu-id="789d8-160">Work with query results</span></span>](advanced-hunting-query-results.md)
-- [<span data-ttu-id="789d8-161">Usar consultas compartidas</span><span class="sxs-lookup"><span data-stu-id="789d8-161">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="789d8-162">Entender el esquema</span><span class="sxs-lookup"><span data-stu-id="789d8-162">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="789d8-163">Aplicar procedimientos recomendados de consulta</span><span class="sxs-lookup"><span data-stu-id="789d8-163">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="89d83-157">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="89d83-157">Related topics</span></span>
+- [<span data-ttu-id="89d83-158">Información general sobre la búsqueda avanzada de amenazas</span><span class="sxs-lookup"><span data-stu-id="89d83-158">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="89d83-159">Aprender el lenguaje de consulta</span><span class="sxs-lookup"><span data-stu-id="89d83-159">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="89d83-160">Trabajar con resultados de consulta</span><span class="sxs-lookup"><span data-stu-id="89d83-160">Work with query results</span></span>](advanced-hunting-query-results.md)
+- [<span data-ttu-id="89d83-161">Usar consultas compartidas</span><span class="sxs-lookup"><span data-stu-id="89d83-161">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="89d83-162">Entender el esquema</span><span class="sxs-lookup"><span data-stu-id="89d83-162">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="89d83-163">Aplicar procedimientos recomendados de consulta</span><span class="sxs-lookup"><span data-stu-id="89d83-163">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
