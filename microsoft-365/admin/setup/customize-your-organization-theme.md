@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Aprende a cambiar el tema predeterminado de la parte superior de la barra de navegación en Microsoft 365 y personalízalo para que coincida con el logotipo o color de tu empresa.
-ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908166"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998805"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el Microsoft 365 de la organización
 
@@ -82,16 +82,13 @@ Puede crear hasta cuatro temas de grupo adicionales.
 
 En la **página Logotipos,** puede agregar los logotipos y especificar la dirección URL a la que navegarán los usuarios cuando seleccionen el logotipo.
 
-- **Logotipo predeterminado:** agregue una ubicación URL que apunta al logotipo. Asegúrese de que la dirección URL usa HTTPS. Si va a cargar un logotipo, asegúrese de que es inferior a 10 kb. El logotipo predeterminado puede estar en formato JPG, PNG, GIF o SVG. En el caso de las imágenes SVG, se cambiarán el tamaño para que se ajusten verticalmente a 24 píxeles. Las imágenes JPG, PNG y GIF se escalarán para que se ajusten a 200 x 48 píxeles.
+- **Logotipo predeterminado:** agregue una ubicación URL que apunta al logotipo. Asegúrese de que la dirección URL usa HTTPS. Agregue una dirección URL de imagen HTTPS que permita el acceso anónimo y no requiera autenticación. Para el tema predeterminado, también tienes una opción para cargar una imagen de logotipo de menos de 10 kb. El logotipo predeterminado puede estar en formato JPG, PNG, GIF o SVG. En el caso de las imágenes SVG, se cambiarán el tamaño para que se ajusten verticalmente a 24 píxeles. Las imágenes JPG, PNG y GIF se escalarán para que se ajusten a 200 x 48 píxeles. La relación de aspecto del logotipo siempre se conservará.
 - **Logotipo alternativo:** agregue una ubicación URL que apunta al logotipo. El logotipo alternativo debe optimizarse para su uso en Office temas oscuros. Los mismos requisitos que el logotipo predeterminado.
 - **Vínculo Al hacer clic:** agregue una ubicación URL que apunta al logotipo. Puede usar el logotipo como un vínculo a cualquier recurso de la compañía, por ejemplo, el sitio web de su empresa.
 
 Seleccione **Guardar** para guardar los cambios.
 
 Puedes quitar los logotipos en cualquier momento. Solo tiene que volver a la **página Logotipos** y seleccione **Quitar**.
-
-> [!NOTE]
-> De forma predeterminada, primero mostramos selecciones de logotipo que la mayoría de las organizaciones usan. La opción de carga solo se aplica a los temas predeterminados y no a los temas de grupo.
   
 ## <a name="colors-choose-theme-colors"></a>Colores: elegir colores del tema
 
@@ -105,7 +102,7 @@ En la **página Colores,** puede establecer los colores predeterminados y elegir
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores predeterminados del tema para su organización":::
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mi organización ya tiene un tema para todos los empleados. ¿Cómo cambiará esto?
 
@@ -140,7 +137,7 @@ El tema predeterminado solo se puede eliminar una vez que se eliminen todos los 
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Por qué recibo un mensaje de error cada vez que subo una dirección URL de logotipo.  
 
-Asegúrese de que el logotipo que está usando se especifica como una dirección URL direccionable públicamente. Siga estos pasos para [cargar logotipos en Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) o el Office 365 Content Delivery Network con SharePoint [Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
+Asegúrese de que el logotipo que está usando se especifica como una dirección URL direccionable públicamente. Siga estos pasos para [cargar logotipos en Azure Blob Almacenamiento](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) o el Office 365 Red de entrega de contenido con SharePoint [Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>¿Por qué recibo el mensaje "No cumple la relación de contraste de color mínima de 4,5:1"?
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar quién recibe mensajes de correo electrónico de notificación de facturación y datos adjuntos de factura.
 ms.date: 03/17/2021
-ms.openlocfilehash: 75c75175930434619a01886b1096757bf04111c5
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
-ms.translationtype: HT
+ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888366"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998769"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Administrar las notificaciones de facturación y los datos adjuntos en las facturas
 
@@ -87,9 +87,6 @@ Además de los administradores globales y de facturación, enviamos notificacion
 3. En el panel derecho, escriba la dirección de correo electrónico que quiere usar y, después, **Guardar**.
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Recibir facturas de su organización como datos adjuntos de correo
-
-> [!NOTE]
-> Los administradores de facturación también pueden seguir los pasos de esta sección.
 
 Puede tener una copia de la factura de la organización adjuntada como archivo PDF para enviar correos electrónicos de notificación mediante factura cuando esté lista una nueva factura. Siga estos pasos para recibir las facturas como datos adjuntos.
 

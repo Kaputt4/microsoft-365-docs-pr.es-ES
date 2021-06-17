@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844087"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998793"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -82,7 +82,7 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
 
 1. Seleccione el archivo que desea detener y poner en cuarentena. Puede seleccionar un archivo de cualquiera de las siguientes vistas o usar el cuadro De búsqueda:
 
-   - **Alertas:** haga clic en los vínculos correspondientes de la descripción o detalles de la escala de tiempo de artefactos
+   - **Alertas:** haga clic en los vínculos correspondientes de la línea de tiempo Descripción o Detalles de la escala de tiempo del artículo de alerta
    - **Cuadro de búsqueda:** **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
 
    > [!NOTE]
@@ -128,14 +128,14 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 
 2. Escriba el siguiente comando y presione **Entrar**:
 
-   ```powershell
+   ```console
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
-> [!NOTE]
-> En algunos escenarios, **ThreatName** puede aparecer como: EUS:Win32/CustomEnterpriseBlock!cl.
->
-> Defender for Endpoint restaurará todos los archivos bloqueados personalizados que se han puesto en cuarentena en este dispositivo en los últimos 30 días.
+   > [!NOTE]
+   > En algunos escenarios, **ThreatName** puede aparecer como: EUS:Win32/CustomEnterpriseBlock!cl.
+   >
+   > Defender for Endpoint restaurará todos los archivos bloqueados personalizados que se han puesto en cuarentena en este dispositivo en los últimos 30 días.
 
 > [!IMPORTANT]
 > Es posible que un archivo que se haya puesto en cuarentena como una amenaza de red potencial no pueda recuperarse. Si un usuario intenta restaurar el archivo después de la cuarentena, es posible que ese archivo no sea accesible. Esto puede deberse a que el sistema ya no tiene credenciales de red para tener acceso al archivo. Normalmente, esto es el resultado de un inicio de sesión temporal en un sistema o carpeta compartida y los tokens de acceso expiraron.
@@ -234,15 +234,13 @@ También puedes enviar un ejemplo a través del Portal del Centro de seguridad d
 > [!NOTE]
 > Debido a los flujos de procesamiento back-end en el Portal del Centro de seguridad de Microsoft, podría haber hasta 10 minutos de latencia entre el envío de archivos y la disponibilidad de la característica de análisis profundo en Defender para endpoint.
 
-Cuando se recopila el ejemplo, Defender for Endpoint ejecuta el archivo en un entorno seguro. A continuación, crea un informe detallado de comportamientos observados y artefactos asociados, como archivos eliminados en dispositivos, comunicación con IP y modificaciones del Registro.
-
 ### <a name="submit-files-for-deep-analysis"></a>Enviar archivos para análisis profundo
 
 1. Seleccione el archivo que desea enviar para un análisis profundo. Puede seleccionar o buscar un archivo en cualquiera de las vistas siguientes:
 
-    - Alertas: seleccione los vínculos de archivo en **descripción** o **detalles** de la escala de tiempo de artefactos
+    - **Alertas:** seleccione los vínculos de archivo de **la línea de tiempo Descripción** o **Detalles** de la línea de tiempo de artículo de alerta
     - **Lista dispositivos:** seleccione los vínculos de archivo de la **sección Descripción** o **Detalles** de la sección Dispositivo **en la** organización
-    - Cuadro de búsqueda: **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
+    - **Cuadro de búsqueda:** **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
 
 2. En la **pestaña Análisis profundo** de la vista archivo, seleccione **Enviar**.
 
@@ -251,7 +249,7 @@ Cuando se recopila el ejemplo, Defender for Endpoint ejecuta el archivo en un en
    > [!NOTE]
    > Solo se admiten archivos PE, incluidos _.exe_ y _.dll_ archivos.
 
-Se muestra una barra de progreso y proporciona información sobre las distintas etapas del análisis. A continuación, puede ver el informe cuando se haya realizado el análisis.
+   Se muestra una barra de progreso y proporciona información sobre las distintas etapas del análisis. A continuación, puede ver el informe cuando se haya realizado el análisis.
 
 > [!NOTE]
 > Según la disponibilidad del dispositivo, el tiempo de recolección de muestras puede variar. Hay un tiempo de espera de 3 horas para la colección de muestras. La colección producirá un error y la operación se anulará si no hay informes de dispositivos Windows 10 en línea en ese momento. Puede volver a enviar archivos para un análisis profundo para obtener datos nuevos en el archivo.
@@ -277,11 +275,14 @@ Los detalles proporcionados pueden ayudarle a investigar si hay indicaciones de 
 Si encuentra un problema al intentar enviar un archivo, pruebe cada uno de los siguientes pasos de solución de problemas.
 
 1. Asegúrese de que el archivo en cuestión es un archivo PE. Los archivos PE suelen _tener.exe_ _o.dll_ (aplicaciones o programas ejecutables).
+
 2. Asegúrese de que el servicio tiene acceso al archivo, que todavía existe y que no se ha dañado ni modificado.
+
 3. Espere un poco e intente enviar el archivo de nuevo. La cola puede estar llena o hubo un error de comunicación o conexión temporal.
+
 4. Si la directiva de colección de ejemplo no está configurada, el comportamiento predeterminado es permitir la colección de muestras. Si está configurado, compruebe que la configuración de directiva permite la colección de muestras antes de enviar el archivo de nuevo. Cuando se configura la colección de ejemplo, compruebe el siguiente valor del Registro:
 
-    ```powershell
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -291,6 +292,7 @@ Si encuentra un problema al intentar enviar un archivo, pruebe cada uno de los s
     ```
 
 1. Cambie la unidad organizativa a través de la directiva de grupo. Para obtener más información, vea [Configure with Group Policy](configure-endpoints-gp.md).
+
 1. Si estos pasos no resuelven el problema, póngase en [contacto winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## <a name="related-topics"></a>Temas relacionados

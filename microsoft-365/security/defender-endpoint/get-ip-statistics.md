@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 55bf10d01093c17ba2d186ce0a1d1313db2c3a75
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4919f082c115d8a57960ec49532b6cda6a63833f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770090"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998733"
 ---
 # <a name="get-ip-statistics-api"></a>Obtener API de estadísticas IP
 
@@ -65,7 +65,7 @@ GET /api/ips/{ip}/stats
 
 Nombre | Tipo | Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization | String | Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 
@@ -80,7 +80,7 @@ En blanco
 Si se realiza correctamente e ip existe: 200 Aceptar con datos estadísticos en el cuerpo. IP no existe: 404 No se encuentra.
 
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
 **Solicitud**
 
@@ -99,7 +99,7 @@ Aquí tiene un ejemplo de la respuesta.
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgIPStats",
     "ipAddress": "10.209.67.177",
-    "orgPrevalence": "63515",
+    "organizationPrevalence": 63515,
     "orgFirstSeen": "2017-07-30T13:36:06Z",
     "orgLastSeen": "2017-08-29T13:32:59Z"
 }
