@@ -10,17 +10,17 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/18/2021
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: e7b7a0ba5c301829633c27f3add8f7f7daa70dfd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924712"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007190"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>Activar la protección proporcionada en la nube
 
@@ -146,7 +146,7 @@ Para obtener más información acerca de los parámetros [permitidos, vea Window
 
 2. Seleccione el **icono Protección contra &** virus (o el icono de escudo de la barra de menús izquierda) y, a continuación, la etiqueta & **de** protección contra amenazas:
 
-    ![Captura de pantalla de la etiqueta Protección contra virus y amenazas en la aplicación Seguridad de Windows](images/defender/wdav-protection-settings-wdsc.png)
+    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Captura de pantalla de la configuración de protección contra & virus":::
 
 3. Confirme que **la protección basada en la nube y** el **envío** automático de muestras se cambien a **On**.
 

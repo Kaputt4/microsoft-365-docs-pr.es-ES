@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 06ee2f1cb68df0a957818e1fccb45628487c39fd
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ff0e134d38288b12cbc46dc3ca5f103fbf8c7ad9
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274921"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007676"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario
 
@@ -40,18 +40,18 @@ En Windows 10, versión 1703, ocultar la interfaz ocultará las notificaciones d
 
 Con la configuración establecida en **Enabled**:
 
-![Captura de pantalla Seguridad de Windows sin el icono de escudo y la sección protección contra virus y amenazas](images/defender/wdav-headless-mode-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Seguridad de Windows sin el icono de escudo y la sección protección contra virus y amenazas":::
 
 Con la configuración establecida en **Deshabilitado** o no configurada:
 
-![Captura de pantalla Seguridad de Windows muestra el icono de escudo y la sección protección contra virus y amenazas](images/defender/wdav-headless-mode-off-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Captura de pantalla Seguridad de Windows con el icono de escudo y las secciones de protección contra amenazas":::
 
 >[!NOTE]
 >Ocultar la interfaz también impedirá que Antivirus de Microsoft Defender notificaciones en el punto de conexión. Las notificaciones de Microsoft Defender para puntos de conexión seguirán apareciendo. También puede configurar [individualmente las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
 
 En versiones anteriores de Windows 10, la configuración ocultará la interfaz Windows Defender cliente. Si el usuario intenta abrirlo, recibirá una advertencia que indica: "El administrador del sistema ha restringido el acceso a esta aplicación".
 
-![Mensaje de advertencia cuando el modo sin cabeza está habilitado Windows 10 versiones anteriores a 1703](images/defender/wdav-headless-mode-1607.png)
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Mensaje de advertencia cuando el modo sin cabeza está habilitado Windows 10 versiones anteriores a 1703":::
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>Usar la directiva de grupo para ocultar la interfaz av de Microsoft Defender a los usuarios
 

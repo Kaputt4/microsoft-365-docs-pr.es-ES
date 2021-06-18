@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861136"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985437"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
 
@@ -34,7 +34,7 @@ La información de este artículo complementa el contenido de [Más información
 
 ## <a name="whats-included-for-retention-and-deletion"></a>¿Qué se incluye para la retención y eliminación?
 
-Los siguientes elementos de Exchange pueden ser retenidas y eliminadas con las directivas de retención y las etiquetas de retención: mensajes de correo (incluidos los borradores) con datos adjuntos, tareas que tienen una fecha de finalización y notas. 
+Los siguientes elementos de Exchange de buzones de usuario y buzones compartidos se pueden conservar y eliminar mediante directivas de retención y etiquetas de retención: los mensajes de correo (incluidos mensajes recibidos, borradores o mensajes enviados) con datos adjuntos, las tareas cuando tienen una fecha de finalización y las notas. 
 
 Los elementos de calendario que tienen una fecha de finalización son compatibles con las directivas de retención, pero no son compatibles con las etiquetas de retención.
 

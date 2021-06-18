@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a25a2ec513cd7c25f9f6ddf3d5e328928837bf2d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: b2a6ee7c3f3ea2fb31b31d2f1db178bfd9847fbc
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275149"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007481"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Ejecutar y revisar los resultados de un análisis de Microsoft Defender sin Conexión
 
@@ -69,7 +69,7 @@ La necesidad de realizar un examen sin conexión también se mostrará en Micros
 
 El mensaje puede producirse a través de una notificación, de forma similar a la siguiente:
 
-![Windows notificación que muestra el requisito de ejecutar Microsoft Defender sin Conexión](images/defender/notification.png)
+:::image type="content" source="../../media/notification.png" alt-text="Notificación para ejecutar Microsoft Defender sin Conexión":::
 
 También se notificará al usuario en el Windows Defender cliente.
 
@@ -77,7 +77,7 @@ En Configuration Manager, puede identificar el estado de los puntos de conexión
 
 Microsoft Defender sin Conexión los exámenes se indican en Estado de corrección **de malware** como examen sin **conexión requerido.**
 
-![Microsoft Endpoint Manager que se requiere Microsoft Defender sin Conexión examen](images/defender/sccm-wdo.png)
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender sin Conexión examen es necesario":::
 
 ## <a name="configure-notifications"></a>Configurar notificaciones
 

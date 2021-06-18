@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Asigne licencias dependiendo de si quiere asignar licencias de producto a usuarios específicos o asignar licencias de usuarios a un producto específico.
 ms.date: 04/26/2021
-ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c8e5c6a648f08aaba97fe05e19a5cfa0cada2174
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537540"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007014"
 ---
 # <a name="assign-licenses-to-users"></a>Asignar licencias a los usuarios
 
@@ -41,7 +41,7 @@ Puede asignar licencias a los usuarios en la página **usuarios activos** o en l
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../add-users/about-admin-roles.md).
+- Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../add-users/about-admin-roles.md).
 - Puede [asignar licencias de Microsoft 365 a cuentas de usuario con PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 - Para usar las licencias basadas en grupos, vea [Asignar licencias a usuarios por la pertenencia a grupos en Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 - Algunos servicios, como Sway, se asignan automáticamente a los usuarios y no es necesario que los asigne individualmente.
@@ -129,11 +129,12 @@ Cuando usa la página **Usuarios activos** para asignar licencias, asigna licenc
 
 
 2. Seleccione los círculos que se encuentran junto a los nombres de los usuarios a los que quiere asignarles licencias.
-3. En la parte superior, seleccione los tres puntos (Más acciones) y, después, seleccione **Administrar licencias de producto**.
-4. En el panel **administrar licencias de producto**, seleccione **agregar a las asignaciones de licencias de producto existentes** \> **siguiente**.
-5. En el panel **Agregar a los productos existentes**, cambie el botón a la posición de **Activado** para la licencia que quiere que tengan los usuarios seleccionados.\
-    De forma predeterminada, todos los servicios asociados con esas licencias se asignan automáticamente a los usuarios. Puede limitar los servicios que están disponibles para los usuarios. Cambie el botón de alternancia a la posición de **desactivado** para los servicios que no quiere que tengan los usuarios.
-6. En la parte inferior del panel, seleccione **agregar** \> **cerrar**.  
+3. En la parte superior, seleccione **Administrar licencias de producto**.
+4. En el panel **Administrar licencias de producto**, seleccione **Asignar más: mantener las licencias existentes y asignar más** \> **Siguiente**.
+5. En **Licencias**, seleccione la casilla de las licencias que desea que tengan los usuarios seleccionados.\
+    De manera predeterminada, todos los servicios asociados a esas licencias se asignan automáticamente al usuario. Puede limitar los servicios disponibles para el usuario. Quite la selección de las casillas de los servicios que no quiere que tenga el usuario.
+6. En la parte inferior del panel, seleccione **Guardar cambios**.  
+    Es posible que tenga que comprar otras licencias si no tiene suficientes licencias para todos los usuarios.
 
 
 > [!NOTE]

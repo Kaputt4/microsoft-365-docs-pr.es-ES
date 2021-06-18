@@ -15,17 +15,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926540"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007454"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 
@@ -36,7 +33,7 @@ En Windows 10 versión 1703 y posteriores, la aplicación Windows Defender forma
 Configuración que anteriormente formaban parte del cliente de Windows Defender y del Windows Configuración principal se han combinado y movido a la nueva aplicación, que se instala de forma predeterminada como parte de Windows 10, versión 1703.
 
 > [!IMPORTANT]
-> Deshabilitar el servicio Seguridad de Windows centro no deshabilita Antivirus de Microsoft Defender o [Firewall de Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Estos se deshabilitan automáticamente cuando se instala un antivirus de terceros o un producto de firewall y se mantienen actualizados.
+> Deshabilitar el servicio Seguridad de Windows centro de seguridad no deshabilita Antivirus de Microsoft Defender o [Windows Defender firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Estos se deshabilitan automáticamente cuando se instala un antivirus de terceros o un producto de firewall y se mantienen actualizados.
 >
 > Si deshabilita el servicio del Centro de Seguridad de Windows o configura sus opciones de directiva de grupo asociadas para evitar que se inicie o ejecute, la aplicación Seguridad de Windows puede mostrar información obsoleta o inexacta acerca de los productos antivirus o firewall que haya instalado en el dispositivo.
 > También puede impedir Antivirus de Microsoft Defender habilitarse si tiene un antivirus de terceros antiguo o obsoleto, o si desinstala productos antivirus de terceros que haya instalado anteriormente.
@@ -48,7 +45,7 @@ La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Revisar la configuración de protección contra virus y amenazas en la Seguridad de Windows aplicación
 
-![Captura de pantalla de la etiqueta Protección contra virus y amenazas en la aplicación Seguridad de Windows](images/defender/wdav-protection-settings-wdsc.png)
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Configuración de protección contra virus y amenazas en Seguridad de Windows aplicación":::
 
 1. Abra la Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio de **Defender**.
 
@@ -69,7 +66,7 @@ En las secciones siguientes se describe cómo realizar algunas de las tareas má
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>Revisa la versión de actualización de inteligencia de seguridad y descarga las actualizaciones más recientes en la aplicación Seguridad de Windows seguridad
 
-![Información del número de versión de inteligencia de seguridad](images/defender/wdav-wdsc-defs.png)
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Número de versión de inteligencia de seguridad":::
 
 1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad y, a continuación, seleccione **Seguridad de Windows**.
 

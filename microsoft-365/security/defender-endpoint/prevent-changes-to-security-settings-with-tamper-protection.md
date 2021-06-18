@@ -1,6 +1,6 @@
 ---
 title: Configuración de seguridad de la protección con protección contra alteraciones
-ms.reviewer: shwjha, hayhov
+ms.reviewer: pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Usa la protección contra manipulaciones para evitar que las aplicaciones malintencionadas cambien la configuración de seguridad importante.
 keywords: malware, defender, antivirus, protección contra manipulaciones
@@ -16,13 +16,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 05/17/2021
-ms.openlocfilehash: f6217cccf79b951c3103e1024ac74669d68645cd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.date: 06/17/2021
+ms.openlocfilehash: 7050a1588b71ac106d5364f29c76d379072e9511
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925940"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007422"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -80,8 +80,8 @@ En la tabla siguiente se proporcionan detalles sobre los métodos, herramientas 
 |:----|:----|
 | Microsoft Intune  | No |
 | Microsoft Endpoint Configuration Manager + agregado de inquilino  |     No  |
-| Centro de seguridad de Microsoft Defender ( [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) )    |     Sí |
-| Microsoft 365 de seguridad ( [https://security.microsoft.com](https://security.microsoft.com) )  |     Sí  |
+| Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )    |     Sí |
+| Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) )  |     Sí  |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>Administrar la protección contra alteraciones de la organización mediante el Centro de seguridad de Microsoft Defender
 
@@ -100,6 +100,7 @@ La protección contra alteraciones puede estar activada o desactivada para el in
 - Debe tener los permisos [adecuados,](/microsoft-365/security/defender-endpoint/assign-portal-access)como el administrador global, el administrador de seguridad o las operaciones de seguridad.
 
 - Los dispositivos Windows deben ejecutar una de las siguientes versiones de Windows:
+
    - Windows 10
    - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windows Servidor, versión [1803](/windows/release-health/status-windows-10-1803) o posterior
@@ -147,6 +148,7 @@ Si forma parte del equipo de seguridad de su organización y la suscripción inc
 2. Seleccione   >  **Perfiles de configuración de dispositivos**.
 
 3. Cree un perfil que incluya la siguiente configuración:
+
     - **Plataforma: Windows 10 y versiones posteriores**
     - **Tipo de perfil: Protección de puntos de conexión**
     - **Categoría: Centro de seguridad de Microsoft Defender**
@@ -154,17 +156,19 @@ Si forma parte del equipo de seguridad de su organización y la suscripción inc
 
 4. Asigne el perfil a uno o varios grupos.
 
-### <a name="are-you-using-windows-os-1709-1803-or-1809"></a>¿Usa Windows sistema operativo 1709, 1803 o 1809?
+### <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>¿Está usando Windows Server 2016 o Windows versión 1709, 1803 o 1809?
 
-Si usas Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803)o [1809,](/windows/release-health/status-windows-10-1809-and-windows-server-2019)no  verás Protección contra alteraciones en la aplicación Seguridad de Windows. En su lugar, puede usar PowerShell para determinar si la protección contra manipulaciones está habilitada.
-
-#### <a name="use-powershell-to-determine-whether-tamper-protection-is-turned-on"></a>Usar PowerShell para determinar si la protección contra manipulaciones está activada
+Si usas Windows Server 2016, Windows 10 versión 1709, 1803 o [1809,](/windows/release-health/status-windows-10-1809-and-windows-server-2019)no verás  protección contra alteraciones en la Seguridad de Windows aplicación. En su lugar, puede usar PowerShell para determinar si la protección contra manipulaciones está habilitada. 
+   
+Al Windows Server 2016, la Configuración no reflejará con precisión el estado de la protección en tiempo real cuando se habilita la protección contra alteraciones.
+   
+#### <a name="use-powershell-to-determine-whether-tamper-protection-andor-real-time-protection-are-turned-on"></a>Usar PowerShell para determinar si la protección contra alteraciones o la protección en tiempo real están activadas
 
 1. Abre la Windows PowerShell aplicación.
 
 2. Use el cmdlet [De PowerShell Get-MpComputerStatus.](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps)
 
-3. En la lista de resultados, busque `IsTamperProtected` . (Un valor de *true significa* que la protección contra manipulaciones está habilitada).
+3. En la lista de resultados, busque `IsTamperProtected` . (Un valor de *true significa* que la protección contra manipulaciones está habilitada). En la lista de resultados, busque `RealTimeProtectionEnabled` . (Un valor de true significa que la protección contra manipulaciones está habilitada).
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Administrar la protección contra alteraciones de su organización con Configuration Manager, versión 2006
 
@@ -223,17 +227,13 @@ Con [detección y respuesta de puntos de conexión](/microsoft-365/security/defe
 
 ## <a name="review-your-security-recommendations"></a>Revisar las recomendaciones de seguridad
 
-La protección contra alteraciones se integra [con las & de administración de vulnerabilidades.](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) [Las recomendaciones de seguridad](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) incluyen asegurarse de que la protección contra manipulaciones está activada. Por ejemplo, puede buscar en la *manipulación*, como se muestra en la siguiente imagen:
-
-![La protección contra alteraciones da como resultado recomendaciones de seguridad](/images/securityrecs-tamperprotect.jpg)
-
-En los resultados, puedes seleccionar **Activar protección contra** manipulaciones para obtener más información y activarla.
+La protección contra alteraciones se integra [con las & de administración de vulnerabilidades.](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) [Las recomendaciones de seguridad](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) incluyen asegurarse de que la protección contra manipulaciones está activada. Por ejemplo, puede buscar en *tamper*. En los resultados, puedes seleccionar **Activar protección contra** manipulaciones para obtener más información y activarla.
 
 ![Activar la protección contra manipulaciones](images/tamperprotectsecurityrecos.png)
 
 Para obtener más información acerca de la administración & vulnerabilidad de amenazas, vea [Threat & Vulnerability Management en Centro de seguridad de Microsoft Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="to-which-windows-os-versions-is-configuring-tamper-protection-is-applicable"></a>¿A qué Windows se aplica la protección contra alteraciones en las versiones del sistema operativo?
 

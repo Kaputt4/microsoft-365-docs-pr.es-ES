@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Obtenga información sobre los distintos certificados, tecnologías y conjuntos de cifrado de seguridad de la capa de transporte (TLS) usados para el cifrado en Office 365 y Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e7e50ea399cd694f512e0538de3f7e67c63ee0e3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b2257338ab214ccdaa08f1aa8f322aad98d7c8b
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919356"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007554"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Información de referencia técnica sobre el cifrado
 
@@ -52,6 +52,9 @@ Todos los conjuntos de cifrado admitidos Office 365 algoritmos aceptables en FIP
 TLS y SSL anteriores a TLS son protocolos criptográficos que protegen la comunicación a través de una red mediante certificados de seguridad para cifrar una conexión entre equipos. Office 365 tls versión 1.2 (TLS 1.2).
 
 Actualmente no se admite TLS versión 1.3 (TLS 1.3).
+
+> [!IMPORTANT]
+> Tenga en cuenta que las versiones TLS están en desuso y que las versiones en desuso no deben *usarse* cuando hay disponibles versiones más recientes. Si los servicios heredados no requieren TLS 1.0 o 1.1, debe deshabilitarlos.
   
 ## <a name="support-for-tls-10-and-11-deprecation"></a>Compatibilidad con la desuso de TLS 1.0 y 1.1
 
@@ -73,30 +76,29 @@ TLS usa *conjuntos de cifrado,* colecciones de algoritmos de cifrado, para estab
 
 Office 365 responde a una solicitud de conexión intentando conectarse primero con el conjunto de cifrado más seguro. Si la conexión no funciona, Office 365 el segundo conjunto de cifrado más seguro de la lista, y así sucesivamente. El servicio continúa en la lista hasta que se acepta la conexión. Asimismo, cuando Office 365 una conexión, el servicio de recepción elige si se usará TLS y qué conjunto de cifrado usar.
 
-> [!IMPORTANT]
-> Tenga en cuenta que las versiones TLS están en desuso y que las versiones en desuso no deben *usarse* cuando hay disponibles versiones más recientes. Tls 1.3 actualmente no es compatible. Si los servicios heredados no requieren TLS 1.0 o 1.1, debe deshabilitarlos.
-
-| Conjunto de cifrado | Algoritmo/fuerza de intercambio de claves | Secreto de reenvío | Cifrado/resistencia | Algoritmo de autenticación |
+| Nombre del conjunto de cifrado | Algoritmo/fuerza de intercambio de claves | Secreto de reenvío | Cifrado/resistencia | Algoritmo/resistencia de autenticación |
 |:-----|:-----|:-----|:-----|:-----|
-|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|Sí <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|Sí <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 <br/>     |ECDH/192 <br/>|Sí <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br/>     |ECDH/128 <br/>|Sí <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA <br/>        |ECDH/192 <br/>|Sí <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|Sí <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> | ECDH/192  <br/> | Sí  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> | ECDH/128  <br/> | Sí  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384  <br/> | ECDH/192  <br/> | Sí  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256  <br/> | ECDH/128  <br/> | Sí  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA     <br/> | ECDH/192  <br/> | Sí  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA     <br/> | ECDH/128  <br/> | Sí  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_RSA_WITH_AES_256_GCM_SHA384        <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_RSA_WITH_AES_128_GCM_SHA256        <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
 
-Estos conjuntos de cifrado admiten protocolos TLS 1.0 y 1.1 hasta su fecha de desuso. En GCC entornos high y doD que la fecha de desuso era el 15 de enero de 2020, y para entornos de nivel mundial y GCC esa fecha era el 15 de octubre de 2020.
+Los siguientes conjuntos de cifrado admiten protocolos TLS 1.0 y 1.1 hasta su fecha de desuso. En GCC entornos High y DoD que fecha de desuso era el 15 de enero de 2020. Para entornos de GCC y mundial esa fecha era el 15 de octubre de 2020.
 
-| Protocolos | Nombre del conjunto de cifrado | Algoritmo de intercambio de claves/Fuerza | Compatibilidad con el secreto de reenvío | Algoritmo de autenticación/Fuerza | Cifrado/Intensidad |
+| Protocolos | Nombre del conjunto de cifrado | Algoritmo/fuerza de intercambio de claves | Secreto de reenvío | Cifrado/resistencia | Algoritmo/resistencia de autenticación | 
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |Sí  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Sí  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA        <br/> |RSA/112  <br/>  |No  <br/>  |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA        <br/> |RSA/112  <br/>  |No  <br/>  |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> |RSA/112  <br/>  |No   <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> |RSA/112  <br/>  |No   <br/> |RSA/112  <br/> |AES/256  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> | ECDH/192  <br/> | Sí  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> | ECDH/128  <br/> | Sí  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA        <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA        <br/> | RSA/112   <br/> | No   <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
+
+Algunos Office 365 (incluidos Microsoft Teams) usan [Azure Front Door](/azure/frontdoor/front-door-overview) para finalizar las conexiones TLS y enrutar el tráfico de red de forma eficaz. Al menos uno de los conjuntos de cifrado admitidos por [Azure Front Door sobre TLS 1.2](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-) debe estar habilitado para conectarse correctamente a estos productos. Para Windows 10 y posteriores, se recomienda habilitar uno o ambos conjuntos de cifrado ECDHE para mejorar la seguridad. Windows 7, 8 y 8.1 no son compatibles con los conjuntos de cifrado ECDHE de Azure Front Door y los conjuntos de cifrado DHE se han proporcionado para la compatibilidad con dichos sistemas operativos.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
@@ -111,3 +113,5 @@ Estos conjuntos de cifrado admiten protocolos TLS 1.0 y 1.1 hasta su fecha de de
 [Mejoras criptográficas TLS/SSL (Windows centro de IT)](/previous-versions/windows/it-pro/windows-vista/cc766285(v=ws.10))
   
 [Preparar TLS 1.2 en Office 365 y CCO de Office 365](/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
+
+[¿Cuáles son los conjuntos de cifrado actuales compatibles con Azure Front Door?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)

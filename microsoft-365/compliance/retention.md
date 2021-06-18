@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 44761199eea1cf2649a15b6a36ccc08eda99c570
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 65c9216e30c2db04b1981a17d73b3a9f0b5f1594
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950064"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007506"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -373,9 +373,11 @@ Usted aplica el Bloqueo de conservación después de crear la directiva o etique
 
 ## <a name="releasing-a-policy-for-retention"></a>Lanzamiento de una directiva de retención
 
-Siempre que sus directivas de retención no tengan ningún Bloqueo de conservación, podrá eliminar las directivas en cualquier momento, lo cual desactiva de forma eficaz la configuración de retención aplicada previamente. También puede mantener la directiva, pero quitar el sitio de SharePoint o la cuenta de OneDrive, o bien, cambiar el estado de ubicación a desactivado o deshabilitar la directiva.
+Siempre que sus directivas de retención no tengan ningún Bloqueo de conservación, podrá eliminar las directivas en cualquier momento, lo cual desactiva de forma eficaz la configuración de retención aplicada previamente. También puede mantener la directiva pero cambiar el estado de la ubicación a desactivado, o deshabilitar la directiva. Si la directiva está configurada para incluir sitios específicos para SharePoint o cuentas de OneDrive, también puede editar la directiva para quitar una o varias de estas entradas para liberar la directiva para esos sitios o cuentas.
  
 Al realizar cualquiera de estas acciones, cualquier contenido de SharePoint o OneDrive sujeto a la retención de la directiva se conservará durante 30 días para evitar la pérdida involuntaria de datos. Durante este período de gracia de 30 días, aún se conservarán los archivos eliminados (se seguirán agregando a la Biblioteca de suspensión para conservación), pero el trabajo de temporizador que limpia periódicamente la Biblioteca de suspensión para conservación se suspende para estos archivos para que pueda restaurarlos si es necesario.
+
+Una excepción a este período de gracia de 30 días es cuando actualiza la directiva para excluir uno o varios sitios para SharePoint o cuentas de OneDrive; en este caso, el trabajo de temporizador elimina los archivos de estas ubicaciones en la biblioteca de suspensión para conservación sin el retraso de 30 días.
 
 Para obtener más información sobre la Biblioteca de suspensión para conservación, consulte [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 

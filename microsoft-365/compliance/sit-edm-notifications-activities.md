@@ -1,5 +1,5 @@
 ---
-title: Crear notificaciones para actividades de coincidencia exacta de datos (vista previa)
+title: Crear notificaciones para actividades de coincidencia exacta de datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre como crear notificaciones para actividades de coincidencia exacta de datos.
+description: Obtenga información sobre cómo crear notificaciones para actividades de coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919366"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007566"
 ---
-# <a name="create-notifications-for-exact-data-match-activities-preview"></a>Crear notificaciones para actividades de coincidencia exacta de datos (vista previa)
+# <a name="create-notifications-for-exact-data-match-activities"></a>Crear notificaciones para actividades de coincidencia exacta de datos
 
 Cuando [crea tipos de información confidencial personalizados con coincidencia exacta de datos (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) hay una serie de actividades que se crean en el [registro de auditoría](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log). Puede utilizar el cmdlet de PowerShell [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) para crear notificaciones que le permitan saber cuándo se producen estas actividades:
 
@@ -34,16 +34,13 @@ Cuando [crea tipos de información confidencial personalizados con coincidencia 
 - UploadDataFailed
 - UploadDataCompleted
 
-> [!NOTE]
-> La capacidad de crear notificaciones de actividades de EDM solo está disponible para las nubes de World Wide y GCC.
-
 ## <a name="pre-requisites"></a>Requisitos previos
 
 La cuenta que use debe estar en uno de los siguientes roles:
 
 - un administrador global
 - administrador de cumplimiento
-- administrador de Exchange Online
+- administrador de Exchange Online
 
 Para obtener más información acerca de los permisos de DLP, consulte [Permisos](data-loss-prevention-policies.md#permissions).
 

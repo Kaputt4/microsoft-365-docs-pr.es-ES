@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635979"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006930"
 ---
 # <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
 
-Como administrador de una organización, usted es el responsable de configurar la directiva de contraseñas para los usuarios de su organización. El establecimiento de la Directiva de contraseñas puede resultar complicado y confuso, y en este artículo se proporcionan recomendaciones para que la organización sea más segura frente a ataques de contraseñas.
+Como administrador de una organización, usted es el responsable de establecer la directiva de contraseñas para los usuarios de su organización. El establecimiento de la directiva de contraseñas puede resultar complicado y confuso, y en este artículo se proporcionan recomendaciones para que la organización sea más segura frente a ataques de contraseñas.
   
 Para determinar con qué frecuencia expiran las contraseñas de Microsoft 365 en la organización, vea [Establecer la directiva de expiración de contraseñas para Microsoft 365](../manage/set-password-expiration-policy.md).
 
@@ -112,7 +112,7 @@ En cambio, estas son algunas recomendaciones para favorecer la diversidad de con
   
 ### <a name="ban-common-passwords"></a>Prohibir contraseñas comunes
 
-El requisito de contraseña más importante que debe aplicar a los usuarios al crear contraseñas es vetar el uso de contraseñas comunes para reducir la susceptibilidad de la organización a ataques violentos de contraseñas. Las contraseñas de usuario comunes son, por ejemplo, **abcdefg**, **contraseña**, **mono**.
+El requisito de contraseña más importante que debe aplicar a los usuarios al crear contraseñas es vetar el uso de contraseñas comunes para reducir la susceptibilidad de la organización a ataques violentos de contraseñas. Las contraseñas de usuario comunes incluyen: **abcdefg**, **contraseña**, **mono**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Instruya a los usuarios para no volver a usar contraseñas de la organización en otro lugar
 
@@ -131,6 +131,8 @@ La autenticación multifactor basada en riesgos garantiza que, cuando nuestro si
 ## <a name="next-steps"></a>Siguientes pasos
 
 ¿Quiere obtener más información acerca de la administración de contraseñas? Estas son algunas lecturas recomendadas:
+
+- [Directrices de contraseñas de Microsoft](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [¿Las contraseñas de web seguras realizan alguna acción?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 

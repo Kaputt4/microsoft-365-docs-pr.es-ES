@@ -14,16 +14,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 71df43639a719acb9436f64deba6b6c5cc9317f5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 386e4499fec30bf1c564c1e0dc81cb8aaa5912a5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924284"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007530"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
-
-
 
 **Se aplica a:**
 
@@ -310,7 +308,7 @@ Get-MpPreference
 
 En el siguiente ejemplo, se resaltan los elementos contenidos en `ExclusionExtension` la lista:
 
-![Salida de PowerShell para Get-MpPreference la lista de exclusión junto con otras preferencias](images/defender/wdav-powershell-get-exclusions-all.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Salida de PowerShell para Get-MpPreference":::
 
 Para más información, consulte [Usar cmdlets de PowerShell para configurar y ejecutar Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Defender](/powershell/module/defender/).
 
@@ -326,7 +324,7 @@ $WDAVprefs.ExclusionPath
 
 En el siguiente ejemplo, la lista se divide en nuevas líneas para cada uso del `Add-MpPreference` cmdlet:
 
-![Salida de PowerShell que muestra solo las entradas de la lista de exclusión](images/defender/wdav-powershell-get-exclusions-variable.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Salida de PowerShell que muestra solo las entradas de la lista de exclusión":::
 
 Para más información, consulte [Usar cmdlets de PowerShell para configurar y ejecutar Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Defender](/powershell/module/defender/).
 

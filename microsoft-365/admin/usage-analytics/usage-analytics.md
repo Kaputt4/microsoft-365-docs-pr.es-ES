@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635395"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007170"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 
@@ -60,7 +60,7 @@ El Microsoft 365 de información general contiene los siguientes informes. Puede
 
 - **Colaboración** &ndash; Vea cómo los usuarios de su organización usan OneDrive y SharePoint para almacenar documentos y colaborar entre sí, y cómo estas tendencias evolucionan mes a mes. También puede ver cuántos documentos se comparten interna o externamente y cuántos sitios de SharePoint o cuentas de OneDrive se usan activamente, desglosados por propietarios y otros colaboradores.
 
-- **Storage** &ndash; Use este informe para realizar un seguimiento del almacenamiento en la nube de buzones, OneDrive y SharePoint web.
+- **Almacenamiento** &ndash; Use este informe para realizar un seguimiento del almacenamiento en la nube de buzones, OneDrive y SharePoint web.
 
 - **Movilidad** &ndash; Realice un seguimiento de los clientes y dispositivos que las personas usan para conectarse al correo electrónico, Teams, Skype o Yammer.
 
@@ -105,7 +105,7 @@ Además de personalizar los informes desde la interfaz web de Power BI, los usua
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>¿Cómo puedo obtener el archivo pbit asociado a este panel?
 
-Puede acceder al archivo pbit desde el [Centro de descarga de Microsoft](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit).
+Puede acceder al archivo pbit desde el [Centro de descarga de Microsoft](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit). 
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>Quién Puede ver los paneles e informes?
 
@@ -129,7 +129,7 @@ Los datos de la aplicación de plantilla cubren actualmente el mismo conjunto de
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>¿En qué se diferencian los datos de la aplicación de plantilla de los datos de los informes de uso?
 
-Los datos subyacentes que ves en la aplicación de plantilla coinciden con los datos que ves en los informes de actividad en el centro Microsoft 365 administración. Las principales diferencias son que en el centro de administración los datos están disponibles durante los últimos 7/30/90/180 días, mientras que la aplicación de plantilla presenta datos mensualmente durante un máximo de 12 meses.
+Los datos subyacentes que ves en la aplicación de plantilla coinciden con los datos que ves en los informes de actividad en el Centro de administración de Microsoft 365. Las principales diferencias son que en el centro de administración los datos están disponibles durante los últimos 7/30/90/180 días, mientras que la aplicación de plantilla presenta datos mensualmente durante un máximo de 12 meses.
 
 Además, los detalles de nivel de usuario en la aplicación de plantilla solo están disponibles durante el último mes completo para los usuarios a los que se les asignó una licencia de producto y realizaron una actividad.
 

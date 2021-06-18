@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Adm_O365
 ms.custom:
@@ -18,17 +18,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Debe ser administrador de una suscripción empresarial para obtener ayuda de administrador o soporte técnico en línea o por teléfono en Microsoft 365 Empresa Premium.
-ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
-ms.translationtype: MT
+description: Debe ser administrador de una suscripción empresarial para obtener ayuda de administrador o soporte técnico en línea o por teléfono con Microsoft 365 Empresa Premium.
+ms.openlocfilehash: 254e01894f430bdf6a8f666d1425af8705968647
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635907"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984753"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
-## <a name="watch-get-help-or-support"></a>Watch: Obtener ayuda o soporte técnico 
+## <a name="watch-get-help-or-support"></a>Ver: obtener ayuda o soporte técnico 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -88,7 +88,7 @@ El equipo de soporte técnico de Office 365 operado por 21Vianet soluciona únic
 
 ## <a name="community-and-self-service-support-options"></a>Comunidad y opciones de soporte de autoservicio
 
-El soporte de autoservicio está disponible para todos los planes de Office 365 ofrecidos por 21Vianet. Incluye vídeos y herramientas para la solución de problemas, vídeos y artículos de ayuda, además de foros y wikis de la [comunidad de Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Para ver más recursos de autoayuda, vea [Más información sobre Office 365 operado por 21Vianet](../admin/services-in-china/services-in-china.md).
+El soporte de autoservicio está disponible para todos los planes de Office 365 ofrecidos por 21Vianet. Incluye vídeos y herramientas para la solución de problemas, vídeos y artículos de ayuda, además de foros y wikis de la [comunidad de Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Para ver más recursos de autoayuda, vea [Más información sobre Office 365 operado por 21Vianet](../admin/services-in-china/services-in-china.md).
 
 ## <a name="pre-sales-support"></a>Soporte para preventas
 
@@ -251,13 +251,13 @@ Las opciones de soporte asistido son solo para administradores de organizaciones
 
 ## <a name="let-our-community-help"></a>Deje que nuestra comunidad le ayude
 
-También puede [buscar en los foros de la comunidad de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=518605) para encontrar problemas conocidos y temas destacados, o publicar una pregunta nueva. Los foros de la comunidad están supervisados por agentes de soporte técnico de Microsoft cualificados que pueden ayudarle a solucionar el problema.
+También puede [buscar en los foros de la comunidad de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=518605) para encontrar problemas conocidos y temas destacados, o publicar una pregunta nueva. Los foros de la comunidad están supervisados por agentes de soporte técnico de Microsoft cualificados que pueden ayudarle a solucionar el problema.
 
 ::: moniker-end
 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Buscar documentos y aprendizaje](find-help-answers.md) (artículo)\
-[Configuración rápida de empleados](employee-quick-setup.md) (artículo)\
-[Información general sobre Microsoft 365 Empresa Premium configuración](setup-overview.md) (vídeo)
+[Buscar documentos y aprendizaje](find-help-answers.md) (artículo)\ 
+[Configuración rápida para empleados](employee-quick-setup.md) (artículo)\
+[Información general sobre Microsoft 365 Empresa Premium](setup-overview.md) (vídeo)

@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 04/28/2021
+ms.date: 06/15/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274957"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964705"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 
@@ -34,7 +31,7 @@ ms.locfileid: "52274957"
 En este artículo se describe una característica de antivirus o antimalware conocida como "bloqueo a primera vista" y se describe cómo habilitar el bloqueo a primera vista para la organización. 
 
 > [!TIP]
-> Este artículo está destinado a administradores empresariales y profesionales de TI que administran la configuración de seguridad para organizaciones. Si no es un administrador empresarial o un profesional de TI, pero tiene preguntas sobre el bloqueo a primera vista, consulte [¿No es un administrador empresarial o un profesional de TI?](#not-an-enterprise-admin-or-it-pro).
+> Este artículo está destinado a administradores empresariales y profesionales de TI que administran la configuración de seguridad para organizaciones. Si no es un administrador empresarial o un profesional de TI, pero tiene preguntas sobre el bloqueo a primera vista, consulte la sección[¿No es un administrador empresarial o un profesional de TI?](#not-an-enterprise-admin-or-it-pro).
 
 ## <a name="what-is-block-at-first-sight"></a>¿Qué es "bloqueo a primera vista"?
 
@@ -55,7 +52,7 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
 ![Lista de motores AV de Microsoft Defender](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> Para más información, consulte este blog: [Conozca las tecnologías avanzadas en el centro la protección de última generación de Microsoft Defender para punto de conexión](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+> Para más información, consulte este blog: [Conozca las tecnologías avanzadas en el núcleo de la protección de última generación de Microsoft Defender para punto de conexión](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
 ## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Algunas cosas que debe saber sobre el bloqueo a primera vista
 
@@ -149,7 +146,9 @@ Puede confirmar que el bloqueo a primera vista está habilitado en dispositivos 
 
 ## <a name="validate-block-at-first-sight-is-working"></a>Validar que esté funcionando el bloqueo a primera vista
 
-Para comprobar que la característica funciona, siga las instrucciones de la guía [Validar las conexiones entre la red y la nube](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
+Para validar que la característica funciona, descargue el archivo de ejemplo [Bloquear a primera vista](https://demo.wd.microsoft.com/Page/BAFS). Para descargar el archivo, necesitará una cuenta en Azure AD que tenga asignado el rol Administrador de seguridad o Administrador global.
+
+Para validar que la protección habilitada para la nube funciona, siga las instrucciones de [Validar las conexiones entre la red y la nube](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud). 
 
 ## <a name="turn-off-block-at-first-sight"></a>Desactivar el bloqueo a primera vista
 

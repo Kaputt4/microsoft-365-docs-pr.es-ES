@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: ad095db005421a58806d2775d4958cf3be5f474e
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 4215e6618c1cc6359755c2af1e7b9e93ca07b58d
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866744"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984813"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -74,7 +74,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
     - El correo electrónico con cifrado IRM sin etiqueta se reemplazará por una etiqueta con una configuración de cifrado cuando haya una coincidencia al usar etiquetado automático.
     - El correo electrónico recibido se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático:
-        - Si la etiqueta está configurada para el [cifrado](encryption-sensitivity-labels.md), este cifrado no se aplica. Sin embargo, esta configuración no es compatible actualmente.
+        - Implementación: si la etiqueta está configurada como [cifrado](encryption-sensitivity-labels.md), no se aplica ese cifrado.
         - Si la etiqueta está configurada para aplicar [marcas dinámicas](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), tenga en cuenta que esto puede afectar a los nombres de las personas externas a su organización.
     - Cuando la etiqueta aplica cifrado, el [emisor de la administración de derechos y el propietario la administración de derechos](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la persona que envía el correo electrónico. Actualmente, no existe una forma de establecer un propietario de Rights Manager para todos los mensajes de correo electrónico entrantes que se cifran automáticamente.
     

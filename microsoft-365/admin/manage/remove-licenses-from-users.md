@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: El método que use para desasignación de licencias de productos depende de si desasigna licencias de usuarios específicos o de un producto específico.
 ms.date: 07/01/2020
-ms.openlocfilehash: f7624432590a5731b57c45c25e7e7dc458a5b8f5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f79ffecc22fe4531076ccacd83c25e44b81052a6
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623594"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006978"
 ---
 # <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
 
@@ -117,20 +117,20 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 ::: moniker-end
 
 2. Seleccione los círculos junto a los nombres de los usuarios para los que desea desasignar licencias.
-3. En la parte superior, seleccione los tres puntos (Más acciones) y, después, seleccione **Administrar licencias de producto**.
-4. En el panel **administrar licencias de producto**, seleccione **reemplazar las asignaciones de licencias de producto existentes** \> **siguiente**.
-5. En la parte inferior del panel **Reemplazar** productos **existentes,** active la casilla Quitar todas las licencias de productos de los usuarios seleccionados y, a continuación, **seleccione Reemplazar** \> **cerrar**.
+3. En la parte superior, seleccione **Administrar licencias de productos**.
+4. En el **panel Administrar licencias de productos,** seleccione **Unassign all** Save  >  **changes**.
+5. En la parte inferior del panel, seleccione **Listo**.  
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>¿Qué sucede con los datos de un usuario al quitar su licencia?
 
 - Cuando se quita una licencia de un usuario, Exchange datos en línea asociados con esa cuenta se mantienen durante 30 días. Después del período de gracia de 30 días, los datos se eliminan y no se pueden recuperar.
-- Los archivos guardados en OneDrive para la Empresa no se eliminan a menos que el usuario se elimine del centro de administración de Microsoft 365 o se quite a través de la sincronización de Active Directory. Para obtener más información, [vea OneDrive retención y eliminación.](/onedrive/retention-and-deletion)
+- Los archivos guardados en OneDrive para la Empresa no se eliminan a menos que el usuario se elimine del Centro de administración de Microsoft 365 o se quite a través de la sincronización de Active Directory. Para obtener más información, [vea OneDrive retención y eliminación.](/onedrive/retention-and-deletion)
 - Cuando se quita la licencia, el buzón del usuario ya no se puede buscar mediante una herramienta de exhibición de documentos electrónicos como búsqueda de contenido o Advanced eDiscovery. Para obtener más información, vea "Buscar buzones desconectados o sin licencia" en Búsqueda de contenido [en Microsoft 365](../../compliance/content-search.md).
 - Si tiene una suscripción Enterprise, como Office 365 Enterprise E3, Exchange Online permite conservar los datos del buzón de una cuenta de usuario eliminada mediante buzones [inactivos.](../../compliance/inactive-mailboxes-in-office-365.md) Para obtener más información, vea [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 - Para obtener información sobre cómo bloquear el acceso de un usuario Microsoft 365 datos después de quitar su licencia y cómo obtener acceso a los datos después, vea [Remove a former employee](../add-users/remove-former-employee.md).
 - Si quitas la licencia de un usuario y aún tienen Office aplicaciones instaladas, verán Errores de activación y producto sin licencia en [Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usen Office aplicaciones.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started/assign-licenses.md)a otros usuarios, considere la posibilidad de quitar las licencias de la suscripción para que no pague más licencias de las que necesita. [](../../commerce/licenses/buy-licenses.md)
 
