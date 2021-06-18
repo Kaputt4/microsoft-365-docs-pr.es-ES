@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964705"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007406"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -82,7 +82,7 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
    - **Extensión de tiempo para el análisis de archivos de la nube**: 50
    - **Avisar a los usuarios antes del envío de muestras**: Enviar todos los datos sin avisar
 
-   ![Configuración de Intune](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Bloque de configuración de Intune a primera vista":::
 
 4. Guarde la configuración.
 
@@ -136,7 +136,7 @@ Puede confirmar que el bloqueo a primera vista está habilitado en dispositivos 
 
 2. Seleccione **Protección antivirus y contra amenazas** y, luego, en **Configuración de antivirus y protección contra amenazas**, seleccione **Administrar la configuración**.
 
-   ![Captura de pantalla de la etiqueta Protección contra virus y amenazas en la aplicación Seguridad de Windows](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Captura de pantalla de la etiqueta de configuración de Protección antivirus y contra amenazas en la aplicación Seguridad de Windows":::
 
 3. Confirme que las opciones **Protección basada en la nube** y **Envío de muestras automático** estén activadas.
 
