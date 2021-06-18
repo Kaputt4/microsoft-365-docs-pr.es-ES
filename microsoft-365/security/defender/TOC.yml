@@ -328,6 +328,8 @@
                       href: streaming-api-event-hub.md
                     - name: Transmitir eventos de búsqueda avanzada de amenazas a su cuenta de almacenamiento
                       href: streaming-api-storage.md
+                    - name: Configuración del Centro de eventos
+                      href: configure-event-hub.md
                 - name: API de Búsqueda avanzada de amenazas
                   href: api-advanced-hunting.md
                 - name: API de incidentes

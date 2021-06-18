@@ -530,6 +530,8 @@
 ####### [Buscar equipos por etiqueta](find-machines-by-tag.md)
 ####### [Obtener los kB que faltan](get-missing-kbs-machine.md)
 ####### [Establecer valor de dispositivo](set-device-value.md)
+####### [Actualizar máquina](update-machine-method.md)
+
 
 
 ###### [Acción de máquina]()
