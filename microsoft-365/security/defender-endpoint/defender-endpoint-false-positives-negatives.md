@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b8060952960f89e274361bb6382f03d482346e0d
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903833"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028864"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -41,7 +41,7 @@ En las soluciones de protección de puntos de conexión, un falso positivo es un
 
 ![Definición de falsos positivos y negativos en Defender for Endpoint](images/false-positives-overview.png)
 
-Afortunadamente, se pueden realizar pasos para solucionar y reducir este tipo de problemas. Si ve falsos positivos/negativos en [Microsoft 365 Defender](microsoft-defender-security-center.md) (anteriormente el Centro de seguridad de Microsoft Defender), las operaciones de seguridad pueden tomar medidas para solucionarlos mediante el siguiente proceso:
+Afortunadamente, se pueden realizar pasos para solucionar y reducir este tipo de problemas. Si ve falsos positivos o negativos en [Microsoft 365 Defender](microsoft-defender-security-center.md) (anteriormente el Centro de seguridad de Microsoft Defender), las operaciones de seguridad pueden tomar medidas para solucionarlos mediante el siguiente proceso:
 
 1.  [Revisar y clasificar alertas](#part-1-review-and-classify-alerts) 
 2.  [Revisar las acciones de corrección que se han realizado](#part-2-review-remediation-actions)
@@ -66,7 +66,7 @@ Administrar las alertas y clasificar falsos positivos ayuda a entrenar la soluci
 
 Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un falso positivo o benigno.
 
-1. Vaya al portal Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
 2. En el panel de navegación, elija **Cola de alertas**.
 
@@ -82,9 +82,9 @@ Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un
 
 ### <a name="classify-an-alert"></a>Clasificar una alerta
 
-Las alertas se pueden clasificar como falsos positivos o verdaderos positivos en el Microsoft 365 Defender. Clasificar alertas ayuda a entrenar a Microsoft Defender para endpoint para que, con el tiempo, veas más alertas verdaderas y menos alertas falsas.
+Las alertas se pueden clasificar como falsos positivos o como verdaderos positivos en Microsoft 365 Defender. Clasificar alertas ayuda a entrenar a Microsoft Defender para endpoint para que, con el tiempo, veas más alertas verdaderas y menos alertas falsas.
 
-1. Vaya al portal Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
 2. Seleccione **Cola de alertas** y, a continuación, seleccione una alerta.
 
@@ -97,9 +97,9 @@ Las alertas se pueden clasificar como falsos positivos o verdaderos positivos en
 
 ### <a name="suppress-an-alert"></a>Suprimir una alerta
 
-Si tiene alertas que son falsos positivos o que son verdaderos positivos, pero para eventos no importantes, puede suprimir esas alertas en Microsoft 365 Defender. Suprimir alertas ayuda a reducir el ruido en el panel de operaciones de seguridad. 
+Si tiene alertas que son falsos positivos o que son verdaderos positivos, pero para eventos sin importancia, puede suprimir esas alertas en Microsoft 365 Defender. Suprimir alertas ayuda a reducir el ruido en el panel de operaciones de seguridad. 
 
-1. Vaya al portal Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
 2. En el panel de navegación, seleccione **Cola de alertas**.
 
@@ -276,7 +276,7 @@ Antes de crear indicadores para direcciones IP, direcciones URL o dominios, aseg
 - La versión del cliente antimalware es 4.18.1906.x o posterior 
 - Los dispositivos se Windows 10, versión 1709 o posterior 
 
-Los indicadores de red personalizados están activados en [el Microsoft 365 Defender](microsoft-defender-security-center.md). Para obtener más información, vea [Características avanzadas](/microsoft-365/security/defender-endpoint/advanced-features).
+Los indicadores de red personalizados están activados en el [Microsoft 365 Defender](microsoft-defender-security-center.md). Para obtener más información, vea [Características avanzadas](/microsoft-365/security/defender-endpoint/advanced-features).
 
 #### <a name="indicators-for-application-certificates"></a>Indicadores de certificados de aplicación 
 
@@ -448,8 +448,8 @@ Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, 
 
 3. En la **ventana Asistente de** soporte técnico, describa el problema y, a continuación, envíe el mensaje. Desde allí, puede abrir una solicitud de servicio.  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar Microsoft Defender para el punto de conexión](manage-atp-post-migration.md)
 
-[Información general sobre Microsoft 365 Portal de Defender](/microsoft-365/security/defender-endpoint/use) 
+[Información general sobre Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use) 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4d793d49d669510b722a72160ae396ee73ab9699
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022752"
+ms.locfileid: "53028516"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -67,7 +67,7 @@ En la cola de incidentes  predeterminada, puede seleccionar Filtros para ver un 
 
 En esta tabla se enumeran los nombres de filtro disponibles.
 
-| Nombre del filtro | Description |
+| Nombre del filtro | Descripción |
 |:-------|:-----|
 | Asignado a | Puede elegir mostrar las alertas que se le han asignado o las que controla la automatización. |
 | Categorías | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
@@ -98,7 +98,7 @@ Una vez que haya configurado un filtro útil en la cola de incidentes, puede mar
 - Incidentes con una amenaza asociada específica
 - Incidentes con un actor específico
 
-Una vez que haya compilado y almacenado la lista de vistas de filtro útiles como direcciones [](manage-incidents.md) URL, puede usarla rápidamente para procesar y priorizar los incidentes de la cola y administrarlos para su análisis posterior.
+Una vez que haya compilado y almacenado la lista de vistas de filtro útiles como direcciones URL, puede usarla para procesar y priorizar rápidamente los incidentes de la cola y administrarlos para su posterior asignación y análisis. [](manage-incidents.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

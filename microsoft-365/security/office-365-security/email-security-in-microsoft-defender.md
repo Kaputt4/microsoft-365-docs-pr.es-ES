@@ -16,12 +16,12 @@ description: Ver e investigar intentos de suplantación de identidad de malware.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877901"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028561"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Seguridad de correo electrónico con el Explorador de amenazas en Microsoft Defender para Office 365
 
@@ -45,28 +45,22 @@ En este artículo se explica cómo ver e investigar los intentos de malware y su
 
 Para ver el malware detectado en el correo electrónico ordenado por Microsoft 365, use la vista Correo [> malware](threat-explorer-views.md#email--malware) del Explorador (o detecciones en tiempo real). El malware es la vista predeterminada, por lo que puede seleccionarse tan pronto como abra el Explorador.
 
-1. En el Centro de seguridad & cumplimiento ( ), elija Explorador de administración de amenazas <https://protection.office.com>  \>  (o **Detecciones en tiempo real**). (En este ejemplo se usa Explorer).
-
-   Si está en el portal convergente de Microsoft 365 Defender ( ) desplácese hasta Correo electrónico <https://security.microsoft.com> **& explorador de**  >  **colaboración**.
+1. En el portal de Microsoft 365 Defender ( ), elija Correo & explorador de colaboración <https://security.microsoft.com>  \>  (o **Detecciones en tiempo real**). (En este ejemplo se usa Explorer). Si está en el portal de Microsoft 365 Defender converged ( desplácese hasta https://security.microsoft.com/) Correo electrónico & explorador de   >  **colaboración**.
 
    A partir de aquí, comience en la vista, elija un período de tiempo determinado para investigar (si es necesario) y centre los filtros, según el recorrido [del Explorador.](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)
 
-2. En el **menú Ver,** elija **Malware de** correo \> **electrónico**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Menú Ver para el Explorador](../../media/ExplorerViewEmailMalwareMenu.png)
+2. En el **menú Ver,** elija **Malware en** **Correo electrónico**.
 
 3. Haga **clic en Remitente** y, a continuación, elija **Tecnología** básica \> **de detección**.
 
-   Las tecnologías de detección ahora están disponibles como filtros para el informe.
+   
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="Tecnología de detección de malware":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Tecnologías de detección de malware](../../media/ExplorerEmailMalwareDetectionTech.png)
+   Las tecnologías de detección ahora están disponibles como filtros para el informe.
 
 4. Elija una opción. A continuación, **seleccione el botón** Actualizar para aplicar ese filtro.
 
-   > [!div class="mx-imgBorder"]
-   > ![Tecnología de detección seleccionada](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="tecnología de detección seleccionada"::: 
 
    El informe se actualiza para mostrar los resultados que el malware detectó en el correo electrónico, mediante la opción de tecnología seleccionada. Desde aquí, puede realizar más análisis. 
 
@@ -76,7 +70,7 @@ Puede ver los intentos de suplantación de identidad a través de direcciones UR
 
 Para revisar las direcciones URL de suplantación de identidad (phish) en mensajes y clics en las direcciones URL de los mensajes de suplantación de identidad (phish), use la vista Detección de [   >  **correo**](threat-explorer-views.md#email--phish) electrónico del Explorador o de detecciones en tiempo real.
 
-1. En el Centro de seguridad & cumplimiento ( ), elija Explorador de administración de amenazas <https://protection.office.com>  \>  (o **Detecciones en tiempo real**). (En este ejemplo se usa Explorer).
+1. En el portal de Microsoft 365 Defender ( ), elija Correo & explorador de colaboración <https://security.microsoft.com>  \>  (o **Detecciones en tiempo real**). (En este ejemplo se usa Explorer).
 
 2. En el **menú Ver,** elija **Email** \> **Phish**.
 
@@ -87,8 +81,7 @@ Para revisar las direcciones URL de suplantación de identidad (phish) en mensaj
 
 4. Seleccione una o varias opciones, como **Bloqueado** y Bloquear  invalidado y, a continuación, seleccione el botón Actualizar en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).
 
-   > [!div class="mx-imgBorder"]
-   > ![Direcciones URL y veredictos de clic](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="Direcciones URL y veredictos de clic":::
 
    El informe se actualiza para mostrar dos tablas de dirección URL diferentes en la pestaña Dirección URL del informe:
 
@@ -122,7 +115,7 @@ En los menús desplegables Correo electrónico o URL, Clics superiores y en nues
 ## <a name="start-automated-investigation-and-response"></a>Iniciar la investigación y respuesta automatizadas
 
 > [!NOTE]
-> Las capacidades automatizadas de investigación y respuesta están disponibles en *Microsoft Defender Office 365 plan 2* y Office 365 *E5*.
+> Las capacidades automatizadas de investigación y respuesta están disponibles en *Microsoft Defender Office 365 plan 2* y *Office 365 E5*.
 
 [La investigación y respuesta automatizadas](automated-investigation-response-office.md) pueden ahorrarle al equipo de operaciones de seguridad el tiempo y el esfuerzo invertidos en investigar y mitigar los ciberataques. Además de configurar alertas que pueden desencadenar un libro de juegos de seguridad, puedes iniciar un proceso automatizado de investigación y respuesta desde una vista en el Explorador. Para obtener más información, [vea Ejemplo: un administrador de seguridad desencadena una investigación desde el Explorador](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 

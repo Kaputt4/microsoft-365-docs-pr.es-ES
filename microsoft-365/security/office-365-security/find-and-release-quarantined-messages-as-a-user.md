@@ -20,12 +20,12 @@ ms.custom:
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60b319b81362b9d88afcd734021db227969b04d0
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 02119130df847da48f0c25ba13cbb321c83f59dd
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877877"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028396"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -38,18 +38,6 @@ ms.locfileid: "52877877"
 
 En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, la cuarentena retiene los mensajes que pueden ser peligrosos o no deseados. Para más información, consulte [Cuarentena en EOP](quarantine-email-messages.md).
 
-En tanto que destinatario de un mensaje en cuarentena, lo que puede hacer con el mensaje como usuario normal se describe en la tabla siguiente:
-
-<br>
-
-****
-
-|Motivo de la cuarentena:|Ver|Liberar|Eliminar|
-|---|:---:|:---:|:---:|
-|Masivo|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Correo no deseado|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Suplantación de identidad (suplantación de identidad no de alta confianza)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
-|
 
 Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365 Defender o, si un administrador lo ha configurado, en [notificaciones de correo no deseado para el usuario](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 

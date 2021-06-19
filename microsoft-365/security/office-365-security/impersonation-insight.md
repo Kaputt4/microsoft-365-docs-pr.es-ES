@@ -19,12 +19,12 @@ description: Los administradores pueden aprender cómo funciona la información 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1b99590d7ae96ad8371eb2a2fab5fb7e8f94d07
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: b6aab20cc9050152b7ba9f86baed887969ad4da0
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879041"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029020"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Información de suplantación en Defender para Office 365
 
@@ -48,11 +48,12 @@ La protección de suplantación forma parte de la configuración de directiva co
 
 Puede usar la información de suplantación en el portal de Microsoft 365 Defender para identificar rápidamente los mensajes de remitentes suplantados o dominios de remitente que haya configurado para la protección de suplantación.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <https://security.microsoft.com> . Para ir directamente a la información de suplantación en la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> . Para ir directamente a la **página Información de suplantación,** use <https://security.microsoft.com/impersonationinsight> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la información de suplantación en la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> . Para ir directamente a la **página Información de suplantación,** use <https://security.microsoft.com/impersonationinsight> .
 
-- Debe tener asignados permisos en el portal de Microsoft 365 Defender antes de poder realizar los procedimientos descritos en este artículo:
+- Debe tener asignados permisos en el portal de Microsoft 365 Defender para poder realizar los procedimientos descritos en este artículo:
+
   - **Administración de organizaciones**
   - **Administrador de seguridad**
   - **Lector de seguridad**
@@ -64,9 +65,9 @@ Puede usar la información de suplantación en el portal de Microsoft 365 Defend
 
 - Habilitas y configuras la protección de suplantación en las directivas contra suplantación de identidad en Microsoft Defender para Office 365. La protección de suplantación no está habilitada de forma predeterminada. Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Abra la información de suplantación en el portal de Microsoft 365 Defender
+## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Abra la información de suplantación en el portal de Microsoft 365 Defender identidad
 
-1. En el portal Microsoft 365 Defender, vaya a Email **& Collaboration** Policies \> **& Rules** Threat \> **policies** \> **section** \> **Anti-phishing**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas \>  \>  \>  sección \> **Anti-phishing**.
 
 2. En la **página Anti-phishing,** la información de suplantación tiene este aspecto:
 

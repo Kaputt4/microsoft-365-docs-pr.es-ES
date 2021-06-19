@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo reconocer y corregir el ataque de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5675a7a83bb62bae80f20e8e7c86fde38599ec6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c3c3c06974feb2dab3985a60938fe7d543543c3
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538308"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028924"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones ilegales de consentimiento
 
@@ -50,7 +50,7 @@ Debe buscar en el registro de **auditoría** para encontrar signos, también den
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Pasos para encontrar signos de este ataque
 
-1. Abra el **Centro de seguridad & cumplimiento en** <https://protection.office.com> .
+1. Abra el **portal Microsoft 365 Defender** en <https://security.microsoft.com> .
 
 2. Vaya a **Buscar y** seleccione Búsqueda de registro **de auditoría.**
 
@@ -143,7 +143,7 @@ El script genera un archivo denominado Permissions.csv. Siga estos pasos para bu
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinar el ámbito del ataque
 
-Una vez que haya terminado de realizar el inventario del acceso a la aplicación, revise el registro de **auditoría** para determinar el ámbito completo de la infracción. Busque en los usuarios afectados, los períodos de tiempo a los que la aplicación ilícita tuvo acceso a su organización y los permisos que tenía la aplicación. Puede buscar el registro **de auditoría en** el Centro de seguridad & [cumplimiento](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+Una vez que haya terminado de realizar el inventario del acceso a la aplicación, revise el registro de **auditoría** para determinar el ámbito completo de la infracción. Busque en los usuarios afectados, los períodos de tiempo a los que la aplicación ilícita tuvo acceso a su organización y los permisos que tenía la aplicación. Puede buscar en el registro **de auditoría** en el [Microsoft 365 Defender](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 > [!IMPORTANT]
 > [La auditoría de buzones](../../compliance/enable-mailbox-auditing.md) de correo y la auditoría de actividad para administradores y usuarios deben estar [habilitadas](../../compliance/turn-audit-log-search-on-or-off.md) antes del ataque para que pueda obtener esta información.

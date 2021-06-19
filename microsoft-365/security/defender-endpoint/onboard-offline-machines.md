@@ -2,7 +2,7 @@
 title: Incorporar dispositivos sin acceso a Internet a Microsoft Defender para endpoint
 ms.reviewer: ''
 description: Incorporar dispositivos sin acceso a Internet para que puedan enviar datos del sensor al sensor de Microsoft Defender para endpoint
-keywords: onboard, servers, vm, on-premise, oms gateway, log analytics, azure log analytics, mma
+keywords: onboard, servers, vm, on-premises, oms gateway, log analytics, azure log analytics, mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed33f67695fddc78c0bac646f72ca0c48887bb04
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 73110d89c39319825cc8dc8e347d137de52a510a
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844423"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028384"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos sin acceso a Internet a Microsoft Defender para endpoint
 
@@ -52,7 +52,7 @@ Para obtener más información acerca de los métodos de incorporación, vea los
 - [Incorporación de servidores al servicio de Microsoft Defender para endpoints](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## <a name="on-premise-devices"></a>Dispositivos locales
+## <a name="on-premises-devices"></a>Dispositivos locales
 
 - Configurar Azure Log Analytics (anteriormente conocido como puerta de enlace OMS) para que actúe como proxy o concentrador:
   - [Agente de Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)

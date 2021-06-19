@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: f2de1f6bf35f4454ed6ab286c0bc8004a0d6301b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: c480bb83465e6057cd1cf29f1f5077f2a0e165e8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904073"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028828"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -48,7 +48,7 @@ Las capacidades de bloqueo de comportamiento y contención funcionan con varios 
 
 - [La detección y respuesta de](overview-endpoint-detection-response.md) puntos de conexión (EDR) recibe señales de seguridad en toda la red, dispositivos y comportamiento del kernel. A medida que se detectan las amenazas, se crean alertas. Varias alertas del mismo tipo se agregan a incidentes, lo que facilita al equipo de operaciones de seguridad investigar y responder.
 
-- [Defender for Endpoint](overview-endpoint-detection-response.md) tiene una amplia gama de ópticas entre identidades, correo electrónico, datos y aplicaciones, además de las señales de comportamiento de red, punto de conexión y kernel recibidas a través de EDR. Un componente de [Microsoft 365 Defender,](../defender/microsoft-365-defender.md)Defender for Endpoint procesa y correlaciona estas señales, genera alertas de detección y conecta alertas relacionadas en incidentes.
+- [Defender for Endpoint](overview-endpoint-detection-response.md) tiene una amplia gama de ópticas entre identidades, correo electrónico, datos y aplicaciones, además de las señales de comportamiento de red, punto de conexión y kernel recibidas a través de EDR. Un componente de [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender for Endpoint procesa y correlaciona estas señales, genera alertas de detección y conecta alertas relacionadas en incidentes.
 
 Con estas capacidades, se pueden evitar o bloquear más amenazas, incluso si comienzan a ejecutarse. Cada vez que se detecta un comportamiento sospechoso, se contiene la amenaza, se crean alertas y se detienen las amenazas en sus seguimientos. 
 
@@ -95,9 +95,9 @@ Los modelos de aprendizaje de dispositivos basados en comportamiento en Defender
 - La primera capa de protección detectó el comportamiento de vulnerabilidad. Los clasificadores de aprendizaje de dispositivos en la nube identificaron correctamente la amenaza e indicaron inmediatamente al dispositivo cliente que bloqueara el ataque.
 - La segunda capa de protección, que ayudó a detener los casos en los que el ataque se atravó más allá de la primera capa, detectó el vacío del proceso, detuvo ese proceso y quitó los archivos correspondientes (como Lokibot). 
 
-Mientras se detectó y detuvo el ataque, las alertas, como una "alerta inicial de acceso", se desencadenaron y aparecieron en el portal de [Microsoft 365 Defender](microsoft-defender-security-center.md) (anteriormente el Centro de seguridad de Microsoft Defender):
+Mientras se detectó y detuvo el ataque, las alertas, como una "alerta de acceso inicial", se desencadenaron y aparecieron en el [portal de Microsoft 365 Defender](microsoft-defender-security-center.md) (anteriormente el Centro de seguridad de Microsoft Defender):
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerta de acceso inicial en el portal de Microsoft 365 Defender":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerta de acceso inicial en el Microsoft 365 Defender de acceso":::
 
 En este ejemplo se muestra cómo los modelos de aprendizaje de dispositivos basados en comportamientos en la nube agregan nuevas capas de protección contra ataques, incluso después de que se han empezado a ejecutar.
 
@@ -117,7 +117,7 @@ Unos minutos después de que se bloqueó el artefacto, se bloquearon varias inst
 
 En este ejemplo se muestra que, con las capacidades de contención y bloqueo de comportamiento, las amenazas se detectan, contienen y bloquean automáticamente. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre Defender for Endpoint](overview-endpoint-detection-response.md)
 
@@ -127,4 +127,4 @@ En este ejemplo se muestra que, con las capacidades de contención y bloqueo de 
 
 - [Ver la actividad de amenazas globales reciente](https://www.microsoft.com/wdsi/threats)
 
-- [Obtener información general sobre Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Obtenga información general sobre Microsoft 365 Defender](../defender/microsoft-365-defender.md)

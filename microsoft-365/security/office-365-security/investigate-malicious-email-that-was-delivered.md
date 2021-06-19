@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo usar las capacidades de investigac
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02e396cac060f2b8431b2b70e89c18950596d9c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ef29493bd68166b88bba3ef5905f0427823b4015
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933378"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028856"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Investigar el correo electrónico malintencionado que se entregó en Office 365
 
@@ -51,7 +51,7 @@ Asegúrese de que se cumplen los siguientes requisitos:
 
 - Su organización tiene directivas definidas para correo no deseado, antimalware, anti phishing, y así sucesivamente. Vea [Proteger contra amenazas en Office 365](protect-against-threats.md).
 
-- Es un administrador global o tiene asignado el administrador de seguridad o el rol Buscar y purgar en el Centro de seguridad & cumplimiento. Vea [Permisos en el Centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md). Para algunas acciones, también debe tener asignado un nuevo rol de vista previa.
+- Es un administrador global o tiene el administrador de seguridad o el rol Buscar y purgar asignado en Microsoft 365 Defender. Vea [Permisos en el Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md). Para algunas acciones, también debe tener asignado un nuevo rol de vista previa.
 
 ### <a name="preview-role-permissions"></a>Permisos de función de vista previa
 
@@ -67,10 +67,10 @@ Para realizar determinadas acciones, como ver encabezados de mensaje o descargar
 |
 
 > [!NOTE]
-> *La* vista previa es un rol y no un grupo de funciones; el rol Vista previa debe agregarse a un grupo de funciones existente para Office 365 (at <https://protection.office.com> ). Vaya a **Permisos y,** a continuación, edite un grupo de roles existente o agregue un nuevo grupo de funciones con el **rol Vista** previa asignado.
-> El rol Administrador global se asigna al centro de administración de Microsoft 365 ( ), y los roles Administrador de seguridad y Lector de seguridad se asignan en el Centro de <https://admin.microsoft.com> seguridad & cumplimiento ( <https://protection.office.com> ). Para obtener más información sobre roles y permisos, vea Permisos en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+> *La* vista previa es un rol y no un grupo de funciones; el rol Vista previa debe agregarse a un grupo de funciones existente para Office 365 (at <https://security.microsoft.com> ). Vaya a **Permisos y,** a continuación, edite un grupo de roles existente o agregue un nuevo grupo de funciones con el **rol Vista** previa asignado.
+> Al rol Administrador global se le asigna el Centro de administración de Microsoft 365 ( ), y los roles Administrador de seguridad y Lector de seguridad se <https://admin.microsoft.com> asignan en Microsoft 365 Defender ( <https://security.microsoft.com> ). Para obtener más información sobre roles y permisos, vea [Permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
 
-Entendemos que la vista previa y la descarga de correo electrónico son actividades confidenciales, por lo que la auditoría está habilitada para estas. Una vez que un administrador realiza estas actividades en mensajes de correo Office 365 electrónico, los registros de auditoría se generan para el mismo y se pueden ver en el Centro de seguridad & cumplimiento ( <https://protection.office.com> ). Vaya a **Búsqueda de** registro de auditoría  >  **de búsqueda** y filtre el nombre de administrador en la sección Búsqueda. Los resultados filtrados mostrarán la **actividad AdminMailAccess**. Seleccione una fila para ver detalles en la **sección Más información** sobre el correo electrónico descargado o con vista previa.
+Entendemos que la vista previa y la descarga de correo electrónico son actividades confidenciales, por lo que la auditoría está habilitada para estas. Una vez que un administrador realiza estas actividades en correos electrónicos, los registros de auditoría se generan para el mismo y se pueden ver en el Office 365 Microsoft 365 Defender ( <https://security.microsoft.com> ). Vaya a **Búsqueda de** registro de auditoría  >  **de búsqueda** y filtre el nombre de administrador en la sección Búsqueda. Los resultados filtrados mostrarán la **actividad AdminMailAccess**. Seleccione una fila para ver detalles en la **sección Más información** sobre el correo electrónico descargado o con vista previa.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Buscar correo electrónico sospechoso que se entregó
 
@@ -79,13 +79,11 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
 > [!NOTE]
 > Actualmente, las búsquedas predeterminadas en el Explorador no incluyen elementos zapped.  Esto se aplica a todas las vistas, por ejemplo, vistas de malware o phish. Para incluir elementos zapped, debe agregar un conjunto de acciones **de** entrega para incluir **Removed by ZAP**. Si incluye todas las opciones, verá todos los resultados de la acción de entrega, incluidos los elementos zapped.
 
-1. **Vaya al Explorador de amenazas:** vaya a e inicie sesión con su cuenta de trabajo o <https://protection.office.com> escuela para Office 365. Esto le llevará al Centro de seguridad & cumplimiento.
+1. **Vaya al Explorador de amenazas:** vaya a e inicie sesión con su cuenta de trabajo o <https://security.microsoft.com> escuela para Office 365. Esto le lleva a Microsoft 365 Defender.
 
-2. En el inicio rápido de navegación izquierdo, elija **Explorador de administración de** \> **amenazas.**
+2. En el inicio rápido de navegación izquierdo, elija **Email & collaboration** \> **Explorer**.
 
-    ![Explorador con campos Acción de entrega y Ubicación de entrega.](../../media/ThreatExFields.PNG)
-
-    Es posible que observe la nueva **columna Acciones especiales.** Esta característica está dirigida a decirles a los administradores el resultado del procesamiento de un correo electrónico. Se **puede tener acceso a** la columna Acciones especiales en el mismo lugar que Acción de **entrega** y Ubicación **de entrega.** Las acciones especiales pueden actualizarse al final de la escala de tiempo de correo electrónico del Explorador de amenazas, que es una nueva característica destinada a mejorar la experiencia de búsqueda para los administradores.
+      Es posible que observe la nueva **columna Acciones especiales.** Esta característica está dirigida a decirles a los administradores el resultado del procesamiento de un correo electrónico. Se **puede tener acceso a** la columna Acciones especiales en el mismo lugar que Acción de **entrega** y Ubicación **de entrega.** Las acciones especiales pueden actualizarse al final de la escala de tiempo de correo electrónico del Explorador de amenazas, que es una nueva característica destinada a mejorar la experiencia de búsqueda para los administradores.
 
 3. **Vistas en el Explorador de amenazas:** en el **menú** Ver, elija **Todo el correo electrónico**.
 

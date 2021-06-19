@@ -23,12 +23,12 @@ ms.custom:
 description: Obtenga información sobre Microsoft Defender para Office 365 para archivos en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7aa375020ce05ca1d484bb7ed18b8cf7a6e7d04e
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 67bd2a0952ac630888b07eaf05d365736a0472ea
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932847"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028840"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
@@ -67,6 +67,7 @@ Para obtener más información acerca de la experiencia del usuario cuando se ha
 Los archivos identificados como malintencionados por Caja fuerte Attachments for SharePoint, OneDrive y Microsoft Teams aparecerán en informes de [Microsoft Defender](view-reports-for-mdo.md) para Office 365 y en el Explorador (y detecciones en tiempo [real).](threat-explorer.md)
 
 A partir de mayo de 2018, cuando un archivo se identifica como malintencionado por los datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams, el archivo también está disponible en cuarentena. Para obtener más información, vea [Manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
+
 
 ## <a name="keep-these-points-in-mind"></a>Tenga en cuenta estos puntos
 
