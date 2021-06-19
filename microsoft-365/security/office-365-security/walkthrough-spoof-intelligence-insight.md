@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a usar la directiva de intelige
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: a683ed93e4e483e63fe01281b32661f0b803d1ce
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793213"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029302"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Administrar remitentes suplantados con la directiva de inteligencia suplantada y la información de inteligencia suplantada en EOP
 
@@ -67,7 +67,7 @@ Puede administrar la inteligencia de suplantación en el Centro de seguridad y c
 - Puede habilitar, deshabilitar y configurar la configuración de la suplantación de identidad en las directivas contra suplantación de identidad. Para obtener instrucciones basadas en su suscripción, consulte uno de los siguientes temas:
 
   - [Configurar directivas contra suplantación de](configure-anti-phishing-policies-eop.md)identidad en EOP .
-  - [Configurar directivas contra suplantación de](configure-atp-anti-phishing-policies.md)identidad en Microsoft Defender para Office 365 .
+  - [Configurar directivas contra suplantación de](configure-mdo-anti-phishing-policies.md)identidad en Microsoft Defender para Office 365 .
 
 - Para obtener la configuración recomendada para la inteligencia de suplantación de identidad, consulte Configuración de directiva [contra suplantación de identidad](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)de EOP .
 
@@ -184,7 +184,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 1. En el Centro de & cumplimiento, vaya al Panel **de administración de** \> **amenazas.**
 
-2. En la **fila Insights,** busque uno de los siguientes elementos:
+2. En la **Ideas,** busque uno de los siguientes elementos:
 
    - **Probable suplantación** de dominio en los últimos siete días: esta información indica que la inteligencia suplantada está habilitada (está habilitada de forma predeterminada).
    - **Habilitar protección contra** suplantación: esta información indica que la inteligencia de suplantación está deshabilitada y hacer clic en la información le permite habilitar la inteligencia de suplantación.

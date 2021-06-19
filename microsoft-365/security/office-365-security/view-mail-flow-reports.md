@@ -19,12 +19,12 @@ description: Los administradores pueden obtener información sobre los informes 
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985509"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029482"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel Informes del Centro de & cumplimiento
 
@@ -34,6 +34,9 @@ ms.locfileid: "52985509"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+> [!NOTE]
+> La mayoría de los informes que se describen en este tema están disponibles en el Centro de administración de Exchange (EAC). Para obtener más información, vea [Informes de flujo de correo en el nuevo Centro de administración de Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports). El [informe de reglas de transporte de Exchange](view-email-security-reports.md#exchange-transport-rule-report) está disponible en el portal de Microsoft 365 Defender.
 
 Además de los informes de flujo [](mail-flow-insights-v2.md) de correo que están disponibles en el panel flujo de correo en el Centro de seguridad y cumplimiento de &, hay una variedad de informes de flujo de correo adicionales disponibles en el panel informes para ayudarle a supervisar su organización de Microsoft 365.
 
@@ -166,7 +169,7 @@ Para volver a la vista informe, haga clic **en Ver informe**.
 
 ## <a name="forwarding-report"></a>Informe de reenvío
 
-El **informe de reenvío** muestra los mensajes reenviados automáticamente de la organización a dominios externos desde buzones de Exchange Online. Los mensajes reenviados pueden suponer un riesgo de seguridad o cumplimiento, e indicar una cuenta comprometida.
+El **informe de reenvío** muestra los mensajes reenviados automáticamente a dominios externos desde Exchange Online buzones de correo. Los mensajes reenviados pueden suponer un riesgo de seguridad o cumplimiento, e indicar una cuenta comprometida.
 
 Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione \>  **Reenviar informe**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -421,7 +424,9 @@ Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos contien
 
 ## <a name="sent-and-received-email-report"></a>Informe de correo electrónico enviado y recibido
 
-El **informe de correo electrónico** enviado y recibido es un informe inteligente que muestra información sobre el correo electrónico entrante y saliente, incluidas detecciones de correo no deseado, malware y correo electrónico identificado como "bueno". La diferencia entre este informe y el informe de estado [de flujo](#mailflow-status-report) de correo es: este informe no incluye datos sobre los mensajes bloqueados por la protección perimetral. Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como un mensaje.
+El **informe de correo electrónico** enviado y recibido es un informe inteligente que muestra información sobre el correo electrónico entrante y saliente, incluidas detecciones de correo no deseado, malware y correo electrónico identificado como "bueno". La diferencia entre este informe y el informe de estado [de flujo](#mailflow-status-report) de correo es: este informe no incluye datos sobre los mensajes bloqueados por la protección perimetral.
+
+**Nota:** Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como un mensaje.
 
 La vista de agregado y la vista de detalles del informe permiten 90 días de filtrado.
 
@@ -550,7 +555,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+> Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

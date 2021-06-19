@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 407838c815a85ce7c73322a0de176970ee93e537
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878333"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029614"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -139,11 +139,12 @@ En el siguiente procedimiento se describe cómo configurar la directiva contra s
        - **Si la inteligencia de buzones detecta un** usuario suplantado: seleccione Mover mensaje a las carpetas de correo no deseado (Estándar) de los destinatarios o Poner en cuarentena <sup>\*</sup> el **mensaje** (estricto). 
        - **Si el mensaje se detecta** como suplantación: seleccione Mover mensaje a las **carpetas** de correo no deseado (Estándar) de los destinatarios o Poner en cuarentena **el mensaje** (Estricto).
      - **Sugerencias de seguridad & de indicadores:** Configure las siguientes opciones:
+       - **Mostrar el primer contacto consejo de seguridad**: Seleccionar (activar).
        - **Mostrar la suplantación de consejo de seguridad:** <sup>\*</sup> Seleccione (activar).
        - **Mostrar la suplantación de dominio consejo de seguridad** <sup>\*</sup> : Seleccionar (activar).
        - **Mostrar caracteres inusuales de suplantación de usuario consejo de seguridad** <sup>\*</sup> : Seleccionar (activar).
        - **Mostrar (?) para remitentes no** autenticados para suplantación de identidad: Seleccione (activar).
-       - **Mostrar etiqueta "via":** seleccione (activar) si esta configuración está disponible.
+       - **Mostrar etiqueta "via":** Seleccionar (activar).
 
      Cuando haya terminado, haga clic en **Guardar**.
 
@@ -151,7 +152,7 @@ En el siguiente procedimiento se describe cómo configurar la directiva contra s
 
 4. Haga **clic en Guardar** y, a continuación, en **Cerrar**
 
-Para obtener instrucciones detalladas para configurar directivas contra suplantación de identidad, vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) y [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+Para obtener instrucciones detalladas para configurar directivas contra suplantación de identidad, vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) y [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>Parte 3: Protección contra correo no deseado en EOP
 

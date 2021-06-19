@@ -19,12 +19,12 @@ description: Use el Explorador y las detecciones en tiempo real en el centro Mic
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12fb7f757912a8f1c87a57c386c6f698d777752a
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930300"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029590"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -513,12 +513,12 @@ Supongamos que desea ver los mensajes de correo electrónico que los usuarios de
    > [!div class="mx-imgBorder"]
    > ![Phish notificado por el usuario](../../media/EmailUserReportedReportType.png)
 
-El informe se actualiza para mostrar datos sobre los mensajes de correo electrónico que los usuarios de la organización notificaron como intento de suplantación de identidad. Puede usar esta información para llevar a cabo más análisis y, si es necesario, ajustar las directivas [contra suplantación](configure-atp-anti-phishing-policies.md)de identidad en Microsoft Defender para Office 365 .
+El informe se actualiza para mostrar datos sobre los mensajes de correo electrónico que los usuarios de la organización notificaron como intento de suplantación de identidad. Puede usar esta información para llevar a cabo más análisis y, si es necesario, ajustar las directivas [contra suplantación](configure-mdo-anti-phishing-policies.md)de identidad en Microsoft Defender para Office 365 .
 
 ## <a name="start-automated-investigation-and-response"></a>Iniciar la investigación y respuesta automatizadas
 
 > [!NOTE]
-> Las capacidades automatizadas de investigación y respuesta están disponibles en *Microsoft Defender Office 365 plan 2* y Office 365 *E5*.
+> Las capacidades automatizadas de investigación y respuesta están disponibles en *Microsoft Defender Office 365 plan 2* y *Office 365 E5*.
 
 [La investigación y respuesta automatizadas](automated-investigation-response-office.md) pueden ahorrarle al equipo de operaciones de seguridad el tiempo y el esfuerzo invertidos en investigar y mitigar los ciberataques. Además de configurar alertas que pueden desencadenar un libro de juegos de seguridad, puedes iniciar un proceso automatizado de investigación y respuesta desde una vista en el Explorador. Para obtener más información, [vea Ejemplo: un administrador de seguridad desencadena una investigación desde el Explorador](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
@@ -534,21 +534,21 @@ Además de los escenarios descritos en este artículo, hay muchas más opciones 
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
-Debe tener [Microsoft Defender para Office 365](defender-for-office-365.md) usar detecciones en tiempo real o explorador.
+Debe tener [Microsoft Defender para Office 365](defender-for-office-365.md) para usar detecciones en tiempo real o explorador.
 
-- El Explorador se incluye en Defender for Office 365 Plan 2.
-- El informe de detecciones en tiempo real se incluye en Defender for Office 365 Plan 1.
-- Planee asignar licencias para todos los usuarios que deberán estar protegidos por Defender para Office 365. Las detecciones de explorador y en tiempo real muestran datos de detección para usuarios con licencia.
+- Explorer se incluye en Defender para Office 365 Plan 2.
+- El informe de detecciones en tiempo real se incluye en Defender para Office 365 Plan 1.
+- Planee asignar licencias para todos los usuarios que deben estar protegidos por Defender para Office 365. Las detecciones de explorador y en tiempo real muestran datos de detección para usuarios con licencia.
 
 Para ver y usar detecciones en tiempo real o explorador, debe tener los permisos adecuados, como los concedidos a un administrador de seguridad o un lector de seguridad.
 
 - Para el Centro de & cumplimiento, debe tener uno de los siguientes roles asignados:
 
   - Administración de la organización
-  - Administrador de seguridad (se puede asignar en el centro Azure Active Directory de administración ( <https://aad.portal.azure.com> )
+  - Administrador de seguridad (se puede asignar en el Centro de administración de Azure Active Directory ( <https://aad.portal.azure.com> )
   - Lector de seguridad
 
-- Por Exchange Online, debe tener uno de los siguientes roles asignados en el Centro de administración de Exchange ( ) o <https://admin.protection.outlook.com/ecp/> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
+- Para Exchange Online, debe tener uno de los siguientes roles asignados en el Centro de administración de Exchange ( <https://admin.protection.outlook.com/ecp/> ) o Exchange Online [PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Administración de la organización
   - Administración de la organización de solo visualización
@@ -562,10 +562,10 @@ Para obtener más información sobre roles y permisos, consulte los siguientes r
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>Diferencias entre el Explorador de amenazas y las detecciones en tiempo real
 
-- El *informe de detecciones en* tiempo real está disponible en Defender for Office 365 Plan 1. *El Explorador de* amenazas está disponible en Defender para Office 365 Plan 2.
+- El *informe de detecciones en* tiempo real está disponible en Defender para Office 365 Plan 1. *El Explorador de* amenazas está disponible en Defender para Office 365 Plan 2.
 - El informe de detecciones en tiempo real permite ver las detecciones en tiempo real. El Explorador de amenazas también lo hace, pero también proporciona detalles adicionales para un ataque determinado.
 - Una *vista De todo* el correo electrónico está disponible en el Explorador de amenazas, pero no en el informe de detecciones en tiempo real.
-- En el Explorador de amenazas se incluyen más funciones de filtrado y acciones disponibles. Para obtener más información, vea [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- En el Explorador de amenazas se incluyen más funciones de filtrado y acciones disponibles. Para obtener más información, vea [Microsoft Defender para Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 ## <a name="other-articles"></a>Otros artículos
 

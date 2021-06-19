@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1ddb6da49e5e9f23aacf73caaeb91302ac9c19c9
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 2ca601c3c68df9f9f1cc4fb90bcfbe907850ce91
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028972"
+ms.locfileid: "53029734"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Introducción a Microsoft 365 Defender API
 
@@ -48,13 +48,10 @@ Use las API Microsoft 365 Defender para automatizar flujos de trabajo basados en
 
 Use la [API de streaming para](../defender-endpoint/raw-data-export.md) enviar alertas y eventos en tiempo real desde instancias a medida que se producen en un único flujo de datos.
 
-
 Junto con estas API Microsoft 365 Defender específicas, cada uno de [](api-articles.md) nuestros otros productos de seguridad expone API adicionales para ayudarle a aprovechar sus capacidades únicas.
-
 
 > [!NOTE]
 > La transición al portal unificado no debe afectar a los paneles de PowerBi basados en Microsoft Defender para las API de extremo. Puede seguir trabajando con las API existentes independientemente de la transición del portal interactivo.
-
 
 ## <a name="learn-more"></a>Más información
 

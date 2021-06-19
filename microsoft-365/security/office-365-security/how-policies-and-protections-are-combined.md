@@ -1,6 +1,6 @@
 ---
 title: Orden y prioridad de protección de correo electrónico
-keywords: security, malware, Microsoft 365, M365, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity
+keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, portal de Microsoft 365 Defender, Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para la identidad
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina qué directiva se aplica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539016"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029290"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de protección de correo electrónico
 
@@ -51,8 +51,8 @@ Hay dos factores principales que determinan qué directiva se aplica a un mensaj
   |2|Phishing|CAT:PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |3|Correo no deseado de alta confianza|CAT:HSPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |4 |Suplantación|CAT:SPOOF|[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|Suplantación de usuario (usuarios protegidos)|UIMP|[Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|Suplantación de dominio (dominios protegidos)|DIMP|[Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|Suplantación de usuario (usuarios protegidos)|UIMP|[Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Suplantación de dominio (dominios protegidos)|DIMP|[Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)|
   |7 |Correo no deseado|CAT:SPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |8 |Masivo|CAT:BULK|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |

@@ -19,12 +19,12 @@ description: Usa Microsoft Defender para Office 365 junto con Microsoft Defender
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e59f608a6f732f58002dfd2ff34666865ab23f3d
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 1d54e4ec40c636b8b3ea319e79cbad5005850952
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028886"
+ms.locfileid: "53029272"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Usar Microsoft Defender para Office 365 junto con Microsoft Defender para endpoint
 
@@ -48,7 +48,7 @@ En este ejemplo, puede ver que los destinatarios del mensaje de correo electrón
 
 - Su organización debe tener Microsoft Defender para Office 365 (o Office 365 E5) y Microsoft Defender para endpoint.
 
-- Debe ser un administrador global o tener un rol de administrador de seguridad (como administrador de seguridad) asignado en Microsoft 365. (Vea [Permisos en el Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md))
+- Debe ser un administrador global o tener un rol de administrador de seguridad (como administrador de seguridad) asignado en Microsoft 365. Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 - Debe tener acceso al [Explorador (o detecciones en tiempo real).](threat-explorer.md)
 
@@ -56,23 +56,23 @@ En este ejemplo, puede ver que los destinatarios del mensaje de correo electrón
 
 La integración de Microsoft Defender para Office 365 con Microsoft Defender para endpoint se configura en Defender para Endpoint y Defender para Office 365.
 
-1. Como administrador global o administrador de seguridad, vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. (Esto le lleva al portal de Microsoft 365 Defender).
+1. Como administrador global o como administrador de seguridad, <https://security.microsoft.com/threatexplorer> .
 
 2. En el panel de navegación, elija **Correo & explorador de** \> **colaboración**.
 
-3. En la esquina superior derecha de la pantalla, haga clic en **MDE Configuración**.
+3. En la **página Explorador,** en la esquina superior derecha de la pantalla, haga clic en **MDE Configuración**.
 
-4. En el cuadro de diálogo Conexión de Microsoft Defender para endpoint, active **Conectar a Microsoft Defender para Endpoint**.
+4. En el control desplegable de conexión de **Microsoft Defender** para puntos de conexión que aparece, activa Conectar a Microsoft **Defender para** Endpoint ( Toggle on ) y, a continuación, haz clic en Cerrar ![ icono ](../../media/scc-toggle-on.png) ![ ](../../media/m365-cc-sc-close-icon.png) **Cerrar**.
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="Conexión MDE":::
 
-5. Vaya al portal Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) .
+5. En el panel de navegación, elija **Configuración**. En la **Configuración,** elija **Extremos**
 
-6. En la barra de navegación, **elija Configuración**. A continuación, **en General**, elija **Características avanzadas**.
+6. En la **página Extremos que** se abre, elija Características **avanzadas**.
 
-7. Desplácese hacia abajo **hasta Office 365 de inteligencia** de amenazas y active la conexión.
+7. Desplácese hacia abajo **hasta Office 365 de inteligencia** de amenazas y actóla ( Activar ![ ](../../media/scc-toggle-on.png) ).
 
-   ![Office 365 de inteligencia de amenazas](../../media/mdatp-oatptoggle.png)
+   Cuando haya terminado, haga clic en **Guardar preferencias**.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

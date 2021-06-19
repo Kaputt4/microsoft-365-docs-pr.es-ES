@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a identificar los motivos por los que un mensaje de suplantación de identidad (phishing) se ha recibido en Microsoft 365 y qué hacer para evitar más mensajes de suplantación de identidad en el futuro.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d8f3f93b3fe1643467a12f90123b839addad2ed
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5093981c5f0166d3f53c3b6c7d24371312633c99
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537852"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029350"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 
@@ -44,7 +44,7 @@ Si la suscripción incluye Microsoft Defender para Office 365, puedes usar Offic
 
 - [Caja fuerte Datos adjuntos de Microsoft Defender para Office 365](set-up-safe-attachments-policies.md)
 
-- [Directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-atp-anti-phishing-policies.md). Tenga en cuenta que puede aumentar temporalmente los umbrales de **suplantación** de identidad avanzada en la directiva de **Estándar** a **Agresivo,** Más agresivo **o** Más **agresivo.**
+- [Directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md). Tenga en cuenta que puede aumentar temporalmente los umbrales de **suplantación** de identidad avanzada en la directiva de **Estándar** a **Agresivo,** Más agresivo **o** Más **agresivo.**
 
 Compruebe que estas características de Defender Office 365 estén activadas.
 
@@ -66,7 +66,7 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-Antispam-Report
 
 - El correo electrónico de remitentes suplantados (la dirección De del mensaje no coincide con el origen del mensaje) se clasifica como suplantación de identidad en Defender para Office 365. A veces, la suplantación de identidad es benigna y, a veces, los usuarios no quieren que los mensajes de un remitente suplantado específico se pongan en cuarentena. Para minimizar el impacto para los usuarios, revise periódicamente la información sobre la suplantación de inteligencia [,](learn-about-spoof-intelligence.md)la pestaña Suplantación en la lista de [permitidos/bloqueados](tenant-allow-block-list.md)de inquilinos y el informe de detecciones [de suplantación.](view-email-security-reports.md#spoof-detections-report)  Una vez que haya revisado los remitentes suplantados permitidos y bloqueados y haya realizado las invalidaciones  necesarias, puede tener confianza para configurar la inteligencia de suplantación de identidad en directivas contra suplantación de identidad [(phishing)](set-up-anti-phishing-policies.md#spoof-settings) para poner en cuarentena los mensajes sospechosos en lugar de entregarlos a la carpeta de correo no deseado del usuario.
 
-- Puede repetir el paso anterior para suplantación (dominio o usuario) en Microsoft Defender para Office 365. El informe de suplantación se encuentra en **Threat Management** \> **Dashboard** \> **Insights**.
+- Puede repetir el paso anterior para suplantación (dominio o usuario) en Microsoft Defender para Office 365. El informe de suplantación se encuentra en el Panel **de administración** \> **de** \> **amenazas Ideas**.
 
 - Revise periódicamente el informe [estado de protección contra amenazas](view-reports-for-mdo.md#threat-protection-status-report).
 

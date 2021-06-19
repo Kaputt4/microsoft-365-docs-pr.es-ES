@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 846043be72be741e60c09c85fba14dbf291612a1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964890"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029374"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -62,7 +62,7 @@ Para configurar directivas contra suplantación de identidad, consulte los artí
 
 - [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)
 
-- [Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-atp-anti-phishing-policies.md)
+- [Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)
 
 El resto de este artículo describe la configuración disponible en las directivas contra suplantación de identidad en EOP y Defender para Office 365.
 
@@ -131,9 +131,6 @@ La configuración del remitente no autenticado forma parte de la configuración 
 - Habilitar el símbolo de interrogación del remitente no autenticado **(?):** cuando esta configuración está activada, se agrega un signo de interrogación a  la foto del remitente en el cuadro De si el mensaje no pasa comprobaciones SPF o DKIM y el mensaje no pasa dmarc o autenticación compuesta [.](email-validation-and-authentication.md#composite-authentication) Cuando esta configuración está desactivada, el signo de interrogación no se agrega a la foto del remitente.
 
 - Habilitar la etiqueta **"via":** cuando esta configuración está activada, la etiqueta via (chris@contoso.com a través de fabrikam.com) se agrega en el cuadro De si el dominio de la dirección De (el remitente del mensaje que se muestra en los clientes de correo electrónico) es diferente del dominio de la firma DKIM o de la dirección <sup>\*</sup> MAIL **FROM.** <u></u> Para obtener más información acerca de estas direcciones, vea [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
-
-> [!NOTE]
-> Actualmente, la **configuración Habilitar la etiqueta "via"** no está disponible en todas las organizaciones. Si no tiene la opción Habilitar etiqueta **"via",** el signo de interrogación y la etiqueta via se controlan mediante el símbolo de interrogación Habilitar **unauthenticated sender (?)** en su organización. 
 
 Para evitar que el signo de interrogación o la etiqueta a través de la etiqueta se agregó a los mensajes de remitentes específicos, tiene las siguientes opciones:
 

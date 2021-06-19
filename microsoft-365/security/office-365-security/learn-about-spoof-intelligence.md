@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la suplantación de inteligencia en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94dc1e438f913c1103154afb8803ef4cf89f64af
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 08b9586edf565c4f69c51f732511d3a0956ae500
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028816"
+ms.locfileid: "53029254"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 
@@ -53,16 +53,13 @@ Cuando un remitente suplanta una dirección de correo electrónico, parece que e
   - El remitente está en una lista de correo (también conocida como lista de discusión) y la lista de correo retransmite el correo electrónico del remitente original a todos los participantes de la lista de correo.
   - Una empresa externa envía correo electrónico en nombre de otra compañía (por ejemplo, un informe automatizado o una compañía de software como servicio).
 
-
 Puede usar  la información de inteligencia suplantada en el portal de Microsoft 365 Defender para identificar rápidamente remitentes suplantados que le envían correo electrónico no autenticado (mensajes de dominios que no pasan comprobaciones de SPF, DKIM o DMARC) y permitir manualmente dichos remitentes.
-
 
 Al permitir que los remitentes conocidos envíen mensajes falsos desde ubicaciones conocidas, puede reducir los falsos positivos (buen correo electrónico marcado como malo). Al supervisar los remitentes suplantados permitidos, proporciona un nivel de seguridad adicional para evitar que los mensajes no seguros lleguen a la organización.
 
 Del mismo modo, puede revisar remitentes suplantados permitidos por la inteligencia de suplantación de identidad y bloquear manualmente a esos remitentes de la información de inteligencia suplantada.
 
 En el resto de este artículo se explica cómo usar la información de inteligencia de suplantación en el portal de Microsoft 365 Defender y en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online).
-
 
 > [!NOTE]
 >
@@ -89,7 +86,7 @@ En el resto de este artículo se explica cómo usar la información de inteligen
   - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
-- Habilitas y deshabilitas la inteligencia de suplantación de identidad en directivas contra suplantación de identidad en EOP y Microsoft Defender para Office 365. La inteligencia de suplantación está habilitada de forma predeterminada. Para obtener más información, vea [Configure anti-phishing policies in EOP o](configure-anti-phishing-policies-eop.md) [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+- Habilitas y deshabilitas la inteligencia de suplantación de identidad en directivas contra suplantación de identidad en EOP y Microsoft Defender para Office 365. La inteligencia de suplantación está habilitada de forma predeterminada. Para obtener más información, vea [Configure anti-phishing policies in EOP o](configure-anti-phishing-policies-eop.md) [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 - Para obtener la configuración recomendada para la inteligencia de suplantación de identidad, consulte Configuración de directiva [contra suplantación de identidad](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)de EOP .
 
@@ -126,7 +123,7 @@ En la **página Spoof intelligence insight** que aparece después de hacer clic 
   - **Externo:** el remitente suplantado está en un dominio externo.
 - **Action**: este valor es **Allowed** o **Blocked**:
   - **Permitido:** el dominio no pudo comprobar la autenticación explícita de correo [electrónico SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md)). Sin embargo, el dominio pasó nuestras comprobaciones implícitas de autenticación de correo electrónico ([autenticación compuesta](email-validation-and-authentication.md#composite-authentication)). Como resultado, no se ha realizado ninguna acción contra la suplantación en el mensaje.
-  - **Bloqueado:** los mensajes de la combinación  del dominio suplantado y la infraestructura de envío se marcan como malos por la inteligencia suplantada. La acción que se toma en los mensajes suplantados se controla mediante la directiva contra suplantación de identidad predeterminada o las directivas personalizadas contra suplantación de identidad (el valor predeterminado es **Mover** mensaje a la carpeta correo no deseado ). Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+  - **Bloqueado:** los mensajes de la combinación  del dominio suplantado y la infraestructura de envío se marcan como malos por la inteligencia suplantada. La acción que se toma en los mensajes suplantados se controla mediante la directiva contra suplantación de identidad predeterminada o las directivas personalizadas contra suplantación de identidad (el valor predeterminado es **Mover** mensaje a la carpeta correo no deseado ). Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 Puede hacer clic en los encabezados de columna seleccionados para ordenar los resultados.
 

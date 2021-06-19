@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las características de protección contra la suplantación de identidad en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538344"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029242"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protección contra suplantación de identidad en Microsoft 365
 
@@ -65,7 +65,7 @@ EOP (es decir, Microsoft 365 sin Microsoft Defender para Office 365) contiene ca
 
 Microsoft Defender para Office 365 contiene características contra phishing adicionales y más avanzadas:
 
-- Directivas contra suplantación de identidad en **Microsoft Defender para Office 365:** Configure la configuración de protección de suplantación para remitentes de mensajes y dominios de remitente específicos, configuración de inteligencia de buzones de correo y umbrales de suplantación de identidad avanzados ajustables. Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Para obtener más información acerca de las diferencias entre las directivas contra suplantación de identidad en EOP y las directivas contra suplantación de identidad en Defender para Office 365, consulte [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
+- Directivas contra suplantación de identidad en **Microsoft Defender para Office 365:** Configure la configuración de protección de suplantación para remitentes de mensajes y dominios de remitente específicos, configuración de inteligencia de buzones de correo y umbrales de suplantación de identidad avanzados ajustables. Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md). Para obtener más información acerca de las diferencias entre las directivas contra suplantación de identidad en EOP y las directivas contra suplantación de identidad en Defender para Office 365, consulte [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
 
 - **Vistas de** campaña: aprendizaje automático y otras heurísticas identifican y analizan los mensajes implicados en ataques de suplantación de identidad coordinados contra todo el servicio y la organización. Para obtener más información, vea [Vistas de campaña en Microsoft Defender para Office 365](campaigns.md).
 
