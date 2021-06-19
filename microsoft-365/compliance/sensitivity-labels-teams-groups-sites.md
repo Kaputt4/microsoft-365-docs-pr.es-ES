@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 8c19853730376e36ffe7ac136e7fc6036b8b5f12
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694406"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028984"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -163,20 +163,6 @@ No todas las aplicaciones admiten contextos de autenticación. Si un usuario con
     - Android: aún no compatible
 
 Limitaciones conocidas de esta versión preliminar:
-
-- Esta nueva característica aún se está implementando para algunos espacios empresariales. Si la directiva de acceso condicional del contexto de autenticación seleccionado no tiene efecto cuando un usuario accede al sitio, puede usar PowerShell para confirmar si la configuración es correcta y que se cumplen todos los requisitos previos. Tendrá que quitar la etiqueta de confidencialidad del sitio y, después, configurar el sitio para el contexto de autenticación mediante el cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) de la versión actual del [Shell de SharePoint Online Management](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online). Si este método funciona, espere unos días antes de volver a aplicar la etiqueta de confidencialidad.
-    
-    Para probar el contexto de autenticación con PowerShell:
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
-    ```
-    
-    Para quitar el contexto de autenticación a fin de que pueda aplicar la etiqueta de confidencialidad nuevamente:
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
-    ```
 
 - Para la aplicación de Sincronización de OneDrive, solo es compatible con OneDrive y no con otros sitios.
 
@@ -429,13 +415,19 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
 
 Si alguien carga un documento en un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de [mayor prioridad](sensitivity-labels.md#label-priority-order-matters) que la etiqueta de confidencialidad que se aplica al sitio, esta acción no está bloqueada. Por ejemplo, aplicó la etiqueta **general** a un sitio de SharePoint y alguien carga en este sitio un documento etiquetado como **confidencial**. Debido a que una etiqueta de confidencialidad con mayor prioridad identifica el contenido que es más confidencial que el contenido que tiene un orden de menor prioridad, esta situación podría ser un problema de seguridad.
 
-Aunque la acción no está bloqueada, se audita y genera automáticamente un correo electrónico a la persona que cargó el documento y el administrador del sitio. Como resultado, tanto el usuario como los administradores pueden identificar los documentos que no están alineados con la prioridad de las etiquetas y tomar las medidas necesarias. Por ejemplo, eliminar o mover el documento cargado del sitio.
+Aunque la acción no está bloqueada, se audita y, de forma predeterminada, genera un correo electrónico para la persona que cargó el documento y el administrador del sitio. Como resultado, tanto el usuario como los administradores pueden identificar los documentos que no están alineados con la prioridad de las etiquetas y tomar las medidas necesarias. Por ejemplo, eliminar o mover el documento cargado del sitio.
 
 No sería un problema de seguridad si el documento tiene una etiqueta de confidencialidad de menor prioridad que la etiqueta de confidencialidad aplicada al sitio. Por ejemplo, un documento con la etiqueta **general** se carga en un sitio con la etiqueta **confidencial**. En este escenario, no se generarán ni un evento de auditoría, ni un correo electrónico.
 
 Para buscar el registro de auditoría para este evento, busque **Desfase detectado de la confidencialidad del documento** en la categoría de las **actividades de archivos y páginas**.
 
 El correo electrónico generado automáticamente tiene el asunto **Etiqueta de confidencialidad no compatible detectado** y el mensaje de correo electrónico explica que la etiqueta no coincide con un vínculo al documento cargado y al sitio. También contiene un vínculo a la documentación en el que se explica cómo los usuarios pueden cambiar la etiqueta de confidencialidad. Actualmente, estos correos electrónicos automatizados no se pueden deshabilitar o personalizar.
+
+Para evitar este correo electrónico generado automáticamente, use el siguiente comando de PowerShell de [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite):
+
+```PowerShell
+Set-SPOTenant -BlockSendLabelMismatchEmail $True
+```
 
 Cuando alguien agrega o quita una etiqueta de confidencialidad a un sitio o grupo, estas actividades también se auditan, pero sin generar un correo electrónico automáticamente.
 
