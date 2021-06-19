@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a0191a52c64b32b314d4b2f2f36c85b060226ad6
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5e72db8d986ad096d6312f90530d9f9ff246afc3
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984657"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022299"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Notas de la versión de api de Microsoft Defender para endpoint
 
@@ -42,7 +42,7 @@ La siguiente información enumera las actualizaciones realizadas en Microsoft De
 
 ### <a name="06102021"></a>06.10.2021
 
-- Se agregó el nuevo método de la API de evaluación de exportación: evaluación de vulnerabilidades de software de exportación delta _(OData) Métodos_ de evaluación de exportación [y propiedades por dispositivo.](get-assessment-methods-properties.md)
+- Se agregó el nuevo método de la API de evaluación de exportación: evaluación de vulnerabilidades de software de _exportación delta (respuesta JSON) Exportar_ métodos de evaluación y propiedades por [dispositivo.](get-assessment-methods-properties.md)
 
 ### <a name="05252021"></a>05.25.2021
 

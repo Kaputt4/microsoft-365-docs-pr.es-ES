@@ -1,5 +1,5 @@
 ---
-title: Ver informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
+title: Ver informes de seguridad de correo electrónico
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el portal de Microsoft 365 Defender.
+description: Los administradores pueden aprender a buscar y usar los informes de seguridad de correo electrónico que están disponibles en el portal de Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d46aec8601d19234eed8682955ffef27b7e9b467
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985308"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022956"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 
@@ -56,20 +56,20 @@ El **informe Usuarios comprometidos** muestra el número de  cuentas  de usuario
 
 La vista de agregado muestra los datos de los últimos 90 días y la vista de detalles muestra los datos de los últimos 30 días.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico \>  \> **& informes de colaboración.** En **Usuarios en peligro,** haga clic **en Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/CompromisedUsers> .
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico \>  \> **& informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque **Usuarios** en peligro y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/CompromisedUsers> .
 
-Después de **hacer** clic en Ver detalles, puede filtrar  tanto el gráfico como la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
+En la **página Usuarios** en peligro, puede filtrar tanto  el gráfico como la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
 
 - **Date (UTC):** **Fecha de inicio y** fecha de **finalización.**
 - **Actividad**:
   - **Sospechoso:** la cuenta de usuario ha enviado un correo electrónico sospechoso y corre el riesgo de que se le restringa el envío de correo electrónico.
   - **Restringido:** la cuenta de usuario se ha restringido para enviar correo electrónico debido a patrones altamente sospechosos.
 
-Cuando haya terminado de filtrar, haga clic **en Aplicar** o **Cancelar**.
+Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Cancelar** o **Borrar filtros**.
 
 ![Vista Informe en el informe usuarios comprometidos](../../media/compromised-users-report-activity-view.png)
 
-En la tabla debajo del gráfico, puede ver los siguientes detalles:
+En la tabla de detalles debajo del gráfico, puede ver los siguientes detalles:
 
 - **Tiempo de creación**
 - **Nombre de usuario**
@@ -79,34 +79,25 @@ En la tabla debajo del gráfico, puede ver los siguientes detalles:
 
 El **informe de reglas de transporte de Exchange** muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico \>  \> **& informes de colaboración.** En la **regla de transporte de Exchange,** haga clic en Ver **detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/ETRRuleReport> .
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico \>  \> **& informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque la regla de transporte de **Exchange** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/ETRRuleReport> .
 
 ![Widget de regla de transporte de Exchange en la página Informes de colaboración & correo electrónico](../../media/transport-rule-report-widget.png)
 
-Después de hacer clic **en Ver detalles,** están disponibles los siguientes gráficos y datos:
+En la **página Informe de reglas de transporte de Exchange,** los gráficos y los datos disponibles se describen en las secciones siguientes.
 
-- **Ver datos por reglas de transporte de Exchange** \> **Desglose del gráfico por dirección:**  este  gráfico muestra el número de mensajes entrantes y salientes que se vieron afectados por las reglas de flujo de correo.
+### <a name="chart-breakdown-by-direction"></a>Desglose del gráfico por dirección
 
-- **Ver datos por reglas de transporte de Exchange** \> **Desglose del gráfico por gravedad:** este gráfico muestra el número de mensajes de gravedad **alta,** gravedad media y **gravedad** baja. El nivel de gravedad se establece como una acción en la regla (**Auditar** esta regla con el nivel de gravedad o _SetAuditSeverity_). Para obtener más información, vea [Acciones de regla de flujo de correo en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+![Vista Dirección de las reglas de transporte de Exchange en el informe de reglas de transporte de Exchange](../../media/transport-rule-report-etr-direction-view.png)
 
-- **Ver datos por reglas de transporte** \> de Dlp Exchange **Desglose del gráfico por dirección:**  este  gráfico muestra el número de mensajes entrantes y salientes que se vieron afectados por las reglas de flujo de correo de prevención de pérdida de datos (DLP).
+Si selecciona Desglose **de gráficos por dirección,** los siguientes gráficos estarán disponibles:
 
-- **Ver datos por reglas de transporte** \> de Dlp Exchange **Desglose del gráfico por gravedad:** esta vista muestra el número  de mensajes de gravedad **alta,** gravedad media y gravedad baja que se vieron afectados por las reglas de flujo de correo DLP.
+- **Ver datos por reglas de transporte de Exchange:** el número **de** mensajes entrantes y salientes que se vieron afectados por las reglas de flujo de correo. 
+- Ver datos por reglas de transporte  de  **Exchange DLP:** el número de mensajes entrantes y salientes que se vieron afectados por las reglas de flujo de correo de prevención de pérdida de datos (DLP).
 
-Para **ver los datos por selecciones** de reglas de transporte de Exchange, la siguiente información se muestra en la tabla de detalles debajo del gráfico:
-
-- **Fecha**
-- **Regla de transporte**
-- **Asunto**
-- **Dirección del remitente**
-- **Dirección de destinatario**
-- **Gravedad**
-- **Dirección**
-
-Para **ver datos por selecciones de** reglas de transporte de DLP Exchange, la siguiente información se muestra en la tabla de detalles debajo del gráfico:
+La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
 - **Fecha**
-- **Directiva DLP**
+- **Directiva DLP** (**Solo ver datos por reglas de transporte de Dlp Exchange)**
 - **Regla de transporte**
 - **Asunto**
 - **Dirección del remitente**
@@ -116,25 +107,59 @@ Para **ver datos por selecciones de** reglas de transporte de DLP Exchange, la s
 
 Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
 
-- **Fecha de inicio** y **fecha de finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Dirección:** **saliente** y **entrante**
 - **Gravedad:** **gravedad alta,** **gravedad media** y **gravedad baja**
 
-![Vista Informe en el informe de reglas de transporte de Exchange](../../media/transport-rule-report-report-view.png)
+Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Cancelar** o **Borrar filtros**.
+
+### <a name="chart-breakdown-by-severity"></a>Desglose del gráfico por gravedad
+
+![Vista gravedad de las reglas de transporte de Exchange en el informe de reglas de transporte de Exchange](../../media/transport-rule-report-etr-severity-view.png)
+
+Si selecciona Desglose **de gráficos por gravedad,** los siguientes gráficos están disponibles:
+
+- **Ver datos por reglas de transporte de Exchange:** el número de mensajes de gravedad **alta,** gravedad media y **gravedad** baja.  El nivel de gravedad se establece como una acción en la regla (**Auditar** esta regla con el nivel de gravedad o _SetAuditSeverity_). Para obtener más información, vea [Acciones de regla de flujo de correo en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+
+- **Ver datos por reglas de** transporte de Dlp Exchange: el  número de mensajes de gravedad **alta,** gravedad media y gravedad baja que se vieron afectados por las reglas de flujo de correo DLP.
+
+La siguiente información se muestra en la tabla de detalles debajo del gráfico:
+
+- **Fecha**
+- **Directiva DLP** (**Solo ver datos por reglas de transporte de Dlp Exchange)**
+- **Regla de transporte**
+- **Asunto**
+- **Dirección del remitente**
+- **Dirección de destinatario**
+- **Gravedad**
+- **Dirección**
+
+Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
+
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
+- **Dirección:** **saliente** y **entrante**
+- **Gravedad:** **gravedad alta,** **gravedad media** y **gravedad baja**
+
+Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Cancelar** o **Borrar filtros**.
+
+## <a name="forwarding-report"></a>Informe de reenvío
+
+> [!NOTE]
+> El **informe de reenvío** ya está disponible en el EAC. Para obtener más información, vea Informe de mensajes reenviados [automáticamente en el nuevo EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report).
 
 ## <a name="mailflow-status-report"></a>Informe de estado de flujo de correo
 
 El **informe de** estado de flujo de correo es un informe inteligente que muestra información sobre el correo electrónico entrante y saliente, las detecciones de correo no deseado, el malware, el correo electrónico identificado como "bueno" y la información sobre el correo electrónico permitido o bloqueado en el perímetro. Este es el único informe que contiene información de protección perimetral y muestra cuánto correo electrónico se bloquea antes de que exchange Online Protection (EOP) pueda evaluarlo. Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como cinco mensajes diferentes y no un mensaje.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico \>  \> **& informes de colaboración.** En **Resumen de estado de flujo de correo,** haga clic en Ver **detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/mailflowStatusReport> .
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico \>  \> **& informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque Resumen de estado de **flujo** de correo y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/mailflowStatusReport> .
 
 ![Widget de resumen de estado de flujo de correo en la página Informes de colaboración & correo electrónico](../../media/mail-flow-status-report-widget.png)
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>Vista de tipo para el informe de estado de flujo de correo
 
-Al abrir el informe, la **pestaña Tipo** está seleccionada de forma predeterminada. De forma predeterminada, esta vista contiene un gráfico y una tabla de datos configurada con los filtros siguientes:
+Al abrir el informe, la **pestaña Tipo** está seleccionada de forma predeterminada. De forma predeterminada, esta vista contiene un gráfico y una tabla de detalles que está configurada con los filtros siguientes:
 
-- **Fecha:** los últimos 7 días.
+- **Fecha (UTC)** Los últimos 7 días.
 - **Dirección del correo**:
   - **Entrante**
   - **Saliente**
@@ -152,7 +177,7 @@ El gráfico está organizado por los **valores Type.**
 
 Puede cambiar estos filtros haciendo clic en **Filtrar** o haciendo clic en un valor de la leyenda del gráfico.
 
-La tabla de datos contiene la siguiente información:
+La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
 - **Dirección**
 - **Tipo**
@@ -183,9 +208,9 @@ Si hace clic en la **pestaña Dirección,** se usan los mismos filtros predeterm
 
 El gráfico está organizado por valores **direction.**
 
-Puede cambiar estos filtros haciendo clic en **Filtrar** o haciendo clic en un valor de la leyenda del gráfico. Se usan los mismos filtros de **la vista** Tipo.
+Puede cambiar estos filtros haciendo clic en **Filtrar**. Se usan los mismos filtros de **la vista** Tipo.
 
-La tabla de datos contiene la misma información de la **vista** Tipo.
+La tabla de detalles contiene la misma información de la **vista** Tipo.
 
 La **categoría Elegir una categoría para obtener más detalles** sobre las selecciones y el comportamiento disponibles son los mismos que la **vista** Tipo.
 
@@ -201,19 +226,18 @@ Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos de ese 
 
 La **vista Embudo** muestra cómo las características de protección contra amenazas de correo electrónico de Microsoft filtran el correo electrónico entrante y saliente en su organización. Proporciona detalles sobre el recuento total de correo electrónico y cómo afectan a este recuento las características de protección contra amenazas configuradas, como la protección perimetral, el antimalware, la suplantación de identidad (phishing), el correo no deseado y la suplantación de identidad.
 
-Si hace clic en la **pestaña Embudo,** de forma predeterminada, esta vista contiene un gráfico y una tabla de datos configurada con los filtros siguientes:
+Si hace clic en la pestaña **Embudo,** de forma predeterminada, esta vista contiene un gráfico y una tabla de detalles configurada con los filtros siguientes:
 
 - **Fecha:** los últimos 7 días.
 
 - **Dirección**:
-
   - **Entrante**
   - **Saliente**
   - **Intra-org:** este recuento es para los mensajes enviados dentro de un espacio empresarial; Es decir, el remitente abc@domain.com al destinatario xyz@domain.com (se cuenta por separado de Entrante y Saliente).
 
-La vista de agregado y la vista de tabla de datos permiten 90 días de filtrado.
+La vista de agregado y la vista de tabla de detalles permiten 90 días de filtrado.
 
-Si hace clic **en Filtrar,** puede filtrar tanto el gráfico como la tabla de datos.
+Puede cambiar estos filtros haciendo clic en **Filtrar**. Se usan los mismos filtros de **la vista** Tipo.
 
 Este gráfico muestra el recuento de correo electrónico organizado por:
 
@@ -231,7 +255,7 @@ Este gráfico muestra el recuento de correo electrónico organizado por:
 
 Para ver el correo electrónico filtrado por EOP o Defender Office 365 por separado, haga clic en el valor de la leyenda del gráfico.
 
-La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
+La tabla de detalles contiene la siguiente información, que se muestra en orden de fecha descendente:
 
 - **Fecha**
 - **Correo electrónico total**
@@ -253,7 +277,7 @@ La tabla de datos contiene la siguiente información, que se muestra en orden de
   - **Detonación de dirección URL:** mensaje filtrado por una directiva Caja fuerte vínculos.
 - Protección posterior a la entrega y **ZAP (ATP) o ZAP (EOP):** purga automática de hora cero (ZAP) para malware, correo no deseado y phishing.
 
-Si selecciona una fila en la tabla de datos, se muestra un desglose adicional de los recuentos de correo electrónico en el menú desplegable.
+Si selecciona una fila en la tabla de detalles, se muestra un desglose adicional de los recuentos de correo electrónico en el menú desplegable.
 
 #### <a name="export-from-funnel-view"></a>Exportar desde la vista Embudo
 
@@ -272,19 +296,18 @@ Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos contien
 
 La **vista Tech es** similar a la vista **Embudo,** lo que proporciona más detalles pormenorizados para las características de protección contra amenazas configuradas. En el gráfico, puede ver cómo se clasifican los mensajes en las distintas etapas de protección contra amenazas.
 
-Si hace clic en la **pestaña Vista técnica,** de forma predeterminada, esta vista contiene un gráfico y una tabla de datos configurada con los filtros siguientes:
+Si hace clic en la **pestaña Vista técnica,** de forma predeterminada, esta vista contiene un gráfico y una tabla de detalles configurada con los filtros siguientes:
 
 - **Fecha:** los últimos 7 días.
 
 - **Dirección**:
-
   - **Entrante**
   - **Saliente**
   - **Intra-org:** este recuento es para mensajes dentro de un espacio empresarial, es decir, remitente abc@domain.com al destinatario xyz@domain.com (se cuenta por separado de Entrante y Saliente)
 
-La vista de agregado y la vista de tabla de datos permiten 90 días de filtrado.
+La vista de agregado y la vista de tabla de detalles permiten 90 días de filtrado.
 
-Si hace clic **en Filtrar,** puede filtrar tanto el gráfico como la tabla de datos.
+Puede cambiar estos filtros haciendo clic en **Filtrar**. Se usan los mismos filtros de **la vista** Tipo.
 
 En este gráfico se muestran los mensajes organizados en las siguientes categorías:
 
@@ -301,9 +324,9 @@ En este gráfico se muestran los mensajes organizados en las siguientes categor�
 
 Al pasar el mouse sobre una categoría del gráfico, puede ver el número de mensajes de esa categoría.
 
-La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
+La tabla de detalles contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Fecha**
+- **Fecha (UTC)**
 - **Correo electrónico total**
 - **Perímetro filtrado**
 - **Mensajes de regla:** mensajes filtrados debido a reglas de flujo de correo (también conocidas como reglas de transporte).
@@ -317,7 +340,7 @@ La tabla de datos contiene la siguiente información, que se muestra en orden de
 
 <sup>\*</sup>Defender para Office 365
 
-Si selecciona una fila en la tabla de datos, se muestra un desglose adicional de los recuentos de correo electrónico en el menú desplegable.
+Si selecciona una fila en la tabla de detalles, se muestra un desglose adicional de los recuentos de correo electrónico en el menú desplegable.
 
 #### <a name="export-from-tech-view"></a>Exportar desde la vista Tech
 
@@ -338,13 +361,13 @@ El **informe de detecciones** de malware muestra información sobre detecciones 
 
 El filtro de vista agregado permite 90 días, mientras que el filtro de tabla de detalles solo permite 10 días.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En **Malware detectado en el correo electrónico,** haga clic en Ver **detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/MalwareDetections> .
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la **página Informes de colaboración &** correo electrónico, busque Malware detectado en el correo **electrónico** y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/MalwareDetections> .
 
 ![Detecciones de malware en el widget de correo electrónico en la página Informes de & de colaboración](../../media/malware-detections-widget.png)
 
-Después de hacer clic **en Ver detalles,** puede filtrar tanto el gráfico como la tabla de detalles haciendo clic **en Filtrar** y seleccionando:
+En la **página Informe de detecciones de** malware, puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **Filtrar** y seleccionando uno de los siguientes valores:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Dirección:** **entrante** y **saliente**
 
 ![Vista Informe en el informe de detección de malware en el correo electrónico](../../media/malware-detections-report-view.png)
@@ -366,7 +389,7 @@ El **informe de latencia de** correo en Defender para Office 365 contiene inform
 ## <a name="spam-detections-report"></a>Informe de detecciones de correo no deseado
 
 > [!NOTE]
-> El **informe de detecciones de correo** no deseado desaparecerá el 30 de junio de 2021. La misma información está disponible en el informe [de estado de protección contra amenazas](#threat-protection-status-report).
+> El **informe de detecciones de correo** no deseado desaparecerá finalmente. La misma información está disponible en el informe [de estado de protección contra amenazas](#threat-protection-status-report).
 
 ## <a name="spoof-detections-report"></a>Informe de detecciones de suplantación
 
@@ -379,15 +402,23 @@ La vista de agregado del informe permite 45 días de filtrado, mientras que la v
 
 <sup>\*</sup> Con el tiempo, podrás usar hasta 90 días de filtrado.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En **Detecciones de suplantación,** haga clic **en Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/SpoofMailReportV2> .
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Detecciones** de suplantación de suplantación y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/SpoofMailReportV2> .
 
 ![Widget Detecciones de suplantación en la página Informes de colaboración & correo electrónico](../../media/spoof-detections-widget.png)
 
+El gráfico muestra la siguiente información:
+
+- **Pasar**
+- **Error**
+- **SoftPass**
+- **Ninguna**
+- **Otros**
+
 Al pasar el mouse sobre un día (punto de datos) en el gráfico, puede ver cuántos mensajes suplantados se detectaron y por qué.
 
-Después de hacer clic **en Ver** detalles, puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **Filtrar** y seleccionando uno o varios de los siguientes valores:
+En la **página Informe** de correo suplantado, puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **Filtrar** y seleccionando uno o varios de los siguientes valores:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Resultado**:
   - **Pasar**
   - **Error**
@@ -398,7 +429,7 @@ Después de hacer clic **en Ver** detalles, puede filtrar tanto el gráfico como
 
 ![Página de informe de correo suplantación en el portal Microsoft 365 Defender correo](../../media/spoof-detections-report-page.png)
 
-En la tabla debajo del gráfico, puede ver los siguientes detalles:
+En la tabla de detalles debajo del gráfico, puede ver los siguientes detalles:
 
 - **Fecha**
 - **Usuario suplantado**
@@ -413,6 +444,35 @@ En la tabla debajo del gráfico, puede ver los siguientes detalles:
 
 Para obtener más información acerca de los códigos de resultados de autenticación compuesta, vea [Encabezados de mensajes](anti-spam-message-headers.md)contra correo no deseado en Microsoft 365 .
 
+## <a name="submissions-report"></a>Informe de envíos
+
+El **informe Envíos** muestra información sobre los elementos que los administradores han notificado a Microsoft para su análisis. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Envíos** y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/adminSubmissionReport> . Para ir a [envíos de administrador en el portal de Microsoft 365 Defender,](admin-submission.md)haga clic **en Ir a Envíos**.
+
+![Widget Envíos en la página Informes de colaboración & correo electrónico](../../media/submissions-report-widget.png)
+
+El gráfico muestra la siguiente información:
+
+- **Pending**
+- **Completed**
+
+En la **página Envíos,** puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **Filtrar** y seleccionando uno o varios de los siguientes valores:
+
+- **Fecha notificada:** **Hora de inicio** y hora de **finalización**
+- **Tipo de envío:** **Correo** **electrónico, dirección URL** o **archivo**
+- **Identificador de envío**
+- **Id. de mensaje de red**
+- **Sender**
+- **Nombre**
+- **Enviado por**
+- **Motivo para enviar**: **No deseado,** **Phish**, **Malware** o Correo **no deseado**
+- **Estado de reescaneo:** **Pendiente** o **Completado**
+
+La tabla de detalles debajo del gráfico  muestra la misma información  y tiene las mismas opciones de grupo o personalizar columnas que en la pestaña Enviado para el análisis en Correo electrónico **& envíos** de  \> **colaboración.** Para obtener más información, vea [Ver envíos de administrador a Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
+
+![Página de informe de envíos en el portal Microsoft 365 Defender envío](../../media/submissions-report-page.png)
+
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
 El **informe de estado de** protección contra amenazas está disponible en EOP y Defender para Office 365; sin embargo, los informes contienen datos diferentes. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre archivos malintencionados detectados por [Caja fuerte Attachments for SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)y Microsoft Teams .
@@ -421,14 +481,14 @@ El informe proporciona el recuento de mensajes de correo electrónico con conten
 
 **Nota:** Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como cinco mensajes diferentes y no un mensaje.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En **Estado de protección contra amenazas,** haga clic en Ver **detalles**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Estado de protección contra **amenazas** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
 - Defender para Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
 
 ![Widget de estado de protección contra amenazas en la página Informes de colaboración & correo electrónico](../../media/threat-protection-status-report-widget.png)
 
-De forma predeterminada, después de hacer clic en **Ver detalles,** el gráfico muestra los datos de los últimos 7 días. Si hace clic **en Filtrar,** puede seleccionar un intervalo de fechas de 90 días (las suscripciones de prueba podrían estar limitadas a 30 días). La tabla de detalles permite filtrar durante 30 días.
+De forma predeterminada, el gráfico muestra los datos de los últimos 7 días. Si hace clic **en Filtrar** en la página **Informe** de estado de protección contra amenazas, puede seleccionar un intervalo de fechas de 90 días (las suscripciones de prueba podrían limitarse a 30 días). La tabla de detalles permite filtrar durante 30 días.
 
 Las vistas disponibles se describen en las secciones siguientes.
 
@@ -446,7 +506,7 @@ No hay ninguna tabla de detalles disponible debajo del gráfico.
 
 Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Detección:** **malware de correo** electrónico, **suplantación** de identidad de correo electrónico o **malware de contenido**
 - **Protegido por**: **MDO** (Defender para Office 365) o **EOP**
 - **Etiqueta:** filtre los resultados por usuarios o grupos a los que se aplicó la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
@@ -493,7 +553,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Detección**
 - **Protegido por**: **MDO** (Defender para Office 365) o **EOP**
 - **Dirección**
@@ -534,7 +594,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Detección**
 - **Protegido por**: **MDO** (Defender para Office 365) o **EOP**
 - **Dirección**
@@ -572,7 +632,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Detección**
 - **Protegido por**: **MDO** (Defender para Office 365) o **EOP**
 - **Dirección**
@@ -613,7 +673,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Detección**
 - **Protegido por**: **MDO** (Defender para Office 365) o **EOP**
 - **Dirección**
@@ -636,14 +696,14 @@ En la **vista Ver datos por \> malware** de contenido, la siguiente información
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Ubicación**
 - **Detectado por**
 - **Nombre de malware**
 
 Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Detección:** **motor antimalware o** **detonación de archivos**
 
 Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Cancelar** o **Borrar filtros**.
@@ -677,7 +737,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 
-- **Fecha:** **Fecha de inicio** y fecha de **finalización**
+- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
 - **Detección**
 - **Protegido por**: **MDO** (Defender para Office 365) o **EOP**
 - **Dirección**
@@ -695,13 +755,13 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 El **informe de malware** top muestra los distintos tipos de malware detectados por la protección [antimalware en EOP](anti-malware-protection.md).
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En **Malware superior,** haga clic **en Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/TopMalware> .
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Top **malware** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/TopMalware> .
 
 ![Widget de malware superior en la página Informes de colaboración & correo electrónico](../../media/top-malware-report-widget.png)
 
 Al pasar el mouse sobre una cuña en el gráfico circular, puede ver el nombre de un tipo de malware y cuántos mensajes se detectaron como que tienen ese malware.
 
-Después de hacer clic **en Ver detalles,** se muestra una versión más grande del gráfico circular en la página del informe. La tabla de detalles debajo del gráfico muestra la siguiente información:
+En la **página Informe de malware superior,** se muestra una versión más grande del gráfico circular en la página del informe. La tabla de detalles debajo del gráfico muestra la siguiente información:
 
 - **Malware superior**
 - **Count**
@@ -721,11 +781,11 @@ El **informe de protección contra amenazas de url** está disponible en Microso
 
 El  informe de mensajes notificados por el usuario muestra información acerca de los mensajes de correo electrónico que los usuarios han notificado como correo no deseado, intentos de suplantación de identidad o correo bueno mediante el complemento Report [Message o](enable-the-report-message-add-in.md) el complemento [Report Phishing](enable-the-report-phish-add-in.md).
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico & informes de colaboración \>  \> **Mensajes** \> **notificados por el usuario.** En **Mensajes notificados por el usuario,** haga clic **en Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/userSubmissionReport> . Para ir a [envíos de administrador en el portal de Microsoft 365 Defender,](admin-submission.md)haga clic **en Ir a Envíos**.
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Mensajes** notificados por el usuario y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/userSubmissionReport> . Para ir a [envíos de administrador en el portal de Microsoft 365 Defender,](admin-submission.md)haga clic **en Ir a Envíos**.
 
 ![Widget Mensajes notificados por el usuario en la página Informes de & de colaboración](../../media/user-reported-messages-widget.png)
 
-Después de **hacer** clic en Ver detalles, puede filtrar  tanto el gráfico como la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
+En **la página Mensajes** notificados por el usuario, puede  filtrar tanto el gráfico como la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el control desplegable que aparece:
 
 - **Fecha notificada:** **Hora de inicio** y hora de **finalización**
 - **Informe realizado por**
@@ -752,7 +812,7 @@ Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los sigu
 
 ![Informe de mensajes notificados por el usuario](../../media/user-reported-messages-report.png)
 
-En la tabla debajo del gráfico, puede ver los siguientes detalles:
+En la tabla de detalles debajo del gráfico, puede ver los siguientes detalles:
 
 - **Asunto del correo electrónico**
 - **Informe realizado por**
@@ -781,7 +841,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

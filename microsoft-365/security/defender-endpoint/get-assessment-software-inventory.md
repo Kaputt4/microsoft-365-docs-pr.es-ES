@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 639f850119498222684c4b3804b32a29dda3eac4
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984849"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022887"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportar evaluación de inventario de software por dispositivo
 
@@ -37,7 +37,7 @@ ms.locfileid: "52984849"
 >
 Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
 
-- [Export software inventory assessment **OData**](#1-export-software-inventory-assessment-odata)  La API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de _100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
+- [Exportar respuesta JSON de evaluación de **inventario de software**](#1-export-software-inventory-assessment-json-response) La API extrae todos los datos de la organización como respuestas Json. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de _100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
 
 - [Exportar evaluación de inventario de software **a través de archivos**](#2-export-software-inventory-assessment-via-files)  Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Almacenamiento de Azure. Esta API le permite descargar todos los datos de Almacenamiento de Azure de la siguiente manera:
 
@@ -51,7 +51,7 @@ Los datos recopilados (mediante _OData_ o a través de _archivos)_ son la instan
 >
 > A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
 
-## <a name="1-export-software-inventory-assessment-odata"></a>1. Exportar evaluación de inventario de software (OData)
+## <a name="1-export-software-inventory-assessment-json-response"></a>1. Evaluación del inventario de software de exportación (respuesta JSON)
 
 ### <a name="11-api-method-description"></a>Descripción del método de api 1.1
 
@@ -88,13 +88,15 @@ GET /api/machines/SoftwareInventoryByMachine
 
 >[!NOTE]
 >
->-Cada registro tiene aproximadamente 0,5 KB de datos. Debe tener esto en cuenta al elegir el parámetro pageSize correcto.
-
->-Las propiedades definidas en la tabla siguiente se enumeran alfabéticamente, por identificador de propiedad. Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en esta tabla.
+>- Cada registro tiene aproximadamente 0,5 KB de datos. Debe tener esto en cuenta al elegir el parámetro pageSize correcto.
 >
->-Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
+>- Las propiedades definidas en la tabla siguiente se enumeran alfabéticamente, por identificador de propiedad. Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en esta tabla.
+>
+>- Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
 
-Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
+<br/>
+
+Propiedad (ID) | Tipo de datos | Description | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 DeviceId | string | Identificador único del dispositivo en el servicio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName | string | Nombre de dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com
@@ -246,13 +248,15 @@ GET /api/machines/SoftwareInventoryExport
 
 >[!Note]
 >
->- Los archivos son archivos comprimidos de gzip & en formato Json de varias líneas.
+>- Los archivos son archivos comprimidos de gzip & formato JSON de varias líneas.
 >
 >- Las direcciones URL de descarga solo son válidas durante 3 horas. De lo contrario, puede usar el parámetro.
 >
->_ Para obtener la velocidad máxima de descarga de los datos, puede asegurarse de que está descargando desde la misma región de Azure en la que residen los datos.
->
-Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
+>- Para obtener la velocidad máxima de descarga de los datos, puede asegurarse de que está descargando desde la misma región de Azure en la que residen los datos.
+
+<br/><br/>
+
+Propiedad (ID) | Tipo de datos | Description | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos | cadena de \[ matriz\] | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
 GeneratedTime | string | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z ]

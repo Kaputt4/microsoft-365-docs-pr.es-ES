@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 567916e9e1a1d96d77bc6c187b384a1ec3be72a5
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782914"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022720"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -40,13 +40,13 @@ Las alertas son la base de todos los incidentes e indican la aparición de event
 
 En Microsoft 365 Defender, las alertas relacionadas se agregan juntas para formar [incidentes](incidents-overview.md). Los incidentes siempre proporcionarán el contexto más amplio de un ataque, sin embargo, el análisis de alertas puede ser útil cuando se requiere un análisis más profundo. 
 
-La **cola De alertas** muestra el conjunto actual de alertas. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
+La **cola De alertas** muestra el conjunto actual de alertas. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Ejemplo de la cola de alertas":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Ejemplo de la cola de alertas":::
 
 Las alertas de diferentes soluciones de seguridad de Microsoft como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft 365 Defender aparecen aquí.
 
-De forma predeterminada, la cola de alertas del centro de seguridad Microsoft 365 muestra las alertas nuevas y en curso de los últimos 30 días. La alerta más reciente está en la parte superior de la lista para que pueda verla primero. 
+De forma predeterminada, la cola de alertas del portal de Microsoft 365 Defender muestra las alertas nuevas y en curso de los últimos 30 días. La alerta más reciente está en la parte superior de la lista para que pueda verla primero. 
 
 En la cola de alertas predeterminada, puede seleccionar Filtros **para** ver un panel **Filtros,** desde el que puede especificar un subconjunto de las alertas. Por ejemplo:
 
@@ -66,7 +66,7 @@ Puede filtrar alertas según estos criterios:
 
 Para ver la página de alerta principal, seleccione el nombre de la alerta. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el centro Microsoft 365 seguridad":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el portal Microsoft 365 Defender datos":::
 
 También puede seleccionar la acción **Abrir la página de alerta** principal en el panel **Administrar** alerta.
 
@@ -75,12 +75,12 @@ Una página de alerta se compone de estas secciones:
 - Historia de alertas, que es la cadena de eventos y alertas relacionadas con esta alerta en orden cronológico
 - Detalles de resumen
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el centro Microsoft 365 seguridad":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el portal Microsoft 365 Defender datos":::
 
 A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (**...**) junto a cualquier entidad para ver las acciones disponibles, como abrir la página de alerta o vincular la alerta a otro incidente.
 
 ### <a name="alert-sources"></a>Orígenes de alertas
-Microsoft 365 Las alertas de Defender pueden venir de soluciones como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft Cloud App Security. Es posible que observe alertas con caracteres anteponer en la alerta. En la tabla siguiente se proporcionan instrucciones que le ayudarán a comprender la asignación de orígenes de alerta en función del carácter anteponer a la alerta.
+Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft Cloud App Security. Es posible que observe alertas con caracteres anteponer en la alerta. En la tabla siguiente se proporcionan instrucciones que le ayudarán a comprender la asignación de orígenes de alerta en función del carácter anteponer a la alerta.
 
 > [!NOTE]
 > - Los GUID antediados son específicos solo para experiencias unificadas, como la cola de alertas unificadas, la página de alertas unificadas, la investigación unificada y el incidente unificado.<br>
@@ -94,13 +94,11 @@ Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detecci
 Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
-
-
 ### <a name="analyze-affected-assets"></a>Analizar activos afectados
 
 La **sección Acciones realizadas** tiene una lista de activos afectados, como buzones, dispositivos y usuarios afectados por esta alerta. 
 
-También puede seleccionar Ver **en el centro** de  acciones para ver la pestaña Historial del Centro de acciones en el centro de Microsoft 365 seguridad.  
+También puede seleccionar Ver **en el centro** de  acciones para ver la pestaña Historial del centro de acciones en el portal Microsoft 365 Defender acción.  
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Seguimiento del rol de una alerta en el artículo de alerta
 
@@ -143,7 +141,7 @@ Desde este panel, también puede realizar estas acciones adicionales:
 
 Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Ejemplo de las acciones de una alerta en el centro de Microsoft 365 seguridad":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Ejemplo de las acciones de una alerta en el portal de Microsoft 365 Defender web":::
 
 La lista de acciones adicionales depende del tipo de alerta.
 
@@ -157,7 +155,7 @@ Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

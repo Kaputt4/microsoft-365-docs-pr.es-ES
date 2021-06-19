@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5742c121b73eb8709e770c9b2c4da6dbfd942276
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ad8b2030da4fb4815eb71ca53fb2dbac67a05d79
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984861"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022395"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exportar evaluación de configuración segura por dispositivo
 
@@ -39,7 +39,7 @@ Devuelve todas las configuraciones y su estado, por dispositivo.
 
 Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
 
-- [Export secure configuration assessment **OData:**](#1-export-secure-configuration-assessment-odata)la API extrae todos los datos de la organización como respuestas Json, siguiendo el protocolo OData. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de _100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
+- [Exportar respuesta **JSON** de evaluación de](#1-export-secure-configuration-assessment-json-response)configuración segura: la API extrae todos los datos de la organización como respuestas Json. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de _100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
 
 - [Exportar la evaluación de configuración **segura a través**](#2-export-secure-configuration-assessment-via-files)de archivos: esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Almacenamiento de Azure. Esta API le permite descargar todos los datos de Almacenamiento de Azure de la siguiente manera:
 
@@ -53,7 +53,7 @@ Los datos recopilados (mediante _OData_ o a través de _archivos)_ son la instan
 >
 > A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
 
-## <a name="1-export-secure-configuration-assessment-odata"></a>1. Exportar evaluación de configuración segura (OData)
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Exportar evaluación de configuración segura (respuesta JSON)
 
 ### <a name="11-api-method-description"></a>Descripción del método de api 1.1
 
@@ -95,7 +95,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 >- Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
 >
 
-Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
+Propiedad (ID) | Tipo de datos | Description | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 ConfigurationCategory | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad | Controles de seguridad
 ConfigurationId | string | Identificador único para una configuración específica | scid-10000
@@ -255,7 +255,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 >
 >- Para obtener la velocidad máxima de descarga de los datos, puede asegurarse de que está descargando desde la misma región de Azure en la que residen los datos.
 >
-Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
+Propiedad (ID) | Tipo de datos | Description | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos | cadena de \[ matriz\] | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
 GeneratedTime | string | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z ]
