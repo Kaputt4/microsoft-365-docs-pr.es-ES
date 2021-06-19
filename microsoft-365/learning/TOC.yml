@@ -1,14 +1,14 @@
-- name: Microsoft Viva Learning (versión preliminar)
+- name: Aprendizaje Microsoft Viva (versión preliminar)
   href: index.md
-- name: Introducción a Viva Learning (versión preliminar)
+- name: Introducción a Aprendizaje Microsoft Viva (versión preliminar)
   items:
-    - name: Introducción a Viva Learning (versión preliminar)
+    - name: Información general sobre Aprendizaje Microsoft Viva
       href: overview-viva-learning.md
 - name: Configuración y administración
   items:
-    - name: Configurar en el Centro Teams administración
+    - name: Configuración en el Centro de administración de Teams
       href: set-up-teams-admin-center.md
-    - name: Configurar orígenes de contenido de aprendizaje
+    - name: Configuración de orígenes de contenido de aprendizaje
       href: content-sources-365-admin-center.md
     - name: Configurar SharePoint como origen de contenido
       href: configure-sharepoint-content-source.md
