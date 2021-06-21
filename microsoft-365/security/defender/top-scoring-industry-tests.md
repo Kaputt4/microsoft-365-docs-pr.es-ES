@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934398"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028504"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuaciones más altas en las pruebas del sector
 
@@ -43,7 +43,7 @@ Una parte fundamental del el enfoque de pruebas de MITRE es evitar los ataques d
 
 - Evaluación basada en ATT&CK de Microsoft 365 Defender (mayo de 2020): [Detección inicial en el mundo real](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender ha proporcionado casi un 100 % de cobertura a través de las fases de la cadena de ataque. Ha proporcionado una visibilidad inicial integrada en las actividades de atacantes. La visibilidad reduce considerablemente el trabajo manual del centro de operaciones de seguridad y las soluciones de proveedores que dependían de cambios específicos en la configuración. Microsoft 365 Defender también tuvo los fallos de visibilidad más pequeños, lo que reduce la capacidad del atacante para operar sin ser detectado.
+ Microsoft 365 Defender ha proporcionado casi un 100 % de cobertura a través de las fases de la cadena de ataque. Ha proporcionado una visibilidad inicial integrada en las actividades de atacantes. La visibilidad reduce considerablemente el trabajo manual del centro de operaciones de seguridad y las soluciones de proveedores que dependían de cambios específicos en la configuración. Microsoft 365 Defender también tuvo los fallos de visibilidad más pequeños, lo que reduce la capacidad del atacante para operar sin ser detectado.
 
 ## <a name="next-generation-protection"></a>Protección de última generación
 
@@ -57,7 +57,7 @@ Las pruebas de revisión y certificación de productos AV-TEST se realizan en tr
 
 - Prueba AV-TEST de usuario empresarial de noviembre y diciembre de 2020: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**Más reciente**</sup>
 
-    Antivirus de Microsoft Defender obtuvo una Puntuación de protección perfecta de 6,0/6,0, con un 100 % en noviembre y diciembre. Se usaron 11 382 muestras de malware.
+    Antivirus de Microsoft Defender obtuvo una Puntuación de protección perfecta de 6,0/6,0, con un 100 % en noviembre y diciembre. Se usaron 11 382 muestras de malware.
 
 - Prueba AV-TEST de usuario empresarial de septiembre y octubre de 2020: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
 
@@ -89,7 +89,7 @@ SE Labs prueba una variedad de soluciones usadas por productos y servicios para 
 
 - Protección de punto de conexión empresarial (octubre - diciembre de 2020): [Premio AAA](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**Más reciente**</sup>
 
-    El producto de protección de nueva generación de Microsoft ha detenido todos los ataques públicos y dirigidos. Antivirus de Microsoft Defender ha obtenido tan buenos resultados con su capacidad para bloquear direcciones URL malintencionadas, controlar vulnerabilidades de seguridad y clasificar correctamente aplicaciones y sitios web legítimos.
+    El producto de protección de nueva generación de Microsoft ha detenido todos los ataques públicos y dirigidos. Antivirus de Microsoft Defender ha obtenido excelentes resultados con su capacidad para bloquear direcciones URL malintencionadas, controlar vulnerabilidades de seguridad y clasificar correctamente aplicaciones y sitios web legítimos.
 
 - Protección de punto de conexión empresarial (julio - septiembre de 2020): [Premio AAA](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 

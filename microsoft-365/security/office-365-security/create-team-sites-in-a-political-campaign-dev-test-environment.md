@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Resumen: Cree sitios de grupo de SharePoint Online públicos, privados, confidenciales o extremadamente confidenciales en el entorno de desarrollo y prueba de una campaña política.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f680cfb30de5b6904e5fa489cca368550195b4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205982"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028780"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
 
@@ -33,12 +33,12 @@ ms.locfileid: "51205982"
 **Se aplica a**
 
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
-- 
+
  **Resumen:** Cree sitios de grupo de SharePoint Online públicos, privados, confidenciales o extremadamente confidenciales en un entorno de desarrollo y prueba para una campaña política. 
    
 Siga las instrucciones de este artículo para crear un entorno de desarrollo y prueba que incluya los cuatro tipos distintos de sitios de grupo de SharePoint Online para la solución de [Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md). Estos sitios se describen en detalle en el tema 10, titulado **SharePoint y OneDrive para la Empresa**.
 
-## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y prueba de campaña política
+## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y prueba de campaña política
 
 En primer lugar, siga las instrucciones de [Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) para crear las suscripciones, los usuarios y los grupos.
 
@@ -46,7 +46,7 @@ En primer lugar, siga las instrucciones de [Configurar grupos y usuarios en un e
 
 En esta fase se crean las etiquetas para los diferentes niveles de seguridad de las carpetas de documentos de sitios de grupo de SharePoint Online.
 
-1. Si es necesario, inicie sesión en el centro de administración con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Dónde iniciar sesión en Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si es necesario, inicie sesión en el Centro de administración con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Dónde iniciar sesión en Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. En la pestaña **Inicio de Microsoft Office**, haga clic en el icono **Administrador**.
 
@@ -84,7 +84,7 @@ En esta fase se crean las etiquetas para los diferentes niveles de seguridad de 
 
 17. En el panel **Revise su configuración**, haga clic en **Publicar etiquetas** y luego en **Cerrar**.
 
-## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>Fase 3: Crear los sitios de grupo de SharePoint Online
+## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>Fase 3: Crear los sitios de grupo de SharePoint Online
 
 En esta fase se crean y configuran los sitios de grupo de SharePoint Online para la campaña política correspondientes a los cuatro tipos de sitios de grupo de SharePoint Online.
 
@@ -118,7 +118,7 @@ Después, configure la carpeta de documentos del sitio de grupo Toda la campaña
 
 4. En **Configuración-Aplicar etiqueta**, seleccione **Interna** y haga clic en **Guardar**.
 
-### <a name="campaign-project-1-team-site"></a>Sitio de grupo del proyecto de campaña 1
+### <a name="campaign-project-1-team-site"></a>Sitio de grupo del proyecto de campaña 1
 
 Para crear un sitio de grupo privado de línea base de SharePoint Online para un proyecto dentro de la organización, haga lo siguiente:
 
@@ -130,17 +130,17 @@ Para crear un sitio de grupo privado de línea base de SharePoint Online para un
 
 4. En la página **Crear un sitio**, haga clic en **Sitio de grupo**.
 
-5. En **Nombre del sitio**, escriba **Proyecto de campaña 1**.
+5. En **Nombre del sitio**, escriba **Proyecto de campaña 1**.
 
-6. En **Team site description** (Descripción del sitio de grupo), escriba **Sitio de SharePoint para el proyecto de campaña 1**.
+6. En **Team site description** (Descripción del sitio de grupo), escriba **Sitio de SharePoint para el proyecto de campaña 1**.
 
 7. En **Configuración de privacidad**, seleccione **Private - only members can access this site** (Privado: solo los miembros tienen acceso a este sitio) y haga clic en **Siguiente**.
 
 8. En el panel **Who do you want to add?** (Usuarios que quiere agregar), haga clic en **Finalizar**.
 
-Después, configure la carpeta de documentos del sitio de grupo Proyecto de campaña 1 con la etiqueta Privada.
+Después, configure la carpeta de documentos del sitio de grupo Proyecto de campaña 1 con la etiqueta Privada.
 
-1. En la pestaña **Proyecto de campaña 1-Inicio** del explorador, haga clic en **Documentos**.
+1. En la pestaña **Proyecto de campaña 1-Inicio** del explorador, haga clic en **Documentos**.
 
 2. Haga clic en el icono de configuración y luego en **Configuración de biblioteca**.
 
@@ -374,7 +374,7 @@ Siga las instrucciones de [Activate Azure RMS with the Microsoft 365 admin cente
 
 Después, siga estos pasos para configurar Azure Information Protection con una nueva directiva con ámbito y la subetiqueta de protección y permisos:
 
-1. Inicie sesión en el centro de administración con una cuenta que tenga el rol de Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en el Centro de administración con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. En una pestaña independiente del explorador, vaya a Azure Portal (<https://portal.azure.com>).
 
