@@ -1,5 +1,5 @@
 ---
-title: Datos adjuntos seguros
+title: Archivos adjuntos seguros
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Caja fuerte datos adjuntos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 127d862d235abc4cd81f62679b97077c7a80bd70
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625010"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054389"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Caja fuerte Datos adjuntos de Microsoft Defender para Office 365
 
@@ -56,7 +56,7 @@ En la tabla siguiente se describen escenarios para los datos adjuntos de Caja fu
 Caja fuerte El examen de datos adjuntos se lleva a cabo en la misma región donde reside Microsoft 365 datos. Para obtener más información acerca de la geografía del centro de datos, [vea ¿Dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> Las siguientes características se encuentran en la configuración global de las directivas Caja fuerte datos adjuntos en el Centro de & cumplimiento. Sin embargo, estas opciones de configuración están habilitadas o deshabilitadas globalmente y no requieren directivas Caja fuerte datos adjuntos:
+> Las siguientes características se encuentran en la configuración global de las directivas Caja fuerte datos adjuntos en el portal Microsoft 365 Defender datos adjuntos. Sin embargo, estas opciones de configuración están habilitadas o deshabilitadas globalmente y no requieren directivas Caja fuerte datos adjuntos:
 >
 > - [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 > - [Documentos seguros en Microsoft 365 E5](safe-docs.md)
@@ -75,8 +75,8 @@ En esta sección se describe la configuración de las Caja fuerte de datos adjun
   |---|---|---|
   |**Desactivado**|Los datos adjuntos no se examinan en busca de malware Caja fuerte datos adjuntos. Los mensajes aún se examinan en busca de malware mediante la [protección antimalware en EOP](anti-malware-protection.md).|Desactiva el examen de los destinatarios seleccionados. <p> Evite retrasos innecesarios en el enrutamiento del correo interno. <p> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos Caja fuerte de destinatarios que solo reciben mensajes de remitentes de confianza.**|
   |**Supervisar**|Entrega mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que sucede con el malware detectado. <p> La entrega de mensajes seguros puede retrasarse debido a Caja fuerte análisis de datos adjuntos.|Vea dónde va el malware detectado en su organización.|
-  |**Bloquear**|Impide que se entreguen los mensajes con datos adjuntos de malware detectados. <p> Los mensajes [se ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no los usuarios finales) pueden revisar, liberar o eliminar los mensajes. <p> Bloquea automáticamente las instancias futuras de los mensajes y datos adjuntos. <p> La entrega de mensajes seguros puede retrasarse debido a Caja fuerte análisis de datos adjuntos.|Protege su organización de ataques repetidos con los mismos datos adjuntos de malware. <p> Este es el valor predeterminado y el valor recomendado en Directivas de seguridad [preestablecidas](preset-security-policies.md)estándar y estricta.|
-  |**Replace**|Quita los datos adjuntos de malware detectados. <p> Notifica a los destinatarios que se han quitado los datos adjuntos. <p>  Los mensajes [se ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no los usuarios finales) pueden revisar, liberar o eliminar los mensajes. <p> La entrega de mensajes seguros puede retrasarse debido a Caja fuerte análisis de datos adjuntos.|Aumentar la visibilidad de los destinatarios que se quitaron los datos adjuntos debido al malware detectado.|
+  |**Bloquear**|Impide que se entreguen los mensajes con datos adjuntos de malware detectados. <p> Los mensajes [se ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes. <p> Bloquea automáticamente las instancias futuras de los mensajes y datos adjuntos. <p> La entrega de mensajes seguros puede retrasarse debido a Caja fuerte análisis de datos adjuntos.|Protege su organización de ataques repetidos con los mismos datos adjuntos de malware. <p> Este es el valor predeterminado y el valor recomendado en Directivas de seguridad [preestablecidas](preset-security-policies.md)estándar y estricta.|
+  |**Replace**|Quita los datos adjuntos de malware detectados. <p> Notifica a los destinatarios que se han quitado los datos adjuntos. <p>  Los mensajes [se ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes. <p> La entrega de mensajes seguros puede retrasarse debido a Caja fuerte análisis de datos adjuntos.|Aumentar la visibilidad de los destinatarios que se quitaron los datos adjuntos debido al malware detectado.|
   |**Entrega dinámica**|Entrega mensajes inmediatamente, pero reemplaza los datos adjuntos por marcadores de posición hasta Caja fuerte se completa el examen de datos adjuntos. <p> Para obtener más información, vea la sección [Entrega dinámica en Caja fuerte de datos adjuntos](#dynamic-delivery-in-safe-attachments-policies) más adelante en este artículo.|Evite retrasos en los mensajes mientras protege a los destinatarios de archivos malintencionados. <p> Permitir que los destinatarios obtengan una vista previa de los datos adjuntos en modo seguro mientras se realiza el examen.|
   |
 
@@ -104,11 +104,11 @@ En esta sección se describe la configuración de las Caja fuerte de datos adjun
 
 La acción Entrega dinámica en Caja fuerte directivas de datos adjuntos busca eliminar los retrasos en la entrega de correo electrónico que puedan deberse al examen Caja fuerte datos adjuntos. El cuerpo del mensaje de correo electrónico se entrega al destinatario con un marcador de posición para cada dato adjunto. El marcador de posición permanece hasta que se encuentra que los datos adjuntos son seguros y, a continuación, los datos adjuntos están disponibles para abrirse o descargarse.
 
-Si se encuentra que un dato adjunto es malintencionado, el mensaje se pone en cuarentena. Solo los administradores (no los usuarios finales) pueden revisar, liberar o eliminar los mensajes que se han puesto en cuarentena mediante Caja fuerte análisis de datos adjuntos. Para obtener más información, vea [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+Si se encuentra que un dato adjunto es malintencionado, el mensaje se pone en cuarentena. Solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes que se han puesto en cuarentena mediante Caja fuerte análisis de datos adjuntos. Para obtener más información, vea [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
 La mayoría de los archivos PDF Office documentos pueden obtener una vista previa en modo seguro mientras Caja fuerte análisis de datos adjuntos está en curso. Si un archivo adjunto no es compatible con el previewer de entrega dinámica, los destinatarios verán un marcador de posición para los datos adjuntos hasta que se complete Caja fuerte análisis de datos adjuntos.
 
-Si usas un dispositivo móvil y los ARCHIVOS PDF no se están representando en el previewer de entrega dinámica en el dispositivo móvil, intenta abrir el mensaje en Outlook en la web (anteriormente conocido como Outlook Web App) con el explorador móvil.
+Si usas un dispositivo móvil y los ARCHIVOS PDF no se están representando en el previewer de entrega dinámica en el dispositivo móvil, intenta abrir el mensaje en Outlook en la Web (anteriormente conocido como Outlook Web App) con el explorador móvil.
 
 Estas son algunas consideraciones para la entrega dinámica y los mensajes reenviados:
 

@@ -13,12 +13,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Obtenga información sobre cómo administrar contratos mediante una Microsoft 365 de SharePoint Syntex, listas de SharePoint, Microsoft Teams y Power Automate.
-ms.openlocfilehash: 352ebd1b9170aaf7829c414e87f7a79c4f17a1df
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843775"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054760"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Administrar contratos con una solución de Microsoft 365
 
@@ -56,7 +56,7 @@ Esta guía de solución de administración de contratos incluye cuatro component
 
   ![Diagrama de la solución que muestra el flujo de trabajo para cargar documentos, extraer datos, notificar a las partes interesadas y aprobar o rechazar el contrato.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Los documentos se cargan en una SharePoint de documentos. Se SharePoint modelo de comprensión de documentos Syntex a la biblioteca de documentos. Comprueba cada archivo para ver si coincide con un tipo de contenido "contrato" que está capacitado para buscar. Si encuentra una coincidencia, clasifica el archivo como un "contrato" y actualiza el tipo de contenido del documento.
+1. Los documentos se cargan en una SharePoint de documentos. Se SharePoint Syntex modelo de comprensión de documentos a la biblioteca de documentos. Comprueba cada archivo para ver si coincide con un tipo de contenido "contrato" que está capacitado para buscar. Si encuentra una coincidencia, clasifica el archivo como un "contrato" y actualiza el tipo de contenido del documento.
 
 2. El modelo también extrae datos específicos de cada archivo de contrato que las partes interesadas están interesadas en ver, como el importe de *cliente,* contratista *y* *tarifa.*
 

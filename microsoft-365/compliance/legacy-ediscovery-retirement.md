@@ -13,23 +13,23 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place exhibición de documentos electrónicos y retención In-Place (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Advanced eDiscovery v1.0 también se retiran en el mismo período de tiempo.
-ms.openlocfilehash: c5f1ddb4c817ebc316c2e2efdba9a4bc605eb5a2
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 97be285ae348b018866e3f91f92be523b03e6616
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842667"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055078"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
 > [!IMPORTANT]
-> Microsoft ha estado evaluando la situación de salud pública y entendemos el impacto que esto está teniendo en nuestros clientes. Queremos ser socios fuertes y ciudadanos globales responsables. To ease one of the many burdens you are facing, we are going to delay the scheduled retirement for the legacy eDiscovery tools described in this article by three months. **Las fechas de retiro actualizadas se reflejan a continuación.**
+> La funcionalidad de las herramientas de exhibición de documentos electrónicos heredadas descritas en este artículo se ha quitado del servicio Microsoft 365 o sigue disponible, pero ya no es compatible. Cualquier funcionalidad que aún esté disponible puede quitarse sin previo aviso. Si sigue usando cualquiera de estas herramientas heredadas, considere la posibilidad de migrar a las herramientas de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 o una de las alternativas descritas en este artículo.
 
-A lo largo de los años, Microsoft ha proporcionado herramientas de exhibición de documentos electrónicos que le permiten buscar, obtener una vista previa y exportar contenido de correo electrónico desde Exchange Online. Sin embargo, estas herramientas ya no ofrecen una forma eficaz de buscar contenido que no sea de Exchange en otros servicios Microsoft 365, como SharePoint Online y Microsoft 365 Groups. Para solucionar esto, Microsoft ofrece otras herramientas de exhibición de documentos electrónicos que le ayudarán a buscar una amplia variedad de Microsoft 365 contenido. Y hemos estado trabajando duro para incorporar la funcionalidad de exhibición de documentos electrónicos más actual y eficaz en el centro Microsoft 365 [cumplimiento.](https://compliance.microsoft.com) Esto permite a las organizaciones responder a solicitudes legales, internas y de otro tipo de documentos de contenido en muchos Microsoft 365, incluidos Exchange Online.
+A lo largo de los años, Microsoft ha proporcionado herramientas de exhibición de documentos electrónicos que le permiten buscar, obtener una vista previa y exportar contenido de correo electrónico desde Exchange Online. Sin embargo, estas herramientas ya no ofrecen una forma eficaz de buscar contenido que no sea de Exchange en otros servicios Microsoft 365, como SharePoint Online y Microsoft 365 Groups. Para solucionar esto, Microsoft ofrece otras herramientas de exhibición de documentos electrónicos que le ayudarán a buscar una amplia variedad de Microsoft 365 contenido. Y hemos estado trabajando duro para incorporar la funcionalidad de exhibición de documentos electrónicos más actual y eficaz en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). Esto permite a las organizaciones responder a solicitudes legales, internas y de otro tipo de documentos de contenido en muchos Microsoft 365, incluidos Exchange Online.
 
-Como resultado de esta nueva y mejorada funcionalidad de exhibición de documentos electrónicos en el centro de cumplimiento de Microsoft 365, estamos retirando las siguientes características y funcionalidades relacionadas con la exhibición de documentos electrónicos relacionadas con la búsqueda de contenido de correo electrónico en Exchange Online y Microsoft 365:
+Como resultado de esta nueva y mejorada funcionalidad de exhibición de documentos electrónicos en Centro de cumplimiento de Microsoft 365, estamos retirando las siguientes características y funciones relacionadas con la exhibición de documentos electrónicos relacionadas con la búsqueda de contenido de correo electrónico en Exchange Online y Microsoft 365:
 
-- [eDiscovery local](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) y [las retenciones](/exchange/security-and-compliance/create-or-remove-in-place-holds) locales en el centro Exchange administración.
+- [Exhibición de](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) documentos [](/exchange/security-and-compliance/create-or-remove-in-place-holds) electrónicos local y retenciones locales en el centro Exchange administración local.
 
 - Los cmdlets Exchange Online PowerShell que admiten In-Place eDiscovery y In-Place Holds (estos cmdlets se identifican colectivamente como cmdlets **-MailboxSearch).* Esto incluye los cmdlets siguientes:
 
@@ -67,7 +67,7 @@ Las secciones siguientes de este artículo proporcionan instrucciones sobre cada
 
 Según el anuncio original del 1 de julio de 2017, se retirará la funcionalidad de retención de In-Place eDiscovery & en el Centro de administración de Exchange (EAC). La In-Place de exhibición de documentos electrónicos & en el EAC le permitía buscar, retener y exportar contenido desde Exchange Online. In-Place eDiscovery también le permite copiar los resultados de búsqueda en un buzón de correo de detección para que usted u otros administradores de exhibición de documentos electrónicos puedan revisar el contenido y que esté disponible para solicitudes legales, reglamentarias y públicas.
 
-Dado que todas estas funcionalidades (excepto para copiar resultados de búsqueda en un buzón de correo de detección) ya están disponibles en las herramientas de búsqueda de contenido, exhibición de documentos electrónicos y Advanced eDiscovery en el centro de cumplimiento de [Microsoft 365](./microsoft-365-compliance-center.md) (con funcionalidad mejorada, confiabilidad y compatibilidad con una amplia gama de servicios de Microsoft 365), se recomienda empezar a usar estas herramientas lo antes posible. Para ayudarle en la transición a estas otras herramientas de exhibición de documentos electrónicos, en la tabla siguiente se enumeran las herramientas que puede usar en lugar de In-Place eDiscovery y In-Place Hold.
+Dado que todas estas funcionalidades (excepto para copiar resultados de búsqueda en un buzón de correo de detección) ahora están disponibles en las herramientas de búsqueda de contenido, exhibición de documentos electrónicos y Advanced eDiscovery en [Centro de cumplimiento de Microsoft 365](./microsoft-365-compliance-center.md) (con funcionalidad mejorada, confiabilidad y compatibilidad con una amplia variedad de servicios de Microsoft 365), se recomienda empezar a usar estas herramientas lo antes posible. Para ayudarle en la transición a estas otras herramientas de exhibición de documentos electrónicos, en la tabla siguiente se enumeran las herramientas que puede usar en lugar de In-Place eDiscovery y In-Place Hold.
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
 
@@ -100,7 +100,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tbody>
 <tr class="odd">
 <td>Búsqueda, exportación y retención con fines legales</td>
-<td>Casos principales de exhibición de documentos electrónicos en el Microsoft 365 de cumplimiento </td>
+<td>Casos principales de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 </td>
 <td><p>El uso de las funcionalidades de los casos principales de exhibición de documentos electrónicos proporciona la paridad funcional para In-Place eDiscovery y In-Place holds. Esto incluye lo siguiente:</p>
 <ul>
 <li>
@@ -115,7 +115,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 </tr>
 <tr class="even">
 <td>Retención con fines de retención</td>
-<td>Directivas de retención en el centro Microsoft 365 cumplimiento normativo</td>
+<td>Directivas de retención en el Centro de cumplimiento de Microsoft 365</td>
 <td><p>Puede usar directivas de retención para conservar el contenido y, si lo desea, eliminarlo después de que expire el período de retención. Otras funcionalidades incluyen:</p>
 <ul>
 <li>
@@ -141,7 +141,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class=even>
   <td>Copiar mensajes de un buzón a otro buzón</td>
   <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Asignar permisos a un buzón</a></td>
-  <td>Para dar a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado deja su organización y necesita dar a otra persona acceso al correo electrónico del ex empleado), le recomendamos que asigne permisos a esa persona para tener acceso al buzón del antiguo empleado. Por lo tanto, en lugar de copiar elementos de buzón en otro buzón de usuario o en un buzón compartido, solo tiene que asignar permisos de usuario para tener acceso al buzón de origen.</td>
+  <td>Para dar a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado deja su organización y necesita dar a otra persona acceso al correo electrónico del ex empleado), le recomendamos que asigne permisos a esa persona para tener acceso al buzón del antiguo empleado. Por lo tanto, en lugar de copiar elementos de buzón en otro buzón de usuario o en un buzón compartido, simplemente asigne a un usuario los permisos necesarios para tener acceso al buzón de origen.</td>
   
   </tr>
 <tr class="odd">
@@ -160,17 +160,17 @@ Hay dos maneras de replicar esta funcionalidad hoy en día. El primero es usar c
 
 **¿Cómo puedo controlar qué ubicaciones de contenido (como buzones o sitios) que un administrador de exhibición de documentos electrónicos puede buscar con las nuevas herramientas?**
 
-El Microsoft 365 de cumplimiento también usa [límites](set-up-compliance-boundaries.md) de cumplimiento para controlar qué ubicaciones de contenido puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento son útiles en las entidades gubernamentales que necesitan mantenerse dentro de los límites de las agencias o las corporaciones multinacionales necesarias para respetar a los miembros de la junta geográfica.
+El Centro de cumplimiento de Microsoft 365 también usa [límites de cumplimiento](set-up-compliance-boundaries.md) para controlar qué ubicaciones de contenido puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento son útiles en las entidades gubernamentales que necesitan mantenerse dentro de los límites de las agencias o las corporaciones multinacionales necesarias para respetar a los miembros de la junta geográfica.
 
-**¿Cómo puedo mover mis búsquedas y retenciones actuales al Microsoft 365 de cumplimiento?**
+**¿Cómo puedo mover mis búsquedas y retenciones actuales al Centro de cumplimiento de Microsoft 365?**
 
-Es posible migrar las In-Place de exhibición de documentos electrónicos y las retenciones desde el EAC mediante PowerShell. Para obtener instrucciones, vea [Migrate searches and holds from the EAC to the Microsoft 365 compliance center](./migrate-legacy-ediscovery-searches-and-holds.md).
+Es posible migrar las In-Place de exhibición de documentos electrónicos y las retenciones desde el EAC mediante PowerShell. Para obtener instrucciones, consulte [Migrate searches and holds from the EAC to the Centro de cumplimiento de Microsoft 365](./migrate-legacy-ediscovery-searches-and-holds.md).
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*Cmdlets -MailboxSearch
 
 Según el aviso original anunciado el 1 de julio de 2017 en el Centro de administración de Exchange, la funcionalidad de retención de In-Place eDiscovery & y los cmdlets **\* -MailboxSearch** correspondientes se están retirando. Estos cmdlets proporcionan a los usuarios la capacidad de buscar, retener y exportar contenido de buzones de correo para solicitudes legales, reglamentarias y públicas.
 
-Dado que estas funcionalidades ahora están disponibles en el Centro de cumplimiento de [<span class="underline">Microsoft 365</span>](./microsoft-365-compliance-center.md) y powerShell del Centro de seguridad & de Office 365 con un rendimiento y escalabilidad mejorados, debe usar estos cmdlets mejorados. Estos cmdlets incluyen [<span class="underline"> \* -ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline"> \* -ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline"> \* -CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline"> \* -CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule)y [<span class="underline"> \* -ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
+Dado que estas funcionalidades ya están disponibles en [<span class="underline">el</span>](./microsoft-365-compliance-center.md) PowerShell del Centro de seguridad Centro de cumplimiento de Microsoft 365 y Office 365 seguridad & con un rendimiento y escalabilidad mejorados, debe usar estos cmdlets mejorados. Estos cmdlets incluyen [<span class="underline"> \* -ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline"> \* -ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline"> \* -CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline"> \* -CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule)y [<span class="underline"> \* -ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
 
@@ -207,9 +207,9 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction funcionan juntos para ayudarle a buscar y exportar contenido. Puede crear una nueva búsqueda y ver la estimación de búsqueda mediante los cmdlets <strong>New-</strong>, <strong>Get-</strong>y <strong>Start-ComplianceSearch.</strong> A continuación, puede usar el cmdlet <strong>New-ComplianceSearchAction</strong> para exportar los resultados de la búsqueda. Seguirás teniendo que usar la herramienta de exhibición de documentos electrónicos principal en el centro de Microsoft 365 cumplimiento para descargar esos resultados de búsqueda en el equipo local.</p>
+<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction funcionan juntos para ayudarle a buscar y exportar contenido. Puede crear una nueva búsqueda y ver la estimación de búsqueda mediante los cmdlets <strong>New-</strong>, <strong>Get-</strong>y <strong>Start-ComplianceSearch.</strong> A continuación, puede usar el cmdlet <strong>New-ComplianceSearchAction</strong> para exportar los resultados de la búsqueda. Todavía tendrás que usar la herramienta de exhibición de documentos electrónicos principal en el Centro de cumplimiento de Microsoft 365 descargar esos resultados de búsqueda en el equipo local.</p>
 <p>
-<p><strong>Nota:</strong> Si usa estos cmdlets para crear búsquedas que no están asociadas a un <strong></strong> caso principal de exhibición de documentos electrónicos, estas búsquedas se ubicarán en la página Búsqueda de contenido del centro de Microsoft 365 cumplimiento.</p></td>
+<p><strong>Nota:</strong> Si usa estos cmdlets para crear búsquedas que no están asociadas con un <strong></strong> caso principal de exhibición de documentos electrónicos, estas búsquedas se ubicarán en la página Búsqueda de contenido en el Centro de cumplimiento de Microsoft 365.</p></td>
 </tr>
 <tr class="even">
 <td>Retener contenido en un buzón</td>
@@ -217,7 +217,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <p><a href="/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Las retenciones en el Microsoft 365 de cumplimiento deben asociarse con un ComplianceCase. En primer lugar, cree el caso de cumplimiento y, a continuación, cree un CaseHoldPolicy y un CaseHoldRule.</p>
+<td><p>Las retenciones en el Centro de cumplimiento de Microsoft 365 deben asociarse con un ComplianceCase. En primer lugar, cree el caso de cumplimiento y, a continuación, cree un CaseHoldPolicy y un CaseHoldRule.</p>
 <p><strong>Nota:</strong> La creación de CaseHoldPolicy sin crear CaseHoldRule hará que la retención sea inoperable hasta que se cree CaseHoldRule y se asocie a CaseHoldPolicy. Consulte la documentación del cmdlet para obtener más información.</p></td>
 </tr>
 <tr class="odd">
@@ -241,9 +241,9 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 
 Las [<span class="underline">API de Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) proporcionan una serie de métodos para extraer datos para análisis y otros fines que son mucho más resistentes y escalables que el uso de los cmdlets **\* -MailboxSearch.**
 
-**¿Cómo puedo migrar mis búsquedas y retenciones al centro Microsoft 365 cumplimiento?**
+**¿Cómo puedo migrar mis búsquedas y retenciones al Centro de cumplimiento de Microsoft 365?**
 
-Es posible migrar las búsquedas In-Place eDiscovery y las retenciones desde el centro de administración de Exchange mediante un script de PowerShell. Para obtener más información, vea [Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center](migrate-legacy-eDiscovery-searches-and-holds.md).
+Es posible migrar las búsquedas In-Place eDiscovery y las retenciones desde el centro de administración de Exchange mediante un script de PowerShell. Para obtener más información, vea [Migrate legacy eDiscovery searches and holds to the Centro de cumplimiento de Microsoft 365](migrate-legacy-eDiscovery-searches-and-holds.md).
 
 **Una vez retirados los cmdlets, ¿seguiré siendo capaz de quitar o recuperar búsquedas?**
 
@@ -285,12 +285,12 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction funcionan juntos para ayudarle a buscar y exportar contenido. Puede crear una nueva búsqueda y ver la estimación de búsqueda mediante los cmdlets <strong>New-</strong>, <strong>Get-</strong>y <strong>Start-ComplianceSearch.</strong> A continuación, puede usar el <strong>comando New-ComplianceSearchAction -Export</strong> para exportar los resultados de la búsqueda. Seguirás teniendo que usar la herramienta de exhibición de documentos electrónicos principal en el centro de Microsoft 365 cumplimiento para descargar esos resultados de búsqueda en el equipo local.</p></p>
+<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction funcionan juntos para ayudarle a buscar y exportar contenido. Puede crear una nueva búsqueda y ver la estimación de búsqueda mediante los cmdlets <strong>New-</strong>, <strong>Get-</strong>y <strong>Start-ComplianceSearch.</strong> A continuación, puede usar el <strong>comando New-ComplianceSearchAction -Export</strong> para exportar los resultados de la búsqueda. Todavía tendrás que usar la herramienta de exhibición de documentos electrónicos principal en el Centro de cumplimiento de Microsoft 365 descargar esos resultados de búsqueda en el equipo local.</p></p>
 </td>
 </tr>
 <tr class="even">
 <td>Eliminar correo electrónico masivo de un buzón</td>
-<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Configurar una directiva de archivo y eliminación para buzones de correo</span></a></p>
+<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes"><span class="underline">Configurar una directiva de archivo y eliminación para buzones de correo</span></a></p>
 <p></p></td>
 <td><p>Los administradores pueden crear una directiva de archivado y eliminación que mueva automáticamente los elementos al buzón de archivo de un usuario y elimine automáticamente los elementos del buzón.</p>
 </td>
@@ -303,7 +303,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class=odd>
   <td>Copiar mensajes de un buzón a otro buzón</td>
   <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Asignar permisos a un buzón</a></td>
-  <td>Para dar a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado deja su organización y necesita dar a otra persona acceso al correo electrónico del ex empleado), le recomendamos que asigne permisos a esa persona para tener acceso al buzón del antiguo empleado. Por lo tanto, en lugar de copiar elementos de buzón en otro buzón de usuario o en un buzón compartido, solo tiene que asignar permisos de usuario para tener acceso al buzón de origen.</td>
+  <td>Para dar a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado deja su organización y necesita dar a otra persona acceso al correo electrónico del ex empleado), le recomendamos que asigne permisos a esa persona para tener acceso al buzón del antiguo empleado. Por lo tanto, en lugar de copiar elementos de buzón en otro buzón de usuario o en un buzón compartido, simplemente asigne un permiso de usuario para tener acceso al buzón de origen.</td>
 </tr>
 <tr class=even>
   <td>Purgar mensajes de un buzón</td>
@@ -316,7 +316,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="odd"> 
 <td>Purgar mensajes de un buzón</td>
 <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Asignar permisos a un buzón</a></td>
-<td>Para purgar mensajes de un buzón, asigne permisos de administrador para tener acceso al buzón del empleado. Los mensajes se pueden eliminar y reciclar según sea necesario aprovechando las funciones integradas de búsqueda y visualización en Outlook.</td>
+<td>Para purgar mensajes de un buzón, asigne permisos de administrador para tener acceso al buzón del empleado. Los mensajes se pueden eliminar y reciclar según sea necesario aprovechando las capacidades integradas de búsqueda y visualización en Outlook.</td>
 </tr>
 </tbody>
 </table>
@@ -341,7 +341,7 @@ Estas operaciones en la API de servicios web de Exchange las usa la característ
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v1.0
 
-Advanced eDiscovery v1.0, que es la versión de Advanced eDiscovery disponible en un caso principal de exhibición de documentos electrónicos haciendo clic en Cambiar a **Advanced eDiscovery**, se está retirando. Su funcionalidad se ha reemplazado por la nueva [solución Advanced eDiscovery en](./ediscovery.md) el centro de Microsoft 365 cumplimiento.
+Advanced eDiscovery v1.0, que es la versión de Advanced eDiscovery disponible en un caso principal de exhibición de documentos electrónicos haciendo clic en Cambiar a **Advanced eDiscovery**, se está retirando. Su funcionalidad se ha reemplazado por la nueva [solución Advanced eDiscovery en](./ediscovery.md) el Centro de cumplimiento de Microsoft 365.
 
 Para determinar si su organización usa Advanced eDiscovery v1.0:
 
@@ -381,4 +381,4 @@ En este momento, se recomienda comenzar a realizar la transición del flujo de t
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
 
-La [Advanced eDiscovery en](./overview-ediscovery-20.md) el centro de Microsoft 365 cumplimiento.
+La [Advanced eDiscovery de](./overview-ediscovery-20.md) la Centro de cumplimiento de Microsoft 365.

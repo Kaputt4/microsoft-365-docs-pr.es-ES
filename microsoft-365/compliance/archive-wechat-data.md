@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Configure y use un conector en el centro de Microsoft 365 de cumplimiento para importar y archivar datos de WeChat en Microsoft 365.
-ms.openlocfilehash: 3ee858cd09c1b6c7bd29dc5e2162753df9f5544a
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+description: Configure y use un conector en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de WeChat en Microsoft 365.
+ms.openlocfilehash: e610b58421c2d84402010c9a5d5ad33ec6da5b04
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861648"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054613"
 ---
-# <a name="set-up-a-connector-to-archive-wechat-data-preview"></a>Configurar un conector para archivar datos de WeChat (versión preliminar)
+# <a name="set-up-a-connector-to-archive-wechat-data"></a>Configurar un conector para archivar datos de WeChat
 
-Use el conector de TeleMessage en el centro de cumplimiento de Microsoft 365 para importar y archivar llamadas, chats, archivos adjuntos, archivos y mensajes recuperados de WeChat y WeCom. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de la organización e importa la comunicación móvil de los empleados mediante el Archivador de WeChat de TeleMessage a los buzones de correo de Microsoft 365.
+Use el conector de TeleMessage en el Centro de cumplimiento de Microsoft 365 para importar y archivar llamadas, chats, archivos adjuntos, archivos y mensajes recuperados de WeChat y WeCom. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de la organización e importa la comunicación móvil de los empleados mediante el Archivador de WeChat de TeleMessage a los buzones de correo de Microsoft 365.
 
 Después de almacenar los datos del conector del archivador de WeChat en buzones de usuario, puede aplicar Microsoft 365 las características de cumplimiento como retención por juicio, exhibición de documentos electrónicos, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de comunicación de WeChat. Por ejemplo, puede buscar en la comunicación de WeChat mediante la búsqueda de contenido o asociar el buzón que contiene los datos del conector del archivador de WeChat con un custodio en un Advanced eDiscovery caso. El uso de un conector de Archivador de WeChat para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las normativas de gobierno corporativo y las directivas reglamentarias.
 
@@ -35,7 +35,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 2. En tiempo real, los datos de WeChat de su organización se copian en el sitio de TeleMessage.
 
-3. El conector de Archivador de WeChat que crea en el centro de cumplimiento de Microsoft 365 se conecta al sitio de TeleMessage todos los días y transfiere los mensajes de correo electrónico de las 24 horas anteriores a un área de Azure Storage segura en Microsoft Cloud.
+3. El conector de Archivador de WeChat que crea en el Centro de cumplimiento de Microsoft 365 se conecta al sitio de TeleMessage todos los días y transfiere los mensajes de correo electrónico de las 24 horas anteriores a un área de Azure Storage segura en Microsoft Cloud.
 
 4. El conector importa los elementos de comunicación móvil al buzón de un usuario específico. Se creará una nueva carpeta denominada WeChat Archiver en el buzón del usuario específico y los elementos se importarán a él. El conector realiza la asignación mediante el valor de la *propiedad Dirección de correo* electrónico del usuario. Cada mensaje de correo electrónico contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de correo electrónico. Además de la asignación automática  de usuarios mediante el valor de la propiedad Dirección de correo electrónico del usuario, también puede definir una asignación personalizada cargando un archivo de asignación CSV. Este archivo de asignación debe contener el número de teléfono móvil del usuario y la dirección Microsoft 365 buzón de correo correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, por cada elemento de correo electrónico, el conector primero buscará el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que corresponda al número de teléfono móvil de un usuario, el conector usará la propiedad de dirección de correo electrónico del usuario del elemento de correo electrónico. Si el conector no encuentra un usuario Microsoft 365 válido en el  archivo de asignación personalizado o en la propiedad de dirección de correo electrónico del usuario del elemento de correo electrónico, el elemento no se importará.
 
@@ -49,13 +49,13 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 - Tendrás que instalar la aplicación Tencent WeCom en los teléfonos móviles de los usuarios de tu organización y activarla. La aplicación WeCom permite a los usuarios comunicarse y chatear con otros usuarios de WeChat y WeCom.
 
-- El usuario que crea un conector de archivador de WeChat en el centro de cumplimiento de Microsoft 365 debe tener asignado el rol De importación de buzones de Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** del Centro de cumplimiento. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- Al usuario que crea un conector de archivador de WeChat en el Centro de cumplimiento de Microsoft 365 se le debe asignar el rol De importación de buzones de Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** del Centro de cumplimiento. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 - Este conector de datos está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="create-a-wechat-archiver-connector"></a>Crear un conector de Archivador de WeChat
 
-Siga los pasos de esta sección para crear un conector de archivador de WeChat en el centro de Microsoft 365 cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir datos de comunicaciones de WeChat a los buzones de usuario correspondientes en Microsoft 365.
+Siga los pasos de esta sección para crear un conector de archivador de WeChat en el Centro de cumplimiento de Microsoft 365. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir datos de comunicaciones de WeChat a los buzones de usuario correspondientes en Microsoft 365.
 
 1. Vaya a <https://compliance.microsoft.com> y, a continuación, haga clic **en Conectores de datos**  >  **WeChat Archiver**.
 

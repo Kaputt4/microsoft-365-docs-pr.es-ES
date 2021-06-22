@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6b9814180df2cad2553c4565ebb65891b5cf9bf5
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 0705ba096c2aefc6bd089bd5fba80b055fd881dc
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985425"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055240"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personalizar las reglas de la reducción de superficie expuesta a ataques
 
@@ -90,7 +90,7 @@ Consulta el tema [de reducción de](attack-surface-reduction.md) superficie de a
 
 2. En el **Editor de administración de directivas de** grupo, vaya a Configuración del equipo **y** haga clic en **Plantillas administrativas.**
 
-3. Expande el árbol para **Windows componentes Antivirus de Microsoft Defender** Windows Defender superficie  >    >  **ataque** de protección contra  >  **vulnerabilidades** de seguridad .
+3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender**  >    >  **Protección contra vulnerabilidades de seguridad de Microsoft Defender**  >  **reducción de superficie de ataque**.
 
 4. Haga doble clic en la **configuración Excluir archivos y rutas** de acceso de las reglas de reducción de superficie de ataque y establezca la opción en **Habilitado**. Seleccione **Mostrar** e introduzca cada archivo o carpeta en la **columna Nombre de** valor. Escriba **0 en** la **columna Valor** de cada elemento.
 

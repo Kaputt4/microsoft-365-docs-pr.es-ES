@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 499ac9a6ee81bacb79cd83993d510f87e11c62c6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ceccd9e3c8a8137f672e7be519675034a84c7881
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844723"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055106"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender para punto de conexión en Android
 
@@ -72,7 +72,8 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Defender 
 
 ### <a name="system-requirements"></a>Requisitos del sistema
 
--   Dispositivos Android que ejecutan Android 6.0 y versiones posteriores.
+-   Teléfonos móviles que ejecutan Android 6.0 y versiones posteriores. **Las tabletas y otros dispositivos móviles que ejecutan Android no son compatibles actualmente.** 
+
 -   Portal de empresa de Intune aplicación se descarga desde [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) e se instala. La inscripción de dispositivos es necesaria para que se cumplan las directivas de cumplimiento de dispositivos de Intune.
 
 ### <a name="installation-instructions"></a>Instrucciones de instalación

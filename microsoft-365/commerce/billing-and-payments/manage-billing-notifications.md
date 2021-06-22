@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar quién recibe mensajes de correo electrónico de notificación de facturación y datos adjuntos de factura.
 ms.date: 03/17/2021
-ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998769"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054579"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Administrar las notificaciones de facturación y los datos adjuntos en las facturas
 
@@ -37,9 +37,6 @@ Las **notificaciones de facturación** le permiten administrar quién recibe cor
 Debe ser un administrador global para realizar los pasos descritos en este artículo. Los administradores de facturación pueden realizar algunos de estos cambios, como se indica en las secciones siguientes. Para más información, consulte [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="change-the-language-you-receive-email-in"></a>Cambiar el idioma en el que recibe el correo electrónico
-
-> [!NOTE]
-> Los administradores de facturación también pueden seguir los pasos de esta sección.
 
 Los correos electrónicos de notificación de facturación se envían en el idioma preferido de su organización. Para cambiar el idioma preferido, siga estos pasos.
 
@@ -87,6 +84,9 @@ Además de los administradores globales y de facturación, enviamos notificacion
 3. En el panel derecho, escriba la dirección de correo electrónico que quiere usar y, después, **Guardar**.
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Recibir facturas de su organización como datos adjuntos de correo
+
+> [!NOTE]
+> Los administradores de facturación también pueden seguir los pasos de esta sección.
 
 Puede tener una copia de la factura de la organización adjuntada como archivo PDF para enviar correos electrónicos de notificación mediante factura cuando esté lista una nueva factura. Siga estos pasos para recibir las facturas como datos adjuntos.
 

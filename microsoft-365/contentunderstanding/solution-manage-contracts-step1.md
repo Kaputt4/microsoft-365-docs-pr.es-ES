@@ -12,16 +12,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Obtenga información sobre cómo usar SharePoint Syntex para identificar archivos de contrato y extraer datos mediante una Microsoft 365 solución.
-ms.openlocfilehash: b4b11b1bdb980b0ee7629af0cbecbb126a5ae5e5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636211"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054502"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Paso 1. Usar SharePoint Syntex para identificar archivos de contrato y extraer datos
 
-Su organización necesita una forma de identificar y clasificar todos los documentos de contrato de los muchos archivos que recibe. También desea poder ver rápidamente varios elementos clave en cada uno de los archivos de contrato identificados (por ejemplo, *Client*, *Contractor* y *Fee amount*). Para ello, use SharePoint [Syntex](index.md) para crear un modelo de descripción de documentos y aplicarlo a una biblioteca de documentos.
+Su organización necesita una forma de identificar y clasificar todos los documentos de contrato de los muchos archivos que recibe. También desea poder ver rápidamente varios elementos clave en cada uno de los archivos de contrato identificados (por ejemplo, *Client*, *Contractor* y *Fee amount*). Para ello, use [SharePoint Syntex](index.md) para crear un modelo de descripción de documentos y aplicarlo a una biblioteca de documentos.
 
 ## <a name="overview-of-the-process"></a>Información general del proceso
 
@@ -37,7 +37,7 @@ Su organización necesita una forma de identificar y clasificar todos los docume
 
    ![Contratos en la biblioteca de documentos](../media/content-understanding/doc-lib-solution.png)
 
-5. Si tiene requisitos de retención para sus contratos, también puede usar el modelo para aplicar una etiqueta de retención que impedirá que los contratos se eliminen durante un período de tiempo especificado. [](apply-a-retention-label-to-a-model.md)
+5. Si tiene requisitos de retención o seguridad para sus contratos, también [](apply-a-sensitivity-label-to-a-model.md) puede usar el modelo para aplicar una etiqueta de retención o una etiqueta de confidencialidad que impedirá que los contratos se eliminen durante un período de tiempo especificado o para restringir quién puede acceder [a](apply-a-retention-label-to-a-model.md) los contratos.
 
 ## <a name="steps-to-create-and-train-your-model"></a>Pasos para crear y entrenar el modelo
 
@@ -198,6 +198,11 @@ Para aplicar el modelo a una SharePoint de documentos:
 6. En la **página Modelos > contrato,** en la sección **Bibliotecas** con este modelo, verá la dirección URL del sitio SharePoint lista.
 
     ![Captura de pantalla de la página principal del contrato que muestra la sección Bibliotecas con este modelo.](../media/content-understanding/contract-libraries-with-this-model.png)
+
+7. En **Configuración**  >  **configuración de biblioteca:**
+
+   - Agregue una columna denominada **Status** y seleccione **Choice** como tipo de columna.
+   - Aplique los **valores En revisión,** **Aprobado** y **Rechazado.**
 
 Después de aplicar el modelo a la biblioteca de documentos, puede empezar a cargar documentos en el sitio y ver los resultados.
 

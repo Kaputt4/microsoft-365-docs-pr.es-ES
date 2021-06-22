@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para cuentas de prioridad en Microsoft 365 organizaciones.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632226"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055255"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas de prioridad en Microsoft 365
 
@@ -36,6 +36,8 @@ Para los atacantes, los ataques de phishing normales que convierten una red alea
 Microsoft 365 y Microsoft Defender para Office 365 contienen varias características clave que proporcionan capas de seguridad adicionales para las cuentas de prioridad. En este artículo se describen estas funcionalidades y cómo usarlas.
 
 ![Resumen de las recomendaciones de seguridad en forma de icono](../../media/security-recommendations-for-priority-users.png)
+
+<br>
 
 ****
 
@@ -61,7 +63,7 @@ Para obtener instrucciones, consulte [step 1. Aumentar la seguridad de inicio de
 
 - Puede usar [](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) directivas [](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) de autenticación y reglas de acceso de cliente en Exchange Online para bloquear o permitir la autenticación básica y los protocolos de autenticación heredados como POP3, IMAP4 y SMTP autenticado para usuarios específicos.
 
-- Puede deshabilitar el acceso a POP3 e IMAP4 en buzones individuales. Puede deshabilitar SMTP autenticado en el nivel organizativo y habilitarlo en buzones específicos que aún lo requieran. Para obtener instrucciones, consulte los temas siguientes:
+- Puede deshabilitar el acceso a POP3 e IMAP4 en buzones individuales. Puede deshabilitar SMTP autenticado en el nivel organizativo y habilitarlo en buzones específicos que aún lo requieran. Para obtener instrucciones, consulte los artículos siguientes:
   - [Habilitar o deshabilitar el acceso POP3 o IMAP4 para un usuario](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [Habilitar o deshabilitar el envío SMTP del cliente autenticado (AUTH SMTP)](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
@@ -77,7 +79,7 @@ Puede implementar este enfoque estricto para las cuentas de prioridad mediante e
 
 Las directivas de seguridad predefinidas son una ubicación cómoda y central para aplicar nuestra configuración de directiva estricta recomendada para todas las protecciones de EOP y Defender para Office 365. Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
-Para obtener más información sobre cómo la configuración de directivas estrictas difiere de la configuración de directiva predeterminada y estándar, vea Configuración recomendada para EOP y Microsoft Defender para obtener Office 365 [seguridad.](recommended-settings-for-eop-and-office365.md)
+Para obtener más información sobre cómo la configuración de directivas estrictas difiere de la configuración predeterminada y la configuración de directiva estándar, vea Configuración recomendada para EOP y Microsoft Defender para Office 365 [seguridad.](recommended-settings-for-eop-and-office365.md)
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>Aplicar etiquetas de usuario a cuentas de prioridad
 
@@ -85,7 +87,7 @@ Las etiquetas de usuario en Microsoft Defender para Office 365 Plan 2 (como part
 
 **Las cuentas de** prioridad son un tipo de etiqueta de usuario integrada (conocida como etiqueta del _sistema)_ que puede usar para identificar incidentes y alertas que implican cuentas de prioridad. Para obtener más información acerca **de las cuentas de prioridad,** vea Administrar y supervisar cuentas de [prioridad.](../../admin/setup/priority-accounts.md)
 
-También puede crear etiquetas personalizadas para identificar y clasificar aún más sus cuentas de prioridad. Para obtener más información, vea [Etiquetas de usuario](user-tags.md). Tenga en cuenta que puede administrar cuentas **de prioridad** (etiquetas del sistema) en la misma interfaz que las etiquetas de usuario personalizadas.
+También puede crear etiquetas personalizadas para identificar y clasificar aún más sus cuentas de prioridad. Para obtener más información, vea [Etiquetas de usuario](user-tags.md). Puede administrar cuentas **de prioridad** (etiquetas del sistema) en la misma interfaz que las etiquetas de usuario personalizadas.
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Supervisar cuentas de prioridad en alertas, informes y detecciones
 
@@ -97,8 +99,8 @@ Después de proteger y etiquetar a los usuarios prioritarios, puede usar los inf
 
 |Característica|Descripción|
 |---|---|
-|Alertas|Las etiquetas de usuario de los usuarios  afectados están visibles y disponibles como filtros en la página Ver alertas en el Centro de seguridad & cumplimiento. Para obtener más información, vea [Visualización de alertas](../../compliance/alert-policies.md#viewing-alerts).|
-|Explorador de amenazas <p> Detecciones en tiempo real|En  el Explorador de amenazas (Microsoft Defender para Office 365 Plan 2) o en detecciones en tiempo **real** (Microsoft Defender para Office 365 Plan 1), las etiquetas de usuario están visibles en la vista Cuadrícula de correo electrónico y en el control desplegable Detalles de correo electrónico. Las etiquetas de usuario también están disponibles como una propiedad filtrable. Para obtener más información, vea [Etiquetas en el Explorador de amenazas.](threat-explorer.md#tags-in-threat-explorer)|
+|Alertas|Las etiquetas de usuario de los usuarios afectados están visibles y están disponibles como filtros en **la** página Alertas del portal Microsoft 365 Defender usuario. Para obtener más información, vea [Visualización de alertas](../../compliance/alert-policies.md#viewing-alerts).|
+|Explorador <p> Detecciones en tiempo real|En **el Explorador** (Defender para Office 365 Plan 2) o detecciones en tiempo real (Defender para Office 365 Plan 1), las etiquetas de usuario están **visibles** en la vista Cuadrícula de correo electrónico y en el control desplegable Detalles de correo electrónico. Las etiquetas de usuario también están disponibles como una propiedad filtrable. Para obtener más información, vea  [Tags in Explorer](threat-explorer.md#tags-in-threat-explorer).|
 |Vistas de campañas|Las etiquetas de usuario son una de las muchas propiedades que se pueden filtrar en Vistas de campaña en Microsoft Defender para Office 365 Plan 2. Para obtener más información, vea [Vistas de campaña](campaigns.md).|
 |Informe de estado de protección contra amenazas|En prácticamente todas las vistas y tablas de detalles del informe **de** estado de protección contra amenazas, puede filtrar los resultados por **cuentas de prioridad.** Para obtener más información, vea [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).|
 |Informes de problemas de correo electrónico para cuentas de prioridad|El **informe Problemas de** correo electrónico para cuentas de prioridad en el Centro de administración de Exchange (EAC) contiene información sobre los mensajes no entregados y retrasados para cuentas de **prioridad.** Para obtener más información, vea [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
@@ -119,7 +121,7 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 |Concepto|Recursos|Descripción|
 |---|---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](/office365/customlearning/)|Estos recursos pueden ayudarle a crear formación para los usuarios de su organización.|
-|Centro de seguridad de Microsoft 365|[Módulo de aprendizaje: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
+|Centro de seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
 |Autenticación multifactor|[Comprobación en dos pasos: ¿Cuál es la página de verificación adicional?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.|
 |Aprendizaje de simulación de ataques|[Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)|El aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2 permite al administrador configurar, iniciar y realizar un seguimiento de ataques de suplantación de identidad simulados contra grupos específicos de usuarios.|
 
@@ -129,6 +131,6 @@ Además, Microsoft recomienda que los usuarios tomen las acciones descritas en e
 - Protección de dispositivos
 - Habilitar características de seguridad en Windows 10 y equipos Mac (para dispositivos no administrados)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Anuncio de protección de cuenta de prioridad en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

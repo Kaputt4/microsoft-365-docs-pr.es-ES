@@ -1,5 +1,5 @@
 ---
-title: Directiva de envíos de usuarios
+title: Configuración del mensaje notificado por el usuario
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -17,14 +17,14 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052992"
+ms.locfileid: "53055126"
 ---
-# <a name="user-submissions-policy"></a>Directiva de envíos de usuarios
+# <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,16 +33,16 @@ ms.locfileid: "53052992"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 con Exchange Online buzones de correo, puede especificar un buzón para recibir mensajes que los usuarios reportan como malintencionados o no malintencionados. Cuando los usuarios envían mensajes con las distintas opciones de informes, puede usar este buzón para interceptar mensajes (solo enviar al buzón personalizado) o recibir copias de mensajes (enviar al buzón personalizado y Microsoft). Esta característica funciona con las siguientes opciones de informes de mensajes:
+En Microsoft 365 con Exchange Online buzones de correo, puede especificar un buzón para recibir mensajes que los usuarios reportan como malintencionados o no malintencionados. Cuando los usuarios informan de mensajes con las distintas opciones de informes, puede usar este buzón para interceptar mensajes (solo enviar al buzón personalizado) o recibir copias de mensajes (enviar al buzón personalizado y Microsoft). Esta característica funciona con las siguientes opciones de informes de mensajes:
 
 - [El complemento Mensaje de informe](enable-the-report-message-add-in.md)
 - [El complemento Detección de suplantación de identidad de informes](enable-the-report-phish-add-in.md)
 - [Herramientas de informes de terceros](#third-party-reporting-tools)
 
-La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [el envío de administrador.](admin-submission.md)
+La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [el envío de administrador.](admin-submission.md) Esta configuración se conocía anteriormente como directiva de envíos de usuario.
 
   > [!NOTE]
-  > Si los informes se han deshabilitado en [Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), la habilitación de envíos de usuario aquí invalidará esa configuración y permitirá a los usuarios notificar mensajes en Outlook en la Web de nuevo.
+  > Si los informes se han deshabilitado en [Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), habilitar los mensajes notificados por el usuario aquí invalidará esa configuración y permitirá a los usuarios notificar mensajes en Outlook en la Web de nuevo.
 
 ## <a name="custom-mailbox-prerequisites"></a>Requisitos previos de buzón personalizado
 

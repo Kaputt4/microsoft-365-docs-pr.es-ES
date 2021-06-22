@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo configurar y usar un conector en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de Cisco Jabber en PostgreSQL a Microsoft 365.
-ms.openlocfilehash: 06ec56b3b28b28b82554048ec788114a0e5cb389
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: Obtenga información sobre cómo configurar y usar un conector en el Centro de cumplimiento de Microsoft 365 importar y archivar datos de Cisco Jabber en PostgreSQL para Microsoft 365.
+ms.openlocfilehash: 7fca60df9d2c0378579d7700fb3dae9bbcdf619d
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842751"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054803"
 ---
-# <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data-preview"></a>Configurar un conector para archivar datos de Cisco Jabber en PostgreSQL (versión preliminar)
+# <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>Configurar un conector para archivar datos de Cisco Jabber en PostgreSQL
 
-Use un conector Veritas en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de la plataforma De Cisco Jabber a los buzones de usuario de su Microsoft 365 organización. Veritas proporciona un conector [de Cisco Jabber en PostgreSQL](https://www.veritas.com/insights/merge1/jabber) que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importar esos elementos a Microsoft 365. El conector convierte el contenido como mensajes, chats y contenido compartido de Cisco Jabber en PostgreSQL a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
+Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 importar y archivar datos de la plataforma de Cisco Jabber a buzones de usuario de su Microsoft 365 organización. Veritas proporciona un conector [de Cisco Jabber en PostgreSQL](https://www.veritas.com/insights/merge1/jabber) que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importar esos elementos a Microsoft 365. El conector convierte el contenido como mensajes, chats y contenido compartido de Cisco Jabber en PostgreSQL a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
 Una vez que los datos de Cisco Jabber on PostgreSQL se almacenan en buzones de usuario, puede aplicar características de cumplimiento Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector de Cisco Jabber en PostgreSQL para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -38,7 +38,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 2. Una vez cada 24 horas, los elementos de Cisco Jabber on PostgreSQL se copian en el sitio Veritas Merge1. El conector también convierte elementos de Cisco Jabber en PostgreSQL a un formato de mensaje de correo electrónico.
 
-3. El conector de Cisco Jabber on PostgreSQL que crea en el centro de cumplimiento de Microsoft 365, se conecta al sitio Veritas Merge1 todos los días y transfiere el contenido de Jabber a una ubicación Azure Storage segura en la nube de Microsoft.
+3. El conector de Cisco Jabber on PostgreSQL que crea en el Centro de cumplimiento de Microsoft 365, se conecta al sitio Veritas Merge1 todos los días y transfiere el contenido de Jabber a una ubicación Azure Storage segura en la nube de Microsoft.
 
 4. El conector importa los elementos convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Cisco Jabber en PostgreSQL** en los buzones de usuario y los elementos se importan a esa carpeta. El conector hace esto mediante el valor de la *propiedad Email.* Cada elemento de Jabber contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
@@ -46,11 +46,11 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 - Crear una cuenta Merge1 para conectores de Microsoft. Para ello, póngase en contacto [con el Servicio de soporte al cliente de Veritas](https://www.veritas.com/content/support/en_US). Debe iniciar sesión en esta cuenta al crear el conector en el paso 1.
 
-- El usuario que crea el conector de Cisco Jabber on PostgreSQL en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De exportación de importación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la página **Conectores** de datos del centro de Microsoft 365 cumplimiento. De forma predeterminada, este rol no se asigna a ningún grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea el conector de Cisco Jabber on PostgreSQL en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De exportación de importación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a ningún grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 ## <a name="step-1-set-up-the-cisco-jabber-on-postgresql-connector"></a>Paso 1: Configurar el conector de Cisco Jabber en PostgreSQL
 
-El primer paso es obtener acceso a la página **Conectores** de datos en el centro de Microsoft 365 de cumplimiento y crear un conector para los datos de Jabber.
+El primer paso es obtener acceso a la página **Conectores** de datos en el Centro de cumplimiento de Microsoft 365 y crear un conector para los datos de Jabber.
 
 1. Vaya a <https://compliance.microsoft.com> y, a continuación, haga clic **en Conectores de datos** Cisco &gt; **Jabber en PostgreSQL**.
 
@@ -66,11 +66,11 @@ El primer paso es obtener acceso a la página **Conectores** de datos en el cent
 
 El segundo paso consiste en configurar el conector de Cisco Jabber on PostgreSQL en el sitio Veritas Merge1. Para obtener información sobre cómo configurar el conector de Cisco Jabber on PostgreSQL, consulte [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20PostgreSQL%20User%20Guide.pdf).
 
-Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asignación de usuario en el asistente para conectores en Microsoft 365 centro de cumplimiento.
+Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asignación de usuario en el asistente para conector en Centro de cumplimiento de Microsoft 365.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
-Para asignar usuarios y completar la configuración del conector en el centro de Microsoft 365 cumplimiento, siga estos pasos:
+Para asignar usuarios y completar la configuración del conector en el Centro de cumplimiento de Microsoft 365, siga estos pasos:
 
 1. En la **página Asignar usuarios de Cisco Jabber en PostgreSQL** a Microsoft 365 usuarios, habilite la asignación automática de usuarios. Los elementos de Cisco Jabber en PostgreSQL incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección a un Microsoft 365, los elementos se importan al buzón de ese usuario.
 
@@ -78,7 +78,7 @@ Para asignar usuarios y completar la configuración del conector en el centro de
 
 ## <a name="step-4-monitor-the-cisco-jabber-on-postgresql-connector"></a>Paso 4: Supervisar el conector de Cisco Jabber en PostgreSQL
 
-Después de crear el conector de Cisco Jabber on PostgreSQL, puede ver el estado del conector en el centro de Microsoft 365 cumplimiento.
+Después de crear el conector de Cisco Jabber on PostgreSQL, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
 
 1. Vaya a <https://compliance.microsoft.com/> y haga clic en **Conectores de datos** en la navegación izquierda.
 
@@ -88,4 +88,4 @@ Después de crear el conector de Cisco Jabber on PostgreSQL, puede ver el estado
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB, pero la compatibilidad con elementos más grandes estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

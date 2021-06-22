@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas avanzadas contra la suplantación de identidad que están disponibles en organizaciones con Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f32118da96ee1d229ff7fde7893604c804bcade7
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: bbf90f52127e96e08f1c176a23d5f5ab1d6d86c4
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029938"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054544"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -323,9 +323,11 @@ Cuando se usa el portal de Microsoft 365 Defender para quitar una directiva de a
 
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas \>  \>  \>  sección \> **Anti-phishing**.
 
-2. Seleccione una directiva personalizada de la lista haciendo clic en el nombre de la directiva. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en el ![Icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
+2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre de la directiva.
 
-3. En el cuadro de diálogo de confirmación que aparece, haga clic en **Sí**.
+3. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en el ![Icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
+
+4. En el cuadro de diálogo de confirmación que aparece, haga clic en **Sí**.
 
 ## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Usar Exchange Online PowerShell para configurar directivas contra suplantación de identidad
 

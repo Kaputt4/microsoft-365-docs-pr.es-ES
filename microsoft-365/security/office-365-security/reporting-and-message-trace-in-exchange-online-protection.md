@@ -15,12 +15,12 @@ ms.custom:
 description: En este artículo, aprenderá sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online protección contra errores (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841443"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054379"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 
@@ -35,30 +35,17 @@ En Microsoft 365 organizaciones con buzones en organizaciones Exchange Online o 
 
 ## <a name="usage-reports"></a>Informes de uso
 
-**Microsoft 365 de grupos:** ver información sobre el número de grupos Microsoft 365 que se crean y usan.
+- **Microsoft 365 de grupos:** ver información sobre el número de grupos Microsoft 365 que se crean y usan. Para obtener más información, [vea Microsoft 365 informes en el](../../admin/activity-reports/office-365-groups.md)Centro de administración : Microsoft 365 grupos .
+- **Actividad de correo** electrónico: vea información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos. Para obtener más información, [vea Microsoft 365 informes en el Centro de administración - Actividad de correo electrónico](../../admin/activity-reports/email-activity.md).
+- **Uso de la aplicación de** correo electrónico: ver información sobre las aplicaciones de correo electrónico que se usan. Esto incluye el número total de conexiones para cada aplicación y las versiones de Outlook que se conectan. Para obtener más información, consulta Microsoft 365 informes en el Centro de [administración : Uso de aplicaciones de correo electrónico.](../../admin/activity-reports/email-apps-usage.md)
+- **Uso del** buzón: ver información sobre el almacenamiento usado, el consumo de cuota, el recuento de elementos y la última actividad (actividad de envío o lectura) de los buzones. Para obtener más información, [vea Microsoft 365 informes en el Centro de administración - Uso de buzones](../../admin/activity-reports/mailbox-usage.md).
 
-**Actividad de correo** electrónico: vea información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos.
-
-**Uso de la aplicación de** correo electrónico: ver información sobre las aplicaciones de correo electrónico que se usan. Esto incluye el número total de conexiones para cada aplicación y las versiones de Outlook que se conectan.
-
-**Uso del** buzón: ver información sobre el almacenamiento usado, el consumo de cuota, el recuento de elementos y la última actividad (actividad de envío o lectura) de los buzones.
-
-Consulte los siguientes recursos para obtener más información:
-
-- [Microsoft 365 Informes en el Centro de administración: Microsoft 365 grupos](../../admin/activity-reports/office-365-groups.md)
-- [Microsoft 365 Informes en el Centro de administración: actividad de correo electrónico](../../admin/activity-reports/email-activity.md)
-- [Microsoft 365 Informes en el Centro de administración: uso de aplicaciones de correo electrónico](../../admin/activity-reports/email-apps-usage.md)
-- [Microsoft 365 Informes en el Centro de administración: uso del buzón](../../admin/activity-reports/mailbox-usage.md)
-
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Informes de & cumplimiento normativo en el Centro Microsoft 365 administración
+## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Informes de seguridad en el portal Microsoft 365 defender
 
 Estos informes mejorados proporcionan una experiencia interactiva de informes para los administradores de EOP, que incluye información de resumen y la capacidad de explorar más detalles.
 
-**Defender para Office 365:** ver información sobre Caja fuerte vínculos y Caja fuerte adjuntos que forman parte de Microsoft Defender para Office 365.
-
-**EOP:** ver información sobre detecciones de malware, correo suplantado, detecciones de correo no deseado y flujo de correo desde y hacia su organización.
-
-[Ver informes de Defender para Office 365](view-reports-for-mdo.md)
+- **Defender para Office 365:** ver información sobre Caja fuerte vínculos y Caja fuerte adjuntos que forman parte de Microsoft Defender para Office 365. Para obtener más información, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
+- **EOP:** ver información sobre detecciones de malware, correo suplantado, detecciones de correo no deseado y flujo de correo desde y hacia su organización. Para obtener más información, vea [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Informes personalizados con Microsoft Graph
 
@@ -70,7 +57,7 @@ Sigue los mensajes de correo electrónico mientras viajan a través de EOP. Pued
 
 Puede usar esta información para responder eficazmente a las preguntas del usuario, solucionar problemas de flujo de correo, validar los cambios de directiva y aliviar la necesidad de ponerse en contacto con el soporte técnico para obtener asistencia.
 
-Consulte [Seguimiento de mensajes en el Centro de seguridad & cumplimiento](message-trace-scc.md).
+Vea [Seguimiento de mensajes en el Microsoft 365 Defender portal](message-trace-scc.md).
 
 ## <a name="audit-logging"></a>Registro de auditoría
 
@@ -79,6 +66,8 @@ Realiza un seguimiento de los cambios específicos realizados por los administra
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Informes, disponibilidad y latencia de los datos de seguimiento de mensajes
 
 En la tabla siguiente se describe cuándo los datos de seguimiento de mensajes y informes de EOP están disponibles y durante cuánto tiempo.
+
+<br>
 
 ****
 

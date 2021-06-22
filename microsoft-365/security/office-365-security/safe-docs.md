@@ -16,12 +16,12 @@ ms.collection:
 description: Obtenga información sobre Caja fuerte documentos en Microsoft 365 E5 o Seguridad de Microsoft 365 E5.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644757"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054427"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
@@ -32,17 +32,17 @@ ms.locfileid: "51644757"
 
 Caja fuerte Documents es una característica de Microsoft 365 E5 o Seguridad de Microsoft 365 E5 que usa [Microsoft Defender para](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) endpoint para examinar documentos y archivos que se abren en [vista](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) protegida o Protección de aplicaciones para [Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Caja fuerte Los documentos solo están disponibles para los usuarios *con Microsoft 365 E5* o *Seguridad de Microsoft 365 E5* licencias. Estas licencias no se incluyen en Microsoft Defender para Office 365 planes.
 
 - Caja fuerte Los documentos se admiten Aplicaciones Microsoft 365 para empresas versión 2004 o posterior Office 365 ProPlus (anteriormente conocido como Office 365 ProPlus).
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com>. Para ir directamente a la **página Caja fuerte datos adjuntos** de ATP, abra <https://protection.office.com/safeattachmentv2> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Caja fuerte datos adjuntos,** use <https://security.microsoft.com/safeattachmentv2> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Debe tener permisos asignados en la **Exchange Online** antes de poder realizar los procedimientos de este artículo:
+- Necesita permisos en Exchange Online **para** poder realizar los procedimientos de este artículo:
   - Para configurar Caja fuerte documentos, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
   - Para obtener acceso de solo lectura a Caja fuerte documentos, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
 
@@ -60,19 +60,19 @@ Para mantenerte protegido, Caja fuerte documentos envía archivos a la nube de [
 
 Los archivos enviados por Caja fuerte documentos no se conservan en Defender más allá del tiempo necesario para el análisis (normalmente, menos de 24 horas).
 
-## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Usar el Centro de seguridad & cumplimiento para configurar Caja fuerte documentos
+## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>Use el Microsoft 365 Defender para configurar Caja fuerte documentos
 
-1. En el Centro de & cumplimiento,  vaya a Directiva de administración de amenazas \>  \> **ATP Caja fuerte datos adjuntos** y, a continuación, haga clic en **Configuración global**.
+1. Abra el portal de Microsoft 365 Defender y vaya a Correo electrónico **&** de colaboración Directivas & reglas de amenazas Sección Directivas \>  \>  \>  de amenazas Caja fuerte \> **datos adjuntos.**
 
-2. En el **menú desplegable Configuración global** que aparece, configure las siguientes opciones:
+2. En la **página Caja fuerte datos adjuntos,** haga clic en **Configuración global**.
 
+3. En el **menú desplegable Configuración global** que aparece, configure las siguientes opciones:
    - **Activar documentos Caja fuerte para clientes Office**: Mueva el botón de alternancia a la derecha para activar la característica: Activar ![ ](../../media/scc-toggle-on.png) .
-
-   - **Permitir que** los usuarios haga clic en vista protegida incluso si Caja fuerte Documents identifica el archivo como malintencionado : Se recomienda dejar esta opción desactivada (dejar el botón de alternancia a la izquierda: ![ Desactivar ](../../media/scc-toggle-off.png) ).
+   - **Permitir que** los usuarios haga clic en la vista protegida incluso si Caja fuerte Documentos identifica el archivo como malintencionado : Se recomienda dejar esta opción desactivada (dejar el botón de alternancia a la izquierda: ![ Desactivar ](../../media/scc-toggle-off.png) ).
 
    Cuando haya terminado, haga clic en **Guardar**.
 
-   ![Caja fuerte Configuración de documentos después de seleccionar Configuración global en la Caja fuerte datos adjuntos.](../../media/safe-docs.png)
+   ![Caja fuerte Configuración de documentos después de seleccionar Configuración global en la Caja fuerte datos adjuntos.](../../media/safe-docs-global-settings.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Usar Exchange Online PowerShell para configurar Caja fuerte documentos
 
@@ -95,7 +95,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 ### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Incorporación al Servicio de extremo de Microsoft Defender para habilitar las capacidades de auditoría
 
-Para implementar Microsoft Defender para endpoint, debe pasar por las distintas fases de implementación. Después de la incorporación, puede configurar las capacidades de auditoría en el Centro de seguridad & cumplimiento.
+Para implementar Microsoft Defender para endpoint, debe pasar por las distintas fases de implementación. Después de la incorporación, puede configurar las capacidades de auditoría en el portal de Microsoft 365 Defender auditoría.
 
 Para obtener más información, [vea Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding). Si necesita ayuda adicional, consulte [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
 
@@ -103,7 +103,7 @@ Para obtener más información, [vea Onboard to the Microsoft Defender for Endpo
 
 Para comprobar que ha habilitado y configurado documentos Caja fuerte documentos, siga estos pasos:
 
-- En el Centro de seguridad y  cumplimiento de &, vaya a Directiva de administración de amenazas \>  \> **Datos** **adjuntos** de ATP Caja fuerte , haga clic en Configuración global y compruebe la opción Activar documentos de **Caja fuerte** para clientes de Office y Permitir que los usuarios haga clic en la vista protegida incluso si Caja fuerte Documents identifica el archivo como una configuración malintencionada.
+- En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas Directivas de amenazas sección Directivas de amenazas Caja fuerte Datos adjuntos Configuración global y compruebe la opción Activar documentos de Caja fuerte para clientes de Office y Permitir que los usuarios haga clic en la vista protegida incluso si Caja fuerte Documents identifica el archivo como una configuración malintencionada. \>  \>  \>  \>  \>   
 
 - Ejecute el siguiente comando en Exchange Online PowerShell y compruebe los valores de la propiedad:
 

@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a Microsoft 365 buzones de correo.
-ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861208"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054771"
 ---
 # <a name="archive-third-party-data"></a>Archivar datos de terceros
 
@@ -35,7 +35,7 @@ Microsoft 365 permite a los administradores usar conectores de datos para import
 
 ## <a name="third-party-data-connectors"></a>Conectores de datos de terceros
 
-En la tabla siguiente se enumeran los conectores de datos de terceros disponibles en el Microsoft 365 de cumplimiento. La tabla también resume las soluciones de cumplimiento que puede aplicar a datos de terceros después de importar y archivar en Microsoft 365. Vea la [siguiente sección para](#overview-of-compliance-solutions-that-support-third-party-data) obtener una descripción más detallada de cada solución de cumplimiento y cómo puede beneficiar a los datos de terceros.
+En la tabla siguiente se enumeran los conectores de datos de terceros disponibles en el Centro de cumplimiento de Microsoft 365. La tabla también resume las soluciones de cumplimiento que puede aplicar a datos de terceros después de importar y archivar en Microsoft 365. Vea la [siguiente sección para](#overview-of-compliance-solutions-that-support-third-party-data) obtener una descripción más detallada de cada solución de cumplimiento y cómo puede beneficiar a los datos de terceros.
 
 > [!TIP]
 > Haga clic en  el vínculo de la columna de datos de terceros para ir a las instrucciones paso a paso para crear un conector para ese tipo de datos.
@@ -69,8 +69,11 @@ En la tabla siguiente se enumeran los conectores de datos de terceros disponible
 |[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
 |[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
+|[Señal <sup>1</sup>](archive-signal-archiver-data.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[Skype Empresarial <sup>2</sup>](archive-skypeforbusiness-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Slack eDiscovery <sup>2</sup>](archive-slack-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[<sup>Sinfonía 2</sup>](archive-symphony-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[Telegram <sup>1</sup>](archive-telegram-archiver-data.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Red TELUS <sup>1</sup>](archive-telus-network-data.md)    |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Delimitado por texto <sup>2</sup>](archive-text-delimited-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
@@ -135,11 +138,11 @@ Como se mencionó anteriormente, los conectores de datos proporcionados por Tele
 |:---------|:---------|:---------|:---------|
 |Archivador de Android | Sí | No | No |
 |AT&T SMS/MMS Network Archiver | Sí | No | No |
-|Archivador de SMS/MMS | Sí | No | No |
+|Archivador de red DE SMS/MMS de Bell | Sí | No | No |
 |Enterprise Archivador de números | Sí | No | No |
-|O2 SMS y el archivador de red de voz | Sí         | No | No |
-|TELUS SMS Network Archiver | Sí | No | No |
-|Verizon SMS/MMS Network Archiver | Sí | No | No |
+|SMS de O2 y archivador de red de voz | Sí         | No | No |
+|Archivador de red DE SMS TELUS | Sí | No | No |
+|Archivador de red DE SMS/MMS de Verizon | Sí | No | No |
 |WeChat Archiver | Sí | No | No |
 |Archivador de WhatsApp | Sí | No | No |
 |||||

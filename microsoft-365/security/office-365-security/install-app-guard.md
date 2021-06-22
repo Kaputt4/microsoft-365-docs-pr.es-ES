@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evite que ataques actuales y emergentes como vulnerabilidades o vínculos malintencionados interrumpan la productividad de los empleados y la seguridad empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0fa6ad884c6b21457c8359cf82e32e4b8c100ba
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 39d6a9c3a3c3a5e2c736025a26c22588f9f08bb0
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488316"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055263"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
@@ -120,7 +120,6 @@ Al abrirse, el archivo debe mostrar algunos indicadores visuales de que el archi
 ## <a name="configure-application-guard-for-office"></a>Configurar Application Guard para Office
 
 Office las siguientes directivas para permitirle configurar las capacidades de Application Guard para Office. Estas directivas se pueden configurar a través de directivas de grupo o a través [del Office de directivas en la nube.](/DeployOffice/overview-office-cloud-policy-service)
-Vea el conjunto de configuración establecido por el administrador revisando la configuración de la directiva de grupo en User **Configuration Administrative Templates Microsoft Office \\ \\ 2016 \\ Security Configuración Trust Center Application \\ \\ Guard**.
 
 
 > [!NOTE]
@@ -234,6 +233,9 @@ Cuando se cumple esta heurística, Office creará previamente un contenedor de A
 ## <a name="known-issues"></a>Problemas conocidos
 
 * La selección de vínculos web ( `http` o ) no abre el `https` explorador.
-* En este momento, no se admite pegar imágenes o contenido de formato de texto enriquecido (RTF) en Office documentos abiertos con Application Guard.
-* La configuración predeterminada para la directiva de protección de tipos de archivo no admitidos es bloquear la apertura de tipos de archivo no compatibles de Information Rights Management (IRM), CSV o HTML.
+* La configuración predeterminada de la directiva de protección de copiar y pegar es habilitar el acceso del Portapapeles solo al texto.
+* La configuración predeterminada para la directiva de protección de tipos de archivo no admitidos es bloquear la apertura de tipos de archivo no admitidos que están cifrados o tienen establecido Information Rights Management (IRM). Esto incluye archivos que tienen etiquetas Microsoft Information Protection de confidencialidad mediante cifrado (confidencial o extremadamente confidencial).
+* Los archivos CSV y HTML no se admiten en este momento.
+* Application Guard for Office actualmente no funciona con volúmenes comprimidos NTFS. Si ve un error "ERROR_VIRTUAL_DISK_LIMITATION" intente descomprimir el volumen.
 * Las actualizaciones de .NET pueden provocar que los archivos no se abran en Application Guard. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se tomen este error. Obtenga más información sobre el problema en [Recibir un mensaje de error](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)al intentar abrir Protección de aplicaciones de Windows Defender o Windows sandbox .
+* Consulte [Preguntas más frecuentes: Protección de aplicaciones de Microsoft Defender para obtener información adicional.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
