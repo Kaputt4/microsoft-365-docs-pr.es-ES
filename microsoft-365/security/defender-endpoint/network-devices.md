@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 86b8a37fd6b2d6f9906321b5d74de0e21c45fca3
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862072"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062140"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 
@@ -34,11 +34,6 @@ ms.locfileid: "51862072"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-> [!IMPORTANT]
-> **El examen y la administración de dispositivos de red se encuentra actualmente en versión preliminar pública**<br>
-> Esta versión preliminar se proporciona sin un contrato de nivel de servicio y no se recomienda para cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan capacidades limitadas.
-> Para obtener más información, vea Características de vista previa [de Microsoft Defender para endpoint](preview.md).
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 

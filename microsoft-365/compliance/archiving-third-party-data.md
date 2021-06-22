@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a Microsoft 365 buzones de correo.
-ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054771"
+ms.locfileid: "53061725"
 ---
 # <a name="archive-third-party-data"></a>Archivar datos de terceros
 
@@ -143,7 +143,6 @@ Como se mencionó anteriormente, los conectores de datos proporcionados por Tele
 |SMS de O2 y archivador de red de voz | Sí         | No | No |
 |Archivador de red DE SMS TELUS | Sí | No | No |
 |Archivador de red DE SMS/MMS de Verizon | Sí | No | No |
-|WeChat Archiver | Sí | No | No |
 |Archivador de WhatsApp | Sí | No | No |
 |||||
 

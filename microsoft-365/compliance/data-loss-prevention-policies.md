@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: material de referencia de prevención de pérdida de datos
-ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 5c01b6419a9af100cfaedccbd5a9c4923ca3e42f
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572566"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061783"
 ---
 # <a name="data-loss-prevention-reference"></a>Referencia de prevención de pérdida de datos
  
@@ -110,9 +110,6 @@ Si elige incluir grupos de distribución que son específicos en Exchange, la di
 Si elige incluir o excluir sitios de SharePoint, una directiva DLP no podrá contener más de 100 inclusiones y exclusiones. Aunque este límite exista, puede superarlo si aplica una directiva para toda la organización o aplicada a ubicaciones completas.
 
 Si decide incluir o excluir grupos o cuentas de OneDrive específicas, una directiva DLP no puede contener más de 100 cuentas de usuario o 50 grupos como inclusión o exclusión.
-
-> [!NOTE]
-> El ámbito de la directiva de OneDrive para la Empresa con cuentas o grupos está en versión preliminar pública. Durante esta fase, puede o bien incluir o bien excluir grupos y cuentas de usuario como parte de una directiva DLP. Sin embargo, no se permite incluir y excluir como parte de la misma directiva.
   
 ### <a name="rules"></a>Reglas
 
@@ -542,7 +539,7 @@ Cuando crea una directiva DLP que incluye Microsoft Teams como ubicación, la di
  
 ## <a name="permissions"></a>Permisos
 
-Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el Centro de seguridad y cumplimiento. De forma predeterminada, el administrador de espacios empresariales tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otros usuarios acceso al Centro de seguridad y cumplimiento, sin darles todos los permisos de un administrador de espacios empresariales. Para hacerlo, le recomendamos:
+De forma predeterminada, los administradores globales, los administradores de seguridad y los administradores de cumplimiento tendrán acceso para crear y aplicar una directiva DLP. Otros miembros del equipo de cumplimiento que crearán directivas DLP necesitan permisos en el Centro de &amp; cumplimiento de seguridad. De forma predeterminada, el administrador de inquilinos tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otras personas acceso al Centro de cumplimiento de seguridad, sin darles todos los permisos de un administrador &amp; de inquilinos. Para ello, le recomendamos que:
   
 1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
     

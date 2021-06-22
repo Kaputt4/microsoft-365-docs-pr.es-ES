@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: bf607890fcae34e95da15954349e7190bdbb19ac
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878105"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061666"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -77,9 +77,6 @@ Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-cla
 - Administrador de cumplimiento
 - Administrador de seguridad
 - Administrador de datos de cumplimiento
-- Lector global
-- Lector de seguridad
-- Lector de informes
 
 ### <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 

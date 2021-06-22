@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Resumen: Cree sitios de grupo de SharePoint Online públicos, privados, confidenciales o extremadamente confidenciales en el entorno de desarrollo y prueba de una campaña política.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: fcba6e2f3939115d6dfbaae80d322246bdeadee9
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028780"
+ms.locfileid: "53029902"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
 
@@ -34,8 +34,8 @@ ms.locfileid: "53028780"
 
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
- **Resumen:** Cree sitios de grupo de SharePoint Online públicos, privados, confidenciales o extremadamente confidenciales en un entorno de desarrollo y prueba para una campaña política. 
-   
+ **Resumen:** Cree sitios de grupo de SharePoint Online públicos, privados, confidenciales o extremadamente confidenciales en un entorno de desarrollo y prueba para una campaña política.
+
 Siga las instrucciones de este artículo para crear un entorno de desarrollo y prueba que incluya los cuatro tipos distintos de sitios de grupo de SharePoint Online para la solución de [Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md). Estos sitios se describen en detalle en el tema 10, titulado **SharePoint y OneDrive para la Empresa**.
 
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y prueba de campaña política
@@ -46,43 +46,46 @@ En primer lugar, siga las instrucciones de [Configurar grupos y usuarios en un e
 
 En esta fase se crean las etiquetas para los diferentes niveles de seguridad de las carpetas de documentos de sitios de grupo de SharePoint Online.
 
-1. Si es necesario, inicie sesión en el Centro de administración con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Dónde iniciar sesión en Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si es necesario, inicie sesión en el Centro de administración de Microsoft 365 (<https://admin.microsoft.com>) con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. En la pestaña **Inicio de Microsoft Office**, haga clic en el icono **Administrador**.
+2. En la página **Inicio**, haga clic en **Mostrar todos**. En la sección **Centros de administración** que aparece, haga clic en **Cumplimiento**.
 
-3. En la nueva pestaña **Centro de administración de Microsoft 365** del explorador, haga clic en **Centros de administración > Seguridad y Cumplimiento**.
+3. En la página **Inicio** del Centro de cumplimiento de Microsoft 365, vaya a la sección **Soluciones** \> **Information Protection**. Para ir directamente a la página **Information Protection**, use <https://compliance.microsoft.com//informationprotection>.
 
-4. En la nueva pestaña **Inicio - Seguridad y cumplimiento** del explorador, haga clic en **Clasificaciones > Etiquetas**.
+4. En la página de **Information Protection**, compruebe que la etiqueta **Etiqueta** esté seleccionada y, a continuación, haga clic en ![icono de Crear una etiqueta](../../media/m365-cc-sc-create-icon.png) **Crear una etiqueta**.
 
-5. En el panel **Inicio > Etiquetas**, haga clic en **Crear una etiqueta**.
+5. Se abrirá el asistente de **Nueva etiqueta de confidencialidad**. En el paso **Nombre y descripción**, escriba los valores siguientes:
+   - **Nombre**: escriba **Interno**.
+   - **Nombre para mostrar**
+   - **Descripción para usuarios**
 
-6. En el panel **Asignar un nombre a la etiqueta**, escriba **Interna** y haga clic en **Siguiente**.
+   Cuando termine, haga clic en **Siguiente**.
 
-7. En el panel **Configuración de etiquetas**, haga clic en **Siguiente**.
+6. En el panel **Configuración de etiquetas**, haga clic en **Siguiente**.
 
-8. En el panel **Revise su configuración**, haga clic en **Crear esta etiqueta** y luego en **Cerrar**.
+7. En el panel **Revise su configuración**, haga clic en **Crear esta etiqueta** y luego en **Cerrar**.
 
-9. Repita los pasos del 5 al 8 para estas etiquetas adicionales:
+8. Repita los pasos del 5 al 8 para estas etiquetas adicionales:
 
    - Private
    - Confidencial
    - Extremadamente confidencial
 
-10. En el panel **Inicio > Etiquetas**, haga clic para **Publish labels** (Publicar etiquetas).
+9. En el panel **Inicio > Etiquetas**, haga clic para **Publish labels** (Publicar etiquetas).
 
-11. En el panel **Elegir etiquetas para publicar**, haga clic en **Elegir etiquetas para publicar**.
+10. En el panel **Elegir etiquetas para publicar**, haga clic en **Elegir etiquetas para publicar**.
 
-12. En el panel de **elección de etiquetas**, haga clic en **Agregar** y seleccione las cuatro etiquetas.
+11. En el panel de **elección de etiquetas**, haga clic en **Agregar** y seleccione las cuatro etiquetas.
 
-13. Haga clic en **Listo**.
+12. Haga clic en **Listo**.
 
-14. En el panel **Elegir etiquetas para publicar**, haga clic en **Siguiente**.
+13. En el panel **Elegir etiquetas para publicar**, haga clic en **Siguiente**.
 
-15. En el panel **Elegir ubicaciones**, haga clic en **Siguiente**.
+14. En el panel **Elegir ubicaciones**, haga clic en **Siguiente**.
 
-16. En el panel **Escriba un nombre para la directiva**, escriba **Campaña** en **Nombre** y haga clic en **Siguiente**.
+15. En el panel **Escriba un nombre para la directiva**, escriba **Campaña** en **Nombre** y haga clic en **Siguiente**.
 
-17. En el panel **Revise su configuración**, haga clic en **Publicar etiquetas** y luego en **Cerrar**.
+16. En el panel **Revise su configuración**, haga clic en **Publicar etiquetas** y luego en **Cerrar**.
 
 ## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>Fase 3: Crear los sitios de grupo de SharePoint Online
 

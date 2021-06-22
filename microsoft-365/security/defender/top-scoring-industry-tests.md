@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028504"
+ms.locfileid: "53029626"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuaciones más altas en las pruebas del sector
 
@@ -39,7 +39,7 @@ Microsoft 365 Defender combina las funcionalidades de [Microsoft Defender para p
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE: Detección demostrada, respuesta y protección en el mundo real contra ataques avanzados
 
-Una parte fundamental del el enfoque de pruebas de MITRE es evitar los ataques del mundo real para comprender si las soluciones pueden detectarlas y responder a ellas correctamente. Mientras la prueba se centra en la detección y respuesta de puntos de conexión, los ataques APT29 simulados de MITRE abarcan varios dominios de ataque, lo que crea oportunidades para ayudar a los defensores, más allá de la protección de puntos de conexión. Microsoft ha expandido la visibilidad de los defensores más allá del punto de conexión con Microsoft 365 Defender.
+Una parte fundamental del enfoque de pruebas de MITRE es imitar los ataques del mundo real para comprender si las soluciones ofrecen la detección y respuesta adecuadas. Mientras que la prueba se centra en la detección y respuesta de puntos de conexión, los ataques APT29 simulados de MITRE abarcan varios dominios de ataque, lo que crea oportunidades para ayudar a las defensas, más allá de la protección de puntos de conexión. Microsoft ha expandido la visibilidad de los defensores más allá del punto de conexión con Microsoft 365 Defender.
 
 - Evaluación basada en ATT&CK de Microsoft 365 Defender (mayo de 2020): [Detección inicial en el mundo real](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
@@ -79,7 +79,7 @@ La prueba de seguridad empresarial consta de tres partes principales: la prueba 
 
 - Prueba de seguridad empresarial de 2020 (marzo - junio): [Protección en el mundo real 99,7 %](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
 
-- Prueba de seguridad empresarial de 2019 (agosto - noviembre): [Protección en el mundo real 99,6 %](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
+- Prueba de seguridad empresarial de 2019 (agosto - noviembre): [Protección en el mundo real 99,6 %](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
 
 - Prueba de seguridad empresarial de 2019 (marzo - junio): [Protección en el mundo real 99,9 %](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Análisis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 

@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en organizaciones de Exchange Online Protection (EOP) con o sin buzones Exchange Online correo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8633644ab0380cf2adcf30c006a7d6d141a6040a
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1dcfba32a5c76915c8c905d55b69712162efac48
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054571"
+ms.locfileid: "53062231"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
@@ -126,11 +126,14 @@ La creación de una directiva contra suplantación de identidad personalizada en
      - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
      - **Poner en cuarentena el mensaje**
 
-   - **Sugerencias de seguridad & indicadores:** esta configuración solo está disponible si seleccionó Habilitar la inteligencia de suplantación **en** la página anterior:
-     - **Mostrar (?)** para remitentes no autenticados para suplantación de identidad: agrega un signo de interrogación a la foto del remitente  en el cuadro De de Outlook si el mensaje no pasa comprobaciones SPF o DKIM y el mensaje no pasa dmarc ni autenticación compuesta [.](email-validation-and-authentication.md#composite-authentication)
-     - **Mostrar etiqueta "via":** agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección De si es diferente del dominio en la firma DKIM o la dirección **MAIL FROM.**
+   - **Sugerencias de seguridad & indicadores**:
+     - **Mostrar el primer contacto consejo de seguridad**: Para obtener más información, vea First contact [consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - **Mostrar (?)** para remitentes no autenticados para suplantación de identidad: agrega un signo de interrogación a la foto del remitente en el cuadro De de Outlook si el mensaje no pasa comprobaciones SPF o DKIM y el mensaje no pasa dmarc ni autenticación compuesta <sup>\*</sup> .  [](email-validation-and-authentication.md#composite-authentication)
+     - **Mostrar etiqueta "via":** agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección De si es diferente del dominio en la firma DKIM o la dirección <sup>\*</sup> **MAIL FROM.**
 
      Para activar una configuración, active la casilla. Para desactivarla, desactive la casilla.
+
+     <sup>\*</sup> Esta configuración solo está disponible si seleccionó Habilitar la inteligencia **de suplantación** en la página anterior. Para obtener más información, vea [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).
 
    Cuando termine, haga clic en **Siguiente**.
 

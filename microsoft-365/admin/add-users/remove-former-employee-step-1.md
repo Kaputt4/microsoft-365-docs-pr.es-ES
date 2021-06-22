@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Bloquear el acceso a los servicios Microsoft 365 un antiguo empleado.
-ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840855"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061827"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Paso 1: impedir que un antiguo empleado inicia sesión y bloquee el acceso a Microsoft 365 servicios
 
@@ -41,12 +41,12 @@ Si necesita impedir inmediatamente el acceso de inicio de sesión de un usuario,
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 2. Seleccione el cuadro situado junto al nombre del usuario y, a continuación, seleccione **Restablecer contraseña.**
 3. Escriba una nueva contraseña y, a continuación, **seleccione Restablecer**. (No se lo envíe).
-4. Seleccione el nombre del usuario para ir al panel de propiedades y, en la pestaña **Cuenta,** seleccione **Iniciar la sesión.**
+4. Seleccione el nombre del usuario para ir al  panel de propiedades y, en la pestaña Cuenta, seleccione **Cerrar sesión de todas las sesiones**.
 
 Dentro de una hora , o después de salir de la página Microsoft 365 actual en la que se encuentran, se les pedirá que inicien sesión de nuevo. Un token de acceso es bueno durante una hora, por lo que la escala de tiempo depende de cuánto tiempo queda en ese token y de si navegan fuera de su página web actual.
   
 > [!IMPORTANT]
-> Si el usuario está en Outlook en la web, haciendo clic en su buzón, es posible que no se eche inmediatamente. Tan pronto como seleccionen un icono diferente, como OneDrive, o actualicen su explorador, se inicia el inicio de sesión.
+> Si el usuario está en Outlook en la Web, simplemente haciendo clic en su buzón, es posible que no se eche inmediatamente. Tan pronto como seleccionen un icono diferente, como OneDrive, o actualicen su explorador, se inicia el inicio de sesión.
   
 Para usar PowerShell para cerrar la sesión de un usuario inmediatamente, consulte el cmdlet [Revoke-AzureADUserAllRefreshToken.](/powershell/module/azuread/revoke-azureaduserallrefreshtoken)
   

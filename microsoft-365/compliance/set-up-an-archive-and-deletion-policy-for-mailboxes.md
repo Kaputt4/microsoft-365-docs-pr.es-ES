@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo crear una directiva de archivado y eliminación en Microsoft 365 que mueve automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919536"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062172"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 
@@ -294,6 +294,6 @@ En el paso 4, debe asignar la nueva directiva de retención a los buzones existe
     |No eliminar nunca  <br/> |Esta etiqueta impide que los elementos se eliminen mediante una directiva de retención.  <br/> |Integrado  <br/> |Personal; los usuarios pueden aplicar esta etiqueta.  <br/> |
     |Mover al archivo después de 1 años en forma personal  <br/> |Mueve elementos al buzón de archivo después de 1 año.  <br/> |Integrado  <br/> |Personal; los usuarios pueden aplicar esta etiqueta.  <br/> |
 
-    > <sup>\*</sup>Los usuarios pueden usar la herramienta Recuperar elementos eliminados en Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada es de 14 días en Exchange Online. Un administrador puede usar Windows PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: Recuperar elementos eliminados en Outlook para [Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y Cambiar el período de retención de elementos eliminados para un buzón [en Exchange Online](https://www.microsoft.com/?ref=go)
+    > <sup>\*</sup>Los usuarios pueden usar la herramienta Recuperar elementos eliminados en Outlook y Outlook en la Web (anteriormente conocido como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada es de 14 días en Exchange Online. Un administrador puede usar Windows PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: Recuperar elementos eliminados en Outlook para [Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y Cambiar el período de retención de elementos eliminados para un buzón [en Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
   
 - El uso de la etiqueta de retención Mover a archivo de elementos recuperables **durante 14** días ayuda a liberar espacio de almacenamiento en la carpeta Elementos recuperables del buzón principal del usuario. Esto resulta útil cuando el buzón de un usuario está en espera, lo que significa que nunca se elimina permanentemente el buzón del usuario. Sin mover elementos al buzón de archivo, es posible que se alcance la cuota de almacenamiento para la carpeta Elementos recuperables en el buzón principal. Para obtener más información sobre esto y cómo evitarlo, vea Aumentar la cuota de elementos recuperables para [buzones en espera.](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)

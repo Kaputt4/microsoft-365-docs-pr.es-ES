@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas avanzadas contra la suplantación de identidad que están disponibles en organizaciones con Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbf90f52127e96e08f1c176a23d5f5ab1d6d86c4
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dd69e00b0e8929752341bf3d2b0abde88921066b
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054544"
+ms.locfileid: "53061881"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -230,7 +230,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
        - **Poner en cuarentena el mensaje**
 
    - **Sugerencias de & indicadores** de seguridad: Configure las siguientes opciones:
-     - Mostrar primer contacto **consejo de seguridad:** este consejo de seguridad reemplaza la necesidad de crear reglas de flujo de correo (también conocidas como reglas de transporte) que agreguen el encabezado **denominado X-MS-Exchange-EnableFirstContactSafetyTip** por el valor **Enable** to messages.
+     - **Mostrar el primer contacto consejo de seguridad**: Para obtener más información, vea First contact [consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip).
      - **Mostrar la suplantación de consejo de seguridad:** esta configuración solo está disponible si seleccionó Habilitar usuarios **para** proteger en la página anterior.
      - **Mostrar la suplantación de dominio consejo de seguridad:** esta configuración solo está disponible si seleccionó Habilitar dominios **para** proteger en la página anterior.
      - **Mostrar caracteres inusuales de suplantación de usuario consejo de seguridad** Esta configuración solo está disponible si seleccionó **Habilitar** usuarios para proteger o Habilitar dominios **para** proteger en la página anterior.

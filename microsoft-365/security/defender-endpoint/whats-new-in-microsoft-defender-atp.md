@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ceca8ac76f63ef7da34f4222312e9e03a3b0e23a
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844195"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062256"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -46,7 +46,17 @@ Para obtener más información sobre las características de vista previa, vea [
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="june-2021"></a>Junio de 2021
+
+- [Detección de dispositivo](device-discovery.md) <br> Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. A continuación, puede incorporar dispositivos detectados para reducir los riesgos asociados con tener puntos de conexión no administrados en la red.
+
+   > [!IMPORTANT]
+   > La detección estándar será el modo predeterminado para todos los clientes a partir del 19 de julio de 2021. Puede optar por conservar el modo básico a través de la página de configuración. 
+
+
+- [Las definiciones de grupo de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) ahora pueden incluir varios valores para cada condición. Puedes establecer varias etiquetas, nombres de dispositivo y dominios en la definición de un único grupo de dispositivos.
+
+## <a name="march-2021"></a>Marzo 2021
 - [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016 y Windows Server 2019 mediante un método denominado *tenant attach*. 
 
 ## <a name="january-2021"></a>Enero de 2021

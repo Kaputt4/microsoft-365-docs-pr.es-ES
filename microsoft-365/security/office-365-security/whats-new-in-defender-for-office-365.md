@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932823"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062199"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -42,6 +42,14 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 > [!TIP]
 > ¿Aún no tiene Microsoft Defender para Office 365? [Póngase en contacto con ventas para iniciar una versión de prueba.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
+## <a name="june-2021"></a>Junio de 2021
+
+- Nueva configuración del primer contacto consejo de seguridad dentro de las directivas contra suplantación de identidad. Este consejo de seguridad se muestra cuando los destinatarios reciben por primera vez un correo electrónico de un remitente o no suelen recibir correo electrónico de un remitente. Para obtener más información sobre esta configuración y cómo configurarla, consulte los siguientes artículos:
+
+- [Primer contacto consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)
+- [Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)
+
 ## <a name="aprilmay-2021"></a>Abril/mayo de 2021
 
 - Página [de](mdo-email-entity-page.md)entidad de correo electrónico: una vista unificada de 360 grados de un correo electrónico con información enriquecida sobre amenazas, autenticación y detecciones, detalles de detonación y una nueva experiencia de vista previa de correo electrónico.
@@ -54,6 +62,7 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 - Aumentar los límites de exportación de registros de 9990 a 200.000 en [experiencias de búsqueda](threat-explorer.md)
 - Ampliar el límite de búsqueda y retención de datos del Explorador (y detecciones en tiempo real) para los inquilinos de prueba de 7 (límite anterior) a 30 días en experiencias de [búsqueda](threat-explorer.md)
 - Nuevos pivotes de búsqueda denominados **Dominio** suplantado y Usuario suplantado en el Explorador (y detecciones en tiempo real) para buscar ataques de suplantación contra usuarios o dominios protegidos.  Para obtener más información, vea [detalles](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender para Office 365 Plan 1 o Plan 2)
+- Nuevo primer contacto consejo de seguridad cuando los destinatarios reciben por primera vez un correo electrónico de un remitente o no suelen recibir correo electrónico de un remitente. Para obtener más información sobre esta configuración y cómo configurarla mediante Exchange de flujo de correo (también conocidas como reglas de [transporte),](set-up-anti-phishing-policies.md#first-contact-safety-tip)vea First contact consejo de seguridad .
 
 ## <a name="december-2020"></a>Diciembre de 2020
 
@@ -127,7 +136,7 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Microsoft 365 guía básica](https://www.microsoft.com/microsoft-365/roadmap)
 

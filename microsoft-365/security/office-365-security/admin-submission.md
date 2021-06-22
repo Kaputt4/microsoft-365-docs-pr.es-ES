@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b671ce5a44c7be61331a121b49e96658cf14bab1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964806"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062032"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -91,7 +91,8 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 5. Cuando haya terminado, haga clic en el **botón Enviar.**
 
-   ![Ejemplo de envío de nueva dirección URL](../../media/submission-flyout-email.PNG)
+> [!div class="mx-imgBorder"]
+> ![Ejemplo de envío de nueva dirección URL](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Enviar una dirección URL sospechosa a Microsoft
 
@@ -105,7 +106,8 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 4. Cuando haya terminado, haga clic en el **botón Enviar.**
 
-   ![Ejemplo de nuevo envío de correo electrónico](../../media/submission-url-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![Ejemplo de nuevo envío de correo electrónico](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Enviar datos adjuntos de correo electrónico sospechosos a Microsoft
 
@@ -119,7 +121,8 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 4. Cuando haya terminado, haga clic en el **botón Enviar.**
 
-   ![Ejemplo de nuevo envío de datos adjuntos](../../media/submission-file-flyout.PNG)
+> [!div class="mx-imgBorder"]
+> ![Ejemplo de nuevo envío de datos adjuntos](../../media/submission-file-flyout.png)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Ver envíos de administrador a Microsoft
 
@@ -157,7 +160,8 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
      Cuando haya terminado, haga clic en **Aplicar**.
 
-     ![Nuevas opciones de filtro para envíos de administrador](../../media/admin-submission-email-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Nuevas opciones de filtro para envíos de administrador](../../media/admin-submission-filters.png)
 
    - Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los siguientes valores de la lista desplegable:
      - **Ninguna**
@@ -170,7 +174,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ### <a name="admin-submission-rescan-details"></a>Detalles de reescaneo de envío de administrador
 
-Los mensajes que se envían en envíos de administrador se examinan de nuevo y los resultados se muestran en el menú desplegable de detalles de envíos:
+Los mensajes que se envían en envíos de administrador se revisan y los resultados se muestran en el menú desplegable de detalles de envíos:
 
 - Si hubo un error en la autenticación de correo electrónico del remitente en el momento de la entrega.
 - Información sobre los aciertos de directiva que puedan haber afectado o invalidado el veredicto de un mensaje.
@@ -214,7 +218,8 @@ Si ha implementado el complemento Report  [Message](enable-the-report-message-ad
 
      Cuando haya terminado, haga clic en **Aplicar**.
 
-    ![Nuevas opciones de filtro para envíos de usuarios](../../media/user-submissions-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Nuevas opciones de filtro para envíos de usuarios](../../media/admin-submission-reported-messages.png)
 
    - Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los siguientes valores de la lista desplegable:
      - **Ninguna**
@@ -245,4 +250,5 @@ En la **pestaña Mensajes** notificados por el usuario, seleccione un mensaje en
 - **Notificar correo no deseado**
 - **Investigación de desencadenadores**
 
-![Nuevas opciones en el botón Acción](../../media/user-submission-custom-mailbox-action-button.png)
+> [!div class="mx-imgBorder"]
+> ![Nuevas opciones en el botón Acción](../../media/admin-submission-main-action-button.png)

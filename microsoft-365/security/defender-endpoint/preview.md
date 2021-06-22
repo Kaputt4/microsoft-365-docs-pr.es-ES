@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c77762de4dbd70922eb5623f801837bf6454ec7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 65edf54ea0bf5cb0a0210dd306db07c756149f65
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842368"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062131"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
@@ -61,12 +61,6 @@ Active la configuración de la experiencia de la versión preliminar para estar 
 ## <a name="preview-features"></a>Versión preliminar de las características
 
 En la versión preliminar se incluyen las siguientes características:
-
-- [Detección de dispositivo](device-discovery.md) <br> Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. A continuación, puede incorporar dispositivos detectados para reducir los riesgos asociados con tener puntos de conexión no administrados en la red.
-
-   > [!IMPORTANT]
-   > La detección estándar será el modo predeterminado para todos los clientes a partir del 19 de julio de 2021. Puede optar por conservar el modo básico a través de la página de configuración. 
-
 
 - [Filtrado de contenido web](web-content-filtering.md) <br> El filtrado de contenido web forma parte de las funciones de protección web en Microsoft Defender para endpoint. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
 
