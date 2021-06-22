@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 87fb5c62b520168a686cc0b95a321becdd4656ba
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022875"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052968"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Evaluación de vulnerabilidades de software de exportación por dispositivo
 
@@ -41,16 +41,16 @@ Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la 
 
 1. [Exportar respuesta JSON de evaluación de vulnerabilidades **de software**](#1-export-software-vulnerabilities-assessment-json-response)  La API extrae todos los datos de la organización como respuestas Json. Este método es el mejor para _organizaciones pequeñas con dispositivos de menos de 100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
 
-2. [Evaluación de vulnerabilidades de software de exportación **a través de archivos**](#2-export-software-vulnerabilities-assessment-via-files) Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Via-files se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Almacenamiento de Azure. Esta API le permite descargar todos los datos de Almacenamiento de Azure de la siguiente manera:
+2. [Evaluación de vulnerabilidades de software de exportación **a través de archivos**](#2-export-software-vulnerabilities-assessment-via-files) Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Via-files se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
 
    - Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.
 
    - Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
 3. [Respuesta JSON de evaluación de vulnerabilidades de software de **exportación delta**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Devuelve una tabla con una entrada para cada combinación única de: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId y EventTimestamp.
-La API extrae datos de la organización como respuestas Json. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados. <br><br> A diferencia de la "evaluación completa de vulnerabilidades de software (respuesta JSON)", que se usa para obtener una instantánea completa de la evaluación de vulnerabilidades de software de su organización por dispositivo, la llamada a la API de OData de exportación delta se usa para capturar solo los cambios que han ocurrido entre una fecha seleccionada y la fecha actual (la llamada a la API "delta"). En lugar de obtener una exportación completa con una gran cantidad de datos cada vez, solo se obtiene información específica sobre vulnerabilidades nuevas, fijas y actualizadas. La llamada a la API de respuesta JSON de exportación delta también se puede usar para calcular diferentes KPI, como "¿cuántas vulnerabilidades se han corregido?". o "¿cuántas vulnerabilidades nuevas se agregaron a mi organización?" <br><br> Dado que la llamada a la API de respuesta JSON de exportación de Delta para vulnerabilidades de software devuelve datos solo para un intervalo de fechas de destino, no se considera una _exportación completa._
+La API extrae datos de la organización como respuestas Json. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados. <br><br> A diferencia de la "evaluación completa de vulnerabilidades de software (respuesta JSON)", que se usa para obtener una instantánea completa de la evaluación de vulnerabilidades de software de su organización por dispositivo, la llamada a la API de exportación delta se usa para capturar solo los cambios que se han producido entre una fecha seleccionada y la fecha actual (la llamada a la API "delta"). En lugar de obtener una exportación completa con una gran cantidad de datos cada vez, solo se obtiene información específica sobre vulnerabilidades nuevas, fijas y actualizadas. La llamada a la API de respuesta JSON de exportación delta también se puede usar para calcular diferentes KPI, como "¿cuántas vulnerabilidades se han corregido?". o "¿cuántas vulnerabilidades nuevas se agregaron a mi organización?" <br><br> Dado que la llamada a la API de respuesta JSON de exportación de Delta para vulnerabilidades de software devuelve datos solo para un intervalo de fechas de destino, no se considera una _exportación completa._
 
-Los datos recopilados (mediante _OData_ o a través de _archivos)_ son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
+Los datos recopilados (mediante la respuesta _Json_ o a través de _archivos)_ son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
 
 > [!Note]
 >
@@ -100,7 +100,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 <br/>
 
-Propiedad (ID) | Tipo de datos | Description | Ejemplo de un valor devuelto
+Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 CveId | string | Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE). | CVE-2020-15992
 CvssScore | string | La puntuación CVSS de CVE. | 6.2
@@ -309,7 +309,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >- Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
 >
 
-Propiedad (ID) | Tipo de datos | Description | Ejemplo de un valor devuelto
+Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos | cadena de \[ matriz\]  | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
 GeneratedTime | string | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z
@@ -377,7 +377,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### <a name="35-properties"></a>3.5 Propiedades
 
-Cada registro devuelto contiene todos los datos de la evaluación completa de vulnerabilidades de software de exportación por parte de la API de OData del dispositivo, además de dos campos adicionales:  _**EventTimestamp**_ y _**Status**_.
+Cada registro devuelto contiene todos los datos de la evaluación completa de vulnerabilidades de software de exportación por API de dispositivo, además de dos campos adicionales:  _**EventTimestamp**_ y _**Status**_.
 
 >[!NOTE]
 >- Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, por lo que use solo las columnas documentadas.
@@ -385,14 +385,14 @@ Cada registro devuelto contiene todos los datos de la evaluación completa de vu
 >- Las propiedades definidas en la tabla siguiente se enumeran alfabéticamente, por identificador de propiedad.  Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en esta tabla.
 <br><br/>
 
-Propiedad (ID) | Tipo de datos | Description | Ejemplo del valor devuelto
+Propiedad (ID) | Tipo de datos | Descripción | Ejemplo del valor devuelto
 :---|:---|:---|:---
 CveId | string | Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE). | CVE-2020-15992  
 CvssScore | string | La puntuación CVSS de CVE. | 6.2  
 DeviceId | string | Identificador único del dispositivo en el servicio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
 DeviceName | string | Nombre de dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com  
 DiskPaths | Array[string] | Prueba en disco de que el producto está instalado en el dispositivo. | [ "C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]  
-EventTimestamp | Cadena | Hora en que se encontró este evento delta. | 2021-01-11T11:06:08.291Z
+EventTimestamp | String | Hora en que se encontró este evento delta. | 2021-01-11T11:06:08.291Z
 ExploitabilityLevel | string | El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit  
 FirstSeenTimestamp | string | Primera vez que se vio la CVE de este producto en el dispositivo. | 2020-11-03 10:13:34.8476880  
 Id | string | Identificador único del registro. | 123ABG55_573AG&mnp!  
@@ -406,7 +406,7 @@ RegistryPaths  | Array[string] | El Registro evidencia que el producto está i
 SoftwareName | string | Nombre del producto de software. | chrome  
 SoftwareVendor | string | Nombre del proveedor de software. | google  
 SoftwareVersion | string | Número de versión del producto de software. | 81.0.4044.138  
-Estado | Cadena | **Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo)  (1) **Corregido**(si esta vulnerabilidad ya no existe en el dispositivo, lo que   significa que se corrigió). (2)  **Actualizado**   (si ha cambiado una vulnerabilidad en un dispositivo. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). | Decimal
+Estado | String | **Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo)  (1) **Corregido**(si esta vulnerabilidad ya no existe en el dispositivo, lo que   significa que se corrigió). (2)  **Actualizado**   (si ha cambiado una vulnerabilidad en un dispositivo. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). | Decimal
 VulnerabilitySeverityLevel | string | Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas. | Medio  
 
 #### <a name="clarifications"></a>Aclaraciones
@@ -579,7 +579,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 } 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 

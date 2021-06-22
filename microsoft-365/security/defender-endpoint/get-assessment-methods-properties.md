@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3e5a91a33a4207daa30f1054f03655c846d297ec
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 12a77441f283ed693eae31fff36a7197ff6f0506
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022443"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053244"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportar métodos de evaluación y propiedades por dispositivo
 
@@ -56,7 +56,7 @@ Para cada método, hay diferentes llamadas API para obtener diferentes tipos de 
 
 - **Respuesta JSON**  La API extrae todos los datos de la organización como respuestas JSON. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de _100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
 
-- **a través de archivos** Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Almacenamiento de Azure. Esta API le permite descargar todos los datos de Almacenamiento de Azure de la siguiente manera:
+- **a través de archivos** Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
 
   - Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.
 
@@ -70,14 +70,14 @@ Devuelve todas las configuraciones y su estado, por dispositivo.
 
 ### <a name="11-methods"></a>1.1 Métodos
 
-Method | Tipo de datos | Description
+Método | Tipo de datos | Descripción
 :---|:---|:---
 Exportar evaluación de configuración segura **(respuesta JSON)** | Configuración segura por colección de dispositivos. Vea: [Propiedades 1.2 (respuesta JSON)](#12-properties-json-response) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. La API extrae todos los datos de la organización como respuestas JSON. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de 100 K. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados.
-Exportar evaluación de configuración segura **(a través de archivos)** | Configuración segura por colección de dispositivos. Vea: [Propiedades 1.3 (a través de archivos)](#13-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Almacenamiento de Azure. Esta API le permite descargar todos los datos de Almacenamiento de Azure de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
+Exportar evaluación de configuración segura **(a través de archivos)** | Configuración segura por colección de dispositivos. Vea: [Propiedades 1.3 (a través de archivos)](#13-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
 ### <a name="12-properties-json-response"></a>1.2 Propiedades (respuesta JSON)
 
-Propiedad (ID) | Tipo de datos | Description
+Propiedad (ID) | Tipo de datos | Descripción
 :---|:---|:---
 ConfigurationCategory | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad
 ConfigurationId | string | Identificador único para una configuración específica
@@ -96,7 +96,7 @@ Timestamp | string | La última vez que se vio la configuración en el dispositi
 
 ### <a name="13-properties-via-files"></a>1.3 Propiedades (a través de archivos)
 
-Propiedad (ID) | Tipo de datos | Description
+Propiedad (ID) | Tipo de datos | Descripción
 :---|:---|:---
 Exportar archivos | cadena de \[ matriz\] | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización.
 GeneratedTime | string | Hora en que se generó la exportación.
@@ -107,14 +107,14 @@ Devuelve todo el software instalado y sus detalles en cada dispositivo.
 
 ### <a name="21-methods"></a>Métodos 2.1
 
-Method | Tipo de datos | Description
+Método | Tipo de datos | Descripción
 :---|:---|:---
 Evaluación del inventario de software **de exportación (respuesta JSON)** | Inventario de software por colección de dispositivos. Vea: [Propiedades 2.2 (respuesta JSON)](#22-properties-json-response) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. La API extrae todos los datos de la organización como respuestas JSON. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de 100 K. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados.
-Exportar evaluación de inventario de software **(a través de archivos)** | Inventario de software por archivos de dispositivo. Vea: [Propiedades 2.3 (a través de archivos)](#23-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Almacenamiento de Azure. Esta API le permite descargar todos los datos de Almacenamiento de Azure de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
+Exportar evaluación de inventario de software **(a través de archivos)** | Inventario de software por archivos de dispositivo. Vea: [Propiedades 2.3 (a través de archivos)](#23-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
 ### <a name="22-properties-json-response"></a>2.2 Propiedades (respuesta JSON)
 
-Propiedad (ID) | Tipo de datos | Description
+Propiedad (ID) | Tipo de datos | Descripción
 :---|:---|:---
 DeviceId | string | Identificador único del dispositivo en el servicio.
 DeviceName | string | Nombre de dominio completo (FQDN) del dispositivo.
@@ -133,7 +133,7 @@ SoftwareVersion | string | Número de versión del producto de software.
 
 ### <a name="23-properties-via-files"></a>2.3 Propiedades (a través de archivos)
 
-Propiedad (ID) | Tipo de datos | Description
+Propiedad (ID) | Tipo de datos | Descripción
 :---|:---|:---
 Exportar archivos | cadena de \[ matriz\] | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización.
 GeneratedTime | string | Hora en que se generó la exportación.
@@ -144,15 +144,15 @@ Devuelve todas las vulnerabilidades conocidas en un dispositivo y sus detalles p
 
 ### <a name="31-methods"></a>Métodos 3.1
 
-Method | Tipo de datos | Description
+Método | Tipo de datos | Descripción
 :---|:---|:---
 Evaluación de vulnerabilidades de software **de exportación (respuesta JSON)** | Colección Investigation Vea: [Propiedades 3.2 (respuesta JSON)](#32-properties-json-response) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. La API extrae todos los datos de la organización como respuestas JSON. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de 100 K. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados.
-Evaluación de vulnerabilidades de software **de exportación (a través de archivos)** | Entidad de investigación Vea: [3.3 Propiedades (a través de archivos)](#33-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Almacenamiento de Azure. Esta API le permite descargar todos los datos de Almacenamiento de Azure de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
-**Evaluación de vulnerabilidades** de software de exportación delta **(respuesta JSON)** | Colección investigation Vea: [3.4 Properties Delta export (respuesta JSON)](#34-properties-delta-export-json-response) | Devuelve una tabla con una entrada para cada combinación única de: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId y EventTimestamp. <br><br> La API extrae datos de la organización como respuestas JSON. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados. A diferencia de la evaluación completa de vulnerabilidades de software (respuesta JSON), que se usa para obtener una instantánea completa de la evaluación de vulnerabilidades de software de su organización por dispositivo, la llamada a la API de OData de exportación delta se usa para capturar solo los cambios que se han producido entre una fecha seleccionada y la fecha actual (la llamada a la API "delta"). En lugar de obtener una exportación completa con una gran cantidad de datos cada vez, solo se obtiene información específica sobre vulnerabilidades nuevas, fijas y actualizadas. La llamada a la API de OData de exportación de Delta también se puede usar para calcular diferentes KPI, como "¿cuántas vulnerabilidades se han corregido?". o "¿cuántas vulnerabilidades nuevas se agregaron a mi organización?"  <br><br> Dado que la llamada de la API de OData de exportación de Delta para vulnerabilidades de software devuelve datos solo para un intervalo de fechas de destino, no se considera una _exportación completa_.
+Evaluación de vulnerabilidades de software **de exportación (a través de archivos)** | Entidad de investigación Vea: [3.3 Propiedades (a través de archivos)](#33-properties-via-files) | Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: 1.  Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización. 2.  Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
+**Evaluación de vulnerabilidades** de software de exportación delta **(respuesta JSON)** | Colección investigation Vea: [3.4 Properties Delta export (respuesta JSON)](#34-properties-delta-export-json-response) | Devuelve una tabla con una entrada para cada combinación única de: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId y EventTimestamp. <br><br> La API extrae datos de la organización como respuestas JSON. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados. A diferencia de la evaluación completa de vulnerabilidades de software (respuesta JSON), que se usa para obtener una instantánea completa de la evaluación de vulnerabilidades de software de su organización por dispositivo, la llamada a la API de exportación delta se usa para capturar solo los cambios que se han producido entre una fecha seleccionada y la fecha actual (la llamada a la API "delta"). En lugar de obtener una exportación completa con una gran cantidad de datos cada vez, solo se obtiene información específica sobre vulnerabilidades nuevas, fijas y actualizadas. La llamada a la API de exportación de Delta también se puede usar para calcular diferentes KPI, como "¿cuántas vulnerabilidades se han corregido?". o "¿cuántas vulnerabilidades nuevas se agregaron a mi organización?"  <br><br> Dado que la llamada de la API de exportación delta para vulnerabilidades de software devuelve datos solo para un intervalo de fechas de destino, no se considera una _exportación completa._
 
 ### <a name="32-properties-json-response"></a>3.2 Propiedades (respuesta JSON)
 
-Propiedad (ID) | Tipo de datos | Description
+Propiedad (ID) | Tipo de datos | Descripción
 :---|:---|:---
 CveId | string | Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).
 CvssScore | string | La puntuación CVSS de CVE.
@@ -176,21 +176,21 @@ VulnerabilitySeverityLevel | string | Nivel de gravedad asignado a la vulnerabil
 
 ### <a name="33-properties-via-files"></a>3.3 Propiedades (a través de archivos)
 
-Propiedad (ID) | Tipo de datos | Description
+Propiedad (ID) | Tipo de datos | Descripción
 :---|:---|:---
 Exportar archivos | cadena de \[ matriz\]  | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización.
 GeneratedTime | string | Hora en que se generó la exportación.
 
 ### <a name="34-properties-delta-export-json-response"></a>3.4 Propiedades (respuesta JSON de exportación delta)
 
-Propiedad (ID) | Tipo de datos | Description
+Propiedad (ID) | Tipo de datos | Descripción
 :---|:---|:---
 CveId | string | Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).
 CvssScore | string | La puntuación CVSS de CVE.
 DeviceId | string | Identificador único del dispositivo en el servicio.
 DeviceName | string | Nombre de dominio completo (FQDN) del dispositivo.
 DiskPaths | Array[string] | Prueba en disco de que el producto está instalado en el dispositivo.
-EventTimestamp | Cadena | Hora en que se encontró este evento delta.
+EventTimestamp | String | Hora en que se encontró este evento delta.
 ExploitabilityLevel | string | El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp | string | Primera vez que se vio la CVE de este producto en el dispositivo.
 Id | string | Identificador único del registro.  
@@ -204,10 +204,10 @@ RegistryPaths  | Array[string] | El Registro evidencia que el producto está i
 SoftwareName | string | Nombre del producto de software.
 SoftwareVendor | string | Nombre del proveedor de software.
 SoftwareVersion | string | Número de versión del producto de software.
-Estado | Cadena | **Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo).  **Corregido**   (para una vulnerabilidad que ya no existe en el dispositivo, lo que significa que se ha corregido). **Actualizado**   (para una vulnerabilidad en un dispositivo que ha cambiado. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
+Estado | String | **Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo).  **Corregido**   (para una vulnerabilidad que ya no existe en el dispositivo, lo que significa que se ha corregido). **Actualizado**   (para una vulnerabilidad en un dispositivo que ha cambiado. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
 VulnerabilitySeverityLevel | string | Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Exportar evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)
 

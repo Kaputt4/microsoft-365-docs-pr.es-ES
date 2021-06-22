@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a39c6a3b287933ff79f94b00e364d7a45378bd1f
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933088"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052992"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuarios
 
@@ -42,7 +42,7 @@ En Microsoft 365 con Exchange Online buzones de correo, puede especificar un buz
 La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [el envío de administrador.](admin-submission.md)
 
   > [!NOTE]
-  > Si los informes se han deshabilitado en Outlook en la [web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)al habilitar los envíos de usuario aquí se invalidará esa configuración y se permitirá a los usuarios notificar mensajes en Outlook en la web de nuevo.
+  > Si los informes se han deshabilitado en [Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), la habilitación de envíos de usuario aquí invalidará esa configuración y permitirá a los usuarios notificar mensajes en Outlook en la Web de nuevo.
 
 ## <a name="custom-mailbox-prerequisites"></a>Requisitos previos de buzón personalizado
 
@@ -68,7 +68,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
 - Para modificar la configuración de envíos de usuarios, debe ser miembro de uno de los siguientes grupos de roles:
 
-  - **Administración de** la organización **o administrador de** seguridad en el portal de Microsoft 365 [Defender](permissions-in-the-security-and-compliance-center.md).
+  - **Administración de** la organización **o Administrador de** seguridad en Microsoft 365 Defender [portal](permissions-in-the-security-and-compliance-center.md).
   - **Administración de** la [organización en Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Necesita tener acceso a Exchange Online PowerShell. Si la cuenta que está intentando usar no tiene acceso Exchange Online PowerShell, recibirá un error similar al siguiente al especificar el buzón de envío:
@@ -82,11 +82,11 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Usar el portal Microsoft 365 Defender para configurar el buzón de envíos de usuario
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** Reglas de amenazas Sección Otras secciones Configuración de mensajes \>  \>  \>  \> **notificados por el usuario Envíos de usuario**.
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** reglas de amenazas Sección Otras secciones Configuración de mensajes \>  \>  \>  \> **notificados por el usuario Envíos de usuario**.
 
 2. En la **página Envíos de** usuario, lo que ve está determinado por si la configuración del botón Mensaje de informe de **Microsoft Outlook** es **Off** o **On**:
 
-   - **Botón Outlook mensaje de informe de Microsoft** \> **On** ![ Activar: seleccione esta opción si usa el complemento Report Message, el complemento Report Phishing o los informes integrados en Outlook en la web y, a continuación, configure las siguientes ](../../media/scc-toggle-on.png) opciones:
+   - **Botón Outlook mensaje de informe de Microsoft** \> **On** ![ Activar: seleccione esta opción si usa el complemento Mensaje de informe, el complemento Report Phishing o los informes integrados en Outlook en la Web y, a continuación, configure las siguientes ](../../media/scc-toggle-on.png) opciones:
      - **Enviar los mensajes notificados a**: Seleccione una de las siguientes opciones:
        - **Microsoft:** el buzón de envíos de usuario no se usa (todos los mensajes notificados van a Microsoft).
        - **Buzón de Microsoft** y mi organización: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de correo Exchange Online existente. Los grupos de distribución no están permitidos. Los envíos de usuario irán a Microsoft para su análisis y al buzón personalizado para que el administrador o el equipo de operaciones de seguridad analicen.
@@ -107,7 +107,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
          - **No informar nunca del mensaje**
 
           > [!CAUTION]
-          > Si ha deshabilitado los informes de correo no deseado en Outlook en la [web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) mediante Outlook en las directivas de buzón de correo web, pero ha configurado cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán notificar mensajes a Microsoft en Outlook en la web mediante el complemento Report Message o el complemento Report Phishing.
+          > Si ha deshabilitado los informes de correo no deseado en [Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) mediante directivas de buzón de correo de Outlook en la Web, pero ha configurado cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán notificar mensajes a Microsoft en Outlook en la Web mediante el complemento Mensaje de informe o el complemento Report Phishing.
 
      - **Sección Experiencia de informes de usuarios**
        - **Antes de informar:**  en  los cuadros de cuerpo Título y Mensaje, escriba el texto descriptivo que los usuarios ven antes de informar de un mensaje mediante el complemento Report Message o el complemento Report Phishing. Puede usar la variable %type% para incluir el tipo de envío (correo no deseado, no deseado, phish, etc.).
@@ -117,14 +117,16 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
           > El correo electrónico se enviará tal como está a Microsoft para su análisis. Algunos correos electrónicos pueden contener información personal o confidencial.
 
-   - **Botón Outlook mensaje de informe de Microsoft** \> **Desactivado** ![ Desactivar: seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento Mensaje de informe, el complemento de suplantación de identidad de informes o los informes integrados de Outlook en la web y, a continuación, configure las siguientes ](../../media/scc-toggle-off.png) opciones:
+   - **Botón Outlook mensaje de informe de Microsoft** \> **Desactivado** ![ Desactivar: seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento Mensaje de informe, el complemento Report Phishing o los informes integrados en ](../../media/scc-toggle-off.png) Outlook en la Web y, a continuación, configure las siguientes opciones:
      - Seleccione **Usar este buzón personalizado para recibir envíos notificados por el usuario**. En el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de correo Exchange Online que pueda recibir correo electrónico.
 
    Cuando haya terminado, haga clic en **Confirmar**. Para borrar estos valores, haga clic en **Restaurar**
 
 ## <a name="third-party-reporting-tools"></a>Herramientas de informes de terceros
 
-Puede configurar herramientas de informes de mensajes de terceros para enviar mensajes notificados al buzón personalizado. El único requisito es que el mensaje original se incluya como datos adjuntos en el mensaje que se envía al buzón personalizado (no solo reenvía el mensaje original al buzón personalizado).
+Puede configurar herramientas de informes de mensajes de terceros para enviar mensajes notificados al buzón personalizado. Para ello, establecerá la configuración del botón Mensaje de informe de **Microsoft Outlook** en **Desactivado** y establecerá el buzón de **Mi** organización en un buzón de correo Office 365 de su elección.
+
+El único requisito es que el mensaje original se incluya como . EML o . Datos adjuntos MSG (no comprimidos) en el mensaje que se envía al buzón personalizado (no solo reenvía el mensaje original al buzón personalizado).
 
 Los requisitos de formato de mensaje se describen en la sección siguiente. El formato es opcional, pero si no sigue el formato prescrito, los informes siempre se envían como suplantación de identidad.
 
