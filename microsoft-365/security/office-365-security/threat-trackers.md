@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos rastreadores notables, para ayudar a su organización a mantenerse al tanto de los problemas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d7585df980fca322a3bc5ce28f2ef2f7f53284e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 0a5db47ccd3e1686b6b49174cb9b3c24256b8cbd
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930018"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083061"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -50,10 +50,10 @@ La mayoría de las páginas de seguimiento incluyen números de tendencia que se
 
 Los rastreadores son solo algunas de las muchas características excelentes que obtienes con [Microsoft Defender para Office 365 Plan 2](office-365-ti.md). Los rastreadores de amenazas [incluyen rastreadores notables,](#noteworthy-trackers)rastreadores [de tendencias,](#trending-trackers)consultas rastreadas [y](#tracked-queries) [consultas guardadas.](#saved-queries)
 
-Para ver y usar los Rastreadores de amenazas para su organización, vaya al portal de Microsoft 365 Defender ( ) y elija Correo electrónico y & rastreador de amenazas <https://security.microsoft.com>  \> **de colaboración.**
+Para ver y usar los rastreadores de amenazas para su organización, vaya al portal de Microsoft 365 Defender ( ) y elija Correo electrónico & rastreador de amenazas <https://security.microsoft.com>  \> **de colaboración.**
 
 > [!NOTE]
-> Para usar rastreadores de amenazas, debe ser un administrador global, un administrador de seguridad o un lector de seguridad. Vea [Permisos en el portal de Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+> Para usar rastreadores de amenazas, debe ser un administrador global, un administrador de seguridad o un lector de seguridad. Vea [Permisos en el portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)
 
 ### <a name="noteworthy-trackers"></a>Rastreadores destacados
 
@@ -89,13 +89,13 @@ Tanto si está revisando el correo electrónico, el contenido o las actividades 
 
 Y recuerde que siempre puede proporcionarnos comentarios sobre esta u otras  características de seguridad de Microsoft 365 haciendo clic en el botón Comentarios de la esquina inferior derecha.
 
-![Microsoft 365 Portal de Defender](../../media/microsoft-365-defender-portal.png)
+![Microsoft 365 Defender portal](../../media/microsoft-365-defender-portal.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>Rastreadores y Microsoft Defender para Office 365
 
 Con nuestra amenaza notable, destacamos las amenazas de malware avanzadas detectadas [por Caja fuerte datos adjuntos](safe-attachments.md). Si es un cliente Office 365 Enterprise E5 y no usa [Microsoft Defender](defender-for-office-365.md)para Office 365 , debería estarlo: está incluido en su suscripción. Defender for Office 365 proporciona valor incluso si tiene otras herramientas de seguridad que filtran el flujo de correo electrónico con sus Office 365 servicios. Sin embargo, las características de vínculos de correo no deseado [y Caja fuerte](safe-links.md) funcionan mejor cuando la solución de seguridad de correo electrónico principal es a través de Office 365.
 
-![Microsoft Defender para Office 365 en el portal de Microsoft 365 Defender](../../media/policies.png)
+![Microsoft Defender para Office 365 en el portal Microsoft 365 Defender web](../../media/policies.png)
 
 In today's threat-riddled world, running only traditional anti-malware scans means you are not protected well enough against attacks. Los atacantes más sofisticados de hoy en día usan herramientas disponibles habitualmente para crear ataques nuevos, ofuscados o retrasados que no serán reconocidos por los motores antimalware tradicionales basados en firmas. La característica Caja fuerte datos adjuntos toma datos adjuntos de correo electrónico y los detona en un entorno virtual para determinar si son seguros o malintencionados. Este proceso de detonación abre cada archivo en un entorno de equipo virtual y, a continuación, observa lo que sucede después de abrir el archivo. Ya sea un archivo PDF y comprimido, o un documento Office, el código malintencionado puede ocultarse en un archivo, activando solo una vez que la víctima lo abra en su equipo. Al detonar y analizar el archivo en el flujo de correo electrónico, las capacidades de Defender para Office 365 encuentran estas amenazas en función de comportamientos, reputación de archivos y una serie de reglas heurísticas.
 
@@ -105,7 +105,7 @@ El nuevo filtro de amenazas notables resalta los elementos que se detectaron rec
 
 - Si su organización aún no tiene estas Office 365 de investigación y respuesta de amenazas, vea [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 
-- Asegúrese de que el equipo de seguridad tenga asignados los roles y permisos correctos. Debe ser un administrador global o tener asignado el rol Administrador de seguridad o Buscar y purgar en el portal de Microsoft 365 Defender. Vea [Permisos en el portal de Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+- Asegúrese de que el equipo de seguridad tenga asignados los roles y permisos correctos. Debe ser un administrador global o tener asignado el rol Administrador de seguridad o Buscar y purgar en el portal de Microsoft 365 Defender seguridad. Vea [Permisos en el portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)
 
 - Observe que los nuevos rastreadores se mostrarán en el Microsoft 365 local. Cuando esté disponible, encontrará los rastreadores [aquí](https://https://security.microsoft.com/). Vaya a **Correo electrónico & rastreador de amenazas** de \> **colaboración**.
 

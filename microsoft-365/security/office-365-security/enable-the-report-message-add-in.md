@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informes para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
+description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informes para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8949322b0b691d59e59e5f7b80d2b9650e4115d5
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: d5e336dcab9e3787d8c5245cdbe32855c59021f7
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029914"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082773"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar el mensaje de informe o los complementos de suplantación de identidad de informes
 
@@ -34,9 +34,9 @@ ms.locfileid: "53029914"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Si es administrador de una organización de Microsoft 365 con buzones de Exchange Online, le recomendamos que use el portal de envíos en el portal de Microsoft 365 Defender. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Si es administrador de una organización Microsoft 365 con buzones de correo Exchange Online, se recomienda usar la página **Envíos** en el portal de Microsoft 365 Defender. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-Los complementos Report Message y Report Phishing para Outlook y Outlook en la web (anteriormente conocidos como Outlook Web App) permiten a los usuarios notificar fácilmente falsos positivos (correo electrónico bueno marcado como negativo) o falsos negativos (correo electrónico no permitido) a Microsoft y sus filiales para su análisis.
+Los complementos Report Message y Report Phishing para Outlook y Outlook en la Web (anteriormente conocidos como Outlook Web App) permiten a los usuarios notificar fácilmente falsos positivos (correo electrónico bueno marcado como negativo) o falsos negativos (correo electrónico no permitido) a Microsoft y sus filiales para su análisis.
 
 Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico. Por ejemplo, supongamos que los usuarios están informando de muchos mensajes mediante el complemento Detección de suplantación de identidad de informes. Esta información se muestra en el Panel de seguridad y otros informes. El equipo de seguridad de la organización puede usar esta información como una indicación de que es posible que sea necesario actualizar las directivas contra suplantación de identidad.
 
@@ -50,27 +50,27 @@ Si eres un usuario individual, puedes habilitar ambos complementos por ti mismo.
 
 Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Report Message y el complemento Report Phishing para su organización. Ambos complementos ya están disponibles a través [de la implementación centralizada](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Tanto el complemento Mensaje de informe como el complemento Report Phishing funcionan con la mayoría de las suscripciones de Microsoft 365 y los siguientes productos:
+- Tanto el complemento Report Message como el complemento Report Phishing funcionan con la mayoría Microsoft 365 suscripciones y los siguientes productos:
   - Outlook en la Web
   - Outlook 2013 SP1 o posterior
   - Outlook 2016 para Mac
-  - Outlook incluido con aplicaciones de Microsoft 365 para Empresas
-  - Aplicación de Outlook para iOS y Android
+  - Outlook se incluye con Microsoft 365 aplicaciones para Enterprise
+  - Outlook aplicación para iOS y Android
 
-- Ambos complementos no están disponibles para buzones o buzones compartidos en organizaciones locales de Exchange.
+- Ambos complementos no están disponibles para buzones o buzones compartidos en organizaciones Exchange locales.
 
 - El explorador web existente debe funcionar con los complementos Report Message y Report Phishing. Pero, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe con un explorador diferente.
 
 - Para las instalaciones organizativas, la organización debe configurarse para usar la autenticación de OAuth. Para obtener más información, vea [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Los administradores deben ser miembros del grupo de roles Administradores globales. Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- Los administradores deben ser miembros del grupo de roles Administradores globales. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-- Para obtener más información sobre cómo informar de un mensaje mediante la característica Mensaje de informe, vea [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
+- Para obtener más información sobre cómo notificar un mensaje mediante la característica Mensaje de informe, vea [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
 
 > [!IMPORTANT]
-> No recomendamos la experiencia de informes integrada en Outlook porque no puede usar la directiva [de envío de usuarios](./user-submission.md). Se recomienda usar el complemento Report Message o el complemento Report Phishing en su lugar.
+> No recomendamos la experiencia de informes integrada en Outlook porque no puede usar la directiva [de envío de usuario](./user-submission.md). Se recomienda usar el complemento Report Message o el complemento Report Phishing en su lugar.
 
 ## <a name="get-the-report-message-add-in"></a>Obtener el complemento Mensaje de informe
 
@@ -93,21 +93,21 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
   > [!div class="mx-imgBorder"]
   > ![Icono del complemento Mensaje de informe para Outlook](../../media/OutlookReportMessageIcon.png)
 
-- En Outlook en la web, el icono tiene este aspecto:
+- En Outlook en la Web, el icono tiene este aspecto:
 
   > [!div class="mx-imgBorder"]
-  > ![Icono del complemento Mensaje de informe de Outlook en la web](../../media/owa-report-message-icon.png)
+  > ![Outlook en la Web Icono del complemento Mensaje de informe](../../media/owa-report-message-icon.png)
 
 ### <a name="get-the-report-message-add-in-for-your-organization"></a>Obtener el complemento Mensaje de informe para su organización
 
 > [!NOTE]
 > El complemento podría tardar hasta 12 horas en aparecer en la organización.
 
-1. En el Centro de administración de Microsoft  365, vaya a la página \> **Complementos de configuración** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si no ves  la página Complemento, ve  al vínculo Configuración Complementos de aplicaciones integradas en la parte \>  \>  superior de la **página Aplicaciones integradas.**
+1. En el Centro de administración de Microsoft 365, vaya a la **página Configuración** \> **Complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si no ves  la página Complemento, ve al vínculo **Configuración** Complementos de aplicaciones integradas en la parte superior de la \>  \>  página **Aplicaciones integradas.**
 
 2. Seleccione **Implementar complemento en** la parte superior de la página y, a continuación, seleccione **Siguiente**.
 
-   ![Página Servicios y complementos en el Centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Servicios y complementos en la Centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. En el menú desplegable Implementar un nuevo complemento que aparece, revise la información y, **a** continuación, haga clic **en Siguiente**.
 
@@ -147,15 +147,15 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Revisar o editar la configuración del complemento Mensaje de informe
 
-1. En el Centro de administración de Microsoft 365, vaya a la página Complementos  \> **de configuración** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si no ves  la página Complemento, ve  al vínculo Configuración Complementos de aplicaciones integradas en la parte \>  \>  superior de la **página Aplicaciones integradas.**
+1. En el Centro de administración de Microsoft 365, vaya a la página **Configuración** \> **complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si no ves  la página Complemento, ve al vínculo **Configuración** Complementos de aplicaciones integradas en la parte superior de la \>  \>  página **Aplicaciones integradas.**
 
-   ![Servicios y Add-Ins en el nuevo Centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Servicios y Add-Ins en el nuevo Centro de Administración de Microsoft 365 web](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Busque y seleccione el **complemento Mensaje** de informe.
 
 3. En el **control desplegable Editar mensaje** de informe que aparece, revise y edite la configuración según corresponda para su organización. Cuando haya terminado, haga clic en **Guardar**.
 
-   ![Configuración del complemento Mensaje de informe](../../media/EditReportMessageAddIn.png)
+   ![Configuración para el complemento Mensaje de informe](../../media/EditReportMessageAddIn.png)
 
 ## <a name="get-the-report-phishing-add-in"></a>Obtener el complemento de suplantación de identidad de informe
 
@@ -173,23 +173,23 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 
 - En Outlook, el icono tiene este aspecto:
 
-  ![Icono de complemento de suplantación de identidad de informes para Outlook](../../media/Outlook-ReportPhishing.png)
+  ![Icono de complemento de phishing de informe para Outlook](../../media/Outlook-ReportPhishing.png)
 
-- En Outlook en la web, el icono tiene este aspecto:
+- En Outlook en la Web, el icono tiene este aspecto:
 
   > [!div class="mx-imgBorder"]
-  > ![Icono del complemento de suplantación de identidad de informes de Outlook en la web](../../media/OWA-ReportPhishing.png)
+  > ![Outlook en la Web Icono de complemento de phishing de informe](../../media/OWA-ReportPhishing.png)
 
 ### <a name="get-the-report-phishing-add-in-for-your-organization"></a>Obtener el complemento de suplantación de identidad de informes para su organización
 
 > [!NOTE]
 > El complemento podría tardar hasta 12 horas en aparecer en la organización.
 
-1. En el Centro de administración de Microsoft 365, vaya a la página Complementos  \> **de configuración** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si no ves  la página Complemento, ve  al vínculo Configuración Complementos de aplicaciones integradas en la parte \>  \>  superior de la **página Aplicaciones integradas.**
+1. En el Centro de administración de Microsoft 365, vaya a la página **Configuración** \> **complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si no ves  la página Complemento, ve al vínculo **Configuración** Complementos de aplicaciones integradas en la parte superior de la \>  \>  página **Aplicaciones integradas.**
 
 2. Seleccione **Implementar complemento en** la parte superior de la página y, a continuación, seleccione **Siguiente**.
 
-   ![Página Servicios y complementos en el Centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Servicios y complementos en la Centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. En el menú desplegable Implementar un nuevo complemento que aparece, revise la información y, **a** continuación, haga clic **en Siguiente**.
 
@@ -221,7 +221,7 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Revisar o editar la configuración del complemento de suplantación de identidad de informes
 
-1. En el Centro de administración de Microsoft 365, vaya a la página Complementos  \> **de configuración** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si no ves  la página Complemento, ve  al vínculo Configuración Complementos de aplicaciones integradas en la parte \>  \>  superior de la **página Aplicaciones integradas.**
+1. En el Centro de administración de Microsoft 365, vaya a la página **Configuración** \> **complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si no ves  la página Complemento, ve al vínculo **Configuración** Complementos de aplicaciones integradas en la parte superior de la \>  \>  página **Aplicaciones integradas.**
 
 2. Busque y seleccione el **complemento Report Phishing.**
 

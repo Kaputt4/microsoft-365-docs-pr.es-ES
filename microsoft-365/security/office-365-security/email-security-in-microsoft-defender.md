@@ -16,12 +16,12 @@ description: Ver e investigar intentos de suplantación de identidad de malware.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cebe76536c5ed309ca16777e85c5cdf919d0fb5c
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029890"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083001"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Seguridad de correo electrónico con el Explorador de amenazas en Microsoft Defender para Office 365
 
@@ -43,7 +43,7 @@ En este artículo se explica cómo ver e investigar los intentos de malware y su
 
 ## <a name="view-malware-detected-in-email"></a>Ver malware detectado en el correo electrónico
 
-Para ver el malware detectado en el correo electrónico ordenado por Microsoft 365, use la vista Correo [> malware](threat-explorer-views.md#email--malware) del Explorador (o detecciones en tiempo real). El malware es la vista predeterminada, por lo que puede seleccionarse tan pronto como abra el Explorador.
+Para ver el malware detectado en el correo electrónico ordenado Microsoft 365 tecnología, use la vista [**\> Malware**](threat-explorer-views.md#email--malware) de correo electrónico del Explorador (o detecciones en tiempo real). El malware es la vista predeterminada, por lo que puede seleccionarse tan pronto como abra el Explorador.
 
 1. En el portal Microsoft 365 Defender ( ), elija Correo & explorador de <https://security.microsoft.com> **colaboración** \>  (o **Detecciones en tiempo real**; En este ejemplo se usa Explorer).
 

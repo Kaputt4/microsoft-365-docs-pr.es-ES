@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo habilitar el complemento report phishing para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: 44fa55a82462de336982d3af2e3996c14699fd7c
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+description: Obtenga información sobre cómo habilitar el complemento report phishing para Outlook y Outlook en la Web, para usuarios individuales o toda la organización.
+ms.openlocfilehash: 44113237274d37aabeda954354182fe4da5aa970
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625394"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083421"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>Habilitar el complemento Informe de suplantación de identidad (phishing)
 
@@ -29,9 +29,9 @@ ms.locfileid: "52625394"
 
 
 > [!NOTE]
-> Si es administrador de una organización Microsoft 365 con buzones de correo Exchange Online, se recomienda usar el portal de envíos en el Centro de seguridad y & cumplimiento. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Si es administrador de una organización Microsoft 365 con buzones de correo Exchange Online, se recomienda usar el portal de envíos en el portal de Microsoft 365 Defender web. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-Los complementos Report Message y Report Phishing para Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) permiten a los usuarios notificar fácilmente falsos positivos (buen correo electrónico marcado como negativo) o falsos negativos (correo electrónico no permitido) a Microsoft y sus filiales para su análisis.
+Los complementos Report Message y Report Phishing para Outlook y Outlook en la Web (anteriormente conocidos como Outlook Web App) permiten a los usuarios notificar fácilmente falsos positivos (correo electrónico bueno marcado como negativo) o falsos negativos (correo electrónico no permitido) a Microsoft y sus filiales para su análisis.
 
 Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico. Por ejemplo, supongamos que los usuarios están informando de muchos mensajes mediante el complemento Detección de suplantación de identidad de informes. Esta información se muestra en el Panel [de seguridad](security-dashboard.md) y otros informes. El equipo de seguridad de la organización puede usar esta información como una indicación de que es posible que sea necesario actualizar las directivas contra suplantación de identidad.
 
@@ -43,7 +43,7 @@ Si es un usuario individual, puede habilitar el complemento Detección de suplan
 
 Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Report Phishing para [su organización.](#get-and-enable-the-report-phishing-add-in-for-your-organization) El informe de phishing Add-In está disponible a través [de la implementación centralizada.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - El complemento Report Phishing funciona con la mayoría Microsoft 365 suscripciones y los siguientes productos:
 
@@ -61,7 +61,7 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
 
 - Para las instalaciones organizativas, la organización debe configurarse para usar la autenticación de OAuth. Para obtener más información, vea [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Los administradores deben ser miembros del grupo de roles Administradores globales. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Los administradores deben ser miembros del grupo de roles Administradores globales. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 ## <a name="get-the-report-phishing-add-in-for-yourself"></a>Obtener el complemento de suplantación de identidad de informe por sí mismo
 
@@ -79,20 +79,20 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 
   ![Icono de complemento de phishing de informe para Outlook](../../media/Outlook-ReportPhishing.png)
 
-- En Outlook web, el icono tiene este aspecto:
+- En Outlook en la Web, el icono tiene este aspecto:
 
-  ![Outlook en el icono del complemento de phishing de informe web](../../media/OWA-ReportPhishing.png)
+  ![Outlook en la Web Icono de complemento de phishing de informe](../../media/OWA-ReportPhishing.png)
 
 ## <a name="get-and-enable-the-report-phishing-add-in-for-your-organization"></a>Obtener y habilitar el complemento de suplantación de identidad de informes para su organización
 
 > [!NOTE]
 > El complemento podría tardar hasta 12 horas en aparecer en la organización.
 
-1. En el Centro de administración de **Microsoft 365,** vaya a la página Complementos de Configuración en , Si no ve la página Complementos, vaya al vínculo Complementos de aplicaciones integradas de Configuración en la parte superior de la página Aplicaciones \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \> **integradas.** 
+1. En el Centro de administración de Microsoft 365, vaya **a** la página Complementos de Configuración en , Si no ve la página Complementos, vaya al vínculo Complementos de aplicaciones integradas de Configuración en la parte superior de la página Aplicaciones \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \> **integradas.** 
 
 2. Seleccione **Implementar complemento en** la parte superior de la página y, a continuación, seleccione **Siguiente**.
 
-   ![Servicios y complementos en el Centro de administración de Microsoft 365 administración](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Servicios y complementos en la Centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. En el menú desplegable Implementar un nuevo complemento que aparece, revise la información y, **a** continuación, haga clic **en Siguiente**.
 
@@ -132,13 +132,13 @@ Las personas que tengan asignado el complemento verán los siguientes iconos:
 
   ![Icono de complemento de phishing de informe para Outlook](../../media/Outlook-ReportPhishing.png)
 
-- En Outlook web, el icono tiene este aspecto:
+- En Outlook en la Web, el icono tiene este aspecto:
 
   ![Outlook en el icono del complemento de suplantación de identidad de informes web](../../media/OWA-ReportPhishing.png)
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Revisar o editar la configuración del complemento de suplantación de identidad de informes
 
-1. En el Centro de administración de **Microsoft 365,** vaya a la página Complementos de Configuración en , Si no ve la página Complementos, vaya al vínculo Complementos de aplicaciones integradas de Configuración en la parte superior de la página Aplicaciones \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \> **integradas.** 
+1. En el Centro de administración de Microsoft 365, vaya **a** la página Complementos de Configuración en , Si no ve la página Complementos, vaya al vínculo Complementos de aplicaciones integradas de Configuración en la parte superior de la página Aplicaciones \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \> **integradas.** 
 
 2. Busque y seleccione el **complemento Report Phishing.**
 

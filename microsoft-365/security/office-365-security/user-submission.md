@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055126"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083541"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -68,7 +68,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
 - Para modificar la configuración de envíos de usuarios, debe ser miembro de uno de los siguientes grupos de roles:
 
-  - **Administración de** la organización **o Administrador de** seguridad en Microsoft 365 Defender [portal](permissions-in-the-security-and-compliance-center.md).
+  - **Administración de** la organización **o Administrador** de seguridad en permisos en el portal de [Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)
   - **Administración de** la [organización en Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Necesita tener acceso a Exchange Online PowerShell. Si la cuenta que está intentando usar no tiene acceso Exchange Online PowerShell, recibirá un error similar al siguiente al especificar el buzón de envío:

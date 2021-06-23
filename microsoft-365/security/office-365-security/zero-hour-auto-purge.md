@@ -1,11 +1,11 @@
 ---
-title: Purga automática de hora cero (ZAP)
+title: Purga automática de hora cero en Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 06/22/2021
 audience: Admin
 ms.topic: conceptual
 localization_priority: Normal
@@ -19,15 +19,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden obtener información sobre cómo la purga automática de cero horas (ZAP) puede mover retroactivamente los mensajes entregados en un buzón de Exchange Online a la carpeta de correo no deseado o la cuarentena que se han detectado retroactivamente como correo no deseado o suplantación de identidad.
+description: La purga automática de cero horas (ZAP) mueve retroactivamente los mensajes entregados en un buzón de Exchange Online a la carpeta o cuarentena de correo no deseado que se encuentra como correo no deseado o suplantación de identidad después de la entrega.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9612f6267a0786b6f81f1c9a3f2ac270e344d0a8
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: fdfc39b8bd18d33f95b85028e3661008a17a1209
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730683"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083505"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purga automática de hora cero (ZAP) en Exchange Online
 
@@ -38,8 +38,7 @@ ms.locfileid: "52730683"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-## <a name="basic-features-of-zap"></a>Características básicas de ZAP
+## <a name="zero-hour-auto-purge-zap-basics"></a>Conceptos básicos de purga automática de hora cero (ZAP)
 
 En Microsoft 365 organizaciones con buzones en Exchange Online, la purga automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta y neutraliza de forma retroactiva mensajes de phishing, correo no deseado o malware malintencionados que ya se han entregado Exchange Online buzones de correo.
 
@@ -53,13 +52,13 @@ La acción ZAP es perfecta para el usuario; no se les notifica si se detecta y s
 
 [Caja fuerte listas de remitentes,](create-safe-sender-lists-in-office-365.md)reglas de flujo de correo (también conocidas como reglas de transporte), reglas de bandeja de entrada o filtros adicionales tienen prioridad sobre ZAP. De forma similar a lo que sucede en el flujo de correo, esto significa que incluso si el servicio determina que el mensaje entregado necesita ZAP, el mensaje no se actúa debido a la configuración de remitentes seguros. Este es otro motivo para tener cuidado con la configuración de mensajes para omitir el filtrado.
 
-### <a name="zap-for-malware"></a>ZAP para malware
+### <a name="zero-hour-auto-purge-zap-for-malware"></a>Purga automática de hora cero (ZAP) para malware
 
 Para **los mensajes leídos o no** leídos que contienen malware después de la entrega, ZAP pone en cuarentena el mensaje que contiene los datos adjuntos de malware. Solo los administradores pueden ver y administrar mensajes de malware desde la cuarentena.
 
 ZAP para malware está habilitado de forma predeterminada en directivas antimalware. Para obtener más información, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-### <a name="zap-for-phishing"></a>ZAP para phishing
+### <a name="zero-hour-auto-purge-zap-for-phishing"></a>Purga automática de hora cero (ZAP) para phishing
 
 Para **los mensajes** leídos o no leídos que se identifican como suplantación de identidad (phishing) después de la entrega, el resultado de ZAP depende de la acción configurada para un veredicto de filtrado de correo electrónico de suplantación de identidad **(phishing)** en la directiva contra correo no deseado aplicable. Las acciones de veredicto de filtrado disponibles para la suplantación de identidad (phishing) y sus posibles resultados de ZAP se describen en la siguiente lista:
 
@@ -73,13 +72,13 @@ De forma predeterminada, ZAP para la suplantación de identidad (phishing) está
 
 Para obtener más información acerca de cómo configurar los veredictos de filtrado de correo no deseado, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
-### <a name="zap-for-high-confidence-phishing"></a>ZAP para phishing de elevada confianza 
+### <a name="zero-hour-auto-purge-zap-for-high-confidence-phishing"></a>Purga automática de hora cero (ZAP) para phishing de alta confianza
 
-Para **los mensajes leídos o no leídos** que se identifican como phishing de elevada confianza después de la entrega, ZAP pone en cuarentena el mensaje. Solo los administradores pueden ver y administrar mensajes de phishing de elevada confianza desde la cuarentena. 
+Para **los mensajes leídos o no leídos** que se identifican como phishing de elevada confianza después de la entrega, ZAP pone en cuarentena el mensaje. Solo los administradores pueden ver y administrar mensajes de phishing de elevada confianza desde la cuarentena.
 
 ZAP para phishing de elevada confianza está habilitado de forma predeterminada. Para obtener más información, [vea Secure by Default en Office 365](secure-by-default.md).
 
-### <a name="zap-for-spam"></a>ZAP para correo no deseado
+### <a name="zero-hour-auto-purge-zap-for-spam"></a>Purga automática de hora cero (ZAP) para correo no deseado
 
 Para **los mensajes no** leídos que se identifican como correo no deseado  después de la entrega, el resultado de ZAP depende de la acción configurada para el veredicto de filtrado de correo no deseado en la directiva contra correo no deseado aplicable. Las acciones de veredicto de filtrado disponibles para correo no deseado y sus posibles resultados de ZAP se describen en la siguiente lista:
 
@@ -93,7 +92,7 @@ De forma predeterminada, ZAP de correo no deseado está  habilitado en las direc
 
 Para obtener más información acerca de cómo configurar los veredictos de filtrado de correo no deseado, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
-### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>Consideraciones de ZAP para Microsoft Defender para Office 365
+### <a name="zero-hour-auto-purge-zap-considerations-for-microsoft-defender-for-office-365"></a>Consideraciones de purga automática de hora cero (ZAP) para Microsoft Defender para Office 365
 
 ZAP no pondrá en cuarentena ningún mensaje [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) que se encuentra en el proceso de entrega dinámica en el examen de datos adjuntos de Caja fuerte o donde el filtrado de malware de EOP ya haya reemplazado los datos adjuntos por el archivo Text.txtalerta **de malware.** Si se recibe una señal de suplantación de identidad o correo no deseado para este tipo de mensajes y el veredicto de filtrado de la directiva contra correo no deseado está configurado para realizar alguna acción en el mensaje (Mover a correo no deseado, Redirigir, Eliminar o Cuarentena), ZAP establecerá de forma predeterminada una acción "Mover a la no deseado".
 
@@ -101,7 +100,7 @@ ZAP no pondrá en cuarentena ningún mensaje [](safe-attachments.md#dynamic-deli
 
 Para determinar si ZAP movió el [](view-email-security-reports.md#threat-protection-status-report) mensaje, puede usar el informe de estado de protección contra amenazas o el Explorador de amenazas [(y detecciones en](threat-explorer.md)tiempo real). Tenga en cuenta que, como acción del sistema, ZAP no se registra en los registros de auditoría Exchange buzón de correo.
 
-## <a name="zap-faq"></a>Preguntas más frecuentes de ZAP
+## <a name="zero-hour-auto-purge-zap-faq"></a>Preguntas más frecuentes sobre purga automática de hora cero (ZAP)
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>¿Qué sucede si se mueve un mensaje legítimo a la carpeta correo no deseado?
 
@@ -115,16 +114,16 @@ ZAP tomará medidas en un mensaje en función de la configuración de las direct
 
 Caja fuerte remitentes, reglas de flujo de correo o bloquear y permitir que la configuración de la organización presenzca. Estos mensajes se excluyen de ZAP, ya que el servicio está haciendo lo que ha configurado para hacerlo. Este es otro motivo para tener cuidado con la configuración de mensajes para omitir el filtrado.
 
-### <a name="what-are-the-licensing-requirements-for-zap-to-work"></a>¿Cuáles son los requisitos de licencia para que ZAP funcione?
+### <a name="what-are-the-licensing-requirements-for-zero-hour-auto-purge-zap-to-work"></a>¿Cuáles son los requisitos de licencia para que funcione la purga automática de hora cero (ZAP)
 
 No hay limitaciones en las licencias. ZAP funciona en todos los buzones hospedados en Exchange en línea. ZAP no funciona en entornos de Exchange Online Protection independientes (EOP) que protegen los buzones Exchange locales.
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>¿Qué ocurre si un mensaje se mueve a otra carpeta (por ejemplo, reglas de la Bandeja de entrada)?
 
-ZAP sigue funcionando siempre y cuando el mensaje no se haya eliminado o mientras no se haya aplicado la misma acción, o más fuerte. Por ejemplo, si la directiva contra suplantación de identidad (phishing) está establecida en cuarentena y el mensaje ya está en el correo no deseado, ZAP tomará medidas para poner en cuarentena el mensaje.
+La purga automática de hora cero sigue funcionando siempre y cuando el mensaje no se haya eliminado o mientras no se haya aplicado la misma acción, o una acción más fuerte. Por ejemplo, si la directiva contra suplantación de identidad (phishing) está establecida en cuarentena y el mensaje ya está en el correo no deseado, ZAP tomará medidas para poner en cuarentena el mensaje.
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>¿Cómo afecta ZAP a los buzones en espera?
 
-ZAP pondrá en cuarentena los mensajes de los buzones en espera. ZAP puede mover mensajes a la carpeta correo no deseado en función de la acción configurada para un veredicto de correo no deseado o suplantación de identidad (phishing) en directivas contra correo no deseado.
+La purga automática de hora cero pondrá en cuarentena los mensajes de los buzones en espera. ZAP puede mover mensajes a la carpeta correo no deseado en función de la acción configurada para un veredicto de correo no deseado o suplantación de identidad (phishing) en directivas contra correo no deseado.
 
 Para obtener más información acerca de las Exchange Online, vea [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).

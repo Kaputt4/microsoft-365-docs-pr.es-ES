@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
+  ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52625418"
+  ms.lasthandoff: 06/23/2021
+  ms.locfileid: "53083649"
 title: Preguntas más frecuentes sobre mensajes en cuarentena
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -82,14 +82,14 @@ sections:
   - question: >
       ¿Puedo liberar o informar de más de un mensaje en cuarentena a la vez?
     answer: >
-      En el Centro de & cumplimiento, puede seleccionar y liberar hasta 100 mensajes a la vez.
+      En el portal Microsoft 365 Defender, puede seleccionar y liberar hasta 100 mensajes a la vez.
 
 
       Los administradores pueden usar los cmdlets [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) y [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) en Exchange Online PowerShell o PowerShell independiente de EOP para buscar y liberar mensajes en cuarentena en masa e informar de falsos positivos en masa.
   - question: >
       ¿Se admiten caracteres comodín al buscar mensajes en cuarentena? ¿Puedo buscar mensajes en cuarentena para un dominio específico?
     answer: >-
-      Los caracteres comodín no se admiten en el Centro de seguridad & cumplimiento. Por ejemplo, al buscar un remitente, debe especificar la dirección de correo electrónico completa. Sin embargo, puede usar caracteres comodín Exchange Online PowerShell o PowerShell independiente de EOP.
+      Los caracteres comodín no se admiten en el portal Microsoft 365 Defender web. Por ejemplo, al buscar un remitente, debe especificar la dirección de correo electrónico completa. Sin embargo, puede usar caracteres comodín Exchange Online PowerShell o PowerShell independiente de EOP.
 
 
       Por ejemplo, copie el siguiente código de PowerShell en el Bloc de notas y guarde el archivo como .ps1 en una ubicación que sea fácil de encontrar (por ejemplo, C:\Data\QuarantineRelease.ps1).

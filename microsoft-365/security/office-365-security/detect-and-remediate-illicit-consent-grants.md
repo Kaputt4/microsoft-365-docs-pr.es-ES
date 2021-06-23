@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo reconocer y corregir el ataque de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0041c473f196dace893122c5c0543a06c1e6ff8
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029866"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083013"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones ilegales de consentimiento
 
@@ -50,9 +50,9 @@ Debe buscar en el registro de **auditoría** para encontrar signos, también den
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Pasos para encontrar signos de este ataque
 
-1. Abra el **portal Microsoft 365 Defender** en <https://security.microsoft.com> y, a continuación, seleccione **Auditar**.
+1. Abra el **Microsoft 365 Defender en y,** <https://security.microsoft.com> a continuación, seleccione **Auditar**. O bien, para ir directamente a la **página Auditoría,** use <https://security.microsoft.com/auditlogsearch> .
 
-2. En la **página Auditoría** que se abre, compruebe que la **pestaña** Búsqueda está seleccionada y, a continuación, configure las siguientes opciones:
+2. En la **página Auditoría,** compruebe que la **pestaña** Buscar está seleccionada y, a continuación, configure las siguientes opciones:
    - **Intervalo de fecha y hora**
    - **Actividades:** compruebe que se han seleccionado **Mostrar** resultados para todas las actividades.
 
@@ -137,7 +137,7 @@ El script genera un archivo denominado Permissions.csv. Siga estos pasos para bu
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinar el ámbito del ataque
 
-Una vez que haya terminado de realizar el inventario del acceso a la aplicación, revise el registro de **auditoría** para determinar el ámbito completo de la infracción. Busque en los usuarios afectados, los períodos de tiempo a los que la aplicación ilícita tuvo acceso a su organización y los permisos que tenía la aplicación. Puede buscar en el registro **de auditoría** en el [Microsoft 365 Defender](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+Una vez que haya terminado de realizar el inventario del acceso a la aplicación, revise el registro de **auditoría** para determinar el ámbito completo de la infracción. Busque en los usuarios afectados, los períodos de tiempo a los que la aplicación ilícita tuvo acceso a su organización y los permisos que tenía la aplicación. Puede buscar en el registro **de auditoría** en [Microsoft 365 Defender portal](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 > [!IMPORTANT]
 > [La auditoría de buzones](../../compliance/enable-mailbox-auditing.md) de correo y la auditoría de actividad para administradores y usuarios deben estar [habilitadas](../../compliance/turn-audit-log-search-on-or-off.md) antes del ataque para que pueda obtener esta información.

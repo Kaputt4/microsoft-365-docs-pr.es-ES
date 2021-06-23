@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a activar los datos adjuntos de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a654db40e5dec8d23d07ec7455216fe4e0a8c0e7
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b64b3cfb29b3be999c9e26804e35dc4d02e48fbb
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933016"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083097"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
@@ -43,7 +43,7 @@ Este artículo contiene los pasos para habilitar y configurar Caja fuerte datos 
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Caja fuerte datos adjuntos,** abra <https://security.microsoft.com/safeattachmentv2> .
 
-- Para activar los datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams, debe ser  miembro de  los grupos de roles Administración de la organización o Administrador de seguridad en el portal de Microsoft 365 Defender. Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+- Para activar Caja fuerte datos adjuntos de SharePoint, OneDrive y Microsoft Teams, debe ser miembro de los  grupos  de roles Administración de la organización o Administrador de seguridad en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 - Para usar SharePoint PowerShell en línea para evitar que los usuarios descarguen archivos [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) malintencionados, debe ser miembro de los roles administrador [global](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) o administrador SharePoint en Azure AD.
 
@@ -51,9 +51,9 @@ Este artículo contiene los pasos para habilitar y configurar Caja fuerte datos 
 
 - Espere hasta 30 minutos para que la configuración suba a efecto.
 
-## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Paso 1: Usar el portal de Microsoft 365 Defender para activar Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams
+## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Paso 1: Usar el portal Microsoft 365 Defender para activar Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams
 
-1. En el portal Microsoft 365 Defender, vaya **a Directivas &** sección Directivas de amenazas Caja fuerte datos \>  \>  \> **adjuntos**.
+1. En el portal Microsoft 365 Defender, vaya **a Directivas &** de directivas de amenazas sección Directivas de amenazas Caja fuerte Datos \>  \>  \> **adjuntos**.
 
 2. En la **página Caja fuerte datos adjuntos,** haga clic en **Configuración global**.
 
@@ -94,7 +94,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Paso 3 (recomendado) Use el portal de Microsoft 365 Defender para crear una directiva de alerta para los archivos detectados
 
-Puede crear una directiva de alerta que le informe a usted y a otros administradores cuando Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams detecte un archivo malintencionado. Para obtener más información sobre las alertas, vea [Crear alertas de actividad en el portal de Microsoft 365 Defender](../../compliance/create-activity-alerts.md).
+Puede crear una directiva de alerta que le informe a usted y a otros administradores cuando Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams detecte un archivo malintencionado. Para obtener más información sobre las alertas, vea [Create activity alerts in the Microsoft 365 Defender portal](../../compliance/create-activity-alerts.md).
 
 1. En el portal Microsoft 365 Defender, vaya **a Directivas & reglas de** alerta o abra \>  <https://security.microsoft.com/alertpolicies> .
 
@@ -142,7 +142,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [ve
 
 - Para comprobar que ha activado correctamente los datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams, siga uno de los pasos siguientes:
 
-  - En el portal de Microsoft 365 Defender, vaya **a** Directivas & reglas Directivas de amenazas sección Caja fuerte Datos adjuntos, seleccione Configuración global y compruebe el valor de la configuración Activar defender para Office 365 para SharePoint, OneDrive y \>  \>  \>  **Microsoft Teams.** 
+  - En el portal de Microsoft 365 Defender, vaya **a** Directivas & reglas Directivas de amenazas sección Directivas de amenazas Caja fuerte Datos adjuntos, seleccione Configuración global y compruebe el valor de la configuración Activar defender para Office 365 para SharePoint, OneDrive y \>  \>  \>  **Microsoft Teams.** 
 
   - En Exchange Online PowerShell, ejecute el siguiente comando para comprobar la configuración de la propiedad:
 
@@ -161,8 +161,8 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [ve
   Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - Para comprobar que ha configurado correctamente una directiva de alerta para los archivos detectados, siga estos pasos:
-  - En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas** directiva de alerta seleccione la directiva de alerta y compruebe la \>  \> configuración.
-  - En Microsoft 365 PowerShell del portal de Defender, reemplace por el nombre de la directiva de alerta, ejecute el siguiente comando y \<AlertPolicyName\> compruebe los valores de la propiedad:
+  - En el portal Microsoft 365 Defender, vaya a **Directivas & reglas** de alerta Seleccione la directiva de alerta y compruebe la \>  \> configuración.
+  - En Microsoft 365 Defender powerShell del portal, reemplace por el nombre de la directiva de alerta, ejecute el siguiente comando y \<AlertPolicyName\> compruebe los valores de la propiedad:
 
     ```powershell
     Get-ActivityAlert -Identity "<AlertPolicyName>"

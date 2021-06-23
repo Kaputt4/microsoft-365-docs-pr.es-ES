@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Use el Explorador de amenazas o las detecciones en tiempo real en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
+description: Use el Explorador de amenazas o detecciones en tiempo real en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71052cc5a3874da250772bfa628417824ba51c63
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 2b0c0c36cb481aac64b55467da4aaf9e3cf7a493
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930138"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083565"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Búsqueda de amenazas en el Explorador de amenazas para Microsoft Defender para Office 365
 
@@ -42,7 +42,7 @@ En este artículo:
 
 Si su organización tiene [Microsoft Defender](defender-for-office-365.md)para Office 365 y tiene los [permisos,](#required-licenses-and-permissions)puede usar detecciones en tiempo **real** o **explorador** para detectar y corregir amenazas. 
 
-En el **portal Microsoft 365 Defender,** vaya **a Correo electrónico & colaboración** y, a continuación, **elija Explorador**.
+En el **portal Microsoft 365 Defender**, vaya a Correo **& colaboración** y, a continuación, elija **Explorador**.
 
 <br>
 
@@ -68,7 +68,7 @@ En Microsoft Defender para Office 365, hay dos planes de suscripción: plan 1 y 
 
 Defender for Office 365 Plan 1 usa detecciones en tiempo *real,* que es un subconjunto de la herramienta de búsqueda Explorador de amenazas *(también* denominada *Explorador)* del Plan 2. En esta serie de artículos, la mayoría de los ejemplos se crearon con el Explorador de amenazas completo. Los administradores deben probar los pasos de las detecciones en tiempo real para ver dónde se aplican.
 
-Para abrir la herramienta Explorador, vaya **a Microsoft 365 Portal de Defender** Correo electrónico & explorador de  >    >  **colaboración.** De forma predeterminada, llegarás a la página  **Malware,** pero usa la lista desplegable Ver para familiarizarte con tus opciones. Si estás buscando phishing o buscando en una campaña de amenazas, elige esas vistas.
+Para abrir la herramienta Explorador, vaya a Microsoft 365 Defender **portal de correo**& de  >    >  **colaboración**. De forma predeterminada, llegarás a la página  **Malware,** pero usa la lista desplegable Ver para familiarizarte con tus opciones. Si estás buscando phishing o buscando en una campaña de amenazas, elige esas vistas.
 
 > [!div class="mx-imgBorder"]
 > ![Vista desplegable en el Explorador de amenazas](../../media/view-drop-down.png)
@@ -267,7 +267,7 @@ Para ver y usar detecciones en tiempo real o explorador, debe tener lo siguiente
 
 Para obtener más información sobre roles y permisos, consulte los siguientes recursos:
 
-- [Permisos en el portal de Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)
+- [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
 - [Permisos de características de Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 

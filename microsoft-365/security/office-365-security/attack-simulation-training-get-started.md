@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el aprendizaje de simulación de ataques para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 182d3d3c1d3b7c0c43caa8a809e993933707af00
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ad86f77399cfa2a3a780d3fed7e483e3c11bc08d
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878789"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082905"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Introducción al uso de aprendizaje de simulación de ataques
 
@@ -40,21 +40,21 @@ Si su organización tiene Microsoft 365 E5 o Microsoft Defender para el Plan 2 d
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Para abrir el portal Microsoft 365 Defender, vaya a <https://security.microsoft.com> . El aprendizaje de simulación de ataques está disponible en **Correo electrónico y colaboración** \> **Formación de simulación de ataque.** Para ir directamente al aprendizaje de simulación de ataques, abra <https://security.microsoft.com/attacksimulator> .
+- Para abrir el portal de Microsoft 365 Defender, vaya a <https://security.microsoft.com>. El aprendizaje de simulación de ataques está disponible en **Correo electrónico y colaboración** \> **Formación de simulación de ataque.** Para ir directamente al aprendizaje de simulación de ataques, abra <https://security.microsoft.com/attacksimulator> .
 
 - Para obtener más información acerca de la disponibilidad del aprendizaje de simulación de ataques en Microsoft 365 suscripciones, vea Microsoft Defender para obtener Office 365 [descripción del servicio](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Debe tener asignados permisos en el Centro de seguridad & cumplimiento o en Azure Active Directory para poder realizar los procedimientos descritos en este artículo. En concreto, debe ser miembro de **administración** de la **organización,** administrador de seguridad o uno de los siguientes roles:
+- Debe tener asignados permisos en el portal de Microsoft 365 Defender o en Azure Active Directory para poder realizar los procedimientos descritos en este artículo. En concreto, debe ser miembro de **administración** de la **organización,** administrador de seguridad o uno de los siguientes roles:
   - **Administradores del simulador de ataque:** crea y administra todos los aspectos de las campañas de simulación de ataque.
   - **Autores de carga del simulador de** ataque: crea cargas de ataque que un administrador puede iniciar más adelante.
 
-  Para obtener más información, vea [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) o About admin [roles](../../admin/add-users/about-admin-roles.md).
+  Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) o About admin [roles](../../admin/add-users/about-admin-roles.md).
 
 - No hay cmdlets de PowerShell correspondientes para el aprendizaje de simulación de ataques.
 
 - Los datos relacionados con la simulación de ataques y el aprendizaje se almacenan con otros datos de clientes para Microsoft 365 servicios. Para obtener más [información, vea Microsoft 365 de datos](../../enterprise/o365-data-locations.md). La simulación de ataques está disponible en las siguientes regiones: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN y KOR.
 
-- A partir del 15 de junio de 2021, el entrenamiento de simulación de ataques está disponible en GCC. Si su organización tiene Office 365 G5 GCC o Microsoft Defender para Office 365 (Plan 2) para gobierno, puede usar el entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender para ejecutar escenarios de ataque realistas en su organización, tal como se describe en este artículo. El aprendizaje de simulación de ataques aún no está disponible GCC entornos De alto o DoD.
+- A partir del 15 de junio de 2021, el entrenamiento de simulación de ataques está disponible en GCC. Si su organización tiene Office 365 G5 GCC o Microsoft Defender para Office 365 (Plan 2) para gobierno, puede usar el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender para ejecutar escenarios de ataque realistas en su organización, tal como se describe en este artículo. El aprendizaje de simulación de ataques aún no está disponible GCC entornos De alto o DoD.
 
 > [!NOTE]
 > El entrenamiento de simulación de ataques ofrece un subconjunto de capacidades a los clientes de E3 como prueba. La oferta de prueba contiene la capacidad de usar una carga de recolección de credenciales y la capacidad de seleccionar experiencias de aprendizaje de "phishing isa" o "suplantación de identidad de mercado masivo". Ninguna otra funcionalidad forma parte de la oferta de prueba de E3.

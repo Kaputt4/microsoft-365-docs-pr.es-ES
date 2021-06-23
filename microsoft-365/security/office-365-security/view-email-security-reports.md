@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden aprender a buscar y usar los informes de seguridad de correo electrónico que están disponibles en el portal de Microsoft 365 Defender.
+description: Los administradores pueden aprender a buscar y usar los informes de seguridad de correo electrónico que están disponibles en el portal Microsoft 365 Defender correo electrónico.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2ad90038ac818f9759768d0d00019393205b03f3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029578"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083529"
 ---
-# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,20 +35,20 @@ ms.locfileid: "53029578"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Hay varios informes disponibles en el portal de Microsoft 365 Defender para ayudarle a ver cómo las características de seguridad de correo electrónico, como el correo no deseado, antimalware y las características de cifrado en Microsoft 365 protegen su <https://security.microsoft.com> organización. Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-these-reports)puede ver estos informes en el portal  de Microsoft 365 Defender yendo a Informes de correo electrónico & colaboración Correo electrónico & informes de \>  \> **colaboración**. Para ir directamente a la página **Informes de colaboración & correo** electrónico, abra <https://security.microsoft.com/emailandcollabreport> .
+Hay una variedad de informes disponibles en el portal de Microsoft 365 Defender para ayudarle a ver cómo las características de seguridad del correo electrónico, como el correo no deseado, antimalware y las características de cifrado en Microsoft 365 protegen su <https://security.microsoft.com> organización. Si tiene los [permisos](#what-permissions-are-needed-to-view-these-reports)necesarios, puede ver estos informes en el  portal de Microsoft 365 Defender yendo a Informes de correo electrónico & colaboración Correo electrónico & informes \>  \> **de colaboración**. Para ir directamente a la página **Informes de colaboración & correo** electrónico, abra <https://security.microsoft.com/emailandcollabreport> .
 
-![Página & informes de colaboración en el portal de Microsoft 365 Defender](../../media/email-collaboration-reports.png)
+![Página & informes de colaboración de correo electrónico en el portal de Microsoft 365 Defender web](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
-> Algunos de los informes de la página Informes de **colaboración & correo** electrónico requieren Microsoft Defender para Office 365. Para obtener información acerca de estos informes, vea Ver informes de [Defender para Office 365 en el portal de Microsoft 365 Defender](view-reports-for-mdo.md).
+> Algunos de los informes de la página Informes de **colaboración & correo** electrónico requieren Microsoft Defender para Office 365. Para obtener información acerca de estos informes, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
 >
-> Los informes relacionados con el flujo de correo están ahora en el Centro de administración de Exchange (EAC). Para obtener más información acerca de estos informes, vea [Informes de flujo de correo en el nuevo Centro de administración de Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+> Los informes relacionados con el flujo de correo se encuentran ahora en el Centro Exchange administración (EAC). Para obtener más información acerca de estos informes, vea Informes de flujo de correo [en el nuevo centro Exchange administración.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="compromised-users-report"></a>Informe de usuarios comprometidos
 
 > [!NOTE]
-> Este informe está disponible en organizaciones de Microsoft 365 con buzones de Exchange Online. No está disponible en organizaciones independientes de Exchange Online Protection (EOP).
+> Este informe está disponible en Microsoft 365 organizaciones con Exchange Online buzones de correo. No está disponible en organizaciones independientes Exchange Online Protection (EOP).
 
 El **informe Usuarios comprometidos** muestra el número de  cuentas  de usuario que se marcaron como Sospechosas o Restringidas en los últimos 7 días. Las cuentas en cualquiera de estos estados son problemáticas o incluso están en peligro. Con el uso frecuente, puede usar el informe para detectar picos e incluso tendencias en cuentas sospechosas o restringidas. Para obtener más información acerca de los usuarios en peligro, vea [Responder a una cuenta de correo electrónico comprometida.](responding-to-a-compromised-email-account.md)
 
@@ -56,7 +56,7 @@ El **informe Usuarios comprometidos** muestra el número de  cuentas  de usuario
 
 La vista de agregado muestra los datos de los últimos 90 días y la vista de detalles muestra los datos de los últimos 30 días.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico \>  \> **& informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque **Usuarios** en peligro y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/CompromisedUsers> .
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Usuarios** en peligro y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/CompromisedUsers> .
 
 En la **página Usuarios** en peligro, puede filtrar tanto  el gráfico como la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
 
@@ -75,29 +75,29 @@ En la tabla de detalles debajo del gráfico, puede ver los siguientes detalles:
 - **Nombre de usuario**
 - **Action**
 
-## <a name="exchange-transport-rule-report"></a>Informe de reglas de transporte de Exchange
+## <a name="exchange-transport-rule-report"></a>Exchange de regla de transporte
 
-El **informe de reglas de transporte de Exchange** muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
+El **Exchange de regla de** transporte muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico \>  \> **& informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque la regla de transporte de **Exchange** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/ETRRuleReport> .
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Exchange de transporte **y, a** continuación, haga clic en Ver **detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/ETRRuleReport> .
 
-![Widget de regla de transporte de Exchange en la página Informes de colaboración & correo electrónico](../../media/transport-rule-report-widget.png)
+![Exchange de regla de transporte en la página Informes de colaboración & correo electrónico](../../media/transport-rule-report-widget.png)
 
-En la **página Informe de reglas de transporte de Exchange,** los gráficos y los datos disponibles se describen en las secciones siguientes.
+En la página Exchange informe de reglas de **transporte,** los gráficos y datos disponibles se describen en las secciones siguientes.
 
 ### <a name="chart-breakdown-by-direction"></a>Desglose del gráfico por dirección
 
-![Vista Dirección de las reglas de transporte de Exchange en el informe de reglas de transporte de Exchange](../../media/transport-rule-report-etr-direction-view.png)
+![Vista Dirección para las Exchange de transporte en el informe Exchange regla de transporte](../../media/transport-rule-report-etr-direction-view.png)
 
 Si selecciona Desglose **de gráficos por dirección,** los siguientes gráficos estarán disponibles:
 
-- **Ver datos por reglas de transporte de Exchange:** el número **de** mensajes entrantes y salientes que se vieron afectados por las reglas de flujo de correo. 
-- Ver datos por reglas de transporte  de  **Exchange DLP:** el número de mensajes entrantes y salientes que se vieron afectados por las reglas de flujo de correo de prevención de pérdida de datos (DLP).
+- **Ver datos por Exchange de transporte:** el  número **de** mensajes entrantes y salientes que se vieron afectados por las reglas de flujo de correo.
+- **Ver datos por DLP Exchange** de transporte:  el  número de mensajes entrantes y salientes que se vieron afectados por las reglas de flujo de correo de prevención de pérdida de datos (DLP).
 
 La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
 - **Fecha**
-- **Directiva DLP** (**Solo ver datos por reglas de transporte de Dlp Exchange)**
+- **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
 - **Asunto**
 - **Dirección del remitente**
@@ -115,18 +115,18 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ### <a name="chart-breakdown-by-severity"></a>Desglose del gráfico por gravedad
 
-![Vista gravedad de las reglas de transporte de Exchange en el informe de reglas de transporte de Exchange](../../media/transport-rule-report-etr-severity-view.png)
+![Vista gravedad de las Exchange de transporte en el informe Exchange regla de transporte](../../media/transport-rule-report-etr-severity-view.png)
 
 Si selecciona Desglose **de gráficos por gravedad,** los siguientes gráficos están disponibles:
 
-- **Ver datos por reglas de transporte de Exchange:** el número de mensajes de gravedad **alta,** gravedad media y **gravedad** baja.  El nivel de gravedad se establece como una acción en la regla (**Auditar** esta regla con el nivel de gravedad o _SetAuditSeverity_). Para obtener más información, vea [Acciones de regla de flujo de correo en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **Ver datos por Exchange de transporte:** el número de mensajes de gravedad **alta,** gravedad media y **gravedad** baja. El nivel de gravedad se establece como una acción en la regla (**Auditar** esta regla con el nivel de gravedad o _SetAuditSeverity_). Para obtener más información, vea [Acciones de regla de flujo de correo en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Ver datos por reglas de** transporte de Dlp Exchange: el  número de mensajes de gravedad **alta,** gravedad media y gravedad baja que se vieron afectados por las reglas de flujo de correo DLP.
+- **Ver datos por DLP Exchange** de transporte: el número de mensajes  de gravedad **alta,** media y de gravedad baja que se vieron afectados por las reglas de flujo de correo DLP.
 
 La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
 - **Fecha**
-- **Directiva DLP** (**Solo ver datos por reglas de transporte de Dlp Exchange)**
+- **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
 - **Asunto**
 - **Dirección del remitente**
@@ -149,9 +149,9 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ## <a name="mailflow-status-report"></a>Informe de estado de flujo de correo
 
-El **informe de** estado de flujo de correo es un informe inteligente que muestra información sobre el correo electrónico entrante y saliente, las detecciones de correo no deseado, el malware, el correo electrónico identificado como "bueno" y la información sobre el correo electrónico permitido o bloqueado en el perímetro. Este es el único informe que contiene información de protección perimetral y muestra cuánto correo electrónico se bloquea antes de que exchange Online Protection (EOP) pueda evaluarlo. Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como cinco mensajes diferentes y no un mensaje.
+El **informe de** estado de flujo de correo es un informe inteligente que muestra información sobre el correo electrónico entrante y saliente, las detecciones de correo no deseado, el malware, el correo electrónico identificado como "bueno" y la información sobre el correo electrónico permitido o bloqueado en el perímetro. Este es el único informe que contiene información de protección perimetral y muestra cuánto correo electrónico se bloquea antes de que se le permita entrar en el servicio para su evaluación por parte de Exchange Online Protection (EOP). Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como cinco mensajes diferentes y no un mensaje.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & colaboración Correo electrónico \>  \> **& informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque Resumen de estado de **flujo** de correo y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/mailflowStatusReport> .
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Resumen de estado de **flujo** de correo y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/mailflowStatusReport> .
 
 ![Widget de resumen de estado de flujo de correo en la página Informes de colaboración & correo electrónico](../../media/mail-flow-status-report-widget.png)
 
@@ -848,7 +848,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 - **Lector de seguridad**
 - **Lector global**
 
-Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 **Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 

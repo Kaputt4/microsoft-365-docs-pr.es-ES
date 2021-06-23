@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo usar las capacidades de investigac
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e99cda906e97db72a440c3daf509a767181e5342
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: e49963d1ffaeb7bce20f21f82f37fd3675b9cdd3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029812"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083361"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Investigar el correo electrónico malintencionado que se entregó en Microsoft 365
 
@@ -51,7 +51,7 @@ Asegúrese de que se cumplen los siguientes requisitos:
 
 - Su organización tiene directivas definidas para correo no deseado, antimalware, anti phishing, y así sucesivamente. Vea [Proteger contra amenazas en Office 365](protect-against-threats.md).
 
-- Es un administrador global o tiene asignado el administrador de seguridad o el rol Buscar y purgar en el portal Microsoft 365 Defender búsqueda. Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). Para algunas acciones, también debe tener asignado el rol Vista previa.
+- Es un administrador global o tiene asignado el administrador de seguridad o el rol Buscar y purgar en el portal Microsoft 365 Defender búsqueda. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Para algunas acciones, también debe tener asignado el rol Vista previa.
 
 ### <a name="preview-role-permissions"></a>Permisos de función de vista previa
 
@@ -73,7 +73,7 @@ Para realizar determinadas acciones, como ver encabezados de mensaje  o descarga
 >
 > Al rol Administrador global se le asigna el Centro de administración de Microsoft 365 ( ), y los roles Administrador de seguridad y Lector de seguridad se <https://admin.microsoft.com> asignan en Microsoft 365 Defender ( <https://security.microsoft.com> ). Para obtener más información acerca de los roles y los permisos, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-Entendemos que la vista previa y la descarga de correo electrónico son actividades confidenciales, por lo que la auditoría está habilitada para estas. Una vez que un administrador realiza estas actividades en mensajes de correo Office 365 electrónico, los registros de auditoría se generan para el mismo y se pueden ver en el Centro de seguridad & cumplimiento ( <https://protection.office.com> ). Vaya a **Búsqueda de** registro de auditoría  >  **de búsqueda** y filtre el nombre de administrador en la sección Búsqueda. Los resultados filtrados mostrarán la **actividad AdminMailAccess**. Seleccione una fila para ver detalles en la **sección Más información** sobre el correo electrónico descargado o con vista previa.
+Entendemos que la vista previa y la descarga de correo electrónico son actividades confidenciales, por lo que la auditoría está habilitada para estas. Una vez que un administrador realiza estas actividades en correos electrónicos, los registros de auditoría se generan para el mismo y se pueden ver en el portal de Microsoft 365 Defender ( <https://security.microsoft.com> ). Vaya a **la pestaña Búsqueda** \> **de** auditoría y filtre el nombre del administrador en **el cuadro Usuarios.** Los resultados filtrados mostrarán la **actividad AdminMailAccess**. Seleccione una fila para ver detalles en la **sección Más información** sobre el correo electrónico descargado o con vista previa.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Buscar correo electrónico sospechoso que se entregó
 
