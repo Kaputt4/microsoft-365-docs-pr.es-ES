@@ -13,23 +13,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796059"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062187"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Esta característica se encuentra en versión preliminar y está sujeta a cambios. 
->
-> Habilite esta característica en un espacio empresarial de prueba en lugar de en un espacio empresarial de producción porque:
-> - Esta característica realiza cambios en los metadatos de etiquetado y no todas las aplicaciones en todas las plataformas admiten este cambio actualmente
-> - No puede deshabilitar esta característica usted mismo después de habilitarla
+> Esta característica se encuentra en versión preliminar y está sujeta a cambios.
 
 Habilite la configuración para admitir la [coautoría](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) para las aplicaciones de escritorio de Office de modo que cuando las [etiquetas de confidencialidad](sensitivity-labels.md) etiquetan y cifran documentos, varios usuarios puedan editar estos documentos al mismo tiempo.
 
@@ -37,7 +33,7 @@ Sin esta configuración habilitada para su espacio empresarial, los usuarios deb
 
 Además, habilitar esta funcionalidad hace que la característica de [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) sea compatible con estos archivos cifrados y etiquetados.
 
-Para leer el anuncio de lanzamiento, consulte la publicación del blog [Anunciando la coautoría en documentos cifrados de Microsoft Information Protection y actualizaciones de etiquetado](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+Para leer el anuncio de lanzamiento inicial, consulte la publicación del blog [Anunciar la coautoría en documentos cifrados de protección de la información de Microsoft y actualizaciones de etiquetado](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Cambios de metadatos para etiquetas de confidencialidad
 
@@ -76,15 +72,13 @@ Consulte en la siguiente sección una lista de aplicaciones y servicios compatib
 
 Asegúrese de entender los siguientes requisitos previos antes de activar esta característica.
 
-- Debe usar un espacio empresarial de prueba para esta versión preliminar.
-
 - Debe ser un administrador global para activar esta característica.
 
 - Las etiquetas de confidencialidad deben estar [habilitadas para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) para el espacio empresarial. Si esta característica no está ya habilitada, se habilitará automáticamente al seleccionar la configuración para activar la coautoría para los archivos con etiquetas de confidencialidad.
 
 - Aplicaciones de Microsoft 365 para empresas:
-    - **Windows**: Vista previa: [Canal actual (vista previa)](https://office.com/insider)
-    - **macOS**: Versión preliminar: [Canal actual (Versión preliminar)](https://office.com/insider)
+    - **Windows**: versión mínima 2105: 18 de junio
+    - **macOS**: versión mínima 16.50
     - **iOS**: aún no compatible
     - **Android**: aún no compatible
 
@@ -142,34 +136,26 @@ Esta versión preliminar de coautoría para archivos cifrados con etiquetas de c
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Cómo habilitar la coautoría en archivos con etiquetas de confidencialidad
 
 > [!CAUTION]
-> Habilitar este valor es una acción unidireccional. Mientras la característica está en versión preliminar, pruébela solo en un entorno que no sea de producción y solo después de haber leído y comprendido los cambios de metadatos, los requisitos previos, las limitaciones y cualquier problema conocido documentado en esta página.
+> Habilitar este valor es una acción unidireccional. Mientras la característica está en versión preliminar, habilítela solo después de haber leído y comprendido los cambios de metadatos, los requisitos previos, las limitaciones y cualquier problema conocido documentado en esta página.
 
-Durante la versión preliminar, debe usar una dirección URL específica para obtener acceso a esta configuración en el Centro de cumplimiento de Microsoft 365.
+1. Inicie sesión en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) como administrador global de su espacio empresarial.
 
-1. Inicie sesión en el Centro de cumplimiento de Microsoft 365 como administrador global de su espacio empresarial de prueba con el vínculo siguiente:
+2. En el panel de navegación, seleccione **Configuración** > **Coautoría para archivos con archivos de confidencialidad**.
+
+2. En la página **Coautoría para archivos con etiquetas de confidencialidad (versión preliminar)**, lea la descripción de resumen, los requisitos previos, lo que puede esperar y la advertencia de que no puede desactivar este valor después de activarlo.
     
-    ```http
-    https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ```
-    Este vínculo le lleva directamente a la configuración del espacio empresarial, a **Coautoría de archivos con etiquetas de confidencialidad**.
-
-    > [!IMPORTANT]
-    > Antes de continuar, compruebe que ha iniciado sesión en un espacio empresarial de prueba que no afecte a los usuarios: 
-    >
-    > Seleccione el círculo con las iniciales de su cuenta en la parte superior derecha del centro de cumplimiento y confirme que el nombre del espacio empresarial muestra el espacio empresarial de prueba deseado.
-    
-2. Lea la descripción de resumen, los requisitos previos, lo que puede esperar y la advertencia de que no puede desactivar esta configuración después de activarla. Después, seleccione **Activar la coautoría para archivos con etiquetas de confidencialidad** y **Aplicar**:
+    Después, seleccione **Activar la coautoría para archivos con etiquetas de confidencialidad** y **Aplicar**:
     
     ![Opción para activar la coautoría en archivos con etiquetas de confidencialidad](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-3. Espere 24 horas hasta que esta configuración se replique en su entorno antes de probar esta nueva característica para la coautoría.
+3. Espere 24 horas hasta que este valor se replique en su entorno antes de usar esta nueva característica para la coautoría.
 
 ## <a name="contact-support-if-you-need-to-disable-this-feature"></a>Póngase en contacto con el soporte técnico si necesita deshabilitar esta característica
 
 > [!IMPORTANT]
 > Si necesita deshabilitar esta característica, tenga en cuenta que la información de etiquetado se puede perder.
 
-Cuando haya habilitado la coautoría para archivos con etiquetas de confidencialidad para su espacio empresarial, no podrá deshabilitar esta configuración usted mismo. Por eso es tan importante que compruebe y comprenda los requisitos previos, las consecuencias y las limitaciones antes de habilitar esta configuración. Por este motivo, también recomendamos que pruebe esta característica con un espacio empresarial de prueba en lugar de con un espacio empresarial de producción.
+Cuando haya habilitado la coautoría para archivos con etiquetas de confidencialidad para su espacio empresarial, no podrá deshabilitar esta configuración usted mismo. Por eso es tan importante que compruebe y comprenda los requisitos previos, las consecuencias y las limitaciones antes de habilitar esta configuración.
 
 ![Opción que muestra la coautoría activada para etiquetas de confidencialidad](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
