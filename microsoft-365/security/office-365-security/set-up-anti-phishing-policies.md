@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e5cd60915699cd2adb42e575c25912f5f164a5b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055135"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096802"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -141,9 +141,11 @@ Para obtener más información, vea [Identificar mensajes sospechosos en Outlook
 La configuración mostrar el primer contacto **consejo de seguridad** está disponible en EOP y Defender para organizaciones Office 365 y no depende de la configuración de la inteligencia de suplantación o la protección de suplantación. La consejo de seguridad se muestra a los destinatarios en los siguientes escenarios:
 
 - La primera vez que obtienen un mensaje de un remitente
-- Si no suelen recibir mensajes del remitente.
+- A menudo no obtienen mensajes del remitente.
 
-![El texto de la consejo de seguridad protección de suplantación con varios destinatarios.](../../media/safety-tip-first-contact-multiple-recipients.png)
+![Primer contacto consejo de seguridad para los mensajes con un destinatario.](../../media/safety-tip-first-contact-one-recipient.png)
+
+![Primer contacto consejo de seguridad para los mensajes con varios destinatarios.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 Esta funcionalidad agrega una capa adicional de protección de seguridad contra posibles ataques de suplantación, por lo que se recomienda activarla.
 

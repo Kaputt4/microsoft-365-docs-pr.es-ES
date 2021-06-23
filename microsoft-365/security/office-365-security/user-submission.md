@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083541"
+ms.locfileid: "53096161"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -134,24 +134,19 @@ Los requisitos de formato de mensaje se describen en la sección siguiente. El f
 
 Para identificar correctamente los mensajes adjuntos originales, los mensajes que se envían al buzón personalizado requieren un formato específico. Si los mensajes no usan este formato, los mensajes adjuntos originales siempre se identifican como envíos de suplantación de identidad.
 
-Para identificar correctamente los mensajes adjuntos originales, los mensajes que se envían al buzón personalizado deben usar la siguiente sintaxis para el asunto (título del sobre):
+Si desea especificar el motivo notificado para los mensajes adjuntos originales, los mensajes que se envían al buzón personalizado (no modifican los datos adjuntos) deben comenzar con uno de los siguientes prefijos en asunto (título del sobre):
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1| o Correo no deseado:
+- 2| o No correo no deseado
+- 3| o phishing
 
-donde SafetyAPIAction es uno de los siguientes valores enteros:
+Por ejemplo:
 
-- 1: Correo no deseado
-- 2: No deseado
-- 3: Phishing
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-En este ejemplo se usan los siguientes valores:
+- Ambos mensajes se notifican como No deseados según subject.
+- El resto se omite.
 
-- El mensaje se notifica como suplantación de identidad.
-- El identificador de mensaje de red es 49871234-6dc6-43e8-abcd-08d797f20abe.
-- La DIRECCIÓN IP del remitente es 167.220.232.101.
-- La dirección De es test@contoso.com.
-- La línea de asunto del mensaje es "probar el envío de suplantación de identidad"
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Los mensajes que no siguen este formato no se mostrarán correctamente en el portal de envíos.

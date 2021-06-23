@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769426"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053076"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -116,7 +116,7 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 ### <a name="retention-policy-for-yammer-locations"></a>Directiva de retención para ubicaciones de Yammer
 
 > [!NOTE]
-> Las directivas de retención de Yammer se implementan en versión preliminar. Si aún no ve las nuevas ubicaciones de Yammer, inténtelo de nuevo en unas semanas.
+> Las directivas de retención de Yammer están en versión preliminar.
 >
 > Para usar esta característica, la red de Yammer debe estar en [Modo nativo](/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
 
@@ -127,8 +127,6 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 3. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido. 
     
     Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](#settings-for-retaining-and-deleting-content) en esta página.
-    
-    No seleccione **Usar la configuración de retención avanzada**, ya que esta opción no es compatible con las ubicaciones de Yammer. 
 
 4. Para acceder a la página **Elegir ubicaciones**, seleccione **Quiero elegir ubicaciones concretas**. A continuación, alterne entre una o ambas ubicaciones de Yammer: **Mensaje de la comunidad de Yammer** y **Mensajes del usuario de Yammer**.
     

@@ -2,7 +2,7 @@
 title: Seguimiento y respuesta a amenazas emergentes con análisis de amenazas
 ms.reviewer: ''
 description: Obtenga información sobre las amenazas emergentes y las técnicas de ataque y cómo detenerlos. Evalúe su impacto en la organización y evalúe la resistencia de la organización.
-keywords: análisis de amenazas, evaluación de riesgos, Microsoft 365 Defender, M365D, estado de mitigación, configuración segura, Microsoft Defender para Office 365, Microsoft Defender para análisis de amenazas de Office 365, análisis de amenazas de MDO, datos de análisis de amenazas MDE y MDO integrados, integración de datos de análisis de amenazas, análisis de amenazas integrado de Microsoft 365 Defender
+keywords: análisis de amenazas, evaluación de riesgos, Microsoft 365 Defender, M365D, estado de mitigación, configuración segura, Microsoft Defender para Office 365, Microsoft Defender para análisis de amenazas de Office 365, análisis de amenazas de MDO, datos de análisis de amenazas MDE y MDO integrados, integración de datos de análisis de amenazas, análisis de amenazas Microsoft 365 Defender integrado
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b87d1963b8ffa3751c13cea532c8d6436f69fbb9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501212"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096848"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Seguimiento y respuesta a amenazas emergentes con análisis de amenazas 
 
@@ -87,7 +87,7 @@ _Panel de análisis de amenazas. También puedes hacer clic en el icono Buscar p
 
 Cada informe de análisis de amenazas proporciona información en varias secciones: 
 
-- [**<mrk mtype="seg" mid="221">Información general</mrk>**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses) 
+- [**Información general**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses) 
 - [**Informe de analistas**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
 - [**Incidentes relacionados**](#related-incidents-view-and-manage-related-incidents)
 - [**Activos afectados**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
@@ -115,6 +115,24 @@ Cada informe incluye gráficos diseñados para proporcionar información sobre e
 Cada informe incluye gráficos que proporcionan información general sobre la resistencia de la organización frente a una amenaza determinada:
 - **Estado de configuración segura:** muestra el número de dispositivos con configuraciones de seguridad mal configuradas. Aplica la configuración de seguridad recomendada para ayudar a mitigar la amenaza. Los dispositivos se consideran **seguros** si han aplicado _toda_ la configuración de seguimiento.
 - **Estado de revisión de vulnerabilidad:** muestra el número de dispositivos vulnerables. Aplicar actualizaciones de seguridad o revisiones para solucionar las vulnerabilidades aprovechadas por la amenaza.
+
+#### <a name="view-reports-per-threat-tags"></a>Ver informes por etiquetas de amenazas
+Puede filtrar la lista de informes de amenazas y ver los informes más relevantes según una etiqueta de amenaza (categoría) específica o un tipo de informe. 
+- **Etiquetas de** amenazas: le ayudarán a ver los informes más relevantes según una categoría de amenaza específica. Por ejemplo, todos los informes relacionados con ransomware.
+- **Tipos de informe:** le ayudarán a ver los informes más relevantes según un tipo de informe específico. Por ejemplo, todos los informes que cubren herramientas y técnicas. 
+- **Filtros:** le ayudarán a revisar eficazmente la lista de informes de amenazas y filtrar la vista en función de un tipo de informe o etiqueta de amenaza específico. Por ejemplo, revise todos los informes de amenazas relacionados con la categoría ransomware o los informes de amenazas que cubren vulnerabilidades.
+
+##### <a name="how-does-it-work"></a>¿Cómo funciona?
+El equipo de Inteligencia de amenazas de Microsoft ha agregado etiquetas de amenazas a cada informe de amenazas:
+- Ahora hay cuatro etiquetas de amenazas disponibles:
+  - Ransomware
+  - Suplantación de identidad (phishing)
+  - Vulnerabilidad
+  - Grupo de actividades
+- Las etiquetas de amenazas se presentan en la parte superior de la página análisis de amenazas, con contadores para el número de informes disponibles en cada etiqueta.
+    ![etiquetas de amenazas](../../media/threat-analytics/ta-threattags-mtp.png)
+- La lista también se puede ordenar por etiquetas de amenaza:   ![ listas](../../media/threat-analytics//ta-taglist-mtp.png)
+- Los filtros están disponibles por etiqueta de amenaza y tipo de informe:   ![ filtros](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Informe de analistas: obtener información de expertos de los investigadores de seguridad de Microsoft
 En la **sección Informe de** analistas, lea la escritura detallada del experto. La mayoría de los informes proporcionan descripciones detalladas de las cadenas de ataque, incluidas las tácticas y técnicas [](advanced-hunting-overview.md) asignadas al marco de CK de MITRE ATT&, listas exhaustivas de recomendaciones y instrucciones de búsqueda de amenazas eficaces.
@@ -167,7 +185,7 @@ _Sección Mitigaciones de un informe de análisis de amenazas_
 >Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible no solo para Microsoft Defender para Endpoint, sino también para Microsoft Defender para los Office licencias de E5.
 >Si no usa el portal de seguridad de Microsoft 365 (Microsoft 365 Defender), también puede ver los detalles del informe (sin Microsoft Defender para datos Office) en el portal de Centro de seguridad de Microsoft Defender (Microsoft Defender para endpoint). 
 
-Para obtener acceso al informe de análisis de amenazas, necesita ciertos roles y permisos. Consulta [Roles personalizados en el control de](custom-roles.md) acceso basado en roles para obtener Microsoft 365 Defender para obtener más información.
+Para obtener acceso al informe de análisis de amenazas, necesita ciertos roles y permisos. Vea [Roles personalizados en el control de](custom-roles.md) acceso basado en roles para obtener Microsoft 365 Defender detalles.
   - Para ver alertas, incidentes o datos de activos afectados, debe tener permisos para Microsoft Defender para los datos de alertas de Office o Microsoft Defender para puntos de conexión, o ambos.
   - Para ver los intentos de correo electrónico impedidos, debe tener permisos para Microsoft Defender para obtener Office de búsqueda. 
   - Para ver las mitigaciones, debe tener permisos para Administración de amenazas y vulnerabilidades datos en Microsoft Defender para endpoint.

@@ -3,7 +3,6 @@ title: Conectarse a Microsoft 365 con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Conéctese a su espacio empresarial de Microsoft 365 mediante PowerShell para Microsoft 365 de forma que pueda realizar tareas desde el Centro de administración desde la línea de comandos.
-ms.openlocfilehash: 70d6aa1373daf2322319d21e385fc1498af3351e
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6b8f98441c7d727984bde8775dea496a9324d50c
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782806"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053064"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Conectarse a Microsoft 365 con PowerShell
 
@@ -36,6 +35,11 @@ Hay dos versiones del módulo de PowerShell que puede usar para conectarse a Mic
 - Módulo Microsoft Azure Active Directory para Windows PowerShell, cuyos cmdlets incluyen *Msol* en su nombre
 
 Actualmente, el Módulo Azure Active Directory PowerShell para Graph no reemplaza completamente la funcionalidad del Módulo Microsoft Azure AD para Windows PowerShell para la administración de usuarios, grupos y licencias. En algunos casos, deberá usar ambas versiones. Puede instalar ambas versiones de forma segura en el mismo equipo.
+
+>[!Note]
+>También puede conectarse con [Azure Cloud Shell](#connect-with-the-azure-cloud-shell) desde el Centro de administración de Microsoft 365.
+>
+
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
@@ -188,6 +192,14 @@ Si recibe un mensaje de error, compruebe los siguientes problemas:
    ```powershell
      (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
    ```
+
+## <a name="connect-with-the-azure-cloud-shell"></a>Conexión con Azure Cloud Shell
+
+Para conectarse y usar Azure Cloud Shell del Centro de administración de Microsoft 365, seleccione el icono de la ventana de PowerShell en la esquina superior derecha de la barra de tareas. En el panel **Bienvenido a Azure Cloud Shell**, seleccione **PowerShell**.
+
+Necesitará una suscripción de Azure activa para su organización que esté vinculada a su suscripción de Microsoft 365. Si aún no tiene una, puede crearla. Una vez que tenga una suscripción de Azure, se abrirá una ventana de PowerShell desde la que ejecutar comandos y scripts de PowerShell.
+
+Para obtener más información, consulte [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 ## <a name="see-also"></a>Consulte también
 

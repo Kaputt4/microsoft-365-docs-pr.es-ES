@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028792"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096737"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de superficie de ataque para evitar infecciones de malware
 
@@ -145,7 +145,7 @@ Puedes revisar el registro de eventos Windows para ver los eventos generados por
 
 4. Seleccione el archivo *cfa-events.xml* desde donde se extrajo. Como alternativa, [copie el XML directamente](event-views.md).
 
-5. Seleccione **Aceptar**.
+5. Haga clic en **Aceptar**.
 
 Puede crear una vista personalizada que filtra los eventos para mostrar solo los siguientes eventos, todos ellos relacionados con el acceso controlado a carpetas:
 
@@ -296,9 +296,11 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza
 
-Esta regla bloquea el inicio de los siguientes tipos de archivo a menos que cumplan criterios de prevalencia o edad, o estén en una lista de confianza o una lista de exclusión:
+Esta regla bloquea el inicio de archivos ejecutables, como .exe, .dll o .scr, a menos que se cumple cualquiera de las siguientes condiciones:
 
-- Archivos ejecutables (como .exe, .dll o .scr)
+- Prevalencia: los archivos ejecutables se encuentran en más de 1.000 puntos de conexión
+- Edad: los archivos ejecutables se publicaron hace más de 24 horas
+- Ubicación: los archivos ejecutables se incluyen en una lista de confianza o una lista de exclusión
 
 El inicio de archivos ejecutables desconocidos o no de confianza puede ser arriesgado, ya que podría no estar claro inicialmente si los archivos son malintencionados.
 
@@ -404,17 +406,17 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Bloquear Office de comunicación para que no cree procesos secundarios
 
-Esta regla impide que Outlook cree procesos secundarios, al tiempo que permite funciones legítimas de Outlook.
+Esta regla impide que Outlook procesos secundarios, a la vez que permite funciones Outlook legítimas.
 
-Esta regla protege contra los ataques de ingeniería social y evita que el código de explotación abuse de vulnerabilidades en Outlook. También protege contra las vulnerabilidades [de formularios](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) y reglas de Outlook que los atacantes pueden usar cuando las credenciales de un usuario están en peligro.
+Esta regla protege contra los ataques de ingeniería social e impide que el código de explotación abuse de vulnerabilidades en Outlook. También protege contra las Outlook y las vulnerabilidades de formulario [que](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) los atacantes pueden usar cuando las credenciales de un usuario están en peligro.
 
 > [!NOTE]
-> Esta regla bloquea las sugerencias de directiva DLP y las sugerencias de herramientas en Outlook. Esta regla se aplica a Outlook y Outlook.com solo.
+> Esta regla bloquea las sugerencias de directiva DLP y las sugerencias de herramientas en Outlook. Esta regla se aplica solo Outlook y Outlook.com.
 
 Esta regla se introdujo en:
 
 - [Windows 10, versión 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nombre de Intune: `Process creation from Office communication products (beta)`
@@ -435,7 +437,7 @@ Las amenazas sin archivos emplean varias tácticas para mantenerse ocultas, para
 Esta regla se introdujo en:
 
 - [Windows 10, versión 1903](/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows Servidor 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Nombre de Intune: no disponible
 
@@ -448,12 +450,12 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 Esta regla bloquea la ejecución de los procesos [creados a través](/sysinternals/downloads/psexec) de PsExec [y WMI.](/windows/win32/wmisdk/about-wmi) Tanto PsExec como WMI pueden ejecutar código de forma remota, por lo que existe el riesgo de que el malware abuse de esta funcionalidad con fines de comando y control, o de propagar una infección a través de la red de una organización.
 
 > [!WARNING]
-> Solo usa esta regla si estás administrando tus dispositivos con [Intune](/intune) u otra solución MDM. Esta regla es incompatible con la administración a través de [Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
+> Solo usa esta regla si estás administrando tus dispositivos con [Intune](/intune) u otra solución MDM. Esta regla es incompatible con la administración a [Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
 
 Esta regla se introdujo en:
 
 - [Windows 10, versión 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nombre de Intune: `Process creation from PSExec and WMI commands`
@@ -469,7 +471,7 @@ Con esta regla, los administradores pueden impedir que los archivos ejecutables 
 Esta regla se introdujo en:
 
 - [Windows 10, versión 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -479,16 +481,16 @@ Nombre de Configuration Manager: `Block untrusted and unsigned processes that ru
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Bloquear llamadas a la API de Win32 desde macros de Office
+### <a name="block-win32-api-calls-from-office-macros"></a>Bloquear llamadas a la API de Win32 desde Office macros
 
 Esta regla impide que las macros de VBA llamen a las API de Win32.
 
-VBA de Office habilita las llamadas a la API de Win32. El malware puede abusar de esta funcionalidad, como llamar a las API de [Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) para iniciar el código de shell malintencionado sin escribir nada directamente en el disco. La mayoría de las organizaciones no dependen de la capacidad de llamar a las API de Win32 en su funcionamiento diario, incluso si usan macros de otras maneras.
+Office VBA habilita las llamadas a la API de Win32. El malware puede abusar de esta funcionalidad, como llamar a las API de [Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) para iniciar el código de shell malintencionado sin escribir nada directamente en el disco. La mayoría de las organizaciones no dependen de la capacidad de llamar a las API de Win32 en su funcionamiento diario, incluso si usan macros de otras maneras.
 
 Esta regla se introdujo en:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -514,7 +516,7 @@ La regla tiende a errar en el lado de la precaución para evitar ransomware.
 Esta regla se introdujo en:
 
 - [Windows 10, versión 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 

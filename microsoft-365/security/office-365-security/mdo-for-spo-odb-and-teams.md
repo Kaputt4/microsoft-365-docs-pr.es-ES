@@ -23,12 +23,12 @@ ms.custom:
 description: Obtenga información sobre Microsoft Defender para Office 365 para archivos en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67bd2a0952ac630888b07eaf05d365736a0472ea
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 5a0c9721c4d8fc2087e0dbbce19305060344430c
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028840"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096749"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
@@ -38,7 +38,7 @@ ms.locfileid: "53028840"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Caja fuerte Los datos adjuntos de SharePoint, OneDrive y Microsoft Teams en [Microsoft Defender para Office 365](whats-new-in-defender-for-office-365.md) proporcionan una capa adicional de protección para los archivos que ya han sido examinados en el momento de la carga por el motor de detección de virus común en [Microsoft 365](virus-detection-in-spo.md). Caja fuerte Los datos adjuntos SharePoint, OneDrive y Microsoft Teams ayudan a detectar y bloquear archivos existentes que se identifican como malintencionados en sitios de grupo y bibliotecas de documentos.
+Caja fuerte Los datos adjuntos para SharePoint, OneDrive y Microsoft Teams en [Microsoft Defender para Office 365](whats-new-in-defender-for-office-365.md) proporcionan una capa adicional de protección para los archivos que ya han sido examinados asincrónicamente por el motor de detección de virus común en [Microsoft 365](virus-detection-in-spo.md). Caja fuerte Los datos adjuntos SharePoint, OneDrive y Microsoft Teams ayudan a detectar y bloquear archivos existentes que se identifican como malintencionados en sitios de grupo y bibliotecas de documentos.
 
 Caja fuerte Los datos adjuntos SharePoint, OneDrive y Microsoft Teams no están habilitados de forma predeterminada. Para activarlo, vea [Turn on Caja fuerte Attachments for SharePoint, OneDrive y Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
@@ -67,7 +67,6 @@ Para obtener más información acerca de la experiencia del usuario cuando se ha
 Los archivos identificados como malintencionados por Caja fuerte Attachments for SharePoint, OneDrive y Microsoft Teams aparecerán en informes de [Microsoft Defender](view-reports-for-mdo.md) para Office 365 y en el Explorador (y detecciones en tiempo [real).](threat-explorer.md)
 
 A partir de mayo de 2018, cuando un archivo se identifica como malintencionado por los datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams, el archivo también está disponible en cuarentena. Para obtener más información, vea [Manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
-
 
 ## <a name="keep-these-points-in-mind"></a>Tenga en cuenta estos puntos
 
