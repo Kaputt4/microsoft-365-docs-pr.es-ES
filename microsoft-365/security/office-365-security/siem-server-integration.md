@@ -18,12 +18,12 @@ ms.custom:
 description: Obtenga información general sobre la integración del servidor de administración de eventos y información de seguridad (SIEM) con Microsoft 365 y aplicaciones en la nube
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929796"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105601"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de administración de eventos y de información de seguridad (SIEM) Microsoft 365 servicios y aplicaciones
 
@@ -46,31 +46,31 @@ ms.locfileid: "52929796"
 Si necesita un servidor SIEM depende de muchos factores, como los requisitos de seguridad de su organización y dónde residen los datos. Microsoft 365 incluye una amplia variedad de características de seguridad que satisfacen las necesidades de seguridad de muchas organizaciones sin servidores adicionales, como un servidor SIEM. Algunas organizaciones tienen circunstancias especiales que requieren el uso de un servidor SIEM. Estos son algunos ejemplos:
 
 - *Fabrikam* tiene contenido y aplicaciones locales y otras en la nube (tienen una implementación de nube híbrida). Para obtener informes de seguridad en todo su contenido y aplicaciones, Fabrikam ha implementado un servidor SIEM.
-
 - *Contoso* es una organización de servicios financieros que tiene requisitos de seguridad especialmente estrictos. Han agregado un servidor SIEM a su entorno para aprovechar la protección de seguridad adicional que requieren.
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>Integración del servidor SIEM con Microsoft 365
 
 Un servidor SIEM puede recibir datos de una amplia variedad de Microsoft 365 y aplicaciones. En la tabla siguiente se enumeran varios Microsoft 365 y aplicaciones, junto con las entradas y recursos del servidor SIEM para obtener más información.
 
+<br>
+
 ****
 
 |Microsoft 365 Servicio o aplicación|Métodos y entradas de servidor SIEM|Recursos para obtener más información|
 |---|---|---|
 |[Microsoft Defender para Office 365](defender-for-office-365.md)|Registros de auditoría|[Integración de SIEM con Microsoft Defender para Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender para punto de conexión](/windows/security/threat-protection/)|Punto de conexión HTTPS hospedado en Azure <p> API REST|[Extraer alertas a las herramientas SIEM](../defender-endpoint/configure-siem.md)|
+|[Microsoft Defender para punto de conexión](/windows/security/threat-protection/)|Punto de conexión HTTPS hospedado en Azure <p> API de REST|[Extraer alertas a las herramientas SIEM](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Integración de registros|[Integración siem con Microsoft Cloud App Security](/cloud-app-security/siem)|
 |
 
 > [!TIP]
-> Echa un vistazo a [Azure Sentinel](/azure/sentinel/overview). Azure Sentinel viene con conectores para soluciones de Microsoft. Estos conectores están disponibles "de forma completa" y proporcionan una integración en tiempo real. Puede usar Azure Sentinel con las soluciones de Microsoft 365 Defender y los servicios Microsoft 365, incluidos Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security y mucho más.
+> Echa un vistazo a [Azure Sentinel](/azure/sentinel/overview). Azure Sentinel viene con conectores para soluciones de Microsoft. Estos conectores están disponibles "de forma completa" y proporcionan una integración en tiempo real. Puede usar Azure Sentinel con sus soluciones de Microsoft 365 Defender y servicios Microsoft 365, incluidos Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security y mucho más.
 
 ### <a name="audit-logging-must-be-turned-on"></a>El registro de auditoría debe estar activado
 
 Asegúrese de que el registro de auditoría esté activado antes de configurar la integración del servidor SIEM.
 
-- Para SharePoint Online, OneDrive para la Empresa y Azure Active Directory, el registro de auditoría está activado en el [portal de Microsoft 365 Defender](../../compliance/turn-audit-log-search-on-or-off.md).
-
+- Para SharePoint Online, OneDrive para la Empresa y Azure Active Directory, vea Turn [auditing on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 - Para Exchange Online, vea [Manage mailbox auditing](../../compliance/enable-mailbox-auditing.md).
 
 ## <a name="more-resources"></a>Más recursos

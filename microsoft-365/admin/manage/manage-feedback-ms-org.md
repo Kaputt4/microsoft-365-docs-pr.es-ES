@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Administrar comentarios que los usuarios pueden enviar a Microsoft acerca de los productos de Microsoft.
-ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 990ae811145d9586307cd3181724866198063a1b
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840675"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105301"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Administrar comentarios de Microsoft para la organización
 
-Como administrador de una organización Microsoft 365, ahora hay varias directivas que le ayudarán a administrar la recopilación de comentarios y la experiencia de participación del cliente de los usuarios al usar Microsoft 365 aplicaciones. Puede crear y usar grupos de Azure Active Directory existentes en su organización para cada una de estas directivas. Con estas policías, puede controlar cómo los distintos departamentos de su organización pueden enviar comentarios a Microsoft. Microsoft revisa todos los comentarios enviados por los clientes y usa estos comentarios para mejorar el producto. Mantener activadas las **experiencias** de comentarios te permite ver lo que los usuarios están diciendo acerca de los productos de Microsoft que usan. Los comentarios que recopilamos de los usuarios pronto estarán disponibles en el centro Microsoft 365 administración.
+Como administrador de una organización Microsoft 365, ahora hay varias directivas que le ayudarán a administrar la recopilación de comentarios y la experiencia de participación del cliente de los usuarios al usar Microsoft 365 aplicaciones. Puede crear y usar grupos de Azure Active Directory existentes en su organización para cada una de estas directivas. Con estas policías, puede controlar cómo los distintos departamentos de su organización pueden enviar comentarios a Microsoft. Microsoft revisa todos los comentarios enviados por los clientes y usa estos comentarios para mejorar el producto. Mantener activadas las **experiencias** de comentarios te permite ver lo que los usuarios están diciendo acerca de los productos de Microsoft que usan. Los comentarios que recopilamos de los usuarios pronto estarán disponibles en el Centro de administración de Microsoft 365.
 
 Para obtener más información sobre los tipos de comentarios y el modo en que Microsoft usa los comentarios de los usuarios, vea [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
 
@@ -43,7 +43,7 @@ La tabla siguiente representa qué aplicaciones y servicios están conectados ac
 |**OneDrive**|[Algunas opciones de configuración administradas actualmente por otros controles.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook**|Próximamente|Próximamente|Próximamente|Próximamente|
 |**PowerPoint**|Sí|Sí|Sí|Sí|
-|**Project**|Próximamente|Próximamente|Próximamente|Próximamente|
+|**Proyecto**|Próximamente|Próximamente|Próximamente|Próximamente|
 |**Publicador**|Sí|Sí|Sí|Sí|
 |**SharePoint**|[Algunas opciones de configuración administradas actualmente por otros controles.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Algunas opciones de configuración administradas actualmente por otros controles.](/microsoftteams/manage-feedback-policies-in-teams)||||
@@ -86,7 +86,7 @@ Los dispositivos deben tener un número de compilación mínimo para usar estas 
 
 ## <a name="configure-policies"></a>Configurar directivas
 
-1. Vaya a [https://config.office.com](https://config.office.com) e inicie sesión como usuario con permisos de administrador global.
+1. Vaya a [https://config.office.com](https://config.office.com) e inicie sesión.
 1. Seleccione **Personalización** y **administración de directivas.**
 1. Seleccione **Crear**.
 1. Escriba **el nombre** y la **descripción**.

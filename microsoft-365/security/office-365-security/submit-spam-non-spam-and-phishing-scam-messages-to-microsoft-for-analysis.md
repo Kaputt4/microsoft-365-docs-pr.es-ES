@@ -18,12 +18,12 @@ description: Los administradores y los usuarios finales pueden aprender a enviar
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d277df764ce2fb135f11c6320bc990e4d4142d6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: d0d48c3c6f6d082085390d6e246a088b6d3f6bf0
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929772"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105553"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes manualmente a Microsoft para su análisis
 
@@ -35,7 +35,7 @@ ms.locfileid: "52929772"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Si es administrador de una organización con buzones de correo Exchange Online, le recomendamos que use el portal de envíos en el portal de Microsoft 365 Defender. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Si es administrador de una organización con buzones de correo Exchange Online, le recomendamos que use la página **Envíos** en el portal Microsoft 365 Defender correo electrónico. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 Puede ser frustrante cuando los usuarios de la organización reciben mensajes de correo no deseado o mensajes de suplantación de identidad en su Bandeja de entrada, o si no reciben un mensaje de correo electrónico legítimo porque está marcado como correo no deseado. Estamos ajustando constantemente nuestros filtros de correo no deseado para que sean más precisos.
 
@@ -47,7 +47,7 @@ Usted y sus usuarios pueden ayudar a este proceso enviando falsos positivos (bue
 ## <a name="submit-false-negatives-to-microsoft"></a>Enviar falsos negativos a Microsoft
 
 > [!TIP]
-> En lugar de usar los siguientes procedimientos para notificar falsos negativos, los usuarios de Outlook y Outlook en la web (anteriormente conocidos como Outlook Web App) pueden usar el complemento Report Message o el complemento Report Phishing. Para obtener información sobre cómo instalar y usar estas herramientas, vea [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
+> En lugar de usar los siguientes procedimientos para notificar falsos negativos, los usuarios de Outlook y Outlook en la Web (anteriormente conocidos como Outlook Web App) pueden usar el complemento Mensaje de informe o el complemento Report Phishing. Para obtener información sobre cómo instalar y usar estas herramientas, vea [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
 
 Si recibe un mensaje que pasó por el filtrado de correo no deseado que debería haber sido identificado como correo no deseado o phishing, puede enviar el mensaje a los equipos análisis de correo no deseado de Microsoft y Análisis de suplantación de identidad de Microsoft según corresponda. Los analistas revisarán el mensaje y lo agregarán a los filtros de todo el servicio si cumple los criterios de clasificación.
 
@@ -72,7 +72,7 @@ Si recibe un mensaje que pasó por el filtrado de correo no deseado que debería
 ## <a name="submit-false-positives-to-microsoft"></a>Enviar falsos positivos a Microsoft
 
 > [!TIP]
-> En lugar de usar los siguientes procedimientos para notificar falsos positivos, los usuarios de Outlook y Outlook en la web (anteriormente conocidos como Outlook Web App) pueden usar el complemento Report Message o el complemento Report Phishing. Para obtener información sobre cómo instalar y usar estas herramientas, vea [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
+> En lugar de usar los siguientes procedimientos para notificar falsos positivos, los usuarios de Outlook y Outlook en la Web pueden usar el complemento Mensaje de informe o el complemento Detección de suplantación de identidad de informes. Para obtener información sobre cómo instalar y usar estas herramientas, vea [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
 
 Si un mensaje se identificó incorrectamente como correo no deseado, puede enviar el mensaje al equipo de análisis de correo no deseado de Microsoft. Los analistas evaluarán el mensaje y (según los resultados del análisis) los filtros de todo el servicio se pueden ajustar para permitir que el mensaje pase.
 

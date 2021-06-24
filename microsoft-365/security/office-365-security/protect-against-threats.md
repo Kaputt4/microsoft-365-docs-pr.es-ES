@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 7e37b67dbed75e3283070ba94321fcb03979a5a6
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083685"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105397"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -95,7 +95,7 @@ Para obtener más información acerca de la configuración recomendada para anti
 
 3. En el control desplegable de detalles de directiva que se abre, haga clic en **Editar** configuración de protección y, a continuación, configure las siguientes opciones:
    - **Sección Configuración de** protección:
-     - Seleccione **Habilitar el filtro de datos adjuntos** común para activar el filtro de datos adjuntos común. Haga **clic en Personalizar tipos de archivo** para agregar más tipos de archivo.
+     - **Habilitar el filtro de datos adjuntos** común: Seleccionar (activar). Haga **clic en Personalizar tipos de archivo** para agregar más tipos de archivo.
      - **Habilitar la purga automática de hora cero para malware:** compruebe que esta configuración está seleccionada. Para obtener más información acerca de ZAP para malware, vea [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
    - **Sección notificación:** compruebe que no se haya seleccionado ninguna de las opciones de configuración de notificación.
 
@@ -251,7 +251,7 @@ Para obtener más información acerca de la configuración recomendada para Caja
 2. En la **página Caja fuerte,** haga clic en **Configuración global** y, a continuación, configure las siguientes opciones en el menú desplegable que aparece:
    - **Configuración que se aplican al contenido de la sección Office 365 aplicaciones compatibles:**
      - **Usa Caja fuerte vínculos en Office 365** aplicaciones: comprueba que esta configuración está activada ( ![ Activar ](../../media/scc-toggle-on.png) ).
-     - **No realizar un seguimiento cuando los usuarios hacen clic en vínculos protegidos en Office 365** aplicaciones : Desactive esta opción ( ![ Desactivar ](../../media/scc-toggle-off.png) )
+     - **No realice un seguimiento cuando los usuarios hagan clic en vínculos protegidos en Office 365** aplicaciones: desactive esta opción ( ![ Desactivar ](../../media/scc-toggle-off.png) ).
      - **No permitir que los usuarios hagan clic en la dirección URL original** en Office 365 aplicaciones : Compruebe que esta configuración está activada ( Activar ![ ](../../media/scc-toggle-on.png) ).
 
    Cuando haya terminado, haga clic en **Guardar**

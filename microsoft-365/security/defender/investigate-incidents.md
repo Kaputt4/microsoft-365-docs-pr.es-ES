@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dcfc3bd0e06e0bdca6c834e947d7d136af47fde3
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fdfc065aea3549e99de72c968c0fa19412f9e246
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782830"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105361"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
@@ -145,7 +145,15 @@ La **pestaña Investigaciones** enumera todas las [investigaciones automatizadas
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Ejemplo de una página de investigaciones para un incidente":::
 
-Seleccione una investigación para ir a la página de detalles de la investigación para obtener toda la información sobre la investigación y el estado de corrección. Si hay acciones pendientes para su aprobación como parte de la investigación, aparecerán en la pestaña Acciones pendientes. Tome medidas como parte de la corrección de incidentes.
+Seleccione una investigación para navegar a su página de detalles para obtener información completa sobre el estado de investigación y corrección. Si hay acciones pendientes para su aprobación como parte de la investigación, aparecerán en la **pestaña Historial de acciones pendientes.** Tome medidas como parte de la corrección de incidentes.
+
+También hay una pestaña **Gráfico de investigación** que muestra:
+
+- La conexión de alertas a los activos afectados de la organización.
+- Qué entidades están relacionadas con qué alertas y cómo forman parte de la historia del ataque.
+- Las alertas del incidente.
+
+El gráfico de investigación le ayuda a comprender rápidamente el ámbito completo del ataque conectando las diferentes entidades sospechosas que forman parte del ataque con sus activos relacionados, como usuarios, dispositivos y buzones. 
 
 Para obtener más información, vea [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md).
 
@@ -155,25 +163,9 @@ La **pestaña Evidencia y respuesta** muestra todos los eventos admitidos y las 
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Ejemplo de una página de evidencia y respuesta para un incidente":::
 
-Microsoft 365 Defender investiga automáticamente todos los eventos compatibles con incidentes y las entidades sospechosas de las alertas, lo que le proporciona información sobre los correos electrónicos, archivos, procesos, servicios, direcciones IP importantes y mucho más. Esto le ayuda a detectar y bloquear rápidamente posibles amenazas en el incidente.
+Microsoft 365 Defender investiga automáticamente todos los eventos compatibles con incidentes y las entidades sospechosas de las alertas, lo que le proporciona información sobre los correos electrónicos, archivos, procesos, servicios, direcciones IP importantes, etc. Esto le ayuda a detectar y bloquear rápidamente posibles amenazas en el incidente.
 
 Cada una de las entidades analizadas se marca con un veredicto (malintencionado, sospechoso, limpio) y un estado de corrección. Esto le ayuda a comprender el estado de corrección de todo el incidente y los siguientes pasos que se pueden seguir.
-
-## <a name="graph-in-preview"></a>Graph (en versión preliminar)
-
-Con la nueva **Graph** (en vista previa), puede ver:
-
-- La conexión de alertas a los activos afectados de la organización.
-- Qué entidades están relacionadas con qué alertas y cómo forman parte de la historia del ataque.
-- Las alertas del incidente.
-
-Por ejemplo:
-
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Ejemplo de una página Graph para un incidente":::
-
-El gráfico de incidentes le ayuda a comprender rápidamente el ámbito completo del ataque conectando las diferentes entidades sospechosas que forman parte del ataque con sus activos relacionados, como usuarios, dispositivos y buzones. 
-
-Ahora puedes comprender cómo el ataque se extendió a través de la red con el tiempo, dónde se inició y hasta dónde llegó el ataque.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -182,7 +174,7 @@ Según sea necesario:
 - [Investigar las alertas de un incidente](investigate-alerts.md)
 - [Investigar los usuarios de un incidente](investigate-users.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

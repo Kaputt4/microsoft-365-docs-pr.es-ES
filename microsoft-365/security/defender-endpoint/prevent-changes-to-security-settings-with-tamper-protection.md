@@ -16,13 +16,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 06/17/2021
-ms.openlocfilehash: 7050a1588b71ac106d5364f29c76d379072e9511
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.date: 06/23/2021
+ms.openlocfilehash: 2e0724900de30629292cdcdc055d3ad3a1867b20
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007422"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105421"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -52,11 +52,11 @@ Con la protección contra manipulaciones, las aplicaciones malintencionadas no p
 
 ### <a name="how-it-works"></a>Cómo funciona
 
-La protección contra alteraciones bloquea Antivirus de Microsoft Defender y evita que se cambie la configuración de seguridad a través de aplicaciones y métodos como:
+La protección contra alteraciones bloquea Antivirus de Microsoft Defender sus valores seguros y predeterminados e impide que la configuración de seguridad se cambie a través de aplicaciones y métodos como:
 
 - Configuración de la configuración en el Editor del Registro en el Windows dispositivo
 - Cambiar la configuración mediante cmdlets de PowerShell
-- Edición o eliminación de la configuración de seguridad mediante directivas de grupo
+- Edición o eliminación de la configuración de seguridad a través de la directiva de grupo
 
 La protección contra alteraciones no le impide ver la configuración de seguridad. Además, la protección contra alteraciones no afecta a la forma en que las aplicaciones antivirus de terceros se registran con la Seguridad de Windows aplicación. Si su organización usa Windows 10 Enterprise E5, los usuarios individuales no pueden cambiar la configuración de protección contra alteraciones; en esos casos, la protección contra alteraciones la administra el equipo de seguridad.
 
@@ -72,11 +72,11 @@ La protección contra alteraciones no le impide ver la configuración de segurid
 | Revisar las recomendaciones de seguridad | [Revisar recomendaciones de seguridad](#review-your-security-recommendations) |
 | Revisar la lista de preguntas más frecuentes (preguntas frecuentes) | [Examinar las preguntas frecuentes](#view-information-about-tampering-attempts) |
 
-Según el método o la herramienta de administración que use para habilitar la protección contra alteraciones, es posible que haya una dependencia de MAPS (protección entregada en la nube). 
+Según el método o la herramienta de administración que use para habilitar la protección contra manipulaciones, puede haber una dependencia de la protección entregada en la nube. 
 
 En la tabla siguiente se proporcionan detalles sobre los métodos, herramientas y dependencias.
 
-| Cómo se habilita la protección contra alteraciones  | Dependencia de MAPS (protección entregada en la nube)    |
+| Cómo se habilita la protección contra manipulaciones  | Dependencia de la protección entregada en la nube (MAPS)    |
 |:----|:----|
 | Microsoft Intune  | No |
 | Microsoft Endpoint Configuration Manager + agregado de inquilino  |     No  |
@@ -168,7 +168,7 @@ Al Windows Server 2016, la Configuración no reflejará con precisión el estado
 
 2. Use el cmdlet [De PowerShell Get-MpComputerStatus.](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps)
 
-3. En la lista de resultados, busque `IsTamperProtected` . (Un valor de *true significa* que la protección contra manipulaciones está habilitada). En la lista de resultados, busque `RealTimeProtectionEnabled` . (Un valor de true significa que la protección contra manipulaciones está habilitada).
+3. En la lista de resultados, busque `IsTamperProtected` o `RealTimeProtectionEnabled` . (Un valor de *true significa* que la protección contra manipulaciones está habilitada).
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Administrar la protección contra alteraciones de su organización con Configuration Manager, versión 2006
 
@@ -181,7 +181,8 @@ Si usa la versión [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-v
 
 1. Configurar la conexión de inquilino. Para obtener más información, [consulte Microsoft Endpoint Manager tenant attach: Device sync and device actions](/mem/configmgr/tenant-attach/device-sync-actions).
 
-2. En el [centro Microsoft Endpoint Manager administración,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Endpoint **security** Antivirus y, a continuación,  >  elija + **Crear directiva.**<br/> 
+2. En el [centro Microsoft Endpoint Manager administración,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Endpoint **security** Antivirus y, a continuación,  >  elija + **Crear directiva.** 
+
    - En la **lista** Plataforma, **seleccione Windows 10 y Windows Server (ConfigMgr).**  
    - En la **lista Perfil,** **seleccione Seguridad de Windows experiencia (versión preliminar).** <br/>
 
@@ -233,7 +234,7 @@ La protección contra alteraciones se integra [con las & de administración de v
 
 Para obtener más información acerca de la administración & vulnerabilidad de amenazas, vea [Threat & Vulnerability Management en Centro de seguridad de Microsoft Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="to-which-windows-os-versions-is-configuring-tamper-protection-is-applicable"></a>¿A qué Windows se aplica la protección contra alteraciones en las versiones del sistema operativo?
 

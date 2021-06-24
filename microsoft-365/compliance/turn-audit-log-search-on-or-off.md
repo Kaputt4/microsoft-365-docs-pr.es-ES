@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Cómo activar o desactivar la característica de búsqueda de registro de auditoría en el centro de cumplimiento de Microsoft 365 para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
-ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Cómo activar o desactivar la característica de búsqueda de registro de auditoría en el Centro de cumplimiento de Microsoft 365 para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
+ms.openlocfilehash: 7c55443eda9a99ff4ef153d8564fd9ac43fcc549
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706669"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105313"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activar o desactivar la auditoría
 
@@ -39,7 +39,7 @@ El registro de auditoría está activado de forma predeterminada para organizaci
 - Debe tener asignado el rol Registros de auditoría en Exchange Online para activar o desactivar la auditoría en su Microsoft 365 organización. De forma predeterminada, este rol se asigna a los  grupos de roles Administración de cumplimiento y Administración de la organización en la página Permisos del centro Exchange administración. Los administradores globales de Microsoft 365 son miembros del grupo de roles Administración de la organización en Exchange Online. 
 
     > [!NOTE]
-    > Los usuarios deben tener asignados permisos en Exchange Online para activar o desactivar la auditoría. Si asigna a los usuarios  el rol Registros de auditoría en la página Permisos del Centro de seguridad y cumplimiento de &, no podrán activar o desactivar la auditoría. Esto se debe a que el cmdlet subyacente es Exchange Online cmdlet de PowerShell. 
+    > Los usuarios deben tener asignados permisos en Exchange Online para activar o desactivar la auditoría. Si asigna a los usuarios  el rol Registros de auditoría en la página Permisos del Centro de seguridad y cumplimiento de &, no podrán activar o desactivar la auditoría. Esto se debe a que el cmdlet subyacente es Exchange Online cmdlet de PowerShell.
 
 - Para obtener instrucciones paso a paso sobre cómo buscar en el registro de auditoría, vea [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md). Para obtener más información acerca de la API Microsoft 365 actividad de administración, vea Introducción [a Microsoft 365 API de administración](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
@@ -59,7 +59,7 @@ Si la auditoría no está activada para su organización, puede activarla en el 
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
 
-2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en **Mostrar todo** y, a continuación, haga clic en **Auditar**.
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, a continuación, haga clic en **Auditar**.
 
    Si la auditoría no está activada para su organización, se muestra un banner que le pedirá que comience a grabar la actividad de usuario y administrador.
 
@@ -103,6 +103,6 @@ Debe usar powershell Exchange Online para desactivar la auditoría.
 
       El valor de  `False` la  _propiedad UnifiedAuditLogIngestionEnabled_ indica que la auditoría está desactivada.
 
-    - Vaya a la **página Auditoría** del centro de Microsoft 365 cumplimiento.
+    - Vaya a la **página Auditoría** de la Centro de cumplimiento de Microsoft 365.
 
       Si la auditoría no está activada para su organización, se muestra un banner que le pedirá que comience a grabar la actividad de usuario y administrador.

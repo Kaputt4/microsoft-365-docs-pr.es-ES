@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841801"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105577"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -350,6 +350,21 @@ Descargue el paquete de incorporación desde Centro de seguridad de Microsoft De
         mdatp threat list
         ```
 
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>Experiencia de detección y respuesta de puntos de conexión Linux (EDR) con ataques simulados
+
+Para probar las funcionalidades de EDR para Linux, siga los pasos siguientes para simular una detección en el servidor Linux e investigar el caso. 
+
+1.  Compruebe que el servidor Linux incorporado aparezca en Centro de seguridad de Microsoft Defender. Si se trata de la primera incorporación de la máquina, puede tardar hasta 20 minutos hasta que aparezca. 
+
+2.  Descargue y extraiga el [archivo de script](https://aka.ms/LinuxDIY) en un servidor Linux incorporado y ejecute el siguiente comando: `./mde_linux_edr_diy.sh`
+
+3.  Después de unos minutos, se debe generar una detección en Centro de seguridad de Microsoft Defender.
+
+4.  Vea los detalles de la alerta, la escala de tiempo de la máquina y realice los pasos de investigación típicos.
+
+
+
+
 ## <a name="installer-script"></a>Script del instalador
 
 Como alternativa, puede usar un script bash del [instalador](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatizado proporcionado en nuestro [repositorio GitHub público](https://github.com/microsoft/mdatp-xplat/).
@@ -408,5 +423,5 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 - [Investigar problemas de estado del agente](health-status.md)

@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/14/2021
-ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.date: 06/23/2021
+ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929448"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105337"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -76,7 +76,7 @@ Para obtener información sobre cómo actualizar o instalar la actualización de
 Todas nuestras actualizaciones contienen 
 - mejoras en el rendimiento;
 - mejoras en la capacidad de servicio; y 
-- mejoras de integración (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
+- mejoras de integración (cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/><br/>
 <details>
 <summary> Mayo-2021 (Plataforma: 4.18.2105.4 | Motor: 1.1.18200.4)</summary>
@@ -105,6 +105,8 @@ Sin problemas conocidos
 ### <a name="whats-new"></a>Novedades
 - Lógica de supervisión de comportamiento adicional
 - Detección de registrador de teclas de modo kernel mejorado
+- Se agregaron nuevos controles para administrar el proceso de implementación gradual de actualizaciones [de Microsoft Defender](manage-gradual-rollout.md)
+
 
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos  

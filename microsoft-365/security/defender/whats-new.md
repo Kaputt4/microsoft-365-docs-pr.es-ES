@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0068d5aeef1289d8775dcefd0b4f60cb8f8ed0de
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096821"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105409"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -38,8 +38,12 @@ Fuente RSS: recibe una notificación cuando se actualiza esta página copiando y
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>Junio de 2021
-- Etiquetas de amenazas [en Microsoft 365 Defender de análisis de amenazas](threat-analytics.md) <br> Las etiquetas de amenazas le ayudan a centrarse en categorías de amenazas específicas y revisar los informes más relevantes. 
+
+## <a name="may-2021"></a>Mayo de 2021
+
+- [Nueva página de alerta en el Microsoft 365 Defender de alertas](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> Proporciona información mejorada para el contexto en un ataque. Puede ver qué otra alerta desencadenada causó la alerta actual y todas las entidades y actividades afectadas implicadas en el ataque, incluidos los archivos, los usuarios y los buzones. Consulte [Investigar alertas](/microsoft-365/security/defender/investigate-alerts) para obtener más información.
+- [Gráfico de tendencias para incidentes y alertas en el portal Microsoft 365 Defender web](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> Determine si hay varias alertas para un solo incidente o si su organización está siendo atacada con varios incidentes diferentes. Consulte [Priorizar incidentes](/microsoft-365/security/defender/incident-queue) para obtener más información.
+
 
 ## <a name="april-2021"></a>Abril de 2021
 - Microsoft 365 Defender<br> El portal [de Microsoft 365 Defender](https://security.microsoft.com) mejorado ya está disponible. Esta nueva experiencia reúne Defender for Endpoint, Defender for Office 365, Defender for Identity y mucho más en un único portal. Este es el nuevo hogar para administrar los controles de seguridad. [Ver las novedades](./overview-security-center.md).
