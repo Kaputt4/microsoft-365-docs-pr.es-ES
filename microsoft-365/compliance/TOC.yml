@@ -395,9 +395,9 @@
               href: archive-celltrust-data.md
             - name: Cisco Jabber en MS SQL
               href: archive-ciscojabberonmssql-data.md
-            - name: Cisco Jabber en Oracle (versión preliminar)
+            - name: Cisco Jabber en Oracle
               href: archive-ciscojabberonoracle-data.md
-            - name: Cisco Jabber en PostgreSQL (versión preliminar)
+            - name: Cisco Jabber en PostgreSQL
               href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
@@ -421,6 +421,8 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
+            - name: Skype Empresarial (vista previa)
+              href: archive-skypeforbusiness-data.md
             - name: Margen de demora eDiscovery
               href: archive-slack-data.md
             - name: Symphony
@@ -429,8 +431,6 @@
               href: archive-text-delimited-data.md
             - name: Teams de Webex
               href: archive-webexteams-data.md
-            - name: Páginas web
-              href: archive-webpagecapture-data.md
             - name: Páginas web
               href: archive-webpagecapture-data.md
             - name: Área de trabajo de Facebook
@@ -455,11 +455,15 @@
               href: archive-enterprise-number-data.md
             - name: Red O2
               href: archive-o2-network-data.md
+            - name: Señal (vista previa)
+              href: archive-signal-archiver-data.md
+            - name: Telegram (vista previa)
+              href: archive-telegram-archiver-data.md
             - name: Red TELUS
               href: archive-telus-network-data.md
             - name: Red Verizon
               href: archive-verizon-network-data.md
-            - name: WeChat (versión preliminar)
+            - name: WeChat
               href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
