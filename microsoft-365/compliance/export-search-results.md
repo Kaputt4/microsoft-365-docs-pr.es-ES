@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: Exporte los resultados de la búsqueda de una búsqueda de contenido en el Microsoft 365 de cumplimiento a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido SharePoint y OneDrive para la Empresa se exportan como documentos Office nativos.
+description: Exporte los resultados de la búsqueda de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido SharePoint y OneDrive para la Empresa se exportan como documentos Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: d3ae14fc0ac31e50d579668c7fafba5390c5b8fc
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653540"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114769"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -90,7 +90,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
 
 El primer paso es preparar los resultados de búsqueda para la exportación. Al preparar los resultados, se cargan en una ubicación Azure Storage proporcionada por Microsoft en la nube de Microsoft. El contenido de buzones y sitios se carga a una velocidad máxima de 2 GB por hora.
   
-1. En el Microsoft 365 de cumplimiento, seleccione la búsqueda de contenido de la que desea exportar los resultados.
+1. En la Centro de cumplimiento de Microsoft 365, seleccione la búsqueda de contenido de la que desea exportar los resultados.
   
 2. En el **menú** Acciones de la parte inferior de la página desplegable, haga clic **en Exportar resultados**.
 
@@ -133,6 +133,8 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
    2. Active la **casilla Incluir versiones para SharePoint archivos para** exportar todas las versiones de SharePoint documentos. Esta opción solo aparece si los orígenes de contenido de la búsqueda incluyen sitios SharePoint o OneDrive para la Empresa búsqueda.
   
    3. Seleccione la carpeta Exportar archivos en una carpeta **comprimida (comprimida). Incluye solo mensajes individuales y SharePoint documentos** para exportar resultados de búsqueda a carpetas comprimidas. Esta opción solo aparece cuando elige exportar elementos Exchange como mensajes individuales y cuando los resultados de la búsqueda incluyen SharePoint o OneDrive documentos. Esta opción se usa principalmente para evitar el límite de 260 caracteres en Windows de ruta de acceso de archivo cuando se exportan los elementos. Vea "Nombres de archivo de elementos exportados" en la [sección Más](#more-information) información.
+   > [!IMPORTANT]
+   > La exportación de archivos en una carpeta comprimida (comprimida) aumentará los tiempos de exportación.
   
 6. Haga **clic en** Exportar para iniciar el proceso de exportación. Los resultados de la búsqueda están preparados para su descarga, lo que significa que se recopilan desde las ubicaciones de contenido originales y, a continuación, se cargan en una ubicación Azure Storage en la nube de Microsoft. Esto podría llevar varios minutos.
 
@@ -142,7 +144,7 @@ Consulte la siguiente sección para obtener instrucciones para descargar los res
 
 El siguiente paso es descargar los resultados de la búsqueda desde la Azure Storage en el equipo local.
   
-1. En la **página Búsqueda de contenido** del Centro de Microsoft 365 cumplimiento, seleccione la **pestaña** Exportar
+1. En la **página Búsqueda de** contenido de la Centro de cumplimiento de Microsoft 365, seleccione la **pestaña** Exportaciones
   
    Es posible que tenga que hacer clic **en Actualizar** para actualizar la lista de trabajos de exportación para que muestre el trabajo de exportación que creó. Los trabajos de exportación tienen el mismo nombre que la búsqueda correspondiente **_Export** anexado al nombre de búsqueda.
   

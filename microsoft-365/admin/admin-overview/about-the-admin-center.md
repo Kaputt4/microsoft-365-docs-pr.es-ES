@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Iniciar sesión con permisos de administrador en el Centro de administración de Microsoft 365 para configurar la organización en la nube y administrar usuarios y suscripciones.
-ms.openlocfilehash: eff0ab72ef3e4634e7a83d1af825bc42d11686af
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 7817861e79b86a6c43ea26fdb03b037b40a3f564
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52949992"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083058"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del Centro de administración de Microsoft 365
 
-**Si ha adquirido un plan de negocios de Microsoft 365 Y tiene permisos de administrador, tiene acceso al centro de administración**. Este artículo le resultará muy útil.
+**Si ha adquirido un plan de negocios de Microsoft 365 Y tiene permisos de administrador, tiene acceso al centro de administración**. Este artículo es para usted.
 
-**Si es un usuario o tiene un plan Microsoft 365 Familia, no cuenta con un centro de administración.** Para configurar Microsoft 365, consulte [Descargar e instalar o volver a instalar Microsoft 365 u Office 2019 en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
+**Si es usuario o tiene un plan de Microsoft 365 Familia, no cuenta con un centro de administración.** Para configurar Microsoft 365, vaya a [Descargar e instalar o reinstalar Microsoft 365 u Office 2019 en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
 
 Puede utilizar el Centro de administración para configurar la organización en la nube y administrar usuarios y suscripciones, entre otras cosas. En este artículo, obtendrá información sobre cómo acceder al Centro de administración, además de la configuración y las características disponibles.
 
@@ -57,11 +57,11 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 A continuación se muestran las características y la configuración que encontrará en la navegación de la izquierda del centro de administración. Obtenga más información sobre las tareas de administración en [ayuda para administradores](../../business-video/admin-center-overview.md).
   
-|**Menú**|**Para qué sirve**|
+| Menú | Para qué sirve |
 |-----|-----|
 |**Inicio** <br/> |Esta es la página de aterrizaje del Centro de administración. Verá dónde administrar a los usuarios, la facturación, el estado del servicio y los informes.  <br/> |
 |**Users** <br/> |Puede crear y administrar usuarios de su organización, como empleados o estudiantes. También puede establecer su nivel de permisos o restablecer sus contraseñas.  <br/> |
-|**Grupos** <br/> |Cree y administre grupos en su organización, como un grupo de Microsoft 365, un grupo de distribución, un grupo de seguridad o un buzón de correo compartido. Más información sobre cómo [crear](../create-groups/create-groups.md) y [administrar](../create-groups/manage-groups.md) grupos.  <br/> |
+|**Grupos** <br/> |Puede crear y administrar grupos en su organización, como un grupo de Microsoft 365, un grupo de distribución, un grupo de seguridad o un buzón compartido. Obtenga información sobre cómo [crear](../create-groups/create-groups.md) y [administrar](../create-groups/manage-groups.md) grupos.  <br/> |
 |**Recursos** <br/> |Cree y administre recursos, como por ejemplo una colección de sitios de SharePoint. Aprenda cómo [crear colecciones de sitios](/sharepoint/create-site-collection).  <br/> |
 |**Facturación** <br/> |Vea, compre o cancele las suscripciones de su organización. Revise los extractos de las facturas pasadas o el número de licencias asignadas a usuarios individuales. Más información sobre cómo [administrar la facturación](../../commerce/index.yml).  <br/> |
 |**Soporte técnico** <br/> | Vea las solicitudes de servicio existentes o cree otras nuevas. Obtenga más información en [póngase en contacto con el soporte técnico para productos para empresas: ayuda de administración](../../business-video/get-help-support.md). |

@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Use la búsqueda de contenido en el centro Microsoft 365 cumplimiento para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: Use la búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
+ms.openlocfilehash: 925a6e5e0e56c63cde8bfa1b39cca6e64abcd016
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311905"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114757"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usar la búsqueda de contenido para colecciones dirigidas
 
-La herramienta de búsqueda de contenido en el centro de cumplimiento de Microsoft 365 no proporciona una forma directa en la interfaz de usuario de buscar carpetas específicas en buzones de Exchange o sitios SharePoint y OneDrive para la Empresa. Sin embargo, es posible buscar carpetas específicas (denominadas colección de *destino)* especificando la propiedad id. de carpeta para el correo electrónico o la propiedad path (DocumentLink) para los sitios de la sintaxis de consulta de búsqueda real. Usar la búsqueda de contenido para realizar una colección de destino es útil cuando está seguro de que los elementos que responden a un caso o elementos con privilegios se encuentran en un buzón o carpeta de sitio específico. Puede usar el script de este artículo para obtener el identificador de carpeta de carpetas de buzones de correo o la ruta de acceso (DocumentLink) para las carpetas de SharePoint y OneDrive para la Empresa sitio. A continuación, puede usar el identificador de carpeta o la ruta de acceso en una consulta de búsqueda para devolver los elementos ubicados en la carpeta.
+La herramienta de búsqueda de contenido del Centro de cumplimiento de Microsoft 365 no proporciona una forma directa en la interfaz de usuario de buscar carpetas específicas en Exchange buzones de correo o SharePoint y OneDrive para la Empresa sitios. Sin embargo, es posible buscar carpetas específicas (denominadas colección de *destino)* especificando la propiedad id. de carpeta para el correo electrónico o la propiedad path (DocumentLink) para los sitios de la sintaxis de consulta de búsqueda real. Usar la búsqueda de contenido para realizar una colección de destino es útil cuando está seguro de que los elementos que responden a un caso o elementos con privilegios se encuentran en un buzón o carpeta de sitio específico. Puede usar el script de este artículo para obtener el identificador de carpeta de carpetas de buzones de correo o la ruta de acceso (DocumentLink) para las carpetas de SharePoint y OneDrive para la Empresa sitio. A continuación, puede usar el identificador de carpeta o la ruta de acceso en una consulta de búsqueda para devolver los elementos ubicados en la carpeta.
 
 > [!NOTE]
 > Para devolver contenido ubicado en una carpeta de un sitio SharePoint o OneDrive para la Empresa, el script de este tema usa la propiedad administrada DocumentLink en lugar de la propiedad Path. La propiedad DocumentLink es más sólida que la propiedad Path porque devolverá todo el contenido de una carpeta, mientras que la propiedad Path no devolverá algunos archivos multimedia.
@@ -57,7 +57,7 @@ La herramienta de búsqueda de contenido en el centro de cumplimiento de Microso
 
 El script que ejecute en este primer paso devolverá una lista de carpetas de buzones de correo o carpetas SharePoint y OneDrive para la Empresa carpetas, y el identificador de carpeta o ruta de acceso correspondiente para cada carpeta. Al ejecutar este script, se le pedirá la siguiente información.
 
-- **Dirección de correo electrónico o dirección URL** del sitio: escriba una dirección de correo electrónico del custodio para devolver una lista de Exchange carpetas de buzones de correo e IDs de carpeta. O escriba la dirección URL de un SharePoint o un sitio OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos:
+- **Dirección de correo electrónico o dirección URL** del sitio: escriba una dirección de correo electrónico del custodio para devolver una lista de Exchange carpetas de buzones de correo e IDs de carpeta. O escriba la dirección URL de un SharePoint o un sitio OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Aquí le mostramos otros ejemplos:
 
   - **Exchange**: stacig@contoso.onmicrosoft <spam> <spam> .com
 
@@ -222,11 +222,13 @@ Después de ejecutar el script para recopilar una lista de id. de carpeta o vín
 
 2. En el panel izquierdo del centro de cumplimiento, haga clic **en Mostrar toda** la búsqueda de contenido y, a continuación, haga clic en Nueva  >   **búsqueda**.
 
-3. En el **cuadro Palabras clave,** pegue el `folderid:<folderid>` valor o devuelto por el script en el paso  `documentlink:<path>` 1.
+3. En el **cuadro Palabras clave,** pegue el `folderid:<folderid>` valor o devuelto por el script en el paso  `documentlink:<path>/*` 1.
 
     Por ejemplo, la consulta de la siguiente captura de pantalla buscará cualquier elemento de la subcarpeta Purgas de la carpeta Elementos recuperables del usuario (el valor de la propiedad de la subcarpeta Purgas se muestra en la captura de pantalla del paso `folderid` 1):
 
     ![Pegue el folderid o documentlink en el cuadro de palabra clave de la consulta de búsqueda](../media/FolderIDSearchQuery.png)
+    > [!IMPORTANT]
+    > Las búsquedas de vínculo de documento requieren el uso de un archivo  `asterisk '/*'` final .  
 
 4. En **Ubicaciones**, seleccione **Ubicaciones específicas y,** a continuación, haga clic **en Modificar**.
 
@@ -234,7 +236,7 @@ Después de ejecutar el script para recopilar una lista de id. de carpeta o vín
 
     - Junto a Exchange correo electrónico, haga clic en Elegir usuarios, grupos o equipos **y,** **a** continuación, agregue el mismo buzón que especificó al ejecutar el script en el paso 1.
 
-      O bien:
+      O bien
 
     - Junto a **SharePoint,** haga  clic en Elegir sitios y, a continuación, agregue la misma dirección URL del sitio que especificó al ejecutar el script en el paso 1.
 
@@ -259,13 +261,13 @@ Estos son algunos ejemplos del uso de las  `folderid` propiedades y de una consu
 - En este ejemplo se busca en una carpeta de sitio (y en cualquier subcarpeta) documentos que contengan las letras "NDA" en el título.
 
   ```powershell
-  documentlink:<path> AND filename:nda
+  documentlink:"<path>/*" AND filename:nda
   ```
 
 - En este ejemplo se busca en una carpeta de sitio (y en cualquier subcarpeta) los documentos que se modificaron dentro de un intervalo de fechas.
 
   ```powershell
-  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
 ## <a name="more-information"></a>Más información
