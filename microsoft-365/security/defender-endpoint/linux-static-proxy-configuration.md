@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c5dc14c71c344bf508cda8d39f892d740781ac87
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 6dca58070d21271ffc832bcd628679303736f99e
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933126"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108145"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurar Microsoft Defender para endpoint en Linux para la detección de proxy estático
 
@@ -73,6 +73,9 @@ Tenga en cuenta que la instalación y desinstalación no necesariamente producir
 ## <a name="post-installation-configuration"></a>Configuración posterior a la instalación
   
 Después de la instalación, `HTTPS_PROXY` la variable de entorno debe definirse en el archivo de servicio Defender for Endpoint. Para ello, abra `/lib/systemd/system/mdatp.service` en un editor de texto mientras se ejecuta como usuario raíz. A continuación, puede propagar la variable al servicio de dos maneras:
+
+    > [!NOTE]
+    > On CentOS or RedHat Linux distributions the location of the Endpoint service file is `/usr/lib/systemd/system/mdatp.service`.
 
 - Descomprima la línea `#Environment="HTTPS_PROXY=http://address:port"` y especifica la dirección de proxy estática.
 

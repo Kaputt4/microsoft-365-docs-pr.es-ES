@@ -23,7 +23,7 @@ description: Obtenga información sobre cómo administrar quién recibe mensajes
 ms.date: 03/17/2021
 ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
 ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/22/2021
 ms.locfileid: "53054579"

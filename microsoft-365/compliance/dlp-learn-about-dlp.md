@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244617"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108264"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -121,7 +121,9 @@ Mientras esté en modo de prueba, supervise los resultados de la directiva y afi
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>Habilitar el control y ajustar las directivas
 
-Una vez que la directiva cumpla todos los objetivos, encándala. Siga supervisando los resultados de la aplicación de directiva y ajuste según sea necesario. En general, las directivas tienen efecto aproximadamente una hora después de estar activadas. <!--Ver, tema LINK TO para SLA para obtener detalles específicos de la ubicación: >
+Una vez que la directiva cumpla todos los objetivos, encándala. Siga supervisando los resultados de la aplicación de directiva y ajuste según sea necesario. En general, las directivas tienen efecto aproximadamente una hora después de estar activadas. 
+
+<!--See, LINK TO topic for SLAs for location specific  details-->
 
 ## <a name="dlp-policy-configuration-overview"></a>Introducción a la configuración de directivas DLP
 

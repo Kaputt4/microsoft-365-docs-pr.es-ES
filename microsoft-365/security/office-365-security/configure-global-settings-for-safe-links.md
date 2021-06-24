@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a ver y configurar la configuración global (la lista "Bloquear las siguientes direcciones URL" y la protección para aplicaciones de Office 365) para Caja fuerte Vínculos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b1bcdaf92412b17b231e3f4849bae8aab72f292
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 46bafd89400dfa551641c055f6f0e208c0ecd49f
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878537"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108048"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurar la configuración global para Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -45,13 +45,13 @@ Sin embargo, Caja fuerte links también usa la siguiente configuración global q
 - La **lista Bloquear las siguientes direcciones** URL. Esta configuración se aplica a todos los usuarios incluidos en las directivas de vínculos Caja fuerte activas. Para obtener más información, vea ["Bloquear las siguientes direcciones URL" para](safe-links.md#block-the-following-urls-list-for-safe-links) obtener Caja fuerte vínculos
 - Caja fuerte Vincula la protección para Office 365 aplicaciones. Esta configuración se aplica a todos los usuarios de la organización con licencia para Defender para Office 365, independientemente de si los usuarios se incluyen en directivas de vínculos de Caja fuerte activas o no. Para obtener más información, [consulta Caja fuerte configuración de vínculos para Office 365 aplicaciones](safe-links.md#safe-links-settings-for-office-365-apps).
 
-Puede configurar la configuración global de vínculos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (powershell de Exchange Online para organizaciones Microsoft 365 elegibles con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online, pero con Microsoft Defender para suscripciones de complemento Office 365).
+Puede configurar la configuración global de vínculos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 elegibles con buzones de correo en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online, pero con Microsoft Defender para suscripciones de complemento Office 365).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - No hay ninguna directiva de vínculos Caja fuerte integrada o predeterminada, por lo que debe crear al  menos una directiva de vínculos de Caja fuerte para que la lista Bloquear las siguientes direcciones URL esté activa. Para obtener instrucciones, vea [Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
-- Abra el portal Microsoft 365 Defender en <https://security.microsoft.com> . Para ir directamente a la **página Caja fuerte vínculos,** use <https://security.microsoft.com/safelinksv2> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Caja fuerte vínculos,** use <https://security.microsoft.com/safelinksv2> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -72,11 +72,11 @@ Puede configurar la configuración global de vínculos de Caja fuerte en el port
 
 - [Las nuevas características se agregan continuamente a Microsoft Defender para Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). A medida que se agregan nuevas características, es posible que deba realizar ajustes en las directivas de vínculos de Caja fuerte existentes.
 
-## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>Configurar la lista "Bloquear las siguientes direcciones URL" en el portal de Microsoft 365 Defender
+## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>Configurar la lista "Bloquear las siguientes direcciones URL" en el portal de Microsoft 365 Defender web
 
 La **lista Bloquear las siguientes direcciones URL** identifica los vínculos que siempre deben bloquearse mediante el examen de vínculos Caja fuerte en aplicaciones compatibles. Para obtener más información, vea ["Bloquear las siguientes direcciones URL" para obtener Caja fuerte vínculos](safe-links.md#block-the-following-urls-list-for-safe-links).
 
-1. En el portal Microsoft 365 Defender, vaya a Email **& Collaboration** Policies \> **& Rules** Threat \> **policies** \> **section** \> **Caja fuerte Links**.
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  \>  \> **Caja fuerte vínculos**.
 
 2. En la **página Caja fuerte,** haga clic en **Configuración global**. En el **Caja fuerte de vínculos** de la organización que aparece, vaya al cuadro **Bloquear las siguientes direcciones URL.**
 
@@ -117,11 +117,11 @@ Puede usar el cmdlet **Get-AtpPolicyForO365** para ver las entradas existentes e
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>Configurar Caja fuerte de vínculos para Office 365 aplicaciones en el portal de Microsoft 365 Defender
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>Configurar Caja fuerte de vínculos para Office 365 aplicaciones en el portal Microsoft 365 Defender web
 
 Caja fuerte La protección de vínculos Office 365 aplicaciones se aplica a documentos en aplicaciones Office de escritorio, móviles y web compatibles. Para obtener más información, [consulta Caja fuerte configuración de vínculos para Office 365 aplicaciones](safe-links.md#safe-links-settings-for-office-365-apps).
 
-1. En el portal Microsoft 365 Defender, vaya a Email **& Collaboration** Policies \> **& Rules** Threat \> **policies** \> **section** \> **Caja fuerte Links**.
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  \>  \> **Caja fuerte vínculos**.
 
 2. En la **página Caja fuerte,** haga clic en **Configuración global**. En la **directiva Caja fuerte vínculos** de la organización que aparece, configure las siguientes opciones en la sección Configuración que se aplican al contenido de las **aplicaciones** Office 365 compatibles:
 
@@ -157,7 +157,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 Para comprobar que ha configurado correctamente la configuración global de los vínculos de Caja fuerte (la lista Bloquear las siguientes direcciones **URL** y la configuración de protección de aplicaciones de Office 365), siga estos pasos:
 
-- En el portal de Microsoft 365 Defender, vaya a Email **& Collaboration** Policies & \> **Rules** Threat policies section Caja fuerte Links click Global settings y verify the settings in the fly out \>  \>  \>  \> that appears. 
+- En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** Directivas de colaboración & Reglas Directivas de amenazas sección Directivas Caja fuerte Vínculos haga clic en Configuración global y compruebe la configuración del menú desplegable que \>  \>  \>  \>  \> aparece. 
 
 - En Exchange Online PowerShell o Exchange Online Protection PowerShell, ejecute el siguiente comando y compruebe la configuración:
 

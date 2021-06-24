@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Use el Explorador y las detecciones en tiempo real en el centro Microsoft 365 seguridad para investigar y responder a las amenazas de forma eficaz.
+description: Use detecciones en tiempo real y explorador en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9a364f82b7f7836c2f0177dfbde80171b9c36f
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: d3dc8c205d5edfe455884d64030c7a6070762adb
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083229"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108552"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083673"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108336"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Evaluar Microsoft Defender para Office 365
 
@@ -40,7 +40,7 @@ La experiencia de evaluación de [Microsoft Defender](defender-for-office-365.md
 Si aún no tiene una licencia que admita Microsoft Defender para Office 365, puede iniciar una evaluación gratuita de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) días y probar las capacidades en el portal de Microsoft 365 Defender en <https://security.microsoft.com> . Podrás disfrutar de la configuración rápida y puedes desactivarla fácilmente si es necesario.
 
 > [!NOTE]
-> Si está en el portal de Microsoft 365 Defender ( ), puede iniciar una evaluación de Defender para Office 365 aquí: Correo electrónico & Directivas de colaboración <https://security.microsoft.com>  \> **& Reglas** \> **de** \>  \> amenazas Otras secciones Modo de evaluación .
+> Si está en el portal de Microsoft 365 Defender ( ), puede iniciar una evaluación de Defender para Office 365 aquí: Correo electrónico & Directivas de colaboración & Directivas de amenazas de reglas página Otras sección Modo de evaluación <https://security.microsoft.com>  \>  \>  \>  \> .
 
 ## <a name="how-the-evaluation-works"></a>Cómo funciona la evaluación
 

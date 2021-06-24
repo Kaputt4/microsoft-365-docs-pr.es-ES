@@ -19,12 +19,12 @@ description: Los administradores pueden aprender cómo funciona la información 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cebccf09c30264d1b7c94185eb4ad28a1b1cf75e
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b7254dce40f72ecc01dc532f1b6c51f252a2b3ac
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083409"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108636"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Información de suplantación en Defender para Office 365
 
@@ -60,13 +60,13 @@ Puede usar la información de suplantación en el portal de Microsoft 365 Defend
 
   Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-  **Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 - Habilitas y configuras la protección de suplantación en las directivas contra suplantación de identidad en Microsoft Defender para Office 365. La protección de suplantación no está habilitada de forma predeterminada. Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Abra la información de suplantación en el portal de Microsoft 365 Defender identidad
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas \>  \>  \>  sección \> **Anti-phishing**.
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas contra \>  \>  \>  \> **la suplantación** de identidad .
 
 2. En la **página Anti-phishing,** la información de suplantación tiene este aspecto:
 

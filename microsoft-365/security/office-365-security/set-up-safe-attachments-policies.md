@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas Caja fuerte dat
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: e516a16ff28c762e154fd908312df65ea48699bc
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054330"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108228"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365
 
@@ -83,7 +83,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 La creación de una directiva Caja fuerte datos adjuntos personalizada en el portal de Microsoft 365 Defender crea la regla de datos adjuntos seguros y la directiva de datos adjuntos seguros asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** de colaboración Directivas & reglas de amenazas Sección Directivas de \>  \>  \>  amenazas \> **Caja fuerte Datos adjuntos.**
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  Caja fuerte \>  \> **datos adjuntos**.
 
 2. En la **página Caja fuerte datos adjuntos,** haga clic en Crear ![ icono ](../../media/m365-cc-sc-create-icon.png) **Crear**.
 
@@ -135,7 +135,7 @@ La creación de una directiva Caja fuerte datos adjuntos personalizada en el por
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Usar el portal Microsoft 365 Defender para ver las directivas Caja fuerte datos adjuntos
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** de colaboración Directivas & reglas de amenazas Sección Directivas de \>  \>  \>  amenazas \> **Caja fuerte Datos adjuntos.**
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  Caja fuerte \>  \> **datos adjuntos**.
 
 2. En la **Caja fuerte datos adjuntos,** las siguientes propiedades se muestran en la lista de directivas:
    - **Nombre**
@@ -146,7 +146,7 @@ La creación de una directiva Caja fuerte datos adjuntos personalizada en el por
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Usar el portal Microsoft 365 Defender para modificar las directivas Caja fuerte datos adjuntos
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** de colaboración Directivas & reglas de amenazas Sección Directivas de \>  \>  \>  amenazas \> **Caja fuerte Datos adjuntos.**
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  Caja fuerte \>  \> **datos adjuntos**.
 
 2. En la **Caja fuerte datos adjuntos,** seleccione una directiva de la lista haciendo clic en el nombre.
 
@@ -156,7 +156,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Habilitar o deshabilitar directivas Caja fuerte datos adjuntos
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** de colaboración Directivas & reglas de amenazas Sección Directivas de \>  \>  \>  amenazas \> **Caja fuerte Datos adjuntos.**
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  Caja fuerte \>  \> **datos adjuntos**.
 
 2. En la **Caja fuerte datos adjuntos,** seleccione una directiva de la lista haciendo clic en el nombre.
 
@@ -182,7 +182,7 @@ Caja fuerte Las directivas de datos adjuntos se muestran en el orden en que se p
 
 Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad** o en **Reducir la prioridad** en las propiedades de la directiva (no se puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** de colaboración Directivas & reglas de amenazas Sección Directivas de \>  \>  \>  amenazas \> **Caja fuerte Datos adjuntos.**
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  Caja fuerte \>  \> **datos adjuntos**.
 
 2. En la **Caja fuerte datos adjuntos,** seleccione una directiva de la lista haciendo clic en el nombre.
 
@@ -197,7 +197,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Usar el portal Microsoft 365 Defender para quitar directivas Caja fuerte datos adjuntos
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** de colaboración Directivas & reglas de amenazas Sección Directivas de \>  \>  \>  amenazas \> **Caja fuerte Datos adjuntos.**
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  Caja fuerte \>  \> **datos adjuntos**.
 
 2. En la **Caja fuerte datos adjuntos,** seleccione una directiva personalizada de la lista haciendo clic en el nombre de la directiva.
 
@@ -439,7 +439,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Re
 
 Para comprobar que ha creado, modificado o quitado correctamente las directivas de datos adjuntos de Caja fuerte, siga estos pasos:
 
-- En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** de colaboración Directivas & reglas de amenazas Sección Directivas de \>  \>  \>  amenazas \> **Caja fuerte Datos adjuntos.** Compruebe la lista de directivas, sus **valores de** estado y sus **valores de** prioridad. Para ver más detalles, seleccione la directiva de la lista haciendo clic en el nombre y vea los detalles en el menú desplegable.
+- En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  Caja fuerte \>  \> **datos adjuntos**. Compruebe la lista de directivas, sus **valores de** estado y sus **valores de** prioridad. Para ver más detalles, seleccione la directiva de la lista haciendo clic en el nombre y vea los detalles en el menú desplegable.
 
 - En Exchange Online PowerShell o Exchange Online Protection PowerShell, reemplace por el nombre de la directiva o regla, ejecute el siguiente comando y compruebe \<Name\> la configuración:
 

@@ -15,12 +15,12 @@ ms.date: 06/10/2021
 description: Obtenga información sobre cómo acelerar el proceso de detección y tratamiento de cuentas de usuario comprometidas con capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: fd1ad6f52114340153f3958441bfb9500db67215
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904145"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108590"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Solucionar cuentas de usuario comprometidas con investigación y respuesta automatizadas
 
@@ -37,9 +37,7 @@ ms.locfileid: "52904145"
 El libro de juegos de seguridad de usuario comprometido permite al equipo de seguridad de la organización:
 
 - Acelerar la detección de cuentas de usuario comprometidas;
-
 - Limitar el ámbito de una infracción cuando una cuenta está en peligro; y
-
 - Responda a los usuarios en peligro de forma más eficaz y eficaz.
 
 ## <a name="compromised-user-alerts"></a>Alertas de usuario comprometidas
@@ -67,21 +65,17 @@ Cuando una cuenta de usuario está en peligro, se desencadenan alertas. Y en alg
 
 ### <a name="view-and-investigate-restricted-users"></a>Ver e investigar usuarios restringidos
 
-Tiene algunas opciones para navegar a una lista de usuarios restringidos. Por ejemplo, en el Centro de seguridad & cumplimiento, puede ir a **Administración** de amenazas \> **Revisar** \> **usuarios restringidos**. En el siguiente procedimiento se describe la navegación mediante el panel **de** alertas, que es una buena manera de ver varios tipos de alertas que podrían haber sido desencadenadas.
+Tiene algunas opciones para navegar a una lista de usuarios restringidos. Por ejemplo, en el portal Microsoft 365 Defender, puede ir a Correo electrónico **&** \> **colaboración Revisar** \> **usuarios restringidos**. En el siguiente procedimiento se describe la navegación mediante el panel **de** alertas, que es una buena manera de ver varios tipos de alertas que podrían haber sido desencadenadas.
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión.
+1. Abra el portal de Microsoft 365 Defender ( <https://security.microsoft.com> ) y vaya a Incidentes &  \> **alertas**. O bien, para ir directamente a la **página Alertas,** use <https://security.microsoft.com/alerts> .
 
-2. En el panel de navegación, elija **Panel de** \> **alertas**.
+2. En la **página Alertas,** filtre los resultados por período de tiempo y la directiva denominada Usuario restringido **para enviar correo electrónico**.
 
-3. En el **widget Otras alertas,** elija **Usuarios restringidos**.
+   ![La página Alertas del portal de Microsoft 365 Defender filtrado para usuarios restringidos](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
-   ![Widget Otras alertas](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+3. Si selecciona la entrada haciendo clic  en el nombre, se abrirá una página de usuario con restricciones para enviar correo electrónico con detalles adicionales para que lo revise. Junto al  botón Administrar alerta, puede hacer clic en El icono Más opciones Más opciones y, a continuación, seleccione Ver detalles de usuario restringido para ir a la página Usuarios restringidos, donde puede liberar el usuario ![ ](../../media/m365-cc-sc-more-actions-icon.png)  [restringido.](removing-user-from-restricted-users-portal-after-spam.md)  
 
-   Esto abre la lista de usuarios restringidos.
-
-   ![Usuarios restringidos en Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
-
-4. Seleccione una cuenta de usuario en la lista para ver detalles y tomar medidas, como liberar [el usuario restringido](removing-user-from-restricted-users-portal-after-spam.md).
+   ![El usuario no puede enviar correo electrónico desde el Centro de alertas](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
 
 ### <a name="view-details-about-automated-investigations"></a>Ver detalles sobre las investigaciones automatizadas
 
@@ -97,7 +91,7 @@ Para obtener más información, [vea Ver detalles de una investigación](air-vie
 
 - **No confíe en una alerta de inicio de sesión sospechosa como su único indicador**. Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechosa. A veces es la serie de actividades que se producen después de que se pone en peligro una cuenta que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Vea [Directivas de alerta](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisar los permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos de Caja fuerte y configuración global de vínculos de Caja fuerte en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 8d42051d2ca4f26758cbe7334d427f3f93178f97
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096773"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108216"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -173,7 +173,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Habilitar o deshabilitar directivas Caja fuerte vínculos
 
-1. En el portal Microsoft 365 Defender, vaya a **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** \> **section** \> **Caja fuerte Links**.
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  \>  \> **Caja fuerte vínculos**.
 
 2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista haciendo clic en el nombre.
 
@@ -198,7 +198,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
 - En el portal Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva de vínculos de Caja fuerte después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (lo que puede afectar a la prioridad de las reglas existentes).
 - Caja fuerte Las directivas de vínculos se procesan en el orden en que se muestran (la primera directiva tiene el **valor de** prioridad 0). Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
 
-1. En el portal Microsoft 365 Defender, vaya a **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** \> **section** \> **Caja fuerte Links**.
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  \>  \> **Caja fuerte vínculos**.
 
 2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista haciendo clic en el nombre.
 
@@ -213,7 +213,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Usar el portal Microsoft 365 Defender para quitar directivas Caja fuerte vínculos
 
-1. En el portal Microsoft 365 Defender, vaya a **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** \> **section** \> **Caja fuerte Links**.
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  \>  \> **Caja fuerte vínculos**.
 
 2. En la **Caja fuerte vínculos,** seleccione una directiva de la lista haciendo clic en el nombre. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en el ![Icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
 

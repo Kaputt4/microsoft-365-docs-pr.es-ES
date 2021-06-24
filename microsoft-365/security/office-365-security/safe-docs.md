@@ -16,12 +16,12 @@ ms.collection:
 description: Obtenga información sobre Caja fuerte documentos en Microsoft 365 E5 o Seguridad de Microsoft 365 E5.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 0e1bd2150a04e51e0d06c6cd1c17a71a032df1a5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054427"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108612"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
@@ -62,7 +62,7 @@ Los archivos enviados por Caja fuerte documentos no se conservan en Defender má
 
 ## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>Use el Microsoft 365 Defender para configurar Caja fuerte documentos
 
-1. Abra el portal de Microsoft 365 Defender y vaya a Correo electrónico **&** de colaboración Directivas & reglas de amenazas Sección Directivas \>  \>  \>  de amenazas Caja fuerte \> **datos adjuntos.**
+1. Abra el portal de Microsoft 365 Defender y vaya a Correo electrónico **&** directivas de colaboración & de directivas de amenazas de reglas sección Directivas \>  \>  Caja fuerte \>  \> **datos adjuntos**.
 
 2. En la **página Caja fuerte datos adjuntos,** haga clic en **Configuración global**.
 
@@ -103,7 +103,7 @@ Para obtener más información, [vea Onboard to the Microsoft Defender for Endpo
 
 Para comprobar que ha habilitado y configurado documentos Caja fuerte documentos, siga estos pasos:
 
-- En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas Directivas de amenazas sección Directivas de amenazas Caja fuerte Datos adjuntos Configuración global y compruebe la opción Activar documentos de Caja fuerte para clientes de Office y Permitir que los usuarios haga clic en la vista protegida incluso si Caja fuerte Documents identifica el archivo como una configuración malintencionada. \>  \>  \>  \>  \>   
+- En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** Directivas de colaboración & Reglas Directivas de amenazas sección Directivas Caja fuerte Datos adjuntos Configuración global y compruebe la opción Activar documentos de Caja fuerte para clientes de Office y Permitir que los usuarios haga clic en la vista protegida incluso si Caja fuerte Documents identifica el archivo como una configuración malintencionada. \>  \>  \>  \>  \>   
 
 - Ejecute el siguiente comando en Exchange Online PowerShell y compruebe los valores de la propiedad:
 

@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a usar el analizador de configuración para buscar y corregir directivas de seguridad que están por debajo de las directivas de seguridad predeterminadas protección estándar y Protección estricta.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 01a9b3a2b01a3cfc95a3911f75907cbe0ef9d58f
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878669"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108432"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "52878669"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-El analizador de configuración del portal de Microsoft 365 Defender proporciona una ubicación central para buscar y corregir directivas de seguridad en las que la configuración está por debajo de la configuración Protección estándar y La configuración de perfil de protección estricta en directivas de seguridad [preestablecidas.](preset-security-policies.md)
+El analizador de configuración del portal de Microsoft 365 Defender proporciona una ubicación central para buscar y corregir directivas de seguridad en las que la configuración está por debajo de la configuración Protección estándar y Configuración de perfil de protección estricta en directivas de seguridad [preestablecidas.](preset-security-policies.md)
 
 El analizador de configuración analiza los siguientes tipos de directivas:
 
@@ -55,27 +55,27 @@ El analizador de configuración analiza los siguientes tipos de directivas:
 
 Los **valores de** configuración **de** directiva Estándar y Estricto que se usan como líneas base se describen en Configuración recomendada para EOP y Microsoft Defender para Office 365 [seguridad.](recommended-settings-for-eop-and-office365.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <https://security.microsoft.com> . Para ir directamente a la **página Analizador de configuración,** use <https://security.microsoft.com/configurationAnalyzer> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Analizador de configuración,** use <https://security.microsoft.com/configurationAnalyzer> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Debe tener asignados permisos en el portal de Microsoft 365 Defender antes de poder realizar los procedimientos descritos en este artículo:
+- Debe tener asignados permisos en el portal de Microsoft 365 Defender para poder realizar los procedimientos descritos en este artículo:
   - Para usar el analizador de configuración **y** realizar actualizaciones de directivas de seguridad, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
   - Para obtener acceso de solo lectura al analizador de configuración, debe ser miembro de los grupos de roles **Lector global** o **Lector de** seguridad.
 
-  Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
   > [!NOTE]
   >  
-  > - Agregar usuarios al rol Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   >
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
-## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Usar el analizador de configuración en el portal de Microsoft 365 Defender
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Usar el analizador de configuración en el portal Microsoft 365 Defender configuración
 
-En el portal de Microsoft 365 Defender, vaya a Email **& collaboration** Policies & Sección Directivas de amenazas \>  \>  \>  Directivas de plantilla \> **Analizador de configuración.**
+En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  de plantilla \>  Analizador de \> **configuración.**
 
 La **página Analizador de** configuración tiene dos pestañas principales:
 

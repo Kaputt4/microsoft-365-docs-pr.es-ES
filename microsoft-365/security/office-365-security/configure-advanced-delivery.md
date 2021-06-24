@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: deaad11b6397cd53017c0972a624b67a9623887f
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 819f78883aa75fbbdded2e47c1bb85945f080233
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879113"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108408"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -60,22 +60,22 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 - [Búsqueda avanzada en Microsoft Defender para endpoint](../defender-endpoint/advanced-hunting-overview.md)
 - [Vistas de campañas](campaigns.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <https://security.microsoft.com> . Para ir directamente a la **página Entrega avanzada,** abra <https://security.microsoft.com/advanceddelivery> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Entrega avanzada,** abra <https://security.microsoft.com/advanceddelivery> .
 
 - Debe tener asignados permisos antes de poder realizar los procedimientos descritos en este artículo:
-  - Para crear, modificar o quitar la configuración de la directiva de  entrega avanzada, debe ser miembro del grupo de  roles Administrador de seguridad en el portal de **Microsoft 365 Defender** y miembro del grupo de roles Administración de la organización en **Exchange Online**.  
+  - Para crear, modificar o quitar la configuración de la directiva de  entrega avanzada, debe ser miembro del grupo de  roles Administrador de seguridad en el **portal de Microsoft 365 Defender** y miembro del grupo de roles Administración de la organización en **Exchange Online**.  
   - Para obtener acceso de solo lectura a la directiva de entrega avanzada, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
 
   Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > Agregar usuarios al rol Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Usar el portal Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada
 
-1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de \> **colaboración** & \> **reglas de** amenazas Sección Reglas de entrega \>  \> **avanzada**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Reglas de amenazas sección \>  \>  Reglas de entrega \>  \> **avanzada**.
 
 2. En la **página Entrega avanzada,** compruebe que la pestaña buzón **de SecOps** está seleccionada y, a continuación, siga uno de los pasos siguientes:
    - Haga ![ clic en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**.
@@ -95,7 +95,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Use el portal Microsoft 365 Defender para configurar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
-1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de \> **colaboración** & \> **reglas de** amenazas Sección Reglas de entrega \>  \> **avanzada**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Reglas de amenazas sección \>  \>  Reglas de entrega \>  \> **avanzada**.
 
 2. En la **página Entrega avanzada,** seleccione la pestaña **Simulación de suplantación** de identidad y, a continuación, realice uno de los siguientes pasos:
    - Haga ![ clic en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**.
