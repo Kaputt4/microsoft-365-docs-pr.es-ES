@@ -126,7 +126,7 @@ Para recibir sus facturas como datos adjuntos de en las notificaciones de factur
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)
+[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
 [Información de facturación de Microsoft 365 para empresas en México](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (artículo)\
 [Conozca su factura o recibo por la compra de Microsoft 365 para Empresas](understand-your-invoice2.md) (artículo)\
-[Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md) (artículo)\
+[Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md) (artículo)

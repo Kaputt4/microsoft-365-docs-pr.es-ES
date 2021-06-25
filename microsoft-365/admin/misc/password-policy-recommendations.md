@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 6f79116b1188eaab1b843b2e3fa612c4ed01c488
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006930"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096629"
 ---
 # <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
 
@@ -58,7 +58,7 @@ Los procedimientos recomendados para las contraseñas se dividen en algunas ampl
 
 El principal objetivo de un sistema de contraseña más seguro es la diversidad de las contraseñas. Desea que la Directiva de contraseñas contenga una gran cantidad de contraseñas distintas y difíciles de adivinar. Estas son algunas recomendaciones para mantener su organización lo más segura posible.
   
-- Mantenga como requisito el que la longitud mínima sea de 8 caracteres (una contraseña más larga no siempre es mejor)
+- Mantener un requisito de longitud mínima de 8 caracteres
 
 - No solicite requisitos de composición de caracteres. Por ejemplo, \*&amp;(^%$
 
@@ -131,6 +131,8 @@ La autenticación multifactor basada en riesgos garantiza que, cuando nuestro si
 ## <a name="next-steps"></a>Siguientes pasos
 
 ¿Quiere obtener más información acerca de la administración de contraseñas? Estas son algunas lecturas recomendadas:
+
+- [Olvide las contraseñas, elija una opción sin contraseñas](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
 
 - [Directrices de contraseñas de Microsoft](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
