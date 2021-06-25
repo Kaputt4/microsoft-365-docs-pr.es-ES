@@ -13,19 +13,19 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams clases con Canvas
-ms.openlocfilehash: 1a16d6a4f5e0cfbb592c335163bb4e33fd3c1301
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 8e28cc8401dbf37d6e780b8f56dc300982abd0cc
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821935"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137684"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Usar Microsoft Teams clases con Canvas
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-Microsoft Teams clases es una aplicación de interoperabilidad de herramientas de aprendizaje (LTI) que ayuda a los profesores y alumnos a navegar fácilmente entre su Sistema de administración de aprendizaje (LMS) y Teams. Los usuarios pueden acceder a sus equipos de clase asociados con su curso directamente desde su LMS.
+Microsoft Teams clases es una aplicación Learning Tools Interoperability (LTI) que ayuda a los profesores y alumnos a navegar fácilmente entre su sistema de administración de Learning (LMS) y Teams. Los usuarios pueden acceder a sus equipos de clase asociados con su curso directamente desde su LMS.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administrador
 
@@ -37,22 +37,22 @@ Antes de administrar la integración de Microsoft Teams en Instructure Canvas, e
 
 3. En la navegación de administración, seleccione el **vínculo Configuración** y, a continuación, la **pestaña Integraciones.** 
 
-4. Escriba el nombre del inquilino de Microsoft y el atributo de inicio de sesión. 
-
-   El atributo login se usará para asociar el usuario canvas con un Azure Active Directory usuario. 
-
-5. Seleccione **Actualizar Configuración** una vez que haya terminado.
-
-6. Para aprobar el acceso a la aplicación azure de **Microsoft-Teams-Sync-for-Canvas** de Canvas de Canvas, seleccione el vínculo Conceder acceso **al** espacio empresarial. Se le redirigirá al punto de conexión de consentimiento de administrador de la plataforma de identidad de Microsoft.
-
-   ![permisos](media/permissions.png)
-
-7. Seleccione **Aceptar**.
- 
-8. Habilite la Microsoft Teams sincronización activando la alternancia.
+4. Habilite Microsoft Teams sincronización activando la alternancia.
 
    ![teams-sync](media/teams-sync.png)
 
+5. Escriba el nombre del inquilino de Microsoft y el atributo de inicio de sesión. 
+
+   El atributo login se usará para asociar el usuario canvas con un Azure Active Directory usuario. 
+
+6. Seleccione **Actualizar Configuración** una vez que haya terminado.
+
+7. Para aprobar el acceso a la aplicación azure de **Microsoft-Teams-Sync-for-Canvas** de Canvas de Canvas, seleccione el vínculo Conceder acceso **al** espacio empresarial. Se le redirigirá al punto de conexión de consentimiento de administrador de la plataforma de identidad de Microsoft.
+
+   ![permisos](media/permissions.png)
+
+8. Seleccione **Aceptar**.
+ 
 ## <a name="canvas-admin"></a>Administrador de Canvas
 
 Configure la integración Microsoft Teams LTI 1.3.

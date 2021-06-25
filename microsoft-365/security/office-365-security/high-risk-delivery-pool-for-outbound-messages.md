@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo se usan los grupos de entrega para proteger la reputación de los servidores de correo electrónico en Microsoft 365 centros de datos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599916"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137732"
 ---
 # <a name="outbound-delivery-pools"></a>Grupos de entrega de salida
 
@@ -61,3 +61,24 @@ Entre las causas posibles de un aumento de los NDR se incluyen:
 - Un servidor de correo electrónico no deseado.
 
 Todos estos problemas pueden provocar un aumento repentino del número de NDR que procesa el servicio. Muchas veces, estos NDR parecen ser correo no deseado para otros servidores de correo electrónico y servicios (también conocidos como _[backscatter](backscatter-messages-and-eop.md)_).
+
+
+### <a name="relay-pool"></a>Grupo de retransmisión
+
+Los mensajes que se reenván o retransmiten a través de Microsoft 365 en determinados escenarios se enviarán mediante un grupo de retransmisión especial, ya que el destino no debe considerar Microsoft 365 como el remitente real. Es importante aislar este tráfico de correo electrónico, ya que existen escenarios legítimos y no válidos para reenviar o retransmitir correo electrónico automáticamente fuera de Microsoft 365. Al igual que el grupo de entrega de alto riesgo, se usa un grupo de direcciones IP independiente para el correo retransmitido. Este grupo de direcciones no se publica porque puede cambiar a menudo y no forma parte del registro SPF publicado para Microsoft 365.
+
+Microsoft 365 debe comprobar que el remitente original es legítimo para poder entregar con confianza el mensaje reenviado.
+
+El mensaje reenviado o retransmitido debe cumplir uno de los siguientes criterios para evitar el uso del grupo de retransmisión:
+
+- El remitente saliente se encuentra en un [dominio aceptado.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- SPF pasa cuando el mensaje llega a Microsoft 365.
+- DKIM en el dominio del remitente pasa cuando el mensaje llega a Microsoft 365.
+ 
+Puede saber que un mensaje se envió a través del grupo de retransmisión mirando la DIRECCIÓN IP del servidor saliente (el grupo de retransmisión estará en el intervalo 40.95.0.0/16) o mirando el nombre del servidor saliente (tendrá "rly" en el nombre).
+
+En los casos en los que podemos autenticar al remitente, usamos el esquema de reescritura de remitentes (SRS) para ayudar al sistema de correo electrónico del destinatario a saber que el mensaje reenviado es de un origen de confianza. Puede obtener más información sobre cómo funciona y qué puede hacer para ayudar a asegurarse de que el dominio de envío pase la autenticación en el esquema de reescritura de [remitentes (SRS)](/office365/troubleshoot/antispam/sender-rewriting-scheme)en Office 365 .
+
+Para que DKIM funcione, asegúrese de habilitar DKIM para enviar dominio. Por ejemplo, fabrikam.com forma parte de contoso.com y se define en los dominios aceptados de la organización. Si el remitente del mensaje sender@fabrikam.com, DKIM debe estar habilitado para fabrikam.com. puede leer sobre cómo habilitar en [Usar DKIM para validar](use-dkim-to-validate-outbound-email.md)el correo electrónico saliente enviado desde su dominio personalizado .
+
+Para agregar dominios personalizados, siga los pasos descritos [en Agregar un dominio a Microsoft 365](../../admin/setup/add-domain.md).

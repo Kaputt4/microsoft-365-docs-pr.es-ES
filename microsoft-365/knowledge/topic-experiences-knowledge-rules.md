@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo administrar la visibilidad de temas en Temas de Microsoft Viva.
-ms.openlocfilehash: cd6a712687a63c3d131ee678c6c408f516c7b529
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 07679b2de668ba5e0c9fdf206310233ce7af84a4
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107680"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137756"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Administrar visibilidad de temas en Temas de Microsoft Viva
 
-Puede administrar el conjunto de usuarios que pueden ver los aspectos destacados del tema, las tarjetas de tema y el centro de temas en el [centro Microsoft 365 administración.](https://admin.microsoft.com) Debe ser un administrador global o SharePoint administrador para realizar estas tareas.
+Puede administrar quién puede ver los aspectos destacados del tema, las tarjetas de tema y el centro de temas en el [Centro de administración de Microsoft 365](https://admin.microsoft.com). Debe ser un administrador global o administrador SharePoint administrador de grupos para realizar estas tareas.
 
 ## <a name="to-access-topics-management-settings"></a>Para acceder a la configuración de administración de temas:
 
-1. En el Centro Microsoft 365 administración, haga clic **en Configuración** y, a continuación, en Configuración de **la organización.**
+1. En la Centro de administración de Microsoft 365, haga clic **en Configuración** y, a continuación, en Configuración de **la organización**.
 2. En la **pestaña Servicios,** haga clic en **Experiencias del tema**.
 
     ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
@@ -49,7 +49,7 @@ Puede cambiar los usuarios que pueden ver temas de su organización.
 > [!Note] 
 > Aunque esta configuración le permite seleccionar cualquier usuario de su organización, solo los usuarios que tengan licencias de Experiencias de tema asignadas podrán ver temas.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar la detección de temas en Temas de Microsoft Viva](topic-experiences-discovery.md)
 
