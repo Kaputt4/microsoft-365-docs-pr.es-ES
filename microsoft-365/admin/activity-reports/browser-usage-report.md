@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel Microsoft 365 informes en el centro Microsoft 365 administración.
-ms.openlocfilehash: f655a3951dc58ddd5089c8034db64af3840ebf7d
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
+ms.openlocfilehash: f2d8d8347e7b71375958c56f6649fbb911155d46
+ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50606239"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53125419"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del explorador de Microsoft
 
-El panel Microsoft 365 **informes le** muestra una introducción a la actividad en todos los productos de la organización. Le permite profundizar en informes de nivel de producto individuales para ofrecer información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador de Microsoft, puede obtener información sobre Internet Explorer, Microsoft Edge (versión anterior) y el nuevo uso Microsoft Edge explorador. Los informes de uso se basan Microsoft 365 los servicios en línea a los que se accede a través de un explorador de Microsoft.
+El panel Microsoft 365 **informes le** muestra una introducción a la actividad en todos los productos de la organización. Le permite profundizar en informes de nivel de producto individuales para ofrecer información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador de Microsoft, puede obtener información sobre Internet Explorer, Microsoft Edge (versión anterior) y el nuevo uso Microsoft Edge explorador. Los informes de uso se basan Microsoft 365 los servicios en línea a los que se accede mediante un explorador de Microsoft.
 
  > [!NOTE]
  > Debe ser un administrador global, un lector global o un lector de informes en Microsoft 365 o un administrador Exchange, SharePoint o Skype Empresarial para ver informes.
@@ -36,6 +36,16 @@ El panel Microsoft 365 **informes le** muestra una introducción a la actividad 
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
 2. En la página principal del panel, haga clic en **el botón Ver más** en la tarjeta de uso del explorador de Microsoft.
+
+## <a name="how-to-notify-users-to-upgrade-their-browser"></a>Cómo notificar a los usuarios que actualicen su explorador
+
+![Flujo de acción del informe de uso del explorador microsoft](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
+
+Los administradores globales pueden participar en el envío de mensajes a usuarios mediante servicios Microsoft 365 en Edge Legacy (no admitido) e Internet Explorer (pronto no se admite). Este mensaje dirigido notifica a los usuarios que la compatibilidad con estos exploradores finalizará pronto y se vincula a un artículo de soporte técnico con información sobre Microsoft Edge y pasos sencillos a seguir para cambiar de explorador. 
+
+Puede encontrar esta característica en la página de informe. Una vez creado el mensaje, se notifica a los usuarios con la frecuencia especificada hasta el 17 de agosto de 2021. Puedes desactivar esta característica en cualquier momento para dejar de enviar notificaciones a los usuarios. Para empezar a enviar notificaciones de nuevo, vuelve a activar la característica.
+
+Para obtener más información, [vea Microsoft Edge ayuda para & aprendizaje](https://support.microsoft.com/microsoft-edge).
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpretar el informe de uso del explorador de Microsoft
 

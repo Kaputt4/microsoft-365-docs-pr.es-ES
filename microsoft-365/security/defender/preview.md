@@ -1,5 +1,5 @@
 ---
-title: Vista previa de características en Microsoft 365 Defender
+title: Características de vista previa en Microsoft 365 Defender
 description: Conozca las nuevas características de la seguridad de Microsoft 365
 keywords: Versión preliminar, novedades, seguridad m365, seguridad, 365, funciones
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8ad5ffe2b175a8f7a42b2fad353fcde13a60cfec
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
+ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730529"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53125403"
 ---
-# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Características de vista previa de Defender
+# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender de vista previa
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,15 +37,15 @@ ms.locfileid: "52730529"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-El servicio Microsoft 365 Defender se actualiza constantemente para incluir nuevas mejoras y capacidades de características.
+El Microsoft 365 Defender se actualiza constantemente para incluir nuevas mejoras y capacidades de características.
 
-Obtén información sobre las nuevas características de la versión preliminar de Microsoft 365 Defender y sé uno de los primeros en probar las próximas características al activar la experiencia de vista previa.
+Obtenga información sobre las nuevas características de Microsoft 365 Defender versión preliminar y sea uno de los primeros en probar las próximas características al activar la experiencia de vista previa.
 
-Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [What's new in Microsoft 365 Defender](whats-new.md).
+Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [Novedades de Microsoft 365 Defender](whats-new.md).
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
-Las cuentas asignadas Azure Active Directory (Azure AD) pueden activar las Microsoft 365 de Defender Preview:
+Las cuentas asignadas a Azure Active Directory (Azure AD) pueden activar las Microsoft 365 Defender vista previa:
 
 - Administrador global
 - Administrador de seguridad
@@ -68,8 +68,9 @@ Sabrá que tiene activada la versión preliminar de las características cuando 
 
 Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
 
-- **[API de streaming:](../defender-endpoint/raw-data-export.md)** Microsoft 365 Defender admite la transmisión por streaming de todos los eventos disponibles a través de la búsqueda avanzada a un centro de eventos o una cuenta de Almacenamiento de Azure.
-- Microsoft 365 API de **[Defender:](api-overview.md)** las API de Microsoft 365 Defender de nivel superior te permitirán automatizar los flujos de trabajo en función de los incidentes compartidos y las tablas avanzadas de búsqueda. 
+- **[Ver informes por etiquetas de amenazas:](threat-analytics.md#view-reports-per-threat-tags)** las etiquetas de amenazas le ayudan a centrarse en categorías de amenazas específicas y revisar los informes más relevantes.
+- **[API de](../defender-endpoint/raw-data-export.md)** streaming: Microsoft 365 Defender permite transmitir todos los eventos disponibles a través de búsqueda avanzada a un centro de eventos o una cuenta de Almacenamiento de Azure.
+- **[Microsoft 365 Defender API:](api-overview.md)** las API de nivel superior Microsoft 365 Defender le permitirán automatizar flujos de trabajo basados en las tablas de búsqueda avanzadas y de incidentes compartidos. 
 - **[Tomar medidas en la búsqueda avanzada:](advanced-hunting-take-action.md)** contiene rápidamente amenazas o aborda los activos comprometidos que encuentras en la [búsqueda avanzada.](advanced-hunting-overview.md)
 - **[Referencia de esquema en el portal:](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** obtenga información sobre las tablas de esquema de búsqueda avanzada directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia incluye tipos de eventos admitidos `ActionType` (valores) y consultas de ejemplo.
 - **[Función DeviceFromIP():](advanced-hunting-devicefromip-function.md)** obtenga información sobre los dispositivos a los que se ha asignado una dirección IP específica o direcciones en un intervalo de tiempo determinado.
