@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108240"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137768"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -203,7 +203,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
    >
    > Piense detenidamente antes de agregar dominios a la lista de dominios permitidos. Para más información, consulte [Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)
    >
-   > Nunca agregue sus propios [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) o dominios comunes (por ejemplo, microsoft.com o office.com) a la lista de dominios permitidos. Si estos dominios pueden omitir el filtrado de correo no deseado, los atacantes podrán enviar correo electrónico a su organización con facilidad.
+   > Nunca agregue sus propios [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) o dominios comunes (por ejemplo, microsoft.com o office.com) a la lista de dominios permitidos. Si estos dominios pueden omitir el filtrado de correo no deseado, los atacantes pueden enviar fácilmente mensajes que suplantan los dominios de confianza a su organización.
    >
    > Agregar dominios a la lista de dominios bloqueados para bloquear manualmente los dominios no es peligroso, pero puede aumentar su carga de trabajo administrativa. Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md).
    >
