@@ -497,6 +497,8 @@
               href: archive-17a-4-servicenow-data.md
             - name: DataParser de Slack (versión preliminar)
               href: archive-17a-4-slack-data.md
+            - name: DataParser de SQL (versión preliminar)
+              href: archive-17a-4-sql-database-data.md
             - name: Symphony DataParser (versión preliminar)
               href: archive-17a-4-symphony-data.md
             - name: DataParser de Zoom (versión preliminar)
