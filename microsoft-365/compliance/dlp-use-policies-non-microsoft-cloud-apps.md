@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprende a usar directivas de dlp para aplicaciones en la nube que no son de Microsoft.
-ms.openlocfilehash: d4c5170cab01b1ca22701b13c7afbf4f2e0ba7da
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114138"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149159"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft (versión preliminar)
 
@@ -81,9 +81,11 @@ Al crear una regla en la directiva DLP, puedes seleccionar una acción para apli
 
 ![Restringir aplicaciones de terceros](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
+>[NOTA] Las directivas DLP aplicadas a aplicaciones que no son de Microsoft usan Microsoft Cloud App Security. Cuando se crea la directiva DLP para una aplicación que no es de Microsoft, la misma directiva se creará automáticamente en Microsoft Cloud App Security.
+
 Para obtener información sobre cómo crear y configurar directivas DLP, vea [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md?view=o365-worldwide).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear pruebas y ajustar una directiva DLP](./create-test-tune-dlp-policy.md?view=o365-worldwide)
 - [Introducción a la directiva predeterminada de DLP](./get-started-with-the-default-dlp-policy.md?view=o365-worldwide)

@@ -2,8 +2,8 @@
 title: Introducción al Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570562"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148907"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -38,7 +38,7 @@ El Microsoft 365 global de la organización probablemente será el primer usuari
 
 ## <a name="sign-in"></a>Iniciar sesión
 
-1. Vaya al Centro [de Microsoft 365 de cumplimiento](https://compliance.microsoft.com/) e inicie **sesión** con su Microsoft 365 de administrador global.
+1. Vaya a la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) e **inicie sesión** con su Microsoft 365 de administrador global.
 2. Seleccione **Administrador de cumplimiento** en el panel de navegación izquierdo. Llegarás al panel del Administrador [de cumplimiento](#understand-the-compliance-manager-dashboard).
 
 El vínculo directo para acceder al Administrador de cumplimiento es [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) .
@@ -80,7 +80,7 @@ Si no tiene acceso al Centro de seguridad y cumplimiento de Office 365 o si nece
 
 Para asignar roles y establecer permisos en Azure AD, consulte [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-Los usuarios con identidades de Azure AD que no tienen suscripciones Office 365 o Microsoft 365 no podrán acceder al Administrador de cumplimiento en el centro de cumplimiento Microsoft 365 cumplimiento. Para obtener ayuda para obtener acceso al Administrador de cumplimiento, póngase en [contacto cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
+Los usuarios con identidades de Azure AD que no tienen Office 365 o Microsoft 365 suscripciones no podrán acceder al Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365. Para obtener ayuda para obtener acceso al Administrador de cumplimiento, póngase en [contacto cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### <a name="role-types"></a>Tipos de función
 
@@ -97,7 +97,7 @@ En la tabla siguiente se muestran las funciones permitidas por cada rol en el Ad
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>Configuración para pruebas automatizadas e historial de usuarios
 
-La configuración del Administrador de cumplimiento en el Microsoft 365 de cumplimiento le permite habilitar y deshabilitar las pruebas automáticas de las acciones de mejora. La configuración también le permite administrar los datos de los usuarios asociados a acciones de mejora, incluida la capacidad de reasignar acciones de mejora a un usuario diferente.  Solo las personas con un rol de administrador global o administrador de cumplimiento pueden acceder a la configuración del Administrador de cumplimiento.
+La configuración del Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365 permite habilitar y deshabilitar las pruebas automáticas de las acciones de mejora. La configuración también le permite administrar los datos de los usuarios asociados a acciones de mejora, incluida la capacidad de reasignar acciones de mejora a un usuario diferente.  Solo las personas con un rol de administrador global o administrador de cumplimiento pueden acceder a la configuración del Administrador de cumplimiento.
 
 > [!NOTE]
 > La característica de prueba automatizada no está disponible para los clientes en GCC entornos high y doD porque la puntuación segura no está disponible en estos entornos. GCC Los clientes altos y doD tendrán que implementar manualmente y probar sus acciones de mejora.
@@ -112,7 +112,7 @@ El administrador global de su organización puede cambiar la configuración de l
 
 #### <a name="to-manage-your-automated-testing-settings"></a>Para administrar la configuración de pruebas automatizadas:
 
-1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Microsoft 365 de cumplimiento](https://compliance.microsoft.com/).
+1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 
@@ -134,7 +134,7 @@ La configuración del historial de usuarios también le permite reasignar todas 
 
 **Para buscar la configuración del historial de usuarios:**
 
-1. Seleccione Configuración en la navegación izquierda desde cualquier lugar del [Microsoft 365 de cumplimiento](https://compliance.microsoft.com/).
+1. Seleccione Configuración en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 
@@ -152,7 +152,7 @@ El informe refleja el estado de la acción de mejora a partir de su fecha de cre
 
 **Siga los pasos siguientes para exportar un informe por usuario:**
 
-1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Microsoft 365 de cumplimiento](https://compliance.microsoft.com/).
+1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 
@@ -170,7 +170,7 @@ Puede reasignar acciones de mejora de un usuario a otro. Al reasignar una acció
 
 **Siga los pasos siguientes para reasignar acciones de mejora a otro usuario:**
 
-1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Microsoft 365 de cumplimiento](https://compliance.microsoft.com/).
+1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 
@@ -197,7 +197,7 @@ Al eliminar el historial de un usuario, se eliminarán como propietarios de las 
 
 Para eliminar el historial de un usuario, siga estos pasos:
 
-1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Microsoft 365 de cumplimiento](https://compliance.microsoft.com/).
+1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 
@@ -322,7 +322,7 @@ Hay dos maneras de tomar medidas desde esta pantalla:
 
 La página evaluaciones enumera todas las [evaluaciones](compliance-manager-assessments.md) que ha configurado para su organización. El denominador de puntuación de cumplimiento viene determinado por todas las evaluaciones de seguimiento. A medida que agregues más evaluaciones, verás más acciones de mejora enumeradas en la página acciones de mejora y aumenta el denominador de puntuación de cumplimiento.
 
-El **contador de plantillas** activadas cerca de la parte superior de la página muestra el número de plantillas de evaluación activas que se usan actualmente del número total de plantillas disponibles para su organización. Vea [Tipo de plantilla](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) para obtener más información.
+El **contador de plantillas** activadas cerca de la parte superior de la página muestra el número de plantillas de evaluación activas que se usan actualmente del número total de plantillas disponibles para su organización. Consulte [Disponibilidad de plantillas y licencias](compliance-manager-templates.md#template-availability-and-licensing) para obtener más información.
 
 La página de evaluaciones resume la información clave sobre cada evaluación:
 
@@ -357,7 +357,7 @@ De forma predeterminada, verá la evaluación de línea base de [protección](co
 
 Una plantilla es un marco de directiva para crear una evaluación en el Administrador de cumplimiento. La página de plantillas de evaluación muestra una lista de las plantillas e información clave. La lista incluye plantillas proporcionadas por el Administrador de cumplimiento, así como cualquier plantilla que la organización haya modificado o creado. Puede aplicar filtros para buscar una plantilla basada en la certificación, el ámbito del producto, el país, la industria y quién la creó.
 
-El **contador de plantillas** activadas cerca de la parte superior de la página muestra el número de plantillas de evaluación activas que se usan actualmente del número total de plantillas disponibles para su organización. Vea [Tipo de plantilla](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) para obtener más información.
+El **contador de plantillas** activadas cerca de la parte superior de la página muestra el número de plantillas de evaluación activas que se usan actualmente del número total de plantillas disponibles para su organización. Consulte [Disponibilidad de plantillas y licencias](compliance-manager-templates.md#template-availability-and-licensing) para obtener más información.
 
 Seleccione una plantilla de su fila para mostrar su página de detalles, que contiene una descripción de la plantilla y más información sobre los detalles de certificación, ámbito y controles. En esta página puede seleccionar los botones adecuados para crear una evaluación, exportar los datos de plantilla a Excel o modificar la plantilla.
 

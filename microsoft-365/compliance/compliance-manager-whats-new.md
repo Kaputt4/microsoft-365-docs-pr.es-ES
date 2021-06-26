@@ -2,8 +2,8 @@
 title: Novedades del Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: fe5e8056bd771082436c3cd941cd6f4e602c11a9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52465471"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149027"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
@@ -48,4 +48,4 @@ El Administrador de cumplimiento ya está disponible para los clientes del DoD d
 
 ### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 
-Cada página de evaluación y página de plantilla de evaluación tiene un contador de plantillas activadas. Este contador muestra cuántas plantillas elegibles está usando de acuerdo con su contrato de licencia. Ver [tipos de plantilla: incluidos y premium, activos e inactivos para](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) obtener más información.
+Cada página de evaluación y página de plantilla de evaluación tiene un contador de plantillas activadas. Este contador muestra cuántas plantillas elegibles está usando de acuerdo con su contrato de licencia. Vea [Disponibilidad de plantillas y licencias para](compliance-manager-templates.md#template-availability-and-licensing) obtener más información.

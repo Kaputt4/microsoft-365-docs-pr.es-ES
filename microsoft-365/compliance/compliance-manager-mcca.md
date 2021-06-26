@@ -2,8 +2,8 @@
 title: Analizador de configuración de cumplimiento de Microsoft para administrador de cumplimiento
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para rápida ejecución con El Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 5d74d9980daf7f6ff7f013578cb11be83d18948e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244641"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148967"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 
@@ -101,19 +101,19 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
     ```
   | Input |  País o región | 
   | :------------- | :------------: |
-  | 1 | Asia-Pacífico |
-  | 2 | Australia |
-  | 3 | Canadá |
+  | 1  | Asia-Pacífico |
+  | 2  | Australia |
+  | 3  | Canadá |
   | 4  | Europa (excluyendo Francia) / Oriente Medio / África |
   | 5  | Francia |
   | 6  | India |
   | 7  | Japón |
   | 8  | Corea |
   | 9  | Norteamérica (excepto Canadá) |
-  | 10 | Sudamérica |
+  | 10  | Sudamérica |
   | 11 | Sudáfrica |
   | 12  | Suiza |
-  | 13 | Emiratos Árabes Unidos |
+  | 13  | Emiratos Árabes Unidos |
   | 14  | Reino Unido |
 
 
@@ -153,7 +153,7 @@ Seleccione un cuadro para ver las mejoras y recomendaciones.
 
 **Elementos con el estado de mejora**
 
-Selecciona el desplegable junto a la **etiqueta Mejora** a la derecha de la acción de mejora. Verás un resumen rápido y detalles sobre la configuración actual y las acciones de mejora recomendadas. El resumen incluye vínculos directos al Administrador de cumplimiento, la solución aplicable en el centro de Microsoft 365 cumplimiento y documentación relevante.
+Selecciona el desplegable junto a la **etiqueta Mejora** a la derecha de la acción de mejora. Verás un resumen rápido y detalles sobre la configuración actual y las acciones de mejora recomendadas. El resumen incluye vínculos directos al Administrador de cumplimiento, la solución aplicable en el Centro de cumplimiento de Microsoft 365 y documentación relevante.
 
 Al hacer clic en el vínculo Administrador de cumplimiento, se muestra una vista filtrada de todas las acciones de mejora de esa solución que aún no se han implementado. Desde allí, puede ver el número de puntos que puede lograr para aumentar la puntuación de cumplimiento [y](compliance-score-calculation.md)las evaluaciones a las que se aplican, así como las normativas y certificaciones aplicables.
 

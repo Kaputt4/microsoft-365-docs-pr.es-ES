@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams
-ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c6b7413fdd4017fe1211e804c00a2e9c0684468d
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114148"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149123"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Obtener información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)
 
-[Las capacidades de prevención](dlp-learn-about-dlp.md) de pérdida de datos se han ampliado para incluir Microsoft Teams chat y mensajes de canal, incluidos los mensajes de canal privado. Como parte de esta versión, creamos una directiva DLP predeterminada para los clientes por primera vez en el Centro de cumplimiento.
+[Las capacidades de prevención](dlp-learn-about-dlp.md) de pérdida de datos se han ampliado para incluir Microsoft Teams chat y mensajes de canal, incluidos los mensajes de canal privado. Como parte de esta versión, creamos una directiva DLP predeterminada para Microsoft Teams clientes por primera vez en el Centro de cumplimiento.
 
 ## <a name="applies-to"></a>Se aplica a
 
@@ -41,7 +41,7 @@ Cualquier inquilino con licencia con una o varias de las siguientes licencias y 
 
 ## <a name="what-does-the-default-policy-do"></a>¿Qué hace la directiva predeterminada?
 
-La directiva DLP predeterminada realiza un seguimiento de todos los números de tarjeta de crédito compartidos interna y externamente en la organización. Esta directiva está predeterminada para todos los usuarios del espacio empresarial. No genera ninguna sugerencia de directiva para los usuarios finales, pero genera un evento Alert y también desencadena un correo electrónico de baja gravedad para el administrador (agregado en la directiva). El administrador puede ver las actividades y editar los detalles de las directivas iniciando sesión en el Centro de cumplimiento.
+La directiva DLP predeterminada para Teams realiza un seguimiento de todos los números de tarjeta de crédito compartidos interna y externamente en la organización. Esta directiva está predeterminada para todos los usuarios del espacio empresarial. No genera ninguna sugerencia de directiva para los usuarios finales, pero genera un evento Alert y también desencadena un correo electrónico de baja gravedad para el administrador (agregado en la directiva). El administrador puede ver las actividades y editar los detalles de las directivas iniciando sesión en el Centro de cumplimiento.
 
 Los administradores pueden ver esta directiva en la página Directivas de [prevención](https://compliance.microsoft.com/compliancesettings) > centro de cumplimiento.
 

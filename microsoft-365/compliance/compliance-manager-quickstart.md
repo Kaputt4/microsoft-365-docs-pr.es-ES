@@ -2,8 +2,8 @@
 title: Guía de inicio rápido de Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del Administrador de cumplimiento para ayudarle a lo largo de su recorrido de comprensión, configuración y uso del Administrador de cumplimiento.
-ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906032"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149051"
 ---
 # <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
 
@@ -31,7 +31,7 @@ Tanto si va a ir al Administrador de cumplimiento por primera vez, como si está
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>Primera visita: conocer al Administrador de cumplimiento
 
-El Administrador de cumplimiento se encuentra en el Microsoft 365 de cumplimiento en https://compliance.microsoft.com . El administrador global de la organización tendrá que configurar los permisos de usuario y asignar [roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) antes de empezar a usar el Administrador de cumplimiento.
+El Administrador de cumplimiento se encuentra en el Centro de cumplimiento de Microsoft 365 en https://compliance.microsoft.com . El administrador global de la organización tendrá que configurar los permisos de usuario y asignar [roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) antes de empezar a usar el Administrador de cumplimiento.
 
 La primera vez que visite el Administrador de cumplimiento, verá una puntuación de cumplimiento para su organización. El Administrador de cumplimiento ya está evaluando el entorno Microsoft 365 actual con respecto a la línea base de protección de datos. La mejor manera de empezar a familiarizarse con el Administrador de cumplimiento es comprender lo que le muestra, sus elementos clave y cómo personalizar el panel.
 
@@ -63,8 +63,8 @@ Cuando se sienta cómodo al administrar evaluaciones en el Administrador de cump
 
 También puede configurar pruebas automatizadas de todas o un subconjunto de acciones de mejora. Visite los vínculos siguientes para comprender la funcionalidad más avanzada en el Administrador de cumplimiento:
 
-- [Ampliar una evaluación del Administrador de cumplimiento agregando tus propios controles y acciones de mejora](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [Crear su propia evaluación personalizada](compliance-manager-assessments.md#create-your-own-custom-assessment)
+- [Ampliar una plantilla del Administrador de cumplimiento agregando tus propios controles y acciones de mejora](compliance-manager-templates.md#extend-an-assessment-template)
+- [Crear su propia plantilla personalizada](compliance-manager-templates.md#create-an-assessment-template)
 - [Modificar una plantilla existente para agregar o quitar controles y acciones](compliance-manager-templates.md#modify-a-template)
 - [Configurar pruebas automatizadas de acciones de mejora](compliance-manager-setup.md#set-up-automated-testing)
 - [Reasignar acciones de mejora a otro usuario](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

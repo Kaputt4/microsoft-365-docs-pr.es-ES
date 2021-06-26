@@ -2,8 +2,8 @@
 title: Crear y administrar evaluaciones en El Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,27 +14,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: b8051a036f2ffda2f3a2840880318466a2ec71af
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4530f8544834c672b3ae1ebb70625ffe8f2ae4ae
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500644"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148943"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
 **En este artículo:** Obtenga información sobre cómo personalizar el Administrador de cumplimiento para su organización mediante la creación y administración **de evaluaciones.** En este artículo se explica cómo crear evaluaciones, cómo organizarlas en  **grupos,** trabajar con **controles,** aceptar actualizaciones y exportar informes de **evaluación.**
 
-> [!IMPORTANT]
-> Las evaluaciones disponibles para su organización dependen del contrato de licencia. [Revise los detalles](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
-
 ## <a name="introduction-to-assessments"></a>Introducción a las evaluaciones
 
-El Administrador de cumplimiento le ayuda a administrar el cumplimiento de las evaluaciones de las normativas y certificaciones que se aplican a su organización. Las evaluaciones son agrupaciones de controles de un reglamento, estándar o directiva específicos. El Administrador de cumplimiento facilita el seguimiento de su cumplimiento proporcionando evaluaciones predefinidas que cubren una variedad de normativas y certificaciones regionales y del sector.
+El Administrador de cumplimiento le ayuda a crear evaluaciones que evalúen el cumplimiento de las normativas regionales y del sector que se aplican a su organización. Las evaluaciones se basa en el marco de las plantillas de evaluación, que contienen los controles necesarios, las acciones de mejora y las acciones de Microsoft para completar la evaluación. Configurar las evaluaciones más relevantes para su organización puede ayudarle a implementar directivas y procedimientos operativos para limitar el riesgo de cumplimiento.
 
-Cada evaluación se crea a partir de una [plantilla de evaluación](compliance-manager-templates.md). Las plantillas sirven como un marco que contiene los controles necesarios, las acciones de mejora y las acciones de Microsoft para completar la evaluación. Configurar las evaluaciones más relevantes para su organización puede ayudarle a implementar directivas y procedimientos operativos para limitar el riesgo de cumplimiento.
+Todas las evaluaciones se enumeran en la pestaña evaluaciones del Administrador de cumplimiento. Obtenga más información [sobre cómo filtrar la vista de las evaluaciones](compliance-manager-setup.md#assessments-page)e interpretar los estados de estado .
 
-Todas las evaluaciones se enumeran en la página de evaluaciones. Obtenga más información [sobre cómo filtrar la vista de las evaluaciones](compliance-manager-setup.md#assessments-page)e interpretar los estados de estado .
+> [!IMPORTANT]
+> Las plantillas disponibles para su organización para realizar evaluaciones dependen del contrato de licencia. [Revisar los detalles de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="data-protection-baseline-default-assessment"></a>Evaluación predeterminada de línea base de protección de datos
 
@@ -44,36 +42,11 @@ Esta evaluación se usa para calcular la puntuación de cumplimiento inicial la 
 
 El Administrador de cumplimiento se vuelve más útil a medida que crea y administra sus propias evaluaciones para satisfacer las necesidades específicas de su organización.
 
-## <a name="assessment-creation-overview"></a>Introducción a la creación de evaluaciones
-
-Hay tres maneras de configurar evaluaciones:
-
-1. [Use una evaluación predefinida](#use-a-pre-built-assessment).
-2. [Extienda una evaluación predefinida para que se adapte a sus propias necesidades.](#extend-a-pre-built-assessment)
-3. [Cree su propia evaluación personalizada](#create-your-own-custom-assessment).
-
-> [!NOTE]
-> Solo los usuarios que tienen un rol de administrador global, administración del administrador de cumplimiento o evaluador de administrador de cumplimiento pueden crear y modificar evaluaciones. Obtenga más información [sobre roles y permisos](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
-
-**Usar una evaluación predefinida**
-
-Inicia el recorrido de cumplimiento eligiendo una evaluación ya configurada por el Administrador de cumplimiento. Ofrecemos una amplia [](compliance-manager-templates.md) selección de plantillas para normativas y certificaciones que se alinean con industrias, regiones y estándares comunes de protección de datos, como RGPD e ISO 27001. Las plantillas contienen los controles y las acciones de mejora para ayudarle a cumplir los requisitos de una certificación determinada. Se le pedirá que elija una plantilla al empezar a [crear una evaluación](#use-a-pre-built-assessment).
-
-**Ampliar una evaluación predefinida para que se adapte a sus necesidades**
-
-Puede modificar una evaluación del Administrador de cumplimiento,un proceso al que nos referimos como "extensión", agregando sus propios controles y acciones para adaptarse mejor a las necesidades de su organización. Por ejemplo, si generalmente necesita cumplir con HIPAA pero requiere controles de seguridad o protección de datos adicionales, puede ampliar nuestra plantilla HIPAA agregando sus propios controles a ella. Vea las instrucciones para [ampliar una evaluación predefinida](#extend-a-pre-built-assessment).
-
-**Crear su propia evaluación personalizada**
-
-Puede crear su propia evaluación totalmente desde cero para realizar un seguimiento preciso de lo que necesita su organización. Crear su propia evaluación requiere que primero cree su propia plantilla para la evaluación en el Administrador de cumplimiento. Vea las instrucciones para [crear su propia evaluación personalizada.](#create-your-own-custom-assessment)
-
 ## <a name="understand-groups-before-creating-assessments"></a>Comprender grupos antes de crear evaluaciones
 
-Antes de crear o modificar evaluaciones, es importante comprender cómo funcionan los grupos. Al crear una evaluación, deberá asignarla a un grupo durante el proceso. Por eso recomendamos planear una estrategia de agrupación para sus evaluaciones antes de crear evaluaciones.
+Al crear una evaluación, deberá asignarla a un grupo. Los grupos son contenedores que le permiten organizar evaluaciones de una forma lógica, como por año o regulación, o en función de las divisiones o geografías de su organización. Por este motivo, se recomienda planear una estrategia de agrupación antes de crear evaluaciones.
 
-### <a name="what-are-groups"></a>Qué son los grupos
-
-Los grupos son contenedores que permiten organizar evaluaciones. Puede agrupar evaluaciones de una forma lógica, como por año o reglamento, o en función de las divisiones o geografías de su organización. A continuación se muestran ejemplos de dos grupos y sus evaluaciones subyacentes:
+A continuación se muestran ejemplos de dos grupos y sus evaluaciones subyacentes:
 
 - **FFIEC IS assessment 2020**
   - FFIEC IS
@@ -81,136 +54,57 @@ Los grupos son contenedores que permiten organizar evaluaciones. Puede agrupar e
   - ISO 27001:2013
   - ISO 27018:2014
 
-Cuando dos evaluaciones diferentes del mismo grupo comparten acciones de mejora administradas por usted, las actualizaciones que realice en los detalles de implementación o el estado de una acción se sincronizarán automáticamente con la misma acción en cualquier otra evaluación del grupo. Esta sincronización le permite implementar una acción de mejora y cumplir varios requisitos en varias normativas.
+Cuando dos evaluaciones diferentes del mismo grupo comparten acciones de mejora que administra, las actualizaciones que realice en los detalles de implementación o el estado de una acción se sincronizarán automáticamente en todo el grupo. Esta sincronización permite implementar una acción de mejora y cumplir varios requisitos simultáneamente.
 
-### <a name="how-to-create-a-group"></a>Cómo crear un grupo
+### <a name="create-a-group"></a>Crear un grupo
 
-Se crea un grupo durante el proceso de [creación de una nueva evaluación](#to-create-an-assessment).
-
-Los grupos no se pueden crear como entidades independientes. Un grupo debe contener al menos una evaluación. Para crear un grupo, primero debe crear una evaluación para colocarla en el grupo.
+Puede crear un grupo al crear una nueva evaluación. Los grupos no se pueden crear como entidades independientes.
 
 ### <a name="what-to-know-when-working-with-groups"></a>Qué saber al trabajar con grupos
 
+- Un grupo debe contener al menos una evaluación.
 - Los nombres de grupo deben ser únicos en la organización.
 - Los grupos no tienen propiedades de seguridad. Todos los permisos están asociados con evaluaciones.
 - Una vez que agregue una evaluación a un grupo, no se podrá cambiar la agrupación.
-- Los controles de evaluación relacionados en distintas evaluaciones dentro del mismo grupo se actualizan automáticamente cuando se completan.
 - Si agrega una nueva evaluación a un grupo existente, la información común de las evaluaciones de ese grupo se copiará en la nueva evaluación.
+- Los controles de evaluación relacionados en distintas evaluaciones dentro del mismo grupo se actualizan automáticamente cuando se completan.
+- Cuando se realiza un cambio en una mejora que aparece en varios grupos, ese cambio se refleja en todos los casos de esa acción de mejora.
 - Los grupos pueden contener evaluaciones para la misma certificación o reglamento, pero cada grupo solo puede contener una evaluación para un par específico de certificación de productos. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 NIST CSF. Un grupo puede contener varias evaluaciones para el mismo producto solo si la certificación o regulación correspondientes para cada uno es diferente.
 - Al eliminar una evaluación, se rompe la relación entre esa evaluación y el grupo.
-- Los grupos no se pueden eliminar.
-- Cuando se realiza un cambio en una mejora que aparece en varios grupos, ese cambio se refleja en todos los casos de esa acción de mejora.
+- Los grupos no se pueden eliminar manualmente.
 
-## <a name="use-a-pre-built-assessment"></a>Usar una evaluación predefinida
+## <a name="create-assessments"></a>Crear evaluaciones
 
-Hay dos puntos de partida para crear una evaluación a partir de una plantilla del Administrador de cumplimiento.
+> [!NOTE]
+> Solo los usuarios que tienen un rol de administrador global, administración del administrador de cumplimiento o evaluador de administrador de cumplimiento pueden crear y modificar evaluaciones. Obtenga más información [sobre roles y permisos](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-Puede comenzar el proceso desde la página  de evaluaciones seleccionando el botón Agregar evaluación y, a continuación, trabajando en el asistente para la creación de evaluaciones. A continuación se indican los pasos para este proceso.
+Para empezar a crear evaluaciones, siga estos pasos.
 
-También puede empezar desde la página de plantillas de evaluación buscando la plantilla que desee y seleccionándose en la lista para llegar a su página de detalles. En la página de detalles de la plantilla, seleccione **Crear evaluación**. A continuación, escribirás el asistente con la plantilla ya seleccionada.
+1. Sepa a qué grupo asignará la evaluación o estará preparado para crear uno nuevo para esta evaluación.
 
-### <a name="to-create-an-assessment"></a>Para crear una evaluación
+2. Abra el asistente para evaluación. Puede tener acceso a este panel desplegable desde uno de dos lugares:
+    - Vaya a la **página evaluaciones** del Administrador de cumplimiento y seleccione **Agregar evaluación;** o
+    - Busque la plantilla que desea usar en la pestaña plantillas **de** evaluación, vea sus detalles y seleccione **Crear evaluación.** Esto rellenará el campo de selección de plantilla del asistente.
 
-1. Sepa a qué grupo asignará la evaluación o estará preparado para crear uno nuevo para esta evaluación. [Obtenga más información sobre grupos](#understand-groups-before-creating-assessments).  
+3. **Seleccione una plantilla:** si no ha elegido una plantilla en el paso 2, elija una plantilla para que sirva de base para su evaluación. Verá la lista de plantillas divididas en categorías incluidas y premium (vea [Tipos de plantilla](compliance-manager-templates.md#template-availability-and-licensing) para obtener más información). Seleccione el botón de radio junto a la plantilla elegida y, a continuación, **seleccione Siguiente**.
 
-2. Vaya a la **página evaluaciones** del Administrador de cumplimiento y seleccione **Agregar evaluación.** Aparecerá un asistente de evaluación en un panel desplegable grande.
-
-3. **Seleccione una plantilla:** elija una plantilla para que sirva de base para su evaluación. Verá la lista de plantillas divididas en categorías incluidas y premium (vea [Tipos de plantilla](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) para obtener más información). Seleccione el botón de radio junto a la plantilla elegida y, a continuación, **seleccione Siguiente**.
-
-4. **Nombre y grupo:** Escriba un nombre para la evaluación en el **campo Nombre de evaluación.** Los nombres de evaluación deben ser únicos dentro de los grupos. Si el nombre de la evaluación coincide con el nombre de otra evaluación en un grupo determinado, recibirá un error que le pedirá que cree un nombre diferente.
-
-5. Asigne la evaluación a un grupo. Puede:
-    - Seleccione **Usar grupo existente** para asignarlo a un grupo que ya ha creado; o
-    - Seleccione **Crear nuevo grupo** para crear un nuevo grupo y asígnele esta evaluación:
-        - Determina un nombre para el grupo y escribelo en el campo debajo del botón de radio.
-        - Puede copiar **datos de un grupo existente,** como detalles y documentos de implementación y pruebas, seleccionando los cuadros correspondientes.
+4. **Nombre y grupo:** Establezca estas propiedades para identificar la evaluación y asignarla a un grupo.
+    - **Nombre:** escriba un nombre para la evaluación en el **campo Nombre de** evaluación. Los nombres de evaluación deben ser únicos dentro de los grupos. Si el nombre de la evaluación coincide con el nombre de otra evaluación en un grupo determinado, recibirá un error que le pedirá que cree un nombre diferente.
+    - **Grupo:** asigne la evaluación a un grupo. Puede:
+        - Seleccione **Usar grupo existente** para asignarlo a un grupo que ya ha creado; o
+        - Seleccione **Crear nuevo grupo** para crear un nuevo grupo y asígnele esta evaluación:
+            - Determina un nombre para el grupo y escribelo en el campo debajo del botón de radio.
+            - Puede copiar **datos de un grupo existente,** como detalles y documentos de implementación y pruebas, seleccionando los cuadros correspondientes.
 
     Cuando haya terminado, seleccione **Siguiente**.
 
-6. **Revisar y finalizar:** La última pantalla del asistente muestra la plantilla, el nombre y el grupo elegidos para la evaluación. Puede editar cualquiera de estas opciones desde los vínculos de la pantalla, que le llevan de nuevo a los pasos relevantes del asistente. Cuando esté listo, seleccione **Crear evaluación**.
+5. **Revisar y finalizar:** La última pantalla del asistente muestra la plantilla, el nombre y el grupo elegidos para la evaluación. Puede editar cualquiera de estas opciones desde los vínculos de la pantalla, que le llevan de nuevo a los pasos relevantes del asistente. Cuando esté listo, seleccione **Crear evaluación**.
 
-7. En la siguiente pantalla se confirma que ha creado correctamente la nueva evaluación. Seleccione **Listo** para cerrar el asistente y la página de detalles de la nueva evaluación aparecerá en la pantalla.
+6. En la siguiente pantalla se confirma que ha creado correctamente la nueva evaluación. Seleccione **Listo** para cerrar el asistente y la página de detalles de la nueva evaluación aparecerá en la pantalla.
 
 Si ve una pantalla **Error de** evaluación después de seleccionar **Crear** evaluación, seleccione **Volver** a intentar volver a crear la evaluación.
 
 Puede cambiar el nombre de la evaluación después  de crearla seleccionando el botón Editar nombre en la esquina superior derecha de la página de detalles [de la evaluación.](#monitor-assessment-progress-and-controls)
-
-## <a name="extend-a-pre-built-assessment"></a>Extender una evaluación predefinida
-
-Puede modificar una evaluación predefinida agregando sus propios controles y acciones de mejora a la plantilla de la evaluación. Este proceso se denomina "extensión de una plantilla de Microsoft" en el Administrador de cumplimiento. Cuando amplíe la plantilla de una evaluación, recibirá las actualizaciones publicadas por Microsoft, que pueden producirse cuando haya cambios en el producto o la regulación relacionada (vea [Accepting updates to assessments](#accepting-updates-to-assessments)).
-
-Para completar este proceso, empiece en la página **de** plantillas de evaluación en lugar de en la página **de evaluaciones.**
-
-**Antes de empezar**
-
-Para prepararse para este proceso, primero tendrá que ensamblar una hoja de cálculo con un formato especial Excel para importar los datos de plantilla necesarios. Existen requisitos especiales para los archivos [Excel formato usados](compliance-manager-templates.md#formatting-your-template-data-with-excel) en el proceso de extensión. Vea estos puntos adicionales para ayudar a evitar errores en el proceso de importación:
-
-- La hoja de cálculo solo debe contener las acciones y controles que desee agregar a la evaluación. 
-- La hoja de cálculo no puede contener ninguno de los controles o acciones que ya existen en la evaluación que desea modificar.
-- Considere la posibilidad de incluir "extensión" en el título de la plantilla, por ejemplo, "RGPD – extensión [nombre de la empresa]". Esto facilita la identificación en la  lista de la página plantillas de evaluación como distinta de la plantilla estándar proporcionada por Microsoft o una plantilla personalizada con un nombre similar.
-
-Después de dar formato a la hoja de cálculo, siga los pasos siguientes.
-
-**Pasos para ampliar una plantilla del Administrador de cumplimiento**
-
-1. Vaya a la **página Plantillas de evaluación** y seleccione Crear nueva **plantilla.** Se abrirá un asistente para la creación de plantillas.
-
-2. Elija el tipo de plantilla que desea crear. En este caso, seleccione **Extender una plantilla de Microsoft** y, a continuación, Seleccionar plantilla de **Microsoft**.
-
-3. Aparece un panel desplegable de selección de plantilla en el lado derecho de la pantalla, que muestra una lista de todas las plantillas y su estado de activo o inactivo. El **contador de plantillas** activadas muestra cuántas plantillas están actualmente en uso del número total disponible para usar. Si supera el límite, una barra de mensajes le proporcionará aviso. Vea [Tipos de plantilla](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) para obtener más información.
-
-4. Aparece un panel desplegable de selección de plantilla en el lado derecho de la pantalla. Usar **la** búsqueda para aplicar filtros para localizar la plantilla que desee
-
-5. Una vez que encuentre la plantilla, seleccione el botón de radio situado a la izquierda de su nombre y, a continuación, **seleccione Guardar**.
-
-6. En la siguiente pantalla se muestra la plantilla seleccionada. Si es correcto, seleccione **Siguiente**. (Si es incorrecto, **elija Seleccionar una plantilla diferente** para volver a elegir).
-
-7. En la **Upload de** archivos,  seleccione Examinar para buscar y cargar el archivo Excel formato que contiene todos los datos de plantilla necesarios.
-
-8. Si no hay ningún problema con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, **seleccione Upload otro archivo**).
-
-    - Si hay un problema con el archivo, un mensaje de error en la parte superior explica lo que está mal. Tendrás que corregir y volver a cargar el archivo. Los errores se producen si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos.
- 
-9. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Siguiente**. (Si necesita realizar cambios, seleccione **Upload otro archivo**.)
-
-10. La última pantalla confirma que se ha creado una plantilla nueva. Seleccione **Listo** para salir del asistente.
-
-11. Llegarás a la página de detalles de la nueva plantilla. Desde aquí puede crear su evaluación seleccionando **Crear evaluación**. Para obtener instrucciones, comience en el paso #4 en las instrucciones [de creación de evaluaciones anteriores](#to-create-an-assessment).
-
-## <a name="create-your-own-custom-assessment"></a>Crear su propia evaluación personalizada
-
-Crear una evaluación personalizada en el Administrador de cumplimiento requiere que cree su propia plantilla. Para crear su propia plantilla, primero ensamblará una hoja de cálculo Excel formato para importar los datos de plantilla necesarios. También ayuda a decidir con antelación a qué grupo asignará la evaluación al crearla (obtenga más información sobre [los grupos).](#what-are-groups)
-
-**Siga los pasos siguientes para crear la evaluación personalizada:**
-
-1. **Formatee el Excel archivo.** Comience por dar formato a los datos de la plantilla en una Excel hoja de cálculo con [estas instrucciones](compliance-manager-templates.md#formatting-your-template-data-with-excel).
-
-2. **Cree la plantilla** siguiendo [estas instrucciones](compliance-manager-templates.md#create-a-new-template).
-
-3. **Cree la evaluación a** partir de la plantilla. Para empezar, abra la página de detalles de la plantilla  y seleccione **Crear** evaluación, o vaya a la página de evaluaciones y seleccione **Crear evaluación.**
-
-4. Un asistente para la creación de evaluaciones aparecerá en un panel desplegable grande. Desde aquí, puede seguir las instrucciones que comienzan en el paso #3 las instrucciones de creación de [evaluaciones,](#to-create-an-assessment)usando la nueva plantilla personalizada para su evaluación.
-
-## <a name="delete-an-assessment"></a>Eliminar una evaluación
-
-Al eliminar una evaluación, se elimina de la lista de la página de evaluaciones. Tenga en cuenta estos puntos importantes sobre la eliminación de evaluaciones:
-
-- **Eliminar una evaluación es permanente; no se puede recuperar.** Si desea volver a usar la misma evaluación, tendrá que volver a crearla.
-- Si las acciones de mejora de la evaluación no aparecen en ninguna otra evaluación, se eliminarán cuando se elimine la evaluación.
-- Se recomienda [exportar un informe de](#export-an-assessment-report) la evaluación antes de eliminarlo de forma permanente.
-
-Para eliminar una evaluación, siga los pasos siguientes:
-
-1. En la **página de evaluaciones,** seleccione la evaluación que desea eliminar para abrir la página de detalles de esa evaluación.
-
-2. Seleccione **Eliminar evaluación** en la esquina superior derecha de la pantalla.
-
-3. Aparecerá una ventana que le pedirá que confirme que desea eliminar permanentemente la evaluación. Seleccione **Eliminar evaluación** para cerrar la ventana. Recibirá una ventana de confirmación de que la evaluación se eliminó del Administrador de cumplimiento.
-
-Si elimina la única evaluación de un grupo, ese grupo también se elimina del Administrador de cumplimiento.
-
-> [!NOTE]
-> No puede eliminar todas las evaluaciones. Las organizaciones necesitan al menos una evaluación para que el Administrador de cumplimiento funcione correctamente. Si la evaluación que desea eliminar es la única, agregue otra evaluación antes de eliminar la otra evaluación.
 
 ## <a name="monitor-assessment-progress-and-controls"></a>Supervisar el progreso y los controles de evaluación
 
@@ -258,7 +152,7 @@ La pestaña Acciones de Microsoft enumera todas las acciones de la evaluación a
 
 Obtenga más información sobre cómo se realiza un seguimiento y una puntuación de los controles [y las acciones de mejora.](compliance-score-calculation.md)
 
-## <a name="accepting-updates-to-assessments"></a>Aceptar actualizaciones de evaluaciones
+## <a name="accept-updates-to-assessments"></a>Aceptar actualizaciones de evaluaciones
 
 Cuando una actualización esté disponible para una evaluación, verá una notificación y tendrá la opción de aceptar la actualización o aplazar la actualización más adelante.
 
@@ -310,3 +204,24 @@ Si está en medio de completar una evaluación, es posible que desee asegurarse 
 Puede exportar una evaluación a un archivo Excel para las partes interesadas en el cumplimiento de la organización o para auditores y reguladores externos. En la página de detalles de la evaluación, seleccione el botón **Generar** informe cerca de la parte superior de la página, que crea un archivo Excel que puede guardar y compartir.
 
 El informe es una instantánea de la evaluación a partir de la fecha y hora de la exportación. Contiene los detalles de los controles administrados por usted y Microsoft, incluidos el estado de implementación, la fecha de prueba y los resultados de la prueba.
+
+## <a name="delete-an-assessment"></a>Eliminar una evaluación
+
+Al eliminar una evaluación, se elimina de la lista de la página de evaluaciones. Tenga en cuenta estos puntos importantes sobre la eliminación de evaluaciones:
+
+- **Eliminar una evaluación es permanente; no se puede recuperar.** Si desea volver a usar la misma evaluación, tendrá que volver a crearla.
+- Si las acciones de mejora de la evaluación no aparecen en ninguna otra evaluación, se eliminarán cuando se elimine la evaluación.
+- Se recomienda [exportar un informe de](#export-an-assessment-report) la evaluación antes de eliminarlo de forma permanente.
+
+Para eliminar una evaluación, siga los pasos siguientes:
+
+1. En la **página de evaluaciones,** seleccione la evaluación que desea eliminar para abrir la página de detalles de esa evaluación.
+
+2. Seleccione **Eliminar evaluación** en la esquina superior derecha de la pantalla.
+
+3. Aparecerá una ventana que le pedirá que confirme que desea eliminar permanentemente la evaluación. Seleccione **Eliminar evaluación** para cerrar la ventana. Recibirá una ventana de confirmación de que la evaluación se eliminó del Administrador de cumplimiento.
+
+Si elimina la única evaluación de un grupo, ese grupo también se elimina del Administrador de cumplimiento.
+
+> [!NOTE]
+> No puede eliminar todas las evaluaciones. Las organizaciones necesitan al menos una evaluación para que el Administrador de cumplimiento funcione correctamente. Si la evaluación que desea eliminar es la única, agregue otra evaluación antes de eliminar la otra evaluación.

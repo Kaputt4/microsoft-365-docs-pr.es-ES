@@ -2,8 +2,8 @@
 title: Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos y sugiere acciones recomendadas para ayudar a solucionar los riesgos.
-ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc1919f63716dfa79274a5cf7016ef07f2f36f92
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244400"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148955"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "52244400"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novedades: la versión de GA del Administrador de cumplimiento
 
-El Administrador de cumplimiento ya está disponible generalmente (GA) como una solución de administración de cumplimiento integral dentro del centro de Microsoft 365 [cumplimiento.](microsoft-365-compliance-center.md) Con esta versión, el Administrador de cumplimiento completa la transición desde su ubicación anterior en el Portal de confianza de servicio de Microsoft. El Administrador de cumplimiento también está disponible para los Community (GCC) moderados, GCC altos y del Departamento de Defensa (DoD).
+El Administrador de cumplimiento ya está disponible en general (GA) como una solución de administración de cumplimiento integral dentro del [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md). Con esta versión, el Administrador de cumplimiento completa la transición desde su ubicación anterior en el Portal de confianza de servicio de Microsoft. El Administrador de cumplimiento también está disponible para los Community (GCC) moderados, GCC altos y del Departamento de Defensa (DoD).
 
 Lo que comenzó como la vista previa pública de la puntuación de cumplimiento ha evolucionado hasta convertirse en una herramienta centralizada con capacidades de administración de cumplimiento mejoradas y mayor facilidad de uso.  La versión de ga ofrece una colección más grande de evaluaciones predefinidas para ayudarle a escalar sus actividades de cumplimiento.
 
@@ -45,7 +45,7 @@ Vea el vídeo siguiente para obtener información sobre cómo el Administrador d
 
 ## <a name="what-is-compliance-manager"></a>Qué es el Administrador de cumplimiento
 
-[Microsoft Compliance Manager es](https://compliance.microsoft.com/compliancemanager) una característica del centro de cumplimiento [Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo de su recorrido de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, mantenerse al día con las normativas y certificaciones, y los informes a los auditores.
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica de la Centro de cumplimiento de Microsoft 365 [que](microsoft-365-compliance-center.md) le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo de su recorrido de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, mantenerse al día con las normativas y certificaciones, y los informes a los auditores.
 
 El Administrador de cumplimiento ayuda a simplificar el cumplimiento y reducir los riesgos proporcionando:
 

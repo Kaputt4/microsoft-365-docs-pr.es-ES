@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Este artículo contiene vínculos a información sobre planeación de red, pruebas y migración a Office 365.
-ms.openlocfilehash: 99bcc1bd0447b192860fc0bcc67fc18d87c2d5fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aed8bacd4dc08aa6d77ad0c530e721ac9d383bf5
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923593"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149111"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planeación de la migración y la red para Office 365
 
@@ -98,18 +98,16 @@ Estos temas contienen información detallada Office 365 de referencia de red.
     
 - [Redes de entrega de contenido](content-delivery-networks.md)
     
-- [Registros externos del Sistema de nombres de dominio para Office 365](external-domain-name-system-records.md)
+- [Registros externos del Sistema de nombres de dominio para Office 365](external-domain-name-system-records.md)
     
 - [Compatibilidad con IPv6 en servicios de Office 365](ipv6-support.md)
     
 - [Principios de conectividad de red de Office 365](./microsoft-365-network-connectivity-principles.md)
     
-- [Office 365 de vídeo con preguntas más frecuentes (PREGUNTAS FRECUENTES)](office-365-video-networking-faq.md)
-    
 - [Planificación de dispositivos de red que se conecten a servicios de Office 365](plan-for-network-devices.md)
     
 - [Guías de instalación para Office 365 servicios](setup-guides-for-microsoft-365.md)
  
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

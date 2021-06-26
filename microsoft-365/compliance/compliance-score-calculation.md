@@ -2,8 +2,8 @@
 title: Cálculo de la puntuación de cumplimiento
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprenda cómo Microsoft Compliance Manager calcula una puntuación personalizada en función de las acciones realizadas para abordar los riesgos y mejorar su posición de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4e1e3f4b90b0a5e83a1e068cd30f76b3a8c7bb22
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052118"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149171"
 ---
 # <a name="compliance-score-calculation"></a>Cálculo de la puntuación de cumplimiento
 
@@ -110,13 +110,13 @@ A las acciones se les asigna un valor de puntuación en función de si son oblig
   
 Cada acción tiene un valor asignado en el Administrador de cumplimiento en función del riesgo que representa:
 
-|**Tipo**|**Puntuación asignada**|
+|**Type**|**Puntuación asignada**|
 |:-----|:-----|
 | Obligatorio preventivo | 27 |
 | Discrecional preventiva | 9  |
-| Detective obligatorio | 3 |
-| Detective discrecional | 1 |
-| Obligatoria correctiva | 3 |
-| Discrecionalidad correctiva | 1 |
+| Detective obligatorio | 3  |
+| Detective discrecional | 1  |
+| Obligatoria correctiva | 3  |
+| Discrecionalidad correctiva | 1  |
   
 ![Valores de punto de acción del Administrador de cumplimiento](../media/compliance-score-action-scoring.png "Valores de punto de acción del Administrador de cumplimiento")

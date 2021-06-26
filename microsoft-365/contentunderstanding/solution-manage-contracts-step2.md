@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Microsoft Teams para crear el canal de administración de contratos mediante una solución Microsoft 365 contrato.
-ms.openlocfilehash: 099487279482385760e05d9b166ae80c665d931e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 7c7d3ef30d376e14e033243413637cdb51ba548a
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054744"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148979"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Paso 2. Usar Microsoft Teams para crear el canal de administración de contratos
 
@@ -139,23 +139,23 @@ En esta sección se define cómo se mostrará "Cliente" en la tarjeta y se usar�
 En esta sección se define cómo se mostrará el "contratista" en la tarjeta y se usará el valor para el contrato específico.
 
 ```JSON
-                      {
-                        "elmType": "div",
-                        "style": {
-                          "color": "#767676",
-                          "font-size": "12px"
-                        },
-                        "txtContent": "Client"
-                      },
-                      {
-                        "elmType": "div",
-                        "style": {
-                          "margin-bottom": "12px",
-                          "font-size": "16px",
-                          "font-weight": "600"
-                        },
-                        "txtContent": "[$Client]"
-},
+                        {
+                            "elmType": "div",
+                            "txtContent": "Contractor",
+                            "style": {
+                              "color": "#767676",
+                              "font-size": "12px",
+                              "margin-bottom": "2px"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "margin-bottom": "12px",
+                              "font-size": "14px"
+                            },
+                            "txtContent": "[$Contractor]"
+                          },
 ```
 
 ### <a name="fee-amount"></a>Importe de la cuota
