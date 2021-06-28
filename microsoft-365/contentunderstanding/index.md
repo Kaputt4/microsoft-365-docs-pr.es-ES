@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre cómo encontrar recursos de Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0daad53e1f6a84f0399c3bfcfb48b92db547f64b
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: a3bd14c379425573ee7ad57604cc4cbb706741b8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657626"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149015"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introducción a Microsoft SharePoint Syntex
 
@@ -56,6 +56,7 @@ Obtenga más información sobre cómo usar e implementar SharePoint Syntex en su
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
 |Obtenga información acerca de cómo empezar a planear el uso de SharePoint Syntex |[Adopción de SharePoint Syntex: introducción](./adoption-getstarted.md)| 
+|Vea escenarios de ejemplo para tener ideas sobre cómo puede usar SharePoint Syntex en su organización |[Escenarios y casos de uso de Microsoft SharePoint Syntex](./adoption-scenarios.md)| 
 |Obtener información sobre cómo usar SharePoint Syntex para automatizar procesos de documentos |[Administrar contratos con una solución de Microsoft 365](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
