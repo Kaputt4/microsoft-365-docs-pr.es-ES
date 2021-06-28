@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3f9899726838caca678542e17206dae038c39a3d
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770678"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169573"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit del laboratorio de implementación de Office 365 y Windows 10
 
@@ -55,9 +55,11 @@ El laboratorio resultante está diseñado para conectarse a pruebas para:
 Las guías de laboratorio detalladas le llevarán a través de varios escenarios de implementación y administración. Se han actualizado las prácticas para las versiones más recientes de Intune y Configuration Manager 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Planeación y preparación de infraestructura 
+
 - Análisis de escritorio 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Cargas de trabajo de conexión, administración y conmutación de inquilinos 
+- ¡NUEVO! Adjunte y co-administración de inquilinos
+- ¡NUEVO! Análisis de puntos de conexión 
 - Acceso remoto (VPN) 
 
 ### <a name="prepare-configuration"></a>Preparar configuración   
@@ -91,6 +93,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 - Enterprise implementación administrada mediante Microsoft Intune  
 - Implementación y administración de LOB con Microsoft Intune
 - Implementar Microsoft Teams
+- ¡NUEVO! Filtros de asignación  
 
 ### <a name="deploy-windows-virtual-desktop"></a>Implementar Windows Escritorio virtual  
 

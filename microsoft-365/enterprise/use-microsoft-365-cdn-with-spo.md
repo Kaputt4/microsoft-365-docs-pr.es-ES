@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Obtenga información sobre cómo usar el Office 365 Content Delivery Network (CDN) para acelerar la entrega de los activos SharePoint Online.
-ms.openlocfilehash: 6819f627d3590cd2739b36cb1bc303f197d6aaa5
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: e6cce93be0e8d893d68ae8bcdb15fde325a2cb59
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570410"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169561"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -898,7 +898,7 @@ Si desea usar la dirección URL completa para el activo en lugar de una ruta de 
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> En general, no debe codificar las direcciones URL directamente a los activos de la CDN. Sin embargo, puede crear manualmente direcciones URL para activos en orígenes públicos si es necesario. Para obtener más información, [vea Hardcoding CDN URL for public assets](use-microsoft-365-cdn-with-spo.md).
+> En general, no debe codificar las direcciones URL directamente a los activos de la CDN. Sin embargo, puede crear manualmente direcciones URL para activos en orígenes públicos si es necesario. Para obtener más información, [vea Hardcoding CDN URL for public assets](use-microsoft-365-cdn-with-spo.md#constructing-cdn-urls-for-public-assets).
 
 Para obtener información sobre cómo comprobar que los activos se sirven desde el CDN, vea How [do I confirm that assets are being served by the CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) in [Troubleshooting the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting).
 
@@ -1045,7 +1045,7 @@ Puede elegir trabajar con el Office 365 CDN mediante el módulo de **PowerShell*
 + [Introducción al Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 + [Instalar Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Redes de entrega de contenido](./content-delivery-networks.md)
 

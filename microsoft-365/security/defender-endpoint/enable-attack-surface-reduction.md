@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: b4040a60e59f3256b69f90d33af6f7543e50784e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984801"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169609"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar las reglas de la reducción de superficie expuesta a ataques
 
@@ -35,7 +35,9 @@ ms.locfileid: "52984801"
 
 [Las reglas de reducción de superficie de](attack-surface-reduction.md) ataque (reglas ASR) ayudan a evitar acciones que el malware suele abusar de dispositivos y redes.
 
-**Requisitos** Puedes establecer reglas de reducción de superficie de ataque para dispositivos que ejecutan cualquiera de las siguientes ediciones y versiones de Windows:
+## <a name="requirements"></a>Requisitos
+
+Puedes establecer reglas de reducción de superficie de ataque para dispositivos que ejecutan cualquiera de las siguientes ediciones y versiones de Windows:
 
 - Windows 10 Pro versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows 10 Enterprise, versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
@@ -137,7 +139,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > ![Configuración de URI de OMA de MEM](images/mem05-add-row-oma-uri.png)
 
-6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, haga clic **en Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
+6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, haga clic **en Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realice una de las siguientes acciones:
 
    - Haga **clic en Seleccionar etiquetas de ámbito,** seleccione la etiqueta de ámbito (opcional) y, a continuación, haga clic en **Siguiente**.
    - O haga clic en **Siguiente**

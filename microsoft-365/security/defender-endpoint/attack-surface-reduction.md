@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: eadca063d50bf1f969f1bb247b6e56d8ec46a6e0
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096737"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169585"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de superficie de ataque para evitar infecciones de malware
 
@@ -51,6 +51,8 @@ Puedes evaluar cómo una regla de reducción de superficie de ataque puede afect
 :::image type="content" source="images/asrrecommendation.png" alt-text="Reco de seguridad para la regla de reducción de superficie de ataque":::
 
 En el panel de detalles de recomendación, comprueba el impacto del usuario para determinar qué porcentaje de dispositivos pueden aceptar una nueva directiva que habilite la regla en modo de bloqueo sin afectar negativamente a la productividad.
+
+Consulta [Requisitos](enable-attack-surface-reduction.md#requirements) en el artículo "Habilitar reglas de reducción de superficie de ataque" para obtener información sobre los sistemas operativos compatibles.
 
 ## <a name="audit-mode-for-evaluation"></a>Modo auditoría para evaluación
 
@@ -145,7 +147,7 @@ Puedes revisar el registro de eventos Windows para ver los eventos generados por
 
 4. Seleccione el archivo *cfa-events.xml* desde donde se extrajo. Como alternativa, [copie el XML directamente](event-views.md).
 
-5. Haga clic en **Aceptar**.
+5. Seleccione **Aceptar**.
 
 Puede crear una vista personalizada que filtra los eventos para mostrar solo los siguientes eventos, todos ellos relacionados con el acceso controlado a carpetas:
 
@@ -165,22 +167,22 @@ Si está configurando reglas de reducción de superficie de ataque mediante la d
 
 |Nombre de regla|GUID|Exclusiones & carpetas de archivos|Sistema operativo mínimo compatible|
 |---|:---:|---|---|
-|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior) |
-|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior) |
+|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
 |[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|No admitido|[Windows 10 versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) (compilación 18362) o posterior|
-|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Compatible|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Compatible.|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
 |
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquear el uso indebido de controladores firmados vulnerables explotados
