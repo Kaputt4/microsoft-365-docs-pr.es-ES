@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: f882a9a215f331930de7473d6bf057a3d45bc50e
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 9337bddd87dd24d42b4d06fe77225901701cbdee
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137696"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149183"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -298,7 +298,7 @@ Use el siguiente flujo para comprender los resultados de la retención y elimina
   
 Explicación de los cuatro niveles diferentes:
   
-1. **La retención gana a la eliminación.** El contenido no se eliminará permanentemente cuando también tenga configuraciones de retención para conservarlo. Aunque este principio garantiza que el contenido se conserve por motivos de cumplimiento, el proceso de eliminación se sigue iniciando y puede quitar el contenido de la vista del usuario. Por ejemplo, un documento de SharePoint se mueve de la carpeta original a la carpeta Conservación de documentos. Sin embargo, se suspende la eliminación permanente. Para obtener más información sobre cómo y dónde se conservará el contenido, use los vínculos siguientes para cada carga de trabajo:
+1. **La retención gana a la eliminación.** El contenido no se eliminará permanentemente cuando también tenga configuraciones de retención para conservarlo. Aunque este principio garantiza que el contenido se conserve por motivos de cumplimiento, el proceso de eliminación se sigue iniciando y puede quitar el contenido de la vista y las búsquedas del usuario. Por ejemplo, un documento en SharePoint se mueve de la carpeta original a la carpeta Conservación de documentos. Sin embargo, se suspende la eliminación permanente. Para obtener más información sobre cómo y dónde se conserva el contenido, use los siguientes vínculos para cada carga de trabajo:
     
     - [Obtenga información acerca de cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [Cómo funciona la retención con Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
@@ -307,7 +307,7 @@ Explicación de los cuatro niveles diferentes:
     
     Ejemplo: un mensaje de correo electrónico está sujeto a una directiva de retención para Exchange que está configurada para eliminar elementos después de tres años y también tiene una etiqueta de retención aplicada que está configurada para conservar los elementos durante cinco años.
     
-    El mensaje de correo electrónico se conserva durante cinco años, ya que esta acción de retención tiene prioridad sobre la eliminación. El mensaje de correo electrónico se elimina luego permanentemente al final de los cinco años debido a la acción de eliminación.
+    El mensaje de correo electrónico se conserva durante cinco años, ya que esta acción de retención tiene prioridad sobre la eliminación. El mensaje de correo electrónico se elimina permanentemente al final de los cinco años debido a la acción de eliminación que se suspendió mientras la acción de retención estaba en vigor.
 
 2. **El período de retención más largo gana**. Si el contenido está sujeto a varias configuraciones de retención que conservan contenido durante distintos períodos de tiempo, el contenido se conservará hasta el final del período de retención más largo.
     
