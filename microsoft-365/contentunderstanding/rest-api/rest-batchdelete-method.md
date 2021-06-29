@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Use la API de REST para quitar un modelo de comprensión mediante documentos de una o más bibliotecas.
-ms.openlocfilehash: 8c7aeb449da161fe49050631643c63c93268a13f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904276"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177242"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -44,18 +44,43 @@ Ninguno
 
 | Nombre | Obligatorio | Tipo | Descripción |
 |--------|-------|--------|------------|
-|ModelUniqueId|sí|cadena|El Id. único del archivo de modelo.|
-TargetSiteUrl|sí|cadena|La dirección URL completa del sitio de biblioteca de destino.|
-TargetWebServerRelativeUrl|sí|cadena|La dirección URL relativa del servidor de la Web de la biblioteca de destino.|
-TargetLibraryServerRelativeUrl|sí|cadena|La dirección URL relativa al servidor de la biblioteca de destino.|
-ViewOption|no|string|Especifica si se debe establecer la nueva vista de modelo como el valor predeterminado de la biblioteca.|
+|Publicaciones|sí|MachineLearningPublicationEntityData[]|Colección de MachineLearningPublicationEntityData, cada una de las cuales especifica el modelo y la biblioteca de documentos de destino.|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Nombre | Obligatorio | Tipo | Descripción |
+|--------|-------|--------|------------|
+|ModelUniqueId|sí|string|El Id. único del archivo de modelo.|
+|TargetSiteUrl|sí|string|La dirección URL completa del sitio de biblioteca de destino.|
+|TargetWebServerRelativeUrl|sí|string|La dirección URL relativa del servidor de la Web de la biblioteca de destino.|
+|TargetLibraryServerRelativeUrl|sí|string|La dirección URL relativa al servidor de la biblioteca de destino.|
 
 ## <a name="response"></a>Respuesta
 
 | Nombre   | Tipo  | Descripción|
 |--------|-------|------------|
-|200 Correcto| |Correcto|
+|200 Correcto||Se trata de una API personalizada para admitir la eliminación de un modelo de varias bibliotecas de documentos. En caso de éxito parcial, se podría devolver el 200 OK y el llamador debe inspeccionar el cuerpo de la respuesta para comprender si el modelo se ha quitado correctamente de una biblioteca de documentos.|
 
+## <a name="response-body"></a>Cuerpo de la respuesta
+| Nombre   | Tipo  | Descripción|
+|--------|-------|------------|
+|TotalSuccesses|int|El número total de un modelo que se elimina correctamente de una biblioteca de documentos.|
+|TotalFailures|int|Número total de un modelo que no se puede quitar de una biblioteca de documentos.|
+|Detalles|MachineLearningPublicationResult[]|Colección de MachineLearningPublicationResult, cada una de las cuales especifica el resultado detallado de quitar el modelo de la biblioteca de documentos.|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| Nombre   | Tipo  | Descripción|
+|--------|-------|------------|
+|StatusCode|int|El código de estado HTTP.|
+|ErrorMessage|string|Mensaje de error que indica el problema al aplicar el modelo a la biblioteca de documentos.|
+|Publicación|MachineLearningPublicationEntityData|Especifica la información del modelo y la biblioteca de documentos de destino.| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Nombre | Tipo | Descripción |
+|--------|--------|------------|
+|ModelUniqueId|string|El Id. único del archivo de modelo.|
+|TargetSiteUrl|string|La dirección URL completa del sitio de biblioteca de destino.|
+|TargetWebServerRelativeUrl|string|La dirección URL relativa del servidor de la Web de la biblioteca de destino.|
+|TargetLibraryServerRelativeUrl|string|La dirección URL relativa al servidor de la biblioteca de destino.|
 
 ## <a name="examples"></a>Ejemplos
 
@@ -66,28 +91,22 @@ En este ejemplo, el Id. del modelo de comprensión mediante documentos del contr
 #### <a name="sample-request"></a>Solicitud de muestra
 
 ```HTTP
-{
-    "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"
-    },
-    "Publications": {
-        "results": [
-            {
-                "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc",
-                "TargetSiteUrl": "https://contoso.sharepoint.com/sites/repository/",
-                "TargetWebServerRelativeUrl": "/sites/repository",
-                "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
-                "ViewOption": "NewViewAsDefault"
-            }
-        ]
-    }
-}
+{ 
+    "publications": [ 
+        { 
+            "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc", 
+            "TargetSiteUrl": "https://constco.sharepoint-df.com/sites/docsite", 
+            "TargetWebServerRelativeUrl": "/sites/docsite ", 
+            "TargetLibraryServerRelativeUrl": "/sites/dcocsite/joedcos" 
+        } 
+    ] 
+} 
 ```
 
 
 #### <a name="sample-response"></a>Respuesta de muestra
 
-En la respuesta, TotalFailures y TotalSuccesses hacen referencia al número de errores y éxitos del modelo que se aplica a las bibliotecas especificadas.
+En la respuesta, TotalFailures y TotalSuccesses hacen referencia al número de errores y éxitos del modelo que se quita de las bibliotecas especificadas.
 
 **Código de estado:** 200
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137780"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169621"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -89,6 +89,7 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 |Restringir por ubicación|No |Sí |
 |Condiciones: clasificadores que se pueden entrenar|Sí |No |
 |Condiciones: opciones de uso compartido y opciones adicionales para el correo electrónico|No |Sí |
+|Condiciones: excepciones|No |Sí (solo correo electrónico) |
 |Recomendaciones, información sobre herramientas de directiva y sustituciones de usuarios|Sí |No |
 |Modo de simulación|No |Sí |
 |Datos adjuntos de Exchange verificados por condiciones|No | Sí|
@@ -297,7 +298,17 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     - Los datos adjuntos están protegidos con contraseña
     - No se pudo digitalizar algún contenido de los datos adjuntos del correo
     - No se pudo completar el análisis de algún contenido de los datos adjuntos del correo
-
+    - El encabezado coincide con patrones
+    - El asunto coincide con patrones
+    - La dirección del destinatario contiene palabras
+    - La dirección del destinatario coincide con patrones
+    - La dirección del remitente coincide con patrones
+    - El dominio del remitente es
+    - El destinatario es un miembro de
+    - El remitente es
+    
+    Para cada una de estas condiciones, puede especificar excepciones.
+    
 8. En función de las opciones anteriores, ahora tendrá la oportunidad de crear nuevas reglas mediante condiciones y excepciones.
     
     Las opciones de configuración para los tipos de información confidencial son las mismas que las seleccionadas para el etiquetado automático para las aplicaciones de Office. Si necesita más información, consulte [Configuración de tipos de información confidencial para una etiqueta](#configuring-sensitive-info-types-for-a-label).

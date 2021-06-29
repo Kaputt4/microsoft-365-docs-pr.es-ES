@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Use la API de REST para crear una solicitud para clasificar uno o más archivos con un modelo de comprensión mediante documentos entrenado.
-ms.openlocfilehash: 6a218db181368c2837d570062b6101bc3bacfb05
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 3a796bcdb38a9a6930b51f7d585febb69082732e
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904279"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177086"
 ---
 # <a name="create-classification-request"></a>Crear solicitud de clasificación
 
@@ -45,7 +45,7 @@ Ninguno
 
 |Nombre    |Tipo   |Descripción |
 |--------|-------|------------|
-|_metadata|cadena |Establezca la meta del objeto en SPO. Use siempre el valor: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}. |
+|_metadata|cadena |Establezca la meta del objeto en SPO. Use siempre el valor: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"}. |
 |TargetSiteId|guid|El Id. del sitio donde se encuentra el archivo que se clasificará.|
 |TargetWebId|guid|El Id. de la web en la que se encuentra el archivo que se clasificará.|
 |TargetUniqueId|guid|El Id. del archivo que se clasificará.|
@@ -65,7 +65,7 @@ Ninguno
 ```
 {
     "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
+        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"
     },
     "TargetSiteId": "f686e63b-aba7-48e5-97c7-68c4c1df292f",
     "TargetWebId": "66d6b64d-6f88-4dd9-b3db-47e6f00c53e8",

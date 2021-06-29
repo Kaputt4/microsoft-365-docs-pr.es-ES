@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053076"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169597"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -116,7 +116,7 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 ### <a name="retention-policy-for-yammer-locations"></a>Directiva de retención para ubicaciones de Yammer
 
 > [!NOTE]
-> Las directivas de retención de Yammer están en versión preliminar.
+> Las directivas de retención de Yammer están en versión preliminar y actualmente no informan a los usuarios cuando los mensajes se eliminan como resultado de una directiva de retención.
 >
 > Para usar esta característica, la red de Yammer debe estar en [Modo nativo](/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
 
