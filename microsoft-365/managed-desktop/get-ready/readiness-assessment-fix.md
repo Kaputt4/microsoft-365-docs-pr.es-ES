@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5a22996ce9e39dc16191ddddc6aa9393de557bbc
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579415"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177578"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -65,6 +65,14 @@ Al menos un conector de certificado tiene un error. Si necesita este conector pa
 **Advertencia**
 
 Tiene al menos un conector de certificado y no se notifican errores. Sin embargo, para preparar la implementación, es posible que deba crear un perfil para volver a usar el conector para Escritorio administrado de Microsoft dispositivos. Para obtener más información, vea [Prepare certificates and network profiles for Escritorio administrado de Microsoft](certs-wifi-lan.md).
+
+### <a name="company-portal"></a>Portal de empresa
+
+Escritorio administrado de Microsoft requiere que los administradores de TI instalen Portal de empresa de Intune para sus usuarios con Escritorio administrado de Microsoft dispositivos. 
+
+**No preparado**
+
+No tiene instalado Portal de empresa para los usuarios. Compra Portal de empresa y fuerza una sincronización entre Intune y Microsoft Store para Empresas. Para obtener más información, vea [Install Portal de empresa de Intune on devices](../get-started/company-portal.md).
 
 
 ### <a name="conditional-access-policies"></a>Directivas de acceso condicional
@@ -218,15 +226,15 @@ Puede solicitar al representante de la cuenta microsoft una consulta en Microsof
 
 ### <a name="windows-hello-for-business"></a>Windows Hello para empresas
 
-Escritorio administrado de Microsoft requiere que Windows hello para empresas esté habilitado.
+Escritorio administrado de Microsoft requiere que Windows Hello para empresas esté habilitada.
 
 **No preparado**
 
-Windows Hello para empresas está deshabilitado. Para habilitarla, siga los pasos descritos [en Crear una Windows de Hello para empresas](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
+Windows Hello para empresas está deshabilitado. Para habilitarla, siga los pasos descritos en [Crear una directiva Windows Hello para empresas](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
 
 **Advertencia**
 
-Windows Hello para empresas no está configurado. Para habilitarlo, siga los pasos descritos en [Crear una Windows directiva Hello for Business](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
+Windows Hello para empresas no está configurado. Para habilitarla, siga los pasos descritos en [Crear una Windows Hello directiva para empresas](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10 anillos de actualización

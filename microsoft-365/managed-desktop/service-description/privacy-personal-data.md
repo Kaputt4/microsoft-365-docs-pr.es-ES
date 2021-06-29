@@ -12,140 +12,75 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861688"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177482"
 ---
-# <a name="privacy-and-personal-data"></a>Privacidad y datos personales
+# <a name="overview"></a>Información general
 
-Los usuarios pueden recibir, transmitir y almacenar datos en dispositivos administrados por Escritorio administrado de Microsoft. Confían en que la privacidad de los datos está protegida y se usa solo de forma coherente con sus expectativas. En este artículo se explica Escritorio administrado de Microsoft recopila, almacena, retiene, procesa, protege, comparte, audita y exporta datos personales. También aprenderás cómo un administrador puede ver, corregir y eliminar datos personales.
+Escritorio administrado de Microsoft es un servicio de TI como servicio (ITaaS) para clientes de nube empresariales diseñado para mantener los dispositivos de Windows de los empleados implementados y actualizados. También proporciona operaciones y administración de servicios de TI, supervisa la seguridad y la respuesta a incidentes, así como proporciona soporte al usuario. Esta documentación proporciona detalles adicionales sobre la plataforma de datos y el cumplimiento de la privacidad para Escritorio administrado de Microsoft.
 
-Escritorio administrado de Microsoft no usa datos personales recopilados como parte de la prestación del servicio con fines de generación de perfiles, publicidad o marketing.
+## <a name="microsoft-managed-desktop-data-sources-and-purpose"></a>Escritorio administrado de Microsoft y propósito de los orígenes de datos
 
-## <a name="data-collection-of-microsoft-managed-desktop"></a>Colección de datos de Escritorio administrado de Microsoft
+Escritorio administrado de Microsoft proporciona su servicio a los clientes empresariales y administra correctamente los dispositivos inscritos de los clientes mediante datos de varios orígenes. Estos orígenes, incluidos Azure Active Directory, Microsoft Intune, Microsoft Windows 10 y Microsoft Defender para endpoint, proporcionan una vista completa de los dispositivos que Escritorio administrado de Microsoft administra. El servicio también usa estas servicios Microsoft para habilitar Escritorio administrado de Microsoft para proporcionar funcionalidades de ITaaS:
 
-Cuando los usuarios inscriben dispositivos corporativos en Escritorio administrado de Microsoft, la recopilación de datos se controla , en la capa técnica, mediante Windows y Microsoft Intune. Estos orígenes recopilan datos personales sobre los dispositivos de los usuarios, como los nombres de dispositivo de Escritorio administrado de Microsoft para poder identificar el dispositivo que se va a administrar y proporcionar con las experiencias Escritorio administrado de Microsoft usuario.
+- [Microsoft Windows 10 Enterprise:](/windows/windows-10/) para administrar la experiencia de configuración de dispositivos, administrar conexiones a otros servicios y soporte operativo para profesionales de TI.
+- [Windows update para](/windows/deployment/update/waas-manage-updates-wufb) empresas: usa Windows 10 Enterprise de diagnóstico para proporcionar información adicional sobre Windows 10 actualización. 
+- [Microsoft Endpoint Manager:](/mem/endpoint-manager-overview) para la administración de dispositivos y para mantener los datos seguros.
+  - [Microsoft Azure Active Directory:](/azure/active-directory/) para la autenticación y la identificación de todas las cuentas de usuario. 
+  - [Microsoft Intune:](/mem/intune/) para distribuir configuraciones de dispositivos, administración de dispositivos y administración de aplicaciones.
+  - [Endpoint Analytics:](/mem/analytics/overview) para obtener información analítica sobre el uso de dispositivos y aplicaciones.
+  - [Windows Autopilot:](/microsoft-365/windows/windows-autopilot) para el aprovisionamiento e implementación de dispositivos.
+  - [Microsoft Defender para endpoint:](/microsoft-365/security/defender-endpoint/) proporciona servicios de seguridad como la supervisión de seguridad de dispositivos y los datos de inteligencia de seguridad.
+- [Escritorio administrado de Microsoft:](https://endpoint.microsoft.com/#home) datos proporcionados por el cliente o generados por el servicio durante la ejecución del servicio.
+- [Microsoft 365 aplicaciones para empresas:](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1) para la administración de Aplicaciones Microsoft 365.
 
-Escritorio administrado de Microsoft recopila datos por sí mismo para proporcionar su servicio (excepto para la información de contacto [del administrador de TI.](#it-admin-contact-information) En su lugar, Escritorio administrado de Microsoft reutiliza los datos que otros orígenes, como Windows y Microsoft Intune, ya han recopilado. Escritorio administrado de Microsoft datos que estos servicios recopilan de dispositivos inscritos:
+## <a name="microsoft-managed-desktop-data-process-and-storage"></a>Escritorio administrado de Microsoft y almacenamiento de datos
 
-- Windows datos de diagnóstico de dispositivos administrados por Escritorio administrado de Microsoft se envían a los almacenes de datos de diagnóstico Windows microsoft.
-- Escritorio administrado de Microsoft administración [moderna para](/learn/modules/introduction-to-modern-management-in-microsoft-365/) administrar los dispositivos inscritos. Como parte de la "administración moderna", los dispositivos deben estar inscritos en el Azure Active Directory.
-- Para distribuir su configuración altamente optimizada y segura a los dispositivos inscritos, Escritorio administrado de Microsoft usa Microsoft Intune.
-- Escritorio administrado de Microsoft datos de inteligencia de seguridad de Protección avanzada de subprocesos de Microsoft Defender para los clientes que usan ese servicio.
-
-## <a name="data-storage-and-sources-in-microsoft-managed-desktop"></a>Almacenamiento de datos y orígenes en Escritorio administrado de Microsoft
-
-Después Escritorio administrado de Microsoft obtiene los datos, debe proporcionar su servicio, almacenamiento y procesamiento de los datos de la siguiente manera:
-
-### <a name="storing-data-storage-location-and-data-retention"></a>Almacenamiento de datos, ubicación de almacenamiento y retención de datos
-
-Escritorio administrado de Microsoft almacena sus datos en uno o varios de los siguientes servicios de almacenamiento de Microsoft:
-
-- Azure SQL
-- Almacenamiento de Azure
-- Dynamics 365
-
-Escritorio administrado de Microsoft almacena sus datos en Estados Unidos. Los datos personales se conservan Escritorio administrado de Microsoft un máximo de 30 días, excepto los datos de alerta para los dispositivos Escritorio administrado de Microsoft recopilados por Microsoft Defender para endpoint. Los datos de alerta reales (que podrían incluir datos personales) se almacenan durante 180 días. Los datos de alerta con datos personales eliminados se almacenan durante un máximo de dos años. De conformidad con el Reglamento general de protección de datos (RGPD) y la Ley de privacidad del consumidor de California (CCPA), Escritorio administrado de Microsoft respeta los derechos del interesado para los datos personales almacenados en datos de alerta.
-
-### <a name="staff-location"></a>Ubicación del personal
-
-Los Escritorio administrado de Microsoft operaciones de seguridad y operaciones de seguridad se encuentran en los Estados Unidos e India.
-
-## <a name="data-usage-of-microsoft-managed-desktop"></a>Uso de datos de Escritorio administrado de Microsoft
-
-Escritorio administrado de Microsoft usa estos datos:
+Escritorio administrado de Microsoft se basa en datos de varios productos y servicios de Microsoft para proporcionar su servicio a clientes empresariales. Para lograr el objetivo de proteger y mantener los dispositivos inscritos, procesamos y copiamos datos de estos servicios a Escritorio administrado de Microsoft. Cuando procesamos datos, seguimos las instrucciones documentadas que proporciona, como se hace referencia en los Términos de Servicios en línea y la Declaración de privacidad de Microsoft. Cuando procesamos datos, seguimos las instrucciones documentadas que proporciona, como se hace referencia en los Términos de [Servicios](https://www.microsoft.com/licensing/product-licensing/products) en línea y la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement). Escritorio administrado de Microsoft tareas del procesador incluyen garantizar la confidencialidad, la seguridad y la resistencia adecuadas. Escritorio administrado de Microsoft emplea medidas adicionales de privacidad y seguridad para garantizar un tratamiento adecuado de los datos de identificación personal. 
 
 
-| Orígenes de datos |Usar con Escritorio administrado de Microsoft  |
-|---------|---------|
-|Azure Active Directory datos     | Se usa en informes creados para administradores de inquilinos, que están disponibles en el portal Escritorio administrado de Microsoft administración.        |
-|Datos de Intune     | Se usa en informes creados para administradores de inquilinos, que están disponibles en el portal Escritorio administrado de Microsoft administración.        |
-|Microsoft Defender para punto de conexión     |  Se usa para abordar las amenazas de seguridad detectadas en dispositivos inscritos por el Centro de operaciones de seguridad (SOC) de Escritorio administrado de Microsoft.  |
-|Windows de diagnóstico     |Se usa para determinar el estado de actualización de los dispositivos administrados y para proporcionar y mejorar la oferta de ESCRITORIO ADMINISTRADO DE MICROSOFT de IT como servicio (ITaaS).         |
-|Datos de contacto de administrador     | Se usa Escritorio administrado de Microsoft para comunicarse con los administradores de inquilinos.        |
+## <a name="microsoft-managed-desktop-data-storage-and-staff-location"></a>Escritorio administrado de Microsoft almacenamiento de datos y ubicación del personal
 
+Escritorio administrado de Microsoft sus datos en los centros de datos de Azure en los Estados Unidos. Los datos personales obtenidos por Escritorio administrado de Microsoft y otros servicios son necesarios para mantener el servicio operativo. Si se quita un dispositivo de Escritorio administrado de Microsoft, conservamos los datos personales durante un máximo de 30 días, excepto los datos de alerta recopilados por Microsoft Defender para Endpoint, que se almacenan durante 180 días por motivos de seguridad. Para obtener más información sobre la retención de datos, vea [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
-### <a name="entities-processed-by-microsoft-managed-desktop"></a>Entidades procesadas por Escritorio administrado de Microsoft
+Escritorio administrado de Microsoft Los equipos de operaciones de ingeniería y operaciones de seguridad se encuentran en los Estados Unidos e India. 
 
-Escritorio administrado de Microsoft procesa estas entidades para proporcionar el servicio:
+## <a name="microsoft-windows-10-diagnostic-data"></a>Datos Windows 10 diagnóstico de Microsoft
 
-- Datos del dispositivo
-- Configuración de seguridad del dispositivo
-- Hardware y sistema operativo del dispositivo
-- Información agregada sobre el estado del dispositivo
-- Información de diagnóstico de dispositivos
-- Datos de inquilino
-- Azure Active Directory recursos
-- Datos de directiva y configuración
-- Metadatos y datos de alerta de Microsoft Defender para endpoint
-- Windows de diagnóstico
-- Datos de uso de productos y servicios
+Escritorio administrado de Microsoft usa [Windows 10 datos](/windows/privacy/windows-diagnostic-data) de diagnóstico mejorados para mantener Windows, actualizados, solucionar problemas y realizar mejoras en el producto. La configuración de datos de diagnóstico mejorada incluye información más detallada sobre los dispositivos inscritos en Escritorio administrado de Microsoft y su configuración, capacidades y estado del dispositivo. Cuando se seleccionan datos de diagnóstico mejorados, se recopilan datos, incluidos los datos de diagnóstico necesarios. Vea [Changes to Windows diagnostic data collection para](/windows/privacy/changes-to-windows-diagnostic-data-collection) obtener más información acerca de la Windows 10 de datos de diagnóstico y la recopilación de datos.
 
-### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+La terminología de los datos de diagnóstico cambiará en versiones futuras de Windows. Escritorio administrado de Microsoft se compromete a procesar solo los datos que necesita el servicio. Aunque esto significará que el nivel de diagnóstico cambiará a **Opcional,** Escritorio administrado de Microsoft implementará las directivas de diagnóstico limitadas para ajustar la recopilación de datos de diagnóstico necesaria para el servicio. Para obtener más información, vea [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection).
 
-Los datos de identidad usados por Escritorio administrado de Microsoft los almacena Azure Active Directory en una ubicación geográfica en función de la dirección proporcionada por la organización al suscribirse a un servicio en línea de Microsoft, como Office 365 o Azure. Consulte [Microsoft Azure: ¿Dónde están mis datos de cliente?](http://azuredatacentermap.azurewebsites.net/) para obtener un mapa que muestre los centros de datos para Azure Active Directory.
+Escritorio administrado de Microsoft procesa y almacena datos de nivel del sistema Windows 10 datos de diagnóstico opcionales procedentes de dispositivos inscritos, como información de rendimiento y confiabilidad de aplicaciones y dispositivos. Escritorio administrado de Microsoft procesa y almacena los datos personales de los clientes, como chat e historial del explorador, voz, texto o datos de voz. 
 
-Para obtener más información acerca de las regiones que Azure usa para el almacenamiento de datos, [vea Azure Active Directory–Where is your data located](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9).
+Para obtener más información acerca de la recopilación de datos de diagnóstico de Microsoft Windows 10, vea la sección Dónde almacenamos y procesamos datos [personales](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) de la Declaración de privacidad de Microsoft.
 
-### <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-windows-update-for-business"></a>Actualización Windows Microsoft para empresas
+Microsoft Windows Update para empresas usa datos de Windows diagnósticos para analizar el estado y los errores de la actualización. Escritorio administrado de Microsoft aprovecha estos datos y los usa para mitigar y resolver problemas para garantizar que todos los dispositivos registrados estén actualizados en función de una cadencia de actualización predefinida.
 
-Los datos de Intune se pueden almacenar en algunas regiones diferentes, como Europa Norte (Irlanda) y Europa Occidental (Países Bajos). El administrador de TI crea una cuenta de inquilino y elige el país donde se almacenarán los datos cuando se inscriban inicialmente en los servicios de Intune. Para obtener una lista de las ubicaciones de centros de datos usadas por Intune, [vea Microsoft Intune: ¿Dónde están mis datos de cliente?](http://intunedatacentermap.azurewebsites.net/). Para obtener más información sobre el almacenamiento y el uso de datos por Intune, vea [Data collection in Intune](/intune/privacy-data-collect).
+## <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+Azure Active Directory (Azure AD) almacena los datos usados por Escritorio administrado de Microsoft en una ubicación geográfica en función de la ubicación proporcionada por la organización al suscribirse a los servicios en línea de Microsoft, como Microsoft Apps para empresas y Azure. Azure AD almacena los datos usados por Escritorio administrado de Microsoft en una ubicación geográfica en función de la ubicación proporcionada por la organización al suscribirse a servicios en línea de Microsoft, como Microsoft Apps para empresas y Azure. Para obtener más información sobre dónde se encuentran los datos de Azure AD, [vea Azure Active Directory: ¿Dónde se encuentran los datos?](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
-### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
+## <a name="microsoft-intune"></a>Microsoft Intune
+Microsoft Intune recopila, procesa y comparte datos con Escritorio administrado de Microsoft para admitir operaciones y servicios empresariales. Consulta [Recopilación de datos en Intune](/mem/intune/protect/privacy-data-collect) para obtener más información sobre los datos recopilados en Intune. 
 
-Los datos de Microsoft Defender para puntos de conexión se pueden almacenar en varias regiones diferentes. Por este motivo, Defender for Endpoint opera en los centros de datos de Microsoft Azure en la Unión Europea, el Reino Unido y en los Estados Unidos, como se indica en [Microsoft Defender para endpoint:](http://intunedatacentermap.azurewebsites.net/)ubicaciones de almacenamiento de datos . Para obtener más información sobre el almacenamiento de datos y el uso de Defender para endpoint, vea ¿Qué datos recopila [Microsoft Defender para Endpoint?](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Para obtener más información sobre Microsoft Intune de datos, vea [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide). Intune respeta las selecciones de ubicación de almacenamiento realizadas por el administrador para los datos del cliente.
 
-### <a name="windows-10"></a>Windows 10
+## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
+Microsoft Defender para endpoint recopila y almacena información para dispositivos inscritos en Escritorio administrado de Microsoft con fines de administración, seguimiento e informes. La información recopilada incluye datos de archivos (como nombres de archivo, tamaño y hash), datos de proceso (procesos en ejecución, hashes), datos del Registro, datos de conexión de red y detalles del dispositivo (como identificadores de dispositivo, nombres de dispositivo y la versión del sistema operativo). Consulte [Microsoft Defender for Endpoint data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) para obtener más información sobre Microsoft Defender para las ubicaciones de almacenamiento y recopilación de datos de Endpoint. 
 
-Como se indica en la Declaración de privacidad de [Microsoft,](https://privacy.microsoft.com/privacystatement)"los datos personales recopilados por Microsoft pueden almacenarse y procesarse en su región, en los Estados Unidos y en cualquier otro país donde Microsoft o sus filiales, subsidiarias o proveedores de servicios operan instalaciones. [...] Normalmente, la ubicación de almacenamiento principal se encuentra en la región del cliente o en Estados Unidos, a menudo con una copia de seguridad en un centro de datos de otra región. Las ubicación(s) de almacenamiento se eligen para funcionar de forma eficiente, mejorar el rendimiento y crear redundancias con el fin de proteger los datos si hay una interrupción u otro problema. Tomamos medidas para asegurarnos de que los datos que recopilamos en esta declaración de privacidad se procesan de acuerdo con las disposiciones de esta declaración y los requisitos de la legislación aplicable donde se encuentran los datos".
+## <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas 
+Aplicaciones Microsoft 365 para empresas recopila y comparte datos con Escritorio administrado de Microsoft para garantizar que dichas aplicaciones estén actualizadas con la versión más reciente basada en canales de actualización predefinidos administrados por Escritorio administrado de Microsoft. Consulta [Microsoft Defender para El almacenamiento y](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) privacidad de los datos de punto de conexión para obtener más información sobre Aplicaciones Microsoft 365 de almacenamiento y recopilación de datos de Aplicaciones Microsoft 365.
 
-Para obtener más información acerca de la recopilación de datos de diagnóstico de Windows 10, vea la sección "Dónde almacenamos y procesamos datos [personales"](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) de la Declaración de privacidad de Microsoft.
+## <a name="major-data-change-notification"></a>Notificación de cambio de datos principal
+Escritorio administrado de Microsoft un proceso de control de cambios tal como se describe en nuestro marco de comunicación de servicio. Notificamos a los clientes a través Microsoft 365 centro de mensajes y el portal de administración Escritorio administrado de Microsoft de incidentes de seguridad y cambios importantes en el servicio. Los cambios en los tipos de datos recopilados y donde se almacenan se consideran un cambio material. Proporcionaremos un mínimo de 30 días de notificación avanzada de este cambio, como es la práctica estándar para Microsoft 365 productos y servicios. Para obtener más información, vea [Service changes and communication](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide).
 
-## <a name="data-access-protection"></a>Protección de acceso a datos
+## <a name="compliance"></a>Cumplimiento
+Escritorio administrado de Microsoft se ha sometido a auditorías externas y ha obtenido un conjunto completo de ofertas de cumplimiento. Puede encontrar más información en Escritorio administrado de Microsoft [Compliance](/microsoft-365/managed-desktop/intro/compliance). Los informes de auditoría están disponibles para su descarga en Microsoft [Service Trust Portal,](https://aka.ms/stp)que sirve como repositorio central para Microsoft Enterprise Online Services. (Escritorio administrado de Microsoft se incluye en estos documentos en la categoría "Supervisión y administración"). 
 
-El acceso directo a los almacenes de datos internos de Escritorio administrado de Microsoft está restringido de varias maneras:
-
-- Requiere la aprobación del nivel de cliente potencial de ingeniería.
-- Se limita al tiempo y se audita.
-- Todos los datos se cifran mientras se almacenan.
-- El acceso al Escritorio administrado de Microsoft de administración interna de Escritorio administrado de Microsoft requiere una estación de trabajo altamente protegida y restringida.
-
-## <a name="processing-personal-data-in-a-compliant-manner"></a>Procesamiento de datos personales de forma compatible
-Escritorio administrado de Microsoft procesa datos personales con sistemas certificados por ISO. Para obtener más información, vea [Compliance](../intro/compliance.md).
-
-## <a name="profiling-and-marketing"></a>Generación de perfiles y marketing
-
-Escritorio administrado de Microsoft no usa datos personales recopilados como parte de la prestación del servicio con fines de generación de perfiles, publicidad o marketing.
-
-## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de los temas de datos del RGPD y CCPA
-
-El Reglamento general de protección de datos [(RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea concede derechos a las personas (conocidas en el reglamento como interesados) para administrar los datos personales recopilados por un empleador u otro tipo de agencia u organización (conocido como controlador de datos o simplemente controlador). Los datos personales se definen ampliamente en el RGPD como cualquier dato que guarde relación con una persona física identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de ellos, la solicitud de modificaciones, la restricción de tratamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro responsable. Una solicitud formal de un interesado a un responsable para que realice una acción sobre sus datos personales se denomina Solicitud del interesado o DSR.
-
-Del mismo modo, el CCPA proporciona derechos y obligaciones de privacidad a los consumidores de California, incluidos derechos similares a los derechos del interesado del RGPD, como el derecho a eliminar, acceder y recibir (portabilidad) su información personal. El CCPA también proporciona ciertas divulgaciones, protecciones contra la discriminación al elegir derechos de ejercicio y requisitos de "no participar o no participar" para determinadas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](/compliance/regulatory/offering-ccpa?view=o365-worldwide) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](/compliance/regulatory/ccpa-faq?view=o365-worldwide).
-
-En la siguiente sección se describe cómo Escritorio administrado de Microsoft ayuda a los controladores a buscar, acceder y actuar sobre los datos personales o la información personal que Escritorio administrado de Microsoft.
-
-> [!NOTE]
-> Si está buscando información general sobre el RGPD, consulte la sección [RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) del Portal de confianza de servicios.
-
-### <a name="it-admin-contact-information"></a>Información de contacto del administrador de TI
-
-Un administrador de inquilinos puede ver, corregir y eliminar sus propios datos personales (como su propia información de contacto) directamente en la sección Contacto de administrador del portal de Escritorio administrado de Microsoft.
-
-## <a name="microsoft-defender-for-endpoint-alert-data"></a>Datos de alerta de Microsoft Defender para puntos de conexión
-
-Los administradores de seguridad pueden solicitar una extracción o eliminación de datos personales relacionados con Alertas de punto de conexión de Microsoft Defender en un dispositivo Escritorio administrado de Microsoft administrado en su entorno. El administrador de seguridad debe iniciar sesión en el portal de administración Escritorio administrado de Microsoft [y](https://aka.ms/memadmin) enviar una solicitud de soporte técnico. Seleccione **Tipo de** solicitud de soporte técnico de  **Solicitud** de **cambio,** Categoría de seguridad y **Subcategoría** de Otros y, a continuación, proporcione los nombres de dispositivo relevantes en la descripción junto con la solicitud de extracción o eliminación de datos.
-
-### <a name="user-related-personal-data"></a>Datos personales relacionados con el usuario
-
-Aparte de esto, Escritorio administrado de Microsoft recopila datos personales por sí solos. En su lugar, se basa en los datos personales recopilados por otros servicios en línea de Microsoft Enterprise y usa los datos personales. Los administradores de TI que buscan responder a sus solicitudes de usuario para ver, corregir y eliminar sus datos personales pueden usar la funcionalidad respectiva de los servicios subyacentes de los que Escritorio administrado de Microsoft depende. Si está interesado en ver o eliminar datos personales [usados](/compliance/regulatory/gdpr-dsr-Azure) por estos servicios, consulte primero el artículo Solicitudes del interesado de Azure para el RGPD.
-
-Además, use las siguientes instrucciones para ejercer DSR para los servicios de los que Escritorio administrado de Microsoft depende para la recopilación de datos personales:
-
-- [Azure Active Directory](/compliance/regulatory/gdpr-dsr-Azure?view=o365-worldwide)
-- [Microsoft Intune](/compliance/regulatory/gdpr-dsr-Intune?view=o365-worldwide)
-- [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Windows 10](/windows/privacy/windows-10-and-privacy-compliance)
+## <a name="legal"></a>Legal
+Aviso de privacidad de **Microsoft** a los usuarios finales de productos proporcionados por clientes de la organización: la Declaración de privacidad de [Microsoft](https://privacy.microsoft.com/privacystatement) notifica a los usuarios finales que cuando inician sesión en productos de Microsoft con una cuenta profesional, a) su organización puede controlar y administrar su cuenta (incluido el control de la configuración relacionada con la privacidad) y acceder y procesar sus datos, y b) Microsoft puede recopilar y procesar los datos para proporcionar el servicio a la organización y los usuarios finales.

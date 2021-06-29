@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Use la API de REST para obtener o actualizar información acerca de un modelo de comprensión mediante documentos de SharePoint Syntex mediante el título del modelo.
-ms.openlocfilehash: a6fbe9ba9d3f5240c7b775613f97b83bfa2caa50
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b50849d0dc1c9deefa55a5c92303d18f251e2f8b
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904329"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177134"
 ---
 # <a name="getbytitle"></a>GetByTitle
 
@@ -25,13 +25,13 @@ Obtiene o actualiza información sobre un modelo de comprensión mediante docume
 ## <a name="http-request"></a>Solicitud HTTP
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 Este mismo método también se puede usar para eliminar un modelo.
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>Parámetros de URI
@@ -65,12 +65,12 @@ En este ejemplo, el nombre del modelo de comprensión mediante documentos de Syn
 #### <a name="sample-request"></a>Solicitud de muestra
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 #### <a name="sample-response"></a>Respuesta de muestra
 
-**Código de estado:** 204
+**Código de estado:** 200
 
 ```HTTP
 {
@@ -109,7 +109,7 @@ En este ejemplo, el nombre del modelo de comprensión mediante documentos del co
 ##### <a name="sample-request"></a>Solicitud de muestra
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 ## <a name="see-also"></a>Ver también

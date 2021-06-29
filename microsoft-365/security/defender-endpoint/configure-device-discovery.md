@@ -1,6 +1,6 @@
 ---
 title: Configuración de la detección de dispositivo
-description: Obtenga información sobre cómo configurar la detección de dispositivos en Microsoft 365 Defender con la detección básica o estándar
+description: Obtenga información sobre cómo configurar la detección de dispositivos Microsoft 365 Defender con la detección básica o estándar
 keywords: básico, estándar, configurar la detección de puntos de conexión, la detección de dispositivos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0d722b4f4bef5b4d178edc5f2142c887690d4c63
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e1efeff77657e04223b21d639a0a09287f3707cc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765256"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177590"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
@@ -101,8 +101,25 @@ Elegir la clasificación de detección inicial significa aplicar el estado prede
 6. Confirme que desea realizar el cambio. 
 
 
+## <a name="explore-devices-in-the-network"></a>Explorar dispositivos en la red
+
+Puede usar la siguiente consulta de búsqueda avanzada para obtener más contexto sobre cada nombre de red descrito en la lista de redes. La consulta enumera todos los dispositivos incorporados que se conectaron a una red determinada en los últimos 7 días.
 
 
-## <a name="see-also"></a>Consulte también
+
+```kusto
+DeviceNetworkInfo
+| where Timestamp > ago(7d)
+| summarize arg_max(Timestamp, *) by DeviceId
+| where ConnectedNetworks  != ""
+| extend ConnectedNetworksExp = parse_json(ConnectedNetworks)
+| mv-expand bagexpansion = array ConnectedNetworks=ConnectedNetworksExp
+| extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
+| where NetworkName == "<your network name here>"
+
+
+```
+
+## <a name="see-also"></a>Vea también
 - [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

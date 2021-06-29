@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configura Movilidad y seguridad básicas para proteger y administrar los dispositivos móviles de los usuarios mediante acciones como limpiar un dispositivo de forma remota.
-ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f1cfa6cdc8d799ba62c687408cb12a4ba453f313
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634297"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177278"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurar Movilidad y seguridad básicas
 
 La movilidad y seguridad básicas integradas para Microsoft 365 le ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhones, iPads, Androides y Windows teléfonos móviles. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
 
-¿Tiene preguntas? Para obtener preguntas más frecuentes para ayudar a resolver preguntas comunes, consulte [Basic Mobility and Security Frequently-asked questions (FAQ).](frequently-asked-questions.md) Tenga en cuenta que no puede usar una cuenta de administrador delegada para administrar la movilidad y la seguridad básicas. Para obtener más información, consulta [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
+¿Tiene preguntas? Para obtener preguntas más frecuentes para ayudar a resolver preguntas comunes, consulte [Basic Mobility and Security Frequently-asked questions (FAQ).](frequently-asked-questions.yml) Tenga en cuenta que no puede usar una cuenta de administrador delegada para administrar la movilidad y la seguridad básicas. Para obtener más información, consulta [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
 
 La administración de dispositivos forma parte del Centro de seguridad & cumplimiento, por lo que tendrás que ir allí para iniciar la configuración básica de movilidad y seguridad.
 
@@ -49,7 +49,7 @@ Cuando el servicio esté listo, siga estos pasos para finalizar la instalación.
 
 Si no tienes un dominio personalizado asociado a Microsoft 365 o si no estás administrando Windows dispositivos, puedes omitir esta sección. De lo contrario, deberá agregar registros DNS para el dominio en el host DNS. Si ya ha agregado los registros, como parte de la configuración del dominio con Microsoft 365, está todo establecido. Después de agregar los registros, Microsoft 365 usuarios de la organización que inician sesión en su dispositivo Windows con una dirección de correo electrónico que usa el dominio personalizado se redirigen para inscribirse en Movilidad y seguridad básicas.
 
-¿Necesita ayuda para configurar los registros? Busque el registrador de dominios y seleccione el nombre del registrador para ir a la ayuda paso a paso para crear un registro DNS en la lista proporcionada en Agregar registros DNS para conectar [su dominio.](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Use estas instrucciones para crear registros CNAME descritos en [Simplificar Windows inscripción sin Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
+¿Necesita ayuda para configurar los registros? Busque el registrador de dominios y seleccione el nombre del registrador para ir a la ayuda paso a paso para crear un registro DNS en la lista proporcionada en Agregar registros DNS para conectar [su dominio.](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Use estas instrucciones para crear registros CNAME que se describen en [Simplificar Windows inscripción sin Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
 Después de agregar los dos registros CNAME, vuelva al Centro de seguridad & cumplimiento y vaya a Prevención de pérdida de datos Administración de **dispositivos** para completar  >     el siguiente paso.
 

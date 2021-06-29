@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: ''
+ms.date: 06/28/2021
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861532"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177650"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
@@ -75,7 +75,7 @@ Para ponerlo de otra manera: como servicio de seguridad, estamos actuando en su 
 ## <a name="exceptions"></a>Excepciones
 
 > [!NOTE]
-> En julio de 2021, la seguridad se extenderá de forma predeterminada a Exchange de flujo de correo (también conocidas como reglas de transporte). Si usa reglas de flujo de correo para permitir simulaciones de suplantación de identidad de terceros o entrega [](configure-advanced-delivery.md) sin filtrar a buzones de operación de seguridad, finalmente deberá eliminar estas reglas y cambiar al uso de la directiva de entrega avanzada cuando la característica esté _disponible._
+> En agosto de 2021, la seguridad se extenderá de forma predeterminada a Exchange de flujo de correo (también conocidas como reglas de transporte). Si usa reglas de flujo de correo para permitir simulaciones de suplantación de identidad de terceros o entrega [](configure-advanced-delivery.md) sin filtrar a buzones de operación de seguridad, finalmente deberá eliminar estas reglas y cambiar al uso de la directiva de entrega avanzada cuando la característica esté _disponible._
 
 La única invalidación que permite que los mensajes de suplantación de identidad de elevada confianza omita el filtrado son las reglas de flujo de correo. Para usar reglas de flujo de correo para omitir el filtrado, vea Usar reglas de flujo de [correo para establecer el SCL en mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 

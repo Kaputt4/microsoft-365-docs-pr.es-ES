@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Bloquear el acceso a los servicios Microsoft 365 un antiguo empleado.
-ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061827"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177122"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Paso 1: impedir que un antiguo empleado inicia sesión y bloquee el acceso a Microsoft 365 servicios
 
@@ -65,7 +65,7 @@ Para obtener más información sobre cuánto se tarda en quitar a un usuario del
 
 Si tiene correo electrónico como parte de su suscripción Microsoft 365, inicie sesión en el Centro de administración de Exchange y siga estos pasos para impedir que el antiguo empleado tenga acceso a su correo electrónico.
   
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
+1. Vaya al <a href="https://admin.exchange.microsoft.com/" target="_blank">Centro de administración de Exchange</a>.
 2. En el Centro de administración de Exchange, vaya a **Destinatarios** \> **Buzones**.
-3. Haga doble clic en el usuario y vaya a la página **Características del buzón.** En **Dispositivos móviles,** **selecciona Deshabilitar Exchange ActiveSync** y Deshabilitar **OWA** para dispositivos y responde **Sí** a ambos cuando se le pida.
-4. En **Conectividad de correo** electrónico, seleccione **Deshabilitar** y responder **Sí** cuando se le pida.
+3. Haz doble clic en el usuario y ve a **Administrar la configuración de aplicaciones de correo electrónico** en Aplicaciones de correo **electrónico.** Desactivar **el** control deslizante de todas las opciones; **Mobile (Exchange ActiveSync),** **Outlook en la Web**, **Outlook escritorio (MAPI),** Exchange **web services**, **POP3** e **IMAP**.
+4. Haga clic en **Guardar**.

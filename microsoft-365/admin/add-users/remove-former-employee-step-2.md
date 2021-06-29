@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo guardar el contenido del buzón de un antiguo empleado.
-ms.openlocfilehash: d73d7005d2ccea429f66c5b2564220424665439f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd24145b6b5162a03dee0338cc0820e5af271ddd
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244286"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177494"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Paso 2: Guardar el contenido del buzón de un antiguo empleado
 
@@ -45,4 +45,4 @@ Una vez que haya bloqueado que un usuario pueda iniciar sesión en su organizaci
 
     **OR**
 
-2. Agregue la dirección de correo electrónico del antiguo empleado a la versión de Outlook web y, a continuación, exporte los datos a un archivo .pst. Puede importar los datos a otra cuenta de correo electrónico si lo necesita. Consulte el [paso 6: dar a](remove-former-employee-step-6.md)otro empleado acceso a OneDrive y Outlook datos .
+2. Agregue la dirección de correo electrónico del antiguo empleado a la versión de Outlook escritorio y, a continuación, exporte los datos a un archivo .pst. Puede importar los datos a otra cuenta de correo electrónico si lo necesita. Consulte el [paso 6: dar a](remove-former-employee-step-6.md)otro empleado acceso a OneDrive y Outlook datos .
