@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Interpretar los cargos, la facturación y la información de pago en su factura de Microsoft 365 para empresas, y cómo cambiar un número de pedido de compra.
 ms.date: 05/04/2021
-ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
-ms.translationtype: HT
+ms.openlocfilehash: 07d8b9fe88849b693388adf4d98813073764676d
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888378"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203153"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 
@@ -129,7 +129,7 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md) (artículo)\
-[Información de facturación de Microsoft 365 para empresas en México](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (artículo)\
+[Información de facturación de Microsoft 365 para empresas en México](mexico-billing-info.md) (artículo)\
 [Cambiar las direcciones de facturación](change-your-billing-addresses.md) (artículo)\
 [Cambiar la dirección de la organización y otra información del perfil](../../admin/manage/change-address-contact-and-more.md) (artículo)\
 [Pagar la suscripción a Microsoft 365 para empresas](pay-for-your-subscription.md) (artículo)\

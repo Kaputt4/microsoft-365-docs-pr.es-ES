@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar quién recibe mensajes de correo electrónico de notificación de facturación y datos adjuntos de factura.
 ms.date: 03/17/2021
-ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
-ms.translationtype: HT
+ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054579"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203249"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Administrar las notificaciones de facturación y los datos adjuntos en las facturas
 
@@ -127,6 +127,6 @@ Para recibir sus facturas como datos adjuntos de en las notificaciones de factur
 ## <a name="related-content"></a>Contenido relacionado
 
 [Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
-[Información de facturación de Microsoft 365 para empresas en México](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (artículo)\
+[Información de facturación de Microsoft 365 para empresas en México](mexico-billing-info.md) (artículo)\
 [Conozca su factura o recibo por la compra de Microsoft 365 para Empresas](understand-your-invoice2.md) (artículo)\
 [Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md) (artículo)

@@ -19,12 +19,12 @@ description: Use detecciones en tiempo real y explorador en el portal de Microso
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: ee9c4c63817d9c6860942eb8001b02a0535333b1
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195038"
+ms.locfileid: "53203261"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -56,7 +56,8 @@ Con este informe, puede:
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Mejoras en la experiencia de búsqueda de amenazas
 
-### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>Introducción del identificador de alerta de Defender para Office 365 alertas en el Explorador/Detecciones en tiempo real (versión preliminar)
+
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>Introducción del id. de alerta de Defender para Office 365 alertas en el Explorador/Detecciones en tiempo real
 
 Hoy en día, si navega desde una alerta al Explorador de amenazas, abre una vista filtrada en el Explorador, con la vista filtrada por el identificador de directiva de alerta (el identificador de directiva es un identificador único de una directiva de alerta).
 Estamos haciendo que esta integración sea más relevante mediante la introducción del identificador de alerta (vea un ejemplo de identificador de alerta a continuación) en el Explorador de amenazas y detecciones en tiempo real para que vea los mensajes que son relevantes para la alerta específica, así como un recuento de correos electrónicos. También podrá ver si un mensaje formaba parte de una alerta, así como navegar de ese mensaje a la alerta específica.
@@ -69,12 +70,12 @@ El identificador de alerta está disponible dentro de la dirección URL cuando s
 > [!div class="mx-imgBorder"]
 > ![Identificador de alerta en el menú desplegable de detalles](../../media/AlertID-DetailsFlyout.png)
 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Ampliar el límite de retención de datos y búsqueda del Explorador (y detecciones en tiempo real) para los inquilinos de prueba de 7 a 30 días (versión preliminar)
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Ampliar el límite de búsqueda y retención de datos del Explorador (y detecciones en tiempo real) para los inquilinos de prueba de 7 a 30 días
 
 Como parte de este cambio, podrá buscar y filtrar datos de correo electrónico durante 30 días (un aumento con respecto a los 7 días anteriores) en el Explorador de amenazas y detecciones en tiempo real para defender para inquilinos de prueba de P1 y P2 de Office.
 Esto no afecta a los inquilinos de producción para clientes de P1 y P2/E5, que ya tienen capacidades de búsqueda y retención de datos de 30 días.
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Límites actualizados para la exportación de registros para el Explorador de amenazas (versión preliminar)
+### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>Límites actualizados para la exportación de registros para el Explorador de amenazas
 
 Como parte de esta actualización, el número de filas de registros de correo electrónico que se pueden exportar desde el Explorador de amenazas aumenta de 9990 a 200 000 registros. El conjunto de columnas que se pueden exportar actualmente seguirá siendo el mismo, pero el número de filas aumentará desde el límite actual.
 
