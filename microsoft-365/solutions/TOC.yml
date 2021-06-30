@@ -97,40 +97,94 @@
   items:
     - name: Información general
       href: ./index.yml
-    - name: Administración de espacios empresariales
+    - name: Administración y migración
       items:
-        - name: Información general
-          href: tenant-management-overview.md
-        - name: Paso 1. Sus espacios empresariales
-          href: tenant-management-tenants.md
-        - name: Paso 2. Redes óptimas
-          href: tenant-management-networking.md
-        - name: Paso 3. Identidad
-          href: tenant-management-identity.md
-        - name: Paso 4. Migración
-          href: tenant-management-migration.md
-        - name: Paso 5. Datos de administración de dispositivos y aplicaciones
-          href: tenant-management-device-management.md
-    - name: Trabajar en equipo y colaborar
+        - name: Administración de espacios empresariales
+          items:
+            - name: Información general
+              href: tenant-management-overview.md
+            - name: Paso 1. Sus espacios empresariales
+              href: tenant-management-tenants.md
+            - name: Paso 2. Redes óptimas
+              href: tenant-management-networking.md
+            - name: Paso 3. Identidad
+              href: tenant-management-identity.md
+            - name: Paso 4. Migración
+              href: tenant-management-migration.md
+            - name: Paso 5. Datos de administración de dispositivos y aplicaciones
+              href: tenant-management-device-management.md
+            - name: Quitar a un exempleado
+              items:
+                - name: Información general
+                  href: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: Paso 1. Impedir que un empleado inicie sesión y bloquee el acceso a los servicios de Microsoft 365
+                  href: ../admin/add-users/remove-former-employee-step-1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: Paso 2. Guardar el contenido del buzón del exempleado
+                  href: ../admin/add-users/remove-former-employee-step-2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: Paso 3. Reenviar el correo electrónico de un exempleado a otro empleado o convertirlo en un buzón compartido
+                  href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: Paso 4. Proporcionar acceso a otro empleado a OneDrive y a los datos de Outlook
+                  href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: Paso 5. Borrar y bloquear el dispositivo móvil de un exempleado
+                  href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: Paso 6. Quitar la licencia de Microsoft 365 a un exempleado
+                  href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: Paso 7. Eliminar la cuenta de usuario de un exempleado
+                  href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Migrar recursos compartidos de archivos a Microsoft 365
+          items:
+            - name: Información general
+              href: /sharepointmigration/mm-get-started.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: 'Paso 1: configurar agentes'
+              href: /sharepointmigration/mm-setup-clients.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: 'Paso 2: crear una tarea de migración'
+              href: /sharepointmigration/mm-how-to-use.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: 'Paso 3: supervisar e informar'
+              href: /sharepointmigration/mm-reports.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+    - name: Trabajo en equipo y colaboración
       items:
-        - name: 'Pósteres de arquitectura de Teams '
-          href: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Implementación de voz en Teams en Microsoft 365
           items:
             - name: Información general
               href: deploy-voice.md
             - name: Paso 1. Elija su solución de voz
-              href: /MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /MicrosoftTeams/cloud-voice-landing-page.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Paso 2. - Configurar el Sistema telefónico
-              href: /microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /MicrosoftTeams/setting-up-your-phone-system.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Paso 3. - Configurar la conectividad a la RTC
               items:
                 - name: Opción de plan de llamadas
-                  href: /microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                  href: /MicrosoftTeams/set-up-calling-plans.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Opción de enrutamiento directo
-                  href: /microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                  href: /MicrosoftTeams/direct-routing-configure.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Caso práctico para la corporación multinacional
-              href: /MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /MicrosoftTeams/voice-case-study-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Administrar contratos para su empresa
+          items:
+            - name: Información general
+              href: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            - name: Paso 1. Usar SharePoint Syntex
+              href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            - name: Paso 2. Usar Microsoft Teams.
+              href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            - name: Paso 3. Power Automate
+              href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+        - name: Crear una intranet inteligente de SharePoint
+          items:
+            - name: Información general
+              href: /sharepoint/intelligent-internet-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            - name: Qué pensar acerca de la intranet inteligente
+              href: /sharepoint/itrad-vs-modern-intranet.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            - name: Plan de desarrollo de la intranet
+              href: /sharepoint/iintranet-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            - name: Planifique su intranet
+              href: /sharepoint/iplan-intranet.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            - name: Consideraciones al planificar una intranet global
+              href: /sharepoint/iset-up-global-intranet.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            - name: Gobierno de la intranet
+              href: /sharepoint/iintranet-governance.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            - name: Comunicación en el lugar de trabajo
+              href: /sharepoint/iworkplace-communications.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
         - name: Gobierno de colaboración
           items:
             - name: Información general
@@ -170,57 +224,43 @@
                 - name: Opciones de final del ciclo de vida
                   href: end-life-cycle-groups-teams-sites-yammer.md
         - name: Colaboración de archivos en SharePoint con Microsoft 365
-          href: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: Crear una intranet inteligente de SharePoint
-          href: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          href: /sharepoint/deploy-file-collaboration
         - name: Guía de OneDrive para empresas
-          href: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: Migrar recursos compartidos de archivos a Microsoft 365
-          items:
-            - name: Información general
-              href: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: 'Paso 1: configurar agentes'
-              href: /sharepointmigration/mm-setup-clients?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: 'Paso 2: crear una tarea de migración'
-              href: /sharepointmigration/mm-how-to-use?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: 'Paso 3: supervisar e informar'
-              href: /sharepointmigration/mm-reports?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-    - name: Seguridad
-      items:
-        - name: Las tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa
-          href: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: Seguridad de Microsoft 365 para los responsables de la toma de decisiones de la empresa (los BDM)
-          href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Configuraciones de acceso a dispositivos e identidades
-          href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-365-policies-configurations?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Implementar Microsoft Defender para punto de conexión
-          href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+          href: /onedrive/plan-onedrive-enterprise
     - name: Cumplimiento
       items:
         - name: Soluciones de riesgos internos en Microsoft 365
-          items:
-            - name: Información general
-              href: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Cumplimiento de comunicaciones
-              href: ../compliance/communication-compliance-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Administración de riesgos internos
-              href: ../compliance/insider-risk-management-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Barreras de la información
-              href: ../compliance/information-barriers-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Administración del acceso con privilegios
-              href: ../compliance/privileged-access-management-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          href: ../compliance/insider-risk-solution-overview.md
+        - name: Soluciones de auditoría
+          href: ../compliance/auditing-solutions-overview.md
+        - name: eDiscovery avanzado de Microsoft 365
+          href: ../compliance/overview-ediscovery-20.md
         - name: Planes de acción de cumplimiento de normativas
           items:
             - name: 'ISO: plan de acción recomendado'
-              href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /compliance/regulatory/iso-action-plan.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 'NIST: plan de acción recomendado'
-              href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /compliance/regulatory/nist-action-plan.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 'CCPA: preguntas frecuentes'
-              href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /compliance/regulatory/ccpa-faq.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 'RGPD: plan de acción recomendado'
-              href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: Caso práctico de cumplimiento de Contoso
-          href: ../compliance/communication-compliance-case-study.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&view=o365-worldwide%3ftoc%3d%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /compliance/regulatory/gdpr.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+    - name: Seguridad
+      items:
+        - name: Las tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa
+          href: ../security/top-security-tasks-for-remote-work.md
+        - name: Seguridad de Microsoft 365 para los responsables de la toma de decisiones de la empresa (los BDM)
+          href: ../security/microsoft-365-security-for-bdm.md
+        - name: Configuraciones de acceso a dispositivos e identidades
+          href: ../security/office-365-security/microsoft-365-policies-configurations.md
+        - name: Implementar Microsoft Defender para punto de conexión
+          href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+        - name: Migrar desde Symantec a Microsoft Defender para punto de conexión
+          href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
+        - name: Migrar desde McAfee a Microsoft Defender para punto de conexión
+          href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
+        - name: Cambiar de una protección de puntos de conexión distinta de Microsoft a Microsoft Defender para punto de conexión
+          href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
     - name: Casos prácticos de Contoso
       items:
         - name: Soluciones de Microsoft 365 para Contoso Corporation
@@ -230,9 +270,9 @@
         - name: Equipo aislado para un proyecto ultrasecreto
           href: contoso-team-for-top-secret-project.md
         - name: Migración de voz de Teams
-          href: /MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          href: /MicrosoftTeams/voice-case-study-overview.md
         - name: Caso práctico de cumplimiento de Contoso
-          href: ../compliance/communication-compliance-case-study.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&view=o365-worldwide%3ftoc%3d%2fmicrosoft-365%2fsolutions%2ftoc.json
+          href: ../compliance/communication-compliance-case-study.md
     - name: Guías del entorno de pruebas
       items:
         - name: Guías del entorno de pruebas para soluciones y escenarios
@@ -252,17 +292,17 @@
     - name: Salud
       items:
         - name: Teams para sanidad
-          href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc.md
     - name: Educación
       items:
         - name: Microsoft Teams para el ámbito educativo
-          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page.md
     - name: Administración pública
       items:
         - name: Teams para la Administración Pública
-          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page.md
         - name: Dar soporte a trabajadores remotos de la Administración Pública con Teams
-          href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams.md
 - name: Principios de diseño de arquitectura empresarial
   items:
     - name: Información general
