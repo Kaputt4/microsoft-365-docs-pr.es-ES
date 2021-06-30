@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842259"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194954"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -65,6 +65,26 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
 
 Apple iOS no admite varias VPN de todo el dispositivo para estar activas simultáneamente. Aunque pueden existir varios perfiles de VPN en el dispositivo, solo una VPN puede estar activa a la vez.
 
+## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>Configurar Microsoft Defender para la señal de riesgo de extremo en la directiva de protección de aplicaciones (MAM)
+
+Microsoft Defender para endpoint se puede configurar para enviar señales de amenaza que se usarán en las directivas de protección de aplicaciones (APP, también conocidas como MAM) en iOS/iPadOS. Con esta funcionalidad, también puedes usar Microsoft Defender para Endpoint para proteger el acceso a datos corporativos desde dispositivos no inscritos.
+
+Los pasos para configurar directivas de protección de aplicaciones con Microsoft Defender para endpoint son los siguientes:
+
+1. Configure la conexión desde el espacio empresarial Microsoft Endpoint Manager a Microsoft Defender para Endpoint. En el Centro de administración de [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Conectores de administración de inquilinos y tokens de Microsoft Defender para Endpoint (en Plataforma cruzada) o Endpoint Security Microsoft Defender para Endpoint  >    >     >   (en Configuración) y active los alternancias en Directiva de protección de **aplicaciones Configuración para iOS**.
+1. Seleccione Guardar. Debería ver que **el estado de** conexión ahora está establecido en **Habilitado**.
+1. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para puntos de conexión, vaya a **Directivas** de protección de aplicaciones  >   (en Directiva) para crear una nueva directiva o actualizar una existente.
+1. Seleccione la plataforma, **Aplicaciones, Protección de datos, Configuración** de requisitos de Acceso que su organización requiere para la directiva.
+1. En **Condiciones del** dispositivo de inicio  >  **condicional,** encontrarás la configuración Nivel máximo de amenaza del dispositivo **permitido.** Esto tendrá que configurarse en Low, Medium, High o Secured. Las acciones disponibles serán Bloquear acceso **o** **Borrar datos**. Es posible que vea un cuadro de diálogo informativo para asegurarse de que el conector está configurado antes de que esta configuración suba a efecto. Si el conector ya está configurado, puede omitir este cuadro de diálogo.
+1. Termina con Asignaciones y guarda la directiva.
+
+Para obtener más información sobre mam o directiva de protección de aplicaciones, consulta configuración de la directiva de protección de aplicaciones [de iOS](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios).
+
+### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Implementación de Microsoft Defender para endpoint para MAM o en dispositivos no inscritos
+
+Microsoft Defender para endpoint en iOS habilita el escenario de directiva de protección de aplicaciones y está disponible en la Tienda de aplicaciones de Apple.
+
+Los usuarios finales deben instalar la versión más reciente de la aplicación directamente desde la Tienda de aplicaciones de Apple.
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Configurar la directiva de cumplimiento en dispositivos con jailbreak
 
@@ -86,12 +106,12 @@ Siga los pasos siguientes para crear una directiva de cumplimiento contra dispos
     > [!div class="mx-imgBorder"]
     > ![Directiva Configuración](images/ios-jb-settings.png)
 
-4. En la *sección Acción por* incumplimiento, seleccione las acciones según sus requisitos y seleccione **Siguiente**.
+4. En la **sección Acción por** incumplimiento, seleccione las acciones según sus requisitos y seleccione **Siguiente**.
 
     > [!div class="mx-imgBorder"]
     > ![Acciones de directiva](images/ios-jb-actions.png)
 
-5. En la *sección Asignaciones,* seleccione los grupos de usuarios que desea incluir para esta directiva y, a continuación, **seleccione Siguiente**.
+5. En la **sección Asignaciones,** seleccione los grupos de usuarios que desea incluir para esta directiva y, a continuación, **seleccione Siguiente**.
 6. En la **sección Review+Create,** compruebe que toda la información especificada es correcta y, a continuación, **seleccione Crear**.
 
 ## <a name="configure-custom-indicators"></a>Configurar indicadores personalizados

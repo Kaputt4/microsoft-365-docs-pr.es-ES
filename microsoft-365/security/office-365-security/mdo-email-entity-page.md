@@ -1,5 +1,5 @@
 ---
-title: La página de entidad de correo electrónico de Microsoft Defender Office 365 (MDO)
+title: Página de entidad de correo Office 365 Microsoft Defender para correo electrónico
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los clientes de Microsoft Defender Office 365 E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
-ms.openlocfilehash: d2f5a5b20034ef22b8e3894885079609a9ad5874
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 5621476f8f8f7270d241d642354ab174a25b8b37
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083303"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194996"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -30,11 +30,11 @@ ms.locfileid: "53083303"
 - [Usar pestañas de página de entidad de correo electrónico](#use-email-entity-page-tabs)
 - [Nuevo en la página de entidad de correo electrónico](#new-to-the-email-entity-page)
 
-Los administradores de Microsoft Defender para Office 365 (o MDO) E5 y MDO P1 y P2 tienen una vista de 360 grados de correo electrónico mediante la página entidad Correo electrónico **.** Esta página de correo electrónico de acceso se creó para mejorar la información que se entrega en el desplegable "detalles de correo electrónico" del Explorador [de amenazas.](threat-explorer-views.md)
+Los administradores de Microsoft Defender para Office 365 E5 y Defender para Office P1 y P2 tienen una vista de 360 grados del correo electrónico mediante la página entidad **Correo electrónico**. Esta página de correo electrónico de acceso se creó para mejorar la información que se entrega en el desplegable "detalles de correo electrónico" del Explorador [de amenazas.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Llegar a la página de entidad de correo electrónico
 
-La página de entidad de correo electrónico está disponible en el portal de Microsoft 365 defender ( ) en <https://security.microsoft.com> Correo electrónico & explorador de  \> **colaboración**. O bien, para ir directamente a la **página Explorador,** use <https://security.microsoft.com/threatexplorer> .
+La página de entidad de correo electrónico está disponible en el portal de Microsoft 365 Defender ( ) en <https://security.microsoft.com> Correo electrónico & explorador de  \> **colaboración**. O bien, para ir directamente a la **página Explorador,** use <https://security.microsoft.com/threatexplorer> .
 
 En **el Explorador,** seleccione el asunto de un correo electrónico que está investigando. Se mostrará una barra dorada en la parte superior del menú desplegable de correo electrónico para ese correo. En esta invitación a la nueva página, se lee "Pruebe nuestra nueva página de entidad de correo electrónico con datos enriquecidos...". Seleccione esta opción para ver la nueva página.
 

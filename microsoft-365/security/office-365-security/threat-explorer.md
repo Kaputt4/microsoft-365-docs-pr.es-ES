@@ -19,12 +19,12 @@ description: Use detecciones en tiempo real y explorador en el portal de Microso
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3dc8c205d5edfe455884d64030c7a6070762adb
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108552"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195038"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -56,7 +56,7 @@ Con este informe, puede:
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Mejoras en la experiencia de búsqueda de amenazas
 
-### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>Introducción del identificador de alerta para alertas de MDO en detecciones en tiempo real o explorador (versión preliminar)
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>Introducción del identificador de alerta de Defender para Office 365 alertas en el Explorador/Detecciones en tiempo real (versión preliminar)
 
 Hoy en día, si navega desde una alerta al Explorador de amenazas, abre una vista filtrada en el Explorador, con la vista filtrada por el identificador de directiva de alerta (el identificador de directiva es un identificador único de una directiva de alerta).
 Estamos haciendo que esta integración sea más relevante mediante la introducción del identificador de alerta (vea un ejemplo de identificador de alerta a continuación) en el Explorador de amenazas y detecciones en tiempo real para que vea los mensajes que son relevantes para la alerta específica, así como un recuento de correos electrónicos. También podrá ver si un mensaje formaba parte de una alerta, así como navegar de ese mensaje a la alerta específica.

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre qué sucede cuando se cierra o elimina una investigación o un caso legal admitido por un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: efbcbe34e6d7d8b564bcfa0cf9bbd8a1fbb59709
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657656"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194637"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Cerrar o eliminar un Advanced eDiscovery caso
 
@@ -36,7 +36,7 @@ Esto es lo que sucede al cerrar un Advanced eDiscovery caso:
 
 - Cerrar un caso solo desactiva las retenciones que están asociadas a ese caso. Si otras retenciones se encuentran en una ubicación de contenido (como una retención por juicio, una retención de exhibición de documentos electrónicos principal o una retención de un caso Advanced eDiscovery diferente) esas retenciones se mantendrán.
 
-- El caso aún se muestra en la página exhibición de documentos electrónicos en el centro de Microsoft 365 cumplimiento. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
+- El caso sigue estando en la página exhibición de documentos electrónicos de la Centro de cumplimiento de Microsoft 365. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
 
 - Puede editar un caso después de cerrarlo. Por ejemplo, puede agregar o quitar miembros, crear búsquedas, exportar resultados de búsqueda y preparar resultados de búsqueda para el análisis en Advanced eDiscovery. La principal diferencia entre los casos activos y cerrados es que las retenciones se desactivarán cuando se cierra un caso.
 
@@ -46,9 +46,9 @@ Para cerrar un caso:
 
 2. En la pestaña **Configuración**, en **Información del**, haga clic en **Seleccionar**.
 
-3. En la parte inferior de la **página desplegable Información** de casos, haga clic en (**...**) **Más opciones** y, a continuación, haga clic **en Cerrar caso**.
+   ![Obtener acceso a la página desplegable de información de caso en un Advanced eDiscovery caso](..\media\AeDSelectCaseInformation.png) 
 
-   ![Opción en el menú Más opciones para cerrar un Advanced eDiscovery caso](..\Media\CloseAdvancedeDiscoveryCase.png)
+3. En la parte inferior de la **página desplegable Información** del caso, haga clic en Acciones y, a continuación, haga clic en Cerrar **caso**. 
 
    El proceso de cierre puede tardar hasta 60 minutos en completarse.
 
@@ -62,15 +62,13 @@ Para volver a abrir un caso cerrado:
 
 2. En la pestaña **Configuración**, en **Información de caso**, haga clic en **Seleccionar**.
 
-3. En la parte inferior de la **página desplegable Información** de casos, haga clic en (**...**) **Más opciones y,** a continuación, haga clic **en Abrir caso**.
-
-   ![Opción en el menú Más opciones para volver a abrir un Advanced eDiscovery caso](..\Media\ReopenAdvancedeDiscoveryCase.png)
+3. En la parte inferior de la **página desplegable Información** del caso, haga clic en Acciones y, a continuación, haga clic en Abrir **caso**. 
 
    El proceso de reapertura puede tardar hasta 60 minutos en completarse.
 
 ## <a name="delete-a-case"></a>Eliminar un caso
 
-Puede eliminar los casos activos y Advanced eDiscovery cerrados. Al eliminar un caso, se eliminan todos los componentes asociados al caso, como la lista de administradores, comunicaciones, búsquedas, conjuntos de revisión y trabajo de exportación. El caso se quita de la lista de casos de la **Advanced eDiscovery** en el centro de Microsoft 365 cumplimiento. No puede recuperar ni volver a abrir un caso eliminado.
+Puede eliminar los casos activos y Advanced eDiscovery cerrados. Al eliminar un caso, se eliminan todos los componentes asociados al caso, como la lista de administradores, comunicaciones, búsquedas, conjuntos de revisión y trabajo de exportación. El caso se quita de la lista de casos de la **página Advanced eDiscovery** de la Centro de cumplimiento de Microsoft 365. No puede recuperar ni volver a abrir un caso eliminado.
 
 > [!NOTE]
 > En escenarios de derrame de datos, la única forma de quitar elementos de un conjunto de revisión es eliminar el Advanced eDiscovery caso. Otros métodos de "búsqueda y purga" no quitan elementos de un conjunto de revisión.
@@ -91,6 +89,5 @@ Para eliminar un caso:
 
 2. En la pestaña **Configuración**, en **Información del**, haga clic en **Seleccionar**.
 
-3. En la parte inferior de la **página desplegable Información** de casos, haga clic en (**...**) **Más opciones y,** a continuación, haga clic **en Eliminar caso**.
+3. En la parte inferior de la **página desplegable Información** de casos, haga clic en Acciones y, a continuación, haga clic en Eliminar **caso**. 
 
-   ![Opción en el menú Más opciones para eliminar un Advanced eDiscovery caso](..\Media\DeleteAdvancedeDiscoveryCase.png)

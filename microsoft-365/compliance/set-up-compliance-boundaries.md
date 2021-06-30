@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido de usuario que un administrador de exhibición de documentos electrónicos puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23ff50b9cd0ab0178962f7be9f1cedfbd6a7a1f7
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: be857277d36d95ac1cd974ccb0c87f2048798450
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022347"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194714"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de exhibición de documentos electrónicos
 
@@ -205,7 +205,7 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
    Para simplificar el concepto, el **parámetro Region** controla el centro de datos que se usa para buscar contenido en SharePoint y OneDrive. Esto no se aplica a la búsqueda de contenido en Exchange porque Exchange búsquedas de contenido no están vinculadas por la ubicación geográfica de los centros de datos. Además, el mismo **valor de parámetro Region** también puede dictar el centro de datos por el que se enrutan las exportaciones. Esto suele ser necesario para controlar el movimiento de datos a través de los tableros geográficos.
 
 > [!NOTE]
-> Si usa Advanced eDiscovery, el parámetro **Region** no controla la región desde la que se exportan los datos. Los datos se exportan desde el centro de datos principal de la organización. Además, la búsqueda de contenido en SharePoint y OneDrive no está enlazada por la ubicación geográfica de los centros de datos. Se buscan todos los centros de datos. Para obtener más información sobre Advanced eDiscovery, vea [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
+> Si usa Advanced eDiscovery, el parámetro **Region** no controla la región desde la que se exportan los datos. Los datos se exportan desde la ubicación central de la organización. Además, la búsqueda de contenido en SharePoint y OneDrive no está enlazada por la ubicación geográfica de los centros de datos. Se buscan todos los centros de datos. Para obtener más información sobre Advanced eDiscovery, vea [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
 
 Estos son ejemplos del uso del **parámetro Region** al crear filtros de permisos de búsqueda para los límites de cumplimiento. Esto supone que la subsidiaria Fourth Coffee se encuentra en Norteamérica y que Coho Winery está en Europa. 
   
@@ -225,7 +225,9 @@ Tenga en cuenta lo siguiente al buscar y exportar contenido en entornos multige�
 
 - Al buscar contenido en SharePoint y OneDrive, el parámetro **Region** dirige las búsquedas a la ubicación principal o satélite donde el administrador de exhibición de documentos electrónicos llevará a cabo investigaciones de exhibición de documentos electrónicos. Si un administrador de exhibición de documentos electrónicos busca SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelven resultados de búsqueda.
 
-- Al exportar resultados de búsqueda, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype Empresarial, SharePoint, OneDrive y otros servicios que se pueden buscar mediante la herramienta búsqueda de contenido) se cargan en la ubicación Almacenamiento de Azure del centro de datos especificado por el **parámetro Region.** Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte a través de bordes controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
+- Al exportar resultados de búsqueda desde eDiscovery principal, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype Empresarial, SharePoint, OneDrive y otros servicios que se pueden buscar mediante la herramienta búsqueda de contenido) se cargan en la ubicación de Azure Storage del centro de datos especificada por el **parámetro Region.** Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte a través de bordes controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
+
+  Al exportar contenido desde Advanced eDiscovery, no se puede controlar dónde se carga el contenido mediante el **parámetro Region.** El contenido se carga en una Azure Storage en un centro de datos de la ubicación central de la organización. Para obtener una lista de ubicaciones geográficas basadas en la ubicación central, vea Microsoft 365 configuración de exhibición de documentos [electrónicos multigeós.](../enterprise/multi-geo-ediscovery-configuration.md)
 
 - Puede editar un filtro de permisos de búsqueda existente para agregar o cambiar la región ejecutando el siguiente comando:
 
@@ -275,13 +277,13 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
-**¿Quién puede crear y administrar filtros de permisos de búsqueda (New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter cmdlets)?**
+**Quién puede crear y administrar filtros de permisos de búsqueda (con New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter cmdlets)?**
   
 Para crear, ver y modificar filtros de permisos de búsqueda, debe ser miembro del grupo de roles Administración de la organización en el Centro de cumplimiento de Microsoft 365.
   
 **Si un administrador de exhibición de documentos electrónicos está asignado a más de un grupo de roles que abarca varias agencias, ¿cómo buscan contenido en una agencia u otra?**
   
-El administrador de exhibición de documentos electrónicos puede agregar parámetros a su consulta de búsqueda que restringen la búsqueda a una agencia específica. Por ejemplo, si una organización ha especificado la propiedad **CustomAttribute10** para diferenciar las agencias, puede anexar lo siguiente a su consulta de búsqueda para buscar buzones y cuentas de OneDrive en una agencia específica:  `CustomAttribute10:<value>` .
+El administrador de exhibición de documentos electrónicos puede agregar parámetros a su consulta de búsqueda que restringen la búsqueda a una agencia específica. Por ejemplo, si una organización ha especificado la propiedad **CustomAttribute10** para diferenciar las agencias, puede anexar lo siguiente a su consulta de búsqueda para buscar buzones y cuentas OneDrive en una agencia específica: `CustomAttribute10:<value>` .
   
 **¿Qué sucede si se cambia el valor del atributo que se usa como atributo de cumplimiento en un filtro de permisos de búsqueda?**
   
@@ -289,13 +291,13 @@ Un filtro de permisos de búsqueda tarda hasta tres días en aplicar el límite 
   
 **¿Puede un administrador de exhibición de documentos electrónicos ver contenido desde dos límites de cumplimiento independientes?**
   
-Sí, esto se puede hacer al buscar buzones de Exchange agregando el administrador de exhibición de documentos electrónicos a los grupos de roles que tienen visibilidad para ambas agencias. Sin embargo, al buscar sitios de SharePoint y cuentas de OneDrive, un administrador de exhibición de documentos electrónicos solo puede buscar contenido en límites de cumplimiento diferentes si las agencias están en la misma región o ubicación geográfica. **Nota:** Esta limitación para los sitios no se aplica en la exhibición de documentos electrónicos avanzada porque la búsqueda de contenido en SharePoint y OneDrive no está enlazada por ubicación geográfica.
+Sí, esto se puede hacer al buscar Exchange buzones de correo agregando el administrador de exhibición de documentos electrónicos a los grupos de roles que tienen visibilidad para ambas agencias. Sin embargo, al buscar SharePoint sitios y cuentas OneDrive, un administrador de exhibición de documentos electrónicos solo puede buscar contenido en límites de cumplimiento diferentes si las agencias están en la misma región o ubicación geográfica. **Nota:** Esta limitación para los sitios no se aplica en Advanced eDiscovery porque la búsqueda de contenido en SharePoint y OneDrive no está enlazada por ubicación geográfica.
   
-**¿Funcionan los filtros de permisos de búsqueda para retenciones de casos de exhibición de documentos electrónicos, directivas de retención de Microsoft 365 o DLP?**
+**¿Funcionan los filtros de permisos de búsqueda para las conservaciones de casos de exhibición de documentos electrónicos, Microsoft 365 directivas de retención o DLP?**
   
 No, no en este momento.
   
-**Si especifico una región para controlar dónde se exporta el contenido, pero no tengo una organización de SharePoint en esa región, ¿puedo seguir buscando en SharePoint?**
+**Si especifico una región para controlar dónde se exporta el contenido, pero no tengo una organización SharePoint en esa región, ¿puedo seguir buscando SharePoint?**
   
 Si la región especificada en el filtro de permisos de búsqueda no existe en la organización, se buscará la región predeterminada.
   

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 79d736330a40d33f5334196d165e72f487b6d959
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108336"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194786"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Evaluar Microsoft Defender para Office 365
 
@@ -50,7 +50,7 @@ Con el modo de evaluación, [Caja fuerte adjuntos,](safe-attachments.md) [Ca
 
 Como parte de la configuración, el modo de evaluación también configura el filtrado [mejorado para conectores](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Mejora la precisión de filtrado al conservar la dirección IP y la información del remitente, que de lo contrario se pierden cuando el correo pasa a través de una puerta de enlace de seguridad de correo electrónico (ESG) delante de Defender para Office 365. El filtrado mejorado para conectores también mejora la precisión de filtrado de las directivas de Exchange Online Protection (EOP) contra correo no deseado y contra suplantación de identidad existentes.
 
-El filtrado mejorado para conectores mejora la precisión del filtrado, pero puede alterar la entrega de determinados mensajes si tiene un ESG delante de Defender para Office 365 y actualmente no omite el filtrado de EOP. El impacto se limita a las directivas de EOP; Las directivas de MDO configuradas como parte de la evaluación se crean en modo no de aplicación. Para minimizar el posible impacto en la producción, puede omitir todo el filtrado de EOP mediante la creación de una regla de flujo de correo (también conocida como regla de transporte) para establecer el nivel de confianza de correo no deseado (SCL) de los mensajes en -1. Consulta Usar reglas de flujo de correo para establecer el nivel de confianza de correo no deseado [(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)en los mensajes de Exchange Online   para obtener más información.
+El filtrado mejorado para conectores mejora la precisión del filtrado, pero puede alterar la entrega de determinados mensajes si tiene un ESG delante de Defender para Office 365 y actualmente no omite el filtrado de EOP. El impacto se limita a las directivas de EOP; Defender para Office 365 las directivas configuradas como parte de la evaluación se crean en modo no de aplicación. Para minimizar el posible impacto en la producción, puede omitir todo el filtrado de EOP mediante la creación de una regla de flujo de correo (también conocida como regla de transporte) para establecer el nivel de confianza de correo no deseado (SCL) de los mensajes en -1. Consulta Usar reglas de flujo de correo para establecer el nivel de confianza de correo no deseado [(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)en los mensajes de Exchange Online   para obtener más información.
 
 Cuando se configura el modo de evaluación, tendrá un informe actualizado diariamente con hasta 90 días de datos que cuantifican los mensajes que se habrían bloqueado si se hubieran implementado las directivas (por ejemplo, eliminar, enviar a correo no deseado, cuarentena). Se generan informes para todas las detecciones de Defender Office 365 y EOP. Se agregan por tecnología de detección (por ejemplo, suplantación) y se pueden filtrar por intervalo de tiempo. Además, los informes de mensajes se pueden crear a petición para crear pivotes personalizados o para profundizar en los mensajes mediante el Explorador.
 

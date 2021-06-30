@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Siga la ruta de un mensaje entrante a través de la pila de filtrado de amenazas en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1113d04cabdabe2925242cb18dde78daf9ef6e2c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683300"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194810"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 
@@ -51,7 +51,7 @@ Los bloques perimetrales están diseñados para ser automáticos. En el caso de 
 
 Las características de la inteligencia del remitente son fundamentales para capturar mensajes de correo no deseado, masivos, suplantación y suplantación no autorizados, y también tienen en cuenta la detección de phish. La mayoría de estas características se pueden configurar individualmente.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La fase 2 del filtrado en MDO es la inteligencia del remitente.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La fase 2 del filtrado en Defender for Office 365 es la inteligencia del remitente.":::
 
 1. **Los desencadenadores y** alertas de detección de riesgo de cuentas se desencadenan cuando una cuenta tiene un comportamiento anómalo, coherente con el riesgo. En algunos casos, la cuenta de usuario se bloquea e impide enviar más mensajes de correo electrónico hasta que el equipo de operaciones de seguridad de una organización resuelva el problema.
 
@@ -133,7 +133,7 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 
 El diagrama final (como con todas las partes del diagrama que lo componen) está sujeto a cambios a medida que el producto *crece y se desarrolla*. Marca esta página y usa **la** opción de comentarios que encontrarás en la parte inferior si necesitas preguntar después de las actualizaciones. Para los registros, esta es la pila con todas las fases en orden:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Todas las fases de filtrado en MDO en orden, de 1 a 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Todas las fases de filtrado en Defender para Office 365 orden, de 1 a 4.":::
 
 ## <a name="more-information"></a>Más información
 

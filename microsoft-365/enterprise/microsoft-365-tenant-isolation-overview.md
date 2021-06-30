@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo contiene un resumen de cómo Microsoft aplica el aislamiento de inquilinos en servicios en la nube como Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c5be65186b75f6056a64b776e4f0d25bcd55eb1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b52d936bb00ac0adef0baf428cbc5f9a8f8aba49
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923081"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194654"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Aislamiento de inquilino en Microsoft 365
 
@@ -39,7 +39,7 @@ Se han implementado varias formas de protección a lo largo de Microsoft 365 par
 - El aislamiento lógico del contenido del cliente dentro de cada espacio empresarial para Microsoft 365 servicios se logra Azure Active Directory autorización y control de acceso basado en roles.
 - SharePoint Online proporciona mecanismos de aislamiento de datos en el nivel de almacenamiento.
 - Microsoft usa una seguridad física rigurosa, un filtrado en segundo plano y una estrategia de cifrado multicapa para proteger la confidencialidad y la integridad del contenido del cliente. Todos Microsoft 365 centros de datos tienen controles de acceso biométricos, con la mayoría de las impresiones de la palma para obtener acceso físico. Además, todos los empleados de Microsoft con sede en Estados Unidos deben completar correctamente una comprobación de antecedentes estándar como parte del proceso de contratación. Para obtener más información sobre los controles usados para el acceso administrativo en Microsoft 365, vea [Microsoft 365 Administrative Access Controls](/compliance/assurance/assurance-administrative-access-controls-overview).
-- Microsoft 365 usa tecnologías del lado del servicio que cifran el contenido del cliente en reposo y en tránsito, incluidos BitLocker, cifrado por archivo, Seguridad de la capa de transporte (TLS) y Seguridad de protocolos de Internet (IPsec). Para obtener detalles específicos sobre el cifrado en Microsoft 365, vea [Tecnologías de cifrado de datos en Microsoft 365](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md).
+- Microsoft 365 tecnologías del lado del servicio que cifran el contenido del cliente en reposo y en tránsito, incluido BitLocker, cifrado por archivo, Seguridad de la capa de transporte (TLS) y Seguridad de protocolo de Internet (IPsec). Para obtener detalles específicos sobre el cifrado en Microsoft 365, vea [Tecnologías de cifrado de datos en Microsoft 365](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md).
 
 Juntos, las protecciones mencionadas anteriormente proporcionan controles de aislamiento lógico robustos que proporcionan protección contra amenazas y mitigación equivalentes a las proporcionadas por el aislamiento físico solo.
 
@@ -48,7 +48,6 @@ Juntos, las protecciones mencionadas anteriormente proporcionan controles de ais
 - [Aislamiento y Control de acceso en Azure Active Directory](microsoft-365-isolation-in-azure-active-directory.md)
 - [Aislamiento del inquilino en Office Graph y Delve](microsoft-365-isolation-in-graph-and-delve.md)
 - [Aislamiento de inquilino en Búsqueda de Microsoft 365](microsoft-365-isolation-in-microsoft-365-search.md)
-- [Aislamiento del inquilino en Office 365 Video](microsoft-365-isolation-in-microsoft-365-video.md)
 - [Límites de recursos](/compliance/assurance/assurance-resource-limits)
 - [Supervisar y probar los límites de inquilinos](/compliance/assurance/assurance-monitoring-and-testing)
 - [Aislamiento y control de acceso en Microsoft 365](microsoft-365-isolation-in-microsoft-365.md)

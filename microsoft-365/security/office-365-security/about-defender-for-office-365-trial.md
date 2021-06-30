@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: ba01fa45ca9a4e2e5b3597378bf7ddafc8be3f56
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768751"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195014"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
 
@@ -49,7 +49,7 @@ Una prueba permite a las organizaciones configurar y configurar fácilmente defe
 
 De forma predeterminada, estas directivas están en el ámbito de todos los usuarios de la organización, pero los administradores pueden personalizar las directivas durante o después de la instalación para que se apliquen solo a usuarios específicos.
 
-Durante la instalación, la funcionalidad de respuesta de MDO (que se encuentra en MDO P2 o equivalente) también se configura para toda la organización. No se requiere ningún ámbito de directiva.
+Durante la instalación, defender para Office 365 de respuesta (que se encuentra en Defender para Office 365 P2 o equivalente) también se configura para toda la organización. No se requiere ningún ámbito de directiva.
 
 ## <a name="licensing"></a>Licencias
 

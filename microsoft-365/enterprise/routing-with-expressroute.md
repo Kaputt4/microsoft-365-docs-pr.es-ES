@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: En este artículo, obtenga información sobre los requisitos de enrutamiento de Azure ExpressRoute, los circuitos y los dominios de enrutamiento para su uso con Office 365.
-ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b27e3cfe41af8cf5e444f1221f1cee2e3bbf5826
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687174"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194798"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
@@ -85,14 +85,6 @@ Para que Microsoft vuelva a la red para estos flujos de tráfico bidireccional, 
 
 Cuando configure una relación de emparejamiento con el dominio de enrutamiento de emparejamiento de Microsoft y se apruebe para el acceso adecuado, podrá ver todos los servicios PaaS y SaaS disponibles a través de ExpressRoute. Los Office 365 diseñados para ExpressRoute se pueden administrar con [comunidades BGP](./bgp-communities-in-expressroute.md) o filtros [de ruta.](/azure/expressroute/how-to-routefilter-portal)
   
-Otras aplicaciones, como Office 365 Vídeo, es una Office 365 aplicación; sin embargo, Office 365 Video se compone de tres componentes diferentes, el portal, el servicio de streaming y la red de entrega de contenido. El portal reside en SharePoint Online, el servicio de streaming reside en Azure Media Services y la red de entrega de contenido reside en el Azure CDN. En la tabla siguiente se describen estos componentes.
-
-|**Componente**|**Aplicación subyacente**|**¿Se incluye SharePoint la Community BGP en línea?**|**Finalidad**|
-|:-----|:-----|:-----|:-----|
-|Office 365 Portal de vídeo  <br/> |SharePoint Online  <br/> |Sí  <br/> |Configuración, carga  <br/> |
-|Office 365 Servicio de streaming de vídeo  <br/> |Servicios multimedia de Azure  <br/> |No  <br/> |Servicio de streaming, usado en caso de que el vídeo no esté disponible desde el CDN  <br/> |
-|Office 365 Red de entrega de contenido de vídeo  <br/> |Azure CDN  <br/> |No  <br/> |Origen principal de descarga/streaming de vídeo. [Obtenga más información sobre Office 365 de vídeo](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e).  <br/> |
-
 Cada una de las Office 365 que están disponibles con el [](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) emparejamiento de Microsoft se enumeran en el artículo Office 365 puntos de conexión por tipo de aplicación y FQDN. El motivo para usar el FQDN en las tablas es permitir a los clientes administrar [](./managing-office-365-endpoints.md) el tráfico mediante archivos PAC u otras configuraciones de proxy, consulte nuestra guía para administrar puntos de conexión Office 365, por ejemplo, archivos PAC.
   
 En algunas situaciones, hemos usado un dominio comodín en el que uno o varios SUB FQDN se anuncian de forma diferente que el dominio comodín de nivel superior. Esto suele ocurrir cuando el comodín representa una larga lista de servidores que se anuncian en ExpressRoute e Internet, mientras que un pequeño subconjunto de destinos solo se anuncia en Internet, o al contrario. Consulte las tablas siguientes para comprender dónde están las diferencias.
@@ -259,6 +251,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/erorout
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Intervalos de direcciones IP y direcciones URL de Office 365.](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c043e97d6c02e4f41d000e9ce8cfea4a0950252a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 65e3e8d1baef7ca4440824c9a262f0b5f696b657
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246258"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194750"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>Informar y solucionar problemas de Microsoft Defender para las reglas ASR de ATP
 
@@ -42,7 +42,7 @@ Esta es una captura de pantalla del centro Microsoft 365 de seguridad (en **Repo
 
 Una de las características más eficaces de Microsoft Defender para Endpoint es la búsqueda avanzada. Si no estás familiarizado con la búsqueda avanzada, consulta búsqueda proactiva de [amenazas con búsqueda avanzada.](advanced-hunting-overview.md)
 
-La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas (Kusto Query Language) que le permite explorar hasta 30 días de los datos capturados (sin procesar), que MDE Endpoint Detection and Response (EDR) recopila de todas las máquinas. A través de la búsqueda avanzada, puede inspeccionar proactivamente eventos para localizar indicadores y entidades interesantes. El acceso flexible a los datos ayuda a la búsqueda sin restricciones de amenazas conocidas y potenciales.
+La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas (Kusto Query Language) que te permite explorar hasta 30 días de los datos capturados (sin procesar) que Defender for Endpoint recopila de tus dispositivos. A través de la búsqueda avanzada, puede inspeccionar proactivamente eventos para localizar indicadores y entidades interesantes. El acceso flexible a los datos ayuda a la búsqueda sin restricciones de amenazas conocidas y potenciales.
 
 Mediante la búsqueda avanzada, es posible extraer información de reglas ASR, crear informes y obtener información detallada sobre el contexto de un evento de bloqueo o auditoría de regla ASR determinado.
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 077411e5af5825efcf81d19ce8cb72ef850ae17b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 7243e8f6fad225e6c4570184736e8d6588466d0a
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054312"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194966"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación basada en Intune para Microsoft Defender para endpoint en macOS
 
@@ -101,12 +101,12 @@ Este perfil contiene una información de licencia para Microsoft Defender para E
     > [!div class="mx-imgBorder"]
     > ![Creación de perfiles de configuración personalizados](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. Elija un nombre para el perfil, por ejemplo, "Incorporación de MDE para macOS". Haga clic en **Siguiente**.
+1. Elija un nombre para el perfil, por ejemplo, "Incorporación de defender o extremo para macOS". Haga clic en **Siguiente**.
 
     > [!div class="mx-imgBorder"]
     > ![Perfil de configuración personalizado: nombre](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. Elija un nombre para el nombre del perfil de configuración, por ejemplo, "Incorporación de MDE para macOS".
+1. Elija un nombre para el nombre del perfil de configuración, por ejemplo, "Defender for Endpoint onboarding for macOS".
 1. Seleccione intune/WindowsDefenderATPOnboarding.xml que extrajo del paquete de incorporación anterior como archivo de perfil de configuración.
 
     > [!div class="mx-imgBorder"]
@@ -172,7 +172,7 @@ Este perfil es necesario para macOS 10.15 (Catalina) o versiones anteriores. Se 
 
 Descargue [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) desde [nuestro repositorio GitHub archivo](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Siga las instrucciones para incorporar [blobs](#onboarding-blob) desde arriba, usando "MDE Full Disk Access" como nombre de perfil y **descargado fulldisk.mobileconfig** como nombre de perfil de configuración.
+Siga las instrucciones para incorporar [blobs](#onboarding-blob) desde arriba, usando "Defender para el acceso de disco completo de extremo" como nombre de perfil y **descargado fulldisk.mobileconfig** como nombre de perfil de configuración.
 
 ### <a name="network-filter"></a>Filtro de red
 
@@ -180,7 +180,7 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
 
 Descargue [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) desde [nuestro GitHub de archivos](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Siga las instrucciones para [incorporar blobs](#onboarding-blob) desde arriba, usando "MDE Network Filter" como nombre de perfil y **descargado netfilter.mobileconfig** como nombre de perfil de configuración.
+Siga las instrucciones para incorporar [blobs](#onboarding-blob) desde arriba, usando "Defender para el filtro de red de extremo" como nombre de perfil y **descargado netfilter.mobileconfig** como nombre de perfil de configuración.
 
 ### <a name="notifications"></a>Notificaciones
 
@@ -188,7 +188,7 @@ Este perfil se usa para permitir que Microsoft Defender para Endpoint en macOS y
 
 Descargue [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) desde [nuestro repositorio GitHub archivo](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Siga las instrucciones para [incorporar blobs](#onboarding-blob) desde arriba, usando "Notificaciones MDE" como nombre de perfil y descargado **notif.mobileconfig** como nombre de perfil de configuración.
+Siga las instrucciones para incorporar [blobs](#onboarding-blob) desde arriba, usando "Defender para notificaciones de extremo" como nombre de perfil y descargado **notif.mobileconfig** como nombre de perfil de configuración.
 
 ### <a name="view-status"></a>Ver estado
 

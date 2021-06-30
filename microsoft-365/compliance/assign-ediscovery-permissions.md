@@ -1,5 +1,5 @@
 ---
-title: Asignar permisos de exhibición de documentos electrónicos en el centro Microsoft 365 de cumplimiento
+title: Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,26 +16,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro Microsoft 365 cumplimiento.
+description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 63afafbb8254169e266e5a3305df64aa9d271f79
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 06e75a18c338d2634ae3be93514ee518d9e91860
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782458"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194678"
 ---
-# <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro Microsoft 365 de cumplimiento
+# <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365
 
-Si desea que los usuarios [](ediscovery.md) usen cualquiera de las herramientas relacionadas con la exhibición de documentos electrónicos en el centro de cumplimiento de Microsoft 365, debe asignarles los permisos adecuados. La forma más sencilla de hacerlo es agregar a la persona el grupo de roles adecuado en la página **Permisos** del centro de cumplimiento. En este tema se describen los permisos necesarios para realizar tareas de exhibición de documentos electrónicos.
+Si desea que las personas [](ediscovery.md) usen cualquiera de las herramientas relacionadas con la exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365, debe asignarles los permisos adecuados. La forma más sencilla de hacerlo es agregar a la persona el grupo de roles adecuado en la página **Permisos** del centro de cumplimiento. En este tema se describen los permisos necesarios para realizar tareas de exhibición de documentos electrónicos.
   
-El grupo de roles principal relacionado con la exhibición de documentos electrónicos en Microsoft 365 de cumplimiento se denomina **Administrador de exhibición de documentos electrónicos**. Hay dos subgrupos dentro de este grupo de roles.
+El grupo de roles principal relacionado con la exhibición de documentos electrónicos en Centro de cumplimiento de Microsoft 365 se denomina **Administrador de exhibición de documentos electrónicos**. Hay dos subgrupos dentro de este grupo de roles.
   
 - **Administradores** de exhibición de documentos electrónicos: un administrador de exhibición de documentos electrónicos puede usar herramientas de búsqueda de exhibición de documentos electrónicos para buscar ubicaciones de contenido en la organización y realizar diversas acciones relacionadas con la búsqueda, como obtener una vista previa y exportar los resultados de la búsqueda. Los miembros también pueden crear y administrar casos en la exhibición de documentos electrónicos principales y Advanced eDiscovery, agregar y quitar miembros a un caso, crear retenciones de casos, ejecutar búsquedas asociadas a un caso y obtener acceso a datos de casos. Los supervisores de eDiscovery solo pueden acceder y supervisar los casos que crean. No pueden acceder ni supervisar los casos creados por otros supervisores de eDiscovery.
   
 - **Administradores de eDiscovery**: un administrador de eDiscovery es un miembro del grupo de roles del supervisor de eDiscovery y puede realizar la misma búsqueda de contenido y tareas relacionadas con la administración de casos que puede realizar un supervisor de eDiscovery. Además, un administrador de eDiscovery puede:
   
-  - Obtenga acceso a todos los casos que se enumeran en **la** exhibición de documentos electrónicos principal **y** Advanced eDiscovery páginas del centro de Microsoft 365 cumplimiento.
+  - Obtenga acceso a todos los casos enumerados en **la** exhibición de documentos electrónicos principal **y** Advanced eDiscovery páginas de la Centro de cumplimiento de Microsoft 365.
 
   - Acceder a los datos de los casos en eDiscovery avanzado para cualquier caso en la organización.
   
@@ -44,11 +44,11 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
   Por motivos por los que es posible que desee administradores de exhibición de documentos electrónicos en su organización, vea [Más información](#more-information).
 
 > [!NOTE]
-> Para analizar los datos de un usuario mediante Advanced eDiscovery, al usuario (el custodio de los datos) se le debe asignar una Office 365 E5 o Microsoft 365 E5 licencia. Como alternativa, los usuarios con una Office 365 E1 o una licencia de Office 365 o Microsoft 365 E3 pueden tener asignada una licencia de complemento Cumplimiento de Microsoft 365 E5 o Microsoft 365 eDiscovery and Audit. Los administradores, los responsables de cumplimiento o el personal legal que están asignados a casos como miembros y usan Advanced eDiscovery para recopilar, ver y analizar datos no necesitan una licencia E5. Para obtener más información sobre Advanced eDiscovery licencias, vea [Suscripciones y licencias en Advanced eDiscovery](overview-ediscovery-20.md#subscriptions-and-licensing).
+> Para analizar los datos de un usuario mediante Advanced eDiscovery, al usuario (el administrador de los datos) se le debe asignar una Office 365 E5 o Microsoft 365 E5 licencia. Como alternativa, a los usuarios con una Office 365 E1 o una licencia Office 365 o Microsoft 365 E3 se les puede asignar una licencia de complemento Cumplimiento de Microsoft 365 E5 o Microsoft 365 eDiscovery and Audit. Los administradores, los responsables de cumplimiento o el personal legal que están asignados a casos como miembros y usan Advanced eDiscovery para recopilar, ver y analizar datos no necesitan una licencia E5. Para obtener más información sobre Advanced eDiscovery licencias, vea [Suscripciones y licencias en Advanced eDiscovery](overview-ediscovery-20.md#subscriptions-and-licensing).
   
 ## <a name="before-you-assign-permissions"></a>Antes de asignar permisos
 
-- Debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol Administración de roles para asignar permisos de exhibición de documentos electrónicos en el centro de Microsoft 365 cumplimiento.
+- Debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol Administración de roles para asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
 
 - Puede usar el cmdlet [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) en PowerShell del Centro de seguridad & para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de exhibición de documentos electrónicos en el grupo de roles administrador de exhibición de documentos electrónicos. Sin embargo, no puede agregar un grupo de seguridad habilitado para correo al subgrupo administradores de exhibición de documentos electrónicos. Para obtener más información, [vea More information](#more-information). 
   
@@ -56,7 +56,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con una cuenta que pueda asignar permisos.
   
-2. En el panel izquierdo del centro de Microsoft 365 cumplimiento, seleccione **Permisos**.
+2. En el panel izquierdo de la Centro de cumplimiento de Microsoft 365, seleccione **Permisos**.
 
 3. En la **página Permisos & roles,** en **Centro de cumplimiento**, haga clic en **Roles**.
 
@@ -71,11 +71,11 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
 > [!NOTE]
 > También puede usar el cmdlet **Add-eDiscoveryCaseAdmin** para convertir a un usuario en administrador de exhibición de documentos electrónicos. Sin embargo, el usuario debe tener asignado el rol de administración de casos antes de poder usar este cmdlet para que sea un administrador de exhibición de documentos electrónicos. Para obtener más información, [vea Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin). 
   
-En  la página Permisos del Centro de cumplimiento de Microsoft 365, también puede asignar a los usuarios permisos relacionados con la exhibición de documentos electrónicos agregándolos a los grupos de roles Administrador de cumplimiento, Administración de la organización y Revisor. Para obtener una descripción de los roles RBAC relacionados con la exhibición de documentos electrónicos asignados a cada uno de estos grupos de roles, vea [RBAC roles related to eDiscovery](#rbac-roles-related-to-ediscovery).
+En **la** página Permisos de la Centro de cumplimiento de Microsoft 365, también puede asignar a los usuarios permisos relacionados con la exhibición de documentos electrónicos agregándolos a los grupos de roles Administrador de cumplimiento, Administración de la organización y Revisor. Para obtener una descripción de los roles RBAC relacionados con la exhibición de documentos electrónicos asignados a cada uno de estos grupos de roles, vea [RBAC roles related to eDiscovery](#rbac-roles-related-to-ediscovery).
 
 ## <a name="rbac-roles-related-to-ediscovery"></a>Roles RBAC relacionados con eDiscovery
 
-En la tabla siguiente se enumeran los roles RBAC relacionados con la exhibición de documentos electrónicos en el centro de cumplimiento de Microsoft 365 e indica los grupos de roles integrados a los que se asigna cada función de forma predeterminada.
+En la tabla siguiente se enumeran los roles RBAC relacionados con la exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 e indica los grupos de roles integrados a los que se asigna cada función de forma predeterminada.
   
 | Función | Administrador de cumplimiento | Administrador de eDiscovery & administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
@@ -95,7 +95,7 @@ En las secciones siguientes se describe cada uno de los roles RBAC relacionados 
 
 ### <a name="case-management"></a>Administración de casos
 
-Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a la exhibición de documentos electrónicos principales y Advanced eDiscovery casos en el centro de Microsoft 365 cumplimiento. Como se explicó anteriormente, se debe asignar a un usuario el rol de administración de casos para poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para que sea un administrador de exhibición de documentos electrónicos.
+Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a la exhibición de documentos electrónicos principales y Advanced eDiscovery casos en el Centro de cumplimiento de Microsoft 365. Como se explicó anteriormente, se debe asignar a un usuario el rol de administración de casos para poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para que sea un administrador de exhibición de documentos electrónicos.
 
 Para obtener más información, vea:
 
@@ -111,13 +111,13 @@ Para obtener más información, [vea Trabajar con comunicaciones en Advanced eDi
 
 ### <a name="compliance-search"></a>Búsqueda de cumplimiento
 
-Este rol permite a los usuarios ejecutar la herramienta búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar buzones y carpetas públicas, sitios de SharePoint Online, sitios OneDrive para la Empresa, conversaciones de Skype Empresarial, grupos de Microsoft 365 y grupos de Microsoft Teams y Yammer. Este rol permite al usuario obtener una estimación de los resultados de la búsqueda y crear informes de exportación, pero se necesitan otros roles para iniciar acciones de búsqueda de contenido como la vista previa, la exportación o la eliminación de resultados de búsqueda.
+Este rol permite a los usuarios ejecutar la herramienta búsqueda de contenido en Centro de cumplimiento de Microsoft 365 para buscar buzones y carpetas públicas, sitios de SharePoint Online, sitios de OneDrive para la Empresa, conversaciones de Skype Empresarial, grupos de Microsoft 365 y grupos de Microsoft Teams y Yammer. Este rol permite al usuario obtener una estimación de los resultados de la búsqueda y crear informes de exportación, pero se necesitan otros roles para iniciar acciones de búsqueda de contenido como la vista previa, la exportación o la eliminación de resultados de búsqueda.
 
-Los usuarios que tienen asignado el rol Búsqueda de cumplimiento pero no tienen el rol Vista previa pueden obtener una vista previa de los resultados de una búsqueda en la que la acción de vista previa ha sido iniciada por un usuario al que se ha asignado el rol Vista previa. El usuario sin el rol Vista previa puede obtener una vista previa de los resultados hasta dos semanas después de crear la acción de vista previa inicial.
+En la búsqueda de contenido y la exhibición de documentos electrónicos principales, los usuarios a los que se les asigna el rol Búsqueda de cumplimiento pero no tienen el rol Vista previa pueden obtener una vista previa de los resultados de una búsqueda en la que la acción de vista previa ha sido iniciada por un usuario al que se ha asignado el rol Vista previa. El usuario sin el rol Vista previa puede obtener una vista previa de los resultados hasta dos semanas después de crear la acción de vista previa inicial.
 
-Del mismo modo, los usuarios a los que se les asigna el rol Búsqueda de cumplimiento pero que no tienen el rol Exportar pueden descargar los resultados de una búsqueda en la que la acción de exportación la inició un usuario al que se le asignó el rol Exportar. El usuario sin el rol Exportar puede descargar los resultados de una búsqueda hasta dos semanas después de que se creó la acción de exportación inicial. Después de eso, no pueden descargar los resultados a menos que alguien con el rol Exportar reinicie la exportación.
+Del mismo modo, los usuarios de búsqueda de contenido y exhibición de documentos electrónicos principales a los que se les asigna el rol Búsqueda de cumplimiento pero que no tienen el rol Exportar pueden descargar los resultados de una búsqueda en la que la acción de exportación la inició un usuario al que se le asignó el rol Exportar. El usuario sin el rol Exportar puede descargar los resultados de una búsqueda hasta dos semanas después de que se creó la acción de exportación inicial. Después de eso, no pueden descargar los resultados a menos que alguien con el rol Exportar reinicie la exportación.
 
-Para obtener más información, vea [Búsqueda de contenido en Office 365](content-search.md).
+El período de gracia de dos semanas para obtener una vista previa y exportar los resultados de búsqueda (sin los roles de búsqueda y exportación correspondientes) no se aplica a Advanced eDiscovery. Los usuarios deben tener asignados los roles Vista previa y Exportar para obtener una vista previa y exportar contenido en Advanced eDiscovery.
 
 ### <a name="custodian"></a>Custodio
 
@@ -129,7 +129,7 @@ Para obtener más información, [vea Trabajar con custodios en Advanced eDiscove
 
 El rol permite a los usuarios exportar los resultados de una búsqueda de contenido a un equipo local. También les permite preparar los resultados de búsqueda para el análisis en Advanced eDiscovery.
 
-Para obtener más información acerca de la exportación de resultados de búsqueda, vea [Export search results from Microsoft 365 compliance center](export-search-results.md).
+Para obtener más información acerca de la exportación de resultados de búsqueda, vea [Export search results from Centro de cumplimiento de Microsoft 365](export-search-results.md).
 
 ### <a name="hold"></a>Hold
 
@@ -147,7 +147,7 @@ Este rol permite a los usuarios ver una lista de elementos devueltos desde una b
 
 ### <a name="review"></a>Revisar
 
-Este rol permite a los usuarios acceder a conjuntos de [revisión en Advanced eDiscovery](overview-ediscovery-20.md). Los usuarios a los que se les asigna este rol pueden ver y abrir la lista de casos en la página de **eDiscovery > Advanced** en el centro de cumplimiento Microsoft 365 del que son miembros. Después de que el usuario obtenga acceso a Advanced eDiscovery caso, puede seleccionar **Revisar conjuntos para** obtener acceso a los datos de caso. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de colección asociada al caso o realizar otras tareas de administración de casos o búsqueda. Los usuarios con este rol solo pueden tener acceso a los datos de un conjunto de revisión.
+Este rol permite a los usuarios acceder a conjuntos de [revisión en Advanced eDiscovery](overview-ediscovery-20.md). Los usuarios a los que se asigna este rol pueden ver y abrir la lista de casos en la página > **eDiscovery advanced** en la Centro de cumplimiento de Microsoft 365 de la que son miembros. Después de que el usuario obtenga acceso a Advanced eDiscovery caso, puede seleccionar **Revisar conjuntos para** obtener acceso a los datos de caso. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de colección asociada al caso o realizar otras tareas de administración de casos o búsqueda. Los usuarios con este rol solo pueden tener acceso a los datos de un conjunto de revisión.
 
 ### <a name="rms-decrypt"></a>Descifrado de RMS
 
@@ -171,7 +171,7 @@ Este rol permite a los usuarios realizar la eliminación masiva de datos que coi
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange no se admiten Microsoft 365 de distribución y grupos de distribución. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell ejecutando `New-DistributionGroup -Type Security` . También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el centro Microsoft 365 administración. Puede tardar hasta 60 minutos después de crearla para que una nueva seguridad habilitada para correo esté disponible para agregarla al grupo de roles Administradores de exhibición de documentos electrónicos. 
+    Exchange no se admiten Microsoft 365 de distribución y grupos de distribución. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell ejecutando `New-DistributionGroup -Type Security` . También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el Centro de administración de Microsoft 365. Puede tardar hasta 60 minutos después de crearla para que una nueva seguridad habilitada para correo esté disponible para agregarla al grupo de roles Administradores de exhibición de documentos electrónicos. 
 
     También como se ha indicado anteriormente, no puede convertir un grupo de seguridad habilitado para correo como administrador de exhibición de documentos electrónicos mediante el cmdlet **Add-eDiscoveryCaseAdmin** en PowerShell del Centro de seguridad & cumplimiento. Solo puede agregar usuarios individuales como administradores de exhibición de documentos electrónicos.
 
