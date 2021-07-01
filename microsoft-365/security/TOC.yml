@@ -30,12 +30,12 @@
           href: ./office-365-security/mcas-saas-access-policies.md
     - name: Microsoft 365 Defender
       href: ./defender/index.yml
-    - name: "Microsoft Defender para Office\_365"
+    - name: Microsoft Defender para Office 365
       href: ./office-365-security/index.yml
     - name: Microsoft Defender para punto de conexión
       href: ./defender-endpoint/index.yml
     - name: Microsoft Defender for Identity
-      href: 'https://docs.microsoft.com/defender-for-identity'
+      href: /defender-for-identity
     - name: Microsoft 365 para Empresas
       href: ../enterprise/index.yml
     - name: Microsoft 365 para empresas
