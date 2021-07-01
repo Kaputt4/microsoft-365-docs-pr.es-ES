@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: abf58930e2f937922733fedec2f13bfc2949fcb8
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930456"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229832"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland
 
@@ -50,7 +50,7 @@ El proceso de migración se completará durante varias semanas en función del t
 |Power BI & Dynamics 365|Más de 15 días|Microsoft|Migre Power BI y contenido de Dynamics 365.|
 |Finalizar Azure AD|De 1 a 2 días|Microsoft|Completar el recorte de inquilinos a todo el mundo.|
 |Clean-Up|De 1 a 2 días|Clientes|Limpie las conexiones heredadas a Microsoft Cloud Deutschland, como la confianza de usuario de confianza de usuario de confianza de servicios de federación de Active Directory (AD FS), azure AD Conectar y Office cliente.|
-|Extremos deshabilitados|30 días|Microsoft|30 días después de finalizar Azure AD, el servicio Microsoft Cloud Deutschland Azure AD detendrá el acceso de puntos de conexión para la organización en transición. Las solicitudes de extremo, como la autenticación, producirán un error a partir de este momento en el servicio Microsoft Cloud Deutschland. Los clientes que ejecutan cargas de trabajo de Azure en la instancia vinculada Office 365 servicios de Microsoft Cloud Deutschland se trasladarán a la fase de migración final más adelante. |
+|Extremos deshabilitados|30 días|Microsoft|30 días después de finalizar Azure AD, el servicio Microsoft Cloud Deutschland Azure AD detendrá el acceso de puntos de conexión para la organización en transición. Las solicitudes de extremo, como la autenticación, producirán un error a partir de este momento en el servicio Microsoft Cloud Deutschland. Los clientes que ejecutan cargas de trabajo de Azure en la instancia vinculada Office 365 servicios de Microsoft Cloud Deutschland se trasladarán a la fase de migración final más adelante. |
 
 Las fases y sus acciones garantizan que los datos críticos y las experiencias se migren a los servicios Office 365 global. Después de agregar el espacio empresarial a la cola de migración, cada carga de trabajo se completará como un conjunto de pasos que se ejecutan en el servicio back-end. Algunas cargas de trabajo pueden requerir acciones del administrador (o usuario) o la migración puede afectar al uso de las fases que se ejecutan y se analizan en ¿Cómo se organiza la [migración?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -134,7 +134,7 @@ Consideraciones adicionales:
 
 - Si su organización sigue SharePoint flujos de trabajo de 2010, ya no funcionarán después del 31 de diciembre de 2021. SharePoint flujos de trabajo de 2013 seguirán siendo compatibles, aunque desactivados de forma predeterminada para los nuevos inquilinos a partir del 1 de noviembre de 2020. Una vez completada la migración SharePoint el servicio en línea, se recomienda pasar a Power Automate otras soluciones admitidas.
  - Los clientes de Microsoft Cloud Deutschland cuya instancia de SharePoint SharePoint Online aún no se ha migrado deben permanecer en un módulo de PowerShell en línea/Microsoft.SharePointOnline.CSOM versión 16.0.20616.12000 o inferior. De lo contrario, las conexiones SharePoint Online a través de PowerShell o el modelo de objetos del lado cliente producirán un error.
-- Durante esta fase, las direcciones IP detrás del SharePoint las direcciones URL cambiarán. Después de la transición a los servicios globales de Office 365, las direcciones de las direcciones URL de inquilino conservadas (por ejemplo, y ) se cambiarán a las direcciones URL e intervalos de direcciones IP de Microsoft 365 en todo el mundo `contoso.sharepoint.de` `contoso-my.sharepoint.de` [(SharePoint Online y OneDrive para la Empresa).](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)
+- Durante esta fase, las direcciones IP detrás del SharePoint las direcciones URL cambiarán. Después de la transición a los servicios globales de Office 365, las direcciones de las direcciones URL de inquilino conservadas (por ejemplo, y ) se cambiarán a las direcciones URL e intervalos de direcciones IP de Microsoft 365 en todo el mundo `contoso.sharepoint.de` `contoso-my.sharepoint.de` [(SharePoint Online y OneDrive para la Empresa).](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business)
 - Aunque SharePoint y OneDrive servicios se transiciónn, Office Online puede que no funcione como se esperaba. 
 
 > [!NOTE]
@@ -231,7 +231,7 @@ En esta fase, Skype Empresarial se migrará a Microsoft Teams. Los Skype Empresa
 - Los usuarios no podrán iniciar sesión para iniciar sesión Skype Empresarial las transiciones de servicio de tiempo a Office 365 servicios y no hasta que se completen las entradas dns del cliente.
 - Los contactos y las reuniones existentes seguirán funcionando como Skype Empresarial reuniones.
 
-Cuando se ha configurado un dominio de vanidad para Skype Empresarial, las entradas DNS deben actualizarse. Consulte Dominios [en el centro de administración Microsoft 365 y](https://admin.microsoft.com/Adminportal/Home#/Domains) aplique los cambios en la configuración de DNS. 
+Cuando se ha configurado un dominio de vanidad para Skype Empresarial, las entradas DNS deben actualizarse. Consulte Dominios [en el Centro de administración de Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/Domains) y aplique los cambios en la configuración de DNS. 
 
 Si tiene que conectarse a Skype Empresarial Online con PowerShell una vez completada la fase de migración 9, use el siguiente código de PowerShell para conectarse:
 

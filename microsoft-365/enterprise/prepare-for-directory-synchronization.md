@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo prepararse para aprovisionar usuarios para Microsoft 365 mediante la sincronización de directorios y las ventajas a largo plazo de usar este método.
-ms.openlocfilehash: 7f701bf0a8b165323f7fd61b50b41fb5e18268a6
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: ee6cfe9adfe029e620d2465f08a3fbe1e9290503
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259564"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229772"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepararse para la sincronización de directorios de Microsoft 365
 
@@ -180,7 +180,7 @@ Es mejor alinear estos atributos para reducir la confusión. Para cumplir los re
 
 Es posible que deba agregar un sufijo UPN alternativo para asociar las credenciales corporativas del usuario con el entorno Microsoft 365 usuario. Un sufijo UPN es la parte de un UPN situada a la derecha del carácter @. Los UPN que se usan para el inicio de sesión único pueden contener letras, números, puntos, guiones y caracteres de subrayado, pero ningún otro tipo de carácter.
 
-Para obtener más información sobre cómo agregar un sufijo UPN alternativo a Active Directory, vea [Prepare for directory synchronization]( https://go.microsoft.com/fwlink/p/?LinkId=525430).
+Para obtener más información sobre cómo agregar un sufijo UPN alternativo a Active Directory, vea [Prepare for directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=525430).
 
 ## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Hacer coincidir el UPN de AD DS Microsoft 365 UPN
 
@@ -188,6 +188,6 @@ Si ya ha configurado la sincronización de directorios, es posible que el UPN de
 
 Vea también [How to prepare a non-routable domain (such as .local domain) for directory synchronization](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si ha realizado los pasos 1 a 5 anteriores, vea [Configurar la sincronización de directorios](set-up-directory-synchronization.md).

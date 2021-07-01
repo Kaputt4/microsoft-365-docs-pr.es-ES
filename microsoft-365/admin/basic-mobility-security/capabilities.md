@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles.
-ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: a5f20b2999a1a54070433560904e9535a4d1524a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706183"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228284"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
@@ -47,12 +47,12 @@ Puedes usar Movilidad y seguridad básicas para proteger y administrar los sigui
 
 <sup>1</sup> El control de acceso Windows 8.1 dispositivos RT está limitado a Exchange ActiveSync.
 
-<sup>2</sup> El control de Windows 10 requiere una suscripción que incluya azure ad Premium y el dispositivo debe unirse a Azure Active Directory.
+<sup>2</sup> El control de Windows 10 requiere una suscripción que incluya Azure AD Premium y el dispositivo debe unirse a Azure Active Directory.
 
 <sup>3</sup> Después de junio de 2020, las versiones de Android posteriores al 9 no pueden administrar la configuración de contraseña excepto en dispositivos Samsung Knox.
 
->[!NOTE]
->Los dispositivos ya inscritos con versiones anteriores del sistema operativo siguen funcionando aunque las capacidades pueden cambiar sin previo aviso.
+> [!NOTE]
+> Los dispositivos ya inscritos con versiones anteriores del sistema operativo siguen funcionando aunque las capacidades pueden cambiar sin previo aviso.
 
 Si los usuarios de la organización usan dispositivos móviles que no son compatibles con La movilidad y la seguridad básicas, es posible que quieras bloquear el acceso Exchange ActiveSync la aplicación Microsoft 365 un correo electrónico para esos dispositivos, para ayudar a que los datos de la organización sean más seguros. Para ver los pasos para bloquear Exchange ActiveSync, consulta [Manage device access settings in Basic Mobility and Security](manage-device-access-settings.md).
 
@@ -65,10 +65,11 @@ Las aplicaciones admitidas para los distintos tipos de dispositivos móviles de 
 |**Exchange** Exchange ActiveSync incluye correo electrónico integrado y aplicaciones de terceros, como TouchDown, que usan Exchange ActiveSync versión 14.1 o posterior. |Correo |Correo electrónico |
 |**Office**   y  **OneDrive para la Empresa** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**En teléfonos y tabletas:**<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Solamente en teléfonos:** <br/> Office Mobile |
 
->[!NOTE]
-- >La compatibilidad con iOS 10.0 y versiones posteriores incluye iPhone y iPad dispositivos.
-- >La administración de dispositivos del sistema operativo BlackBerry no es compatible con seguridad básica y movilidad. Usa BlackBerry Business Cloud Services (BBCS) de BlackBerry para administrar dispositivos blackBerry OS. Los dispositivos Blackberry que ejecutan el sistema operativo Android se admiten como dispositivos Android estándar
-- >No se pedirá a los usuarios que se inscriban y no se les bloqueará ni se les notifica por infracción de directivas si usan el explorador móvil para acceder Microsoft 365 SharePoint sitios, documentos en Office Online o correo electrónico en Outlook Web App.
+> [!NOTE]
+>
+> - La compatibilidad con iOS 10.0 y versiones posteriores incluye iPhone y iPad dispositivos.
+> - La administración de dispositivos del sistema operativo BlackBerry no es compatible con seguridad básica y movilidad. Usa BlackBerry Business Cloud Services (BBCS) de BlackBerry para administrar dispositivos blackBerry OS. Los dispositivos Blackberry que ejecutan el sistema operativo Android se admiten como dispositivos Android estándar
+> - No se pedirá a los usuarios que se inscriban y no se les bloqueará ni se les notifica por infracción de directivas si usan el explorador móvil para acceder Microsoft 365 SharePoint sitios, documentos en Office Online o correo electrónico en Outlook Web App.
 
 En el siguiente diagrama se muestra lo que sucede cuando un usuario con un dispositivo nuevo inicia sesión en una aplicación que admite el control de acceso con Movilidad y seguridad básicas. El usuario no tiene acceso a Microsoft 365 en la aplicación hasta que inscribe su dispositivo.
 
@@ -79,7 +80,7 @@ En el siguiente diagrama se muestra lo que sucede cuando un usuario con un dispo
 
 ## <a name="policy-settings-for-mobile-devices"></a>Configuración de directivas para dispositivos móviles
 
-Si crea una directiva para bloquear el acceso con determinadas opciones activadas, los usuarios no podrán acceder Microsoft 365 los recursos de Microsoft 365 al usar una aplicación compatible que se muestra en Control de acceso para documentos y correo electrónico de [Microsoft 365.](capabilities.md) 
+Si crea una directiva para bloquear el acceso con determinadas opciones activadas, los usuarios no podrán acceder Microsoft 365 los recursos de Microsoft 365 al usar una aplicación compatible que se muestra en Control de acceso para documentos y correo electrónico de [Microsoft 365.](capabilities.md)
 
 La configuración que puede impedir que los usuarios accedan Microsoft 365 recursos se encuentran en estas secciones:
 
@@ -89,7 +90,7 @@ La configuración que puede impedir que los usuarios accedan Microsoft 365 recur
 
 - Descodificar
 
-- Perfil de correo electrónico administrado  
+- Perfil de correo electrónico administrado
 
 Por ejemplo, el siguiente diagrama muestra lo que sucede cuando un usuario con un dispositivo inscrito no cumple una opción de seguridad de una directiva de administración de dispositivos móviles que se aplica a su dispositivo. El usuario inicia sesión en una aplicación que admite el control de acceso con Movilidad y seguridad básicas. Se les bloquea el acceso Microsoft 365 recursos de la aplicación hasta que su dispositivo cumpla con la configuración de seguridad.
 
@@ -116,15 +117,15 @@ En las secciones siguientes se enumera la configuración de directiva que puede 
 |:-----|:-----|:-----|:-----|
 |Requerir cifrado de datos en<sup>dispositivos 1</sup> |No|Sí|Sí|
 
-<sup>1</sup> Con Samsung Knox, también puede requerir cifrado en tarjetas de almacenamiento. 
+<sup>1</sup> Con Samsung Knox, también puede requerir cifrado en tarjetas de almacenamiento.
 
-## <a name="jail-broken-setting"></a>Configuración de descodificación 
+## <a name="jail-broken-setting"></a>Configuración de descodificación
 
 |**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |El dispositivo no se puede descodificar ni descifrar |Sí|Sí|Sí|
 
-## <a name="managed-email-profile-option"></a>Opción de perfil de correo electrónico administrado 
+## <a name="managed-email-profile-option"></a>Opción de perfil de correo electrónico administrado
 
 La siguiente opción puede impedir que los usuarios tengan acceso Microsoft 365 correo electrónico si usan un perfil de correo electrónico creado manualmente. Los usuarios de dispositivos iOS deben eliminar su perfil de correo electrónico creado manualmente para que puedan tener acceso a su correo electrónico. Después de eliminar el perfil, se crea automáticamente un nuevo perfil en el dispositivo. Para obtener instrucciones sobre cómo los usuarios finales pueden cumplir con las normas, consulte [Se encontró una cuenta de correo electrónico existente.](/intune-user-help/existing-company-email-account-found)
 
@@ -205,8 +206,8 @@ La siguiente configuración es compatible con Windows 10 que están inscritos co
 
 - Recordar el historial de contraseñas y evitar la reutilización
 
->[!NOTE]
->La siguiente configuración que regula las contraseñas solo controla las Windows locales. Windows cuentas proporcionadas a través de unirse a un dominio o Azure Active Directory no se ven afectadas por esta configuración.
+> [!NOTE]
+> La siguiente configuración que regula las contraseñas solo controla las Windows locales. Windows cuentas proporcionadas a través de unirse a un dominio o Azure Active Directory no se ven afectadas por esta configuración.
 
 ### <a name="system-settings"></a>Configuración del sistema
 

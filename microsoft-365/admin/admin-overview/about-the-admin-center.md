@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Iniciar sesión con permisos de administrador en el Centro de administración de Microsoft 365 para configurar la organización en la nube y administrar usuarios y suscripciones.
-ms.openlocfilehash: 7817861e79b86a6c43ea26fdb03b037b40a3f564
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b7ad483ccfe21ac38edc7db735bccee49b937b6b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083058"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228356"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del Centro de administración de Microsoft 365
 
@@ -55,15 +55,15 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 ## <a name="admin-center-features-and-settings"></a>Características y configuración del centro de administración
 
-A continuación se muestran las características y la configuración que encontrará en la navegación de la izquierda del centro de administración. Obtenga más información sobre las tareas de administración en [ayuda para administradores](../../business-video/admin-center-overview.md).
+A continuación se indican las características y la configuración que encontrará en el panel de navegación izquierdo del centro de administración. Conoce más sobre tareas administrativas en la [ayuda para el administrador](../../business-video/admin-center-overview.md).
   
 | Menú | Para qué sirve |
 |-----|-----|
 |**Inicio** <br/> |Esta es la página de aterrizaje del Centro de administración. Verá dónde administrar a los usuarios, la facturación, el estado del servicio y los informes.  <br/> |
 |**Users** <br/> |Puede crear y administrar usuarios de su organización, como empleados o estudiantes. También puede establecer su nivel de permisos o restablecer sus contraseñas.  <br/> |
 |**Grupos** <br/> |Puede crear y administrar grupos en su organización, como un grupo de Microsoft 365, un grupo de distribución, un grupo de seguridad o un buzón compartido. Obtenga información sobre cómo [crear](../create-groups/create-groups.md) y [administrar](../create-groups/manage-groups.md) grupos.  <br/> |
-|**Recursos** <br/> |Cree y administre recursos, como por ejemplo una colección de sitios de SharePoint. Aprenda cómo [crear colecciones de sitios](/sharepoint/create-site-collection).  <br/> |
-|**Facturación** <br/> |Vea, compre o cancele las suscripciones de su organización. Revise los extractos de las facturas pasadas o el número de licencias asignadas a usuarios individuales. Más información sobre cómo [administrar la facturación](../../commerce/index.yml).  <br/> |
+|**Recursos** <br/> |Cree y administre recursos, como una colección de sitios de SharePoint. Obtenga información sobre cómo [crear colecciones de sitios](/sharepoint/create-site-collection).  <br/> |
+|**Facturación** <br/> |Vea, compre o cancele suscripciones para su organización. Vea extractos de facturación anteriores o vea la cantidad de licencias asignadas a usuarios individuales. Aprenda a [administrar la facturación](../../commerce/index.yml).  <br/> |
 |**Soporte técnico** <br/> | Vea las solicitudes de servicio existentes o cree otras nuevas. Obtenga más información en [póngase en contacto con el soporte técnico para productos para empresas: ayuda de administración](../../business-video/get-help-support.md). |
 |**Configuración** <br/> |Administre la configuración global de aplicaciones, como correo electrónico, sitios y el conjunto de aplicaciones de Office. Cambie la directiva y la fecha de expiración de su contraseña. Agregue y actualice nombres de dominio, como contoso.com. Cambie las preferencias de perfil y versión de su organización. Decida si los socios pueden acceder a su Centro de administración.  <br/> |
 |**Instalación** <br/> |Administre los dominios existentes, active y administre la autenticación multifactorial, administre el acceso de administrador, migre los buzones de correo de los usuarios a Office 365, administre las actualizaciones de funciones y ayude a los usuarios a instalar sus aplicaciones de Office. |

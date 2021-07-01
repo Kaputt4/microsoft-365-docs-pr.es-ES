@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas forman parte de los Microsoft 365 de seguridad.
-ms.openlocfilehash: b7b1d229e87a313a9567daed87f03452b1925a65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904269"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228272"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elegir entre Movilidad básica y seguridad o Intune
 
@@ -52,17 +52,17 @@ Tanto Movilidad básica como Seguridad e Intune se incluyen en una variedad de p
 |Enterprise Mobility & Security E3 |No|Sí|
 |Enterprise Mobility & Security E5 |No|Sí|
 
->[!NOTE]
->No puedes empezar a usar movilidad y seguridad básicas si ya estás usando Microsoft Intune.
+> [!NOTE]
+> No puedes empezar a usar movilidad y seguridad básicas si ya estás usando Microsoft Intune.
 
- Para obtener más información, [vea Microsoft 365 y Office 365 descripciones del servicio de plataforma.](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) 
+ Para obtener más información, [vea Microsoft 365 y Office 365 descripciones del servicio de plataforma.](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)
 
 ## <a name="differences-in-capabilities"></a>Diferencias en las capacidades
 
 Microsoft Intune y seguridad básicas integradas le dan la capacidad de administrar dispositivos móviles en su organización, pero hay diferencias clave en la funcionalidad, descrita en la tabla siguiente.
 
->[!NOTE]
->Puede administrar usuarios y sus dispositivos móviles con Intune y Movilidad básica y Seguridad en la misma organización de Microsoft 365 Empresa Estándar configurando primero Movilidad y seguridad básicas *y,* a continuación, agregando Microsoft Intune . Esto te permite elegir Movilidad y seguridad básicas o la solución de Intune más rica en características. Asignar una licencia de Intune para habilitar las características de Intune.
+> [!NOTE]
+> Puede administrar usuarios y sus dispositivos móviles con Intune y Movilidad básica y Seguridad en la misma organización de Microsoft 365 Empresa Estándar configurando primero Movilidad y seguridad básicas *y,* a continuación, agregando Microsoft Intune . Esto te permite elegir Movilidad y seguridad básicas o la solución de Intune más rica en características. Asignar una licencia de Intune para habilitar las características de Intune.
 
 | Área de característica | Aspectos destacados de la característica | Movilidad y seguridad básicas | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
@@ -80,7 +80,7 @@ Microsoft Intune y seguridad básicas integradas le dan la capacidad de administ
 |Programas de inscripción táctil cero (AutoPilot) |Inscriba un gran número de dispositivos de propiedad corporativa, a la vez que simplifica la configuración del usuario. |No|Sí|
 |||
 
-Además de las características enumeradas en la tabla anterior, movilidad básica y seguridad e Intune incluyen un conjunto de acciones remotas que envían comandos a dispositivos a través de Internet. Por ejemplo, puedes quitar Office datos del dispositivo de un empleado mientras dejas los datos personales en su lugar (retirar), quitar aplicaciones Office del dispositivo de un empleado (borrar) o restablecer un dispositivo a su configuración de fábrica (borrado total). 
+Además de las características enumeradas en la tabla anterior, movilidad básica y seguridad e Intune incluyen un conjunto de acciones remotas que envían comandos a dispositivos a través de Internet. Por ejemplo, puedes quitar Office datos del dispositivo de un empleado mientras dejas los datos personales en su lugar (retirar), quitar aplicaciones Office del dispositivo de un empleado (borrar) o restablecer un dispositivo a su configuración de fábrica (borrado total).
 
 Las acciones remotas básicas de movilidad y seguridad incluyen retirar, borrar y borrar completamente. Para obtener más información sobre las acciones básicas de movilidad y seguridad, vea [capabilities of Basic Mobility and Security](capabilities.md).
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 8dc57bfe395ad76e6b8aef336aaadb2cb7e42f81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061666"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226676"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -44,7 +44,6 @@ Antes de empezar con Endpoint DLP, debe confirmar la [Suscripción a Microsoft 3
 - Cumplimiento de Microsoft 365 A5
 - Gobierno y protección de información de Microsoft 365 E5
 - Gobierno y protección de información de Microsoft 365 A5
-
 
 ### <a name="permissions"></a>Permisos
 
@@ -84,25 +83,26 @@ Asegúrese de que los dispositivos con Windows 10 en los que planee implementar 
 
 1. Debe estar ejecutando Windows 10 x64 compilación 1809 o posterior.
 
-2. La versión del cliente antimalware es 4.18.2009.7 o posterior. Para comprobar la versión actual, abra la aplicación de Seguridad de Windows, seleccione el icono Configuración y, a continuación, Acerca de. El número de versión aparece en la versión del cliente antimalware. Instale Windows Update KB4052623 para actualizar a la última versión del cliente antimalware. 
+2. La versión del cliente antimalware es 4.18.2009.7 o posterior. Para comprobar la versión actual, abra la aplicación de Seguridad de Windows, seleccione el icono Configuración y, a continuación, Acerca de. El número de versión aparece en la versión del cliente antimalware. Instale Windows Update KB4052623 para actualizar a la última versión del cliente antimalware.
 
    > [!NOTE]
    > No es necesario que ninguno de los componentes de Seguridad de Windows estén activos; puede ejecutar DLP en punto de conexión independiente del estado de Seguridad de Windows, pero la [protección en tiempo real y el comportamiento del monitor ](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) se debe habilitar.
- 
-3. Se instalan las siguientes actualizaciones de Windows. 
- 
+
+3. Se instalan las siguientes actualizaciones de Windows.
+
    > [!NOTE]
    > Estas actualizaciones no son un requisito previo para incorporar un dispositivo a DLP en punto de conexión, pero contienen correcciones de problemas importantes y, por lo tanto, deben instalarse antes de usar el producto.
 
-    - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
-    - Para Windows 10 1903 o 1909 - KB4559004, KB4577062, KB4580386
-    - For Windows 10 2004 - KB4568831, KB4577063
-    - Para dispositivos que ejecutan Office 2016 (en lugar de cualquier otra versión de Office): KB4577063 
+   - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
+   - Para Windows 10 1903 o 1909 - KB4559004, KB4577062, KB4580386
+   - For Windows 10 2004 - KB4568831, KB4577063
+   - Para dispositivos que ejecutan Office 2016 (en lugar de cualquier otra versión de Office): KB4577063
 
 4. Todos los dispositivos deben cumplir una de estas opciones:
-- [Unido a Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
-- [Unido a Azure AD híbrido ](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-- [Registrado en AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
+
+   - [Unido a Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
+   - [Unido a Azure AD híbrido ](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+   - [Registrado en AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -124,7 +124,7 @@ En este escenario de implementación, incorporará dispositivos que aún no haya
 
 1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
 
-2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**. 
+2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**.
 
    > [!div class="mx-imgBorder"]
    > ![habilitar la administración de dispositivos](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -140,7 +140,7 @@ En este escenario de implementación, incorporará dispositivos que aún no haya
 
    > [!div class="mx-imgBorder"]
    > ![método de implementación](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-   
+
 6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
 
     - Incorporar equipos con Windows 10 usando Directiva de grupo
@@ -166,13 +166,12 @@ En este escenario, Microsoft Defender para punto de conexión ya está implement
 
    > [!div class="mx-imgBorder"]
    > ![administración de dispositivos](../media/endpoint-dlp-getting-started-2-device-management.png)
-   
+
 4. Elija **Incorporación** si necesita incorporar dispositivos adicionales.
 
 5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
 
 6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
-
     - Incorporar equipos con Windows 10 usando Directiva de grupo
     - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
@@ -190,7 +189,6 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
 
 2. Consulte los procedimientos descritos en [Cómo configurar y ver las alertas de las directivas DLP](dlp-configure-view-alerts-policies.md) para ver las alertas de las directivas DLP del punto de conexión.
 
-
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizar datos de Endpoint DLP en el explorador de actividad
 
 1. Abra la [Página clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el Centro de cumplimiento de Microsoft 365 y elija Explorador de actividad.
@@ -201,13 +199,14 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
    > ![filtro de explorador de actividad filtro para dispositivos de punto de conexión](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad en el explorador de actividad, está listo para realizar el siguiente paso, donde puede crear directivas DLP que protegen los elementos confidenciales.
 
 - [Uso de la prevención de pérdida de datos en punto de conexión](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Consulte también
 
-- [Obtenga información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
+- [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Uso de la prevención de pérdida de datos en punto de conexión](endpoint-dlp-using.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)

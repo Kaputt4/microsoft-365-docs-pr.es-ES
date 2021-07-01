@@ -1,5 +1,5 @@
 ---
-title: Control de dispositivo extraíble de Microsoft Defender para endpoint Almacenamiento control de acceso
+title: Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 description: Una información general sobre Microsoft Defender para endpoint
 keywords: medios de almacenamiento extraíbles
 search.product: eADQiWindows 10XVcnh
@@ -16,23 +16,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb23987600a5f87a99449510f7651c4fdcd45f66
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028408"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229580"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Almacenamiento control de acceso
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Defender para Endpoint Device Control Extraíble Almacenamiento Access Control permite realizar la siguiente tarea:
+Microsoft Defender para endpoint device control removable Storage Access Control permite realizar la siguiente tarea:
 - auditar, permitir o impedir el acceso de lectura, escritura o ejecución al almacenamiento extraíble con o sin exclusión
 
 |Privilegio |Permiso  |
 |---------|---------|
-|Access    |  Lectura, Escritura, Ejecución       |
+|Acceso    |  Lectura, Escritura, Ejecución       |
 |Modo de acción    |    Auditoría, Permitir, Impedir     |
 |Compatibilidad con CSP   |   Sí      |
 |Compatibilidad con GPO    |   Sí      |
@@ -41,7 +41,7 @@ Microsoft Defender para Endpoint Device Control Extraíble Almacenamiento Access
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
-Implementar control de acceso Almacenamiento extraíble en dispositivos Windows 10 que tengan la versión **4.18.2103.3** o posterior del cliente antimalware.
+Implemente el control Storage de acceso extraíble en Windows 10 dispositivos con cliente antimalware versión **4.18.2103.3** o posterior .
 
 - **4.18.2104 o** posterior: Agregar SerialNumberId, VID_PID, compatibilidad con GPO basada en ruta de archivo, ComputerSid
 
@@ -50,7 +50,7 @@ Implementar control de acceso Almacenamiento extraíble en dispositivos Windows 
 :::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell":::
 
 > [!NOTE]
-> Ninguno de Seguridad de Windows componentes deben estar activos, puede ejecutar Removable Almacenamiento Access Control independientemente Seguridad de Windows estado.
+> Ninguno de Seguridad de Windows componentes deben estar activos, puede ejecutar Removable Storage Access Control independientemente Seguridad de Windows estado.
 
 ## <a name="policy-properties"></a>Propiedades de la directiva
 
@@ -172,15 +172,15 @@ Opciones 1-7:
   - 6: Escribir y ejecutar
   - 7: Lectura y escritura y ejecución
 
-## <a name="common-removable-storage-access-control-scenarios"></a>Escenarios comunes Almacenamiento control de acceso extraíble
+## <a name="common-removable-storage-access-control-scenarios"></a>Escenarios comunes Storage control de acceso extraíble
 
-Para familiarizarte con Microsoft Defender para Endpoint Removable Almacenamiento Access Control, hemos reunido algunos escenarios comunes que puedes seguir.
+Para ayudarle a familiarizarse con Microsoft Defender para Endpoint Removable Storage Access Control, hemos reunido algunos escenarios comunes que puede seguir.
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>Escenario 1: Impedir el acceso de escritura y ejecución a todos, pero permitir usbs aprobados específicos
 
 1. Crear grupos
 
-    1. Grupo 1: Cualquier almacenamiento extraíble y CD/DVD. Un ejemplo de almacenamiento extraíble y CD/DVD es: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** en el ejemplo [Any Removable Almacenamiento and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Grupo 1: Cualquier almacenamiento extraíble y CD/DVD. Un ejemplo de almacenamiento extraíble y CD/DVD es: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** en el ejemplo [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Grupo 2: USB aprobados en función de las propiedades del dispositivo. Un ejemplo para este caso de uso es: Id. de instancia: grupo **65fa649a-a111-4912-9294-fb6337a25038** en el archivo [usbs aprobados Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) ejemplo.
 
@@ -197,7 +197,7 @@ Para familiarizarte con Microsoft Defender para Endpoint Removable Almacenamient
 
 1. Crear grupos
 
-    1. Grupo 1: Cualquier almacenamiento extraíble y CD/DVD. Un ejemplo para este caso de uso es: Grupo **9b28fae8-72f7-4267-a1a5-685f747a7146** en el ejemplo Cualquier archivo de Almacenamiento extraíble y [CD-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    1. Grupo 1: Cualquier almacenamiento extraíble y CD/DVD. Un ejemplo para este caso de uso es: Grupo **9b28fae8-72f7-4267-a1a5-685f747a7146** en el ejemplo Cualquier archivo de Storage extraíble y [CD-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
     
     2. Grupo 2: USB no aprobados en función de las propiedades del dispositivo, por ejemplo, Id. de proveedor/Id. de producto, Nombre descriptivo : Grupo **65fa649a-a111-4912-9294-fb6337a25038** en el archivo [usbs](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) no aprobados Group.xmlejemplo. 
 
@@ -212,11 +212,11 @@ Para familiarizarte con Microsoft Defender para Endpoint Removable Almacenamient
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>Implementación y administración de directivas mediante directiva de grupo
 
-La característica Almacenamiento control de acceso le permite aplicar directivas a través de la directiva de grupo a usuarios, dispositivos o ambos.
+La característica Storage control de acceso extraíble te permite aplicar directivas a través de la directiva de grupo a usuarios o dispositivos, o a ambos.
 
 ### <a name="licensing"></a>Licencias
 
-Antes de empezar con Removable Almacenamiento Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Almacenamiento de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
+Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
 
 ### <a name="deploying-policy-via-group-policy"></a>Implementación de directivas mediante directiva de grupo
 
@@ -242,11 +242,11 @@ Antes de empezar con Removable Almacenamiento Access Control, debe confirmar su�
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Implementación y administración de directivas a través de Intune OMA-URI
 
-La característica Almacenamiento control de acceso le permite aplicar directivas a través de OMA-URI a usuarios o dispositivos, o a ambos.
+La característica Storage control de acceso extraíble permite aplicar directivas a través de OMA-URI a usuarios o dispositivos, o a ambos.
 
 ### <a name="licensing"></a>Licencias
 
-Antes de empezar con Removable Almacenamiento Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Almacenamiento de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
+Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
 
 ### <a name="permission"></a>Permiso
 
@@ -291,9 +291,9 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
 
 Esta funcionalidad (en el Centro de administración de Microsoft Endpoint Manager ( https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) todavía no está disponible. 
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Ver datos extraíbles de control Almacenamiento control de acceso en Microsoft Defender para endpoint
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Ver datos extraíbles Storage control de acceso en Microsoft Defender para endpoint
 
-El Microsoft 365 de seguridad muestra el almacenamiento extraíble bloqueado por el control de dispositivo extraíble Almacenamiento control de acceso. Para obtener acceso a Microsoft 365 seguridad, debe tener la siguiente suscripción:
+El Microsoft 365 de seguridad muestra el almacenamiento extraíble bloqueado por el control de dispositivo extraíble Storage control de acceso. Para obtener acceso a Microsoft 365 seguridad, debe tener la siguiente suscripción:
 
 - Microsoft 365 para informes E5
 
@@ -328,7 +328,7 @@ Hemos validado un grupo USB con 100.000 medios, con un tamaño de hasta 7 MB. La
 
 **¿Por qué la directiva no funciona?**
 
-La razón más común es que no hay ninguna versión [de cliente antimalware necesaria.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)
+La razón más común es que no hay ninguna versión [de cliente antimalware necesaria.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints)
 
 Otro motivo podría ser que el archivo XML no tiene el formato correcto, por ejemplo, no se usa el formato de reducción correcto para el carácter "&" en el archivo XML, o el editor de texto puede agregar una marca de orden de bytes (BOM) 0xEF 0xBB 0xBF al principio de los archivos, lo que hace que el análisis XML no funcione. Una solución sencilla es descargar el [archivo de ejemplo](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (seleccione **Sin** procesar y, a continuación, **Guardar como**) y, a continuación, actualizar.
 

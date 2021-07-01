@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: abc6b561c2fca8106397b1656432628c983e2ece
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: ae2e7fb960dd8ce2a42ce62fe0b8da7675e00ce5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952697"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228380"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Prácticas recomendadas para la consulta de búsqueda avanzada
 
@@ -50,7 +50,7 @@ Los clientes que ejecutan varias consultas con regularidad deben realizar un seg
     ```kusto
     DeviceEvents
     | where Timestamp > ago(1d)
-    | where ActionType == "UsbDriveMount" 
+    | where ActionType == "UsbDriveMount"
     | where DeviceName == "user-desktop.domain.com"
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
@@ -66,12 +66,12 @@ Los clientes que ejecutan varias consultas con regularidad deben realizar un seg
 ## <a name="optimize-the-join-operator"></a>Optimizar el `join` operador
 El [operador join](/azure/data-explorer/kusto/query/joinoperator) combina filas de dos tablas mediante valores coincidentes en columnas especificadas. Aplique estas sugerencias para optimizar las consultas que usan este operador.
 
-- **Tabla más pequeña a la izquierda:** el operador coincide con los registros de la tabla del lado izquierdo de la instrucción `join` join con los registros de la derecha. Al tener la tabla más pequeña a la izquierda, se necesitarán hacer coincidir menos registros, lo que acelerará la consulta. 
+- **Tabla más pequeña a la izquierda:** el operador coincide con los registros de la tabla del lado izquierdo de la instrucción `join` join con los registros de la derecha. Al tener la tabla más pequeña a la izquierda, se necesitarán hacer coincidir menos registros, lo que acelerará la consulta.
 
     En la tabla siguiente, reducimos la tabla izquierda para cubrir solo tres dispositivos específicos antes de unirla con los SID de `DeviceLogonEvents` `IdentityLogonEvents` cuenta.
- 
+
     ```kusto
-    DeviceLogonEvents 
+    DeviceLogonEvents
     | where DeviceName in ("device-1.domain.com", "device-2.domain.com", "device-3.domain.com")
     | where ActionType == "LogonFailed"
     | join
@@ -89,19 +89,19 @@ El [operador join](/azure/data-explorer/kusto/query/joinoperator) combina filas 
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
     ```
 
     Para solucionar esta limitación, aplicamos el tipo [de](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) combinación interna especificando para mostrar todas las filas de la tabla izquierda con valores coincidentes `kind=inner` a la derecha:
-    
+
     ```kusto
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
     ```
 - **Unir registros desde una ventana de tiempo:** al investigar eventos de seguridad, los analistas buscan eventos relacionados que se producen alrededor del mismo período de tiempo. Aplicar el mismo enfoque al usar también `join` beneficia el rendimiento al reducir el número de registros que se deben comprobar.
-    
+
     La consulta siguiente comprueba si hay eventos de inicio de sesión en un plazo de 30 minutos después de recibir un archivo malintencionado:
 
     ```kusto
@@ -110,10 +110,10 @@ El [operador join](/azure/data-explorer/kusto/query/joinoperator) combina filas 
     | where ThreatTypes has "Malware"
     | project EmailReceivedTime = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0])
     | join (
-    DeviceLogonEvents 
+    DeviceLogonEvents
     | where Timestamp > ago(7d)
     | project LogonTime = Timestamp, AccountName, DeviceName
-    ) on AccountName 
+    ) on AccountName
     | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
     ```
 - **Aplicar** filtros de tiempo en ambos lados: incluso si no está investigando una ventana de tiempo específica, la aplicación de filtros de tiempo en las tablas izquierda y derecha puede reducir el número de registros para comprobar y mejorar el `join` rendimiento. La consulta siguiente se aplica a ambas tablas de modo que solo `Timestamp > ago(1h)` une registros de la última hora:
@@ -122,8 +122,8 @@ El [operador join](/azure/data-explorer/kusto/query/joinoperator) combina filas 
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
-    ```  
+    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
+    ```
 
 - **Usar sugerencias para el rendimiento:** use sugerencias con el operador para indicar al back-end que distribuya la carga al `join` ejecutar operaciones que consumen muchos recursos. [Más información sobre las sugerencias de unión](/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
@@ -132,19 +132,19 @@ El [operador join](/azure/data-explorer/kusto/query/joinoperator) combina filas 
     ```kusto
     IdentityInfo
     | where JobTitle == "CONSULTANT"
-    | join hint.shufflekey = AccountObjectId 
+    | join hint.shufflekey = AccountObjectId
     (IdentityDirectoryEvents
         | where Application == "Active Directory"
         | where ActionType == "Private data retrieval")
-    on AccountObjectId 
+    on AccountObjectId
     ```
-    
+
     La **[sugerencia de difusión](/azure/data-explorer/kusto/query/broadcastjoin)** ayuda cuando la tabla izquierda es pequeña (hasta 100 000 registros) y la tabla derecha es extremadamente grande. Por ejemplo, la consulta siguiente está intentando unir algunos  correos electrónicos que tienen asuntos específicos con todos los mensajes que contienen vínculos en la `EmailUrlInfo` tabla:
 
     ```kusto
-    EmailEvents 
+    EmailEvents
     | where Subject in ("Warning: Update your credentials now", "Action required: Update your credentials now")
-    | join hint.strategy = broadcast EmailUrlInfo on NetworkMessageId 
+    | join hint.strategy = broadcast EmailUrlInfo on NetworkMessageId
     ```
 
 ## <a name="optimize-the-summarize-operator"></a>Optimizar el `summarize` operador
@@ -153,25 +153,25 @@ El [operador de resumen](/azure/data-explorer/kusto/query/summarizeoperator) agr
 - **Buscar valores distintos:** en general, se usan `summarize` para buscar valores distintos que pueden ser repetitivos. Puede ser innecesario usarlo para agregar columnas que no tienen valores repetitivos.
 
     Aunque un solo correo electrónico puede formar parte  de varios eventos, el ejemplo siguiente no es un uso eficaz de porque un identificador de mensaje de red para un correo electrónico individual siempre viene con una dirección `summarize` de remitente única.
- 
+
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | summarize by NetworkMessageId, SenderFromAddress   
+    | summarize by NetworkMessageId, SenderFromAddress
     ```
     El operador se puede reemplazar fácilmente con , lo que produce potencialmente los mismos resultados `summarize` `project` mientras consume menos recursos:
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | project NetworkMessageId, SenderFromAddress   
+    | project NetworkMessageId, SenderFromAddress
     ```
     El ejemplo siguiente es un uso más eficaz de porque puede haber varias instancias distintas de una dirección de remitente que envíe correo electrónico `summarize` a la misma dirección de destinatario. Estas combinaciones son menos distintas y es probable que tengan duplicados.
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | summarize by SenderFromAddress, RecipientEmailAddress   
+    | summarize by SenderFromAddress, RecipientEmailAddress
     ```
 
 - **Barajar la consulta:** aunque se usa mejor en columnas con valores repetitivos, las mismas columnas también pueden tener una gran cardinalidad o un gran número `summarize` de valores únicos.  Al igual que el operador, también puede aplicar la sugerencia aleatoria con para distribuir la carga de procesamiento y mejorar potencialmente el rendimiento al operar en columnas `join` con una [](/azure/data-explorer/kusto/query/shufflequery) `summarize` cardinalidad alta.
@@ -179,7 +179,7 @@ El [operador de resumen](/azure/data-explorer/kusto/query/summarizeoperator) agr
     La consulta siguiente se usa para contar una dirección de correo electrónico de destinatario distinta, que puede ejecutarse `summarize` en los cientos de miles de organizaciones grandes. Para mejorar el rendimiento, incorpora `hint.shufflekey` :
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
@@ -210,7 +210,7 @@ Hay varias formas de crear una línea de comandos para llevar a cabo una tarea. 
 Para crear consultas más duraderas alrededor de las líneas de comandos, aplique los siguientes procedimientos:
 
 - Identifique los procesos conocidos (como *net.exe* *opsexec.exe*) haciendo coincidir en los campos de nombre de archivo, en lugar de filtrar en la propia línea de comandos.
-- Analizar secciones de línea de comandos mediante [la función parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) 
+- Analizar secciones de línea de comandos mediante [la función parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line)
 - Al consultar argumentos de la línea de comandos, no busque una coincidencia exacta en varios argumentos no relacionados en un orden determinado. En su lugar, use expresiones regulares o use operadores de contenedores separados múltiples.
 - Use coincidencias que no distinga mayúsculas de minúsculas. Por ejemplo, use `=~` , , y en lugar de , y `in~` `contains` `==` `in` `contains_cs` .
 - Para mitigar las técnicas de ofuscación de línea de comandos, considere la posibilidad de quitar comillas, reemplazar comas por espacios y reemplazar varios espacios consecutivos por un solo espacio. Hay técnicas de ofuscación más complejas que requieren otros enfoques, pero estos retoques pueden ayudar a abordar los métodos comunes.
@@ -225,47 +225,47 @@ DeviceProcessEvents
 
 // Better query - filters on file name, does case-insensitive matches
 DeviceProcessEvents
-| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc"
 
 // Best query also ignores quotes
 DeviceProcessEvents
 | where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
-| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
+| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc"
 ```
 
 ### <a name="ingest-data-from-external-sources"></a>Ingerir datos de orígenes externos
 Para incorporar listas largas o tablas grandes a la consulta, use el operador [externaldata](/azure/data-explorer/kusto/query/externaldata-operator) para ingerir datos de un URI especificado. Puede obtener datos de archivos en TXT, CSV, JSON u [otros formatos](/azure/data-explorer/ingestion-supported-formats). En el ejemplo siguiente se muestra cómo usar la extensa lista de hashes sha-256 de malware proporcionados por MalwareBazaar (abuse.ch) para comprobar los datos adjuntos de los correos electrónicos:
 
 ```kusto
-let abuse_sha256 = (externaldata(sha256_hash: string )
+let abuse_sha256 = (externaldata(sha256_hash: string)
 [@"https://bazaar.abuse.ch/export/txt/sha256/recent/"]
 with (format="txt"))
 | where sha256_hash !startswith "#"
 | project sha256_hash;
 abuse_sha256
-| join (EmailAttachmentInfo 
-| where Timestamp > ago(1d) 
+| join (EmailAttachmentInfo
+| where Timestamp > ago(1d)
 ) on $left.sha256_hash == $right.SHA256
 | project Timestamp,SenderFromAddress,RecipientEmailAddress,FileName,FileType,
 SHA256,ThreatTypes,DetectionMethods
 ```
 
 ### <a name="parse-strings"></a>Analizar cadenas
-Hay varias funciones que puede usar para controlar eficazmente las cadenas que necesitan análisis o conversión. 
+Hay varias funciones que puede usar para controlar eficazmente las cadenas que necesitan análisis o conversión.
 
 | Cadena | Función | Ejemplo de uso |
 |--|--|--|
-| Líneas de comandos | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extraiga el comando y todos los argumentos. | 
+| Líneas de comandos | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extraiga el comando y todos los argumentos. |
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | Extraiga las secciones de una ruta de acceso de archivo o carpeta. |
 | Números de versión | [parse_version()](/azure/data-explorer/kusto/query/parse-versionfunction) | Deconstruir un número de versión con hasta cuatro secciones y hasta ocho caracteres por sección. Use los datos analizados para comparar la antigüedad de la versión. |
 | Direcciones IPv4 | [parse_ipv4()](/azure/data-explorer/kusto/query/parse-ipv4function) | Convertir una dirección IPv4 en un entero largo. Para comparar direcciones IPv4 sin convertirlas, use [ipv4_compare()](/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | Direcciones IPv6 | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Convierta una dirección IPv4 o IPv6 en la notación IPv6 canónica. Para comparar direcciones IPv6, use [ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-Para obtener información sobre todas las funciones de análisis admitidas, [lea acerca de las funciones de cadena kusto](/azure/data-explorer/kusto/query/scalarfunctions#string-functions). 
+Para obtener información sobre todas las funciones de análisis admitidas, [lea acerca de las funciones de cadena kusto](/azure/data-explorer/kusto/query/scalarfunctions#string-functions).
 
 >[!NOTE]
->Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+>Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Documentación del idioma de consulta de Kusto](/azure/data-explorer/kusto/query/)

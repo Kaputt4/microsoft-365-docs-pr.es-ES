@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo configurar temas de Microsoft Viva
-ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 42f84b9b792907d7fe118e0b15c3767674ddf19b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893769"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229592"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurar temas de Microsoft Viva
 
-Puede usar el Centro Microsoft 365 administración para configurar y configurar [Temas](topic-experiences-overview.md). 
+Puede usar el Centro de administración de Microsoft 365 para configurar y configurar [Temas](topic-experiences-overview.md). 
 
 Es importante planear la mejor forma de configurar y configurar temas en el entorno. Asegúrese de leer [Plan for Microsoft Viva Topics](plan-topic-experiences.md) antes de comenzar los procedimientos de este artículo.
 
-Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso al centro de administración de Microsoft 365 y configurar Temas.
+Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso a la Centro de administración de Microsoft 365 y configurar temas.
 
 Si has configurado SharePoint [para requerir dispositivos administrados,](/sharepoint/control-access-from-unmanaged-devices)asegúrate de configurar Temas desde un dispositivo administrado.
 
@@ -52,7 +52,7 @@ Para asignar licencias:
 4. En **Aplicaciones,** asegúrese de que Graph conectores de búsqueda con **Index (Temas de Viva)** y **Temas de Viva** estén seleccionados.
 
    > [!div class="mx-imgBorder"]
-   > ![Licencias de Temas de Microsoft Viva en el Centro Microsoft 365 administración](../media/topic-experiences-licenses.png)
+   > ![Licencias de Temas de Microsoft Viva en el Centro de administración de Microsoft 365](../media/topic-experiences-licenses.png)
 
 5. Haga clic en **Guardar cambios**.
 
@@ -61,10 +61,10 @@ Los usuarios pueden tardar hasta una hora en obtener acceso a temas después de 
 ## <a name="set-up-topics"></a>Configurar Temas
 
 > [!Note]
-> La primera vez que se habilita la detección de temas, puede tardar hasta dos semanas en aparecer todos los temas sugeridos en la vista Administrar temas. La detección de temas continúa a medida que se realizan nuevas actualizaciones o contenido. Es normal que haya variaciones en el número de temas sugeridos en su organización mientras Viva Topics evalúa nueva información.
+> La primera vez que se habilita la detección de temas, puede tardar hasta dos semanas en aparecer todos los temas sugeridos en la vista Administrar temas. La detección de temas continúa a medida que se realizan nuevas actualizaciones o contenido. Es normal que haya fluctuaciones en el número de temas sugeridos en su organización, a medida que Temas Viva evalúe la nueva información.
 
 Para configurar temas
-1. En el [Microsoft 365 de administración,](https://admin.microsoft.com)seleccione **Configurar** y, a continuación, vea la sección Archivos **y** contenido.
+1. En el [Centro de administración de Microsoft 365](https://admin.microsoft.com), seleccione **Configurar** y, a continuación, vea la sección **Archivos y** contenido.
 2. En la **sección Archivos y contenido,** haga **clic Conectar para que los usuarios lo den a conocer.**
 
     ![Conectar personas al conocimiento](../media/admin-org-knowledge-options.png) 
@@ -132,7 +132,10 @@ Para configurar temas
 
     Seleccione **Siguiente**.
 
-9. En la **página Crear centro de** temas, puede crear el sitio del centro de temas en el que se pueden ver las páginas de temas y los temas se pueden administrar. En el **cuadro Nombre del** sitio, escriba un nombre para el centro de temas. Opcionalmente, puede escribir una breve descripción en el **cuadro** Descripción. 
+9. En la **página Crear centro de** temas, puede crear el sitio del centro de temas en el que se pueden ver las páginas de temas y los temas se pueden administrar. En el **cuadro Nombre del** sitio, escriba un nombre para el centro de temas. Puede hacer clic en el icono del lápiz si desea cambiar la dirección URL. Opcionalmente, escriba una breve descripción en el **cuadro** Descripción. 
+
+   > [!Important]
+   > Puede cambiar el nombre del sitio más adelante, pero no puede cambiar la dirección URL después de completar el asistente.
 
    Seleccione **Siguiente**.
 
@@ -148,7 +151,7 @@ Para configurar temas
 
 ## <a name="manage-topic-experiences"></a>Administrar experiencias de temas
 
-Una vez configurados los temas, puede cambiar la configuración que eligió durante la instalación en el [centro Microsoft 365 administración.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Vea las referencias siguientes:
+Una vez configurados los temas, puede cambiar la configuración que eligió durante la instalación en [el Centro de administración de Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement). Vea las referencias siguientes:
 
 - [Administrar la detección de temas en Temas de Microsoft Viva](topic-experiences-discovery.md)
 - [Administrar visibilidad de temas en Temas de Microsoft Viva](topic-experiences-knowledge-rules.md)

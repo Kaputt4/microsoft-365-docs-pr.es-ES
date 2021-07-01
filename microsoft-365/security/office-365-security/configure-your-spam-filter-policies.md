@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 910923e693804c96c109c52606b62d92af51abeb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203297"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228668"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -140,7 +140,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
      En la siguiente tabla se describen las acciones disponibles en los veredictos de filtrado de correo no deseado.
 
-     - Una marca de verificación ( ![Marca de verificación](../../media/checkmark.png)) indica que la acción está disponible (no todas las acciones están disponibles para todos los veredictos).
+     - Una marca de verificación ( ![Marca de verificación](../../media/checkmark.png) ) indica que la acción está disponible (no todas las acciones están disponibles para todos los veredictos).
      - Un asterisco (<sup>\*</sup>) después de la marca de verificación indica la acción predeterminada para el veredicto de filtrado de correo no deseado.
 
      <br>

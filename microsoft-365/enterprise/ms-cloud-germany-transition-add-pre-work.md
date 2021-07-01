@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: db4563b4a63dc39ee8171e80fd76ae15b7cd10e9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9b7a43789aaa61c03e254275fbf7cc945670ccc2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844291"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229820"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Actividades previas a la migración de Microsoft Cloud Deutschland
 
@@ -113,7 +113,7 @@ Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add
 | Limite SharePoint flujos de trabajo de 2013, úsenlo durante la SharePoint en línea. | Reduzca SharePoint flujos de trabajo de 2013 y complete los flujos de trabajo en el vuelo antes de las transiciones. | La inacción puede provocar confusión del usuario y llamadas al servicio de ayuda. |
 ||||
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 <!-- before phase 5 -->
 
@@ -122,8 +122,8 @@ Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add
 
 | Pasos | Descripción | Impacto |
 |:-------|:-------|:-------|
-| Notifique a los asociados externos de la próxima transición a Office 365 servicios. |  Los clientes deben notificar a sus partners con los que han habilitado la configuración de espacio de direcciones de disponibilidad y calendario compartido (permitir el uso compartido de información de disponibilidad con Office 365). La configuración de disponibilidad debe realizar la transición para usar los [Office 365 de conexión en](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) todo el mundo cuando se Exchange Online migración. | Si no lo hace, puede producirse un error en el servicio o el cliente en una fase posterior de la migración de clientes. |
-| Notificar a los usuarios los cambios necesarios en el cliente IMAP4/POP3/SMTP. | Los usuarios que tienen conexiones de dispositivo a puntos de conexión de Microsoft Cloud Deutschland para protocolos de cliente IMAP4, POP3, SMTP deben actualizar manualmente sus dispositivos cliente para cambiar a los nombres de servidor [Exchange Online](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes). | Comunique previamente esta dependencia a los usuarios de estos protocolos y asegúrese de que cambien a usar Outlook móvil o Outlook en la web durante esta migración. Si no se actualizan los puntos de conexión de cliente, se producirán errores de conexión de cliente en Microsoft Cloud Deutschland cuando se migren los buzones de usuario. |
+| Notifique a los asociados externos de la próxima transición a Office 365 servicios. |  Los clientes deben notificar a sus partners con los que han habilitado la configuración de espacio de direcciones de disponibilidad y calendario compartido (permitir el uso compartido de información de disponibilidad con Office 365). La configuración de disponibilidad debe realizar la transición para usar los [Office 365 de conexión en](/microsoft-365/enterprise/urls-and-ip-address-ranges) todo el mundo cuando se Exchange Online migración. | Si no lo hace, puede producirse un error en el servicio o el cliente en una fase posterior de la migración de clientes. |
+| Notificar a los usuarios los cambios necesarios en el cliente IMAP4/POP3/SMTP. | Los usuarios que tienen conexiones de dispositivo a puntos de conexión de Microsoft Cloud Deutschland para protocolos de cliente IMAP4, POP3, SMTP deben actualizar manualmente sus dispositivos cliente para cambiar a los nombres de servidor [Exchange Online](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes). | Comunique previamente esta dependencia a los usuarios de estos protocolos y asegúrese de que cambian a usar Outlook móvil o Outlook en la Web durante esta migración. Si no se actualizan los puntos de conexión de cliente, se producirán errores de conexión de cliente en Microsoft Cloud Deutschland cuando se migren los buzones de usuario. |
 ||||
 
 ### <a name="exchange-online-hybrid-customers"></a>Exchange Online Clientes híbridos
@@ -139,7 +139,7 @@ Los atributos de directorio se sincronizan entre Office 365 y Azure AD con la im
 | Pasos | Descripción | Impacto |
 |:-------|:-------|:-------|
 | Volver a ejecutar HCW con Office 365 configuración de Alemania <br><br> <i>Puede iniciar esta actividad inmediatamente después de recibir la notificación del centro de mensajes de que su Office 365 de inquilino ha comenzado (fase 1).</i>| Desinstalar y volver a ejecutar HCW (17.0.5378.0 o posterior) desde antes de la fase 5 garantizará que la configuración local esté preparada para enviar y recibir correo con usuarios y usuarios de Microsoft Cloud Deutschland que se migran Office 365 la región de [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Alemania. <p><li> En hcw, para el cuadro de lista debajo de **Mi Office 365 organización** está hospedado por , seleccione Office 365 **Alemania.** | Si no se completa esta tarea antes de que comience la fase 5 [migración Exchange] puede resultar en NDR para el correo enrutado entre la implementación Exchange local y Office 365.
-| Conservación de la configuración de buzones compartidos | Algunos clientes híbridos han convertido buzones de usuario en la nube para que sean buzones "compartidos" mediante Exchange Online comandos. Esta configuración de buzón de correo en la nube se escribe en el buzón y en el directorio Exchange Online local, sin embargo, no se sincroniza de nuevo con Active Directory del cliente a través de AAD Conectar. El resultado es una discrepancia entre la representación de Active Directory de los valores RemoteRecipientType y RemoteDisplayType de buzones de correo y Exchange Online el buzón como compartido. <br><br> El cliente es responsable de asegurarse de que todos los buzones compartidos se aprovisionan correctamente mediante `New-RemoteMailbox -Shared` , `Enable-RemoteMailbox -Shared` o `Set-RemoteMailbox -Shared` .  Vea esta referencia para obtener información sobre cómo convertir el buzón de un usuario [en un entorno híbrido.](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)| Si no se completa esta tarea antes de la fase 5 [migración Exchange Online], los NDR para buzones compartidos pueden volver a convertirse en buzones sin licencia y la pérdida de acceso compartido para los buzones afectados. [Los buzones](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) compartidos se convierten inesperadamente en buzones de usuario después de que la sincronización de directorios se ejecute en una implementación híbrida de Exchange indica el impacto de no abordar esto antes de que Exchange Online se complete la migración.
+| Conservación de la configuración de buzones compartidos | Algunos clientes híbridos han convertido buzones de usuario en la nube para que sean buzones "compartidos" mediante Exchange Online comandos. Esta configuración de buzón de correo en la nube se escribe en el buzón y en el directorio Exchange Online local, sin embargo, no se sincroniza de nuevo con Active Directory del cliente a través de AAD Conectar. El resultado es una discrepancia entre la representación de Active Directory de los valores RemoteRecipientType y RemoteDisplayType de buzones de correo y Exchange Online el buzón como compartido. <br><br> El cliente es responsable de asegurarse de que todos los buzones compartidos se aprovisionan correctamente mediante `New-RemoteMailbox -Shared` , `Enable-RemoteMailbox -Shared` o `Set-RemoteMailbox -Shared` .  Vea esta referencia para obtener información sobre cómo convertir el buzón de un usuario [en un entorno híbrido.](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox)| Si no se completa esta tarea antes de la fase 5 [migración Exchange Online], los NDR para buzones compartidos pueden volver a convertirse en buzones sin licencia y la pérdida de acceso compartido para los buzones afectados. [Los buzones](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) compartidos se convierten inesperadamente en buzones de usuario después de que la sincronización de directorios se ejecute en una implementación híbrida de Exchange indica el impacto de no abordar esto antes de que Exchange Online se complete la migración.
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype Empresarial Online

@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245941"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230060"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Escritorio administrado de Microsoft dispositivos
 
@@ -22,13 +22,13 @@ ms.locfileid: "52245941"
 
 Escritorio administrado de Microsoft evalúa periódicamente los dispositivos que se incluirán en el servicio. En este artículo se enumeran los dispositivos específicos que se admiten actualmente. Para obtener una declaración más general de los requisitos del dispositivo, consulta [Requisitos del dispositivo](device-requirements.md).
 
-Para obtener más información sobre Escritorio administrado de Microsoft, [vea Escritorio administrado de Microsoft documentación y recursos](../index.yml). 
+Para obtener más información sobre Escritorio administrado de Microsoft, [vea Escritorio administrado de Microsoft documentación y recursos](../index.yml).
 
 [Seleccionar y validar nuevos dispositivos](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Para inscribirse en Escritorio administrado de Microsoft, un dispositivo debe ser uno de los siguientes modelos y cumplir o superar las especificaciones enumeradas para ram, familia de procesadores y espacio en disco. 
+Para inscribirse en Escritorio administrado de Microsoft, un dispositivo debe ser uno de los siguientes modelos y cumplir o superar las especificaciones enumeradas para ram, familia de procesadores y espacio en disco.
 
 Los vínculos a dispositivos aquí son solo para tu referencia. Si quieres pedir dispositivos, trabaja con los contactos del canal comercial para asegurarte de elegir las configuraciones correctas. En esta tabla, la fecha *de archivo* es la fecha en la que estos modelos estarán sujetos a una duración Escritorio administrado de Microsoft de servicio; cualquiera de estos dispositivos incorporados después de esta fecha no recibirá un período completo de soporte técnico de tres años de Escritorio administrado de Microsoft. Los dispositivos archivados también se enumeran [Escritorio administrado de Microsoft los dispositivos archivados.](archived-device-list.md) *La fecha* de retiro es la fecha en la que este modelo ya no será compatible con Escritorio administrado de Microsoft en absoluto. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán de Escritorio administrado de Microsoft, independientemente de cuándo se inscribieron.
 
@@ -79,9 +79,9 @@ Los vínculos a dispositivos aquí son solo para tu referencia. Si quieres pedir
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB de RAM | Ninguno | 22 de octubre de 2021 | 22 de octubre de 2024 |
 | **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB de RAM | Ninguno | 15 de enero de 2022 | 15 de enero de 2025 |
 
-Además, el dispositivo también debe cumplir estos criterios:     
+Además, el dispositivo también debe cumplir estos criterios:
 
-- Si una SKU específica aparece en los requisitos del dispositivo, asegúrate de usarla al realizar el pedido. Al hacerlo, se garantiza que los dispositivos cumplan Escritorio administrado de Microsoft requisitos de software. 
+- Si una SKU específica aparece en los requisitos del dispositivo, asegúrate de usarla al realizar el pedido. Al hacerlo, se garantiza que los dispositivos cumplan Escritorio administrado de Microsoft requisitos de software.
 - No se ha completado la Windows primera ejecución.
 - Estar registrado con Escritorio administrado de Microsoft la característica [Registro de](../get-started/register-devices-self.md) dispositivos
 

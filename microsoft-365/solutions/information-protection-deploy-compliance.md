@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Obtenga información sobre cómo usar el Administrador de cumplimiento y puntuación de cumplimiento para mejorar el nivel de protección de los datos personales.
-ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918575"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229304"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Usar el Administrador de cumplimiento para administrar acciones de mejora
 
@@ -30,19 +30,18 @@ El Administrador de cumplimiento de Microsoft puede ayudarle a administrar mejor
 
 En este artículo se proporcionan instrucciones sobre el uso de esta herramienta con fines de privacidad de datos.
 
->[!Note]
->Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Debe evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los Términos [de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también Microsoft 365 [de licencias para seguridad y cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
->
+> [!NOTE]
+> Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Debe evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los Términos [de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también Microsoft 365 [de licencias para seguridad y cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
 #### <a name="what-is-compliance-manager"></a>Qué es el Administrador de cumplimiento
 
-[Compliance Manager](../compliance/compliance-manager.md) es una herramienta de evaluación de riesgos basada en flujos de trabajo en el centro de Microsoft 365 cumplimiento normativo para administrar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de la suscripción Microsoft 365 o Azure Active Directory (Azure AD), el Administrador de cumplimiento le ayuda a administrar el cumplimiento normativo dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft.
+[Compliance Manager](../compliance/compliance-manager.md) es una herramienta de evaluación de riesgos basada en flujos de trabajo en el Centro de cumplimiento de Microsoft 365 para administrar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de la suscripción Microsoft 365 o Azure Active Directory (Azure AD), el Administrador de cumplimiento le ayuda a administrar el cumplimiento normativo dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft.
 
 **Evaluaciones listas para usar**
 
-El Administrador de cumplimiento proporciona plantillas predefinidas para crear evaluaciones alineadas con las [normativas](../compliance/compliance-manager-assessments.md) relacionadas con la privacidad de datos, como RGPD e HIPAA/HITECH. Las plantillas tienen asignación de control integrada para ayudarle a tomar medidas de mejora para cumplir los requisitos del reglamento. Cada evaluación proporciona información sobre los controles que cada reglamento llama para específicos del servicio de destino, desglosados por los controles que administra y los controles que administra Microsoft. 
+El Administrador de cumplimiento proporciona plantillas predefinidas para crear evaluaciones alineadas con las [normativas](../compliance/compliance-manager-assessments.md) relacionadas con la privacidad de datos, como RGPD e HIPAA/HITECH. Las plantillas tienen asignación de control integrada para ayudarle a tomar medidas de mejora para cumplir los requisitos del reglamento. Cada evaluación proporciona información sobre los controles que cada reglamento llama para específicos del servicio de destino, desglosados por los controles que administra y los controles que administra Microsoft.
 
 El uso de una plantilla predefinida le ayuda a empezar rápidamente con las evaluaciones de riesgos. A medida que sea más competente en el uso del Administrador de cumplimiento, puede personalizar una plantilla predefinida agregando sus propios controles y acciones de mejora, o puede crear sus propias evaluaciones personalizadas para satisfacer las necesidades de su organización.
 
@@ -59,7 +58,7 @@ La [guía de inicio rápido del Administrador](../compliance/compliance-manager-
 - [Primera visita: familiarizarse con el Administrador de cumplimiento](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Trabajar con el panel del Administrador de cumplimiento
     - Descripción de la puntuación de cumplimiento
-    - Información sobre acciones de mejora
+    - Learning sobre acciones de mejora
     - Descripción de evaluaciones y plantillas
 - [Aceleración: configurar el Administrador de cumplimiento para administrar las actividades de cumplimiento](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - Crear y administrar la primera evaluación

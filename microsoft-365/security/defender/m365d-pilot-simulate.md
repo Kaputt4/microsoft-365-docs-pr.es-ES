@@ -1,7 +1,7 @@
 ---
-title: Ejecutar las simulaciones de ataque Microsoft 365 Defender
-description: Ejecute simulaciones de ataque para el proyecto piloto de Microsoft 365 Defender para ver cómo se desarrolla y se corrige rápidamente.
-keywords: Microsoft 365 Simulación de ataque piloto de Defender, ejecución de simulación de ataque piloto de Microsoft 365 Defender, simulación de ataque en Microsoft 365 Defender, proyecto piloto de Microsoft 365 Defender, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
+title: Ejecutar las simulaciones Microsoft 365 Defender ataques
+description: Ejecute simulaciones de ataques para Microsoft 365 Defender proyecto piloto para ver cómo se desarrolla y se corrige rápidamente.
+keywords: Microsoft 365 Defender simulación de ataque piloto Microsoft 365 Defender, ejecutar una simulación de ataque piloto, simular ataque en Microsoft 365 Defender, proyecto piloto de Microsoft 365 Defender, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18dc8158ef3c806e5dac5a01778adebc6eecc1ce
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934482"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230024"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ejecutar las simulaciones de ataque Microsoft 365 Defender
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ejecutar las simulaciones Microsoft 365 Defender ataques
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934482"
 
 Actualmente estás en la fase de simulación de ataque.
 
-Después de preparar el entorno piloto, es hora de probar la administración de incidentes de Microsoft 365 Defender y las capacidades automatizadas de investigación y corrección. Te ayudaremos a simular un ataque sofisticado que aprovecha técnicas avanzadas para ocultarte de la detección. El ataque enumera las sesiones de bloque de mensajes de servidor (SMB) abiertas en controladores de dominio y recupera las direcciones IP recientes de los dispositivos de los usuarios. Esta categoría de ataques normalmente no incluye archivos descartados en el dispositivo de la víctima, sino que se producen únicamente en la memoria. "Viven fuera de la tierra" mediante el uso de herramientas administrativas y del sistema existentes e insertan su código en los procesos del sistema para ocultar su ejecución, este comportamiento les permite eludir la detección y persistir en el dispositivo.
+Después de preparar el entorno piloto, es el momento de probar la Microsoft 365 Defender de incidentes y las capacidades automatizadas de investigación y corrección. Te ayudaremos a simular un ataque sofisticado que aprovecha técnicas avanzadas para ocultarte de la detección. El ataque enumera las sesiones de bloque de mensajes de servidor (SMB) abiertas en controladores de dominio y recupera las direcciones IP recientes de los dispositivos de los usuarios. Esta categoría de ataques normalmente no incluye archivos descartados en el dispositivo de la víctima, sino que se producen únicamente en la memoria. "Viven fuera de la tierra" mediante el uso de herramientas administrativas y del sistema existentes e insertan su código en los procesos del sistema para ocultar su ejecución, este comportamiento les permite eludir la detección y persistir en el dispositivo.
 
 En esta simulación, nuestro escenario de ejemplo comienza con un script de PowerShell. Un usuario puede ser engañado para ejecutar un script. O bien, el script puede ejecutarse desde una conexión remota a otro equipo desde un dispositivo infectado anteriormente: el atacante intenta moverse lateralmente en la red. La detección de estos scripts puede ser difícil porque los administradores también suelen ejecutar scripts de forma remota para llevar a cabo diversas actividades administrativas.
 
@@ -54,7 +54,7 @@ Durante la simulación, el ataque inserta el shellcode en un proceso aparentemen
 
 Dado que ya configuró el entorno piloto durante la fase de preparación, asegúrese de que tiene dos dispositivos para este escenario: un dispositivo de prueba y un controlador de dominio.
 
-1. Compruebe que el inquilino ha [habilitado Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
+1. Compruebe que el espacio empresarial [ha Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 
 2. Compruebe la configuración del controlador de dominio de prueba:
 
@@ -158,14 +158,14 @@ Para ver el incidente:
 
    ![Captura de pantalla de dónde hacer clic en Administrar incidente](../../media/mtp/fig5a.png)
 
-   ![Captura de pantalla de los campos del panel administrar incidentes donde puedes etiquetar el incidente, asignarlo a ti mismo y agregar comentarios ](../../media/mtp/fig5b.png)
+   ![Captura de pantalla de los campos del panel administrar incidentes donde puedes etiquetar el incidente, asignarlo a ti mismo y agregar comentarios](../../media/mtp/fig5b.png)
 
 ### <a name="review-generated-alerts"></a>Revisar alertas generadas
 
 Veamos algunas de las alertas generadas durante el ataque simulado.
 
 > [!NOTE]
-> Solo recorreremos algunas de las alertas generadas durante el ataque simulado. Según la versión de Windows y los productos de Microsoft 365 Defender que se ejecutan en el dispositivo de prueba, es posible que veas más alertas que aparecen en un orden ligeramente diferente.
+> Solo recorreremos algunas de las alertas generadas durante el ataque simulado. Según la versión de Windows y los productos Microsoft 365 Defender que se ejecutan en el dispositivo de prueba, es posible que veas más alertas que aparecen en un orden ligeramente diferente.
 
 ![Captura de pantalla de alertas generadas](../../media/mtp/fig6.png)
 
@@ -279,7 +279,7 @@ Esto ajusta la simulación de ataque para la administración de incidentes y los
 
 Hay un único buzón interno y un dispositivo necesarios para este escenario. También necesitará una cuenta de correo electrónico externa para enviar el mensaje de prueba.
 
-1. Compruebe que el inquilino ha [habilitado Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
+1. Compruebe que el espacio empresarial [ha habilitado Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 2. Identificar un buzón de destino que se usará para recibir correo electrónico.
     a. Microsoft Defender debe supervisar este buzón Office 365 b. El dispositivo del requisito 3 debe tener acceso a este buzón
 3. Configurar un dispositivo de prueba: a. Asegúrese de que está usando Windows 10 versión 1903 o posterior.
@@ -432,20 +432,20 @@ Las detecciones personalizadas ejecutarán la consulta según la frecuencia que 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ejercicios de búsqueda avanzada adicionales
 
-Para obtener más información sobre la búsqueda avanzada, las siguientes difusión por web le ayudarán a través de las capacidades de búsqueda avanzada en Microsoft 365 Defender para crear consultas entre columnas, pivotar en las entidades y crear detecciones personalizadas y acciones de corrección.
+Para obtener más información acerca de la búsqueda avanzada, las siguientes difusión por web le ayudarán a través de las capacidades de búsqueda avanzada dentro de Microsoft 365 Defender para crear consultas entre columnas, pivotar en las entidades y crear detecciones personalizadas y acciones de corrección.
 
 > [!NOTE]
 > Esté preparado con su propia cuenta GitHub para ejecutar las consultas de búsqueda en el entorno de laboratorio de prueba piloto.
 
-|Title|Descripción|Descargar MP4|Ver en YouTube|Archivo CSL que se usará|
+|Título|Descripción|Descargar MP4|Ver en YouTube|Archivo CSL que se usará|
 |---|---|---|---|---|
 |Episodio 1: Conceptos básicos de KQL|Cubriremos los conceptos básicos de las capacidades avanzadas de búsqueda en Microsoft 365 Defender. Obtenga información sobre los datos de búsqueda avanzados disponibles y la sintaxis y los operadores básicos de KQL.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episodio 1: Archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |Episodio 2: Combinaciones|Seguiremos aprendiendo sobre los datos en la búsqueda avanzada y cómo unir tablas. Obtenga información sobre las combinaciones internas, externas, únicas y semi, y los matices de la combinación predeterminada de Kusto innerunique.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Episodio 2: Archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |Episodio 3: Resumen, pivotación y visualización de datos|Ahora que podemos filtrar, manipular y unir datos, es hora de empezar a resumir, cuantificar, pivotar y visualizar. En este episodio, cubriremos el operador de resumen y algunos de los cálculos que puedes realizar mientras te abates en tablas adicionales en el esquema de búsqueda avanzado. Conviertemos nuestros conjuntos de datos en gráficos que pueden ayudar a mejorar el análisis.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Episodio 3: Archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|Episodio 4: Vamos a cazar. Aplicación de KQL al seguimiento de incidentes|Tiempo para realizar un seguimiento de alguna actividad de atacante. En este episodio, usaremos nuestra mejor comprensión de KQL y la búsqueda avanzada en Microsoft 365 Defender para realizar un seguimiento de un ataque. Aprende algunas de las sugerencias y trucos usados en el campo para realizar un seguimiento de la actividad de los atacantes, incluidos los ABC de ciberseguridad y cómo aplicarlos a la respuesta a incidentes.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episodio 4: Archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
+|Episodio 4: Vamos a cazar. Aplicación de KQL al seguimiento de incidentes|Tiempo para realizar un seguimiento de alguna actividad de atacante. En este episodio, usaremos nuestra mejor comprensión de KQL y la búsqueda avanzada en Microsoft 365 Defender realizar un seguimiento de un ataque. Aprende algunas de las sugerencias y trucos usados en el campo para realizar un seguimiento de la actividad de los atacantes, incluidos los ABC de ciberseguridad y cómo aplicarlos a la respuesta a incidentes.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episodio 4: Archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
 
 ## <a name="next-step"></a>Paso siguiente
 
-|![Fase de cierre y resumen](../../media/mtp/close.png) <br>[Fase de cierre y resumen](m365d-pilot-close.md)|Analice el resultado Microsoft 365 piloto de Defender, presentarlos a las partes interesadas y dar el siguiente paso.
+|![Fase de cierre y resumen](../../media/mtp/close.png) <br>[Fase de cierre y resumen](m365d-pilot-close.md)|Analice el Microsoft 365 Defender piloto, presentarlos a las partes interesadas y dar el siguiente paso.
 |:-----|:-----|

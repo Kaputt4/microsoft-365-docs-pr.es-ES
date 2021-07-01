@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 0c1eb9585326f2269dca02f52e9170788f659c46
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683408"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228824"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
@@ -122,7 +122,7 @@ No olvide que los invitados a menudo no tienen dispositivos administrados por su
 
 La configuración de dispositivos no administrados en etiquetas de confidencialidad solo afecta al acceso a SharePoint. Si quiere expandir el control de dispositivos no administrados más allá de SharePoint, puede [Crear una directiva de acceso condicional de Azure Active Directory para todas las aplicaciones y servicios de su organización](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) en su lugar. Para configurar esta directiva específicamente para [servicios de Microsoft 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), seleccione la aplicación en la nube de **Office 365** en **Aplicaciones o acciones en la nube**.
 
-![Recorte de pantalla de la aplicación en la nube de Office 365 en una directiva de acceso condicional de Azure Active Directory](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+![Recorte de pantalla de la aplicación en la nube de Office 365 en una directiva de acceso condicional de Azure Active Directory](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
 Usar una directiva que afecte a todos los servicios de Microsoft 365 puede resultar en una seguridad y una experiencia mejoradas para los usuarios. Por ejemplo, cuando bloquea el acceso a dispositivos no administrados en SharePoint solo, los usuarios pueden acceder al chat de un equipo con un dispositivo no administrado, pero perderán el acceso cuando intenten acceder a la pestaña **Archivos**. Usar la aplicación en la nube de Office 365 le ayuda a evitar problemas con [dependencias del servicio](/azure/active-directory/conditional-access/service-dependencies).
 

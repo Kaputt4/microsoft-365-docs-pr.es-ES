@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 9abed7f9601872eeb14ceb294c54a1cb54f63c2f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096802"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229112"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -85,7 +85,7 @@ La siguiente configuración de directiva está disponible en las directivas cont
   - **Dominios:** uno o varios de los dominios [aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) configurados en Microsoft 365.
 
   - **Excluir estos usuarios, grupos y dominios:** excepciones para la directiva. La configuración y el comportamiento son exactamente iguales a las condiciones:
-    - **Users**
+    - **Usuarios**
     - **Grupos**
     - **Dominios**
 
@@ -175,7 +175,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 
   > [!NOTE]
   >
-  > - En cada directiva contra phishing, puede especificar un máximo de 60 usuarios protegidos (direcciones de correo electrónico del remitente). No puede especificar el mismo usuario protegido en varias directivas. Por lo tanto, independientemente de cuántas directivas se aplican a un destinatario, el número máximo de usuarios protegidos (direcciones de correo electrónico del remitente) para cada destinatario individual es 60. Para obtener más información sobre la prioridad de la directiva y cómo se detiene el procesamiento de directivas después de aplicar la primera directiva, vea [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+  > - En cada directiva contra phishing, puede especificar un máximo de 350 usuarios protegidos (direcciones de correo electrónico del remitente). No puede especificar el mismo usuario protegido en varias directivas. Por lo tanto, independientemente de cuántas directivas se aplican a un destinatario, el número máximo de usuarios protegidos (direcciones de correo electrónico del remitente) para cada destinatario individual es 350. Para obtener más información sobre la prioridad de la directiva y cómo se detiene el procesamiento de directivas después de aplicar la primera directiva, vea [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
   > - La protección de suplantación de usuario no funciona si el remitente y el destinatario se han comunicado previamente por correo electrónico. Si el remitente y el destinatario nunca se han comunicado por correo electrónico, el mensaje se identificará como un intento de suplantación.
 
   De forma predeterminada, no hay direcciones de correo electrónico del remitente configuradas para la protección de suplantación **en Usuarios para proteger**. Por lo tanto, de forma predeterminada, ninguna dirección de correo electrónico del remitente está cubierta por la protección de suplantación, ya sea en la directiva predeterminada o en directivas personalizadas.

@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Obtenga información sobre las funcionalidades multigeo en Exchange Online, como las limitaciones de características y la colocación de buzones.
-ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694310"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229808"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades multigeográficas en Exchange Online
 
@@ -59,4 +59,4 @@ Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en
 
 - Las carpetas públicas se admiten en organizaciones multigeográficas. Sin embargo, las carpetas públicas deben permanecer en la ubicación geográfica central. No puede mover carpetas públicas a ubicaciones geográficas satélite.
 
-- En un entorno multigeográfico, la auditoría de buzón multigeográfico no es compatible. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. Para más información, consulte [Administrar auditoría del buzón](../compliance/enable-mailbox-auditing.md?view=o365-worldwide)..
+- En un entorno multigeográfico, la auditoría de buzón multigeográfico no es compatible. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. Para más información, consulte [Administrar auditoría del buzón](../compliance/enable-mailbox-auditing.md)..

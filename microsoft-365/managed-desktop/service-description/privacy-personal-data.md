@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 0ee214cf7ff5d5998a7fa35688574a23f8b082f0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177482"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229604"
 ---
 # <a name="overview"></a>Información general
 
@@ -68,16 +68,16 @@ Azure Active Directory (Azure AD) almacena los datos usados por Escritorio admin
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Microsoft Intune recopila, procesa y comparte datos con Escritorio administrado de Microsoft para admitir operaciones y servicios empresariales. Consulta [Recopilación de datos en Intune](/mem/intune/protect/privacy-data-collect) para obtener más información sobre los datos recopilados en Intune. 
 
-Para obtener más información sobre Microsoft Intune de datos, vea [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide). Intune respeta las selecciones de ubicación de almacenamiento realizadas por el administrador para los datos del cliente.
+Para obtener más información sobre Microsoft Intune de datos, vea [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). Intune respeta las selecciones de ubicación de almacenamiento realizadas por el administrador para los datos del cliente.
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
-Microsoft Defender para endpoint recopila y almacena información para dispositivos inscritos en Escritorio administrado de Microsoft con fines de administración, seguimiento e informes. La información recopilada incluye datos de archivos (como nombres de archivo, tamaño y hash), datos de proceso (procesos en ejecución, hashes), datos del Registro, datos de conexión de red y detalles del dispositivo (como identificadores de dispositivo, nombres de dispositivo y la versión del sistema operativo). Consulte [Microsoft Defender for Endpoint data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) para obtener más información sobre Microsoft Defender para las ubicaciones de almacenamiento y recopilación de datos de Endpoint. 
+Microsoft Defender para endpoint recopila y almacena información para dispositivos inscritos en Escritorio administrado de Microsoft con fines de administración, seguimiento e informes. La información recopilada incluye datos de archivos (como nombres de archivo, tamaño y hash), datos de proceso (procesos en ejecución, hashes), datos del Registro, datos de conexión de red y detalles del dispositivo (como identificadores de dispositivo, nombres de dispositivo y la versión del sistema operativo). Consulte [Microsoft Defender for Endpoint data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) para obtener más información sobre Microsoft Defender para las ubicaciones de almacenamiento y recopilación de datos de Endpoint. 
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas 
-Aplicaciones Microsoft 365 para empresas recopila y comparte datos con Escritorio administrado de Microsoft para garantizar que dichas aplicaciones estén actualizadas con la versión más reciente basada en canales de actualización predefinidos administrados por Escritorio administrado de Microsoft. Consulta [Microsoft Defender para El almacenamiento y](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) privacidad de los datos de punto de conexión para obtener más información sobre Aplicaciones Microsoft 365 de almacenamiento y recopilación de datos de Aplicaciones Microsoft 365.
+Aplicaciones Microsoft 365 para empresas recopila y comparte datos con Escritorio administrado de Microsoft para garantizar que dichas aplicaciones estén actualizadas con la versión más reciente basada en canales de actualización predefinidos administrados por Escritorio administrado de Microsoft. Consulta [Microsoft Defender para El almacenamiento y](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) privacidad de los datos de punto de conexión para obtener más información sobre Aplicaciones Microsoft 365 de almacenamiento y recopilación de datos de Aplicaciones Microsoft 365.
 
 ## <a name="major-data-change-notification"></a>Notificación de cambio de datos principal
-Escritorio administrado de Microsoft un proceso de control de cambios tal como se describe en nuestro marco de comunicación de servicio. Notificamos a los clientes a través Microsoft 365 centro de mensajes y el portal de administración Escritorio administrado de Microsoft de incidentes de seguridad y cambios importantes en el servicio. Los cambios en los tipos de datos recopilados y donde se almacenan se consideran un cambio material. Proporcionaremos un mínimo de 30 días de notificación avanzada de este cambio, como es la práctica estándar para Microsoft 365 productos y servicios. Para obtener más información, vea [Service changes and communication](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide).
+Escritorio administrado de Microsoft un proceso de control de cambios tal como se describe en nuestro marco de comunicación de servicio. Notificamos a los clientes a través Microsoft 365 centro de mensajes y el portal de administración Escritorio administrado de Microsoft de incidentes de seguridad y cambios importantes en el servicio. Los cambios en los tipos de datos recopilados y donde se almacenan se consideran un cambio material. Proporcionaremos un mínimo de 30 días de notificación avanzada de este cambio, como es la práctica estándar para Microsoft 365 productos y servicios. Para obtener más información, vea [Service changes and communication](/microsoft-365/managed-desktop/service-description/servicechanges).
 
 ## <a name="compliance"></a>Cumplimiento
 Escritorio administrado de Microsoft se ha sometido a auditorías externas y ha obtenido un conjunto completo de ofertas de cumplimiento. Puede encontrar más información en Escritorio administrado de Microsoft [Compliance](/microsoft-365/managed-desktop/intro/compliance). Los informes de auditoría están disponibles para su descarga en Microsoft [Service Trust Portal,](https://aka.ms/stp)que sirve como repositorio central para Microsoft Enterprise Online Services. (Escritorio administrado de Microsoft se incluye en estos documentos en la categoría "Supervisión y administración"). 

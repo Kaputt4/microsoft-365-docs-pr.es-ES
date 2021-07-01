@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 ayuda a las organizaciones de energía a mudarse a una plataforma de colaboración moderna, mientras las ayuda a mantener sus datos y sistemas seguros y conforme a las normativas.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efc9476d2c766aab325977dfe717290ff6c8fb8d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916123"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229328"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Consideraciones clave de cumplimiento y seguridad para la Industria energética
 ![Metáfora ilustrativa de una visión global de varias industrias que utilizan la nube](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ Entre las normas reglamentarias que se recomiendan para su examen por las organi
 - Se ha concedido para Azure y Azure Government una FedRAMP Alta P-ATO (Autorización Provisional para Operar), que representa el nivel más alto de autorización de la FedRAMP. 
 
 Para obtener información sobre los servicios de nube de Microsoft y FedRAMP, consulte los siguientes recursos:
-- [Información general Microsoft FedRAMP](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
+- [Información general Microsoft FedRAMP](/compliance/regulatory/offering-FedRAMP)
 - [Informes Office 365 FedRAMP](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 
@@ -90,7 +90,7 @@ Microsoft 365 proporciona capacidades de directiva común para Microsoft Teams a
 - La proliferación de Microsoft Teams que no son necesarios ni utilizados
 - La retención excesiva de datos que ya no son necesarios para la organización
 
-Los administradores pueden especificar un período de caducidad en días para los Grupos de Office 365, como 90, 180 o 365 días. Si un servicio respaldado por un grupo Office 365 está inactivo durante el período de caducidad, se notifica a los propietarios del grupo, y si no se toma ninguna medida, se eliminarán el grupo Office 365 y todos sus servicios relacionados, incluido Microsoft Teams. 
+Los administradores pueden especificar un período de expiración en días para Grupos de Office 365, como 90, 180 o 365 días. Si un servicio respaldado por un Grupo de Office 365 está inactivo durante el período de expiración, se notificará a los propietarios del grupo y, si no se realiza ninguna acción, se eliminarán el Grupo de Office 365 y todos sus servicios relacionados, incluido Microsoft Teams. 
 
 La retención excesiva de datos en Microsoft Teams puede plantear riesgos de litigio para las organizaciones, y el uso de directivas de caducidad es un método recomendado para proteger a la organización. En combinación con las etiquetas y directivas de retención incorporadas, Microsoft 365 ayuda a garantizar que las organizaciones sólo retengan los datos necesarios para cumplir con las obligaciones de cumplimiento normativo.
 
@@ -161,7 +161,7 @@ La implementación de directivas de MIP y DLP en las organizaciones requiere una
 ## <a name="govern-data-by-effectively-managing-records"></a>Gobernar los datos mediante la gestión eficaz de los registros
 Los reglamentos exigen a muchas organizaciones que administren la retención de los documentos clave de la organización de acuerdo con un calendario de retención empresarial gestionado. Las organizaciones se enfrentan a riesgos de cumplimiento de la normativa si los datos se retienen insuficientemente (se eliminan demasiado pronto), o a riesgos jurídicos si los datos se retienen en exceso (se conservan demasiado tiempo). Las estrategias eficaces de administración de registros ayudan a garantizar que los documentos de la organización se conserven de acuerdo con períodos de retención predeterminados, concebidos para reducir al mínimo el riesgo para la organización. Los períodos de retención se prescriben en un calendario de retención de registros de la organización administrado centralmente, y se basan en la naturaleza de cada tipo de documento, en los requisitos de cumplimiento normativo para la retención de determinados tipos de datos y en las directivas definidas de la organización. 
 
-Asignar con precisión los períodos de retención de registros en todos los documentos de la organización puede requerir un proceso granular que asigne los períodos de retención únicamente a los documentos individuales. El gran número de documentos en las organizaciones de la industria energética, junto con el hecho de que en muchos casos los períodos de retención pueden ser desencadenados por acontecimientos de la organización (como la expiración de contratos o el abandono de la organización por parte de un empleado), hacen que la aplicación de directivas de retención de registros a escala sea difícil para muchas organizaciones.
+La asignación de períodos de retención de registros con precisión en los documentos de la organización puede requerir un proceso pormenorizado que asigne períodos de retención de forma única a documentos individuales. El gran número de documentos de las organizaciones del sector energético, junto con el hecho de que en muchos casos los períodos de retención se pueden desencadenar mediante eventos organizativos (como contratos que expiran o un empleado que abandona la organización), dificulta la aplicación de directivas de retención de registros a escala para muchas organizaciones.
 
 Microsoft 365 proporciona funciones para definir etiquetas de retención y directivas para implementar fácilmente los requisitos de administración de registros. Un administrador de registros define una etiqueta de retención que representa un "tipo de registro" en una programación de retención tradicional. La etiqueta de retención contiene ajustes que definen:
 - Cuánto tiempo es retenido un registro por
@@ -192,7 +192,7 @@ Las directivas de supervisión de Microsoft 365 permiten que las organizaciones 
 ### <a name="communication-compliance"></a>Cumplimiento de la comunicación
 Con muchos canales de comunicación a disposición de los empleados, las organizaciones requieren cada vez más soluciones eficaces para vigilar o supervisar las comunicaciones en las industrias reguladas, como los mercados de comercio de energía. La solución de cumplimiento de las comunicaciones, recientemente lanzada e integrada en Microsoft 365, ayuda a las organizaciones a superar desafíos comunes, como el aumento del número de canales de comunicación y el volumen de los mensajes, así como el riesgo de posibles multas por violaciones de las directivas.
 
-El cumplimiento de la comunicación puede monitorear múltiples canales de comunicación y utilizar modelos de aprendizaje automático para identificar posibles violaciones de la directiva, incluyendo el correo electrónico de Office 365, los Microsoft Teams, Skype Empresarial Online, Facebook, Twitter y los mensajes instantáneos de Bloomberg. El cumplimiento de las comunicaciones ayuda a los equipos de cumplimiento a revisar de forma eficaz y eficiente los mensajes para detectar posibles violaciones de:
+Communication Compliance puede monitorear múltiples canales de comunicación y usar modelos de aprendizaje automático para identificar posibles violaciones de políticas, incluido el correo electrónico de Office 365, Microsoft Teams, Skype for Business Online, Facebook, Twitter y mensajes instantáneos de Bloomberg. El cumplimiento de comunicaciones ayuda a los equipos de cumplimiento a revisar los mensajes de manera eficaz y eficiente para detectar posibles violaciones de:
 - Directivas corporativas, como el uso aceptable, normas éticas y las directivas específicas de las empresas 
 - confidencialidad o divulgación de negocios confidenciales, como comunicaciones no autorizadas sobre proyectos confidenciales como próximas adquisiciones, fusiones, divulgación de ganancias, reorganizaciones o cambios en el equipo directivo
 - Requisitos de cumplimiento de la normativa, como las comunicaciones de los empleados relativas a los tipos de negocios o transacciones en los que una organización participa en el cumplimiento de los reglamentos de la FERC para los mercados de energía

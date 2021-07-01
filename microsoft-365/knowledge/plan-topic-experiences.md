@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo planear los temas de Microsoft Viva
-ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583117"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229544"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planeación de temas de Microsoft Viva
 
@@ -36,13 +36,15 @@ Para obtener más información sobre la tecnología de inteligencia artificial d
 
 ## <a name="requirements"></a>Requisitos
 
-Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso al centro de administración de Microsoft 365 y configurar Temas.
+Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso a la Centro de administración de Microsoft 365 y configurar temas.
 
 Todos los usuarios que van a usar Temas requieren una **licencia de Experiencias de** tema. La asignación de licencias se trata [en Configurar temas de Microsoft Viva](set-up-topic-experiences.md).
 
 ## <a name="topic-discovery"></a>Detección de temas
 
-La configuración de la detección de temas especifica qué sitios de SharePoint se utilizan como fuentes de temas. Puede elegir entre incluir todos los sitios de SharePoint, una lista específica de sitios o ningún sitio. Le recomendamos que elija todos los sitios para que las experiencias del tema puedan descubrir una gran cantidad de temas buenos para los usuarios.
+La configuración de la detección de temas especifica qué sitios de SharePoint se utilizan como fuentes de temas. Esto incluye sitios clásicos y modernos, así como sitios asociados con Microsoft Teams y Microsoft 365 grupos. OneDrive no se incluyen los sitios.
+
+Puede elegir entre incluir todos los sitios de SharePoint, una lista específica de sitios o ningún sitio. Le recomendamos que elija todos los sitios para que las experiencias del tema puedan descubrir una gran cantidad de temas buenos para los usuarios.
 
 Cuando se configuran los Temas, se puede elegir entre las siguientes opciones:
 
@@ -128,7 +130,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Administración
 
-Al configurar Temas, como parte del proceso de configuración, se crea automáticamente un centro de temas. Piense en lo que desea nombrar el centro de temas y en qué desea que sea la dirección URL. Puede establecer el nombre y la dirección URL como parte del proceso de instalación y puede cambiar el nombre (pero no la dirección URL) más adelante en el centro de administración de Microsoft 365 configuración. Solo puede tener un centro de temas.
+Al configurar Temas, como parte del proceso de configuración, se crea automáticamente un centro de temas. Piense en lo que desea nombrar el centro de temas y en qué desea que sea la dirección URL. Puede establecer el nombre y la dirección URL como parte del proceso de instalación y puede cambiar el nombre (pero no la dirección URL) más adelante en el Centro de administración de Microsoft 365. Solo puede tener un centro de temas.
 
 ## <a name="setup-checklist"></a>Lista de comprobación de configuración
 
@@ -142,7 +144,7 @@ Cuando configures experiencias de tema, necesitarás los siguientes elementos a 
 > * Lista de temas confidenciales que se excluirán de la detección de temas
 > * Un nombre para el sitio del centro de temas
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Configurar las experiencias temáticas](set-up-topic-experiences.md)
 

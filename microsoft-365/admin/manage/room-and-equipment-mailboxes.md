@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d999cb04161b1284025aa1b587fe7368c25eb4f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915175"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227936"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
 
@@ -55,13 +55,13 @@ Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inic
     
 8. Para permitir que otras personas se unan en línea o llamen a la reunión, seleccione **Reunión de Skype**.
     
-9. Para garantizar que la sala, el equipamiento y las personas que ha invitado están disponibles, seleccione **Asistente para programación** en la parte superior. Después, seleccione una hora disponible en el calendario.<br/> ![Comprobar si el equipamiento de la sala está disponible](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>Sugerencia: en el calendario de la programación, azul significa que la sala o el equipamiento está reservado u ocupado. Seleccione el área libre o en blanco del calendario. 
+9. Para garantizar que la sala, el equipamiento y las personas que ha invitado están disponibles, seleccione **Asistente para programación** en la parte superior. Después, seleccione una hora disponible en el calendario.<br/> ![Comprobar si el equipamiento de la sala está disponible](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>SUGERENCIA: En el calendario de programación, el azul significa que la sala o el equipo está reservado o ocupado. Seleccione el área blanca o libre del calendario. 
   
 10. Cuando finalice, haga clic en **Enviar**.
     
 ## <a name="set-up-room-and-equipment-mailboxes"></a>Administrar buzones de sala y equipamiento
 
-Para configurar un buzón de sala o equipamiento, vaya al Centro de administración de Microsoft 365. (Necesitará tener permisos de administrador para realizar esto). Cree el buzón e indique a todos los usuarios que pueden empezar a reservarlo para reuniones y eventos.
+Para configurar un buzón de correo de sala o equipo, vaya al Centro de administración de Microsoft 365. (Necesitará tener permiso de administrador para hacer esto). Cree el buzón y dígales a todos que pueden comenzar a reservarlo para reuniones y eventos.
   
 1. En el centro de administración, vaya a la página **Recursos** \> [Salas y equipamiento](https://go.microsoft.com/fwlink/p/?linkid=2067334).
   
@@ -88,7 +88,7 @@ Para configurar un buzón de sala o equipamiento, vaya al Centro de administraci
 6. Si ha realizado cambios, seleccione **Guardar** y, después, **Cerrar**.
 
 > [!Note]
-> Para garantizar la seguridad de sus buzones de sala y equipamiento, bloquee el inicio de sesión en estos buzones. Para obtener más información, consulte [Bloquear el inicio de sesión de la cuenta de buzón compartido](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> Para garantizar la seguridad de sus buzones de sala y equipamiento, bloquee el inicio de sesión en estos buzones. Para obtener más información, consulte [Bloquear el inicio de sesión de la cuenta de buzón compartido](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>Preguntas comunes sobre los buzones de sala y equipamiento.
 

@@ -1,7 +1,7 @@
 ---
 title: Perfil de dispositivo en Microsoft 365 de seguridad
 description: Ver los niveles de riesgo y exposición de un dispositivo de la organización. Analiza las amenazas pasadas y actuales y protege el dispositivo con las actualizaciones más recientes.
-keywords: security, malware, Microsoft 365, M365, Microsoft 365 Defender, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, device page, device profile, machine page, machine profile, machine profile
+keywords: seguridad, malware, Microsoft 365, M365, Microsoft 365 Defender, centro de seguridad, Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para la identidad, página del dispositivo, perfil de dispositivo, página de máquina, perfil de máquina
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 8e2788fd9163a27b41bd3788facf5fc9623b0543
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 47b25ba541264d79216748753e9f41fb7435fc10
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935670"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229484"
 ---
 # <a name="device-profile-page"></a>Página de perfil de dispositivo
 
@@ -81,7 +81,7 @@ Las acciones disponibles en la página de perfil de dispositivo incluyen:
 * **Ejecutar examen antivirus:** actualiza Antivirus de Windows Defender definiciones e inmediatamente ejecuta un examen antivirus. Elija entre Examen rápido o Examen completo.
 * **Recopilar paquete de investigación:** recopila información sobre el dispositivo. Cuando se complete la investigación, puede descargarla.
 * **Iniciar sesión de respuesta en directo:** carga un shell remoto en el dispositivo para investigaciones [de seguridad en profundidad.](/microsoft-365/security/defender-endpoint/live-response)
-* **Iniciar investigación automatizada:** investiga y corrige automáticamente [las amenazas.](../office-365-security/office-365-air.md) Aunque puede activar manualmente las investigaciones automatizadas para que se ejecuten desde esta [página,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) determinadas directivas de alerta desencadenan investigaciones automáticas por sí solas.
+* **Iniciar investigación automatizada:** investiga y corrige automáticamente [las amenazas.](../office-365-security/office-365-air.md) Aunque puede activar manualmente las investigaciones automatizadas para que se ejecuten desde esta [página,](../../compliance/alert-policies.md#default-alert-policies) determinadas directivas de alerta desencadenan investigaciones automáticas por sí solas.
 * **Centro de acciones:** muestra información sobre las acciones de respuesta que se están ejecutando actualmente.
 
 ## <a name="tabs-section"></a>Sección Tabulaciones
@@ -180,7 +180,7 @@ Al seleccionar un elemento, se abrirá un desplegable que vincula a la actualiza
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Microsoft 365 Introducción al defensor](microsoft-365-defender.md)
+* [Microsoft 365 Defender introducción](microsoft-365-defender.md)
 * [Activar Microsoft 365 Defender](m365d-enable.md)
 * [Investigar entidades en dispositivos con respuesta en directo](../defender-endpoint/live-response.md)
 * [Investigación y respuesta automatizadas (AIR) en Office 365](../office-365-security/office-365-air.md)

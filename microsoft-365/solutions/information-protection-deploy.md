@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configure la protección de la información en Microsoft 365 para las regulaciones de privacidad de datos como RGPD y la Ley de privacidad del consumidor de California (CCPA), incluidos Microsoft Teams, SharePoint y correo electrónico.
-ms.openlocfilehash: cae3a559c2bce39ecb02afa9be0878ff5e19ba48
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 76bac526dbf648b402c14b3304e32a308219bf02
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100776"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229208"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Implementar la protección de la información para las normativas de privacidad de datos con Microsoft 365
 
@@ -32,16 +32,16 @@ Algunos ejemplos de los tipos de datos de Microsoft 365 incluyen sesiones de cha
 
 ![Qué es la protección de la información para las normativas de privacidad de datos](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-También se proporciona información adicional sobre el uso de Microsoft 365 de identidad, dispositivo y protección contra amenazas para sus necesidades de privacidad de datos. 
+También se proporciona información adicional sobre el uso de Microsoft 365 de identidad, dispositivo y protección contra amenazas para sus necesidades de privacidad de datos.
 
 Estas Microsoft 365 y características le ayudarán a cumplir los criterios para proteger la información.
 
 | Funcionalidad o característica | Description | Licencias |
 |:-------|:-----|:-------|
-| Administrador de cumplimiento | Administrar las actividades de cumplimiento normativo, obtener una puntuación general de la configuración de cumplimiento actual y encontrar recomendaciones para mejorar. Se trata de una herramienta de evaluación de riesgos basada en flujos de trabajo en el Microsoft 365 de cumplimiento. | Microsoft 365 E3 y E5 |
-| Microsoft Defender para Office 365 | Proteja sus datos y aplicaciones de Microsoft 365, como mensajes de correo electrónico, documentos de Office y herramientas de colaboración, ante posibles ataques. | Microsoft 365 E3 y E5 | 
+| Administrador de cumplimiento | Administrar las actividades de cumplimiento normativo, obtener una puntuación general de la configuración de cumplimiento actual y encontrar recomendaciones para mejorar. Se trata de una herramienta de evaluación de riesgos basada en flujos de trabajo en el Centro de cumplimiento de Microsoft 365. | Microsoft 365 E3 y E5 |
+| Microsoft Defender para Office 365 | Proteja sus datos y aplicaciones de Microsoft 365, como mensajes de correo electrónico, documentos de Office y herramientas de colaboración, ante posibles ataques. | Microsoft 365 E3 y E5 |
 | Etiquetas de confidencialidad | Clasificar y proteger los datos de la organización sin obstaculizar la productividad de los usuarios y su capacidad de colaboración. Coloque etiquetas con varios niveles de protección en el correo electrónico, los archivos o los sitios. | Microsoft 365 E3 y E5 |
-| Protección de pérdida de datos (DLP) | Detectar, advertir y bloquear el uso compartido riesgoso, involuntario o inadecuado de los datos que contienen información personal, tanto interna como externamente. | Microsoft 365 E3 y E5 | 
+| Protección de pérdida de datos (DLP) | Detectar, advertir y bloquear el uso compartido riesgoso, involuntario o inadecuado de los datos que contienen información personal, tanto interna como externamente. | Microsoft 365 E3 y E5 |
 | Directivas y etiquetas de retención de datos | Implementar controles de gobierno de información. Esto puede incluir determinar cuánto tiempo se deben mantener los datos (como datos personales relacionados con los clientes) para cumplir con las directivas o normativas de datos de su organización. | Microsoft 365 E3 y E5 |
 | Cifrado de correo electrónico | Proteja los datos personales enviando y recibiendo mensajes de correo electrónico cifrados entre personas dentro y fuera de la organización. | Microsoft 365 E3 y E5 |
 ||||
@@ -49,17 +49,16 @@ Estas Microsoft 365 y características le ayudarán a cumplir los criterios para
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organización de las instrucciones de esta solución
 
 Para ayudarle a comprender las Microsoft 365 disponibles para ayudarle a cumplir una o más normativas relacionadas con la privacidad, esta guía se organiza en secciones.
- 
+
 ![Pasos para implementar la protección de la información para las normativas de privacidad de datos](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 Cada una de estas secciones corresponde a un artículo independiente de esta solución.
 
->[!Note]
->Si ya está familiarizado con sus obligaciones de privacidad de datos y se está ejecutando con un plan existente, es posible que desee centrarse en las instrucciones Prevent, Protect, Retain e Investigate.
+> [!NOTE]
+> Si ya está familiarizado con sus obligaciones de privacidad de datos y se está ejecutando con un plan existente, es posible que desee centrarse en las instrucciones Prevent, Protect, Retain e Investigate.
 
->[!Important]
->Seguir esta guía no necesariamente le hará cumplir con ninguna regulación de privacidad de datos, especialmente teniendo en cuenta el número de pasos necesarios que están fuera del contexto de las características. Usted es responsable de garantizar su cumplimiento y de consultar a sus equipos legales y de cumplimiento o de buscar orientación y asesoramiento de terceros que se especialicen en el cumplimiento.
->
+> [!IMPORTANT]
+> Seguir esta guía no necesariamente le hará cumplir con ninguna regulación de privacidad de datos, especialmente teniendo en cuenta el número de pasos necesarios que están fuera del contexto de las características. Usted es responsable de garantizar su cumplimiento y de consultar a sus equipos legales y de cumplimiento o de buscar orientación y asesoramiento de terceros que se especialicen en el cumplimiento.
 
 ## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Plan: Evaluar los riesgos de privacidad de datos e identificar elementos confidenciales
 
@@ -69,7 +68,7 @@ Para obtener más información, vea [Assess data privacy risks and identify sens
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>Seguimiento: ejecutar evaluaciones de riesgos y comprobar la puntuación de cumplimiento
 
-El Administrador de cumplimiento, disponible en el centro de cumplimiento de Microsoft 365, le proporciona una capacidad integrada para realizar un seguimiento y administrar las acciones de mejora en general, así como las relacionadas con varias normativas de privacidad de datos que se aplican a usted.
+El Administrador de cumplimiento, disponible en el Centro de cumplimiento de Microsoft 365, le proporciona una capacidad integrada para realizar un seguimiento y administrar las acciones de mejora en general, así como las relacionadas con varias normativas de privacidad de datos que se aplican a usted.
 
 Puede usar plantillas de evaluación integradas específicas de cada reglamento, donde puede realizar un seguimiento de los elementos de acción de cada plantilla de evaluación seleccionada, así como ver controles normativos específicos y relacionarlos con acciones específicas.
 
@@ -77,11 +76,11 @@ Para obtener más información, vea [Use Compliance Manager to manage improvemen
 
 ## <a name="prevent-protect-personal-data"></a>Impedir: proteger datos personales
 
-Microsoft 365 proporciona funcionalidades de protección de identidades, dispositivos y amenazas que puedes usar para ayudar a cumplir con el cumplimiento normativo de privacidad de datos. 
+Microsoft 365 proporciona funcionalidades de protección de identidades, dispositivos y amenazas que puedes usar para ayudar a cumplir con el cumplimiento normativo de privacidad de datos.
 
 Para obtener más información, consulta Usar la identidad, el dispositivo y la [protección contra amenazas para la regulación de privacidad de datos.](information-protection-deploy-identity-device-threat.md)
 
-En este artículo se describe brevemente lo que las normativas de privacidad de datos suelen llamar en estas áreas y se proporciona una descripción de las soluciones de Microsoft 365 relacionadas, con vínculos a más información que le ayudarán a abordar los requisitos de implementación. 
+En este artículo se describe brevemente lo que las normativas de privacidad de datos suelen llamar en estas áreas y se proporciona una descripción de las soluciones de Microsoft 365 relacionadas, con vínculos a más información que le ayudarán a abordar los requisitos de implementación.
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la regulación de privacidad de datos
 
@@ -101,7 +100,7 @@ Aunque las regulaciones de privacidad de datos pueden ser imprecisas con respect
 
 ## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>Investigar: supervisar, investigar y responder a incidentes de privacidad de datos
 
-Hay Microsoft 365 disponibles para ayudarle a supervisar, investigar y responder a incidentes de privacidad de datos en su organización a medida que opera las capacidades relacionadas. 
+Hay Microsoft 365 disponibles para ayudarle a supervisar, investigar y responder a incidentes de privacidad de datos en su organización a medida que opera las capacidades relacionadas.
 
 Tener procesos, procedimientos y otra documentación para usar estas características puede ser importante para demostrar el cumplimiento de los organismos reguladores.
 

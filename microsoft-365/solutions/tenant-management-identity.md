@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente el modelo de identidad correcto para sus Microsoft 365 inquilinos y aplique inicios de sesión de usuario fuertes.
-ms.openlocfilehash: 57e84b38715c4fbe29f9aa362e363663b0401f91
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c6b098cf73ef56327448413381d5621dfd4d2b59
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052367"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229076"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 3. Identidad de su Microsoft 365 para inquilinos empresariales
 
@@ -39,7 +39,7 @@ Estos son los dos tipos de modelos de identidad y su mejor ajuste y ventajas.
 ||||||
 
 Estos son los componentes básicos de la identidad de solo nube.
- 
+
 ![Componentes básicos de identidad de solo nube](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 En esta ilustración, los usuarios locales y remotos inician sesión con cuentas en el inquilino de Azure AD de su Microsoft 365 inquilino.
@@ -54,9 +54,8 @@ En esta ilustración, los usuarios locales y remotos inician sesión en su inqui
 
 Según las necesidades empresariales y los requisitos técnicos, el modelo de identidad híbrida y la sincronización de directorios es la opción más común para los clientes empresariales que adoptan Microsoft 365. La sincronización de directorios permite administrar identidades en su AD DS y todas las actualizaciones de cuentas de usuario, grupos y contactos se sincronizan con el inquilino de Azure AD de su inquilino Microsoft 365 usuario.
 
->[!Note]
->Cuando las cuentas de usuario de AD DS se sincronizan por primera vez, no se les asigna automáticamente una licencia de Microsoft 365 y no pueden acceder a Microsoft 365 servicios, como el correo electrónico. Primero debe asignarles una ubicación de uso. A continuación, asigne una licencia a estas cuentas de usuario, ya sea de forma individual o dinámica a través de la pertenencia a grupos.
->
+> [!NOTE]
+> Cuando las cuentas de usuario de AD DS se sincronizan por primera vez, no se les asigna automáticamente una licencia de Microsoft 365 y no pueden acceder a Microsoft 365 servicios, como el correo electrónico. Primero debe asignarles una ubicación de uso. A continuación, asigne una licencia a estas cuentas de usuario, ya sea de forma individual o dinámica a través de la pertenencia a grupos.
 
 Estos son los dos tipos de autenticación al usar el modelo de identidad híbrida.
 
@@ -77,7 +76,7 @@ Para aumentar la seguridad de los inicios de sesión de usuario, use las caracte
 | Windows Hello para empresas | Reemplaza las contraseñas por una autenticación segura en dos fases al iniciar sesión en un Windows dispositivo. Esta es un nueva forma de inicio de sesión que vincula el dispositivo de un usuario con un factor biométrico o un PIN. | [Introducción a Windows Hello para empresas](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 o E5 |
 | Protección de contraseñas de Azure AD | Detecta y bloquea las contraseñas débiles conocidas y sus variantes y también puede bloquear términos débiles adicionales que son específicos de su organización. | [Configurar la protección con contraseña de Azure AD](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 o E5 |
 | Use la autenticación multifactor (MFA) | MFA requiere que los inicios de sesión del usuario se sometán a una comprobación adicional más allá de la contraseña de la cuenta de usuario, como la verificación con una aplicación para smartphones o un mensaje de texto enviado a un smartphone. Vea [este vídeo para](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) obtener instrucciones sobre cómo los usuarios establecen MFA. | [MFA para Microsoft 365 para empresas](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 o E5 |
-| Configuraciones de acceso a dispositivos e identidades | Configuración y directivas que constan de características de requisitos previos recomendadas y su configuración combinadas con las directivas de acceso condicional, Intune y Azure AD Identity Protection que determinan si se debe conceder una solicitud de acceso determinada y en qué condiciones.  | [Configuraciones de acceso a dispositivos e identidades](../security/defender-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 o E5 |
+| Configuraciones de acceso a dispositivos e identidades | Configuración y directivas que constan de características de requisitos previos recomendadas y su configuración combinadas con las directivas de acceso condicional, Intune y Azure AD Identity Protection que determinan si se debe conceder una solicitud de acceso determinada y en qué condiciones.  | [Configuraciones de acceso a dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 o E5 |
 | Azure AD Identity Protection | Protéjase contra el riesgo de credenciales, donde un atacante determina el nombre de cuenta y la contraseña de un usuario para obtener acceso a los datos y servicios en la nube de una organización. | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Identity & Threat Protection |
 |  |  |  |
 
@@ -98,13 +97,13 @@ En esta ilustración, el inquilino tiene:
 
 - Un bosque de AD DS que se está sincronizando con el inquilino de Azure AD mediante un servidor DirSync y Azure AD Conectar.
 - Una copia de las cuentas de usuario de AD DS y otros objetos del bosque de AD DS.
-- Un conjunto de directivas de acceso condicional para exigir el acceso y los inicios de sesión de usuario seguros en función de la cuenta de usuario. 
+- Un conjunto de directivas de acceso condicional para exigir el acceso y los inicios de sesión de usuario seguros en función de la cuenta de usuario.
 
 ## <a name="ongoing-maintenance-for-identity"></a>Mantenimiento continuo de identidad
 
 De forma continua, es posible que deba:
 
-- Agregar o modificar grupos y cuentas de usuario. Para la identidad de solo nube, se mantienen los usuarios y grupos basados en la nube con herramientas de Azure AD, como el centro de administración de Microsoft 365 o PowerShell. Para la identidad híbrida, se mantienen los usuarios y grupos locales con herramientas de AD DS.
+- Agregar o modificar grupos y cuentas de usuario. Para la identidad de solo nube, se mantienen los usuarios y grupos basados en la nube con herramientas de Azure AD como el Centro de administración de Microsoft 365 o PowerShell. Para la identidad híbrida, se mantienen los usuarios y grupos locales con herramientas de AD DS.
 - Agregue o modifique la configuración de acceso a dispositivos y identidades para aplicar los requisitos de seguridad de inicio de sesión.
 
 ## <a name="next-step"></a>Paso siguiente
