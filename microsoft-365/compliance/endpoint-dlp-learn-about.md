@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: b5aa6c737bc54129ce49378a7dcaf81e9d5c612f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114108"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226688"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -34,7 +34,7 @@ Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para super
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Actividades en punto de conexión que puede supervisar y sobre las que puede tomar medidas
 
-DLP en punto de conexión de Microsoft le permite auditar y administrar los siguientes tipos de actividades que los usuarios llevan a cabo en elementos confidenciales de los dispositivos que ejecutan Windows 10. 
+DLP en punto de conexión de Microsoft le permite auditar y administrar los siguientes tipos de actividades que los usuarios llevan a cabo en elementos confidenciales de los dispositivos que ejecutan Windows 10.
 
 |Actividad |Descripción  | Auditable/Restringible|
 |---------|---------|---------|
@@ -48,7 +48,7 @@ DLP en punto de conexión de Microsoft le permite auditar y administrar los sigu
 |crear un elemento|Detecta cuándo un usuario crea un elemento| auditable|
 |cambiar el nombre de un elemento|Detecta cuando un usuario cambia el nombre de un elemento| auditable|
 
- ## <a name="monitored-files"></a>Archivos supervisados
+## <a name="monitored-files"></a>Archivos supervisados
 
 La DLP en punto de conexión admite la supervisión de estos tipos de archivo:
 
@@ -66,10 +66,10 @@ La DLP en punto de conexión admite la supervisión de estos tipos de archivo:
 - archivos .cs
 - archivos .h
 - archivos .java
- 
+
 De forma predeterminada, la DLP en punto de conexión audita las actividades para estos tipos de archivo, incluso si no hay una coincidencia de directiva. Si solo quiere supervisar los datos de las coincidencias de directivas, puede desactivar **Auditar siempre para la actividad de archivos de los dispositivos** en la configuración global de DLP en punto de conexión. Si esta configuración está instalada, las actividades de cualquier archivo Word, PowerPoint, Excel, PDF y .csv siempre se auditan, incluso si el dispositivo no está dirigido por ninguna directiva.
 
-DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo. 
+DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo.
 
 ## <a name="whats-different-in-endpoint-dlp"></a>¿Qué es diferente en DLP en punto de conexión?
 
@@ -153,8 +153,8 @@ Por ejemplo, si se copia un archivo a un medio USB extraíble, vería estos atri
 
 Ahora que ya conoce DLP en punto de conexión, estos son los pasos siguientes:
 
-1) [Introducción a la prevención de pérdida de datos en punto de conexión de Microsoft ](endpoint-dlp-getting-started.md)
-2) [Uso de la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-using.md)
+1. [Introducción a la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-getting-started.md)
+2. [Uso de la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Consulte también
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ef6d1cf23d6cca58f4226696bc63c1dea5816cc1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822616"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226220"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entrenar un modelo de codificación predictiva (versión preliminar)
 
@@ -29,11 +29,11 @@ Para revisar el flujo de trabajo de codificación predictiva, vea [Learn about p
 
 ## <a name="before-you-train-a-model"></a>Antes de entrenar un modelo
 
-- Durante una ronda de aprendizaje, etiquete los elementos como **Relevantes** o **No** relevantes en función de la relevancia del contenido del documento. No base su decisión en los valores de los campos de metadatos. Por ejemplo, para los mensajes de correo electrónico Teams conversaciones, no base la decisión de etiquetado en los participantes del mensaje. 
+- Durante una ronda de aprendizaje, etiquete los elementos como **Relevantes** o **No** relevantes en función de la relevancia del contenido del documento. No base su decisión en los valores de los campos de metadatos. Por ejemplo, para los mensajes de correo electrónico Teams conversaciones, no base la decisión de etiquetado en los participantes del mensaje.
 
 ## <a name="train-a-model-for-the-first-time"></a>Entrenar un modelo por primera vez
 
-1. En el centro Microsoft 365 cumplimiento, abra un Advanced eDiscovery caso y, a continuación, seleccione la **pestaña Conjuntos de** revisión.
+1. En el Centro de cumplimiento de Microsoft 365, abra un Advanced eDiscovery y, a continuación, seleccione la **pestaña Conjuntos de** revisión.
 
 2. Abra un conjunto de opiniones y, a continuación, haga clic **en Analytics Administrar**  >  **codificación predictiva (versión preliminar).**
 
@@ -63,10 +63,10 @@ Después de realizar la primera ronda de aprendizaje, se inicia un trabajo que h
 
 - En función de cómo etiquetaste los 40 elementos del conjunto de aprendizaje, el modelo aprende del etiquetado y se actualiza para ser más preciso.
 
-- A continuación, el modelo procesa cada elemento de todo el conjunto de revisión y asigna una puntuación de predicción entre **0** (no relevante) y **1** (relevante).  
+- A continuación, el modelo procesa cada elemento de todo el conjunto de revisión y asigna una puntuación de predicción entre **0** (no relevante) y **1** (relevante).
 
 - El modelo asigna una puntuación de predicción a los 10 elementos del conjunto de controles etiquetados durante la ronda de entrenamiento. El modelo compara la puntuación de predicción de estos 10 elementos con la etiqueta real que asignó al elemento durante la ronda de entrenamiento. Basándose en esta comparación, el modelo identifica la siguiente clasificación (denominada matriz de confusión del conjunto de *controles)* para evaluar el rendimiento de predicción del modelo:
-  
+
   |          |El modelo predice que el elemento es relevante |El modelo predice que el elemento no es relevante |
   |:---------|:---------|:---------|
   |**Elemento de etiquetas de revisor como relevante**| Verdadero positivo| Falso positivo |
@@ -87,6 +87,6 @@ Después de realizar rondas de aprendizaje posteriores (después de la primera r
 
 - El modelo actualizado vuelve a procesar todos los elementos del conjunto de revisión y asigna a cada elemento una puntuación de predicción actualizada.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de realizar la primera ronda de aprendizaje, puede realizar más rondas de aprendizaje o aplicar el filtro de puntuación de predicción del modelo al conjunto de revisión para ver los elementos que el modelo ha predicho como relevantes o no relevantes. Para obtener más información, vea [Apply a prediction score filter to a review set](predictive-coding-apply-prediction-filter.md).

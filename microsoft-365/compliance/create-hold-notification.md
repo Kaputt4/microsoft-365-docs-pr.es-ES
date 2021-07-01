@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Usa la herramienta Comunicaciones en un Advanced eDiscovery caso para enviar, recopilar y realizar un seguimiento de las notificaciones de retención legal.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: df1b2d962e83110c62ccac871f669bbc0d3bfe02
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 026670b9ed45f366ff3d711d8f2b2d0274be5a19
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840565"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227108"
 ---
 # <a name="create-a-legal-hold-notice"></a>Crear un aviso de retención legal
 
@@ -56,30 +56,30 @@ El primer paso es especificar los detalles adecuados para los avisos de retenci�
 
 ## <a name="step-2-define-the-portal-content"></a>Paso 2: Definir el contenido del portal
 
-A continuación, puede crear y agregar el contenido del aviso de retención. En la **página Definir contenido del portal** del Asistente para crear **comunicación,** especifique el contenido del aviso de retención. Este contenido se anexará automáticamente a los avisos de emisión, reedición, aviso y escalación. Además, este contenido aparecerá en el Portal de cumplimiento del custodio. 
+A continuación, puede crear y agregar el contenido del aviso de retención. En la **página Definir contenido del portal** del Asistente para crear **comunicación,** especifique el contenido del aviso de retención. Este contenido se anexará automáticamente a los avisos de emisión, reedición, aviso y escalación. Además, este contenido aparecerá en el Portal de cumplimiento del custodio.
 
 ![Página de contenido del portal](../media/PortalContent.PNG)
 
 Para crear el contenido del portal:
 
-1. Escriba (o corte y pegue desde otro documento) el aviso de retención en el cuadro de texto del contenido del portal. 
+1. Escriba (o corte y pegue desde otro documento) el aviso de retención en el cuadro de texto del contenido del portal.
 
 2. Inserte variables de combinación en el aviso para personalizar el aviso y compartir el Portal de cumplimiento de custodia.
 
 3. Haga clic en **Siguiente**.
 
-  >[!Tip]
-  >Para obtener más información sobre cómo personalizar el contenido y el formato del contenido del portal, vea [Use the Communications Editor](using-communications-editor.md).
+  > [!TIP]
+  > Para obtener más información sobre cómo personalizar el contenido y el formato del contenido del portal, vea [Use the Communications Editor](using-communications-editor.md).
 
 ## <a name="step-3-set-the-required-notifications"></a>Paso 3: Establecer las notificaciones necesarias
 
-Después de definir el contenido del aviso de retención, puede configurar los flujos de trabajo en torno al envío y administración del proceso de notificación. Las notificaciones son mensajes de correo electrónico que se envían para notificar y hacer un seguimiento con los custodios. Todos los custodios agregados a la comunicación recibirán la misma notificación. 
+Después de definir el contenido del aviso de retención, puede configurar los flujos de trabajo en torno al envío y administración del proceso de notificación. Las notificaciones son mensajes de correo electrónico que se envían para notificar y hacer un seguimiento con los custodios. Todos los custodios agregados a la comunicación recibirán la misma notificación.
 
 Para configurar y enviar un aviso de retención, debe incluir las notificaciones Emisión, Re-emisión y Lanzamiento.
 
-### <a name="issuance-notification"></a>Notificación de emisión 
+### <a name="issuance-notification"></a>Notificación de emisión
 
-Una vez creada la comunicación, **el** oficial emisor especificado inicia la notificación de emisión. La notificación de emisión es la primera comunicación enviada al custodio para informarle sobre sus obligaciones de conservación. 
+Una vez creada la comunicación, **el** oficial emisor especificado inicia la notificación de emisión. La notificación de emisión es la primera comunicación enviada al custodio para informarle sobre sus obligaciones de conservación.
 
 Para crear una notificación de emisión:
 
@@ -89,7 +89,7 @@ Para crear una notificación de emisión:
 
 3. Especifique el **asunto** para el aviso (obligatorio).
 
-4. Especifique el contenido o instrucciones adicionales que desea proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de emisión. 
+4. Especifique el contenido o instrucciones adicionales que desea proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de emisión.
 
 5. Haga clic en **Guardar**.
 
@@ -116,7 +116,7 @@ Para crear una notificación de nueva emisión:
 
 Una vez resuelto un asunto o si un custodio ya no está sujeto a la conservación del contenido, puede liberar al custodio de un caso. Si el custodio recibió previamente un aviso de retención, la notificación de liberación puede usarse para alertar a los custodios de que han sido liberados de su obligación.
 
-Para crear una notificación de lanzamiento: 
+Para crear una notificación de lanzamiento:
 
 1. En el **icono Versión,** haga clic **en Editar**.
 
@@ -148,7 +148,7 @@ Para programar avisos:
 
 4. Especifique el **número de avisos** (obligatorio). Este campo especifica cuántos avisos enviar a los custodios no responsables. Por ejemplo, si establece el número de avisos en 3, un custodio recibiría un máximo de tres avisos. Después de que un custodio reconozca la notificación de retención, los avisos ya no se enviarán a ese usuario.
 
-5. Especifique el **asunto** para el aviso (obligatorio). 
+5. Especifique el **asunto** para el aviso (obligatorio).
 
 6. Especifique el contenido o instrucciones adicionales que desea proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de aviso.
 
@@ -168,7 +168,7 @@ Para programar escalaciones:
 
 4. Especifique el **número de escalaciones** (obligatorio). Este campo especifica cuántas escalaciones se enviarán a los custodios no responsables. Por ejemplo, si establece el número de escalaciones en 3, se enviará un aviso de escalación al custodio y a su administrador un máximo de tres veces. Después de que un custodio reconozca la notificación de retención, las escalaciones ya no se enviarán.
 
-5. Especifique el **asunto** para el aviso (obligatorio). 
+5. Especifique el **asunto** para el aviso (obligatorio).
 
 6. Especifique el contenido o instrucciones adicionales que desea proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de escalado.
 
@@ -176,7 +176,7 @@ Para programar escalaciones:
 
 ## <a name="step-5-assign-custodians-to-receive-notifications"></a>Paso 5: Asignar custodios para recibir notificaciones
 
-Después de finalizar el contenido de las notificaciones, seleccione los custodios a los que desea enviar notificaciones. 
+Después de finalizar el contenido de las notificaciones, seleccione los custodios a los que desea enviar notificaciones.
 
 ![Seleccionar página de custodios](../media/SelectCustodians.PNG)
 
@@ -188,8 +188,8 @@ Para agregar custodios:
 
 2. Haga **clic en Siguiente** para revisar la configuración y los detalles de la comunicación.
 
->[!NOTE]
->Solo puede agregar custodios que se hayan agregado al caso y que no hayan recibido otra notificación dentro del caso.
+> [!NOTE]
+> Solo puede agregar custodios que se hayan agregado al caso y que no hayan recibido otra notificación dentro del caso.
 
 ## <a name="step-6-review-settings"></a>Paso 6: Revisar la configuración
 

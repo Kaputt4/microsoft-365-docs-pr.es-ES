@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e59fb8a32275a2ef7c4865e93400b97ad5560df5
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 802f3fdacba62839b93b8441502334ae486cdacc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820009"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226328"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Panel de usuarios de administración de riesgos de Insider
 
@@ -45,15 +45,15 @@ El **panel Usuarios incluye** usuarios agregados a directivas de administración
 
 Cuando un usuario se agrega manualmente a una directiva, las actividades de usuario de los 90 días anteriores se puntuan y se agregan a la escala **de tiempo de actividad del** usuario. Por ejemplo, actualmente no se le asignan puntuaciones de riesgo a un usuario para una directiva de riesgo de insider y el usuario tiene actividades de pérdida de datos notificadas al departamento legal de su organización. El departamento legal recomienda configurar nuevos requisitos de supervisión a corto plazo para el usuario. Puede asignar temporalmente al usuario a la *directiva de* pérdida de datos durante un período de tiempo designado (ventana de activación). Todos los usuarios agregados temporalmente  se muestran en el panel Usuarios porque se renuncia a los requisitos de eventos desencadenados.
 
->[!NOTE]
->Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel **Usuarios.** Las actividades de los 90 días anteriores de estos usuarios pueden tardar hasta 24 horas en aparecer. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el panel Usuarios y abra la pestaña **Actividad de** usuario en el panel de detalles. 
+> [!NOTE]
+> Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel **Usuarios.** Las actividades de los 90 días anteriores de estos usuarios pueden tardar hasta 24 horas en aparecer. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el panel Usuarios y abra la pestaña **Actividad de** usuario en el panel de detalles. 
 
 El usuario se quita  automáticamente del panel Usuarios y la puntuación se detiene cuando expira el tiempo definido en la **ventana** Activación si:
 
 - el usuario no tiene eventos de desencadenamiento adicionales ni alertas de directiva de riesgo interno, y
 - si la duración de la ventana **Activación** definida manualmente es mayor que la duración de la ventana **de activación de directiva** global.
 
-El **valor de la ventana** Activación con la duración más larga siempre invalida la configuración **de** la ventana Activación con una duración más corta. Por ejemplo, ha configurado  la ventana Activación en la pestaña **Períodos** de tiempo de la directiva global en la configuración global de administración de riesgos de insider durante 15 días, que se aplica automáticamente a todas las directivas de riesgo de insider. 
+El **valor de la ventana** Activación con la duración más larga siempre invalida la configuración **de** la ventana Activación con una duración más corta. Por ejemplo, ha configurado  la ventana Activación en la pestaña **Períodos** de tiempo de la directiva global en la configuración global de administración de riesgos de insider durante 15 días, que se aplica automáticamente a todas las directivas de riesgo de insider.
 
 Se agrega temporalmente un usuario a la directiva de riesgos de *pérdidas* de datos y se definen 30 días como la ventana **activación** para este usuario. La configuración **de la** ventana de activación global  de 15 días se invalida definiendo la configuración de la ventana Activación de 30 días para el usuario agregado temporalmente. El usuario agregado temporalmente permanecerá  en el panel Usuarios y estará en el ámbito de la directiva durante 30 días.
 
@@ -71,32 +71,32 @@ Cada usuario que se muestra en el **panel Usuarios** tiene la siguiente informac
 
 ![Panel de usuarios de administración de riesgos de Insider](../media/insider-risk-users-dashboard.png)
 
->[!NOTE]
->El número de usuarios que se muestran en el **panel** Usuarios puede ser limitado en algunos casos, según el volumen de alertas activas y las directivas de coincidencia. Los usuarios con alertas  activas se muestran en el panel Usuarios a medida que se generan las alertas y puede haber casos raros cuando se alcanza el número máximo de usuarios mostrados. Si se produce este límite, los usuarios con alertas activas que no se muestran se agregarán al panel Usuarios a medida que se triagen las alertas de usuario existentes. 
+> [!NOTE]
+> El número de usuarios que se muestran en el **panel** Usuarios puede ser limitado en algunos casos, según el volumen de alertas activas y las directivas de coincidencia. Los usuarios con alertas  activas se muestran en el panel Usuarios a medida que se generan las alertas y puede haber casos raros cuando se alcanza el número máximo de usuarios mostrados. Si se produce este límite, los usuarios con alertas activas que no se muestran se agregarán al panel Usuarios a medida que se triagen las alertas de usuario existentes. 
 
 ## <a name="view-user-details"></a>Ver detalles del usuario
 
 Para ver más detalles sobre la actividad de riesgo de un usuario, abra el panel de detalles del usuario haciendo doble clic en un usuario en el panel **Usuarios**. En el panel de detalles, puede ver la siguiente información:
 
 - **Pestaña Perfil de** usuario
-    - **Nombre y título:** el nombre y el título de posición del usuario desde Azure Active Directory. Estos campos de usuario se anonimizarán o vaciarán si la configuración de anonimización global para la administración de riesgos de insider está habilitada.
-    - **Correo electrónico del** usuario: la dirección de correo electrónico del usuario.
-    - **Alias:** alias de red para el usuario.
-    - **Organización o departamento:** la organización o el departamento del usuario.
+  - **Nombre y título:** el nombre y el título de posición del usuario desde Azure Active Directory. Estos campos de usuario se anonimizarán o vaciarán si la configuración de anonimización global para la administración de riesgos de insider está habilitada.
+  - **Correo electrónico del** usuario: la dirección de correo electrónico del usuario.
+  - **Alias:** alias de red para el usuario.
+  - **Organización o departamento:** la organización o el departamento del usuario.
 
 - **Pestaña Actividad del** usuario
-    - **Historial de actividad de usuario reciente:** enumera los indicadores desencadenantes y los indicadores de riesgo interno de las actividades del usuario hasta los últimos 180 días. Todas las actividades pertinentes a los indicadores de riesgo de insider también se puntuan, aunque las actividades pueden o no haber generado una alerta de riesgo de información interna. Los ejemplos de indicadores desencadenantes pueden ser una fecha de dimisión o la última fecha de trabajo programada para el usuario. Los indicadores de riesgo insider son actividades determinadas que tienen un elemento de riesgo y se definen en las directivas en las que está incluido el usuario. Las actividades de eventos y riesgos se enumeran con el elemento más reciente que aparece primero.
+  - **Historial de actividad de usuario reciente:** enumera los indicadores desencadenantes y los indicadores de riesgo interno de las actividades del usuario hasta los últimos 180 días. Todas las actividades pertinentes a los indicadores de riesgo de insider también se puntuan, aunque las actividades pueden o no haber generado una alerta de riesgo de información interna. Los ejemplos de indicadores desencadenantes pueden ser una fecha de dimisión o la última fecha de trabajo programada para el usuario. Los indicadores de riesgo insider son actividades determinadas que tienen un elemento de riesgo y se definen en las directivas en las que está incluido el usuario. Las actividades de eventos y riesgos se enumeran con el elemento más reciente que aparece primero.
 
 ## <a name="remove-users-from-in-scope-assignment-to-policies"></a>Quitar usuarios de la asignación en el ámbito a directivas
 
 Puede haber escenarios en los que tenga que dejar de asignar puntuaciones de riesgo a la actividad de un usuario en directivas de administración de riesgos internas. Use Quitar usuarios  **en** la página Panel de usuarios para dejar de asignar puntuaciones de riesgo para uno o más usuarios de todas las directivas de administración de riesgos internas para las que están actualmente en el ámbito. Esta acción no quita usuarios de la asignación general de directivas (al agregar usuarios o grupos a una configuración de directiva), sino que simplemente quita a los usuarios del procesamiento activo mediante directivas después de eventos de activación actuales. Si los usuarios tienen otro evento desencadenante en el futuro, las puntuaciones de riesgo de las directivas empezarán a asignarse automáticamente a los usuarios de nuevo. No se quitarán las alertas o casos existentes para este usuario.
 
->[!NOTE]
->La eliminación de un usuario de una directiva puede tardar varios minutos en completarse. Una vez completado, el usuario ya no aparecerá en la página Usuarios. Si el usuario eliminado tiene alertas o casos activos, el usuario permanecerá en la página Usuarios y los detalles del usuario mostrarán que ya no están en el ámbito de una directiva.
+> [!NOTE]
+> La eliminación de un usuario de una directiva puede tardar varios minutos en completarse. Una vez completado, el usuario ya no aparecerá en la página Usuarios. Si el usuario eliminado tiene alertas o casos activos, el usuario permanecerá en la página Usuarios y los detalles del usuario mostrarán que ya no están en el ámbito de una directiva.
 
 Para quitar manualmente los usuarios del estado del ámbito en todas las directivas de administración de riesgos internas, siga estos pasos:
 
-1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Usuarios.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Usuarios.
 2. En el **panel Usuarios,** seleccione el usuario o los usuarios que desea quitar de estar en el ámbito en las directivas de administración de riesgos internas.
 3. Seleccione **Quitar usuarios**.
 4. En el **panel Quitar usuario,** **seleccione** Quitar o **Cancelar** para descartar los cambios y cerrar el cuadro de diálogo.

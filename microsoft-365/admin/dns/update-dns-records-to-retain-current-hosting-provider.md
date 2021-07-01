@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: Obtenga información sobre cómo enrutar el tráfico a un sitio web público existente hospedado fuera de Microsoft, si ha establecido Microsoft para administrar registros DNS para su dominio personalizado.
-ms.openlocfilehash: 2a1559bbb902375bbc363180cdb4f98ec2b3a939
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: d54aa4583862ce19907a3b8494a333bbb925e436
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572146"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228128"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Actualizar registros DNS para conservar su sitio web con su proveedor de hospedaje actual
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572146"
   
  **Si Microsoft administra los** registros DNS , para enrutar el tráfico a un sitio web público existente hospedado fuera de Microsoft, después de agregar el dominio a Microsoft, haga lo siguiente: 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Actualizar registros DNS en el Centro Microsoft 365 administración
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Actualizar registros DNS en el Centro de administración de Microsoft 365
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
 1. En la **página Dominios,** seleccione el dominio y, a continuación, elija **Registros DNS**.
@@ -65,6 +65,6 @@ Además, puede crear un registro CNAME para ayudar a los clientes a encontrar su
     
 Por último, haga lo siguiente:
   
-[Actualice los registros NS de su dominio](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) para que apunten a Microsoft. 
+[Actualice los registros NS de su dominio](../setup/add-domain.md) para que apunten a Microsoft. 
   
 Cuando los registros NS se hayan actualizado para que apunten a Microsoft, el dominio está configurado. El correo electrónico se enruta a Microsoft y el tráfico a la dirección de su sitio web continuará en el host del sitio web actual.

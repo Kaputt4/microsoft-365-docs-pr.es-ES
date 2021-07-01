@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Los usuarios con cuentas profesionales o educativas válidas pueden Cortana experiencias Microsoft 365 que cumplan Office 365 promesas de seguridad de nivel empresarial.
-ms.openlocfilehash: 45e6f46fa753096c535add9daf486ef6a9f1bff0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054599"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227900"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -39,7 +39,7 @@ Cuando se ha iniciado sesión con cuentas profesionales o educativas válidas, l
 
 - En conformidad con otros servicios de Office 365, los servicios de empresas de Cortana cumplen las mismas promesas de privacidad, seguridad y cumplimiento de nivel empresarial, tal como se refleja en los [Términos de los servicios en línea (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
-- Las nuevas experiencias de Microsoft 365, como Correo de Informe de tareas pendientes y Reproducir mis correos electrónicos, se habilitarán mediante los servicios de empresas de Cortana y cumplirán todas las promesas mencionadas. En estos momentos, estas características están disponibles a nivel mundial (multiempresa estándar). Para más información sobre cómo encontrar la ubicación de uso, visite [Ver valores adicionales de propiedad para cuentas](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts).
+- Las nuevas experiencias de Microsoft 365, como Correo de Informe de tareas pendientes y Reproducir mis correos electrónicos, se habilitarán mediante los servicios de empresas de Cortana y cumplirán todas las promesas mencionadas. En estos momentos, estas características están disponibles a nivel mundial (multiempresa estándar). Para más información sobre cómo encontrar la ubicación de uso, visite [Ver valores adicionales de propiedad para cuentas](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md#view-additional-property-values-for-accounts).
 
 - Las experiencias de consumidor existentes, incluidas las Cortana en Windows 10 (versión 1909 y versiones anteriores), se rigen por el Contrato de servicios [de Microsoft](https://www.microsoft.com/licensing/product-licensing/products) y la Declaración de privacidad de [Microsoft](https://privacy.microsoft.com/privacystatement) (vea la sección "Servicios existentes para consumidores" a continuación). Estos términos también regirán los servicios de empresas de Cortana ofrecidos al usuario cuando inicie sesión con sus credenciales de consumidor.
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1af3ff5fac9a95afb15f680f8f46e8d0de0b4567
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245437"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226052"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -70,11 +70,11 @@ Al usar las etiquetas de retención para declarar registros, puede implementar u
 
 ### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Comparar restricciones de acciones permitidas o bloqueadas
 
-Use la tabla siguiente para identificar qué restricciones se colocan en el contenido como resultado de aplicar una etiqueta de retención estándar y conocer las etiquetas de retención que marcan el contenido como un registro o un registro normativo. 
+Use la tabla siguiente para identificar qué restricciones se colocan en el contenido como resultado de aplicar una etiqueta de retención estándar y conocer las etiquetas de retención que marcan el contenido como un registro o un registro normativo.
 
 Una etiqueta de retención estándar tiene opciones de retención y acciones, pero no marca el contenido como un registro o un registro normativo.
 
->[!NOTE] 
+> [!NOTE]
 > Por motivos de integridad, la tabla contiene columnas para un registro bloqueado y desbloqueado, lo que se aplica a SharePoint y OneDrive, pero no a Exchange. La capacidad de bloquear y desbloquear un registro usa el [control de versiones de registros](record-versioning.md) que no es compatible con los elementos de Exchange. Por lo tanto, para todos los elementos de Exchange que estén marcados como un registro, el comportamiento que se asigna a la columna **registro bloqueado** y a la columna **registro desbloqueado** no es relevante.
 
 
@@ -94,19 +94,20 @@ Notas al pie:
 
 <sup>1</sup> Compatible con OneDrive y Exchange reteniendo una copia en una ubicación segura, pero bloqueado por SharePoint.
 
-Cuando se aplica una etiqueta de retención a un elemento de lista que tiene datos adjuntos de documento, ese documento no hereda la configuración de retención y se puede eliminar del elemento de lista. En cambio, si se declara un registro con una etiqueta de retención, los datos adjuntos del documento heredarán la configuración de retención y no se podrán eliminar. 
+Cuando se aplica una etiqueta de retención a un elemento de lista que tiene datos adjuntos de documento, ese documento no hereda la configuración de retención y se puede eliminar del elemento de lista. En cambio, si se declara un registro con una etiqueta de retención, los datos adjuntos del documento heredarán la configuración de retención y no se podrán eliminar.
 
 <sup>2</sup> Los contenedores incluyen librerías de documentos de SharePoint, cuentas de OneDrive y buzones de Exchange.
 
->[!IMPORTANT] 
-> La diferencia más importante que supone un registro normativo es que, una vez que se aplica al contenido, nadie, ni siquiera un administrador global, puede quitar la etiqueta. 
+> [!IMPORTANT]
+> La diferencia más importante que supone un registro normativo es que, una vez que se aplica al contenido, nadie, ni siquiera un administrador global, puede quitar la etiqueta.
 >
 > Las etiquetas de retención configuradas para los registros normativos también tienen las siguientes restricciones de administrador:
+>
 > - El período de retención no se puede reducir después de guardar la etiqueta, solo se puede extender.
-> - Estas etiquetas no son compatibles con las directivas de etiquetado automático y deben aplicarse mediante [directivas de etiqueta de retención](create-apply-retention-labels.md). 
+> - Estas etiquetas no son compatibles con las directivas de etiquetado automático y deben aplicarse mediante [directivas de etiqueta de retención](create-apply-retention-labels.md).
 >
 > Además, no se puede aplicar una etiqueta normativa a un documento que está desprotegido en SharePoint.
-> 
+>
 > Dado que se trata de acciones irreversibles y restricciones, asegúrese de que realmente necesita usar registros normativos antes de seleccionar esta opción para las etiquetas de retención. Para evitar la configuración accidental, esta opción no está disponible de forma predeterminada, sino que primero se debe habilitar con PowerShell. Las instrucciones se incluyen en [Declarar registros mediante etiquetas de retención](declare-records.md).
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración

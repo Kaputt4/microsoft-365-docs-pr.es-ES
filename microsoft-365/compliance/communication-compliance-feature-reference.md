@@ -18,24 +18,24 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5a9f5a6b218ec7a0e1fe9b05524ea1898b03e370
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: f94d2bbb8a65a4004ee05b9d740f94ae841f9a4e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822134"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227380"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
 ## <a name="policies"></a>Directivas
 
->[!Important]
->No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [Microsoft 365 de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
+> [!IMPORTANT]
+> No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [Microsoft 365 de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
 
-Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el Centro de cumplimiento de Microsoft 365. Las directivas de cumplimiento de comunicación definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe hacer las revisiones. Los usuarios asignados *al* rol de administrador de cumplimiento de comunicaciones pueden configurar directivas y cualquier persona que tenga asignada esta función puede tener acceso a la página Cumplimiento de comunicaciones y a la configuración global del centro de Microsoft 365 cumplimiento.  Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, los elementos escalados y los elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no sea necesario.
+Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el Centro de cumplimiento de Microsoft 365. Las directivas de cumplimiento de comunicación definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe hacer las revisiones. Los usuarios asignados *al* rol De administrador de cumplimiento de comunicaciones pueden configurar directivas y cualquier persona que tenga asignada esta función puede acceder a la página Cumplimiento de comunicaciones y a la configuración global del Centro de cumplimiento de Microsoft 365.  Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, los elementos escalados y los elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no sea necesario.
 
->[!NOTE]
->Las directivas de supervisión creadas en el Centro de seguridad & cumplimiento para Office 365 suscripciones no pueden migrar a Microsoft 365. Si está migrando de una suscripción de Office 365 a una suscripción de Microsoft 365, deberá crear nuevas directivas de cumplimiento de comunicaciones para reemplazar las directivas de supervisión existentes.
+> [!NOTE]
+> Las directivas de supervisión creadas en el Centro de seguridad & cumplimiento para Office 365 suscripciones no pueden migrar a Microsoft 365. Si está migrando de una suscripción de Office 365 a una suscripción de Microsoft 365, deberá crear nuevas directivas de cumplimiento de comunicaciones para reemplazar las directivas de supervisión existentes.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -69,10 +69,10 @@ Para reanudar una directiva, vaya a la **página** Directiva, seleccione una dir
 
 ## <a name="permissions"></a>Permisos
 
->[!Important]
->De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Los roles asignados en este paso son necesarios antes de que se pueda acceder a las características de cumplimiento de comunicaciones.
+> [!IMPORTANT]
+> De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Los roles asignados en este paso son necesarios antes de que se pueda acceder a las características de cumplimiento de comunicaciones.
 
-Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que **el** cumplimiento de la comunicación esté disponible como una opción de menú en  el Centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe asignarse a los grupos de roles Cumplimiento de comunicaciones o Administración de cumplimiento *de* comunicaciones. Para obtener acceso y administrar las características de cumplimiento de comunicaciones después de la configuración inicial, los usuarios deben ser miembros de al menos un grupo de roles de cumplimiento de comunicaciones.
+Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento** de la comunicación esté disponible como una opción de menú  en Centro de cumplimiento de Microsoft 365 y continuar con estos pasos de configuración, debe asignarse a los grupos de roles Cumplimiento de comunicaciones o Administración de cumplimiento *de* comunicaciones. Para obtener acceso y administrar las características de cumplimiento de comunicaciones después de la configuración inicial, los usuarios deben ser miembros de al menos un grupo de roles de cumplimiento de comunicaciones.
 
 Dependiendo de cómo desee administrar las directivas de comunicación y las alertas, deberá asignar usuarios a grupos de roles específicos. Puede elegir asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicación. O puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de roles *Cumplimiento* de comunicaciones. Use un único grupo de roles o varios grupos de roles para ajustarse mejor a sus requisitos de administración de cumplimiento.
 
@@ -88,7 +88,7 @@ Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la
 
 ### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>Para organizaciones que usan los permisos y grupos de roles originales
 
-La nueva estructura del grupo de roles reemplaza la estructura inicial del grupo de roles para el cumplimiento de las comunicaciones. Para las organizaciones que ya usan el cumplimiento de comunicaciones, es necesario que se le asigne el rol Administrador de revisión de supervisión para empezar con el cumplimiento de comunicaciones en el centro de Microsoft 365 cumplimiento. Además, tenía que crear un nuevo grupo de roles para revisores con los roles Administrador de revisión de supervisión, Administración de casos, Administrador de cumplimiento y Revisión para investigar y corregir mensajes con coincidencias de directiva. Básicamente, todos los administradores y revisores estaban en un solo grupo de roles y todos tenían los mismos permisos de acceso y administración. Con las actualizaciones más recientes sobre el cumplimiento de la comunicación, debe planear la migración de la estructura del grupo de roles anterior a la nueva estructura del grupo de roles. La compatibilidad con la estructura del grupo de roles anterior se elimina gradualmente.
+La nueva estructura del grupo de roles reemplaza la estructura inicial del grupo de roles para el cumplimiento de las comunicaciones. Para las organizaciones que ya usan el cumplimiento de la comunicación, es necesario que se le asigne el rol Administrador de revisión de supervisión para empezar a cumplir con la comunicación en el Centro de cumplimiento de Microsoft 365. Además, tenía que crear un nuevo grupo de roles para revisores con los roles Administrador de revisión de supervisión, Administración de casos, Administrador de cumplimiento y Revisión para investigar y corregir mensajes con coincidencias de directiva. Básicamente, todos los administradores y revisores estaban en un solo grupo de roles y todos tenían los mismos permisos de acceso y administración. Con las actualizaciones más recientes sobre el cumplimiento de la comunicación, debe planear la migración de la estructura del grupo de roles anterior a la nueva estructura del grupo de roles. La compatibilidad con la estructura del grupo de roles anterior se elimina gradualmente.
 
 Para ayudar a planear la migración, tenga en cuenta el siguiente ejemplo. Actualmente tiene tres tipos de usuarios en su organización, administradores de TI, expertos y revisores. Estos tres tipos de usuarios están en la estructura del grupo de roles anterior y son todos miembros de un único grupo de roles con los siguientes roles asignados:
 
@@ -107,8 +107,8 @@ Para actualizar los roles de estos usuarios para la nueva estructura de grupos d
 
 Antes de empezar a usar el cumplimiento de comunicaciones, necesita determinar a quién se debe revisar las comunicaciones. En la directiva, las direcciones de correo electrónico de los usuarios identifican a las personas o grupos de personas que se van a supervisar. Algunos ejemplos de estos grupos son Microsoft 365, listas de distribución basadas Exchange, Yammer comunidades y Microsoft Teams canales. Asimismo, puede excluir usuarios o grupos específicos de la revisión con un grupo de exclusión específico o una lista de grupos. Para obtener más información acerca de los tipos de grupos admitidos en las directivas de cumplimiento de comunicaciones, vea [Introducción al cumplimiento de comunicaciones.](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)
 
->[!IMPORTANT]
->Los usuarios cubiertos por directivas de cumplimiento de comunicaciones deben tener una licencia de Cumplimiento de Microsoft 365 E5, una licencia de E3 de Office 365 Enterprise con el complemento de cumplimiento avanzado o estar incluidos en una suscripción Office 365 Enterprise E5. Si no tiene un plan Enterprise E5 y desea probar el cumplimiento de las comunicaciones, puede registrarse para una prueba de [Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> [!IMPORTANT]
+> Los usuarios cubiertos por directivas de cumplimiento de comunicaciones deben tener una licencia de Cumplimiento de Microsoft 365 E5, una licencia de E3 de Office 365 Enterprise con el complemento de cumplimiento avanzado o estar incluidos en una suscripción Office 365 Enterprise E5. Si no tiene un plan Enterprise E5 y desea probar el cumplimiento de las comunicaciones, puede registrarse para una prueba de [Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="reviewers"></a>Reviewers
 
@@ -140,7 +140,7 @@ Con las directivas de cumplimiento de comunicaciones, puede elegir examinar mens
 
     - **Para Skype Empresarial de chat** en línea: asigne usuarios individuales o asigne [un](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) grupo de distribución a la directiva de cumplimiento de comunicaciones. Esta configuración es para relaciones de usuario/chat de uno a uno o de uno a varios.
 
-- **Orígenes** de terceros: puede examinar las comunicaciones en busca de datos importados en buzones de correo de su organización de Microsoft 365 desde orígenes de terceros como [Instant Bloomberg](archive-instant-bloomberg-data.md), [Slack,](archive-slack-data.md) [Zoom](archive-zoommeetings-data.md), SMS y muchos otros. Para obtener una lista completa de conectores compatibles con el cumplimiento de comunicaciones, vea [Archivar datos de terceros](archiving-third-party-data.md).
+- **Orígenes** de terceros: puede examinar las comunicaciones en busca de datos importados en buzones de correo de su organización de Microsoft 365 desde orígenes de terceros como [Instant Bloomberg,](archive-instant-bloomberg-data.md) [Slack,](archive-slack-data.md) [Zoom,](archive-zoommeetings-data.md)SMS y muchos otros. Para obtener una lista completa de conectores compatibles con el cumplimiento de comunicaciones, vea [Archivar datos de terceros](archiving-third-party-data.md).
 
     Debe configurar un conector de terceros para su Microsoft 365 para poder asignar el conector a una directiva de cumplimiento de comunicaciones. La **sección Orígenes de terceros** del Asistente para directivas de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
 
@@ -199,8 +199,8 @@ Los *clasificadores* de imágenes Adult, *Racy* y *Gory* analizan archivos en fo
 
 Los clasificadores globales y los clasificadores integrados no proporcionan una lista exhaustiva de términos o imágenes en estas áreas. Además, los estándares lingüísticos y culturales cambian continuamente y, a la luz de estas realidades, Microsoft se reserva el derecho de actualizar clasificadores a su discreción. Aunque los clasificadores pueden ayudar a su organización a supervisar estas áreas, los clasificadores no están diseñados para proporcionar el único medio de supervisión o dirección de su organización. Su organización, no Microsoft, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, el examen y el bloqueo del idioma y las imágenes en estas áreas, incluido el cumplimiento de la privacidad local y otras leyes aplicables. Microsoft anima a consultar con abogados antes de la implementación y el uso.
 
->[!NOTE]
->Las directivas que usan clasificadores inspeccionarán y evaluarán los mensajes con un recuento de palabras de seis o más. Los mensajes que contienen menos de seis palabras no se evalúan en las directivas mediante clasificadores. Para identificar y tomar medidas en mensajes más cortos que contengan contenido inadecuado, se recomienda incluir un diccionario de palabras clave personalizado para supervisar las directivas de cumplimiento de comunicación para este tipo de contenido.
+> [!NOTE]
+> Las directivas que usan clasificadores inspeccionarán y evaluarán los mensajes con un recuento de palabras de seis o más. Los mensajes que contienen menos de seis palabras no se evalúan en las directivas mediante clasificadores. Para identificar y tomar medidas en mensajes más cortos que contengan contenido inadecuado, se recomienda incluir un diccionario de palabras clave personalizado para supervisar las directivas de cumplimiento de comunicación para este tipo de contenido.
 
 Para obtener información acerca de los clasificadores que se pueden entrenar en Microsoft 365, vea [Getting started with trainable classifiers](classifier-get-started-with.md).
 
@@ -218,8 +218,8 @@ Las imágenes de 50 KB a 4 MB en los siguientes formatos de imagen se examinan y
 - .tiff (formato de archivo de imagen de etiqueta)
 - .pdf (formato de documento portátil)
 
->[!NOTE]
->Actualmente, el examen y la extracción de imágenes .pdf incrustadas y adjuntas solo se admiten para los mensajes de correo electrónico.
+> [!NOTE]
+> Actualmente, el examen y la extracción de imágenes .pdf incrustadas y adjuntas solo se admiten para los mensajes de correo electrónico.
 
 Al revisar alertas pendientes para directivas con OCR habilitado, las imágenes identificadas y coincidentes con las condiciones de directiva se muestran como elementos secundarios para las alertas asociadas. Puede ver la imagen original para evaluar el texto identificado en contexto con el mensaje original. Las imágenes detectadas pueden tardar hasta 48 horas en estar disponibles con alertas.
 
@@ -229,7 +229,7 @@ Al revisar alertas pendientes para directivas con OCR habilitado, las imágenes 
 Las condiciones que elija para la directiva se aplican a las comunicaciones tanto de correo electrónico como de orígenes de terceros de su organización (como de Instant Bloomberg).
 
 En la tabla siguiente se explica más sobre cada condición.
-  
+
 |**Condition**|**Cómo usar esta condición**|
 |:-----|:-----|
 | **El contenido coincide con cualquiera de estos clasificadores** | Aplicar a la directiva cuando se incluyan o excluyan los clasificadores en un mensaje. Algunos clasificadores están predefinidos en el espacio empresarial y los clasificadores personalizados deben configurarse por separado antes de que estén disponibles para esta condición. Solo se puede definir un clasificador como una condición en una directiva. Para obtener más información acerca de la configuración de clasificadores, vea [Learn about trainable classifiers (preview).](classifier-learn-about.md) |
@@ -242,24 +242,26 @@ En la tabla siguiente se explica más sobre cada condición.
 | **Los datos adjuntos son cualquiera de estos tipos de archivo**  <br><br> **Los datos adjuntos no son ninguno de estos tipos de archivo** | Para supervisar las comunicaciones que incluyen o excluyen tipos específicos de datos adjuntos, escriba las extensiones de archivo (como .exe o .pdf). Si desea incluir o excluir varias extensiones de archivo, escriba estas en líneas independientes. Solo debe coincidir una extensión de datos adjuntos para que se aplique la directiva.|
 | **El tamaño del mensaje es mayor que**  <br><br> **El tamaño del mensaje no es mayor que** | Para revisar los mensajes en función de un tamaño determinado, use estas condiciones para especificar el tamaño máximo o mínimo que puede tener un mensaje antes de que esté sujeto a revisión. Por ejemplo, si especifica que **el** tamaño del mensaje es mayor que \> **1,0 MB,** todos los mensajes de 1,01 MB o más están sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
 | **Los datos adjuntos son mayores que**  <br><br> **Los datos adjuntos no son mayores que** | Para revisar los mensajes en función del tamaño de sus datos adjuntos, especifique el tamaño máximo o mínimo que puede tener un archivo adjunto antes de que el mensaje y sus datos adjuntos estén sujetos a revisión. Por ejemplo, si  especifica Que datos adjuntos supere \> **los 2,0 MB,** todos los mensajes con datos adjuntos de 2,01 MB o más estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
-   
+
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Coincidencia de palabras y frases para mensajes de correo electrónico o datos adjuntos
 <a name="Matchwords"> </a>
 
 Cada palabra que escriba y separe con una coma se aplica por separado (solo debe aplicarse una palabra para que la condición de directiva se aplique al correo electrónico o los datos adjuntos). Por ejemplo, vamos a usar la condición, **Message** contiene cualquiera de estas palabras , con las palabras clave "banker", "confidential" y "insider trading" separadas por una coma (banker, confidential,"insider trading"). La directiva se aplica a cualquier mensaje que incluya la palabra "banker", "confidential" o la frase "insider trading". Solo una de estas palabras o frases debe aparecer para que esta condición de directiva se aplique. Las palabras del mensaje o los datos adjuntos deben coincidir exactamente con lo que escriba.
 
->[!IMPORTANT]
->Al importar un archivo de diccionario personalizado, cada palabra o frase debe separarse con un retorno de carro y en una línea independiente. <br> Por ejemplo: <br><br>
->*banker* <br>
->*confidencial* <br>
->*insider trading*
+> [!IMPORTANT]
+>
+> Al importar un archivo de diccionario personalizado, cada palabra o frase debe separarse con un retorno de carro y en una línea independiente. Por ejemplo:
+>
+> *banker* <br>
+> *confidencial* <br>
+> *insider trading*
 
 Para examinar los mensajes de correo electrónico y los datos adjuntos [](create-a-keyword-dictionary.md) de las mismas palabras clave, cree una directiva de prevención de pérdida de datos con un diccionario de palabras clave personalizado para los [términos](create-test-tune-dlp-policy.md) que desea examinar en los mensajes. Esta configuración de directiva identifica palabras clave definidas que aparecen en el mensaje de correo **electrónico O en** los datos adjuntos del correo electrónico. El uso de la configuración de directiva condicional estándar (*Message* contiene cualquiera de estas palabras y Attachment  *contiene* cualquiera de estas palabras ) para identificar los términos de los mensajes y los datos adjuntos requiere que los términos se presenten tanto en el mensaje como en los datos adjuntos.
-  
+
 #### <a name="enter-multiple-conditions"></a>Especificar varias condiciones
 
 Si especifica varias condiciones, Microsoft 365 todas las condiciones juntas para determinar cuándo aplicar la directiva de cumplimiento de comunicación a los elementos de comunicación. Al configurar varias condiciones, se deben cumplir todas las condiciones para que se aplique la directiva, a menos que especifique una excepción. Por ejemplo, necesita una directiva que se aplique si un mensaje contiene la palabra "trade" y es mayor que 2 MB. Sin embargo, si el mensaje también contiene las palabras "Aprobado por Contoso financial", la directiva no debe aplicarse. En este ejemplo, las tres condiciones se definirían de la siguiente manera:
-  
+
 - **El mensaje contiene cualquiera de estas palabras**, con la palabra clave "trade"
 - **El tamaño del mensaje es mayor que**, con el valor 2 MB
 - **El mensaje no contiene ninguna de estas palabras**, con las palabras clave "Aprobado por el equipo financiero de Contoso"
@@ -288,7 +290,7 @@ Las plantillas de avisos son plantillas de correo electrónico personalizadas do
 |**Nombre de la plantilla** | Sí | Nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Sí | La dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
 | **Direcciones CC y CCO** | No | Usuarios o grupos opcionales que se notificarán de la coincidencia de directiva, seleccionados desde Active Directory para su suscripción. |
-| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Subject** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
 | **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
@@ -308,8 +310,8 @@ Si desea crear más que un mensaje de correo electrónico simple basado en texto
 </html>
 ```
 
->[!NOTE]
->La implementación del atributo href HTML en las plantillas de notificación de cumplimiento de comunicaciones actualmente solo admite comillas simples en lugar de comillas dobles para las referencias url.
+> [!NOTE]
+> La implementación del atributo href HTML en las plantillas de notificación de cumplimiento de comunicaciones actualmente solo admite comillas simples en lugar de comillas dobles para las referencias url.
 
 ## <a name="filters"></a>Filtros
 
@@ -325,7 +327,7 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar mensaje
 | **Destinatario** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | Dominio que envió el mensaje. |
-| **Tamaño** | Tamaño del mensaje en KB. |
+| **Size** | Tamaño del mensaje en KB. |
 | **Asunto/Título** | Asunto del mensaje o título del chat. |
 | **Tags** | Las etiquetas asignadas a un mensaje, *ya sea Questionable*, *Compliant* o *Non-compliant*. |
 | **Language** | El idioma de texto detectado en el mensaje. El mensaje se clasifica según el idioma de la mayoría del texto del mensaje. Por ejemplo, para un mensaje que contiene texto alemán e italiano, pero la mayoría de texto es alemán, el mensaje se clasifica como alemán (DE). Se admiten los siguientes idiomas: chino (simplificado - ZH), inglés (EN), francés (FR), alemán (DE), italiano (IT), japonés (JP), portugués (PT) y español (ES). Por ejemplo, para filtrar mensajes clasificados como alemán e italiano, escriba "DE,IT" (los códigos de idioma de 2 dígitos) en el cuadro de búsqueda Filtro de idioma. Para ver la clasificación de idioma detectado para un mensaje, seleccione un mensaje, seleccione Ver detalles del mensaje y desplácese al campo EmailDetectedLanguage. |
@@ -344,8 +346,8 @@ Para las directivas de cumplimiento de comunicaciones, los siguientes valores de
 | Umbral | 4 actividades |
 | Window | 60 minutos |
 
->[!Note]
->La configuración del desencadenador de umbral de directiva de alerta para actividades admite un valor mínimo de 3 o superior para las directivas de cumplimiento de comunicaciones.
+> [!NOTE]
+> La configuración del desencadenador de umbral de directiva de alerta para actividades admite un valor mínimo de 3 o superior para las directivas de cumplimiento de comunicaciones.
 
 Puede cambiar la configuración predeterminada para desencadenadores en número de actividades, período para  las actividades y para usuarios específicos en directivas de alerta en la página Directivas de alerta del Centro de seguridad & cumplimiento.
 
@@ -355,7 +357,7 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alerta para u
 
 1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
-2. En el centro Microsoft 365 cumplimiento, vaya a **Directivas**.
+2. En el Centro de cumplimiento de Microsoft 365, vaya a **Directivas**.
 
 3. Seleccione **Office 365 alerta en** la **página** Directivas para abrir la página Directivas **de** alertas en el Centro de Office 365 seguridad **& cumplimiento**.
 
@@ -373,17 +375,17 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alerta para u
 
 Los clientes con Microsoft 365 que incluyen el cumplimiento de la comunicación no necesitan licencias Power Automate para usar la plantilla de cumplimiento de comunicaciones Power Automate recomendada. La plantilla predeterminada se puede personalizar para admitir la organización y cubrir los escenarios principales de cumplimiento de comunicaciones. Si elige usar características de Power Automate premium en estas plantillas, cree una plantilla personalizada con el conector de cumplimiento de Microsoft 365 o use plantillas Power Automate para otras áreas de cumplimiento en Microsoft 365, puede que necesite licencias Power Automate adicionales.
 
->[!IMPORTANT]
->¿Recibe avisos para la validación de licencias adicionales al probar Power Automate flujos? Es posible que su organización aún no haya recibido actualizaciones de servicio para esta característica de vista previa. Las actualizaciones se implementan y todas las organizaciones con suscripciones Microsoft 365 que incluyan el cumplimiento de comunicaciones deben tener compatibilidad con licencias para los flujos creados a partir de las plantillas Power Automate recomendadas antes del 30 de octubre de 2020.
+> [!IMPORTANT]
+> ¿Recibe avisos para la validación de licencias adicionales al probar Power Automate flujos? Es posible que su organización aún no haya recibido actualizaciones de servicio para esta característica de vista previa. Las actualizaciones se implementan y todas las organizaciones con suscripciones Microsoft 365 que incluyan el cumplimiento de comunicaciones deben tener compatibilidad con licencias para los flujos creados a partir de las plantillas Power Automate recomendadas antes del 30 de octubre de 2020.
 
 ![Cumplimiento de Power Automate](../media/communication-compliance-power-automate.png)
 
 La siguiente Power Automate se proporciona a los clientes para admitir la automatización de procesos para alertas de cumplimiento de comunicaciones:
 
 - **Notificar al administrador cuando un usuario tiene una alerta** de cumplimiento de comunicación: es posible que algunas organizaciones necesiten recibir una notificación de administración inmediata cuando un usuario tiene una alerta de cumplimiento de comunicación. Cuando se configura y selecciona este flujo, se envía un mensaje de correo electrónico al administrador del usuario del caso con la siguiente información sobre todas las alertas:
-    - Directiva aplicable para la alerta
-    - Fecha y hora de la alerta
-    - Nivel de gravedad de la alerta
+  - Directiva aplicable para la alerta
+  - Fecha y hora de la alerta
+  - Nivel de gravedad de la alerta
 
 ### <a name="create-a-power-automate-flow"></a>Crear un flujo Power Automate de datos
 
@@ -391,7 +393,7 @@ Para crear un flujo Power Automate de una plantilla predeterminada recomendada, 
 
 Siga estos pasos para crear un flujo Power Automate de una plantilla predeterminada:
 
-1. En el centro Microsoft 365 cumplimiento, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
+1. En el Centro de cumplimiento de Microsoft 365, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la **Power Automate,** seleccione una plantilla predeterminada de la sección Plantillas de cumplimiento de comunicación que le pueden **gustar** en la página.
@@ -408,7 +410,7 @@ De forma predeterminada, Power Automate flujos creados por un usuario solo está
 Para compartir un flujo Power Automate, debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
 Siga estos pasos para compartir un flujo Power Automate datos:
 
-1. En el centro Microsoft 365 cumplimiento, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
+1. En el Centro de cumplimiento de Microsoft 365, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la **página Power Automate flujos,** seleccione la **pestaña Mis flujos** o Flujos **de** equipo.
@@ -422,7 +424,7 @@ Si necesita editar un flujo, usará el **control** Power Automate cuando trabaje
 
 Siga estos pasos para editar un flujo Power Automate datos:
 
-1. En el centro Microsoft 365 cumplimiento, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
+1. En el Centro de cumplimiento de Microsoft 365, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la **página Power Automate flujos,** seleccione flujo para editar. Seleccione **Editar** en el menú control de flujo.
@@ -435,7 +437,7 @@ Si necesita eliminar un flujo, usará el **control** Power Automate cuando traba
 
 Siga estos pasos para eliminar un flujo Power Automate datos:
 
-1. En el centro Microsoft 365 cumplimiento, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
+1. En el Centro de cumplimiento de Microsoft 365, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la **página Power Automate flujos,** seleccione flujo que desea eliminar. Seleccione **Eliminar** en el menú control de flujo.
@@ -466,7 +468,7 @@ El **panel informes contiene** los siguientes widgets de informe y vínculos de 
     - Revisión pendiente de elementos
     - Notificación de usuario
     - Case created
-    
+
     Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe.
 - **Informe detallado de elementos** y acciones por ubicación: revisar y exportar elementos y acciones de corrección correspondientes por Microsoft 365 ubicación. Incluye información sobre cómo están asociadas las plataformas de carga de trabajo:
 
@@ -510,8 +512,8 @@ El **panel informes contiene** los siguientes widgets de informe y vínculos de 
 
 En algunos casos, debe proporcionar información a auditores normativos o de cumplimiento para demostrar la supervisión de las actividades y comunicaciones de los usuarios. Esta información puede ser un resumen de todas las actividades asociadas con una directiva organizativa definida o en cualquier momento en que cambie una directiva de cumplimiento de comunicación. Las directivas de cumplimiento de comunicaciones tienen seguimientos de auditoría integrados para una preparación completa para auditorías internas o externas. Las directivas de comunicación capturan historiales de auditoría detallados de cada acción de creación, edición y eliminación para proporcionar una prueba de los procedimientos de supervisión.
 
->[!Important]
->La auditoría debe estar habilitada para su organización antes de que se grabe el cumplimiento de la comunicación. Para habilitar la auditoría, vea [Habilitar el registro de auditoría](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Cuando las actividades desencadenan eventos que se capturan en el registro de auditoría de Microsoft 365, pueden tardar hasta 48 horas antes de que estos eventos se puedan ver en las directivas de cumplimiento de comunicaciones.
+> [!IMPORTANT]
+> La auditoría debe estar habilitada para su organización antes de que se grabe el cumplimiento de la comunicación. Para habilitar la auditoría, vea [Habilitar el registro de auditoría](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Cuando las actividades desencadenan eventos que se capturan en el registro de auditoría de Microsoft 365, pueden tardar hasta 48 horas antes de que estos eventos se puedan ver en las directivas de cumplimiento de comunicaciones.
 
 Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control Exportar actualizaciones **de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *Administrador global* o Administrador de cumplimiento *de* comunicaciones para exportar actividades de actualización. Esta acción genera un archivo de auditoría en el .csv que contiene la siguiente información:
 
@@ -519,7 +521,7 @@ Para ver las actividades de actualización de directivas de cumplimiento de comu
 |:-----|:-----|
 | **CreationDate** | La fecha en que se realizó la actividad de actualización en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de actualización en una directiva. |
-| **Operaciones** | Las operaciones de actualización realizadas en la directiva. |
+| **Operations** | Las operaciones de actualización realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal de todas las actividades de actualización de directivas. Todas las actividades de actualización se registran y se separan por delimitadores por comas. |
 
 Para ver las actividades de revisión de cumplimiento de comunicación de una directiva, seleccione el control **Exportar** actividades de revisión en **la** página Información general de una directiva específica. Debe tener asignados los roles Administrador *global* o Administrador de cumplimiento *de* comunicaciones para exportar actividades de revisión. Esta acción genera un archivo de auditoría en el .csv que contiene la siguiente información:
@@ -528,7 +530,7 @@ Para ver las actividades de revisión de cumplimiento de comunicación de una di
 |:-----|:-----|
 | **CreationDate** | La fecha en que se realizó la actividad de revisión en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de revisión en una directiva. |
-| **Operaciones** | Las operaciones de revisión realizadas en la directiva. |
+| **Operations** | Las operaciones de revisión realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal de todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y se separan por delimitadores por comas. |
 
 También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet [de PowerShell Search-UnifiedAuditLog.](/powershell/module/exchange/search-unifiedauditlog) Para obtener más información sobre las directivas de retención de registros de auditoría, vea [Manage audit log retention policies](audit-log-retention-policies.md).
@@ -548,7 +550,7 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 En este ejemplo se devuelven actividades que coinciden con las directivas de cumplimiento de comunicaciones actuales:
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
 Las coincidencias de directivas de cumplimiento de comunicaciones se almacenan en un buzón de supervisión para cada directiva. En algunos casos, es posible que deba comprobar el tamaño del buzón de supervisión de una directiva para asegurarse de que no se acerca al límite actual de 50 GB. Si se alcanza el límite de buzones de correo, las coincidencias de directiva no se capturan y tendrás que crear una nueva directiva (con la misma configuración) para seguir capturando coincidencias para las mismas actividades.
@@ -559,7 +561,7 @@ Para comprobar el tamaño de un buzón de supervisión para una directiva, siga 
 2. Ejecute el siguiente comando en PowerShell:
 
     ```PowerShell
-    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name)
     {
        "<Name of your communication compliance policy>: " + $p.Name
        Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize

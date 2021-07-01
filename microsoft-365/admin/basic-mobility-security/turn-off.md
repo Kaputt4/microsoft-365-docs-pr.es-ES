@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Quite grupos o directivas para desactivar La movilidad y la seguridad básicas.
-ms.openlocfilehash: 1d81aed01193fb2ba821ebc055958ac6cd8ac382
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 7ec4ec0d47668c21824d8e01e3845d637b9b0922
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023874"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228140"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>Desactivar Movilidad y seguridad básicas
 
@@ -29,16 +29,16 @@ Para desactivar de forma eficaz la movilidad y la seguridad básicas, quitas gru
 
 - Deshabilite la movilidad y la seguridad básicas para todos los usuarios quitando todas las directivas de dispositivos de movilidad y seguridad básicas.
 
-Estas opciones quitan el cumplimiento básico de movilidad y seguridad para dispositivos de la organización. Desafortunadamente, no puedes simplemente "desaprovisionar" La movilidad y la seguridad básicas después de configurarla. 
+Estas opciones quitan el cumplimiento básico de movilidad y seguridad para dispositivos de la organización. Desafortunadamente, no puedes simplemente "desaprovisionar" La movilidad y la seguridad básicas después de configurarla.
 
->[!IMPORTANT]
->Tenga en cuenta el impacto en los dispositivos de los usuarios al quitar grupos de seguridad de usuarios de las directivas o quitar las propias directivas. Por ejemplo, los perfiles de correo electrónico y los correos electrónicos almacenados en caché pueden quitarse, según el dispositivo. Para obtener más información, consulta  [¿Qué sucede cuando eliminas una directiva o quitas a un usuario de la directiva?](../../admin/basic-mobility-security/create-device-security-policies.md)
+> [!IMPORTANT]
+> Tenga en cuenta el impacto en los dispositivos de los usuarios al quitar grupos de seguridad de usuarios de las directivas o quitar las propias directivas. Por ejemplo, los perfiles de correo electrónico y los correos electrónicos almacenados en caché pueden quitarse, según el dispositivo. Para obtener más información, consulta  [¿Qué sucede cuando eliminas una directiva o quitas a un usuario de la directiva?](../../admin/basic-mobility-security/create-device-security-policies.md)
 
 ## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Quitar grupos de seguridad de usuarios de directivas de dispositivos de movilidad básica y seguridad
 
 1. En el tipo de explorador:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2. Selecciona una directiva de dispositivo y selecciona **Editar directiva**. 
+2. Selecciona una directiva de dispositivo y selecciona **Editar directiva**.
 
 3. En la  **página Implementación,**   seleccione **Quitar**.
 
@@ -48,11 +48,11 @@ Estas opciones quitan el cumplimiento básico de movilidad y seguridad para disp
 
 ## <a name="remove-basic-mobility-and-security-device-policies"></a>Quitar directivas básicas de dispositivos de movilidad y seguridad
 
-1.  En el tipo de explorador:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) . 
+1. En el tipo de explorador:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2.  Seleccione una directiva de dispositivo y, a continuación,  **seleccione Eliminar directiva**.
-    
-3.  En el cuadro de diálogo Advertencia, seleccione **Sí**.
+2. Seleccione una directiva de dispositivo y, a continuación,  **seleccione Eliminar directiva**.
 
->[!NOTE]
->Para obtener más pasos para desbloquear dispositivos si los dispositivos de la organización siguen en estado [bloqueado,](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)consulta la entrada de blog Quitar control de acceso de Administración de dispositivos móviles para Office 365 .
+3. En el cuadro de diálogo Advertencia, seleccione **Sí**.
+
+> [!NOTE]
+> Para obtener más pasos para desbloquear dispositivos si los dispositivos de la organización siguen en estado [bloqueado,](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)consulta la entrada de blog Quitar control de acceso de Administración de dispositivos móviles para Office 365 .

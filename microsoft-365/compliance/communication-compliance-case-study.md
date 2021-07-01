@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1b9bef180fed9c3afa3b3d8d2319a1fa0260ed14
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: bd3904b480f757c1cf684e15afaae9c19559e1ea
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126599"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227404"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de idioma ofensivo para Microsoft Teams, Exchange y Yammer comunicaciones
 
@@ -55,9 +55,9 @@ El primer paso es confirmar que las licencias de Microsoft 365 contoso incluyen 
 - Microsoft 365 E5 suscripción (versión de pago o de prueba)
 - Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
 - Microsoft 365 E3 suscripción + el Microsoft 365 E5 de Administración de riesgos de Insider
-- Microsoft 365 Suscripción A5 (versión de pago o de prueba)
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 cumplimiento de A5
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 A5 Insider Risk Management
+- Microsoft 365 A5 suscripción (versión de pago o de prueba)
+- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
+- Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
 - Microsoft 365 Suscripción de G5 (versión de pago o de prueba)
 - Microsoft 365 Suscripción de G5 + el Microsoft 365 de cumplimiento de G5
 - Microsoft 365 Suscripción de G5 + el complemento Microsoft 365 G5 Insider Risk Management
@@ -66,12 +66,12 @@ El primer paso es confirmar que las licencias de Microsoft 365 contoso incluyen 
 
 También deben confirmar que los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener asignada una de las licencias anteriores.
 
->[!IMPORTANT]
->Cumplimiento avanzado de Office 365 ya no se vende como una suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas o adicionales características de cumplimiento.
+> [!IMPORTANT]
+> Cumplimiento avanzado de Office 365 ya no se vende como una suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas o adicionales características de cumplimiento.
 
 Los administradores de TI de Contoso toman los siguientes pasos para comprobar la compatibilidad con licencias de Contoso:
 
-1. Los administradores de TI inician sesión en el **Microsoft 365 de administración** [( https://admin.microsoft.com)](https://admin.microsoft.com) y navegan hasta **Microsoft 365 licencias** de  >  **facturación** del centro de  >  **administración**.
+1. Los administradores de TI inician sesión en el **Centro de administración de Microsoft 365** <https://admin.microsoft.com> y navegan hasta **Centro de administración de Microsoft 365**  >  **licencias de**  >  **facturación**.
 
 2. Aquí confirman que tienen una de las opciones de [licencia](communication-compliance-configure.md#subscriptions-and-licensing) que incluye compatibilidad con el cumplimiento de las comunicaciones.
 
@@ -79,7 +79,7 @@ Los administradores de TI de Contoso toman los siguientes pasos para comprobar l
 
 ### <a name="permissions-for-communication-compliance"></a>Permisos para el cumplimiento de comunicaciones
 
-Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento** de la comunicación esté disponible como una opción de menú en Microsoft 365 centro de cumplimiento y para continuar con estos pasos de configuración, a los administradores de Contoso se les asigna el rol De administrador de *cumplimiento de* comunicaciones.
+Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento de** la comunicación esté disponible como una opción de menú en Centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, a los administradores de Contoso se les asigna el rol De administrador de cumplimiento *de* comunicaciones.
 
 Contoso decide usar el grupo de roles *Cumplimiento* de comunicaciones para asignar al grupo todos los administradores de cumplimiento de comunicación, analistas, investigadores y visores. Esto facilita que Contoso pueda empezar a trabajar rápidamente y se adapte mejor a sus requisitos de administración de cumplimiento.
 
@@ -104,9 +104,9 @@ Contoso decide usar el grupo de roles *Cumplimiento* de comunicaciones para asig
 Después de configurar los permisos para el cumplimiento de las comunicaciones, los administradores de TI de Contoso y los especialistas en cumplimiento asignados al grupo de roles Cumplimiento de comunicaciones pueden obtener acceso a la solución de cumplimiento de comunicaciones en Microsoft 365. Los administradores de TI de Contoso y los especialistas en cumplimiento tienen varias formas de obtener acceso al cumplimiento de comunicaciones y empezar a crear una nueva directiva:
 
 - A partir directamente de la solución de cumplimiento de comunicaciones
-- A partir del centro Microsoft 365 cumplimiento
+- A partir del Centro de cumplimiento de Microsoft 365
 - A partir del catálogo Microsoft 365 de soluciones
-- A partir del Centro Microsoft 365 administración
+- A partir del Centro de administración de Microsoft 365
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>A partir directamente de la solución de cumplimiento de comunicaciones
 
@@ -114,29 +114,29 @@ La forma más rápida de obtener acceso a la solución es iniciar sesión direct
 
 ![Información general sobre el Cumplimiento de comunicaciones](../media/communication-compliance-case-overview.png)
 
-### <a name="starting-from-the-microsoft-365-compliance-center"></a>A partir del centro Microsoft 365 cumplimiento
+### <a name="starting-from-the-microsoft-365-compliance-center"></a>A partir del Centro de cumplimiento de Microsoft 365
 
-Otra forma fácil de que los administradores de TI de Contoso y  los especialistas en cumplimiento accedan a la solución de cumplimiento de comunicaciones es iniciar sesión directamente en el centro de cumplimiento de Microsoft 365 [( . https://compliance.microsoft.com) ](https://compliance.microsoft.com) Después de iniciar sesión, los usuarios simplemente necesitan seleccionar el control **Mostrar todo** para que se muestren todas las soluciones de cumplimiento y, después, seleccionar la solución **Cumplimiento de comunicaciones** para empezar.
+Otra forma fácil de que los administradores de TI de Contoso y los especialistas en cumplimiento accedan a la solución de cumplimiento de comunicaciones es iniciar sesión directamente en **el Centro de cumplimiento de Microsoft 365** [( . https://compliance.microsoft.com)](https://compliance.microsoft.com) Después de iniciar sesión, los usuarios simplemente necesitan seleccionar el control **Mostrar todo** para que se muestren todas las soluciones de cumplimiento y, después, seleccionar la solución **Cumplimiento de comunicaciones** para empezar.
 
 ![Centro de cumplimiento de normas](../media/communication-compliance-case-center.png)
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>A partir del catálogo Microsoft 365 de soluciones
 
-Los administradores de TI de Contoso y los especialistas en cumplimiento también podrían elegir tener acceso a la solución de cumplimiento de comunicaciones seleccionando el catálogo Microsoft 365 soluciones. Al seleccionar **Catálogo** en la sección **Soluciones** de la navegación izquierda mientras se encuentra en el Centro de cumplimiento de **Microsoft 365,** pueden abrir el catálogo de soluciones que enumera todas las Microsoft 365 de cumplimiento normativo. Desplazándose hacia abajo a la sección de administración de riesgos de **Insider,** los administradores de TI de Contoso pueden seleccionar Cumplimiento de comunicaciones para empezar. Los administradores de TI de Contoso también deciden usar el control Mostrar en navegación para anclar la solución de cumplimiento de comunicaciones al panel de navegación izquierdo para un acceso más rápido cuando inicien sesión en adelante.
+Los administradores de TI de Contoso y los especialistas en cumplimiento también podrían elegir tener acceso a la solución de cumplimiento de comunicaciones seleccionando el catálogo Microsoft 365 soluciones. Al seleccionar **Catálogo** en la sección **Soluciones** de la navegación izquierda mientras se encuentra en la **Centro de cumplimiento de Microsoft 365,** pueden abrir el catálogo de soluciones que enumera todas las Microsoft 365 cumplimiento normativo. Desplazándose hacia abajo a la sección de administración de riesgos de **Insider,** los administradores de TI de Contoso pueden seleccionar Cumplimiento de comunicaciones para empezar. Los administradores de TI de Contoso también deciden usar el control Mostrar en navegación para anclar la solución de cumplimiento de comunicaciones al panel de navegación izquierdo para un acceso más rápido cuando inicien sesión en adelante.
 
 ![Catálogo de soluciones](../media/communication-compliance-case-solution.png)
 
-### <a name="starting-from-the-microsoft-365-admin-center"></a>A partir del Centro Microsoft 365 administración
+### <a name="starting-from-the-microsoft-365-admin-center"></a>A partir del Centro de administración de Microsoft 365
 
-Para obtener acceso al cumplimiento de comunicaciones cuando se inicia desde el Centro de administración de Microsoft 365, los administradores de TI de Contoso y los especialistas en cumplimiento inician sesión en el Centro de administración de Microsoft 365 [( https://admin.microsoft.com) ](https://admin.microsoft.com) y navegan Microsoft 365 centro de administración cumplimiento  >  .
+Para obtener acceso al cumplimiento de comunicaciones al comenzar desde el Centro de administración de Microsoft 365, los administradores de TI de Contoso y los especialistas en cumplimiento inician sesión en el Centro de administración de Microsoft 365 [( y https://admin.microsoft.com)](https://admin.microsoft.com) navegue hasta **Centro de administración de Microsoft 365**  >  **Cumplimiento**.
 
 ![Vínculo de cumplimiento de comunicaciones](../media/communication-compliance-case-compliance-link.png)
 
-Esta acción abre el **centro de** seguridad y cumplimiento de Office 365 y deben seleccionar el vínculo al centro de cumplimiento de **Microsoft 365** proporcionado en el banner en la parte superior de la página.
+Esta acción abre el **centro Office 365 seguridad** y cumplimiento y  deben seleccionar el vínculo al Centro de cumplimiento de Microsoft 365 que se proporciona en el banner en la parte superior de la página.
 
 ![Office 365 de seguridad y cumplimiento](../media/communication-compliance-case-scc.png)
 
-Una vez en el **Microsoft 365 de cumplimiento,** los administradores de TI de Contoso seleccionan **Mostrar** todo para mostrar la lista completa de soluciones de cumplimiento.
+Una vez en **el Centro de cumplimiento de Microsoft 365,** los administradores de TI de Contoso seleccionan **Mostrar** todo para mostrar la lista completa de soluciones de cumplimiento.
 
 ![Menú cumplimiento de comunicaciones](../media/communication-compliance-case-show-all.png)
 
@@ -166,7 +166,7 @@ Los especialistas en cumplimiento de Contoso desean agregar todos los usuarios a
 
 Deben crear un nuevo grupo para incluir a todos los usuarios de Contoso, por lo que deben seguir los pasos siguientes:
 
-1. Los administradores de TI de Contoso inician sesión en el **Microsoft 365 de** administración [ https://admin.microsoft.com) (](https://admin.microsoft.com) y navegue hasta Microsoft 365 grupos del **centro**  >  **de**  >  **administración**.
+1. Los administradores de TI de Contoso inician sesión en **el Centro de administración de Microsoft 365** [( https://admin.microsoft.com)](https://admin.microsoft.com) y navegan hasta **Centro de administración de Microsoft 365**  >  **Grupos de**  >  **servidores**.
 2. Seleccionan **Agregar un grupo y** completan el asistente para crear un nuevo grupo de Microsoft 365 *o* grupo *de distribución.*
 
     ![Grupos](../media/communication-compliance-case-all-employees.png)

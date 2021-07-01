@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 23c2ed180606e61820c6e736e472aef0ae4933a5
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
-ms.translationtype: HT
+ms.openlocfilehash: f64fcf4908f119e261b07bbc4feaed2151e30187
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445690"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226436"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -52,8 +52,8 @@ Las plantillas de administración de riesgos internos son condiciones predefinid
 
 Cuando los usuarios abandonan su organización, existen indicadores de riesgo específicos que suelen asociarse al robo de datos por parte de los usuarios que abandonan la organización. Esta plantilla de directiva utiliza los indicadores de filtración para la puntuación del riesgo y se centra en la detección y las alertas en esta área de riesgo. El robo de datos por parte de los usuarios que abandonan la organización puede incluir la descarga de archivos de SharePoint Online, la impresión de archivos y la copia de datos en servicios personales de mensajería y almacenamiento en la nube cerca de sus fechas de renuncia y finalización del empleo. Al usar el conector de recursos humanos de Microsoft 365 o la opción de supervisar automáticamente la eliminación de cuentas de usuario en Azure Active Directory para su organización, esta plantilla comienza a puntuar los indicadores de riesgo relacionados con estas actividades y cómo se correlacionan con el estado de empleo del usuario.
 
->[!IMPORTANT]
->Al usar esta plantilla, puede configurar un conector de recursos humanos de Microsoft 365 para importar periódicamente la información de las fechas de renuncia y finalización de los usuarios de su organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización. Si decide no usar el conector de recursos humanos, debe seleccionar la opción Cuenta de usuario eliminada de Azure AD al configurar los eventos desencadenantes en el asistente de directivas.
+> [!IMPORTANT]
+> Al usar esta plantilla, puede configurar un conector de recursos humanos de Microsoft 365 para importar periódicamente la información de las fechas de renuncia y finalización de los usuarios de su organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización. Si decide no usar el conector de recursos humanos, debe seleccionar la opción Cuenta de usuario eliminada de Azure AD al configurar los eventos desencadenantes en el asistente de directivas.
 
 ### <a name="general-data-leaks"></a>Filtraciones de datos generales
 
@@ -74,8 +74,8 @@ Al crear o modificar las directivas DLP para usarlas con las directivas de admin
 
     ![Configuración de alertas de la directiva DLP](../media/insider-risk-DLP-policy-high-severity.png)
 
-     >[!NOTE]
-     >Al crear una nueva directiva DLP usando las plantillas incorporadas, tendrá que seleccionar la opción **Crear o personalizar reglas DLP avanzadas** para configurar el ajuste de **Informes de incidentes** para el nivel de gravedad *Alto*.
+     > [!NOTE]
+     > Al crear una nueva directiva DLP usando las plantillas incorporadas, tendrá que seleccionar la opción **Crear o personalizar reglas DLP avanzadas** para configurar el ajuste de **Informes de incidentes** para el nivel de gravedad *Alto*.
 
 Cada directiva de administración de riesgos internos creada a partir de la plantilla de **Filtración de datos** solo puede tener asignada una directiva DLP. Considere la posibilidad de crear una directiva DLP dedicada que combine las diferentes actividades que desea detectar y que actúe como evento desencadenante de las directivas de riesgo interno que usan la plantilla de **Filtración de datos**.
 
@@ -164,8 +164,8 @@ Estas directivas de administración de riesgos internos pueden usar indicadores 
 - **Ofuscación**: estas señales de categoría se centran en el enmascaramiento de las actividades de riesgo por parte de los usuarios de la directiva dentro del ámbito de búsqueda. Un ejemplo de actividad en esta categoría sería renombrar archivos en un dispositivo.
 - **Limpieza**: estas señales de categoría se centran en las actividades de eliminación por parte de los usuarios de la directiva dentro del ámbito de búsqueda. Una actividad de ejemplo en esta categoría eliminaría archivos de un dispositivo.
 
->[!NOTE]
->La detección de secuencias utiliza los indicadores habilitados en la configuración global para la administración de riesgos internos y los indicadores seleccionados en una directiva. Si no se seleccionan los indicadores adecuados, la detección de la secuencia no funcionará.
+> [!NOTE]
+> La detección de secuencias utiliza los indicadores habilitados en la configuración global para la administración de riesgos internos y los indicadores seleccionados en una directiva. Si no se seleccionan los indicadores adecuados, la detección de la secuencia no funcionará.
 
 Puede personalizar la configuración de umbral individual para cada tipo de detección de secuencia cuando se configure en la directiva. Esta configuración de umbral ajusta las alertas según el volumen de archivos asociados con la secuencia.
 
@@ -182,8 +182,8 @@ La detección de filtración acumulada está activada de forma predeterminada cu
 - Filtraciones de datos por parte de usuarios prioritarios
 - Filtraciones de datos por parte de usuarios inconformes
 
->[!NOTE]
->La detección de filtración acumulada utiliza los indicadores de filtración activados en la configuración global para la administración de riesgos internos y los indicadores de filtración seleccionados en una directiva. Como tal, la detección de filtración acumulada solo se evalúa para los indicadores de filtración necesarios seleccionados.
+> [!NOTE]
+> La detección de filtración acumulada utiliza los indicadores de filtración activados en la configuración global para la administración de riesgos internos y los indicadores de filtración seleccionados en una directiva. Como tal, la detección de filtración acumulada solo se evalúa para los indicadores de filtración necesarios seleccionados.
 
 Cuando la detección de filtración acumulada está activada para las directivas de robo o filtración de datos, la información de las actividades de filtración acumulada se muestra en la pestaña **Actividad del usuario** dentro de un caso de administración de riesgos internos.
 
@@ -260,8 +260,8 @@ Siga los siguientes pasos para crear una nueva directiva:
 2. Seleccione **Crear directiva** para abrir el asistente de directivas.
 3. En la página **Plantilla de directiva**, elija una categoría de directiva y luego seleccione la plantilla para la nueva directiva. Estas plantillas están compuestas por condiciones y señales que definen las actividades de riesgo que desea detectar e investigar. Revise los requisitos previos de la plantilla, los eventos desencadenantes y las actividades detectadas para confirmar que esta plantilla de directiva se ajusta a sus necesidades.
 
-    >[!IMPORTANT]
-    >Algunas plantillas de directivas tienen requisitos previos que deben configurarse para que la directiva genere las alertas relevantes. Si no ha configurado los requisitos previos de la directiva aplicable, vea el **Paso 4** anterior.
+    > [!IMPORTANT]
+    > Algunas plantillas de directivas tienen requisitos previos que deben configurarse para que la directiva genere las alertas relevantes. Si no ha configurado los requisitos previos de la directiva aplicable, vea el **Paso 4** anterior.
 
 4. Seleccione **Siguiente** para continuar.
 5. En la página **Nombre y descripción**, siga los siguientes campos:
@@ -287,8 +287,8 @@ Siga los siguientes pasos para crear una nueva directiva:
 12. Seleccione **Siguiente** para continuar.
 13. En la página **Indicadores y eventos desencadenantes**, verá los [indicadores](insider-risk-management-settings.md#indicators)que ha definido como disponibles en la página **Configuración de riesgos internos** > **Indicadores**. Si ha seleccionado una plantilla de *Filtración de datos* al principio del asistente, deberá seleccionar una directiva DLP de la lista desplegable de **directivas DLP** para activar los indicadores de activación de la directiva o seleccionar el evento desencadenante incorporado.
 
-    >[!IMPORTANT]
-    >Si los indicadores de esta página no se pueden seleccionar, tendrá que seleccionar los indicadores que desea habilitar para todas las directivas. Puede usar el botón **Habilitar indicadores** del asistente o seleccionar los indicadores en la página **Administración de riesgos internos** > **Configuración** > **Indicadores de directiva**.
+    > [!IMPORTANT]
+    > Si los indicadores de esta página no se pueden seleccionar, tendrá que seleccionar los indicadores que desea habilitar para todas las directivas. Puede usar el botón **Habilitar indicadores** del asistente o seleccionar los indicadores en la página **Administración de riesgos internos** > **Configuración** > **Indicadores de directiva**.
 
     Seleccione los indicadores que desea aplicar a la directiva. Si prefiere no usar la configuración del umbral de la directiva predeterminada para estos indicadores, desactive la opción **Usar umbrales predeterminados recomendados por Microsoft** y escriba los valores del umbral para cada indicador seleccionado.
 
@@ -332,8 +332,8 @@ Siga los siguientes pasos para administrar una directiva existente:
 12. Seleccione **Siguiente** para continuar.
 13. En la página **Indicadores y eventos desencadenantes**, verá los [indicadores](insider-risk-management-settings.md#indicators)que ha definido como disponibles en la página **Configuración de riesgos internos** > **Indicadores**. Si ha seleccionado una plantilla de *Filtración de datos* al principio del asistente, deberá seleccionar una directiva DLP de la lista desplegable de **directivas DLP** para activar los indicadores de activación de la directiva o seleccionar el evento desencadenante incorporado.
 
-    >[!IMPORTANT]
-    >Si los indicadores de esta página no se pueden seleccionar, tendrá que seleccionar los indicadores que desea habilitar para todas las directivas. Puede usar el botón **Habilitar indicadores** del asistente o seleccionar los indicadores en la página **Administración de riesgos internos** > **Configuración** > **Indicadores de directiva**.
+    > [!IMPORTANT]
+    > Si los indicadores de esta página no se pueden seleccionar, tendrá que seleccionar los indicadores que desea habilitar para todas las directivas. Puede usar el botón **Habilitar indicadores** del asistente o seleccionar los indicadores en la página **Administración de riesgos internos** > **Configuración** > **Indicadores de directiva**.
 
     Seleccione los indicadores que desea aplicar a la directiva. Si prefiere no usar la configuración del umbral de la directiva predeterminada para estos indicadores, desactive la opción **Usar umbrales predeterminados recomendados por Microsoft** y escriba los valores del umbral para cada indicador seleccionado.
 
@@ -366,8 +366,8 @@ Algunos escenarios en los que puede querer empezar inmediatamente a puntuar las 
 - Cuando hay un incidente que puede requerir que inicie inmediatamente la asignación de puntuaciones de riesgo a la actividad de los usuarios involucrados para una o varias de las directivas
 - Cuando aún no ha configurado su conector de recursos humanos, pero desea iniciar la asignación de puntuaciones de riesgo a actividades de usuario para eventos de recursos humanos cargando un archivo .csv para los usuarios
 
->[!NOTE]
->Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel de **Usuarios**. Las actividades de los 90 días anteriores de estos usuarios pueden tardar hasta 24 horas en aparecer. Para ver las actividades de los usuarios agregados manualmente, vaya a la pestaña **Usuarios** y seleccione el usuario en el panel **Usuarios** y abra la pestaña **Actividad del usuario** en el panel de detalles.
+> [!NOTE]
+> Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel de **Usuarios**. Las actividades de los 90 días anteriores de estos usuarios pueden tardar hasta 24 horas en aparecer. Para ver las actividades de los usuarios agregados manualmente, vaya a la pestaña **Usuarios** y seleccione el usuario en el panel **Usuarios** y abra la pestaña **Actividad del usuario** en el panel de detalles.
 
 Para iniciar manualmente la actividad de puntuación de los usuarios en una o más directivas de administración de riesgos internos, siga los siguientes pasos:
 
@@ -393,8 +393,8 @@ Para dejar de puntuar a los usuarios en una directiva, vea el artículo [Usuario
 
 ## <a name="delete-a-policy"></a>Eliminar una directiva
 
->[!NOTE]
->Al eliminar una directiva no elimina las alertas activas o archivadas generadas a partir de la misma.
+> [!NOTE]
+> Al eliminar una directiva no elimina las alertas activas o archivadas generadas a partir de la misma.
 
 Para eliminar una directiva de administración de riesgos internos existente, siga estos pasos:
 

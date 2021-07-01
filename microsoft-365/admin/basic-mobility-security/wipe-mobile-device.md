@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa la movilidad básica y la seguridad integradas para quitar información de los dispositivos inscritos.
-ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: c3cc547ce5e135ccdabf9a09b0d572f1b2530f47
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706147"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228152"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Borrar un dispositivo móvil en Movilidad básica y seguridad
 
@@ -45,7 +45,7 @@ Los dispositivos móviles pueden almacenar información confidencial de la organ
 
 ## <a name="wipe-a-mobile-device"></a>Borrar un dispositivo móvil
 
-1. Vaya al Centro [Microsoft 365 administración.](../../admin/admin-overview/about-the-admin-center.md)
+1. Vaya a la [Centro de administración de Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Escribe Administración de dispositivos móviles en el campo de búsqueda y selecciona **Administración de dispositivos móviles** en la lista de resultados.
 
@@ -86,5 +86,6 @@ El borrado se envía inmediatamente al dispositivo móvil y el dispositivo se ma
 |Microsoft 365 datos de la aplicación se borran si el dispositivo está protegido por directivas de Protección de aplicaciones de Intune. Las aplicaciones no se quitan. Para dispositivos que no están protegidos por directivas de administración de aplicaciones móviles (MAM), Outlook y OneDrive no quitarán los datos almacenados en caché.<br/>**Nota** Para aplicar directivas de Protección de aplicaciones de Intune, debe tener una licencia de Intune.|Sí|Sí|
 |La configuración de directiva aplicada por Movilidad básica y Seguridad a los dispositivos ya no se aplica; los usuarios pueden cambiar la configuración.|Sí|Sí|
 |Los perfiles de correo electrónico creados por Basic Mobility and Security se quitan y se elimina el correo electrónico almacenado en caché en el dispositivo.|Sí|N/D|
->[!NOTE]
->Portal de empresa app está disponible en la App Store para iOS y la Play Store para dispositivos Android.
+
+> [!NOTE]
+> Portal de empresa app está disponible en la App Store para iOS y la Play Store para dispositivos Android.

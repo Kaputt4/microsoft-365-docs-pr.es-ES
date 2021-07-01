@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9d9c439704b6837cec086b390cde9c480d2d69ba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 2bf40f5b1d89b7a232f86c1e186ca660db9f8bbc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860401"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227288"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -103,7 +103,7 @@ Los nuevos paneles interactivos de alertas, coincidencias de directivas, accione
 
 - **Alertas inteligentes proactivas**: Las alertas para las coincidencias de directivas que requieren atención inmediata incluyen nuevos paneles para los elementos pendientes clasificados por gravedad y nuevas notificaciones automáticas por correo electrónico enviadas a los revisores designados.
 - **Paneles interactivos**: los nuevos paneles muestran las coincidencias de las directivas, las acciones pendientes y resueltas, y las tendencias por usuarios y directivas.
-- **Compatibilidad con auditoría:** un registro completo de las actividades de directiva y revisión se exporta fácilmente desde el centro de cumplimiento de Microsoft 365 para ayudar a admitir solicitudes de revisión de auditoría.
+- **Compatibilidad con auditoría:** un registro completo de las actividades de directiva y revisión se exporta fácilmente desde el Centro de cumplimiento de Microsoft 365 para ayudar a admitir solicitudes de revisión de auditoría.
 
 ## <a name="integration-with-microsoft-365-services"></a>Integración con Microsoft 365 servicios
 
@@ -129,8 +129,8 @@ La identificación y resolución de problemas de cumplimiento con el cumplimient
 
 En este paso de flujo de trabajo, identificará los requisitos de cumplimiento y configurará las directivas de cumplimiento de comunicaciones aplicables. Las plantillas de directiva son una excelente manera de no solo configurar rápidamente una nueva directiva de cumplimiento, sino también modificar y actualizar rápidamente las directivas a medida que cambian los requisitos. Por ejemplo, tal vez quiera probar rápidamente una directiva para lenguaje ofensivo y contra el acoso en las comunicaciones de un pequeño grupo de usuarios antes de configurar una directiva para todos los usuarios de la organización.
 
->[!Important]
->De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Para habilitar los permisos para las características de cumplimiento de comunicaciones, vea Hacer que [el cumplimiento de la comunicación esté disponible en la organización.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
+> [!IMPORTANT]
+> De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Para habilitar los permisos para las características de cumplimiento de comunicaciones, vea Hacer que [el cumplimiento de la comunicación esté disponible en la organización.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
 Puede elegir entre las siguientes plantillas de directiva del Centro de cumplimiento de Microsoft 365:
 
@@ -142,7 +142,7 @@ Puede elegir entre las siguientes plantillas de directiva del Centro de cumplimi
 
 ### <a name="investigate"></a>Investigación
 
-En este paso, se profundiza en los problemas detectados como coincidencias con las directivas de cumplimiento de la comunicación. Este paso incluye las siguientes acciones disponibles en el centro de Microsoft 365 cumplimiento:
+En este paso, se profundiza en los problemas detectados como coincidencias con las directivas de cumplimiento de la comunicación. Este paso incluye las siguientes acciones disponibles en el Centro de cumplimiento de Microsoft 365:
 
 - **Alertas:** cuando un mensaje coincide con una condición de directiva, se genera automáticamente una alerta. Para cada alerta, puede ver el estado, la gravedad, el tiempo detectado y si se asigna Advanced eDiscovery caso y su estado. Las alertas nuevas se muestran en  la página principal de cumplimiento de comunicaciones y en la página Alertas y se enumeran en orden de gravedad.
 - **Administración de problemas**: para cada alerta, puede tomar medidas de investigación para ayudar a corregir el problema detectado en el mensaje.
@@ -150,7 +150,7 @@ En este paso, se profundiza en los problemas detectados como coincidencias con l
 - **Revisión del historial de** actividades de usuario: vea el historial de actividades de mensajes de usuario y acciones de corrección, como notificaciones anteriores y escalaciones, para ver las coincidencias de directivas.
 - **Filtros:** use filtros como el remitente, el destinatario, la fecha y el sujeto para limitar rápidamente las alertas de mensajes que desea revisar.
 
-### <a name="remediate"></a>Corrección
+### <a name="remediate"></a>Corregir
 
 El siguiente paso es corregir los problemas de cumplimiento de comunicaciones que ha investigado con las siguientes opciones:
 

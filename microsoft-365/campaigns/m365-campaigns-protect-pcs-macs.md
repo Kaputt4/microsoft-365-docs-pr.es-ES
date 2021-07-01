@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteja dispositivos no administrados o bring-your-own (BYOD) con Microsoft 365.
-ms.openlocfilehash: 430f5446f86c26cb1f0fd1c7f34613cddec473b2
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398258"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227504"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteger equipos Windows 10 y Mac no administrados
 
@@ -54,7 +54,7 @@ Si su Windows 10 pc o Mac no está administrado por su organización, asegúrese
 
 El cifrado de dispositivos está disponible en una amplia variedad de Windows dispositivos y ayuda a proteger los datos al cifrarlos. Si activas el cifrado de dispositivos, solo las personas autorizadas podrán acceder al dispositivo y a los datos. Consulta [Activar el cifrado de dispositivos](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) para obtener instrucciones.
 
- Si el cifrado de dispositivo no está disponible en el dispositivo, puedes activar el cifrado [BitLocker en](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) su lugar. (BitLocker no está disponible en Windows 10 Home edición). 
+ Si el cifrado de dispositivo no está disponible en el dispositivo, puedes activar el cifrado [estándar de BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) en su lugar. (BitLocker no está disponible en Windows 10 Home edición). 
 
 **Proteger el dispositivo con Seguridad de Windows**<p>
 Si tienes Windows 10, tendrás la protección antivirus más reciente con Seguridad de Windows. Cuando se inicia Windows 10 por primera vez, Seguridad de Windows está activa y ayuda activamente a proteger el equipo mediante el examen de malware (software malintencionado), virus y amenazas de seguridad. Seguridad de Windows la protección en tiempo real para examinar todo lo que descarga o ejecuta en el equipo.
@@ -72,7 +72,7 @@ Siempre debe ejecutar el firewall Windows aunque tenga otro firewall activado. D
 El cifrado de disco protege los datos cuando se pierden o se roban dispositivos. El cifrado de disco completo de FileVault ayuda a evitar el acceso no autorizado a la información del disco de inicio. Consulta [Usar FileVault para cifrar el disco de inicio en tu Mac](https://support.apple.com/HT204837) para obtener instrucciones.
 
 **Proteger el mac contra malware**<p>
-Microsoft recomienda instalar y usar software antivirus confiable en su Mac. Vea el siguiente artículo para obtener una lista de opciones: [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
+Microsoft recomienda instalar y usar software antivirus confiable en su Mac. Vea el siguiente artículo para obtener una lista de opciones: [Best Mac antivirus 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
 También puede reducir el riesgo de malware mediante el uso de software solo desde orígenes confiables. La configuración de Seguridad & Preferencias de privacidad te permiten especificar los orígenes de software instalados en tu Mac. Para obtener más información, [consulta proteger tu Mac contra malware.](https://support.apple.com/kb/PH25087)
 

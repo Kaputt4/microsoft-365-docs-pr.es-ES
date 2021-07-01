@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la corrección de errores para corregir problemas de datos Advanced eDiscovery que podrían impedir el procesamiento adecuado del contenido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f2067831a85e3b3a506917fac5b93acfa0b174db
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 891e8292fca629669a48684e95f522c08838d3aa
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906988"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226664"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
@@ -32,8 +32,8 @@ Use el siguiente flujo de trabajo para corregir archivos con errores en Advanced
 
 ## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Crear una sesión de corrección de errores para corregir archivos con errores de procesamiento
 
->[!NOTE]
->Si el asistente para corrección de errores se cierra en cualquier momento durante el siguiente procedimiento,  puede volver  a la sesión de corrección de errores desde la pestaña Procesamiento seleccionando Correcciones en el menú desplegable Ver. 
+> [!NOTE]
+> Si el asistente para corrección de errores se cierra en cualquier momento durante el siguiente procedimiento,  puede volver  a la sesión de corrección de errores desde la pestaña Procesamiento seleccionando Correcciones en el menú desplegable Ver. 
 
 1. En la **pestaña** Procesamiento del caso Advanced eDiscovery, seleccione  Errores en el menú desplegable Ver y, a  continuación, seleccione un conjunto de revisión o todo el caso en el menú desplegable Ámbito.  Esta sección muestra todos los errores de caso o error de un conjunto de revisión específico.
 
@@ -51,13 +51,13 @@ Use el siguiente flujo de trabajo para corregir archivos con errores en Advanced
 
     ![Descargar archivos](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Para descargar archivos, especifique la ruta **Destino para la descarga**. Se trata de una ruta de acceso a la carpeta principal del equipo local donde se descargará el archivo.  La ruta de acceso predeterminada, %USERPROFILE%\Downloads\errors, apunta a la carpeta de descargas del usuario que ha iniciado sesión. Puede cambiar esta ruta de acceso si lo desea. Si lo cambia, le recomendamos que use una ruta de acceso de archivo local para obtener el mejor rendimiento. No use una ruta de acceso de red remota. Por ejemplo, puede usar la ruta **de acceso C:\Remediation**. 
+5. Para descargar archivos, especifique la ruta **Destino para la descarga**. Se trata de una ruta de acceso a la carpeta principal del equipo local donde se descargará el archivo.  La ruta de acceso predeterminada, %USERPROFILE%\Downloads\errors, apunta a la carpeta de descargas del usuario que ha iniciado sesión. Puede cambiar esta ruta de acceso si lo desea. Si lo cambia, le recomendamos que use una ruta de acceso de archivo local para obtener el mejor rendimiento. No use una ruta de acceso de red remota. Por ejemplo, puede usar la ruta **de acceso C:\Remediation**.
 
    La ruta de acceso a la carpeta principal se agrega automáticamente al comando AzCopy (como el valor del **parámetro /Dest).**
 
-6. Copie el comando predefinido haciendo clic en **Copiar en el Portapapeles**. Abra un Windows de comandos, pegue el comando AzCopy y, a continuación, presione **Entrar**.  
+6. Copie el comando predefinido haciendo clic en **Copiar en el Portapapeles**. Abra un Windows de comandos, pegue el comando AzCopy y, a continuación, presione **Entrar**.
 
-    ![Prepararse para la corrección de errores](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![Prepararse para la corrección de errores](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > Debe usar AzCopy v8.1 para usar correctamente el comando que se proporciona en la página **Descargar archivos.** También debe usar AzCopy v8.1 para cargar los archivos en el paso 10. Para instalar esta versión de AzCopy, vea Transferir datos con [azcopy v8.1 en Windows](/previous-versions/azure/storage/storage-use-azcopy). Si se produce un error en el comando AzCopy proporcionado, consulte [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -97,7 +97,7 @@ Use el siguiente flujo de trabajo para corregir archivos con errores en Advanced
 
 11. Después de ejecutar el comando AzCopy, haga clic **en Siguiente: Procesar archivos**.
 
-    Cuando se complete el procesamiento, puede ir a revisar el conjunto y ver los archivos corregidos. 
+    Cuando se complete el procesamiento, puede ir a revisar el conjunto y ver los archivos corregidos.
 
 ## <a name="remediating-errors-in-container-files"></a>Corrección de errores en archivos contenedor
 
@@ -109,7 +109,7 @@ A veces no es posible corregir un archivo en formato nativo que Advanced eDiscov
 
 ## <a name="what-happens-when-files-are-remediated"></a>Qué sucede cuando se corrigen los archivos
 
-Cuando se cargan archivos corregidos, los metadatos originales se conservan excepto para los campos siguientes: 
+Cuando se cargan archivos corregidos, los metadatos originales se conservan excepto para los campos siguientes:
 
 - ExtractedTextSize
 - HasText

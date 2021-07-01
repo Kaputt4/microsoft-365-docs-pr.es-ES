@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: El registro de auditoría de buzones está activado de forma predeterminada en Microsoft 365 (también denominada auditoría de buzones predeterminada o auditoría de buzones de correo activada de forma predeterminada). Esto significa que determinadas acciones realizadas por propietarios de buzones, delegados y administradores se registran automáticamente en un registro de auditoría de buzones de correo, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: 0fd15ffd26ad28b9e8b4f2b627ff26206983f21e
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 56207a21d9a13edb04a07234764257d3c27f2d0f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108096"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226784"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -64,7 +64,7 @@ En la tabla siguiente se muestran los tipos de buzones que actualmente son compa
 
 ****
 
-|Tipo de buzón|Compatible|
+|Tipo de buzón|Compatible.|
 |---|:---:|
 |Buzones de usuario|![Marca de verificación](../media/checkmark.png)|
 |Buzones compartidos|![Marca de verificación](../media/checkmark.png)|
@@ -92,7 +92,7 @@ Los tipos de inicio de sesión clasifican el usuario que hizo las acciones audit
 
 En la tabla siguiente se describen las acciones de buzón que están disponibles en el registro de auditoría de buzones de correo para buzones de usuario y buzones compartidos.
 
-- Una marca de verificación ( ![Marca de verificación](../media/checkmark.png)) indica que la acción del buzón se puede registrar para el tipo de inicio de sesión (no todas las acciones están disponibles para todos los tipos de inicio de sesión).
+- Una marca de verificación (![Marca de verificación](../media/checkmark.png)) indica que la acción del buzón se puede registrar para el tipo de inicio de sesión (no todas las acciones están disponibles para todos los tipos de inicio de sesión).
 - Un asterisco ( ) después de la marca de verificación indica que la acción del buzón se registra de forma <sup>\*</sup> predeterminada para el tipo de inicio de sesión.
 - Recuerde que un administrador con permiso de acceso total a un buzón se considera delegado.
 

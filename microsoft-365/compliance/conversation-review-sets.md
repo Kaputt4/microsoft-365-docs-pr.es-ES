@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre la característica de reconstrucción de conversación en Advanced eDiscovery (denominado subproceso de conversación) para reconstruir, revisar y exportar conversaciones de chat en Microsoft Teams y Yammer grupos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 12887ba8dd74c3dab445dcc76e155e274a371539
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 9848280a7d6dbcbd6128fff06f150c8458f09701
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838309"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227192"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>Subprocesos de conversación en Advanced eDiscovery
 
@@ -44,7 +44,7 @@ Con la reconstrucción de conversación, puede usar las funciones integradas par
 
 Estas son algunas definiciones que le ayudarán a empezar a usar la reconstrucción de conversación.
 
-- **Mensajes:** Representa la unidad más pequeña de una conversación. Los mensajes pueden variar en tamaño, estructura y metadatos. 
+- **Mensajes:** Representa la unidad más pequeña de una conversación. Los mensajes pueden variar en tamaño, estructura y metadatos.
 
 - **Conversación:** Representa una agrupación de uno o varios mensajes. En diferentes aplicaciones, las conversaciones pueden representarse de diferentes maneras. En algunas aplicaciones, hay una acción explícita que resulta de responder a un mensaje existente. Las conversaciones se forman explícitamente como resultado de esta acción del usuario. Por ejemplo, esta es una captura de pantalla de una conversación de canal en Microsoft Teams.
 
@@ -63,15 +63,15 @@ Después de revisar y finalizar la consulta de búsqueda en una colección, pued
 Al agregar elementos de conversaciones a un conjunto de revisión, puede usar la opción conversaciones en subprocesos para recopilar mensajes contextuales de conversaciones que contienen elementos que coinciden con los criterios de búsqueda de la colección. Después de seleccionar la opción conversaciones de subprocesos, pueden suceder lo siguiente:
 
   ![Recuperación de conversaciones](../media/messagesandconversations.png)
-  
+
 1. Con una consulta de palabra clave y intervalo de fechas, la búsqueda devolvió un éxito en *el mensaje 3*. Este mensaje formaba parte de una conversación más grande, ilustrada por *CRC1*.
-  
+
 2. Al agregar los datos a un conjunto de revisión y habilitar las opciones de recuperación de conversaciones, Advanced eDiscovery volverá y recopilará otros elementos en *CRC1*.
-  
+
 3. Después de agregar los elementos al conjunto de revisión, puede revisar todos los mensajes individuales de *CRC1*.
 
 Para habilitar la opción conversaciones enhebradas, vea [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set).
-  
+
 ## <a name="step-3-review-and-export-threaded-conversations"></a>Paso 3: Revisar y exportar conversaciones enhebradas
 
 Después de procesar y agregar el contenido al conjunto de revisión, puede empezar a revisar los datos del conjunto de revisión. Las funcionalidades de revisión son diferentes en función de si el contenido se agregó a un conjunto de revisión estándar o a un conjunto de revisión de conversación.
@@ -84,7 +84,7 @@ En un conjunto de revisión estándar, los mensajes se procesan y se muestran co
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Revisión de conversaciones en un conjunto de revisión de conversación
 
-En un conjunto de revisión de conversación, los mensajes individuales se enhebran y se presentan como conversaciones. Esto le permite revisar y exportar conversaciones contextuales. 
+En un conjunto de revisión de conversación, los mensajes individuales se enhebran y se presentan como conversaciones. Esto le permite revisar y exportar conversaciones contextuales.
 
   ![Conjunto de revisión de conversación](../media/ConversationRSOptions.PNG)
 
@@ -96,10 +96,10 @@ En un conjunto de revisión de conversación, puede usar las siguientes opciones
 
 - **Agrupar por conversación:** Agrupa mensajes dentro de la misma conversación para ayudar a los usuarios a simplificar y acelerar su proceso de revisión.
 
-- **Vista de resumen:** Muestra la conversación enhebrada. En esta vista, puede ver toda la conversación y también tener acceso a los metadatos de cada mensaje individual.  
-  
+- **Vista de resumen:** Muestra la conversación enhebrada. En esta vista, puede ver toda la conversación y también tener acceso a los metadatos de cada mensaje individual.
+
    - Ver metadatos de mensajes individuales
-   
+
    - Descargar mensajes individuales
 
 - **Vista texto:** Proporciona el texto extraído para toda la conversación.
@@ -116,25 +116,19 @@ En un conjunto de revisión de conversación, puede establecer las siguientes op
 
 ![Exportar opciones para conversaciones](../media/export.png)
 
-a. Opciones de metadatos
+1. Opciones de metadatos:
+   - **Cargar archivo:** Los metadatos se incluyen para cada mensaje individual, correo electrónico y documento. Hay una fila para cada mensaje de una conversación.
+   - **Etiquetas:** Las etiquetas del proceso de revisión se incluyen en el archivo de metadatos. Los mensajes de una conversación comparten las mismas etiquetas.
 
-   - **Cargar archivo:** Los metadatos se incluyen para cada mensaje individual, correo electrónico y documento. Hay una fila para cada mensaje de una conversación. 
-
-   - **Etiquetas:** Las etiquetas del proceso de revisión se incluyen en el archivo de metadatos. Los mensajes de una conversación comparten las mismas etiquetas. 
-
-b. Opciones de conversación
-  
-   - **Archivos de conversación:** Al exportar archivos de conversación, la vista anotada se convierte en un archivo PDF y se descarga en la carpeta de exportación. Los mensajes de un archivo de conversación apuntan a la versión PDF del mismo archivo de conversación.  
-  
+2. Opciones de conversación:
+   - **Archivos de conversación:** Al exportar archivos de conversación, la vista anotada se convierte en un archivo PDF y se descarga en la carpeta de exportación. Los mensajes de un archivo de conversación apuntan a la versión PDF del mismo archivo de conversación.
    - **Mensajes de chat individuales:** Al exportar mensajes individuales, cada mensaje único de la conversación se exporta como un elemento independiente. El archivo se exporta en el mismo formato que se guardó en el buzón. Para una conversación específica, recibe varios archivos .msg.
 
-     >[!NOTE]
+     > [!NOTE]
      > Si aplicó anotaciones al archivo de conversación, estas anotaciones no se transferirán a los mensajes individuales.
 
-c. Otras opciones
-
+3. Otras opciones:
    - **Generar archivos de texto para todo el contenido exportado:** Genera un archivo de texto para cada conversación exportada desde el conjunto de revisión.
-
    - **Reemplace el contenido exportado por archivos PDF redactados:** Si los archivos de conversación redactadas se generan durante el proceso de revisión, estos archivos estarán disponibles durante la exportación. Puede decidir si desea exportar solo los archivos nativos (no seleccionando esta opción) o reemplazar los archivos nativos por las versiones redactadas de los archivos nativos (seleccionando esta opción), que se exportan como archivos PDF.
 
 ## <a name="more-information"></a>Más información
@@ -142,7 +136,5 @@ c. Otras opciones
 Para obtener más información sobre cómo revisar los datos de casos Advanced eDiscovery, vea los siguientes artículos:
 
 - [Ver datos de casos](view-documents-in-review-set.md)
-
 - [Analizar datos de casos](analyzing-data-in-review-set.md)
-
 - [Exportar datos de casos](exporting-data-ediscover20.md)

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9fe1665eda882793a62315299a3cbf6667ec7988
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 0ee3fdf19552ee80737f6758e655d297228c469e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445658"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226556"
 ---
 # <a name="insider-risk-management-alerts"></a>Alertas de administración de riesgos de Insider
 
@@ -32,14 +32,14 @@ El panel de alertas de riesgo **interno** le permite ver y actuar en las alertas
 - **Total de alertas que necesitan revisión:** se muestra el número total de alertas que necesitan revisión y evaluación, incluido un desglose por gravedad de alerta.
 - Alertas abiertas en los últimos **30** días: el número total de alertas creadas por la directiva coincide en los últimos 30 días, ordenadas por niveles de gravedad de alerta altos, medianos y bajos.
 - **Tiempo promedio para resolver alertas:** un resumen de estadísticas de alertas útiles:
-    - Tiempo medio para resolver alertas de gravedad alta, expresado en horas, días o meses.
-    - Tiempo medio para resolver alertas de gravedad media, expresado en horas, días o meses.
-    - Tiempo medio para resolver alertas de gravedad baja, expresado en horas, días o meses.
+  - Tiempo medio para resolver alertas de gravedad alta, expresado en horas, días o meses.
+  - Tiempo medio para resolver alertas de gravedad media, expresado en horas, días o meses.
+  - Tiempo medio para resolver alertas de gravedad baja, expresado en horas, días o meses.
 
 ![Panel de alertas de administración de riesgos de Insider](../media/insider-risk-alerts-dashboard.png)
 
->[!NOTE]
->La administración de riesgos internos usa la limitación de alertas integrada para ayudar a proteger y optimizar su investigación de riesgos y experiencia de revisión. Esta limitación protege contra problemas que pueden causar una sobrecarga de alertas de directiva, como conectores de datos mal configurados o directivas DLP. Como resultado, es posible que haya un retraso al mostrar nuevas alertas para un usuario.
+> [!NOTE]
+> La administración de riesgos internos usa la limitación de alertas integrada para ayudar a proteger y optimizar su investigación de riesgos y experiencia de revisión. Esta limitación protege contra problemas que pueden causar una sobrecarga de alertas de directiva, como conectores de datos mal configurados o directivas DLP. Como resultado, es posible que haya un retraso al mostrar nuevas alertas para un usuario.
 
 ## <a name="alert-status-and-severity"></a>Estado de alerta y gravedad
 
@@ -75,7 +75,7 @@ Para buscar una palabra específica en el nombre de la alerta, seleccione el con
 
 Para realizar una evaluación de una alerta de riesgo insider, siga estos pasos:
 
-1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione **la** pestaña Alertas.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas,** seleccione la alerta que desea triage.
 3. En el **panel de detalles Alertas,** puede revisar las siguientes pestañas y realizar una evaluación de la alerta:
     - **Resumen:** esta pestaña contiene información general sobre la alerta y le permite confirmar la alerta y crear un nuevo caso o le permite descartar la alerta. Incluye el estado actual de la alerta y el nivel de gravedad del riesgo de alerta, enumerados como *High*, *Medium* o *Low*. El nivel de gravedad puede aumentar o disminuir con el tiempo si la alerta no está triaged.
@@ -91,8 +91,8 @@ Para realizar una evaluación de una alerta de riesgo insider, siga estos pasos:
 
 ## <a name="activity-explorer-preview"></a>Explorador de actividades (versión preliminar)
 
->[!NOTE]
->El explorador de actividades está disponible en el área de administración de alertas para usuarios con eventos desencadenados después de que esta característica esté disponible en la organización.
+> [!NOTE]
+> El explorador de actividades está disponible en el área de administración de alertas para usuarios con eventos desencadenados después de que esta característica esté disponible en la organización.
 
 El explorador de actividades proporciona a los investigadores y analistas de riesgos una herramienta de análisis completa que proporciona información detallada sobre las alertas. Con el explorador de actividades, los revisores pueden revisar rápidamente una escala de tiempo de actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas con alertas. Para filtrar alertas en el Explorador de actividades, seleccione el control Filtro. Puede filtrar las alertas por uno o varios atributos enumerados en el panel de detalles de la alerta. El explorador de actividades también admite columnas personalizables para ayudar a los investigadores y analistas a centrar el panel en la información más importante para ellos.
 
@@ -100,7 +100,7 @@ El explorador de actividades proporciona a los investigadores y analistas de rie
 
 Para usar el **explorador de actividades,** siga estos pasos:
 
-1. En el centro Microsoft 365 cumplimiento, vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Alertas.
+1. En el Centro de cumplimiento de Microsoft 365, vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas,** seleccione la alerta que desea triage.
 3. En el **panel de detalles Alertas,** **seleccione Abrir vista expandida**.
 4. En la página de la alerta seleccionada, seleccione la **pestaña Explorador de** actividades.
@@ -113,7 +113,7 @@ Al revisar las actividades en el explorador de actividades, los investigadores y
 
 A medida que se revisa y se revisa la alerta, puede crear un nuevo caso para investigar aún más la actividad de riesgo. Para crear un caso para una alerta, siga estos pasos:
 
-1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione **la** pestaña Alertas.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas,** seleccione la alerta para la que desea confirmar y crear un nuevo caso.
 3. En el **panel Detalles de alertas,** seleccione **Acciones**  >  **Confirmar alertas & crear caso**.
 4. En el **cuadro de diálogo** Confirmar alerta y crear caso de riesgo interno, escriba un nombre para el caso, seleccione usuarios para agregar como colaboradores y agregue comentarios según corresponda. Los comentarios se agregan automáticamente al caso como nota de caso.

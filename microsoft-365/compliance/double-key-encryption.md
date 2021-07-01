@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: b9696f26dd8f68ba291eab50e11a4cb6dd55ab7a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408181"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226916"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de clave doble para Microsoft 365
 
@@ -45,7 +45,7 @@ El cifrado de clave doble está pensado para los datos más confidenciales que e
 
 Las aplicaciones o servicios externos que no estén integrados con DKE a través del SDK de MIP no podrán realizar acciones en los datos cifrados.
 
-Microsoft Information Protection SDK 1.7+ admite el cifrado de doble clave; las aplicaciones que se integran con nuestro SDK podrán razonar estos datos con suficientes permisos e integraciones en su lugar.
+El Microsoft Information Protection SDK 1.7+ admite el cifrado de clave doble; las aplicaciones que se integran con nuestro SDK podrán razonar estos datos con suficientes permisos e integraciones en su lugar.
 
 Se recomienda que las organizaciones usen las capacidades de Protección de información de Microsoft (clasificación y etiquetado) para proteger la mayoría de sus datos confidenciales y solo usan DKE para sus datos de misión crítica. El cifrado de doble clave es relevante para los datos confidenciales en sectores altamente regulados como los servicios financieros y la atención sanitaria.
 
@@ -79,7 +79,7 @@ Seguirá estos pasos generales para configurar DKE. Una vez completados estos pa
 
 1. Implemente el servicio DKE tal como se describe en este artículo.
 
-2. Cree una etiqueta con cifrado de clave doble. Vaya a Protección de la información en el [centro Microsoft 365 de cumplimiento](https://compliance.microsoft.com) y cree una nueva etiqueta con cifrado de clave doble. Consulte [Restringir el acceso al contenido mediante etiquetas de confidencialidad para aplicar cifrado.](./encryption-sensitivity-labels.md)
+2. Cree una etiqueta con cifrado de clave doble. Vaya a Protección de la información en [la Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) y cree una nueva etiqueta con cifrado de clave doble. Consulte [Restringir el acceso al contenido mediante etiquetas de confidencialidad para aplicar cifrado.](./encryption-sensitivity-labels.md)
 
 3. Use etiquetas de cifrado de clave doble. Proteja los datos seleccionando la etiqueta Double Key Encrypted de la cinta de opciones De confidencialidad en Microsoft Office.
 
@@ -183,7 +183,7 @@ Elija si desea usar la autorización de correo electrónico o de roles. DKE solo
 
 - **Autorización de roles**. Permite que su organización autorice el acceso a claves basadas en grupos de Active Directory y requiere que el servicio web pueda consultar LDAP.
 
-**Para establecer la configuración de acceso de clave para DKE mediante autorización de correo electrónico**
+##### <a name="to-set-key-access-settings-for-dke-using-email-authorization"></a>Para establecer la configuración de acceso de clave para DKE mediante autorización de correo electrónico
 
 1. Abra el **appsettings.jsen el archivo** y busque la `AuthorizedEmailAddress` configuración.
 
@@ -205,7 +205,7 @@ Esta imagen muestra el **appsettings.jsen el** archivo con el formato correcto p
 
    ![El appsettings.jsarchivo que muestra el método de autorización de correo electrónico](../media/dke-email-accesssetting.png)
 
-**Para establecer la configuración de acceso de clave para DKE mediante la autorización de roles**
+##### <a name="to-set-key-access-settings-for-dke-using-role-authorization"></a>Para establecer la configuración de acceso de clave para DKE mediante la autorización de roles
 
 1. Abra el **appsettings.jsen el archivo** y busque la `AuthorizedRoles` configuración.
 
@@ -231,7 +231,7 @@ Esta imagen muestra el **appsettings.jsen el** archivo con el formato correcto p
 
 La configuración del inquilino y la clave de DKE se encuentran **en elappsettings.jsen el** archivo.
 
-**Para configurar la configuración de inquilino y clave para DKE**
+##### <a name="to-configure-tenant-and-key-settings-for-dke"></a>Para configurar la configuración de inquilino y clave para DKE
 
 1. Abra el **appsettings.jsarchivo** on.
 
@@ -242,6 +242,7 @@ La configuración del inquilino y la clave de DKE se encuentran **en elappsettin
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+
 > [!NOTE]
 > Si desea habilitar el acceso B2B externo al almacén de claves, también tendrá que incluir estos inquilinos externos como parte de la lista de emisores válidos.
 
@@ -263,7 +264,7 @@ Una vez que haya definido la configuración de la aplicación, estará listo par
 
 Para generar claves:
 
-1. En el Windows inicio, ejecute el símbolo del sistema openSSL.
+1. En el Windows menú Inicio, ejecute el símbolo del sistema openSSL.
 
 2. Cambie a la carpeta donde desea guardar las claves de prueba. Los archivos que cree completando los pasos de esta tarea se almacenan en la misma carpeta.
 
@@ -370,7 +371,7 @@ Es posible que prefiera otros métodos para implementar las claves. Seleccione e
 
 Para las implementaciones piloto, puede implementar en Azure y empezar inmediatamente.
 
-**Para crear una instancia de Azure Web App para hospedar la implementación de DKE**
+#### <a name="to-create-an-azure-web-app-instance-to-host-your-dke-deployment"></a>Para crear una instancia de Azure Web App para hospedar la implementación de DKE
 
 Para publicar el almacén de claves, creará una instancia de Azure App Service para hospedar la implementación de DKE. A continuación, publicará las claves generadas en Azure.
 
@@ -530,18 +531,18 @@ Para registrar el servicio DKE:
 
     4. Seleccione **Guardar** en la parte superior para guardar los cambios.
 
-    5. Repita estos pasos, pero esta vez defina el identificador de cliente como `c00e9d32-3c8d-4a7d-832b-029040e7db99` . Este valor es el identificador de cliente de etiquetado unificado de Azure Information Protection. 
+    5. Repita estos pasos, pero esta vez defina el identificador de cliente como `c00e9d32-3c8d-4a7d-832b-029040e7db99` . Este valor es el identificador de cliente de etiquetado unificado de Azure Information Protection.
 
 El servicio DKE ya está registrado. Continúe creando [etiquetas con DKE](#create-sensitivity-labels-using-dke).
 
 ## <a name="create-sensitivity-labels-using-dke"></a>Crear etiquetas de confidencialidad con DKE
 
-En el Microsoft 365 cumplimiento normativo, cree una nueva etiqueta de confidencialidad y aplique el cifrado como lo haría de otra manera. Seleccione **Usar cifrado de clave doble** e introduzca la dirección URL del extremo de la clave.
+En el Centro de cumplimiento de Microsoft 365, crea una nueva etiqueta de confidencialidad y aplica el cifrado como lo harías en caso contrario. Seleccione **Usar cifrado de clave doble** e introduzca la dirección URL del extremo de la clave.
 
 Por ejemplo:
 
 > [!div class="mx-imgBorder"]
-> ![Seleccione Usar cifrado de clave doble en el centro de Microsoft 365 de cumplimiento](../media/dke-use-dke.png)
+> ![Seleccione Usar cifrado de clave doble en el Centro de cumplimiento de Microsoft 365](../media/dke-use-dke.png)
 
 Las etiquetas DKE que agregue empezarán a aparecer para los usuarios en las versiones más recientes de Aplicaciones Microsoft 365 para empresas.
 

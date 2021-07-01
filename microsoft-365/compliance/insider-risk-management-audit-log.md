@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bda9633ab37fd21fd66b3a8a53d4dd522e48ced1
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b7eb225f04f531c3b6de71bf72df0f8062a8c93d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820283"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226508"
 ---
 # <a name="insider-risk-management-audit-log"></a>Registro de auditoría de administración de riesgos de Insider
 
@@ -38,8 +38,8 @@ Entre las áreas incluidas en la supervisión de actividades se incluyen:
 
 Para ver y exportar datos desde el registro de auditoría, los usuarios deben estar asignados a los grupos de roles *Insider Risk Management* o *Insider Risk Management Auditors.* Para obtener más información acerca de los grupos de roles de administración de riesgos de insider, vea Introducción a la administración de riesgos [insider Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management).
 
->[!NOTE]
->El registro de auditoría de administración de riesgos interno no está asociado con el registro de auditoría de Microsoft 365, son sistemas de auditoría independientes y capturan información sobre actividades independientes. Deshabilitar la Microsoft 365 no afecta a la auditoría de actividad dentro de la administración de riesgos de insider.
+> [!NOTE]
+> El registro de auditoría de administración de riesgos interno no está asociado con el registro de auditoría de Microsoft 365, son sistemas de auditoría independientes y capturan información sobre actividades independientes. Deshabilitar la Microsoft 365 no afecta a la auditoría de actividad dentro de la administración de riesgos de insider.
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Ver actividad en el registro de auditoría de riesgos de insider
 

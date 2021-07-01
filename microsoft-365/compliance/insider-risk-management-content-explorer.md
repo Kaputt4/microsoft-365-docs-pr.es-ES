@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 44a17471f1e2ba92d0099f62b95dec8d0e56a224
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 3ff3c652d5446167ac3c2bf78a2405c21929ea11
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957497"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226472"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorador de contenido de administración de riesgos de Insider
 
@@ -29,8 +29,8 @@ En algunos casos, es posible que los datos asociados a un caso no estén disponi
 
 Si el contenido incluye permisos de Information Rights Management, estos permisos se mantienen para el contenido copiado y los usuarios asignados al rol Investigadores de administración de riesgos de *Insider* necesitarán estos permisos y derechos si necesitan abrir y ver los archivos. A cada archivo y mensaje se le asigna automáticamente un identificador de archivo único en el caso de administración de riesgos de insider para fines de administración. Los documentos asociados con actividades de indicador de dispositivo no se incluyen en el Explorador de contenido.
 
->[!Note]
->El explorador de contenido incluye actividades relacionadas con Microsoft Office archivos. Las actividades de nivel de sitio, como cuando se elimina un sitio SharePoint o si se cambian los permisos del sitio, no se incluyen en el explorador de contenido.
+> [!NOTE]
+> El explorador de contenido incluye actividades relacionadas con Microsoft Office archivos. Las actividades de nivel de sitio, como cuando se elimina un sitio SharePoint o si se cambian los permisos del sitio, no se incluyen en el explorador de contenido.
 
 ## <a name="column-options"></a>Opciones de columna
 
@@ -70,11 +70,11 @@ Para agregar o quitar encabezados de columna para la cola de contenido, use el c
 | **Tipos de información confidencial** | Los tipos de información confidencial identificados en el contenido. |
 | **Etiquetas de confidencialidad** | Las etiquetas de confidencialidad aplicadas al contenido. |
 | **Sent** | La fecha en la que un remitente envió un mensaje de correo electrónico. Este campo es la misma propiedad que la propiedad De correo electrónico enviado. |
-| **Tamaño** | Para los correos electrónicos y documentos, el tamaño del elemento (en bytes). |
-| **Asunto** | El texto en la línea de asunto de un mensaje de correo electrónico. |
+| **Size** | Para los correos electrónicos y documentos, el tamaño del elemento (en bytes). |
+| **Subject** | El texto en la línea de asunto de un mensaje de correo electrónico. |
 | **Asunto/Título** | Para correo electrónico, el texto en la línea de asunto de un mensaje. Para los documentos, el título del documento. Como se explicó anteriormente, la propiedad Title es metadatos especificados en Microsoft Office documentos. Puede escribir el nombre de más de un asunto o título, separados por comas. Dos o más valores están conectados de forma lógica por el operador de OR. |
 | **Lista de temas** | Lista de temas calculada para análisis. |
-| **Título** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
+| **Title** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
 | **To** | El destinatario de un mensaje de correo electrónico en el campo Para. |
 
 ## <a name="filtering"></a>Filtrado

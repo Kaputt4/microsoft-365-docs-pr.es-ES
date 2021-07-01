@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Esta página de aterrizaje proporciona vínculos e información de planeación para la seguridad y el cumplimiento en Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198063"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226256"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planear el cumplimiento de &amp; la seguridad
 
@@ -32,7 +32,7 @@ La administración de la seguridad y el cumplimiento es una asociación. Usted e
 
 Orientese a las capacidades de protección de la información en el póster information Protection for Office 365. 
   
-[Implementar la protección de la información para las normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
+[Implementar la protección de la información para las normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md)
   
 ## <a name="step-2-check-your-secure-score"></a>Paso 2: Comprobar la puntuación segura
 

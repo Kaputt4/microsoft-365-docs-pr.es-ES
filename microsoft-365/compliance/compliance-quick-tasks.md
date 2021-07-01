@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Obtenga información sobre las tareas que le ayudarán a empezar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 3f93eb31800d158a33b1f3c0acdd48d650b2153e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 61a057c3666faae51a012dd9db2d4c63ded0f77a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113396"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227264"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -30,7 +30,7 @@ Después de completar estas tareas básicas de cumplimiento, considere la posibi
 
 ## <a name="task-1-configure-compliance-permissions"></a>Tarea 1: Configurar permisos de cumplimiento
 
-Es importante administrar quién en su organización tiene acceso al centro de cumplimiento de Microsoft 365 para ver contenido y realizar tareas de administración. Microsoft 365 proporciona roles administrativos específicos para el cumplimiento y para el uso de las herramientas incluidas en el centro de Microsoft 365 cumplimiento.
+Es importante administrar quién en su organización tiene acceso a la Centro de cumplimiento de Microsoft 365 para ver contenido y realizar tareas de administración. Microsoft 365 proporciona roles administrativos específicos para el cumplimiento y para el uso de las herramientas incluidas en el Centro de cumplimiento de Microsoft 365.
 
 Empiece asignando permisos de cumplimiento a las personas de su organización para que puedan realizar estas tareas y evitar que personas no autorizadas tengan acceso a áreas fuera de sus responsabilidades. Querrá asegurarse de que ha asignado las personas adecuadas  al administrador  de datos de cumplimiento y a los roles de administrador de cumplimiento antes de empezar a configurar e implementar soluciones de cumplimiento incluidas con Microsoft 365. También tendrá que asignar usuarios a la función Azure Active Directory lector global para ver los datos en el Administrador de cumplimiento.
 
@@ -44,10 +44,10 @@ Es difícil saber a dónde ir si no sabe dónde está. Satisfacer sus necesidade
 
 Para obtener instrucciones paso a paso para empezar a trabajar con el Administrador de cumplimiento, vea [Introducción al Administrador de cumplimiento.](compliance-manager-setup.md)
 
->[!IMPORTANT]
->La seguridad y el cumplimiento están estrechamente integrados para la mayoría de las organizaciones. Es importante que su organización aborde la seguridad básica, la protección contra amenazas y las áreas de administración de identidad y acceso para ayudar a proporcionar un enfoque de defensa en profundidad tanto para la seguridad como para el cumplimiento.
+> [!IMPORTANT]
+> La seguridad y el cumplimiento están estrechamente integrados para la mayoría de las organizaciones. Es importante que su organización aborde la seguridad básica, la protección contra amenazas y las áreas de administración de identidad y acceso para ayudar a proporcionar un enfoque de defensa en profundidad tanto para la seguridad como para el cumplimiento.
 >
->Compruebe su [Microsoft 365 puntuación segura en](../security/defender/microsoft-secure-score.md) el centro Microsoft 365 seguridad y completar las tareas descritas en los siguientes artículos:
+> Compruebe su [Microsoft 365 puntuación segura en](../security/defender/microsoft-secure-score.md) el centro Microsoft 365 seguridad y completar las tareas descritas en los siguientes artículos:
 >
 > - [Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y más allá](../security/office-365-security/security-roadmap.md)
 > - [Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa](../security/top-security-tasks-for-remote-work.md)
@@ -56,7 +56,7 @@ Para obtener instrucciones paso a paso para empezar a trabajar con el Administra
 
 Ahora que ha determinado el estado actual de su organización y quién puede administrar las funciones de cumplimiento, el siguiente paso es asegurarse de que tiene los datos para llevar a cabo investigaciones de cumplimiento y generar informes para las actividades de red y de usuario en su organización. Habilitar la auditoría también es un requisito previo importante para las soluciones de cumplimiento que se tratan más adelante en este artículo.
 
-Los conocimientos proporcionados por el registro de auditoría son una herramienta valiosa para ayudar a cumplir los requisitos de cumplimiento con soluciones que pueden ayudarle a administrar y supervisar las áreas de cumplimiento que necesitan mejoras. El registro de auditoría debe habilitarse antes de que se registren las actividades y antes de poder buscar en el registro de auditoría. Cuando se habilita, la actividad de usuario y administrador de su organización se registra en el registro de auditoría y se retiene durante 90 días y hasta un año, según la licencia asignada a los usuarios.
+Ideas proporcionados por el registro de auditoría son una herramienta valiosa para ayudar a cumplir los requisitos de cumplimiento con soluciones que pueden ayudarle a administrar y supervisar las áreas de cumplimiento que necesitan mejoras. El registro de auditoría debe habilitarse antes de que se registren las actividades y antes de poder buscar en el registro de auditoría. Cuando se habilita, la actividad de usuario y administrador de su organización se registra en el registro de auditoría y se retiene durante 90 días y hasta un año, según la licencia asignada a los usuarios.
 
 Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md)
 
@@ -84,7 +84,7 @@ Cuando el contenido está sujeto a una directiva de retención, las personas pue
 
 Puede establecer rápidamente una directiva de retención para varias ubicaciones del entorno de Microsoft 365, como correo Exchange, sitios de SharePoint, cuentas de OneDrive y grupos Microsoft 365. No hay límites en el número de buzones o sitios que esta directiva puede incluir automáticamente. Pero si necesita ser más selectivo, puede hacerlo configurando una directiva de retención para ubicaciones específicas e incluir o excluir sitios o usuarios.
 
-Para obtener instrucciones paso a paso para configurar una directiva de retención, vea [Create and configure retention policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+Para obtener instrucciones paso a paso para configurar una directiva de retención, vea [Create and configure retention policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Tarea 7: Configurar la información confidencial y las directivas de lenguaje ofensivo
 
@@ -124,7 +124,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener instrucciones paso a paso sobre cómo usar el explorador de actividades, vea [Introducción al explorador de actividades](data-classification-activity-explorer.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento de su organización, tenga en cuenta las siguientes soluciones de cumplimiento en Microsoft 365 para ayudarle a proteger la información confidencial y detectar y actuar en riesgos adicionales de insider.
 
@@ -146,7 +146,7 @@ Defina tipos de información confidencial en función del patrón contenido en l
 
 Para obtener instrucciones paso a paso para definir tipos de información confidencial personalizados, vea [Create a custom sensitive information type in the Security & Compliance Center](./create-a-custom-sensitive-information-type.md).
 
-### <a name="prevent-data-loss"></a>Prevención de la pérdida de datos
+### <a name="prevent-data-loss"></a>Prevenir la pérdida de datos
 
 [Las directivas de prevención](dlp-learn-about-dlp.md) de pérdida de datos (DLP) le permiten identificar, supervisar y proteger automáticamente la información confidencial en toda Microsoft 365 organización. Use directivas DLP para identificar elementos confidenciales en servicios Microsoft, evitar el uso compartido accidental de elementos confidenciales y ayudar a los usuarios a aprender a cumplir sin interrumpir su flujo de trabajo.
 

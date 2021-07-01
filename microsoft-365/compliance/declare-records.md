@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: ba0587619609adba2d7746a45a3b24008a4a00be
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903905"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227000"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
@@ -36,7 +36,7 @@ Podrá entonces, o bien publicar dichas etiquetas en una directiva de etiquetas 
 
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>Cómo mostrar la opción para marcar contenido como un registro normativo
 
->[!NOTE] 
+> [!NOTE]
 > El procedimiento siguiente es una acción auditable, con el registro **Opción de registro normativo habilitado para las etiquetas de retención** en la sección [Directivas de retención y actividades de etiqueta de retención](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) del registro de auditoría.
 
 De forma predeterminada, la opción de etiqueta de retención para marcar contenido como un registro normativo no se muestra en el asistente de etiquetas de retención. Para mostrar esta opción, primero tiene que ejecutar un comando de PowerShell:
@@ -44,13 +44,14 @@ De forma predeterminada, la opción de etiqueta de retención para marcar conten
 1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365.](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
 
 2. Ejecute el siguiente cmdlet:
-    
+
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
     ````
+
     No se pide confirmación y la configuración surte efecto inmediatamente.
 
-Si cambia de opinión sobre cómo ver esta opción en el asistente de etiquetas de retención, puede ocultarla de nuevo ejecutando el mismo cmdlet con el valor **false**: `Set-RegulatoryComplianceUI -Enabled $false` 
+Si cambia de opinión sobre cómo ver esta opción en el asistente de etiquetas de retención, puede ocultarla de nuevo ejecutando el mismo cmdlet con el valor **false**: `Set-RegulatoryComplianceUI -Enabled $false`
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurar etiquetas de retención para declarar registros
 
@@ -60,7 +61,7 @@ Por ejemplo:
 
 ![Configurar una etiqueta de retención para marcar contenido como un registro o como un registro normativo](../media/recordversioning6.png)
 
-Ahora puede aplicar esta etiqueta de retención a documentos de SharePoint o OneDrive y a correos electrónicos de Exchange, según sea necesario. 
+Ahora puede aplicar esta etiqueta de retención a documentos de SharePoint o OneDrive y a correos electrónicos de Exchange, según sea necesario.
 
 Instrucciones completas:
 
@@ -73,7 +74,7 @@ Instrucciones completas:
 
 Cuando las etiquetas de retención que marcan elementos como un registro o como un registro normativo se ponen a disposición de los usuarios para aplicarlas a aplicaciones:
 
-- Para Exchange, todos los usuarios con acceso de escritura al buzón pueden aplicar las etiquetas. 
+- Para Exchange, todos los usuarios con acceso de escritura al buzón pueden aplicar las etiquetas.
 - Para SharePoint y OneDrive, cualquier usuario del grupo predeterminado de miembros (con nivel de permisos de contribución) puede aplicar las etiquetas.
 
 Ejemplo de un documento marcado como registro con una etiqueta de retención:
@@ -84,7 +85,7 @@ Ejemplo de un documento marcado como registro con una etiqueta de retención:
 
 Las acciones de etiquetado para declarar elementos como registros se registran en el registro de auditoría.
 
-Para elementos de SharePoint: 
+Para elementos de SharePoint:
 - En **Actividades de archivos y páginas**, seleccione **Etiqueta de retención cambiada para un archivo**. Este evento de auditoría es para etiquetas de retención que marcan elementos como registros, registros normativos o que son etiquetas de retención estándar.
 
 Para elementos de Exchange:

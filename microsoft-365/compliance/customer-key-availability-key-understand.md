@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre la clave de disponibilidad usada para recuperar las claves de cliente perdidas.
-ms.openlocfilehash: 4f4dfdff0aa1c7ebe6dd1266c82c6fd290913a3e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: a4db6eab78feebd171dbfd5c8b45252837f229d0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345099"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227084"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Obtener más información sobre la clave de disponibilidad de Clave de cliente
 
@@ -155,8 +155,8 @@ Microsoft 365 activa la clave de disponibilidad solo en circunstancias específi
 
        - En este caso, la clave de disponibilidad se usará solo para acciones del sistema y no para acciones de usuario, la solicitud de usuario falla y el usuario recibe un mensaje de error.
 
->[!IMPORTANT]
->Microsoft 365 código de servicio siempre tiene un token de inicio de sesión válido para razonar sobre los datos del cliente para proporcionar servicios en la nube de adición de valor. Por lo tanto, hasta que la clave de disponibilidad se haya eliminado, se puede usar como reserva para acciones iniciadas por, o internas a, Exchange Online y Skype Empresarial, como la creación de índices de búsqueda o el movimiento de buzones. Esto se aplica tanto a errores transitorios como a solicitudes DENEGADAS de ACCESO a Azure Key Vault.
+> [!IMPORTANT]
+> Microsoft 365 código de servicio siempre tiene un token de inicio de sesión válido para razonar sobre los datos del cliente para proporcionar servicios en la nube de adición de valor. Por lo tanto, hasta que la clave de disponibilidad se haya eliminado, se puede usar como reserva para acciones iniciadas por, o internas a, Exchange Online y Skype Empresarial, como la creación de índices de búsqueda o el movimiento de buzones. Esto se aplica tanto a errores transitorios como a solicitudes DENEGADAS de ACCESO a Azure Key Vault.
 
 ### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Desencadenadores para SharePoint online, OneDrive para la Empresa y Teams archivos
 

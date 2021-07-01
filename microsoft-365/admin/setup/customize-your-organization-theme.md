@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Aprende a cambiar el tema predeterminado de la parte superior de la barra de navegación en Microsoft 365 y personalízalo para que coincida con el logotipo o color de tu empresa.
-ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006918"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227804"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el Microsoft 365 de la organización
 
@@ -41,12 +41,12 @@ Puede agregar o actualizar un tema predeterminado que se aplique a todos los usu
 
 2. En la **pestaña Perfil de** la organización, seleccione Temas **personalizados**.
 
-Todos los temas se pueden personalizar mediante las pestañas siguientes.
+Todos los temas de la organización se pueden personalizar con las pestañas siguientes.
 
 |**Tab**|**What can you do?**|
 |:-----|:-----|
 |[General](#general-modify-a-theme) <br/> |Modifique un nombre de tema y asígnele hasta cinco grupos (si procede).  <br/> |
-|[Logotipos](#logos-specify-your-theme-logos) <br/> |Agrega el logotipo del tema, incluido el Office oscuro y las opciones móviles.  <br/> |
+|[Logotipos](#logos-specify-your-theme-logos) <br/> |Agrega el logotipo de la organización, incluido el logotipo alternativo para el tema oscuro.  <br/> |
 |[Colors](#colors-choose-theme-colors) <br/> |Personalice una combinación de colores especificando los colores de la barra de navegación, el acento, el texto y el icono. <br/> |
 
 ## <a name="general-modify-a-theme"></a>General: Modificar un tema
@@ -64,7 +64,7 @@ El tema predeterminado es el primer tema que se muestra.
 > [!IMPORTANT]
 > El tema predeterminado es único, no se puede cambiar el nombre y se aplica a todos los usuarios de la organización. Para eliminar el tema predeterminado, primero debes eliminar todos los demás temas.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Captura de pantalla: pestaña General que muestra el tema predeterminado para su organización":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Captura de pantalla: pestaña General que muestra el tema predeterminado para su organización":::
 
 ### <a name="create-a-group-theme"></a>Crear un tema de grupo
 
@@ -76,7 +76,7 @@ Puede crear hasta cuatro temas de grupo adicionales.
 
 3. Seleccione **Guardar**.
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Captura de pantalla: pestaña General que muestra el tema predeterminado para un grupo de usuarios de la organización":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Captura de pantalla: pestaña General que muestra el tema predeterminado para un grupo de usuarios de la organización":::
 
 ## <a name="logos-specify-your-theme-logos"></a>Logotipos: especifique los logotipos del tema
 
@@ -84,9 +84,11 @@ En la **página Logotipos,** puede agregar los logotipos y especificar la direcc
 
 - **Logotipo predeterminado:** agregue una ubicación URL que apunta al logotipo. Asegúrese de que la dirección URL usa HTTPS. Agregue una dirección URL de imagen HTTPS que permita el acceso anónimo y no requiera autenticación. Para el tema predeterminado, también tienes una opción para cargar una imagen de logotipo de menos de 10 kb. El logotipo predeterminado puede estar en formato JPG, PNG, GIF o SVG. En el caso de las imágenes SVG, se cambiarán el tamaño para que se ajusten verticalmente a 24 píxeles. Las imágenes JPG, PNG y GIF se escalarán para que se ajusten a 200 x 48 píxeles. La relación de aspecto del logotipo siempre se conservará.
 - **Logotipo alternativo:** agregue una ubicación URL que apunta al logotipo. El logotipo alternativo debe optimizarse para su uso en Office temas oscuros. Los mismos requisitos que el logotipo predeterminado.
-- **Vínculo Al hacer clic:** agregue una ubicación URL que apunta al logotipo. Puede usar el logotipo como un vínculo a cualquier recurso de la compañía, por ejemplo, el sitio web de su empresa.
+- **Vínculo Al hacer clic:** agregue una ubicación URL que apunta al logotipo. Puede usar el logotipo como un vínculo a cualquier recurso de la compañía, por ejemplo, el sitio web de su empresa. Si no seleccionas una ubicación URL para el logotipo, se establecerá de forma predeterminada en la Office principal.
 
 Seleccione **Guardar** para guardar los cambios.
+
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="Captura de pantalla: pestaña Logotipos que muestra las opciones del logotipo":::
 
 Puedes quitar los logotipos en cualquier momento. Solo tiene que volver a la **página Logotipos** y seleccione **Quitar**.
   
@@ -98,11 +100,10 @@ En la **página Colores,** puede establecer los colores predeterminados y elegir
 - **Color de texto e icono:** seleccione un color que se usará para el texto y los iconos de la barra de navegación superior.
 - **Color de** énfeño: elija uno que se muestre bien en un fondo blanco o claro. El color de énfal se usa para colorear algunos vínculos y botones que se muestran en un fondo blanco o claro. Por ejemplo, el color de énfal se usa para colorear elementos en la bandeja de entrada de un usuario y en su página del portal Office.com.
 - **Restablecer color:** seleccione este vínculo para restablecer los colores a los colores predeterminados.
-- **¿Qué logotipo se debe usar?**: Seleccione los logotipos predeterminados o cualquier otro logotipo que haya creado usted mismo.
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores predeterminados del tema para su organización":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores predeterminados del tema para su organización":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mi organización ya tiene un tema para todos los empleados. ¿Cómo cambiará esto?
 
@@ -137,7 +138,7 @@ El tema predeterminado solo se puede eliminar una vez que se eliminen todos los 
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Por qué recibo un mensaje de error cada vez que subo una dirección URL de logotipo.  
 
-Asegúrese de que el logotipo que está usando se especifica como una dirección URL direccionable públicamente. Siga estos pasos para [cargar logotipos en Azure Blob Almacenamiento](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) o el Office 365 Red de entrega de contenido con SharePoint [Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
+Asegúrese de que el logotipo que está usando se especifica como una dirección URL direccionable públicamente. Siga estos pasos para [cargar logotipos en Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) o el Office 365 Content Delivery Network con SharePoint [Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>¿Por qué recibo el mensaje "No cumple la relación de contraste de color mínima de 4,5:1"?
 
