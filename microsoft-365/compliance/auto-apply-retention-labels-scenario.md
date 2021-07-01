@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
-ms.openlocfilehash: 6c58658378fd0def9a56783e7b8b35db3323b135
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 3bc2d6f5baa2f11e7905ccf98e16145fef24d64d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034219"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227608"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 
@@ -58,7 +58,7 @@ En este escenario, usamos el servicio de metadatos administrados y el almacén d
 
 *Tipo de contenido* se puede crear y publicar con el [Concentrador de tipo de contenido](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). También puede crear y publicar un tipo de contenido con herramientas de aprovisionamiento de sitios, como el [Marco de aprovisionamiento PnP](/sharepoint/dev/solution-guidance/pnp-provisioning-framework) o el [Esquema JSON de diseño de sitio](/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
 
-Cada producto tiene un sitio de SharePoint dedicado que contiene una biblioteca de documentos con los tipos de contenido adecuados habilitados. Todos los documentos se almacenan en esta biblioteca de documentos.
+Cada producto tiene un sitio de SharePoint dedicado que contiene una biblioteca de documentos que tiene habilitados los tipos de contenido correctos. Todos los documentos se almacenan en esta biblioteca de documentos.
 
 [ ![Documentación de la biblioteca de documentos para productos](../media/SPRetention3.png) ](../media/SPRetention3.png#lightbox)
 
@@ -121,19 +121,19 @@ La siguiente captura de pantalla muestra la configuración al crear la etiqueta 
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>Creación de un tipo de evento al crear una etiqueta de retención
 
 1. Entre en la página **Definir la configuración de retención** del asistente para crear etiquetas de retención, después en **Iniciar el período de retención adecuado** y seleccione **Crear nuevo tipo de evento**:
-    
+
     ![Crear un nuevo tipo de evento para el cuadro de diálogo etiqueta de especificaciones del producto](../media/SPRetention6.png)
 
 3. En la página **Asignar un nombre al tipo de evento**, escriba **Cese de producción** y una descripción opcional. Luego, seleccione **Siguiente**, **Enviar** y **Hecho**.
 
 4. Regrese a la página **Definir la configuración de retención**, para **Iniciar el período de retención adecuado**, utilice el cuadro desplegable para seleccionar el tipo de evento **Cese de producción** que creó.
-    
-    Este es el aspecto que tiene la configuración de la etiqueta de retención Especificaciones del producto: 
-    
+
+    Este es el aspecto que tiene la configuración de la etiqueta de retención Especificaciones del producto:
+
    ![Configuración para la nueva etiqueta Especificaciones del producto](../media/SPRetention7.png)
 
-6. Seleccione **Crear etiqueta** y, en la siguiente página donde puede ver las opciones para publicarla, Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplicarla automáticamente o guardarla: seleccione **Solo guardar la etiqueta por ahora** y, a continuación, **Hecho**. 
-    
+6. Seleccione **Crear etiqueta** y, en la siguiente página donde puede ver las opciones para publicarla, Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplicarla automáticamente o guardarla: seleccione **Solo guardar la etiqueta por ahora** y, a continuación, **Hecho**.
+
     > [!TIP]
     > Para obtener instrucciones más detalladas, consulte [Crear una etiqueta cuyo período de retención se base en un evento](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
@@ -186,11 +186,11 @@ Observe que la columna **Propiedades rastreadas asignadas** en la captura de pan
 
 Para asignar la propiedad rastreada **ows\_Doc\_x0020\_Type**, siga estos pasos:
 
-1. En el cuadro de filtro **Propiedad administrada**, escriba **_RefinableString00_**  y seleccione la flecha verde.
+1. En el cuadro de filtro **Propiedad administrada**, escriba **_RefinableString00_** y seleccione la flecha verde.
 
-2. En la lista de resultados, seleccione el vínculo **RefinableString00** y desplácese hacia abajo hasta la sección **Asignaciones a propiedades rastreadas**.  
+2. En la lista de resultados, seleccione el vínculo **RefinableString00** y desplácese hacia abajo hasta la sección **Asignaciones a propiedades rastreadas**.
 
-3. Seleccione **Agregar una asignación** y escriba **_ows\_Doc\_x0020\_Type_*_ en el cuadro _* Buscar un nombre de propiedad rastreada** en la ventana **Selección de propiedades rastreadas**. Seleccione **Buscar**.  
+3. Seleccione **Agregar una asignación** y escriba **_ows\_Doc\_x0020\_Type_*_ en el cuadro _* Buscar un nombre de propiedad rastreada** en la ventana **Selección de propiedades rastreadas**. Seleccione **Buscar**.
 
 4. En la lista de resultados, seleccione **ows\_Doc\_x0020\_Type** y seleccione **Aceptar**.
 
@@ -222,19 +222,19 @@ Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una direct
 2. En el asistente para Crear directiva de etiquetado automático, en la página **Asignar un nombre a la directiva de etiquetado automático**, introduzca un nombre como **Aplicación automática de la etiqueta Especificación de producto** y una descripción opcional. Después, seleccione **Siguiente**.
 
 3. En la página **Elegir el tipo de contenido al que quiere aplicar la etiqueta**, seleccione **Aplicar la etiqueta al contenido que tenga palabras, frases o propiedades específicas** y, a continuación, seleccione **Siguiente**.
-    
+
    [ ![Seleccione Aplicar la etiqueta al contenido que tenga palabras, frases o propiedades específicas](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
-    
+
    Esta opción nos permite proporcionar la misma consulta de búsqueda de KQL que probamos en la sección anterior. La consulta devuelve todos los documentos de Especificaciones del producto que tienen el estado *Final*. Cuando usamos esta misma consulta en la directiva de etiqueta aplicada automáticamente, la etiqueta de retención de Especificaciones del producto se aplicará de manera automática a todos los documentos que coincidan con esta consulta.
 
 4. En la página **Aplicar la etiqueta al contenido que coincida con esta consulta**, escriba **RefinableString00:"Especificaciones del producto" AND RefinableString01:Final** y seleccione **Siguiente**.
 
    ![Especificar la consulta en el cuadro editor de Consulta de palabras clave](../media/SPRetention19.png)
 
-5. En la página **Elegir ubicaciones para aplicar la directiva**, seleccione las ubicaciones de contenido a las que desea aplicar la directiva. Para este escenario, solo aplicamos la directiva a las ubicaciones de SharePoint, ya que todos los documentos de producción se almacenan en las bibliotecas de documentos de SharePoint. Cambie el estado para el **Correo electrónico de Exchange**, las **cuentas de OneDrive** y los **Grupos de Microsoft 365** a **Desactivado**. Asegúrese de que el estado de los sitios de SharePoint esté **Activado** antes de seleccionar **Siguiente**: 
-    
+5. En la página **Elegir ubicaciones para aplicar la directiva**, seleccione las ubicaciones de contenido a las que desea aplicar la directiva. Para este escenario, solo aplicamos la directiva a las ubicaciones de SharePoint, ya que todos los documentos de producción se almacenan en las bibliotecas de documentos de SharePoint. Cambie el estado para el **Correo electrónico de Exchange**, las **cuentas de OneDrive** y los **Grupos de Microsoft 365** a **Desactivado**. Asegúrese de que el estado de los sitios de SharePoint esté **Activado** antes de seleccionar **Siguiente**:
+
     ![Elegir sitios específicos a los que aplicar etiquetas automáticamente](../media/SPRetentionSPlocations.png)
-    
+
    > [!TIP]
    > En lugar de aplicar la directiva a todos los sitios de SharePoint, puede seleccionar **Elegir sitio** y agregar las direcciones URL de sitios específicos de SharePoint.
 
@@ -247,9 +247,9 @@ Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una direct
     ![Configuración para aplicar la etiqueta automáticamente](../media/SPRetention18.png)
 
 9. Seleccione **Enviar** para crear la directiva de etiqueta aplicable automáticamente.
-    
-   >[!NOTE]
-   >Puede llevar hasta 7 días aplicar automáticamente la etiqueta de Especificaciones del producto a todos los documentos que coincidan con la consulta de búsqueda de KQL.
+
+   > [!NOTE]
+   > Puede llevar hasta 7 días aplicar automáticamente la etiqueta de Especificaciones del producto a todos los documentos que coincidan con la consulta de búsqueda de KQL.
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>Compruebe que la etiqueta de retención se aplicó automáticamente
 
@@ -287,7 +287,7 @@ Para crear este flujo, parta de un conector de SharePoint y seleccione el desenc
 - **URI**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'>
     <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
@@ -324,10 +324,10 @@ Seleccione el evento para ver los detalles en la página de control flotante. Ob
 
 ![Detalles del evento](../media/SPRetention29.png)
 
-Pero luego de un retraso, el estado del evento muestra que se han procesado un sitio de SharePoint y un documento de SharePoint.  
+Pero luego de un retraso, el estado del evento muestra que se han procesado un sitio de SharePoint y un documento de SharePoint.
 
 ![Los detalles del evento muestran que los documentos se procesaron.](../media/SPRetention31.png)
- 
+
 Esto muestra que se ha iniciado el período de retención de la etiqueta aplicada al documento de producto de Spinning Widget, en base a la fecha del evento *Cese de producción de Spinning Widget*. Suponiendo que ha implementado el escenario en el entorno de prueba configurando un período de retención de un día, puede ir a la biblioteca de documentos de los documentos de su producto unos días después de crear el evento y comprobar que el documento se haya eliminado (después de que se haya ejecutado la eliminación de la tarea en SharePoint).
 
 ### <a name="more-about-asset-ids"></a>Más información sobre los Id. de activo
