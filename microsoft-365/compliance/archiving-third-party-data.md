@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a Microsoft 365 buzones de correo.
-ms.openlocfilehash: acd7f9ee838308b277f725e5b7d80c69c6407b59
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+ms.openlocfilehash: 76df1ffa7afdeeda9a35744e9e4bfffae4576ca9
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53243964"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276958"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archivar datos de terceros en Microsoft 365
 
@@ -107,7 +107,7 @@ En la tabla de esta sección se enumeran los conectores de datos de terceros dis
 
 Para poder archivar datos de terceros en Microsoft 365, debe trabajar con TeleMessage para configurar su servicio de archivado para su organización. Para obtener más información,  haga clic en el vínculo de la columna de datos de terceros para ir a las instrucciones paso a paso para crear un conector para ese tipo de datos.
 
-Los conectores de datos de TeleMessage también están disponibles en GCC entornos en la Microsoft 365 us government cloud. Para obtener más información, vea la sección Conectores de datos en la nube del Gobierno de Estados Unidos en este artículo.
+Los conectores de datos de TeleMessage también están disponibles en GCC entornos en la Microsoft 365 us government cloud. Para obtener más información, vea la [sección Conectores de datos en la nube](#data-connectors-in-the-us-government-cloud) del Gobierno de Estados Unidos en este artículo.
 
 |Datos de terceros  |Retención por juicio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|

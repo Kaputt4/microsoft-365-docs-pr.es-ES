@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exporte documentos en un conjunto de revisión en una cuenta Azure Storage y, a continuación, use Explorador de Azure Storage para descargarlos en un equipo local.
-ms.openlocfilehash: dfb3892f31e857d4744f6da337c924efaa87ab11
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b7638e33a40a2ac46f4bb69b869e4c2cf6d48f65
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574732"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256512"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exportar documentos en un conjunto de revisión a una Azure Storage cuenta
 
-Al exportar documentos de un conjunto de revisión en un caso Advanced eDiscovery, tiene la opción de exportarlos a una cuenta Azure Storage administrada por su organización. Si usó esta opción, los documentos se cargarán en su Azure Storage ubicación. Después de exportarlos, puede obtener acceso a los documentos (y descargarlos a un equipo local u otra ubicación) mediante el Explorador de Azure Storage. En este artículo se proporcionan instrucciones sobre cómo exportar documentos Azure Storage su cuenta de Azure Storage y el uso del Explorador de Azure Storage para conectarse a una ubicación Azure Storage para descargar los documentos exportados. Para obtener más información acerca Explorador de Azure Storage, vea [Use Explorador de Azure Storage](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+Al exportar documentos de un conjunto de revisión en un caso Advanced eDiscovery, tiene la opción de exportarlos a una cuenta Azure Storage administrada por su organización. Si usa esta opción, los documentos se cargarán en su Azure Storage ubicación. Después de exportarlos, puede obtener acceso a los documentos (y descargarlos a un equipo local u otra ubicación) mediante el Explorador de Azure Storage. En este artículo se proporcionan instrucciones sobre cómo exportar documentos Azure Storage su cuenta de Azure Storage y el uso del Explorador de Azure Storage para conectarse a una ubicación Azure Storage para descargar los documentos exportados. Para obtener más información acerca Explorador de Azure Storage, vea [Use Explorador de Azure Storage](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="before-you-export-documents-from-a-review-set"></a>Antes de exportar documentos de un conjunto de revisión
 
@@ -41,7 +41,7 @@ Al exportar documentos de un conjunto de revisión en un caso Advanced eDiscover
 
 El primer paso es crear un trabajo de exportación para exportar documentos fuera de un conjunto de revisión. Para obtener instrucciones más detalladas sobre todas las opciones de exportación, vea [Export documents from a review set](export-documents-from-review-set.md). El siguiente procedimiento resalta la configuración para exportar documentos a la cuenta de Azure Storage organización.
 
-1. En el Microsoft 365 de cumplimiento, abra el Advanced eDiscovery,  seleccione la pestaña Conjuntos de revisión y, a continuación, seleccione el conjunto de revisión que desea exportar.
+1. En el Centro de cumplimiento de Microsoft 365, abra el Advanced eDiscovery, seleccione la  pestaña Conjuntos de revisión y, a continuación, seleccione el conjunto de revisión que desea exportar.
 
 2. En el conjunto de revisión, haga clic **en Exportar**  >  **acción**.
 

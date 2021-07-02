@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 7d23230ebe4321f355128d1f3268e967a35a0a89
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7e99198e0713a1940f094c3875293b2590f31e3f
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245653"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256860"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -38,7 +38,7 @@ Los tipos de información confidencial son clasificadores basados en patrones. D
 - [Directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) 
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Etiquetas de retención](retention.md)
-- [Administración de riesgos internos](insider-risk-management.md)
+- [Administración de riesgos de Insider](insider-risk-management.md)
 - [Cumplimiento de las comunicaciones](communication-compliance.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -104,7 +104,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Número de identidad nacional de Argentina 
-- Identidad 
+- Identity 
 - Identificación tarjeta de identidad nacional 
 - DNI 
 - Registro nacional de personas de NIC 
@@ -144,15 +144,22 @@ Para crear tipos de información confidencial personalizados en el Centro de seg
 
 
 > [!NOTE]
-> Los niveles de confianza mejorados están disponibles para su uso inmediato en Prevención de pérdida de datos para servicios Microsoft 365, Microsoft Information Protection para servicios Microsoft 365, Cumplimiento de comunicaciones, Gobierno de la información y Administración de registros.
-
-> Microsoft 365 Information Protection ahora es compatible con la vista previa de idiomas con conjunto de caracteres de doble byte para:
+> Los niveles de confianza mejorados están disponibles para su uso inmediato en Prevención de pérdida de datos para servicios de Microsoft 365, Microsoft Information Protection para servicios Microsoft 365, Cumplimiento de comunicaciones, Gobierno de la información y Administración de registros.
+> Microsoft 365 Information Protection ahora admite idiomas de juego de caracteres de doble byte para:
 > - Chino (simplificado)
 > - Chino (tradicional)
 > - Coreano
 > - Japonés
+> 
+> Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
 
->Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
+> [!TIP]
+> Para detectar patrones que contengan caracteres chino/japonés y caracteres de byte único o para detectar patrones que contengan chino,japonés e inglés, defina dos variantes de la palabra clave o regex. Por ejemplo, para detectar una palabra clave como "机密的document", use dos variantes de la palabra clave; uno con un espacio entre el texto japonés e inglés y otro sin un espacio entre el texto japonés e inglés. Por lo tanto, las palabras clave que se agregarán en sit deben ser "机密的 documento" y "机密的document". Del mismo modo, para detectar una frase "2020", se deben usar dos variantes; "2020" y "2020".
+> 
+> Al crear un regex con un guión de doble byte o un período de doble byte, asegúrese de escapar de los caracteres como uno para escapar de un guión o punto en un regex. A continuación se muestra un regex de ejemplo para referencia:
+>    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+>
+> Se recomienda usar coincidencia de cadena en lugar de coincidencia de palabras en una lista de palabras clave.
 
 ## <a name="for-further-information"></a>Para obtener más información
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)

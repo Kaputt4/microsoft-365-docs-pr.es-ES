@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Después de crear e iterar en una colección borrador, puede confirmarla en un conjunto de revisión. Cuando se confirma un borrador de colección, los elementos recopilados se agregan al conjunto de revisión en el caso. Después de que los elementos recopilados estén en el conjunto de revisión, puede analizarlos, revisarlos y exportarlos.
-ms.openlocfilehash: e28592e7aac289bfc0cc29d312963fa21d9f8fd4
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: dceb661d9586e324482dc4f56bce12fafaf9b251
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838951"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276982"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Confirmar un borrador de colección en un conjunto de revisión en Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Cuando esté satisfecho con los elementos que haya recopilado en una colección 
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>Confirmar una colección de borrador en un conjunto de revisión
 
-1. En el Microsoft 365 de cumplimiento, abra el Advanced eDiscovery y, a continuación, seleccione la pestaña **Colecciones** para mostrar una lista de las colecciones en el caso.
+1. En el Centro de cumplimiento de Microsoft 365, abra el Advanced eDiscovery y, a continuación, seleccione la pestaña **Colecciones** para mostrar una lista de las colecciones en el caso.
 
    ![Lista de colecciones en un caso](../media/CommitDraftCollections1.png)
 
@@ -46,7 +46,7 @@ Cuando esté satisfecho con los elementos que haya recopilado en una colección 
 
    1. Seleccione **Recopilar elementos y agregar al conjunto de revisión**.
 
-   2. Decida si desea agregar la colección a un nuevo conjunto de revisión (que se crea después de enviar la colección) o a un conjunto de revisión existente. Complete esta sección en función de su decisión.
+   2. Decida si desea agregar la colección a un nuevo conjunto de revisión (que se crea después de enviar la colección) o agregarla a un conjunto de revisión existente. Complete esta sección en función de su decisión.
 
    3. Configure las opciones de colección adicionales:
 
@@ -73,6 +73,8 @@ Cuando esté satisfecho con los elementos que haya recopilado en una colección 
 ## <a name="what-happens-after-you-commit-a-draft-collection"></a>Qué sucede después de confirmar un borrador de colección
 
 Cuando se confirma un borrador de colección en un conjunto de revisión, sucede lo siguiente:
+
+- Si creó un nuevo conjunto de revisión para confirmar la colección, el conjunto de revisión se crea y se muestra en la pestaña **Conjuntos** de revisión en el caso. El estado del nuevo conjunto de revisión es **Ready**. Este valor de estado significa que se ha creado el conjunto de revisión; no significa que la colección se haya agregado al conjunto de revisión. El estado de agregar elementos de la colección al conjunto de revisión se muestra en la **pestaña Colecciones.**
 
 - La consulta de búsqueda de colección se vuelve a ejecutar. Esto significa que los resultados de búsqueda reales copiados en el conjunto de revisión pueden ser diferentes de los resultados estimados que se devolvieron cuando se presentó la última ejecución de la búsqueda de colección.
 

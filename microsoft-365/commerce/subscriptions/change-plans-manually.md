@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones estén enumeradas y activas.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5db328cb1545279faa1332c144c7a8b60a50fa05
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536111"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256776"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -79,6 +79,8 @@ Incluye una licencia para cada usuario que quieras mover.
 Las licencias de la suscripción actual se quitarán más adelante; solo pagará las nuevas licencias de usuario a partir de ese momento.
 
 ## <a name="step-4-reassign-licenses"></a>Paso 4: Reasignar licencias
+
+Al actualizar de un plan Office 365 a un plan Microsoft 365, debe cambiar las asignaciones de licencia para todos los usuarios. Las licencias no se asignan automáticamente al cambiar los planes manualmente.
 
 ### <a name="reassign-a-license-for-one-user"></a>Reasignar una licencia para un usuario
 

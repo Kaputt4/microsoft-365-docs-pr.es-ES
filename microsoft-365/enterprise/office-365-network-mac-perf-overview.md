@@ -1,5 +1,5 @@
 ---
-title: Conectividad de red en el Centro Microsoft 365 administración
+title: Conectividad de red en el Centro Administración de Microsoft 365 red
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: Información general sobre la conectividad de red en el Centro Microsoft 365 administración
-ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: Información general sobre la conectividad de red en el Centro Administración de Microsoft 365 red
+ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470667"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53277006"
 ---
-# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro Microsoft 365 administración
+# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro Administración de Microsoft 365 red
 
-El Centro Microsoft 365 administración ahora incluye métricas de conectividad de red agregadas recopiladas desde el inquilino de Microsoft 365 y disponibles para que solo las puedan ver los usuarios administrativos del espacio empresarial.
+El Centro Administración de Microsoft 365 ahora incluye métricas de conectividad de red agregadas recopiladas desde el inquilino de Microsoft 365 y disponibles para que solo las puedan ver los usuarios administrativos del espacio empresarial.
 
 > [!div class="mx-imgBorder"]
 > ![Herramienta de prueba de conectividad de red](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**Las evaluaciones de** red **y las perspectivas** de red se muestran en el Centro de administración de Microsoft 365 en **Health | Conectividad de red**.
+**Las evaluaciones de** red **y las perspectivas** de red se muestran en el Centro de Administración de Microsoft 365 en **Health | Conectividad de red**.
 
 > [!div class="mx-imgBorder"]
 > ![Página de rendimiento de red](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
@@ -37,7 +37,7 @@ El Centro Microsoft 365 administración ahora incluye métricas de conectividad 
 >[!NOTE]
 >La conectividad de red en el Centro de administración admite inquilinos en WW Commercial y Alemania, pero no GCC moderado, GCC High, DoD o China.
 
-Cuando navegue por primera vez a la página de rendimiento de la red, tendrá que configurar las ubicaciones para ver el mapa del rendimiento global de la red, una evaluación de red en el ámbito de todo el inquilino, un porcentaje de los usuarios que trabajan de forma remota frente a in situ y una lista de problemas actuales en los que tomar medidas y/o investigar más. En el panel de información general, puede explorar en profundidad para ver métricas y problemas específicos de rendimiento de red por ubicación. Para obtener más información, vea [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+Cuando navegue por primera vez a la página de rendimiento de la red, tendrá que configurar las ubicaciones para ver el mapa del rendimiento global de la red, una evaluación de red en el ámbito de todo el inquilino, un porcentaje de los usuarios que trabajan de forma remota frente a in situ y una lista de problemas actuales en los que tomar medidas y/o investigar más. En el panel de información general, puede explorar en profundidad para ver métricas y problemas específicos de rendimiento de red por ubicación. Para obtener más información, vea [Network performance overview in the Administración de Microsoft 365 Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 Es posible que se le pida que se una a la versión preliminar pública de esta característica en nombre de su organización. La aceptación suele ocurrir inmediatamente, después de lo cual vería la página de conectividad de red.
 
@@ -75,7 +75,10 @@ Para esta opción, debe identificar a una persona en cada ubicación. Pídales q
 
 Los informes de prueba se vinculan a una ubicación si se agregaron con información de subred DE LAN, de lo contrario solo se muestran en la ubicación de la ciudad.
 
-Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer entre 2 y 3 minutos después de que se complete un informe de prueba. Para obtener más información, [vea Microsoft 365 prueba de conectividad de red (versión preliminar).](office-365-network-mac-perf-onboarding-tool.md)
+Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer entre 2 y 3 minutos después de que se complete un informe de prueba. Para obtener más información, [vea Microsoft 365 prueba de conectividad de red](office-365-network-mac-perf-onboarding-tool.md).
+
+> [!NOTE]
+> Al agregar las ubicaciones de oficina Microsoft 365 conectividad de red en el Centro de administración de Microsoft 365, puede proporcionar direcciones IPv4 o IPv6 para las subredes laN. Egress Las direcciones IP deben usar IPv4.
 
 ## <a name="how-do-i-use-this-information"></a>¿Cómo se usa esta información?
 
@@ -86,7 +89,7 @@ Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer ent
 Las empresas complejas con varias ubicaciones de oficina y arquitecturas perimetrales de red no triviales pueden beneficiarse de esta información durante su incorporación inicial a Microsoft 365 o para corregir los problemas de rendimiento de red detectados con el crecimiento del uso. Esto normalmente no es necesario para pequeñas empresas que usan Microsoft 365, o cualquier empresa que ya tenga una conectividad de red sencilla y directa. Se espera que las empresas con más de 500 usuarios y varias ubicaciones de oficina sean las que más se beneficien.
 
 >[!IMPORTANT]
->Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
+>Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de Administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise de conectividad de red
 
@@ -97,15 +100,15 @@ Muchas empresas tienen configuraciones perimetrales de red que han aumentado con
 
 ## <a name="how-we-can-solve-these-challenges"></a>Cómo podemos resolver estos desafíos
 
-Las empresas pueden mejorar la experiencia general del usuario y proteger su entorno siguiendo Office 365 [principios](./microsoft-365-network-connectivity-principles.md) de conectividad y usando la característica de conectividad de red Microsoft 365 centro de administración. En la mayoría de los casos, seguir estos principios generales tendrá un impacto positivo significativo en la latencia del usuario final, la confiabilidad del servicio y el rendimiento general de Microsoft 365.
+Las empresas pueden mejorar la experiencia general del usuario y proteger su entorno siguiendo Office 365 [principios](./microsoft-365-network-connectivity-principles.md) de conectividad y usando la característica de conectividad de red Administración de Microsoft 365 Centro de administración. En la mayoría de los casos, seguir estos principios generales tendrá un impacto positivo significativo en la latencia del usuario final, la confiabilidad del servicio y el rendimiento general de Microsoft 365.
 
 A veces se le pide a Microsoft que investigue los problemas de rendimiento de la red con Microsoft 365 para los clientes de grandes empresas, y estos suelen tener una causa raíz relacionada con la infraestructura perimetral de red del cliente. Cuando se encuentra una causa raíz común de un problema perimetral de red de clientes, buscamos identificar medidas de prueba sencillas que lo identifiquen. Una prueba con un umbral de medida que identifique un problema específico es valiosa porque podemos probar la misma medida en cualquier ubicación, saber si esta causa raíz está presente allí y compartirla como información de red con el administrador.
 
 Algunas perspectivas de red simplemente indicarán un problema que necesita más investigación. Una información de red donde tenemos suficientes pruebas para mostrar una acción de corrección específica para corregir la causa raíz se muestra como **una acción recomendada**. Estas recomendaciones, basadas en métricas en directo que revelan valores que se encuentran fuera de un umbral predeterminado, son mucho más valiosas que los consejos de procedimientos recomendados generales, ya que son específicas de su entorno y mostrarán la mejora real una vez que se hayan realizado los cambios recomendados.
 
-## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Introducción a la conectividad de red en el Centro Microsoft 365 administración
+## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Introducción a la conectividad de red en el Centro Administración de Microsoft 365 red
 
-Microsoft tiene medidas de red existentes de varios Office de escritorio y web que admiten el funcionamiento de Microsoft 365. Estas medidas se usan ahora para proporcionar información sobre el diseño  de arquitectura de red y una evaluación de red que se muestra en la página Conectividad de red del Centro de administración de Microsoft 365 red.
+Microsoft tiene medidas de red existentes de varios Office de escritorio y web que admiten el funcionamiento de Microsoft 365. Estas medidas se usan ahora para proporcionar información sobre el diseño  de arquitectura de red y una evaluación de red que se muestra en la página Conectividad de red del Centro de Administración de Microsoft 365 red.
 
 De forma predeterminada, la información de ubicación aproximada asociada a las medidas de red identifica la ciudad donde se encuentran los dispositivos cliente. La evaluación de red en cada ubicación se muestra con color y el número relativo de usuarios en cada ubicación se representa por el tamaño del círculo.
 
@@ -220,7 +223,7 @@ La ubicación de salida de Internet es la ubicación donde el tráfico de red sa
 
 ### <a name="what-license-is-needed-for-this-capability"></a>¿Qué licencia se necesita para esta funcionalidad?
 
-Necesita una licencia que proporciona acceso al centro Microsoft 365 administración.
+Necesita una licencia que proporciona acceso a la Centro de administración de Microsoft 365.
 
 ## <a name="related-topics"></a>Temas relacionados
 

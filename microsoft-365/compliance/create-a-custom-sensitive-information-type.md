@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227156"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256728"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -183,10 +183,16 @@ Aquí tiene las definiciones y algunos ejemplos de las comprobaciones adicionale
 
 
 > [!NOTE]
-> Information Protection de Microsoft 365 es compatible, en modo de versión preliminar, con el conjunto de caracteres de doble byte para:
+> Microsoft 365 Information Protection admite idiomas de juego de caracteres de doble byte para:
 > - Chino (simplificado)
 > - Chino (tradicional)
 > - Coreano
 > - Japonés
 >
 >Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
+
+> [!TIP]
+> Para detectar patrones que contengan caracteres chino/japonés y caracteres de byte único o para detectar patrones que contengan chino,japonés e inglés, defina dos variantes de la palabra clave o regex. Por ejemplo, para detectar una palabra clave como "机密的document", use dos variantes de la palabra clave; uno con un espacio entre el texto japonés e inglés y otro sin un espacio entre el texto japonés e inglés. Por lo tanto, las palabras clave que se agregarán en sit deben ser "机密的 documento" y "机密的document". Del mismo modo, para detectar una frase "2020", se deben usar dos variantes; "2020" y "2020".
+> Al crear un regex con un guión de doble byte o un período de doble byte, asegúrese de escapar de los caracteres como uno para escapar de un guión o punto en un regex. A continuación se muestra un regex de ejemplo para referencia:
+    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+> Se recomienda usar una coincidencia de cadena en lugar de una coincidencia de palabras en una lista de palabras clave.

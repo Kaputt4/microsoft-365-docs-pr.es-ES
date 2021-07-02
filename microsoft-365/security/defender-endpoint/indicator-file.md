@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730539"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256920"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -80,10 +80,13 @@ Los archivos bloqueados automáticamente por un indicador no aparecerán en el C
 
 >[!IMPORTANT]
 >- Normalmente, los bloques de archivos se aplican y se quitan en un par de minutos, pero pueden tardar más de 30 minutos.
->- Si hay directivas de indicador de archivos en conflicto, se aplica la directiva de cumplimiento de la directiva más segura. Por ejemplo, una directiva de indicador hash de archivo SHA-256 tiene prioridad sobre una directiva de indicador de hash de archivo MD5 si ambos tipos de hash definen el mismo archivo.
->- Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, habilitar EnableFileHashComputation puede afectar al rendimiento del dispositivo.
->    - Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
->    - Para obtener más información acerca de la directiva de grupo EnableFileHashComputation, vea [Defender CSP](/windows/client-management/mdm/defender-csp)
+> 
+>- Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro. Una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo SHA-1, que ganará una directiva de IoC de hash de archivo MD5 si los tipos hash definen el mismo archivo. Esto siempre es así independientemente del grupo de dispositivos. 
+>   En todos los demás casos, si las directivas de IoC de archivos en conflicto con el mismo destino de aplicación se aplican a todos los dispositivos y al grupo del dispositivo, en el caso de un dispositivo, la directiva del grupo de dispositivos ganará. 
+>   
+>- Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la `EnableFileHashComputation` habilitación puede afectar al rendimiento del dispositivo. Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
+>
+>   Para obtener más información acerca de la directiva de grupo EnableFileHashComputation, vea [Defender CSP](/windows/client-management/mdm/defender-csp)
 
 ## <a name="policy-conflict-handling"></a>Control de conflictos de directivas  
 
@@ -103,7 +106,7 @@ Los conflictos de administración de directivas de Cert y File IoC seguirán el 
 
 Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro (es decir, más largo). Por ejemplo, una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo MD5 si ambos tipos de hash definen el mismo archivo.
 
-Tenga en cuenta que Administración de amenazas y vulnerabilidades aplicaciones vulnerables de bloqueo de la aplicación usa el archivo IoCs para la aplicación y seguirá el orden de control de conflictos anterior.
+Las características de aplicación vulnerables de bloqueo de amenazas y administración de vulnerabilidades usan el archivo IoCs para la aplicación y seguirán el orden de control de conflictos anterior.
 
 ### <a name="examples"></a>Ejemplos
 

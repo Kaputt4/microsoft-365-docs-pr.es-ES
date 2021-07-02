@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841287"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276934"
 ---
 # <a name="device-images"></a>Imágenes del dispositivo
 
@@ -25,7 +25,7 @@ ms.locfileid: "52841287"
 Ya sea que [ordenes nuevos dispositivos](#new-devices) o reutilices los existentes, tienes varias opciones para asegurarte de que la imagen del dispositivo cumple con nuestros requisitos [de dispositivo.](device-requirements.md#check-hardware-requirements) [](#existing-devices)
 
 ## <a name="new-devices"></a>Nuevos dispositivos
-Cuando ordenes un nuevo dispositivo a un fabricante [aprobado,](device-requirements.md#minimum-requirements)sigue estos pasos para asegurarte de que envían dispositivos con la configuración Escritorio administrado de Microsoft imagen y software.
+Cuando ordenes un nuevo dispositivo a un fabricante [aprobado,](device-requirements.md#minimum-requirements)sigue estos pasos para asegurarte de que envían dispositivos con la configuración Escritorio administrado de Microsoft imagen y software. Cada vez que planees inscribir un modelo de dispositivo determinado en el servicio por primera vez, debes probar un ejemplo para asegurarte de que ofrece la experiencia de usuario que esperas. Para obtener más información, vea [Validate new devices](/microsoft-365/managed-desktop/get-started/validate-device).
 
 ### <a name="dell"></a>Dell
 Trabaje directamente con el representante de ventas de Dell, que se asegurará de que la imagen aprobada por Escritorio administrado de Microsoft se aplique a los dispositivos para su pedido. Para obtener más preguntas sobre dispositivos Dell, la imagen y el proceso de pedido, póngase en contacto con MMD_at_dell@dell.com.
