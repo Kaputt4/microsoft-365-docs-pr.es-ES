@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d4a753a640b98125bc6ad02bd6043f28336e29b7
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538523"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256764"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Soluciones de auditoría en Microsoft 365
 
@@ -165,4 +165,4 @@ Para obtener instrucciones más detalladas, consulte [Configurar la auditoría a
 
 ## <a name="training"></a>Formación
 
-La formación del equipo de operaciones de seguridad, los administradores de TI y el equipo de investigadores de cumplimiento de auditoría básica y auditoría avanzada pueden ayudar a su organización a empezar a usar con mayor rapidez la auditoría para ayudarle con las investigaciones. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de la organización a empezar a auditar: [Descripción de las funcionalidades de auditoría de Microsoft 365](/learn/modules/describe-audit-capabilities-microsoft-365).
+La formación de su equipo de operaciones de seguridad, de los administradores de TI y del equipo de investigadores de cumplimiento en los fundamentos de la Auditoría básica y la Auditoría avanzada puede ayudar a su organización a empezar a utilizar más rápidamente la auditoría para ayudar en sus investigaciones. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de su organización a iniciarse en la auditoría: [describir las capacidades de eDiscovery y auditoría de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

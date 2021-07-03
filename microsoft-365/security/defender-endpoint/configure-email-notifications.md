@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933954"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286938"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurar notificaciones de alertas en Microsoft Defender para endpoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "51933954"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 Puede configurar Defender for Endpoint para enviar notificaciones por correo electrónico a destinatarios especificados para nuevas alertas. Esta característica le permite identificar un grupo de personas que se informarán inmediatamente y pueden actuar en alertas en función de su gravedad.
 
@@ -46,7 +46,6 @@ Solo los usuarios asignados al rol de administrador global pueden administrar la
 
 La notificación por correo electrónico incluye información básica sobre la alerta y un vínculo al portal donde puede realizar más investigaciones.
 
-
 ## <a name="create-rules-for-alert-notifications"></a>Crear reglas para notificaciones de alertas
 Puede crear reglas que determinen los dispositivos y las gravedades de alerta para enviar notificaciones por correo electrónico y los destinatarios de las notificaciones.
 
@@ -60,15 +59,15 @@ Puede crear reglas que determinen los dispositivos y las gravedades de alerta pa
     - **Incluir nombre de organización:** especifique el nombre del cliente que aparece en la notificación por correo electrónico.
     - **Incluir vínculo de portal específico del inquilino:** agrega un vínculo con el identificador de inquilino para permitir el acceso a un inquilino específico.
     - **Incluir información del dispositivo:** incluye el nombre del dispositivo en el cuerpo de la alerta de correo electrónico.
-    
-        >[!NOTE]
+
+        > [!NOTE]
         > Es posible que los servidores de correo de destinatarios procese esta información que no se encuentra en la ubicación geográfica seleccionada para los datos del extremo de Defender.
 
     - **Dispositivos:** elige si se notifica a los destinatarios alertas en todos los dispositivos (solo rol de administrador global) o en grupos de dispositivos seleccionados. Para obtener más información, consulta [Crear y administrar grupos de dispositivos.](machine-groups.md)
     - **Gravedad de alerta:** elija el nivel de gravedad de la alerta.
 
 4. Haga clic en **Siguiente**.
-    
+
 5. Escriba la dirección de correo electrónico del destinatario y, a continuación, haga clic **en Agregar destinatario.** Puedes agregar varias direcciones de correo electrónico.
 
 6. Compruebe que los destinatarios de correo electrónico pueden recibir las notificaciones de correo electrónico **seleccionando Enviar correo electrónico de prueba**.
@@ -76,12 +75,12 @@ Puede crear reglas que determinen los dispositivos y las gravedades de alerta pa
 7. Haga clic **en Guardar regla de notificación**.
 
 ## <a name="edit-a-notification-rule"></a>Editar una regla de notificación
+
 1. Seleccione la regla de notificación que desea editar.
 
 2. Actualice la información de las pestañas General y Destinatario.
 
 3. Haga clic **en Guardar regla de notificación**.
-
 
 ## <a name="delete-notification-rule"></a>Eliminar regla de notificación
 
@@ -89,8 +88,8 @@ Puede crear reglas que determinen los dispositivos y las gravedades de alerta pa
 
 2. Haga clic en **Eliminar**.
 
-
 ## <a name="troubleshoot-email-notifications-for-alerts"></a>Solucionar problemas de notificaciones de correo electrónico para alertas
+
 En esta sección se enumeran varios problemas que puede encontrar al usar notificaciones por correo electrónico para alertas.
 
 **Problema:** Los destinatarios previstos informan de que no reciben las notificaciones.
@@ -102,5 +101,6 @@ En esta sección se enumeran varios problemas que puede encontrar al usar notifi
 3. Comprueba las reglas de la aplicación de correo electrónico que podrían estar capturando y moviendo las notificaciones de correo electrónico de Defender para puntos de conexión.
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Actualizar la configuración de retención de datos](data-retention-settings.md)
 - [Configurar funciones avanzadas](advanced-features.md)

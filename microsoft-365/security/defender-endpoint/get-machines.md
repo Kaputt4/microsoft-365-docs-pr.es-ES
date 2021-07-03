@@ -12,15 +12,16 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
+ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f06973bc45ecac05c15d48afe5f0e2e9e7788f78
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d52e1b69311c26144684b90545e17934d1223332
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770756"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287860"
 ---
 # <a name="list-machines-api"></a>ENUMERAR API de máquinas
 
@@ -81,7 +82,7 @@ En blanco
 Si se realiza correctamente y las máquinas existen: 200 Aceptar con una lista [de](machine.md) entidades de máquina en el cuerpo. Si no hay máquinas recientes: 404 No se encontró.
 
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
 **Solicitud**
 

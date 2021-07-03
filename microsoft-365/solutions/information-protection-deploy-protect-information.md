@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Implemente Microsoft 365 seguridad y cumplimiento normativo y proteja su información personal.
-ms.openlocfilehash: 479774069844964e2e603dee5efbc7b8ef867918
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 7325aad0392d559703199c81f2544a582d7eadcb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229268"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287752"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la regulación de privacidad de datos
 
@@ -66,7 +66,6 @@ Para ayudarle a empezar con un esquema de protección de la información en Micr
 
 Las soluciones de Protección [de la](../compliance/information-protection.md) información de Microsoft incluyen una serie de funcionalidades integradas en Microsoft 365, Microsoft Azure y Microsoft Windows. En Microsoft 365, las soluciones de protección de la información incluyen:
 
-- [Cifrado de servicio con clave de cliente](../compliance/customer-key-overview.md)
 - [Tipos de información confidencial](../compliance/sensitive-information-type-entity-definitions.md) (descrito en el artículo Evaluar riesgos de privacidad de datos [e identificar elementos confidenciales)](information-protection-deploy-assess.md)
 - [Etiquetas de confidencialidad](../compliance/sensitivity-labels.md)
   - Nivel de servicio/contenedor

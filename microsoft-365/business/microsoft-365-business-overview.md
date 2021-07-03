@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que incluye Office aplicaciones y protección avanzada contra amenazas cibernéticas.
-ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705530"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287635"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Información general sobre Microsoft 365 Empresa Premium
 
@@ -44,14 +44,14 @@ Microsoft 365 Empresa Premium (anteriormente Microsoft 365 Empresa) es un serv
 
 ## <a name="watch-what-is-microsoft-365-business-premium"></a>Ver: Qué es Microsoft 365 Empresa Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
-  
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y para conocer Microsoft 365](../business-video/index.yml). 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA]
+
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y para conocer Microsoft 365](../business-video/index.yml).
 
 Microsoft 365 Empresa Premium está diseñado para un máximo de 300 licencias. Si necesita más licencias, consulte la documentación de [Microsoft 365 Enterprise](../enterprise/index.yml) para obtener más información.
 
 Para ver la lista completa de características, consulte la [descripción del servicio de Microsoft 365 Empresa Premium](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
-  
+
 ## <a name="small-business-security-needs"></a>Necesidades de seguridad de las pequeñas empresas
 
 Los datos de las empresas se pueden ver comprometidos de muchas maneras. Usted y sus usuarios pueden poner en riesgo la seguridad de su organización si inician sesión con credenciales vulnerables o si acceden a los datos de la organización desde diferentes dispositivos y aplicaciones. Más concretamente, estos son los factores de riesgo para su organización:
@@ -73,17 +73,17 @@ Microsoft 365 Empresa Premium aplica varias medidas que ayudan a **protegerse c
 
 - Examinar vínculos en correos electrónicos y documentos en tiempo real para bloquear sitios web no seguros (Caja fuerte vínculos).
 
-- Realizar análisis avanzado de datos adjuntos de correo electrónico en un entorno de espacio aislado para detectar malware recién desarrollado (Caja fuerte datos adjuntos). 
+- Realizar análisis avanzado de datos adjuntos de correo electrónico en un entorno de espacio aislado para detectar malware recién desarrollado (Caja fuerte datos adjuntos).
 
-- Habilitar directivas contra phishing que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (anti phishing en Defender para la Office 365 inteligencia). 
+- Habilitar directivas contra phishing que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (anti phishing en Defender para la Office 365 inteligencia).
 
-- Directivas avanzadas que deshabilitan el acceso desde ubicaciones en las que no se confía o que omiten la autenticación multifactor en sitios de confianza como la red de su oficina (Azure MFA, incluido IP de confianza y Acceso condicional). 
+- Directivas avanzadas que deshabilitan el acceso desde ubicaciones en las que no se confía o que omiten la autenticación multifactor en sitios de confianza como la red de su oficina (Azure MFA, incluido IP de confianza y Acceso condicional).
 
 - Protección contra malware en todos los dispositivos Windows 10 de la organización y protección de archivos en las carpetas clave del sistema para evitar cambios realizados por ransomware (Windows Defender).
 
 Los datos de su **empresa están protegidos** por las siguientes medidas:
 
-- Detección automática que evita que la información confidencial, como números de la seguridad social o de tarjetas de crédito, se filtre fuera de su empresa (Prevención de pérdida de datos). 
+- Detección automática que evita que la información confidencial, como números de la seguridad social o de tarjetas de crédito, se filtre fuera de su empresa (Prevención de pérdida de datos).
 
 - Cifrado de correos electrónicos confidenciales para que la comunicación con clientes u otras personas ajenas a su organización pueda realizarse de forma segura. Esto garantiza que solo el destinatario deseado pueda leer el mensaje (Cifrado de mensajes de Office 365).
 
@@ -105,7 +105,7 @@ Los dispositivos **están protegidos** por las siguientes medidas:
 
 Para ver la lista completa de las características de seguridad, consulte [Características de seguridad de Microsoft 365 Empresa Premium](security-features.md). Una vez que haya [configurado Microsoft 365 Empresa Premium](set-up.md), vea cómo [aumentar la protección contra amenazas](increase-threat-protection.md) y cómo [configurar las características de cumplimiento](set-up-compliance.md) para empezar a usar las características de seguridad que no se incluyen como parte de la configuración guiada. Lea también las [10 formas principales de proteger los planes de Office 365 y Microsoft 365 Empresa Premium](/office365/admin/security-and-compliance/secure-your-business-data) para obtener información sobre cómo configurar la protección contra hackers y delincuentes cibernéticos.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - Si tiene un partner, ese partner obtendrá Microsoft 365 Empresa Premium: [Obtener Microsoft 365 Empresa Premium desde el Centro de partners de Microsoft](get-microsoft-365-business.md).
 

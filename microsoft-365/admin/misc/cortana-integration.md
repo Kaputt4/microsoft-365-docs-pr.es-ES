@@ -19,19 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Los usuarios con cuentas profesionales o educativas válidas pueden Cortana experiencias Microsoft 365 que cumplan Office 365 promesas de seguridad de nivel empresarial.
-ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6887032e62d397659dc73475418f52b0c1246a2f
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227900"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286698"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
 Cortana, su asistente personal de productividad, ofrece experiencias con tecnología de IA para ahorrar tiempo y centrar la atención en lo que más importa. Cortana está diseñado para ofrecer características que procesan y razona de forma segura y segura los datos de Office 365 como correos electrónicos, archivos, chats, etc., para ahorrar tiempo, aumentar la eficiencia y mejorar la productividad de los usuarios.
 
-Cuando se ha iniciado sesión con cuentas profesionales o educativas válidas, los usuarios pueden obtener servicios de asistencia basados en la nube con Cortana en experiencias de Microsoft 365 que cumplan las promesas de privacidad, seguridad y cumplimiento de Office 365 de nivel empresarial ("**Cortana servicios** empresariales"). 
-
+Cuando se ha iniciado sesión con cuentas profesionales o educativas válidas, los usuarios pueden obtener servicios de asistencia basados en la nube con Cortana en experiencias de Microsoft 365 que cumplan las promesas de privacidad, seguridad y cumplimiento de Office 365 de nivel empresarial ("**Cortana servicios** empresariales").
 
 - **Cortana** los servicios empresariales incluyen Cortana en Windows 10 (versión 2004 y posteriores), Outlook para iOS y Android, aplicaciones móviles de Microsoft Teams para iOS y Android [y Microsoft Teams pantallas](/microsoftteams/devices/teams-displays).
 
@@ -88,19 +87,18 @@ Cortana empezó con Windows 10, versión 2004, y es una aplicación de Plataform
 
 El asistente de voz de Cortana en la aplicación móvil de Teams y en dispositivos de pantalla de Microsoft Teams permite a los usuarios de Microsoft 365 Enterprise simplificar la comunicación, colaboración y tareas relacionadas con reuniones mediante el lenguaje natural hablado. Los usuarios pueden hablar a Cortana si seleccionan el botón del micrófono ubicado en la parte superior derecha en la aplicación móvil de Teams, o si dicen &#8220;Cortana&#8221; en la pantalla de Microsoft Teams. Para conectarse rápidamente con su equipo con manos libres y mientras se desplazan, los usuarios pueden decir consultas como &#8220;llamar a Megan&#8221; o &#8220;enviar mensaje a mi siguiente reunión&#8221;. Asimismo, los usuarios pueden entrar a reuniones si dicen &#8220;entrar a mi siguiente reunión&#8221; y usar el asistente de voz para compartir archivos, ver su calendario y más. Las experiencias de asistente de voz se ofrecen mediante servicios de Cortana de nivel empresarial que cumplen con todas las promesas de Office 365 de privacidad, seguridad y cumplimiento, tal y como se refleja en los [Términos de servicios en línea (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
-**Control del administrador**
+#### <a name="admin-control"></a>Control del administrador
 
 El asistente de voz de Cortana estará habilitado de manera predeterminada para los espacios empresariales. Los administradores pueden controlar qué miembros de su espacio empresarial pueden usar el asistente de voz de Cortana en Teams mediante una directiva (TeamsCortanaPolicy). Esta directiva se puede establecer a nivel de cuenta del usuario o a nivel del espacio empresarial. Además, los administradores pueden usar el campo CortanaVoiceInvocationMode de este control de directiva para determinar si Cortana está deshabilitada, habilitada con activación solo con botón de comando o habilitada con activación también mediante una palabra (aplicable a dispositivos que lo admitan, como la pantalla de Microsoft Teams). 
 
-**Control de usuario**
+#### <a name="user-control"></a>Control de usuario
 
 Los usuarios individuales pueden probar el asistente de voz de Cortana en la aplicación móvil de Teams si hacen clic en el botón del micrófono. Pueden probar la Cortana de voz en dispositivos de pantalla Microsoft Teams simplemente diciendo &#8220;Cortana.&#8221; También pueden controlar si Cortana responde a la invocación de la palabra de activación. 
 
-1.  Abrir Teams móvil
-2.  Vaya a Configuración
-3.  Seleccione Cortana
-4.  Cambiar la alternancia activación de voz
-
+1. Abrir Teams móvil
+2. Vaya a Configuración
+3. Seleccione Cortana
+4. Cambiar la alternancia activación de voz
 
 [Obtener más información sobre el asistente de voz de Cortana en Teams](/microsoftteams/cortana-in-teams)
 
@@ -123,7 +121,6 @@ Se pedirá a los usuarios individuales que opten por la experiencia de IA conver
 Reproducir mis correos electrónicos (conectado mediante Outlook para dispositivos móviles) es una experiencia de manos libres y dirigida por la voz para que los usuarios puedan escuchar nuevos mensajes en su Bandeja de entrada Prioritarios y cambios en su jornada mediante los altavoces de su teléfono, auriculares o dispositivo de audio conectado. Los usuarios pueden pedir a Cortana que lea sus correos electrónicos recientes en voz alta y que realice acciones como marcar, archivar, eliminar e ignorar mensajes. Esta característica es especialmente útil para ponerse al día con el correo electrónico cuando se está desplazando al trabajo, a casa o a cualquier lugar o haciendo varias cosas al mismo tiempo. Cuando el usuario habla a Cortana en Reproducir mis correos electrónicos, la solicitud de audio de voz va directamente a los servicios de empresas de Cortana. La lectura de texto a voz de los correos electrónicos del usuario se procesan en la nube de Office 365. Durante este proceso, no se procesan datos de Office 365 en el dispositivo móvil del usuario y no se guardan datos de los correos electrónicos. Puede que se conserve una transcripción de órdenes orales (es decir, "marcar como leído", "siguiente", "marcar", etc.) en conformidad con los Términos de protección de datos en los [Términos de servicios en línea](https://www.microsoft.com/licensing/product-licensing/products) de Microsoft.
 
 Cortana le avisará cuando un correo electrónico está protegido y hará una pausa breve antes de leer el mensaje, para dar suficiente tiempo al usuario para pausar la reproducción o saltar al siguiente mensaje. Al igual que sucede con las llamadas telefónicas privadas, los usuarios deben tener precaución al iniciar la reproducción en lugares en los que puede que otras personas escuchen información confidencial. En estos casos, se recomienda a los empleados de su organización usar auriculares en entornos pertinentes al usar Reproducir mis correos electrónicos en Outlook para dispositivos móviles.
-
 
 ### <a name="how-to-opt-out-of-play-my-emails"></a>Cómo optar por no participar en Reproducir mis correos electrónicos
 
@@ -183,10 +180,8 @@ Desactivar el acceso de Cortana a los datos alojados de Microsoft de su organiza
 
 Para los servicios que se rigen por el [Contrato de servicios de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174) y la  [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement), Microsoft es el responsable de los datos. Como responsable de los datos, Microsoft usa los datos para mejorar productos y servicios en conformidad con la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-
 ## <a name="related-content"></a>Contenido relacionado
 
 [Cortana de voz en Teams](/microsoftteams/cortana-in-teams) (artículo)\
 [Configurar Cortana en Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (artículo)\
 [¿Qué puedes hacer con Reproducir mis correos electrónicos desde Cortana?](https://support.microsoft.com/help/4558256)
-

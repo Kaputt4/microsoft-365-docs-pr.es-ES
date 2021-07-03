@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Encuentre la información de instrucciones más reciente, sugerencias, recursos y instrucciones sobre el trabajo remoto para empresas que usan Microsoft 365.
-ms.openlocfilehash: fb261fbb5b52e81861fde16f6effc12b0a232e80
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2e2ce2c9b7e204a56a0deccc758ba19d7239c632
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227924"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286602"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Potencie su pequeña empresa con el trabajo a distancia
 

@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2facd506497cbdab42f2d8b051fbd50f82432927
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 345ae56a1c328dad7b777468dd03bcab40f9b4e1
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770606"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286878"
 ---
 # <a name="access-the-admin-portal"></a>Acceso al portal de administración
 
@@ -61,12 +61,12 @@ Si necesita ayuda con la asignación de Azure Active Directory, vea Permisos de 
 ### <a name="assigning-built-in-roles-to-user"></a>Asignar roles integrados al usuario
 
 Para facilitar la administración de roles integrados, hay un grupo de seguridad para cada rol personalizado con el nombre "Roles modernos del lugar de trabajo _-_ Nombre de rol" (por ejemplo, "Roles modernos del lugar de trabajo – Administrador de seguridad"). Para asignar usuarios a uno de estos grupos de seguridad, siga estos pasos:
-1.  Vaya al portal Microsoft Endpoint Manager web.
-2.  Seleccione **Grupos** en el lado izquierdo.
-3.  Busque Roles **modernos del lugar de** trabajo y, a continuación, seleccione el grupo asociado con el rol que desea asignar. 
-4.  Seleccione **Miembros** en el lado izquierdo y, a continuación, **seleccione + Agregar miembros** en la barra de comandos.
-5.  Escriba el correo electrónico de la persona que se va a agregar. Si son invitados, debe invitarlos antes de poder asignar el grupo.
-6.  Seleccione **Seleccionar** en la parte inferior.
+1. Vaya al portal Microsoft Endpoint Manager web.
+2. Seleccione **Grupos** en el lado izquierdo.
+3. Busque Roles **modernos del lugar de** trabajo y, a continuación, seleccione el grupo asociado con el rol que desea asignar. 
+4. Seleccione **Miembros** en el lado izquierdo y, a continuación, **seleccione + Agregar miembros** en la barra de comandos.
+5. Escriba el correo electrónico de la persona que se va a agregar. Si son invitados, debe invitarlos antes de poder asignar el grupo.
+6. Seleccione **Seleccionar** en la parte inferior.
 
 > [!NOTE]
 > Actualmente, no se admite el anidamiento de grupos de seguridad para la asignación de roles. 
@@ -74,6 +74,7 @@ Para facilitar la administración de roles integrados, hay un grupo de seguridad
 ### <a name="assigning-built-in-roles-to-groups"></a>Asignar roles integrados a grupos
 
 Si necesita asignar uno o varios de los roles integrados a un grupo existente, siga estos pasos:
+
 1. Vaya a [portal.azure.com](https://portal.azure.com/).
 2. Busque y abra Enterprise **aplicaciones**.
 3. Cambie el **filtro Tipo de** aplicación a Aplicaciones de _Microsoft_ y, a continuación, **seleccione Aplicar**.

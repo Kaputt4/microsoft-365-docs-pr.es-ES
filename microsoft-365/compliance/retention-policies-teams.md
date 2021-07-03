@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: b459665d9b92705bd575a7a79a4d4d6adc2a3f68
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908274"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256320"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -44,8 +44,10 @@ Para otras cargas de trabajo, vea:
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
 Los mensajes de chat y de canal de Teams se pueden eliminar mediante directivas de retención para Teams y, además del texto de los mensajes, se pueden conservar los elementos siguientes por motivos de cumplimiento: imágenes incrustadas, tablas, vínculos de hipertexto, vínculos a otros mensajes y archivos de Teams y [contenido de tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat incluyen todos los nombres de los usuarios en el chat y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporcionó). 
+> [!NOTE]
+> La compatibilidad con los mensajes en los canales privados se está implantando actualmente en la versión preliminar.
 
-Actualmente, los mensajes de Teams en canales privados no son compatibles con las políticas de retención. Los fragmentos de código, las notas de voz grabadas del cliente móvil de Teams, las miniaturas, las imágenes de anuncios y las reacciones de otros en forma de emoticonos no se conservan cuando usa políticas de retención para Teams.
+Los fragmentos de código, notas de voz grabadas del cliente móvil de Teams, las miniaturas, las imágenes de anuncios y las reacciones de otros usuarios en forma de emoticonos no se conservan cuando usa las directivas de retención para Teams.
 
 Los correos electrónicos y archivos que usa con Teams no se incluyen en las políticas de retención de Teams. Estos elementos tienen sus propias políticas de retención.
 
@@ -59,7 +61,7 @@ Estos buzones se muestran según su atributo RecipientTypeDetails:
 
 - **UserMailbox**: estos buzones almacenan datos de mensajes para los usuarios de Teams basados en la nube.
 - **MailUser**: estos buzones almacenan datos de mensajes para los [usuarios locales de Teams](search-cloud-based-mailboxes-for-on-premises-users.md).
-- **GroupMailbox**: estos buzones almacenan datos de mensajes para los canales de Teams.
+- **GroupMailbox**: Estos buzones almacenan los datos de los mensajes de los canales estándar de los equipos.
 
 Otros tipos de buzones, como RoomMailbox —que se usa en las salas de conferencias de Teams— no son compatibles con las directivas de retención de Teams.
 

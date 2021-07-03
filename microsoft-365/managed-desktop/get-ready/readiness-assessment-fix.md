@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177578"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286890"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -262,14 +262,13 @@ Windows 10 dispositivos de la organización de Azure AD deben poder inscribirse 
 
 Asegúrate de que **el ámbito de usuario MDM** esté establecido en **Algunos** o **Todos,** no **en Ninguno**. Si elige **Some**, vuelva después de la inscripción y  seleccione el grupo Modern **Workplace -All** Azure AD para grupos o un grupo equivalente dirigido a todos los usuarios Escritorio administrado de Microsoft usuario.  Consulta [Configurar la inscripción para Windows dispositivos mediante Microsoft Intune](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment).
 
-
 ### <a name="ad-hoc-subscriptions"></a>Suscripciones ad hoc
 
 Aconseja cómo comprobar una configuración que (si se establece en "false") puede impedir que Enterprise estado móvil funcione correctamente.
 
 **Advertencia**
 
-Asegúrese de **que AllowAdHocSubscriptions** está establecido en **True**. De lo contrario, Enterprise podría no funcionar la itinerancia de estado. Para obtener más información, [vea Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Asegúrese de **que AllowAdHocSubscriptions** está establecido en **True**. De lo contrario, Enterprise podría no funcionar la itinerancia de estado. Para obtener más información, [vea Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings).
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming

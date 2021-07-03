@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256728"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287544"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -129,12 +129,14 @@ También puede crear tipos de información confidencial con PowerShell y usar la
 ### <a name="checksum-validator"></a>Validador de suma de comprobación
 
 Si necesita ejecutar una suma de comprobación en un dígito de una expresión regular, puede usar el *validador de suma de comprobación*. Por ejemplo, diga que necesita crear un SIT para un número de licencia de ocho dígitos donde el último dígito es un dígito de suma de comprobación que se valida con un cálculo mod 9. Ha configurado el algoritmo de suma de comprobación de este tipo:
- 
+
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
 
 1. Defina el elemento principal con esta expresión regular:
 
-`\d{8}`
+   ```console
+   \d{8}
+   ```
 
 2. A continuación, agregue el validador de suma de comprobación.
 3. Agregue los valores de peso separados por comas, la posición del dígito de comprobación y el valor mod. Para obtener más información sobre la operación Modulo, vea [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
@@ -146,11 +148,13 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 
 ### <a name="date-validator"></a>Validador de fechas
 
-Si un valor de fecha incrustado en la expresión regular forma parte  de un nuevo patrón que está creando, puede usar el validador de fechas para probar que cumple los criterios. Por ejemplo, diga que desea crear un SIT para un número de identificación de empleado de nueve dígitos. Los seis primeros dígitos son la fecha de contratación en formato DDMMYY y los tres últimos son números generados aleatoriamente. Para validar que los seis primeros dígitos tienen el formato correcto. 
+Si un valor de fecha incrustado en la expresión regular forma parte  de un nuevo patrón que está creando, puede usar el validador de fechas para probar que cumple los criterios. Por ejemplo, diga que desea crear un SIT para un número de identificación de empleado de nueve dígitos. Los seis primeros dígitos son la fecha de contratación en formato DDMMYY y los tres últimos son números generados aleatoriamente. Para validar que los seis primeros dígitos tienen el formato correcto.
 
 1. Defina el elemento principal con esta expresión regular:
 
-`\d{9}`
+   ```console
+   \d{9}
+   ```
 
 2. A continuación, agregue el validador de fecha.
 3. Seleccione el formato de fecha y el desplazamiento de inicio. Dado que la cadena de fecha es los seis primeros dígitos, el desplazamiento es `0` .

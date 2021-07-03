@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984705"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286926"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y verificar los contactos de administración en el portal de administración
 
@@ -26,12 +26,13 @@ Hay varias maneras en que el Escritorio administrado de Microsoft se comunica co
 ## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory acceso para el portal Escritorio administrado de Microsoft administración
 
 Escritorio administrado de Microsoft El portal de administración requiere que las personas que tienen acceso al portal tengan uno de estos roles Azure Active Directory (AD):
+
 - Administrador global
 - Administrador de servicios de Intune
 - Lector global
 - Administrador de soporte técnico de servicio
 
-El administrador global debe ser el que inscriba su organización en Escritorio administrado de Microsoft. Los cinco roles tienen el mismo acceso en el portal de administración para iniciar y ver tareas. Para obtener más información sobre cómo asignar estos roles en Azure AD, vea Permisos de roles de administrador [en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+El administrador global debe ser el que inscriba su organización en Escritorio administrado de Microsoft. Los cinco roles tienen el mismo acceso en el portal de administración para iniciar y ver tareas. Para obtener más información sobre cómo asignar estos roles en Azure AD, vea Permisos de roles de administrador [en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 ## <a name="admin-contact-areas-of-focus"></a>Áreas de contacto de administración de foco
 
@@ -47,21 +48,21 @@ Otros | Para problemas no cubiertos por otras áreas
 
 **Quien elija para estos contactos debe tener el conocimiento y la autoridad para tomar decisiones para su entorno Escritorio administrado de Microsoft contactos.** Al incorporar el entorno Escritorio administrado de Microsoft, se le pedirá que agregue contactos para el departamento de soporte técnico y seguridad local. 
 
-Los contactos de administrador son necesarios al [enviar una solicitud de soporte técnico.](../service-description/support.md) Tendrás que tener un contacto de administrador para el área de enfoque de la solicitud de soporte técnico. 
+Los contactos de administrador son necesarios al [enviar una solicitud de soporte técnico.](../service-description/support.md) Tendrás que tener un contacto de administrador para el área de enfoque de la solicitud de soporte técnico.
 
 **Para agregar contactos de administrador**
 
-1.  Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com). 
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
-2.  En **Administración de inquilinos,** busque la Escritorio administrado de Microsoft y, **a continuación,** seleccione Contactos **de administrador**. 
+2. En **Administración de inquilinos,** busque la Escritorio administrado de Microsoft y, **a continuación,** seleccione Contactos **de administrador**.
 
 3. Seleccione **Agregar**.
 
-4.  Selecciona un **área de foco** y escribe la información del contacto. 
+4. Selecciona un **área de foco** y escribe la información del contacto. 
 
     ![la lista de áreas de foco, como Otras, Aplicaciones y Seguridad](../../media/areaoffocus.png)
 
-5. Repita cada área de foco. 
+5. Repita cada área de foco.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
 

@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b1111f0867ff9a49ba670cdd8b48d10d158fd3ed
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 07d4632c6ce775d98d9606f9edc4566aa48d9d8e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917775"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287812"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Tecnologías de seguridad en Escritorio administrado de Microsoft
 
@@ -21,12 +21,12 @@ ms.locfileid: "50917775"
 
 Escritorio administrado de Microsoft varias tecnologías de Microsoft para ayudar a proteger los datos y dispositivos administrados. Además, el Centro Escritorio administrado de Microsoft operaciones de seguridad usa varios [procesos](security-operations.md) junto con estas tecnologías.
 
-En particular: 
+En particular:
 
 - [Seguridad de dispositivos:](#device-security) seguridad y protección en Escritorio administrado de Microsoft dispositivos
 - [Administración de identidades y acceso:](#identity-and-access-management) administración del uso seguro de dispositivos mediante Azure Active Directory de identidades
 - [Seguridad de red:](#network-security) información de VPN y Escritorio administrado de Microsoft y configuración recomendadas
-- [Seguridad de la](#information-security) información: servicios disponibles opcionales para proteger aún más la información confidencial 
+- [Seguridad de la](#information-security) información: servicios disponibles opcionales para proteger aún más la información confidencial
 
 Para obtener información sobre el almacenamiento de datos, el uso y las prácticas de seguridad usadas por Escritorio administrado de Microsoft, consulte nuestra whitepaper en [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
@@ -38,21 +38,21 @@ Escritorio administrado de Microsoft garantiza que todos los dispositivos admini
 Servicio | Descripción
 --- | ---
 Antivirus | Microsoft Defender AV está instalado y configurado<br>Las definiciones de ANTIVIRUS de Microsoft Defender están actualizadas
-Cifrado de volumen completo |    Windows BitLocker es la solución de cifrado de volumen para Escritorio administrado de Microsoft dispositivos.<br><br>Una vez que una organización se incorpore al servicio, los dispositivos se cifrarán mediante Windows BitLocker con el Módulo de plataforma de confianza (TPM) integrado para impedir el acceso no autorizado a los datos locales cuando el dispositivo está en modo de suspensión o desactivado. 
-Supervisión |    Microsoft Defender para endpoint se usa para la supervisión de amenazas de seguridad en todos Escritorio administrado de Microsoft dispositivos. Defender for Endpoint permite a los clientes empresariales detectar, investigar y responder a amenazas avanzadas en su red corporativa. Para obtener más información, consulte [Microsoft Defender for Endpoint.](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
-Actualizaciones del sistema operativo |  Escritorio administrado de Microsoft dispositivos siempre están protegidos con las actualizaciones de seguridad más recientes.
-Configuración de dispositivos seguros |   Escritorio administrado de Microsoft implementa la línea base de seguridad de Microsoft. Para obtener más información, [vea Windows líneas base de seguridad.](/windows/security/threat-protection/windows-security-baselines)
+Cifrado de volumen completo | Windows BitLocker es la solución de cifrado de volumen para Escritorio administrado de Microsoft dispositivos.<br><br>Una vez que una organización se incorpore al servicio, los dispositivos se cifrarán mediante Windows BitLocker con módulo de plataforma de confianza (TPM) integrado para evitar el acceso no autorizado a los datos locales cuando el dispositivo está en modo de suspensión o desactivado.
+Supervisión | Microsoft Defender para endpoint se usa para la supervisión de amenazas de seguridad en todos Escritorio administrado de Microsoft dispositivos. Defender for Endpoint permite a los clientes empresariales detectar, investigar y responder a amenazas avanzadas en su red corporativa. Para obtener más información, consulte [Microsoft Defender for Endpoint.](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
+Actualizaciones del sistema operativo | Escritorio administrado de Microsoft dispositivos siempre están protegidos con las actualizaciones de seguridad más recientes.
+Configuración de dispositivos seguros | Escritorio administrado de Microsoft implementa la línea base de seguridad de Microsoft. Para obtener más información, [vea Windows líneas base de seguridad.](/windows/security/threat-protection/windows-security-baselines)
 
 
 
 ## <a name="identity-and-access-management"></a>Administración de identidad y acceso
 
-La administración de identidades y acceso protege los activos corporativos y los datos críticos para la empresa. Escritorio administrado de Microsoft los dispositivos para garantizar un uso seguro con Azure Active Directory (Azure AD) identidades administradas. Es responsabilidad del cliente mantener información precisa en su inquilino de Azure AD. 
+La administración de identidades y acceso protege los activos corporativos y los datos críticos para la empresa. Escritorio administrado de Microsoft los dispositivos para garantizar un uso seguro con Azure Active Directory (Azure AD) identidades administradas. Es responsabilidad del cliente mantener información precisa en su inquilino de Azure AD.
 
 Servicio | Descripción
 --- | ---
-Autenticación biométrica |  Windows Hello permite a los usuarios iniciar sesión con su rostro o un PIN, lo que dificulta que las contraseñas se olviden o roben. Los clientes son responsables de implementar los requisitos previos necesarios para su Active Directory local para el uso de este servicio en una configuración híbrida. Para obtener más información, [vea Windows Hello.](/windows-hardware/design/device-experiences/windows-hello) 
-Permiso de usuario estándar |  Para proteger el sistema y hacerlo más seguro, se le asignarán permisos de usuario estándar. Este permiso se asigna como parte de la Windows de autopiloto.
+Autenticación biométrica | Windows Hello permite a los usuarios iniciar sesión usando su rostro o un PIN, lo que dificulta que las contraseñas se olviden o roben. Los clientes son responsables de implementar los requisitos previos necesarios para su Active Directory local para el uso de este servicio en una configuración híbrida. Para obtener más información, [vea Windows Hello.](/windows-hardware/design/device-experiences/windows-hello) 
+Permiso de usuario estándar | Para proteger el sistema y hacerlo más seguro, se le asignarán permisos de usuario estándar. Este permiso se asigna como parte de la Windows de autopiloto.
 
 
 
@@ -71,5 +71,5 @@ Puede configurar estos servicios opcionales para ayudar a proteger los activos c
 
 Servicio | Descripción
 --- | ---
-Recuperación de datos  | La información almacenada en las carpetas clave del dispositivo se hace una copia de seguridad de OneDrive para la Empresa. Escritorio administrado de Microsoft no es responsable de los datos que no están sincronizados con OneDrive para la Empresa. 
-Windows Information Protection |    Para las empresas que requieren altos niveles de seguridad de la información, [recomendamos](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) Windows Information Protection y [Azure Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection).
+Recuperación de datos  | La información almacenada en las carpetas clave del dispositivo se hace una copia de seguridad de OneDrive para la Empresa. Escritorio administrado de Microsoft no es responsable de los datos que no están sincronizados con OneDrive para la Empresa.
+Windows Information Protection | Para las empresas que requieren altos niveles de seguridad de la información, [recomendamos](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) Windows Information Protection y [Azure Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection)

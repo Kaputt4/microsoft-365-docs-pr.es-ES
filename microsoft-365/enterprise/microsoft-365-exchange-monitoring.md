@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
-ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
+ms.openlocfilehash: 3d88378449879d451b21ba8bf2a7b5c3032a2c07
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52707301"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286446"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
@@ -133,4 +133,3 @@ Para los comentarios sobre incidentes o avisos use el vínculo **¿Es útil esta
 #### <a name="7-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>7. ¿Dónde están los datos instrumentados para los escenarios que muestran las tendencias de actividad?
 
 Los datos se usan en el servicio de Exchange Online. Si se produce un error antes de que la solicitud llegue a Exchange Online o existe un error en Exchange Online, verá una caída en la señal de actividad.
-

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: fa1d88271593f0278266004d4a170a807e1cbc32
-ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
+ms.openlocfilehash: be5df165ee64a890fbf762e81668420d5d3c88de
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53222687"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287154"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -230,7 +230,7 @@ Tenga en cuenta que este último ejemplo usa el procedimiento recomendado para i
 
 Para identificar las grabaciones de reuniones de Microsoft Teams almacenadas en cuentas de OneDrive de los usuarios o en SharePoint, especifique lo siguiente para el **Editor de consultas de palabras clave**:
 
-``` 
+```
 ProgID:Media AND ProgID:Meeting
 ```
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para eliminar la cuenta de usuario de un antiguo empleado.
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e2e1b234eaee3818321761af8f737bad8d131b62
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782386"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286328"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Paso 7: Eliminar la cuenta de usuario de un antiguo empleado
 
@@ -61,28 +61,36 @@ Si usas Azure Active Directory, consulta el cmdlet [Remove-MsolUser](/powershell
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>Todo lo que debe saber sobre el cierre de la sesión de un empleado
 
 Aquí tiene información sobre cómo quitar a un empleado del correo electrónico (Exchange).
-  
-|||
+
+<br>
+
+****
+
+|Qué puede hacer|Cómo debe hacerlo|
 |:-----|:-----|
-|**Qué puede hacer** <br/> |**Cómo debe hacerlo** <br/> |
-|Cerrar una sesión (de Outlook en la Web, Outlook, Exchange Active Sync, etc.) y forzar el inicio de una sesión nueva  <br/> |Restablecer la contraseña  <br/> |
-|Cerrar una sesión y bloquear el acceso a sesiones futuras (para todos los protocolos)  <br/> |Deshabilite la cuenta. Por ejemplo, (en el centro Exchange administración o mediante PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|Cerrar la sesión de un protocolo en particular (como ActiveSync)  <br/> |Deshabilite el protocolo. Por ejemplo, (en el centro Exchange administración o mediante PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|Cerrar una sesión (de Outlook en la Web, Outlook, Exchange Active Sync, etc.) y forzar el inicio de una sesión nueva|Restablecer la contraseña|
+|Cerrar una sesión y bloquear el acceso a sesiones futuras (para todos los protocolos)|Deshabilite la cuenta. Por ejemplo, (en el centro Exchange administración o mediante PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Cerrar la sesión de un protocolo en particular (como ActiveSync)|Deshabilite el protocolo. Por ejemplo, (en el centro Exchange administración o mediante PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|
 
 Las operaciones anteriores se pueden realizar en tres lugares:
   
-|||
-|:-----|:-----|
-|**Si cierra la sesión aquí** <br/> |**Cuánto tiempo se tarda** <br/> |
-|En el centro de administración de Exchange o usando PowerShell  <br/> |La duración estimada es de 30 minutos  <br/> |
-|En el centro de administración de Azure Active Directory  <br/> |La duración estimada es de 60 minutos  <br/> |
-|En un entorno local  <br/> |La duración estimada es de 3 horas o más  <br/> |
+<br>
+
+****
+
+|Si cierra la sesión aquí|Cuánto tiempo se tarda|
+|---|---|
+|En el centro de administración de Exchange o usando PowerShell|La duración estimada es de 30 minutos|
+|En el centro de administración de Azure Active Directory|La duración estimada es de 60 minutos|
+|En un entorno local|La duración estimada es de 3 horas o más|
+|
 
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>Procedimiento para obtener una respuesta más rápida para la eliminación de la cuenta
 
- **Más rápida**: use el Centro de administración de Exchange (use PowerShell) o el Centro de administración de Azure Active Directory. En un entorno local, el cambio mediante DirSync puede tardar varias horas en sincronizarse.
+**Más rápida**: use el Centro de administración de Exchange (use PowerShell) o el Centro de administración de Azure Active Directory. En un entorno local, el cambio mediante DirSync puede tardar varias horas en sincronizarse.
   
- **Más rápida para un usuario con presencia local y en el centro de datos de Exchange**: finalice la sesión mediante el Centro de administración de Azure Active Directory o el Centro de administración de Exchange Y efectúe también el cambio en el entorno local. En caso contrario, DirSync sobrescribirá el cambio realizado en el Centro de administración de Exchange o el Centro de administración Azure Active Directory.
+**Más rápida para un usuario con presencia local y en el centro de datos de Exchange**: finalice la sesión mediante el Centro de administración de Azure Active Directory o el Centro de administración de Exchange Y efectúe también el cambio en el entorno local. En caso contrario, DirSync sobrescribirá el cambio realizado en el Centro de administración de Exchange o el Centro de administración Azure Active Directory.
   
 ## <a name="related-content"></a>Contenido relacionado
 

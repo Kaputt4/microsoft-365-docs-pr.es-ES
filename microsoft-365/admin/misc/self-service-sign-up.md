@@ -20,30 +20,30 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre el Microsoft 365 de autoservicio y los programas de autoservicio disponibles, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 for Finance.
 ms.date: 03/17/2021
-ms.openlocfilehash: f3427294a94875e21a5e6b99a09056617a7dea99
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7aec03abce468342cfeb23da490b1f950ecd7050
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332383"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286590"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en la organización
 
 El registro de autoservicio facilita que los usuarios de su organización se inscriba en los servicios en línea de Microsoft. Llamamos a este proceso de registro "registro de autoservicio" porque los usuarios pueden registrarse para usar servicios pagados por su suscripción o usar servicios gratuitos, sin pedirle que tome medidas en su nombre.
-  
+
 ## <a name="how-self-service-sign-up-works"></a>Cómo funciona el registro de autoservicio
 
 En el ejemplo siguiente se describe cómo funciona el auto registro para una escuela. El mismo proceso funciona para cualquier organización que tenga programas de autoservicio habilitados en su inquilino.
-  
+
 1. Los alumnos y los miembros del profesorado tienen direcciones de correo electrónico de la escuela que indican que están asociados con su institución. Por ejemplo, la dirección de correo jakob@uw.edu puede indicar un estudiante en la Universidad de Washington.
 2. Los alumnos y profesores van a [nuestro sitio web](https://go.microsoft.com/fwlink/p/?LinkId=536628)y usan su dirección de correo electrónico para registrarse en los servicios que su organización ofrece, como Aplicaciones Microsoft 365 para empresas. También pueden registrarse para otros servicios gratuitos que ofrecemos.
 3. Validamos su dirección de correo electrónico y, a continuación, pueden empezar a usar Microsoft 365, Power BI u otros servicios de inmediato.
-4. Como administrador de la empresa, puede ver quién se ha registrado  para una suscripción seleccionando la suscripción en la página Licencias del centro de administración Microsoft 365 administración. De este modo, puede ver cuándo hay licencias nuevas o no reconocidas para los servicios en su inquilino. Para controlar si los usuarios pueden registrarse para suscripciones de autoservicio, use el cmdlet [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0&preserve-view=true) PowerShell con el parámetro **AllowAdHocSubscriptions.** Para obtener más información, [vea How do I control self-service settings?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+4. Como administrador de la empresa, puede ver quién se ha registrado  para una suscripción seleccionando la suscripción en la página Licencias de la Centro de administración de Microsoft 365. De este modo, puede ver cuándo hay licencias nuevas o no reconocidas para los servicios en su inquilino. Para controlar si los usuarios pueden registrarse para suscripciones de autoservicio, use el cmdlet [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings) PowerShell con el parámetro **AllowAdHocSubscriptions.** Para obtener más información, [vea How do I control self-service settings?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## <a name="available-self-service-programs"></a>Programas de autoservicio disponibles
 
 A continuación se encuentran los programas de autoservicio disponibles actualmente. Esta lista se actualizará a medida que se agregan nuevos programas.
-  
+
 | Programa <br/> | Descripción <br/> | Información adicional <br/> | Sitio web para el registro de autoservicio <br/> |
 |:-----|:-----|:-----|:-----|
 |Office 365 A1**** <br/> |Cualquier alumno o profesor puede usar una dirección de correo electrónico educativa para registrarse para obtener Office 365 gratuito y obtener aplicaciones de Office para la web, 1 TB de almacenamiento en la nube de OneDrive y SharePoint Online para sitios de clase, equipo y proyecto.  <br/> |[Office 365 Educación Preguntas más frecuentes técnicas](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |

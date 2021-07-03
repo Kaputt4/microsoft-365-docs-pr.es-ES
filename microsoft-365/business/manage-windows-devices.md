@@ -24,16 +24,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo habilitar Microsoft 365 proteger los dispositivos locales unidos a Active-Directory Windows 10 en unos pocos pasos.
-ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: eb95c437030ae13a44f5e8043b3544d5846001c2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636094"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287703"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Habilitar dispositivos de Windows 10 unidos a un dominio para que los pueda administrar Microsoft 365 Empresa Premium
 
-Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows 10 y mantener el acceso a los recursos locales que requieren autenticación local.
+Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows 10, al mismo tiempo que mantiene el acceso a los recursos locales que requieren autenticación local.
 Para configurar esta protección, puede implementar **dispositivos híbridos unidos a Azure AD**. Estos dispositivos se unen a su Active Directory local y a su Azure Active Directory.
 
 ## <a name="watch-configure-hybrid-azure-active-directory-join"></a>Watch: Configure Hybrid Azure Active Directory join
@@ -109,13 +109,13 @@ El primer comando establecerá una conexión con la nube de Microsoft y, cuando 
 
 Si no ve la directiva Habilitar la inscripción automática de MDM con credenciales predeterminadas de **Azure AD,** puede deberse a que no tiene el ADMX instalado para Windows 10, versión 1803 o posterior. Para solucionar el problema, siga estos pasos (Nota: la mdm.admx más reciente es compatible con versiones anteriores):
 
-1.  Descargar: [Plantillas administrativas (.admx) para Windows 10 actualización de octubre de 2020 (20H2).](https://www.microsoft.com/download/102157)
-2.  Instale el paquete en un controlador de dominio.
-3.  Navegue, según la versión de plantillas administrativas a la carpeta: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
-4.  Cambie el nombre de la carpeta **Definiciones de** directiva de la ruta de acceso anterior **a PolicyDefinitions**.
-5.  Copie la **carpeta PolicyDefinitions** en el recurso compartido SYSVOL, ubicado de forma predeterminada en **C:\Windows\SYSVOL\domain\Policies**. 
-    -   Si planea usar un almacén de directivas central para todo el dominio, agregue allí el contenido de PolicyDefinitions.
-6.  En caso de que tenga varios controladores de dominio, espere a que SYSVOL se replique para que las directivas estén disponibles. Este procedimiento también funcionará para cualquier versión futura de las plantillas administrativas.
+1. Descargar: [Plantillas administrativas (.admx) para Windows 10 actualización de octubre de 2020 (20H2).](https://www.microsoft.com/download/102157)
+2. Instale el paquete en un controlador de dominio.
+3. Navegue, según la versión de plantillas administrativas a la carpeta: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
+4. Cambie el nombre de la carpeta **Definiciones de** directiva de la ruta de acceso anterior **a PolicyDefinitions**.
+5. Copie la **carpeta PolicyDefinitions** en el recurso compartido SYSVOL, ubicado de forma predeterminada en **C:\Windows\SYSVOL\domain\Policies**.
+   - Si planea usar un almacén de directivas central para todo el dominio, agregue allí el contenido de PolicyDefinitions.
+6. En caso de que tenga varios controladores de dominio, espere a que SYSVOL se replique para que las directivas estén disponibles. Este procedimiento también funcionará para cualquier versión futura de las plantillas administrativas.
 
 En este punto, debería poder ver la directiva Habilitar la inscripción **automática de MDM con las credenciales predeterminadas de Azure AD** disponibles.
 

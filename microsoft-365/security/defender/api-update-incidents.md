@@ -1,6 +1,6 @@
 ---
 title: ACTUALIZAR API de incidentes
-description: Obtenga información sobre cómo actualizar incidentes con la API Microsoft 365 Defender
+description: Obtenga información sobre cómo actualizar incidentes con Microsoft 365 Defender API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861508"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287824"
 ---
 # <a name="update-incidents-api"></a>ACTUALIZAR LA API de incidentes
 
@@ -84,7 +84,7 @@ status | Enum | Especifica el estado actual del incidente. Los valores posibles 
 assignedTo | cadena | Propietario del incidente.
 classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
 determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
-tags | lista de cadenas | Lista de etiquetas de incidentes.
+etiquetas | lista de cadenas | Lista de etiquetas de incidentes.
 comment | string | Comentario que se agregará al incidente.
 
 ## <a name="response"></a>Respuesta
@@ -127,7 +127,7 @@ Este es un ejemplo de la solicitud.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Acceder a las API Microsoft 365 Defender](api-access.md)
+- [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)
 - [Más información sobre los límites de api y las licencias](api-terms.md)
 - [Comprender códigos de error](api-error-codes.md)
 - [API de incidentes](api-incident.md)

@@ -1,7 +1,7 @@
 ---
-title: Usar Microsoft Search para buscar temas en Temas de Microsoft Viva
-ms.author: chuckedmonson
-author: chucked
+title: Use Búsqueda de Microsoft para buscar temas en Temas de Microsoft Viva
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Obtenga información sobre cómo puede buscar temas en Microsoft Viva.
-ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908070"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287262"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Usar Microsoft Search para buscar temas en Temas de Microsoft Viva
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Use Búsqueda de Microsoft para buscar temas en Temas de Microsoft Viva
 
-Aunque los usuarios de Viva Topics pueden encontrar temas a través de temas destacados en sus SharePoint, también pueden encontrarlos a través de Microsoft Search. 
+Aunque los usuarios de Viva Topics pueden encontrar temas a través de temas destacados en sus SharePoint, también pueden encontrarlos a través de Búsqueda de Microsoft. 
 
 ## <a name="topic-answer"></a>Respuesta al tema
 
@@ -41,13 +41,13 @@ Los resultados de la búsqueda en Word, PowerPoint, Outlook y Excel también mos
 
 ## <a name="acronyms"></a>Acrónimos
 
-En Temas de Viva, puede editar manualmente un tema para incluir un acrónimo para él como *un nombre alternativo*. Esto permite que un usuario que está buscando solo por las siglas del tema encuentre la respuesta del tema a través de Microsoft Search.
+En Temas de Viva, puede editar manualmente un tema para incluir un acrónimo para él como *un nombre alternativo*. Esto permite que un usuario que está buscando solo por las siglas del tema encuentre la respuesta del tema a través de Búsqueda de Microsoft.
 
-[Acronym Answers](/microsoftsearch/manage-acronyms) es una característica proporcionada a través de Microsoft Search y se administra por separado de Viva Topics.
+[Acronym Answers](/microsoftsearch/manage-acronyms) es una característica que se proporciona Búsqueda de Microsoft y se administra por separado de Viva Topics.
 
 ## <a name="bookmarks-and-topics"></a>Marcadores y temas
 
-[Los marcadores](/microsoftsearch/manage-bookmarks) son una característica de Microsoft Search que ayuda a los usuarios a encontrar rápidamente sitios y herramientas importantes con solo una búsqueda (por ejemplo, una herramienta de reserva de viajes en un sitio externo fuera de su inquilino de Microsoft 365). Los administradores de búsqueda los crean en el centro de administración Microsoft 365 búsqueda. 
+[Los marcadores](/microsoftsearch/manage-bookmarks) son una Búsqueda de Microsoft que ayuda a los usuarios a encontrar rápidamente sitios y herramientas importantes con solo una búsqueda (por ejemplo, una herramienta de reserva de viajes en un sitio externo fuera de su inquilino Microsoft 365 usuario). Los administradores de búsqueda los crean en el Centro de administración de Microsoft 365. 
 
 Para los usuarios que buscan información sobre cómo reservar un viaje de trabajo:
 
@@ -59,6 +59,6 @@ Para los usuarios que buscan información sobre cómo reservar un viaje de traba
 
 En la experiencia de búsqueda del usuario, cuando un usuario busca un término como "viajes", aparecerá un marcador en lugar de un tema, si hay un marcador disponible.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Introducción a Temas de Viva](topic-experiences-overview.md)

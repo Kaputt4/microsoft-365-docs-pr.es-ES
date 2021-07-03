@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Inicie sesión en su cuenta Microsoft 365 administrador para establecer algunas contraseñas de usuario individuales para que nunca expiren mediante Windows PowerShell.
-ms.openlocfilehash: 12c717d8d625b0135f185b1af131db00e9762c73
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635563"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286278"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual para que nunca expire
 
@@ -35,11 +35,11 @@ En este artículo se explica cómo establecer una contraseña para que un usuari
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../../business-video/admin-center-overview.md). 
+Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../../business-video/admin-center-overview.md).
 
 Debe ser administrador global o administrador [de contraseñas](about-admin-roles.md) para realizar estos pasos.
 
-Un administrador global de un servicio en la nube de Microsoft puede usar el Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) para Graph para establecer las contraseñas para que no expiren para usuarios específicos. También puede usar cmdlets [de AzureAD](/powershell/module/Azuread) para quitar la configuración que no expira nunca o para ver qué contraseñas de usuario están configuradas para que nunca expiren.
+Un administrador global de un servicio en la nube de Microsoft puede usar el Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2) para Graph para establecer las contraseñas para que no expiren para usuarios específicos. También puede usar cmdlets [de AzureAD](/powershell/module/Azuread) para quitar la configuración que no expira nunca o para ver qué contraseñas de usuario están configuradas para que nunca expiren.
 
 Esta guía se aplica a otros proveedores, como Intune y Microsoft 365, que también dependen de Azure AD para los servicios de directorio y identidad. La expiración de contraseña es la única parte de la directiva que se puede cambiar.
 
@@ -48,7 +48,7 @@ Esta guía se aplica a otros proveedores, como Intune y Microsoft 365, que tambi
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Cómo comprobar la directiva de expiración de una contraseña
 
-Para obtener más información acerca del Get-AzureADUser en el módulo AzureAD, vea el artículo de referencia [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
+Para obtener más información acerca del Get-AzureADUser en el módulo AzureAD, vea el artículo de referencia [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser).
 
 Ejecute uno de los siguientes comandos:
 
@@ -66,7 +66,7 @@ Ejecute uno de los siguientes comandos:
     Get-AzureADUser -ObjectId userUPN@contoso.com | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     }
-    ```  
+    ```
 
 - Para ver la **configuración Contraseña nunca expira** para todos los usuarios, ejecute el siguiente cmdlet:
 
@@ -82,7 +82,7 @@ Ejecute uno de los siguientes comandos:
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
-    ```  
+    ```
 
 - Para obtener un informe de todos los usuarios con PasswordNeverExpires en CSV en el escritorio del usuario actual con el nombre **ReportPasswordNeverExpires.csv**
 

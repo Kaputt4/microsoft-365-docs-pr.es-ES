@@ -1,7 +1,7 @@
 ---
-title: Planeación del proyecto piloto Microsoft 365 Defender
-description: Planee su proyecto piloto Microsoft 365 Defender con las partes interesadas para administrar las expectativas y garantizar un resultado correcto.
-keywords: Microsoft 365 Piloto de Defender, plan piloto de proyecto de Microsoft 365 Defender, evaluar Microsoft 365 Defender en producción, proyecto piloto de Microsoft 365 Defender, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
+title: Planeación del proyecto piloto Microsoft 365 Defender proyecto
+description: Planee el proyecto piloto Microsoft 365 Defender con las partes interesadas para administrar las expectativas y garantizar un resultado correcto.
+keywords: Microsoft 365 Defender pilot, plan pilot Microsoft 365 Defender project, evaluate Microsoft 365 Defender in production, Microsoft 365 Defender pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 98f0c91a51cc2b73cc26e6fb53143a417a7a147e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 6a52df8035ce6f84770a2d06c3b8c127e426622e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932552"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286002"
 ---
-# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planeación del proyecto piloto Microsoft 365 Defender 
+# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planeación del proyecto piloto Microsoft 365 Defender proyecto 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51932552"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-|![Planificación](../../media/phase-diagrams/1-planning.png)<br/>Planificación|[![Preparación](../../media/phase-diagrams/2-prepare.png)](prepare-m365d-eval.md)<br/>[Preparación](prepare-m365d-eval.md) | [![Simular ataque](../../media/phase-diagrams/3-simluate.png)](m365d-pilot-simulate.md)<br/>[Simular ataque](m365d-pilot-simulate.md) | [![Cerrar y resumir](../../media/phase-diagrams/4-summary.png)](m365d-pilot-close.md)<br/>[Cerrar y resumir](m365d-pilot-close.md)|
+|![Planificación](../../media/phase-diagrams/1-planning.png)<br/>Planificación|[![Preparar](../../media/phase-diagrams/2-prepare.png)](prepare-m365d-eval.md)<br/>[Preparación](prepare-m365d-eval.md) | [![Simular ataque](../../media/phase-diagrams/3-simluate.png)](m365d-pilot-simulate.md)<br/>[Simular ataque](m365d-pilot-simulate.md) | [![Cerrar y resumir](../../media/phase-diagrams/4-summary.png)](m365d-pilot-close.md)<br/>[Cerrar y resumir](m365d-pilot-close.md)|
 |--|--|--|--|
 |*¡Estás aquí!*| | | |
 
@@ -53,6 +53,7 @@ Esta guía le guiará a través de cómo planear el proyecto piloto.
 ## <a name="scope"></a>Ámbito
 
 El ámbito del piloto determinará la amplitud de la prueba, en función del entorno y de los métodos de prueba aceptables. Estos son algunos ámbitos de ejemplo a tener en cuenta:
+
 - Entorno de desarrollo o prueba que incluye puntos de conexión, servidores, controladores de dominio.
 - Entorno de producción con Microsoft 365, Azure, servicios de Active Directory, puntos de conexión y servidores
 
@@ -64,6 +65,7 @@ Los tipos de sistemas operativos que se deben evaluar también deben definirse e
 ## <a name="use-cases"></a>Casos de uso
 
 Los casos de uso representan instrucciones de cómo la herramienta que se está probando está destinada a ser consumida por los usuarios previstos. Se pueden formular como historias de usuario desde el punto de vista de una persona determinada, como un analista de SOC. Por ejemplo:
+
 - Como analista de SOC, necesito ver, correlacionar, evaluar y administrar alertas y eventos en dispositivos, usuarios y buzones de mi red. [Administración de incidentes]
 - Como analista de SOC, debo tener la herramienta y el proceso para investigar y responder automáticamente a eventos malintencionados en mi red. [Ir automático]
 - Como analista de SOC, debo buscar datos de mi entorno para encontrar amenazas conocidas y potenciales, y actividades sospechosas. [Búsqueda avanzada]
@@ -76,7 +78,7 @@ En la lista de casos de uso, puede empezar a crear requisitos. Entre los requisi
 
 ## <a name="test-plan"></a>Plan de pruebas
 
-Según los requisitos, pueden ser apropiados distintos métodos de prueba. Por ejemplo, si el requisito es evaluar la eficacia de la corrección automatizada, el plan de prueba debe incluir pasos para generar los comportamientos que desencadenarían una acción de corrección automatizada en Microsoft 365 Defender. Si el requisito es detectar un comportamiento o ataque en particular, la prueba puede implicar más pasos. El punto es tener un plan en marcha para probar con precisión sus requisitos.
+Según los requisitos, pueden ser apropiados distintos métodos de prueba. Por ejemplo, si el requisito es evaluar la eficacia de la corrección automatizada, el plan de prueba debe incluir pasos para generar los comportamientos que desencadenarían una acción de corrección automatizada dentro de Microsoft 365 Defender. Si el requisito es detectar un comportamiento o ataque en particular, la prueba puede implicar más pasos. El punto es tener un plan en marcha para probar con precisión sus requisitos.
 
 ## <a name="success-criteria"></a>Criterios de éxito
 
@@ -88,12 +90,11 @@ Una forma de unir todos los elementos del plan puede ser crear un cuadro de mand
 
 | Caso de uso | Requisitos | Requisitos de configuración | Plan de pruebas | Resultado previsto | Estado de la prueba | Puntuación | Notas |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Administración de incidencias|- Microsoft 365 Defender  </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender para endpoint </br></br>- Microsoft Cloud App Security (opcional)|Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información |[Simular ataque](m365d-pilot-simulate.md) <br></br>[Investigar el incidente](./m365d-pilot-simulate.md#investigate-an-incident) |Los investigadores pueden comprender el alcance y el impacto del incidente y administrar el incidente||||
-|AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender para endpoint |Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información <br>Habilitar AutoIR  |[Simular ataque](m365d-pilot-simulate.md) <br></br>[Investigación automatizada](m365d-pilot-simulate.md#automated-investigation-and-remediation) |Las alertas e incidentes son corregidos automáticamente por Microsoft 365 Defender||||
+|Administración de incidencias|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender para endpoint </br></br>- Microsoft Cloud App Security (opcional)|Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información |[Simular ataque](m365d-pilot-simulate.md) <br></br>[Investigar el incidente](./m365d-pilot-simulate.md#investigate-an-incident) |Los investigadores pueden comprender el alcance y el impacto del incidente y administrar el incidente||||
+|AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender para endpoint |Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información <br>Habilitar AutoIR  |[Simular ataque](m365d-pilot-simulate.md) <br></br>[Investigación automatizada](m365d-pilot-simulate.md#automated-investigation-and-remediation) |Las alertas e incidentes se corrigen automáticamente Microsoft 365 Defender||||
 |Búsqueda avanzada de amenazas|- Microsoft 365 Defender </br></br>- Microsoft Defender para endpoint </br></br>-Microsoft Defender para Office 365 |Vea los [requisitos previos](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) para la preparación, la configuración y la configuración para obtener más información|[Escenario de búsqueda avanzada](./m365d-pilot-simulate.md#advanced-hunting-scenario) |Los investigadores pueden encontrar datos a través de búsquedas avanzadas, pivotando en entidades afectadas y creando detecciones personalizadas||||
 
-
-
 ## <a name="next-step"></a>Paso siguiente
-|![Fase de preparación](../../media/mtp/prep.png) <br>[Fase de preparación](prepare-m365d-eval.md) | Preparar el entorno piloto Microsoft 365 Defender
+
+|![Fase de preparación](../../media/mtp/prep.png) <br>[Fase de preparación](prepare-m365d-eval.md) | Preparar el entorno Microsoft 365 Defender piloto
 |:-------|:-----|

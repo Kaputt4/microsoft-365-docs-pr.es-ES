@@ -19,49 +19,33 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809148"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287508"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
 ¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, puede usar el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de [Actividades administrativas y de usuario](#audited-activities) en Microsoft 365:
 
 - Actividad de usuario en SharePoint Online y OneDrive para Empresas
-
 - Actividad del usuario en Exchange en línea (registro de auditoría del buzón de Exchange)
-
 - Actividad de administración en SharePoint en línea
-
 - Actividad de administrador en Azure Active Directory (el servicio de directorio para Microsoft 365)
-
 - Actividad de administración en Exchange en línea (registro de auditoría de administración de Exchange)
-
 - Actividades de eDiscovery en el Centro de seguridad y cumplimiento
-
 - Actividad de usuario y administrador en Power BI
-
 - Actividad de usuario y administrador en Microsoft Teams
-
 - Actividad de usuario y administrador en Dynamics 365
-
 - Actividad de usuario y administrador en Yammer
-
 - Actividad de usuario y administrador en Microsoft Power Automate
-
 - Actividad de usuario y administrador en Microsoft Stream
-
 - Actividad de analista y administrador en Microsoft Workplace Analytics
-
 - Actividad de usuario y administrador en Microsoft Power Apps
-
 - Actividad de usuario y administrador en Microsoft Forms
-
 - Actividad de administrador y usuario para las etiquetas de confidencialidad de los sitios que usan SharePoint Online o Microsoft Teams
-
 - Actividad de administrador en el correo de Informe de tareas pendientes y MyAnalytics
 
 ## <a name="requirements-to-search-the-audit-log"></a>Requisitos para realizar búsquedas en el registro de auditoría
@@ -73,6 +57,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
+
   El valor de `True` para la propiedad *UnifiedAuditLogIngestionEnabled* indica que la búsqueda de registros de auditoría está activada. Para obtener más información, consulte [Desactivar o activar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
 - Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **permisos** del centro de administración de Exchange. Tenga en cuenta que los administradores globales de Office 365 y Microsoft 365 pasan automáticamente a ser miembros del grupo de roles de Administración de la organización en el servicio de Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
@@ -114,8 +99,12 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 - Después de que se produzca un evento, puede llevar de 30 minutos a 24 horas que se devuelva el registro de auditoría correspondiente en los resultados de la búsqueda de registros de auditoría. En la tabla siguiente se muestra el tiempo que tarda para los distintos servicios en Office 365.
 
+  <br>
+
+  ****
+
   |Característica o servicio de Microsoft 365|30 minutos|24 horas|
-  |:-----|:-----:|:-----:|
+  |---|:---:|:---:|
   |Microsoft Defender para Office 365 e Inteligencia sobre amenazas|![Marca de verificación](../media/checkmark.png)||
   |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación](../media/checkmark.png)|
   |Azure Active Directory (eventos administrativos)||![Marca de verificación](../media/checkmark.png)|
@@ -133,9 +122,9 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   |Etiquetas de confidencialidad||![Marca de verificación](../media/checkmark.png)|
   |SharePoint en línea y OneDrive para Empresas|![Marca de verificación](../media/checkmark.png)||
   |Workplace Analytics|![Marca de verificación](../media/checkmark.png)||
-  |Yammer||![Marca de verificación](../media/checkmark.png)||
-  |Microsoft Forms|![Marca de verificación](../media/checkmark.png)|
-  ||||
+  |Yammer||![Marca de verificación](../media/checkmark.png)|
+  |Microsoft Forms|![Marca de verificación](../media/checkmark.png)||
+  |
 
 - Azure Active Directory (AD) es el servicio de directorio para Office 365. El registro de auditoría unificado contiene actividades de usuario, dominio, aplicación, grupo y de directorio que se han realizado en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 

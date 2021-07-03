@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3053e5154fb4e1ff39ce7db366ce4679bbb8911d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918184"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286638"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se pueden entrenar
 
@@ -108,7 +108,7 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
    > [!TIP]
    > Si crea un nuevo sitio y una carpeta para los datos de edificadores, permita al menos una hora para que esa ubicación se indexe antes de crear el clasificador que se puede entrenar que usará los datos de ed.
 
-3. Inicie sesión en el Microsoft 365 de cumplimiento con acceso a roles de administrador de cumplimiento o de administración de seguridad y abra Microsoft 365 centro de cumplimiento **o** Microsoft 365 **de** datos del centro de  >  **seguridad**.
+3. Inicie sesión para iniciar sesión Centro de cumplimiento de Microsoft 365 el acceso de roles de administrador de seguridad o administrador de cumplimiento y Centro de cumplimiento de Microsoft 365 **o** Microsoft 365 clasificación de datos del **centro**  >  **de seguridad**.
 
 4. Elija la **pestaña Clasificadores que se pueden entrenar.**
 

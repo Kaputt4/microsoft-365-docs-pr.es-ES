@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105691"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286962"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación Windows 10 dispositivos con directiva de grupo 
 
@@ -36,28 +36,25 @@ ms.locfileid: "53105691"
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
-
 > [!NOTE]
 > Para usar las actualizaciones de directiva de grupo (GP) para implementar el paquete, debe estar en Windows Server 2008 R2 o posterior.
-> 
+>
 > Para Windows Server 2019, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de directiva de grupo.
 
 ## <a name="onboard-devices-using-group-policy"></a>Incorporar dispositivos con la directiva de grupo
 
 [![Imagen del PDF que muestra las distintas rutas de implementación](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
-Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint. 
-
-
+Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
 
 1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/):
- 
+
     1. En el panel de navegación, **seleccione Configuración**  >  **Incorporación**.
 
     1. Seleccione Windows 10 como sistema operativo.
-    
+
     1. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
-    
+
     1. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
 2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada *OptionalParamsPolicy* y el archivo *WindowsDefenderATPOnboardingScript.cmd*.
@@ -76,7 +73,7 @@ Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 
 9. Haga **clic en Aceptar** y cierre las ventanas GPMC abiertas.
 
->[!TIP]
+> [!TIP]
 > Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que el dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo defender para endpoint](run-detection-test.md)recién incorporado.
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Opciones adicionales de configuración de Defender para puntos de conexión
@@ -85,31 +82,31 @@ Para cada dispositivo, puedes especificar si se pueden recopilar muestras del di
 Puede usar la directiva de grupo (GP) para configurar opciones, como las opciones para el uso compartido de muestras usado en la característica de análisis profundo.
 
 ### <a name="configure-sample-collection-settings"></a>Configuración de la colección de ejemplo
-1.  En el dispositivo de administración de GP, copie los siguientes archivos del paquete de configuración:
+
+1. En el dispositivo de administración de GP, copie los siguientes archivos del paquete de configuración:
 
     - Copiar _AtpConfiguration.admx_ en _C: \\ Windows \\ PolicyDefinitions_
 
     - Copiar _AtpConfiguration.adml_ en _C: \\ Windows \\ PolicyDefinitions \\ en-US_
 
     Si usa un Almacén central para plantillas administrativas de directiva [de](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)grupo, copie los siguientes archivos del paquete de configuración:
-    
+
     - Copiar _AtpConfiguration.admx_ en _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions_
 
     - Copiar _AtpConfiguration.adml_ en _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions \\ en-US_
 
-2.  Abra la [Consola de administración de directivas de grupo,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)haga clic con el botón secundario en el GPO que desea configurar y haga clic en **Editar**.
+2. Abra la [Consola de administración de directivas de grupo,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)haga clic con el botón secundario en el GPO que desea configurar y haga clic en **Editar**.
 
-3.  En el **Editor de administración de directivas de** grupo, vaya a Configuración del **equipo**.
+3. En el **Editor de administración de directivas de** grupo, vaya a Configuración del **equipo**.
 
-4.  Haga **clic en Directivas** y, a **continuación, en Plantillas administrativas.**
+4. Haga **clic en Directivas** y, a **continuación, en Plantillas administrativas.**
 
-5.  Haga **clic Windows componentes y,** a **continuación, Windows Defender SmartScreen**.
+5. Haga **clic Windows componentes y,** a **continuación, Windows Defender SmartScreen**.
 
-6.  Elige habilitar o deshabilitar el uso compartido de muestras desde tus dispositivos.
+6. Elige habilitar o deshabilitar el uso compartido de muestras desde tus dispositivos.
 
->[!NOTE]
+> [!NOTE]
 > Si no establece un valor, el valor predeterminado es habilitar la colección de muestras.
-
 
 ## <a name="other-recommended-configuration-settings"></a>Otras opciones de configuración recomendadas
 
@@ -121,50 +118,49 @@ Todas las directivas se encuentran en `Computer Configuration\Policies\Administr
 
 **Ubicación de la directiva:** \Windows Components\Windows Defender ATP
 
-Directiva | Configuración 
+Policy | Setting
 :---|:---
-Enable\Disable Sample (colección)|   Habilitado: "Habilitar la colección de muestras en máquinas" activada
+Enable\Disable Sample (colección)| Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
-<br/>
+<br>
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender
 
-Directiva | Configuración 
+Policy | Setting
 :---|:---
 Configurar la detección para aplicaciones potencialmente no deseadas | Enabled, Block
 
-<br/>
+<br>
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\MAPS
 
-Directiva | Configuración 
+Policy | Setting
 :---|:---
 Unirse a Microsoft MAPS | Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
 
-<br/>
+<br>
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Real-time Protection
 
-Directiva | Configuración 
+Policy | Setting
 :---|:---
 Desactivar la protección en tiempo real|Deshabilitado
 Activar la supervisión del comportamiento|Habilitado
 Examinar todos los archivos y datos adjuntos descargados|Habilitado
 Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
-<br/>
+<br>
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Scan
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Directiva | Configuración 
+Policy | Setting 
 :---|:---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
-
-<br/>
+<br>
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Protección contra vulnerabilidades de seguridad de Microsoft Defender\Attack Surface Reduction
 
@@ -182,15 +178,12 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
    ![Imagen de configuración de reducción de superficie de ataque](images/asr-guid.png)
 
-
-
-Directiva | Configuración 
+Policy | Setting
 :---|:---
 Configurar acceso controlado a carpetas| Habilitado, modo auditoría
 
-
-
 ## <a name="offboard-devices-using-group-policy"></a>Dispositivos offboard con directiva de grupo
+
 Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
 
 > [!NOTE]
@@ -201,7 +194,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
     1. En el panel de navegación, **seleccione Configuración**  >  **Offboarding**.
 
     1. Seleccione Windows 10 como sistema operativo.
-    
+
     1. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
 
     1. Haga **clic en Descargar paquete** y guarde el .zip archivo.
@@ -225,11 +218,12 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 > [!IMPORTANT]
 > Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
 
-
 ## <a name="monitor-device-configuration"></a>Supervisar la configuración del dispositivo
+
 Con la directiva de grupo no hay una opción para supervisar la implementación de directivas en los dispositivos. La supervisión se puede realizar directamente en el portal o mediante las distintas herramientas de implementación.
 
 ## <a name="monitor-devices-using-the-portal"></a>Supervisar dispositivos con el portal
+
 1. Vaya a [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/).
 2. Haga clic **en Lista dispositivos**.
 3. Compruebe que aparecen dispositivos.
@@ -237,8 +231,8 @@ Con la directiva de grupo no hay una opción para supervisar la implementación 
 > [!NOTE]
 > Los dispositivos pueden tardar varios días en aparecer en la **lista Dispositivos.** Esto incluye el tiempo que tardan las directivas en distribuirse en el dispositivo, el tiempo que tarda antes de que el usuario inicie sesión y el tiempo que tarda el punto de conexión en iniciar la presentación de informes.
 
-
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Incorporar Windows 10 dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
 - [Incorporar dispositivos Windows 10 mediante un script local](configure-endpoints-script.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169597"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256536"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -70,13 +70,14 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
 2. Seleccione **Nueva Directiva de retención** para iniciar el Asistente para crear directivas de retención y asignar un nombre a su nueva Directiva de retención.
 
-3. Para la página **Elegir ubicaciones para aplicar la directiva**, seleccione una o ambas ubicaciones para Teams: **mensaje de canal de Teams** y **chats de Teams**.
-
-   En **los mensajes de canal de Teams**, se incluyen los mensajes de los canales estándar, pero no los de [canales privados](/microsoftteams/private-channels). Actualmente, los canales privados no son compatibles con las directivas de retención.
-
+3. En la página **Elegir ubicaciones para aplicar la directiva**, seleccione una o todas las ubicaciones para Teams:
+    - **Mensaje del canal de Teams**: mensajes de los chats del canal estándar y de las reuniones del canal estándar, pero no de los [canales privados](/microsoftteams/private-channels) que tienen su propia directiva de localización.
+    - **Chats de Teams**: mensajes de chats privados 1:1, chats grupales y chats de reunión.
+    - **Mensajes del canal privado de Teams**: Mensajes de chats de canales privados y reuniones de canales privados. Esta opción se está implementando actualmente en la versión preliminar y si no ve la opción reflejada, inténtelo de nuevo en unos días.
+    
    De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](#a-policy-with-specific-inclusions-or-exclusions). Pero, antes de cambiar el valor predeterminado, tenga en cuenta las siguientes consecuencias para una directiva de retención que elimina los mensajes cuando está configurada para incluir o excluir:
     
-    - En el caso de los chats de grupo, como se guarda una copia de los mensajes en el buzón de cada usuario incluido en el chat, se seguirán devolviendo copias de los mensajes en los resultados de eDiscovery de los usuarios a los que no se les asignó la directiva.
+    - En el caso de los mensajes de los chats de grupo y los mensajes de los canales privados, como se guarda una copia de los mensajes en el buzón de cada usuario incluido en el chat, se seguirán devolviendo copias de los mensajes en los resultados de eDiscovery de los usuarios a los que no se les asignó la directiva.
     - En el caso de los usuarios a los que no se les haya asignado la directiva, los mensajes eliminados se devolverán en los resultados de la búsqueda de Teams, pero no mostrarán el contenido del mensaje como resultado de la eliminación permanente de la directiva asignada a los usuarios.
 
 4. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
@@ -182,11 +183,15 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Información de configuración para el correo electrónico de Exchange y las carpetas públicas de Exchange
 
-La ubicación del **correo electrónico de Exchange** admite la retención para el correo electrónico, el calendario y otros elementos del buzón de correo del usuario al aplicar la configuración de retención en el nivel de buzón.
+La ubicación del **correo electrónico de Exchange** admite la retención para el correo electrónico, el calendario y otros elementos del buzón de correo del usuario al aplicar la configuración de retención en el nivel de buzón. También son compatibles los buzones compartidos.
 
-Para obtener información detallada sobre los elementos que se incluyen y excluyen al configurar las opciones de retención para Exchange, consulte [¿Qué se incluye para la retención y eliminación?](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+Cuando se aplica la configuración de retención a **Todos los destinatarios**, se incluyen los [buzones inactivos](create-and-manage-inactive-mailboxes.md). Sin embargo, si cambia este valor predeterminado y configura [inclusiones o exclusiones específicas](#a-policy-with-specific-inclusions-or-exclusions), los buzones inactivos no son compatibles y la configuración de retención no se aplicará ni se excluirá para esos buzones.
 
-Tenga en cuenta que aunque un grupo de Microsoft 365 tenga un buzón de Exchange, una directiva de retención que incluya toda la ubicación de **correo electrónico de Exchange** no incluirá el contenido de los buzones de correo del grupo de Microsoft 365. Para conservar el contenido de estos buzones, seleccione la ubicación de **Grupos de Microsoft 365**.
+Además, los buzones de recursos y los buzones de grupo de Microsoft 365 no son compatibles con el valor predeterminado de **Todos los destinatarios**, ni con inclusiones o exclusiones específicas. Para los buzones de grupo de Microsoft 365, seleccione en su lugar la ubicación de **Microsoft 365 Groups**.
+
+Si elige destinatarios para incluir o excluir, puede seleccionar grupos de distribución y grupos de seguridad habilitados para el correo electrónico. Entre bastidores, estos grupos se amplían automáticamente en el momento de la configuración para seleccionar los buzones de los usuarios del grupo. Si los miembros de esos grupos cambian más tarde, una directiva de retención existente no se actualiza automáticamente.
+
+Para obtener información detallada sobre los elementos del buzón de correo que se incluyen y excluyen cuando se configuran las opciones de retención para Exchange, consulte [Qué se incluye para la retención y la eliminación](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
 La ubicación de las **carpetas públicas de Exchange** aplica la configuración de retención a todas las carpetas públicas y no se puede aplicar en el nivel de carpeta o de buzón de correo.
 

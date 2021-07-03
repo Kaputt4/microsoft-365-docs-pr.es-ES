@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: eec4869c5ff0b4caeedc52891a56d604c4b54348
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842727"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286038"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -38,8 +38,8 @@ Al definir directivas para barreras de información, trabajará con atributos de
 - Los atributos de cuenta de usuario están definidos en Azure Active Directory (o Exchange Online). Estos atributos pueden incluir departamento, puesto, ubicación, nombre del equipo y otros detalles del perfil de trabajo. 
 - Los segmentos son conjuntos de usuarios que se definen en el Centro de seguridad & cumplimiento mediante un atributo **de cuenta de usuario seleccionado.** (Consulte la[ lista de atributos admitidos](information-barriers-attributes.md)).
 - Las directivas de barrera de información determinan los límites o restricciones de comunicación. Al definir directivas de barrera de información, puede elegir entre dos tipos de directivas:
-    - Las directivas de "bloqueo" impiden que un segmento se comunique con otro segmento.
-    - Las directivas de "permitir" permiten que un segmento se comunique solo con ciertos otros segmentos.
+  - Las directivas de "bloqueo" impiden que un segmento se comunique con otro segmento.
+  - Las directivas de "permitir" permiten que un segmento se comunique solo con ciertos otros segmentos.
 - La administración de directivas se realiza después de definir todas las directivas de barrera de información y está listo para aplicarlas en su organización.
 
 ## <a name="the-work-flow-at-a-glance"></a>El flujo de trabajo de un vistazo
@@ -71,8 +71,8 @@ Además de las licencias y permisos [necesarios,](information-barriers.md#requir
 - Sin directivas de libreta de direcciones: antes de definir y aplicar directivas de barrera de información, asegúrese de que no Exchange directivas de libreta de direcciones. Las barreras de información se basan en las directivas de libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de quitar primero [las directivas de la libreta de direcciones.](/exchange/address-books/address-book-policies/remove-an-address-book-policy) Una vez habilitadas las directivas de barrera de  información y habilitada la libreta jerárquica [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) de direcciones, todos los usuarios que no estén incluidos en un segmento de barrera de información verán la libreta jerárquica de direcciones en Exchange en línea.
 
 - PowerShell: actualmente, las directivas de barrera de información se definen y administran en el Centro de Office 365 seguridad & cumplimiento con cmdlets de PowerShell. Aunque en este artículo se proporcionan varios ejemplos, deberá familiarizarse con los cmdlets y parámetros de PowerShell. También necesitará el módulo Azure PowerShell.
-    - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
-    - [Instalar el Azure PowerShell módulo](/powershell/azure/install-az-ps?view=azps-2.3.2)
+  - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
+  - [Instalar el Azure PowerShell módulo](/powershell/azure/install-az-ps)
 
 - Consentimiento de los administradores para las barreras de información en Microsoft Teams: cuando las directivas del IB están en su lugar, pueden quitar usuarios que no son del IB de grupos (es decir, canales Teams, que se basan en grupos). Esta configuración ayuda a garantizar que la organización cumpla con las directivas y las normativas. Use el siguiente procedimiento para permitir que las directivas de barrera de información funcionen según lo esperado en Microsoft Teams.
 
@@ -91,10 +91,9 @@ Además de las licencias y permisos [necesarios,](information-barriers.md#requir
    1. Cuando se le pida, inicie sesión con su cuenta de trabajo o escuela para Office 365.
 
    1. En el **cuadro de diálogo Permisos solicitados,** revise la información y, a continuación, elija **Aceptar**. Los permisos solicitados por la aplicación se indican a continuación.
-      
+
       > [!div class="mx-imgBorder"]
       > ![imagen](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
-
 
 Cuando se cumplan todos los requisitos previos, continúe con la siguiente sección.
 
@@ -149,7 +148,7 @@ Después de definir los segmentos, continúe con la [definición de directivas d
 
 En el siguiente ejemplo, estamos definiendo un segmento de modo que "Department es igual a HR". 
 
-| Ejemplo: | Nota |
+| Ejemplo | Nota |
 |:----------|:-------|
 |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` | Observe que en este ejemplo, la definición de segmento incluye un parámetro "igual" que se indica como **-eq**. |
 
@@ -199,7 +198,7 @@ Por ejemplo, supongamos que desea bloquear las comunicaciones entre el segmento 
 
 2. Para definir el segundo segmento de bloqueo, use de nuevo el cmdlet **New-InformationBarrierPolicy** con el parámetro **SegmentsBlocked,** esta vez con los segmentos invertidos.
 
-    | Ejemplo: | Nota |
+    | Ejemplo | Nota |
     |:----------|:-------|
     |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` | En este ejemplo, definimos una directiva denominada *Research-Sales* para impedir que *Research* se comunique con *Sales*. |
 
@@ -316,7 +315,7 @@ Con los segmentos definidos, Contoso continúa con la definición de directivas.
 
 Contoso define tres directivas, como se describe en la tabla siguiente:
 
-| Directiva | Definición de directiva |
+| Policy | Definición de directiva |
 |:---------|:--------------------|
 | **Directiva 1: impedir que Ventas se comunique con Investigación** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> En este ejemplo, la directiva de barrera de información se denomina *Ventas-Investigación*. Cuando esta directiva esté activa y se aplique, le ayudará a evitar que los usuarios que se encuentran en el segmento Ventas se comuniquen con usuarios en el segmento Investigación. Esta directiva es una directiva uni-way; no impedirá que Research se comunique con Sales. Para eso, es necesaria la directiva 2. |
 | **Directiva 2: impedir que Investigación se comunique con Ventas** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> En este ejemplo, la directiva de barrera de información se denomina *Investigación-Ventas*. Cuando esta directiva esté activa y se aplique, le ayudará a evitar que los usuarios que se encuentran en el segmento Investigación se comuniquen con usuarios en el segmento Ventas. |

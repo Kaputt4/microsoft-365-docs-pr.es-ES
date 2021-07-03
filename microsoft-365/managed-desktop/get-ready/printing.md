@@ -10,17 +10,17 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3f77074aa11e9dc82c8fac9763fdebfd2fc49d99
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574552"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287214"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Preparar recursos de impresión para el Escritorio administrado de Microsoft
 
 A medida que esté listo para inscribirse en Escritorio administrado de Microsoft, debe evaluar los requisitos de impresión y determinar el enfoque adecuado para su entorno. Tiene tres opciones:
- 
+
 - Implemente la solución de impresión universal de Microsoft para que sea Escritorio administrado de Microsoft dispositivos detectar impresoras. Para obtener más información, vea [What is Universal Print](/universal-print/fundamentals/universal-print-whatis).
 - Implemente impresoras directamente mediante un script de PowerShell personalizado. Siga los pasos de la [sección Configurar impresoras](#set-up-local-printers) locales.
 - Use una solución de impresión en la nube que no sea de Microsoft que sea compatible con Windows 10 dispositivos unidos a un dominio Azure Active Directory usuario. La solución debe cumplir los requisitos de software para Escritorio administrado de Microsoft. Para obtener más información, [Escritorio administrado de Microsoft requisitos de la aplicación](../service-description/mmd-app-requirements.md).
@@ -31,13 +31,13 @@ En todos los casos, si los controladores de impresora no están disponibles en M
 
 Si ha decidido implementar impresoras mediante un script de PowerShell personalizado y ha preparado los recursos de impresión, siga estos pasos para que las impresoras compartidas se implementen:
 
-1.  Vaya al portal de Escritorio administrado de Microsoft web.
-2.  Envíe una solicitud con la etiqueta *Implementación* de impresora en la sección Solicitudes de soporte **> soporte** técnico del Portal de administración, proporcionando estos detalles:
+1. Vaya al portal de Escritorio administrado de Microsoft web.
+2. Envíe una solicitud con la etiqueta *Implementación* de impresora en la sección Solicitudes de soporte **> soporte** técnico del Portal de administración, proporcionando estos detalles:
     - Todas las rutas unc a las ubicaciones de impresora compartidas que se deben implementar para Escritorio administrado de Microsoft dispositivos
     - Grupos de usuarios que requieren acceso a estas impresoras compartidas
-3.  Con el Portal de administración, le haremos saber cuándo se ha completado la solicitud. Inicialmente, solo implementaremos la configuración en los dispositivos del grupo de implementación de prueba.
-4.  Debe probar y confirmar si la configuración funciona como espera. Responda mediante la pestaña **Discusión** de la solicitud de soporte técnico para que sepamos cuándo ha completado las pruebas.
-5.  A continuación, implementaremos la configuración en los otros grupos de implementación.
+3. Con el Portal de administración, le haremos saber cuándo se ha completado la solicitud. Inicialmente, solo implementaremos la configuración en los dispositivos del grupo de implementación de prueba.
+4. Debe probar y confirmar si la configuración funciona como espera. Responda mediante la pestaña **Discusión** de la solicitud de soporte técnico para que sepamos cuándo ha completado las pruebas.
+5. A continuación, implementaremos la configuración en los otros grupos de implementación.
 
 ## <a name="steps-to-get-ready"></a>Pasos para prepararse
 
