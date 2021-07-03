@@ -12,88 +12,89 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
+ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f06973bc45ecac05c15d48afe5f0e2e9e7788f78
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d52e1b69311c26144684b90545e17934d1223332
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770756"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287860"
 ---
-# <a name="list-machines-api"></a><span data-ttu-id="55bc1-104">ENUMERAR API de máquinas</span><span class="sxs-lookup"><span data-stu-id="55bc1-104">List machines API</span></span>
+# <a name="list-machines-api"></a><span data-ttu-id="ddb4e-104">ENUMERAR API de máquinas</span><span class="sxs-lookup"><span data-stu-id="ddb4e-104">List machines API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="55bc1-105">**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="55bc1-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="ddb4e-105">**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="ddb4e-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="55bc1-106">¿Desea experimentar Microsoft Defender para endpoint?</span><span class="sxs-lookup"><span data-stu-id="55bc1-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="55bc1-107">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="55bc1-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="ddb4e-106">¿Desea experimentar Microsoft Defender para endpoint?</span><span class="sxs-lookup"><span data-stu-id="ddb4e-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="ddb4e-107">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="55bc1-108">Descripción de la API</span><span class="sxs-lookup"><span data-stu-id="55bc1-108">API description</span></span>
-<span data-ttu-id="55bc1-109">Recupera una colección de [máquinas](machine.md) que se han comunicado con Microsoft Defender para la nube de extremo.</span><span class="sxs-lookup"><span data-stu-id="55bc1-109">Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender for Endpoint cloud.</span></span>
-<br><span data-ttu-id="55bc1-110">Admite [consultas de OData V4](https://www.odata.org/documentation/).</span><span class="sxs-lookup"><span data-stu-id="55bc1-110">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
-<br><span data-ttu-id="55bc1-111">La consulta de OData `$filter` se admite en: `computerDnsName` , , , y `lastSeen` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .</span><span class="sxs-lookup"><span data-stu-id="55bc1-111">The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.</span></span>
-<br><span data-ttu-id="55bc1-112">Vea ejemplos en [consultas de OData con Defender para endpoint](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="55bc1-112">See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
+## <a name="api-description"></a><span data-ttu-id="ddb4e-108">Descripción de la API</span><span class="sxs-lookup"><span data-stu-id="ddb4e-108">API description</span></span>
+<span data-ttu-id="ddb4e-109">Recupera una colección de [máquinas](machine.md) que se han comunicado con Microsoft Defender para la nube de extremo.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-109">Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender for Endpoint cloud.</span></span>
+<br><span data-ttu-id="ddb4e-110">Admite [consultas de OData V4](https://www.odata.org/documentation/).</span><span class="sxs-lookup"><span data-stu-id="ddb4e-110">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
+<br><span data-ttu-id="ddb4e-111">La consulta de OData `$filter` se admite en: `computerDnsName` , , , y `lastSeen` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .</span><span class="sxs-lookup"><span data-stu-id="ddb4e-111">The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.</span></span>
+<br><span data-ttu-id="ddb4e-112">Vea ejemplos en [consultas de OData con Defender para endpoint](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="ddb4e-112">See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="55bc1-113">Limitaciones</span><span class="sxs-lookup"><span data-stu-id="55bc1-113">Limitations</span></span>
-1. <span data-ttu-id="55bc1-114">Puedes obtener dispositivos vistos por última vez según el período de retención configurado.</span><span class="sxs-lookup"><span data-stu-id="55bc1-114">You can get devices last seen according to your configured retention period.</span></span>
-2. <span data-ttu-id="55bc1-115">El tamaño máximo de página es 10.000.</span><span class="sxs-lookup"><span data-stu-id="55bc1-115">Maximum page size is 10,000.</span></span>
-3. <span data-ttu-id="55bc1-116">Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.</span><span class="sxs-lookup"><span data-stu-id="55bc1-116">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
+## <a name="limitations"></a><span data-ttu-id="ddb4e-113">Limitaciones</span><span class="sxs-lookup"><span data-stu-id="ddb4e-113">Limitations</span></span>
+1. <span data-ttu-id="ddb4e-114">Puedes obtener dispositivos vistos por última vez según el período de retención configurado.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-114">You can get devices last seen according to your configured retention period.</span></span>
+2. <span data-ttu-id="ddb4e-115">El tamaño máximo de página es 10.000.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-115">Maximum page size is 10,000.</span></span>
+3. <span data-ttu-id="ddb4e-116">Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-116">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="55bc1-117">Permisos</span><span class="sxs-lookup"><span data-stu-id="55bc1-117">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ddb4e-117">Permisos</span><span class="sxs-lookup"><span data-stu-id="ddb4e-117">Permissions</span></span>
 
-<span data-ttu-id="55bc1-118">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="55bc1-118">Permission type</span></span> |   <span data-ttu-id="55bc1-119">Permiso</span><span class="sxs-lookup"><span data-stu-id="55bc1-119">Permission</span></span>  |   <span data-ttu-id="55bc1-120">Nombre para mostrar de permisos</span><span class="sxs-lookup"><span data-stu-id="55bc1-120">Permission display name</span></span>
+<span data-ttu-id="ddb4e-118">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="ddb4e-118">Permission type</span></span> |   <span data-ttu-id="ddb4e-119">Permiso</span><span class="sxs-lookup"><span data-stu-id="ddb4e-119">Permission</span></span>  |   <span data-ttu-id="ddb4e-120">Nombre para mostrar de permisos</span><span class="sxs-lookup"><span data-stu-id="ddb4e-120">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="55bc1-121">Aplicación</span><span class="sxs-lookup"><span data-stu-id="55bc1-121">Application</span></span> |   <span data-ttu-id="55bc1-122">Machine.Read.All</span><span class="sxs-lookup"><span data-stu-id="55bc1-122">Machine.Read.All</span></span> |  <span data-ttu-id="55bc1-123">'Leer todos los perfiles de máquina'</span><span class="sxs-lookup"><span data-stu-id="55bc1-123">'Read all machine profiles'</span></span>
-<span data-ttu-id="55bc1-124">Aplicación</span><span class="sxs-lookup"><span data-stu-id="55bc1-124">Application</span></span> |   <span data-ttu-id="55bc1-125">Machine.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="55bc1-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="55bc1-126">'Leer y escribir toda la información de la máquina'</span><span class="sxs-lookup"><span data-stu-id="55bc1-126">'Read and write all machine information'</span></span>
-<span data-ttu-id="55bc1-127">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="55bc1-127">Delegated (work or school account)</span></span> | <span data-ttu-id="55bc1-128">Machine.Read</span><span class="sxs-lookup"><span data-stu-id="55bc1-128">Machine.Read</span></span> | <span data-ttu-id="55bc1-129">'Leer información de máquina'</span><span class="sxs-lookup"><span data-stu-id="55bc1-129">'Read machine information'</span></span>
-<span data-ttu-id="55bc1-130">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="55bc1-130">Delegated (work or school account)</span></span> | <span data-ttu-id="55bc1-131">Machine.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="55bc1-131">Machine.ReadWrite</span></span> | <span data-ttu-id="55bc1-132">'Leer y escribir información de máquina'</span><span class="sxs-lookup"><span data-stu-id="55bc1-132">'Read and write machine information'</span></span>
+<span data-ttu-id="ddb4e-121">Aplicación</span><span class="sxs-lookup"><span data-stu-id="ddb4e-121">Application</span></span> |   <span data-ttu-id="ddb4e-122">Machine.Read.All</span><span class="sxs-lookup"><span data-stu-id="ddb4e-122">Machine.Read.All</span></span> |  <span data-ttu-id="ddb4e-123">'Leer todos los perfiles de máquina'</span><span class="sxs-lookup"><span data-stu-id="ddb4e-123">'Read all machine profiles'</span></span>
+<span data-ttu-id="ddb4e-124">Aplicación</span><span class="sxs-lookup"><span data-stu-id="ddb4e-124">Application</span></span> |   <span data-ttu-id="ddb4e-125">Machine.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ddb4e-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="ddb4e-126">'Leer y escribir toda la información de la máquina'</span><span class="sxs-lookup"><span data-stu-id="ddb4e-126">'Read and write all machine information'</span></span>
+<span data-ttu-id="ddb4e-127">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="ddb4e-127">Delegated (work or school account)</span></span> | <span data-ttu-id="ddb4e-128">Machine.Read</span><span class="sxs-lookup"><span data-stu-id="ddb4e-128">Machine.Read</span></span> | <span data-ttu-id="ddb4e-129">'Leer información de máquina'</span><span class="sxs-lookup"><span data-stu-id="ddb4e-129">'Read machine information'</span></span>
+<span data-ttu-id="ddb4e-130">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="ddb4e-130">Delegated (work or school account)</span></span> | <span data-ttu-id="ddb4e-131">Machine.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ddb4e-131">Machine.ReadWrite</span></span> | <span data-ttu-id="ddb4e-132">'Leer y escribir información de máquina'</span><span class="sxs-lookup"><span data-stu-id="ddb4e-132">'Read and write machine information'</span></span>
 
 >[!Note]
-> <span data-ttu-id="55bc1-133">Al obtener un token con credenciales de usuario:</span><span class="sxs-lookup"><span data-stu-id="55bc1-133">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="55bc1-134">El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)</span><span class="sxs-lookup"><span data-stu-id="55bc1-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="55bc1-135">La respuesta incluirá solo dispositivos a los que el usuario tenga acceso, en función de la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)</span><span class="sxs-lookup"><span data-stu-id="55bc1-135">Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="ddb4e-133">Al obtener un token con credenciales de usuario:</span><span class="sxs-lookup"><span data-stu-id="ddb4e-133">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="ddb4e-134">El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)</span><span class="sxs-lookup"><span data-stu-id="ddb4e-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="ddb4e-135">La respuesta incluirá solo dispositivos a los que el usuario tenga acceso, en función de la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)</span><span class="sxs-lookup"><span data-stu-id="ddb4e-135">Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="55bc1-136">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="55bc1-136">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ddb4e-136">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="ddb4e-136">HTTP request</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="55bc1-137">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="55bc1-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ddb4e-137">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="ddb4e-137">Request headers</span></span>
 
-<span data-ttu-id="55bc1-138">Nombre</span><span class="sxs-lookup"><span data-stu-id="55bc1-138">Name</span></span> | <span data-ttu-id="55bc1-139">Tipo</span><span class="sxs-lookup"><span data-stu-id="55bc1-139">Type</span></span> | <span data-ttu-id="55bc1-140">Descripción</span><span class="sxs-lookup"><span data-stu-id="55bc1-140">Description</span></span>
+<span data-ttu-id="ddb4e-138">Nombre</span><span class="sxs-lookup"><span data-stu-id="ddb4e-138">Name</span></span> | <span data-ttu-id="ddb4e-139">Tipo</span><span class="sxs-lookup"><span data-stu-id="ddb4e-139">Type</span></span> | <span data-ttu-id="ddb4e-140">Descripción</span><span class="sxs-lookup"><span data-stu-id="ddb4e-140">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="55bc1-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="55bc1-141">Authorization</span></span> | <span data-ttu-id="55bc1-142">Cadena</span><span class="sxs-lookup"><span data-stu-id="55bc1-142">String</span></span> | <span data-ttu-id="55bc1-143">Portador {token}.</span><span class="sxs-lookup"><span data-stu-id="55bc1-143">Bearer {token}.</span></span> <span data-ttu-id="55bc1-144">**Necesario**.</span><span class="sxs-lookup"><span data-stu-id="55bc1-144">**Required**.</span></span>
+<span data-ttu-id="ddb4e-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="ddb4e-141">Authorization</span></span> | <span data-ttu-id="ddb4e-142">Cadena</span><span class="sxs-lookup"><span data-stu-id="ddb4e-142">String</span></span> | <span data-ttu-id="ddb4e-143">Portador {token}.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-143">Bearer {token}.</span></span> <span data-ttu-id="ddb4e-144">**Necesario**.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-144">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="55bc1-145">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="55bc1-145">Request body</span></span>
-<span data-ttu-id="55bc1-146">En blanco</span><span class="sxs-lookup"><span data-stu-id="55bc1-146">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="ddb4e-145">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="ddb4e-145">Request body</span></span>
+<span data-ttu-id="ddb4e-146">En blanco</span><span class="sxs-lookup"><span data-stu-id="ddb4e-146">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="55bc1-147">Respuesta</span><span class="sxs-lookup"><span data-stu-id="55bc1-147">Response</span></span>
-<span data-ttu-id="55bc1-148">Si se realiza correctamente y las máquinas existen: 200 Aceptar con una lista [de](machine.md) entidades de máquina en el cuerpo.</span><span class="sxs-lookup"><span data-stu-id="55bc1-148">If successful and machines exists - 200 OK with list of [machine](machine.md) entities in the body.</span></span> <span data-ttu-id="55bc1-149">Si no hay máquinas recientes: 404 No se encontró.</span><span class="sxs-lookup"><span data-stu-id="55bc1-149">If no recent machines - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="ddb4e-147">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ddb4e-147">Response</span></span>
+<span data-ttu-id="ddb4e-148">Si se realiza correctamente y las máquinas existen: 200 Aceptar con una lista [de](machine.md) entidades de máquina en el cuerpo.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-148">If successful and machines exists - 200 OK with list of [machine](machine.md) entities in the body.</span></span> <span data-ttu-id="ddb4e-149">Si no hay máquinas recientes: 404 No se encontró.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-149">If no recent machines - 404 Not Found.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="55bc1-150">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="55bc1-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ddb4e-150">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="ddb4e-150">Example</span></span>
 
-<span data-ttu-id="55bc1-151">**Solicitud**</span><span class="sxs-lookup"><span data-stu-id="55bc1-151">**Request**</span></span>
+<span data-ttu-id="ddb4e-151">**Solicitud**</span><span class="sxs-lookup"><span data-stu-id="ddb4e-151">**Request**</span></span>
 
-<span data-ttu-id="55bc1-152">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="55bc1-152">Here is an example of the request.</span></span>
+<span data-ttu-id="ddb4e-152">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-152">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
-<span data-ttu-id="55bc1-153">**Respuesta**</span><span class="sxs-lookup"><span data-stu-id="55bc1-153">**Response**</span></span>
+<span data-ttu-id="ddb4e-153">**Respuesta**</span><span class="sxs-lookup"><span data-stu-id="ddb4e-153">**Response**</span></span>
 
-<span data-ttu-id="55bc1-154">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="55bc1-154">Here is an example of the response.</span></span>
+<span data-ttu-id="ddb4e-154">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ddb4e-154">Here is an example of the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -126,5 +127,5 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="55bc1-155">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="55bc1-155">Related topics</span></span>
-- [<span data-ttu-id="55bc1-156">Consultas de OData con Microsoft Defender para endpoint</span><span class="sxs-lookup"><span data-stu-id="55bc1-156">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)
+## <a name="related-topics"></a><span data-ttu-id="ddb4e-155">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="ddb4e-155">Related topics</span></span>
+- [<span data-ttu-id="ddb4e-156">Consultas de OData con Microsoft Defender para endpoint</span><span class="sxs-lookup"><span data-stu-id="ddb4e-156">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)
