@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 90c76fade54c109fc02e145a49bbe93d11ad8b79
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ad9bf2ba40ede2d76246c56bf94b90e0e96aeeff
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822589"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288280"
 ---
 # <a name="predictive-coding-reference-preview"></a>Referencia de codificación predictiva (versión preliminar)
 
@@ -36,14 +36,18 @@ Se usa un conjunto de controles durante el proceso de aprendizaje de un modelo d
 ## <a name="control-set-confusion-matrix"></a>Matriz de confusión de conjunto de controles
 
 Después de completar una ronda de aprendizaje, el modelo asigna una puntuación de predicción a los 10 elementos del conjunto de control que etiquetaste durante la ronda de entrenamiento. El modelo compara la puntuación de predicción de estos 10 elementos con la etiqueta real que asignó al elemento durante la ronda de entrenamiento. Basándose en esta comparación, el modelo identifica las siguientes clasificaciones para evaluar el rendimiento de predicción del modelo:
-  
-  |          |El modelo predice que el elemento es relevante |El modelo predice que el elemento no es relevante |
-  |:---------|:---------|:---------|
-  |**Elemento de etiquetas de revisor como relevante**| Verdadero positivo| Falso positivo |
-  |**Elemento de etiquetas de revisor como no relevante**| Falso negativo |True negativo |
-  ||||
 
-  Basándose en estas comparaciones, el modelo deriva valores para las métricas de puntuación F, precisión y recuperación y el margen de error de cada una de ellas. El número de cada uno de los tipos de confusión de la matriz se muestra en la página desplegable de una ronda de entrenamiento.
+<br>
+
+****
+
+|Etiqueta|El modelo predice que el elemento es relevante|El modelo predice que el elemento no es relevante|
+|---|---|---|
+|**Elemento de etiquetas de revisor como relevante**|Verdadero positivo|Falso positivo|
+|**Elemento de etiquetas de revisor como no relevante**|Falso negativo|True negativo|
+|
+
+Basándose en estas comparaciones, el modelo deriva valores para las métricas de puntuación F, precisión y recuperación y el margen de error de cada una de ellas. El número de cada uno de los tipos de confusión de la matriz se muestra en la página desplegable de una ronda de entrenamiento.
 
 ## <a name="f-score"></a>Puntuación F
 

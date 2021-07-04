@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: Use PowerShell para Microsoft 365 para administrar las directivas de Skype Empresarial Online, directivas por usuario y opciones de reunión.
-ms.openlocfilehash: 4477dadf0ea38a81ac0ae282da3f74fc12f3406f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4ea4858e4ca334cdb0268312e69bef77bc9bbd86
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916685"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288988"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Administrar Skype Empresarial Online con PowerShell
 
@@ -29,16 +29,15 @@ Los administradores de Skype Empresarial Online son los responsables de la admin
 
 ## <a name="before-you-start"></a>Antes de comenzar
 
-  > [!Note]
-   > El conector en línea del cliente de Skype® Empresarial actualmente forma parte del módulo más reciente de Windows PowerShell de Teams. Si usa la versión pública más reciente de Teams PowerShell, no es necesario que instale el conector en línea de cliente de Skype® Empresarial.
-   
-Instale el [Módulo de PowerShell de Teams](/microsoftteams/teams-powershell-install).
+> [!NOTE]
+> El conector en línea del cliente de Skype® Empresarial actualmente forma parte del módulo más reciente de Windows PowerShell de Teams. Si usa la versión pública más reciente de Teams PowerShell, no es necesario que instale el conector en línea de cliente de Skype® Empresarial.
 
+Instale el [Módulo de PowerShell de Teams](/microsoftteams/teams-powershell-install).
 
 ## <a name="connect-using-admin-credentials"></a>Conectarse con sus credenciales de administrador
 
 1. Abra una ventana del símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos:
-    
+
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
@@ -46,7 +45,6 @@ Instale el [Módulo de PowerShell de Teams](/microsoftteams/teams-powershell-ins
    ```
 
 2. En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba el nombre y la contraseña de su cuenta de administrador y, a continuación, seleccione **Aceptar**.
-
 
 ## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>Conectarse mediante una cuenta de administrador con autenticación multifactor
 
@@ -64,15 +62,15 @@ Instale el [Módulo de PowerShell de Teams](/microsoftteams/teams-powershell-ins
 4. En el cuadro de diálogo **Iniciar sesión en su cuenta** siga las instrucciones para añadir información de autenticación, como el código de verificación, y luego seleccione **Verificar**.
 
 Para más información, consulte:
-  
+
 - [Administrar las directivas de Skype Empresarial Online con PowerShell](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-    
+
 - [Asignar directivas a cada usuario de Skype Empresarial Online con PowerShell](assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-    
+
 ## <a name="see-also"></a>Consulte también
 
 [Administrar Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
+
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 
-[Referencias de cmdlet de PowerShell de Skype Empresarial](/powershell/module/skype/?view=skype-ps)
+[Referencias de cmdlet de PowerShell de Skype Empresarial](/powershell/module/skype/)

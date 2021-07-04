@@ -8,20 +8,20 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
-description: Use el centro Microsoft 365 administración o Windows PowerShell para eliminar calendarios de Bookings.
-ms.openlocfilehash: 21fc7b9994ffd7f76ed04000a50bd0ee8f7f167e
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+description: Use el Centro de administración de Microsoft 365 o Windows PowerShell para eliminar calendarios de Bookings.
+ms.openlocfilehash: 1ef67ce4dbf67da6f081106815f76ff85f11ef92
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034096"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288448"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Eliminar un calendario de reserva en Bookings
 
-En este artículo se explica cómo eliminar un calendario de reserva no deseado. Puede eliminar el calendario de reserva en el centro Microsoft 365 de administración o puede usar PowerShell. El calendario de Bookings es un buzón de correo Exchange Online por lo que se elimina la cuenta de usuario correspondiente para eliminar el calendario de reserva.
+En este artículo se explica cómo eliminar un calendario de reserva no deseado. Puede eliminar el calendario de reserva en el Centro de administración de Microsoft 365 o puede usar PowerShell. El calendario de Bookings es un buzón de correo Exchange Online por lo que se elimina la cuenta de usuario correspondiente para eliminar el calendario de reserva.
 
 > [!IMPORTANT]
-> Todos los calendarios de reserva que creó en 2017 o antes deben eliminarse con las instrucciones de PowerShell de este tema. Todos los calendarios de reserva creados en 2018 o después se pueden eliminar en el centro Microsoft 365 administración.
+> Todos los calendarios de reserva que creó en 2017 o antes deben eliminarse con las instrucciones de PowerShell de este tema. Todos los calendarios de reserva creados en 2018 o después se pueden eliminar en el Centro de administración de Microsoft 365.
 
 El calendario de reserva es donde se almacena toda la información relevante sobre ese calendario de reserva y los datos, incluidos:
 
@@ -32,21 +32,21 @@ El calendario de reserva es donde se almacena toda la información relevante sob
 > [!WARNING]
 > Una vez eliminado un calendario de reserva, esta información adicional también se elimina permanentemente y no se puede recuperar.
 
-## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>Eliminar un calendario de reserva en el centro Microsoft 365 administración
+## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>Eliminar un calendario de reserva en el Centro de administración de Microsoft 365
 
 1. Vaya al Centro de administración de Microsoft 365.
 
 1. En el Centro de administración, seleccione **Usuarios**.
 
-   ![Imagen de la interfaz de usuario de usuarios en Microsoft 365 centro de administración](../media/bookings-admin-center-users.png)
+   ![Imagen de la interfaz de usuario de usuarios en Centro de administración de Microsoft 365](../media/bookings-admin-center-users.png)
 
 1. En la página **Usuarios activos**, elija los nombres de los usuarios que quiera eliminar y después seleccione **Eliminar usuario**.
 
-   ![Imagen de Eliminar interfaz de usuario en Microsoft 365 centro de administración](../media/bookings-delete-user.png)
+   ![Imagen de Eliminar interfaz de usuario en Centro de administración de Microsoft 365](../media/bookings-delete-user.png)
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Eliminar un calendario de reserva con Exchange Online PowerShell
 
-Consulte [Conectar para Exchange Online PowerShell para](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) obtener requisitos previos y instrucciones para conectarse a Exchange Online PowerShell.
+Consulte [Conectar para Exchange Online PowerShell para](/powershell/exchange/exchange-online-powershell-v2) obtener requisitos previos y instrucciones para conectarse a Exchange Online PowerShell.
 
 Para realizar estos pasos, debe usar una ventana de comandos activa de PowerShell de Microsoft que ejecutó seleccionando la opción "Ejecutar como administrador".
 
@@ -57,7 +57,7 @@ Para realizar estos pasos, debe usar una ventana de comandos activa de PowerShel
    ```
 
    > [!NOTE]
-   > Si ya [instaló el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), el comando anterior funcionará como está escrito.
+   > Si ya [instaló el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module), el comando anterior funcionará como está escrito.
    
 2. El comando que necesita ejecutar usa la sintaxis siguiente:
 

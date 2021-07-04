@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 ha llegado al final del soporte técnico. Use esta guía básica de planeación para prepararse para actualizar a Exchange Online o una versión más reciente de Exchange Server local.
-ms.openlocfilehash: f3531802283368e533ba6646415d4acc019687bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bbc7fb83537621a47a866bf0ca129a38e21f055e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926999"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289132"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Exchange 2010
 
@@ -60,7 +60,7 @@ Estas son las tres rutas de acceso que puede tomar para evitar el fin de la comp
 
 Las secciones siguientes exploran cada opción con más detalle.
 
-## <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
+## <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
 
 Migrar el correo electrónico a Microsoft 365 es la mejor y más sencilla opción para ayudarle a retirar su Exchange de 2010. Con una migración a Microsoft 365, puede realizar un solo salto de la tecnología antigua a las características actuales, incluidas:
 
@@ -81,17 +81,23 @@ Microsoft 365 obtiene primero nuevas características y experiencias, para que s
 ### <a name="how-should-i-migrate-to-microsoft-365"></a>¿Cómo debo migrar a Microsoft 365?
 
 Según la organización, tiene algunas opciones para llegar a Microsoft 365. En primer lugar, debe tener en cuenta algunas cosas, como:
+
 - Número de puestos o buzones que necesita mover.
 - Cuánto tiempo desea que dure la migración.
 - Tanto si necesita una integración perfecta entre la instalación local y Microsoft 365 durante la migración.
- 
+
 En esta tabla se muestran las opciones de migración y los factores más importantes que determinan qué método usar.
+
+<br>
+
+****
 
 |Opción de migración|Tamaño de la organización|Duración|
 |---|---|---|
 |Migración total|Menos de 150 puestos|Una semana o menos|
 |Migración híbrida mínima|Menos de 150 puestos|Unas semanas o menos|
 |Migración híbrida completa|Más de 150 puestos|Unas semanas o más|
+|
 
 En las secciones siguientes se ofrece información general sobre estos métodos. Para obtener más información, vea [Decide on a migration path](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27).
 
@@ -173,6 +179,10 @@ Para obtener la mejor experiencia, se recomienda actualizar el entorno local res
 
 Exchange 2016 incluye todas las características de versiones anteriores de Exchange. Coincide más estrechamente con la experiencia disponible con Microsoft 365, aunque algunas características solo están disponibles en Microsoft 365. Echa un vistazo a algunas de las cosas que te han faltado:
 
+<br>
+
+****
+
 |Exchange versión|Características|
 |---|---|
 |**Exchange 2013**|La arquitectura simplificada reduce el número de roles de servidor a tres (buzón, acceso de cliente, transporte perimetral)|
@@ -183,24 +193,29 @@ Exchange 2016 incluye todas las características de versiones anteriores de Exch
 ||DLP mejorado junto con la integración con SharePoint|
 ||Resistencia mejorada de la base de datos|
 ||Colaboración de documentos en línea|
+|
+
+<br>
+
+****
 
 |Consideración|Más información|
 |---|---|
-|Fechas de finalización del soporte técnico|Al Exchange 2010, cada versión de Exchange tiene su propia fecha de fin de soporte técnico:<br/><br/>Exchange 2013 - Abril de 2023<br/>Exchange 2016 - Octubre de 2025<br/><br/>Cuanto antes sea la fecha de finalización de la compatibilidad, más pronto tendrá que realizar otra migración. Abril de 2023 está mucho más cerca de lo que crees.|
-|Ruta de migración a Exchange 2013 o 2016|La ruta de migración de Exchange 2010 a una versión más reciente es la misma si elige Exchange 2013 o Exchange 2016:<br/><br/>Instale Exchange 2013 o 2016 en su organización Exchange 2010.<br/>Mover servicios y otra infraestructura a Exchange 2013 o 2016.<br/>Mueva buzones y carpetas públicas a Exchange 2013 o 2016 Retirar los Exchange servidores de 2010.|
+|Fechas de finalización del soporte técnico|Al Exchange 2010, cada versión de Exchange tiene su propia fecha de fin de soporte técnico: <p> Exchange 2013 - Abril de 2023 <p> Exchange 2016 - Octubre de 2025 <p> Cuanto antes sea la fecha de finalización de la compatibilidad, más pronto tendrá que realizar otra migración. Abril de 2023 está mucho más cerca de lo que crees.|
+|Ruta de migración a Exchange 2013 o 2016|La ruta de migración de Exchange 2010 a una versión más reciente es la misma si elige Exchange 2013 o Exchange 2016: <p> Instale Exchange 2013 o 2016 en su organización Exchange 2010. <p> Mover servicios y otra infraestructura a Exchange 2013 o 2016. <p> Mueva buzones y carpetas públicas a Exchange 2013 o 2016 Retirar los Exchange servidores de 2010.|
 |Coexistencia de versiones|Al migrar a Exchange 2013 o Exchange 2016, puede instalar cualquiera de las versiones en una organización Exchange 2010. Esto le permite instalar uno o más servidores Exchange 2013 o Exchange 2016 y realizar la migración.|
-|Hardware de servidor|Los requisitos de hardware del servidor han cambiado Exchange 2010. Asegúrese de que el hardware es compatible. Encontrará más información sobre los requisitos de hardware para cada versión aquí:<br/><br/>[Requisitos del sistema para Exchange 2016](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016)<br/>[Requisitos del sistema para Exchange 2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)<br/><br/>Con las mejoras significativas en el rendimiento de Exchange y el aumento de la capacidad informática y de almacenamiento en servidores más recientes, es probable que necesite menos servidores para admitir el mismo número de buzones.|
-|Versión del sistema operativo|Las versiones mínimas admitidas del sistema operativo para cada versión son:<br/><br/>Exchange 2016: Windows Server 2012<br/>Exchange 2013: Windows Server 2008 R2 SP1<br/><br/>Encontrará más información sobre la compatibilidad del sistema operativo [en Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
-|Nivel funcional del bosque de Active Directory|Los niveles funcionales mínimos admitidos de bosque de Active Directory para cada versión son:<br/><br/>Exchange 2016: Windows Server 2008 R2 SP1<br/>Exchange 2013: Windows Server 2003<br/><br/>Encontrará más información sobre la compatibilidad de nivel funcional del bosque [en Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
-|Office cliente|Las versiones mínimas Office cliente admitidas para cada versión son:<br/><br/>Exchange 2016: Office 2010 (con las actualizaciones más recientes)<br/>Exchange 2013: Office 2007 SP3<br/><br/>Encontrará más información sobre el Office cliente en [Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).||| 
-
+|Hardware de servidor|Los requisitos de hardware del servidor han cambiado Exchange 2010. Asegúrese de que el hardware es compatible. Encontrará más información sobre los requisitos de hardware para cada versión aquí: <p> [Requisitos del sistema para Exchange 2016](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <p> [Requisitos del sistema para Exchange 2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <p> Con las mejoras significativas en el rendimiento de Exchange y el aumento de la capacidad informática y de almacenamiento en servidores más recientes, es probable que necesite menos servidores para admitir el mismo número de buzones.|
+|Versión del sistema operativo|Las versiones mínimas admitidas del sistema operativo para cada versión son: <p> Exchange 2016: Windows Server 2012 <p> Exchange 2013: Windows Server 2008 R2 SP1 <p> Encontrará más información sobre la compatibilidad del sistema operativo [en Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
+|Nivel funcional del bosque de Active Directory|Los niveles funcionales mínimos admitidos de bosque de Active Directory para cada versión son: <p> Exchange 2016: Windows Server 2008 R2 SP1 <p> Exchange 2013: Windows Server 2003 <p> Encontrará más información sobre la compatibilidad de nivel funcional del bosque [en Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
+|Office cliente|Las versiones mínimas Office cliente admitidas para cada versión son: <p> Exchange 2016: Office 2010 (con las actualizaciones más recientes) <p> Exchange 2013: Office 2007 SP3 <p> Encontrará más información sobre el Office cliente en [Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
+|
 
 Use los siguientes recursos para ayudar con la migración:
 
 - [Exchange Asistente para implementación](/exchange/exchange-deployment-assistant)
-- Cambios de esquema de Active Directory para Exchange [2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016), [2013](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
-- Requisitos del sistema Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
-- Requisitos previos Exchange [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016), [2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help)
+- Cambios de esquema de Active Directory para Exchange [2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
+- Requisitos del sistema Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
+- Requisitos previos Exchange [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help)
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Resumen de opciones para Office cliente y servidores de 2010 y Windows 7
 

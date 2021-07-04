@@ -11,8 +11,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid:
 - MOE150
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c4d4958c03bee7301465c16fef2cd4ff8adb1722
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246402"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288460"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la posición de seguridad con Puntuación segura de Microsoft
 
@@ -36,9 +35,9 @@ La Puntuación de seguridad de Microsoft es una medida de la actitud de segurida
 
 Para ayudarle a encontrar la información que necesita más rápidamente, las acciones de mejora de Microsoft se organizan en grupos:
 
-* Identidad (Azure Active Directory cuentas & roles)
-* Device (Microsoft Defender para endpoint, conocido como [Puntuación segura de Microsoft para dispositivos](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-* Aplicaciones (correo electrónico y aplicaciones en la nube, incluidas Office 365 y Microsoft Cloud App Security)
+- Identidad (Azure Active Directory cuentas & roles)
+- Device (Microsoft Defender para endpoint, conocido como [Puntuación segura de Microsoft para dispositivos](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+- Aplicaciones (correo electrónico y aplicaciones en la nube, incluidas Office 365 y Microsoft Cloud App Security)
 
 >[!NOTE]
 >En la versión reciente de Puntuación segura de Microsoft, se ha publicado un modelo de puntuación mejorado que hizo que Puntuación segura de Microsoft sea temporalmente incompatible con la puntuación segura de identidad y la API Graph puntuación. [Ver detalles](microsoft-secure-score-whats-new.md)

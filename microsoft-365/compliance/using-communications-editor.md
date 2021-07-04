@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Use el Editor de comunicaciones para cambiar el texto y combinar variables de campo al dar formato al contenido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769165"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288124"
 ---
 # <a name="use-the-communications-editor"></a>Usar el editor de comunicaciones
 
@@ -40,11 +40,15 @@ Puede usar los campos de combinación de correo electrónico seleccionando los *
 
 ### <a name="list-of-merge-field-variables"></a>Lista de variables de campo de combinación
 
-| Nombre del campo                  | Detalles del campo |
-| :------------------- | :------------------- |
-| Nombre para mostrar  | Nombre y apellidos del custodio. | 
-| Vínculo de confirmación | Un vínculo personalizado para registrar el acuse de recibo de cada custodio.|                 |
-| Vínculo portal     | Vínculo personalizado para el Portal de cumplimiento del custodio.|                |
-| Oficial emisor                   | La dirección de correo electrónico del oficial emisor especificado.|                   |
-| Fecha de emisión                   | La fecha en que se emitió el aviso (UTC).              |
-|||
+<br>
+
+****
+
+|Nombre del campo|Detalles del campo|
+|---|---|
+|Nombre para mostrar|Nombre y apellidos del custodio.|
+|Vínculo de confirmación|Un vínculo personalizado para registrar el acuse de recibo de cada custodio.|
+|Vínculo portal|Vínculo personalizado para el Portal de cumplimiento del custodio.|
+|Oficial emisor|La dirección de correo electrónico del oficial emisor especificado.|
+|Fecha de emisión|La fecha en que se emitió el aviso (UTC).|
+|

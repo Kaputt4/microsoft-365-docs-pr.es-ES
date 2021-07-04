@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7f8d3b10cee0b3c4a561dfd1f7567fa9818e7686
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772394"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289468"
 ---
 # <a name="create-alert-api"></a>Crear API de alertas
 
@@ -39,35 +39,37 @@ ms.locfileid: "52772394"
 
 
 ## <a name="api-description"></a>Descripción de la API
-Crea una [nueva alerta](alerts.md) en la parte superior del **evento**.
-<br>**Se requiere Microsoft Defender para el evento endpoint** para la creación de alertas.
-<br>Deberá proporcionar 3 parámetros del evento en la solicitud: **Hora del** evento , **Id. de** máquina e **Id. de informe.** Vea el ejemplo abajo.
-<br>Puedes usar un evento que se encuentra en la API de búsqueda avanzada o portal.
-<br>Si existe una alerta abierta en el mismo dispositivo con el mismo título, la nueva alerta creada se combinará con ella.
-<br>Una investigación automática se inicia automáticamente en alertas creadas a través de la API.
 
+Crea una [nueva alerta](alerts.md) en la parte superior del **evento**.
+
+- **Se requiere Microsoft Defender para el evento endpoint** para la creación de alertas.
+- Deberá proporcionar 3 parámetros del evento en la solicitud: **Hora del** evento , **Id. de** máquina e **Id. de informe.** Vea el ejemplo abajo.
+- Puedes usar un evento que se encuentra en la API de búsqueda avanzada o portal.
+- Si existe una alerta abierta en el mismo dispositivo con el mismo título, la nueva alerta creada se combinará con ella.
+- Una investigación automática se inicia automáticamente en alertas creadas a través de la API.
 
 ## <a name="limitations"></a>Limitaciones
-1. Las limitaciones de velocidad para esta API son 15 llamadas por minuto.
 
+1. Las limitaciones de velocidad para esta API son 15 llamadas por minuto.
 
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso | Permiso | Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Alerts.ReadWrite.All |  'Leer y escribir todas las alertas'
+Aplicación | Alerts.ReadWrite.All | 'Leer y escribir todas las alertas'
 Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
->- El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
 
@@ -97,9 +99,9 @@ categoría| Cadena | Categoría de la alerta. Los valores de propiedad son: "Gen
 
 Si se realiza correctamente, este método devuelve 200 Ok y un nuevo [objeto alert](alerts.md) en el cuerpo de la respuesta. If event with the specified properties (_reportId_, _eventTime_ and _machineId_) was not found - 404 Not Found.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request"></a>Solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 

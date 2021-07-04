@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: a76a4b1ab5b92a1e237663f65002b99d792b13bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226964"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288376"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
 
@@ -107,35 +107,34 @@ Esta método es el recomendado.
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
    ```
 
-2.  Vaya a [Extensión de cumplimiento de Microsoft - Almacén web de Chrome (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+2. Vaya a [Extensión de cumplimiento de Microsoft - Almacén web de Chrome (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-3.  Instale la extensión mediante las instrucciones de la página del almacén web de Chrome.
+3. Instale la extensión mediante las instrucciones de la página del almacén web de Chrome.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Implementación con Microsoft Endpoint Manager
 
 Use este método de configuración para implementaciones a nivel de la organización.
 
-
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>Habilitar la clave del registro requerida mediante Microsoft Endpoint Manager
 
-1.  Cree un script de PowerShell con el contenido siguiente:
+1. Cree un script de PowerShell con el contenido siguiente:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-2.  Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com).
+2. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
-3.  Vaya a **Dispositivos** > **Scripts** y seleccione **Agregar**.
+3. Vaya a **Dispositivos** > **Scripts** y seleccione **Agregar**.
 
-4.  Cuando se le solicite, vaya a la ubicación del script creado.
+4. Cuando se le solicite, vaya a la ubicación del script creado.
 
-5.  Seleccione la siguiente configuración:
+5. Seleccione la siguiente configuración:
     1. Ejecutar este script con las credenciales de inicio de sesión: SÍ
     1. Aplicar comprobación de firma de script: NO
     1. Ejecutar script en host de PowerShell de 64 bits: SÍ
 
-6.  Seleccione los grupos adecuados de dispositivos y aplique la directiva.
+6. Seleccione los grupos adecuados de dispositivos y aplique la directiva.
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Pasos para la instalación forzada de Microsoft Endpoint Manager
 
@@ -143,27 +142,27 @@ Antes de agregar la extensión de cumplimiento de Microsoft a la lista de extens
 
  Tras incorporar ADMX, se pueden dar los siguientes pasos para crear un perfil de configuración para esta extensión.
 
-1.  Inicie sesión en el Centro de administración de Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+1. Inicie sesión en el Centro de administración de Microsoft Endpoint Manager (https://endpoint.microsoft.com).
 
-2.  Vaya a Perfiles de configuración.
+2. Vaya a Perfiles de configuración.
 
-3.  Seleccione **Crear perfil**.
+3. Seleccione **Crear perfil**.
 
-4.  Seleccione **Windows 10** como plataforma.
+4. Seleccione **Windows 10** como plataforma.
 
-5.  Seleccione **Personalizado** como tipo de perfil.
+5. Seleccione **Personalizado** como tipo de perfil.
 
-6.  Seleccione la pestaña **Configuración**.
+6. Seleccione la pestaña **Configuración**.
 
-7.  Seleccione **Agregar**.
+7. Seleccione **Agregar**.
 
-8.  Escriba la información siguiente de directiva:
+8. Escriba la información siguiente de directiva:
 
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Tipo de datos: `String`<br/>
     Valor: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
-9.  Haga clic en Crear
+9. Haga clic en Crear
 
 ### <a name="deploy-using-group-policy"></a>Implementar mediante la directiva de grupo
 
@@ -171,25 +170,25 @@ Si no quiere usar Microsoft Endpoint Manager, puede usar directivas de grupo par
 
 1. Sus dispositivos deben poder ser administrados mediante la directiva de grupo, y debe importar todos los ADMX de Chrome en el almacén central de la directiva de grupo. Para más información, consulte [Cómo crear y administrar el almacén central de plantillas administrativas de directiva de grupo en Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-2.  Crear un script de PowerShell mediante este comando de PowerShell:
+2. Crear un script de PowerShell mediante este comando de PowerShell:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-3.  Abra la **Consola de administración de la directiva de grupo** y vaya a la unidad organizativa (OU).
+3. Abra la **Consola de administración de la directiva de grupo** y vaya a la unidad organizativa (OU).
 
-4.  Haga clic y seleccione **Crear un GPO en este dominio y vincularlo aquí**. Cuando se solicite, asigne un nombre descriptivo a este objeto de directiva de grupo (GPO) y finalice la creación.
+4. Haga clic y seleccione **Crear un GPO en este dominio y vincularlo aquí**. Cuando se solicite, asigne un nombre descriptivo a este objeto de directiva de grupo (GPO) y finalice la creación.
 
-5.  Haga clic en el GPO y seleccione **Editar**.
+5. Haga clic en el GPO y seleccione **Editar**.
 
-6.  Vaya a **Configuración del equipo** > **Preferencias** > **Configuración del panel de control** > **Tareas programadas**.
+6. Vaya a **Configuración del equipo** > **Preferencias** > **Configuración del panel de control** > **Tareas programadas**.
 
-7.  Cree una nueva tarea inmediata. Para ello, haga clic y seleccione **Nuevo** > **Tarea inmediata (al menos Windows 7)**.
+7. Cree una nueva tarea inmediata. Para ello, haga clic y seleccione **Nuevo** > **Tarea inmediata (al menos Windows 7)**.
 
-8.  Asigne un nombre y una descripción a la tarea.
+8. Asigne un nombre y una descripción a la tarea.
 
-9.  Elija la cuenta correspondiente para ejecutar la tarea inmediata, por ejemplo NT Authority.
+9. Elija la cuenta correspondiente para ejecutar la tarea inmediata, por ejemplo NT Authority.
 
 10. Seleccione **Ejecutar con los privilegios más altos**.
 
@@ -203,21 +202,21 @@ Si no quiere usar Microsoft Endpoint Manager, puede usar directivas de grupo par
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Agregar la extensión de Chrome a la lista ForceInstall
 
-1.  En el Editor de administración de directivas de grupo, vaya a su OU.
+1. En el Editor de administración de directivas de grupo, vaya a su OU.
 
-2.  Expanda la siguiente ruta **Configuración del equipo/usuario** > **Directivas** > **Plantillas administrativas** > **Plantillas administrativas clásicas** > **Google** > **Google Chrome** > **Extensiones**. Esta ruta puede variar en función de su configuración.
+2. Expanda la siguiente ruta **Configuración del equipo/usuario** > **Directivas** > **Plantillas administrativas** > **Plantillas administrativas clásicas** > **Google** > **Google Chrome** > **Extensiones**. Esta ruta puede variar en función de su configuración.
 
-3.  Seleccione **Configurar la lista de extensiones instaladas de manera forzosa**.
+3. Seleccione **Configurar la lista de extensiones instaladas de manera forzosa**.
 
-4.  Haga clic con el botón derecho y seleccione **Editar**.
+4. Haga clic con el botón derecho y seleccione **Editar**.
 
-5.  Seleccione **Habilitado**.
+5. Seleccione **Habilitado**.
 
-6.  Seleccionar **Mostrar**.
+6. Seleccionar **Mostrar**.
 
-7.  En **Valor**, agregue la siguiente entrada: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7. En **Valor**, agregue la siguiente entrada: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
-8.  Seleccione **Aceptar** y, luego, **Aplicar**.
+8. Seleccione **Aceptar** y, luego, **Aplicar**.
 
 ### <a name="test-the-extension"></a>Probar la extensión
 

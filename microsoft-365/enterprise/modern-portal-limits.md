@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre las recomendaciones de rendimiento para los sitios modernos en SharePoint Online, como limitar las llamadas a Sharepoint y los extremos externos.
-ms.openlocfilehash: 28c32be276f6c27194d164708e268a5cd36ac957
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2429869c5397e0260876ee5a765ea18ae3fc42a1
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925325"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288880"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Límites de sitio del portal moderno en línea
 
@@ -58,7 +58,7 @@ Muchas de las directrices de este artículo se centran en minimizar y optimizar 
 |Tamaño máximo de imagen  <br/> |300 Kb por imagen  <br/> |Se recomienda limitar el tamaño de las imágenes a 300 kb o más pequeños, y usar un CDN para hospedar imágenes, hojas de estilos y scripts. <br/>Para obtener más información, vea [Optimize images in SharePoint Online modern site pages](modern-image-optimization.md) y Use the Office 365 Content Delivery Network [(CDN) with SharePoint Online](use-microsoft-365-cdn-with-spo.md).  <br/> |
 |Usuarios con derechos de edición  <br/> |200 usuarios por sitio  <br/> |SharePoint sitios del portal están optimizados para ver y consumir contenido. Los permisos de edición en un portal deben limitarse a un grupo restringido de usuarios porque los permisos de edición descargan controles adicionales y, por lo tanto, tendrán un rendimiento más lento para esos usuarios. Por lo tanto, un número excesivo de usuarios con permisos de edición afectará a la experiencia general. <br/> |
 |IFrames de terceros  <br/> |2 por página  <br/> |Los iFrames son impredeciblemente lentos porque cargan una página externa independiente, incluido todo el contenido asociado, como javascript, CSS y elementos de marco. Si debes usar iFrames, limita su número a 2 o menos por página.<br/> Para obtener más información, vea [Optimize iFrames in SharePoint Online modern and classic publishing site pages](modern-iframe-optimization.md). <br/> |
-|Llamadas al servicio UPA  <br/> |1 por usuario y hora  <br/> |Se recomienda no  realizar llamadas por solicitud al servicio UPA (aplicación de perfil de usuario). La [API Graph Microsoft](/graph/call-api) y [PageContext](/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) se pueden usar para consultar información del usuario.  <br/> Si es necesaria una llamada de servicio UPA, realice una sola llamada cuando sea necesario y, a continuación, almacenar en caché la información para su reutilización en la misma sesión. |
+|Llamadas al servicio UPA  <br/> |1 por usuario y hora  <br/> |Se recomienda no  realizar llamadas por solicitud al servicio UPA (aplicación de perfil de usuario). La [API Graph Microsoft](/graph/call-api) y [PageContext](/javascript/api/sp-page-context/pagecontext) se pueden usar para consultar información del usuario.  <br/> Si es necesaria una llamada de servicio UPA, realice una sola llamada cuando sea necesario y, a continuación, almacenar en caché la información para su reutilización en la misma sesión. |
 |Llamadas al servicio taxonomía  <br/> |5 por usuario y hora  <br/> |Se recomienda no realizar llamadas _por_ solicitud al servicio de taxonomía. Si las llamadas de servicio de taxonomía son necesarias, almacena en caché la información para su reutilización en la misma sesión. <br/> Para obtener más información, vea [Optimize page calls in SharePoint Online modern and classic publishing site pages](modern-page-call-optimization.md). <br/> |
 
 ## <a name="related-topics"></a>Temas relacionados

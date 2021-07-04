@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: df1a032ffab0490c41edc7d282f0f2cc60608870
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769814"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289684"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso Alert
 
@@ -51,7 +51,6 @@ Método |Tipo de valor devuelto |Descripción
 [Enumerar direcciones IP relacionadas](get-alert-related-ip-info.md) | Colección IP | Enumerar direcciones IP asociadas a la alerta.
 [Obtener máquinas relacionadas](get-alert-related-machine-info.md) | [Máquina](machine.md) | El [equipo](machine.md) asociado a la [alerta](alerts.md).
 [Obtener usuarios relacionados](get-alert-related-user-info.md) | [Usuario](user.md) | El [usuario](user.md) asociado a la [alerta](alerts.md).
-
 
 ## <a name="properties"></a>Propiedades
 

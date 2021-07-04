@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8a2a3f83995bf4248b2cb72a848a1def83ae9c50
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: d70bb133904a7bcc9c30721d3f723b0fd8b88512
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203273"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287968"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías del Escritorio administrado de Microsoft
 
@@ -28,17 +28,17 @@ Microsoft 365 Enterprise se requieren licencias para todos los Escritorio admini
 En este artículo se resumen los componentes incluidos en las licencias Enterprise necesarias, con una descripción de cómo el servicio usa cada componente con Escritorio administrado de Microsoft dispositivos. Las funciones y responsabilidades específicas de cada área se detallan en Escritorio administrado de Microsoft documentación. 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 o E5
+
 | Producto |Información |
 --- |--- 
 Aplicaciones Microsoft 365 para empresas (64 bits) | Estas Office se enviarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Empresarial, OneNote.<br><br>Las versiones completas de 64 bits de Microsoft Project y Microsoft Visio no se incluyen. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de Aplicaciones Microsoft 365 para empresas, Escritorio administrado de Microsoft ha creado implementaciones de Microsoft Intune predeterminadas y grupos de seguridad que luego puede usar para implementar estas aplicaciones en usuarios con licencia. Para obtener más información, [vea Install Microsoft Project or Microsoft Visio on Escritorio administrado de Microsoft devices](../get-started/project-visio.md).
 OneDrive |Azure Active Directory El inicio de sesión único está habilitado para los usuarios cuando inician sesión por primera vez en OneDrive.<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "Escritorio", "Documento" e "Imágenes"; habilitado y configurado por Escritorio administrado de Microsoft.
-Aplicaciones de la Tienda |    Microsoft Sway y Power BI se envían con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
-Aplicaciones de Win32 |    Teams no se incluye con el dispositivo, sino que Microsoft lo empaqueta y proporciona para Escritorio administrado de Microsoft dispositivos. El cliente de Azure Information Protection no se incluye con el dispositivo, pero puede empaquetar para su implementación.
-Aplicaciones web |  Yammer, Office en un explorador, Delve, Flow, StaffHub, PowerApps y Planner no se envían con el dispositivo. Los usuarios pueden acceder a la versión web de estas aplicaciones con un explorador.
-
-
+Aplicaciones de la Tienda | Microsoft Sway y Power BI se envían con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
+Aplicaciones de Win32 | Teams no se incluye con el dispositivo, sino que Microsoft lo empaqueta y proporciona para Escritorio administrado de Microsoft dispositivos. El cliente de Azure Information Protection no se incluye con el dispositivo, pero puede empaquetar para su implementación.
+Aplicaciones web | Yammer, Office en un explorador, Delve, Flow, StaffHub, PowerApps y Planner no se envían con el dispositivo. Los usuarios pueden acceder a la versión web de estas aplicaciones con un explorador.
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterprise E5 o E3 con Microsoft Defender para endpoint
+
 Se recomienda que los administradores de TI configuren las siguientes opciones. Esta configuración no se incluye ni se administra como parte de Escritorio administrado de Microsoft.
 
 Producto  |Información
@@ -47,11 +47,10 @@ Windows Hello para empresas | Debes implementar Windows Hello para empresas para
 Virtualización de aplicaciones | Puedes implementar paquetes de virtualización de aplicaciones (App-V) con el cliente de administración de aplicaciones de Intune Win32. Para obtener más información, vea [Application Virtualization](/windows/application-management/app-v/appv-technical-reference).
 Microsoft 365 de pérdida de datos | Debe implementar Microsoft 365 prevención de pérdida de datos para supervisar las acciones que se están haciendo en los elementos que ha determinado que son confidenciales y ayudar a evitar el uso compartido involuntario de esos elementos. Para obtener más información, [vea Microsoft 365 prevención de pérdida de datos](../../compliance/endpoint-dlp-learn-about.md).
 
-
 Características incluidas y administradas como parte de Escritorio administrado de Microsoft:
 
 Producto |Información
---- |--- 
+--- |---
 Cifrado de unidad BitLocker | El cifrado de unidad BitLocker se usa para cifrar todas las unidades del sistema. Para obtener más información, [consulta Cifrado de unidad BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview).
 Windows Defender System Guard | Protege la integridad del sistema al iniciarse y valida que la integridad del sistema se haya mantenido realmente. Para obtener más información, [vea Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows).
 Credential Guard de Windows Defender | Windows Defender Credential Guard usa la seguridad basada en virtualización para aislar secretos para que solo el software del sistema con privilegios pueda tener acceso a ellos. Para obtener más información, [vea Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows).
@@ -72,8 +71,8 @@ Control de cuentas de usuario | El control de cuentas de usuario cambia al Escri
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
-Producto |Información 
+Producto |Información
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Puedes usar todas las características de Enterprise Mobility + Security E3 para administrar dispositivos MDM. Puede usar Azure Active Directory Premium P2 como una característica opcional con Escritorio administrado de Microsoft.
-Microsoft Cloud App Security |  Puede usar esta característica opcional con Escritorio administrado de Microsoft.
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 | Puedes usar todas las características de Enterprise Mobility + Security E3 para administrar dispositivos MDM. Puede usar Azure Active Directory Premium P2 como una característica opcional con Escritorio administrado de Microsoft.
+Microsoft Cloud App Security | Puede usar esta característica opcional con Escritorio administrado de Microsoft.
 Azure Information Protection P2  | Puede usar esta característica opcional con Escritorio administrado de Microsoft.

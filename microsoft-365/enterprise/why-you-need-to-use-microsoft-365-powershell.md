@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Summary: Understand why you must use PowerShell to manage Microsoft 365, in some cases more efficiently and in other cases by necessity.'
-ms.openlocfilehash: baae3f5682edb65f1bc8114fcc96021b144b93ab
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cbbceddc98bebaed030f4cff2f183d473d716df6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228428"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288472"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>¿Por qué necesita usar PowerShell para Microsoft 365?
 
@@ -236,7 +236,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> Este comando requiere que instale el módulo [SharePoint PowerShell en línea.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+> Este comando requiere que instale el módulo [SharePoint PowerShell en línea.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 La interpretación de este comando de PowerShell es: Obtener todos los sitios de SharePoint en la suscripción Microsoft 365 actual (**Get-SPOSite**) y para cada sitio quitar Ken Meyer de la lista de usuarios que pueden tener acceso a él (**ForEach {Remove-SPOUser -Site $ \_ . Url -LoginName "kenmyer \@ litwareinc.com"}**).
 

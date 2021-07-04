@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 850d7e6692d3ccbfda6e15c8d5ca95301bd4d094
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a66ad53faf1b38c3db4ab4446dbc1d175fbd99e4
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245617"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289540"
 ---
 # <a name="register-new-devices-yourself"></a>Registre nuevos dispositivos usted mismo
 
@@ -50,11 +50,10 @@ Escritorio administrado de Microsoft identifica cada dispositivo de forma única
 
 Puede usar el [ script ](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)Get-WindowsAutoPilotInfo.ps1PowerShell en el sitio web de la Galería de PowerShell. Para obtener más información acerca de la identificación de dispositivos y el hash de hardware, vea [Agregar dispositivos a Windows Autopilot](/mem/autopilot/add-devices#device-identification).
 
-1.  Abra un símbolo del sistema de PowerShell con derechos administrativos.
-2.  Ejecutar `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  Ejecutar `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
-4.  Ejecute `powershell -ExecutionPolicy restricted` para evitar que se ejecuten los scripts no restringidos posteriores.
-
+1. Abra un símbolo del sistema de PowerShell con derechos administrativos.
+2. Ejecutar `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. Ejecutar `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4. Ejecute `powershell -ExecutionPolicy restricted` para evitar que se ejecuten los scripts no restringidos posteriores.
 
 #### <a name="flash-drive-method"></a>Método de unidad flash
 
@@ -68,9 +67,8 @@ Puede usar el [ script ](https://www.powershellgallery.com/packages/Get-WindowsA
 8. Ejecutar `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. Quitar la unidad USB y, a continuación, apagar el dispositivo ejecutando `shutdown -s -t 0`
 
->[!IMPORTANT]
->No enciendas el dispositivo que estás registrando de nuevo hasta que hayas completado el registro para él. 
-
+> [!IMPORTANT]
+> No enciendas el dispositivo que estás registrando de nuevo hasta que hayas completado el registro para él. 
 
 ### <a name="merge-hash-data"></a>Combinar datos hash
 
@@ -78,16 +76,13 @@ Tendrás que combinar los datos de los archivos CSV en un solo archivo para comp
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
-
 ### <a name="register-devices-by-using-the-admin-portal"></a>Registrar dispositivos mediante el Portal de administración
 
 En [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), seleccione **Dispositivos** en el panel de navegación izquierdo. Busque la sección Escritorio administrado de Microsoft del menú y seleccione **Dispositivos**. En el área Escritorio administrado de Microsoft de trabajo Dispositivos, Seleccione **+ Registrar** dispositivos , que abre un control fly-in para registrar nuevos dispositivos.
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 Siga estos pasos:
 

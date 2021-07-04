@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Ejemplo de cómo las organizaciones implementan y actualizan usando canales.
-ms.openlocfilehash: a91ee948ca2051ceccb3883b2dd0198c1070bc03
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8d75d9e0a546b5bfc0dd8493e9b85e7e98b41b12
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919067"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288544"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Ejemplo de configuraciones de canal de implementación y actualización
 
@@ -28,24 +28,31 @@ La elección de los canales de actualización que se usarán para las aplicacion
 
 ## <a name="pre-release-channels"></a>Canales de prelanzamiento
 
-| Oferta de clientes y canales | Windows 10 | Aplicaciones de Microsoft 365 para empresas (Windows 10) |
+<br>
+
+****
+
+|Oferta de clientes y canales|Windows 10|Aplicaciones de Microsoft 365 para empresas (Windows 10)|
 |:-------|:-------|:-----|
-| Ideal para usuarios y programadores altamente técnicos. <br><br> Sea el primero en tener acceso a las compilaciones más recientes más pronto en el ciclo de desarrollo con el código más reciente. <br><br> Se aplicarán bordes irregulares y cierta inestabilidad. | Desarrollador | N/D |
-| Adecuada para los primeros y los profesionales de TI que quieren compilaciones más confiables que siguen en desarrollo. <br><br> Vea lo que sigue y ayude a validar las nuevas características. | Canal beta | Canal beta |
-| Adecuada para las personas que quieren tener acceso anticipado a las versiones futuras. <br><br> Dónde se obtiene una vista previa de las publicaciones para ampliar la implementación. <br><br> Son compatibles. <br>  | Versión preliminar | Canal actual (vista previa) <br><br> Canal empresarial semianual (versión preliminar)|
-||||
+|Ideal para usuarios y programadores altamente técnicos. <p> Sé el primero en tener acceso a las compilaciones más recientes lo antes posible en el ciclo de desarrollo con el nuevo código más reciente. <p> Se aplicarán bordes irregulares y cierta inestabilidad.|Desarrollador|N/D|
+|Adecuado para los primeros usuarios y los profesionales de TI que desean compilaciones más confiables que aún están en desarrollo. <p> Vea lo que sigue y ayude a validar las nuevas características.|Canal beta|Canal beta|
+|Adecuada para las personas que quieren tener acceso anticipado a las versiones futuras. <p> Donde las empresas tienen una vista previa y validan las próximas versiones antes de la implementación general. <p> Son compatibles.|Versión preliminar|Canal actual (vista previa) <p> Canal empresarial semianual (versión preliminar)|
+|
 
 ## <a name="production-channels-for-broad-deployment"></a>Canales de producción para la amplia implementación
 
 Haga clic en el vínculo de **Ejemplo** columna para desplazarse por los grupos y fases de implementación para una organización de ejemplo.
 
-| Oferta de clientes y canales | Windows 10 | Aplicaciones de Microsoft 365 para empresas (Windows 10) | Ejemplo |
-|:-------|:-------|:-----|:-------|
-| Adecuada para los clientes que quieran versiones más recientes tan pronto estén listas. | Canal semianual | [Canal actual](/deployoffice/overview-update-channels#current-channel-overview) | [Versiones más recientes](deploy-update-channels-examples-rapid-deploy.md) |
-| Adecuada para las empresas que quieren la versión más reciente con previsibilidad adicional. | Canal semianual | [Canal Empresarial Mensual](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
-| Apropiado para empresas con necesidad de realizar extensas pruebas de TI antes de cada actualización. | Canal semianual | [Canal Empresarial Semianual](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
-|||||
+<br>
 
+****
+
+|Oferta de clientes y canales|Windows 10|Aplicaciones de Microsoft 365 para empresas (Windows 10)|Ejemplo|
+|:-------|:-------|:-----|:-------|
+|Adecuada para los clientes que quieran versiones más recientes tan pronto estén listas.|Canal semianual|[Canal actual](/deployoffice/overview-update-channels#current-channel-overview)|[Versiones más recientes](deploy-update-channels-examples-rapid-deploy.md)|
+|Adecuada para las empresas que quieren la versión más reciente con previsibilidad adicional.|Canal semianual|[Canal Empresarial Mensual](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
+|Apropiado para empresas con necesidad de realizar extensas pruebas de TI antes de cada actualización.|Canal semianual|[Canal Empresarial Semianual](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview)||
+|
 
 ## <a name="see-also"></a>Consulta también
 

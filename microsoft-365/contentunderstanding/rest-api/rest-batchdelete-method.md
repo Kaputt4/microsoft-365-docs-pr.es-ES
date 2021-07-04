@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Use la API de REST para quitar un modelo de comprensión mediante documentos de una o más bibliotecas.
-ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177242"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287458"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -47,20 +47,22 @@ Ninguno
 |Publicaciones|sí|MachineLearningPublicationEntityData[]|Colección de MachineLearningPublicationEntityData, cada una de las cuales especifica el modelo y la biblioteca de documentos de destino.|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nombre | Obligatorio | Tipo | Descripción |
 |--------|-------|--------|------------|
-|ModelUniqueId|sí|string|El Id. único del archivo de modelo.|
-|TargetSiteUrl|sí|string|La dirección URL completa del sitio de biblioteca de destino.|
-|TargetWebServerRelativeUrl|sí|string|La dirección URL relativa del servidor de la Web de la biblioteca de destino.|
-|TargetLibraryServerRelativeUrl|sí|string|La dirección URL relativa al servidor de la biblioteca de destino.|
+|ModelUniqueId|sí|cadena|El Id. único del archivo de modelo.|
+|TargetSiteUrl|sí|cadena|La dirección URL completa del sitio de biblioteca de destino.|
+|TargetWebServerRelativeUrl|sí|cadena|La dirección URL relativa del servidor de la Web de la biblioteca de destino.|
+|TargetLibraryServerRelativeUrl|sí|cadena|La dirección URL relativa al servidor de la biblioteca de destino.|
 
 ## <a name="response"></a>Respuesta
 
 | Nombre   | Tipo  | Descripción|
 |--------|-------|------------|
-|200 Correcto||Se trata de una API personalizada para admitir la eliminación de un modelo de varias bibliotecas de documentos. En caso de éxito parcial, se podría devolver el 200 OK y el llamador debe inspeccionar el cuerpo de la respuesta para comprender si el modelo se ha quitado correctamente de una biblioteca de documentos.|
+|200 Correcto||Se trata de una API personalizada para admitir la eliminación de un modelo de bibliotecas de varios documentos. En caso de éxito parcial, se podría devolver 200 OK y el autor de la llamada debe inspeccionar el cuerpo de la respuesta para comprender si el modelo se ha quitado correctamente de una biblioteca de documentos.|
 
 ## <a name="response-body"></a>Cuerpo de la respuesta
+
 | Nombre   | Tipo  | Descripción|
 |--------|-------|------------|
 |TotalSuccesses|int|El número total de un modelo que se elimina correctamente de una biblioteca de documentos.|
@@ -68,6 +70,7 @@ Ninguno
 |Detalles|MachineLearningPublicationResult[]|Colección de MachineLearningPublicationResult, cada una de las cuales especifica el resultado detallado de quitar el modelo de la biblioteca de documentos.|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | Nombre   | Tipo  | Descripción|
 |--------|-------|------------|
 |StatusCode|int|El código de estado HTTP.|
@@ -75,6 +78,7 @@ Ninguno
 |Publicación|MachineLearningPublicationEntityData|Especifica la información del modelo y la biblioteca de documentos de destino.| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nombre | Tipo | Descripción |
 |--------|--------|------------|
 |ModelUniqueId|string|El Id. único del archivo de modelo.|
@@ -102,7 +106,6 @@ En este ejemplo, el Id. del modelo de comprensión mediante documentos del contr
     ] 
 } 
 ```
-
 
 #### <a name="sample-response"></a>Respuesta de muestra
 

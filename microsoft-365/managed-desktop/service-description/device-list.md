@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fd378e6aba9ac9bf10dcd9633da503406ab7410a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230060"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287896"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Escritorio administrado de Microsoft dispositivos
 
@@ -32,9 +32,8 @@ Para inscribirse en Escritorio administrado de Microsoft, un dispositivo debe se
 
 Los vínculos a dispositivos aquí son solo para tu referencia. Si quieres pedir dispositivos, trabaja con los contactos del canal comercial para asegurarte de elegir las configuraciones correctas. En esta tabla, la fecha *de archivo* es la fecha en la que estos modelos estarán sujetos a una duración Escritorio administrado de Microsoft de servicio; cualquiera de estos dispositivos incorporados después de esta fecha no recibirá un período completo de soporte técnico de tres años de Escritorio administrado de Microsoft. Los dispositivos archivados también se enumeran [Escritorio administrado de Microsoft los dispositivos archivados.](archived-device-list.md) *La fecha* de retiro es la fecha en la que este modelo ya no será compatible con Escritorio administrado de Microsoft en absoluto. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán de Escritorio administrado de Microsoft, independientemente de cuándo se inscribieron.
 
->[!NOTE]
->Los dispositivos se pueden agregar a esta tabla en cualquier momento, pero proporcionaremos un aviso de 90 días para cualquier cambio que afecte al archivo o la fecha de retiro. Los dispositivos agregados más recientemente están marcados con **\*** .
-
+> [!NOTE]
+> Los dispositivos se pueden agregar a esta tabla en cualquier momento, pero proporcionaremos un aviso de 90 días para cualquier cambio que afecte al archivo o la fecha de retiro. Los dispositivos agregados más recientemente están marcados con **\*** .
 
 ## <a name="microsoft-managed-desktop-devices"></a>Escritorio administrado de Microsoft Dispositivos
 
@@ -85,13 +84,14 @@ Además, el dispositivo también debe cumplir estos criterios:
 - No se ha completado la Windows primera ejecución.
 - Estar registrado con Escritorio administrado de Microsoft la característica [Registro de](../get-started/register-devices-self.md) dispositivos
 
->[!NOTE]
->Los dispositivos con un procesador de 2,0 GHz o más rápido proporcionarán una experiencia mucho mejor para los usuarios que participan en estas actividades:
->- Uso de videoconferencia con Teams. Consulte [Requisitos de hardware Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) para obtener más información.
->-  Usar un dispositivo para varias cargas de trabajo diferentes.
->- Uso de varios monitores.
+> [!NOTE]
+> Los dispositivos con un procesador de 2,0 GHz o más rápido proporcionarán una experiencia mucho mejor para los usuarios que participan en estas actividades:
+>
+> - Uso de videoconferencia con Teams. Consulte [Requisitos de hardware Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) para obtener más información.
+> - Usar un dispositivo para varias cargas de trabajo diferentes.
+> - Uso de varios monitores.
 
-**Más ayuda**
+## <a name="more-help"></a>Más ayuda
 
 Estos recursos pueden ayudar a responder preguntas que pueda tener sobre dispositivos específicos:
 

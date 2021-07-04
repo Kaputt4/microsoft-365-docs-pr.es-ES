@@ -11,12 +11,12 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 734edbb462193291b6bd2fb4a8e6afc3a0b709cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928253"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288520"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importar un conjunto de términos con un formato basado en SKOS
 
@@ -29,16 +29,16 @@ Le recomendamos mantener sus archivos de importación con menos de 20 000 térmi
 2. Seleccione el grupo de términos en el que quiere importar el conjunto de términos.
 
 3. En la barra de comandos, haga clic en **Importar conjunto de términos**.
- 
-4.  Si desea descargar un archivo de ejemplo para usarlo como plantilla, haga clic en **sample-metadata.ttl** para obtener un archivo de ejemplo que use el formato basado en SKOS.
- 
-5.  Cree el archivo de importación que contiene los conjuntos de términos y los términos que desee importar.
 
-6.  En **Formato de archivo**, selecione **SKOS (*.ttl)**.
+4. Si desea descargar un archivo de ejemplo para usarlo como plantilla, haga clic en **sample-metadata.ttl** para obtener un archivo de ejemplo que use el formato basado en SKOS.
 
-7.  Haga clic en **Examinar**, desplácese al archivo de importación y agréguelo.
+5. Cree el archivo de importación que contiene los conjuntos de términos y los términos que desee importar.
 
-8.  Haga clic en **Importar**. No cierre el panel hasta que finalice la importación.
+6. En **Formato de archivo**, selecione **SKOS (*.ttl)**.
+
+7. Haga clic en **Examinar**, desplácese al archivo de importación y agréguelo.
+
+8. Haga clic en **Importar**. No cierre el panel hasta que finalice la importación.
 
 Si la importación del archivo se ha realizado correctamente, se mostrará un mensaje que así lo indicará, se actualizará el almacén de términos y podrá navegar a los conjuntos de términos recién creados.
 

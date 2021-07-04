@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de extensiones personalizadas en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: af3645274b800a4eb8090957fc62397465022343
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923067"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288952"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de extensiones personalizadas en páginas del sitio modernas de SharePoint Online
 
@@ -55,7 +55,8 @@ La información disponible en los resultados incluye lo siguiente:
 - **Total** muestra el tiempo total de la extensión a la carga e inicialización del módulo. Es el tiempo relativo total que la extensión ha tomado para ejecutarse en la página, desde el principio hasta el final.
 - **Carga de** módulos muestra el tiempo que se necesita para descargar, evaluar y cargar las extensiones de archivos JavaScript y CSS. A continuación, se iniciará el proceso Init.
 - **Init** muestra el tiempo que ha tomado la extensión para inicializar los datos.
-    Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
+
+  Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
 
 Se proporciona esta información para que los diseñadores y desarrolladores puedan solucionar problemas. Debe proporcionar esta información a su equipo de diseño y desarrollo.
 

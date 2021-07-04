@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 17ad28121935adfc958629f7999311c11a8d784e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7ee431c88430916fcba60266a3a3a5180d830c0d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771458"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289264"
 ---
 # <a name="advanced-hunting-using-python"></a>Búsqueda avanzada de amenazas con Python
 
@@ -30,7 +30,7 @@ ms.locfileid: "52771458"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,14 +40,13 @@ Ejecute consultas avanzadas con Python, consulte [Advanced Hunting API](run-adva
 
 En esta sección, compartimos ejemplos de Python para recuperar un token y usarlo para ejecutar una consulta.
 
->**Requisito** previo: primero debes [crear una aplicación](apis-intro.md).
+> **Requisito** previo: primero debes [crear una aplicación](apis-intro.md).
 
 ## <a name="get-token"></a>Obtener token
 
 - Ejecute los comandos siguientes:
 
-```
-
+```python
 import json
 import urllib.request
 import urllib.parse
@@ -73,10 +72,10 @@ req = urllib.request.Request(url, data)
 response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
-
 ```
 
 donde
+
 - tenantId: identificador del espacio empresarial en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este espacio empresarial)
 - appId: id. de la aplicación de Azure AD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" en Microsoft Defender para endpoint)
 - appSecret: secreto de la aplicación de Azure AD
@@ -85,7 +84,7 @@ donde
 
  Ejecute la siguiente consulta:
 
-```
+```python
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
@@ -102,7 +101,6 @@ response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
-
 ```
 
 - schema contiene el esquema de los resultados de la consulta
@@ -110,9 +108,9 @@ results = jsonResponse["Results"]
 
 ### <a name="complex-queries"></a>Consultas complejas
 
-Si desea ejecutar consultas complejas (o consultas de varias líneas), guarde la consulta en un archivo y, en lugar de la primera línea del ejemplo anterior, ejecute el comando siguiente:
+Si desea ejecutar consultas complejas (o consultas multilínea), guarde la consulta en un archivo y, en lugar de la primera línea del ejemplo anterior, ejecute el siguiente comando:
 
-```
+```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
 query = queryFile.read()
 queryFile.close()
@@ -124,18 +122,15 @@ Ahora puede usar los resultados de la consulta.
 
 Para recorrer en iteración los resultados, haga lo siguiente:
 
-```
+```python
 for result in results:
     print(result) # Prints the whole result
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
-
-
 ```
-
 
 Para generar los resultados de la consulta en formato CSV en el archivo file1.csv haga lo siguiente:
 
-```
+```python
 import csv
 
 outputFile = open("D:\\Temp\\file1.csv", 'w')
@@ -149,14 +144,14 @@ outputFile.close()
 
 Para generar los resultados de la consulta en formato JSON en el archivo file1.jshaga lo siguiente:
 
-```
+```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
 json.dump(results, outputFile)
 outputFile.close()
 ```
 
-
 ## <a name="related-topic"></a>Tema relacionado
+
 - [Microsoft Defender para api de punto de conexión](apis-intro.md)
 - [API de Búsqueda avanzada de amenazas](run-advanced-query-api.md)
 - [Búsqueda avanzada de amenazas con PowerShell](run-advanced-query-sample-powershell.md)

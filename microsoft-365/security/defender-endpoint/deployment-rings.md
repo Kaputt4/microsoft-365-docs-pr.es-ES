@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5aeaa51e5ab8974c8ca26453534396dac14b5853
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 4fffbbb519f9c31b5343e665958bcb47436a2d50
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297213"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289348"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementar Microsoft Defender para endpoint en anillos
 
@@ -50,31 +50,31 @@ Un enfoque basado en anillos es un método para identificar un conjunto de punto
 
 La adopción de una implementación basada en anillos ayuda a reducir los posibles problemas que podrían surgir al implementar el servicio. Al pilotar un determinado número de dispositivos en primer lugar, puedes identificar posibles problemas y mitigar los posibles riesgos que puedan surgir. 
 
-
-La tabla 1 proporciona un ejemplo de los anillos de implementación que puede usar. 
+La tabla 1 proporciona un ejemplo de los anillos de implementación que puede usar.
 
 **Tabla 1**
 
-|**Anillo de implementación**|**Descripción**|
-|:-----|:-----|
-Evaluate | Anillo 1: Identificar 50 sistemas para pruebas piloto 
-Piloto | Anillo 2: Identificar los siguientes 50-100 puntos de conexión en el entorno de producción <br>  
+|Anillo de implementación|Descripción
+|---|---|
+Calcular | Anillo 1: Identificar 50 sistemas para pruebas piloto
+Piloto | Anillo 2: Identificar los siguientes 50-100 puntos de conexión en el entorno de producción
 Implementación completa | Anillo 3: Implementación del servicio en el resto del entorno en incrementos más grandes
 
-
-
 ### <a name="exit-criteria"></a>Criterios de salida
+
 Un conjunto de ejemplos de criterios de salida para estos anillos puede incluir:
+
 - Los dispositivos se muestran en la lista de inventario de dispositivos
 - Las alertas aparecen en el panel
 - [Ejecutar una prueba de detección](run-detection-test.md)
 - [Ejecutar un ataque simulado en un dispositivo](attack-simulations.md)
 
-### <a name="evaluate"></a>Evaluate
-Identifique un pequeño número de máquinas de prueba en su entorno para incorporarse al servicio. Lo ideal es que estas máquinas sean menos de 50 puntos de conexión. 
+### <a name="evaluate"></a>Calcular
 
+Identifique un pequeño número de máquinas de prueba en su entorno para incorporarse al servicio. Lo ideal es que estas máquinas sean menos de 50 puntos de conexión.
 
 ### <a name="pilot"></a>Piloto
+
 Microsoft Defender para endpoint admite una variedad de puntos de conexión que puede incorporar al servicio. En este anillo, identifique varios dispositivos que se incorporarán y en función de los criterios de salida que defina, decida continuar con el siguiente anillo de implementación.
 
 En la tabla siguiente se muestran los puntos de conexión compatibles y la herramienta correspondiente que puede usar para incorporar dispositivos al servicio. 
@@ -85,39 +85,35 @@ En la tabla siguiente se muestran los puntos de conexión compatibles y la herra
 | **macOS**    | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
 | **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Basado en aplicaciones](ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
-
-
-
+| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               |
 
 ### <a name="full-deployment"></a>Implementación completa
-En esta fase, puede usar el material de planeación [de implementación](deployment-strategy.md) para ayudarle a planear la implementación. 
 
+En esta fase, puede usar el material de planeación [de implementación](deployment-strategy.md) para ayudarle a planear la implementación. 
 
 Use el siguiente material para seleccionar la arquitectura de Microsoft Defender para endpoint adecuada que mejor se adapte a su organización.
 
-|**Elemento**|**Descripción**|
+|**Item**|**Descripción**|
 |:-----|:-----|
-|[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li>
-
-
-
+|[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>
 
 ## <a name="existing-deployments"></a>Implementaciones existentes
 
 ### <a name="windows-endpoints"></a>Windows de conexión
+
 Para Windows y/o servidores Windows, seleccione varias máquinas para probar con antelación (antes del martes de revisión) mediante el programa de validación de actualización de seguridad **(SUVP).**
 
-Para obtener más información, vea:
+Para más información vea:
+
 - [¿Qué es el programa de validación de actualización de seguridad?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Software Update Validation Program and Centro de protección contra malware de Microsoft Establishment : TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
-
 ### <a name="non-windows-endpoints"></a>Puntos de conexión Windows sin conexión
+
 Con macOS y Linux, puede usar un par de sistemas y ejecutarse en el canal Beta.
 
->[!NOTE]
->Lo ideal es que al menos un administrador de seguridad y un desarrollador puedan encontrar problemas de compatibilidad, rendimiento y confiabilidad antes de que la compilación lo haga en el canal actual.
+> [!NOTE]
+> Lo ideal es que al menos un administrador de seguridad y un desarrollador puedan encontrar problemas de compatibilidad, rendimiento y confiabilidad antes de que la compilación lo haga en el canal actual.
 
 La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos en Beta son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por Preview y, por último, por Current.
 
@@ -125,5 +121,5 @@ La elección del canal determina el tipo y la frecuencia de las actualizaciones 
 
 Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa para que usen Beta o Preview.
 
->[!WARNING]
->Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.
+> [!WARNING]
+> Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.

@@ -21,26 +21,26 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar diagnósticos de página para optimizar el rendimiento de los elementos web en SharePoint páginas de sitio modernas en línea.
-ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929065"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288904"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
 
 Las páginas del sitio de SharePoint Online modernas contienen elementos web que pueden contribuir a los tiempos de carga totales de la página. En este artículo se mostrará cómo los elementos web de sus páginas afectan a la latencia que percibe el usuario y cómo corregir los problemas más comunes.
 
->[!NOTE]
->Para obtener más información sobre el rendimiento de los portales modernos de SharePoint Online, vea [Rendimiento en la experiencia moderna de SharePoint](/sharepoint/modern-experience-performance).
+> [!NOTE]
+> Para obtener más información sobre el rendimiento de los portales modernos de SharePoint Online, vea [Rendimiento en la experiencia moderna de SharePoint](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Usar la herramienta de Diagnóstico de páginas para SharePoint para analizar los elementos web
 
 La herramienta de Diagnóstico de páginas para SharePoint es una extensión de explorador para los nuevos exploradores de Microsoft Edge (https://www.microsoft.com/edge) y Chrome que analiza las páginas del sitio de publicación clásicas y las modernas del portal de SharePoint Online. La herramienta le ofrece un informe para cada página analizada en el que se muestra el rendimiento de la página respecto a un conjunto definido de criterios de rendimiento. Para instalar e informarse de la herramienta Diagnóstico de página de SharePoint, visite [Usar la herramienta Diagnóstico de página para SharePoint Online](page-diagnostics-for-spo.md).
 
->[!NOTE]
->La herramienta de Diagnóstico de páginas solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint. 
+> [!NOTE]
+> La herramienta de Diagnóstico de páginas solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint. 
 
 Al analizar una página de un sitio de SharePoint con la herramienta Diagnóstico de páginas para SharePoint, puede ver información sobre los elementos web que superan la métrica de línea base en el resultado **Los elementos web afectan al tiempo de carga de la página** en el panel _Pruebas de diagnóstico_.
 
@@ -62,10 +62,13 @@ La información disponible en los resultados incluye lo siguiente:
 - **Carga de** módulos muestra el tiempo que se necesita para descargar, evaluar y cargar las extensiones de archivos JavaScript y CSS. A continuación, se iniciará el proceso Init.
 - **Carga diferida** muestra el tiempo para la carga diferida de elementos web no vistos en la sección principal de la página. Hay ciertas condiciones en las que hay demasiados elementos web para representar y se ponen en cola para representarse para minimizar el tiempo de carga de la página.
 - **Init** muestra el tiempo que el elemento web ha necesitado para inicializar los datos.
-    Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
+
+  Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
+
 - **Render** muestra el tiempo que se necesita para representar la interfaz de usuario (interfaz de usuario) una vez completada la carga del módulo e Init.
-    Es el tiempo de ejecución de JavaScript para montar el DOM en el documento (página).
-    La representación de recursos asincrónicos, por ejemplo, imágenes, puede tardar más tiempo en completarse.
+
+  Es el tiempo de ejecución de JavaScript para montar el DOM en el documento (página).
+  La representación de recursos asincrónicos, por ejemplo, imágenes, puede tardar más tiempo en completarse.
 
 Se proporciona esta información para que los diseñadores y desarrolladores puedan solucionar problemas. Debe proporcionar esta información a su equipo de diseño y desarrollo.
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 84ec1ad42f2cec2487debe7160a3f24e09bdd830
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226220"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288196"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entrenar un modelo de codificación predictiva (versión preliminar)
 
@@ -67,11 +67,15 @@ Después de realizar la primera ronda de aprendizaje, se inicia un trabajo que h
 
 - El modelo asigna una puntuación de predicción a los 10 elementos del conjunto de controles etiquetados durante la ronda de entrenamiento. El modelo compara la puntuación de predicción de estos 10 elementos con la etiqueta real que asignó al elemento durante la ronda de entrenamiento. Basándose en esta comparación, el modelo identifica la siguiente clasificación (denominada matriz de confusión del conjunto de *controles)* para evaluar el rendimiento de predicción del modelo:
 
-  |          |El modelo predice que el elemento es relevante |El modelo predice que el elemento no es relevante |
-  |:---------|:---------|:---------|
-  |**Elemento de etiquetas de revisor como relevante**| Verdadero positivo| Falso positivo |
-  |**Elemento de etiquetas de revisor como no relevante**| Falso negativo |True negativo |
-  ||||
+  <br>
+
+  ****
+
+  |Etiqueta|El modelo predice que el elemento es relevante|El modelo predice que el elemento no es relevante|
+  |---|---|---|
+  |**Elemento de etiquetas de revisor como relevante**|Verdadero positivo|Falso positivo|
+  |**Elemento de etiquetas de revisor como no relevante**|Falso negativo|True negativo|
+  |
 
   Basándose en estas comparaciones, el modelo deriva valores para las métricas de puntuación F, precisión y recuperación y el margen de error de cada una de ellas. Las puntuaciones de estas métricas de rendimiento del modelo se muestran en una página desplegable de la ronda de aprendizaje. Para obtener una descripción de estas métricas, vea [Referencia de codificación predictiva.](predictive-coding-reference.md)
 

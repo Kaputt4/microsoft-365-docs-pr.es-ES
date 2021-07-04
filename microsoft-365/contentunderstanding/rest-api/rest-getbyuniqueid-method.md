@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Use la API de REST para obtener o actualizar la información acerca de un modelo de comprensión mediante documentos de SharePoint Syntex.
-ms.openlocfilehash: 306bcd894b6339575f8c91ac3c4fb89f2033f3bc
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 12078242adabe3912bf5c52b8b889dc7f419074d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177110"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288796"
 ---
 # <a name="getbyuniqueid"></a>GetByUniqueId
 
@@ -100,6 +100,7 @@ GET /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb
     "UniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc"
 }
 ```
+
 ### <a name="get-and-delete-the-contoso-contract-model-by-id"></a>Obtener y eliminar el modelo de contrato de Contoso por Id.
 
 En este ejemplo, el Id. del modelo de comprensión mediante documentos del contrato de Contoso es `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.

@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 832414e9b2a88114cafafbba78e22ea656cc7949
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 8fcf0491629a068f1ebc97e226a2c9b05e306cbf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930468"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289516"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 
@@ -103,7 +103,7 @@ Para establecer Antivirus de Microsoft Defender en modo pasivo en Windows Server
 1. Abra el Editor del Registro y, a continuación, vaya a <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. Edite (o cree) una entrada DWORD denominada **ForcePassiveMode** y especifique la siguiente configuración:
+2. Edite (o cree) una entrada DWORD denominada **ForceDefenderPassiveMode** y especifique la siguiente configuración:
    - Establezca el valor de DWORD en **1**.
    - En **Base**, seleccione **Hexadecimal**.
 
@@ -147,7 +147,7 @@ Ahora que has incorporado a Defender for Endpoint y has desinstalado la solució
 - Aplicaciones potencialmente no deseadas (PUA)
 - Protección de red (NP)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 **¡Enhorabuena!** Ha completado la migración [a Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 

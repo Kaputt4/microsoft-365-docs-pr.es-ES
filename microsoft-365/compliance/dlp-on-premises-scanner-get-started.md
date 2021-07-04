@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurar el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
-ms.openlocfilehash: b21474f3a9e045bf353d62ef6c7c8d4174801a1b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623838"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289204"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local (versión preliminar)
 
@@ -115,7 +115,7 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
 
 2. Vea los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para acceder y filtrar todos los datos de las ubicaciones de los examinadores locales.
 
-3. Abra el Buscar el [Registro de auditoría en el Centro de cumplimiento](https://security.microsoft.com/auditlogsearch). Durante la versión preliminar pública, las coincidencias de reglas de DLP están disponibles en la interfaz de usuario del registro del registro de auditoría o mediante el PowerShell [Search-UnifiedAudLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps). 
+3. Abra el Buscar el [Registro de auditoría en el Centro de cumplimiento](https://security.microsoft.com/auditlogsearch). Durante la versión preliminar pública, las coincidencias de reglas de DLP están disponibles en la interfaz de usuario del registro del registro de auditoría o mediante el PowerShell [Search-UnifiedAudLog](/powershell/module/exchange/search-unifiedauditlog). 
 
 
 ## <a name="next-steps"></a>Siguientes pasos

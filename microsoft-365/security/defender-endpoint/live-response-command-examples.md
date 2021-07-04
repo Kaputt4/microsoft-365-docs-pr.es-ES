@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 82052634b79bf433731d0afdab45e3d75e6497e0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007074"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289336"
 ---
 # <a name="live-response-command-examples"></a>Ejemplos de comandos de respuesta en vivo
 
@@ -38,8 +38,7 @@ Obtenga información sobre los comandos comunes usados en la respuesta en direct
 
 Según el rol que se le haya concedido, puede ejecutar comandos de respuesta en directo básicos o avanzados. Para obtener más información sobre los comandos básicos y avanzados, vea Investigar entidades en [dispositivos con respuesta en directo.](live-response.md)
 
-
-## <a name="analyze"></a>analizar 
+## <a name="analyze"></a>analizar
 
 ```console
 # Analyze the file malware.txt
@@ -110,12 +109,12 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > Los siguientes tipos de **archivo no se** pueden descargar con este comando desde Live Response:
 >
-> * [Archivos de punto de repetición](/windows/desktop/fileio/reparse-points/)
-> * [Archivos dispersos](/windows/desktop/fileio/sparse-files/)
-> * Archivos vacíos
-> * Archivos virtuales o archivos que no están totalmente presentes localmente
+> - [Archivos de punto de repetición](/windows/desktop/fileio/reparse-points/)
+> - [Archivos dispersos](/windows/desktop/fileio/sparse-files/)
+> - Archivos vacíos
+> - Archivos virtuales o archivos que no están totalmente presentes localmente
 >
-> PowerShell **admite** estos tipos [de archivo.](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)
+> PowerShell **admite** estos tipos [de archivo.](/powershell/scripting/overview)
 >
 > Use PowerShell como alternativa, si tiene problemas al usar este comando desde Live Response.
 
@@ -132,6 +131,7 @@ library delete script.ps1
 ```
 
 ## <a name="processes"></a>procesos
+
 ```console
 # Show all processes
 processes
@@ -210,11 +210,12 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
+
 >[!NOTE]
 >
 > Para los comandos de larga ejecución como '**run**' o '**getfile**', es posible que desee usar el símbolo ' ' al final del comando para realizar esa acción en **&** segundo plano.
 > Esto le permitirá seguir investigando la máquina y volver al comando en segundo plano cuando termine con '**fg**' [comando básico](live-response.md#basic-commands).
->
+
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```console
@@ -232,7 +233,6 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-
 ## <a name="undo"></a>deshacer
 
 ```console
@@ -249,4 +249,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
 ```
-

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Summary: Use PowerShell for Microsoft 365 to assign per-user communication settings with Skype Empresarial Online policies.'
-ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d7f369e96f3db95c741e6d4f2178eaf9032ab0bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905409"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288088"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignar directivas por usuario Skype Empresarial Online con PowerShell para Microsoft 365
 
@@ -102,11 +102,10 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
 Este comando establece el nombre de la directiva de acceso externo asignada a Alex en un valor nulo ($Null). Null significa "nothing". En otras palabras, no se asigna ninguna directiva de acceso externo a Alex. Cuando no se asigna ninguna directiva de acceso externo a un usuario, la directiva global administra ese usuario.
-  
 
 ## <a name="managing-large-numbers-of-users"></a>Administración de un gran número de usuarios
 
-Para administrar un gran número de usuarios (1000 o más), debe procesar por lotes los comandos a través de un bloque de script mediante el cmdlet [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  En ejemplos anteriores, cada vez que se ejecuta un cmdlet, debe configurar la llamada y, a continuación, esperar el resultado antes de enviarlo de vuelta.  Al usar un bloque de script, esto permite que los cmdlets se ejecuten de forma remota y, una vez completados, envíen los datos de vuelta. 
+Para administrar un gran número de usuarios (1000 o más), debe procesar por lotes los comandos a través de un bloque de script mediante el cmdlet [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command)  En ejemplos anteriores, cada vez que se ejecuta un cmdlet, debe configurar la llamada y, a continuación, esperar el resultado antes de enviarlo de vuelta.  Al usar un bloque de script, esto permite que los cmdlets se ejecuten de forma remota y, una vez completados, envíen los datos de vuelta.
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
@@ -135,7 +134,7 @@ $count = 0
 
 Esto encontrará 500 usuarios a la vez que no tienen una directiva de cliente. Se les concederá la directiva de cliente "ClientPolicyNoIMURL" y la directiva de acceso externo "FederationAndPicDefault". Los resultados se agrupan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar Skype Empresarial Online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

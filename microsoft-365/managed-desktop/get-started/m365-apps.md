@@ -11,12 +11,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: c3928b5814332f2585adc613e1e84cbe5cc883a0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925616"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287980"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 
@@ -153,15 +153,15 @@ Algunas organizaciones están preocupadas por que los usuarios tengan acceso a a
 
 Hay muchas otras directivas que Escritorio administrado de Microsoft aún no se establecen como parte de nuestro servicio. Puede configurar estas directivas mediante el Microsoft Intune, que usa el [Office de directivas en la](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) nube. Para establecer estas directivas, siga estos pasos:
 
-1.  Inicie sesión en el centro Microsoft Endpoint Manager administración.
-2.  Selecciona **Aplicaciones > directivas para Office aplicaciones > Crear**
-3.  En la **página Crear configuración** de directiva, haga lo siguiente:
+1. Inicie sesión en el centro Microsoft Endpoint Manager administración.
+2. Selecciona **Aplicaciones > directivas para Office aplicaciones > Crear**
+3. En la **página Crear configuración** de directiva, haga lo siguiente:
     - Escriba un nombre.
     - Proporcione una descripción (opcional).
-    - En **las asignaciones,** elija si esta directiva se aplica a todos los usuarios de Aplicaciones Microsoft 365 para empresas, o simplemente a los usuarios que acceden de forma anónima a documentos mediante Office para la web.
+    - En **las asignaciones,** elija si esta directiva se aplica a todos los usuarios de Aplicaciones Microsoft 365 para empresas, o simplemente a los usuarios que acceden de forma anónima a documentos mediante Office para la Web.
     - Seleccione el grupo de seguridad basado en AAD que está asignado a la configuración de directiva. Cada configuración de directiva solo se puede asignar a un grupo y solo se puede asignar una configuración de directiva a cada grupo.
-    - Configure las opciones de directiva para que se incluyan en la configuración de directiva. Puede buscar en el nombre de configuración de directiva para buscar la configuración de directiva que desea configurar. También puede filtrar en la aplicación, en si la directiva es una línea base de seguridad recomendada y en si la directiva se ha configurado. La columna de plataforma indica si la directiva se aplica a Aplicaciones Microsoft 365 para empresas para Windows dispositivos, Office para la web o todo.
-4.  Después de realizar las selecciones, elija **Crear**.
+    - Configure las opciones de directiva para que se incluyan en la configuración de directiva. Puede buscar en el nombre de configuración de directiva para buscar la configuración de directiva que desea configurar. También puede filtrar en la aplicación, en si la directiva es una línea base de seguridad recomendada y en si la directiva se ha configurado. La columna de plataforma indica si la directiva se aplica a Aplicaciones Microsoft 365 para empresas para Windows dispositivos, Office para la Web o todos.
+4. Después de realizar las selecciones, elija **Crear**.
 
 > [!NOTE]
 > Office Las directivas de configuración solo admiten la implementación basada en usuarios
