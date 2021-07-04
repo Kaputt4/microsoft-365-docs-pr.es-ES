@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: c593dfe384649b1599d5c0bab8fa6a8204d105dc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: a10442bc9d92bb6004149180da30b86b646dd5de
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274837"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290164"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Ver los detalles y los resultados de una investigación automatizada
 
@@ -45,6 +45,7 @@ La página de investigación se actualizó recientemente para incluir informaci�
 ## <a name="open-the-investigation-details-view"></a>Abrir la vista de detalles de la investigación
 
 Puede abrir un informe en la vista previa de impresión utilizando uno de los métodos siguientes:
+
 - [Seleccionar un elemento en el centro de actividades](#select-an-item-in-the-action-center)
 - [Seleccionar una investigación en una página de detalles de un incidente](#open-an-investigation-from-an-incident-details-page)
 
@@ -82,17 +83,17 @@ En la vista de detalles de la investigación, puede ver información en las pest
 
 | Pestaña | Descripción |
 |:--------|:--------|
-| **Gráfico de investigación**   | Proporciona una representación visual de la investigación. Se muestra una lista de las entidades y se muestran las amenazas, junto con las alertas y si hay acciones pendientes de aprobación.<br/>Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono  **Evidencia,** te llevará a la pestaña Evidencia, donde puedes ver las entidades detectadas y sus veredictos. |
-| **Alertas**    | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en Office aplicaciones, Cloud App Security y otras características de Microsoft 365 Defender.|
+| **Gráfico de investigación** | Proporciona una representación visual de la investigación. Se muestra una lista de las entidades y se muestran las amenazas, junto con las alertas y si hay acciones pendientes de aprobación.<br/>Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono  **Evidencia,** te llevará a la pestaña Evidencia, donde puedes ver las entidades detectadas y sus veredictos. |
+| **Alertas** | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Cloud App Security y otras características Microsoft 365 Defender usuario.|
 | **Dispositivos** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden al [nivel de automatización de los grupos de dispositivos](automation-levels.md)).) |
 | **Buzones** |Enumera los buzones que se verán afectados por las amenazas detectadas.  |
-| **Usuarios**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
+| **Users**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
 | **Evidencia** | Enumera partes de evidencias generadas por alertas/investigaciones. Incluye veredictos ( Malintencionado , *Sospechoso* o *No se encontraron* amenazas ) y estado de corrección. |
-| **Entities**  | Proporciona detalles sobre cada entidad analizada, incluido un veredicto para cada tipo de entidad ( Malintencionada , *Sospechosa* o *Sin amenazas encontradas*).|
-|**Log**    | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
+| **Entities** | Proporciona detalles sobre cada entidad analizada, incluido un veredicto para cada tipo de entidad ( Malintencionada , *Sospechosa* o *Sin amenazas encontradas*).|
+|**Log** | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 | **Acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) para aprobar acciones pendientes. |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Revisar acciones de corrección tras una investigación automatizada](manage-auto-investigation.md)
-- [Ver y organizar la cola de Microsoft Defender para incidentes de extremo](view-incidents-queue.md)
+- [Ver y organizar la cola de incidentes de Microsoft Defender para punto de conexión](view-incidents-queue.md)

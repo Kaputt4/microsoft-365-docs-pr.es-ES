@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e7c208998e436245c53b90905858b7cf7ebe91d6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844663"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290200"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Uso de permisos básicos para acceder al portal
 
@@ -54,7 +54,7 @@ Puede asignar usuarios con uno de los siguientes niveles de permisos:
     > [!NOTE]
     > Debe ejecutar los cmdlets de PowerShell en una línea de comandos con privilegios elevados.
 
-- Conectar a su Azure Active Directory. Para obtener más información, [vea Conectar-MsolService](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
+- Conectar a su Azure Active Directory. Para obtener más información, [vea Conectar-MsolService](/powershell/module/msonline/connect-msolservice).
 
 **Acceso completo** <br>
 Los usuarios con acceso completo pueden iniciar sesión, ver toda la información del sistema y resolver alertas, enviar archivos para un análisis profundo y descargar el paquete de incorporación.

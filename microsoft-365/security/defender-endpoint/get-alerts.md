@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769262"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289852"
 ---
 # <a name="list-alerts-api"></a>API de listas de alertas
 
@@ -59,20 +59,22 @@ Recupera una colección de alertas.
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso | Permiso | Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Alert.Read.All |    'Leer todas las alertas'
-Aplicación |   Alert.ReadWrite.All |   'Leer y escribir todas las alertas'
+Aplicación | Alert.Read.All | 'Leer todas las alertas'
+Aplicación | Alert.ReadWrite.All | 'Leer y escribir todas las alertas'
 Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
 Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
->- La respuesta incluirá solo alertas asociadas a dispositivos a los que el usuario pueda tener acceso, en función de la configuración del grupo de dispositivos (vea [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - La respuesta incluirá solo alertas asociadas a dispositivos a los que el usuario pueda tener acceso, en función de la configuración del grupo de dispositivos (vea [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /api/alerts
 ```
 
@@ -82,17 +84,17 @@ Nombre | Tipo | Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
-Si se realiza correctamente, este método devuelve 200 Ok y una lista de objetos [de alerta](alerts.md) en el cuerpo de la respuesta.
 
+Si se realiza correctamente, este método devuelve 200 Ok y una lista de objetos [de alerta](alerts.md) en el cuerpo de la respuesta.
 
 ## <a name="example-1---default"></a>Ejemplo 1: valor predeterminado
 
-**Solicitud**
+### <a name="request"></a>Solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -100,13 +102,12 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-**Respuesta**
+### <a name="response"></a>Respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
->[!NOTE]
->La lista de respuestas que se muestra aquí puede truncarse por brevedad. Todas las alertas se devolverán de una llamada real.
-
+> [!NOTE]
+> La lista de respuestas que se muestra aquí puede truncarse por brevedad. Todas las alertas se devolverán de una llamada real.
 
 ```json
 {
@@ -162,7 +163,7 @@ Aquí tiene un ejemplo de la respuesta.
 
 ## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Ejemplo 2: Obtener 10 alertas más recientes con evidencia relacionada
 
-**Solicitud**
+### <a name="request"></a>Solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -170,14 +171,12 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-
-**Respuesta**
+### <a name="response"></a>Respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
->[!NOTE]
->La lista de respuestas que se muestra aquí puede truncarse por brevedad. Todas las alertas se devolverán de una llamada real.
-
+> [!NOTE]
+> La lista de respuestas que se muestra aquí puede truncarse por brevedad. Todas las alertas se devolverán de una llamada real.
 
 ```json
 {
@@ -314,6 +313,6 @@ Aquí tiene un ejemplo de la respuesta.
 }
 ```
 
+## <a name="see-also"></a>Vea también
 
-## <a name="see-also"></a>Consulte también
-- [Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)
+[Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)

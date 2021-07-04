@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: eaef6b25e2db72149a1a1128899d8a79a38a4c60
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1541e1d6e177416d77d768cef04d2524e6907ab5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771026"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289924"
 ---
 # <a name="delete-indicator-api"></a>Eliminar API de indicador
 
@@ -39,24 +39,25 @@ ms.locfileid: "52771026"
 
 
 ## <a name="api-description"></a>Descripción de la API
+
 Elimina una entidad [Indicator](ti-indicator.md) por identificador.
 
-
 ## <a name="limitations"></a>Limitaciones
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
+Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Introducción](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso | Permiso | Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Ti.ReadWrite |  'Leer y escribir indicadores de TI'
-Aplicación |   Ti.ReadWrite.All |  Indicadores de lectura y escritura
-
+Aplicación | Ti.ReadWrite | 'Leer y escribir indicadores de TI'
+Aplicación | Ti.ReadWrite.All | Indicadores de lectura y escritura
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 ```
 
@@ -68,17 +69,19 @@ Nombre | Tipo | Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si el indicador existe y se elimina correctamente: 204 Aceptar sin contenido.
+
 Si no se encontró Indicator con el identificador especificado- 404 No se encontró.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request"></a>Solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
