@@ -417,7 +417,7 @@
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
-            - name: RingCentral
+            - name: RingCentral (versión preliminar)
               href: archive-ringcentral-data.md
             - name: Salesforce Chatter
               href: archive-salesforcechatter-data.md
@@ -555,7 +555,7 @@
       href: ediscovery.md
     - name: Búsqueda de contenido
       items:
-        - name: Información general sobre la búsqueda de contenido
+        - name: Información general sobre la Búsqueda de contenido
           href: search-for-content.md
         - name: Buscar contenido
           href: content-search.md
