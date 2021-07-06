@@ -26,43 +26,43 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Vea el estado de mantenimiento de Microsoft 365 antes de llamar al soporte técnico para ver si hay una interrupción del servicio activa.
-ms.openlocfilehash: 28ec578fa0f2321c459284519be62e6e8448b4a5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 95ab260b4950d261eed1288b8fdf1f59883ff15f
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842043"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300410"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
 [![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
-Puede ver el estado de su servicios Microsoft, incluidos Office en la Web, Yammer, Microsoft Dynamics CRM y servicios en la nube de  administración de dispositivos móviles, en la página Estado del servicio en el Centro de administración de [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Si experimenta algún problema con un servicio en la nube, antes de llamar al soporte técnico o de invertir tiempo intentando solucionarlo, puede comprobar el estado del servicio para determinar si se trata de un problema conocido que ya tenga una resolución en curso.
+Puede ver el estado de su servicios Microsoft, incluidos los servicios en la nube de administración de dispositivos  móviles, Office en la Web, Yammer, Microsoft Dynamics CRM Yammer y administración de dispositivos móviles, en la página Estado del servicio de [la Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Si experimenta algún problema con un servicio en la nube, antes de llamar al soporte técnico o de invertir tiempo intentando solucionarlo, puede comprobar el estado del servicio para determinar si se trata de un problema conocido que ya tenga una resolución en curso.
 
 Si no puede iniciar sesión en el Centro [](https://status.office365.com) de administración, puede usar la página de estado del servicio para comprobar si hay problemas conocidos que le impidan iniciar sesión en el espacio empresarial.  También regístrate para seguirnos en [@MSFT365status](https://twitter.com/MSFT365Status) en Twitter para ver información sobre determinados eventos.
 
 ## <a name="how-to-check-service-health"></a>Cómo comprobar el estado del servicio
 
-1. Vaya al Centro Microsoft 365 administración en [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) e inicie sesión con una cuenta de administrador.
+1. Vaya a la Centro de administración de Microsoft 365 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) y inicie sesión con una cuenta de administrador.
 
     > [!NOTE]
     > Las personas a las que se les asigna el rol de administrador global o de servicio de soporte técnico pueden ver el estado del servicio. Para que los administradores de Exchange, SharePoint y Skype Empresarial puedan ver el estado del servicio, también se les debe asignar el rol Administrador de servicios. Para obtener más información acerca de los roles que pueden ver el estado del servicio, vea [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
 
-2. Si no usa el nuevo centro  de administración,  en la página Principal, seleccione el botón de alternancia Probar el nuevo centro de administración en la esquina superior derecha.
+2. Para ver el estado del servicio, en el Centro de administración, vaya a Estado del servicio de mantenimiento o seleccione la tarjeta de estado del servicio  >  en el panel  **Inicio**. La tarjeta de panel indica si hay un problema de servicio activo y vínculos a la página de estado del **servicio** detallada.
 
-3. Para ver el estado del servicio, en el Centro de administración, vaya a Estado del servicio de mantenimiento o seleccione la tarjeta de estado del servicio  >  en el panel  **Inicio**. La tarjeta de panel indica si hay un problema de servicio activo y vínculos a la página de estado del **servicio** detallada.
-
-4. En la **página Estado del** servicio, el estado de mantenimiento de cada servicio en la nube se muestra en un formato de tabla.
+3. En la **página Estado del** servicio, el estado de mantenimiento de cada servicio en la nube se muestra en un formato de tabla.
 
    ![View of current issues in service health](../media/service-health-all-services.png)
 
-La **pestaña Todos los** servicios (vista predeterminada) muestra todos los servicios y su estado de mantenimiento actual. Un icono y la **columna Estado** indican el estado de cada servicio.
+La **pestaña Todos los** servicios (vista predeterminada) muestra todos los servicios, su estado de mantenimiento actual y cualquier incidente o aviso activo. Un icono y un estado en la **columna Estado** indican el estado de cada servicio.
 
-Para filtrar la vista a los servicios que están experimentando actualmente un incidente, seleccione **la** pestaña Incidentes en la parte superior de la página. Al seleccionar la **pestaña** Asesores, solo se mostrarán los servicios que actualmente tienen un aviso publicado.
+Si hay un incidente activo o un aviso para un servicio, se mostrarán directamente bajo el nombre del servicio en una tabla anidada. Puede contraer la tabla anidada para ocultar los incidentes o avisos de esta vista haciendo clic en el icono de galón situado a la izquierda del nombre del servicio.   
 
-La **pestaña** Historial muestra el historial de incidentes y avisos que se han resuelto.
+Para filtrar la vista para mostrar solo todos  los incidentes activos, seleccione la pestaña Incidentes en la parte superior de la página. Al seleccionar la **pestaña** Avisos, solo se mostrarán todos los avisos activos publicados.
 
-Si tiene un problema con un servicio de Microsoft 365 y no lo ve  en la página Estado del servicio, díganoslo seleccionando Informar de un problema y completando el formulario corto. Veremos los datos e informes relacionados de otras organizaciones para ver qué tan extendido es el problema y si se originó con nuestro servicio. Si lo hizo, lo agregaremos como un nuevo  incidente o aviso en la página Estado del servicio, donde puede realizar un seguimiento de su resolución. Si no ve que aparezca en la lista en unos 30 minutos, considere la posibilidad de ponerse en contacto con el soporte técnico para resolver el problema.
+La **pestaña** Historial muestra todos los incidentes y avisos que se han resuelto en los últimos siete o 30 días.
+
+Si tiene un problema con un servicio de Microsoft 365 y no lo ve  en la página Estado del servicio, díganoslo seleccionando Informar de un problema y completando el formulario corto. Veremos los datos e informes relacionados de otras organizaciones para ver qué tan extendido es el problema y si se originó con nuestro servicio. Si lo hizo, lo agregaremos como un nuevo  incidente o aviso en la página Estado del servicio, donde puede realizar un seguimiento de su resolución. La **página Problemas notificados** mostrará todos los problemas que el inquilino ha notificado desde este formulario y el estado.
 
 Para personalizar la vista de los servicios que se muestran en el panel, seleccione Preferencias Vista personalizada y desactive las casillas de los servicios que desea filtrar fuera de la vista Panel de mantenimiento  >  del servicio. Asegúrese de que la casilla está activada para cada servicio que desee supervisar.
 
@@ -72,40 +72,37 @@ Para registrarse para recibir notificaciones por correo electrónico de nuevos i
 - Si desea notificaciones para incidentes o avisos
 - Los servicios para los que desea recibir notificaciones
 
+También puede suscribirse a notificaciones por correo electrónico para eventos individuales en lugar de todos los eventos de un servicio. Para ello, seleccione el problema activo para el que desea recibir actualizaciones de notificaciones por correo electrónico, seleccione Administrar notificaciones **para este** problema y, a continuación, especifique: 
+- Hasta dos direcciones de correo electrónico.
+
 > [!NOTE]
 > Cada administrador puede tener sus preferencias establecidas y el límite anterior de dos direcciones de correo electrónico es por cuenta de administrador.
 
 > [!TIP]
-> También puedes usar la aplicación [Microsoft 365 administrador](https://go.microsoft.com/fwlink/p/?linkid=627216) en tu dispositivo móvil para ver el estado del servicio, que es una excelente manera de mantenerse al día con las notificaciones push.
+> También puedes usar la aplicación [Administración de Microsoft 365 en](https://go.microsoft.com/fwlink/p/?linkid=627216) tu dispositivo móvil para ver el estado del servicio, que es una excelente manera de mantenerse al día con las notificaciones de inserción.
 
 ### <a name="view-details-of-posted-service-health"></a>Ver detalles del estado del servicio publicado
 
-En la **vista Todos los** servicios, al seleccionar el estado del servicio, se abrirá una vista resumida de avisos o incidentes.
+En la **vista Todos** los servicios, seleccione el título del problema para ver la página de detalles del problema, que muestra más información sobre el problema, incluida una fuente de todos los mensajes publicados mientras trabajamos en una solución. 
 
 [![Captura de pantalla que muestra el aviso de servicio ](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 En el resumen del aviso o del incidente, se proporciona la siguiente información:
 
 - **Título:** un resumen del problema.
-- **Servicio:** el nombre del servicio afectado.
 - **ID:** identificador numérico del problema.
+- **Servicio:** el nombre del servicio afectado.
+- **Last updated:** la última vez que se actualizó el mensaje de estado del servicio.
+- **Tiempo de inicio estimado:** hora estimada cuando se inició el problema.
 - **Estado:** cómo afecta este problema al servicio.
-- **Hora de inicio:** hora en la que se inició el problema.
-- **Last updated:** la última vez que se actualizó el mensaje de estado del servicio. Publicamos mensajes frecuentes para que sepa el progreso que estamos realizando en la aplicación de una solución.
-
-Seleccione el título del problema para ver la página de detalles [](#history) del problema, que muestra más información sobre el problema, incluido el historial de todos los mensajes publicados mientras trabajamos en una solución.
+- **Impacto del** usuario: una breve descripción del impacto que este problema tiene en el usuario final.
+- **Todas las actualizaciones:** publicamos mensajes frecuentes para que sepa el progreso que estamos realizando al aplicar una solución.
 
 ![Una captura de pantalla que muestra los detalles del problema](../media/service-health-advisory-detail.png)
 
 ### <a name="translate-service-health-details"></a>Detalles del estado del servicio de traducción
 
-Como las explicaciones del estado del servicio se publican en tiempo real, no se traducen automáticamente a su idioma y los detalles de los eventos de servicio se muestran solo en inglés. Para traducir la explicación, siga estos pasos:
-
-1. Vaya a [Traductor](https://www.bing.com/translator/).
-
-2. En la página **Estado del servicio**, seleccione un incidente o un aviso. En **Mostrar detalles**, copie el texto sobre el problema.
-
-3. En el traductor, pegue el texto y elija **Traducir**.
+Usamos la traducción automática para mostrar automáticamente los mensajes en el idioma que prefieras. Lea [Traducción de idioma para las publicaciones del Centro de mensajes](/microsoft-365/admin/manage/language-translation-for-message-center-posts) para obtener más información sobre cómo establecer el idioma.
 
 ### <a name="definitions"></a>Definiciones
 
@@ -135,23 +132,22 @@ La mayoría de las veces, los servicios aparecerán en buen estado sin más info
 |**Falso positivo** | Después de una investigación detallada, hemos confirmado que el servicio está en buen estado y funciona según lo diseñado. No se observó ningún impacto en el servicio ni la causa del incidente se originó fuera del servicio. |
 |**Informe posterior al incidente publicado** | Hemos publicado un informe de incidentes posteriores para un problema específico que incluye información de causa raíz y los siguientes pasos para garantizar que un problema similar no vuelva a ocurrir. |
 
+### <a name="message-post-types"></a>Tipos de publicación de mensajes
+
+| Tipo | Definición |
+|:-----|:-----|
+|**Actualización rápida** | Actualizaciones incrementales breves y frecuentes para incidentes de gran impacto, disponibles para todos los clientes. |
+|**Detalles adicionales** | Estas publicaciones adicionales proporcionarán detalles técnicos y de resolución más completos para ofrecer una mayor visibilidad del tratamiento de incidentes. Está disponible para los inquilinos que cumplen los mismos requisitos descritos para la [Exchange Online ,](/microsoft-365/enterprise/microsoft-365-exchange-monitoring?view=o365-worldwide#requirements) |
+
 ### <a name="history"></a>Historial
 
-El estado del servicio le permite ver el estado de mantenimiento actual y ver el historial de los avisos e incidentes de servicio que han afectado a su inquilino en los últimos 30 días. Para ver el estado anterior de todos los servicios, seleccione **Ver historial** en la página de detalles del problema.
-
-![Show link to health history](../media/service-health-view-history.png)
-
-Se muestra una lista de todos los mensajes del estado del servicio publicados en el período de tiempo seleccionado, como se puede ver a continuación:
-
-![View service health history](../media/service-health-history.png)
-
-Expanda cualquier fila para ver más detalles sobre el problema.
+El estado del servicio le permite ver su estado de mantenimiento actual y ver el historial de avisos de servicio e incidentes que han afectado a su inquilino en los últimos 30 días. Para ver el estado anterior de todos los servicios, seleccione **Vista** historial.
 
 Para obtener más información sobre nuestro compromiso con el tiempo de actividad, vea [Operaciones transparentes de Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Informes de actividad en el Centro Microsoft 365 administración](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Informes de actividad en el Centro de administración de Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
 [Preferencias del centro de mensajes](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
 

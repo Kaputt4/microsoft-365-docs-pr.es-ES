@@ -1,5 +1,5 @@
 ---
-title: Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft (versión preliminar)
+title: Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprende a usar directivas de dlp para aplicaciones en la nube que no son de Microsoft.
-ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226844"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300129"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft (versión preliminar)
 
@@ -42,6 +42,12 @@ Antes de empezar a usar directivas DLP en aplicaciones en la nube que no son de 
 - Microsoft 365 E5
 - Cumplimiento de Microsoft 365 E5
 - Seguridad de Microsoft 365 E5
+
+### <a name="permissions"></a>Permisos
+El usuario que crea la directiva DLP debe ser:
+- Administrador global
+- Administrador de cumplimiento
+- Administrador de datos de cumplimiento
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Preparar el entorno Cloud App Security web
 
@@ -81,7 +87,8 @@ Al crear una regla en la directiva DLP, puedes seleccionar una acción para apli
 
 ![Restringir aplicaciones de terceros](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-> [NOTA] Las directivas DLP aplicadas a aplicaciones que no son de Microsoft usan Microsoft Cloud App Security. Cuando se crea la directiva DLP para una aplicación que no es de Microsoft, la misma directiva se creará automáticamente en Microsoft Cloud App Security.
+> [!NOTE]
+> Las directivas DLP aplicadas a aplicaciones que no son de Microsoft usan Microsoft Cloud App Security. Cuando se crea la directiva DLP para una aplicación que no es de Microsoft, la misma directiva se creará automáticamente en Microsoft Cloud App Security.
 
 Para obtener información sobre cómo crear y configurar directivas DLP, vea [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md).
 

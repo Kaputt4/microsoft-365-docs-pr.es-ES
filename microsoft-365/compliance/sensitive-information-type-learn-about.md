@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 7e99198e0713a1940f094c3875293b2590f31e3f
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 3f64b981b60db9f9089af0555e4bf734864913b9
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256860"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300386"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -38,7 +38,7 @@ Los tipos de información confidencial son clasificadores basados en patrones. D
 - [Directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) 
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Etiquetas de retención](retention.md)
-- [Administración de riesgos de Insider](insider-risk-management.md)
+- [Administración de riesgos internos](insider-risk-management.md)
 - [Cumplimiento de las comunicaciones](communication-compliance.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -104,7 +104,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Número de identidad nacional de Argentina 
-- Identity 
+- Identidad 
 - Identificación tarjeta de identidad nacional 
 - DNI 
 - Registro nacional de personas de NIC 
@@ -154,10 +154,12 @@ Para crear tipos de información confidencial personalizados en el Centro de seg
 > Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Para detectar patrones que contengan caracteres chino/japonés y caracteres de byte único o para detectar patrones que contengan chino,japonés e inglés, defina dos variantes de la palabra clave o regex. Por ejemplo, para detectar una palabra clave como "机密的document", use dos variantes de la palabra clave; uno con un espacio entre el texto japonés e inglés y otro sin un espacio entre el texto japonés e inglés. Por lo tanto, las palabras clave que se agregarán en sit deben ser "机密的 documento" y "机密的document". Del mismo modo, para detectar una frase "2020", se deben usar dos variantes; "2020" y "2020".
+> Para detectar patrones que contengan caracteres chinos/japoneses y caracteres de un solo byte o para detectar patrones que contengan chino/japonés e inglés, defina dos variantes de la palabra clave o regex.
 > 
-> Al crear un regex con un guión de doble byte o un período de doble byte, asegúrese de escapar de los caracteres como uno para escapar de un guión o punto en un regex. A continuación se muestra un regex de ejemplo para referencia:
->    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+> Por ejemplo, para detectar una palabra clave como "机密的document", utilice dos variantes de la palabra clave; una con un espacio entre el texto japonés y el inglés y otra sin espacio entre el texto japonés y el inglés. Por lo tanto, las palabras clave que deben agregarse en el SIT deben ser "机密的document" y "机密的document". Del mismo modo, para detectar la frase "東京オリンピック2020", se deben utilizar dos variantes: "東京オリンピック 2020" y "東京オリンピック2020"".
+> 
+> Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. Aquí hay un ejemplo de regex como referencia:
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > Se recomienda usar coincidencia de cadena en lugar de coincidencia de palabras en una lista de palabras clave.
 

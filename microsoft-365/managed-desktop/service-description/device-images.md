@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276934"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300115"
 ---
 # <a name="device-images"></a>Imágenes del dispositivo
 
@@ -31,7 +31,7 @@ Cuando ordenes un nuevo dispositivo a un fabricante [aprobado,](device-requireme
 Trabaje directamente con el representante de ventas de Dell, que se asegurará de que la imagen aprobada por Escritorio administrado de Microsoft se aplique a los dispositivos para su pedido. Para obtener más preguntas sobre dispositivos Dell, la imagen y el proceso de pedido, póngase en contacto con MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP 
-Cuando ordenes nuevos dispositivos de HP, asegúrate de usar la SKU específica que se muestra en la sección Requisitos adicionales para cada modelo que se encuentra en el sitio de dispositivos empresariales de [Shop Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices) (filtra la vista para mostrar Escritorio administrado de Microsoft dispositivos).
+Cuando ordenes nuevos dispositivos de HP, asegúrate de usar la SKU específica que se muestra en la sección Requisitos adicionales para cada modelo que se encuentra en el sitio de dispositivos empresariales de [Shop Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) (filtra la vista para mostrar Escritorio administrado de Microsoft dispositivos).
 
 Si estás ordenando un dispositivo de HP [](customizing.md) que se ha aprobado como una excepción pero que no aparece actualmente en la página Lista de dispositivos, asegúrate de solicitar la SKU que se usará para el modelo. Trabajaremos con HP para obtener esta información mediante su solicitud de excepción. También puedes ponerse en contacto directamente con HP para obtener cualquier pregunta sobre dispositivos e instrucciones de ordenación de dispositivos mediante estas direcciones:
  
