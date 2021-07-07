@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314409"
+ms.locfileid: "53326968"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación Windows 10 dispositivos con directiva de grupo 
 
@@ -101,7 +101,7 @@ Puede usar la directiva de grupo (GP) para configurar opciones, como las opcione
 
 4. Haga **clic en Directivas** y, a **continuación, en Plantillas administrativas.**
 
-5. Haga **clic Windows componentes y,** a **continuación, Windows Defender SmartScreen**.
+5. Haga **clic Windows componentes y,** a **continuación, Windows Defender ATP**.
 
 6. Elige habilitar o deshabilitar el uso compartido de muestras desde tus dispositivos.
 

@@ -1,0 +1,38 @@
+- name: Documentación de Base de pruebas
+  href: index.yml
+- name: Información general
+  items:
+    - name: ¿Qué es Test Base?
+      href: overview.md
+- name: Guías de inicio rápido
+  items:
+    - name: Crear cuenta base de prueba
+      href: createAccount.md
+    - name: Cargar un paquete
+      href: uploadApplication.md
+    - name: Upload Dependencias de & binarios
+      href: binaries.md
+    - name: Establecer tareas de prueba
+      href: testtask.md
+    - name: Establecer opciones de prueba
+      href: testoptions.md
+    - name: Revisar
+      href: review.md
+    - name: Guía del paquete
+      href: contentguideline.md
+- name: Guías de procedimientos
+  items:
+    - name: Pruebas de aplicaciones de servidor
+      href: server.md
+    - name: Pruebas de funcionamiento
+      href: functional.md
+    - name: Validación de actualización de características
+      href: feature.md
+    - name: Análisis de regresión de memoria
+      href: memory.md
+    - name: Análisis de regresión de CPU
+      href: cpu.md
+- name: Referencia
+  items:
+    - name: Preguntas más frecuentes
+      href: faq.md

@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229580"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327052"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender para endpoint device control removable Storage Access Control permite realizar la siguiente tarea:
+
 - auditar, permitir o impedir el acceso de lectura, escritura o ejecución al almacenamiento extraíble con o sin exclusión
 
 |Privilegio |Permiso  |
@@ -47,6 +48,8 @@ Implemente el control Storage de acceso extraíble en Windows 10 dispositivos co
 
 - **4.18.2105** o posterior: Agregar compatibilidad con caracteres comodín para HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinación de usuario específico en una máquina específica, SSD extraíble (un SSD extremo de SanDisk)/compatibilidad con SCSI conectada a USB (UAS)
 
+- **4.18.2107** o posterior: Agregar compatibilidad Windows dispositivo portátil (WPD) (para dispositivos móviles, como tabletas)
+
 :::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell":::
 
 > [!NOTE]
@@ -62,15 +65,14 @@ Puede usar las siguientes propiedades para crear un grupo de almacenamiento extr
 
 **Nombre de la propiedad: DescriptorIdList**
 
-1. Descripción: enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo.
-Enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo.
+2. Descripción: enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo.
 Para cada propiedad de dispositivo, consulta **la sección Propiedades del** dispositivo anterior para obtener más detalles.
 
-1. Opciones:
-
-    - Id. principal
+3. Opciones:
+    - PrimaryId
         - RemovableMediaDevices
         - CdRomDevices
+        - WpdDevices
     - DeviceId
     - HardwareId
     - InstancePathId: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. El número al final (por **ejemplo,&0**) representa la ranura disponible y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
@@ -87,7 +89,7 @@ Para cada propiedad de dispositivo, consulta **la sección Propiedades del** dis
 
 1. Descripción: cuando se usan varias propiedades de dispositivo en descriptorIDList, MatchType define la relación.
 
-1. Opciones:
+2. Opciones:
 
     - MatchAll: cualquier atributo bajo descriptorIdList será **relación And;** por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema comprobará si el USB cumple ambos valores.
     - MatchAny: los atributos de descriptorIdList serán **o** relación; por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema hará la aplicación siempre que el USB tenga un valor **DeviceID** o **InstanceID** idéntico.
@@ -100,9 +102,9 @@ Las siguientes son las propiedades de la directiva de control de acceso:
 
 **Nombre de la propiedad: IncludedIdList**
 
-2. Descripción: los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.
+1. Descripción: los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.
 
-3. Opciones: El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia.
+2. Opciones: El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia.
 
 En el ejemplo siguiente se muestra el uso de GroupID:
 
@@ -135,11 +137,11 @@ Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el prim
 
 **Nombre de la propiedad: Sid**
 
-Descripción: define si se aplica esta directiva a usuarios o grupos de usuarios específicos; una entrada puede tener como máximo un Sid y una entrada sin ningún Sid significa aplicar la directiva sobre la máquina.
+Descripción: Equipo local Sid o sid del objeto AD, define si se va a aplicar esta directiva sobre un usuario o grupo de usuarios específicos; una entrada puede tener un máximo de un Sid y una entrada sin que ningún Sid signifique aplicar la directiva sobre la máquina.
 
 **Nombre de la propiedad: ComputerSid**
 
-Descripción: define si se aplica esta directiva a un equipo o grupo de máquinas específicos; una entrada puede tener como máximo un ComputerSid y una entrada sin ningún ComputerSid significa aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue Sid y ComputerSid a la misma entrada.
+Descripción: Equipo local Sid o Sid del objeto AD, define si se va a aplicar esta directiva sobre un equipo o grupo de máquinas específico; una entrada puede tener un máximo de un ComputerSid y una entrada sin que ComputerSid signifique aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue Sid y ComputerSid a la misma entrada.
 
 **Nombre de la propiedad: Opciones**
 
@@ -214,7 +216,7 @@ Para ayudarle a familiarizarse con Microsoft Defender para Endpoint Removable St
 
 La característica Storage control de acceso extraíble te permite aplicar directivas a través de la directiva de grupo a usuarios o dispositivos, o a ambos.
 
-### <a name="licensing"></a>Licencias
+### <a name="licensing"></a>Concesión de licencias
 
 Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
 
@@ -244,7 +246,7 @@ Antes de empezar con Removable Storage Access Control, debe confirmar su [Micr
 
 La característica Storage control de acceso extraíble permite aplicar directivas a través de OMA-URI a usuarios o dispositivos, o a ambos.
 
-### <a name="licensing"></a>Licencias
+### <a name="licensing"></a>Concesión de licencias
 
 Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
 
@@ -321,7 +323,8 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="La pantalla que muestra el bloqueo del almacenamiento extraíble":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+
 **¿Cuál es la limitación de medios de almacenamiento extraíbles para el número máximo de USB?**
 
 Hemos validado un grupo USB con 100.000 medios, con un tamaño de hasta 7 MB. La directiva funciona tanto en Intune como en GPO sin problemas de rendimiento.
@@ -347,4 +350,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-

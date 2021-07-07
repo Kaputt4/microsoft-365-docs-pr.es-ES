@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286890"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327016"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -212,6 +212,13 @@ Tiene un perfil de línea base de seguridad dirigido a todos los usuarios, todos
 
 Asegúrese de que las directivas de línea base de seguridad que haya excluido Escritorio administrado de Microsoft dispositivos. Para ver los pasos, consulte [Usar líneas base de seguridad para configurar Windows 10 dispositivos en Intune](/mem/intune/protect/security-baselines). Durante la inscripción, aplicamos una nueva línea base de seguridad a todos Escritorio administrado de Microsoft dispositivos. El **grupo Modern Workplace Devices -All** Azure AD es un grupo dinámico que creamos al inscribirse en Escritorio administrado de Microsoft, por lo que tendrás que volver para excluir este grupo después de la inscripción. 
 
+### <a name="unlicensed-admins"></a>Administradores sin licencia
+
+Esta configuración debe habilitarse para evitar un error de "falta de permisos" al interactuar con la organización de Azure AD. 
+
+**No preparado**
+
+**Permitir el acceso a administradores sin** licencia debe estar habilitado. Para ver los pasos, consulte [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### <a name="windows-apps"></a>Windows aplicaciones
 

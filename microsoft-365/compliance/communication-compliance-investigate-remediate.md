@@ -18,20 +18,20 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 170955ebba633c1749423e11bb34f7bfbdba1f07
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: e24b59958e5ef933b42294636ce6a1cc11528bb8
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684116"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322250"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
-Después de configurar las directivas de cumplimiento de comunicaciones, empezará a recibir alertas en el centro de cumplimiento de Microsoft 365 para los problemas de mensajes que coincidan con las condiciones de la directiva. Siga las instrucciones del flujo de trabajo aquí para investigar y corregir problemas de alerta.
+Después de configurar las directivas de cumplimiento de comunicaciones, empezará a recibir alertas en el Centro de cumplimiento de Microsoft 365 para problemas de mensajes que coincidan con las condiciones de la directiva. Siga las instrucciones del flujo de trabajo aquí para investigar y corregir problemas de alerta.
 
 ## <a name="investigate-alerts"></a>Investigar alertas
 
-El primer paso para investigar los problemas detectados por las directivas es revisar las alertas de cumplimiento de comunicaciones en el centro de Microsoft 365 cumplimiento. Hay varias áreas en el área de solución de cumplimiento de comunicaciones que le ayudarán a investigar rápidamente las alertas, en función de cómo prefiera ver la agrupación de alertas:
+El primer paso para investigar los problemas detectados por las directivas es revisar las alertas de cumplimiento de comunicaciones en el Centro de cumplimiento de Microsoft 365. Hay varias áreas en el área de solución de cumplimiento de comunicaciones que le ayudarán a investigar rápidamente las alertas, en función de cómo prefiera ver la agrupación de alertas:
 
 - **Página directiva de cumplimiento de** comunicaciones: cuando inicie sesión en el uso de credenciales para una cuenta de administrador en su organización de Microsoft 365, seleccione Cumplimiento de comunicaciones para mostrar la página Directiva de cumplimiento [https://compliance.microsoft.com](https://compliance.microsoft.com) **de**  comunicaciones. En esta página se muestran las directivas de cumplimiento de comunicaciones configuradas para Microsoft 365 organización y vínculos a plantillas de directiva recomendadas. Cada directiva enumerada incluye el recuento de alertas que necesitan revisión, el número de elementos escalados y resueltos, el estado de la directiva y la fecha y hora del último examen de directiva. Al seleccionar una directiva, se muestran todas las alertas pendientes para las coincidencias con la directiva, se selecciona una alerta específica para iniciar la página de detalles de la directiva e iniciar acciones de corrección.
 - **Alertas:** vaya **a Alertas de cumplimiento** de comunicación para mostrar los últimos 30 días de  >   alertas agrupadas por coincidencias de directiva. Esta vista le permite ver rápidamente qué directivas de cumplimiento de comunicaciones generan la mayoría de las alertas ordenadas por gravedad. Para iniciar acciones de corrección, seleccione la directiva asociada a la alerta para iniciar la **página Detalles de la** directiva. Desde la **página** Detalles de la directiva, puede revisar un resumen de las actividades  de la página Información general,  revisar y actuar en los mensajes de alerta de la página Pendiente o revisar el historial de alertas cerradas en la página Resuelto. 
@@ -47,7 +47,7 @@ Para obtener una lista completa de filtros y detalles de campo, vea [Filters](co
 
 1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
-2. En el centro Microsoft 365 cumplimiento, vaya a **Cumplimiento de comunicaciones.**
+2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
 
 3. Seleccione la **pestaña Directivas** y, a continuación, seleccione una directiva para la investigación y haga doble clic para abrir la **página** Directiva.
 
@@ -71,7 +71,7 @@ Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticam
 
 1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
-2. En el centro Microsoft 365 cumplimiento, vaya a **Cumplimiento de comunicaciones.**
+2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
 
 3. Seleccione la **pestaña Directivas** y, a continuación, seleccione una directiva para la investigación y haga doble clic para abrir la **página** Directiva.
 
@@ -93,7 +93,7 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
 
 ### <a name="step-1-examine-the-message-basics"></a>Paso 1: Examinar los conceptos básicos del mensaje
 
- A veces es obvio desde el origen o el asunto que un mensaje se puede corregir inmediatamente. Puede ser que el mensaje es falso o coincide incorrectamente con una directiva y debe resolverse como un falso positivo. Seleccione el control **Falso positivo** para resolver la alerta y quitarla de la cola de alertas pendientes inmediatamente. Desde la información de origen o del remitente, puede que ya sepa cómo se debe enrutar o administrar el mensaje en estas circunstancias. Considere la posibilidad de usar los controles **Etiquetar como** o **Escalar** para asignar una etiqueta a los mensajes aplicables o enviar mensajes a un revisor designado.
+ A veces es obvio desde el origen o el asunto que un mensaje se puede corregir inmediatamente. Puede ser que el mensaje es falso o coincide incorrectamente con una directiva y debe resolverse como mal clasificado. Seleccione el **control Informe como** mal clasificado para compartir contenido mal clasificado con Microsoft, resolver inmediatamente la alerta y quitar de la cola de alertas pendientes. Desde la información de origen o del remitente, puede que ya sepa cómo se debe enrutar o administrar el mensaje en estas circunstancias. Considere la posibilidad de usar los controles **Etiquetar como** o **Escalar** para asignar una etiqueta a los mensajes aplicables o enviar mensajes a un revisor designado.
 
 ![Controles de corrección de cumplimiento de comunicaciones](../media/communication-compliance-remediation-controls.png)
 
@@ -107,7 +107,7 @@ Después de revisar los conceptos básicos del mensaje, es el momento de abrir u
 - Vista de conversación **(versión preliminar):** disponible para los mensajes de chat de Microsoft Teams, esta vista muestra hasta cinco mensajes antes y después de un mensaje de alerta para ayudar a los revisores a ver la actividad en el contexto de conversación. Este contexto ayuda a los revisores a evaluar rápidamente los mensajes y tomar decisiones de resolución de mensajes más fundamentadas. Se muestran adiciones de mensajes en tiempo real a las conversaciones, incluidas todas las imágenes en línea, emojis y adhesivos disponibles en Teams. No se muestran los datos adjuntos de archivos de imagen o texto de los mensajes. Las notificaciones se muestran automáticamente para los mensajes que se han editado o para los mensajes que se han eliminado de la ventana de conversación. Cuando se resuelve un mensaje, los mensajes de conversación asociados no se conservan con el mensaje resuelto. Los mensajes de conversación están disponibles hasta 60 días después de identificar el mensaje de alerta.
 - **Historial de usuario**: la vista Historial de usuario muestra todas las demás alertas generadas por cualquier directiva de cumplimiento de comunicaciones para que el usuario envíe el mensaje.
 - **Notificación de patrón detectado:** muchas acciones de acoso y acoso con el tiempo y implican instancias recurrentes del mismo comportamiento por parte de un usuario. La *notificación Patrón detectado* se muestra en los detalles de la alerta y llama la atención a la alerta. La detección de patrones se hace por directiva y evalúa el comportamiento de los últimos 30 días cuando un remitente envía al mismo destinatario al menos dos mensajes. Los investigadores y revisores pueden usar esta notificación para identificar comportamientos repetidos para evaluar la alerta según corresponda.
-- **Mostrar vista Traducir:** esta vista convierte automáticamente el texto  del mensaje de alerta al idioma configurado en la configuración idioma mostrado en la suscripción Microsoft 365 para cada revisor. La vista Traducir ayuda a ampliar la compatibilidad de investigación para organizaciones con usuarios multilingües y elimina la necesidad de servicios de traducción adicionales fuera del proceso de revisión de cumplimiento de comunicaciones. Con los servicios de Microsoft Translate, la vista Traducir puede estar activada y desactivada según sea necesario y admite una amplia variedad de idiomas. Para obtener una lista completa de los idiomas admitidos, vea [Microsoft Traductor Languages](https://www.microsoft.com/translator/business/languages/). Los idiomas que aparecen *en Traductor lista de idiomas se* admiten en la vista Traducir.
+- **Mostrar vista Traducir:** esta vista convierte automáticamente el texto  del mensaje de alerta al idioma configurado en la configuración idioma mostrado en la suscripción Microsoft 365 para cada revisor. La vista Traducir ayuda a ampliar la compatibilidad de investigación para organizaciones con usuarios multilingües y elimina la necesidad de servicios de traducción adicionales fuera del proceso de revisión de cumplimiento de comunicaciones. Con los servicios de Microsoft Translate, la vista Traducir puede estar activada y desactivada según sea necesario y admite una amplia variedad de idiomas. Para obtener una lista completa de los idiomas admitidos, [vea Traductor de Microsoft Languages](https://www.microsoft.com/translator/business/languages/). Los idiomas que aparecen *en Traductor lista de idiomas se* admiten en la vista Traducir.
 
     ![Controles de vista de mensajes de cumplimiento de comunicación](../media/communication-compliance-message-views.png)
 
@@ -116,7 +116,7 @@ Después de revisar los conceptos básicos del mensaje, es el momento de abrir u
 Ahora que ha revisado los detalles del mensaje para la alerta, puede elegir varias acciones de corrección:
 
 - **Resolver:** al seleccionar el control **Resolver,**  se quita inmediatamente el mensaje de la cola de alertas pendientes y no se puede realizar ninguna acción adicional en el mensaje. Al seleccionar **Resolver,** básicamente ha cerrado la alerta sin clasificación adicional y no se puede volver a abrir para otras acciones. Todos los mensajes resueltos se muestran en la **pestaña Resuelto.**
-- **Falso positivo:** siempre puede resolver un mensaje como falso positivo en cualquier momento durante el flujo de trabajo de revisión de mensajes. False positive significa que la alerta no era procesable o que la alerta se generó incorrectamente por el proceso de alerta. El mensaje no se puede volver a abrir y todos los mensajes falsos positivos se muestran en la **pestaña** Resuelto.
+- **Informe como clasificado erróneamente (versión preliminar):** siempre puede resolver un mensaje como mal clasificado en cualquier momento durante el flujo de trabajo de revisión de mensajes. La clase errónea significa que la alerta no era procesable o que la alerta se generó incorrectamente por el proceso de alerta y los clasificadores que se pueden entrenar. La resolución del elemento como clasificado erróneamente envía contenido del mensaje, datos adjuntos y el asunto del mensaje (incluidos los metadatos) a Microsoft para ayudar a mejorar los clasificadores que se pueden entrenar. Los datos que se envían a Microsoft no contienen información que pueda identificar o usarse para identificar a los usuarios de su organización. No se pueden realizar acciones adicionales en el mensaje y todos los mensajes mal clasificados se muestran en la **pestaña** Resuelto.
 - **Power Automate (versión preliminar):** use un flujo de Power Automate para automatizar las tareas de proceso de un mensaje de alerta. De forma predeterminada,  el cumplimiento de la comunicación incluye el Administrador de notificaciones cuando un usuario tiene una plantilla de flujo de alerta de cumplimiento de comunicación que los revisores pueden usar para automatizar el proceso de notificación para los usuarios con alertas de mensajes. Para obtener más información sobre cómo crear y administrar Power Automate flujos de cumplimiento de comunicaciones, vea el artículo de referencia de la característica de cumplimiento [de](communication-compliance-feature-reference.md#power-automate-flows) comunicación.
 - **Etiqueta como**: Etiquetar el *mensaje* como *compatible,* no conforme o tan *cuestionable* como se refiere a las directivas y estándares de su organización. Agregar etiquetas y etiquetas de comentarios le ayuda a alertas de directivas de microfiltro para escalaciones o como parte de otros procesos de revisión interna. Una vez completado el etiquetado, también puede decidir resolver el mensaje para sacarlo de la cola de revisión pendiente.
 - **Notify**: Puede usar el control **Notify** para asignar una plantilla de aviso personalizada a la alerta y enviar un aviso de advertencia al usuario. Elija la plantilla de aviso adecuada configurada en el área **Configuración** de cumplimiento de comunicaciones y seleccione **Enviar** para enviar un aviso por correo electrónico al usuario que envió el mensaje y para resolver el problema.

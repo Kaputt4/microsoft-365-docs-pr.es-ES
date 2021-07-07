@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprende a usar directivas de dlp para aplicaciones en la nube que no son de Microsoft.
-ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 4bda45a6da6b9626391da37eb9a806b3308c5e7f
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300129"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322322"
 ---
-# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft (versión preliminar)
+# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft
 
 Las directivas de prevención de pérdida de datos (DLP) para aplicaciones en la nube que no son de Microsoft forman parte del conjunto Microsoft 365 de características dlp. con estas características, puede detectar y proteger elementos confidenciales en Microsoft 365 servicios. Para obtener más información acerca de todas las ofertas de DLP de Microsoft, vea [Learn about data loss prevention](dlp-learn-about-dlp.md).
 

@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2bf40f5b1d89b7a232f86c1e186ca660db9f8bbc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 470b33ca3201151fb164640eeb93c50daf7bb458
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227288"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322370"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -79,7 +79,7 @@ El cumplimiento de la comunicación en Microsoft 365 ofrece varias característi
 Las plantillas personalizables inteligentes en el cumplimiento de la comunicación le permiten aplicar aprendizaje automático para detectar de forma inteligente infracciones de comunicación en su organización.
 
 - **Plantillas predefinidas personalizables:** las nuevas plantillas de directiva ayudan a solucionar los riesgos de comunicaciones más comunes. La creación inicial de directivas y la actualización de seguimiento ahora son más rápidas con plantillas de cumplimiento normativo y contra el acoso predefinidas y lenguaje ofensivo, información confidencial, conflicto de intereses y cumplimiento normativo.
-- Nueva compatibilidad con aprendizaje **automático:** las amenazas integradas, [](classifier-get-started-with.md) el acoso, la profanación y los clasificadores de imágenes ayudan a reducir los falsos positivos en los mensajes analizados, lo que ahorra tiempo a los revisores durante el proceso de investigación y corrección.
+- Nuevo soporte de aprendizaje **automático:** la discriminación integrada, la [](classifier-get-started-with.md) amenaza, el acoso, la profanidad y los clasificadores de imágenes ayudan a reducir el contenido mal clasificado en los mensajes analizados, lo que ahorra tiempo a los revisores durante el proceso de investigación y corrección.
 - **Generador de condiciones** mejorado: la configuración de las condiciones de directiva ahora se simplifica en una única experiencia integrada en el asistente para directivas, lo que reduce la confusión en la forma en que se aplican las condiciones a las directivas.
 
 ### <a name="flexible-remediation-workflows"></a>Flujos de trabajo de corrección flexibles
@@ -154,11 +154,11 @@ En este paso, se profundiza en los problemas detectados como coincidencias con l
 
 El siguiente paso es corregir los problemas de cumplimiento de comunicaciones que ha investigado con las siguientes opciones:
 
-- **Resolver**: después de revisar un problema, puede corregirlo resolviendo la alerta. Al resolver una alerta, se quita de la cola de alertas pendientes y la acción se conserva como una entrada en la cola Resuelto para la directiva coincidente. Las alertas se resuelven automáticamente después de marcar la alerta como falso positivo, enviar un aviso a un usuario sobre la alerta o abrir un nuevo caso para la alerta.
+- **Resolver**: después de revisar un problema, puede corregirlo resolviendo la alerta. La resolución de una alerta la quita de la cola de alertas  pendiente y la acción se conserva como una entrada en la cola resuelto para la directiva de coincidencia. Las alertas se resuelven automáticamente después de marcar la alerta como mal clasificado, enviar un aviso a un usuario sobre la alerta o abrir un nuevo caso para la alerta.
 - **Etiquetar un mensaje**: como parte de la resolución de un problema, puede etiquetar el mensaje detectado como conforme, no conforme o cuestionable en relación a las directivas y estándares de su organización. El etiquetado puede ayudarle a microfiltrar alertas de directiva para su escalado o como parte de otros procesos de revisión internos.
 - **Notificar al usuario:** a menudo, los usuarios infringen accidentalmente o inadvertidamente una directiva de cumplimiento de comunicaciones. Puede usar la característica de notificación para proporcionar un aviso de advertencia al usuario y para resolver el problema.
 - **Escalar a otro revisor**: a veces, el revisor inicial de un problema necesita información de otros revisores para poder resolver el incidente. Puede escalar fácilmente los problemas relativos a mensajes a los revisores de otras áreas de su organización como parte del proceso de resolución.
-- **Marcar como falso positivo**: los mensajes detectados incorrectamente como coincidencias de directivas de cumplimiento ocasionalmente se pasarán al proceso de revisión. Puede marcar estos tipos de alertas como falsos positivos y resolver automáticamente el problema.
+- **Informe como clasificado erróneamente:** los mensajes detectados incorrectamente como coincidencias de directivas de cumplimiento se deslizarán ocasionalmente al proceso de revisión. Puede marcar estos tipos de alertas como clasificados erróneamente, enviar comentarios a Microsoft sobre la clasificación errónea para ayudar a mejorar los clasificadores globales y resolver automáticamente el problema.
 - **Quitar mensaje en Teams (versión preliminar):** es posible que los mensajes inapropiados no se muestren en Microsoft Teams canales o mensajes de chat personales y de grupo. Los mensajes inapropiados que se quitan se reemplazan por una notificación de que el mensaje se ha quitado por una infracción de directiva.
 - **Escala para la investigación:** en las situaciones más graves, es posible que deba compartir información de cumplimiento de comunicaciones con otros revisores de su organización. El cumplimiento de comunicaciones está estrechamente integrado con otras características de cumplimiento de Microsoft 365 para ayudarle a mejorar la resolución de riesgos de un extremo a otro. Priorizar un caso para su investigación le permite transferir datos y administración del caso a eDiscovery avanzado en Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery avanzado, consulte [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
 

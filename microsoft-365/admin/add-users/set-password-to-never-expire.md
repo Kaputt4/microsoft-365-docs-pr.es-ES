@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Inicie sesión en su cuenta Microsoft 365 administrador para establecer algunas contraseñas de usuario individuales para que nunca expiren mediante Windows PowerShell.
-ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c9f0c245aca0e028183c42f6a257068d74aa563d
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286278"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326728"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual para que nunca expire
 
@@ -43,8 +43,6 @@ Un administrador global de un servicio en la nube de Microsoft puede usar el Azu
 
 Esta guía se aplica a otros proveedores, como Intune y Microsoft 365, que también dependen de Azure AD para los servicios de directorio y identidad. La expiración de contraseña es la única parte de la directiva que se puede cambiar.
 
-> [!NOTE]
-> Solo se pueden configurar las contraseñas de cuentas de usuario que no estén sincronizadas mediante la sincronización de directorios para que no expiren. Para obtener más información acerca de la sincronización de directorios, [vea Conectar AD con Azure AD](/azure/active-directory/connect/active-directory-aadconnect).
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Cómo comprobar la directiva de expiración de una contraseña
 

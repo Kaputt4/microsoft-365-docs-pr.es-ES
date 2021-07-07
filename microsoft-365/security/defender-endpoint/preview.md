@@ -18,19 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65edf54ea0bf5cb0a0210dd306db07c756149f65
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062131"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322430"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
->[!IMPORTANT]
->Las versiones preliminares se proporcionan sin un contrato de nivel de servicio y no se recomienda para cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan capacidades limitadas.
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -48,6 +45,19 @@ Obtén información sobre las nuevas características en la versión preliminar 
 
 Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).
 
+ ## <a name="what-you-need-to-know"></a>Lo que necesita saber
+
+Al trabajar con características en versión preliminar pública, estas características:
+
+- Puede que tenga funciones restringidas o limitadas. Por ejemplo, la característica solo puede aplicarse a una plataforma.
+- Normalmente, pasan por los cambios de características antes de que estén generalmente disponibles (GA).
+- Son totalmente compatibles con Microsoft.
+- Solo puede estar disponible en regiones geográficas seleccionadas o entornos en la nube. Por ejemplo, es posible que la característica no exista en la nube del gobierno.
+- Las características individuales de la versión preliminar pueden tener más restricciones de uso y compatibilidad. Si es así, esta información se indica normalmente en la documentación de características.
+- Las versiones preliminares se proporcionan con un nivel de soporte estándar y se recomienda para cargas de trabajo de producción. 
+
+
+
 ## <a name="turn-on-preview-features"></a>Activar la versión preliminar de las características
 
 Tendrás acceso a las próximas características sobre las que puedes proporcionar comentarios para mejorar la experiencia general antes de que las características estén disponibles en general.
@@ -64,7 +74,7 @@ En la versión preliminar se incluyen las siguientes características:
 
 - [Filtrado de contenido web](web-content-filtering.md) <br> El filtrado de contenido web forma parte de las funciones de protección web en Microsoft Defender para endpoint. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
 
-- [Informe de cumplimiento y estado del dispositivo](machine-reports.md) <br/> El informe de cumplimiento y estado del dispositivo proporciona información de alto nivel sobre los dispositivos de la organización.
+- [Cumplimiento normativo y estado del dispositivo](machine-reports.md) <br/> El informe de cumplimiento y estado del dispositivo proporciona información de alto nivel sobre los dispositivos de la organización.
 
 > [!TIP] 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

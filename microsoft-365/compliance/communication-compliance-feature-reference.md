@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f94d2bbb8a65a4004ee05b9d740f94ae841f9a4e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8a81c65d65704262230e6eb6245d882b63a18bab
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227380"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322298"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -52,7 +52,7 @@ Las comunicaciones se examinan cada 24 horas a partir del momento en que se crea
 
 ## <a name="pausing-a-policy-preview"></a>Pausar una directiva (versión preliminar)
 
-Después de crear una directiva de cumplimiento de comunicaciones, la directiva puede pausarse temporalmente si es necesario. La pausa de una directiva puede usarse para probar o solucionar problemas de coincidencias de directivas, o para optimizar las condiciones de la directiva. En lugar de eliminar una directiva en estas circunstancias, la pausa de una directiva también conserva las alertas y los mensajes de directiva existentes para las investigaciones y revisiones en curso. La pausa de una directiva impide inspeccionar y generar alertas para todas las condiciones de mensaje de usuario definidas en la directiva durante el tiempo en que se pausa la directiva. Para pausar o reiniciar una directiva, los usuarios deben ser miembros del grupo de roles *De administración de cumplimiento* de comunicaciones.
+Después de crear una directiva de cumplimiento de comunicaciones, la directiva puede pausarse temporalmente si es necesario. La pausa de una directiva puede usarse para probar o solucionar problemas de coincidencias de directivas, o para optimizar las condiciones de la directiva. En lugar de eliminar una directiva en estas circunstancias, la pausa de una directiva también conserva las alertas y los mensajes de directiva existentes para las investigaciones y revisiones en curso. La pausa de una directiva impide la inspección y la generación de alertas para todas las condiciones de mensaje de usuario definidas en la directiva durante el tiempo en que se pausa la directiva. Para pausar o reiniciar una directiva, los usuarios deben ser miembros del grupo de roles *De administración de cumplimiento* de comunicaciones.
 
 Para pausar una directiva, vaya a la **página** Directiva, seleccione una directiva y, a continuación, seleccione **Pausar directiva** en la barra de herramientas acciones. En el **panel Pausar** directiva, confirme que desea pausar la directiva **seleccionando Pausar**. En algunos casos, una directiva puede tardar hasta 24 horas en pausarse. Una vez pausada la directiva, no se crean alertas de mensajes que coincidan con la directiva. Sin embargo, los mensajes asociados con alertas creadas antes de pausar la directiva permanecen disponibles para investigación, revisión y corrección.
 
@@ -188,12 +188,13 @@ Los clasificadores globales y capacitados integrados analizan los mensajes envia
 
 Los clasificadores globales y capacitados para el cumplimiento de la comunicación analizan las comunicaciones en busca de términos, imágenes y sentimientos para los siguientes tipos de idioma y contenido:
 
-- **Amenaza:** busca amenazas para cometer violencia o daño físico a una persona o propiedad.
-- **Hostigamiento dirigido:** busca conductas ofensivas dirigidas a personas relacionadas con la raza, el color, la religión, el origen nacional.
-- **Profanidad:** busca expresiones profanas que ensoñen a la mayoría de las personas.
 - **Imágenes para adultos:** busca imágenes sexualmente explícitas en la naturaleza.
-- **Imágenes** rácidas: busca imágenes sexualmente sugerentes en la naturaleza, pero que contienen contenido menos explícito que las imágenes que se consideran adultos.
+- **Discriminación (versión preliminar):** busca un idioma discriminatorio explícito y es especialmente sensible al lenguaje discriminatorio frente a las comunidades afroestadounides/negras en comparación con otras comunidades.
 - **Imágenes de gory:** busca imágenes que represente violencia y sangre.
+- **Profanidad:** busca expresiones profanas que ensoñen a la mayoría de las personas.
+- **Imágenes** rácidas: busca imágenes sexualmente sugerentes en la naturaleza, pero que contienen contenido menos explícito que las imágenes que se consideran adultos.
+- **Hostigamiento dirigido:** busca conductas ofensivas dirigidas a personas relacionadas con la raza, el color, la religión, el origen nacional.
+- **Amenaza:** busca amenazas para cometer violencia o daño físico a una persona o propiedad.
 
 Los *clasificadores* de imágenes Adult, *Racy* y *Gory* analizan archivos en formatos .jpeg, .png, .gif y .bmp. El tamaño de los archivos de imagen debe ser inferior a 4 megabytes (MB) y las dimensiones de las imágenes deben ser mayores de 50 x 50 píxeles y superiores a 50 kilobytes (KB) para que la imagen pueda ser valorada. La identificación de imágenes es compatible Exchange Online mensajes de correo electrónico y Microsoft Teams canales y chats.
 
