@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Si tiene menos de 25 licencias de usuario, puede cancelar la suscripción de prueba o de pago de Microsoft 365 para empresas en el Centro de administración.
 ms.date: 04/08/2021
-ms.openlocfilehash: d327a09eba06e9a2bbc92959b6048649b41b72fe
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e0b23d785a86102891f24cb16419794773d64356
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256800"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300045"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -82,7 +82,7 @@ Su suscripción ahora aparecerá en estado de **Deshabilitada** y tendrá funcio
 
 Si cancela una suscripción antes del final de su periodo, la suscripción pasa directamente a un estado de deshabilitada. Para casi todas las suscripciones, en la mayoría de los países y las regiones, el estado de deshabilitada dura 90 días. Los administradores todavía podrán tener acceso y realizar copias de seguridad de los datos de su organización mientras la suscripción está en el estado de deshabilitada, pero se recomienda que los administradores [hagan una copia de seguridad de sus datos](back-up-data-before-switching-plans.md) antes de cancelar una suscripción, especialmente si es su única suscripción. Los administradores también pueden reactivar la suscripción cuando está en el estado de deshabilitada.
 
-Después de 90 días, la suscripción pasa al estado de eliminado. Los datos que no se guarden se podrán eliminar entre 90 y 180 días después de la cancelación. No puede quitar un método de pago de una suscripción cancelada hasta que llegue al estado de eliminada.
+Después de 90 días, la suscripción pasa al estado de eliminado. Los datos que no se guarden se podrán eliminar después de 90 días pero no más tarde de 180 días después de la cancelación. No puede quitar un método de pago de una suscripción cancelada hasta que llegue al estado de eliminada.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Qué sucederá con usted y sus usuarios si cancela una suscripción
   

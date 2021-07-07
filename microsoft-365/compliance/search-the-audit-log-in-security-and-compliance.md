@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287508"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300141"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -678,8 +678,8 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Permisos de buzón de delegado quitados|Remove-MailboxPermission|Un administrador quitó el permiso FullAccess (que se asignó a un delegado) del buzón de una persona. Una vez que se haya quitado el permiso FullAccess, el delegado no podrá abrir el buzón de la otra persona ni acceder a ningún contenido.|
 |Permisos quitados de la carpeta|RemoveFolderPermissions|Un permiso de la carpeta se ha removido. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|
 |Enviar mensaje|Enviar|Un mensaje ha sido enviado, respondido o reenviado. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Para obtener más información, vea la sección "Acceder a eventos fundamentales para las investigaciones" en [Auditoría avanzada](advanced-audit.md#access-to-crucial-events-for-investigations).|
-|Mensaje enviado mediante los permisos de Enviar como|SendAs|Un mensaje se ha enviado con el permiso Enviar como. Esto significa que otro usuario envió el mensaje como si viniera del propietario del buzón.|
-|Mensaje enviado mediante los permisos en nombre de|SendOnBehalf|Un mensaje se ha enviado con el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje a nombre del propietario del buzón. El mensaje indica al destinatario a nombre de quién se ha enviado el mensaje y quién lo ha enviado realmente.|
+|Mensaje enviado mediante los permisos de Enviar como|SendAs|Un mensaje se ha enviado con el permiso enviar como. Esto significa que otro usuario ha enviado el mensaje como si proviniera del propietario del buzón.|
+|Mensaje enviado mediante los permisos en nombre de|SendOnBehalf|Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.|
 |Reglas de la bandeja de entrada actualizadas desde el cliente de Outlook|UpdateInboxRules|El propietario de un buzón u otro usuario con acceso al buzón, modificó una regla de la bandeja de entrada en el Outlook del cliente.|
 |Mensaje actualizado|Actualizar|Un mensaje o sus propiedades han cambiado.|
 |Usuario que ha iniciado sesión en un buzón|MailboxLogin|El usuario inició sesión en su buzón.|
@@ -912,11 +912,11 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Comentario creado|CreateComment|El propietario del formulario ha añadido comentarios o puntuaciones a un cuestionario.|
-|Formulario creado|CreateForm|Un nuevo formulario ha sido creado por el propietario.|
+|Formulario creado|CreateForm|Un nuevo formulario ha sido creado por el propietario. <br><br>Propiedad DataMode:string indica que el formulario actual está configurado para sincronizarse con un libro de Excel nuevo o existente si el valor de propiedad es igual a DataSync. La propiedad ExcelWorkbookLink:string indica el Id. de libro de Excel asociado del formulario actual.|
 |Formulario editado|EditForm|Al crear, eliminar o editar una pregunta, el propietario del formulario lo edita. La propiedad *EditOperation:string* indica el nombre de la operación de edición. Las posibles operaciones son:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>-UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>-Cambiar tema <br><br>FormImage incluye cualquier lugar dentro de los formularios en los que el usuario pueda subir una imagen, como en la cadena de consulta o como tema en la imagen de fondo.|
-|Formulario movido|MoveForm|Un formulario ha sido movido por el propietario. <br><br>La propiedad DestinationUserId: la cadena indica el ID de usuario de la persona que ha movido el formulario. La propiedad NewFormId: la cadena es el nuevo ID para el formulario recién copiado.|
+|Formulario movido|MoveForm|Un formulario ha sido movido por el propietario. <br><br>La propiedad DestinationUserId: la cadena indica el ID de usuario de la persona que ha movido el formulario. La propiedad NewFormId: la cadena es el nuevo ID para el formulario recién copiado. La propiedad IsDelegateAccess:boolean indica que la acción de movimiento del formulario actual se realiza a través de la página del delegado de administrador.|
 |Formulario eliminado|DeleteForm|Un formulario ha sido eliminado por el propietario. Esto incluye SoftDelete (eliminar la opción utilizada y mover el formulario a la papelera de reciclaje) y HardDelete (Se vacía la papelera de reciclaje).|
-|Formulario visto (tiempo de diseño)|ViewForm|Un formulario existente ha sido abierto por el propietario para su edición.|
+|Formulario visto (tiempo de diseño)|ViewForm|Un formulario existente ha sido abierto por el propietario para su edición. <br><br>La propiedad AccessDenied:boolean indica que se ha denegado el acceso del formulario actual debido a la comprobación de permisos. La propiedad FromSummaryLink:boolean indica que la solicitud actual procede de la página de vínculo de resumen.|
 |Vista previa del formulario|PreviewForm|Un formulario ha sido previsualizado por el propietario con la función vista previa.|
 |Formulario exportado|ExportForm|Los resultados han sido exportado a Excel por el propietario del formulario. <br><br>La propiedad ExportFormat:string indicará si el archivo de Excel se puede descargar o ver en línea.|
 |Formulario de participación permitida para su copia|AllowShareFormForCopy|Para compartir el formulario con otros usuarios el propietario ha creado un vínculo en una plantilla. Este evento es registrado cuando el propietario del formulario hace clic para generar una dirección URL en la plantilla.|
@@ -935,10 +935,21 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Estado de phishing actualizado del formulario|UpdatePhishingStatus|Este evento se registra cada vez que se cambie el valor detallado del estado de seguridad interna, independientemente de que ha cambiado el estado de seguridad final (por ejemplo, el formulario ahora está cerrado o abierto). Esto significa que usted puede ver los eventos duplicados sin un cambio final en el Estado de Seguridad. Los posibles valores de estado de este evento son:<br/>-Deseche el <br/>-Derribado por la administración <br/>-Administrador desbloqueado <br/>-Bloqueado automáticamente <br/>-Desbloqueado automáticamente <br/>-El cliente informó <br/>-Restablecer informe de cliente|
 |Estado de phising de usuario actualizado|UpdateUserPhishingStatus|Este evento se registra cuando se cambia el valor del estado de seguridad de usuario. El valor del estado del usuario en el registro de auditoría es **confirmado como Phisher** cuando el usuario ha creado un formulario de phishing que ha sido retirado por el equipo de seguridad de Microsoft Online. Si un administrador desbloquea al usuario, el valor de estado del usuario se establece en **Restablecer como usuario normal**.|
 |Invitación a Forms Pro enviada|ProInvitation|El usuario hace clic para activar la versión de prueba Pro.|
-|Configuración de formulario actualizada|UpdateFormSetting|La configuración del formulario ha sido actualizada por el propietario. <br><br>La propiedad FormSettingName: la cadena indica el nombre y el nuevo valor de la configuración.|
+|Configuración de formulario actualizada|UpdateFormSetting|El propietario del formulario actualiza una o varias opciones de configuración del formulario. <br><br>La propiedad FormSettingName:string indica el nombre de la configuración confidencial actualizada. La propiedad NewFormSettings:string indica el nombre de la configuración actualizada y el nuevo valor. La propiedad thankYouMessageContainsLink:boolean indica que el mensaje de agradecimiento actualizado contiene un vínculo URL.|
 |Configuración del usuario actualizada |UpdateUserSetting|La configuración del usuario ha sido actualizada por el propietario del formulario. <br><br>La propiedad UserSettingName: la cadena indica el nombre y el nuevo valor de la configuración|
 |Formularios en la lista|ListForms|La lista de formularios está siendo visualizada por el propietario. <br><br>La propiedad ViewType:string indicará sobre la visualización que busca el propietario del formulario: todos los formularios, compartidos conmigo o en grupos|
 |Respuesta enviada|SubmitResponse|Un usuario envía una respuesta sobre un formulario. <br><br>La propiedad IsInternalForm:boolean indicará si el respondedor está dentro de la misma organización que el propietario del formulario.|
+|Configuración de cualquier persona puede responder habilitada|AllowAnonymousResponse|El propietario del formulario activa la configuración, lo que permite que cualquier usuario responda al formulario.|
+|La configuración de cualquier persona que pueda responder está deshabilitada|DisallowAnonymousResponse|El propietario del formulario desactiva la configuración, lo que permite que cualquier usuario responda al formulario.|
+|La configuración de personas específicas que puedan responder está habilitada|EnableSpecificResponse|El propietario del formulario activa la configuración para permitir que solo personas específicas o grupos específicos de la organización actual respondan al formulario.|
+|La configuración de personas específicas que pueden responder está deshabilitada|DisableSpecificResponse|El propietario del formulario desactiva la configuración para permitir que solo personas específicas o grupos específicos de la organización actual respondan al formulario.|
+|Respondedor específico agregado|AddSpecificResponder|El propietario del formulario añade al nuevo usuario o grupo a la lista respondedores específica.|
+|Respondedor específico quitado|RemoveSpecificResponder|El propietario del formulario elimina un nuevo usuario o grupo de la lista respondedores específica.|
+|Colaboración deshabilitada|DisableCollaboration|El propietario del formulario desactiva la configuración de colaboración en el formulario.|
+|La colaboración de cuenta profesional o educativa de Office 365 está habilitada|EnableWorkOrSchoolCollaboration|El propietario del formulario activa la configuración que permite a los usuarios con una cuenta profesional o educativa de Office 365 ver y editar el formulario.|
+|La colaboración de personas en mi organización está habilitada|EnableSameOrgCollaboration|El propietario del formulario activa la configuración que permite a los usuarios de la organización actual ver y editar el formulario.|
+|La colaboración con personas específicas está habilitada|EnableSpecificCollaboaration|El propietario del formulario activa la configuración para permitir que solo personas específicas o grupos específicos de la organización actual vean y editen el formulario.|
+|Conectado al libro de Excel|ConnectToExcelWorkbook|Conectado el formulario a un libro de Excel. <br><br>La propiedad ExcelWorkbookLink:string indica el Id. de libro de Excel asociado del formulario actual.|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Actividades de Forms que realizan los coautores y respondedores anónimos
