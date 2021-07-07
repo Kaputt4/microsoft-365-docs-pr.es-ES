@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286962"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314409"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación Windows 10 dispositivos con directiva de grupo 
 
@@ -118,7 +118,7 @@ Todas las directivas se encuentran en `Computer Configuration\Policies\Administr
 
 **Ubicación de la directiva:** \Windows Components\Windows Defender ATP
 
-Policy | Setting
+Policy | Configuración
 :---|:---
 Enable\Disable Sample (colección)| Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -126,7 +126,7 @@ Enable\Disable Sample (colección)| Habilitado: "Habilitar la colección de mues
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender
 
-Policy | Setting
+Policy | Configuración
 :---|:---
 Configurar la detección para aplicaciones potencialmente no deseadas | Enabled, Block
 
@@ -134,7 +134,7 @@ Configurar la detección para aplicaciones potencialmente no deseadas | Enabled,
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\MAPS
 
-Policy | Setting
+Policy | Configuración
 :---|:---
 Unirse a Microsoft MAPS | Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
@@ -143,7 +143,7 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Real-time Protection
 
-Policy | Setting
+Policy | Configuración
 :---|:---
 Desactivar la protección en tiempo real|Deshabilitado
 Activar la supervisión del comportamiento|Habilitado
@@ -156,7 +156,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Policy | Setting 
+Policy | Configuración 
 :---|:---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -178,7 +178,7 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
    ![Imagen de configuración de reducción de superficie de ataque](images/asr-guid.png)
 
-Policy | Setting
+Policy | Configuración
 :---|:---
 Configurar acceso controlado a carpetas| Habilitado, modo auditoría
 
@@ -211,7 +211,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 7. Seleccione **Ejecutar si el usuario ha iniciado sesión o no** y active la casilla Ejecutar con **privilegios** más altos.
 
-8. Vaya a la **pestaña Acciones** y haga clic **en Nuevo...**. Asegúrese de **que Iniciar un programa** está seleccionado en el **campo** Acción. Escriba el nombre de archivo y la ubicación del archivo  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* compartido.
+8. Vaya a la **pestaña Acciones** y haga clic **en Nuevo...**. Asegúrese de **que Iniciar un programa** está seleccionado en el **campo** Acción. Escriba la ruta netBIOS del archivo *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* compartido.
 
 9. Haga **clic en Aceptar** y cierre las ventanas GPMC abiertas.
 

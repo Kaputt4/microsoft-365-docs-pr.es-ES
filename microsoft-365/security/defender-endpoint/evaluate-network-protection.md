@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 03d05966401c8f3a8bdcec413e85c9a6d2a3ec5c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 98e4c80c2e0262712885f1e7a2da82886b2ebe80
+ms.sourcegitcommit: b6e63febe24ef1f1793dfb3ecc5ed41a4e730578
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926576"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53309375"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
@@ -40,7 +40,7 @@ Este artículo le ayuda a evaluar la protección de red habilitando la caracter�
 
 Habilite la protección de red en modo auditoría para ver qué direcciones IP y dominios se habrían bloqueado. Puedes asegurarte de que no afecta a las aplicaciones de línea de negocio u obtener una idea de la frecuencia con la que se producen los bloqueos.
 
-1. Escriba **powershell** en el menú Inicio, haga clic con el botón Windows PowerShell **y** seleccione Ejecutar como **administrador**
+1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**
 2. Escriba el siguiente cmdlet:
 
     ```PowerShell
@@ -55,7 +55,7 @@ Habilite la protección de red en modo auditoría para ver qué direcciones IP y
 
 Se permitirá la conexión de red y se mostrará un mensaje de prueba.
 
-![Notificación de ejemplo que indica Conexión bloqueada: el administrador de TI Seguridad de Windows bloquear esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Notificación de ejemplo que indica Conexión bloqueada: el administrador de TI Seguridad de Windows bloquear esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](images/np-notif.png)
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos
 
@@ -67,7 +67,7 @@ Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de evento
 |1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
 |1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 * [Protección de red](network-protection.md)
 * [Habilitar la protección de red](enable-network-protection.md)

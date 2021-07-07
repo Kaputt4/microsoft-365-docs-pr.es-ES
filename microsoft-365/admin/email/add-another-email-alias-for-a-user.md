@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Obtenga información sobre cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada con su cuenta Microsoft 365 para empresas. '
-ms.openlocfilehash: ec5bc69a42c5183413f11649b7d7ec6baaf40b01
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e6eac45c3ade3fd737f93c88c29b56ccd497212e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572110"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314361"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
   
@@ -70,7 +70,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
     El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Hoffman, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irá a la Bandeja de entrada de Eliza.
     
   
-7. **Cuando el usuario responda, la *dirección De* dependerá de su Outlook cliente. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
+7. **Cuando el usuario responda, la *dirección De* dependerá de su Outlook cliente. Outlook en la Web el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>¿Ha recibido "No se puede encontrar un parámetro que coincida con el nombre del parámetro EmailAddresses"?
 
@@ -83,7 +83,7 @@ Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la con
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Enviar correo electrónico desde la dirección proxy fácilmente
 
-En abril de 2021 se implementó una nueva característica que permite a los usuarios enviar desde sus alias fácilmente al usar Outlook en la web. Cuando la característica se lanza a un arrendamiento donde el administrador de inquilinos usa el cmdlet, los usuarios del arrendamiento tendrán acceso a una lista de casillas donde cada entrada corresponde a un alias en su configuración `Set-OrganizationConfig -SendFromAliasEnabled $true` de Outlook. Si selecciona un alias, aparecerá en el desplegable De del formulario Redacción.
+En julio de 2021 se está implementando una nueva característica que permite a los usuarios enviar desde sus alias fácilmente al usar Outlook en la Web. Cuando la característica se lanza a un arrendamiento donde el administrador de inquilinos usa el cmdlet, los usuarios del arrendamiento tendrán acceso a una lista de casillas donde cada entrada corresponde a un alias en su configuración `Set-OrganizationConfig -SendFromAliasEnabled $true` de Outlook. Si selecciona un alias, aparecerá en el desplegable De del formulario Redacción.
   
 ## <a name="related-content"></a>Contenido relacionado
 

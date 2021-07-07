@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos para usuarios y grupos de la organización.
-ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ed9086c77cdf10435bae09f76493af6058d2d758
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636063"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314392"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
 
@@ -121,6 +121,9 @@ La compatibilidad para desactivar la tienda Office está disponible en las sigui
 - La web: disponible actualmente.
     
 Esto no impide que un administrador use la implementación centralizada para asignar un complemento desde Office Store.
+
+> [!NOTE] 
+> Los complementos como Visio Data Visualizer, mapas de Bing y People Graph se mostrarán en la cinta de opciones, incluso si un administrador ha deshabilitado la Tienda. Para quitar estos vínculos, los administradores deben deshabilitar el almacén a través del objeto de directiva de grupo (GPO).
   
 Para evitar que un usuario inicie sesión con una cuenta de Microsoft, puede restringir el inicio de sesión para usar solo la cuenta de la organización. Para obtener más información, vea [Identity, authentication, and authorization in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office).  
 
