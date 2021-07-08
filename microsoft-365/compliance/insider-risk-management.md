@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226352"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326752"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos de insider en Microsoft 365
 
@@ -86,10 +86,10 @@ Puede seleccionar entre las siguientes plantillas de directiva para empezar ráp
 
 ### <a name="alerts"></a>Alertas
 
-Las alertas se generan automáticamente mediante indicadores de riesgo que coinciden con las condiciones de la directiva y se muestran en el panel [Alertas.](insider-risk-management-alerts.md) Este panel ofrece una vista rápida de todas las alertas que se deben revisar, alertas abiertas a lo largo del tiempo y estadísticas de alertas de la organización. Todas las alertas de directiva se muestran con la siguiente información para ayudarle a identificar rápidamente el estado de las alertas existentes y las alertas nuevas que necesitan acción:
+Las alertas se generan automáticamente mediante indicadores de riesgo que coinciden con las condiciones de la directiva y se muestran en el panel [Alertas.](insider-risk-management-activities.md#alert-dashboard) Este panel ofrece una vista rápida de todas las alertas que se deben revisar, alertas abiertas a lo largo del tiempo y estadísticas de alertas de la organización. Todas las alertas de directiva se muestran con la siguiente información para ayudarle a identificar rápidamente el estado de las alertas existentes y las alertas nuevas que necesitan acción:
 
 - Estado
-- Gravedad
+- Severity
 - Tiempo detectado
 - Case
 - Estado del caso
@@ -105,6 +105,8 @@ Para resolver las alertas, se abre un nuevo caso, se asigna la alerta a un caso 
 ![Evaluación de la administración de riesgos de Insider](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>Investigar
+
+Investigar rápidamente todas las actividades de un usuario seleccionado con [informes de actividad de usuario (versión preliminar).](insider-risk-management-activities.md#user-activity-reports-preview) Estos informes permiten a los investigadores de la organización examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos de información interna. Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario de forma temporal o explícita a una directiva de administración de riesgos de insider.
 
 [Los casos](insider-risk-management-cases.md) se crean para alertas que requieren una revisión e investigación más profundas de los detalles y circunstancias de la actividad en torno a la coincidencia de directiva. El **panel de casos** ofrece una vista integral de todos los casos activos, casos abiertos a lo largo del tiempo y estadísticas de casos para la organización. Los revisores pueden filtrar rápidamente los casos por estado, la fecha en que se abrió el caso y la fecha en que se actualizó por última vez el caso.
 

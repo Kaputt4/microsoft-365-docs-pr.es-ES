@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos y sugiere acciones recomendadas para ayudar a solucionar los riesgos.
-ms.openlocfilehash: cc1919f63716dfa79274a5cf7016ef07f2f36f92
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 536a1c02a820b0ea36fc4fe39ca1d0d31f7bc994
+ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148955"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53330946"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -35,7 +35,7 @@ El Administrador de cumplimiento ya está disponible en general (GA) como una so
 Lo que comenzó como la vista previa pública de la puntuación de cumplimiento ha evolucionado hasta convertirse en una herramienta centralizada con capacidades de administración de cumplimiento mejoradas y mayor facilidad de uso.  La versión de ga ofrece una colección más grande de evaluaciones predefinidas para ayudarle a escalar sus actividades de cumplimiento.
 
 **Obtenga más información sobre la versión de GA:**
-- Nuestras [preguntas más frecuentes le](compliance-manager-faq.md) guían a través de la evolución con más detalle.
+- Nuestras [preguntas más frecuentes le](compliance-manager-faq.yml) guían a través de la evolución con más detalle.
 - Lea acerca de las mejoras de características de GA en [esta entrada de blog](https://aka.ms/compliancemanager/GAblog).
 
 Vea el vídeo siguiente para obtener información sobre cómo el Administrador de cumplimiento puede ayudar a simplificar la forma en que su organización administra el cumplimiento:

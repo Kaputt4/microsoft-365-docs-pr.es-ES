@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6884ec3b2bc7c24e4f7f6e62d9b24add3aeee2c0
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: a6a0ebb6ef15a6d4746d72a73feb16e53f89354e
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007350"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326788"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -42,9 +42,9 @@ Si tiene requisitos para que determinadas partes interesadas participen en inves
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>Planear el flujo de trabajo de revisión e investigación
 
-Seleccione partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el Centro de cumplimiento de [Microsoft 365](https://compliance.microsoft.com/). Asegúrese de comprender cómo asignará diferentes partes interesadas a los diferentes grupos de roles disponibles en la administración de riesgos de insider.
+Seleccione las partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Asegúrese de comprender cómo asignará diferentes partes interesadas a los diferentes grupos de roles disponibles en la administración de riesgos de insider.
 
-Dependiendo de la estructura de su equipo de administración de cumplimiento, tiene opciones para asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de administración de riesgos internos. Para ver  la pestaña Permisos en el Centro de cumplimiento de Office 365 Security &  y administrar grupos de roles, debe estar asignado al grupo de roles Administración de la organización o debe tener asignado el rol Administración de *roles.* Elija entre estas opciones de grupo de roles al configurar la administración de riesgos de insider:
+Dependiendo de la estructura de su equipo de administración de cumplimiento, tiene opciones para asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de administración de riesgos internos. Para ver  la pestaña Permisos en el Centro de cumplimiento de Office 365 Seguridad & y administrar  grupos de roles, debe estar asignado al grupo de roles Administración de la organización o debe tener asignado el rol Administración de *roles.* Elija entre estas opciones de grupo de roles al configurar la administración de riesgos de insider:
 
 | **Grupo de funciones** | **Permisos de funciones** |
 | :------------- | :------------------- |
@@ -56,18 +56,18 @@ Dependiendo de la estructura de su equipo de administración de cumplimiento, ti
 
 ## <a name="understand-requirements-and-dependencies"></a>Comprender los requisitos y dependencias
 
-En función de cómo planee implementar directivas de administración de riesgos internas, debe tener las suscripciones de licencias de Microsoft 365 adecuadas y comprender y planear algunos requisitos previos de la solución.
+En función de cómo planee implementar directivas de administración de riesgos internas, debe tener las Microsoft 365 de licencias adecuadas y comprender y planear algunos requisitos previos de la solución.
 
-**Licencias:** La administración de riesgos de Insider está disponible como parte de una amplia selección de suscripciones de licencias de Microsoft 365. Para obtener más información, consulte [el artículo Introducción a la administración de riesgos de insider.](insider-risk-management-configure.md#subscriptions-and-licensing)
+**Licencias:** La administración de riesgos de Insider está disponible como parte de una amplia selección de Microsoft 365 de licencias. Para obtener más información, consulte [el artículo Introducción a la administración de riesgos de insider.](insider-risk-management-configure.md#subscriptions-and-licensing)
 
-Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de insider, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) [a](https://www.microsoft.com/microsoft-365/enterprise) su suscripción existente o registrarse para una versión de prueba de Microsoft 365 Enterprise E5.
+Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de insider, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) a su suscripción existente o registrarse para una prueba de Microsoft 365 Enterprise E5. [](https://www.microsoft.com/microsoft-365/enterprise)
 
 **Requisitos de plantilla de directiva:** Según la plantilla de directiva que elija, hay requisitos que debe comprender y planear antes de configurar la administración de riesgos de insider en su organización:
 
-- Al usar la **plantilla Robo** de datos al salir de usuarios, debe configurar un conector de RRHH de Microsoft 365 para importar periódicamente la información de fecha de dimisión y finalización para los usuarios de su organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
+- Al usar la **plantilla Robo** de datos por parte de los usuarios, debe configurar un conector de recursos humanos de Microsoft 365 para importar periódicamente la información de fecha de dimisión y finalización para los usuarios de la organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
 - Al usar plantillas de pérdida de datos, debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir información confidencial en su organización y recibir **alertas** de riesgo de información interna para alertas de directivas DLP de alta gravedad. Vea el artículo [Crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso para configurar las directivas DLP para su organización.
 - Al usar **plantillas de infracción** de directivas de seguridad, debe habilitar Microsoft Defender para endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Consulta el [artículo Configurar características avanzadas](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) en Microsoft Defender para obtener instrucciones paso a paso para habilitar la integración de Defender for Endpoint con la administración de riesgos de insider.
-- Al usar **plantillas de** usuario no congruentes, debe configurar un conector de RRHH de Microsoft 365 para importar periódicamente información de estado de rendimiento o degradación para los usuarios de su organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
+- Al usar **plantillas de** usuario no congruentes, debe configurar un conector de recursos humanos de Microsoft 365 para importar periódicamente información de estado de rendimiento o degradación para los usuarios de la organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Probar con un pequeño grupo de usuarios en un entorno de producción
 
@@ -82,7 +82,7 @@ Si no ve ninguna alerta inmediatamente después de configurar una directiva de a
 Comparta documentación de administración de riesgos con las partes interesadas de la organización que se incluyen en el flujo de trabajo de administración y corrección:
 
 - [Crear y administrar directivas de riesgos internos](insider-risk-management-policies.md)
-- [Investigar alertas de riesgos internos](insider-risk-management-alerts.md)
+- [Investigar actividades de riesgo de información interna](insider-risk-management-activities.md)
 - [Tomar medidas en casos de riesgos internos](insider-risk-management-cases.md)
 - [Revisar los datos de casos con el explorador de contenido de riesgo interno](insider-risk-management-content-explorer.md)
 - [Crear plantillas de aviso de riesgos internos](insider-risk-management-notices.md)

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f9cd78cb41a7cbe5011163d1f5734ff0b3c2261e
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256332"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326800"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -251,4 +251,4 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 
 Después de completar estos pasos para crear la primera directiva de administración de riesgos de insider, empezará a recibir alertas de indicadores de actividad después de unas 24 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 4 de este artículo o los pasos descritos en [Create a new insider risk policy](insider-risk-management-policies.md#create-a-new-policy).
 
-Para obtener más información sobre cómo investigar alertas de riesgo de insider y el **panel de** alertas, consulte [Insider risk management alerts](insider-risk-management-alerts.md).
+Para obtener más información sobre cómo investigar alertas de riesgo de insider y el **panel de** alertas, vea Actividades de administración de riesgos [de Insider](insider-risk-management-activities.md#alert-dashboard).

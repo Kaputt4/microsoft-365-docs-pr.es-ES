@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929700"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326908"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -134,7 +134,7 @@ Nombre del registro: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Pr
 
 Nombre del canal: Administrador
 
-ID | Gravedad | Descripción del evento | Pasos para la solución de problemas
+Id. | Severity | Descripción del evento | Pasos para la solución de problemas
 :---|:---|:---|:---
 1819 | Error | Microsoft Defender para CSP de extremo: no se pudo establecer el valor del nodo. NodeId: (%1), TokenName: (%2), Result: (%3). | Descargue la [actualización acumulativa para Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
@@ -167,7 +167,7 @@ Si las herramientas de implementación usadas no indican un error en el proceso 
 
 6. Los eventos que pueden indicar problemas aparecerán en el **panel** Operativo. Puede intentar solucionarlos en función de las soluciones de la tabla siguiente:
 
-Identificador de evento | Mensaje | Pasos de resolución
+Identificador de evento | Message | Pasos de resolución
 :---:|:---|:---
  `5` | Error al conectarse al servidor en la variable Microsoft Defender para el servicio de _punto de conexión_ | [Asegúrese de que el dispositivo tiene acceso a Internet.](#ensure-the-device-has-an-internet-connection)
  `6` | El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación. Código de error: _variable_ | [Vuelva a ejecutar el script de incorporación](configure-endpoints-script.md).
@@ -300,6 +300,9 @@ Si se produce un error en la comprobación y el entorno usa un proxy para conect
 
 ## <a name="troubleshoot-onboarding-issues-on-a-server"></a>Solucionar problemas de incorporación en un servidor
 
+>[!NOTE]
+>La siguiente guía de solución de problemas solo se aplica Windows Server 2016 y inferior.
+
 Si encuentra problemas al incorporar un servidor, siga los siguientes pasos de comprobación para solucionar posibles problemas.
 
 - [Asegúrese Microsoft Monitoring Agent (MMA) está instalado y configurado para informar de los datos del sensor al servicio](configure-server-endpoints.md)
@@ -334,7 +337,7 @@ Los pasos siguientes proporcionan instrucciones para el siguiente escenario:
 - El dispositivo se apaga o se reinicia antes de que el usuario final realice un primer inicio de sesión
 - En este escenario, el servicio SENSE no se iniciará automáticamente aunque se haya implementado el paquete de incorporación
 
-<div class="alert"><b>NOTA:</b> El inicio de sesión del usuario después de OOBE ya no es necesario para que el servicio SENSE se inicie en las siguientes o más recientes versiones de Windows: Windows 10, versión 1809 o Windows Server 2019 con paquete acumulativo de actualizaciones del 22 de abril de [2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, versión 1909 con paquete acumulativo de actualizaciones de [abril de 2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, versión 2004/20H2 con paquete acumulativo de actualizaciones del 28 de abril de [2021](https://support.microsoft.com/kb/5001391) </div> 
+<div class="alert"><b>NOTA:</b> El inicio de sesión del usuario después de OOBE ya no es necesario para que el servicio SENSE se inicie en las siguientes o más recientes versiones de Windows: Windows 10, versión 1809 o Windows Server 2019 con el paquete acumulativo de actualizaciones del 22 de abril de [2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, versión 1909 con paquete acumulativo de actualizaciones de [abril de 2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, versión 2004/20H2 con paquete acumulativo de actualizaciones del 28 de abril de [2021](https://support.microsoft.com/kb/5001391) </div> 
 <br></br>
 > [!NOTE]
 > Los pasos siguientes solo son relevantes al usar Microsoft Endpoint Configuration Manager. Para obtener más información acerca de la incorporación mediante Microsoft Endpoint Configuration Manager, vea [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).

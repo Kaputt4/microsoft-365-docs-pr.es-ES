@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Aprenda cómo encontrar recursos para Temas Microsoft Viva
-ms.openlocfilehash: 4596f703f86465e4d2d37e2744493bcaef440b7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7d8a95e924c269660e50355078f4fc9eee9bd333
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538920"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326848"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introducción a Temas Microsoft Viva
 
@@ -39,11 +39,11 @@ Los recursos de esta sección le ayudarán a obtener más información sobre los
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
-|Obtener más información acerca de Temas Microsoft Viva|[Información general de Temas Microsoft Viva](topic-experiences-overview.md)|
+|Obtener más información acerca de Temas Microsoft Viva|[Introducción a Temas de Viva](topic-experiences-overview.md)|
 |Obtenga información sobre cómo los temas son descubiertos y sugeridos por AI|[Detección de Temas Microsoft Viva ](topic-experiences-discovery.md)|
-|Obtener información acerca de la seguridad de temas|[Seguridad y privacidad de Microsoft Viva](topic-experiences-security-privacy.md)|
-|Obtener información sobre cómo obtener Temas Microsoft Viva|[Página del producto Temas Microsoft Viva](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
-|Consultar recursos en el Centro de recursos de Microsoft Tech Community|[Comunidad técnica de Temas Microsoft Viva](https://resources.techcommunity.microsoft.com/viva-topics/)|
+|Obtener información acerca de la seguridad de temas|[Seguridad y privacidad de Viva Topics](topic-experiences-security-privacy.md)|
+|Obtener información sobre cómo obtener Temas Microsoft Viva|[Página de producto Temas de Viva](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Consultar recursos en el Centro de recursos de Microsoft Tech Community|[Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
 
@@ -53,7 +53,8 @@ Obtenga más información sobre cómo usar e implementar Temas Microsoft Viva en
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
-|Obtenga información sobre cómo empezar a planear el uso de Microsoft Viva. |[Introducción](topics-adoption-getstarted.md)<br><br>|  
+|Obtenga información sobre cómo empezar a planear el uso de Temas de Viva |[Introducción](topics-adoption-getstarted.md)|  
+|Configurar y ejecutar un programa piloto de prueba para Temas de Viva |[Ejecutar una prueba](trial-topics.md)|
 
 ## <a name="set-up-and-administration"></a>Configuración y administración
 
@@ -61,7 +62,7 @@ Los recursos de esta sección ayudan al administrador de su organización a inst
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
-|Más información sobre cómo configurar Microsoft Viva|[Configurar Microsoft Viva](set-up-topic-experiences.md)|
+|Obtenga información sobre cómo configurar y configurar Temas de Viva|[Configurar temas de Viva](set-up-topic-experiences.md)|
 |Obtener información sobre cómo configurar permisos de usuario|[Administrar los permisos de temas](topic-experiences-user-permissions.md)|
 |Información sobre cómo administrar quién puede ver temas|[Administrar la visibilidad por temas](topic-experiences-knowledge-rules.md)|
 |Información sobre cómo administrar la configuración de detección de tema|[Administrar el descubrimiento de temas](topic-experiences-discovery.md)|
