@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 9114a825ad011f0b2a17cea4929ab2a09bfa2172
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861184"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339483"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop 
 6 minutos para leer 
@@ -54,7 +54,7 @@ Hay varias formas de incorporar un equipo host WVD:
 #### <a name="scenario-1-using-local-group-policy"></a>*Escenario 1: Uso de la directiva de grupo local*
 Este escenario requiere colocar el script en una imagen dorada y usa la directiva de grupo local para ejecutarse al principio del proceso de arranque.
 
-Use las instrucciones de [Incorporación de dispositivos VDI de](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)infraestructura de escritorio virtual no persistente.
+Use las instrucciones de Incorporación de los dispositivos de infraestructura de escritorio [virtual (VDI)](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices)no persistentes .
 
 Siga las instrucciones de una sola entrada para cada dispositivo.
 

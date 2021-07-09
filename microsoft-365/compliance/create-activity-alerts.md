@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Agregar y administrar alertas de actividad en el Centro de seguridad & cumplimiento para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas
-ms.openlocfilehash: d0daa9249a8ea69c376ef7bbc8b7a90253e411db
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227168"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341609"
 ---
 # <a name="create-activity-alerts"></a>Crear alertas de actividad
 
@@ -46,7 +46,7 @@ Puede crear una alerta de actividad que le enviará una notificación por correo
 
 ## <a name="create-an-activity-alert"></a>Crear una alerta de actividad
 
-1. Vaya a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
+1. Vaya a <https://compliance.microsoft.com/managealerts>.
 
 2. Inicie sesión con su cuenta profesional o educativa.
 
@@ -85,7 +85,7 @@ Puede crear una alerta de actividad que le enviará una notificación por correo
 
 Puedes desactivar una alerta de actividad para que no se envíe una notificación por correo electrónico. Después de desactivar la alerta de actividad, aún se muestra en la lista de alertas de actividad de la organización y aún puede ver sus propiedades.
 
-1. Vaya a Ir a [https://protection.office.com/managealerts](https://protection.office.com/managealerts) .
+1. Vaya a <https://compliance.microsoft.com/managealerts>.
 
 2. Inicie sesión con su cuenta profesional o educativa.
 

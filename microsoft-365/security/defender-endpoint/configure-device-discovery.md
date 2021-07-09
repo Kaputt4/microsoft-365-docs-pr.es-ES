@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ee56ed2949ea72771d8f08570d4352dbe7548d52
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7125a6953b9be46af9073b50c9268ce65dc0cd30
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286950"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339536"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
@@ -43,8 +43,8 @@ La detección se puede configurar para que esté en modo estándar o básico. Us
 Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente, solo dispositivos Windows 10) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo.
 
 > [!IMPORTANT]
-> Para obtener una vista previa, primero tendrás que activar las características de vista previa en Centro de seguridad de Microsoft Defender.
-> A continuación, puedes acceder a la configuración de detección de dispositivos Microsoft 365 centro de seguridad. La lista de dispositivos no administrados y recomendaciones de seguridad estará disponible en el centro de seguridad de Centro de seguridad de Microsoft Defender y Microsoft 365, mientras que los iconos del panel solo estarán disponibles en Microsoft 365 centro de seguridad.
+> Para obtener una vista previa, primero tendrás que activar las características de vista previa en Microsoft 365 Defender.
+> A continuación, puedes acceder a la configuración de detección de dispositivos Microsoft 365 centro de seguridad. La lista de dispositivos no administrados y recomendaciones de seguridad estará disponible en el centro de seguridad de Microsoft 365 Defender y Microsoft 365, mientras que los iconos del panel solo estarán disponibles en Microsoft 365 centro de seguridad.
 
 Siga los siguientes pasos de configuración en Microsoft 365 de seguridad:
 

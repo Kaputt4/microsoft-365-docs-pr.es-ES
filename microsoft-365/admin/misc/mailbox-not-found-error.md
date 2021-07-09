@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Un error **No se pudo encontrar el buzón** significa que la cuenta que usó para conectarse a Outlook en la Web no tiene una licencia de Exchange Online.
-ms.openlocfilehash: cb82f917adca8f1fc183fd9516321a524c63eb69
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 54aa196b0b324054d6220d4437a672a3db2a45ec
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635791"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338570"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>¿Aparece el error No se pudo encontrar el buzón en Outlook en la Web?
 
@@ -31,7 +31,7 @@ Si usa Outlook en la Web y aparece el error **No se pudo encontrar el buzón**, 
 
 El administrador puede asignar una licencia a su cuenta siguiendo estos pasos:
 
-1. Abra el [Centro de administración de Microsoft 365](https://portal.office.com/adminportal/home#/homepage), vaya a **Usuarios activos** en la sección  **Usuarios** y seleccione el usuario para el que aparece el error.
+1. Abra el [Centro de administración de Microsoft 365](https://admin.microsoft.com/adminportal/home#/homepage), vaya a **Usuarios activos** en la sección  **Usuarios** y seleccione el usuario para el que aparece el error.
 1. En la página de usuario que se abre, vaya a la sección **Licencias y aplicaciones**, seleccione el valor de **Ubicación** apropiado y asigne una licencia que contenga Exchange Online (expanda la licencia para ver sus detalles). 
 1. Cuando haya terminado, haga clic en **Guardar cambios**.
 

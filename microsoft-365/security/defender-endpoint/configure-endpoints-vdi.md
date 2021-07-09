@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 555f96dc1f45fb6a406b5993d0b8e4a3745c283b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843215"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339639"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
+# <a name="onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporación de los dispositivos de infraestructura de escritorio virtual (VDI) no persistentes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,9 +63,9 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>Para Windows 10 o Windows Server 2019
 
-1.  Abra el archivo de configuración .zip VDI (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/):
+1.  Abra el archivo de configuración .zip VDI (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
 
-    1.  En el panel de navegación, **seleccione Configuración**  >  **Incorporación**.
+    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints**  >  **Device management**  >  **Onboarding**.
 
     1. Seleccione Windows 10 como sistema operativo.
 
@@ -111,11 +111,11 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
    
       - Para una sola entrada para cada dispositivo: 
     
-        Compruebe solo una entrada en Centro de seguridad de Microsoft Defender.
+        Compruebe solo una entrada en Microsoft 365 Defender portal.
 
       - Para varias entradas para cada dispositivo: 
        
-        Compruebe varias entradas en Centro de seguridad de Microsoft Defender.
+        Compruebe varias entradas en Microsoft 365 Defender portal.
 
 6. Haga **clic en Lista de** dispositivos en el panel de navegación.
 

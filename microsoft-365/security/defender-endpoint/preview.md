@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322430"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339495"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
@@ -54,7 +54,7 @@ Al trabajar con características en versión preliminar pública, estas caracter
 - Son totalmente compatibles con Microsoft.
 - Solo puede estar disponible en regiones geográficas seleccionadas o entornos en la nube. Por ejemplo, es posible que la característica no exista en la nube del gobierno.
 - Las características individuales de la versión preliminar pueden tener más restricciones de uso y compatibilidad. Si es así, esta información se indica normalmente en la documentación de características.
-- Las versiones preliminares se proporcionan con un nivel de soporte estándar y se recomienda para cargas de trabajo de producción. 
+- Las versiones preliminares se proporcionan con un nivel de soporte estándar y se pueden usar para entornos de producción. 
 
 
 

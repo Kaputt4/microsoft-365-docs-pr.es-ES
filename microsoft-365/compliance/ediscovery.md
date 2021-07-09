@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
-- m365solution-aed
+- m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, conversaciones de Microsoft Teams y Skype Empresarial. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
-ms.openlocfilehash: dc332e1a399588e4a1e969af45da6cff92008461
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: a62c8a53081a79e4afd98c82bfaca486a6155a6b
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256353"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341717"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de exhibición de documentos electrónicos en Microsoft 365
 
@@ -174,6 +174,6 @@ Consulte los siguientes artículos para obtener más información y empezar a us
 
 Para ver qué características de exhibición de documentos electrónicos se han iniciado, están implementando o en desarrollo, vea el [Microsoft 365 guía básica](https://aka.ms/eDiscoRoadMap).
 
-## <a name="training"></a>Aprendizaje
+## <a name="training"></a>Formación
 
 La formación de los administradores de TI, los administradores de exhibición de documentos electrónicos y los equipos de investigación de cumplimiento en los conceptos básicos para la búsqueda de contenido, la exhibición de documentos electrónicos principal y Advanced eDiscovery pueden ayudar a su organización a empezar a usar más rápidamente Microsoft 365 herramientas de exhibición de documentos electrónicos. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de la organización a empezar con la exhibición de documentos electrónicos: Describir las capacidades de [eDiscovery y auditoría](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)de Microsoft 365 .

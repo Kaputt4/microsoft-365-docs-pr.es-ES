@@ -1,6 +1,6 @@
 ---
 title: Incorporación Windows 10 dispositivos a Microsoft Defender para endpoint a través de la directiva de grupo
-description: Use la directiva de grupo para implementar el paquete de configuración Windows 10 dispositivos para que se incorpore al servicio.
+description: Use la directiva de grupo para implementar el paquete de configuración en los Windows 10 para que se incorpore al servicio.
 keywords: configurar dispositivos mediante la directiva de grupo, la administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326968"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339627"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación Windows 10 dispositivos con directiva de grupo 
+# <a name="onboard-the-windows-10-devices-using-group-policy"></a>Incorporar los dispositivos Windows 10 con la directiva de grupo 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "53326968"
 
 Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
 
-1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/):
+1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
 
-    1. En el panel de navegación, **seleccione Configuración**  >  **Incorporación**.
+    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints**  >  **Device management**   >  **Onboarding**.
 
     1. Seleccione Windows 10 como sistema operativo.
 
@@ -69,7 +69,7 @@ Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 
 7. Seleccione **Ejecutar si el usuario ha iniciado sesión o no** y active la casilla Ejecutar con **privilegios** más altos.
 
-8. Vaya a la **pestaña Acciones** y haga clic **en Nuevo...** Asegúrese de **que Iniciar un programa** está seleccionado en el **campo** Acción. Escriba el nombre de archivo y la ubicación del archivo *compartido WindowsDefenderATPOnboardingScript.cmd.*
+8. Vaya a la **pestaña Acciones** y haga clic **en Nuevo...** Asegúrese de **que Iniciar un programa** está seleccionado en el **campo** Acción. Escriba la ruta netBIOS del archivo *compartido WindowsDefenderATPOnboardingScript.cmd.*
 
 9. Haga **clic en Aceptar** y cierre las ventanas GPMC abiertas.
 
@@ -77,7 +77,7 @@ Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 > Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que el dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo defender para endpoint](run-detection-test.md)recién incorporado.
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Opciones adicionales de configuración de Defender para puntos de conexión
-Para cada dispositivo, puedes especificar si se pueden recopilar muestras del dispositivo cuando se realiza una solicitud a través de Centro de seguridad de Microsoft Defender enviar un archivo para un análisis profundo.
+Para cada dispositivo, puedes especificar si se pueden recopilar muestras del dispositivo cuando se realiza una solicitud a través de Microsoft 365 Defender enviar un archivo para un análisis profundo.
 
 Puede usar la directiva de grupo (GP) para configurar opciones, como las opciones para el uso compartido de muestras usado en la característica de análisis profundo.
 
@@ -189,9 +189,9 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 > [!NOTE]
 > Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
 
-1. Obtener el paquete de offboarding desde [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/):
+1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. En el panel de navegación, **seleccione Configuración**  >  **Offboarding**.
+    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints** Administración  >  **de dispositivos**  >  **Offboarding**.
 
     1. Seleccione Windows 10 como sistema operativo.
 
@@ -224,8 +224,8 @@ Con la directiva de grupo no hay una opción para supervisar la implementación 
 
 ## <a name="monitor-devices-using-the-portal"></a>Supervisar dispositivos con el portal
 
-1. Vaya a [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/).
-2. Haga clic **en Lista dispositivos**.
+1. Vaya a [Microsoft 365 Defender portal](https://security.microsoft.com/).
+2. Haga clic **en Inventario de dispositivos**.
 3. Compruebe que aparecen dispositivos.
 
 > [!NOTE]

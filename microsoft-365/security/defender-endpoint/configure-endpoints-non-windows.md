@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 265a7e9093638caa2111c7d1d82e51c8c2437d12
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845467"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339675"
 ---
 # <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
@@ -38,7 +38,7 @@ ms.locfileid: "52845467"
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows y plataformas no Windows de seguridad. Podrás ver alertas de varios sistemas operativos compatibles (SO) en Centro de seguridad de Microsoft Defender proteger mejor la red de la organización. 
+Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows y plataformas no Windows de seguridad. Podrás ver alertas de varios sistemas operativos compatibles (SO) en Microsoft 365 Defender y proteger mejor la red de la organización. 
 
 Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para obtener más información, vea:
 - [Requisitos del sistema de Microsoft Defender para endpoint en Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
@@ -64,7 +64,7 @@ Tendrás que seguir los siguientes pasos para incorporar dispositivos que no Win
 1. Siga la documentación del tercero para desconectar la solución de terceros de Microsoft Defender para endpoint.
 
 2. Quite los permisos de la solución de terceros en el inquilino de Azure AD.
-   1. Inicie sesión en el [Azure Portal](https://portal.azure.com).
+   1. Inicie sesión en el [portal de Azure](https://portal.azure.com).
    2. Seleccione **Azure Active Directory > Enterprise aplicaciones**.
    3. Selecciona la aplicación que quieras quitar.
    4. Seleccione el **botón** Eliminar.

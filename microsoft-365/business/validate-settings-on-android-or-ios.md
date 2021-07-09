@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Obtén información sobre cómo validar la configuración Microsoft 365 Empresa Premium protección de aplicaciones en tus dispositivos Android o iOS.
-ms.openlocfilehash: a0a4a6e6cff59f66a506929e97c99d361472a68b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 43e74b548711550090021c39096b1647cee9e039
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578075"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339338"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Validar la configuración de protección de aplicaciones en dispositivos Android o iOS
 
@@ -42,7 +42,7 @@ Después de [establecer las configuraciones de la aplicación para dispositivos 
   
 En primer lugar, asegúrate de que la directiva se aplica a la aplicación en la que vas a validarla.
   
-1. En el Centro Microsoft 365 Empresa Premium [administración,](https://portal.office.com)vaya a **Directiva** \> **de edición de directivas.**
+1. En el Centro Microsoft 365 Empresa Premium [administración,](https://admin.microsoft.com)vaya a **Directiva** \> **de edición de directivas.**
     
 2. Elija **Directiva de aplicación** para Android para la configuración que creó en el programa de instalación u otra directiva que haya creado y compruebe que se aplica para Outlook, por ejemplo. 
     
@@ -131,7 +131,7 @@ Después de [establecer las configuraciones de la aplicación para dispositivos 
   
 En primer lugar, asegúrate de que la directiva se aplica a la aplicación en la que vas a validarla.
   
-1. En el Centro Microsoft 365 Empresa Premium [administración,](https://portal.office.com)vaya a **Directiva** \> **de edición de directivas.**
+1. En el Centro Microsoft 365 Empresa Premium [administración,](https://admin.microsoft.com)vaya a **Directiva** \> **de edición de directivas.**
     
 2. Elija **Directiva de aplicación para iOS** para la configuración que creó en el programa de instalación u otra directiva que haya creado y compruebe que se aplica para Outlook por ejemplo. 
     

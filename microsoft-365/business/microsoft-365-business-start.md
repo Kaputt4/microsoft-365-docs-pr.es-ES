@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información Microsoft 365 para empresas, cómo configurarla y cómo preparar los dispositivos y equipos de los usuarios para asegurarse de que están protegidos por Microsoft 365 para empresas.
-ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2ab0079da7a8f30d481cdb3d3dc6d165b4a19e99
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706466"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339298"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introducción a Microsoft 365 para empresas
 
@@ -57,11 +57,11 @@ Microsoft 365 para empresas está pensada para hasta 300 licencias. Si necesita 
 
  **Información general sobre Microsoft 365 configuración de business Suite**
   
-En el siguiente diagrama se describe cómo los administradores Microsoft 365 para empresas. También describe los pasos para preparar los equipos Windows para Microsoft 365 para empresas. También puede agregar nuevos dispositivos en el centro Microsoft 365 administración con [Windows AutoPilot](add-autopilot-devices-and-profile.md). Puedes usar AutoPilot para configurar y configurar previamente nuevos dispositivos para que estén listos para un uso productivo tan pronto como un usuario inicia sesión con sus credenciales Microsoft 365 para empresas.
+En el siguiente diagrama se describe cómo los administradores Microsoft 365 para empresas. También describe los pasos para preparar los equipos Windows para Microsoft 365 para empresas. También puede agregar nuevos dispositivos en el Centro de administración de Microsoft 365 con [Windows AutoPilot](add-autopilot-devices-and-profile.md). Puedes usar AutoPilot para configurar y configurar previamente nuevos dispositivos para que estén listos para un uso productivo tan pronto como un usuario inicia sesión con sus credenciales Microsoft 365 para empresas.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-## <a name="watch-set-up-microsoft-365-business"></a>Watch: Configure up Microsoft 365 Empresa
+## <a name="watch-set-up-microsoft-365-business"></a>Ver: Configurar Microsoft 365 Empresa
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -70,7 +70,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Configurar Microsoft 365 para empresas (administrador)
 
-Inicie sesión en [el Microsoft 365 de](https://portal.office.com/adminportal/home) administración con sus credenciales de administrador global y complete los siguientes pasos para configurar Microsoft 365 para empresas. 
+Inicie sesión en [Centro de administración de Microsoft 365](https://admin.microsoft.com/adminportal/home) con sus credenciales de administrador global y complete los siguientes pasos para configurar Microsoft 365 para empresas. 
   
 1. [Requisitos previos para proteger datos en dispositivos con Microsoft 365 para empresas](pre-requisites-for-data-protection.md)
     
@@ -78,7 +78,7 @@ Inicie sesión en [el Microsoft 365 de](https://portal.office.com/adminportal/ho
     
 2. [Usar el Asistente para la instalación para configurar Microsoft 365 para empresas](set-up.md)
     
-    Si se está moviendo permanentemente de un **Active Directory local** a la nube, puede ir al Centro de administración de Microsoft 365 y usar el Asistente para la instalación para agregar los usuarios manualmente, o puede realizar una sincronización única con Azure AD Conectar. Hay dos formas de hacerlo: 
+    Si se está moviendo permanentemente de un **Active Directory local a** la nube, puede ir a Centro de administración de Microsoft 365 y usar el asistente para la instalación para agregar los usuarios manualmente, o puede realizar una sincronización única con Azure AD Conectar. Hay dos formas de hacerlo: 
     
     - Si también tiene un servidor de Exchange 2010, Exchange 2013 o Exchange 2016, puede usar minimal hybrid para migrar rápidamente buzones de [Exchange](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)Microsoft 365 . Los pasos híbridos mínimos incluyen una sincronización única de usuarios con Azure AD y la migración de correo electrónico desde local a la nube. Una vez completada la migración de correo electrónico, la sincronización de directorios se desactivará automáticamente al usar este método.
     
@@ -94,12 +94,12 @@ Siga los pasos descritos en Configurar dispositivos móviles para [Microsoft 365
 
 Los administradores pueden seleccionar previamente la configuración de los equipos Windows 10 nuevos mediante [Windows AutoPilot](add-autopilot-devices-and-profile.md). Los usuarios pueden configurar sus dispositivos Windows 10 existentes o nuevos siguiendo los pasos de este tema: Configurar equipos Windows para Microsoft 365 usuarios [empresariales.](set-up-windows-devices.md) Para los dispositivos existentes, los usuarios **pueden mover** [archivos opcionalmente a OneDrive para la Empresa](move-files-to-onedrive.md). También pueden usar herramientas de terceros para mover archivos asociados Windows perfil a OneDrive.
   
-Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 para empresas para proteger los dispositivos de Windows 10, a la vez que mantiene el acceso a los recursos locales que requieren autenticación local. Siga los pasos descritos en [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business](manage-windows-devices.md) to set this up. Se prefiere este método y los dispositivos en este estado se **denominan dispositivos** unidos a Azure AD híbrido. 
+Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 para empresas para proteger los dispositivos de Windows 10, al mismo tiempo que mantiene el acceso a los recursos locales que requieren autenticación local. Siga los pasos descritos en [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business](manage-windows-devices.md) to set this up. Se prefiere este método y los dispositivos en este estado se **denominan dispositivos** unidos a Azure AD híbrido. 
   
 Si conserva un Active Directory local que contiene algunos recursos locales (como recursos compartidos de archivos e impresoras), puede proporcionar a los dispositivos unidos a **Azure AD** acceso a estos recursos siguiendo los pasos que se indican a continuación: Obtener acceso a recursos locales desde un dispositivo unido a Azure AD en [Microsoft 365](access-resources.md)para empresas.
   
   
-## <a name="contact-support"></a>Contactar soporte
+## <a name="contact-support"></a>Ponerse en contacto con soporte técnico
 
  **Si necesita ponerse en contacto con soporte técnico:**
   
@@ -112,4 +112,4 @@ Si conserva un Active Directory local que contiene algunos recursos locales (com
 [Microsoft 365 documentación y recursos para empresas](./index.yml) (página de vínculos)\
 [Administrar Microsoft 365 para empresas](manage.md) (artículo)\
 [Migrar a Microsoft 365 para empresas](migrate-to-microsoft-365-business.md) (artículo)\
-[Microsoft 365 vídeos de aprendizaje para empresas](../business-video/index.yml) (página de vínculos)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](../business-video/index.yml) (página de vínculo)

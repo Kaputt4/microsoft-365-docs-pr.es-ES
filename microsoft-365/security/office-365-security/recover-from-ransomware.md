@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administradores pueden aprender a recuperarse de un ataque de ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789056"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341441"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
@@ -49,7 +49,7 @@ Si tiene copias de seguridad sin conexión, probablemente pueda restaurar los da
 
 Si no tiene copias de seguridad o si las copias de seguridad también se vieron afectadas por el ransomware, puede omitir este paso.
 
-## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Paso 2: Deshabilitar Exchange ActiveSync y OneDrive sincronización
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Paso 2: Deshabilitar Exchange ActiveSync y Sincronización de OneDrive
 
 El punto clave aquí es detener la propagación del cifrado de datos por el ransomware.
 
@@ -63,7 +63,7 @@ Para deshabilitar otros tipos de acceso a un buzón, vea:
 
 - [Habilitar o deshabilitar el acceso POP3 o IMAP4 para un usuario](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-La pausa OneDrive sincronización ayudará a proteger los datos de la nube de que los dispositivos potencialmente infectados actualicen los datos de la nube. Para obtener más información, [vea How to Pause and Resume sync in OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
+La pausa Sincronización de OneDrive ayudará a proteger los datos de la nube de que los dispositivos potencialmente infectados actualicen los datos de la nube. Para obtener más información, [vea How to Pause and Resume sync in OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Paso 3: Quitar el malware de los dispositivos afectados
 
@@ -99,11 +99,11 @@ En el caso excepcional de que el ransomware eliminó todo el correo electrónico
 
 - [Recuperación de elementos eliminados en Outlook para Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Paso 7: Volver a habilitar Exchange ActiveSync y OneDrive sincronización
+## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Paso 7: Volver a habilitar Exchange ActiveSync y Sincronización de OneDrive
 
-Después de limpiar los equipos y dispositivos y recuperar los datos, puede volver a habilitar Exchange ActiveSync y OneDrive que deshabilitó anteriormente en el paso [2](#step-2-disable-exchange-activesync-and-onedrive-sync).
+Después de limpiar los equipos y dispositivos y recuperar los datos, puede volver a habilitar Exchange ActiveSync y Sincronización de OneDrive que deshabilitó anteriormente en el paso [2](#step-2-disable-exchange-activesync-and-onedrive-sync).
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Paso 8 (opcional): bloquear OneDrive sincronización para extensiones de archivo específicas
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Paso 8 (opcional): Bloquear Sincronización de OneDrive para extensiones de archivo específicas
 
 Después de recuperarse, puede impedir que los OneDrive para la Empresa sincronicen los tipos de archivo que se vieron afectados por este ransomware. Para obtener más información, [vea Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
@@ -141,30 +141,30 @@ Si su país no aparece en la lista, pregúntele a las agencias de seguridad loca
 
 Puede notificar mensajes de suplantación de identidad que contienen ransomware mediante uno de varios métodos. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="additional-ransomware-resources"></a>Recursos ransomware adicionales
 
-- [Ransomware](/windows/security/threat-protection/intelligence/ransomware-malware)
+[Introducción al ransomware operado por humanos](/security/compass/human-operated-ransomware)
 
-- [Respuesta ransomware: ¿pagar o no pagar?](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+[Proteger rápidamente contra ransomware y extorsión](/security/compass/protect-against-ransomware)
 
-- [Norsk Hydro responde al ataque ransomware con transparencia](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+[El último Inteligencia de seguridad de Microsoft PDF del informe de informes)](https://www.microsoft.com/securityinsights/) (buscar "ransomware")
+
+**Ransomware: un informe de amenazas generalizado y** continuo en el nodo **Análisis** de amenazas del portal Microsoft 365 Defender amenazas
+
+Microsoft 365 protección:
 
 - [Detección de ransomware y recuperación de archivos en OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
-
-- [Inteligencia de seguridad de Microsoft Informe](https://www.microsoft.com/securityinsights/)
-
 - [Habilitar o deshabilitar macros en Office archivos](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
-
 - [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md)
 
-- [Una actualización digna: la seguridad de próxima generación en Windows 10 resistente frente a los brotes de ransomware en 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+Entradas del blog del equipo de Seguridad de Microsoft:
 
-- [No mas, Samas: ¿Qué hay en el modus operandi de este ransomware?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
+- [Volverse resistente al comprender los riesgos de ciberseguridad: Parte 4: navegar por las amenazas actuales (mayo de 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
-- [Malware locky, con suerte de evitarlo](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
+  Consulta la **sección Ransomware.**
 
-- [MSRT july 2016: Cerber ransomware](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
+- [Ataques de ransomware operados por humanos: un desastre evitable (marzo de 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [Respuesta ransomware: ¿pagar o no pagar? (Diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro responde al ataque ransomware con transparencia (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [Una actualización digna: la seguridad de última generación en Windows 10 resistente frente a los brotes de ransomware en 2017 (enero de 2018)](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
-- [Las tres cabezas del ransomware Cerberus-like Cerber](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
-
-- [Ransomware Troldesh influenciado por (el) código Da Vinci](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)

@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Obtenga información sobre los pasos básicos de solución de problemas que puede seguir para resolver problemas comunes en Office 365 exhibición de documentos electrónicos.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822243"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339423"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar y resolver problemas comunes de exhibición de documentos electrónicos
 
@@ -99,7 +99,7 @@ Abra la ubicación del SPO y compruebe que este archivo no está allí.
 La solución sugerida es volver a indizar manualmente el sitio o esperar a que el sitio vuelva a indexarse mediante el proceso en segundo plano automático.
 
 
-## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Error o problema: este resultado de búsqueda no se descargó, ya que es una carpeta u otro artefacto que no se puede descargar por sí mismo, se descargarán los elementos dentro de la carpeta o biblioteca.
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Error o problema: este resultado de búsqueda no se descargó, ya que es una carpeta u otro artefacto que no se puede descargar por sí mismo, se descargarán los elementos dentro de la carpeta o biblioteca.
 
 Es posible que vea ese error al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y ubicaciones de One Drive For Business. Significa que ibamos a intentar exportar el elemento notificado en el índice, pero resultó ser una carpeta por lo que no lo exportamos. Como se mencionó en el error, no exportamos elementos de carpeta, pero exportamos su contenido.
 
@@ -122,7 +122,7 @@ Se produce un error en una búsqueda de exhibición de documentos electrónicos 
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>Error o problema: Exportar resultados de búsqueda es lento
 
-Al exportar los resultados de búsqueda desde la exhibición de documentos electrónicos o la búsqueda de contenido en el Centro de seguridad y cumplimiento, la descarga tarda más de lo esperado.  Puede comprobar la cantidad de datos que se descargarán y, posiblemente, aumentar la velocidad de exportación.
+Al exportar resultados de búsqueda desde la exhibición de documentos electrónicos principal o la búsqueda de contenido en el Centro de cumplimiento de Microsoft 365, la descarga tarda más de lo esperado.  Puede comprobar la cantidad de datos que se descargarán y, posiblemente, aumentar la velocidad de exportación.
 
 ### <a name="resolution"></a>Solución
 
@@ -145,6 +145,16 @@ Al exportar los resultados de búsqueda desde la exhibición de documentos elect
 5. Compruebe si hay errores en el archivo trace.log ubicado en el directorio al que exportó el contenido.
 
 6. Si aún tiene problemas, considere la posibilidad de dividir las búsquedas que devuelven un gran conjunto de resultados en búsquedas más pequeñas. Por ejemplo, puede usar intervalos de fechas en las consultas de búsqueda para devolver un conjunto más pequeño de resultados que se pueden descargar más rápido.
+
+## <a name="errorissue-export-process-not-progressing-or-is-stuck"></a>Error o problema: el proceso de exportación no progresa o está atascado
+
+Al exportar resultados de búsqueda desde la exhibición de documentos electrónicos principal o la búsqueda de contenido en el Centro de cumplimiento de Microsoft 365, el proceso de exportación no avanza o parece que está atascado.
+
+### <a name="resolution"></a>Solución
+
+1. Si es necesario, vuelva a ejecutar la búsqueda. Si la búsqueda se ejecutó por última vez hace más de 7 días, debe volver a ejecutar la búsqueda.
+
+2. Reinicie la exportación.
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>Error o problema: "Error interno del servidor (500) producido"
 
@@ -222,7 +232,7 @@ Después de una exportación correcta, la descarga completada a través de la he
 
 ### <a name="resolution"></a>Solución
 
-Este es un problema del lado cliente y, para corregirlo, intente los pasos siguientes:
+Este es un problema del lado cliente. Para corregirlo, siga estos pasos:
 
 1. Intente usar otro cliente o máquina para descargar.
 
@@ -234,6 +244,6 @@ Este es un problema del lado cliente y, para corregirlo, intente los pasos sigui
 
 5. Asegúrese de que ninguna otra exportación se descarga en la misma carpeta o en cualquier carpeta primaria.
 
-6. Si los pasos anteriores no funcionaron, deshabilite la compresión y la desduplicación.
+6. Si los pasos anteriores no funcionan, deshabilite la compresión y la desduplicación.
 
 7. Si esto funciona, el problema se debe a un escáner de virus local o a un problema de disco.

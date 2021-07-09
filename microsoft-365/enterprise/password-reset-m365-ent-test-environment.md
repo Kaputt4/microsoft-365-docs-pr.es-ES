@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y pruebe el restablecimiento de contraseña para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: efcaaf9ed1873c0908bb0e64644b8e10de280a01
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13169824866e91c1a09d412a875d2f4ce4391fa8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921497"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339387"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Restablecimiento de contraseña para el entorno de prueba de Microsoft 365
 
@@ -90,7 +90,7 @@ Después, pruebe el restablecimiento de contraseña para la cuenta de usuario 3.
 1. Escriba el nombre de cuenta usuario 3, escriba los caracteres del CAPTCHA y, a continuación, **seleccione Siguiente**.
 1. Para **el paso de comprobación 1**, seleccione Enviar un correo electrónico alternativo **y,** a continuación, **seleccione Correo electrónico**. Cuando reciba el correo electrónico, escriba el código de verificación y, a continuación, **seleccione Siguiente**.
 1. En **Volver a la cuenta,** escriba una nueva contraseña para la cuenta de usuario 3 y, a continuación, seleccione **Finalizar**. Anote la contraseña cambiada de la cuenta de usuario 3 y almacénela en un lugar seguro.
-1. En una pestaña independiente del mismo explorador, vaya a [https://portal.office.com](https://portal.office.com) y después inicie sesión con el nombre de la cuenta Usuario 3 y la nueva contraseña. Debe ver la página **principal de Microsoft Office**.
+1. En una pestaña independiente del mismo explorador, vaya a [https://admin.microsoft.com](https://admin.microsoft.com) y después inicie sesión con el nombre de la cuenta Usuario 3 y la nueva contraseña. Debe ver la página **principal de Microsoft Office**.
 
 ## <a name="next-step"></a>Paso siguiente
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: El administrador puede aprender a usar la auditoría de uso compartido en el registro de auditoría Microsoft 365 para identificar los recursos compartidos con usuarios fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819300"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341513"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Usar el uso compartido de auditoría en el registro de auditoría
 
@@ -96,26 +96,26 @@ Un requisito común para los administradores es crear una lista de todos los rec
 
 El primer paso es buscar eventos de uso compartido en el registro de auditoría. Para obtener más información (incluidos los permisos necesarios) sobre cómo buscar en el registro de auditoría, vea Buscar en el registro de auditoría en el Centro de [seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md).
   
-1. Vaya a [https://protection.office.com](https://protection.office.com).
-    
+1. Vaya a <https://compliance.microsoft.com>.
+
 2. Inicie sesión con su cuenta profesional o educativa.
-    
-3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Buscar**  > **Búsqueda de registros de auditoría**.
-    
-    La página de **Búsqueda de registros de auditoría** se mostrará. 
-    
+
+3. En el panel izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en **Auditar**.
+
+    Aparece la página **Auditoría**.
+
 4. En **Actividades,** haga clic **en Compartir y acceder a** las actividades de solicitud para buscar eventos relacionados con el uso compartido. 
-    
+
     ![En Actividades, seleccione Compartir y obtener acceso a actividades de solicitud](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  Seleccione un intervalo de fecha y hora para buscar los eventos de uso compartido que se produjeron en ese período. 
-    
+5. Seleccione un intervalo de fecha y hora para buscar los eventos de uso compartido que se produjeron en ese período. 
+
 6. Haga **clic en** Buscar para ejecutar la búsqueda. 
-    
+
 7. Cuando la búsqueda termine de ejecutarse y se muestren los resultados, haga clic **en Exportar** \> **resultados Descargar todos los resultados**.
-    
+
     Después de seleccionar la opción de exportación, un mensaje en la parte inferior de la ventana le pedirá que abra o guarde el archivo CSV.
-    
+
 8. Haga **clic en** Guardar como y guarde el archivo CSV en una carpeta del equipo \>  local. 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>Paso 2: Usar el Editor de PowerQuery para dar formato al registro de auditoría exportado

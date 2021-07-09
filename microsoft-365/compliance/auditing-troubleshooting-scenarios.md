@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar la herramienta de Microsoft 365 de búsqueda de registro de auditoría para ayudar a solucionar problemas comunes de soporte técnico para cuentas de correo electrónico.
-ms.openlocfilehash: 5f753163b5d4d6c04c121a7ce3fae970690a57b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22d511fa2ad538c4ec9729fb051caefad6c3e974
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906098"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341061"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de soporte técnico comunes
 
@@ -49,18 +49,18 @@ Debe tener asignado el rol View-Only registros de auditoría o registros de audi
 
 En esta sección se describen los conceptos básicos para crear y ejecutar búsquedas de registro de auditoría. Use estas instrucciones como punto de partida para cada escenario de solución de problemas de este artículo. Para obtener instrucciones paso a paso más detalladas, vea [Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)
 
-1. Vaya a [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e inicie sesión con su cuenta profesional o educativa.
+1. Vaya a <https://compliance.microsoft.com/auditlogsearch> e inicie sesión con su cuenta profesional o educativa.
     
-    La página del **registro de auditoría de búsqueda** será mostrada. 
+    Aparece la página **Auditoría**. 
     
-    ![Configurar criterios y, a continuación, seleccionar Buscar para ejecutar la búsqueda](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurar criterios y, a continuación, seleccionar Buscar para ejecutar la búsqueda](../media/AuditLogSearchPage1.png)
   
 4. Puede configurar los siguientes criterios de búsqueda. Cada escenario de solución de problemas de este artículo recomienda instrucciones específicas para configurar estos campos.
     
-    a. **Actividades:** Seleccione la lista desplegable para mostrar las actividades que puede buscar. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar **Mostrar resultados para todas las actividades,** se muestran los resultados de todas las actividades que cumplen los demás criterios de búsqueda. También tendrás que dejar este campo en blanco en algunos de los escenarios de solución de problemas.
-    
-    b. **Fecha de inicio** y **fecha de finalización:** seleccione una fecha y un intervalo de tiempo para mostrar los eventos que se produjeron en ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días.
+   a. **Fecha de inicio** y **fecha de finalización:** seleccione una fecha y un intervalo de tiempo para mostrar los eventos que se produjeron en ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días.    
 
+   b. **Actividades:** Seleccione la lista desplegable para mostrar las actividades que puede buscar. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar **Mostrar resultados para todas las actividades,** se muestran los resultados de todas las actividades que cumplen los demás criterios de búsqueda. También tendrás que dejar este campo en blanco en algunos de los escenarios de solución de problemas.
+    
     c. **Usuarios:** Haga clic en este cuadro y, a continuación, seleccione uno o varios usuarios para los que mostrar los resultados de la búsqueda. Los registros de auditoría de la actividad seleccionada realizada por los usuarios seleccionados en este cuadro se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y cuentas de servicio) de su organización.
     
     d. **Archivo, carpeta o sitio:** Escriba algunos o todos los nombres de un archivo o carpeta para buscar actividad relacionada con el archivo de carpeta que contiene la palabra clave especificada. También puede especificar una dirección URL de un archivo o carpeta. Si usa una dirección URL, asegúrese de que escriba la ruta de acceso de dirección URL completa o si solo escribe una parte de la dirección URL, no incluya ningún carácter o espacio especial. Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización. Este campo se deja en blanco en todos los escenarios de solución de problemas de este artículo.
@@ -164,7 +164,7 @@ Después de ejecutar la búsqueda, puede filtrar los resultados de la búsqueda 
 
 ### <a name="recover-deleted-email-items"></a>Recuperar elementos de correo electrónico eliminados
 
-Los usuarios pueden recuperar elementos eliminados temporalmente si el período de retención de elementos eliminados no ha expirado. En Exchange Online, el período de retención predeterminado de elementos eliminados es de 14 días, pero los administradores pueden aumentar esta configuración a un máximo de 30 días. Señale a los usuarios al artículo Recuperar elementos [eliminados o](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) correo Outlook en el artículo web para obtener instrucciones sobre la recuperación de elementos eliminados.
+Los usuarios pueden recuperar elementos eliminados temporalmente si el período de retención de elementos eliminados no ha expirado. En Exchange Online, el período de retención predeterminado de elementos eliminados es de 14 días, pero los administradores pueden aumentar esta configuración a un máximo de 30 días. Señale a los usuarios al [artículo Recuperar elementos eliminados o correo Outlook en la Web](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) para obtener instrucciones sobre la recuperación de elementos eliminados.
 
 Como se explicó anteriormente, los administradores pueden recuperar elementos eliminados de forma permanente si el período de retención de elementos eliminados no ha expirado o si el buzón está en espera, en cuyo caso los elementos se mantienen hasta que expire la duración de la retención. Al ejecutar una búsqueda de contenido, los elementos eliminados temporalmente y eliminados de forma permanente en la carpeta Elementos recuperables se devuelven en los resultados de búsqueda si coinciden con la consulta de búsqueda. Para obtener más información acerca de cómo ejecutar búsquedas de contenido, vea [Búsqueda de contenido en Office 365](content-search.md).
 
@@ -175,7 +175,7 @@ Como se explicó anteriormente, los administradores pueden recuperar elementos e
 
 Cuando los usuarios crean una regla de bandeja de entrada Exchange Online buzón de correo, se guarda un registro de auditoría correspondiente en el registro de auditoría. Para obtener más información acerca de las reglas de la bandeja de entrada, vea:
 
-- [Usar reglas de bandeja de entrada Outlook en la web](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
+- [Usar reglas de bandeja de entrada en Outlook en la Web](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
 - [Administrar mensajes de correo electrónico en Outlook mediante reglas](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
 A continuación se muestra cómo configurar una consulta de búsqueda de registro de auditoría para este escenario:

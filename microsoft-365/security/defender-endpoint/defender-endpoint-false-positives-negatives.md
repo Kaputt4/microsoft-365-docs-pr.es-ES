@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: d3821f4f1f581da5353ee33bd406af8558c0e903
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 7da28ea308994663549c2c490f53a3e0e75a0857
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029962"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339267"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -141,7 +141,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 
 ### <a name="review-completed-actions"></a>Revisar acciones completadas
 
-1. Vaya al Centro de acciones ( <https://security.microsoft.com/action-center> ) e inicie sesión.
+1. En el panel de navegación izquierdo del portal de Microsoft 365 Defender, haga clic en **Centro de acciones**.
 
 2. Seleccione la **pestaña** Historial para ver una lista de acciones realizadas.
 
@@ -149,7 +149,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>Restaurar un archivo en cuarentena desde el Centro de acciones
 
-1. Vaya al Centro de acciones ( <https://security.microsoft.com/action-center> ) e inicie sesión.
+1. En el panel de navegación izquierdo del portal de Microsoft 365 Defender, haga clic en **Centro de acciones**.
 
 2. En la **pestaña** Historial, seleccione una acción que desee deshacer.
 
@@ -157,7 +157,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 
 ### <a name="undo-multiple-actions-at-one-time"></a>Deshacer varias acciones a la vez
 
-1. Vaya al Centro de acciones ( <https://security.microsoft.com/action-center> ) e inicie sesión.
+1. En el panel de navegación izquierdo del portal de Microsoft 365 Defender, haga clic en **Centro de acciones**.
 
 2. En la **pestaña** Historial, seleccione las acciones que desea deshacer.
 
@@ -168,7 +168,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 > [!div class="mx-imgBorder"]
 > ![Poner archivo en cuarentena](images/autoir-quarantine-file-1.png)
 
-1. Vaya al Centro de acciones ( <https://security.microsoft.com/action-center> ) e inicie sesión.
+1. En el panel de navegación izquierdo del portal de Microsoft 365 Defender, haga clic en **Centro de acciones**.
 
 2. En la **pestaña** Historial, seleccione un archivo que tenga el tipo de acción **Archivo de cuarentena**.
 

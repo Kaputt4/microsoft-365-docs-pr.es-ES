@@ -1,6 +1,6 @@
 ---
 title: Configurar el acceso condicional en Microsoft Defender para el extremo
-description: Obtenga información sobre los pasos que debe realizar en Intune, Centro de seguridad de Microsoft Defender y Azure para implementar el acceso condicional
+description: Obtenga información sobre los pasos que debe realizar en Intune, Microsoft 365 Defender y Azure para implementar el acceso condicional
 keywords: acceso condicional, condicional, acceso, riesgo de dispositivo, nivel de riesgo, integración, integración de Intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2c9462fa0d4be4d6ff78ba3e5db2cd4fa71fef0b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843979"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339519"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurar el acceso condicional en Microsoft Defender para el extremo
 
@@ -50,10 +50,10 @@ Debes asegurarte de que todos los dispositivos estén inscritos en Intune. Puede
 
 
 
-Hay pasos que deberá seguir en Centro de seguridad de Microsoft Defender, el portal de Intune y el portal de Azure AD.
+Hay pasos que deberá seguir en Microsoft 365 Defender, el portal de Intune y el portal de Azure AD.
 
 Es importante tener en cuenta los roles necesarios para tener acceso a estos portales e implementar el acceso condicional:
-- **Centro de seguridad de Microsoft Defender:** deberá iniciar sesión en el portal con un rol de administrador global para activar la integración.
+- **Microsoft 365 Defender:** deberá iniciar sesión en el portal con un rol de administrador global para activar la integración.
 - **Intune:** deberá iniciar sesión en el portal con derechos de administrador de seguridad con permisos de administración. 
 - **Portal de Azure AD:** deberá iniciar sesión como administrador global, administrador de seguridad o administrador de acceso condicional.
 
@@ -62,7 +62,7 @@ Es importante tener en cuenta los roles necesarios para tener acceso a estos por
 > Necesitará un entorno Microsoft Intune, con Intune administrado y Azure AD unido a Windows 10 dispositivos.
 
 Siga estos pasos para habilitar el acceso condicional:
-- Paso 1: Activar la conexión Microsoft Intune desde Centro de seguridad de Microsoft Defender
+- Paso 1: Activar la conexión Microsoft Intune desde Microsoft 365 Defender
 - Paso 2: Activar la integración de Defender for Endpoint en Intune
 - Paso 3: Crear la directiva de cumplimiento en Intune
 - Paso 4: Asignar la directiva 
@@ -70,15 +70,15 @@ Siga estos pasos para habilitar el acceso condicional:
 
 
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>Paso 1: Activar la conexión Microsoft Intune conexión
-1. En el panel de navegación, **seleccione Configuración** características  >  **avanzadas Microsoft Intune**  >  **conexión**.
+1. En el panel de navegación, **seleccione Configuración**  >  **características avanzadas** generales  >    >  **Microsoft Intune**  >  **conexión**.
 2. Alterna la Microsoft Intune a **On**.
 3. Haga clic **en Guardar preferencias**.
 
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Paso 2: Activar la integración de Defender for Endpoint en Intune
-1. Inicie sesión en el [Azure Portal](https://portal.azure.com).
+1. Inicie sesión en el [portal de Azure](https://portal.azure.com).
 2. Seleccione **Cumplimiento de**  >  **dispositivos ATP de Microsoft Defender**.
-3. Establezca **Conectar Windows 10.0.15063+** para que Protección contra amenazas avanzada de Microsoft Defender en **On**.
+3. Establece **Conectar Windows 10.0.15063+** en Protección contra amenazas avanzada de Microsoft Defender en **On**.
 4. Haga clic en **Guardar**.
 
 

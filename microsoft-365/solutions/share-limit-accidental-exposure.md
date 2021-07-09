@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con usuarios externos a la organización.
-ms.openlocfilehash: aed567e503fb2c615b183c6769c69248c149742a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1dffa40a0c21f5f611492d5a098a98f8aaa726a5
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539052"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326992"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización
 
-Al compartir archivos y carpetas con usuarios externos a la organización, hay una amplia variedad de opciones para reducir las posibilidades de compartir por error información confidencial. Puede elegir entre las opciones de este artículo para satisfacer las necesidades de su organización.
+Al compartir archivos y carpetas con personas ajenas a la organización, hay varias opciones para reducir las posibilidades de compartir accidentalmente información confidencial. Puede elegir entre las opciones de este artículo para satisfacer las necesidades de su organización.
 
 ## <a name="use-best-practices-for-anyone-links"></a>Usar los procedimientos recomendados para los vínculos de tipo "Cualquiera"
 
@@ -64,7 +64,7 @@ Desactivar los vínculos de tipo *Cualquiera*
 
 Puede usar las listas de dominios permitidos o rechazados para especificar qué dominios pueden utilizar sus usuarios al compartir con personas ajenas a su organización.
 
-Con una lista de dominios permitidos, puede especificar una lista de dominios en los que los usuarios de su organización pueden compartir con usuarios externos a la organización. El uso compartido con otros dominios está bloqueado. Si su organización solo colabora con usuarios de una lista de dominios específicos, puede usar esta característica para evitar el uso compartido con otros dominios.
+Con una lista de dominios permitidos, puede especificar una lista de dominios en los que los usuarios de su organización pueden compartir con usuarios externos a la organización. La opción de compartir con otros dominios está bloqueada. Si su organización solo colabora con usuarios de una lista de dominios específicos, puede usar esta característica para evitar el uso compartido con otros dominios.
 
 Con una lista de dominios rechazados, puede especificar una lista de dominios desde los que los usuarios de su organización no pueden compartir contenido con usuarios externos a la organización. El uso compartido con dominios en la lista está bloqueado. Esto puede resultar útil si tiene competidores que, por ejemplo, no quiere que tengan acceso al contenido de su organización.
 
@@ -103,7 +103,7 @@ Para limitar el uso compartido externo a los miembros de un grupo de seguridad
 
 6. Seleccione **Guardar**.
 
-Tenga en cuenta que esto afecta a archivos, carpetas y sitios, pero no a los grupos de Microsoft 365 o Teams. Cuando los miembros inviten a invitados a un grupo privado de Microsoft 365 o Microsoft Teams, la invitación se enviará al propietario del grupo o equipo para que la apruebe.
+Tenga en cuenta que esto afecta a archivos, carpetas y sitios, pero no a los grupos de Microsoft 365 o Teams. Cuando los miembros inviten a invitados a un grupo privado de Microsoft 365 o Microsoft Teams, la invitación se enviará al propietario del grupo o equipo para que la apruebe.
 
 ## <a name="see-also"></a>Consulta también
 

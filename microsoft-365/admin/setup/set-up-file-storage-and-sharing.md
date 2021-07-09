@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento de Microsoft 365 y el uso compartido de archivos de Microsoft 365.
-ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 5ab0a192cb5706b6aff6cdeb30fa566de74dd510
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924616"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338666"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurar el almacenamiento y el uso compartido de archivos de Microsoft 365
 
@@ -77,7 +77,7 @@ Los empleados también pueden compartir archivos y carpetas de OneDrive. Si un e
   
 Aquí se muestra cómo los usuarios del equipo pueden configurar OneDrive y compartir archivos.
 
-1. Vaya al <a href="https://portal.office.com/ " target="_blank">Portal de Microsoft 365</a> e inicie sesión con su nombre de usuario y contraseña.
+1. Vaya a la <a href="https://admin.mirosoft.com/ " target="_blank">Centro de administración de Microsoft 365</a>e inicie sesión con su nombre de usuario y contraseña.
 
 2. En el iniciador de aplicaciones, seleccione **OneDrive**.
 

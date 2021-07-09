@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845479"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339579"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -102,7 +102,7 @@ Esta característica permite bloquear archivos potencialmente malintencionados e
 
 Para activar **Permitir o bloquear** archivos:
 
-1. En el panel de navegación, **seleccione Configuración**  >  **Características avanzadas** Permitir o bloquear  >  **archivo**.
+1. En el panel de navegación, **seleccione Configuración**  >  **Características avanzadas**  >    >  **generales de**  >  puntos de conexión Permitir o bloquear archivo .
 
 1. Alterna la configuración entre **On** y **Off**.
 
@@ -160,9 +160,9 @@ La integración con Microsoft Defender for Identity te permite pivotar directame
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365 Conexión de inteligencia de amenazas
 
-Esta característica solo está disponible si tiene un Office 365 E5 o el complemento de inteligencia de amenazas. Para obtener más información, vea la Office 365 Enterprise de producto de E5.
+Esta característica solo está disponible si tiene un Office 365 E5 activo o el complemento de inteligencia de amenazas. Para obtener más información, vea la Office 365 Enterprise de producto de E5.
 
-Al activar esta característica, podrás incorporar datos de Microsoft Defender para Office 365 en Centro de seguridad de Microsoft Defender para llevar a cabo una investigación de seguridad completa en buzones de correo Office 365 y dispositivos Windows.
+Al activar esta característica, podrás incorporar datos de Microsoft Defender para Office 365 en Microsoft 365 Defender para llevar a cabo una investigación de seguridad completa en Office 365 buzones y Windows dispositivos.
 
 > [!NOTE]
 > Tendrás que tener la licencia adecuada para habilitar esta característica.
@@ -180,7 +180,7 @@ De los dos componentes de Microsoft Threat Expert, la notificación de ataques d
 Al habilitar esta configuración, Defender para las señales de punto de conexión Microsoft Cloud App Security para proporcionar una mayor visibilidad del uso de aplicaciones en la nube. Los datos reenviados se almacenan y procesan en la misma ubicación que los Cloud App Security datos.
 
 > [!NOTE]
-> Esta característica estará disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) en dispositivos que ejecuten Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809 (compilación del sistema operativo 17763.379 con [KB4489899),](https://support.microsoft.com/help/4489899)o versiones Windows 10 posteriores.
+> Esta característica estará disponible con una licencia E5 para Enterprise Mobility + Security [dispositivos](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809 (compilación del sistema operativo 17763.379 con [KB4489899),](https://support.microsoft.com/help/4489899)o versiones Windows 10 posteriores.
 
 ## <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -237,7 +237,7 @@ Le ayuda a encontrar dispositivos no administrados conectados a la red corporati
 > [!NOTE]
 > Siempre puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados. 
 
-## <a name="preview-features"></a>Versión preliminar de las características
+## <a name="preview-features"></a>Vista previa de las características
 
 Obtenga información sobre las nuevas características en la versión preliminar de Defender for Endpoint. Pruebe las próximas características al activar la experiencia de vista previa.
 

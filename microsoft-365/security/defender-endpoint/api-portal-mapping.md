@@ -1,6 +1,6 @@
 ---
 title: Campos de la API de Microsoft Defender para detecciones de puntos de conexión
-description: Comprender cómo se asignan los campos de la API de detecciones a los valores de Centro de seguridad de Microsoft Defender
+description: Comprender cómo se asignan los campos de la API de detecciones a los valores de Microsoft 365 Defender
 keywords: detecciones, campos de detecciones, campos, api, campos, detecciones de extracción, api de reposo, solicitud, respuesta
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f9a0d4ddeee5c1dc49c53e324854cabccc5f79e5
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933642"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339555"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Campos de la API de Microsoft Defender para detecciones de puntos de conexión
 
@@ -33,11 +33,11 @@ ms.locfileid: "51933642"
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-Comprender qué campos de datos se exponen como parte de la API de detecciones y cómo se asignan a Centro de seguridad de Microsoft Defender.
+Comprender qué campos de datos se exponen como parte de la API de detecciones y cómo se asignan a Microsoft 365 Defender.
 
 >[!Note]
 >- [Defender for Endpoint Alert](alerts.md) se compone de una o más detecciones.
->- **ATP de Microsoft Defender Detection** se compone del evento sospechoso que se produjo en el dispositivo y sus detalles **de alerta** relacionados.
+>- **La detección de ATP de Microsoft Defender** se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de **alerta** relacionados.
 >- La API de alerta de punto de conexión de Microsoft Defender es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) List [alerts](get-alerts.md).
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>Campos de API de detecciones y asignación de portal
@@ -52,7 +52,7 @@ Los números de campo coinciden con los números de las imágenes siguientes.
 > | Etiqueta del portal   | Nombre del campo SIEM           | Campo ArcSight      | Valor de ejemplo                                                                      | Descripción                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | name                | Antivirus de Microsoft Defender detectado malware de alta gravedad de "Mikatz" | Valor disponible para cada detección.                                                                                                                                               |
-> | 2                | Gravedad                  | deviceSeverity      | Alto                                                                             | Valor disponible para cada detección.                                                                                                                                               |
+> | 2                | Severity                  | deviceSeverity      | Alto                                                                             | Valor disponible para cada detección.                                                                                                                                               |
 > | 3                | Categoría                  | deviceEventCategory | Malware                                                               | Valor disponible para cada detección.                                                                                                                                               |
 > | 4                 | Origen de detección                    | sourceServiceName   | Antivirus                                                                 | Antivirus de Microsoft Defender o Defender para endpoint. Valor disponible para cada detección.                                                                                         |
 > | 5                 | MachineName               | sourceHostName      | desktop-4a5ngd6                                                                           | Valor disponible para cada detección.                                                                                                                                               |
@@ -60,7 +60,7 @@ Los números de campo coinciden con los números de las imágenes siguientes.
 > | 7                 | FilePath                  | filePath            | C:\Windows\System32\Robocopy.exe                                                   | Disponible para detecciones asociadas a un archivo o proceso.                                                                                                                     |
 > | 8                 | UserDomain                | sourceNtDomain      | CONTOSO                                                                            | Dominio del contexto de usuario que ejecuta la actividad, disponible para detecciones basadas en comportamiento de Defender para endpoint.                                                           |
 > | 9                 | UserName                  | sourceUserName      | liz.bean                                                                           | El contexto de usuario que ejecuta la actividad, disponible para detecciones basadas en comportamiento de Defender para endpoint.                                                                           |
-> | 10               | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | Disponible para detecciones asociadas a un archivo o proceso.                                                                                                                      |
+> | 10                | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | Disponible para detecciones asociadas a un archivo o proceso.                                                                                                                      |
 > | 11               | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91d0ab989fc9787bb6b0bf993e2f5                   | Disponible para detecciones de ANTIVIRUS de Microsoft Defender.                                                                                                                                    |
 > | 12                | Md5                       | deviceCustomString5 | db979c04a99b96d370988325bb5a8b21                                                   | Disponible para detecciones de ANTIVIRUS de Microsoft Defender.                                                                                                                                    |
 > | 13               | ThreatName                | deviceCustomString1  | HackTool:Win32/Mikatz!dha                                                         | Disponible para detecciones de ANTIVIRUS de Microsoft Defender.                                                                                                                                    |

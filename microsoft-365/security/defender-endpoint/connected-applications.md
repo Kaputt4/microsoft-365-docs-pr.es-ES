@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4b212acdf4bdf8fa53ef00763463190e204fc1ed
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845587"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339171"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Aplicaciones conectadas en Microsoft Defender para endpoint
 
@@ -42,7 +42,7 @@ Las aplicaciones usan el protocolo estándar OAuth 2.0 para autenticar y proporc
 Deberá seguir estos pasos [para](/microsoft-365/security/defender-endpoint/apis-intro) usar las API con la aplicación conectada.
  
 ## <a name="access-the-connected-application-page"></a>Acceder a la página de la aplicación conectada
-En el menú de navegación izquierdo, seleccione **Partners & API**  >  **conectadas aplicaciones de AAD**.
+En el menú de navegación izquierdo, seleccione **Endpoints**  >  **Partners and APIs**  >  **Connected applications**.
 
  
 ## <a name="view-connected-application-details"></a>Ver detalles de la aplicación conectada

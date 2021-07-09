@@ -16,18 +16,22 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre el programa De asistencia empresarial y cómo puede ayudar a su organización con ayuda y uso mejorados para Microsoft 365 para empresas.
-ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 3715fcfcc24c647266bab36a764b3c8711e08bdd
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924592"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338606"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Ayuda empresarial para Microsoft 365
 
 Obtenga el máximo partido de su suscripción con el asesoramiento de expertos de especialistas en pequeñas empresas.
 
 **Business Assist para Microsoft 365** está diseñado para que las empresas con menos de 5 usuarios le den a usted y a sus empleados acceso las 24 horas a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
+
+### <a name="watch-business-assist-for-microsoft-365"></a>Watch: Business Assist for Microsoft 365
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFTQl]
 
 ## <a name="business-assist-services"></a>Servicios de asistencia empresarial
 
@@ -51,7 +55,7 @@ Los clientes con un plan de suscripción Microsoft 365 para empresas pueden usar
 
 Solo las organizaciones que son elegibles verán la opción de comprar Business Assist. Business Assist cuesta 5 USD por usuario y mes. Este es el modo en que puede comprar Business Assist.
 
-1. En la vista simplificada del Centro Microsoft 365 administración, vaya a la pestaña **Suscripciones** y seleccione **Agregar productos**.
+1. En la vista simplificada de la Centro de administración de Microsoft 365, vaya a la pestaña **Suscripciones** y seleccione **Agregar productos**.
 
 2. En la página Servicios de compra, seleccione **Detalles** sobre asistencia empresarial **para Microsoft 365** y complete la compra.
 

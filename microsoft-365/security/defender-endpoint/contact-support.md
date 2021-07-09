@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6d4845163996dcc00ccfcc6c87eb27aff87268fc
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228728"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339197"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 
@@ -58,9 +58,9 @@ El acceso al nuevo widget de soporte técnico se puede realizar de dos maneras:
 
     ![Imagen del widget cuando se selecciona el signo de interrogación](images/support-widget.png)
 
-2. Hacer clic en **el botón ¿Necesita ayuda?**  en la parte inferior derecha de la Centro de seguridad de Microsoft Defender:
+2. Hacer clic en **el botón ¿Necesita ayuda?**  en la parte inferior derecha del Microsoft 365 Defender portal:
 
-    ![Imagen del botón de ayuda de necesidad](images/need-help.png)
+    ![Imagen del botón de ayuda de necesidad](images/need-help-option.png)
 
 En el widget se te ofrecerán dos opciones:
 
@@ -70,7 +70,7 @@ En el widget se te ofrecerán dos opciones:
 ## <a name="find-solutions-to-common-problems"></a>Buscar soluciones a problemas comunes
 Esta opción incluye artículos que podrían estar relacionados con la pregunta que puede hacer. Solo tienes que empezar a escribir la pregunta en el cuadro de búsqueda y aparecerán los artículos relacionados con la búsqueda.
 
-![Imagen del widget de ayuda de necesidad](images/Support3.png)
+![Imagen del widget de ayuda de necesidad](images/information-on-help-screen.png)
 
 En caso de que los artículos sugeridos no sean suficientes, puede abrir una solicitud de servicio.
 
@@ -85,7 +85,7 @@ Para obtener información sobre cómo abrir vales de soporte técnico, póngase 
 
 Esta opción está disponible haciendo clic en el icono que parece un auricular. A continuación, recibirá la siguiente página para enviar el caso de soporte técnico:
 
-![Imagen del widget abrir una solicitud de servicio](images/Support4.png)
+![Imagen del widget abrir una solicitud de servicio](images/contact-support-screen.png)
 
 1. Rellene un título y una descripción del problema al que se enfrenta, así como un número de teléfono y una dirección de correo electrónico donde podamos contactar con usted.
 

@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: pasos de migración de Servicios de federación de Active Directory (AD FS) para la migración desde Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165662"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339615"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Pasos de migración de AD FS para la migración desde Microsoft Cloud Deutschland
 
 Este cambio de configuración debe aplicarse en cualquier momento antes de que se inicie la fase 2.
-Una vez completada la fase 2, el cambio de configuración funcionará y podrá iniciar sesión a través de Office 365 extremos globales como `https://portal.office.com` . Si va a implementar el cambio de configuración antes de la  fase 2, los puntos de conexión globales de Office 365 aún no funcionarán, pero la nueva confianza de usuario de confianza sigue formando parte de la configuración de servicios de federación de Active Directory (AD FS).
+Una vez completada la fase 2, el cambio de configuración funcionará y podrá iniciar sesión a través de Office 365 extremos globales como `https://admin.microsoft.com` . Si va a implementar el cambio de configuración antes de la  fase 2, los puntos de conexión globales de Office 365 aún no funcionarán, pero la nueva confianza de usuario de confianza sigue formando parte de la configuración de servicios de federación de Active Directory (AD FS).
 
 Los clientes que usan la autenticación federada con Servicios de federación de Active Directory (AD FS) no deben realizar cambios en los URI del emisor que se usan para todas las autenticaciones con servicios de dominio de Active Directory (AD DS) locales durante la migración. Cambiar los URI del emisor provocará errores de autenticación para los usuarios del dominio. Los URI del emisor se pueden cambiar directamente en AD  FS o cuando un dominio se convierte de administrado a _federado_ y viceversa. Se recomienda no agregar, quitar ni convertir un dominio federado en el inquilino de Azure AD que se ha migrado. Los URI del emisor se pueden cambiar una vez completada la migración.
 

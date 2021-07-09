@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: af50e3c2a6db1a09d546bfa06b26c80dcf4481e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290092"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338726"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -170,7 +170,7 @@ Consulte las siguientes instrucciones para eliminar el requisito de comodín (*)
 
 1. Incorporar un sistema operativo anterior con el Microsoft Monitoring Agent (MMA) en Defender para endpoint (para obtener más información, vea [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and Onboard Windows [servers](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
-2. Asegúrese de que la máquina se está informando correctamente en el portal Centro de seguridad de Microsoft Defender usuario.
+2. Asegúrese de que la máquina se está informando correctamente en el portal Microsoft 365 Defender usuario.
 
 3. Ejecute la herramienta TestCloudConnection.exe desde "C:\Program Files\Microsoft Monitoring Agent\Agent" para validar la conectividad y ver las direcciones URL necesarias para su área de trabajo específica.
 
@@ -178,7 +178,7 @@ Consulte las siguientes instrucciones para eliminar el requisito de comodín (*)
 
     ![Imagen del administrador en Windows PowerShell](images/admin-powershell.png)
 
-Los caracteres comodín ( ) usados en los extremos de dirección \* \* URL \* .ods.opinsights.azure.com, .oms.opinsights.azure.com y .agentsvc.azure-automation.net se pueden reemplazar por el identificador de área de \* trabajo específico. El identificador de área de trabajo es específico de su entorno y área de trabajo y se puede encontrar en la sección Incorporación del espacio empresarial en el portal Centro de seguridad de Microsoft Defender área de trabajo.
+Los caracteres comodín ( ) usados en los extremos de dirección \* \* URL \* .ods.opinsights.azure.com, .oms.opinsights.azure.com y .agentsvc.azure-automation.net se pueden reemplazar por el identificador de área de \* trabajo específico. El identificador de área de trabajo es específico de su entorno y área de trabajo y se puede encontrar en la sección Incorporación del espacio empresarial en el portal de Microsoft 365 Defender área de trabajo.
 
 El extremo de dirección URL .blob.core.windows.net se puede reemplazar por las direcciones URL mostradas en la sección "Regla de \* firewall: \* .blob.core.windows.net" de los resultados de la prueba.
 

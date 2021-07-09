@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector en el Centro de cumplimiento de Microsoft 365 importar y archivar datos de Skype Empresarial a Microsoft 365.
-ms.openlocfilehash: 93128af0c7f305cb2bef55efd5520de77555a222
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 4a66ee19530860bd482168297a8c935153442fee
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054869"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339459"
 ---
-# <a name="set-up-a-connector-to-archive-skype-for-business-data-preview"></a>Configurar un conector para archivar Skype Empresarial datos (versión preliminar)
+# <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configurar un conector para archivar Skype Empresarial datos
 
 Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de la plataforma Skype Empresarial a los buzones de usuario de la Microsoft 365 organización. Veritas proporciona un [conector Skype Empresarial](https://www.veritas.com/en/au/insights/merge1/skype-for-business) que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importar esos elementos a Microsoft 365. El conector convierte el contenido, como mensajes entre usuarios, chats persistentes y mensajes de conferencia de Skype Empresarial a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 

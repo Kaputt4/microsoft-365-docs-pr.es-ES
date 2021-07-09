@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar una nueva dirección de correo electrónico empresarial.
-ms.openlocfilehash: df984cbee8bdd1bdd40ca8d9b87c71222db0f69d
-ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52065188"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341549"
 ---
 # <a name="set-up-a-new-business-email-address"></a>Configurar una nueva dirección de correo electrónico de empresa
 
@@ -55,7 +55,7 @@ Compre un nuevo nombre de dominio para su dirección de correo electrónico y co
 
 Use un nombre de dominio que ya posee si lo está usando para una dirección de sitio web o una dirección de correo electrónico en otro proveedor. 
 
-## <a name="try-it"></a>¿Se atreve?
+## <a name="give-it-a-try"></a>¡Pruébalo!
  
 1. Inicie sesión en el sitio web que hospeda el dominio. Haga clic en un botón para comprobar automáticamente o actualizar el dominio manualmente. 
 1. Personalice la dirección de correo electrónico o déjela tal como está. 

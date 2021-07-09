@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47d57e51eca4950f7a8f4284fbc916e9d030b2c7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844339"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339243"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -38,7 +38,7 @@ ms.locfileid: "52844339"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
-Defender for Endpoint amplía la compatibilidad para incluir también el sistema operativo Windows server. Esta compatibilidad proporciona capacidades avanzadas de detección de ataques e investigación sin problemas a través de Centro de seguridad de Microsoft Defender consola.
+Defender for Endpoint amplía la compatibilidad para incluir también el sistema operativo Windows server. Esta compatibilidad proporciona capacidades avanzadas de detección de ataques e investigación sin problemas a través de Microsoft 365 Defender consola.
 
 Para obtener instrucciones prácticas sobre lo que debe haber para las licencias y la infraestructura, vea [Protecting Windows Servers with Defender for Endpoint](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
@@ -66,7 +66,7 @@ Si ya usa System Center Operations Manager (SCOM) o Azure Monitor (anteriormente
 En general, deberá seguir los pasos siguientes:
 
 1. Cumpla los requisitos de incorporación descritos en **la sección Antes de comenzar.**
-2. Active la supervisión del servidor desde el Centro de seguridad de Microsoft Defender.
+2. Active la supervisión del servidor desde Microsoft 365 Defender portal.
 3. Instale y configure MMA para que el servidor informe los datos del sensor a Defender for Endpoint.
 4. Configure y actualice System Center Endpoint Protection clientes.
 
@@ -121,7 +121,7 @@ Una vez completado, debería ver los servidores Windows incorporados en el porta
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Opción 2: Incorporar servidores Windows a través del Centro de seguridad de Azure
 
-1. En el panel Centro de seguridad de Microsoft Defender navegación, **seleccione Configuración** Incorporación de administración  >  **de**  >  **dispositivos**.
+1. En el panel Microsoft 365 Defender de navegación, **seleccione Configuración** de administración de  >  **dispositivos**  >  **endpoints**  >  .
 
 2. Seleccione **Windows Server 2008 R2 SP1, 2012 R2 y 2016** como sistema operativo.
 
@@ -200,7 +200,7 @@ En esta integración se incluyen las siguientes funcionalidades:
     > La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows servidores supervisados por Azure Defender también estarán disponibles en Defender para endpoint: Azure Defender se conecta perfectamente al inquilino de Defender para endpoint, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender para extremo estarán disponibles en la consola de Azure Defender.
-- Investigación del servidor: los clientes de Azure Defender pueden acceder a Centro de seguridad de Microsoft Defender realizar una investigación detallada para descubrir el ámbito de una posible infracción.
+- Investigación del servidor: los clientes de Azure Defender pueden acceder Microsoft 365 Defender portal para realizar una investigación detallada para descubrir el ámbito de una posible infracción.
 
 > [!IMPORTANT]
 > - Cuando usa Azure Defender para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios estadounidenses, en la UE para usuarios europeos y británicos).<br>
@@ -255,7 +255,7 @@ Para salir del servidor Windows, puede usar cualquiera de los siguientes método
 
 1. Obtener el id. de área de trabajo:
 
-   1. En el panel de navegación, **seleccione Configuración**  >  **Incorporación**.
+   1. En el panel Microsoft 365 Defender de navegación, **seleccione Configuración** de administración de  >  **dispositivos**  >  **endpoints**  >  .
 
    1. Seleccione **Windows Server 2008 R2 SP1, 2012 R2 y 2016** como sistema operativo y obtenga el identificador de área de trabajo:
 

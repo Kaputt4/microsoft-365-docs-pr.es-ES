@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908346"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339697"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo
 
@@ -43,7 +43,7 @@ ms.locfileid: "52908346"
 
 EDR en modo de bloque también se integra con [la amenaza & administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md). El equipo de seguridad de [](tvm-security-recommendation.md) la organización recibirá una recomendación de seguridad para activar EDR en modo de bloqueo si aún no está habilitado. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recomendación de activar el EDR en modo de bloqueo":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="recomendación de activar el EDR en modo de bloqueo":::
 
 > [!NOTE]
 > Para obtener la mejor protección, asegúrese de implementar Las líneas base de **[Microsoft Defender para endpoint .](configure-machines-security-baseline.md)**
@@ -69,7 +69,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 3. Activa la **EDR en modo de bloque**.
 
 > [!NOTE]
-> EDR en modo de bloque solo se puede desactivar en el Centro de seguridad de Microsoft Defender. No puede usar claves del Registro, Intune o directivas de grupo para habilitar o deshabilitar EDR en modo de bloque.
+> EDR en modo de bloque solo se puede desactivar en el portal Microsoft 365 Defender bloque. No puede usar claves del Registro, Intune o directivas de grupo para habilitar o deshabilitar EDR en modo de bloque.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Requisitos para EDR en modo de bloque
 
@@ -86,7 +86,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 > [!IMPORTANT]
 > Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales y de que las [exclusiones están configuradas.](configure-exclusions-microsoft-defender-antivirus.md) EDR en modo de bloque respeta las exclusiones que se definen para Antivirus de Microsoft Defender.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes 
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes. 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-even-when-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Necesito activar el EDR en modo de bloqueo incluso cuando tengo Antivirus de Microsoft Defender en dispositivos?
 
@@ -132,8 +132,8 @@ Si Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en mo
 
 Si Windows Server 2016 se Antivirus de Microsoft Defender en modo activo y el extremo se incorpora a Defender para endpoint, se admite técnicamente EDR en modo de bloqueo. Sin embargo, EDR en modo de bloqueo está pensado para ser una protección adicional cuando Antivirus de Microsoft Defender no es la solución antivirus principal en un extremo. En esos casos, Antivirus de Microsoft Defender se ejecuta en modo pasivo. Actualmente, la ejecución Antivirus de Microsoft Defender en modo pasivo no se admite en Windows Server 2016. Para obtener más información, vea Antivirus de Microsoft Defender antivirus y soluciones antimalware que no son [de Microsoft.](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Blog Community tech: Introducción a EDR en modo de bloque: Detener ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
-- [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)
+- [Contención y bloqueo de comportamiento](behavioral-blocking-containment.md)
 

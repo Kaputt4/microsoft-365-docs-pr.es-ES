@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Obtenga información sobre cómo comprobar el historial de las conexiones del equipo cliente para ayudarle a detectar problemas emergentes de forma anticipada.
-ms.openlocfilehash: 87b1d43df560fc7fea5aadfbf1c422eb22883067
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928149"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339375"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -251,7 +251,7 @@ Debe usar [PSPing](/sysinternals/downloads/psping) u otra herramienta que no use
     
 2. Navegue a la carpeta donde está instalada la herramienta (en este caso PsPing) y pruebe estas Office 365 url:
     
-  - psping portal.office.com:443
+  - psping admin.microsoft.com:443
     
   - psping microsoft-my.sharepoint.com:443
     
@@ -327,6 +327,6 @@ Si está en medio de un problema de rendimiento, muchos de los pasos son los mis
   
 Para solucionar un problema de  *rendimiento,*  en este momento, debe realizar un seguimiento en el momento en que experimenta el problema de rendimiento. Debe tener las herramientas adecuadas disponibles para recopilar registros y necesita un plan de acción, es decir, una lista de las acciones de solución de problemas que debe realizar para recopilar la mejor información que pueda. Lo primero que debe hacer es registrar la fecha y hora de la prueba para que los archivos se puedan guardar en una carpeta que refleje el tiempo. A continuación, limite los pasos del problema. Estos son los pasos exactos que usará para las pruebas. No olvide los conceptos básicos: si el problema es solo con Outlook, asegúrese de registrar que el comportamiento del problema se produce en un solo Office 365 servicio. Restringir el ámbito de este problema le ayudará a centrarse en algo que pueda resolver. 
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)

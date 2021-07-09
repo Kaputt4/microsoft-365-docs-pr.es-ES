@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Obtenga información sobre cómo puede mover los archivos de trabajo personales y los archivos confidenciales de la empresa a OneDrive para la Empresa en unos pocos pasos sencillos.
-ms.openlocfilehash: 4dadc87c0168a9fcdcc795a94df8ee5b7fc7fd91
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6def1c733093417162ca37906c1d55c0eab23e7d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245112"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339318"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para la Empresa
 
@@ -44,7 +44,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 Si un usuario tiene un equipo que incluye muchos archivos personales, primero debe mover esos archivos a OneDrive para la Empresa:
   
-1. Vaya a portal.office.com e inicie sesión con las credenciales de Microsoft 365 para empresas del usuario.
+1. Vaya a admin.microsoft.com e inicie sesión con las credenciales de Microsoft 365 para empresas del usuario.
 
 2. Haga clic en el iniciador de aplicaciones ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) y vaya a OneDrive. 
     

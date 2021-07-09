@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place exhibición de documentos electrónicos y retención In-Place (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Advanced eDiscovery v1.0 también se retiran en el mismo período de tiempo.
-ms.openlocfilehash: 97be285ae348b018866e3f91f92be523b03e6616
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 77a7daf36c86cd302f774e5a4b934148d3dfd5a7
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055078"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341001"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -345,9 +345,9 @@ Advanced eDiscovery v1.0, que es la versión de Advanced eDiscovery disponible e
 
 Para determinar si su organización usa Advanced eDiscovery v1.0:
 
-1. Vaya al Centro [de Office 365 seguridad & cumplimiento](https://protection.office.com).
+1. Vaya al [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 
-2. En el panel de navegación izquierdo del Centro de seguridad & cumplimiento, haga clic en **eDiscovery > eDiscovery** y abra un caso de exhibición de documentos electrónicos principal.
+2. En el panel de navegación izquierdo del centro de cumplimiento, haga clic en **eDiscovery > Core** y abra un caso de eDiscovery principal.
 
 3. Si ve el botón Cambiar **a Advanced eDiscovery,** al hacer clic en él, se le llevará a la versión 1.0 de Advanced eDiscovery, que se está retirando. La capacidad de crear y administrar casos en eDiscovery principal no se verá afectada. Solo se retirará la capacidad de agregar y analizar datos de casos en Advanced eDiscovery v1.0 (haciendo clic en Cambiar **a Advanced eDiscovery**).
 

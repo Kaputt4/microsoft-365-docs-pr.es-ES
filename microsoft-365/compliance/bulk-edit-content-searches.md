@@ -17,12 +17,12 @@ ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
 description: Use el Editor de búsqueda masiva en el Centro de seguridad y cumplimiento para cambiar rápidamente las ubicaciones de consulta y contenido de una o más búsquedas de contenido.
-ms.openlocfilehash: f6331bad19e95fd1d7039d5da72349906d3614b8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: be7e37ec22966e16dfa3c6d1f37a34e6441e632a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227392"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341037"
 ---
 # <a name="bulk-edit-content-searches"></a>Búsquedas de contenido de edición masiva
 
@@ -32,7 +32,7 @@ Para obtener más información acerca del uso de la herramienta Estadísticas de
 
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Usar el Editor de búsqueda masiva para cambiar consultas
 
-1. Vaya a <https://protection.office.com> y, a continuación, **seleccione Buscar** \> **búsqueda de contenido**.
+1. Vaya a <https://compliance.microsoft.com> y, a continuación, seleccione **Búsqueda de contenido**.
 
 2. En la lista de búsquedas, seleccione una o más búsquedas y, a continuación, **seleccione** Editor de búsqueda masiva Editor de búsqueda ![ masiva ](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png) .
 

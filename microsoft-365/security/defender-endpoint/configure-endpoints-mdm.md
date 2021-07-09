@@ -1,6 +1,6 @@
 ---
 title: Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles
-description: Usa las herramientas de administración de dispositivos móviles para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
+description: Usa las herramientas de administración de dispositivos móviles para implementar el paquete de configuración en dispositivos para que los dispositivos se incorpore al servicio.
 keywords: incorporar dispositivos con mdm, administración de dispositivos, incorporación de Microsoft Defender para dispositivos de punto de conexión, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45aa406212fe39f088f58bf311b1aed3fed16498
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f0a0a35d41d56abfcc7975c9e79ff7d537b72f40
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843439"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338582"
 ---
-# <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles
+# <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>Incorporar los dispositivos Windows 10 con las herramientas de administración de dispositivos móviles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -70,9 +70,9 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 > [!NOTE]
 > Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
 
-1. Obtener el paquete de offboarding desde [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/):
+1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-   1. En el panel de navegación, **seleccione Configuración**  >  **Offboarding**.
+   1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints** Administración  >  **de dispositivos**  >  **Offboarding**.
 
    1. Seleccione Windows 10 como sistema operativo.
 

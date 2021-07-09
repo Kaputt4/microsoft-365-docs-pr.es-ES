@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo empezar a usar eDiscovery principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede agregar miembros, crear retenciones de exhibición de documentos electrónicos y, a continuación, buscar y exportar contenido relevante para la investigación.
-ms.openlocfilehash: 00506c2f072fff6aa30c7d96bffdc18eb5eda20b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 9466b2e3268a447a4008363e88290d4d02558c76
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311021"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341477"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Introducción a la exhibición de documentos electrónicos principal en Microsoft 365
 
@@ -34,19 +34,19 @@ En este artículo se analizan los pasos necesarios para configurar la exhibició
 
 Las licencias para la exhibición de documentos electrónicos principales requieren la suscripción de la organización adecuada y las licencias por usuario.
 
-- **Suscripción a la organización:** Para tener acceso a la exhibición de documentos electrónicos principal en el centro de cumplimiento de Microsoft 365 o en el Centro de cumplimiento de Office 365 Seguridad & y usar las características de retención y exportación, la organización debe tener una suscripción Microsoft 365 E3 o Office 365 E3 o posterior.
+- **Suscripción a la organización:** Para tener acceso a la exhibición de documentos electrónicos principal en el centro de cumplimiento de Centro de cumplimiento de Microsoft 365 o Office 365 Security & y usar las características de retención y exportación, la organización debe tener una suscripción Microsoft 365 E3 o Office 365 E3 o superior.
 
 - **Licencias por usuario:** Para colocar una retención de exhibición de documentos electrónicos en buzones y sitios, se debe asignar a un usuario una de las siguientes licencias, según la suscripción de la organización:
 
-  - Una Microsoft 365 E3 o Office 365 de E3 o posterior
+  - Una Microsoft 365 E3 o Office 365 E3 o posterior
 
    O
 
-  - Office 365 Licencia E1 con una Exchange Online plan 2 o Archivado de Exchange Online de complementos
+  - Office 365 E1 con una licencia Exchange Online plan 2 o Archivado de Exchange Online de complementos
 
   Y
 
-  - Office 365 Licencia E1 con una licencia SharePoint Online Plan 2 o OneDrive para la Empresa de complemento del Plan 2
+  - Office 365 E1 licencia con una SharePoint de complemento de Plan 2 o OneDrive para la Empresa plan 2
   
   Para obtener información sobre cómo asignar licencias, vea [Asignar licencias a usuarios.](../admin/manage/assign-licenses-to-users.md)
 
@@ -62,7 +62,7 @@ Para obtener acceso a eDiscovery principal o agregarse como miembro de un caso d
 
 Siga estos pasos para agregar usuarios al grupo de roles administrador de exhibición de documentos electrónicos:
 
-1. Vaya a e inicie sesión con las credenciales de una cuenta de administrador en su [https://protection.office.com/permissions](https://protection.office.com/permissions) Microsoft 365 o Office 365 organización.
+1. Vaya a e inicie sesión con las credenciales de una cuenta de administrador en su <https://compliance.microsoft.com/permissions> Microsoft 365 o Office 365 organización.
 
 2. En la **página Permisos,** seleccione el grupo de **roles** Administrador de exhibición de documentos electrónicos.
 
@@ -82,7 +82,7 @@ Hay dos subgrupos en el grupo de roles administrador de exhibición de documento
 
 - **Administrador de exhibición de documentos** electrónicos: puede ver y administrar los casos principales de exhibición de documentos electrónicos de los que crean o son miembros. Si otro administrador de exhibición de documentos electrónicos crea un caso pero no agrega un segundo administrador de exhibición de documentos electrónicos como miembro de ese caso, el segundo administrador de exhibición de documentos electrónicos no podrá ver ni abrir el caso en la página eDiscovery principal del centro de cumplimiento. En general, la mayoría de las personas de la organización se pueden agregar al subgrupo del Administrador de exhibición de documentos electrónicos.
 
-- **Administrador de exhibición de documentos electrónicos:** puede realizar todas las tareas de administración de casos que un administrador de exhibición de documentos electrónicos puede realizar. Además, un administrador de eDiscovery puede:
+- **Administrador de exhibición de documentos electrónicos:** puede realizar todas las tareas de administración de casos que un administrador de exhibición de documentos electrónicos puede realizar. Además, un administrador de exhibición de documentos electrónicos puede:
 
   - Ver todos los casos que aparecen en la página eDiscovery principal.
   
@@ -100,7 +100,7 @@ El siguiente paso es crear un caso y empezar a usar eDiscovery principal. Comple
 
 1. Vaya a e inicie sesión con las credenciales de una cuenta de usuario a la que se han asignado [https://compliance.microsoft.com](https://compliance.microsoft.com) los permisos de exhibición de documentos electrónicos adecuados. Los miembros del grupo de roles Administración de la organización también pueden crear casos principales de exhibición de documentos electrónicos.
 
-2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en Mostrar todo **y,** a continuación, haga clic en **eDiscovery > Core**.
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en **Exhibición de documentos electrónicos > Core**.
 
 3. En la **página EDiscovery principal,** haga clic **en Crear un caso**.
 
@@ -114,7 +114,7 @@ El siguiente paso es crear un caso y empezar a usar eDiscovery principal. Comple
 
 Si crea un caso en el paso 3 y es la única persona que usará el caso, no tiene que realizar este paso. Puede empezar a usar el caso para crear retenciones de exhibición de documentos electrónicos, buscar contenido y exportar resultados de búsqueda. Realice este paso si desea proporcionar a otros usuarios (o grupos de roles) acceso al caso.
 
-1. En la **página Exhibición** de documentos electrónicos principal del centro de Microsoft 365 cumplimiento, haga clic en el nombre del caso al que desea agregar miembros.
+1. En la **página Exhibición** de documentos electrónicos principal de la Centro de cumplimiento de Microsoft 365, haga clic en el nombre del caso al que desea agregar miembros.
 
 2. En la página principal del caso, seleccione la **Configuración** y, a continuación, **seleccione Access & permisos**.
 
