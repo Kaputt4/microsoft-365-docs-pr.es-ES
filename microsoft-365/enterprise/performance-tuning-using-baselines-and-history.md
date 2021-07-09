@@ -3,7 +3,7 @@ title: Ajuste del rendimiento de Office 365 mediante líneas base y el historial
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 8/31/2017
+ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,30 +23,32 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Obtenga información sobre cómo comprobar el historial de las conexiones del equipo cliente para ayudarle a detectar problemas emergentes de forma anticipada.
-ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339375"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341585"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
 Hay algunas maneras sencillas de comprobar el rendimiento de la conexión entre Office 365 y su empresa que le permitirán establecer una línea base aproximada de la conectividad. Conocer el historial de rendimiento de las conexiones del equipo cliente puede ayudarle a detectar problemas emergentes de forma anticipada, identificar y predecir problemas.
   
-Si no está acostumbrado a trabajar en problemas de rendimiento, este artículo está diseñado para ayudarle a considerar algunas preguntas comunes, como ¿Cómo sabe que el problema que está viendo es un problema de rendimiento y no un incidente de servicio Office 365? ¿Cómo puede planear un buen rendimiento a largo plazo? ¿Cómo puede estar atento al rendimiento? Si el equipo o los clientes ven un rendimiento lento al usar Office 365 y te preguntas sobre alguna de estas preguntas, sigue leyendo.
+Si no está acostumbrado a trabajar en problemas de rendimiento, este artículo está diseñado para ayudarle a considerar algunas preguntas comunes. ¿Cómo sabe que el problema que está viendo es un problema de rendimiento y no un Office 365 de servicio? ¿Cómo puede planear un buen rendimiento a largo plazo? ¿Cómo puede estar atento al rendimiento? Si el equipo o los clientes ven un rendimiento lento al usar Office 365 y te preguntas sobre alguna de estas preguntas, sigue leyendo.
   
 > [!IMPORTANT]
 > **¿Tiene un problema de rendimiento entre el cliente y Office 365 en este momento?** Siga los pasos descritos en el [plan de solución de problemas](performance-troubleshooting-plan.md)de rendimiento para Office 365 . 
     
 ## <a name="something-you-should-know-about-office-365-performance"></a>Algo que debe saber sobre Office 365 rendimiento
 
-Office 365 vive dentro de una red de Microsoft dedicada de alta capacidad que se supervisa constantemente no solo mediante la automatización, sino por personas reales. Parte del rol de mantener la nube Office 365 es la optimización y optimización del rendimiento en la medida en que sea posible. Dado que los clientes Office 365 la nube deben conectarse a través de Internet, hay un esfuerzo continuo para ajustar el rendimiento en Office 365 servicios. Las mejoras de rendimiento nunca se detienen realmente en la nube y hay una gran cantidad de experiencia acumulada para mantener la nube en buen estado y rápido. Si experimenta un problema de rendimiento al conectarse desde su ubicación a Office 365, lo mejor es no empezar con un caso de soporte técnico y esperarlo. En su lugar, debe empezar a investigar el problema desde "desde dentro hacia fuera". Es decir, comience dentro de la red y salga a Office 365. Antes de abrir un caso con Office 365 soporte técnico, puede recopilar datos y realizar acciones que explorarán y pueden resolver el problema.
+Office 365 vive dentro de una red de Microsoft dedicada de alta capacidad supervisada por la automatización y personas reales. Parte del mantenimiento de la nube Office 365 es ajustar y optimizar el rendimiento siempre que sea posible. Dado que los clientes Office 365 la nube tienen que conectarse a través de Internet, hay un esfuerzo continuo para ajustar el rendimiento en Office 365 servicios.
+
+Las mejoras de rendimiento nunca se detienen realmente en la nube, por lo que tampoco la experiencia con mantener la nube en buen estado y rápido. Si tiene un problema de rendimiento al conectarse de su ubicación a Office 365, lo mejor es no empezar con un caso de soporte técnico ni esperarlo. En su lugar, debe empezar a investigar el problema desde "desde dentro hacia fuera". Es decir, comience dentro de la red y salga a Office 365. Antes de abrir un caso con soporte técnico, puede recopilar datos y realizar acciones que explorarán y pueden resolver el problema.
   
 > [!IMPORTANT]
-> Tenga en cuenta la planeación de capacidad y los límites de Office 365. Esa información le pondrá por delante de la curva al intentar resolver un problema de rendimiento. Este es un vínculo a las descripciones [Microsoft 365 y Office 365 servicio](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Este es un concentrador central y todos los servicios ofrecidos por Office 365 tienen un vínculo que va a sus propias descripciones de servicio desde aquí. Esto significa que, si necesita ver los límites estándar de SharePoint Online, por ejemplo, haría clic en SharePoint [Descripción](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) del servicio en línea y encontraría su sección [SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits). 
+> Tenga en cuenta la planeación de capacidad y los límites de Office 365. Esa información le pondrá por delante de la curva al intentar resolver un problema de rendimiento. Este es un vínculo a las descripciones [Microsoft 365 y Office 365 servicio](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Este es un concentrador central y todos los servicios ofrecidos por Office 365 tienen un vínculo que va a sus propias descripciones de servicio desde aquí. Esto significa que, si necesita ver los límites estándar de SharePoint Online, por ejemplo, haría clic en SharePoint [Descripción](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) del servicio en línea y encontraría su sección [SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
   
-Asegúrese de ir a la solución de problemas con la comprensión de que el rendimiento es una escala deslizante, no se trata de lograr un valor idealizado y mantenerlo permanentemente (si cree que esto es así, las tareas ocasionales de ancho de banda alto, como la incorporación de un gran número de usuarios o la realización de migraciones de datos grandes serán muy estresantes, así que planee los impactos en el rendimiento entonces). Puede y debe tener una idea aproximada de los objetivos de rendimiento, pero muchas variables se reproducen en el rendimiento, por lo tanto, el rendimiento varía. Esa es la naturaleza del rendimiento. 
+Asegúrese de ir a la solución de problemas con la comprensión de que el rendimiento es una escala deslizante. No se trata de lograr un valor idealizado y mantenerlo permanentemente. Las tareas de ancho de banda alto ocasionales, como el abordaje de  un gran número de usuarios o la migración de datos grandes, serán estresantes, por lo que planear los impactos en el rendimiento entonces. Debes tener una idea aproximada de los objetivos de rendimiento, pero muchas variables se reproducen en el rendimiento, por lo que el rendimiento varía.
   
 La solución de problemas de rendimiento no se trata de cumplir objetivos específicos y mantener esos números indefinidamente, se trata de mejorar las actividades existentes, dadas todas las variables. 
   
@@ -54,45 +56,45 @@ La solución de problemas de rendimiento no se trata de cumplir objetivos espec�
 
 En primer lugar, debe asegurarse de que lo que está experimentando es realmente un problema de rendimiento y no un incidente de servicio. Un problema de rendimiento es diferente de un incidente de servicio en Office 365. Este es el modo de diferenciarlos.
   
-Si el Office 365 está teniendo problemas, es un incidente de servicio. Verá iconos rojos o  amarillos en Estado actual en el Centro de administración de Microsoft 365, también puede observar un rendimiento lento en los equipos cliente que se conectan a Office 365. Por ejemplo, si estado actual informa  de un icono rojo y ve Investigar junto a Exchange, es posible que también reciba un montón de llamadas de personas de su organización que se quejan de que los buzones de cliente que usan Exchange Online están funcionando mal. En ese caso, es razonable suponer que el rendimiento de Exchange Online acaba de convertirse en una víctima de problemas dentro del Servicio. 
+Los incidentes de servicio se suceden cuando el Office 365 propio servicio tiene problemas. Es posible que vea iconos rojos o amarillos en **Estado** actual en el Centro de administración de Microsoft 365. Es posible que observe que el rendimiento en los equipos cliente que se conectan Office 365 es lento. Por ejemplo, si estado actual informa  de un icono rojo y ve Investigar junto a Exchange, es posible que también reciba llamadas de personas de su organización que se quejan de que los buzones de cliente que usan Exchange Online son lentos. En ese caso, es razonable suponer que el rendimiento Exchange Online fue una víctima de problemas de servicio.
   
 ![El Office 365 de mantenimiento con todas las cargas de trabajo que se muestran en verde, excepto Exchange, que muestra Service Restored.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
-En este momento, usted, el administrador  de Office 365, debe comprobar Estado actual y, a continuación, Ver detalles e **historial,** con frecuencia, para mantenerse al día del mantenimiento que llevamos a cabo en el sistema. El **panel de mantenimiento** actual se ha realizado para actualizarlo acerca de los cambios y problemas en el servicio. Las notas y explicaciones escritas en el historial de mantenimiento, de administrador a administrador, están ahí para ayudarle a medir su impacto y para mantenerte informado sobre el trabajo en curso. 
+En este momento, usted, el administrador de  Office 365, debe comprobar estado actual y, a continuación, ver detalles e **historial,** a menudo, para mantenerse al día del mantenimiento en el sistema. El **panel de mantenimiento** actual se ha realizado para actualizarlo acerca de los cambios y problemas en el servicio. Las notas y explicaciones escritas en el historial de mantenimiento, administración a administrador, están ahí para ayudarle a medir y para mantenerte informado sobre el trabajo en curso.
   
 ![Una imagen del panel de Office 365 de mantenimiento que explica que el Exchange Online se ha restaurado y por qué.](../media/66609554-426a-4448-8be6-ea09817f41ba.PNG)
   
 Un problema de rendimiento no es un incidente de servicio, aunque los incidentes pueden causar un rendimiento lento. Un problema de rendimiento tiene este aspecto:
   
-- Se produce un problema de rendimiento independientemente de lo que informe el centro de **administración** Estado actual del servicio. 
+- Se produce un problema de rendimiento independientemente de lo que informe el centro de **administración** Estado actual del servicio.
     
--  Un comportamiento que solía ser relativamente transparente tarda mucho tiempo en completarse o nunca se completa. 
+-  Un comportamiento que solía fluir tarda mucho tiempo en completarse o nunca se completa.
     
-- También puede replicar el problema o, al menos, sabe que ocurrirá si hace la serie correcta de pasos.
+- También puede replicar el problema o saber que ocurrirá si hace la serie correcta de pasos.
     
--  Si el problema es intermitente, sigue ha habido un patrón, por ejemplo, sabe que a las 10:00 a.m. habrá llamadas de usuarios que no puedan acceder de forma confiable a Office 365 y que las llamadas se detendrán alrededor del mediodía. 
+-  Si el problema es intermitente, todavía puede haber un patrón. Por ejemplo, sabe que a las 10:00 am tendrá llamadas de usuarios que no siempre pueden acceder a Office 365. Las llamadas finalizarán alrededor del mediodía.
     
-Esto probablemente suena familiar; quizás demasiado familiar. Una vez que sepas que es un problema de rendimiento, la pregunta pasa a ser: "¿Qué haces a continuación?". El resto de este artículo le ayuda a determinar exactamente eso.
+Esta lista probablemente suene familiar; quizás demasiado familiar. Una vez que sepas que se trata de un problema de rendimiento, la pregunta es: "¿Qué haces a continuación?". El resto de este artículo le ayuda a determinar exactamente eso.
   
 ## <a name="how-to-define-and-test-the-performance-problem"></a>Cómo definir y probar el problema de rendimiento
 
-Los problemas de rendimiento suelen surgir con el tiempo, por lo que puede resultar difícil definir el problema real. Debe crear una buena instrucción de problema y una buena idea del contexto del problema y, a continuación, debe repetir los pasos de prueba para ganar el día. De lo contrario, si no hay ningún error propio, es posible que se pierda. ¿Por qué? Bueno, estos son algunos ejemplos de instrucciones de problemas que no proporcionan suficiente información:
+Los problemas de rendimiento suelen surgir con el tiempo, por lo que puede resultar difícil definir el problema real. Cree una buena instrucción de problema con una buena idea del contexto del problema y, a continuación, debe repetir los pasos de prueba. Estos son algunos ejemplos de instrucciones de problemas que no proporcionan suficiente información:
   
 - Cambiar de la Bandeja de entrada a mi calendario solía ser algo que no noté y ahora es un descanso. ¿Puede hacer que actúe como antes?
     
 - Cargar mis archivos en SharePoint Online lleva para siempre. ¿Por qué es lento en la tarde, pero en cualquier otro momento, es rápido? ¿No puede ser rápido?
     
-Las instrucciones de problema anteriores plantean varios desafíos de gran tamaño. En concreto, hay muchas ambigüedades que tratar. Por ejemplo:
+Las instrucciones de problema anteriores plantean varios desafíos de gran tamaño. En concreto, demasiadas ambigüedades para tratar. Por ejemplo:
   
 - No está claro cómo se usaba el cambio entre bandeja de entrada y calendario para actuar en el portátil.
     
 - Cuando el usuario dice: "¿No puede ser rápido?", ¿qué es "rápido"?
     
-- ¿Cuánto tiempo es "para siempre"? ¿Son varios segundos, minutos o podría el usuario ir al almuerzo y terminaría diez minutos después de que el usuario vuelva?
+- ¿Cuánto tiempo es "para siempre"? ¿Son varios segundos? ¿O muchos minutos? ¿O podría el usuario tomar el almuerzo y la acción terminaría 10 minutos después de haber vuelto?
     
-Todo esto es sin tener en cuenta que el administrador y el solucionador de problemas no pueden tener en cuenta muchos detalles de instrucciones de problema como estas. Por ejemplo, cuando el problema comenzó a suceder; Que el usuario funciona desde casa y solo ve un cambio lento mientras está en una red doméstica; Que el usuario debe ejecutar varias otras aplicaciones intensivas de RAM en el cliente local, o que el usuario ejecuta un sistema operativo anterior o que no ha ejecutado actualizaciones recientes.
+El administrador y el solucionador de  problemas no pueden ser conscientes de los detalles del problema de instrucciones generales como estas. Por ejemplo, no saben cuándo comenzó a ocurrir el problema. Es posible que el solucionador de problemas no sepa que el usuario funciona desde casa y solo ve un cambio lento mientras está en su red doméstica. O que el usuario ejecuta otras aplicaciones intensivas de RAM en el cliente local. Es posible que los administradores no sepan que el usuario ejecuta un sistema operativo anterior o que no ha ejecutado actualizaciones recientes.
   
-Cuando los usuarios informan de un problema de rendimiento, hay mucha información que recopilar. Recopilar esta información forma parte de un proceso denominado ámbito del problema o investigarlo. A continuación se muestra una lista básica de ámbitos que puede usar para recopilar información sobre el problema de rendimiento. Esta lista no es exhaustiva, pero es un lugar para empezar uno de los suyos: 
+Cuando los usuarios informan de un problema de rendimiento, hay mucha información que recopilar. Obtener y grabar información se denomina ámbito del problema. Esta es una lista de ámbito básica que puede usar para recopilar información sobre problemas de rendimiento. Esta lista no es exhaustiva, pero es un lugar para empezar:
   
 - ¿En qué fecha se ha sucedido el problema y en qué hora del día o de la noche?
     
@@ -327,6 +329,6 @@ Si está en medio de un problema de rendimiento, muchos de los pasos son los mis
   
 Para solucionar un problema de  *rendimiento,*  en este momento, debe realizar un seguimiento en el momento en que experimenta el problema de rendimiento. Debe tener las herramientas adecuadas disponibles para recopilar registros y necesita un plan de acción, es decir, una lista de las acciones de solución de problemas que debe realizar para recopilar la mejor información que pueda. Lo primero que debe hacer es registrar la fecha y hora de la prueba para que los archivos se puedan guardar en una carpeta que refleje el tiempo. A continuación, limite los pasos del problema. Estos son los pasos exactos que usará para las pruebas. No olvide los conceptos básicos: si el problema es solo con Outlook, asegúrese de registrar que el comportamiento del problema se produce en un solo Office 365 servicio. Restringir el ámbito de este problema le ayudará a centrarse en algo que pueda resolver. 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
