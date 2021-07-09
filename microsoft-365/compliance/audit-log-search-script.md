@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Usar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoUsar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoría+ Este script está optimizado para devolver un gran conjunto (hasta 50 000) de registros de auditoría. El script exporta dichos registros a un archivo CSV que puede visualizar o transformar mediante Power Query en Excel.
-ms.openlocfilehash: df5e675e5e36603a73078bd5ecf5e64bc7a76f95
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939570"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341013"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Usar un script de PowerShell para buscar en el registro de auditoría
 
@@ -36,7 +36,7 @@ Hoy en día, la seguridad, el cumplimiento y la auditoría son la prioridad núm
 
 Si necesita recuperar registros de auditoría con regularidad, debería considerar una solución que utilice la API de Actividad de administración de Office 365, ya que puede ofrecer a grandes organizaciones la escalabilidad y el rendimiento necesarios para recuperar millones de registros de auditoría de manera continua. Utilizar la herramienta de búsqueda en el registro de auditoría en el Centro de cumplimiento de Microsoft 365 es una manera rápida de encontrar registros de auditoría para operaciones específicas que puedan tener lugar en un intervalo de tiempo más corto. Utilizar intervalos de tiempo mayores en la herramienta de búsqueda en el registro de auditoría, especialmente en el caso de grandes organizaciones, puede entregar un número de registros demasiado elevado como para poderlos administrar o exportar con facilidad.
 
-Cuando se den situaciones en las que necesite recuperar datos de auditoría de forma manual para una investigación o incidente en concreto, sobre todo en el caso de intervalos de fechas mayores en grandes organizaciones, puede que usar el cmdlet **Search-UnifiedAuditLog** sea la mejor opción. Este artículo incluye un script de PowerShell que utiliza el cmdlet para recuperar hasta 50 000 registros de auditoría y, a continuación, exportarlos al archivo CSV al que puede dar formato mediante Power Query en Excel para ayudarle con la revisión. Asimismo, utilizar el script de este artículo minimiza la posibilidad de que se agote el tiempo de espera de búsquedas en grandes registros de auditoría en el servicio.
+Cuando se den situaciones en las que necesite recuperar datos de auditoría de forma manual para una investigación o incidente en concreto, sobre todo en el caso de intervalos de fechas mayores en grandes organizaciones, puede que usar el cmdlet **Search-UnifiedAuditLog** sea la mejor opción. Este artículo incluye un script de PowerShell que utiliza el cmdlet para recuperar hasta 50 000 registros de auditoría y, a continuación, exportarlos al archivo CSV al que puede dar formato mediante Power Query en Excel para ayudarle con la revisión. Asimismo, utilizar el script de este artículo minimiza la posibilidad de que se agote el tiempo de espera de búsquedas en grandes registros de auditoría en el servicio.
 
 ## <a name="before-you-run-the-script"></a>Antes de ejecutar el script:
 
@@ -48,7 +48,7 @@ Cuando se den situaciones en las que necesite recuperar datos de auditoría de f
 
   El valor de `True` para la propiedad **UnifiedAuditLogIngestionEnabled** indica que la búsqueda de registros de auditoría está activada.
 
-- Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para ejecutar correctamente el script. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página depermisosdel centro de administración de Exchange. Para más información, consulte la sección «Requisitos para buscar en el registro de auditoría» en [Buscar en el registro de auditoría en el Centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log).
+- Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para ejecutar correctamente el script. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página depermisosdel centro de administración de Exchange. Para más información, consulte la sección «Requisitos para buscar en el registro de auditoría» en [Buscar en el registro de auditoría en el Centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log).
 
 - Puede que el script tarde mucho tiempo en completarse. El tiempo que tarde en ejecutarse dependerá del intervalo de fechas y el tamaño del intervalo que establezca en la configuración del script para recuperar registros de auditoría. Los intervalos grandes de fecha y los intervalos menores resultarán en un tiempo de ejecución mayor. Consulte la tabla en el Paso 2 para más información sobre los intervalos de fechas.
 
@@ -151,7 +151,7 @@ Una vez que se haya conectado a Exchange Online PowerShell, el siguiente paso se
    |`$outputFile`|"d:\temp\AuditRecords.csv"|Especifica el nombre y la ubicación del archivo CSV que contiene los registros de auditoría devueltos por el script.|
    |`[DateTime]$start` y `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Especifica el intervalo de fechas para la búsqueda en el registro de auditoría. El script entregará registros de actividades de auditoría que tuvieron lugar entre del intervalo de fechas especificado. Por ejemplo, para entregar actividades realizadas en enero de 2021, puede utilizar una fecha de inicio de `"2021-01-01"` y una fecha de finalización de `"2021-01-31"` (asegúrese de escribir los valores entre comillas dobles) El valor de muestra del script entrega registros de actividades realizadas en las últimas 24 horas. Si no incluye una marca de tiempo en el valor, la marca de tiempo predeterminada es 12:00 AM (medianoche) en la fecha especificada.|
    |`$record`|"AzureActiveDirectory"|Especifica el tipo de registro de las actividades de auditoría (también llamadas *operaciones*) para buscar. Esta propiedad indica el servicio o la característica en la que se desencadenó una actividad. Para obtener una lista de los tipos de registro que puede usar para esta variable, consulte [Tipos de registro de auditoría](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). Puede utilizar el nombre de tipo de registro o valor ENUM. <br/><br/>**Sugerencia:** Para obtener registros de auditoría para todos los tipos de registro, utilice el valor `$null` (sin usar comillas dobles).|
-   |`$resultSize`|5000|Especifica el número de resultados entregados cada vez que el cmdlet **Search-UnifiedAuditLog** es llamado por el script (llamado *conjunto de resultados*). 5 000 es el valor máximo que admite el cmdlet. Deje este valor sin modificar.|
+   |`$resultSize`|5000|Especifica el número de resultados entregados cada vez que el cmdlet **Search-UnifiedAuditLog** es llamado por el script (llamado *conjunto de resultados*). 5 000 es el valor máximo que admite el cmdlet. Deje este valor sin modificar.|
    |`$intervalMinutes`|60|Para ayudar a superar el límite de 5000 registros obtenidos, esta variable toma el intervalo de datos que especificó y lo divide en intervalos de tiempo menores. Ahora, cada intervalo, y no el intervalo de fechas completo, está sujeto al límite del comando de 5000 resultados de registro. El valor predeterminado de 5000 registros por intervalo de 60 minutos dentro del intervalo de fechas debería bastar para la mayoría de las organizaciones. Sin embargo, si el script devuelve un error que dice `maximum results limitation reached`, reduzca el intervalo de tiempo (por ejemplo, a 30 minutos o incluso a 15 minutos) y vuelva a ejecutar el script.|
    ||||
 
@@ -168,7 +168,7 @@ Una vez que se haya conectado a Exchange Online PowerShell, el siguiente paso se
 El script muestra mensajes de progreso durante la ejecución. Una vez que el script haya terminado de ejecutarse, creará el archivo de registro y el archivo CSV que contiene los registros de auditoría y los guarda en las carpetas definidas por las variables `$logFile` y `$outputFile`.
 
 > [!IMPORTANT]
-> Existe un límite de 50 000 registros de auditoría como máximo que se devuelven cada vez que ejecuta este script. Si ejecuta este script y devuelve 50 000 resultados, es probable que no se incluyeran los registros de auditoría de las actividades que tuvieron lugar dentro del intervalo de fechas. Si esto sucede, se recomienda que divida el intervalo de fechas en intervalos menores y que vuelva ejecutar el script para cada intervalo de fecha. Por ejemplo, si un intervalo de fechas de 90 días devuelve 50 000 resultados, puede volver a ejecutar el script dos veces; una vez para los primeros 45 días del intervalo de fechas y una segunda vez para los siguientes 45 días.
+> Existe un límite de 50 000 registros de auditoría como máximo que se devuelven cada vez que ejecuta este script. Si ejecuta este script y devuelve 50 000 resultados, es probable que no se incluyeran los registros de auditoría de las actividades que tuvieron lugar dentro del intervalo de fechas. Si esto sucede, se recomienda que divida el intervalo de fechas en intervalos menores y que vuelva ejecutar el script para cada intervalo de fecha. Por ejemplo, si un intervalo de fechas de 90 días devuelve 50 000 resultados, puede volver a ejecutar el script dos veces; una vez para los primeros 45 días del intervalo de fechas y una segunda vez para los siguientes 45 días.
 
 ## <a name="step-3-format-and-view-the-audit-records"></a>Paso 3: Dar formato y visualizar los registros de auditoría
 
