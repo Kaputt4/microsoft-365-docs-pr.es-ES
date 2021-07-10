@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Obtenga información acerca de cómo un administrador global de Microsoft 365 puede cambiar la dirección de correo electrónico y el nombre para mostrar cuando cambie su nombre. '
-ms.openlocfilehash: fdba2191449bc3ea5aae5b5bde73fe5294b1f9d3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3215044f94d3b4e77860434ab28eed8a36754f12
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228368"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341025"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
@@ -40,7 +40,7 @@ Es posible que deba cambiar la dirección de correo electrónico y el nombre par
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
-Para poder realizar estos pasos, debe ser [Administrador global](about-admin-roles.md).
+Debe ser [administrador global](about-admin-roles.md) para completar estos pasos.
 
 ## <a name="change-a-users-email-address"></a>Cambiar la dirección de correo electrónico de un usuario
 
@@ -64,7 +64,7 @@ Para poder realizar estos pasos, debe ser [Administrador global](about-admin-rol
 
 1. Seleccione el nombre de usuario y después, en la pestaña **Cuenta** seleccione **Administrar nombre de usuario**.
 
-1. En el primer cuadro, escriba la primera parte de la nueva dirección de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico a través de la lista desplegable.
+1. En el primer cuadro, escriba la primera parte de la nueva dirección de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico a través de la lista desplegable. [Obtenga información sobre cómo agregar un dominio](../setup/add-domain.md).
 
 1. Seleccione **Guardar cambios**.
 
@@ -118,7 +118,7 @@ Para poder realizar estos pasos, debe ser [Administrador global](about-admin-rol
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>. 
 
 ::: moniker-end
 
@@ -177,6 +177,7 @@ Para obtener información sobre cómo cambiar el nombre de usuario de una person
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Administradores: Restablecer una contraseña de uno o más usuarios](reset-passwords.md) (artículo)\
-[Agregar otra dirección de correo electrónico a un usuario](../email/add-another-email-alias-for-a-user.md) (artículo)\
-[Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)
+[Agregar un dominio](../setup/add-domain.md)
+[Administradores: restablecer una contraseña para uno o varios usuarios](reset-passwords.md)
+[Agregar otra dirección de correo electrónico a un usuario](../email/add-another-email-alias-for-a-user.md)
+[Crear un buzón compartido](../email/create-a-shared-mailbox.md)

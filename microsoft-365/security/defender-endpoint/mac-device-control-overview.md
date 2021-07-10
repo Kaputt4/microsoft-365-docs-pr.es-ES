@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 682f59729e06c63818491ad7540528d574380c8b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877841"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363984"
 ---
 # <a name="device-control-for-macos"></a>Control de dispositivos para macOS
 
@@ -35,38 +35,14 @@ ms.locfileid: "52877841"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## <a name="requirements"></a>Requisitos
 
 El control de dispositivos para macOS tiene los siguientes requisitos previos:
 
 >[!div class="checklist"]
 > - Derechos de Microsoft Defender para extremo (puede ser de prueba)
-> - Versión mínima del sistema operativo: macOS 10.15.4 o posterior
-> - Versión mínima del producto: 101.24.59
-> - El dispositivo debe ejecutarse con extensiones del sistema (este es el valor predeterminado en macOS 11 Big Sur). 
-> 
->   Para comprobar si el dispositivo se está ejecutando en extensiones del sistema, ejecute el siguiente comando y compruebe que se está imprimiendo `endpoint_security_extension` en la consola: 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - El dispositivo debe estar en `Beta` el canal de actualización de Microsoft AutoUpdate (anteriormente denominado `InsiderFast` ) . Para obtener más información, vea [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md).
-> 
->   Puede comprobar el canal de actualización con el siguiente comando: 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    Si el comando anterior no imprime ni `Beta` , ejecute el siguiente comando desde `InsiderFast` terminal. La actualización de canal surte efecto la próxima vez que se inicie el producto (cuando se instale la siguiente actualización del producto o cuando se reinicie el dispositivo). 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    Como alternativa, si se encuentra en un entorno administrado (JAMF o Intune), puede configurar el canal de actualización de forma remota. Para obtener más información, vea [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md). 
+> - Versión mínima del sistema operativo: macOS 11 o posterior
+> - Versión mínima del producto: 101.34.20
 
 ## <a name="device-control-policy"></a>Directiva de control de dispositivos
 
@@ -79,7 +55,7 @@ Dentro del perfil de configuración, la directiva de control de dispositivos se 
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | deviceControl |
+| **Key** | deviceControl |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -99,7 +75,7 @@ Cuando los usuarios finales hacen clic en esta notificación, se abre una págin
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | navigationTarget |
+| **Key** | navigationTarget |
 | **Tipo de datos** | Cadena |
 | **Comments** | Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto. |
 
@@ -113,7 +89,7 @@ La sección de medios extraíbles de la directiva de control de dispositivos se 
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | removableMediaPolicy |
+| **Key** | removableMediaPolicy |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -143,10 +119,13 @@ En la sección medios extraíbles, hay una opción para establecer el nivel de c
 - `audit` - En este nivel de aplicación, si el acceso a un dispositivo está restringido, se muestra una notificación al usuario, pero aún se puede usar el dispositivo. Este nivel de cumplimiento puede ser útil para evaluar la eficacia de una directiva.
 - `block` - En este nivel de cumplimiento, las operaciones que el usuario puede realizar en el dispositivo se limitan a lo que se define en la directiva. Además, se genera una notificación al usuario. 
 
+> [!NOTE] 
+> De forma predeterminada, el nivel de cumplimiento se establece en `audit` . 
+
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | enforcementLevel |
+| **Key** | enforcementLevel |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | auditoría (valor predeterminado) <br/> bloque |
 
@@ -171,7 +150,7 @@ Esta configuración se puede establecer en:
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permiso |
+| **Key** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | ninguno <br/> read <br/> write <br/> execute |
 
@@ -186,7 +165,7 @@ El `vendors` diccionario contiene una o más entradas, con cada entrada identifi
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | proveedores |
+| **Key** | proveedores |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 
 Para cada proveedor, puede especificar el nivel de permisos deseado para los dispositivos de ese proveedor.
@@ -194,7 +173,7 @@ Para cada proveedor, puede especificar el nivel de permisos deseado para los dis
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permiso |
+| **Key** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
@@ -203,7 +182,7 @@ Además, puede especificar opcionalmente el conjunto de productos que pertenecen
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | productos |
+| **Key** | productos |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 
 Para cada producto, puede especificar el nivel de permisos deseado para ese producto.
@@ -211,7 +190,7 @@ Para cada producto, puede especificar el nivel de permisos deseado para ese prod
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permiso |
+| **Key** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
@@ -222,7 +201,7 @@ El `serialNumbers` diccionario contiene una o más entradas, con cada entrada id
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | serialNumbers |
+| **Key** | serialNumbers |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 
 Para cada número de serie, puede especificar el nivel de permisos deseado.
@@ -230,7 +209,7 @@ Para cada número de serie, puede especificar el nivel de permisos deseado.
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permiso |
+| **Key** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 

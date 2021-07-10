@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo mover un SharePoint a una ubicación geográfica diferente dentro de su entorno multige geográfico y comunicar las expectativas de los cambios a los usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5a49098045dbce94ef1c474497b8da1b397ac0b0
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910935"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362359"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -28,7 +28,7 @@ Con el movimiento geográfico de sitios de SharePoint, puede mover dichos sitios
 
 Los siguientes tipos de sitios pueden moverse entre ubicaciones geográficas:
 
-- Sitios conectados a Grupos de Microsoft 365
+- Microsoft 365 Sitios conectados a grupos, incluidos los asociados con Microsoft Teams
 - Sitios modernos sin ninguna asociación con los Grupos de Microsoft 365
 - Sitios clásicos de SharePoint
 - Sitios de comunicación
@@ -177,11 +177,11 @@ Mientras se realiza el movimiento, el sitio está configurado como de solo lectu
 
 Los usuarios con permisos al sitio seguirán teniendo acceso durante el movimiento y después de su finalización.
 
-### <a name="sync-client"></a>Cliente de sincronización
+### <a name="sync-app"></a>Aplicación de sincronización
 
-El cliente de sincronización detectará automáticamente y transferirá fácilmente la sincronización con la nueva ubicación de sitio, una vez completado el movimiento. El usuario no necesitará volver a iniciar sesión ni realizar ninguna otra acción. (Se requiere la versión 17.3.6943.0625 o posterior del cliente de sincronización).
+La aplicación de sincronización detectará automáticamente y transferirá sin problemas la sincronización a la nueva ubicación del sitio una vez que se complete el movimiento del sitio. El usuario no necesitará volver a iniciar sesión ni realizar ninguna otra acción. (Se requiere la versión 17.3.6943.0625 o posterior de la aplicación de sincronización).
 
-Si un usuario actualiza un archivo mientras el movimiento está en curso, el cliente de sincronización le notificará que hay cargas de archivos pendientes mientras el movimiento está en curso.
+Si un usuario actualiza un archivo mientras el movimiento está en curso, la aplicación de sincronización les notificará que las cargas de archivos están pendientes mientras el movimiento está en curso.
 
 ### <a name="sharing-links"></a>Vínculos de uso compartido
 

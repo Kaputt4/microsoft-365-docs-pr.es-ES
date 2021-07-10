@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Obtenga información acerca de Microsoft 365 Multi-Geo, cómo funcionan las capacidades multigeográficas y qué ubicaciones geográficas están disponibles para el almacenamiento de datos.
-ms.openlocfilehash: 9625d55015cc0f18801d59e82fc8ca7090b3b721
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 52c4bc8a23bdf89afb1a3f3eae3fe6348fed8009
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927537"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362719"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan para Microsoft 365 Multi-Geo
 
@@ -74,8 +74,6 @@ Si los usuarios se sincronizan desde un sistema de Active Directory local con Az
 La administración de un inquilino multigeográfico puede ser distinta de un espacio empresarial que no sea multigeográfico, ya que muchas de las opciones de configuración y servicios de SharePoint y OneDrive detectan las Capacidades multigeográficas. Le recomendamos que vea [Administrar un entorno multigeográfico](administering-a-multi-geo-environment.md) antes de continuar con la configuración.
 
 Lea [Experiencia del usuario en un entorno multigeómico](multi-geo-user-experience.md) para obtener más información sobre la experiencia de los usuarios finales en un entorno multige geográfico.
-
-Para obtener más información sobre la experiencia de Teams en una cuenta empresarial de Microsoft 365 Multi-Geo, consulte [Experiencia de Teams en una cuenta empresarial multigeográfica de OneDrive y SharePoint Online de Microsoft 365](/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
 Para empezar a configurar Microsoft 365 Multi-Geo, consulte [Configuración de Microsoft 365 Multi-Geo5](multi-geo-tenant-configuration.md).
 

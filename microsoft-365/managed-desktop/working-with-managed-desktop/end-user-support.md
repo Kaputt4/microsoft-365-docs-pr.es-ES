@@ -9,69 +9,67 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: abd1b681f3d5900f846fde7922f2f4a2ca5821ef
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 2eea02b0a891f65ccd7e4e993ca719b0f3aa1b8b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841368"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362611"
 ---
 # <a name="getting-help-for-users"></a>Obtener ayuda para los usuarios
 
-Hay dos maneras en que los usuarios de la organización  pueden obtener ayuda con sus Escritorio administrado de Microsoft dispositivos: Obtener ayuda aplicación o soporte telefónico. Ambas opciones de soporte técnico están disponibles para los usuarios las 24 horas del día, los 7 días de la semana.
+Si has llegado al punto [](../service-description/user-support.md) del flujo de trabajo en el que necesitas solicitar acceso o escalación de dispositivos elevados a Microsoft, sigue estos pasos:
  
 >[!NOTE]
 >Estas opciones de soporte técnico no están disponibles para los dispositivos del grupo De prueba.
 
-## <a name="get-help-app"></a>Obtener ayuda aplicación
+## <a name="elevation-requests"></a>Solicitudes de elevación
 
-El método preferido para proporcionar compatibilidad a los usuarios **es Obtener ayuda**, una interfaz fácil de usar integrada en el dispositivo de usuario.  
+Antes de solicitar acceso elevado a un dispositivo, es mejor revisar qué acciones son más adecuadas.
 
-![Obtener ayuda icono de la aplicación](../../media/get-help.png)
+- **Las acciones típicas** son para lo que está diseñado este proceso y se realizarían de forma rutinaria al solucionar problemas con Escritorio administrado de Microsoft dispositivos. Algunos ejemplos son:
+    - Elevar los solucionadores de problemas del sistema integrados, el símbolo del sistema o Windows PowerShell
+    - Solución de problemas de aplicaciones de línea de negocio
+    - Usar una solución alternativa para corregir algo que debe funcionar por diseño (como la activación de BitLocker o la hora del sistema no se actualiza)
+    - Elevar el Administrador de dispositivos para hacer cosas como actualizar controladores, desinstalar un dispositivo o buscar nuevos cambios
 
-Obtener ayuda es una aplicación que está instalada en todos los dispositivos Escritorio administrado de Microsoft y está anclada a la barra de tareas. 
+- **Entre las acciones que no se recomiendan** se incluyen las siguientes:
+    - Instalación de software o exploradores
+    - Instalación de controladores fuera de Windows, incluidos los de periféricos
+    - Instalación .msi o .exe archivos
+    - Instalación Windows características
 
-- Los usuarios pueden solicitar una devolución de llamada a un número de teléfono proporcionado o chatear en línea con un representante de servicio.
-- Las solicitudes que se encuentran fuera del Escritorio administrado de Microsoft de soporte técnico se redirigen al departamento de soporte técnico de TI local a través de una llamada telefónica.
+- **Entre las acciones que no se admiten** se incluyen las siguientes:
+    - Instalación de software o características que entren en conflicto con Escritorio administrado de Microsoft de seguridad o administración o operaciones
+    - Deshabilitar una característica Windows necesaria para Escritorio administrado de Microsoft, como BitLocker
+    - Modificar la configuración administrada por la organización
+
+### <a name="to-request-elevation"></a>Para solicitar elevación
+
+1. Vaya al portal en [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) e inicie sesión con sus Azure Active Directory credenciales.
+2. Seleccione **Nueva solicitud de elevación**.
+3. Proporcione estos detalles:
+    - **Id. de vale de** soporte técnico de su propio sistema de vales de soporte técnico.
+    - **Nombre del dispositivo:** escriba el número de serie del dispositivo y, a continuación, seleccione el dispositivo en el menú.
+    - **Categoría:** seleccione la categoría que mejor se adapte a su problema. Si ninguna opción parece estar cerca, selecciona **Otros** y proporciona más información en los campos **Título** y **Plan de** acción. Es mejor seleccionar una categoría si es posible.
+    - **Subcategoría:** seleccione la que mejor se adapte al problema. Si ninguna opción parece estar cerca, seleccione **Otro** y proporcione una breve descripción en **Título**. En **Plan of action**, proporcione los pasos de solución de problemas que tiene previsto realizar una vez que se conceda la elevación.
+4. Seleccione **Enviar**.
+
+
+## <a name="escalation-requests"></a>Solicitudes de escalación
+
+
+Si necesita escalar [un problema](../service-description/user-support.md#escalation-portal) a Microsoft, siga estos pasos:
+
+1. Vaya al portal en [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) e inicie sesión con sus Azure Active Directory credenciales.
+2. Seleccione **Solicitudes de escalación** y, a continuación, **nueva solicitud de escalación**.
+3. Proporcione estos detalles:
+    - **Categoría:** seleccione la categoría que mejor se adapte a su problema.
+    - **Título:** proporcione una descripción muy breve.
+    - **Descripción:** agregue cualquier información adicional que pueda ayudar a nuestro equipo a comprender el problema. Si necesita adjuntar archivos, puede hacerlo volviendo a la solicitud después de enviarlo.
+    - **Información de contacto principal:** proporcione información sobre cómo ponerse en contacto con la persona principal responsable de trabajar con nuestro equipo.
+4. Seleccione **Enviar**.
+5. Vuelva a visitar el vale en el mismo portal para interactuar con nuestro equipo.
 
 > [!NOTE]
-> El idioma de presentación de la aplicación Obtener ayuda es solo inglés, incluso si un usuario ha seleccionado un idioma diferente al configurar su dispositivo o en la configuración del dispositivo. 
-
-### <a name="prerequisites"></a>Requisitos previos
-Para que los usuarios puedan obtener ayuda a través de la aplicación, asegúrese de que se cumplen estos requisitos previos:
-
-- El dispositivo debe registrarse con Escritorio administrado de Microsoft uno de los métodos de [Configurar Escritorio administrado de Microsoft](../get-started/set-up-devices.md)dispositivos, como Registrar [nuevos dispositivos usted mismo.](../get-started/register-devices-self.md)
-- El idioma de presentación del dispositivo debe establecerse en cualquiera de estas configuraciones regionales en inglés: en-us, en-gb, en-au, en-nz o en-ca.
-- La Obtener ayuda debe estar actualizada. Para confirmar su estado, busca actualizaciones de aplicaciones en el Microsoft Store.
-- Algunos [puntos de conexión](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) deben ser accesibles desde el dispositivo.
-
-> [!NOTE]
-> La Obtener ayuda puede tardar hasta una hora después de implementar un dispositivo para funcionar completamente.
-
-Si has comprobado estos requisitos previos y la aplicación Obtener ayuda aún no funciona, como administrador de TI debes presentar una [solicitud de soporte técnico.](admin-support.md)
-
-## <a name="phone-support"></a>Soporte por teléfono
-
-Los usuarios Escritorio administrado de Microsoft dispositivos también tienen acceso a números de teléfono gratuitos a los que pueden llamar. Los números están diseñados para usarse Obtener ayuda no están disponibles. Por ejemplo, si no pueden iniciar sesión en el dispositivo o si el dispositivo está roto. Estos son los números de teléfono para soporte telefónico:
-
-- Estados Unidos: +1 855 425 0216
-- Canadá (excluyendo Quebec): +1 855 425 0216
-- Reino Unido: +44 800 026 0698
-- Bélgica: +32 800 58533
-- Luxemburgo: +352 800 40119
-- Australia: +61 180 037 0619
-- Nueva Zelanda: +64 988 44380
-- Suecia: +46 20 120 3554
-- Noruega: +47 800 62584
-- Islandia: +354 800 9006
-- Irlanda: +353 1 800 832272
-- Dinamarca: +45 80 40 04 01
-- Finlandia: +358 800 525088
-
->[!NOTE]
->Tendrás que tener la dirección de correo electrónico de la organización lista cuando llames para comprobar tu identidad. 
-
-## <a name="more-resources"></a>Más recursos
-- [Soporte de administración para Escritorio administrado de Microsoft](admin-support.md). 
-- [Compatibilidad con Escritorio administrado de Microsoft](../service-description/support.md).
-- Si ya se suscribe a Escritorio administrado de Microsoft, encontrará procedimientos detallados, flujos de proceso, instrucciones de trabajo y  preguntas frecuentes en la Guía de  administración de Escritorio administrado de Microsoft en los recursos en línea en la sección Escritorio administrado de Microsoft del menú Administración de inquilinos de [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+> Solo los problemas de gravedad C se pueden escalar a través de esta ruta de acceso. Para otros problemas, póngase en contacto con el administrador de TI para presentar la solicitud a través del portal de administración.

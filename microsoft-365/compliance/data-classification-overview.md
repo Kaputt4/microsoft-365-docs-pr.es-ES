@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c0343117251d169d0284c2fdb3fc3b8bca5ff0df
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244388"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362563"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -65,6 +65,9 @@ Un numero de diferentes suscripciones admite punto de conexión DLP. Para ver la
 - Administrador de cumplimiento
 - Administrador de seguridad
 - Administrador de datos de cumplimiento
+
+> [!NOTE]
+> Como procedimiento recomendado, use siempre el rol con privilegios mínimos para conceder acceso a la clasificación de datos de Microsoft 365.
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>Tipos de información confidencial más usados en el contenido.
 

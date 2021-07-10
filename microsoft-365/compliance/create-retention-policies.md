@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256536"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362335"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -75,7 +75,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
     - **Chats de Teams**: mensajes de chats privados 1:1, chats grupales y chats de reunión.
     - **Mensajes del canal privado de Teams**: Mensajes de chats de canales privados y reuniones de canales privados. Esta opción se está implementando actualmente en la versión preliminar y si no ve la opción reflejada, inténtelo de nuevo en unos días.
     
-   De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](#a-policy-with-specific-inclusions-or-exclusions). Pero, antes de cambiar el valor predeterminado, tenga en cuenta las siguientes consecuencias para una directiva de retención que elimina los mensajes cuando está configurada para incluir o excluir:
+   De forma predeterminada, [todos los equipos y todos los usuarios se seleccionan](#a-policy-that-applies-to-entire-locations), pero puede refinar esto seleccionando las opciones **Editar** para configurar una directiva de retención para [inclusiones o exclusiones específicas](#a-policy-with-specific-inclusions-or-exclusions). Pero, antes de cambiar el valor predeterminado, tenga en cuenta las siguientes consecuencias para una directiva de retención que elimina los mensajes cuando está configurada para incluir o excluir:
     
     - En el caso de los mensajes de los chats de grupo y los mensajes de los canales privados, como se guarda una copia de los mensajes en el buzón de cada usuario incluido en el chat, se seguirán devolviendo copias de los mensajes en los resultados de eDiscovery de los usuarios a los que no se les asignó la directiva.
     - En el caso de los usuarios a los que no se les haya asignado la directiva, los mensajes eliminados se devolverán en los resultados de la búsqueda de Teams, pero no mostrarán el contenido del mensaje como resultado de la eliminación permanente de la directiva asignada a los usuarios.
@@ -94,9 +94,9 @@ Para obtener detalles técnicos sobre el funcionamiento de la retención de Team
 
 - Aunque puede seleccionar la opción para iniciar el período de retención en el que se modificaron los elementos por última vez, siempre se usa el valor **Cuando se crearon los elementos**. Para los mensajes que se editan, se guarda una copia del mensaje original con la marca de tiempo original para identificar cuándo se creó este mensaje antes de editar, y el mensaje después de editar tiene una marca de tiempo más reciente.
 
-- Al seleccionar **Elegir equipos** para la ubicación de los **mensajes del canal Teams** es posible que vea grupos de Office 365 que no son también equipos. No seleccione estos equipos
+- Al seleccionar **Editar** para la ubicación de los **mensajes del canal Teams** es posible que vea grupos de Microsoft 365 que no son también equipos. No seleccione estos equipos.
 
-- Al seleccionar la ubicación **Elegir usuarios para los chats de Teams**, puede que vea invitados y no usuarios del buzón. Las directivas de retención no están diseñadas para estos usuarios, así que no los seleccione.
+- Al seleccionar **Editar** para la ubicación de los chats de Teams puede que vea invitados y no usuarios del buzón. Las directivas de retención no están diseñadas para estos usuarios, así que no los seleccione.
 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Directivas de retención adicionales que se necesitan para Teams
@@ -125,17 +125,22 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 
 2. Seleccione **Nueva directiva de retención** para crear una nueva directiva de retención.
 
-3. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido. 
+3. Para la página **Elegir ubicaciones a las que aplicar la directiva** active una o ambas ubicaciones de Yammer: **Mensaje de la comunidad de Yammer** y **Mensajes privados de Yammer**.
     
-    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](#settings-for-retaining-and-deleting-content) en esta página.
-
-4. Para acceder a la página **Elegir ubicaciones**, seleccione **Quiero elegir ubicaciones concretas**. A continuación, alterne entre una o ambas ubicaciones de Yammer: **Mensaje de la comunidad de Yammer** y **Mensajes del usuario de Yammer**.
+    > [!IMPORTANT]
+    > Aunque puede crear una directiva de retención solo para los mensajes de usuario de Yammer, una directiva de retención para esta ubicación puede eliminar los mensajes de la comunidad de la aplicación Yammer para todos los miembros de la comunidad.
+    > 
+    > Si elige esta opción y la directiva de retención se configurará para eliminar mensajes de usuario, asegúrese de comprender esta implicación. Para más información, vea [Cómo funciona la retención con Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
     
     De forma predeterminada se seleccionan todas las comunidades y los usuarios, pero también puede restringir los resultados al especificar qué comunidades y usuarios desea incluir o excluir.
     
     Para los mensajes del usuario de Yammer: 
     - Si deja la opción predeterminada en **Todos**, no se incluirá a los usuarios invitados de Azure B2B. 
-    - Si selecciona **Elegir usuario**, puede aplicar una directiva de retención a los usuarios externos si ya sabe cuál es su cuenta.
+    - Si selecciona **Editar** para la columna **Incluido**, puede aplicar una directiva de retención a los usuarios externos si ya sabe cuál es su cuenta.
+
+4. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido. 
+    
+    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](#settings-for-retaining-and-deleting-content) en esta página.
 
 5. Finalice el asistente para guardar la configuración.
 
@@ -167,7 +172,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 
 2. Seleccione **Nueva Directiva de retención** para iniciar el Asistente para crear directivas de retención y asignar un nombre a su nueva Directiva de retención.
 
-3. En la página **Elegir ubicaciones**, activar o desactivar cualquiera de las ubicaciones, excepto las ubicaciones de los Teams. Para cada ubicación, puede dejarla de forma predeterminada [aplicar la directiva a toda la ubicación](#a-policy-that-applies-to-entire-locations), o [especificar lo que se incluye y excluye](#a-policy-with-specific-inclusions-or-exclusions).
+3. En la página **Elegir ubicaciones a las que aplicar la directiva**, active o desactive cualquiera de las ubicaciones, excepto las ubicaciones de los Teams. Para cada ubicación, puede dejarla de forma predeterminada [aplicar la directiva a toda la ubicación](#a-policy-that-applies-to-entire-locations), o [especificar lo que se incluye y excluye](#a-policy-with-specific-inclusions-or-exclusions).
 
     Información específica de las ubicaciones:
     - [Correo electrónico de Exchange y carpetas públicas de Exchange](#configuration-information-for-exchange-email-and-exchange-public-folders)

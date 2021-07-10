@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: El reenvío de correo electrónico le permite reenviar los mensajes de correo electrónico enviados a un buzón Microsoft 365 de usuario a otro buzón dentro o fuera de la organización.
-ms.openlocfilehash: e0043fe75eefe224c63fd23f352d4bd3ddf2c326
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 9d645c2b36bdac2ab53dcb8af4ff6ebdbd0ee601
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228056"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363796"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurar el reenvío de correo electrónico en Microsoft 365
 
@@ -49,6 +49,8 @@ Antes de configurar el reenvío de correo electrónico, tenga en cuenta lo sigui
 
 Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para poder realizar estos pasos. Para obtener más información, consulte el tema [Acerca de los roles de administrador](../add-users/about-admin-roles.md).
 
+::: moniker range="o365-worldwide"
+
 1. En el Centro de administración, vaya a la página **Usuarios** \> **[Usuarios activos](https://go.microsoft.com/fwlink/p/?linkid=834822)**.
 
 2. Seleccione el nombre del usuario cuyo correo electrónico desea reenviar y, a continuación, abra la página de propiedades.
@@ -59,8 +61,8 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
 
     **Para reenviar a varias direcciones de correo**, puede pedir al usuario que configure una regla en Outlook para que se reenvía a las direcciones. 
     
-    1.  Abrir **reglas de**  >    >   **inicio de** outlook > Seleccionar administrar reglas & **alertas**
-    1. Seleccione **Nueva regla** Seleccione Aplicar regla en el mensaje que recibo ubicado cerca de la parte inferior de la lista y, a continuación, haga clic en  >   **Siguiente**.
+    1.  Abrir **reglas de** >  > **inicio de** outlook > Seleccionar administrar reglas & **alertas**  
+    1. Seleccione **Nueva regla** Seleccione Aplicar regla en el mensaje que recibo ubicado cerca de la parte inferior de la lista y, a continuación, haga clic en >  **Siguiente**.
     1. Haga **clic en Sí** cuando se le pida Esta regla se aplicará a todos los mensajes que reciba. 
     1. En la lista siguiente, seleccione las acciones que **redirigen a personas** o grupos públicos y detenga el procesamiento de más **reglas**
     1. Haga clic en la frase subrayada **personas o grupo público** en la parte inferior de la ventana.

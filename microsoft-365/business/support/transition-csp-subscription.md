@@ -1,6 +1,6 @@
 ---
 title: Transición a una suscripción de CSP de Microsoft 365 Empresa
-description: Descubra cómo puede realizar la transición de una suscripción Microsoft 365 Empresa CSP de vista previa a disponibilidad general (GA).
+description: Descubra cómo puede realizar la transición de una suscripción de CSP de Microsoft 365 de vista previa a disponibilidad general (GA).
 author: jasongroce
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ localization_priority: Normal
 audience: microsoft-business
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, transición suscripción de CSP
 ms.date: 11/01/2017
-ms.openlocfilehash: 3f6c71edb50cc3c5509e61a83efb64185c10648d
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 47b65b2de9db0fd27e29272937bab2041eb67300
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925011"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363827"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transición a una suscripción de CSP de Microsoft 365 Empresa
 
@@ -36,7 +36,7 @@ Si tienes una suscripción de CSP de versión preliminar de Microsoft 365 sigue 
     ![Suscripciones de cliente en el Centro de partners](../../media/pc_customer_subscriptions_1.png)
     
 3. En la página **Suscripciones** de la empresa, seleccione **Agregar suscripción**.
-4. En la **página Nueva suscripción,** seleccione **Pequeña** empresa y, a continuación, **seleccione Microsoft 365 Empresa** de la lista.
+4. En la **página Nueva suscripción,** seleccione **Pequeña empresa** y, a continuación, seleccione **Microsoft 365 Empresa** en la lista.
 5. Añade el número de licencias y, a continuación, selecciona **Siguiente: Revisión** para revisar la suscripción y, a continuación, selecciona **Enviar**.
 
     ![Revisar la nueva suscripción a Microsoft 365 Empresa](../../media/pc_customer_reviewnewsubscription.png)
@@ -44,20 +44,20 @@ Si tienes una suscripción de CSP de versión preliminar de Microsoft 365 sigue 
     Las **suscripciones basadas en licencia** mostrará **Versión preliminar de Microsoft 365 Empresa** y **Microsoft 365 Empresa**. A continuación, suspenderás la suscripción de vista previa.
 
 6. Selecciona **Versión preliminar de Microsoft 365 Empresa**.
-7. En la **Microsoft 365 Empresa vista previa,** seleccione **Suspendido** para suspender la suscripción de vista previa.
+7. En la **Microsoft 365 Vista previa** empresarial, seleccione **Suspendido** para suspender la suscripción de vista previa.
 
     ![Suspender la suscripción a la versión preliminar de Microsoft 365 Empresa](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Selecciona **Enviar** para confirmar.
 
-    En la **página Suscripciones,** confirme que el estado **Microsoft 365 Empresa vista previa** muestra **Suspendido**.
+    En la **página Suscripciones,** confirme que el estado **Microsoft 365 Vista previa** empresarial muestra **Suspendido**.
 
     ![Confirmar el estado suspendido de la suscripción de la vista preliminar](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Opcionalmente, también puedes validar el contrato de licencia. Para ello, sigue estos pasos:
     1. Selecciona **Usuarios y licencias** desde la página **Suscripciones** de la compañía.
     2. En la **página Usuarios y licencias,** seleccione un usuario.
-    3. En la página del usuario, compruebe la sección Asignar **licencias** y confirme que muestra **Microsoft 365 Empresa**.
+    3. En la página del usuario, compruebe **la** sección Asignar licencias y confirme que muestra **Microsoft 365 Empresa**.
 
         ![Confirmar que al usuario se le asigna la licencia de Microsoft 365 Empresa](../../media/pc_customer_userslicenses_m365b_validate.png)
 
@@ -73,7 +73,7 @@ En la siguiente tabla se resume el impacto para los clientes que no realizan la 
 |-------|-----------------|--------------|---------------|---------------|
 | **Estado** | En periodo de gracia | Expirada      | Deshabilitada      | Desaprovisionada |
 | **Impactos del servicio**                                                        |
-| **Portal de administración de Microsoft 365 Empresa** | Sin impacto en la funcionalidad | Sin impacto en la funcionalidad | Puede agregar o eliminar usuarios, comprar suscripciones.</br> No se pueden asignar ni revocar licencias. | Se elimina la suscripción del cliente y todos los datos. El administrador puede administrar otras suscripciones de pago. |
+| **Centro de administración de Microsoft 365** | Sin impacto en la funcionalidad | Sin impacto en la funcionalidad | Puede agregar o eliminar usuarios, comprar suscripciones.</br> No se pueden asignar ni revocar licencias. | Se elimina la suscripción del cliente y todos los datos. El administrador puede administrar otras suscripciones de pago. |
 | **Aplicaciones de Office**                         | Ningún impacto en el usuario final | Ningún impacto en el usuario final | Office entra en modo de funcionalidad reducida.</br> Los usuarios solo pueden ver los archivos. | Office entra en modo de funcionalidad reducida.</br> Los usuarios solo pueden ver los archivos. |
 | **Servicios en la nube (SharePoint Online, Exchange Online, Skype, Teams, etc.)** | Ningún impacto en el usuario final | Ningún impacto en el usuario final | Los usuarios finales y administradores no tienen acceso a datos en la nube. | Se elimina la suscripción del cliente y todos los datos. |
 | **Componentes EM+S** | Ningún impacto en el administrador</br> Ningún impacto en el usuario final | Ningún impacto en el administrador</br> Ningún impacto en el usuario final | La funcionalidad ya no se aplica.</br> Consulta [Impactos del dispositivo móvil en la expiración de la suscripción](#mobile-device-impacts-upon-subscription-expiration) y [Equipo con Windows 10 tras la expiración de la suscripción](#windows-10-pc-impacts-upon-subscription-expiration) para obtener más información. | La funcionalidad ya no se aplica.</br> Consulta [Impactos del dispositivo móvil en la expiración de la suscripción](#mobile-device-impacts-upon-subscription-expiration) y [Equipo con Windows 10 tras la expiración de la suscripción](#windows-10-pc-impacts-upon-subscription-expiration) para obtener más información. |

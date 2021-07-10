@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo recopilar información de diagnóstico de exhibición de documentos electrónicos para un caso de soporte técnico de Microsoft.
-ms.openlocfilehash: 842f8baf770f178df3298bbfa911de26ce946ed0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b2441e0b7af8a82e24a8acca9e000e954e1c8964
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926560"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362599"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Recopilar información de diagnóstico de eDiscovery
 
@@ -39,7 +39,7 @@ Para ejecutar los cmdlets siguientes, [conéctese a </span> PowerShell & Centro 
 Después de revisar el archivo de texto generado y de redactar información confidencial, envíelo al ingeniero de soporte técnico de Microsoft que trabaja en su caso.
 
 > [!NOTE]
-> También puede ejecutar los comandos de esta sección para recopilar información  de diagnóstico de las búsquedas y exportaciones que aparecen en la página Búsqueda de contenido en el centro de Microsoft 365 cumplimiento.
+> También puede ejecutar los comandos de esta sección para recopilar información  de diagnóstico para las búsquedas y exportaciones que aparecen en la página Búsqueda de contenido en el Centro de cumplimiento de Microsoft 365.
 
 ### <a name="collect-information-about-searches"></a>Recopilar información sobre búsquedas
 
@@ -67,10 +67,10 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>Recopilar toda la información de casos
 
-A veces, no es aparente qué información requiere el soporte técnico de Microsoft para investigar el problema. En esta situación, puede recopilar toda la información de diagnóstico para un caso de exhibición de documentos electrónicos principal. El *nombre* del caso de exhibición de documentos electrónicos principal en el siguiente  comando es el mismo que el nombre de un caso que se muestra en la página Exhibición de documentos electrónicos principales en el centro de cumplimiento de Microsoft 365 de documentos electrónicos.
+A veces, no es aparente qué información requiere el soporte técnico de Microsoft para investigar el problema. En esta situación, puede recopilar toda la información de diagnóstico para un caso de exhibición de documentos electrónicos principal. El nombre del caso de exhibición de documentos electrónicos principal del siguiente comando es el mismo que el nombre de un caso que se muestra en la página *eDiscovery* principal de la Centro de cumplimiento de Microsoft 365. 
 
 ```powershell
-Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
+Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
 ## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>Recopilar información de diagnóstico para Advanced eDiscovery

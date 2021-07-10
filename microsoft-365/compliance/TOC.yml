@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: Crear y administrar directivas de riesgos internos
           href: insider-risk-management-policies.md
-        - name: Investigar alertas de riesgos internos
-          href: insider-risk-management-alerts.md
+        - name: Investigar alertas de riesgo interno
+          href: insider-risk-management-activities.md
         - name: Tomar medidas en casos de riesgos internos
           href: insider-risk-management-cases.md
         - name: Revisar actividades con el registro de auditoría de riesgo interno
@@ -118,6 +118,12 @@
           href: create-a-custom-sensitive-information-type.md
         - name: Crear un tipo de información confidencial personalizada con PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Eliminar un tipo de información confidencial personalizada con PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: Modificar un tipo de información confidencial personalizada con PowerShell
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: 'Personalizar referencia de filtros de tipo de información confidencial '
+          href: sit-custom-sit-filters.md
         - name: Crear un diccionario de palabras clave
           href: create-a-keyword-dictionary.md
         - name: Modificar un diccionario de palabras clave
@@ -423,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype Empresarial (vista previa)
+            - name: Skype Empresarial
               href: archive-skypeforbusiness-data.md
             - name: Margen de demora eDiscovery
               href: archive-slack-data.md
@@ -457,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: Archivador de la red de SMS y voz de O2 Telefónica
               href: archive-o2-network-data.md
-            - name: Señal (vista previa)
+            - name: Archivador de Signal
               href: archive-signal-archiver-data.md
-            - name: Telegram (vista previa)
+            - name: Archivador de Telegram
               href: archive-telegram-archiver-data.md
             - name: Red TELUS
               href: archive-telus-network-data.md
@@ -915,7 +921,7 @@
         - name: Herramienta de análisis de configuración de cumplimiento
           href: compliance-manager-mcca.md
         - name: Preguntas más frecuentes (P+F)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: Administrador de cumplimiento (clásico)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Portal de confianza del Servicio Microsoft

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: 4ae85f69eea5221945c531b2b63000be7eb43fb7
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 02b5727f0c844fa6b825b4c0c032ea6c2633d6df
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341073"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363996"
 ---
 # <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>Directivas de alerta en el Centro de cumplimiento de Microsoft 365
 
@@ -62,6 +62,9 @@ Una directiva de alerta consta de un conjunto de reglas y condiciones que define
 Vaya a <https://compliance.microsoft.com> y, a continuación, **seleccione Directivas**  >  **directivas de alerta** de  >  **alerta.** Como alternativa, puede ir directamente a <https://compliance.microsoft.com/alertpolicies> .
 
 ![En el Centro de cumplimiento, seleccione Directivas y, en Alerta, seleccione Directivas de alerta para ver y crear directivas de alerta](../media/LaunchAlertPoliciesMCC.png)
+
+> [!NOTE]
+> Debe tener asignado el rol administrar View-Only alertas para ver las directivas de alerta en el Centro de cumplimiento de Microsoft 365. Debe tener asignado el rol Administrar alertas para crear y editar directivas de alertas. Para obtener más información, vea [Permissions in the security and compliance center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Una directiva de alertas consta de las siguientes opciones de configuración y condiciones.
 

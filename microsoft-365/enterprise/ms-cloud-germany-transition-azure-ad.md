@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información Azure Active Directory información adicional al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e7abd68945a9b685a33c120ff1e92fda62b2c56
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923855"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362731"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información Azure Active Directory para la migración desde Microsoft Cloud Deutschland
 
@@ -80,6 +80,10 @@ Una aplicación puede ser cualquiera de las siguientes:
 **¿Qué sucede con las aplicaciones que publico?**
 
 Si publica una aplicación que está disponible para los usuarios que están fuera de su espacio empresarial, es posible que tenga que cambiar el registro de la aplicación para garantizar la continuidad. Otros inquilinos que usan la aplicación pueden moverse en un momento diferente al del inquilino. Para asegurarse de que nunca pierden el acceso a la aplicación, deberás dar su consentimiento para que la aplicación se sincronice de Azure Germany con Azure public.
+
+**¿Qué sucede con la adición de nuevas aplicaciones multiinquilino durante la migración?**
+
+Si desea consumir una nueva aplicación publicada por otra organización (aplicación multiinquilino), se le restringirá agregar esa aplicación durante el proceso de migración (fases 2 a 9).  Puede ejecutar esta tarea cuando su organización complete la fase 9 y esté totalmente transición a la instancia pública de Azure.
 
 ## <a name="additional-considerations"></a>Consideraciones adicionales
 

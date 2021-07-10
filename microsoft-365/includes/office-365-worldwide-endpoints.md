@@ -123,7 +123,7 @@ ID | Categoría | EMERGENCIA | Addresses | Puertos
 148 | Predeterminado<BR>Obligatorio | No | `cdnprod.myanalytics.microsoft.com, myanalytics.microsoft.com, myanalytics-gcc.microsoft.com` | **TCP:** 443, 80
 149 | Predeterminado<BR>Obligatorio | No | `workplaceanalytics.cdn.office.net` | **TCP:** 443, 80
 150 | Predeterminado<BR>Opcional<BR>**Notas:** bloquear estos puntos de conexión afectará a la capacidad de acceso a las características de implementación y administración de Office 365 ProPlus a través del portal. | No | `*.officeconfig.msocdn.com` | **TCP:** 443
-152 | Predeterminado<BR>Opcional<BR>**Notas:** estos extremos permiten la funcionalidad de Scripts de Office en los clientes de Office disponibles a través de la pestaña Automatizar.  Esta característica también se puede deshabilitar a través del portal de Office 365 Admin. | No | `*.microsoftusercontent.com` | **TCP:** 443
+152 | Predeterminado<BR>Opcional<BR>**Notas:** estos extremos permiten la funcionalidad de Scripts de Office en los clientes de Office disponibles a través de la pestaña Automatizar.  Esta característica también se puede deshabilitar a través del Centro de administración de Microsoft 365. | No | `*.microsoftusercontent.com` | **TCP:** 443
 153 | Predeterminado<BR>Obligatorio | No | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com` | **TCP:** 443
 156 | Predeterminado<BR>Obligatorio | No | `activity.windows.com` | **TCP:** 443
 157 | Predeterminado<BR>Obligatorio | No | `ocsp.int-x3.letsencrypt.org` | **TCP:** 80

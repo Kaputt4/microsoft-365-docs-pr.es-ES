@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a7521a31b0b31fb95d2729f7068bfc9de5717f01
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f52d1e9ea0d3e4c2da2ec413085a0f14efc453c7
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933822"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363808"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Ejemplos de directivas de control de dispositivos para Intune
 
@@ -34,8 +34,6 @@ ms.locfileid: "51933822"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Este documento contiene ejemplos de directivas de control de dispositivos que puedes personalizar para tu propia organización. Estos ejemplos son aplicables si usa Intune para administrar dispositivos en su empresa.
 

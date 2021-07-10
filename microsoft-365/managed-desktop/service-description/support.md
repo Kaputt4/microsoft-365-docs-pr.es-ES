@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad con Escritorio administrado de Microsoft
+title: Soporte de administrador
 description: Describe la administración proactiva y reactiva de incidentes para Escritorio administrado de Microsoft.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 90787ec28aa2c421df50757fc29bf20b2b5d55f7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925508"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362479"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a>Compatibilidad con Escritorio administrado de Microsoft
+# <a name="admin-support"></a>Soporte de administrador
 
 Microsoft proporcionará una administración proactiva y reactiva de incidentes. Microsoft realiza un seguimiento de los incidentes en el Escritorio administrado de Microsoft de administración. Se clasifican según las definiciones [de gravedad](../working-with-managed-desktop/admin-support.md#sev).
 
@@ -38,7 +38,7 @@ Productos compatibles:
 - Windows 10 con Microsoft Defender para endpoint
 - Estas Aplicaciones Microsoft 365 para empresas: Outlook, Word, PowerPoint, Excel, Skype Empresarial cliente, Microsoft Teams 
 - Microsoft Store para Empresas 
-- OneDrive para la Empresa cliente 
+- OneDrive cliente 
 
 Detalles del soporte técnico:
 

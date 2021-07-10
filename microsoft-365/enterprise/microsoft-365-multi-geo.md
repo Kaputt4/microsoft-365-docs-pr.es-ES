@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: En este artículo, obtenga información sobre cómo expandir su Microsoft 365 a varias regiones geográficas con Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 2805470f1a35bb5978f3d25c30aa07523ad21afb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17fc2645f69a0d91c71c91718f321e5932d31bd2
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909555"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362767"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -57,6 +57,8 @@ Microsoft 365 Multi-Geo está disponible como complemento a los siguientes plane
 - Exchange Online (plan 1 o plan 2)
 - OneDrive para la Empresa (plan 1 o plan 2)
 - SharePoint Online (plan 1 o plan 2)
+
+Si se asigna una licencia a un usuario y se quita posteriormente, Teams datos de chat de usuario se ponen en cola para volver a la ubicación central. SharePoint y Exchange datos no se mueven.
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Disponibilidad de Microsoft 365 Multi-Geo
 

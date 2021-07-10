@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Yammer.
-ms.openlocfilehash: d4988eee419a38497d4fa35cdb3e2f7fec103688
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 1398bf385631967d92de760924ef94e2b3c16441
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052932"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362299"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Más información sobre la retención para Yammer
 
@@ -41,15 +41,26 @@ Para otras cargas de trabajo, vea:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
-Los siguientes elementos Yammer se pueden retener y eliminar mediante directivas de retención para los Yammer: chats y mensajes de canal.
+Los siguientes elementos de Yammer se pueden retener y eliminar mediante directivas de retención para Yammer: mensajes de la comunidad y mensajes de usuario.
 
 En estos mensajes no se incluyen las reacciones de otras personas en forma de iconos gestuales.
 
 ## <a name="how-retention-works-with-yammer"></a>Cómo funciona la retención con Yammer
 
-Puede usar una directiva de retención para conservar y eliminar mensajes de la comunidad y mensajes privados en Yammer. Los mensajes privados se almacenan en una carpeta oculta en el buzón de cada usuario incluido en el mensaje, y los mensajes de la comunidad se almacenan en una carpeta oculta similar en el buzón de correo del grupo de la comunidad.
+Use esta sección para comprender cómo los procesos y el almacenamiento de backend cumplen sus requisitos de cumplimiento, y las herramientas de exhibición de documentos electrónicos deben verificarlos en lugar de los mensajes que están visibles actualmente en la aplicación Yammer.
 
-Los mensajes de Yammer no se ven afectados por las directivas de retención que se configuran para los buzones de los usuarios o grupos. Si bien los mensajes de Yammer se almacenan en Exchange, estos datos de Yammer se incluyen solo por una directiva de retención que está configurada para los **mensajes de la comunidad de Yammer** y las ubicaciones de los **mensajes privados de Yammer**.
+Puede usar una directiva de retención para conservar los datos de los mensajes de la comunidad y los mensajes de usuario en Yammer y eliminar estos mensajes. En segundo plano, se usan buzones de Exchange para almacenar datos copiados de estos mensajes. Los datos de los mensajes de usuario de Yammer se almacenan en una carpeta oculta en el buzón de cada usuario incluido en el mensaje de usuario y se usa una carpeta oculta similar en un buzón de grupo para los mensajes de la comunidad.
+
+Las copias de los mensajes de la comunidad también se pueden almacenar en la carpeta oculta de los buzones de usuario cuando @mencionan a usuarios o notifican al usuario una respuesta. Aunque estos mensajes se originan como un mensaje de la comunidad, una directiva de retención para los mensajes de usuario de Yammer a menudo incluirá copias de mensajes de la comunidad.
+
+Estas carpetas ocultas no están diseñadas para que los usuarios o administradores puedan acceder directamente a ellas, sino que almacenan datos que los administradores de cumplimiento pueden buscar con herramientas de exhibición de documentos electrónicos.
+
+> [!IMPORTANT]
+> Dado que las copias de los mensajes de la comunidad también se pueden almacenar en buzones de usuario, una directiva de retención con una acción de eliminación para los mensajes de usuario de Yammer puede hacer que el mensaje de la comunidad original deje de ser visible para los usuarios en la aplicación de Yammer.
+> 
+> Sin embargo, una copia del mensaje original sigue estando disponible en la carpeta oculta del buzón del grupo de la comunidad y es accesible con las búsquedas de exhibición de documentos electrónicos con fines de cumplimiento.
+
+Los mensajes de Yammer no se ven afectados por las directivas de retención que se configuran para los buzones de Exchange. Si bien los mensajes de Yammer se almacenan en Exchange, estos datos de Yammer se incluyen solo por una directiva de retención que está configurada para los **mensajes de la comunidad de Yammer** y las ubicaciones de los **mensajes privados de Yammer**.
 
 > [!NOTE]
 > Si un usuario está incluido en una directiva de retención activa que retiene los datos de Yammer y usted elimina el buzón de un usuario incluido en esta directiva, dicho buzón se convierte en un [buzón inactivo](inactive-mailboxes-in-office-365.md) para retener los datos de Yammer. Si no necesita retener los datos de Yammer del usuario, excluya la cuenta del usuario de la directiva de retención antes de eliminar su buzón.
@@ -91,7 +102,7 @@ Cuando la directiva de retención es de solo retención, o solo eliminación, la
 
 ## <a name="messages-and-external-users"></a>Mensajes y usuarios externos
 
-De forma predeterminada, las directivas de retención para los mensajes del usuario de Yammer aplican a todos los usuarios de su organización, pero no aplica a los usuarios externos. Puede aplicar una directiva de retención a usuarios externos con la opción **Elegir usuario** y especificando su cuenta. 
+De forma predeterminada, las directivas de retención para los mensajes del usuario de Yammer aplican a todos los usuarios de su organización, pero no aplica a los usuarios externos. Puede aplicar una directiva de retención a usuarios externos con la opción **Editar** para los usuarios incluidos y especificando su cuenta.
 
 En este momento, no se admiten usuarios invitados B2B de Azure.
 
@@ -103,9 +114,9 @@ Si el usuario ha guardado archivos en Yammer, consulte la [sección equivalente]
 
 ## <a name="limitations"></a>Limitaciones
 
-Actualmente, las directivas de retención de Yammer se encuentran en versión preliminar y estamos trabajando continuamente para optimizar la funcionalidad de retención. Mientras tanto, tenga en cuenta las siguientes limitaciones al usar la retención para los mensajes de la comunidad de Yammer y los mensajes privados:
+Actualmente, las directivas de retención de Yammer se encuentran en versión preliminar y estamos trabajando continuamente para optimizar la funcionalidad de retención. Mientras tanto, tenga en cuenta las siguientes limitaciones al usar la retención para los mensajes de la comunidad de Yammer y los mensajes de usuario:
 
-- Al seleccionar **Elegir usuarios** para la ubicación de los **mensajes del usuario de Yammer**, es posible que pueda ver a los invitados y a los usuarios sin buzón de correo. Las directivas de retención no están diseñadas para estos usuarios, así que no los seleccione.
+- Al seleccionar **Editar** para la ubicación de los **mensajes del usuario de Yammer**, es posible que pueda ver a los invitados y a los usuarios sin buzón de correo. Las directivas de retención no están diseñadas para estos usuarios, así que no los seleccione.
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
