@@ -246,7 +246,8 @@
 #### [Usar el modo de auditoría para ataques a la reducción de superficie](audit-windows-defender.md)
 
 ### Protección de última generación
-#### [Introducción al Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)
+#### [Información sobre los servicios de protección de nueva generación](next-generation-protection.md)
+##### [Introducción al Antivirus de Microsoft Defender](microsoft-defender-antivirus-windows.md)
 ##### [Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión](why-use-microsoft-defender-antivirus.md)
 ##### [Mejor juntos: Antivirus de Microsoft Defender y Office 365](office-365-microsoft-defender-antivirus.md)

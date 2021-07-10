@@ -48,3 +48,5 @@
   items:
     - name: Introducción a la adopción guiada
       href: topics-adoption-getstarted.md
+    - name: Ejecutar una prueba
+      href: trial-topics.md
