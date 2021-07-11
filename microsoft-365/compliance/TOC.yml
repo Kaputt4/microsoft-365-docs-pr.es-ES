@@ -429,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype Empresarial
+            - name: Skype Empresarial (vista previa)
               href: archive-skypeforbusiness-data.md
             - name: Margen de demora eDiscovery
               href: archive-slack-data.md
@@ -463,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: Archivador de la red de SMS y voz de O2 Telefónica
               href: archive-o2-network-data.md
-            - name: Archivador de Signal
+            - name: Señal (vista previa)
               href: archive-signal-archiver-data.md
-            - name: Archivador de Telegram
+            - name: Telegram (vista previa)
               href: archive-telegram-archiver-data.md
             - name: Red TELUS
               href: archive-telus-network-data.md
