@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Los administradores pueden obtener información sobre cómo administrar SharePoint y OneDrive en un entorno multige geográfico.
-ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362323"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363948"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administración de un entorno de Multi-Geo
 
@@ -72,15 +72,15 @@ De forma predeterminada, todas las ubicaciones geográficas de un entorno multig
 
 ## <a name="sharing"></a>Uso compartido
 
-Los administradores pueden configurar y administrar directivas de uso compartido para cada una de sus ubicaciones. Los sitios de OneDrive y SharePoint en cada ubicación geográfica respetarán solo la configuración geográfica de uso compartido específica correspondiente. (Por ejemplo, puede permitir el [uso compartido externo](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) para su ubicación central, pero no para la ubicación satélite o viceversa). Tenga en cuenta que la configuración de uso compartido no permite configurar limitaciones de uso compartido entre ubicaciones geográficas.
+Los administradores pueden configurar y administrar directivas de uso compartido para cada una de sus ubicaciones. Los OneDrive y SharePoint de cada ubicación geográfica solo respetarán la configuración de uso compartido específica de geo correspondiente. (Por ejemplo, puede permitir el [uso compartido externo](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) para su ubicación central, pero no para la ubicación satélite o viceversa). Tenga en cuenta que la configuración de uso compartido no permite configurar limitaciones de uso compartido entre ubicaciones geográficas.
 
 ## <a name="stream"></a>Stream
 
-Los vídeos cargados en Stream se almacenan en el OneDrive de la persona que se carga. Las grabaciones de reuniones se almacenan en el OneDrive de cada asistente que registra la reunión.
+Los vídeos cargados en Stream en un chat 1:1 se almacenan en el OneDrive de la persona que se carga. Las grabaciones de reuniones se almacenan en el OneDrive de cada asistente que registra la reunión.
 
 ## <a name="taxonomy"></a>Taxonomía
 
-Se admite una [taxonomía](/sharepoint/managed-metadata) unificada para metadatos administrados por empresas entre las ubicaciones geográficas, con el principal hospedado en la ubicación central de su compañía. Se recomienda administrar una taxonomía global desde la ubicación central y agregar solo términos específicos de la ubicación a la taxonomía de la ubicación satélite. Los términos de la taxonomía global se sincronizarán con las ubicaciones satélites.
+Se admite una [taxonomía unificada](/sharepoint/managed-metadata) para metadatos administrados por la empresa en ubicaciones geográficas, con el patrón hospedado en la ubicación central de su empresa. Se recomienda administrar una taxonomía global desde la ubicación central y agregar solo términos específicos de la ubicación a la taxonomía de la ubicación satélite. Los términos de la taxonomía global se sincronizarán con las ubicaciones satélites.
 
 Vea [Administrar metadatos en un espacio empresarial multigeográfico](/sharepoint/dev/solution-guidance/multigeo-managedmetadata) para obtener detalles adicionales y orientación para desarrolladores.
 

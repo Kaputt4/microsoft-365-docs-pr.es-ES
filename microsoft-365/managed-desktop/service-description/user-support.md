@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8cb1b30da84ece597235d8eef674a12208ab6456
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8063e1b0e76241df946a29ef2c5115bc0dc39aad
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362683"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363772"
 ---
 # <a name="user-support"></a>Soporte al usuario
 
@@ -83,7 +83,7 @@ Si un problema de usuario debe escalarse a Escritorio administrado de Microsoft,
 
 ### <a name="elevation-portal"></a>Portal de elevación 
 
-Dado que Escritorio administrado de Microsoft dispositivos se ejecutan en el usuario estándar de forma predeterminada, algunas tareas requieren la elevación de privilegios. (Para obtener más información acerca del control de cuentas de usuario, vea [Control de cuentas de usuario](/windows/security/identity-protection/user-account-control/user-account-control-overview)) Para que el personal de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) soporte técnico pueda realizar tareas mientras se solucionan problemas para los usuarios, proporcionamos acceso "justo a tiempo" a una cuenta de administrador. Esta contraseña a la que acceden de forma segura solo las personas que designe y gira cada par de horas.  
+Dado que Escritorio administrado de Microsoft dispositivos se ejecutan en el usuario estándar de forma predeterminada, algunas tareas requieren la elevación de privilegios. Para obtener más información acerca del control de cuentas de usuario, vea [Control de cuentas de usuario](/windows/security/identity-protection/user-account-control/user-account-control-overview). Para que el personal de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) soporte técnico pueda realizar tareas mientras se solucionan problemas para los usuarios, proporcionamos acceso "justo a tiempo" a una cuenta de administrador. Esta contraseña a la que acceden de forma segura solo las personas que designe y gira cada par de horas.  
 
 Para obtener instrucciones sobre cómo configurar usuarios para el acceso a este portal, vea [Habilitar características de soporte técnico de usuario](../get-started/enable-support.md).
 
