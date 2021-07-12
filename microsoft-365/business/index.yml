@@ -27,10 +27,10 @@ productDirectory:
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: La administración de antivirus y la impresión universal ya están disponibles en Microsoft 365 Empresa Premium.
       url: 'https://aka.ms/M365BPQ1Update'
-    - title: Unirse a la serie de seminarios web de asociados
+    - title: Únase al seminario web de asociados de Microsoft 365 Lighthouse el 28 de julio
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: Acelere el crecimiento de negocio a través de servicios administrados con Microsoft 365 Empresa Premium.
-      url: 'https://aka.ms/acceleratewithm365bp'
+      summary: Uso de Microsoft 365 Lighthouse para proteger y estandarizar los clientes de Microsoft 365 Empresa Premium.
+      url: 'https://aka.ms/m365lighthousewebinar'
 conceptualContent:
   items:
     - title: ¿Qué es Microsoft 365 Empresa Premium?
