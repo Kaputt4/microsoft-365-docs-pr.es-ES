@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a3c7f88441b05d6c64470f6632b9c63ac67b295c
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: 46f223953df65b75c0ecfe0d2c9fe92514b797ff
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363960"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341657"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -620,7 +620,7 @@ En la tabla siguiente se enumeran los eventos que se producen de las tareas de a
 |Se ha agregado el administrador de ubicación geográfica|GeoAdminAdded|Un administrador global o de SharePoint agregó un usuario como administrador geográfico de una ubicación.|
 |Usuario permitido para crear grupos|AllowGroupCreationSet|El administrador de sitios o el propietario agrega un nivel de permisos a un sitio que permite que un usuario al que se le ha asignado ese permiso cree un grupo para ese sitio.|
 |Desplazamiento geográfico de sitio cancelado|SiteGeoMoveCancelled|Un administrador global o de SharePoint canceló correctamente un desplazamiento geográfica de un sitio de SharePoint o de OneDrive. La funcionalidad multigeográfica permite que una organización disponga de varias geografías de centros de datos de Microsoft, denominadas geoáreas. Para obtener más información, consulte [Capacidades multigeográficas en OneDrive y SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
-|Normativa de uso compartido cambiada|SharingPolicyChanged|Un administrador global o de SharePoint cambió una directiva de uso compartido de SharePoint mediante el Centro de administración de Microsoft 365, el Centro de administración de SharePoint o el Shell de SharePoint Online Management. Se registrará cualquier cambio en la configuración de la directiva de uso compartido de su organización. La normativa cambiada se identifica en el campo **ModifiedProperties** en las propiedades detalladas del registro de eventos.|
+|Normativa de uso compartido cambiada|SharingPolicyChanged|Un administrador global o de SharePoint cambió una normativa de uso compartido de SharePoint mediante el Portal de administración de Microsoft 365, el Portal de administración de SharePoint, o la Consola de administración en línea de SharePoint. Se registrará cualquier cambio en la configuración de la directiva de uso compartido de su organización. La normativa cambiada se identifica en el campo **ModifiedProperties** en las propiedades detalladas del registro de eventos.|
 |Directiva de acceso del dispositivo cambiada|DeviceAccessPolicyChanged|Un administrador global o de SharePoint cambió la directiva de dispositivos no administrados para su organización. Esta directiva controla el acceso a SharePoint, OneDrive y Microsoft 365 desde dispositivos que no se han unido a su organización. La configuración de esta directiva requiere una suscripción de Enterprise Mobility + Security. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices).|
 |Agente de usuario exento cambiado|CustomizeExemptUsers|El administrador global o de SharePoint ha personalizado la lista de agentes de usuario exentos en el Centro de administración de SharePoint. Puede especificar qué agentes de usuario están exentos de recibir una página web completa para indexar. Esto significa que cuando un agente de usuario que ha especificado como exento encuentra un formulario de InfoPath, el formulario se devolverá como un archivo XML en lugar de como una página web completa. Esto acelera la indexación de formularios de InfoPath.|
 |Directiva de acceso de red cambiada|NetworkAccessPolicyChanged|Un administrador global o de SharePoint cambió la normativa de acceso basado en la ubicación (también denominada un límite de red de confianza) en el Centro de administración SharePoint o mediante el PowerShell de SharePoint en línea. Este tipo de controles de normativa tienen acceso a recursos de SharePoint y OneDrive de la organización en función de los intervalos de direcciones IP que especifique. Para obtener más información, consulte [Controlar el acceso a datos de SharePoint en línea y OneDrive en función de las ubicaciones de red](/sharepoint/control-access-based-on-network-location).|
