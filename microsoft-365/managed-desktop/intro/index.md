@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e70a67f9472dff155b8554d5d6ae26c79d49a67a
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841371"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362622"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
@@ -25,7 +25,6 @@ El Escritorio administrado de Microsoft es un servicio basado en la nube que re�
 - Implementación de dispositivo de usuario
 - Operaciones y administración de servicios de TI
 - Control y respuesta de seguridad
-- Soporte al usuario
 
 El Escritorio administrado de Microsoft ofrece una solución para muchos de los desafíos a los que las empresas y las personas relacionadas se enfrentan en la actualidad:
 - La transición al mundo ágil del software como servicio es abrumadora.
@@ -33,7 +32,7 @@ El Escritorio administrado de Microsoft ofrece una solución para muchos de los 
 - Muchos de los procesos de seguridad y administración de TI actuales están desfasados, consumen mucho tiempo y son caros.
 - Las empresas quieren centrarse en lo que les da un éxito único, en lugar de mantener una infraestructura digital.
 
-Los usuarios disfrutarán de las versiones más recientes de las Aplicaciones de Microsoft 365 para empresas y Windows 10 (entre otras), mediante dispositivos y software mantenidos y probados rigurosamente para lograr la máxima confiabilidad y rendimiento. Además, nunca tendrá que preocuparse por mantener actualizado el software, ya que esto sucede automáticamente, siguiendo una secuencia de implementación cuidadosa que se supervisa en cada paso del proceso. Y los dispositivos registrados se supervisan 24x7 en busca de problemas técnicos y de seguridad, por lo que si algo va mal, la ayuda estará en el camino.
+Los usuarios disfrutarán de las versiones más recientes de las Aplicaciones de Microsoft 365 para empresas y Windows 10 (entre otras), mediante dispositivos y software mantenidos y probados rigurosamente para lograr la máxima confiabilidad y rendimiento. Además, nunca tendrá que preocuparse por mantener actualizado el software, ya que esto sucede automáticamente, siguiendo una secuencia de implementación cuidadosa que se supervisa en cada paso del proceso. Además, los dispositivos registrados se supervisan las 24 horas del día, los siete días de la semana en busca de problemas técnicos y de seguridad, por lo que si algo va mal, la ayuda no tardará en llegar.
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Único en el Escritorio administrado de Microsoft

@@ -1,5 +1,5 @@
 ---
-title: Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
+title: Buscar el registro de auditoría en el Centro de cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: a3c7f88441b05d6c64470f6632b9c63ac67b295c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300141"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363960"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -48,11 +48,11 @@ ms.locfileid: "53300141"
 - Actividad de administrador y usuario para las etiquetas de confidencialidad de los sitios que usan SharePoint Online o Microsoft Teams
 - Actividad de administrador en el correo de Informe de tareas pendientes y MyAnalytics
 
-## <a name="requirements-to-search-the-audit-log"></a>Requisitos para realizar búsquedas en el registro de auditoría
+## <a name="before-you-search-the-audit-log"></a>Antes de realizar búsquedas en el registro de auditoría
 
 Lea los elementos siguientes antes de iniciar la búsqueda en el registro de auditoría.
 
-- La búsqueda en el registro de auditoría está activada de forma predeterminada para organizaciones de Microsoft 365 y Office 365 Enterprise. Esto incluye las organizaciones con suscripciones a E3/G3 o E5/G5. Para comprobar que la búsqueda de registros de auditoría está activada, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
+- La búsqueda en el registro de auditoría está activada de forma predeterminada para organizaciones de Microsoft 365 y Office 365 Enterprise. Para comprobar que la búsqueda de registros de auditoría está activada, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
@@ -60,10 +60,10 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
   El valor de `True` para la propiedad *UnifiedAuditLogIngestionEnabled* indica que la búsqueda de registros de auditoría está activada. Para obtener más información, consulte [Desactivar o activar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
-- Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **permisos** del centro de administración de Exchange. Tenga en cuenta que los administradores globales de Office 365 y Microsoft 365 pasan automáticamente a ser miembros del grupo de roles de Administración de la organización en el servicio de Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
+- Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **permisos** del centro de administración de Exchange. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles de administración de la organización en Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
-  > Si asigna a un usuario el rol de Registros de auditoría o Registros de auditoría de solo lectura en la página de **permisos** del Centro de seguridad y cumplimiento, no podrán buscar en el registro de auditoría. Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
+  > Si asigna a un usuario el rol de Registros de auditoría o Registros de auditoría de solo lectura en la página de **Permisos** del Centro de cumplimiento de Microsoft 365, no podrán buscar en el registro de auditoría. Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
 
 - Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de la organización. La cantidad de tiempo que se retiene un registro de auditoría (y que se puede buscar en el registro de auditoría) depende de la suscripción a Office 365 o Microsoft 365 Enterprise y, específicamente, del tipo de licencia que se ha asignado a usuarios específicos.
 
@@ -75,7 +75,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   - Para los usuarios que tengan asignadas otras licencias de Office 365 o Microsoft 365 (que no sean E5), los registros de auditoría se conservarán durante 90 días. Para obtener una lista de las suscripciones de Office 365 y Microsoft 365 que admiten el registro de auditoría unificado, consulte [la descripción del servicio del centro de seguridad y cumplimiento](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que los eventos de auditoría del buzón de algunos usuarios no se encuentren en búsquedas de registro de auditoría en el Centro de seguridad y cumplimiento a través de la API de Actividad de administración de Office 365. Para obtener más información, vea [Más información sobre el registro de auditoría del buzón de correo](enable-mailbox-auditing.md#more-information).
+    > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que los eventos de auditoría del buzón de algunos usuarios no se encuentren en búsquedas de registro de auditoría en el Centro de cumplimiento de Microsoft 365 o a través de la API de Actividad de administración de Office 365. Para obtener más información, vea [Más información sobre el registro de auditoría del buzón de correo](enable-mailbox-auditing.md#more-information).
 
 - Si desea desactivar la búsqueda en el registro de auditoría de su organización, puede ejecutar el comando siguiente en el PowerShell remoto conectado a su organización de Exchange Online:
 
@@ -91,7 +91,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
   Para obtener más información, consulte[Desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
-- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog**. Eso significa que puede usar este cmdlet para buscar en el registro de auditoría en lugar de usar la página de **Búsqueda de registros de auditoría** del Centro de seguridad y cumplimiento. Tiene que ejecutar este cmdlet en el PowerShell remoto conectado a su organización de Exchange en línea. Para obtener más información, consulte[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog**. Eso significa que puede usar este cmdlet para buscar en el registro de auditoría en lugar de usar la página de **Búsqueda en el registro de auditoría** del Centro de cumplimiento de Microsoft 365. Tiene que ejecutar este cmdlet en el PowerShell remoto conectado a su organización de Exchange en línea. Para obtener más información, consulte[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog** a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" [exportar, configurar y ver el registro de auditoría registros](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -118,7 +118,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   |Microsoft Teams|![Marca de verificación](../media/checkmark.png)||
   |PowerApps||![Marca de verificación](../media/checkmark.png)|
   |Power BI|![Marca de verificación](../media/checkmark.png)||
-  |Centro de seguridad y cumplimiento|![Marca de verificación](../media/checkmark.png)||
+  |Centro de cumplimiento de Microsoft 365|![Marca de verificación](../media/checkmark.png)||
   |Etiquetas de confidencialidad||![Marca de verificación](../media/checkmark.png)|
   |SharePoint en línea y OneDrive para Empresas|![Marca de verificación](../media/checkmark.png)||
   |Workplace Analytics|![Marca de verificación](../media/checkmark.png)||
@@ -132,7 +132,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 ## <a name="search-the-audit-log"></a>Búsquedas en el registro de auditoría
 
-Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
+Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 365.
 
 [Paso 1: Ejecute una búsqueda de registros de auditoría](#step-1-run-an-audit-log-search)
 
@@ -144,48 +144,42 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
 ### <a name="step-1-run-an-audit-log-search"></a>Paso 1: Ejecute una búsqueda de registros de auditoría
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
 
     > [!TIP]
-    > Use una sesión de exploración privada (que no sea periódica) para obtener acceso al centro de cumplimiento de seguridad &, ya que esto evita que se puedan usar las credenciales con las que ha iniciado sesión actualmente. Para abrir una sesión de Exploración de InPrivate en Internet Explorer o Microsoft Edge, solo tiene que presionar CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana de incógnito), presione CTRL + MAYÚS + N.
+    > Use una sesión de exploración privada (que no sea una sesión regular) para obtener acceso al Centro de cumplimiento de Microsoft 365, ya que esto evita que se puedan usar las credenciales con las que ha iniciado sesión actualmente. Para abrir una sesión de Exploración de InPrivate en Internet Explorer o Microsoft Edge, solo tiene que presionar CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana de incógnito), presione CTRL + MAYÚS + N.
 
-2. Inicie sesión con su cuenta profesional o educativa.
+2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Auditoría**.
 
-3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **buscar**, y luego haga clic en **buscar el registro de auditoría**.
+    Aparecerá la página **Auditoría**.
 
-    La página del **registro de auditoría de búsqueda** será mostrada.
-
-    ![Configure los criterios y luego, haga clic en Buscar para ejecutar el informe.](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configure los criterios y luego, haga clic en Buscar para ejecutar el informe.](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
-    > Primeramente tiene que activar el registro de auditoría antes de que pueda ejecutar una búsqueda de registros de auditoría. Si se muestra el vínculo **Iniciar el registro de la actividad administrativa y de usuario**, haga clic en él para activar la auditoría. Si no ve este vínculo, la auditoría ya se ha activado para la organización.
+    > Si se muestra el vínculo **Iniciar el registro de la actividad administrativa y de usuario**, haga clic en él para activar la auditoría. Si no ve este vínculo, la auditoría está habilitada para la organización.
 
-4. Configurar los siguientes criterios de búsqueda: 
-
-   1. **Actividades**: haga clic en la lista desplegable para mostrar las actividades que puede buscar. Las actividades administrativas y de usuario se organizan en grupos de actividades relacionadas. Puede seleccionar actividades específicas o puede hacer clic en el nombre del grupo de actividades para seleccionar todas las actividades del grupo. También puede hacer clic en una actividad seleccionada para borrar la selección. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar **Mostrar los resultados de todas las actividades**, se mostrarán los resultados de todas las actividades que el usuario o el grupo de usuarios seleccionado ha realizado.
-
-      Se registran más de 100 actividades de usuario y de administrador en el registro de auditoría. Haga clic en la pestaña de **Actividades auditadas** en el tema de este artículo para ver las descripciones de todas las actividades en cada uno de los diferentes servicios.
+3. En la pestaña **Buscar**,configure los siguientes criterios de búsqueda:
 
    1. **Fecha de inicio** y **Fecha de finalización**: los últimos siete días se seleccionan de manera predeterminada. Seleccione un intervalo de fecha y hora para mostrar los eventos que han sucedido en ese período. La fecha y la hora se muestran en hora local. El intervalo máximo de fecha que puede especificar es 90 días. Se muestra un error si el intervalo de fecha seleccionado es superior a 90 días.
 
-      > [!TIP]
-      > Si está usando el intervalo de fecha máximo de 90 días, seleccione la hora actual para la **Fecha de inicio**. De otro modo, recibirá un error que dice que la fecha de inicio es anterior a la fecha de finalización. Si ha activado la auditoría en los últimos 90 días, el intervalo máximo de fecha no puede comenzar antes de la fecha en la que se ha activado la auditoría.
+    > [!TIP]
+    > Si está usando el intervalo de fecha máximo de 90 días, seleccione la hora actual para la **Fecha de inicio**. De otro modo, recibirá un error que dice que la fecha de inicio es anterior a la fecha de finalización. Si ha activado la auditoría en los últimos 90 días, el intervalo máximo de fecha no puede comenzar antes de la fecha en la que se ha activado la auditoría.
 
-   1. **Usuarios**: haga clic en este cuadro y, luego, seleccione uno o más usuarios para mostrarles los resultados de búsqueda. Las entradas del registro de auditoría de la actividad seleccionada realizada por los usuarios que selecciona en este cuadro, se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y cuentas de servicio) de su organización.
+   2. **Actividades**: haga clic en la lista desplegable para mostrar las actividades que puede buscar. Las actividades administrativas y de usuario se organizan en grupos de actividades relacionadas. Puede seleccionar actividades específicas o puede hacer clic en el nombre del grupo de actividades para seleccionar todas las actividades del grupo. También puede hacer clic en una actividad seleccionada para borrar la selección. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar **Mostrar los resultados de todas las actividades**, se mostrarán los resultados de todas las actividades que el usuario o el grupo de usuarios seleccionado ha realizado.<br/><br/>Se registran más de 100 actividades de usuario y de administrador en el registro de auditoría. Haga clic en la pestaña de **Actividades auditadas** en el tema de este artículo para ver las descripciones de todas las actividades en cada uno de los diferentes servicios.
 
-   1. **Archivo, carpeta o sitio**: escriba algunos o todos los nombres de carpeta o de archivo para buscar las actividades relacionadas con el archivo de la carpeta que contengan la palabra clave especifica. También puede especificar una dirección URL de un archivo o carpeta. Si usa una dirección URL, asegúrese de escribir la dirección URL completa, o si escribe solo una parte de esta, de no incluir espacios ni caracteres especiales.
+   3. **Usuarios**: haga clic en este cuadro y, luego, seleccione uno o más usuarios para mostrarles los resultados de búsqueda. Las entradas del registro de auditoría de la actividad seleccionada realizada por los usuarios que selecciona en este cuadro, se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y cuentas de servicio) de su organización.
 
-      Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización.
+   4. **Archivo, carpeta o sitio**: escriba algunos o todos los nombres de carpeta o de archivo para buscar las actividades relacionadas con el archivo de la carpeta que contengan la palabra clave especifica. También puede especificar una dirección URL de un archivo o carpeta. Si usa una dirección URL, asegúrese de escribir la dirección URL completa, o si escribe solo una parte de esta, de no incluir espacios ni caracteres especiales.<br/><br/>Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización.
 
-      > [!TIP]
-      >
-      > - Si busca todas las actividades relacionadas con un **sitio**, añada el símbolo comodín (\*) detrás de la dirección URL para devolver todas las entradas para ese sitio; por ejemplo, `"https://contoso-my.sharepoint.com/personal*"`.
-      >
-      > - Si está buscando todas las actividades relacionadas con un **archivo**, agregue el símbolo comodín (\*) antes del nombre de archivo para devolver todas las entradas para ese archivo; por ejemplo,`"*Customer_Profitability_Sample.csv"`.
+    > [!TIP]
+    >
+    > - Si busca todas las actividades relacionadas con un **sitio**, añada el símbolo comodín (\*) detrás de la dirección URL para devolver todas las entradas para ese sitio; por ejemplo, `"https://contoso-my.sharepoint.com/personal*"`.
+    >
+    > - Si está buscando todas las actividades relacionadas con un **archivo**, agregue el símbolo comodín (\*) antes del nombre de archivo para devolver todas las entradas para ese archivo; por ejemplo,`"*Customer_Profitability_Sample.csv"`.
 
-5. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
+4. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
 
-   Los resultados de búsqueda se cargan y, después de unos minutos, se muestran en **Resultados**. Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. En el **panel resultados** se mostrará un máximo de 5 000 eventos en incrementos de 150 eventos. Si hay más de 5 000 eventos que cumplen los criterios de búsqueda, se muestran los 5 000 eventos más recientes.
+   Los resultados de la búsqueda se cargan y, después de unos minutos, se muestran en una nueva página. Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. Se mostrará un máximo de 5 000 eventos en incrementos de 150 eventos. Si hay más de 5 000 eventos que cumplen los criterios de búsqueda, se muestran los 5 000 eventos más recientes.
 
    ![El número de resultados se muestra cuando haya terminado la búsqueda](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -626,7 +620,7 @@ En la tabla siguiente se enumeran los eventos que se producen de las tareas de a
 |Se ha agregado el administrador de ubicación geográfica|GeoAdminAdded|Un administrador global o de SharePoint agregó un usuario como administrador geográfico de una ubicación.|
 |Usuario permitido para crear grupos|AllowGroupCreationSet|El administrador de sitios o el propietario agrega un nivel de permisos a un sitio que permite que un usuario al que se le ha asignado ese permiso cree un grupo para ese sitio.|
 |Desplazamiento geográfico de sitio cancelado|SiteGeoMoveCancelled|Un administrador global o de SharePoint canceló correctamente un desplazamiento geográfica de un sitio de SharePoint o de OneDrive. La funcionalidad multigeográfica permite que una organización disponga de varias geografías de centros de datos de Microsoft, denominadas geoáreas. Para obtener más información, consulte [Capacidades multigeográficas en OneDrive y SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
-|Normativa de uso compartido cambiada|SharingPolicyChanged|Un administrador global o de SharePoint cambió una normativa de uso compartido de SharePoint mediante el Portal de administración de Microsoft 365, el Portal de administración de SharePoint, o la Consola de administración en línea de SharePoint. Se registrará cualquier cambio en la configuración de la directiva de uso compartido de su organización. La normativa cambiada se identifica en el campo **ModifiedProperties** en las propiedades detalladas del registro de eventos.|
+|Normativa de uso compartido cambiada|SharingPolicyChanged|Un administrador global o de SharePoint cambió una directiva de uso compartido de SharePoint mediante el Centro de administración de Microsoft 365, el Centro de administración de SharePoint o el Shell de SharePoint Online Management. Se registrará cualquier cambio en la configuración de la directiva de uso compartido de su organización. La normativa cambiada se identifica en el campo **ModifiedProperties** en las propiedades detalladas del registro de eventos.|
 |Directiva de acceso del dispositivo cambiada|DeviceAccessPolicyChanged|Un administrador global o de SharePoint cambió la directiva de dispositivos no administrados para su organización. Esta directiva controla el acceso a SharePoint, OneDrive y Microsoft 365 desde dispositivos que no se han unido a su organización. La configuración de esta directiva requiere una suscripción de Enterprise Mobility + Security. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices).|
 |Agente de usuario exento cambiado|CustomizeExemptUsers|El administrador global o de SharePoint ha personalizado la lista de agentes de usuario exentos en el Centro de administración de SharePoint. Puede especificar qué agentes de usuario están exentos de recibir una página web completa para indexar. Esto significa que cuando un agente de usuario que ha especificado como exento encuentra un formulario de InfoPath, el formulario se devolverá como un archivo XML en lugar de como una página web completa. Esto acelera la indexación de formularios de InfoPath.|
 |Directiva de acceso de red cambiada|NetworkAccessPolicyChanged|Un administrador global o de SharePoint cambió la normativa de acceso basado en la ubicación (también denominada un límite de red de confianza) en el Centro de administración SharePoint o mediante el PowerShell de SharePoint en línea. Este tipo de controles de normativa tienen acceso a recursos de SharePoint y OneDrive de la organización en función de los intervalos de direcciones IP que especifique. Para obtener más información, consulte [Controlar el acceso a datos de SharePoint en línea y OneDrive en función de las ubicaciones de red](/sharepoint/control-access-based-on-network-location).|
@@ -868,7 +862,7 @@ En la siguiente tabla, se enumeran las actividades de usuario y de administrador
 
 ### <a name="microsoft-power-automate-activities"></a>Actividades en Microsoft Power Automate 
 
-Puede buscar el registro de auditoría para actividades en Power Automate (antes llamado Microsoft Flow). Entre estas actividades se incluyen la creación, edición y eliminación de flujos, y cambios en los permisos de flujo. Para obtener información sobre las auditorías de las actividades en Power Automate, consulte el blog [Eventos de auditoría de Microsoft Flow ahora disponibles en el centro de cumplimiento y seguridad ](https://flow.microsoft.com/blog/security-and-compliance-center).
+Puede buscar el registro de auditoría para actividades en Power Automate (antes llamado Microsoft Flow). Entre estas actividades se incluyen la creación, edición y eliminación de flujos, y cambios en los permisos de flujo. Para obtener información sobre las auditorías de las actividades en Power Automate, consulte el blog [Eventos de auditoría de Microsoft Flow ahora disponibles en el Centro de cumplimiento de Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-power-apps-activities"></a>Actividades en Microsoft Power Apps
 
@@ -1071,7 +1065,7 @@ Vea la sección[Actividades auditadas](#audited-activities) de este artículo pa
 
 **¿Cuánto tiempo tarda un registro de auditoría en disponible después de que se produzca un evento?**
 
-Los datos más auditados están disponibles un máximo de 30 minutos pero puede tomar 24 horas después de que se produzca el evento para el registro de auditoría correspondiente para ser mostrado los resultados de búsqueda. Consulte la tabla de la sección [Requisitos para realizar búsquedas en el registro de auditoría](#requirements-to-search-the-audit-log) de este artículo, donde se muestra el tiempo que tardan en estar disponibles los eventos de los diferentes servicios.
+Los datos más auditados están disponibles un máximo de 30 minutos pero puede tomar 24 horas después de que se produzca el evento para el registro de auditoría correspondiente para ser mostrado los resultados de búsqueda. Consulte la tabla de la sección [Antes de realizar búsquedas en el registro de auditoría](#before-you-search-the-audit-log) de este artículo, donde se muestra el tiempo que tardan en estar disponibles los eventos de los diferentes servicios.
 
 **¿Durante cuánto tiempo se conservan los registros de auditoría?**
 
@@ -1087,7 +1081,7 @@ No. Estas son las dos únicas formas de obtener datos del servicio de auditoria.
 
 **¿Necesito habilitar individualmente la auditoría en cada servicio en el que deseo capturar registros de auditoría?**
 
-En la mayoría de los servicios, la auditoría se habilita de forma predeterminada tras activarla inicialmente para la organización (como se describe en la sección [Requisitos para realizar búsquedas en el registro de auditoría](#requirements-to-search-the-audit-log) de este artículo).
+En la mayoría de los servicios, la auditoría se habilita de forma predeterminada tras activarla inicialmente para la organización (como se describe en la sección [Antes de realizar búsquedas en el registro de auditoría](#before-you-search-the-audit-log) de este artículo).
 
 **¿El servicio de auditoría admite la con la desduplicación de registros?**
 
