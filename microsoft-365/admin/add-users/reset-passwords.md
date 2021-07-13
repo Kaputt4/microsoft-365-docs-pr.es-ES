@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta Microsoft 365 administrador para restablecer las contraseñas de los usuarios en Microsoft 365 suscripción para empresas.
-ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635575"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394284"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -126,4 +127,4 @@ Lea el artículo [He olvidado el nombre de usuario o la contraseña de la cuenta
 [Restablecer contraseñas](../add-users/reset-passwords.md) (artículo)\
 [Establecer la contraseña de un usuario individual para que nunca expire](set-password-to-never-expire.md) (artículo)\
 [Establecer la directiva de expiración de contraseña para su organización](../manage/set-password-expiration-policy.md) (artículo)\
-[Microsoft 365 vídeos de aprendizaje para empresas](../../business-video/index.yml) (página de vínculos)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](../../business-video/index.yml) (página de vínculo)

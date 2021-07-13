@@ -18,15 +18,16 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Aprenda a comprobar qué suscripciones tiene su organización yendo a la página Sus productos.
 ms.date: 01/21/2021
-ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706303"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394224"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
@@ -41,7 +42,7 @@ Si eres administrador, puedes comprobar qué suscripciones tiene tu organizació
 
 ## <a name="related-content"></a>Contenido relacionado
   
-[Suscripciones y facturación](../../commerce/index.yml) (vínculos)\
+[Suscripciones y facturación](../../commerce/index.yml) (página de vínculos)\
 [Vea su factura o recibo](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)\
 [Pagar por la suscripción](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artículo)\
 [Cambiar las direcciones de facturación](../../commerce/billing-and-payments/change-your-billing-addresses.md) (artículo)

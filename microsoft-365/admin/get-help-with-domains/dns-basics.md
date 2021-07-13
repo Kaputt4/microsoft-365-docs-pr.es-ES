@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: El sistema de nombres de dominio asigna los nombres de host del equipo a las direcciones IP, comprender los conceptos básicos de DNS y registrador de dominios puede ayudarle a administrar los dominios.
-ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 68b9b82d52e9bb2c4105237f0a29e8137623138e
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635431"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393912"
 ---
 # <a name="dns-basics"></a>Conceptos básicos sobre DNS
 

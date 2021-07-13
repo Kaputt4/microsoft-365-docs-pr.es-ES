@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: 60a1f21e65df007e78077d8c3bb22161313c1073
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: bee35191e7e80313521891a1efc1780489902ae8
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759911"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394332"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Roles de administrador de Intune en el Centro de administración de Microsoft 365
 
-Su suscripción a Microsoft 365 u Office 365 incluye un conjunto de roles de administrador que puede asignar a los usuarios de su organización usando el Centro de administración de Microsoft 365. Cada rol de administrador se asigna a una función empresarial común y da permisos a los usuarios de su organización para realizar tareas específicas en los centros de administración.
+Su suscripción de Microsoft 365 u Office 365 incluye un conjunto de roles de administrador que puede asignar a los usuarios de su organización mediante el Centro de administración de Microsoft 365. Cada rol de administrador se asigna a funciones empresariales comunes y concede a los usuarios de su organización permisos para realizar tareas específicas en los centros de administración.
 
 El Centro de administración de Microsoft 365 le permite administrar algunos roles de Microsoft Intune. Sin embargo, estos roles son un subconjunto de los roles disponibles en el centro de administración de Intune. ¿Busca las descripciones detalladas de roles para Microsoft Intune? Consulte [Control de acceso basado en roles (RBAC) con Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
@@ -46,7 +47,7 @@ En el Centro de administración de Microsoft 365, puede ir a **Roles** y selecci
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administración delegada para Microsoft Partners
 
-Si está trabajando con un partner de Microsoft, puede asignarle roles de administrador. Por su parte, los partners pueden asignar roles de administrador a los usuarios en sus propias empresas o bien en la suya. Es posible que quiera que lo hagan si, por ejemplo, están configurando y administrando la organización online por usted.
+Si está trabajando con un Microsoft partner, puede asignarles roles de administrador. A su vez, pueden asignar a los usuarios de su empresa (o de la suya propia) roles de administrador. Es posible que quiera que lo hagan, por ejemplo, si están configurando y administrando su organización en línea por usted.
   
 Un partner puede asignar estos roles: 
   
@@ -56,10 +57,8 @@ Un partner puede asignar estos roles:
 
 Antes de que el partner pueda asignar estos roles a los usuarios, usted debe agregarlo como un administrador delegado a su cuenta. Este proceso puede iniciarlo un partner autorizado. El partner le envía un correo electrónico para preguntarle si quiere concederle permiso para actuar como administrador delegado. Para obtener instrucciones, consulte [Autorizar o quitar relaciones de partner](../misc/add-partner.md).
   
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Acerca de los roles de administración de Microsoft 365](about-admin-roles.md)
-
-[Asignar roles de administrador](assign-admin-roles.md)
-
-[Informes de actividad en el Centro de administración de Microsoft 365](../activity-reports/activity-reports.md)
+[Acerca de los roles de administrador en Microsoft 365](about-admin-roles.md) (artículo)\
+[Asignar roles de administrador](assign-admin-roles.md) (artículo)\
+[Informes de actividad del Centro de administración de Microsoft 365](../activity-reports/activity-reports.md) (artículo)

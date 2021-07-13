@@ -1,5 +1,5 @@
 ---
-title: Asignar roles de administrador al centro Microsoft 365 administración
+title: Asignar roles de administrador al Centro de administración de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -27,18 +28,18 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o varios usuarios de su empresa para que puedan realizar tareas específicas en el Centro de administración.
-ms.openlocfilehash: e53d1a414d081ddb74a1c4784adcd982b6194691
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 575d1d8c6b0ffce40877fb41d28df82c24e84d04
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683216"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393780"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
 Si eres la persona que compró tu suscripción a Microsoft Business, eres el administrador global. Esto significa que tienes un control ilimitado sobre los productos de tus suscripciones y puedes acceder a la mayoría de los datos.
 
-Para obtener más información, vea [Sobre los roles de administrador](about-admin-roles.md).
+Para más información, vea [Sobre los roles de administrador](about-admin-roles.md).
 
 Cuando agregas nuevos usuarios, si no les asignas un  rol de administrador, entonces están en el rol de usuario y no tienen privilegios de administrador en ninguno de los centros de administración de Microsoft. Pero si necesitas ayuda para hacer las cosas, puedes asignar un rol de administrador a un usuario. Por ejemplo, si necesita que alguien le ayude a restablecer las contraseñas, no debe asignarles el rol de administrador global, debe asignarles el rol de administrador de contraseñas. Tener demasiados administradores globales, con acceso ilimitado a sus datos y empresa en línea, es un riesgo de seguridad.
 

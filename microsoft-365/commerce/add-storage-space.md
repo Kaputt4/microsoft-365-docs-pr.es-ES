@@ -19,15 +19,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: MET150
 description: Agregue almacenamiento de archivos en su Microsoft 365 suscripción. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint Online y OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: dee7debfbd2b624f3bf82bd573c81e7e1373b31e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 28716c9506f31fd32f821cfff90bd8eaa19e6495
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256824"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394658"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
 
@@ -38,7 +39,7 @@ Si empieza a quedarse sin espacio de almacenamiento en las colecciones de sitios
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Ver almacenamiento disponible
 
@@ -76,7 +77,7 @@ Si ya compró almacenamiento de archivos adicional a través del complemento **O
 3. En la página detalles del producto, en la **sección Complementos,** seleccione **Administrar complementos**.
 4. En el **panel Administrar complementos,** en la **lista Complementos,** elija **Office 365 Extra File Storage**.
 5. En el **cuadro de texto** Cantidad, escriba el número de GB de espacio de almacenamiento que desea para la suscripción.
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>¿Mi plan me permite optar a Office 365 Extra File Storage?
 

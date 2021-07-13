@@ -13,17 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: Obtenga información sobre cómo agregar un miembro a un grupo, quitar miembro del grupo y administrar el estado del propietario del grupo en el centro de administración Microsoft 365 grupo.
-ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Obtenga información sobre cómo agregar un miembro a un grupo, quitar miembro del grupo y administrar el estado del propietario del grupo en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: 7eaa74a53ac5f27d801d1cf16c9af035c63c68b1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635611"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393768"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Agregar o quitar miembros de Microsoft 365 grupos mediante el Centro de administración
 
@@ -42,7 +44,7 @@ En Microsoft 365, los miembros del grupo suelen crear sus propios grupos, agrega
 
 4. Busque o seleccione el nombre del miembro que desee agregar.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>Agregar un grupo a un miembro en el Centro de administración
 
@@ -54,7 +56,7 @@ En Microsoft 365, los miembros del grupo suelen crear sus propios grupos, agrega
 
 4. Busque o seleccione el nombre del grupo que desea agregar.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>Quitar un miembro de un grupo en el Centro de administración
 

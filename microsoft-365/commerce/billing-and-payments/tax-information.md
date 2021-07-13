@@ -19,13 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 5c472615846ba6460bc829bc0157c6c6da940292
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9429a4fc5adc3447a0238a3e8aa84ab39585fc50
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332023"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394526"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -140,7 +141,7 @@ Si la facturación la realiza Microsoft Corporation[(](view-your-bill-or-invoice
 2. En la pestaña **Productos**, seleccione la suscripción que quiera actualizar.
 3. En la página detalles de la suscripción, en la **sección Dirección de uso del** servicio, seleccione Editar dirección de uso del **servicio**.
 4. En el panel Editar dirección  de uso **del** servicio, en el cuadro Número de IVA, escriba el identificador de IVA, incluido el prefijo, y sin espacios.
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ## <a name="how-taxes-are-calculated"></a>Cómo se calculan los impuestos
 
@@ -150,7 +151,7 @@ Por ejemplo:
 
 >*(precio unitario X tasa de impuestos) X quantity = total sales tax*
 
-O bien,
+o:
 
 >($1,29 X 0,095) X 100 = $12,25
 

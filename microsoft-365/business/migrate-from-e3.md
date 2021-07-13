@@ -1,5 +1,5 @@
 ---
-title: Migrar a Microsoft 365 Empresa desde Office 365 E3
+title: Migrar a Microsoft 365 empresa desde Office 365 E3
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,16 +18,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 description: Si tiene una suscripción Office 365 E3 pero no tiene más de 300 empleados, considere la posibilidad de cambiar a Microsoft 365 Empresa Premium.
-ms.openlocfilehash: d139d07c946ff3efed3db3a73eb5e1a4ae66c190
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: c1b4da07b3bf28cce1a48424ab45cde6ea54d367
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623613"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394179"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 Empresa Premium
 
@@ -45,24 +46,24 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Empresa Premium y 
 | Office aplicaciones<sup>1</sup>    | Aplicaciones de Microsoft 365 para negocios    | Aplicaciones de Microsoft 365 para empresas |
 | **Aplicaciones de productividad en la nube**        | | |
 | Exchange Online y Outlook    | Límite de almacenamiento de 50 GB por buzón y límite Archivado de Exchange Online    | Límite de almacenamiento de 100 GB por buzón y límite Archivado de Exchange Online |
-| Teams    | ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) | 
+| Teams    | ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Se incluye con Office 365 E3](../media/check-mark.png) | 
 | OneDrive para la Empresa    | Límite de almacenamiento de 1 TB por usuario    | Ilimitado | 
-| Yammer, SharePoint Online, Planner, Stream    | ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) | 
-| StaffHub    | ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) |
+| Yammer, SharePoint Online, Planner, Stream    | ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Se incluye con Office 365 E3](../media/check-mark.png) | 
+| StaffHub    | ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Se incluye con Office 365 E3](../media/check-mark.png) |
 | **Protección contra amenazas**        | | |
 | Defender para Office 365 Plan 1 | ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    | No se incluye, pero se puede agregar en |
 | **Administración de identidades**        | | |
 | Restablecimiento de contraseñas de autoservicio para cuentas Azure Active Directory híbridas (Azure AD), autenticación multifactor (MFA) de Azure AD, acceso condicional, escritura de contraseña para identidades locales|     ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    |  |
 | **Administración de aplicaciones y dispositivos**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    |  |
-| Activación en equipos compartidos|     ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png)| 
+| Activación en equipos compartidos|     ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Se incluye con Office 365 E3](../media/check-mark.png)| 
 | Derechos de actualización Windows 10 Pro de licencias de Win 7/8.1 Pro licencias|     ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)    ||
 | **Protección de la información**        | | |
-|Prevención de pérdida de datos de Office 365|    ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)|![Incluido con Office 365 E3](../media/check-mark.png)|
-|Azure Information Protection Plan 1, BitLocker cumplimiento|![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)||
+|Prevención de pérdida de datos de Office 365|    ![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)|![Se incluye con Office 365 E3](../media/check-mark.png)|
+|Plan 1 de Azure Information Protection, cumplimiento de BitLocker|![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)||
 |Plan 1 de Azure Information Protection, etiquetas de confidencialidad|![Se incluye con Microsoft 365 Empresa Premium](../media/check-mark.png)||
 |**Licencia de acceso de cliente (derechos CAL)**|||
-|Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Incluido con Office 365 E3](../media/check-mark.png)|
+|Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Se incluye con Office 365 E3](../media/check-mark.png)|
 
 <sup>1</sup> La versión Microsoft 365 Empresa Premium de las aplicaciones de Office no incluye la activación por volumen a través de la directiva de grupo, telemetría de aplicaciones, controles de actualización, comparación e consulta de hojas de cálculo o inteligencia empresarial.
 
@@ -71,7 +72,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Empresa Premium y 
 Para migrar la suscripción, consulta [Cambiar planes manualmente](../commerce/subscriptions/change-plans-manually.md) para obtener instrucciones si quieres mover solo unas cuantas personas a Microsoft 365 Empresa Premium. También puede actualizar [todos automáticamente](../commerce/subscriptions/upgrade-to-different-plan.md)o trabajar con un partner para mover la suscripción y las licencias de E3 a una Microsoft 365 Empresa Premium suscripción.
 En las secciones siguientes se describen los cambios que debe realizar, si los hay, y lo que puede hacer después de la migración.
 
-### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 Configuración y datos de suscripción de E3
+### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 configuración de suscripción y datos
 No es necesario realizar ningún cambio en la suscripción o los datos actuales antes de migrar, lo que incluye:
 
 - Configuración de suscripción, como registros DNS y nombres de dominio.
@@ -86,7 +87,7 @@ Si el Windows aún no está en la actualización Windows Pro Creator, actualíct
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>Configurar directivas para proteger los archivos y dispositivos de usuario
 
 > [!NOTE]
-> Si configuras Office 365 y dispositivos MDM, estos dispositivos  aparecerán en la página Dispositivos del centro Microsoft 365 administración. Las directivas que configures aparecerán en la lista de directivas clásicas en el [portal de Intune.](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
+> Si configuras Office 365 y dispositivos MDM, estos dispositivos  aparecerán en la página Dispositivos de la Centro de administración de Microsoft 365. Las directivas que configures aparecerán en la lista de directivas clásicas en el [portal de Intune.](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
 
 Después de asignar licencias a Microsoft 365 Empresa Premium, puede empezar a proteger los dispositivos y archivos de los usuarios.
 

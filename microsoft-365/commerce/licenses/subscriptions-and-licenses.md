@@ -18,15 +18,16 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: Las aplicaciones y servicios que reciba dependen del producto Microsoft 365 que haya comprado, como Aplicaciones Microsoft 365 para negocios.
 ms.date: 07/01/2020
-ms.openlocfilehash: 817ea454bf471fdc2f175658af9030925d29189a
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 69996a97b582ec3323a31efbe4cb70fe4a61e19d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779884"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394430"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprender las suscripciones y licencias en Microsoft 365 para empresas
 
@@ -55,7 +56,7 @@ En la tabla siguiente, se muestra una lista con lo que sucede automáticamente a
   
 |**Si la suscripción tiene este servicio**|**Esto sucede automáticamente**|
 |:-----|:-----|
-|Exchange Online  <br/> |Se crea un buzón para el usuario. <br/> Para obtener información sobre el SLA para que esta tarea se complete, vea ["Setting up..." mensajes en el centro Microsoft 365 administración.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
+|Exchange Online  <br/> |Se crea un buzón para el usuario. <br/> Para obtener información sobre el SLA para que esta tarea se complete, vea ["Setting up..." mensajes de la Centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.  <br/> |
 |Skype Empresarial Online  <br/> |La persona tiene acceso a las características asociadas con la licencia.  <br/> |
 |Aplicaciones de Microsoft 365 para empresas  <br/> |La persona puede descargar Office aplicaciones en hasta cinco Mac o PC, cinco tabletas y cinco smartphones.  <br/> |

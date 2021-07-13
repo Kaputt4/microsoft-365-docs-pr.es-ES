@@ -17,15 +17,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Obtén información sobre cómo actualizar las direcciones de facturación o la dirección de correo electrónico usada para recibir notificaciones de facturación Microsoft 365 para empresas.
 ms.date: 04/07/2021
-ms.openlocfilehash: afc23134f85995a5e8d7db0fb956635ceb6ea629
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683612"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394646"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
@@ -161,7 +162,7 @@ También puede cambiar la dirección de correo electrónico alternativa de otros
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)
+[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
 [Comprender la factura o factura](understand-your-invoice2.md) (artículo)\
 [Pagar por la suscripción](pay-for-your-subscription.md) (artículo)\
 [Suscripciones y facturación: Ayuda de administrador](../index.yml) (página de vínculos)

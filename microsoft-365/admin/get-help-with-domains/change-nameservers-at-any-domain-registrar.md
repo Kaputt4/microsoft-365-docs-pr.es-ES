@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que los servicios como correo electrónico y Skype Empresarial Online usen su propio nombre de dominio.
-ms.openlocfilehash: 1a65ca52b85c2cf2e4fc30e2a71e5930ae7a9a4d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c2de2d8b75aaf50bd1d19d3fd3b507fd476d4847
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287130"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393936"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores de nombres para configurar Microsoft 365 con cualquier registrador de dominio
 
@@ -183,7 +184,7 @@ Además, puede crear un registro CNAME para ayudar a los clientes a encontrar su
 3. En el **cuadro Nombre de host o Alias,** escriba **www**.
 4. En el **cuadro Dirección de puntos** a, escriba el nombre de dominio completo (FQDN) del sitio web. Por ejemplo, **contoso.5om**.
 5. Si desea cambiar la configuración de TTL para el registro, seleccione un nuevo período de tiempo en la lista desplegable **TTL.** De lo contrario, continúe con el paso 6.
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
 Después de actualizar los registros del servidor de nombres para que apunten a Microsoft, se completa la configuración del dominio. El correo electrónico se enruta a Microsoft y el tráfico a la dirección de su sitio web continúa en el host del sitio web actual.'
 

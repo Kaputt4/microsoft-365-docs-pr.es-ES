@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 77c1d8a2d2fe0288e7fbe8534ef76760baeac0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007170"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394682"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 
@@ -60,7 +62,7 @@ El Microsoft 365 de información general contiene los siguientes informes. Puede
 
 - **Colaboración** &ndash; Vea cómo los usuarios de su organización usan OneDrive y SharePoint para almacenar documentos y colaborar entre sí, y cómo estas tendencias evolucionan mes a mes. También puede ver cuántos documentos se comparten interna o externamente y cuántos sitios de SharePoint o cuentas de OneDrive se usan activamente, desglosados por propietarios y otros colaboradores.
 
-- **Almacenamiento** &ndash; Use este informe para realizar un seguimiento del almacenamiento en la nube de buzones, OneDrive y SharePoint web.
+- **Storage** &ndash; Use este informe para realizar un seguimiento del almacenamiento en la nube de buzones, OneDrive y SharePoint web.
 
 - **Movilidad** &ndash; Realice un seguimiento de los clientes y dispositivos que las personas usan para conectarse al correo electrónico, Teams, Skype o Yammer.
 

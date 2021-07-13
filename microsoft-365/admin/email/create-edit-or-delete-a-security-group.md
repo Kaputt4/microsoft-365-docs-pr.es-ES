@@ -1,5 +1,5 @@
 ---
-title: Crear, editar o eliminar un grupo de seguridad en el Centro Microsoft 365 administración
+title: Crear, editar o eliminar un grupo de seguridad en el Centro de administración de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,21 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Aprenda a crear, editar o eliminar un grupo de seguridad.
-ms.openlocfilehash: 7887a6371287ebef3a91cc1a37f2ed696df1948d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 525acc45b293563f58bb9aa12c40bec1438cb055
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624006"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393960"
 ---
-# <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Crear, editar o eliminar un grupo de seguridad en el Centro Microsoft 365 administración
+# <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Crear, editar o eliminar un grupo de seguridad en el Centro de administración de Microsoft 365
 
 En la página Microsoft 365 **grupos,** puede crear grupos de cuentas de usuario que pueda usar para asignar los mismos permisos en SharePoint Online y CRM Online. Por ejemplo, un administrador puede crear un grupo de seguridad para conceder a un determinado grupo de personas acceso a un SharePoint web. Solo los administradores de administración global y de usuario tienen permisos para crear, editar o eliminar grupos de seguridad; para obtener más información acerca de los roles de administrador, vea [Assigning admin roles](../add-users/assign-admin-roles.md). 
   
@@ -40,7 +42,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
 
 ### <a name="add-a-security-group"></a>Agregar un grupo de seguridad
 
-1. En el centro Microsoft 365 administración, vaya a la página **Grupos.**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
+1. En el Centro de administración de Microsoft 365, vaya a la **página Grupos.**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
   
 2. En la **página Grupos,** seleccione **Agregar un grupo**.
     
@@ -102,6 +104,6 @@ Sí. Pero si desea usar grupos para correo electrónico y colaboración, le reco
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Crear un grupo en el Centro Microsoft 365 administración](../create-groups/create-groups.md) (artículo)\
+[Crear un grupo en el Centro de administración de Microsoft 365](../create-groups/create-groups.md) (artículo)\
 [Explicar los Microsoft 365 a los usuarios](../create-groups/explain-groups-knowledge-worker.md) (artículo)\
-[Administrar un grupo en el centro Microsoft 365 administración](../create-groups/manage-groups.md) (artículo)
+[Administrar un grupo en el Centro de administración de Microsoft 365](../create-groups/manage-groups.md) (artículo)

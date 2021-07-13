@@ -15,16 +15,17 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
-description: Cada miembro del equipo necesita una cuenta de usuario para poder iniciar sesión y tener acceso a Microsoft 365 para empresas. Obtenga información sobre cómo agregar usuarios y asignar licencias.
+description: Cada miembro del equipo necesita una cuenta de usuario para poder iniciar sesión y acceder a Microsoft 365 para empresas. Obtenga información sobre cómo agregar usuarios y asignar licencias.
 ms.date: 07/01/2020
-ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aaba152e73fc7284f54a9f307783a66fb055a55c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536003"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394104"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 

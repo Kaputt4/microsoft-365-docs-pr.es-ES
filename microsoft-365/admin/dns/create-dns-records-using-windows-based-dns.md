@@ -14,19 +14,21 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en dns basado Windows para Microsoft.
-ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 86deaac256c0d657ad9604be91349b113e9c0ded
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706122"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393732"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft mediante Windows DNS basado en dns
 
@@ -49,7 +51,7 @@ Agregue un registro MX para que el correo electrónico de su dominio se envíe a
 - En la fila MX de la Exchange Online de la página Agregar registros DNS en Microsoft, copie el valor que aparece en Puntos para dirección. Usará este valor en el registro que está creando en esta tarea. 
 - En la página Administrador dns del dominio, vaya a **Exchanger de** correo de  >  **acción (MX).** Para encontrar esta página para el dominio, vea [Buscar los registros DNS en Windows DNS basado en el dominio](#find-your-dns-records-in-windows-based-dns).  
 - En el **cuadro de diálogo Nuevo registro de** recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores: 
-    - Nombre de host:  
+    - Nombre de host: 
     - @Address: pegue el valor points to address que acaba de copiar de Microsoft aquí.  
     - Pref: 
 - Seleccione **Guardar cambios**.

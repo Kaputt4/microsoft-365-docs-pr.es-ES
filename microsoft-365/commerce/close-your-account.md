@@ -17,15 +17,16 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
+- AdminTemplateSet
 search.appverid: MET150
 description: Al cerrar su cuenta con Microsoft, se elimina toda la información relacionada con su cuenta, incluidas las licencias, los usuarios y los datos de usuario.
 ms.date: 04/02/2021
-ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624330"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394466"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -91,6 +92,6 @@ Después de completar este paso final, la cuenta con Microsoft se cierra y elimi
 
 ## <a name="related-content"></a>Contenido relacionado 
 
-[Comprender la factura o factura de Microsoft 365 para empresas](./billing-and-payments/understand-your-invoice2.md) (artículo)\
+[Conozca su factura o recibo por la compra de Microsoft 365 para Empresas](./billing-and-payments/understand-your-invoice2.md) (artículo)\
 [Cancelar la suscripción](./subscriptions/cancel-your-subscription.md) (artículo)
 

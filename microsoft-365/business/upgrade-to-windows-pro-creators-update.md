@@ -21,17 +21,18 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Descubra formas en las que puede actualizar sus Windows a Windows 10 Pro para usar características de seguridad y redes empresariales más avanzadas.
-ms.openlocfilehash: 39a7224ea585f8e1fb5052cb6fbb62329bd15656
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e87a9bc4ebbb4d5437e2174dc9f41c4700346ffd
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227523"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394159"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Actualizar Windows dispositivos a Windows 10 Pro
 
@@ -55,7 +56,7 @@ Para actualizar a Windows 10 Pro, tiene varias opciones. Puede:
 > [!NOTE]
 > Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción de Microsoft 365 para empresas te da derecho a una actualización de Windows Pro 10.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para completar la configuración de Windows 10, consulta Configurar Windows [dispositivos para Microsoft 365 usuarios empresariales.](set-up-windows-devices.md)
 

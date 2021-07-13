@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Obtenga información sobre cómo agregar invitados a un grupo Microsoft 365, ver usuarios invitados y usar PowerShell para controlar el acceso de invitados.
-ms.openlocfilehash: 00a6353f02ae7f3675961c3ee2ee31e3715652f2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 41a42a0b4fc76b71892f758519db56f4c1adc897
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635767"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394068"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Administrar el acceso de invitado en Microsoft 365 grupos
 
@@ -45,7 +47,7 @@ El acceso de invitado en grupos suele usarse como parte de un escenario más amp
 
 ## <a name="manage-groups-guest-access"></a>Administrar el acceso de invitado de grupos
 
-Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo en el centro Microsoft 365 administración.
+Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo en el Centro de administración de Microsoft 365.
 
 1. En el Centro de administración, vaya a **Mostrar** toda la configuración Configuración org y, en la pestaña \>  \>  Servicios, seleccione **Microsoft 365 grupos**  .
   
@@ -53,7 +55,7 @@ Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Agregar invitados a un grupo Microsoft 365 desde el Centro de administración
 
-Si el invitado ya existe en el directorio, puede agregarlos a los grupos desde el centro Microsoft 365 administración. (Los grupos con pertenencia dinámica deben [administrarse Azure Active Directory](/azure/active-directory/enterprise-users/groups-create-rule).)
+Si el invitado ya existe en el directorio, puede agregarlos a los grupos desde el Centro de administración de Microsoft 365. (Los grupos con pertenencia dinámica deben [administrarse Azure Active Directory](/azure/active-directory/enterprise-users/groups-create-rule).)
   
 1. En el Centro de administración, vaya a la **página Grupos.**  >  
   
@@ -61,7 +63,7 @@ Si el invitado ya existe en el directorio, puede agregarlos a los grupos desde e
   
 4. Seleccione **Agregar miembros** y elija el nombre del invitado que desea agregar.
     
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 Si desea agregar un invitado al directorio directamente, puede agregar Azure Active Directory usuarios de colaboración [B2B en Azure Portal](/azure/active-directory/b2b/add-users-administrator).
 
@@ -70,6 +72,6 @@ Si desea editar cualquiera de la información de un invitado, puede agregar o ac
 ## <a name="related-content"></a>Contenido relacionado
 
 [Bloquear usuarios invitados de un grupo](../../solutions/per-group-guest-access.md) específico (artículo)\
-[Administrar la pertenencia a grupos en el Microsoft 365 de administración](add-or-remove-members-from-groups.md) (artículo)\
+[Administrar la pertenencia a grupos en el Centro de administración de Microsoft 365](add-or-remove-members-from-groups.md) (artículo)\
 [Azure Active Directory de acceso](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (artículo)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (artículo)

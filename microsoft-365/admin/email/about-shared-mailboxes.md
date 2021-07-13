@@ -17,17 +17,18 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan acceder al mismo buzón. Obtenga información sobre lo que debe saber antes de crear un buzón compartido.
-ms.openlocfilehash: 601636f03bee93224025d286b7a74fa0f24782fb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a251967670e19d8f387e3fc4f724a06ef674a2b4
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635539"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394044"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 

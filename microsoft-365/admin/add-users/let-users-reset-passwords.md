@@ -19,18 +19,19 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo puede establecer una directiva para permitir a los usuarios restablecer sus propias contraseñas mediante la herramienta de restablecimiento de contraseñas de autoservicio.
-ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ac6d7f16cb35cec757340a94c262c3541bea927a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634273"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394320"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -42,7 +43,7 @@ Como administrador de Microsoft 365, puede permitir que [](https://go.microsoft.
 
 - Usa Azure. Recibirá esta característica automáticamente en Azure **gratis** cuando realice estos pasos. No le costará nada activar el autoservicio de restablecimiento de contraseñas si no usa otras características de Azure.
 
-- **Si usa un Active Directory local,** no se aplican los dos puntos anteriores. En su lugar, puede configurar esto, pero requiere una suscripción de pago **a Azure AD Premium**.
+- **Si usa un Active Directory local,** no se aplican los dos puntos anteriores. En su lugar, puede configurar esto, pero requiere una suscripción de pago **para Azure AD Premium**.
 
 Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../../business-video/admin-center-overview.md)
 
@@ -76,4 +77,4 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 [Establecer la directiva de expiración de contraseña para su organización](../manage/set-password-expiration-policy.md) (artículo)\
 [Establecer la contraseña de un usuario individual para que nunca expire](set-password-to-never-expire.md) (artículo)\
-[Microsoft 365 Empresa vídeos de aprendizaje](../../business-video/index.yml) (página de vínculos)
+[Microsoft 365 de aprendizaje para empresas](../../business-video/index.yml) (página de vínculos)

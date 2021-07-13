@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Obtenga información sobre cómo habilitar o deshabilitar la característica Desorden para todos los usuarios o específicos de la organización, mediante Exchange PowerShell. '
-ms.openlocfilehash: 059fb8e626a0b05e0224fc89931453aaae43be0b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706121"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393984"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurar desorden para su organización
 
@@ -55,12 +57,12 @@ Desactivar Clutter para un solo usuario llamado Allie Bellew:
 
 Si usa PowerShell para crear masivamente los usuarios, deberá ejecutar [Set-Clutter](/powershell/module/exchange/set-clutter) en el buzón de cada usuario para administrar Clutter. 
   
-## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>¿Cuándo aparece el modificador de encendido y apagado Desorden a los usuarios Outlook en la web?
+## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>¿Cuándo se mostrará a los usuarios el modificador de encendido y apagado Clutter en Outlook en la Web?
 <a name="bkmk_onoff"> </a>
 
 Como administrador, puede volver a habilitar Clutter con Exchange PowerShell. Una vez hecho esto, la Bandeja de entrada centrada se desactivará y El desorden volverá a estar activo. 
   
- **Si usas Outlook en la web con una Microsoft 365 Empresa Premium suscripción:**
+ **Si estás usando Outlook en la Web con una Microsoft 365 Empresa Premium suscripción:**
   
 - Si el usuario tiene actualmente clutter habilitado: 
     

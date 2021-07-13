@@ -17,15 +17,16 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Obtenga información acerca de cómo renovar la mayoría de la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
 ms.date: 05/04/2021
-ms.openlocfilehash: 43dd467d83375f74c7650262c40021ba631e3c72
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ee39c45529c4dbfa54ff0a12fcfe19d29bdef025
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594042"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394380"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 

@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Los roles de administrador se asignan a funciones empresariales y proporcionan permisos para realizar tareas específicas en el Centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: 4e2b1db207a2a590855f7fb2d0bf2019d4b57ea5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 20ba46c94f94267df7117d4baf020bbdc21cad7c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924568"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394392"
 ---
 # <a name="get-started-with-the-roles-page"></a>Introducción a la página roles
 

@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Obtenga información sobre cómo comprobar la propiedad del dominio y el correo electrónico para asumir un inquilino no administrado creado por un registro de usuario de autoservicio en Microsoft 365.
-ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f6378c708e0533c2da2d38bfe5eb8009515423c7
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635991"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393852"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Realizar una toma de administración interna
 

@@ -11,7 +11,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe Microsoft 365 grupos para conocer los grupos y sus actividades.
-ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: ed598633205aab83920abef79e766ef16e248f43
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939235"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394140"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Informes en el Centro de administración: Microsoft 365 grupos
 
@@ -46,11 +48,11 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre del grupo  <br/> |Nombre del grupo.  <br/> |
-|Eliminada  <br/> |Número de grupos eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
+|Deleted  <br/> |Número de grupos eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
 |Propietario del grupo  <br/> |Nombre del propietario del grupo.  <br/> |
 |Fecha de última actividad (UTC)  <br/> |La última fecha en la que el grupo recibió un mensaje. Es la última fecha en que hubo actividad en una conversación de correo electrónico, Yammer o el sitio.  <br/> |
 |Tipo  <br/> |Tipo de grupo. Puede ser un grupo público o privado.  <br/> |
@@ -63,11 +65,13 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Mensajes en Yammer (publicado)  <br/> |Número de mensajes publicados en el grupo Yammer durante el período de informes.  <br/> |
 |Mensajes en Yammer (lectura)  <br/> |Número de conversaciones leídas en el grupo Yammer durante el período de informes.  <br/> |
 |Mensajes en Yammer (me gusta)  <br/> |El número de mensajes que le gustaron en el grupo Yammer durante el período de informes.  <br/> |
-|Members  <br/> |El número de miembros del grupo.  <br/> |
+|Miembros  <br/> |El número de miembros del grupo.  <br/> |
 |Miembros externos |El número de usuarios externos del grupo.|
 |||
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 informes en](activity-reports.md) el Centro de administración (artículo) Informes en el Centro de seguridad [& cumplimiento](../../compliance/reports-in-security-and-compliance.md) (artículo) informes Microsoft 365 en el centro de administración [- Usuarios](../../admin/activity-reports/active-users-ww.md) activos (artículo)
+[Microsoft 365 informes en el Centro de administración](activity-reports.md) (artículo)\
+[Informes en el Centro de & seguridad](../../compliance/reports-in-security-and-compliance.md) (artículo)\
+[Microsoft 365 informes en el centro de administración : Usuarios activos](../../admin/activity-reports/active-users-ww.md) (artículo)
 

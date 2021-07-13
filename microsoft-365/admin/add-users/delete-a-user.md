@@ -16,16 +16,17 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario y qué hacer con el correo electrónico del usuario y OneDrive contenido y si desea conservar la licencia del producto.
-ms.openlocfilehash: 43a57a69ce0d810af2b029f49c15d32d75a4dc33
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 81dc71c6734340146e1dd13bcd59696eed5be202
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683144"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394356"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -47,7 +48,7 @@ Si es un administrador global, al eliminar un usuario también puede dar a otro 
 
 Antes de empezar, piense en lo que desea hacer con el correo electrónico del usuario y el contenido OneDrive, y si desea mantener la licencia o dejar de pagar por ella.
   
-|Elemento | Descripción |
+|Item | Descripción |
 |:-----|:-----|
 |Licencias de productos  <br/> |Puede quitar la licencia del usuario y quitarla de sus suscripciones para dejar de pagar por esa licencia. Si selecciona esta opción, la licencia se quitará automáticamente de las suscripciones.  <br/><br/> **No puede quitar la licencia si** la compró a través de un partner o una licencia por volumen. Si estás pagando un plan anual o si estás en medio de un ciclo de facturación, no podrás quitar la licencia de la suscripción hasta que se complete el compromiso.  <br/> |
 |OneDrive contenido  <br/> |Si el usuario guardó sus archivos en OneDrive, puede proporcionar a otro usuario acceso a estos archivos.  <br/><br/> Tendrás que mover los archivos que quieras conservar dentro del período de retención que se establece para los OneDrive archivos. **De forma predeterminada, el período de retención es de 30 días.** Si no mueve los archivos dentro del período de retención después de eliminar el usuario, el contenido OneDrive se eliminará permanentemente. Para aumentar el número de días que conserva los archivos OneDrive para cuentas eliminadas, vea [Set the OneDrive retention for deleted users](/onedrive/set-retention).  <br/><br/> **¡Importante!** Si el usuario eliminado usó un equipo personal para descargar archivos de SharePoint y OneDrive, no hay forma de borrar los archivos que almacenaban en su equipo. Seguirán teniendo acceso a los archivos que se sincronizaron desde OneDrive.           |
@@ -131,7 +132,7 @@ Reducir el número de licencias es un paso independiente que solo puede realizar
 
 4. En el **panel Quitar licencias,** en Nueva cantidad **,** en el cuadro **Licencias** totales, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 100 licencias y desea quitar cinco de ellas, escriba 95.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 Más adelante, cuando sigas los pasos para agregar otra persona a tu empresa, se te pedirá que compres una licencia al mismo tiempo, con un solo paso.
 

@@ -17,17 +17,18 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Agregue nuevos empleados a Microsoft 365 para empresas para correo electrónico, Skype y Office aplicaciones.
-ms.openlocfilehash: 2dbdb9cb931b95241b0bd3599fdae154ab72ea24
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 24b31e22423fe7f0d51da5a71c4c14b54f1525f0
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706195"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394116"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Agregar un nuevo empleado a Microsoft 365
 
@@ -76,7 +77,7 @@ Comparta con ellos la [configuración rápida employee Microsoft 365](../../busi
   
 Y esta es una referencia rápida para ayudarles a empezar:
   
-|**Task**|**Buscar los detalles**|
+|**Tarea**|**Buscar los detalles**|
 |:-----|:-----|
 |Iniciar sesión en Office  <br/> |Vaya a [https://www.office.com](https://www.office.com) , seleccione Iniciar **sesión** y, a continuación, escriba su id. de usuario y contraseña.  <br/> |
 |Instala Office aplicaciones en el equipo.  <br/><br/> |Al iniciar sesión, la página principal tiene un vínculo para descargar e instalar aplicaciones como Word y Outlook.  Seleccione **Instalar Office**.         Para obtener instrucciones, [vea How to install Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).  <br/> |

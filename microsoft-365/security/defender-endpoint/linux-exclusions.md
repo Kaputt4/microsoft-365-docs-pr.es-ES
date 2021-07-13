@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: b55572509e9837f2858f96b01a13fbf259b2b770
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346419"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393792"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurar y validar exclusiones para Microsoft Defender para Endpoint en Linux
 
@@ -55,7 +55,7 @@ Exclusión | Definición | Ejemplos
 ---|---|---
 Extensión de archivo | Todos los archivos con la extensión, en cualquier lugar del dispositivo | `.test`
 Archivo | Un archivo específico identificado por la ruta de acceso completa | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Carpeta | Todos los archivos de la carpeta especificada (recursivamente) | `/var/log/`<br/>`/var/*/`
+Folder | Todos los archivos de la carpeta especificada (recursivamente) | `/var/log/`<br/>`/var/*/`
 Proceso | Un proceso específico (especificado por la ruta de acceso completa o el nombre de archivo) y todos los archivos abiertos por él | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
@@ -114,6 +114,18 @@ Ejemplos:
     Folder exclusion configured successfully
     ```
 
+
+- Agregue una exclusión para una segunda carpeta:
+
+    ```bash
+    mdatp exclusion folder add --path /var/log/
+    mdatp exclusion folder add --path /other/folder
+    ```
+    ```Output
+    Folder exclusion configured successfully
+    ```
+
+
 - Agregue una exclusión para una carpeta con un comodín en ella:
 
     ```bash
@@ -137,6 +149,17 @@ Ejemplos:
 
     ```bash
     mdatp exclusion process add --name cat
+    ```
+    ```Output    
+    Process exclusion configured successfully
+    ```
+
+
+- Agregar una exclusión para un segundo proceso:
+
+    ```bash
+    mdatp exclusion process add --name cat
+    mdatp exclusion process add --name dog
     ```
     ```Output    
     Process exclusion configured successfully

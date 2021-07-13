@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Un grupo eliminado se conserva durante 30 días y aún puede restaurar el grupo. Después de 30 días, el grupo y su contenido se eliminan permanentemente.
-ms.openlocfilehash: 2c20c2bd3ce91331e7160132047dbf3ecd79c4b8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ddc3da57c05b7c5f54c10a0cc429c9a3f24b859c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635743"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394056"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Restaurar un grupo Microsoft 365 eliminado
 
@@ -56,7 +58,7 @@ Cuando se restaura un grupo, se restaura el siguiente contenido:
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-Si es el propietario de un grupo Microsoft 365, puede restaurarlo usted mismo en Outlook web siguiendo estos pasos:
+Si es el propietario de un grupo Microsoft 365, puede restaurarlo usted mismo en Outlook en la Web siga estos pasos:
 
 1. En la [página Grupos eliminados,](https://outlook.office.com/people/group/deleted)seleccione la opción **Administrar grupos** en **el** nodo Grupos y, a continuación, **elija Eliminado**.
 
@@ -66,7 +68,7 @@ Si el grupo eliminado no aparece aquí, póngase en contacto con un administrado
 
 # <a name="admin-center"></a>[Centro de administración](#tab/admin-center)
 
-Si es un administrador global o un administrador de grupos, puede restaurar un grupo eliminado en el centro Microsoft 365 administración:
+Si es un administrador global o un administrador de grupos, puede restaurar un grupo eliminado en el Centro de administración de Microsoft 365:
 
 1. Vaya al [Centro de administración](https://admin.microsoft.com).
 2. Expanda **Grupos** y, a continuación, haga clic **en Grupos eliminados.**

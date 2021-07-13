@@ -19,18 +19,19 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Obtenga información acerca de cómo configurar su suscripción de Microsoft Empresa Premium, Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Básico, Aplicaciones de Microsoft 365 para negocios u Office 365 Educación.
-ms.openlocfilehash: 44e15e71be85eabdf6aa80bdb8d4b5dc4cd3b8d7
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 139235926d6e7ad740b16169fa6ec08fd55b74be
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635623"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393804"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Configurar Microsoft 365 para empresas
 

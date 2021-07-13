@@ -18,15 +18,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 ms.date: 04/02/2021
-ms.openlocfilehash: e66efe12e05d2aaf286b689c955f17c8401144f1
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537336"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394634"
 ---
 # <a name="understand-billing-profiles"></a>Entender los perfiles de facturación
 
@@ -34,16 +35,16 @@ Un perfil de facturación contiene un método de pago, información de facturaci
 
 > [!NOTE]
 >
-> Los perfiles de facturación no están disponibles para los clientes  que compren productos y servicios de Microsoft.com o en la página Servicios de compra del centro de administración Microsoft 365 administración.
+> Los perfiles de facturación no están disponibles para los clientes que compren productos y servicios de Microsoft.com o en la página **Servicios** de compra del Centro de administración de Microsoft 365.
 
 ## <a name="what-are-billing-profile-roles"></a>¿Qué son los roles de perfil de facturación?
 
 Los roles de los perfiles de facturación tienen permisos para controlar las compras y ver y administrar facturas. Asigne estos roles a los usuarios que realicen un seguimiento, organicen y paguen facturas. Por ejemplo, los miembros del equipo de compras de la organización.
 
-| Función                         | Descripción                                                                      |
+| Role                         | Descripción                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | Propietario del perfil de facturación        | Administrar todo para un perfil de facturación                                          |
-| Colaborador de perfiles de facturación  | Administrar todo excepto los permisos en un perfil de facturación                        |
+| Colaborador del perfil de facturación  | Administrar todo excepto los permisos en un perfil de facturación                        |
 | Lector de perfiles de facturación       | Vista de solo lectura de todo en un perfil de facturación                                |
 | Administrador de facturas              | Ver y pagar facturas y tiene una vista de solo lectura de todo en un perfil de facturación  |
 
@@ -73,7 +74,7 @@ Cada perfil de facturación incluye la siguiente información:
 
 Si tiene preguntas o necesita ayuda con los cargos de Azure, cree una solicitud de soporte <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">técnico con soporte técnico de Azure</a>.
 
-Si tiene preguntas o necesita ayuda con su perfil de facturación en Microsoft 365 centro de administración, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
+Si tiene preguntas o necesita ayuda con su perfil de facturación en Centro de administración de Microsoft 365, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

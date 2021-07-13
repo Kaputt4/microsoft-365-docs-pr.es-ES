@@ -16,27 +16,28 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a crear y eliminar Microsoft 365 grupos, agregar y quitar miembros del grupo y personalizar el funcionamiento del grupo.
-ms.openlocfilehash: b8cbd194825ef114fa8e4ce999355248a61e7830
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1afa8d38d05ca0383f56cdba795f26739457347c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635587"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393756"
 ---
-# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Crear un grupo en el Centro Microsoft 365 administración
+# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Crear un grupo en el Centro de administración de Microsoft 365
   
-Aunque los usuarios pueden crear un grupo Microsoft 365 desde Outlook u otras aplicaciones, como administrador, es posible que deba crear o eliminar grupos, agregar o quitar miembros y personalizar su forma de trabajar. El Microsoft 365 de administración es el lugar para hacerlo. 
+Aunque los usuarios pueden crear un grupo Microsoft 365 desde Outlook u otras aplicaciones, como administrador, es posible que deba crear o eliminar grupos, agregar o quitar miembros y personalizar su forma de trabajar. El Centro de administración de Microsoft 365 es el lugar para hacerlo. 
 
 > [!TIP]
-> Microsoft 365 los Yammer conectados deben crearse en Yammer, pero se pueden administrar en el centro de administración de Microsoft 365 como otros Microsoft 365 grupos. Para obtener más información, [vea Yammer y Microsoft 365 grupos](/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
+> Microsoft 365 los Yammer conectados deben crearse en Yammer, pero se pueden administrar en el Centro de administración de Microsoft 365 como otros Microsoft 365 grupos. Para obtener más información, [vea Yammer y Microsoft 365 grupos](/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
 
-## <a name="create-a-microsoft-365-group"></a>Crear un Microsoft 365 grupo
+## <a name="create-a-microsoft-365-group"></a>Crear un Grupo de Microsoft 365 
 
 1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en **Grupos**.
 
@@ -76,7 +77,7 @@ El grupo aparecerá en Outlook con miembros asignados a él.
 
 El propietario del grupo puede eliminar los correos electrónicos de la bandeja de entrada del grupo, independientemente de que sea el autor inicial.
   
-Un miembro puede eliminar una conversación de correo electrónico de la bandeja de entrada grupo si la inició y solo con Outlook en la web (haga clic con el botón secundario en el correo electrónico y, a continuación, elija **Eliminar**). No puede hacerlo desde la aplicación de Outlook (Outlook 2016).
+Un miembro puede eliminar una conversación de correo electrónico de la bandeja de entrada grupo si la inició y solo con Outlook en la Web (haga clic con el botón secundario en el correo electrónico y, a continuación, **elija Eliminar**). No puede hacerlo desde la aplicación de Outlook (Outlook 2016).
   
 Cuando se elimina un correo electrónico del buzón de grupo, no se elimina de ninguno de los buzones personales de los miembros del grupo.
 

@@ -24,17 +24,18 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que incluye Office aplicaciones y protección avanzada contra amenazas cibernéticas.
-ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 96b915924013c29c8f30dd22c85ed389cb66a772
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287635"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394199"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Información general sobre Microsoft 365 Empresa Premium
 
@@ -105,7 +106,7 @@ Los dispositivos **están protegidos** por las siguientes medidas:
 
 Para ver la lista completa de las características de seguridad, consulte [Características de seguridad de Microsoft 365 Empresa Premium](security-features.md). Una vez que haya [configurado Microsoft 365 Empresa Premium](set-up.md), vea cómo [aumentar la protección contra amenazas](increase-threat-protection.md) y cómo [configurar las características de cumplimiento](set-up-compliance.md) para empezar a usar las características de seguridad que no se incluyen como parte de la configuración guiada. Lea también las [10 formas principales de proteger los planes de Office 365 y Microsoft 365 Empresa Premium](/office365/admin/security-and-compliance/secure-your-business-data) para obtener información sobre cómo configurar la protección contra hackers y delincuentes cibernéticos.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene un partner, ese partner obtendrá Microsoft 365 Empresa Premium: [Obtener Microsoft 365 Empresa Premium desde el Centro de partners de Microsoft](get-microsoft-365-business.md).
 
