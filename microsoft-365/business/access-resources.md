@@ -1,5 +1,5 @@
 ---
-title: Acceder a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Empresa
+title: Obtener acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Empresa
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -16,17 +16,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Obtén información sobre cómo obtener acceso a recursos locales como aplicaciones de línea de negocio, recursos compartidos de archivos e impresoras desde Azure Active Directory dispositivo Windows 10 usuario.
-ms.openlocfilehash: 72b3c5ae538cad24fc12e25717dedccb2fdc9017
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 71d60e0187c917dffb7390afcedf22dc73f44008
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843330"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393467"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Obtenga acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Empresa Premium
 
@@ -57,7 +58,7 @@ Si su organización no está lista para implementar en la configuración de disp
 
 Si el Windows al que se unió Azure-AD estaba previamente unido a un dominio o en un grupo de trabajo, tenga en cuenta las siguientes limitaciones:
 
-- Cuando un dispositivo se une a Azure AD, crea un nuevo usuario sin hacer referencia a un perfil existente. Los perfiles deben migrarse manualmente. Un perfil de usuario contiene información como favoritos, archivos locales, configuración del explorador y configuración del menú Inicio. El mejor enfoque es buscar una herramienta de terceros para asignar los archivos y la configuración existentes al nuevo perfil.
+- Cuando un dispositivo se une a Azure AD, crea un nuevo usuario sin hacer referencia a un perfil existente. Los perfiles deben migrarse manualmente. Un perfil de usuario contiene información como favoritos, archivos locales, configuración del explorador y menú Inicio configuración. El mejor enfoque es buscar una herramienta de terceros para asignar los archivos y la configuración existentes al nuevo perfil.
 
 - Si el dispositivo usa objetos de directiva de grupo (GPO), es posible que algunos GPO no tengan un [proveedor](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) de servicios de configuración (CSP) comparable en Intune. Ejecute la [herramienta MMAT para](https://www.microsoft.com/download/details.aspx?id=45520) buscar LOSP comparables para los GPO existentes.
 

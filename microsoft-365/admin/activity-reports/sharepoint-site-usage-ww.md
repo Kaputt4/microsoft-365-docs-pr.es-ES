@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
 description: Obtenga el SharePoint de uso del sitio para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: 62bf01c867b7e9217d25e655af6633a72773caa1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d2c549dbb5ab456dddedf0422cd8aebafab1987d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241873"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393336"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Informes en el Centro de administración: SharePoint de sitio
 
@@ -48,11 +50,11 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Dirección URL del sitio  <br/> |La dirección URL completa del sitio. <br/> |
-|Eliminada  <br/> |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  <br/> |
+|Deleted  <br/> |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  <br/> |
 |Propietario del sitio  <br/> |Nombre de usuario del propietario principal del sitio.   <br/> |
 |Nombre principal del propietario del sitio  <br/> |La dirección de correo electrónico del propietario del sitio. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La fecha de la última vez que se detectó la actividad del archivo o una página se visualizó en el sitio.  <br/> |

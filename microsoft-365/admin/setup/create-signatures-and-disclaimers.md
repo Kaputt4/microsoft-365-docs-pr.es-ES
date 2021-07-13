@@ -19,18 +19,19 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Administrar firmas de correo electrónico, incluidas declinaciones de responsabilidades legales o declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ba96d0d5782fc675a044980db0a0ac1d4ce6caaf
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635659"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393564"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 

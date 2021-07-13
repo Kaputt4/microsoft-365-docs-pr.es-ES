@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,16 +25,16 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información acerca de cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 480e09e42ea53cc78cd738a6e0650feae7a9f8c8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7ee6f3a7fc01fa998e3b984683ddad1402fe5587
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635955"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393624"
 ---
-# <a name="set-up-multi-factor-authentication"></a>Configurar la autenticación multifactor
+# <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 
-Basándose en su conocimiento de la [autenticación multifactor (MFA) y su compatibilidad con Microsoft 365](multi-factor-authentication-microsoft-365.md), es hora de configurarla e implementarla en la organización.
+En función de su comprensión de [autenticación multifactor (MFA) y su compatibilidad con Microsoft 365](multi-factor-authentication-microsoft-365.md), es el momento de configurarla e implementarla en su organización.
 
 > [!IMPORTANT]
 > Si ha comprado la suscripción o la versión de evaluación después del 21 de octubre de 2019, y se le solicita la MFA al iniciar sesión, los [valores predeterminados de seguridad](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) se han habilitado automáticamente para la suscripción.
@@ -42,7 +44,7 @@ Basándose en su conocimiento de la [autenticación multifactor (MFA) y su compa
 - Para poder gestionar la MFA, debe ser administrador global. Para obtener más información, vea [Sobre los roles de administrador](../add-users/about-admin-roles.md).
 - Si tiene activada la MFA heredada por usuario, [Desactive la MFA heredada por usuario](#turn-off-legacy-per-user-mfa).
 - Si tiene clientes de Office 2013 en dispositivos Windows, [habilite la autenticación moderna para clientes de Office 2013](./enable-modern-authentication.md).
-- Configuración avanzada: si tiene servicios de directorio de terceros con Servicios de federación de Active Directory (AD FS), configure el Servidor Azure MFA. Para más información, consulte [Escenarios avanzados con la autenticación multifactor de Microsoft Azure AD y soluciones VPN de terceros](/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
+- Configuración avanzada: si tiene servicios de directorio de terceros con Servicios de federación de Active Directory (AD FS), configure el Servidor Azure MFA. Consulte [escenarios avanzados con Azure AD Multifactor Authentication y soluciones VPN de terceros](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) para obtener más información.
 
 ## <a name="turn-security-defaults-on-or-off"></a>Activar o desactivar las opciones predeterminadas de seguridad
 
@@ -104,5 +106,5 @@ Si ha activado previamente la MFA por usuario, debe desactivarla antes de habili
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Activar la autenticación multifactor](../../business-video/turn-on-mfa.md) (vídeo)\
-[Activar la autenticación multifactor para su teléfono (Vídeo)](../../business-video/set-up-mfa.md)
+[Active la autenticación multifactor](../../business-video/turn-on-mfa.md) (vídeo)\
+[Active la autenticación multifactor para su teléfono (Vídeo)](../../business-video/set-up-mfa.md)

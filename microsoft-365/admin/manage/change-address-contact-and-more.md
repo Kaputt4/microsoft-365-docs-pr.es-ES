@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Realice cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
 ms.date: 03/30/2021
-ms.openlocfilehash: 2646d2d83c72caa8a56f6658f005812f087101cb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 80f48c001cb4796e60f9ec3cc20c03ac231eccab
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635407"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393696"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
   
@@ -51,7 +52,7 @@ A continuación se proporciona una explicación de cada campo.
 
 |**Field**  |**Descripción**  |
 |---------|---------|
-|Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Yammer navegación: en Yammer, la navegación izquierda usa el nombre de la organización como el nombre de la red Yammer principal.  <br/> OneDrive de sincronización: el nombre de la organización se muestra en el Explorador de archivos en Windows y Finder en Mac, las rutas de acceso de archivo, el centro de actividades de OneDrive, la información sobre herramientas del icono de la nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no la actualiza para los clientes configurados. <br/> MS Teams: Conmutador de organización en Teams muestra el nombre de la organización <br/>  |
+|Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Yammer navegación: en Yammer, la navegación izquierda usa el nombre de la organización como el nombre de la red Yammer principal.  <br/> Sincronización de OneDrive cliente: el nombre de la organización se muestra en explorador de archivos en Windows y Finder en Mac, las rutas de acceso de archivo, el centro de actividades de OneDrive, la información sobre herramientas del icono de la nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no la actualiza para los clientes configurados. <br/> MS Teams: Conmutador de organización en Teams muestra el nombre de la organización <br/>  |
 |Dirección, ciudad, estado o provincia, código postal  <br/>     | La dirección especificada aquí es lo que verá en la factura, en Sold To: The Sold To address on your bill is the same as your organization address on your profile page (see [Understand your bill or invoice for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
 |País o región  <br/>    | Esto es el país o la región donde la compañía tiene su sede central. El país o la región que se seleccione determina los servicios disponibles, los impuestos y la moneda de facturación del país o la región, y la ubicación del centro de datos más cercano (vea las [restricciones de licencia de Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>NOTA: Una vez seleccionado, no se puede cambiar el país o la región. Si desea cambiar la selección, deberá cancelar la suscripción y registrarse de nuevo. Para obtener ayuda con este proceso, [póngase en contacto con el soporte técnico](../../business-video/get-help-support.md).        |
 |Teléfono  <br/>     | Este es el número principal de la compañía. Por lo general, el número de la sede central de su empresa.  <br/>        |
@@ -62,7 +63,7 @@ A continuación se proporciona una explicación de cada campo.
 
 Como administrador, puedes cambiar la dirección de correo electrónico alternativa para restablecer las contraseñas.
 
-1. Vaya al Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administración.</a>
+1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
 2. En el encabezado, seleccione el icono de perfil y, a continuación, **seleccione Ver cuenta**.
 

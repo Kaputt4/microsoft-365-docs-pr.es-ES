@@ -11,20 +11,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365 y descubra cuántas licencias de productos se usan.
-ms.openlocfilehash: 8ea9feeb18cb1885023ec14f1ffb4d77b2775877
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365 y averiguar cuántas licencias de productos se usan.
+ms.openlocfilehash: d127ddccd4944279052c628cbee9cc37dd3c8358
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924376"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391368"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Evaluar el informe Microsoft 365 usuarios activos
 
@@ -65,4 +67,4 @@ Si su suscripción está operada por 21Vianet, no verá Yammer.
 
 
 
-Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **¿Cómo se ocultan los detalles** del nivel de usuario? en Informes de actividad en [el centro Microsoft 365 administración.](activity-reports.md)  
+Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **¿Cómo se ocultan los detalles del nivel de usuario?** en Informes de actividad [en el Centro de administración de Microsoft 365](activity-reports.md).  

@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar la autenticación multifactor, a veces también denominada autenticación en dos fases, en el teléfono.
-ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705659"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393480"
 ---
-# <a name="set-up-multi-factor-authentication-on-your-phone"></a>Configurar la autenticación multifactor en el teléfono
+# <a name="set-up-multifactor-authentication-on-your-phone"></a>Configurar la autenticación multifactor en el teléfono
 
-## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a>Watch: Configurar la autenticación multifactor con un dispositivo móvil
+## <a name="watch-set-up-multifactor-authentication-with-a-mobile-device"></a>Watch: Configurar la autenticación multifactor con un dispositivo móvil
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 

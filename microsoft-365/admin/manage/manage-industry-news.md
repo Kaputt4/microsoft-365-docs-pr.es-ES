@@ -15,16 +15,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Proporcione a los usuarios titulares de noticias actualizados sobre su sector e información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización.
-ms.openlocfilehash: 4282cb71bd5b2847528d651e0ab94b5fe966cedf
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: dedc39d9c82f66d64660f66be8e77ba954246e09
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650043"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392844"
 ---
 # <a name="manage-industry-news"></a>Administrar noticias del sector
 
-Para proporcionar a los usuarios titulares de noticias actualizados sobre el sector y la información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización. También puedes habilitar un correo electrónico de actualizaciones del sector diario y administrar la configuración de la página principal de Bing y Microsoft Edge nueva pestaña (a partir de la versión de Edge 87). 
+Para proporcionar a los usuarios titulares de noticias actualizados sobre el sector y la información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización. También puedes habilitar un correo electrónico de actualizaciones del sector diario y administrar la configuración de la página Bing página principal y Microsoft Edge nueva pestaña. 
 
 ## <a name="what-your-users-will-see"></a>Lo que verán los usuarios
 
@@ -44,7 +44,7 @@ También pueden ver noticias internas, de empresa y de sector o información de 
 
 Como administrador, controla la configuración de la fuente de noticias de su organización, incluida la industria seleccionada y la página principal de Bing, la página de pestaña nueva de Microsoft Edge (a partir de la versión de Edge 87) y las experiencias de correo electrónico. 
 
-1. En el centro Microsoft 365 administración, vaya **a Configuración** Configuración de la organización  >    >  **Noticias de**  >  [**servicios**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+1. En el Centro de administración de Microsoft 365, vaya **a Configuración** Configuración de la organización  >    >  **Servicios**  >  [**noticias**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
 1. En el panel **Noticias,** haga clic en la **pestaña General.**
 
@@ -54,13 +54,13 @@ Como administrador, controla la configuración de la fuente de noticias de su or
 
 1. Puede bloquear los artículos que contienen palabras clave en el **campo Excluir contenido.** Por ejemplo, para evitar que los artículos que contienen la palabra clave "bak" se muestren en la fuente de noticias, agregue la palabra clave "bak" en el **campo Excluir contenido.** Evite incluir términos generales (los, y, etc.); pueden impedir que el contenido relevante aparezca en las fuentes de noticias de la empresa. 
 
-1. Seleccione **Guardar**. Los cambios pueden tardar hasta 24 horas en aparecer. 
+1. Haga clic en **Guardar**. Los cambios pueden tardar hasta 24 horas en aparecer. 
 
 ## <a name="industry-updates-in-email"></a>Actualizaciones del sector en el correo electrónico 
 
 Puede enviar una actualización diaria de correo electrónico con noticias relevantes del sector a las bandejas de entrada de los usuarios. Para establecer actualizaciones diarias de correo electrónico para los usuarios: 
 
-1. En el centro Microsoft 365 administración, vaya **a Configuración** Configuración de la organización  >    >  **Noticias de**  >  [**servicios**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+1. En el Centro de administración de Microsoft 365, vaya **a Configuración** Configuración de la organización  >    >  **Servicios**  >  [**noticias**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
 1. En el panel **Noticias,** haga clic en la **pestaña Actualizaciones del** sector. 
 
@@ -72,7 +72,7 @@ Puede enviar una actualización diaria de correo electrónico con noticias relev
 
 Puede personalizar la página principal Bing para incluir noticias sobre su sector. 
 
-1. En el centro Microsoft 365 administración, vaya **a Configuración** Configuración de la organización  >    >  **Noticias de**  >  [**servicios**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+1. En el Centro de administración de Microsoft 365, vaya **a Configuración** Configuración de la organización  >    >  **Servicios**  >  [**noticias**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
 1. En **el** panel Noticias, haga clic en Bing **página principal** y seleccione Incluir en Bing **página principal**. 
 
@@ -81,7 +81,7 @@ Puede personalizar la página principal Bing para incluir noticias sobre su sect
 ## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge nueva pestaña 
 Cuando los usuarios inician sesión en Microsoft Edge (versión 87 o posterior) con una cuenta laboral o educativa válida, pueden ver noticias adaptadas a su organización.
 
-1. En el centro Microsoft 365 administración, vaya **a Configuración** Configuración de la organización  >    >  **Noticias de**  >  [servicios](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
+1. En el Centro de administración de Microsoft 365, vaya **a Configuración** Configuración de la organización  >    >  **Servicios**  >  [noticias](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. En el panel **Noticias,** haga **clic Microsoft Edge página nueva pestaña**.
 3. Seleccione **Permitir Office 365 contenido en la nueva página de pestaña**. Cuando se habilita, los usuarios pueden personalizar su nueva pestaña para mostrar información de Office 365, incluidos los archivos recomendados y recientes, junto con sitios SharePoint y otra información.
 4. Seleccione **Mostrar información de la empresa y noticias del sector en la página nueva pestaña**. Los artículos de noticias sobre su organización e industria aparecen para los usuarios que eligen ver artículos en su nueva pestaña.

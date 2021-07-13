@@ -16,18 +16,19 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Cómo proteger el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, incluidos ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8ee8e34ef984cb466f472e5503ad7cc14c181030
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924628"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393636"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
@@ -46,7 +47,7 @@ Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que s
 |7 |[Usar Office cifrado de mensajes](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Proteger contra archivos adjuntos y archivos malintencionados con Caja fuerte adjuntos](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[Proteger contra ataques de suplantación de identidad con Caja fuerte links](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[Proteger contra ataques de suplantación de identidad con Caja fuerte links](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../../campaigns/index.md). Esta guía fue desarrollada en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de empresas pequeñas de las amenazas cibernéticas por parte de hackers sofisticados.
 
@@ -152,9 +153,9 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiar estos valores.
 
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
-| Configuración | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
+| Setting | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla anti ransomware: advertir a los usuarios  <br/> |Regla anti ransomware: bloquear tipos de archivo  <br/> |
 |Aplique esta regla si . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |
@@ -188,9 +189,9 @@ Para crear una regla de transporte de correo:
 
 5. Aplique la configuración en la tabla siguiente. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiar estos valores.
 
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
-|Configuración|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
+|Setting|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
@@ -326,7 +327,7 @@ Para modificar la directiva predeterminada:
 
 3. En **Configuración** que se aplican al contenido excepto el correo electrónico , seleccione Office 365 **aplicaciones**, No realizar un seguimiento cuando los usuarios hacen clic en vínculos seguros y No permitir que los usuarios hagan clic a través de vínculos seguros **a** la dirección **URL original.**
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
@@ -334,7 +335,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
 2. Aplique la configuración que se muestra en la tabla siguiente.
 
-3. Seleccione **Guardar**.
+3. Haga clic en **Guardar**.
 
 |Configuración u opción|Valor recomendado|
 |---|---|

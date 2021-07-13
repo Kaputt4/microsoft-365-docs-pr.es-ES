@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Aprende a cambiar el tema predeterminado de la parte superior de la barra de navegación en Microsoft 365 y personalízalo para que coincida con el logotipo o color de tu empresa.
-ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 62a658929faaf130e85df5a2eb9637bf6a6c8a0a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227804"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393540"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el Microsoft 365 de la organización
 
@@ -74,7 +75,7 @@ Puede crear hasta cuatro temas de grupo adicionales.
 
 2. En **Grupos,** puede seleccionar hasta 5 grupos Microsoft 365 que puedan ver el tema de grupo, en lugar de usar el tema predeterminado. También puede impedir que los usuarios invaliden su tema y muestren el nombre para mostrar del usuario.
 
-3. Seleccione **Guardar**.
+3. Haga clic en **Guardar**.
 
 :::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Captura de pantalla: pestaña General que muestra el tema predeterminado para un grupo de usuarios de la organización":::
 
@@ -103,7 +104,7 @@ En la **página Colores,** puede establecer los colores predeterminados y elegir
 
 :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores predeterminados del tema para su organización":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mi organización ya tiene un tema para todos los empleados. ¿Cómo cambiará esto?
 

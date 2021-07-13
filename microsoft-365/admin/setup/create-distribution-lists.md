@@ -22,15 +22,16 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Cree grupos de distribución o listas en el centro de administración de Microsoft 365 para que pueda enviar correos electrónicos a un grupo sin escribir el nombre de cada destinatario.
-ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+- AdminTemplateSet
+description: Cree grupos de distribución o listas en el Centro de administración de Microsoft 365 para que pueda enviar correos electrónicos a un grupo sin escribir el nombre de cada destinatario.
+ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635671"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393576"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el centro Microsoft 365 administración
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el Centro de administración de Microsoft 365
   
 Se usa cuando se desea enviar correo electrónico a un grupo de personas sin tener que escribir el nombre de cada destinatario individual, los grupos de distribución (listas de distribución) se organizan por un tema de discusión determinado (como "Marketing") o por usuarios que comparten un trabajo común que requiere que se comuniquen con frecuencia. También proporcionan una forma de reenviar automáticamente el correo electrónico a varias direcciones de correo electrónico.
 
@@ -70,12 +71,12 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
     
 6. Para agregar usuarios a la lista de distribución, vea [Agregar un usuario o contacto a un grupo de distribución.](../email/add-user-or-contact-to-distribution-list.md)
     
-Consulte cómo usar el grupo en Outlook 2016 y Outlook en la web en Usar grupos de contactos (anteriormente listas de [distribución) en Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
+Consulte cómo usar el grupo en Outlook 2016 y Outlook en la Web en Usar grupos de contactos (anteriormente listas de [distribución) en Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
   
 Consulte Problemas [de grupo de distribución](/office365/troubleshoot/groups/distribution-list-issues) para obtener ayuda con problemas de listas de distribución. 
 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Configuración de correo electrónico del](../email/office-365-user-email-settings.md) usuario (artículo)\
-[Crear, editar o eliminar un grupo](../email/create-edit-or-delete-a-security-group.md) de seguridad en el centro Microsoft 365 administración (artículo)\
+[Crear, editar o eliminar un grupo de seguridad](../email/create-edit-or-delete-a-security-group.md) en el Centro de administración de Microsoft 365 (artículo)\
 [Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)

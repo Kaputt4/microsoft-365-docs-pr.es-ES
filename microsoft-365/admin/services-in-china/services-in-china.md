@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - GEU150
@@ -22,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información Office 365 operado por 21Vianet diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 75bf7c7a4d7e453fa2be711c7332878b8a8f1150
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c8d43c385f44434e9ed4832a094ea4909bf505a4
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924724"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393612"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -123,10 +125,10 @@ Para las organizaciones que ejecutan versiones anteriores o mixtas de Exchange S
 
 |**Versión de Exchange local**|**Exchange Versión del servidor híbrido**|**¿Se admite el Asistente para configuración híbrida?**|**Características híbridas compatibles**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | N/D  <br/> | Sí  <br/> | Todo  <br/> |
-| 2013 CU5  <br/> | N/D  <br/> | Sí  <br/> | Todo  <br/> |
-| 2013 SP1  <br/> | 2013 CU5  <br/> | Sí  <br/> | Todo  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | Sí  <br/> | Todo  <br/> |
+| 2016  <br/> | N/D  <br/> | Sí  <br/> | todas  <br/> |
+| 2013 CU5  <br/> | N/D  <br/> | Sí  <br/> | todas  <br/> |
+| 2013 SP1  <br/> | 2013 CU5  <br/> | Sí  <br/> | todas  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | Sí  <br/> | todas  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Sí  <br/> | Todos, excepto exhibición de documentos electrónicos local/archivado, acceso de OWA (vea la tabla siguiente)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Sí  <br/> | Solo libre/ocupado configurado manualmente  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | No  <br/> | Ninguno  <br/> |
@@ -197,7 +199,7 @@ Compartir Exchange datos de contacto en dispositivos móviles Apple con Apple iC
 |Integración del panel de investigación para Bing servicios  <br/> |No disponible.  <br/> |
 |Comprobador de accesibilidad  <br/> |No disponible.  <br/> |
 |Bloc de notas de clase  <br/> |No disponible.  <br/> |
-|Forms  <br/> |No disponible.  <br/> |
+|Formularios  <br/> |No disponible.  <br/> |
 |Lector envolvente  <br/> |No disponible.  <br/> |
 |Insertar imagen en línea  <br/> |No disponible.  <br/> |
 |Detalles de la reunión  <br/> |No disponible.  <br/> |

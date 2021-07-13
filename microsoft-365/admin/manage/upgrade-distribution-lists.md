@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Obtenga información sobre cómo actualizar una o varias listas de distribución Microsoft 365 grupos en Outlook y cómo usar PowerShell para actualizar varias listas de distribución simultáneamente.
-ms.openlocfilehash: d4686e7f2ec305194130b60fbacab24c9cf7f4e9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: aef797a2bf052fcc84c9220993c2e6706eae5f61
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698945"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391392"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Actualizar listas de distribución a Microsoft 365 grupos en Outlook
 
@@ -153,7 +155,6 @@ Solo puede actualizar listas de distribución sencillas y no anidadas administra
 |Grupos de seguridad  <br/> |No  <br/> |
 |Listas de distribución dinámica  <br/> |No  <br/> |
 |Listas de distribución que se convirtieron en **RoomLists**  <br/> |No  <br/> |
-|Listas de distribución **donde MemberJoinRestriction** y/o **MemberDepartRestriction** está **Cerrado**  <br/> |No  <br/> |
 
 ### <a name="check-which-dls-are-eligible-for-upgrade"></a>Comprobar qué direcciones URL son aptas para la actualización
 
@@ -173,7 +174,7 @@ Personas con derechos de administrador global Exchange administrador.
 
 - For Outlook: When someone tries to send an email in Outlook by typing the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. La tarjeta de contacto del destinatario será la tarjeta de contacto de listas de distribución. Esto se debe a la caché de destinatarios o a la caché de nombres de nick en Outlook. El correo electrónico se enviará correctamente al grupo, pero puede causar confusión al remitente.<br/>Puede realizar los pasos de este artículo, Información sobre la lista Outlook [Autocompletar](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) para restablecer la memoria caché, lo que solucionará este problema.
 
-- For Outlook on the web: In case of Outlook on the web, the distribution list recipient will still remain in the cache. Puede seguir los pasos descritos en [Quitar](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) el nombre sugerido o la dirección de correo electrónico de la lista de autocompletar para actualizar la memoria caché para ver la tarjeta de contacto del grupo.
+- Por Outlook en la Web: en caso de Outlook en la Web, el destinatario de la lista de distribución seguirá estando en la memoria caché. Puede seguir los pasos descritos en [Quitar](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) el nombre sugerido o la dirección de correo electrónico de la lista de autocompletar para actualizar la memoria caché para ver la tarjeta de contacto del grupo.
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>¿Los nuevos miembros del grupo reciben un correo electrónico de bienvenida en su bandeja de entrada?
 

@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 89182ddc317bfefdf0e82632bbe8ec8f78f81ada
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809004"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377222"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
-Puede ver de forma fácil el uso que hacen los usuarios de su empresa de los servicios de Microsoft 365. Por ejemplo, puede identificar quién usa mucho un servicio y ha alcanzado la cuota de este o quién puede no necesitar para nada una licencia de Microsoft 365.
+Puede ver fácilmente el uso que hacen los usuarios de su empresa de los servicios de Microsoft 365. Por ejemplo, puede identificar quién usa con más frecuencia el servicio y las cuotas alcanzadas o quién puede no necesitar la licencia de Microsoft 365 en lo absoluto. El modelo de licencia perpetua no se incluirá en los informes. 
   
 Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los datos no estarán disponibles para todos los períodos de informes al instante. Los informes están disponibles en 48 horas.
   

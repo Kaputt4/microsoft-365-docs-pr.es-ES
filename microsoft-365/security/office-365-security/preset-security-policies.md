@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en todas las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e41edb6c2d77a69ee3d4fa28ff86e0e77410caa5
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 61166c78f31a86882ef0e2dc2a79683aea794040
+ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108300"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53383467"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -99,7 +99,9 @@ Cuando se aplican varias directivas a un usuario, se aplica el siguiente orden d
 3. Directivas de seguridad personalizadas
 4. Directivas de seguridad predeterminadas
 
-En otras palabras,  la configuración de la  directiva de protección estricta invalida la configuración de la directiva de protección estándar, que invalida la configuración de una directiva personalizada, que invalida la configuración de la directiva predeterminada.
+En otras palabras,  la configuración de la  directiva de protección estricta invalida la configuración de la directiva de protección estándar, que invalida la configuración de una directiva personalizada, que invalida la configuración de la directiva predeterminada. 
+
+Por ejemplo, si existe una configuración de seguridad  en protección estándar y  un administrador ha habilitado la protección estándar para un usuario, la configuración de protección estándar se aplicará en lugar de lo que está configurado para esa configuración en una directiva personalizada o en la directiva predeterminada (para el mismo usuario).  Tenga en cuenta que es posible que tenga una  parte  de su organización a la que desee aplicar solo la directiva de protección estándar o estricta mientras aplica una directiva personalizada a otros usuarios de su organización para satisfacer necesidades específicas.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Asignar directivas de seguridad preestablecidas a los usuarios
 
@@ -115,7 +117,7 @@ En otras palabras,  la configuración de la  directiva de protección estricta i
 
   Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Usar el portal Microsoft 365 Defender para asignar directivas de seguridad preestablecidas a los usuarios
 
@@ -124,7 +126,7 @@ En otras palabras,  la configuración de la  directiva de protección estricta i
 2. En **Protección estándar o** Protección **estricta,** haga clic **en Editar**.
 
 3. Se **inicia el asistente** Aplicar protección estándar o Aplicar **protección** estricta. En la **página Las protecciones de EOP** se aplican a la página, identifique los destinatarios internos a los que se aplican las protecciones [de EOP](#policies-in-preset-security-policies) (condiciones de destinatario):
-   - **Users**
+   - **Usuarios**
    - **Grupos**
    - **Dominios**
 
@@ -132,7 +134,7 @@ En otras palabras,  la configuración de la  directiva de protección estricta i
 
    Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
 
-   - **Excluir estos usuarios,** grupos y dominios: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
+   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones a los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
 
    Cuando termine, haga clic en **Siguiente**.
 

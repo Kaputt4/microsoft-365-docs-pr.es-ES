@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: fa9592dccd806ad14e609df073c855170dcb2c76
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326908"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391452"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -113,8 +113,8 @@ Hexadecimal de código de error | Código de error Dec | Descripción del error 
 0x87D1FDE8 | -2016281112 | Error de corrección | Incorporación <br> Offboarding | **Causa posible:** Error en la incorporación o el offboarding en un blob incorrecto: firma incorrecta o faltaban campos PreviousOrgIds. <br><br> **Pasos de solución de problemas:** <br> Compruebe los IDs de eventos en la sección Ver errores de incorporación de [agentes en la sección registro de eventos del](#view-agent-onboarding-errors-in-the-device-event-log) dispositivo. <br><br> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
  | | | | Incorporación <br> Offboarding <br> SampleSharing | **Causa posible:** La clave del Registro de Microsoft Defender para directiva de extremo no existe o el cliente de OMA DM no tiene permisos para escribir en ella. <br><br> **Pasos de solución de problemas:** Asegúrese de que existe la siguiente clave del Registro: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> Si no existe, abra un comando con privilegios elevados y agregue la clave.
  | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Causa posible:** Un intento de corregir mediante una propiedad de solo lectura. Error en la incorporación. <br><br> **Pasos de solución de problemas:** Consulta los pasos de solución de problemas en [Solucionar problemas de incorporación en el dispositivo](#troubleshoot-onboarding-issues-on-the-device). <br><br> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
- | | | | Todo | **Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica. <br><br> Plataformas compatibles actualmente:<br> Enterprise, Educación y Professional.<br> El servidor no es compatible.
- 0x87D101A9 | -2016345687 |SyncML(425): error en el comando solicitado porque el remitente no tiene permisos de control de acceso (ACL) adecuados en el destinatario. | Todo |  **Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica.<br><br> Plataformas compatibles actualmente:<br>  Enterprise, Educación y Professional.
+ | | | | todas | **Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica. <br><br> Plataformas compatibles actualmente:<br> Enterprise, Educación y Professional.<br> El servidor no es compatible.
+ 0x87D101A9 | -2016345687 |SyncML(425): error en el comando solicitado porque el remitente no tiene permisos de control de acceso (ACL) adecuados en el destinatario. | todas |  **Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica.<br><br> Plataformas compatibles actualmente:<br>  Enterprise, Educación y Professional.
 
 #### <a name="known-issues-with-non-compliance"></a>Problemas conocidos con el incumplimiento
 
@@ -134,7 +134,7 @@ Nombre del registro: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Pr
 
 Nombre del canal: Administrador
 
-Id. | Severity | Descripción del evento | Pasos para la solución de problemas
+ID | Severity | Descripción del evento | Pasos para la solución de problemas
 :---|:---|:---|:---
 1819 | Error | Microsoft Defender para CSP de extremo: no se pudo establecer el valor del nodo. NodeId: (%1), TokenName: (%2), Result: (%3). | Descargue la [actualización acumulativa para Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
@@ -337,8 +337,10 @@ Los pasos siguientes proporcionan instrucciones para el siguiente escenario:
 - El dispositivo se apaga o se reinicia antes de que el usuario final realice un primer inicio de sesión
 - En este escenario, el servicio SENSE no se iniciará automáticamente aunque se haya implementado el paquete de incorporación
 
-<div class="alert"><b>NOTA:</b> El inicio de sesión del usuario después de OOBE ya no es necesario para que el servicio SENSE se inicie en las siguientes o más recientes versiones de Windows: Windows 10, versión 1809 o Windows Server 2019 con el paquete acumulativo de actualizaciones del 22 de abril de [2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, versión 1909 con paquete acumulativo de actualizaciones de [abril de 2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, versión 2004/20H2 con paquete acumulativo de actualizaciones del 28 de abril de [2021](https://support.microsoft.com/kb/5001391) </div> 
-<br></br>
+> [!NOTE]
+> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions: Windows 10, versión 1809 or Windows Server 2019 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384). Windows 10, versión 1909 con paquete acumulativo de actualizaciones de [abril de 2021](https://support.microsoft.com/kb/5001396). Windows 10, versión 2004/20H2 con paquete acumulativo de actualizaciones del 28 de abril de [2021](https://support.microsoft.com/kb/5001391). 
+
+
 > [!NOTE]
 > Los pasos siguientes solo son relevantes al usar Microsoft Endpoint Configuration Manager. Para obtener más información acerca de la incorporación mediante Microsoft Endpoint Configuration Manager, vea [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 

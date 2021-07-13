@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Las publicaciones del centro de mensajes solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
-ms.openlocfilehash: f500baccbf3c78b9d775629d38864444c78fb2e3
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: feec4a0a48960303ac0c2231b43e125caa901283
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636039"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393108"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traducción de idioma para publicaciones del Centro de mensajes
 
@@ -49,7 +50,7 @@ Si quiere configurar las publicaciones del Centro de mensajes para que se traduz
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Información general sobre el Microsoft 365 de administración](../../business-video/admin-center-overview.md) (vídeo)\
+[Información general sobre Centro de administración de Microsoft 365](../../business-video/admin-center-overview.md) (vídeo)\
 [¿Qué suscripción tengo?](../admin-overview/what-subscription-do-i-have.md) (artículo)\
 [Mantenerse al tanto de los cambios](../manage/stay-on-top-of-updates.md) (artículo)
 

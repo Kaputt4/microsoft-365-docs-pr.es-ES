@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Envíe correo electrónico como una lista de distribución en Microsoft 365 para que cuando un miembro responda a un mensaje parezca que es de la lista de distribución.
-ms.openlocfilehash: eb5ce4a08fae13ee0d2631499a8df1724ef3ef66
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c77455b5b990a9c35fc7e47ee81cc9ddef4d0a23
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635719"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392520"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Enviar correo electrónico como una lista de distribución
 
@@ -40,7 +41,7 @@ Antes de realizar estos pasos, asegúrese de que se ha agregado a una lista de d
   
 ## <a name="outlook-on-the-web"></a>Outlook en la Web
 
-1. Abra Outlook en la web y vaya a la bandeja de entrada. 
+1. Abra Outlook en la Web y vaya a la bandeja de entrada. 
     
 2. Abra un mensaje que se envió a la lista de distribución. 
     
@@ -64,6 +65,6 @@ Antes de realizar estos pasos, asegúrese de que se ha agregado a una lista de d
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Crear, editar o eliminar un grupo](../email/create-edit-or-delete-a-security-group.md) de seguridad en el centro Microsoft 365 administración (artículo)\
+[Crear, editar o eliminar un grupo de seguridad](../email/create-edit-or-delete-a-security-group.md) en el Centro de administración de Microsoft 365 (artículo)\
 [Colaboración de correo](../email/email-collaboration.md) electrónico (artículo)\
 [Agregar un usuario o contacto a un grupo de distribución](../email/add-user-or-contact-to-distribution-list.md) (artículo)

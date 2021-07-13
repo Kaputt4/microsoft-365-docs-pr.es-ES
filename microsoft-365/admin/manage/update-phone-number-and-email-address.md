@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Actualice el número de teléfono y la dirección de correo electrónico del administrador en el Centro de administración si desea restablecer su propia contraseña de administrador.
-ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1335f5ff7a39fab53e6f45f47bec293db5650336
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624518"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391308"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Actualizar el número de teléfono de administrador y la dirección de correo electrónico
 
@@ -39,7 +41,7 @@ Para obtener más información acerca de cómo cambiar la información de contac
 
 Use la **página Información de seguridad** para cambiar el número de teléfono móvil y la dirección de correo electrónico alternativa. La dirección de correo electrónico alternativa se usa para notificaciones importantes, como restablecer la contraseña de administrador (no la contraseña de administrador del equipo). 
   
-1. Vaya al Centro Microsoft 365 administración.
+1. Vaya a la Centro de administración de Microsoft 365.
 
 2. En el encabezado, seleccione el icono de perfil \> **Mi cuenta Información** de \> **seguridad**.
 

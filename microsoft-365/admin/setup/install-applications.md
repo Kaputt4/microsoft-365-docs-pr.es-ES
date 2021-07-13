@@ -21,13 +21,14 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 description: Ahora que ya has configurado Microsoft 365, aprende a instalar aplicaciones Office individuales en tu Mac, PC o dispositivos móviles.
-ms.openlocfilehash: 47f6a04e8fe42f03de0cd2008f15fd1f6f5617f3
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: dc32009bd42027890457bee97e19cdd94f49c6b7
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593822"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393528"
 ---
 # <a name="install-office-applications"></a>Instalar aplicaciones de Office
 
@@ -47,7 +48,7 @@ Siga estos vínculos para obtener información sobre cómo:
 
 ::: moniker range="o365-21vianet"
 
-Si ha comprado Azure Active Directory Premium (AADP) Plan 1 o Plan 2, es elegible para Microsoft Identity Manager (MIM). Para descargar MIM, vaya al Centro [de descarga](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498).
+Si has comprado Azure Active Directory Premium (AADP) plan 1 o plan 2, eres elegible para Microsoft Identity Manager (MIM). Para descargar MIM, vaya al Centro [de descarga](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498).
 
 ::: moniker-end
 
