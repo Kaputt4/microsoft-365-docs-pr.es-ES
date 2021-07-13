@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c89de5fbf5d5b4d5d5e53074109bc8884a271eea
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843583"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394898"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión
 
@@ -58,6 +58,10 @@ Cuando investigues un dispositivo específico, verás lo siguiente:
 - Tarjetas (alertas activas, usuarios que han iniciado sesión, evaluación de seguridad)
 
 ![Imagen de la vista de dispositivo](images/specific-device.png)
+
+> [!NOTE]
+> Debido a las restricciones del producto, el perfil del dispositivo no tiene en cuenta todas las pruebas cibernéticas al determinar el período de tiempo "Last Seen" (como también se ve en la página del dispositivo).
+> Por ejemplo, el valor "Última vista" en la página Dispositivo puede mostrar un período de tiempo más antiguo, aunque hay alertas o datos más recientes disponibles en la escala de tiempo del equipo.
 
 ## <a name="device-details"></a>Detalles del dispositivo
 
@@ -184,6 +188,8 @@ La **tarjeta protección contra** amenazas avanzada de Azure mostrará una descr
 La **tarjeta Usuarios que han iniciado** sesión muestra cuántos usuarios han iniciado sesión en los últimos 30 días, junto con los usuarios más y menos frecuentes. Al seleccionar el vínculo "Ver todos los usuarios", se abre el panel de detalles, que muestra información como el tipo de usuario, el tipo de inicio de sesión y el momento en que el usuario se vio por primera y última vez. Para obtener más información, vea [Investigar entidades de usuario](investigate-user.md).
 
 ![Imagen del panel de detalles del usuario](images/logged-on-users.png)
+> [!NOTE]
+> El valor de usuario "Más frecuente" se calcula solo en función de la evidencia de usuarios que iniciaron sesión correctamente de forma interactiva. Sin embargo, el panel lateral "Todos los usuarios" calcula todo tipo de inicios de sesión de usuario, por lo que se espera que vea usuarios más frecuentes en el panel lateral, dado que es posible que dichos usuarios no sean interactivos.
 
 ### <a name="security-assessments"></a>Evaluaciones de seguridad
 
@@ -193,7 +199,7 @@ La **tarjeta Evaluaciones de seguridad** muestra el nivel de exposición general
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender](alerts-queue.md)
+- [Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión](alerts-queue.md)
 - [Administrar alertas de Microsoft Defender para puntos de conexión](manage-alerts.md)
 - [Investigar alertas de punto de conexión de Microsoft Defender](investigate-alerts.md)
 - [Investigar un archivo asociado a una alerta de Defender for Endpoint](investigate-files.md)

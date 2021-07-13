@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 07/06/2021
-ms.openlocfilehash: f64c71501a550aabdf16b9de2d7a5db93e48caef
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.date: 07/12/2021
+ms.openlocfilehash: 0179c620c8ba00c987395a800ed335644048283f
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314469"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394970"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -496,6 +496,20 @@ Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Wind
 Para obtener más información, vea [Actualización de Microsoft Defender para obtener Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2107.02</summary>
+
+&ensp;Versión del paquete: **1.1.2107.02**    
+&ensp;Versión de la **plataforma: 4.18.2105.5**   
+&ensp;Versión del motor: **1.1.18300.4**  
+&ensp;Versión de firma: **1.343.658.0**    
+    
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno  
+<br/>
+</details><details>
 <summary>1.1.2106.01</summary>
 
 &ensp;Versión del paquete: **1.1.2106.01**    

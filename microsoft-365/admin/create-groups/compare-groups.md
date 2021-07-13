@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Los miembros de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, Stream y un Planner.
-ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 12da954beb4d019b7652ef4df2e18cb30ff542ed
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377186"
+ms.locfileid: "53393264"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
@@ -50,6 +51,8 @@ Los grupos de Microsoft 365 se pueden [configurar para la pertenencia dinámica 
 Se puede tener acceso a los grupos de Microsoft 365 a través de aplicaciones móviles como Outlook para iOS y Outlook para Android.
 
 Los miembros del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del grupo si está opción ha sido [activada por el administrador](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
+
+Los grupos de Microsoft 365 no admiten el anidamiento con otros grupos de Microsoft 365 o con grupos de distribución o seguridad.
 
 ## <a name="distribution-groups"></a>Grupos de distribución
 
@@ -97,5 +100,8 @@ No es posible migrar un buzón compartido a un grupo de Microsoft 365.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Obtener información sobre los grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (artículo)\
-[Por qué debería actualizar sus listas de distribución a grupos de Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (artículo)
+[Obtener información sobre los grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Actualizar listas de distribución a Grupos de Microsoft 365 en Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
+
+[Por qué debería actualizar sus listas de distribución a grupos de Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

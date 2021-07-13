@@ -1,0 +1,42 @@
+- name: Microsoft 365 Lighthouse
+  items:
+    - name: Información general sobre Microsoft 365 Lighthouse
+      href: m365-lighthouse-overview.md
+    - name: Requisitos para Microsoft 365 Lighthouse
+      href: m365-lighthouse-requirements.md
+- name: Introducción
+  items:
+    - name: Registrarse
+      href: m365-lighthouse-sign-up.md
+- name: Seguridad Microsoft 365 Lighthouse
+  items:
+    - name: Configurar la seguridad del portal
+      href: m365-lighthouse-configure-portal-security.md
+- name: Proteger clientes con líneas base
+  items:
+    - name: Introducción al uso de líneas base para implementar configuraciones de inquilino estándar
+      href: m365-lighthouse-deploying-standard-tenant-configurations-overview.md
+    - name: Implementar líneas base
+      href: m365-lighthouse-deploy-baselines.md
+- name: Administrar inquilinos
+  items:
+    - name: Introducción a la lista de inquilinos
+      href: m365-lighthouse-tenant-list-overview.md
+- name: Administrar usuarios dentro de los inquilinos
+  items:
+    - name: Introducción a la página de usuarios
+      href: m365-lighthouse-users-page-overview.md
+- name: Administrar dispositivos
+  items:
+    - name: Introducción a la página de cumplimiento de dispositivos
+      href: m365-lighthouse-device-compliance-page-overview.md
+- name: Administrar amenazas
+  items:
+    - name: Introducción a la página de administración de amenazas
+      href: m365-lighthouse-threat-management-page-overview.md
+- name: Obtener ayuda y soporte técnico
+  items:
+    - name: Obtener ayuda y soporte técnico
+      href: m365-lighthouse-get-help-and-support.md
+    - name: Preguntas más frecuentes (preguntas frecuentes)
+      href: m365-lighthouse-faq.yml

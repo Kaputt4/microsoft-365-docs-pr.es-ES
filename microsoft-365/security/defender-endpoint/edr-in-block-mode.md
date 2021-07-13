@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 835195f0c35ada409ef632b2dbfa1b6de0291351
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339697"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409157"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo
 
@@ -68,8 +68,8 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 
 3. Activa la **EDR en modo de bloque**.
 
-> [!NOTE]
-> EDR en modo de bloque solo se puede desactivar en el portal Microsoft 365 Defender bloque. No puede usar claves del Registro, Intune o directivas de grupo para habilitar o deshabilitar EDR en modo de bloque.
+   > [!NOTE]
+   > EDR en modo de bloque solo se puede desactivar en el portal Microsoft 365 Defender bloque. No puede usar claves del Registro, Intune o directivas de grupo para habilitar o deshabilitar EDR en modo de bloque.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Requisitos para EDR en modo de bloque
 
@@ -77,7 +77,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 |---------|---------|
 |Permisos |Rol Administrador global o Administrador de seguridad asignado [en Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Consulte [Basic permissions](basic-permissions.md). |
 |Sistema operativo     |Una de las siguientes versiones: <br/>- Windows 10 (todas las versiones) <br/>- Windows server, versión 1803 o posterior <br/>- Windows Server 2019 <br/>- Windows Server 2016 (solo cuando Antivirus de Microsoft Defender está en modo activo)     |
-|Windows Inscripción en E5     |Windows E5 se incluye en las siguientes suscripciones: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 junto con la oferta de protección contra & identidad <br/><br/>Vea [Componentes](/microsoft-365/enterprise/microsoft-365-overview#components) y [características y capacidades para cada plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
+|Windows Inscripción en E5     |Windows E5 se incluye en las siguientes suscripciones: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 junto con el Seguridad de Microsoft 365 E5 complemento <br/><br/>Vea [Componentes](/microsoft-365/enterprise/microsoft-365-overview#components) y [características y capacidades para cada plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Antivirus de Microsoft Defender  |Antivirus de Microsoft Defender debe instalarse y ejecutarse en modo activo o en modo pasivo. (Puede usar Antivirus de Microsoft Defender junto con una solución antivirus que no es de Microsoft). [Confirme Antivirus de Microsoft Defender está en modo activo o pasivo](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
 |Protección entregada en la nube |Asegúrese de Antivirus de Microsoft Defender está configurado de modo que [la protección entregada en la nube esté habilitada](enable-cloud-protection-microsoft-defender-antivirus.md). |
 |Antivirus de Microsoft Defender cliente antimalware |Asegúrese de que el cliente está actualizado. Con PowerShell, ejecute el cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) como administrador. En la **línea AMProductVersion,** debería ver **4.18.2001.10** o posterior. |
@@ -86,7 +86,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 > [!IMPORTANT]
 > Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales y de que las [exclusiones están configuradas.](configure-exclusions-microsoft-defender-antivirus.md) EDR en modo de bloque respeta las exclusiones que se definen para Antivirus de Microsoft Defender.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes. 
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-even-when-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Necesito activar el EDR en modo de bloqueo incluso cuando tengo Antivirus de Microsoft Defender en dispositivos?
 
@@ -132,8 +132,8 @@ Si Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en mo
 
 Si Windows Server 2016 se Antivirus de Microsoft Defender en modo activo y el extremo se incorpora a Defender para endpoint, se admite técnicamente EDR en modo de bloqueo. Sin embargo, EDR en modo de bloqueo está pensado para ser una protección adicional cuando Antivirus de Microsoft Defender no es la solución antivirus principal en un extremo. En esos casos, Antivirus de Microsoft Defender se ejecuta en modo pasivo. Actualmente, la ejecución Antivirus de Microsoft Defender en modo pasivo no se admite en Windows Server 2016. Para obtener más información, vea Antivirus de Microsoft Defender antivirus y soluciones antimalware que no son [de Microsoft.](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Blog Community tech: Introducción a EDR en modo de bloque: Detener ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
-- [Contención y bloqueo de comportamiento](behavioral-blocking-containment.md)
+- [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)
 

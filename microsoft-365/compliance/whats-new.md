@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288136"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394946"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -40,6 +40,28 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 > - [Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Y visite la [guía básica](https://www.microsoft.com/microsoft-365/roadmap) de Microsoft 365 para obtener información sobre Microsoft 365 características que se iniciaron, se están implementando, están en desarrollo, se cancelaron o se publicaron anteriormente.
+
+## <a name="june-2021"></a>Junio de 2021
+
+### <a name="customer-key"></a>Clave de cliente
+
+- [Cifrado de servicio con clave de cliente](customer-key-overview.md) (los DEP de nivel de inquilino de clave de cliente ahora cifran la configuración de etiquetas de confidencialidad Microsoft Information Protection).
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Consultar y filtrar contenido en](review-set-search.md) un conjunto de opiniones (nueva funcionalidad de consulta y filtrado en un nuevo formato de experiencia de usuario para filtrar y buscar contenido en un conjunto de opiniones)
+- Etiquetar documentos en un conjunto de revisión de [Advanced eDiscovery](tagging-documents.md) (nueva funcionalidad de etiqueta y experiencia de usuario para hacer que los documentos de etiquetado en un conjunto de revisión sean más rápidos y fáciles; incluye nueva capacidad de etiquetar documentos mediante una consulta y usar filtros para buscar o excluir rápidamente elementos del conjunto de revisión en función de cómo se etiqueta un elemento)
+- Configurar [límites](set-up-compliance-boundaries.md) de cumplimiento para investigaciones de exhibición de documentos electrónicos (Microsoft ha quitado el requisito de ponerse en contacto con el soporte técnico de MS para solicitar que un atributo de cumplimiento esté sincronizado con cuentas de OneDrive; ahora se usa un filtro de permisos de búsqueda de buzones para aplicar los límites de cumplimiento para OneDrive)
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- El Asistente para directivas de etiquetas de confidencialidad ahora admite Outlook [opciones](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) específicas para la etiqueta predeterminada y el etiquetado obligatorio como una configuración más sencilla que la configuración avanzada de PowerShell (aún compatible).
+- Ahora se [está implementando](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) la compatibilidad con marcas dinámicas con variables para Word, Excel y PowerPoint en la Web
+- Para [las directivas de etiquetado](apply-sensitivity-label-automatically.md) automático para Exchange, si la etiqueta está configurada para el cifrado, ese cifrado no se aplica. Además, Exchange directivas de etiquetado automático, ahora puede configurar excepciones y las siguientes condiciones nuevas: asunto, dirección de destinatario o dirección del remitente coinciden con patrones; la dirección del destinatario contiene palabras; el dominio del remitente es, el destinatario es un miembro de; sender is.
+- Al usar etiquetas de confidencialidad con equipos, grupos y sitios, puede usar Set-SPOTenant con el parámetro BlockSendLabelMismatchEmail para evitar que el correo electrónico generado automáticamente cuando se registra el evento de auditoría Desajuste de confidencialidad del documento detectado.   Para obtener más información, vea [Auditing sensitivity label activities](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities ).
+- La [configuración del contexto de autenticación](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) ahora se ha implantado completamente en la vista previa de las etiquetas de confidencialidad. Además, esta configuración ahora es compatible con Microsoft Teams.
+- Los archivos etiquetados y cifrados por un nombre de principio de servicio (como Microsoft Cloud App Security) y luego cargados en SharePoint y OneDrive ahora se pueden abrir en Office para la Web cuando haya habilitado etiquetas de confidencialidad para archivos Office en SharePoint y [OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+- La [co-autoría](sensitivity-labels-coauthoring.md) y autoguardado ya no se restringen a los inquilinos de prueba y ahora se admiten en producción cuando se usa la versión 2105: 18 de junio para Windows y versión 16.50+ para macOS. Ten en cuenta que esta característica aún no es compatible con iOS y Android y permanece en versión preliminar.
 
 ## <a name="may-2021"></a>Mayo de 2021
 
@@ -269,49 +291,3 @@ Las siguientes Microsoft 365 de cumplimiento admiten ahora la detección de [con
 
 - Las etiquetas de confidencialidad ahora se admiten para los inquilinos del Gobierno de Estados Unidos (GCC y GCC-H).
 - Nueva [compatibilidad con el etiquetado](sensitivity-labels-office-apps.md) automático para macOS.
-
-## <a name="december-2020"></a>Diciembre de 2020
-
-### <a name="spotlight-new-content-for-insider-risk-solutions"></a>Spotlight: Nuevo contenido para soluciones de riesgo de insider
-
-El Microsoft 365 de contenido de cumplimiento es muy difícil crear documentos de "solución de contenido" para promover la forma en que las capacidades de cumplimiento se pueden usar conjuntamente para ayudar a cumplir los objetivos de cumplimiento.
-
-En primer lugar, se trata de contenido que une nuestras soluciones de riesgo de información privilegiada: cumplimiento de comunicaciones, administración de riesgos de información privilegiada, barreras de información y administración de acceso con privilegios. Este es un vistazo a lo que encontrará:
-
-- [Nueva página de aterrizaje para soluciones de riesgo de insider](insider-risk-solution-overview.md). Incluye detalles sobre los riesgos que las soluciones pueden ayudar a mitigar, los requisitos de licencias, la secuencia de implementación, las ilustraciones de arquitectura, los recursos de aprendizaje y mucho más.
-- Nuevos artículos de información general para cada solución de riesgos de insider. Guía y vínculos a artículos que le ayudan a aprender, planear, implementar y administrar cada solución:
-  - [Cumplimiento de las comunicaciones](communication-compliance-solution-overview.md)
-  - [Administración de riesgos internos](insider-risk-management-solution-overview.md)
-  - [Barreras de información](information-barriers-solution-overview.md)
-  - [Administración del acceso con privilegios](privileged-access-management-solution-overview.md)
-
-Más documentos de solución de contenido próximamente!
-
-### <a name="advanced-ediscovery"></a>eDiscovery avanzado
-
-Flujo de trabajo y funcionalidad mejorados para [agregar custodios](add-custodians-to-case.md) y orígenes de datos no [custodiados](non-custodial-data-sources.md) a un Advanced eDiscovery caso.
-
-### <a name="data-connectors"></a>Conectores de datos
-
-[Se han lanzado cuatro nuevos conectores de Veritas:](archiving-third-party-data.md#third-party-data-connectors)Redtail Speak, Salesforce Chatter, ServiceNow y Yieldbroker.
-
-### <a name="encryption"></a>Cifrado
-
-Introducción a [la clave de cliente para Microsoft 365 en el nivel de inquilino](customer-key-tenant-level.md). Con las claves que proporcione, puede crear una directiva de cifrado de datos (DEP) y asignarla al inquilino. El DEP cifra los datos en todo el espacio empresarial para estas cargas de trabajo:
-
-- Teams de chat (chats de 1:1, chats de grupo, chats de reunión y conversaciones de canal)
-- Teams multimedia (imágenes, fragmentos de código, vídeos, imágenes wiki)
-- Teams de llamadas y reuniones almacenadas en Teams almacenamiento
-- Teams de chat
-- Teams sugerencias de chat por Cortana
-- Teams de estado
-- Información de usuario y señal para Exchange Online
-
-### <a name="records-management"></a>Administración de registros
-
-El [grupo de funciones de administración administración](get-started-with-records-management.md#permissions-required-for-records-management) de registros ahora concede permisos para todas las características de administración de registros, incluida la revisión de disposición.
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-- [Etiquetar automáticamente los datos en Azure Purview (versión preliminar).](/azure/purview/create-sensitivity-label) Ahora puede crear y aplicar automáticamente etiquetas de confidencialidad a activos de Azure Purview, como archivos en Azure Blob Storage y columnas de base de datos en SQL Server.
-- [Requerir que los usuarios apliquen una etiqueta a los elementos](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents). Esta nueva opción, también conocida como "etiquetado obligatorio", requiere que los usuarios elijan y apliquen una etiqueta de confidencialidad en los escenarios específicos.

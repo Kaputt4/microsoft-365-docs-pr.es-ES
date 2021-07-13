@@ -1,0 +1,76 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft 365 Lighthouse preguntas más frecuentes (preguntas frecuentes)
+  f1.keywords: NOCSH
+  ms.author: sharik
+  author: SKjerland
+  manager: scotv
+  audience: Admin
+  ms.topic: article
+  ms.prod: microsoft-365-lighthouse
+  localization_priority: Normal
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - AdminSurgePortfolio
+  - M365-Lighthouse
+  search.appverid: MET150
+  description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga respuestas a las preguntas más frecuentes (preguntas frecuentes) sobre Microsoft 365 Lighthouse.
+  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
+  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "53395269"
+title: Microsoft 365 Lighthouse preguntas más frecuentes (preguntas frecuentes)
+summary: >
+  > [!NOTE]
+
+  > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
+
+  Este artículo contiene respuestas a las preguntas más frecuentes (preguntas frecuentes) sobre Microsoft 365 Lighthouse.
+
+
+  Si no encuentra una respuesta a su pregunta, háganoslo saber dejando un comentario y lo agregaremos a este artículo.
+sections:
+- name: Ignorado
+  questions:
+  - question: ¿Qué Microsoft 365 Lighthouse?
+    answer: >
+      Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium.  Microsoft 365 Lighthouse simplifica la incorporación de inquilinos al recomendar líneas base de configuración de seguridad adaptadas a las PYME y proporcionar vistas multiinquilino en todos los entornos de cliente. Para obtener más información, vea [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+  - question: ¿Cuál es la diferencia entre Microsoft 365 Lighthouse y Faro de Azure?
+    answer: >
+      Microsoft 365 Lighthouse se centra en los Microsoft 365 en lugar de en los servicios de Azure. Aunque Azure Lighthouse está integrado en Azure Portal y permite a los partners de TI administrar varios inquilinos para Azure, Microsoft 365 Lighthouse es un portal independiente que ayuda a los MSP a administrar varios inquilinos de Microsoft 365 Empresa Premium cliente. Para obtener más información sobre Microsoft 365 Lighthouse, vea [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). Para obtener más información acerca de Azure Lighthouse, vea [¿Qué es Azure Lighthouse?](/azure/lighthouse/overview)
+  - question: ¿Cuánto Microsoft 365 Lighthouse costo?
+    answer: >
+      No hay costos adicionales asociados con el uso de la versión preliminar de Microsoft 365 Lighthouse para administrar Microsoft 365 Empresa Premium servicios y dispositivos conectados. Microsoft 365 Lighthouse está actualmente en versión preliminar y está disponible para los MSP que den servicio a pequeñas y medianas empresas y que tengan una relación Proveedor de soluciones en la nube (CSP) con sus clientes. Tenga en cuenta que los proveedores indirectos no son compatibles actualmente con Microsoft 365 Lighthouse. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: ¿Cuáles son los requisitos para usar Microsoft 365 Lighthouse?
+    answer: >
+      Para obtener una lista de los requisitos actuales, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: ¿Cómo me inscribo en Microsoft 365 Lighthouse?
+    answer: >
+      Para registrarse en Microsoft 365 Lighthouse, deberá estar registrado en el programa CSP. Actualmente no podemos admitir proveedores indirectos. Para obtener instrucciones sobre cómo registrarse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). Para obtener más información sobre el programa CSP, vea [el Proveedor de soluciones en la nube introducción al programa](/partner-center/csp-overview).
+  - question: He terminado de registrarme, por lo que ¿por qué no veo ningún dato de inquilino del cliente?
+    answer: >
+      Los datos del inquilino del cliente pueden tardar hasta 48 horas en cargarse en Microsoft 365 Lighthouse. Si han pasado más de 48 horas desde que completó la incorporación, póngase en contacto con nuestro equipo de soporte técnico para obtener ayuda. Deberás proporcionarles información cuando completes la incorporación y proporciones capturas de pantalla y registros relevantes. Para obtener más información, vea [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+  - question: ¿Por qué veo datos para algunos inquilinos de clientes, pero no para otros?
+    answer: >
+      Para que los datos del inquilino del cliente se muestren en Microsoft 365 Lighthouse, los partners deben establecer privilegios de administrador delegados (DAP) con los clientes a través del Centro de partners. Para obtener más información, vea [Solicitar una relación de revendedor con un cliente en el Centro de partners.](/partner-center/request-a-relationship-with-a-customer) Los inquilinos también deben tener al menos una Microsoft 365 Empresa Premium suscripción y menos de 500 usuarios con licencia en su inquilino. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: ¿Qué sucede si no deseo ver ciertos inquilinos en Microsoft 365 Lighthouse?
+    answer: >
+      Si no desea ver determinados inquilinos y sus datos en Microsoft 365 Lighthouse, puede desactivar esos inquilinos. Para desactivar un inquilino, siga estos pasos:
+
+
+      1. Seleccione **Inquilinos en** el panel de navegación izquierdo para abrir la **página Inquilinos.**
+
+      1. Busque el espacio empresarial que desea desactivar, seleccione los tres puntos junto al nombre del inquilino y, a continuación, seleccione **Inactivar inquilino**.
+
+      1. En el mensaje de confirmación que aparece, seleccione **Confirmar** para desactivar el espacio empresarial.
+          > [!NOTE]
+          > Una vez inactivado un inquilino, no podrá realizar ninguna acción en el espacio empresarial hasta que se complete la inactivación. La inactivación puede tardar hasta 48 horas en completarse.
+
+      Para obtener más información sobre los inquilinos, Microsoft 365 Lighthouse información general [sobre la lista de inquilinos.](m365-lighthouse-tenant-list-overview.md)
+  - question: ¿Microsoft 365 Lighthouse si los inquilinos de mis clientes tienen otras suscripciones además de Microsoft 365 Empresa Premium?
+    answer: Microsoft 365 Lighthouse ayuda a administrar los inquilinos de clientes que tienen Microsoft 365 Empresa Premium licencias para sus usuarios. Para los usuarios de inquilinos de clientes que no tienen licencias de Premium empresa, Microsoft 365 Lighthouse funcionalidad será limitada. Por ejemplo, si un usuario no tiene una licencia que incluya Intune, los dispositivos de ese usuario, el estado de cumplimiento del dispositivo y el estado de amenazas no estarán disponibles; y si un usuario no tiene una licencia que incluya Azure AD P1, la contraseña y la administración de inicio de sesión de ese usuario no estarán disponibles. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).

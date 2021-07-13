@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina qué directiva se aplica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 9dea01324e37a56fbff049e4e46cd5882f1fabad
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029290"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409133"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de protección de correo electrónico
 
@@ -61,7 +61,8 @@ Hay dos factores principales que determinan qué directiva se aplica a un mensaj
 
 - La **prioridad** de la directiva: para cada tipo de directiva (antispam, antimalware, anti phishing, etc.), hay una directiva predeterminada que se aplica a todos, pero puede crear directivas personalizadas que se apliquen a usuarios específicos. Cada directiva personalizada tiene un valor de prioridad que determina el orden en que se aplican las directivas. La directiva predeterminada siempre se aplica en último lugar.
 
-  Si un usuario se define en varias directivas del mismo tipo, solo se aplica la directiva con la prioridad más alta. Las directivas restantes de ese tipo no se evalúan para el usuario (incluida la directiva predeterminada).
+  > [!IMPORTANT]
+  > Si un usuario se define en varias directivas del mismo tipo, solo se aplica la directiva con la prioridad más alta. Las directivas restantes de ese tipo no se evalúan para el usuario (incluida la directiva predeterminada).
 
 Por ejemplo, considere las siguientes directivas anti phishing en Microsoft Defender para Office 365 que se aplican **a** los mismos usuarios y un mensaje que se identifica como suplantación de usuario y suplantación de identidad:
 

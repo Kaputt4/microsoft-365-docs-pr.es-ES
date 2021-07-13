@@ -18,15 +18,16 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Los administradores pueden reactivar una suscripción cuando expire, se deshabilite o cancele, o si se canceló en medio de un término de suscripción.
 ms.date: 04/07/2021
-ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572518"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394922"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
 
@@ -34,7 +35,7 @@ Puede reactivar la suscripción en el centro de administración si: la suscripci
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para reactivar una suscripción. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para reactivar una suscripción. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 **¿No es un administrador?** Póngase en contacto con su administración para reactivar la suscripción.
 

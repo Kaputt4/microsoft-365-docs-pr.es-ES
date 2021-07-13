@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: GEA150
 description: Regístrate para una prueba gratuita de 30 días para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios.
 ms.date: 08/07/2020
-ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 1ef3ceffb795a25ebad0bac1e37dd12df6f62d90
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950052"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394874"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción Microsoft 365 para empresas
 
@@ -130,7 +131,7 @@ El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solic
 > No se aceptan tarjetas de crédito internacionales.
 ::: moniker-end
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si tiene una cuenta nueva y está configurando su primera suscripción, puede usar los artículos de configuración guiados para ayudarle a empezar.
 

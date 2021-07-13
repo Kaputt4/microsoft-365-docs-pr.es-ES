@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo se usan los grupos de entrega para proteger la reputación de los servidores de correo electrónico en Microsoft 365 centros de datos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: c5881b20eaed8387988d01b69a4acd022c5924a2
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137732"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409145"
 ---
 # <a name="outbound-delivery-pools"></a>Grupos de entrega de salida
 
@@ -82,3 +82,6 @@ En los casos en los que podemos autenticar al remitente, usamos el esquema de re
 Para que DKIM funcione, asegúrese de habilitar DKIM para enviar dominio. Por ejemplo, fabrikam.com forma parte de contoso.com y se define en los dominios aceptados de la organización. Si el remitente del mensaje sender@fabrikam.com, DKIM debe estar habilitado para fabrikam.com. puede leer sobre cómo habilitar en [Usar DKIM para validar](use-dkim-to-validate-outbound-email.md)el correo electrónico saliente enviado desde su dominio personalizado .
 
 Para agregar dominios personalizados, siga los pasos descritos [en Agregar un dominio a Microsoft 365](../../admin/setup/add-domain.md).
+
+Si el registro MX del dominio apunta a un servicio de terceros o a un servidor de correo electrónico local, debe usar el filtrado mejorado [para conectores](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). El filtrado mejorado garantiza que la validación de SPF sea correcta para el correo entrante y evitará el envío de correo electrónico a través del grupo de retransmisión.
+
