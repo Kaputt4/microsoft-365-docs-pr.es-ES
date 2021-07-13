@@ -429,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype Empresarial (vista previa)
+            - name: Skype Empresarial
               href: archive-skypeforbusiness-data.md
             - name: Margen de demora eDiscovery
               href: archive-slack-data.md
@@ -463,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: Archivador de la red de SMS y voz de O2 Telefónica
               href: archive-o2-network-data.md
-            - name: Señal (vista previa)
+            - name: Archivador de Signal
               href: archive-signal-archiver-data.md
-            - name: Telegram (vista previa)
+            - name: Archivador de Telegram
               href: archive-telegram-archiver-data.md
             - name: Red TELUS
               href: archive-telus-network-data.md
@@ -932,6 +932,18 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Seguridad en servicios energéticos y cumplimiento
           href: ../solutions/energy-secure-collaboration.md
+- name: Administrar los riesgos de privacidad
+  items:
+    - name: Más información acerca de la administración de privacidad
+      href: privacy-management.md
+    - name: Introducción a la administración de privacidad
+      href: privacy-management-setup.md
+    - name: Buscar y visualizar datos personales en la administración de privacidad
+      href: privacy-management-data-profile.md
+    - name: Crear y administrar directivas en la administración de privacidad
+      href: privacy-management-policies.md
+    - name: Administrar solicitudes de derechos de sujeto en la administración de privacidad
+      href: privacy-management-subject-rights-requests.md
 - name: Funcionalidades de cumplimiento híbrido
   items:
     - name: Cifrado de correo de Exchange Online con AD RMS
