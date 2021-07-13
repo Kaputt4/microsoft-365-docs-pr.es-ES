@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre Microsoft 365 Lighthouse puede ayudarle a proteger y administrar los inquilinos de clientes en una ubicación.
-ms.openlocfilehash: a8af12e2fecade0b78f95f1d38bda34f7934ccd6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: af03495f7bf47fe3c72ebb7487b8709d2e2b0736
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395359"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409037"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Información general sobre Microsoft 365 Lighthouse
 
@@ -42,7 +42,7 @@ Tenga en cuenta que los proveedores indirectos csp actualmente no son compatible
 Para obtener más información acerca del programa CSP, vea [el Proveedor de soluciones en la nube introducción al programa](/partner-center/csp-overview).
 
 > [!NOTE]  
-> Una oferta similar, Azure Lighthouse, ayuda a los proveedores de servicios a ofrecer servicios administrados para los servicios de Azure mediante herramientas de administración completas y sólidas integradas en la plataforma de Azure. Para obtener más información, consulte [¿Qué es Azure Lighthouse?](/azure/lighthouse/overview)   
+> Una oferta similar, Azure Lighthouse, ayuda a los proveedores de servicios a ofrecer servicios administrados para los servicios de Azure mediante herramientas de administración completas y sólidas integradas en la plataforma de Azure. Para obtener más información, vea [¿Qué es Azure Lighthouse?](/azure/lighthouse/overview)   
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse beneficios
 
