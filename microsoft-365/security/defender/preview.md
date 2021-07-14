@@ -20,19 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
-ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
+ms.openlocfilehash: 088dbd16c3667331843ff934c80f85aa8d3a837f
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53125403"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430821"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender de vista previa
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-> [!IMPORTANT]
-> Las versiones preliminares se proporcionan sin un contrato de nivel de servicio y no se recomienda para cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan capacidades limitadas.
 
 **Se aplica a:**
 - Microsoft 365 Defender
@@ -42,6 +39,19 @@ El Microsoft 365 Defender se actualiza constantemente para incluir nuevas mejora
 Obtenga información sobre las nuevas características de Microsoft 365 Defender versión preliminar y sea uno de los primeros en probar las próximas características al activar la experiencia de vista previa.
 
 Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [Novedades de Microsoft 365 Defender](whats-new.md).
+
+ ## <a name="what-you-need-to-know"></a>Lo que necesita saber
+
+Al trabajar con características en versión preliminar pública, estas características:
+
+- Puede que tenga funciones restringidas o limitadas. Por ejemplo, la característica solo puede aplicarse a una plataforma.
+- Normalmente, pasan por los cambios de características antes de que estén generalmente disponibles (GA).
+- Son totalmente compatibles con Microsoft.
+- Solo puede estar disponible en regiones geográficas seleccionadas o entornos en la nube. Por ejemplo, es posible que la característica no exista en la nube del gobierno.
+- Las características individuales de la versión preliminar pueden tener más restricciones de uso y compatibilidad. Si es así, esta información se indica normalmente en la documentación de características.
+- Las versiones preliminares se proporcionan con un nivel de soporte estándar y se pueden usar para entornos de producción. 
+
+
 
 ## <a name="required-permissions"></a>Permisos necesarios
 

@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 571acc9c240fc0243998050ac3013258a2f85a3e
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 37f533f34753d66d975cb557239b2b168ac78f8e
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028949"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430773"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Aplicaciones en Escritorio administrado de Microsoft
 
@@ -31,7 +31,7 @@ También puedes implementar aplicaciones adicionales que no son de Microsoft par
 
 ## <a name="apps-provided-by-microsoft"></a>Aplicaciones proporcionadas por Microsoft
 
-Se incluyen con la licencia de Escritorio administrado de Microsoft las versiones de 64 bits de las aplicaciones de Aplicaciones Microsoft 365 para empresas Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Empresarial y OneNote). Las versiones de hacer clic y ejecutar de Microsoft Project  y Visio no se incluyen de forma predeterminada, pero puede solicitar que se agregó. Para obtener más información acerca de estas aplicaciones, [vea Install Microsoft Project or Microsoft Visio on Escritorio administrado de Microsoft devices](../get-started/project-visio.md).
+Se incluyen con la licencia de Escritorio administrado de Microsoft las versiones de 64 bits de las aplicaciones de Aplicaciones Microsoft 365 para empresas Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Teams y OneNote). Las versiones de hacer clic y ejecutar de Microsoft Project  y Visio no se incluyen de forma predeterminada, pero puede solicitar que se agregó. Para obtener más información acerca de estas aplicaciones, [vea Install Microsoft Project or Microsoft Visio on Escritorio administrado de Microsoft devices](../get-started/project-visio.md).
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Qué hace Microsoft para admitir las aplicaciones que proporcionamos
 

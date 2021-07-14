@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 801d94eb769c6b738a1d4c011b67f8a2a7cf81f1
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327052"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430809"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -39,6 +39,13 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 |Compatibilidad con GPO    |   Sí      |
 |Soporte técnico basado en usuarios     |   Sí      |
 |Compatibilidad basada en máquina    |    Sí     |
+
+## <a name="licensing"></a>Licencias
+
+Antes de empezar con Removable Storage Access Control, debe [confirmar la suscripción Microsoft 365 .](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) Para obtener acceso y usar el control Storage de acceso extraíble, debe tener lo siguiente:
+
+- Microsoft 365 E3 para la implementación de directivas/funcionalidad.
+- Microsoft 365 E5 para informes.
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
@@ -216,7 +223,7 @@ Para ayudarle a familiarizarse con Microsoft Defender para Endpoint Removable St
 
 La característica Storage control de acceso extraíble te permite aplicar directivas a través de la directiva de grupo a usuarios o dispositivos, o a ambos.
 
-### <a name="licensing"></a>Concesión de licencias
+### <a name="licensing"></a>Licencias
 
 Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
 
@@ -246,7 +253,7 @@ Antes de empezar con Removable Storage Access Control, debe confirmar su [Micr
 
 La característica Storage control de acceso extraíble permite aplicar directivas a través de OMA-URI a usuarios o dispositivos, o a ambos.
 
-### <a name="licensing"></a>Concesión de licencias
+### <a name="licensing"></a>Licencias
 
 Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
 
@@ -272,8 +279,6 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
       ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - Tipo de datos: String (archivo XML)
-    
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="El archivo xml para el tipo de datos STRING":::
 
 2. Para cada directiva, también cree un OMA-URI:
 
@@ -287,7 +292,6 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
 
     - Tipo de datos: String (archivo XML)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="Visualización del archivo XML para el tipo de datos STRING":::
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Implementación y administración de directivas mediante la interfaz de usuario de Intune
 

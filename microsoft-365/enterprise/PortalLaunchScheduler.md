@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo iniciar el portal con el programador de inicio del portal
-ms.openlocfilehash: a0ba40849b47af93f45bcc9c77f2ba6d8f715dc5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dd2b6bdabae5f4d24882912709d6f16a637a9721
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229556"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430425"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal con el programador de inicio SharePoint portal de inicio
 
@@ -117,15 +117,21 @@ Anteriormente, los inicios del portal solo se podían programar a través ShareP
 
     > [!NOTE]
     > Se pueden usar hasta 50 usuarios o grupos de seguridad distintos como máximo para todo el inicio. Cada inicio es independiente entre sí, por lo que si programa un inicio en otro portal, podría usar hasta 50 usuarios o grupos de seguridad para ese inicio. Además, puede usar hasta 20 usuarios o grupos de seguridad distintos por oleada. 
-
->El programador de inicio del portal admite grupos de seguridad y grupos de seguridad habilitados para correo. 
-
+    >
+    > El programador de inicio del portal admite grupos de seguridad y grupos de seguridad habilitados para correo. 
 
 8. Confirme los detalles de inicio del portal y seleccione **Programar**. Una vez programado el inicio, los cambios en la página principal del portal de SharePoint tendrán que recibir un resultado de diagnóstico correcto antes de que se reanude el inicio del portal.
 
 ### <a name="launch-a-portal-with-over-100k-users"></a>Iniciar un portal con más de 100.000 usuarios
 
 Si tiene previsto iniciar un portal con más de 100.000 usuarios, envíe una solicitud de soporte técnico siguiendo los pasos que se indican a continuación. Asegúrese de incluir toda la información solicitada.
+
+> [!NOTE]
+>
+> - Este proceso solo debe seguirse si cumple los siguientes requisitos:
+> - Se ha completado la página de inicio.
+> - [Se ha seguido la Guía](https://aka.ms/portalhealth) de mantenimiento del portal.
+> - La fecha de inicio es de 14 días.
 
 **Siga estos pasos:**
 
@@ -160,7 +166,7 @@ Los inicios programados con la herramienta programador de inicio del portal se p
 
 2. A continuación, **seleccione Eliminar** y, a continuación, cuando vea el mensaje siguiente, seleccione **Eliminar de** nuevo.
 
-   ![Imagen de la herramienta programador de inicio de portal](../media/portal-launch-delete-2.png)
+   ![Imagen del mensaje que pregunta si desea eliminar o mantener un inicio programado](../media/portal-launch-delete-2.png)
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>Usar el programador de inicio de PowerShell Portal
 

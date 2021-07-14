@@ -16,18 +16,29 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 3e057677b7d8ef4e74abe705bc3b23e8ea539853
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: bee4c2d01579733ff7b1c5583b00cdd48e437af2
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326764"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430545"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos insider en Microsoft 365
 
 Cada vez más, los empleados tienen más acceso para crear, administrar y compartir datos en un amplio espectro de plataformas y servicios. En la mayoría de los casos, las organizaciones tienen recursos y herramientas limitados para identificar y mitigar los riesgos de toda la organización, al tiempo que cumplen los requisitos de cumplimiento y los estándares de privacidad de los empleados. Estos riesgos pueden incluir el robo de datos al salir de los empleados y las pérdidas de datos de información fuera de la organización por sobresharing accidental o intenciones malintencionadas.
 
 La administración de riesgos de Insider en Microsoft 365 usa toda la amplitud de los indicadores de servicio y de terceros para ayudarle a identificar, recortar y actuar rápidamente en la actividad de usuario de riesgo. Al usar registros de Microsoft 365 y Microsoft Graph, la administración de riesgos de insider le permite definir directivas específicas para identificar indicadores de riesgo y tomar medidas para mitigar estos riesgos.
+
+Vea los vídeos siguientes para obtener información sobre cómo la administración de riesgos de insider puede ayudar a su organización a prevenir, detectar y contener riesgos al priorizar los valores de la organización, la cultura y la experiencia del usuario:
+<br>
+<br>
+
+**Solución de administración de riesgos insider & desarrollo:**
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
+<br>
+
+**Flujo de trabajo de administración de riesgos de Insider:**
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="configure-insider-risk-management-for-microsoft-365"></a>Configurar la administración de riesgos de insider para Microsoft 365
 
@@ -44,5 +55,5 @@ Siga estos pasos para configurar la administración de riesgos de insider para s
 ## <a name="more-information-about-insider-risk-management"></a>Más información sobre la administración de riesgos de insider
 
 - [Administrar directivas de riesgo de insider](insider-risk-management-policies.md)
-- [Investigar actividades de riesgo de información interna](insider-risk-management-activities.md)
+- [Investigar alertas de riesgo interno](insider-risk-management-activities.md)
 - [Actuar en casos de riesgo de información interna](insider-risk-management-cases.md)

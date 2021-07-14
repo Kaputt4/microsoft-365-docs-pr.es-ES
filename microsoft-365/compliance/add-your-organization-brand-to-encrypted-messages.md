@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Obtenga información Office 365 los administradores globales pueden aplicar la personalización de marca de su organización a los mensajes de correo electrónico cifrados & contenido del portal de cifrado.
-ms.openlocfilehash: 2898e12ad00d11cd9eb2f3be5d817ef113607e79
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 95320e9f268f19cedd993efe4fa0e68fd75af125
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394718"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430737"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Agregar la marca de su organización a su Microsoft 365 cifrado de mensajes empresariales
 
@@ -153,9 +153,12 @@ Para quitar una plantilla de personalización de marca personalizada:
 
 ## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Crear una regla Exchange flujo de correo electrónico que aplique la personalización de marca personalizada a los correos electrónicos cifrados
 
+> [!IMPORTANT]
+> Las aplicaciones de terceros que analizan y modifican el correo pueden impedir que la personalización de marca de OME se aplique correctamente.
+
 Después de modificar la plantilla predeterminada o crear nuevas plantillas de personalización de marca, puede crear reglas de flujo de correo Exchange aplicar la personalización de marca personalizada según determinadas condiciones. Esta regla aplicará la personalización de marca personalizada en los siguientes escenarios:
 
-- Si el usuario final cifra manualmente el correo electrónico Outlook o Outlook en la web, anteriormente Outlook Web App
+- Si el usuario final cifra manualmente el correo electrónico mediante Outlook o Outlook en la Web, anteriormente Outlook Web App
 
 - Si el correo electrónico se cifra automáticamente mediante una Exchange de flujo de correo electrónico o una directiva de prevención de pérdida de datos
 
@@ -165,7 +168,7 @@ Para obtener información sobre cómo crear una regla de flujo Exchange de corre
 
 2. Elija el **icono** Administrador.
 
-3. En el centro Microsoft 365 administración, elija **Centros de administración** \> **Exchange**.
+3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
 
 4. En el EAC, vaya a **Flujo de correo** \> **Reglas** y **seleccione Nuevo** icono Nuevo ![ Crear una nueva ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
