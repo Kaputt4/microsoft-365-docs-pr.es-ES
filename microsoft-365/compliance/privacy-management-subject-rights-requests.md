@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La solución de solicitud de derechos de sujeto en administración de privacidad de Microsoft le ayuda a encontrar datos personales y colaborar en la revisión del contenido y la creación de informes.
-ms.openlocfilehash: b1f92aa7b5e6f8117d8e3a4af758f13d6c91fe99
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: b266708c97ee4b81af6ba61dfa6716c57ff6026e
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378535"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419783"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Administrar solicitudes de derechos de sujeto en la administración de privacidad (versión preliminar)
 
@@ -47,7 +47,7 @@ Para abrir una nueva solicitud, vea [Create a request](#create-a-request).
 
 ## <a name="create-a-request"></a>Crear una solicitud
 
-Los administradores de administración de derechos de sujeto pueden usar el asistente de administración de privacidad para crear solicitudes. Este asistente le guiará a través del proceso de búsqueda de datos personales sobre un interesado y el cumplimiento de su solicitud.
+Los administradores de administración de derechos de sujeto pueden usar el asistente de administración de privacidad para crear solicitudes. El asistente le guiará a través del proceso de búsqueda de datos personales sobre un interesado y el cumplimiento de su solicitud.
 
 Los cuatro pasos principales incluyen los siguientes.
 

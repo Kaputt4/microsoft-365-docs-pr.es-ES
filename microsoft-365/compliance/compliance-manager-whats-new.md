@@ -14,16 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 823df0ac274dad0ae278ce981a0dca0f0ad8a9ed
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149027"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419528"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
 **En este artículo:** Obtenga información sobre las actualizaciones recientes en el Administrador de cumplimiento.
+
+## <a name="july-2021"></a>Julio de 2021
+
+Agregamos la capacidad de crear evaluaciones para productos distintos de Microsoft 365, basándonos en nuevas versiones universales de nuestras plantillas. Para obtener más información, comience con [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
 
 ## <a name="may-2021"></a>Mayo de 2021
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 4530f8544834c672b3ae1ebb70625ffe8f2ae4ae
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 7014e294454095456acdac8e2c60895c400ced3f
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148943"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419612"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
@@ -27,7 +27,7 @@ ms.locfileid: "53148943"
 
 ## <a name="introduction-to-assessments"></a>Introducción a las evaluaciones
 
-El Administrador de cumplimiento le ayuda a crear evaluaciones que evalúen el cumplimiento de las normativas regionales y del sector que se aplican a su organización. Las evaluaciones se basa en el marco de las plantillas de evaluación, que contienen los controles necesarios, las acciones de mejora y las acciones de Microsoft para completar la evaluación. Configurar las evaluaciones más relevantes para su organización puede ayudarle a implementar directivas y procedimientos operativos para limitar el riesgo de cumplimiento.
+El Administrador de cumplimiento le ayuda a crear evaluaciones que evalúen el cumplimiento de las normativas regionales y del sector que se aplican a su organización. Las evaluaciones se basa en el marco de las plantillas de evaluación, que contienen los controles necesarios, las acciones de mejora y, en su caso, las acciones de Microsoft para completar la evaluación. Configurar las evaluaciones más relevantes para su organización puede ayudarle a implementar directivas y procedimientos operativos para limitar el riesgo de cumplimiento.
 
 Todas las evaluaciones se enumeran en la pestaña evaluaciones del Administrador de cumplimiento. Obtenga más información [sobre cómo filtrar la vista de las evaluaciones](compliance-manager-setup.md#assessments-page)e interpretar los estados de estado .
 
@@ -54,7 +54,7 @@ A continuación se muestran ejemplos de dos grupos y sus evaluaciones subyacente
   - ISO 27001:2013
   - ISO 27018:2014
 
-Cuando dos evaluaciones diferentes del mismo grupo comparten acciones de mejora que administra, las actualizaciones que realice en los detalles de implementación o el estado de una acción se sincronizarán automáticamente en todo el grupo. Esta sincronización permite implementar una acción de mejora y cumplir varios requisitos simultáneamente.
+Diferentes evaluaciones dentro de un grupo o grupos pueden compartir acciones de mejora. Las acciones de mejora pueden ser cambios que realice dentro de las soluciones técnicas asignadas a su inquilino, como activar la autenticación en dos fases o las acciones no técnicas que realice fuera del sistema, como la institución de una nueva directiva de lugar de trabajo. Las evaluaciones de todos los grupos recogerán las actualizaciones de detalles o de estado que realice en una acción de mejora técnica. Las evaluaciones del grupo en el que las apliques reconocerán las actualizaciones de acciones de mejora no técnicas. Esto le permite implementar una acción de mejora y cumplir varios requisitos al mismo tiempo.
 
 ### <a name="create-a-group"></a>Crear un grupo
 
@@ -68,12 +68,13 @@ Puede crear un grupo al crear una nueva evaluación. Los grupos no se pueden cre
 - Una vez que agregue una evaluación a un grupo, no se podrá cambiar la agrupación.
 - Si agrega una nueva evaluación a un grupo existente, la información común de las evaluaciones de ese grupo se copiará en la nueva evaluación.
 - Los controles de evaluación relacionados en distintas evaluaciones dentro del mismo grupo se actualizan automáticamente cuando se completan.
-- Cuando se realiza un cambio en una mejora que aparece en varios grupos, ese cambio se refleja en todos los casos de esa acción de mejora.
 - Los grupos pueden contener evaluaciones para la misma certificación o reglamento, pero cada grupo solo puede contener una evaluación para un par específico de certificación de productos. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 NIST CSF. Un grupo puede contener varias evaluaciones para el mismo producto solo si la certificación o regulación correspondientes para cada uno es diferente.
 - Al eliminar una evaluación, se rompe la relación entre esa evaluación y el grupo.
 - Los grupos no se pueden eliminar manualmente.
 
 ## <a name="create-assessments"></a>Crear evaluaciones
+
+Para crear una evaluación, usará un asistente para seleccionar la plantilla que debe usar y establecer las propiedades de la evaluación. Las plantillas contienen los controles y las recomendaciones de acción para la evaluación, basadas en certificaciones para diferentes normativas y estándares de privacidad. Las plantillas disponibles de su organización pueden incluir una o más plantillas que se incluyeron como parte del contrato de licencia, junto con cualquier otra plantilla premium que haya adquirido. Cada plantilla, incluida o premium, existe en dos versiones: una para su uso con Microsoft 365 y una versión universal que se puede adaptar a otros productos que use. Para obtener más información acerca de las plantillas, vea [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
 
 > [!NOTE]
 > Solo los usuarios que tienen un rol de administrador global, administración del administrador de cumplimiento o evaluador de administrador de cumplimiento pueden crear y modificar evaluaciones. Obtenga más información [sobre roles y permisos](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
@@ -88,7 +89,9 @@ Para empezar a crear evaluaciones, siga estos pasos.
 
 3. **Seleccione una plantilla:** si no ha elegido una plantilla en el paso 2, elija una plantilla para que sirva de base para su evaluación. Verá la lista de plantillas divididas en categorías incluidas y premium (vea [Tipos de plantilla](compliance-manager-templates.md#template-availability-and-licensing) para obtener más información). Seleccione el botón de radio junto a la plantilla elegida y, a continuación, **seleccione Siguiente**.
 
-4. **Nombre y grupo:** Establezca estas propiedades para identificar la evaluación y asignarla a un grupo.
+4. **Producto, nombre y grupo:** Establezca estas propiedades para identificar la evaluación, elija el producto que va a evaluar y asígnelo a un grupo.
+
+    - **Producto:** si usa una plantilla universal, seleccione si está creando esta evaluación para un producto nuevo o un producto personalizado existente que ya haya definido en el Administrador de cumplimiento. Si elige un producto nuevo, escriba su nombre. Tenga en cuenta que no puede Microsoft 365 como el producto al usar una plantilla universal. Si usa una plantilla Microsoft 365, este campo se rellenará para que pueda indicar Microsoft 365 y no se puede cambiar.
     - **Nombre:** escriba un nombre para la evaluación en el **campo Nombre de** evaluación. Los nombres de evaluación deben ser únicos dentro de los grupos. Si el nombre de la evaluación coincide con el nombre de otra evaluación en un grupo determinado, recibirá un error que le pedirá que cree un nombre diferente.
     - **Grupo:** asigne la evaluación a un grupo. Puede:
         - Seleccione **Usar grupo existente** para asignarlo a un grupo que ya ha creado; o
@@ -134,11 +137,11 @@ Debajo del gráfico, una tabla enumera información detallada sobre cada control
 - **Identificador de** control: número de identificación del control, asignado por su reglamento, estándar o directiva correspondientes
 - **Puntos logrados:** el número de puntos ganados al completar acciones, del número total de puntos alcanzables 
 - **Tus acciones:** el número de acciones completadas fuera del número total de acciones que se realizarán
-- **Acciones de Microsoft:** el número de acciones completadas por Microsoft 
+- **Acciones de Microsoft:** el número de acciones completadas por Microsoft
 
 Para ver los detalles de un control, selecciónelo en su fila de la tabla. La página de detalles del control muestra un gráfico que indica el estado de prueba de las acciones dentro de ese control. Una tabla debajo del gráfico muestra acciones clave de mejora para ese control.
 
-Seleccione una acción de mejora de la lista para profundizar en la página de detalles de la acción de mejora. Las páginas de detalles muestran el estado de la prueba, las notas de implementación y el inicio en la solución recomendada.
+Seleccione una acción de mejora de la lista para profundizar en la página de detalles de la acción de mejora. La página de detalles muestra el estado de la prueba y las notas de implementación, y se inicia en la solución recomendada.
 
 ### <a name="your-improvement-actions-tab"></a>Pestaña Acciones de mejora
 
@@ -148,7 +151,7 @@ Seleccione una acción de mejora para ver su página de detalles y seleccione **
 
 ### <a name="microsoft-actions-tab"></a>Pestaña Acciones de Microsoft
 
-La pestaña Acciones de Microsoft enumera todas las acciones de la evaluación administradas por Microsoft. La lista muestra detalles de acción clave, incluidos: estado de prueba, puntos que contribuyen a la puntuación general de cumplimiento, normativas y estándares asociados, solución aplicable, tipo de acción y familia de controles. Seleccione una acción de mejora para ver su página de detalles.
+La pestaña Acciones de Microsoft aparece para las evaluaciones en función de las Microsoft 365 de las plantillas. Enumera todas las acciones de la evaluación administradas por Microsoft. La lista muestra detalles de acción clave, incluidos: estado de prueba, puntos que contribuyen a la puntuación general de cumplimiento, normativas y estándares asociados, solución aplicable, tipo de acción y familia de controles. Seleccione una acción de mejora para ver su página de detalles.
 
 Obtenga más información sobre cómo se realiza un seguimiento y una puntuación de los controles [y las acciones de mejora.](compliance-score-calculation.md)
 

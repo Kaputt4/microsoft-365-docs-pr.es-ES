@@ -3,7 +3,7 @@ title: Usar Office 365 Content Delivery Network (CDN) con SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/19/2020
+ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Obtenga información sobre cómo usar el Office 365 Content Delivery Network (CDN) para acelerar la entrega de los activos SharePoint Online.
-ms.openlocfilehash: 5e9ed00462b7073c7e03f62a5de6bf26f1e586af
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 24b86f059e5a59d3b6dadf989bef0ab38ad8e010
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289456"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419567"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -37,7 +37,7 @@ Puede usar la red de entrega de contenido (CDN) de Office 365 integrada para hos
 
 La CDN de Office 365 se compone de varias redes CDN que permite hospedar archivos estáticos en varias ubicaciones u _orígenes_ y a realizar la entrega desde redes de alta velocidad globales. Según el tipo de contenido que quiera hospedar en la CDN de Office 365, puede agregar orígenes **públicos**, **privados** o ambos. Vea [Elegir si cada origen debe ser público o privado](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) para obtener más información sobre la diferencia entre orígenes públicos y privados.
 
-![Office 365 CDN diagrama conceptual](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN diagrama conceptual")
+![Office 365 CDN diagrama conceptual](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN diagrama conceptual")
 
 Si ya está familiarizado con la forma en que funcionan las CDN, solo tiene que completar unos pasos para habilitar el Office 365 CDN para el inquilino. En este tema se describe cómo. Sigue leyendo para obtener información sobre cómo empezar a hospedar los activos estáticos.
 
@@ -920,7 +920,7 @@ A continuación, se muestra información general sobre los vínculos que la cara
 
 El siguiente diagrama ilustra el flujo de trabajo cuando SharePoint una solicitud de una página que contiene activos de un origen público.
 
-![Diagrama de flujo de trabajo: recuperar Office 365 CDN activos de un origen público](../media/O365-CDN/o365-cdn-public-steps-transparent.svg "Flujo de trabajo: recuperación Office 365 CDN activos desde un origen público")
+![Diagrama de flujo de trabajo: recuperar Office 365 CDN activos de un origen público](../media/O365-CDN/o365-cdn-public-steps-transparent.png "Flujo de trabajo: recuperación Office 365 CDN activos desde un origen público")
 
 > [!TIP]
 > Si desea deshabilitar la reescritura automática para direcciones URL específicas de una página, puede desangre la página y agregar el parámetro de cadena de consulta **? NoAutoReWrites=true** al final de cada vínculo que desea deshabilitar.
@@ -956,7 +956,7 @@ El acceso a activos en orígenes privados está protegido por tokens generados d
 
 El diagrama siguiente ilustra el flujo de trabajo cuando SharePoint una solicitud de una página que contiene activos de un origen privado.
 
-![Diagrama de flujo de trabajo: recuperación Office 365 CDN activos desde un origen privado](../media/O365-CDN/o365-cdn-private-steps-transparent.svg "Flujo de trabajo: recuperación Office 365 CDN activos desde un origen privado")
+![Diagrama de flujo de trabajo: recuperación Office 365 CDN activos desde un origen privado](../media/O365-CDN/o365-cdn-private-steps-transparent.png "Flujo de trabajo: recuperación Office 365 CDN activos desde un origen privado")
 
 #### <a name="token-based-authorization-in-private-origins"></a>Autorización basada en tokens en orígenes privados
 
@@ -1045,7 +1045,7 @@ Puede elegir trabajar con el Office 365 CDN mediante el módulo de **PowerShell*
 + [Introducción al Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 + [Instalar Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Redes de entrega de contenido](./content-delivery-networks.md)
 

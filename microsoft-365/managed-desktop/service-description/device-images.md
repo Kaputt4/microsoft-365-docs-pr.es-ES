@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: fb3646e2ff339115d3fe6043ed45ea8f2140105a
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300115"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419516"
 ---
 # <a name="device-images"></a>Imágenes del dispositivo
 
@@ -41,23 +41,7 @@ Si estás ordenando un dispositivo de HP [](customizing.md) que se ha aprobado c
 - Global: mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Cuando ordenes dispositivos de Lenovo para usarlos en Escritorio administrado de Microsoft, tendrás que indicar un número de parte específico incluido como parte del pedido. Póngase en contacto con su representante de ventas de Lenovo o con el partner de canal de Lenovo y pídales que creen un *"modelo* de oferta especial" con un sistema que cumpla con nuestros requisitos [de dispositivo.](device-requirements.md#minimum-requirements) Para incluir una imagen precargado compatible con Escritorio administrado de Microsoft, pida al representante de ventas que haga referencia a "*System building block part number SBB0Q94938 – MMD Enablement*."
-
-Actualmente, los siguientes productos están habilitados Escritorio administrado de Microsoft soporte técnico:
-
-- L13 Gen 1
-- L13 Yoga Gen 1
-- L14 Gen 1 (Intel)
-- L14 Gen 1 (AMD)
-- L15 Gen 1 (Intel)
-- L15 Gen 1 (AMD)
-- X1 Carbon Gen 8
-- X1 Yoga Gen 5
-- T14 Gen 1 (Intel)
-- T14 Gen 1 (AMD)
-- T15 Gen 1
-- X13 Gen 1 (Intel)
-
+Cuando ordenes dispositivos de Lenovo para usarlos en Escritorio administrado de Microsoft, tendrás que indicar un número de parte específico incluido como parte del pedido. Póngase en contacto con su representante de ventas de Lenovo o con el partner de canal de Lenovo y pídales que creen un *"modelo* de oferta especial" con un sistema que cumpla con nuestros requisitos [de dispositivo.](device-requirements.md#minimum-requirements) Para incluir una imagen precargado compatible con Escritorio administrado de Microsoft, pida al representante de ventas que haga referencia a "*System building block part number SBB0Q94938 – MMD Enablement*." Trabaje con el representante de ventas de Lenovo o el partner de canal de Lenovo para obtener servicios recomendados, soporte técnico e imágenes.
 
 ### <a name="microsoft"></a>Microsoft
 Todos los dispositivos microsoft que cumplen los requisitos del dispositivo vienen con una imagen que funciona con Escritorio administrado de Microsoft. No se requieren otros pasos.

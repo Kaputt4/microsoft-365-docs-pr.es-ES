@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
-ms.openlocfilehash: 2d20fa69345f2ff2624252972cb0e017e401f0dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4386f5be67d01d3d6961ccc4bd51ecf729bc8a38
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149135"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419588"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
@@ -30,7 +30,7 @@ ms.locfileid: "53149135"
 
 ## <a name="templates-overview"></a>Introducción a plantillas
 
-Una plantilla es un marco de controles para crear una evaluación en el Administrador de cumplimiento. Nuestro conjunto completo de plantillas puede ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos. Nos referimos a plantillas con el mismo nombre que su certificación o reglamento subyacentes, como la plantilla RGPD de la UE y la plantilla ISO/IEC 27701:2019.
+Una plantilla es un marco de controles para crear una evaluación en el Administrador de cumplimiento. Nuestro conjunto completo de plantillas puede ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos. Nos referimos a plantillas con el mismo nombre que su certificación o reglamento subyacentes, como la plantilla RGPD de la UE y la plantilla ISO/IEC 27701:2019. Dado que el pesebre de cumplimiento se puede usar para evaluar diferentes tipos de productos, cada plantilla viene en dos versiones: una que se aplica a Microsoft 365 y una versión universal que se puede personalizar para que se adapte al producto elegido.
 
 ## <a name="template-availability-and-licensing"></a>Disponibilidad y licencias de plantillas
 
@@ -50,7 +50,7 @@ Las plantillas mostrarán un estado de activación como activo o inactivo:
 - Una plantilla se considera **activa** una vez que se crea una evaluación a partir de esa plantilla.
 - Una plantilla se considera **inactiva** si su organización no la usa para una evaluación.
 
-Al comprar una plantilla premium y crear una evaluación a partir de ella, esa plantilla está activa durante un año. La compra se renovará automáticamente a menos que canceles.
+Si vinculas cualquier evaluación a una plantilla premium comprada, esa plantilla estará activa durante un año. La compra se renovará automáticamente a menos que canceles.
 
 También puede probar plantillas premium en una versión de prueba. Las licencias de prueba son válidas para un máximo de 25 plantillas durante 30 días. Una vez que comience la prueba, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas. Las pruebas se pueden activar a través del Centro de administración de Microsoft 365.
 
@@ -61,6 +61,8 @@ La página de evaluación y la página de plantillas de evaluación tienen **un 
 Por ejemplo, si el contador muestra 2/5, esto significa que su organización ha activado 2 plantillas de las 5 que están disponibles para usar.
 
 Si el contador muestra 5/2, esto indica que su organización supera sus límites y necesita comprar 3 de las plantillas premium en uso.
+
+Microsoft 365 versiones universales y de plantillas tienen licencias conjuntas, de modo que puede usar la misma certificación subyacente en más de un producto. El uso de una o ambas versiones de la misma plantilla solo contará como una plantilla activada.
 
 Para obtener más información, consulte [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 
@@ -123,7 +125,7 @@ Se **requiere la pestaña** Acciones.  Designa acciones de mejora administradas 
 
 - **actionScore:** en este campo obligatorio, proporcione un valor de puntuación numérico para la acción. El valor debe ser un número entero que va de 1 a 99; no puede ser 0, nulo o en blanco. Cuanto mayor sea el número, mayor será su valor para mejorar la posición de cumplimiento. En la imagen siguiente se muestra cómo puntua el Administrador de cumplimiento los controles:
 
-![El Administrador de cumplimiento controla los valores de puntos](../media/compliance-score-action-scoring.png "El Administrador de cumplimiento controla los valores de puntos")
+  ![El Administrador de cumplimiento controla los valores de puntos](../media/compliance-score-action-scoring.png "El Administrador de cumplimiento controla los valores de puntos")
 
 - **actionDescriptionTitle:** este es el título de la descripción y es obligatorio. Este título de descripción te permite tener la misma acción en varias plantillas y mostrar una descripción diferente en cada plantilla.  Este campo le ayuda a aclarar la plantilla a la que hace referencia la descripción. En la mayoría de los casos, puede colocar el nombre de la plantilla que está creando en este campo.
 
@@ -160,9 +162,13 @@ Solo los usuarios que tienen un rol de administrador global o administrador de c
 7. La última pantalla confirma que se ha creado una plantilla nueva. Seleccione **Listo** para salir del asistente.
 8. Llegará a la página de detalles de la nueva plantilla, donde puede [crear la evaluación](compliance-manager-assessments.md#create-assessments).
 
-## <a name="extend-an-assessment-template"></a>Ampliar una plantilla de evaluación
+## <a name="extend-microsoft-365-assessment-templates"></a>Ampliar Microsoft 365 de evaluación
 
 El Administrador de cumplimiento ofrece la opción de agregar sus propios controles y acciones de mejora a una plantilla proporcionada por Microsoft existente. Este proceso se denomina extensión de una plantilla de Microsoft. Al ampliar una plantilla, todavía puede recibir actualizaciones publicadas por Microsoft, lo que puede ocurrir cuando hay cambios en la regulación o el producto relacionado (vea Aceptar actualizaciones de [evaluaciones](compliance-manager-assessments.md#accept-updates-to-assessments)).
+
+Tenga en cuenta que si está configurando evaluaciones para productos que no Microsoft 365, el proceso será diferente. Para obtener más información, vea [Extend universal assessment templates](#extend-universal-assessment-templates).
+
+### <a name="prepare-template-data-and-create-extension"></a>Preparar datos de plantilla y crear extensión
 
 Para prepararlo, deberá ensamblar una hoja de cálculo Excel formato especial para importar los datos de plantilla necesarios. Los Excel siguen el mismo formato general descrito anteriormente, pero existen requisitos especiales para las extensiones. Vea estos puntos adicionales para ayudar a evitar errores:
 
@@ -195,6 +201,12 @@ Después de dar formato a la hoja de cálculo, siga los pasos siguientes.
 10. La última pantalla confirma que se ha creado una plantilla nueva. Seleccione **Listo** para salir del asistente.
 
 11. Llegarás a la página de detalles de la nueva plantilla. Desde aquí puede crear su evaluación seleccionando **Crear evaluación**. Para obtener instrucciones, vea [Build and manage assessments](compliance-manager-assessments.md#create-assessments).
+
+## <a name="extend-universal-assessment-templates"></a>Ampliar plantillas de evaluación universal
+
+Las versiones universales de las plantillas también se pueden ampliar para personalizar las evaluaciones específicas del producto. Recibirá una plantilla de extensión especial cuando cree una evaluación con una plantilla universal y la evaluación tenga una combinación única de producto y certificación. Esto se puede modificar para satisfacer sus necesidades. Para obtener instrucciones sobre cómo editar la plantilla, consulte las instrucciones siguientes sobre cómo modificar una plantilla.
+
+Al editar una plantilla universal, se puede cambiar todo el contenido de la plantilla, pero al hacerlo se romperá la herencia con la plantilla primaria. Esto significa que ya no recibirá automáticamente actualizaciones de Microsoft si se actualiza la plantilla primaria.
 
 ## <a name="modify-a-template"></a>Modificar una plantilla
 
@@ -282,11 +294,11 @@ Después de Excel y guardado el archivo, siga estos pasos.
 La plantilla ahora incluirá los cambios realizados. Las evaluaciones que usen esta plantilla modificada ahora mostrarán actualizaciones pendientes y deberá aceptar las actualizaciones de las evaluaciones para reflejar los cambios realizados en la plantilla. Obtenga más información sobre [las actualizaciones de las evaluaciones](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 > [!NOTE]
-> Si usa el Administrador de cumplimiento en un idioma distinto del inglés, observará que algún texto aparece en inglés al exportar una plantilla a Excel. Los títulos de las acciones (tanto las acciones de mejora como las acciones de Microsoft) deben estar en inglés para ser reconocidos por los controles. Si realiza cambios en un título de acción, asegúrese de escribirlo en inglés para que el archivo se importe correctamente.
+> Si usa el Administrador de cumplimiento en un idioma distinto del inglés, observará que algún texto aparece en inglés al exportar una plantilla a Excel. Los títulos de las acciones (tanto las acciones de mejora como, en su caso, las acciones de Microsoft) deben estar en inglés para que los controles los reconozcan. Si realiza cambios en un título de acción, asegúrese de escribirlo en inglés para que el archivo se importe correctamente.
 
 ## <a name="export-a-template"></a>Exportar una plantilla
 
-Puede exportar un archivo Excel que contenga todos los datos de una plantilla. Tendrás que exportar una plantilla para modificarla, ya que este será el archivo Excel editar y cargar en el proceso [de modificación.](#modify-a-template)
+Puede exportar un archivo Excel que contenga todos los datos de una plantilla. Tendrás que exportar una plantilla para modificarla, ya que este será el archivo Excel editar y cargar en el proceso [de modificación.](#modify-a-template) También puede exportar una plantilla como referencia si desea usar datos a partir de ella al crear una nueva plantilla personalizada.
 
 Para exportar la plantilla, vaya a la página de detalles de la plantilla y seleccione el botón Exportar **a Excel** plantilla.
 

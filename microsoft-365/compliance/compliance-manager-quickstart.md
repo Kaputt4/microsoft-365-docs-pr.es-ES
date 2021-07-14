@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del Administrador de cumplimiento para ayudarle a lo largo de su recorrido de comprensión, configuración y uso del Administrador de cumplimiento.
-ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 59d833c74c0d56d82d3f4ae4170e1bbd32638a49
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149051"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419600"
 ---
 # <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
 
@@ -63,7 +63,7 @@ Cuando se sienta cómodo al administrar evaluaciones en el Administrador de cump
 
 También puede configurar pruebas automatizadas de todas o un subconjunto de acciones de mejora. Visite los vínculos siguientes para comprender la funcionalidad más avanzada en el Administrador de cumplimiento:
 
-- [Ampliar una plantilla del Administrador de cumplimiento agregando tus propios controles y acciones de mejora](compliance-manager-templates.md#extend-an-assessment-template)
+- [Ampliar una plantilla del Administrador de cumplimiento agregando tus propios controles y acciones de mejora](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
 - [Crear su propia plantilla personalizada](compliance-manager-templates.md#create-an-assessment-template)
 - [Modificar una plantilla existente para agregar o quitar controles y acciones](compliance-manager-templates.md#modify-a-template)
 - [Configurar pruebas automatizadas de acciones de mejora](compliance-manager-setup.md#set-up-automated-testing)
