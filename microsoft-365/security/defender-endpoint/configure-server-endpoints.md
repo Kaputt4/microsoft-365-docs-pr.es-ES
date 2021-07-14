@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: ff4c44199e4b6f8f1b3ca4806908813d7e710e4b
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339243"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415616"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -222,6 +222,12 @@ Se requieren los siguientes pasos para habilitar esta integración:
 ## <a name="offboard-windows-servers"></a>Servidores de Windows offboard
 
 Puede salir de Windows Server (SAC), Windows Server 2019 y Windows Server 2019 Core edition en el mismo método disponible para dispositivos cliente Windows 10 cliente.
+
+- [Offboarding con directiva de grupo](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Dispositivos offboard con Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [Offboard y supervisar dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Dispositivos offboard con un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
 
 Para otras Windows de servidor, tiene dos opciones para salir Windows servidores del servicio:
 

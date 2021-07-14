@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga respuestas a las preguntas más frecuentes (preguntas frecuentes) sobre Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
-  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.openlocfilehash: 5f15453f21ef48fcc1f8266d9474fc0cbc4190c2
+  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "53395269"
+  ms.lasthandoff: 07/13/2021
+  ms.locfileid: "53415544"
 title: Microsoft 365 Lighthouse preguntas más frecuentes (preguntas frecuentes)
 summary: >
   > [!NOTE]
@@ -49,6 +49,12 @@ sections:
   - question: ¿Cuáles son los requisitos para usar Microsoft 365 Lighthouse?
     answer: >
       Para obtener una lista de los requisitos actuales, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: ¿En qué países y regiones Microsoft 365 Lighthouse disponible?
+    answer: >
+      Microsoft 365 Lighthouse está disponible en todos los países donde Microsoft 365 está disponible, excepto China y la Autoridad Palestina. Sin embargo, las características de Microsoft 365 Lighthouse, como la administración de dispositivos y la administración de amenazas, dependen de Microsoft Intune y la administración de usuarios se basa en Azure Active Directory (Azure AD) y Intune y Azure AD pueden no estar disponibles en determinados países y regiones. Para obtener una lista completa de Microsoft 365, Azure AD e disponibilidad de Intune, vea [Disponibilidad internacional](https://www.microsoft.com/microsoft-365/business/international-availability).
+
+
+      Microsoft 365 Lighthouse no está disponible en las nubes nacionales.
   - question: ¿Cómo me inscribo en Microsoft 365 Lighthouse?
     answer: >
       Para registrarse en Microsoft 365 Lighthouse, deberá estar registrado en el programa CSP. Actualmente no podemos admitir proveedores indirectos. Para obtener instrucciones sobre cómo registrarse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). Para obtener más información sobre el programa CSP, vea [el Proveedor de soluciones en la nube introducción al programa](/partner-center/csp-overview).

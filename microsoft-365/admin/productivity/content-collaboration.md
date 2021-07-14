@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la colaboración de contenido: las personas experimenta la puntuación de productividad.'
-ms.openlocfilehash: 2921cc738d1325416a0a5a8ab4a8eea9456b3269
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: d403f533fd69ee47fb48907f11d4752985daea1a
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300093"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415628"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
@@ -137,7 +137,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
         - Numerador: número de personas que adjuntan archivos al correo electrónico que no se guardaron en OneDrive o SharePoint en los últimos 28 días.
         - Denominador: el número de personas que han tenido acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
       - **Vínculos a archivos en línea:** La parte azul (coloreada) de la barra y la fracción (numerador/denominador) de la barra representan el porcentaje de personas que usan datos adjuntos y adjuntan vínculos a archivos de correos electrónicos.
-        - Numerador: número de personas que adjuntan vínculos a archivos en línea (guardados en OneDrive o SharePoint) a correos electrónicos en los últimos 28 días.
+        - Numerador: número de personas que adjuntan vínculos a archivos en línea a correos electrónicos en los últimos 28 días.
         - Denominador: el número de personas que tienen acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
 4. **Vínculo a recursos:** Seleccione este vínculo para ver el contenido de la ayuda.
 
