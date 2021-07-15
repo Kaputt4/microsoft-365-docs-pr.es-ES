@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implemente funcionalidades de gobernanza de aplicaciones de Microsoft para controlar sus aplicaciones.
-ms.openlocfilehash: bc8c739132de52abb69c15479cd851462e9f6ce7
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 63bd6684bc041c3c82ba6b8ddcc28c2600182b26
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420310"
+ms.locfileid: "53430701"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Complemento de gobernanza de aplicaciones para Microsoft Cloud App Security (en versión preliminar)
 
@@ -53,7 +53,7 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 ## <a name="a-first-glimpse-at-app-governance"></a>Primer vistazo a la gobernanza de aplicaciones
 
-Para ver el panel de gobernanza de aplicaciones, diríjase a [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Tenga en cuenta que su cuenta de inicio de sesión debe tener uno de los [roles de administrador](app-governance-get-started.md#administrator-roles) para ver cualquier dato de gobernanza de aplicaciones.
+Para ver el panel de gobernanza de aplicaciones, diríjase a [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Tenga en cuenta que su cuenta de inicio de sesión debe tener uno de los [roles de administrador](app-governance-get-started.md#administrator-roles) para ver cualquier dato de gobernanza de aplicaciones.
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>Integración de gobernanza de aplicaciones con Azure AD y Microsoft Cloud App Security
 
@@ -63,7 +63,7 @@ La gobernanza de aplicaciones, Azure AD y Microsoft Cloud App Security recopilan
 - Azure AD proporciona metadatos de aplicaciones fundamentales e información detallada sobre los inicios de sesión en las aplicaciones.
 - Microsoft Cloud App Security proporciona información de riesgo de la aplicación.
 
-Al compartir información entre la gobernanza de aplicaciones, Azure AD y Microsoft Cloud App Security, puede mostrar información agregada en un portal y vincular fácilmente a otro portal para obtener más información. Estos son algunos ejemplos:
+Al compartir información entre el gobierno de aplicaciones, Azure AD y Microsoft Cloud App Security, puede mostrar información agregada en un portal y vincular fácilmente a otro portal para obtener más información. Aquí hay unos ejemplos:
 
 - Información de inicio de sesión de la aplicación en la gobernanza de aplicaciones:
 

@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 972282713e21c0e1f99a66e696de32531e68d4a7
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: e1de507dd5ec9508df0318c8ba2ef30af795e25b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114781"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430797"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -190,7 +190,7 @@ Cuando configura una directiva de etiqueta, puede:
 
     ![Aviso en el que los usuarios especifican una justificación](../media/Sensitivity-label-justification-required.png)
 
-- **Requiera a los usuarios que apliquen una etiqueta** para documentos y correos electrónicos, solo para documentos y para contenedores. También conocidas como etiquetado obligatorio, estas opciones garantizan que se aplique una etiqueta antes de que los usuarios puedan guardar documentos y enviar mensajes de correo electrónico, y crear nuevos grupos o sitios.
+- **Solicite a los usuarios que apliquen una etiqueta** para documentos y correos electrónicos, solo documentos, para contenedores y contenido de Power BI. También conocidas como etiquetado obligatorio, estas opciones garantizan que se debe aplicar una etiqueta antes de que los usuarios puedan guardar documentos y enviar correos electrónicos, crear nuevos grupos o sitios y cuando usen contenido sin etiquetar para Power BI.
     
     Para documentos y mensajes de correo electrónico, el usuario puede asignar una etiqueta manualmente; de forma automática como resultado de una condición configurada; o bien, de forma predeterminada (la opción de etiqueta predeterminada descrita anteriormente). Se muestra un ejemplo en Outlook cuando un usuario debe asignar una etiqueta:
 
@@ -199,6 +199,8 @@ Cuando configura una directiva de etiqueta, puede:
     Para obtener más información sobre las etiquetas obligatorias para documentos y correos electrónicos, consulte [Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
     Para los contenedores, se debe asignar una etiqueta al momento de crear el grupo o sitio.
+    
+    Para obtener más información sobre el etiquetado obligatorio para Power BI, vea [Directiva de etiquetas obligatorias para Power BI](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy).
     
     Considere usar esta opción para mejorar la cobertura de la etiqueta. Sin embargo, sin el aprendizaje del usuario, estas opciones de configuración también pueden dar como resultado un etiquetado incorrecto. Además, a menos que también establezca una etiqueta predeterminada correspondiente, el etiquetado obligatorio puede frustrar a los usuarios debido a los avisos frecuentes.
 

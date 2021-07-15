@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: f0e67dc6cab0ac135a8ff752e1d2b97aff846cf2
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: 41482a97a7e940fab61b5b4884431ca7b385c3c0
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415640"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438005"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrate para Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ ms.locfileid: "53415640"
 
     Para comprobar que Microsoft 365 Lighthouse se agregó correctamente al inquilino, busque Microsoft 365 Lighthouse en **Facturación >** Sus productos en el Centro de administración de Microsoft 365.
 
-1. Si no se le redirige al portal de Microsoft 365 Lighthouse, vaya a <a href="https://lighthouse.microsoft.com" target="_blank">https://lighthouse.microsoft.com</a> .
+1. Si no se le redirige al portal de Microsoft 365 Lighthouse, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> .
 
 1. Seleccione **Aceptar & Continuar** para completar la modificación del contrato de socio.
 

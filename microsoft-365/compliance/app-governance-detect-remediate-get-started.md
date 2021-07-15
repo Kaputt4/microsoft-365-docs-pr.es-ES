@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a la detección y corrección de amenazas de aplicaciones.
-ms.openlocfilehash: 77de3676a9a486bbed572a4a16bf62ad4d038406
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 6229d2cf94ec1ba892929f399fe49cf88da608d1
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430725"
+ms.locfileid: "53420343"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>Introducción a la detección y corrección de amenazas de aplicaciones
 
@@ -27,7 +27,7 @@ ms.locfileid: "53430725"
 
 La gobernanza de aplicaciones de Microsoft recopila alertas de amenazas generadas por métodos de detección de gobernanza de aplicaciones integrados basados en actividades de aplicaciones malintencionadas y alertas basadas en directivas generadas por las directivas de aplicación activas que cree.
 
-El primer lugar para ver las alertas de la aplicación es el panel de gobernanza de la aplicación en [https://aka.ms/appgovernance](https://aka.ms/appgovernance).
+El primer lugar para ver las alertas de la aplicación es el panel de gobernanza de la aplicación en [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance).
 
 ![Página de información general de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365 con la sección Alertas de directivas y detección resaltada](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 

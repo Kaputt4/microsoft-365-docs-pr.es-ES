@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b17585f7449f1151c7a5f5cd75d06b8e723fbe4b
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245797"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438017"
 ---
 # <a name="device-requirements"></a>Requisitos del dispositivo
 
@@ -49,7 +49,9 @@ El dispositivo debe tener preinstalado este software:
 - la versión de 64 bits de Aplicaciones Microsoft 365 para empresas 
 - Todos los controladores de dispositivo aplicables
 
-
+> [!NOTE]
+> Windows 11 será una opción adicional para el software preinstalado una vez que haya alcanzado la disponibilidad general.
+>
 ### <a name="physical-features"></a>Características físicas
 
 Los dispositivos deben tener estas capacidades:
@@ -62,7 +64,8 @@ Los dispositivos deben tener estas capacidades:
 Para obtener más información sobre estas capacidades y las tecnologías relacionadas con ellas que usa el servicio, [vea Escritorio administrado de Microsoft technologies](../intro/technologies.md).
 
 > [!NOTE]
-> ARM procesadores no son compatibles.
+>- ARM procesadores no son compatibles.
+>- Windows 11 tiene requisitos de [hardware adicionales.](/windows/whats-new/windows-11-requirements)
 
 Los dispositivos deben cumplir o superar los siguientes límites de almacenamiento y memoria:
 
@@ -70,7 +73,7 @@ Los dispositivos deben cumplir o superar los siguientes límites de almacenamien
 - La unidad de arranque debe tener una capacidad de al menos 128 GB.
 - La memoria interna del dispositivo (RAM) debe ser igual o superior a 8 GB.
 
-Si el dispositivo se hizo después del 1 de julio de 2020, también debe tener una cámara IR, un lector de huellas digitales o ambos, para admitir Windows [Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
+Si el dispositivo se hizo después del 1 de julio de 2020, también debe tener una cámara IR, un lector de huellas digitales o [ambos,](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)para admitir Windows Hello .
 
 ## <a name="recommended-features"></a>Características recomendadas
 

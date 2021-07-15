@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
-ms.openlocfilehash: 0469070ed6d46b7695526697c255e23c0dc009ec
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4de78934a76a7dba16f79cb9cc6f93a7c935a314
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286422"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419792"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 
@@ -63,22 +63,22 @@ Para obtener más información, vea:
 
 Estos parámetros son comunes a todos los métodos de servicio web:
 
-- **format=<JSON | CSV>**: de forma predeterminada, el formato de datos devueltos es JSON. Use este parámetro opcional para devolver los datos en formato de valores separados por comas (CSV).
-- **ClientRequestId=\<guid>**: un GUID obligatorio que se genera para la asociación del cliente. Genere un GUID único para cada equipo que llama al servicio web (los scripts que se incluyen en esta página generan un GUID por usted). No use los GUID que se muestran en los ejemplos siguientes, puesto que el servicio web puede bloquearlos en el futuro. El formato GUID es _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, donde x representa un número hexadecimal.
+- **format=\<JSON \| CSV\>**: de forma predeterminada, el formato de datos obtenido es JSON. Use este parámetro opcional para devolver los datos en formato de valores separados por comas (CSV).
+- **ClientRequestId=\<guid\>**: un GUID obligatorio que se genera para la asociación del cliente. Genere un GUID único para cada equipo que llama al servicio web (los scripts que se incluyen en esta página generan un GUID por usted). No use los GUID que se muestran en los ejemplos siguientes, puesto que el servicio web puede bloquearlos en el futuro. El formato GUID es _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, donde x representa un número hexadecimal.
 
   Para generar un GUID, puede usar el comando de PowerShell [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) o usar un servicio en línea como el [Generador GUID en línea](https://www.guidgenerator.com/).
 
 ## <a name="version-web-method"></a>Método web de versión
 
-Microsoft actualiza las entradas de direcciones IP y FQDN de Office 365 al final de cada mes. En ocasiones, las actualizaciones fuera de banda se publican debido a incidencias de soporte técnico, actualizaciones de seguridad u otros requisitos operativos.
+Microsoft actualiza las entradas de direcciones IP y FQDN de Office 365 al principio de cada mes. En ocasiones, las actualizaciones fuera de banda se publican debido a incidencias de soporte técnico, actualizaciones de seguridad u otros requisitos operativos.
 
 Los datos de cada instancia publicada se asignan a un número de versión y el método web de versión le permite buscar la versión más reciente de cada una de las instancias del servicio de Office 365.
 
 Los parámetros del método web de versión son:
 
-- **AllVersions=<true | false>**: de forma predeterminada, la versión devuelta es la más reciente. Incluya este parámetro opcional para solicitar todas las versiones publicadas desde la primera publicación del servicio web.
-- **Format=<JSON | CSV | RSS>**: además de los formatos JSON y CSV, el método web de versión también es compatible con RSS. Puede usar este parámetro opcional con el parámetro _AllVersions=true_ para solicitar una fuente RSS que pueda usarse con Outlook u otros lectores de RSS.
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>**: este parámetro opcional especifica la instancia para la que se devolverá la versión. Si se omite, se devuelven todas las instancias. Instancias válidas son: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+- **AllVersions=\<true \| false\>**: de forma predeterminada, la versión obtenida es la más reciente. Incluya este parámetro opcional para solicitar todas las versiones publicadas desde la primera publicación del servicio web.
+- **Format=\<JSON \| CSV \| RSS\>**: además de los formatos JSON y CSV, el método web de versión también es compatible con RSS. Puede usar este parámetro opcional con el parámetro _AllVersions=true_ para solicitar una fuente RSS que pueda usarse con Outlook u otros lectores de RSS.
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>**: este parámetro opcional especifica la instancia para la que se obtendrá la versión. Si se omite, se devuelven todas las instancias. Instancias válidas son: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
 El método web de versión no tiene una tasa limitada y no devuelve nunca códigos de respuesta HTTP 429. La respuesta al método web de versión incluye un encabezado de control de caché que recomienda el almacenamiento en caché de los datos durante una hora. El resultado del método web de versión puede ser un registro único o una matriz de registros. Los elementos de cada registro son:
 
@@ -86,9 +86,9 @@ El método web de versión no tiene una tasa limitada y no devuelve nunca códig
 - latest: la versión más reciente de los puntos de conexión de la instancia especificada.
 - versions: una lista de todas las versiones anteriores de la instancia especificada. Este elemento solo se incluye si el parámetro _AllVersions_ es verdadero.
 
-### <a name="examples"></a>Ejemplos:
+### <a name="version-web-method-examples"></a>Ejemplos de método web de versión
 
-Ejemplo 1 de URI de solicitud: [https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Ejemplo 1 de URI de solicitud: <https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 Este URI devuelve la versión más reciente de cada instancia de servicio de Office 365. Resultado de ejemplo:
 
@@ -120,7 +120,7 @@ Este URI devuelve la versión más reciente de cada instancia de servicio de Off
 > [!IMPORTANT]
 > El GUID para el parámetro ClientRequestID en estos URI es solo un ejemplo. Para probar los URI de servicio web, genere su propio GUID. El servicio web podría bloquear en el futuro los GUID que se muestran en estos ejemplos.
 
-Ejemplo 2 de URI de solicitud: [https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Ejemplo 2 de URI de solicitud: <https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 Este URI devuelve la versión más reciente de la instancia de servicio especificada de Office 365. Resultado de ejemplo:
 
@@ -131,7 +131,7 @@ Este URI devuelve la versión más reciente de la instancia de servicio especifi
 }
 ```
 
-Ejemplo 3 de URI de solicitud: [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Ejemplo 3 de URI de solicitud: <https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 Este URI muestra los resultados en formato CSV. Resultado de ejemplo:
 
@@ -140,7 +140,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-Ejemplo 4 de URI de solicitud: [https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Ejemplo 4 de URI de solicitud: <https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 Este URI muestra todas las versiones anteriores que se han publicado para la instancia de servicio de Office 365 en todo el mundo. Resultado de ejemplo:
 
@@ -155,7 +155,7 @@ Este URI muestra todas las versiones anteriores que se han publicado para la ins
 }
 ```
 
-Ejemplo 5 de URI de fuente RSS: [https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS](https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS)
+Ejemplo 5 de URI de fuente RSS: <https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS>
 
 Este URI muestra una fuente RSS de las versiones publicadas que incluyen vínculos a la lista de cambios de cada versión. Resultado de ejemplo:
 
@@ -180,10 +180,10 @@ El método web de puntos de conexión devuelve todos los registros de intervalos
 
 Los parámetros del método web de puntos de conexión son:
 
-- **ServiceAreas=<Common | Exchange | SharePoint | Skype>**: una lista separada por comas de las áreas de servicio. Los elementos válidos son _Common_, _Exchange_, _SharePoint_ y _Skype_. Como los elementos del área de servicio _Common_ son un requisito previo de todas las demás áreas de servicio, el servicio web siempre los incluye. Si no incluye este parámetro, se devolverán todas las áreas de servicio.
-- **TenantName=<tenant_name>**: su nombre de inquilino de Office 365. El servicio web toma el nombre que usted proporciona y lo inserta en las partes de URL que incluyen el nombre de inquilino. Si no proporciona un nombre de inquilino, los elementos de las direcciones URL tendrán el carácter comodín (\*).
-- **NoIPv6=<true | false>**: establezca el valor en _true_ para excluir las direcciones IPv6 del resultado, si no usa IPv6 en la red.
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>**: este parámetro obligatorio especifica la instancia desde la que se devolverán los puntos de conexión. Instancias válidas son: _Worldwide_, _China_, _Germany_, _USGovDoD_ y _USGovGCCHigh_.
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>**: lista separada por comas de áreas de servicio. Los elementos válidos son _Common_, _Exchange_, _SharePoint_ y _Skype_. Como los elementos del área de servicio _Common_ son un requisito previo de todas las demás áreas de servicio, el servicio web siempre los incluye. Si no incluye este parámetro, se devolverán todas las áreas de servicio.
+- **TenantName=\<tenant_name\>**: el nombre de inquilino de Office 365. El servicio web toma el nombre que usted proporciona y lo inserta en las partes de URL que incluyen el nombre de inquilino. Si no proporciona un nombre de inquilino, los elementos de las direcciones URL tendrán el carácter comodín (\*).
+- **NoIPv6=\<true \| false\>**: establezca el valor en _true_ para excluir las direcciones IPv6 del resultado si no usa IPv6 en la red.
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>**: este parámetro obligatorio especifica la instancia desde la que se devolverán los puntos de conexión. Instancias válidas son: _Worldwide_, _China_, _Germany_, _USGovDoD_ y _USGovGCCHigh_.
 
 Si llama al método web de puntos de conexión demasiadas veces desde la misma dirección IP de cliente, es posible que reciba el código de respuesta HTTP _429 (Demasiadas solicitudes)_. Si recibe este código de respuesta, espere 1 hora antes de repetir la solicitud o genere un nuevo GUID. Como recomendación general, solo debe llamar al método web de puntos de conexión cuando el método web de versión indica que hay una nueva versión disponible.
 
@@ -200,9 +200,9 @@ El resultado del método web de extremos es una matriz de registros en la que ca
 - required: _verdadero_ si se requiere que el conjunto de extremos tenga conectividad para Office 365 para ser compatible. _Falso_ si el conjunto de extremos es opcional.
 - notes: para puntos de conexión opcionales, este texto describe la funcionalidad de Office 365 que no será disponible si no se puede tener acceso a las direcciones IP o las direcciones URL en este conjunto de puntos de conexión en el nivel de red.
 
-### <a name="examples"></a>Ejemplos:
+### <a name="endpoints-web-method-examples"></a>Ejemplos de método web de puntos de conexión
 
-Ejemplo 1 de URI de solicitud: [https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Ejemplo 1 de URI de solicitud: <https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 Este URI obtiene todos los extremos de la instancia worldwide de Office 365 para todas las cargas de trabajo. El resultado de ejemplo que muestra un fragmento de salida:
 
@@ -278,11 +278,11 @@ El resultado del método web de cambios es una matriz de registros en la que cad
   ips: los elementos que se eliminarán de la matriz _ips_.
   urls: los elementos que se eliminarán de la matriz _urls_.
 
-### <a name="examples"></a>Ejemplos:
+### <a name="changes-web-method-examples"></a>Ejemplos de método web de cambios
 
-Ejemplo 1 de URI de solicitud: [https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Ejemplo 1 de URI de solicitud: <https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Se solicitan todos los cambios anteriores a la instancia de servicio worldwide de Office 365. Resultado de ejemplo:
+Se solicitan todos los cambios anteriores a la instancia de servicio de Office 365 en todo el mundo. Resultado de ejemplo:
 
 ```json
 [
@@ -318,7 +318,7 @@ Se solicitan todos los cambios anteriores a la instancia de servicio worldwide d
      [
 ```
 
-Ejemplo 2 de URI de solicitud: [https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Ejemplo 2 de URI de solicitud: <https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 Se solicitan los cambios desde la versión especificada a la instancia Worldwide de Office 365. En este caso, la versión especificada es la más reciente. Resultado de ejemplo:
 

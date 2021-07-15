@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195026"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438077"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -305,7 +305,12 @@ Descargue el paquete de incorporación desde Centro de seguridad de Microsoft De
     mdatp health --field org_id
     ```
 
-2. Ejecute MicrosoftDefenderATPOnboardingLinuxServer.py y tenga en cuenta que, para ejecutar este comando, debe haber `python` instalado en el dispositivo:
+2. Ejecute MicrosoftDefenderATPOnboardingLinuxServer.py. 
+   
+    >[!NOTE]
+    >Para ejecutar este comando, debes haber `python` instalado en el dispositivo. Si estás ejecutando RHEL 8.x o Ubuntu 20.04 o posterior, deberás usar Python 3 en lugar de Python.
+
+
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -423,5 +428,5 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 - [Investigar problemas de estado del agente](health-status.md)

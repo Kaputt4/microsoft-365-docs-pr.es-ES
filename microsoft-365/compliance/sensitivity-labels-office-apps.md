@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cdfe9d106a55cef79a63b42b47f28b2d9bb9c53
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2484aed7dd5f70a92b1199f472c983848326db7c
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228596"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430761"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -361,6 +361,8 @@ Ejemplos:
 > El [cliente de etiquetado unificado de Azure Information Protection](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) admite esta configuración que también se conoce como etiquetado obligatorio. Para las etiquetas integradas en las aplicaciones de Office, vea las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página para obtener las versiones mínimas.
 >
 > Para usar el etiquetado obligatorio para documentos pero no para correos electrónicos, consulte las instrucciones en la siguiente sección que explica cómo configurar las opciones específicas de Outlook.
+> 
+> Para usar el etiquetado obligatorio para Power BI, consulte [directiva de etiquetas obligatorias para Power BI](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy).
 
 Cuando la configuración de directiva **Requerir que los usuarios apliquen una etiqueta a su correo electrónico y documentos** está seleccionada, los usuarios asignados a la directiva deben seleccionar y aplicar una etiqueta de confidencialidad en los escenarios siguientes:
 
