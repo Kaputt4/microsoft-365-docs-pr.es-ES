@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configure Advanced eDiscovery que se aplican a todos los conjunto de revisión en un caso. Esto incluye la configuración de análisis y reconocimiento óptico de caracteres.
-ms.openlocfilehash: e0ad41354b265016ba67632162a8ead62f11068b
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 2b9c438e28b8d9b84ec8cc29bf85911e5bdc3c8d
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430557"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453902"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurar las opciones de búsqueda y análisis en Advanced eDiscovery
 
@@ -80,13 +80,13 @@ Esta consulta filtra básicamente los elementos duplicados del conjunto de revis
 
 ## <a name="ignore-text"></a>Omitir texto
 
-Hay situaciones en las que cierto texto disminuirá la calidad de los análisis, como los largos avisos de declinación de responsabilidades que se agregan a los mensajes de correo electrónico independientemente del contenido del correo electrónico. Si sabe de texto que debe omitirse, puede excluirlo del análisis especificando la cadena de texto y la función de análisis (casi duplicados, conversación por correo electrónico, temas y relevancia) para las que se debe excluir el texto. También se admite el uso de expresiones regulares (RegEx) como texto omitido. 
+Hay situaciones en las que cierto texto disminuirá la calidad de los análisis, como los largos avisos de declinación de responsabilidades que se agregan a los mensajes de correo electrónico independientemente del contenido del correo electrónico. Si sabe de texto que debe omitirse, puede excluirlo del análisis especificando la cadena de texto y la función de análisis (casi duplicados, conversación por correo electrónico, temas y relevancia) para las que se debe excluir el texto. También se admite el uso de expresiones regulares (RegEx) como texto omitido.
 
 ## <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 
 Cuando esta configuración está activada, el procesamiento ocr se ejecutará en archivos de imagen. El procesamiento de OCR se ejecuta en las siguientes situaciones:
 
-- Cuando los custodios y [los orígenes](non-custodial-data-sources.md) de datos no custodiados se agregan a un caso. El procesamiento de OCR se realiza durante el [proceso de indización](indexing-custodian-data.md) avanzada. OCR solo se ejecuta en los elementos que se procesan durante la indización avanzada. Por ejemplo, si se procesa un archivo PDF de gran tamaño que se indexó parcialmente o que tuvo otros errores de indización durante la indización avanzada, el archivo también tendrá ocr aplicado. En otras palabras, el procesamiento de OCR solo se produce en archivos que se indizan de nuevo durante el proceso de indización avanzada. Esto significa que cuando los custodios se agregan a un caso, algunos datos adjuntos de correo electrónico no se procesarán para OCR porque esos archivos no se procesan durante la indización avanzada. Cuando se aplican archivos de imagen OCR, el texto de esos archivos de imagen se puede buscar durante una colección.
+- Cuando los custodios y [los orígenes](non-custodial-data-sources.md) de datos no custodiados se agregan a un caso. Cuando se aplica OCR a los archivos de imagen, el texto de esos archivos se puede buscar durante una colección. El procesamiento de OCR se realiza durante el [proceso de indización](indexing-custodian-data.md) avanzada. OCR solo se ejecuta en los elementos que se procesan durante la indización avanzada. Por ejemplo, si se procesa un archivo PDF de gran tamaño que se indexó parcialmente o que tuvo otros errores de indización durante la indización avanzada, el archivo también tendrá ocr aplicado. En otras palabras, el procesamiento de OCR solo se produce en archivos que se indizan de nuevo durante el proceso de indización avanzada. Esto significa que puede haber situaciones en las que los custodios se agregan a un caso, pero algunos datos adjuntos de correo electrónico no se procesarán para OCR porque esos archivos no se procesan durante la indización avanzada.
 
 - Cuando se agrega contenido de otros orígenes de datos (que no están asociados con un custodio y se agregan al caso en un origen de datos que no es de custodia) a un conjunto de opiniones.
 

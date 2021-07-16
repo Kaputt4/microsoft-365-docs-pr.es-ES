@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional del dispositivo sobre los servicios al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 684af01b2d90f44b2cda1cf050d1e4db70f92915
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 1eb7b18360cefeeb2d5770c3d77e564d5a757a5e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289444"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453572"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional del dispositivo para la migración desde Microsoft Cloud Deutschland
 
@@ -153,7 +153,7 @@ En dispositivos iOS, un usuario tendrá que quitar manualmente las cuentas almac
 
 Los usuarios pueden ir a aplicaciones individuales como Outlook, Teams y OneDrive y quitar cuentas de esas aplicaciones.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 **¿Cómo puedo saber si mi organización está afectada?**
 
@@ -166,6 +166,10 @@ Es fundamental para el éxito que solo desinscriba y vuelva a registrar los disp
 **¿Cómo sé que todos mis dispositivos están registrados en la nube pública?**
 
 Para comprobar si los dispositivos están registrados en la nube pública, debe exportar y descargar la lista de dispositivos del portal de Azure AD a una Excel de cálculo. A continuación, filtre los dispositivos registrados (mediante la columna _registeredTime)_ después de la fecha en que la organización ha pasado la [fase 9 del proceso de migración](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization).
+
+**¿Todavía necesito agregar el nombre DNS tal como se indica en Crear registros DNS para Microsoft mediante dns Windows [DNS basado en dns?](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)**
+
+Esta entrada DNS ya no es necesaria para volver a registrar el dispositivo. 
 
 ## <a name="additional-considerations"></a>Consideraciones adicionales
 

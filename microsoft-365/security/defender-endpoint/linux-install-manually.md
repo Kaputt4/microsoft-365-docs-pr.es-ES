@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 4c4ed845a31f044e17c97e0b43adfc86dd3f68ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438077"
+ms.locfileid: "53454810"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -266,13 +266,13 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 
 ## <a name="download-the-onboarding-package"></a>Descargar el paquete de incorporación
 
-Descargue el paquete de incorporación desde Centro de seguridad de Microsoft Defender:
+Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
-1. En Centro de seguridad de Microsoft Defender, vaya **a Configuración > Device Management > Onboarding**.
-2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **Script local (para hasta 10 dispositivos)** como método de implementación.
+1. En el portal Microsoft 365 Defender, vaya **a Configuración > Endpoints > Administración** de dispositivos > Incorporación .
+2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **Script local** como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Centro de seguridad de Microsoft Defender captura de pantalla](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defender captura de pantalla del portal](images/atp-portal-onboarding-linux.png)
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo.
     Extraiga el contenido del archivo:
@@ -359,11 +359,11 @@ Descargue el paquete de incorporación desde Centro de seguridad de Microsoft De
 
 Para probar las funcionalidades de EDR para Linux, siga los pasos siguientes para simular una detección en el servidor Linux e investigar el caso. 
 
-1.  Compruebe que el servidor Linux incorporado aparezca en Centro de seguridad de Microsoft Defender. Si se trata de la primera incorporación de la máquina, puede tardar hasta 20 minutos hasta que aparezca. 
+1.  Compruebe que el servidor Linux incorporado aparezca en Microsoft 365 Defender. Si se trata de la primera incorporación de la máquina, puede tardar hasta 20 minutos hasta que aparezca. 
 
 2.  Descargue y extraiga el [archivo de script](https://aka.ms/LinuxDIY) en un servidor Linux incorporado y ejecute el siguiente comando: `./mde_linux_edr_diy.sh`
 
-3.  Después de unos minutos, se debe generar una detección en Centro de seguridad de Microsoft Defender.
+3.  Después de unos minutos, se debe generar una detección en Microsoft 365 Defender.
 
 4.  Vea los detalles de la alerta, la escala de tiempo de la máquina y realice los pasos de investigación típicos.
 
@@ -428,5 +428,5 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 - [Investigar problemas de estado del agente](health-status.md)

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Guía básica para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: fb3b6eecd893a5ab9b71bfa7bdfaea53af43470d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b94540293b86bd922ce4b29f970e52eb1245a01
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909459"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464038"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Guía básica de inquilinos para Microsoft 365
 
@@ -43,14 +43,14 @@ Para planear la implementación del espacio empresarial:
 - [Planear la compatibilidad con aplicaciones cliente](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determinar cómo usar la autenticación moderna híbrida](hybrid-modern-auth-overview.md)
 - [Planear las actualizaciones Office 2007 y Office 2010](plan-upgrade-previous-versions-office.md)
-- [Comprender el aislamiento de inquilino](microsoft-365-tenant-isolation-overview.md)
+- [Comprender el aislamiento de inquilino](/compliance/assurance/microsoft-365-isolation-controls)
 
 ### <a name="deploy"></a>Implementar
 
 Para implementar el espacio empresarial: 
 
 - Agregue los [dominios DNS](../admin/setup/add-domain.md) de la organización.
-- Use las [guías de instalación en el centro Microsoft 365 administración.](setup-guides-for-microsoft-365.md)
+- Use las [guías de configuración de la Centro de administración de Microsoft 365](setup-guides-for-microsoft-365.md).
 - Cree su infraestructura [de identidad y](identity-roadmap-microsoft-365.md) proteja los [inicios de sesión de usuario.](microsoft-365-secure-sign-in.md)
 
 ### <a name="move-a-tenants-geographic-locations"></a>Mover las ubicaciones geográficas de un inquilino

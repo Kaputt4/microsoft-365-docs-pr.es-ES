@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser de ServiceNow de 17a-4 para importar y archivar datos de ServiceNow en Microsoft 365.
-ms.openlocfilehash: 992f34864f0de7ddff1f8159e9970157bcffb964
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: a01e075b6cbf400bc3b7dc38950d87443a46f81c
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276970"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454426"
 ---
-# <a name="set-up-a-connector-to-archive-servicenow-data-preview"></a>Configurar un conector para archivar datos de ServiceNow (versión preliminar)
+# <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>Configurar un conector para archivar datos de ServiceNow
 
 Use [ServiceNow DataParser](https://www.17a-4.com/dataparser/) de 17a-4 LLC para importar y archivar datos de ServiceNow a buzones de usuario de su Microsoft 365 organización. DataParser incluye un conector ServiceNow configurado para capturar elementos de un origen de datos de terceros e importar esos elementos a Microsoft 365. El conector DataParser de ServiceNow convierte los datos de ServiceNow en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 

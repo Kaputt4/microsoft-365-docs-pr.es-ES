@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-spintranet
 localization_priority: Normal
 description: Obtenga información sobre cómo Teams funciona con Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 9fe9b289b0ffbef12327c4232b9deb6727b6d718
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 7da2032e1106d03178eccf3bcfb4f37fc63780d7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362671"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453530"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Capacidades multige geográficas en Microsoft Teams
 
@@ -48,7 +48,7 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## <a name="channel-messages"></a>Mensajes de canal
 
-Cada Microsoft 365 tiene una ubicación de datos preferida (PDL) que indica la ubicación geográfica donde se almacenarán los datos relacionados. Teams usa la PDL para el grupo asociado a cada equipo para determinar dónde almacenar los datos de mensajería de canal para ese equipo. Esto incluye el chat que se produce dentro de una reunión de canal.
+Cada Microsoft 365 tiene una ubicación de datos preferida (PDL) que indica la ubicación geográfica donde se almacenarán los datos relacionados. Teams usa la PDL para el grupo asociado a cada equipo para determinar dónde almacenar los datos de mensajería de canal para ese equipo. Esto incluye canales privados, así como chat que se produce dentro de una reunión de canal.
 
 Cuando un usuario crea un nuevo equipo, la PDL de ese usuario determina qué PDL se asigna al grupo Microsoft 365 usuario. La PDL de grupo determina dónde se almacenan los datos de ese equipo. Si la PDL de ese usuario cambia más adelante, no se cambia la PDL del grupo.
 
@@ -66,7 +66,7 @@ Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 
 Teams Multi-Geo es perfecto para el usuario final. Una vez que cambie la PDL de un usuario o un grupo, los datos respectivos se pondrán en cola para la migración y la migración se producirá automáticamente sin ningún impacto para el usuario o su cliente de Teams incluso si están activos mientras se produce la migración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Configuración de inquilino de Microsoft 365 Multi-Geo](/microsoft-365/enterprise/multi-geo-tenant-configuration)
 

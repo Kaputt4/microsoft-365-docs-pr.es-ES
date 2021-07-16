@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector 17a-4 ICE Conectar Chat DataParser para importar y archivar datos de chat de ICE Conectar en Microsoft 365.
-ms.openlocfilehash: 2c9eb6524e4f5e131603b5998d215e0b2d8111d3
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0aac5c701f122eaf99497635281ebc07d835fc2e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097319"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454486"
 ---
-# <a name="set-up-a-connector-to-archive-ice-connect-chat-data-preview"></a>Configurar un conector para archivar datos de chat Conectar ICE (versión preliminar)
+# <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Configurar un conector para archivar datos de chat Conectar ICE
 
 Use [ice DataParser](https://www.17a-4.com/ice-dataparser/) de 17a-4 LLC para importar y archivar datos de ICE Conectar Chat a buzones de usuario de su Microsoft 365 organización. DataParser incluye un conector de chat ice configurado para capturar elementos de un origen de datos de terceros e importar esos elementos a Microsoft 365. El conector DataParser de ICE convierte los datos de chat de ICE Conectar a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 

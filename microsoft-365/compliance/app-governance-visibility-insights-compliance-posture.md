@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Determine la posición de cumplimiento de las aplicaciones.
-ms.openlocfilehash: 3d7cac319c31bac40a3aad2f6b9a4c16303f6a20
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420254"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438029"
 ---
 # <a name="determine-your-app-compliance-posture"></a>Determinación de la posición de cumplimiento de las aplicaciones
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-La gobernanza de aplicaciones de Microsoft le permite evaluar rápidamente la posición de cumplimiento de las aplicaciones de terceros, y el acceso que tienen a los datos del inquilino de Microsoft 365, desde la página de información general de gobernanza de aplicaciones del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/appgovernance).
+La gobernanza de aplicaciones de Microsoft le permite evaluar rápidamente la posición de cumplimiento de las aplicaciones de terceros, y el acceso que tienen a los datos del inquilino de Microsoft 365, desde la página de información general de gobernanza de aplicaciones del [Centro de cumplimiento de Microsoft 365](https://aka.ms/appgovernance).
 
 ![Página de información general de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
@@ -54,7 +54,7 @@ En esta página, podrá ver:
 
 - En relación con el acceso a los datos y los recursos:
 
-  - El acceso a los datos de la API de la aplicación en los últimos 90 días
-  - El uso de los recursos principales en los últimos 90 días
+  - Datos totales a los que acceden las aplicaciones del inquilino a través de la API de Graph durante los tres meses naturales actuales y anteriores. (Actualmente solo incluye el uso de carga y descarga de correo y archivos)
+  - Uso de datos durante los tres meses naturales actuales y anteriores, desglosados por tipo de recurso. (Actualmente solo incluye el uso de carga y descarga de correo y archivos)
 
   A partir de esta información, puede determinar si hay picos anómalos en el acceso a los datos del inquilino de Microsoft 365.

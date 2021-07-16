@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8935368e4439221f2ce21cfa620e540c02165f8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b7d330388dd698cb524c1f4a8edaf9039ba4d16e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185854"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454834"
 ---
 # <a name="manage-automation-file-uploads"></a>Administrar cargas de archivos de automatización
 
@@ -41,7 +41,7 @@ Por ejemplo, si agrega *exe* y *bat* como nombres de extensión de archivo o dat
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>Agregue nombres de extensión de archivo y nombres de extensión de datos adjuntos.
 
-1. En el panel de navegación, **seleccione Configuración** carga de archivos  >  **de automatización**. 
+1. En el panel de navegación, **seleccione Configuración**  >  **de automatización** de  >  **reglas**  >  **de extremos.**
 
 2. Alterna la configuración del análisis de contenido **entre On** y **Off**.
 

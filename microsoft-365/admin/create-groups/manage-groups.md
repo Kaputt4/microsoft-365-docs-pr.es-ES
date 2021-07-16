@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a administrar Microsoft 365 grupos, incluida la adición de miembros de grupo de eliminación, la edición de la dirección de correo electrónico, el nombre del grupo o la descripción, y la personalización del funcionamiento del grupo.
-ms.openlocfilehash: 3ba3dd36ed3929e956ce6359e678d6b684f64bb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ec8198b7e28b47bcbbf40818fbe624b2744f0ee
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908715"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454582"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo en el Centro Microsoft 365 administración
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo en el Centro de administración de Microsoft 365
 
 Después de crear [un grupo Microsoft 365 y](create-groups.md) agregar miembros del grupo, puede configurar el grupo. Puede editar el nombre o la descripción del grupo, administrar propietarios o miembros y especificar si los remitentes externos pueden enviar un correo electrónico al grupo y si deben enviar copias de conversaciones de grupo a los miembros.
 
-Vaya al Centro Microsoft 365 administración en [https://admin.microsoft.com](https://admin.microsoft.com) .
+Vaya a la Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com) .
 
 ## <a name="edit-the-group-name-or-description"></a>Editar el nombre o la descripción del grupo
 
@@ -54,7 +54,7 @@ Vaya al Centro Microsoft 365 administración en [https://admin.microsoft.com](ht
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Enviar copias de conversaciones a las bandejas de entrada de los miembros del grupo
   
-Cuando usa el Centro de administración para crear un grupo, de forma predeterminada los usuarios no obtienen copias de correos electrónicos de grupo e invitaciones a reuniones enviadas a sus bandejas de entrada. Necesitarán ir al grupo para ver conversaciones y reuniones. Puedes cambiar esta configuración en el Centro de administración.
+Cuando se usa el Centro de administración para crear un grupo, de forma predeterminada los usuarios no obtienen copias de los correos electrónicos de grupo enviados a sus bandejas de entrada, aunque los usuarios obtienen copias de las invitaciones a reuniones de grupo enviadas a sus bandejas de entrada. Necesitarán ir al grupo para ver conversaciones. Puedes cambiar esta configuración en el Centro de administración.
 
 Al activar esta configuración, los miembros del grupo recibirán una copia de los correos electrónicos de grupo y las invitaciones a reuniones enviadas a Outlook Bandeja de entrada. Pueden leer y eliminar dicha copia del correo electrónico sin afectar a otros usuarios. Se conserva una copia del correo electrónico en la bandeja de entrada del grupo.
 
@@ -103,7 +103,7 @@ Para confirmar que el grupo se ha purgado correctamente, ejecute el cmdlet  *Get
   
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Crear un Microsoft 365 grupo](create-groups.md)
+[Crear un Grupo de Microsoft 365 ](create-groups.md)
 
 [Administrar el acceso de invitado en grupos de Microsoft 365](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

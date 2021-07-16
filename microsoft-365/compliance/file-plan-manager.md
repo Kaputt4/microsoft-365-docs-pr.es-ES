@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 920a613cdc3a32267415d42cebe962e62ff6831a
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 6aa47048d9654c46694e8a8eb0626b18b8b52f69
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419768"
+ms.locfileid: "53430653"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Use el plan de archivos para administrar las etiquetas de retención
 
@@ -39,8 +39,6 @@ Aunque puede crear y administrar las etiquetas de retención desde **Gobierno de
 - Los descriptores del plan de archivos admiten información adicional y opcional para cada etiqueta.
 
 El plan de archivos puede usarse para todas las etiquetas de retención, incluso si estas no marcan el contenido como un registro.
-
-![Página del plan de archivos](../media/compliance-file-plan.png)
 
 Para obtener información sobre qué son las etiquetas de retención y cómo usarlas, consulte [Obtener más información sobre las directivas y las etiquetas de retención](retention.md).
 
@@ -111,9 +109,9 @@ Ejemplo de descriptores del plan de archivos al crear o editar una etiqueta de r
 
 ![Descriptores del plan de archivos al crear o editar una etiqueta de retención](../media/file-plan-descriptors.png)
 
-Vista de ejemplo de las columnas de descriptores del plan de archivos:
+Al seleccionar **Elegir** para cada uno de estos descriptores opcionales, puede seleccionar uno de los valores predefinidos o crear uno propio y, a continuación, seleccionarlo. Por ejemplo: 
 
-![Columnas de descriptores del plan de archivos](../media/file-plan-descriptors-on-labels-tab.png)
+![Crear nuevo descriptor de plan de archivos para aprovisionar o citar](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exportar todas las etiquetas de retención para analizar o habilitar las revisiones sin conexión
 
@@ -129,9 +127,7 @@ Se abrirá un archivo *.csv que contiene todas las etiquetas de retención exist
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importar las etiquetas de retención al plan de archivos
 
-En el plan de archivos, puede importar en masa nuevas etiquetas de retención mediante un archivo .csv con un formato específico. Después de importar las etiquetas, puede realizar modificaciones en el archivo .csv e importar el archivo de nuevo para facilitar la edición en masa de las etiquetas de retención existentes.
-
-Para importar nuevas etiquetas de retención y modificar las existentes: 
+En el plan de archivos, puede importar en masa nuevas etiquetas de retención mediante un archivo .csv con un formato específico: 
 
 1. En la página **Plan de archivos**, haga clic en **Importar** para usar la página **Rellenar e importar su plan de archivos**:
 
@@ -188,7 +184,7 @@ Para importar nuevas etiquetas de retención y modificar las existentes:
     
     - Si se supera la etapa de validación, puede seleccionar **Puesta en marcha** para que las etiquetas de retención estén disponibles en el inquilino. O bien, seleccione el icono Cerrar de la página y **Sí** para confirmar que desea cerrar el asistente sin hacer que las etiquetas de retención estén disponibles en el inquilino en este momento.
 
-Una vez que las etiquetas importadas se hayan agregado al inquilino, puede agregarlas a una nueva directiva de etiqueta de retención o aplicarlas automáticamente. Puede hacer esto directamente desde la página del **Plan de archivos**, al seleccionar la lista desplegable **+ Crear una etiqueta** y después, **Directiva para publicar etiquetas**, o **Directiva para aplicar automáticamente una etiqueta**.
+Cuando las etiquetas importadas se agreguen al inquilino, ya podrá ponerlas a disposición de los usuarios mediante la publicación o la aplicación automática. Puede realizar ambas acciones en la pestaña **Directivas de etiquetas** y, a continuación, seleccionar **Publicar etiquetas** o **Aplicar automáticamente una etiqueta**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

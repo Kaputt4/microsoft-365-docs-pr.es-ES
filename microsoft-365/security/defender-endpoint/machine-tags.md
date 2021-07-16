@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ffe7d13ca0943e8927d0d9ce663527fedf880e48
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 83dd2483b93b2f4fe520973ce05346f59baf2f28
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187594"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453580"
 ---
 # <a name="create-and-manage-device-tags"></a>Crear y administrar etiquetas de dispositivos
 
@@ -58,11 +58,11 @@ Para agregar etiquetas de dispositivo con la API, consulte [API para agregar o q
 
 2. Seleccione **Administrar etiquetas** en la fila Acciones de respuesta.
 
-    ![Imagen del botón administrar etiquetas](images/manage-tags.png)
+    :::image type="content" alt-text="Imagen del botón administrar etiquetas." source="images/manage-tags-option.png":::
 
 3. Tipo para buscar o crear etiquetas
 
-    ![Imagen de agregar etiquetas en un dispositivo1](images/new-tags.png)
+    :::image type="content" alt-text="Imagen de agregar etiquetas en un dispositivo1." source="images/create-new-tag.png":::
 
 Las etiquetas se agregan a la vista de dispositivo y también se reflejarán en la **vista de lista Dispositivos.** A continuación, puede usar el **filtro Etiquetas** para ver la lista relevante de dispositivos.
 
@@ -72,7 +72,7 @@ Las etiquetas se agregan a la vista de dispositivo y también se reflejarán en 
 
 También puede eliminar etiquetas de esta vista.
 
-![Imagen de agregar etiquetas en un dispositivo2](images/more-manage-tags.png)
+:::image type="content" alt-text="Imagen de agregar etiquetas en un dispositivo2." source="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>Agregar etiquetas de dispositivo estableciendo un valor de clave del Registro
 
@@ -80,8 +80,8 @@ También puede eliminar etiquetas de esta vista.
 > Solo se aplica a los siguientes dispositivos:
 >- Windows 10, versión 1709 o posterior
 >- Windows Servidor, versión 1803 o posterior
->- Windows Server 2016
->- Windows Server 2012 R2
+>- Windows Server 2016
+>- Windows Server 2012 R2
 >- Windows Server 2008 R2 SP1
 >- Windows 8.1
 >- Windows 7 SP1

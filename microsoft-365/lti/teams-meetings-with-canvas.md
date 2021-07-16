@@ -13,17 +13,14 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams reuniones con Canvas
-ms.openlocfilehash: 7e13052cb029fef369f6386c2039785e40acc4ff
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 54dd3cc2709933ffb7b7d5fecdd181fad2abb42b
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409097"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454678"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Usar Microsoft Teams reuniones con Canvas
-
-> [!IMPORTANT]
-> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 Microsoft Teams reuniones es una aplicación de interoperabilidad de Learning Tools (LTI) que ayuda a los formadores y alumnos a navegar fácilmente entre su sistema de administración de Learning (LMS) y Teams. Los usuarios pueden acceder a sus equipos de clase asociados con su curso directamente desde su LMS.
 

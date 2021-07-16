@@ -15,13 +15,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: ''
-ms.openlocfilehash: 3f64b981b60db9f9089af0555e4bf734864913b9
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial como números de cuenta bancaria, tarjeta de crédito o seguridad social para identificar elementos confidenciales
+ms.openlocfilehash: dee4ec59ce5fe6140c4aef33d147e89e11facd59
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300386"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453626"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -35,12 +35,13 @@ Los tipos de información confidencial son clasificadores basados en patrones. D
 
 ## <a name="sensitive-information-types-are-used-in"></a>Los tipos de información confidencial se usan en
 
-- [Directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) 
+- [Directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Etiquetas de retención](retention.md)
 - [Administración de riesgos internos](insider-risk-management.md)
 - [Cumplimiento de las comunicaciones](communication-compliance.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Administración de privacidad (versión preliminar)](privacy-management.md)
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>Partes fundamentales de un tipo de información confidencial
 
@@ -158,7 +159,7 @@ Para crear tipos de información confidencial personalizados en el Centro de seg
 > 
 > Por ejemplo, para detectar una palabra clave como "机密的document", utilice dos variantes de la palabra clave; una con un espacio entre el texto japonés y el inglés y otra sin espacio entre el texto japonés y el inglés. Por lo tanto, las palabras clave que deben agregarse en el SIT deben ser "机密的document" y "机密的document". Del mismo modo, para detectar la frase "東京オリンピック2020", se deben utilizar dos variantes: "東京オリンピック 2020" y "東京オリンピック2020"".
 > 
-> Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. Aquí hay un ejemplo de regex como referencia:
+> Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. A continuación le mostramos un ejemplo de regex a modo de referencia:
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > Se recomienda usar coincidencia de cadena en lugar de coincidencia de palabras en una lista de palabras clave.

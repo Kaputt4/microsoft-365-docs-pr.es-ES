@@ -13,19 +13,24 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams clases con Canvas
-ms.openlocfilehash: 50e4e8ef912a8f19f379bba29b328a5a27358b5c
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e8ab45de84fe8325f6d5b349deb96aa831d54e36
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256908"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454690"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Usar Microsoft Teams clases con Canvas
 
-> [!IMPORTANT]
-> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
-
 Microsoft Teams clases es una aplicación Learning Tools Interoperability (LTI) que ayuda a los profesores y alumnos a navegar fácilmente entre su sistema de administración de Learning (LMS) y Teams. Los usuarios pueden acceder a sus equipos de clase asociados con su curso directamente desde su LMS.
+
+## <a name="prerequisites-before-deployment"></a>Requisitos previos antes de la implementación
+
+> [!NOTE]
+> La clase actual Teams LTI solo admite la sincronización de usuarios de Canvas con Microsoft Azure Active Directory (AAD) en un ámbito limitado. 
+> - El inquilino debe tener una coincidencia exacta entre un campo canvas (correo electrónico, id. de usuario o id. de SIS) y el UPN en Microsoft AAD. Estamos trabajando para ampliar la flexibilidad a la funcionalidad de sincronización, pero mientras tanto, los usuarios de Canvas que no coincidan con un UPN en AAD no se agregarán a la clase Teams sincronizada con Canvas. 
+> - Solo se puede usar un único espacio empresarial de Microsoft para asignar usuarios entre Canvas y Microsoft.
+> - Tendrá que desactivar SDS antes de usar la clase Teams LTI para evitar la duplicación de grupos.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administrador
 
@@ -78,3 +83,9 @@ Como administrador de Canvas, tendrás que agregar la aplicación LTI de Microso
 5. Seleccione **Instalar**.
 
    La Microsoft Teams clases de aplicación LTI se agregará a la lista de aplicaciones externas.
+   
+## <a name="enabling-the-lti-app-for-canvas-courses"></a>Habilitar la aplicación LTI para cursos de Canvas
+
+Para usar la aplicación LTI dentro de un curso, un instructor del curso canvas debe habilitar la sincronización de integraciones. Cada curso debe estar habilitado por un instructor para que se cree un equipo correspondiente; no hay ningún mecanismo global para la creación de equipos. Esto está diseñado como una medida de precaución para evitar que se creen equipos no deseados.
+
+Consulte la documentación [](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) del profesor para habilitar la aplicación LTI para cada curso y completar la configuración de integración.

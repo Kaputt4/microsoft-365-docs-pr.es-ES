@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las directivas de aplicación.
-ms.openlocfilehash: 6d4ff23ca0e09f5e410d32d6ced144afc0c4bb15
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: b5d36d6597de54d7936bc542d37d91d0fac0ba45
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420358"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53437969"
 ---
 # <a name="learn-about-app-policies"></a>Obtenga información sobre las directivas de aplicación
 
@@ -29,18 +29,7 @@ La gobernanza de aplicaciones de Microsoft detecta un comportamiento anómalo de
 
 Estas directivas para patrones y comportamientos de aplicaciones y usuarios pueden proteger a los usuarios contra el uso de aplicaciones no compatibles o malintencionadas y limitar el acceso de aplicaciones de riesgo a los datos del espacio empresarial.
 
-Esta es una revisión rápida de los roles de administrador necesarios para la administración de directivas de aplicaciones.
-
-| Función | Leer directivas | Crear, actualizar o eliminar directivas |
-|:-------|:-----|:-------|
-| Administrador de cumplimiento | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) |
-| Lector de cumplimiento | ![Marca de verificación](..\media\checkmark.png) |  |
-| Administrador global | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) |
-| Lector global  | ![Marca de verificación](..\media\checkmark.png) |  |
-| Administrador de seguridad | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) |
-| Lector de seguridad  | ![Marca de verificación](..\media\checkmark.png) |  |
-| Operador de seguridad | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) |
-||||
+Consulte [Roles de administrador](app-governance-get-started.md#administrator-roles) para obtener información sobre qué roles pueden modificar directivas.
 
 <!--
 How app policies are the method by which MAPG detects app anomolies resulting in detection (alerts) and remediation (manual or automatic) 

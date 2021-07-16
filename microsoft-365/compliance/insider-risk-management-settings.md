@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1dd61570a0695124fdd675241535dec7d288a627
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 4e4edb24d0cc63e2cd014d4b16b0aabaa274c4d3
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226388"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454046"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -246,7 +246,7 @@ Los siguientes campos y valores se exportan para alertas de administración de r
 | Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal del usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
 | Nombre | Nombre de la directiva para la directiva de administración de riesgos insider que generó la alerta. |
 | PolicyId | GUID de la directiva de administración de riesgos insider que desencadenó la alerta. |
-| Gravedad | Gravedad de la alerta. Los valores *son High,* *Medium* o *Low*. |
+| Severity | Gravedad de la alerta. Los valores *son High,* *Medium* o *Low*. |
 | Origen | El origen de la alerta. El valor es *Office 365 seguridad & cumplimiento*. |
 | Estado | El estado de la alerta. Los valores *son Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), Resolved ( *Resolved* in insider risk), Dismissed (  *Dismissed* in insider risk). |
 | Versión | La versión del esquema de alerta de seguridad y cumplimiento. |
@@ -268,7 +268,9 @@ Los usuarios de la organización pueden tener diferentes niveles de riesgo segú
 
 ![Configuración de grupo de usuarios de prioridad de administración de riesgos de Insider](../media/insider-risk-settings-priority-users.png)
 
-Por ejemplo, debe protegerse contra pérdidas de datos para un proyecto altamente confidencial en el que los usuarios tienen acceso a información confidencial. Puede crear un grupo de *usuarios Project* *prioridad* de usuarios confidenciales para los usuarios de la organización que trabajan en este proyecto. Con el asistente para directivas y la plantilla de directiva Pérdidas  de datos por usuarios *prioritarios,* se crea una nueva directiva y se asigna a la directiva el grupo Usuarios de prioridad Project confidencial. Las actividades examinadas por la directiva para los miembros del grupo de usuarios prioritarios de *Project* Confidenciales son más sensibles al riesgo y las actividades de estos usuarios serán más probables que generen una alerta y tengan alertas con niveles de gravedad más altos.
+En lugar de estar abiertos a la revisión por parte de todos los analistas e investigadores, es posible que los grupos de usuarios prioritarios también necesiten restringir las actividades de revisión a usuarios específicos o grupos de roles de riesgo de insider. Puede elegir asignar usuarios individuales y grupos de roles para revisar usuarios, alertas, casos e informes para cada grupo de usuarios prioritarios. Los grupos de usuarios prioritarios pueden tener permisos de revisión asignados a los grupos de roles integrados *Insider Risk Management*, *Insider Risk Management Analysts* y *Insider Risk Management Investigators,* uno o varios de estos grupos de roles, o a una selección personalizada de usuarios.
+
+Por ejemplo, debe protegerse contra pérdidas de datos para un proyecto altamente confidencial en el que los usuarios tienen acceso a información confidencial. Puede crear un grupo de *usuarios Project* *prioridad* de usuarios confidenciales para los usuarios de la organización que trabajan en este proyecto. Además, este grupo de usuarios prioritario no debe tener usuarios, alertas, casos e informes asociados con el grupo visibles para todos los administradores de administración de riesgos, analistas e investigadores predeterminados de insider. En **Configuración**, se crea el grupo Usuarios confidenciales *Project usuarios* prioritarios y se asignan dos usuarios como revisor que pueden ver datos relacionados con los grupos. Con el asistente para directivas y la plantilla de directiva Pérdidas  de datos por usuarios *prioritarios,* se crea una nueva directiva y se asigna a la directiva el grupo Usuarios de prioridad Project confidencial. Las actividades examinadas por la directiva para los miembros del grupo de usuarios prioritarios de *Project* Confidenciales son más sensibles al riesgo y las actividades de estos usuarios serán más probables que generen una alerta y tengan alertas con niveles de gravedad más altos.
 
 ### <a name="create-a-priority-user-group"></a>Crear un grupo de usuarios de prioridad
 
@@ -277,16 +279,18 @@ Para crear un nuevo grupo de usuarios de prioridad, usará la configuración de 
 Complete los pasos siguientes para crear un grupo de usuarios de prioridad:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione **Configuración de riesgos de Insider**.
-2. Seleccione la **pestaña Grupos de usuarios prioritarios**
-3. En la **pestaña Grupos de usuarios prioritarios,** seleccione Crear grupo de usuarios **prioritarios** para iniciar el Asistente para la creación de grupos.
-4. En la **página Definir grupo,** complete los campos siguientes:
+2. Seleccione la **pestaña Grupos de usuarios prioritarios (versión** preliminar).
+3. En la **pestaña Grupos de usuarios prioritarios (versión** preliminar), seleccione Crear grupo de usuarios **prioritarios** para iniciar el Asistente para la creación de grupos.
+4. En la **página Nombre y descripción,** complete los siguientes campos:
     - **Nombre (obligatorio):** escriba un nombre descriptivo para el grupo de usuarios de prioridad. No puede cambiar el nombre del grupo de usuarios de prioridad después de completar el asistente.
     - **Descripción (opcional):** escriba una descripción para el grupo de usuarios de prioridad.
 5. Seleccione **Siguiente** para continuar.
 6. En **la** página Elegir  miembros, seleccione Elegir miembros para buscar y seleccione qué cuentas de usuario habilitadas para correo se incluyen en el grupo o active la casilla **Seleccionar** todo para agregar todos los usuarios de la organización al grupo. Seleccione **Agregar** para continuar o **Cancelar** para cerrar sin agregar ningún usuario al grupo.
 7. Seleccione **Siguiente** para continuar.
-8. En la **página Revisar,** revise la configuración que ha elegido para el grupo de usuarios de prioridad. Seleccione **Editar** para cambiar cualquiera de los valores de grupo o seleccione **Enviar** para crear y activar el grupo de usuarios de prioridad.
-9. En la página de confirmación, seleccione **Listo** para salir del asistente.
+8. En la **página Elegir quién puede ver este** grupo, debe definir quién puede revisar usuarios, alertas, casos e informes para el grupo de usuarios prioritario. Se debe asignar al menos un grupo de roles de administración de riesgos de usuario o insider. Seleccione **Elegir usuarios y grupos de** roles y seleccione los usuarios o grupos de roles de administración de riesgos de insider que desea asignar al grupo de usuarios de prioridad. Seleccione **Agregar** para asignar los usuarios o grupos de roles seleccionados al grupo.
+9. Seleccione Siguiente para continuar.
+10. En la **página Revisar,** revise la configuración que ha elegido para el grupo de usuarios de prioridad. Seleccione los **vínculos Editar** para cambiar cualquiera de los valores de grupo o seleccione **Enviar** para crear y activar el grupo de usuarios de prioridad.
+11. En la página de confirmación, seleccione **Listo** para salir del asistente.
 
 ### <a name="update-a-priority-user-group"></a>Actualizar un grupo de usuarios de prioridad
 
@@ -295,12 +299,14 @@ Para actualizar un grupo de usuarios de prioridad existente, usará la configura
 Siga estos pasos para editar un grupo de usuarios prioritario:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione **Configuración de riesgos de Insider**.
-2. Seleccione la **pestaña Grupos de usuarios prioritarios**
+2. Seleccione la **pestaña Grupos de usuarios prioritarios (versión** preliminar).
 3. Seleccione el grupo de usuarios de prioridad que desea editar y seleccione **Editar grupo**.
-4. En la **página Definir grupo,** actualice el campo Descripción si es necesario. No puede actualizar el nombre del grupo de usuarios de prioridad. Seleccione **Siguiente** para continuar.
+4. En la **página Nombre y descripción,** actualice el campo Descripción si es necesario. No puede actualizar el nombre del grupo de usuarios de prioridad. Seleccione **Siguiente** para continuar.
 5. En la **página Elegir miembros,** agregue nuevos miembros al grupo mediante el **control Elegir miembros.** Para quitar un usuario del grupo, seleccione la "X" junto al usuario que desea quitar. Seleccione **Siguiente** para continuar.
-6. En la **página Revisar,** revise la configuración de actualización que ha elegido para el grupo de usuarios de prioridad. Seleccione **Editar** para cambiar cualquiera de los valores de grupo o **seleccione Enviar** para actualizar el grupo de usuarios de prioridad.
-7. En la página de confirmación, seleccione **Listo** para salir del asistente.
+6. En la **página Elegir quién puede ver** este grupo, agregue o quite usuarios o grupos de roles que puedan revisar usuarios, alertas, casos e informes para el grupo de usuarios prioritario.
+7. Seleccione **Siguiente** para continuar.
+8. En la **página Revisar,** revise la configuración de actualización que ha elegido para el grupo de usuarios de prioridad. Seleccione los **vínculos Editar** para cambiar cualquiera de los valores de grupo o seleccione **Enviar** para actualizar el grupo de usuarios de prioridad.
+9. En la página de confirmación, seleccione **Listo** para salir del asistente.
 
 ### <a name="delete-a-priority-user-group"></a>Eliminar un grupo de usuarios de prioridad
 
@@ -312,7 +318,7 @@ Para eliminar un grupo de usuarios de prioridad existente, usará los controles 
 Siga estos pasos para eliminar un grupo de usuarios prioritario:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione **Configuración de riesgos de Insider**.
-2. Seleccione la **pestaña Grupos de usuarios prioritarios**
+2. Seleccione la **pestaña Grupos de usuarios prioritarios (versión** preliminar).
 3. Seleccione el grupo de usuarios de prioridad que desea editar y seleccione **Eliminar en** el menú del panel.
 4. En el **cuadro de diálogo** Eliminar, seleccione **Sí** para eliminar el grupo de usuarios de prioridad o **seleccione Cancelar** para volver al panel.
 
@@ -367,7 +373,7 @@ Los clientes con Microsoft 365 que incluyen la administración de riesgos de ins
 
 Las siguientes Power Automate se proporcionan a los clientes para admitir la automatización de procesos para los usuarios y casos de administración de riesgos de insider:
 
-- Notificar a los usuarios cuando se agregan a una directiva de riesgo de **insider:** esta plantilla es para organizaciones que tienen directivas internas, privacidad o requisitos normativos que los usuarios deben recibir una notificación cuando están sujetos a directivas de administración de riesgos internas. Cuando este flujo se configura y selecciona para un usuario en la página de usuarios, los usuarios y sus administradores se envían un mensaje de correo electrónico cuando el usuario se agrega a una directiva de administración de riesgos de insider. Esta plantilla también admite la actualización de una lista SharePoint hospedado en un sitio de SharePoint para ayudar a realizar un seguimiento de los detalles de los mensajes de notificación, como la fecha y hora y el destinatario del mensaje. Si ha elegido anonimizar a los usuarios en la configuración de **privacidad,** los flujos creados a partir de esta plantilla no funcionarán según lo previsto para que se mantenga la privacidad del usuario. Power Automate flujos con esta plantilla están disponibles en el panel **Usuarios**.
+- Notificar a los usuarios cuando se agregan a una directiva de riesgo de **insider:** esta plantilla es para organizaciones que tienen directivas internas, privacidad o requisitos normativos que los usuarios deben recibir una notificación cuando están sujetos a directivas de administración de riesgos internas. Cuando este flujo se configura y  selecciona para un usuario en la página Usuarios, los usuarios y sus administradores se envían un mensaje de correo electrónico cuando el usuario se agrega a una directiva de administración de riesgos de insider. Esta plantilla también admite la actualización de una lista SharePoint hospedado en un sitio de SharePoint para ayudar a realizar un seguimiento de los detalles de los mensajes de notificación, como la fecha y hora y el destinatario del mensaje. Si ha elegido anonimizar a los usuarios en la configuración de **privacidad,** los flujos creados a partir de esta plantilla no funcionarán según lo previsto para que se mantenga la privacidad del usuario. Power Automate flujos con esta plantilla están disponibles en el panel **Usuarios**.
 - **Solicitar** información de recursos humanos o empresas sobre un usuario en un caso de riesgo interno: al actuar en un caso, es posible que los analistas de riesgos e investigadores de insider necesiten consultar con recursos humanos u otras partes interesadas para comprender el contexto de las actividades del caso. Cuando este flujo se configura y selecciona para un caso, los analistas e investigadores envían un mensaje de correo electrónico a las partes interesadas de recursos humanos y empresariales configuradas para este flujo. A cada destinatario se le envía un mensaje con opciones de respuesta preconfiguradas o personalizables. Cuando los destinatarios seleccionan una opción de respuesta, la respuesta se registra como una nota de caso e incluye información de fecha y hora y destinatario. Si ha elegido anonimizar a los usuarios en la configuración de **privacidad,** los flujos creados a partir de esta plantilla no funcionarán según lo previsto para que se mantenga la privacidad del usuario. Power Automate flujos con esta plantilla están disponibles en el panel **Casos**.
 - **Notificar al administrador cuando un usuario** tiene una alerta de riesgo de información interna: es posible que algunas organizaciones necesiten recibir una notificación de administración inmediata cuando un usuario tenga una alerta de administración de riesgos de información interna. Cuando se configura y selecciona este flujo, se envía un mensaje de correo electrónico al administrador del usuario del caso con la siguiente información sobre todas las alertas de caso:
     - Directiva aplicable para la alerta

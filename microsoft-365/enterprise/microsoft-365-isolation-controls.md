@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 de aislamiento
+title: Controles de aislamiento de Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -17,13 +17,13 @@ f1.keywords:
 description: Obtenga información sobre cómo funcionan los controles de aislamiento Microsoft 365, lo que permite que los servicios entren en funcionamiento o permanezcan autónomos según sea necesario.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 514b12e44d9e81a18b691ebf3196a3d21157e71b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918947"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464128"
 ---
-# <a name="microsoft-365-isolation-controls"></a>Microsoft 365 de aislamiento 
+# <a name="microsoft-365-isolation-controls"></a>Controles de aislamiento de Microsoft 365 
 
 Microsoft trabaja continuamente para garantizar que la arquitectura multiinquilino de Microsoft 365 admite estándares de seguridad, confidencialidad, privacidad, integridad, locales, internacionales y de [disponibilidad.](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons) La escala y el ámbito de los servicios proporcionados por Microsoft dificultan y no son económicos la administración de Microsoft 365 con una interacción humana significativa. Microsoft 365 servicios se proporcionan a través de varios centros de datos distribuidos globalmente, cada uno altamente automatizado con pocas operaciones que requieren un toque humano o cualquier acceso al contenido del cliente. Nuestro personal admite estos servicios y centros de datos con herramientas automatizadas y acceso remoto altamente seguro. 
 

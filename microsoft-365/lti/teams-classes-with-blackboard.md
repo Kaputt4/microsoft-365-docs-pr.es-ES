@@ -1,5 +1,5 @@
 ---
-title: Integrar Microsoft Teams clases con Blackboard Learn Ultra
+title: Usar Microsoft Teams clases con Blackboard Learn Ultra
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,13 +12,13 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: Integrar Microsoft Teams clases con Blackboard Learn Ultra
-ms.openlocfilehash: da98fae3fa5d6be2513147be58747512bea99e16
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+description: Usar Microsoft Teams clases con Blackboard Learn Ultra
+ms.openlocfilehash: a97d5bf56e1e045ccb0ef7cc66ecef7dfba4041a
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314500"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454643"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Usar Microsoft Teams clases con Blackboard Learn Ultra
 
@@ -27,15 +27,15 @@ El trabajo en equipo es el núcleo de todas las organizaciones modernas. Al fome
 Las clases pueden incluir conversaciones en tiempo real, reuniones de vídeo o interacciones asincrónicas. Puede agregar experiencias de cocreación y uso compartido de archivos para sus alumnos, todo en un solo lugar. Microsoft Teams clases con Learn Ultra redefinen la dinámica de la enseñanza y lo que significa un aprendizaje eficaz.
 
 > [!IMPORTANT]
-> Asegúrese de que ha configurado correctamente el campo Correo electrónico de la institución en el Sistema de información de estudiantes (SIS) `help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student\_Information\_System/SIS\_Planning`
+> Asegúrese de que ha configurado correctamente el campo Correo electrónico de la institución en el [Sistema de información de estudiantes (SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)
 >
->La integración Microsoft Teams clases de Microsoft Teams se basa en el campo de correo electrónico de la institución en el SIS para asignarse al nombre principal de usuario (UPN) de Microsoft Azure Active Directory (AAD) correcto. Si no se ha aprovisionado ningún correo electrónico de la institución, este valor predeterminado será el correo electrónico existente. Se recomienda establecer este campo para que todos los usuarios se aseguren de que sus datos estén sincronizados correctamente y de que no haya conflictos de datos de correo electrónico entre Microsoft AAD y Blackboard Learn Ultra.
+>La integración Microsoft Teams clases de Microsoft Teams se basa en el campo de correo electrónico de la institución del SIS para asignarlo al nombre de principio de usuario [(UPN)](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)de Microsoft Azure Active Directory (AAD) correcto . Si no se ha aprovisionado ningún correo electrónico de la institución, este valor predeterminado será el correo electrónico existente. Se recomienda establecer este campo para que todos los usuarios se aseguren de que sus datos se sincronizan correctamente y que no haya conflictos de datos de correo electrónico entre AAD y Blackboard Learn Ultra.
 >
 > Si no ha establecido este campo correctamente en la asignación de SIS, la integración seguirá funcionando, pero es posible que los usuarios no aparezcan en las clases Teams creadas y que se produzcan errores.
 
 ## <a name="supporting-institutional-data-mapping--institution-email-sis-field"></a>Compatibilidad con la asignación de datos institucionales: campo SIS de correo electrónico de la institución
 
-Como parte de la evolución con las integraciones de  proveedores en la nube, Blackboard Learn Ultra ha creado un nuevo campo de correo electrónico de la institución, tanto en la integración de Student Information System Framework como en las API públicas de REST, lo que permite a las instituciones administrar el proceso de sincronización de datos de forma eficaz entre Blackboard Learn Ultra y Microsoft AAD.
+Como parte de la evolución con las integraciones de  proveedores de nube, Blackboard Learn Ultra ha creado un nuevo campo de correo electrónico de la institución, tanto en la integración de Student Information System Framework como en las API públicas de REST, lo que permite a las instituciones administrar el proceso de sincronización de datos de forma eficaz entre Blackboard Learn Ultra y AAD.
 
 ### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>¿Qué significa el correo electrónico de la institución y qué admite?
 
@@ -46,7 +46,7 @@ Para asegurarse de que los datos son precisos y de que las inscripciones o perte
  Cuando dos direcciones de correo electrónico son diferentes:
 
 - Se debe tomar una decisión sobre qué origen tiene prioridad y se tomarán como correos electrónicos de persona e institución.
-  O bien
+  O
 - Una institución puede establecer una asignación de campo personalizada en su correo electrónico de la institución, que puede resolver un posible conflicto.
 
 La **asignación de campo** De correo electrónico de la institución ya está disponible para todos los tipos de integración de SIS existentes en Configuración avanzada **Configuración**  >  **usuarios aprendan asignación de** campo de tipo de  >  **objeto**.
@@ -54,11 +54,13 @@ La **asignación de campo** De correo electrónico de la institución ya está d
 > [!NOTE]
 > Es importante tener en cuenta que,  de forma predeterminada, el correo electrónico de la institución se establece en el correo electrónico de persona para todos los formatos de SIS y debe ser único para cada persona.  Todas las integraciones existentes que estén configuradas y en ejecución tendrán esta asignación de datos en su lugar, ya que SIS no podrá importar usuarios si su correo electrónico está duplicado. Si una institución requiere la capacidad de cambiar el correo electrónico de la institución a **personalizado,** tendrá que administrarlo a través de la configuración avanzada **Configuración** en el SIS.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 La integración Microsoft Teams clases de curso está disponible solo para los cursos **de vista de curso ultra.** La institución debe completar estos requisitos para usarlo:
 
 - Tener Habilitado El SaaS de Aprendizaje Ultra de Blackboard con navegación ultra base
+
+  ![un ejemplo de la característica está habilitado en los cursos](media/feature-availability.png)
 
 - Habilitar LTI para su uso en cursos.
 
@@ -157,6 +159,10 @@ Si decide aprobar la aplicación Azure de Clases de Aprendizaje ultra Teams de B
 > [!NOTE]
 > Reemplazará **{Tenant}** por su identificador de inquilino Microsoft Azure institucional específico.
 
+Verá una ventana de permisos que explica que está dando permiso a Blackboard Learn Ultra para obtener acceso a Microsoft Teams.
+
+![la ventana de permisos para Microsoft y Blackboard](media/permissions1.png)
+
 ### <a name="after-configuring-the-lti-applications"></a>Después de configurar las aplicaciones LTI
 
 1. En el **Panel de administrador,** vaya **a Herramientas y** utilidades y seleccione Microsoft Teams Administrador de **integración.**
@@ -172,3 +178,5 @@ Si decide aprobar la aplicación Azure de Clases de Aprendizaje ultra Teams de B
    - Si no se ha aprobado el consentimiento, siga los pasos descritos para generar la dirección URL para el consentimiento y enviarla al administrador global Microsoft 365 para su aprobación.
 
 5. Una vez que haya confirmado la aprobación, seleccione **Reintentar** para confirmar y, a continuación, **seleccione Enviar**.
+
+   ![Cuadro de diálogo que indica que el acceso se ha bloqueado](media/blocked-access.png)

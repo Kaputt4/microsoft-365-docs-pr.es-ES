@@ -24,12 +24,12 @@ ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: cff0810a4469d3c2d9ff2fe0fe5100b7a37408ae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930312"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454750"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
 
@@ -47,7 +47,7 @@ El proceso de migración a Defender for Endpoint se puede dividir en tres fases,
 
 |Fase |Descripción |
 |--|--|
-|[Preparar la migración](switch-to-microsoft-defender-prepare.md) |Durante [la fase **de** preparación:](switch-to-microsoft-defender-prepare.md) <p>1. Actualice los dispositivos de su organización. <p>2. Obtener Defender para endpoint. <p>3. Planee sus roles y permisos y conceda acceso a la Centro de seguridad de Microsoft Defender. <p>4. Configure el proxy del dispositivo y la configuración de Internet para habilitar la comunicación entre los dispositivos de la organización y Defender para endpoint. |
+|[Preparar la migración](switch-to-microsoft-defender-prepare.md) |Durante [la fase **de** preparación:](switch-to-microsoft-defender-prepare.md) <p>1. Actualice los dispositivos de su organización. <p>2. Obtener Defender para endpoint. <p>3. Planee sus roles y permisos y conceda acceso al portal de Microsoft 365 Defender web. <p>4. Configure el proxy del dispositivo y la configuración de Internet para habilitar la comunicación entre los dispositivos de la organización y Defender para endpoint. |
 |[Configurar Defender para endpoint](switch-to-microsoft-defender-setup.md) |Durante [la fase **de** instalación:](switch-to-microsoft-defender-setup.md) <p>1. Habilite o vuelva a instalar Antivirus de Microsoft Defender. <p>2. Configure Defender for Endpoint. <p>3. Agregue Defender for Endpoint a la lista de exclusión de la solución existente. <p>4. Agregue la solución existente a la lista de exclusión para Antivirus de Microsoft Defender. <p>5. Configure los grupos de dispositivos, las colecciones y las unidades organizativas. <p>6. Configure las directivas antimalware y la configuración de protección en tiempo real.|
 |[Incorporación a Defender para endpoint](switch-to-microsoft-defender-onboard.md) |Durante [la fase de **incorporación**](switch-to-microsoft-defender-onboard.md): <p>1. Incorpore los dispositivos a Defender para endpoint. <p>2. Ejecute una prueba de detección. <p>3. Confirme que Antivirus de Microsoft Defender se está ejecutando en modo pasivo. <p>4. Obtener actualizaciones para Antivirus de Microsoft Defender. <p>5. Desinstale la solución de protección de extremo existente. <p>6. Asegúrese de que Defender for Endpoint funciona correctamente. |
 
@@ -62,7 +62,7 @@ En esta guía de [](microsoft-defender-antivirus-in-windows-10.md) migración, n
 | [Protección de última generación](microsoft-defender-antivirus-in-windows-10.md) | La protección de última generación Antivirus de Microsoft Defender ayuda a bloquear amenazas y malware. |
 | [EDR](overview-endpoint-detection-response.md) | Las capacidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusión e infracciones activas.  |
 | [Búsqueda avanzada de amenazas](advanced-hunting-overview.md) | Las capacidades avanzadas de búsqueda permiten al equipo de operaciones de seguridad localizar indicadores y entidades de amenazas conocidas o potenciales. |
-| [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md) | Las capacidades de bloqueo y contención del comportamiento ayudan a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. |
+| [Contención y bloqueo de comportamiento](behavioral-blocking-containment.md) | Las capacidades de bloqueo y contención del comportamiento ayudan a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. |
 | [Investigación y corrección automatizadas](automated-investigations.md) | Las capacidades automatizadas de investigación y respuesta examinan las alertas y toman medidas de corrección inmediatas para resolver infracciones. |
 | [Servicio de búsqueda de](microsoft-threat-experts.md) amenazas (Expertos en amenazas de Microsoft) | Los servicios de búsqueda de amenazas proporcionan a los equipos de operaciones de seguridad supervisión y análisis de nivel de expertos, y para ayudar a garantizar que no se pierden las amenazas críticas. |
 

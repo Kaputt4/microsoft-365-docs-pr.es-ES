@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector dataParser de Eikon Messenger de 17a-4 refinitiv para importar y archivar datos de Eikon Messenger de Refinitiv en Microsoft 365.
-ms.openlocfilehash: 59380695a6ade9a7dfc36c51ea4254e13a7fd03c
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 4577d849e84955f10c2f3176c2e384410430ebc6
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097273"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454438"
 ---
-# <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data-preview"></a>Configurar un conector para archivar datos de Refinitiv Eikon Messenger (versión preliminar)
+# <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>Configurar un conector para archivar datos de Refinitiv Eikon Messenger
 
 Use [refinitiv Eikon Messenger DataParser](https://www.17a-4.com/refinitiv-messenger-dataparser/) de 17a-4 LLC para importar y archivar datos de Refinitiv Eikon Messenger a buzones de usuario de su Microsoft 365 organización. DataParser incluye un conector de Eikon Messenger de Refinitiv que está configurado para capturar elementos de un origen de datos de terceros e importar esos elementos a Microsoft 365. El conector DataParser de Eikon Messenger de Refinitiv convierte los datos de Eikon Messenger de Refinitiv a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 

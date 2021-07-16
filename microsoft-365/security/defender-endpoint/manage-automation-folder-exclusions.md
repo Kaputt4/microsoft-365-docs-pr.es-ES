@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 37a251acd3b7631cffffaf2eb76bf0f2b4954ee6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 05c103cba051c7d5e7f45e5dd3feb288013ee367
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185842"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454822"
 ---
 # <a name="manage-automation-folder-exclusions"></a>Administrar las exclusiones de carpeta de automatización 
 
@@ -59,7 +59,7 @@ Puede especificar los nombres de archivo que desea excluir en un directorio espe
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>Agregar una exclusión de carpeta de automatización
-1. En el panel de navegación, **seleccione Configuración**  >  **exclusiones de carpetas de automatización.**  
+1. En el panel de navegación, seleccione **Configuración** exclusiones de  >  **carpetas** de automatización de reglas de  >    >  **extremo**.  
 
 2. Haga **clic en Nueva exclusión de carpeta**.  
 
@@ -69,7 +69,6 @@ Puede especificar los nombres de archivo que desea excluir en un directorio espe
     - Extensiones
     - Nombres de archivo
     - Descripción
-    
 
 4. Haga clic en **Guardar**.
 
@@ -77,14 +76,14 @@ Puede especificar los nombres de archivo que desea excluir en un directorio espe
 > Los comandos live response para recopilar o examinar archivos excluidos producirán un error: "Se excluye el archivo". Además, las investigaciones automatizadas omitirán los elementos excluidos.
 
 ## <a name="edit-an-automation-folder-exclusion"></a>Editar una exclusión de carpetas de automatización 
-1. En el panel de navegación, **seleccione Configuración**  >  **exclusiones de carpetas de automatización.** 
+1. En el panel de navegación, seleccione **Configuración** exclusiones de  >  **carpetas** de automatización de reglas de  >    >  **extremo**. 
 
 2. Haga **clic en Editar** en la exclusión de carpetas.  
 
 3. Actualice los detalles de la regla y haga clic en **Guardar**.
 
 ## <a name="remove-an-automation-folder-exclusion"></a>Quitar una exclusión de carpetas de automatización 
-1. En el panel de navegación, **seleccione Configuración**  >  **exclusiones de carpetas de automatización.**  
+1. En el panel de navegación, seleccione **Configuración** exclusiones de  >  **carpetas** de automatización de reglas de  >    >  **extremo**.  
 2. Haga clic **en Quitar exclusión**. 
 
 

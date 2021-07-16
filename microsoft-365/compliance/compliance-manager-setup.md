@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148907"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454022"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -49,32 +49,30 @@ El Administrador de cumplimiento usa un modelo de permisos de control de acceso 
 
 ### <a name="where-to-set-permissions"></a>Dónde establecer permisos
 
-La persona que tiene el rol de administrador global de su organización puede establecer permisos de usuario para el Administrador de cumplimiento. Los permisos se pueden establecer en el Centro de Office 365 seguridad & cumplimiento, así como en Azure Active Directory (Azure AD).
+La persona que tiene el rol de administrador global de su organización puede establecer permisos de usuario para el Administrador de cumplimiento. Los permisos se pueden establecer en el Centro de cumplimiento de Microsoft 365 y en Azure Active Directory (Azure AD).
 
 > [!NOTE]
 > Los clientes de entornos Community (GCC) high y department of defense (DoD) de Estados Unidos solo pueden establecer permisos de usuario y roles para el Administrador de cumplimiento en Azure AD. Consulte a continuación las instrucciones de Azure AD y las definiciones de tipo de función.
 
-Para establecer permisos y asignar roles en el Centro de Office 365 seguridad & cumplimiento, siga estos pasos:
+Para establecer permisos y asignar roles en el Centro de cumplimiento de Microsoft 365, siga los pasos siguientes:
 
-1. Vaya al Centro [de Office 365 seguridad & cumplimiento y](https://protection.office.com/) seleccione **Permisos** en la navegación izquierda.
+1. Vaya a la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/compliancemanager) y seleccione **Permisos** en la navegación izquierda.
 
-2. Busque el grupo de roles al que desea agregar uno o varios usuarios y active la casilla a la izquierda del nombre del grupo. (Vea la [lista de roles y funciones relacionadas a continuación.](#role-types) Los nombres de los grupos de roles imitan el nombre del rol).
+2. En la lista **desplegable Centro de** cumplimiento, seleccione **Roles**. 
 
-3. En el panel desplegable de ese grupo, seleccione **Editar en** el **encabezado** Miembros.
+3. Busque el grupo de roles al que desea agregar uno o varios usuarios y active la casilla a la izquierda del nombre del grupo. (Vea la [lista de roles y funciones relacionadas a continuación.](#role-types) Los nombres de los grupos de roles imitan el nombre del rol).
 
-4. Seleccione **Elegir miembros**. Aparecerá otra ventana desplegable.
+4. En el panel desplegable de ese grupo, seleccione **Editar en** el **encabezado** Miembros.
 
-5. Seleccione **+ Agregar** para elegir uno o varios usuarios para agregar al grupo.
+5. Seleccione **Elegir miembros**. Aparecerá otra ventana desplegable.
 
-6. Seleccione la casilla situada junto a los nombres que desea agregar y, a continuación, seleccione el **botón** Agregar en la parte inferior.
+6. Seleccione **+ Agregar** para elegir uno o varios usuarios para agregar al grupo.
 
-7. Cuando haya terminado de asignar usuarios, seleccione **Listo** y, a continuación, **seleccione Guardar** y, a continuación, **Cerrar**.
+7. Seleccione la casilla situada junto a los nombres que desea agregar y, a continuación, seleccione el **botón** Agregar en la parte inferior.
 
-##### <a name="more-about-the-office-365-security--compliance-center"></a>Más información sobre el Centro de Office 365 seguridad & cumplimiento
+8. Cuando haya terminado de asignar usuarios, seleccione **Listo** y, a continuación, **seleccione Guardar** y, a continuación, **Cerrar**.
 
-Obtenga más información [sobre los permisos en Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
-
-Si no tiene acceso al Centro de seguridad y cumplimiento de Office 365 o si necesita tener acceso a la versión clásica del Administrador de cumplimiento en el Portal de confianza de servicio de Microsoft, la configuración de administración en el Portal de confianza de servicio proporciona otra forma de asignar roles[(](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)ver instrucciones ). Tenga en cuenta que estos roles son más limitados en su funcionalidad.
+Si necesita tener acceso a la versión clásica del Administrador de cumplimiento en el Portal de confianza de servicio de Microsoft, la configuración de administración del Portal de confianza de servicio proporciona otra forma de asignar roles ([ver instrucciones](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Tenga en cuenta que estos roles son más limitados en su funcionalidad.
 
 ##### <a name="more-about-azure-ad"></a>Más información sobre Azure AD
 
@@ -187,7 +185,7 @@ Puede reasignar acciones de mejora de un usuario a otro. Al reasignar una acció
 8. Una vez completada la reasignación, verá un mensaje de confirmación en el panel desplegable que confirma que todas las acciones de mejora del usuario anterior se han reasignado al nuevo usuario. Si recibe un aviso de error de reasignación, cierre la ventana e inténtelo de nuevo. Para cerrar el panel desplegable, seleccione **Listo**.
 
 El nuevo destinatario recibe un correo electrónico que se ha asignado a una acción de mejora. El correo electrónico contiene un vínculo directo a la página de detalles de la acción de mejora.
- 
+
  > [!NOTE]
 > Si reasigna una acción que tiene una actualización pendiente, el vínculo directo a la acción en el correo electrónico de reasignación se interrumpirá si la actualización se acepta después de la reasignación. Para solucionar esto, vuelva a asignar la acción al usuario después de aceptar la actualización. Obtenga más información sobre [las actualizaciones de las acciones de mejora](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
@@ -215,7 +213,7 @@ Para eliminar el historial de un usuario, siga estos pasos:
 
 El panel del Administrador de cumplimiento está diseñado para proporcionarle una vista de un vistazo de su posición de cumplimiento actual.
 
-![Administrador de cumplimiento: panel](../media/compliance-manager-dashboard.png "Panel del Administrador de cumplimiento")
+:::image type="content" alt-text="Administrador de cumplimiento: panel." source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
 ### <a name="overall-compliance-score"></a>Puntuación de cumplimiento global
 

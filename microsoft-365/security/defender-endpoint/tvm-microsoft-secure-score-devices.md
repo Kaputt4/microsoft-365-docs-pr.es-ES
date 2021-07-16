@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f2c799d477c400482c16b09b4d8a5cdc01106dfa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 13307d3205818d41e7b2219b4e3a4ed6e9f2d5bb
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934086"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454789"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Puntuación de seguridad de Microsoft para dispositivos
 
@@ -32,7 +32,7 @@ ms.locfileid: "51934086"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -41,7 +41,7 @@ ms.locfileid: "51934086"
 >[!NOTE]
 > La puntuación de configuración ahora forma Administración de amenazas y vulnerabilidades como puntuación segura de Microsoft para dispositivos.
 
-La puntuación de los dispositivos está visible [en Administración de amenazas y vulnerabilidades panel de la](tvm-dashboard-insights.md) Centro de seguridad de Microsoft Defender. Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad. Refleja el estado de configuración de seguridad colectiva de los dispositivos en las siguientes categorías:
+La puntuación de los dispositivos está visible [en Administración de amenazas y vulnerabilidades panel](tvm-dashboard-insights.md) del portal Microsoft 365 Defender usuario. Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad. Refleja el estado de configuración de seguridad colectiva de los dispositivos en las siguientes categorías:
 
 - Aplicación
 - Sistema operativo
@@ -57,7 +57,7 @@ Reenvía Microsoft Defender para las señales de punto de conexión, lo que ofre
 
 Los cambios pueden tardar hasta unas horas en reflejarse en el panel.
 
-1. En el panel de navegación, vaya **a Configuración**  >  **características avanzadas** 
+1. En el panel de navegación, vaya **a Configuración** características avanzadas generales de puntos de  >    >    >  **conexión** 
 
 2. Desplácese hacia abajo **hasta Puntuación segura de Microsoft** y cambie la configuración a **On**.
 
@@ -83,15 +83,17 @@ Mejore la configuración de seguridad mediante la corrección de problemas de la
 
 2. Seleccione un elemento en la lista. El panel desplegable se abrirá con detalles relacionados con la recomendación. Seleccione **Opciones de corrección**.
 
-   ![Recomendaciones de seguridad relacionadas con controles de seguridad](images/tvm_security_controls.png)
+   :::image type="content" alt-text="Recomendaciones de seguridad relacionadas con controles de seguridad." source="images/security-controls.png":::
 
 3. Lea la descripción para comprender el contexto del problema y qué hacer a continuación. Seleccione una fecha de vencimiento, agregue notas y **seleccione Exportar** todos los datos de actividad de corrección a CSV para poder adjuntarlos a un correo electrónico para su seguimiento.
 
 4. **Enviar solicitud**. Verá un mensaje de confirmación de que se ha creado la tarea de corrección.
-   ![Confirmación de creación de tareas de corrección](images/tvm_remediation_task_created.png)
+
+   :::image type="content" alt-text="Confirmación de creación de tareas de corrección." source="images/remediation-task-created.png":::
 
 5. Guarde el archivo CSV.
-   ![Guardar archivo csv](images/tvm_save_csv_file.png)
+
+   :::image type="content" alt-text="Guardar archivo csv." source="images/tvm_save_csv_file.png":::
 
 6. Envíe un correo electrónico de seguimiento a su administrador de TI y permita el tiempo que haya asignado para que la corrección se propague en el sistema.
 

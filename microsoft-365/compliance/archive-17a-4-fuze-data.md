@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser de 17a-4 Fuze para importar y archivar datos de Fuze en Microsoft 365.
-ms.openlocfilehash: eb7e66bf3a8d00431ad7e393471110b36efa8e65
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 9f3c7590a033c2c19d9b588167d67c24f917ec5f
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096504"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454510"
 ---
-# <a name="set-up-a-connector-to-archive-fuze-data-preview"></a>Configurar un conector para archivar datos de Fuze (versión preliminar)
+# <a name="set-up-a-connector-to-archive-fuze-data"></a>Configurar un conector para archivar datos de Fuze
 
 Use [El Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) de 17a-4 LLC para importar y archivar datos de Fuze a buzones de usuario de su Microsoft 365 organización. DataParser incluye un conector Fuze configurado para capturar elementos de un origen de datos de terceros e importar esos elementos a Microsoft 365. El conector DataParser de Fuze convierte los datos de Fuze en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 

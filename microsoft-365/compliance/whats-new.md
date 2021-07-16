@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: acbad7a1c5fa541ee83da668768cc42af7a5afda
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394946"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464014"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -46,6 +46,10 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 ### <a name="customer-key"></a>Clave de cliente
 
 - [Cifrado de servicio con clave de cliente](customer-key-overview.md) (los DEP de nivel de inquilino de clave de cliente ahora cifran la configuración de etiquetas de confidencialidad Microsoft Information Protection).
+
+### <a name="data-connectors"></a>Conectores de datos
+
+- Hemos lanzado 17 nuevos conectores de datos en asociación con [17a-4 LLC](archiving-third-party-data.md#17a-4-data-connectors) y un nuevo conector en asociación [con CellTrust](archiving-third-party-data.md#celltrust-data-connectors). También hemos lanzado conectores de datos adicionales en asociación con [Veritas](archiving-third-party-data.md#veritas-data-connectors) y [TeleMessage](archiving-third-party-data.md#telemessage-data-connectors). Hasta la fecha, esto hace que un total de 65 conectores de datos disponibles importen y archiven datos de terceros en Microsoft 365.
 
 ### <a name="ediscovery"></a>eDiscovery
 

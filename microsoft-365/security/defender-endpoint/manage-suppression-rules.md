@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1549512a02fe3af71d32c6b33c69cc705de99a8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 74b89d86b770cb47a0855b45d457ea8ce5fb9802
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862132"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454762"
 ---
 # <a name="manage-suppression-rules"></a>Administrar reglas de supresión
 
@@ -40,7 +40,7 @@ Puede haber escenarios en los que necesite suprimir las alertas para que no apar
 Puede ver una lista de todas las reglas de supresión y administrarlas en un solo lugar. También puede activar o desactivar una regla de supresión de alertas.
 
 
-1. En el panel de navegación, **seleccione Configuración**  >  **supresión de alertas**. Se muestra la lista de reglas de supresión que los usuarios de la organización han creado.
+1. En el panel de navegación, seleccione **Configuración**  >  **de alerta de reglas**  >  **de** extremos  >  . Se muestra la lista de reglas de supresión que los usuarios de la organización han creado.
 
 2. Seleccione una regla haciendo clic en la casilla situada junto al nombre de la regla.
 
@@ -49,7 +49,7 @@ Puede ver una lista de todas las reglas de supresión y administrarlas en un sol
 
 ## <a name="view-details-of-a-suppression-rule"></a>Ver detalles de una regla de supresión
 
-1. En el panel de navegación, **seleccione Configuración**  >  **supresión de alertas**. Se muestra la lista de reglas de supresión que los usuarios de la organización han creado.
+1. En el panel de navegación, seleccione **Configuración**  >  **de alerta de reglas**  >  **de** extremos  >  . Se muestra la lista de reglas de supresión que los usuarios de la organización han creado.
 
 2. Haga clic en un nombre de regla. Se muestran los detalles de la regla. Verá los detalles de la regla, como el estado, el ámbito, la acción, el número de alertas de coincidencia, creadas por y la fecha en que se creó la regla. También puede ver las alertas asociadas y las condiciones de regla.
 
