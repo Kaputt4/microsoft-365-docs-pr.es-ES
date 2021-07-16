@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: 0fc00819947d3d472de9199b0381c6f33de0acd6
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 58f3bab9f8c5e28ce921ab244b23c49682394795
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420319"
+ms.locfileid: "53430713"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
-Para comenzar a usar la característica de gobernanza de aplicaciones para Microsoft Cloud App Security:
+Para empezar a usar el complemento de gobernanza de aplicaciones para Microsoft Cloud App Security:
 
 1. Compruebe que su cuenta tenga el nivel de licencia adecuado. La gobernanza de aplicaciones es una característica complementaria para Microsoft Cloud App Security (MCAS) y, por tanto, MCAS debe estar presente en su cuenta como un producto independiente o como parte de los distintos paquetes de licencia que se enumeran a continuación.
 1. Debe tener uno de los roles de administrador que se enumeran a continuación para acceder a las páginas de gobernanza de la aplicación en el portal.
@@ -72,7 +72,7 @@ Se requiere uno de los siguientes roles de administrador para ver las páginas d
 
 Estas son las funcionalidades de cada rol.
 
-| Rol | Leer del panel | Leer todas las aplicaciones |Leer las directivas | Crear, actualizar o eliminar directivas | Leer alertas | Actualizar alertas | Leer la configuración | Actualizar configuración | Leer corrección | Actualizar corrección |
+| Rol | Leer del panel | Leer todas las aplicaciones |Leer directivas | Crear, actualizar o eliminar directivas | Leer alertas | Actualizar alertas | Leer la configuración | Actualizar configuración | Leer corrección | Actualizar corrección |
 |:-------|:-----|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 | Administrador de la aplicación | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) | ![Marca de verificación](..\media\checkmark.png) |
 | Administrador de aplicaciones en la nube | ![Marca de verificación](..\media\checkmark.png) | | | | | | | | | |

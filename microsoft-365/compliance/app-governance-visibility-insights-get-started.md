@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a la visibilidad y la información.
-ms.openlocfilehash: 12c1a01667b1bda545b619e931d99132e6611e35
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 93be3557c32345e81c7126b669ead8edf8ebac21
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420267"
+ms.locfileid: "53430485"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Introducción a la visibilidad y la información
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-El primer lugar para comenzar es el panel de gobernanza de aplicaciones en [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Tenga en cuenta que su cuenta de inicio de sesión debe tener uno de estos [roles de administrador de gobernanza de aplicaciones](app-governance-get-started.md#administrator-roles) para ver cualquier dato de gobernanza de aplicaciones.
+El primer lugar para comenzar es el panel de gobernanza de aplicaciones en [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Tenga en cuenta que su cuenta de inicio de sesión debe tener uno de estos [roles de administrador de gobernanza de aplicaciones](app-governance-get-started.md#administrator-roles) para ver cualquier dato de gobernanza de aplicaciones.
 
 ![Página de información general de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
