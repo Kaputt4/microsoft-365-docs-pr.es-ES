@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: 58f3bab9f8c5e28ce921ab244b23c49682394795
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 80487298f2c3c3a93f0083337ddb223bd68e2611
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430713"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438041"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
@@ -30,7 +30,7 @@ Para empezar a usar el complemento de gobernanza de aplicaciones para Microsoft 
 
 ## <a name="licensing-for-app-governance"></a>Licencias para la gobernanza de aplicaciones
 
-Antes de empezar con la gobernanza de aplicaciones, debe confirmar su [suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) y cualquier complemento. Para obtener acceso y usar la gobernanza de aplicaciones, su organización debe tener una de las siguientes suscripciones:
+Antes de empezar a trabajar con la gobernanza de aplicaciones, debería confirmar [Centro de administración de Microsoft 365: suscripciones](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) y los complementos. Para obtener acceso y usar la gobernanza de aplicaciones, su organización debe tener una de las siguientes suscripciones:
 
 - Microsoft Cloud App Security
 - Microsoft 365 E5
@@ -69,6 +69,9 @@ Se requiere uno de los siguientes roles de administrador para ver las páginas d
 - Administrador de seguridad
 - Operador de seguridad
 - Lector de seguridad (solo lectura)
+
+> [!NOTE]
+> Solo un administrador global puede activar la evaluación gratuita de gobernanza de aplicaciones.
 
 Estas son las funcionalidades de cada rol.
 

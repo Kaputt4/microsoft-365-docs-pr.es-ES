@@ -1,7 +1,7 @@
 ---
-title: Preparar el entorno Microsoft 365 laboratorio de prueba de Defender
-description: Preparar el inicio de sesión de las partes interesadas, las escalas de tiempo, las consideraciones del entorno y el orden de adopción al configurar el entorno piloto o el laboratorio de prueba de Microsoft 365 Defender
-keywords: Microsoft 365 Preparación de prueba de Defender, preparación piloto de Microsoft 365 Defender, preparación para ejecutar un proyecto piloto de Microsoft 365 Defender, ejecutar un proyecto piloto de Microsoft 365 Defender, implementar, preparar, partes interesadas, escala de tiempo, entorno, punto de conexión, servidor, administración, adopción
+title: Preparar el entorno Microsoft 365 Defender laboratorio de prueba
+description: Preparar el inicio de sesión de las partes interesadas, las escalas de tiempo, las consideraciones del entorno y el orden de adopción al configurar el entorno Microsoft 365 Defender de prueba o piloto
+keywords: Microsoft 365 Defender de prueba, preparación piloto de Microsoft 365 Defender, preparación para ejecutar un proyecto piloto de Microsoft 365 Defender, ejecutar un proyecto piloto de Microsoft 365 Defender, implementar, preparar, partes interesadas, escala de tiempo, entorno, punto de conexión, servidor, administración, adopción
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,13 +20,13 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 7ebb7074b0e06eda96d21142044bd8b9997e094b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841659"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53458849"
 ---
-# <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Preparar el entorno piloto o el laboratorio de prueba de Microsoft 365 Defender
+# <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Preparar su laboratorio Microsoft 365 Defender prueba o entorno piloto
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "52841659"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Crear un Microsoft 365 de prueba de Defender o un entorno piloto e implementarlo es un proceso de tres fases:
+Crear un Microsoft 365 Defender de prueba o un entorno piloto e implementarlo es un proceso de tres fases:
 
 |![Fase 1: Preparación](../../media/phase-diagrams/prepare.png)<br/>Fase 1: Preparación |[![Fase 2: Configuración](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Fase 2: Configuración](setup-m365deval.md) |[![Fase 3: Incorporación](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Fase 3: Incorporación](config-m365d-eval.md) | [![Volver al piloto](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Volver al libro de reproducción piloto](m365d-pilot.md) |
 |--|--|--|--|
@@ -43,10 +43,10 @@ Crear un Microsoft 365 de prueba de Defender o un entorno piloto e implementarlo
 Actualmente está en la fase de preparación.
 
 
-La preparación es clave para cualquier implementación correcta. Esta sección le guiará a través de lo que necesita tener en cuenta al prepararse para crear un entorno piloto o un laboratorio de prueba para la implementación de Microsoft 365 Defender.
+La preparación es clave para cualquier implementación correcta. Esta sección le guiará a través de lo que necesita tener en cuenta al prepararse para crear un entorno piloto o un laboratorio de prueba para su Microsoft 365 Defender implementación.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Obtenga información sobre los requisitos de licencias, hardware y software y otras opciones de configuración para aprovisionar y usar Microsoft 365 Defender. Consulta los requisitos mínimos [para Microsoft 365 Defender,](/microsoft-365/security/defender/prerequisites) [Microsoft Defender para](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)endpoint, Microsoft Defender para [Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), Microsoft Defender [para identity](/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-prerequisites).
+Obtenga información sobre los requisitos de licencias, hardware y software y otras opciones de configuración para aprovisionar y usar Microsoft 365 Defender. Consulta los requisitos mínimos [para Microsoft 365 Defender](/microsoft-365/security/defender/prerequisites), [Microsoft Defender para](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)endpoint, Microsoft Defender para [Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), Microsoft Defender [para identity](/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Partes interesadas y inicio de sesión
 Identifique a todas las partes interesadas que participan en el proyecto y a las que es posible que necesiten cerrar sesión, revisar o mantenerse informadas, ya sea para la evaluación o la ejecución de un proyecto piloto.
@@ -62,7 +62,7 @@ Agregue partes interesadas a la tabla siguiente según corresponda para su organ
 
 -   I = Informado de este proyecto
 
-| Nombre                 | Función                                                                                                                                                                                                          | Acción |
+| Nombre                 | Rol                                                                                                                                                                                                          | Acción |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Escriba el nombre y el correo electrónico | **Director de seguridad de la información (CISO)** Un representante ejecutivo que actúa como patrocinador dentro de *la organización para la nueva implementación de tecnología.*                                                  | SO     |
 | Escriba el nombre y el correo electrónico | Jefe del Centro de operaciones **de Ciberdefensa (CDOC)** Un representante del equipo CDOC encargado de definir cómo se alinea este cambio con los procesos del equipo de operaciones de *seguridad de clientes.*       | SO     |
@@ -71,7 +71,7 @@ Agregue partes interesadas a la tabla siguiente según corresponda para su organ
 | Escriba el nombre y el correo electrónico | **Analista de** seguridad Un representante del equipo de CDOC que puede proporcionar comentarios sobre las capacidades de detección, la experiencia del usuario y la utilidad general de este cambio desde una perspectiva *de operaciones de seguridad.* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Prepare su Azure Active Directory
-Omita este paso si ya ha habilitado la sincronización entre Active Directory y Azure Active Directory local. Revise la documentación de procedimientos recomendados existente Azure Active Directory. Los siguientes pasos están optimizados para evaluar o ejecutar un proyecto piloto Microsoft 365 Defender.
+Omita este paso si ya ha habilitado la sincronización entre Active Directory y Azure Active Directory local. Revise la documentación de procedimientos recomendados existente Azure Active Directory. Los siguientes pasos están optimizados para evaluar o ejecutar un proyecto piloto Microsoft 365 Defender proyecto.
 
 1. Vaya a la [página Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) portal > Azure **AD Conectar**. 
 ![Imagen de Azure Active Directory página del portal](../../media/mtp-eval-1.png) <br> 
@@ -101,7 +101,7 @@ Ahora puede agregar [usuarios y grupos](/azure-advanced-threat-protection/atp-pl
 
 
 ## <a name="configuration-order"></a>Orden de configuración
-En la tabla siguiente se indica el orden que Microsoft recomienda para configurar los componentes de Microsoft 365 Defender para la implementación del entorno piloto o del laboratorio de prueba.
+En la tabla siguiente se indica el orden que Microsoft recomienda para configurar los componentes Microsoft 365 Defender para la implementación del entorno piloto o del laboratorio de prueba.
 
 | Componente                               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Clasificación del orden de configuración |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
@@ -111,5 +111,5 @@ En la tabla siguiente se indica el orden que Microsoft recomienda para configura
 |Microsoft Defender para punto de conexión | Las funciones de detección y respuesta en el punto de conexión de Microsoft Defender para punto de conexión proporcionan detecciones de ataques avanzadas que son casi en tiempo real y permiten tomar medidas. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas. <br> [Aprende más.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Paso siguiente
-|![Fase 2: Configuración](../../media/setup.png) <br>[Fase 2: Configuración](setup-m365deval.md) | Configurar el entorno piloto o el laboratorio de prueba de Microsoft 365 Defender
+|![Fase 2: Configuración](../../media/setup.png) <br>[Fase 2: Configuración](setup-m365deval.md) | Configurar el laboratorio Microsoft 365 Defender prueba o el entorno piloto
 |:-------|:-----|

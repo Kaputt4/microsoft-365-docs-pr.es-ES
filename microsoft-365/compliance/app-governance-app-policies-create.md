@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de aplicación.
-ms.openlocfilehash: 17417d7fac80f2763edbbaa8dbb2c8be16e47371
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420427"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438065"
 ---
 # <a name="create-app-policies"></a>Crear directivas de aplicación
 
@@ -32,7 +32,7 @@ Además de un conjunto de funciones integradas para detectar comportamientos an�
 
 Puede crear directivas de aplicación a partir de plantillas proporcionadas que pueden ser personalizadas, o puede crear su propia directiva de aplicación personalizada.
 
-Para crear una nueva directiva de aplicaciones, vaya al **Centro de cumplimiento de Microsoft 365 > Protección y gobierno de aplicaciones > Página de descripción general > Directivas**:
+Para crear una nueva directiva de aplicaciones, vaya al **Centro de cumplimiento de Microsoft 365 > Gobierno de aplicaciones > Página de descripción general > Directivas**:
 
 - Para crear una nueva directiva de aplicaciones con plantillas diseñadas para el uso de aplicaciones, seleccione **Crear directiva** en **Crear una política de uso de aplicaciones**.
 - Para crear una nueva directiva de aplicaciones con plantillas diseñadas para permisos de aplicaciones, seleccione **Crear directiva** en **Crear una directiva de permisos**.

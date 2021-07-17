@@ -1,7 +1,7 @@
 ---
-title: Resumen de los resultados del proyecto Microsoft 365 Defender
-description: Concluye el proyecto piloto Microsoft 365 Defender completando el cuadro de mandos, analizando los resultados del informe y decidiendo cómo avanzar.
-keywords: Microsoft 365 Piloto de Defender, decida qué hacer después del proyecto piloto de Microsoft 365 Defender, qué hacer después de evaluar Microsoft 365 Defender en producción, transición del piloto de Microsoft 365 Defender a la implementación, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
+title: Resumen de los resultados Microsoft 365 Defender proyecto piloto
+description: Para finalizar el Microsoft 365 Defender piloto, complete el cuadro de mandos, analice los resultados del informe y decida cómo avanzar.
+keywords: Microsoft 365 Defender piloto, decida qué hacer después del proyecto piloto Microsoft 365 Defender, qué hacer después de evaluar Microsoft 365 Defender en producción, transición de un piloto Microsoft 365 Defender una implementación, seguridad cibernética, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,13 +22,13 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 64cdb37b64780a651b2689e68e21c5a385df5ba9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932874"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53458844"
 ---
-# <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Cerrar y resumir el piloto de Microsoft 365 Defender  
+# <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Cerrar y resumir el Microsoft 365 Defender piloto  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -60,7 +60,7 @@ Presente los informes del resultado final a las partes interesadas internas (que
 Esperamos que haya disfrutado de esta simulación. Comience a implementar lo aprendido a mayor escala en su organización para sacar el máximo partido a la solución de seguridad integrada.
 
 ## <a name="next-step"></a>Paso siguiente
-Obtenga más información sobre los Microsoft 365 Defender mediante las siguientes guías interactivas:
+Obtenga más información sobre los Microsoft 365 Defender a través de las siguientes guías interactivas:
 - [Proteja su organización con Microsoft Defender para Office 365](https://aka.ms/O365ATP-Interactive-Guide)
 - [Detectar actividades y posibles ataques con Microsoft Defender for Identity](https://aka.ms/AATP-Interactive-Guide)
 - [Detectar amenazas y administrar alertas con Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)

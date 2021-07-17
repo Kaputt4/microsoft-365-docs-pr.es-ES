@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar el cmdlet De PowerShell AllowSelfServicePurchase para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 03/18/2021
-ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.date: 07/16/2021
+ms.openlocfilehash: 77cb1c753db22929ea2c3d14226a3927e6406b89
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227480"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461368"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce
 
@@ -104,7 +104,9 @@ En la tabla siguiente se enumeran los productos disponibles y **su ProductId**.
 | Project Plan 3 | CFQ7TTC0KXNC |
 | Visio Plan 1 | CFQ7TTC0KXN9 |
 | Visio Plan 2 | CFQ7TTC0KXN8 |
-
+| Windows 365 Enterprise | CFQ7TTC0HHS9 |
+| Windows 365 Empresa | CFQ7TTC0J203 |
+| Windows 365 Empresa con Windows ventaja híbrida | CFQ7TTC0HX99 |
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Ver o establecer el estado de AllowSelfServicePurchase
 
 Después de ver la lista de productos disponibles para la compra de autoservicio, puede ver o modificar la configuración de un producto específico.

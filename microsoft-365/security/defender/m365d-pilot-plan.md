@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 6a52df8035ce6f84770a2d06c3b8c127e426622e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286002"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53458841"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planeación del proyecto piloto Microsoft 365 Defender proyecto 
 
@@ -36,7 +36,7 @@ ms.locfileid: "53286002"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-|![Planificación](../../media/phase-diagrams/1-planning.png)<br/>Planificación|[![Preparar](../../media/phase-diagrams/2-prepare.png)](prepare-m365d-eval.md)<br/>[Preparación](prepare-m365d-eval.md) | [![Simular ataque](../../media/phase-diagrams/3-simluate.png)](m365d-pilot-simulate.md)<br/>[Simular ataque](m365d-pilot-simulate.md) | [![Cerrar y resumir](../../media/phase-diagrams/4-summary.png)](m365d-pilot-close.md)<br/>[Cerrar y resumir](m365d-pilot-close.md)|
+|![Planificación](../../media/phase-diagrams/1-planning.png)<br/>Planificación|[![Preparación](../../media/phase-diagrams/2-prepare.png)](prepare-m365d-eval.md)<br/>[Preparación](prepare-m365d-eval.md) | [![Simular ataque](../../media/phase-diagrams/3-simluate.png)](m365d-pilot-simulate.md)<br/>[Simular ataque](m365d-pilot-simulate.md) | [![Cerrar y resumir](../../media/phase-diagrams/4-summary.png)](m365d-pilot-close.md)<br/>[Cerrar y resumir](m365d-pilot-close.md)|
 |--|--|--|--|
 |*¡Estás aquí!*| | | |
 
