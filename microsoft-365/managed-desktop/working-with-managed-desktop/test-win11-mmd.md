@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3ee0ca72f0eb3623755c9b342966915f520c485d
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/16/2021
-ms.locfileid: "53458892"
+ms.locfileid: "53461392"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Vista previa y prueba Windows 11 con Escritorio administrado de Microsoft
 
@@ -24,7 +24,7 @@ ms.locfileid: "53458892"
 
 Hasta la fecha, más del 95 % de los dispositivos Escritorio administrado de Microsoft cumplen los criterios de [elegibilidad para Windows 11](/windows/whats-new/windows-11-requirements). Puedes solicitar detalles sobre el estado de elegibilidad de tus dispositivos desde Escritorio administrado de Microsoft. Para presentar la solicitud, siga estos pasos:
 
-1. Abra una nueva solicitud de servicio con el Escritorio administrado de Microsoft de ingeniería de servicio. Si necesitas más información sobre cómo hacer el archivo de la solicitud, consulta [Admin support](admin-support.md).
+1. Abra una nueva solicitud de servicio con el Escritorio administrado de Microsoft de ingeniería de servicio. Si necesitas más información sobre cómo presentar la solicitud, consulta [Admin support](admin-support.md).
 2. Use estos valores para los campos:
     - Título: Windows elegibilidad de 11 dispositivos
     - Tipo de solicitud: Solicitud de información
@@ -52,7 +52,7 @@ Para inscribir los dispositivos en el grupo de pruebas de versión previa:
 
 Las aplicaciones críticas para la empresa son las mejores candidatas para obtener más validación en un entorno Windows 11. Podemos ayudarte a priorizar las aplicaciones para Windows 11 pruebas basadas en datos de uso y confiabilidad. Para solicitar nuestras recomendaciones, siga estos pasos:
 
-1. Abra una nueva solicitud de servicio con el Escritorio administrado de Microsoft de ingeniería de servicio. Si necesitas más información sobre cómo hacer el archivo de la solicitud, consulta [Admin support](admin-support.md).
+1. Abra una nueva solicitud de servicio con el Escritorio administrado de Microsoft de ingeniería de servicio. Si necesitas más información sobre cómo presentar la solicitud, consulta [Admin support](admin-support.md).
 2. Use estos valores para los campos:
     - Título: Windows 11 candidatos de base de prueba
     - Tipo de solicitud: Solicitud de información
