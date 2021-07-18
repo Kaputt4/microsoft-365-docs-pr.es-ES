@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: c97368dd48515dc787dbac66aa93844889efbdbc
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 3da15f1ac35ca448a76638c31f047c6a2132ad7a
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314421"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454010"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -53,7 +53,7 @@ DLP en punto de conexión de Microsoft le permite auditar y administrar los sigu
 
 ## <a name="monitored-files"></a>Archivos supervisados
 
-La DLP en punto de conexión admite la supervisión de estos tipos de archivo:
+La DLP en punto de conexión admite la supervisión de estos tipos de archivo. La DLP en punto de conexión audita las actividades para estos tipos de archivo, incluso si no hay una coincidencia de directiva. 
 
 - archivos de Word
 - archivos de PowerPoint
@@ -69,8 +69,11 @@ La DLP en punto de conexión admite la supervisión de estos tipos de archivo:
 - archivos .cs
 - archivos .h
 - archivos .java
+ 
+Si solo quiere supervisar los datos de las coincidencias de directivas, puede desactivar **Auditar siempre para la actividad de archivos de los dispositivos** en la configuración global de DLP en punto de conexión.
 
-De forma predeterminada, la DLP en punto de conexión audita las actividades para estos tipos de archivo, incluso si no hay una coincidencia de directiva. Si solo quiere supervisar los datos de las coincidencias de directivas, puede desactivar **Auditar siempre para la actividad de archivos de los dispositivos** en la configuración global de DLP en punto de conexión. Si esta configuración está instalada, las actividades de cualquier archivo Word, PowerPoint, Excel, PDF y .csv siempre se auditan, incluso si el dispositivo no está dirigido por ninguna directiva.
+> [!NOTE]
+> Si la configuración **Auditar siempre la actividad de archivos para dispositivos** está instalada, las actividades de cualquier archivo Word, PowerPoint, Excel, PDF y .csv siempre se auditan, incluso si el dispositivo no está dirigido por ninguna directiva.
 
 DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo.
 
