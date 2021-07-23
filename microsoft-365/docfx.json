@@ -115,6 +115,12 @@
       "searchScope": {
         "security/office-365-security/**/*.md": "Defender for Office",
         "lighthouse/**/*.md": "Microsoft 365 Lighthouse"
+      },
+      "recommendations": {
+        "admin/**/*.md": false,
+        "business/**/*.md": false,
+        "business-video/**/*.md": false,
+        "commerce/**/*.md": false
       }
     },
     "template": [],
