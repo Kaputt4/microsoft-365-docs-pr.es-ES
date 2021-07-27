@@ -477,43 +477,43 @@
               href: archive-whatsapp-data.md
         - name: 17a-4 conectores de datos
           items:
-            - name: DataParser de BlackBerry (versión preliminar)
+            - name: BlackBerry DataParser
               href: archive-17a-4-blackberry-data.md
-            - name: DataParser de Bloomberg (versión preliminar)
+            - name: Bloomberg DataParser
               href: archive-17a-4-bloomberg-data.md
-            - name: DataParser de Cisco Jabber (versión preliminar)
+            - name: Cisco Jabber DataParser
               href: archive-17a-4-cisco-jabber-data.md
-            - name: DataParser de Cisco Webex (versión preliminar)
+            - name: Cisco Webex DataParser
               href: archive-17a-4-webex-teams-data.md
-            - name: DataParser de FactSet (versión preliminar)
+            - name: FactSet DataParser
               href: archive-17a-4-factset-data.md
-            - name: DataParser de Fuze (versión preliminar)
+            - name: Fuze DataParser
               href: archive-17a-4-fuze-data.md
-            - name: DataParser de FX Connect (versión preliminar)
+            - name: FX Connect DataParser
               href: archive-17a-4-fxconnect-data.md
-            - name: DataParser de I CE (versión preliminar)
+            - name: ICE DataParser
               href: archive-17a-4-ice-im-data.md
-            - name: DataParser de InvestEdge (versión preliminar)
+            - name: InvestEdge DataParser
               href: archive-17a-4-investedge-data.md
-            - name: DataParser de la Nube conversacional de LivePerson (versión preliminar)
+            - name: DataParser de la Nube conversacional de LivePerson
               href: archive-17a-4-liveperson-data.md
-            - name: DataParser de Quip (versión preliminar)
+            - name: Quip DataParser
               href: archive-17a-4-quip-data.md
-            - name: DataParser de Refinitiv Eiander Messenger (versión preliminar)
+            - name: DataParser de Refinitiv Eikon Messenger
               href: archive-17a-4-refinitiv-messenger-data.md
-            - name: DataParser de ServiceNow (versión preliminar)
+            - name: ServiceNow DataParser
               href: archive-17a-4-servicenow-data.md
-            - name: DataParser de Slack (versión preliminar)
+            - name: Slack DataParser
               href: archive-17a-4-slack-data.md
-            - name: DataParser de SQL (versión preliminar)
+            - name: SQL DataParser
               href: archive-17a-4-sql-database-data.md
-            - name: Symphony DataParser (versión preliminar)
+            - name: DataParser de Symphony
               href: archive-17a-4-symphony-data.md
-            - name: DataParser de Zoom (versión preliminar)
+            - name: Zoom DataParser
               href: archive-17a-4-zoom-data.md
         - name: Conectores CellTrust
           items:
-            - name: CellTrust SL2 (versión preliminar)
+            - name: CellTrust SL2
               href: archive-data-from-celltrustsl2.md
         - name: Trabajar con un socio para archivar datos de terceros
           href: work-with-partner-to-archive-third-party-data.md
@@ -995,3 +995,5 @@
   href: ../security/index.yml
 - name: Aplicaciones de Microsoft 365 para negocios
   href: /office365/admin/admin-home
+- name: Solución de problemas
+  href: /office365/troubleshoot/microsoft-365-compliance-welcome

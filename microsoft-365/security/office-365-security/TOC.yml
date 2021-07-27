@@ -158,8 +158,16 @@
           href: air-custom-reporting.md
         - name: Configuración del filtro de Spam avanzado (ASF)
           href: advanced-spam-filtering-asf-options.md
-        - name: Administrar la lista de permitidos o bloqueados del espacio empresarial
-          href: tenant-allow-block-list.md
+        - name: Lista de bloqueados y permitidos del espacio empresarial
+          items:
+            - name: Administrar la lista de bloqueados y permitidos del espacio empresarial
+              href: tenant-allow-block-list.md
+            - name: Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
+              href: manage-tenant-blocks.md
+            - name: Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
+              href: manage-tenant-allows.md
+            - name: Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
+              href: modify-remove-entries-tenant-allow-block.md
         - name: Seguimiento de mensajes en el Centro de seguridad y cumplimiento
           href: message-trace-scc.md
         - name: Notificar mensajes y archivos a Microsoft
@@ -186,7 +194,7 @@
               href: real-time-detections.md
         - name: Usar rastreadores de amenazas
           href: threat-trackers.md
-        - name: Ver alertas
+        - name: Directivas de alerta
           href: ../../compliance/alert-policies.md
         - name: Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
           href: reports-and-insights-in-security-and-compliance.md

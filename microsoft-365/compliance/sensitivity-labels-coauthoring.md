@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 494e00187be4d19eb54d0226a02103b8fe20cb98
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062187"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461416"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -127,7 +127,7 @@ Esta versión preliminar de coautoría para archivos cifrados con etiquetas de c
 
 - Los usuarios no podrán aplicar ninguna etiqueta en Office para la Web para archivos de Word, Excel y PowerPoint que sean superiores a 300 MB. Para estos archivos, puede usar las aplicaciones de escritorio de Office para aplicar una etiqueta, pero debe ser la única persona que tiene abierto el archivo.
 
-- Al usar [directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md), los datos adjuntos no cifrados para correos electrónicos no son compatibles.
+- Actualmente en implementación: compatibilidad con [directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md) y datos adjuntos sin cifrar para los correos electrónicos.
 
 - Algunos documentos no son compatibles con etiquetas de confidencialidad debido a características como [protección con contraseña](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643), [libros compartidos](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534), o contenido que incluya controles ActiveX. Otros motivos están documentados en [solución de problemas de coautoría en Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7). Para esos documentos, verá el mensaje **Error al cargar** y deberá seleccionar la opción **Descartar cambios**. Mientras no quede solucionado este problema, evite etiquetar los documentos que presentan dicho mensaje de error.
 

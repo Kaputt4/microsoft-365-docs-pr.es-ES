@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 1aca97f12fe75dd74467007f35858c72caa38606
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: eb30e3d553435c76bcf8f7cc1efc0f5524c0b966
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226112"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538942"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -115,6 +115,7 @@ Las directivas de retención se pueden aplicar a las siguientes ubicaciones:
 - Carpetas públicas de Exchange
 - Mensajes de canal de Teams
 - Chats de Teams
+- Mensajes del canal privado de Teams
 - Mensajes de la comunidad de Yammer
 - Mensajes del usuario de Yammer
 
@@ -494,7 +495,7 @@ Si actualmente usa esas características más antiguas, estas seguirán funciona
     
 - [Configuración de administración de registros local](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retención) 
     
-- [Usar las directivas de cierre y eliminación de sitio](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (solo eliminación)
+- [Usar las directivas de cierre y eliminación de sitio](https://support.microsoft.com/es-ES/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (solo eliminación)
     
 - [Directivas de administración de información](intro-to-info-mgmt-policies.md) (solo eliminación)
      

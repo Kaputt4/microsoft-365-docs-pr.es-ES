@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 038879e77dfa26d82add20d043a32de117f95b19
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c83d5994ab93799536796c153dfd878e3e2dd6d0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287836"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542710"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Enumerar la API de incidentes en Microsoft 365 Defender
 
@@ -60,8 +60,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 -|-|-
-Aplicación | Incident.Read.All | Leer todos los incidentes
-Aplicación | Incident.ReadWrite.All | Leer y escribir todos los incidentes
+Application | Incident.Read.All | Leer todos los incidentes
+Application | Incident.ReadWrite.All | Leer y escribir todos los incidentes
 Delegado (cuenta profesional o educativa) | Incident.Read | Leer incidentes
 Delegado (cuenta profesional o educativa) | Incident.ReadWrite | Incidentes de lectura y escritura
 
@@ -81,7 +81,7 @@ GET /api/incidents
 
 Nombre | Tipo | Descripción
 -|-|-
-Authorization | Cadena | Portador {token}. **Required**
+Authorization | String | Portador {token}. **Required**
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -106,9 +106,10 @@ lastUpdateTime | Hora en la que el incidente se actualizó por última vez en el
 assignedTo | Propietario del incidente o *null* si no se asigna ningún propietario. | secop2@contoso.com
 classification | La especificación del incidente. Los valores de propiedad son: *Unknown*, *FalsePositive*, *TruePositive* | Unknown
 determinación | Especifica la determinación del incidente. Los valores de propiedad son: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* | NotAvailable
+detectionSource | Especifica el origen de la detección. | MCAS
 status | Clasifice los incidentes *(como Activos* o *Resueltos).* Puede ayudarle a organizar y administrar su respuesta a incidentes. | Activo
 severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br /><br />Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*. | Mediano
-etiquetas | Matriz de etiquetas personalizadas asociadas a un incidente, por ejemplo para marcar un grupo de incidentes con una característica común. | \[\]
+tags | Matriz de etiquetas personalizadas asociadas a un incidente, por ejemplo para marcar un grupo de incidentes con una característica común. | \[\]
 comments | Matriz de comentarios creados por secops al administrar el incidente, por ejemplo información adicional sobre la selección de clasificación. | \[\]
 alertas | Matriz que contiene todas las alertas relacionadas con el incidente, además de otra información, como la gravedad, las entidades que participaron en la alerta y el origen de las alertas. | \[\] (vea los detalles de los campos de alerta a continuación)
 
@@ -185,7 +186,7 @@ securityGroupId | Disponible si entityType es  *SecurityGroup*. | 301c47c8-e15f-
 securityGroupName | Disponible si entityType es  *SecurityGroup*. | Operadores de configuración de red
 registryHive | Disponible si entityType es  *Registry*. | MÁQUINA LOCAL HKEY \_ \_ |
 registryKey | Disponible si entityType es  *Registry*. | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | Disponible si entityType es  *Registry*. | Cadena
+registryValueType | Disponible si entityType es  *Registry*. | String
 registryValue | Disponible si entityType es  *Registry*. | 31-00-00-00
 deviceId | El identificador, si lo hay, del dispositivo relacionado con la entidad. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 

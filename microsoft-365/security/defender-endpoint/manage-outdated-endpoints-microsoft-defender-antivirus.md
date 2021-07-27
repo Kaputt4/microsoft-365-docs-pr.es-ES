@@ -16,12 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b141c9b745e560b3c2236a9d073a7b2f3500623c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 9fd224d325c2210f0928e6999dc11510550531d1
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926048"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542266"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Administrar las actualizaciones y análisis del Antivirus de Windows Defender para puntos de conexión que están obsoletos
 
@@ -44,16 +44,16 @@ Si Antivirus de Microsoft Defender las actualizaciones de protección durante un
 
 ### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>Usar Configuration Manager para configurar actualizaciones de protección de ponerse al día
 
-1.  En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
+1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
 
-2.  Vaya a la **sección Actualizaciones de inteligencia de** seguridad y configure las siguientes opciones:
+2. Vaya a la **sección Actualizaciones de inteligencia de** seguridad y configure las siguientes opciones:
 
     1. Establece Forzar una actualización de inteligencia de seguridad si el equipo cliente está sin conexión durante más de dos actualizaciones **programadas consecutivas** en **Sí**.
     2. For the  **If Configuration Manager is used as a source for security intelligence updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. Esto hará que se utilice la siguiente ubicación de actualización, en función del orden de origen [de reserva definido.](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)
 
 3. Haga clic en **Aceptar**.
 
-4.  [Implemente la directiva actualizada como de costumbre.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
+4. [Implemente la directiva actualizada como de costumbre.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
 ### <a name="use-group-policy-to-enable-and-configure-the-catch-up-update-feature"></a>Usar la directiva de grupo para habilitar y configurar la característica de actualización de ponerse al día
 
@@ -88,8 +88,8 @@ SignatureUpdateCatchupInterval
 ```
 
 Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
+- [Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>Establecer el número de días antes de que se notifica la protección como desaprotección
 
@@ -97,22 +97,21 @@ También puede especificar el número de días después de los cuales Antivirus 
 
 ### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Usar la directiva de grupo para especificar el número de días antes de que la protección se considere des actualizada
 
-1.  En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y haga clic en **Editar**.
 
-3.  En el **Editor de administración de directivas de grupo** vaya a Configuración del **equipo.**
+2. En el **Editor de administración de directivas de grupo** vaya a Configuración del **equipo.**
 
-4.  Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
+3. Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-5.  Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender > de firma y** configure las siguientes opciones:
+4. Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender > de firma y** configure las siguientes opciones:
 
-    1.  Haga doble clic en Definir el número de días antes de que las definiciones de spyware se consideren **des actualizadas** y establezca la opción en **Habilitado**. Escriba el número de días después de los cuales desea que Microsoft Defender AV considere que la inteligencia de seguridad de spyware está des actualizada.
+    1. Haga doble clic en Definir el número de días antes de que las definiciones de spyware se consideren **des actualizadas** y establezca la opción en **Habilitado**. Escriba el número de días después de los cuales desea que Microsoft Defender AV considere que la inteligencia de seguridad de spyware está des actualizada.
 
     2. Haga clic en **Aceptar**.
 
-    3.  Haga doble clic en Definir el número de días antes de que las definiciones de virus se consideren **des actualizadas** y establezca la opción en **Habilitado**. Escriba el número de días después de los cuales desea que Microsoft Defender AV considere que la inteligencia de seguridad de virus está des actualizada.
+    3. Haga doble clic en Definir el número de días antes de que las definiciones de virus se consideren **des actualizadas** y establezca la opción en **Habilitado**. Escriba el número de días después de los cuales desea que Microsoft Defender AV considere que la inteligencia de seguridad de virus está des actualizada.
 
     4. Haga clic en **Aceptar**.
-
 
 ## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>Configurar exámenes de ponerse al día para los puntos de conexión que no se han analizado durante un tiempo
 
@@ -128,19 +127,19 @@ Esta característica se puede habilitar para exámenes completos y rápidos.
 
 ### <a name="use-group-policy-to-enable-and-configure-the-catch-up-scan-feature"></a>Usar la directiva de grupo para habilitar y configurar la característica de examen de ponerse al día
 
-1.  Asegúrese de haber configurado al menos un examen programado.
+1. Asegúrese de haber configurado al menos un examen programado.
 
-2.  En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y haga clic en **Editar**.
+2. En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y haga clic en **Editar**.
 
-3.  En el **Editor de administración de directivas de grupo** vaya a Configuración del **equipo.**
+3. En el **Editor de administración de directivas de grupo** vaya a Configuración del **equipo.**
 
-4.  Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
+4. Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-5.  Expanda el árbol para **Windows componentes > Antivirus de Microsoft Defender > Scan** y configure las siguientes opciones:
+5. Expanda el árbol para **Windows componentes > Antivirus de Microsoft Defender > Scan** y configure las siguientes opciones:
 
-    1.  Si ha configurado los exámenes rápidos programados, haga doble clic en la configuración Activar detección rápida y establezca la opción en **Habilitado**.  
+    1. Si ha configurado los exámenes rápidos programados, haga doble clic en la configuración Activar detección rápida y establezca la opción en **Habilitado**. 
     2. Si ha configurado exámenes completos programados,  haga doble clic en la configuración Activar examen completo de puesta al día y establezca la opción en **Habilitado**. Haga clic en **Aceptar**.
-    3. Haga doble clic en **la opción Definir el** número de días después de los cuales se forzará la configuración de un examen de puesta al día y establezca la opción en **Habilitado**. 
+    3. Haga doble clic en **la opción Definir el** número de días después de los cuales se forzará la configuración de un examen de puesta al día y establezca la opción en **Habilitado**.
     4. Escriba el número de exámenes que se pueden perder antes de que se ejecute automáticamente un examen cuando el siguiente usuario inicie sesión en el equipo. El tipo de examen que se ejecuta viene determinado por el parámetro **Specify the scan type to use for a scheduled scan** (vea el tema Schedule [scans).](scheduled-catch-up-scans-microsoft-defender-antivirus.md) Haga clic en **Aceptar**.
 
 > [!NOTE]
@@ -168,18 +167,18 @@ DisableCatchupQuickScan
 ```
 
 Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
+- [Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Usar Configuration Manager para configurar exámenes de ponerse al día
 
-1.  En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
+1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
 
-2.  Vaya a la **sección Exámenes programados** y Forzar un examen del tipo de examen seleccionado si el equipo cliente **está sin conexión...** a **Sí**. 
+2. Vaya a la **sección Exámenes programados** y Forzar un examen del tipo de examen seleccionado si el equipo cliente **está sin conexión...** a **Sí**.
 
 3. Haga clic en **Aceptar**.
 
-4.  [Implemente la directiva actualizada como de costumbre.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
+4. [Implemente la directiva actualizada como de costumbre.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

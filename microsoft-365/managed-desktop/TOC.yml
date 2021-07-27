@@ -4,6 +4,8 @@
     - name: ¿Qué es el Escritorio administrado de Microsoft?
       href: intro/index.md
       items:
+        - name: Escritorio administrado de Microsoft y Windows 11
+          href: intro/win11-overview.md
         - name: Roles y responsabilidades
           href: intro/roles-and-responsibilities.md
         - name: Tecnologías en el Escritorio administrado de Microsoft
@@ -169,5 +171,7 @@
               href: working-with-managed-desktop/config-setting-ref.md
             - name: Implementar parámetros configurables
               href: working-with-managed-desktop/config-setting-deploy.md
+        - name: Vista previa y prueba de Windows 11 con Escritorio administrado de Microsoft
+          href: working-with-managed-desktop/test-win11-mmd.md
     - name: Cambiar el historial de la documentación de Escritorio administrado de Microsoft
       href: change-history-managed-desktop.md

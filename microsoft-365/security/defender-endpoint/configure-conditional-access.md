@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c9462fa0d4be4d6ff78ba3e5db2cd4fa71fef0b
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 0f1aad2d804a4c1477a30fc52dca176dc137cf62
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339519"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595083"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurar el acceso condicional en Microsoft Defender para el extremo
 
@@ -31,58 +31,56 @@ ms.locfileid: "53339519"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 En esta sección se le guían todos los pasos que debe seguir para implementar correctamente el acceso condicional.
 
-### <a name="before-you-begin"></a>Antes de empezar
->[!WARNING]
->Es importante tener en cuenta que los dispositivos registrados de Azure AD no se admiten en este escenario.</br>
->Solo se admiten dispositivos inscritos en Intune.
+## <a name="before-you-begin"></a>Antes de empezar
 
+> [!WARNING]
+> Es importante tener en cuenta que los dispositivos registrados de Azure AD no se admiten en este escenario.</br>
+> Solo se admiten dispositivos inscritos en Intune.
 
 Debes asegurarte de que todos los dispositivos estén inscritos en Intune. Puede usar cualquiera de las siguientes opciones para inscribir dispositivos en Intune:
-
 
 - Administrador de TI: para obtener más información sobre cómo habilitar la inscripción automática, [vea Windows Enrollment](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
 - Usuario final: para obtener más información sobre cómo inscribir el dispositivo Windows 10 en Intune, consulte Inscribir el [dispositivo Windows 10 en Intune](/intune/quickstart-enroll-windows-device)
 - Alternativa de usuario final: para obtener más información sobre cómo unirse a un dominio de Azure AD, vea [How to: Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan).
 
-
-
 Hay pasos que deberá seguir en Microsoft 365 Defender, el portal de Intune y el portal de Azure AD.
 
 Es importante tener en cuenta los roles necesarios para tener acceso a estos portales e implementar el acceso condicional:
-- **Microsoft 365 Defender:** deberá iniciar sesión en el portal con un rol de administrador global para activar la integración.
-- **Intune:** deberá iniciar sesión en el portal con derechos de administrador de seguridad con permisos de administración. 
-- **Portal de Azure AD:** deberá iniciar sesión como administrador global, administrador de seguridad o administrador de acceso condicional.
 
+- **Microsoft 365 Defender:** deberá iniciar sesión en el portal con un rol de administrador global para activar la integración.
+- **Intune:** deberá iniciar sesión en el portal con derechos de administrador de seguridad con permisos de administración.
+- **Portal de Azure AD:** deberá iniciar sesión como administrador global, administrador de seguridad o administrador de acceso condicional.
 
 > [!NOTE]
 > Necesitará un entorno Microsoft Intune, con Intune administrado y Azure AD unido a Windows 10 dispositivos.
 
 Siga estos pasos para habilitar el acceso condicional:
+
 - Paso 1: Activar la conexión Microsoft Intune desde Microsoft 365 Defender
 - Paso 2: Activar la integración de Defender for Endpoint en Intune
 - Paso 3: Crear la directiva de cumplimiento en Intune
 - Paso 4: Asignar la directiva 
 - Paso 5: Crear una directiva de acceso condicional de Azure AD
 
-
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>Paso 1: Activar la conexión Microsoft Intune conexión
+
 1. En el panel de navegación, **seleccione Configuración**  >  **características avanzadas** generales  >    >  **Microsoft Intune**  >  **conexión**.
 2. Alterna la Microsoft Intune a **On**.
 3. Haga clic **en Guardar preferencias**.
 
-
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Paso 2: Activar la integración de Defender for Endpoint en Intune
+
 1. Inicie sesión en el [portal de Azure](https://portal.azure.com).
 2. Seleccione **Cumplimiento de**  >  **dispositivos ATP de Microsoft Defender**.
 3. Establece **Conectar Windows 10.0.15063+** en Protección contra amenazas avanzada de Microsoft Defender en **On**.
 4. Haga clic en **Guardar**.
 
-
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>Paso 3: Crear la directiva de cumplimiento en Intune
+
 1. En [Azure Portal,](https://portal.azure.com)seleccione **Todos los servicios**, filtre en **Intune** y **seleccione Microsoft Intune**.
 2. Seleccione **Directivas de cumplimiento de**  >    >  **dispositivos Crear directiva**.
 3. Escriba un **nombre** y **una descripción**.
@@ -97,6 +95,7 @@ Siga estos pasos para habilitar el acceso condicional:
 6. Seleccione **Aceptar** y **Crear** para guardar los cambios (y crear la directiva).
 
 ### <a name="step-4-assign-the-policy"></a>Paso 4: Asignar la directiva
+
 1. En [Azure Portal,](https://portal.azure.com)seleccione **Todos los servicios**, filtre en **Intune** y **seleccione Microsoft Intune**.
 2. Selecciona **Directivas de cumplimiento**  >  **de** dispositivos> la directiva de cumplimiento de Microsoft Defender para puntos de conexión.
 3. Seleccione **Asignaciones**.
@@ -104,6 +103,7 @@ Siga estos pasos para habilitar el acceso condicional:
 5. Para implementar la directiva en los grupos, seleccione **Guardar**. Los dispositivos de usuario dirigidos por la directiva se evalúan para el cumplimiento.
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>Paso 5: Crear una directiva de acceso condicional de Azure AD
+
 1. En [Azure Portal,](https://portal.azure.com)abra **Azure Active Directory**  >  **Acceso condicional** Nueva  >  **directiva**.
 2. Escriba un nombre **de directiva** y seleccione Usuarios **y grupos**. Use las opciones Incluir o Excluir para agregar los grupos para la directiva y seleccione **Listo**.
 3. Selecciona **Aplicaciones en la** nube y elige qué aplicaciones proteger. Por ejemplo, elija **Seleccionar aplicaciones** y seleccione **Office 365 SharePoint Online** y **Office 365 Exchange Online**. Seleccione **Listo** para guardar los cambios.
@@ -116,4 +116,4 @@ Siga estos pasos para habilitar el acceso condicional:
 
 Para obtener más información, vea [Enforce compliance for Microsoft Defender for Endpoint with Conditional Access in Intune](/intune/advanced-threat-protection).
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

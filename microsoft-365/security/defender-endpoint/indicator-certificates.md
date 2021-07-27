@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08a500dd548eb960d813d9bc693fa8b8dd871170
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845459"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542302"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Crear indicadores basados en certificados
 
@@ -62,18 +62,20 @@ Es importante comprender los siguientes requisitos antes de crear indicadores pa
 >[!IMPORTANT]
 > Puede tardar hasta 3 horas en crear y quitar un certificado IoC.
 
-1. En el panel de navegación, **seleccione Configuración**  >  **Indicadores**.  
+1. En el panel de navegación, **seleccione Configuración**  >  **indicadores** de puntos de  > 
+ **conexión** (en **Reglas**).  
 
-2. Seleccione la **pestaña** Certificado.
 
-3. Seleccione **Agregar indicador**.
+2. Seleccione la **pestaña Certificados.**
+
+3. Seleccione **Agregar elemento**.
 
 4. Especifique los siguientes detalles:
    - Indicador: especifique los detalles de la entidad y defina la expiración del indicador.
    - Action: especifique la acción que se va a realizar y proporcione una descripción.
    - Ámbito: defina el ámbito del grupo de máquinas.
 
-5. Revise los detalles de la pestaña Resumen y, a continuación, haga clic **en Guardar**.
+5. Revise los detalles de la **pestaña Resumen y,** a continuación, haga clic **en Guardar**.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Crear indicadores](manage-indicators.md)

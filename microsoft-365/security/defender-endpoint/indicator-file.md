@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e119898a457be2ceb6dd78ca7831e26dc93ee85f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256920"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542686"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -59,9 +59,10 @@ Esta característica está diseñada para evitar que el malware sospechoso (o lo
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Crear un indicador para archivos desde la página de configuración
 
-1. En el panel de navegación, **seleccione Configuración > Indicadores**.
+1. En el panel de navegación, **seleccione Configuración**  >  **indicadores** de puntos de  > 
+ **conexión** (en **Reglas**).
 
-2. Seleccione la **pestaña Hash de**   archivo.
+2. Seleccione la **pestaña Hashes de**   archivo.
 
 3. Seleccione **Agregar indicador**.
 
@@ -118,7 +119,7 @@ Las características de aplicación vulnerables de bloqueo de amenazas y adminis
 |Control de aplicaciones de Windows Defender |Bloquear |Permitir |Bloquear
 |Antivirus de Microsoft Defender exclusión |Permitir |Bloquear |Permitir
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

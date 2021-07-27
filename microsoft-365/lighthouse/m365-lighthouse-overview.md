@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre Microsoft 365 Lighthouse puede ayudarle a proteger y administrar los inquilinos de clientes en una ubicación.
-ms.openlocfilehash: af03495f7bf47fe3c72ebb7487b8709d2e2b0736
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 5bc5fdce2c1133def04472e04f21e33ff331dd2a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409037"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542386"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Información general sobre Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ Microsoft 365 Lighthouse simplifica la incorporación de inquilinos de Microsoft
 
 No hay costos adicionales asociados con el uso de Microsoft 365 Lighthouse para administrar servicios Microsoft 365 y dispositivos conectados. Microsoft 365 Lighthouse está actualmente en Versión preliminar y está disponible para los MSP inscritos en el programa Proveedor de soluciones en la nube (CSP) y atendiendo a clientes SMB con una Microsoft 365 Empresa Premium suscripción.
 
-Tenga en cuenta que los proveedores indirectos csp actualmente no son compatibles con Microsoft 365 Lighthouse. 
+Se admite el Microsoft 365 Lighthouse de los partners de canal csp de Microsoft que tienen clientes que usan Microsoft 365 Empresa Premium. Esto incluye socios CSP que realizan transacciones directamente con Microsoft y aquellos que realizan transacciones a través de un proveedor indirecto (distribuidor). 
 
 > [!IMPORTANT] 
 > Para usar Microsoft 365 Lighthouse, los MSP y sus inquilinos de clientes deben cumplir los requisitos enumerados [en Microsoft 365 Lighthouse.](m365-lighthouse-requirements.md)     

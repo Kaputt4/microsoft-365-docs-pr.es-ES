@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13bcbc74fcb9c540c45a6eec7e7e506b6943986a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f3ec3552e10fa0b25c75644c7c37c63afb81902b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841803"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542671"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementar Microsoft Defender para endpoint en Linux con Ansible
 
@@ -41,7 +41,7 @@ En este artículo se describe cómo implementar Defender for Endpoint en Linux m
 - [Descargar el paquete de incorporación](#download-the-onboarding-package)
 - [Crear archivos YAML ansibles](#create-ansible-yaml-files)
 - [Implementación](#deployment)
-- [References](#references)
+- [Referencias](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
@@ -71,13 +71,13 @@ Además, para la implementación de Ansible, debes familiarizarte con las tareas
 
 ## <a name="download-the-onboarding-package"></a>Descargar el paquete de incorporación
 
-Descargue el paquete de incorporación desde Centro de seguridad de Microsoft Defender:
+Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
-1. En Centro de seguridad de Microsoft Defender, vaya **a Configuración > Device Management > Onboarding**.
+1. En Microsoft 365 Defender portal, vaya **a Configuración > Endpoints > Administración de dispositivos > Incorporación**.
 2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de** administración de configuración de Linux preferida como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Centro de seguridad de Microsoft Defender captura de pantalla](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender captura de pantalla del portal](images/portal-onboarding-linux-2.png)
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo. Extraiga el contenido del archivo:
 
@@ -283,5 +283,5 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 - [Administrar paquetes aptos](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Investigar problemas de estado del agente](health-status.md)

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Obtenga más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
+description: Más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
 ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/29/2021
 ms.locfileid: "53177650"
@@ -36,52 +36,52 @@ ms.locfileid: "53177650"
 
 "Seguro de forma predeterminada" es un término que se usa para definir la configuración predeterminada más segura posible.
 
-Sin embargo, la seguridad debe equilibrarse con la productividad. Esto puede incluir el equilibrio entre:
+Sin embargo, la seguridad debe estar equilibrada con la productividad. Esto puede incluir el equilibrio entre:
 
-- **Facilidad de** uso: Configuración no debe inquiete a la productividad del usuario.
-- **Riesgo:** la seguridad puede bloquear actividades importantes.
-- **Configuración heredada:** es posible que algunas configuraciones de productos y características anteriores deban mantenerse por motivos empresariales, incluso si se mejoran las configuraciones nuevas y modernas.
+- **Facilidad de uso**: la configuración no debería interponerse en el camino de la productividad del usuario.
+- **Riesgo**: la seguridad podría bloquear actividades importantes.
+- **Configuración heredada**: es posible que sea necesario mantener algunas configuraciones de productos y características anteriores por motivos empresariales, aunque se mejore la configuración moderna nueva.
 
-Microsoft 365 organizaciones con buzones en Exchange Online están protegidas por Exchange Online Protection (EOP). Esta protección incluye:
+Microsoft 365 organizaciones con buzones en Exchange Online están protegidas por Exchange Online Protection (EOP). La protección incluye:
 
-- El correo electrónico con malware sospechoso se pondrá automáticamente en cuarentena y se notificará a los destinatarios. Consulte [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
-- El correo electrónico identificado como phishing de elevada confianza se controlará de acuerdo con la acción de directiva contra correo no deseado. Vea [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+- El correo electrónico con sospecha de malware se pondrá en cuarentena automáticamente y se notificará a los destinatarios. Consultar [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md).
+- El correo electrónico identificado como suplantación de identidad de alta confianza se controlará según la acción de la directiva contra correo no deseado. Consultar [Configuración de las directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 
-Para obtener más información acerca de EOP, [vea Exchange Online Protection overview](exchange-online-protection-overview.md).
+Para obtener más información sobre EOP, consulte [Información general de Exchange Online Protection](exchange-online-protection-overview.md)
 
-Dado que Microsoft quiere mantener a nuestros clientes seguros de forma predeterminada, algunas invalidaciones de inquilinos no se aplican para malware o phishing de elevada confianza. Estas invalidaciones incluyen:
+Debido a que Microsoft quiere mantener seguros a nuestros clientes de forma predeterminada, algunas anulaciones de inquilinos no se aplican para malware o phishing de alta confianza. Estas anulaciones incluyen:
 
 - Listas de remitentes permitidos o listas de dominios permitidos (directivas contra correo no deseado)
-- Outlook Caja fuerte remitentes
-- Lista de direcciones IP permitidos (filtrado de conexiones)
+- Remitentes seguros de Outlook
+- Lista de direcciones IP permitidas (filtrado de conexiones)
 
-Encontrará más información sobre estas invalidaciones en [Crear listas de remitentes seguros.](create-safe-sender-lists-in-office-365.md)
+Puede encontrar más información sobre estas invalidaciones en [Crear listas de remitentes seguros](create-safe-sender-lists-in-office-365.md).
 
 > [!NOTE]
-> Hemos dejado en  desuso la acción Mover mensaje a carpeta de correo no deseado para un veredicto de correo electrónico de **suplantación** de identidad de confianza alta en las directivas contra correo no deseado de EOP. Las directivas contra correo no deseado que usan esta acción para mensajes de suplantación de identidad de elevada confianza se convertirán en **mensaje en cuarentena.** La **acción Redirigir mensaje a dirección de correo** electrónico para mensajes de suplantación de identidad de elevada confianza no se ha afectado.
+> Hemos dejado de usar la acción **Mover mensaje a correo no deseado** acción para un **correo electrónico de suplantación de identidad de alta confianza** veredicto en las directivas contra correo no deseado de EOP. Las directivas contra correo no deseado que usan esta acción para mensajes de suplantación de identidad de alta confianza se convertirán en **mensaje en cuarentena**. El mensaje de redirección **a la dirección de correo electrónico** acción para mensajes de suplantación de identidad de alta confianza no se ve afectada.
 
-Proteger de forma predeterminada no es una configuración que se puede desactivar o desactivar, pero es la forma en que nuestro filtrado funciona de forma predeterminada para mantener mensajes potencialmente peligrosos o no deseados fuera de los buzones. El malware y los mensajes de phishing de elevada confianza deben estar en cuarentena. Solo los administradores pueden administrar mensajes que se ponen en cuarentena como malware o phishing de elevada confianza, y también pueden notificar falsos positivos a Microsoft desde allí. Para obtener más información, vea [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
+La protección de forma predeterminada no es una configuración que se pueda activar o desactivar, pero es la forma en que nuestro filtrado funciona de forma predeterminada para mantener mensajes potencialmente peligrosos o no deseados fuera de los buzones. Los mensajes de suplantación de identidad (phishing) de alto nivel y malware deben estar en cuarentena. Solo los administradores pueden administrar los mensajes que se ponen en cuarentena como malware o suplantación de identidad de alta confianza, y también pueden notificar falsos positivos a Microsoft desde allí. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 
 ## <a name="more-on-why-were-doing-this"></a>Más información sobre por qué estamos haciendo esto
 
-El ánimo de ser seguro de forma predeterminada es: estamos tomando la misma acción en el mensaje que realizaría si conociera el mensaje malintencionado, incluso cuando una excepción configurada de otro modo permitiría la entrega del mensaje. Este es el mismo enfoque que siempre hemos usado en malware y ahora estamos extendiendo este mismo comportamiento a mensajes de suplantación de identidad de elevada confianza.
+El espíritu de ser seguro de forma predeterminada es: estamos realizando la misma acción en el mensaje que tomaría si sabía que el mensaje era malintencionado, incluso cuando una excepción configurada permitiría de otro modo que se entregara el mensaje. Este es el mismo enfoque que siempre hemos usado en malware y ahora estamos ampliando este mismo comportamiento a mensajes de suplantación de identidad de alta confianza.
 
-Nuestros datos indican que un usuario tiene 30 veces más probabilidades de hacer clic en un vínculo malintencionado en los mensajes de la carpeta Correo no deseado frente a cuarentena. Nuestros datos también indican que la tasa de falsos positivos (mensajes buenos marcados como negativos) para mensajes de suplantación de identidad de elevada confianza es muy baja y los administradores pueden resolver los falsos positivos con envíos de administrador.
+Nuestros datos indican que es 30 veces más probable que un usuario haga clic en un vínculo malintencionado en los mensajes de la carpeta Correo no deseado frente a Cuarentena. Nuestros datos también indican que la tasa de falsos positivos (mensajes buenos marcados como incorrectos) para los mensajes de suplantación de identidad de alta confianza es muy baja y los administradores pueden resolver los falsos positivos con envíos de administradores.
 
-También determinamos que el remitente permitido y las listas de dominios permitidos en las directivas contra correo no deseado y los remitentes Caja fuerte en Outlook eran demasiado amplios y causaban más daños que buenos.
+También hemos determinado que el remitente permitido y las listas de dominios permitidos en las directivas contra correo no deseado y los remitentes seguros en Outlook eran demasiado amplios y provocaban más daños que buenos.
 
-Para ponerlo de otra manera: como servicio de seguridad, estamos actuando en su nombre para evitar que los usuarios se pongan en peligro.
+Dicho de otro modo: como servicio de seguridad, estamos actuando en su nombre para evitar que los usuarios se vean comprometidos.
 
 ## <a name="exceptions"></a>Excepciones
 
 > [!NOTE]
-> En agosto de 2021, la seguridad se extenderá de forma predeterminada a Exchange de flujo de correo (también conocidas como reglas de transporte). Si usa reglas de flujo de correo para permitir simulaciones de suplantación de identidad de terceros o entrega [](configure-advanced-delivery.md) sin filtrar a buzones de operación de seguridad, finalmente deberá eliminar estas reglas y cambiar al uso de la directiva de entrega avanzada cuando la característica esté _disponible._
+> En agosto de 2021, la protección se ampliará de forma predeterminada a las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte). Si usa reglas de flujo de correo para permitir simulaciones de suplantación de identidad (phishing) de terceros o entrega sin filtrar a buzones de operaciones de seguridad, tendrá que eliminar estas reglas y cambiar al uso de la [directiva de entrega avanzada](configure-advanced-delivery.md) _cuando la característica esté disponible para usted_.
 
-La única invalidación que permite que los mensajes de suplantación de identidad de elevada confianza omita el filtrado son las reglas de flujo de correo. Para usar reglas de flujo de correo para omitir el filtrado, vea Usar reglas de flujo de [correo para establecer el SCL en mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+La única invalidación que permite que el mensaje de suplantación de identidad de alta confianza omita el filtrado son las reglas de flujo de correo. Para usar reglas de flujo de correo para omitir el filtrado, consulte [Usar reglas de flujo de correo para configurar el SCL en los mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
-Solo debe considerar el uso de invalidaciones en los siguientes escenarios:
+Solo debe considerar el uso de invalidaciones en los escenarios siguientes:
 
-- Simulaciones de phishing: los ataques simulados pueden ayudarle a identificar usuarios vulnerables antes de que un ataque real impacte en su organización.
-- Buzones de seguridad/SecOps: buzones dedicados usados por los equipos de seguridad para obtener mensajes sin filtrar (tanto buenos como malos). Teams revisar para ver si contienen contenido malintencionado.
-- Filtros de terceros: la seguridad de forma predeterminada no se aplica cuando el registro MX del dominio no apunta a Office 365.
-- Falsos positivos: es posible que quieras permitir temporalmente determinados mensajes que Microsoft sigue analizando a través de [envíos de administrador.](admin-submission.md) Al igual que con todas las invalidaciones, se recomienda que sean temporales.
+- Simulaciones de phishing: los ataques simulados pueden ayudarle a identificar usuarios vulnerables antes de que un ataque real afecte a su organización.
+- Buzones de seguridad/SecOps: buzones dedicados que usan los equipos de seguridad para obtener mensajes sin filtrar (tanto buenos como incorrectos). A continuación, Los equipos pueden revisar para ver si contienen contenido malintencionado.
+- Filtros de terceros: la protección de forma predeterminada no se aplica cuando el registro MX del dominio no apunta a Office 365.
+- Falsos positivos: puede permitir temporalmente determinados mensajes que Microsoft [sigue analizando a través de envíos de administradores](admin-submission.md). Al igual que con todas las invalidaciones, se recomienda que sean temporales.

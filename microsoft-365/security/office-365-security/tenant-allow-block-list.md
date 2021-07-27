@@ -13,15 +13,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden aprender a configurar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
+description: Los administradores pueden aprender a administrar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbd4694a7442b3898d24304dc78fc95c28c9a905
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: a09229eb9c7794742248f857384d138e41313b73
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394958"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538858"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de permitidos o bloqueados del espacio empresarial
 
@@ -35,8 +35,7 @@ ms.locfileid: "53394958"
 > [!NOTE]
 >
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones.  Si su organización no tiene las características de suplantación de identidad como se describe en este artículo, vea la experiencia de administración de suplantación de identidad anterior en [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
->
-> No puede configurar la dirección URL o **los** elementos de archivo permitidos en la lista de inquilinos permitidos o bloqueados en este momento.
+
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un mensaje bueno puede marcarse como malo (un falso positivo) o un mensaje malo se puede permitir a través (un falso negativo).
 
@@ -45,6 +44,8 @@ La lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Def
 - Direcciones URL que se bloquearán.
 - Archivos que se va a bloquear.
 - Remitentes suplantados para permitir o bloquear. Si invalida el veredicto permitir o bloquear en la información de inteligencia suplantada, el remitente  suplantado se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del inquilino. [](learn-about-spoof-intelligence.md) También puede crear entradas de permitir o bloquear manualmente para remitentes suplantados aquí antes de que los detecte la inteligencia de suplantación de identidad.
+- Direcciones URL que se permiten.
+- Archivos que se permiten. 
 
 En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (PowerShell de Exchange Online para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online).
 
@@ -90,64 +91,23 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
   >
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para crear entradas de dirección URL de bloque en la lista de inquilinos permitidos o bloqueados
+## <a name="configure-the-tenant-allowblock-list"></a>Configurar la lista de inquilinos permitidos o bloqueados
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
+### <a name="use-the-microsoft-365-defender-portal"></a>Uso del portal de Microsoft 365 Defender
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, compruebe que la pestaña **Direcciones** URL está seleccionada y, a continuación, haga clic en Bloquear ![ icono ](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 
-3. En el **menú desplegable Bloquear direcciones URL** que aparece, configure las siguientes opciones:
-   - **Agregar direcciones URL con caracteres comodín:** escriba una dirección URL por línea, hasta un máximo de 20. Para obtener más información acerca de la sintaxis de las entradas de dirección URL, vea la sintaxis de dirección URL de la sección Lista de [permitidos o](#url-syntax-for-the-tenant-allowblock-list) bloqueados del espacio empresarial más adelante en este artículo.
-   - **Nunca expire:** realice uno de los siguientes pasos:
-     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
+Para agregar todos los bloques, vea [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md).
 
-       o
+Para agregar todos los permitidos, vea [Agregar permite en la lista de inquilinos permitidos o bloqueados.](manage-tenant-allows.md)
 
-     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
-   - **Nota opcional:** escriba texto descriptivo para las entradas.
+Para modificar y quitar todos los bloques y permitir, vea Modificar y quitar entradas en la lista de [inquilinos permitidos o bloqueados.](modify-remove-entries-tenant-allow-block.md)
 
-4. Cuando haya terminado, haga clic en **Agregar**.
+### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Usar Exchange Online PowerShell o PowerShell independiente de EOP
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para crear entradas de archivo de bloque en la lista de inquilinos permitidos o bloqueados
+Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista de inquilinos [permitidos/bloqueados](manage-tenant-blocks.md), Agregar permite en la lista de inquilinos [permitir/bloquear](manage-tenant-allows.md)y Modificar y quitar entradas en la lista de inquilinos permitidos [o bloqueados.](modify-remove-entries-tenant-allow-block.md)
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
-
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la **pestaña** Archivos y, a continuación, haga clic en Bloquear ![ icono ](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
-
-3. En el menú desplegable **Bloquear** archivos que aparece, configure las siguientes opciones:
-   - **Agregar hash de archivo:** escriba un valor hash SHA256 por línea, hasta un máximo de 20.
-   - **Nunca expire:** realice uno de los siguientes pasos:
-     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
-
-     o
-
-     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
-   - **Nota opcional:** escriba texto descriptivo para las entradas.
-
-4. Cuando haya terminado, haga clic en **Agregar**.
-
-## <a name="use-the-microsoft-365-defender-portal-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Use el portal Microsoft 365 Defender para crear entradas de remitente suplantadas de identidad de permitir o bloquear en la lista de inquilinos permitidos o bloqueados
-
-**Notas**:
-
-- Solo se _permite o_ bloquea  específicamente la combinación del usuario suplantado y la infraestructura de envío definida en el par de dominio.
-- Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia suplantación.
-- Las entradas de remitentes suplantados nunca expiran.
-
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
-
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña **Suplantación** y, a continuación, haga clic ![ en Bloquear icono ](../../media/m365-cc-sc-create-icon.png) **Agregar**.
-
-3. En el **menú desplegable Agregar nuevos pares de** dominio que aparece, configure las siguientes opciones:
-   - **Agregar nuevos pares de dominio con caracteres comodín:** escriba un par de dominio por línea, hasta un máximo de 20. Para obtener más información acerca de la sintaxis de las entradas de remitente suplantadas, vea la sintaxis del par de dominios para las entradas de remitente suplantadas en la sección Lista de [permitidos/bloqueados](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) del espacio empresarial más adelante en este artículo.
-   - **Tipo de suplantación:** seleccione uno de los siguientes valores:
-     - **Interno:** el remitente suplantado está en un dominio que pertenece a su organización (un [dominio aceptado).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
-     - **Externo:** el remitente suplantado está en un dominio externo.
-   - **Acción:** seleccione **Permitir** o **Bloquear**.
-
-4. Cuando haya terminado, haga clic en **Agregar**.
-
-## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para ver entradas en la lista de inquilinos permitidos o bloqueados
+## <a name="view-entries-in-the-tenant-allowblock-list"></a>Ver entradas en la lista de inquilinos permitidos o bloqueados
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 
@@ -199,74 +159,9 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
    Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic **en Filtrar** y, en el **menú** desplegable Filtro que aparece, haga clic en **Borrar filtros**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para modificar las entradas de la lista de inquilinos permitidos o bloqueados
+4. Cuando haya terminado, haga clic en **Agregar**.
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
-
-2. Seleccione la pestaña que contiene el tipo de entrada que desea modificar:
-   - **DIRECCIONES URL**
-   - **Files**
-   - **Spoofing**
-
-3. Seleccione la entrada que desea modificar y, a continuación, haga clic ![ en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**. Los valores que puede modificar en el control desplegable que aparece dependen de la pestaña seleccionada en el paso anterior:
-   - **DIRECCIONES URL**
-     - **No expire nunca** ni la fecha de expiración.
-     - **Nota opcional**
-   - **Files**
-     - **No expire nunca** ni la fecha de expiración.
-     - **Nota opcional**
-   - **Spoofing**
-     - **Acción:** puede cambiar el valor a **Permitir** o **Bloquear**.
-4. Cuando haya terminado, haga clic en **Guardar**.
-
-## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Usar el portal Microsoft 365 Defender para quitar entradas de la lista de inquilinos permitidos o bloqueados
-
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
-
-2. Seleccione la pestaña que contiene el tipo de entrada que desea quitar:
-   - **DIRECCIONES URL**
-   - **Files**
-   - **Spoofing**
-
-3. Seleccione la entrada que desea quitar y, a continuación, haga clic ![ en Eliminar icono ](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
-
-4. En el cuadro de diálogo de advertencia que aparece, haga clic **en Eliminar**.
-
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Use Exchange Online PowerShell o PowerShell de EOP independiente para configurar la lista de inquilinos permitidos o bloqueados
-
-### <a name="use-powershell-to-add-block-file-or-url-entries-to-the-tenant-allowblock-list"></a>Usar PowerShell para agregar entradas de dirección URL o archivo de bloque a la lista de inquilinos permitidos o bloqueados
-
-Para agregar entradas de dirección URL o archivo de bloque en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
-
-```powershell
-New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-En este ejemplo se agrega una entrada de archivo de bloque para los archivos especificados que nunca expiran.
-
-```powershell
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-En este ejemplo se agrega una entrada de dirección URL de bloque para contoso.com y todos los subdominios (por ejemplo, contoso.com, www.contoso.com y xyz.abc.contoso.com). Dado que no usamos los parámetros ExpirationDate o NoExpiration, la entrada expira después de 30 días.
-
-```powershell
-New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>Usar PowerShell para agregar entradas de remitente suplantadas de identidad o bloquear a la lista de inquilinos permitidos o bloqueados
-
-Para agregar entradas de remitente suplantadas en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
-
-```powershell
-New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
-
-### <a name="use-powershell-to-view-block-file-or-url-entries-in-the-tenant-allowblock-list"></a>Usar PowerShell para ver entradas de direcciones URL o archivos bloqueados en la lista de inquilinos permitidos o bloqueados
+## <a name="view-block-file-or-url-entries-in-the-tenant-allowblock-list"></a>Ver entradas de archivo de bloque o dirección URL en la lista de inquilinos permitidos o bloqueados
 
 Para ver entradas de direcciones URL o archivos bloqueados en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
 
@@ -288,7 +183,7 @@ Get-TenantAllowBlockListItems -ListType Url -Block
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-view-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Usar PowerShell para ver o bloquear entradas de remitente suplantadas en la lista de inquilinos permitidos o bloqueados
+## <a name="view-spoofed-sender-entries"></a>Ver entradas de remitente suplantadas
 
 Para ver entradas de remitente suplantadas en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
 
@@ -315,64 +210,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-TenantAllowBlockListSpoofItems](/powershell/module/exchange/get-tenantallowblocklistspoofitems).
-
-### <a name="use-powershell-to-modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>Usar PowerShell para modificar entradas de direcciones URL y archivos de bloque en la lista de inquilinos permitidos o bloqueados
-
-Para modificar entradas de archivos de bloque y direcciones URL en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
-
-```powershell
-Set-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-En este ejemplo se cambia la fecha de expiración de la entrada de dirección URL de bloque especificada.
-
-```powershell
-Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate "5/30/2020"
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
-
-### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Usar PowerShell para modificar entradas de remitente suplantadas o de permitir en la lista de inquilinos permitidos o bloqueados
-
-Para modificar permitir o bloquear entradas de remitente suplantadas en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
-
-```powershell
-Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
-```
-
-En este ejemplo se cambia la entrada de remitente suplantada de permitir a bloquear.
-
-```powershell
-Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block
-```
-
-Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
-
-### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Usar PowerShell para quitar direcciones URL o entradas de archivo de la lista de inquilinos permitidos o bloqueados
-
-Para quitar entradas de archivos y direcciones URL de la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
-
-```powershell
-Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
-```
-
-En este ejemplo se quita la entrada de dirección URL de bloque especificada de la lista de inquilinos permitidos o bloqueados.
-
-```powershell
-Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
-
-### <a name="use-powershell-to-remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>Usar PowerShell para quitar o bloquear entradas de remitente suplantados de la lista de inquilinos permitidos o bloqueados
-
-Para quitar entradas de remitente de suplantación de identidad de la lista de inquilinos permitidos o bloqueados, use la siguiente sintaxis:
-
-```powershell
-Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems).
 
 ## <a name="url-syntax-for-the-tenant-allowblock-list"></a>Sintaxis de dirección URL para la lista de inquilinos permitidos o bloqueados
 
@@ -402,10 +239,6 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Re
   - Un comodín derecho debe seguir una barra diagonal (/) para especificar una ruta de acceso.
 
     Por ejemplo, `contoso.com/*` se permite; `contoso.com*` o no `contoso.com/ab*` se permite.
-
-  - Todas las subpaths no están implícitas por un comodín derecho.
-
-    Por ejemplo, `contoso.com/*` no incluye `contoso.com/a` .
 
   - `*.com*` no es válido (no es un dominio resolvible y el comodín derecho no sigue una barra diagonal).
 

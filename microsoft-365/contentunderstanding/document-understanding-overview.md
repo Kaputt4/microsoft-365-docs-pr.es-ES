@@ -1,5 +1,5 @@
 ---
-title: Información general sobre la comprensión de documentos
+title: Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Obtenga información general sobre la comprensión des documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7e5818a929fa0f4554a7ee4ece460b4fe0d691aa
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+description: Obtenga información sobre la comprensión de documentos en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 631afa9379b3c902c140c25aee4de493e49ab47f
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683828"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578426"
 ---
-# <a name="document-understanding-overview"></a>Información general sobre la comprensión de documentos
+# <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
 
 
 </br>

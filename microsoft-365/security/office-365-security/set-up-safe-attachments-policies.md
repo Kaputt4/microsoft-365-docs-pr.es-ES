@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas Caja fuerte dat
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e516a16ff28c762e154fd908312df65ea48699bc
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 3ec6dc0d0a74507298810a9ec020a2a4b050c2b6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108228"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538978"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365
 
@@ -237,7 +237,7 @@ Crear una directiva Caja fuerte datos adjuntos en PowerShell es un proceso de do
 Para crear una directiva de datos adjuntos seguros, use esta sintaxis:
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
+New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
 ```
 
 En este ejemplo se crea una directiva de datos adjuntos segura denominada Contoso All con los siguientes valores:
@@ -247,7 +247,7 @@ En este ejemplo se crea una directiva de datos adjuntos segura denominada Contos
 - Si Caja fuerte análisis de datos adjuntos no está disponible o encuentra errores, no entregue el mensaje (no estamos usando el parámetro _ActionOnError_ y el valor predeterminado es `$true` ).
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "Contoso All" -Redirect $true -RedirectAddress sec-ops@contoso.com
+New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -RedirectAddress sec-ops@contoso.com
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy).

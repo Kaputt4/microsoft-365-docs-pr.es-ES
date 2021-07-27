@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: e7b48ef5dcd98a948b8af0dc2f6f61ac1bb81f4d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952565"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542614"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -48,7 +48,7 @@ Para administrar detecciones personalizadas, debe tener asignado uno de estos ro
 
 Para administrar los permisos necesarios, un **administrador global** puede:
 
-- Asigne el **rol de administrador de seguridad** o operador **de** seguridad en Microsoft 365 centro [de administración](https://admin.microsoft.com/) en **Roles**  >  **Security admin**.
+- Asigne el **rol de administrador de** seguridad o operador **de** seguridad [en Centro de administración de Microsoft 365](https://admin.microsoft.com/) en **Roles**  >  **Security admin**.
 - Compruebe la configuración de RBAC para Microsoft Defender para endpoint [en Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/) en **Configuración** roles  >  **de permisos**  >  . Seleccione el rol correspondiente para asignar el **permiso administrar la configuración de** seguridad.
 
 > [!NOTE]
@@ -89,6 +89,9 @@ Para crear una regla de detección personalizada, la consulta debe devolver las 
 Las consultas simples, como las que no usan el operador or para personalizar o agregar resultados, normalmente `project` `summarize` devuelven estas columnas comunes.
 
 Hay varias maneras de garantizar que las consultas más complejas devuelvan estas columnas. Por ejemplo, si prefiere agregar y contar por entidad debajo de una columna como , todavía puede devolver y obtenerlo del evento más reciente que implica cada `DeviceId` `Timestamp` único `ReportId` `DeviceId` .
+
+> [!IMPORTANT]
+> Evite filtrar detecciones personalizadas mediante la `Timestamp` columna. Los datos usados para las detecciones personalizadas se filtran previamente en función de la frecuencia de detección.
 
 La consulta de ejemplo siguiente cuenta el número de dispositivos únicos ( ) con detecciones antivirus y usa este recuento para buscar solo los dispositivos con más `DeviceId` de cinco detecciones. Para devolver el último `Timestamp` y el correspondiente , usa el operador con la `ReportId` `summarize` `arg_max` función.
 
@@ -222,9 +225,9 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >Para ver rápidamente la información y realizar acciones en un elemento de una tabla, use la columna de selección [&#10003;] a la izquierda de la tabla.
 
 >[!NOTE]
->Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+>Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

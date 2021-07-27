@@ -1,5 +1,5 @@
 ---
-title: Planeación de temas de Microsoft Viva
+title: Planeación de Temas Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Obtenga información sobre cómo planear los temas de Microsoft Viva
-ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Obtenga información sobre cómo planear Plan for Temas Microsoft Viva
+ms.openlocfilehash: bd732edf9d206f6d62ed0cb3040b1d077b1948ca
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229544"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542398"
 ---
-# <a name="plan-for-microsoft-viva-topics"></a>Planeación de temas de Microsoft Viva
+# <a name="plan-for-microsoft-viva-topics"></a>Planeación de Temas Microsoft Viva
 
 Tiene el control de cómo se experimentan los temas en su organización. Las decisiones de planeación de temas garantizan que los temas de alta calidad se muestran a los usuarios y que tienen los permisos adecuados para consumir y aportar conocimientos.
 
@@ -30,15 +30,17 @@ En este artículo examinaremos estas decisiones de planeación:
 - Qué usuarios desea conceder permisos para crear o editar temas en el centro de temas
 - Qué nombre desea dar al centro de temas
 
-Se respeta la seguridad y privacidad de los datos y las experiencias de temas no conceden a los usuarios acceso adicional a los archivos a los que no tienen derechos. También se recomienda leer Temas de [Microsoft Viva seguridad y privacidad](topic-experiences-security-privacy.md) como parte del proceso de planeación.
+Se respeta la seguridad y privacidad de los datos y las experiencias de temas no conceden a los usuarios acceso adicional a los archivos a los que no tienen derechos. Le recomendamos que lea [también Temas Microsoft Viva seguridad y privacidad](topic-experiences-security-privacy.md) como parte del proceso de planeación.
 
-Para obtener más información sobre la tecnología de inteligencia artificial detrás de Los temas de Viva, lea El tema de Alejandría en [Temas de Microsoft Viva: de big data a big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+Para obtener más información acerca de la tecnología de inteligencia artificial detrás de Los temas de Viva, [lea La Temas Microsoft Viva: desde big data hasta big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+
+Tenga en cuenta que Viva Topics necesita acceso a los sitios y archivos que los usuarios usan todos los días. La implementación de Temas de Viva en un entorno de prueba o desarrollo puede no producir resultados útiles.
 
 ## <a name="requirements"></a>Requisitos
 
 Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso a la Centro de administración de Microsoft 365 y configurar temas.
 
-Todos los usuarios que van a usar Temas requieren una **licencia de Experiencias de** tema. La asignación de licencias se trata [en Configurar temas de Microsoft Viva](set-up-topic-experiences.md).
+Todos los usuarios que van a usar Temas requieren una **licencia de Experiencias de** tema. La asignación de licencias se trata [en Configurar Temas Microsoft Viva](set-up-topic-experiences.md).
 
 ## <a name="topic-discovery"></a>Detección de temas
 

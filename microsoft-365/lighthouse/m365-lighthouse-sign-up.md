@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 41482a97a7e940fab61b5b4884431ca7b385c3c0
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: e87757f22cc76bf681058ab453bdfdf60c6c64c9
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438005"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542374"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrate para Microsoft 365 Lighthouse
 
@@ -30,13 +30,13 @@ ms.locfileid: "53438005"
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Asegúrese de que usted y sus inquilinos de clientes cumplan los requisitos enumerados [en Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).
+- Microsoft 365 Lighthouse se implementa en el espacio empresarial asociado solo no en los inquilinos del cliente, pero asegúrese de que usted y sus inquilinos de cliente cumplen los &mdash; requisitos enumerados [en Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).
 
 - Debe ser un administrador global en el espacio empresarial asociado en el que está iniciando sesión.
 
 ## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>Pasos para registrarse en Microsoft 365 Lighthouse
 
-1. Vaya a la Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> . 
+1. Vaya a la Centro de administración de Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e inicie sesión con las credenciales de inquilino de su partner. 
 
 1. Vaya a **Servicios de compra** de  >    >  **facturación Otros servicios**.
 

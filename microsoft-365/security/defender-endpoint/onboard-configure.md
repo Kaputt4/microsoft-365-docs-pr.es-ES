@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05cc5770df5bb05687bb8be69ad89a7abd6875ed
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eebdad9b545c22e7a5a7b7fbdc37d37c5c0f538c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933558"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538918"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de dispositivos al servicio de Microsoft Defender para endpoints
 
@@ -49,9 +49,9 @@ En general, para incorporar dispositivos al servicio:
 ## <a name="onboarding-tool-options"></a>Opciones de la herramienta de incorporación
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
-| Extremo     | Opciones de herramientas                       |
+| Punto de conexión     | Opciones de herramientas                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)   |
+| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)  |
 | **macOS**    | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
 | **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Basado en aplicaciones](ios-install.md)                                |

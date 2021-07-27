@@ -1,0 +1,78 @@
+### YamlMime:FAQ
+metadata:
+  title: Activación del servicio en línea para preguntas más frecuentes del programa Abrir
+  ms.author: cmcatee
+  author: cmcatee-MSFT
+  manager: scotv
+  ms.reviewer:
+  - Rani Chegondi
+  - Armando Valenzuela
+  ms.date: 07/22/2021
+  audience: Admin
+  ms.topic: article
+  ms.service: bookings
+  ms.custom: commerce_licensing
+  localization_priority: Normal
+  description: Activación del servicio en línea para preguntas más frecuentes del programa Abrir
+  ms.openlocfilehash: f9aa80bc0918630a9dde9272716054f7ba76f84c
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53542547"
+title: Activación del servicio en línea para preguntas más frecuentes del programa Abrir
+summary: ''
+sections:
+- name: General
+  questions:
+  - question: >
+      ¿Cómo activo los servicios en línea comprados a través de los programas Open (Open, Open Value y Open Value Subscription)?
+    answer: >
+      Los clientes abiertos pueden activar los servicios en línea de dos maneras:
+
+      - Después de solicitar los servicios en línea a través de la familia de programas Abrir, recibirá un correo electrónico con un vínculo e instrucciones para activar los servicios.
+
+      O
+
+      - Desde el Centro de servicios de licencias por volumen [(VLSC) Los](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) clientes del programa Abierto pueden ir a la sección Activación del servicio en línea y seleccionar la licencia para administrar:
+
+
+      1. Seleccione el vínculo administrar activación y, a continuación, seleccione Iniciar activación. Se abre una ventana de activación del producto y rellena previamente la clave.
+
+      2. Continúe con los pasos de activación restantes para completar la activación del producto.
+
+
+      La activación correcta se completa en un plazo de 48 horas en el sitio web de activación del servicio en línea de licencias por volumen.
+
+      Para obtener información sobre cómo activar Microsoft Azure, vea [Introducción con Azure en Open Licensing](https://azure.microsoft.com/offers/ms-azr-0111p/).
+  - question: >
+      No veo mi pedido de Azure. ¿Qué tengo que hacer?
+    answer: >
+      Los pedidos de Azure se activan mediante claves. Obtenga las claves a través de la pestaña Descargas y claves del VLSC y escriba la clave en el archivo Introducción con Azure en [la página Licencias abiertas](https://azure.microsoft.com/offers/azure-open/).
+  - question: >
+      ¿Qué es una cuenta laboral o educativa y por qué necesito una para activar los servicios en línea?
+    answer: >
+      Una cuenta laboral o educativa está diseñada para que los usuarios inicien sesión en la organización servicios Microsoft. El inicio de sesión suele usar el formulario username@orgname.com o username@orgname.onmicrosoft.com, donde *orgname* es su nombre de dominio de correo electrónico de la organización.
+  - question: >
+      ¿Cómo sé si mi organización ya tiene una cuenta?
+    answer: "El nombre de la organización asociado con su cuenta profesional o educativa se toma del id. de licencia del servicio que está activando. Si existe una cuenta, el nombre de la organización se rellena previamente en la configuración de la cuenta organizativa y ya está vinculado a la organización desde el pedido de servicio en línea original. El proceso de registro valida si su organización tiene una cuenta. \n\nSi el campo de **Empresa** está disponible, finaliza el proceso de registro para iniciar sesión y activar el servicio. Si este campo no está disponible, debe registrar la organización. Debe ser un administrador global para registrar una organización para una cuenta.\n\nCuando solicita una cuenta laboral o educativa, la solicitud se envía a su organización Administrador de inquilinos que concede o deniega la solicitud de registro. Use esta cuenta profesional o educativa al iniciar sesión en La activación del servicio en línea de Microsoft VLSC.\n"
+  - question: >
+      ¿Por qué el portal de activación me cierra la sesión después de activar un servicio en línea?
+    answer: "Al activar servicios en línea en el programa De licencia abierta, cada contrato se activa por separado. Para asegurarse de que las licencias no se activan en el inquilino incorrecto, cada activación se controla en una sesión independiente. \n"
+  - question: >
+      ¿Cómo funciona la activación del servicio en línea para las compras de licencias abiertas?
+    answer: >
+      Microsoft Online Services para contratos abiertos se ha movido a un modelo de activación de control sin claves. Después de solicitar Servicios abiertos en línea, recibirá un correo electrónico con un vínculo e instrucciones para activar los servicios.
+  - question: >
+      ¿Qué sucede si deseo asignar mi compra a una organización diferente?
+    answer: >
+      Para asignar productos a una nueva organización, siga los pasos de registro para crear una nueva organización. Desde allí puede asignar puestos o productos que haya comprado.
+  - question: >
+      Acabo de activar mi servicio en línea. ¿Por qué todavía dice que tengo que activar mi servicio en la página Administrar activaciones del Centro de servicios de licencias por volumen?
+    answer: >
+      El servicio que activó puede tardar hasta 24 horas en aparecer como estado **Activado** en la **página Administrar activaciones.**
+  - question: >
+      ¿Cómo puedo ponerse en contacto con el soporte técnico?
+    answer: >
+      Para obtener soporte técnico por teléfono o web, consulte [Póngase en contacto con nosotros.](/licensing/contact-us) Microsoft responde a los envíos de formularios web en un plazo de 24 horas.
+additionalContent: "\n## <a name=\"additional-resources\"></a>Recursos adicionales\n\n- [Preguntas más frecuentes sobre claves de producto](product-keys-faq.yml)\n\n- [Preguntas más frecuentes sobre descargas](downloads-faq.yml)"

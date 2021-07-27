@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7243e8f6fad225e6c4570184736e8d6588466d0a
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: c30e65a154e582ee843bcae4fa233f81964aca13
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194966"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542332"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación basada en Intune para Microsoft Defender para endpoint en macOS
 
@@ -63,13 +63,13 @@ En la tabla siguiente se resumen los pasos que debe seguir para implementar y ad
 
 ## <a name="download-the-onboarding-package"></a>Descargar el paquete de incorporación
 
-Descargue los paquetes de incorporación desde Centro de seguridad de Microsoft Defender:
+Descargue los paquetes de incorporación desde Microsoft 365 Defender portal:
 
-1. En Centro de seguridad de Microsoft Defender, vaya **a Configuración** Incorporación de  >  **administración de**  >  **dispositivos**.
+1. En Microsoft 365 Defender portal, vaya **a Configuración**  >  **Endpoints**  >  **Device management**  >  **Onboarding**.
 
 2. Establezca el sistema operativo en **macOS** y el método de implementación en Administración de dispositivos móviles **/ Microsoft Intune**.
 
-    ![Captura de pantalla de configuración de incorporación](images/atp-mac-install.png)
+    ![Captura de pantalla de configuración de incorporación](images/macos-install-with-intune.png)
 
 3. Seleccione **Descargar paquete de incorporación**. Guárdelo _WindowsDefenderATPOnboardingPackage.zip_ en el mismo directorio.
 
@@ -176,7 +176,7 @@ Siga las instrucciones para incorporar [blobs](#onboarding-blob) desde arriba, u
 
 ### <a name="network-filter"></a>Filtro de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal Centro de seguridad de Microsoft Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal de Microsoft 365 Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 Descargue [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) desde [nuestro GitHub de archivos](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 

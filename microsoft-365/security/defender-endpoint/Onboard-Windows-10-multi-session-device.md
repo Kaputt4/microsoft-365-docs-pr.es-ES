@@ -1,7 +1,7 @@
 ---
-title: Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop
-description: Lea más en este artículo sobre la incorporación Windows 10 dispositivos de varias sesiones en Windows Escritorio virtual
-keywords: Windows Escritorio virtual, WVD, microsoft defender, punto de conexión, incorporación
+title: Incorporación Windows 10 de varias sesiones en Azure Virtual Desktop
+description: Encontrará más información en este artículo sobre la incorporación Windows 10 de varias sesiones en Azure Virtual Desktop
+keywords: Azure Virtual Desktop, WVD, microsoft defender, endpoint, onboard
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,30 +15,30 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 9114a825ad011f0b2a17cea4929ab2a09bfa2172
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: e86d6918af4ed7b14955b0fce6627451c5556b22
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339483"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542350"
 ---
-# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop 
+# <a name="onboard-windows-10-multi-session-devices-in-azure-virtual-desktop"></a>Incorporación Windows 10 de varias sesiones en Azure Virtual Desktop 
 6 minutos para leer 
 
 Se aplica a: 
-- Windows 10 varias sesiones que se ejecutan en Windows Virtual Desktop (WVD) 
+- Windows 10 varias sesiones que se ejecutan en Azure Virtual Desktop (AVD) 
 
-Microsoft Defender para endpoint admite la supervisión de VDI y Windows sesiones de Escritorio virtual. Según las necesidades de la organización, es posible que deba implementar sesiones de VDI o Windows Virtual Desktop para ayudar a los empleados a tener acceso a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para endpoint, puede supervisar estas máquinas virtuales en busca de actividad anómala.
+Microsoft Defender para endpoint admite la supervisión de sesiones de VDI y Azure Virtual Desktop. Según las necesidades de la organización, es posible que deba implementar sesiones de VDI o Azure Virtual Desktop para ayudar a los empleados a tener acceso a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para endpoint, puede supervisar estas máquinas virtuales en busca de actividad anómala.
 
  ## <a name="before-you-begin"></a>Antes de empezar
-Familiarícese con las [consideraciones para VDI no persistente.](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Aunque [Windows Virtual Desktop](/azure/virtual-desktop/overview) no proporciona opciones de no persistencia, sí proporciona formas de usar una imagen de Windows dorada que se puede usar para aprovisionar nuevos hosts y volver a implementar máquinas. Esto aumenta la inestabilidad en el entorno y, por lo tanto, afecta a las entradas que se crean y mantienen en el portal de Microsoft Defender para endpoints, lo que potencialmente reduce la visibilidad de los analistas de seguridad.
+Familiarícese con las [consideraciones para VDI no persistente.](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Aunque [Azure Virtual Desktop](/azure/virtual-desktop/overview) no proporciona opciones de no persistencia, sí proporciona formas de usar una imagen Windows dorada que se puede usar para aprovisionar nuevos hosts y volver a implementar máquinas. Esto aumenta la inestabilidad en el entorno y, por lo tanto, afecta a las entradas que se crean y mantienen en el portal de Microsoft Defender para endpoints, lo que potencialmente reduce la visibilidad de los analistas de seguridad.
 
 > [!NOTE]
 > Según la elección del método de incorporación, los dispositivos pueden aparecer en el portal de Microsoft Defender para endpoints como: 
 > - Entrada única para cada escritorio virtual 
 > - Varias entradas para cada escritorio virtual 
 
-Microsoft recomienda la incorporación Windows Escritorio virtual como una única entrada por escritorio virtual. Esto garantiza que la experiencia de investigación en el portal de puntos de conexión de Microsoft Defender se encuentra en el contexto de un dispositivo basado en el nombre del equipo. Las organizaciones que suelen eliminar y volver a implementar hosts WVD deben considerar encarecidamente el uso de este método, ya que impide que se cree varios objetos para la misma máquina en el portal de Microsoft Defender para endpoint. Esto puede provocar confusión al investigar incidentes. Para entornos de prueba o no volátiles, puede optar por elegir de forma diferente. 
+Microsoft recomienda incorporar Azure Virtual Desktop como una sola entrada por escritorio virtual. Esto garantiza que la experiencia de investigación en el portal de puntos de conexión de Microsoft Defender se encuentra en el contexto de un dispositivo basado en el nombre del equipo. Las organizaciones que suelen eliminar y volver a implementar hosts WVD deben considerar encarecidamente el uso de este método, ya que impide que se cree varios objetos para la misma máquina en el portal de Microsoft Defender para endpoint. Esto puede provocar confusión al investigar incidentes. Para entornos de prueba o no volátiles, puede optar por elegir de forma diferente. 
 
 Microsoft recomienda agregar el script de incorporación de Microsoft Defender para endpoint a la imagen dorada de WVD. De esta forma, puede asegurarse de que este script de incorporación se ejecute inmediatamente al primer arranque. Se ejecuta como un script de inicio al inicio en todas las máquinas WVD aprovisionadas desde la imagen dorada de WVD. Sin embargo, si usa una de las imágenes de la galería sin modificaciones, coloque el script en una ubicación compartida y llámelo desde una directiva de grupo local o de dominio. 
 
@@ -50,11 +50,13 @@ Hay varias formas de incorporar un equipo host WVD:
 
 - Ejecute el script en la imagen dorada (o desde una ubicación compartida) durante el inicio.
 - Use una herramienta de administración para ejecutar el script.
+- A [través de la integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)
 
 #### <a name="scenario-1-using-local-group-policy"></a>*Escenario 1: Uso de la directiva de grupo local*
 Este escenario requiere colocar el script en una imagen dorada y usa la directiva de grupo local para ejecutarse al principio del proceso de arranque.
 
-Use las instrucciones de Incorporación de los dispositivos de infraestructura de escritorio [virtual (VDI)](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices)no persistentes .
+Use las instrucciones de Incorporación de dispositivos de infraestructura de escritorio [virtual (VDI)](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices)no persistentes .
+
 
 Siga las instrucciones de una sola entrada para cada dispositivo.
 
@@ -65,7 +67,7 @@ Este escenario usa un script ubicado centralmente y lo ejecuta mediante una dire
 
 1. Abra el archivo de configuración .zip VDI (WindowsDefenderATPOnboardingPackage.zip)  
 
-    1. En el panel Centro de seguridad de Microsoft Defender navegación, **seleccione Configuración**  >  **Incorporación**. 
+    1. En el panel Microsoft 365 Defender navegación del portal, **seleccione Configuración** incorporación de puntos de conexión  >    >   (en Administración **de dispositivos).** 
     1. Seleccione Windows 10 como sistema operativo. 
     1. En el **campo Método de** implementación, seleccione Scripts de incorporación de VDI para puntos de conexión no persistentes. 
     1. Haga **clic en Descargar paquete** y guarde el .zip archivo. 
@@ -101,7 +103,7 @@ Si planea administrar las máquinas con una herramienta de administración, pued
 Para obtener más información, vea [Onboard Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> Si tienes previsto usar reglas de reducción de superficie de [ataque,](attack-surface-reduction.md)ten en cuenta que no se debe usar la regla " Bloquear creaciones de proceso que se originen a partir de comandos[PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)y WMI", ya que dicha regla es incompatible con la administración a través de Microsoft Endpoint Configuration Manager. La regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente. 
+> Si tienes previsto usar reglas de reducción de superficie de [ataque,](attack-surface-reduction-rules.md)ten en cuenta que no se debe usar la regla " Bloquear creaciones de proceso que se originen a partir de comandos[PSExec](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)y WMI", ya que dicha regla es incompatible con la administración a través de Microsoft Endpoint Configuration Manager. La regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
 
 > [!TIP]
 > Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que el dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado. 

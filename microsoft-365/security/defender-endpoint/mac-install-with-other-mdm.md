@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ca779fc4cc8c40adb25a0e95a9450f59954dc605
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f980c7121a8796f2cf48cc85c401ed499b4b581b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933798"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542290"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación con un sistema de administración de dispositivos móviles (MDM) diferente para Microsoft Defender para Endpoint en macOS
 
@@ -116,7 +116,7 @@ Conceder acceso en disco completo a los siguientes componentes:
 
 ### <a name="network-extension-policy"></a>Directiva de extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal Centro de seguridad de Microsoft Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad Microsoft 365 seguridad. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 - Tipo de filtro: Complemento
 - Identificador de agrupación de complementos: `com.microsoft.wdav`

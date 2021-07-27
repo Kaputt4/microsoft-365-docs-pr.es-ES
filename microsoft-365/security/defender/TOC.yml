@@ -34,32 +34,62 @@
           href: data-privacy.md
         - name: Portales de seguridad de Microsoft
           href: portals.md
-    - name: Funcionalidades de evaluación
+    - name: Evaluar y piloto
       items:
-        - name: Crear laboratorio de pruebas
+        - name: Información general
+          href: eval-overview.md
+        - name: Creación del entorno de eval
+          href: eval-create-eval-environment.md
+        - name: Defender for Identity
           items:
-            - name: Introducción al laboratorio de pruebas
-              href: m365d-evaluation.md
-            - name: Preparación
-              href: prepare-m365d-eval.md
-            - name: Instalación
-              href: setup-m365deval.md
-            - name: Configurar los pilares de Microsoft 365 Defender y realizar la incorporación
-              href: config-m365d-eval.md
-            - name: Generar una alerta de prueba
-              href: generate-test-alert.md
-        - name: Ejecutar el proyecto piloto en producción
+            - name: Información general
+              href: eval-defender-identity-overview.md
+            - name: Revisión de los requisitos de arquitectura
+              href: eval-defender-identity-architecture.md
+            - name: Habilitar la evaluación
+              href: eval-defender-identity-enable-eval.md
+            - name: Defender for Identity piloto
+              href: eval-defender-identity-pilot.md
+        - name: Defender para Office 365
           items:
-            - name: Información general del piloto
-              href: m365d-pilot.md
-            - name: Plan
-              href: m365d-pilot-plan.md
-            - name: Preparación
-              href: prepare-m365d-eval.md
-            - name: Simular ataque
-              href: m365d-pilot-simulate.md
-            - name: Cerrar y resumir
-              href: m365d-pilot-close.md
+            - name: Información general
+              href: eval-defender-office-365-overview.md
+            - name: Revisión de los requisitos de arquitectura
+              href: eval-defender-office-365-architecture.md
+            - name: Habilitar la evaluación
+              href: eval-defender-office-365-enable-eval.md
+            - name: Defender para Office piloto
+              href: eval-defender-office-365-pilot.md
+        - name: Defender para punto de conexión
+          items:
+            - name: Información general
+              href: eval-defender-endpoint-overview.md
+            - name: Revisión de los requisitos de arquitectura
+              href: eval-defender-endpoint-architecture.md
+            - name: Habilitar la evaluación
+              href: eval-defender-endpoint-enable-eval.md
+            - name: Defender para punto de conexión piloto
+              href: eval-defender-endpoint-pilot.md
+        - name: Microsoft Cloud App Security
+          items:
+            - name: Información general
+              href: eval-defender-mcas-overview.md
+            - name: Revisión de los requisitos de arquitectura
+              href: eval-defender-mcas-architecture.md
+            - name: Habilitar la evaluación
+              href: eval-defender-mcas-enable-eval.md
+            - name: Microsoft Cloud App Security piloto
+              href: eval-defender-mcas-pilot.md
+        - name: Investigar y responder
+          items:
+            - name: Información general
+              href: eval-defender-investigate-respond.md
+            - name: Simular un ataque
+              href: eval-defender-investigate-respond-simulate-attack.md
+            - name: Probar funcionalidades
+              href: eval-defender-investigate-respond-additional.md
+        - name: Promover la versión de prueba a producción
+          href: eval-defender-promote-to-production.md
     - name: Introducción
       items:
         - name: Información general
@@ -269,9 +299,9 @@
     - name: Guías de procedimientos
       items:
         - name: Crear un entorno piloto o de laboratorio de pruebas
-          href: m365d-evaluation.md
+          href: eval-overview.md
         - name: Ejecutar el cuaderno de estrategias piloto
-          href: m365d-pilot.md
+          href: eval-overview.md
         - name: Activar Preguntas más frecuentes
           href: m365d-enable-faq.md
     - name: Referencia

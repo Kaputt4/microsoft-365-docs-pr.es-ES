@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7bb231049815da12ef6e5e48c88d79f5263f8708
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 9fa03a11a548cfd60e9b9911eb2a87be0af37015
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53277018"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542640"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -61,9 +61,9 @@ Para obtener más información sobre las características de vista previa, vea [
 
 - [Las definiciones de grupo de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) ahora pueden incluir varios valores para cada condición. Puedes establecer varias etiquetas, nombres de dispositivo y dominios en la definición de un único grupo de dispositivos.
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
+- [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016 y Windows Server 2019 mediante un método denominado *tenant attach*.
 
-- [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016 y Windows Server 2019 mediante un método denominado *tenant attach*.
 
 ## <a name="january-2021"></a>Enero de 2021
 
@@ -158,7 +158,7 @@ Para obtener más información sobre las características de vista previa, vea [
 
 ## <a name="october-2018"></a>Octubre de 2018
 
-- [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)<BR>Todas las reglas de reducción de superficie de ataque ahora son compatibles Windows Server 2019.
+- [Reglas de reducción de la superficie expuesta a ataques](attack-surface-reduction.md)<BR>Todas las reglas de reducción de superficie de ataque ahora son compatibles Windows Server 2019.
 
 - [Acceso controlado a carpetas](enable-controlled-folders.md)<BR> El acceso controlado a carpetas ahora es compatible Windows Server 2019.
 
@@ -190,7 +190,7 @@ Threat Analytics es un conjunto de informes interactivos publicados por el equip
 
    Consulta datos con búsqueda avanzada en Microsoft Defender para endpoint.
 
-- [Reglas de la reducción de la superficie expuesta a ataques](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [Reglas de reducción de la superficie expuesta a ataques](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 
   Nuevas reglas de reducción de superficie de ataque:
 

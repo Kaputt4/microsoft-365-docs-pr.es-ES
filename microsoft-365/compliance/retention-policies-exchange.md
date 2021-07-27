@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 1ec89ee838c73c0ba0eb50361f8c457a697bd9bb
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985437"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538870"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
 
@@ -84,6 +84,8 @@ Cuando los ajustes de retención son sólo de retención o sólo de borrado, las
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 
 Si un usuario deja la organización y su buzón está incluido en una directiva de retención, el buzón pasa a estado inactivo cuando se elimina la cuenta de Microsoft 365 del usuario. El contenido de un buzón inactivo sigue estando sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estar inactivo, y está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md).
+
+Cuando la configuración de retención ya no se aplica porque los datos se eliminan permanentemente o el período de retención ha expirado, el administrador de Exchange ahora puede [eliminar el buzón](delete-an-inactive-mailbox.md). En este escenario, el buzón inactivo no se elimina automáticamente.
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 

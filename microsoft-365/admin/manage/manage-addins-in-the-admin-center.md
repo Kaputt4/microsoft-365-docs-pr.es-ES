@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos para usuarios y grupos de la organización.
-ms.openlocfilehash: aad68d37fb23c26ef1a1ca1ba7dfc5d4e2a40bfe
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: a27fc3744ab0dfc9256afbb6e08e881d2d35fb48
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392868"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578378"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
 
@@ -56,7 +56,7 @@ También puede eliminar un complemento que se implementó.
 1. En el Centro de administración, vaya a la **página Configuración** servicios  >  **& complementos.**
 
     > [!NOTE]
-    > El Centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a Configuración  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
 
 2. Seleccione el complemento implementado.
 
@@ -71,7 +71,8 @@ Después de la implementación, los administradores también pueden administrar 
 1. En el Centro de administración, vaya a la **página Configuración** servicios  >  **& complementos.**
 
     > [!NOTE]
-    > El Centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a Configuración  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+
 
 2. Seleccione el complemento implementado.
 
@@ -91,7 +92,8 @@ Como organización, es posible que quieras impedir la descarga de nuevos Office 
 1. En el centro de administración, vaya a la página **Configuración** \>[de servicios &amp;complementos](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
     > [!NOTE]
-    > El Centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a Configuración  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+
     
 3. Seleccione **Aplicaciones y servicios que pertenecen al usuario**.
     

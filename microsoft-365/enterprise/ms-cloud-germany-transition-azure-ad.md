@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información Azure Active Directory información adicional al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 0e7abd68945a9b685a33c120ff1e92fda62b2c56
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 88a151b61a93b4b65e16bbd100a126d44282e513
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362731"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578450"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información Azure Active Directory para la migración desde Microsoft Cloud Deutschland
 
-Para completar el traslado de la nube de Azure German a la nube pública de Azure, recomendamos que los puntos de conexión de autenticación, Azure Active Directory (Azure AD) Graph y MS Graph para las aplicaciones se actualicen a los de la nube comercial cuando el extremo de Conectar de OpenID (OIDC), comience a notificar los puntos de conexión de nube `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` comercial. 
+Para completar el traslado de la nube de Azure German a la nube pública de Azure, recomendamos que los puntos de conexión de autenticación, Azure Active Directory (Azure AD) Graph y MS Graph para las aplicaciones se actualicen a los de la nube comercial cuando el extremo de Conectar de OpenID (OIDC), comience a notificar los puntos de conexión de nube `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` comercial. 
  
 **¿Cuándo debo realizar este cambio?**
 
@@ -35,7 +35,7 @@ Recibirá una notificación en Azure/Office portal cuando el inquilino complete 
  
 Existen tres condiciones previas para actualizar la entidad de inicio de sesión:
 
- - El punto de conexión de detección de OIDC para el inquilino devuelve puntos de conexión de nube pública `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` de Azure AD.
+ - El punto de conexión de detección de OIDC para el inquilino devuelve puntos de conexión de nube pública `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` de Azure AD.
 
  - Si el inquilino está configurado para federación, los Servicios de federación de Active Directory (AD FS) se actualizan para sincronizarse con Azure AD Public. Puedes seguir las instrucciones para actualizar la configuración Conectar azure AD para realizar este cambio.
 
@@ -66,7 +66,7 @@ Una aplicación puede ser cualquiera de las siguientes:
 
 2. Actualizar el punto Graph azure AD para que sea `https://graph.windows.net` .
 
-3. Actualizar el punto Graph MS para que sea `https://graph.microsoft.com` .
+3. Actualizar el punto Graph microsoft para que sea `https://graph.microsoft.com` .
 
 4. Actualice los puntos de conexión de la nube alemán (como los de Exchange Online y SharePoint Online) que usan las aplicaciones para que sean los de la nube pública.
 

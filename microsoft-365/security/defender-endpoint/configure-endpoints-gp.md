@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: c9b63a73e755b3df247e5d9bd30f436ae50e294c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339627"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595071"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>Incorporar los dispositivos Windows 10 con la directiva de grupo 
 
@@ -34,7 +34,7 @@ ms.locfileid: "53339627"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 > [!NOTE]
 > Para usar las actualizaciones de directiva de grupo (GP) para implementar el paquete, debe estar en Windows Server 2008 R2 o posterior.
@@ -49,6 +49,8 @@ Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 
 1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
 
+1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender](https://security.microsoft.com/):
+ 
     1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints**  >  **Device management**   >  **Onboarding**.
 
     1. Seleccione Windows 10 como sistema operativo.
@@ -89,7 +91,7 @@ Puede usar la directiva de grupo (GP) para configurar opciones, como las opcione
 
     - Copiar _AtpConfiguration.adml_ en _C: \\ Windows \\ PolicyDefinitions \\ en-US_
 
-    Si usa un Almacén central para plantillas administrativas de directiva [de](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)grupo, copie los siguientes archivos del paquete de configuración:
+    Si usas un Almacén central para plantillas administrativas de directiva [de](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)grupo, copia los siguientes archivos del paquete de configuración:
 
     - Copiar _AtpConfiguration.admx_ en _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions_
 
@@ -118,7 +120,7 @@ Todas las directivas se encuentran en `Computer Configuration\Policies\Administr
 
 **Ubicación de la directiva:** \Windows Components\Windows Defender ATP
 
-Policy | Configuración
+Directiva | Configuración
 :---|:---
 Enable\Disable Sample (colección)| Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -126,7 +128,7 @@ Enable\Disable Sample (colección)| Habilitado: "Habilitar la colección de mues
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender
 
-Policy | Configuración
+Directiva | Configuración
 :---|:---
 Configurar la detección para aplicaciones potencialmente no deseadas | Enabled, Block
 
@@ -134,7 +136,7 @@ Configurar la detección para aplicaciones potencialmente no deseadas | Enabled,
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\MAPS
 
-Policy | Configuración
+Directiva | Configuración
 :---|:---
 Unirse a Microsoft MAPS | Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
@@ -143,7 +145,7 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Real-time Protection
 
-Policy | Configuración
+Directiva | Configuración
 :---|:---
 Desactivar la protección en tiempo real|Deshabilitado
 Activar la supervisión del comportamiento|Habilitado
@@ -156,7 +158,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Policy | Configuración 
+Directiva | Configuración 
 :---|:---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -178,16 +180,17 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
    ![Imagen de configuración de reducción de superficie de ataque](images/asr-guid.png)
 
-Policy | Configuración
+Directiva | Configuración
 :---|:---
 Configurar acceso controlado a carpetas| Habilitado, modo auditoría
 
 ## <a name="offboard-devices-using-group-policy"></a>Dispositivos offboard con directiva de grupo
 
-Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
+Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se te notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
 
 > [!NOTE]
 > Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
+
 
 1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
 

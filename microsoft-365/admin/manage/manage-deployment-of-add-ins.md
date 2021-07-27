@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para usuarios y grupos de su organización mediante la implementación centralizada en el Centro de administración.
-ms.openlocfilehash: 88613e593f3c8375073865ebe9b7e417c6b3f06f
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1bf7ea6bfc0aabe5f6c9418dcdf905681dd5375c
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392856"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578390"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
 
@@ -62,7 +62,7 @@ Antes de comenzar, vea [Determine if Centralized Deployment of add-ins works for
 2. Seleccione **Implementar complemento en** la parte superior de la página y, a continuación, seleccione **Siguiente**.
 
     > [!NOTE]
-    > El Centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Las aplicaciones integradas solo son visibles para los administradores globales, mientras que para otros la experiencia antigua aún existe. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
 
 3. Seleccione una opción y siga las instrucciones.
   

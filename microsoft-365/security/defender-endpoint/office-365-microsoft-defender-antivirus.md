@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6bf84d00d11bdb948b234d9a9c6f1b4fa7f14461
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c0c3e87644b7666c006f2eaf0632827173f5362f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275401"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542650"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mejor juntos: Antivirus de Microsoft Defender y Office 365
 
@@ -73,7 +73,7 @@ Microsoft Defender para Office 365 integrado con Microsoft Defender para endpoin
 
     SO
 
-- Una vez habilitada la integración, el equipo de operaciones de seguridad puede ver una lista de dispositivos que usan los destinatarios de las direcciones URL o mensajes de correo electrónico detectados, junto con las alertas recientes para esos dispositivos, en el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+- Una vez habilitada la integración, el equipo de operaciones de seguridad puede ver una lista de dispositivos que usan los destinatarios de las direcciones URL o mensajes de correo electrónico detectados, junto con las alertas recientes para esos dispositivos, en el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
 Si aún no lo ha hecho, [integre Microsoft Defender para Office 365 con Microsoft Defender para endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
 
