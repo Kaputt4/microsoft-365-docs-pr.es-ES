@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre cómo y por qué duplicar un modelo en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 501c33b5309ca4af264a361c80fb0409c08c92e3
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 882340198ec17402caa30d9e1e34b4e37b0096a4
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51446082"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578474"
 ---
 # <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Duplicar un modelo en Microsoft SharePoint Syntex
 

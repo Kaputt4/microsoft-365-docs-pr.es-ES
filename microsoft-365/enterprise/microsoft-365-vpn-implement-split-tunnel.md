@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo implementar el túnel dividido VPN para Office 365
-ms.openlocfilehash: c2195eb9e3af3c591ff59d0b0f87583455b9b119
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2ec4cd8b3730c93a6de30e59087beaff788992dd
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843655"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578594"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementación del túnel dividido de VPN para Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843655"
 
 Durante muchos años, las empresas han estado usando VPN para admitir experiencias remotas para sus usuarios. Mientras las cargas de trabajo básicas permanecían en entornos locales, una VPN del cliente remoto enrutada a través de un centro de datos de la red corporativa era el método principal para que los usuarios remotos accediesen a los recursos corporativos. Para salvaguardar estas conexiones, las empresas crean capas de soluciones de seguridad de red a lo largo de las rutas VPN. Esta seguridad se creó para proteger la infraestructura interna y proteger la navegación móvil de sitios web externos mediante el reenrutación del tráfico en la VPN y, a continuación, a través del perímetro de Internet local. Las VPN, los perímetros de red y la infraestructura de seguridad asociada a menudo se basaban y escalaban para un volumen de tráfico definido, normalmente con la mayor parte de la conectividad iniciada desde la red corporativa y la mayor parte de ella se encontraba dentro de los límites de la red interna.
 
-Durante bastante tiempo, los modelos de VPN en los que todas las conexiones del dispositivo del usuario remoto se enrutan de nuevo a la red local (conocido como **forzar el uso del túnel**) eran en gran medida sostenibles siempre que la escala concurrente de usuarios remotos fuera modesta y los volúmenes de tráfico que atravesaban la VPN fueran bajos.  Algunos clientes siguieron utilizando el túnel de fuerza VPN como el status quo incluso después de que sus aplicaciones se movieran desde el interior del perímetro corporativo a las nubes públicas de SaaS, siendo Office 365 un ejemplo destacado.
+Durante bastante tiempo, los modelos de VPN en los que todas las conexiones del dispositivo del usuario remoto se enrutan de nuevo a la red local (conocido como _forzar el uso del túnel_) eran en gran medida sostenibles siempre que la escala concurrente de usuarios remotos fuera modesta y los volúmenes de tráfico que atravesaban la VPN fueran bajos.  Algunos clientes siguieron utilizando el túnel de fuerza VPN como el status quo incluso después de que sus aplicaciones se movieran desde el interior del perímetro corporativo a las nubes públicas de SaaS, siendo Office 365 un ejemplo destacado.
 
 El uso de VPN tuneladas forzadas para conectarse a aplicaciones en la nube distribuidas y sensibles al rendimiento es subóptimo, pero el efecto negativo de esto puede haber sido aceptado por algunas empresas para mantener el statu quo desde una perspectiva de seguridad. A continuación se muestra un diagrama de ejemplo de este escenario:
 
@@ -110,7 +110,7 @@ Las direcciones URL de esta categoría tienen las siguientes características:
 - Se les puede proporcionar elementos de seguridad necesarios directamente en el servicio en lugar de en línea en la red
 - Suponen aproximadamente entre el 70 % y el 80 % del volumen de tráfico en el servicio de Office 365
 
-Para obtener más información acerca de los puntos de conexión de Office 365 y cómo se clasifican y administran, vea el artículo [Administración de puntos de conexión de Office 365](managing-office-365-endpoints.md).
+Para obtener más información sobre Office 365 y cómo se clasifican y administran, vea [Managing Office 365 endpoints](managing-office-365-endpoints.md).
 
 #### <a name="optimize-urls"></a>Optimización de direcciones URL
 
@@ -128,7 +128,7 @@ En los ejemplos anteriores, se debe reemplazar al **inquilino** por el nombre de
 
 #### <a name="optimize-ip-address-ranges"></a>Optimización de intervalos de direcciones IP
 
-En el momento de escribir los intervalos IP a los que corresponden estos puntos de conexión son los siguientes. Se  recomienda encarecidamente usar un [script](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) como este ejemplo, el servicio web [DE IP](microsoft-365-ip-web-service.md) y URL de Office 365 o la página [URL/IP](urls-and-ip-address-ranges.md) para comprobar si hay actualizaciones al aplicar la configuración y poner una directiva en su lugar para hacerlo con regularidad.
+En el momento de escribir los intervalos de direcciones IP a los que corresponden estos puntos de conexión son los siguientes. Se  recomienda encarecidamente usar un [script](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) como este ejemplo, el servicio web [DE IP](microsoft-365-ip-web-service.md) y URL de Office 365 o la página [URL/IP](urls-and-ip-address-ranges.md) para comprobar si hay actualizaciones al aplicar la configuración y poner una directiva en su lugar para hacerlo con regularidad.
 
 ```
 104.146.128.0/17
@@ -141,7 +141,6 @@ En el momento de escribir los intervalos IP a los que corresponden estos puntos 
 132.245.0.0/16
 150.171.32.0/22
 150.171.40.0/22
-191.234.140.0/22
 204.79.197.215/32
 23.103.160.0/20
 40.104.0.0/15
@@ -175,7 +174,7 @@ Una vez que haya agregado las rutas, puede confirmar que la tabla de rutas es la
 
 ![Resultado de route print](../media/vpn-split-tunneling/vpn-route-print.png)
 
-Para agregar rutas para **todos** los intervalos de direcciones IP actuales en la categoría Optimizar, puede usar la siguiente variación de script para consultar el [servicio web de direcciones IP y URL de Office 365](microsoft-365-ip-web-service.md) para el conjunto actual de subredes IP de la categoría Optimizar, y para agregarlo a la tabla de rutas.
+Para agregar rutas para _todos_ los intervalos de direcciones IP actuales en la categoría Optimizar, puede usar la siguiente variación de script para consultar el [servicio web de direcciones IP y URL de Office 365](microsoft-365-ip-web-service.md) para el conjunto actual de subredes IP de la categoría Optimizar, y para agregarlo a la tabla de rutas.
 
 #### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>Ejemplo: agregar subredes IP de la categoría Optimizar a la tabla de rutas
 
@@ -248,7 +247,7 @@ Una vez que la directiva se haya implementado, debe asegurarse de que funciona d
 
 - Ejecute la [Microsoft 365 de conectividad que](https://aka.ms/netonboard) ejecutará pruebas de conectividad por usted, incluidas las rutas de seguimiento como las anteriores. También estamos agregando pruebas de VPN a esta herramienta que también debe proporcionar información adicional.
 
-- Un sencillo tracert para un punto de conexión dentro del alcance del túnel dividido debe mostrar la ruta de acceso que se ha tomado, por ejemplo:
+- Un **tracert simple** a un punto de conexión dentro del ámbito del túnel dividido debe mostrar la ruta de acceso tomada, por ejemplo:
 
   ```powershell
   tracert worldaz.tr.teams.microsoft.com
@@ -276,7 +275,7 @@ En esta sección se ofrecen enlaces a guías detalladas para la realización de 
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
-El equipo de seguridad [](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) de Microsoft ha publicado un artículo en el que se describen formas clave para que los profesionales de seguridad y TI puedan lograr controles de seguridad modernos en los escenarios de trabajo remoto únicos actuales. Además, a continuación se muestran algunas de las preguntas de los clientes más comunes acerca de este tema, con sus respuestas.
+El equipo de seguridad de Microsoft ha publicado Formas alternativas para que los profesionales de seguridad y TI puedan lograr controles de seguridad modernos en los escenarios de trabajo remoto [únicos](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)actuales, una entrada de blog, que describe formas clave para los profesionales de la seguridad y ti puede lograr controles de seguridad modernos en los escenarios de trabajo remoto únicos actuales. Además, a continuación se muestran algunas de las preguntas de los clientes más comunes acerca de este tema, con sus respuestas.
 
 ### <a name="how-do-i-stop-users-accessing-other-tenants-i-do-not-trust-where-they-could-exfiltrate-data"></a>¿Cómo puedo evitar que los usuarios tengan acceso a otros inquilinos en los que se pueden filtrar datos?
 
@@ -316,7 +315,7 @@ También hay varios proveedores que ofrecen soluciones de seguridad y proxy basa
 
 Pero incluso con estas soluciones implementadas, Microsoft sigue recomendando que se envíe directamente al servicio el tráfico de Office 365 marcado como Optimizar.
 
-Para obtener instrucciones sobre cómo permitir el acceso directo a una red virtual de Azure, vea el artículo [Remote work using Azure VPN Gateway Point-to-site (Trabajo remoto mediante Azure VPN Gateway de punto a sitio)](/azure/vpn-gateway/work-remotely-support).
+Para obtener instrucciones sobre cómo permitir el acceso directo a una red virtual de Azure, consulte [Trabajo remoto con Azure VPN Gateway Point-to-site](/azure/vpn-gateway/work-remotely-support).
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>¿Por qué es necesario el puerto 80? ¿El tráfico se envía sin cifrar?
 

@@ -1,8 +1,9 @@
 ---
-title: Crear un extractor
-ms.author: efrene
-author: efrene
+title: Crear un extractor en Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: e95df00c2601bccc5041f96c745048adc8dfc91f
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: d448458616d7641152e8179c413d4581d4da00fb
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222796"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578510"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -47,7 +48,7 @@ Es necesario crear un extractor para cada entidad del documento que se desea ext
 
 El siguiente paso es etiquetar la entidad que desea extraer en sus archivos de entrenamiento de ejemplo.
 
-Al crear el extractor se abre la página del extractor. Aquí puede ver una lista de sus archivos de muestra, con el primer archivo de la lista mostrado en el visor.
+Crear el extractor abre la página del extractor. Aquí, podrá ver una lista de los archivos de muestra; el primer archivo de la lista se mostrará en el visor.
 
 1. En el visor, seleccione los datos que desea extraer de los archivos. Por ejemplo, si se quiere extraer la *Fecha de inicio del servicio*, se resalta el valor de la fecha en el primer archivo (*lunes 14 de octubre de 2019*). luego haga clic en **Guardar**.  Debería ver la visualización del valor del archivo en la lista de ejemplos etiquetados, bajo la columna **Etiqueta**.
 2. Seleccione **Siguiente archivo** para guardarlo automáticamente y abra el siguiente archivo de la lista en el visor. O seleccione **Guardar** y luego seleccione otro archivo de la lista de **Ejemplos etiquetados**.
@@ -59,9 +60,10 @@ Al crear el extractor se abre la página del extractor. Aquí puede ver una list
 Una vez que etiquetó cinco archivos, se muestra un banner de notificación que le informa de pasar al entrenamiento. Puedes elegir entre etiquetar más documentos o avanzar a la formación. 
 
 ### <a name="use-find-to-search-your-file"></a>Usar Buscar para buscar en el archivo
-Puede usar la característica <b>Buscar</b> para buscar una entidad que quiera etiquetar en el documento.
 
-   ![Buscar en archivo](../media/content-understanding/find-feature.png) 
+Puede usar la característica **Buscar** para buscar una entidad que quiera etiquetar en el documento.
+
+   ![Busque en el archivo.](../media/content-understanding/find-feature.png) 
 
 La característica Buscar es útil si está buscando en un documento grande o si hay varias instancias de la entidad en el documento. Si encuentra varias instancias, puede seleccionar la que necesite en los resultados de búsqueda para ir a esa ubicación en el visor y etiquetarla.
 
@@ -99,24 +101,24 @@ Para la muestra de la *Fecha de inicio del servicio*, es más eficiente usar la 
 2. En la biblioteca de explicación, seleccione **Fecha**. Puede ver todas las variaciones de fecha que son reconocidas
 3. Seleccione **Agregar**.</br>
 
-    ![Biblioteca de explicación](../media/content-understanding/explanation-library.png) 
+    ![Biblioteca de explicación.](../media/content-understanding/explanation-library.png) 
 
 4. En la página **Crear una explicación**, la información de la *Fecha* de la biblioteca de explicaciones rellena automáticamente los campos. Seleccione **Guardar**.</br>
 
-    ![Fecha](../media/content-understanding/date-explanation-library.png) 
+    ![Fecha.](../media/content-understanding/date-explanation-library.png) 
 
 ## <a name="train-the-model"></a>Entrenar el modelo 
 
 Guardando su explicación inicio del entrenamiento. Si su modelo tiene suficiente información para extraer los datos de los archivos de ejemplo etiquetados, verá cada archivo etiquetado con **Coincidencia**.  
 
-![Coincidencia](../media/content-understanding/match2.png) 
+![Coincidencia.](../media/content-understanding/match2.png) 
 
 Si la explicación no tiene suficiente información para encontrar los datos que quiere extraer, cada archivo será etiquetado con **No coincide**. Puede hacer clic en los archivos de **No coincide** para ver más información sobre por qué no coincide.
 
 
 ## <a name="add-another-explanation"></a>Agregar otra explicación
 
-A menudo la no coincidencia es una indicación de que la explicación que dimos no proporcionó suficiente información para extraer el valor de la fecha de inicio del servicio para que coincida con nuestros archivos etiquetados. Puede que necesite editarlo, o agregar otra explicación.
+A menudo, la no coincidencia es una indicación de que la explicación no proporcionó suficiente información para extraer el valor de la fecha de inicio del servicio a fin de que coincida con nuestros archivos etiquetados. Es posible que deba editarla o agregar otra explicación.
 
 Para nuestro ejemplo, note que la cadena de texto *Fecha de Inicio del servicio de* siempre precede al valor real. Para ayudar a identificar la fecha de Inicio del servicio, necesita crear una frase de explicación.
 
@@ -125,7 +127,7 @@ Para nuestro ejemplo, note que la cadena de texto *Fecha de Inicio del servicio 
 3. Utilice la *Fecha de inicio del servicio de* como valor.
 4. Seleccione **Guardar**.
 
-    ![Cadena de prefijo](../media/content-understanding/prefix-string.png) 
+    ![Cadena de prefijo.](../media/content-understanding/prefix-string.png) 
 
 ## <a name="train-the-model-again"></a>Entrenar el modelo de nuevo
 
@@ -140,7 +142,7 @@ Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede p
 1. En la página principal del modelo, haga clic en la pestaña **Prueba**. Se ejecutará el modelo en sus archivos de muestra sin etiquetar.
 2. En la lista de **Archivos de prueba**, sus archivos de ejemplo son presentados para mostrar si el modelo es capaz de extraer la información que necesita. Utilice esta información para ayudar a determinar la eficacia de su clasificador en la identificación de sus documentos.
 
-    ![Prueba en los archivos](../media/content-understanding/test-filies-extractor.png) 
+    ![Prueba en los archivos.](../media/content-understanding/test-filies-extractor.png) 
 
 ## <a name="see-also"></a>Consulte también
 [Crear un clasificador](create-a-classifier.md)

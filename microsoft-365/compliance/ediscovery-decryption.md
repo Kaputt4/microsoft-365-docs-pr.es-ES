@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 herramientas de exhibición de documentos electrónicos administran documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: b87d87b7b0e870d6f396d87dc693fb8f41d5826b
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 9d3bee507d2add2a6ad1dedadf64c47298ecbab6
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51750032"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567313"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos
 
@@ -36,6 +36,9 @@ Antes de esta nueva funcionalidad, solo se descifraba el contenido de un mensaje
 ## <a name="supported-encryption-technologies"></a>Tecnologías de cifrado compatibles
 
 Las herramientas de exhibición de documentos electrónicos de Microsoft admiten elementos cifrados con tecnologías de cifrado de Microsoft. Estas tecnologías son Azure Rights Management y Microsoft Information Protection (específicamente etiquetas de confidencialidad). Para obtener más información acerca de las tecnologías de cifrado de Microsoft, vea [Encryption](encryption.md). El contenido cifrado por tecnologías de cifrado de terceros no es compatible. Por ejemplo, no se admite la vista previa o exportación de contenido cifrado con tecnologías que no son de Microsoft.
+
+> [!NOTE]
+> El descifrado de mensajes de correo electrónico cifrados Cifrado de mensajes de Office 365 (OME) no es compatible con las herramientas de exhibición de documentos electrónicos de Microsoft.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>Actividades de exhibición de documentos electrónicos que admiten elementos cifrados
 

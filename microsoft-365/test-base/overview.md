@@ -1,6 +1,6 @@
 ---
 title: Información general
-description: Descripción de TEst Base
+description: Descripción de la base de pruebas
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2c8909215fd0cac0b262199d45eec343074de2e6
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 00399cbfaea79b3e1658988272c1bfb1ecbc2b5e
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53323025"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567013"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>¿Qué es Test Base para Microsoft 365? 
 
@@ -32,13 +32,13 @@ Con Test Base, se proporciona a los SV más visibilidad de posibles problemas qu
 
 Este nuevo servicio ayudará a los SV a hacer más sencillos y eficientes los esfuerzos de prueba. Enterprise clientes se beneficiarán de las pruebas de SV y Microsoft juntos en un entorno de colaboración y obtendrán más confianza en que sus aplicaciones funcionarán según lo esperado. 
 
-### <a name="advantages-test-base-offers-eenterprises-and-their-sv-partners-include"></a>Ventajas La base de pruebas ofrece Eenterprises y sus socios SV: 
+### <a name="advantages-test-base-offers-enterprises-and-their-sv-partners-include"></a>Ventajas La base de pruebas ofrece a las empresas y sus socios sv: 
  
   * Implementación más rápida de actualizaciones de seguridad para proteger los dispositivos; 
  
   * Se han reducido los costos de validación de actualización hospedando los cambios del sistema operativo y la aplicación en el mismo entorno; 
   
-  * Informe de inteligencia de clase mundial de Microsoft sobre sus aplicaciones (cobertura de código, análisis de impacto de api, etc.); 
+  * Informe de inteligencia de clase mundial de Microsoft sobre sus aplicaciones (cobertura de código, análisis de impacto de api, entre otros); 
   
   * Experiencia de Microsoft en el cambio de contenido de prueba y aprovechamientos a Azure. 
 
@@ -49,7 +49,7 @@ Esta guía se divide en cuatro (4) partes para garantizar una experiencia libre 
 
 1. Información **general** que proporciona instrucciones detalladas y paso a paso sobre cómo cargar la aplicación a través de nuestro portal de incorporación de autoservicio. 
 
-2. La **sección Inicios rápidos** que proporciona información sobre el formato de la estructura de carpetas comprimida y lo que necesita saber al preparar los scripts de prueba.
+2. La **sección Inicios rápidos,** que proporciona información sobre el formato de la estructura de carpetas comprimida y lo que necesita saber al preparar los scripts de prueba.
 
 3. Guía **de procedimientos que proporciona** un esquema detallado sobre cómo usar La base de pruebas para deducir los resultados de la prueba.
 

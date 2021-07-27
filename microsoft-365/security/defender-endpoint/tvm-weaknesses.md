@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8039a06dc58c31158f90d39857ffbeba92138d5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 072118551ec64f0b399e27f16d630e89d30342c7
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933078"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567145"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades
 
@@ -31,10 +31,10 @@ ms.locfileid: "51933078"
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Threat y administración de vulnerabilidades usa las mismas señales en Defender for Endpoint's endpoint protection para examinar y detectar vulnerabilidades.
 
@@ -50,12 +50,12 @@ En la página Puntos débiles se enumeran las vulnerabilidades de software a las
 
 Acceder a la página Puntos débiles de varias maneras diferentes:
 
-- Selección de **puntos débiles** en el menú Administración de amenazas y vulnerabilidades navegación de la [Centro de seguridad de Microsoft Defender](portal-overview.md)
+- Selección de **puntos débiles** en el menú de navegación **Administración** de vulnerabilidades en el [Microsoft 365 Defender portal] (portal-overview.md)
 - Búsqueda global
 
 ### <a name="navigation-menu"></a>Menú navegación
 
-Vaya al menú Administración de amenazas y vulnerabilidades navegación y seleccione **Puntos débiles** para abrir la lista de CVEs.
+Vaya al menú **de navegación Administración** de vulnerabilidades y seleccione Puntos **débiles** para abrir la lista de CVEs.
 
 ### <a name="vulnerabilities-in-global-search"></a>Vulnerabilidades en la búsqueda global
 
@@ -101,7 +101,7 @@ Las CVE para software que actualmente no son compatibles con amenazas & administ
 
 La información de dispositivo expuesta no estará disponible para las CVE con software no compatible. Filtre por software no compatible seleccionando la opción "No disponible" en la sección "Dispositivos expuestos".
 
- ![Filtro de dispositivos expuestos.](images/tvm-exposed-devices-filter.png)
+:::image type="content" alt-text="Filtro de dispositivos expuestos." source="images/tvm-exposed-devices-filter.png":::
 
 ## <a name="view-common-vulnerabilities-and-exposures-cve-entries-in-other-places"></a>Ver entradas de vulnerabilidades y exposiciones comunes (CVE) en otros lugares
 
@@ -112,7 +112,9 @@ La información de dispositivo expuesta no estará disponible para las CVE con s
     ![Tarjeta de software vulnerable superior con cuatro columnas: software, debilidades, amenazas, dispositivos expuestos.](images/tvm-top-vulnerable-software500.png)
 
 2. Seleccione el software que desea investigar para ir a una página de investigación.
+
 3. Seleccione la **pestaña Vulnerabilidades detectadas.**
+
 4. Seleccione la vulnerabilidad que desea investigar para obtener más información sobre los detalles de vulnerabilidad
 
     ![Windows Información general sobre server 2019.](images/windows-server-drilldown.png)
@@ -121,15 +123,17 @@ La información de dispositivo expuesta no estará disponible para las CVE con s
 
 Ver información de puntos débiles relacionados en la página del dispositivo.
 
-1. Ve a la barra Centro de seguridad de Microsoft Defender menú de navegación y, a continuación, selecciona el icono del dispositivo. Se **abre la página de lista** Dispositivos.
-2. En la **página de lista** Dispositivos, selecciona el nombre del dispositivo que quieras investigar.
+1. Ve a la barra Microsoft 365 Defender menú de navegación y, a continuación, selecciona el icono del dispositivo. Se **abre la página Inventario** de dispositivos.
+
+2. En la **página Inventario de** dispositivos, selecciona el nombre del dispositivo que quieras investigar.
 
     ![Lista de dispositivos con el dispositivo seleccionado para investigar.](images/tvm_machinetoinvestigate.png)
 
 3. La página del dispositivo se abrirá con detalles y opciones de respuesta para el dispositivo que quieras investigar.
+
 4. Seleccione **Vulnerabilidades detectadas**.
 
-    ![Página del dispositivo con detalles y opciones de respuesta.](images/tvm-discovered-vulnerabilities.png)
+   :::image type="content" alt-text="Página del dispositivo con detalles y opciones de respuesta." source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. Seleccione la vulnerabilidad que desea investigar para abrir un panel desplegable con los detalles de CVE, como: descripción de vulnerabilidad, información sobre amenazas y lógica de detección.
 
@@ -139,7 +143,7 @@ De forma similar a la evidencia de software, ahora mostramos la lógica de detec
 
 La categoría "Característica del sistema operativo" también se muestra en escenarios relevantes. Una CVE afectaría a los dispositivos que ejecutan un sistema operativo vulnerable solo si se habilita un componente del sistema operativo específico. Supongamos que Windows Server 2019 tiene vulnerabilidad en su componente DNS. Con esta nueva funcionalidad, solo adjuntaremos esta CVE a los dispositivos de Windows Server 2019 con la funcionalidad DNS habilitada en su sistema operativo.
 
-![Ejemplo de lógica de detección que enumera el software detectado en el dispositivo y los KB.](images/tvm-cve-detection-logic.png)
+:::image type="content" alt-text="Ejemplo de lógica de detección que enumera el software detectado en el dispositivo y los KB." source="images/tvm-cve-detection-logic.png":::
 
 ## <a name="report-inaccuracy"></a>Imprecisión de informe
 

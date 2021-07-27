@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 820edf268a3062754a4994b6ce6c60c40b9a4312
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932744"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587782"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "51932744"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 En alineación con la evolución de macOS, estamos preparando una actualización de Microsoft Defender para Endpoint en macOS que aprovecha las extensiones del sistema en lugar de las extensiones de kernel. Esta actualización solo se aplicará a macOS Catalina (10.15.4) y versiones más recientes de macOS.
 
@@ -42,7 +42,7 @@ Si has implementado Microsoft Defender para Endpoint en macOS en un entorno admi
 
 ## <a name="jamf"></a>JAMF
 
-### <a name="system-extensions-policy"></a>Directiva de extensiones del sistema
+### <a name="jamf-system-extensions-policy"></a>Directiva de extensiones del sistema JAMF
 
 Para aprobar las extensiones del sistema, cree la siguiente carga:
 
@@ -69,7 +69,7 @@ Agregue la siguiente carga de JAMF para conceder acceso en disco completo a Micr
 
 ### <a name="network-extension-policy"></a>Directiva de extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal Centro de seguridad de Microsoft Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal de Microsoft 365 Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 >[!NOTE]
 >JAMF no tiene compatibilidad integrada con directivas de filtrado de contenido, que son un requisito previo para habilitar las extensiones de red que Microsoft Defender para Endpoint en macOS instala en el dispositivo. Además, JAMF a veces cambia el contenido de las directivas que se implementan.
@@ -149,13 +149,13 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
     ```bash
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
-    
+
     Compruebe que el comando genera `OK` .
-        
+
     ```bash
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
     ```
-    
+
 3. Siga las instrucciones de [esta página para](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) crear un certificado de firma con la entidad de certificación integrada de JAMF.
 
 4. Después de crear e instalar el certificado en el dispositivo, ejecute el siguiente comando desde el Terminal para firmar el archivo:
@@ -163,18 +163,18 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
     ```bash
     $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
+
     Por ejemplo, si el nombre del certificado es **SigningCertificate** y el archivo firmado se va a almacenar en Documentos:
-    
+
     ```bash
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
+
 5. En el portal jamf, vaya a **Perfiles de configuración** y haga clic en **el botón Upload** configuración. Seleccione `com.microsoft.network-extension.signed.mobileconfig` cuando se le pida el archivo.
 
 ## <a name="intune"></a>Intune
 
-### <a name="system-extensions-policy"></a>Directiva de extensiones del sistema
+### <a name="intune-system-extensions-policy"></a>Directiva de extensiones del sistema de Intune
 
 Para aprobar las extensiones del sistema:
 
@@ -195,7 +195,7 @@ Para aprobar las extensiones del sistema:
 
 ### <a name="create-and-deploy-the-custom-configuration-profile"></a>Crear e implementar el perfil de configuración personalizado
 
-El siguiente perfil de configuración habilita la extensión de red y concede acceso en disco completo a la extensión del sistema endpoint security. 
+El siguiente perfil de configuración habilita la extensión de red y concede acceso en disco completo a la extensión del sistema endpoint security.
 
 Guarde el siguiente contenido en un archivo denominado **sysext.xml**:
 
@@ -305,10 +305,10 @@ sysext.xml: OK
 
 Para implementar este perfil de configuración personalizado:
 
-1.  En Intune, abra **Administrar configuración**  >  **de dispositivo.** Seleccione **Administrar**  >  **perfiles Crear**  >  **perfil**.
+1. En Intune, abra **Administrar configuración**  >  **de dispositivo.** Seleccione **Administrar**  >  **perfiles Crear**  >  **perfil**.
 2. Elija un nombre para el perfil. Cambiar **Platform=macOS** y **Profile type=Custom**. Seleccione **Configurar**.
-3.  Abra el perfil de configuración y cargue **sysext.xml**. Este archivo se creó en el paso anterior.
-4.  Seleccione **Aceptar**.
+3. Abra el perfil de configuración y cargue **sysext.xml**. Este archivo se creó en el paso anterior.
+4. Seleccione **Aceptar**.
 
     ![Extensión del sistema en la captura de pantalla de Intune](images/mac-system-extension-intune.png)
 

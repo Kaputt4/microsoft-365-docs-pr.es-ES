@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede agregar orígenes de datos que no son custodiados a Advanced eDiscovery caso y colocar una retención en el origen de datos. Los orígenes de datos que no son custodiados se reindexa, por lo que cualquier contenido que se marcó como parcialmente indizado se vuelve a procesar para que pueda realizar búsquedas de forma completa y rápida.
-ms.openlocfilehash: 467f0e1167bfebe21bd3f2bbd52acd81529b8685
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: 097b054bdcc1dc37f74f86703ac8d7061b76ebba
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740357"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567265"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Agregar orígenes de datos sin custodia a un Advanced eDiscovery caso
 
@@ -43,7 +43,7 @@ Siga estos pasos para agregar y administrar orígenes de datos sin custodia en u
    - **Exchange:** haga clic **en Editar** para agregar buzones. Escriba un nombre o alias (un mínimo de tres caracteres) en el cuadro de búsqueda de buzones o grupos de distribución. Seleccione los buzones que desea agregar como orígenes de datos no custodios y haga clic en **Agregar**.
 
    > [!NOTE]
-   > Puede usar las secciones **SharePoint** y **Exchange** para agregar sitios y buzones asociados con un grupo de servidores o Yammer como orígenes de datos sin custodia. Debe agregar por separado el buzón y el sitio asociados con un grupo de Yammer grupo.
+   > Puede usar las secciones **SharePoint** y **Exchange** para agregar sitios y buzones asociados con un grupo de servidores o Yammer como orígenes de datos sin custodia. Debe agregar por separado el buzón y el sitio asociados con un grupo de Yammer grupo.<br/><br/> Además, no se admite la adición de una dirección URL de sitio raíz (como o ) como un `https://contoso-my.sharepoint.com/personal/` `https://contoso-my.sharepoint.com/` SharePoint de datos. Debe agregar sitios específicos.
 
 4. Después de agregar orígenes de datos sin custodia, tiene la opción de poner esas ubicaciones en espera o no. Active o anule la selección **de la casilla De** retención situada junto al origen de datos para colocarla en espera.
 

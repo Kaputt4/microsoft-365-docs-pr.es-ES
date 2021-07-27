@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: df1a032ffab0490c41edc7d282f0f2cc60608870
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 830a744ff2552cda2e974867920bceab77763e91
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289684"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590712"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso Alert
 
@@ -30,7 +30,7 @@ ms.locfileid: "53289684"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -123,7 +123,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_136
     ],
     "relatedUser": {
         "userName": "temp123",
-        "domainName": "MIDDLEEAST"
+        "domainName": "DOMAIN"
     },
     "comments": [
         {
@@ -153,8 +153,8 @@ GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_136
             "registryHive": null,
             "registryValueType": null,
             "registryValue": null,
-            "accountName": "eranb",
-            "domainName": "MIDDLEEAST",
+            "accountName": "name",
+            "domainName": "DOMAIN",
             "userSid": "S-1-5-21-11111607-1111760036-109187956-75141",
             "aadUserId": "11118379-2a59-1111-ac3c-a51eb4a3c627",
             "userPrincipalName": "temp123@microsoft.com",

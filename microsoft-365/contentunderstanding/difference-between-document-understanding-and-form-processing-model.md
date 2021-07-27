@@ -3,7 +3,7 @@ title: Diferencias entre los modelos de comprensión de documentos y los modelos
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Describe las diferencias clave entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
-ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Obtenga información sobre la diferencia clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
+ms.openlocfilehash: 929d7f248607b052aa8f41d08a2fbdee7a53fa6f
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706515"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578462"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
 
@@ -55,6 +55,10 @@ Los modelos de comprensión mediante documentos se crean y administran en un sit
 Los modelos de procesamiento de formularios se crean en el generador de IA [AI Builder](/ai-builder/overview) de PowerApps, pero la creación se inicia directamente desde una biblioteca de documentos de SharePoint. Una biblioteca de documentos debe tener habilitada la creación de un modelo de procesamiento de formularios antes de que un usuario pueda crear un modelo de procesamiento de formularios para ella. Los administradores pueden habilitar la creación de modelos de procesamiento de formularios en la configuración de administrador de comprensión de contenido. Los modelos de procesamiento de formularios usan flujos de PowerAutomate para procesar archivos cuando se cargan en la biblioteca de documentos.
 
 Cuando se crea modelo de comprensión mediante documentos, se crea un nuevo [tipo de contenido de SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) que se guarda en la galería de tipos de contenido de SharePoint. También puede usar tipos de contenido existentes para definir el modelo, si es necesario.
+
+Una vez que se crea un tipo de contenido y se asocia a un modelo, también puede hacer referencia a ese modelo desde el panel de propiedades **Tipo de contenido del sitio**.
+
+![Captura de pantalla del panel Tipo de contenido del sitio que muestra el modelo de comprensión de documentos resaltado.](../media/content-understanding/site-content-type-panel.png)
 
 Los modelos de procesamiento de formularios también crean nuevos [Tipos de contenido de SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) y se almacenan en la galería de Tipos de contenido de SharePoint.
 

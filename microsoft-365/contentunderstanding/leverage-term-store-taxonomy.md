@@ -1,8 +1,9 @@
 ---
-title: Aprovechar la taxonomía del almacén de términos al crear un extractor
-ms.author: efrene
-author: efrene
+title: Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Use la taxonomía al crear un extractor en el modelo de comprensión mediante documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: b8dfc028e0a18f3345fec466ec5e0079ed2d11ce
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Use la taxonomía del almacén de términos al crear un extractor en el modelo de comprensión de documentos en Microsoft SharePoint Syntex.
+ms.openlocfilehash: ccc6b7d268a91d1febcbd760e8be560304c0e0d7
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925349"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578582"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft SharePoint Syntex
 
 </br>
 
@@ -44,7 +45,6 @@ Puede haber varios motivos por los que quiera usar un sinónimo en el conjunto d
 Para que el campo de metadatos administrados esté disponible para que lo seleccione cuando cree el extractor en el modelo, debe [agregarlo como una columna de sitio de metadatos administrados](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Después de agregar la columna de sitio, puede seleccionarla cuando cree el extractor para el modelo.
 
    ![Servicio de contrato](../media/content-understanding/contract-services.png)</br>
-
 
 Después de aplicar el modelo a la biblioteca de documentos, cuando los documentos se carguen en la biblioteca, en la columna *Servicios creativos* se mostrará el término preferido (*Creativo*) cuando el extractor encuentre cualquiera de los valores de los sinónimos (*Diseño*, *Gráficos* y *Topografía*).
 

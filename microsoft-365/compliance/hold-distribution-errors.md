@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Solucionar errores relacionados con las retenciones legales aplicadas a custodios y orígenes de datos no custodiados en eDiscovery principal.
-ms.openlocfilehash: b101bf92c6a304262b3886a4ce0280f427a4a847
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3e5cc6351d5026feda560bee646a1e6a03475ee2
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538476"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578522"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>Solución de problemas de suspensión de eDiscovery
 
@@ -36,7 +36,7 @@ Para reducir el número de errores relacionados con las retenciones de exhibici�
 - Compruebe si una directiva de retención está pendiente antes de realizar más actualizaciones. Ejecute los siguientes comandos o guárdelos en un script de PowerShell.
 
     ```powershell
-    $status = Get-CaseHoldPolicy -Identity <policyname> 
+    $status = Get-CaseHoldPolicy -Identity <policyname> -DistributionDetail
     if($status.DistributionStatus -ne "Pending"){
         # policy no longer pending
         Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user1

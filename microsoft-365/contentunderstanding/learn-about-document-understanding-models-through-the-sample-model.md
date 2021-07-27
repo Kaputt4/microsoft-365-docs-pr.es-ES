@@ -1,8 +1,9 @@
 ---
 title: Obtenga información sobre los modelos de comprensión mediante documentos con el modelo de ejemplo
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Obtenga información sobre los modelos de comprensión mediante documentos con el modelo de ejemplo
-ms.openlocfilehash: f455e1ec854b4f9a6eea3fa6560ae5390892a640
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+description: Obtenga información sobre los modelos de comprensión de documentos a través del modelo de ejemplo.
+ms.openlocfilehash: 9d8c4d7d241c9de49c0e6d64cc585edb6b67419b
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976416"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578558"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>Obtenga información sobre los modelos de comprensión mediante documentos con un modelo de ejemplo
 
@@ -47,6 +48,6 @@ No solo puede analizar el modelo de ejemplo para comprender mejor cómo se crea 
 
 [Crear un extractor](create-an-extractor.md)
 
-[Información general de la comprensión mediante documentos](document-understanding-overview.md)
+[Información general sobre la comprensión de los documentos](document-understanding-overview.md)
 
 [Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)  

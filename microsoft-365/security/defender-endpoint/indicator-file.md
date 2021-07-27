@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e119898a457be2ceb6dd78ca7831e26dc93ee85f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 535a729a56c5841eb6591ec34ac934c0446fefbd
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542686"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587710"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -33,7 +33,7 @@ ms.locfileid: "53542686"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Impedir la propagación posterior de un ataque en la organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso. Si conoce un archivo ejecutable portátil (PE) potencialmente malintencionado, puede bloquearlo. Esta operación evitará que se lea, se escriba o se ejecute en dispositivos de la organización.
 
@@ -59,8 +59,7 @@ Esta característica está diseñada para evitar que el malware sospechoso (o lo
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Crear un indicador para archivos desde la página de configuración
 
-1. En el panel de navegación, **seleccione Configuración**  >  **indicadores** de puntos de  > 
- **conexión** (en **Reglas**).
+1. En el panel de navegación, **seleccione Configuración** \> **indicadores** de puntos de \> **conexión** (en **Reglas**).
 
 2. Seleccione la **pestaña Hashes de**   archivo.
 
@@ -79,30 +78,26 @@ Una de las opciones al realizar acciones [de respuesta en un archivo](respond-
 
 Los archivos bloqueados automáticamente por un indicador no aparecerán en el Centro de acciones del archivo, pero las alertas seguirán estando visibles en la cola de alertas.
 
->[!IMPORTANT]
+> [!IMPORTANT]
+>
 >- Normalmente, los bloques de archivos se aplican y se quitan en un par de minutos, pero pueden tardar más de 30 minutos.
-> 
->- Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro. Una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo SHA-1, que ganará una directiva de IoC de hash de archivo MD5 si los tipos hash definen el mismo archivo. Esto siempre es así independientemente del grupo de dispositivos. 
->   En todos los demás casos, si las directivas de IoC de archivos en conflicto con el mismo destino de aplicación se aplican a todos los dispositivos y al grupo del dispositivo, en el caso de un dispositivo, la directiva del grupo de dispositivos ganará. 
->   
->- Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la `EnableFileHashComputation` habilitación puede afectar al rendimiento del dispositivo. Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
+>
+>- Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro. Una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo SHA-1, que ganará una directiva de IoC de hash de archivo MD5 si los tipos hash definen el mismo archivo. Esto siempre es así independientemente del grupo de dispositivos.
+>  En todos los demás casos, si las directivas de IoC de archivos en conflicto con el mismo destino de aplicación se aplican a todos los dispositivos y al grupo del dispositivo, en el caso de un dispositivo, la directiva del grupo de dispositivos ganará.
+>
+> - Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la `EnableFileHashComputation` habilitación puede afectar al rendimiento del dispositivo. Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
 >
 >   Para obtener más información acerca de la directiva de grupo EnableFileHashComputation, vea [Defender CSP](/windows/client-management/mdm/defender-csp)
 
-## <a name="policy-conflict-handling"></a>Control de conflictos de directivas  
+## <a name="policy-conflict-handling"></a>Control de conflictos de directivas
 
 Los conflictos de administración de directivas de Cert y File IoC seguirán el siguiente orden:
 
 - Si el archivo no está permitido por Windows Defender control de aplicaciones y AppLocker aplican directivas o directivas de modo, **bloquee**
-
 - Si el archivo está permitido por la exclusión Antivirus de Microsoft Defender, **permitir**
-
 - De lo contrario, si un bloqueo o un archivo de advertencia bloquean o advierten el archivo IoC, **bloquee o advierte el archivo.**
-
 - De lo contrario, si el archivo está permitido por una directiva de IoC de archivo de permitido, **permitir**
-
-- De lo contrario, si el archivo está bloqueado por reglas ASR, CFA, AV, SmartScreen y, a continuación, **Bloquear**  
-
+- De lo contrario, si el archivo está bloqueado por reglas ASR, CFA, AV, SmartScreen y, a continuación, **Bloquear**
 - Else **Allow** (pasa Windows Defender control de & directiva de AppLocker, no se aplica ninguna regla de IoC)
 
 Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro (es decir, más largo). Por ejemplo, una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo MD5 si ambos tipos de hash definen el mismo archivo.
@@ -111,13 +106,13 @@ Las características de aplicación vulnerables de bloqueo de amenazas y adminis
 
 ### <a name="examples"></a>Ejemplos
 
-|Componente |Aplicación de componentes |Indicador de archivo Acción |Resultado
-|--|--|--|--|
-|Exclusión de ruta de acceso de archivo de reducción de superficie de ataque |Permitir |Bloquear |Bloquear
-|Regla de reducción de superficie de ataque |Bloquear |Permitir |Permitir
-|Control de aplicaciones de Windows Defender |Permitir |Bloquear |Permitir |
-|Control de aplicaciones de Windows Defender |Bloquear |Permitir |Bloquear
-|Antivirus de Microsoft Defender exclusión |Permitir |Bloquear |Permitir
+|Componente|Aplicación de componentes|Indicador de archivo Acción|Resultado
+|---|---|---|---|
+|Exclusión de ruta de acceso de archivo de reducción de superficie de ataque|Permitir|Bloquear|Bloquear
+|Regla de reducción de superficie de ataque|Bloquear|Permitir|Permitir
+|Control de aplicaciones de Windows Defender|Permitir|Bloquear|Permitir
+|Control de aplicaciones de Windows Defender|Bloquear|Permitir|Bloquear
+|Antivirus de Microsoft Defender exclusión|Permitir|Bloquear|Permitir
 
 ## <a name="see-also"></a>Vea también
 

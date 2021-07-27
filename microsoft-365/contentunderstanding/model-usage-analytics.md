@@ -1,8 +1,9 @@
 ---
-title: Análisis de uso del modelo de comprensión mediante documentos
-ms.author: efrene
-author: efrene
+title: Documentación sobre el análisis de modelos en Microsoft SharePoint Syntex.
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Obtenga información sobre cómo aplicar una etiqueta de retención en un modelo de comprensión mediante documentos
-ms.openlocfilehash: 92115d8b1985fa84cd72671442aca18f255355de
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+description: Obtenga información sobre cómo buscar y usar el análisis de uso para un modelo de comprensión de documentos.
+ms.openlocfilehash: 5eca389519dbab7038ef774d8f096e61017d0155
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080443"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578546"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>Análisis de uso del modelo de comprensión mediante documentos
+# <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Documentación sobre el análisis de modelos en Microsoft SharePoint Syntex.
 
 </br>
 
@@ -28,7 +29,7 @@ ms.locfileid: "50080443"
 </br>
 
 
-El centro de contenido de Microsoft SharePoint Syntex proporciona análisis de uso de modelos para obtener más información sobre cómo se usan los modelos que se publicaron desde el centro de contenido. En la sección <b>Resultados de los modelos en los últimos 30 días</b> del centro de contenido se incluye un resumen de 30 días de datos de análisis de uso proporcionados en los siguientes gráficos y listas:
+Su centro de contenido de SharePoint Syntex proporciona el análisis de uso de modelos para obtener más información sobre cómo se usan los modelos que se publicaron desde el centro de contenido. En la sección <b>Resultados de los modelos en los últimos 30 días</b> del centro de contenido se incluye un resumen de 30 días de datos de análisis de uso proporcionados en los siguientes gráficos y listas:
 
 - Clasificación por modelo
 - Clasificación por biblioteca

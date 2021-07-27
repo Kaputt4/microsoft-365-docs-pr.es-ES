@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: af22bac911339de9c2e02df24a77c1889a33d43a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fa9986d9ddab70f050055ce2e3b98357c2ab22c5
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933738"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567157"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -32,10 +32,10 @@ ms.locfileid: "51933738"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Las debilidades de seguridad cibernética identificadas en su organización se asignan a recomendaciones de seguridad que se pueden usar y se priorizan por su impacto. Las recomendaciones prioritarias ayudan a acortar el tiempo para mitigar o corregir las vulnerabilidades e impulsar el cumplimiento.
 
@@ -52,13 +52,13 @@ Cada dispositivo de la organización se puntua en función de tres factores impo
 
 - **Probabilidad de vulneración:** la posición de seguridad y resistencia de la organización frente a las amenazas
 
-- **Valor empresarial:** activos, procesos críticos y propiedades intelectuales de la organización
+- **Valor empresarial:** los activos, los procesos críticos y las propiedades intelectuales de la organización
 
 ## <a name="navigate-to-the-security-recommendations-page"></a>Vaya a la página Recomendaciones de seguridad
 
 Acceda a la página Recomendaciones de seguridad de varias maneras diferentes:
 
-- Amenaza y administración de vulnerabilidades menú de navegación en el [Centro de seguridad de Microsoft Defender](portal-overview.md)
+- Amenaza y administración de vulnerabilidades menú de navegación en el [portal Microsoft 365 Defender navegación](portal-overview.md)
 - Recomendaciones de seguridad principales en el [Administración de amenazas y vulnerabilidades panel](tvm-dashboard-insights.md)
 
 Vea las recomendaciones de seguridad relacionadas en los siguientes lugares:
@@ -68,7 +68,7 @@ Vea las recomendaciones de seguridad relacionadas en los siguientes lugares:
 
 ### <a name="navigation-menu"></a>Menú navegación
 
-Vaya al menú Administración de amenazas y vulnerabilidades navegación y seleccione **Recomendaciones de seguridad**. La página contiene una lista de recomendaciones de seguridad para las amenazas y vulnerabilidades encontradas en su organización.
+Vaya al menú **de navegación Administración de** vulnerabilidades y seleccione **Recomendaciones**. La página contiene una lista de recomendaciones de seguridad para las amenazas y vulnerabilidades encontradas en su organización.
 
 ### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>Recomendaciones de seguridad principales en el Administración de amenazas y vulnerabilidades panel
 
@@ -100,7 +100,7 @@ Los iconos útiles también llaman rápidamente la atención sobre:
 
 Seleccione la recomendación de seguridad que desea investigar o procesar.
 
-![Ejemplo de una página desplegable de recomendación de seguridad.](images/secrec-flyouteolsw.png)
+:::image type="content" alt-text="Ejemplo de una página desplegable de recomendación de seguridad." source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
 
 En el menú desplegable, puede elegir cualquiera de las siguientes opciones:
 

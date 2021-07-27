@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c0544665ea4e9b1ceafa645a2dcc96a224b0c242
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f52b13f4e671b6bfe2e5c46be5df4c5efddc499c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843955"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567115"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Requisitos & permisos: Administración de amenazas y vulnerabilidades
 
@@ -30,35 +30,41 @@ ms.locfileid: "52843955"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Asegúrese de que los dispositivos:
 
 - Están incorporados a Microsoft Defender para endpoint
+
 - Ejecutar [sistemas operativos y plataformas compatibles](tvm-supported-os.md)
+
 - Haga que las siguientes actualizaciones obligatorias se instalen e implementen en la red para aumentar las tasas de detección de la evaluación de vulnerabilidades:
 
-> Versión | Número y vínculo kb de actualización de seguridad
-> :---|:---
-> Windows 10 Versión 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) y [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-> Windows 10 Versión 1803 | [KB4493464](https://support.microsoft.com/help/4493464) y [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
-> Windows 10 Versión 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
-> Windows 10 Versión 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+  > Liberar | Número y vínculo kb de actualización de seguridad
+  > :---|:---
+  > Windows 10 Versión 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) y [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+  > Windows 10 Versión 1803 | [KB4493464](https://support.microsoft.com/help/4493464) y [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+  > Windows 10 Versión 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+  > Windows 10 Versión 1903 | [Kb 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
 - Se incorpora a [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) para ayudar a corregir las amenazas encontradas por Administración de amenazas y vulnerabilidades. Si usa Configuration Manager, actualice la consola a la versión más reciente.
-    - **Nota:** Si tienes habilitada la conexión de Intune, obtienes una opción para crear una tarea de seguridad de Intune al crear una solicitud de corrección. Esta opción no aparece si la conexión no está establecida.
+
+  > [!NOTE]
+  > Si tienes habilitada la conexión de Intune, obtienes una opción para crear una tarea de seguridad de Intune al crear una solicitud de corrección. Esta opción no aparece si la conexión no está establecida.
+
 - Tener al menos una recomendación de seguridad que se pueda ver en la página del dispositivo
+
 - Se etiquetan o se marcan como administrados de forma co-administrada
 
 ## <a name="relevant-permission-options"></a>Opciones de permisos relevantes
 
-1. Inicie sesión en Centro de seguridad de Microsoft Defender cuenta con un administrador de seguridad o un rol de administrador global asignado.
-2. En el panel de navegación, **seleccione Configuración > Roles**.
+1. Inicie sesión en el portal Microsoft 365 Defender con una cuenta con un administrador de seguridad o un rol de administrador global asignado.
+2. En el panel de navegación, **seleccione Configuración > Endpoints > Roles**.
 
-Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md)
+Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
 
 ### <a name="view-data"></a>Ver datos
 

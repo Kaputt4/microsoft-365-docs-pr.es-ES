@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec8dd97a563edc487008d028a7cdc9f6ef3d17c1
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: b4ed79359d8d535ec47a287292cedf1d0520711e
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689090"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567193"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Mitigar vulnerabilidades de día cero: Administración de amenazas y vulnerabilidades
 
@@ -32,10 +32,10 @@ ms.locfileid: "52689090"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Una vulnerabilidad de día cero es una vulnerabilidad divulgada públicamente para la que no se han publicado revisiones oficiales ni actualizaciones de seguridad. Las vulnerabilidades de día cero suelen tener niveles de gravedad altos y se aprovechan activamente.
 
@@ -43,7 +43,7 @@ Las amenazas administración de vulnerabilidades solo mostrarán vulnerabilidade
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>Buscar información sobre vulnerabilidades de día cero
 
-Una vez que se haya encontrado una vulnerabilidad de día cero, la información sobre ella se transmitirá a través de las siguientes experiencias en el Centro de seguridad de Microsoft Defender.
+Una vez que se haya encontrado una vulnerabilidad de día cero, la información sobre ella se transmitirá a través de las siguientes experiencias en Microsoft 365 Defender portal.
 
 >[!NOTE]
 > La capacidad de vulnerabilidad de 0 días está disponible actualmente solo para Windows productos.
@@ -66,19 +66,19 @@ Busque la vulnerabilidad de día cero con nombre junto con una descripción y de
 
 - Si esta vulnerabilidad no tiene ningún identificador CVE asignado, lo encontrarás con un nombre interno y temporal que tenga el aspecto de "TVM-XXXX-XXXX". El nombre se actualizará una vez que se haya asignado un identificador CVE oficial, pero el nombre interno anterior aún se podrá buscar y se encontrará en el panel lateral.
 
-![Ejemplo de día cero para CVE-2020-17087 en la página de puntos débiles.](images/tvm-zero-day-weakness-name.png)
+:::image type="content" alt-text="Ejemplo de día cero para CVE-2020-17087 en la página de puntos débiles." source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### <a name="software-inventory-page"></a>Página de inventario de software
 
 Busque software con la etiqueta de día cero. Filtra por la etiqueta "día cero" para ver solo el software con vulnerabilidades de día cero.
 
-![Ejemplo de día cero Windows Server 2016 en la página de inventario de software.](images/tvm-zero-day-software-inventory.png)
+:::image type="content" alt-text="Ejemplo de día cero Windows Server 2016 en la página de inventario de software." source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### <a name="software-page"></a>Página de software
 
 Busque una etiqueta de día cero para cada software afectado por la vulnerabilidad de día cero.
 
-![Ejemplo de día cero para Windows Server 2016 de software.](images/tvm-zero-day-software-page.png)
+:::image type="content" alt-text="Ejemplo de día cero para Windows Server 2016 de software." source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### <a name="security-recommendations-page"></a>Página recomendaciones de seguridad
 
@@ -86,7 +86,7 @@ Vea sugerencias claras sobre las opciones de corrección y mitigación, incluida
 
 Si hay software con una vulnerabilidad de día cero y vulnerabilidades adicionales que solucionar, tendrás una recomendación sobre todas las vulnerabilidades.
 
-![Ejemplo de día cero Windows Server 2016 en la página de recomendaciones de seguridad.](images/tvm-zero-day-security-recommendation.png)
+:::image type="content" alt-text="Ejemplo de día cero Windows Server 2016 en la página de recomendaciones de seguridad." source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>Abordar vulnerabilidades de día cero
 

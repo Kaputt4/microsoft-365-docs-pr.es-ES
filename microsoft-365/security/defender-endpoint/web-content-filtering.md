@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 19423b1a52bc02768236e56a73ccefe71cfd7672
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861700"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567085"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -33,11 +33,11 @@ ms.locfileid: "52861700"
 
 > [!IMPORTANT]
 > **El filtrado de contenido web está actualmente en versión preliminar pública**<br>
-> Esta versión preliminar se proporciona sin un contrato de nivel de servicio y no se recomienda para cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan capacidades limitadas.
-> Para obtener más información, vea Características de vista previa [de Microsoft Defender para endpoint](preview.md).
+> Esta versión preliminar se proporciona sin un contrato de nivel de servicio y no se recomienda para cargas de trabajo de producción. Es posible que algunas características no se admitan o que tengan funcionalidades restringidas.
+> Para obtener más información, consulte [Características de versión preliminar de Microsoft Defender para punto de conexión](preview.md).
 
 > [!TIP]
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 El filtrado de contenido web forma parte de [las funciones de protección web](web-protection-overview.md) en Microsoft Defender para endpoint. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
 
@@ -60,7 +60,7 @@ La protección de red proporciona la experiencia de bloqueo de los exploradores 
 Antes de probar esta característica, asegúrese de cumplir los siguientes requisitos:
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5 complemento o la licencia independiente de Microsoft Defender para endpoint. 
-- Acceso a Centro de seguridad de Microsoft Defender portal ( https://securitycenter.windows.com) .
+- Acceso a Microsoft 365 Defender portal ( https://security.microsoft.com) .
 - Dispositivos que Windows 10 actualización de aniversario (versión 1607) o posterior con la actualización más reciente de MoCAMP.
 - Windows Defender SmartScreen y protección de red habilitadas.
 
@@ -71,11 +71,11 @@ Los datos se almacenan en la región seleccionada como parte de la configuració
 
 ## <a name="turn-on-web-content-filtering"></a>Activar el filtrado de contenido web
 
-En el menú de navegación izquierdo, **seleccione Configuración**  >  **General**  >  **Advanced Features**. Desplácese hacia abajo hasta que vea la entrada para el filtrado **de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
+En el menú de navegación de la izquierda, **seleccione Configuración**  >  **Endpoints**  >  **General**  >  **Advanced Features**. Desplácese hacia abajo hasta que vea la entrada para el filtrado **de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurar directivas de filtrado de contenido web
 
-Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las directivas, vaya a **Configuración** Reglas de filtrado  >    >  **de contenido web**.
+Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las directivas, vaya a **Configuración** filtrado de contenido web de puntos de conexión  >    >   (en **Reglas**).
 
 Usa el filtro para buscar directivas que contengan determinadas categorías bloqueadas o que se apliquen a grupos de dispositivos específicos.
 
@@ -102,7 +102,7 @@ Para agregar una nueva directiva:
 
 Es posible invalidar la categoría bloqueada en el filtrado de contenido web para permitir un solo sitio mediante la creación de una directiva de indicador personalizada. La directiva de indicador personalizado reemplazará la directiva de filtrado de contenido web cuando se aplique al grupo de dispositivos en cuestión.
 
-1. Para crear un indicador personalizado en el Centro de seguridad de Microsoft Defender, vaya a **Configuración**  >  **Indicadores**  >  **URL/Elemento agregar**  >  **dominio**.
+1. Para crear un indicador personalizado en el portal de Microsoft 365 Defender, vaya a **Configuración** Dirección URL de indicadores de puntos de  >    >    >  **conexión/Agregar**  >  **elemento de dominio**.
 
 2. Escriba el dominio del sitio.
 

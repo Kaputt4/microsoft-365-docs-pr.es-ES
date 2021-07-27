@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: 1db046d4001c2e8573b1e8bfb2274f9a58aaf3a3
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998793"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590784"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -33,7 +33,7 @@ ms.locfileid: "52998793"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Responda rápidamente a los ataques detectados deteniendo y anulando archivos o bloqueando un archivo. Después de realizar acciones en los archivos, puede comprobar los detalles de la actividad en el Centro de acciones.
 
@@ -144,9 +144,31 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 
 Si selecciona **Descargar archivo de** las acciones de respuesta, puede descargar un archivo local protegido con contraseña .zip que contenga el archivo. Aparecerá un flyout donde puede registrar un motivo para descargar el archivo y establecer una contraseña.
 
-De forma predeterminada, no podrá descargar archivos que estén en cuarentena.
+De forma predeterminada, debería poder descargar archivos que se encuentran en cuarentena.
 
 ![Imagen de la acción de archivo de descarga](images/atp-download-file-action.png)
+
+### <a name="download-quarantined-files"></a>Descargar archivos en cuarentena
+
+Los archivos que han sido puestos en cuarentena por Antivirus de Microsoft Defender o el equipo de seguridad se guardarán de forma compatible de acuerdo con las configuraciones [de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md). El equipo de seguridad puede descargar los archivos directamente desde la página de detalles del archivo a través del botón "Descargar archivo". **Esta característica de vista previa está activada de forma predeterminada.**
+
+La ubicación depende de la configuración geográfica de su organización (UE, Reino Unido o EE. UU.). Un archivo en cuarentena solo se recopilará una vez por organización. Obtenga más información sobre la protección de datos de Microsoft desde el Portal de confianza de servicio en https://aka.ms/STP .
+
+Tener activada esta configuración puede ayudar a los equipos de seguridad a examinar archivos potencialmente no deseados e investigar incidentes de forma rápida y menos arriesgada. Sin embargo, si necesita desactivar esta configuración, vaya **a Configuración** Características avanzadas de extremos descargar archivos en cuarentena para  >    >    >   ajustar la configuración. [Más información sobre las características avanzadas](advanced-features.md)
+
+#### <a name="backing-up-quarantined-files"></a>Copia de seguridad de archivos en cuarentena
+
+Es posible que se pida a los usuarios que proporcionen un consentimiento explícito antes de realizar una copia de seguridad del archivo en cuarentena, según la [configuración de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
+
+Esta característica no funcionará si el envío de ejemplo está desactivado. Si se establece el envío automático de muestra para solicitar permiso al usuario, solo se recopilarán las muestras que el usuario acepte enviar.
+
+>[!IMPORTANT]
+>Descargar requisitos de archivos en cuarentena:
+>- Su organización usa Antivirus de Microsoft Defender en modo activo 
+>- La versión del motor antivirus es 1.1.17300.4 o posterior. Ver [Versiones mensuales de la plataforma y el motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+>- La protección basada en la nube está habilitada. Consulte [Activar la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
+>- El envío de ejemplo está activado
+>- Los dispositivos Windows 10 versión 1703 o posterior, o Windows 2016 o 2019
 
 ### <a name="collect-files"></a>Recopilar archivos
 
@@ -189,7 +211,7 @@ También puede editar indicadores desde la **página Configuración,** en   >  *
 
 ## <a name="consult-a-threat-expert"></a>Consultar a un experto en amenazas
 
-Consulta a un experto en amenazas de Microsoft para obtener más información sobre un dispositivo potencialmente en peligro o dispositivos que ya están en peligro. Expertos en amenazas de Microsoft se contratan directamente desde dentro del Centro de seguridad de Microsoft Defender para una respuesta rápida y precisa. Los expertos proporcionan información sobre un dispositivo potencialmente comprometido y te ayudan a comprender las amenazas complejas y las notificaciones de ataque dirigidas. También pueden proporcionar información sobre las alertas o un contexto de inteligencia de amenazas que se ve en el panel del portal.
+Consulta a un experto en amenazas de Microsoft para obtener más información sobre un dispositivo potencialmente en peligro o dispositivos que ya están en peligro. Expertos en amenazas de Microsoft directamente desde el portal de Microsoft 365 Defender para obtener una respuesta rápida y precisa. Los expertos proporcionan información sobre un dispositivo potencialmente comprometido y te ayudan a comprender las amenazas complejas y las notificaciones de ataque dirigidas. También pueden proporcionar información sobre las alertas o un contexto de inteligencia de amenazas que se ve en el panel del portal.
 
 Consulte [Consulte a un experto en amenazas de Microsoft](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) para obtener más información.
 

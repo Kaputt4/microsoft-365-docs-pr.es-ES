@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b4b770733b9e62b39a07c8699619ac5f7d692ec5
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 0c94f0559a86eed8975f80b96ec3f0ff66a9d8e1
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327130"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587770"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigar actividades de administración de riesgos de insider
 
@@ -96,6 +96,18 @@ Según el número y el tipo de directivas activas de administración de riesgos 
 ## <a name="search-alerts-on-the-alert-dashboard"></a>Alertas de búsqueda en el panel de alertas
 
 Para buscar una palabra específica en el nombre de la alerta, seleccione el control **Búsqueda** y escriba la palabra que desea buscar. Los resultados de búsqueda muestran cualquier alerta de directiva que contenga la palabra definida en la búsqueda.
+
+## <a name="dismiss-multiple-alerts-preview"></a>Descartar varias alertas (versión preliminar)
+
+Puede ayudar a ahorrar tiempo de triaje para que los analistas e investigadores descarten inmediatamente varias alertas a la vez. La **opción de** la barra de comandos Descartar  alertas le permite seleccionar una o varias alertas con el estado Necesita revisión en el panel y descartar rápidamente estas alertas como benignas según corresponda en el proceso de evaluación. Puede seleccionar hasta 400 alertas para descartar a la vez.
+
+Para descartar una alerta de riesgo de insider, siga estos pasos:
+
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
+2. En el **panel De alertas,** seleccione la alerta (o alertas) con el estado Necesita *revisión* que desea descartar.
+3. En la barra de comandos Alertas, seleccione **Descartar alertas**.
+4. En el **panel de detalles** Descartar alertas, puede revisar los detalles de usuario y directiva asociados con las alertas seleccionadas.
+5. Seleccione **Descartar alertas** para resolver las alertas como benignas o **seleccione Cancelar** para cerrar el panel de detalles sin descartar las alertas.
 
 ## <a name="triage-alerts"></a>Alertas de triaje
 

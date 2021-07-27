@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eed208da92f7e196cc71dab4e9d32e5666f3f6a4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5f65712fb3d1148d53361b97c75817792bedc198
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844207"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567061"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -32,11 +32,11 @@ ms.locfileid: "52844207"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-La protección web en Microsoft Defender para endpoint es una funcionalidad de protección contra amenazas [web](web-threat-protection.md) y filtrado [de contenido web.](web-content-filtering.md) La protección web te permite proteger los dispositivos contra amenazas web y te ayuda a regular el contenido no deseado. Puede encontrar informes de protección web en el Centro de seguridad de Microsoft Defender, vaya **a Informes > protección web**.
+La protección web en Microsoft Defender para endpoint es una funcionalidad de protección contra amenazas [web](web-threat-protection.md) y filtrado [de contenido web.](web-content-filtering.md) La protección web te permite proteger los dispositivos contra amenazas web y te ayuda a regular el contenido no deseado. Para encontrar informes de protección web en el portal de Microsoft 365 Defender, vaya a **Informes > protección web**.
 
-![Imagen de todas las tarjetas de protección web](images/web-protection.png)
+:::image type="content" alt-text="Imagen de todas las tarjetas de protección web" source="images/web-protection.png" lightbox="images/web-protection.png":::
 
 ## <a name="web-threat-protection"></a>Protección contra amenazas web
 

@@ -1,8 +1,9 @@
 ---
-title: Información general del procesamiento de formularios
-ms.author: efrene
-author: efrene
+title: Resumen del procesamiento de formularios en Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,20 +13,20 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Más información sobre el procesamiento de formularios en Microsoft SharePoint Syntex
-ms.openlocfilehash: e3cf8298a2db9383e5b88dde737efc84e75c7f19
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: d6cd129c3e52287a45bec6f91ddf8ecbda2af758
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222262"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578570"
 ---
-# <a name="form-processing-overview"></a>Información general del procesamiento de formularios
+# <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Resumen del procesamiento de formularios en Microsoft SharePoint Syntex
 
  ![Generador de IA](../media/content-understanding/ai-builder.png)</br>
 
 Microsoft SharePoint Syntex usa el procesamiento de formularios del [generador de IA](/ai-builder/overview) de Microsoft PowerApps para crear modelos en las bibliotecas de documentos de SharePoint.
 
-Puede usar el procesamiento de formularios del generador de IA para crear modelos de IA que usan la tecnología de aprendizaje automático para identificar y extraer pares de valor-clave y datos de tabla de documentos estructurados o semiestructurados, como formularios y facturas.
+Puede usar el procesamiento de formularios de AI Builder para crear modelos de IA que utilicen tecnología de aprendizaje automático para identificar y extraer pares clave-valor y datos de tablas de documentos estructurados o semiestructurados, como formularios y facturas.
 
 La mayoría de las organizaciones suelen recibir facturas en grandes cantidades y de una gran variedad de orígenes, como correo, fax, correo electrónico, etc. Procesar estos documentos y añadirlos manualmente a una base de datos puede suponer un tiempo considerable. Mediante el uso de IA para extraer el texto, los pares clave o de valor y las tablas de los documentos, el procesamiento de formularios automatiza este proceso. 
 
