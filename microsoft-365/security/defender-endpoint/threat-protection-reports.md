@@ -1,5 +1,5 @@
 ---
-title: Informe de protección contra amenazas en Microsoft Defender para endpoint
+title: Informe de protección contra amenazas en Microsoft Defender para punto de conexión
 description: Realizar un seguimiento de las detecciones de alertas, categorías y gravedad con el informe de protección contra amenazas
 keywords: detección de alertas, origen, alerta por categoría, gravedad de alerta, clasificación de alertas, determinación
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d32ab04f4acda60f65316719a4607c6c9bbd6447
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0c9c7dcbdcfb708763646f53ba52f825512e92a9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688986"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619416"
 ---
-# <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Informe de protección contra amenazas en Microsoft Defender para endpoint
+# <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Informe de protección contra amenazas en Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51688986"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 El informe de protección contra amenazas proporciona información de alto nivel sobre las alertas generadas en la organización. El informe incluye información de tendencias que muestra los orígenes de detección, categorías, gravedades, estados, clasificaciones y determinaciones de alertas a lo largo del tiempo.
 
@@ -46,10 +46,10 @@ Sección | Descripción
 1 | Tendencias de alertas
 2 | Resumen de alertas
 
-## <a name="alert-trends"></a>Tendencias de alerta
+## <a name="alert-trends"></a>Tendencias de alertas
 De forma predeterminada, las tendencias de alerta muestran información de alerta del período de 30 días que termina en el último día completo. Para obtener una mejor perspectiva de las tendencias que se producen en su organización, puede ajustar el período de informes ajustando el período de tiempo que se muestra. Para ajustar el período de tiempo, seleccione un intervalo de tiempo en las opciones desplegables:
 
-- 30 días
+- 30 días
 - 3 meses
 - 6 meses
 - Personalizado
@@ -80,9 +80,6 @@ El informe está hecho de tarjetas que muestran los siguientes atributos de aler
 
 - **Clasificación & determinación:** muestra cómo ha clasificado las alertas tras la resolución, si las ha clasificado como amenazas reales (alertas verdaderas) o como detecciones incorrectas (alertas falsas). Estas tarjetas también muestran la determinación de alertas resueltas, lo que proporciona información adicional como los tipos de amenazas reales encontradas o las actividades legítimas que se detectaron incorrectamente.
 
-
- 
-
 ## <a name="filter-data"></a>Filtrar datos
 
 Use los filtros proporcionados para incluir o excluir alertas con determinados atributos.
@@ -92,9 +89,9 @@ Use los filtros proporcionados para incluir o excluir alertas con determinados a
 
 Por ejemplo, para mostrar solo datos sobre alertas de gravedad alta:
 
-1. En **Filters > Severity**, seleccione **High**
+1. En **Incidentes & alertas de**  >    >  **alertas Filtra > gravedad**, seleccione **Alta**.
 2. Asegúrese de que todas las demás opciones en **Gravedad** están deseleccionados.
-3. Seleccione **Aplicar**. 
+3. Seleccione **Aplicar**.
 
 ## <a name="related-topic"></a>Tema relacionado
-- [Informe de cumplimiento y estado del dispositivo](machine-reports.md)
+- [Cumplimiento normativo y estado del dispositivo](machine-reports.md)

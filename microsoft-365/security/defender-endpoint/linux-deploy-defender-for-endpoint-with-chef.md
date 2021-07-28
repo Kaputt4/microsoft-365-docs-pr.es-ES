@@ -16,40 +16,46 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aa699aae24b1e6383f5a2afbe7fce31e0f53805c
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: d842c715071792e5c86272d3624e340288d71d9b
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903933"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618876"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Implementar Defender para punto de conexión en Linux con Chef
 
-Antes de empezar:
+Antes de comenzar: instale descomprimir si aún no está instalado.
 
-- Instale descomprimir si aún no está instalado. Los componentes de Chef ya están instalados y existe un repositorio de Chef (chef generar repositorio ) para almacenar el libro de recetas que se usará para implementar en Defender for Endpoint en servidores Linux administrados por <reponame> Chef.
+Los componentes de Chef ya están instalados y existe un repositorio de Chef (chef generar repositorio ) para almacenar el libro de recetas que se usará para implementar en Defender for Endpoint en servidores Linux administrados por \<reponame\> Chef.
 
-Puede crear un nuevo libro de recetas en el repositorio existente ejecutando el siguiente comando desde dentro de la carpeta de libros de recetas que se encuentra en el repositorio de chef:</br>
-`chef generate cookbook mdatp`
+Puede crear un nuevo libro de recetas en el repositorio existente ejecutando el siguiente comando desde dentro de la carpeta de libros de recetas que se encuentra en el repositorio de chef:
 
-Este comando creará una nueva estructura de carpetas para el nuevo libro de recetas denominado mdatp.  También puede usar un libro de recetas existente si ya tiene uno que desea usar para agregar la implementación de MDE.
+```bash
+chef generate cookbook mdatp
+```
+
+Este comando creará una nueva estructura de carpetas para el nuevo libro de recetas denominado mdatp. También puede usar un libro de recetas existente si ya tiene uno que desea usar para agregar la implementación de MDE.
 Después de crear el libro de recetas, cree una carpeta de archivos dentro de la carpeta del libro de recetas que acaba de crear:
 
-`mkdir mdatp/files`
+```bash
+mkdir mdatp/files
+```
 
 Transfiera el archivo zip de incorporación de linux server que se puede descargar desde el portal de Centro de seguridad de Microsoft Defender a esta nueva carpeta de archivos.
 
 En la estación de trabajo de Chef, vaya a la carpeta mdatp/recipes. Esta carpeta se crea cuando se generó el libro de recetas. Use el editor de texto preferido (como vi o nano) para agregar las siguientes instrucciones al final del archivo default.rb:
--   include_recipe '::onboard_mdatp'
+
+- include_recipe '::onboard_mdatp'
 - include_recipe '::install_mdatp'
 
 A continuación, guarde y cierre el archivo default.rb.
+
 A continuación, cree un nuevo archivo de receta denominado install_mdatp.rb en la carpeta recipes y agregue este texto al archivo:
 
 ```powershell
-
-#Add Microsoft Defender   
-Repo  
+#Add Microsoft Defender
+Repo
 case node['platform_family']
 when 'debian'
  apt_repository 'MDAPRepo' do
@@ -83,10 +89,9 @@ end
 ```
 
 Deberá modificar el número de versión, la distribución y el nombre del repositorio para que coincida con la versión en la que está implementando y el canal que desea implementar.
-A continuación, debe crear un onboard_mdatp.rb en la carpeta mdatp/recipies.  Agregue el texto siguiente a ese archivo:
+A continuación, debe crear un onboard_mdatp.rb en la carpeta mdatp/recipies. Agregue el texto siguiente a ese archivo:
 
 ```powershell
-
 #Create MDATP Directory
 mdatp = "/etc/opt/microsoft/mdatp"
 zip_path = "/path/to/chef-repo/cookbooks/mdatp/files/WindowsDefenderATPOnboardingPackage.zip"
@@ -110,8 +115,8 @@ end
 
 Asegúrese de actualizar el nombre de la ruta de acceso a la ubicación del archivo de incorporación.
 Para probar la implementación en la estación de trabajo de Chef, simplemente ejecute ``sudo chef-client -z -o mdatp`` .
-Después de la implementación, debe considerar la posibilidad de crear e implementar un archivo de configuración en los servidores según establecer preferencias para  [Microsoft Defender para](/linux-preferences.md)endpoint en Linux .  
-Después de crear y probar el archivo de configuración, puede colocarlo en la carpeta cookbook/mdatp/files donde también colocó el paquete de incorporación.  A continuación, puede crear un archivo settings_mdatp.rb en la carpeta mdatp/recipies y agregar este texto:
+Después de la implementación, debe considerar la posibilidad de crear e implementar un archivo de configuración en los servidores según establecer preferencias para [Microsoft Defender para](/linux-preferences.md)endpoint en Linux .
+Después de crear y probar el archivo de configuración, puede colocarlo en la carpeta cookbook/mdatp/files donde también colocó el paquete de incorporación. A continuación, puede crear un archivo settings_mdatp.rb en la carpeta mdatp/recipies y agregar este texto:
 
 ```powershell
 #Copy the configuration file
@@ -127,7 +132,7 @@ end
 Para incluir este paso como parte de la receta, simplemente agregue include_recipe ":: settings_mdatp" al archivo default.rb dentro de la carpeta de recetas.
 También puede usar crontab para programar actualizaciones automáticas Programe una actualización [de Microsoft Defender para Endpoint (Linux).](linux-update-MDE-Linux.md)
 
-Desinstalar MDATP de recetas:
+Desinstalar el libro de recetas MDATP:
 
 ```powershell
 #Uninstall the Defender package
@@ -137,7 +142,7 @@ when 'debian'
    action :remove
  end
 when 'rhel'
- if node['platform_version'] <= 8 
+ if node['platform_version'] <= 8
 then
     yum_package "mdatp" do
       action :remove
@@ -149,4 +154,3 @@ then
  end
 end
 ```
-

@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7826229ba67384137c033745a5b85e557fc9c4a7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 98e4c781f28f1a89eb3ba9878b65ef57d0e40ea8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933474"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619560"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigar un dominio asociado a una alerta de Microsoft Defender para punto de conexión
 
@@ -34,7 +34,7 @@ ms.locfileid: "51933474"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink)
 
 Investigar un dominio para ver si los dispositivos y servidores de la red empresarial se han estado comunicando con un dominio malintencionado conocido.
 
@@ -82,7 +82,7 @@ Puede ver eventos de diferentes períodos de tiempo especificando las fechas en 
 5. Hacer clic en cualquiera de los nombres de dispositivo te llevará a la vista de ese dispositivo, donde puedes seguir investigando alertas, comportamientos y eventos notificados.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender](alerts-queue.md)
+- [Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión](alerts-queue.md)
 - [Administrar alertas de Microsoft Defender para puntos de conexión](manage-alerts.md)
 - [Investigar alertas de punto de conexión de Microsoft Defender](investigate-alerts.md)
 - [Investigar un archivo asociado a una alerta de Microsoft Defender para punto de conexión](investigate-files.md)

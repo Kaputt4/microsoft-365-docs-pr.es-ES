@@ -1,5 +1,5 @@
 ---
-title: Propiedades y métodos estáticos.
+title: Propiedades y métodos estáticos
 description: Recupera las alertas más recientes.
 keywords: apis, api de gráficos, api admitidas, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd7aa2af2c7500bbe02108bb8aa5dee452ff2998
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 35a78870f3b1ecbe1d15790c033db1b59bf93a83
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771602"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621564"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso Recomendación
 
@@ -30,7 +30,7 @@ ms.locfileid: "52771602"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -61,9 +61,9 @@ recommendedVersion | Cadena | Versión recomendada
 recommendationCategory | Cadena | Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityStack
 subCategory | Cadena | Subcategoría recomendación
 severityScore | Doble | Posible impacto de la configuración en la puntuación segura de Microsoft para dispositivos de la organización (1-10)
-publicExploit | Boolean | La vulnerabilidad pública está disponible 
-activeAlert | Boolean | La alerta activa está asociada con esta recomendación
-associatedThreats | Colección string | El informe de análisis de amenazas está asociado a esta recomendación
+publicExploit | Booleano | La vulnerabilidad pública está disponible 
+activeAlert | Booleano | La alerta activa está asociada con esta recomendación
+associatedThreats | Colección de cadenas | El informe de análisis de amenazas está asociado a esta recomendación
 remediationType | Cadena | Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"
 Estado | Enum | Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"
 configScoreImpact | Doble | Impacto de puntuación segura de Microsoft para dispositivos

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1db046d4001c2e8573b1e8bfb2274f9a58aaf3a3
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 78d1f1eab2138fb53452d777027596dce12cb76a
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590784"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618828"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -51,12 +51,17 @@ También puede enviar archivos para un análisis profundo, para ejecutar el arch
 
 Algunas acciones requieren ciertos permisos. En la tabla siguiente se describe qué acción pueden realizar ciertos permisos en archivos ejecutables portátiles (PE) y que no son PE:
 
-| Permiso             | Archivos PE | Archivos que no son PE |
-| :--------------------- | :------: | :----------: |
-| Ver datos              |     X    |       X      |
-| Investigación de alertas   | &#x2611; |       X      |
-| Respuesta en directo básica    |     X    |       X      |
-| Respuesta en directo avanzada | &#x2611; |   &#x2611;   |
+<br>
+
+****
+
+|Permiso|Archivos PE|Archivos que no son PE|
+|:---------------------|:------:|:----------:|
+|Ver datos|X|X|
+|Investigación de alertas|&#x2611;|X|
+|Respuesta en directo básica|X|X|
+|Respuesta en directo avanzada|&#x2611;|&#x2611;|
+|
 
 Para obtener más información sobre los roles, vea [Create and manage roles for role-based access control](user-roles.md).
 
@@ -83,7 +88,7 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
 1. Seleccione el archivo que desea detener y poner en cuarentena. Puede seleccionar un archivo de cualquiera de las siguientes vistas o usar el cuadro De búsqueda:
 
    - **Alertas:** haga clic en los vínculos correspondientes de la línea de tiempo Descripción o Detalles de la escala de tiempo del artículo de alerta
-   - **Cuadro de búsqueda:** **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
+   - **Cuadro de** búsqueda: **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
 
    > [!NOTE]
    > La acción de detener y poner en cuarentena el archivo está limitada a un máximo de 1000 dispositivos. Para detener un archivo en un mayor número de dispositivos, vea [Agregar indicador para bloquear o permitir el archivo](#add-indicator-to-block-or-allow-a-file).
@@ -97,7 +102,7 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
    ![Imagen de la ventana modal del archivo de detenerse y poner en cuarentena](images/atp-stop-quarantine.png)
 
    El Centro de acciones muestra la información de envío:
-   
+
    ![Imagen del centro de acciones de archivos de detenerse y poner en cuarentena](images/atp-stopnquarantine-file.png)
 
    - **Tiempo de envío:** muestra cuándo se envió la acción.
@@ -107,7 +112,8 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
 
 4. Seleccione cualquiera de los indicadores de estado para ver más información sobre la acción. Por ejemplo, seleccione **Error** al ver dónde falló la acción.
 
-**Notificación en el usuario del dispositivo:**</br>
+#### <a name="notification-on-device-user"></a>Notificación en el usuario del dispositivo
+
 Cuando se quita el archivo de un dispositivo, se muestra la siguiente notificación:
 
 ![Imagen de notificación en el usuario del dispositivo](images/atp-notification-file.png)
@@ -124,12 +130,12 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 
    1. Vaya a **Inicio** y escriba _cmd_.
 
-   1. Haga clic con el **botón secundario en Símbolo del sistema** y seleccione Ejecutar como **administrador.**
+   1. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
 2. Escriba el siguiente comando y presione **Entrar**:
 
-   ```console
-   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+   ```dos
+   "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
    ```
 
    > [!NOTE]
@@ -197,6 +203,7 @@ Impedir la propagación posterior de un ataque en la organización mediante la p
 ### <a name="enable-the-block-file-feature"></a>Habilitar la característica de archivo de bloqueo
 
 Para empezar a bloquear archivos, primero debe activar la característica [ **Bloquear**](advanced-features.md) o permitir en Configuración.
+
 ### <a name="allow-or-block-file"></a>Permitir o bloquear archivo
 
 Cuando agregas un hash de indicador para un archivo, puedes elegir generar una alerta y bloquear el archivo siempre que un dispositivo de la organización intente ejecutarlo.
@@ -241,10 +248,11 @@ El resumen de análisis profundo incluye una lista de *comportamientos observado
 
 Los resultados del análisis profundo se comparan con la inteligencia de amenazas y cualquier coincidencia generará alertas adecuadas.
 
-Use la característica de análisis profundo para investigar los detalles de cualquier archivo, normalmente durante una investigación de una alerta o por cualquier otro motivo en el que sospeche un comportamiento malintencionado. Esta característica está disponible en la **pestaña Análisis profundo,** en la página de perfil del archivo.<br/>
-<br/>
+Use la característica de análisis profundo para investigar los detalles de cualquier archivo, normalmente durante una investigación de una alerta o por cualquier otro motivo en el que sospeche un comportamiento malintencionado. Esta característica está disponible en la **pestaña Análisis profundo,** en la página de perfil del archivo.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
+<br/><br/>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
 **Enviar** para análisis profundo está habilitado cuando el archivo está disponible en la colección de muestras back-end de Defender for Endpoint, o si se observó en un dispositivo Windows 10 que admite el envío a un análisis profundo.
 
@@ -262,7 +270,7 @@ También puedes enviar un ejemplo a través del Portal del Centro de seguridad d
 
     - **Alertas:** seleccione los vínculos de archivo de **la línea de tiempo Descripción** o **Detalles** de la línea de tiempo de artículo de alerta
     - **Lista dispositivos:** seleccione los vínculos de archivo de la **sección Descripción** o **Detalles** de la sección Dispositivo **en la** organización
-    - **Cuadro de búsqueda:** **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
+    - **Cuadro de** búsqueda: **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
 
 2. En la **pestaña Análisis profundo** de la vista archivo, seleccione **Enviar**.
 
@@ -304,18 +312,18 @@ Si encuentra un problema al intentar enviar un archivo, pruebe cada uno de los s
 
 4. Si la directiva de colección de ejemplo no está configurada, el comportamiento predeterminado es permitir la colección de muestras. Si está configurado, compruebe que la configuración de directiva permite la colección de muestras antes de enviar el archivo de nuevo. Cuando se configura la colección de ejemplo, compruebe el siguiente valor del Registro:
 
-    ```console
+    ```text
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
     Hexadecimal value :
-      Value = 0 – block sample collection
-      Value = 1 – allow sample collection
+      Value = 0 - block sample collection
+      Value = 1 - allow sample collection
     ```
 
-1. Cambie la unidad organizativa a través de la directiva de grupo. Para obtener más información, vea [Configure with Group Policy](configure-endpoints-gp.md).
+5. Cambie la unidad organizativa a través de la directiva de grupo. Para obtener más información, vea [Configure with Group Policy](configure-endpoints-gp.md).
 
-1. Si estos pasos no resuelven el problema, póngase en [contacto winatp@microsoft.com](mailto:winatp@microsoft.com).
+6. Si estos pasos no resuelven el problema, póngase en [contacto winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## <a name="related-topics"></a>Temas relacionados
 

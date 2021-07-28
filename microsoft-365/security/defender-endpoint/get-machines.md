@@ -16,12 +16,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d52e1b69311c26144684b90545e17934d1223332
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 17bf0ecf778dbf4dd651f5145b5963929df75af3
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287860"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621660"
 ---
 # <a name="list-machines-api"></a>ENUMERAR API de máquinas
 
@@ -29,38 +29,42 @@ ms.locfileid: "53287860"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Descripción de la API
-Recupera una colección de [máquinas](machine.md) que se han comunicado con Microsoft Defender para la nube de extremo.
-<br>Admite [consultas de OData V4](https://www.odata.org/documentation/).
-<br>La consulta de OData `$filter` se admite en: `computerDnsName` , , , y `lastSeen` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .
-<br>Vea ejemplos en [consultas de OData con Defender para endpoint](exposed-apis-odata-samples.md)
 
+Recupera una colección de [máquinas](machine.md) que se han comunicado con Microsoft Defender para la nube de extremo.
+
+Admite [consultas de OData V4](https://www.odata.org/documentation/).
+
+La consulta de OData `$filter` se admite en: `computerDnsName` , , , y `lastSeen` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .
+
+Vea ejemplos en [consultas de OData con Defender para endpoint](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>Limitaciones
+
 1. Puedes obtener dispositivos vistos por última vez según el período de retención configurado.
 2. El tamaño máximo de página es 10.000.
 3. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora. 
 
-
 ## <a name="permissions"></a>Permisos
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Machine.Read.All |  'Leer todos los perfiles de máquina'
-Aplicación |   Machine.ReadWrite.All | 'Leer y escribir toda la información de la máquina'
-Delegado (cuenta profesional o educativa) | Machine.Read | 'Leer información de máquina'
-Delegado (cuenta profesional o educativa) | Machine.ReadWrite | 'Leer y escribir información de máquina'
+Aplicación|Machine.Read.All|'Leer todos los perfiles de máquina'
+Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
+Delegado (cuenta profesional o educativa)|Machine.Read|'Leer información de máquina'
+Delegado (cuenta profesional o educativa)|Machine.ReadWrite|'Leer y escribir información de máquina'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
->- La respuesta incluirá solo dispositivos a los que el usuario tenga acceso, en función de la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - La respuesta incluirá solo dispositivos a los que el usuario tenga acceso, en función de la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -70,21 +74,21 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
-Si se realiza correctamente y las máquinas existen: 200 Aceptar con una lista [de](machine.md) entidades de máquina en el cuerpo. Si no hay máquinas recientes: 404 No se encontró.
 
+Si se realiza correctamente y las máquinas existen: 200 Aceptar con una lista [de](machine.md) entidades de máquina en el cuerpo. Si no hay máquinas recientes: 404 No se encontró.
 
 ## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -92,7 +96,7 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
@@ -128,4 +132,5 @@ Content-type: application/json
 ```
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)

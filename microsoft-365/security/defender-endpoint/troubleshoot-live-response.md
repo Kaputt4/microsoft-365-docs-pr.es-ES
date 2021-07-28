@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 99a52188dd5f6eca2f8368aa3c114d0bfb950b10
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 7a8c37c6dbf387c338b3c28f8abaca89a104cefe
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844159"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619356"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Solucionar problemas de respuesta en directo de Microsoft Defender para puntos de conexión
 
@@ -31,16 +31,17 @@ ms.locfileid: "52844159"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 En esta página se proporcionan pasos detallados para solucionar problemas de respuesta en directo.
 
 ## <a name="file-cannot-be-accessed-during-live-response-sessions"></a>No se puede tener acceso al archivo durante las sesiones de respuesta en directo
+
 Si al intentar realizar una acción durante una sesión de respuesta en directo, se produce un mensaje de error que indica que no se puede tener acceso al archivo, deberá seguir los pasos siguientes para solucionar el problema.
 
 1. Copie el siguiente fragmento de código de script y guárdelo como un archivo PS1:
 
-    ```
+    ```powershell
     $copied_file_path=$args[0] 
     $action=Copy-Item $copied_file_path -Destination $env:TEMP -PassThru -ErrorAction silentlyContinue
         
@@ -55,19 +56,20 @@ Si al intentar realizar una acción durante una sesión de respuesta en directo,
     }
     ```
 
-
 2. Agregue el script a la biblioteca de respuestas en directo.
 3. Ejecute el script con un parámetro: la ruta de acceso del archivo que se va a copiar.
 4. Vaya a la carpeta TEMP.
 5. Ejecute la acción que desea realizar en el archivo copiado.
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>Retrasos o sesiones de respuesta en directo lentas durante las conexiones iniciales
+
 La respuesta en directo aprovecha el registro del sensor defender para puntos de conexión con el servicio WNS en Windows. Si tiene problemas de conectividad con la respuesta en directo, confirme los siguientes detalles:
+
 1. `notify.windows.com` no está bloqueado en el entorno. Para obtener más información, vea [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 2. WpnService (Windows del sistema de notificaciones de inserción) no está deshabilitado.
 
 Consulte los artículos siguientes para comprender completamente el comportamiento y los requisitos del servicio WpnService:
+
 - [Windows Introducción Notification Services inserción (WNS)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
 - [Enterprise Configuraciones de firewall y proxy para admitir tráfico de WNS](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
-- [Intervalos ip públicos del Servicio de notificaciones de inserción de Microsoft (MPNS)](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
-
+- [Intervalos ip públicos del Servicio de notificaciones de inserción de Microsoft (MPNS)](https://www.microsoft.com/download/details.aspx?id=44535)

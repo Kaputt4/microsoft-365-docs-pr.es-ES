@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c014447e51e5c5fcb96924e5e98c62f478a32ea7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 43fc03522f1783c74eb5b2874da6125881a3740d
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935034"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618954"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurar y validar exclusiones para Microsoft Defender para endpoint en macOS
 
@@ -34,37 +34,37 @@ ms.locfileid: "51935034"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 En este artículo se proporciona información sobre cómo definir exclusiones que se aplican a los exámenes a petición y la protección y supervisión en tiempo real.
 
->[!IMPORTANT]
->Las exclusiones descritas en este artículo no se aplican a otras funcionalidades de Defender para Endpoint en Mac, incluidas detección y respuesta de puntos de conexión (EDR). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones.
+> [!IMPORTANT]
+> Las exclusiones descritas en este artículo no se aplican a otras funcionalidades de Defender para Endpoint en Mac, incluidas detección y respuesta de puntos de conexión (EDR). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones.
 
 Puedes excluir determinados archivos, carpetas, procesos y archivos abiertos por proceso de los exámenes de Defender para Endpoint en Mac.
 
 Las exclusiones pueden ser útiles para evitar detecciones incorrectas en archivos o software que son únicos o personalizados para su organización. También pueden ser útiles para mitigar los problemas de rendimiento causados por Defender para Endpoint en Mac.
 
->[!WARNING]
->La definición de exclusiones reduce la protección ofrecida por Defender para Endpoint en Mac. Siempre debe evaluar los riesgos asociados con la implementación de exclusiones y solo debe excluir los archivos que confía en que no son malintencionados.
+> [!WARNING]
+> La definición de exclusiones reduce la protección ofrecida por Defender para Endpoint en Mac. Siempre debe evaluar los riesgos asociados con la implementación de exclusiones y solo debe excluir los archivos que confía en que no son malintencionados.
 
 ## <a name="supported-exclusion-types"></a>Tipos de exclusión admitidos
 
 En la tabla siguiente se muestran los tipos de exclusión admitidos por Defender para Endpoint en Mac.
 
-Exclusión | Definición | Ejemplos
+Exclusión|Definición|Ejemplos
 ---|---|---
-Extensión de archivo | Todos los archivos con la extensión, en cualquier lugar del equipo | `.test`
-Archivo | Un archivo específico identificado por la ruta de acceso completa | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Carpeta | Todos los archivos de la carpeta especificada (recursivamente) | `/var/log/`<br/>`/var/*/`
-Proceso | Un proceso específico (especificado por la ruta de acceso completa o el nombre de archivo) y todos los archivos abiertos por él | `/bin/cat`<br/>`cat`<br/>`c?t`
+Extensión de archivo|Todos los archivos con la extensión, en cualquier lugar del equipo|`.test`
+Archivo|Un archivo específico identificado por la ruta de acceso completa|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
+Folder|Todos los archivos de la carpeta especificada (recursivamente)|`/var/log/` <p> `/var/*/`
+Proceso|Un proceso específico (especificado por la ruta de acceso completa o el nombre de archivo) y todos los archivos abiertos por él|`/bin/cat` <p> `cat` <p> `c?t`
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:
 
-Carácter comodín | Descripción | Ejemplo | Coincidencias | No coincide
+Carácter comodín|Descripción|Ejemplo|Coincidencias|No coincide
 ---|---|---|---|---
-\* |    Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta) | `/var/*/*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
-? | Coincide con cualquier carácter | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+\*|Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+?|Coincide con cualquier carácter|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 >[!NOTE]
 >El producto intenta resolver vínculos de firma al evaluar exclusiones. La resolución de firmlink no funciona cuando la exclusión contiene caracteres comodín o el archivo de destino (en el `Data` volumen) no existe.

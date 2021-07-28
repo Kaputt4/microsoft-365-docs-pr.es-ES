@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo evitar que los invitados se agregó a un grupo específico
-ms.openlocfilehash: 1db2055f3e546c05905dbf4c854333387112f06e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 83fb123a3512e767270cf69f6ff56813e27903d4
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538932"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621744"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedir que los invitados se agregó a un grupo Microsoft 365 grupo o Microsoft Teams grupo
 
@@ -67,7 +67,22 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 La comprobación tiene este aspecto:
     
 ![Captura de pantalla de la ventana de PowerShell que muestra que el acceso de grupo invitado se ha establecido en false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
-  
+
+Si desea alternar la configuración de nuevo para permitir el acceso de invitado a un grupo determinado, ejecute el siguiente script, cambiando al nombre del grupo en el que desea permitir el acceso ```<GroupName>``` de invitado.
+
+```PowerShell
+$GroupName = "<GroupName>"
+
+Connect-AzureAD
+
+$template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
+$settingsCopy = $template.CreateDirectorySetting()
+$settingsCopy["AllowToAddGuests"]=$True
+$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
+$id = (get-AzureADObjectSetting -TargetType groups -TargetObjectId $groupID).id
+Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy -id $id
+```
+
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Permitir o bloquear el acceso de invitado en función de su dominio
 
 Puede permitir o bloquear invitados que usan un dominio específico. Por ejemplo, si su empresa (Contoso) tiene una asociación con otra empresa (Fabrikam), puede agregar Fabrikam a la lista Permitir para que los usuarios puedan agregar a esos invitados a sus grupos.
@@ -96,7 +111,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
-[Administrar la pertenencia a grupos en el centro Microsoft 365 administración](../admin/create-groups/add-or-remove-members-from-groups.md)
+[Administrar la pertenencia a grupos en el Centro de administración de Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
   
 [Azure Active Directory de acceso](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 

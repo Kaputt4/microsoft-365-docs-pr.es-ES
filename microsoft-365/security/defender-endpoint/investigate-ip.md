@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: cb95deb890b52f0f5fde26a3a193181713b8ae5f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9d204c7ad9aaecd077f2bce462d650a4cfdbf06e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933834"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619548"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigar una dirección IP asociada a una alerta de Microsoft Defender para punto de conexión
 
@@ -36,7 +36,7 @@ ms.locfileid: "51933834"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Examine la posible comunicación entre los dispositivos y las direcciones de protocolo de Internet externo (IP).
 
@@ -87,7 +87,7 @@ Hacer clic en cualquiera de los nombres de dispositivo te llevará a la vista de
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender](alerts-queue.md)
+- [Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión](alerts-queue.md)
 - [Administrar alertas de Microsoft Defender para puntos de conexión](manage-alerts.md)
 - [Investigar alertas de punto de conexión de Microsoft Defender](investigate-alerts.md)
 - [Investigar un archivo asociado a una alerta de Microsoft Defender para punto de conexión](investigate-files.md)

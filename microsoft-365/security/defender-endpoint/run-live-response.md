@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2a7daf18b1a1d791e7b92ded0a6b839bba1fd4c2
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 44047db74744514f9889a329aae992307fb85ac5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879765"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621792"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
@@ -38,7 +38,7 @@ ms.locfileid: "52879765"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -64,58 +64,53 @@ Ejecuta una secuencia de comandos de respuesta en directo en un dispositivo
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Get started](apis-intro.md).
 
-| Tipo de permiso                    | Permiso           | Nombre para mostrar de permisos                   |
-|------------------------------------|----------------------|-------------------------------------------|
-| Aplicación                        | Machine.LiveResponse | Ejecutar respuesta en directo en un equipo específico |
-| Delegado (cuenta profesional o educativa) | Machine.LiveResponse | Ejecutar respuesta en directo en un equipo específico |
+|Tipo de permiso|Permiso|Nombre para mostrar de permisos|
+|---|---|---|
+|Aplicación|Machine.LiveResponse|Ejecutar respuesta en directo en un equipo específico|
+|Delegado (cuenta profesional o educativa)|Machine.LiveResponse|Ejecutar respuesta en directo en un equipo específico|
 
 ## <a name="http-request"></a>Solicitud HTTP
 
 ```HTTP
-POST
-https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliveresponse
+POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliveresponse
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre      | Tipo | Descripción                 |
-|---------------|----------|---------------------------------|
-| Authorization | Cadena   | Portador\<token>\. Obligatorio.   |
-| Content-Type  | string   | application/json. Obligatorio. |
+|Nombre|Tipo|Descripción|
+|---|---|---|
+|Authorization|Cadena|Portador\<token>\. Obligatorio.|
+|Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-| Parámetro | Tipo | Description                                                        |
-|---------------|----------|------------------------------------------------------------------------|
-| Comentario       | Cadena   | Comentario para asociarlo a la acción.                                 |
-| Comandos      | Matriz    | Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile. |
+|Parámetro|Tipo|Descripción|
+|---|---|---|
+|Comentario|Cadena|Comentario para asociarlo a la acción.|
+|Comandos|Matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|
 
-Comandos:
+**Comandos**:
 
-| Tipo de comando | Parámetros                                                                          | Description                                                                                                                      |
-|------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| PutFile      | Clave: FileName  <br><br>  Valor: \<file name\>                                                                          | Coloca un archivo de la biblioteca en el dispositivo. Los archivos se guardan en una carpeta de trabajo y se eliminan cuando el dispositivo se reinicia de forma predeterminada.
-| RunScript    | Clave: ScriptName<br>Valor: \<Script from library\> <br><br> Clave: Args  <br> Valor: \<Script arguments\>                          | Ejecuta un script de la biblioteca en un dispositivo.    <br><br>  El parámetro Args se pasa al script. <br><br> Tiempo de espera después de 10 minutos.     
-| GetFile      | Clave: Ruta de acceso <br> Valor: \<File path\>                                                        | Recopilar archivo de un dispositivo. NOTA: Las barras diagonales inversas en la ruta de acceso deben ser de escape.                                                                      |
+|Tipo de comando|Parámetros|Description|
+|---|---|---|
+|PutFile|Clave: FileName <p> Valor: \<file name\>|Coloca un archivo de la biblioteca en el dispositivo. Los archivos se guardan en una carpeta de trabajo y se eliminan cuando el dispositivo se reinicia de forma predeterminada.
+|RunScript|Clave: ScriptName <br> Valor: \<Script from library\> <p> Clave: Args <br> Valor: \<Script arguments\>|Ejecuta un script de la biblioteca en un dispositivo. <p>  El parámetro Args se pasa al script. <p> Tiempo de espera después de 10 minutos.|
+|GetFile|Clave: Ruta de acceso <br> Valor: \<File path\>|Recopilar archivo de un dispositivo. NOTA: Las barras diagonales inversas en la ruta de acceso deben ser de escape.|
 
 ## <a name="response"></a>Respuesta
 
--   Si se realiza correctamente, este método devuelve 200, Ok.
-    Entidad Action. Si no se encontró el equipo con el identificador especificado: 404 No se encontró.
+- Si se realiza correctamente, este método devuelve 200, Ok.
+
+  Entidad Action. Si no se encontró el equipo con el identificador especificado: 404 No se encontró.
 
 ## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
 ```HTTP
-
-POST
-https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runliveresponse
-
-```
-**JSON**
+POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runliveresponse
 
 ```JSON
 {
@@ -148,7 +143,7 @@ https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e4
 }
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
@@ -206,11 +201,10 @@ Tipo de contenido: application/json
         }
     ]
 }
-
-
 ```
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Obtener API de acción de máquina](get-machineaction-object.md)
 - [Obtener resultado de respuesta en directo](get-live-response-result.md)
-- [Cancelar la acción del equipo](cancel-machine-action.md)
+- [Cancelar acción de máquina](cancel-machine-action.md)
