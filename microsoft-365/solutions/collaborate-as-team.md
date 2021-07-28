@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: c17732705c1d88ff70e56f5d26d9e268e3ff7c19
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9c05c91738f2cbb992d65aa147673e0f1a1ba8f4
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539268"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544474"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -51,7 +51,7 @@ Para establecer la configuración de colaboración externa
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**
 3. Haga clic en **Identidades externas**.
 4. En la pantalla **introducción**, en el panel de navegación izquierdo, haga clic en **Configuración de colaboración externa**.
-5. Asegúrese de que **Los administradores y usuarios con el rol de invitador pueden invitar** y **Los miembros pueden invitar** están establecidos en **Sí**.
+5. Asegúrese de que **usuarios miembros y usuarios asignados a roles de administrador específicos pueden invitar a usuarios invitados, incluidos los invitados con permisos de miembro** está seleccionado.
 6. Si ha realizado cambios, haga clic en **Guardar**.
 
 Fíjese en la configuración en la sección **Restricciones de colaboración**. Asegúrese de que los dominios de los invitados con los que quiere colaborar no están bloqueados.
@@ -75,7 +75,7 @@ Para establecer la configuración de acceso de invitados de Teams
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
 
-Una vez activado el acceso de invitado de Teams, de manera opcional puede controlar el acceso de invitado a equipos individuales y sus sitios de SharePoint asociados mediante etiquetas de confidencialidad. Para más información, consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
+Una vez activado el acceso de invitado de Teams, de manera opcional puede controlar el acceso de invitado a equipos individuales y sus sitios de SharePoint asociados mediante etiquetas de confidencialidad. Para más información, consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!NOTE]
 > La configuración de invitado de Teams puede tardar hasta veinticuatro horas en activarse después de activarla.

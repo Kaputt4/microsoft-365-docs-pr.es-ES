@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: a73d40e7569f934580b28976b5278b2a972066aa
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339495"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544606"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
@@ -64,7 +64,7 @@ Tendrás acceso a las próximas características sobre las que puedes proporcion
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 
-1. En el panel de navegación, **seleccione Configuración** Características avanzadas Características  >    >  **de vista previa**.
+1. En el panel de navegación, seleccione **Configuración**  >  **Endpoints**  >  **Advanced features** Preview  >  **features**.
 
 2. Alterna la configuración entre **Activar** y **Desactivar** y selecciona **Guardar preferencias**.
 

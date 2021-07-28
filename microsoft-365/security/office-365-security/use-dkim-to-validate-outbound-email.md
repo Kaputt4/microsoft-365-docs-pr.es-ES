@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9aa67d7875bb7f81c6569b56704d221b57378962
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: b5e852e26d1fc336a52255ea8fc7a90ab384c64c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108504"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544486"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -113,7 +113,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 > [!TIP]
 > Esta nueva clave de 2048 bits tendrá efecto en el RotateOnDate y mientras tanto enviará los mensajes de correo electrónico con la clave de 1024 bits. Después de cuatro días, puede volver a probar con la clave de 2048 bits (es decir, cuando la rotación surta efecto al segundo selector).
 
-Si desea rotar hasta el segundo selector, las opciones son: a) dejar que el servicio de Microsoft 365 rote el selector y actualice al valor de 2048 bits en los próximos 6 meses, o b) después de 4 días y de confirmar que se está utilizando el valor de 2048 bits, rote manualmente la clave del segundo selector por usando el cmdlet apropiado de los que se enumeran arriba.
+Si desea girar al segundo selector, después de cuatro días y confirmando que el valor de 2048 bits está en uso, gire manualmente la segunda clave de selector mediante el cmdlet adecuado indicado anteriormente.
 
 Para obtener información detallada sobre la sintaxis y los parámetros, vea los siguientes artículos: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig) y [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig).
 
@@ -208,6 +208,8 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
 
 5. Repita estos pasos para cada dominio personalizado.
 
+6. Si va a configurar DKIM por primera vez y ve el error "No hay claves DKIM guardadas para este dominio", tendrá que usar Windows PowerShell para habilitar la firma DKIM, como se explica en el paso siguiente.
+
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Para habilitar la firma DKIM para su dominio personalizado mediante PowerShell
 
 > [!IMPORTANT]
@@ -259,7 +261,7 @@ Si en algún momento en el futuro decide agregar otro dominio personalizado y qu
 ## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>Deshabilitación de la directiva de firmas DKIM para un dominio personalizado
 <a name="DisableDKIMSigningPolicy"> </a>
 
-Deshabilitar la directiva de firmas no deshabilita DKIM completamente. Después de un período de tiempo, Microsoft 365 aplicará automáticamente la directiva predeterminada para el dominio. Para más información sobre esta firma, consulte [Comportamiento predeterminado para DKIM y Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+Deshabilitar la directiva de firmas no deshabilita DKIM completamente. Después de un período de tiempo, Microsoft 365 aplicará automáticamente la directiva predeterminada para el dominio, si la directiva predeterminada sigue en estado habilitado. Si desea deshabilitar completamente DKIM, debe deshabilitar DKIM en los dominios personalizados y predeterminados. Para más información sobre esta firma, consulte [Comportamiento predeterminado para DKIM y Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Para deshabilitar la directiva de firmas DKIM mediante Windows PowerShell
 
@@ -294,9 +296,9 @@ Deshabilitar la directiva de firmas no deshabilita DKIM completamente. Después 
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>Comportamiento predeterminado para DKIM y Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Si no habilita DKIM, Microsoft 365 crea automáticamente una clave pública DKIM de 1024 bits para su dominio predeterminado y la clave privada asociada que se almacena internamente en nuestro centro de datos. De forma predeterminada, Microsoft 365 usa una configuración de firmas predeterminada para los dominios que no tienen una directiva local. Esto significa que si no configura DKIM, Microsoft 365 usará su política predeterminada y se creará la clave para habilitar DKIM para el dominio.
+Si no habilita DKIM, Microsoft 365 crea automáticamente una clave pública DKIM de 1024 bits para su dirección de enrutamiento de correo electrónico en línea de Microsoft (MOERA) / dominio inicial y la clave privada asociada que almacenamos internamente en nuestro centro de datos. De forma predeterminada, Microsoft 365 usa una configuración de firma predeterminada para los dominios que no tienen una política establecida. Esto significa que si no configura DKIM usted mismo, Microsoft 365 usará su política predeterminada y las claves que crea para habilitar DKIM para su dominio.
 
-Además, si deshabilita la firma DKIM después de habilitarla, después de un período de tiempo, Microsoft 365 aplicará automáticamente la directiva predeterminada para el dominio.
+Además, si deshabilita la firma DKIM en el dominio personalizado después de habilitarlo, después de un período de tiempo, Microsoft 365 aplicará automáticamente la directiva de dominio inicial o MOERA para el dominio personalizado.
 
 En el ejemplo siguiente, suponga que Microsoft 365 ha habilitado DKIM para fabrikam.com, no el administrador del dominio. Esto significa que los CNAME necesarios no existen en DNS. Las firmas DKIM para el correo electrónico de este dominio tendrán un aspecto similar al siguiente:
 

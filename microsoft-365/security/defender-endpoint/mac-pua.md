@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2d32dd96cd506ebf1752e48d2b7c66208b1abc11
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2cbe41bc06362a14b5e657e6385ec87684871340
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934542"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544618"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Detectar y bloquear aplicaciones potencialmente no deseadas con Microsoft Defender para endpoint en macOS
 
@@ -53,8 +53,8 @@ Cuando se detecta una PUA en un punto de conexión, Microsoft Defender para Endp
 La protección de PUA en Microsoft Defender para endpoint en macOS se puede configurar de una de las siguientes maneras:
 
 - **Desactivado:** la protección de LA PUA está deshabilitada.
-- **Auditoría:** los archivos PUA se notifican en los registros del producto, pero no en Centro de seguridad de Microsoft Defender. No se presenta ninguna notificación al usuario y el producto no hace ninguna acción.
-- **Bloquear:** los archivos PUA se notifican en los registros del producto y en Centro de seguridad de Microsoft Defender. El usuario recibe una notificación y el producto toma una acción.
+- **Auditoría:** los archivos PUA se notifican en los registros del producto, pero no en Microsoft 365 Defender portal. No se presenta ninguna notificación al usuario y el producto no hace ninguna acción.
+- **Bloquear:** los archivos PUA se notifican en los registros del producto y en Microsoft 365 Defender portal. El usuario recibe una notificación y el producto toma una acción.
 
 >[!WARNING]
 >De forma predeterminada, la protección pua está configurada en **modo auditoría.**

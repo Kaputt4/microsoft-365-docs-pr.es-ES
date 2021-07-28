@@ -107,12 +107,12 @@
 
 ##### [Implementar]()
 ###### [Implementar Microsoft Defender para punto de conexión en iOS a través de Intune](ios-install.md)
+###### [Implementar Microsoft Defender para punto de conexión en iOS para dispositivos no inscritos](ios-install-unmanaged.md)
 
 ##### [Configurar]()
 ###### [Configurar características de iOS](ios-configure-features.md)
 
-##### [Solucionar problemas]()
-###### [Preguntas más frecuentes y solución de problemas](ios-troubleshoot.md)
+##### [Preguntas más frecuentes y solución de problemas](ios-troubleshoot.md)
 
 ##### [Privacidad](ios-privacy.md)
 
@@ -239,6 +239,7 @@
 #### [Introducción a la reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)
 #### [Configurar capacidades de reducción de superficie de ataques](configure-attack-surface-reduction.md)
 #### [Obtener información sobre las reglas de reducción de superficie de los ataques](attack-surface-reduction.md)
+#### [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction-rules.md)
 #### [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
 #### [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
 #### [Personalizar las reglas de la reducción de superficie expuesta a ataques](customize-attack-surface-reduction.md)

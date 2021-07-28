@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e7148e666b7d96d6de328089fccc4bb444b9f502
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: e82f18b129963b254bf2120d444ce81e4e53e89d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594010"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544510"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -99,7 +99,7 @@ Todos los grupos de Azure AD creados como parte de estas recomendaciones deben c
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Requerir MFA en función del riesgo de inicio de sesión
 
-Debe hacer que los usuarios se registren en MFA antes de requerir su uso. Si tiene Microsoft 365 E5, Microsoft 365 E3 con el complemento seguridad E5, Office 365 con EMS E5 o licencias individuales de Azure AD Premium P2, puede usar la directiva de registro de MFA con Azure AD Identity Protection para requerir que los usuarios se registren en MFA. El [trabajo previo incluye](identity-access-prerequisites.md) registrar todos los usuarios con MFA.
+Debe hacer que los usuarios se registren en MFA antes de requerir su uso. Si tiene Microsoft 365 E5, Microsoft 365 E3 con el complemento seguridad E5, Office 365 con EMS E5 o licencias de Azure AD Premium P2 individuales, puede usar la directiva de registro de MFA con Azure AD Identity Protection para requerir que los usuarios se registren en MFA. El [trabajo previo incluye](identity-access-prerequisites.md) registrar todos los usuarios con MFA.
 
 Una vez registrados los usuarios, puede requerir MFA para iniciar sesión con una nueva directiva de acceso condicional.
 
@@ -112,7 +112,7 @@ En las tablas siguientes se describe la configuración de la directiva de acceso
 
 En la **sección Asignaciones:**
 
-|Configuración|Propiedades|Valores|Notas|
+|Valor|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -134,7 +134,7 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Valor|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Select|
 |||**Requerir autenticación multifactor**|Cheque|
@@ -155,7 +155,7 @@ Vea [este artículo](../../enterprise/microsoft-365-client-support-multi-factor-
 
 En la **sección Asignaciones:**
 
-|Configuración|Propiedades|Valores|Notas|
+|Valor|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -165,7 +165,7 @@ En la **sección Asignaciones:**
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Valor|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Select|
 ||**Exigir todos los controles seleccionados**||Select|
@@ -197,7 +197,7 @@ En la segunda **sección Asignaciones:**
 
 |Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Acceso|**Permitir acceso**||Select|
+|Access|**Permitir acceso**||Select|
 |||**Exigir cambio de contraseña**|Cheque|
 |
 
@@ -288,6 +288,71 @@ Para que las directivas de cumplimiento de dispositivos se implementen, deben as
 
 Para obtener instrucciones paso a paso sobre cómo crear directivas de cumplimiento en Intune, [consulte Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) en la documentación de Intune.
 
+### <a name="recommended-settings-for-ios"></a>Configuración recomendada para iOS
+
+iOS/iPadOS admite varios escenarios de inscripción, dos de los cuales se tratan como parte de este marco:
+
+- [Inscripción de dispositivos para dispositivos de](/mem/intune/enrollment/ios-enroll) propiedad personal: estos dispositivos son de propiedad personal y se usan para uso personal y laboral.
+- [Inscripción de dispositivos automatizada](/mem/intune/enrollment/device-enrollment-program-enroll-ios) supervisada para dispositivos de propiedad corporativa: estos dispositivos son de propiedad corporativa, están asociados con un solo usuario y se usan exclusivamente para el trabajo y no para uso personal.
+
+El marco de configuración de seguridad de iOS/iPadOS se organiza en varios escenarios de configuración distintos, lo que proporciona instrucciones para dispositivos de propiedad personal y supervisados.
+
+Para dispositivos de propiedad personal:
+
+- Seguridad básica (nivel 1): Microsoft recomienda esta configuración como la configuración de seguridad mínima para dispositivos personales en los que los usuarios tienen acceso a datos profesionales o educativos. Esto se realiza aplicando directivas de contraseña, características de bloqueo de dispositivos y deshabilitando determinadas funciones de dispositivo (por ejemplo, certificados que no son de confianza).
+- Seguridad mejorada (nivel 2): Microsoft recomienda esta configuración para dispositivos en los que los usuarios tienen acceso a información confidencial o confidencial. Esta configuración promulgó controles de uso compartido de datos. Esta configuración se aplica a la mayoría de los usuarios móviles que acceden a datos laborales o educativos en un dispositivo.
+- Alta seguridad (nivel 3): Microsoft recomienda esta configuración para dispositivos usados por usuarios o grupos específicos de alto riesgo (usuarios que manejan datos altamente confidenciales donde la divulgación no autorizada causa una pérdida considerable de material para la organización). Esta configuración aplica directivas de contraseñas más seguras, deshabilita determinadas funciones de dispositivo y aplica restricciones de transferencia de datos adicionales.
+
+Para dispositivos supervisados:
+
+- Seguridad básica (nivel 1): Microsoft recomienda esta configuración como la configuración de seguridad mínima para dispositivos supervisados en los que los usuarios tienen acceso a datos profesionales o educativos. Esto se realiza aplicando directivas de contraseña, características de bloqueo de dispositivos y deshabilitando determinadas funciones de dispositivo (por ejemplo, certificados que no son de confianza).
+- Seguridad mejorada (nivel 2): Microsoft recomienda esta configuración para dispositivos en los que los usuarios tienen acceso a información confidencial o confidencial. Esta configuración aprueba controles de uso compartido de datos y bloquea el acceso a dispositivos USB. Esta configuración se aplica a la mayoría de los usuarios móviles que acceden a datos laborales o educativos en un dispositivo.
+- Alta seguridad (nivel 3): Microsoft recomienda esta configuración para dispositivos usados por usuarios o grupos específicos de alto riesgo (usuarios que manejan datos altamente confidenciales donde la divulgación no autorizada causa una pérdida considerable de material para la organización). Esta configuración establece directivas de contraseña más sólidas, deshabilita determinadas funciones de dispositivo, aplica restricciones adicionales de transferencia de datos y requiere que las aplicaciones se instalen a través del programa de compra por volumen de Apple.
+
+Con los principios descritos en Configuraciones de identidad y acceso a [dispositivos,](microsoft-365-policies-configurations.md)los niveles de protección de línea base y protección confidencial se asignan estrechamente con la configuración de seguridad mejorada de nivel 2. El nivel de protección altamente regulado se asigna estrechamente a la configuración de alta seguridad de nivel 3.
+
+|Nivel de protección  |Directiva de dispositivos |Más información  |
+|---------|---------|---------|
+|Línea base     |Seguridad mejorada (nivel 2)         |La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.         |
+|Confidencial     |Seguridad mejorada (nivel 2)         |La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.         |
+|Altamente regulado     |Alta seguridad (nivel 3)         |La configuración de directiva aplicada en el nivel 3 incluye toda la configuración de directiva recomendada para los niveles 1 y 2 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 2.         |
+
+Para ver las recomendaciones específicas de cumplimiento de dispositivos y restricciones de dispositivos para cada nivel de configuración, revise el marco de configuración de seguridad de [iOS/iPadOS](/mem/intune/enrollment/ios-ipados-configuration-framework).
+
+### <a name="recommended-settings-for-android"></a>Configuración recomendada para Android
+
+Android Enterprise varios escenarios de inscripción, dos de los cuales se tratan como parte de este marco:
+
+- [Android Enterprise](/intune/android-work-profile-enroll) de trabajo: este modelo de inscripción se suele usar para dispositivos de propiedad personal, donde TI quiere proporcionar un límite de separación claro entre datos personales y laborales. Las directivas controladas por IT garantizan que los datos de trabajo no se puedan transferir al perfil personal.
+- [Android Enterprise totalmente](/intune/android-fully-managed-enroll) administrados: estos dispositivos son de propiedad corporativa, asociados con un único usuario y se usan exclusivamente para el trabajo y no para uso personal.
+
+El marco de configuración Enterprise seguridad de Android se organiza en varios escenarios de configuración distintos, lo que proporciona instrucciones para los escenarios de perfil de trabajo y totalmente administrados.
+
+Para dispositivos Enterprise de perfil de trabajo de Android:
+
+- Seguridad básica del perfil de trabajo (nivel 1): Microsoft recomienda esta configuración como la configuración de seguridad mínima para dispositivos personales en los que los usuarios tienen acceso a datos profesionales o educativos. Esta configuración presenta los requisitos de contraseña, separa los datos profesionales y personales y valida la atestación del dispositivo Android.
+- Seguridad alta del perfil de trabajo (nivel 3): Microsoft recomienda esta configuración para dispositivos usados por usuarios o grupos específicos de alto riesgo (usuarios que manejan datos altamente confidenciales donde la divulgación no autorizada causa una pérdida considerable de material a la organización). Esta configuración presenta la defensa contra amenazas móviles o Microsoft Defender para Endpoint, establece la versión mínima de Android, establece directivas de contraseña más seguras y restringe aún más la separación personal y laboral.
+
+Para dispositivos android Enterprise totalmente administrados:
+
+- Seguridad básica totalmente administrada (nivel 1): Microsoft recomienda esta configuración como la configuración de seguridad mínima para un dispositivo de empresa. Esta configuración se aplica a la mayoría de los usuarios móviles que acceden a datos laborales o educativos. Esta configuración presenta los requisitos de contraseña, establece la versión mínima de Android y establece ciertas restricciones de dispositivo.
+- Seguridad mejorada totalmente administrada (nivel 2): Microsoft recomienda esta configuración para dispositivos donde los usuarios tienen acceso a información confidencial o confidencial. Esta configuración aprueba directivas de contraseña más sólidas y deshabilita las capacidades de usuario/cuenta.
+- Alta seguridad totalmente administrada (nivel 3): Microsoft recomienda esta configuración para dispositivos usados por usuarios o grupos específicos que son de riesgo exclusivo (usuarios que administran datos altamente confidenciales donde la divulgación no autorizada causa una pérdida considerable de material para la organización). Esta configuración aumenta la versión mínima de Android, presenta la defensa contra amenazas móviles o Microsoft Defender para endpoint y aplica restricciones de dispositivos adicionales.
+
+Con los principios descritos en Las configuraciones de identidad y acceso a [dispositivos,](microsoft-365-policies-configurations.md)los niveles de protección de línea base y protección confidencial se asignan estrechamente con la seguridad básica de nivel 1 para dispositivos de propiedad personal y la configuración de seguridad mejorada de nivel 2 para dispositivos totalmente administrados. El nivel de protección altamente regulado se asigna estrechamente a la configuración de alta seguridad de nivel 3.
+
+Para dispositivos Enterprise de perfil de trabajo de Android:
+
+|Nivel de protección  |Directiva de dispositivos |Más información  |
+|---------|---------|---------|
+|Línea base     |Perfil de trabajo: seguridad básica (nivel 1)      |N/D         |
+|Confidencial     |Perfil de trabajo: seguridad básica (nivel 1)         |N/D         |
+|Línea base     |Totalmente administrado: seguridad mejorada (nivel 2)       |La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.         |
+|Confidencial     |Totalmente administrado: seguridad mejorada (nivel 2)         |La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.         |
+|Altamente regulado     |Alta seguridad (nivel 3)         |La configuración de directiva aplicada en el nivel 3 incluye toda la configuración de directiva recomendada para los niveles 1 y 2 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 2.         |
+
+Para ver las recomendaciones específicas de cumplimiento de dispositivos y restricciones de dispositivos para cada nivel de [configuración,](/mem/intune/enrollment/android-configuration-framework)revise el marco de configuración de seguridad de Android Enterprise .
+
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Configuración recomendada para Windows 10 y versiones posteriores
 
 Se recomiendan las siguientes opciones de configuración para equipos que ejecutan Windows 10 y versiones posteriores, tal como se configura en paso **2: Configuración** de cumplimiento , del proceso de creación de directivas.
@@ -331,7 +396,7 @@ Para **Seguridad del sistema,** consulte esta tabla.
 
 |Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
-|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medio|Select|
+|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mediano|Select|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)
@@ -349,9 +414,9 @@ Para requerir equipos compatibles:
 
 6. En **Asignaciones,** elija **Aplicaciones o acciones en la nube.**
 
-7. En **Incluir**, elija **Seleccionar aplicaciones > Seleccionar** y, a continuación, seleccione las aplicaciones deseadas en la lista Aplicaciones **en** la nube. Por ejemplo, seleccione Exchange Online. Elija **Seleccionar** cuando haya terminado.
+7. En **Incluir**, elija **Seleccionar aplicaciones > Seleccionar** y, a continuación, seleccione las aplicaciones deseadas en la lista Aplicaciones **en** la nube. Por ejemplo, seleccione Office 365. Elija **Seleccionar** cuando haya terminado.
 
-8. Para requerir equipos compatibles (pero no teléfonos y tabletas compatibles), en **Asignaciones,** **elija Condiciones > Plataformas de dispositivos**. Seleccione **Sí** para **Configurar**. Elija **Seleccionar plataformas de** dispositivo, **Windows** **y macOS** y, a continuación, elija **Listo**.
+8. Para requerir equipos compatibles (pero no teléfonos y tabletas compatibles), en **Asignaciones,** **elija Condiciones > Plataformas de dispositivos**. Seleccione **Sí** para **Configurar**. Elija  **Seleccionar plataformas de dispositivo,** **seleccione Sí** y **cualquier** dispositivo y, en Excluir, seleccione **iOS** y **Android** y, a continuación, elija **Listo**.
 
 9. En **Controles de Access,** elija **Conceder** .
 
@@ -375,7 +440,7 @@ Para requerir el cumplimiento de todos los dispositivos:
 
 6. En **Asignaciones,** elija **Aplicaciones o acciones en la nube.**
 
-7. En **Incluir**, elija **Seleccionar aplicaciones > Seleccionar** y, a continuación, seleccione las aplicaciones deseadas en la lista Aplicaciones **en** la nube. Por ejemplo, seleccione Exchange Online. Elija **Seleccionar** cuando haya terminado.
+7. En **Incluir**, elija **Seleccionar aplicaciones > Seleccionar** y, a continuación, seleccione las aplicaciones deseadas en la lista Aplicaciones **en** la nube. Por ejemplo, seleccione Office 365. Elija **Seleccionar** cuando haya terminado.
 
 8. En **Controles de Access,** elija **Conceder** .
 

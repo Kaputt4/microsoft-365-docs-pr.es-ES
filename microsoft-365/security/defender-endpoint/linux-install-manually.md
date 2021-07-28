@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c4ed845a31f044e17c97e0b43adfc86dd3f68ba
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: aa653b7f40be232c345f21ec00f7fadb60a4af0a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454810"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544654"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -165,6 +165,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
+
     Por ejemplo, si ha elegido *canal prod:*
 
     ```bash
@@ -211,12 +212,14 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     # list all repositories
     yum repolist
     ```
+
     ```Output
     ...
     packages-microsoft-com-prod               packages-microsoft-com-prod        316
     packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
     ...
     ```
+
     ```bash
     # install the package from the production repository
     sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
@@ -240,7 +243,9 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
     XX | packages-microsoft-com-prod | microsoft-prod | ...
     ...
+
     ```
+
     ```bash
     sudo zypper install packages-microsoft-com-prod:mdatp
     ```
@@ -256,10 +261,12 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```bash
     cat /etc/apt/sources.list.d/*
     ```
+
     ```Output
     deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
     deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
     ```
+
     ```bash
     sudo apt -t bionic install mdatp
     ```
@@ -289,11 +296,11 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-
 
 ## <a name="client-configuration"></a>Configuración de clientes
 
@@ -305,12 +312,10 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
     mdatp health --field org_id
     ```
 
-2. Ejecute MicrosoftDefenderATPOnboardingLinuxServer.py. 
-   
-    >[!NOTE]
-    >Para ejecutar este comando, debes haber `python` instalado en el dispositivo. Si estás ejecutando RHEL 8.x o Ubuntu 20.04 o posterior, deberás usar Python 3 en lugar de Python.
+2. Ejecute MicrosoftDefenderATPOnboardingLinuxServer.py.
 
-
+    > [!NOTE]
+    > Para ejecutar este comando, debes haber `python` instalado en el dispositivo. Si estás ejecutando RHEL 8.x o Ubuntu 20.04 o posterior, deberás usar Python 3 en lugar de Python.
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -330,9 +335,11 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
     > [!IMPORTANT]
     > Cuando el producto se inicia por primera vez, descarga las definiciones de antimalware más recientes. Según la conexión a Internet, esto puede tardar unos minutos. Durante este tiempo, el comando anterior devuelve un valor de `false` . Puede comprobar el estado de la actualización de definiciones con el siguiente comando:
+    >
     > ```bash
     > mdatp health --field definitions_status
     > ```
+    >
     > Tenga en cuenta que es posible que también necesite configurar un proxy después de completar la instalación inicial. Consulte [Configure Defender for Endpoint on Linux para la detección de proxy estático: configuración posterior a la instalación.](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
 
 5. Ejecute una prueba de detección para comprobar que el dispositivo está correctamente incorporado e informando al servicio. Realice los pasos siguientes en el dispositivo recién incorporado:
@@ -357,18 +364,15 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
 ## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>Experiencia de detección y respuesta de puntos de conexión Linux (EDR) con ataques simulados
 
-Para probar las funcionalidades de EDR para Linux, siga los pasos siguientes para simular una detección en el servidor Linux e investigar el caso. 
+Para probar las funcionalidades de EDR para Linux, siga los pasos siguientes para simular una detección en el servidor Linux e investigar el caso.
 
-1.  Compruebe que el servidor Linux incorporado aparezca en Microsoft 365 Defender. Si se trata de la primera incorporación de la máquina, puede tardar hasta 20 minutos hasta que aparezca. 
+1. Compruebe que el servidor Linux incorporado aparezca en Microsoft 365 Defender. Si se trata de la primera incorporación de la máquina, puede tardar hasta 20 minutos hasta que aparezca.
 
-2.  Descargue y extraiga el [archivo de script](https://aka.ms/LinuxDIY) en un servidor Linux incorporado y ejecute el siguiente comando: `./mde_linux_edr_diy.sh`
+2. Descargue y extraiga el [archivo de script](https://aka.ms/LinuxDIY) en un servidor Linux incorporado y ejecute el siguiente comando: `./mde_linux_edr_diy.sh`
 
-3.  Después de unos minutos, se debe generar una detección en Microsoft 365 Defender.
+3. Después de unos minutos, se debe generar una detección en Microsoft 365 Defender.
 
-4.  Vea los detalles de la alerta, la escala de tiempo de la máquina y realice los pasos de investigación típicos.
-
-
-
+4. Vea los detalles de la alerta, la escala de tiempo de la máquina y realice los pasos de investigación típicos.
 
 ## <a name="installer-script"></a>Script del instalador
 
@@ -407,26 +411,29 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 1. Desinstale la versión "Insiders-Fast channel" de Defender para Endpoint en Linux.
 
-    ``
+    ```bash
     sudo yum remove mdatp
-    ``
+    ```
 
-1. Deshabilitar el repositorio de defender para endpoint en Linux Insiders-Fast linux  ``
+1. Deshabilitar el repositorio de defender para endpoint en Linux Insiders-Fast linux
+
+    ```bash
     sudo yum repolist
-    ``
+    ```
 
     > [!NOTE]
     > La salida debe mostrar "packages-microsoft-com-fast-prod".
 
-    ``
+    ```bash
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
-    ``
-1. Vuelva a implementar MDE para Linux mediante el "Canal de producción".
+    ```
 
+1. Vuelva a implementar MDE para Linux mediante el "Canal de producción".
 
 ## <a name="uninstallation"></a>Desinstalación
 
 Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
+
 - [Investigar problemas de estado del agente](health-status.md)

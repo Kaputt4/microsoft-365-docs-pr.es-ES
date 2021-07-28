@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 8fcf0491629a068f1ebc97e226a2c9b05e306cbf
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 8b0065b2d73dd0051c3230e292265676d05498d0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289516"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544822"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 
@@ -52,9 +52,9 @@ ms.locfileid: "53289516"
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos a Microsoft Defender para punto de conexión
 
-1. Vaya al Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
-2. Elija **Configuración**  >  **incorporación de administración de**  >  **dispositivos**. 
+2. Elija **Configuración**  >  **incorporación de puntos de**  >  **conexión** (en **Administración de dispositivos**). 
 
 3. En la lista Seleccionar sistema operativo para iniciar el proceso **de incorporación,** seleccione un sistema operativo. 
 
@@ -69,7 +69,7 @@ Los métodos de implementación varían según el sistema operativo y los métod
 | Windows 10     | [Directiva de grupo](configure-endpoints-gp.md)<p>[Configuration Manager](configure-endpoints-sccm.md)<p>[Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<p>[Script local](configure-endpoints-script.md) <p>**NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.         |
 | Windows 8.1 Enterprise <p>Windows 8.1 Pro <p>Windows 7 SP1 Enterprise <p>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<p>**NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).        |
 | Windows Server 2019 y versiones posteriores <p>Windows Edición principal de Server 2019 <p>Windows Server version 1803 and later | [Script local](configure-endpoints-script.md) <p>[Directiva de grupo](configure-endpoints-gp.md) <p>[Configuration Manager](configure-endpoints-sccm.md) <p>[System Center Configuration Manager](configure-endpoints-sccm.md) <p>[Scripts de incorporación de VDI para dispositivos no persistentes](configure-endpoints-vdi.md) <p>**NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.    |
-| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Centro de seguridad de Microsoft Defender](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
+| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Portal de Microsoft 365 Defender](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
 | macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave) | [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
 | iOS | [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
 | Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o LTS superior<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
@@ -147,9 +147,9 @@ Ahora que has incorporado a Defender for Endpoint y has desinstalado la solució
 - Aplicaciones potencialmente no deseadas (PUA)
 - Protección de red (NP)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 **¡Enhorabuena!** Ha completado la migración [a Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 
-- [Visite el panel de operaciones de seguridad](security-operations-dashboard.md) en el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). 
+- [Visite el panel de operaciones de seguridad](security-operations-dashboard.md) en el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ). 
 - [Administrar Defender para endpoint, después de la migración](manage-atp-post-migration.md).

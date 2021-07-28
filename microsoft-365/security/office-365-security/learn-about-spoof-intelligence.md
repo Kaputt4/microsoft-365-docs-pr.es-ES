@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la suplantación de inteligencia en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0f2e1b59b1140b4ee5b187329dac51557ef4df87
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: daec0fe3a667aa92e9c137cdc7e612b6b11fb344
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314397"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544498"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 
@@ -71,7 +71,7 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> . Para ir directamente a la **página Spoof intelligence insight,** use <https://security.microsoft.com/spoofintelligence> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la **pestaña Suplantación** en la página Lista de **inquilinos permitidos o bloqueados,** use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> . Para ir directamente a la **página Spoof intelligence insight,** use <https://security.microsoft.com/spoofintelligence> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -82,6 +82,7 @@ En el resto de este artículo se explica cómo usar la información de inteligen
   Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
+  >
   > - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 la cual proporciona a los usuarios los permisos necesarios _y_ para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
@@ -142,7 +143,7 @@ Al seleccionar una entrada de la lista, aparece un desplegable de detalles que c
 - Lo que necesita hacer.
 - Un resumen de dominio que incluye la mayor parte de la misma información de la página de inteligencia de suplantación principal.
 - WhoIs datos sobre el remitente.
-- Un vínculo para abrir [el Explorador de amenazas](threat-explorer.md) para ver detalles adicionales sobre el remitente (Microsoft Defender para Office 365).
+- Un vínculo para abrir el [Explorador de](threat-explorer.md) amenazas para ver detalles adicionales sobre el remitente en **View** \> **Phish** in Microsoft Defender for Office 365.
 - Mensajes similares que hemos visto en el inquilino del mismo remitente.
 
 ### <a name="about-allowed-spoofed-senders"></a>Acerca de remitentes suplantados permitidos
@@ -158,7 +159,7 @@ Solo se permitirá la suplantación de correo electrónico de ese par de infraes
 
 ## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>Usar la información de inteligencia de suplantación en Exchange Online PowerShell o PowerShell independiente de EOP
 
-En PowerShell, use el cmdlet **Get-SpoofIntelligenceInsight** para ver remitentes suplantados permitidos y bloqueados detectados por la inteligencia suplantación de identidad.  Para permitir o bloquear manualmente los remitentes suplantados, debe usar el cmdlet **New-TenantAllowBlockListSpoofItems.** Para obtener más información, vea [Use PowerShell to configure the Tenant Allow/Block List](tenant-allow-block-list.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list).
+En PowerShell, use el cmdlet **Get-SpoofIntelligenceInsight** para ver remitentes suplantados permitidos y bloqueados detectados por la inteligencia suplantación de identidad.  Para permitir o bloquear manualmente los remitentes suplantados, debe usar el cmdlet **New-TenantAllowBlockListSpoofItems.** Para obtener más información, vea [Use PowerShell to manage spoofed sender entries to the Tenant Allow/Block List](tenant-allow-block-list.md).
 
 Para ver la información en la información de inteligencia suplantación, ejecute el siguiente comando:
 

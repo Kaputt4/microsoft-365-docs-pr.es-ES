@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d575d628907ca417b03010d555d489d3329cd176
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: e473f26577d18ed15ac3a97391780d1b58bdf1f0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596343"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543586"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementar Microsoft Defender para endpoint en anillos
 
@@ -33,7 +33,7 @@ ms.locfileid: "53596343"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 La implementación de Microsoft Defender para endpoint se puede realizar mediante un enfoque de implementación basado en anillos. 
 
@@ -103,7 +103,7 @@ Use el siguiente material para seleccionar la arquitectura de Microsoft Defender
 
 Para Windows y/o servidores Windows, seleccione varias máquinas para probar con antelación (antes del martes de revisión) mediante el programa de validación de actualización de seguridad **(SUVP).**
 
-Para más información, consulte:
+Para más información, vea:
 
 - [¿Qué es el programa de validación de actualización de seguridad?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Software Update Validation Program and Centro de protección contra malware de Microsoft Establishment : TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)

@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Establecer la comprensión del contenido en el Project Cortex.
-ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 7497d21cc85449ee2141ac1362f82d092f150b4b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683558"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544714"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -99,7 +99,7 @@ Vaya al [Centro de administración de la Power Platform](https://admin.powerplat
 
     Haga clic en **Siguiente**.
 
-5. En la página **Crear centro de contenido**, puede crear un sitio de centro de contenido de SharePoint en el que sus usuarios puedan crear y administrar modelos de comprensión de documentos.
+5. En la página **Crear centro de contenido**, puede crear un sitio de centro de contenido de SharePoint en el que sus usuarios puedan crear y administrar modelos de comprensión de documentos. Si anteriormente creó un centro de contenido desde el Centro de administración de SharePoint, esa información se mostrará aquí y solo podrá seleccionar **Siguiente**.
 
     1. Para el **Nombre del sitio**, escriba el nombre que quiere darle a su sitio de centro de contenido.
     

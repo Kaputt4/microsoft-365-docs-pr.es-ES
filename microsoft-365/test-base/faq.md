@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9d24ecb807e60733471be60353d12789f19be1b4
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 2d8e0a8cea68e969df5939691b517ee71e78472d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53323384"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544462"
 ---
 # <a name="test-base-faq"></a>Preguntas más frecuentes sobre la base de pruebas
 
@@ -61,7 +61,7 @@ Consulte la guía del usuario de incorporación para obtener más información o
 
 **P: ¿La base de pruebas puede admitir nuestras pruebas automatizadas?**
 
-Sí, Test Base admite pruebas automatizadas, pero no se admiten pruebas manuales en este momento debido a las capacidades de servicio.
+**A:** Sí, Test Base admite pruebas automatizadas, pero no se admiten pruebas manuales en este momento debido a las capacidades de servicio.
 
 **P: ¿Qué idiomas y marcos de pruebas automatizadas admite?**
 

@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Antes de llamar al soporte técnico, consulte el estado de mantenimiento de los servicios de Microsoft 365 para comprobar si existe alguna interrupción del servicio.
-ms.openlocfilehash: 2b856b7851f569324d1cccabb6b2da2d098b2fbe
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fd54e888ffa1522e43c5e798ada855f9ca9f7785
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543454"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596259"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
@@ -102,7 +102,7 @@ En el resumen del aviso o del incidente, se proporciona la siguiente informació
 
 ### <a name="translate-service-health-details"></a>Traducción de los detalles del estado del servicio
 
-Usamos la traducción automática para mostrar los mensajes en su idioma de preferencia de forma automática. Para más información sobre cómo establecer su idioma de preferencia vaya a [Traducción de las publicaciones del Centro de mensajes](/microsoft-365/admin/manage/language-translation-for-message-center-posts).
+Usamos la traducción automática para mostrar los mensajes en su idioma de preferencia de forma automática. Vaya a [Traducción de las publicaciones del Centro de mensajes](lang-service-health.md) para obtener más información sobre cómo establecer su idioma de preferencia.
 
 ### <a name="definitions"></a>Definiciones
 

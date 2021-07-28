@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c554f7bcedbdb64118639f5a455fd6f6e55daaa6
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 6f8e8ed59c38c00c2158292b343d5ce347ebf297
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458594"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544738"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 
@@ -44,7 +44,7 @@ Una vez que haya realizado una respuesta [a incidentes para](eval-defender-inves
 | [Administrar incidentes](#manage-incidents) | Modifique las propiedades de incidentes para garantizar la asignación correcta, agregar etiquetas y comentarios y resolver un incidente. |
 | [Investigación y respuesta automatizadas](#examine-automated-investigation-and-response-with-the-action-center) | Capacidades de investigación y respuesta automatizadas (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz. El Centro de acciones es una experiencia de "panel único de cristal" para las tareas de incidentes y alertas, como la aprobación de acciones de corrección pendientes. |
 | [Búsqueda avanzada de amenazas](#advanced-hunting) | Una herramienta de búsqueda de amenazas basada en consultas que le permite inspeccionar proactivamente los eventos de la red y localizar indicadores y entidades de amenazas. También se usa la búsqueda avanzada durante la investigación y la corrección de un incidente. |
-||||
+
 
 ## <a name="prioritize-incidents"></a>Priorizar incidentes
 
@@ -121,7 +121,7 @@ Aprobar (o rechazar) acciones pendientes tan pronto como sea posible para que la
 
 Para obtener más información, vea [Automated investigation and response](m365d-autoir.md) y Action [Center](m365d-action-center.md).
 
-## <a name="advanced-hunting"></a>Búsqueda avanzada de amenazas
+## <a name="advanced-hunting"></a>Búsqueda avanzada
 
 > [!NOTE]
 > Antes de ayudarle a través de la simulación de búsqueda avanzada, vea el siguiente vídeo para comprender los conceptos avanzados de búsqueda, vea dónde puede encontrarlo en el portal y sepa cómo puede ayudarle en sus operaciones de seguridad.
@@ -131,7 +131,10 @@ Para obtener más información, vea [Automated investigation and response](m365d
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 
-Si la simulación de ataque de [PowerShell](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) sin archivos opcional era un ataque real que ya había alcanzado la fase de acceso a credenciales, puede usar la búsqueda avanzada en cualquier momento de la investigación para buscar proactivamente en eventos y registros de la red con lo que ya sabe de las alertas generadas y las entidades afectadas. Por ejemplo, puede consultar cualquier conexión a la dirección IP externa en los últimos 30 días.
+Si la simulación de ataque de [PowerShell](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) sin archivos opcional era un ataque real que ya había alcanzado la fase de acceso a credenciales, puede usar la búsqueda avanzada en cualquier momento de la investigación para buscar proactivamente en eventos y registros de la red con lo que ya sabe de las alertas generadas y las entidades afectadas. 
+
+Por ejemplo, en función de la información de la alerta de reconocimiento de direcciones IP y de usuario [(SMB),](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity) puede usar la tabla para buscar todos los eventos de enumeración de sesiones SMB o encontrar más actividades de detección en otros protocolos de Microsoft Defender para datos de identidad mediante la `IdentityDirectoryEvents` `IdentityQueryEvents` tabla.
+
 
 ### <a name="hunting-environment-requirements"></a>Requisitos del entorno de búsqueda
 

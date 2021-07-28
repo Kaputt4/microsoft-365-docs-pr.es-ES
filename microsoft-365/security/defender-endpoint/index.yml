@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/5/2021
   localization_priority: Priority
-  ms.openlocfilehash: a8ef08c7207bf6183c185bb3d6e15a416d86a484
-  ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+  ms.openlocfilehash: 86bb2dffb0ac0d547eed66475c145ebd761791e7
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/26/2021
-  ms.locfileid: "53587650"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53544666"
 landingContent:
 - title: Microsoft Defender para punto de conexión
   linkLists:
@@ -55,14 +55,14 @@ landingContent:
   - linkListType: video
     links:
     - text: Vídeo de incorporación
-      url: https://www.microsoft.com/videoplayer/embed/RE4bGqr
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
 - title: Operaciones de seguridad
   linkLists:
   - linkListType: overview
     links:
     - text: EDR
       url: overview-endpoint-detection-response.md
-    - text: Bloqueo y contención de comportamientos
+    - text: Contención y bloqueo de comportamiento
       url: behavioral-blocking-containment.md
     - text: Investigación y respuesta automatizadas (AIR)
       url: automated-investigations.md

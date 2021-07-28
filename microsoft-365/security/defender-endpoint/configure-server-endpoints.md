@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ff4c44199e4b6f8f1b3ca4806908813d7e710e4b
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: c318f063814d9b31e6d07c3bc6c7feea503efe2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415616"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544847"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -65,10 +65,10 @@ Si ya usa System Center Operations Manager (SCOM) o Azure Monitor (anteriormente
 
 En general, deberá seguir los pasos siguientes:
 
-1. Cumpla los requisitos de incorporación descritos en **la sección Antes de comenzar.**
-2. Active la supervisión del servidor desde Microsoft 365 Defender portal.
-3. Instale y configure MMA para que el servidor informe los datos del sensor a Defender for Endpoint.
-4. Configure y actualice System Center Endpoint Protection clientes.
+  1. Cumpla los requisitos de incorporación descritos en **la sección Antes de comenzar.**
+  2. Active la supervisión del servidor desde Microsoft 365 Defender.
+  3. Instale y configure MMA para que el servidor informe los datos del sensor a Defender for Endpoint.
+  4. Configure y actualice System Center Endpoint Protection clientes.
 
 > [!TIP]
 > Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que está correctamente incorporado al servicio. Para obtener más información, vea [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
@@ -121,7 +121,7 @@ Una vez completado, debería ver los servidores Windows incorporados en el porta
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Opción 2: Incorporar servidores Windows a través del Centro de seguridad de Azure
 
-1. En el panel Microsoft 365 Defender de navegación, **seleccione Configuración** de administración de  >  **dispositivos**  >  **endpoints**  >  .
+En el panel Microsoft 365 Defender de navegación, **seleccione Configuración** de administración de  >  **dispositivos**  >  **endpoints**  >  .
 
 2. Seleccione **Windows Server 2008 R2 SP1, 2012 R2 y 2016** como sistema operativo.
 
@@ -200,7 +200,8 @@ En esta integración se incluyen las siguientes funcionalidades:
     > La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows servidores supervisados por Azure Defender también estarán disponibles en Defender para endpoint: Azure Defender se conecta perfectamente al inquilino de Defender para endpoint, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender para extremo estarán disponibles en la consola de Azure Defender.
-- Investigación del servidor: los clientes de Azure Defender pueden acceder Microsoft 365 Defender portal para realizar una investigación detallada para descubrir el ámbito de una posible infracción.
+
+- Investigación del servidor: los clientes de Azure Defender pueden acceder a Microsoft 365 Defender realizar una investigación detallada para descubrir el ámbito de una posible infracción.
 
 > [!IMPORTANT]
 > - Cuando usa Azure Defender para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios estadounidenses, en la UE para usuarios europeos y británicos).<br>

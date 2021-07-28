@@ -1,5 +1,5 @@
 ---
-title: Vista previa y prueba Windows 11 con Escritorio administrado de Microsoft
+title: Vista previa y prueba de Windows 11 con Escritorio administrado de Microsoft
 description: Cómo obtener Windows 11 en su entorno
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
-ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
+ms.openlocfilehash: 4ac12c4ec340bd6bb73418dae75774198190094b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53461392"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544690"
 ---
-# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Vista previa y prueba Windows 11 con Escritorio administrado de Microsoft
+# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Vista previa y prueba de Windows 11 con Escritorio administrado de Microsoft
 
  Cómo inscribirse y participar en el programa de pruebas de Windows 11 en su entorno Escritorio administrado de Microsoft compatibilidad. Para obtener más información Windows 11 y Escritorio administrado de Microsoft, vea Windows [11 y Escritorio administrado de Microsoft](../intro/win11-overview.md). 
 
@@ -34,7 +34,7 @@ Hasta la fecha, más del 95 % de los dispositivos Escritorio administrado de Mic
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>Agregar dispositivos al grupo Windows 11 pruebas
 
-Comience agregando dispositivos al grupo de dispositivos (**\[ Modern Workplace Windows \] 11 Pre-Release Test Devices**) creado para probar y evaluar Windows 11. Los dispositivos de este grupo obtienen nuevas Windows 11 compilaciones y Escritorio administrado de Microsoft de línea base a medida que están disponibles y se supervisan para problemas de confiabilidad.
+A petición, crearemos el grupo de dispositivos (**Modern Workplace - Windows 11 Pre-Release Test Devices**) para probar y evaluar Windows 11. Los dispositivos de este grupo obtienen nuevas Windows 11 compilaciones y Escritorio administrado de Microsoft de línea base a medida que están disponibles y se supervisan para problemas de confiabilidad.
 
 Puedes elegir cualquiera de los dispositivos existentes o nuevos para las pruebas de Windows 11, pero no debes inscribir dispositivos de producción en este grupo debido al elevado riesgo de defectos o problemas de compatibilidad en compilaciones previas a la versión. Las asignaciones de grupo de dispositivos anteriores se quitan tras la asignación a este grupo.
 

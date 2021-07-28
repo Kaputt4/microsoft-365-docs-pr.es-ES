@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9abed7f9601872eeb14ceb294c54a1cb54f63c2f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: d214692e5511e7fcb10f2d1c79c9a8797ec04fff
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229112"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568141"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -221,7 +221,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
   - **Eliminar el mensaje antes de entregarlo**
 
-- **Agregar remitentes y dominios de confianza:** excepciones a la configuración de protección de suplantación. Los mensajes de los remitentes y dominios de remitente especificados nunca se clasifican como ataques basados en suplantación por la directiva. En otras palabras, la acción para remitentes protegidos, dominios protegidos o protección de inteligencia de buzones de correo no se aplica a estos remitentes o dominios de remitente de confianza. El límite máximo de estas listas es de aproximadamente 1000 entradas.
+- **Agregar remitentes y dominios de confianza:** excepciones a la configuración de protección de suplantación. Los mensajes de los remitentes y dominios de remitente especificados nunca se clasifican como ataques basados en suplantación por la directiva. En otras palabras, la acción para remitentes protegidos, dominios protegidos o protección de inteligencia de buzones de correo no se aplica a estos remitentes o dominios de remitente de confianza. El límite máximo para estas listas es de 1024 entradas.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Umbrales de suplantación de identidad avanzados en directivas contra suplantación de identidad en Microsoft Defender para Office 365
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d8458f1bacc6577d83878a94c24e649371d90038
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d3d09f293924003ea8bf3df0079b31b633e1cc23
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935334"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544639"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para endpoint en macOS
 
@@ -33,9 +33,10 @@ ms.locfileid: "51935334"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Registrarse para obtener una versión de prueba gratuita](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink).
 
 En este tema se describe cómo implementar Microsoft Defender para endpoint en macOS manualmente. Una implementación correcta requiere la finalización de todos los pasos siguientes:
+
 - [Descargar paquetes de instalación e incorporación](#download-installation-and-onboarding-packages)
 - [Instalación de aplicaciones (macOS 10.15 y versiones anteriores)](#application-installation-macos-1015-and-older-versions)
 - [Instalación de aplicaciones (macOS 11 y versiones más recientes)](#application-installation-macos-11-and-newer-versions)
@@ -47,17 +48,17 @@ Antes de empezar, consulta la página principal de Microsoft Defender para Endpo
 
 ## <a name="download-installation-and-onboarding-packages"></a>Descargar paquetes de instalación e incorporación
 
-Descargue los paquetes de instalación e incorporación de Centro de seguridad de Microsoft Defender:
+Descargue los paquetes de instalación e incorporación de Microsoft 365 Defender portal:
 
-1. En Centro de seguridad de Microsoft Defender, vaya **a Configuración > Device Management > Onboarding**.
+1. En Microsoft 365 Defender portal, vaya **a Configuración > Endpoints > Administración de dispositivos > Incorporación**.
 2. En la sección 1 de la página, establezca el sistema operativo en **macOS** y el método Deployment en **Script local**.
 3. En la sección 2 de la página, seleccione **Descargar paquete de instalación**. Guárdelo como wdav.pkg en un directorio local.
 4. En la sección 2 de la página, seleccione **Descargar paquete de incorporación**. Guárdelo WindowsDefenderATPOnboardingPackage.zip en el mismo directorio.
 
-    ![Centro de seguridad de Microsoft Defender captura de pantalla](images/atp-portal-onboarding-page.png)
+    ![Microsoft 365 Defender captura de pantalla del portal](images/portal-onboarding-macos.png)
 
 5. Desde un símbolo del sistema, compruebe que tiene los dos archivos.
-    
+
 ## <a name="application-installation-macos-1015-and-older-versions"></a>Instalación de aplicaciones (macOS 10.15 y versiones anteriores)
 
 Para completar este proceso, debes tener privilegios de administrador en el dispositivo.
@@ -107,11 +108,11 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 5. Repita los pasos 3 & 4 para todas las extensiones del sistema distribuidas con Microsoft Defender para Endpoint en Mac.
 
-6. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en Mac inspecciona el tráfico de sockets e informa de esta información al portal de Centro de seguridad de Microsoft Defender. Cuando se le pida que conceda a Microsoft Defender permisos de extremo para filtrar el tráfico de red, seleccione **Permitir**.
+6. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en Mac inspecciona el tráfico de sockets e informa de esta información al portal Microsoft 365 Defender punto de conexión. Cuando se le pida que conceda a Microsoft Defender permisos de extremo para filtrar el tráfico de red, seleccione **Permitir**.
 
     ![Preferencias de seguridad de extensión del sistema2](images/big-sur-install-4.png)
 
-7. Abra **Preferencias** del sistema Seguridad & privacidad y vaya a la pestaña Privacidad. Conceda permiso de acceso en disco completo a ATP de Microsoft Defender y ATP de Microsoft Defender  >   Endpoint Security **Extension**.   
+7. Abra **System Preferences** Security & Privacidad y vaya a la pestaña Privacidad. Conceda permiso de acceso en disco completo a Atp de Microsoft Defender y Extensión de seguridad de punto de conexión de ATP de Microsoft  >   **Defender.**   
 
     ![Acceso en disco completo](images/big-sur-install-5.png)
 
@@ -138,10 +139,9 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
     ```
 
     Después de la instalación, verás el icono de Microsoft Defender en la barra de estado de macOS en la esquina superior derecha.
-    
+
     > [!div class="mx-imgBorder"]
     > ![Icono de Microsoft Defender en la captura de pantalla de la barra de estado](images/mdatp-icon-bar.png)
-
 
 ## <a name="how-to-allow-full-disk-access"></a>Cómo permitir el acceso en disco completo
 
@@ -174,7 +174,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
    1. En el explorador, como Microsoft Edge para Mac o Safari.
 
-   1. Descargue MDATP macOS DIY.zip https://aka.ms/mdatpmacosdiy y extraiga.
+   1. Descargue MDATP MacOS DIY.zip https://aka.ms/mdatpmacosdiy y extraiga.
 
       Es posible que se le pida lo siguiente:
 
@@ -185,41 +185,41 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 5. Abra **Descargas**.
 
-6. Debería ver el **MDATP de bricolaje de MacOS**.
+6. Debería ver **MDATP MacOS DIY**.
 
    > [!TIP]
    > Si hace doble clic, recibirá el siguiente mensaje:
-   > 
-   > > **"MDATP DE BRICOLAJE de MacOS" no se puede abrir porque el desarrollador no puede ser verificador.**<br/>
+   >
+   > > **"MDATP MacOS DIY" no se puede abrir porque el desarrollador no puede ser verificador.**<br/>
    > > macOS no puede comprobar que esta aplicación está libre de malware.<br/>
-   > > **\[ Pasar a \] Cancelar papelera** **\[ \]** 
-  
+   > > **\[ Pasar a \] Cancelar papelera** **\[ \]**
+
 7. Haga clic en **Cancelar**.
 
-8. Haga clic con el **botón MDATP en MacOS BRICOLAJE** y, a continuación, haga clic **en Abrir**. 
+8. Haga clic con el botón **secundario en MDATP MacOS DIY** y, a continuación, haga clic en **Abrir**.
 
     El sistema debe mostrar el siguiente mensaje:
 
-    > **macOS no puede comprobar el desarrollador de **MDATP KIT DE BRICOLAJE de MacOS**. ¿Está seguro de que desea abrirlo?**<br/>
+    > **macOS no puede comprobar el desarrollador de MDATP MacOS DIY. ¿Está seguro de que desea abrirlo?**<br/>
     > Al abrir esta aplicación, invalidará la seguridad del sistema, que puede exponer su equipo y su información personal a malware que pueda dañar su Mac o poner en peligro su privacidad.
 
-10. Haga clic en **Open** (Abrir).
+9. Haga clic en **Open** (Abrir).
 
     El sistema debe mostrar el siguiente mensaje:
 
     > Microsoft Defender para endpoint: macOS EDR de prueba DE BRICOLAJE<br/>
-    > La alerta correspondiente estará disponible en el MDATP portal.
+    > La alerta correspondiente estará disponible en el portal MDATP.
 
-11. Haga clic en **Open** (Abrir).
+10. Haga clic en **Open** (Abrir).
 
     En unos minutos se debe generar una alerta denominada "macOS EDR Test Alert".
 
-12. Vaya a Centro de seguridad de Microsoft Defender ( https://SecurityCenter.microsoft.com) .
+11. Vaya a Microsoft 365 Defender portal ( https://security.microsoft.com/) .
 
-13. Vaya a la cola de alertas.
+12. Vaya a la cola de alertas.
 
     :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Ejemplo de una alerta de prueba EDR macOS que muestra gravedad, categoría, origen de detección y un menú de acciones contraído.":::
-    
+
     Consulta los detalles de la alerta y la escala de tiempo del dispositivo y realiza los pasos de investigación habituales.
 
 ## <a name="logging-installation-issues"></a>Problemas de instalación de registro

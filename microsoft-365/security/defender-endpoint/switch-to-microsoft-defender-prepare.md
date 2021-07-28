@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 56a63c09690e28f0ca4990dcbcbcb6cfff7d5eef
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e2bce4d202c36e0174592fa3dd5e0edee08490ee
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929508"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544546"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
 
@@ -46,7 +46,7 @@ Esta fase de migración incluye los siguientes pasos:
 
 1. [Obtener e implementar actualizaciones en los dispositivos de la organización](#get-and-deploy-updates-across-your-organizations-devices)
 2. [Obtener Defender para endpoint](#get-microsoft-defender-for-endpoint).
-3. [Conceder acceso a la Centro de seguridad de Microsoft Defender](#grant-access-to-the-microsoft-defender-security-center).
+3. [Conceder acceso al portal de Microsoft 365 Defender](#grant-access-to-the-microsoft-365-defender-portal).
 4. [Configurar el proxy de dispositivo y la configuración de conectividad a Internet.](#configure-device-proxy-and-internet-connectivity-settings)
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Obtener e implementar actualizaciones en los dispositivos de la organización
@@ -63,7 +63,7 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 
 ¿Necesita ayuda para actualizar los dispositivos de su organización? Vea los siguientes recursos:
 
-|Sistema operativo | Recurso |
+|Sistema operativo | Resource |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|
@@ -83,16 +83,16 @@ Ahora que ha actualizado los dispositivos de su organización, el siguiente paso
 
 4. Si los puntos de conexión (como dispositivos) de su organización usan un proxy para tener acceso a Internet, vea Configuración de defender para puntos de [conexión: Configuración de red](production-deployment.md#network-configuration).
  
-En este punto, está listo para conceder acceso a los administradores de seguridad y operadores de seguridad que usarán el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). 
+En este punto, está listo para conceder acceso a los administradores de seguridad y operadores de seguridad que usarán el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ). 
 
 > [!NOTE]
-> El Centro de seguridad de Microsoft Defender se conoce a veces como el portal de Defender para endpoint y se puede obtener acceso a este en [https://securitycenter.windows.com](https://securitycenter.windows.com) . 
+> El Microsoft 365 Defender se conoce a veces como el portal de Defender para endpoint y se puede obtener acceso a este en [https://security.microsoft.com](https://security.microsoft.com) . 
 
-## <a name="grant-access-to-the-microsoft-defender-security-center"></a>Conceder acceso a la Centro de seguridad de Microsoft Defender
+## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>Conceder acceso al portal de Microsoft 365 Defender web
 
-El Centro de seguridad de Microsoft Defender ( ) es donde tiene acceso y configura las características y capacidades [https://securitycenter.windows.com](https://securitycenter.windows.com) de Defender para endpoint. Para obtener más información, vea [Overview of the Centro de seguridad de Microsoft Defender](use.md).
+El Microsoft 365 Defender web ( ) es donde se accede y se configuran las características y capacidades [https://security.microsoft.com](https://security.microsoft.com) de Defender para endpoint. Para obtener más información, vea [Overview of the Microsoft 365 Defender portal](use.md).
 
-Los permisos a la Centro de seguridad de Microsoft Defender pueden concederse mediante permisos básicos o control de acceso basado en roles (RBAC). Se recomienda usar RBAC para que tenga un control más detallado sobre los permisos.
+Los permisos del portal Microsoft 365 Defender pueden concederse mediante permisos básicos o control de acceso basado en roles (RBAC). Se recomienda usar RBAC para que tenga un control más detallado sobre los permisos.
 
 1. Planee los roles y permisos para los administradores de seguridad y los operadores de seguridad. Vea [Control de acceso basado en roles](prepare-deployment.md#role-based-access-control).
 
@@ -104,7 +104,7 @@ Los permisos a la Centro de seguridad de Microsoft Defender pueden concederse me
     - [Administración de directivas de grupo avanzadas](/microsoft-desktop-optimization-pack/agpm)
     - [Windows Centro de administración](/windows-server/manage/windows-admin-center/overview)
 
-3. Conceda acceso a la Centro de seguridad de Microsoft Defender. (¿Necesita ayuda? Consulte [Manage portal access using RBAC](rbac.md)).
+3. Conceda acceso al portal de Microsoft 365 Defender web. (¿Necesita ayuda? Consulte [Manage portal access using RBAC](rbac.md)).
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar el proxy de dispositivo y la configuración de conectividad a Internet
 
