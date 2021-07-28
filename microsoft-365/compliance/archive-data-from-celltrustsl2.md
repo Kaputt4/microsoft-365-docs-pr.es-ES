@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector de datos CellTrust SL2 para importar y archivar datos de comunicaciones móviles.
-ms.openlocfilehash: 191160921c9e949aa7b82520d72dc7a18bfb26ef
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: c437df7715e41fc0977142b60356ed4decf62027
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453983"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541138"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archivar datos de CellTrust SL2 a Microsoft 365
 
-CellTrust SL2 captura datos de comunicaciones móviles e se integra con las tecnologías de archivado líderes para cumplir los requisitos de detección electrónica de normativas como FINRA, HIPAA, FOIA y TCPA. SL2 Data Connector importa elementos de comunicación móvil a Microsoft 365. En este artículo se describe el proceso de integración de SL2 con Microsoft 365 mediante cellTrust SL2 Data Connector para el archivado. Al completar este proceso se supone que se ha suscrito al servicio CellTrust SL2 y que está familiarizado con la arquitectura SL2. Para obtener información acerca de SL2, vea <www.celltrust.com>.
+CellTrust SL2 captura datos de comunicaciones móviles e se integra con las tecnologías de archivado líderes para cumplir los requisitos de detección electrónica de normativas como FINRA, HIPAA, FOIA y TCPA. SL2 Data Connector importa elementos de comunicación móvil a Microsoft 365. En este artículo se describe el proceso de integración de SL2 con Microsoft 365 mediante cellTrust SL2 Data Connector para el archivado. Al completar este proceso se supone que se ha suscrito al servicio CellTrust SL2 y que está familiarizado con la arquitectura SL2. Para obtener información acerca de CellTrust SL2, vea <https://www.celltrust.com> .
 
 Después de importar datos a buzones de usuario en Microsoft 365, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención de Microsoft 365 y cumplimiento de comunicaciones. El uso de CellTrust SL2 Data Connector para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -31,7 +31,7 @@ La plataforma SL2 de CellTrust captura datos de comunicación de varios orígene
 
 ![Flujo de trabajo de archivado para el servicio CellTrust SL2](../media/CellTrustSL2ConnectorWorkflow.png)
 
-1. Los usuarios de SL2 envían y reciben datos desde y hacia los servicios SL2 en la Microsoft Azure nube.
+1. Los usuarios de SL2 envían y reciben datos desde y hacia los servicios SL2 en Microsoft Azure.
 
 2. Su organización tiene un dominio SL2 en el entorno de servicio en la nube sl2 de CellTrust. El dominio puede tener una o más unidades organizativas (UNIDADES organizativas). El servicio en la nube SL2 transfiere los datos a un área altamente segura en la plataforma Microsoft Azure, de modo que los datos no abandone nunca el Microsoft Azure web. Según el plan SL2 (Enterprise, SMB o Government), el dominio se hospeda en Microsoft Azure Global o Microsoft Azure Government.
 
