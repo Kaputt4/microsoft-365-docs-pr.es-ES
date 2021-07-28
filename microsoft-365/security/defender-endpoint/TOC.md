@@ -258,6 +258,7 @@
 #### [Protección proporcionada en la nube y Antivirus de Windows Defender](cloud-protection-microsoft-defender-antivirus.md)
 ##### [Activar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [Especificar el nivel de protección proporcionado en la nube](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Protección proporcionada en la nube Antivirus de Microsoft Defender: envío de muestra](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)
 #### [Configuración de seguridad de la protección con protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [Activar el bloqueo a primera vista](configure-block-at-first-sight-microsoft-defender-antivirus.md)
@@ -483,6 +484,7 @@
 ####### [Obtener información de IP relacionada con alertas](get-alert-related-ip-info.md)
 ####### [Obtener información de dispositivo relacionada con alertas](get-alert-related-machine-info.md)
 ####### [Obtener información de usuario relacionada con alertas](get-alert-related-user-info.md)
+####### [Cola de alertas en Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 
 ###### [Evaluaciones de vulnerabilidades y configuraciones seguras]()
 ####### [Exportar métodos y propiedades de evaluación](get-assessment-methods-properties.md)
