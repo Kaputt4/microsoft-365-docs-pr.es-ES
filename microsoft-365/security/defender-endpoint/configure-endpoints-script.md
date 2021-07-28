@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e15a02753c7a1b346021a4351af24b8fd28315da
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1154c1f1da0c5b4dba026af21e07dd1e7f66abe9
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339651"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596163"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>Incorporación de Windows 10 dispositivos con un script local
 
@@ -30,7 +30,7 @@ ms.locfileid: "53339651"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 También puedes incorporar manualmente dispositivos individuales a Defender para endpoint. Es posible que quieras hacerlo primero al probar el servicio antes de comprometerte a incorporar todos los dispositivos de la red.
 
@@ -86,7 +86,7 @@ Puedes configurar manualmente la configuración de uso compartido de ejemplo en 
 La configuración se establece mediante la siguiente entrada de clave del Registro:
 
 ```console
-Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
@@ -107,7 +107,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints** Administración  >  **de dispositivos**  > **Offboarding**.
+    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints** Administración  >  **de dispositivos**  >  **Offboarding**.
 
     1. Seleccione Windows 10 como sistema operativo.
 
@@ -144,7 +144,6 @@ La supervisión también se puede realizar directamente en el portal o mediante 
 2. Haga clic **en Inventario de dispositivos**.
 
 3. Compruebe que aparecen dispositivos.
-
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Incorporación Windows 10 dispositivos con directiva de grupo](configure-endpoints-gp.md)

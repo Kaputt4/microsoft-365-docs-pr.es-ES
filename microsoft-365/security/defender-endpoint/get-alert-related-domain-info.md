@@ -16,19 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0d853f940e1c5734f414bf09bd180e54877312bd
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 45aa82cbd2537b28ffd85b0f14c47e353cf996b4
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587794"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542758"
 ---
 # <a name="get-alert-related-domain-information-api"></a>Obtener API de información de dominio relacionada con alertas
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,7 +49,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación|DIRECCIÓN URL. Read.All|'Leer direcciones URL'
+Application|DIRECCIÓN URL. Read.All|'Leer direcciones URL'
 Delegado (cuenta profesional o educativa)|DIRECCIÓN URL. Read.All|'Leer direcciones URL'
 
 > [!NOTE]
@@ -68,7 +68,7 @@ GET /api/alerts/{id}/domains
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -88,7 +88,7 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/domains
 ```
 
-### <a name="response-example"></a>Ejemplo de respuesta
+### <a name="response"></a>Respuesta:
 
 Aquí tiene un ejemplo de la respuesta.
 

@@ -1,8 +1,9 @@
 ---
 title: Aplicar un modelo de comprensión mediante documentos a una biblioteca de documentos
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Normal
-description: Aprenda a aplicar un modelo publicado a una biblioteca de documentos de SharePoint
-ms.openlocfilehash: cda9de43d0139c52f950527eb75d050602005fd2
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: Obtenga información sobre cómo aplicar un modelo publicado a una biblioteca SharePoint documentos.
+ms.openlocfilehash: 0e1591f5aeb0db0a3cf2ab1aa9e7f6e36633aa1d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843299"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543202"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b2c0b986ef6dbb54cd34e9b4413711cd3e5f9c6d
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: ac2643adaa2e0a30e94434a0fe34e4d6ec2b3b1d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053160"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542974"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre detección de dispositivos
 
@@ -81,7 +81,7 @@ Sí, puedes aplicar filtros que excluyan los dispositivos no administrados de la
 
 
 ## <a name="what-is-the-amount-of-traffic-being-generated-by-the-standard-discovery-active-probe"></a>¿Cuál es la cantidad de tráfico que genera el sondeo activo de detección estándar?
- El sondeo activo puede generar hasta 5K de tráfico entre el dispositivo incorporado y el dispositivo sondeado, cada intento de sondeo
+ El sondeo activo puede generar hasta 50 Kb de tráfico entre el dispositivo incorporado y el dispositivo sondeado, cada intento de sondeo
 
 ## <a name="why-is-there-a-discrepancy-between-can-be-onboarded-devices-in-the-device-inventory-and-the-number-of-devices-to-onboard-in-the-dashboard-tile"></a>¿Por qué hay una discrepancia entre los dispositivos "se pueden incorporar" en el inventario de dispositivos y el número de "dispositivos que se incorporarán" en el icono del panel?
 Es posible que observes diferencias entre el número de dispositivos enumerados en "se puede incorporar" en el inventario de dispositivos, la recomendación de seguridad "incorporación a Microsoft Defender para endpoint" y el widget de panel "dispositivos para incorporar".

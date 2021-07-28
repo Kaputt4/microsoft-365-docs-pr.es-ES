@@ -1,8 +1,9 @@
 ---
 title: Crear un centro de contenido en Microsoft SharePoint Syntex
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Obtenga información sobre cómo crear un centro de contenido.
-ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Crear un centro de contenido en Microsoft SharePoint Syntex
+ms.openlocfilehash: a50a31d29cc53a70a7e13f9cd83e76933aa39cf8
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905829"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543136"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Crear un centro de contenido en Microsoft SharePoint Syntex
 
@@ -28,15 +29,16 @@ ms.locfileid: "50905829"
 
 </br>
 
-Para crear y administrar modelos de comprensión de documentos, primero necesita un centro de contenido. El centro de contenido es la interfaz de creación de modelos y también contiene información sobre los modelos publicados de bibliotecas de documentos que se han aplicado.</br>
+Para crear y administrar modelos de comprensión de documentos, primero necesita un centro de contenido. El centro de contenido es la interfaz de creación de modelos y también contiene información sobre los modelos publicados de bibliotecas de documentos que se han aplicado.
 
-   ![Seleccione una biblioteca de documentos](../media/content-understanding/content-center-page.png)</br>
+   ![Seleccione una biblioteca de documentos.](../media/content-understanding/content-center-page.png)
 
-Puede crear un centro de contenido predeterminado durante la [configuración](set-up-content-understanding.md). Sin embargo, un administrador de SharePoint también puede optar por crear centros adicionales según sea necesario. Mientras que un único centro de contenido puede ser apropiado para entornos en los que quiera realizar una implementación de todas las actividades del modelo, es posible que quiera disponer de centros adicionales para los distintos departamentos de su organización, que pueden tener distintos requisitos de permisos y necesidades para sus modelos.
+Puede crear un centro de contenido predeterminado durante la [configuración](set-up-content-understanding.md). Sin embargo, un administrador de SharePoint también puede optar por crear centros adicionales según sea necesario. Si bien un solo centro de contenido puede ser adecuado para entornos para los que desea un resumen de toda la actividad del modelo, es posible que desee tener centros adicionales para varios departamentos dentro de su organización, que pueden tener diferentes necesidades y requisitos de permisos para sus modelos.
+
+Además, si desea probar SharePoint Syntex, puede crear un centro de contenido siguiendo las instrucciones de este artículo sin comprar licencias. Los usuarios sin licencia pueden crear modelos de comprensión de documentos, pero no pueden aplicarlos a una biblioteca de documentos.
 
 > [!NOTE]
 > En un [entorno de Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md), si tiene un único centro de contenido predeterminado en su ubicación central, solo puede proporcionar una implementación de la actividad del modelo desde esa ubicación. Actualmente no puede obtener una implementación de la actividad del modelo fuera de los límites de la granja de servidores en entorno Multi-Geo. 
-
 
 ## <a name="create-a-content-center"></a>Crear un centro de contenido
 
@@ -44,26 +46,35 @@ Un administrador de SharePoint puede crear un sitio del centro de contenido del 
 
 Para crear un nuevo centro de contenido:
 
-1. En el Centro de administración de Microsoft 365, vaya al Centro de administración de SharePoint.
+1. En el Centro de administración de Microsoft 365, vaya a la página [Centro de administración de SharePoint **Sitios activos** ](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true).
 
-2. En el nuevo Centro de administración de SharePoint, en **Sitios**, seleccione **Sitios activos**.
+2. En la página **Sitios activos**, haga clic en **Crear** y seleccione **Otras opciones**.
 
-3. En la página **Sitios activos**, haga clic en **Crear** y seleccione **Otras opciones**.
+3. En el menú **Elegir una plantilla**, seleccione **Centro de contenido**.
 
-4. En el menú **Elegir una plantilla**, seleccione **Centro de contenido**.
-
-5. Para el nuevo sitio, proporcione un **Nombre del sitio**, **Administrador principal** e **Idioma**.</br>
+4. Para el nuevo sitio, proporcione un **Nombre del sitio**, **Administrador principal** e **Idioma**.</br>
 
    > [!NOTE] 
-   > Puede seleccionar un sitio de centro de contenido para que se procese en cualquiera de los idiomas disponibles, pero tenga en cuenta que actualmente los modelos solo se pueden crear para archivos en inglés. Además, tenga en cuenta que, al igual que otras plantillas de sitio, el idioma predeterminado del sitio no se puede modificar una vez creado el sitio.</br>
+   > Puede seleccionar un sitio de centro de contenido para que se procese en cualquiera de los idiomas disponibles, pero tenga en cuenta que actualmente los modelos solo se pueden crear para archivos en inglés. Además, tenga en cuenta que, al igual que otras plantillas de sitio, el idioma predeterminado del sitio no se puede modificar una vez creado el sitio.
 
-6. Seleccione **Terminado**.
+5. Seleccione **Terminado**.
  
 Después de crear un sitio del centro de contenido, verá que aparece en la página **Sitios activos** en el Centro de administración de SharePoint. 
 
 ### <a name="give-access-to-additional-users"></a>Conceder acceso a otros usuarios
  
 Después de crear el sitio, puede conceder acceso a usuarios adicionales al sitio a través del [modelo de permisos del sitio de SharePoint](/sharepoint/modern-experience-sharing-permissions) estándar.
+
+### <a name="roll-up-of-models-in-the-default-content-center"></a>Acumulación de modelos en el centro de contenido predeterminado
+
+En SharePoint Syntex, el primer centro de contenido creado durante la instalación es el *centro de contenido predeterminado*. Si se crean centros de contenido posteriores, sus modelos se muestran en la vista del centro de contenido predeterminada.
+
+![Captura de pantalla de la biblioteca de modelos en el centro de contenido predeterminado.](../media/content-understanding/model-library-default-content-center.png)
+
+La biblioteca de **Models** en la vista del centro de contenido predeterminada agrupa los modelos creados por centro de contenido para obtener una vista resumida de todos los modelos de comprensión de documentos y modelos de procesamiento de formularios que se han creado.
+
+> [!NOTE]
+> No se puede cambiar el centro de contenido predeterminado designado. Siempre es el primer centro de contenido creado durante la instalación. 
 
 ## <a name="see-also"></a>Consulte también
 [Crear un clasificador](create-a-classifier.md)

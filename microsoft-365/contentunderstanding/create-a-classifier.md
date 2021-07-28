@@ -1,8 +1,9 @@
 ---
-title: Crear un clasificador
-ms.author: efrene
-author: efrene
+title: Crear un clasificador en Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Aprenda a crear un clasificador
-ms.openlocfilehash: 13ae099d051ac526dc5b13e4cb55a1dc10eec087
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Aprenda cómo crear un clasificador en Microsoft SharePoint Syntex
+ms.openlocfilehash: 62c6b985bbc713940e2f140f77daeb2d920982d2
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925361"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543160"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Crear un clasificador en Microsoft SharePoint Syntex
 
@@ -88,7 +89,7 @@ Para añadir archivos de ejemplo:
 2. En la página **seleccionar archivos de ejemplo para el modelo** seleccione los archivos de ejemplo de la biblioteca de archivos de aprendizaje en el centro de contenido. Si aún no se han cargado allí, elija cargarlos ahora haciendo clic en **Cargar** para copiarlos a la biblioteca de archivos de aprendizaje.
 3. Después de seleccionar los archivos de ejemplo que se usarán para entrenar el modelo, haga clic en **Añadir**.
 
-    ![Seleccionar archivos de ejemplo:](../media/content-understanding/select-sample.png) 
+    ![Seleccionar archivos de ejemplo.](../media/content-understanding/select-sample.png) 
 
 ## <a name="label-your-example-files"></a>Etiquetar los archivos de ejemplo
 
@@ -99,13 +100,13 @@ Después de agregar los archivos de ejemplo, debe etiquetarlos como ejemplos pos
 2. En el visor, en la parte superior del primer archivo de ejemplo, debería ver un texto que pregunta si el archivo es un ejemplo del modelo que acaba de crear. Si es un ejemplo positivo, seleccione **sí**. Si es un ejemplo negativo, seleccione **no**.
 3. En la lista **Ejemplos etiquetados** en la parte izquierda, seleccione los archivos adicionales que desea usar como ejemplos y asígneles etiquetas. 
 
-    ![Página principal del Clasificador](../media/content-understanding/classifier-home-page.png) 
+    ![Página principal del Clasificador.](../media/content-understanding/classifier-home-page.png) 
 
 
 > [!NOTE]
 > Etiquete como mínimo cinco ejemplos positivos. También debe etiquetar al menos un ejemplo negativo. 
 
-## <a name="create-an-explanation"></a>Crear una explicación
+## <a name="create-an-explanation&quot;></a>Crear una explicación
 
 El siguiente paso consiste en crear una explicación en la página de entrenamiento. Una explicación ayuda al modelo a comprender cómo se reconoce el documento. Por ejemplo, los documentos de renovación de contrato siempre contienen una *cadena de texto:* solicitud para divulgación adicional.
 
@@ -118,24 +119,28 @@ Para crear una explicación:
 2. En la página entrenamiento, en la sección **archivos entrenados** debería ver una lista de los archivos de ejemplo que etiquetó anteriormente. Seleccione uno de los archivos positivos de la lista, y se mostrará en el visor.
 3. En la sección de Explicación, seleccione **Nuevo** y después **En blanco**.
 4. En la **página** Crear una explicación:</br>
-    a. Escriba el **Nombre** (por ejemplo, "bloque de divulgación").</br>
+    a. Escriba el **Nombre** (por ejemplo, &quot;bloque de divulgación").</br>
     b. Seleccione el **Tipo**. Para la muestra, seleccione **Lista de frases**,ya que se añade una cadena de texto.</br>
     c. En el cuadro **Escriba aquí**, escriba la cadena. Agregue "solicitud para divulgación adicional" para el ejemplo. Puede seleccionar **Distinguir mayúsculas de minúsculas** si la cadena tiene que distinguir mayúsculas de minúsculas.</br>
     d. Haga clic en **Guardar**.
 
-    ![Crear una explicación](../media/content-understanding/explanation.png) 
+    ![Crear una explicación.](../media/content-understanding/explanation.png) 
     
-5. El centro de contenido ahora comprueba si la explicación que ha creado es lo suficientemente completa como para identificar el resto de los archivos de ejemplo con etiquetas correctamente, como ejemplos positivos y negativos. En la sección archivos entrenados, Compruebe la columna **Evaluación** una vez completada la formación para ver los resultados. Los archivos muestran el valor **Coincidencia**, si las explicaciones que ha creado son suficientes como para coincidir con la etiquetada como positiva o negativa.
+5. El centro de contenido ahora comprueba si la explicación que ha creado es lo suficientemente completa como para identificar el resto de los archivos de ejemplo con etiquetas correctamente, como ejemplos positivos y negativos. En la sección **Archivos de formación**, Compruebe la columna **Evaluación** una vez completada la formación para ver los resultados. Los archivos muestran el valor **Coincidencia**, si las explicaciones que ha creado son suficientes como para coincidir con la etiquetada como positiva o negativa.
 
     ![Valor de coincidencia](../media/content-understanding/match.png) 
 
-Si recibe una **No coincidencia** en los archivos etiquetados, es posible que tenga que crear una explicación adicional para proporcionar al modelo más información para identificar el tipo de documento. En ese caso, haga clic en el archivo para obtener más información sobre el motivo por el que se ha producido un error de coincidencia.
+    Si recibe una **No coincidencia** en los archivos etiquetados, es posible que tenga que crear una explicación adicional para proporcionar al modelo más información para identificar el tipo de documento. En ese caso, haga clic en el archivo para obtener más información sobre el motivo por el que se ha producido un error de coincidencia.
+
+Una vez que haya entrenado un extractor, ese extractor entrenado se puede usar como explicación. En la sección **Explicaciones**, se muestra como una **Referencia de modelo**.
+
+![Captura de pantalla de la sección Explicaciones en la que se muestra el tipo referencia de modelo.](../media/content-understanding/explanations-model-reference.png)
 
 ## <a name="test-your-model"></a>Pruebe el modelo
 
-Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede probar su modelo en los archivos de muestra no etiquetados restantes.  Se trata de un paso opcional, pero resulta útil para evaluar la idoneidad del modelo o determinar si está preparado antes de usarlo, y para ello se prueba en archivos que el modelo no ha visto antes.
+Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede probar su modelo en los archivos de muestra no etiquetados restantes. Se trata de un paso opcional, pero resulta útil para evaluar la idoneidad del modelo o determinar si está preparado antes de usarlo, y para ello se prueba en archivos que el modelo no ha visto antes.
 
-1. En la página principal del modelo, haga clic en la pestaña **Probar**. Esto ejecuta el modelo en sus archivos de muestra sin etiquetar.
+1. En la página principal del modelo, seleccione la pestaña **Probar**. Esto ejecuta el modelo en sus archivos de muestra sin etiquetar.
 2. En la lista **archivos de prueba**, sus archivos de ejemplo se muestran e indican si el modelo predijo que fueran positivos o negativos. Utilice esta información para ayudar a determinar la eficacia de su clasificador en la identificación de sus documentos.
 
     ![Probar archivos sin etiquetar](../media/content-understanding/test-on-files.png) 

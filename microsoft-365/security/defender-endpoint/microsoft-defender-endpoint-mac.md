@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 9b809cc82ef6fda3d4153dbf19871801ec59ae75
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301781"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543430"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -56,7 +56,7 @@ Para obtener las características más recientes, incluidas las funcionalidades 
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-- Una suscripción a Defender for Endpoint y acceso al portal de Centro de seguridad de Microsoft Defender web
+- Una suscripción a Defender for Endpoint y acceso al portal de Microsoft 365 Defender web
 - Experiencia de nivel principiante en scripting de macOS y BASH
 - Privilegios administrativos en el dispositivo (en caso de implementación manual)
 

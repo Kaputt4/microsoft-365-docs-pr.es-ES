@@ -18,21 +18,21 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Agregar y administrar alertas de actividad en el Centro de seguridad & cumplimiento para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas
-ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 5ca3b7d49490b3bd43eb82e2f230e804ad769386
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341609"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542062"
 ---
 # <a name="create-activity-alerts"></a>Crear alertas de actividad
 
 Puede crear una alerta de actividad que le enviará una notificación por correo electrónico cuando los usuarios realicen actividades específicas en Office 365. Las alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría, excepto que se te enviará un mensaje de correo electrónico cuando se produce un evento para una actividad para la que has creado una alerta.
 
- **¿Por qué usar alertas de actividad en lugar de buscar en el registro de auditoría?** Puede haber ciertos tipos de actividad o actividad realizadas por usuarios específicos que realmente quieras conocer. En lugar de tener que recordar buscar en el registro de auditoría esas actividades, puede usar alertas de actividad para Microsoft 365 enviar un mensaje de correo electrónico cuando los usuarios realizan esas actividades. Por ejemplo, puede crear una alerta de actividad para notificarle cuándo un usuario elimina archivos en SharePoint o puede crear una alerta para notificarle cuando un usuario elimina permanentemente mensajes de su buzón. La notificación de correo electrónico que se le envió incluye información sobre qué actividad se realizó y el usuario que la realizó.
+ **¿Por qué usar alertas de actividad en lugar de buscar en el registro de auditoría?** Puede haber ciertos tipos de actividad o actividad realizadas por usuarios específicos que realmente quieras conocer. En lugar de tener que recordar buscar en el registro de auditoría esas actividades, puede usar alertas de actividad para Microsoft 365 enviar un mensaje de correo electrónico cuando los usuarios realizan esas actividades. Por ejemplo, puede crear una alerta de actividad para notificarle cuando un usuario elimina archivos en SharePoint o puede crear una alerta para notificarle cuando un usuario elimina permanentemente mensajes de su buzón. La notificación de correo electrónico que se le envió incluye información sobre qué actividad se realizó y el usuario que la realizó.
 
 > [!NOTE]
-> Las alertas de actividad están en desuso. Se recomienda empezar a usar directivas de alerta en el centro de seguridad y cumplimiento en lugar de crear nuevas alertas de actividad. Las directivas de alertas proporcionan funciones adicionales, como la capacidad de crear una directiva de  alerta que desencadena una alerta cuando un usuario realiza una actividad especificada y muestra alertas en la página Ver alertas en el Centro de seguridad y cumplimiento. Para obtener más información, vea [Directivas de alerta](alert-policies.md).
+> Las alertas de actividad están en desuso. Se recomienda empezar a usar directivas de alerta en el centro de seguridad y cumplimiento en lugar de crear nuevas alertas de actividad. Las directivas de alerta proporcionan funciones adicionales, como la capacidad de crear una directiva de alerta  que desencadena una alerta cuando un usuario realiza una actividad especificada y mostrar alertas en la página Ver alertas en el Centro de seguridad y cumplimiento. Para obtener más información, vea [Directivas de alerta](alert-policies.md).
 
 ## <a name="confirm-roles-and-configure-audit-logging"></a>Confirmar roles y configurar el registro de auditoría
 
@@ -42,7 +42,7 @@ Puede crear una alerta de actividad que le enviará una notificación por correo
 
 - Puede crear alertas para las mismas actividades que puede buscar en el registro de auditoría. Consulta la [sección Más información](#more-information) para obtener una lista de escenarios comunes (y la actividad específica que se va a supervisar) para la que puedes crear alertas.
 
-- Puede usar la página **Alertas de** actividad del Centro de seguridad y cumplimiento de & para crear alertas solo para la actividad realizada por los usuarios que aparecen en la libreta de direcciones de su organización. No puede usar esta página para crear alertas de actividad realizadas por usuarios externos que no aparecen en la libreta de direcciones.
+- Puede usar la página **Alertas de** actividad del Centro de seguridad y cumplimiento de & para crear alertas solo para la actividad realizada por los usuarios que aparecen en la libreta de direcciones de su organización. No puede usar esta página para crear alertas para actividades realizadas por usuarios externos que no aparecen en la libreta de direcciones.
 
 ## <a name="create-an-activity-alert"></a>Crear una alerta de actividad
 
@@ -59,19 +59,19 @@ Puede crear una alerta de actividad que le enviará una notificación por correo
 
 4. Complete los siguientes campos para crear una alerta de actividad:
 
-    a. **Nombre:** escriba un nombre para la alerta. Los nombres de alerta deben ser únicos en la organización.
+    1. **Nombre:** escriba un nombre para la alerta. Los nombres de alerta deben ser únicos en la organización.
 
-    b. **Descripción** (opcional): describa la alerta, como las actividades y los usuarios a los que se realiza un seguimiento, y los usuarios a los que se envían las notificaciones por correo electrónico. Las descripciones proporcionan una forma rápida y sencilla de describir el propósito de la alerta a otros administradores.
+    1. **Descripción** (opcional): describa la alerta, como las actividades y los usuarios a los que se realiza un seguimiento y los usuarios a los que se envían notificaciones por correo electrónico. Las descripciones proporcionan una forma rápida y sencilla de describir el propósito de la alerta a otros administradores.
 
-    c. **Tipo de alerta:** asegúrese de que **la opción** Personalizado está seleccionada.
+    1. **Tipo de alerta:** asegúrese de que **la opción** Personalizado está seleccionada.
 
-    d. **Enviar esta alerta cuando:** haga clic **en Enviar esta alerta cuando** y, a continuación, configure estos dos campos:
+    1. **Enviar esta alerta cuando:** haga clic **en Enviar esta alerta cuando** y, a continuación, configure estos dos campos:
 
-    - **Actividades:** haga clic en la lista desplegable para mostrar las actividades para las que puede crear una alerta. Esta es la misma lista de actividades que se muestra al buscar en el registro de auditoría. Puede seleccionar una o más actividades específicas o hacer clic en el nombre del grupo de actividades para seleccionar todas las actividades del grupo. Para obtener una descripción de estas actividades, vea la sección "Actividades auditadas" [en Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md#audited-activities) Cuando un usuario realiza cualquiera de las actividades que ha agregado a la alerta, se envía una notificación por correo electrónico.
+       - **Actividades:** haga clic en la lista desplegable para mostrar las actividades para las que puede crear una alerta. Esta es la misma lista de actividades que se muestra al buscar en el registro de auditoría. Puede seleccionar una o más actividades específicas o hacer clic en el nombre del grupo de actividades para seleccionar todas las actividades del grupo. Para obtener una descripción de estas actividades, vea la sección "Actividades auditadas" [en Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md#audited-activities) Cuando un usuario realiza cualquiera de las actividades que ha agregado a la alerta, se envía una notificación por correo electrónico.
 
-     - **Usuarios:** haga clic en este cuadro y, a continuación, seleccione uno o varios usuarios. Si los usuarios de este cuadro realizan las  actividades que agregó al cuadro Actividades, se enviará una alerta. Deje el **cuadro Usuarios** en blanco para enviar una alerta cuando cualquier usuario de la organización realice las actividades especificadas por la alerta.
+       - **Usuarios:** haga clic en este cuadro y, a continuación, seleccione uno o varios usuarios. Si los usuarios de este cuadro realizan las  actividades que agregó al cuadro Actividades, se enviará una alerta. Deje el **cuadro Usuarios** en blanco para enviar una alerta cuando cualquier usuario de la organización realice las actividades especificadas por la alerta.
 
-    e. Enviar esta alerta  **a:** haga clic en  Enviar esta alerta y, a continuación, haga clic en el cuadro Destinatarios y escriba un nombre para  agregar un usuario que recibirá una notificación por correo electrónico cuando un usuario (especificado en el cuadro Usuarios) realice una actividad (especificada en el cuadro Actividades).  Tenga en cuenta que se le agrega a la lista de destinatarios de forma predeterminada. Puede quitar el nombre de esta lista.
+    1. Enviar esta alerta  **a:** haga clic en  Enviar esta alerta y, a continuación, haga clic en el cuadro Destinatarios y escriba un nombre para  agregar usuarios que recibirán una notificación por correo electrónico cuando un usuario (especificado en el cuadro Usuarios) realice una actividad (especificada en el cuadro Actividades).  Tenga en cuenta que se le agrega a la lista de destinatarios de forma predeterminada. Puede quitar el nombre de esta lista.
 
 5. Haga **clic en Guardar** para crear la alerta.
 
@@ -101,29 +101,29 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
 
 - Este es un ejemplo de la notificación de correo electrónico que se envía a los usuarios que  se especifican en el campo Enviar esta alerta a (y que aparece en Destinatarios en la página **Alertas** de actividad) en el Centro de seguridad & cumplimiento.
 
-    ![Ejemplo de notificación de correo electrónico enviado para una alerta de actividad](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
+    ![Ejemplo de una notificación de correo electrónico enviada para una alerta de actividad](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 
-- Estas son algunas actividades comunes de documentos y correo electrónico para las que puede crear alertas de actividad. Las tablas describen la actividad, el nombre de la actividad para la que se va a  crear una alerta y el nombre del grupo de actividades en el que se muestra la actividad en la lista desplegable Actividades. Para ver una lista completa de las actividades para las que puede crear alertas de actividad, consulte la sección "Actividades auditadas" en [Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md#audited-activities)
+- Estas son algunas actividades comunes de documentos y correo electrónico para las que puede crear alertas de actividad. Las tablas describen la actividad, el nombre de la actividad para la que se va  a crear una alerta y el nombre del grupo de actividades en el que aparece la actividad en la lista desplegable Actividades. Para ver una lista completa de las actividades para las que puede crear alertas de actividad, consulte la sección "Actividades auditadas" en [Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md#audited-activities)
 
     > [!TIP]
     > Es posible que desee crear una alerta de actividad para una sola actividad que realice cualquier usuario. O puede que desee crear una alerta de actividad que realice un seguimiento de varias actividades realizadas por uno o varios usuarios.
 
     En la tabla siguiente se enumeran algunas actividades comunes relacionadas con documentos SharePoint o OneDrive para la Empresa.
 
-    |**Cuando un usuario hace esto...**|**Crear una alerta para esta actividad**|**Grupo de actividades**|
+    | Cuando un usuario hace esto... | Crear una alerta para esta actividad | Grupo de actividades |
     |:-----|:-----|:-----|
-    |Ve un documento en un sitio.  <br/> |Archivo al que se tiene acceso  <br/> |Actividades de archivos y carpetas  <br/> |
-    |Edita o cambia un documento.  <br/> |Archivo modificado  <br/> |Actividades de archivos y carpetas  <br/> |
-    |Comparte un documento con un usuario fuera de la organización.  <br/> |Compartir archivo, carpeta o sitio  <br/> And  <br/> Invitación de uso compartido creada  <br/> Para obtener más información, consulte [Usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).  <br/> |Actividades de solicitud de acceso y uso compartido  <br/> |
-    |Carga o descarga un documento.  <br/> |Archivo cargado  <br/> And/or  <br/> Archivo descargado  <br/> |Actividades de archivos y carpetas  <br/> |
-    |Cambia los permisos de acceso a un sitio.  <br/> |Permisos de sitio modificados  <br/> |Actividades de administración del sitio  <br/> |
+    |Ve un documento en un sitio.  |Archivo al que se tiene acceso  |Actividades de archivos y carpetas  |
+    |Edita o cambia un documento.  |Archivo modificado  |Actividades de archivos y carpetas  |
+    |Comparte un documento con un usuario fuera de la organización.  |Compartir archivo, carpeta o sitio  <br/> And  <br/> Invitación de uso compartido creada  <br/> Para obtener más información, consulte [Usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).  |Actividades de solicitud de acceso y uso compartido  |
+    |Carga o descarga un documento.  |Archivo cargado  <br/> And/or  <br/> Archivo descargado  |Actividades de archivos y carpetas  |
+    |Cambia los permisos de acceso a un sitio.  |Permisos de sitio modificados  |Actividades de administración del sitio  |
 
     En la tabla siguiente se enumeran algunas actividades comunes relacionadas con el correo electrónico Exchange Online.
 
-    |**Cuando un usuario hace esto...**|**Crear una alerta para esta actividad**|**Grupo de actividades**|
+    | Cuando un usuario hace esto... | Crear una alerta para esta actividad | Grupo de actividades |
     |:-----|:-----|:-----|
-    |Elimina permanentemente (purga) un mensaje de correo electrónico de su buzón.  <br/> |Mensajes purgados del buzón  <br/> | Actividades de buzón de Exchange  <br/> |
-    |Envía un mensaje de correo electrónico desde un buzón compartido.  <br/> |Mensaje enviado mediante los permisos de Enviar como  <br/> And  <br/> Mensaje enviado mediante los permisos en nombre de  <br/> | Actividades de buzón de Exchange  <br/> |
+    |Elimina permanentemente (purga) un mensaje de correo electrónico de su buzón.  |Mensajes purgados del buzón  | Actividades de buzón de Exchange  |
+    |Envía un mensaje de correo electrónico desde un buzón compartido.  |Mensaje enviado mediante los permisos de Enviar como  <br/> And  <br/> Mensaje enviado mediante los permisos en nombre de  | Actividades de buzón de Exchange  |
 
 - También puede usar los cmdlets **New-ActivityAlert** y **Set-ActivityAlert** en PowerShell del Centro de seguridad & cumplimiento para crear y editar alertas de actividad. Tenga en cuenta lo siguiente si usa estos cmdlets para crear o editar alertas de actividad:
 

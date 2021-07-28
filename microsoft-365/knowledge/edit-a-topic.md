@@ -1,7 +1,7 @@
 ---
-title: Editar un tema existente en Temas de Microsoft Viva
-author: chuckedmonson
+title: Editar un tema existente en Temas Microsoft Viva
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: cjtan
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-description: Obtenga información sobre cómo editar un tema existente en Temas de Microsoft Viva.
-ms.openlocfilehash: 6e1f85737298736a3aafcb30cfe103c28654d1c1
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+description: Obtenga información sobre cómo editar un tema existente en Temas Microsoft Viva.
+ms.openlocfilehash: 47c9254c91e08cda6dc33c40768689d94e5ceeef
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053220"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596235"
 ---
-# <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Editar un tema existente en Temas de Microsoft Viva 
+# <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Editar un tema existente en Temas Microsoft Viva 
 
 </br>
 
@@ -107,43 +107,9 @@ Los administradores de conocimientos también pueden editar temas directamente d
 
     Puede cambiar un sitio sugerido a un sitio anclado seleccionando el icono anclado.
 
-
-<!---
-
-7.  The <b>Related sites</b> section shows sites that have information about the topic. 
-
-    ![Related sites section](../media/knowledge-management/related-sites.png)</br>
-
-    You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
-    
-    ![Select a site](../media/knowledge-management/sites.png)</br>
-
-8. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
-
-   ![Related topics section](../media/knowledge-management/related-topic.png)</br>  
-
-    You can then give a description of how the topics are related, and select <b>Update</b>.</br>
-
-   ![Related topics description](../media/knowledge-management/related-topics-update.png)</br> 
-
-   The related topic you added will display as a connected topic.
-
-   ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
-
-   To remove a related topic, select the topic you want to remove, then select the <b>Remove topic</b> icon.</br>
- 
-   ![Remove related topic](../media/knowledge-management/remove-related.png)</br>  
-
-   Then select <b>Remove</b>.</br>
-
-   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
-
---->
-
-9. También puede agregar elementos estáticos a la página, como texto, imágenes o vínculos, seleccionando el icono de lienzo, el cual se encuentra debajo de la descripción breve. Si lo selecciona, se abrirá SharePoint cuadro de herramientas desde el que puede elegir el elemento que desea agregar a la página.
+9. También puede agregar elementos estáticos a la página (como texto, imágenes o vínculos) seleccionando el icono del lienzo, que puede encontrar debajo de la breve descripción. Si lo selecciona, se abrirá SharePoint cuadro de herramientas desde el que puede elegir el elemento que desea agregar a la página.
 
    ![Captura de pantalla que muestra el icono canvas.](../media/knowledge-management/webpart-library.png)
-
 
 10. Seleccione **Publicar** o **Volver a publicar** para guardar los cambios. **Volver a** publicar será la opción disponible si el tema se ha publicado anteriormente.
 

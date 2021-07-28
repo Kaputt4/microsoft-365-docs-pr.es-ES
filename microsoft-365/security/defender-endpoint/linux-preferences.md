@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7998e878ad03fdfb64c314dc8b7234ece46164ce
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 17915741485919ae85d5e16fbee8de5108b7f2eb
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289498"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543298"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -498,7 +498,7 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
          }
       ],
       "allowedThreats":[
-         "EICAR-Test-File (not a virus)"
+         "<EXAMPLE DO NOT USE>EICAR-Test-File (not a virus)"
       ],
       "disallowedThreatActions":[
          "allow",

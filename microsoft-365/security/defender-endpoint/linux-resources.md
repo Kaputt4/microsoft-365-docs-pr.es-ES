@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 9fe35f5bac942cc5a4e9fa95a5eaf9759072d832
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930372"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542194"
 ---
 # <a name="resources"></a>Recursos
 
@@ -104,7 +104,7 @@ De forma predeterminada, la herramienta de línea de comandos genera el resultad
 
 En la tabla siguiente se enumeran los comandos de algunos de los escenarios más comunes. Ejecute `mdatp help` desde terminal para ver la lista completa de comandos admitidos.
 
-|Grupo                 |Escenario                                                |Comando                                                                |
+|Group                 |Escenario                                                |Comando                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Configuración         |Activar/desactivar la protección en tiempo real                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
 |Configuración         |Activar/desactivar la supervisión del comportamiento                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
@@ -148,7 +148,7 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 En el portal de Defender para endpoint, verá dos categorías de información:
 
 - Alertas antivirus, incluidas:
-  - Gravedad
+  - Severity
   - Tipo de examen
   - Información del dispositivo (nombre de host, identificador de dispositivo, identificador de inquilino, versión de aplicación y tipo de sistema operativo)
   - Información de archivo (nombre, ruta de acceso, tamaño y hash)
@@ -166,8 +166,8 @@ En el portal de Defender para endpoint, verá dos categorías de información:
 
 ### <a name="known-issues"></a>Problemas conocidos
 
-- Es posible que vea "Sin datos de sensor, comunicaciones deficientes" en la página de información de la máquina del portal de Centro de seguridad de Microsoft Defender, aunque el producto funciona como se esperaba. Estamos trabajando en solucionar este problema.
-- Los usuarios que han iniciado sesión no aparecen en Centro de seguridad de Microsoft Defender portal.
+- Es posible que vea "Sin datos de sensores, comunicaciones deficientes" en la página de información de la máquina del portal de Microsoft 365 Defender, aunque el producto funciona como se esperaba. Estamos trabajando en solucionar este problema.
+- Los usuarios que han iniciado sesión no aparecen en Microsoft 365 Defender portal.
 - En las distribuciones de SUSE, si se produce un error en la instalación de *libatomic1,* debe validar que el sistema operativo está registrado:
 
    ```bash

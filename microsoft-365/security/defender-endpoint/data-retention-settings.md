@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eb9e4b905112d3d144b10d68418695df3cda29cb
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1674c5557609f347659f335a481143085a2f2b7e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339255"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543718"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Comprobar la ubicación de almacenamiento de datos y actualizar la configuración de retención de datos para Microsoft Defender para endpoint
 
@@ -42,13 +42,15 @@ Después de completar la incorporación, puede comprobar la selección en la pá
 ## <a name="verify-data-storage-location"></a>Comprobar la ubicación de almacenamiento de datos
 Durante la [fase de configuración,](production-deployment.md)habría seleccionado la ubicación para almacenar los datos. 
 
-Para comprobar la ubicación de los datos, vaya a **Configuración** de retención de  >  **datos** de  >  **puntos de conexión**.
+
+Para comprobar la ubicación de los datos, vaya a **Configuración** de datos de puntos de conexión  >    >   (en **General**).
+
 
 ## <a name="update-data-retention-settings"></a>Actualizar la configuración de retención de datos
 
 Puede actualizar la configuración de retención de datos. De forma predeterminada, el período de retención es de 180 días. 
 
-1. En el panel de navegación, **seleccione Configuración** Datos de puntos  >  **de**  >  **conexión**.
+1. En el panel de navegación, **seleccione Configuración** Datos de puntos de  >  **conexión**  >   (en **General**).
 
 2. Seleccione la duración de retención de datos de la lista desplegable.
 
@@ -56,7 +58,6 @@ Puede actualizar la configuración de retención de datos. De forma predetermina
     > Otras opciones de configuración no son editables.
 
 3. Haga clic **en Guardar preferencias**.
-
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Actualizar la configuración de retención de datos](data-retention-settings.md)

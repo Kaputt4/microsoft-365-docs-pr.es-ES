@@ -1,5 +1,5 @@
 ---
-title: Escenarios y casos de uso para Microsoft SharePoint Syntex
+title: Escenarios y casos de uso de Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,20 +15,20 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: Busque escenarios sobre cómo usar SharePoint Syntex en su organización.
-ms.openlocfilehash: b28239a304c8fab209436c12e6cdbffe160b7981
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: 4714af4c4182c3c57625a82dff0cfdc1d5260785
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52697070"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543214"
 ---
-# <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Escenarios y casos de uso para Microsoft SharePoint Syntex
+# <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Escenarios y casos de uso de Microsoft SharePoint Syntex
 
 Use los siguientes escenarios de ejemplo para preguntar ideas sobre cómo puede usar SharePoint Syntex en su organización.
 
 - [Escenario: realizar un seguimiento de los datos de las facturas con el procesamiento de formularios](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
 - [Escenario: realizar un seguimiento de la información de los contratos con la comprensión de documentos](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
-- [Escenario: evitar riesgos con procesos de administración de registros, gobierno de documentos y cumplimiento basados en SharePoint Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
+- [Escenario: evite riesgos con procesos de administración de registros, gobierno de documentos y cumplimiento basados en SharePoint Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
 - [Escenario: capturar información de documentos inaccesibles anteriormente](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
 - [Escenario: mejorar el procesamiento de datos para proporcionar información y análisis](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
 - [Escenario: Automatizar el procesamiento de pedidos](adoption-scenarios.md#scenario-automate-order-processing)
@@ -36,7 +36,7 @@ Use los siguientes escenarios de ejemplo para preguntar ideas sobre cómo puede 
 
 ## <a name="scenario-track-data-from-invoices-with-form-processing"></a>Escenario: realizar un seguimiento de los datos de las facturas con el procesamiento de formularios
 
-Por ejemplo, puede configurar un proceso mediante las SharePoint Syntex y Power Automate para realizar un seguimiento y supervisar las facturas.
+Por ejemplo, puede configurar un proceso mediante SharePoint Syntex y Power Automate para realizar un seguimiento y supervisar las facturas.
 
 1. Configurar una biblioteca para almacenar los documentos de factura.
 1. Entrena al modelo para que reconozca los campos de los documentos.
@@ -63,14 +63,14 @@ Como otro ejemplo, puede configurar un proceso para identificar contratos que su
 1. Cuando se complete el modelo, aplique el modelo a una biblioteca donde pueda cargar contratos.
 1. Aplique una etiqueta de retención al campo fecha, de modo que los contratos se conserven en la biblioteca durante el período de tiempo necesario.
 
-![Seguimiento y seguimiento de contratos con SharePoint Syntex y etiquetas de retención](../media/content-understanding/process-contracts-flow.png)
+![Seguimiento y supervisión de contratos con SharePoint Syntex y etiquetas de retención](../media/content-understanding/process-contracts-flow.png)
 
 Al automatizar este escenario, puede:
 
 - Ahorre tiempo y dinero mediante la extracción automática de datos de los contratos en lugar de hacerlo manualmente.
 - Asegúrese de un mejor cumplimiento mediante el uso de etiquetas de retención para garantizar que los contratos se conservan correctamente.
 
-## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>Escenario: evitar riesgos con procesos de administración de registros, gobierno de documentos y cumplimiento basados en SharePoint Syntex
+## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>Escenario: evite riesgos con procesos de administración de registros, gobierno de documentos y cumplimiento basados en SharePoint Syntex
 
 Reducir los riesgos es un objetivo común para la mayoría de las empresas. Es posible que necesite:
 
@@ -79,7 +79,7 @@ Reducir los riesgos es un objetivo común para la mayoría de las empresas. Es p
 - Auditar recibos, contratos, entre otros, para garantizar el cumplimiento de las directivas de la empresa.
 - Para asegurarse de que los proyectos tienen toda la documentación necesaria para el cumplimiento.
 
-Configure algunos procesos para el cumplimiento de SharePoint Syntex para capturar y clasificar adecuadamente, auditar y marcar documentos y formularios que necesitan un mejor gobierno. Puede confiar en SharePoint Syntex para clasificar automáticamente el contenido en lugar de depender de los usuarios finales para etiquetar manualmente, o el equipo de cumplimiento para aplicar manualmente reglas de gobierno y archivado. Además, puede habilitar una experiencia de búsqueda simplificada, administrar volúmenes de datos, aplicar directivas de administración y retención de registros, garantizar el cumplimiento y procedimientos recomendados de archivado y depuración.
+Configure algunos procesos para el cumplimiento de SharePoint Syntex para capturar y clasificar adecuadamente, auditar y marcar documentos y formularios que necesitan un mejor gobierno. Puede confiar en SharePoint Syntex clasificar automáticamente el contenido en lugar de depender de los usuarios finales para etiquetar manualmente o del equipo de cumplimiento para aplicar manualmente reglas de gobierno y archivado. Además, puede habilitar una experiencia de búsqueda simplificada, administrar volúmenes de datos, aplicar directivas de administración y retención de registros, garantizar el cumplimiento y procedimientos recomendados de archivado y depuración.
 
 Al automatizar este escenario, puede sentirse seguro de que:
 
@@ -129,7 +129,7 @@ Al automatizar este escenario, puede asegurarse de que:
 
 ## <a name="scenario-simplify-visa-renewal-process"></a>Escenario: Simplificar el proceso de renovación de visas
 
-SharePoint Syntex puede ayudarle a automatizar avisos y renovaciones de información clave del contrato. Por ejemplo, un director de recursos humanos debe asegurarse de que los visados de los empleados estén actualizados o renovados a tiempo. Quieren ofrecer a los usuarios un proceso sencillo e intuitivo para actualizar sus Visas. Necesitan una solución que extraiga las fechas de renovación de los contratos y envíe automáticamente avisos a los empleados cuando se acercan las fechas de renovación.
+SharePoint Syntex puede ayudarle a automatizar avisos y renovaciones para la información clave del contrato. Por ejemplo, un director de recursos humanos debe asegurarse de que los visados de los empleados estén actualizados o renovados a tiempo. Quieren ofrecer a los usuarios un proceso sencillo e intuitivo para actualizar sus Visas. Necesitan una solución que extraiga las fechas de renovación de los contratos y envíe automáticamente avisos a los empleados cuando se acercan las fechas de renovación.
 
 Al automatizar este escenario, puede asegurarse de que:
 
@@ -137,6 +137,6 @@ Al automatizar este escenario, puede asegurarse de que:
 - Se reduce el número de avisos manuales.
 - Se reduce el número de multas por incumplimiento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-[Adopción de Microsoft SharePoint Syntex: Introducción](adoption-getstarted.md)
+[Adopción SharePoint Syntex Microsoft: Introducción](adoption-getstarted.md)

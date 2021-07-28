@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb5d4d017e7ca67c87a081b618d4f324394367e1
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 8b4954906ace6e2171a18e23a4eb64c66e1cf844
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590748"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543409"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 
@@ -32,7 +32,7 @@ ms.locfileid: "53590748"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint ha actualizado recientemente el proceso de soporte técnico para ofrecer una experiencia de soporte más moderna y avanzada. 
 
@@ -83,10 +83,9 @@ Para obtener información sobre cómo abrir vales de soporte técnico, póngase 
 > Si tiene un contrato de soporte técnico de permier con Microsoft, verá la etiqueta premier en el widget. Si no es así, póngase en contacto con el administrador de cuentas de Microsoft.
 
 ### <a name="contact-support"></a>Ponerse en contacto con soporte técnico
-Esta opción está disponible haciendo clic en el icono que parece un auricular. A continuación, recibirá la siguiente página para enviar el caso de soporte técnico: </br>
+Esta opción está disponible haciendo clic en el icono que parece un auricular. A continuación, recibirá la siguiente página para enviar el caso de soporte técnico: :::image type="content" source="../../media/contactsupport2.png" alt-text="póngase en contacto con el soporte técnico 2":::
 
-:::image type="content" source="../../media/contactsupport2.png" alt-text="soporte técnico de contacto 2"::: </br>
-
+![Imagen del widget abrir una solicitud de servicio](images/contact-support-screen.png)
 
 1. Rellene un título y una descripción del problema al que se enfrenta, así como un número de teléfono y una dirección de correo electrónico donde podamos contactar con usted.
 

@@ -9,33 +9,61 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d4e8285bb4d589bc527db8d979a0223d3f64b8ec
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 31446b7f2afd316929443a3aa36cb73addbf9a2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287848"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542014"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
 Puedes enviar vales de soporte técnico o solicitudes de comentarios a Microsoft mediante el portal Escritorio administrado de Microsoft administración. Las solicitudes de soporte técnico siempre se priorizan sobre los envíos de comentarios. Las solicitudes de soporte técnico se triagen y se administran según la gravedad tal como se describe en la tabla de definición [de gravedad](#sev). Se revisan los comentarios y se proporciona una respuesta cuando se solicita. 
 
-> [!IMPORTANT]
-> Asegúrate de configurar un [contacto de administrador](../get-started/add-admin-contacts.md) para el empaquetado de aplicaciones, dispositivos, seguridad y otras solicitudes. No podrás enviar una solicitud de soporte técnico en ninguna de estas áreas si no proporcionas un contacto de administrador.
 
-**Para enviar una solicitud de soporte técnico**
+## <a name="open-a-new-support-request"></a>Abrir una nueva solicitud de soporte técnico
 
 1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **Administración de inquilinos.**
 2. Busque la sección Escritorio administrado de Microsoft y, a continuación, seleccione **Solicitud de servicio**.
 3. En **Solicitudes de soporte** técnico, seleccione + Nuevo vale de soporte **técnico**.
 4. Seleccione el **tipo de solicitud de soporte** técnico que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones. 
-5. Seleccione el **nivel de gravedad**. Para obtener más información, vea [Support request severity definitions](#sev). 
+5. Seleccione el **nivel de gravedad**. Para obtener más información, vea [Support request severity definitions](#sev).
+6. Proporcione tanta información sobre la solicitud como sea posible para ayudar al equipo a responder rápidamente. Según el tipo de solicitud, es posible que deba proporcionar diferentes detalles.
+7. Revise toda la información que proporcionó para obtener precisión. 
+8. Cuando haya terminado, seleccione **Crear**.
+ 
 
 Tipo de solicitud de soporte técnico | Cuándo usarlo
 --- | ---
 Incidente | Necesita que el equipo Escritorio administrado de Microsoft Operations investigue, por ejemplo, el impacto generalizado de un cambio o una interrupción del servicio.
 Solicitud de información | Está planeando un cambio en las redes, la configuración de proxy, los sistemas VPN, la expiración del certificado o simplemente necesita información sobre el servicio. Se recomienda una respuesta del equipo Escritorio administrado de Microsoft operaciones al comunicar un cambio dentro de la organización.
 Solicitud de cambio | Es necesario que el equipo Escritorio administrado de Microsoft operaciones realice un cambio, como mover dispositivos entre grupos de actualización.
+
+> [!IMPORTANT]
+> Cuando cree una solicitud de soporte técnico, deberá enumerar un contacto principal, responsable de trabajar con nuestros ingenieros de servicio para resolver el problema o responder a cualquier pregunta sobre un cambio solicitado. También es necesario que [](../get-started/add-admin-contacts.md) haya configurado previamente un contacto de administrador que se copiará en todas las notificaciones de caso para su área de enfoque relevante y que se le pida que se haga cargo de un caso si el contacto principal de un caso es inaccesible.
+
+## <a name="manage-an-active-support-request"></a>Administrar una solicitud de soporte técnico activa
+El contacto principal de un [](../get-started/add-admin-contacts.md) caso (y cualquier contacto de administrador para esa área  de foco) recibirá notificaciones por correo electrónico cuando se cree un **caso,** se asigne a un ingeniero de servicio para investigar y se resuelva **.** Si en algún momento tiene alguna pregunta sobre el caso, la mejor manera de ponerse en contacto con nuestro equipo es responder directamente a uno de esos correos electrónicos. Si tenemos preguntas sobre su solicitud o necesitamos más detalles para tomar medidas, le enviaremos un correo electrónico al contacto principal que aparece en las solicitudes de soporte técnico (copiando todos los contactos de administrador relevantes).
+
+### <a name="view-all-your-active-cases"></a>Ver todos los casos activos
+Aunque el correo electrónico es el enfoque recomendado para interactuar con nuestro equipo, es posible que desee ver el estado de resumen de todas las solicitudes de soporte técnico. En cualquier momento, puede usar el portal para ver todas las solicitudes de soporte técnico activas durante los últimos seis meses.
+
+1.  Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **Administración de inquilinos.**
+2.  Busque la sección *Escritorio administrado de Microsoft,* seleccione **Solicitud de servicio**.
+3.  Desde esta vista, puede exportar la vista de resumen o hacer clic en cualquier caso para ver los detalles
+
+### <a name="edit-case-details"></a>Editar detalles del caso
+Si necesita editar los detalles de un caso, por ejemplo, actualizar el contacto principal del caso, deberá seguir estos pasos:
+1.  En la hoja Solicitud  **de** servicio, en el menú Administración de inquilinos de [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), use la barra de búsqueda o los filtros para encontrar el caso que le interesa editar.
+2.  Seleccione el caso para abrir los detalles de la solicitud 
+3.  Desplácese hasta la parte inferior de los detalles de la solicitud y seleccione **Editar**.
+4.  Actualice la información editable, agregue datos adjuntos al caso o agregue una nota para el equipo de Ingeniería de servicios y, a continuación, **seleccione Guardar**.
+
+### <a name="provide-feedback"></a>Enviar comentarios
+
+Agradecemos sus comentarios y los usamos para mejorar la experiencia de soporte técnico del administrador.
+
+Cuando sea el contacto principal de una solicitud de soporte técnico, recibirá un correo electrónico de Escritorio administrado de Microsoft Operations preguntando sobre su experiencia después de que se haya resuelto el problema. Los comentarios se supervisan y comparten activamente con la ingeniería para mejorar el servicio y priorizar las características futuras. Asegúrese de centrarse en su experiencia y no incluir información personal en el formulario de comentarios. Para obtener más información acerca de la privacidad, vea la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 <span id="sev" />
 
@@ -57,13 +85,6 @@ Nivel de gravedad | Situación | Tiempo de respuesta inicial | Respuesta esperad
 - **Compatibilidad de** aplicaciones: para que se considere un problema de compatibilidad de aplicaciones, debe haber un error reproducible, de la misma versión de la aplicación, entre la versión anterior y la actual de Windows o Aplicaciones Microsoft 365 para empresas. Para resolver problemas de compatibilidad de aplicaciones, necesitamos un punto de contacto en su organización con el que trabajar. El contacto debe trabajar directamente con nuestro equipo de Fast Track para investigar y resolver el problema.
 - **Tiempo de respuesta del cliente** Si no puede cumplir los requisitos de respuesta esperados, reduciremos la solicitud en un nivel de gravedad, a un mínimo de gravedad C. Si no responde a las solicitudes de acción, mitigaremos y cerraremos la solicitud de soporte técnico dentro de las 48 horas siguientes a la última solicitud.
 
-## <a name="provide-feedback"></a>Enviar comentarios
-
-Agradecemos sus comentarios y los usamos para mejorar la experiencia de soporte técnico del administrador.
-
-Una vez que un vale  está en estado **Mitigado** o Resuelto, puedes compartir tus comentarios sobre tu experiencia con ese problema en particular. Para compartir comentarios, vaya a la **página Solicitudes de servicio** en el menú Solución de problemas **+** soporte técnico del portal Microsoft Endpoint Manager servicio. Seleccione el vale específico. Los detalles del vale aparecerán en el fly-in del lado derecho. Seleccione la **pestaña Comentarios** y proporcione la información solicitada. Tenga cuidado de no incluir información personal en el formulario de comentarios. Para obtener más información acerca de la privacidad, vea la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
-
-:::image type="content" alt-text="Ejemplo de un formulario de comentarios." source="../../media/feedback_form.png" lightbox="../../media/feedback_form.png":::
 
 ## <a name="more-resources"></a>Más recursos
 

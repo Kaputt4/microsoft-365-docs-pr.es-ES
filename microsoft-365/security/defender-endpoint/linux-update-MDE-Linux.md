@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7ebb37e80cae0e9dd70d01600c47bd1459c122c3
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 1545a44087347544337ca40dee5e95ef7ca6d57d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194906"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541750"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Programar una actualización de Microsoft Defender para punto de conexión (Linux)
 
@@ -47,7 +47,7 @@ Use los siguientes comandos:
 `sudo crontab -l > /var/tmp/cron_backup_201118.dat`
 
 > [!NOTE]
-> Where 201118 == YYMMDD
+> Donde 201118 == YYMMDD
 
 > [!TIP]
 > Haga esto antes de editar o quitar. <br>
@@ -76,15 +76,15 @@ CRON_TZ=America/Los_Angeles
 
 > #<a name="rhel-and-variants-centos-and-oracle-linux"></a>! RHEL y variantes (CentOS y Oracle Linux)
 
-`06**sun[$(date +\%d) -le 15] sudo yum update mdatp>>~/mdatp_cron_job.log`
+`0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log`
 
 > #<a name="sles-and-variants"></a>! SLES y variantes
 
-`06**sun[$(date +\%d) -le 15] sudo zypper update mdatp>>~/mdatp_cron_job.log`
+`0 6 * * sun [ $(date +%d) -le 15 ] && sudo zypper update mdatp >> ~/mdatp_cron_job.log`
 
 > #<a name="ubuntu-and-debian-systems"></a>! Sistemas Ubuntu y Debian
 
-`0 6 * * sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
+`0 6 * * sun [ $(date +%d) -le 15 ] && sudo apt-get install --only-upgrade mdatp >> ~/mdatp_cron_job.log`
 
 > [!NOTE]
 > En los ejemplos anteriores, lo establecemos en 00 minutos, 6 a.m. (hora en formato de 24 horas), cualquier día del mes, cualquier mes, los domingos. [$(date + d) -le 15] == No se ejecutará a menos que sea igual o menor que el \% día 15 (3ª semana). Lo que significa que se ejecutará cada tres domingos (7) del mes a las 6:00 a.m. Pacífico (UTC -8).

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 08774cdfd831556c194b5175879f211efa250632
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 77e3dbd3f819aea15632a0ba069249a44a8663fb
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362743"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542038"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Actividades previas a la migración de Microsoft Cloud Deutschland
 
@@ -119,7 +119,8 @@ Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add
 
 |Pasos|Descripción|Impacto|
 |---|---|---|
-|Limite SharePoint flujos de trabajo de 2013, úsenlo durante la SharePoint en línea.|Reduzca SharePoint flujos de trabajo de 2013 y complete los flujos de trabajo en el vuelo antes de las transiciones.|La inacción puede provocar confusión del usuario y llamadas al servicio de ayuda.|
+|Limite SharePoint flujos de trabajo de 2013, úsenlo durante la SharePoint en línea.|Reduzca SharePoint flujos de trabajo de 2013 y complete los flujos de trabajo en el vuelo antes de las transiciones.|La inacción puede provocar confusión del usuario y llamadas al servicio de ayuda.| 
+Exporte SharePoint de búsqueda si se han aplicado modificaciones. |La SharePoint de búsqueda no se migrará. Si se han aplicado modificaciones SharePoint búsqueda, asegúrese de tomar nota de los cambios y exportar la configuración de búsqueda. La configuración debe importarse de nuevo después de SharePoint se haya completado la transición.|Las soluciones personalizadas basadas en un esquema de búsqueda modificado no estarán disponibles hasta que se hayan aplicado de nuevo las modificaciones de búsqueda.|
 
 
 ## <a name="exchange-online"></a>Exchange Online

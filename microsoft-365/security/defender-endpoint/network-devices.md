@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 86b8a37fd6b2d6f9906321b5d74de0e21c45fca3
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: d1ba87687f5650310b3b94e5827181510b3834c3
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062140"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543658"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 
@@ -32,7 +32,7 @@ ms.locfileid: "53062140"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -40,7 +40,7 @@ ms.locfileid: "53062140"
 > [!NOTE]  
 > El Blog sobre detección de [dispositivos](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) de red y evaluaciones de vulnerabilidad publicado \( el 04-13-2021 proporciona información sobre las nuevas capacidades de detección de dispositivos de red en \) Defender para endpoint.  En este artículo se proporciona  información general sobre el desafío que la detección de dispositivos de red está diseñada para abordar e información detallada sobre cómo empezar a usar estas nuevas funcionalidades.
 
-Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del centro Microsoft 365 seguridad y Centro de seguridad de Microsoft Defender consolas.  
+Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del centro Microsoft 365 seguridad y Microsoft 365 Defender consolas.  
 
 Se usará un dispositivo designado de Microsoft Defender para endpoint en cada segmento de red para realizar exámenes periódicos autenticados de dispositivos de red preconfigurados. Una vez descubierto, las capacidades de Defender for Endpoint Administración de amenazas y vulnerabilidades proporcionan flujos de trabajo integrados para proteger conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace VPN.  
 
@@ -91,7 +91,7 @@ El primer paso es seleccionar un dispositivo que realizará los exámenes de red
 8. Para permitir que el escáner de red se autentique y funcione correctamente, es esencial que agregue los siguientes dominios o direcciones URL:
 
     - login.windows.net  
-    - *.securitycenter.windows.com
+    - *.security.microsoft.com
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
@@ -105,7 +105,7 @@ Para configurar trabajos de evaluación, se requiere la siguiente opción de per
 ## <a name="install-the-network-scanner"></a>Instalar el escáner de red
 
 1. Vaya a Microsoft 365 **de Configuración** de evaluación de puntos de conexión  >    >    >   (en **Evaluaciones de red).**
-    1. En la Centro de seguridad de Microsoft Defender, vaya a Configuración > de trabajos de evaluación.
+    1. En el portal Microsoft 365 Defender, vaya a la página Configuración > trabajos de evaluación.
 
 2. Descargue el escáner de red e instállo en el dispositivo de evaluación de Defender para endpoint designado.
 

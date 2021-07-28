@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bff490edcc79bc8f96e65c8b27586ca8b54e5bce
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fa5786b547fdbb858251eb7728bb2487ee0139ab
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186130"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543682"
 ---
 # <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Usar etiquetas de confidencialidad para dar prioridad a una respuesta a incidentes  
 
@@ -43,7 +43,7 @@ Aprenda a usar etiquetas de confidencialidad de datos para priorizar la investig
 >[!NOTE]
 >Las etiquetas se detectan Windows 10, versión 1809 o posterior.
 
-1. En Centro de seguridad de Microsoft Defender, seleccione **Incidentes**. 
+1. En Microsoft 365 Defender portal, seleccione **Incidentes &**  >  **alertas incidentes**.
 
 2. Desplácese a la derecha para ver la **columna Confidencialidad de** datos. Esta columna refleja las etiquetas de confidencialidad que se han observado en dispositivos relacionados con los incidentes, lo que indica si el incidente puede afectar a los archivos confidenciales.
 

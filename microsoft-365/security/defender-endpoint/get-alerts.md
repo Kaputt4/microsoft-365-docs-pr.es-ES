@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7a508815ca584f28f0a52768ac10a556c3ef621b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289852"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543322"
 ---
 # <a name="list-alerts-api"></a>API de listas de alertas
 
@@ -61,8 +61,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación | Alert.Read.All | 'Leer todas las alertas'
-Aplicación | Alert.ReadWrite.All | 'Leer y escribir todas las alertas'
+Application | Alert.Read.All | 'Leer todas las alertas'
+Application | Alert.ReadWrite.All | 'Leer y escribir todas las alertas'
 Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
 Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
 
@@ -82,7 +82,7 @@ GET /api/alerts
 
 Nombre | Tipo | Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization | String | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -145,7 +145,7 @@ Aquí tiene un ejemplo de la respuesta.
             ],
             "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
             "comments": [
                 {
@@ -215,7 +215,7 @@ Aquí tiene un ejemplo de la respuesta.
             ],
             "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
             "comments": [
                 {
@@ -245,8 +245,8 @@ Aquí tiene un ejemplo de la respuesta.
                     "registryHive": null,
                     "registryValueType": null,
                     "registryValue": null,
-                    "accountName": "eranb",
-                    "domainName": "MIDDLEEAST",
+                    "accountName": "name",
+                    "domainName": "DOMAIN",
                     "userSid": "S-1-5-21-11111607-1111760036-109187956-75141",
                     "aadUserId": "11118379-2a59-1111-ac3c-a51eb4a3c627",
                     "userPrincipalName": "temp123@microsoft.com",

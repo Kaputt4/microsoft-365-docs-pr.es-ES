@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2f02de4b738d9d61ef9f98cd03d15bd91709339e
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 8d16d4640a926697363e7bb7588d80a8c28439df
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314433"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541990"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 
@@ -36,9 +36,37 @@ Para que Microsoft Secure Score sea un mejor representante de su posición de se
 
 Microsoft Secure Score se puede encontrar en https://security.microsoft.com/securescore el centro de Microsoft 365 [seguridad.](overview-security-center.md)
 
+## <a name="july-2021"></a>Julio de 2021
+
+### <a name="added-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Se agregó una acción de mejora relacionada con Microsoft Defender para endpoint
+- Corrección de Microsoft Defender para la recopilación de datos del sensor de extremo para macOS
+- Corrección de Microsoft Defender para comunicaciones con problemas de punto de conexión para macOS
+- Establecer la longitud mínima de contraseña en 15 o más caracteres en macOS
+- Establece "Exigir historial de contraseñas" en "24 o más contraseñas" en macOS
+- Establecer "Antigüedad máxima de contraseña" en "90 o menos días, pero no 0" en macOS
+- Establecer el umbral de bloqueo de cuentas en 5 o inferior en macOS
+- Activar firewall en macOS
+- Habilitar Gatekeeper
+- Habilitar la protección de integridad del sistema (SIP)
+- Habilitar el cifrado de disco de FileVault
+- Establecer la pantalla para que se bloquee cuando se inicie el protector de pantalla en macOS
+- Asegúrese de que el protector de pantalla está configurado para iniciarse en 20 minutos o menos en macOS
+- Carpetas de inicio seguras
+- Activar la Antivirus de Microsoft Defender en tiempo real para macOS
+- Activar la Antivirus de Microsoft Defender PUA en modo de bloqueo para macOS
+- Habilitar Antivirus de Microsoft Defender de entrega en la nube para macOS
+- Actualizar Antivirus de Microsoft Defender para macOS
+- Corrección de microsoft defender para la recopilación de datos del sensor de extremo para Linux
+- Corregir microsoft defender para las comunicaciones con problemas de punto de conexión para Linux
+- Cuentas de acceso sin restricciones
+- Activar la Antivirus de Microsoft Defender en tiempo real para Linux
+- Activar la protección Antivirus de Microsoft Defender PUA en modo de bloqueo para Linux
+- Habilitar Antivirus de Microsoft Defender de entrega en la nube para Linux
+- Actualizar Antivirus de Microsoft Defender para Linux
+
 ## <a name="june-2021"></a>Junio de 2021
 
-### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>Quitar la acción de mejora relacionada con Microsoft Cloud App Security
+### <a name="removed-improvement-action-related-to-microsoft-cloud-app-security"></a>Se quitó la acción de mejora relacionada con Microsoft Cloud App Security
 
 - Use Cloud App Security para detectar comportamientos anómalos.
 
@@ -79,7 +107,7 @@ La capacidad de crear vales de ServiceNow a través de Puntuación segura yendo 
 
 ## <a name="october-2020"></a>Octubre de 2020
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Quitar la acción de mejora relacionada con Microsoft Defender para endpoint
+### <a name="removed-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Se quitó la acción de mejora relacionada con Microsoft Defender para endpoint
 
 - Establecer SmartScreen de Microsoft Defender Windows de contenido web de la aplicación de la Tienda para advertir
 

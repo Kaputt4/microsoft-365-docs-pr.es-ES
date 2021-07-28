@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 5b723f4faef891c04dc78a18de09a469d703c492
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 182d44c8ad46b8c711705c46aabba3393f4e0801
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228896"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595971"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portales de seguridad de Microsoft y centros de administración
 
@@ -57,6 +57,6 @@ Aunque estos portales no son específicamente para administrar la seguridad, adm
 |---|---|---| 
 | Portal de Azure | Ver y administrar [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) y todos los [recursos de Azure](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Centro de cumplimiento de Microsoft 365 | Administrar directivas de tratamiento de datos y garantizar [el cumplimiento de las normativas](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
-| Centro de administración de Microsoft 365 | Configurar Microsoft 365 servicios; administrar roles, licencias y realizar un seguimiento de las actualizaciones de Microsoft 365 servicios | [admin.microsoft.com](https://admin.microsoft.com/) |
+| Centro de administración de Microsoft 365 | Configurar Microsoft 365 servicios; administrar roles, licencias y realizar un seguimiento de las actualizaciones de Microsoft 365 servicios | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Centro de administración de Microsoft Endpoint Manager | Usar [Microsoft Endpoint Manager](/mem/configmgr/) para administrar y proteger dispositivos con funcionalidades combinadas de Intune y Configuration Manager | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Microsoft Intune portal | Usar [Microsoft Intune](/intune/fundamentals/what-is-intune) para implementar directivas de dispositivos y supervisar dispositivos para el cumplimiento | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

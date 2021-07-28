@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3f0527192a55d67df7e23507bed46df446f8b2b7
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: de3fe133611885dd71458a6104b054fe25d0a524
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165170"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596355"
 ---
 # <a name="deployment-phases"></a>Fases de implementación
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165170"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Obtenga información sobre cómo implementar Microsoft Defender para endpoint para que su empresa pueda aprovechar la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta. 
 
@@ -75,8 +75,8 @@ Aunque Microsoft Defender para endpoint proporciona muchas funcionalidades, el o
 
 Funcionalidad | Descripción 
 :---|:---
-EDR | Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas.
-Protección de última generación | Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para endpoint usa la protección de última generación diseñada para detectar todo tipo de amenazas emergentes.
+Detección y respuesta de puntos de conexión. | Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas.
+Protección de última generación | Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para punto de conexión usa la protección de próxima generación diseñada para detectar todos los tipos de amenazas emergentes.
 Reducción de la superficie expuesta a ataques |  Proporcione la primera línea de defensa en la pila. Al garantizar que las opciones de configuración se establecen correctamente y se aplican técnicas de mitigación de vulnerabilidades, este conjunto de capacidades resiste los ataques y la explotación.
 
 Todas estas funcionalidades están disponibles para microsoft defender para los titulares de licencias de extremo. Para obtener más información, vea [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
@@ -107,7 +107,7 @@ Los siguientes están fuera del ámbito de esta guía de implementación:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Fase 1: Preparación](prepare-deployment.md)
 - [Fase 2: Configuración](production-deployment.md)
 - [Fase 3: Incorporación](onboarding.md)

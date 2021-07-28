@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e1c81a572e74b965842d9b6888c9242b73a822c5
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769574"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543646"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
@@ -49,20 +49,20 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Ruta compuesta|CompoundPath|Compound_path|Ruta de acceso legible humana que describe el origen del elemento.|
 |Contenido*|Contenido||Texto extraído del elemento.|
 |Cuerpo de la conversación|Cuerpo de la conversación||Cuerpo de conversación del elemento.|
-|Tema de conversación|Tema de conversación||Tema de conversación del elemento.|
-|Id. de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje.|
+|Id. de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje. Para Teams 1:1 y chats de grupo, todos los archivos de transcripción y sus elementos de familia dentro de la misma conversación comparten el mismo identificador de conversación. Para obtener más información, vea [Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md). |
 |Índice de conversación||Conversation_index|Índice de conversación del mensaje.|
+|Nombre de conversación | |ConversationName|Nombre del canal en Teams. El formato del nombre depende del tipo de canal: <br/>Teams chats de canal privado y chats de canal privado: <nombre del equipo, nombre del canal> <br/>Teams 1:1 y chats de grupo: Nombre para mostrar y dirección de correo electrónico de todos los participantes de chat<br/>Yammer: Community nombre + primeros 120 caracteres de una publicación<br/>Yammer privado: nombre del remitente y dirección de correo electrónico + primeros 120 caracteres de un mensaje|
 |Hora de pdf de conversación|ConversationPdfTime||Fecha en la que se creó la versión PDF de la conversación.|
 |Tiempo de grabación de redacción de conversación|ConversationRedactionBurnTime||Fecha en la que se creó la versión PDF de la conversación para Chat.|
+|Tema de conversación|Tema de conversación||Tema de conversación del elemento.|
+|Tipo de conversación| ConversationType|ConversationType| Tipo de conversación de chat. Los valores son: <br/> Teams 1:1 y chats de grupo y todas las conversaciones Yammer: **Agrupar** para<br/>Teams canales y canales privados: **Canal**|
+|Contiene mensaje editado |ContainsEditedMessage|ContainsEditedMessage|Indica si la transcripción Teams de chat incluye un mensaje editado
 |||Converted_file_path|Ruta de acceso del archivo de exportación convertido. Solo para uso interno de Microsoft.|
-|Fecha de documento creada|CreatedTime|Doc_date_created|Crear fecha a partir de metadatos del documento.|
 |Custodio|Custodio|Custodio|Nombre del custodio al que se asoció el elemento.|
-|Fecha|Fecha|Fecha|Date es un campo calculado que depende del tipo de archivo.<br /><br />Correo electrónico: fecha de envío<br />Datos adjuntos de correo electrónico: fecha de última modificación del documento; si no está disponible, la fecha de envío del elemento primario<br />Documentos incrustados: fecha de última modificación del documento; si no está disponible, la última fecha de modificación del elemento primario<br />Documentos SPO (incluye datos adjuntos modernos): SharePoint fecha de última modificación; si no está disponible, la fecha de última modificación de los documentos<br />Documentos no Office 365: Fecha de última modificación<br />Reuniones: fecha de inicio de la reunión<br />VoiceMail: fecha de envío<br />MI: Fecha de envío|
-|Otras rutas de acceso|Dedupedcompoundpath|Deduped_compound_path|Lista de rutas de acceso compuestas de documentos que son duplicados exactos (correo electrónico: basado en contenido, documentos: basados en hash).|
-|Otros custodios|DedupedCustodians|Deduped_custodians|Lista de custodios de documentos que son duplicados exactos (para correo electrónico, basado en contenido; para documentos, basados en hash).|
-|Otros IDs de archivo|DedupedFileIds|Deduped_file_IDs|Lista de los nombres de archivo de documentos que son duplicados exactos (para correo electrónico, basado en contenido; para documentos, basados en hash).|
+|Fecha|Fecha|Fecha|Date es un campo calculado que depende del tipo de archivo.<br /><br />Correo electrónico: fecha de envío<br />Datos adjuntos de correo electrónico: fecha de última modificación del documento; si no está disponible, la fecha de envío del elemento primario<br />Documentos incrustados: fecha de última modificación del documento; si no está disponible, la última fecha de modificación del elemento primario<br />Documentos SPO (incluye datos adjuntos modernos): SharePoint fecha de última modificación; si no está disponible, la fecha de última modificación de los documentos<br />Documentos no Office 365: Fecha de última modificación<br />Reuniones: fecha de inicio de la reunión<br />VoiceMail: fecha de envío<br />MI: Fecha de envío<br />Teams: Fecha de envío|
 |Comentarios del documento|DocComments|Doc_comments|Comentarios de los metadatos del documento.|
 |Empresa de documentos||Doc_company|Empresa de los metadatos del documento.|
+|Fecha de documento creada|CreatedTime|Doc_date_created|Crear fecha a partir de metadatos del documento.|
 |DocIndex*|||Índice de la familia. **-1** o **0** significa que es la raíz.|
 |Palabras clave de documento||Doc_keywords|Palabras clave de los metadatos del documento.|
 |Documento modificado por||Doc_modified_by|Fecha de última modificación de los metadatos del documento.|
@@ -89,15 +89,15 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |||Extracted_text_path|Ruta de acceso al archivo de texto extraído en la exportación.|
 |ExtractedTextLength*||Extracted_text_length|Número de caracteres en el texto extraído.|
 |FamilyDuplicateSet*||Family_duplicate_set|Identificador numérico para familias que son exactamente duplicados entre sí (mismo contenido y todos los mismos datos adjuntos).|
-|Id. de familia|FamilyId|Family_ID|Agrupa todos los elementos del correo electrónico. Esto incluye el mensaje y todos los datos adjuntos y los elementos extraídos.|
+|Id. de familia|FamilyId|Family_ID|Agrupa datos adjuntos y elementos extraídos del correo electrónico y chats con su elemento primario. Esto incluye el chat o el correo electrónico y todos los datos adjuntos y elementos extraídos.|
 |Tamaño de familia||Family_size|Número de documentos de la familia.|
-|Clase File|FileClass|File_class|Para el contenido de SharePoint y OneDrive: **Document**; para el contenido de Exchange: **Correo electrónico** o **datos adjuntos**.|
+|Clase File|FileClass|File_class|Para el contenido de SharePoint y OneDrive: **Document**. <br/>Para el contenido de Exchange: **Correo electrónico** o **datos adjuntos**. <br/>Para el contenido de Teams o Yammer: **Conversaciones**. |
 |Id. de archivo|FileId|File_ID|Identificador de documento único dentro del caso.|
 |Fecha de creación del sistema de archivos||File_system_date_created|Fecha de creación desde el sistema de archivos (solo se aplica a datos que no Office 365 datos).|
 |Fecha de modificación del sistema de archivos||File_system_date_modified|Fecha de modificación del sistema de archivos (solo se aplica a datos que no Office 365 datos).|
 |Tipo de archivo|FileType||Tipo de archivo del elemento basado en la extensión de archivo.|
 |Id. de grupo|Id. de grupo|Group_ID|Agrupa todos los elementos para correo electrónico y documentos. Para el correo electrónico, esto incluye el mensaje y todos los datos adjuntos y elementos extraídos. Para los documentos, esto incluye el documento y los elementos incrustados.|
-|Tiene datos adjuntos|HasAttachment|Email_has_attachment|Indica si el mensaje tiene datos adjuntos.|
+|Tiene datos adjuntos|EmailHasAttachment|Email_has_attachment|Indica si el mensaje tiene datos adjuntos.|
 |Tiene abogado|HasAttorney||**True** cuando al menos uno de los participantes se encuentra en la lista de abogados; de lo contrario, el valor es **False**.|
 |HasText*||Has_text|Indica si el elemento tiene texto; los valores posibles **son True** y **False**.|
 |Identificador inmutable||Immutable_ID|Este identificador se usa para identificar de forma única un documento dentro de un conjunto de revisión. Este campo no se puede usar en una búsqueda de conjunto de revisión y el identificador no se puede usar para tener acceso a un documento en su ubicación nativa.|
@@ -133,6 +133,9 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Fecha de creación de O365||O365_date_created|Fecha de creación a partir SharePoint.|
 |Fecha de modificación de O365||O365_date_modified|Fecha de última modificación de SharePoint.|
 |O365 modificado por||O365_modified_by|Modificado por desde SharePoint.|
+|Otros custodios|DedupedCustodians|Deduped_custodians|Lista de custodios de documentos que son duplicados exactos (para correo electrónico, basado en contenido; para documentos, basados en hash).|
+|Otros IDs de archivo|DedupedFileIds|Deduped_file_IDs|Lista de los nombres de archivo de documentos que son duplicados exactos (para correo electrónico, basado en contenido; para documentos, basados en hash).|
+|Otras rutas de acceso|Dedupedcompoundpath|Deduped_compound_path|Lista de rutas de acceso compuestas de documentos que son duplicados exactos (correo electrónico: basado en contenido, documentos: basados en hash).|
 |Id. principal|ParentId|Parent_ID|Id. del elemento primario.|
 |ParentNode||Parent_node|El mensaje de correo electrónico anterior más cercano en el subproceso de correo electrónico.|
 |Dominios de participante|ParticipantDomains|Email_participant_domains|Lista de todos los dominios de participantes de un mensaje.|
@@ -155,7 +158,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Remitente|Remitente|Email_sender|Campo Remitente (De) para tipos de mensaje. Format es **DisplayName \<SmtpAddress>**.|
 |Sender/Author|SenderAuthor||Campo calculado formado por el remitente o autor del elemento.|
 |Dominio del remitente|SenderDomain|Email_sender_domain|Dominio del remitente.|
-|Sent|Sent|Email_date_sent|Fecha de envío del mensaje.|
+|Sent|Sent|Email_date_sent|Fecha de envío del mensaje.<br/>Chats: fecha de inicio de la transcripción|
 |Establecer orden: Primero inclusivo|SetOrderInclusivesFirst|Set_order_inclusives_first|Campo de ordenación: correo electrónico y datos adjuntos: contra cronológicos; documents: pivot first then by descending similarity score.|
 |Id. de conjunto||Set_ID|Los documentos de contenido similar (ND_set) o correo electrónico dentro del mismo subproceso de correo electrónico (Email_set) comparten el mismo Set_ID.|
 |SimilarityPercent||Similarity_percent|Indica lo parecido que es un documento al pivote del conjunto casi duplicado.|
@@ -163,8 +166,9 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Subject|Subject|Email_subject|Asunto del mensaje.|
 |Asunto/Título|SubjectTitle||Campo calculado formado por el asunto o el título del elemento.|
 |Etiquetas|Etiquetas|Etiquetas|Etiquetas aplicadas en un conjunto de revisión.|
+|Teams Nombre del canal|TeamsChannel|Channel_Name|Nombre del canal en Microsoft Teams.|
 |Lista de temas|ThemesList|Themes_list|Lista de temas calculada para análisis.|
-|Título|Título|Doc_title|Título de los metadatos del documento.|
+|Título|Título|Doc_title|Título de los metadatos del documento. Título de los metadatos del documento. Para Teams y Yammer, este es el valor de la propiedad ConversationName.|
 |To|To|Email_to|Para el campo para los tipos de mensaje. Format es **DisplayName \<SmtpAddress>**|
 |Único en el conjunto de correo electrónico|UniqueInEmailSet||**False** si hay un duplicado de los datos adjuntos en su conjunto de correo electrónico.|
 |Id. de grupo de versión||Version_Group_Id|Agrupa las distintas versiones del mismo documento.|

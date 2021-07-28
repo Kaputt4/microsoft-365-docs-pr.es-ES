@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d54732134e91b87b2639634c365556beda5312b0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f935815f7830b8697e1870bde89af8fa056534ff
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934578"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543310"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Implementar Microsoft Defender para endpoint en Linux con Puppet
 
@@ -51,13 +51,13 @@ Además, para la implementación de Puppet, debes familiarizarte con las tareas 
 
 ## <a name="download-the-onboarding-package"></a>Descargar el paquete de incorporación
 
-Descargue el paquete de incorporación desde Centro de seguridad de Microsoft Defender:
+Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
-1. En Centro de seguridad de Microsoft Defender, vaya **a Configuración > Device Management > Onboarding**.
+1. En Microsoft 365 Defender portal, vaya **a Configuración > Endpoints > Administración de dispositivos > Incorporación**.
 2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de** administración de configuración de Linux preferida como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Centro de seguridad de Microsoft Defender captura de pantalla](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender captura de pantalla del portal](images/portal-onboarding-linux-2.png)
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo. 
 

@@ -13,12 +13,12 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 47eb80af58c948db5997dc9f5edfa5737a796837
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2edd4503e25b4ef2ddf4225716a152609c1022b3
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772370"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596319"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>Proteger los datos de la organización con el control de dispositivos
 
@@ -61,7 +61,7 @@ Al seleccionar un evento, aparece un flyout que muestra más información:
 
 - **Detalles generales:** Fecha, modo acción y directiva de este evento.
 - **Información multimedia:** La información multimedia incluye Nombre de medios, Nombre de clase, GUID de clase, Id. de dispositivo, Id. de proveedor, Volumen, Número de serie y Tipo de bus.
-- **Detalles de ubicación:** Nombre del dispositivo y MDATP id. del dispositivo.
+- **Detalles de ubicación:** Nombre del dispositivo e id. de dispositivo MDATP.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 008263bfb948d1a2c52031635d074aca323e6764
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: b7f834a50156f09cd3fca355bbf1dd8f6a853b2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256896"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542134"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -45,7 +45,7 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Microsoft
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-- Acceso al portal de Centro de seguridad de Microsoft Defender web
+- Acceso al portal de Microsoft 365 Defender web
 - Distribución de Linux con [el administrador del](https://systemd.io/) sistema con sistema
 - Experiencia de nivel principiante en scripts de Linux y BASH
 - Privilegios administrativos en el dispositivo (en caso de implementación manual)
@@ -54,8 +54,6 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Microsoft
 >  El agente de Microsoft Defender para Endpoint en Linux es independiente [del agente OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender para endpoint se basa en su propia canalización de telemetría independiente.
 > 
 > Microsoft Defender para Endpoint en Linux aún no está integrado en Azure Security Center.
-
-
 
 ### <a name="installation-instructions"></a>Instrucciones de instalación
 

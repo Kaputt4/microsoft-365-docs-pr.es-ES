@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 8088e1bfb8cbaa2d9c7b094b03a56b54c01f8f69
-  ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+  ms.openlocfilehash: e393ff27b5bd918559346959fda65a057205e29d
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53062389"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53543742"
 title: Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -34,7 +34,7 @@ summary: >
 
   - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 sections:
-- name: Omitido
+- name: Ignorado
   questions:
   - question: >
       ¿La reducción de superficie de ataque (ASR) forma parte de Windows?
@@ -131,35 +131,37 @@ sections:
       abarcando varios pilares de protección, como Office, credenciales, scripts, correo electrónico, etc. Todas las reglas ASR, excepto la persistencia de bloque a través de la suscripción a eventos WMI, se admiten en Windows 1709 y versiones posteriores:
 
 
-      * [Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
+      * [Bloquear el uso indebido de controladores firmados vulnerables explotados](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 
-      * [Bloquear todas Office aplicaciones de creación de procesos secundarios](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
+      * [Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](attack-surface-reduction-rules.md#block-executable-content-from-email-client-and-webmail)
 
-      * [Bloquear Office aplicaciones de creación de contenido ejecutable](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)
+      * [Bloquear todas Office aplicaciones de creación de procesos secundarios](attack-surface-reduction-rules.md#block-all-office-applications-from-creating-child-processes)
 
-      * [Bloquear Office aplicaciones para que no inyecten código en otros procesos](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)
+      * [Bloquear Office aplicaciones de creación de contenido ejecutable](attack-surface-reduction-rules.md#block-office-applications-from-creating-executable-content)
 
-      * [Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](attack-surface-reduction.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+      * [Bloquear Office aplicaciones para que no inyecten código en otros procesos](attack-surface-reduction-rules.md#block-office-applications-from-injecting-code-into-other-processes)
 
-      * [Bloquear la ejecución de scripts potencialmente ofuscados](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
+      * [Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 
-      * [Bloquear llamadas a la API de Win32 desde Office macro](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
+      * [Bloquear la ejecución de scripts potencialmente ofuscados](attack-surface-reduction-rules.md#block-execution-of-potentially-obfuscated-scripts)
 
-      * [Usar protección avanzada contra ransomware](attack-surface-reduction.md#use-advanced-protection-against-ransomware)
+      * [Bloquear llamadas a la API de Win32 desde Office macro](attack-surface-reduction-rules.md#block-win32-api-calls-from-office-macros)
 
-      * [Bloquear el robo de credenciales del subsistema Windows autoridad de](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) seguridad local (lsass.exe)
+      * [Usar protección avanzada contra ransomware](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware)
 
-      * [Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+      * [Bloquear el robo de credenciales del subsistema Windows autoridad de](attack-surface-reduction-rules.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) seguridad local (lsass.exe)
 
-      * [Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+      * [Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 
-      * [Bloquear la ejecución de archivos ejecutables a menos que cumplan con criterios de prevalencia, antigüedad o lista de confianza](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+      * [Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](attack-surface-reduction-rules.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 
-      * [Bloquear Office aplicaciones de comunicación para que no creen procesos secundarios](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)
+      * [Bloquear la ejecución de archivos ejecutables a menos que cumplan con criterios de prevalencia, antigüedad o lista de confianza](attack-surface-reduction-rules.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
 
-      * [Impedir que Adobe Reader cree procesos secundarios](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)
+      * [Bloquear Office aplicaciones de comunicación para que no creen procesos secundarios](attack-surface-reduction-rules.md#block-office-communication-application-from-creating-child-processes)
 
-      * [Bloquear la persistencia a través de la suscripción de eventos WMI](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)
+      * [Impedir que Adobe Reader cree procesos secundarios](attack-surface-reduction-rules.md#block-adobe-reader-from-creating-child-processes)
+
+      * [Bloquear la persistencia a través de la suscripción de eventos WMI](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription)
   - question: >
       ¿Cuáles son algunas recomendaciones para empezar a trabajar con ASR?
     answer: >
@@ -223,7 +225,7 @@ sections:
     answer: >
       Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
   - question: >
-      Consulte también
+      Vea también
     answer: >-
       * [Introducción a la reducción de superficie de ataque](attack-surface-reduction.md)
 

@@ -1,8 +1,7 @@
 ---
-title: Crear un nuevo tema en Temas de Microsoft Viva
-description: Cómo crear un nuevo tema en Temas de Microsoft Viva.
-author: efrene
-ms.author: efrene
+title: Crear un nuevo tema en Temas Microsoft Viva
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,14 +13,15 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 7d1dc1af6e845ccfe2fb0e8f5701a2cd3018c308
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+description: Obtenga información sobre cómo crear un nuevo tema en Temas Microsoft Viva.
+ms.openlocfilehash: 5b275741cad759348bc42ebb6bc7fe0d04199ea5
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687536"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596307"
 ---
-# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Crear un nuevo tema en Temas de Microsoft Viva
+# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Crear un nuevo tema en Temas Microsoft Viva
 
 En Temas de Viva, puede crear un nuevo tema si uno no se detecta a través de la indización o si la tecnología de inteligencia artificial no encontró suficiente evidencia para establecerlo como un tema.
 
@@ -33,7 +33,7 @@ En Temas de Viva, puede crear un nuevo tema si uno no se detecta a través de la
 
 Para crear un nuevo tema, debe:
 - Tener una licencia de Temas Microsoft Viva.
-- Tener permisos para [**Quién crear o editar temas**](./topic-experiences-user-permissions.md). Los Administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Temas Viva. 
+- Tener permisos para [**Quién crear o editar temas**](./topic-experiences-user-permissions.md). Los administradores del conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Temas Viva. 
 
 > [!Note] 
 > Los usuarios que tienen permiso para administrar temas en el centro de temas (administradores de conocimientos) ya tienen permisos para crear y editar temas.
@@ -98,7 +98,7 @@ Puede crear un tema nuevo desde dos ubicaciones:
 
    ![Descripción de temas relacionados](../media/knowledge-management/related-topics-update.png) 
 
-   El tema relacionado que agregó se mostrará como tema conectado.
+   El tema relacionado que agregó se mostrará como un tema conectado.
 
    ![Temas relacionados conectados](../media/knowledge-management/related-topics-final.png) 
 
@@ -116,7 +116,7 @@ Puede crear un tema nuevo desde dos ubicaciones:
 
 9. Seleccione **Publicar** para guardar los cambios. 
 
-Después de publicar la página, se mostrarán el nombre del tema, el nombre alternativo, la descripción y las personas ancladas a todos los usuarios con licencia que visualicen el tema. Los archivos, páginas y sitios específicos solo aparecerán en la página del tema si la persona que lo mira tiene permisos de Office 365 para el elemento. 
+Después de publicar la página, se mostrarán el nombre del tema, el nombre alternativo, la descripción y las personas ancladas a todos los usuarios con licencia que visualicen el tema. Los archivos, páginas y sitios específicos solo aparecerán en la página del tema si la persona que lo mira tiene permisos de Office 365 para el elemento. 
 
 
 

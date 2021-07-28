@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87078bb7bfc6b38788fea2a6a4c3c9108be1d5b4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 81bed621396e4dd8fe57eae157ed2be62f350fc6
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842967"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594939"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Habilitar la integración de SIEM en Microsoft Defender para endpoint
 
@@ -31,9 +31,9 @@ ms.locfileid: "52842967"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Habilite la integración de la información de seguridad y la administración de eventos (SIEM) para que pueda extraer detecciones de Centro de seguridad de Microsoft Defender. Extraer detecciones mediante la solución SIEM o mediante la conexión directa a la API de REST de detecciones.
+Habilite la integración de la información de seguridad y la administración de eventos (SIEM) para que pueda extraer detecciones de Microsoft 365 Defender. Extraer detecciones mediante la solución SIEM o mediante la conexión directa a la API de REST de detecciones.
 
 >[!NOTE]
 >- [Microsoft Defender para alerta de](alerts.md) extremo se compone de una o más detecciones.
@@ -52,12 +52,13 @@ Habilite la integración de la información de seguridad y la administración de
 - Durante la activación inicial, se muestra una pantalla emergente para especificar las credenciales. Asegúrese de permitir las ventanas emergentes para este sitio.
 
 ## <a name="enabling-siem-integration"></a>Habilitar la integración de SIEM 
-1. En el panel de navegación, **seleccione Configuración**  >  **SIEM**.
 
-    ![Imagen de la integración siem desde Configuración menu1](images/enable_siem.png)
+1. En el panel de navegación, **seleccione Configuración** API de puntos de  >  **conexión**  >    >  **SIEM**.
 
-    >[!TIP]
-    >Si se produce un error al intentar habilitar la aplicación de conector SIEM, compruebe la configuración del bloqueador de elementos emergentes del explorador. Puede que esté bloqueando la nueva ventana que se abre al habilitar la funcionalidad. 
+      :::image type="content" source="../../media/enable-siemnew.png" alt-text="Imagen de la integración siem desde Configuración menu1":::
+
+      >[!TIP]
+      >Si se produce un error al intentar habilitar la aplicación de conector SIEM, compruebe la configuración del bloqueador de elementos emergentes del explorador. Puede que esté bloqueando la nueva ventana que se abre al habilitar la funcionalidad. 
 
 2. Seleccione **Habilitar integración SIEM**. De este modo, se activa la sección de detalles de acceso al conector **SIEM** con valores rellenados previamente y se crea una aplicación en el espacio empresarial de Azure Active Directory (Azure AD).
 
@@ -85,12 +86,12 @@ Habilite la integración de la información de seguridad y la administración de
 
 6. Siga las instrucciones para crear un registro de aplicaciones de Azure AD para [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) y asígnele los permisos correctos para leer alertas.
 
-Ahora puede continuar con la configuración de la solución SIEM o la conexión a la API de REST de detecciones a través del acceso mediante programación. Tendrás que usar los tokens al configurar la solución SIEM para permitir que reciba detecciones de Centro de seguridad de Microsoft Defender.
+Ahora puede continuar con la configuración de la solución SIEM o la conexión a la API de REST de detecciones a través del acceso mediante programación. Tendrás que usar los tokens al configurar la solución SIEM para permitir que reciba detecciones de Microsoft 365 Defender.
 
 ## <a name="integrate-microsoft-defender-for-endpoint-with-ibm-qradar"></a>Integrar Microsoft Defender para endpoint con IBM QRadar 
 Puede configurar IBM QRadar para recopilar detecciones de Microsoft Defender para endpoint. Para obtener más información, vea [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Configurar HP ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Campos de Microsoft Defender para detección de puntos de conexión](api-portal-mapping.md)
 - [Extraer Microsoft Defender para detecciones de puntos de conexión mediante la API de REST](pull-alerts-using-rest-api.md)

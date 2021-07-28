@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ceccd9e3c8a8137f672e7be519675034a84c7881
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 3dbadc6c69c243ef18b80207fc5b64a51d1f993b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055106"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542158"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender para punto de conexión en Android
 
@@ -59,7 +59,7 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Defender 
 
 -   **Para administradores**
 
-    -   Acceso al portal Centro de seguridad de Microsoft Defender web.
+    -   Acceso al portal Microsoft 365 Defender web.
 
         > [!NOTE]
         > Microsoft Intune es la única solución de administración de dispositivos móviles (MDM) compatible para implementar Microsoft Defender para Endpoint en Android. Actualmente, solo se admiten dispositivos inscritos para aplicar las directivas de cumplimiento de dispositivos relacionados con Defender for Endpoint en Android en Intune. 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a031a35929f319e87a9ad1a9ca48d6bf95a3ef72
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 87d9d768a81d8e6ddd72753fe7372f18c13254e1
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861580"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542956"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión
 
@@ -51,7 +51,7 @@ Durante el proceso de incorporación, la lista **de** dispositivos se rellena gr
 >[!NOTE]
 > Si exportas la lista de dispositivos, contendrá todos los dispositivos de tu organización. Puede tardar mucho tiempo en descargarse, según el tamaño de la organización. Al exportar la lista en formato CSV, se muestran los datos sin filtrar. El archivo CSV incluirá todos los dispositivos de la organización, independientemente de cualquier filtrado aplicado en la vista en sí.
 
-![Imagen de la lista de dispositivos con lista de dispositivos](images/device-list.png)
+![Imagen de la lista de dispositivos con lista de dispositivos](images/device-inventory.png)
 
 ## <a name="sort-and-filter-the-device-list"></a>Ordenar y filtrar la lista de dispositivos
 
@@ -103,7 +103,7 @@ Para ver los dispositivos que pueden verse afectados por una amenaza determinada
 
 Para obtener más información sobre determinadas amenazas, consulte [Análisis de amenazas.](threat-analytics.md) Para obtener información sobre mitigación, [vea Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md).
 
-### <a name="windows-10-version"></a>Windows 10 versión
+### <a name="windows-10-version"></a>Versión de Windows 10
 
 Seleccione solo las Windows 10 que está interesado en investigar.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0cb4a3d01c1380f4fd06999c8f81a4054e2fd00
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c1809969d37d2e3cfb9279eb8266a65ba098b3c6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844435"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542110"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -85,7 +85,7 @@ Revise los siguientes detalles para comprobar los requisitos mínimos del sistem
 1. Descargue el archivo de instalación del agente: Windows agente de [64](https://go.microsoft.com/fwlink/?LinkId=828603) bits o Windows agente de [32 bits](https://go.microsoft.com/fwlink/?LinkId=828604).
 
 2. Obtenga el identificador del área de trabajo:
-   - En el panel de navegación Defender para endpoint, **seleccione Configuración > Administración de dispositivos > incorporación**
+   - En el panel de navegación Defender para endpoint, seleccione **Configuración > endpoints > Administración de dispositivos > incorporación**
    - Seleccione **Windows 7 SP1 y 8.1** como sistema operativo
    - Copiar el identificador del área de trabajo y la clave del área de trabajo
 

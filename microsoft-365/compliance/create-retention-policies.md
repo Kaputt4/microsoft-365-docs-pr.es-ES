@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 512bf7ed8eeaf8bea58d0a1a1e54d0ad2315bddc
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362335"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542050"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -53,6 +53,7 @@ Aunque una directiva de retención puede admitir varios servicios identificados 
 - Carpetas públicas de Exchange
 - Mensajes de canal de Teams
 - Chats de Teams
+- Mensajes del canal privado de Teams
 - Mensajes de la comunidad de Yammer
 - Mensajes del usuario de Yammer
 

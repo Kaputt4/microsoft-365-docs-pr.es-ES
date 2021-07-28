@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre cómo y por qué cambiar el nombre de un modelo en Microsoft SharePoint Syntex.
-ms.openlocfilehash: d0d17f040199b2e6b60bfc98d325f18b6de0b7f2
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d1a96646f507a3124759b2a5865440d4d5621209
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51446061"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595935"
 ---
 # <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>Cambiar el nombre de un modelo en Microsoft SharePoint Syntex
 

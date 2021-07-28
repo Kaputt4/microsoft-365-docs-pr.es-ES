@@ -15,12 +15,12 @@ ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 83e37b6d59d7356b53e5024204e39473764cea72
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: baec5e1e35c93213be67df1163113cfe3cb3dd29
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924920"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596271"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -49,7 +49,9 @@ En esta guía se describe cómo configurar las máquinas virtuales para obtener 
 También puede descargar el documento técnico Antivirus de Microsoft Defender en [Infraestructura de escritorio virtual](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), que analiza la nueva característica de actualización de inteligencia de seguridad compartida, junto con las pruebas de rendimiento y las instrucciones sobre cómo probar el rendimiento del antivirus en su propio VDI.
 
 > [!IMPORTANT]
-> Aunque la VDI se puede hospedar en Windows Server 2012 o Windows Server 2016, las máquinas virtuales (VM) deben ejecutar Windows 10, 1607 como mínimo, debido al aumento de las tecnologías y características de protección que no están disponibles en versiones anteriores de Windows.<br/>Hay mejoras de rendimiento y características en la forma en que Microsoft Defender AV funciona en máquinas virtuales en Windows 10 Insider Preview, compilación 18323 (y versiones posteriores). Identificaremos en esta guía si necesita usar una compilación de Insider Preview; si no se especifica, la versión mínima necesaria para la mejor protección y rendimiento es Windows 10 1607.
+> Aunque la VDI se puede hospedar en Windows Server 2012 o Windows Server 2016, las máquinas virtuales (VM) deben ejecutar Windows 10, 1607 como mínimo, debido al aumento de las tecnologías y características de protección que no están disponibles en versiones anteriores de Windows.
+>
+> Hay mejoras de rendimiento y características en la forma en que Microsoft Defender AV funciona en máquinas virtuales en Windows 10 Insider Preview, compilación 18323 (y versiones posteriores). Identificaremos en esta guía si necesita usar una compilación de Insider Preview; si no se especifica, la versión mínima necesaria para la mejor protección y rendimiento es Windows 10 1607.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Configurar un recurso compartido de archivos VDI dedicado
 
@@ -100,22 +102,23 @@ Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64'
 cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 ```
 
-Puede establecer una tarea programada para que se ejecute una vez al día de modo que siempre que se descargue y desempaquete el paquete, las máquinas virtuales recibirán la nueva actualización. Se recomienda empezar por una vez al día, pero debe experimentar con aumentar o disminuir la frecuencia para comprender el impacto. 
+Puede establecer una tarea programada para que se ejecute una vez al día de modo que siempre que se descargue y desempaquete el paquete, las máquinas virtuales recibirán la nueva actualización.
+Se recomienda empezar por una vez al día, pero debe experimentar con aumentar o disminuir la frecuencia para comprender el impacto.
 
 Los paquetes de inteligencia de seguridad suelen publicarse una vez cada tres o cuatro horas. No se recomienda establecer una frecuencia inferior a cuatro horas porque aumentará la sobrecarga de red en el equipo de administración sin ningún beneficio.
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>Establecer una tarea programada para ejecutar el script de PowerShell
 
-1. En el equipo de administración, abra el menú Inicio y escriba **Programador de tareas**. Ábralo y seleccione **Crear tarea...** en el panel lateral.
+1. En el equipo de administración, abra el menú Inicio y escriba **Programador de tareas**. Ábrala y **seleccione Crear tarea...** en el panel lateral.
 
-2. Escriba el nombre como **Desempaquete de inteligencia de seguridad**. Vaya a la **pestaña Desencadenador.** Seleccione **Nuevo...** > **Diario** y seleccione **Aceptar**.
+2. Escriba el nombre como **Desempaquete de inteligencia de seguridad**. Vaya a la **pestaña Desencadenador.** Seleccione **Nuevo...**  >  **Diario** y seleccione **Aceptar**.
 
 3. Vaya a la **pestaña** Acciones. Seleccione **Nuevo...** Escriba **PowerShell** en el **campo Programa/Script.** Escriba `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` en el campo Agregar **argumentos.** Seleccione **Aceptar**.
 
 4. Puede elegir configurar opciones adicionales si lo desea.
 
 5. Seleccione **Aceptar** para guardar la tarea programada.
- 
+
 Puede iniciar la actualización manualmente haciendo clic con el botón secundario en la tarea y haciendo clic en **Ejecutar**.
 
 ### <a name="download-and-unpackage-manually"></a>Descargar y desempaquete manualmente
@@ -126,7 +129,7 @@ Si prefiere hacer todo manualmente, esto es lo que debe hacer para replicar el c
 
 2. Crear una subcarpeta en *wdav_update* con un nombre GUID, como, por ejemplo, `{00000000-0000-0000-0000-000000000000}`
 
-Este es un ejemplo: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
+   Este es un ejemplo: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
    > [!NOTE]
    > En el script lo establecemos para que los últimos 12 dígitos del GUID sean el año, mes, día y hora en que se descargó el archivo para que se cree una nueva carpeta cada vez. Puede cambiar esto para que el archivo se descargue en la misma carpeta cada vez.
@@ -156,7 +159,7 @@ Puede especificar el tipo de examen que se debe realizar durante un examen progr
 
 3. Establezca la directiva en **Habilitado** y, a continuación, en **Opciones,** seleccione  **Examen rápido**.
 
-4. Seleccione **Aceptar**. 
+4. Seleccione **Aceptar**.
 
 5. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
@@ -166,16 +169,17 @@ A veces, Antivirus de Microsoft Defender notificaciones se pueden enviar o conse
 
 1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** interfaz de  >    >  **cliente**.
 
-2. Seleccione **Suprimir todas las notificaciones** y, a continuación, edite la configuración de directiva. 
+2. Seleccione **Suprimir todas las notificaciones** y, a continuación, edite la configuración de directiva.
 
 3. Establezca la directiva en **Habilitado** y, a continuación, seleccione **Aceptar**.
 
 4. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
-La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en [el portal Microsoft 365 Defender](microsoft-defender-security-center.md).
+La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en [Microsoft 365 Defender portal](microsoft-defender-security-center.md).
 
 > [!TIP]
 > Para abrir el Centro de acciones en Windows 10, siga uno de los pasos siguientes:
+>
 > - En el extremo derecho de la barra de tareas, seleccione el icono centro de acciones.
 > - Presione el Windows tecla de logotipo + A.
 > - En un dispositivo con pantalla táctil, desliza el dedo desde el borde derecho de la pantalla.
@@ -224,7 +228,7 @@ Esta directiva fuerza un examen si la máquina virtual ha perdido dos o más ex�
 4. Haga clic en **Aceptar**.
 
 5. Implemente el objeto de directiva de grupo como suele hacer.
- 
+
 Esta directiva oculta toda la interfaz Antivirus de Microsoft Defender usuario de los usuarios finales de la organización.
 
 ## <a name="exclusions"></a>Exclusiones
@@ -236,5 +240,5 @@ Para obtener más información, [vea Configure Antivirus de Microsoft Defender e
 ## <a name="additional-resources"></a>Recursos adicionales
 
 - [Blog Community tech: Configuración de Antivirus de Microsoft Defender para máquinas VDI no persistentes](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
-- [Foros de TechNet en Servicios de Escritorio remoto y VDI](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
+- [Foros de TechNet en Servicios de Escritorio remoto y VDI](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)
 - [Script de PowerShell SignatureDownloadCustomTask](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)

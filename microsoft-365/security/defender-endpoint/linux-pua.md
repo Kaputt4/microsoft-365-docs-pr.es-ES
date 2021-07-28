@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7ec3399129cc65d75b464f5d5f56bb11250ccaf2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d18ff1a9e060bcc668dd5c52ffd67283539d29b6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933162"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542206"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Detectar y bloquear aplicaciones potencialmente no deseadas con Microsoft Defender para Endpoint en Linux
 
@@ -45,15 +45,15 @@ Estas aplicaciones pueden aumentar el riesgo de que la red se infecte con malwar
 
 Defender para endpoint en Linux puede detectar e informar de archivos PUA. Cuando se configura en modo de bloqueo, los archivos PUA se mueven a la cuarentena.
 
-Cuando se detecta una PUA en un punto de conexión, Defender for Endpoint en Linux mantiene un registro de la infección en el historial de amenazas. El historial se puede visualizar desde el portal Centro de seguridad de Microsoft Defender o a través de la herramienta `mdatp` de línea de comandos. El nombre de la amenaza contendrá la palabra "Application".
+Cuando se detecta una PUA en un punto de conexión, Defender for Endpoint en Linux mantiene un registro de la infección en el historial de amenazas. El historial se puede visualizar desde el portal Microsoft 365 Defender centro o a través de la herramienta `mdatp` de línea de comandos. El nombre de la amenaza contendrá la palabra "Application".
 
 ## <a name="configure-pua-protection"></a>Configurar la protección de LA PUA
 
 La protección de PUA en Defender para Endpoint en Linux se puede configurar de una de las siguientes maneras:
 
 - **Desactivado:** la protección de LA PUA está deshabilitada.
-- **Auditoría:** los archivos PUA se notifican en los registros del producto, pero no en Centro de seguridad de Microsoft Defender. No se almacena ningún registro de la infección en el historial de amenazas y el producto no toma ninguna acción.
-- **Bloquear:** los archivos PUA se notifican en los registros del producto y en Centro de seguridad de Microsoft Defender. Un registro de la infección se almacena en el historial de amenazas y el producto toma medidas.
+- **Auditoría:** los archivos PUA se notifican en los registros del producto, pero no en Microsoft 365 Defender. No se almacena ningún registro de la infección en el historial de amenazas y el producto no toma ninguna acción.
+- **Bloquear:** los archivos PUA se notifican en los registros del producto y en Microsoft 365 Defender. Un registro de la infección se almacena en el historial de amenazas y el producto toma medidas.
 
 >[!WARNING]
 >De forma predeterminada, la protección pua está configurada en **modo auditoría.**

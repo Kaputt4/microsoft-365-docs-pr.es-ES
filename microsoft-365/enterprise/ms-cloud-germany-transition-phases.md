@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 2efb1ad941c06ed3273032eb8ce14d81dd2eb834
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 37c8e1d879bc296b226fb4d616d798d4c38b4a0d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286158"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542026"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland
 
@@ -158,6 +158,7 @@ Consideraciones adicionales:
 - Los clientes de Microsoft Cloud Deutschland cuya instancia de SharePoint SharePoint Online aún no se ha migrado deben permanecer en un módulo de PowerShell en línea/Microsoft.SharePointOnline.CSOM versión 16.0.20616.12000 o inferior. De lo contrario, las conexiones SharePoint Online a través de PowerShell o el modelo de objetos del lado cliente producirán un error.
 - Durante esta fase, las direcciones IP detrás del SharePoint las direcciones URL cambiarán. Después de la transición a los servicios globales de Office 365, las direcciones de las direcciones URL de inquilino conservadas (por ejemplo, y ) se cambiarán a las direcciones URL e intervalos de direcciones IP de Microsoft 365 en todo el mundo `contoso.sharepoint.de` `contoso-my.sharepoint.de` [(SharePoint Online y OneDrive para la Empresa).](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business)
 - Aunque SharePoint y OneDrive servicios se transiciónn, Office Online puede que no funcione como se esperaba.
+- Si se ha aplicado una configuración de búsqueda personalizada, importe la configuración de búsqueda una vez finalizada la transición. La configuración de búsqueda debe exportarse antes de la transición, tal como se describe en los pasos [previos](ms-cloud-germany-transition-add-pre-work.md#sharepoint-online)a la migración para SharePoint Online .
 
 > [!NOTE]
 > En caso de que use eDiscovery, asegúrese de que conoce la experiencia de migración de [exhibición de documentos electrónicos.](ms-cloud-germany-transition-add-scc.md)
@@ -192,7 +193,7 @@ Los clientes que no realicen estas actualizaciones de DNS al finalizar la fase d
 > [!NOTE]
 > Los errores de validación en el Centro de administración para dominios personalizados para la entrada Detección automática se pueden omitir. Los servicios solo funcionarán correctamente cuando el registro CNAME se haya cambiado a autodiscover.outlook.com.
 
-### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
+### <a name="exchange-online-powershell"></a>PowerShell de Exchange Online
 
 **Se aplica a: Exchange Online** administradores con Exchange Online PowerShell
 

@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/13/2021
+ms.date: 07/20/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 1915a57becb1cba14605f4512ff123c1bca846bb
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: b5c2694437333f197f3c9b04fd1f10fb581cd4d2
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415604"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596115"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo
 
@@ -35,11 +35,11 @@ ms.locfileid: "53415604"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>¿Qué EDR en modo de bloqueo?
 
-[La detección](overview-endpoint-detection-response.md) y respuesta de puntos de conexión (EDR) en modo de bloqueo proporciona protección adicional contra artefactos malintencionados cuando Antivirus de Microsoft Defender no es el producto antivirus principal y se ejecuta en modo pasivo. EDR en modo de bloqueo corrige artefactos malintencionados que se detectan mediante EDR. Es posible que el producto antivirus principal que no es Microsoft no haya perdido estos artefactos. EDR en modo de bloqueo funciona en segundo plano para corregir artefactos malintencionados que se detectan, después de la infracción, en un dispositivo. 
+[La detección](overview-endpoint-detection-response.md) y respuesta de puntos de conexión (EDR) en modo de bloqueo proporciona protección adicional contra artefactos malintencionados cuando Antivirus de Microsoft Defender no es el producto antivirus principal y se ejecuta en modo pasivo. EDR en modo de bloqueo funciona en segundo plano para corregir artefactos malintencionados detectados por EDR funcionalidades. Es posible que el producto antivirus principal que no es Microsoft no haya perdido estos artefactos. 
 
 > [!IMPORTANT]
 > EDR en modo de bloqueo no proporciona toda la protección disponible cuando Antivirus de Microsoft Defender la protección en tiempo real está habilitada. Todas las características que dependen de Antivirus de Microsoft Defender para ser la solución antivirus activa no funcionarán, incluidos los siguientes ejemplos clave: 
@@ -74,7 +74,8 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 
 2. Elija **Configuración**  >  **endpoints**  >  **General**  >  **Advanced .**
 
-3. Desplácese hacia abajo y, a continuación, urn **en Habilitar EDR en modo de bloque**.
+3. Desplácese hacia abajo y, a continuación, active **Habilitar EDR en modo de bloque**.
+
 
 > [!NOTE]
 > EDR en modo de bloque solo se puede desactivar en el portal de Microsoft 365 Defender ( ) o en el [https://security.microsoft.com](https://security.microsoft.com) antiguo Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). No puede usar claves del Registro, Microsoft Intune o directiva de grupo para habilitar o deshabilitar EDR en modo de bloque.

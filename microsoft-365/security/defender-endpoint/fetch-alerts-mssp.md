@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c1695729a12f9cce74663c35f6a9cd537ac468b6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770774"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543490"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Capturar alertas desde el inquilino del cliente de MSSP
 
@@ -49,8 +49,8 @@ Paso 1: Crear una aplicación de terceros
 
 Paso 2: Obtener tokens de acceso y actualización desde el inquilino del cliente
  
-Paso 3: permitir que la aplicación se Centro de seguridad de Microsoft Defender
- 
+Paso 3: permitir que la aplicación se Microsoft 365 Defender
+
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>Paso 1: Crear una aplicación en Azure Active Directory (Azure AD)
  
 Deberá crear una aplicación y concederle permisos para capturar alertas desde el inquilino de Microsoft Defender para endpoint del cliente.
@@ -160,14 +160,14 @@ Después de proporcionar sus credenciales, deberá conceder el consentimiento a 
 
 8. En la ventana de PowerShell, recibirá un token de acceso y un token de actualización. Guarde el token de actualización para configurar el conector SIEM. 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Paso 3: Permitir que la aplicación se Centro de seguridad de Microsoft Defender
-Tendrás que permitir la aplicación que creaste en Centro de seguridad de Microsoft Defender.
+### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>Paso 3: Permitir que la aplicación se Microsoft 365 Defender
+Tendrás que permitir la aplicación que creaste en Microsoft 365 Defender.
  
 Deberá tener permiso Administrar configuración **del sistema del portal** para permitir la aplicación. De lo contrario, tendrá que solicitar al cliente que le permita la aplicación.
 
-1. Vaya a `https://securitycenter.windows.com?tid=<customer_tenant_id>` (reemplace \<customer_tenant_id\> por el identificador de inquilino del cliente.
+1. Vaya a `https://security.microsoft.com?tid=<customer_tenant_id>` (reemplace \<customer_tenant_id\> por el identificador de inquilino del cliente.
 
-2. Haga **clic Configuración**  >  **siem**. 
+2. Haga **clic Configuración** API de puntos de  >    >  **conexión**  >  **SIEM**. 
 
 3. Seleccione la **pestaña MSSP.**
 
@@ -187,7 +187,7 @@ Ahora puede descargar el archivo de configuración correspondiente para siem y c
 Para obtener información sobre cómo capturar alertas mediante la API de REST, vea [Extraer alertas mediante la API de REST](pull-alerts-using-rest-api.md).
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Conceder acceso a MSSP al portal](grant-mssp-access.md)
 - [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
 - [Configurar notificaciones de alerta](configure-mssp-notifications.md)

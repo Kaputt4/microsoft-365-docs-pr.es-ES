@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Obtenga información sobre cómo redirigir automáticamente Office 365 usuarios del Centro de seguridad y cumplimiento al Centro de cumplimiento de Microsoft 365..
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 62fc302f9f065ac7bb0475a6e72dc240a56a1fe1
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 167a38d4f4cd06f98993f401d72f9b6dafa29f40
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339411"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543634"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Redirigir usuarios desde el Office 365 seguridad y cumplimiento al Centro de cumplimiento de Microsoft 365
 
@@ -24,18 +24,19 @@ En este artículo se explica cómo funciona la redirección automática para los
 
 ## <a name="what-to-expect"></a>Qué esperar
 
-El redireccionamiento automático está habilitado de forma predeterminada para todos los usuarios que tengan acceso a las siguientes soluciones relacionadas con el cumplimiento en Office 365 seguridad y cumplimiento (protection.office.com):
+La redirección automática está habilitada de forma predeterminada para todos los usuarios que tienen acceso a soluciones relacionadas con el cumplimiento en Office 365 seguridad y cumplimiento (protection.office.com):
 
-- Prevención de pérdida de datos (DLP)
-- Clasificación
-- Información de gobierno
-- Administración de registros
-- Cumplimiento de comunicaciones (anteriormente "Supervisión")
+- [eDiscovery avanzado](overview-ediscovery-20.md)
+- [Cumplimiento de las comunicaciones](communication-compliance.md)
+- [Búsqueda de contenido](search-for-content.md)
+- [Core eDiscovery](get-started-core-ediscovery.md)
+- [Clasificación de datos](data-classification-overview.md)
+- [Prevención de pérdida de datos (DLP)](dlp-learn-about-dlp.md)
+- [Solicitudes de interesados](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
+- [Gobierno de información](manage-information-governance.md)
+- [Administración de registros](records-management.md)
 
 Los usuarios se enruta automáticamente a las mismas soluciones de cumplimiento en el Centro de cumplimiento de Microsoft 365 (compliance.microsoft.com).
-
-> [!NOTE]
-> Para otras soluciones de cumplimiento incluidas en el Centro de seguridad y cumplimiento de Office 365, los usuarios seguirán administrando estas soluciones en el Centro de cumplimiento de Microsoft 365 o en el Centro de seguridad y cumplimiento de Office 365. La redirección automática de estas soluciones de cumplimiento estará disponible próximamente.
 
 Esta característica y los controles asociados no habilitan la redirección automática de características de seguridad para Microsoft Defender para Office 365. Para habilitar el redireccionamiento de características de seguridad, vea [Redirecting accounts from Microsoft Defender for Office 365 to the Microsoft 365 security center](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) para obtener más información.
 
@@ -44,7 +45,7 @@ Esta característica y los controles asociados no habilitan la redirección auto
 Si algo no funciona para usted o si hay algo que no puede completar a través del portal de Centro de cumplimiento de Microsoft 365, puede deshabilitar temporalmente el redireccionamiento automático para todos los usuarios.
 
 > [!IMPORTANT]
-> El Centro de cumplimiento de Microsoft 365 es el portal de administración de reemplazo para soluciones de cumplimiento actualmente administradas en el centro de seguridad y cumplimiento Office 365 de cumplimiento. Todas Microsoft 365 de cumplimiento normativo se administrarán únicamente en el Centro de cumplimiento de Microsoft 365. Deshabilitar la redirección a la Centro de cumplimiento de Microsoft 365 debe ser una solución a corto plazo.
+> El Centro de cumplimiento de Microsoft 365 es el portal de administración de reemplazo para soluciones de cumplimiento actualmente administradas en el centro de seguridad y cumplimiento Office 365 de cumplimiento. Todas Microsoft 365 de cumplimiento normativo se administrarán únicamente en el Centro de cumplimiento de Microsoft 365. Deshabilitar la redirección a la Centro de cumplimiento de Microsoft 365 debe considerarse una solución a corto plazo.
 
 Para volver al Centro Office 365 seguridad y cumplimiento (protection.microsoft.com) para todos los usuarios, siga estos pasos:
 

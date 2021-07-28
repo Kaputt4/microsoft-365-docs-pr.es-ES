@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4793f3c84ddda0db7f4d67ac96cb31a6e2108c57
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 6e5bb710598e13a47f11a4392985276525760dca
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327004"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542122"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender para punto de conexión para plataformas que no sean de Windows
 
@@ -76,7 +76,7 @@ Para obtener más información sobre cómo empezar, visite la documentación de 
 
 ## <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender para punto de conexión en iOS
 
-Microsoft Defender para endpoint en iOS es nuestra solución de defensa contra amenazas móviles para dispositivos que ejecutan iOS 11.0 y posterior. Se admiten dispositivos supervisados y no supervisados. En iOS, ofrecemos protección web que incluye anti phishing, bloqueo de conexiones no seguras y configuración de indicadores personalizados. Para obtener más información acerca de las características y ventajas clave, lea nuestros [anuncios](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS). 
+Microsoft Defender para endpoint en iOS es nuestra solución de defensa contra amenazas móviles para dispositivos que ejecutan iOS 11.0 y posterior. Se admiten dispositivos registrados en el inquilino de un cliente (inscritos o no inscritos). Se admiten dispositivos inscritos supervisados y no supervisados. En iOS, ofrecemos protección web, que incluye anti phishing, bloqueo de conexiones no seguras y configuración de indicadores personalizados, y detección de jailbreak. Para obtener más información acerca de las características y ventajas clave, lea nuestros [anuncios](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS). 
 
 Para obtener más información sobre cómo empezar, visite la documentación de Microsoft Defender para endpoint en [iOS](microsoft-defender-endpoint-ios.md).
 

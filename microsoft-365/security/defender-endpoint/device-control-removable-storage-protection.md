@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8d36d01c0ccedf11e40f980df8c21997a11ad49f
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538392"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596286"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender para Endpoint Device Control Removable Storage Protection
 
@@ -35,7 +35,8 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection imp
 
 **Funcionalidades:** impedir la instalación con o sin exclusión basada en varias propiedades del dispositivo.
 
-**Descripción**
+**Windows 10 de soporte técnico:**
+
 - Se aplica a nivel de máquina: se aplica la misma directiva para cualquier usuario que haya iniciado sesión.
 - Admite MEM y GPO.
 - Compatible con '[Propiedades de dispositivo](#device-properties)' como se muestra.
@@ -43,37 +44,42 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection imp
 
 **Plataforma compatible:** Windows 10
 
-**Descripción**
+**Detalles de soporte técnico de macOS:**
+
 - Se aplica a nivel de máquina: se aplica la misma directiva para cualquier usuario que haya iniciado sesión
 - Para obtener información específica de macOS, consulta [Control de dispositivos para macOS](mac-device-control-overview.md).
- 
+
 **Plataforma compatible:** macOS Catalina 10.15.4+ (con extensiones del sistema habilitadas)
 
 ### <a name="removable-storage-access-control"></a>Control de acceso de almacenamiento extraíble
 
 **Capabilities**
+
 - *Auditoría* Acceso de lectura o escritura o ejecución al almacenamiento extraíble basado en varias propiedades del dispositivo, con o sin exclusión.
 - *Impedir* Acceso de lectura o escritura o ejecución con o sin exclusión: permitir un dispositivo específico basado en varias propiedades del dispositivo.
 
-**Descripción**
-- Se aplica a la máquina o al usuario o a ambos: solo permite a personas específicas que realizan lectura,escritura/ejecución acceder al almacenamiento extraíble específico en un equipo específico.
+**Windows 10 de soporte técnico:**
+
+- Se aplica a la máquina o al usuario o a ambos. Solo permitir que determinadas personas que realizan lectura/escritura/ejecución accedan al almacenamiento extraíble específico en un equipo específico.
 - Admite MEM OMA-URI y GPO.
 - Compatible con '[Propiedades de dispositivo](#device-properties)' como se muestra.
 - Para obtener información sobre la Windows, [consulte Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md).
 
 **Plataforma compatible:** Windows 10
 
-**Descripción**
+**Detalles de soporte técnico de macOS:**
+
 - Se aplica a nivel de máquina: se aplica la misma directiva para cualquier usuario que haya iniciado sesión.
 - Para obtener información específica de macOS, consulta [Control de dispositivos para macOS](mac-device-control-overview.md).
- 
+
 **Plataforma compatible:** macOS Catalina 10.15.4+ (con extensiones del sistema habilitadas)
 
 ### <a name="windows-portable-device-access-control"></a>Windows Control de acceso de dispositivo portátil
 
 **Funcionalidades:** denegar el acceso de lectura o escritura a [cualquier Windows dispositivo](/windows-hardware/drivers/portable/)portátil , por ejemplo: Tableta, iPhone.
 
-**Descripción**
+**Descripción**:
+
 - Se aplica a la máquina o al usuario o a ambos.
 - Admite MEM OMA-URI y GPO.
 
@@ -87,13 +93,14 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection imp
 
 **Plataforma compatible:** Windows 10
 
-### <a name="bitlocker"></a>BitLocker 
+### <a name="bitlocker"></a>BitLocker
 
-**Capabilities**
-- Bloquee los datos que se escribirán en unidades extraíbles que no están BitLocker protegidas.
+**Funcionalidades**:
+
+- Bloquee los datos que se escribirán en unidades extraíbles que no estén protegidas con BitLocker.
 - Bloquear el acceso a unidades extraíbles a menos que estén cifradas en un equipo propiedad de su organización
- 
-**Descripción:** para obtener más información sobre Windows, vea [BitLocker – Removable Drive Configuración](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
+
+**Descripción:** para obtener más información sobre Windows, vea [BitLocker - Removable Drive Configuración](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
 **Plataforma compatible:** Windows 10
 
@@ -101,19 +108,22 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection imp
 
 Microsoft Defender para Endpoint Device Control Removable Storage Protection le permite restringir el acceso de almacenamiento extraíble en función de las propiedades descritas en la tabla siguiente:
 
+<br>
 
-|Nombre de la propiedad  |Directivas aplicables  |Se aplica a sistemas operativos  |Descripción  |
-|---------|---------|---------|---------|
-|Clase device    |     [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)     |   Windows      |  Para obtener información acerca de los formatos de id. de dispositivo, consulta [clase de configuración del dispositivo](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors). **Nota:** La instalación del dispositivo se puede aplicar a cualquier dispositivo, no solo al almacenamiento extraíble.       |
-|Id. principal   |     Control de acceso de almacenamiento extraíble    |   Windows      |      El identificador principal incluye almacenamiento extraíble y CD/DVD.   |
-|Id. de dispositivo     |  [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint;](control-usb-devices-using-intune.md) Control de acceso de almacenamiento extraíble       |      Windows   |    Para obtener información sobre los formatos de id. de dispositivo, consulte [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07      |
-|Id. de hardware     |     [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint;](control-usb-devices-using-intune.md) Control de acceso de almacenamiento extraíble    |     Windows    |    Una cadena identificó el dispositivo en el sistema, por ejemplo, USBSTOR\DiskGeneric_Flash_Disk______8.07; **Nota:** El identificador de hardware no es único; diferentes dispositivos pueden compartir el mismo valor.|
-|Id. de instancia    | Instalación de dispositivos; Control de acceso de almacenamiento extraíble     |     Windows    |   Una cadena identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0      |
-|Nombre descriptivo     |     Control de acceso de almacenamiento extraíble    |   Windows      |    Una cadena adjunta al dispositivo, por ejemplo, Dispositivo USB de disco flash genérico     |
-|Id. de proveedor /Id. de producto     |  Control de acceso de almacenamiento extraíble       |   Windows Mac      |     Id. de proveedor es el código de proveedor de cuatro dígitos que el comité USB asigna al proveedor. Id. de producto es el código de producto de cuatro dígitos que el proveedor asigna al dispositivo; Admite caracteres comodín.    |
-|NumberId de serie     |     Control de acceso de almacenamiento extraíble    |      Windows Mac   |     Por ejemplo, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>    |
+****
+
+|Nombre de la propiedad|Directivas aplicables|Se aplica a sistemas operativos|Descripción|
+|---|---|---|---|
+|Clase device|[Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Para obtener información acerca de los formatos de id. de dispositivo, consulta [clase de configuración del dispositivo](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors). **Nota:** La instalación del dispositivo se puede aplicar a cualquier dispositivo, no solo al almacenamiento extraíble.|
+|Id. principal|Control de acceso de almacenamiento extraíble|Windows|El identificador principal incluye almacenamiento extraíble y CD/DVD.|
+|Id. de dispositivo|[Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint;](control-usb-devices-using-intune.md) Control de acceso de almacenamiento extraíble|Windows|Para obtener información sobre los formatos de id. de dispositivo, consulte [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
+|Id. de hardware|[Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint;](control-usb-devices-using-intune.md) Control de acceso de almacenamiento extraíble|Windows|Una cadena identificó el dispositivo en el sistema, por ejemplo, USBSTOR\DiskGeneric_Flash_Disk______8.07; **Nota:** El identificador de hardware no es único; diferentes dispositivos pueden compartir el mismo valor.|
+|Id. de instancia|Instalación de dispositivos; Control de acceso de almacenamiento extraíble|Windows|Una cadena identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
+|Nombre descriptivo|Control de acceso de almacenamiento extraíble|Windows|Una cadena adjunta al dispositivo, por ejemplo, Dispositivo USB de disco flash genérico|
+|Id. de proveedor /Id. de producto|Control de acceso de almacenamiento extraíble|Windows Mac|Id. de proveedor es el código de proveedor de cuatro dígitos que el comité USB asigna al proveedor. Id. de producto es el código de producto de cuatro dígitos que el proveedor asigna al dispositivo; Admite caracteres comodín.|
+|NumberId de serie|Control de acceso de almacenamiento extraíble|Windows Mac|Por ejemplo, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
+|
 
 ## <a name="related-topic"></a>Tema relacionado
 
 - [Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso](device-control-removable-storage-access-control.md)
-

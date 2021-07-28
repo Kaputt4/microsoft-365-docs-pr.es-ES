@@ -17,19 +17,16 @@ search.appverid:
 - MET150
 description: Obtenga más información sobre como utilizar el esquema de coincidencia de datos exactos y el asistente de tipo de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5fdf289c403d8c09342a1eac1434c4219bb7b13c
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 1cbbb02528e898f775d63bf023b641bdaaeeb07e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861664"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543610"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Utilice el esquema de coincidencia de datos exactos y el asistente para tipos de información confidencial
 
 [Crear un tipo de información confidencial personalizada con una clasificación basada en la coincidencia exacta de datos (EDM) ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)implica muchos pasos.  Puede usar este asistente para crear los archivos de patrón de esquema y de tipo de información confidencial (SIT) (paquete de reglas) para simplificar el proceso.
-
-> [!NOTE]
-> El Esquema de coincidencia exacta de datos y el Asistente para tipos de información confidencial solo están disponibles para las nubes en todo el mundo y GCC.
 
 Este asistente puede ser usado en lugar de:
 
@@ -42,7 +39,7 @@ pasos en la[Parte 1: establecer la clasificación basada en el EDM.](create-cust
 
 1. Familiarícese con los pasos para crear un tipo de información confidencial personalizada con el [ flujo de trabajo del EDM de un vistazo](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).
 
-2. Realice los pasos de la sección [Guardar datos confidenciales en formato .csv](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format).
+2. Realice los pasos descritos en [Guardar datos confidenciales en .csv formato .tsv o .tsv](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format).
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usar el Esquema de coincidencia exacta de datos y el asistente para información de tipo confidencial
 

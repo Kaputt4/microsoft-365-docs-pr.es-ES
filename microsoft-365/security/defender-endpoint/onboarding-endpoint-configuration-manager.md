@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eab23ddeb9011e80cf2835b8d38b2d3fad4b7089
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e04535268c94478c862998cfd91df1680eb22fc0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843511"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542098"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
@@ -117,16 +117,16 @@ Después de completar esta tarea, ahora tienes una colección de dispositivos co
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Paso 2: Configurar Microsoft Defender para las funcionalidades de punto de conexión 
 En esta sección se le guía en la configuración de las siguientes funcionalidades mediante Microsoft Endpoint Configuration Manager en Windows dispositivos:
 
-- [**EDR**](#endpoint-detection-and-response)
+- [**Detección y respuesta de puntos de conexión.**](#endpoint-detection-and-response)
 - [**Protección de última generación**](#next-generation-protection)
 - [**Reducción de la superficie expuesta a ataques**](#attack-surface-reduction)
 
 
-### <a name="endpoint-detection-and-response"></a>EDR
+### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión.
 #### <a name="windows-10"></a>Windows 10
-Desde dentro del Centro de seguridad de Microsoft Defender es posible descargar la directiva ".onboarding" que se puede usar para crear la directiva en System Center Configuration Manager e implementar esa directiva en Windows 10 dispositivos.
+Desde el portal de Microsoft 365 Defender es posible descargar la directiva ".onboarding" que se puede usar para crear la directiva en System Center Configuration Manager e implementar dicha directiva en Windows 10 dispositivos.
 
-1. En un portal Centro de seguridad de Microsoft Defender, [seleccione Configuración y,](https://securitycenter.windows.com/preferences2/onboarding)a continuación, Incorporación .
+1. En un portal Microsoft 365 Defender, [seleccione Configuración y,](https://security.microsoft.com/preferences2/onboarding)a continuación, Incorporación .
 
 
 
@@ -139,9 +139,9 @@ Desde dentro del Centro de seguridad de Microsoft Defender es posible descargar 
     ![Imagen del Asistente para la incorporación de Microsoft Defender para puntos de conexión11](images/mdatp-download-package.png)
 
 4. Guarde el paquete en una ubicación accesible.
-5. En Microsoft Endpoint Configuration Manager, vaya a: **Assets and Compliance > Overview > Endpoint Protection > ATP de Microsoft Defender Policies**.
+5. En Microsoft Endpoint Configuration Manager, vaya a: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
-6. Haga clic con el **botón ATP de Microsoft Defender y** seleccione Crear ATP de Microsoft Defender **directiva**.
+6. Haga clic con el botón **secundario en Directivas de ATP de Microsoft Defender** y seleccione Crear directiva de ATP de Microsoft **Defender**.
 
     ![Imagen de Microsoft Endpoint Configuration Manager wizard12](images/configmgr-create-policy.png)
 
@@ -181,7 +181,7 @@ Desde dentro del Centro de seguridad de Microsoft Defender es posible descargar 
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Versiones anteriores de Windows Client (Windows 7 y Windows 8.1)
 Siga los pasos que se indican a continuación para identificar el identificador del área de trabajo de endpoint y la clave de área de trabajo de Defender for Endpoint, que serán necesarios para la incorporación de versiones anteriores de Windows.
 
-1. En un portal Centro de seguridad de Microsoft Defender, **seleccione Configuración > incorporación .**
+1. En un portal Microsoft 365 Defender, seleccione **Configuración** incorporación de puntos de conexión  >    >   (en **Administración de dispositivos).**
 
 2. En sistema operativo, **elija Windows 7 SP1 y 8.1**.
 
@@ -202,9 +202,9 @@ Siga los pasos que se indican a continuación para identificar el identificador 
 
     -   Windows 7
 
-    -   Windows Server 2016
+    -   Windows Server 2016
 
-    -   Windows Server 2012 R2
+    -   Windows Server 2012 R2
 
     -   Windows Server 2008 R2
 
@@ -267,7 +267,7 @@ Después de completar esta tarea, ahora ha configurado correctamente Antivirus d
 ### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 El pilar de reducción de superficie de ataque de Defender para endpoint incluye el conjunto de características que está disponible en Protección contra vulnerabilidades de seguridad. Reglas de reducción de superficie de ataque (ASR), Acceso controlado a carpetas, Protección de red y Protección contra vulnerabilidades de seguridad. 
 
-Todas estas características proporcionan un modo de auditoría y un modo de bloqueo. En el modo de auditoría no hay ningún impacto para el usuario final. Todo lo que hace es recopilar telemetría adicional y hacer que esté disponible en el Centro de seguridad de Microsoft Defender. El objetivo con una implementación es mover paso a paso los controles de seguridad al modo de bloqueo.
+Todas estas características proporcionan un modo de auditoría y un modo de bloqueo. En el modo de auditoría no hay ningún impacto para el usuario final. Todo lo que hace es recopilar telemetría adicional y hacer que esté disponible en el portal Microsoft 365 Defender web. El objetivo con una implementación es mover paso a paso los controles de seguridad al modo de bloqueo.
 
 Para establecer reglas ASR en modo auditoría:
 
@@ -308,7 +308,7 @@ Después de completar esta tarea, ahora ha configurado correctamente las reglas 
 A continuación se indican pasos adicionales para comprobar si las reglas ASR se aplican correctamente a los puntos de conexión. (Esto puede tardar unos minutos)
 
 
-1. Desde un explorador web, vaya a <https://securitycenter.windows.com> .
+1. Desde un explorador web, vaya a <https://security.microsoft.com> .
 
 2.  Seleccione **Administración de configuración** en el menú del lado izquierdo.
 
