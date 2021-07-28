@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Cómo activar o desactivar la característica de búsqueda de registro de auditoría en el Centro de cumplimiento de Microsoft 365 para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
-ms.openlocfilehash: dd39b883036ce6060aef71c6a927c03f391d827f
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 8da6ba3f8dc9fbc7564b7bd71e71c542cb118057
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341501"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567553"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activar o desactivar la auditoría
 
-El registro de auditoría está activado de forma predeterminada para organizaciones de Microsoft 365 y Office 365 Enterprise. Cuando la auditoría en el Centro de cumplimiento de Microsoft 365 está activada, la actividad de usuario y administrador de su organización se registra en el registro de auditoría y se retiene durante 90 días y hasta un año, según la licencia asignada a los usuarios. Sin embargo, es posible que la organización tenga motivos para no querer registrar y conservar los datos del registro de auditoría. En esos casos, un administrador global puede decidir desactivar la auditoría en Microsoft 365.
+El registro de auditoría estará activado de forma predeterminada para Microsoft 365 y Office 365 organizaciones empresariales. Sin embargo, al configurar una nueva organización Microsoft 365 o Office 365, debe comprobar el estado de auditoría de la organización. Para obtener instrucciones, consulte [la sección Comprobar el estado](#verify-the-auditing-status-for-your-organization) de auditoría de su organización en este artículo. 
 
-Al configurar una nueva organización Microsoft 365 o Office 365, puede comprobar el estado de auditoría de la organización. Para obtener instrucciones, consulte [la sección Comprobar el estado](#verify-the-auditing-status-for-your-organization) de auditoría de su organización en este artículo.
+Cuando la auditoría en el Centro de cumplimiento de Microsoft 365 está activada, la actividad de usuario y administrador de su organización se registra en el registro de auditoría y se retiene durante 90 días y hasta un año, según la licencia asignada a los usuarios. Sin embargo, es posible que la organización tenga motivos para no querer registrar y conservar los datos del registro de auditoría. En esos casos, un administrador global puede decidir desactivar la auditoría en Microsoft 365.
 
 > [!IMPORTANT]
 > Si desactiva la auditoría en Microsoft 365, no puede usar la API de actividad de administración de Office 365 ni Azure Sentinel para obtener acceso a los datos de auditoría de su organización. Desactivar la auditoría siguiendo los pasos descritos en este artículo significa que no se devolverá ningún resultado al buscar en el registro de auditoría mediante el Centro de cumplimiento de Microsoft 365 o al ejecutar el cmdlet **Search-UnifiedAuditLog** en Exchange Online PowerShell. Esto también significa que los registros de auditoría no estarán disponibles a través de la API Office 365 actividad de administración o Azure Sentinel.

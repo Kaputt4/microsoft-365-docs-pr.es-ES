@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar la administración de privacidad para su organización, establecer roles y permisos y configurar opciones importantes.
-ms.openlocfilehash: 5199cf96e9ede3287dc9ac33e26388c065189748
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: f6989de8e9a3926f5d9e43cf08240ce76c85a0c9
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378548"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541018"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Introducción a la administración de privacidad (versión preliminar)
 
@@ -29,11 +29,11 @@ En este artículo: obtenga  información sobre cómo configurar el  acceso a la 
 
 ## <a name="sign-up"></a>Registrarse
 
-La administración de privacidad estará disponible en el Centro de cumplimiento de Microsoft 365. La versión preliminar pública de la administración de privacidad está disponible para las organizaciones con licencias de empresa Office 365 Microsoft 365 E1, E3 y E5. Tras la disponibilidad general de la administración de privacidad, las organizaciones tendrán que obtener una nueva licencia.
+La administración de privacidad está disponible en el Centro de cumplimiento de Microsoft 365. La versión preliminar pública de la administración de privacidad está disponible para las organizaciones con licencias de empresa Office 365 Microsoft 365 E1, E3 y E5. Tras la disponibilidad general de la administración de privacidad, las organizaciones tendrán que obtener una nueva licencia.
 
 Tenga en cuenta que la versión preliminar pública de la administración de privacidad no estará disponible para los clientes del Departamento de Defensa (DoD) Community (GCC) moderados, GCC altos o del Departamento de Defensa ( DoD).
 
-Para empezar con la vista previa pública, obtén la suscripción de vista previa desde el Centro de administración. Si aún no tiene la licencia cuando selecciona por primera vez la administración de privacidad en el centro de cumplimiento, se le dirigirá al Centro de administración para empezar. Se recomienda que el administrador global inicie sesión y establezca los permisos de usuario como se describe a continuación al visitar la administración de privacidad por primera vez. Si no tienes el rol necesario para obtener la suscripción o el consentimiento a los términos de uso de la administración de privacidad, se te pedirá que te contactes con el administrador global para obtener ayuda.
+Para empezar con la vista previa pública, obtén la suscripción de vista previa desde el Centro de administración. Si aún no tienes una suscripción cuando seleccionas por primera vez la administración de privacidad en el centro de cumplimiento, se te dirigirá al Centro de administración para empezar. Se recomienda que el administrador global inicie sesión y establezca los permisos de usuario como se describe a continuación al visitar la administración de privacidad por primera vez. Si no tienes el rol necesario para obtener la suscripción o el consentimiento a los términos de uso de la administración de privacidad, se te pedirá que te contactes con el administrador global para obtener ayuda.
 
 Confirmando que le gustaría empezar a usar señales de administración de privacidad que acepta los términos y el proceso de evaluación de datos personales. Puede revisar los vínculos proporcionados en su totalidad antes de continuar.
 
@@ -73,7 +73,7 @@ Administradores de administración de **privacidad:** los miembros de este grupo
 
 Para ver los roles específicos incluidos en cada grupo de roles, consulte la tabla siguiente.
 
-| **Grupo de funciones**      | **Roles incluidos**                        |
+|   Grupo de funciones        |   Roles incluidos                          |
 |:-- |:--|
 | Administración de privacidad  | Administración de casos                           |
 |                     | Visor de contenido de clasificación de datos        |

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fa9986d9ddab70f050055ce2e3b98357c2ab22c5
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 6243444c6dca31608512dbe9e6183cc7355ef55a
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567157"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588022"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -35,24 +35,22 @@ ms.locfileid: "53567157"
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Las debilidades de seguridad cibernética identificadas en su organización se asignan a recomendaciones de seguridad que se pueden usar y se priorizan por su impacto. Las recomendaciones prioritarias ayudan a acortar el tiempo para mitigar o corregir las vulnerabilidades e impulsar el cumplimiento.
 
 Cada recomendación de seguridad incluye pasos de corrección que se pueden tomar. Para ayudar con la administración de tareas, la recomendación también se puede enviar mediante Microsoft Intune y Microsoft Endpoint Configuration Manager. Cuando cambia el panorama de amenazas, la recomendación también cambia a medida que recopila continuamente información del entorno.
 
->[!TIP]
->Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
 ## <a name="how-it-works"></a>Cómo funciona
 
 Cada dispositivo de la organización se puntua en función de tres factores importantes para ayudar a los clientes a centrarse en las cosas correctas en el momento adecuado.
 
 - **Amenaza:** características de las vulnerabilidades y vulnerabilidades en los dispositivos de la organización y el historial de infracciones. En función de estos factores, las recomendaciones de seguridad muestran los vínculos correspondientes a alertas activas, campañas de amenazas en curso y sus correspondientes informes analíticos de amenazas.
-
-- **Probabilidad de vulneración:** la posición de seguridad y resistencia de la organización frente a las amenazas
-
-- **Valor empresarial:** los activos, los procesos críticos y las propiedades intelectuales de la organización
+- **Probabilidad de vulneración:** la posición de seguridad de la organización y la resistencia frente a las amenazas.
+- **Valor empresarial:** los activos, los procesos críticos y las propiedades intelectuales de la organización.
 
 ## <a name="navigate-to-the-security-recommendations-page"></a>Vaya a la página Recomendaciones de seguridad
 
@@ -84,14 +82,15 @@ Vea recomendaciones, número de puntos débiles encontrados, componentes relacio
 
 El color del gráfico de **dispositivos expuestos** cambia a medida que cambia la tendencia. Si el número de dispositivos expuestos va en aumento, el color cambia a rojo. Si hay una disminución en el número de dispositivos expuestos, el color del gráfico cambiará a verde.
 
->[!NOTE]
->Amenazas y administración de vulnerabilidades muestra dispositivos que estaban en uso hasta **hace 30** días. Esto es diferente del resto de Microsoft Defender para Endpoint, donde si un dispositivo no ha estado en uso durante más de 7 días tiene un estado "Inactivo".
+> [!NOTE]
+> Amenazas y administración de vulnerabilidades muestra dispositivos que estaban en uso hasta **hace 30** días. Esto es diferente del resto de Microsoft Defender para Endpoint, donde si un dispositivo no ha estado en uso durante más de 7 días tiene un estado "Inactivo".
 
 ![Ejemplo de la página de aterrizaje para recomendaciones de seguridad.](images/tvmsecrec-updated.png)
 
 ### <a name="icons"></a>Iconos
 
 Los iconos útiles también llaman rápidamente la atención sobre:
+
 - ![flecha que alcanza un destino](images/tvm_alert_icon.png) posibles alertas activas
 - ![error rojo](images/tvm_bug_icon.png) vulnerabilidades públicas asociadas
 - ![bombilla](images/tvm_insight_icon.png) recomendaciones

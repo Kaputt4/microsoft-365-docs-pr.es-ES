@@ -1,5 +1,5 @@
 ---
-title: Transmitir eventos Microsoft 365 Defender
+title: Transmitir Microsoft 365 Defender eventos
 description: Obtenga información sobre cómo configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a centros de eventos o cuenta de Azure Storage
 keywords: Exportación de datos sin procesar, API de streaming, API, Centros de eventos, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21a83c4876a90a231eb2a78d10a290be2dca2fa0
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 431fd1271bf826ded53f88818741c5bbaa61e9b5
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782492"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588118"
 ---
-# <a name="streaming-api"></a>Streaming API
+# <a name="streaming-api"></a>API de streaming
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,15 +34,15 @@ ms.locfileid: "52782492"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Transmite eventos de búsqueda avanzada a centros de eventos o cuenta de Azure Storage.
 
-Microsoft 365 Defender admite la transmisión de eventos a [través de búsqueda](../defender/advanced-hunting-overview.md) avanzada a un centro de [eventos](/azure/event-hubs/) o una cuenta de [Azure Storage.](/azure/event-hubs/)
+Microsoft 365 Defender permite transmitir eventos a través [de búsqueda avanzada](../defender/advanced-hunting-overview.md) a un centro de [eventos](/azure/event-hubs/) o una cuenta de [Azure Storage](/azure/event-hubs/).
 
-
+Para obtener más información Microsoft 365 Defender la API de streaming, vea el [vídeo](https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga).
 
 ## <a name="in-this-section"></a>En esta sección
 
 Tema | Descripción
 :---|:---
-[Transmitir eventos a Azure Event Hubs](streaming-api-event-hub.md)| Obtenga información sobre cómo habilitar la API de streaming en el inquilino y configurar Microsoft 365 Defender para transmitir [la búsqueda avanzada](../defender/advanced-hunting-overview.md) a los centros de eventos.
+[Transmitir eventos a Azure Event Hubs](streaming-api-event-hub.md)| Obtenga información sobre cómo habilitar la API de streaming en el espacio empresarial y configurar Microsoft 365 Defender para transmitir [la búsqueda avanzada](../defender/advanced-hunting-overview.md) a los centros de eventos.
 [Transmitir eventos a su cuenta de Azure Storage](streaming-api-storage.md)| Obtenga información sobre cómo habilitar la API de streaming en el inquilino y configurar Microsoft 365 Defender para transmitir [la búsqueda avanzada](advanced-hunting-overview.md) a su cuenta de Azure Storage.
 
 

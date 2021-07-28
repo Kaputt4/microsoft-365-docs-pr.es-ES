@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08a500dd548eb960d813d9bc693fa8b8dd871170
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2354a6b86f88ac8d49956677d318700c8e104719
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542302"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588142"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Crear indicadores basados en certificados
 
@@ -33,16 +33,14 @@ ms.locfileid: "53542302"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Puede crear indicadores para certificados. Algunos casos de uso comunes incluyen:
 
 - Escenarios en los que necesitas implementar [](attack-surface-reduction.md) tecnologías de [](controlled-folders.md) bloqueo, como reglas de reducción de superficie de ataque y acceso controlado a carpetas, pero necesitas permitir comportamientos de aplicaciones firmadas agregando el certificado en la lista de permitidos.
 - Bloquear el uso de una aplicación firmada específica en toda la organización. Al crear un indicador para bloquear el certificado de la aplicación, Windows Defender AV evitará las ejecuciones de archivos (bloquear y corregir) y la investigación y corrección automatizadas se comportan igual.
 
-
-### <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-begin"></a>Antes de empezar
 
 Es importante comprender los siguientes requisitos antes de crear indicadores para certificados:
 
@@ -52,32 +50,30 @@ Es importante comprender los siguientes requisitos antes de crear indicadores pa
 - Las definiciones de protección contra virus y amenazas deben estar actualizadas.
 - Actualmente, esta característica admite la introducción de . CER o . Extensiones de archivo PEM.
 
->[!IMPORTANT]
+> [!IMPORTANT]
+>
 > - Un certificado hoja válido es un certificado de firma que tiene una ruta de certificación válida y se debe encadenar a la entidad de certificación raíz (CA) de confianza de Microsoft.  Como alternativa, se puede usar un certificado personalizado (autofirmado) siempre que sea de confianza para el cliente (el certificado de entidad de certificación raíz está instalado en la máquina local "Entidades de certificación raíz de confianza").
 >- Los elementos secundarios o primarios de los EIC de certificado de permitir o bloquear no se incluyen en la funcionalidad de IoC de permitir o bloquear, solo se admiten certificados hoja.
 >- Los certificados firmados por Microsoft no se pueden bloquear.
 
-#### <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>Cree un indicador para certificados desde la página de configuración:
+## <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>Cree un indicador para certificados desde la página de configuración:
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Puede tardar hasta 3 horas en crear y quitar un certificado IoC.
 
-1. En el panel de navegación, **seleccione Configuración**  >  **indicadores** de puntos de  > 
- **conexión** (en **Reglas**).  
+1. En el panel de navegación, **seleccione Configuración** \> **indicadores** de puntos de \> **conexión** (en **Reglas**).
 
+2. Seleccione **Agregar indicador**.
 
-2. Seleccione la **pestaña Certificados.**
-
-3. Seleccione **Agregar elemento**.
-
-4. Especifique los siguientes detalles:
+3. Especifique los siguientes detalles:
    - Indicador: especifique los detalles de la entidad y defina la expiración del indicador.
    - Action: especifique la acción que se va a realizar y proporcione una descripción.
    - Ámbito: defina el ámbito del grupo de máquinas.
 
-5. Revise los detalles de la **pestaña Resumen y,** a continuación, haga clic **en Guardar**.
+4. Revise los detalles de la pestaña Resumen y, a continuación, haga clic **en Guardar**.
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para los archivos](indicator-file.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

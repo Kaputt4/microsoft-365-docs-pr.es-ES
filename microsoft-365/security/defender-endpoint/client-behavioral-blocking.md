@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 83f269a13a54ee38b7e7a464d794d87ddbd7b520
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9a2fa36d7902c66e1ac40f0ecd07c0db38752e8d
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289936"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567505"
 ---
 # <a name="client-behavioral-blocking"></a>Contención y bloqueo de comportamiento del cliente
 
@@ -32,13 +32,13 @@ ms.locfileid: "53289936"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Información general
 
 El bloqueo de comportamiento del cliente es un componente de las capacidades de [contención](behavioral-blocking-containment.md) y bloqueo de comportamiento en Defender para endpoint. A medida que se detectan comportamientos sospechosos en dispositivos (también denominados clientes o extremos), los artefactos (como archivos o aplicaciones) se bloquean, comprueban y corrigen automáticamente. 
 
-:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Protección de cliente y nube":::
+:::image type="content" alt-text="Protección de cliente y nube" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 La protección antivirus funciona mejor cuando se combina con la protección en la nube.
 
@@ -46,7 +46,7 @@ La protección antivirus funciona mejor cuando se combina con la protección en 
 
 [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) detectar comportamientos sospechosos, código malintencionado, ataques sin archivos y en memoria, y mucho más en un dispositivo. Cuando se detectan comportamientos sospechosos, Antivirus de Microsoft Defender supervisa y envía esos comportamientos sospechosos y sus árboles de proceso al servicio de protección en la nube. El aprendizaje automático diferencia entre aplicaciones malintencionadas y comportamientos buenos en milisegundos y clasifica cada artefacto. En tiempo casi real, tan pronto como se encuentra que un artefacto es malintencionado, se bloquea en el dispositivo. 
 
-Cada vez que se [](alerts-queue.md) detecta un comportamiento sospechoso, se genera una alerta y está visible en el [portal](microsoft-defender-security-center.md) de Microsoft 365 Defender (anteriormente el Centro de seguridad de Microsoft Defender).
+Cada vez que se [](alerts-queue.md) detecta un comportamiento sospechoso, se genera una alerta y está visible en el [portal](microsoft-defender-security-center.md) de Microsoft 365 Defender (anteriormente Microsoft 365 Defender).
 
 El bloqueo de comportamiento del cliente es eficaz porque no solo ayuda a evitar que se inicie un ataque, sino que puede ayudar a detener un ataque que se ha comenzado a ejecutar. Además, con el [bloqueo de bucle de comentarios](feedback-loop-blocking.md) (otra capacidad de bloqueo y contención del comportamiento), se evitan ataques en otros dispositivos de la organización.
 
@@ -59,7 +59,7 @@ Las detecciones basadas en comportamiento se denominan según la [matriz de CK&M
 |Acceso inicial | `Behavior:Win32/InitialAccess.*!ml` |
 |Ejecución | `Behavior:Win32/Execution.*!ml` |
 |Persistencia | `Behavior:Win32/Persistence.*!ml` |
-|Escalamiento de privilegios | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|Elevación de privilegios | `Behavior:Win32/PrivilegeEscalation.*!ml` |
 |Evasión de defensa | `Behavior:Win32/DefenseEvasion.*!ml` |
 |Acceso a credenciales | `Behavior:Win32/CredentialAccess.*!ml` |
 |Descubrimiento | `Behavior:Win32/Discovery.*!ml` |

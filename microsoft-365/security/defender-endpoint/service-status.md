@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1b4545daace5df1a1a9c6e827f7d8f1b522a690c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 77d487fd21b5619799c468c658bb4ddb1df8ea11
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687630"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588094"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Comprobar el estado del servicio de punto de conexión de Microsoft Defender
 
@@ -31,9 +31,7 @@ ms.locfileid: "51687630"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-
-
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
 **El estado del** servicio proporciona información sobre el estado actual del servicio Defender for Endpoint. Podrá comprobar si el estado del servicio es correcto o si hay problemas actuales. Si hay problemas, verá información como cuándo se detectó el problema, cuál es la causa raíz preliminar y el tiempo de resolución esperado.
 
@@ -47,6 +45,7 @@ La **página Detalles del** estado del servicio tiene las siguientes pestañas:
 - **Historial de estado**
 
 ## <a name="current-status"></a>Estado actual
+
 La **pestaña Estado actual** muestra el estado actual del servicio Defender para endpoint. Cuando el servicio se ejecuta sin problemas, se muestra un estado de servicio correcto. Si se ven problemas, se muestran los siguientes detalles del servicio para ayudarle a obtener una mejor información sobre el problema:
 
 - Fecha y hora en que se detectó el problema
@@ -54,7 +53,7 @@ La **pestaña Estado actual** muestra el estado actual del servicio Defender par
 - Tiempo de actualización
 - Resumen del impacto
 - Causa raíz preliminar
-- Pasos siguientes
+- Próximos pasos
 - Tiempo de resolución esperado
 
 Las actualizaciones sobre el progreso de un problema se reflejan en la página a medida que se resuelve el problema. Verá actualizaciones sobre la información, como una estimación actualizada del tiempo de resolución o los pasos siguientes.
@@ -62,7 +61,9 @@ Las actualizaciones sobre el progreso de un problema se reflejan en la página a
 Cuando se resuelve un problema, se registra en la **pestaña Historial de** estado.
 
 ## <a name="status-history"></a>Historial de estado
+
 La **pestaña Historial de** estado refleja todos los problemas históricos que se han visto y resuelto. Verá los detalles de los problemas resueltos junto con la otra información que se incluyeron mientras se estaba resolviendo.
 
 ### <a name="related-topic"></a>Tema relacionado
+
 - [Ver el panel de operaciones de seguridad](security-operations-dashboard.md)

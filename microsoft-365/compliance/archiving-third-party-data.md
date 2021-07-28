@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a Microsoft 365 buzones de correo.
-ms.openlocfilehash: c5eebef3e2c6021efc08ff1ed41ba28bacc92487
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 512f08a621487fb2c3f2fd9f6b5d8ac00e49ac5e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339435"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541078"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archivar datos de terceros en Microsoft 365
 
@@ -198,6 +198,56 @@ Puede usar el [cumplimiento de la comunicación](communication-compliance.md) pa
 ### <a name="insider-risk-management"></a>Administración de riesgos internos
 
 Las señales de datos de terceros, como los datos de recursos humanos selectivos, pueden ser usadas por la solución de administración de riesgos [insider](insider-risk-management.md) para minimizar los riesgos internos, ya que le permite detectar, investigar y actuar en actividades de riesgo en su organización. Por ejemplo, los datos importados por el conector de datos de RECURSOS humanos se usan como indicadores de riesgo para ayudar a detectar el robo de datos de empleados que salen.
+
+## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>Uso de herramientas de exhibición de documentos electrónicos para buscar datos de terceros
+
+Después de usar conectores de datos para importar y archivar datos de terceros en buzones de usuario, puede usar Microsoft 365 herramientas de exhibición de documentos electrónicos para buscar datos de terceros. También puede usar herramientas de exhibición de documentos electrónicos para crear retenciones basadas en consultas asociadas con la exhibición de documentos electrónicos principales y los Advanced eDiscovery para conservar datos de terceros. Para obtener más información acerca de las herramientas de exhibición de documentos electrónicos, vea [soluciones de exhibición](ediscovery.md)de documentos electrónicos en Microsoft 365 .
+
+Para buscar (o retener) cualquier tipo de datos de terceros que haya importado a los buzones de usuario mediante un conector de datos, puede usar la siguiente consulta de búsqueda. Asegúrese de tener en cuenta el ámbito de la búsqueda en los buzones de usuario.
+
+```powershell
+kind:externaldata
+```
+
+Puede usar esta consulta en el cuadro **Palabras** clave para una búsqueda de contenido, una búsqueda asociada a un caso de exhibición de documentos electrónicos principal o una colección en Advanced eDiscovery.
+
+![Consulta para buscar datos de terceros](..\media\SearchThirdPartyData1.png)
+
+También puede usar el par property:value para restringir el ámbito de las `kind:externaldata` búsquedas a datos de terceros. Por ejemplo, para buscar elementos importados desde cualquier origen de datos de terceros que contengan la palabra *contoso* en la propiedad **Subject** del elemento importado, use la siguiente consulta en el cuadro **Palabras clave:**
+
+```powershell
+subject:contoso AND kind:externaldata
+```
+
+Como alternativa, puede usar la condición **tipo Message** para configurar la misma consulta.
+
+![Usar condición de tipo Message para restringir búsquedas a datos de terceros](..\media\SearchThirdPartyData2.png)
+
+Para buscar un tipo específico de datos de terceros archivados, use la propiedad de buzón **itemclass** en una consulta de búsqueda. Use el siguiente formato property:value:
+
+```powershell
+itemclass:ipm.externaldata.<third-party data type>
+```
+
+Cada elemento importado por un conector de datos de terceros incluye la **propiedad itemclass** con un valor que corresponde al tipo de datos de terceros. Por ejemplo, para buscar datos de Facebook que contengan la palabra *contoso*, en la **propiedad Subject** del elemento importado, use la siguiente consulta:
+
+```powershell
+subject:contoso AND itemclass:ipm.externaldata.facebook*
+```
+
+Estos son algunos ejemplos de valores **de clase item para** diferentes tipos de datos de terceros.
+
+| **Tipo de datos de terceros** | **Valor de la propiedad itemclass**   |
+|---------------------------|-------------------------------------|
+| Mensaje de Bloomberg         | ipm.externaldata.bloombergmessage* |
+| CellTrust                 | ipm.externaldata.celltrust*        |
+| Documento principal                     | ipm.externaldata.pivot*            |
+| Archivador de WhatsApp         | ipm.externaldata.whatsaarchiver* |
+|||
+
+Los valores de *la propiedad itemclass* no distinguen mayúsculas de minúsculas. En general, use el nombre del tipo de datos de terceros (sin espacios) seguido de un carácter comodín ( * ).
+
+Para obtener más información sobre cómo crear consultas de búsqueda de exhibición de documentos electrónicos, vea Consultas de palabras clave y condiciones [de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md).
 
 ## <a name="data-connectors-in-the-us-government-cloud"></a>Conectores de datos en la nube de Us Government
 

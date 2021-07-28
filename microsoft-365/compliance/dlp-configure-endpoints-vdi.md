@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Implemente el paquete de configuración en el dispositivo de infraestructura de escritorio virtual (VDI) para que se incorpore al servicio de prevención de pérdida de datos Microsoft 365 endpoint.
-ms.openlocfilehash: 64d9bfed3d1d5600b5843c697e894577f83527fe
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 1e4987ba2d261c715395ed1869f597da91b5cfed
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226880"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567325"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual no persistentes
 
 **Se aplica a:**
 - [Microsoft 365 Prevención de pérdida de datos de extremo (DLP)](./endpoint-dlp-learn-about.md)
@@ -33,7 +33,7 @@ ms.locfileid: "53226880"
 
 ## <a name="onboard-vdi-devices"></a>Incorporar dispositivos VDI
 
-Microsoft 365 La prevención de pérdida de datos de extremo admite la incorporación de sesiones VDI no persistentes.
+Microsoft 365 La prevención de pérdida de datos de extremo admite la incorporación de sesiones de infraestructura de escritorio virtual (VDI) no persistente.
 
 > [!NOTE]
 > Para incorporar sesiones VDI no persistentes, los dispositivos VDI deben estar en Windows 10 1809 o posterior.

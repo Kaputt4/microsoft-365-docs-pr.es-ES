@@ -14,12 +14,12 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: Preguntas más frecuentes sobre Centro de administración de Microsoft 365 descargas.
-  ms.openlocfilehash: a01c46bb4ac8072fe7293abbc016a9b2bb8e377d
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: 406e25fa4d6aac05ecbdaa05f407626cff9d112e
+  ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
   ms.translationtype: MT
   ms.contentlocale: es-ES
   ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53542552"
+  ms.locfileid: "53567349"
 title: Descargas preguntas más frecuentes
 summary: ''
 sections:
@@ -104,7 +104,7 @@ sections:
   - question: >
       ¿Dónde puedo encontrar soporte técnico para los temas que se tratan en estas preguntas más frecuentes?
     answer: >
-      Para obtener más recursos de aprendizaje, incluidos vídeos, vea [Microsoft Volume Licensing Service Center training and resources](/licensing/existing-customer/vlsc-training-and-resources?activetab=vlsc-tab%3aprimaryr3).
+      Para obtener más recursos de aprendizaje, incluidos vídeos, vea [Microsoft Volume Licensing Service Center training and resources](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
   - question: >
       ¿Cómo puedo ponerse en contacto con el Soporte técnico de Microsoft?
     answer: >

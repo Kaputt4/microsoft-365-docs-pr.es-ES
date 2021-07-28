@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: e87757f22cc76bf681058ab453bdfdf60c6c64c9
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d53c95ac636af38d458c1259f8d75c1e59f9d775
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542374"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587926"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrate para Microsoft 365 Lighthouse
 
@@ -49,7 +49,7 @@ ms.locfileid: "53542374"
 1. Seleccione **Comprar**.
 
     > [!NOTE]
-    > Microsoft 365 Lighthouse requiere una licencia para el inquilino. No se requieren licencias adicionales por usuario. 
+    > Microsoft 365 Lighthouse requiere una licencia solo para el inquilino asociado. No se requieren licencias adicionales por usuario para el partner y no se requieren Microsoft 365 Lighthouse licencias en ningún inquilino del cliente. 
 
     Para comprobar que Microsoft 365 Lighthouse se agregó correctamente al inquilino, busque Microsoft 365 Lighthouse en **Facturación >** Sus productos en el Centro de administración de Microsoft 365.
 
@@ -60,7 +60,7 @@ ms.locfileid: "53542374"
     > [!NOTE]
     > Después de completar el registro, los datos del cliente pueden tardar hasta 48 horas en aparecer en Microsoft 365 Lighthouse.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Próximos pasos
 
 [Configurar Microsoft 365 Lighthouse seguridad del portal](m365-lighthouse-configure-portal-security.md) 
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la colaboración de contenido: las personas experimenta la puntuación de productividad.'
-ms.openlocfilehash: d403f533fd69ee47fb48907f11d4752985daea1a
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: 14d3449faff16893cd74ed1618557092d3347dc5
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415628"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567493"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
@@ -130,11 +130,11 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 :::image type="content" source="../../media/emailattachments.png" alt-text="Uso de datos adjuntos de correo electrónico.":::
 
-1. **Encabezado:** Resalta el porcentaje de personas que usan datos adjuntos en correos electrónicos que no se guardaron en OneDrive o SharePoint.
+1. **Encabezado:** Resalta el porcentaje de personas que usan datos adjuntos en correos electrónicos que no se guardaron en archivos en línea.
 2. **Cuerpo:** Proporciona información sobre el valor de compartir vínculos a archivos en línea desde una perspectiva de colaboración y seguridad.
-3. **Visualización:** El desglose de la visualización está destinado a representar la medida en que las personas que adjuntan contenido en correos electrónicos usan diferentes modos (archivos que no están en OneDrive o SharePoint; vínculos a archivos en línea y vínculos incrustados en el correo electrónico):
+3. **Visualización:** El desglose de la visualización está destinado a representar hasta qué punto las personas que adjuntan contenido en los correos electrónicos usan diferentes modos (archivos no guardados en archivos en línea, vínculos a archivos en línea):
       - **Adjuntar archivos:** La parte azul (coloreada) de la barra y la fracción (numerador/denominador) de la barra representa el porcentaje de personas que usan datos adjuntos en los correos electrónicos.
-        - Numerador: número de personas que adjuntan archivos al correo electrónico que no se guardaron en OneDrive o SharePoint en los últimos 28 días.
+        - Numerador: número de personas que adjuntan archivos al correo electrónico que no se guardaron en el archivo en línea en los últimos 28 días.
         - Denominador: el número de personas que han tenido acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
       - **Vínculos a archivos en línea:** La parte azul (coloreada) de la barra y la fracción (numerador/denominador) de la barra representan el porcentaje de personas que usan datos adjuntos y adjuntan vínculos a archivos de correos electrónicos.
         - Numerador: número de personas que adjuntan vínculos a archivos en línea a correos electrónicos en los últimos 28 días.

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b67f0f493c97b900fa08b10e3eb7a5967560dcfd
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 3204a5453e3b441e2899a347df6d9e5a6cca2808
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458748"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588130"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Promover el entorno Microsoft 365 Defender evaluación a la producción
 
@@ -48,11 +48,11 @@ Después de evaluar o pilotar MDO correctamente, se puede promover a todo el ent
 5. Retirar las puertas de enlace SMTP de terceros y deshabilitar o eliminar los conectores EXO asociados con esta retransmisión.
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
-Para promover el entorno de evaluación de Microsoft Defender para endpoints de un entorno piloto a la producción, simplemente incorpore más puntos de conexión al servicio con cualquiera de las herramientas y métodos [admitidos.](/defender-endpoint/onboard-configure)
+Para promover el entorno de evaluación de Microsoft Defender para endpoints de un entorno piloto a la producción, simplemente incorpore más puntos de conexión al servicio con cualquiera de las herramientas y métodos [admitidos.](../defender-endpoint/onboard-configure.md)
 
 Usa las siguientes directrices generales para incorporar más dispositivos a Microsoft Defender para endpoint. 
 
-1. Compruebe que el dispositivo cumple los [requisitos mínimos](/defender-endpoint/minimum-requirements).
+1. Compruebe que el dispositivo cumple los [requisitos mínimos](../defender-endpoint/minimum-requirements.md).
 2. Según el dispositivo, siga los pasos de configuración proporcionados en la sección incorporación del portal defender para endpoints.
 3. Usa la herramienta de administración y el método de implementación adecuados para tus dispositivos.
 4.  Ejecute una prueba de detección para comprobar que los dispositivos están correctamente incorporados e informando al servicio.

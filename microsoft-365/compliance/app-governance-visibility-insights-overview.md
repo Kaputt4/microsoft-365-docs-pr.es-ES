@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más detalles sobre la visibilidad y la información.
-ms.openlocfilehash: ee485c972193c515bafec55f58a7a89aa1f567f1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: eac4cd67591d261843f0d3efe476db027c58db91
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420257"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541090"
 ---
 # <a name="learn-about-visibility-and-insights"></a>Acerca de la visibilidad e información
 
@@ -29,7 +29,7 @@ Con la gobernanza de aplicaciones de Microsoft, puede obtener rápidamente visib
 
 Con la visibilidad y la información de la gobernanza de aplicaciones, puede ver:
 
-- Una lista de las aplicaciones habilitadas para OAuth que acceden a datos de Microsoft 365 a través de la API de Microsoft Graph.
+- Una lista de las aplicaciones habilitadas para OAuth que acceden a datos de Microsoft 365 a través de la API de Microsoft Graph en su espacio empresarial.
 - Una vista enriquecida de las actividades de la aplicación para que pueda reaccionar o responder a ellas.
 
 >[!Note]
@@ -37,21 +37,6 @@ Con la visibilidad y la información de la gobernanza de aplicaciones, puede ver
 >
 
 Consulte los [roles de administrador](app-governance-get-started.md#administrator-roles) para obtener información general sobre los roles de administrador necesarios para la visibilidad y la información.
-
-<!--
-From messaging doc, page 21:
-
-View M365 App List & Metadata
-View M365 App List of Consented Users
-View M365 App Permissions
-View M365 App Permission Usage
-View Over permissioned Apps
-Aggregate M365 API Usage Data by Workload (count, download/upload)
-Per-App M365 API Usage Data by Workload (count, download/upload)
-Per-User M365 API Usage Data by Workload (count, download/upload)
-M365 API Usage Data For High-Value/Classified Assets (count, download/upload)
-M365 API Error Analysis per App
--->
 
 Con la gobernanza de aplicaciones, puede ver:
 
@@ -71,8 +56,8 @@ Con la gobernanza de aplicaciones, puede ver:
 - Una vista acumulativa de los usuarios que acceden a las aplicaciones.
 - Información de alertas.
 - Información de lista de directivas.
-<!-->
-- Directivas creadas en MCAS en el portal de gobernanza de aplicaciones.
+<!--
+- Policies created in MCAS in the app governance portal.
 -->
 - Alertas para aplicaciones de OAuth generadas en MCAS, en el portal de gobernanza de aplicaciones.
 

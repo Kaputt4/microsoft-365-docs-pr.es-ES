@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: eb30e3d553435c76bcf8f7cc1efc0f5524c0b966
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2fe7bf71d4db9854f03a56ed75a3b9a670602197
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538942"
+ms.locfileid: "53567577"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -148,7 +148,7 @@ Con las etiquetas de retención, puede:
     - Palabras clave específicas que coinciden con una consulta que haya creado.
     - Coincidencias de patrón para un clasificador que se puede entrenar.
 
-- **Iniciar el período de retención desde el momento en que se etiquetó el contenido** para los documentos de los sitios de SharePoint y las cuentas de OneDrive, así como para elementos de correo electrónico salvo los elementos de calendario. Si aplica una etiqueta de retención con esta configuración a un elemento del calendario, el período de retención comienza desde el momento en que se envía.
+- **Iniciar el período de retención desde el momento en que se etiquetó el contenido** para los documentos de los sitios de SharePoint y las cuentas de OneDrive, así como para los elementos de correo electrónico salvo los elementos de calendario. Si aplica una etiqueta de retención con esta configuración a un elemento del calendario, el período de retención comienza desde el momento en que se envía.
 
 - **Iniciar el período de retención cuando se produzca un evento**, por ejemplo, cuando los empleados abandonan la organización o cuando vencen los contratos.
 
@@ -296,7 +296,9 @@ Use el siguiente flujo para comprender los resultados de la retención y elimina
 > Si usa etiquetas de retención: antes de usar este flujo para determinar el resultado de varias opciones de retención en el mismo elemento, asegúrese de saber que [etiqueta de retención se aplica](#only-one-retention-label-at-a-time).
 
 ![Diagrama de los principios de retención](../media/principles-of-retention.png)
-  
+
+Antes de explicar cada principio con más detalle, es importante comprender la diferencia entre el período de retención del elemento y el período de retención especificado en la directiva o la etiqueta de retención. Esto se debe a que, aunque la configuración predeterminada es iniciar el período de retención cuando se crea un elemento, de modo que el final del período de retención sea corregido para el elemento, los archivos también admiten la configuración para iniciar el período de retención desde la última modificación del archivo. Con esta configuración alternativa, cada vez que se modifica el archivo, se restablece el inicio del período de retención, lo que amplía el final del período de retención del elemento. Las etiquetas de retención también admiten el inicio del período de retención cuando se etiquetan y al inicio de un evento.
+
 Explicación de los cuatro niveles diferentes:
   
 1. **La retención gana a la eliminación.** El contenido no se eliminará permanentemente cuando también tenga configuraciones de retención para conservarlo. Aunque este principio garantiza que el contenido se conserve por motivos de cumplimiento, el proceso de eliminación se sigue iniciando y puede quitar el contenido de la vista y las búsquedas del usuario. Por ejemplo, un documento en SharePoint se mueve de la carpeta original a la carpeta Conservación de documentos. Sin embargo, se suspende la eliminación permanente. Para obtener más información sobre cómo y dónde se conserva el contenido, use los siguientes vínculos para cada carga de trabajo:
@@ -306,13 +308,16 @@ Explicación de los cuatro niveles diferentes:
     - [Cómo funciona la retención con Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
     - [Cómo funciona la retención para Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
     
-    Ejemplo: un mensaje de correo electrónico está sujeto a una directiva de retención para Exchange que está configurada para eliminar elementos después de tres años y también tiene una etiqueta de retención aplicada que está configurada para conservar los elementos durante cinco años.
+    **Ejemplo de este primer principio**: un mensaje de correo electrónico está sujeto a una directiva de retención para Exchange que está configurada para eliminar elementos tres años después de su creación y también tiene una etiqueta de retención aplicada que está configurada para conservar los elementos cinco años después de su creación.
     
     El mensaje de correo electrónico se conserva durante cinco años, ya que esta acción de retención tiene prioridad sobre la eliminación. El mensaje de correo electrónico se elimina permanentemente al final de los cinco años debido a la acción de eliminación que se suspendió mientras la acción de retención estaba en vigor.
 
 2. **El período de retención más largo gana**. Si el contenido está sujeto a varias configuraciones de retención que conservan contenido durante distintos períodos de tiempo, el contenido se conservará hasta el final del período de retención más largo.
     
-    Ejemplo: los documentos del sitio de SharePoint de marketing están sujetos a dos directivas de retención. La primera directiva de retención está configurada para que todos los sitios de SharePoint conserven los elementos durante cinco años. La segunda directiva de retención está configurada para que ciertos sitios de SharePoint conserven los elementos durante diez años.
+    > [!NOTE]
+    > Es posible que un período de retención de 5 años en una etiqueta o directiva de retención supere un período de retención de 7 años en una etiqueta o directiva de retención, ya que el período de 5 años está configurado para comenzar en función de cuándo se modificó el archivo por última vez y el período de 7 años se configura para comenzar desde el momento en que se crea el archivo.
+    
+    **Ejemplo para este segundo principio**: los documentos del sitio de SharePoint de marketing están sujetos a dos directivas de retención. La primera directiva de retención está configurada para que todos los sitios de SharePoint conserven los elementos durante cinco años después de su creación. La segunda directiva de retención está configurada para que ciertos sitios de SharePoint conserven los elementos durante diez años.
     
     Los documentos de este sitio de SharePoint de marketing se conservan durante diez años, ya que este es el período de retención más largo.
 
@@ -320,31 +325,36 @@ Explicación de los cuatro niveles diferentes:
     
     1. Una etiqueta de retención (sin importar cómo se haya aplicado) ofrece una retención explícita en comparación con las directivas de retención, ya que la configuración de retención se aplica a un elemento individual en lugar de asignarse implícitamente desde un contenedor. Esto significa que una acción de eliminación de una etiqueta de retención siempre tiene prioridad sobre una acción de eliminación de cualquier directiva de retención.
         
-        Ejemplo: un documento está sujeto a dos directivas de retención que tienen una acción de eliminación de cinco años y diez años respectivamente, y también una etiqueta de retención con una acción de eliminación de siete años.
+        **Ejemplo del tercer principio (etiqueta)**: un documento está sujeto a dos directivas de retención que tienen una acción de eliminación de cinco años y diez años respectivamente, y también una etiqueta de retención con una acción de eliminación de siete años.
         
         El documento se elimina permanentemente siete años después porque la acción de eliminación de la etiqueta de retención tiene prioridad.
     
     2. Cuando tenga solo directivas de retención: si una directiva de retención para una ubicación tiene como ámbito el utilizar una configuración de inclusión (como usuarios específicos para el correo electrónico de Exchange), esa directiva de retención tiene prioridad sobre las directivas de retención sin ámbito para la misma ubicación.
         
-        Una directiva de retención sin ámbito es el lugar donde se selecciona una ubicación sin especificar instancias específicas. Por ejemplo, el **correo electrónico de Exchange** y la configuración predeterminada de **todos los destinatarios** es una directiva de retención sin ámbito. O bien, los **sitios de SharePoint** y la configuración predeterminada de **todos los sitios**. Cuando las directivas de retención tienen ámbito establecido, tienen la misma prioridad en este nivel.
+        Una directiva de retención sin ámbito es el lugar donde se selecciona una ubicación sin especificar instancias específicas. Por ejemplo, el correo electrónico de Exchange y la configuración predeterminada de todos los destinatarios es una directiva de retención sin ámbito. O bien, los sitios de SharePoint y la configuración predeterminada de todos los sitios. Cuando las directivas de retención tienen ámbito establecido, tienen la misma precedencia en este nivel.
         
-        Ejemplo 1: un mensaje de correo electrónico está sujeto a dos directivas de retención. La primera directiva de retención no tiene ámbito y elimina los elementos después de diez años. La segunda directiva de retención tiene como ámbito buzones específicos y elimina los elementos después de cinco años.
+        **Ejemplo 1 para este tercer principio (directivas)**: un mensaje de correo electrónico está sujeto a dos directivas de retención. La primera directiva de retención no tiene ámbito y elimina los elementos después de diez años. La segunda directiva de retención tiene como ámbito buzones específicos y elimina los elementos después de cinco años.
         
         El mensaje de correo electrónico se elimina permanentemente después de cinco años porque la acción de eliminación de la directiva de retención con ámbito tiene prioridad sobre la directiva de retención sin ámbito.
         
-        Ejemplo 2: un documento en la cuenta de OneDrive de un usuario está sujeto a dos directivas de retención. La primera directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 10 años. La segunda directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 7 años.
+        **Ejemplo 2 de este tercer principio (directivas)**: un documento de la cuenta de OneDrive de un usuario está sujeto a dos directivas de retención. La primera directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 10 años. La segunda directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 7 años.
         
         En este nivel, no se puede determinar cuándo se eliminará permanentemente este documento porque ambas directivas de retención tienen un ámbito.
 
 4. **El período de eliminación más corto tiene prioridad.** Se aplica para determinar cuándo se eliminarán los elementos de las directivas de retención y el resultado no se pudo resolver desde el nivel anterior: el contenido se elimina permanentemente al final del período de retención más corto.
     
-    Ejemplo: un documento en la cuenta de OneDrive de un usuario está sujeto a dos directivas de retención. La primera directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 10 años. La segunda directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 7 años.
+    > [!NOTE]
+    > Es posible que una directiva de retención que tenga un período de retención de 7 años supere a una directiva de retención de 5 años porque la primera directiva está configurada para iniciar el período de retención en función de cuándo se crea el archivo y la segunda directiva de retención desde la última modificación del archivo.
     
-    Este documento se eliminará permanentemente después de siete años ya que este es el período de retención más corto para el ámbito de estas dos directivas de retención.
+    **Ejemplo de este cuarto principio**: un documento de la cuenta de OneDrive de un usuario está sujeto a dos directivas de retención. La primera directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar 10 años después de que el archivo es creado. La segunda directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene una acción de eliminar de 7 años después de su creación.
+    
+    Este documento se eliminará permanentemente después de siete años ya que este es el período de retención más corto para el elemento desde estas dos directivas de retención.
 
 Tenga en cuenta que los elementos sujetos a la retención de eDiscovery también se incluyen en el primer principio de retención; no se pueden eliminar permanentemente mediante ninguna directiva de retención o etiqueta de retención. Cuando se suspende esa retención, los principios de retención continúan aplicándose a ellos. Por ejemplo, podrían estar sujetos a un período de retención vigente o una acción de eliminación.
 
-Ejemplos más complejos que combinan acciones de retención y eliminación:
+### <a name="principles-of-retention-examples-that-combine-retain-and-delete-actions"></a>Principios de ejemplos de retención que combinan acciones de retención y eliminación
+
+Los ejemplos siguientes son más complejos para ilustrar los principios de retención cuando se combinan diferentes acciones de retención y eliminación. Para que los ejemplos sean más fáciles de seguir, todas las directivas y etiquetas de retención usan la configuración predeterminada de iniciar el período de retención cuando se crea el elemento para que el final del período de retención sea el mismo para el elemento.
 
 1. Se aplicó la siguiente configuración de retención a un elemento:
     
@@ -390,7 +400,7 @@ Cuando la [auditoría está habilitada](turn-audit-log-search-on-or-off.md), los
 
 ### <a name="auditing-retention-configuration"></a>Auditoría de la configuración de retención
 
-La configuración del administrador para las directivas de retención y las etiquetas de retención se registra como eventos de auditoría cuando se crea, se vuelve a configurar o se elimina una etiqueta o directiva de retención.
+La configuración del administrador para las directivas y etiquetas de retención se registra como eventos de auditoría cuando se crea, se vuelve a configurar o se elimina una etiqueta o directiva de retención.
 
 Para obtener la lista completa de los eventos de auditoría, consulte las [Actividades de las directivas de retención y las etiquetas de retención](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
 
@@ -483,7 +493,7 @@ Si usa herramientas de eDiscovery antiguas para conservar datos, consulte los si
 
 Si tiene que conservar o eliminar contenido en 365 Microsoft de manera proactiva para la gobernanza de la información, le recomendamos que use las directivas de retención y las etiquetas de retención en lugar de las siguientes características antiguas.
 
-Si actualmente usa esas características más antiguas, estas seguirán funcionando en paralelo con las directivas de retención y las etiquetas de retención. Sin embargo, le recomendamos que, en adelante, utilice directivas de retención y etiquetas de retención. Proporcionan un mecanismo único para administrar centralmente tanto la retención como la eliminación de contenido en Microsoft 365.
+Si actualmente usa esas características más antiguas, estas seguirán funcionando en paralelo con las directivas y etiquetas de retención. Sin embargo, le recomendamos que, en adelante, utilice directivas de retención y etiquetas de retención. Proporcionan un mecanismo único para administrar centralmente tanto la retención como la eliminación de contenido en Microsoft 365.
 
 **Características anteriores de Exchange Online:**
 

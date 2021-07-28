@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 98ea631536bbfa9e1858f70ae3a0ea9de8743572
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 02502269c1f33a0aba6ef0102a87116020026411
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029782"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567385"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -32,7 +32,7 @@ ms.locfileid: "53029782"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Información general
 
@@ -54,11 +54,11 @@ Con estas capacidades, se pueden evitar o bloquear más amenazas, incluso si com
 
 En la siguiente imagen se muestra un ejemplo de una alerta que se desencadenó mediante funciones de bloqueo de comportamiento y contención:
 
-:::image type="content" source="images/blocked-behav-alert.png" alt-text="Ejemplo de alerta mediante bloqueo de comportamiento y contención":::
+:::image type="content" alt-text="Ejemplo de alerta mediante bloqueo de comportamiento y contención" source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Componentes del bloqueo y la contención del comportamiento
 
-- Reglas de reducción de superficie de **[ataques](attack-surface-reduction.md)** controladas por directivas en el cliente Los comportamientos de ataque comunes predefinidos no se pueden ejecutar, de acuerdo con las reglas de reducción de superficie de ataque. Cuando estos comportamientos intentan ejecutarse, se pueden ver en Microsoft 365 Defender <https://security.microsoft.com> como alertas informativos. Las reglas de reducción de superficie de ataque no están habilitadas de forma predeterminada; configure las directivas en el [Microsoft 365 Defender](microsoft-defender-security-center.md).
+- Reglas de reducción de superficie de **[ataques](attack-surface-reduction.md)** controladas por directivas en el cliente Los comportamientos de ataque comunes predefinidos no se pueden ejecutar, de acuerdo con las reglas de reducción de superficie de ataque. Cuando estos comportamientos intentan ejecutarse, se pueden ver en el portal de Microsoft 365 Defender( ) como [https://security.microsoft.com](https://security.microsoft.com) alertas informativos. Las reglas de reducción de superficie de ataque no están habilitadas de forma predeterminada; configure las directivas en el [portal de Microsoft 365 Defender](microsoft-defender-security-center.md).
 
 - **[Bloqueo de comportamiento del cliente](client-behavioral-blocking.md)** Las amenazas en los puntos de conexión se detectan a través del aprendizaje automático y, a continuación, se bloquean y corrigen automáticamente. (El bloqueo de comportamiento del cliente está habilitado de forma predeterminada).
 
@@ -95,7 +95,7 @@ Los modelos de aprendizaje de dispositivos basados en comportamiento en Defender
 - La primera capa de protección detectó el comportamiento de vulnerabilidad. Los clasificadores de aprendizaje de dispositivos en la nube identificaron correctamente la amenaza e indicaron inmediatamente al dispositivo cliente que bloqueara el ataque.
 - La segunda capa de protección, que ayudó a detener los casos en los que el ataque se atravó más allá de la primera capa, detectó el vacío del proceso, detuvo ese proceso y quitó los archivos correspondientes (como Lokibot).
 
-Mientras se detectó y detuvo el ataque, las alertas, como una "alerta de acceso inicial", se desencadenaron y aparecieron en el [portal de Microsoft 365 Defender](microsoft-defender-security-center.md) (anteriormente el Centro de seguridad de Microsoft Defender):
+Mientras se detectó y detuvo el ataque, las alertas, como una "alerta de acceso inicial", se desencadenaron y aparecieron en [el portal Microsoft 365 Defender .](microsoft-defender-security-center.md)
 
 :::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerta de acceso inicial en el Microsoft 365 Defender de acceso":::
 
@@ -105,15 +105,15 @@ En este ejemplo se muestra cómo los modelos de aprendizaje de dispositivos basa
 
 Tal como se describe en la entrada de blog reciente, Bloqueo y contención del comportamiento: Transformar la óptica en protección , en enero de 2020, Defender for Endpoint detectó una actividad de escalamiento de [privilegios](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)en un dispositivo de una organización. Se desencadenó una alerta denominada "Posible escalada de privilegios mediante retransmisión NTLM".
 
-:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="Alerta NTLM para malware juicy potato":::
+:::image type="content" alt-text="Alerta NTLM para malware juicy potato" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
 
 La amenaza resultó ser malware; era una nueva variante no vista antes de una herramienta de piratería notoria llamada Juicy Potato, que los atacantes usan para obtener la escalación de privilegios en un dispositivo.
 
 Minutos después de que se desencadenó la alerta, se analizó el archivo y se confirmó que era malintencionado. Su proceso se detuvo y bloqueó, como se muestra en la siguiente imagen:
 
-:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artefacto bloqueado":::
+:::image type="content" alt-text="Artefacto bloqueado" source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
 
-Unos minutos después de que se bloqueó el artefacto, se bloquearon varias instancias del mismo archivo en el mismo dispositivo, lo que impedía que otros atacantes u otro malware se implementara en el dispositivo.
+Unos minutos después de bloquear el artefacto, se bloquearon varias instancias del mismo archivo en el mismo dispositivo, lo que impidió que se implementara más atacantes u otro malware en el dispositivo.
 
 En este ejemplo se muestra que, con las capacidades de contención y bloqueo de comportamiento, las amenazas se detectan, contienen y bloquean automáticamente.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 311903cdd1409f4ab997641cc842ff199ce2500d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a3984358787001c9ccbb5794d9695c5f15fb2f59
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843111"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588034"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Conceder acceso al proveedor de servicios de seguridad administrado (MSSP) (versión preliminar)
 
@@ -32,10 +32,10 @@ ms.locfileid: "52843111"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
->[!IMPORTANT] 
->Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+> [!IMPORTANT]
+> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 Para implementar una solución de acceso delegado multiinquilino, siga estos pasos:
 
@@ -51,10 +51,9 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Estos grupos se vincularán a los roles que cree en Defender para endpoint. Para ello, en el inquilino de AD del cliente, cree tres grupos. En nuestro enfoque de ejemplo, creamos los siguientes grupos:
 
-    - Analista de nivel 1 
-    - Analista de nivel 2 
-    - Aprobadores de analistas de MSSP  
-
+    - Analista de nivel 1
+    - Analista de nivel 2
+    - Aprobadores de analistas de MSSP
 
 2. Cree roles de Defender para endpoint para niveles de acceso adecuados en Customer Defender for Endpoint.
 
@@ -66,21 +65,21 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Dos roles posibles:
 
-    - **Analistas de nivel 1** <br>
+    - **Analistas de nivel 1**
+
       Realice todas las acciones excepto la respuesta en directo y administre la configuración de seguridad.
 
-    - **Analistas de nivel 2** <br>
+    - **Analistas de nivel 2**
+
       Capacidades de nivel 1 con la adición a [la respuesta en directo](live-response.md)
 
     Para obtener más información, vea [Use role-based access control](rbac.md).
 
-
-
 ## <a name="configure-governance-access-packages"></a>Configurar paquetes de acceso de gobierno
 
-1.  **Agregar MSSP como organización conectada en customer AAD: Identity Governance**
-    
-    Agregar el MSSP como organización conectada permitirá al MSSP solicitar y tener accesos aprovisionados. 
+1. **Agregar MSSP como organización conectada en customer AAD: Identity Governance**
+
+    Agregar el MSSP como organización conectada permitirá al MSSP solicitar y tener accesos aprovisionados.
 
     Para ello, en el inquilino de AD del cliente, acceda a Identity Governance: Connected organization. Agregue una nueva organización y busque el inquilino de MSSP Analyst a través del identificador de inquilino o dominio. Se recomienda crear un inquilino de AD independiente para los analistas de MSSP.
 
@@ -88,16 +87,15 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Los catálogos de recursos son una colección lógica de paquetes de acceso, creados en el inquilino de AD del cliente.
 
-    Para ello, en el inquilino de AD del cliente, acceda a Identity Governance: Catalogs y agregue **New Catalog**. En nuestro ejemplo, lo llamaremos **MSSP Accesses**. 
+    Para ello, en el inquilino de AD del cliente, acceda a Identity Governance: Catalogs y agregue **New Catalog**. En nuestro ejemplo, lo llamaremos **MSSP Accesses**.
 
     ![Imagen del nuevo catálogo](images/goverance-catalog.png)
 
     Para obtener más información, vea [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
-
 3. **Crear paquetes de acceso para recursos MSSP Customer AAD: Identity Governance**
 
-    Los paquetes de acceso son la colección de derechos y accesos que se concederá a un solicitante tras su aprobación. 
+    Los paquetes de acceso son la colección de derechos y accesos que se concederá a un solicitante tras su aprobación.
 
     Para ello, en el inquilino de AD del cliente, acceda a Identity Governance: Access Packages y agregue **New Access Package**. Cree un paquete de acceso para los aprobadores de MSSP y cada nivel de analista. Por ejemplo, la siguiente configuración de Analista de nivel 1 crea un paquete de acceso que:
 
@@ -111,7 +109,6 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Para obtener más información, vea [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
-
 4. **Proporcionar vínculo de solicitud de acceso a recursos MSSP desde customer AAD: Identity Governance**
 
     Los analistas de SOC de MSSP usan el vínculo Portal de My Access para solicitar acceso a través de los paquetes de acceso creados. El vínculo es duradero, lo que significa que el mismo vínculo puede usarse con el tiempo para los nuevos analistas. La solicitud de analista entra en una cola para su aprobación por parte de los aprobadores de analistas de **MSSP**.
@@ -121,25 +118,22 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     El vínculo se encuentra en la página de información general de cada paquete de acceso.
 
-## <a name="manage-access"></a>Administrar el acceso 
+## <a name="manage-access"></a>Administrar el acceso
 
 1. Revise y autorice las solicitudes de acceso en Customer y/o MSSP myaccess.
 
     Las solicitudes de acceso se administran en el cliente My Access, por miembros del grupo Aprobadores de analistas de MSSP.
 
-    Para ello, acceda a myaccess del cliente mediante:  `https://myaccess.microsoft.com/@<Customer Domain >` . 
+    Para ello, acceda a myaccess del cliente mediante: `https://myaccess.microsoft.com/@<Customer Domain>` .
 
-    Ejemplo:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
+    Ejemplo: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+
 2. Aprobar o denegar solicitudes en la sección **Aprobaciones** de la interfaz de usuario.
 
     En este momento, se ha aprovisionado el acceso de analistas y cada analista debe tener acceso a la información del Centro de seguridad de Microsoft Defender:`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
 - [Configurar notificaciones de alerta](configure-mssp-notifications.md)
 - [Capturar alertas del espacio empresarial del cliente](fetch-alerts-mssp.md)
-
-
-
- 
-

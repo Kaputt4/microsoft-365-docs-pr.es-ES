@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 19ce05acaf4e06a97014cea3ff57d7c3d8cabfe7
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 0b467a7b661b96f5b293f2671d3645533143d67f
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567073"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587674"
 ---
 # <a name="monitor-web-browsing-security"></a>Supervisar la seguridad de exploración web
 
@@ -31,20 +31,20 @@ ms.locfileid: "53567073"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 La protección web le permite supervisar la seguridad de navegación web de su organización a través de informes **en Informes > protección web** en el portal Microsoft 365 Defender web. El informe contiene tarjetas que proporcionan estadísticas de detección de amenazas web.
 
 - **Detecciones** de protección contra amenazas web con el tiempo: esta tarjeta de tendencia muestra el número de amenazas web detectadas por tipo durante el período de tiempo seleccionado (Últimos 30 días, Últimos 3 meses, Últimos 6 meses)
- 
+
   :::image type="content" alt-text="Imagen de la tarjeta que muestra detecciones de protección contra amenazas web con el tiempo" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Resumen de protección contra** amenazas web: esta tarjeta muestra el total de detecciones de amenazas web en los últimos 30 días, mostrando la distribución entre los diferentes tipos de amenazas web. Al seleccionar un segmento, se abre la lista de dominios que se encontraron con sitios web malintencionados o no deseados.
 
   :::image type="content" alt-text="Imagen de la tarjeta que muestra el resumen de protección contra amenazas web" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
 
->[!Note]
->Puede tardar hasta 12 horas antes de que un bloque se refleje en las tarjetas o en la lista de dominios.
+> [!NOTE]
+> Puede tardar hasta 12 horas antes de que un bloque se refleje en las tarjetas o en la lista de dominios.
 
 ## <a name="types-of-web-threats"></a>Tipos de amenazas web
 
