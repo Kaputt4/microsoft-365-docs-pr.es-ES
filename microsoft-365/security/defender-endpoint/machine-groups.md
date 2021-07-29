@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49bd90d8a082f55622e54976cc8fc78229d8c646
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 33d3cf5d8f42f21f62f3542342092a0330c17ee5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453542"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622585"
 ---
 # <a name="create-and-manage-device-groups"></a>Crear y administrar grupos de dispositivos
 
@@ -32,7 +32,7 @@ ms.locfileid: "53453542"
 - Azure Active Directory
 - Office 365
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 En un escenario de empresa, los equipos de operaciones de seguridad suelen tener asignado un conjunto de dispositivos. Estos dispositivos se agrupan en función de un conjunto de atributos, como sus dominios, nombres de equipo o etiquetas designadas.

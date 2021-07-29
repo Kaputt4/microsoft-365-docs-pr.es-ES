@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6716b0eb029b49ec08cb52ebefc23e50b19036ca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 90e63ead4debd7a5b7033f1a8c9d6b0fd50cfe81
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771674"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622056"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Extraer Microsoft Defender para detecciones de puntos de conexión con la API de REST de SIEM
 
@@ -33,7 +33,7 @@ ms.locfileid: "52771674"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -114,7 +114,7 @@ GET| Use el URI aplicable para su región. <br><br> **Para la UE**: `https://wda
 ### <a name="request-header"></a>Encabezado de solicitud
 Encabezado | Tipo | Descripción|
 :--|:--|:--
-Authorization | string | Necesario. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; . |
+Authorization | string | Obligatorio. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; . |
 
 ### <a name="request-parameters"></a>Parámetros de la solicitud
 

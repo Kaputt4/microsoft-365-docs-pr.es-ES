@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f3313a08b072f4fb2f699148ab801207e56fc09
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 249ca1494d18d5c41647840de825e131ce7a0cd8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772122"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622621"
 ---
 # <a name="isolate-machine-api"></a>AISLAR API de máquina
 
@@ -33,69 +33,71 @@ ms.locfileid: "52772122"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>Descripción de la API
+
 Aísla un dispositivo del acceso a la red externa.
 
-
 ## <a name="limitations"></a>Limitaciones
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
+1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Machine.Isolate |   'Aislar máquina'
-Delegado (cuenta profesional o educativa) | Machine.Isolate |  'Aislar máquina'
+Aplicación|Machine.Isolate|'Aislar máquina'
+Delegado (cuenta profesional o educativa)|Machine.Isolate|'Aislar máquina'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Acciones de corrección activas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
->- El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
-
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Acciones de corrección activas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | cadena | application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro | Tipo    | Descripción
+Parámetro|Tipo|Descripción
 :---|:---|:---
-Comentario |   Cadena |    Comentario para asociarlo a la acción. **Necesario**.
-IsolationType   | Cadena |  Tipo de aislamiento. Los valores permitidos son: "Completo" o "Selectivo".
+Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
+IsolationType|Cadena|Tipo de aislamiento. Los valores permitidos son: "Completo" o "Selectivo".
 
 **IsolationType** controla el tipo de aislamiento que se debe realizar y puede ser uno de los siguientes:
-- Full: aislamiento total
-- Selectivo: restringir únicamente el acceso a la red de un conjunto limitado de aplicaciones (consulte Aislar dispositivos [de la red](respond-machine-alerts.md#isolate-devices-from-the-network) para obtener más información)
 
+- Full: Aislamiento total
+- Selectivo: restringir solo el acceso a la red de un conjunto limitado de aplicaciones (consulte Aislar dispositivos [de la red](respond-machine-alerts.md#isolate-devices-from-the-network) para obtener más información)
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request"></a>Solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e98142e4076c5e695f16eb06c062bc69d3d7dd55
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 90e15fbd28d8b7a57b9d65c2f7ea46e625a42038
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935070"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622633"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Investigar una cuenta de usuario en Microsoft Defender para endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "51935070"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
 
 ## <a name="investigate-user-account-entities"></a>Investigar entidades de cuenta de usuario
 
@@ -94,12 +94,12 @@ Puede filtrar los resultados por los siguientes períodos de tiempo:
 - 1 día
 - 3 días
 - 7 días
-- 30 días
+- 30 días
 - 6 meses
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender](alerts-queue.md)
+- [Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión](alerts-queue.md)
 - [Administrar alertas de Microsoft Defender para puntos de conexión](manage-alerts.md)
 - [Investigar alertas de punto de conexión de Microsoft Defender](investigate-alerts.md)
 - [Investigar un archivo asociado a una alerta de Defender for Endpoint](investigate-files.md)

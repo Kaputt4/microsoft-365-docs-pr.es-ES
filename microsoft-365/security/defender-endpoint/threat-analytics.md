@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 63303f9eacd25a8de1c7154ac66c73578bfd495a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 176861bd8788664a2272a15e409f141ea04376f3
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924460"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622177"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Seguimiento y respuesta a amenazas emergentes a través del análisis de amenazas
 
@@ -34,7 +34,7 @@ ms.locfileid: "52924460"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Con los adversarios más sofisticados y las nuevas amenazas que surgen con frecuencia y con frecuencia, es fundamental poder hacer lo siguiente rápidamente:
 
@@ -48,14 +48,13 @@ El análisis de amenazas es un conjunto de informes de investigadores expertos e
 - Técnicas de ataque populares y nuevas
 - Vulnerabilidades críticas
 - Superficies de ataque comunes
-- Malware común
+- Malware frecuentes
 
 Cada informe proporciona un análisis detallado de una amenaza y una amplia guía sobre cómo defenderse de esa amenaza. También incorpora datos de la red, que indican si la amenaza está activa y si tiene protecciones aplicables.
 
 Vea este breve vídeo para obtener más información sobre cómo los análisis de amenazas pueden ayudarle a realizar un seguimiento de las amenazas más recientes y detenerlos.
-<p></p>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bw1f]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bw1f]
 
 ## <a name="view-the-threat-analytics-dashboard"></a>Ver el panel de análisis de amenazas
 
@@ -81,37 +80,45 @@ La **sección** Información general proporciona una vista previa del informe de
  _Sección información general de un informe de análisis de amenazas_
 
 #### <a name="assess-the-impact-to-your-organization"></a>Evaluar el impacto en la organización
+
 Cada informe incluye gráficos diseñados para proporcionar información sobre el impacto organizativo de una amenaza:
+
 - **Dispositivos con alertas:** muestra el número actual de dispositivos distintos que se han visto afectados por la amenaza. Un dispositivo se clasifica como **Activo** si hay al menos una  alerta asociada a esa amenaza y **Resuelto** si se han resuelto todas las alertas asociadas con la amenaza en el dispositivo.
-- **Dispositivos con alertas a lo** largo del tiempo: muestra el número de dispositivos distintos con **alertas activas** **y** resueltas con el tiempo. El número de alertas resueltas indica la rapidez con la que la organización responde a las alertas asociadas con una amenaza. Lo ideal es que el gráfico muestre las alertas resueltas en unos días.
+- **Dispositivos con alertas con el tiempo:** muestra el número de dispositivos distintos con **alertas activas** y **resueltas** con el tiempo. El número de alertas resueltas indica la rapidez con la que la organización responde a las alertas asociadas con una amenaza. Lo ideal es que el gráfico muestre las alertas resueltas en unos días.
 
 #### <a name="review-security-resilience-and-posture"></a>Revisar la resistencia y la postura de seguridad
+
 Cada informe incluye gráficos que proporcionan información general sobre la resistencia de la organización frente a una amenaza determinada:
+
 - **Estado de configuración de** seguridad: muestra el número de dispositivos que han aplicado la configuración de seguridad recomendada que puede ayudar a mitigar la amenaza. Los dispositivos se consideran **seguros** si han aplicado _toda_ la configuración de seguimiento.
 - **Estado de revisión de vulnerabilidad:** muestra el número de dispositivos que han aplicado actualizaciones de seguridad o revisiones que abordan las vulnerabilidades explotadas por la amenaza.
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Informe de analistas: obtener información de expertos de los investigadores de seguridad de Microsoft
+
 Vaya a la **sección Informe de** analistas para leer la escritura detallada del experto. La mayoría de los informes proporcionan descripciones detalladas de las cadenas de ataque, incluidas las tácticas y técnicas [](advanced-hunting-overview.md) asignadas al marco de CK de MITRE ATT&, listas exhaustivas de recomendaciones y instrucciones de búsqueda de amenazas eficaces.
 
 [Más información sobre el informe de analistas](threat-analytics-analyst-reports.md)
 
 ### <a name="mitigations-review-list-of-mitigations-and-the-status-of-your-devices"></a>Mitigaciones: revisar la lista de mitigaciones y el estado de los dispositivos
+
 En la **sección Mitigaciones,** revise la lista de recomendaciones específicas que se pueden usar y que pueden ayudarle a aumentar la resistencia de la organización frente a la amenaza. La lista de mitigaciones rastreadas incluye:
 
 - **Actualizaciones de seguridad:** implementación de actualizaciones de seguridad o revisiones para vulnerabilidades
 - **Antivirus de Microsoft Defender configuración**
   - Versión de inteligencia de seguridad
-  - Protección entregada en la nube  
+  - Protección entregada en la nube
   - Protección de aplicaciones potencialmente no deseadas (PUA)
   - Protección en tiempo real
- 
+
 La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md), que también proporciona información detallada de detalles de varios vínculos del informe.
 
-![Imagen de la sección mitigaciones de un informe de análisis de amenazas Sección ](images/ta-mitigations.png)
- _Mitigaciones de un informe de análisis de amenazas_
+![Imagen de la sección mitigaciones de un informe de análisis de amenazas](images/ta-mitigations.png)
+
+_Sección Mitigaciones de un informe de análisis de amenazas_
 
 ## <a name="additional-report-details-and-limitations"></a>Detalles y limitaciones adicionales del informe
-Al usar los informes, tenga en cuenta lo siguiente: 
+
+Al usar los informes, tenga en cuenta lo siguiente:
 
 - Los datos se tienen en cuenta en el ámbito del control de acceso basado en roles (RBAC). Verá el estado de los dispositivos en grupos a los [que puede tener acceso](machine-groups.md).
 - Los gráficos reflejan solo las mitigaciones a las que se realiza un seguimiento. Compruebe en el informe información general para ver mitigaciones adicionales que no se muestran en los gráficos.
@@ -120,6 +127,7 @@ Al usar los informes, tenga en cuenta lo siguiente:
 - Las estadísticas relacionadas con el antivirus se basan en Antivirus de Microsoft Defender configuración. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md) 
+
+- [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
 - [Comprender la sección de informe de analistas](threat-analytics-analyst-reports.md)
 - [Evaluar y resolver debilidades y exposiciones de seguridad](next-gen-threat-and-vuln-mgt.md)

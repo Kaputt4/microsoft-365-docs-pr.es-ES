@@ -1,7 +1,7 @@
 ---
-title: Introducción al centro de temas en Temas de Microsoft Viva
-author: chuckedmonson
+title: Introducción al centro de temas en Temas Microsoft Viva
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -11,19 +11,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-ROBOTS: ''
 localization_priority: None
-description: Obtenga información sobre el centro de temas en Temas de Microsoft Viva.
-ms.openlocfilehash: bd3bdbc368ca95b1c795043c5c083aaebfcf5742
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: Obtenga información sobre el centro de temas en Temas Microsoft Viva.
+ms.openlocfilehash: 17dec65a1347d3e65ea7794d3b6129267776d6a2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287286"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624457"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Introducción al centro de temas en Temas de Microsoft Viva
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Introducción al centro de temas en Temas Microsoft Viva
 
-En Temas de Microsoft Viva, el centro de temas es un sitio SharePoint moderno que sirve como centro de conocimientos para su organización. Se crea durante la configuración [de Viva Topics](set-up-topic-experiences.md) en el Centro de administración de Microsoft 365.
+En Temas Microsoft Viva, el centro de temas es un sitio SharePoint moderno que sirve como centro de conocimiento para su organización. Se crea durante la configuración [de Viva Topics](set-up-topic-experiences.md) en el Centro de administración de Microsoft 365.
 
 El centro de temas tiene una página principal predeterminada con el elemento web **Temas** donde todos los usuarios con licencia pueden ver los temas a los que tienen una conexión.
 

@@ -1,6 +1,6 @@
 ---
 title: Implementar Microsoft Defender para endpoint en características de iOS
-description: Describe cómo implementar Microsoft Defender para endpoint en características de iOS
+description: Describe cómo implementar Microsoft Defender para Endpoint en dispositivos iOS no inscritos.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b6851c54d961bbb41229f8ae08bad372228629c0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ca97031cfffa40e099c5c2b8af68b157f3289aca
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542582"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622609"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Implementar Microsoft Defender para endpoint en dispositivos iOS no inscritos
 
@@ -32,7 +32,7 @@ ms.locfileid: "53542582"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
 > Defender para endpoint en iOS usa una VPN para proporcionar la característica de protección web. No se trata de una VPN normal y es una VPN local o auto-looping que no toma tráfico fuera del dispositivo.

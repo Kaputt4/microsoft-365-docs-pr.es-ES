@@ -2,8 +2,8 @@
 title: Determinación de la posición de cumplimiento de las aplicaciones
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Determine la posición de cumplimiento de las aplicaciones.
-ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: c991c1eb513184c2dd2a64d85f64fc6190f0320f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438029"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622465"
 ---
 # <a name="determine-your-app-compliance-posture"></a>Determinación de la posición de cumplimiento de las aplicaciones
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-La gobernanza de aplicaciones de Microsoft le permite evaluar rápidamente la posición de cumplimiento de las aplicaciones de terceros, y el acceso que tienen a los datos del inquilino de Microsoft 365, desde la página de información general de gobernanza de aplicaciones del [Centro de cumplimiento de Microsoft 365](https://aka.ms/appgovernance).
+La gobernanza de aplicaciones de Microsoft le permite evaluar rápidamente la posición de cumplimiento de las aplicaciones de terceros, y el acceso que tienen a los datos del inquilino de Microsoft 365, desde la página de información general de gobernanza de aplicaciones del Centro de cumplimiento de Microsoft 365.
 
 ![Página de información general de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 

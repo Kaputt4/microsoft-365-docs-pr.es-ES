@@ -10,24 +10,21 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b65ad2a6ac1a9b9abe06cc108a980be21152bc86
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 99bfaf40ab2bce2878af76650f92dda9f528be59
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844963"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622117"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Experiencia de primera ejecución con piloto automático y la página de estado de inscripción
 
 Escritorio administrado de Microsoft usa Windows [Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) y la página de estado de inscripción [(ESP)](/windows/deployment/windows-autopilot/enrollment-status) de Microsoft Intune para proporcionar la mejor experiencia de primera ejecución posible a los usuarios.
 
-La página Estado de inscripción se encuentra actualmente en versión preliminar pública.
-
 ## <a name="initial-deployment"></a>Implementación inicial
 
 Para proporcionar la experiencia ESP, debe registrar los dispositivos en el Escritorio administrado de Microsoft servicio. Para obtener más información sobre el registro, consulta [Registrar nuevos dispositivos](../get-started/register-devices-self.md) tú mismo o [Pasos para que los partners registren dispositivos.](../get-started/register-devices-partner.md)
-
-Una vez que los dispositivos estén registrados en el servicio, puede habilitar ESP para sus dispositivos de Escritorio administrado de Microsoft mediante la presentación de un vale de soporte técnico a través del [Portal de administración.](https://portal.azure.com/) Inicialmente, implementaremos la configuración de ESP en el grupo De prueba al presentar el vale. Se implementa en los otros grupos de implementación posteriores (First, Fast y Broad) cada 24 horas. Para pausar la implementación, file another ticket asking Operations to hold.
+La página de estado de inscripción y Autopilot para la implementación aprovisionada previamente están habilitadas de forma predeterminada en Escritorio administrado de Microsoft.
 
 ## <a name="autopilot-profile-settings"></a>Configuración del perfil de Autopilot
 
@@ -64,14 +61,13 @@ Escritorio administrado de Microsoft esta configuración para la experiencia de 
 |---|---|
 |Mostrar el progreso de la configuración de perfiles y aplicaciones|Sí|
 |Mostrar un error cuando la instalación tarda más de un número de minutos especificado|60|
-|Mostrar mensaje personalizado cuando se produce un error de límite de tiempo|Sí|
-|Mensaje de error|Sí, tarda un poco más en configurar el dispositivo de lo esperado. Haga clic a continuación para empezar y finalizaremos la configuración en segundo plano|
+|Mostrar mensaje personalizado cuando se produce un error de límite de tiempo|No|
 |Permitir a los usuarios recopilar registros sobre errores de instalación|Sí|
 |Solo mostrar página a dispositivos aprovisionados por la experiencia lista para usar (OOBE)|Sí|
 |Bloquear el uso de dispositivos hasta que se instalen todas las aplicaciones y perfiles|Sí|
 |Permitir a los usuarios restablecer el dispositivo si se produce un error de instalación|Sí|
 |Permitir a los usuarios usar el dispositivo si se produce un error de instalación|Sí|
-|Bloquear el uso del dispositivo hasta que se instalen estas aplicaciones necesarias si están asignadas al usuario o dispositivo.|Lugar de trabajo moderno: corrección de tiempo|
+|Bloquear el uso del dispositivo hasta que se instalen estas aplicaciones necesarias si están asignadas al usuario o dispositivo.|Lugar de trabajo moderno: corrección de tiempo|Modern Workplace: biblioteca de cliente|
 |
 
 La experiencia de la página de estado de inscripción se produce en tres fases. Para obtener más información, vea [Enrollment Status Page tracking information](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
@@ -88,14 +84,9 @@ La experiencia continúa de la siguiente manera:
 
 ![Página de inicio de la configuración de Autopilot que muestra las fases de "preparación del dispositivo" y "configuración del dispositivo".](../../media/mmd-autopilot-screenshot.png)
 
-## <a name="autopilot-for-pre-provisioned-deployment"></a>Autopilot para la implementación aprovisionada previamente
-
-> [!NOTE]
-> Autopilot para la implementación aprovisionada previamente en Escritorio administrado de Microsoft está actualmente en versión preliminar pública.
 
 ## <a name="additional-prerequisites-for-autopilot-for-pre-provisioned-deployment"></a>Requisitos previos adicionales para Autopilot para la implementación aprovisionada previamente
 
-- Debe tener habilitada la página de estado de inscripción (ESP). Para obtener más información, vea [Initial deployment](#initial-deployment).
 - El dispositivo debe tener una conexión de red cableada.
 - Si tiene dispositivos que se registraron con el portal de Escritorio administrado de Microsoft antes de agosto de 2020, des registrarlos y volver a registrarlos.
 - Los dispositivos deben tener una imagen de fábrica que incluya la actualización acumulativa de noviembre de 2020 [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) o [20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) según corresponda instalado o debe volver a crearse una imagen con la imagen Escritorio administrado de Microsoft más reciente.
@@ -130,7 +121,7 @@ Es posible que quieras solicitar una plantilla de nombre de dispositivo diferent
 ### <a name="enrollment-status-page-settings-change"></a>Cambio en la configuración de la página de estado de inscripción
 
 - Un número mayor de minutos para la configuración "Mostrar un error cuando la instalación tarda más de un número especificado de minutos".
-- El mensaje de error que se muestra
+- Se muestra el mensaje de error.
 - Agregar o quitar aplicaciones en la configuración "Bloquear el uso del dispositivo hasta que se instalen estas aplicaciones necesarias si están asignadas al usuario o dispositivo".
 
 ## <a name="required-applications"></a>Aplicaciones necesarias
@@ -140,4 +131,4 @@ Es posible que quieras solicitar una plantilla de nombre de dispositivo diferent
 - Limite las aplicaciones necesarias solo a las aplicaciones principales que un usuario necesita inmediatamente al iniciar sesión en el dispositivo.
 - Mantenga el tamaño total de todas las aplicaciones colectivamente por debajo de 1 GB para evitar tiempos de espera durante la fase de instalación de la aplicación.
 - Lo ideal es que las aplicaciones no tengan dependencias. Si tienes aplicaciones que deben *tener* dependencias, asegúrate de configurarlas, probarlas y validarlas como parte de la evaluación de ESP.
-- No se puede incluir ninguna aplicación que requiera el contexto "usuario" (por ejemplo, Teams) en la versión preliminar pública de ESP.
+- Microsoft Teams puede incluirse en ESP.

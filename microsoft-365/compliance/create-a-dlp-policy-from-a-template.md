@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, aprenderá a crear directivas DLP con una de las plantillas incluidas en Office 365.
-ms.openlocfilehash: 0088381698b47b2451f52fde32716a2436e8c073
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ae0284cfdbdc28db350dd655f9ceeda38830285c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113972"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622453"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
@@ -58,7 +58,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos de PII de E
     
 ### <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Inicie sesión con su cuenta profesional o educativa. Ahora está en el Centro de seguridad &amp; y cumplimiento.
     

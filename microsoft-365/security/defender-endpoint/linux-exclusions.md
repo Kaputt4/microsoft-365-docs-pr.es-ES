@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b55572509e9837f2858f96b01a13fbf259b2b770
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0fbcdaf4a9882f80578d871def3dd33674a7231f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393792"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622213"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurar y validar exclusiones para Microsoft Defender para Endpoint en Linux
 
@@ -33,7 +33,7 @@ ms.locfileid: "53393792"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 En este artículo se proporciona información sobre cómo definir exclusiones que se aplican a los exámenes a petición y la protección y supervisión en tiempo real.
 
@@ -51,22 +51,22 @@ Las exclusiones pueden ser útiles para evitar detecciones incorrectas en archiv
 
 En la tabla siguiente se muestran los tipos de exclusión admitidos por Defender para Endpoint en Linux.
 
-Exclusión | Definición | Ejemplos
+Exclusión|Definición|Ejemplos
 ---|---|---
-Extensión de archivo | Todos los archivos con la extensión, en cualquier lugar del dispositivo | `.test`
-Archivo | Un archivo específico identificado por la ruta de acceso completa | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | Todos los archivos de la carpeta especificada (recursivamente) | `/var/log/`<br/>`/var/*/`
-Proceso | Un proceso específico (especificado por la ruta de acceso completa o el nombre de archivo) y todos los archivos abiertos por él | `/bin/cat`<br/>`cat`<br/>`c?t`
+Extensión de archivo|Todos los archivos con la extensión, en cualquier lugar del dispositivo|`.test`
+Archivo|Un archivo específico identificado por la ruta de acceso completa|`/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Folder|Todos los archivos de la carpeta especificada (recursivamente)|`/var/log/`<br/>`/var/*/`
+Proceso|Un proceso específico (especificado por la ruta de acceso completa o el nombre de archivo) y todos los archivos abiertos por él|`/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > Las rutas anteriores deben ser vínculos duros, no vínculos simbólicos, para poder excluirse correctamente. Puede comprobar si una ruta de acceso es un vínculo simbólico ejecutando `file <path-name>` .
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:
 
-Carácter comodín | Descripción | Ejemplo | Coincidencias | No coincide
+Carácter comodín|Descripción|Ejemplo|Coincidencias|No coincide
 ---|---|---|---|---
-\* |    Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
-? | Coincide con cualquier carácter | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+\*|Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+?|Coincide con cualquier carácter|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>Cómo configurar la lista de exclusiones
 
@@ -92,6 +92,7 @@ Ejemplos:
     ```bash
     mdatp exclusion extension add --name .txt
     ```
+
     ```Output
     Extension exclusion configured successfully
     ```
@@ -101,6 +102,7 @@ Ejemplos:
     ```bash
     mdatp exclusion file add --path /var/log/dummy.log
     ```
+
     ```Output
     File exclusion configured successfully
     ```
@@ -110,10 +112,10 @@ Ejemplos:
     ```bash
     mdatp exclusion folder add --path /var/log/
     ```
+
     ```Output
     Folder exclusion configured successfully
     ```
-
 
 - Agregue una exclusión para una segunda carpeta:
 
@@ -121,10 +123,10 @@ Ejemplos:
     mdatp exclusion folder add --path /var/log/
     mdatp exclusion folder add --path /other/folder
     ```
+
     ```Output
     Folder exclusion configured successfully
     ```
-
 
 - Agregue una exclusión para una carpeta con un comodín en ella:
 
@@ -134,10 +136,11 @@ Ejemplos:
 
     > [!NOTE]
     > Esto solo excluirá las rutas de acceso de un nivel por debajo *de /var/*, pero no las carpetas que están más anidadas; por ejemplo, */var/this-subfolder/but-not-this-subfolder*.
-    
+
     ```bash
     mdatp exclusion folder add --path "/var/"
     ```
+
     > [!NOTE]
     > Esto excluirá todas las rutas de acceso cuyo elemento primario *es /var/*; por ejemplo, */var/this-subfolder/and-this-subfolder-as-well*.
 
@@ -150,10 +153,10 @@ Ejemplos:
     ```bash
     mdatp exclusion process add --name cat
     ```
-    ```Output    
+
+    ```Output
     Process exclusion configured successfully
     ```
-
 
 - Agregar una exclusión para un segundo proceso:
 
@@ -161,7 +164,8 @@ Ejemplos:
     mdatp exclusion process add --name cat
     mdatp exclusion process add --name dog
     ```
-    ```Output    
+
+    ```Output
     Process exclusion configured successfully
     ```
 

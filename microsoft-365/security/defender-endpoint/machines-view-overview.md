@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87d9d768a81d8e6ddd72753fe7372f18c13254e1
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d70825f8bdcd47f17d2f61834f4353c537a033ed
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542956"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622573"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión
 
@@ -32,8 +32,7 @@ ms.locfileid: "53542956"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
-
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 La **lista Dispositivos** muestra una lista de los dispositivos de la red donde se generaron alertas. De forma predeterminada, la cola muestra los dispositivos vistos en los últimos 30 días.  
 
@@ -67,7 +66,7 @@ El nivel de exposición refleja la exposición actual del dispositivo en funció
 
 Si el nivel de exposición indica "No hay datos disponibles", hay algunas razones por las que esto puede ser así:
 
-- El dispositivo dejó de informar durante más de 30 días; en ese caso, se considera inactivo y no se calcula la exposición
+- El dispositivo dejó de informar durante más de 30 días. En ese caso, se considera inactivo y no se calcula la exposición
 - Sistema operativo de dispositivo no compatible: consulta [requisitos mínimos para Microsoft Defender para endpoint](minimum-requirements.md)
 - Dispositivo con agente obsoleto (muy poco probable)
 
@@ -81,7 +80,7 @@ Filtre por los siguientes estados de estado del dispositivo:
 
 - **Activo:** dispositivos que informan activamente de los datos del sensor al servicio.
 - **Inactivo:** dispositivos que han dejado de enviar señales por completo durante más de 7 días.
-- **Configuración errónea: dispositivos** que tienen comunicaciones deficientes con el servicio o que no pueden enviar datos del sensor. Los dispositivos mal configurados se pueden clasificar en:
+- **Configuración errónea:** dispositivos que tienen comunicaciones deficientes con el servicio o que no pueden enviar datos del sensor. Los dispositivos mal configurados se pueden clasificar en:
   - Sin datos del sensor
   - Comunicaciones deficientes
 

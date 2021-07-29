@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6447aa4182846020312e9be870c5548d9415ac71
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 154d9abcbf4a2d37cd852b91412a076c22cb6c47
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842835"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622597"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en macOS
 
@@ -36,7 +36,7 @@ ms.locfileid: "52842835"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft publica periódicamente actualizaciones de software para mejorar el rendimiento, la seguridad y ofrecer nuevas características.
 
@@ -52,7 +52,7 @@ MAU incluye una herramienta de línea de comandos, denominada *msupdate*, que es
 
 En MAU, el identificador de aplicación de Microsoft Defender para Endpoint en macOS es *WDAV00*. Para descargar e instalar las actualizaciones más recientes de Microsoft Defender para Endpoint en macOS, ejecute el siguiente comando desde una ventana de Terminal:
 
-```
+```dos
 ./msupdate --install --apps wdav00
 ```
 
@@ -62,13 +62,13 @@ En esta sección se describen las preferencias más comunes que se pueden usar p
 
 ### <a name="set-the-channel-name"></a>Establecer el nombre del canal
 
-El canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen a través de MAU. Los `Beta` dispositivos pueden probar nuevas características antes de que los dispositivos `Preview` en `Current` y . 
+El canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen a través de MAU. Los `Beta` dispositivos pueden probar nuevas características antes de que los dispositivos `Preview` en `Current` y .
 
 El `Current` canal contiene la versión más estable del producto.
 
->[!IMPORTANT]
-> Antes de Microsoft AutoUpdate versión 4.29, los canales tenían nombres diferentes: 
-> 
+> [!IMPORTANT]
+> Antes de Microsoft AutoUpdate versión 4.29, los canales tenían nombres diferentes:
+>
 > - `Beta` se `InsiderFast` denominaba (Insider Fast)
 > - `Preview` se `External` denominaba (Insider Slow)
 > - `Current` se nombraba `Production`
@@ -77,15 +77,16 @@ El `Current` canal contiene la versión más estable del producto.
 >Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview` .
 
 |Sección|Valor|
-|:--|:--|
-| **Dominio** | `com.microsoft.autoupdate2` |
-| **Clave** | ChannelName |
-| **Tipo de datos** | Cadena |
-| **Posibles valores** | Beta <br/> Versión preliminar <br/> Current |
+|---|---|
+|**Dominio**|`com.microsoft.autoupdate2`|
+|**Clave**|ChannelName|
+|**Tipo de datos**|Cadena|
+|**Posibles valores**|Beta <p> Preview <p> Current|
 |||
 
 >[!WARNING]
 >Esta configuración cambia el canal de todas las aplicaciones que se actualizan a través de Microsoft AutoUpdate. Para cambiar el canal solo para Microsoft Defender para Endpoint en macOS, ejecute el siguiente comando después de reemplazar `[channel-name]` por el canal deseado:
+>
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
@@ -95,77 +96,72 @@ El `Current` canal contiene la versión más estable del producto.
 Cambiar la frecuencia con la que MAU busca actualizaciones.
 
 |Sección|Valor|
-|:--|:--|
-| **Dominio** | `com.microsoft.autoupdate2` |
-| **Clave** | UpdateCheckFrequency |
-| **Tipo de datos** | Entero |
-| **Valor predeterminado** | 720 (minutos) |
-| **Comment** | Este valor se establece en minutos. |
-
+|---|---|
+|**Dominio**|`com.microsoft.autoupdate2`|
+|**Clave**|UpdateCheckFrequency|
+|**Tipo de datos**|Entero|
+|**Valor predeterminado**|720 (minutos)|
+|**Comment**|Este valor se establece en minutos.|
 
 ### <a name="change-how-mau-interacts-with-updates"></a>Cambiar la forma en que MAU interactúa con las actualizaciones
 
 Cambiar la forma en que MAU busca actualizaciones.
 
 |Sección|Valor|
-|:--|:--|
-| **Dominio** | `com.microsoft.autoupdate2` |
-| **Clave** | HowToCheck |
-| **Tipo de datos** | Cadena |
-| **Posibles valores** | Manual <br/> AutomaticCheck <br/> AutomaticDownload |
-| **Comment** |  Ten en cuenta que AutomaticDownload realizará una descarga e instalará silenciosamente si es posible. |
-
+|---|---|
+|**Dominio**|`com.microsoft.autoupdate2`|
+|**Clave**|HowToCheck|
+|**Tipo de datos**|Cadena|
+|**Posibles valores**|Manual <p> AutomaticCheck <p> AutomaticDownload|
+|**Comment**|Ten en cuenta que AutomaticDownload realizará una descarga e instalará silenciosamente si es posible.|
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Cambiar si el botón "Buscar actualizaciones" está habilitado
 
 Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualizaciones" en la interfaz de usuario de Microsoft AutoUpdate.
 
 |Sección|Valor|
-|:--|:--|
-| **Dominio** | `com.microsoft.autoupdate2` |
-| **Clave** | EnableCheckForUpdatesButton |
-| **Tipo de datos** | Booleano |
-| **Posibles valores** | True (predeterminado) <br/> Falso |
-
+|---|---|
+|**Dominio**|`com.microsoft.autoupdate2`|
+|**Clave**|EnableCheckForUpdatesButton|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|True (predeterminado) <p> Falso|
 
 ### <a name="disable-insider-checkbox"></a>Casilla Deshabilitar Insider
 
 Se establece en true para que el "Join the Office Insider Program..." casilla no disponible / grised hacia fuera para los usuarios.
 
 |Sección|Valor|
-|:--|:--|
-| **Dominio** | `com.microsoft.autoupdate2` |
-| **Clave** | DisableInsiderCheckbox |
-| **Tipo de datos** | Booleano |
-| **Posibles valores** | False (predeterminado) <br/> Verdadero |
-
+|---|---|
+|**Dominio**|`com.microsoft.autoupdate2`|
+|**Clave**|DisableInsiderCheckbox|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|False (predeterminado) <p> Verdadero|
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Limitar la telemetría que se envía desde MAU
 
 Se establece en false para enviar datos de latido mínimos, sin uso de aplicaciones y sin detalles del entorno.
 
 |Sección|Valor|
-|:--|:--|
-| **Dominio** | `com.microsoft.autoupdate2` |
-| **Clave** | SendAllTelemetryEnabled |
-| **Tipo de datos** | Booleano |
-| **Posibles valores** | True (predeterminado) <br/> Falso |
-
+|---|---|
+|**Dominio**|`com.microsoft.autoupdate2`|
+|**Clave**|SendAllTelemetryEnabled|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|True (predeterminado) <p> Falso|
 
 ## <a name="example-configuration-profile"></a>Perfil de configuración de ejemplo
 
 El siguiente perfil de configuración se usa para:
+
 - Colocar el dispositivo en el canal de producción
 - Descargar e instalar actualizaciones automáticamente
 - Habilitar el botón "Buscar actualizaciones" en la interfaz de usuario
 - Permitir que los usuarios del dispositivo se inscriban en los canales de Insider
 
+> [!WARNING]
+> La siguiente configuración es una configuración de ejemplo y no debe usarse en producción sin la revisión adecuada de la configuración y la adaptación de las configuraciones.
 
->[!WARNING]
->La siguiente configuración es una configuración de ejemplo y no debe usarse en producción sin la revisión adecuada de la configuración y la adaptación de las configuraciones.
-
->[!TIP]
->Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview` .
+> [!TIP]
+> Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview` .
 
 ### <a name="jamf"></a>JAMF
 
@@ -251,6 +247,7 @@ El siguiente perfil de configuración se usa para:
 ```
 
 Para configurar MAU, puede implementar este perfil de configuración desde la herramienta de administración que usa su empresa:
+
 - Desde JAMF, cargue este perfil de configuración y establezca el dominio de preferencia en *com.microsoft.autoupdate2*.
 - Desde Intune, cargue este perfil de configuración y establezca el nombre del perfil de configuración personalizado en *com.microsoft.autoupdate2*.
 

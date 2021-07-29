@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 07/12/2021
-ms.openlocfilehash: 0179c620c8ba00c987395a800ed335644048283f
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1b773549909f376a67e0dc407d35ed4a6152ada8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394970"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622525"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -37,7 +37,7 @@ Mantener Antivirus de Microsoft Defender actualizado es fundamental para garanti
 - Actualizaciones de productos
 
 > [!TIP]
-> Para ver el motor, la plataforma y la fecha de firma más actuales, visite las actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender [y otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates)
+> Para ver el motor, la plataforma y la fecha de firma más actuales, visite las actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender [y otros antimalware de Microsoft](https://www.microsoft.com/wdsi/defenderupdates)
 
 ## <a name="security-intelligence-updates"></a>Actualizaciones de inteligencia de seguridad
 

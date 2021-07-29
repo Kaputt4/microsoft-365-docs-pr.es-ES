@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a7f343db64174fe3c48eaf8b584b03b53921edcb
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 243d29f460f0454d88c65baa0a9ed6bef9821733
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843619"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622669"
 ---
 # <a name="list-exposure-score-by-device-group"></a>Puntuación de exposición de lista por grupo de dispositivos
 
@@ -31,7 +31,7 @@ ms.locfileid: "52843619"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -45,22 +45,22 @@ Recupera una colección de alertas relacionadas con una dirección de dominio de
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
-:---|:---|:---
-Aplicación | Score.Read.All | 'Leer puntuación de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | Score.Read | 'Leer puntuación de administración de amenazas y vulnerabilidades'
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
+---|---|---
+Aplicación|Score.Read.All|'Leer puntuación de administración de amenazas y vulnerabilidades'
+Delegado (cuenta profesional o educativa)|Score.Read|'Leer puntuación de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-```
+```http
 GET /api/exposureScore/ByMachineGroups
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre        | Tipo | Descripción
-|:--------------|:-------|:--------------|
-| Authorization | Cadena | Portador {token}. **Obligatorio**.
+Nombre|Tipo|Descripción
+---|---|---
+|Authorization|Cadena|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -72,20 +72,19 @@ Si se realiza correctamente, este método devuelve 200 Ok, con una lista de la p
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="request"></a>Solicitud
+### <a name="example-request"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 ```
 
-### <a name="response"></a>Respuesta
+### <a name="example-response"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
 ```json
-
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#ExposureScore",
     "value": [

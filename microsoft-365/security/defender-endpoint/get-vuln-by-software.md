@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 18a2cf87cd0e6b898a9f2aa4d6ecd47a86a8c7f6
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9b450346384d5eead63043828f43d273e261d474
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769922"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622249"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Enumerar vulnerabilidades por software
 
@@ -31,7 +31,7 @@ ms.locfileid: "52769922"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,34 +43,37 @@ ms.locfileid: "52769922"
 Recupera una lista de vulnerabilidades en el software instalado. 
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación | Software.Read.All | 'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | Software.Read | 'Leer información de software de administración de amenazas y vulnerabilidades'
+Aplicación|Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
+Delegado (cuenta profesional o educativa)|Software.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /api/Software/{Id}/vulnerabilities
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre        | Tipo | Descripción
-|:--------------|:-------|:--------------|
-| Authorization | Cadena | Portador {token}. **Obligatorio**.
+|Nombre|Tipo|Descripción
+|---|---|---|
+|Authorization|Cadena|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente, este método devuelve 200 Ok con una lista de vulnerabilidades expuestas por el software especificado. 
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -78,7 +81,7 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities 
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
@@ -105,4 +108,3 @@ Aquí tiene un ejemplo de la respuesta.
         ]
 }
 ```
-

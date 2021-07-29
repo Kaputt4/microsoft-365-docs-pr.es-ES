@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b1777adf7b97083fae2daf4213a4bda742ba097d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8f9f46e56543e0ea4cbd4f6e8a9df325d7bb70af
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198250"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622237"
 ---
 # <a name="import-indicators-api"></a>API importar indicadores
 
@@ -28,59 +28,63 @@ ms.locfileid: "51198250"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>Descripción de la API
+
 Envía o actualiza el lote de [entidades de](ti-indicator.md) indicador.
-<br>No se admite la notación CIDR para IP.
+
+No se admite la notación CIDR para IP.
 
 ## <a name="limitations"></a>Limitaciones
+
 1. Las limitaciones de velocidad para esta API son 30 llamadas por minuto.
-2. Hay un límite de 15 000 indicadores [activos](ti-indicator.md) por inquilino. 
+2. Hay un límite de 15 000 indicadores [activos](ti-indicator.md) por inquilino.
 3. El tamaño máximo de lote para una llamada API es 500.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Introducción](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Ti.ReadWrite |  Indicadores de lectura y escritura
-Aplicación |   Ti.ReadWrite.All |  'Leer y escribir todos los indicadores'
-Delegado (cuenta profesional o educativa) |    Ti.ReadWrite |  Indicadores de lectura y escritura
-
+Aplicación|Ti.ReadWrite|Indicadores de lectura y escritura
+Aplicación|Ti.ReadWrite.All|'Leer y escribir todos los indicadores'
+Delegado (cuenta profesional o educativa)|Ti.ReadWrite|Indicadores de lectura y escritura
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/indicators/import
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | cadena | application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro | Tipo    | Descripción
+Parámetro|Tipo|Descripción
 :---|:---|:---
-Indicadores | Indicador<[lista](ti-indicator.md)> | Lista de [indicadores](ti-indicator.md). **Required**
-
+Indicadores|Indicador<[lista](ti-indicator.md)>|Lista de [indicadores](ti-indicator.md). **Required**
 
 ## <a name="response"></a>Respuesta
+
 - Si se realiza correctamente, este método devuelve 200: código de respuesta aceptar con una lista de resultados de importación por indicador, vea el ejemplo siguiente.
 - Si no se realiza correctamente: este método devuelve 400 - Solicitud mala. La solicitud incorrecta suele indicar un cuerpo incorrecto.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -120,7 +124,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 }
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
@@ -144,4 +148,5 @@ Aquí tiene un ejemplo de la respuesta.
 ```
 
 ## <a name="related-topic"></a>Tema relacionado
+
 - [Administrar indicadores](manage-indicators.md)

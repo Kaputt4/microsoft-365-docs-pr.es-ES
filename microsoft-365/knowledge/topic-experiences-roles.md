@@ -1,7 +1,7 @@
 ---
-title: Roles de los temas de Microsoft Viva
-ms.author: efrene
-author: efrene
+title: Roles en Temas Microsoft Viva
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre los roles de usuario en Temas de Viva.
-ms.openlocfilehash: 9f1d3667ee9eeb05201613c15dc360b2b006cecb
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: e26f47e5826ac6db6c41e1b0648dd23398f51c43
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288076"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622297"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Roles de los temas de Microsoft Viva 
+# <a name="roles-in-microsoft-viva-topics"></a>Roles en Temas Microsoft Viva
 
 Al usar Temas de Viva en el Microsoft 365, los usuarios pueden tener los siguientes roles:
 
@@ -54,9 +54,9 @@ Para crear y editar un tema, el usuario debe:
 
 ## <a name="knowledge-managers"></a>Responsables de la información
 
-Los responsables de la información son usuarios que administran los temas en su organización.  La administración de temas se realiza a través de la página Administrar temas del centro de temas y solo es visible para los responsables de la información.
+Los responsables de la información son usuarios que administran los temas en su organización.  La administración de temas se realiza a través de la **página Administrar** temas del centro de temas y solo es visible para los administradores de conocimientos.
 
-En la página Administrar temas, los responsables de la información pueden realizar las siguientes tareas:
+En la **página Administrar temas,** los administradores de conocimientos pueden realizar las siguientes tareas:
 
 - Ver temas sugeridos por IA.
 - Revise los temas para confirmar que son válidos.

@@ -1,7 +1,7 @@
 ---
-title: Recorte de seguridad de Microsoft Viva Topics
-ms.author: efrene
-author: efrene
+title: Recorte de seguridad en Temas Microsoft Viva
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -11,19 +11,19 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
-description: Información general sobre cómo se usa la seguridad para ver temas.
-ms.openlocfilehash: a7146592edb356b4d46a5a178b5754dc0de6a7c0
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+description: Obtenga información sobre cómo se usa la seguridad para ver temas en Temas de Viva.
+ms.openlocfilehash: 4edf66a16546766a1738090cabf5ede3a5951fc3
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939628"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622129"
 ---
-# <a name="microsoft-viva-topics-security-trimming"></a>Recorte de seguridad de Microsoft Viva Topics 
+# <a name="security-trimming-in-microsoft-viva-topics"></a>Recorte de seguridad en Temas Microsoft Viva
 
 Los usuarios de Viva Topics no pueden ver información en temas que sus permisos de Office 365 existentes les impiden ver. Todo lo que un usuario vea en una página de tema (por ejemplo, sitios de SharePoint, documentos o archivos) será información para la cual ya esté autorizado. Temas Viva no realiza cambios en los permisos existentes.
 
-## <a name="why-two-users-may-have-different-views-of-the-same-topic"></a>Por qué dos usuarios pueden tener diferentes vistas del mismo tema
+## <a name="why-two-users-might-have-different-views-of-the-same-topic"></a>Por qué dos usuarios pueden tener vistas diferentes del mismo tema
 
 Cuando se crea un tema a través de IA o selección manual, puede contener una descripción, nombres alternativos, personas asociadas con el tema, así como sitios, páginas y archivos relacionados. Cuando esta información se ve en una página de tema, es posible que dos usuarios que están viendo el mismo tema no vean la misma información.
   
@@ -35,7 +35,7 @@ Sin embargo, cuando el usuario 2 mira la misma página de tema de Neptuno, su vi
 
 ![Tema de Neptuno para el usuario 2](../media/knowledge-management/user1-topic-view.png) </br> 
 
-La diferencia en lo que los usuarios pueden ver en el mismo tema es porque es posible que los usuarios no tengan los permisos Office 365 para ver un sitio o archivo relacionado.  Viva Topics respeta los permisos que se establecen en los elementos de un tema y no puede cambiar el acceso a ellos. En nuestro ejemplo, el usuario 1 no puede ver el archivo *DG-2000 Product Overview* en su página de tema para Neptuno porque el usuario 1 no tiene Office 365 permisos para ver el archivo.
+La diferencia en lo que los usuarios pueden ver en el mismo tema se debe a que es posible que los usuarios no tengan los permisos Office 365 para ver un archivo o sitio relacionado.  Viva Topics respeta los permisos que se establecen en los elementos de un tema y no puede cambiar el acceso a ellos. En nuestro ejemplo, el usuario 1 no puede ver el archivo *DG-2000 Product Overview* en su página de tema para Neptuno porque el usuario 1 no tiene Office 365 permisos para ver el archivo.
 
 Si un usuario no puede ver suficiente información en un tema para que sea útil, el tema no estará disponible para el usuario. Cuando esto suceda, el usuario no verá el tema resaltado. Un usuario distinto que tenga los permisos para obtener información suficiente sobre el tema como para que le resulte útil, podrá ver el tema.
 
@@ -53,7 +53,7 @@ Los temas pueden contener información generada por la inteligencia artificial y
 
  - La información de un tema agregado por IA solo es visible para los usuarios que tienen acceso al contenido de origen.
  - La descripción del tema y la información de personas que ha agregado o editado manualmente un colaborador del tema o un administrador de conocimientos es visible para todos los usuarios que pueden ver el tema.
- - Los archivos, páginas y sitios solo son visibles para los usuarios que tienen permisos para el contenido de origen, ya sean agregados manualmente o agregados por AI.
+ - Los archivos, páginas y sitios solo son visibles para los usuarios que tengan permiso para ver el contenido de origen, ya sea que se hayan agregado manualmente o por IA.
 
 En la tabla siguiente se describe lo que los usuarios (visores de temas, colaboradores y administradores de conocimientos) pueden ver en un tema determinado en función de sus permisos.
 

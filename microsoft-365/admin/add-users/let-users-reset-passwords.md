@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo puede establecer una directiva para permitir a los usuarios restablecer sus propias contraseñas mediante la herramienta de restablecimiento de contraseñas de autoservicio.
-ms.openlocfilehash: ac6d7f16cb35cec757340a94c262c3541bea927a
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 284a81e46ff22bf0a2ae514db81432b64e342a7f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394320"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622153"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -67,11 +67,9 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 4. En **Autoservicio de restablecimiento de contraseña,** seleccione Ir a Azure Portal para activar el restablecimiento **de contraseñas sin servicio.**
 
-5. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, en el **panel Usuarios | Todos los usuarios** página, seleccione **Restablecimiento de contraseña**.
+5. En la **página Propiedades,** seleccione **Todo** para habilitarlo para todos los usuarios de su empresa y, a continuación, **seleccione Guardar**.
   
-6. En la **página Propiedades,** seleccione **Todo** para habilitarlo para todos los usuarios de su empresa y, a continuación, **seleccione Guardar**.
-  
-7. Cuando los usuarios inicien sesión, se les pedirá que escriban información de contacto adicional que les ayudará a restablecer su contraseña en el futuro.
+6. Cuando los usuarios inicien sesión, se les pedirá que escriban información de contacto adicional que les ayudará a restablecer su contraseña en el futuro.
 
 ## <a name="related-content"></a>Contenido relacionado
 

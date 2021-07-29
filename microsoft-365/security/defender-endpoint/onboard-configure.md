@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eebdad9b545c22e7a5a7b7fbdc37d37c5c0f538c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: c471f2b0d88219ac04a1c64343c950604fec2183
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538918"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622513"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de dispositivos al servicio de Microsoft Defender para endpoints
 
@@ -33,9 +33,9 @@ ms.locfileid: "53538918"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Tendrás que ir a la sección de incorporación del portal de Defender for Endpoint para incorporar cualquiera de los dispositivos compatibles. Según el dispositivo, se te guiará con los pasos adecuados y te ofrecerán opciones de herramientas de administración e implementación adecuadas para el dispositivo. 
+Tendrás que ir a la sección de incorporación del portal de Defender for Endpoint para incorporar cualquiera de los dispositivos compatibles. Según el dispositivo, se te guiará con los pasos adecuados y te ofrecerán opciones de herramientas de administración e implementación adecuadas para el dispositivo.
 
 En general, para incorporar dispositivos al servicio:
 
@@ -44,31 +44,30 @@ En general, para incorporar dispositivos al servicio:
 - Usar la herramienta de administración y el método de implementación adecuados para los dispositivos
 - Ejecutar una prueba de detección para comprobar que los dispositivos están correctamente incorporados e informando al servicio
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
 ## <a name="onboarding-tool-options"></a>Opciones de la herramienta de incorporación
+
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
-| Punto de conexión     | Opciones de herramientas                       |
-|--------------|------------------------------------------|
-| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)  |
-| **macOS**    | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
-| **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [Basado en aplicaciones](ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
-
-
-
+|Punto de conexión|Opciones de herramientas|
+|---|---|
+|**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <p> [Directiva de grupo](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [Scripts VDI](configure-endpoints-vdi.md) <p> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
+|**macOS**|[Scripts locales](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [Jamf Pro](mac-install-with-jamf.md) <p> [Administración de dispositivos móviles](mac-install-with-other-mdm.md)|
+|**Servidor Linux**|[Script local](linux-install-manually.md) <p> [Puppet](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
+|**iOS**|[Basado en aplicaciones](ios-install.md)|
+|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
 
 ## <a name="in-this-section"></a>En esta sección
-Tema | Descripción
-:---|:---
-[Incorporar versiones anteriores de Windows](onboard-downlevel.md)| Incorpore Windows 7 y Windows 8.1 dispositivos a Defender para endpoint. 
-[Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md) | Tendrás que incorporar dispositivos para que se informen al servicio Defender for Endpoint. Obtenga información sobre las herramientas y métodos que puede usar para configurar dispositivos en su empresa.
-[Servidores integrados](configure-server-endpoints.md) |  Incorpore Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) versión 1803 y versiones posteriores, Windows Server 2019 y versiones posteriores, y Windows Server 2019 core edition a Defender for Endpoint.
-[Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md) | Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows y plataformas no Windows de seguridad. Podrás ver alertas de varios sistemas operativos compatibles (SO) en Centro de seguridad de Microsoft Defender proteger mejor la red de la organización. Esta experiencia aprovecha los datos del sensor de productos de seguridad de terceros. 
-[Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md) | Ejecute un script en un dispositivo recién incorporado para comprobar que está informando correctamente al servicio Defender for Endpoint.
-[Configuración de proxy e Internet](configure-proxy-internet.md)| Habilite la comunicación con el servicio en la nube de Defender for Endpoint mediante la configuración del proxy y la configuración de conectividad a Internet.
-[Solucionar problemas de incorporación](troubleshoot-onboarding.md) | Obtenga información sobre cómo resolver problemas que pueden surgir durante la incorporación.
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+Tema|Descripción
+:---|:---
+[Incorporar versiones anteriores de Windows](onboard-downlevel.md)|Incorpore Windows 7 y Windows 8.1 dispositivos a Defender para endpoint.
+[Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)|Tendrás que incorporar dispositivos para que se informen al servicio Defender for Endpoint. Obtenga información sobre las herramientas y métodos que puede usar para configurar dispositivos en su empresa.
+[Servidores integrados](configure-server-endpoints.md)|Incorpore Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) versión 1803 y versiones posteriores, Windows Server 2019 y versiones posteriores, y Windows Server 2019 core edition a Defender for Endpoint.
+[Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)|Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows y plataformas no Windows de seguridad. Podrás ver alertas de varios sistemas operativos compatibles (SO) en Centro de seguridad de Microsoft Defender proteger mejor la red de la organización. Esta experiencia aprovecha los datos del sensor de productos de seguridad de terceros.
+[Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md)|Ejecute un script en un dispositivo recién incorporado para comprobar que está informando correctamente al servicio Defender for Endpoint.
+[Configuración de proxy e Internet](configure-proxy-internet.md)|Habilite la comunicación con el servicio en la nube de Defender for Endpoint mediante la configuración del proxy y la configuración de conectividad a Internet.
+[Solucionar problemas de incorporación](troubleshoot-onboarding.md)|Obtenga información sobre cómo resolver problemas que pueden surgir durante la incorporación.
+
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

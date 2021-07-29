@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 65ccc2cf551eeb52b9751a2457f8f1ba66e83fc7
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327016"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622705"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -102,13 +102,9 @@ El rol administrador de Intune no tiene permisos suficientes para esta comprobac
 
 Las directivas de cumplimiento de dispositivos de Intune en la organización de Azure AD pueden afectar Escritorio administrado de Microsoft dispositivos.
 
-**No preparado**
-
-Tiene al menos una directiva de cumplimiento dirigida a todos los usuarios. Escritorio administrado de Microsoft incluye directivas de cumplimiento que se dirigirán a los Escritorio administrado de Microsoft dispositivos.  Cambie la directiva para dirigirse a un grupo específico de Azure AD que no incluya ningún Escritorio administrado de Microsoft o dispositivos. Para ver los pasos, [vea Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
-
 **Advertencia**
 
-Asegúrese de que las directivas de cumplimiento que tenga no se Escritorio administrado de Microsoft usuarios. Para ver los pasos, [vea Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+Tiene al menos una directiva de cumplimiento que aplica a todos los usuarios. Escritorio administrado de Microsoft también incluye directivas de cumplimiento que se aplicarán a los Escritorio administrado de Microsoft dispositivos. Revise todas las directivas de cumplimiento creadas por su organización que se aplican Escritorio administrado de Microsoft dispositivos para asegurarse de que no haya conflictos. Para ver los pasos, [vea Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 
 
@@ -118,7 +114,7 @@ Los perfiles de configuración de dispositivos de Intune en la organización de 
 
 **No preparado**
 
-Tiene al menos un perfil de configuración dirigido a todos los usuarios, todos los dispositivos o ambos. Restablezca el perfil para dirigirse a un grupo específico de Azure AD que no incluya ningún Escritorio administrado de Microsoft dispositivos. Para ver los pasos, [vea Crear un perfil con configuración personalizada en Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
+Tiene al menos un perfil de configuración que se aplica a todos los usuarios, todos los dispositivos o ambos. Restablezca el perfil para que se aplique a un grupo de Azure AD específico que no incluya ningún Escritorio administrado de Microsoft dispositivos. Para ver los pasos, [vea Crear un perfil con configuración personalizada en Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
 
 **Advertencia**
 

@@ -13,15 +13,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-description: Información general de Temas Viva.
-ms.openlocfilehash: 785fddb7c951bb6f7c170971f0af4eb7ac8f9a83
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+description: Obtenga información sobre cómo usar Viva Topics en su organización.
+ms.openlocfilehash: 943b257750c11bb280fa864a1f8f49a2fb291fc2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984909"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622441"
 ---
-# <a name="microsoft-viva-topics-overview"></a>Información general de Temas Microsoft Viva 
+# <a name="microsoft-viva-topics-overview"></a>Información general de los temas de Microsoft Viva 
 
 Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para aportar conocimiento a los usuarios en las aplicaciones de Microsoft 365 que usan todos los días, empezando por SharePoint páginas modernas, Búsqueda de Microsoft y Búsqueda en Word, PowerPoint, Outlook y Excel.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f03c2209b369e6fb9e001452c53073daeb5fe1c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1885d508b26e517fde4dd2ba45a562f9393ffd75
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187006"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622561"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Administrar alertas de Microsoft Defender para puntos de conexión
 
@@ -32,7 +32,7 @@ ms.locfileid: "51187006"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Defender for Endpoint le notifica posibles eventos malintencionados, atributos e información contextual a través de alertas. En el panel de operaciones de seguridad se muestra un resumen de las alertas nuevas y se puede obtener acceso a todas las alertas de la cola **De alertas.**
 
@@ -114,7 +114,7 @@ Como alternativa, el jefe de equipo  puede asignar la alerta a la cola Resuelto 
 
 
 
-## <a name="alert-classification"></a>Clasificación de alertas
+## <a name="alert-classification"></a>Clasificación de alerta
 Puede elegir no establecer una clasificación o especificar si una alerta es una alerta verdadera o una alerta falsa. Es importante proporcionar la clasificación de verdadero positivo/falso positivo. Esta clasificación se usa para supervisar la calidad de las alertas y hacer que las alertas sea más precisa. El campo "determinación" define fidelidad adicional para una clasificación "verdadero positivo". 
 
 ## <a name="add-comments-and-view-the-history-of-an-alert"></a>Agregar comentarios y ver el historial de una alerta
@@ -127,7 +127,7 @@ Los comentarios agregados aparecen al instante en el panel.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Administrar reglas de supresión](manage-suppression-rules.md)
-- [Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender](alerts-queue.md)
+- [Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión](alerts-queue.md)
 - [Investigar alertas de punto de conexión de Microsoft Defender](investigate-alerts.md)
 - [Investigar un archivo asociado a una alerta de Microsoft Defender para punto de conexión](investigate-files.md)
 - [Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión](investigate-machines.md)
