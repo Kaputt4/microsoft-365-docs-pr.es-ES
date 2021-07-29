@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c318f063814d9b31e6d07c3bc6c7feea503efe2c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 73a602f9a8fbf9387708b1d0343315b7bc82617c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544847"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595875"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -36,7 +36,7 @@ ms.locfileid: "53544847"
 - Windows Server 2019 y versiones posteriores
 - Windows Edición principal de Server 2019
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
 Defender for Endpoint amplía la compatibilidad para incluir también el sistema operativo Windows server. Esta compatibilidad proporciona capacidades avanzadas de detección de ataques e investigación sin problemas a través de Microsoft 365 Defender consola.
 
@@ -112,7 +112,6 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: [Configure and update
 Si los servidores necesitan usar un proxy para comunicarse con Defender for Endpoint, use uno de los métodos siguientes para configurar la MMA para usar el servidor proxy:
 
 - [Configurar la MMA para usar un servidor proxy](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
-
 - [Configurar Windows usar un servidor proxy para todas las conexiones](configure-proxy-internet.md)
 
 Si hay un proxy o firewall en uso, asegúrese de que los servidores puedan tener acceso a todas las direcciones URL del servicio de Microsoft Defender para endpoints directamente y sin interceptación SSL. Para obtener más información, vea [habilitar el acceso a las direcciones URL del servicio defender para puntos de conexión](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). El uso de la interceptación SSL impedirá que el sistema se comunique con el servicio Defender for Endpoint.
@@ -123,11 +122,11 @@ Una vez completado, debería ver los servidores Windows incorporados en el porta
 
 En el panel Microsoft 365 Defender de navegación, **seleccione Configuración** de administración de  >  **dispositivos**  >  **endpoints**  >  .
 
-2. Seleccione **Windows Server 2008 R2 SP1, 2012 R2 y 2016** como sistema operativo.
+1. Seleccione **Windows Server 2008 R2 SP1, 2012 R2 y 2016** como sistema operativo.
 
-3. Haga **clic en Servidores integrados en El Centro de seguridad de Azure**.
+2. Haga **clic en Servidores integrados en El Centro de seguridad de Azure**.
 
-4. Siga las instrucciones de incorporación en [Microsoft Defender para](/azure/security-center/security-center-wdatp) endpoint con Azure Defender y si usa Azure ARC, siga las instrucciones de incorporación en Habilitar la integración de Microsoft Defender para [endpoints](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+3. Siga las instrucciones de incorporación en [Microsoft Defender para](/azure/security-center/security-center-wdatp) endpoint con Azure Defender y si usa Azure ARC, siga las instrucciones de incorporación en Habilitar la integración de Microsoft Defender para [endpoints](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 Después de completar los pasos de incorporación, deberá configurar y actualizar los [System Center Endpoint Protection cliente.](#configure-and-update-system-center-endpoint-protection-clients)
 
@@ -182,7 +181,9 @@ La compatibilidad con Windows Server proporciona información más detallada sob
 
 3. Ejecute el siguiente comando para comprobar si Microsoft Defender AV está instalado:
 
-   ```sc.exe query Windefend```
+   ```dos
+   sc.exe query Windefend
+   ```
 
     Si el resultado es "El servicio especificado no existe como servicio instalado", tendrá que instalar Microsoft Defender AV. Para obtener más información, [vea Antivirus de Microsoft Defender en Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
 
@@ -204,10 +205,12 @@ En esta integración se incluyen las siguientes funcionalidades:
 - Investigación del servidor: los clientes de Azure Defender pueden acceder a Microsoft 365 Defender realizar una investigación detallada para descubrir el ámbito de una posible infracción.
 
 > [!IMPORTANT]
-> - Cuando usa Azure Defender para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios estadounidenses, en la UE para usuarios europeos y británicos).<br>
+>
+> - Cuando usa Azure Defender para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios estadounidenses, en la UE para usuarios europeos y británicos).
 Los datos recopilados por Defender para endpoint se almacenan en la ubicación geográfica del inquilino tal como se identifica durante el aprovisionamiento.
 > - Si usa Defender para endpoint antes de usar Azure Defender, los datos se almacenarán en la ubicación que especificó al crear el inquilino, incluso si se integra con Azure Defender más adelante.
-> - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, póngase en contacto con el soporte técnico de Microsoft para restablecer el espacio empresarial. <br>
+> - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, póngase en contacto con el soporte técnico de Microsoft para restablecer el espacio empresarial.
+>
 La supervisión de extremos de servidor que utiliza esta integración se ha deshabilitado para Office 365 GCC clientes.
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Configurar y actualizar System Center Endpoint Protection clientes
@@ -228,7 +231,6 @@ Puede salir de Windows Server (SAC), Windows Server 2019 y Windows Server 2019 C
 - [Dispositivos offboard con Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
 - [Offboard y supervisar dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 - [Dispositivos offboard con un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
-
 
 Para otras Windows de servidor, tiene dos opciones para salir Windows servidores del servicio:
 
@@ -278,7 +280,6 @@ Para salir del servidor Windows, puede usar cualquiera de los siguientes método
     $AgentCfg.RemoveCloudWorkspace(&quot;WorkspaceID")
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
-
     ```
 
 ## <a name="onboarding-servers-with-no-management-solution"></a>Servidores de incorporación sin solución de administración
@@ -349,7 +350,7 @@ El nombre del archivo que se va a ejecutar aquí es c:\windows\MMA\DeployMMA.cmd
 Una vez reiniciado el servidor como parte del proceso de inicio, se instalará la actualización de la experiencia del cliente y la telemetría de diagnóstico KB y, a continuación, se instalará el agente mma, mientras se establece el identificador de área de trabajo y la clave, y se incorporará el servidor.
 
 También puede usar una **tarea inmediata para** ejecutar deployMMA.cmd si no desea reiniciar todos los servidores.
-Esto se podría hacer en dos fases. En primer **lugar,** cree los archivos y la carpeta en GPO: dé tiempo al sistema para asegurarse de que se ha aplicado el GPO y de que todos los servidores tienen los archivos de instalación. A continuación, agregue la tarea inmediata. Esto logrará el mismo resultado sin necesidad de reiniciar.
+Esto se podría hacer en dos fases. En primer **lugar, cree los archivos y la carpeta en** GPO. Dé tiempo al sistema para asegurarse de que se ha aplicado el GPO y que todos los servidores tienen los archivos de instalación. A continuación, agregue la tarea inmediata. Esto logrará el mismo resultado sin necesidad de reiniciar.
 
 Dado que el script tiene un método exit y no se vuelve a ejecutar si está instalado el MMA, también puede usar una tarea programada diariamente para lograr el mismo resultado. De forma similar a una directiva de cumplimiento de Configuration Manager, se comprobará diariamente para asegurarse de que la MMA está presente.
 

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos positivos y negativos que se deben ver. Una vez que se entrena al clasificador, se confirma que sus resultados son precisos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en directivas de prevención de pérdida de datos (DLP) o retención.
-ms.openlocfilehash: 1881e4de87fd41f21bb1f2236d46391b3a1ed785
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Un clasificador Microsoft 365 es una herramienta que se puede entrenar para reconocer varios tipos de contenido para la aplicación de directivas o de la formación, ya que le proporciona ejemplos positivos y negativos que buscar.
+ms.openlocfilehash: 2a98d3d889b1f2d51c795a8668c46ef4e0d7d93e
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114056"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594951"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -102,13 +102,18 @@ Microsoft 365 viene con cinco clasificadores previamente formados:
 - **Acoso:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con conductas ofensivas dirigidas a una o varias personas en función de los siguientes rasgos: raza, origen étnico, religión, origen nacional, género, orientación sexual, edad, discapacidad
 - **Profanidad:** detecta una categoría específica de elementos de texto de lenguaje ofensivo que contienen expresiones que ensoñan a la mayoría de las personas
 - **Amenaza:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad
+- **Discriminación:** detecta un lenguaje discriminatorio explícito y es especialmente sensible al lenguaje discriminatorio frente a las comunidades afroestadounides/negras en comparación con otras comunidades.
 
-Aparecen en la vista **Clasificadores Microsoft 365** de datos del centro de cumplimiento  >    >   con el estado de `Ready to use` .
+> [!IMPORTANT]
+> El clasificador de discriminación solo está disponible como versión preliminar pública para clientes cuyas Microsoft 365 inquilinos se encuentran en centros de datos de Norteamérica. Para ver dónde se encuentra Microsoft 365 inquilino, abra el centro de Administración de Microsoft 365 y vaya **a** Configuración Configuración de la organización Ubicación de datos del  >    >    >  **perfil de organización**. 
+
+Aparecen en la vista **clasificadores Centro de cumplimiento de Microsoft 365** clasificación de datos  >    >  **trainable con** el estado de `Ready to use` .
 
 ![clasificadores-clasificadores previamente formados](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> Tenga en cuenta que el lenguaje ofensivo, el acoso, la profanación y los clasificadores de amenazas solo funcionan con texto que se puede buscar no son exhaustivos ni completos.  Además, los estándares lingüísticos y culturales cambian continuamente y, a la luz de estas realidades, Microsoft se reserva el derecho de actualizar estos clasificadores a su discreción. Aunque los clasificadores pueden ayudar a su organización a supervisar la ofensiva y otro idioma usado, los clasificadores no abordan las consecuencias de dicho idioma y no están destinados a proporcionar los únicos medios de su organización para supervisar o responder al uso de dicho idioma. Su organización, y no Microsoft o sus subsidiarias, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, la aplicación, el bloqueo, la eliminación y la retención de cualquier contenido identificado por un clasificador previamente formado.
+> Tenga en cuenta que el lenguaje ofensivo, el acoso, la profanación, la discriminación y los clasificadores de amenazas solo funcionan con texto que admite búsquedas y no son una lista exhaustiva o completa de términos o idiomas en estas áreas. Además, los estándares lingüísticos y culturales cambian continuamente y, a la luz de estas realidades, Microsoft se reserva el derecho de actualizar estos clasificadores a su discreción. Aunque los clasificadores pueden ayudar a su organización a detectar estas áreas, los clasificadores no están diseñados para proporcionar el único medio de su organización para detectar o abordar el uso de dicho idioma. Su organización, no Microsoft ni sus subsidiarias, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, el examen, el bloqueo, la eliminación y la retención de cualquier contenido identificado por un clasificador previamente formado, incluido el cumplimiento de la privacidad local y otras leyes aplicables. Microsoft anima a consultar con abogados antes de la implementación y el uso.
+
 
 ### <a name="custom-classifiers"></a>Clasificadores personalizados
 
@@ -133,7 +138,7 @@ Puede ayudar a mejorar la precisión de todos los clasificadores personalizados 
 
 ![Flujo de trabajo de reciclaje de clasificadores](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

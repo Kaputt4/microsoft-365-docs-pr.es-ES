@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a52f810647c387c5a5726b9d31998c34add4092e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c8397731941a3344638edb0b57e77272f4fae930
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166190"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591000"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>Configurar Micro Focus ArcSight para extraer Defender para detecciones de puntos de conexión
 
@@ -32,11 +32,12 @@ ms.locfileid: "51166190"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink)
 
 Tendrás que instalar y configurar algunos archivos y herramientas para usar Micro Focus ArcSight para que pueda extraer Defender para detecciones de puntos de conexión.
 
->[!Note]
+> [!NOTE]
+>
 >- [Defender for Endpoint Alert](alerts.md) se compone de una o más detecciones
 >- [Defender para la detección de](api-portal-mapping.md) puntos de conexión se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de alerta relacionados.
 
@@ -88,7 +89,6 @@ En los pasos siguientes se supone que ha completado todos los pasos necesarios e
    - WDATP-connector.properties: C: \\ *folder_location*\current\user\agent\flexagent\
 
    > [!NOTE]
-   > 
    > Debe colocar los archivos de configuración en esta ubicación, donde *folder_location* representa la ubicación donde instaló la herramienta.
 
 4. Una vez completada la instalación del conector principal, se abrirá la ventana Configuración del conector. En la ventana Configuración del conector, seleccione **Agregar un conector**.
@@ -97,38 +97,23 @@ En los pasos siguientes se supone que ha completado todos los pasos necesarios e
 
 6. Escriba la siguiente información en el formulario de detalles del parámetro. Todos los demás valores del formulario son opcionales y se pueden dejar en blanco.
 
-   <table>
-    <tbody style="vertical-align:top;">
-    <tr>
-    <th>Campo</th>
-    <th>Valor</th>
-    </tr>
-    <tr>
-    <td>Archivo de configuración</td>
-    <td>Escriba el nombre del archivo de propiedad de cliente. El nombre debe coincidir con el archivo proporcionado en el .zip que descargó.
-Por ejemplo, si el archivo de configuración del directorio flexagent se denomina &quot; &quot;WDATP-Connector.js&quot; onparser.properties , debe escribir &quot; &quot; WDATP-Connector &quot; como el nombre del archivo de propiedad del cliente.</td>
-    </tr>
-    <td>Dirección URL de eventos</td>
-    <td>En función de la ubicación del centro de datos, seleccione la dirección URL de la UE o estados unidos: </br></br> <b>Para la</b>UE : https:// <i></i> wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br>
-   </br><b>Para ESTADOS UNIDOS:</b> https:// <i></i> wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br> <br> <b>Para Reino</b>Unido : https:// <i></i> wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME</td>
-    <tr>
-    <td>Tipo de autenticación</td>
-    <td>OAuth 2</td>
-    </tr>
-    <td>Archivo de propiedades de cliente de OAuth 2</td>
-    <td>Vaya a la ubicación del <em>archivo wdatp-connector.properties.</em> El nombre debe coincidir con el archivo proporcionado en el .zip que descargó.</td>
-    <tr>
-    <td>Token de actualización</td>
-    <td>Puede obtener un token de actualización de dos maneras: generando un token de actualización desde la página de configuración de <b>SIEM</b> o usando la herramienta restutil. <br><br> Para obtener más información sobre cómo <b></b> generar un token de actualización desde la configuración de preferencias, vea <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">Enable SIEM integration in Defender for Endpoint</a>. </br> </br><b>Obtenga el token de actualización con la herramienta restutil:</b> </br> a. Abra un símbolo del sistema. Vaya a C:\<em>folder_location</em>\current\bin donde <em>folder_location</em> representa la ubicación donde instaló la herramienta. </br></br> b. Tipo: <code>arcsight restutil token -config</code> desde el directorio bin. Por ejemplo: <b>arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> Se abrirá una ventana del explorador web. </br> </br>c. Escriba sus credenciales y, a continuación, haga clic en el campo de contraseña para permitir que la página redirija. En el símbolo del sistema de inicio de sesión, escriba sus credenciales. </br> </br>d. Se muestra un token de actualización en el símbolo del sistema. </br></br> e. Cópielo y péguelo en el <b>campo Actualizar token.</b>
-    </td>
-    </tr>
-    </tr>
-    </table><br/>
-    
+   <br>
+
+   ****
+
+   |Campo|Valor|
+   |---|---|
+   |Archivo de configuración|Escriba el nombre del archivo de propiedad de cliente. El nombre debe coincidir con el archivo proporcionado en el .zip que descargó. <p> Por ejemplo, si el archivo de configuración del directorio "flexagent" se denomina "WDATP-Connector.jsonparser.properties", debe escribir "WDATP-Connector" como el nombre del archivo de propiedad del cliente.|
+   |Dirección URL de eventos|En función de la ubicación del centro de datos, seleccione la dirección URL de la UE o estados unidos: <ul><li>**Para la UE**:  `https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Para EE. UU.**: `https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Para Reino Unido**: `https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
+   |Tipo de autenticación|OAuth 2|
+   |Archivo de propiedades de cliente de OAuth 2|Vaya a la ubicación del *archivo wdatp-connector.properties.* El nombre debe coincidir con el archivo proporcionado en el .zip que descargó.|
+   |Token de actualización|Puede obtener un token de actualización de dos maneras: generando un token de actualización desde la página de configuración de **SIEM** o usando la herramienta restutil. <p> Para obtener más información sobre cómo  generar un token de actualización desde la configuración de preferencias, vea [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md). <p> **Obtenga el token de actualización con la herramienta restutil**: <ol><li>Abra un símbolo del sistema. Vaya a C: \\ *ubicación de \_ carpeta*\current\bin donde *la \_* ubicación de la carpeta representa la ubicación donde instaló la herramienta.</li><li>Tipo: `arcsight restutil token -config` desde el directorio bin. Por ejemplo: **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080**. Se abrirá una ventana del explorador web.</li><li>Escriba sus credenciales y, a continuación, haga clic en el campo de contraseña para permitir que la página redirija. En el símbolo del sistema de inicio de sesión, escriba sus credenciales.</li><li>Se muestra un token de actualización en el símbolo del sistema.</li><li>Cópielo y péguelo en el **campo Actualizar token.**|
+   |
+
 7. El conector abre una ventana del explorador. Inicie sesión con las credenciales de la aplicación. Después de iniciar sesión, se le pedirá que le dé permiso a su cliente de OAuth2. Debe conceder permiso al cliente de OAuth 2 para que la configuración del conector pueda autenticarse.
 
    Si la <code>redirect_uri</code> dirección URL es https, se le redirigirá a una dirección URL en el host local. Verá una página que solicita que confíe en el certificado proporcionado por el conector que se ejecuta en el host local. Deberá confiar en este certificado si el redirect_uri es https.
-   
+
    Sin embargo, si especifica una dirección URL http para el redirect_uri, no es necesario proporcionar consentimiento para confiar en el certificado.
 
 8. Continúe con la configuración del conector volviendo a la ventana Configuración del conector de Micro Focus ArcSight.
@@ -177,12 +162,11 @@ Por ejemplo, si el archivo de configuración del directorio flexagent se denomin
 
 9. Vaya a **Active channel set** New  >  **Condition**  >  **Device**  >  **Device Product**.
 
-10. Set **Device Product = ATP de Microsoft Defender**. Cuando haya comprobado que los eventos fluyen a la herramienta, detenga el proceso de nuevo y vaya a Windows Services e inicie el REST de ArcSight FlexConnector.
+10. Establecer **producto de dispositivo = ATP de Microsoft Defender**. Cuando haya comprobado que los eventos fluyen a la herramienta, detenga el proceso de nuevo y vaya a Windows Services e inicie el REST de ArcSight FlexConnector.
 
 Ahora puede ejecutar consultas en la consola de Micro Focus ArcSight.
 
 Defender para detecciones de puntos de conexión aparecerá como eventos discretos, con "Microsoft" como proveedor y "Windows Defender ATP" como el nombre del dispositivo.
-
 
 ## <a name="troubleshooting-micro-focus-arcsight-connection"></a>Solución de problemas de conexión de Micro Focus ArcSight
 
@@ -206,6 +190,7 @@ Defender para detecciones de puntos de conexión aparecerá como eventos discret
 > Compruebe que el conector se está ejecutando deteniendo el proceso de nuevo. A continuación, vuelva a iniciar el conector y no debería aparecer ninguna ventana del explorador.
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Habilitar la integración de SIEM en Defender for Endpoint](enable-siem-integration.md)
 - [Extraer detecciones a las herramientas SIEM](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)
 - [Pull Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)

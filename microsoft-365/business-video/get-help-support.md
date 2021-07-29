@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Debe ser administrador de una suscripción empresarial para obtener ayuda de administrador o soporte técnico en línea o por teléfono con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: c33506a17ea7c99902025b613e27168606e7ff03
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 982c36ba5c941b2269fbdc59a66fa65e1baa903c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394826"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595023"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
@@ -46,15 +46,11 @@ Comience por [comprobar el estado actual de los servicios](../enterprise/view-se
 
 Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a encontrar una solución o le pondremos en contacto con el soporte técnico.
 
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje en el que se indica que no tiene permiso para acceder a esta página o llevar a cabo esta acción, no es administrador. (Para más información, consulte [¿Quién tiene permisos de administrador en mi empresa?](admin-center-overview.md#who-has-admin-permissions-in-my-business)).
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje en el que se indica que no tiene permiso para acceder a esta página o llevar a cabo esta acción, no es administrador. (Para más información, consulte [¿Quién tiene permisos de administrador en mi empresa?](admin-center-overview.md#who-has-admin-permissions-in-my-business)).
 
-2. Seleccione el botón **¿Necesita ayuda?**.
+1. Si los resultados no son útiles, seleccione **Ponerse en contacto con el soporte técnico**.
 
-3. En el panel **¿Necesita ayuda?**, díganos con qué necesita ayuda y presione **Entrar**.
-
-4. Si los resultados no son útiles, seleccione **Ponerse en contacto con el soporte técnico**.
-
-5. Escriba la descripción del problema, confirme su número de contacto y dirección de correo electrónico, seleccione el método de contacto que prefiere y, después, seleccione **Ponerse en contacto conmigo**. El tiempo de espera estimado se indica en el panel **¿Necesita ayuda?**.
+1. Escriba la descripción del problema, confirme su número de contacto y dirección de correo electrónico, seleccione el método de contacto que prefiere y, después, seleccione **Ponerse en contacto conmigo**. El tiempo de espera estimado se indica en el panel **¿Necesita ayuda?**.
 
 ## <a name="phone-support"></a>Soporte por teléfono
 

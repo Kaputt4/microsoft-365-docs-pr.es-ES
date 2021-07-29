@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3818fc0050790b2c3b307f95ee0760c516cbf893
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ff885980f784e9f4a56b737ddf0bc6b7109ee5f6
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769826"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591252"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>Agregar o quitar API de etiquetas de máquina
 
@@ -31,7 +31,7 @@ ms.locfileid: "52769826"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -47,21 +47,20 @@ Agrega o quita etiqueta a una [máquina específica.](machine.md)
 
 2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
-
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |    Permiso    |    Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |    Machine.ReadWrite.All |    'Leer y escribir toda la información de la máquina'
-Delegado (cuenta profesional o educativa) | Machine.ReadWrite | 'Leer y escribir información de máquina'
+Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
+Delegado (cuenta profesional o educativa)|Machine.ReadWrite|'Leer y escribir información de máquina'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
->- El usuario debe tener al menos el siguiente permiso de función: "Administrar la configuración de seguridad". Para obtener más información (vea [Crear y administrar roles](user-roles.md) para obtener más información)
->- El usuario debe tener acceso a la máquina en función de la configuración del grupo de máquinas (vea [Crear y](machine-groups.md) administrar grupos de máquinas para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de función: "Administrar la configuración de seguridad". Para obtener más información (vea [Crear y administrar roles](user-roles.md) para obtener más información)
+> - El usuario debe tener acceso a la máquina en función de la configuración del grupo de máquinas (vea [Crear y](machine-groups.md) administrar grupos de máquinas para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -71,28 +70,27 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | cadena | application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro |    Tipo    | Descripción
+Parámetro|Tipo|Descripción
 :---|:---|:---
-Valor |    Cadena |    El nombre de la etiqueta. **Necesario**.
-Acción    | Enum |    Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
-
+Valor|Cadena|El nombre de la etiqueta. **Necesario**.
+Acción|Enum|Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
 
 ## <a name="response"></a>Respuesta
 
 Si se realiza correctamente, este método devuelve 200: código de respuesta Aceptar y la máquina actualizada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request"></a>Solicitud
 
 Este es un ejemplo de una solicitud que agrega etiqueta de máquina.
 

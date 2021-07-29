@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b989b11739b5418ad14e147f76dde0e0dd7b1b1a
-ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
+ms.openlocfilehash: b74ff33fe2ed2581e033511b6ee8069696439a58
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53383455"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591180"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -43,22 +43,23 @@ Use la directiva _de entrega avanzada_ en Microsoft 365 para evitar que estos me
 
 - Los filtros de EOP y Microsoft Defender Office 365 realizar ninguna acción en estos mensajes.<sup>\*</sup>
 - [La purga de hora cero (ZAP)](zero-hour-auto-purge.md) para correo no deseado y suplantación de identidad (phishing) no toma ninguna acción en estos mensajes.<sup>\*</sup>
-- [Las alertas predeterminadas](alerts.md) del sistema no se desencadenan para estos escenarios.
+- [Las alertas predeterminadas](/microsoft-365/compliance/alert-policies#default-alert-policies) del sistema no se desencadenan para estos escenarios.
 - [AIR y la agrupación en clústeres en Defender para Office 365](office-365-air.md) omite estos mensajes.
 - Específicamente para simulaciones de suplantación de identidad de terceros:
-  - [Los envíos de](admin-submission.md) administrador generan una respuesta automática que indica que el mensaje forma parte de una campaña de simulación de suplantación de identidad (phishing) y no es una amenaza real. Las alertas y AIR no se desencadenarán.
+  - [Los envíos de](admin-submission.md) administrador generan una respuesta automática que indica que el mensaje forma parte de una campaña de simulación de suplantación de identidad (phishing) y no es una amenaza real. Las alertas y AIR no se desencadenarán. La experiencia de envíos de administrador mostrará estos mensajes como una amenaza simulada.
+  - Cuando un usuario informa de un mensaje de simulación de suplantación de identidad [(phishing)](enable-the-report-message-add-in.md)mediante el complemento Report Phishing para Outlook , el sistema no generará una alerta, investigación o incidente. El mensaje también se mostrará en la pestaña Mensajes notificados por el usuario de la página envíos.
   - [Caja fuerte vínculos en Defender para Office 365](safe-links.md) no bloquea ni detona las direcciones URL identificadas específicamente en estos mensajes.
   - [Caja fuerte datos adjuntos en Defender para Office 365](safe-attachments.md) no detonan datos adjuntos en estos mensajes.
 
 <sup>\*</sup> No puede omitir el filtrado de malware o ZAP para malware.
 
-Los mensajes identificados por la directiva de entrega avanzada no son amenazas de seguridad, por lo que los mensajes se marcan como invalidaciones del sistema. Los administradores pueden filtrar y analizar estas invalidaciones del sistema en las siguientes experiencias:
+Los mensajes identificados por la directiva de entrega avanzada no son amenazas de seguridad, por lo que los mensajes se marcan con invalidaciones del sistema. Las experiencias de administrador mostrarán estos mensajes como debido a una invalidación del sistema de simulación de suplantación de identidad **(Phishing)** o a una invalidación del sistema de buzones de **Correo de SecOps.** Los administradores pueden filtrar y analizar estas invalidaciones del sistema en las siguientes experiencias:
 
-- [Explorador de amenazas/detecciones en tiempo real en Defender para Office 365 plan 2](threat-explorer.md)
-- La [entidad Email Page en el Explorador de amenazas/Detecciones en tiempo real](mdo-email-entity-page.md)
-- Informe [de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
-- [Búsqueda avanzada en Microsoft Defender para endpoint](../defender-endpoint/advanced-hunting-overview.md)
-- [Vistas de campañas](campaigns.md)
+- [Explorador de amenazas/Detecciones](threat-explorer.md)en tiempo real en Defender para Office 365  plan 2: El administrador puede filtrar por el origen de invalidación del sistema y seleccionar simulación de **suplantación** de identidad o buzón **de SecOps**.
+- La entidad Detección de correo electrónico en explorador  de [amenazas/Detecciones](mdo-email-entity-page.md)en tiempo real: el administrador  puede ver un mensaje permitido por la directiva de la organización mediante el buzón **de SecOps** o la simulación de **suplantación** de identidad en invalidación de inquilino en la sección Invalidación.
+- Informe [de estado de](view-email-security-reports.md#threat-protection-status-report)protección  contra amenazas: el administrador puede filtrar por ver los datos por invalidación del sistema en el menú desplegable y seleccionar para ver los mensajes permitidos debido a una invalidación del sistema de simulación de suplantación de identidad. Para ver los mensajes permitidos por la  invalidación del buzón  de SecOps, puede seleccionar el desglose del gráfico por ubicación de entrega en el menú desplegable desglose del gráfico por razón.
+- [Búsqueda avanzada en Microsoft Defender para endpoint:](../defender-endpoint/advanced-hunting-overview.md)la simulación de phishing y las invalidaciones del sistema de buzones de SecOps se mostrarán como opciones dentro de OrgLevelPolicy en EmailEvents. 
+- [Vistas de campaña:](campaigns.md)el administrador puede filtrar por **el origen de** invalidación del sistema y seleccionar simulación de **suplantación** de identidad o buzón **de SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -73,7 +74,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
   Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Usar el portal Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada
 
@@ -103,7 +104,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
    - Haga ![ clic en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**.
    - Si no hay simulaciones de suplantación de identidad configuradas, haga clic en **Agregar**.
 
-3. En el **control desplegable Editar simulación de suplantación** de identidad de terceros que se abre, configure las siguientes opciones:
+3. En el **control desplegable Editar simulación de suplantación** de identidad de terceros que se abre, configure las siguientes opciones: 
 
    - **Dominio** de envío: expanda esta configuración y escriba al menos un dominio de dirección de correo electrónico (por ejemplo, contoso.com) haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas.
    - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores admitidos son:
@@ -113,6 +114,9 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
    - Direcciones **URL** de simulación para permitir: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)
 
    Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   
+   > [!NOTE]
+   > Debe especificar al menos un dominio **de** envío y al menos un **IP** de envío para configurar una simulación de suplantación de identidad de terceros en entrega avanzada. Opcionalmente, puede incluir direcciones **URL de Simulation para garantizar** que las direcciones URL presentes en los mensajes de simulación no se bloqueen. Puede especificar hasta 10 entradas para cada campo. Debe haber una coincidencia en al menos un dominio de **envío y** un **IP** de envío, pero no se mantiene ninguna asociación entre valores.
 
 4. Cuando haya terminado, siga uno de los pasos siguientes:
    - **Primera vez:** haga clic **en Agregar** y, a continuación, en **Cerrar**.

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9f1934de8f710a21bc362e735bb6f1eab7a2d287
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a73c54c989d33a5e3d4faacb286bfb551d74a3c6
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845443"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591240"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Búsqueda proactiva de amenazas con búsqueda avanzada
 
@@ -30,21 +30,20 @@ ms.locfileid: "52845443"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consulta que le permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar de forma proactiva los eventos de la red para localizar indicadores y entidades de amenazas. El acceso flexible a los datos permite la búsqueda sin restricciones para amenazas conocidas y potenciales.
 
 Vea este vídeo para obtener una introducción rápida a la búsqueda avanzada y un breve tutorial que le ayudará a empezar rápidamente.
-<br />
-<br />
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqo]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqo]
 
 Puede usar las mismas consultas de búsqueda de amenazas para crear reglas de detección personalizadas. Estas reglas se ejecutan automáticamente para buscar y responder a una actividad de infracción sospechosa, máquinas mal configuradas y otras conclusiones.
 
->[!TIP]
->Usa la búsqueda avanzada en [Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) para buscar amenazas con datos de Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. [Active Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
-Obtenga más información sobre cómo mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender en Migrar consultas avanzadas de búsqueda de [Microsoft Defender para endpoint.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
+> [!TIP]
+> Usa la búsqueda [avanzada en Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) para buscar amenazas mediante datos de Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. [Active la Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+
+Obtenga más información sobre cómo mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender en Migrar consultas avanzadas de búsqueda de [Microsoft Defender para endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
 ## <a name="get-started-with-advanced-hunting"></a>Introducción a la búsqueda avanzada
 
@@ -52,17 +51,23 @@ Siga estos pasos para aumentar los conocimientos avanzados de búsqueda.
 
 Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamente con la búsqueda avanzada.
 
-| Objetivo de aprendizaje | Descripción | Recurso |
-|--|--|--|
-| **Aprender el idioma** | La búsqueda avanzada se basa en [el lenguaje de consulta Kusto,](/azure/kusto/query/)que admite la misma sintaxis y operadores. Empiece a aprender el lenguaje de consulta mediante la ejecución de la primera consulta. | [Introducción al lenguaje de consulta](advanced-hunting-query-language.md) |
-| **Obtenga información sobre cómo usar los resultados de la consulta** | Obtenga información sobre gráficos y diversas formas de ver o exportar los resultados. Explore cómo puede ajustar rápidamente las consultas y profundizar para obtener información más enriquecente. | [Trabajar con resultados de consulta](advanced-hunting-query-results.md) |
-| **Entender el esquema** | Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Obtenga información sobre dónde buscar datos al crear las consultas. | [Referencia del esquema](advanced-hunting-schema-reference.md) |
-| **Usar consultas predefinidas** | Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas. | [Consultas compartidas](advanced-hunting-shared-queries.md) |
-| **Optimizar consultas y controlar errores** | Comprenda cómo crear consultas eficientes y libres de errores. | - [Procedimientos recomendados de consulta](advanced-hunting-best-practices.md)<br>- [Controlar errores](advanced-hunting-errors.md) |
-| **Obtener la cobertura más completa** | Use la configuración de auditoría para proporcionar una mejor cobertura de datos para su organización. | - [Ampliar la cobertura de búsqueda avanzada](advanced-hunting-extend-data.md) |
-| **Ejecutar una investigación rápida** | Ejecute rápidamente una consulta de búsqueda avanzada para investigar la actividad sospechosa. | - [Búsqueda rápida de información de entidad o evento con *go hunt*](advanced-hunting-go-hunt.md) |
-| **Contener amenazas y solucionar compromisos** | Responder a los ataques mediante la quarantining de archivos, la restricción de la ejecución de aplicaciones y otras acciones | - [Realizar acciones en los resultados avanzados de la consulta de búsqueda](advanced-hunting-take-action.md) |
-| **Crear reglas de detección personalizadas** | Comprenda cómo puede usar consultas de búsqueda avanzadas para desencadenar alertas y realizar acciones de respuesta automáticamente. | - [Introducción a las detecciones personalizadas](overview-custom-detections.md)<br>- [Reglas de detección personalizadas](custom-detection-rules.md) |
+<br>
+
+****
+
+|Objetivo de aprendizaje|Descripción|Recurso|
+|---|---|---|
+|**Aprender el idioma**|La búsqueda avanzada se basa en [el lenguaje de consulta Kusto,](/azure/kusto/query/)que admite la misma sintaxis y operadores. Empiece a aprender el lenguaje de consulta mediante la ejecución de la primera consulta.|[Introducción al lenguaje de consulta](advanced-hunting-query-language.md)|
+|**Obtenga información sobre cómo usar los resultados de la consulta**|Obtenga información sobre gráficos y diversas formas de ver o exportar los resultados. Explore cómo puede ajustar rápidamente las consultas y profundizar para obtener información más enriquecente.|[Trabajar con resultados de consulta](advanced-hunting-query-results.md)|
+|**Entender el esquema**|Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Obtenga información sobre dónde buscar datos al crear las consultas.|[Referencia del esquema](advanced-hunting-schema-reference.md)|
+|**Usar consultas predefinidas**|Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas.|[Consultas compartidas](advanced-hunting-shared-queries.md)|
+|**Optimizar consultas y controlar errores**|Comprenda cómo crear consultas eficientes y libres de errores.|- [Procedimientos recomendados de consulta](advanced-hunting-best-practices.md)<br>- [Controlar errores](advanced-hunting-errors.md)|
+|**Obtener la cobertura más completa**|Use la configuración de auditoría para proporcionar una mejor cobertura de datos para su organización.|- [Ampliar la cobertura de búsqueda avanzada](advanced-hunting-extend-data.md)|
+|**Ejecutar una investigación rápida**|Ejecute rápidamente una consulta de búsqueda avanzada para investigar la actividad sospechosa.|- [Búsqueda rápida de información de entidad o evento con *go hunt*](advanced-hunting-go-hunt.md)|
+|**Contener amenazas y solucionar compromisos**|Responder a los ataques mediante la quarantining de archivos, la restricción de la ejecución de aplicaciones y otras acciones|- [Realizar acciones en los resultados avanzados de la consulta de búsqueda](advanced-hunting-take-action.md)|
+|**Crear reglas de detección personalizadas**|Comprenda cómo puede usar consultas de búsqueda avanzadas para desencadenar alertas y realizar acciones de respuesta automáticamente.|- [Introducción a las detecciones personalizadas](overview-custom-detections.md)<br>- [Reglas de detección personalizadas](custom-detection-rules.md)|
+|
+
 
 ## <a name="data-freshness-and-update-frequency"></a>Actualización de datos y frecuencia de actualización
 

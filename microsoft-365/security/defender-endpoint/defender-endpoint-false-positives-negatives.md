@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 7da28ea308994663549c2c490f53a3e0e75a0857
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: ba376288b759f9a9c331450f3f48c918b0171e51
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339267"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595695"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -180,12 +180,12 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 
 1. Abra un símbolo del sistema con privilegios elevados en el dispositivo:
    1. Vaya a **Inicio** y escriba _cmd_.
-   2. Haga clic con el **botón secundario en Símbolo del sistema** y seleccione Ejecutar como **administrador.**
+   2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
 2. Escriba el siguiente comando y presione **Entrar**:
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]

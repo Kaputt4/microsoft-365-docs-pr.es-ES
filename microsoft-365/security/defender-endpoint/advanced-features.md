@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: db9ff6429062f110981a2e91506b155a506d6ee5
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339579"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591012"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -32,13 +32,13 @@ ms.locfileid: "53339579"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Según los productos de seguridad de Microsoft que use, algunas características avanzadas podrían estar disponibles para integrar Defender for Endpoint con.
 
 ## <a name="enable-advanced-features"></a>Habilitar características avanzadas
 
-1. En el panel de navegación, seleccione **Configuración de**  >  **preferencias Características avanzadas**.
+1. En el panel de navegación, **seleccione Configuración** Características avanzadas  >   **de**  >  **endpoints**.
 2. Seleccione la característica avanzada que desea configurar y alternar la configuración entre **On** y **Off**.
 3. Haga clic **en Guardar preferencias**.
 
@@ -65,7 +65,7 @@ Para obtener más información acerca de las asignaciones de roles, vea [Create 
 Habilitar esta característica permite ejecutar scripts sin signo en una sesión de respuesta en directo.
 
 ## <a name="always-remediate-pua"></a>Corregir siempre la PUA
-Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software que puede hacer que el equipo se ejecute lentamente, muestre anuncios inesperados o, en el peor de los casos, instale otro software que pueda ser inesperado o no deseado. 
+Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software que puede hacer que el equipo se ejecute lentamente, mostrar anuncios inesperados o, en el peor de los casos, instalar otro software, que puede ser inesperado o no deseado. 
 
 Active esta característica para que las aplicaciones potencialmente no deseadas (PUA) se corrija en todos los dispositivos del espacio empresarial, incluso si la protección pua no está configurada en los dispositivos. Esto ayudará a proteger a los usuarios de la instalación involuntaria de aplicaciones no deseadas en su dispositivo. Cuando está desactivada, la corrección depende de la configuración del dispositivo. 
 
@@ -81,10 +81,10 @@ La detección y respuesta de puntos de conexión (EDR) en modo de bloqueo propor
 
 ## <a name="autoresolve-remediated-alerts"></a>Alertas remediadas de Autoresolve
 
-Para los inquilinos creados en o después de Windows 10, versión 1809, la funcionalidad de investigación y corrección automatizada se configura de forma predeterminada para resolver alertas en las que el estado del resultado del análisis automatizado es "No se encontraron amenazas" o "Corregido".  Si no quieres que las alertas se resuelvan automáticamente, tendrás que desactivar manualmente la característica.
+Para los inquilinos creados en o después de Windows 10, versión 1809, la capacidad de investigación automatizada y corrección está configurada de forma predeterminada para resolver alertas en las que el estado del resultado del análisis automatizado es "No se encontraron amenazas" o "Corregido".  Si no quieres que las alertas se resuelvan automáticamente, tendrás que desactivar manualmente la característica.
 
 > [!TIP]
-> Para los inquilinos creados antes de esa versión, deberá activar manualmente esta característica desde la [página Características avanzadas.](https://securitycenter.windows.com/preferences2/integration)
+> Para los inquilinos creados antes de esa versión, deberá activar manualmente esta característica desde la [página Características avanzadas.](https://security.microsoft.com//preferences2/integration)
 
 > [!NOTE]
 >
@@ -105,8 +105,8 @@ Para activar **Permitir o bloquear** archivos:
 1. En el panel de navegación, **seleccione Configuración**  >  **Características avanzadas**  >    >  **generales de**  >  puntos de conexión Permitir o bloquear archivo .
 
 1. Alterna la configuración entre **On** y **Off**.
-
-    ![Imagen de la configuración avanzada para la característica de archivo de bloqueo](images/atp-preferences-setup.png)
+ 
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Imagen de la configuración avanzada para la característica de archivo de bloqueo":::
 
 1. Seleccione **Guardar preferencias** en la parte inferior de la página.
 
@@ -116,12 +116,12 @@ Después de activar esta característica, puede [bloquear archivos a través](re
 
 Activar esta característica permite crear indicadores para direcciones IP, dominios o direcciones URL, que determinan si se permitirán o bloquearán en función de la lista de indicadores personalizada.
 
-Para usar esta característica, los dispositivos deben ejecutarse Windows 10 versión 1709 o posterior. También deben tener protección de red en modo de bloqueo y versión 4.18.1906.3 o posterior de la plataforma antimalware, vea [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
+Para usar esta característica, los dispositivos deben ejecutarse Windows 10 versión 1709 o posterior. También deben tener protección de red en modo de bloqueo y versión 4.18.1906.3 o posterior de la plataforma antimalware vea [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
 
 Para obtener más información, vea [Administrar indicadores](manage-indicators.md).
 
 > [!NOTE]
-> La protección de red aprovecha los servicios de reputación que procesan solicitudes en ubicaciones que podrían estar fuera de la ubicación seleccionada para los datos de Defender para endpoint.
+> La protección de red aprovecha los servicios de reputación que procesan solicitudes en ubicaciones que podrían estar fuera de la ubicación seleccionada para los datos de Endpoint de Defender.
 
 ## <a name="tamper-protection"></a>Protección contra alteraciones
 Durante algunos tipos de ataques cibernéticos, los actores malos intentan deshabilitar las características de seguridad, como la protección antivirus, en las máquinas. A los actores malintencionados les gusta deshabilitar las características de seguridad para obtener un acceso más fácil a los datos, para instalar malware o para aprovechar sus datos, identidades y dispositivos.
@@ -153,16 +153,16 @@ La habilitación Skype Empresarial integración le permite comunicarse con los u
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Integración de Microsoft Defender para identidades
 
-La integración con Microsoft Defender for Identity te permite pivotar directamente en otro producto de seguridad de Microsoft Identity. Microsoft Defender for Identity aumenta una investigación con información adicional sobre una cuenta comprometida sospechosa y recursos relacionados. Al habilitar esta característica, enriquecerás la funcionalidad de investigación basada en dispositivos al girar por la red desde un punto de vista de identificación.
+La integración con Microsoft Defender for Identity te permite pivotar directamente en otro producto de seguridad de Microsoft Identity. Microsoft Defender for Identity aumenta una investigación con más información sobre una cuenta comprometida sospechosa y los recursos relacionados. Al habilitar esta característica, enriquecerás la funcionalidad de investigación basada en dispositivos al girar por la red desde un punto de vista de identificación.
 
 > [!NOTE]
 > Tendrás que tener la licencia adecuada para habilitar esta característica.
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365 Conexión de inteligencia de amenazas
 
-Esta característica solo está disponible si tiene un Office 365 E5 activo o el complemento de inteligencia de amenazas. Para obtener más información, vea la Office 365 Enterprise de producto de E5.
+Esta característica solo está disponible si tienes un Office 365 E5 activo o el complemento inteligencia de amenazas. Para obtener más información, vea la Office 365 Enterprise de producto de E5.
 
-Al activar esta característica, podrás incorporar datos de Microsoft Defender para Office 365 en Microsoft 365 Defender para llevar a cabo una investigación de seguridad completa en Office 365 buzones y Windows dispositivos.
+Al activar esta característica, podrás incorporar datos de Microsoft Defender para Office 365 en Microsoft 365 Defender para llevar a cabo una investigación de seguridad completa en Office 365 buzones y dispositivos Windows.
 
 > [!NOTE]
 > Tendrás que tener la licencia adecuada para habilitar esta característica.
@@ -225,26 +225,27 @@ Esta característica solo está disponible si tiene lo siguiente:
 
 ### <a name="conditional-access-policy"></a>Directiva de acceso condicional
 
-Al habilitar la integración de Intune, Intune creará automáticamente una directiva clásica de acceso condicional (CA). Esta directiva de ca clásica es un requisito previo para configurar informes de estado en Intune. No se debe eliminar.
+Al habilitar la integración de Intune, Intune creará automáticamente una directiva clásica de acceso condicional (CA). Esta directiva de ca clásica es un requisito previo para configurar informes de estado en Intune. No debe eliminarse.
 
 > [!NOTE]
 > La directiva de CA clásica creada por Intune es distinta de las directivas modernas de acceso [condicional,](/azure/active-directory/conditional-access/overview/)que se usan para configurar puntos de conexión.
 
-
 ## <a name="device-discovery"></a>Detección de dispositivo
+
 Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. Para obtener más información, consulta [Detección de dispositivos](device-discovery.md).
 
 > [!NOTE]
 > Siempre puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados. 
 
-## <a name="preview-features"></a>Vista previa de las características
+## <a name="preview-features"></a>Versión preliminar de las características
 
 Obtenga información sobre las nuevas características en la versión preliminar de Defender for Endpoint. Pruebe las próximas características al activar la experiencia de vista previa.
 
 Tendrás acceso a las próximas características, sobre las que puedes proporcionar comentarios para ayudar a mejorar la experiencia general antes de que las características estén disponibles en general.
 
+## <a name="download-quarantined-files"></a>Descargar archivos en cuarentena
 
-
+Copia de seguridad de archivos en cuarentena en una ubicación segura y compatible para que se puedan descargar directamente de la cuarentena. El **botón Descargar** archivo siempre estará disponible en la página de archivos. Esta configuración está activada de forma predeterminada. [Más información sobre los requisitos](respond-file-alerts.md#download-quarantined-files)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 420495c3d76698561be7a02d27468237bdd98dff
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 81bed621396e4dd8fe57eae157ed2be62f350fc6
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543352"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594939"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Habilitar la integración de SIEM en Microsoft Defender para endpoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "53543352"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Habilite la integración de la información de seguridad y la administración de eventos (SIEM) para que pueda extraer detecciones de Microsoft 365 Defender. Extraer detecciones mediante la solución SIEM o mediante la conexión directa a la API de REST de detecciones.
 
@@ -55,10 +55,10 @@ Habilite la integración de la información de seguridad y la administración de
 
 1. En el panel de navegación, **seleccione Configuración** API de puntos de  >  **conexión**  >    >  **SIEM**.
 
-    :::image type="content" source="../../media/enable_siemnew.png" alt-text="Imagen de la integración siem desde Configuración menu1":::
+      :::image type="content" source="../../media/enable-siemnew.png" alt-text="Imagen de la integración siem desde Configuración menu1":::
 
-    >[!TIP]
-    >Si se produce un error al intentar habilitar la aplicación de conector SIEM, compruebe la configuración del bloqueador de elementos emergentes del explorador. Puede que esté bloqueando la nueva ventana que se abre al habilitar la funcionalidad. 
+      >[!TIP]
+      >Si se produce un error al intentar habilitar la aplicación de conector SIEM, compruebe la configuración del bloqueador de elementos emergentes del explorador. Puede que esté bloqueando la nueva ventana que se abre al habilitar la funcionalidad. 
 
 2. Seleccione **Habilitar integración SIEM**. De este modo, se activa la sección de detalles de acceso al conector **SIEM** con valores rellenados previamente y se crea una aplicación en el espacio empresarial de Azure Active Directory (Azure AD).
 

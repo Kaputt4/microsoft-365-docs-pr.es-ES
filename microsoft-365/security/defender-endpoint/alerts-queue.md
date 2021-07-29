@@ -1,5 +1,5 @@
 ---
-title: Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender
+title: Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo funcionan las colas de alertas de Microsoft Defender para puntos de conexión y cómo ordenar y filtrar listas de alertas.
 keywords: alertas, colas, cola de alertas, ordenar, ordenar, filtrar, administrar alertas, nuevas, en curso, resueltas, más recientes, tiempo en cola, gravedad, período de tiempo, alertas de expertos en amenazas de Microsoft
 search.product: eADQiWindows 10XVcnh
@@ -17,21 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4570e04b53f5469242f1c05d808e6aae80663b6d
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934338"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591276"
 ---
-# <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender
+# <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink)
 
 La **cola De alertas** muestra una lista de alertas marcadas desde dispositivos de la red. De forma predeterminada, la cola muestra alertas vistas en los últimos 30 días en una vista agrupada. Las alertas más recientes se muestran en la parte superior de la lista, lo que le ayudará a ver primero las alertas más recientes.
 
@@ -54,7 +54,7 @@ En la navegación superior puede:
 
 Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener una vista más centrada de las alertas.
 
-### <a name="severity"></a>Gravedad
+### <a name="severity"></a>Severity
 
 Gravedad de alerta | Descripción
 :---|:---

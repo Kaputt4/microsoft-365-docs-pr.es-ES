@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c2e52b7074dcd15e7f6852a11ccb7793572cd9b5
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 482893e069f33f445bdb792eebed3ea6cf2ad91c
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771014"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591372"
 ---
 # <a name="common-rest-api-error-codes"></a>Códigos de error comunes de API de REST
 
@@ -33,9 +33,9 @@ ms.locfileid: "52771014"
 * El mensaje es un texto gratuito que se puede cambiar.
 * En la parte inferior de la página, puede encontrar ejemplos de respuesta.
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Código de error |Código de estado HTTP |Mensaje 
+Código de error |Código de estado HTTP |Message 
 :---|:---|:---
 BadRequest | BadRequest (400) | Mensaje de error General Bad Request.
 ODataError | BadRequest (400) | Consulta URI de OData no válida (se especifica el error específico).

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dc3ce994108f902e3119de2f5b175b232b68c891
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fcb34385446342e4b0a948f561b886e19743aa4e
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843727"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591144"
 ---
 # <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>Licencia de API de Microsoft Defender para Endpoint y términos de uso
 
@@ -37,15 +37,16 @@ Defender for Endpoint API are governed by [Microsoft API License and Terms of us
 
 ### <a name="throttling-limits"></a>Superado la limitación
 
-Nombre | Llamadas | Período de renovación 
+Nombre|Llamadas|Período de renovación
 :---|:---|:---
-Llamadas API por conexión | 100 | 60 segundos
-
+Llamadas API por conexión|100|60 segundos
 
 ## <a name="legal-notices"></a>Avisos legales
 
 Microsoft y los colaboradores le conceden una licencia para la documentación de Microsoft y otro contenido de este repositorio bajo la Licencia pública internacional Creative Commons Attribution 4.0, consulte el archivo LICENSE.
 
-Microsoft, Windows, Microsoft Azure y/u otros productos y servicios de Microsoft a los que se hace referencia en la documentación pueden ser marcas comerciales o marcas comerciales registradas de Microsoft en los Estados Unidos y/u otros países. Las licencias de este proyecto no le conceden derechos para usar nombres, logotipos o marcas comerciales de Microsoft. Las directrices generales de marca comercial de Microsoft se pueden encontrar en https://go.microsoft.com/fwlink/?LinkID=254653 .
+Microsoft, Windows, Microsoft Azure y/u otros productos y servicios de Microsoft a los que se hace referencia en la documentación pueden ser marcas comerciales o marcas comerciales registradas de Microsoft en los Estados Unidos y/u otros países. Las licencias de este proyecto no le conceden derechos para usar nombres, logotipos o marcas comerciales de Microsoft. Las directrices generales de marca comercial de Microsoft se pueden encontrar en <https://go.microsoft.com/fwlink/p/?LinkID=254653> .
 
-La información de privacidad se puede encontrar en Microsoft y cualquier colaborador se reserva todos los demás derechos, ya sea bajo sus respectivos derechos de autor, patentes o marcas comerciales, ya sea por implicación, impedimento o de otro https://privacy.microsoft.com/en-us/ modo.
+La información de privacidad se puede encontrar en <https://privacy.microsoft.com/> .
+
+Microsoft y cualquier colaborador se reservan todos los demás derechos, ya sea bajo sus respectivos derechos de autor, patentes o marcas comerciales, ya sea por implicación, impedimento o de otro modo.

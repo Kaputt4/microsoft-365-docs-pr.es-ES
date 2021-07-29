@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21d17ee789a4757df10e99514f23cfc26b186405
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3d52e9d2d6fc10cfd58a6d658bb01f5b7bfa1c83
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166202"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591312"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>Habilitar el acceso condicional para proteger mejor a los usuarios, dispositivos y datos 
 
@@ -31,11 +31,11 @@ ms.locfileid: "51166202"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
 El acceso condicional es una funcionalidad que te ayuda a proteger mejor la información de los usuarios y de la empresa al asegurarte de que solo los dispositivos seguros tienen acceso a las aplicaciones.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4byD1]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4byD1]
 
 Con el acceso condicional, puedes controlar el acceso a la información empresarial en función del nivel de riesgo de un dispositivo. Esto ayuda a mantener los usuarios de confianza en dispositivos de confianza con aplicaciones de confianza.
 

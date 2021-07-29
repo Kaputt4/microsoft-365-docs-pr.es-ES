@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f980c7121a8796f2cf48cc85c401ed499b4b581b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: f998a39a1e6407e0f14530b6bb237bc8b6aba6fd
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542290"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591084"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación con un sistema de administración de dispositivos móviles (MDM) diferente para Microsoft Defender para Endpoint en macOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "53542290"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
@@ -68,7 +68,7 @@ La mayoría de las soluciones MDM usan el mismo modelo para administrar disposit
 
 ### <a name="package"></a>Paquete
 
-Configure la implementación de un [paquete de aplicación](mac-install-with-jamf.md)necesario, con el paquete de instalación (wdav.pkg) descargado de [Centro de seguridad de Microsoft Defender](mac-install-with-jamf.md).
+Configure la implementación de [un paquete de aplicación](mac-install-with-jamf.md)necesario, con el paquete de instalación (wdav.pkg) descargado desde Microsoft 365 Defender [portal](mac-install-with-jamf.md).
 
 Para implementar el paquete en tu empresa, usa las instrucciones asociadas con la solución MDM.
 
@@ -78,7 +78,7 @@ Configurar un [perfil de configuración del sistema](mac-install-with-jamf.md).
 
 La solución MDM puede llamarlo algo así como "Perfil Configuración personalizado", ya que Microsoft Defender para Endpoint en macOS no forma parte de macOS.
 
-Usa la lista de propiedades, jamf/WindowsDefenderATPOnboarding.plist, que se puede extraer de un paquete de incorporación descargado de [Centro de seguridad de Microsoft Defender](mac-install-with-jamf.md).
+Usa la lista de propiedades, jamf/WindowsDefenderATPOnboarding.plist, que se puede extraer de un paquete de incorporación descargado de [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 El sistema puede admitir una lista de propiedades arbitrarias en formato XML. Puedes cargar el archivo jamf/WindowsDefenderATPOnboarding.plist tal como está en ese caso.
 Como alternativa, es posible que primero necesites convertir la lista de propiedades a otro formato.
 
@@ -116,7 +116,7 @@ Conceder acceso en disco completo a los siguientes componentes:
 
 ### <a name="network-extension-policy"></a>Directiva de extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad Microsoft 365 seguridad. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal de Microsoft 365 Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 - Tipo de filtro: Complemento
 - Identificador de agrupación de complementos: `com.microsoft.wdav`

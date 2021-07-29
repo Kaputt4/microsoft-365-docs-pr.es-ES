@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cf60ea73ea907be9c10b2dd9562a0ea60127f2d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2b0b987f12888de6c04d33f711112bf2e400d448
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289900"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591300"
 ---
 # <a name="collect-investigation-package-api"></a>RECOPILAR API de paquetes de investigación
 
@@ -32,12 +32,11 @@ ms.locfileid: "53289900"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## <a name="api-description"></a>Descripción de la API
 
@@ -51,10 +50,10 @@ Recopilar el paquete de investigación de un dispositivo.
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación | Machine.CollectForensics | 'Recopilar forenses'
-Delegado (cuenta profesional o educativa) | Machine.CollectForensics | 'Recopilar forenses'
+Aplicación|Machine.CollectForensics|'Recopilar forenses'
+Delegado (cuenta profesional o educativa)|Machine.CollectForensics|'Recopilar forenses'
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
@@ -70,18 +69,18 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | cadena | application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro | Tipo | Descripción
+Parámetro|Tipo|Descripción
 :---|:---|:---
-Comentario | Cadena | Comentario para asociarlo a la acción. **Necesario**.
+Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 
