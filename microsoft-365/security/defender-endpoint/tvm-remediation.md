@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 602a38d8ad27505e81628db265681ac89218e593
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ebd1ef10f0ea9a6fbedf9aea1e13237e45dd6ee3
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840916"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567641"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corregir vulnerabilidades con Administración de amenazas y vulnerabilidades
 
@@ -31,10 +31,10 @@ ms.locfileid: "52840916"
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="request-remediation"></a>Corrección de solicitudes
 
@@ -42,7 +42,7 @@ La Administración de amenazas y vulnerabilidades de Microsoft Defender para end
 
 ### <a name="enable-microsoft-intune-connection"></a>Habilitar Microsoft Intune conexión
 
-Para usar esta funcionalidad, habilite las Microsoft Intune conexión. En el Centro de seguridad de Microsoft Defender, vaya **a** Configuración  >  **características**  >  **avanzadas generales**. Desplácese hacia abajo y busque **Microsoft Intune conexión**. De forma predeterminada, la alternancia está desactivada. Activar la **Microsoft Intune de** **conexión** activa .
+Para usar esta funcionalidad, habilite las Microsoft Intune conexión. En el portal Microsoft 365 Defender, vaya **a** Configuración  >  **características**  >  **avanzadas generales.** Desplácese hacia abajo y busque **Microsoft Intune conexión**. De forma predeterminada, la alternancia está desactivada. Activar la **Microsoft Intune de** **conexión** activa .
 
 **Nota:** Si tienes habilitada la conexión de Intune, obtienes una opción para crear una tarea de seguridad de Intune al crear una solicitud de corrección. Esta opción no aparece si la conexión no está establecida.
 
@@ -50,7 +50,7 @@ Consulta [Usar Intune para corregir las vulnerabilidades identificadas por Micro
 
 ### <a name="remediation-request-steps"></a>Pasos de solicitud de corrección
 
-1. Vaya al menú Administración de amenazas y vulnerabilidades navegación de la Centro de seguridad de Microsoft Defender y seleccione [**Recomendaciones de seguridad**](tvm-security-recommendation.md).
+1. Vaya al menú de navegación **de** administración de amenazas y vulnerabilidades en el portal de Microsoft 365 Defender y seleccione **Recomendaciones** [**recomendaciones de seguridad**](tvm-security-recommendation.md).
 
 2. Seleccione una recomendación de seguridad para la que desea solicitar corrección y, a continuación, seleccione **Opciones de corrección**.
 
@@ -79,7 +79,8 @@ Cuando envía una solicitud de corrección desde la página Recomendaciones de s
 Si elige la opción de corrección "atención requerida", no habrá ninguna barra de progreso, estado de vale o fecha de vencimiento, ya que no hay ninguna acción real que podamos supervisar.
 
 Una vez que se encuentra en la página Corrección, seleccione la actividad de corrección que desea ver. Puede seguir los pasos de corrección, realizar un seguimiento del progreso, ver la recomendación relacionada, exportar a CSV o marcar como completada.
-![Ejemplo de la página Corrección, con una actividad de corrección seleccionada, y el control desplegable de esa actividad enumera la descripción, las herramientas de administración de dispositivos y servicio de IT y el progreso de corrección de dispositivos.](images/remediation_flyouteolsw.png)
+
+:::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="Ejemplo de la página Corrección, con una actividad de corrección seleccionada, y el control desplegable de esa actividad que enumera la descripción, las herramientas de administración de dispositivos y servicios de IT y la corrección de dispositivos":::
 
 >[!NOTE]
 > Hay un período de retención de 180 días para las actividades de corrección completadas. Para mantener el rendimiento óptimo de la página Corrección, la actividad de corrección se quitará 6 meses después de su finalización.
@@ -92,11 +93,11 @@ Realice un seguimiento de quién cerró la actividad de corrección con la colum
 - **Confirmación del** sistema: la tarea se completó automáticamente (se han corregido todos los dispositivos)
 - **N/A:** la información no está disponible porque no sabemos cómo se completó esta tarea anterior
 
-![Creado por y completado por columnas con dos filas. Una fila para completed by tiene un ejemplo de un correo electrónico, la otra fila dice confirmación del sistema.](images/tvm-completed-by.png)
+:::image type="content" alt-text="Creado por y completado por columnas con dos filas. Una fila para completed by tiene un ejemplo de un correo electrónico, la otra fila dice confirmación del sistema." source="images/tvm-completed-by.png":::
 
 ### <a name="top-remediation-activities-in-the-dashboard"></a>Principales actividades de corrección en el panel
 
-Ver **las principales actividades de** corrección en el Administración de amenazas y vulnerabilidades [panel](tvm-dashboard-insights.md). Seleccione cualquiera de las entradas para ir a la **página Corrección.** Puede marcar la actividad de corrección como completada después de que el equipo de administración de TI corrija la tarea.
+Ver **las principales actividades de corrección** en el panel de administración de amenazas [ **y** vulnerabilidades.](tvm-dashboard-insights.md) Seleccione cualquiera de las entradas para ir a la **página Corrección.** Puede marcar la actividad de corrección como completada después de que el equipo de administración de TI corrija la tarea.
 
 ![Ejemplo de tarjeta de actividades de corrección superior con una tabla que enumera las actividades principales que se generaron a partir de recomendaciones de seguridad.](images/tvm-remediation-activities-card.png)
 

@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: e52471e1b3e9ee3a410de493b536f9d360d60624
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 35c8f85bad73d98aa6eef0f58f853560fe9a1e63
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844447"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590676"
 ---
-# <a name="overview-of-automated-investigations"></a>Información general sobre las investigaciones automatizadas
+# <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "52844447"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-¿Quiere ver cómo funciona? Vea el siguiente vídeo: <br/><br/>
+¿Quiere ver cómo funciona? Vea el siguiente vídeo:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
@@ -46,16 +46,16 @@ La tecnología de la investigación automatizada usa varios algoritmos de inspec
 En este artículo se proporciona información general sobre AIR e incluye vínculos a los siguientes pasos y recursos adicionales.
 
 > [!TIP]
-> ¿Desea experimentar Microsoft Defender para endpoint? [Registrarse para obtener una versión de prueba gratuita](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink).
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 ## <a name="how-the-automated-investigation-starts"></a>Cómo se inicia la investigación automatizada
 
 Una investigación automatizada puede iniciarse cuando se desencadena una alerta o cuando un operador de seguridad inicia la investigación.
 
-|Situación  |Qué ocurre  |
-|---------|---------|
-|Se desencadena una alerta     | En general, una investigación automatizada se inicia cuando se [desencadena una](review-alerts.md) alerta y [se crea](view-incidents-queue.md) un incidente. Por ejemplo, supongamos que un archivo malintencionado reside en un dispositivo. Cuando se detecta ese archivo, se desencadena una alerta y se crea un incidente. Comienza un proceso de investigación automatizado en el dispositivo. Como otras alertas se generan debido al mismo archivo en otros dispositivos, se agregan al incidente asociado y a la investigación automatizada.         |
-|Una investigación se inicia manualmente     | El equipo de operaciones de seguridad puede iniciar manualmente una investigación automatizada. Por ejemplo, supongamos que un operador de seguridad está revisando una lista de dispositivos y observa que un dispositivo tiene un nivel de riesgo alto. El operador de seguridad puede seleccionar el dispositivo en la lista para abrir su control remoto y, a continuación, seleccionar **Iniciar investigación automatizada**. |
+|Situación|Qué ocurre|
+|---|---|
+|Se desencadena una alerta|En general, una investigación automatizada se inicia cuando se [desencadena una](review-alerts.md) alerta y [se crea](view-incidents-queue.md) un incidente. Por ejemplo, supongamos que un archivo malintencionado reside en un dispositivo. Cuando se detecta ese archivo, se desencadena una alerta y se crea un incidente. Comienza un proceso de investigación automatizado en el dispositivo. Como otras alertas se generan debido al mismo archivo en otros dispositivos, se agregan al incidente asociado y a la investigación automatizada.|
+|Una investigación se inicia manualmente|El equipo de operaciones de seguridad puede iniciar manualmente una investigación automatizada. Por ejemplo, supongamos que un operador de seguridad está revisando una lista de dispositivos y observa que un dispositivo tiene un nivel de riesgo alto. El operador de seguridad puede seleccionar el dispositivo en la lista para abrir su control remoto y, a continuación, seleccionar **Iniciar investigación automatizada**.|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>Cómo una investigación automatizada expande su ámbito
 
@@ -65,10 +65,11 @@ Si se ve una entidad incriminada en otro dispositivo, el proceso de investigaci�
 
 ## <a name="how-threats-are-remediated"></a>Cómo se corrigen las amenazas
 
-A medida que se desencadenan las alertas y se ejecuta una investigación automatizada, se genera un veredicto para cada parte de prueba investigada. Verdicts can be 
+A medida que se desencadenan las alertas y se ejecuta una investigación automatizada, se genera un veredicto para cada parte de prueba investigada. Los veredictos pueden ser:
+
 - *Malintencionada*;
-- *Sospechoso*; o 
-- *No se han encontrado amenazas*. 
+- *Sospechoso*; o
+- *No se han encontrado amenazas*.
 
 A medida que se alcanzan los veredictos, las investigaciones automatizadas pueden dar lugar a una o más acciones de corrección. Entre los ejemplos de acciones de corrección se incluyen el envío de un archivo a la cuarentena, la detención de un servicio, la eliminación de una tarea programada y mucho más. Para obtener más información, vea [Acciones de corrección](manage-auto-investigation.md#remediation-actions).  
 
@@ -79,25 +80,25 @@ Todas las acciones de corrección, ya sean pendientes o completadas, se realiza 
 > [!TIP]
 > Consulte la nueva página de investigación unificada en el centro Microsoft 365 seguridad. Para obtener más información, vea [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
-
 ## <a name="requirements-for-air"></a>Requisitos para AIR
 
 Su organización debe tener Defender para endpoint (consulte [Requisitos mínimos de Microsoft Defender para endpoint](minimum-requirements.md)).
 
 Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
+
 - Windows Server 2019
 - Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) o posterior
 - Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)o posterior
 - Windows 10, versión [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) o posterior
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Próximos pasos
 
 - [Más información sobre los niveles de automatización](automation-levels.md)
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Protección de LA PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [Protección PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)
 - [Investigación y respuesta automatizadas en Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aa653b7f40be232c345f21ec00f7fadb60a4af0a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 28de961d49953af1a8e90a7cc411cd598368954f
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544654"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590971"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -34,7 +34,7 @@ ms.locfileid: "53544654"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 En este artículo se describe cómo implementar Microsoft Defender para Endpoint en Linux manualmente. Una implementación correcta requiere la finalización de todas las tareas siguientes:
 
@@ -279,7 +279,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **Script local** como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender captura de pantalla del portal](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defender captura de pantalla del portal](images/portal-onboarding-linux.png)
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo.
     Extraiga el contenido del archivo:

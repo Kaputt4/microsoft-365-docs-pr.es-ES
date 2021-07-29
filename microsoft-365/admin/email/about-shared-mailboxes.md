@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan acceder al mismo buzón. Obtenga información sobre lo que debe saber antes de crear un buzón compartido.
-ms.openlocfilehash: a251967670e19d8f387e3fc4f724a06ef674a2b4
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f6c03787db890e1963f659aa9d2ece052d50a82c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394044"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541642"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -58,7 +58,7 @@ Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son alg
 
 - **Iniciar sesión:** No se espera un inicio de sesión directo en el buzón compartido por la cuenta de usuario asociada. Siempre debe bloquear el inicio de sesión de la cuenta de buzón compartido y mantenerlo bloqueado.
 
-- **Demasiados usuarios:** Cuando un buzón compartido tiene demasiados usuarios designados que acceden a la vez, es posible que tengan problemas intermitentes para conectarse a este buzón. En este caso, puede considerar la posibilidad de reducir el número de usuarios o de usar una carga de trabajo diferente, como un grupo de Microsoft 365 o una carpeta pública.
+- **Demasiados usuarios:** Cuando hay demasiados usuarios designados que acceden simultáneamente a un buzón compartido (no se recomienda más de 25), pueden no conectarse intermitentemente a este buzón o tener incoherencias como que los mensajes se dupliquen en la bandeja de salida. En este caso, puede considerar reducir el número de usuarios o usar una carga de trabajo diferente, como un grupo Microsoft 365 o una carpeta pública.
 
 - **Eliminación de mensajes:** Lamentablemente, no es posible impedir que los miembros eliminen los mensajes en un buzón compartido. La única manera de evitar este problema es crear un grupo de Microsoft 365 en lugar de un buzón compartido. Los grupos de Outlook son similares al buzón compartido. Para ver una comparación, consulte [Comparar grupos](../create-groups/compare-groups.md). Para obtener más información sobre los grupos, vea [Obtener más información sobre los grupos](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 

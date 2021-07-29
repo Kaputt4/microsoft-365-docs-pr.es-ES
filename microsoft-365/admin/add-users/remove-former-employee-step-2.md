@@ -19,19 +19,24 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo guardar el contenido del buzón de un antiguo empleado.
-ms.openlocfilehash: bd24145b6b5162a03dee0338cc0820e5af271ddd
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: b6030c0231339cb77c2d91ba5e118da8be14780f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177494"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541618"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Paso 2: Guardar el contenido del buzón de un antiguo empleado
+
+En este paso, coloque una retención por juicio o una retención local en el usuario o exporte sus Outlook a un archivo .pst.
+
+## <a name="place-hold-or-export-users-data-to-a-pst-file"></a>Colocar la retención o exportar los datos del usuario a un archivo .pst
 
 Una vez que haya bloqueado que un usuario pueda iniciar sesión en su organización, puede guardar el contenido de su buzón. Hay dos formas de guardar el contenido del buzón del antiguo empleado.
   
@@ -46,3 +51,8 @@ Una vez que haya bloqueado que un usuario pueda iniciar sesión en su organizaci
     **OR**
 
 2. Agregue la dirección de correo electrónico del antiguo empleado a la versión de Outlook escritorio y, a continuación, exporte los datos a un archivo .pst. Puede importar los datos a otra cuenta de correo electrónico si lo necesita. Consulte el [paso 6: dar a](remove-former-employee-step-6.md)otro empleado acceso a OneDrive y Outlook datos .
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center) 
+ [Restaurar un usuario](restore-user.md)

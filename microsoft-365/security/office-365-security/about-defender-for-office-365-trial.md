@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 9bd762f60dac6e9a0cf88890c5cf5bfd313733ac
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195014"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567793"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
 
@@ -34,10 +34,28 @@ Microsoft Defender para Office 365 protege su organización contra las amenazas 
 - **Investigación de amenazas y capacidades de respuesta**: use las herramientas más avanzadas para investigar, entender, simular y evitar las amenazas.
 - **Investigación y respuestas automáticas**: ahorre tiempo y esfuerzo al investigar y mitigar amenazas.
 
-Una prueba de Microsoft Defender para Office 365 es la forma más sencilla de probar las funcionalidades de Defender para Office 365 y configurarla solo requiere un par de clics. Una vez completada la configuración de prueba, todas las funcionalidades de Defender for Office 365 Plan 1 y Plan 2 estarán disponibles en la organización durante un máximo de 90 días.
+Una prueba de Microsoft Defender para Office 365 es la forma más sencilla de probar las funcionalidades de Defender para Office 365 y configurarla solo requiere un par de clics. Una vez completada la configuración de prueba, todas las funcionalidades de Defender for Office 365 Plan 1 y Plan 2 estarán disponibles en la organización durante un máximo de 90 días. Estas características de alto nivel se describen en la siguiente lista:
+
+<br>
+
+****
+
+|Característica|Descripción|
+|---|---|
+|[Configuración exclusiva en directivas contra suplantación de identidad](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Obtenga protección de suplantación de usuario, protección de suplantación de dominio, inteligencia de buzones de correo y umbrales avanzados de suplantación de identidad.|
+|[Datos adjuntos seguros](safe-attachments.md)|Inspeccione los datos adjuntos de correo electrónico y otros archivos en un entorno de detonación controlada para detectar malware nuevo y evasivo.|
+|[Vínculos seguros](safe-links.md)|Realice comprobaciones de tiempo de clic para asegurarse de que las direcciones URL que podrían haber pasado la inspección inicial no se hayan armado.|
+|[Rastreadores de amenazas](threat-trackers.md)<sup>\*</sup>|Use widgets informativos y vistas para identificar problemas de ciberseguridad que puedan afectar a su organización.|
+|[Explorador de amenazas](threat-explorer.md)<sup>\*</sup>|Busca con información casi en tiempo real sobre amenazas en tu correo Office 365 correo electrónico.|
+|[Investigación y respuesta automatizadas (AIR)](office-365-air.md)<sup>\*</sup>|Localice y corrija automáticamente los objetos de amenaza a medida que se desencadenan las alertas.|
+|[Aprendizaje de simulación de ataques](attack-simulation-training.md)<sup>\*</sup>|Entrena a los usuarios para que identifiquen los ataques de suplantación de identidad (phishing) y respondan correctamente.|
+|[Vistas de campaña](campaigns.md)<sup>\*</sup>|Investigar y responder a la actividad de correo electrónico malintencionado a gran escala.|
+|[Informes que usan Defender para Office 365 funcionalidades](view-reports-for-mdo.md)|Vea informes como el estado de protección contra amenazas, la protección contra amenazas de url, la latencia de correo y mucho más.|
+
+<sup>\*</sup>Defender para Office 365 características del Plan 2 que están disponibles como parte de la prueba.
 
 > [!NOTE]
-> La configuración automatizada que se describe en este artículo se encuentra actualmente en Public Preview y puede que no esté disponible en su ubicación.
+> La configuración automatizada que se describe en este artículo se encuentra actualmente en Public Preview y puede que no esté disponible en su organización.
 
 ## <a name="terms-and-conditions"></a>Términos y condiciones
 
@@ -112,7 +130,7 @@ Las completas capacidades de simulación y aprendizaje junto con las experiencia
 
 - [Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)
 
-### <a name="secure-posture"></a>Postura segura
+### <a name="security-posture"></a>Posición de seguridad
 
 Las plantillas recomendadas y los conocimientos de configuración ayudan a los clientes a obtener y mantener la seguridad.
 

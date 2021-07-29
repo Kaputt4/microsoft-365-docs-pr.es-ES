@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fcea240fe1dc0ce97a2800391320b04c39c84336
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: af21b0ae3e03ebacae9412fc48693d57f32c81e6
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934110"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568009"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Puntuación de exposición: Administración de amenazas y vulnerabilidades
 
@@ -32,12 +32,12 @@ ms.locfileid: "51934110"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-La puntuación de exposición está visible en el panel [De amenazas y administración de vulnerabilidades de](tvm-dashboard-insights.md) la Centro de seguridad de Microsoft Defender. Refleja lo vulnerable que es su organización a las amenazas de ciberseguridad. Una puntuación de exposición baja significa que los dispositivos son menos vulnerables a la explotación.
+La puntuación de exposición está visible en el panel [de amenazas y administración de vulnerabilidades del](tvm-dashboard-insights.md) portal Microsoft 365 Defender exposición. Refleja lo vulnerable que es su organización a las amenazas de ciberseguridad. Una puntuación de exposición baja significa que los dispositivos son menos vulnerables a la explotación.
 
 - Comprenda e identifique rápidamente los resultados de alto nivel sobre el estado de seguridad en su organización.
 - Detectar y responder a áreas que requieren investigación o acción para mejorar el estado actual.

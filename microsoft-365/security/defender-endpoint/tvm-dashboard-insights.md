@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82b6123a99eb406918708c6bf23b870ef3bc3d79
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d4ec716f82fb3dd2352183be8f8cf0d81bcebfff
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934146"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568049"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Información del panel: Administración de amenazas y vulnerabilidades
 
@@ -32,10 +32,10 @@ ms.locfileid: "51934146"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Threat and administración de vulnerabilidades es un componente de Defender for Endpoint y proporciona a los administradores de seguridad y a los equipos de operaciones de seguridad un valor único, incluidos:
 
@@ -44,7 +44,7 @@ Threat and administración de vulnerabilidades es un componente de Defender for 
 - Contexto de vulnerabilidad de dispositivos inestimable durante las investigaciones de incidentes
 - Procesos de corrección integrados a Microsoft Intune y Microsoft Endpoint Configuration Manager  
   
-Puede usar la funcionalidad Administración de amenazas y vulnerabilidades en [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/) para:
+Puede usar la funcionalidad Administración de amenazas y vulnerabilidades en [Microsoft 365 Defender portal para:](https://security.microsoft.com/)
 
 - Ver la puntuación de exposición y puntuación segura de Microsoft para dispositivos, junto con las recomendaciones de seguridad más importantes, vulnerabilidad de software, actividades de corrección y dispositivos expuestos
 - Correlacionar EDR información con vulnerabilidades de punto de conexión y procesarlas
@@ -60,7 +60,7 @@ Vea este vídeo para obtener una introducción rápida de lo que se encuentra en
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>Panel de administración de vulnerabilidades amenazas
 
- ![Portal de Microsoft Defender para puntos de conexión](images/tvm-dashboard-devices.png)
+:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="Panel de administración de amenazas y vulnerabilidades para dispositivos":::
 
 Área | Descripción
 :---|:---

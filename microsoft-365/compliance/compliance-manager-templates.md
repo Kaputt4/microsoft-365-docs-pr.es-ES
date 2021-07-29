@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
-ms.openlocfilehash: 4386f5be67d01d3d6961ccc4bd51ecf729bc8a38
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 60b453faf44ae80a8bd066e93f759cd23413ce3b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419588"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541870"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
@@ -30,7 +30,11 @@ ms.locfileid: "53419588"
 
 ## <a name="templates-overview"></a>Introducción a plantillas
 
-Una plantilla es un marco de controles para crear una evaluación en el Administrador de cumplimiento. Nuestro conjunto completo de plantillas puede ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos. Nos referimos a plantillas con el mismo nombre que su certificación o reglamento subyacentes, como la plantilla RGPD de la UE y la plantilla ISO/IEC 27701:2019. Dado que el pesebre de cumplimiento se puede usar para evaluar diferentes tipos de productos, cada plantilla viene en dos versiones: una que se aplica a Microsoft 365 y una versión universal que se puede personalizar para que se adapte al producto elegido.
+Una plantilla es un marco de controles para crear una evaluación en el Administrador de cumplimiento. Nuestro conjunto completo de plantillas puede ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
+
+Nos referimos a plantillas con el mismo nombre que su certificación o reglamento subyacentes, como la plantilla RGPD de la UE y la plantilla ISO/IEC 27701:2019. Dado que el pesebre de cumplimiento se puede usar para evaluar diferentes tipos de productos, cada plantilla viene en dos versiones: una que se aplica a Microsoft 365 y una versión universal que se puede personalizar para que se adapte al producto elegido.
+
+Tenga en cuenta que los clientes de Community (GCC) moderados, GCC altos y del Departamento de Defensa (DoD) actualmente pueden usar las versiones de plantilla Microsoft 365, pero no universales.
 
 ## <a name="template-availability-and-licensing"></a>Disponibilidad y licencias de plantillas
 

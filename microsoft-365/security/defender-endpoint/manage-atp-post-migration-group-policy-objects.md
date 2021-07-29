@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: ce204c1a90e57a651cf9c97974a8b35d405878cc
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: e7d5d7cf2e550ce91ec5d17fcf57d214e3db9b25
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908297"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541738"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Administrar Microsoft Defender para puntos de conexión con objetos de directiva de grupo
 
@@ -56,21 +56,21 @@ En la tabla siguiente se enumeran varias tareas que puede realizar para configur
 |**Habilitar la protección de** red para ayudar a evitar que los empleados utilicen aplicaciones que usan contenido malintencionado en Internet <br/><br/>*Se recomienda usar [el modo de auditoría](/microsoft-365/security/defender-endpoint/evaluate-network-protection) al principio para la protección de red en un entorno de prueba para ver qué aplicaciones se bloquearían antes de implementarse.* |[Activar la protección de red mediante la directiva de grupo](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)  |
 |**Configurar el acceso controlado a carpetas** para proteger contra ransomware <br/><br/>*[El acceso controlado a](/microsoft-365/security/defender-endpoint/controlled-folders) carpetas también se conoce como protección antiransomware.*  |[Habilitar el acceso controlado a carpetas mediante la directiva de grupo](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy) |
 |**Configure SmartScreen de Microsoft Defender** para proteger contra sitios y archivos malintencionados en Internet.  |[Configurar SmartScreen de Microsoft Defender de directiva de grupo y administración de dispositivos móviles (MDM) mediante la directiva de grupo](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)  |
-|**Configurar el cifrado y BitLocker** para proteger la información en los dispositivos de la organización que se ejecutan Windows |[BitLocker Configuración de directiva de grupo](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings) |
-|**Configurar Credential Guard de Microsoft Defender** para protegerse contra ataques de robo de credenciales |[Habilitar Credential Guard de Windows Defender mediante la directiva de grupo](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy) |
+|**Configurar el cifrado y BitLocker** para proteger la información en los dispositivos de la organización que se ejecutan Windows |[Configuración de directiva de grupo de BitLocker](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings) |
+|**Configurar Credential Guard de Microsoft Defender** para protegerse contra ataques de robo de credenciales |[Habilitar Windows Defender Credential Guard mediante la directiva de grupo](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy) |
 
-## <a name="configure-your-microsoft-defender-security-center"></a>Configurar el Centro de seguridad de Microsoft Defender
+## <a name="configure-your-microsoft-365-defender-portal"></a>Configurar el portal Microsoft 365 Defender web
 
-Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su organización. Vea [Centro de seguridad de Microsoft Defender](microsoft-defender-security-center.md). También puede configurar si los usuarios finales pueden ver y qué características pueden ver en el portal de Microsoft 365 Defender.
+Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su organización. Vea [Microsoft 365 Defender](microsoft-defender-security-center.md). También puede configurar si los usuarios finales pueden ver y qué características pueden ver en Microsoft 365 Defender portal.
 
-- [Información general sobre el Centro de seguridad de Microsoft Defender](/microsoft-365/security/defender-endpoint/use)
+- [Información general sobre Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 
-- [Protección de extremo: Centro de seguridad de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [Protección de extremo: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- [Obtenga información general sobre Administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [Visite el panel Centro de seguridad de Microsoft Defender operaciones de seguridad](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Visite el panel Microsoft 365 Defender operaciones de seguridad del portal](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [Administrar Microsoft Defender para endpoint con Intune](manage-atp-post-migration-intune.md)

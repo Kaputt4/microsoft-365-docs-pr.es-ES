@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo crear y administrar directivas para controlar los datos personales de su organización en Microsoft 365, responder a alertas y solucionar problemas.
-ms.openlocfilehash: f9df027d01ffe4629654db1ddd006d141d57e387
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 9597d0f55f6dc21004fd23ff94d53bf3838ef177
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378596"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541798"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>Crear y administrar directivas en la administración de privacidad (versión preliminar)
 
@@ -50,7 +50,7 @@ La administración de privacidad puede ayudarle a detectar y controlar situacion
 La transferencia de datos entre departamentos o fronteras regionales puede aumentar el riesgo de exposición a datos, por ejemplo, si se envía a través de correos electrónicos no cifrados o a destinatarios no autorizados. Estas acciones pueden tener un impacto normativo o pueden ir en contra de las prácticas establecidas para la privacidad. El uso de la plantilla de transferencia de datos para crear directivas de administración de privacidad puede detectar y limitar dichas transferencias.
 
 > [!NOTE]
-> Durante la versión preliminar pública, algunos inquilinos que ejecutan directivas de transferencia de datos para detectar transferencias entre regiones pueden encontrar problemas de sincronización que afectan a la visibilidad de las coincidencias de directivas en Exchange y Teams datos. Se recomienda centrarse en los datos SharePoint y OneDrive mientras se muestra una vista previa de este tipo de directiva. Se espera una actualización para este problema en otoño de 2021.
+> Durante la versión preliminar pública, algunos inquilinos que ejecutan directivas de transferencia de datos para detectar transferencias entre regiones pueden encontrar problemas de sincronización que afectan a la visibilidad de las coincidencias de directivas en Exchange y Teams datos. Se recomienda centrarse en los datos SharePoint y OneDrive mientras se muestra una vista previa de este tipo de directiva.
 
 ### <a name="data-minimization"></a>Minimización de datos
 

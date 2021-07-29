@@ -23,22 +23,31 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Los miembros de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, Stream y un Planner.
-ms.openlocfilehash: 12da954beb4d019b7652ef4df2e18cb30ff542ed
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: c043a1cd796789e9da51cbb6c1f59d7a7c8df07d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393264"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541654"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
 En la sección **Grupos** del Centro de administración de Microsoft 365, puede crear y administrar estos tipos de grupos: 
 
-- **Los grupos de Microsoft 365** (anteriormente grupos de Office 365) se usan para la colaboración entre usuarios, tanto dentro como fuera de la empresa.
+- **Los grupos de Microsoft 365** se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Incluyen servicios de colaboración como SharePoint y Planner.
 - **Los grupos de distribución** se usan para enviar notificaciones de correo electrónico a un grupo de personas.
 - **Los grupos de seguridad** se usan para conceder acceso a los recursos como SharePoint.
 - **Los grupos de seguridad habilitados para correo** se usan para conceder acceso a recursos como SharePoint y enviar notificaciones por correo electrónico a estos usuarios.
 - **Los buzones compartidos** se usan cuando varios usuarios necesitan tener acceso al mismo buzón, como la dirección de correo electrónico del soporte técnico e información de la empresa.
+
+Algunos grupos permiten la pertenencia dinámica o el correo electrónico.
+
+||Grupos de Microsoft 365|Grupos de distribución|Grupos de seguridad|Grupos de seguridad habilitados para correo|Buzones compartidos|
+|:----|:----|:----|:----|:----|:----|
+|**Habilitado para correo**|Sí|Sí|No|Sí|Sí|
+|**Pertenencia dinámica en Azure AD**|Sí|No|Sí|No|No|
+
+Todos estos tipos de grupo se pueden usar con Power Automate.
 
 ## <a name="microsoft-365-groups"></a>Grupos de Microsoft 365
 

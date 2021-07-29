@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8a81c65d65704262230e6eb6245d882b63a18bab
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 0f771adb84c4fc335c13909e9da37c3bf27dcda0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322298"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541882"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -33,9 +33,6 @@ ms.locfileid: "53322298"
 > No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [Microsoft 365 de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
 
 Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el Centro de cumplimiento de Microsoft 365. Las directivas de cumplimiento de comunicación definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe hacer las revisiones. Los usuarios asignados *al* rol De administrador de cumplimiento de comunicaciones pueden configurar directivas y cualquier persona que tenga asignada esta función puede acceder a la página Cumplimiento de comunicaciones y a la configuración global del Centro de cumplimiento de Microsoft 365.  Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, los elementos escalados y los elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no sea necesario.
-
-> [!NOTE]
-> Las directivas de supervisión creadas en el Centro de seguridad & cumplimiento para Office 365 suscripciones no pueden migrar a Microsoft 365. Si está migrando de una suscripción de Office 365 a una suscripción de Microsoft 365, deberá crear nuevas directivas de cumplimiento de comunicaciones para reemplazar las directivas de supervisión existentes.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -50,7 +47,7 @@ Las plantillas de directiva son configuraciones de directiva predefinidas que pu
 
 Las comunicaciones se examinan cada 24 horas a partir del momento en que se crean las directivas. Por ejemplo, si crea una directiva de idioma ofensivo a las 11:00 a.m., la directiva recopilará señales de cumplimiento de comunicaciones cada 24 horas a las 11:00 a.m. todos los días. La edición de una directiva no cambia esta vez. Para ver la última fecha y hora de examen de una directiva, vaya a la columna Último *examen de* directivas de la **página** Directiva. Después de crear una nueva directiva, puede tardar hasta 24 horas en ver la primera fecha y hora del examen de directivas. La fecha y la hora del último examen se convierten en la zona horaria del sistema local.
 
-## <a name="pausing-a-policy-preview"></a>Pausar una directiva (versión preliminar)
+## <a name="pause-a-policy-preview"></a>Pausar una directiva (versión preliminar)
 
 Después de crear una directiva de cumplimiento de comunicaciones, la directiva puede pausarse temporalmente si es necesario. La pausa de una directiva puede usarse para probar o solucionar problemas de coincidencias de directivas, o para optimizar las condiciones de la directiva. En lugar de eliminar una directiva en estas circunstancias, la pausa de una directiva también conserva las alertas y los mensajes de directiva existentes para las investigaciones y revisiones en curso. La pausa de una directiva impide la inspección y la generación de alertas para todas las condiciones de mensaje de usuario definidas en la directiva durante el tiempo en que se pausa la directiva. Para pausar o reiniciar una directiva, los usuarios deben ser miembros del grupo de roles *De administración de cumplimiento* de comunicaciones.
 
@@ -66,6 +63,36 @@ El estado de la directiva de las directivas en pausa puede indicar varios estado
 - **Error al pausar:** se ha encontrado un error al pausar la directiva. Para el seguimiento de la pila de errores, mantenga el mouse sobre *el estado Error in pausing* en la columna Estado de la página Directiva.
 
 Para reanudar una directiva, vaya a la **página** Directiva, seleccione una directiva y, a continuación, seleccione **Reanudar directiva** en la barra de herramientas acciones. En el **panel Desanudez** de directivas, confirme que desea reanudar la directiva seleccionando **Reanudar**. En algunos casos, una directiva puede tardar hasta 24 horas en reanudarse. Una vez que se reanude la directiva, se crearán alertas para los mensajes que coincidan con la directiva y estarán disponibles para investigación, revisión y corrección.
+
+## <a name="copy-a-policy-preview"></a>Copiar una directiva (versión preliminar)
+
+Para las organizaciones con directivas de cumplimiento de comunicaciones existentes, puede haber escenarios al crear una nueva directiva a partir de una directiva existente puede resultar útil. Copiar una directiva crea un duplicado exacto de una directiva existente, incluidos todos los usuarios del ámbito, todos los revisores asignados y todas las condiciones de directiva. Algunos escenarios pueden incluir:
+
+- **Límite de almacenamiento de directivas alcanzado:** las directivas de cumplimiento de comunicaciones activas tienen límites de almacenamiento de mensajes. Cuando se alcanza el límite de almacenamiento de una directiva, la directiva se desactiva automáticamente. Las organizaciones que necesitan seguir detectando, capturando y actuando en mensajes inadecuados cubiertos por la directiva desactivada pueden crear rápidamente una nueva directiva con una configuración idéntica.
+- **Detectar y revisar** mensajes inapropiados para diferentes grupos de usuarios: algunas organizaciones pueden preferir crear varias directivas con la misma configuración, pero incluyen diferentes usuarios en el ámbito y revisores diferentes para cada directiva.
+- **Directivas similares con pequeños cambios:** para las directivas con configuraciones o condiciones complejas, puede ahorrar tiempo crear una nueva directiva a partir de una directiva similar.
+
+Para copiar una directiva, los usuarios deben ser miembros de los grupos de roles *de* administración de cumplimiento de comunicaciones o cumplimiento *de* comunicaciones. Después de crear una nueva directiva a partir de una directiva existente, puede tardar hasta 24 horas en ver mensajes que coincidan con la nueva configuración de directiva.
+
+Para copiar una directiva y crear una nueva directiva, siga estos pasos:
+
+1. Seleccione la directiva que desea copiar.
+2. Seleccione **Copiar botón de** barra de comandos de directiva en la barra de comandos o seleccione Copiar **directiva** en el menú de acciones de la directiva.
+3. En el **panel Copiar directiva,** puede aceptar el nombre predeterminado de la directiva en el **campo Nombre** de directiva o cambiar el nombre de la directiva. El nombre de la directiva de la nueva directiva no puede ser el mismo que una directiva activa o desactivada existente. Complete el **campo Descripción** según sea necesario.
+4. Si no necesita más personalización de la directiva, seleccione **Copiar directiva** para completar el proceso. Si necesita actualizar la configuración de la nueva directiva, seleccione **Personalizar directiva**. Esto inicia el asistente para directivas para ayudarle a actualizar y personalizar la nueva directiva.
+
+## <a name="storage-limit-notification-preview"></a>Storage notificación de límite (versión preliminar)
+
+Cada directiva de cumplimiento de comunicaciones tiene un tamaño límite de almacenamiento de 100 GB o 1 millón de mensajes, lo que se alcance primero. A medida que la directiva se acerca a estos límites, los correos electrónicos de notificación se envían automáticamente a los usuarios asignados a los grupos de roles De administración de cumplimiento de comunicaciones o cumplimiento *de* comunicaciones.  Los mensajes de notificaciones se envían cuando el tamaño de almacenamiento o el recuento de mensajes alcanzan el 80, 90 y el 95 por ciento del límite. Cuando se alcanza el límite de directiva, la directiva se desactiva automáticamente y la directiva deja de procesar mensajes para alertas.
+
+>[!IMPORTANT]
+>Si se desactiva una directiva debido a alcanzar los límites de almacenamiento y mensajes, asegúrese de evaluar cómo administrar la directiva desactivada. Si elimina la directiva, todos los mensajes, los datos adjuntos asociados y las alertas de mensajes se eliminarán permanentemente. Si necesita mantener estos elementos para su uso futuro, no elimine la directiva desactivada.
+
+Para administrar las directivas que se acercan a los límites de almacenamiento y mensajes, considere la posibilidad de hacer una copia de la directiva para mantener la continuidad de la cobertura o realizar las siguientes acciones para ayudar a minimizar el tamaño de almacenamiento de directivas actual y los recuentos de mensajes:
+
+- Considere la posibilidad de reducir el número de usuarios asignados a la directiva. Quitar usuarios de la directiva o crear diferentes directivas para diferentes grupos de usuarios puede ayudar a ralentizar el crecimiento del tamaño de la directiva y los mensajes totales.
+- Examine la directiva en busca de alertas falsas positivas excesivas. Considere la posibilidad de agregar excepciones o cambios a las condiciones de la directiva para omitir las alertas falsas positivas comunes.
+- Si una directiva ha alcanzado los límites de almacenamiento o mensaje y se ha desactivado, realice una copia de la directiva para seguir detectando y haciendo acciones para las mismas condiciones y usuarios.
 
 ## <a name="permissions"></a>Permisos
 
@@ -184,7 +211,7 @@ Los clasificadores globales y capacitados integrados analizan los mensajes envia
 - Italiano
 - Japonés
 - Portugués
-- Español
+- Spanish
 
 Los clasificadores globales y capacitados para el cumplimiento de la comunicación analizan las comunicaciones en busca de términos, imágenes y sentimientos para los siguientes tipos de idioma y contenido:
 
@@ -522,7 +549,7 @@ Para ver las actividades de actualización de directivas de cumplimiento de comu
 |:-----|:-----|
 | **CreationDate** | La fecha en que se realizó la actividad de actualización en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de actualización en una directiva. |
-| **Operations** | Las operaciones de actualización realizadas en la directiva. |
+| **Operaciones** | Las operaciones de actualización realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal de todas las actividades de actualización de directivas. Todas las actividades de actualización se registran y se separan por delimitadores por comas. |
 
 Para ver las actividades de revisión de cumplimiento de comunicación de una directiva, seleccione el control **Exportar** actividades de revisión en **la** página Información general de una directiva específica. Debe tener asignados los roles Administrador *global* o Administrador de cumplimiento *de* comunicaciones para exportar actividades de revisión. Esta acción genera un archivo de auditoría en el .csv que contiene la siguiente información:
@@ -531,7 +558,7 @@ Para ver las actividades de revisión de cumplimiento de comunicación de una di
 |:-----|:-----|
 | **CreationDate** | La fecha en que se realizó la actividad de revisión en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de revisión en una directiva. |
-| **Operations** | Las operaciones de revisión realizadas en la directiva. |
+| **Operaciones** | Las operaciones de revisión realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal de todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y se separan por delimitadores por comas. |
 
 También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet [de PowerShell Search-UnifiedAuditLog.](/powershell/module/exchange/search-unifiedauditlog) Para obtener más información sobre las directivas de retención de registros de auditoría, vea [Manage audit log retention policies](audit-log-retention-policies.md).
@@ -554,7 +581,7 @@ En este ejemplo se devuelven actividades que coinciden con las directivas de cum
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
-Las coincidencias de directivas de cumplimiento de comunicaciones se almacenan en un buzón de supervisión para cada directiva. En algunos casos, es posible que deba comprobar el tamaño del buzón de supervisión de una directiva para asegurarse de que no se acerca al límite actual de 50 GB. Si se alcanza el límite de buzones de correo, las coincidencias de directiva no se capturan y tendrás que crear una nueva directiva (con la misma configuración) para seguir capturando coincidencias para las mismas actividades.
+Las coincidencias de directivas de cumplimiento de comunicaciones se almacenan en un buzón de supervisión para cada directiva. En algunos casos, es posible que deba comprobar el tamaño del buzón de supervisión de una directiva para asegurarse de que no se acerca al tamaño de almacenamiento de 100 GB actual o al límite de 1 millón de mensajes. Si se alcanza el límite de buzones de correo, las coincidencias de directiva no se capturan y tendrás que crear una nueva directiva (con la misma configuración) para seguir capturando coincidencias para las mismas actividades.
 
 Para comprobar el tamaño de un buzón de supervisión para una directiva, siga estos pasos:
 

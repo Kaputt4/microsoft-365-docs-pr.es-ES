@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre cómo encontrar recursos de Microsoft SharePoint Syntex.
-ms.openlocfilehash: 087cf7b21d00cef3711d8e5765161eaa98418437
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 47a14222f4297ffd4ef278da7c8c65913ed27f3c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327064"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541786"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introducción a Microsoft SharePoint Syntex
 
@@ -39,6 +39,9 @@ Los recursos de esta página están diseñados para ayudarle a empezar a aprende
 ## <a name="get-started"></a>Comenzar
 
 Los recursos de esta sección le ayudarán a obtener más información sobre los dos métodos de clasificación y extracción de datos utilizados por SharePoint Syntex: el procesamiento de formularios y la comprensión mediante documentos.
+
+> [!NOTE]
+> Puede empezar a trabajar con SharePoint Syntex sin comprar licencias [crear un centro de contenido desde el Centro de administración de SharePoint](create-a-content-center.md). Los usuarios sin licencia pueden crear modelos de comprensión de documentos, pero no pueden aplicarlos a una biblioteca de documentos.
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|

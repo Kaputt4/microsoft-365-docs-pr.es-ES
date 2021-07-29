@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b8e15f27ffe4babe730870fb576980c62cb0fd59
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 03d102ec116b9f5507c3eaa869231a9197d3041c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844043"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568081"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Solucionar problemas de acceso a la suscripción y al portal
 
@@ -31,15 +31,15 @@ ms.locfileid: "52844043"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
 En esta página se proporcionan pasos detallados para solucionar problemas que pueden producirse al configurar el servicio de Microsoft Defender para puntos de conexión.
 
-Si recibe un mensaje de error, Centro de seguridad de Microsoft Defender proporcionará una explicación detallada sobre el problema y se proporcionarán vínculos relevantes.
+Si recibe un mensaje de error, Microsoft 365 Defender proporcionará una explicación detallada sobre el problema y se proporcionarán vínculos relevantes.
 
 ## <a name="no-subscriptions-found"></a>No se encontraron suscripciones
 
-Si al acceder Centro de seguridad de Microsoft Defender recibe un mensaje **No se** encontró suscripciones, significa que el Azure Active Directory (Azure AD) usado para iniciar sesión en el usuario en el portal, no tiene una licencia de Microsoft Defender para endpoint.
+Si al acceder Microsoft 365 Defender recibe un mensaje **No se** encontró suscripciones, significa que el Azure Active Directory (Azure AD) usado para iniciar sesión en el usuario en el portal, no tiene una licencia de Microsoft Defender para endpoint.
 
 Posibles razones:
 - Las licencias de Windows E5 y Office E5 son licencias separadas.
@@ -53,7 +53,7 @@ En ambos casos, debes ponerse en contacto con el soporte técnico de Microsoft e
 
 ## <a name="your-subscription-has-expired"></a>Su suscripción ha expirado
 
-Si al acceder a Centro de seguridad de Microsoft Defender recibe un **mensaje Su suscripción ha expirado,** la suscripción al servicio en línea ha expirado. La suscripción de Microsoft Defender para endpoint, como cualquier otra suscripción de servicio en línea, tiene una fecha de expiración. 
+Si al acceder a Microsoft 365 Defender recibe un mensaje Su suscripción ha **expirado,** la suscripción de servicio en línea ha expirado. La suscripción de Microsoft Defender para endpoint, como cualquier otra suscripción de servicio en línea, tiene una fecha de expiración. 
 
 Puede elegir renovar o ampliar la licencia en cualquier momento. Al acceder al portal después  de la fecha de expiración, se mostrará una opción para descargar el paquete de descarga del dispositivo después de la fecha de expiración, en caso de que decidas no renovar la licencia.
 
@@ -74,7 +74,7 @@ Si el panel del portal y otras secciones muestran un mensaje de error como "Los 
 
 ![La imagen de los datos actualmente no está disponible](images/atp-data-not-available.png)
 
-Tendrás que permitir los `securitycenter.windows.com` subdominios y todos los subdominios que hay en él. Por ejemplo, `*.securitycenter.windows.com`.
+Tendrás que permitir los `security.windows.com` subdominios y todos los subdominios que hay en él. Por ejemplo, `*.security.windows.com`.
 
 
 ## <a name="portal-communication-issues"></a>Problemas de comunicación del portal

@@ -1,5 +1,5 @@
 ---
-title: Usar un código QR para iniciar sesión en las aplicaciones Outlook móviles
+title: Usar un código QR para iniciar sesión en las aplicaciones móviles de Outlook
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -8,39 +8,49 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Aprende a usar un código QR para autenticar y descargar Outlook móvil.
-ms.openlocfilehash: c13fbeabd320c64925165ba16797d5a3471961ad
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: MT
+description: Obtenga información sobre cómo usar un código QR para autenticar y descargar Outlook Mobile.
+ms.openlocfilehash: e00297880d791447798f8038c3f772f21302daa2
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53391344"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541498"
 ---
-# <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Usar un código QR para iniciar sesión en las aplicaciones Outlook móviles
+# <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Usar un código QR para iniciar sesión en las aplicaciones móviles de Outlook
 
 > [!IMPORTANT]
-> Esta característica solo está disponible para las organizaciones que han activado La versión dirigida en el Centro de administración de Microsoft 365. Para activar la versión dirigida y obtener más información sobre cómo funciona, vea Configurar las opciones de versión estándar o [dirigida.](release-options-in-office-365.md) Nos expandiremos a más organizaciones en las próximas semanas a través de la versión preliminar pública. La vista previa pública proporciona acceso anticipado a Microsoft 365 características.
+> Esta característica solo está disponible para las organizaciones que han activado la versión dirigida en el Centro de administración de Microsoft 365. Para activar la versión dirigida y obtener más información sobre cómo funciona, consulte [Configurar las opciones de versión estándar o dirigida](release-options-in-office-365.md). En las próximas semanas se ampliará a más organizaciones a través de la versión preliminar pública. La versión preliminar pública proporciona acceso anticipado a las características de Microsoft 365.
 
-Como administrador de Microsoft 365, puedes permitir que los usuarios inicien sesión en Outlook para la aplicación de Android o iOS en sus dispositivos móviles sin tener que escribir su nombre de usuario y contraseña. Al examinar un código QR, los usuarios pueden autenticarse e iniciar sesión de forma segura en Outlook móvil.
+Como administrador de Microsoft 365, puede permitir que los usuarios inicien sesión en Outlook para Android o la aplicación iOS en sus dispositivos móviles sin tener que escribir su nombre de usuario y contraseña. Al digitalizar un código QR, los usuarios pueden autenticarse e iniciar sesión de forma segura en Outlook Mobile.
 
-En Outlook en la Web otras aplicaciones de escritorio Outlook escritorio, los usuarios pueden ver notificaciones que les informan de que pueden usar Outlook en su dispositivo móvil. El administrador puede administrar estas notificaciones mediante Exchange Powershell. Si los usuarios deciden enviarse un mensaje de texto SMS para descargar la aplicación en su dispositivo móvil, aparecerá un código QR en su equipo. Podrán examinar el código QR para iniciar sesión en Outlook en su teléfono o tableta. Este código QR es un token de corta duración que solo se puede canjear una vez.
+En Outlook en la Web u otras aplicaciones de escritorio de Outlook, los usuarios pueden ver notificaciones que les informan de que pueden usar Outlook en su dispositivo móvil. El administrador puede administrar estas notificaciones mediante Exchange PowerShell. Si los usuarios deciden enviarse un mensaje de texto SMS para descargar la aplicación en su dispositivo móvil, aparecerá un código QR en su equipo. Podrán digitalizar el código QR para iniciar sesión en Outlook en su teléfono o tableta. Este código QR es un token de corta duración que solo se puede canjear una vez.
+
+La notificación solo se genera si se cumplen las condiciones siguientes:
+
+1. La experiencia de código QR está habilitada para el inquilino (esta experiencia está habilitada de forma predeterminada).
+
+2. El usuario aún no usa Outlook para iOS y Android.
+
+3. El usuario tiene un estado vacío en el panel de lectura (no selecciona la opción de abrir automáticamente el primer correo electrónico).
+
+4. El usuario no descartó la notificación.
 
 > [!NOTE]
 > En algunos casos, los usuarios deben volver a autenticarse en su equipo para generar el código QR.
 
 ## <a name="use-exchange-powershell"></a>Usar Exchange PowerShell
 
-Esta característica está activada de forma predeterminada. Para deshabilitar esta característica, siga los pasos siguientes.
+Esta característica está activada de forma predeterminada. Para deshabilitar esta característica, siga los pasos que se indican a continuación.
 
-1. [Conectar a Exchange PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
-2. Con PowerShell, puede deshabilitar las notificaciones que informan a los usuarios sobre el Outlook aplicaciones móviles. Esto también impide que se muestra el flujo de inicio de sesión de código QR.
+1. [Conectarse a Exchange PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+2. Con PowerShell, puede deshabilitar las notificaciones que informan a los usuarios sobre las aplicaciones móviles de Outlook. Esto también impide que se muestre el flujo de inicio de sesión del código QR.
 
 ```powershell
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
@@ -48,5 +58,5 @@ Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Configurar las opciones de versión estándar o dirigida](release-options-in-office-365.md) (artículo)\
+[Configurar las opciones de las versiones estándar o dirigida](release-options-in-office-365.md) (artículo)\
 [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) (artículo)

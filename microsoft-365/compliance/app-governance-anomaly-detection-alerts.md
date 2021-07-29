@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Investigar las alertas de detección de anomalías.
-ms.openlocfilehash: 6797cdcbfd2a2d3c32768a158a5f8cd0fc579d56
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 41dd60de86d7583169845ae185f9f715011ea3e4
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420475"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541378"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Investigar las alertas de detección de anomalías
 
@@ -27,9 +27,9 @@ ms.locfileid: "53420475"
 
 ## <a name="mitre-attck"></a>MITRE ATT&CK
 
-Para facilitar la relación entre las alertas de gobernanza de aplicaciones de Microsoft y la conocida matriz ATT&CK de MITRE, hemos clasificado las alertas según su correspondiente táctica ATT&CK de MITRE. Esta referencia adicional facilita la comprensión de la técnica de ataque sospechosa potencialmente en uso cuando se activa la alerta de Microsoft Application Security and Governance.
+Para facilitar la relación entre las alertas de gobernanza de aplicaciones de Microsoft y la conocida matriz ATT&CK de MITRE, hemos clasificado las alertas según su correspondiente táctica ATT&CK de MITRE. Esta referencia adicional facilita la comprensión de la técnica de ataque sospechosa potencialmente en uso cuando se activa la alerta de gobernanza de aplicaciones.
 
-Esta guía proporciona información sobre cómo investigar y solucionar las alertas de gobernanza de aplicaciones de Microsoft en las siguientes categorías.
+Esta guía proporciona información sobre cómo investigar y solucionar las alertas de gobernanza de aplicaciones en las siguientes categorías.
 
 - Acceso inicial
 - Ejecución
@@ -41,6 +41,7 @@ Esta guía proporciona información sobre cómo investigar y solucionar las aler
 - Exfiltración
 - Impacto
 
+<!-->
 ## <a name="security-alert-classifications"></a>Clasificación de las alertas de seguridad
 
 Tras una investigación adecuada, todas las alertas de gobernanza de aplicaciones de Microsoft pueden clasificarse como uno de los siguientes tipos de actividad:
@@ -48,6 +49,7 @@ Tras una investigación adecuada, todas las alertas de gobernanza de aplicacione
 - Verdadero positivo (TP): una alerta sobre una actividad maliciosa confirmada.
 - Verdadero positivo benigno (B-TP): una alerta sobre una actividad sospechosa pero no maliciosa, como una prueba de penetración u otra acción sospechosa autorizada.
 - Falso positivo (FP): una alerta sobre una actividad no maliciosa.
+-->
 
 ## <a name="general-investigation-steps"></a>Pasos generales de la investigación
 

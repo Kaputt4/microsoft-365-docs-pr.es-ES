@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Siga estos pasos para reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo a un buzón compartido.
-ms.openlocfilehash: 5ab66cf9d71a597a7f33c9a5e3a180738592faca
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: df8652f89df5715ba45408f87755bd2ee238884c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244298"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541606"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Paso 3: Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo a un buzón compartido
 
@@ -56,3 +57,10 @@ Siga estos pasos sobre cómo convertir el buzón del usuario [en un buzón compa
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el **cuadro Dirección de reenvío,** escriba la dirección de correo electrónico del empleado actual que va a obtener el correo electrónico.
 5. Seleccione **Guardar**.
 6. Recuerde no eliminar la cuenta del antiguo empleado.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Abra y use un buzón compartido en Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd) 
+ [Acceso al buzón de otra persona](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081) 
+ [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center) 
+ [Administrador de los elementos de correo y calendario de otra persona](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

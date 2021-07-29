@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 371208433cbb0f65ab5a2808318c03dae6bb6d8b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c86a8fb2021baeb34082cdbcc60a7372da407a4f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842308"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541771"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
@@ -106,10 +106,10 @@ Los administradores pueden configurar automáticamente el perfil de VPN. Esto co
 
 2. Pulsa el icono de la aplicación Defender para endpoint (MSDefender) y sigue las instrucciones en pantalla para completar los pasos de incorporación. Los detalles incluyen la aceptación por parte del usuario final de los permisos de iOS requeridos por Defender para endpoint en iOS.
 
-3. Tras la incorporación correcta, el dispositivo empezará a aparecer en la lista dispositivos de Centro de seguridad de Microsoft Defender.
+3. Tras la incorporación correcta, el dispositivo empezará a aparecer en la lista dispositivos del portal Microsoft 365 Defender dispositivos.
 
     > [!div class="mx-imgBorder"]
-    > ![Captura de pantalla de una descripción de teléfono móvil generada automáticamente](images/e07f270419f7b1e5ee6744f8b38ddeaf.png)
+    > ![Captura de pantalla de una descripción de teléfono móvil generada automáticamente](images/device-inventory-screen.png)
 
 ## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>Configurar Microsoft Defender para el punto de conexión para el modo supervisado
 
@@ -128,7 +128,7 @@ Intune te permite configurar la aplicación Defender para iOS a través de una d
     > ![Imagen de Microsoft Endpoint Manager Admin Center4](images/ios-deploy-4.png)
 
 1. En la *página Crear directiva de configuración de aplicaciones,* proporcione la siguiente información:
-    - Nombre de la directiva
+    - Nombre de directiva
     - Plataforma: seleccione iOS/iPadOS
     - Aplicación dirigida: seleccione Punto de **conexión de Microsoft Defender** en la lista
 
@@ -166,4 +166,5 @@ Intune te permite configurar la aplicación Defender para iOS a través de una d
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-[Configurar Defender para endpoint en características de iOS](ios-configure-features.md)
+- [Configurar la directiva de protección de aplicaciones para incluir las señales de riesgo de Defender for Endpoint (MAM)](ios-install-unmanaged.md)
+- [Configurar Defender para endpoint en características de iOS](ios-configure-features.md)

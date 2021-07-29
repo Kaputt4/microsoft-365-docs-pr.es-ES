@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 063870c58377d7327f621ec49855b684065f436b
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2c9cbff0a1637636e310ca83523319dd6fe236f2
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286770"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541714"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Administrar Microsoft Defender para endpoint con PowerShell, WMI y MPCmdRun.exe
 
@@ -80,9 +80,9 @@ En un dispositivo individual, puede ejecutar un examen, iniciar el seguimiento d
 |---|---|
 |**Administrar Antivirus de Microsoft Defender**|[Configurar y administrar Antivirus de Microsoft Defender con mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)|
 
-## <a name="configure-your-microsoft-defender-security-center"></a>Configurar el Centro de seguridad de Microsoft Defender
+## <a name="configure-your-microsoft-365-defender-portal"></a>Configurar el portal Microsoft 365 Defender web
 
-Si aún no lo ha hecho, configure su **Centro de seguridad de Microsoft Defender** ( ) para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su [https://securitycenter.windows.com](https://securitycenter.windows.com) organización.
+Si aún no lo ha hecho, configure el portal de [Microsoft 365 Defender](https://security.microsoft.com/) para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su organización.
 
 También puede configurar si los usuarios finales pueden ver y qué características pueden ver en el Centro de seguridad de Microsoft Defender.
 
@@ -90,7 +90,7 @@ También puede configurar si los usuarios finales pueden ver y qué característ
 
 - [Protección de extremo: Centro de seguridad de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 

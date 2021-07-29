@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13307d3205818d41e7b2219b4e3a4ed6e9f2d5bb
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: bddd635506f5a37585bc8c06fb44e1c2fbffd721
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454789"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567961"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Puntuación de seguridad de Microsoft para dispositivos
 
@@ -35,7 +35,7 @@ ms.locfileid: "53454789"
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 >[!NOTE]
@@ -56,6 +56,7 @@ Seleccione una categoría para ir a la [**página Recomendaciones de seguridad**
 Reenvía Microsoft Defender para las señales de punto de conexión, lo que ofrece a Microsoft Secure Score visibilidad en la posición de seguridad del dispositivo. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de puntuación segura de Microsoft.
 
 Los cambios pueden tardar hasta unas horas en reflejarse en el panel.
+
 
 1. En el panel de navegación, vaya **a Configuración** características avanzadas generales de puntos de  >    >    >  **conexión** 
 
@@ -102,9 +103,9 @@ Mejore la configuración de seguridad mediante la corrección de problemas de la
 >[!IMPORTANT]
 >Para aumentar las tasas de detección de evaluación de vulnerabilidades, descargue las siguientes actualizaciones de seguridad obligatorias e impleméntelas en la red:
 >- Clientes de 19H1 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
->- Clientes de RS5 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
->- Clientes de RS4 | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
->- Clientes de RS3 | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+>- Clientes de RS5 | [Kb 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+>- Clientes de RS4 | [Kb 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+>- Clientes de RS3 | [Kb 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 >
 >Para descargar las actualizaciones de seguridad:
 >1. Vaya a [Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/home.aspx).

@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Siga los pasos de este artículo para dar a otro empleado acceso a los datos de OneDrive y Outlook antiguos.
-ms.openlocfilehash: b5868ab1622fea68cc3dabb54a3d06208ccaa165
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 67ec651361aac2b687fa1b0f851271ced5e634ed
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394308"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541594"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Paso 4: Dar a otro empleado acceso a OneDrive y Outlook datos
 
@@ -188,6 +189,4 @@ Para dar acceso a los mensajes de correo electrónico, el calendario, las tareas
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Agregar y quitar administradores en una cuenta OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (artículo)\
-[Restaurar un OneDrive](/onedrive/restore-deleted-onedrive) eliminado (artículo)\
-[OneDrive retención y eliminación](/onedrive/retention-and-deletion) (artículo)
+Agregar y quitar [administradores](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) en una cuenta de OneDrive (artículo) [](/onedrive/restore-deleted-onedrive) Restaurar un OneDrive eliminado (artículo) OneDrive [retención](/onedrive/retention-and-deletion) y eliminación (artículo) Compartir [OneDrive](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07) archivos y carpetas

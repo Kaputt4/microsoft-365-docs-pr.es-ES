@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Bloquear el acceso a los servicios Microsoft 365 un antiguo empleado.
-ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 69108539a87e9db4aa72851e5622a5f3856d3a45
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177122"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541630"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Paso 1: impedir que un antiguo empleado inicia sesión y bloquee el acceso a Microsoft 365 servicios
 
@@ -68,4 +69,9 @@ Si tiene correo electrónico como parte de su suscripción Microsoft 365, inicie
 1. Vaya al <a href="https://admin.exchange.microsoft.com/" target="_blank">Centro de administración de Exchange</a>.
 2. En el Centro de administración de Exchange, vaya a **Destinatarios** \> **Buzones**.
 3. Haz doble clic en el usuario y ve a **Administrar la configuración de aplicaciones de correo electrónico** en Aplicaciones de correo **electrónico.** Desactivar **el** control deslizante de todas las opciones; **Mobile (Exchange ActiveSync),** **Outlook en la Web**, **Outlook escritorio (MAPI),** Exchange **web services**, **POP3** e **IMAP**.
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center) 
+ [Restaurar un usuario](restore-user.md)

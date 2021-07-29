@@ -1,6 +1,6 @@
 ---
 title: Crear y administrar roles para el control de acceso basado en roles
-description: Cree roles y defina los permisos asignados al rol como parte de la implementación de control de acceso basada en roles en el Centro de seguridad de Microsoft Defender
+description: Cree roles y defina los permisos asignados al rol como parte de la implementación de control de acceso basada en roles en el Microsoft 365 Defender
 keywords: roles de usuario, roles, acceso a rbac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 932fd6ecd7dca66f4cb587b226474109c788c341
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ea9f0ee4c178bf36bf3102076e39bf19201594e8
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073987"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567613"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Crear y administrar roles para el control de acceso basado en roles
 
@@ -31,17 +31,17 @@ ms.locfileid: "51073987"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Crear roles y asignar el rol a un Azure Active Directory grupo
 
-Los siguientes pasos le guían sobre cómo crear roles en Centro de seguridad de Microsoft Defender. Se supone que ya ha creado Azure Active Directory grupos de usuarios.
+Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender. Se supone que ya ha creado Azure Active Directory grupos de usuarios.
 
-1. Inicie sesión en [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/) cuenta con un administrador de seguridad o un rol de administrador global asignado.
+1. Inicie sesión en [Microsoft 365 Defender](https://security.microsoft.com/) cuenta con un administrador de seguridad o un rol de administrador global asignado.
 
-2. En el panel de navegación, **seleccione Configuración > Roles**.
+2. En el panel de navegación, **seleccione Configuración** roles de extremos  >    >   (en **Permisos).**
 
 3. Seleccione **Agregar elemento**.
 
@@ -58,7 +58,7 @@ Los siguientes pasos le guían sobre cómo crear roles en Centro de seguridad de
 > [!IMPORTANT]
 > Después de crear roles, tendrás que crear un grupo de dispositivos y proporcionar acceso al grupo de dispositivos al asignarlo a un rol que acaba de crear.
 
-### <a name="permission-options"></a>Opciones de permisos
+### <a name="permission-options"></a>Opciones de permiso
 
 - **Ver datos**
     - **Operaciones de seguridad:** ver todos los datos de operaciones de seguridad en el portal
@@ -81,7 +81,7 @@ Los siguientes pasos le guían sobre cómo crear roles en Centro de seguridad de
 - **Capacidades de respuesta en directo**
     - **Comandos** básicos:
         - Iniciar una sesión de respuesta en directo
-        - Realizar comandos de respuesta en directo de solo lectura en dispositivo remoto (excluyendo la copia y ejecución de archivos
+        - Realizar comandos de solo lectura de respuesta en directo en dispositivo remoto (excepto copia y ejecución de archivos)
     - **Comandos** avanzados:
         - Descargar un archivo desde el dispositivo remoto a través de una respuesta en directo
         - Descargar archivos PE y que no son PE de la página de archivos
@@ -93,9 +93,9 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
   
 ## <a name="edit-roles"></a>Editar roles
 
-1. Inicie sesión [en](https://securitycenter.windows.com/) Centro de seguridad de Microsoft Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
+1. Inicie sesión [en](https://security.microsoft.com/) Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
-2. En el panel de navegación, **seleccione Configuración > Roles**.
+2. En el panel de navegación, **seleccione Configuración** roles de extremos  >    >   (en **Permisos).**
 
 3. Seleccione el rol que desea editar.
 
@@ -107,9 +107,9 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
 
 ## <a name="delete-roles"></a>Eliminar roles
 
-1. Inicie sesión [en](https://securitycenter.windows.com/) Centro de seguridad de Microsoft Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
+1. Inicie sesión [en](https://security.microsoft.com/) Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
-2. En el panel de navegación, **seleccione Configuración > Roles**.
+2. En el panel de navegación, **seleccione Configuración** roles de extremos  >    >   (en **Permisos).**
 
 3. Seleccione el rol que desea eliminar.
 

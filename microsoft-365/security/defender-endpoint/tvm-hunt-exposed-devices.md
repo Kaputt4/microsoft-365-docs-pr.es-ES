@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9a8ebcc89c3009cd93fbb42f2a74bbb9ffcc31b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c47d11bd1afe247b687b8736b4cad8fa4e906bb1
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934098"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567997"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Buscar dispositivos expuestos: Administración de amenazas y vulnerabilidades
 
@@ -32,10 +32,10 @@ ms.locfileid: "51934098"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a>Usar la búsqueda avanzada para buscar dispositivos con vulnerabilidades
 
@@ -55,7 +55,7 @@ La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en cons
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>Comprobar qué dispositivos están implicados en alertas de alta gravedad
 
-1. Vaya a **Búsqueda avanzada desde** el panel de navegación izquierdo de la Centro de seguridad de Microsoft Defender.
+1. Ve a **Búsqueda** avanzada de búsqueda desde el panel de navegación izquierdo  >   del portal Microsoft 365 Defender búsqueda.
 
 2. Desplácese hacia abajo hasta los esquemas de búsqueda avanzados de TVM para familiarizarse con los nombres de columna.
 
