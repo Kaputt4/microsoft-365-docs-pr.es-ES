@@ -2,8 +2,8 @@
 title: Más información sobre la detección y corrección de aplicaciones
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre la detección y corrección de aplicaciones.
-ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 70f39ac3506ff6962ab028009cab54dfb83cd47b
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438053"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624229"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>Más información sobre la detección y corrección de aplicaciones
 
@@ -51,10 +51,6 @@ Al compartir información entre el gobierno de aplicaciones, Azure AD y Microsof
 - Información de inicio de sesión de la aplicación en la gobernanza de aplicaciones:
 
   Desde el portal de gobernanza de aplicaciones, puede ver la actividad de inicio de sesión agregada de cada aplicación y volver a vincularla al centro de administración de Azure Active Directory para obtener los detalles de los eventos de inicio de sesión.
-
-- Información de uso de la API de la aplicación en el centro de administración de Azure Active Directory:
-
-  Desde el centro de administración de Azure Active Directory, puede ver la información de uso de la aplicación agregada y vincularla al portal de gobernanza de aplicaciones para obtener los detalles del uso de la aplicación.
 
 - Información del uso de la API en el portal de Microsoft Cloud App Security: 
 

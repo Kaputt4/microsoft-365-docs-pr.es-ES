@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 001b8dcf4b0bfd2550f41454fc840602a6e4361f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 8390b6b542c43efd37c065b75b4851702022afa6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770138"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624133"
 ---
 # <a name="get-investigation-api"></a>Obtener API de investigación
 
@@ -31,7 +31,7 @@ ms.locfileid: "52770138"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,34 +48,38 @@ Recupera investigación [específica por](investigation.md) su identificador.
 
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Alert.Read.All |    'Leer todas las alertas'
-Aplicación |   Alert.ReadWrite.All |   'Leer y escribir todas las alertas'
+Aplicación|Alert.Read.All|'Leer todas las alertas'
+Aplicación|Alert.ReadWrite.All|'Leer y escribir todas las alertas'
 Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
 Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET https://api.securitycenter.microsoft.com/api/investigations/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente, este método devuelve 200, código de respuesta Ok con una [entidad Investigations.](investigation.md)
 

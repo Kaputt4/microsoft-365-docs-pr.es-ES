@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5869e8406158eb6d6b2f48b3083cb9011bb3951d
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: abcfa00f13857fa5b3fcd83a2e4ee073c6143540
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604350"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621840"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>Configurar Centro de seguridad de Microsoft Defender configuración
 
@@ -31,7 +31,7 @@ ms.locfileid: "51604350"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
 Use el **menú Configuración** para modificar la configuración general, las características avanzadas, habilitar la experiencia de vista previa, las notificaciones de correo electrónico y la característica de inteligencia de amenazas personalizada.
 

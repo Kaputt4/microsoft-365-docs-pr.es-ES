@@ -16,12 +16,12 @@ ms.topic: conceptual
 ms.author: macapara
 ms.date: 09/07/2018
 ms.technology: mde
-ms.openlocfilehash: b3babf858ac19e70119a2dc6a58b25359f1b05c1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 68a21e832ca81054411a6e3720921edaa6c9301e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842991"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622813"
 ---
 # <a name="hardware-based-isolation-in-windows-10"></a>Aislamiento basado en hardware en Windows 10
 
@@ -31,7 +31,7 @@ ms.locfileid: "52842991"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 El aislamiento basado en hardware ayuda a proteger la integridad del sistema Windows 10 y se integra con Microsoft Defender para endpoint. 

@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8985a40c99ad4db9710dfbf9805d537a921f6c96
-ms.sourcegitcommit: f0118e61e490496cb23189cc5c73b23e2ba939be
+ms.custom: api
+ms.openlocfilehash: 814eea3a4c24b5706b288840436022a3cecaa6b1
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780170"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623113"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a los centros de eventos de Azure
 
@@ -32,7 +33,7 @@ ms.locfileid: "52780170"
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -54,7 +55,7 @@ ms.locfileid: "52780170"
 
 6. Escriba el **nombre de event hubs** y el **identificador de recurso de Event Hubs**.
 
-   Para obtener el identificador de recurso **de Event Hubs,** vaya a la página de espacio de nombres de Azure Event Hubs en la pestaña propiedades de [Azure](https://ms.portal.azure.com/) > para > el texto en Id. de **recurso:**
+   Para obtener el identificador de recurso **de Event Hubs,** vaya a la página de espacio de nombres de Azure Event Hubs en la pestaña propiedades de [Azure](https://ms.portal.azure.com/) > copie el texto en \> **Id. de recurso:**
 
    ![Imagen del recurso del centro de eventos Id1](images/event-hub-resource-id.png)
 
@@ -62,7 +63,7 @@ ms.locfileid: "52780170"
 
 ## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Esquema de los eventos de Azure Event Hubs
 
-```
+```text
 {
     "records": [
                     {
@@ -91,18 +92,19 @@ Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
 1. Inicie sesión en [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com) y vaya a [la página Búsqueda avanzada](https://securitycenter.windows.com/hunting-package).
 
 2. Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:
- 
-   ```
+
+   ```text
    {EventType}
    | getschema
    | project ColumnName, ColumnType 
    ```
 
-- Este es un ejemplo para el evento Device Info: 
+- Este es un ejemplo para el evento Device Info:
 
   ![Imagen del recurso del centro de eventos Id2](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [API de streaming de Microsoft Defender para endpoints](raw-data-export.md)
 - [Transmitir eventos de Microsoft Defender para endpoint a su cuenta de Azure Storage](raw-data-export-storage.md)

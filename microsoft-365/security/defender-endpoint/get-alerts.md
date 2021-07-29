@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7a508815ca584f28f0a52768ac10a556c3ef621b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8410788bb635a4df6f7565c3d169196ea61fc568
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543322"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624337"
 ---
 # <a name="list-alerts-api"></a>API de listas de alertas
 
@@ -31,7 +31,7 @@ ms.locfileid: "53543322"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -57,12 +57,13 @@ Recupera una colección de alertas.
 
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 :---|:---|:---
-Application | Alert.Read.All | 'Leer todas las alertas'
-Application | Alert.ReadWrite.All | 'Leer y escribir todas las alertas'
+Aplicación | Alert.Read.All | 'Leer todas las alertas'
+Aplicación | Alert.ReadWrite.All | 'Leer y escribir todas las alertas'
 Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
 Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
 
@@ -80,9 +81,9 @@ GET /api/alerts
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

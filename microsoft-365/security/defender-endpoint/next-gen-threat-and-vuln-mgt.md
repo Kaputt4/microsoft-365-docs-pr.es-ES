@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 474b8f032d32668eaea3a477da013c2b8e74019b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db213da7c1859c9f4c9871aea508b225fd9b7b44
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934170"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623161"
 ---
 # <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 
@@ -32,7 +32,7 @@ ms.locfileid: "51934170"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Identificar, evaluar y corregir eficazmente las debilidades de los puntos de conexión es fundamental para ejecutar un programa de seguridad correcto y reducir los riesgos de la organización. La administración de amenazas y vulnerabilidades funciona a modo de infraestructura para reducir la exposición en la organización, fortalecer la superficie de los puntos de conexión y aumentar la resistencia de la organización.
 
@@ -40,11 +40,11 @@ Descubra vulnerabilidades y configuraciones erróneas en tiempo real con sensore
 
 Vea este vídeo para obtener una introducción rápida a Administración de amenazas y vulnerabilidades.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
 
 ## <a name="bridging-the-workflow-gaps"></a>Puentear las diferencias de flujo de trabajo
 
-La amenaza administración de vulnerabilidades está integrada, en tiempo real y con tecnología de nube. Está totalmente integrado con la pila de seguridad de puntos de conexión de Microsoft, la base de Graph seguridad inteligente de Microsoft y la base de conocimientos de análisis de aplicaciones.  
+La amenaza administración de vulnerabilidades está integrada, en tiempo real y con tecnología de nube. Está totalmente integrado con la pila de seguridad de puntos de conexión de Microsoft, la base de Graph seguridad inteligente de Microsoft y la base de conocimientos de análisis de aplicaciones.
 
 La administración de vulnerabilidades es la primera solución del sector que ha puenteado la brecha entre la administración de seguridad y la administración de IT durante el proceso de corrección. Cree una tarea o vale de seguridad integrándose con Microsoft Intune y Microsoft Endpoint Configuration Manager.
 
@@ -54,10 +54,10 @@ Para detectar vulnerabilidades de puntos de conexión y configuración incorrect
 
 También proporciona:
 
-- **Inventario de dispositivos** en tiempo real: los dispositivos incorporados a Defender for Endpoint informan e insertan automáticamente datos de configuración de seguridad y vulnerabilidad en el panel.
-- **Visibilidad del software y las vulnerabilidades:** ópticas en el inventario de software de la organización y cambios de software como instalaciones, desinstalaciones y revisiones. Las vulnerabilidades detectadas recientemente se notifican con recomendaciones de mitigación que se pueden aplicar para aplicaciones de 1ª y 3ª parte.
-- **Contexto de tiempo de ejecución** de la aplicación: visibilidad de los patrones de uso de la aplicación para una mejor priorización y toma de decisiones.
-- **Posición de configuración:** visibilidad de la configuración de seguridad de la organización o de las configuraciones erróneas. Los problemas se notifican en el panel con recomendaciones de seguridad que se pueden usar.
+- **Inventario de dispositivos en tiempo real**: los dispositivos incorporados a Defender para punto de conexión notifican e insertan automáticamente datos de configuración de seguridad y vulnerabilidad en el panel.
+- **Visibilidad del software y de las vulnerabilidades**: óptica en el inventario de software de la organización y cambios de software como instalaciones, desinstalaciones y revisiones. Las últimas vulnerabilidades detectadas se notifican con recomendaciones de mitigación que se pueden llevar a cabo para aplicaciones de primeras y de terceras partes.
+- **Contexto del tiempo de ejecución de la aplicación**: visibilidad de los patrones de uso de la aplicación para mejorar la priorización y la toma de decisiones.
+- **Posición de la configuración**: visibilidad de la configuración de seguridad de la organización o de configuraciones incorrectas. Los problemas se notifican en el panel con recomendaciones de seguridad que se pueden llevar a cabo.
 
 ### <a name="intelligence-driven-prioritization"></a>Priorización basada en inteligencia
 
@@ -106,7 +106,7 @@ Vea los siguientes artículos para obtener las API relacionadas:
 - [API de vulnerabilidad](vulnerability.md)
 - [Enumerar vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Plataformas y sistemas operativos compatibles](tvm-supported-os.md)
 - [Panel de administración de vulnerabilidades amenazas](tvm-dashboard-insights.md)

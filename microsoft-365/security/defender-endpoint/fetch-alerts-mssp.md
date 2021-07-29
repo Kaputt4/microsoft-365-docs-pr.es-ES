@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c1695729a12f9cce74663c35f6a9cd537ac468b6
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: c30988a759080e09a7931c4657a53f2273e41114
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543490"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623989"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Capturar alertas desde el inquilino del cliente de MSSP
 
@@ -31,7 +31,7 @@ ms.locfileid: "53543490"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 >[!NOTE]
 >El MSSP toma esta acción.

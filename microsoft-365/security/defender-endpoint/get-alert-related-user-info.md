@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e895885a638c60a845ed4857c682cd472e42615c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d1659ed7fe03b5a98922c1b915d3654ce0f876d1
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772322"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621948"
 ---
 # <a name="get-alert-related-user-information-api"></a>Obtener api de información de usuario relacionada con alertas
 
@@ -32,57 +32,59 @@ ms.locfileid: "52772322"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>Descripción de la API
+
 Recupera el usuario relacionado con una alerta específica.
 
-
 ## <a name="limitations"></a>Limitaciones
+
 1. Puede consultar las alertas actualizadas por última vez de acuerdo con el período de retención configurado.
 2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
-
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Application |   User.Read.All | 'Leer perfiles de usuario'
-Delegado (cuenta profesional o educativa) | User.Read.All | 'Leer perfiles de usuario'
+Application|User.Read.All|'Leer perfiles de usuario'
+Delegado (cuenta profesional o educativa)|User.Read.All|'Leer perfiles de usuario'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
->- El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /api/alerts/{id}/user
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente y alerta y existe un usuario: 200 Aceptar con el usuario en el cuerpo. Si no se encuentra la alerta o el usuario: 404 No encontrado.
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -90,10 +92,9 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/user
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
-
 
 ```json
 {

@@ -1,5 +1,5 @@
 ---
-title: Investigar incidentes en Microsoft Defender para endpoint
+title: Investigar incidentes en Microsoft Defender para punto de conexión
 description: Ver alertas asociadas, administrar el incidente y ver metadatos de alerta para ayudarle a investigar un incidente
 keywords: investigar, incidente, alertas, metadatos, riesgo, origen de detección, dispositivos afectados, patrones, correlación
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b52b6f9b457dbe1a5984c3d68c7077f7037d498
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ee567df3fa53cad407b494e924c9f7e3d60c0328
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845083"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623749"
 ---
-# <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Investigar incidentes en Microsoft Defender para endpoint
+# <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Investigar incidentes en Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,24 +34,27 @@ ms.locfileid: "52845083"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-Investigar incidentes que afectan a la red, comprender lo que significan y recopilar evidencias para resolverlos. 
+Investigar incidentes que afectan a la red, comprender lo que significan y recopilar evidencias para resolverlos.
 
 Cuando investigues un incidente, verás lo siguiente:
+
 - Detalles del incidente
 - Comentarios y acciones de incidentes
 - Pestañas (alertas, dispositivos, investigaciones, evidencias, gráfico)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUV]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUV]
 
+## <a name="analyze-incident-details"></a>Analizar detalles de incidentes
 
-## <a name="analyze-incident-details"></a>Analizar detalles de incidentes 
-Haga clic en un incidente para ver **el panel Incidente**. Seleccione **Abrir página de incidentes** para ver los detalles del incidente y la información relacionada (alertas, dispositivos, investigaciones, evidencias, gráfico). 
+Haga clic en un incidente para ver **el panel Incidente**. Seleccione **Abrir página de incidentes** para ver los detalles del incidente y la información relacionada (alertas, dispositivos, investigaciones, evidencias, gráfico).
 
 ![Imagen de detalles de incidentes1](images/atp-incident-details.png)
 
 ### <a name="alerts"></a>Alertas
+
 Puede investigar las alertas y ver cómo se vincularon en un incidente. Las alertas se agrupan en incidentes en función de los siguientes motivos:
-- Investigación automatizada: la investigación automatizada desencadenó la alerta vinculada mientras se investigaba la alerta original. 
+
+- Investigación automatizada: la investigación automatizada desencadenó la alerta vinculada mientras se investigaba la alerta original.
 - Características del archivo: los archivos asociados a la alerta tienen características similares
 - Asociación manual: un usuario vinculó manualmente las alertas
 - Tiempo próxima: las alertas se desencadenaron en el mismo dispositivo en un período de tiempo determinado
@@ -60,29 +63,34 @@ Puede investigar las alertas y ver cómo se vincularon en un incidente. Las aler
 
 ![Imagen de la pestaña alertas con la página de detalles del incidente que muestra los motivos por los que las alertas se vincularon juntas en ese incidente](images/atp-incidents-alerts-reason.png)
 
-También puede administrar una alerta y ver metadatos de alerta junto con otra información. Para obtener más información, vea [Investigar alertas](investigate-alerts.md). 
+También puede administrar una alerta y ver metadatos de alerta junto con otra información. Para obtener más información, vea [Investigar alertas](investigate-alerts.md).
 
 ### <a name="devices"></a>Dispositivos
+
 También puedes investigar los dispositivos que forman parte de un incidente determinado o están relacionados con ellos. Para obtener más información, vea [Investigar dispositivos](investigate-machines.md).
 
 ![Pestaña Imagen de dispositivos en la página detalles de incidentes](images/atp-incident-device-tab.png)
 
 ### <a name="investigations"></a>Investigaciones
+
 Seleccione **Investigaciones para** ver todas las investigaciones automáticas iniciadas por el sistema en respuesta a las alertas de incidentes.
 
 ![Imagen de la pestaña investigaciones en la página de detalles de incidentes](images/atp-incident-investigations-tab.png)
 
 ## <a name="going-through-the-evidence"></a>Pasar por la evidencia
-Microsoft Defender para endpoint investiga automáticamente todos los eventos admitidos por los incidentes y las entidades sospechosas de las alertas, lo que le proporciona una respuesta automática e información sobre los archivos, procesos, servicios y mucho más importantes. 
 
-Cada una de las entidades analizadas se marcará como infectado, corregido o sospechoso. 
+Microsoft Defender para endpoint investiga automáticamente todos los eventos admitidos por los incidentes y las entidades sospechosas de las alertas, lo que le proporciona una respuesta automática e información sobre los archivos, procesos, servicios y mucho más importantes.
+
+Cada una de las entidades analizadas se marcará como infectado, corregido o sospechoso.
 
 ![Imagen de la pestaña evidencia en la página de detalles del incidente](images/atp-incident-evidence-tab.png)
 
-## <a name="visualizing-associated-cybersecurity-threats"></a>Visualización de amenazas de ciberseguridad asociadas 
+## <a name="visualizing-associated-cybersecurity-threats"></a>Visualización de amenazas de ciberseguridad asociadas
+
 Microsoft Defender para endpoint agrega la información de amenazas en un incidente para que pueda ver los patrones y correlaciones que vienen desde varios puntos de datos. Puede ver dicha correlación a través del gráfico de incidentes.
 
 ### <a name="incident-graph"></a>Gráfico de incidentes
+
 El **Graph** cuenta la historia del ataque de ciberseguridad. Por ejemplo, muestra cuál era el punto de entrada, qué indicador de riesgo o actividad se observó en qué dispositivo. etc.
 
 ![Imagen del gráfico de incidentes](images/atp-incident-graph-tab.png)
@@ -92,6 +100,7 @@ Puede hacer clic en los círculos del gráfico de incidentes para ver los detall
 ![Imagen de los detalles del incidente](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Cola de incidentes](/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [Investigar incidentes en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/investigate-incidents)
+- [Investigar incidentes en Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/investigate-incidents)
 - [Administrar Microsoft Defender para incidentes de punto de conexión](/microsoft-365/security/defender-endpoint/manage-incidents)

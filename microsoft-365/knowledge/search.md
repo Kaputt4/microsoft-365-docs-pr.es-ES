@@ -1,5 +1,5 @@
 ---
-title: Use Búsqueda de Microsoft para buscar temas en Temas de Microsoft Viva
+title: Use Búsqueda de Microsoft para buscar temas en Temas Microsoft Viva
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
-description: Obtenga información sobre cómo puede buscar temas en Microsoft Viva.
-ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: Obtenga información sobre cómo buscar temas en Temas Microsoft Viva.
+ms.openlocfilehash: 0a29bb4578ead314c362959a4e410665114c7fbb
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287262"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624349"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Use Búsqueda de Microsoft para buscar temas en Temas de Microsoft Viva
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Use Búsqueda de Microsoft para buscar temas en Temas Microsoft Viva
 
 Aunque los usuarios de Viva Topics pueden encontrar temas a través de temas destacados en sus SharePoint, también pueden encontrarlos a través de Búsqueda de Microsoft. 
 

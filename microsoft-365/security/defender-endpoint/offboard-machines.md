@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 425e5b9e0be12b89c8fd3b7201010b0f776cc6a5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: cd9849151fbaf0de3b353c5fe26c440368579e68
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934158"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623713"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Dispositivos offboard del servicio Microsoft Defender para endpoints
 
@@ -38,7 +38,7 @@ ms.locfileid: "51934158"
 - Windows Server 2012 R2
 - Windows Server 2016
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-offboarddevices-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-offboarddevices-abovefoldlink)
 
 Siga las instrucciones correspondientes según el método de implementación preferido.
 

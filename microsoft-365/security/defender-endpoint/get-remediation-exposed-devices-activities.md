@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9b10659f76e5b05bea11f5c6c55ca7c2a34a2db5
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1d421de1bcdc926fa05fae626c0474d2dce54e41
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772166"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621876"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Lista de dispositivos expuestos de una actividad de corrección
 
@@ -32,7 +32,7 @@ ms.locfileid: "52772166"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -54,21 +54,21 @@ Devuelve información sobre los dispositivos expuestos para la tarea de correcci
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API para obtener más información.](apis-intro.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación | RemediationTask.Read.All | \'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
-Delegado (cuenta profesional o educativa) | RemediationTask.Read.Read | \'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
+Aplicación|RemediationTask.Read.All|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
+Delegado (cuenta profesional o educativa)|RemediationTask.Read.Read|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
 
 ## <a name="properties-details"></a>Detalles de propiedades
 
-Propiedad (id) | Tipo de datos | Descripción | Ejemplo
+Propiedad (id)|Tipo de datos|Descripción|Ejemplo
 :---|:---|:---|:---
-id | Cadena | Id. de dispositivo | w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName | Cadena | Nombre del dispositivo | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | Cadena | Sistema operativo del dispositivo | WindowsServer2012R2
-rbacGroupName | Cadena | Nombre del grupo de dispositivos al que está asociado este dispositivo | Servidores
+id|Cadena|Id. de dispositivo|w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName|Cadena|Nombre del dispositivo|PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform|Cadena|Sistema operativo del dispositivo|WindowsServer2012R2
+rbacGroupName|Cadena|Nombre del grupo de dispositivos al que está asociado este dispositivo|Servidores
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 
@@ -114,14 +114,10 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
-
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)
-
 - [Enumerar todas las actividades de corrección](get-remediation-all-activities.md)
-
 - [Amenazas basadas en riesgos & administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
-
 - [Vulnerabilidades de la organización](tvm-weaknesses.md)

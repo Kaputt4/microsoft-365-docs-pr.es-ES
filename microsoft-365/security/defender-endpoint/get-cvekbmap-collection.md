@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 85c4d82f07354193fb1e997abb98dbdaa02dc8ef
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: afb3e689c33b7d6d314bc23b19869824b3666c00
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166892"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623953"
 ---
 # <a name="get-cve-kb-map-api"></a>Obtener API de mapa CVE-KB
 
@@ -32,7 +32,7 @@ ms.locfileid: "51166892"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,29 +41,33 @@ ms.locfileid: "51166892"
 Recupera un mapa de CVE a los detalles de KB y CVE.
 
 ## <a name="permissions"></a>Permisos
+
 El usuario necesita permisos de lectura.
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /testwdatppreview/cvekbmap
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Encabezado | Valor 
+Encabezado|Valor
 :---|:---
-Authorization | Portador {token}. **Necesario**.
-Tipo de contenido | application/json
+Authorization|Portador {token}. **Necesario**.
+Tipo de contenido|application/json
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente y existe la asignación: 200 Aceptar.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -71,7 +75,7 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
@@ -87,7 +91,6 @@ Aquí tiene un ejemplo de la respuesta.
             "title": "Cumulative Security Update for Internet Explorer",
             "severity": "Critical"
         },
-    …
+    ...
 }
-
 ```

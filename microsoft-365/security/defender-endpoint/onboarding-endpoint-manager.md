@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 397aa8a0e8f0523c9975d40759d39369c221222b
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cdd188a58bd80885c90b87e3d42c999a2afd14c1
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228980"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622825"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Incorporación con Microsoft Endpoint Manager
 
@@ -34,7 +34,7 @@ ms.locfileid: "53228980"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Este artículo forma parte de la guía de implementación y actúa como un método de incorporación de ejemplo.
 
@@ -122,9 +122,9 @@ Primero es una directiva de configuración para seleccionar qué grupos de usuar
 A continuación, seguirá creando varios tipos diferentes de directivas de seguridad de extremo:
 
 - [Protección de última generación](#next-generation-protection)
-- [Reducción de la superficie expuesta a ataques](#attack-surface-reduction--attack-surface-reduction-rules)
+- [Reducción de la superficie expuesta a ataques](#attack-surface-reduction---attack-surface-reduction-rules)
 
-### <a name="endpoint-detection-and-response"></a>EDR
+### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión.
 
 1. Abra el portal de MEM.
 
@@ -181,7 +181,7 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager portal12](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. Seleccione **Plataforma - Windows 10 y posteriores - Windows y perfil : Antivirus de Microsoft Defender > Crear**.
+3. Seleccione **Plataforma - Windows 10 y posterior - Windows y perfil - Antivirus de Microsoft Defender > Crear**.
 
 4. Escriba el nombre y la descripción y, a continuación,  **seleccione Siguiente**.
 
@@ -213,7 +213,7 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager portal18](images/38180219e632d6e4ec7bd25a46398da8.png)
 
-### <a name="attack-surface-reduction--attack-surface-reduction-rules"></a>Reducción de superficie de ataque: reglas de reducción de superficie de ataque
+### <a name="attack-surface-reduction---attack-surface-reduction-rules"></a>Reducción de superficie de ataque: reglas de reducción de superficie de ataque
 
 1. Abra el portal de MEM.
 
@@ -221,7 +221,7 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
 
 3. Seleccione  **Crear directiva**.
 
-4. Seleccione **Plataforma - Windows 10 y posterior : Perfil: Reglas de** reducción de superficie de ataque > Crear .
+4. Seleccionar **plataforma - Windows 10 y posterior - Perfil - Reglas de** reducción de superficie de ataque > Crear .
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager portal19](images/522d9bb4288dc9c1a957392b51384fdd.png)
@@ -261,7 +261,7 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager portal25](images/7a631d17cc42500dacad4e995823ffef.png)
 
-### <a name="attack-surface-reduction--web-protection"></a>Reducción de superficie de ataque: protección web
+### <a name="attack-surface-reduction---web-protection"></a>Reducción de superficie de ataque: protección web
 
 1. Abra el portal de MEM.
 
@@ -269,7 +269,7 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
 
 3. Seleccione  **Crear directiva**.
 
-4. Seleccione **Windows 10 y posterior: protección web > Crear**.
+4. Seleccione **Windows 10 y posterior: Protección web > Crear**.
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager portal26](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
@@ -322,22 +322,22 @@ Para confirmar que la directiva de configuración se ha aplicado al dispositivo 
 1. Abra el portal de MEM y vaya a la directiva correspondiente, como se muestra en los pasos anteriores. En el ejemplo siguiente se muestra la configuración de protección de próxima generación.
 
     > [!div class="mx-imgBorder"]
-    > [![Imagen de Microsoft Endpoint Manager portal33 ](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![Imagen de Microsoft Endpoint Manager portal33](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2. Seleccione la **directiva de configuración** para ver el estado de la directiva.
 
     > [!div class="mx-imgBorder"]
-    > [![Imagen de Microsoft Endpoint Manager portal34 ](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
+    > [![Imagen de Microsoft Endpoint Manager portal34](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
 
 3. Selecciona  **Estado del dispositivo** para ver el estado.
 
     > [!div class="mx-imgBorder"]
-    > [![Imagen de Microsoft Endpoint Manager portal35 ](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
+    > [![Imagen de Microsoft Endpoint Manager portal35](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
 4. Seleccione  **Estado de usuario** para ver el estado.
 
     > [!div class="mx-imgBorder"]
-    > [![Imagen de Microsoft Endpoint Manager portal36 ](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
+    > [![Imagen de Microsoft Endpoint Manager portal36](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
 
 5. Seleccione  **Estado por configuración para** ver el estado.
 
@@ -345,26 +345,26 @@ Para confirmar que la directiva de configuración se ha aplicado al dispositivo 
     > Esta vista es muy útil para identificar cualquier configuración que entre en conflicto con otra directiva.
 
     > [!div class="mx-imgBorder"]
-    > [![Imagen de Microsoft Endpoint Manager portal37 ](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![Imagen de Microsoft Endpoint Manager portal37](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
-### <a name="endpoint-detection-and-response"></a>EDR
+### <a name="confirm-endpoint-detection-and-response"></a>Confirme detección y respuesta de puntos de conexión
 
-1. Antes de aplicar la configuración, no se debe iniciar el servicio defender para Endpoint Protection.
+1. Antes de aplicar la configuración, el servicio defender para Endpoint Protection no debe iniciarse.
 
     > [!div class="mx-imgBorder"]
-    > [![Imagen del panel de servicios1 ](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
+    > [![Imagen del panel de servicios1](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
 2. Una vez aplicada la configuración, debe iniciarse el servicio defender para Endpoint Protection.
 
     > [!div class="mx-imgBorder"]
-    > [![Imagen del panel de servicios2 ](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
+    > [![Imagen del panel de servicios2](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
 3. Una vez que los servicios se ejecutan en el dispositivo, el dispositivo aparece en el Centro de seguridad de Microsoft Defender.
 
     > [!div class="mx-imgBorder"]
-    > [![Imagen de Centro de seguridad de Microsoft Defender ](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Imagen de Centro de seguridad de Microsoft Defender](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
-### <a name="next-generation-protection"></a>Protección de última generación
+### <a name="confirm-next-generation-protection"></a>Confirmar la protección de próxima generación
 
 1. Antes de aplicar la directiva en un dispositivo de prueba, debes poder administrar manualmente la configuración como se muestra a continuación.
 
@@ -379,7 +379,7 @@ Para confirmar que la directiva de configuración se ha aplicado al dispositivo 
     > [!div class="mx-imgBorder"]
     > ![Imagen de la página de configuración2](images/9341428b2d3164ca63d7d4eaa5cff642.png)
 
-### <a name="attack-surface-reduction--attack-surface-reduction-rules"></a>Reducción de superficie de ataque: reglas de reducción de superficie de ataque
+### <a name="confirm-attack-surface-reduction---attack-surface-reduction-rules"></a>Confirmar reducción de superficie de ataque: reglas de reducción de superficie de ataque
 
 1. Antes de aplicar la directiva en un dispositivo de prueba, escriba una ventana de PowerShell y escriba `Get-MpPreference` .
 
@@ -399,7 +399,7 @@ Para confirmar que la directiva de configuración se ha aplicado al dispositivo 
 
     ![Imagen de la línea de comandos2](images/619fb877791b1fc8bc7dfae1a579043d.png)
 
-### <a name="attack-surface-reduction--web-protection"></a>Reducción de superficie de ataque: protección web
+### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmar reducción de superficie de ataque: protección web
 
 1. En el dispositivo de prueba, abra una ventana de PowerShell Windows y escriba `(Get-MpPreference).EnableNetworkProtection` .
 

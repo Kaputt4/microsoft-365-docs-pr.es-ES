@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dd9def688619b6079d947cb76069aa0f77d768de
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 927ba5934a95d20943397a778c74efa081501b3c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772310"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623329"
 ---
 # <a name="get-device-secure-score"></a>Obtener puntuación segura para dispositivos
 
@@ -33,35 +33,34 @@ ms.locfileid: "52772310"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-Recupera la [puntuación segura de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md). Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad. 
+Recupera la [puntuación segura de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md). Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad.
 
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Score.Read.Alll |   'Leer puntuación de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | Score.Read | 'Leer puntuación de administración de amenazas y vulnerabilidades'
+Aplicación|Score.Read.All|'Leer puntuación de administración de amenazas y vulnerabilidades'
+Delegado (cuenta profesional o educativa)|Score.Read|'Leer puntuación de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-```
+```http
 GET /api/configurationScore
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -73,7 +72,7 @@ Si se realiza correctamente, este método devuelve 200 OK, con los datos de punt
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="request"></a>Solicitud
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -81,12 +80,12 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/api/configurationScore
 ```
 
-### <a name="response"></a>Respuesta
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
->[!NOTE]
->La lista de respuestas que se muestra aquí puede truncarse por brevedad. 
+> [!NOTE]
+> La lista de respuestas que se muestra aquí puede truncarse por brevedad.
 
 ```json
 {
@@ -96,6 +95,6 @@ Aquí tiene un ejemplo de la respuesta.
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)

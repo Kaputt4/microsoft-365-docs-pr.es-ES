@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 67009961ecc3755b5af21b2e773bc817ea46bec0
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: be7c7d7e6eab109f903e78cb76d12478332a6310
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769244"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623905"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Propiedades y métodos de la actividad de corrección
 
@@ -32,7 +32,7 @@ ms.locfileid: "52769244"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -44,48 +44,48 @@ La respuesta de la API contiene [& administración de vulnerabilidades](next-g
 
 ## <a name="methods"></a>Métodos
 
-Método | Tipo de datos | Descripción
+Método|Tipo de datos|Descripción
 :---|:---|:---
-[Enumerar todas las actividades de corrección](get-remediation-all-activities.md) | Colección Investigation | Devuelve información sobre todas las actividades de corrección.
-[Lista de dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md) | Entidad de investigación | Devuelve información sobre los dispositivos expuestos para la actividad de corrección especificada.
-[Obtener una actividad de corrección por id.](get-remediation-one-activity.md) | Entidad de investigación | Devuelve información sobre la actividad de corrección especificada.
+[Enumerar todas las actividades de corrección](get-remediation-all-activities.md)|Colección Investigation|Devuelve información sobre todas las actividades de corrección.
+[Lista de dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md)|Entidad de investigación|Devuelve información sobre los dispositivos expuestos para la actividad de corrección especificada.
+[Obtener una actividad de corrección por id.](get-remediation-one-activity.md)|Entidad de investigación|Devuelve información sobre la actividad de corrección especificada.
 
 Obtenga más información sobre [las actividades de corrección](tvm-remediation.md).
 
 ## <a name="properties"></a>Propiedades
 
-Id. de propiedad | Tipo de datos | Descripción
+Id. de propiedad|Tipo de datos|Descripción
 :---|:---|:---
-categoría | Cadena | Categoría de la actividad de corrección (configuración software/seguridad)
-completerEmail | Cadena | Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico
-completerId | Cadena | Si alguien completó la actividad de corrección manualmente, esta columna contiene su identificador de objeto
-completionMethod | Cadena | Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada".
-createdOn | DateTime | Hora en que se creó esta actividad de corrección
-description | Cadena | Descripción de esta actividad de corrección
-dueOn | DateTime | Fecha de vencimiento que el creador estableció para esta actividad de corrección
-fixedDevices |  | Número de dispositivos que se han corregido
-id | Cadena | Identificador de esta actividad de corrección
-nameId | Cadena | Nombre del producto relacionado
-priority | Cadena | Prioridad del conjunto de creadores para esta actividad de corrección (High\Medium\Low)
-productId | Cadena | Id. de producto relacionado
-productivityImpactRemediationType | Cadena | Solo se podrían solicitar algunos cambios de configuración para dispositivos sin impacto del usuario. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo dispositivos sin impacto del usuario".
-rbacGroupNames | Cadena | Nombres de grupo de dispositivos relacionados
-recommendedProgram | Cadena | Programa recomendado para actualizar a
-recommendedVendor | Cadena | Proveedor recomendado para actualizar a
-recommendedVersion | Cadena | Versión recomendada para actualizar o actualizar a
-relatedComponent | Cadena | Componente relacionado de esta actividad de corrección (similar al componente relacionado para una recomendación de seguridad)
-requesterEmail | Cadena | Dirección de correo electrónico del creador
-requesterId | Cadena | Id. de objeto Creator
-requesterNotes | Cadena | Las notas (texto libre) que el creador agregó para esta actividad de corrección
-scid | Cadena | SCID de la recomendación de seguridad relacionada
-status | Cadena | Estado de la actividad de corrección (Activo/Completado)
-statusLastModifiedOn | DateTime | Fecha en la que se actualizó el campo de estado
-targetDevices | Long | Número de dispositivos expuestos a los que se aplica esta corrección
-title | Cadena | Título de esta actividad de corrección
-type | Cadena | Tipo de corrección
-vendorId | Cadena | Nombre de proveedor relacionado
+categoría|Cadena|Categoría de la actividad de corrección (configuración software/seguridad)
+completerEmail|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico
+completerId|Cadena|Si alguien completó la actividad de corrección manualmente, esta columna contiene su identificador de objeto
+completionMethod|Cadena|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada".
+createdOn|DateTime|Hora en que se creó esta actividad de corrección
+description|Cadena|Descripción de esta actividad de corrección
+dueOn|DateTime|Fecha de vencimiento que el creador estableció para esta actividad de corrección
+fixedDevices||Número de dispositivos que se han corregido
+id|Cadena|Identificador de esta actividad de corrección
+nameId|Cadena|Nombre del producto relacionado
+priority|Cadena|Prioridad del conjunto de creadores para esta actividad de corrección (High\Medium\Low)
+productId|Cadena|Id. de producto relacionado
+productivityImpactRemediationType|Cadena|Solo se podrían solicitar algunos cambios de configuración para dispositivos sin impacto del usuario. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo dispositivos sin impacto del usuario".
+rbacGroupNames|Cadena|Nombres de grupo de dispositivos relacionados
+recommendedProgram|Cadena|Programa recomendado para actualizar a
+recommendedVendor|Cadena|Proveedor recomendado para actualizar a
+recommendedVersion|Cadena|Versión recomendada para actualizar o actualizar a
+relatedComponent|Cadena|Componente relacionado de esta actividad de corrección (similar al componente relacionado para una recomendación de seguridad)
+requesterEmail|Cadena|Dirección de correo electrónico del creador
+requesterId|Cadena|Id. de objeto Creator
+requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección
+scid|Cadena|SCID de la recomendación de seguridad relacionada
+status|Cadena|Estado de la actividad de corrección (Activo/Completado)
+statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado
+targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección
+title|Cadena|Título de esta actividad de corrección
+type|Cadena|Tipo de corrección
+vendorId|Cadena|Nombre de proveedor relacionado
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)
 

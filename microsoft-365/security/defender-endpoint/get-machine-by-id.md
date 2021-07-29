@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e4ed5a68b0f4c5e9472702d3cc2798a810e4f84e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 16bca38f45395d441eb7dce78979ecebf1bffa90
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769478"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623941"
 ---
 # <a name="get-machine-by-id-api"></a>Obtener api de máquina por id.
 
@@ -30,61 +30,61 @@ ms.locfileid: "52769478"
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>Descripción de la API
 Recupera un equipo [específico por](machine.md) su identificador de dispositivo o el nombre del equipo.
 
-
 ## <a name="limitations"></a>Limitaciones
+
 1. Puedes obtener dispositivos vistos por última vez de acuerdo con la directiva de retención configurada.
 2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
-
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Machine.Read.All |  'Leer todos los perfiles de máquina'
-Aplicación |   Machine.ReadWrite.All | 'Leer y escribir toda la información de la máquina'
+Aplicación|Machine.Read.All|'Leer todos los perfiles de máquina'
+Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
 Delegado (cuenta profesional o educativa) | Machine.Read | 'Leer información de máquina'
 Delegado (cuenta profesional o educativa) | Machine.ReadWrite | 'Leer y escribir información de máquina'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
->- El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
-
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
+
 ```http
 GET /api/machines/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente y el dispositivo existe: 200 Aceptar con la [entidad de la](machine.md) máquina en el cuerpo.
 Si no se encontró el equipo con el identificador especificado: 404 No se encontró.
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -92,10 +92,9 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
-
 
 ```http
 HTTP/1.1 200 OK
@@ -121,5 +120,4 @@ Content-type: application/json
     "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
     "machineTags": [ "test tag 1", "test tag 2" ]
 }
-
 ```

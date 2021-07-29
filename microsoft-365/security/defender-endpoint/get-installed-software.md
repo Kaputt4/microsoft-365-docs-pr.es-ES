@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e13e2072ad1c18f3c6bf1abbbe95c95bb519dc3e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9b17e88ebf979ce2cc8547521003b2babcecd0c2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841119"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623257"
 ---
 # <a name="get-installed-software"></a>Obtener software instalado
 
@@ -31,7 +31,7 @@ ms.locfileid: "52841119"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,35 +42,37 @@ ms.locfileid: "52841119"
 Recupera una colección de software instalado relacionado con un identificador de dispositivo determinado.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |Software.Read.All |    'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | Software.Read |    'Leer información de software de administración de amenazas y vulnerabilidades'
+Aplicación |Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
+Delegado (cuenta profesional o educativa)|Software.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /api/machines/{machineId}/software
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente, este método devuelve 200 Ok con la información de software instalada en el cuerpo.
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -78,12 +80,11 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/software
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
-
-```
+```json
 {
 "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Software",
 "value": [

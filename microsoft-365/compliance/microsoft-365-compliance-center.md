@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Obtenga información sobre el Centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a86a0b626ef1bf342f8ca61955c77eea78ebaac8
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 99796976efe65ae33e3c7799b44668111e1719ba
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288364"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624013"
 ---
 # <a name="microsoft-365-compliance-center"></a>Centro de cumplimiento de Microsoft 365
 
@@ -74,25 +74,15 @@ Además de los vínculos en las tarjetas de la página principal, verá un panel
 - Si aún no tiene el nuevo Centro de cumplimiento de Microsoft 365, lo tendrá pronto. El Centro de cumplimiento de Microsoft 365 suele estar disponible ahora para los Microsoft 365 SKU.
 - Para visitar el Centro de cumplimiento de Microsoft 365, como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento, vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
-
-**¿Por qué voy al Centro de seguridad & cumplimiento para completar algunas tareas, como definir determinadas directivas?**
-
-Todavía estamos desarrollando el Centro de cumplimiento de Microsoft 365 y agregaremos más funcionalidad y soluciones en los próximos meses. Mientras tanto, hay algunas tareas que deben completarse en el Centro de seguridad y cumplimiento ([https://protection.office.com](https://protection.office.com)). En esos casos, se le dirigirá automáticamente a la ubicación donde puede completar la tarea a mano, como crear o editar una directiva de supervisión.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Por qué no veo la nueva Centro de cumplimiento de Microsoft 365 todavía?**
 
 En primer lugar, asegúrese de que tiene las licencias y permisos adecuados. A continuación, inicie sesión en [https://compliance.microsoft.com](https://compliance.microsoft.com) . Si aún no ve el nuevo centro de cumplimiento, lo tendrá pronto.
 
-**Algunas de mis características de cumplimiento no están disponibles en el Centro de cumplimiento de Microsoft 365. ¿Qué hago?**
-
-Todavía estamos agregando funcionalidad al Centro de cumplimiento de Microsoft 365. Si no encuentra algo, como la búsqueda del registro de auditoría, use el Centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ). Las configuraciones se guardan tanto en el Centro de seguridad & cumplimiento como en el nuevo Centro de cumplimiento de Microsoft 365 automáticamente.
-
-Para ir allí, en el Centro de cumplimiento de Microsoft 365, en el panel de navegación de la parte izquierda de la pantalla, elija Más recursos y, a continuación, en Office 365 Centro de seguridad **& cumplimiento,** elija **Abrir**.
-
 ![Más recursos](../media/m365-compliance-center-more-resources.png)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - **Visite El Administrador de cumplimiento de Microsoft** para ver la puntuación de cumplimiento y empezar a administrar el cumplimiento de su organización. Para obtener más información, vea [Compliance Manager](compliance-manager.md).
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ef594d4ccb25f688be21b4e8fe6aac2f024eb1d
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 2062d85d27208f871a96b64a90a457469f83559a
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419756"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623197"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
@@ -33,10 +33,14 @@ ms.locfileid: "53419756"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!IMPORTANT]
 > En macOS 11 (Big Sur), Microsoft Defender para Endpoint requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales enumerados en [esta página](mac-sysext-policies.md).
+
+## <a name="1013428-20121061134280"></a>101.34.28 (20.121061.13428.0)
+
+- Correcciones de errores
 
 ## <a name="1013427-20121052134270"></a>101.34.27 (20.121052.13427.0)
 
@@ -153,7 +157,7 @@ ms.locfileid: "53419756"
 
 > [!IMPORTANT]
 > Estamos trabajando en una sintaxis nueva y mejorada para la herramienta `mdatp` de línea de comandos. La nueva sintaxis es actualmente la predeterminada en los canales de actualización rápida e interna lenta de Insider. Le recomendamos que se famliliarize con esta nueva sintaxis.
-> 
+>
 > Seguiremos dando soporte a la sintaxis antigua en paralelo con la nueva sintaxis y proporcionaremos más comunicación en torno al plan de desuso de la sintaxis antigua en los próximos meses.
 
 - Se ha solucionado un problema de kernel que se produjo a veces al acceder a recursos compartidos de archivos SMB
@@ -200,7 +204,7 @@ ms.locfileid: "53419756"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> Para garantizar la protección más completa para los dispositivos macOS y en línea con que Apple detenga la entrega de actualizaciones de seguridad nativas de macOS en versiones del sistema operativo anteriores a [actual – 2], la implementación y las actualizaciones de MDATP para Mac ya no se admiten en macOS Sierra [10.12]. Las actualizaciones y mejoras de MDATP para Mac se entregarán a dispositivos que ejecutan versiones de Catalina [10.15], Mojave [10.14] y High Sierra [10.13]. 
+> Para garantizar la protección más completa para los dispositivos macOS y en alineación con apple que detenga la entrega de actualizaciones de seguridad nativas de macOS en versiones del sistema operativo anteriores a [actual - 2], la implementación y las actualizaciones de MDATP para Mac ya no se admiten en macOS Sierra [10.12]. Las actualizaciones y mejoras de MDATP para Mac se entregarán a dispositivos que ejecutan versiones de Catalina [10.15], Mojave [10.14] y High Sierra [10.13].
 >
 > Si ya tienes MDATP para Mac implementado en tus dispositivos Sierra [10.12], actualiza a la versión más reciente de macOS para eliminar los riesgos de pérdida de protección.
 
@@ -224,9 +228,11 @@ ms.locfileid: "53419756"
 
 - Se ha corregido un problema por el que Microsoft Defender para Endpoint en Mac a veces interfiría con time machine
 - Se agregó un nuevo modificador a la utilidad de línea de comandos para probar la conectividad con el servicio back-end
+
   ```bash
   mdatp connectivity test
   ```
+
 - Se agregó la capacidad de ver el historial completo de amenazas en la interfaz de usuario (se puede obtener acceso desde la **vista Historial de** protección)
 - Mejoras de rendimiento & correcciones de errores
 

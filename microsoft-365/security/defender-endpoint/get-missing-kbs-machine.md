@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63400295061cd7adc58a4ddebf73f4c82b0cc969
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: dfc2dc56e01ad08aea33ba11e4af5f8c94421ef8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845239"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624313"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Obtener KBs ausentes por id. de dispositivo
 
@@ -29,7 +29,7 @@ ms.locfileid: "52845239"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,13 +39,13 @@ Recupera KBs ausentes (actualizaciones de seguridad) por identificador de dispos
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-```
+```http
 GET /api/machines/{machineId}/getmissingkbs
 ```
 
 ## <a name="request-header"></a>Encabezado de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
@@ -63,7 +63,7 @@ Si se realiza correctamente, este método devuelve 200 Ok, con el dispositivo es
 
 Aquí tiene un ejemplo de la solicitud.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93dfa2550136057bff96/getmissingkbs 
 ```
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83a011e649a7289f62acd6a8d985f020b27b1e10
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7a08ecd8b0086596e27a7accbadedf649a353ec2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290020"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621972"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -30,7 +30,7 @@ ms.locfileid: "53290020"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -59,13 +59,13 @@ Método|Tipo de valor devuelto |Descripción
 |globalLastObserved | DateTimeOffset | Última vez que se observó el archivo |
 |size | Long que admite valores NULL | Tamaño del archivo |
 |fileType | Cadena | Tipo del archivo |
-|isPeFile | Boolean | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
+|isPeFile | Booleano | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
 |filePublisher | Cadena | Editor de archivos |
 |fileProductName | Cadena | Nombre del producto |
 |firmante | Cadena | Firmante de archivos |
 |emisor | Cadena | Emisor de archivos |
 |signerHash | Cadena | Hash del certificado de firma |
-|isValidCertificate | Boolean | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
+|isValidCertificate | Booleano | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
 |determinationType | Cadena | El tipo de determinación del archivo |
 |determinationValue | Cadena | Valor de determinación |
 

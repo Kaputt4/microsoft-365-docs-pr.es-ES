@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 577eea6e678b6a5d60e5bb8f2fbaaae25d239577
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c73a1a4ca5a85e4c6867cbe2cb79a33cfe0bfac9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230072"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623797"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -60,7 +60,6 @@ Deberá seguir los pasos siguientes:
 
 11. [Implementar Microsoft Defender para endpoint en macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
-
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>Paso 1: Obtener el paquete de incorporación de Microsoft Defender para endpoint
 
 1. En [Centro de seguridad de Microsoft Defender](https://securitycenter.microsoft.com), vaya **a Configuración > Onboarding**.
@@ -81,7 +80,6 @@ Deberá seguir los pasos siguientes:
 1. Busque el archivo `WindowsDefenderATPOnboarding.plist` de la sección anterior.
 
    ![Imagen del archivo WindowsDefenderATPOnboarding](images/plist-onboarding-file.png)
-
 
 2. En el panel de Pro Jamf, seleccione **Nuevo**.
 
@@ -204,8 +202,8 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
     - enableRealTimeProtection
     - passiveMode
 
-    >[!NOTE]
-    >No activado de forma predeterminada, si está planeando ejecutar un ANTIVIRUS de terceros para macOS, estafórlo en `true` .
+    > [!NOTE]
+    > No activado de forma predeterminada, si está planeando ejecutar un ANTIVIRUS de terceros para macOS, estafórlo en `true` .
 
     - exclusiones
     - excludedPath
@@ -214,15 +212,15 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
     - exclusionsMergePolicy
     - allowedThreats
 
-    >[!NOTE]
-    >EICAR está en la muestra, si está pasando por una prueba de concepto, quítela especialmente si está probando EICAR.
+    > [!NOTE]
+    > EICAR está en la muestra, si está pasando por una prueba de concepto, quítela especialmente si está probando EICAR.
 
     - disallowedThreatActions
     - potentially_unwanted_application
     - archive_bomb
     - cloudService
     - automaticSampleSubmission
-    - etiquetas
+    - tags
     - hideStatusMenuIcon
 
      Para obtener información, vea [Lista de propiedades para el perfil de configuración de Jamf](mac-preferences.md#property-list-for-jamf-configuration-profile).
@@ -375,7 +373,6 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
     >[!NOTE]
     >Si se carga el archivo de Intune, se producirá el siguiente error:<br>
     >![Imagen de la carga de archivos de Intune de configuración](images/8e69f867664668796a3b2904896f0436.png)
-
 
 11. Seleccione **Guardar**.
 
@@ -654,7 +651,6 @@ Como alternativa, puede descargar [fulldisk.mobileconfig](https://github.com/mic
 
     ![Imagen de configuración de configuración aprobada ext del kernel](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
 
-
 4. En **Extensiones de kernel aprobadas,** escriba los siguientes detalles:
 
     - Nombre para mostrar: Microsoft Corp.
@@ -789,10 +785,9 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
 Como alternativa, puede descargar [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) y cargarlo en los perfiles de configuración de JAMF, como se describe en [Deploying Custom Configuration Profiles using Jamf Pro| Método 2: Upload un perfil de configuración a Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Paso 10: Programar exámenes con Microsoft Defender para endpoint en macOS
-Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpoint en macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
+Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpoint en macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Paso 11: Implementar Microsoft Defender para endpoint en macOS
 
@@ -865,7 +860,6 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpo
 
     ![Imagen de la comprobación de la recursividad de las opciones de configuración](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-
 13. Seleccione **Guardar**.
 
 14. Seleccione **Paquetes > Configurar**.
@@ -905,7 +899,3 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpo
     ![Imagen de las opciones de configuración do1img](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![Imagen de las opciones de configuración do2img](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
-
-
-
-

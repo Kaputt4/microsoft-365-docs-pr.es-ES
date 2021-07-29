@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9dab4bdccc1fead5bc2cc5b9bdff8f2a45b6c8db
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6784d1cf6716a1f7d76c7660ff5bbf24e2aa5594
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200370"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623221"
 ---
 # <a name="get-machines-security-states-collection-api"></a>OBTENER API de recopilación de estados de seguridad de Máquinas
 
@@ -29,7 +29,7 @@ ms.locfileid: "51200370"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,43 +38,48 @@ ms.locfileid: "51200370"
 Recupera una colección de estados de seguridad de dispositivos.
 
 ## <a name="permissions"></a>Permisos
+
 El usuario necesita permisos de lectura.
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /testwdatppreview/machinesecuritystates
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Encabezado | Valor 
+Encabezado|Valor
 :---|:---
-Authorization | Portador {token}. **Necesario**.
-Tipo de contenido | application/json
+Authorization|Portador {token}. **Necesario**.
+Tipo de contenido|application/json
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente: 200 Aceptar.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
 Content-type: application/json
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
-El *identificador de* campo contiene el identificador de dispositivo e igual que el identificador de *campo** en la información de dispositivos. 
 
-```
+El *identificador de* campo contiene el identificador de dispositivo e igual que el identificador de *campo** en la información de dispositivos.
+
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
@@ -93,7 +98,7 @@ Content-type: application/json
                 "EdrImpairedCommunications"
             ]
         },
-        …
+        ...
     ]
 }
 ```

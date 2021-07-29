@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cd3b1343711a5bed9ad606a6b8dc754f223ed279
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: fffe4332b0c84feae54fbed4f21542cfb95eb1a5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430785"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623317"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Obtener las vulnerabilidades detectadas
 
@@ -31,7 +31,7 @@ ms.locfileid: "53430785"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -54,17 +54,17 @@ Delegado (cuenta profesional o educativa) | Vulnerability.Read | 'Leer informaci
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-```
+```http
 GET /api/machines/{machineId}/vulnerabilities
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Request body
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En blanco
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3150caceae82be761d71d60373ccc128b59bcd8
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 92cf47ddafac9610ea4b15ee24e2969a938a7dde
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542728"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623701"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Activar la experiencia de vista previa en Microsoft Defender para endpoint
 
@@ -32,7 +32,7 @@ ms.locfileid: "53542728"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 

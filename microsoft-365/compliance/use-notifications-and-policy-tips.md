@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: 53a4db6cfc37f35422a1efffaeac052370cd5988
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f8b1c4228dcccf82a8dadb8b942d2587f92ba382
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228656"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623053"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -55,7 +55,7 @@ En el Centro de cumplimiento, al crear una directiva DLP, puede configurar las n
 
 Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. Cuando las notificaciones de usuario están habilitadas, Microsoft 365 envía notificaciones de correo electrónico y sugerencias de directiva. Puede personalizar a quién se envían los correos electrónicos de notificación, el texto del correo electrónico y el texto de sugerencia de directiva.
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://( https://compliance.microsoft.com/permissions ](https://( https://compliance.microsoft.com/permissions) .
 
 2. Inicie sesión con su cuenta profesional o educativa. Ahora está en el Centro de seguridad &amp; y cumplimiento.
 

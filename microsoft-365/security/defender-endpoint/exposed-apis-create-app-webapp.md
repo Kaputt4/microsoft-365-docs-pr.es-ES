@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2d78b7ea31c45220735a8579d728f9c0f7bda181
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 62ff27162cadb154df61ef49f692152d40777246
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842115"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623341"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Crear una aplicación para tener acceso a Microsoft Defender para endpoint sin un usuario
 
@@ -31,7 +31,7 @@ ms.locfileid: "52842115"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -181,7 +181,7 @@ Consulta [Obtener token con Python](run-advanced-query-sample-python.md#get-toke
 1. Abra un símbolo del sistema y establezca CLIENT_ID en el identificador de la aplicación de Azure.
 1. Establece CLIENT_SECRET en el secreto de la aplicación de Azure.
 1. Establece TENANT_ID en el identificador de inquilino de Azure del cliente que desea usar la aplicación para tener acceso a Defender for Endpoint.
-1. Ejecute el siguiente comando:
+1. Ejecute el comando siguiente:
 
 ```
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
@@ -222,6 +222,6 @@ A continuación se muestra un ejemplo de envío de una solicitud para obtener un
     // Do something useful with the response
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [API compatibles de Microsoft Defender para punto de conexión](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint en nombre de un usuario](exposed-apis-create-app-nativeapp.md)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 01e14be20cee2b8644ebe5d1d1212f921a2fb9b5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 1e7e1734b1f016e8b8850f3684bf2c934608d494
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841527"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621936"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Enumerar vulnerabilidades por máquina y software
 
@@ -31,51 +31,53 @@ ms.locfileid: "52841527"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Recupera una lista de todas las vulnerabilidades que afectan a la organización por [máquina](machine.md) y [software](software.md).
+
 - Si la vulnerabilidad tiene un KB de corrección, aparecerá en la respuesta.
 - Admite [consultas de OData V4](https://www.odata.org/documentation/).
 - OData ```$filter``` se admite en todas las propiedades.
 
->[!Tip]
->Esta es una excelente API para [Power BI integración.](api-power-bi.md)
+> [!TIP]
+> Esta es una excelente API para [Power BI integración.](api-power-bi.md)
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Vulnerability.Read.All |    'Leer información de vulnerabilidad de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | Vulnerability.Read |   'Leer información de vulnerabilidad de administración de amenazas y vulnerabilidades'
+Aplicación|Vulnerability.Read.All|'Leer información de vulnerabilidad de administración de amenazas y vulnerabilidades'
+Delegado (cuenta profesional o educativa)|Vulnerability.Read|'Leer información de vulnerabilidad de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /api/vulnerabilities/machinesVulnerabilities
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente, este método devuelve 200 Ok con la lista de vulnerabilidades en el cuerpo.
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -83,10 +85,9 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnerabilities
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
-
 
 ```json
 {

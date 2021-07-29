@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 471db75102eabd4d7fce14ec42d0a47562007aae
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fc16297b8c5c61f1dc70a6eb2567cafe4dd2e67f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229988"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624373"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API
 
@@ -33,7 +33,7 @@ ms.locfileid: "53229988"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mgt-apis-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mgt-apis-abovefoldlink)
 
 
 Defender for Endpoint admite una amplia variedad de opciones para garantizar que los clientes puedan adoptar fácilmente la plataforma.
@@ -68,7 +68,7 @@ Las API de Defender for Endpoint se pueden agrupar en tres:
 Defender for Endpoint ofrece un modelo de API en capas que expone datos y capacidades en un modelo estructurado, claro y fácil de usar, expuesto a través de un modelo estándar de autenticación y autorización basado en Azure AD que permite el acceso en contexto de usuarios o aplicaciones SaaS. El modelo de API se diseñó para exponer entidades y funcionalidades de forma coherente.
 
 Vea este vídeo para obtener una introducción rápida a las API de Defender para Endpoint.
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
 La **API** de investigación expone la riqueza de Defender para endpoint: expone entidades calculadas o "perfiladas" (por ejemplo, dispositivo, usuario y archivo) y eventos discretos (por ejemplo, creación de procesos y creación de archivos) que normalmente describen un comportamiento relacionado con una entidad, lo que habilita el acceso a los datos a través de interfaces de investigación que permiten un acceso basado en consultas a los datos. Para obtener más información, vea [Supported API](exposed-apis-list.md).
 

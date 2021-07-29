@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb82634c8c2ef11131a43e8e479bf88d5626ed03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f707e8290c7b976ace0495e03a3b909a8f544294
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074120"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623377"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>Comprender conceptos de inteligencia sobre amenazas
 
@@ -33,7 +33,7 @@ ms.locfileid: "51074120"
 
 
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink)
 
 Los ataques de ciberseguridad avanzados constan de varios eventos malintencionados complejos, atributos e información contextual. Identificar y decidir cuáles de estas actividades califican como sospechosas puede ser una tarea difícil. El conocimiento de atributos conocidos y actividades anormales específicas de su sector es fundamental para saber cuándo llamar sospechoso un comportamiento observado.
 

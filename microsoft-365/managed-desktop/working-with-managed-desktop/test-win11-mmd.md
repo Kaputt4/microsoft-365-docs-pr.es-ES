@@ -9,28 +9,16 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4ac12c4ec340bd6bb73418dae75774198190094b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: de608fa58d0267050b510ef8308d716b608f8e37
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544690"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624445"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Vista previa y prueba de Windows 11 con Escritorio administrado de Microsoft
 
  Cómo inscribirse y participar en el programa de pruebas de Windows 11 en su entorno Escritorio administrado de Microsoft compatibilidad. Para obtener más información Windows 11 y Escritorio administrado de Microsoft, vea Windows [11 y Escritorio administrado de Microsoft](../intro/win11-overview.md). 
-
-## <a name="check-device-eligibility"></a>Comprobar la elegibilidad del dispositivo
-
-Hasta la fecha, más del 95 % de los dispositivos Escritorio administrado de Microsoft cumplen los criterios de [elegibilidad para Windows 11](/windows/whats-new/windows-11-requirements). Puedes solicitar detalles sobre el estado de elegibilidad de tus dispositivos desde Escritorio administrado de Microsoft. Para presentar la solicitud, siga estos pasos:
-
-1. Abra una nueva solicitud de servicio con el Escritorio administrado de Microsoft de ingeniería de servicio. Si necesitas más información sobre cómo presentar la solicitud, consulta [Admin support](admin-support.md).
-2. Use estos valores para los campos:
-    - Título: Windows elegibilidad de 11 dispositivos
-    - Tipo de solicitud: Solicitud de información
-    - Categoría: dispositivos
-    - Subcategoría: Otros
-
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>Agregar dispositivos al grupo Windows 11 pruebas
 

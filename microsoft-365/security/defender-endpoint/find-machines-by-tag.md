@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b31ae48c4defaa0061bef4b13522dd62b8058150
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 77d5cb27a4cb52136bb35aa6ffa40561cb0124d6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543466"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621960"
 ---
 # <a name="find-devices-by-tag-api"></a>Buscar dispositivos por API de etiqueta
 
@@ -30,7 +30,7 @@ ms.locfileid: "53543466"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,8 +52,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Application|Machine.Read.All|'Leer todos los perfiles de máquina'
-Application|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
+Aplicación|Machine.Read.All|'Leer todos los perfiles de máquina'
+Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
 Delegado (cuenta profesional o educativa)|Machine.Read|'Leer información de máquina'
 Delegado (cuenta profesional o educativa)|Machine.ReadWrite|'Leer y escribir información de máquina'
 
@@ -74,20 +74,21 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-tag|String|El nombre de la etiqueta. **Necesario**.
-useStartsWithFilter|Boolean|Cuando se establece en true, la búsqueda buscará todos los dispositivos con el nombre de etiqueta que comiencen por la etiqueta dada en la consulta. Valores predeterminados de falso. **Opcional**.
+tag|Cadena|El nombre de la etiqueta. **Necesario**.
+useStartsWithFilter|Booleano|Cuando se establece en true, la búsqueda buscará todos los dispositivos con el nombre de etiqueta que comiencen por la etiqueta dada en la consulta. Valores predeterminados de falso. **Opcional**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente: 200 Aceptar con una lista de las máquinas en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

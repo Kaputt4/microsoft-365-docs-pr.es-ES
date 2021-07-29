@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4be0960e8ba868df2acb313b171a08f667c287a7
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 3eb4ebbf9da14e90e812eb28f58ba262a218b207
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651337"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622885"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacidad de Microsoft Defender para endpoint en Linux
 
@@ -31,7 +31,7 @@ ms.locfileid: "52651337"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft se compromete a proporcionarle la información y los controles que necesita para tomar decisiones sobre cómo se recopilan y usan los datos cuando usa Defender para Endpoint en Linux.
 
@@ -88,7 +88,7 @@ Hay cierta información acerca de los eventos que es común a todos, independien
 
 Los siguientes campos se consideran comunes para todos los eventos:
 
-| Field                   | Descripción |
+| Campo                   | Descripción |
 | ----------------------- | ----------- |
 | plataforma                | La clasificación general de la plataforma en la que se ejecuta la aplicación. Permite a Microsoft identificar en qué plataformas se puede producir un problema para que se pueda priorizar correctamente. |
 | machine_guid            | Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados. |
@@ -111,9 +111,9 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 **Instalación y desinstalación de Microsoft Defender para endpoint**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | correlation_id   | Identificador único asociado a la instalación. |
 | version          | Versión del paquete. |
@@ -123,9 +123,9 @@ Se recopilan los siguientes campos:
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
-| Field                                               | Descripción |
+| Campo                                               | Descripción |
 | --------------------------------------------------- | ----------- |
 | antivirus_engine.enable_real_time_protection        | Si la protección en tiempo real está habilitada en el dispositivo o no. |
 | antivirus_engine.passive_mode                       | Si el modo pasivo está habilitado en el dispositivo o no. |
@@ -145,9 +145,9 @@ Se recopilan los siguientes campos:
 
 **Informe de actualización de inteligencia de seguridad**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | from_version     | Versión original de inteligencia de seguridad. |
 | to_version       | Nueva versión de inteligencia de seguridad. |
@@ -160,9 +160,9 @@ Se recopilan los siguientes campos:
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | version          | Versión de Defender para Endpoint en Linux. |
 | instance_id      | Identificador único generado en el inicio de extensión de kernel. |
@@ -194,9 +194,9 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
-| Field                                              | Descripción |
+| Campo                                              | Descripción |
 | -------------------------------------------------- | ----------- |
 | connection_retry_timeout                           | Tiempo de espera de reintento de conexión cuando se comunica con la nube. |
 | file_hash_cache_maximum                            | Tamaño de la memoria caché del producto. |
@@ -216,9 +216,9 @@ Se recopilan los siguientes campos:
 
 **Configuración de Actualización automática de Microsoft**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
-| Field                       | Descripción |
+| Campo                       | Descripción |
 | --------------------------- | ----------- |
 | how_to_check                | Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales). |
 | channel_name                | Actualizar canal asociado al dispositivo. |
@@ -229,9 +229,9 @@ Se recopilan los siguientes campos:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Informe de carga iniciada del registro de diagnóstico
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | sha256           | Identificador SHA256 del registro de soporte técnico. |
 | size             | Tamaño del registro de soporte técnico. |
@@ -240,9 +240,9 @@ Se recopilan los siguientes campos:
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Informe completado de carga de registro de diagnóstico
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | request_id       | Identificador de correlación para la solicitud de carga del registro de soporte técnico. |
 | sha256           | Identificador SHA256 del registro de soporte técnico. |
@@ -256,9 +256,9 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
-| Field                          | Descripción |
+| Campo                          | Descripción |
 | ------------------------------ | ----------- |
 | pkt_ack_timeout                | Las siguientes propiedades son valores numéricos agregados, que representan el recuento de eventos que se han producido desde el inicio de la extensión del kernel. |
 | pkt_ack_conn_timeout             | |

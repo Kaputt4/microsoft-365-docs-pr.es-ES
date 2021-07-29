@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ead0558bfff90c29ec8717fbb39876afda5c42af
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 430c43636e4db1eb6973b8d8059f53c044b9cb6e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229460"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622909"
 ---
 # <a name="get-user-related-machines-api"></a>Obtener api de máquinas relacionadas con el usuario
 
@@ -31,7 +31,7 @@ ms.locfileid: "53229460"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -49,7 +49,7 @@ Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 l
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |Permiso|Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
 Aplicación |Machine.Read.All|'Leer todos los perfiles de máquina'
 Aplicación |Machine.ReadWrite.All |'Leer y escribir toda la información de la máquina'
@@ -72,7 +72,7 @@ GET /api/users/{id}/machines
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 

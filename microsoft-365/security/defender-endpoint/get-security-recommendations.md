@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4498761fd21331821cf4676bfe65630be5436ce5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 955d082d9139479a9bcda2fbad629128d909f03c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845141"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624301"
 ---
 # <a name="get-security-recommendations"></a>Obtener recomendaciones de seguridad
 
@@ -29,7 +29,7 @@ ms.locfileid: "52845141"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,48 +40,49 @@ ms.locfileid: "52845141"
 Recupera una colección de recomendaciones de seguridad relacionadas con un identificador de dispositivo determinado.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación | SecurityRecommendation.Read.All | 'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | SecurityRecommendation.Read |  'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
+Aplicación|SecurityRecommendation.Read.All|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
+Delegado (cuenta profesional o educativa)|SecurityRecommendation.Read|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /api/machines/{machineId}/recommendations
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente, este método devuelve 200 Aceptar con las recomendaciones de seguridad del cuerpo.
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/recommendations
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
-
-```
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [
@@ -107,10 +108,11 @@ Aquí tiene un ejemplo de la respuesta.
             "nonProductivityImpactedAssets": 0,
             "relatedComponent": "Git"
         },
-…
+...
 }
 ```
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Recomendación & seguridad de vulnerabilidades](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

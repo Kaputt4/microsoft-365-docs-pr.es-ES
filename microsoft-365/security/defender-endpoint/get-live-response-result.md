@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d58fc87d16bb58199c95933d85752008a08a0e81
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: d5152940bee3637352d61fea6f251144644ca3ae
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879786"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621912"
 ---
 #  <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
 
@@ -37,7 +37,7 @@ ms.locfileid: "52879786"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ Recupera un resultado de comando de respuesta en directo específico por su índ
 
 ## <a name="limitations"></a>Limitaciones
 
-1.  Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Get started](apis-intro.md).
 
-| Tipo de permiso                    | Permiso           | Nombre para mostrar de permisos                   |
-|------------------------------------|----------------------|-------------------------------------------|
-| Aplicación                        | Machine.LiveResponse | Ejecutar respuesta en directo en un equipo específico |
-| Delegado (cuenta profesional o educativa) | Machine.LiveResponse | Ejecutar respuesta en directo en un equipo específico |
+|Tipo de permiso|Permiso|Nombre para mostrar de permisos|
+|---|---|---|
+|Aplicación|Machine.LiveResponse|Ejecutar respuesta en directo en un equipo específico|
+|Delegado (cuenta profesional o educativa)|Machine.LiveResponse|Ejecutar respuesta en directo en un equipo específico|
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -69,9 +69,9 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre      | Tipo | Descripción               |
-|---------------|----------|-------------------------------|
-| Authorization | Cadena   | {token} de portador. Obligatorio. |
+|Nombre|Tipo|Descripción|
+|---|---|---|
+|Authorization|Cadena|{token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -83,25 +83,24 @@ Si se realiza correctamente, este método devuelve 200, Ok código de respuesta 
 
 *Propiedades de transcripción de Runscript:*
 
-| Propiedad  | Description                       |
-|---------------|---------------------------------------|
-| name          | Nombre de script ejecutado                  |
-| exit_code     | Código de salida de script ejecutado             |
-| script_output | Salida estándar de script ejecutada       |
-| script_error  | Salida de error estándar de script ejecutada |
+|Propiedad|Descripción|
+|---|---|
+|name|Nombre de script ejecutado|
+|exit_code|Código de salida de script ejecutado|
+|script_output|Salida estándar de script ejecutada|
+|script_error|Salida de error estándar de script ejecutada|
 
 ## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
 ```HTTP
-GET
-https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
+GET https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
@@ -116,7 +115,7 @@ Tipo de contenido: application/json
 }
 ```
 
-*Contenido del archivo:* 
+*Contenido del archivo:*
 
 ```JSON
 {
@@ -131,5 +130,5 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Obtener API de acción de máquina](get-machineaction-object.md)
-- [Cancelar la acción del equipo](cancel-machine-action.md)
-- [Ejecutar respuesta en directo](run-live-response.md) 
+- [Cancelar acción de máquina](cancel-machine-action.md)
+- [Ejecutar respuesta directa](run-live-response.md) 

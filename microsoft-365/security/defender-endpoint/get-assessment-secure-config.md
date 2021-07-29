@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7d39dddf4928b3bcb28fb008bcccd83c67f60177
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 77eb3d9a1d9efe8774edaf59fdd254986a8f510c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053184"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623965"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exportar evaluación de configuración segura por dispositivo
 
@@ -32,9 +32,8 @@ ms.locfileid: "53053184"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
->
 Devuelve todas las configuraciones y su estado, por dispositivo.
 
 Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
@@ -49,8 +48,7 @@ Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la 
 
 Los datos recopilados (mediante respuesta _JSON_ o a través de _archivos)_ son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
 
-> [!Note]
->
+> [!NOTE]
 > A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
 
 ## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Exportar evaluación de configuración segura (respuesta JSON)
@@ -69,10 +67,10 @@ Esta respuesta de la API contiene la evaluación de configuración segura en los
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 ---|---|---
-Aplicación | Vulnerability.Read.All | \'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
-Delegado (cuenta profesional o educativa) | Vulnerability.Read | \'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
+Aplicación|Vulnerability.Read.All|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
+Delegado (cuenta profesional o educativa)|Vulnerability.Read|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
 
 ### <a name="13-url"></a>DIRECCIÓN URL 1.3
 
@@ -82,42 +80,44 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 ### <a name="14-parameters"></a>1.4 Parámetros
 
-- pageSize \( predeterminado = 50.000: \) número de resultados en la respuesta
-
-- \$top: el número de resultados que se devolverán no \( devuelve odata.nextLink y, por lo tanto, \@ no extrae todos los datos\)
+- pageSize \( predeterminado = 50 000 \) : Número de resultados en respuesta.
+- \$top: el número de resultados que se devuelven no \( devuelve \@ odata.nextLink y, por lo tanto, no extrae todos los datos \) .
 
 ### <a name="15-properties"></a>1.5 Propiedades
 
->[!Note]
+> [!NOTE]
 >
->- Las propiedades definidas en la tabla siguiente se enumeran alfabéticamente, por identificador de propiedad.  Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en esta tabla.
->
->- Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
->
+> - Las propiedades definidas en la tabla siguiente se enumeran alfabéticamente, por identificador de propiedad.  Al ejecutar esta API, el resultado resultante no se devolverá necesariamente en el mismo orden enumerado en esta tabla.
+> - Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
 
-Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
-:---|:---|:---|:---
-ConfigurationCategory | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad | Controles de seguridad
-ConfigurationId | string | Identificador único para una configuración específica | scid-10000
-ConfigurationImpact | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) | 9 
-ConfigurationName | string | Nombre para mostrar de la configuración | Incorporar dispositivos a Microsoft Defender para punto de conexión
-ConfigurationSubcategory | string | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. | Dispositivos integrados
-DeviceId | string | Identificador único del dispositivo en el servicio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | Nombre de dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com
-IsApplicable | bool | Indica si la configuración o directiva es aplicable | true
-IsCompliant | bool | Indica si la configuración o la directiva está configurada correctamente | false
-IsExpectedUserImpact | bool | Indica si habrá impacto del usuario si se aplicará la configuración | true
-OSPlatform | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información. | Windows10
-RbacGroupName | string | Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None". | Servidores
-RecommendationReference | string | Una referencia al identificador de recomendación relacionado con este software. | sca-_-scid-20000
-Timestamp | string | La última vez que se vio la configuración en el dispositivo | 2020-11-03 10:13:34.8476880
+<br>
+
+****
+
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
+---|---|---|---
+ConfigurationCategory|cadena|Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|Controles de seguridad
+ConfigurationId|cadena|Identificador único para una configuración específica|scid-10000
+ConfigurationImpact|cadena|Impacto valorado de la configuración en el resultado general de la configuración (1-10)|9 
+ConfigurationName|string|Nombre para mostrar de la configuración|Incorporar dispositivos a Microsoft Defender para punto de conexión
+ConfigurationSubcategory|cadena|Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas.|Dispositivos integrados
+DeviceId|cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
+IsApplicable|bool|Indica si la configuración o directiva es aplicable|true
+IsCompliant|bool|Indica si la configuración o la directiva está configurada correctamente|false
+IsExpectedUserImpact|bool|Indica si habrá impacto del usuario si se aplicará la configuración|true
+OSPlatform|cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10
+RbacGroupName|cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
+RecommendationReference|cadena|Una referencia al identificador de recomendación relacionado con este software.|sca-_-scid-20000
+Timestamp|cadena|La última vez que se vio la configuración en el dispositivo|2020-11-03 10:13:34.8476880
+|
 
 ### <a name="16-examples"></a>1.6 Ejemplos
 
 #### <a name="161-request-example"></a>1.6.1 Ejemplo de solicitud
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5 
+GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5
 ```
 
 #### <a name="162-response-example"></a>Ejemplo de respuesta 1.6.2
@@ -140,7 +140,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "isCompliant": true,
             "isApplicable": true,
             "isExpectedUserImpact": false,
-            "configurationName": "Disable insecure administration protocol – Telnet",
+            "configurationName": "Disable insecure administration protocol - Telnet",
             "recommendationReference": "sca-_-scid-10000"
         },
         {
@@ -174,7 +174,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "isCompliant": true,
             "isApplicable": true,
             "isExpectedUserImpact": false,
-            "configurationName": "Disable insecure administration protocol – Telnet",
+            "configurationName": "Disable insecure administration protocol - Telnet",
             "recommendationReference": "sca-_-scid-10000"
         },
         {
@@ -230,10 +230,10 @@ Las limitaciones de velocidad para esta API son 5 llamadas por minuto y 20 llama
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API para obtener más información.](apis-intro.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 ---|---|---
-Aplicación | Vulnerability.Read.All | \'Leer la información Administración de amenazas y vulnerabilidades vulnerabilidad de "Administración de amenazas y vulnerabilidades"\'
-Delegado (cuenta profesional o educativa) | Vulnerability.Read | \'Leer la información Administración de amenazas y vulnerabilidades vulnerabilidad de "Administración de amenazas y vulnerabilidades"\'
+Aplicación|Vulnerability.Read.All|\'Leer la información Administración de amenazas y vulnerabilidades vulnerabilidad de "Administración de amenazas y vulnerabilidades"\'
+Delegado (cuenta profesional o educativa)|Vulnerability.Read|\'Leer la información Administración de amenazas y vulnerabilidades vulnerabilidad de "Administración de amenazas y vulnerabilidades"\'
 
 ### <a name="23-url"></a>DIRECCIÓN URL 2.3
 
@@ -241,24 +241,27 @@ Delegado (cuenta profesional o educativa) | Vulnerability.Read | \'Leer la infor
 GET /api/machines/SecureConfigurationsAssessmentExport
 ```
 
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>Parámetros
 
 - sasValidHours: el número de horas durante las que las direcciones URL de descarga serán válidas (máximo 24 horas).
 
 ### <a name="25-properties"></a>2.5 Propiedades
 
->[!Note]
+> [!NOTE]
 >
->- Los archivos son archivos comprimidos de gzip & en formato Json de varias líneas.
->
->- Las direcciones URL de descarga solo son válidas durante 3 horas; de lo contrario, puede usar el parámetro.
->
->- Para obtener la velocidad máxima de descarga de los datos, puede asegurarse de que está descargando desde la misma región de Azure en la que residen los datos.
->
-Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto
-:---|:---|:---|:---
-Exportar archivos | cadena de \[ matriz\] | Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | string | Hora en que se generó la exportación. | 2021-05-20T08:00:00Z ]
+> - Los archivos son archivos comprimidos de gzip & en formato Json de varias líneas.
+> - Las direcciones URL de descarga solo son válidas durante 3 horas; de lo contrario, puede usar el parámetro.
+> - Para obtener la velocidad máxima de descarga de los datos, puede asegurarse de que está descargando desde la misma región de Azure en la que residen los datos.
+
+<br>
+
+****
+
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
+---|---|---|---
+Exportar archivos|cadena de \[ matriz\]|Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+GeneratedTime|cadena|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
+|
 
 ### <a name="26-examples"></a>2.6 Ejemplos
 
@@ -282,16 +285,13 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 }
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
-
 - [Exportar evaluación de inventario de software por dispositivo](get-assessment-software-inventory.md)
-
 - [Evaluación de vulnerabilidades de software de exportación por dispositivo](get-assessment-software-vulnerabilities.md)
 
 Otros relacionados
 
 - [Amenazas basadas en riesgos & administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
-
 - [Vulnerabilidades de la organización](tvm-weaknesses.md)

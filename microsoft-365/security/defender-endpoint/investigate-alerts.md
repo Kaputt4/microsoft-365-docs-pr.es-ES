@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 626be9e949170fcda1f0bcf2a88e1b9780bbe764
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 53a00625e50081a1af7ba78fbd8fce604ad3ed9c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841095"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623761"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Investigar alertas en Microsoft Defender para endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "52841095"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink)
 
 Investigue las alertas que afectan a la red, comprenda lo que significan y cómo resolverlas.
 
@@ -74,7 +74,7 @@ Si experimenta una alerta falsa con una aplicación de línea de negocio, cree u
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender](alerts-queue.md)
+- [Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión](alerts-queue.md)
 - [Administrar alertas de Microsoft Defender para puntos de conexión](manage-alerts.md)
 - [Investigar un archivo asociado a una alerta de Defender for Endpoint](investigate-files.md)
 - [Investigar dispositivos en la lista Defender para dispositivos de punto de conexión](investigate-machines.md)

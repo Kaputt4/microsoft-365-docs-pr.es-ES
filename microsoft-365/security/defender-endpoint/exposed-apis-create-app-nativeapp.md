@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 876dddf7a68b9844dea6a30ff4ebbbe3c2b75b69
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f85599109f5ca3a0b9863e778c44bc3b991af7ba
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844555"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624181"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Usar Microsoft Defender para las API de punto de conexión
 
@@ -32,7 +32,7 @@ ms.locfileid: "52844555"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -196,6 +196,6 @@ Compruebe para asegurarse de que tiene un token correcto:
     // Do something useful with the response
     ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Microsoft Defender para api de punto de conexión](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)

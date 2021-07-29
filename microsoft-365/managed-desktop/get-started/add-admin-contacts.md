@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a95ab526d43e6eb243cb3de3a7b7c75e1e82b07f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286926"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624205"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y verificar los contactos de administración en el portal de administración
 
@@ -22,17 +22,6 @@ Hay varias maneras en que el Escritorio administrado de Microsoft se comunica co
 
 > [!IMPORTANT]
 > Es posible que ya haya agregado estos contactos en el portal de administración. Si es así, tómese un momento para comprobar que la  lista de contactos es precisa, ya que Escritorio administrado de Microsoft debe poder comunicarse con ellos si se produce un incidente grave.
-
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory acceso para el portal Escritorio administrado de Microsoft administración
-
-Escritorio administrado de Microsoft El portal de administración requiere que las personas que tienen acceso al portal tengan uno de estos roles Azure Active Directory (AD):
-
-- Administrador global
-- Administrador de servicios de Intune
-- Lector global
-- Administrador de soporte técnico de servicio
-
-El administrador global debe ser el que inscriba su organización en Escritorio administrado de Microsoft. Los cinco roles tienen el mismo acceso en el portal de administración para iniciar y ver tareas. Para obtener más información sobre cómo asignar estos roles en Azure AD, vea Permisos de roles de administrador [en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 ## <a name="admin-contact-areas-of-focus"></a>Áreas de contacto de administración de foco
 
@@ -44,7 +33,7 @@ Empaquetado de aplicaciones | Solución de problemas de empaquetado de aplicacio
 Dispositivos | Estado del dispositivo, solución de problemas con Escritorio administrado de Microsoft dispositivos
 Seguridad | Solución de problemas de seguridad con Escritorio administrado de Microsoft dispositivos
 Servicio de ayuda de IT | en los casos en que nuestro personal de soporte técnico entrega los vales de usuario fuera de Escritorio administrado de Microsoft áreas de soporte técnico 
-Otros | Para problemas no cubiertos por otras áreas
+Otro | Para problemas no cubiertos por otras áreas
 
 **Quien elija para estos contactos debe tener el conocimiento y la autoridad para tomar decisiones para su entorno Escritorio administrado de Microsoft contactos.** Al incorporar el entorno Escritorio administrado de Microsoft, se le pedirá que agregue contactos para el departamento de soporte técnico y seguridad local. 
 

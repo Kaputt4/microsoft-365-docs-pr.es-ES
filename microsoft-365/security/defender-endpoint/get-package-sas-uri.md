@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 054db1766cdab3aa5b49da4940dcdddfe6086434
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fa7d8f267b42e54addec70823f24440147372d3d
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770690"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623917"
 ---
 # <a name="get-package-sas-uri-api"></a>Obtener api de URI de SAS del paquete
 
@@ -29,7 +29,7 @@ ms.locfileid: "52770690"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,17 +40,19 @@ Obtener un URI que permite descargar un [paquete de investigación](collect-inve
 
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Access the Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Machine.CollectForensics |  'Recopilar forenses'
-Delegado (cuenta profesional o educativa) | Machine.CollectForensics | 'Recopilar forenses'
+Aplicación|Machine.CollectForensics|'Recopilar forenses'
+Delegado (cuenta profesional o educativa)|Machine.CollectForensics|'Recopilar forenses'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
->- El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -60,10 +62,9 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -73,23 +74,21 @@ En blanco
 
 Si se realiza correctamente, este método devuelve 200 código de respuesta Ok con el objeto que contiene el vínculo al paquete en el parámetro "value". Este vínculo es válido durante un tiempo muy corto y debe usarse inmediatamente para descargar el paquete en un almacenamiento local.
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
-
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
-```http
+```json
 HTTP/1.1 200 Ok
 Content-type: application/json
 

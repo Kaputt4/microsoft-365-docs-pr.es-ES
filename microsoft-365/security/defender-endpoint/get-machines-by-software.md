@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8312818fe06b5a25ae32bf1f9585a51fe8848de6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 7953bbc14a6652d2750f9046526d0aae3ee546d2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845383"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624397"
 ---
 # <a name="list-devices-by-software"></a>Enumerar dispositivos por software
 
@@ -29,7 +29,7 @@ ms.locfileid: "52845383"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,42 +40,45 @@ ms.locfileid: "52845383"
 Recupera una lista de referencias de dispositivo que tiene instalado este software.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación | Software.Read.All | 'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | Software.Read | 'Leer información de software de administración de amenazas y vulnerabilidades'
+Aplicación|Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
+Delegado (cuenta profesional o educativa)|Software.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /api/Software/{Id}/machineReferences 
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre        | Tipo | Descripción
-|:--------------|:-------|:--------------|
-| Authorization | Cadena | Portador {token}. **Obligatorio**.
+|Nombre|Tipo|Descripción
+|---|---|---|
+|Authorization|Cadena|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente, este método devuelve 200 OK y una lista de dispositivos con el software instalado en el cuerpo. 
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machineReferences
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
@@ -102,5 +105,6 @@ Aquí tiene un ejemplo de la respuesta.
 ```
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Inventario & de software de vulnerabilidad](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

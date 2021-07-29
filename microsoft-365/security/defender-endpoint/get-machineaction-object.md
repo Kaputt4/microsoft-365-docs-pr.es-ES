@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dcb00d0d2afc7f873ea9c4afa3174ac46babf879
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 013b742fae2b4c28de68034858f870da00245656
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770786"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623233"
 ---
 # <a name="get-machineaction-api"></a>Obtener api machineAction
 
@@ -29,69 +29,71 @@ ms.locfileid: "52770786"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>Descripción de la API
+
 Recupera una acción [de máquina específica](machineaction.md) por su identificador.
 
-
 ## <a name="limitations"></a>Limitaciones
+
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
-
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Machine.Read.All |  'Leer todos los perfiles de máquina'
-Aplicación |   Machine.ReadWrite.All | 'Leer y escribir toda la información de la máquina'
-Delegado (cuenta profesional o educativa) | Machine.Read | 'Leer información de máquina'
-Delegado (cuenta profesional o educativa) | Machine.ReadWrite | 'Leer y escribir información de máquina'
+Aplicación|Machine.Read.All|'Leer todos los perfiles de máquina'
+Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
+Delegado (cuenta profesional o educativa)|Machine.Read|'Leer información de máquina'
+Delegado (cuenta profesional o educativa)|Machine.ReadWrite|'Leer y escribir información de máquina'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente, este método devuelve 200, código de respuesta Ok con una [entidad Machine Action.](machineaction.md) Si no se encontró la entidad de acción de la máquina con el identificador especificado: 404 No encontrado.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="example-request"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
-
-```
+```json
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
@@ -108,6 +110,4 @@ Content-type: application/json
     "lastUpdateDateTimeUtc": "2019-01-02T14:40:44.6596267Z",
     "relatedFileInfo": null
 }
-
-
 ```

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: ef6d05bb27018bb72f731da2e8b7837c9d9f0127
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 263dfe8f85c74425513d9033a1fdd6a0c19a55e6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842067"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624433"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API de Microsoft Defender para endpoints con PowerShell
 
@@ -30,13 +30,13 @@ ms.locfileid: "52842067"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Escenario completo con varias API de Microsoft Defender para endpoint.
 
@@ -129,7 +129,7 @@ $response
 ```
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Microsoft Defender para api de punto de conexión](apis-intro.md)
 - [API de Búsqueda avanzada de amenazas](run-advanced-query-api.md)
 - [Búsqueda avanzada de amenazas con Python](run-advanced-query-sample-python.md)

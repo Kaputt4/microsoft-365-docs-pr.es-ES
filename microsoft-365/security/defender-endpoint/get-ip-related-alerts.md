@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a12ae502702b7fc9f69b01cd67857003258c20f2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 73ad84587394f5b2748e3cb5f543852cc4cee4fb
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770132"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622957"
 ---
 # <a name="get-ip-related-alerts-api"></a>Obtener API de alertas relacionadas con IP
 
@@ -31,7 +31,7 @@ ms.locfileid: "52770132"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -46,42 +46,45 @@ Recupera una colección de alertas relacionadas con una dirección IP determinad
 
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Alert.Read.All |    'Leer todas las alertas'
-Aplicación |   Alert.ReadWrite.All |   'Leer y escribir todas las alertas'
+Aplicación|Alert.Read.All|'Leer todas las alertas'
+Aplicación|Alert.ReadWrite.All|'Leer y escribir todas las alertas'
 Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
 Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
 >- La respuesta incluirá solo alertas, asociadas con dispositivos, a las que el usuario tiene acceso, según la configuración del grupo de dispositivos (vea [Crear y](machine-groups.md) administrar grupos de dispositivos para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /api/ips/{ip}/alerts
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
 
-
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente e IP existe: 200 Aceptar con la lista [de](alerts.md) entidades de alerta en el cuerpo. Si la IP no existe: 404 No se encontró.
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request"></a>Solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 

@@ -1,9 +1,9 @@
 ---
-title: Administrar temas a escala en Temas de Microsoft Viva
-author: chuckedmonson
+title: Administrar temas a escala en Temas Microsoft Viva
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre procedimientos recomendados para administrar los muchos temas de su organización con Temas de Viva.
-ms.openlocfilehash: 613c4ed85a62efd22ba104c810420a2d0af015c5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 96580df486195af991e446ae6f1bbb4b08013947
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624842"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624361"
 ---
-# <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Administrar temas a escala en Temas de Microsoft Viva
+# <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Administrar temas a escala en Temas Microsoft Viva
 
 Al indizar los SharePoint web o toda la organización para Temas de Viva, se pueden generar muchos temas. Cuando esto sucede y ve miles  de temas sugeridos en la página Administrar temas, puede resultar difícil saber por dónde empezar. En este artículo se describe cómo Viva Topics le ayuda a optimizar los temas e información que se muestran a los usuarios que buscan información, incluso en organizaciones grandes con un gran número de temas.
 
@@ -144,11 +144,11 @@ Este enfoque también podría adoptarse en un nivel departamental o funcional, c
 
 ### <a name="search"></a>Búsqueda
 
-Los términos de búsqueda comunes a menudo se detectan como temas. Al usar los [informes de consulta principales de Microsoft Search,](/sharepoint/view-search-usage-reports)puede identificar los términos de búsqueda más frecuentes de su organización. Si se han detectado temas para estos términos, son buenos candidatos para la curación. Estos temas se pueden presentar como tarjetas de respuesta en Microsoft Search.
+Los términos de búsqueda comunes a menudo se detectan como temas. Al usar los informes [de consulta principales de Búsqueda de Microsoft,](/sharepoint/view-search-usage-reports)puede identificar los términos de búsqueda más frecuentes de su organización. Si se han detectado temas para estos términos, son buenos candidatos para la curación. Estos temas se pueden presentar como tarjetas de respuesta en Búsqueda de Microsoft.
 
-Si actualmente usa [marcadores](/microsoftsearch/manage-bookmarks)de Microsoft Search, considere cuál de estos se puede reemplazar por un tema. Una tarjeta de respuesta de marcador contiene un título, una descripción y una dirección URL. En algunas circunstancias, una tarjeta de tema puede ser más útil para un usuario y una tarjeta de tema también muestra recursos y personas.
+Si actualmente está usando Búsqueda de Microsoft [marcadores,](/microsoftsearch/manage-bookmarks)considere cuál de estos se puede reemplazar por un tema. Una tarjeta de respuesta de marcador contiene un título, una descripción y una dirección URL. En algunas circunstancias, una tarjeta de tema puede ser más útil para un usuario y una tarjeta de tema también muestra recursos y personas.
 
-En la experiencia de búsqueda del usuario, cuando un usuario busca un término como *viajes,* los resultados de la búsqueda se muestran en el siguiente orden de prioridad en Microsoft Search:
+En la experiencia de búsqueda del usuario, cuando un usuario busca un término como *viajes,* los resultados de la búsqueda se muestran en el siguiente orden de prioridad en Búsqueda de Microsoft:
 
 1.  Temas publicados o confirmados
 
@@ -170,8 +170,8 @@ Los sitios de portal más grandes de la organización podrían haber invertido t
 
 Si su organización ha invertido en bases de conocimiento o sitios wiki, estos pueden proporcionar una lista de temas que usar para sus esfuerzos de curación iniciales. Si son especialmente grandes, seleccione los temas más vistos o editados como punto de partida.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-[Administrar temas en el Centro de temas](manage-topics.md)
+[Administrar temas en el centro de temas](manage-topics.md)
 
 [Información general del centro de temas](topic-center-overview.md)

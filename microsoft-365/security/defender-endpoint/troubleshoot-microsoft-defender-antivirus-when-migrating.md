@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3eb4d01957383efc8df47e9fee6eb6394c80015a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924388"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623365"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 
@@ -37,7 +37,7 @@ Puede encontrar ayuda aquí si encuentra problemas al migrar desde una solución
 
 Abra la aplicación Visor de eventos seleccionando el icono **Buscar** en la barra de tareas y buscando el *visor de eventos.*
 
-Encontrará información Antivirus de Microsoft Defender en **Registros** de aplicaciones y servicios  >  **Microsoft**  >  **Windows**  >  **Windows Defender**. 
+Encontrará información Antivirus de Microsoft Defender en **Registros** de aplicaciones y servicios  >  **Microsoft**  >  **Windows**  >  **Windows Defender**.
 
 Desde allí, seleccione **Abrir debajo** de **Operativo**.
 
@@ -49,11 +49,11 @@ Este problema puede manifestarse en forma de varios IDs de eventos diferentes, t
 
 ### <a name="associated-event-ids"></a>IDs de eventos asociados
 
- Id. de evento | Nombre de registro | Descripción | Origen
--|-|-|-
-15 | Aplicación | Se Windows Defender el estado correctamente para SECURITY_PRODUCT_STATE_OFF. | Centro de seguridad
-5007 | Microsoft-Windows-Windows Defender/Operational | Antivirus de Windows Defender La configuración ha cambiado.  Si se trata de un evento inesperado, debes revisar la configuración, ya que puede ser el resultado de malware.<br /><br />**Valor antiguo:** Default\IsServiceRunning = 0x0<br />**Nuevo valor:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1 | Windows Defender
-5010 | Microsoft-Windows-Windows Defender/Operational | Antivirus de Windows Defender está deshabilitado el examen de spyware y otro software potencialmente no deseado. | Windows Defender
+Id. de evento|Nombre de registro|Descripción|Origen
+---|---|---|---
+15|Aplicación|Se Windows Defender el estado correctamente para SECURITY_PRODUCT_STATE_OFF.|Centro de seguridad
+5007|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender La configuración ha cambiado.  Si se trata de un evento inesperado, debes revisar la configuración, ya que puede ser el resultado de malware. <p> **Valor antiguo:** Default\IsServiceRunning = 0x0 p> **Nuevo valor:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5010|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender está deshabilitado el examen de spyware y otro software potencialmente no deseado.|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>Cómo saber si Antivirus de Microsoft Defender no se iniciará porque está instalado un antivirus de terceros
 
@@ -88,31 +88,31 @@ Esto generará un informe ubicado en *./gpresult.html*. Abra este archivo y es p
 
 En el informe GPResults, bajo el título *Windows Components/Antivirus de Windows Defender*, puede ver algo como la siguiente entrada, que indica que Antivirus de Microsoft Defender está desactivado.
 
-Directiva | Configuración | GPO ganador
--|-|-
-Desactivar Antivirus de Windows Defender | Habilitado | Win10-Workstations
+Directiva|Configuración|GPO ganador
+---|---|---
+Desactivar Antivirus de Windows Defender|Habilitado|Win10-Workstations
 
 ###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>Si la configuración de seguridad se implementa mediante la preferencia de directiva de grupo (GPP)
 
 Bajo el encabezado, Elemento del Registro (ruta de acceso *clave: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender, Nombre del valor: DisableAntiSpyware),* puede ver algo parecido a la siguiente entrada, que indica que Antivirus de Microsoft Defender está desactivado.
 
-DisableAntiSpyware | -
--|-
-GPO ganador | Win10-Workstations
-Resultado: Correcto | 
-**General** | 
-Acción | Actualizar
-**Propiedades** | 
-Subárbol | HKEY_LOCAL_MACHINE
-Ruta de acceso clave | SOFTWARE\Policies\Microsoft\Windows Defender
-Nombre del valor | DisableAntiSpyware
-Tipo de valor | REG_DWORD
-Datos del valor | 0x1 (1)
+DisableAntiSpyware|-
+---|---
+GPO ganador|Win10-Workstations
+Resultado: Correcto|
+**General**|
+Acción|Actualizar
+**Propiedades**|
+Subárbol|HKEY_LOCAL_MACHINE
+Ruta de acceso clave|SOFTWARE\Policies\Microsoft\Windows Defender
+Nombre del valor|DisableAntiSpyware
+Tipo de valor|REG_DWORD
+Datos del valor|0x1 (1)
 
 ###### <a name="if-security-settings-are-implemented-via-registry-key"></a>Si la configuración de seguridad se implementa a través de la clave del Registro
 
 El informe puede contener el siguiente texto, que indica que Antivirus de Microsoft Defender está desactivado:
- 
+
 > Registro (regedit.exe)
 >
 > HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender DisableAntiSpyware (dword) 1 (hexadecimal)
@@ -135,7 +135,7 @@ Otra característica, conocida como [examen periódico limitado,](limited-period
 > [!IMPORTANT]
 > No se recomienda el examen periódico limitado en entornos empresariales. Las capacidades de detección, administración e informes disponibles al ejecutar Antivirus de Microsoft Defender en este modo se reducen en comparación con el modo activo.
 
-### <a name="see-also"></a>Ver también
+### <a name="see-also"></a>Vea también
 
-* [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)
-* [Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md)
+- [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)
+- [Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md)

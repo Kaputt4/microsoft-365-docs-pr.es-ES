@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: c5c76553ff3f0b32def5fbafbf2c8f010e49eeb2
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 580a0ff1921c8c947b4a41f3571c367b26e86493
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845428"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624253"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solucionar problemas de reglas de reducción de superficie de ataque
 
@@ -33,7 +33,7 @@ ms.locfileid: "52845428"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 
 Cuando usas [reglas de reducción de](attack-surface-reduction.md) superficie de ataque, puedes encontrar problemas, como:

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b6ac9746ff82f81772505daac7d7f36249687d7d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 6417457e48ed3e019768ada23ced3a6bcdcfee7e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772334"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624421"
 ---
 # <a name="get-alert-related-ips-information-api"></a>Obtener API de información de IP relacionadas con alertas
 
@@ -31,58 +31,60 @@ ms.locfileid: "52772334"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>Descripción de la API
+
 Recupera todas las IP relacionadas con una alerta específica.
 
-
 ## <a name="limitations"></a>Limitaciones
+
 1. Puede consultar las alertas actualizadas por última vez de acuerdo con el período de retención configurado.
 2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
-
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Ip.Read.All |   'Leer perfiles de dirección IP'
-Delegado (cuenta profesional o educativa) | Ip.Read.All |  'Leer perfiles de dirección IP'
+Aplicación|Ip.Read.All|'Leer perfiles de dirección IP'
+Delegado (cuenta profesional o educativa)|Ip.Read.All|'Leer perfiles de dirección IP'
 
->[!Note]
+> [!NOTE]
 > Al obtener un token con credenciales de usuario:
->- El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
->- El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+>
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
-```
+
+```http
 GET /api/alerts/{id}/ips
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
+Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
-
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En blanco
 
 ## <a name="response"></a>Respuesta
+
 Si se realiza correctamente y se alerta y existe una IP: 200 Aceptar. Si no se encuentra la alerta: 404 No se encontró.
 
+## <a name="example"></a>Ejemplo
 
-## <a name="example"></a>Ejemplo:
-
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -90,23 +92,21 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/ips
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
 
-
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/$metadata#Ips",    
+    "@odata.context": "https://api.securitycenter.microsoft.com/$metadata#Ips",
     "value": [
                 {
                     "id": "104.80.104.128"
                 },
                 {
-                    "id": "23.203.232.228   
+                    "id": "23.203.232.228
                 }
                 ...
     ]
 }
- 
 ```

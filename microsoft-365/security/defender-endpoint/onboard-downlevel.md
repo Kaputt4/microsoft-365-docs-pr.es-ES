@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1809969d37d2e3cfb9279eb8266a65ba098b3c6
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a336ca847b8244c023fb8228c6405a363e7550aa
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542110"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622837"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -39,11 +39,12 @@ ms.locfileid: "53542110"
 - Windows 8.1 Enterprise
 
 
->¿Desea experimentar Defender for Endpoint? [Registrarse para obtener una versión de prueba gratuita](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink).
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint amplía la compatibilidad para incluir sistemas operativos de nivel inferior, lo que proporciona capacidades avanzadas de detección de ataques e investigación en versiones Windows compatibles.
 
 Para incorporar puntos de conexión Windows cliente a Defender for Endpoint, deberás:
+
 - Configure y actualice System Center Endpoint Protection clientes.
 - Instale y configure Microsoft Monitoring Agent (MMA) para informar de los datos del sensor a Defender for Endpoint como se indica a continuación.
 
@@ -54,9 +55,10 @@ Para incorporar puntos de conexión Windows cliente a Defender for Endpoint, deb
 > [!IMPORTANT]
 > Este paso solo es necesario si la organización usa System Center Endpoint Protection (SCEP).
 
-Defender for Endpoint se integra con System Center Endpoint Protection para proporcionar visibilidad a las detecciones de malware y detener la propagación de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso. 
+Defender for Endpoint se integra con System Center Endpoint Protection para proporcionar visibilidad a las detecciones de malware y detener la propagación de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso.
 
-Se requieren los siguientes pasos para habilitar esta integración: 
+Se requieren los siguientes pasos para habilitar esta integración:
+
 - Instalar la actualización de la plataforma antimalware de enero de [2017 para Endpoint Protection cliente](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configurar la pertenencia del servicio de protección en la nube del cliente SCEP a la **configuración** Avanzada
 - Configure la red para permitir conexiones a la Antivirus de Microsoft Defender nube. Para obtener más información, consulte [Allow connections to the Antivirus de Microsoft Defender cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
@@ -64,11 +66,13 @@ Se requieren los siguientes pasos para habilitar esta integración:
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>Instalar y configurar Microsoft Monitoring Agent (MMA) para informar de los datos del sensor a Microsoft Defender para endpoint
 
 ### <a name="before-you-begin"></a>Antes de empezar
+
 Revise los siguientes detalles para comprobar los requisitos mínimos del sistema:
+
 - Instalar el paquete acumulativo de actualizaciones [mensuales de febrero de 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
   > [!NOTE]
-  > Solo se aplica Windows 7 SP1 Enterprise y Windows 7 SP1 Pro. 
+  > Solo se aplica Windows 7 SP1 Enterprise y Windows 7 SP1 Pro.
 
 - Instalar la actualización [para la experiencia del cliente y telemetría de diagnóstico](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
@@ -80,8 +84,6 @@ Revise los siguientes detalles para comprobar los requisitos mínimos del sistem
 
 - Cumpla los requisitos mínimos del sistema del agente de Azure Log Analytics. Para obtener más información, vea [Recopilar datos de equipos de su entorno con Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites).
 
-
-
 1. Descargue el archivo de instalación del agente: Windows agente de [64](https://go.microsoft.com/fwlink/?LinkId=828603) bits o Windows agente de [32 bits](https://go.microsoft.com/fwlink/?LinkId=828604).
 
 2. Obtenga el identificador del área de trabajo:
@@ -90,8 +92,10 @@ Revise los siguientes detalles para comprobar los requisitos mínimos del sistem
    - Copiar el identificador del área de trabajo y la clave del área de trabajo
 
 3. Con el identificador de área de trabajo y la clave Área de trabajo, elija cualquiera de los siguientes métodos de instalación para instalar el agente:
-    - [Instale manualmente el agente mediante el programa de instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). <br>
+    - [Instale manualmente el agente mediante el programa de instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard).
+
       En la **página Opciones de configuración del** agente, seleccione Conectar el agente a Azure Log Analytics **(OMS)**
+
     - [Instale el agente mediante la línea de comandos](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
     - [Configure el agente mediante un script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
 
@@ -103,11 +107,12 @@ Revise los siguientes detalles para comprobar los requisitos mínimos del sistem
 Una vez completado, debería ver puntos de conexión incorporados en el portal en una hora.
 
 ### <a name="configure-proxy-and-internet-connectivity-settings"></a>Configurar las opciones del proxy y de conectividad a Internet
- 
+
 - Cada Windows punto de conexión debe poder conectarse a Internet mediante HTTPS. Esta conexión puede ser directa, mediante un proxy o a través de la puerta [de enlace OMS](/azure/log-analytics/log-analytics-oms-gateway).
 - Si un proxy o firewall bloquea todo el tráfico de forma predeterminada y permite solo dominios específicos a través o el examen HTTPS (inspección SSL) está habilitado, asegúrese de habilitar el acceso a las direcciones URL del servicio [defender](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)para puntos de conexión .
 
 ## <a name="offboard-client-endpoints"></a>Extremos de cliente offboard
-To offboard, you can uninstall the MMA agent from the endpoint or detach it from reporting to your Defender for Endpoint workspace. Después de salir del agente, el punto de conexión ya no enviará datos del sensor a Defender para Endpoint. 
 
-> ¿Desea experimentar Defender for Endpoint? [Registrarse para obtener una versión de prueba gratuita](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink).
+To offboard, you can uninstall the MMA agent from the endpoint or detach it from reporting to your Defender for Endpoint workspace. Después de salir del agente, el punto de conexión ya no enviará datos del sensor a Defender para Endpoint.
+
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)

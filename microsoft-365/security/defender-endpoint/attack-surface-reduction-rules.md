@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 9c55ca17f4d0fe8cd5911e1d42d1b20588da28ef
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d0dd39197835574a5982d50486026b713f71e8d5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542592"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624193"
 ---
 # <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
@@ -36,7 +36,7 @@ En este artículo se proporciona información sobre las reglas de reducción de 
 
 ## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
 
-Los vínculos a información sobre las versiones del sistema operativo a las que se hace referencia en esta tabla se enumeran debajo de esta tabla.
+En la tabla siguiente se enumeran las reglas de reducción de superficie de ataque en orden alfabético. Una marca de verificación indica que la regla es compatible con el sistema operativo enumerado en esa columna.
 
 > [!Note]
 >
@@ -63,18 +63,6 @@ Los vínculos a información sobre las versiones del sistema operativo a las que
 |[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | ![compatible](images/checkmark.png) <br><br> | ![compatible](images/checkmark.png) <br><br> | ![compatible](images/checkmark.png) <br><br> |  |  |
 |[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | ![compatible](images/checkmark.png) <br><br> versión 1803 o posterior | ![compatible](images/checkmark.png) <br><br> | ![compatible](images/checkmark.png) <br><br> |  |  |
 | **Nombre de la regla** |  **&nbsp;Windows 10** | **&nbsp;Windows Server 2019** | **&nbsp;Windows Servidor** | **&nbsp;Windows Server 2016** | **&nbsp;Windows Server 2012 R2** |
-
-### <a name="operating-system-version"></a>Versión del sistema operativo
-
-- [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Pro, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Enterprise, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10, versión 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows 10, versión 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-
-- [Windows Servidor, versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="supported-configuration-management-systems"></a>Sistemas de administración de configuración compatibles
 
@@ -119,7 +107,7 @@ La regla Bloquear el uso indebido de controladores **firmados vulnerables** no b
 >
 > También puede configurar esta regla con [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
-> Para que se examine un controlador, use este sitio web para [enviar un controlador para su análisis.](https://www.microsoft.com/en-us/wdsi/driversubmission)
+> Para que se examine un controlador, use este sitio web para [enviar un controlador para su análisis.](https://www.microsoft.com/wdsi/driversubmission)
 
 Nombre de Intune: `Block abuse of exploited vulnerable signed drivers`
 

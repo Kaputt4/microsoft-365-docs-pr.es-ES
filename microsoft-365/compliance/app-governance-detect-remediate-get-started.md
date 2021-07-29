@@ -2,8 +2,8 @@
 title: Introducción a la detección y corrección de amenazas de aplicaciones
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a la detección y corrección de amenazas de aplicaciones.
-ms.openlocfilehash: 6229d2cf94ec1ba892929f399fe49cf88da608d1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 7309fba4bbc74736386c6ab384d1cffd8c152b81
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420343"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623065"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>Introducción a la detección y corrección de amenazas de aplicaciones
 
@@ -27,7 +27,7 @@ ms.locfileid: "53420343"
 
 La gobernanza de aplicaciones de Microsoft recopila alertas de amenazas generadas por métodos de detección de gobernanza de aplicaciones integrados basados en actividades de aplicaciones malintencionadas y alertas basadas en directivas generadas por las directivas de aplicación activas que cree.
 
-El primer lugar para ver las alertas de la aplicación es el panel de gobernanza de la aplicación en [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance).
+El primer lugar para ver las alertas de la aplicación es el panel de gobernanza de la aplicación en [https://aka.ms/appgovernance](https://aka.ms/appgovernance).
 
 ![Página de información general de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365 con la sección Alertas de directivas y detección resaltada](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 
@@ -57,4 +57,4 @@ También puede exportar la lista de alertas actual a un archivo de valores separ
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Corrija las amenazas de la aplicación.](app-governance-detect-remediate-detect-threats.md)
+[Investigar las alertas de detección de anomalías](app-governance-anomaly-detection-alerts.md)

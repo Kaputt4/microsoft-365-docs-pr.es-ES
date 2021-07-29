@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f7fc1d851bb7b67e13454a6e9b0b80e55a699d4c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 594adb952f9c5f98a5c51a176f3fe7f0ac56692c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543598"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624277"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>Administrar el acceso al portal mediante el control de acceso basado en roles
 
@@ -31,34 +31,32 @@ ms.locfileid: "53543598"
 - Azure Active Directory
 - Office 365
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-rbac-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-rbac-abovefoldlink)
 
 Con el control de acceso basado en roles (RBAC), puede crear roles y grupos dentro del equipo de operaciones de seguridad para conceder el acceso adecuado al portal. En función de los roles y grupos que cree, tiene un control preciso sobre lo que los usuarios con acceso al portal pueden ver y hacer. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bJ2a]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bJ2a]
 
 Los grandes equipos de operaciones de seguridad distribuidas geográficamente suelen adoptar un modelo basado en niveles para asignar y autorizar el acceso a portales de seguridad. Los niveles típicos incluyen los tres niveles siguientes:
 
-Nivel | Descripción
+Nivel|Descripción
 :---|:---
-Nivel 1 | **Equipo de operaciones de seguridad local/equipo de TI** <br> Este equipo normalmente realiza una triage e investiga las alertas contenidas en su geolocalización y escala al nivel 2 en los casos en los que se requiere una corrección activa.
-Nivel 2 | **Equipo de operaciones de seguridad regional** <br> Este equipo puede ver todos los dispositivos de su región y realizar acciones de corrección.
-Nivel 3 | **Equipo de operaciones de seguridad global** <br> Este equipo está formado por expertos en seguridad y están autorizados a ver y realizar todas las acciones desde el portal.
+Nivel 1|**Equipo de operaciones de seguridad local/equipo de TI** <br> Este equipo normalmente realiza una triage e investiga las alertas contenidas en su geolocalización y escala al nivel 2 en los casos en los que se requiere una corrección activa.
+Nivel 2|**Equipo de operaciones de seguridad regional** <br> Este equipo puede ver todos los dispositivos de su región y realizar acciones de corrección.
+Nivel 3|**Equipo de operaciones de seguridad global** <br> Este equipo está formado por expertos en seguridad y están autorizados a ver y realizar todas las acciones desde el portal.
 
 Defender for Endpoint RBAC está diseñado para admitir el modelo de opciones basado en roles o niveles y le proporciona un control detallado sobre qué roles pueden ver, los dispositivos a los que pueden acceder y las acciones que pueden realizar. El marco RBAC se centra en los siguientes controles:
 
 - **Controlar quién puede realizar una acción específica**
   - Crea roles personalizados y controla a qué capacidades de Defender for Endpoint pueden acceder con granularidad.
- 
 - **Controlar quién puede ver información sobre grupos o grupos de dispositivos específicos**
   - [Cree grupos de](machine-groups.md) dispositivos por criterios específicos, como nombres, etiquetas, dominios y otros, y, a continuación, conceda acceso a los roles mediante un grupo de usuarios de Azure Active Directory (Azure AD).
 
 Para implementar el acceso basado en roles, deberá definir roles de administrador, asignar los permisos correspondientes y asignar grupos de usuarios de Azure AD asignados a los roles.
 
-
 ### <a name="before-you-begin"></a>Antes de empezar
-Antes de usar RBAC, es importante que comprenda los roles que pueden conceder permisos y las consecuencias de activar RBAC.
 
+Antes de usar RBAC, es importante que comprenda los roles que pueden conceder permisos y las consecuencias de activar RBAC.
 
 > [!WARNING]
 > Antes de habilitar la característica, es importante que tenga un rol de administrador global o de administrador de seguridad en Azure AD y que tenga los grupos de Azure AD listos para reducir el riesgo de que se bloquee el portal. 
@@ -77,4 +75,5 @@ Alguien con un rol de administrador global de Defender for Endpoint tiene acceso
 > Después de participar en el uso de RBAC, no puede volver a los roles iniciales como cuando inició sesión por primera vez en el portal.
 
 ## <a name="related-topic"></a>Tema relacionado
+
 - [Crear y administrar grupos de dispositivos en Microsoft Defender para endpoint](machine-groups.md)

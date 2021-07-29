@@ -14,24 +14,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3db1517d87a47aae254d36cfb28f6c057830ef3e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3c49575e7a1d88c15907fdd7c118b71071949b23
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840999"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622849"
 ---
 # <a name="threat-protection"></a>Protección contra amenazas
+
 [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración y la respuesta e investigación automatizadas. Defender for Endpoint protege los puntos de conexión frente a amenazas cibernéticas, detecta ataques avanzados e infracciones de datos, automatiza los incidentes de seguridad y mejora la posición de seguridad.
 
 > [!TIP]
 > Permitir que los usuarios accedan a los servicios en la nube y a las aplicaciones locales con facilidad y habiliten las capacidades de administración modernas para todos los dispositivos. Para obtener más información, vea [Secure your remote workforce](/enterprise-mobility-security/remote-work/). 
 
-<center><h2>Microsoft Defender para endpoint</center></h2>
+<center><h2>Microsoft Defender para punto de conexión</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Amenazas & administración de vulnerabilidades</b></center></a></td>
-<td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>Reducción de superficie de ataque</b></center></a></td>
+<td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>Reducción de la superficie expuesta a ataques</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="next generation protection icon"><br> <b>Protección de última generación</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="endpoint detection and response icon"><br> <b>Detección y respuesta de puntos de conexión</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="automated investigation and remediation icon"><br> <b>Investigación y corrección automatizadas</b></a></center></td>
@@ -49,16 +50,15 @@ ms.locfileid: "52840999"
 
 <a name="tvm"></a>
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4obJq]
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
-
-**[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)**<br>
-Esta funcionalidad integrada usa un enfoque basado en riesgos que cambia el juego para la detección, priorización y corrección de vulnerabilidades y configuraciones erróneas de puntos de conexión.
+**[Amenazas & administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)**<br>
+Esta funcionalidad integrada usa un enfoque basado en riesgos que cambia el juego para la detección, priorización y corrección de vulnerabilidades de puntos de conexión y configuraciones incorrectas.
 
 - [Introducción & administración de vulnerabilidades amenazas](next-gen-threat-and-vuln-mgt.md)
 - [Introducción](tvm-prerequisites.md)
 - [Acceder a su posición de seguridad](tvm-dashboard-insights.md)
-- [Mejorar la posición de seguridad y reducir el riesgo](tvm-security-recommendation.md)
+- [Mejorar la posición de seguridad y reducir los riesgos](tvm-security-recommendation.md)
 - [Comprender las vulnerabilidades de los dispositivos](tvm-software-inventory.md)
 
 <a name="asr"></a>
@@ -78,7 +78,7 @@ El conjunto de capacidades de reducción de superficie de ataque proporcionan la
 <a name="ngp"></a>
 
 **[Protección de última generación](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
-Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para endpoint usa la protección de última generación diseñada para detectar todo tipo de amenazas emergentes.
+Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para punto de conexión usa la protección de próxima generación diseñada para detectar todos los tipos de amenazas emergentes.
 
 - [Supervisión del comportamiento](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 - [Protección basada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
@@ -88,7 +88,7 @@ Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender
 
 <a name="edr"></a>
 
-**[EDR](overview-endpoint-detection-response.md)**<br>
+**[Detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md)**<br>
 Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas. Con la búsqueda avanzada, tienes una herramienta de búsqueda de amenazas basada en consultas que permite a los usuarios encontrar de forma proactiva infracciones y crear detecciones personalizadas.
 
 - [Alertas](alerts-queue.md)
@@ -116,12 +116,12 @@ El nuevo servicio de búsqueda de amenazas administradas de Microsoft Defender p
 
 - [Notificación de ataque dirigido](microsoft-threat-experts.md)
 - [Expertos a petición](microsoft-threat-experts.md)
-- [Configurar el servicio de Microsoft 365 de búsqueda administrada de defender](configure-microsoft-threat-experts.md)
+- [Configurar el servicio Microsoft 365 Defender de búsqueda administrada](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
 **[Configuración y administración centralizadas, API](management-apis.md)**<br>
-Integre Microsoft Defender para Endpoint en los flujos de trabajo existentes.
+Integre Microsoft Defender para punto de conexión en los flujos de trabajo existentes.
 - [Incorporación](onboard-configure.md)
 - [Integración de API e SIEM](configure-siem.md)
 - [API expuestas](apis-intro.md)
@@ -140,4 +140,4 @@ Integre Microsoft Defender para Endpoint en los flujos de trabajo existentes.
 
 <a name="mtp"></a>
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
- Con Microsoft 365 Defender, Microsoft Defender para Endpoint y varias soluciones de seguridad de Microsoft forman un conjunto de aplicaciones de defensa empresarial unificado previo y posterior a la infracción que se integra de forma nativa entre puntos de conexión, identidad, correo electrónico y aplicaciones para detectar, prevenir, investigar y responder automáticamente a ataques sofisticados.
+ Con Microsoft 365 Defender, Microsoft Defender para endpoint y varias soluciones de seguridad de Microsoft forman un conjunto de aplicaciones de defensa empresarial unificado previo y posterior a la infracción que se integra de forma nativa en los puntos de conexión, identidad, correo electrónico y aplicaciones para detectar, prevenir, investigar y responder automáticamente a ataques sofisticados.

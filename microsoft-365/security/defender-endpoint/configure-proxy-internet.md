@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: caefcd7ce19073a10139a9f4d6d84c49e93c392f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53338726"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623353"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -32,7 +32,7 @@ ms.locfileid: "53338726"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 El sensor Defender for Endpoint requiere que Microsoft Windows HTTP (WinHTTP) informe de los datos del sensor y se comunique con el servicio Defender for Endpoint.
 
@@ -44,9 +44,7 @@ El sensor de Defender for Endpoint incrustado se ejecuta en el contexto del sist
 La configuración de WinHTTP es independiente de la configuración de proxy de exploración de Internet de Windows (WinINet) y solo puede detectar un servidor proxy mediante los siguientes métodos de detección:
 
 - Métodos de detección automática:
-
   - Proxy transparente
-
   - Protocolo de detección automática de proxy web (WPAD)
 
     > [!NOTE]
@@ -55,8 +53,7 @@ La configuración de WinHTTP es independiente de la configuración de proxy de e
 - Configuración del proxy estático manual:
 
   - Configuración basada en el registro
-
-  - WinHTTP se configuró con el comando netsh (adecuado solo para dispositivos de escritorio en una topología estable, por ejemplo, un escritorio en una red corporativa detrás del mismo proxy)
+  - WinHTTP configurado mediante el comando netsh: adecuado solo para escritorios en una topología estable (por ejemplo: un escritorio en una red corporativa detrás del mismo proxy)
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurar manualmente el servidor proxy mediante un proxy estático basado en el registro
 
@@ -65,10 +62,10 @@ Configure un proxy estático basado en el Registro para permitir que solo el sen
 > [!NOTE]
 > Al usar esta opción en Windows 10 o Windows Server 2019, se recomienda tener la siguiente compilación (o posterior) y el paquete acumulativo de actualizaciones acumulativas:
 >
-> - Windows 10, versión 1809 o Windows Server 2019 :https://support.microsoft.com/kb/5001384
-> - Windows 10, versión 1909 -https://support.microsoft.com/kb/4601380
-> - Windows 10, versión 2004 -https://support.microsoft.com/kb/4601382
-> - Windows 10, versión 20H2 -https://support.microsoft.com/kb/4601382
+> - Windows 10, versión 1809 o Windows Server 2019 :<https://support.microsoft.com/kb/5001384>
+> - Windows 10, versión 1909 -<https://support.microsoft.com/kb/4601380>
+> - Windows 10, versión 2004 -<https://support.microsoft.com/kb/4601382>
+> - Windows 10, versión 20H2 -<https://support.microsoft.com/kb/4601382>
 >
 > Estas actualizaciones mejoran la conectividad y la confiabilidad del canal CnC (comando y control).
 
@@ -108,9 +105,7 @@ Use netsh para configurar un proxy estático en todo el sistema.
 > - Los portátiles que cambian la topología (por ejemplo: de la oficina a la casa) no funcionan correctamente con netsh. Use la configuración de proxy estático basada en el registro.
 
 1. Abra un símbolo del sistema con privilegios elevados:
-
    1. Vaya a **Inicio** y escriba **cmd**.
-
    1. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
 2. Escriba el siguiente comando y presione **Entrar**:
@@ -135,9 +130,13 @@ Si un servidor proxy o firewall bloquea todo el tráfico de forma predeterminada
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL, o puede que necesite crear una regla de permitir específicamente para ellas.
 
-| Hoja de cálculo de la lista de dominios | Descripción |
-|:-----|:-----|
-|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)<br/>  | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <br><br>[Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+<br>
+
+**** 
+|Hoja de cálculo de la lista de dominios|Descripción|
+|---|---|
+|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|
 
 Si un servidor proxy o firewall tiene habilitada la detección HTTPS (inspección SSL), excluya los dominios que aparecen en la tabla anterior de la detección HTTPS.
 
@@ -154,12 +153,16 @@ Si un proxy o firewall bloquea el tráfico anónimo, ya que el sensor Defender f
 
 La siguiente información enumera la información de configuración de proxy y firewall necesaria para comunicarse con el agente de Log Analytics (a menudo denominado Microsoft Monitoring Agent) para las versiones anteriores de Windows como Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 y Windows Server 2016.
 
-|Recurso del agente|Puertos |Dirección |Omitir la inspección HTTP|
-|------|---------|--------|--------|
-|*.ods.opinsights.azure.com |Puerto 443 |Salida|Yes |  
-|*.oms.opinsights.azure.com |Puerto 443 |Salida|Yes |  
-|*.blob.core.windows.net |Puerto 443 |Salida|Yes |
-|*.azure-automation.net |Puerto 443 |Salida|Yes |  
+<br>
+
+****
+
+|Recurso del agente|Puertos|Dirección|Omitir la inspección HTTP|
+|---|---|---|---|
+|*.ods.opinsights.azure.com|Puerto 443|Salida|Yes|
+|*.oms.opinsights.azure.com|Puerto 443|Salida|Yes|
+|*.blob.core.windows.net|Puerto 443|Salida|Yes|
+|*.azure-automation.net|Puerto 443|Salida|Yes|
 
 > [!NOTE]
 > Como solución basada en la nube, el intervalo IP puede cambiar. Se recomienda pasar a la configuración de resolución de DNS.
@@ -189,33 +192,31 @@ El extremo de dirección URL .blob.core.windows.net se puede reemplazar por las 
 
 Compruebe que la configuración del proxy se ha completado correctamente, que WinHTTP puede detectar y comunicarse mediante el servidor proxy en su entorno y que el servidor proxy permite el tráfico a las direcciones URL del servicio de Defender para punto de conexión.
 
-1. Descargue la herramienta Analizador de cliente [MDATP](https://aka.ms/mdatpanalyzer) en el equipo en el que se ejecuta el sensor defender para el extremo.
+1. Descargue la [herramienta Micrsofot Defender for Endpoint Client Analyzer](https://aka.ms/mdeanalyzer) en el equipo en el que se ejecuta el sensor Defender for Endpoint.
 
-2. Extraiga el contenido de MDATPClientAnalyzer.zip en el dispositivo.
+2. Extrae el contenido de MDEClientAnalyzer.zip en el dispositivo.
 
 3. Abra un símbolo del sistema con privilegios elevados:
-
    1. Vaya a **Inicio** y escriba **cmd**.
-
    1. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
 4. Escriba el siguiente comando y presione **Entrar**:
 
     ```PowerShell
-    HardDrivePath\MDATPClientAnalyzer.cmd
+    HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
-    Reemplace *HardDrivePath* por la ruta de acceso en la que se descargó la herramienta MDATPClientAnalyzer, por ejemplo:
+    Reemplace *HardDrivePath por* la ruta de acceso en la que se descargó la herramienta MDEClientAnalyzer, por ejemplo:
 
     ```PowerShell
-    C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
+    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
-5. Extraiga el *MDATPClientAnalyzerResult.zip* creado por la herramienta en la carpeta usada en *HardDrivePath*.
+5. Extraiga el *MDEClientAnalyzerResult.zip* creado por la herramienta en la carpeta usada en *HardDrivePath*.
 
-6. Abra *MDATPClientAnalyzerResult.txt* y compruebe que ha realizado los pasos de configuración del proxy para habilitar la detección del servidor y tener acceso a las direcciones URL del servicio.
+6. Abra *MDEClientAnalyzerResult.txt* y compruebe que ha realizado los pasos de configuración de proxy para habilitar la detección de servidores y el acceso a las direcciones URL del servicio.
 
-   La herramienta comprueba la conectividad de las direcciones URL del servicio de Defender para punto de conexión con las que el cliente está configurado para interactuar. Luego, imprime los resultados en el archivo *MDATPClientAnalyzerResult.txt* para cada URL que se puede usar potencialmente para comunicarse con los servicios de Defender para punto de conexión. Por ejemplo:
+   La herramienta comprueba la conectividad de las direcciones URL del servicio de Defender para punto de conexión con las que el cliente está configurado para interactuar. A continuación, imprime los resultados en el archivo *MDEClientAnalyzerResult.txt* para cada dirección URL que se pueda usar potencialmente para comunicarse con defender para los servicios de extremo. Por ejemplo:
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -231,7 +232,7 @@ Si al menos una de las opciones de conectividad devuelve un estado (200), el cli
 Pero si los resultados de la comprobación de conectividad indican un error, se mostrará un error HTTP (vea los códigos de estado HTTP). A continuación, puede usar las direcciones URL de la tabla que se muestra en Habilitar el acceso a las direcciones URL del servicio defender para puntos de conexión [en el servidor proxy](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Las direcciones URL que usará dependerán de la región seleccionada durante el procedimiento de incorporación.
 
 > [!NOTE]
-> [ La herramienta Analizador de conectividad no es compatible con la regla ASR ](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)Bloquear las creaciones de procesos procedentes de comandos PSExec y WMI. Tendrá que deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad.
+> Las comprobaciones de conectividad en la nube de la herramienta Analizador de conectividad no son compatibles con la regla reducción de superficie de ataque Bloquear creaciones de proceso originadas a partir [de comandos PSExec y WMI](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands). Tendrá que deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad. Como alternativa, puede agregar temporalmente [exclusiones de ASR](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) al ejecutar el analizador.
 >
 > Cuando se establece TelemetryProxyServer, en el Registro o a través de la directiva de grupo, Defender for Endpoint volverá a dirigirse si no puede tener acceso al proxy definido.
 

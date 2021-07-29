@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b809cc82ef6fda3d4153dbf19871801ec59ae75
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2c2c0ff1cfa84689215272d1fcf5a1f7476ca4d9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543430"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621852"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -34,7 +34,7 @@ ms.locfileid: "53543430"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 En este tema se describe cómo instalar, configurar, actualizar y usar Defender para Endpoint en Mac.
 
@@ -109,13 +109,12 @@ Microsoft Defender para Endpoint en Mac requiere una de las siguientes ofertas d
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL, o puede que necesite crear una regla de permitir específicamente para ellas.
 
-
-
-|**Hoja de cálculo de la lista de dominios**|**Descripción**|
-|:-----|:-----|
-|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)<br/>  | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <br><br>Descargue la hoja de cálculo aquí: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
+|Hoja de cálculo de la lista de dominios|Descripción|
+|---|---|
+|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de cálculo aquí: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 
 Microsoft Defender para endpoint puede detectar un servidor proxy mediante los siguientes métodos de detección:
+
 - Proxy autoconfig (PAC)
 - Protocolo de detección automática de proxy web (WPAD)
 - Configuración manual de proxy estático
@@ -127,7 +126,7 @@ Si un proxy o firewall bloquea el tráfico anónimo, asegúrese de que el tráfi
 >
 > Los servidores proxy de inspección e interceptación de SSL tampoco se admiten por motivos de seguridad. Configure una excepción para que la inspección SSL y el servidor proxy pasen directamente los datos de Microsoft Defender para endpoint en macOS a las direcciones URL relevantes sin interceptación. Agregar el certificado de interceptación al almacén global no permitirá la interceptación.
 
-Para probar que una conexión no está bloqueada, abra [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) y [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) en un explorador.
+Para probar que una conexión no está bloqueada, abra <https://x.cp.wd.microsoft.com/api/report> y <https://cdn.x.cp.wd.microsoft.com/ping> en un explorador.
 
 Si prefiere la línea de comandos, también puede comprobar la conexión ejecutando el siguiente comando en Terminal:
 
@@ -142,9 +141,10 @@ El resultado de este comando debe ser similar al siguiente:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> Se recomienda mantener la Protección de [integridad del](https://support.apple.com/en-us/HT204899) sistema (SIP) habilitada en dispositivos cliente. SIP es una característica de seguridad de macOS integrada que evita la manipulación de bajo nivel con el sistema operativo y está habilitada de forma predeterminada.
+> Se recomienda mantener la Protección de [integridad del](https://support.apple.com/HT204899) sistema (SIP) habilitada en dispositivos cliente. SIP es una característica de seguridad de macOS integrada que evita la manipulación de bajo nivel con el sistema operativo y está habilitada de forma predeterminada.
 
 Una vez instalado Microsoft Defender para endpoint, la conectividad se puede validar ejecutando el siguiente comando en Terminal:
+
 ```bash
 mdatp connectivity test
 ```
@@ -164,5 +164,4 @@ En alineación con la evolución de macOS, estamos preparando una actualización
 ## <a name="resources"></a>Recursos
 
 - Para obtener más información sobre el registro, la desinstalación u otros temas, vea [Resources for Microsoft Defender for Endpoint on Mac](mac-resources.md).
-
 - [Privacidad de Microsoft Defender para Endpoint en Mac](mac-privacy.md).
