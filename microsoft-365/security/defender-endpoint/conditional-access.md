@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d52e9d2d6fc10cfd58a6d658bb01f5b7bfa1c83
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 2c547fd5691332044082b918f07e5da7c7c92bcf
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591312"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655436"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>Habilitar el acceso condicional para proteger mejor a los usuarios, dispositivos y datos 
 
@@ -31,7 +31,7 @@ ms.locfileid: "53591312"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
 El acceso condicional es una funcionalidad que te ayuda a proteger mejor la información de los usuarios y de la empresa al asegurarte de que solo los dispositivos seguros tienen acceso a las aplicaciones.
 

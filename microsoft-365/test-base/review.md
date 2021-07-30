@@ -14,43 +14,43 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: b72de90b2e075e33a27522935c2200e23c74e1aa
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3d341016fe0cd506a2399958e21452d3f20bb75c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538822"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655520"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>Paso 6: Revisar las selecciones para crear el paquete.
 
-1.  En esta pestaña, el servicio muestra los detalles de la prueba y ejecuta una comprobación de integridad rápida. 
+1. En esta pestaña, el servicio muestra los detalles de la prueba y ejecuta una comprobación de integridad rápida.
 
     Un **mensaje De validación pasada** **o** Error de validación muestra si puede continuar con los pasos siguientes o no.
 
-2.  Revise los detalles de la prueba y, si se cumple, haga clic en el **botón** Crear. 
+2. Revise los detalles de la prueba y, si se cumple, haga clic en el **botón** Crear.
 
     :::image type="content" alt-text="Ver validación." source="Media/validation.png" lightbox="Media/validation.png":::
 
-3.  Esto incorporará el paquete al entorno base de prueba. Si el paquete se crea correctamente, se desencadenará una prueba automatizada que compruebe si el paquete se puede ejecutar correctamente en Azure.
+3. Esto incorporará el paquete al entorno base de prueba. Si el paquete se crea correctamente, se desencadenará una prueba automatizada que compruebe si el paquete se puede ejecutar correctamente en Azure.
 
     ![Resultado correcto](Media/successful.png)
-    
-    > [!Note]
-    > Recibirá una notificación de Azure Portal para notificarle sobre el éxito o el error de la comprobación del paquete. 
+
+    > [!NOTE]
+    > Recibirá una notificación de Azure Portal para notificarle sobre el éxito o el error de la comprobación del paquete.
     >
-    > Tenga en cuenta que el proceso puede tardar hasta 24 horas, por lo que es probable que la página web agote el tiempo de espera si no está activo en él y, por lo tanto, la notificación no le informará de la finalización de esta ejecución a petición. 
+    > Tenga en cuenta que el proceso puede tardar hasta 24 horas, por lo que es probable que la página web agote el tiempo de espera si no está activo en él y, por lo tanto, la notificación no le informará de la finalización de esta ejecución a petición.
 
     - Peradventure esto sucede, puedes ver el estado del paquete en la pestaña Administrar **paquetes.**
 
       :::image type="content" alt-text="Imagen para administrar paquetes." source="Media/managepackages.png" lightbox="Media/managepackages.png":::
 
     - Para las pruebas de éxito, sus resultados se  pueden ver  a través de las páginas Resumen de **prueba,** Resultados de actualizaciones de seguridad y Resultados de actualizaciones de características a intervalos programados, a menudo a partir de unos días después de la carga.
-  
-    - Si bien se han fallado las pruebas, es necesario cargar un nuevo paquete. 
-  
+
+    - Si bien se han fallado las pruebas, es necesario cargar un nuevo paquete.
+
       Puede descargar los registros **de prueba para** realizar más análisis desde las páginas De **resultados** de actualización de seguridad y **Actualizaciones de** características.
 
-    - Si experimenta errores de prueba repetidos, póngase en contacto testbasepreview@microsoft.com con los detalles del error. 
+    - Si experimenta errores de prueba repetidos, póngase en contacto testbasepreview@microsoft.com con los detalles del error.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

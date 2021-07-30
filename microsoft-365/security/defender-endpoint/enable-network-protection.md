@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: bde97638a39eef4561b898b2cf49e51bed6e77a5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 06d59cd1b5d2d41c06ef7867e5b0174946cecfb0
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926660"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656108"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -30,7 +30,7 @@ ms.locfileid: "52926660"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [La protección de](network-protection.md) red ayuda a evitar que los empleados utilicen cualquier aplicación para tener acceso a dominios peligrosos que pueden hospedar estafas de phishing, vulnerabilidades de seguridad y otro contenido malintencionado en Internet. Puedes [auditar la protección de red](evaluate-network-protection.md) en un entorno de prueba para ver qué aplicaciones se bloquearían antes de habilitarla.
 
@@ -65,7 +65,7 @@ Habilite la protección de red mediante cualquiera de estos métodos:
 
 ### <a name="powershell"></a>PowerShell
 
-1. Escriba **powershell** en el menú Inicio, haga clic con el botón Windows PowerShell **y** seleccione Ejecutar como **administrador**
+1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**
 2. Escriba el siguiente cmdlet:
 
     ```PowerShell
@@ -128,7 +128,7 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
    * 1=On
    * 2=Auditoría
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 * [Protección de red](network-protection.md)
 * [Evaluar protección de red](evaluate-network-protection.md)

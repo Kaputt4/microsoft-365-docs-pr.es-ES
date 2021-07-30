@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fa5d5b4470644e1ff50af46a8dd3f035cd9b3184
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2a4d588e869fed684c4424578025a50d36a2280e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842871"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650420"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "52842871"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="collecting-diagnostic-information"></a>Recopilación de información de diagnóstico
 
@@ -97,7 +97,7 @@ Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Ten
 
 Las tareas importantes, como controlar la configuración del producto y desencadenar exámenes a petición, se pueden realizar desde la línea de comandos:
 
-|Group        |Escenario                                   |Comando                                                                           |
+|Grupo        |Escenario                                   |Comando                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
 |Configuración|Activar/desactivar la protección en tiempo real           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |Configuración|Activar/desactivar la protección en la nube               |`mdatp config cloud --value [enabled/disabled]`                                   |
@@ -110,8 +110,8 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 |Configuración|Desactivar la protección de LA PUA                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
 |Configuración|Activar el modo de auditoría para la protección de PUA      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
 |Configuración|Activar/desactivar passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|Diagnostics  |Cambiar el nivel de registro                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnostics  |Generar registros de diagnóstico                   |`mdatp diagnostic create --path [directory]`                                      |
+|Diagnóstico  |Cambiar el nivel de registro                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
+|Diagnóstico  |Generar registros de diagnóstico                   |`mdatp diagnostic create --path [directory]`                                      |
 |Salud       |Comprobar el estado del producto                 |`mdatp health`                                                                    |
 |Salud       |Buscar un atributo de producto spefic       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
 |Protección   |Examinar una ruta de acceso                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |

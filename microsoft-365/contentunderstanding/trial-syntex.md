@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: Obtenga información sobre cómo planear y ejecutar un programa piloto de prueba para SharePoint Syntex en su organización.
-ms.openlocfilehash: 2668c0c85d6b8c73d377ac9efffc7f777fc7add6
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 6b3aadd635e8abb41e0b3eb1bb9414d40fc1192b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327149"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655472"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Ejecutar una prueba de Microsoft SharePoint Syntex
 
@@ -38,22 +38,22 @@ Puede obtener la versión de prueba de uno de los siguientes orígenes:
 - Página [SharePoint Syntex producto](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
 
 - El [Centro de administración de Microsoft 365](https://admin.microsoft.com)
-    1.  Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
-    2.  Vaya a **Servicios de compra** de  >  **facturación**.
-    3.  Desplácese hacia abajo hasta la sección **Complementos**.
-    4.  En el icono SharePoint Syntex, seleccione **Detalles**.
-    5.  Seleccione **Obtener prueba gratuita**.
-    6.  Para confirmar la prueba, siga los pasos del asistente restantes.
+    1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
+    2. Vaya a **Servicios de compra** de  >  **facturación**.
+    3. Desplácese hacia abajo hasta la sección **Complementos**.
+    4. En el icono SharePoint Syntex, seleccione **Detalles**.
+    5. Seleccione **Obtener prueba gratuita**.
+    6. Para confirmar la prueba, siga los pasos del asistente restantes.
 
 Debe ser un administrador Microsoft 365 global o administrador de facturación para activar una versión de prueba.
 
 ### <a name="who-should-be-involved-in-a-trial"></a>Quién debe participar en una prueba
 
-|Rol  |Actividad  |
-|---------|---------|
-|Microsoft 365 administrador global o de facturación    |     Activar la versión de prueba y asignar licencias    |
-|Microsoft 365 administrador global o administrador SharePoint administrador     |   Configurar SharePoint Syntex y crear centros de contenido      |
-|Usuarios empresariales     |    Creación y pruebas de modelos     |
+|Rol|Actividad|
+|---|---|
+|Microsoft 365 administrador global o de facturación|Activar la versión de prueba y asignar licencias|
+|Microsoft 365 administrador global o administrador SharePoint administrador|Configurar SharePoint Syntex y crear centros de contenido|
+|Usuarios empresariales|Creación y pruebas de modelos|
 
 ### <a name="before-you-activate-a-trial"></a>Antes de activar una versión de prueba
 
@@ -80,7 +80,7 @@ Al iniciar una prueba, debe:
 
 - Asignar licencias a los usuarios relevantes.
 - Realice [una configuración adicional de SharePoint Syntex](set-up-content-understanding.md).
-    - Es posible que desee crear [centros de contenido adicionales](create-a-content-center.md).
+  - Es posible que desee crear [centros de contenido adicionales](create-a-content-center.md).
 
 Después de activar la prueba, puede crear modelos y procesar archivos. Vea [las instrucciones para la creación de modelos](create-a-content-center.md).
 
@@ -104,7 +104,7 @@ Si no compra licencias después de la versión de prueba:
 
 - No podrá crear nuevos modelos.
 - Las bibliotecas que estaban ejecutando modelos ya no clasificarán automáticamente archivos ni extraerán modelos.
-- Los archivos clasificados previamente o los metadatos extraídos no se verán afectados. 
+- Los archivos clasificados previamente o los metadatos extraídos no se verán afectados.
 - Los centros de contenido y los modelos de comprensión de documentos no se eliminarán automáticamente. Estos permanecerán disponibles para su uso si decide comprar licencias en el futuro.
 - Los modelos de procesamiento de formularios se almacenarán en la instancia de Common Data Services (CDS) del entorno predeterminado de Power Platform. Se podrían usar con licencias futuras para SharePoint Syntex o con funcionalidades de AI Builder en power platform.
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fd8e1e007031a19a0520e11c8b2497e64e721a74
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 551eddb42f7b0bdbbd84f6294f3413b4435c1dc1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595947"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655772"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión 
 
@@ -32,11 +32,11 @@ ms.locfileid: "53595947"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037) es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración y la respuesta e investigación automatizadas.
 
-Puede evaluar Microsoft Defender para Endpoint en su organización [iniciando la prueba gratuita](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
+Puede evaluar Microsoft Defender para Endpoint en su organización [iniciando la prueba gratuita](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial).
 
 También puede evaluar las distintas capacidades de seguridad en Microsoft Defender para Endpoint mediante las siguientes instrucciones.
 

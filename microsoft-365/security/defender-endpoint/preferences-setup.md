@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: abcfa00f13857fa5b3fcd83a2e4ee073c6143540
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621840"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656312"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>Configurar Centro de seguridad de Microsoft Defender configuración
 
@@ -31,7 +31,7 @@ ms.locfileid: "53621840"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
 Use el **menú Configuración** para modificar la configuración general, las características avanzadas, habilitar la experiencia de vista previa, las notificaciones de correo electrónico y la característica de inteligencia de amenazas personalizada.
 

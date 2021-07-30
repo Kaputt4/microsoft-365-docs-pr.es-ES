@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 5ac5d39af831bdae0069dd3902a9db3e59585909
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 999363676c18ba2d24e2b35fa03081eb292ab650
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543442"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655424"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual no persistente
 
@@ -35,16 +35,15 @@ ms.locfileid: "53543442"
 - Dispositivos de infraestructura de escritorio virtual (VDI)
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
 
 Defender for Endpoint admite la incorporación de sesiones VDI no persistentes. 
 
-
 Puede haber desafíos asociados al incorporar LOS VDIs. Los siguientes son los desafíos típicos de este escenario:
 
-- Incorporación anticipada instantánea de sesiones de corta duración, que deben incorporarse a Defender for Endpoint antes del aprovisionamiento real.
+- Incorporación anticipada instantánea de una sesión de corta duración, que debe incorporarse a Defender for Endpoint antes del aprovisionamiento real.
 - El nombre del dispositivo normalmente se reutiliza para nuevas sesiones.
 
 Los dispositivos VDI pueden aparecer en el portal de Defender for Endpoint como:
@@ -76,9 +75,9 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 
 2. Copie los archivos de la carpeta WindowsDefenderATPOnboardingPackage extraída del archivo .zip en la imagen `golden/master` de la ruta de acceso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
 
-    1. Si no implementa una sola entrada para cada dispositivo, copie WindowsDefenderATPOnboardingScript.cmd.
+    1. Si no estás implementando una sola entrada para cada dispositivo, copia WindowsDefenderATPOnboardingScript.cmd.
 
-    1. Si vas a implementar una sola entrada para cada dispositivo, copia tanto Onboard-NonPersistentMachine.ps1 como WindowsDefenderATPOnboardingScript.cmd.
+    1. Si estás implementando una sola entrada para cada dispositivo, copia tanto Onboard-NonPersistentMachine.ps1 como WindowsDefenderATPOnboardingScript.cmd.
     
     > [!NOTE]
     > Si no ve la `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` carpeta, podría estar oculta. Tendrás que elegir la opción Mostrar **archivos y carpetas** ocultos en el Explorador de archivos.
@@ -90,13 +89,13 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 
 4. Según el método que quiera implementar, siga los pasos correspondientes:
 
-   - Para una sola entrada para cada dispositivo:
+    - Para una sola entrada para cada dispositivo:
    
-     Seleccione la **pestaña Scripts de PowerShell** y, a continuación, haga clic en Agregar **(el** Explorador de Windows se abrirá directamente en la ruta de acceso en la que copió el script de incorporación anteriormente). Navegue a la incorporación del script de PowerShell `Onboard-NonPersistentMachine.ps1` . No es necesario especificar el otro archivo, ya que se desencadenará automáticamente.
+         Seleccione la **pestaña Scripts de PowerShell** y, a continuación, haga clic en Agregar **(el** Explorador de Windows se abrirá directamente en la ruta de acceso en la que copió el script de incorporación anteriormente). Navegue a la incorporación del script de PowerShell `Onboard-NonPersistentMachine.ps1` . No es necesario especificar el otro archivo, ya que se desencadenará automáticamente.
    
-   - Para varias entradas para cada dispositivo:
+    - Para varias entradas para cada dispositivo:
    
-     Seleccione la **pestaña Scripts** y, a continuación, haga clic en Agregar **(Windows** Explorer se abrirá directamente en la ruta de acceso en la que copió el script de incorporación anteriormente). Vaya al script bash de incorporación `WindowsDefenderATPOnboardingScript.cmd` .
+         Seleccione la **pestaña Scripts** y, a continuación, haga clic en Agregar **(Windows** Explorer se abrirá directamente en la ruta de acceso en la que copió el script de incorporación anteriormente). Vaya al script bash de incorporación `WindowsDefenderATPOnboardingScript.cmd` .
 
 5. Pruebe la solución:
 
@@ -104,19 +103,20 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
       
    1. Inicie sesión en el dispositivo.
       
-   1. Cierre sesión desde el dispositivo.
+   1. Cierre la sesión desde el dispositivo.
 
    1. Inicie sesión en el dispositivo con otro usuario.
       
    1. Según el método que quiera implementar, siga los pasos correspondientes:
-   
-      - Para una sola entrada para cada dispositivo: 
-    
-        Compruebe solo una entrada en Microsoft 365 Defender.
 
-      - Para varias entradas para cada dispositivo: 
-       
-        Compruebe varias entradas en Microsoft 365 Defender.
+   - Para una sola entrada para cada dispositivo: 
+
+     Compruebe solo una entrada en Microsoft 365 Defender portal.
+
+   - Para varias entradas para cada dispositivo: 
+
+     Compruebe varias entradas en Microsoft 365 Defender portal.
+
 
 6. Haga **clic en Lista de** dispositivos en el panel de navegación.
 
@@ -178,11 +178,11 @@ Si el mantenimiento sin conexión no es una opción viable para el entorno VDI n
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 
-5. Vuelva a sellar la imagen dorada/maestra como lo haría normalmente.
+5. Vuelva a sesar la imagen dorada/maestra como lo haría normalmente.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Incorporación Windows 10 dispositivos con directiva de grupo](configure-endpoints-gp.md)

@@ -14,40 +14,36 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 00399cbfaea79b3e1658988272c1bfb1ecbc2b5e
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: edec6726ef2db0f0efffe131886a653cd164cf6f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567013"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655532"
 ---
-# <a name="what-is-test-base-for-microsoft-365"></a>¿Qué es Test Base para Microsoft 365? 
+# <a name="what-is-test-base-for-microsoft-365"></a>¿Qué es Test Base para Microsoft 365?
 
-Test Base for Microsoft 365 (Test Base) es el servicio de validación de Microsoft basado en el entorno seguro de Azure.  
+Test Base for Microsoft 365 (Test Base) es el servicio de validación de Microsoft basado en el entorno seguro de Azure.
 Con Test Base, los proveedores de software (SVs) y los integradores de sistemas (SIs) pueden acelerar la validación de sus aplicaciones frente a las compilaciones de características y seguridad Windows lanzamientos previos. Se trata de una colaboración muy comprometida entre socios SV y Microsoft que permite pruebas conjuntas, validación y corrección.
 
 Test Base ofrece una gran oportunidad para crear y mantener un servicio de validación seguro en Azure, donde los clientes y partners pueden realizar pruebas y fases de las cargas de trabajo de su aplicación con nuestras actualizaciones de seguridad publicadas previamente.
 
 Con Test Base, se proporciona a los SV más visibilidad de posibles problemas que podrían impedir que sus aplicaciones realicen su mejor rendimiento en la nueva versión del sistema operativo antes de que Microsoft libere la actualización al mercado.
 
-Este nuevo servicio ayudará a los SV a hacer más sencillos y eficientes los esfuerzos de prueba. Enterprise clientes se beneficiarán de las pruebas de SV y Microsoft juntos en un entorno de colaboración y obtendrán más confianza en que sus aplicaciones funcionarán según lo esperado. 
+Este nuevo servicio ayudará a los SV a hacer más sencillos y eficientes los esfuerzos de prueba. Enterprise clientes se beneficiarán de las pruebas de SV y Microsoft juntos en un entorno de colaboración y obtendrán más confianza en que sus aplicaciones funcionarán según lo esperado.
 
-### <a name="advantages-test-base-offers-enterprises-and-their-sv-partners-include"></a>Ventajas La base de pruebas ofrece a las empresas y sus socios sv: 
- 
-  * Implementación más rápida de actualizaciones de seguridad para proteger los dispositivos; 
- 
-  * Se han reducido los costos de validación de actualización hospedando los cambios del sistema operativo y la aplicación en el mismo entorno; 
-  
-  * Informe de inteligencia de clase mundial de Microsoft sobre sus aplicaciones (cobertura de código, análisis de impacto de api, entre otros); 
-  
-  * Experiencia de Microsoft en el cambio de contenido de prueba y aprovechamientos a Azure. 
+**Ventajas La base de pruebas ofrece a las empresas y sus socios sv:**
 
+- Implementación más rápida de actualizaciones de seguridad para proteger los dispositivos;
+- Se han reducido los costos de validación de actualización hospedando los cambios del sistema operativo y la aplicación en el mismo entorno;
+- Informe de inteligencia de clase mundial de Microsoft sobre sus aplicaciones (cobertura de código, análisis de impacto de api, entre otros);
+- Experiencia de Microsoft en el cambio de contenido de prueba y aprovechamientos a Azure.
 
-### <a name="guide-to-navigating-the-test-base-portal"></a>Guía para navegar por el portal base de pruebas
+## <a name="guide-to-navigating-the-test-base-portal"></a>Guía para navegar por el portal base de pruebas
 
 Esta guía se divide en cuatro (4) partes para garantizar una experiencia libre de enganches al usar nuestro servicio:
 
-1. Información **general** que proporciona instrucciones detalladas y paso a paso sobre cómo cargar la aplicación a través de nuestro portal de incorporación de autoservicio. 
+1. Información **general** que proporciona instrucciones detalladas y paso a paso sobre cómo cargar la aplicación a través de nuestro portal de incorporación de autoservicio.
 
 2. La **sección Inicios rápidos,** que proporciona información sobre el formato de la estructura de carpetas comprimida y lo que necesita saber al preparar los scripts de prueba.
 
@@ -55,13 +51,13 @@ Esta guía se divide en cuatro (4) partes para garantizar una experiencia libre 
 
 4. La **sección** Referencia que proporciona respuestas a las preguntas típicas que recibimos de nuestros clientes.
 
-### <a name="test-base-is-in-public-preview"></a>Test Base está en versión preliminar pública.
+## <a name="test-base-is-in-public-preview"></a>Test Base está en versión preliminar pública.
 
-Test Base se ha declarado oficialmente ```Public Preview``` durante la conferencia de Microsoft Inspire en julio de 2021. 
+Test Base se ha declarado oficialmente `Public Preview` durante la conferencia de Microsoft Inspire en julio de 2021.
 
 Esto significa que cualquier persona con una cuenta de Azure empresarial válida puede incorporar su garantía de prueba y empezar a probar rápidamente sus aplicaciones en el servicio.
 
-### <a name="who-should-onboard"></a>Quién Debe incorporarse?
+## <a name="who-should-onboard"></a>Quién Debe incorporarse?
 
 Estamos animando a todos los proveedores de software (SVs), integradores de sistemas (SIs) a incorporar sus aplicaciones, archivos binarios y scripts de prueba en el servicio.
 
@@ -70,4 +66,3 @@ Estamos animando a todos los proveedores de software (SVs), integradores de sist
 Siga el vínculo para empezar
 > [!div class="nextstepaction"]
 > [Paso siguiente](createaccount.md)
-

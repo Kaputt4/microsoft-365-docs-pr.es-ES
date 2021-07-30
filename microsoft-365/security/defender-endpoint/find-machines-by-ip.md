@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 47a8e9e48103eabc481a2f89d2a417582b9c563a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 31ff698a6094e72cea32b7db19db8edf947a1326
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543478"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655339"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Buscar dispositivos por API IP interna
 
@@ -30,7 +30,7 @@ ms.locfileid: "53543478"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -51,8 +51,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Application|Machine.Read.All|'Leer todos los perfiles de máquina'
-Application|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
+Aplicación|Machine.Read.All|'Leer todos los perfiles de máquina'
+Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
 Delegado (cuenta profesional o educativa)|Machine.Read|'Leer información de máquina'
 Delegado (cuenta profesional o educativa)|Machine.ReadWrite|'Leer y escribir información de máquina'
 
@@ -73,7 +73,7 @@ GET /api/machines/findbyip(ip='{IP}',timestamp={TimeStamp})
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

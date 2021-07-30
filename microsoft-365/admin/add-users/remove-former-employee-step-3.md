@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo a un buzón compartido.
-ms.openlocfilehash: df8652f89df5715ba45408f87755bd2ee238884c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541606"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650120"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Paso 3: Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo a un buzón compartido
 
@@ -60,7 +60,10 @@ Siga estos pasos sobre cómo convertir el buzón del usuario [en un buzón compa
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Abra y use un buzón compartido en Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd) 
- [Acceso al buzón de otra persona](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081) 
- [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center) 
- [Administrador de los elementos de correo y calendario de otra persona](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)
+[Abrir y usar un buzón compartido en Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
+
+[Obtener acceso al buzón de otra persona](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
+
+[Centro de administración de Exchange en Exchange Online](/exchange/exchange-admin-center)
+
+[Administrador de los elementos de correo y calendario de otra persona](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

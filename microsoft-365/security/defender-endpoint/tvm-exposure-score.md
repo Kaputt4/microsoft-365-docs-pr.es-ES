@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: af21b0ae3e03ebacae9412fc48693d57f32c81e6
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 15611500ae45f2406daf033d27b49de0e2cc3070
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568009"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656228"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Puntuación de exposición: Administración de amenazas y vulnerabilidades
 
@@ -32,10 +32,10 @@ ms.locfileid: "53568009"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 La puntuación de exposición está visible en el panel [de amenazas y administración de vulnerabilidades del](tvm-dashboard-insights.md) portal Microsoft 365 Defender exposición. Refleja lo vulnerable que es su organización a las amenazas de ciberseguridad. Una puntuación de exposición baja significa que los dispositivos son menos vulnerables a la explotación.
 
@@ -51,9 +51,9 @@ La tarjeta te ofrece una vista de alto nivel de la tendencia de puntuación de e
 
 La puntuación de exposición se divide en los siguientes niveles:
 
-- 0–29: puntuación de exposición baja
-- 30–69: puntuación de exposición media
-- 70–100: puntuación de exposición alta
+- 0-29: puntuación de exposición baja
+- 30-69: puntuación de exposición media
+- 70-100: puntuación de exposición alta
 
 Puede corregir los problemas en función de las recomendaciones de seguridad prioritarias [para](tvm-security-recommendation.md) reducir la puntuación de exposición. Cada software tiene debilidades que se transforman en recomendaciones y se priorizan en función del riesgo para la organización.
 

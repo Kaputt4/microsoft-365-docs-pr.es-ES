@@ -2,8 +2,8 @@
 title: Introducción a la visibilidad y la información
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a la visibilidad y la información.
-ms.openlocfilehash: 93be3557c32345e81c7126b669ead8edf8ebac21
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: f4cac209ed7372f78bd861ee9d683a93f0c36b28
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430485"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621552"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Introducción a la visibilidad y la información
 
@@ -29,15 +29,17 @@ El primer lugar para comenzar es el panel de gobernanza de aplicaciones en [http
 
 ![Página de información general de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
-También puede acceder al panel de gobernanza de aplicaciones desde **Centro de administración de Microsoft 365 > Centro de cumplimiento de Microsoft 365 > Gobernanza de aplicaciones > Información general**.
+También puede acceder al panel de gobernanza de aplicaciones desde **Office 365 > Centro de cumplimiento de Microsoft 365 > Gobernanza de aplicaciones > Información general**.
 
 ## <a name="whats-available-on-the-dashboard"></a>Lo que está disponible en el panel
 
 El panel contiene un resumen de los componentes del ecosistema de aplicaciones Microsoft 365 en el usuario:
 
 - **Resumen de usuarios**: rel recuento de categorías de alertas y aplicaciones clave.
-- **Alertas de directiva y detección**: las alertas activas más recientes en el usuario
-- **Acceso a datos y recursos**: agregue el acceso a la API de la aplicación y al uso general de los recursos principales del usuario. Pase el mouse por cada columna de mes en el gráfico para ver el valor correspondiente.
+- **Principales alertas**: las diez alertas activas más recientes del espacio empresarial
+- **Acceso a datos y recursos**: pase el mouse por cada columna de mes en el gráfico para ver el valor correspondiente.
+    - **Acceso a datos durante los últimos cuatro meses**: permite seguir los datos totales a los que acceden todas las aplicaciones del espacio empresarial a través de la API de Graph durante los últimos cuatro meses naturales. Actualmente solo incluye el uso de carga y descarga de correo y archivos.
+    - **Acceso a los datos de los recursos principales durante los últimos cuatro meses**: uso de datos de los últimos cuatro meses naturales, desglosados por tipo de recurso. Actualmente solo incluye el uso de carga y descarga de correo y archivos
 - **Mejore la protección y la gobernanza de sus aplicaciones**: acciones recomendadas tales como la creación de una directiva de permisos o de uso de aplicaciones.
 - **Principales aplicaciones por categorías**: las aplicaciones principales ordenadas por estas categorías:
   

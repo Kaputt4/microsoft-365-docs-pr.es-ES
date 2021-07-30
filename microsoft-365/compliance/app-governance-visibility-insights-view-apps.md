@@ -2,8 +2,8 @@
 title: Ver sus aplicaciones
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,25 +14,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Ver sus aplicaciones.
-ms.openlocfilehash: 48a1a2140a3b59091796ca013a12eeefb8a284b9
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 5a11e161fb7b37405b61866599a616874ad4a190
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420264"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623031"
 ---
 # <a name="view-your-apps"></a>Ver sus aplicaciones
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-La gobernanza de aplicaciones de Microsoft le permite obtener rápidamente información detallada sobre las aplicaciones de Microsoft 365 en su usuario. Por ejemplo, puede ver:
+La gobernanza de aplicaciones de Microsoft le permite obtener rápidamente información detallada sobre las aplicaciones de Microsoft 365 de su espacio empresarial. Por ejemplo, puede ver:
 
 - Una lista de aplicaciones habilitadas para OAuth en el usuario que usa la API de Microsoft Graph, junto con los metadatos de aplicación y los datos de uso pertinentes.
 - Detalles de las aplicaciones con enfoques e información más detallados al seleccionar una aplicación en la lista.
 
 ## <a name="getting-a-list-of-all-the-apps-in-your-tenant"></a>Obtener una lista de todas las aplicaciones de su usuario
 
-Para obtener un resumen de las aplicaciones de su usuario, diríjase a **Centro de cumplimiento de Microsoft 365 > Protección de aplicaciones y gobernanza > Aplicaciones**.
+Para obtener un resumen de las aplicaciones de su usuario, diríjase a **Centro de cumplimiento de Microsoft 365 > Gobernanza de aplicaciones > Aplicaciones**.
 
 ![La página de resumen de la aplicación MAPG en el centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
@@ -44,7 +44,7 @@ Verá una lista de aplicaciones y esta información:
 
 - Nombre de la aplicación
 - Editorial
-- Certificación de la aplicación
+- Certificación M365
 
   Indica si la aplicación es compatible con las tecnologías de Microsoft, cumple con los procedimientos recomendados de seguridad de aplicaciones en la nube, y es compatible con Microsoft.
 
@@ -74,12 +74,12 @@ El panel de detalles de la aplicación proporciona información adicional sobre 
 | Nombre de la pestaña | Descripción |
 |:-------|:-----|
 | Detalles | Vea datos adicionales en la aplicación, como la fecha en que se consiente por primera vez y el identificador de la aplicación. Para ver las propiedades de la aplicación como registrada en Azure AD, seleccione **Ver aplicación en Azure AD**. |
-| Uso | Vea los datos a los que accede la aplicación en el usuario, trace el uso de datos y muestre el uso por parte de los principales usuarios \<x> y usuarios con [cuentas prioritarias](/microsoft-365/admin/setup/priority-accounts). |
+| Uso |Vea los datos a los que accede la aplicación en el espacio empresarial y trace el uso de datos para los recursos de SharePoint y Exchange. |
 | Usuarios | Vea una lista de los usuarios que usan la aplicación, si son una cuenta prioritaria y la cantidad de datos descargados y cargados. |
 | Permisos | Vea un resumen de los permisos concedidos y usados por la aplicación y la lista de permisos específicos. Vea la [referencia de los permisos de Microsoft Graph](/graph/permissions-reference)para obtener más información. |
 |||
 
-Para una aplicación habilitada, también está el control **Deshabilitar la aplicación** para deshabilitar el uso de la aplicación seleccionada y el control **Habilitar la aplicación** para habilitar el uso de la aplicación deshabilitada. Estas acciones requieren estos [roles de administrador](app-governance-get-started.md#administrator-roles):
+Para una aplicación habilitada, también puede usar el control **Deshabilitar la aplicación** para deshabilitar el uso de la aplicación seleccionada o el control **Habilitar la aplicación** para habilitar el uso de una aplicación deshabilitada. Estas acciones requieren los siguientes roles de administrador:
 
 - Administrador de cumplimiento
 - Administrador global

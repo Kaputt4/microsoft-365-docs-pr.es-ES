@@ -2,8 +2,8 @@
 title: Crear directivas de aplicación
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de aplicación.
-ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 317254714188bd1118a5ba285c5cc91f050abd28
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438065"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619176"
 ---
 # <a name="create-app-policies"></a>Crear directivas de aplicación
 
@@ -50,7 +50,7 @@ El gobierno de las aplicaciones incluye estas plantillas para generar alertas so
 
 | Nombre de la plantilla | Descripción |
 |:-------|:-----|
-| Nueva aplicación con un alto volumen de acceso a datos | Destaca las aplicaciones registradas recientemente con un alto volumen de acceso a los datos para asegurarse de que esos patrones de datos son los esperados. <br><br> De forma predeterminada, esta directiva marcará todas las aplicaciones que se hayan registrado en los últimos 7 días y que hayan tenido más de 1 GB de acceso a datos durante ese periodo. Esta directiva se puede personalizar con más condiciones y acciones. |
+| Nueva aplicación con un alto volumen de acceso a datos | Destaca las aplicaciones registradas recientemente con un alto volumen de acceso a los datos para asegurarse de que esos patrones de datos son los esperados. <br><br> De forma predeterminada, esta directiva marcará todas las aplicaciones que se han registrado en los últimos 7 días y que han tenido más de 1 GB de acceso a datos durante ese período. Esta directiva se puede personalizar con más condiciones y acciones. |
 |||
 
 ### <a name="app-permissions"></a>Permisos de aplicación
@@ -63,13 +63,13 @@ El gobierno de las aplicaciones incluye estas plantillas para generar alertas so
 | Nueva aplicación con permisos de alto privilegio | Destaca todas las nuevas aplicaciones con permisos de alto privilegio para identificar las posibles aplicaciones de alto impacto que pueden necesitar una mayor investigación. <br><br> De forma predeterminada, esta directiva marcará todas las aplicaciones registradas en los últimos 7 días que tengan permisos de alto alcance. |
 |||
 
-### <a name="app-certification"></a>Certificación de aplicación
+### <a name="m365-certification"></a>Certificación M365
 
-El gobierno de las aplicaciones incluye estas plantillas para generar alertas para la certificación de aplicaciones.
+El gobierno de las aplicaciones incluye estas plantillas para generar alertas para la certificación de M365.
 
 | Nombre de la plantilla | Descripción |
 |:-------|:-----|
-| Nueva aplicación no certificada | Destaca las nuevas aplicaciones que no han pasado por el proceso de certificación de aplicaciones para garantizar que son esperadas en el inquilino. <br><br> De forma predeterminada, esta directiva marcará todas las aplicaciones que se hayan registrado en los últimos 7 días y que no estén certificadas. |
+| Nueva aplicación no certificada | Destaca las nuevas aplicaciones que no han pasado por el proceso de certificación de M365 para garantizar que son esperadas en el espacio empresarial. <br><br> De forma predeterminada, esta directiva marcará todas las aplicaciones que se hayan registrado en los últimos 7 días y que no estén certificadas. |
 |||
 
 ## <a name="custom-app-policies"></a>Directivas de aplicación personalizadas
@@ -109,7 +109,7 @@ Estas son las condiciones disponibles para una directiva de aplicación personal
 |Condición | Valores de condición aceptados | Más información |
 |:-------|:-----|:-------|
 | Edad de registro de la aplicación | En los últimos X días |  |
-| Certificación de aplicación | Cumplimiento básico, cumplimiento del MCAS o N/A | [Certificación Microsoft 365](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
+| Certificación M365 | Cumplimiento básico, cumplimiento del MCAS o N/A | [Certificación Microsoft 365](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
 | Verificación del editor | Sí o no | [Verificación del editor](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
 | Permiso de aplicación | Seleccione uno o más permisos de API de la lista | [Referencia de permisos de Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) |
 | Permiso delegado | Seleccione uno o más permisos de API de la lista | [Referencia de permisos de Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) |
@@ -127,11 +127,7 @@ Estas son las condiciones disponibles para una directiva de aplicación personal
 | Tasa de errores | La tasa de error es superior al X% en los últimos 7 días, donde X es un valor definido por el administrador |  |
 ||||
 
-<!--
-NOTE TO WRITER: Replace X in the above table with correct values.
--->
-
-Se deben cumplir todas las condiciones especificadas para que se aplique esta directiva de aplicaciones.
+Se deben cumplir todas las condiciones especificadas para que esta directiva de aplicación genere una alerta.
 
 Cuando haya terminado de especificar las condiciones, seleccione **Guardar**, y luego seleccione **Siguiente**.
 

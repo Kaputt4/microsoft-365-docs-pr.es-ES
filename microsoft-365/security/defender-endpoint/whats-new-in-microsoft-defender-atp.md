@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9fa03a11a548cfd60e9b9911eb2a87be0af37015
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 33bd21cb338d5c792e6241ac61f75712ecc1ad45
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542640"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656072"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -32,7 +32,7 @@ ms.locfileid: "53542640"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Por lo general, las siguientes características están disponibles (GA) en la versión más reciente de Microsoft Defender para endpoint, así como las características de seguridad en Windows 10 y Windows Server.
 
@@ -158,7 +158,7 @@ Para obtener más información sobre las características de vista previa, vea [
 
 ## <a name="october-2018"></a>Octubre de 2018
 
-- [Reglas de reducción de la superficie expuesta a ataques](attack-surface-reduction.md)<BR>Todas las reglas de reducción de superficie de ataque ahora son compatibles Windows Server 2019.
+- [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)<BR>Todas las reglas de reducción de superficie de ataque ahora son compatibles Windows Server 2019.
 
 - [Acceso controlado a carpetas](enable-controlled-folders.md)<BR> El acceso controlado a carpetas ahora es compatible Windows Server 2019.
 
@@ -190,7 +190,7 @@ Threat Analytics es un conjunto de informes interactivos publicados por el equip
 
    Consulta datos con búsqueda avanzada en Microsoft Defender para endpoint.
 
-- [Reglas de reducción de la superficie expuesta a ataques](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [Reglas de la reducción de la superficie expuesta a ataques](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 
   Nuevas reglas de reducción de superficie de ataque:
 

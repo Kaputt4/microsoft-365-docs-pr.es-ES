@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a93ea3427c72eb5529715b92cb18d01462493cc6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9ec708ee24d33765203730412ddfc7eea5cc2e37
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842859"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650360"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Programar exámenes con Microsoft Defender para endpoint en macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "52842859"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Aunque puede iniciar un examen de amenazas en cualquier momento con Microsoft Defender para endpoint, su empresa puede beneficiarse de exámenes programados o programados. Por ejemplo, puede programar un examen para que se ejecute al principio de cada día laborable o semana. 
 
@@ -41,9 +41,13 @@ Aunque puede iniciar un examen de amenazas en cualquier momento con Microsoft De
 
 Puedes crear una programación de análisis mediante el demonio que *se* inicia en un dispositivo macOS.
 
-1. El código siguiente muestra el esquema que debe usar para programar un examen. Abra un editor de texto y use este ejemplo como guía para su propio archivo de examen programado.
+Para obtener más información sobre el formato *de archivo .plist* que se usa aquí, consulta Acerca [de los archivos](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) de lista de propiedades de información en el sitio web oficial para desarrolladores de Apple.
 
-    Para obtener más información sobre el formato *de archivo .plist* que se usa aquí, consulta Acerca [de los archivos](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) de lista de propiedades de información en el sitio web oficial para desarrolladores de Apple.
+### <a name="schedule-a-quick-scan"></a>Programar un examen rápido
+
+El código siguiente muestra el esquema que debe usar para programar un examen rápido. 
+
+1. Abra un editor de texto y use este ejemplo como guía para su propio archivo de examen programado.
 
     ```XML
     <?xml version="1.0" encoding="UTF-8"?>
@@ -80,18 +84,56 @@ Puedes crear una programación de análisis mediante el demonio que *se* inicia 
 
 2. Guarde el archivo *como com.microsoft.wdav.schedquickscan.plist*.
 
-    > [!TIP]
-    > Para ejecutar un examen completo en lugar de un examen rápido, cambie la línea 12, , para usar la opción en lugar de (es decir, ) y guarde el archivo como `<string>/usr/local/bin/mdatp scan quick</string>` `full` `quick` `<string>/usr/local/bin/mdatp scan full</string>` *com.microsoft.wdav.sched **full** scan.plist* en lugar de *com.microsoft.wdav.sched **quick** scan.plist*.
+### <a name="schedule-a-full-scan"></a>Programar un examen completo
 
-3. Abra **terminal**.
-4. Escriba los siguientes comandos para cargar el archivo:
+1. Abra un editor de texto y use este ejemplo para un examen completo.
+
+    ```XML
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+      "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.microsoft.wdav.schedfullscan</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>sh</string>
+            <string>-c</string>
+            <string>/usr/local/bin/mdatp scan full</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>StartCalendarInterval</key>
+        <dict>
+            <key>Day</key>
+            <integer>3</integer>
+            <key>Hour</key>
+            <integer>2</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+            <key>Weekday</key>
+            <integer>5</integer>
+        </dict>
+        <key>WorkingDirectory</key>
+        <string>/usr/local/bin/</string>
+    </dict>
+    </plist>
+     ```
+
+2. Guarde el archivo *como com.microsoft.wdav.schedfullscan.plist*.
+ 
+### <a name="load-your-file"></a>Cargar el archivo
+
+1. Abra **terminal**.
+2. Escriba los siguientes comandos para cargar el archivo:
 
     ```bash
     launchctl load /Library/LaunchDaemons/<your file name.plist>
     launchctl start <your file name>
     ```
 
-5. El examen programado se ejecutará en la fecha, hora y frecuencia definidas en la lista p. En el ejemplo, el examen se ejecuta a las 2:00 a.m. todos los viernes. 
+3. El examen programado se ejecutará en la fecha, hora y frecuencia definidas en la lista p. En los ejemplos anteriores, el examen se ejecuta a las 2:00 a.m. todos los viernes. 
 
     El `Weekday` valor de usa un entero para indicar el quinto día de la `StartCalendarInterval` semana, o viernes.
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4e95cd275b1bcc5629619c948e56680b73bc7336
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 7f12c49d42b957549552cf05bb811c20de0418bb
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596247"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655808"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión
 
@@ -30,7 +30,7 @@ ms.locfileid: "53596247"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Las marcas de eventos en la escala de tiempo del dispositivo Defender para endpoint te ayudan a filtrar y organizar eventos específicos cuando se investigan posibles ataques.
 

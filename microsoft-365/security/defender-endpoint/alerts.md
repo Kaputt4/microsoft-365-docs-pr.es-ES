@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 19cee5d2d000458c99fb54bf47a54a44e9ff899f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 65c5047aec917089b83ef431630d4b591a539361
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542998"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655916"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso Alert
 
@@ -30,7 +30,7 @@ ms.locfileid: "53542998"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -56,7 +56,7 @@ Método |Tipo de valor devuelto |Descripción
 
 Propiedad |    Tipo    |    Descripción
 :---|:---|:---
-id | String | Id. de alerta.
+id | Cadena | Id. de alerta.
 title | String | Título de la alerta.
 description | String | Descripción de la alerta.
 alertCreationTime | DateTimeOffset que admite valores NULL | La fecha y hora (en UTC) se creó la alerta.
@@ -67,19 +67,19 @@ resolvedTime | DateTimeOffset que admite valores NULL | La fecha y hora en que s
 incidentId | Long que admite valores NULL | El [identificador de](view-incidents-queue.md) incidente de la alerta.
 investigationId | Long que admite valores NULL | El [identificador de](automated-investigations.md) investigación relacionado con la alerta.
 investigationState | Enumeración que admite valores null | El estado actual de la [investigación](automated-investigations.md). Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
-assignedTo | String | Propietario de la alerta.
+assignedTo | Cadena | Propietario de la alerta.
 severity | Enum | Gravedad de la alerta. Los valores posibles son: 'UnSpecified', 'Informational', 'Low', 'Medium' y 'High'.
 status | Enum | Especifica el estado actual de la alerta. Los valores posibles son: "Desconocido", "Nuevo", "InProgress" y "Resuelto".
 classification | Enumeración que admite valores null | Especificación de la alerta. Los valores posibles son: 'Unknown', 'FalsePositive', 'TruePositive'.
 determinación | Enumeración que admite valores null | Especifica la determinación de la alerta. Los valores posibles son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
-categoría| String | Categoría de la alerta.
-detectionSource | String | Origen de detección.
-threatFamilyName | String | Familia de amenazas.
-threatName | String | Nombre de la amenaza.
-machineId | String | Id. de una [entidad de](machine.md) máquina asociada a la alerta.
-computerDnsName | String | [nombre](machine.md) completo de la máquina.
-aadTenantId | String | El Azure Active Directory de usuario.
-detectorId | String | El identificador del detector que desencadenó la alerta.
+categoría| Cadena | Categoría de la alerta.
+detectionSource | Cadena | Origen de detección.
+threatFamilyName | Cadena | Familia de amenazas.
+threatName | Cadena | Nombre de la amenaza.
+machineId | Cadena | Id. de una [entidad de](machine.md) máquina asociada a la alerta.
+computerDnsName | Cadena | [nombre](machine.md) completo de la máquina.
+aadTenantId | Cadena | El Azure Active Directory de usuario.
+detectorId | Cadena | El identificador del detector que desencadenó la alerta.
 comments | Lista de comentarios de alerta | El objeto Alert Comment contiene: cadena de comentario, createdBy string y createTime date time.
 Evidencia | Lista de pruebas de alerta | Evidencia relacionada con la alerta. Vea el ejemplo abajo.
 

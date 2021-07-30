@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Estamos publicando nuevas directivas de alerta para Microsoft Defender para Office 365. También estamos retirando dos directivas de alerta existentes que se han reemplazado por las nuevas.
-ms.openlocfilehash: 5791c909cc9cb94abab5d0dd013d250939fae160
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d9515c4a6b4fead11f0b8f8b2eeb82d19b8dbf34
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289192"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621996"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nuevas directivas de alerta en Microsoft Defender para Office 365
 
@@ -99,7 +99,7 @@ Las nuevas alertas empezarán a activarse y desencadenarán investigaciones de A
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Lo que tiene que hacer para prepararse para estos cambios
 
-La manera en que su organización utiliza estas alertas determina lo que necesita hacer para prepararse. Si ha puesto en funcionamiento las alertas y las está utilizando o las usa a través de una API, una notificación de correo electrónico de alerta, en el Centro de seguridad y cumplimiento de Office 365 (`https://protection.office.com/viewalerts`) o el Centro de seguridad de Microsoft (`https://security.microsoft.com/viewalerts`), deberá modificar sus flujos de trabajo.
+La manera en que su organización utiliza estas alertas determina lo que necesita hacer para prepararse. Si ha puesto en funcionamiento las alertas y las usa mediante una API, una notificación de correo electrónico de alerta, o mediante el Centro de cumplimiento de Microsoft 365 (`https://compliance.mmicrosoft.com/viewalerts`) o el Centro de seguridad de Microsoft (`https://security.microsoft.com/viewalerts`), deberá modificar sus flujos de trabajo.
 
 **Si no ha puesto en funcionamiento estas alertas, puede seguir uno de estos procedimientos:**
 

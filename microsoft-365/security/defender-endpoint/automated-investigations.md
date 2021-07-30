@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 35c8f85bad73d98aa6eef0f58f853560fe9a1e63
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: fc69992139235dd0e99a0c22e92f87c8447dab43
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590676"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655904"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
@@ -46,7 +46,7 @@ La tecnología de la investigación automatizada usa varios algoritmos de inspec
 En este artículo se proporciona información general sobre AIR e incluye vínculos a los siguientes pasos y recursos adicionales.
 
 > [!TIP]
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 ## <a name="how-the-automated-investigation-starts"></a>Cómo se inicia la investigación automatizada
 
@@ -91,7 +91,7 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)o posterior
 - Windows 10, versión [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) o posterior
 
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre los niveles de automatización](automation-levels.md)
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)

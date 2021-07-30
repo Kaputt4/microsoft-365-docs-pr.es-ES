@@ -19,12 +19,12 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: 6bb91b24b6e5ecc0d0dba4a1693f4d7278ee489e
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: e2065daf89bdebb2e4df6de35ad4c09c21df0a26
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542914"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656324"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>Información general sobre las capacidades de reducción de superficie de ataque
 
@@ -36,7 +36,7 @@ ms.locfileid: "53542914"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Las superficies de ataque son todos los lugares donde su organización es vulnerable a ciberamenazas y ataques. Defender for Endpoint incluye varias funcionalidades para ayudar a reducir las superficies de ataque. Vea el siguiente vídeo para obtener más información sobre la reducción de superficie de ataque.
 
@@ -53,5 +53,5 @@ Como se mencionó en el vídeo, Defender for Endpoint incluye varias funcionalid
 | [Acceso controlado a carpetas](controlled-folders.md) | Ayudar a evitar que las aplicaciones malintencionadas o sospechosas (incluido el malware ransomware cifrado de archivos) realicen cambios en los archivos de las carpetas clave del sistema (requiere Antivirus de Microsoft Defender) |
 | [Protección de red](network-protection.md) | Amplíe la protección al tráfico de red y la conectividad en los dispositivos de su organización. (Requiere Antivirus de Microsoft Defender) |
 | [Protección contra vulnerabilidades de seguridad](exploit-protection.md) | Ayude a proteger los sistemas operativos y las aplicaciones que usa su organización para evitar que se aprovechen. La protección contra vulnerabilidades de seguridad también funciona con soluciones antivirus de terceros. |
-| [Reglas de reducción de la superficie expuesta a ataques](attack-surface-reduction.md) | Reduzca los puntos vulnerables (las superficies de ataque) en sus aplicaciones con reglas inteligentes que le ayudarán a detener el malware. (Requiere Antivirus de Microsoft Defender). |
+| [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md) | Reduzca los puntos vulnerables (las superficies de ataque) en sus aplicaciones con reglas inteligentes que le ayudarán a detener el malware. (Requiere Antivirus de Microsoft Defender). |
 | [Control de dispositivos](device-control-report.md) | Protege contra la pérdida de datos mediante la supervisión y el control de los medios usados en dispositivos, como el almacenamiento extraíble y las unidades USB, en la organización. |

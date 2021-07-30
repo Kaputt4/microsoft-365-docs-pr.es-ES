@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la configuración y los filtros contra correo no deseado que ayudarán a evitar el correo no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 52e891a86e75309dadd445736738a3f25584823e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 9b960894b6923633489c005ee75307ec02b248f5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624866"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650204"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protección contra correo no deseado en EOP
 
@@ -82,7 +82,7 @@ Estos son algunos procedimientos recomendados que se aplican a cualquiera de los
 
 - **Usar la autenticación** de correo electrónico: si es propietario de un dominio de correo electrónico, puede usar DNS para asegurar que los mensajes de los remitentes de ese dominio sean legítimos. Para ayudar a evitar correo no deseado y suplantación de correo no deseado en EOP, use todos los siguientes métodos de autenticación de correo electrónico:
 
-  - **SPF:** el marco de directivas de remitente comprueba la dirección IP de origen del mensaje con el propietario del dominio de envío. Para obtener una introducción rápida a SPF y configurarla rápidamente, consulte Configurar SPF para ayudar a evitar la [suplantación](set-up-spf-in-office-365-to-help-prevent-spoofing.md)de documentos . Para comprender en detalle cómo Microsoft 365 usa SPF, o para la solución de problemas o las implementaciones no estándar (por ejemplo, implementaciones híbridas), comience con [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md) (Cómo Microsoft 365 usa el marco de directivas permanente [SPF] para evitar la suplantación de identidad).
+  - **SPF:** el marco de directivas de remitente comprueba la dirección IP de origen del mensaje con el propietario del dominio de envío. Para obtener una introducción rápida a SPF y configurarla rápidamente, consulte Configurar SPF para ayudar a evitar la [suplantación](set-up-spf-in-office-365-to-help-prevent-spoofing.md)de documentos . Para comprender en detalle cómo Microsoft 365 usa SPF, o para la solución de problemas o las implementaciones no estándar (por ejemplo, implementaciones híbridas), comience con [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md) (Cómo Microsoft 365 usa el marco de directivas permanente [SPF] para evitar la suplantación de identidad).
 
   - **DKIM:** DomainKeys Identified Mail agrega una firma digital al encabezado del mensaje de los mensajes enviados desde su dominio. Para obtener información, vea [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](use-dkim-to-validate-outbound-email.md).
 
@@ -108,7 +108,7 @@ Estos son algunos pasos que puede seguir para ayudar a evitar falsos positivos:
 
 - **Compruebe la configuración del filtro de correo Outlook correo no deseado del usuario:**
 
-  - **Compruebe** que el filtro de correo no deseado de Outlook está deshabilitado: cuando el filtro de correo no deseado de Outlook se establece en el valor predeterminado **No** hay filtrado automático , Outlook no intenta clasificar los masajes como correo no deseado.  Cuando se establece  en Bajo o **Alto,** el filtro de correo no deseado de Outlook usa su propia tecnología de filtro SmartScreen para identificar y mover correo no deseado a la carpeta correo no deseado, por lo que podría obtener falsos positivos. Tenga en cuenta que Microsoft dejó de producir actualizaciones de definición de correo no deseado para los filtros SmartScreen en Exchange y Outlook noviembre de 2016. Las definiciones de correo no deseado de SmartScreen existentes se dejaron en su lugar, pero es probable que su eficacia se degrade con el tiempo.
+  - **Compruebe** que el filtro de correo no deseado de Outlook está deshabilitado: cuando el filtro de correo no deseado de Outlook se establece en el valor predeterminado **No** hay filtrado automático , Outlook no intenta clasificar los mensajes como correo no deseado.  Cuando se establece  en Bajo o **Alto,** el filtro de correo no deseado de Outlook usa su propia tecnología de filtro SmartScreen para identificar y mover correo no deseado a la carpeta correo no deseado, por lo que podría obtener falsos positivos. Tenga en cuenta que Microsoft dejó de producir actualizaciones de definición de correo no deseado para los filtros SmartScreen en Exchange y Outlook noviembre de 2016. Las definiciones de correo no deseado de SmartScreen existentes se dejaron en su lugar, pero es probable que su eficacia se degrade con el tiempo.
 
   - Compruebe que la configuración Outlook "solo listas de **Caja fuerte"** está deshabilitada: cuando esta configuración está habilitada, solo los mensajes de remitentes de la lista de remitentes de Caja fuerte o de la lista de destinatarios Caja fuerte del usuario se entregan a la Bandeja de entrada; el correo electrónico de todos los demás se mueve automáticamente a la carpeta Correo no deseado.
 

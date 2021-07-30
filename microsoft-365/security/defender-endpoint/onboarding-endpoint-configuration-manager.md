@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e04535268c94478c862998cfd91df1680eb22fc0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 5e8cb3b843ce3f8bbbec6d1dc96bf2aa237eaa2a
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542098"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655568"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
@@ -33,7 +33,7 @@ ms.locfileid: "53542098"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 Este artículo forma parte de la guía de implementación y actúa como un método de incorporación de ejemplo. 
@@ -117,7 +117,7 @@ Después de completar esta tarea, ahora tienes una colección de dispositivos co
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Paso 2: Configurar Microsoft Defender para las funcionalidades de punto de conexión 
 En esta sección se le guía en la configuración de las siguientes funcionalidades mediante Microsoft Endpoint Configuration Manager en Windows dispositivos:
 
-- [**Detección y respuesta de puntos de conexión.**](#endpoint-detection-and-response)
+- [**Detección y respuesta de puntos de conexión**](#endpoint-detection-and-response)
 - [**Protección de última generación**](#next-generation-protection)
 - [**Reducción de la superficie expuesta a ataques**](#attack-surface-reduction)
 

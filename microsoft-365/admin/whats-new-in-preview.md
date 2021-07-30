@@ -21,12 +21,12 @@ description: The Centro de administración de Microsoft 365- learn about the fea
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 497d1f78b2d0c17cfcaa23571838c4dc363b7017
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1071826fde079ca13626eb8034f41b9c522961d6
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394715"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649952"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
@@ -143,7 +143,7 @@ Para obtener más información sobre las nuevas características, consulte [Cent
 
 ### <a name="whats-new-features"></a>Novedades
 
-Hemos realizado mejoras en la forma de ver las características "Novedades" para los usuarios en las aplicaciones Office usuario. Ahora puede ver el contenido enriquecido en el nuevo panel Whats' que los usuarios pueden ver. También puedes obtener más información sobre la característica antes de decidir que los usuarios sepan acerca de la característica. Para obtener más información, consulta [Administrar qué Office aparecen en Novedades](manage/show-hide-new-features.md).
+Hemos realizado mejoras en la forma de ver las características "Novedades" para los usuarios en las aplicaciones Office usuario. Ahora puede ver el contenido enriquecido en el panel Novedades que los usuarios pueden ver. También puedes obtener más información sobre la característica antes de decidir que los usuarios sepan acerca de la característica. Para obtener más información, consulta [Administrar qué Office aparecen en Novedades](manage/show-hide-new-features.md).
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
 
@@ -403,7 +403,7 @@ Novedades de la serie de vídeos de **Microsoft 365:** este mes, tratamos sugere
 - [Registrarse en Microsoft Business Basic](../business-video/sign-up.md)
 - [Configuración del inicio de sesión en dos factores](../business-video/sign-up.md)
 
-## <a name="march-2020"></a>Marzo de 2020
+## <a name="march-2020"></a>Marzo 2020
 
 ### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Corrección de comentarios destacados: mejorar la confiabilidad de "agregar usuario" para licencias
 

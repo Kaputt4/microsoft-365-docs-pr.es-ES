@@ -2,8 +2,8 @@
 title: Introducción a las directivas de aplicación
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las directivas de aplicación.
-ms.openlocfilehash: 3f80048835388e740ba64ac36d1aa19594bf7a9d
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: dbb45f0d3dbe014a0cc6e076e935fc5b9f7c49b9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420406"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623077"
 ---
 # <a name="get-started-with-app-policies"></a>Introducción a las directivas de aplicación
 
@@ -27,20 +27,20 @@ ms.locfileid: "53420406"
 
 Las directivas de aplicación para la gobernanza de aplicaciones de Microsoft le permiten implementar condiciones más proactivas o reactivas a fin de crear alertas o correcciones automáticas para las necesidades específicas de cumplimiento de aplicaciones en la organización.
 
-Para ver una lista de las directivas de aplicaciones actuales, vaya al **Centro de cumplimiento de Microsoft 365 > Protección y gobernanza de aplicaciones > Directivas**.
+Para ver una lista de las directivas de aplicaciones actuales, vaya al **Centro de cumplimiento de Microsoft 365 > Gobernanza de aplicaciones > Directivas**.
 
 ![La página de resumen de directivas de MAPG en el Centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
 ## <a name="whats-available-on-the-app-policies-dashboard"></a>Que información está disponible en el panel de políticas de aplicaciones
 
-Puede ver la cantidad de directivas activas, inactivas y de prueba, así como la siguiente información para cada directiva:
+Puede ver la cantidad de directivas activas, inactivas y de auditoría, así como la información relativa a cada directiva:
 
 - **Nombre de la directiva**
 - **Estado**
 
   - **Activa**: todas las acciones y evaluaciones de la directiva están activas.
   - **Inactive**: todas las acciones y evaluaciones de la directiva están deshabilitadas.
-  - **Modo de auditoría**: la evaluación de la directiva está en modo de auditoría. La directiva está activa, pero las acciones de directiva están deshabilitadas.
+  - **Modo de auditoría**: la evaluación de directivas está activa (se desencadenarán alertas), pero las acciones de directiva están deshabilitadas.
 
 - **Gravedad**: nivel de gravedad establecido en cualquier alerta activada debido a que esta directiva se evalúa como TRUE, lo que forma parte de la configuración de la directiva.
 - **Número de alertas activas**: alertas generadas por la directiva, que tienen un estado **En curso** o **Nueva**.
@@ -54,13 +54,13 @@ Al seleccionar una directiva, verá un panel de directivas detallado con esta in
 
 - **Descripción**: una explicación más detallada del propósito de la directiva.
 - **Creada por**: nombre principal de usuario (UPN) de la cuenta que creó la directiva.
-- Una lista de las alertas activas generadas por esta directiva.
+- Lista del total de alertas y de las alertas activas generadas por esta directiva.
 
 Puede editar o eliminar una directiva de aplicación seleccionando **Editar** o **Eliminar** en el panel de detalles de la directiva o seleccionando los puntos suspensivos verticales de la directiva en la lista de directivas.
 
 También puede:
 
-- Crear una nueva directiva. Puede empezar con una directiva de uso de aplicaciones o una de permisos.
+- Cree una nueva directiva. Puede comenzar con una directiva de uso de aplicaciones o una directiva de permisos.
 - Exporte la lista de directivas a un archivo de valores separados por comas (CSV). Por ejemplo, podría abrir el archivo CVS en Microsoft Excel y ordenar la lista de directivas por **Gravedad** y, luego, por **Número total de alertas**.
 - Busque en la lista de directivas.
 

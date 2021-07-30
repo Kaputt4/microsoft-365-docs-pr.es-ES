@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: trabajar desde casa, trabajo desde casa, híbrido, trabajador remoto, trabajo híbrido, empleados remotos, conectividad híbrida, acceso remoto, trabajo remoto, teletrabajo, teletrabajar, trabajo móvil, trabajo remoto, empleo remoto, trabajar desde cualquier lugar, lugar de trabajo flexible
 description: Desplazarse por las capas de la infraestructura para que los trabajadores híbridos puedan acceder de forma segura a los recursos locales y de Microsoft 365..
-ms.openlocfilehash: fed23a4607cfb47049a6540dfb592d9a8baf9d21
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 75c8ee6bc736bbe53638cb9040cf2bb68e333201
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229376"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650192"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configure su infraestructura para el trabajo híbrido con Microsoft 365
 
@@ -82,22 +82,22 @@ Para una experiencia de inicio de sesión perfecta, las cuentas de usuario de Ac
 
 Para habilitar las funcionalidades de Microsoft 365 para sus trabajadores híbridos, utilice estas características de Microsoft 365.
 
-| Funcionalidad o característica | Description | Licencias |
-|:-------|:-----|:-------|
-| MFA aplicada en los valores predeterminados de seguridad   | Protege frente a ataques a identidades y dispositivos, pues obliga a usar una segunda forma de autenticación para iniciar sesión. Los valores predeterminados de seguridad requieren MFA para todas las cuentas de usuario.   | Microsoft 365 E3 o E5 |
-| MFA aplicada con acceso condicional| Requerir la MFA según las propiedades del inicio de sesión con directivas de Acceso condicional.    | Microsoft 365 E3 o E5 |
-| MFA aplicada con Acceso condicional basado en los riesgos   | Requerir la MFA según el riesgo de inicio de sesión del usuario con Microsoft Defender for Identity. | Microsoft 365 E5 o E3 con las licencias de Azure AD Premium P2 |
-| Autoservicio de restablecimiento de contraseña (SSPR)    | Permitir que los usuarios restablezcan o desbloqueen su contraseña o cuenta ellos mismos.  | Microsoft 365 E3 o E5 |
-| Proxy de aplicación de Azure AD    | Da acceso remoto seguro para aplicaciones basadas en web que se encuentren en servidores de intranet.   | Se requiere una suscripción de pago de Azure aparte. |
-| VPN de Azure de punto a sitio   | Crea una conexión segura desde el dispositivo de un trabajador remoto a la intranet a través de una red virtual de Azure.   | Se requiere una suscripción de pago de Azure aparte. |
-| Windows Virtual Desktop   | Apoya a los trabajadores remotos que solo pueden usar sus propios dispositivos personales no administrados ofreciéndoles escritorios virtuales que se ejecutan en Azure. | Se requiere una suscripción de pago de Azure aparte. |
-| Servicios de Escritorio remoto (RDS) | Permite que los empleados se conecten a equipos con Windows en la intranet. | Microsoft 365 E3 o E5 |
-| Puerta de enlace de Servicios de Escritorio remoto   | Cifra las comunicaciones y evita que los hosts de RDS se expongan directamente a Internet. | Requiere licencias aparte de Windows Server. |
-| Microsoft Intune | Administra dispositivos y aplicaciones.   | Microsoft 365 E3 o E5 |
-| Configuration Manager | Administra instalaciones, actualizaciones y configuraciones de software en sus dispositivos. | Se requieren licencias aparte de Configuration Manager. |
-| Análisis de escritorio | Determina la preparación de la actualización de los clientes de Windows.   | Se requieren licencias aparte de Configuration Manager. |
-| Windows Autopilot | Instala y preconfigura nuevos dispositivos con Windows 10 para un uso productivo.   | Microsoft 365 E3 o E5 |
-| Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Aplicaciones de Microsoft 365, Microsoft Power Platform, y Yammer | Crear, comunicar y colaborar. | Microsoft 365 E3 o E5 |
+|Funcionalidad o característica|Description|Licencias|
+|---|---|---|
+|MFA aplicada en los valores predeterminados de seguridad|Protege frente a ataques a identidades y dispositivos, pues obliga a usar una segunda forma de autenticación para iniciar sesión. Los valores predeterminados de seguridad requieren MFA para todas las cuentas de usuario.|Microsoft 365 E3 o E5|
+|MFA aplicada con acceso condicional|Requerir la MFA según las propiedades del inicio de sesión con directivas de Acceso condicional.|Microsoft 365 E3 o E5|
+|MFA aplicada con Acceso condicional basado en los riesgos|Requerir la MFA según el riesgo de inicio de sesión del usuario con Microsoft Defender for Identity.|Microsoft 365 E5 o E3 con las licencias de Azure AD Premium P2|
+|Autoservicio de restablecimiento de contraseña (SSPR)|Permitir que los usuarios restablezcan o desbloqueen su contraseña o cuenta ellos mismos.|Microsoft 365 E3 o E5|
+|Proxy de aplicación de Azure AD|Da acceso remoto seguro para aplicaciones basadas en web que se encuentren en servidores de intranet.|Se requiere una suscripción de pago de Azure aparte.|
+|VPN de Azure de punto a sitio|Crea una conexión segura desde el dispositivo de un trabajador remoto a la intranet a través de una red virtual de Azure.|Se requiere una suscripción de pago de Azure aparte.|
+|Windows Virtual Desktop|Apoya a los trabajadores remotos que solo pueden usar sus propios dispositivos personales no administrados ofreciéndoles escritorios virtuales que se ejecutan en Azure.|Se requiere una suscripción de pago de Azure aparte.|
+|Servicios de Escritorio remoto (RDS)|Permite que los empleados se conecten a equipos con Windows en la intranet.|Microsoft 365 E3 o E5|
+|Puerta de enlace de Servicios de Escritorio remoto|Cifra las comunicaciones y evita que los hosts de RDS se expongan directamente a Internet.|Requiere licencias aparte de Windows Server.|
+|Microsoft Intune|Administra dispositivos y aplicaciones.|Microsoft 365 E3 o E5|
+|Configuration Manager|Administra instalaciones, actualizaciones y configuraciones de software en sus dispositivos.|Se requieren licencias aparte de Configuration Manager.|
+|Análisis de escritorio|Determina la preparación de la actualización de los clientes de Windows.|Se requieren licencias aparte de Configuration Manager.|
+|Windows Autopilot|Instala y preconfigura nuevos dispositivos con Windows 10 para un uso productivo.|Microsoft 365 E3 o E5|
+|Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Aplicaciones de Microsoft 365, Microsoft Power Platform, y Yammer|Crear, comunicar y colaborar.|Microsoft 365 E3 o E5|
 ||||
 
 Para ver los criterios de seguridad y cumplimiento consulte [Implementar la seguridad y el cumplimiento para trabajadores remotos](empower-people-to-work-remotely-security-compliance.md).
