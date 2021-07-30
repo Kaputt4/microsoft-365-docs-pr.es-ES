@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 2c1878dc9095fc4c4cfbd307154097cc6ff572f1
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 6cd7b69d154444bb6b39e61bc3446ea01d54321a
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624001"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663856"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Requisitos previos para las cuentas de invitado
 
@@ -45,6 +45,7 @@ Para habilitar esta configuración, siga estos pasos:
 > No puede deshacer esta configuración después de seleccionar **Sí**.
 
 Para obtener más información, vea [Administradores sin licencia en Microsoft Intune](/mem/intune/fundamentals/unlicensed-admins).
+
 ## <a name="steps-to-get-ready"></a>Pasos para prepararse
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)

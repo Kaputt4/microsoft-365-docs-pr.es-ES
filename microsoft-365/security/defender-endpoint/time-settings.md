@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cdea1b67f2d4412b5f08c2fef3abc80754f2e15a
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 0ef771983bb94a62ce2f45d00f879bc1d2f09861
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622753"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649016"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de zona horaria
 
@@ -31,7 +31,7 @@ ms.locfileid: "53622753"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
 
 Use el **icono 1 de** configuración de zona horaria del menú Zona ![ horaria para configurar la zona horaria y ver la información de ](images/atp-time-zone.png) licencia.
 

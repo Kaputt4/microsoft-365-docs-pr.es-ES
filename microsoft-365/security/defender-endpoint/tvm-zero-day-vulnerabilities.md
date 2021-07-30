@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b4ed79359d8d535ec47a287292cedf1d0520711e
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 4180b57ac053fffe3ea1b7ac584799c65c94ea95
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567193"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648944"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Mitigar vulnerabilidades de día cero: Administración de amenazas y vulnerabilidades
 
@@ -32,10 +32,10 @@ ms.locfileid: "53567193"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Una vulnerabilidad de día cero es una vulnerabilidad divulgada públicamente para la que no se han publicado revisiones oficiales ni actualizaciones de seguridad. Las vulnerabilidades de día cero suelen tener niveles de gravedad altos y se aprovechan activamente.
 
@@ -76,7 +76,7 @@ Busque software con la etiqueta de día cero. Filtra por la etiqueta "día cero"
 
 ### <a name="software-page"></a>Página de software
 
-Busque una etiqueta de día cero para cada software afectado por la vulnerabilidad de día cero.
+Busque una etiqueta de día cero para cada software que se haya visto afectado por la vulnerabilidad de día cero.
 
 :::image type="content" alt-text="Ejemplo de día cero para Windows Server 2016 de software." source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
 

@@ -1,5 +1,5 @@
 ---
-title: Ejecutar una versión de prueba de Temas de Microsoft Viva
+title: Ejecute una prueba de Temas Microsoft Viva
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 ms.custom: ''
 search.appverid: ''
 localization_priority: Normal
-description: Obtenga información sobre cómo planear y ejecutar un programa piloto de prueba para temas de Microsoft Viva en su organización.
-ms.openlocfilehash: 128e82e7664a76baa55d37e983319c9f344624fd
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+description: Obtenga información sobre cómo planear y ejecutar un programa piloto de prueba para Temas Microsoft Viva en su organización.
+ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327146"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649628"
 ---
-# <a name="run-a-trial-of-microsoft-viva-topics"></a>Ejecutar una versión de prueba de Temas de Microsoft Viva
+# <a name="run-a-trial-of-microsoft-viva-topics"></a>Ejecute una prueba de Temas Microsoft Viva
 
 En este artículo se describe cómo configurar y ejecutar un programa piloto de prueba para implementar Viva Topics en su organización. En este artículo también se recomiendan los procedimientos recomendados para la prueba.
 
@@ -30,12 +30,12 @@ Las pruebas están disponibles públicamente en uno de los siguientes orígenes.
 - Página [del producto Temas de Viva](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 - El [Centro de administración de Microsoft 365](https://admin.microsoft.com)
-    1.  Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
-    2.  Vaya a **Servicios de compra** de  >  **facturación**.
-    3.  Desplácese hacia abajo hasta la sección **Complementos**.
-    4.  En el **icono Experiencias del** tema, seleccione **Detalles**.
-    5.  Seleccione **Obtener prueba gratuita**.
-    6.  Siga los pasos del asistente restantes para confirmar la prueba.
+    1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
+    2. Vaya a **Servicios de compra** de  >  **facturación**.
+    3. Desplácese hacia abajo hasta la sección **Complementos**.
+    4. En el **icono Experiencias del** tema, seleccione **Detalles**.
+    5. Seleccione **Obtener prueba gratuita**.
+    6. Siga los pasos del asistente restantes para confirmar la prueba.
 
 Debe ser un administrador Microsoft 365 global o administrador de facturación para activar una versión de prueba.
 
@@ -44,11 +44,11 @@ Debe ser un administrador Microsoft 365 global o administrador de facturación p
 
 ### <a name="who-should-be-involved-in-a-trial"></a>Quién debe participar en una prueba
 
-|Rol  |Actividad  |
-|---------|---------|
-|Microsoft 365 administrador global o de facturación  |   Activar la versión de prueba y asignar licencias      |
-|Microsoft 365 administrador global o administrador SharePoint administrador    |       Configurar Temas de Viva y crear centros de temas  |
-|Usuario empresarial     |   Realizar roles de administrador de conocimientos, colaborador de temas y consumidor de temas      |
+|Rol|Actividad|
+|---|---|
+|Microsoft 365 administrador global o de facturación|Activar la versión de prueba y asignar licencias|
+|Microsoft 365 administrador global o administrador SharePoint administrador|Configurar Temas de Viva y crear centros de temas|
+|Usuario empresarial|Realizar roles de administrador de conocimientos, colaborador de temas y consumidor de temas|
 
 ### <a name="before-you-activate-a-trial"></a>Antes de activar una versión de prueba
 
@@ -59,8 +59,8 @@ La planeación es esencial para una prueba eficaz de Viva Topics. El período de
 Hay dos opciones de estrategia de alto nivel para la configuración de la detección de temas durante una prueba:
 
 - Indexe todo o la mayor parte de SharePoint contenido en línea.
-   - Los inquilinos grandes pueden tardar hasta dos semanas en indizar por completo. Aunque los temas se generarán de forma incremental durante este período, la indización completa podría consumir hasta la mitad del período de prueba.
-   - Para los inquilinos con un volumen de datos significativo, esta opción puede producir un gran número de temas, quizás decenas de miles.
+  - Los inquilinos grandes pueden tardar hasta dos semanas en indizar por completo. Aunque los temas se generarán de forma incremental durante este período, la indización completa podría consumir hasta la mitad del período de prueba.
+  - Para los inquilinos con un volumen de datos significativo, esta opción puede producir un gran número de temas, quizás decenas de miles.
 
 - Identifique un subconjunto de los SharePoint web para la indización.
 
@@ -78,11 +78,11 @@ Para la mayoría de las organizaciones, la segunda estrategia produce el mejor r
 
 Durante la prueba, hay tres roles que deben estar activos, que se describen en la tabla siguiente.
 
-|Rol  |Actividad  |
-|---------|---------|
-|Gerente de información     |   Controlar las fases del ciclo de vida de los temas; confirmar y quitar temas; actuar como administrador de la comunidad para colaboradores de temas      |
-|Colaborador de tema    |      Expertos en la materia del contenido, que pueden:<br> Revisar temas para evaluar la calidad del contenido definido por AI<br>Curación de temas detectados con contenido adicional<br>Crear temas adicionales que no fueron detectados por AI   |
-|Consumidor de temas    |     Consumir temas a través de los resaltados de página y la búsqueda<br>Proporcionar comentarios sobre el valor de los temas presentados    |
+|Rol|Actividad|
+|---|---|
+|Gerente de información|Controlar las fases del ciclo de vida de los temas; confirmar y quitar temas; actuar como administrador de la comunidad para colaboradores de temas|
+|Colaborador de tema|Expertos en la materia del contenido, que pueden:<br> Revisar temas para evaluar la calidad del contenido definido por AI<br>Curación de temas detectados con contenido adicional<br>Crear temas adicionales que no fueron detectados por AI|
+|Consumidor de temas|Consumir temas a través de los resaltados de página y la búsqueda<br>Proporcionar comentarios sobre el valor de los temas presentados|
 
 #### <a name="expected-topics"></a>Temas esperados
 
@@ -123,7 +123,7 @@ En función del resultado de la prueba, puede decidir si continúa con el uso en
 
 ### <a name="proceed-to-production-use"></a>Continuar con el uso de producción
 
-Para garantizar la continuidad del servicio, debe comprar el número necesario de licencias y asignar esas licencias a los usuarios. Los usuarios de prueba que no tienen una licencia completa al final del período de prueba no podrán acceder a ninguna experiencia de Viva Topics.
+Para garantizar la continuidad del servicio, debe comprar el número necesario de licencias y asignar esas licencias a los usuarios. Los usuarios de la versión prueba que no tengan una licencia completa al final del período de prueba no podrán acceder a ninguna experiencia de los Temas Viva.
 
 ### <a name="dont-proceed-to-production-use"></a>No continuar con el uso de producción
 
@@ -137,5 +137,4 @@ Si no compra licencias después de la versión de prueba:
 
 ## <a name="see-also"></a>Vea también
 
-[Introducción a la adopción de temas de Microsoft Viva](topics-adoption-getstarted.md)
-
+[Introducción a la adopción de Temas Microsoft Viva](topics-adoption-getstarted.md)

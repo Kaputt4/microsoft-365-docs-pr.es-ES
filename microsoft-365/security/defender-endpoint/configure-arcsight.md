@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8397731941a3344638edb0b57e77272f4fae930
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: b052bc0c02bbf71791b6c0a96767bc75d7d546bd
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591000"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649580"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>Configurar Micro Focus ArcSight para extraer Defender para detecciones de puntos de conexión
 
@@ -32,7 +32,7 @@ ms.locfileid: "53591000"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configurearcsight-abovefoldlink)
 
 Tendrás que instalar y configurar algunos archivos y herramientas para usar Micro Focus ArcSight para que pueda extraer Defender para detecciones de puntos de conexión.
 

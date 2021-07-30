@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db9ff6429062f110981a2e91506b155a506d6ee5
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 2b9914c67ba9e98d68e053b8c3613c7d883f82a5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591012"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649640"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -32,7 +32,7 @@ ms.locfileid: "53591012"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Según los productos de seguridad de Microsoft que use, algunas características avanzadas podrían estar disponibles para integrar Defender for Endpoint con.
 

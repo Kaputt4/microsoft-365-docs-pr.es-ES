@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 70607eb90fa6c1614ed10e90e4d6ee9cf36f7204
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 1ad4dd1bacb301ad50b5a6aa52e6a49eacb647f1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595707"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649400"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Privacidad y almacenamiento de datos de Microsoft Defender para endpoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "53595707"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 En esta sección se tratan algunas de las preguntas más frecuentes sobre privacidad y tratamiento de datos para Defender for Endpoint.
 
@@ -112,4 +112,4 @@ Al proporcionar a los clientes servicios compatibles y comprobados independiente
 
 Para obtener más información sobre los informes de certificación de Defender for Endpoint, vea [Centro de confianza de Microsoft](https://servicetrust.microsoft.com/). 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-datastorage-belowfoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-datastorage-belowfoldlink)

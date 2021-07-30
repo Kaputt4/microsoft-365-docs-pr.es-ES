@@ -19,12 +19,12 @@ description: Integre el servidor SIEM de su organización con Microsoft Defender
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e11d1e64b7c8c3b9d5b93516fe05aed3d5937290
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 0cf5206b1b821f876aa810ba2bf280ba2f426544
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105637"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663868"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Integración de SIEM con Microsoft Defender para Office 365
 
@@ -57,24 +57,20 @@ El servidor SIEM u otro sistema similar sondea la carga de **trabajo audit.gener
 
 En la tabla siguiente se resumen los valores **de AuditLogRecordType** que son relevantes para Microsoft Defender para Office 365 eventos:
 
-<br>
-
-****
-
-|Valor|Nombre del miembro|Description|
+| Valor | Nombre del miembro | Descripción |
 |---|---|---|
-|28|ThreatIntelligence|Eventos de suplantación de identidad y malware de Exchange Online Protection y Microsoft Defender para Office 365.|
-|41|ThreatIntelligenceUrl|Caja fuerte Vincula el tiempo de bloqueo y bloquea eventos de invalidación de Microsoft Defender para Office 365.|
-|47|ThreatIntelligenceAtpContent|Eventos de suplantación de identidad y malware para archivos de SharePoint Online, OneDrive para la Empresa y Microsoft Teams, desde Microsoft Defender para Office 365.|
-|64|AirInvestigation|Eventos automatizados de investigación y respuesta, como detalles de investigación y artefactos relevantes, de Microsoft Defender para Office 365 Plan 2.|
+| 28| ThreatIntelligence | Eventos de suplantación de identidad y malware de Exchange Online Protection y Microsoft Defender para Office 365. |
+| 41| ThreatIntelligenceUrl | Caja fuerte Vincula el tiempo de bloqueo y bloquea eventos de invalidación de Microsoft Defender para Office 365. |
+| 47| ThreatIntelligenceAtpContent | Eventos de suplantación de identidad y malware para archivos de SharePoint Online, OneDrive para la Empresa y Microsoft Teams, desde Microsoft Defender para Office 365. |
+| 64| AirInvestigation | Eventos automatizados de investigación y respuesta, como detalles de investigación y artefactos relevantes, de Microsoft Defender para Office 365 Plan 2. |
 |
 
 > [!IMPORTANT]
-> Debe ser un administrador global o tener asignado el rol administrador de seguridad en el portal de Microsoft 365 Defender para configurar la integración de SIEM con Microsoft Defender para Office 365. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
+> Debe tener asignado el rol administrador global o administrador de seguridad en el portal de Microsoft 365 Defender para configurar la integración de SIEM con Microsoft Defender para Office 365. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 >
 > El registro de auditoría debe estar activado para el Microsoft 365 de auditoría. Para obtener ayuda con esto, vea Activar o desactivar la búsqueda [del registro de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulta también
 
 [Investigación y respuesta de amenazas de Office 365](office-365-ti.md)
 

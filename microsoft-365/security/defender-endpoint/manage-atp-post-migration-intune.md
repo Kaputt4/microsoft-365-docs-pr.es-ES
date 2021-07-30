@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 06/11/2021
+ms.date: 07/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 127d27e84cd7fc1fdaf530bc149f5d6e0d950337
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fedd48d935ec023b8cd929cb978f5181914f546c
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541726"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663880"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Administrar Microsoft Defender para endpoint con Intune
 
@@ -35,7 +35,7 @@ ms.locfileid: "53541726"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Se recomienda usar [Microsoft Endpoint Manager](/mem), que incluye Microsoft Intune (Intune) para administrar las características de protección contra amenazas de la organización para dispositivos (también denominados puntos de conexión). [Obtenga más información sobre Endpoint Manager](/mem/endpoint-manager-overview).
 
@@ -44,7 +44,7 @@ En este artículo se describe cómo encontrar la configuración de Microsoft Def
 ## <a name="find-your-microsoft-defender-for-endpoint-settings-in-intune"></a>Buscar la configuración de Microsoft Defender para puntos de conexión en Intune
 
 > [!IMPORTANT]
-> Debe ser administrador global o administrador de servicios en Intune para configurar las opciones descritas en este artículo. Para obtener más información, vea **[Tipos de administradores (Intune).](/mem/intune/fundamentals/users-add#types-of-administrators)**
+> Debe tener asignado el rol de administrador global o de administrador de servicio en Intune para configurar las opciones descritas en este artículo. Para obtener más información, vea **[Tipos de administradores (Intune).](/mem/intune/fundamentals/users-add#types-of-administrators)**
 
 1. Vaya a Azure Portal ( [https://portal.azure.com](https://portal.azure.com) ) e inicie sesión.
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 78ca10d5da8d9cfb6e40764162b7161a61b6993a
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: d2919bb6fa20870eb0de1361b9674df2a74e8ea1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596007"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649388"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Revisar eventos y errores con el Visor de eventos
 
@@ -34,7 +34,7 @@ ms.locfileid: "53596007"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Puedes revisar los IDs de eventos en el [Visor de eventos](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) en dispositivos individuales.
 
@@ -147,7 +147,7 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
    |103|El ejecutable de Microsoft Defender para detección y respuesta de la red de extremo ha finalizado|El archivo ejecutable SenseNdr ha finalizado.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |
 
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>Temas relacionados
 

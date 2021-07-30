@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo planear Plan for Temas Microsoft Viva
-ms.openlocfilehash: bd732edf9d206f6d62ed0cb3040b1d077b1948ca
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8f02d917a6a977dfcd8fdca6745abcdc66142aaa
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542398"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649652"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planeación de Temas Microsoft Viva
 
@@ -54,6 +54,8 @@ Cuando se configuran los Temas, se puede elegir entre las siguientes opciones:
 - **Todos, excepto los sitios seleccionados**: Todos los sitios excepto los que usted especifique. Los sitios creados en el futuro se incluirán como orígenes para la detección de temas. 
 - **Solo sitios seleccionados:** solo los sitios que especifique. Los sitios creados en el futuro no se incluirán como fuentes para el descubrimiento de temas.
 - **Ningún sitio**: No incluya ningún sitio de SharePoint.
+
+Se recomienda seleccionar suficientes sitios para incluir al menos 20.000 documentos para obtener los mejores resultados de Viva Topics.
 
 Si elige **Todos,** excepto los sitios seleccionados o Solo los sitios seleccionados, puede cargar un archivo .csv con una lista de sitios. Estas opciones son útiles si está realizando una prueba piloto y desea incluir un número limitado de sitios para iniciar.
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: a70f324763e0db4cf3a4f2d1b04680d59843a3da
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 54b57cb70c0c9eecc1e77e717998bc4cdac89f68
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591324"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649592"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Acceder al Centro de comunidad de Microsoft Defender para punto de conexión
 
@@ -32,7 +32,7 @@ ms.locfileid: "53591324"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 El Defender for Endpoint Community Center es un lugar donde los miembros de la comunidad pueden aprender, colaborar y compartir experiencias sobre el producto. 
 

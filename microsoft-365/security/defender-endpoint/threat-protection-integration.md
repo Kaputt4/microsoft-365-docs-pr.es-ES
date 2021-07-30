@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aeb6d93017f138ce898d25f7d76e05cdcf3e90c5
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: a5bd08de8e685dc30908647b6d2a0544309b074e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878573"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649112"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender para endpoint y otras soluciones de Microsoft
 
@@ -32,7 +32,7 @@ ms.locfileid: "52878573"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="integrate-with-other-microsoft-solutions"></a>Integrar con otras soluciones de Microsoft
 
@@ -66,13 +66,13 @@ Las actividades sospechosas son procesos que se ejecutan en un contexto de usuar
 La Skype Empresarial permite a los analistas comunicarse con un usuario o propietario de dispositivo potencialmente comprometido a través de un botón sencillo del portal.
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-Con Microsoft 365 Defender, Microsoft Defender para endpoint y varias soluciones de seguridad de Microsoft forman un conjunto de aplicaciones de defensa empresarial unificado previo y posterior a la infracción que se integra de forma nativa en los puntos de conexión, identidad, correo electrónico y aplicaciones para detectar, prevenir, investigar y responder automáticamente a ataques sofisticados. 
+Con Microsoft 365 Defender, Microsoft Defender para endpoint y varias soluciones de seguridad de Microsoft forman un conjunto de aplicaciones de defensa empresarial unificado previo y posterior a la infracción que se integra de forma nativa en puntos de conexión, identidad, correo electrónico y aplicaciones para detectar, prevenir, investigar y responder automáticamente a ataques sofisticados. 
  
 [Obtenga más información sobre Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Configurar la integración y otras características avanzadas](advanced-features.md)
-- [Microsoft 365 Introducción al defensor](/microsoft-365/security/defender/microsoft-threat-protection)
+- [Microsoft 365 Defender introducción](/microsoft-365/security/defender/microsoft-threat-protection)
 - [Activar Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)
 - [Proteger usuarios, datos y dispositivos con acceso condicional](conditional-access.md)

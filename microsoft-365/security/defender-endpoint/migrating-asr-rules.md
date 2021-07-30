@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: fd7c6a217c1bc1ce3b278afb911988b94a6951e0
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: b1aae75f411af4f9d745c67831222c5ceee6bb0d
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062150"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663832"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migración de un HIPS de terceros a reglas ASR
 
@@ -79,7 +79,7 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para endpo
 - **Procesos:** winword.exe, powerpnt.exe, excel.exe
 - **Operación:** ejecución de procesos
 - **Ejemplos de archivos/carpetas, claves/valores del Registro, procesos,** servicios: powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
-- Reglas de reducción de **surface** de ataque: las reglas ASR tienen una regla integrada para impedir que las aplicaciones Office inicien procesos secundarios: "Bloquear todas las aplicaciones Office para crear procesos secundarios", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
+- Reglas de reducción de **surface** de ataque: las reglas ASR tienen una regla integrada para impedir que las aplicaciones de Office inicien procesos secundarios: "Impedir que todas las aplicaciones Office creen procesos secundarios", GUID "d4f940ab-401b-4efc-aadc-ad5f3c50688a".
 - **Otras características recomendadas:** N/A
     
 ### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Bloquear Office aplicaciones de inicio de procesos secundarios y crear contenido ejecutable
@@ -96,7 +96,7 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para endpo
 - **Procesos:** wscript.exe
 - **Operación:** lectura de archivo
 - **Ejemplos de archivos/carpetas, claves/valores del Registro, procesos,** servicios : C:\Users *\AppData**.js, C:\Users*\Downloads**.js
-- **Reglas de reducción** de surface de ataque: debido a problemas de confiabilidad y rendimiento, las reglas ASR no tienen la capacidad de impedir que un proceso específico lea un tipo de archivo de script determinado. Tenemos una regla para evitar vectores de ataque que puedan originarse en estos escenarios. El nombre de la regla es "Impedir que JavaScript o VBScript inicien contenido ejecutable descargado" (GUID "D3E037E1-3EB8-44C8-A917-57927947596D") y la "Ejecución de bloqueo de scripts potencialmente ofuscados" (GUID " 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC").
+- **Reglas de reducción** de surface de ataque: debido a problemas de confiabilidad y rendimiento, las reglas ASR no tienen la capacidad de impedir que un proceso específico lea un tipo de archivo de script determinado. Tenemos una regla para evitar vectores de ataque que puedan originarse en estos escenarios. El nombre de la regla es "Bloquear JavaScript o VBScript para iniciar contenido ejecutable descargado" (GUID "d3e037e1-3eb8-44c8-a917-57927947596 ") y la "Ejecución de bloqueo de scripts potencialmente ofuscados" (GUID " 5beb7efe-fd9a-4556-801d-275e5ffc04cc").
 - Otras características recomendadas: aunque hay reglas ASR específicas que mitigan ciertos vectores de ataque en estos escenarios, es importante mencionar que AV es capaz de inspeccionar scripts (PowerShell, host de script de Windows, JavaScript, VBScript y más) en tiempo real, a través de la Interfaz de examen antimalware (AMSI). Hay más información disponible aquí: Interfaz de [examen antimalware (AMSI).](/windows/win32/amsi/antimalware-scan-interface-portal)
 
 ### <a name="block-launch-of-child-processes"></a>Bloquear el inicio de procesos secundarios
@@ -146,7 +146,7 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para endpo
 - **Reglas de reducción** de superficie de ataque: las reglas ASR no cubren estos escenarios porque forman parte de la protección integrada de Microsoft Defender para puntos de conexión.
 - Otras características recomendadas: la protección contra alteraciones (opt-in, administrada desde Intune) evita cambios no autorizados en las claves del Registro DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring y DisableIOAVProtection (y mucho más).
 
-Consulte también
+Consulta también
 
 - [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.yml)
 - [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0d3cda6ad01faea2fb2f959f167367ed912c35bb
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 693f750b7e169eda597b43344d913c170676be77
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621780"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649172"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centro de seguridad de Microsoft Defender Panel de operaciones de seguridad
 
@@ -31,7 +31,7 @@ ms.locfileid: "53621780"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
 El **panel de operaciones de seguridad** es donde se detección y respuesta de puntos de conexión funcionalidades. Proporciona una introducción de alto nivel de dónde se han visto las detecciones y resalta dónde se necesitan acciones de respuesta.
 
@@ -126,7 +126,7 @@ El icono muestra una lista de cuentas de usuario con las alertas más activas y 
 
 Haga clic en la cuenta de usuario para ver detalles sobre la cuenta de usuario. Para obtener más información, [vea Investigar una cuenta de usuario](investigate-user.md).
 
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## <a name="related-topics"></a>Temas relacionados
 

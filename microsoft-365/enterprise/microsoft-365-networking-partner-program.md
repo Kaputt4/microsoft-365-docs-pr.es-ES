@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: El Microsoft 365 Programa para partners de redes permite que el dispositivo se certifice como trabajo con Microsoft 365.
 hideEdit: true
-ms.openlocfilehash: 2c57974bd15e5bac11a2275472255982a20aefac
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1330015d11179f67cc60077f2e4b51382af2d1a3
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923153"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663844"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Programa para partners de redes de Microsoft 365
 
@@ -36,7 +36,3 @@ Para modernizar las redes empresariales para una gran conectividad a Microsoft 3
 El Microsoft 365 Programa para partners de redes ayuda a responder a estas preguntas y demuestra el compromiso de Microsoft para ayudar a nuestros clientes a crear y optimizar su arquitectura de red para obtener la mejor Microsoft 365 experiencia. El Microsoft 365 está trabajando con muchos partners del sector de red para garantizar que los principios clave para una conectividad óptima se basen de forma nativa en sus soluciones y productos de red.
 
 El Microsoft 365 Programa para partners de redes designa soluciones de red calificadas como "Funciona con Microsoft 365". Solo los dispositivos o soluciones que cumplan los rigurosos requisitos de pruebas de Microsoft, tengan experiencias perfectas con la configuración y demuestren una experiencia de red de alta calidad cuando se usan con Microsoft 365 recibirán la designación "Trabaja con Microsoft 365". Estas soluciones de partners validadas se enumeran en [la Microsoft 365 Programa para partners de redes,](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners)junto con los detalles de la solución y vínculos para obtener más información.
-
-Si es un cliente Microsoft 365, puede hacer que el proveedor de soluciones de red conozca este programa a través de esta página en [https://aka.ms/Office365NPP]() .
-
-Para los proveedores de soluciones de red que desean preguntar sobre el Microsoft 365 Programa para partners de redes, rellene el formulario en [https://aka.ms/NPPsignup](https://aka.ms/NPPsignup) . Gracias por su interés y esperamos una asociación hermosa.

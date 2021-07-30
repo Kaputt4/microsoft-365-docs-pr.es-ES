@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: e2bce4d202c36e0174592fa3dd5e0edee08490ee
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 306536e62b8ab47a8428882ffa43cd337805d4fb
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544546"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663892"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
 
@@ -63,7 +63,7 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 
 ¿Necesita ayuda para actualizar los dispositivos de su organización? Vea los siguientes recursos:
 
-|Sistema operativo | Resource |
+|Sistema operativo | Recurso |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|
@@ -79,14 +79,14 @@ Ahora que ha actualizado los dispositivos de su organización, el siguiente paso
 
 2. Compruebe que las licencias están aprovisionadas correctamente. [Compruebe el estado de la licencia](production-deployment.md#check-license-state).
 
-3. Como administrador global o administrador de seguridad, configure la instancia de nube dedicada de Defender para endpoint. Vea [Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
+3. Configura la instancia de nube dedicada de Defender para Endpoint. Vea [Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
 
 4. Si los puntos de conexión (como dispositivos) de su organización usan un proxy para tener acceso a Internet, vea Configuración de defender para puntos de [conexión: Configuración de red](production-deployment.md#network-configuration).
  
 En este punto, está listo para conceder acceso a los administradores de seguridad y operadores de seguridad que usarán el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ). 
 
 > [!NOTE]
-> El Microsoft 365 Defender se conoce a veces como el portal de Defender para endpoint y se puede obtener acceso a este en [https://security.microsoft.com](https://security.microsoft.com) . 
+> El Microsoft 365 Defender se conoce a veces como el portal de Defender para endpoint y se puede obtener acceso a este en [https://security.microsoft.com](https://security.microsoft.com) . The former Centro de seguridad de Microsoft Defender ( https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. Para obtener más información, [vea Microsoft 365 Defender información general del portal](portal-overview.md).
 
 ## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>Conceder acceso al portal de Microsoft 365 Defender web
 
