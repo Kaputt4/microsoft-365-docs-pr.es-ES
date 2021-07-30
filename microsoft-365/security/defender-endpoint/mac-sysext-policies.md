@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: e6a0806aed745687ef943e537c64ad74db3b3480
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0d1edd11f378f91dabd7e1ca7910070ab6961e90
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542170"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652952"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "53542170"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 En alineación con la evolución de macOS, estamos preparando una actualización de Microsoft Defender para Endpoint en macOS que aprovecha las extensiones del sistema en lugar de las extensiones de kernel. Esta actualización solo se aplicará a macOS Catalina (10.15.4) y versiones más recientes de macOS.
 
@@ -308,7 +308,7 @@ Para implementar este perfil de configuración personalizado:
 1. En Intune, abra **Administrar configuración**  >  **de dispositivo.** Seleccione **Administrar**  >  **perfiles Crear**  >  **perfil**.
 2. Elija un nombre para el perfil. Cambiar **Platform=macOS** y **Profile type=Custom**. Seleccione **Configurar**.
 3. Abra el perfil de configuración y cargue **sysext.xml**. Este archivo se creó en el paso anterior.
-4. Seleccione **Aceptar**.
+4. Haga clic en **Aceptar**.
 
     ![Extensión del sistema en la captura de pantalla de Intune](images/mac-system-extension-intune.png)
 

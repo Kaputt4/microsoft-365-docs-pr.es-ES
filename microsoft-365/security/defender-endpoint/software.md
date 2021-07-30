@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 14291cbbba2272d268a8e79b6df7bd87992885db
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f14da0e999a0ec38c9be7ef36e47b2c786e12e97
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771422"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656636"
 ---
 # <a name="software-resource-type"></a>Tipo de recurso software
 
@@ -33,7 +33,7 @@ ms.locfileid: "52771422"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -61,7 +61,7 @@ id | Cadena | Id. de software
 Nombre | Cadena | Nombre del software
 Proveedor | Cadena | Nombre del proveedor de software
 Debilidades | Long | Número de vulnerabilidades detectadas
-publicExploit | Boolean | Existe vulnerabilidad pública para algunas de las vulnerabilidades
-activeAlert | Boolean | La alerta activa está asociada con este software
+publicExploit | Booleano | Existe vulnerabilidad pública para algunas de las vulnerabilidades
+activeAlert | Booleano | La alerta activa está asociada con este software
 exposedMachines | Long | Número de dispositivos expuestos
 impactScore | Doble | Impacto de la puntuación de exposición de este software

@@ -14,12 +14,12 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: Claves del producto Preguntas más frecuentes
-  ms.openlocfilehash: 472b49dbd105c50658270e9ffa6e0ab73570bbca
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: 4ab699c56eaa9c7676104989f14450f4d1f8487a
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53542536"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53656552"
 title: Claves del producto Preguntas más frecuentes
 summary: ''
 sections:
@@ -37,7 +37,7 @@ sections:
       Para obtener más información, consulte [Online Service Activation for Open programs FAQ](/licensing/online-service-activation-faq).
   - question: >
       ¿Cómo puedo encontrar claves de producto en el Centro de administración de Microsoft 365?
-    answer: "1.  Inicie sesión en el Centro de administración de Microsoft 365. \n2.  Vaya a  >  **Facturación Sus productos Licencias** por volumen Descargas & claves > mantener el mouse en el producto  >    >   y seleccione **Ver claves**.\n\nEncontrará información de clave de producto para cada producto, el tipo de licencias (clave de licencia por volumen, Servicio de administración de claves (KMS) y clave de activación múltiple (MAK)) y el número de activaciones MAK usadas y disponibles.\n\nSeleccione **Descargar todas las claves de producto** para descargar las claves que se muestran para una licencia en una unidad local.\n"
+    answer: "1. Inicie sesión en el Centro de administración de Microsoft 365. \n2. Vaya a  >  **Facturación Sus productos Licencias** por volumen Descargas & claves > mantener el mouse en el producto  >    >   y seleccione **Ver claves**.\n\nEncontrará información de clave de producto para cada producto, el tipo de licencias (clave de licencia por volumen, Servicio de administración de claves (KMS) y clave de activación múltiple (MAK)) y el número de activaciones MAK usadas y disponibles.\n\nSeleccione **Descargar todas las claves de producto** para descargar las claves que se muestran para una licencia en una unidad local.\n"
   - question: >
       ¿Cómo puedo encontrar SQL Server claves de producto?
     answer: >
@@ -73,7 +73,7 @@ sections:
   - question: >
       ¿Qué es la activación por volumen?
     answer: >
-      La activación por volumen es una solución configurable que ayuda a automatizar y administrar el proceso de activación del producto en equipos que ejecutan Windows sistemas operativos con licencia bajo un programa de licencias por volumen. La activación por volumen también se usa con otro software de Microsoft, incluidos los conjuntos de Office, vendidos en contratos de licencias por volumen y que admiten la activación por volumen. Para más información, vea:
+      La activación por volumen es una solución configurable que ayuda a automatizar y administrar el proceso de activación del producto en equipos que ejecutan Windows sistemas operativos con licencia bajo un programa de licencias por volumen. La activación por volumen también se usa con otro software de Microsoft, incluidos los conjuntos de Office, vendidos en contratos de licencias por volumen y que admiten la activación por volumen. Para más información, consulte:
         - [Herramientas para administrar la activación por volumen de Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
         - [Activación por volumen para Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
@@ -191,7 +191,7 @@ sections:
       Para obtener más información sobre los derechos de re-creación de imágenes, vea [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
   - question: >
       ¿Cómo puedo descargar mis claves en un archivo local?
-    answer: "El Centro de administración de Microsoft 365 ofrece una opción para descargar claves de producto en un archivo local para su uso posterior. Al descargar claves de producto desde la página Descargas y claves, el archivo contiene todas las claves de licencia por volumen asociadas a acuerdos en el perfil del centro de administración. Sin embargo, si descarga claves de la vista Id. de licencias de la página Resumen de relación, el archivo solo contiene las claves asociadas con el identificador de licencia que está viendo.\n\nUn archivo de clave de producto descargable está en un formato delimitado por tabulaciones y se puede abrir en Excel un editor de texto para ordenar y ver claves. Estas son las columnas que se incluyen en el **archivo:** Id. de **licencia,** programa primario **,** organización **,** producto **,** clave de producto **,** tipo y activaciones **mak usadas/disponibles, puestos** y estado de OSA . \n\nPara abrir un archivo descargado en Excel, siga estos pasos:\n  1.    Abra Microsoft Excel.\n  2.    Seleccione **Archivo**  >  **abierto** y, a continuación, seleccione el archivo CSV descargado.\n  3.    Seleccione **Delimitado** (valor predeterminado) y, a continuación, seleccione Separados por tabulaciones **(para** evitar la presentación de todos los datos en una sola columna).\n  4.    Seleccione **Finalizar**. \n\nEl .CSV se abre en Excel y los datos se muestran en columnas independientes.\n"
+    answer: "El Centro de administración de Microsoft 365 ofrece una opción para descargar claves de producto en un archivo local para su uso posterior. Al descargar claves de producto desde la página Descargas y claves, el archivo contiene todas las claves de licencia por volumen asociadas a acuerdos en el perfil del centro de administración. Sin embargo, si descarga claves de la vista Id. de licencias de la página Resumen de relación, el archivo solo contiene las claves asociadas con el identificador de licencia que está viendo.\n\nUn archivo de clave de producto descargable está en un formato delimitado por tabulaciones y se puede abrir en Excel un editor de texto para ordenar y ver claves. Estas son las columnas que se incluyen en el **archivo:** Id. de **licencia,** programa primario **,** organización **,** producto **,** clave de producto **,** tipo y activaciones **mak usadas/disponibles, puestos** y estado de OSA . \n\nPara abrir un archivo descargado en Excel, siga estos pasos:\n  1. Abra Microsoft Excel.\n  2. Seleccione **Archivo**  >  **abierto** y, a continuación, seleccione el archivo CSV descargado.\n  3. Seleccione **Delimitado** (valor predeterminado) y, a continuación, seleccione Separados por tabulaciones **(para** evitar la presentación de todos los datos en una sola columna).\n  4. Seleccione **Finalizar**. \n\nEl .CSV se abre en Excel y los datos se muestran en columnas independientes.\n"
 - name: Soporte técnico
   questions:
   - question: >
