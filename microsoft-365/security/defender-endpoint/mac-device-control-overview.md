@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: ed5ddc90df8ee3d0e938c0db9bca367a424f0413
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363984"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651056"
 ---
 # <a name="device-control-for-macos"></a>Control de dispositivos para macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "53363984"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Dentro del perfil de configuración, la directiva de control de dispositivos se 
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | deviceControl |
+| **Clave** | deviceControl |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -75,7 +75,7 @@ Cuando los usuarios finales hacen clic en esta notificación, se abre una págin
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | navigationTarget |
+| **Clave** | navigationTarget |
 | **Tipo de datos** | Cadena |
 | **Comments** | Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto. |
 
@@ -89,7 +89,7 @@ La sección de medios extraíbles de la directiva de control de dispositivos se 
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | removableMediaPolicy |
+| **Clave** | removableMediaPolicy |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 
@@ -125,7 +125,7 @@ En la sección medios extraíbles, hay una opción para establecer el nivel de c
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | enforcementLevel |
+| **Clave** | enforcementLevel |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | auditoría (valor predeterminado) <br/> bloque |
 
@@ -150,7 +150,7 @@ Esta configuración se puede establecer en:
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | permiso |
+| **Clave** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | ninguno <br/> read <br/> write <br/> execute |
 
@@ -165,7 +165,7 @@ El `vendors` diccionario contiene una o más entradas, con cada entrada identifi
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | proveedores |
+| **Clave** | proveedores |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 
 Para cada proveedor, puede especificar el nivel de permisos deseado para los dispositivos de ese proveedor.
@@ -173,7 +173,7 @@ Para cada proveedor, puede especificar el nivel de permisos deseado para los dis
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | permiso |
+| **Clave** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
@@ -182,7 +182,7 @@ Además, puede especificar opcionalmente el conjunto de productos que pertenecen
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | productos |
+| **Clave** | productos |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 
 Para cada producto, puede especificar el nivel de permisos deseado para ese producto.
@@ -190,7 +190,7 @@ Para cada producto, puede especificar el nivel de permisos deseado para ese prod
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | permiso |
+| **Clave** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
@@ -201,7 +201,7 @@ El `serialNumbers` diccionario contiene una o más entradas, con cada entrada id
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | serialNumbers |
+| **Clave** | serialNumbers |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 
 Para cada número de serie, puede especificar el nivel de permisos deseado.
@@ -209,7 +209,7 @@ Para cada número de serie, puede especificar el nivel de permisos deseado.
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Key** | permiso |
+| **Clave** | permiso |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 

@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 9429a4fc5adc3447a0238a3e8aa84ab39585fc50
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394526"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664050"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -88,6 +88,7 @@ Las empresas de los siguientes países pueden proporcionar su número de IVA o e
 - Suecia
 - Suiza
 - Taiwán
+- Tailandia
 - Turquía
 - Emiratos Árabes Unidos
 - Reino Unido
@@ -141,7 +142,7 @@ Si la facturación la realiza Microsoft Corporation[(](view-your-bill-or-invoice
 2. En la pestaña **Productos**, seleccione la suscripción que quiera actualizar.
 3. En la página detalles de la suscripción, en la **sección Dirección de uso del** servicio, seleccione Editar dirección de uso del **servicio**.
 4. En el panel Editar dirección  de uso **del** servicio, en el cuadro Número de IVA, escriba el identificador de IVA, incluido el prefijo, y sin espacios.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 ## <a name="how-taxes-are-calculated"></a>Cómo se calculan los impuestos
 

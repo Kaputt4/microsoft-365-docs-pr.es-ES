@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a66ad53faf1b38c3db4ab4446dbc1d175fbd99e4
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a6071a8cb13fc7c785a1b3914f65cd8eca27f28f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289540"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651620"
 ---
 # <a name="register-new-devices-yourself"></a>Registre nuevos dispositivos usted mismo
 
@@ -75,6 +75,9 @@ Puede usar el [ script ](https://www.powershellgallery.com/packages/Get-WindowsA
 Tendrás que combinar los datos de los archivos CSV en un solo archivo para completar el registro. Este es un script de PowerShell de ejemplo para que sea fácil:
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
+
+> [!NOTE]
+> No se admiten columnas adicionales. No se admiten las comillas. Solo se pueden usar archivos de texto con formato ANSI (no Unicode). Los encabezados distinguen mayúsculas de minúsculas. Editar el archivo en Excel guardarlo como un archivo CSV no generará un archivo utilizable debido a estos requisitos. Asegúrese de conservar los ceros iniciales en los números de serie del dispositivo.
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>Registrar dispositivos mediante el Portal de administración
 

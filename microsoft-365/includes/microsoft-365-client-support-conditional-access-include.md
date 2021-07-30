@@ -1,11 +1,10 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|Clientes|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Aplicaciones modernas|
+|Clientes|Android|iOS|Mac|Windows 10<br>Escritorio|Windows 10<br>Aplicaciones modernas|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|N/D|N/D|N/D|Planeado|N/D|
 |ADMINISTRADOR DE AZURE ACTIVE DIRECTORY|N/D|N/D|N/D|Planeado|N/D|
 |PORTAL DE EMPRESA|Planeado|Planeado|Planeado|N/D|Planeado|
 |CORTANA|N/D|N/D|N/D|N/D|Planeado|
-|DELVE|✔|✔|N/D|N/D|N/D|
 |EXCEL|✔|Planeado|Planeado|Planeado|N/D|
 |ADMINISTRADOR DE EXCHANGE|N/D|N/D|N/D|✔|N/D|
 |FORMULARIOS|N/D|N/D|N/D|N/D|N/D|

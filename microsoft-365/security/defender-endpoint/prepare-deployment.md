@@ -1,5 +1,5 @@
 ---
-title: Preparar Microsoft Defender para la implementación de puntos de conexión
+title: Prepare su cuenta de Microsoft Defender para punto de conexión
 description: Preparar la aprobación de las partes interesadas, las escalas de tiempo, las consideraciones del entorno y el orden de adopción para implementar Microsoft Defender para endpoint
 keywords: implementar, preparar, partes interesadas, escala de tiempo, entorno, punto de conexión, servidor, administración, adopción
 search.product: eADQiWindows 10XVcnh
@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7841197594941354b21bd2104cd27ef37a1a25c9
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 58e5c388ceb2fa03782c073bc0802da5b6d06564
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964601"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651044"
 ---
-# <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Preparar Microsoft Defender para la implementación de puntos de conexión
+# <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Prepare su cuenta de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "52964601"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 La implementación de Defender for Endpoint es un proceso de tres fases:
 
@@ -60,7 +60,7 @@ Agregue partes interesadas a la tabla siguiente según corresponda para su organ
 
 -   I = Informado de este proyecto
 
-| Nombre                 | Función                                                                                                                                                                                                          | Acción |
+| Nombre                 | Rol                                                                                                                                                                                                          | Acción |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Escriba el nombre y el correo electrónico | **Director de seguridad de la información (CISO)** Un representante ejecutivo que actúa como patrocinador dentro de *la organización para la nueva implementación de tecnología.*                                                  | SO     |
 | Escriba el nombre y el correo electrónico | Jefe del Centro de operaciones **de Ciberdefensa (CDOC)** Un representante del equipo CDOC encargado de definir cómo se alinea este cambio con los procesos del equipo de operaciones de *seguridad de clientes.*       | SO     |
@@ -95,7 +95,7 @@ Microsoft recomienda usar el concepto de privilegios mínimos. Defender for Endp
 | Administrador de infraestructura |       |                             |           |
 | Propietario/interesado de la empresa   |       |                             |           |
 
-Microsoft recomienda [usar](/azure/active-directory/active-directory-privileged-identity-management-configure) Administración de identidades con privilegios administrar los roles para proporcionar auditoría, control y revisión de acceso adicionales para los usuarios con permisos de directorio.
+Microsoft recomienda usar [Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure) administrar los roles para proporcionar auditoría, control y revisión de acceso adicionales para los usuarios con permisos de directorio.
 
 Defender for Endpoint admite dos formas de administrar permisos:
 
@@ -111,7 +111,7 @@ La siguiente tabla de ejemplo sirve para identificar la estructura del Centro de
 
 | Nivel   | Descripción                                                                                                                                                                                                 | Permiso necesario |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Nivel 1 | **Equipo de operaciones de seguridad local / equipo de TI**<br>Este equipo normalmente realiza una triage e investiga las alertas contenidas en su geolocalización y escala al nivel 2 en los casos en los que se requiere una corrección activa.                                              |                     |
+| Nivel 1 | **Equipo de operaciones de seguridad local/equipo de TI**<br>Este equipo normalmente realiza una triage e investiga las alertas contenidas en su geolocalización y escala al nivel 2 en los casos en los que se requiere una corrección activa.                                              |                     |
 | Nivel 2 | **Equipo de operaciones de seguridad regional**<br>Este equipo puede ver todos los dispositivos de su región y realizar acciones de corrección.                                                                                                                        |        Ver datos               |
 | Nivel 3 | **Equipo de operaciones de seguridad global**<br>Este equipo está formado por expertos en seguridad y está autorizado a ver y realizar todas las acciones desde el portal. | Ver datos <br>  Investigación de alertas Acciones de corrección activas <br> Investigación de alertas Acciones de corrección activas <br> Administrar la configuración del sistema del portal <br> Administrar la configuración de seguridad |
 
@@ -128,7 +128,7 @@ Elija el componente de Defender para endpoint que se va a usar y quite los que n
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | Respuesta de & de detección de puntos de conexión (EDR)     | Las capacidades de defender para detección y respuesta de puntos de conexión endpoint proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas. <br> [Aprende más.](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
 |Administración & vulnerabilidad de amenazas (TVM)|Threat & Vulnerability Management es un componente de Microsoft Defender para endpoint y proporciona a los administradores de seguridad y a los equipos de operaciones de seguridad un valor único, incluidos: <br> - Información en tiempo detección y respuesta de puntos de conexión (EDR) correlacionada con vulnerabilidades de punto de conexión <br> - Contexto de vulnerabilidad de dispositivo incalculable durante investigaciones de incidentes <br> - Procesos de corrección integrados a Microsoft Intune y Microsoft System Center Configuration Manager <br> [Más información](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).| 2 |
-| Protección de última generación (NGP)        | Antivirus de Microsoft Defender es una solución antimalware integrada que proporciona protección de última generación para escritorios, equipos portátiles y servidores. El Antivirus de Microsoft Defender incluye: <br> -Protección entregada en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes. Junto con Intelligent Security Graph y el aprendizaje automático, la protección en la nube forma parte de las tecnologías de última generación utilizadas por el Antivirus de Microsoft Defender.   <br> - Análisis siempre continuo mediante la supervisión avanzada del comportamiento de procesos y archivos y otras heurísticas (también conocida como "protección en tiempo real"). <br> - Actualizaciones de protección dedicadas basadas en aprendizaje automático, análisis de big data humanos y automatizados e investigación detallada de resistencia a amenazas. <br> [Más información](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
+| Protección de última generación (NGP)        | Antivirus de Microsoft Defender es una solución antimalware integrada que proporciona protección de última generación para escritorios, equipos portátiles y servidores. El Antivirus de Microsoft Defender incluye: <br> -Protección entregada en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes. Junto con Intelligent Security Graph y el aprendizaje automático, la protección en la nube forma parte de las tecnologías de última generación utilizadas por el Antivirus de Microsoft Defender.   <br> - Análisis siempre continuo mediante la supervisión avanzada del comportamiento de procesos y archivos y otras heurísticas (también conocida como "protección en tiempo real"). <br> - Actualizaciones de protección dedicadas basadas en aprendizaje automático, análisis de big data humanos y automatizados e investigación detallada de resistencia a amenazas. <br> [Más información](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 | Reducción de superficie de ataque (ASR)          | Las capacidades de reducción de superficie de ataque en Microsoft Defender para endpoint ayudan a proteger los dispositivos y aplicaciones de la organización frente a amenazas nuevas y emergentes. <br> [Aprende más.](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                    |
 | Auto Investigation & Remediation (AIR)  | Microsoft Defender para endpoint usa investigaciones automatizadas para reducir significativamente el volumen de alertas que deben investigarse individualmente. La característica de investigación automatizada aprovecha varios algoritmos de inspección y procesos usados por analistas (como playbooks) para examinar alertas y tomar medidas de corrección inmediatas para resolver infracciones. Esto reduce considerablemente el volumen de alertas, lo que facilita que los expertos de operaciones de seguridad puedan centrarse en amenazas más complejas y otras iniciativas de alto valor. <br>[Aprende más.](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | No aplicable      |
 | Expertos en amenazas de Microsoft (MTE)          | Expertos en amenazas de Microsoft es un servicio de búsqueda administrado que proporciona a los Centros de operaciones de seguridad (SOC) supervisión y análisis de nivel de experto para ayudarles a garantizar que las amenazas críticas en sus entornos únicos no se pierden. <br>[Aprende más.](/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | No aplicable      |

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78d1f1eab2138fb53452d777027596dce12cb76a
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 261a1253076791e7f507c38b543a80d6f2eb8993
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53618828"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650948"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -33,7 +33,7 @@ ms.locfileid: "53618828"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Responda rápidamente a los ataques detectados deteniendo y anulando archivos o bloqueando un archivo. Después de realizar acciones en los archivos, puede comprobar los detalles de la actividad en el Centro de acciones.
 

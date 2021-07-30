@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7997a1367126cd22417683b22409e6254204e1bf
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: fbce67602006a86c71bf3b802d8b69e2cd367104
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567133"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664074"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
@@ -109,7 +109,20 @@ DeviceNetworkInfo
 | where NetworkName == "<your network name here>"
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="get-information-on-device"></a>Obtener información sobre el dispositivo
+
+Puedes usar la siguiente consulta de búsqueda avanzada para obtener la información completa más reciente en un dispositivo específico.
+
+```kusto
+DeviceInfo
+| where DeviceName == "<device name here>" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
+
+
+
+
+## <a name="see-also"></a>Recursos adicionales
 
 - [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

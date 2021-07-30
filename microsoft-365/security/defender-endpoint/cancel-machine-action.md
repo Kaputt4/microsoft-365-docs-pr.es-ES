@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 490ee91d5f2d2c02174be94c52fc83fd0ec0fc5e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 966ed7356024bcc3dedf149024d55171805a3af5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879801"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657368"
 ---
-#   <a name="cancel-machine-action-api"></a>Cancelar API de acción de máquina 
+# <a name="cancel-machine-action-api"></a>Cancelar API de acción de máquina
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "52879801"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ Cancelar una acción de máquina ya iniciada que aún no está en estado final (
 
 ## <a name="limitations"></a>Limitaciones
 
-1.  Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Get started](apis-intro.md).
 
-|     Tipo de permiso     |     Permiso     |    Nombre para mostrar de permisos     |
-|-|-|-|
-|    <br>Aplicación    |    <br>Machine.CollectForensic<br>   Machine.Isolate   <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantine<br>   Machine.LiveResponse    |    Recopilar forenses   <br>Aislar máquina<br>Restringir la ejecución de código<br>  Máquina de digitalización<br>  Máquina offboard<br>   Detener y poner en cuarentena<br>   Ejecutar respuesta en directo en un equipo específico    |
-|    <br>Delegado (cuenta de trabajo o escuela)    |    Machine.CollectForensic<br>   Machine.Isolate    <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantineMachine.LiveResponse    |    Recopilar forenses<br>   Aislar máquina<br>  Restringir la ejecución de código<br> Máquina de digitalización<br>Máquina offboard<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico    |
+|Tipo de permiso|Permiso|Nombre para mostrar de permisos|
+|---|---|---|
+|Aplicación|Machine.CollectForensic <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Recopilar forenses <br>Aislar máquina<br>Restringir la ejecución de código<br>  Máquina de digitalización<br>  Retirar máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
+|Delegado (cuenta profesional o educativa)|Machine.CollectForensic<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Recopilar forenses<br> Aislar máquina<br>  Restringir la ejecución de código<br> Máquina de digitalización<br>Retirar máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
 
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -70,16 +70,16 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre      | Tipo | Descripción                 |
-|---------------|----------|---------------------------------|
-| Authorization | Cadena   | {token} de portador. Obligatorio.   |
-| Content-Type  | string   | application/json. Obligatorio. |
+|Nombre|Tipo|Descripción|
+|---|---|---|
+|Authorization|Cadena|{token} de portador. Obligatorio.|
+|Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-| Parámetro | Tipo | Description                        |
-|---------------|----------|----------------------------------------|
-| Comentario       | Cadena   | Comentario para asociarlo con la acción de cancelación.  |
+|Parámetro|Tipo|Descripción|
+|---|---|---|
+|Comentario|Cadena|Comentario para asociarlo con la acción de cancelación.|
 
 ## <a name="response"></a>Respuesta
 
@@ -87,7 +87,7 @@ Si se realiza correctamente, este método devuelve 200, código de respuesta Ok 
 
 ## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request"></a>Solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
@@ -95,7 +95,6 @@ Aquí tiene un ejemplo de la solicitud.
 POST
 https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/cancel
 ```
-
 
 ```JSON
 {

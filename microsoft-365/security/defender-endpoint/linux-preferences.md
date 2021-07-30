@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 17915741485919ae85d5e16fbee8de5108b7f2eb
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 6d39316b4377665b8269e352c853742a744dc517
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543298"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657104"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "53543298"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!IMPORTANT]
 > Este tema contiene instrucciones sobre cómo establecer las preferencias de Defender para Endpoint en Linux en entornos empresariales. Si estás interesado en configurar el producto en un dispositivo desde la línea de comandos, consulta [Recursos](linux-resources.md#configure-from-the-command-line).
@@ -61,7 +61,7 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 
 |Descripción|Valor|
 |---|---|
-|**Key**|antivirusEngine|
+|**Clave**|antivirusEngine|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
 |
@@ -76,7 +76,7 @@ Determina si la protección en tiempo real (examinar archivos a medida que se ac
 
 |Descripción|Valor|
 |---|---|
-|**Key**|enableRealTimeProtection|
+|**Clave**|enableRealTimeProtection|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|true (valor predeterminado) <p> false|
 |
@@ -97,7 +97,7 @@ Determina si el motor antivirus se ejecuta en modo pasivo o no. En modo pasivo:
 
 |Descripción|Valor|
 |---|---|
-|**Key**|passiveMode|
+|**Clave**|passiveMode|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|false (predeterminado) <p> true|
 |**Comments**|Disponible en Defender para endpoint versión 100.67.60 o posterior.|
@@ -113,7 +113,7 @@ Especifica la directiva de combinación para exclusiones. Puede ser una combinac
 
 |Descripción|Valor|
 |---|---|
-|**Key**|exclusionsMergePolicy|
+|**Clave**|exclusionsMergePolicy|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|merge (valor predeterminado) <p> admin_only|
 |**Comments**|Disponible en Defender para endpoint versión 100.83.73 o posterior.|
@@ -130,7 +130,7 @@ Entidades que se han excluido del examen. Las exclusiones se pueden especificar 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|exclusiones|
+|**Clave**|exclusiones|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
 |
@@ -145,7 +145,7 @@ Especifica el tipo de contenido excluido del examen.
 
 |Descripción|Valor|
 |---|---|
-|**Key**|$type|
+|**Clave**|$type|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 |
@@ -160,7 +160,7 @@ Se usa para excluir contenido del examen por ruta de acceso de archivo completa.
 
 |Descripción|Valor|
 |---|---|
-|**Key**|path|
+|**Clave**|path|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|rutas de acceso válidas|
 |**Comments**|Aplicable solo *si $type* *se excluyePath*|
@@ -176,7 +176,7 @@ Indica si la *propiedad path* hace referencia a un archivo o directorio.
 
 |Descripción|Valor|
 |---|---|
-|**Key**|isDirectory|
+|**Clave**|isDirectory|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|false (predeterminado) <p> true|
 |**Comments**|Aplicable solo *si $type* *se excluyePath*|
@@ -192,7 +192,7 @@ Se usa para excluir contenido del examen por extensión de archivo.
 
 |Descripción|Valor|
 |---|---|
-|**Key**|extensión|
+|**Clave**|extensión|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|extensiones de archivo válidas|
 |**Comments**|Aplicable solo *si $type* *se excluyeFileExtension*|
@@ -208,7 +208,7 @@ Especifica un proceso para el que se excluye toda la actividad de archivo del ex
 
 |Descripción|Valor|
 |---|---|
-|**Key**|name|
+|**Clave**|name|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|cualquier cadena|
 |**Comments**|Aplicable solo *si $type* *se excluyeFileName*|
@@ -224,7 +224,7 @@ Lista de amenazas (identificadas por su nombre) que no están bloqueadas por el 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|allowedThreats|
+|**Clave**|allowedThreats|
 |**Tipo de datos**|Matriz de cadenas|
 |
 
@@ -238,7 +238,7 @@ Restringe las acciones que el usuario local de un dispositivo puede realizar cua
 
 |Descripción|Valor|
 |---|---|
-|**Key**|disallowedThreatActions|
+|**Clave**|disallowedThreatActions|
 |**Tipo de datos**|Matriz de cadenas|
 |**Posibles valores**|permitir (restringe a los usuarios permitir amenazas) <p> restore (restringe a los usuarios la restauración de amenazas desde la cuarentena)|
 |**Comments**|Disponible en Defender para endpoint versión 100.83.73 o posterior.|
@@ -254,7 +254,7 @@ La *preferencia threatTypeSettings* en el motor antivirus se usa para controlar 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|threatTypeSettings|
+|**Clave**|threatTypeSettings|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
 |
@@ -269,7 +269,7 @@ Tipo de amenaza para la que se configura el comportamiento.
 
 |Descripción|Valor|
 |---|---|
-|**Key**|clave|
+|**Clave**|clave|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|potentially_unwanted_application <p> archive_bomb|
 |
@@ -288,7 +288,7 @@ Acción que se debe realizar al encontrarse con una amenaza del tipo especificad
 
 |Descripción|Valor|
 |---|---|
-|**Key**|valor|
+|**Clave**|valor|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|auditoría (valor predeterminado) <p> bloque <p> off|
 |
@@ -303,7 +303,7 @@ Especifica la directiva de combinación para la configuración del tipo de amena
 
 |Descripción|Valor|
 |---|---|
-|**Key**|threatTypeSettingsMergePolicy|
+|**Clave**|threatTypeSettingsMergePolicy|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|merge (valor predeterminado) <p> admin_only|
 |**Comments**|Disponible en Defender para endpoint versión 100.83.73 o posterior.|
@@ -319,7 +319,7 @@ Especifica el número de días que los resultados se conservan en el historial d
 
 |Descripción|Valor|
 |---|---|
-|**Key**|scanResultsRetentionDays|
+|**Clave**|scanResultsRetentionDays|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|90 (valor predeterminado). Los valores permitidos van de 1 día a 180 días.|
 |**Comments**|Disponible en Defender para endpoint versión 101.04.76 o posterior.|
@@ -335,7 +335,7 @@ Especifique el número máximo de entradas que se deben conservar en el historia
 
 |Descripción|Valor|
 |---|---|
-|**Key**|scanHistoryMaximumItems|
+|**Clave**|scanHistoryMaximumItems|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|10000 (valor predeterminado). Los valores permitidos van de 5000 elementos a 15000 elementos.|
 |**Comments**|Disponible en Defender para endpoint versión 101.04.76 o posterior.|
@@ -351,7 +351,7 @@ La *entrada cloudService* en el perfil de configuración se usa para configurar 
 
 |Descripción|Valor|
 |---|---|
-|**Key**|cloudService|
+|**Clave**|cloudService|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
 |
@@ -366,7 +366,7 @@ Determina si la protección entregada en la nube está habilitada en el disposit
 
 |Descripción|Valor|
 |---|---|
-|**Key**|habilitado|
+|**Clave**|habilitado|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|true (valor predeterminado) <p> false|
 |
@@ -381,7 +381,7 @@ Los datos de diagnóstico se usan para mantener Defender for Endpoint seguro y a
 
 |Descripción|Valor|
 |---|---|
-|**Key**|diagnosticLevel|
+|**Clave**|diagnosticLevel|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|opcional (predeterminado) <p> necesario|
 |
@@ -400,7 +400,7 @@ Determina si se envían muestras sospechosas (que probablemente contengan amenaz
 
 |Descripción|Valor|
 |---|---|
-|**Key**|automaticSampleSubmissionConsent|
+|**Clave**|automaticSampleSubmissionConsent|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|ninguno <p> safe (valor predeterminado) <p> all|
 |
@@ -415,7 +415,7 @@ Determina si las actualizaciones de inteligencia de seguridad se instalan autom�
 
 |Descripción|Valor|
 |---|---|
-|**Key**|automaticDefinitionUpdateEnabled|
+|**Clave**|automaticDefinitionUpdateEnabled|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|true (valor predeterminado) <p> false|
 |
