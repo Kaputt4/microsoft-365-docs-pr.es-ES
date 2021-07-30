@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 2f873482dc351050a87993420e718f6de87ac218
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3f1d3a7ee191377a22f5411578f5e267c8e7d345
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227536"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624241"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -85,7 +85,7 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 
 |Característica o comportamiento|Configuración de etiqueta: etiquetado automático para archivos y mensajes de correo electrónico  |Directiva: etiquetado automático|
 |:-----|:-----|:-----|
-|Dependencia de la aplicación|[Sí](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No\* |
+|Dependencia de la aplicación|Sí ([versiones mínimas](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No\* |
 |Restringir por ubicación|No |Sí |
 |Condiciones: clasificadores que se pueden entrenar|Sí |No |
 |Condiciones: opciones de uso compartido y opciones adicionales para el correo electrónico|No |Sí |
@@ -142,33 +142,17 @@ Para obtener más información sobre estas opciones, consulte las siguientes ins
 Además, de la misma manera que ocurre con la configuración de directiva DLP, puede elegir si una condición debe detectar todos los tipos de información confidencial o solo uno de ellos. Y para hacer que las condiciones sean más flexibles o complejas, puede agregar [grupos y usar operadores lógicos entre los grupos](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 > [!NOTE]
-> Las directivas de etiquetado automático que se basan en tipos personalizados de información confidencial solo se aplican al contenido recién creado o modificado en OneDrive y SharePoint, no al contenido existente.
+> El etiquetado automático basado en tipos personalizados de información confidencial solo se aplica al contenido recién creado o modificado en OneDrive y SharePoint, no al contenido existente. Esta limitación también se aplica a las directivas de etiquetado automático.
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurar clasificadores capacitados para una etiqueta
 
-Esta opción está disponible actualmente en versión preliminar. Si usa esta opción, asegúrese de haber publicado en su espacio empresarial al menos otra etiqueta de confidencialidad que esté configurada para la etiqueta automática y la opción [tipos de información confidencial](#configuring-sensitive-info-types-for-a-label).
+Si usa esta opción, asegúrese de haber publicado en su espacio empresarial al menos otra etiqueta de confidencialidad que esté configurada para la etiqueta automática y la opción [tipos de información confidencial](#configuring-sensitive-info-types-for-a-label).
 
 Cuando seleccione la opción **Clasificadores**, seleccione uno o más de los clasificadores capacitados incorporados de Microsoft. Si ha creado sus propios clasificadores capacitados personalizados, estos también están disponibles para seleccionar:
 
 ![Opciones para clasificadores capacitados y etiquetas de confidencialidad](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No use este clasificador incorporado y si lo está usando actualmente, debería mover sus procesos de negocios fuera de él. Recomendamos que usen los clasificadores integrados de **Acoso selectivo**, **Blasfemias**, **Amenazas**
-
 Para más información sobre estos clasificadores, consulte [Más información sobre clasificadores que se pueden entrenar (versión preliminar)](classifier-learn-about.md).
-
-Durante el periodo de previsualización para esta opción, las siguientes aplicaciones soportan clasificadores capacitados para etiquetas de confidencialidad:
-
-- Aplicaciones de Microsoft 365 para empresas ([anteriormente Office 365 ProPlus](/deployoffice/name-change)) para Windows, que ahora se implementan en el [Canal actual](/deployoffice/overview-update-channels#current-channel-overview) en la versión 2006 y posteriores:
-    - Word
-    - Excel
-    - PowerPoint
-
-- Office para las aplicaciones web, cuando se han [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
-    - Word
-    - Excel
-    - PowerPoint
-    - Outlook
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Recomendación para que el usuario aplique una etiqueta de confidencialidad
 
@@ -219,7 +203,7 @@ Asegúrese de tener en cuenta los requisitos previos antes de configurar las dir
     - En el momento en el que se ejecuta la directiva de etiquetado automático, el archivo no debe estar abierto por otro proceso o usuario. Un archivo desprotegido para edición entra en esta categoría.
 
 - Si tiene previsto usar [tipos de información confidencial personalizados](sensitive-information-type-learn-about.md) en lugar de los tipos de confidencialidad integrados:
-    - Los tipos de información de confidencialidad personalizados solo se aplican al contenido que se agrega o modifica en SharePoint o OneDrive después de aplicar los tipos de información de confidencialidad personalizados.
+    - Los tipos de información de confidencialidad personalizados solo se aplican al contenido que se agrega o modifica en SharePoint o OneDrive después de aplicar los tipos de información de confidencialidad creados.
     - Para probar los nuevos tipos de información confidencial, créelos antes de crear su directiva de etiquetado automático y, después, cree nuevos documentos con datos de ejemplo para probarlos.
 
 - [Crear y publicar](create-sensitivity-labels.md) una o más etiquetas de confidencialidad (para al menos un usuario) que pueda seleccionar para las directivas de etiquetado automático. Para estas etiquetas:

@@ -17,12 +17,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 07/27/2021
-ms.openlocfilehash: 5d11be17cba8683344e631e799df98d3cf11dbf8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 39f32fe71bfa84fc9806c02d265d93cd00e17da1
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623128"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664146"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -58,7 +58,7 @@ La protección contra alteraciones bloquea Antivirus de Microsoft Defender sus v
 - Cambiar la configuración mediante cmdlets de PowerShell
 - Edición o eliminación de la configuración de seguridad a través de la directiva de grupo
 
-La protección contra alteraciones no le impide ver la configuración de seguridad. Además, la protección contra alteraciones no afecta a la forma en que las aplicaciones antivirus de terceros se registran con la Seguridad de Windows aplicación. Si su organización usa Windows 10 Enterprise E5, los usuarios individuales no pueden cambiar la configuración de protección contra alteraciones; en esos casos, la protección contra alteraciones la administra el equipo de seguridad.
+La protección contra alteraciones no le impide ver la configuración de seguridad. Además, la protección contra alteraciones no afecta a la forma en que las aplicaciones antivirus que no son de Microsoft se registran con la Seguridad de Windows aplicación. Si su organización usa Windows 10 Enterprise E5, los usuarios individuales no pueden cambiar la configuración de protección contra alteraciones; en esos casos, la protección contra alteraciones la administra el equipo de seguridad.
 
 ### <a name="what-do-you-want-to-do"></a>¿Qué quiere hacer?
 
@@ -96,7 +96,7 @@ La protección contra alteraciones puede estar activada o desactivada para el in
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>Requisitos para administrar la protección contra alteraciones en el portal de Microsoft 365 Defender datos
 
-- Debe tener los permisos [adecuados,](/microsoft-365/security/defender-endpoint/assign-portal-access)como el administrador global, el administrador de seguridad o las operaciones de seguridad.
+- Debe tener [asignados los permisos adecuados,](/microsoft-365/security/defender-endpoint/assign-portal-access) como el administrador global, el administrador de seguridad o las operaciones de seguridad.
 
 - Los dispositivos Windows deben ejecutar una de las siguientes versiones de Windows:
 
@@ -129,7 +129,7 @@ Si forma parte del equipo de seguridad de su organización y la suscripción inc
 
 ### <a name="requirements-for-managing-tamper-protection-in-intune"></a>Requisitos para administrar la protección contra alteraciones en Intune
 
-- Debe tener los permisos [adecuados,](/microsoft-365/security/defender-endpoint/assign-portal-access)como el administrador global, el administrador de seguridad o las operaciones de seguridad.
+- Debe tener [asignados los permisos adecuados,](/microsoft-365/security/defender-endpoint/assign-portal-access) como el administrador global, el administrador de seguridad o las operaciones de seguridad.
 
 - Su organización usa [Intune para administrar dispositivos](/intune/fundamentals/what-is-device-management). ([Las licencias de Intune](/intune/fundamentals/licenses) son necesarias; Intune se incluye en Microsoft 365 E5).)
 
@@ -143,7 +143,7 @@ Si forma parte del equipo de seguridad de su organización y la suscripción inc
 
 ![Activar la protección contra alteraciones con Intune](images/turnontamperprotect-MEM.png)
 
-1. Vaya al Centro [Microsoft Endpoint Manager administración](https://endpoint.microsoft.com) e inicie sesión con su cuenta laboral o educativa.
+1. Vaya al Centro [Microsoft Endpoint Manager administración e](https://endpoint.microsoft.com) inicie sesión.
 
 2. Seleccione   >  **Perfiles de configuración de dispositivos**.
 
@@ -198,7 +198,7 @@ Vea los siguientes recursos:
 > [!NOTE]
 > La protección contra alteraciones bloquea los intentos de modificar Antivirus de Microsoft Defender configuración a través del Registro.
 >
-> Para garantizar que la protección contra alteraciones no interfiera con los productos de seguridad de  terceros o los scripts de instalación empresarial que modifican esta configuración, vaya **a Seguridad de Windows** y actualice la inteligencia de seguridad a la versión 1.287.60.0 o posterior. (Vea [Actualizaciones de inteligencia de seguridad](https://www.microsoft.com/wdsi/definitions).)
+> Para garantizar que la protección contra alteraciones no interfiera con los productos de seguridad que  no son de Microsoft o los scripts de instalación empresarial que modifican esta configuración, vaya **a Seguridad de Windows** y actualice la inteligencia de seguridad a la versión 1.287.60.0 o posterior. (Vea [Actualizaciones de inteligencia de seguridad](https://www.microsoft.com/wdsi/definitions).)
 >
 > Una vez que haya realizado esta actualización, la protección contra alteraciones continúa protegiendo la configuración del Registro y los registros intentan modificarlos sin devolver errores.
 
@@ -232,7 +232,7 @@ La protección contra alteraciones se integra [con las & de administración de v
 
 Para obtener más información sobre la administración & vulnerabilidad de amenazas, consulte [Threat & Vulnerability Management en Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>¿En qué versiones de Windows puedo configurar la protección contra alteraciones?
 
@@ -242,7 +242,7 @@ Si usa Configuration Manager, versión 2006, con la conexión de inquilino, la p
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>¿Afectará la protección contra alteraciones al registro de antivirus que no es de Microsoft en la Seguridad de Windows aplicación?
 
-No. Las ofertas antivirus de terceros se seguirán registrando con la Seguridad de Windows aplicación.
+No. Las ofertas de antivirus que no son de Microsoft se seguirán registrando con la Seguridad de Windows aplicación.
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>¿Qué sucede si Antivirus de Microsoft Defender está activo en un dispositivo?
 
@@ -298,7 +298,7 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 [Ver información sobre intentos de manipulación](#view-information-about-tampering-attempts).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Ayudar a proteger Windows equipos con Endpoint Protection para Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 

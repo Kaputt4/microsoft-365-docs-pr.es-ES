@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 809f31682fbcb690aaaf2483ec8b72c766282cf5
-  ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+  ms.openlocfilehash: 2e59d4b4d2d077921e1c6c9496d14e59bae2317a
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/15/2021
-  ms.locfileid: "53453830"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53657020"
 title: Preguntas más frecuentes sobre cifrado de mensajes
 summary: >
   ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí. Además, echa un vistazo a las preguntas más frecuentes sobre la protección de datos en [Azure Information Protection](/information-protection/get-started/faqs-rms) para obtener respuestas a preguntas sobre el servicio de protección de datos, Azure Rights Management, en Azure Information Protection.
@@ -141,10 +141,6 @@ sections:
     answer: >
       Los administradores pueden configurar una regla de flujo de correo para quitar el cifrado. No puede quitar el cifrado mediante una regla de flujo de correo del correo que aplica otra organización, a menos que el correo esté cifrado con protección de solo cifrado.
   - question: >
-      ¿Se admite el acceso delegado?
-    answer: >
-      De momento, no.
-  - question: >
       ¿Puedo enviar como buzón compartido y cifrar correos electrónicos?
     answer: >
       Cuando alguien envía un mensaje de correo electrónico que coincide con una regla de flujo de correo de cifrado, el mensaje se cifra antes de que se envíe.
@@ -201,9 +197,9 @@ sections:
          Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
          ```
   - question: >
-      ¿Puedo abrir los mensajes cifrados enviados al buzón de otro usuario con Fullaccess?
+      ¿Se admite el acceso delegado con la apertura de mensajes cifrados? ¿Incluso si un delegado tiene acceso total al buzón de otro usuario?
     answer: >
-      No. Solo puede abrir mensajes cifrados en un buzón compartido.
+      El acceso delegado de correo cifrado se admite en Outlook en la Web, Outlook para Mac, Outlook para iOS y Outlook para Android.  Outlook para Windows no admite el acceso delegado.
   - question: >
       ¿Qué hago si no recibo el código de paso de una sola vez después de solicitarlo?
     answer: >-

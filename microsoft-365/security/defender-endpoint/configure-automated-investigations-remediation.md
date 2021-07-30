@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 0d7a6e4897989df55b00e1aeff0ff512b030c023
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 2415bace353e3ee5596117e37eb860c7a206c96b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590700"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656948"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "53590700"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Si su organización usa [Microsoft Defender para](/windows/security/threat-protection/) endpoint (Defender para endpoint), las capacidades automatizadas de investigación y corrección pueden ahorrar tiempo y esfuerzo al equipo de operaciones de seguridad. [](/microsoft-365/security/defender-endpoint/automated-investigations) Como se describe en [esta entrada de blog,](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)estas capacidades imitan los pasos ideales que un analista de seguridad realiza para investigar y corregir amenazas. [Obtenga más información sobre la investigación automatizada y la corrección](/microsoft-365/security/defender-endpoint/automated-investigations).
 
@@ -60,7 +60,7 @@ Para configurar la investigación y corrección automatizadas:
    - En la **pestaña Acceso de** usuario, selecciona los Azure Active Directory [que](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) deben tener acceso al grupo de dispositivos que estás creando.
 4. Selecciona **Listo** cuando termines de configurar el grupo de dispositivos.
 
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visite el Centro de acciones para ver las acciones de corrección pendientes y completadas](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
 - [Revisar y aprobar acciones pendientes](/microsoft-365/security/defender-endpoint/manage-auto-investigation)

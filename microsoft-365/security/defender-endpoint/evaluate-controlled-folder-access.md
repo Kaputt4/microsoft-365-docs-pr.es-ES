@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 758dd66f9f1d124cbf2966a665a69fba4238b22f
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 5991ac4a845680ad5a2b0fc7b5cdd4b35e66cf2f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53594891"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656864"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Evaluar acceso controlado a carpetas
 
@@ -29,7 +29,7 @@ ms.locfileid: "53594891"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
 [El acceso controlado](controlled-folders.md) a carpetas es una característica que ayuda a proteger los documentos y archivos contra modificaciones de aplicaciones sospechosas o malintencionadas. El acceso controlado a carpetas se admite Windows Server 2019 y Windows 10 cliente.

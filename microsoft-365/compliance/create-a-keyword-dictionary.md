@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: 8d313650f298f2ab26989bec9df1260918f7dd5c
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 1815605d78f3b623eba34bf4d0ec2899256e6385
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300116"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624217"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
@@ -73,7 +73,7 @@ Remove-Item $rawFile
 
 Las palabras clave del diccionario pueden provenir de varios orígenes, normalmente de un archivo (como una lista en un archivo .csv o .txt) importado en el servicio o del cmdlet de PowerShell, de una lista que escriba directamente en el cmdlet de PowerShell o de un diccionario existente. Al crear un diccionario de palabras clave, siga los mismos pasos principales:
   
-1. Use el **Centro de seguridad y cumplimiento** ([https://protection.office.com](https://protection.office.com)) o conéctese al **PowerShell del Centro de seguridad &amp; cumplimiento**.
+1. Use el **Centro de cumplimiento** ([https://compliance.microsoft.com](https://compliance.microsoft.com)) o conéctese al **Centro de seguridad &amp; cumplimiento de PowerShell**.
     
 2. **Defina o cargue las palabras clave del origen que quiera usar**. Tanto el asistente como el cmdlet aceptan una lista separada por comas de palabras clave para crear un diccionario personalizado de palabras clave, por lo que este paso variará ligeramente según el origen de las palabras clave. Una vez cargadas, se codificarán y convertirán en una matriz de bytes antes de su importación.
     
@@ -83,7 +83,7 @@ Las palabras clave del diccionario pueden provenir de varios orígenes, normalme
 
 Siga estos pasos para crear e importar palabras clave para un diccionario personalizado:
 
-1. Conéctese al Centro de seguridad y cumplimiento ([https://protection.office.com](https://protection.office.com)).
+1. Conéctese al Centro de seguridad y cumplimiento ([https://compliance.microsoft.com](https://compliance.microsoft.com)).
 
 2. Vaya a **Clasificaciones > Tipos de información confidencial**.
 

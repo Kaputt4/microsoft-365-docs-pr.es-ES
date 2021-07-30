@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: b39dd09012e7cde6c19ea88a0915154da84c712a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ad08bc1435f950b2c97ae13112b1d5b0b3aa6f83
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114220"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624049"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -64,7 +64,7 @@ El acceso al explorador de contenidos está altamente restringido porque permite
 > [!IMPORTANT]
 > Estos permisos reemplazan los permisos que se asignan a los elementos de forma local, lo que permite ver el contenido. 
 
-Hay dos roles que conceden acceso al explorador de contenido y se otorgan mediante el [Centro de seguridad y cumplimiento de Microsoft](https://protection.office.com/permissions):
+Hay dos roles que conceden acceso al explorador de contenido y se conceden en el [Centro de cumplimiento](https://compliance.microsoft.com/permissions):
 
 - **Visor de listas del explorador de contenido**: la pertenencia a este grupo de roles permite ver cada elemento y su ubicación en la vista de lista. El rol `data classification list viewer` se ha asignado previamente a este grupo de roles.
 

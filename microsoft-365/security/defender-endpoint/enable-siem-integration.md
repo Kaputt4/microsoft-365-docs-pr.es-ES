@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81bed621396e4dd8fe57eae157ed2be62f350fc6
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 9449c8ce4a9f970965d973a334ba9dfb2e8ce706
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53594939"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656876"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Habilitar la integración de SIEM en Microsoft Defender para endpoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "53594939"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Habilite la integración de la información de seguridad y la administración de eventos (SIEM) para que pueda extraer detecciones de Microsoft 365 Defender. Extraer detecciones mediante la solución SIEM o mediante la conexión directa a la API de REST de detecciones.
 

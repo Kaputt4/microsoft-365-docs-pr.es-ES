@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c92a9dca79a9591ae1be002c9f7afca51abfb4b1
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a9a4505ec4609dc42ec75159c2d905d16e01b559
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543334"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656840"
 ---
 # <a name="get-alert-information-by-id-api"></a>Obtener información de alerta por API de id.
 
@@ -30,7 +30,7 @@ ms.locfileid: "53543334"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -51,8 +51,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Application|Alert.Read.All|'Leer todas las alertas'
-Application|Alert.ReadWrite.All|'Leer y escribir todas las alertas'
+Aplicación|Alert.Read.All|'Leer todas las alertas'
+Aplicación|Alert.ReadWrite.All|'Leer y escribir todas las alertas'
 Delegado (cuenta profesional o educativa)|Alert.Read|'Leer alertas'
 Delegado (cuenta profesional o educativa)|Alert.ReadWrite|'Leer y escribir alertas'
 
@@ -72,7 +72,7 @@ GET /api/alerts/{id}
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

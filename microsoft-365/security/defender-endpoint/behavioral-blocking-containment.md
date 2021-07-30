@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 241cb48a42d7e5dfe27fbe38110e19bbf9cc69ab
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 93f6164e875ad6cf918bc8ba9fedf37b80656d69
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591024"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656960"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -32,7 +32,7 @@ ms.locfileid: "53591024"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Información general
 
@@ -117,7 +117,7 @@ Unos minutos después de bloquear el artefacto, se bloquearon varias instancias 
 
 En este ejemplo se muestra que, con las capacidades de contención y bloqueo de comportamiento, las amenazas se detectan, contienen y bloquean automáticamente.
 
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre Defender for Endpoint](overview-endpoint-detection-response.md)
 

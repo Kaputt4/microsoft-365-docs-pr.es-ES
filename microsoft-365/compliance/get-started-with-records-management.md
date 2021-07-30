@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 173086799e4ae7cec3192f95248f0a7f26a10552
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8e6f32a7f1bc68449f1b43531725f07999043b82
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226580"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624037"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
@@ -53,9 +53,7 @@ Los miembros de su equipo de cumplimiento responsables de la administración de 
 
 En el caso de los roles de solo lectura, puede crear un nuevo grupo de roles y agregar el rol de **Administración de registros de solo vista** a este grupo.
 
-Para más información sobre estos roles y grupos de roles, vea [Permisos en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
-
-Para obtener instrucciones sobre cómo agregar usuarios a grupos de roles y asignar roles, vea [Proporcionar acceso a los usuarios al Centro de seguridad y cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para obtener instrucciones sobre cómo agregar usuarios a los roles predeterminados o crear sus propios grupos de roles, consulte [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md).
 
 Estos permisos son necesarios solo para crear, configurar y aplicar etiquetas de retención para declarar registros y administrar la eliminación. La persona que configura estas etiquetas no requiere acceso al contenido.
 

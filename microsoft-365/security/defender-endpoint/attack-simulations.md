@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 2913ba7aa3a729b7ea0eb8356ed93b05fb902cef
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: ee3329248e42f3689755438e086bef3ee749b544
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591108"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656972"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Experiencia de Microsoft Defender para endpoint a través de ataques simulados 
 
@@ -33,7 +33,7 @@ ms.locfileid: "53591108"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-abovefoldlink)
 
 > [!TIP]
 >
@@ -64,7 +64,7 @@ Lea el documento del tutorial proporcionado con cada escenario de ataque. Cada d
 > [!NOTE]
 > Los archivos de simulación o scripts imitan la actividad de ataque, pero en realidad son benignos y no dañan ni comprometen el dispositivo de prueba.
 >
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 
 ## <a name="related-topics"></a>Temas relacionados
 
