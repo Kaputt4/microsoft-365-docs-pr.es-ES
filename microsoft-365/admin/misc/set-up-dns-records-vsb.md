@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Aprenda a verificar su dominio y a crear registros DNS con Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 95b1caadfe0e5b331b2bd777263bd86a88bb581f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 64984cc6631e4585b208b67970b1fc91402881ed
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050659"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648632"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Conectar su dominio a Microsoft 365
 
@@ -45,11 +45,12 @@ Asegúrese de configurar los campos con los siguientes valores:
 - Prioridad: defina la prioridad con el valor más alto posible, que suele ser `0`.
 - Nombre de host: `@`
 - Dirección de destino: copie el valor del centro de administración y péguelo aquí.
-- TTL: `3600‎` (o el proveedor predeterminado)
+- TTL: `3600` (o el proveedor predeterminado)
 
 Guarde el registro y, a continuación, quite cualquier otro registro MX.
 
 ## <a name="add-a-cname-record-to-connect-users-to-their-mailboxes"></a>Agregar un registro CNAME para conectar a los usuarios con sus buzones
+
 Obtendrá la información de los registros CNAME del asistente de configuración del dominio del centro de administración.
 
 En el sitio web de su proveedor de hospedaje, agregue el siguiente registro CNAME. Asegúrese de configurar los campos con los siguientes valores para cada uno:
@@ -57,9 +58,10 @@ En el sitio web de su proveedor de hospedaje, agregue el siguiente registro CNA
 - Tipo de registro: `CNAME (Alias)`
 - Host: pegue aquí los valores que copie del centro de administración.
 - Dirección de destino: copie el valor del centro de administración y péguelo aquí.
-- TTL: `3600‎` (o el proveedor predeterminado)
+- TTL: `3600` (o el proveedor predeterminado)
 
 ## <a name="add-a-txt-record-to-help-prevent-spam"></a>Agregar un registro TXT para ayudar a evitar el correo no deseado
+
 **Antes de empezar:** si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft 365. En vez de eso, agregue los valores necesarios de Microsoft 365 para el registro actual en el sitio web de su proveedor de host, de modo que solo tenga un *único* registro de SPF que incluya ambos conjuntos de valores.
 
 En el sitio web de su proveedor de host, edite el registro SPF existente o cree un nuevo registro SPF.
@@ -68,7 +70,7 @@ Asegúrese de configurar los campos con los siguientes valores:
 - Tipo de registro: `TXT (Text)`
 - Host: `@`
 - Valor TXT: `v=spf1 include:spf.protection.outlook.com -all`
-- TTL: `3600‎` (o el proveedor predeterminado)
+- TTL: `3600` (o el proveedor predeterminado)
 
 Guarde el registro.
 
@@ -76,6 +78,6 @@ Para validar el registro de SPF, use una de estas[herramientas de validación de
 
 SPF está diseñado para ayudar a evitar la suplantación de identidad, pero hay técnicas de suplantación de identidad contra las que SPF no puede proteger. Para protegerse de estos, una vez que haya configurado el SPF, también debe configurar DKIM y DMARC para Microsoft 365.
 
-Para comenzar, consulte [Usar DKIM para validar el correo electrónico saliente enviado desde su dominio en Microsoft 365](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md) y[Usar DMARC para validar el correo electrónico en Microsoft 365](../../security/defender-365-security/use-dmarc-to-validate-email.md).
+Para comenzar, consulte [Usar DKIM para validar el correo electrónico saliente enviado desde su dominio en Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) y[Usar DMARC para validar el correo electrónico en Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 Por último, vuelva al asistente de configuración del dominio del centro de administración para completar la configuración.

@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams clases con Canvas
-ms.openlocfilehash: e8ab45de84fe8325f6d5b349deb96aa831d54e36
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9baf4f3607673e48472e297ce42a1ad461df5b84
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454690"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652436"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Usar Microsoft Teams clases con Canvas
 
@@ -62,9 +62,9 @@ Antes de administrar la integración de Microsoft Teams en Instructure Canvas, e
 
 Configure la integración Microsoft Teams LTI 1.3.
 
-Como administrador de Canvas, tendrás que agregar la aplicación LTI de Microsoft Teams clases en tu entorno. Anote el id. de cliente de LTI para la aplicación.
+Como administrador de Canvas, tendrás que agregar la aplicación LTI de Microsoft Teams clases en tu entorno. Accede a la descripción de la clave de desarrollador en la cuenta principal, cambia a las claves heredadas y habilita la Teams LTI. Anote el id. de cliente de LTI para la aplicación.
 
- - Microsoft Teams : 170000000000570
+ - Microsoft Teams clases de 170000000000570
 
 1. Access **Admin settings**  >  **Apps**.
 

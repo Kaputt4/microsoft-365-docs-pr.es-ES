@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para eliminar la cuenta de usuario de un antiguo empleado.
-ms.openlocfilehash: 3db2eb7fd4c73854a759ee4026d6f9b9c12dfa82
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 6f1f307a7029bcf1cbf71a2ce85908b9ccb28ba5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541558"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648644"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Paso 7: Eliminar la cuenta de usuario de un antiguo empleado
 
@@ -95,4 +95,6 @@ Las operaciones anteriores se pueden realizar en tres lugares:
   
 ## <a name="related-content"></a>Contenido relacionado
 
-[Restaurar un usuario](restore-user.md) (artículo)/ [Restablecer contraseñas](reset-passwords.md) (artículo)
+[Restaurar un usuario](restore-user.md) (artículo)
+
+[Restablecer contraseñas](reset-passwords.md) (artículo)

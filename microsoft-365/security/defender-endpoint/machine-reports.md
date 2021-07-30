@@ -1,5 +1,5 @@
 ---
-title: Informe de cumplimiento y estado del dispositivo en Microsoft Defender para endpoint
+title: Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
 description: Realizar un seguimiento de las detecciones de estado de estado del dispositivo, el estado del antivirus, la plataforma del sistema operativo y las Windows 10 con el informe de estado y cumplimiento del dispositivo
 keywords: estado de mantenimiento, antivirus, plataforma del sistema operativo, versión de Windows 10, versión, estado, estado
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 35100a4b8bdaee23c427816450e948ced9ed3191
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 23d099d01791fcdd5f5265c8683d6faca9fb857d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860296"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651944"
 ---
-# <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de cumplimiento y estado del dispositivo en Microsoft Defender para endpoint
+# <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51860296"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 El informe de estado de dispositivos proporciona información de alto nivel sobre los dispositivos de la organización. El informe incluye información de tendencias que muestra el estado de mantenimiento del sensor, el estado del antivirus, las plataformas del sistema operativo y Windows 10 versiones.
 
@@ -48,7 +48,7 @@ Sección | Descripción
 ## <a name="device-trends"></a>Tendencias de dispositivos 
 De forma predeterminada, las tendencias del dispositivo muestran información del dispositivo del período de 30 días que termina en el último día completo. Para obtener una mejor perspectiva de las tendencias que se producen en su organización, puede ajustar el período de informes ajustando el período de tiempo que se muestra. Para ajustar el período de tiempo, seleccione un intervalo de tiempo en las opciones desplegables:
  
-- 30 días
+- 30 días
 - 3 meses
 - 6 meses
 - Personalizado
@@ -97,4 +97,4 @@ Por ejemplo, para mostrar datos sobre Windows 10 dispositivos con estado de mant
 
 
 ## <a name="related-topic"></a>Tema relacionado
-- [Informe de protección contra amenazas](threat-protection-reports.md)
+- [Informe de estado de protección contra amenazas](threat-protection-reports.md)

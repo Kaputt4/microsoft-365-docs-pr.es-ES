@@ -26,22 +26,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga los pasos de esta solución para quitar un antiguo empleado Microsoft 365 proteger los datos de su organización.
-ms.openlocfilehash: 00706f0dac37fe7be538a45908372ed1084dc9d0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 7c9667b771300a75a91588727f1d333ff2215302
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541546"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648668"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Información general: Quitar un antiguo empleado y datos seguros
 
-A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" En esta serie de artículos se explica cómo bloquear el acceso a Microsoft 365, los pasos que debe seguir para proteger los datos y cómo permitir que otros empleados accedan a los datos.
-
-:::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot: Overview steps for removing a former employee":::
+A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" En esta serie de artículos se explica cómo bloquear el acceso a Microsoft 365 para que estos usuarios no puedan iniciar sesión en Microsoft 365, los pasos que debe seguir para proteger los datos de la organización y cómo permitir que otros empleados accedan al correo electrónico y OneDrive datos.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Debe ser un administrador global para completar los pasos de esta solución.
+
+Para completar los pasos de esta serie, use estas Microsoft 365 y características.
+
+|Producto o componente|Funcionalidad o característica|
+|---|---|
+|Centro de administración de Microsoft 365|Convertir buzón, reenviar correo electrónico, revocar acceso, quitar usuario |
+|Centro de administración de Exchange|Bloquear usuario, bloquear el acceso al correo electrónico, borrar dispositivo |
+|OneDrive y SharePoint |Dar acceso a otros usuarios |
+|Outlook|Importar archivos pst, agregar buzón |
+|Active Directory|Quitar usuarios en entornos híbridos |
 
 ## <a name="solution-remove-a-former-employee"></a>Solución: quitar un antiguo empleado
 

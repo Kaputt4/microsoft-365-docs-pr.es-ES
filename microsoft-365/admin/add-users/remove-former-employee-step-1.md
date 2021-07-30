@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Bloquear el acceso a los servicios Microsoft 365 un antiguo empleado.
-ms.openlocfilehash: 69108539a87e9db4aa72851e5622a5f3856d3a45
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: da1ad9236a8380dd3ce5bdebb86675b7c6e09cbd
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541630"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648680"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Paso 1: impedir que un antiguo empleado inicia sesión y bloquee el acceso a Microsoft 365 servicios
 
@@ -68,10 +68,11 @@ Si tiene correo electrónico como parte de su suscripción Microsoft 365, inicie
   
 1. Vaya al <a href="https://admin.exchange.microsoft.com/" target="_blank">Centro de administración de Exchange</a>.
 2. En el Centro de administración de Exchange, vaya a **Destinatarios** \> **Buzones**.
-3. Haz doble clic en el usuario y ve a **Administrar la configuración de aplicaciones de correo electrónico** en Aplicaciones de correo **electrónico.** Desactivar **el** control deslizante de todas las opciones; **Mobile (Exchange ActiveSync),** **Outlook en la Web**, **Outlook escritorio (MAPI),** Exchange **web services**, **POP3** e **IMAP**.
+3. Seleccione el buzón de usuario de la lista y, a continuación, en el Panel de detalles *(a* la derecha), seleccione Administrar la configuración de aplicaciones **de** correo electrónico en Aplicaciones de **correo electrónico**. Desactivar **el** control deslizante de todas las opciones; **Mobile (Exchange ActiveSync),** **Outlook en la Web**, **Outlook escritorio (MAPI),** Exchange **web services**, **POP3** e **IMAP**.
 4. Seleccione **Guardar**.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center) 
- [Restaurar un usuario](restore-user.md)
+[Centro de administración de Exchange en Exchange Online](/exchange/exchange-admin-center)
+
+[Restaurar un usuario](restore-user.md)

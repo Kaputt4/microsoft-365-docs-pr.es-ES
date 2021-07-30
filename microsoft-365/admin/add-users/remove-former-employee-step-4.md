@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga los pasos de este artículo para dar a otro empleado acceso a los datos de OneDrive y Outlook antiguos.
-ms.openlocfilehash: 67ec651361aac2b687fa1b0f851271ced5e634ed
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0051f9c20508f0682d34ad3ad17d3e4d8cccf60f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541594"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648692"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Paso 4: Dar a otro empleado acceso a OneDrive y Outlook datos
 
@@ -185,8 +185,14 @@ Para dar acceso a los mensajes de correo electrónico, el calendario, las tareas
 > Los pasos siguen siendo los mismos para obtener acceso a los datos de correo electrónico OneDrive un usuario existente.
 
 > [!TIP]
-> Si desea importar o restaurar solo algunos elementos de un archivo de datos de Outlook (.pst), puede abrir el archivo de Outlook datos. A continuación, en el panel de navegación, arrastre los elementos de Outlook carpetas de archivo de datos a las carpetas Outlook existentes. 
+> Si desea importar o restaurar solo algunos elementos de un archivo de datos de Outlook (.pst), puede abrir el archivo de Outlook datos. A continuación, en el panel de navegación, arrastre los elementos de Outlook carpetas de archivo de datos a las carpetas Outlook existentes.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-Agregar y quitar [administradores](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) en una cuenta de OneDrive (artículo) [](/onedrive/restore-deleted-onedrive) Restaurar un OneDrive eliminado (artículo) OneDrive [retención](/onedrive/retention-and-deletion) y eliminación (artículo) Compartir [OneDrive](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07) archivos y carpetas
+[Agregar y quitar administradores en una cuenta OneDrive (artículo)](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
+
+[Restaurar una OneDrive](/onedrive/restore-deleted-onedrive) eliminada (artículo)
+
+[OneDrive retención y eliminación](/onedrive/retention-and-deletion) (artículo)
+
+[Compartir archivos y carpetas de OneDrive](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)

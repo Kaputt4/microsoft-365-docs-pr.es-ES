@@ -21,12 +21,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
-ms.openlocfilehash: 4b4c09ce6a4161c713490daef46157b5555e124b
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 22eb8ff47ac3dd25eb143ccb567e75b9179395b9
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393924"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652460"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 
@@ -48,12 +48,13 @@ En primer lugar, tiene que demostrar que es el propietario del dominio que quier
 2. En una nueva pestaña o ventana del explorador, inicie sesión en su proveedor de host DNS y, después, busque el lugar donde administra la configuración de DNS (por ejemplo, Configuración del archivo de zona, Administrar dominios, Administrador de dominios, Administrador de DNS).
 3. Vaya a la página del administrador de DNS de su proveedor y agregue a su dominio el registro TXT indicado en el centro de administración.
 
-Agregar este registro no afectará a su correo electrónico existente ni a otros servicios. Podrá quitarlo de forma segura una vez que su dominio se haya conectado a Microsoft 365.
+   Agregar este registro no afectará a su correo electrónico existente ni a otros servicios. Podrá quitarlo de forma segura una vez que su dominio se haya conectado a Microsoft 365.
 
-Ejemplo:
-- Nombre TXT: `@`
-- Valor TXT: MS=ms######## (ID único del centro de administración)
-- TTL: `3600‎` (o el proveedor predeterminado)
+   Ejemplo:
+
+   - Nombre TXT: `@`
+   - Valor TXT: MS=ms######## (ID único del centro de administración)
+   - TTL: `3600` (o el proveedor predeterminado)
 
 4. Guarde el registro, vuelva al centro de administración y, a continuación, seleccione **Comprobar**. Por lo general, los cambios de registro tardan alrededor de 15 minutos en efectuarse, pero a veces puede tardar más. Espere unos momentos y pruebe varias veces hasta detectar el cambio.
 
@@ -75,7 +76,7 @@ Asegúrese de configurar los campos con los siguientes valores:
 - Prioridad: defina la prioridad con el valor más alto posible, que suele ser `0`.
 - Nombre de host: `@`
 - Dirección de destino: copie el valor del centro de administración y péguelo aquí.
-- TTL: `3600‎` (o el proveedor predeterminado)
+- TTL: `3600` (o el proveedor predeterminado)
 
 Cuando Microsoft encuentre el registro MX correcto, se comprobará su dominio.
 
@@ -83,9 +84,10 @@ Cuando Microsoft encuentre el registro MX correcto, se comprobará su dominio.
 
 En una nueva pestaña o ventana del explorador, inicie sesión en su proveedor de host DNS y busque el lugar donde administra la configuración de DNS (por ejemplo, Configuración del archivo de zona, Administrar dominios, Administrador de dominios, Administrador de DNS).
 
-Agregará varios tipos de registros DNS en función de los servicios que quiera habilitar. 
+Agregará varios tipos de registros DNS en función de los servicios que quiera habilitar.
 
 ### <a name="add-an-mx-record-for-email-outlook-exchange-online"></a>Agregar un registro MX para el correo electrónico (Outlook, Exchange Online)
+
 **Antes de empezar:** si los usuarios ya tienen correo electrónico en su dominio (por ejemplo, usuario@sudominio.com), cree sus cuentas en el centro de administración antes de configurar los registros MX. De esta forma, seguirán recibiendo correo electrónico. Cuando actualice el registro MX de su dominio, todo el correo electrónico nuevo de cualquiera que use su dominio pasará a Microsoft 365. Cualquier correo electrónico ya existente permanecerá en el host de correo electrónico actual, a menos que decida [migrar el correo electrónico y los contactos a Microsoft 365.](../setup/migrate-email-and-contacts-admin.md)
 
 Obtendrá la información del registro MX del asistente de configuración del dominio del centro de administración.
@@ -97,11 +99,12 @@ Asegúrese de configurar los campos con los siguientes valores:
 - Prioridad: defina la prioridad con el valor más alto posible, que suele ser `0`.
 - Nombre de host: `@`
 - Dirección de destino: copie el valor del centro de administración y péguelo aquí.
-- TTL: `3600‎` (o el proveedor predeterminado)
+- TTL: `3600` (o el proveedor predeterminado)
 
 Guarde el registro y, a continuación, quite cualquier otro registro MX.
 
 ### <a name="add-cname-records-to-connect-other-services-teams-exchange-online-aad-mdm"></a>Agregar registros CNAME para conectarse a otros servicios (Teams, Exchange Online, AAD, MDM)
+
 Obtendrá la información de los registros CNAME del asistente de configuración del dominio del centro de administración.
 
 En el sitio web de su proveedor de host, agregue los registros CNAME para cada servicio al que quiera conectarse.
@@ -110,10 +113,10 @@ Asegúrese de configurar los campos con los siguientes valores para cada uno:
 - Tipo de registro: `CNAME (Alias)`
 - Host: pegue aquí los valores que copie del centro de administración.
 - Dirección de destino: copie el valor del centro de administración y péguelo aquí.
-- TTL: `3600‎` (o el proveedor predeterminado)
-
+- TTL: `3600` (o el proveedor predeterminado)
 
 ### <a name="add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online"></a>Agregar un registro TXT para SPF para ayudar a prevenir correo electrónico no deseado (Outlook, Exchange Online)
+
 **Antes de empezar:** si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft 365. En vez de eso, agregue los valores necesarios de Microsoft 365 para el registro actual en el sitio web de su proveedor de host, de modo que solo tenga un *único* registro de SPF que incluya ambos conjuntos de valores.
 
 En el sitio web de su proveedor de host, edite el registro SPF existente o cree un nuevo registro SPF.
@@ -122,13 +125,13 @@ Asegúrese de configurar los campos con los siguientes valores:
 - Tipo de registro: `TXT (Text)`
 - Host: `@`
 - Valor TXT: `v=spf1 include:spf.protection.outlook.com -all`
-- TTL: `3600‎` (o el proveedor predeterminado)
+- TTL: `3600` (o el proveedor predeterminado)
 
 Guarde el registro.
 
 Para validar el registro de SPF, use una de estas[herramientas de validación de SPF](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain).
 
-SPF está diseñado para ayudar a evitar la suplantación de identidad, pero hay técnicas de suplantación de identidad contra las que SPF no puede proteger. Para protegerse de estos, una vez que haya configurado el SPF, también debe configurar DKIM y DMARC para Microsoft 365. 
+SPF está diseñado para ayudar a evitar la suplantación de identidad, pero hay técnicas de suplantación de identidad contra las que SPF no puede proteger. Para protegerse de estos, una vez que haya configurado el SPF, también debe configurar DKIM y DMARC para Microsoft 365.
 
 Para comenzar, consulte [Usar DKIM para validar el correo electrónico saliente enviado desde su dominio en Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) y[Usar DMARC para validar el correo electrónico en Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
@@ -145,25 +148,29 @@ Asegúrese de configurar los campos con los siguientes valores para cada uno:
 - Prioridad: `100`
 - Peso: `1`
 - Puerto: copie el valor del centro de administración y péguelo aquí.
-- TTL: `3600‎` (o el proveedor predeterminado)
+- TTL: `3600` (o el proveedor predeterminado)
 
 Guarde el registro.
 
 #### <a name="srv-record-field-restrictions-and-workarounds"></a>Restricciones y soluciones alternativas para campos de registros SRV
+
 Algunos proveedores de host imponen restricciones en los valores de los campos de los registros SRV. Estas son algunas soluciones alternativas habituales para estas restricciones.
 
 ##### <a name="name"></a>Nombre
+
 Si el proveedor de host no permite configurar este campo en **@**, déjelo en blanco. Use esta estrategia *solo* cuando el proveedor de host tiene campos separados para los valores de servicio y protocolo. De lo contrario, consulte las notas de servicio y protocolo a continuación.
 
 ##### <a name="service-and-protocol"></a>Servicio y protocolo
-Si el proveedor de host no ofrece estos campos para los registros SRV, debe especificar los valores de **Servicio** y **Protocolo** en el campo de **Nombre** del registro. (Nota: dependiendo de su proveedor de host, el campo de **Nombre** puede llamarse de otra forma, como: **Host**, **Nombre de host** o **Subdominio**). Para agregar estos valores, cree una sola cadena, separando los valores con un punto. 
+
+Si el proveedor de host no ofrece estos campos para los registros SRV, debe especificar los valores de **Servicio** y **Protocolo** en el campo de **Nombre** del registro. (Nota: dependiendo de su proveedor de host, el campo de **Nombre** puede llamarse de otra forma, como: **Host**, **Nombre de host** o **Subdominio**). Para agregar estos valores, cree una sola cadena, separando los valores con un punto.
 
 Ejemplo: `_sip._tls`
 
-##### <a name="priority-weight-and-port-br"></a>Prioridad, peso y puerto <br>
-Si el proveedor de host no ofrece estos campos para los registros SRV, debe especificarlos en el campo **Destino** del registro. (Nota: en función de su proveedor de host, el campo **Destino** puede llamarse de otra forma, como: **Contenido**, **Dirección IP** o **Host de destino**). 
+##### <a name="priority-weight-and-port"></a>Prioridad, peso y puerto
 
-Para agregar estos valores, cree una sola cadena, separando los valores con espacios y *en ocasiones con un punto* (si no está seguro, consulte con el proveedor). Los valores deben ser incluidos en este orden: prioridad, peso, puerto, y destino. 
+Si el proveedor de host no ofrece estos campos para los registros SRV, debe especificarlos en el campo **Destino** del registro. (Nota: en función de su proveedor de host, el campo **Destino** puede llamarse de otra forma, como: **Contenido**, **Dirección IP** o **Host de destino**).
+
+Para agregar estos valores, cree una sola cadena, separando los valores con espacios y *en ocasiones con un punto* (si no está seguro, consulte con el proveedor). Los valores deben ser incluidos en este orden: prioridad, peso, puerto, y destino.
 
 - Ejemplo 1: `100 1 443 sipdir.online.lync.com.`
 - Ejemplo 2: `100 1 443 sipdir.online.lync.com`

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5152a1fa13562f25a8e55617655cab934e886ff0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f7fb73cde3afa385b0d73b35610415cacd1cad81
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186622"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648157"
 ---
 # <a name="microsoft-defender-security-center"></a>Centro de seguridad de Microsoft Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186622"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Centro de seguridad de Microsoft Defender es el portal donde puede obtener acceso a las funcionalidades de Microsoft Defender para endpoints. Proporciona a los equipos de operaciones de seguridad empresarial un único panel de experiencia de cristal para ayudar a proteger las redes.
 
@@ -41,7 +41,7 @@ Centro de seguridad de Microsoft Defender es el portal donde puede obtener acces
 
 Tema | Descripción
 :---|:---
-Introducción  |  Obtenga información sobre los requisitos mínimos, valide las licencias y la configuración completa, conozca las características de vista previa, comprenda el almacenamiento y la privacidad de los datos y cómo asignar acceso de usuario al portal.
+Comenzar  |  Obtenga información sobre los requisitos mínimos, valide las licencias y la configuración completa, conozca las características de vista previa, comprenda el almacenamiento y la privacidad de los datos y cómo asignar acceso de usuario al portal.
 [Incorporar dispositivos](onboard-configure.md) | Obtenga información sobre la incorporación de clientes, servidores y dispositivos que no Windows cliente. Obtenga información sobre cómo ejecutar una prueba de detección, configurar la configuración de proxy y conectividad a Internet y cómo solucionar posibles problemas de incorporación.
 [Comprender el portal](use.md) | Comprenda las operaciones de seguridad, puntuación segura y paneles de análisis de amenazas, así como cómo navegar por el portal.
 Investigar y corregir amenazas | Investigar alertas, dispositivos y realizar acciones de respuesta para corregir amenazas.

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar la administración de privacidad para su organización, establecer roles y permisos y configurar opciones importantes.
-ms.openlocfilehash: f6989de8e9a3926f5d9e43cf08240ce76c85a0c9
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0486c073da8061b72eedb9a7fac44adf6d38ae19
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541018"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648608"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Introducción a la administración de privacidad (versión preliminar)
 
@@ -113,7 +113,7 @@ Esta característica permite mostrar versiones anónimas de nombres de usuario d
 
 ### <a name="user-notification-emails"></a>Mensajes de correo electrónico de notificación de usuario
 
-Cuando detectamos una coincidencia para sus directivas de tratamiento de datos, la administración de privacidad puede enviar un correo electrónico a los usuarios afectados con las acciones correctivas que se deben tomar y un vínculo a la formación en privacidad. En Configuración, puede habilitar o deshabilitar la funcionalidad de notificación de correo electrónico de la administración de privacidad en su conjunto. Puede activar notificaciones individuales, establecer la frecuencia del correo electrónico y especificar una dirección URL de aprendizaje al crear o editar una directiva. Si la funcionalidad de notificación está desactivada en Configuración, se deshabilitará cualquier configuración de nivel de directiva para correos de notificación específicos. Para obtener más información sobre las directivas, vea [Create and manage policies](privacy-management-policies.md).
+Cuando detectamos una coincidencia de las directivas de tratamiento de datos, la administración de privacidad puede enviar un correo electrónico a los usuarios con acciones correctivas que deben realizarse y un vínculo a la formación en privacidad. En Configuración, puede habilitar o deshabilitar la funcionalidad de notificación de correo electrónico de la administración de privacidad en su conjunto. Puede activar notificaciones individuales, establecer la frecuencia del correo electrónico y especificar una dirección URL de aprendizaje al crear o editar una directiva. Si la funcionalidad de notificación está desactivada en Configuración, se deshabilitará cualquier configuración de nivel de directiva para correos de notificación específicos. Para obtener más información sobre las directivas, vea [Create and manage policies](privacy-management-policies.md).
 
 ### <a name="teams-collaboration"></a>Colaboración de Teams
 

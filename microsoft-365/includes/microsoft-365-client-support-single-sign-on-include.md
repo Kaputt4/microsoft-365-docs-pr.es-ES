@@ -1,10 +1,9 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|Clientes|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Aplicaciones modernas|
+|Clientes|Android|iOS|Mac|Windows 10<br>Escritorio|Windows 10<br>Aplicaciones modernas|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|N/D|N/D|N/D|✔|N/D|
 |PORTAL DE EMPRESA|N/D|✔|Planeado|N/D|✔|
 |CORTANA|N/D|N/D|N/D|N/D|✔|
-|DELVE|✔|✔|N/D|N/D|N/D|
 |EXCEL|✔|✔|✔|✔|✔|
 |KAIZALA|✔|Planeado|N/D|N/D|N/D|
 |MICROSOFT ROOMS|Planeado|Planeado|N/D|N/D|N/D|

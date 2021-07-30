@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Cómo usar PowerShell para bloquear y desbloquear el acceso a Microsoft 365 cuentas.
-ms.openlocfilehash: 90d712cdb6eb34d0588fc262e3a02673accfbd9e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d6ccedf68772d6774ed327e75f080f9200eb5684
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287226"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648620"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquear Microsoft 365 de usuario con PowerShell
 
@@ -85,7 +85,7 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 Para comprobar el estado bloqueado de una cuenta de usuario, use el siguiente comando:
 
 ```powershell
-Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
+Get-AzureADUser  -ObjectID <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
 ### <a name="block-multiple-user-accounts"></a>Bloquear varias cuentas de usuario

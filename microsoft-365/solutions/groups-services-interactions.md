@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interacciones de servicios de grupos
-ms.openlocfilehash: f9b0d7ca61d55e3d23aa94577fc8257073b26675
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 13331ea53b69b4559bfe21074dd5c7d998aa68af
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539208"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652472"
 ---
 # <a name="groups-services-interactions"></a>Interacciones de servicios de grupos
 
@@ -63,13 +63,13 @@ En las distintas interfaces administrativas que pueden administrar la configurac
 
 **Centro de administración de Microsoft 365**
 
-En el centro Microsoft 365 administración, el acceso de invitado a grupos está habilitado de forma predeterminada, al igual que la capacidad de permitir que los propietarios agreguen invitados. No hay más controles de nivel de organización disponibles para grupos desde este centro de administración.
+En el Centro de administración de Microsoft 365, el acceso de invitado a grupos está habilitado de forma predeterminada, al igual que la capacidad de permitir que los propietarios agreguen invitados. No hay más controles de nivel de organización disponibles para grupos desde este centro de administración.
 
 **Centro de administración de Azure AD**
 
 El Centro de administración de Azure AD ofrece controles sobre si los usuarios pueden crear grupos o asignar propietarios en Azure Portals, así como la configuración de la directiva de expiración y nomenclatura.
 
-El Centro de administración también proporciona una serie de medidas de control de invitaciones de invitado que van más allá de la del centro de administración de Microsoft 365, como la capacidad de limitar si los no propietarios también pueden invitar invitados
+El Centro de administración también proporciona una serie de medidas de control de invitaciones de invitado que van más allá de la del Centro de administración de Microsoft 365, como la capacidad de limitar si los no propietarios también pueden invitar invitados
 
 **SharePoint**
 
@@ -80,18 +80,23 @@ SharePoint sitios se crean con grupos de seguridad Propietario, Miembro y Visita
 Los usuarios finales pueden crear grupos a partir de varios de los servicios de Microsoft 365 y, en otros, solo pueden compartir con un grupo.
 
 Los siguientes servicios permiten la creación de grupos por usuarios finales:
-                         
-Outlook Planner Project para la web SharePoint Stream Microsoft Teams Yammer
 
-**Restricción de creación de grupos**
+- Outlook
+- Planner
+- Project para la Web
+- SharePoint
+- Stream
+- Microsoft Teams
+- Yammer
+
+#### <a name="restriction-of-group-creation"></a>Restricción de creación de grupos
 
 Un enfoque común para controlar la expansión de los equipos es limitar los usuarios que pueden crearlos. Esto solo se puede hacer limitando la creación de grupos. Esto afecta a la capacidad de crear grupos desde otros servicios cuando esto puede ser necesario para el usuario final. Microsoft 365 Los grupos no admiten la capacidad de restringir la creación de grupos desde algunas aplicaciones o servicios mientras se permiten desde otras.
 
 La experiencia de restricción de creación de grupos varía entre aplicaciones y servicios:
 
-
 |Aplicación o servicio|Experiencia|
-|:-------------|:---------|
+|---|---|
 |Outlook|**La nueva opción** de grupo se quita del menú Nuevo en la página personas|
 |Planner|**El nuevo plan** explica que la creación de grupos se ha desactivado y ofrece agregar el plan a un grupo existente|
 |Project web y guía básica|**El menú** Crear grupo explica que la creación de grupos está restringida y sugiere el uso de un grupo existente.|
@@ -111,10 +116,10 @@ Vea el póster Grupos en Microsoft 365 para obtener información sobre los disti
 En la tabla siguiente se proporciona información general sobre Microsoft 365 de grupos con diversos servicios:
 
 |Producto|Características|¿El servicio<br>existen sin un grupo.|¿Puede el servicio?<br>crear un grupo|Elimina la<br>instancia eliminar el grupo?|
-|:---|:---|:---|:---|:---|
+|---|---|---|---|---|
 |Azure AD|Pertenencia, Controles de grupo, Invitados|Sí|Sí|Sí|
 |Exchange|Calendario, buzón|Sí|Sí|Sí|
-|Forms|Form|Sí|No|No|
+|Formularios|Form|Sí|No|No|
 |OneNote|Bloc de notas|Sí|No|No|
 |Planner|Panel de tareas|No|Sí|Sí|
 |Power Apps app|Aplicación|Sí|No|No|
@@ -176,7 +181,7 @@ De forma predeterminada, cuando se crea un equipo, el buzón y el calendario aso
 
 - Conversaciones
 - Canales & pestañas
-- Reuniones
+- Meetings
 
 **¿Teams crear un grupo?**
 
@@ -236,7 +241,7 @@ No, el buzón y el calendario no se pueden cambiar a un grupo diferente. Sin emb
 
 Sí, al eliminar el buzón de Exchange se eliminará el grupo, así como los servicios y el contenido asociados al grupo.
 
-## <a name="forms"></a>Forms
+## <a name="forms"></a>Formularios
 
 Forms proporciona encuestas y cuestionarios basados en web.
 
@@ -335,7 +340,7 @@ No, sin embargo, al copiar un plan se crea un nuevo grupo.
 
 Sí, al eliminar el plan se eliminará el contenido y los servicios asociados al grupo.
 
-## <a name="power-apps"></a>PowerApps
+## <a name="power-apps"></a>Power Apps
 
 Power Apps proporciona un lienzo para el desarrollo de aplicaciones sin código.
 

@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo guardar el contenido del buzón de un antiguo empleado.
-ms.openlocfilehash: b6030c0231339cb77c2d91ba5e118da8be14780f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8638dddb217f369e222f0f4188f2ee736040f2f7
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541618"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648656"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Paso 2: Guardar el contenido del buzón de un antiguo empleado
 
@@ -54,5 +54,6 @@ Una vez que haya bloqueado que un usuario pueda iniciar sesión en su organizaci
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center) 
- [Restaurar un usuario](restore-user.md)
+[Centro de administración de Exchange en Exchange Online](/exchange/exchange-admin-center)
+
+[Restaurar un usuario](restore-user.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287824"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652520"
 ---
 # <a name="update-incidents-api"></a>ACTUALIZAR LA API de incidentes
 
@@ -40,7 +40,7 @@ ms.locfileid: "53287824"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Actualiza las propiedades del incidente existente. Las propiedades actualizables son: ```status``` , , , , y ```determination``` ```classification``` ```assignedTo``` ```tags``` ```comments``` .
+Actualiza las propiedades del incidente existente. Las propiedades actualizables son: `status` , , , , y `determination` `classification` `assignedTo` `tags` `comments` .
 
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Cuotas, asignación de recursos y otras restricciones
 
@@ -53,10 +53,10 @@ Si la solicitud está limitada, devolverá un `429` código de respuesta. El cue
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Access the Microsoft 365 Defender API](api-access.md).
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
--|-|-
-Aplicación | Incident.ReadWrite.All | Leer y escribir todos los incidentes
-Delegado (cuenta profesional o educativa) | Incident.ReadWrite | Incidentes de lectura y escritura
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
+---|---|---
+Aplicación|Incident.ReadWrite.All|Leer y escribir todos los incidentes
+Delegado (cuenta profesional o educativa)|Incident.ReadWrite|Incidentes de lectura y escritura
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario, el usuario debe tener permiso para actualizar el incidente en el portal.
@@ -69,23 +69,23 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
--|-|-
-Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | Cadena | application/json. **Necesario**.
+Nombre|Tipo|Descripción
+---|---|---
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|Cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione los valores de los campos que deben actualizarse. Las propiedades existentes que no se incluyen en el cuerpo de la solicitud mantendrán sus valores, a menos que tengan que volver a calcularse debido a los cambios en los valores relacionados. Para obtener el mejor rendimiento, debe omitir los valores existentes que no han cambiado.
 
-Propiedad | Tipo | Descripción
--|-|-
-status | Enum | Especifica el estado actual del incidente. Los valores posibles son: ```Active``` ```Resolved``` , y ```Redirected``` .
-assignedTo | cadena | Propietario del incidente.
-classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
-determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
-etiquetas | lista de cadenas | Lista de etiquetas de incidentes.
-comment | string | Comentario que se agregará al incidente.
+Propiedad|Tipo|Descripción
+---|---|---
+status|Enum|Especifica el estado actual del incidente. Los valores posibles son: `Active` `Resolved` , y `Redirected` .
+assignedTo|cadena|Propietario del incidente.
+classification|Enum|Especificación del incidente. Los valores posibles son: `Unknown`, `FalsePositive` y `TruePositive`.
+determinación|Enum|Especifica la determinación del incidente. Valores posibles: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
+tags|lista de cadenas|Lista de etiquetas de incidentes.
+comment|string|Comentario que se agregará al incidente.
 
 ## <a name="response"></a>Respuesta
 
@@ -93,7 +93,7 @@ Si se realiza correctamente, este método devuelve `200 OK` . El cuerpo de la re
 
 ## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request-example"></a>Ejemplo de solicitud
 
 Este es un ejemplo de la solicitud.
 
@@ -101,7 +101,7 @@ Este es un ejemplo de la solicitud.
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
 
-**Respuesta**
+### <a name="response-example"></a>Ejemplo de respuesta
 
 ```json
 {

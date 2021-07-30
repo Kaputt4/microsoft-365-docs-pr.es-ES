@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e051803a4cd228e3b455ec08b30e5c2197ca9a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6f1e59dd653ef0718797a4b71e67c3607b39824c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289612"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652592"
 ---
 # <a name="get-incident-information-api"></a>Obtener API de información de incidentes
 
@@ -30,12 +30,11 @@ ms.locfileid: "53289612"
 **Se aplica a:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## <a name="api-description"></a>Descripción de la API
 
@@ -45,17 +44,16 @@ Recupera un incidente específico por su identificador
 
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
-
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. 
+Se requiere uno de los siguientes permisos para llamar a esta API.
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
-:---|:---|:---
-Aplicación | Incident.Read.All | 'Leer todos los incidentes'
-Aplicación | Incident.ReadWrite.All | 'Leer y escribir todos los incidentes'
-Delegado (cuenta profesional o educativa) | Incident.Read | 'Leer incidentes'
-Delegado (cuenta profesional o educativa) | Incident.ReadWrite | 'Leer y escribir incidentes'
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
+---|---|---
+Aplicación|Incident.Read.All|'Leer todos los incidentes'
+Aplicación|Incident.ReadWrite.All|'Leer y escribir todos los incidentes'
+Delegado (cuenta profesional o educativa)|Incident.Read|'Leer incidentes'
+Delegado (cuenta profesional o educativa)|Incident.ReadWrite|'Leer y escribir incidentes'
 
 > [!NOTE]
 >
@@ -67,14 +65,14 @@ Delegado (cuenta profesional o educativa) | Incident.ReadWrite | 'Leer y escribi
 ## <a name="http-request"></a>Solicitud HTTP
 
 ```console
-GET .../api/incidents/{id} 
+GET .../api/incidents/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Nombre | Tipo | Descripción
-:---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Nombre|Tipo|Descripción
+---|---|---
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -82,11 +80,12 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok y la entidad incident en el cuerpo de la respuesta. Si no se encontró un incidente con el identificador especificado: 404 No encontrado.
+Si se realiza correctamente, este método devuelve 200 Ok y la entidad incident en el cuerpo de la respuesta.
+Si no se encontró un incidente con el identificador especificado: 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 
-**Solicitud**
+### <a name="request"></a>Solicitud
 
 Aquí tiene un ejemplo de la solicitud.
 
