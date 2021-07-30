@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 790abaad5506a77b70cb8d772e83289d8dbd791f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: a84a3ec88cb4eb0fa3b4e04f3ce0c62b73dd7fb5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860790"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650984"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>Oportunidades de asociación de proveedores de servicios de seguridad administrados
 
@@ -32,7 +32,7 @@ ms.locfileid: "51860790"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 
 La seguridad se reconoce como un componente clave para ejecutar una empresa, pero es posible que algunas organizaciones no tengan la capacidad o la experiencia necesaria para tener un equipo de operaciones de seguridad dedicado para administrar la seguridad de sus puntos de conexión y red, otras pueden querer tener un segundo conjunto de ojos para revisar las alertas en su red.

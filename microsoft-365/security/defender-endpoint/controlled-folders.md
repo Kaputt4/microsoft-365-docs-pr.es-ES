@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 82cc897cf8ae2289c83111a27bb8d82b401a86c9
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 5f339d999f45cdd756e8d9170b2ac784062c003c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595755"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657332"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -32,7 +32,7 @@ ms.locfileid: "53595755"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>¿Qué es el acceso controlado a carpetas?
 
@@ -110,7 +110,7 @@ Puedes revisar el registro Windows eventos para ver los eventos que se crean cua
 2. Escriba **Visor de** eventos en el menú Inicio para abrir el visor Windows eventos.
 3. En el panel izquierdo, en **Acciones**, seleccione **Importar vista personalizada...**.
 4. Navegue hasta donde ha extraído *cfa-events.xml* y selecciónelo. Como alternativa, [copie el XML directamente](event-views.md).
-5. Seleccione **Aceptar**.
+5. Haga clic en **Aceptar**.
 
 En la tabla siguiente se muestran los eventos relacionados con el acceso controlado a carpetas:
 

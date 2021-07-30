@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 9c4f3da57796903fc22314574f389bcdd92ca4b3
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 95b4b82b87fc633afe716c9c7b403808bedac65d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311993"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651704"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Solucionar problemas de integración de la herramienta SIEM
 
@@ -33,14 +33,14 @@ ms.locfileid: "52311993"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Es posible que deba solucionar problemas al extraer detecciones en las herramientas SIEM.
 
 En esta página se proporcionan pasos detallados para solucionar problemas que puedan surgir.
 
-
 ## <a name="learn-how-to-get-a-new-client-secret"></a>Obtenga información sobre cómo obtener un nuevo secreto de cliente
+
 Si el secreto de cliente expira o si ha perdido la copia proporcionada al habilitar la aplicación de herramienta SIEM, tendrá que obtener un nuevo secreto.
 
 1. Inicie sesión en [el Portal de administración de Azure](https://portal.azure.com).
@@ -57,8 +57,8 @@ Si el secreto de cliente expira o si ha perdido la copia proporcionada al habili
 
 7. Copie el valor y guárdelo en un lugar seguro.
 
-
 ## <a name="error-when-getting-a-refresh-access-token"></a>Error al obtener un token de acceso de actualización
+
 Si se produce un error al intentar obtener un token de actualización al usar la API de inteligencia de amenazas o las herramientas SIEM, deberá agregar la dirección URL de respuesta para la aplicación relevante en Azure Active Directory.
 
 1. Inicie sesión en [el Portal de administración de Azure](https://ms.portal.azure.com).
@@ -73,18 +73,17 @@ Si se produce un error al intentar obtener un token de actualización al usar la
    - Para la Unión Europea: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
    - Para el Reino Unido: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - Para Estados Unidos:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` .
- 
+
 6. Haga clic en **Guardar**.
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>Error al habilitar la aplicación de conector SIEM
+
 Si se produce un error al intentar habilitar la aplicación de conector SIEM, compruebe la configuración del bloqueador de elementos emergentes del explorador. Puede que esté bloqueando la nueva ventana que se abre al habilitar la funcionalidad.
 
-
-
-
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshootsiem-belowfoldlink)
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Habilitar la integración de SIEM en Microsoft Defender para endpoint](enable-siem-integration.md)
 - [Configurar ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Extraer detecciones a las herramientas SIEM](configure-siem.md)

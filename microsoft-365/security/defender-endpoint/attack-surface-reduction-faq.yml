@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: d32bcdb3e17ccc7b94d47dd67f12c04d115da550
-  ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+  ms.openlocfilehash: bb03140622cc848f9c668bdaa72e833fe35c5b37
+  ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/26/2021
-  ms.locfileid: "53591096"
+  ms.lasthandoff: 07/30/2021
+  ms.locfileid: "53664117"
 title: Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -77,7 +77,7 @@ sections:
 
       |:--|:--|:--|
 
-      |Impedir que JavaScript o VBScript inicien contenido ejecutable descargado|D3E037E1-3EB8-44C8-A917-57927947596D|No admitido|
+      |Impedir que JavaScript o VBScript inicien contenido ejecutable descargado|d3e037e1-3eb8-44c8-a917-57927947596d|No admitido|
 
       |Bloquear la persistencia a través de la suscripción de eventos WMI|e6db77e5-3df2-4cf1-b95a-636979351e5b|No admitido|
 
@@ -225,7 +225,7 @@ sections:
     answer: >
       Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
   - question: >
-      Vea también
+      Recursos adicionales
     answer: >-
       * [Introducción a la reducción de superficie de ataque](attack-surface-reduction.md)
 

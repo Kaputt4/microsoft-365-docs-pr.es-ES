@@ -14,12 +14,12 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: Preguntas más frecuentes sobre Centro de administración de Microsoft 365 descargas.
-  ms.openlocfilehash: 406e25fa4d6aac05ecbdaa05f407626cff9d112e
-  ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+  ms.openlocfilehash: 2ed0caddf9333dba8eaa9ec03d63cf6039287c6e
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53567349"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53651632"
 title: Descargas preguntas más frecuentes
 summary: ''
 sections:
@@ -42,8 +42,8 @@ sections:
 
       Para determinar si un producto es apto para la descarga:
 
-        1.    Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o Ver **descargas**.
-        2.    En **Descargar**, si el producto no está disponible, verá "Este producto no está disponible para su descarga".
+        1. Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o Ver **descargas**.
+        2. En **Descargar**, si el producto no está disponible, verá "Este producto no está disponible para su descarga".
   - question: >
       ¿Qué es una licencia de acceso de cliente (CAL)?
     answer: >
@@ -68,15 +68,15 @@ sections:
         - El [Office para Mac de instalación .](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) Los archivos de paquete del instalador para aplicaciones individuales también están disponibles en el Centro de administración de Microsoft 365. Office para Mac requiere una clave de producto porque el serializador VL se usa para activar una versión con licencia por volumen de Office para Mac.
   - question: >
       ¿Cómo puedo descargar productos en el Centro de administración?
-    answer: "Para descargar productos en el Centro de administración:\n1.  Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o Ver **descargas**.\n2.  En **Descargar**, seleccione un componente y seleccione una acción de descarga o el icono de descarga. \n\nPara acceder a las descargas en el Centro de administración, un administrador de VLSC de la organización puede proporcionar acceso asignándose a uno de estos roles:\n  - Administrador\n  - Descargar\n  - Administrador de Software Assurance\n"
+    answer: "Para descargar productos en el Centro de administración:\n1. Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o Ver **descargas**.\n2. En **Descargar**, seleccione un componente y seleccione una acción de descarga o el icono de descarga. \n\nPara acceder a las descargas en el Centro de administración, un administrador de VLSC de la organización puede proporcionar acceso asignándose a uno de estos roles:\n  - Administrador\n  - Descargar\n  - Administrador de Software Assurance\n"
   - question: >
       ¿Cómo cambio la configuración de descarga?
     answer: >
       Para acceder a la configuración de descarga en el Centro de administración:
 
-      1.  Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o Ver **descargas**.
+      1. Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o Ver **descargas**.
 
-      2.  En **Descargar**, seleccione **el idioma** y el tipo de sistema **operativo**.
+      2. En **Descargar**, seleccione **el idioma** y el tipo de sistema **operativo**.
 
 
       **Nota** Los bloqueadores de elementos emergentes pueden bloquear las descargas. Asegúrese de que los bloqueadores de elementos emergentes están deshabilitados al descargar software desde el Centro de administración.

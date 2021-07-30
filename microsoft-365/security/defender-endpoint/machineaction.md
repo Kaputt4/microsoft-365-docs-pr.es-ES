@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b72454bd345df31485759c5978f34eb11db5feca
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2af9f7988e25b9f6e74f65593a4524cba25e476c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542278"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651008"
 ---
 # <a name="machineaction-resource-type"></a>Tipo de recurso MachineAction
 
@@ -30,7 +30,7 @@ ms.locfileid: "53542278"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -66,11 +66,11 @@ ms.locfileid: "53542278"
 |Id.|Guid|Identidad de la [entidad Acción de](machineaction.md) máquina.|
 |type|Enum|Tipo de la acción. Los valores posibles son: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" y "UnrestrictCodeExecution"|
 |scope|cadena|Ámbito de la acción. "Completo" o "Selectivo" para aislamiento, "Rápido" o "Completo" para el examen antivirus.|
-|solicitante|String|Identidad de la persona que ejecutó la acción.|
-|requestorComment|String|Comentario que se escribió al emitir la acción.|
+|solicitante|Cadena|Identidad de la persona que ejecutó la acción.|
+|requestorComment|Cadena|Comentario que se escribió al emitir la acción.|
 |status|Enum|Estado actual del comando. Los valores posibles son: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" y "Canceled".|
-|machineId|String|Id. de [la máquina](machine.md) en la que se ejecutó la acción.|
-|machineId|String|Nombre de la [máquina](machine.md) en la que se ejecutó la acción.|
+|machineId|Cadena|Id. de [la máquina](machine.md) en la que se ejecutó la acción.|
+|machineId|Cadena|Nombre de la [máquina](machine.md) en la que se ejecutó la acción.|
 |creationDateTimeUtc|DateTimeOffset|Fecha y hora en que se creó la acción.|
 |lastUpdateTimeUtc|DateTimeOffset|La última fecha y hora en que se actualizó el estado de la acción.|
 |relatedFileInfo|Clase|Contiene dos propiedades. string `fileIdentifier` , `fileIdentifierType` Enumerar con los valores posibles: "Sha1", "Sha256" y "Md5".|

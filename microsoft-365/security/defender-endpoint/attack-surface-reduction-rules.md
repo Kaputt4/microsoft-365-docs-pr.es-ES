@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d0dd39197835574a5982d50486026b713f71e8d5
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b79fc88c7e69b27c6af47065ef02ada98fad4821
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624193"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664062"
 ---
 # <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
@@ -135,7 +135,7 @@ Nombre de Intune: `Office apps launching child processes`
 
 Nombre de Configuration Manager: `Block Office application from creating child processes`
 
-GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
+GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local
 
@@ -163,7 +163,7 @@ Nombre de Intune: `Execution of executable content (exe, dll, ps, js, vbs, etc.)
 
 Microsoft Endpoint Manager nombre:`Block executable content from email client and webmail`
 
-GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
+GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 > [!NOTE]
 > La regla **Bloquear contenido ejecutable del** cliente de correo electrónico y el correo web tiene las siguientes descripciones alternativas, según la aplicación que use:
@@ -205,7 +205,7 @@ Nombre de Intune: `Obfuscated js/vbs/ps/macro code`
 
 Nombre de Configuration Manager: `Block execution of potentially obfuscated scripts`
 
-GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
+GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Impedir que JavaScript o VBScript inicien contenido ejecutable descargado
 
@@ -217,7 +217,7 @@ Nombre de Intune: `js/vbs executing payload downloaded from Internet (no excepti
 
 Nombre de Configuration Manager: `Block JavaScript or VBScript from launching downloaded executable content`
 
-GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
+GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Bloquear Office aplicaciones de creación de contenido ejecutable
 
@@ -229,7 +229,7 @@ Nombre de Intune: `Office apps/macros creating executable content`
 
 Nombre SCCM: `Block Office applications from creating executable content`
 
-GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
+GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Bloquear Office aplicaciones para que no inyecten código en otros procesos
 
@@ -245,7 +245,7 @@ Nombre de Intune: `Office apps injecting code into other processes (no exception
 
 Nombre de Configuration Manager: `Block Office applications from injecting code into other processes`
 
-GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
+GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Bloquear Office de comunicación para que no cree procesos secundarios
 
@@ -317,7 +317,7 @@ Nombre de Intune: `Win32 imports from Office macro code`
 
 Nombre de Configuration Manager: `Block Win32 API calls from Office macros`
 
-GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
+GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Usar protección avanzada contra ransomware
 

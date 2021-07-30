@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: e12368b6241a2c79eead66ed77b30b7864af3955
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d8db481c06df22592897389656601be2dc9ab0c4
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326540"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657308"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -29,7 +29,7 @@ ms.locfileid: "52326540"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 El acceso controlado a carpetas te ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas se admite Windows Server 2019 y Windows 10 cliente. En este artículo se describe cómo personalizar las capacidades de acceso controlado a carpetas e incluye las siguientes secciones:
 
@@ -53,7 +53,7 @@ Puede usar la aplicación Seguridad de Windows, la directiva de grupo, los cmdle
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>Usar la aplicación Seguridad de Windows para proteger carpetas adicionales
 
-1. Abre la Seguridad de Windows de seguridad seleccionando el icono de escudo en la barra de tareas o buscando seguridad *en* el menú Inicio.
+1. Abra la aplicación Seguridad de Windows mediante la selección del icono de escudo en la barra de tareas o mediante la búsqueda de seguridad *en* el menú Inicio.
 
 2. Seleccione **Protección contra & virus y,** a continuación, desplácese hacia abajo hasta la sección Protección **contra** ransomware.
 
@@ -81,7 +81,7 @@ Puede usar la aplicación Seguridad de Windows, la directiva de grupo, los cmdle
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>Usar PowerShell para proteger carpetas adicionales
 
-1. Escriba **PowerShell** en el menú Inicio, haga clic con el botón **secundario en Windows PowerShell** y seleccione Ejecutar como **administrador**
+1. Escriba **PowerShell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**
 
 2. Escriba el siguiente cmdlet de PowerShell, reemplazando por la ruta de acceso de la carpeta `<the folder to be protected>` (por `"c:\apps\"` ejemplo:
 
@@ -134,7 +134,7 @@ Una aplicación o servicio permitido solo tiene acceso de escritura a una carpet
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>Usar PowerShell para permitir aplicaciones específicas
 
-1. Escriba **PowerShell** en el menú Inicio, haga clic con el botón **secundario en Windows PowerShell** y seleccione Ejecutar como **administrador**
+1. Escriba **PowerShell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**
 2. Escriba el siguiente cmdlet:
 
     ```PowerShell
@@ -169,7 +169,7 @@ Los indicadores de archivo y certificado de Microsoft Defender para endpoint pue
 
 Para obtener más información acerca de cómo personalizar la notificación cuando se desencadena una regla y bloquea una aplicación o archivo, consulte [Configure alert notifications in Microsoft Defender for Endpoint](configure-email-notifications.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)
