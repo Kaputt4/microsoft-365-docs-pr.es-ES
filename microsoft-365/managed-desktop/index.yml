@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentación del Escritorio administrado de Microsoft
-summary: Escritorio administrado de Microsoft es una solución ITaaS única que combina la administración de puntos de conexión y la supervisión de seguridad de una manera que brinda a los usuarios una experiencia de dispositivo segura y productiva en la que los profesionales de TI pueden confiar.
+summary: Escritorio administrado de Microsoft es una solución ITaaS única que combina la administración de puntos de conexión y la supervisión de seguridad de forma que brinda a los usuarios una experiencia de dispositivo segura y productiva en la que los profesionales de TI pueden confiar.
 metadata:
   title: Documentación del Escritorio administrado de Microsoft
   description: Escritorio administrado de Microsoft combina Microsoft 365 Enterprise, la administración de dispositivos basada en la nube de Microsoft y la supervisión de seguridad, lo que le permite liberar a los equipos de TI para que se concentren en las necesidades básicas de la empresa.
@@ -10,12 +10,12 @@ metadata:
   author: jaimeo
   ms.author: jaimeo
   ms.date: 12/04/2020
-  ms.openlocfilehash: b2feb587c93d9bc6f0bc208ad48f3bfff8266d5a
-  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+  ms.openlocfilehash: 20780ee49f9e43872a9c02c22714e2451522672f
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/19/2021
-  ms.locfileid: "50920637"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53648440"
 landingContent:
 - title: Sobre el Escritorio administrado de Microsoft
   linkLists:

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilice los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores híbridos.
-ms.openlocfilehash: 3de458f99ce1c83132d193cae523a49353b6956c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 30df9210cf1f154551b64451ec4ebd22ffe410a8
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229400"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656060"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Paso 3: implementar la seguridad y el cumplimiento de la normativa para los trabajadores híbridos
 
@@ -47,13 +47,13 @@ Estas son las características de Microsoft 365 que proporcionan servicios de se
 
 Proteja sus datos y aplicaciones con estas características de seguridad de Microsoft 365.
 
-| Funcionalidad o característica | ¿Por qué lo necesito? | Licencias |
-|:-------|:-----|:-------|
-| Microsoft Defender para Office 365 | Proteja sus datos y aplicaciones de Microsoft 365, como mensajes de correo electrónico, documentos de Office y herramientas de colaboración, ante posibles ataques. <br><br> Microsoft Defender para Office 365 recopila y analiza las señales de sus aplicaciones para la detección, investigación y corrección de los riesgos de seguridad y protege a su organización contra las amenazas maliciosas que plantean los mensajes de correo electrónico, los enlaces (URL) y las herramientas de colaboración. También proporciona una evaluación automatizada de la configuración del inquilino y herramientas de configuración para posturas de seguridad estándar y estrictas. | Microsoft 365 E3 o E5 |
-| Protección contra malware | El Antivirus de Windows Defender y Device Guard ofrecen una protección contra malware basada en dispositivos. <br><br> SharePoint Online analiza automáticamente las cargas de archivos en busca de malware conocido. <br><br> Exchange Online Protection (EOP) protege los buzones en la nube. | Microsoft 365 E3 o E5 |
-| Microsoft Defender para punto de conexión | Proteja los dispositivos de su organización contra vulneraciones de datos y ciberamenazas, y detecte, investigue y responda a amenazas avanzadas. | Microsoft 365 E5 |
-| Cloud App Security | Proteja los servicios basados en la nube, tanto los de Microsoft 365 como los de otras aplicaciones de SaaS, contra los ataques. | Licencias de Microsoft 365 E5 o de Cloud App Security individual |
-| Azure AD Identity Protection  | Automatizar la detección y corrección de riesgos basados en la identidad. <br><br>Cree directivas de acceso condicional basadas en riesgos para requerir la autenticación multifactor (MFA) para los inicios de sesión de riesgo. | Microsoft 365 E5 o E3 con las licencias de Azure AD Premium P2 |
+|Funcionalidad o característica|¿Por qué lo necesito?|Licencias|
+|---|---|---|
+|Microsoft Defender para Office 365|Proteja sus datos y aplicaciones de Microsoft 365, como mensajes de correo electrónico, documentos de Office y herramientas de colaboración, ante posibles ataques. <p> Microsoft Defender para Office 365 recopila y analiza las señales de sus aplicaciones para la detección, investigación y corrección de los riesgos de seguridad y protege a su organización contra las amenazas maliciosas que plantean los mensajes de correo electrónico, los enlaces (URL) y las herramientas de colaboración. También proporciona una evaluación automatizada de la configuración del inquilino y herramientas de configuración para posturas de seguridad estándar y estrictas.|Microsoft 365 E3 o E5|
+|Protección contra malware|El Antivirus de Windows Defender y Device Guard ofrecen una protección contra malware basada en dispositivos. <p> SharePoint Online analiza automáticamente las cargas de archivos para detectar malware conocido. <p> Exchange Online Protection (EOP) protege los buzones en la nube.|Microsoft 365 E3 o E5|
+|Microsoft Defender para punto de conexión|Proteja los dispositivos de su organización contra vulneraciones de datos y ciberamenazas, y detecte, investigue y responda a amenazas avanzadas.|Microsoft 365 E5|
+|Cloud App Security|Proteja los servicios basados en la nube, tanto los de Microsoft 365 como los de otras aplicaciones de SaaS, contra los ataques.|Licencias de Microsoft 365 E5 o de Cloud App Security individual|
+|Azure AD Identity Protection|Automatizar la detección y corrección de riesgos basados en la identidad. <p>Cree directivas de acceso condicional basadas en riesgos para requerir la autenticación multifactor (MFA) para los inicios de sesión de riesgo.|Microsoft 365 E5 o E3 con las licencias de Azure AD Premium P2|
 ||||
 
 El primer paso debería ser conocer y utilizar la [Puntuación de seguridad de Microsoft ](/microsoft-365/security/defender/microsoft-secure-score).
@@ -66,17 +66,17 @@ Para obtener información sobre la seguridad en Microsoft 365, consulte [Documen
 
 Cumpla los requisitos reglamentarios o las directivas internas con estas características de cumplimiento de Microsoft 365.
 
-| Funcionalidad o característica | ¿Por qué lo necesito? | Licencias |
-|:-------|:-----|:-------|
-| Etiquetas de confidencialidad | Clasifique y proteja los datos de su organización sin arriesgar la productividad de los usuarios y su capacidad para colaborar, mediante el establecimiento de etiquetas con distintos niveles de protección en el correo electrónico, los archivos y los sitios. | Microsoft 365 E3 o E5 |
-| Protección de pérdida de datos (DLP) | Detecte, advierta y bloquee el uso compartido riesgoso, involuntario o inadecuado, como el de los datos que contengan información personal, tanto interna como externamente. | Microsoft 365 E3 o E5 |
-| Control de aplicaciones de acceso condicional | Evite la descarga de datos confidenciales en los dispositivos personales de los usuarios. | Microsoft 365 E3 o E5 |
-| Directivas y etiquetas de retención de datos | Implemente controles de gobierno de la información, como cuánto tiempo se conservan los datos y los requisitos de almacenamiento de datos personales sobre los clientes, para cumplir con las directivas de la organización o las regulaciones de datos. | Microsoft 365 E3 o E5 |
-| Cifrado de mensajes de Office (OME) | Envíe y reciba mensajes de correo electrónico cifrado entre las personas de dentro y fuera de la organización que contengan datos regulados, como los datos personales sobre clientes. | Microsoft 365 E3 o E5 |
-| Administrador de cumplimiento | Administre las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft con esta herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de confianza del servicio de Microsoft. | Microsoft 365 E3 o E5 |
-| Administrador de cumplimiento | Vea una calificación general de la configuración de cumplimiento actual y las recomendaciones para mejorarla en el Centro de cumplimiento de Microsoft 365. | Microsoft 365 E3 o E5 |
-| Cumplimiento de la comunicación  | Detectar, capturar y llevar a cabo acciones correctivas para los mensajes no adecuados de su organización. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider |
-| Administración de riesgos de Insider |  Detecte, investigue y actúe ante riesgos malintencionados e involuntarios en su organización. Microsoft 365 puede detectar estos tipos de riesgos, incluso cuando un trabajador usa un dispositivo no administrado. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider |
+|Funcionalidad o característica|¿Por qué lo necesito?|Licencias|
+|---|---|---|
+|Etiquetas de confidencialidad|Clasifique y proteja los datos de su organización sin arriesgar la productividad de los usuarios y su capacidad para colaborar, mediante el establecimiento de etiquetas con distintos niveles de protección en el correo electrónico, los archivos y los sitios.|Microsoft 365 E3 o E5|
+|Protección de pérdida de datos (DLP)|Detecte, advierta y bloquee el uso compartido riesgoso, involuntario o inadecuado, como el de los datos que contengan información personal, tanto interna como externamente.|Microsoft 365 E3 o E5|
+|Control de aplicaciones de acceso condicional|Evite la descarga de datos confidenciales en los dispositivos personales de los usuarios.|Microsoft 365 E3 o E5|
+|Directivas y etiquetas de retención de datos|Implemente controles de gobierno de la información, como cuánto tiempo se conservan los datos y los requisitos de almacenamiento de datos personales sobre los clientes, para cumplir con las directivas de la organización o las regulaciones de datos.|Microsoft 365 E3 o E5|
+|Cifrado de mensajes de Office (OME)|Envíe y reciba mensajes de correo electrónico cifrado entre las personas de dentro y fuera de la organización que contengan datos regulados, como los datos personales sobre clientes.|Microsoft 365 E3 o E5|
+|Administrador de cumplimiento|Administre las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft con esta herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de confianza del servicio de Microsoft.|Microsoft 365 E3 o E5|
+|Administrador de cumplimiento|Vea una calificación general de la configuración de cumplimiento actual y las recomendaciones para mejorarla en el Centro de cumplimiento de Microsoft 365.|Microsoft 365 E3 o E5|
+|Cumplimiento de la comunicación|Detectar, capturar y llevar a cabo acciones correctivas para los mensajes no adecuados de su organización.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider|
+|Administración de riesgos de Insider|Detecte, investigue y actúe ante riesgos malintencionados e involuntarios en su organización. Microsoft 365 puede detectar estos tipos de riesgos, incluso cuando un trabajador usa un dispositivo no administrado.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider|
 ||||
 
 Para obtener más información, consulte [Tareas rápidas para comenzar con el Centro de cumplimiento de Microsoft 365](../compliance/compliance-quick-tasks.md).

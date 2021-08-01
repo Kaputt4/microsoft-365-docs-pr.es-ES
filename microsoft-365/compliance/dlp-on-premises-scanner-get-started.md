@@ -1,5 +1,5 @@
 ---
-title: Introducción al examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local (versión preliminar)
+title: Introducción al examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurar el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
-ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: fbaf28c1a88f1654154cc53ce731d2f56bfae382
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289204"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657404"
 ---
-# <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local (versión preliminar)
+# <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local
 
 Este artículo le guiará por los requisitos previos y la configuración para el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local.
 
@@ -34,7 +34,7 @@ Este artículo le guiará por los requisitos previos y la configuración para el
 
 ### <a name="skusubscriptions-licensing"></a>Licencias de SKU/suscripciones
 
-Antes de empezar con el examinador de DLP local, debe confirmar su [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) y cualquier complemento. Para participar en la versión preliminar, la cuenta de administrador que configura las reglas de DLP debe tener asignada una de las siguientes licencias:
+Antes de empezar con el examinador de DLP local, debe confirmar su [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) y cualquier complemento. La cuenta de administrador que configura las reglas de DLP debe tener asignada una de las siguientes licencias:
 
 - Microsoft 365 E5
 - Cumplimiento de Microsoft 365 E5
@@ -66,7 +66,7 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
     1. La configuración de los trabajos de detección de red es un paso opcional. Puede omitirlo y definir repositorios específicos que se examinarán en su trabajo de examen de contenido.
     2. Debe crear un trabajo de examen de contenido y especificar los repositorios que alojan archivos que deben ser evaluados por el motor de DLP.
     3. Habilite las reglas de DLP en el trabajo de examen de contenido creado y establezca la opción **Aplicar** en **Desactivar**, a menos que desee avanzar directamente a la fase de aplicación de DLP.
-3. Verifique que su trabajo de examen de contenido esté asignado al clúster correcto. Si aún no ha creado un trabajo de examen de contenido, cree uno nuevo y asígnelo al clúster que contenga los nodos del examinador que ejecutan la versión preliminar pública.
+3. Verifique que su trabajo de examen de contenido esté asignado al clúster correcto. Si aún no ha creado un trabajo de examen de contenido, cree uno nuevo y asígnelo al clúster que contenga los nodos del examinador.
 
 4. Conéctese a la [Extensión de Azure Information Protection en Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) y agregue sus repositorios al trabajo de examen de contenido que realizará el examen.
 
@@ -82,7 +82,7 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
 
 7. Elija **crear una directiva de** y crear una directiva DLP de prueba. Vea [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md) si necesita ayuda para crear una directiva. Asegúrese de ejecutarlo en prueba hasta que se sienta cómodo con esta característica. Use estos parámetros para la directiva:
     1. Especifique el ámbito de la regla del examen de la DLP local para ubicaciones específicas si es necesario. Si especifica el ámbito de **ubicaciones** a **Todo**, todos los archivos examinados por el examinador estarán sujetos a la coincidencia y la aplicación de las reglas de DLP.
-    1. Al especificar las ubicaciones, puede usar la lista de exclusiones o inclusión. Durante la versión preliminar pública no se pueden configurar ambas. Puede definir que la regla sea relevante solo para las rutas que coincidan con uno de los patrones enumerados en la lista de inclusión o, todos los archivos, excepto los que coincidan con el patrón enumerado en la lista de inclusión. No se admiten rutas locales. Estos son algunos ejemplos de rutas válidas:
+    1. Al especificar las ubicaciones, puede usar la lista de exclusiones o inclusión. Puede definir que la regla sea relevante solo para las rutas que coincidan con uno de los patrones enumerados en la lista de inclusión o, todos los archivos, excepto los que coincidan con el patrón enumerado en la lista de inclusión. No se admiten rutas locales. Estos son algunos ejemplos de rutas válidas:
       - \\\servidor\recurso compartido
       - \\\server\share\folder1\subfolderabc
       - \*\\carpeta1
@@ -115,19 +115,19 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
 
 2. Vea los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para acceder y filtrar todos los datos de las ubicaciones de los examinadores locales.
 
-3. Abra el Buscar el [Registro de auditoría en el Centro de cumplimiento](https://security.microsoft.com/auditlogsearch). Durante la versión preliminar pública, las coincidencias de reglas de DLP están disponibles en la interfaz de usuario del registro del registro de auditoría o mediante el PowerShell [Search-UnifiedAudLog](/powershell/module/exchange/search-unifiedauditlog). 
+3. Abra el Buscar el [Registro de auditoría en el Centro de cumplimiento](https://security.microsoft.com/auditlogsearch). Las coincidencias de reglas de DLP están disponibles en la interfaz de usuario del registro del registro de auditoría o mediante [Search-UnifiedAudLog](/powershell/module/exchange/search-unifiedauditlog) en PowerShell. 
 
 
 ## <a name="next-steps"></a>Siguientes pasos
 Ahora que ha implementado una directiva de prueba para las ubicaciones locales de DLP y que puede ver los datos de actividad en el Explorador de actividades, está listo para pasar al siguiente paso, donde creará directivas DLP que protejan sus elementos confidenciales.
 
-- [Usar DLP local (versión preliminar)](dlp-on-premises-scanner-use.md)
+- [Usar DLP local](dlp-on-premises-scanner-use.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Obtener información acerca del examinador local de DLP (versión preliminar)](dlp-on-premises-scanner-learn.md)
-- [Usar el examinador local de DLP (versión preliminar)](dlp-on-premises-scanner-use.md)
-- [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
+- [Obtener información acerca del examinador local de DLP](dlp-on-premises-scanner-learn.md)
+- [Usar el examinador local DLP](dlp-on-premises-scanner-use.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

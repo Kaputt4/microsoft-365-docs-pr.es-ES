@@ -58,6 +58,8 @@
           href: insider-risk-management-activities.md
         - name: Tomar medidas en casos de riesgos internos
           href: insider-risk-management-cases.md
+        - name: Obtenga información y configure la detección de señales del explorador
+          href: insider-risk-management-browser-support.md
         - name: Revisar actividades con el registro de auditoría de riesgo interno
           href: insider-risk-management-audit-log.md
         - name: Revisar datos con el explorador de contenido de riesgos internos

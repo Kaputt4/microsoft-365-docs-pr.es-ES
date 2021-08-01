@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/17/2021
+ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: ef0805644112552c3ee9faf21f43decdfa42eeab
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007406"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664086"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -190,7 +190,7 @@ Puede optar por deshabilitar el bloqueo a primera vista si quiere conservar la c
 
 ## <a name="not-an-enterprise-admin-or-it-pro"></a>¿No es un administrador empresarial o un profesional de TI?
 
-Si no es un administrador empresarial o un profesional de TI, pero tiene preguntas sobre el bloqueo a primera vista, esta sección es para usted. El bloqueo a primera vista es una característica de protección contra amenazas que detecta y bloquea malware en pocos segundos. Aunque no existe una configuración específica denominada "Bloqueo a primera vista", la característica se habilita cuando se configuran opciones específicas en el dispositivo.
+Si no es un administrador empresarial o un profesional de TI pero le interesa saber sobre el bloqueo a primera vista, esta sección es para usted. El bloqueo a primera vista es una característica de protección contra amenazas que detecta y bloquea malware en pocos segundos. Aunque no existe una configuración específica denominada "Bloqueo a primera vista", la característica se habilita cuando se configuran opciones específicas en el dispositivo.
 
 ### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>Cómo administrar el bloqueo a primera vista para activarlo o desactivarlo en su propio dispositivo
 

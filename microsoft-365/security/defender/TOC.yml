@@ -116,8 +116,16 @@
               href: microsoft-secure-score-whats-new.md
         - name: Proteja sus identidades
           items:
-            - name: Administre alertas de seguridad
+            - name: Configuración y estado del sensor
+              href: ../defender-identity/sensor-health.md
+            - name: Integración de VPN
+              href: ../defender-identity/vpn-integration.md
+            - name: Establecer etiquetas de entidad
+              href: ../defender-identity/entity-tags.md
+            - name: Administrar alertas de seguridad
               href: ../defender-identity/manage-security-alerts.md
+            - name: Notificaciones por correo electrónico y syslog
+              href: ../defender-identity/notifications.md
     - name: Investigar y responder a amenazas
       items:
         - name: Incidentes
@@ -152,6 +160,22 @@
                       href: first-incident-path-phishing.md
                     - name: Identidad
                       href: first-incident-path-identity.md
+            - name: Integración de Microsoft 365 Defender en las operaciones de seguridad
+              items:
+                - name: Introducción
+                  href: integrate-microsoft-365-defender-secops.md
+                - name: Paso 1. Preparación de operaciones
+                  href: integrate-microsoft-365-defender-secops-plan.md
+                - name: Paso 2. Evaluación de preparación mediante Confianza cero
+                  href: integrate-microsoft-365-defender-secops-readiness.md
+                - name: Paso 3. Integración con los servicios SOC
+                  href: integrate-microsoft-365-defender-secops-services.md
+                - name: 'Paso 4. Roles, responsabilidades y supervisión'
+                  href: integrate-microsoft-365-defender-secops-roles.md
+                - name: Paso 5. Casos de uso de prueba
+                  href: integrate-microsoft-365-defender-secops-use-cases.md
+                - name: Paso 6. Tareas de mantenimiento de SOC
+                  href: integrate-microsoft-365-defender-secops-tasks.md
             - name: Cuadernos de estrategias de respuesta a incidentes
               href: /security/compass/incident-response-playbooks
             - name: Notificaciones de correo electrónico

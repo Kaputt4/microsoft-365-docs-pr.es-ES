@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 07/31/2020
-ms.openlocfilehash: 463b1b1a34a14c1283ad31fb2e1236ba913b0594
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 319d8469ebdf1500f5f10e7fb84f69b9d87bed7c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394490"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650096"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura o recibo
 
@@ -81,6 +81,12 @@ Puede enviar su solicitud de Fapiao a nuestro [sistema de administración de Fap
 > Necesita una cuenta registrada para acceder al [sistema de administración de Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465). Si aún no ha configurado una cuenta, vea [Solicitar un Fapiao para Office 365 operado por 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end
+
+> [!NOTE]
+> 
+> Los servicios de Microsoft 365 no proporcionan recibos de pago.
+> Para los pagos con tarjeta de crédito, use la factura y el extracto de facturación de la tarjeta de crédito para que coincidan con el pago.
+
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Recibir una copia del extracto de facturación por correo electrónico
 

@@ -1,5 +1,5 @@
 ---
-title: Usar el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
+title: Usar el examinador de prevención de pérdida de datos locales de Microsoft 365
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar el examinador local de prevención de pérdida de datos de Microsoft 365 para examinar los datos almacenados e implementar las acciones de protección para los recursos compartidos de archivos locales y las carpetas y bibliotecas de documentos de SharePoint local.
-ms.openlocfilehash: b2512c47b82ab3624d892d349611dd3f1e5aed3c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3d7c2e30092eee022fc0ed2a7ef6a8be7b82e3f1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289180"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657380"
 ---
-# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Usar el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
+# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Usar el examinador de prevención de pérdida de datos locales de Microsoft 365
 
 Para ayudarle a familiarizarse con las características de DLP locales y la forma en la que se muestran en las directivas DLP, hemos recopilado algunos escenarios que puede seguir.
 
@@ -48,7 +48,7 @@ Los datos del examinador de DLP local aparecen en varias áreas
 
 #### <a name="microsoft-365-audit-log"></a>Registro de auditoría de Microsoft 365
 
-Durante la versión preliminar pública, las coincidencias de reglas DLP están disponibles en la interfaz de usuario del registro de auditoría. Vea [Buscar en el registro de auditoría del Centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md) o use [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en PowerShell.
+Las coincidencias de reglas DLP están disponibles en la interfaz de usuario del registro de auditoría. Vea [Buscar en el registro de auditoría del Centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md) o use [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en PowerShell.
 
 #### <a name="aip"></a>AIP
 
@@ -80,8 +80,8 @@ Si quiere exigir las reglas DLP en los archivos examinados, debe habilitarse la 
 
 ## <a name="see-also"></a>Vea también
 
-- [Obtener información acerca del examinador local DLP (vista previa)](dlp-on-premises-scanner-learn.md)
-- [Introducción al examinador local DLP (vista previa)](dlp-on-premises-scanner-get-started.md)
+- [Obtener información acerca del examinador local de DLP](dlp-on-premises-scanner-learn.md)
+- [Introducción al examinador local DLP](dlp-on-premises-scanner-get-started.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)

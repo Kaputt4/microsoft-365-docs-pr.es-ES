@@ -1,5 +1,5 @@
 ---
-title: Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
+title: Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: El explorador local de prevención de pérdida de datos de Microsoft 365 amplía la supervisión de actividades de archivo y acciones de protección de esos archivos a recursos compartidos de archivos locales y carpetas y bibliotecas de documentos de SharePoint. El examinador de Azure Information Protection (AIP) examina y protege los archivos.
-ms.openlocfilehash: f0a34a13630e42c5dd29734ad708b3c11bb1d587
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114168"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657392"
 ---
-# <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
+# <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365
 
 La prevención de pérdida de datos del examinador local es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md).
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffe1a2e7c57d98594a6ab401caf6e2ef1746f4fd
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: f728e49d742b20cf8434ca83eaf29e7e91b725ee
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622165"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657032"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -41,7 +41,7 @@ ms.locfileid: "53622165"
 En este artículo:
 
 - [Cómo DKIM funciona mejor que SPF solo para evitar la suplantación de identidad malintencionada](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
-- [Pasos para habilitar y deshabilitar DKIM desde el portal de Microsoft 365 Defender]
+- [Pasos para crear, habilitar y deshabilitar DKIM desde el portal de Microsoft 365 Defender](#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
 - [Pasos para actualizar manualmente las claves de 1024 bits a claves de cifrado DKIM de 2048 bits](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
 - [Pasos para configurar manualmente DKIM](#steps-to-manually-set-up-dkim)
 - [Pasos para configurar DKIM para más de un dominio personalizado](#to-configure-dkim-for-more-than-one-custom-domain)
