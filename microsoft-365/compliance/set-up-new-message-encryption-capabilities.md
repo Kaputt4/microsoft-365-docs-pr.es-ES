@@ -16,18 +16,18 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Obtenga más información sobre las nuevas funcionalidades de cifrado de mensajes de Office 365 que permiten la comunicación por correo electrónico protegido con personas de dentro y fuera de su organización.
+description: Obtenga más información sobre las nuevas funcionalidades de cifrado de mensajes de Office 365 que permiten la comunicación por correo electrónico protegido con personas de dentro y fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b738c0f93b8958e441b34b458942c2b34c16661
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fedbfc753250cd9b2a080aab91342d904876e0ef
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228584"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655484"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes
 
-Las nuevas funcionalidades de cifrado de mensajes de Office 365 (OME) permiten que las organizaciones compartan mensajes de correo electrónico protegidos con cualquier persona en cualquier dispositivo. Los usuarios pueden intercambiar mensajes protegidos con otras organizaciones de Microsoft 365, así como con quienes no son clientes, usando Outlook.com, Gmail y otros servicios de correo electrónico.
+Las nuevas funcionalidades de cifrado de mensajes de Office 365 (OME) permiten que las organizaciones compartan mensajes de correo electrónico protegidos con cualquier persona en cualquier dispositivo. Los usuarios pueden intercambiar mensajes protegidos con otras organizaciones de Microsoft 365, así como con quienes no son clientes, usando Outlook.com, Gmail y otros servicios de correo electrónico.
 
 Siga los pasos que se indican a continuación para asegurarse de que las nuevas funcionalidades de OME estén disponibles en su organización.
 
@@ -72,21 +72,21 @@ Puede comprobar que su espacio empresarial de Microsoft 365 está configurado co
 
 3. Ejecute el cmdlet test-IRMConfiguration usando la siguiente sintaxis:
 
-     ```powershell
-     Test-IRMConfiguration [-Sender <email address >]
-     ```
+   ```powershell
+   Test-IRMConfiguration [-Sender <email address> -Recipient <email address>]
+   ```
 
    **Ejemplo**:
 
-     ```powershell
-     Test-IRMConfiguration -Sender securityadmin@contoso.com
-     ```
+   ```powershell
+   Test-IRMConfiguration -Sender securityadmin@contoso.com -Recipient securityadmin@contoso.com
+   ```
 
-     - Proporcionar un correo electrónico del remitente es opcional, pero obliga al sistema a ejecutar comprobaciones adicionales. Use la dirección de correo electrónico de cualquier usuario de su espacio empresarial de Microsoft 365.
+   - Para el remitente y el destinatario, use la dirección de correo electrónico de cualquier usuario de su espacio empresarial de Microsoft 365.
 
      Sus resultados deben ser similares a estos:
 
-     ```text
+     ```console
      Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.
