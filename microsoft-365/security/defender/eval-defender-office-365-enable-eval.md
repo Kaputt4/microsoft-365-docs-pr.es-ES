@@ -46,16 +46,16 @@ Siga estos pasos para habilitar la evaluación de Microsoft Defender para Office
 - [Paso 4: Auditar conectores entrantes](#step-4-audit-inbound-connectors)
 - [Paso 5: Activar la evaluación](#step-5-activate-the-evaluation)
 
-## <a name="step-1-activate-trial-licenses&quot;></a>Paso 1: Activar licencias de prueba
+## <a name="step-1-activate-trial-licenses"></a>Paso 1: Activar licencias de prueba
 
 Inicie sesión en su microsoft defender existente para Office 365 entorno o portal de administración de inquilinos.
 
 1. Vaya al portal de administración.
 2. Selecciona Servicios de compra en el inicio rápido.
 
-   :::image type=&quot;content&quot; source=&quot;../../media/mdo-eval/1_m365-purchase-services.png&quot; alt-text=&quot;Haga clic en Comprar servicios en el panel de navegación de Office 365.&quot;:::
+   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="Haga clic en Comprar servicios en el panel de navegación de Office 365.":::
 
-3. Desplácese hacia abajo hasta la Add-On (o busque &quot;Defender") para buscar microsoft defender para Office 365 planes.
+3. Desplácese hacia abajo hasta la Add-On (o busque "Defender") para buscar microsoft defender para Office 365 planes.
 4. Haga clic en Detalles a continuación del plan que desea evaluar.
 
    :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="Haga clic en el botón Detalles, a continuación.":::
@@ -126,7 +126,7 @@ Use las instrucciones aquí para activar microsoft defender para Office 365 eval
 
    |Antes|Después|
    |:---:|:---:|
-   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="Este panel tiene una lista desplegable para revisar la configuración. También tiene un vínculo que permite hacer clic en Editar el tipo de enrutamiento si es necesario. Cuando esté listo, haga clic en el botón azul grande Crear evaluación.":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="Y ahora la configuración se ha completado. El botón azul de esta página dice &quot;Ir a evaluación&quot;.":::|
+   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="Este panel tiene una lista desplegable para revisar la configuración. También tiene un vínculo que permite hacer clic en Editar el tipo de enrutamiento si es necesario. Cuando esté listo, haga clic en el botón azul grande Crear evaluación.":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="Y ahora la configuración se ha completado. El botón azul de esta página dice Ir a evaluación.":::|
    |
 
 ## <a name="next-steps"></a>Pasos siguientes
