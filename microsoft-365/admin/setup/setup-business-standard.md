@@ -27,7 +27,7 @@ search.appverid:
 description: Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la opción de usar un dominio de su propiedad o comprar uno durante el registro.
 ms.openlocfilehash: 861a9e38f10f0cd654e2b10c1879811cd668bc1f
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53393816"

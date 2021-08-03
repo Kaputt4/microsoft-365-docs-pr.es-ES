@@ -26,7 +26,7 @@ description: Busque la factura o el extracto en el Centro de administración de 
 ms.date: 07/31/2020
 ms.openlocfilehash: 319d8469ebdf1500f5f10e7fb84f69b9d87bed7c
 ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/29/2021
 ms.locfileid: "53650096"

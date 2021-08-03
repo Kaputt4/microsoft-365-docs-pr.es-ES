@@ -20,7 +20,7 @@ recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
 ms.openlocfilehash: f59c10f58f1ab89234ff3dda4bf69b6b8d718f76
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52539232"

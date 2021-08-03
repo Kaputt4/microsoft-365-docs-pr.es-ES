@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
 ms.openlocfilehash: 72aa3f194197140cd86463598a17ab07fbbd647a
 ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/09/2021
 ms.locfileid: "53341693"

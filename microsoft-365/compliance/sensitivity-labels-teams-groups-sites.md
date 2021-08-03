@@ -19,7 +19,7 @@ search.appverid:
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
 ms.openlocfilehash: 844391ee20d2c8e8b94261659b18de0690dee119
 ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/26/2021
 ms.locfileid: "53149195"

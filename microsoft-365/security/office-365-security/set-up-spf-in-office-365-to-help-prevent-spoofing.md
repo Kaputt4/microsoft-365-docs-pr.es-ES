@@ -21,7 +21,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 828d76b95a1e3f8d1a1851121d28603a1922f486
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52538992"
@@ -84,10 +84,10 @@ El registro TXT de SPF para Office 365 se hará en un DNS externo para cualquier
    |1|Cualquier sistema de correo electrónico (obligatorio)|Común. Todos los registros TXT de SPF comienzan con este valor|`v=spf1`|
    |2|Exchange Online|Común|`include:spf.protection.outlook.com`|
    |3|Solo Exchange Online dedicado|No es común|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
-   |4|Solo para Office 365 Alemania y Microsoft Cloud Alemania|No es común|`include:spf.protection.outlook.de`|
-   |5|Sistema de correo electrónico de terceros|No es común|`include:<domain_name>` <p> \<domain_name\> es el dominio del sistema de correo electrónico de terceros.|
-   |6|Sistema de correo local. Por ejemplo, Exchange Online Protection y otro sistema de correo electrónico|No es común|Use uno de estos para cada sistema de correo adicional: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> y \<domain_name\> son la dirección IP y el dominio del otro sistema de correo que envía correos en nombre de su dominio.|
-   |7|Cualquier sistema de correo electrónico (obligatorio)|Común. Todos los registros TXT de SPF acaban con este valor|`<enforcement rule>` <p> Puede ser uno de varios valores. Recomendamos el valor `-all`.|
+   |4 |Solo para Office 365 Alemania y Microsoft Cloud Alemania|No es común|`include:spf.protection.outlook.de`|
+   |5 |Sistema de correo electrónico de terceros|No es común|`include:<domain_name>` <p> \<domain_name\> es el dominio del sistema de correo electrónico de terceros.|
+   |6 |Sistema de correo local. Por ejemplo, Exchange Online Protection y otro sistema de correo electrónico|No es común|Use uno de estos para cada sistema de correo adicional: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> y \<domain_name\> son la dirección IP y el dominio del otro sistema de correo que envía correos en nombre de su dominio.|
+   |7 |Cualquier sistema de correo electrónico (obligatorio)|Común. Todos los registros TXT de SPF acaban con este valor|`<enforcement rule>` <p> Puede ser uno de varios valores. Recomendamos el valor `-all`.|
    |
 
 2. Si todavía no lo ha hecho, para formar el registro TXT de SPF, use la sintaxis de la tabla.

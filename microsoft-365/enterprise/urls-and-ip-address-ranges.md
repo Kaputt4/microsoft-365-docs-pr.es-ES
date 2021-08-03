@@ -26,7 +26,7 @@ description: 'Resumen: Office 365 necesita conectividad a Internet. Los siguient
 hideEdit: true
 ms.openlocfilehash: 22294294ba35f00ff33a9b849f320f0e8b42e0ba
 ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/03/2021
 ms.locfileid: "53290260"

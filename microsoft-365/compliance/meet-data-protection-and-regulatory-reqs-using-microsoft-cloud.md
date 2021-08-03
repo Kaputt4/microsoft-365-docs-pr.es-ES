@@ -18,7 +18,7 @@ description: Obtenga información acerca de cómo usar el Administrador de cumpl
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 5bb7e05a211c35f2b707e7282c6975b0049dce93
 ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/08/2021
 ms.locfileid: "53330994"
@@ -263,9 +263,9 @@ Basándose en la clasificación de gravedad del control, se asignará un valor d
 |Nivel de riesgo|Valor del control|
 |---|:---:|
 |Bajo|1-3|
-|Moderado|6|
-|Alto|8|
-|Grave|10|
+|Moderado|6 |
+|Alto|8 |
+|Grave|10 |
 
 Al dar prioridad a los controles de evaluación con los valores de puntuación de cumplimiento más elevados, la organización se centrará en los elementos de mayor riesgo y recibirá una respuesta más positiva proporcionalmente, ya que se agregarán más puntos a la puntuación de cumplimiento total por la evaluación completada de cada control.
 

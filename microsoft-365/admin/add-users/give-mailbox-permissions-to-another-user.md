@@ -26,7 +26,7 @@ ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Dé a un usuario el derecho de acceder al buzón de otro, lo que le permite leer y enviar correos electrónicos desde el buzón del otro usuario.
 ms.openlocfilehash: 1c1b591ff9053e20e8754df5b7c69288d198cc98
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53394344"

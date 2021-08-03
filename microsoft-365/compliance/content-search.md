@@ -22,7 +22,7 @@ ms.custom:
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
 ms.openlocfilehash: 5f48418882d5d4c7589b3ef394a0a306c0675f34
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
 ms.locfileid: "52332851"
@@ -37,7 +37,7 @@ Puede usar la herramienta de eDiscovery de búsqueda de contenido en el Centro d
 
 - Microsoft Teams
 
-- Grupos de Microsoft 365
+- Grupos de Microsoft 365
 
 - Grupos de Yammer
 

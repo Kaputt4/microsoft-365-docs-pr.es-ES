@@ -18,7 +18,7 @@ recommendations: false
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
 ms.openlocfilehash: 4ed8b3a7476e11cdf2341b0a98af690ed3f33c7e
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52539076"
@@ -109,7 +109,7 @@ Si tiene un partner interno o un grupo de accionistas que debería poder ver los
 
 
 Crear una etiqueta de confidencialidad
-1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
+1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
 4. Asigne un nombre a la etiqueta. Para ello, le recomendamos que use el nombre del equipo con la que lo vaya a emplear.

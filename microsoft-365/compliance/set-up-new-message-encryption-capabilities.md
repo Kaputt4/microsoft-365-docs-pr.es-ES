@@ -20,7 +20,7 @@ description: Obtenga más información sobre las nuevas funcionalidades de cifra
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: fedbfc753250cd9b2a080aab91342d904876e0ef
 ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/29/2021
 ms.locfileid: "53655484"

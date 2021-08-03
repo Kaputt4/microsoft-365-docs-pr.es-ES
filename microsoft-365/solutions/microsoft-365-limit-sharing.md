@@ -22,7 +22,7 @@ recommendations: false
 description: Obtenga más información sobre las opciones para limitar o deshabilitar el uso compartido de Microsoft 365.
 ms.openlocfilehash: f237df883bb401342a3a5c93432beeb5028cfce6
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52539196"

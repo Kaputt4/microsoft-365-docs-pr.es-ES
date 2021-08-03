@@ -27,7 +27,7 @@ ROBOTS: NOINDEX
 description: El sistema de nombres de dominio asigna los nombres de host del equipo a las direcciones IP, comprender los conceptos básicos de DNS y registrador de dominios puede ayudarle a administrar los dominios.
 ms.openlocfilehash: 68b9b82d52e9bb2c4105237f0a29e8137623138e
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53393912"

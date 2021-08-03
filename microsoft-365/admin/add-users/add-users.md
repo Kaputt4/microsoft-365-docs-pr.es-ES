@@ -22,7 +22,7 @@ description: Cada miembro del equipo necesita una cuenta de usuario para poder i
 ms.date: 07/01/2020
 ms.openlocfilehash: aaba152e73fc7284f54a9f307783a66fb055a55c
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53394104"

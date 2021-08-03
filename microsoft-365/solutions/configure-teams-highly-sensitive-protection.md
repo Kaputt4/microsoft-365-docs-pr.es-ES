@@ -21,7 +21,7 @@ recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
 ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
 ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/06/2021
 ms.locfileid: "52788360"

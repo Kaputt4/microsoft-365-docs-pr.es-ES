@@ -24,7 +24,7 @@ recommendations: false
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
 ms.openlocfilehash: 0c1eb9585326f2269dca02f52e9170788f659c46
 ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2021
 ms.locfileid: "53228824"

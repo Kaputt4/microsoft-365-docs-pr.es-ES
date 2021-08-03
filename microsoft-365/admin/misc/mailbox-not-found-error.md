@@ -19,7 +19,7 @@ ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Un error **No se pudo encontrar el buzón** significa que la cuenta que usó para conectarse a Outlook en la Web no tiene una licencia de Exchange Online.
 ms.openlocfilehash: 48e47d279f540693a874c4de2ced535cfbbd753d
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53391284"

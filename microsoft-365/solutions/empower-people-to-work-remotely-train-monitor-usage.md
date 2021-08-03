@@ -19,7 +19,7 @@ ms.custom: ''
 description: Proporcione formación a los usuarios y asegúrese de que se dé respuesta a los problemas rápidamente.
 ms.openlocfilehash: b6581533983c2e00ab8b29d73326deebda52599f
 ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/06/2021
 ms.locfileid: "52788828"

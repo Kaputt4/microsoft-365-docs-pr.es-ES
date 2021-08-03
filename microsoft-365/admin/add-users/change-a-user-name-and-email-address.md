@@ -26,7 +26,7 @@ ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Obtenga información acerca de cómo un administrador global de Microsoft 365 puede cambiar la dirección de correo electrónico y el nombre para mostrar cuando cambie su nombre. '
 ms.openlocfilehash: 29e2e57327550de13359106e7ba820204598f691
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53394368"

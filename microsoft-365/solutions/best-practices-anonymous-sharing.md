@@ -20,7 +20,7 @@ recommendations: false
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
 ms.openlocfilehash: 2c89ca319ba79d6f0463cc6d244c8d91928d6e42
 ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/07/2021
 ms.locfileid: "53327028"

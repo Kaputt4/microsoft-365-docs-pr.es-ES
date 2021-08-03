@@ -15,7 +15,7 @@ description: Microsoft 365 ayuda a las organizaciones de energía a mudarse a un
 ms.custom: seo-marvel-jun2020
 ms.openlocfilehash: efc9476d2c766aab325977dfe717290ff6c8fb8d
 ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2021
 ms.locfileid: "53229328"

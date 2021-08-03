@@ -19,7 +19,7 @@ ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de cumplimiento de Microsoft 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
 ms.openlocfilehash: 95683ed5dc6cce8ff109976ebb0d13215593f046
 ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770714"

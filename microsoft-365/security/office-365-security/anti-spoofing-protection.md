@@ -24,7 +24,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 17228f634dc4aee9cfd416ca676920a5b4e0fba2
 ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/05/2021
 ms.locfileid: "52779499"
@@ -144,7 +144,7 @@ Se sabe que las listas de correo (también conocidas como listas de discusión) 
 
 Por ejemplo, Gabriela Laureano (glaureano@contoso.com) está interesada en la observación de aves, se une a la lista de correo observadoresdeaves@fabrikam.com y envía el siguiente mensaje a la lista:.
 
-> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br> **Asunto:** Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier?
+> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br> **Asunto:** Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier? 
 
 El servidor de la lista de distribución de correo recibe el mensaje, modifica su contenido y lo reproduce para los miembros de la lista. El mensaje reproducido tiene la misma dirección De: (glaureano@contoso.com), pero se han agregado una etiqueta en la línea de asunto y un pie de página en la parte inferior del mensaje. Este tipo de modificación es común en las listas de distribución de correo y puede producir falsos positivos de suplantación de identidad.
 

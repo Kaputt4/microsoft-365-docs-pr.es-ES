@@ -18,7 +18,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
 ms.openlocfilehash: b3a3978bc166f9c302fe9c28b016d56742acd9de
 ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52028961"

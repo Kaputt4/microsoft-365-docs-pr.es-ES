@@ -21,7 +21,7 @@ ms.collection:
 description: Compare las opciones de cifrado de Microsoft 365, incluido el Cifrado de mensajes de Office 365 (OME), S/MIME e Information Rights Management (IRM), y obtenga más información sobre la Seguridad de la capa de transporte (TLS).
 ms.openlocfilehash: cb34318c4f22375a1eadd4266bc781cfe3c691bf
 ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/20/2021
 ms.locfileid: "52583333"

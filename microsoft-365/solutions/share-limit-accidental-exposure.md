@@ -19,7 +19,7 @@ recommendations: false
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con usuarios externos a la organización.
 ms.openlocfilehash: 1dffa40a0c21f5f611492d5a098a98f8aaa726a5
 ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/07/2021
 ms.locfileid: "53326992"

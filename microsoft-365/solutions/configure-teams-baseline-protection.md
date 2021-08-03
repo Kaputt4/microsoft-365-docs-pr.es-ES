@@ -21,7 +21,7 @@ recommendations: false
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
 ms.openlocfilehash: bf95c26a9bf724aaddae8321022ecdfceae82d1a
 ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2021
 ms.locfileid: "53229064"

@@ -21,7 +21,7 @@ description: 'Para administradores: obtenga información sobre cómo usar la car
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: ebbc9b080bf42ef309741dc8bfa4283df9776902
 ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/27/2021
 ms.locfileid: "52684006"

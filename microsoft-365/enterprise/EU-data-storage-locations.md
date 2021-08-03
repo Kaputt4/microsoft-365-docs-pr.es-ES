@@ -18,7 +18,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determine dónde se almacenan los datos del cliente de Microsoft 365 dentro de la Unión Europea
 ms.openlocfilehash: 19df44a702d842d4171d867946fb818d3f36fd80
 ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "51615236"

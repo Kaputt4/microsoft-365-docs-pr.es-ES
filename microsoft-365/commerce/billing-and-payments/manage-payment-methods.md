@@ -24,7 +24,7 @@ description: Compre productos o servicios empresariales de Microsoft con un mét
 ms.date: 04/02/2021
 ms.openlocfilehash: e944547e69ea8774690852d1b3123578d40bd3c0
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53394622"

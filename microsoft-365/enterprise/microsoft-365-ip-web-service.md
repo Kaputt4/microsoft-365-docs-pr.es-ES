@@ -25,7 +25,7 @@ search.appverid:
 description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
 ms.openlocfilehash: 6a8786d99c92fae43113d550b76a87281cde0c5b
 ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/16/2021
 ms.locfileid: "53461296"

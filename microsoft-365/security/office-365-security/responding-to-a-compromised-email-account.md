@@ -22,7 +22,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 090253806295d0a5db67afbe769c9c0ca8be4b39
 ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/22/2021
 ms.locfileid: "53054336"

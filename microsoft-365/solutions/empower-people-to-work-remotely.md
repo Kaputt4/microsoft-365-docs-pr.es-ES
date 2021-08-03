@@ -21,7 +21,7 @@ keywords: trabajar desde casa, trabajo desde casa, híbrido, trabajador remoto, 
 description: Desplazarse por las capas de la infraestructura para que los trabajadores híbridos puedan acceder de forma segura a los recursos locales y de Microsoft 365..
 ms.openlocfilehash: 75c8ee6bc736bbe53638cb9040cf2bb68e333201
 ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/29/2021
 ms.locfileid: "53650192"

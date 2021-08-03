@@ -24,7 +24,7 @@ ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
 ms.openlocfilehash: 8c5099bd9b3261874bc96ca300b445597b2ddeec
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53391380"

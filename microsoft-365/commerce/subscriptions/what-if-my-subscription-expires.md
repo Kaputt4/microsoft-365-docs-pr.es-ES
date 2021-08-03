@@ -22,7 +22,7 @@ description: Obtenga información sobre lo que sucede con sus datos cuando su su
 ms.date: 04/08/2021
 ms.openlocfilehash: 55a34352da6deef2fd48542dd06859e0024e6966
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53394886"

@@ -23,7 +23,7 @@ description: Obtenga información acerca de cómo renovar la mayoría de la susc
 ms.date: 05/04/2021
 ms.openlocfilehash: ee39c45529c4dbfa54ff0a12fcfe19d29bdef025
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53394380"

@@ -24,7 +24,7 @@ ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Una lista de referencia de registros externos del sistema de nombres de dominio que se usan al planear una implementación de Office 365.
 ms.openlocfilehash: 2cbbbcb6105feccdaed1f7b6ce05a84b374024c0
 ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/14/2021
 ms.locfileid: "52926268"
@@ -134,8 +134,8 @@ Para los escenarios donde no solo utiliza el correo electrónico de Exchange Onl
 |1  <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> |Todos los registros SPF comienzan con este valor  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (común)  <br/> |Usar solo con Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |Sistema de correo electrónico de terceros (menos común)  <br/> ||incluye:\<email system like mail.contoso.com\>  <br/> |
-|4  <br/> |Sistema de correo local (menos común)  <br/> |Usar si usa Exchange Online Protection o Exchange Online además de otro sistema de correo  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> incluye:\<mail.contoso.com\>  <br/> El valor entre corchetes (\<\>) debe corresponder a otros sistemas de correo que enviarán correo electrónico por su dominio.  <br/> |
-|5  <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> ||-all  <br/> |
+|4   <br/> |Sistema de correo local (menos común)  <br/> |Usar si usa Exchange Online Protection o Exchange Online además de otro sistema de correo  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> incluye:\<mail.contoso.com\>  <br/> El valor entre corchetes (\<\>) debe corresponder a otros sistemas de correo que enviarán correo electrónico por su dominio.  <br/> |
+|5   <br/> |Todos los sistemas de correo electrónico (obligatorio)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Ejemplo: Agregar a un registro SPF existente
 <a name="bkmk_addtospf"> </a>

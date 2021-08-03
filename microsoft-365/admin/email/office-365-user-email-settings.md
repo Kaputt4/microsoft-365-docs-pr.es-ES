@@ -19,7 +19,7 @@ ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Este artículo le proporciona información sobre cómo administrar la configuración de los usuarios.
 ms.openlocfilehash: db7a7f01fdd5a6bd657bb04f9aaf4491959e0558
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50915727"

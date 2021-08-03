@@ -22,7 +22,7 @@ search.appverid:
 description: Debe ser administrador de una suscripción empresarial para obtener ayuda de administrador o soporte técnico en línea o por teléfono con Microsoft 365 Empresa Premium.
 ms.openlocfilehash: 982c36ba5c941b2269fbdc59a66fa65e1baa903c
 ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/27/2021
 ms.locfileid: "53595023"

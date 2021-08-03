@@ -27,7 +27,7 @@ description: Obtenga información acerca de cómo configurar la autenticación m
 monikerRange: o365-worldwide
 ms.openlocfilehash: 7ee6f3a7fc01fa998e3b984683ddad1402fe5587
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53393624"

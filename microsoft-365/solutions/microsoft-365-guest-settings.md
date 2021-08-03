@@ -20,7 +20,7 @@ recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
 ms.openlocfilehash: 41ead8bf4532503cb47623f65a82ca36a616091e
 ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/13/2021
 ms.locfileid: "53409169"
