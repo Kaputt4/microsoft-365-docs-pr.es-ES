@@ -11,7 +11,7 @@ manager: laurawi
 ms.topic: article
 ms.openlocfilehash: f950943d63c7c67a6b4a364e75b4c91b461b7f73
 ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/03/2021
 ms.locfileid: "52729985"
