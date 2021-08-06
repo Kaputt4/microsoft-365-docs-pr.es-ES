@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Obtenga información sobre los requisitos y consideraciones para realizar el cambio a Microsoft 365 para empresas.
-ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 5fc2d62eeeab21721c2e78d946a9e3afcb1b63f641823a27567f40208cbbb161
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821572"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planear la configuración de Microsoft 365 para empresas
 

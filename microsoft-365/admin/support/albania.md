@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4826aea7355a3d37f93d1803c5b7696a7756092f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 0eb5e588d368f36a4e216a5c3bcf4332a5f83da06666df4f474e847532ba168b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832648"
 ---
 # <a name="contact-support-for-albania"></a>Póngase en contacto con el soporte técnico de Albania
 

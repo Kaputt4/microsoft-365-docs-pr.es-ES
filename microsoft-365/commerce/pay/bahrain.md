@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f35488b44bfd087515a2bae6e39087f510789e46
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 60f48bad635855587df72b20117878db0d28898d8606e291a6d68ce52c6d7f0c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843328"
 ---
 # <a name="payment-information-for-bahrain"></a>Información de pago para Bahrein
 

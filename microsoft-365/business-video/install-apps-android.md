@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo instalar Outlook y otras aplicaciones Office en dispositivos Android.
-ms.openlocfilehash: d474f8abed48844bbe8e92be62ede6da5056fe9a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ddbbdd156a603bb15172ad272b861ae0542a884e4851b45e01d27899f6be94c1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578884"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843556"
 ---
 # <a name="install-outlook-and-office-apps-on-android-devices"></a>Instalar Outlook y Office aplicaciones en dispositivos Android
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caefcd7ce19073a10139a9f4d6d84c49e93c392f
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 7e3077980755f81a3ca86569b53051a2851191de
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623353"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757059"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -139,6 +139,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 |
 
 Si un servidor proxy o firewall tiene habilitada la detección HTTPS (inspección SSL), excluya los dominios que aparecen en la tabla anterior de la detección HTTPS.
+En el firewall, abra todas las direcciones URL donde la columna de geografía es WW. Para las filas en las que la columna de geografía no es WW, abra las direcciones URL en la ubicación de datos específica. Para comprobar la configuración de ubicación de datos, vea [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
 > settings-win.data.microsoft.com solo es necesario si tienes Windows 10 dispositivos que ejecutan la versión 1803 o anterior.<br>
@@ -192,7 +193,7 @@ El extremo de dirección URL .blob.core.windows.net se puede reemplazar por las 
 
 Compruebe que la configuración del proxy se ha completado correctamente, que WinHTTP puede detectar y comunicarse mediante el servidor proxy en su entorno y que el servidor proxy permite el tráfico a las direcciones URL del servicio de Defender para punto de conexión.
 
-1. Descargue la [herramienta Micrsofot Defender for Endpoint Client Analyzer](https://aka.ms/mdeanalyzer) en el equipo en el que se ejecuta el sensor Defender for Endpoint.
+1. Descargue la [herramienta Analizador de cliente](https://aka.ms/mdeanalyzer) de Microsoft Defender para puntos de conexión en el equipo en el que se ejecuta el sensor Defender for Endpoint.
 
 2. Extrae el contenido de MDEClientAnalyzer.zip en el dispositivo.
 

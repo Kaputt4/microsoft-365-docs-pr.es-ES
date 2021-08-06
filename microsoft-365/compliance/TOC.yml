@@ -968,8 +968,6 @@
           href: compliance-manager-mcca.md
         - name: Preguntas más frecuentes (P+F)
           href: compliance-manager-faq.yml
-        - name: Administrador de cumplimiento (clásico)
-          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Portal de confianza del Servicio Microsoft
       href: get-started-with-service-trust-portal.md
     - name: Pautas específicas por sectores

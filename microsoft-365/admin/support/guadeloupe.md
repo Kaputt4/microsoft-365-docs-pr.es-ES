@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 65c99efd51ebe79eac04301765c78a94f16d01d7
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: d905216b7532dfe4ee36e389c41c9ed25c79687c38e1bed54ab457c342d9828a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809927"
 ---
 # <a name="contact-support-for-guadeloupe"></a>Póngase en contacto con el soporte técnico de Guadalupe
 

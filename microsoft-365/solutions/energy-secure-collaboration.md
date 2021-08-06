@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 ayuda a las organizaciones de energía a mudarse a una plataforma de colaboración moderna, mientras las ayuda a mantener sus datos y sistemas seguros y conforme a las normativas.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: efc9476d2c766aab325977dfe717290ff6c8fb8d
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: MT
+ms.openlocfilehash: 3bf38814593a08de7889ab2e870ca5fecc9165e6be75ce2175358151df38ff5e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798712"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Consideraciones clave de cumplimiento y seguridad para la Industria energética
 ![Metáfora ilustrativa de una visión global de varias industrias que utilizan la nube](../media/solution-arch-center/MSC17_global_016.png)

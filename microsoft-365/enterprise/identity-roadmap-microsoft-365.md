@@ -16,11 +16,11 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: El mapa de ruta para la identidad de Microsoft 365.
-ms.openlocfilehash: 456841bfc15d143409535140f2b5a63ee72e99d2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c79b7babbfbd97a13979de1ed23052ac572d9ded
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 08/04/2021
 ms.locfileid: "51051311"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Plan de identidad para Microsoft 365
@@ -41,7 +41,7 @@ Revise este póster de dos páginas para aumentar rápidamente los conceptos de 
 
 También puede descargar [este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) y imprimirlo en formato carta, legal o tabloide (11 x 17).
 
-## <a name="plan"></a>Planear
+## <a name="plan"></a>Plan
 
 Para planear la implementación de identidad:
 
@@ -60,10 +60,10 @@ Para implementar la implementación de identidad:
 
 ### <a name="identity-and-device-access-recommendations"></a>Recomendaciones de acceso a dispositivos e identidades
 
-Para ayudar a garantizar un personal seguro y productivo, Microsoft proporciona un conjunto de recomendaciones para el acceso a [identidades y dispositivos.](../security/defender-365-security/microsoft-365-policies-configurations.md) Para la identidad, use las recomendaciones y la configuración de estos artículos:
+Para ayudar a garantizar un personal seguro y productivo, Microsoft proporciona un conjunto de recomendaciones para el acceso a [identidades y dispositivos.](../security/office-365-security/microsoft-365-policies-configurations.md) Para la identidad, use las recomendaciones y la configuración de estos artículos:
 
-- [Requisitos previos](../security/defender-365-security/identity-access-prerequisites.md)
-- [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md)
+- [Requisitos previos](../security/office-365-security/identity-access-prerequisites.md)
+- [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>Administrar
 

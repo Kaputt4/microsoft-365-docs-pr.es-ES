@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Obtenga información sobre cómo controlar qué usuarios pueden crear Microsoft 365 grupos.
-ms.openlocfilehash: 19a106d255708f4b1df8f798219ea7ea778bbef3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 374e5b1f7b89e9c2c0727035baeb692a5f869fe1e117ec6fb691e34caf65ab18
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53777707"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Administrar quién puede crear grupos de Microsoft 365
 
@@ -44,21 +44,21 @@ Cuando se limita quién puede crear un grupo, afecta a todos los servicios que d
 - Power BI (clásico)
 - Project web /Roadmap
 
-Los pasos de este artículo no impedirán que los miembros de determinados roles creen grupos. Office 365 Los administradores globales pueden crear grupos a través Microsoft 365 centro de administración, Planner, Exchange y SharePoint Online. Otros roles pueden crear grupos a través de medios limitados, que se enumeran a continuación.
+Los pasos de este artículo no impedirán que los miembros de determinados roles creen grupos. Office 365 Los administradores globales pueden crear grupos mediante Centro de administración de Microsoft 365, Planner, Exchange y SharePoint Online. Otros roles pueden crear grupos a través de medios limitados, que se enumeran a continuación.
 
 - Exchange Administrador: Exchange de administración, Azure AD
-- Soporte técnico de nivel 1 de partner: centro Microsoft 365 administración, centro Exchange administración, Azure AD
-- Soporte técnico de nivel 2 de partners: centro Microsoft 365 administración, centro Exchange administración, Azure AD
+- Soporte técnico de nivel 1 de partner: centro Administración de Microsoft 365, centro Exchange administración, Azure AD
+- Soporte técnico de nivel 2 de partners: centro de Administración de Microsoft 365, centro Exchange administración, Azure AD
 - Escritores de directorios: Azure AD
 - SharePoint Administrador: SharePoint de administración, Azure AD
 - Teams Administrador de servicios: Teams de administración, Azure AD
-- Administrador de usuarios: Microsoft 365 de administración, Azure AD
+- Administrador de usuarios: Administración de Microsoft 365, Azure AD
 
 Si es miembro de uno de estos roles, puede crear grupos de Microsoft 365 para usuarios restringidos y, a continuación, asignar al usuario como propietario del grupo.
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Para administrar quién crea grupos, las siguientes personas necesitan licencias de Azure AD Premium o licencias EDU básicas de Azure AD asignadas a ellos:
+Para administrar quién crea grupos, las siguientes personas necesitan Azure AD Premium o licencias EDU básicas de Azure AD asignadas a ellos:
 
 - El administrador que configura estas opciones de creación de grupos
 - Los miembros del grupo a los que se les permite crear grupos
@@ -66,7 +66,7 @@ Para administrar quién crea grupos, las siguientes personas necesitan licencias
 > [!NOTE]
 > Consulte [Asignar o quitar licencias en el portal de Azure Active Directory para](/azure/active-directory/fundamentals/license-users-groups) obtener más información sobre cómo asignar licencias de Azure.
 
-Las siguientes personas no necesitan licencias educaciones de Azure AD Premium o De Azure AD Basic asignadas:
+Las siguientes personas no necesitan Azure AD Premium o licencias educaciones básicas de Azure AD asignadas:
 
 - Personas que son miembros de Microsoft 365 y que no tienen la capacidad de crear otros grupos.
 
@@ -84,7 +84,7 @@ Los administradores de los roles enumerados anteriormente no necesitan ser miemb
 
 4. Termina de configurar el grupo, agregando personas u otros grupos que quieras que puedan crear grupos en tu organización.
 
-Para obtener instrucciones detalladas, vea [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md).
+Para obtener instrucciones detalladas, vea [Create, edit, or delete a security group in the Centro de administración de Microsoft 365](../admin/email/create-edit-or-delete-a-security-group.md).
 
 ## <a name="step-2-run-powershell-commands"></a>Paso 2: Ejecutar los comandos de PowerShell
 

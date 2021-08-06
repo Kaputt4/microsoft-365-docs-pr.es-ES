@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 37c8e1d879bc296b226fb4d616d798d4c38b4a0d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: eefc1f54f20d1d59a8732cdd75356039bc434f91
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542026"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757011"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland
 
@@ -259,7 +259,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 Revise los [pasos previos a la migración Skype Empresarial migración](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) en línea y asegúrese de completar todos los pasos.
 En esta fase, Skype Empresarial se migrará a Microsoft Teams. Los Skype Empresarial existentes se migran Office 365 los servicios globales de Office 365 en Europa y, a continuación, se pasa a Microsoft Teams en la región "Alemania" de Office 365 servicios.
 
-- Los usuarios no podrán iniciar sesión en la Skype Empresarial la fecha de migración. Diez días antes de la migración, el cliente recibirá un mensaje en el Centro de administración que anuncia cuándo se llevará a cabo la migración y de nuevo cuando comience la migración.
+- Los usuarios no podrán iniciar sesión en la Skype Empresarial la fecha de migración.
 - Se migra la configuración de la directiva.
 - Los usuarios se migrarán a Teams y ya no tendrán acceso a Skype Empresarial después de la migración.
 - Los usuarios deben tener el Microsoft Teams de escritorio instalado. La instalación se realizará durante los 10 días mediante la directiva en la infraestructura de Skype Empresarial, pero si esto falla, los usuarios seguirán teniendo que descargar el cliente o conectarse con un explorador compatible.

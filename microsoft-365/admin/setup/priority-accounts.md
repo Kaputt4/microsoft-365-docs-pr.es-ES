@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Supervisar los mensajes de correo electrónico con errores y retrasos enviados a o desde cuentas que tienen un alto impacto empresarial.
-ms.openlocfilehash: 86e01e591823c94d8279f975ed7de24cc65776dc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 63c394055f94370a09ea76cc8125a71f7061b2f3d6b66ff8106c76c2571f90cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821548"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Administrar y supervisar cuentas de prioridad
 
