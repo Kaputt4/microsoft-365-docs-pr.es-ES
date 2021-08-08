@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 205b24ac09bd49201daa9ee7b6243159e77bbad4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 19e15393714a62e070ba7854854ab29f0e804bd45e275e4c620488076504b0cd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800299"
 ---
 # <a name="get-software-by-id"></a>Obtener software por identificador
 
@@ -58,7 +58,7 @@ GET /api/Software/{Id}
 
 Nombre|Tipo|Descripción
 ---|---|---
-Authorization|Cadena|Portador {token}. **Obligatorio**.
+Authorization|String|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

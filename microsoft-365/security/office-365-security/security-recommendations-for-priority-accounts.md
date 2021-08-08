@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para cuentas de prioridad en Microsoft 365 organizaciones.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1cf813706a5fc0180ed36943c6bc7ae54e35ae346aba3d2b0251489e05cc715b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055255"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844104"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas de prioridad en Microsoft 365
 
@@ -118,12 +118,12 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 
 ****
 
-|Concepto|Recursos|Descripción|
+|Concepto|Recursos|Description|
 |---|---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](/office365/customlearning/)|Estos recursos pueden ayudarle a crear formación para los usuarios de su organización.|
 |Centro de seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
 |Autenticación multifactor|[Comprobación en dos pasos: ¿Cuál es la página de verificación adicional?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.|
-|Aprendizaje de simulación de ataques|[Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)|El aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2 permite al administrador configurar, iniciar y realizar un seguimiento de ataques de suplantación de identidad simulados contra grupos específicos de usuarios.|
+|Aprendizaje de simulación de ataque|[Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)|El aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2 permite al administrador configurar, iniciar y realizar un seguimiento de ataques de suplantación de identidad simulados contra grupos específicos de usuarios.|
 
 Además, Microsoft recomienda que los usuarios tomen las acciones descritas en este artículo: Proteger su cuenta y dispositivos [de los hackers y malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Entre estas acciones se incluyen:
 
@@ -131,6 +131,6 @@ Además, Microsoft recomienda que los usuarios tomen las acciones descritas en e
 - Protección de dispositivos
 - Habilitar características de seguridad en Windows 10 y equipos Mac (para dispositivos no administrados)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Anuncio de protección de cuenta de prioridad en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

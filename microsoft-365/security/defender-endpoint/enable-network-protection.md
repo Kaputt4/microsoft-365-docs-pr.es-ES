@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 ms.topic: conceptual
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 06d59cd1b5d2d41c06ef7867e5b0174946cecfb0
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a4052802c8a5d7db165ae9589fb9fe0db3f1b0fb
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656108"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757311"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -121,14 +121,14 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
 
 1. Seleccione **Inicio** y escriba **regedit** para abrir **el Editor del Registro**.
 
-2. Vaya a **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
+2. Vaya a **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Seleccione **EnableNetworkProtection** y confirme el valor:
    * 0=Off
    * 1=On
    * 2=Auditoría
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Protección de red](network-protection.md)
 * [Evaluar protección de red](evaluate-network-protection.md)

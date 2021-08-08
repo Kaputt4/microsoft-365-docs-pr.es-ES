@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e7b48ef5dcd98a948b8af0dc2f6f61ac1bb81f4d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3066ccf803d5a2cad907ae7f983f3cafbb41112d
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542614"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725857"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -90,14 +90,16 @@ Las consultas simples, como las que no usan el operador or para personalizar o a
 
 Hay varias maneras de garantizar que las consultas más complejas devuelvan estas columnas. Por ejemplo, si prefiere agregar y contar por entidad debajo de una columna como , todavía puede devolver y obtenerlo del evento más reciente que implica cada `DeviceId` `Timestamp` único `ReportId` `DeviceId` .
 
+
 > [!IMPORTANT]
 > Evite filtrar detecciones personalizadas mediante la `Timestamp` columna. Los datos usados para las detecciones personalizadas se filtran previamente en función de la frecuencia de detección.
+
 
 La consulta de ejemplo siguiente cuenta el número de dispositivos únicos ( ) con detecciones antivirus y usa este recuento para buscar solo los dispositivos con más `DeviceId` de cinco detecciones. Para devolver el último `Timestamp` y el correspondiente , usa el operador con la `ReportId` `summarize` `arg_max` función.
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(1d)
+| where ingestion_time() > ago(1d)
 | where ActionType == "AntivirusDetection"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | where count_ > 5
@@ -227,7 +229,7 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >[!NOTE]
 >Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

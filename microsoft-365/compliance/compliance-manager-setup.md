@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9b6885d101529d18201084b3364c6412bbbc4f4d
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454022"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725833"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -72,9 +72,7 @@ Para establecer permisos y asignar roles en el Centro de cumplimiento de Microso
 
 8. Cuando haya terminado de asignar usuarios, seleccione **Listo** y, a continuación, **seleccione Guardar** y, a continuación, **Cerrar**.
 
-Si necesita tener acceso a la versión clásica del Administrador de cumplimiento en el Portal de confianza de servicio de Microsoft, la configuración de administración del Portal de confianza de servicio proporciona otra forma de asignar roles ([ver instrucciones](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Tenga en cuenta que estos roles son más limitados en su funcionalidad.
-
-##### <a name="more-about-azure-ad"></a>Más información sobre Azure AD
+#### <a name="more-about-azure-ad"></a>Más información sobre Azure AD
 
 Para asignar roles y establecer permisos en Azure AD, consulte [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 

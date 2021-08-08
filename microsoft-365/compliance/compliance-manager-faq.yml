@@ -3,8 +3,8 @@ metadata:
   title: Preguntas más frecuentes del Administrador de cumplimiento de Microsoft
   f1.keywords:
   - NOCSH
-  ms.author: chvukosw
-  author: chvukosw
+  ms.author: v-jgriffee
+  author: jmgriffee
   manager: laurawi
   audience: Admin
   ms.topic: article
@@ -15,16 +15,16 @@ metadata:
   - MOE150
   - MET150
   description: Encuentre respuestas a las preguntas más frecuentes sobre Microsoft Compliance Manager, lo que ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos.
-  ms.openlocfilehash: 85a059accd390bd21cd48d728fb76e183251e097
-  ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
+  ms.openlocfilehash: 7029cc031b072ddfcc5603edb812b1cd809bcd85
+  ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/08/2021
-  ms.locfileid: "53331464"
+  ms.lasthandoff: 08/04/2021
+  ms.locfileid: "53757323"
 title: Preguntas frecuentes del Administrador de cumplimiento
 summary: ''
 sections:
-- name: Ignorado
+- name: Omitidas
   questions:
   - question: >
       ¿El Administrador de cumplimiento y la puntuación de cumplimiento son iguales o son diferentes?
@@ -60,7 +60,7 @@ sections:
       Si usó el Administrador de cumplimiento en el Portal de confianza de servicio, todos los datos de su organización ahora existen en el Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365 en https://compliance.microsoft.com/compliancemanager . No hay nada que tenga que hacer para reanudar el trabajo del Administrador de cumplimiento en su nueva ubicación, aparte de actualizar los marcadores que tenga en su ubicación anterior. Todas las evaluaciones y otros datos se han llevado por usted.
 
 
-      Tenga en cuenta que el Administrador de cumplimiento (versión preliminar) ya no es accesible en el Portal de confianza de servicio y todos los vínculos a él le redirigirán a su nueva ubicación en el Centro de cumplimiento de Microsoft 365. El Administrador de cumplimiento (clásico) permanece en el Portal de confianza de servicio, aunque no se recomienda su uso.
+      Tenga en cuenta que el Administrador de cumplimiento (versión preliminar) ya no es accesible en el Portal de confianza de servicio y todos los vínculos a él le redirigirán a su nueva ubicación en el Centro de cumplimiento de Microsoft 365.
 
 
       Todo lo que solía hacer en versiones anteriores del Administrador de cumplimiento, como completar acciones (ahora denominadas "acciones de mejora") y crear evaluaciones, se puede realizar en el nuevo Administrador de cumplimiento. Hemos agregado más de 150 nuevas plantillas de evaluación y hemos mejorado el proceso de creación de plantillas. Agregaremos más mejoras en futuras versiones.
@@ -109,12 +109,4 @@ sections:
       No. La puntuación de cumplimiento mide el progreso en la realización de acciones recomendadas que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. No expresa una medida absoluta de cumplimiento de la organización con respecto a una norma o reglamento en particular. El Administrador de cumplimiento y su puntuación de cumplimiento no deben interpretarse como una garantía de ninguna manera.
   - question: >
       ¿Puedo usar el Administrador de cumplimiento para productos que no son de Microsoft?
-    answer: >
-      Aunque el Administrador de cumplimiento proporciona supervisión continua y acciones recomendadas solo para los servicios en la nube de Microsoft, puede agregar evaluaciones personalizadas en el Administrador de cumplimiento para sus servicios de terceros. De este modo, puede usar Microsoft Compliance Manager como una herramienta de administración de cumplimiento SaaS para ayudarle a administrar todos los controles en los activos digitales.
-  - question: >
-      ¿Qué sucede con el Administrador de cumplimiento (clásico) en el Portal de confianza de servicio?
-    answer: >-
-      La versión clásica del Administrador de cumplimiento, que reside en el Portal de confianza de servicio de Microsoft, pronto se retirará. Un Microsoft 365 del Centro de mensajes se mostrará al menos 60 días antes de la retirada final del Administrador de cumplimiento (clásico). Los clientes que administran sus actividades de cumplimiento en el Administrador de cumplimiento (clásico) tendrán que mover sus datos, incluidas evaluaciones y controles, a la nueva solución del Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365. Los datos del cliente no se transferirán automáticamente al Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365 cuando se retire el Administrador de cumplimiento (clásico).
-
-
-      Para obtener información sobre cómo configurar rápidamente el nuevo Administrador de cumplimiento, lea nuestra guía de inicio rápido [del Administrador de](compliance-manager-quickstart.md) cumplimiento.
+    answer: Aunque el Administrador de cumplimiento proporciona supervisión continua y acciones recomendadas solo para los servicios en la nube de Microsoft, puede agregar evaluaciones personalizadas en el Administrador de cumplimiento para sus servicios de terceros. De este modo, puede usar Microsoft Compliance Manager como una herramienta de administración de cumplimiento SaaS para ayudarle a administrar todos los controles en los activos digitales.

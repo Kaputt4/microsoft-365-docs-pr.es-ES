@@ -17,35 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos y sugiere acciones recomendadas para ayudar a solucionar los riesgos.
-ms.openlocfilehash: 536a1c02a820b0ea36fc4fe39ca1d0d31f7bc994
-ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
+ms.openlocfilehash: c19655e3cd509d141878e8d917d248cc2ce42aa5
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53330946"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757251"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
 **En este artículo:** Obtenga información sobre lo que es el Administrador de cumplimiento, cómo ayuda a simplificar el cumplimiento y reducir los riesgos, y sus componentes clave.
 
-## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novedades: la versión de GA del Administrador de cumplimiento
+## <a name="what-is-compliance-manager"></a>¿Qué es el Administrador de cumplimiento?
 
-El Administrador de cumplimiento ya está disponible en general (GA) como una solución de administración de cumplimiento integral dentro del [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md). Con esta versión, el Administrador de cumplimiento completa la transición desde su ubicación anterior en el Portal de confianza de servicio de Microsoft. El Administrador de cumplimiento también está disponible para los Community (GCC) moderados, GCC altos y del Departamento de Defensa (DoD).
-
-Lo que comenzó como la vista previa pública de la puntuación de cumplimiento ha evolucionado hasta convertirse en una herramienta centralizada con capacidades de administración de cumplimiento mejoradas y mayor facilidad de uso.  La versión de ga ofrece una colección más grande de evaluaciones predefinidas para ayudarle a escalar sus actividades de cumplimiento.
-
-**Obtenga más información sobre la versión de GA:**
-- Nuestras [preguntas más frecuentes le](compliance-manager-faq.yml) guían a través de la evolución con más detalle.
-- Lea acerca de las mejoras de características de GA en [esta entrada de blog](https://aka.ms/compliancemanager/GAblog).
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica de la Centro de cumplimiento de Microsoft 365 [que](microsoft-365-compliance-center.md) le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo de su recorrido de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, mantenerse al día con las normativas y certificaciones, y los informes a los auditores.
 
 Vea el vídeo siguiente para obtener información sobre cómo el Administrador de cumplimiento puede ayudar a simplificar la forma en que su organización administra el cumplimiento:
 <br>
 <br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
-
-## <a name="what-is-compliance-manager"></a>Qué es el Administrador de cumplimiento
-
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica de la Centro de cumplimiento de Microsoft 365 [que](microsoft-365-compliance-center.md) le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo de su recorrido de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, mantenerse al día con las normativas y certificaciones, y los informes a los auditores.
 
 El Administrador de cumplimiento ayuda a simplificar el cumplimiento y reducir los riesgos proporcionando:
 
@@ -146,8 +136,8 @@ El Administrador de cumplimiento está disponible en los siguientes idiomas:
 - Finés
 - Francés
 - Alemán
-- Hebreo
-- Húngaro
+- Hebrew
+- Hungarian
 - Italiano
 - Japonés
 - Coreano

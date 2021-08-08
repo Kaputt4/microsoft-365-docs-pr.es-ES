@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 4ed8b3a7476e11cdf2341b0a98af690ed3f33c7e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
-ms.translationtype: MT
+ms.openlocfilehash: ba929dad3fa7797db736907d085d9beb28835332ba79e3a02ce1363fdb129d4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843892"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 

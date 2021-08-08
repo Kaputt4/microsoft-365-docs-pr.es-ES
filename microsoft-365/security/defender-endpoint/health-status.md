@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: acc75a931cb14a7aab729c09a7b835fb9f26d1d1
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: db3f9f7b54e14fbe198a7ae2dd06b76541d0c141322840cb2c91c575147d6195
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281305"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890460"
 ---
 # <a name="investigate-agent-health-issues"></a>Investigar problemas de estado del agente
 
@@ -34,7 +34,7 @@ ms.locfileid: "52281305"
 
 En la tabla siguiente se proporciona información sobre los valores devueltos al ejecutar el `mdatp health` comando y sus correspondientes descripciones.
 
-| Valor | Descripción |
+| Valor | Description |
 |-|-|
 | automatic_definition_update_enabled | True si las actualizaciones automáticas de definiciones de antivirus están habilitadas, false de lo contrario. |
 |  cloud_automatic_sample_submission_consent | Nivel de envío de ejemplo actual. Puede ser uno de los siguientes valores:     <br><br>  - **Ninguno:** no se envían muestras sospechosas a Microsoft.  <br> <br>     - **Caja fuerte:** solo se envían automáticamente muestras sospechosas que no contienen información de identificación personal (PII). Este es el valor predeterminado para esta configuración.    <br> <br>   - **All**: Todas las muestras sospechosas se envían a Microsoft.   |

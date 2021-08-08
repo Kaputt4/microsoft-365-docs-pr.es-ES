@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d39316b4377665b8269e352c853742a744dc517
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657104"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757335"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -470,6 +470,7 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
+      "maximumOnDemandScanThreads":1,
       "passiveMode":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[

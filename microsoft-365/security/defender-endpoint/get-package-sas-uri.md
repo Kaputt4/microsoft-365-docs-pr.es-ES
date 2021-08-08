@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 287d459e455e549b95261a2434ed962a0bd19709
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 0828d19f875767ec2285057824c931e3a67477641cdc923bac0a2513e4325ac8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800335"
 ---
 # <a name="get-package-sas-uri-api"></a>Obtener api de URI de SAS del paquete
 
@@ -64,7 +64,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

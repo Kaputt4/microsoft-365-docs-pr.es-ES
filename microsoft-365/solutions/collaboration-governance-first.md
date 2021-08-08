@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo crear su plan de gobierno de colaboración
-ms.openlocfilehash: c371d97c211275ffb1019e6f6dfc165295ed729f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 062648ca2e4eb2c3909b38d376f568df726ac2bef3abb5b82b1e86db879a1887
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843988"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Crear el plan de gobierno de colaboración
 
@@ -65,7 +65,7 @@ Por ejemplo, una de las principales capacidades de habilitación de Microsoft 36
 
 ## <a name="think-about-governance-first"></a>Piense primero en el gobierno
 
-Su inversión en Microsoft 365 es tan buena como el valor del contenido y las experiencias que habilita, por lo que pensar en el gobierno al principio de su viaje garantiza que no bloqueará ni habilitará demasiado antes de tener la oportunidad de comprender y evaluar las implicaciones de cada decisión. Hay varios "botones y marcados" que puede activar en el centro de administración de Microsoft 365 y para sitios y equipos individuales. Un plan de gobierno eficaz es fundamental para lograr los objetivos empresariales, pero el gobierno trata de equilibrar el riesgo con las ventajas. Si lo bloqueamos todo, los usuarios encontrarán una forma de trabajar alrededor de las reglas si necesitan hacerlo para realizar el trabajo.
+Su inversión en Microsoft 365 es tan buena como el valor del contenido y las experiencias que habilita, por lo que pensar en el gobierno al principio de su viaje garantiza que no bloqueará ni habilitará demasiado antes de tener la oportunidad de comprender y evaluar las implicaciones de cada decisión. Hay varios "botones y marcados" que puede activar el Centro de administración de Microsoft 365 y para sitios y equipos individuales. Un plan de gobierno eficaz es fundamental para lograr los objetivos empresariales, pero el gobierno trata de equilibrar el riesgo con las ventajas. Si lo bloqueamos todo, los usuarios encontrarán una forma de trabajar alrededor de las reglas si necesitan hacerlo para realizar el trabajo.
 
 Pensar primero en el gobierno le permite:
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 04c87543f25cf3349f179fa4a7f3ebc523e3d6ec
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ac7b2024f0b93fd16a9e37b9ea64dd7c88405c66
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656516"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757299"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -91,7 +91,7 @@ Los números indicados son la versión mínima de la aplicación Office requerid
 |[Permitir a los usuarios asignar permisos: <br /> - No reenviar](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Permitir a los usuarios asignar permisos: <br /> - Solo cifrar](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Sí |
 |[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Sí                |
-|[Auditoría de la actividad de los usuarios relacionada con las etiquetas](data-classification-activity-explorer.md) | 2011+ | Implementando: 16.51+ <sup>\*</sup> | Implementando: 4.2126+ | Implementando: 4.2126+ | En revisión |
+|[Auditoría de la actividad de los usuarios relacionada con las etiquetas](data-classification-activity-explorer.md) | 2011+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Implementando |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de tipos de información confidencial                    | 2009+                      | 16.44+ <sup>\*</sup>                    | En revisión           | En revisión               | Sí |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | 2009+                      | En revisión                    | En revisión           | En revisión               | Sí |
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sí |

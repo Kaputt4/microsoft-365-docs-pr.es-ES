@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos de Caja fuerte en Defender for Office 365 para proteger su organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 240056565d88977aa7019f5a14e2db98a8dbb6db
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b1921b9cdd8e42cc83e2a8a0cda23965fd82a9f1
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933196"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725893"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte Vínculos en Microsoft Defender para Office 365
 
@@ -98,7 +98,7 @@ En la tabla siguiente se describen escenarios para vínculos de Caja fuerte en o
 
 Caja fuerte Los vínculos examinan el correo electrónico entrante en busca de hipervínculos malintencionados conocidos. Las direcciones URL escaneadas se reescritan con el prefijo de dirección URL estándar de Microsoft: `https://nam01.safelinks.protection.outlook.com` . Una vez reescrito el vínculo, se analiza para buscar contenido potencialmente malintencionado.
 
-Después Caja fuerte los vínculos vuelve a escribir una dirección URL, la  dirección URL permanece reescrita incluso si el mensaje se reenvía manualmente o se responde a (tanto a destinatarios internos como externos). Los vínculos adicionales que se agregan al mensaje reenviado o respondido a él no se reescriben. Sin embargo, en  el caso del reenvío automático por las reglas de la Bandeja de entrada o el  reenvío SMTP, la dirección URL no se reescribirá en el mensaje destinado al destinatario final a menos que ese destinatario también esté protegido por vínculos de Caja fuerte o que la dirección URL ya se haya reescrito en una comunicación anterior. 
+Después Caja fuerte los vínculos vuelve a escribir una dirección URL, la  dirección URL permanece reescrita incluso si el mensaje se reenvía manualmente o se responde a (tanto a destinatarios internos como externos). Los vínculos adicionales que se agregan al mensaje reenviado o contestado no se reescriben. Sin embargo, en  el caso del reenvío automático por las reglas de la Bandeja de entrada o el  reenvío SMTP, la dirección URL no se reescribirá en el mensaje destinado al destinatario final a menos que ese destinatario también esté protegido por vínculos de Caja fuerte o que la dirección URL ya se haya reescrito en una comunicación anterior. Las direcciones URL reescritas solo se aplican al correo electrónico HTML, ya que reescribir la dirección URL haría que las direcciones URL de texto enriquecido y sin formato no sean legibles, pero estas direcciones URL aún se examinan antes de la entrega. Los correos electrónicos de texto enriquecido y texto sin formato que contengan direcciones URL también se comprobarán mediante una llamada API del lado cliente a vínculos de Caja fuerte al hacer clic en Outlook para escritorio versión 16.0.12513 o posterior.
 
 La configuración de las Caja fuerte de vínculos que se aplican a los mensajes de correo electrónico se describen en la siguiente lista:
 
@@ -158,9 +158,6 @@ En un nivel alto, aquí se muestra cómo funciona la protección Caja fuerte ví
    - Si se determina que la dirección URL es segura, se abrirá el sitio web.
 
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Caja fuerte Configuración de vínculos para Microsoft Teams
-
-> [!IMPORTANT]
-> A partir de marzo de 2020, esta característica está en versión preliminar y solo está disponible para los miembros de la Microsoft Teams Programa de adopción de tecnología (TAP). Para obtener información acerca de la programación de lanzamiento, consulte el [mapa Microsoft 365 ruta de trabajo](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
 Puede habilitar o deshabilitar la protección Caja fuerte vínculos para Microsoft Teams en Caja fuerte de vínculos. En concreto, se usa la opción Seleccionar la acción para direcciones URL desconocidas o potencialmente malintencionadas **dentro Microsoft Teams** configuración. El valor recomendado es **On**.
 

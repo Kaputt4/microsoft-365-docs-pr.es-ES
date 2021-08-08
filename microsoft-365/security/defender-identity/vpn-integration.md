@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 155686b79129e42be3858f9a77cfbd9fad86a0ec
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 5c208440287723367b875f3278fc69425a03b80d93a8f8b1ec4c574a31efb7ec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844318"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender para la integración de VPN de identidad en Microsoft 365 Defender
 
@@ -83,6 +83,6 @@ Una vez habilitado, todos los sensores de Defender for Identity escucharán en e
 
 Después de que el sensor Defender for Identity reciba los eventos VPN y los envíe al servicio en la nube de Defender for Identity para su procesamiento, el perfil de entidad indicará las distintas ubicaciones y actividades de VPN a las que se accede en el perfil indicará las ubicaciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Investigar alertas en Microsoft 365 Defender](../defender/investigate-alerts.md)

@@ -1,5 +1,5 @@
 ---
-title: Informes de firewall de host en Microsoft Defender para endpoint
+title: Informes de firewalls de host en Microsoft Defender para punto de conexión
 description: Host and view firewall reporting in Microsoft 365 security center.
 keywords: Windows Defender, firewall
 search.product: eADQiWindows 10XVcnh
@@ -14,14 +14,14 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0289d6f920fd6ff35fd446f9c2b8c5516883a4d2
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 23986024db239da6c8a69792ff8abbd01adc54d87354146d7c3847ee3a9dd539
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800275"
 ---
-# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewall de host en Microsoft Defender para endpoint
+# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewalls de host en Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,11 +31,11 @@ ms.locfileid: "52809343"
 
 Si es administrador, ahora puede hospedar informes de firewall en Microsoft 365 [de seguridad](https://security.microsoft.com). Esta característica le permite ver Windows 10 y Windows firewall de Server 2019 desde una ubicación centralizada. 
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar? 
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar? 
 
 - Debe ejecutar Windows 10 o Windows Server 2019.
 - Para incorporar dispositivos al servicio Microsoft Defender para endpoints, vea [aquí](onboard-configure.md). 
-- Para que Microsoft 365 centro de seguridad comience a recibir los datos, debe habilitar **eventos** de auditoría para Firewall de Windows Defender con seguridad avanzada: 
+- Para que Microsoft 365 centro de seguridad comience a  recibir los datos, debe habilitar los eventos de auditoría para Windows Defender firewall con seguridad avanzada: 
     - [Gota de paquetes de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
     - [Conexión de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-connection) 
 - Habilite estos eventos mediante el Editor de objetos de directiva de grupo, la directiva de seguridad local o auditpol.exe comandos. Para obtener más información, [vea aquí](/windows/win32/fwp/auditing-and-logging). 
@@ -50,7 +50,7 @@ Si es administrador, ahora puede hospedar informes de firewall en Microsoft 365 
 - Después de habilitar los eventos, Microsoft 365 de seguridad empezará a supervisar los datos.
     - IP remota, puerto remoto, puerto local, IP local, nombre del equipo, proceso entre conexiones entrantes y salientes.
 - Los administradores ahora pueden ver Windows de firewall de host [aquí](https://security.microsoft.com/firewall).
-    - Para facilitar la creación de informes adicionales, descargue el [script de](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) informes personalizados para supervisar las actividades Firewall de Windows Defender mediante Power BI. 
+    - Los informes adicionales se pueden facilitar descargando el [script de](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) informes personalizados para supervisar las Windows Defender de firewall mediante Power BI. 
     - Puede tardar hasta 12 horas antes de que se reflejen los datos.
 
 ## <a name="supported-scenarios"></a>Escenarios admitidos
@@ -88,6 +88,6 @@ Los informes de firewall admiten la perforación desde la tarjeta directamente e
 
 Ahora se puede ejecutar la consulta y se pueden explorar todos los eventos de Firewall relacionados de los últimos 30 días. 
 
-Para informes adicionales o cambios personalizados, la consulta se puede exportar a Power BI para un análisis posterior. Los informes personalizados se pueden facilitar descargando el [script de](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) informes personalizados para supervisar las actividades Firewall de Windows Defender mediante Power BI. 
+Para informes adicionales o cambios personalizados, la consulta se puede exportar a Power BI para un análisis posterior. Los informes personalizados se pueden facilitar descargando el [script de](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) informes personalizados para supervisar las actividades de firewall Windows Defender mediante Power BI. 
 
  

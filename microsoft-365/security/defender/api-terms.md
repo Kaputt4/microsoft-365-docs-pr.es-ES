@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Licencia y términos de uso de las API de Defender
+title: Microsoft 365 Defender Licencia de API y términos de uso
 description: Descripción de la licencia y los términos de uso de las API en Microsoft 365 Defender
 keywords: api, apis, licencia, términos, apis, legal, avisos, código de conducta
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b70311726b6c1c5bedf34a18ee1763255c93ba3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e40910defa4fba006cdfdd02f6eeebe53ce7006db2f2c99de88397027869237e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844252"
 ---
-# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Licencia y términos de uso de las API de Defender
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender Licencia de API y términos de uso
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "51070072"
 
 ## <a name="official-terms"></a>Términos oficiales
 
-Microsoft 365 Las API de Defender se rigen por la licencia de las API de [Microsoft y los términos de uso.](/legal/microsoft-apis/terms-of-use)
+Microsoft 365 Defender Las API se rigen por la licencia de las API de [Microsoft y los términos de uso.](/legal/microsoft-apis/terms-of-use)
 
 ## <a name="legal-notices"></a>Avisos legales
 
@@ -74,6 +74,6 @@ Si la solicitud ha sido limitada, el cuerpo de la respuesta indicará la hora en
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Microsoft 365 Introducción a las API de Defender](api-overview.md)
+- [Microsoft 365 Defender Introducción a las API](api-overview.md)
 - [API de Microsoft 365 Defender (versión preliminar) admitidas](api-supported.md)
-- [Acceder a las API Microsoft 365 Defender](api-access.md)
+- [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)

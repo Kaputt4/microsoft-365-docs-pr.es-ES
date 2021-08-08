@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8d16d4640a926697363e7bb7588d80a8c28439df
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ca71b8431972085d2e4b13d0669219a9187246e6
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541990"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726157"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 
@@ -38,7 +38,16 @@ Microsoft Secure Score se puede encontrar en https://security.microsoft.com/secu
 
 ## <a name="july-2021"></a>Julio de 2021
 
+### <a name="added-improvement-action-related-to-microsoft-teams"></a>Se agregó una acción de mejora relacionada con Microsoft Teams
+
+- Restringir que los usuarios de acceso telefónico no omita una sala de espera de reuniones
+- Limitar que los participantes externos tengan control en una Teams reunión
+- Restringir que los usuarios anónimos inicien Teams reuniones
+- Requerir que los lobbies se configuren para Teams reuniones
+- Configurar qué usuarios pueden estar presentes en Teams reuniones
+
 ### <a name="added-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Se agregó una acción de mejora relacionada con Microsoft Defender para endpoint
+
 - Corrección de Microsoft Defender para la recopilación de datos del sensor de extremo para macOS
 - Corrección de Microsoft Defender para comunicaciones con problemas de punto de conexión para macOS
 - Establecer la longitud mínima de contraseña en 15 o más caracteres en macOS

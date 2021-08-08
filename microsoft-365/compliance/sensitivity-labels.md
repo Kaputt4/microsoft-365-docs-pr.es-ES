@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 130b264735d00083116a5cf18cc0c4bf6b1a764c
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
-ms.translationtype: MT
+ms.openlocfilehash: 13e7d42242bca811a2b56f79aa3a13f6ff9cfef6
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453638"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757203"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -195,9 +195,9 @@ Cuando configura una directiva de etiqueta, puede:
 
 - **Solicite a los usuarios que apliquen una etiqueta** para documentos y correos electrónicos, solo documentos, para contenedores y contenido de Power BI. También conocidas como etiquetado obligatorio, estas opciones garantizan que se debe aplicar una etiqueta antes de que los usuarios puedan guardar documentos y enviar correos electrónicos, crear nuevos grupos o sitios y cuando usen contenido sin etiquetar para Power BI.
     
-    Para documentos y mensajes de correo electrónico, el usuario puede asignar una etiqueta manualmente; de forma automática como resultado de una condición configurada; o bien, de forma predeterminada (la opción de etiqueta predeterminada descrita anteriormente). Se muestra un ejemplo en Outlook cuando un usuario debe asignar una etiqueta:
+    Para documentos y mensajes de correo electrónico, el usuario puede asignar una etiqueta manualmente. Todo ello de forma automática como resultado de una condición que ha configurado. O bien, se puede asignar de forma predeterminada (opción de etiqueta predeterminada descrita anteriormente). Se muestra un ejemplo de cuando un usuario debe asignar una etiqueta:
 
-    ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
+    ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     
     Para obtener más información sobre las etiquetas obligatorias para documentos y correos electrónicos, consulte [Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     

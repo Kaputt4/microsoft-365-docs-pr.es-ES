@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 48a51b8ec880726bdd2121f2eaf0d78f5cd6b3e0
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 4b2775bfe94eb53851e108ed7b7d436f233beea267b3485385801534748ef16c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844084"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurar las capacidades de protección contra amenazas en Microsoft 365
 
@@ -103,7 +103,7 @@ Microsoft 365 Defender unifica alertas, incidentes, investigación y respuesta a
 
 |Capacidades de configuración, protección y detección|Capacidades de automatización, investigación, corrección y educación|
 |---|---|
-|[Archivos adjuntos seguros](../security/office-365-security/safe-attachments.md) <p> [Vínculos seguros](../security/office-365-security/safe-links.md) <p> [Documentos seguros](../security/office-365-security/safe-docs.md) <p> [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [Protección contra suplantación de identidad en Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Rastreadores de amenazas](../security/office-365-security/threat-trackers.md) <p> [Explorador de amenazas](../security/office-365-security/threat-explorer.md) <p> [Investigación y respuesta automatizadas](../security/office-365-security/office-365-air.md) <p> [Aprendizaje de simulación de ataques](../security/office-365-security/attack-simulation-training.md)|
+|[Archivos adjuntos seguros](../security/office-365-security/safe-attachments.md) <p> [Vínculos seguros](../security/office-365-security/safe-links.md) <p> [Documentos seguros](../security/office-365-security/safe-docs.md) <p> [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [Protección contra suplantación de identidad en Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Rastreadores de amenazas](../security/office-365-security/threat-trackers.md) <p> [Explorador de amenazas](../security/office-365-security/threat-explorer.md) <p> [Investigación y respuesta automatizadas](../security/office-365-security/office-365-air.md) <p> [Aprendizaje de simulación de ataque](../security/office-365-security/attack-simulation-training.md)|
 |
 
 Con Microsoft Defender para Office 365, las personas de toda la organización pueden comunicarse y colaborar de forma más segura, con protección contra amenazas para su contenido de correo electrónico y Office documentos.
@@ -125,7 +125,7 @@ Con Microsoft Defender para Office 365, las personas de toda la organización pu
 
 [Microsoft Defender para endpoint](/windows/security/threat-protection) protege los dispositivos de la organización (también denominados puntos de conexión) de ciberamenazas, ataques avanzados e infracciones de datos. Los equipos de seguridad pueden ser más eficientes en la administración de la seguridad de sus puntos de conexión. Las herramientas sólidas ayudan a las organizaciones a mantenerse al día con los sistemas no apareados mediante la detección de vulnerabilidades con la administración de [amenazas y vulnerabilidades.](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Las capacidades automatizadas de detección y corrección, como la [](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) reducción de superficie de [ataque,](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)la protección de próxima generación, [](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) [detección y respuesta de puntos de conexión](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)y la investigación y corrección automatizadas ayudan a mantener los dispositivos a salvo de malware. Además de estas capacidades, los clientes pueden recibir notificaciones proactivas y consultar con Expertos en amenazas de Microsoft a petición, como parte del servicio de búsqueda administrada de participación.
 
-### <a name="set-up-microsoft-defender-for-endpoint"></a>Configurar Microsoft Defender para endpoint
+### <a name="set-up-microsoft-defender-for-endpoint"></a>Configurar Microsoft Defender para punto de conexión
 
 ![Proceso para implementar Microsoft Defender para endpoint](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 

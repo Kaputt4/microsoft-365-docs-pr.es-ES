@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si quiere ser más estricto? ¿Y qué extras obtiene si también usa Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67d1b133e0d0ac7e622ed0bfdbfd17214608d77a
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 72a5491bbad382cc9a22faa64b9e98a4f36893ef
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083553"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725845"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad
 
@@ -77,7 +77,7 @@ Para crear y configurar directivas contra correo no deseado, vea [Configure anti
 |**Acción de detección** de phishing <p> _PhishSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de detección de phishing de elevada** confianza <p> _HighConfidencePhishAction_|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de** detección masiva <p> _BulkSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
-|**Conservar el correo no deseado en cuarentena durante estos días** <p> _QuarantineRetentionPeriod_|15 días|30 días|30 días||
+|**Conservar el correo no deseado en cuarentena durante estos días** <p> _QuarantineRetentionPeriod_|15 días|30 días|30 días||
 |**Habilitar sugerencias de seguridad contra correo no deseado** <p> _InlineSafetyTipsEnabled_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |Habilitar la purga automática de hora cero (ZAP) para mensajes de suplantación de identidad <p> _PhishZapEnabled_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |Habilitar ZAP para mensajes de correo no deseado <p> _SpamZapEnabled_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
@@ -155,7 +155,7 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 |**Habilitar el filtro de datos adjuntos común** <p> _EnableFileFilter_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Esta configuración pone en cuarentena los mensajes que contienen datos adjuntos ejecutables según el tipo de archivo, independientemente del contenido de los datos adjuntos.|
 |**Habilitar la purga automática de hora cero para malware** <p> _ZapEnabled_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |**Notificaciones de destinatarios**|||||
-|**Notificar a los destinatarios cuando los mensajes se ponen en cuarentena como malware** <p> _Action_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede publicarlo un administrador.|
+|**Notificar a los destinatarios cuando los mensajes se ponen en cuarentena como malware** <p> _Acción_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede publicarlo un administrador.|
 |**Notificaciones de remitente**|||||
 |**Notificar a los remitentes internos cuando los mensajes se ponen en cuarentena como malware** <p> _EnableInternalSenderNotifications_|No seleccionada <p> `$false`|No seleccionada <p> `$false`|No seleccionada <p> `$false`||
 |**Notificar a remitentes externos cuando los mensajes se ponen en cuarentena como malware** <p> _EnableExternalSenderNotifications_|No seleccionada <p> `$false`|No seleccionada <p> `$false`|No seleccionada <p> `$false`||
@@ -308,8 +308,8 @@ En PowerShell, use los cmdlets [New-SafeAttachmentPolicy](/powershell/module/exc
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Caja fuerte Respuesta de malware desconocido de datos adjuntos** <p> _Action_|**Desactivado** <p> `Block`|**Bloquear** <p> `Block`|**Bloquear** <p> `Block`||
-|**Redirigir datos adjuntos con datos adjuntos** **detectados: habilitar el redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|No seleccionado y no se especifica ninguna dirección de correo electrónico. <p> `$true` <p> ninguno|Seleccionada y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Seleccionada y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
+|**Caja fuerte Respuesta de malware desconocido de datos adjuntos** <p> _Habilitar_ y _acción_|**Desactivado** <p> `-Enable $false`|**Bloquear** <p> `-Enable $true` y `-Action Block`|**Bloquear** <p> `-Enable $true` y `-Action Block`|Cuando el _parámetro Enable_ $false, el valor del _parámetro Action_ no importa.|
+|**Redirigir datos adjuntos con datos adjuntos** **detectados: habilitar el redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|No seleccionado y no se especifica ninguna dirección de correo electrónico. <p> `-Redirect $false` <p> _RedirectAddress_ está en blanco ( `$null` )|Seleccionada y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Seleccionada y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
 |**Aplicar la respuesta Caja fuerte de detección de datos adjuntos si el examen no se puede completar (tiempo de espera o errores)** <p> _ActionOnError_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |
 
@@ -359,7 +359,7 @@ En PowerShell, use los [cmdlets New-SafeLinksPolicy](/powershell/module/exchange
 |**No realizar un seguimiento de los clics del usuario** <p> _DoNotTrackUserClicks_|No seleccionada <p> `$false`|No seleccionada <p> `$false`|No seleccionada <p> `$false`|Desactivar esta configuración (establecer _DoNotTrackUserClicks_ en `$false` ) realiza un seguimiento de los clics de los usuarios.|
 |**No permitir que los usuarios hagan clic en la dirección URL original** <p> _DoNotAllowClickThrough_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Al activar esta configuración (al _establecer DoNotAllowClickThrough en_ ) se evita `$true` hacer clic en la dirección URL original.|
 |**Mostrar la personal de marca de la organización en las páginas de notificación y advertencia** <p> _EnableOrganizationBranding_|No seleccionada <p> `$false`|No seleccionada <p> `$false`|No seleccionada <p> `$false`|No tenemos ninguna recomendación específica para esta configuración. <p> Antes de activar esta configuración, debes seguir las instrucciones de Personalizar el tema [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) para que la organización cargue el logotipo de la empresa.|
-|**No reescribir las siguientes direcciones URL** <p> _DoNotRewriteUrls_|No seleccionada <p> `$false`|No seleccionada <p> `$true`|No seleccionada <p> `$true`|No tenemos ninguna recomendación específica para esta configuración. Para obtener más información, vea ["Do not rewrite the following URLs" lists in Caja fuerte Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).|
+|**No reescribir las siguientes direcciones URL** <p> _DoNotRewriteUrls_|No seleccionada <p> en blanco|No seleccionada <p> en blanco|No seleccionada <p> en blanco|No tenemos ninguna recomendación específica para esta configuración. Para obtener más información, vea ["Do not rewrite the following URLs" lists in Caja fuerte Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).|
 |**Notificación**|||||
 |**¿Cómo le gustaría notificar a los usuarios?**|**Usar el texto de notificación predeterminado**|**Usar el texto de notificación predeterminado**|**Usar el texto de notificación predeterminado**|No tenemos ninguna recomendación específica para esta configuración. <p> Puede seleccionar **Usar texto de notificación personalizado** (_CustomNotificationText_) para escribir el texto de notificación personalizado que se va a usar. También puede seleccionar **Usar Traductor de Microsoft** para la localización automática (_UseTranslatedNotificationText_) para traducir el texto de notificación personalizado al idioma del usuario.
 |
