@@ -380,7 +380,7 @@ Para iniciar manualmente la actividad de puntuaci√≥n de los usuarios en una o m√
 7. Para importar una lista de usuarios que desea agregar a las directivas, seleccione **Importar** para importar un archivo .csv (valores separados por comas). El archivo debe tener el siguiente formato y debe enumerar los nombres de los usuarios principales en el archivo:
 
     ```csv
-    user principal name
+    nombre principal de usuario
     user1@domain.com
     user2@domain.com
     ```
