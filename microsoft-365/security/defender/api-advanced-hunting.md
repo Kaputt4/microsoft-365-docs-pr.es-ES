@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 API de búsqueda avanzada de Defender
-description: Obtenga información sobre cómo ejecutar consultas avanzadas de búsqueda con Microsoft 365 API avanzada de búsqueda de Defender
+title: Microsoft 365 Defender API avanzada de búsqueda
+description: Obtenga información sobre cómo ejecutar consultas de búsqueda avanzadas con la API avanzada de Microsoft 365 Defender de búsqueda de Microsoft 365 Defender
 keywords: Búsqueda avanzada, API, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4064a2d4469fb842a6446c1a869de44a48f2b627cdb25ae4f7999a255c3d04f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769592"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792919"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 API de búsqueda avanzada de Defender
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de búsqueda avanzada
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -56,7 +56,7 @@ Las siguientes condiciones se relacionan con todas las consultas.
 
 ## <a name="permissions"></a>Permisos
 
-Uno de los siguientes permisos es necesario para llamar a la API de búsqueda avanzada. Para obtener más información, incluido cómo elegir permisos, consulte [Access the Microsoft 365 Defender Protection API](api-access.md)
+Uno de los siguientes permisos es necesario para llamar a la API de búsqueda avanzada. Para obtener más información, incluido cómo elegir permisos, vea [Access the Microsoft 365 Defender Protection API](api-access.md)
 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 -|-|-
@@ -88,7 +88,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 Parámetro | Tipo | Descripción
 -|-|-
-Consulta | Texto | Consulta que se debe ejecutar. **Nota: obligatorio**
+Query | Texto | Consulta que se debe ejecutar. **Nota: obligatorio**
 
 ## <a name="response"></a>Respuesta
 
@@ -100,11 +100,11 @@ El objeto response contiene tres propiedades de nivel superior:
 2. Esquema: el esquema de la respuesta, una lista de Name-Type pares de cada columna.
 3. Resultados: una lista de eventos de búsqueda avanzados.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
 En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un objeto de respuesta api que contiene `Stats` , `Schema` y `Results` .
 
-### <a name="query"></a>Consulta
+### <a name="query"></a>Query
 
 ```json
 {
@@ -179,7 +179,7 @@ En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un obj
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Acceder a las API Microsoft 365 Defender](api-access.md)
+- [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)
 - [Más información sobre los límites de api y las licencias](api-terms.md)
 - [Comprender códigos de error](api-error-codes.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

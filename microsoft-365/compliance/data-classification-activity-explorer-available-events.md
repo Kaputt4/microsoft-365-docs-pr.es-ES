@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: descripción de las actividades de etiquetado que están disponibles en el explorador de actividades.
-ms.openlocfilehash: d4f6884ad39b16aeb0345f0c976d6ad87f03c05a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6dbfe8341e714c49795d8aaf7991988bec901496bf28b2bbd4d4711bdbd81c23
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532259"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520488"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Actividades de etiquetado que están disponibles en el Explorador de actividades
 
@@ -39,11 +39,11 @@ Este evento se genera cada vez que se etiqueta un documento sin etiquetar o se e
 |Origen  |Notificado en el explorador de actividades | Nota  |
 |---------|---------|---------|
 | Word, Excel, PowerPoint|sí |
-|Outlook| sí |de Win 32 |
+|Outlook| sí | |
 |SharePoint en línea, OneDrive|sí | |
 |Exchange        |sí         | |
 |Cliente unificado de Azure Information Protection (AIP) y escáner unificado AIP |sí |la nueva acción de *etiqueta AIP* se asigna a *la etiqueta aplicada en* el explorador de actividades   |
-|Microsoft information protection (MIP) SDK         |sí|la nueva acción de *etiqueta AIP* se asigna a *la etiqueta aplicada en* el explorador de actividades|
+|PROTECCIÓN DE LA INFORMACIÓN DE MICROSOFT (MIP) SDK         |sí|la nueva acción de *etiqueta AIP* se asigna a *la etiqueta aplicada en* el explorador de actividades|
 |Servicio de administración de derechos (RMS)         |no aplicable         | |
 |Power BI escritorio y web        | no| accesible en los registros Microsoft 365 auditoría         |
 |Microsoft Cloud App Security (MCAS)         |no|         |
@@ -63,7 +63,7 @@ Este evento se genera cada vez que se actualiza una etiqueta de confidencialidad
 |Origen  |Notificado en el explorador de actividades|Nota  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |sí         |
-|Outlook         |sí         |Win 32|
+|Outlook         |sí         |
 |SharePoint En línea, OneDrive         |sí         |
 |Exchange         |sí         |
 |Cliente unificado AIP         |sí         |
@@ -84,7 +84,7 @@ Este evento se genera cada vez que se quita una etiqueta de confidencialidad de 
 |Origen  |Notificado en el explorador de actividades | Nota  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |sí         |
-|Outlook         |sí         |Win 32|
+|Outlook         |sí         ||
 |SharePoint En línea, OneDrive         |sí         |
 |Exchange         |sí         |
 |Cliente unificado AIP         |sí         |la acción quitar *etiqueta de* AIP se asigna a la acción de *etiqueta eliminada* en el explorador de actividades|
@@ -227,7 +227,7 @@ Este evento se genera cada vez que una directiva DLP coincide en un documento o 
 |SharePoint Online|sí          |
 |OneDrive |sí|
 |Teams |sí   |
-|Dispositivos con Windows 10         |sí |
+|Dispositivos Windows 10         |sí |
 |MAC         |no     |
 |local         |no|
 |MCAS     |no        | 

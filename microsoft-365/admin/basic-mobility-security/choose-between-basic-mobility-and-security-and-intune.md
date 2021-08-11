@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas forman parte de los Microsoft 365 de seguridad.
-ms.openlocfilehash: 3404d2aeecd047fecec573bf1d60407ad3659efe
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 4da5175ece5da0e6e2f5aaadb26a177835d90fcf39f727b748b83685c1c355d7
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393300"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834526"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elegir entre Movilidad básica y seguridad o Intune
 
@@ -34,7 +34,7 @@ ms.locfileid: "53393300"
 
 Tanto Movilidad básica como Seguridad e Intune se incluyen en una variedad de planes, que se describen en la tabla siguiente.
 
-| Planear | Movilidad y seguridad básicas | Microsoft Intune |
+| Plan | Movilidad y seguridad básicas | Microsoft Intune |
 |:-----|:-----|:-----|
 |Aplicaciones de Microsoft 365|Sí|No|
 |Microsoft 365 Empresa Básico|Sí|No|
@@ -71,7 +71,6 @@ Microsoft Intune y seguridad básicas integradas le dan la capacidad de administ
 |Cumplimiento de dispositivos|Establece y administra directivas de seguridad, como bloqueo de PIN de nivel de dispositivo y detección de jailbreak. |Limitaciones en dispositivos Android 9 y posteriores. Vea [los detalles](capabilities.md). |Sí|
 |Acceso condicional basado en el cumplimiento de dispositivos |Impedir que los dispositivos que no son compatibles tengan acceso al correo electrónico corporativo y a los datos desde la nube. |No se admite en Windows 10.<br/>Limitado a controlar el acceso a Exchange Online, SharePoint Online y Outlook. |Sí |
 |Configuración de dispositivos  |Configurar la configuración del dispositivo (por ejemplo, deshabilitar la cámara)|Conjunto limitado de opciones.|Sí|
-|Cumplimiento de dispositivos  |Establece y administra directivas de seguridad, como bloqueo de PIN de nivel de dispositivo y detección de jailbreak. |Limitaciones en dispositivos Android 9 y posteriores. Vea [los detalles](capabilities.md). |Sí|
 |Perfiles de correo electrónico  |Aprovisionar un perfil de correo electrónico nativo en el dispositivo. |Sí|Sí|
 |Perfiles WiFi |Aprovisionar un perfil WiFi nativo en el dispositivo. |No|Sí|
 |Perfiles vpn |Aprovisionar un perfil vpn nativo en el dispositivo. |No|Sí|

@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 976a79be98efcbb5d7fd3749ddb0cdb282b1e3e3
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 326910f4b556837b319c53cb1d257af09efbbe7a6ba8b92a4784d38a50b43fbe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792907"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "52274573"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Si su organización usa [Microsoft 365 Defender,](microsoft-365-defender.md)el equipo de operaciones de seguridad recibe una alerta en el centro de seguridad de Microsoft 365 siempre que se detecte una actividad o artefacto malintencionados o sospechosos. Dado el flujo aparentemente interminable de amenazas que pueden llegar, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender incluye capacidades de investigación y respuesta automatizadas (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
+Si su organización usa [Microsoft 365 Defender,](microsoft-365-defender.md)el equipo de operaciones de seguridad recibe una alerta en el centro de seguridad de Microsoft 365 siempre que se detecte una actividad o artefacto malintencionados o sospechosos. Dado el flujo aparentemente interminable de amenazas que pueden llegar, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender capacidades de investigación y respuesta automatizadas (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
 
 En este artículo se proporciona información general sobre AIR e incluye vínculos a los siguientes pasos y recursos adicionales.
 
@@ -44,7 +44,7 @@ En este artículo se proporciona información general sobre AIR e incluye víncu
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>Cómo funciona la investigación automatizada y la recuperación automática
 
-A medida que se desencadenan las alertas de seguridad, el equipo de operaciones de seguridad debe buscar esas alertas y tomar medidas para proteger su organización. El establecimiento de prioridades y la investigación de las alertas pueden llevar mucho tiempo, sobre todo cuando siguen apareciendo nuevas alertas mientras se está realizando una investigación. Los equipos de operaciones de seguridad pueden sentirse abrumados por el gran volumen de amenazas que deben supervisar y ante las que deben protegerse. Las capacidades automatizadas de investigación y respuesta, con recuperación automática, en Microsoft 365 Defender pueden ayudar.
+A medida que se desencadenan las alertas de seguridad, el equipo de operaciones de seguridad debe buscar esas alertas y tomar medidas para proteger su organización. El establecimiento de prioridades y la investigación de las alertas pueden llevar mucho tiempo, sobre todo cuando siguen apareciendo nuevas alertas mientras se está realizando una investigación. Los equipos de operaciones de seguridad pueden sentirse abrumados por el gran volumen de amenazas que deben supervisar y ante las que deben protegerse. Las capacidades automatizadas de investigación y respuesta, con recuperación automática, Microsoft 365 Defender pueden ayudar.
 
 Vea el siguiente vídeo para ver cómo funciona la recuperación automática: <p>
 
@@ -53,7 +53,7 @@ Vea el siguiente vídeo para ver cómo funciona la recuperación automática: <p
 En Microsoft 365 Defender, la investigación automatizada y la respuesta con capacidades de recuperación automática funcionan en todos los dispositivos, el correo & contenido y las identidades.
  
 > [!TIP]
-> En este artículo se describe cómo funciona la investigación automatizada y la respuesta. Para configurar estas capacidades, vea [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
+> En este artículo se describe cómo funciona la investigación automatizada y la respuesta. Para configurar estas funcionalidades, vea [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
 ## <a name="your-own-virtual-analyst"></a>Su propio analista virtual
 
@@ -87,11 +87,11 @@ En función [de cómo se configuren](m365d-configure-auto-investigation-response
 
 Durante la ejecución de una investigación, todas las demás alertas relacionadas que puedan surgir se agregarán a la investigación hasta que se finalice. Si se ve una entidad afectada en otro lugar, la investigación automatizada expande su ámbito para incluir esa entidad y el proceso de investigación se repite. 
 
-En Microsoft 365 Defender, cada investigación automatizada correlaciona las señales entre Microsoft Defender for Identity, Microsoft Defender para Endpoint y Microsoft Defender para Office 365, como se resume en la tabla siguiente: 
+En Microsoft 365 Defender, cada investigación automatizada correlaciona las señales entre Microsoft Defender para identity, Microsoft Defender para endpoint y Microsoft Defender para Office 365, como se resume en la tabla siguiente: 
 
 |Entidades |Servicios de protección contra amenazas  |
 |:---------|:---------|
-|Dispositivos (también denominados extremos o máquinas) |[Defender for Endpoint](../defender-endpoint/automated-investigations.md) |      
+|Dispositivos (también denominados extremos o máquinas) |[Defender para punto de conexión](../defender-endpoint/automated-investigations.md) |      
 |Usuarios locales de Active Directory, comportamiento de entidad y actividades     |[Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
 |Contenido de correo electrónico (mensajes de correo electrónico que pueden contener archivos y direcciones URL)     |[Defender para Office 365](../office-365-security/defender-for-office-365.md) |
 

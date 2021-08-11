@@ -1,6 +1,6 @@
 ---
-title: Transmitir Microsoft 365 Defender eventos a su Almacenamiento cuenta
-description: Obtén información sobre cómo configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a tu Almacenamiento cuenta.
+title: Transmitir Microsoft 365 Defender eventos a su Storage cuenta
+description: Obtenga información sobre cómo configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Storage cuenta.
 keywords: Exportación de datos sin procesar, API de streaming, API, Centros de eventos, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 656387e60bac90c7e9de4852779948dabce0efe3
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 0817778d5b006cb0c08cda4a4b63063f06644ef6ffdb68547848d038197c853d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792763"
 ---
-# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Almacenamiento cuenta
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Storage cuenta
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "53029662"
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-1. Cree una [Almacenamiento en](/azure/storage/common/storage-account-overview) el espacio empresarial.
+1. Cree una [cuenta Storage en](/azure/storage/common/storage-account-overview) el espacio empresarial.
 
 2. Inicie sesión en el inquilino [de Azure,](https://ms.portal.azure.com/)vaya a Suscripciones > Su suscripción > proveedores de recursos > **Registrarse en Microsoft.Ideas**.
 
@@ -49,8 +49,8 @@ ms.locfileid: "53029662"
 
 4. En el **menú desplegable Agregar nueva configuración de la API** de streaming que aparece, configure las siguientes opciones:
    1. **Nombre:** elija un nombre para la nueva configuración.
-   2. Seleccione **Reenviar eventos para Almacenamiento de Azure**.
-   3. En el **Almacenamiento id. de** recurso de cuenta que aparece, escriba el **Almacenamiento de recurso de cuenta**. Para obtener el identificador **de recurso** Almacenamiento cuenta, abra Azure Portal en , haga clic en Almacenamiento cuentas vaya a la pestaña propiedades copie el texto en <https://portal.azure.com> Almacenamiento  \> \> **Id.** de recurso de cuenta .
+   2. Seleccione **Reenviar eventos para Azure Storage**.
+   3. En el **Storage id.** de recurso de cuenta que aparece, escriba el Storage **de recurso de cuenta**. Para obtener el identificador **de recurso** Storage cuenta, abra Azure Portal en , haga clic en Storage cuentas vaya a la pestaña propiedades copie el texto en Storage Id. de recurso <https://portal.azure.com> de  \> \> **cuenta**.
 
       ![Imagen del id. de recurso del centro de eventos1](../defender-endpoint/images/storage-account-resource-id.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "53029662"
 
    Cuando haya terminado, haga clic en **Enviar**.
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a>El esquema de los eventos de la cuenta Almacenamiento cuenta
+## <a name="the-schema-of-the-events-in-the-storage-account"></a>El esquema de los eventos de la cuenta Storage cuenta
 
 - Se creará un contenedor de blobs para cada tipo de evento:
 
@@ -104,4 +104,4 @@ Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo sigu
 - [Información general sobre la búsqueda avanzada](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defender Streaming API](streaming-api.md)
 - [Transmitir Microsoft 365 Defender eventos a su cuenta de Azure Storage](streaming-api-storage.md)
-- [Almacenamiento de Azure Documentación de la cuenta](/azure/storage/common/storage-account-overview)
+- [Azure Storage Documentación de la cuenta](/azure/storage/common/storage-account-overview)

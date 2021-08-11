@@ -1,5 +1,5 @@
 ---
-title: Introducción a la gobernanza de aplicaciones
+title: Regiones admitidas para la gobernanza de aplicaciones
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lista de países en los que está disponible la gobernanza de aplicaciones.
-ms.openlocfilehash: d32ed786306fd498583a854020d819006a0d1f37
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 272e37f9f5824deb65e08de852f30e0e762330bd3f34fe6d926634ea97e303c4
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541336"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520476"
 ---
 # <a name="app-governance-supported-countries"></a>Países compatibles con la gobernanza de aplicaciones
 

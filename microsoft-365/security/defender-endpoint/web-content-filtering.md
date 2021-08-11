@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a24797d39ece34d615dde26811da8b7d7d2b9a6d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 21b2f8b4766cd4596774a7e42a44de561686e7605ff12fe31fc5e571bc29b510
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844702"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -51,10 +51,6 @@ Resumen de las ventajas:
 - El equipo de seguridad puede implementar directivas cómodamente en grupos de usuarios que usan grupos de dispositivos definidos en La configuración del control de acceso basado en roles de [Microsoft Defender](/microsoft-365/security/defender-endpoint/rbac) para endpoint
 - El equipo de seguridad puede tener acceso a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web
 
-## <a name="user-experience"></a>Experiencia del usuario
-
-La protección de red proporciona la experiencia de bloqueo de los exploradores compatibles con terceros, que proporciona una notificación del sistema que notifica al usuario de una conexión bloqueada. Para una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
-
 ## <a name="prerequisites"></a>Requisitos previos
 
 Antes de probar esta característica, asegúrese de cumplir los siguientes requisitos:
@@ -62,8 +58,11 @@ Antes de probar esta característica, asegúrese de cumplir los siguientes requi
 - Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5 complemento o la licencia independiente de Microsoft Defender para endpoint. 
 - Acceso a Microsoft 365 Defender portal ( https://security.microsoft.com) .
 - Dispositivos que Windows 10 actualización de aniversario (versión 1607) o posterior con la actualización más reciente de MoCAMP.
-- Windows Defender SmartScreen y protección de red habilitadas.
+- Windows Defender SmartScreen y Network Protection habilitados.
 
+## <a name="user-experience"></a>Experiencia del usuario
+
+La protección de red proporciona la experiencia de bloqueo para exploradores compatibles con terceros, que proporciona una notificación del sistema que notifica al usuario de una conexión bloqueada. Para una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
 
 ## <a name="data-handling"></a>Control de datos
 
@@ -108,13 +107,19 @@ Es posible invalidar la categoría bloqueada en el filtrado de contenido web par
 
 3. Establezca la acción de directiva en **Permitir**.  
 
-### <a name="reporting-inaccuracies"></a>Imprecisiones de informes
+### <a name="dispute-categories"></a>Categorías de disputas
 
-Si encuentra un dominio que se ha categorizado incorrectamente, puede notificar imprecisiones directamente desde la página De informes de filtrado de contenido web. Esta característica solo está disponible en el nuevo centro de Microsoft 365 seguridad (security.microsoft.com).
+Si encuentra un dominio que se ha categorizado incorrectamente, puede disputar la categoría directamente desde el portal. 
 
-Para informar de una imprecisión, vaya a **Reports**  >  **Web protection Web** Content Filtering  >  **Details**  >  **Domains**. En la pestaña dominios de nuestros informes de filtrado de contenido web, verá puntos suspensivos junto a cada uno de los dominios. Mantenga el puntero sobre estos puntos suspensivos y seleccione **Error de informe**.
+Para disputar la categoría de un dominio, vaya a **Report**  >  **Web protection Web** Content Filtering  >  **Details**  >  **Domains**. En la pestaña dominios de los informes de filtrado de contenido web, verá puntos suspensivos junto a cada uno de los dominios. Mantenga el puntero sobre estos puntos suspensivos y seleccione **Categoría de disputa**.
 
 Se abrirá un panel donde puede seleccionar la prioridad y agregar detalles adicionales, como la categoría sugerida para volver a categorizar. Una vez completado el formulario, seleccione **Enviar**. Nuestro equipo revisará la solicitud en un plazo de un día laborable. Para desbloquear inmediatamente, cree un [indicador de permitir personalizado](indicator-ip-domain.md).
+
+### <a name="url-category-lookup"></a>Búsqueda de categorías de dirección URL
+
+Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal Microsoft 365 Defender web ( https://security.microsoft.com) . En los resultados de búsqueda url, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Los administradores también pueden disputar la categoría del dominio directamente desde esta página, como se muestra en la imagen siguiente. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
+
+![Imagen de resultados de búsqueda de categorías de filtrado de contenido web](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Detalles y tarjetas de filtrado de contenido web
 
@@ -158,7 +163,7 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>Limitaciones y problemas conocidos en esta versión preliminar
 
-- Solo Microsoft Edge se admite si la configuración del sistema operativo del dispositivo es Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**). La protección de red solo se admite en el modo Inspeccionar en dispositivos de servidor, que es responsable de proteger el tráfico en los exploradores de terceros compatibles.
+- Solo Microsoft Edge se admite si la configuración del sistema operativo del dispositivo es Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**). La protección de red solo se admite en el modo de inspección en dispositivos de servidor, que es responsable de proteger el tráfico en exploradores de terceros compatibles.
 
 - Los dispositivos sinsignar tendrán datos incorrectos que se mostrarán en el informe. En el **pivot Detalles del** informe Grupos de dispositivos, es posible que  >   veas una fila con un campo Grupo de dispositivos en blanco. Este grupo contiene los dispositivos sinsignación antes de que se coloquen en el grupo especificado. Es posible que el informe de esta fila no contenga un recuento preciso de dispositivos o recuentos de acceso.
 

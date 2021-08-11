@@ -14,36 +14,38 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: c4cdc83d41a888fbf395d2c13e442bbaaf7da54e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 12c90a2caea7d27713cc9dad0be11894d84b19b3245e07046a8ed7b2451db601
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621684"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520439"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
 Para empezar a usar el complemento de gobernanza de aplicaciones para Microsoft Cloud App Security:
 
-1. Compruebe que su cuenta tenga el [nivel de licencias adecuado](#licensing-for-app-governance). La gobernanza de aplicaciones es una característica complementaria para Microsoft Cloud App Security (MCAS) y, por tanto, MCAS debe estar presente en su cuenta como un producto independiente o como parte de los distintos paquetes de licencia que se enumeran a continuación.
+1. Compruebe que su cuenta tiene el nivel de licencia [adecuado](#licensing-for-app-governance). La gobernanza de aplicaciones es una característica complementaria para Microsoft Cloud App Security (MCAS) y, por tanto, MCAS debe estar presente en su cuenta como un producto independiente o como parte de los distintos paquetes de licencia.
 1. Debe tener uno de los [roles de administrador](#administrator-roles) que se enumeran a continuación para acceder a las páginas de gobernanza de la aplicación en el portal.
-1. El registro de espacios empresariales de su organización debe estar dentro de una de las [áreas admitidas de Norteamérica, Europa o África](app-governance-countries.md).
+1. La dirección de facturación de su organización debe estar dentro de una de las [áreas admitidas de Norteamérica, Europa o África](app-governance-countries.md) para activar la prueba gratuita.
 
-## <a name="add-app-governance-to-your-microsoft-365-account"></a>Incorpore la gobernanza de aplicaciones a su cuenta de Microsoft 365
+## <a name="sign-up-for-free-trial-of-app-governance"></a>Regístrese para obtener una evaluación gratuita de la gobernanza de aplicaciones
 
 Para los clientes nuevos de Microsoft 365:
 
-1. En la parte superior de esta página, haga clic en el botón  **Cuenta gratuita** .
-1. En  **Probar Microsoft 365 para empresas**  haga clic en  **Probar 1 mes gratis**.
+1. En la parte superior de esta página, seleccione el botón  **Cuenta gratuita** .
+1. En  **Probar Microsoft 365 para empresas** seleccione **Probar 1 mes gratis**.
 1. Complete los pasos para el registro.
+1. Continúe con los pasos para los clientes de Microsoft 365 existentes.
 
 Para los clientes existentes de Microsoft 365:
 
-1. En el Centro de administración de Microsoft 365, vaya a  **Facturación** > **Servicios de compra**  y haga clic en  **Complementos**. Use la barra de búsqueda para buscar **Gobernanza de aplicaciones**.
-1. En la tarjeta de gobernanza de aplicaciones, haga clic en  **Detalles**.
-1. Haga clic en  **Activar el inicio de la prueba gratuita**.
+1. Vaya a la página de registro[para obtener la evaluación gratuita](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc). 
+1. Complete los pasos para agregar gobernanza de aplicaciones. El registro es sencillo, tal como se muestra en el siguiente gráfico.
 
-## <a name="add-integration-with-mcas"></a>Incorporación de la integración con MCAS 
+:::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="Pasos sencillos para agregar gobernanza de aplicaciones a su cuenta":::
+
+## <a name="add-integration-with-mcas"></a>Incorporación de la integración con MCAS
 
 Requisitos previos:
 
@@ -53,9 +55,9 @@ Requisitos previos:
 Para habilitar la sincronización de gobernanza de aplicaciones con Cloud App Security siga estos pasos:
 
 1. Vaya al portal de Microsoft Cloud App Security: [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
-1. Haga clic en el icono de engranaje (esquina superior derecha) y seleccione **Configuración**.
+1. Seleccione el icono de engranaje (esquina superior derecha) y seleccione **Configuración**.
 1. En **Protección contra amenazas**, seleccione **Gobernanza de aplicaciones**.
-1. Haga clic en **Habilitar la integración de Gobernanza de aplicaciones** y, a continuación, seleccione **Guardar**.
+1. Seleccione **Habilitar la integración de Gobernanza de aplicaciones** y, a continuación, seleccione **Guardar**.
 
 A continuación, revise las directivas recién habilitadas en MCAS. Las nuevas directivas pueden tardar unos minutos en aparecer una vez habilitada la integración.
 
@@ -64,8 +66,8 @@ A continuación, revise las directivas recién habilitadas en MCAS. Las nuevas d
 - Microsoft 365 gobernanza de aplicaciones de OAuth
 - Revisión del widget de gobernanza de aplicaciones en el panel de MCAS
 - Revisión de las alertas de gobernanza de aplicaciones recién generadas en las alertas de MCAS
-- Revisión de las directivas de MCAS M365 OAuth en la lista de directivas de gobernanza de aplicaciones
-- Revisión de las alertas de OAuth de MCAS M365 recién generadas en las alertas de gobernanza de aplicaciones
+- Revisión de las directivas de MCAS Microsoft 365 OAuth en la lista de directivas de gobernanza de aplicaciones
+- Revisión de las alertas de OAuth de MCAS Microsoft 365 recién generadas en las alertas de gobernanza de aplicaciones
 
 ## <a name="licensing-for-app-governance"></a>Licencias para la gobernanza de aplicaciones
 
@@ -147,4 +149,3 @@ Si no ha participado en la versión preliminar privada y desea cancelar la versi
 El equipo de gobernanza de aplicaciones ha identificado los siguientes problemas conocidos de la versión preliminar: 
 
 - Sincronización bidireccional entre Microsoft Defender y las alertas de gobernanza de aplicaciones. Ahora las alertas resueltas en Defender también tendrán que resolverse manualmente en la gobernanza de aplicaciones.
-- La información de las cuentas prioritarias en las pestañas Usuarios de la aplicación y Uso no funcionará según lo esperado para determinados usuarios.

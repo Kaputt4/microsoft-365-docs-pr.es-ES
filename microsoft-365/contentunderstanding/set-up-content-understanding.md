@@ -12,13 +12,13 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
-description: Establecer la comprensión del contenido en el Project Cortex.
-ms.openlocfilehash: 7497d21cc85449ee2141ac1362f82d092f150b4b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+description: Configurar SharePoint Syntex
+ms.openlocfilehash: 7d97685db30d5eac1c0316d5ce36bf627b02b8a1cc771a11aca7ece81230227c
+ms.sourcegitcommit: 584778d28c280b8747c11d14aeb3eac58909e580
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544714"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57791193"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -53,17 +53,7 @@ Para usar SharePoint Syntex, su organización debe tener una suscripción a Shar
 - SharePoint Syntex: tipo SPO
 - Servicio de datos comunes para SharePoint Syntex
 
-Si cancela su suscripción a SharePoint Syntex (o la versión de prueba expira), los usuarios ya no podrán crear ni ejecutar modelos de procesamiento de formularios o comprensión de documentos y la plantilla del centro de contenido ya no estará disponible. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminará ningún contenido ni se modificarán los permisos del sitio.
-
-### <a name="ai-builder-credits"></a>Créditos de Generador de IA
-
-Si tiene 300 o más licencias de SharePoint Syntex en su organización, se le asignará un millón de créditos del Generador de IA. Si tiene menos de 300 licencias, debe comprar créditos del Generador de IA para poder utilizar el procesamiento de formularios.
-
-Puede estimar la capacidad del Generador de IA que lo hace adecuado para usted con la calculadora del [Generador de IA](https://powerapps.microsoft.com/ai-builder-calculator).
-
-Si planea utilizar un entorno de Power Platform personalizado, debe [asignar créditos a ese entorno](/power-platform/admin/capacity-add-on).
-
-Vaya al [Centro de administración de la Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) para comprobar sus créditos y el uso.
+Para usar el procesamiento de formularios, también necesita créditos de AI Builder. Si tiene 300 o más usuarios con licencia, se proporciona una asignación de créditos de AI Builder cada mes.
 
 ## <a name="to-set-up-sharepoint-syntex"></a>Para configurar SharePoint Syntex
 

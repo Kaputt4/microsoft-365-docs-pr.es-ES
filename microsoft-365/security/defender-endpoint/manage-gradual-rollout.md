@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fac6205e3045828cf2bbcc27a9a8020c3d63186c
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 05f6879c6fcb2e2c82c7d71b20a2bdb27c4b37e25f41d48f7acf22be22306ff1
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105620"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803193"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Administrar el proceso de implementación gradual para actualizaciones de Microsoft Defender
 
@@ -42,13 +42,13 @@ Es importante asegurarse de que los componentes del cliente estén actualizados 
 Las funcionalidades se proporcionan a través de varios componentes: 
 
 - [Respuesta de detección & extremo](overview-endpoint-detection-response.md) 
-- [Protección de última generación](microsoft-defender-antivirus-in-windows-10.md#microsoft-defender-antivirus-your-next-generation-protection) con [protección entregada en la nube](cloud-protection-microsoft-defender-antivirus.md) 
+- [Protección de última generación](microsoft-defender-antivirus-windows.md) con [protección entregada en la nube](cloud-protection-microsoft-defender-antivirus.md) 
 - [Reducción de superficie de ataque](overview-attack-surface-reduction.md)
 
 Las actualizaciones se lanzan mensualmente mediante un proceso de lanzamiento gradual. Este proceso ayuda a habilitar la detección temprana de errores para detectar el impacto a medida que se produce y solucionarlo rápidamente antes de una implementación más grande. 
 
 > [!NOTE]
-> Para obtener más información sobre cómo controlar las actualizaciones de definiciones diarias, vea Programar Antivirus de Microsoft Defender de definición: Windows [seguridad | Microsoft Docs](manage-protection-update-schedule-microsoft-defender-antivirus.md). Las actualizaciones de definiciones garantizan que la protección de última generación pueda defenderse de las nuevas amenazas, incluso si la protección entregada en la nube no está disponible para el punto de conexión.
+> Para obtener más información sobre cómo controlar las actualizaciones diarias de inteligencia de seguridad, [vea Schedule Antivirus de Microsoft Defender protection updates](manage-protection-update-schedule-microsoft-defender-antivirus.md). Las actualizaciones garantizan que la protección de última generación pueda defenderse de las nuevas amenazas, incluso si la protección entregada en la nube no está disponible para el punto de conexión.
 
 ## <a name="microsoft-gradual-rollout-model"></a>Modelo de lanzamiento gradual de Microsoft
 
@@ -79,7 +79,7 @@ Para obtener más información sobre cómo configurar actualizaciones, vea [Crea
 
 Los siguientes canales de actualización están disponibles:
 
-| Nombre del canal  | Description  | Aplicación  |
+| Nombre del canal  | Descripción  | Aplicación  |
 |-|-|-|
 | Canal beta: versión preliminar  | Probar actualizaciones antes que otras  | Los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones mensuales. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba.  |
 | Canal actual (vista previa)  | Obtener actualizaciones del canal actual **antes** durante la versión gradual  | Los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual. Sugerido para entornos de preproducción/validación.  |
@@ -87,11 +87,11 @@ Los siguientes canales de actualización están disponibles:
 | Canal actual (ancho) | Obtener actualizaciones al final de la versión gradual  | Solo se ofrecerán actualizaciones a los dispositivos una vez completado el ciclo de lanzamiento gradual. Se recomienda aplicar a un amplio conjunto de dispositivos de la población de producción (~10-100%).  |
 | (valor predeterminado)  |   | Si deshabilitas o no configuras esta directiva, el dispositivo permanecerá en Canal actual (predeterminado): mantenerse actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos.  |
 
-### <a name="update-channels-for-daily-definition-updates"></a>Actualizar canales para actualizaciones de definiciones diarias
+### <a name="update-channels-for-daily-updates"></a>Actualizar canales para actualizaciones diarias
 
-También puede asignar una máquina a un canal para definir la cadencia en la que recibe actualizaciones de definiciones diarias. Tenga en cuenta que, a diferencia del proceso mensual, no hay ningún canal Beta y este ciclo de lanzamiento gradual se produce varias veces al día.
+También puedes asignar una máquina a un canal para definir la cadencia en la que recibe actualizaciones diarias. Tenga en cuenta que, a diferencia del proceso mensual, no hay ningún canal Beta y este ciclo de lanzamiento gradual se produce varias veces al día.
   
-| Nombre del canal  | Description  | Aplicación  |
+| Nombre del canal  | Descripción  | Aplicación  |
 |-|-|-|
 | Canal actual (por fases)  | Obtener actualizaciones del canal actual más adelante durante la versión gradual  | Los dispositivos se ofrecerán actualizaciones más adelante durante el ciclo de lanzamiento gradual. Se sugiere aplicar a una parte pequeña y representativa de la población de dispositivos (~10%).  |
 | Canal actual (ancho) | Obtener actualizaciones al final de la versión gradual  | Los dispositivos se ofrecerán actualizaciones después del ciclo de lanzamiento gradual. Ideal para máquinas de centros de datos que solo reciben actualizaciones limitadas. Nota: esta configuración se aplica a todas las actualizaciones de Defender.  |

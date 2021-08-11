@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que los servicios como correo electrónico y Skype Empresarial Online usen su propio nombre de dominio.
-ms.openlocfilehash: c2de2d8b75aaf50bd1d19d3fd3b507fd476d4847
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: a0a92b7401bd78d80ebcf7c98e4e2e4417a15333769685a2b68bbfe47727b0c4
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393936"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520356"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores de nombres para configurar Microsoft 365 con cualquier registrador de dominio
 
@@ -154,7 +154,7 @@ Por ejemplo, aquí se indican algunos pasos adicionales que podrían ser necesar
 
 - Mueva todas las direcciones de correo electrónico que usan el dominio Microsoft 365 antes de cambiar los registros NS.
 
-- ¿Quiere agregar un dominio que se utiliza actualmente con una dirección de página web, como www.fourthcoffee.com? Puede seguir los pasos siguientes mientras agrega el dominio para mantener su sitio web hospedado donde el sitio está hospedado ahora para que los usuarios puedan llegar al sitio web después de cambiar los registros NS del dominio para que apunten a Microsoft 365.
+- ¿Desea agregar un dominio que se usa actualmente con una dirección de sitio web, como `https://www.fourthcoffee.com` ? Puede seguir los pasos siguientes mientras agrega el dominio para mantener su sitio web hospedado donde el sitio está hospedado ahora para que los usuarios puedan llegar al sitio web después de cambiar los registros NS del dominio para que apunten a Microsoft 365.
 
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
@@ -184,7 +184,7 @@ Además, puede crear un registro CNAME para ayudar a los clientes a encontrar su
 3. En el **cuadro Nombre de host o Alias,** escriba **www**.
 4. En el **cuadro Dirección de puntos** a, escriba el nombre de dominio completo (FQDN) del sitio web. Por ejemplo, **contoso.5om**.
 5. Si desea cambiar la configuración de TTL para el registro, seleccione un nuevo período de tiempo en la lista desplegable **TTL.** De lo contrario, continúe con el paso 6.
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 Después de actualizar los registros del servidor de nombres para que apunten a Microsoft, se completa la configuración del dominio. El correo electrónico se enruta a Microsoft y el tráfico a la dirección de su sitio web continúa en el host del sitio web actual.'
 
