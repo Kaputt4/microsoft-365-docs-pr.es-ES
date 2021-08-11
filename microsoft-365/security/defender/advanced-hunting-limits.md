@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5108e1b50b7544fcb11cef8bf573fd42cbfad2411f83e8628fecd59a895c1c55
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833236"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Cuotas de búsqueda avanzada y parámetros de uso
 
@@ -39,9 +39,9 @@ Para mantener el servicio con rendimiento y capacidad de respuesta, la búsqueda
 
 Consulte la tabla siguiente para comprender las cuotas existentes y los parámetros de uso.
 
-| Cuota o parámetro | Size | Ciclo de actualización | Descripción |
+| Cuota o parámetro | Size | Ciclo de actualización | Description |
 |--|--|--|--|
-| Rango de datos | 30 días | Cada consulta | Cada consulta puede buscar datos desde los últimos 30 días. |
+| Rango de datos | 30 días | Cada consulta | Cada consulta puede buscar datos desde los últimos 30 días. |
 | Conjunto de resultados | 10.000 filas | Cada consulta | Cada consulta puede devolver hasta 10 000 registros. |
 | Timeout | 10 minutos | Cada consulta | Cada consulta puede ejecutarse durante un máximo de 10 minutos. Si no se completa en 10 minutos, el servicio muestra un error.
 | Recursos de CPU | En función del tamaño del espacio empresarial | Cada 15 minutos | El [portal muestra un error cada](advanced-hunting-errors.md) vez que se ejecuta una consulta y el inquilino ha consumido más del 10 % de los recursos asignados. Las consultas se bloquean si el inquilino ha alcanzado el 100 % hasta después del siguiente ciclo de 15 minutos. |

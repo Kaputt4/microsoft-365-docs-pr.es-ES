@@ -1,5 +1,5 @@
 ---
-title: Evalúe Microsoft Defender para información general sobre el punto de conexión, incluida la revisión de la arquitectura, la habilitación o activación del entorno de evaluación y la creación de un piloto.
+title: Evaluar Información general de Microsoft Defender para puntos de conexión, incluida la revisión de la arquitectura
 description: Pasos para la configuración de un entorno Microsoft 365 Defender de prueba o entorno piloto. Pruebe y experimente cómo la solución de seguridad está diseñada para proteger dispositivos, identidades, datos y aplicaciones de su organización.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f4f66c6a7bd5f375ffedc822a3ad5bb5a4f5a431
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: f3ec24e4d73ac9297e4ca0bec5659b987f9e33d7bae182a1f7f1853ee72d6876
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833221"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Evaluación de Información general sobre puntos de conexión de Microsoft Defender
 

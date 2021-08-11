@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe Aplicaciones Microsoft 365 de uso mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 3147aebc10ff774b8af3ff10f9a76d52a2db87b2
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 58fe420f13bcd41bceaea9605d9ced2c539c8857e56335ebfff8fcef672fd222
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797676"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365 Informes en el Centro de administración: Aplicaciones Microsoft 365 uso
 

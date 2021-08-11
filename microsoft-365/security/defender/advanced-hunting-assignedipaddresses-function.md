@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3ebd301d6c79bf5286d9293e04e4073b99d1e35
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7160a05111ffa9085a2d7b146e6258ba6c4fd2388a1c8898bbc480c16195c7ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833320"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -39,7 +39,7 @@ Usa la función de las consultas de búsqueda avanzadas para obtener rápidament
 
 Esta función devuelve una tabla con las siguientes columnas:
 
-| Column | Tipo de datos | Descripción |
+| Columna | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | Última hora en la que se observó el dispositivo con la dirección IP |
 | `IPAddress` | cadena | Dirección IP usada por el dispositivo |

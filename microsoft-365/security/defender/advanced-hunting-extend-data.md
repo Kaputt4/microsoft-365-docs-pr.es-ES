@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f4b1399b77583e95b109575a9577d8b1af89e6ad
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: f0b5218ccfb17c4c3681628200bb42afbfd312cc9ec383f524e6721340da461a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833296"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Ampliar la cobertura de búsqueda avanzada con la configuración correcta
 
@@ -41,7 +41,7 @@ ms.locfileid: "51952673"
 ## <a name="advanced-security-auditing-on-windows-devices"></a>Auditoría de seguridad avanzada en Windows dispositivos
 Activa esta configuración de auditoría avanzada para asegurarte de obtener datos sobre actividades en tus dispositivos, incluida la administración de cuentas locales, la administración de grupos de seguridad local y la creación de servicios.
 
-| Datos | Descripción | Tabla de esquema | Cómo establecer la configuración |
+| Datos | Description | Tabla de esquema | Cómo establecer la configuración |
 | --- | --- | --- | --- |
 | Administración de cuentas | Eventos capturados como varios valores que indican la creación, eliminación y `ActionType` otras actividades relacionadas con la cuenta local | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Implementar una directiva de auditoría de seguridad avanzada: [Auditar administración de cuentas de usuario](/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [Obtenga información sobre las directivas de auditoría de seguridad avanzada](/windows/security/threat-protection/auditing/advanced-security-auditing) |
 | Administración de grupos de seguridad | Eventos capturados como varios valores que indican la creación de grupos `ActionType` de seguridad locales y otras actividades de administración de grupos locales | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Implementar una directiva de auditoría de seguridad avanzada: [Auditar la administración de grupos de seguridad](/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [Obtenga información sobre las directivas de auditoría de seguridad avanzada](/windows/security/threat-protection/auditing/advanced-security-auditing) |
@@ -50,12 +50,12 @@ Activa esta configuración de auditoría avanzada para asegurarte de obtener dat
 ## <a name="microsoft-defender-for-identity-sensor-on-the-domain-controller"></a>Sensor de Microsoft Defender para identidad en el controlador de dominio
 Si ejecuta Active Directory localmente, debe instalar el sensor de Microsoft Defender para identidad en el controlador de dominio para obtener datos de Microsoft Defender para Identity. Cuando se instalan y configuran correctamente, estos datos también se alimentan de búsquedas avanzadas a través de Microsoft Defender for Identity y proporcionan una imagen más holística de la información de identidad y los eventos de la red. Estos datos también mejoran la capacidad de Microsoft Defender for Identity para generar alertas relevantes que también están cubiertas por la búsqueda avanzada. 
 
-| Datos | Descripción | Tabla de esquema | Cómo establecer la configuración |
+| Datos | Description | Tabla de esquema | Cómo establecer la configuración |
 | --- | --- | --- | --- |
 | Controlador de dominio | Datos de Active Directory local enviados a Microsoft Defender para identidad, enriqueciendo información relacionada con la identidad, como detalles de cuenta, actividad de inicio de sesión y consultas de Active Directory | Varias tablas, incluidas [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)e [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Instalar el sensor de Microsoft Defender para identidad](/azure-advanced-threat-protection/install-atp-step4)<br>- [Activar eventos de Windows relevantes](/azure-advanced-threat-protection/configure-event-collection) |
 
 >[!NOTE]
->Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+>Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

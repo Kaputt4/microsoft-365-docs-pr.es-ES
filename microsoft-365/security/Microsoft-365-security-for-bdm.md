@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos Microsoft 365 y las acciones recomendadas para mitigar estos riesgos.
-ms.openlocfilehash: 056e1e64a992f12f3bf9a4b76c29f723ac1b5f3a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dabd4e094962c15ade360db317fa197698733e2da4cedc752d602337df090a37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840004"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Seguridad para los responsables de la toma de decisiones empresariales (BDMs)
 

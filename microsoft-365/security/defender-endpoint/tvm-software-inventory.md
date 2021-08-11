@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 333cacf1bce50463fdfbac4023ae724a7564809c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4c35ce53c28beb83232edb5c1cb805b6f6e51ce1c92f10e21ecb0d6b655e76c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793015"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventario de software: Administración de amenazas y vulnerabilidades
 

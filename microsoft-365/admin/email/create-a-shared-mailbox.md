@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 6fff7b1eaa73944bc4dd744046ad97ee9d2379b1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: MT
+ms.openlocfilehash: 05bb73269d78c08de3345ab001d12892960e30bf35c7ef43772212fc200ff435
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826323"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
