@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: El administrador puede aprender a usar la auditoría de uso compartido en el registro de auditoría Microsoft 365 para identificar los recursos compartidos con usuarios fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: e77d02351763caee74137108a8d4f7b6a6f7bd3dd59abc8ce312a9290e6a7789
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801496"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Usar el uso compartido de auditoría en el registro de auditoría
 
@@ -100,9 +100,9 @@ El primer paso es buscar eventos de uso compartido en el registro de auditoría.
 
 2. Inicie sesión con su cuenta profesional o educativa.
 
-3. En el panel izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en **Auditar**.
+3. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Auditoría**.
 
-    Aparece la página **Auditoría**.
+    Aparecerá la página **Auditoría**.
 
 4. En **Actividades,** haga clic **en Compartir y acceder a** las actividades de solicitud para buscar eventos relacionados con el uso compartido. 
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Obtenga información sobre cómo los administradores pueden eliminar elementos de la carpeta Elementos recuperables de un usuario para un buzón Exchange Online, incluso si ese buzón está en retención legal.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 776113bcd6141c4f01c2da61f0bd71f99cffd3e2
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 03745d13a7f2a76302f2ef5687f98eacb9da0628b9518c81944b1451dc6da898
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842332"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
 
@@ -179,7 +179,7 @@ El último paso antes de poder eliminar elementos de la carpeta Elementos recupe
 > [!CAUTION]
 > Como se ha indicado anteriormente, consulte con los departamentos legales o de administración de registros antes de quitar una retención de un buzón. 
   
-### <a name="litigation-hold"></a>Retención por juicio
+### <a name="litigation-hold"></a>Retención por litigio
   
 Ejecute el siguiente comando en Exchange Online PowerShell para quitar una retención por juicio del buzón.
 
@@ -262,7 +262,7 @@ Si el valor de *la propiedad DelayHoldApplied* o *DelayReleaseHoldApplied* está
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -337,7 +337,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Paso 6: Revertir el buzón a su estado anterior
 
-El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Esto incluye:
+El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Esto incluye lo siguiente:
   
 - Cambiar el período de retención de elementos eliminados a su valor anterior. Como alternativa, puede dejar este conjunto en 30 días, el valor máximo en Exchange Online.
 
@@ -374,7 +374,7 @@ Realice los siguientes pasos (en la secuencia especificada) en Exchange Online P
 
 4. Vuelva a aplicar las retenciones que eliminó en el paso 3. Según el tipo de retención, use uno de los siguientes procedimientos.
 
-    **Retención por juicio**
+    **Retención por litigio**
 
     Ejecute el siguiente comando para volver a habilitar una retención por juicio para el buzón.
 
@@ -422,7 +422,7 @@ Como se explicó anteriormente, debe quitar todas las retenciones y directivas d
   
 | Tipo de retención | Valor de ejemplo | Cómo identificar la retención |
 |:-----|:-----|:-----|
-|Retención por juicio  <br/> | `True` <br/> |La  *propiedad LitigationHoldEnabled*  se establece en  `True` .  <br/> |
+|Retención por litigio  <br/> | `True` <br/> |La  *propiedad LitigationHoldEnabled*  se establece en  `True` .  <br/> |
 |Retención en contexto  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |La  *propiedad InPlaceHolds*  contiene el GUID de la In-Place que se coloca en el buzón. Puede saber que se trata de una retención In-Place porque el GUID no comienza con un prefijo.  <br/> Puede usar el comando en Exchange Online PowerShell para obtener información sobre la retención In-Place `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` en el buzón.  <br/> |
 | Directivas de retención en el Centro de seguridad & cumplimiento aplicado a buzones específicos  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> o  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Al ejecutar el cmdlet **Get-Mailbox,** la propiedad  *InPlaceHolds*  también contiene GUID de directivas de retención aplicadas al buzón. Puede identificar directivas de retención porque el GUID comienza por el  `mbx` prefijo. Si el GUID de la directiva de retención comienza por el prefijo, eso indica que la directiva de retención se aplica a `skp` Skype Empresarial conversaciones.  <br/> Para identificar la directiva de retención que se aplica al buzón de correo, ejecute el siguiente comando en PowerShell del Centro de seguridad & cumplimiento: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Asegúrese de quitar el  `mbx` prefijo o al ejecutar este  `skp` comando.  <br/> |
 |Directivas de retención de toda la organización en el Centro de & seguridad  <br/> |Sin valor  <br/> o  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696` (indica que el buzón está excluido de una directiva de toda la organización)  <br/> |Incluso si la  *propiedad InPlaceHolds*  está vacía al ejecutar el cmdlet **Get-Mailbox,** es posible que aún haya una o más directivas de retención en toda la organización aplicadas al buzón.  <br/> Para comprobar esto, puede ejecutar el comando en Exchange Online PowerShell para obtener una lista de los GUID para directivas de retención de `Get-OrganizationConfig | FL InPlaceHolds` toda la organización. El GUID de las directivas de retención de toda la organización aplicadas Exchange buzones comienza por el `mbx` prefijo; por ejemplo, `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> Para identificar la directiva de retención de toda la organización que se aplica al buzón de correo, ejecute el siguiente comando en PowerShell del Centro de seguridad & cumplimiento: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Si se excluye un buzón de correo de una directiva de retención de toda la organización, el GUID de la directiva de retención se muestra en la propiedad  *InPlaceHolds*  del buzón del usuario al ejecutar el cmdlet **Get-Mailbox;** se identifica por el  `-mbx` prefijo; por ejemplo,  `-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |

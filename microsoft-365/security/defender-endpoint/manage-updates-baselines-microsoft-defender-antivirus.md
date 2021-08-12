@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 07/12/2021
-ms.openlocfilehash: 1b773549909f376a67e0dc407d35ed4a6152ada8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.date: 08/04/2021
+ms.openlocfilehash: d90ae4b8281015c675535f483b23e5c027e6918abc57627e8da3440db9b03064
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622525"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800095"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -82,6 +82,23 @@ Todas nuestras actualizaciones contienen
 - mejoras de integración (cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
+<summary> Julio-2021 (Plataforma: 4.18.2107.4 | Motor: 1.1.18400.x)</summary>
+
+&ensp;Versión de actualización de inteligencia de seguridad: **x.xxx.xx.x**  
+&ensp;Publicado: **fecha, 2021**  
+&ensp;Plataforma: **4.18.2107.4**  
+&ensp;Motor: **1.1.18400.x**  
+&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**
+    
+### <a name="whats-new"></a>Novedades
+- Compatibilidad con el control de dispositivos agregado para Windows dispositivos portátiles
+- La protección de aplicaciones potencialmente no deseadas (PUA) está activada de forma predeterminada para los consumidores (consulta Las aplicaciones potencialmente no deseadas [se bloquearán de forma predeterminada)](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
+- Los exámenes programados para sistemas administrados de objetos de directiva de grupo se cumplirán con el tiempo de examen configurado por el usuario 
+
+### <a name="known-issues"></a>Problemas conocidos
+Sin problemas conocidos  
+<br/>
+</details><details>
 <summary> Junio-2021 (Plataforma: 4.18.2106.5 | Motor: 1.1.18300.4)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.343.17.0**  
@@ -115,13 +132,18 @@ Sin problemas conocidos
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
+
+Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización. 
+<details>
 <summary> Abril-2021 (Plataforma: 4.18.2104.14 | Motor: 1.1.18100.5)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.337.2.0**  
 &ensp;Publicado: 26 de abril de **2021**  (Motor: 1.1.18100.6 publicado el 5 de mayo de 2021) &ensp; Plataforma: **4.18.2104.14**  
 &ensp;Motor: **1.1.18100.5**  
-&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**
     
 ### <a name="whats-new"></a>Novedades
 - Lógica de supervisión de comportamiento adicional
@@ -132,12 +154,7 @@ Sin problemas conocidos
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
-
-Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización. 
-<details>
+</details><details>
 <summary> Marzo-2021 (Plataforma: 4.18.2103.7 | Motor: 1.1.18000.5)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.335.36.0**  

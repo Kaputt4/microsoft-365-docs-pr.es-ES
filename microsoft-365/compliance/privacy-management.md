@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La administración de privacidad de Microsoft ofrece soluciones para evaluar los datos personales que la organización almacena en Microsoft 365 y le ayuda a identificar y corregir los riesgos de privacidad.
-ms.openlocfilehash: df3fa07271321d6bc1fedb4e0d06b40b3483b238
-ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
+ms.openlocfilehash: f4beecb0c9249c9eba530526e835bd2958be8cfab4c409365dc536f64b1b2caf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53455390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835744"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Administración de privacidad de Microsoft (versión preliminar)
 
@@ -70,8 +70,6 @@ De acuerdo con determinadas normativas de privacidad, por ejemplo, el Reglamento
 
 La administración de privacidad en Microsoft 365 puede ayudarle a administrar estas consultas a través de la solución de solicitud de derechos de sujeto. Proporciona funciones de automatización y flujo de trabajo para ayudarle a buscar datos de asunto que haya almacenado en Microsoft 365, revisar los resultados, seleccionar los archivos adecuados y producir informes. En el camino, puede colaborar de forma segura con otros expertos de la organización para completar la solicitud.
 
-Tenga en cuenta que esta solución de solicitud de derechos de sujeto proporciona capacidades más allá de la solución de solicitudes de interesados (DSR) original en el centro de cumplimiento y no hay conexión ni uso compartido de flujos de trabajo entre los dos.
-
 Para obtener más información, vea [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
 ## <a name="how-we-evaluate-your-data"></a>Cómo evaluamos los datos
@@ -88,7 +86,7 @@ Para obtener más información sobre cómo Microsoft 365 información confidenci
 
 ### <a name="where-privacy-management-identifies-personal-data"></a>Donde la administración de privacidad identifica datos personales
 
-La solución de administración de privacidad para Microsoft 365 evalúa los datos y archivos almacenados por su organización en el servicio en la nube de Microsoft 365 para ayudarle a identificar y administrar los riesgos de privacidad en ese espacio. Esto incluye:
+La solución de administración de privacidad para Microsoft 365 evalúa los datos y archivos almacenados por su organización en el servicio en la nube de Microsoft 365 para ayudarle a identificar y administrar los riesgos de privacidad en ese espacio. Esto incluye lo siguiente:
 
 - Microsoft Exchange
 - Microsoft SharePoint

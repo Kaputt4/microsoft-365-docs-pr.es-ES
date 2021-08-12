@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Obtenga información sobre cómo obtener acceso a Azure Active Directory, que se incluye en la suscripción de pago de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bc1c57c0c40df03d27471aafd222908ba9d5887
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6921e0debd1d60fa3b8dafe71a6be161507edbaa9a235d6ae41fcf1eefd1178c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801475"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Usar su suscripción gratuita de Azure Active Directory
 
-Si su organización tiene una suscripción de pago a Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite u otros servicios Microsoft, ya tiene una suscripción gratuita a Microsoft Azure Active Directory. Los administradores pueden usar Azure AD para crear y administrar cuentas de usuario y grupo. Para usar Azure AD, vaya a Azure Portal e inicie sesión con su cuenta.
+Si su organización tiene una suscripción de pago a Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite u otros servicios Microsoft, ya tiene una suscripción gratuita a Microsoft Azure Active Directory. Los administradores pueden usar Azure AD para crear y administrar cuentas de usuario y grupo. Para usar Azure AD, vaya a Azure Portal e inicie sesión con su cuenta.
 
 ## <a name="open-a-private-browsing-session"></a>Abrir una sesión de exploración privada
 
@@ -50,6 +50,6 @@ Use una sesión de navegación privada (no una sesión normal) para obtener acce
 
 - Una suscripción gratuita de Azure Active Directory no incluye el informe de actividad de inicio de sesión. Para grabar la actividad de inicio de sesión (que puede resultar útil en caso de una vulneración de datos), necesita una suscripción de Azure Active Directory Premium. Para obtener más información, consulte [¿Durante cuánto tiempo Azure AD almacena los datos?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
-- También puede tener acceso al centro de administración de **Azure Active Directory** desde el centro de administración de Microsoft 365. En el panel de navegación de la izquierda del centro de administración de Microsoft 365, haga clic en **Centros de administración** \> **Azure Active Directory**.
+- También puede obtener acceso al Centro de administración de **Azure Active Directory** desde el Centro de administración de Microsoft 365. En el panel de navegación izquierdo del Centro de administración de Microsoft 365, haga clic en **Centros de administración** \> **Azure Active Directory**.
 
 - Para obtener información sobre cómo administrar usuarios y grupos, así como realizar otras tareas de administración de directorio, vea [Administrar el directorio de Azure AD](/azure/active-directory/active-directory-administer).

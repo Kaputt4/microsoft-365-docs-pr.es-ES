@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprenda por qué los resultados de búsqueda estimados y reales pueden variar en las búsquedas que se ejecutan con herramientas de exhibición de documentos electrónicos en Office 365.
-ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 70a2f22250010204298bb4e9ea5e4f3833013d04027bbdb4bcb0d25653ca47d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808108"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos estimados y reales
 
@@ -33,7 +33,7 @@ Este tema se aplica a las búsquedas que puede ejecutar con una de las siguiente
 - Búsqueda de contenido
 - Core eDiscovery
 
-Al ejecutar una búsqueda de exhibición de documentos electrónicos, la herramienta que está usando devolverá una estimación del número de elementos (y su tamaño total) que coincidan con los criterios de búsqueda. Por ejemplo, al ejecutar una búsqueda en el centro de cumplimiento de Microsoft 365, los resultados de búsqueda estimados se muestran en la página desplegable de la búsqueda seleccionada.
+Al ejecutar una búsqueda de exhibición de documentos electrónicos, la herramienta que está usando devolverá una estimación del número de elementos (y su tamaño total) que coincidan con los criterios de búsqueda. Por ejemplo, al ejecutar una búsqueda en el Centro de cumplimiento de Microsoft 365, los resultados de búsqueda estimados se muestran en la página desplegable de la búsqueda seleccionada.
   
 ![Estimación de los resultados que se muestran en la página desplegable de búsqueda](../media/EstimatedSearchResults1.png)
   

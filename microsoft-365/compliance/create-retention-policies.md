@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 512bf7ed8eeaf8bea58d0a1a1e54d0ad2315bddc
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 45858943dab6f6cb2964cc2751c245f182f3ea9e61ab5a8565a238e3aad715e1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542050"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808181"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 

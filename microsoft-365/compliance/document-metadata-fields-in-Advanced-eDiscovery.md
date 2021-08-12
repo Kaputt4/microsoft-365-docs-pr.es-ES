@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 4c9fe8713d1953719f614dfa4b8b85ec64a63eab
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4e5a4e60a5788c93f9ba0407616c4417c47ed46bfe20880d067ffa04a5a42dd1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842320"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
@@ -42,7 +42,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 
 ****
 
-|Nombre del campo y Nombre del campo para mostrar|Nombre del campo que se puede buscar|Nombre del campo exportado|Descripción|
+|Nombre del campo y Nombre del campo para mostrar|Nombre del campo que se puede buscar|Nombre del campo exportado|Description|
 |---|---|---|---|
 |Id. de contenido de datos adjuntos|AttachmentContentId||Identificador de contenido de datos adjuntos del elemento.|
 |Puntuación de privilegios de cliente de abogado|AttorneyClientPrivilegeScore||Puntuación de contenido del modelo de privilegios abogado-cliente.|

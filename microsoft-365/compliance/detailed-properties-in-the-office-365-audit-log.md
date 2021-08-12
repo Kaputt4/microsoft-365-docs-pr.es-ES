@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: En este artículo se proporcionan descripciones de propiedades adicionales incluidas al exportar resultados de un registro Office 365 registro de auditoría.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69a34f4de948bc9533ef2872d94171134e50ffea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a3641b40b76c2839f5cd29c22c28dfb5652ce42515d4e0ffe7e3edce0dcd3a7f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808145"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Propiedades detalladas del registro de auditoría
 
@@ -62,13 +62,13 @@ En la tabla siguiente se describen las propiedades que se incluyen (según el se
 |LogonType|El tipo de acceso al buzón. Los siguientes valores indican el tipo de usuario que ha accedido al buzón.  <br/><br/> **0:** indica el propietario de un buzón.<br/> **1:** indica un administrador.<br/> **2:** indica un delegado. <br/>**3:** indica el servicio de transporte en el centro de datos de Microsoft.<br/> **4:** indica una cuenta de servicio en el centro de datos de Microsoft. <br/>**6:** indica un administrador delegado.|Exchange (actividad de buzón de correo)|
 |MailboxGuid|El GUID de Exchange del buzón al que se obtuvo acceso.|Exchange (actividad de buzón de correo)|
 |MailboxOwnerUPN|La dirección de correo electrónico del propietario del buzón al que se obtuvo acceso.|Exchange (actividad de buzón de correo)|
-|Members|Enumera los usuarios que se han agregado o quitado de un equipo. Los siguientes valores indican el tipo de rol asignado al usuario.  <br/><br/> **1:** indica el rol Propietario.<br/> **2** - Indica el rol del miembro.<br/> **3**- Indica el rol del invitado. <br/><br/>La propiedad Miembros también incluye el nombre de su organización y la dirección de correo electrónico del miembro.|Microsoft Teams|
+|Miembros|Enumera los usuarios que se han agregado o quitado de un equipo. Los siguientes valores indican el tipo de rol asignado al usuario.  <br/><br/> **1:** indica el rol Propietario.<br/> **2** - Indica el rol del miembro.<br/> **3**- Indica el rol del invitado. <br/><br/>La propiedad Miembros también incluye el nombre de su organización y la dirección de correo electrónico del miembro.|Microsoft Teams|
 |ModifiedProperties (Name, NewValue, OldValue)|La propiedad se incluye para los eventos de administración, como agregar un usuario como miembro de un sitio o un grupo de administradores de colección de sitios. La propiedad incluye el nombre de la propiedad que se modificó (por ejemplo, el grupo Administrador del sitio) el nuevo valor de la propiedad modificada (por ejemplo, el usuario que se agregó como administrador del sitio y el valor anterior del objeto modificado.|Todo (actividad de administrador)|
 |ObjectId|Para el registro de auditoría de Exchange, el nombre del objeto modificado por el cmdlet.  <br/> Para SharePoint actividad, el nombre completo de la ruta de acceso URL del archivo o carpeta al que tiene acceso un usuario.  <br/> Para la actividad de Azure AD, el nombre de la cuenta de usuario que se modificó.|Todo|
 |Operación|El nombre de la actividad de usuario o administrador. El valor de esta propiedad corresponde al valor seleccionado en la **lista** desplegable Actividades. Si **se ha seleccionado Mostrar** resultados para todas las actividades, el informe incluirá entradas para todas las actividades de usuario y administración de todos los servicios. Para obtener una descripción de las operaciones o actividades que se registran en el registro de auditoría, vea la pestaña **Actividades** auditadas en Buscar el registro de auditoría [en el Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> Esta propiedad identifica el nombre del cmdlet ejecutado para la actividad de administración de Exchange.|Todo|
 |OrganizationId|GUID de la organización.|Todo|
 |Path|El nombre de la carpeta del buzón donde se encuentra el mensaje al que se obtuvo acceso. Esta propiedad también identifica la carpeta en la que se crea o copia o se mueve un mensaje.|Exchange (actividad de buzón de correo)|
-|Parameters|Para Exchange de administración, el nombre y el valor de todos los parámetros que se usaron con el cmdlet que se identifica en la propiedad Operation.|Exchange (actividad de administración)|
+|Parámetros|Para Exchange de administración, el nombre y el valor de todos los parámetros que se usaron con el cmdlet que se identifica en la propiedad Operation.|Exchange (actividad de administración)|
 |RecordType|El tipo de operación indicado por el registro. Esta propiedad indica el servicio o la característica en la que se desencadenó la operación. Para obtener una lista de tipos de registro y su valor ENUM correspondiente (que es el valor que se muestra en la **propiedad RecordType** de un registro de auditoría), vea [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).| 
 |ResultStatus|Indica si la acción (especificada en la **propiedad Operation)** se ha realizado correctamente o no.  <br/> Para Exchange de administración, el valor es **True** (correcto) o **False** (error).|Todo  <br/>|
 |SecurityComplianceCenterEventType|Indica que la actividad era un evento del Centro de & seguridad. Todas las actividades & centro de cumplimiento de seguridad tendrán un valor **de 0** para esta propiedad.|Centro de seguridad y cumplimiento|
