@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd7c571787ed37aa30f08ff44f16298dd1ab7914
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 50ce6e916de59a8756f00fb055480339faf43d777a6a353047f527a0fade7754
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797247"
 ---
 # <a name="contact-support-for-vanuatu"></a>Póngase en contacto con el soporte técnico de Vanuatu
 

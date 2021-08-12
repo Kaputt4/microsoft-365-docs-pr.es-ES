@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 2327e889bbe0d4101f6f92b003dbee21902e9a403ec74c2e8527227bd6074766
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664050"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797127"
 ---
 # <a name="tax-information"></a>Información de impuestos
 

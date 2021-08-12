@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e8cb3b843ce3f8bbbec6d1dc96bf2aa237eaa2a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3274e3e4b2992ad6d7309b01bc7ed8b7113302fc6fbbb4e706cb1365ae58821b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655568"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845641"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 

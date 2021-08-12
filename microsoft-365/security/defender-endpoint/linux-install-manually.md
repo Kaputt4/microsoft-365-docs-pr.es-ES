@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2c1b30e0e368b8418f332e24f9b32d8623385645
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 704e44a61a89e176433058bc62ed02ed96001ed28fda38354b85e1cbc977545d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652100"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806885"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -434,6 +434,6 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Investigar problemas de estado del agente](health-status.md)

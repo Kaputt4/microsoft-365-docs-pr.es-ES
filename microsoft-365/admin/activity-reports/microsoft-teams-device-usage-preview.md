@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las aplicaciones Microsoft Teams que se usan en su organización obteniendo el Microsoft Teams de uso de aplicaciones de Microsoft 365 Informes.
-ms.openlocfilehash: 096954ad246f3b10369dfbf683d04b6c81950b5e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6691520f7fc2f05f58d83ea97ab07f1f0bfeb144fc6b6bd9036e0773be10bb78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797805"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365 Informes en el Centro de administración: Microsoft Teams de dispositivos
 
@@ -50,7 +50,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 
 Puede visualizar el informe **Uso de dispositivos de Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |El nombre para mostrar del usuario.  <br/> |

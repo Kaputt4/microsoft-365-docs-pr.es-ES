@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: a8efdb460df07b34d272fbfe97cde8ee8224a94c
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 546270ef8053647d436b5ad7f59d3cb344281bfeb92123411446c465bfcab325
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806789"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar acciones de corrección tras una investigación automatizada
 
@@ -122,6 +122,6 @@ En Microsoft Defender para endpoint, se realiza un seguimiento de todos los vere
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a las investigaciones automatizadas](automated-investigations.md)

@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 01/26/2021
 ms.reviewer: chventou
-ms.openlocfilehash: d75f6ed9ffda3f1476f6965618c4325ad0b101c7
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 55211867e4ca020844f57b9e530d41330474227225dcee1cfaf0a4370218868d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806825"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>Administrar Microsoft Defender para el punto de conexión, después de la migración
 
@@ -53,6 +53,6 @@ En la tabla siguiente se enumeran varias herramientas o métodos que puede usar,
 |**[Objetos de directiva de grupo en Azure Active Directory de dominio](/azure/active-directory-domain-services/manage-group-policy)**|[Azure Active Directory Domain Services incluye](/azure/active-directory-domain-services/overview) objetos de directiva de grupo integrados para usuarios y dispositivos. Puede personalizar los objetos de directiva de grupo integrados según sea necesario para su entorno, así como crear objetos de directiva de grupo y unidades organizativas (UNIDADES organizativas) personalizadas. <p> Consulte [Manage Microsoft Defender for Endpoint with Group Policy Objects](manage-atp-post-migration-group-policy-objects.md).|
 |**[PowerShell, WMI y MPCmdRun.exe](manage-atp-post-migration-other-tools.md)**|*Se recomienda usar Microsoft Endpoint Manager (que incluye Intune y Configuration Manager) para administrar las características de protección contra amenazas en los dispositivos de la organización. Sin embargo, puede configurar algunas opciones, como Antivirus de Microsoft Defender en dispositivos individuales (puntos de conexión) con PowerShell, WMI o la herramienta MPCmdRun.exe usuario.* <p> Puede usar PowerShell para administrar el Antivirus de Microsoft Defender, la protección contra vulnerabilidades y las reglas de reducción de superficie de ataque. Consulte [Configure Microsoft Defender for Endpoint with PowerShell](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-powershell). <p> Puede usar Windows Instrumental de administración (WMI) para administrar Antivirus de Microsoft Defender y exclusiones. Consulte [Configure Microsoft Defender for Endpoint with WMI](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi). <p> Puede usar microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) para administrar Antivirus de Microsoft Defender y exclusiones, así como validar las conexiones entre la red y la nube. Consulte [Configure Microsoft Defender for Endpoint with MPCmdRun.exe](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe).|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
