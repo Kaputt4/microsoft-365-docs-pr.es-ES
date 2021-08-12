@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en el Centro de seguridad & cumplimiento en Office 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportaría.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 094e67812b45ab1544d629ba6ddabcd86c70c633
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0eae866625c9fd2424263ebfa6bff03ecc5c09a820017ffde5dad6d66f1c2164
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819993"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
@@ -69,7 +69,7 @@ Al exportar un informe, los archivos de informe se descargan en una carpeta del 
 
 El primer paso es preparar el informe para su descarga en el equipo que exporta. Al exportar el informe, los documentos del informe se cargan en un área Azure Storage en la nube de Microsoft.
   
-1. En el Microsoft 365 de cumplimiento, seleccione la búsqueda de contenido desde la que desea exportar el informe.
+1. En el Centro de cumplimiento de Microsoft 365, seleccione la búsqueda de contenido desde la que desea exportar el informe.
   
 2. En el **menú** Acciones de la parte inferior de la página desplegable de búsqueda, haga clic **en Exportar informe**.
 
@@ -105,7 +105,7 @@ Consulte la siguiente sección para obtener instrucciones para descargar los inf
 
 El siguiente paso es descargar el informe del área Azure Storage en el equipo local.
 
-1. En la **página Búsqueda de contenido** del Centro de Microsoft 365 cumplimiento, seleccione la **pestaña** Exportar
+1. En la **página Búsqueda de** contenido de la Centro de cumplimiento de Microsoft 365, seleccione la **pestaña** Exportaciones
   
    Es posible que tenga que hacer clic **en Actualizar** para actualizar la lista de trabajos de exportación para que muestre el trabajo de exportación que creó. Los trabajos de informe de exportación tienen el mismo nombre que la búsqueda correspondiente **con _ReportsOnly** anexado al nombre de búsqueda.
   

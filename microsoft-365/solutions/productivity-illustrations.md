@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: e052f3c287a6523174259a0a58017421bc989071
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2a183c6ead446fce331d33350172359650a38327d4a7ee00cf6a6c7a18a6a3db
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827872"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -105,7 +105,7 @@ Microsoft es compatible con varias opciones cuando empieza a utilizar Teams en l
 |[![Póster de Soluciones de telefonía de Microsoft](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Actualizado en marzo de 2021 | Para obtener más información, vea [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page).|
 
 
-## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Configure su infraestructura para el trabajo híbrido
+## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Configure la infraestructura para el trabajo híbrido
 
 Con Microsoft 365 y otras tecnologías en la nube de Microsoft, puede proporcionar a sus trabajadores acceso seguro a la información, herramientas y recursos locales y basados en la nube de su organización desde sus hogares.
 

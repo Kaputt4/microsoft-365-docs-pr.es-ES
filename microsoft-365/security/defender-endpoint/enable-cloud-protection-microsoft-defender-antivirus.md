@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: ed8fd13aa84fc807c75db99f7ed06fab8dcfbf65631c51bf51afcf295f66c965
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007190"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794167"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>Activar la protección proporcionada en la nube
 

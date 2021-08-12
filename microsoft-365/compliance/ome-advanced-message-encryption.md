@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: El cifrado de mensajes avanzado ayuda a las organizaciones a cumplir sus obligaciones de cumplimiento, ya que permite a los administradores hacer aún más con mensajes protegidos.
-ms.openlocfilehash: 8c650c47c1853102e4e2d142040e49724ef707e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d1021d4d424a1ecb984bfd5afa176e9ae3a3451c006df0dd307a5b59d9e4d0e7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923960"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813660"
 ---
 # <a name="advanced-message-encryption"></a>Cifrado de mensajes avanzado
 

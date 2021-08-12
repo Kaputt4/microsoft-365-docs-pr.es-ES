@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Aprenda los pasos para etiquetar y, a continuación, trabajar con una muestra de aprendizaje de 40 archivos durante la fase de aprendizaje de relevancia de Advanced eDiscovery.
-ms.openlocfilehash: ae4a9f2e9fd87fdd0679bbfd8f287b6eaa98e41f
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: a510d331da39cfec7e861148a20200c6f3a1239f7ca0fc6387ffc7de56fa38fd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813613"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Formación de etiquetas y relevancia en Advanced eDiscovery
   

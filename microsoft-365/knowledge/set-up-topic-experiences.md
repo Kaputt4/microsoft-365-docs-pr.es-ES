@@ -1,5 +1,5 @@
 ---
-title: Configurar temas de Microsoft Viva
+title: Configurar Temas Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,25 +9,25 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Obtenga información sobre cómo configurar temas de Microsoft Viva
-ms.openlocfilehash: 42f84b9b792907d7fe118e0b15c3767674ddf19b
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Obtenga información sobre cómo configurar Temas Microsoft Viva
+ms.openlocfilehash: 65c679889c60b69ae60a4649b64224f7970f57e58feb5f40a391e0acc257966c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229592"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834893"
 ---
-# <a name="set-up-microsoft-viva-topics"></a>Configurar temas de Microsoft Viva
+# <a name="set-up-microsoft-viva-topics"></a>Configurar Temas Microsoft Viva
 
 Puede usar el Centro de administración de Microsoft 365 para configurar y configurar [Temas](topic-experiences-overview.md). 
 
-Es importante planear la mejor forma de configurar y configurar temas en el entorno. Asegúrese de leer [Plan for Microsoft Viva Topics](plan-topic-experiences.md) antes de comenzar los procedimientos de este artículo.
+Es importante planear la mejor forma de configurar y configurar temas en el entorno. Asegúrese de leer [Plan for Temas Microsoft Viva](plan-topic-experiences.md) before you begin the procedures in this article.
 
 Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso a la Centro de administración de Microsoft 365 y configurar temas.
 
 Si has configurado SharePoint [para requerir dispositivos administrados,](/sharepoint/control-access-from-unmanaged-devices)asegúrate de configurar Temas desde un dispositivo administrado.
 
-## <a name="video-demonstration"></a>Vídeo de demostración
+## <a name="video-demonstration"></a>Demostración de vídeo
 
 En este vídeo se muestra el proceso de configuración de temas en Microsoft 365.
 
@@ -52,7 +52,7 @@ Para asignar licencias:
 4. En **Aplicaciones,** asegúrese de que Graph conectores de búsqueda con **Index (Temas de Viva)** y **Temas de Viva** estén seleccionados.
 
    > [!div class="mx-imgBorder"]
-   > ![Licencias de Temas de Microsoft Viva en el Centro de administración de Microsoft 365](../media/topic-experiences-licenses.png)
+   > ![Temas Microsoft Viva licencias en el Centro de administración de Microsoft 365](../media/topic-experiences-licenses.png)
 
 5. Haga clic en **Guardar cambios**.
 
@@ -153,11 +153,11 @@ Para configurar temas
 
 Una vez configurados los temas, puede cambiar la configuración que eligió durante la instalación en [el Centro de administración de Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement). Vea las referencias siguientes:
 
-- [Administrar la detección de temas en Temas de Microsoft Viva](topic-experiences-discovery.md)
-- [Administrar visibilidad de temas en Temas de Microsoft Viva](topic-experiences-knowledge-rules.md)
-- [Administrar permisos de temas en Temas de Microsoft Viva](topic-experiences-user-permissions.md)
-- [Cambiar el nombre del centro de temas en Temas de Microsoft Viva](topic-experiences-administration.md)
+- [Administrar la detección de temas en Temas Microsoft Viva](topic-experiences-discovery.md)
+- [Administrar la visibilidad del tema en Temas Microsoft Viva](topic-experiences-knowledge-rules.md)
+- [Administrar permisos de temas en Temas Microsoft Viva](topic-experiences-user-permissions.md)
+- [Cambie el nombre del centro de temas en Temas Microsoft Viva](topic-experiences-administration.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Introducción a las experiencias del tema](topic-experiences-overview.md)
