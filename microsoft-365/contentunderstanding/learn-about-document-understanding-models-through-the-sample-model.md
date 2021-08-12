@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre los modelos de comprensión de documentos a través del modelo de ejemplo.
-ms.openlocfilehash: 9d8c4d7d241c9de49c0e6d64cc585edb6b67419b
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: 52b66a30bb9b28dabde0a9af092e942522db58150acaacc48a23bc105fcb1dce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578558"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795415"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>Obtenga información sobre los modelos de comprensión mediante documentos con un modelo de ejemplo
 

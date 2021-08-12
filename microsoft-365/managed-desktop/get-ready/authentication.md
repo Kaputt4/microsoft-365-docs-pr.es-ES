@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 6df23e0d7e3ea0ecd7ebacd96f00cb47b9e0aa84
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 22d49a85ae4d89e3d596a00a0d47468ed213788c1b46d850914d2eaecef56ec1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819240"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft
 
@@ -49,7 +49,7 @@ En la mayoría de las organizaciones, los usuarios podrán usar SSO para autenti
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Single Sign-On by using Windows Hello for Business
 
-Escritorio administrado de Microsoft dispositivos también ofrecen a los usuarios una experiencia rápida y sin contraseña mediante el Windows Hello para empresas. Para asegurarse de que Windows Hello para empresas funcionará sin que los usuarios tengan que proporcionar el UPN y la contraseña correspondientes, visite Configure [Azure AD joined devices for On Single-Sign on using Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) para comprobar los requisitos y, a continuación, siga los pasos proporcionados allí.
+Escritorio administrado de Microsoft dispositivos también ofrecen a los usuarios una experiencia rápida y sin contraseña mediante Windows Hello para empresas. Para asegurarse de que Windows Hello para empresas funcionará sin que los usuarios tengan que proporcionar el UPN y la contraseña correspondientes, visite Configurar dispositivos unidos a [Azure AD](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) para el Single-Sign Local Al usar Windows Hello para empresas para comprobar los requisitos y, a continuación, siga los pasos proporcionados allí.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>Aplicaciones y recursos que usan la autenticación

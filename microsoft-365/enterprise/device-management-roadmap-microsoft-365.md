@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Guía básica para configurar la administración de dispositivos para Microsoft 365.
-ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9efb9659c4c6dcfe20b8f52c1a451b3644dcc0023e4087723141d6574db082ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051465"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819420"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Guía básica de administración de dispositivos para Microsoft 365
 
@@ -54,10 +54,10 @@ En función de tu evaluación, empieza a administrar tus dispositivos con:
  
 ## <a name="identity-and-device-access-recommendations"></a>Recomendaciones de acceso a dispositivos e identidades
 
-Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidades y dispositivos](../security/defender-365-security/microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los empleados. Para el acceso a dispositivos, usa las recomendaciones y la configuración de estos artículos:
+Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidades y dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los empleados. Para el acceso a dispositivos, usa las recomendaciones y la configuración de estos artículos:
 
-- [Requisitos previos](../security/defender-365-security/identity-access-prerequisites.md)
-- [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md)
+- [Requisitos previos](../security/office-365-security/identity-access-prerequisites.md)
+- [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Cómo Contoso hizo la administración de dispositivos Microsoft 365
 

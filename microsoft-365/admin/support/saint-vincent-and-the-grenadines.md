@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ff07f662cbcc6ed9f9bbe38bd4496652702e27d1
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 18c3c86588cde02b699736e2239f052707cc8a625d7de570bbe5504e6de81a7a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297781"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804245"
 ---
 # <a name="contact-support-for-saint-vincent-and-the-grenadines"></a>Póngase en contacto con el soporte técnico de San Vicente y las Granadinas
 

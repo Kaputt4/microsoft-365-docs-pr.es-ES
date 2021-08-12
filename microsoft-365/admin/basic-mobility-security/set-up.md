@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configura Movilidad y seguridad básicas para proteger y administrar los dispositivos móviles de los usuarios mediante acciones como limpiar un dispositivo de forma remota.
-ms.openlocfilehash: d878569c691fc25c8c91c5a5a29215e6284a5d71
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 9068594bdc4049336e87e3ed87ede9c4277f83fb0921d84b0b66099701aad91e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826797"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurar Movilidad y seguridad básicas
 

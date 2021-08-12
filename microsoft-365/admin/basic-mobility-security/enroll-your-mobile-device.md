@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Antes de poder usar Microsoft 365 con el dispositivo, es posible que deba inscribirlo primero en Movilidad básica y seguridad para Microsoft 365.
-ms.openlocfilehash: 9da3424409a950670e3be45354a5c399fec52372
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 65f3d224b6dd3832416d1f1c1b9d9a6d933f3305a419abebe997a4fb765a5989
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826776"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Inscribir el dispositivo móvil con movilidad básica y seguridad
 
@@ -77,6 +77,6 @@ Vaya a la Microsoft Store y descargue e instale Portal de empresa de Intune
 
 Para conectar y configurar el Windows teléfono o equipo con el portal de la empresa para Microsoft 365, consulte Windows inscripción de [dispositivos en Portal de empresa de Intune](/intune-user-help/windows-enrollment-company-portal).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de inscribir el dispositivo en Movilidad y seguridad básicas, puedes empezar a usar Office aplicaciones en el dispositivo para trabajar con correo electrónico, calendario, contactos y documentos.

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 'Resumen: configure y muestre la sincronización de hash de contraseñas e inicie sesión en su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 9c61745fe322dce4cb2b537b18963634a97c697a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d6fdeb6391d452aee310ae9f2eecfec0e177ae4fdd76b71dcbe7a987144067dc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840940"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
@@ -118,7 +118,7 @@ En primer lugar, instale y configure Azure AD Conectar app1.
     
 13. Selecciona la **cuenta User1** y, a continuación, **selecciona Licencias y aplicaciones.**
     
-14. En **Licencias de productos,** seleccione su ubicación (si es necesario), deshabilite la Office 365 **de E5** y, a continuación, **habilite la Microsoft 365 E5** licencia. 
+14. En **Licencias de productos,** seleccione su ubicación (si es necesario), deshabilite la **licencia** Office 365 E5 y, a continuación, **habilite Microsoft 365 E5** licencia. 
 
 15. Seleccione **Guardar** en la parte inferior de la página y, a continuación, **seleccione Cerrar**.
     
@@ -136,7 +136,7 @@ La configuración resultante tiene este aspecto:
 
 Esta configuración se compone de: 
   
-- Microsoft 365 E5 o Office 365 suscripciones de prueba o de pago de E5 con el dominio DNS TESTLAB.<*el nombre* de dominio> registrado.
+- Microsoft 365 E5 o Office 365 E5 de prueba o de pago con el dominio DNS TESTLAB.<*el nombre* de dominio> registrado.
 - Una intranet de organización simplificada conectada a Internet, formada por las máquinas virtuales DC1, APP1 y CLIENT1 en una subred de una red virtual de Azure. Azure AD Conectar se ejecuta en APP1 para sincronizar periódicamente el dominio de TESTLAB AD DS con el inquilino de Azure AD de la Microsoft 365 suscripción.
 - La cuenta User1 en el dominio AD DS de TESTLAB se ha sincronizado con la cuenta empresarial de Azure AD.
 

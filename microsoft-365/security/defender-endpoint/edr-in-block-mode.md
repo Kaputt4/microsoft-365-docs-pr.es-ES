@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/20/2021
+ms.date: 07/29/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 822d0cb12aa42d62fde3df1ec3632e400019d2e1
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: ee163b8a32bde00fe247dcc4f570ce7768c33a55e1c4c8ffc88ad7fbe08dc080
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833945"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo
 
@@ -35,7 +35,7 @@ ms.locfileid: "53591228"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>¿Qué EDR en modo de bloqueo?
 
@@ -84,7 +84,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 
 | Requisito  | Detalles  |
 |---------|---------|
-| Permisos | Debe tener asignado el rol Administrador global o Administrador de seguridad en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Para obtener más información, vea [Basic permissions](basic-permissions.md). |
+| Permissions | Debe tener asignado el rol Administrador global o Administrador de seguridad en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Para obtener más información, vea [Basic permissions](basic-permissions.md). |
 | Sistema operativo     | Los dispositivos deben ejecutar una de las siguientes versiones de Windows: <br/>- Windows 10 (todas las versiones) <br/>- Windows server, versión 1803 o posterior <br/>- Windows Server 2019 <br/>- Windows Server 2016 (solo cuando Antivirus de Microsoft Defender está en modo activo)     |
 | Microsoft Defender para punto de conexión     | Los dispositivos deben incorporarse a Defender for Endpoint. Consulte [Requisitos mínimos de Microsoft Defender para endpoint](minimum-requirements.md).       |
 | Antivirus de Microsoft Defender  | Los dispositivos deben Antivirus de Microsoft Defender instalados y en ejecución en modo activo o en modo pasivo. [Confirme Antivirus de Microsoft Defender está en modo activo o pasivo](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
@@ -95,7 +95,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 > [!IMPORTANT]
 > Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales y de que las [exclusiones están configuradas.](configure-exclusions-microsoft-defender-antivirus.md) EDR en modo de bloque respeta las exclusiones que se definen para Antivirus de Microsoft Defender, pero no los indicadores [definidos](manage-indicators.md) para Microsoft Defender para endpoint.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes 
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Necesito activar el EDR en modo de bloqueo si tengo Antivirus de Microsoft Defender en dispositivos?
 
@@ -129,7 +129,7 @@ Para obtener más información, [vea Antivirus de Microsoft Defender compatibili
 
 Para confirmar si Antivirus de Microsoft Defender se está ejecutando en modo activo o pasivo, puede usar el símbolo del sistema o PowerShell en un dispositivo que se Windows.
 
-|Método  |Procedure  |
+|Method  |Procedure  |
 |---------|---------|
 | PowerShell     | 1. Seleccione el menú Inicio, empiece a escribir y, a continuación, `PowerShell` abra Windows PowerShell en los resultados. <p>2. Escriba `Get-MpComputerStatus` . <p>3. En la lista de resultados, en la fila **AMRunningMode,** busque uno de los siguientes valores: <br/>- `Normal` <br/>- `Passive Mode` <p>Para obtener más información, [vea Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).        |
 |Símbolo del sistema     | 1. Seleccione el menú Inicio, empiece a escribir y, a continuación, abra Windows símbolo del `Command Prompt` sistema en los resultados. <p>2. Escriba `sc query windefend` . <p>3. En la lista de resultados, en la fila **STATE,** confirme que el servicio se está ejecutando.         |
@@ -165,7 +165,7 @@ Actualmente, la ejecución Antivirus de Microsoft Defender en modo pasivo no se 
 
 Si decide deshabilitar EDR en modo de bloqueo, el sistema puede tardar hasta 30 minutos en deshabilitar esta funcionalidad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Blog Community tech: Introducción a EDR en modo de bloque: Detener ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)

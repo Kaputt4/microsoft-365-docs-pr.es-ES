@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 737a0e4b7e75b24bde486b79667da8e7771bbefa
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 73c63374b980eea272d8940b7c6e62827788075c3827341dfe1ff039d4c6fa58
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833896"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corregir sensores incorrectos en Microsoft Defender para endpoint
 
@@ -91,5 +91,5 @@ Si los dispositivos ejecutan un cliente antimalware de terceros, el agente de De
 
 Si has tomado medidas correctivas y el estado del dispositivo sigue mal configurado, [abre un vale de soporte técnico.](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Comprobar el estado del sensor en Microsoft Defender para endpoint](check-sensor-status.md)

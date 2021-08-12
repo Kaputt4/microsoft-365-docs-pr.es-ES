@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Obtenga información sobre cómo aumentar el rendimiento reemplazando el elemento web consulta de contenido por el elemento web búsqueda de contenido en SharePoint Server 2013 y SharePoint Online.
-ms.openlocfilehash: e5f57e59a421d79302f447e229091fdfc96f1237
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1fbddb662d87f135d90dfb1303ba75097da4650eefdf57dfe2f9ca50fcf186a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840797"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Uso del elemento web de búsqueda de contenido en lugar del elemento web consulta de contenido para mejorar el rendimiento en SharePoint Online
 

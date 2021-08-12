@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5c558a7799bff61a0ee80db31ee476ad611053c0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 93bc842f64139bce2ce5615868e77b4418e40f5dac7956711b7f5a08e60fcd42
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926624"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794023"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Evaluar Antivirus de Microsoft Defender
 

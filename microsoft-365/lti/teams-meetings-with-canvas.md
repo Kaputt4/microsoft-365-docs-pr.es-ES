@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams reuniones con Canvas
-ms.openlocfilehash: 54dd3cc2709933ffb7b7d5fecdd181fad2abb42b
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 5ba812ba2f5694dd7860131479f01fceaba9ab2a040d1ba828306aa022665f74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454678"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819309"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Usar Microsoft Teams reuniones con Canvas
 
@@ -56,7 +56,7 @@ Configure la integración Microsoft Teams LTI 1.3.
 
 Como administrador de Canvas, tendrás que agregar la aplicación LTI Microsoft Teams reuniones en tu entorno. Anote el id. de cliente de LTI para la aplicación.
 
- - Microsoft Teams - 170000000000703
+ - Microsoft Teams reuniones: 170000000000703
 
 1. Access **Admin settings**  >  **Apps**.
 

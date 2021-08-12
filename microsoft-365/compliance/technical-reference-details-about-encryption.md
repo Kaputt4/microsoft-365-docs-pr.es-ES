@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Obtenga información sobre los distintos certificados, tecnologías y conjuntos de cifrado de seguridad de la capa de transporte (TLS) usados para el cifrado en Office 365 y Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b2257338ab214ccdaa08f1aa8f322aad98d7c8b
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 9d7c9bacc8f4e95ca15c4e420efc9b5db1eb074726496d4278be3e2f87046e52
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795535"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Información de referencia técnica sobre el cifrado
 

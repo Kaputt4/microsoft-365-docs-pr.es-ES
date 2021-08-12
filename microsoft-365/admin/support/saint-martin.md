@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c5e47b95390cf2235be1af8e75db6d0841dde780
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b8381fe58e7b86d1140beef6bb2de8ed8cdf23d41d8d8932ec456a7b36144723
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297793"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804269"
 ---
 # <a name="contact-support-for-saint-martin"></a>Póngase en contacto con el soporte técnico de San Martín
 

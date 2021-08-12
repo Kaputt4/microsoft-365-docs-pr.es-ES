@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa Movilidad y seguridad básicas para establecer directivas de seguridad de dispositivos y reglas de acceso.
-ms.openlocfilehash: 1d1376ec39f7249dfffb94c666b2fdcfa07641a0
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 6ae42b9d7515e027e826fe7735a63b23ffd0eff04cb37995d28c60c9dddfada1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826857"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Información general sobre movilidad básica y seguridad para Microsoft 365
 

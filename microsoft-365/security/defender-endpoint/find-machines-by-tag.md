@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f8c6c289cca61e5a0891af04ef97831a27b341f3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5cf987c71ff3da40149dd18ba2578ffc11bd01774b83ae24ee9a3b3fba7e7b23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833968"
 ---
 # <a name="find-devices-by-tag-api"></a>Buscar dispositivos por API de etiqueta
 
@@ -78,9 +78,9 @@ Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 
-Nombre|Tipo|Descripción
+Nombre|Tipo|Description
 :---|:---|:---
-tag|Cadena|El nombre de la etiqueta. **Necesario**.
+tag|String|El nombre de la etiqueta. **Necesario**.
 useStartsWithFilter|Booleano|Cuando se establece en true, la búsqueda buscará todos los dispositivos con el nombre de etiqueta que comiencen por la etiqueta dada en la consulta. Valores predeterminados de falso. **Opcional**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

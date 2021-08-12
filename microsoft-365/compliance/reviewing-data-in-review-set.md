@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo revisar los datos de casos en un conjunto de revisión Advanced eDiscovery.
-ms.openlocfilehash: 890edc0e813f620944cea1e73bc8f9dc45132eb3
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 1ad7b73b05583f493bb5215ce90a1d22ec1345f5cae2200d45d76ec04ad52677
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795643"
 ---
 # <a name="review-case-data-in-advanced-ediscovery"></a>Revisar los datos de caso en Advanced eDiscovery
 

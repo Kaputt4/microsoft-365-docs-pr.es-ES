@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: aec8eeeacb520c8ac035a099639e8f788c4cf1c96f8d42588cda8d992fb9d2f3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795406"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adopción SharePoint Syntex Microsoft: Introducción
 
@@ -70,10 +70,10 @@ Use los [escenarios de ejemplo y los casos de uso](adoption-scenarios.md) para p
 
 Determine who in your organization will build and manage the models? Los siguientes roles pueden estar implicados:
 
-| SharePoint/Administrador de conocimientos | Administrador de Power Platform | Gerente de información | Propietario del modelo |
+| Administrador de información/SharePoint | Administrador de Power Platform | Administrador de conocimientos | Propietario del modelo |
 |:-------|:-------|:-------|:-------|
 | Rol AAD| Rol AAD | Rol AAD | Expertos: |
-| Configurar el procesamiento del formulario | Configurar el entorno de servicio de datos común para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso empresarial |
+| Configurar el procesamiento de formularios | Configurar el entorno de servicio de datos común para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso empresarial |
 | Administrar centros de contenido y permisos| Comprar y asignar créditos AIB | Establecer procedimientos recomendados y revisar análisis de modelos | Crear y aplicar modelos |
 
 El administrador de conocimientos, el propietario del proceso de negocio y el propietario del modelo de contenido crean modelos de ejemplo y la adopción de campeones en la organización.
@@ -144,6 +144,6 @@ Para prepararse para implementar SharePoint Syntex, debe:
 1. Recopilar comentarios e iterar.
 1. A medida que aumenta el uso, planee los créditos de AI Builder según sea necesario.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Escenarios y casos de uso para SharePoint Syntex](adoption-scenarios.md)
+[Escenarios y casos de uso de SharePoint Syntex](adoption-scenarios.md) 
