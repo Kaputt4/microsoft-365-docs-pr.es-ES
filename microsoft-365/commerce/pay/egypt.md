@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c9e518253f353db406566ca61a630101c2cf8b28
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 35619ec14fd99d8062a6c64b28b6421eb73e5830e13c5f6f36955442717f5202
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796903"
 ---
 # <a name="payment-information-for-egypt"></a>Información de pago para Egipto
 

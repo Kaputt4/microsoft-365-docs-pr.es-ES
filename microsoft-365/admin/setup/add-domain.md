@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Use el Asistente para la instalación para agregar el dominio Microsoft 365 en el Centro de administración de Microsoft 365 agregando un registro DNS en el host DNS.
-ms.openlocfilehash: caec9951fa80d19467623922dffa8551d0b4ad0d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 73da36729b88c5cb6394983b7577fb793205c6e144c44daea3346c12721e1df6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822240"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -102,7 +102,7 @@ Siga los pasos siguientes para agregar un registro personalizado para un sitio w
 
 5. Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ## <a name="registrars-with-domain-connect"></a>Registradores con dominio Conectar
 

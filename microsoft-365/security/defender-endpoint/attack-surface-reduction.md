@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 059ebba84f96a24f4ac855d7bb84c3abed64f0c3
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3b30d73572f6d1f0b67c7bdd434400cd28c86d5e1a69bc0fcda1410fe50a1df9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543730"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794443"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 
@@ -73,7 +73,7 @@ El modo de advertencia se admite en dispositivos que ejecutan las siguientes ver
 
 Antivirus de Microsoft Defender debe ejecutarse con protección en tiempo real en [modo activo](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
 
-Además, asegúrate de [que Antivirus de Microsoft Defender y las actualizaciones de antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) estén instaladas.
+Además, asegúrate de [que Antivirus de Microsoft Defender actualizaciones y antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) estén instaladas.
 
 - Requisito mínimo de versión de plataforma: `4.18.2008.9`
 - Requisito mínimo de versión del motor: `1.1.17400.5`
@@ -82,7 +82,7 @@ Para obtener más información y obtener las actualizaciones, vea [Update for Mi
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Casos en los que no se admite el modo de advertencia
 
-El modo de advertencia no es compatible con tres reglas de reducción de superficie de ataque al configurarlas en Microsoft Endpoint Manager. (Si usas la directiva de grupo para configurar las reglas de reducción de superficie de ataque, se admite el modo de advertencia). Las tres reglas que no admiten el modo de advertencia al configurarlas en Microsoft Endpoint Manager son las siguientes:
+El modo de advertencia no se admite para tres reglas de reducción de superficie de ataque al configurarlas en Microsoft Endpoint Manager. (Si usas la directiva de grupo para configurar las reglas de reducción de superficie de ataque, se admite el modo de advertencia). Las tres reglas que no admiten el modo de advertencia al configurarlas en Microsoft Endpoint Manager son las siguientes:
 
 - [Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID) `d3e037e1-3eb8-44c8-a917-57927947596d`
 - [Bloquear la persistencia a través de la suscripción de eventos WMI](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription) (GUID) `e6db77e5-3df2-4cf1-b95a-636979351e5b`
@@ -94,9 +94,9 @@ Además, el modo de advertencia no se admite en dispositivos que ejecutan versio
 
 Cada vez que se desencadena una regla de reducción de superficie de ataque, se muestra una notificación en el dispositivo. Puede [personalizar la notificación](customize-attack-surface-reduction.md#customize-the-notification) con los detalles de la empresa y la información de contacto.
 
-Además, cuando se desencadenan determinadas reglas de reducción de superficie de ataque, se generan alertas.
+Además, cuando se desencadenan ciertas reglas de reducción de superficie de ataque, se generan alertas.
 
-Las notificaciones y las alertas que se generan se pueden ver en el portal de Microsoft 365 Defender ( ) (anteriormente denominado [https://security.microsoft.com](https://security.microsoft.com) [Centro de seguridad de Microsoft Defender](microsoft-defender-security-center.md)).
+Las notificaciones y las alertas que se generan se pueden ver en el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) (anteriormente denominado [Microsoft 365 Defender](microsoft-defender-security-center.md)).
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Eventos avanzados de reducción de superficie de búsqueda y ataque
 

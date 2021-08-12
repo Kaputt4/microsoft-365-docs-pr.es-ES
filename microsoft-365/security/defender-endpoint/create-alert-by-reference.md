@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9543ef45e568e742e6fd660a2408462de4874e57
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9ff52a2c2cd464552637a166708669c2ab4d00eece6bd6585603d2a33bf5a038
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652352"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794383"
 ---
 # <a name="create-alert-api"></a>Crear API de alertas
 
@@ -90,10 +90,10 @@ eventTime | DateTime(UTC) | La hora precisa del evento como cadena, como se obti
 reportId | Cadena | El reportId del evento, como se obtiene de la búsqueda avanzada. **Necesario**.
 machineId | Cadena | Id. del dispositivo en el que se identificó el evento. **Necesario**.
 severity | Cadena | Gravedad de la alerta. Los valores de propiedad son: 'Low', 'Medium' y 'High'. **Necesario**.
-title | Cadena | Título de la alerta. **Necesario**.
+title | String | Título de la alerta. **Necesario**.
 description | Cadena | Descripción de la alerta. **Necesario**.
-recommendedAction| Cadena | Acción recomendada por el responsable de seguridad al analizar la alerta. **Necesario**.
-categoría| Cadena | Categoría de la alerta. Los valores de propiedad son: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "LateralMovement", "Malware", "Persistence", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
+recommendedAction| String | Acción recomendada por el responsable de seguridad al analizar la alerta. **Necesario**.
+categoría| String | Categoría de la alerta. Los valores de propiedad son: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "LateralMovement", "Malware", "Persistence", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
 
 ## <a name="response"></a>Respuesta
 

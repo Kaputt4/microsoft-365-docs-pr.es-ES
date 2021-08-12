@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: Este artículo contiene sugerencias generales y vínculos a otros recursos que le dicen cómo mejorar el rendimiento de Exchange Online.
-ms.openlocfilehash: a7d3268f9f3cf1922319b03cf69d3f044272b27f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0f1a55648b90cfc07a81928f3e30196f9d928bd5271073828500e58138a4007c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794659"
 ---
 # <a name="tune-exchange-online-performance"></a>Optimizar el rendimiento de Exchange Online
 
@@ -37,7 +37,7 @@ Para mejorar la velocidad de migración y reducir las restricciones de ancho de 
     
 - **Programar los movimientos de buzones de correo para que se produzcan durante períodos de bajo tráfico de Internet y bajo uso Exchange local.** Al programar movimientos, las solicitudes de migración se envían al proxy de replicación de buzones de correo y pueden no tener lugar inmediatamente. 
     
-- **Use popouts lean Outlook en la web.** Los elementos emergentes lean proporcionan versiones más pequeñas y menos intensivas en memoria de determinados mensajes de correo electrónico en Microsoft Edge o Internet Explorer mediante la representación de algunos componentes en el servidor. Para obtener más información, vea [Use lean popouts to reduce memory used when reading mail messages](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf).
+- **Use popouts lean para Outlook en la Web.** Los elementos emergentes lean proporcionan versiones más pequeñas y menos intensivas en memoria de determinados mensajes de correo electrónico en Microsoft Edge o Internet Explorer mediante la representación de algunos componentes en el servidor. Para obtener más información, vea [Use lean popouts to reduce memory used when reading mail messages](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf).
 
 
 ## <a name="general-advice"></a>Consejos generales

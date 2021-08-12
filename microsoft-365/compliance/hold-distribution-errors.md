@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Solucionar errores relacionados con las retenciones legales aplicadas a custodios y orígenes de datos no custodiados en eDiscovery principal.
-ms.openlocfilehash: 3e5cc6351d5026feda560bee646a1e6a03475ee2
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: a1e53397b4a0b18aa5c110a0499e239b51e24bd587fa8b04351d930d684c7e8d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813936"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>Solución de problemas de suspensión de eDiscovery
 

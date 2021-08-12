@@ -18,14 +18,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: a6a1f9dfeec6e59f51a4ad0dba364610341e6e5b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 5a5afc074f9498ceeef855fdb9cf1c4c25a71287fcdfab692457ddc3f0a2805d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541855"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836701"
 ---
-# <a name="alert-policies-in-the-microsoft-365"></a>Directivas de alerta en el Microsoft 365
+# <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
 Puede usar las herramientas de directiva de alertas y panel de alertas del portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender para crear directivas de alerta y, a continuación, ver las alertas generadas cuando los usuarios realizan actividades que coinciden con las condiciones de una directiva de alerta. Hay varias directivas de alerta predeterminadas que le ayudan a supervisar actividades como asignar privilegios de administrador en Exchange Online, ataques de malware, campañas de suplantación de identidad (phishing) y niveles inusuales de eliminaciones de archivos y uso compartido externo.
 
@@ -100,9 +100,9 @@ También puede definir etiquetas de usuario como condición de una directiva de 
 
   - Información de gobierno
 
-  - Flujo de correo
+  - Flujo del correo
 
-  - Permisos
+  - Permissions
 
   - Administración de amenazas
 
@@ -125,21 +125,21 @@ En la tabla siguiente se enumeran y describen las directivas de alerta predeterm
 
 En la tabla también se indica Office 365 Enterprise y Office 365 plan del Gobierno de Estados Unidos necesario para cada uno de ellos. Algunas directivas de alerta predeterminadas están disponibles si su organización tiene la suscripción de complemento adecuada además de una suscripción E1/F1/G1 o E3/F3/G3.
 
-| Directiva de alerta predeterminada | Descripción | Categoría | Enterprise suscripción |
+| Directiva de alerta predeterminada | Description | Categoría | Enterprise suscripción |
 |:-----|:-----|:-----|:-----|
 |**Se detectó un clic de dirección URL potencialmente malintencionado**|Genera una alerta cuando un usuario protegido por [Caja fuerte vínculos de](../security/office-365-security/safe-links.md) la organización hace clic en un vínculo malintencionado. Este evento se desencadena cuando Microsoft Defender identifica los cambios de veredicto de url para Office 365 o cuando los usuarios invalidan las páginas de vínculos de Caja fuerte (según la directiva de vínculos de Microsoft 365 para empresas de Caja fuerte de la organización). Esta directiva de alerta tiene **una configuración de** gravedad alta. Para los clientes de Defender Office 365 P2, E5, G5, esta alerta desencadena automáticamente la investigación automatizada y la respuesta [en Office 365](../security/office-365-security/office-365-air.md). Para obtener más información sobre los eventos que desencadenan esta alerta, vea [Configurar Caja fuerte de vínculos](../security/office-365-security/set-up-safe-links-policies.md).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Resultado de envío de administrador completado**|Genera una alerta cuando un [envío de](../security/office-365-security/admin-submission.md) administrador completa el nuevo análisis de la entidad enviada. Se activará una alerta cada vez que se represente un resultado de nuevo análisis desde un envío de administrador. Estas alertas están diseñadas para recordarle que revise los resultados de envíos anteriores, envíe mensajes [notificados](https://compliance.microsoft.com/reportsubmission)por el usuario para obtener los últimos veredictos de comprobación de directivas y volver a examinar, y le ayudarán a determinar si las directivas de filtrado de su organización están teniendo el impacto previsto. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas|E1/F1, E3/F3 o E5|
 |**Investigación manual de correo electrónico desencadenada por el administrador**|Genera una alerta cuando un administrador desencadena la investigación manual de un correo electrónico desde el Explorador de amenazas. Para obtener más información, vea [Ejemplo: un administrador de seguridad desencadena una investigación desde el Explorador de amenazas](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). Esta alerta notifica a la organización que se inició la investigación. La alerta proporciona información sobre quién la desencadenó e incluye un vínculo a la investigación. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas| E5/G5 o Microsoft Defender para una Office 365 de complemento P2| 
 |**Creación de una regla de reenvío o redirección**|Genera una alerta cuando alguien de la organización crea una regla de bandeja de entrada para su buzón que reenvía o redirige mensajes a otra cuenta de correo electrónico. Esta directiva solo realiza un seguimiento de las reglas de bandeja de entrada que se crean Outlook en la Web (anteriormente conocidas como Outlook Web App) o Exchange Online PowerShell. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información acerca del uso de reglas de bandeja de entrada para reenviar y redirigir el correo electrónico en Outlook en la Web, vea Usar reglas en Outlook en la Web para reenviar automáticamente mensajes [a otra cuenta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Búsqueda de eDiscovery iniciada o exportada**|Genera una alerta cuando alguien usa la herramienta de búsqueda de contenido en el Centro de seguridad y cumplimiento. Cuando se realizan las siguientes actividades de búsqueda de contenido, se desencadena una alerta: <br/><br/>* Se inicia una búsqueda de contenido<br/>* Los resultados de una búsqueda de contenido se exportan<br/>* Se exporta un informe de búsqueda de contenido<br/><br/>Las alertas también se desencadenan cuando las actividades de búsqueda de contenido anteriores se realizan en asociación con un caso de exhibición de documentos electrónicos. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información acerca de las actividades de búsqueda de contenido, vea [Buscar actividades de exhibición de documentos electrónicos en el registro de auditoría.](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
-|**Elevación de Exchange privilegio de administrador**|Genera una alerta cuando alguien tiene asignados permisos administrativos en su Exchange Online organización. Por ejemplo, cuando se agrega un usuario al grupo de roles Administración de la organización en Exchange Online. Esta directiva tiene una **configuración de** gravedad baja.|Permisos|E1/F1/G1, E3/F3/G3 o E5/G5|
+|**Elevación de Exchange privilegio de administrador**|Genera una alerta cuando alguien tiene asignados permisos administrativos en su Exchange Online organización. Por ejemplo, cuando se agrega un usuario al grupo de roles Administración de la organización en Exchange Online. Esta directiva tiene una **configuración de** gravedad baja.|Permissions|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Mensajes de correo electrónico que contienen malware quitados después de la entrega**|Genera una alerta cuando los mensajes que contienen malware se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo Exchange Online mediante la purga automática de hora [cero](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una **configuración de** gravedad informativo y desencadena automáticamente la investigación y respuesta [automatizadas en Office 365](../security/office-365-security/office-365-air.md).|Administración de amenazas|E5/G5 o Microsoft Defender para una Office 365 de complemento P2|
 |**Mensajes de correo electrónico que contienen direcciones URL de cebo quitados después de la entrega**|Genera una alerta cuando los mensajes que contienen phish se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo Exchange Online mediante la purga automática de hora [cero](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una **configuración de** gravedad informativo y desencadena automáticamente la investigación y respuesta [automatizadas en Office 365](../security/office-365-security/office-365-air.md).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Correo electrónico notificado por el usuario como malware o cebo**|Genera una alerta cuando los usuarios de la organización informan de mensajes como correo electrónico de suplantación de identidad mediante el complemento Mensaje de informe. Esta directiva tiene una **configuración de** gravedad baja. Para obtener más información acerca de este complemento, vea [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Para los clientes de Defender Office 365 P2, E5, G5, esta alerta desencadena automáticamente la investigación automatizada y la respuesta [en Office 365](../security/office-365-security/office-365-air.md).|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Límite de envío de correo electrónico superado**|Genera una alerta cuando alguien de la organización ha enviado más correo del permitido por la directiva de correo no deseado saliente. Esto suele indicar que el usuario envía demasiado correo electrónico o que la cuenta puede estar en peligro. Esta directiva tiene una **configuración de** gravedad media. Si obtiene una alerta generada por esta directiva de alerta, es buena idea comprobar si la cuenta de usuario [está en peligro.](../security/office-365-security/responding-to-a-compromised-email-account.md)|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Formulario bloqueado debido a un posible intento de suplantación de identidad**|Genera una alerta cuando se ha restringido a alguien de la organización el uso compartido de formularios y la recopilación de respuestas mediante Microsoft Forms debido al comportamiento de intento de suplantación de identidad (phishing) repetido detectado. Esta directiva tiene una **configuración de gravedad alta.**|Administración de amenazas|E1, E3/F3 o E5|
 |**Formulario marcado y confirmado como suplantación de identidad**|Genera una alerta cuando microsoft ha identificado un formulario creado en Microsoft Forms desde dentro de su organización como posible suplantación de identidad mediante el uso indebido de informes y confirmado como suplantación de identidad por Parte de Microsoft. Esta directiva tiene una **configuración de** gravedad alta.|Administración de amenazas|E1, E3/F3 o E5|
-|**Los mensajes se han retrasado**|Genera una alerta cuando Microsoft no puede entregar mensajes de correo electrónico a su organización local o a un servidor asociado mediante un conector. Cuando esto sucede, el mensaje se pone en cola en Office 365. Esta alerta se desencadena cuando hay 2.000 mensajes o más que se han puesto en cola durante más de una hora. Esta directiva tiene una **configuración de** gravedad alta.|Flujo de correo|E1/F1/G1, E3/F3/G3 o E5/G5|
+|**Los mensajes se han retrasado**|Genera una alerta cuando Microsoft no puede entregar mensajes de correo electrónico a su organización local o a un servidor asociado mediante un conector. Cuando esto sucede, el mensaje se pone en cola en Office 365. Esta alerta se desencadena cuando hay 2.000 mensajes o más que se han puesto en cola durante más de una hora. Esta directiva tiene una **configuración de** gravedad alta.|Flujo del correo|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Campaña de malware detectada después de la entrega**|Genera una alerta cuando un número inusualmente grande de mensajes que contienen malware se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de Exchange Online buzones de correo. Esta directiva tiene una **configuración de** gravedad alta.|Administración de amenazas|E5/G5 o Microsoft Defender para una Office 365 de complemento P2|
 |**Campaña de malware detectada y bloqueada**|Genera una alerta cuando alguien ha intentado enviar un número inusualmente grande de mensajes de correo electrónico que contienen un determinado tipo de malware a los usuarios de la organización. Si se produce este evento, Microsoft bloquea los mensajes infectados y no se entregan a los buzones. Esta directiva tiene una **configuración de** gravedad baja.|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Campaña de malware detectada en SharePoint y OneDrive**|Genera una alerta cuando se detecta un volumen inusualmente alto de malware o virus en archivos ubicados en SharePoint sitios o OneDrive cuentas de la organización. Esta directiva tiene una **configuración de** gravedad alta.|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
@@ -209,7 +209,7 @@ Cuando se producen varios eventos que coinciden con las condiciones de una direc
 
 La longitud del intervalo de agregación depende de la Office 365 o Microsoft 365 suscripción.
 
-|Suscripción|Intervalo de agregación|
+|Suscripción |Intervalo de agregación|
 |:---------|:---------:|
 |Office 365 o Microsoft 365 E5/G5|1 minuto|
 |Defender para Office 365 Plan 2 |1 minuto|
@@ -246,7 +246,7 @@ En la tabla siguiente se enumeran los roles necesarios para ver alertas de las s
 
 Para ver a qué categoría está asignada una directiva de alerta predeterminada, vea la tabla [en Directivas de alerta predeterminadas](#default-alert-policies).
 
-|Role|Información de gobierno|Prevención de pérdida de datos|Flujo de correo|Permisos|Administración de amenazas|Otros|
+|Rol|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permissions|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||
@@ -255,7 +255,7 @@ Para ver a qué categoría está asignada una directiva de alerta predeterminada
 |Administración de dispositivos|||||||
 |Administración de disposición|||||||
 |Administración de cumplimiento de DLP||![Marca de verificación](../media/checkmark.png)|||||
-|Export|||||||
+|Exportar|||||||
 |Hold|||||||
 |Administrar alertas||||||![Marca de verificación](../media/checkmark.png)|
 |Configuración de la organización||||||![Marca de verificación](../media/checkmark.png)|

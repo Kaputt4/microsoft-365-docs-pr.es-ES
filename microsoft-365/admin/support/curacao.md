@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1b799e976e5c2b5a7d500fdf69d996671c29ea38
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 17b0bdacfe745788fc4da24d1622142b2e4bb91519947a859dee43b0677ec5c3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821276"
 ---
 # <a name="contact-support-for-curacao"></a>Póngase en contacto con el soporte técnico de Curazao
 

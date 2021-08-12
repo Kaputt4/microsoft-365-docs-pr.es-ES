@@ -16,12 +16,12 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 82aff7adedc9e490520851ad8c8e87fad60abf0a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 0fc7b51988f67c0f2e570e23bdb58e1aa32d35fe55347d1ace550de80f4d6fb6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806729"
 ---
 # <a name="manage-event-based-forced-updates"></a>Administrar las actualizaciones forzadas basadas en eventos
 
@@ -159,7 +159,7 @@ Si ha habilitado la protección de entrega en la nube, Microsoft Defender AV env
 > [!NOTE]
 > **Permitir que las notificaciones deshabilite los informes basados** en definiciones permite a Microsoft MAPS deshabilitar esas definiciones conocidas por causar informes falsos positivos. Debe configurar el equipo para que se una a Microsoft MAPS para que esta función funcione.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Implementar Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)

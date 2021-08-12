@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: ae51d32343bbcf81d2d659121f475837cf0abe95
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0822ef527429e48f6eb301af0838081ed597b5d9c5b1cb6825f6a53cfb93d19a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836845"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -85,7 +85,7 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 
 |Característica o comportamiento|Configuración de etiqueta: etiquetado automático para archivos y mensajes de correo electrónico  |Directiva: etiquetado automático|
 |:-----|:-----|:-----|
-|Dependencia de la aplicación|[Sí](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No\* |
+|Dependencia de la aplicación|Sí ([versiones mínimas](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No\* |
 |Restringir por ubicación|No |Sí |
 |Condiciones: clasificadores que se pueden entrenar|Sí |No |
 |Condiciones: opciones de uso compartido y opciones adicionales para el correo electrónico|No |Sí |
@@ -146,26 +146,13 @@ Además, de la misma manera que ocurre con la configuración de directiva DLP, p
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurar clasificadores capacitados para una etiqueta
 
-Esta opción está disponible actualmente en versión preliminar. Si usa esta opción, asegúrese de haber publicado en su espacio empresarial al menos otra etiqueta de confidencialidad que esté configurada para la etiqueta automática y la opción [tipos de información confidencial](#configuring-sensitive-info-types-for-a-label).
+Si usa esta opción, asegúrese de haber publicado en su espacio empresarial al menos otra etiqueta de confidencialidad que esté configurada para la etiqueta automática y la opción [tipos de información confidencial](#configuring-sensitive-info-types-for-a-label).
 
 Cuando seleccione la opción **Clasificadores**, seleccione uno o más de los clasificadores capacitados incorporados de Microsoft. Si ha creado sus propios clasificadores capacitados personalizados, estos también están disponibles para seleccionar:
 
 ![Opciones para clasificadores capacitados y etiquetas de confidencialidad](../media/sensitivity-labels-classifers.png)
 
 Para más información sobre estos clasificadores, consulte [Más información sobre clasificadores que se pueden entrenar (versión preliminar)](classifier-learn-about.md).
-
-Durante el periodo de previsualización para esta opción, las siguientes aplicaciones soportan clasificadores capacitados para etiquetas de confidencialidad:
-
-- Aplicaciones de Microsoft 365 para empresas ([anteriormente Office 365 ProPlus](/deployoffice/name-change)) para Windows, que ahora se implementan en el [Canal actual](/deployoffice/overview-update-channels#current-channel-overview) en la versión 2006 y posteriores:
-    - Word
-    - Excel
-    - PowerPoint
-
-- Office para las aplicaciones web, cuando se han [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
-    - Word
-    - Excel
-    - PowerPoint
-    - Outlook
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Recomendación para que el usuario aplique una etiqueta de confidencialidad
 
@@ -191,7 +178,7 @@ Específico para las etiquetas integradas:
 
 - Para las etiquetas recomendadas en las versiones de escritorio de Word, el contenido confidencial que desencadenó la recomendación está marcado para que los usuarios puedan revisar y quitar el contenido confidencial en lugar de aplicar la etiqueta de confidencialidad recomendada.
 
-- Para obtener más información sobre cómo se aplican estas etiquetas en las aplicaciones de Office, capturas de pantalla de ejemplo, y cómo se detecta la información confidencial, consulte [Aplicar o recomendar automáticamente etiquetas de confidencialidad a sus archivos y correos electrónicos en Office](https://support.office.com/es-ES/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Para obtener más información sobre cómo se aplican estas etiquetas en las aplicaciones de Office, capturas de pantalla de ejemplo, y cómo se detecta la información confidencial, consulte [Aplicar o recomendar automáticamente etiquetas de confidencialidad a sus archivos y correos electrónicos en Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Específico del cliente de etiquetado unificado de Azure Information Protection:
 

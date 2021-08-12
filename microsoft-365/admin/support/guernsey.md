@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 625553a91aa8cb6d962da7826c230e48c85591a9
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7e6de89ab2d94d983fd62c18aab71a98805e76634294326332bf0df7c8cf789d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298763"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821264"
 ---
 # <a name="contact-support-for-guernsey"></a>Póngase en contacto con el soporte técnico de Guernsey
 

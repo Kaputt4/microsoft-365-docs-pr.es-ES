@@ -1,5 +1,5 @@
 ---
-title: Cambiar el nombre del centro de temas en Temas de Microsoft Viva
+title: Cambie el nombre del centro de temas en Temas Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,21 +9,21 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Obtenga información sobre cómo cambiar el nombre del centro de temas en Temas de Microsoft Viva.
-ms.openlocfilehash: 91f0693ba24e412812e1b8db19cfcf0febd2ec66
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+description: Obtenga información sobre cómo cambiar el nombre del centro de temas en Temas Microsoft Viva.
+ms.openlocfilehash: ba172df38a42ac00267496e2126c9d01058bb45bc925bfa8f75b3e3e98111247
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794684"
 ---
-# <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Cambiar el nombre del centro de temas en Temas de Microsoft Viva
+# <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Cambie el nombre del centro de temas en Temas Microsoft Viva
 
-Puede cambiar el nombre del centro de temas en el centro [Microsoft 365 de administración.](https://admin.microsoft.com) Debe ser un administrador global o SharePoint administrador para realizar estas tareas.
+Puede cambiar el nombre del centro de temas en el [Centro de administración de Microsoft 365](https://admin.microsoft.com). Debe ser un administrador global o SharePoint administrador para realizar estas tareas.
 
 ## <a name="to-access-topics-management-settings"></a>Para acceder a la configuración de administración de temas:
 
-1. En el Centro Microsoft 365 administración, haga clic **en Configuración** y, a continuación, en Configuración de **la organización.**
+1. En la Centro de administración de Microsoft 365, haga clic **en Configuración** y, a continuación, en Configuración de **la organización**.
 2. En la **pestaña Servicios,** haga clic en **Experiencias del tema**.
 
     ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
@@ -44,8 +44,8 @@ Para cambiar el nombre del centro de temas
 
 ## <a name="see-also"></a>Consulte también
 
-[Administrar la detección de temas en Temas de Microsoft Viva](topic-experiences-discovery.md)
+[Administrar la detección de temas en Temas Microsoft Viva](topic-experiences-discovery.md)
 
-[Administrar visibilidad de temas en Temas de Microsoft Viva](topic-experiences-knowledge-rules.md)
+[Administrar la visibilidad del tema en Temas Microsoft Viva](topic-experiences-knowledge-rules.md)
 
-[Administrar permisos de temas en Temas de Microsoft Viva](topic-experiences-user-permissions.md)
+[Administrar permisos de temas en Temas Microsoft Viva](topic-experiences-user-permissions.md)
