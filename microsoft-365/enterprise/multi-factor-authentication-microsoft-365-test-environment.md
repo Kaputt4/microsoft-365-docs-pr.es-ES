@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: Configure la autenticación multifactor mediante mensajes de texto enviados a un teléfono inteligente en su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: aeb8940a9499909b8c568d1230f9aa45aee07b3d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4f410b7e8a57a119ecce33626354639af89c0e65aea01b123d213908735dbb00
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813023"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Autenticación multifactor para su Microsoft 365 entorno de prueba empresarial
 
@@ -56,7 +56,7 @@ Si desea probar la autenticación multifactor en una empresa simulada, siga las 
 
 Siga estos pasos para habilitar la autenticación multifactor para la cuenta Usuario 2:
   
-1. Abra una instancia privada independiente del explorador, vaya al centro de administración de Microsoft 365 ( ) y, a continuación, inicie [https://portal.microsoft.com](https://portal.microsoft.com) sesión con su cuenta de administrador global.
+1. Abra una instancia privada independiente del explorador, vaya al Centro de administración de Microsoft 365 ( ) y, a continuación, [https://portal.microsoft.com](https://portal.microsoft.com) inicie sesión con su cuenta de administrador global.
     
 2. En la navegación izquierda, seleccione **Usuarios**  >  **usuarios activos.**
     
@@ -70,7 +70,7 @@ Siga estos pasos para habilitar la autenticación multifactor para la cuenta Usu
     
 7. En el **cuadro de diálogo** Actualizaciones correctas, seleccione **Cerrar**.
     
-8. En la **Microsoft 365 centro** de administración, seleccione el icono de cuenta de usuario en la esquina superior derecha y, a continuación, seleccione **Cerrar sesión.**
+8. En la **Centro de administración de Microsoft 365,** seleccione el icono de cuenta de usuario en la esquina superior derecha y, a continuación, seleccione **Cerrar sesión.**
     
 9. Cierre la instancia del explorador.
    
@@ -78,7 +78,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
   
 1. Abra una nueva instancia privada del explorador.
     
-2. Vaya al Centro [Microsoft 365 administración](https://admin.microsoft.com) e inicie sesión con el nombre y la contraseña de la cuenta de usuario 2.
+2. Vaya a la [Centro de administración de Microsoft 365](https://admin.microsoft.com) e inicie sesión con el nombre y la contraseña de la cuenta de usuario 2.
     
 3. Después de iniciar sesión, se le pedirá que configure la cuenta para obtener más información. Seleccione **Siguiente**.
     
@@ -108,7 +108,7 @@ En esta fase, se habilita la autenticación multifactor para la cuenta de usuari
 
 A continuación, cree un nuevo grupo denominado MFAUsers y agregue la cuenta usuario 3 a él.
 
-1. En la **Microsoft 365 centro de administración,** seleccione **Grupos** en la navegación izquierda y, a continuación, **seleccione Grupos**.
+1. En la **Centro de administración de Microsoft 365,** seleccione **Grupos** en la navegación izquierda y, a continuación, **seleccione Grupos**.
 2. Seleccione **Agregar un grupo**.
 3. En el **panel Elegir un tipo de grupo,** seleccione **Seguridad** y, a continuación, **seleccione Siguiente**.
 4. En el **panel Configurar los conceptos** básicos, seleccione **Crear grupo** y, a continuación, **seleccione Cerrar**.
@@ -129,7 +129,7 @@ A continuación, cree una directiva de acceso condicional para requerir la auten
 8. En la **sección Controles de acceso** del panel **Nuevo,** seleccione **Conceder**.
 9. En el **panel Conceder,** seleccione **Requerir autenticación multifactor** y, a continuación, **seleccione Seleccionar**.
 10. En el **panel Nuevo,** seleccione **Activar para** **Habilitar directiva** y, a continuación, **seleccione Crear**.
-11. Cierre las **pestañas Azure Portal** **y Microsoft 365 centro de** administración.
+11. Cierre Azure **Portal** y **Centro de administración de Microsoft 365** pestañas.
 
 Para probar esta directiva, cerrar sesión e iniciar sesión con la cuenta usuario 3. Se le pedirá que configure MFA. Esto demuestra que se está aplicando la directiva MFAUsers.
 

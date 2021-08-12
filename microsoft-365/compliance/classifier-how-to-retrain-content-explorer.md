@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo proporcionar comentarios a un clasificador que se puede entrenar en el Explorador de contenido.
-ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: fddb25bb1ebf702d19767c13f65df4f925fcfc78a7036eb769b96241b271471c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793069"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796351"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo volver a entrenar un clasificador en el explorador de contenido
 
@@ -61,7 +61,7 @@ Para obtener más información sobre el flujo de trabajo general de reentrenamie
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo volver a entrenar un clasificador en el explorador de contenido
 
-1. Inicie sesión en el Microsoft 365 de cumplimiento con el acceso a roles de administrador de seguridad o administración de cumplimiento y **abra** Microsoft 365 explorador de contenido de clasificación  >  **de** datos del  >  **centro de cumplimiento.** 
+1. Inicie sesión para iniciar sesión Centro de cumplimiento de Microsoft 365 acceso a roles de administrador de seguridad o administración de cumplimiento y **abra Centro de cumplimiento de Microsoft 365** de contenido de  >  **clasificación de**  >  **datos**. 
 2. En la **lista Filtrar por etiquetas, tipos** de información o categorías, expanda **Clasificadores que se pueden entrenar.**
 
 > [!IMPORTANT]

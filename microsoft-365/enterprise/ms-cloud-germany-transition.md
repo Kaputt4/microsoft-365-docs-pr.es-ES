@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: comprender la migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en las nuevas regiones del centro de datos alemán'
-ms.openlocfilehash: 4162e51164120cecaa431ad6883d3ee112ad4880
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: 0c5e4418a44c463ab05f920f53f4c46b8fdc7c521d84deca48bdfdbfb207befa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813011"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migración de Microsoft Cloud Deutschland a Office 365 servicios en las nuevas regiones del centro de datos alemán
 
@@ -66,7 +66,7 @@ Esta figura muestra las diez fases de migración a los nuevos centros de datos a
 
 :::image type="content" alt-text="Las diez fases de migración a los nuevos centros de datos de Alemania" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
-Estas fases comienzan cuando [se opta por la migración.](./ms-cloud-germany-migration-opt-in.md) La mayoría de las fases de migración se ejecutan como operaciones de servicio back-end con una interacción mínima del cliente necesaria y se ejecutan una fase tras otra. El inicio de tareas adicionales dirigidas por el cliente y el estado general de migración se comunicarán a través del Centro de mensajes del centro de administración de Microsoft 365 durante el proceso de migración. Ejemplo de tareas puede incluir actualizaciones dns administradas por el cliente, reconfiguración de la configuración híbrida para Exchange híbridos o migración de Azure.
+Estas fases comienzan cuando [se opta por la migración.](./ms-cloud-germany-migration-opt-in.md) La mayoría de las fases de migración se ejecutan como operaciones de servicio back-end con una interacción mínima del cliente necesaria y se ejecutan una fase tras otra. El inicio de tareas adicionales dirigidas por el cliente y el estado general de migración se comunicarán a través del Centro de mensajes del Centro de administración de Microsoft 365 durante el proceso de migración. Ejemplo de tareas puede incluir actualizaciones dns administradas por el cliente, reconfiguración de la configuración híbrida para Exchange híbridos o migración de Azure.
 
 La migración no comienza inmediatamente cuando se produce la suscripción. La organización se agrega a la lista de inquilinos que están programados para la migración posterior. Ahora puede comenzar las fases previas al trabajo, ya que son fundamentales para garantizar una migración y un uso correctos al finalizar:
 
@@ -97,7 +97,7 @@ Después del último traslado de Azure AD al servicio mundial, se espera que tod
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>Mover a las nuevas regiones del centro de datos alemán
 
-Los clientes existentes de Microsoft Cloud Deutschland ahora pueden comenzar a migrar sus servicios Office 365, Dynamics 365 Customer Engagement y Power Platform. El primer paso consiste en [participar en una migración dirigida por Microsoft](./ms-cloud-germany-migration-opt-in.md) a las nuevas regiones del centro de datos alemán. Al renovar la suscripción, opta automáticamente por una migración asistida por Microsoft. Microsoft notificará a los administradores de inquilinos del cliente con correo electrónico y en el Centro de mensajes del centro Microsoft 365 administración cuando esto haya ocurrido. Sin embargo, si prefiere iniciar el [](./ms-cloud-germany-migration-opt-in.md) proceso ahora, puede participar directamente en Microsoft 365 centro de administración actual. Se espera que las migraciones comiencen a principios de 2021 y que se completen el 29 de octubre de 2021. 
+Los clientes existentes de Microsoft Cloud Deutschland ahora pueden comenzar a migrar sus servicios Office 365, Dynamics 365 Customer Engagement y Power Platform. El primer paso consiste en [participar en una migración dirigida por Microsoft](./ms-cloud-germany-migration-opt-in.md) a las nuevas regiones del centro de datos alemán. Al renovar la suscripción, opta automáticamente por una migración asistida por Microsoft. Microsoft notificará a los administradores de inquilinos del cliente con correo electrónico y en el Centro de mensajes del Centro de administración de Microsoft 365 cuando esto haya ocurrido. Sin embargo, si prefiere iniciar el proceso ahora, puede participar [directamente](./ms-cloud-germany-migration-opt-in.md) en Centro de administración de Microsoft 365 hoy. Se espera que las migraciones comiencen a principios de 2021 y que se completen el 29 de octubre de 2021. 
 
 Como resultado de la migración, los datos principales del cliente y las suscripciones se mueven a las nuevas regiones del centro de datos alemán.
 
@@ -205,7 +205,7 @@ Si tiene Azure con Office 365, Dynamics 365 o Power BI, primero debe seguir el p
 
 **Office 365**
 
-[Participe](./ms-cloud-germany-migration-opt-in.md) hoy en la migración liderada por Microsoft. Cuando estemos listos para iniciar la migración, le informaremos a través del Centro de mensajes en el centro Microsoft 365 administración.
+[Participe](./ms-cloud-germany-migration-opt-in.md) hoy en la migración liderada por Microsoft. Cuando estemos listos para iniciar la migración, le informaremos a través del Centro de mensajes de la Centro de administración de Microsoft 365.
 
 **Dynamics 365 y Power BI**
 
@@ -246,9 +246,9 @@ Durante la migración de Microsoft Cloud Deutschland a los servicios Office 365,
 | \_Office 365 Empresa Essentials DE (O365 \_ BUSINESS \_ ESSENTIALS \_ DE) | Microsoft 365 Empresa Básico (O365 \_ BUSINESS \_ ESSENTIALS) |
 | \_Office 365 Empresa Premium DE (O365 \_ EMPRESA \_ PREMIUM \_ DE) | Microsoft 365 Empresa Estándar (O365 \_ EMPRESA \_ PREMIUM) |
 | \_Office 365 Empresa DE (O365 \_ BUSINESS \_ DE) | Aplicaciones Microsoft 365 para negocios (O365 \_ BUSINESS) |
-| Office 365 E1 \_ DE (STANDARDPACK \_ DE) | Office 365 E1 (STANDARDPACK) |
+| \_Office 365 E1 DE (STANDARDPACK \_ DE) | Office 365 E1 (STANDARDPACK) |
 | Office 365 E3 sin ProPlus \_ DE (ENTERPRISEPACKWITHOUTPROPLUS \_ DE) | Office 365 E3 sin ProPlus (ENTERPRISEPACKWITHOUTPROPLUS) |
-| Office 365 E3 \_ DE (ENTERPRISEPACK \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
+| \_Office 365 E3 DE (ENTERPRISEPACK \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
 | Office 365 Enterprise E1 \_ DE (STANDARDPACK \_ DE) | Office 365 Enterprise E1 (STANDARDPACK) |
 | Office 365 Enterprise E3 \_ DE (ENTERPRISEPACK \_ DE) | Office 365 Enterprise E3 (ENTERPRISEPACK) |
 | \_Office 365 Extra File Storage DE (SHAREPOINTSTORAGE \_ DE) | Office 365 Extra File Storage (SHAREPOINTSTORAGE) |
@@ -284,8 +284,8 @@ Durante la migración de Microsoft Cloud Deutschland a los servicios Office 365,
 Si tiene preguntas, puede ponerse en contacto con nosotros o con su partner:
 
 - Para Azure, puede enviar [nuevas solicitudes de soporte técnico](https://portal.microsoftazure.de/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) en Azure Portal.
-- Por Office 365, puede enviar preguntas mediante el vínculo &quot; ¿Necesita ayuda? del &quot; Centro Microsoft 365 [administración](https://portal.office.de/).
-- Si es cliente de Dynamics 365 Customer Engagement y Power BI y también tiene Office 365, puede enviar preguntas mediante el vínculo ¿Necesita ayuda? del Centro de administración de &quot; &quot; [Microsoft 365](https://portal.office.de/). Las opciones de soporte de Dynamics 365 Customer Engagement se encuentran [aquí](/dynamics365/get-started/support/). Las opciones de soporte técnico de Power BI se encuentran [aquí](https://powerbi.microsoft.com/support/).
+- Por Office 365, puede enviar preguntas mediante el vínculo &quot; ¿Necesita ayuda? &quot; de la [Centro de administración de Microsoft 365](https://portal.office.de/).
+- Si es cliente de Dynamics 365 Customer Engagement y Power BI y también tiene Office 365, puede enviar preguntas mediante el vínculo ¿Necesita ayuda? de la &quot; &quot; [Centro de administración de Microsoft 365](https://portal.office.de/). Las opciones de soporte de Dynamics 365 Customer Engagement se encuentran [aquí](/dynamics365/get-started/support/). Las opciones de soporte técnico de Power BI se encuentran [aquí](https://powerbi.microsoft.com/support/).
 
 ### <a name="my-customer-already-has-a-m365-tenant-in-the-global-microsoft-cloud-in-addition-to-a-microsoft-cloud-deutschland-tenant-can-these-two-tenants-be-merged-into-one-as-part-of-the-migration"></a>Mi cliente ya tiene un inquilino M365 en la nube global de Microsoft además de un inquilino de Microsoft Cloud Deutschland. ¿Estos dos inquilinos se pueden combinar en uno como parte de la migración?
 

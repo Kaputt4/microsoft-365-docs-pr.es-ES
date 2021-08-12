@@ -1,6 +1,6 @@
 ---
-title: Introducción a la adopción de temas de Microsoft Viva
-description: Obtenga información sobre cómo impulsar la adopción de temas de Microsoft Viva en su organización.
+title: Introducción a la adopción de Temas Microsoft Viva
+description: Obtenga información sobre cómo impulsar la adopción de Temas Microsoft Viva en su organización.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: e8d7ca4786893fb5eb39090d9a271ace1c62d321
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 591b83823aac1679209ed6cdd0069d559e9fe3e7adfbf7a3f24f0730f37ce912
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596973"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834713"
 ---
-# <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Introducción a la adopción de temas de Microsoft Viva
+# <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Introducción a la adopción de Temas Microsoft Viva
 
 Antes de empezar con la adopción, debe comprender los conceptos relacionados con la administración de conocimientos y los temas de Viva. En el siguiente diagrama se muestra lo que sucede durante la detección y la curación de temas:
 
@@ -26,7 +26,7 @@ Antes de empezar con la adopción, debe comprender los conceptos relacionados co
 
 - **Detección**: los usuarios pueden descubrir información en las aplicaciones que usan a diario a través de tarjetas de tema; también pueden descubrir temas en Búsqueda de Microsoft.
 - **Conservación**: los expertos en la materia (SME) refinan los temas a través de las páginas de temas e IA se enriquece de su entrada. El Centro de temas contiene páginas de temas que los usuarios pueden explorar y los expertos pueden administrar.
-- **Identificación**: con conocimientos de Microsoft Graph e inteligencia artificial (IA) y las personas (temas, aptitudes, etc.) se identifican y organizan automáticamente en temas relacionados. El contenido de SharePoint está indexado con contenido de seguridad.
+- **Identificación**: con conocimientos de Microsoft Graph e inteligencia artificial (IA) y las personas (temas, aptitudes, etc.) se identifican y organizan automáticamente en temas relacionados. El contenido de SharePoint está indexado con contenido de seguridad.
 - **Extensión:** con microsoft Graph de contenido (próximamente), puede ingerir conocimientos de repositorios de datos y servicios externos.
 
 Para obtener más información, puede revisar la [introducción](topic-experiences-overview.md) para una introducción.
@@ -50,7 +50,7 @@ Revise esta lista de requisitos previos para sacar el máximo partido a Temas Vi
 |Producto o característica |Descripción |
 |:-------|:--------|
 |SharePoint Online con páginas modernas de SharePoint |La minería de temas solo incluye contenido SharePoint sitios y las tarjetas de tema solo se pueden ver en páginas modernas.|
-|Microsoft Graph |Puede controlar si los temas se incluyen o excluyen de la búsqueda o Delve con la configuración de Microsoft Graph. |
+|Microsoft Graph |Puede controlar si los temas se incluyen o excluyen de la búsqueda o Delve con la configuración de Microsoft Graph. |
 
 ## <a name="plan-for-adoption"></a>Planear la adopción
 
@@ -69,7 +69,7 @@ Para planear la adopción de Viva Topics, debe:
     - Comience a crear la comunidad y piense en cómo estos diferentes grupos pueden usar Temas de Viva en toda la organización.
 
 3. Entrenar a su organización: la mayoría de las personas comprenderá intuitivamente el concepto de temas y cómo las tarjetas de temas compilan información relevante, y comprenderán y verán el valor. Pero es posible que desee crear un aprendizaje que se adapte a su propia cultura y organización, para mostrar cómo desea que se utilicen Los temas de Viva. Algunos recursos de aprendizaje:
-    - [Project Centro de recursos de Cortex](https://aka.ms/projectcortex). Incluye información general e información de características, vídeos y presentaciones grabados de horas de oficina, e información sobre los partners y sus ofertas.
+    - [Proyecto Cortex de recursos](https://aka.ms/projectcortex). Incluye información general e información de características, vídeos y presentaciones grabados de horas de oficina, e información sobre los partners y sus ofertas.
     - Próximamente, vídeos de aprendizaje y ayuda para los usuarios finales.
 
 4. [Crear una red de campeones:](#build-a-champion-network)

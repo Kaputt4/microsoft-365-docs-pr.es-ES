@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: El registro de auditoría de buzones está activado de forma predeterminada en Microsoft 365 (también denominada auditoría de buzones predeterminada o auditoría de buzones de correo activada de forma predeterminada). Esto significa que determinadas acciones realizadas por propietarios de buzones, delegados y administradores se registran automáticamente en un registro de auditoría de buzones de correo, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: f74cb23a029d4710a19aeb18999169f6adc636a4
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9b649e1e81ba9a70e11d255ba35af17869744e9bbb9b26ba7cc84294e10afafb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796063"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -100,7 +100,7 @@ En la tabla siguiente se describen las acciones de buzón que están disponibles
 
 ****
 
-|Acción buzón|Descripción|Admin|Delegado|Owner|
+|Acción buzón|Descripción|Admin|Delegado|Propietario|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|Aunque este valor se acepta como una acción de buzón de correo, ya está incluido en la acción **UpdateFolderPermissions** y no se audita por separado. En otras palabras, no use este valor.||||
 |**ApplyRecord**|Un elemento se etiqueta como un registro.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
@@ -143,7 +143,7 @@ Recuerde que un administrador con permiso de acceso total a un buzón Microsoft 
 
 ****
 
-|Acción buzón|Descripción|Admin|Delegado|Owner|
+|Acción buzón|Descripción|Admin|Delegado|Propietario|
 |---|---|:---:|:---:|:---:|
 |**Crear**|Creación de un elemento de calendario. No se audita la creación, el envío ni la recepción de un mensaje.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|

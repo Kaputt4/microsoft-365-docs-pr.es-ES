@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b9a146d2dd66222d405243ea5db66486c2678412
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f709d0929b12d6f19121c6ca6c653f6484bab6c2ba2d3df52fda446b675deca5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806186"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Ver y organizar la cola de incidentes de Microsoft Defender para punto de conexión
 
@@ -84,7 +84,7 @@ Por ejemplo: *Incidente de varias fases en varios puntos de conexión notificado
 > Los incidentes que existían antes de la implementación de la nomenclatura automática de incidentes conservarán su nombre.
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cola de incidentes](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)

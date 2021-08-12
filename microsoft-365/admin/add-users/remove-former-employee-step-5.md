@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para bloquear el acceso a dispositivos móviles de un antiguo empleado.
-ms.openlocfilehash: 603192f2ad2f22056f56157751c35a30a4502d12
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8613e5a08cae43ebb5bbb9dbb0d7f99c734d47303a9a9349f402b512dd18905e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827445"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>Paso 5: Borrar y bloquear el dispositivo móvil de un antiguo empleado
 

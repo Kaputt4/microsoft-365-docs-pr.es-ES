@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: Obtenga información sobre cómo ver, enumerar o mostrar sus Microsoft 365 de usuario de diferentes maneras con PowerShell.
-ms.openlocfilehash: 77219fb89430ed257ef2a68a7b24bf9ebac715b2
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b7a899d7b67b124ffa1db391cd8762cf220d1aa9da01a9e60cb7cb488da1bd34
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290176"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53812963"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Ver Microsoft 365 de usuario con PowerShell
 
@@ -321,7 +321,7 @@ Si usa la sincronización de directorios para crear y administrar los usuarios d
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

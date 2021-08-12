@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: obtenga información sobre cómo habilitar el archivado de expansión automática, que proporciona a los usuarios almacenamiento ilimitado para sus Exchange Online buzones de correo. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac5661ac43ed9c0f35eba20007f0c4c4406ebf20
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e92f114a613c202e6c61830604bb9d3c16e1d0259f33a0304a9bb244870a562c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795928"
 ---
 # <a name="enable-unlimited-archiving---admin-help"></a>Habilitar archivado ilimitado: Ayuda para administradores
 
@@ -48,7 +48,7 @@ Puede usar la característica de Exchange Online de archivado de expansión auto
 
 Puede habilitar el archivado de expansión automática para toda la organización. Después de activarlo, el archivado de expansión automática se habilitará para los buzones de usuario existentes y para los nuevos buzones de usuario que se crean. Al crear buzones de usuario, asegúrese de habilitar el buzón de archivo principal del usuario para que la característica de archivado de expansión automática funcione para el nuevo buzón de usuario.
   
-1. [Conectarse al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Ejecute el siguiente comando en Exchange Online PowerShell para habilitar el archivado de expansión automática para toda la organización.
 
@@ -68,7 +68,7 @@ Al habilitar el archivado de expansión automática para un usuario específico 
 
 Este espacio adicional se agrega para evitar problemas de almacenamiento que puedan producirse antes de aprovisionar el archivo de expansión automática. No se agrega  *espacio de almacenamiento*  adicional al habilitar el archivado de expansión automática para toda la organización, como se describe en la sección anterior.
   
-1. [Conectarse al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Ejecute el siguiente comando en Exchange Online PowerShell para habilitar el archivado de expansión automática para un usuario específico. Como se explicó anteriormente, el buzón de archivo del usuario (archivo principal) debe estar habilitado para poder activar el archivado de expansión automática para ese usuario.
 

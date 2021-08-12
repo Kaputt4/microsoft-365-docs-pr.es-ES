@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1b716a37aa39dffc8dc541335f42265ae47fe989
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 980cac2d3997e062758a5d8f95f86ff5fa65a8988e94b2485136ed5eca49a7d1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806165"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -95,7 +95,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessFileSize` | largo | Tamaño del archivo que ejecutó el proceso responsable del evento |
 | `SensitivityLabel` | cadena | Etiqueta aplicada a un correo electrónico, archivo u otro contenido para clasificarlo para la protección de la información |
 | `SensitivitySubLabel` | cadena | Sublabel applied to an email, file, or other content to classify it for information protection; las subetiquetas de confidencialidad se agrupan bajo etiquetas de confidencialidad, pero se tratan de forma independiente |
-| `IsAzureInfoProtectionApplied` | boolean | Indica si azure Information Protection cifra el archivo |
+| `IsAzureInfoProtectionApplied` | booleano | Indica si azure Information Protection cifra el archivo |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
 | `AppGuardContainerId` | cadena | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
 | `AdditionalFields` | cadena | Información adicional sobre la entidad o el evento |

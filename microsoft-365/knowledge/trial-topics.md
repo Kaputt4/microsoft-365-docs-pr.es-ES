@@ -12,12 +12,12 @@ ms.custom: ''
 search.appverid: ''
 localization_priority: Normal
 description: Obtenga información sobre cómo planear y ejecutar un programa piloto de prueba para Temas Microsoft Viva en su organización.
-ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 529d201203c45a5b3f39d1c6ac0f1a3a7f691aaba23098dafc32a42911247aca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834688"
 ---
 # <a name="run-a-trial-of-microsoft-viva-topics"></a>Ejecute una prueba de Temas Microsoft Viva
 
@@ -135,6 +135,6 @@ Si no compra licencias después de la versión de prueba:
 - Se perderán los temas definidos por IA.
 - Los temas que haya editado un colaborador de temas permanecerán en la biblioteca de páginas del centro de temas. Solo el contenido proporcionado manualmente permanecerá en estas páginas, no cualquier contenido sugerido por AI.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Introducción a la adopción de Temas Microsoft Viva](topics-adoption-getstarted.md)

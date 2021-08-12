@@ -19,12 +19,12 @@ description: Use detecciones en tiempo real y explorador en el portal de Microso
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee9c4c63817d9c6860942eb8001b02a0535333b1
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 35044963b34d9120eb1490e64b8c9831ba6840aad7d7aa6b3b2776e70602d6fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203261"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806015"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 

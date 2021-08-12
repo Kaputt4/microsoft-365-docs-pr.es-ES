@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: descripción de las actividades de etiquetado que están disponibles en el explorador de actividades.
-ms.openlocfilehash: 6dbfe8341e714c49795d8aaf7991988bec901496bf28b2bbd4d4711bdbd81c23
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: e9c1fadfda0d0e0fbfc5d942378035ea60ffaf266b64c117dfeb400411b30053
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520488"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796111"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Actividades de etiquetado que están disponibles en el Explorador de actividades
 
@@ -39,7 +39,7 @@ Este evento se genera cada vez que se etiqueta un documento sin etiquetar o se e
 |Origen  |Notificado en el explorador de actividades | Nota  |
 |---------|---------|---------|
 | Word, Excel, PowerPoint|sí |
-|Outlook| sí | |
+|Outlook| sí |de Win 32 |
 |SharePoint en línea, OneDrive|sí | |
 |Exchange        |sí         | |
 |Cliente unificado de Azure Information Protection (AIP) y escáner unificado AIP |sí |la nueva acción de *etiqueta AIP* se asigna a *la etiqueta aplicada en* el explorador de actividades   |
@@ -63,7 +63,7 @@ Este evento se genera cada vez que se actualiza una etiqueta de confidencialidad
 |Origen  |Notificado en el explorador de actividades|Nota  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |sí         |
-|Outlook         |sí         |
+|Outlook         |sí         |Win 32|
 |SharePoint En línea, OneDrive         |sí         |
 |Exchange         |sí         |
 |Cliente unificado AIP         |sí         |
@@ -84,7 +84,7 @@ Este evento se genera cada vez que se quita una etiqueta de confidencialidad de 
 |Origen  |Notificado en el explorador de actividades | Nota  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |sí         |
-|Outlook         |sí         ||
+|Outlook         |sí         |Win 32|
 |SharePoint En línea, OneDrive         |sí         |
 |Exchange         |sí         |
 |Cliente unificado AIP         |sí         |la acción quitar *etiqueta de* AIP se asigna a la acción de *etiqueta eliminada* en el explorador de actividades|

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en Advanced eDiscovery.
-ms.openlocfilehash: fc6fcc7973d9582714106506a41058bb2a905372
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: e5e899b3ee6268c0214dbcfe6b53566072fc75ed045e728a0f7845f25354e552
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841348"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams casos grandes (versión preliminar)
 
@@ -261,7 +261,7 @@ En conjuntos de revisión grandes con miles o millones de elementos, puede ser d
 
 En la tabla siguiente se describen las propiedades de metadatos Teams contenido.
 
-|Metadata (propiedad)  |Descripción  |
+|Metadata (propiedad)  |Description  |
 |:---------|:---------|
 |ContainsEditedMessage      | Indica si un archivo de transcripción contiene un mensaje editado. Los mensajes editados se identifican al ver el archivo de transcripción.|
 |ConversationId|GUID que identifica la conversación a la que está asociado el elemento. Los archivos de transcripción y los datos adjuntos de la misma conversación tienen el mismo valor para esta propiedad.|

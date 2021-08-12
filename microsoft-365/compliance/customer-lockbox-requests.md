@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a sus datos cuando se encuentra con un problema.
-ms.openlocfilehash: 6a6a1d45bfbc8b7c65d9ac8d58eb246643505c4f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4669abefe039d0f4ba75f22d267c54696cb680aee44df560befd93006c515ae5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922714"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796279"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de seguridad del cliente en Office 365
 
@@ -54,9 +54,9 @@ Los pasos siguientes describen el flujo de trabajo típico cuando un ingeniero d
 
     ![Ejemplo de una notificación de correo electrónico de caja de seguridad del cliente](../media/CustomerLockbox1.png)
 
-   Cualquier persona a la que se le asigne el rol de administrador [aprobador](/office365/admin/add-users/about-admin-roles) de acceso de la caja de seguridad del cliente en Microsoft 365 centro de administración puede aprobar las solicitudes de caja de seguridad del cliente.
+   Cualquier persona a la que se le haya asignado el rol de administrador de [aprobador](/office365/admin/add-users/about-admin-roles) de acceso de la caja de seguridad del cliente Centro de administración de Microsoft 365 puede aprobar solicitudes de caja de seguridad del cliente.
 
-6. El aprobador inicia sesión en el Microsoft 365 de administración y aprueba la solicitud. Este paso desencadena la creación de un registro de auditoría disponible al buscar en el registro de auditoría. Para obtener más información, vea [Auditing Customer Lockbox requests](#auditing-customer-lockbox-requests).
+6. El aprobador inicia sesión en el Centro de administración de Microsoft 365 y aprueba la solicitud. Este paso desencadena la creación de un registro de auditoría disponible al buscar en el registro de auditoría. Para obtener más información, vea [Auditing Customer Lockbox requests](#auditing-customer-lockbox-requests).
 
    Si el cliente rechaza la solicitud o no aprueba la solicitud en 12 horas, la solicitud expira y no se concede acceso al ingeniero de Microsoft.
 
@@ -156,7 +156,7 @@ Cuando una persona de la organización aprueba o deniega una solicitud de caja d
 | Dirección IP | La dirección IP del equipo en el que el aprobador ha aprobado o denegado una solicitud. |
 | Usuario       | La cuenta de servicio BOXServiceAccount@ \[ customerforest \] .prod.outlook.com.            |
 | Actividad   | Set-AccessToCustomerDataRequest; esta es la actividad de auditoría que se registra cuando usted aprueba o deniega una solicitud de Caja de seguridad del cliente.                                |
-| Elemento       | Guid de la solicitud de caja de seguridad del cliente                             |
+| Item       | Guid de la solicitud de caja de seguridad del cliente                             |
 
 La siguiente captura de pantalla muestra un ejemplo de un registro de registro de auditoría que corresponde a una solicitud de caja de seguridad de cliente aprobada. Si se denegó una solicitud de caja de seguridad del cliente, el valor del parámetro **ApprovalDecision** sería **Deny**.
 
@@ -185,7 +185,7 @@ Actualmente, la caja de seguridad del cliente es compatible Exchange Online, Sha
 
 #### <a name="is-customer-lockbox-available-to-all-customers"></a>¿La caja de seguridad del cliente está disponible para todos los clientes?
 
-La caja de seguridad del cliente se incluye con las suscripciones Microsoft 365 o Office 365 E5 y se puede agregar a otros planes con una protección de la información y cumplimiento o una suscripción de complemento de cumplimiento avanzado. Vea Planes [y precios para](https://products.office.com/business/office-365-enterprise-e5-business-software) obtener más información.
+La caja de seguridad del cliente se incluye con las suscripciones Microsoft 365 o Office 365 E5 y se puede agregar a otros planes con una suscripción de complemento de protección y cumplimiento de la información o de cumplimiento avanzado. Vea Planes [y precios para](https://products.office.com/business/office-365-enterprise-e5-business-software) obtener más información.
 
 #### <a name="what-is-customer-content"></a>¿Qué es el contenido del cliente?
 
@@ -219,7 +219,7 @@ Los administradores globales y cualquier persona que haya asignado el rol de adm
 
 #### <a name="how-do-i-opt-in-to-customer-lockbox"></a>¿Cómo puedo participar en la caja de seguridad del cliente?
 
-Un administrador global puede habilitar y configurar la caja de seguridad del cliente en el centro Microsoft 365 o Microsoft 365 de administración.
+Un administrador global puede habilitar y configurar la caja de seguridad del cliente en el Microsoft 365 o Centro de administración de Microsoft 365.
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Si apruebo una solicitud de caja de seguridad de cliente, ¿qué puede hacer el ingeniero y cómo voy a saber lo que hizo el ingeniero de Microsoft?
 
@@ -227,7 +227,7 @@ Después de aprobar una solicitud de caja de seguridad del cliente, el ingeniero
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>¿Cómo sé que Microsoft sigue el proceso de aprobación?
 
-Puede hacer referencia cruzada a las notificaciones de aprobación de correo electrónico enviadas a administradores y aprobadores de su organización con el historial de solicitudes de caja de seguridad del cliente en el centro de administración de Microsoft 365 correo electrónico.
+Puede hacer referencia cruzada a las notificaciones de aprobación de correo electrónico enviadas a administradores y aprobadores de su organización con el historial de solicitudes de caja de seguridad del cliente en el Centro de administración de Microsoft 365.
 
 La caja de seguridad del cliente se incluye en el último informe de auditoría [de SOC 1 SSAE 16](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports). Para obtener más información, puede encontrar los informes más recientes en el Portal de confianza [de servicio de Microsoft](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports).
 
@@ -245,7 +245,7 @@ En este momento, el período máximo para los permisos de acceso concedidos al i
 
 #### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>¿Cómo puedo obtener un historial de todas las solicitudes de caja de seguridad del cliente?
 
-Todas las solicitudes de caja de seguridad del cliente se ven en el centro Microsoft 365 administración.
+Todas las solicitudes de caja de seguridad del cliente se ven en el Centro de administración de Microsoft 365.
 
 #### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>¿Cómo correlacionar las solicitudes de acceso al contenido con los registros de auditoría relacionados?
 

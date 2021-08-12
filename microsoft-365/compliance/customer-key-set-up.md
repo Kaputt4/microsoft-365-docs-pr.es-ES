@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente para Microsoft 365.
-ms.openlocfilehash: e187c01a355cc9b926e892cb3326b5a527c714a4
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2db1aff638818fea18a55e331093fcd26ca30071995447ca817234f450798047
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344679"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796291"
 ---
 # <a name="set-up-customer-key"></a>Configurar clave de cliente
 
@@ -32,7 +32,7 @@ Configure Azure antes de poder usar la clave de cliente para Office 365. En este
 
 Antes de empezar, asegúrese de que tiene las suscripciones y licencias de Azure adecuadas para su organización. Use suscripciones de Azure de pago con un Enterprise Agreement o un proveedor de servicios en la nube. No se aceptan pagos basados en tarjetas de crédito. Aprobar y configurar las necesidades de la cuenta para la facturación. Las suscripciones que obtuvo a través de Free, Trial, Sponsors, MSDN Subscriptions y las que se encuentran en Soporte heredado no son elegibles.
 
-Office 365 E5, Microsoft 365 E5, Cumplimiento de Microsoft 365 E5 y Microsoft 365 E5 Desprotección de & gobierno ofrecen clave de cliente. Cumplimiento avanzado de Office 365 SKU ya no está disponible para adquirir nuevas licencias. Las Cumplimiento avanzado de Office 365 existentes seguirán siendo compatibles.
+Office 365 E5, Microsoft 365 E5, Cumplimiento de Microsoft 365 E5 y Microsoft 365 E5 de protección de & de gobierno ofrecen clave de cliente. Cumplimiento avanzado de Office 365 SKU ya no está disponible para adquirir nuevas licencias. Las Cumplimiento avanzado de Office 365 existentes seguirán siendo compatibles.
 
 Para comprender los conceptos y procedimientos de este artículo, revise la [documentación de Azure Key Vault.](/azure/key-vault/) Además, familiarícese con los términos usados en Azure, por ejemplo, [inquilino de Azure AD](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
   

@@ -28,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta Microsoft 365 administrador para restablecer las contraseñas de los usuarios en Microsoft 365 suscripción para empresas.
-ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: e01e4582398fa2226aed3288dc45c0c37b0ff72f18dd289c1008b91af0bfcd8a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827400"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 

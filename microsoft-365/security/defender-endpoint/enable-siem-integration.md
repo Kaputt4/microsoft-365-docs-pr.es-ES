@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 10f950ea3bb3621fd62ff97fb94dbfb1a4af8e47
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 2d003dac1f369dac22f5eccfaeb029b36604d5da13356e2d18f82dbcc87229e9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794059"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Habilitar la integración de SIEM en Microsoft Defender para endpoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "53591211"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
->¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Habilite la integración de la información de seguridad y la administración de eventos (SIEM) para que pueda extraer detecciones de Microsoft 365 Defender. Extraer detecciones mediante la solución SIEM o mediante la conexión directa a la API de REST de detecciones.
 
@@ -91,7 +91,7 @@ Ahora puede continuar con la configuración de la solución SIEM o la conexión 
 ## <a name="integrate-microsoft-defender-for-endpoint-with-ibm-qradar"></a>Integrar Microsoft Defender para endpoint con IBM QRadar 
 Puede configurar IBM QRadar para recopilar detecciones de Microsoft Defender para endpoint. Para obtener más información, vea [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Configurar HP ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Campos de Microsoft Defender para detección de puntos de conexión](api-portal-mapping.md)
 - [Extraer Microsoft Defender para detecciones de puntos de conexión mediante la API de REST](pull-alerts-using-rest-api.md)

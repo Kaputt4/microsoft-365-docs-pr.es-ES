@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Cómo activar o desactivar la característica de búsqueda de registro de auditoría en el Centro de cumplimiento de Microsoft 365 para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
-ms.openlocfilehash: 8da6ba3f8dc9fbc7564b7bd71e71c542cb118057
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: d0d6937a8a4f8f6fd6a8a6e6e3873f2ad8f51b56431268d3108d7808dba8467b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841252"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activar o desactivar la auditoría
 
