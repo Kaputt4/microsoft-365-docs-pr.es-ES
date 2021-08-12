@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 06/11/2021
+ms.date: 07/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: a285815a3f05054627d46144aa11f2790cce1535
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e72ef3c2f443194db0e45ca3dec553ba364e633504932bff72f303dc8dc0e53e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652904"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845157"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Administrar Microsoft Defender para endpoint con Intune
 
@@ -44,7 +44,7 @@ En este artículo se describe cómo encontrar la configuración de Microsoft Def
 ## <a name="find-your-microsoft-defender-for-endpoint-settings-in-intune"></a>Buscar la configuración de Microsoft Defender para puntos de conexión en Intune
 
 > [!IMPORTANT]
-> Debe ser administrador global o administrador de servicios en Intune para configurar las opciones descritas en este artículo. Para obtener más información, vea **[Tipos de administradores (Intune).](/mem/intune/fundamentals/users-add#types-of-administrators)**
+> Debe tener asignado el rol de administrador global o de administrador de servicio en Intune para configurar las opciones descritas en este artículo. Para obtener más información, vea **[Tipos de administradores (Intune).](/mem/intune/fundamentals/users-add#types-of-administrators)**
 
 1. Vaya a Azure Portal ( [https://portal.azure.com](https://portal.azure.com) ) e inicie sesión.
 

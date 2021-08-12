@@ -17,12 +17,12 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 870572a61c241d3d3c8ce6791cee77edba2a1956
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 38edd6e5483504b863db5651c4b645815839a2a19f56e44dfdffed06a7073f5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801427"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>Deshabilitar TLS 1.0 y 1.1 para Microsoft 365
 
@@ -43,14 +43,14 @@ De forma predeterminada, los protocolos TLS 1.2 y 1.1 están disponibles si no h
 
 ### <a name="on-windows-7"></a>En Windows 7
 
-Los protocolos TLS 1.1 y 1.2 no están disponibles sin la actualización [de KB 3140245.](https://support.microsoft.com/help/3140245) La actualización soluciona este problema y agrega la siguiente subclave del Registro:
+Los protocolos TLS 1.1 y 1.2 no están disponibles sin la actualización [3140245](https://support.microsoft.com/help/3140245) KB. La actualización soluciona este problema y agrega la siguiente subclave del Registro:
 
 ```console
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp
 ```
 
 > [!NOTE]
-> Windows 7 usuarios que no tienen esta actualización se ven afectados a partir del 31 de octubre de 2018. [KB 3140245](https://support.microsoft.com/help/3140245) tiene detalles sobre cómo cambiar la configuración de WINHTTP para habilitar los protocolos TLS.
+> Windows 7 usuarios que no tienen esta actualización se ven afectados a partir del 31 de octubre de 2018. [KB 3140245](https://support.microsoft.com/help/3140245) detalles sobre cómo cambiar la configuración de WINHTTP para habilitar los protocolos TLS.
 
 #### <a name="more-information"></a>Más información
 
@@ -66,7 +66,7 @@ El valor de la clave del Registro **DefaultSecureProtocols** que describe el art
 
 ## <a name="office-clients-and-tls-registry-keys"></a>Office clientes y claves del Registro TLS
 
-Puede hacer referencia a [KB 4057306 Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306). Este es un artículo general para administradores de TI y es documentación oficial sobre el cambio de TLS 1.2.
+Puede hacer referencia a KB 4057306 Preparación para el uso obligatorio de [TLS 1.2 en Office 365](https://support.microsoft.com/help/4057306). Este es un artículo general para administradores de TI y es documentación oficial sobre el cambio de TLS 1.2.
 
 En la tabla siguiente se muestran los valores de clave del Registro adecuados Office 365 clientes después del 31 de octubre de 2018.
 
@@ -80,7 +80,7 @@ En la tabla siguiente se muestran los valores de clave del Registro adecuados Of
 > [!IMPORTANT]
 > No use los protocolos SSL 2.0 y 3.0, que también se pueden establecer mediante la clave **DefaultSecureProtocols.** Ssl 2.0 y 3.0 se consideran protocolos obsoletos e inseguros. El procedimiento recomendado es terminar con el uso de SSL 2.0 y SSL 3.0, aunque la decisión de hacerlo depende en última instancia de lo que mejor se adapte a las necesidades del producto. Para obtener más información acerca de las vulnerabilidades de SSL 3.0, consulte [KB 3009008](https://support.microsoft.com/help/3009008).
 
-Puede usar la calculadora de Windows predeterminada en modo programador para configurar los mismos valores de clave del Registro de referencia. Para obtener más información, vea [KB 3140245 Update to enable TLS 1.1 and TLS 1.2 as a default secure protocols in WinHTTP in Windows](https://support.microsoft.com/help/3140245).
+Puede usar la calculadora de Windows predeterminada en modo programador para configurar los mismos valores de clave del Registro de referencia. Para obtener más información, vea KB 3140245 Update para habilitar [TLS 1.1 y TLS 1.2](https://support.microsoft.com/help/3140245)como protocolos seguros predeterminados en WinHTTP en Windows .
 
 Independientemente de si la actualización Windows 7 ([KB 3140245](https://support.microsoft.com/help/3140245)) está instalada o no, la subclave del Registro DefaultSecureProtocols no está presente y debe agregarse manualmente o a través de un objeto de directiva de grupo (GPO). Es decir, a menos que tenga que personalizar qué protocolos seguros están habilitados o restringidos, esta clave no es necesaria. Solo necesita la actualización Windows 7 SP1 ([KB 3140245](https://support.microsoft.com/help/3140245)).
 
@@ -96,7 +96,7 @@ Para obtener más información, vea [Preparing for the mandatory use of TLS 1.2 
 
 Los siguientes recursos proporcionan instrucciones para asegurarse de que los clientes usan TLS 1.2 o una versión posterior y deshabilitar TLS 1.0 y 1.1:
 
-- Si tiene clientes de Windows 7 que se conecten a Office 365, asegúrese de que TLS 1.2 sea el protocolo seguro predeterminado en WinHTTP en Windows. Para obtener más información, vea [KB 3140245- Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in).
+- Si tiene clientes de Windows 7 que se conecten a Office 365, asegúrese de que TLS 1.2 sea el protocolo seguro predeterminado en WinHTTP en Windows. Para obtener más información, [vea KB 3140245- Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in).
 - Para solucionar el uso débil de TLS mediante la eliminación de dependencias tls 1.0 y 1.1, consulte Compatibilidad con [TLS 1.2 en Microsoft](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/).
 - [La nueva funcionalidad IIS](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) facilita la búsqueda de clientes en [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) y [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) que se conectan al servicio mediante el uso de protocolos de seguridad débiles.
 - Obtenga más información sobre cómo [resolver el problema tls 1.0](https://www.microsoft.com/download/details.aspx?id=55266).

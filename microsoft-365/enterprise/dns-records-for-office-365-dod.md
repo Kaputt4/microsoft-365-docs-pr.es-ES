@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: registros DNS para Office 365 DoD'
 hideEdit: true
-ms.openlocfilehash: 656fb5aff3365dfb5f975f7d3ad1c222b36e1e56
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 23d342719e8b488fccab925a6db9574ca3f06fa8115b8b29920c038570cdfa2b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693839"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801079"
 ---
 # <a name="dns-records-for-office-365-dod"></a>Registros DNS para Office 365 DoD
 

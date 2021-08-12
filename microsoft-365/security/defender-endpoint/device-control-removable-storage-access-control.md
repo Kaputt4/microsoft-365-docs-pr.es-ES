@@ -16,18 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d7b4ab2ccdb072171b8e311d6464230229fbaf691c04a1730893073158000f00
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 4765477c4faf583fd9906aaa700aafc3fb26a992172f81eb4d3f6978724724be
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803241"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520727"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
-> [!NOTE]
-> La administración de directivas de grupo de este producto ahora es generalmente disponible (4.18.2106): vea el blog tech [Community: Proteger](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) el almacenamiento extraíble y la impresora con Microsoft Defender para endpoint 
-
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender para endpoint device control removable Storage Access Control permite realizar la siguiente tarea:
 
@@ -37,14 +35,15 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 ****
 
-| Privilegio | Permiso |
-|:---|:---|
-| Acceso | Lectura, Escritura, Ejecución |
-| Modo de acción | Auditoría, Permitir, Impedir |
-| Compatibilidad con CSP | Sí |
-| Compatibilidad con GPO | Sí |
-| Soporte técnico basado en usuarios | Sí |
-| Compatibilidad basada en máquina | Sí |
+|Privilegio|Permiso|
+|---|---|
+|Access|Lectura, Escritura, Ejecución|
+|Modo de acción|Auditoría, Permitir, Impedir|
+|Compatibilidad con CSP|Sí|
+|Compatibilidad con GPO|Sí|
+|Soporte técnico basado en usuarios|Sí|
+|Compatibilidad basada en máquina|Sí|
+|||
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
@@ -220,7 +219,7 @@ Para ayudarle a familiarizarse con Microsoft Defender para Endpoint Removable St
 
 La característica Storage control de acceso extraíble te permite aplicar directivas a través de la directiva de grupo a usuarios o dispositivos, o a ambos.
 
-### <a name="licensing"></a>Concesión de licencias
+### <a name="licensing"></a>Licencias
 
 Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
 

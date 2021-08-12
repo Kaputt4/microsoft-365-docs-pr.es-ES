@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Obtenga información sobre cómo implementar ExpressRoute para Office 365, que proporciona una ruta de enrutamiento alternativa a muchos servicios Office 365 Internet.
-ms.openlocfilehash: 3ad6102193a12325de0e4bb2ff16087738688587
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: f0f429d2fce1c83109e19191f1f3c60190046176c1ce03a31c159aa3591e21b4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801176"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
@@ -193,7 +193,7 @@ A menudo, hay varias ubicaciones de reunión que podrían seleccionarse dentro d
 
 |Ubicación  <br/> |Número de personas  <br/> |Latencia esperada en la red de Microsoft a través de la salida de Internet  <br/> |Latencia esperada en la red de Microsoft a través de ExpressRoute  <br/> |
 |----------|-----------|----------|-----------|
-|Los Ángeles  <br/> |10 000  <br/> |~15 ms  <br/> |~10ms (a través de Silicon Valley)  <br/> |
+|Los Ángeles  <br/> |10,000  <br/> |~15 ms  <br/> |~10ms (a través de Silicon Valley)  <br/> |
 |Washington DC  <br/> |15 000  <br/> |~20ms  <br/> |~10ms (a través de Nueva York)  <br/> |
 |Dallas  <br/> |5.000  <br/> |~15 ms  <br/> |~40ms (a través de Nueva York)  <br/> |
 
@@ -599,6 +599,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/impleme
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Intervalos de direcciones IP y direcciones URL de Office 365.](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

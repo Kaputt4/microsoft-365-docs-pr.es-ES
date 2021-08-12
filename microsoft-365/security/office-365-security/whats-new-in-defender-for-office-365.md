@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0eeba9fb8678a4b71e8fdaefb05acb0ec55978
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 79483956fe15cc3aacaaae90f23968efbd317a80a64c1bd7f0e6862c66580988
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726301"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520391"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -45,16 +45,25 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 ## <a name="july-2021"></a>Julio de 2021
 
 - [Mejoras en el análisis de correo electrónico en investigaciones automatizadas](email-analysis-investigations.md)
+- [Entrega avanzada:](configure-advanced-delivery.md)introducción a una nueva funcionalidad para configurar la entrega de simulaciones de suplantación de identidad de terceros a los usuarios y mensajes sin filtrar en buzones de operaciones de seguridad.
 - [Caja fuerte Vínculos para Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- Nuevas directivas de alerta para los siguientes escenarios: buzones en peligro, phishing de formularios, correos malintencionados entregados debido a invalidaciones y redondeo de ZAP
+  - Actividad de reenvío de correo electrónico sospechoso
+  - El usuario no puede compartir formularios y recopilar respuestas
+  - Formulario bloqueado debido a un posible intento de suplantación de identidad
+  - Formulario marcado y confirmado como suplantación de identidad
+  - [Nuevas directivas de alerta para ZAP](../../compliance/new-defender-alert-policies.md)
+- Las alertas de Microsoft Defender para Office 365 están ahora integradas en Microsoft 365 Defender: Microsoft 365 Defender cola de alertas unificadas y [cola de alertas unificadas](../defender/investigate-alerts.md)
+- [](user-tags.md) Las etiquetas de usuario ahora se integran en Microsoft Defender para obtener experiencias de alerta de Office 365, incluidos: la cola de alertas y los detalles de Office 365 Security & Compliance y el ámbito de las directivas de alerta personalizadas para las etiquetas de usuario para crear directivas de alertas dirigidas. 
+  - Las etiquetas también están disponibles en la cola de alertas unificadas en el centro de Microsoft 365 Defender (Microsoft Defender para Office 365 Plan 2)
 
 
 ## <a name="june-2021"></a>Junio de 2021
 
 - Nueva configuración del primer contacto consejo de seguridad dentro de las directivas contra suplantación de identidad. Este consejo de seguridad se muestra cuando los destinatarios reciben por primera vez un correo electrónico de un remitente o no suelen recibir correo electrónico de un remitente. Para obtener más información sobre esta configuración y cómo configurarla, consulte los siguientes artículos:
-
-- [Primer contacto consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-- [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)
-- [Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)
+  - [Primer contacto consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+  - [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)
+  - [Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>Abril/mayo de 2021
 
@@ -142,7 +151,7 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Microsoft 365 guía básica](https://www.microsoft.com/microsoft-365/roadmap)
 
