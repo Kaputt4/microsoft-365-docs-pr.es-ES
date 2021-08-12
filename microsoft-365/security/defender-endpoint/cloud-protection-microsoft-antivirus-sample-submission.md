@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: 2d30777754f05b46336e28c237b2264cef6ac802
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 347d9a6b5de1d9045baf8d4a0778788a18514600bfc6f56652951e4ad420f1bb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622285"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834245"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>Envío de ejemplo de antivirus de protección entregado en la nube
 

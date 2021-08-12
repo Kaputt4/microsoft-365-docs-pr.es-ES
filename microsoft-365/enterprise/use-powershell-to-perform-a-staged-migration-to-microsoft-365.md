@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: Obtenga información sobre cómo usar PowerShell para mover contenido de un sistema de correo electrónico de origen con el tiempo mediante una migración por fases a Microsoft 365.
-ms.openlocfilehash: 6a458f6164a842394ec87f59df11939a8c435ea2
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dd78d466c62303ffe208137f39ee5188c0d03c283fca04263842e63982183b92
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229652"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807257"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración preconfigurada a Microsoft 365
 

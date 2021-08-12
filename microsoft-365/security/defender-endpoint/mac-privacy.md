@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 580663a2644ff19ff580cfd0b13ac60e2ef233bb
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 082884e6230c37c65c88ddaec9a24ef05f22e75e853065be4c70ec23266dac2c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648164"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793369"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Privacidad de Microsoft Defender para endpoint en macOS
 

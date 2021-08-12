@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 141a2bee0617ce56ed848d9d6df0d5ffd414757e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 742a95bd9ad2cfb798244301cf3cb1ef86994f7926e25fa336c84df2ac52e5bd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793300"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Activar la experiencia de vista previa en Microsoft Defender para endpoint
 

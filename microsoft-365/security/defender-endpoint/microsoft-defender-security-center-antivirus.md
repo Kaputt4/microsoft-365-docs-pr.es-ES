@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 0de5817d4eb741885be6e43133b0886e90488bd4af04699a8c9dd970fbae8491
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007454"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793339"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
 
@@ -135,5 +135,5 @@ Para obtener más información, consulte los siguientes recursos:
 
 5. Para configurar las opciones  de recuperación de ransomware, selecciona Configurar en Recuperación de datos ransomware y sigue las instrucciones para vincular o configurar tu cuenta de OneDrive para que puedas recuperarte fácilmente de un ataque de ransomware. 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 - [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

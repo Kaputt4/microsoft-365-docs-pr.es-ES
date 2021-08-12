@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35bcc532c492acbd0856a5b5410176df58af574a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 65bfcf003ff1fc29187f0c66d2c39cf177b75b11ed792a5566ec0ef81b71d705
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793519"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -138,5 +138,3 @@ Defender para punto de conexión se integra directamente con varias soluciones d
 Con Microsoft 365 Defender, Defender para punto de conexión y varias soluciones de seguridad de Microsoft forman un conjunto unificado de defensa empresarial previa y posterior a la infracción que se integra de forma nativa en los puntos de conexión, la identidad, el correo electrónico y las aplicaciones para detectar, evitar, investigar y responder automáticamente a ataques sofisticados.
 
 
-## <a name="related-topic"></a>Tema relacionado
-[Microsoft Defender para punto de conexión ayuda a detectar amenazas sofisticadas](https://www.microsoft.com/itshowcase/microsoft-defender-atps-antivirus-capabilities-boost-malware-protection)

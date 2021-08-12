@@ -11,12 +11,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 45064584b622c313fee66c0699ab6495353342edad39948e8f8dabcd68911547
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807197"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 
@@ -29,7 +29,7 @@ Escritorio administrado de Microsoft garantiza que Aplicaciones Microsoft 365 pa
 - PowerPoint
 - Outlook
 - Publisher
-- Access
+- Acceso
 - Skype Empresarial
 - OneNote
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7686f28646135986a78b4c269e41e2fc3a70dff9
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: caf2e81d45e302b986753e641fb3704167fb092e033534869fdd48fabbdf3aac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904049"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834293"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Recopilar datos de diagnóstico antivirus de Microsoft Defender
 
@@ -91,7 +91,7 @@ Cuando se usa el parámetro SupportLogLocation, se creará una estructura de car
 <path>\<MMDD>\MpSupport-<hostname>-<HHMM>.cab
 ```
 
-| campo  | Descripción   |
+| campo  | Description   |
 |:----|:----|
 | path | Ruta de acceso especificada en la línea de comandos o recuperada de la configuración
 | MMDD | Mes y día en que se recopilaron los datos de diagnóstico (por ejemplo, 0530)

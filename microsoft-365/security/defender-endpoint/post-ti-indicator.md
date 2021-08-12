@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 42d6ed79868b9f32f8ea3cfe77bb78f1a86a8bea
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 464ed75474256e62ccb75756b3949441aae24d04483ccc4ca653db1439d0015b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793315"
 ---
 # <a name="submit-or-update-indicator-api"></a>Enviar o actualizar API de indicadores
 
@@ -69,7 +69,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -78,16 +78,16 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 Parámetro|Tipo|Descripción
 :---|:---|:---
-indicatorValue|Cadena|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
+indicatorValue|String|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
 acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "AlertAndBlock" y "Allowed". **Required**
 aplicación|Cadena|La aplicación asociada al indicador. **Optional**
-title|Cadena|Título de alerta del indicador. **Required**
+title|String|Título de alerta del indicador. **Required**
 description|Cadena|Descripción del indicador. **Required**
 expirationTime|DateTimeOffset|La hora de expiración del indicador. **Optional**
 severity|Enum|Gravedad del indicador. los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
 recommendedActions|Cadena|Acciones recomendadas de alerta del indicador TI. **Optional**
-rbacGroupNames|Cadena|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
+rbacGroupNames|String|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
 
 ## <a name="response"></a>Respuesta
 

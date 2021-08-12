@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de prueba de conectividad de red
-ms.openlocfilehash: 8cb25dfc8d11ca28d1a3c35985d84126f0652439
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: f143cf8f9cd838bafa8e21ac258d0fcc09f3221d738f14013ee81e09e9dbdc1c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841035"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de prueba de conectividad de red
 
@@ -34,12 +34,12 @@ La Microsoft 365 de prueba de conectividad de red se encuentra en <https://conne
 >[!NOTE]
 >La herramienta de prueba de conectividad de red admite inquilinos en WW Commercial y Alemania, pero no GCC moderados, GCC High, DoD o China.
 
-Los conocimientos de red del Centro de administración de Microsoft 365 se basan en medidas regulares del producto para el inquilino Microsoft 365, que se agregan cada día. En comparación, los conocimientos de red de la Microsoft 365 de conectividad de red se ejecutan localmente y una vez en la herramienta. Las pruebas que se pueden realizar en el producto son limitadas y al ejecutar pruebas locales para el usuario se pueden recopilar más datos, lo que da como resultado información más detallada. Tenga en cuenta que la información de red en el Centro de administración de Microsoft 365 mostrará que hay un problema de red para el uso de Microsoft 365 en una ubicación de oficina específica. La Microsoft 365 de conectividad puede ayudar a identificar la causa raíz de ese problema que lleva a una acción recomendada de mejora del rendimiento de la red.
+Los conocimientos de red del Centro de Administración de Microsoft 365 se basan en medidas regulares del producto para el inquilino Microsoft 365, que se agregan cada día. En comparación, los conocimientos de red de la Microsoft 365 de conectividad de red se ejecutan localmente y una vez en la herramienta. Las pruebas que se pueden realizar en el producto son limitadas y al ejecutar pruebas locales para el usuario se pueden recopilar más datos, lo que da como resultado información más detallada. Tenga en cuenta que las perspectivas de red del Centro de Administración de Microsoft 365 mostrarán que hay un problema de red para el uso de Microsoft 365 en una ubicación de oficina específica. La Microsoft 365 de conectividad puede ayudar a identificar la causa raíz de ese problema que lleva a una acción recomendada de mejora del rendimiento de la red.
 
-Recomendamos que estas conclusiones se utilicen juntos donde se pueda evaluar el estado de calidad de las redes para cada ubicación de oficina en el Centro de administración de Microsoft 365 y se puedan encontrar más detalles después de la implementación de pruebas basadas en la prueba de conectividad Microsoft 365.
+Se recomienda usar estos conocimientos juntos donde se puede evaluar el estado de la calidad de las redes para cada ubicación de oficina en el Centro de Administración de Microsoft 365 y se pueden encontrar más detalles después de la implementación de pruebas basadas en la prueba de conectividad Microsoft 365.
 
 >[!IMPORTANT]
->Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
+>Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de Administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="what-happens-at-each-test-step"></a>Qué sucede en cada paso de prueba
 
@@ -80,7 +80,7 @@ Si ha iniciado sesión cuando se produce un informe de prueba, estos informes se
 
 ### <a name="sharing-with-your-microsoft-account-team-support-or-other-personnel"></a>Uso compartido con el equipo de cuenta de Microsoft, soporte técnico u otro personal
 
-Los informes de prueba (excepto cualquier identificación personal) se comparten con los empleados de Microsoft. Este uso compartido está habilitado de forma predeterminada y el administrador puede deshabilitarlo en el servicio **de | Página Conectividad de** red en el Centro Microsoft 365 administración.
+Los informes de prueba (excepto cualquier identificación personal) se comparten con los empleados de Microsoft. Este uso compartido está habilitado de forma predeterminada y el administrador puede deshabilitarlo en el servicio **de | Página Conectividad de** red en el Centro Administración de Microsoft 365 red.
 
 ### <a name="sharing-with-other-users-who-sign-in-to-the-same-office-365-tenant"></a>Uso compartido con otros usuarios que inician sesión en el mismo Office 365 inquilino
 
@@ -279,7 +279,7 @@ La ubicación de salida de Internet es la ubicación donde el tráfico de red sa
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Conectividad de red en el Centro Microsoft 365 administración (versión preliminar)](office-365-network-mac-perf-overview.md)
+[Conectividad de red en el Centro de Administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 de rendimiento de red (versión preliminar)](office-365-network-mac-perf-insights.md)
 

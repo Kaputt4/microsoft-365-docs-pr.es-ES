@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: aa12cc4ad885c3d4b9d1c35fba9f38747f24077d
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 50898cf6062719b81b75de07ffab6b9a8c58cd8759d92c7cccc330a1389feb5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828179"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -65,7 +65,7 @@ Estas recomendaciones están dirigidas a arquitectos empresariales y profesional
 
 Las directivas recomendadas se aplican a las organizaciones empresariales que operan completamente en la nube de Microsoft y a los clientes con infraestructura de identidad híbrida, que es un bosque local de Servicios de dominio de Active Directory (AD DS) que se sincroniza con un inquilino de Azure AD.
 
-Muchas de las recomendaciones proporcionadas dependen de los servicios disponibles solo con Microsoft 365 E5, Microsoft 365 E3 con el complemento de seguridad E5, EMS E5 o azure AD Premium licencias P2.
+Muchas de las recomendaciones proporcionadas dependen de los servicios disponibles solo con Microsoft 365 E5, Microsoft 365 E3 con el complemento de seguridad E5, EMS E5 o Azure AD Premium P2 licencias.
 
 Para aquellas organizaciones que no tienen estas licencias, Microsoft recomienda implementar al menos los valores predeterminados de [seguridad,](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)que se incluyen en todos los planes Microsoft 365 licencias.
 
@@ -124,7 +124,7 @@ Azure AD proporciona un conjunto completo de funcionalidades de administración 
 |[Acceso condicional](/azure/active-directory/conditional-access/overview)|Azure AD evalúa las condiciones del inicio de sesión del usuario y usa directivas de acceso condicional para determinar el acceso permitido. Por ejemplo, en esta guía te mostramos cómo crear una directiva de acceso condicional para requerir el cumplimiento del dispositivo para obtener acceso a datos confidenciales. Esto reduce en gran medida el riesgo de que un hacker con su propio dispositivo y credenciales robadas pueda acceder a sus datos confidenciales. También protege los datos confidenciales de los dispositivos, ya que los dispositivos deben cumplir requisitos específicos de salud y seguridad.|Microsoft 365 E3 o E5|
 |[Grupos de Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|Las directivas de acceso condicional, la administración de dispositivos con Intune e incluso los permisos para archivos y sitios de la organización dependen de la asignación a cuentas de usuario o grupos de Azure AD. Se recomienda crear grupos de Azure AD que correspondan a los niveles de protección que está implementando. Por ejemplo, es probable que el personal ejecutivo sea un destino de mayor valor para los hackers. Por lo tanto, tiene sentido agregar las cuentas de usuario de estos empleados a un grupo de Azure AD y asignar este grupo a directivas de acceso condicional y otras directivas que aplican un mayor nivel de protección para el acceso.|Microsoft 365 E3 o E5|
 |[Inscripción de dispositivos](/azure/active-directory/devices/overview)|Inscribir un dispositivo en Azure AD para crear una identidad para el dispositivo. Esta identidad se usa para autenticar el dispositivo cuando un usuario inicia sesión y para aplicar directivas de acceso condicional que requieren equipos unidos al dominio o compatibles. Para esta guía, usamos la inscripción de dispositivos para inscribir automáticamente equipos unidos Windows dominio. La inscripción de dispositivos es un requisito previo para administrar dispositivos con Intune.|Microsoft 365 E3 o E5|
-|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Le permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar la directiva de corrección automatizada en riesgo de inicio de sesión bajo, medio y alto y riesgo de usuario. Esta guía se basa en esta evaluación de riesgos para aplicar directivas de acceso condicional para la autenticación multifactor. Esta guía también incluye una directiva de acceso condicional que requiere que los usuarios cambien su contraseña si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5, Microsoft 365 E3 con el complemento de seguridad E5, EMS E5 o azure AD Premium licencias de P2|
+|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Le permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar la directiva de corrección automatizada en riesgo de inicio de sesión bajo, medio y alto y riesgo de usuario. Esta guía se basa en esta evaluación de riesgos para aplicar directivas de acceso condicional para la autenticación multifactor. Esta guía también incluye una directiva de acceso condicional que requiere que los usuarios cambien su contraseña si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5, Microsoft 365 E3 con el complemento de seguridad E5, EMS E5 o Azure AD Premium P2 licencias|
 |[Restablecimiento de contraseñas de autoservicio (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Permitir que los usuarios restablezcan sus contraseñas de forma segura y sin intervención del servicio de asistencia, proporcionando la comprobación de varios métodos de autenticación que el administrador puede controlar.|Microsoft 365 E3 o E5|
 |[Protección con contraseña de Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)|Detectar y bloquear contraseñas débiles conocidas y sus variantes y términos débiles adicionales que son específicos de su organización. Las listas de contraseñas desvetadas global predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Se puede definir entradas adicionales en una lista personalizada de contraseñas prohibidas. Cuando los usuarios cambien o restablezcan sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras.|Microsoft 365 E3 o E5|
 |

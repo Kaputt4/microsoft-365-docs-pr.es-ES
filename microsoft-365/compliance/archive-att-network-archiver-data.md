@@ -1,5 +1,5 @@
 ---
-title: Configurar un conector para archivar AT&T SMS/MMS Network data
+title: Configurar un conector para archivar at&datos de red T SMS/MMS
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,19 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos SMS MMS y de LA RED móvil&T. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 5d07c24a2730a405683e064f76c5b95a219dcb2a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos DE SMS y MMS desde la red&T Mobile Network. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
+ms.openlocfilehash: ec3b134dd5d26848e3a3b00d4aa66f81abc64363268ce91b329dfc7d79fba7f9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820716"
 ---
-# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurar un conector para archivar AT&datos SMS/MMS
+# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurar un conector para archivar datos de AT&SMS/MMS T
 
-Use un conector de TeleMessage en el centro de Microsoft 365 de cumplimiento para importar y archivar datos SMS MMS y de AT&T Mobile Network. Después de configurar y configurar un conector, se conecta a la red T at&de la organización una vez al día e importa datos de SMS y MMS a buzones de correo de Microsoft 365.
+Use un conector de TeleMessage en el Centro de cumplimiento de Microsoft 365 importar y archivar datos DE SMS y MMS de AT&T Mobile Network. Después de configurar y configurar un conector, se conecta a la red at&T de la organización una vez al día e importa datos DE SMS y MMS a buzones de correo de Microsoft 365.
 
-Después de SMS y mms mensajes se almacenan en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365, como retención por juicio, búsqueda de contenido y directivas de retención de Microsoft 365&datos de red T de AT. Por ejemplo, puede buscar datos de la red de AT&T mediante búsqueda de contenido o asociar el buzón que contiene los datos del conector de red de AT&T con un administrador en un caso Advanced eDiscovery. El uso de un conector&T Network de AT para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
+Una vez que los mensajes SMS y MMS se almacenan en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365, como retención por juicio, búsqueda de contenido y directivas de retención Microsoft 365 a los datos de la red de&T. Por ejemplo, puede buscar datos de la red de AT&T mediante búsqueda de contenido o asociar el buzón que contiene los datos del conector de red de AT&T con un administrador en un caso Advanced eDiscovery. El uso de un conector&T Network de AT para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
 ## <a name="overview-of-archiving-att-network-data"></a>Información general sobre el archivado de&de red T
 
@@ -33,11 +33,11 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 1. Su organización trabaja con TeleMessage para configurar un conector de red&T. Para obtener información, [vea AT&T Network Archiver](https://www.telemessage.com/office365-activation-for-atnt-network-archiver/).
 
-2. En tiempo real, los SMS mms y los mensajes de mms de la red T de&de la organización se copian en el sitio de TeleMessage.
+2. En tiempo real, los mensajes SMS y MMS de at&red T de la organización se copian en el sitio de TeleMessage.
 
-3. El conector de red T de AT&que cree en el centro de cumplimiento de Microsoft 365 se conecta al sitio de TeleMessage todos los días y transfiere los mensajes de SMS y MMS de las 24 horas anteriores a una ubicación de Azure Storage segura en la nube de Microsoft. El conector también convierte el contenido de los mensajes SMS MMS a un formato de mensaje de correo electrónico.
+3. El conector de red T de AT&que cree en el Centro de cumplimiento de Microsoft 365 se conecta al sitio de TeleMessage todos los días y transfiere los mensajes SMS y MMS de las 24 horas anteriores a una ubicación Azure Storage segura en la nube de Microsoft. El conector también convierte el contenido de los mensajes SMS y MMS a un formato de mensaje de correo electrónico.
 
-4. El conector importa los elementos de comunicación móvil al buzón de usuarios específicos. Se crea una nueva carpeta denominada **AT&T SMS/MMS Network Archiver** en el buzón del usuario y los elementos se importan a él. El conector realiza esta asignación mediante el valor de la *propiedad Dirección de correo* electrónico del usuario. Cada SMS y mms contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje.
+4. El conector importa los elementos de comunicación móvil al buzón de usuarios específicos. Se crea una nueva carpeta denominada **AT&T SMS/MMS Network Archiver** en el buzón del usuario y los elementos se importan a él. El conector realiza esta asignación mediante el valor de la *propiedad Dirección de correo* electrónico del usuario. Cada mensaje SMS y MMS contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje.
  
    Además de la asignación automática  de usuarios mediante el valor de la propiedad Dirección de correo electrónico del usuario, también puede definir una asignación personalizada cargando un archivo de asignación CSV. Este archivo de asignación contiene el número de teléfono móvil y la dirección Microsoft 365 de correo electrónico correspondiente para los usuarios de la organización. Si habilita la asignación automática de usuarios y la asignación personalizada, para cada elemento de correo electrónico, el conector primero examina el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que corresponda a un número de teléfono móvil, el conector usa los valores de la propiedad de dirección de correo electrónico del elemento que está intentando importar. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizado o en la propiedad de dirección de correo electrónico del elemento de correo electrónico, el elemento no se importará.
 
@@ -49,17 +49,17 @@ Algunos de los pasos de implementación necesarios para archivar los datos de la
 
 - Obtenga los detalles de contacto de facturación y cuenta de AT&T para que pueda rellenar los formularios de incorporación de TeleMessage y solicitar el servicio de archivado de mensajes de AT&T.
 
-- Registre todos los usuarios que requieren AT&T SMS/MMS Network archiving en la cuenta De TeleMessage. Al registrar usuarios, asegúrese de usar la misma dirección de correo electrónico que se usa para su Microsoft 365 usuario.
+- Registre todos los usuarios que necesiten AT&de T SMS/MMS Network en la cuenta de TeleMessage. Al registrar usuarios, asegúrese de usar la misma dirección de correo electrónico que se usa para su Microsoft 365 usuario.
 
 - Los empleados deben tener teléfonos móviles corporativos y de responsabilidad corporativa en la red&móvil T de AT. Los mensajes de archivado Microsoft 365 no están disponibles para dispositivos de propiedad de los empleados o "Traer sus propios dispositivos (BYOD).
 
-- El usuario que crea un conector de red&T de AT debe tener asignado el rol De importación de buzones de Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** del centro de Microsoft 365 cumplimiento. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea un conector de red&T de AT debe tener asignado el rol De importación de buzones de Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 - Este conector de datos está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="create-a-att-network-connector"></a>Crear un conector de&T de AT
 
-Después de completar los requisitos previos descritos en la sección anterior, puede crear un conector de red de AT&T en el centro de Microsoft 365 cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir mensajes de SMS MMS a los cuadros de buzón de usuario correspondientes en Microsoft 365.
+Una vez completados los requisitos previos descritos en la sección anterior, puede crear un conector de red T de AT&en el Centro de cumplimiento de Microsoft 365. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir mensajes SMS y MMS a los cuadros de buzón de usuario correspondientes en Microsoft 365.
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic en **Conectores** de  \  **datos EN&T Network**.
 
