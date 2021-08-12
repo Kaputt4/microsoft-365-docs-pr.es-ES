@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de cumplimiento de Microsoft 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 95683ed5dc6cce8ff109976ebb0d13215593f046
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
-ms.translationtype: MT
+ms.openlocfilehash: 3bbd7a59ed0f969293aff738872662afa9738b649876092e17f4d09712d5ebed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770714"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807629"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
 **Este artículo es para los administradores. ¿Está intentando buscar elementos que quiere eliminar en el buzón? Vea [Buscar un mensaje o elemento con la Búsqueda instantánea](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
 
-Puede usar la característica de búsqueda de contenido para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización. De esta forma puede buscar y eliminar correos electrónicos potencialmente dañinos o de alto riesgo, como:
+Puede usar la característica Búsqueda de contenido para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización. Esto puede ser útil para buscar y quitar correos electrónicos potencialmente peligrosos o de alto riesgo, como:
 
 - Mensajes que contienen virus o datos adjuntos peligrosos
 

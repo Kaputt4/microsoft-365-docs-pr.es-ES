@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Aprende a cambiar el tema predeterminado de la parte superior de la barra de navegación en Microsoft 365 y personalízalo para que coincida con el logotipo o color de tu empresa.
-ms.openlocfilehash: 62a658929faaf130e85df5a2eb9637bf6a6c8a0a
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 6a9317e1ca61711020dfa8d1521c1082b2a7682f8e12a2976dc20f5af374dd4c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822143"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el Microsoft 365 de la organización
 
@@ -75,7 +75,7 @@ Puede crear hasta cuatro temas de grupo adicionales.
 
 2. En **Grupos,** puede seleccionar hasta 5 grupos Microsoft 365 que puedan ver el tema de grupo, en lugar de usar el tema predeterminado. También puede impedir que los usuarios invaliden su tema y muestren el nombre para mostrar del usuario.
 
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
 :::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Captura de pantalla: pestaña General que muestra el tema predeterminado para un grupo de usuarios de la organización":::
 
@@ -104,7 +104,7 @@ En la **página Colores,** puede establecer los colores predeterminados y elegir
 
 :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores predeterminados del tema para su organización":::
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mi organización ya tiene un tema para todos los empleados. ¿Cómo cambiará esto?
 

@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Administrar firmas de correo electrónico, incluidas declinaciones de responsabilidades legales o declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: ba96d0d5782fc675a044980db0a0ac1d4ce6caaf
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: b9496ebe150839deb23823dc0a7492c849c7f076ba1934a847621eb553486016
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822082"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 

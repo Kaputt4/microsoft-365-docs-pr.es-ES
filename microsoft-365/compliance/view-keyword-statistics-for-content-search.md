@@ -14,14 +14,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas con un caso de exhibición de documentos electrónicos principales en el centro de Microsoft 365 cumplimiento.
+description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas con un caso de exhibición de documentos electrónicos principales en el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a0e543c89b91560520a4e4bf31feb8471c91da4a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 25884f0b450c1bc90cb6487e64fe636ef5f8af16dd30ad7bb4e7ed28402da03f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835552"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Ver estadísticas de resultados de búsqueda de exhibición de documentos electrónicos
 
@@ -35,7 +35,7 @@ También puede descargar estadísticas de búsqueda en un archivo CSV. Así, una
 
 Para mostrar estadísticas de una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos principal.:
   
-1. En el centro Microsoft 365 cumplimiento, haga clic **en Mostrar todo** y, a continuación, realice una de las siguientes acciones:
+1. En la Centro de cumplimiento de Microsoft 365, haga clic **en Mostrar todo** y, a continuación, realice una de las siguientes acciones:
 
    - Haga **clic en Búsqueda de** contenido y, a continuación, seleccione una búsqueda para mostrar la página desplegable.
 
@@ -97,7 +97,7 @@ Como se explicó anteriormente, la sección **Informe de condiciones** muestra l
 
 Para crear una lista de palabras clave y ver estadísticas de palabras clave para una búsqueda:
   
-1. En el Microsoft 365 de cumplimiento, cree una nueva búsqueda de contenido o una búsqueda asociada con un caso de exhibición de documentos electrónicos principal.
+1. En el Centro de cumplimiento de Microsoft 365, cree una nueva búsqueda de contenido o una búsqueda asociada con un caso de exhibición de documentos electrónicos principal.
 
 2. En la **página Condiciones** del asistente para búsqueda. active la casilla **Mostrar lista de palabras clave.**
 

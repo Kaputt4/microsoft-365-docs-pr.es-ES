@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'Obtenga información sobre cómo agregar varios usuarios a Microsoft 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Microsoft 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón Microsoft 365 correo. '
-ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb0ed6212cde61693024bcd2fdca9f1d6c3f42dbb063f67324be3d87219f46cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835420"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Agregar varios usuarios al mismo tiempo a Microsoft 365: Ayuda para administradores
 
@@ -38,9 +38,9 @@ Cada persona del equipo necesita una cuenta de usuario antes de poder iniciar se
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Agregar varios usuarios en el Centro Microsoft 365 administración
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Agregar varios usuarios en el Centro de administración de Microsoft 365
 
-1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa.
+1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa.
 
 2. En el Centro de administración, elija **Usuarios** \> **usuarios activos.**
 

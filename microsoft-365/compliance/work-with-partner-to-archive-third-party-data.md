@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce Chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: 2026e3c584cb0bc467a2db3903c51b7ed50e51e1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e388ab360ccd82b6391272e01a36b78fca99971d0f43ab20b447e33113eef282
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807593"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 
@@ -500,7 +500,7 @@ Estos son los pasos para crear y configurar un buzón de datos de terceros para 
 
       - [Poner un buzón en retención por juicio](./create-a-litigation-hold.md)
 
-      - [Más información sobre las directivas y las etiquetas de retención](retention.md)
+      - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 
     - Habilitar el registro de auditoría de buzones de correo para el acceso de propietario, delegado y administrador al buzón de datos de terceros; vea [Enable mailbox auditing](enable-mailbox-auditing.md). Esto le permite auditar toda la actividad realizada por cualquier usuario que tenga acceso al buzón de datos de terceros.
 
@@ -514,7 +514,7 @@ El paso siguiente es configurar los buzones de usuario para que admitan los dato
 
     - [Poner un buzón en retención por juicio](./create-a-litigation-hold.md)
 
-    - [Más información sobre las directivas y las etiquetas de retención](retention.md)
+    - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 
     Como ya se ha indicado, al poner los buzones en retención, puede determinar durante cuánto tiempo deben retenerse los elementos del origen de datos de terceros o puede optar por retener los elementos indefinidamente.
 

@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 description: ¿Necesita configurar administradores independientes para cada ubicación geográfica? Obtenga más información sobre cómo agregar o quitar un administrador geográfico de Microsoft 365 Multi-Geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32fe5e934e6a3d6f18c802c3c427974e67c1b454
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d44e3e10074d93d091b3a581d8d13216e21e0ab8b10b0579bded77166c66ff18
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835444"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Agregar o quitar un administrador geográfico de Microsoft 365 Multi-Geo
 

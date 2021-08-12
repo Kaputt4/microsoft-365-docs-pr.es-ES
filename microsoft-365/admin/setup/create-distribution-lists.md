@@ -24,12 +24,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: Cree grupos de distribución o listas en el Centro de administración de Microsoft 365 para que pueda enviar correos electrónicos a un grupo sin escribir el nombre de cada destinatario.
-ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2aa7ded4fe29a43d2b1f0d3282467e8eaba6484d2ab40df99bd81f4bbe348bb6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822156"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el Centro de administración de Microsoft 365
   

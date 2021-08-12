@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el flujo de trabajo de comunicaciones Advanced eDiscovery para realizar un seguimiento del estado de las notificaciones de retención legal y, si es necesario, actualizarlas y reenviarlas.
-ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 88dd3ef8e74dd67b196f574b1cfe8ba5c33a1a63afeac8701f19e36476e56767
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842139"
 ---
 # <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
 

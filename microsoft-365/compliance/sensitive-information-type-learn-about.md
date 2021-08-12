@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial como números de cuenta bancaria, tarjeta de crédito o seguridad social para identificar elementos confidenciales
-ms.openlocfilehash: dee4ec59ce5fe6140c4aef33d147e89e11facd59
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 76812349bc6916483d1e8f56f9c3eaca381d373690a375a3ba1e34a98ee30afc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842052"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 

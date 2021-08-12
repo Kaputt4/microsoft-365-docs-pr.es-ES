@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para Word, Excel y PowerPoint archivos en SharePoint y OneDrive.
-ms.openlocfilehash: 61b6c366f76c25ab0b35df4314f63491be5ce5e6
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 5a1358b86ebd3385dbe66fd075a9aa6bd4d739d58e98120ec7e82f5217ac1e73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842016"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Habilite el etiquetado integrado para los archivos Office [compatibles](sensitivity-labels-office-apps.md#office-file-types-supported) en SharePoint y OneDrive para que [](sensitivity-labels.md) los usuarios puedan aplicar las etiquetas de confidencialidad en Office para la Web. Cuando esta característica está habilitada,  los usuarios verán el botón Confidencialidad en la cinta de opciones para que puedan aplicar etiquetas y ver cualquier nombre de etiqueta aplicado en la barra de estado.
 
@@ -65,7 +65,7 @@ Siempre tienes la opción de deshabilitar las etiquetas de confidencialidad de O
 
 Si actualmente está protegiendo documentos en SharePoint mediante SharePoint Information Rights Management (IRM), asegúrese de comprobar la sección [SharePoint Information Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) y las etiquetas de confidencialidad de esta página.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Estas nuevas funcionalidades solo funcionan con [etiquetas de](sensitivity-labels.md) confidencialidad. Si actualmente tiene etiquetas de Azure Information Protection, migre primero a etiquetas de confidencialidad para que pueda habilitar estas características para los nuevos archivos que cargue. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas](/azure/information-protection/configure-policy-migrate-labels)
 

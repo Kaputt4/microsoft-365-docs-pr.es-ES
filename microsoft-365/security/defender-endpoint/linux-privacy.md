@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 81b4ba1982f44a4161b187bfd9a57832e0b3bcb5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 023eb7a08180f20f108a7a1ba686abbc4f13123a9ff56f10ef510c1802812498
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793567"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacidad de Microsoft Defender para endpoint en Linux
 

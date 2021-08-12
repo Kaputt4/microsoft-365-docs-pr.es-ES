@@ -19,12 +19,12 @@ ms.custom:
 - commerce_licensing
 description: Obtenga información sobre cómo descargar las claves de licencia de software y producto para el software perpetuo comprado a través del programa Proveedor de soluciones en la nube (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: 85dfdb8952278b8c1c3dd23a2ceca7481a683989
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7ab5cfef9ae5e17ae2ab34fff05ed482e9dd7a859f9ab72132e9bfc6264bea59
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821992"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Descargar claves de licencia de producto y software perpetuidad
 
@@ -32,7 +32,7 @@ En este artículo se explica cómo descargar claves de licencia de software y pr
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global para realizar los pasos descritos en este artículo. Para obtener más información, vea [Sobre los roles de administrador](../add-users/about-admin-roles.md).
+Debe ser un administrador global para realizar los pasos descritos en este artículo. Para más información, consulte[Sobre los roles de administrador](../add-users/about-admin-roles.md).
 
 ## <a name="download-software-and-product-license-keys"></a>Descargar claves de licencia de software y producto
 

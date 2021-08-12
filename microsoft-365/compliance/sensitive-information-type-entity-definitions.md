@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay 200 tipos de información confidencial que están listos para su uso en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 614649367e72766d8df210fccbb4e3cdc9cdb4b6
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 46e4f3ee360a69475cbfed98f6800970216b7bee0486d51b4fe05fcfdc480ccd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842162"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -5884,7 +5884,7 @@ Estas entidades están en el número de licencia de conducir de la UE y son tipo
 - [Bulgaria](#bulgaria-drivers-license-number)
 - [Croacia](#croatia-drivers-license-number)
 - [Chipre](#cyprus-drivers-license-number)
-- [Checo](#czech-drivers-license-number)
+- [Czech](#czech-drivers-license-number)
 - [Dinamarca](#denmark-drivers-license-number)
 - [Estonia](#estonia-drivers-license-number)
 - [Finlandia](#finland-drivers-license-number)
@@ -5918,7 +5918,7 @@ Estas entidades se encuentran en el número de identificación nacional de la UE
 - [Bulgaria](#bulgaria-uniform-civil-number)
 - [Croacia](#croatia-identity-card-number)
 - [Chipre](#cyprus-identity-card)
-- [Checo](#czech-personal-identity-number)
+- [Czech](#czech-personal-identity-number)
 - [Dinamarca](#denmark-personal-identification-number)
 - [Estonia](#estonia-personal-identification-code)
 - [Finlandia](#finland-national-id)
@@ -5951,7 +5951,7 @@ Estas entidades están en el número de pasaporte de la UE y son tipos de inform
 - [Bulgaria](#bulgaria-passport-number)
 - [Croacia](#croatia-passport-number)
 - [Chipre](#cyprus-passport-number)
-- [Checo](#czech-passport-number)
+- [Czech](#czech-passport-number)
 - [Dinamarca](#denmark-passport-number)
 - [Estonia](#estonia-passport-number)
 - [Finlandia](#finland-passport-number)
@@ -5983,7 +5983,7 @@ Estas entidades que se encuentran en el número de seguridad social de la UE o e
 - [Austria](#austria-social-security-number)
 - [Bélgica](#belgium-national-number)
 - [Croacia](#croatia-personal-identification-oib-number)
-- [Checo](#czech-personal-identity-number)
+- [Czech](#czech-personal-identity-number)
 - [Dinamarca](#denmark-personal-identification-number)
 - [Finlandia](#finland-national-id)
 - [Francia](#france-social-security-number-insee)
@@ -6004,7 +6004,7 @@ Estas entidades se encuentran en el tipo de información confidencial número de
 - [Bulgaria](#bulgaria-uniform-civil-number)
 - [Croacia](#croatia-identity-card-number)
 - [Chipre](#cyprus-tax-identification-number)
-- [Checo](#czech-personal-identity-number)
+- [Czech](#czech-personal-identity-number)
 - [Dinamarca](#denmark-personal-identification-number)
 - [Estonia](#estonia-personal-identification-code)
 - [Finlandia](#finland-national-id)
@@ -6220,7 +6220,7 @@ Número de 20 dígitos
 
 Número de 20 dígitos:
 
-- 10 dígitos - 8024680246
+- 10 dígitos: 8024680246
 - un espacio o guión opcional
 - 10 dígitos
 
@@ -15071,7 +15071,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- Id.
+- ID
 - Identificación
 
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -17073,7 +17073,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 - DLS
 - CDL
 - CDLS
-- Id.
+- ID
 - IDs
 - DL #
 - DLS #

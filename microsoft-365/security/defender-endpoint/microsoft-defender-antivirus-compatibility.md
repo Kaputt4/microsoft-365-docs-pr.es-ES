@@ -16,12 +16,12 @@ ms.reviewer: tewchen, pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 07/06/2021
-ms.openlocfilehash: aac84d2e957809d1c9579f25c01006798af2c0a9
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: b7584a7e8165b11e334d004736df4b3868a1f172d2c5d1d0d7127cde311fee67
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322418"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800047"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Antivirus de Microsoft Defender compatibilidad
 
@@ -99,7 +99,7 @@ En la tabla de esta sección se resumen las funciones y características que est
 > [!IMPORTANT]
 > No desactive las funcionalidades, como la protección en tiempo real, la protección entregada en la nube o el examen periódico limitado, si usa Antivirus de Microsoft Defender en modo pasivo o está usando EDR en modo de bloqueo. 
 
-|Protection |Modo activo |Modo pasivo |EDR en modo bloqueo |Deshabilitado o desinstalado |
+|Protección |Modo activo |Modo pasivo |EDR en modo bloqueo |Deshabilitado o desinstalado |
 |:---|:---|:---|:---|:---|
 | [Protección en tiempo real y](configure-real-time-protection-microsoft-defender-antivirus.md) protección entregada en la [nube](enable-cloud-protection-microsoft-defender-antivirus.md) | Sí | No <sup> [[3](#fn3)]<sup> | No | No |
 | [Disponibilidad limitada de análisis periódico](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | No | Sí |

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9ef0495b1eae033a6a7cc8b6929344967ea4591c165ea647923afd3bb5daefb9
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: dada5e5fe82f12e02365d9babe4d91c10acdd6195a8371b9fe9b6bd4713d4fe8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803181"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807557"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -40,76 +40,6 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 > - [Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Y visite la [guía básica](https://www.microsoft.com/microsoft-365/roadmap) de Microsoft 365 para obtener información sobre Microsoft 365 características que se iniciaron, se están implementando, están en desarrollo, se cancelaron o se publicaron anteriormente.
-
-## <a name="july-2021"></a>Julio de 2021
-
-### <a name="advanced-ediscovery"></a>eDiscovery avanzado
-
-- [Advanced eDiscovery flujo](teams-workflow-in-advanced-ediscovery.md) de trabajo de contenido en Microsoft Teams casos grandes se agregó un flujo de trabajo completo de administración de Teams contenido en Advanced eDiscovery; incluye detalles sobre la vista previa de la nueva funcionalidad de transcripción de conversación.
-- [Use casos](advanced-ediscovery-large-cases.md) grandes en Advanced eDiscovery se agregó una vista previa del nuevo formato de caso grande que amplía los límites de casos y conjunto de revisión y admite transcripciones de conversación para conversaciones Teams y Yammer conversaciones de chat.
-
-### <a name="app-governance"></a>Gobierno de aplicaciones
-
-- El [complemento de gobierno de](app-governance-manage-app-governance.md) aplicaciones para Microsoft Cloud App Security (MCAS) ha pasado a la versión preliminar pública. El gobierno de aplicaciones proporciona supervisión de aplicaciones basadas en OAUth en el inquilino de M365 y genera alertas de actividad que pueden representar malware o niveles inadecuados de permisos.
-
-### <a name="compliance-offerings"></a>Ofertas de cumplimiento
-
-- [Las ofertas de cumplimiento cambian](/compliance/regulatory/offering-home) centrándose en la cobertura y actualizaciones de servicios aplicables para alinearse más estrechamente con las ofertas de Azure para las [normativas](/azure/compliance) aplicables.
-
-### <a name="compliance--service-assurance"></a>Garantía de & cumplimiento
-
-- [Garantía de servicio](/compliance/) (actualizada; revisión trimestral de actualizaciones de contenido para certificaciones e instrucciones de aplicabilidad)
-    - Comprobaciones en segundo plano en la nube
-    - Transferencia de empleados & terminación
-    - Gobierno
-    - Recursos humanos
-    - Administración de incidencias
-    - Filtrado previo al empleo
-    - Administración de incidentes de seguridad (SIM)
-    - SIM: contención, eliminación y recuperación
-    - SIM: análisis de & de detección
-    - SIM: informes posteriores a incidentes
-    - SIM: preparación
-    - Aislamiento de inquilinos
-
-### <a name="data-classification"></a>Clasificación de los datos
-
-- [Obtenga información sobre la clasificación de datos](data-classification-overview.md). Se actualizó para la versión de GA del clasificador de discriminación que se puede entrenar.
-
-### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
-
-- [Obtenga información sobre Microsoft 365 prevención](endpoint-dlp-learn-about.md) de pérdida de datos de punto de conexión agregó instrucciones actualizadas sobre la actividad de archivos de auditoría always para dispositivos.
-- [Introducción al escáner local de prevención de pérdida de](dlp-on-premises-scanner-get-started.md) datos actualizado para la versión de GA.
-- [Obtenga información sobre el Microsoft 365 de](dlp-on-premises-scanner-learn.md) prevención de pérdida de datos local actualizado para la versión de GA.
-- [Use el analizador Microsoft 365 prevención de pérdida de](dlp-on-premises-scanner-use.md) datos local actualizado para la versión de GA.
-- [Usar directivas de prevención de pérdida de](dlp-use-policies-non-microsoft-cloud-apps.md) datos para aplicaciones en la nube que no son de Microsoft actualizadas para la versión de GA y la integración de MIP-MCAS.
-
-### <a name="insider-risk-management"></a>Administración de riesgos internos
-
-- [Investigar actividades de administración de riesgos insider](insider-risk-management-activities.md) agregaron actualizaciones de contenido para nuevos informes de actividad de usuario y nuevas características de vista previa de varias alertas de descarte.
-- [Introducción a la configuración de administración](insider-risk-management-settings.md) de riesgos insider agregó actualizaciones de contenido para la nueva funcionalidad RBAC para elegir revisores para la característica de vista previa de grupos de usuarios prioritarios.
-
-### <a name="privacy-management"></a>Administración de privacidad
-
-- La [administración de privacidad de](privacy-management.md) Microsoft ha pasado a la versión preliminar pública. La administración de privacidad ayuda a su organización a comprender y administrar los datos personales en su entorno de Microsoft 365, corregir posibles riesgos de privacidad y cumplir con las solicitudes de derechos del sujeto.
-
-### <a name="retention-and-records-management"></a>Administración de registros y retención
-- En versión preliminar: [las directivas de](create-retention-policies.md#retention-policy-for-teams-locations) retención Teams ahora admiten canales privados como una nueva ubicación de Teams al crear o editar una directiva de retención
-- Las instrucciones [para importar un plan de](file-plan-manager.md#import-retention-labels-into-your-file-plan) archivos se actualizan para incluir los registros normativos y las dependencias ahora se enumeran para cada entrada
-
-### <a name="sensitive-information-types"></a>Tipos de información confidencial
-
-Se agregaron las páginas siguientes:
-
-- [Personalizar referencia de filtros de tipo de información confidencial ](sit-custom-sit-filters.md)
-- [Modificar un tipo de información confidencial personalizada con PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md)
-- [Quitar un tipo de información confidencial personalizada con PowerShell](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-- Los clasificadores trainables ahora están disponibles (GA) para el etiquetado automático en Office [aplicaciones](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) para Windows y la web (Office Online)
-- El etiquetado obligatorio ahora se extiende a [Power BI (en versión preliminar)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
-- Para [la co-autoría de]( sensitivity-labels-coauthoring.md)archivos cifrados con etiquetas de confidencialidad: Implementar la compatibilidad con directivas DLP que usan etiquetas de confidencialidad como condiciones y datos adjuntos no cifrados para correos electrónicos
-- Los eventos de auditoría para Outlook ya están disponibles para macOS, iOS y Android, y se están implementando para Outlook en la Web
 
 ## <a name="june-2021"></a>Junio de 2021
 
@@ -346,3 +276,22 @@ El contenido se agregó o actualizó en los temas siguientes:
 
 - **SharePoint uso compartido externo**. En [el caso de las etiquetas](sensitivity-labels-teams-groups-sites.md) de contenedor, la opción de uso compartido externo SharePoint sitios ya está disponible en general. Además, los Centro de administración de Microsoft 365 y Planner ahora admiten la aplicación de estas etiquetas de confidencialidad. 
 - **Coautoría y Autoguardado**. La compatibilidad [con la co-autoría y autoguardar](sensitivity-labels-coauthoring.md) archivos cifrados se libera como versión preliminar para las pruebas en inquilinos que no son de producción.
+
+## <a name="january-2021"></a>Enero de 2021
+
+### <a name="support-for-card-content-in-teams"></a>Compatibilidad con el contenido de tarjeta en Teams
+
+Las siguientes Microsoft 365 de cumplimiento admiten ahora la detección de [contenido](/microsoftteams/platform/task-modules-and-cards/what-are-cards) de tarjeta generado a través de aplicaciones en Teams mensajes:
+
+- **Core y Advanced eDiscovery**. El contenido de la tarjeta ahora se [puede colocar en espera](create-ediscovery-holds.md#preserve-card-content) o incluirse en las [búsquedas](/microsoftteams/ediscovery-investigation#search-for-card-content) (también se aplica a la búsqueda de contenido).
+- **Auditar**. La actividad de la tarjeta se [registra ahora en el registro de auditoría.](/microsoftteams/audit-log-events#teams-activities)
+- **Directivas de retención**. Ahora puede usar directivas de retención para [conservar y eliminar el contenido de la tarjeta.](retention-policies-teams.md#whats-included-for-retention-and-deletion)
+
+### <a name="information-governance-and-records-management"></a>Administración de registros y gobierno de la información
+
+[Nueva evaluación para](retention-regulatory-requirements.md#new-zealand-public-records-act) abordar el uso del gobierno de la información y la administración de registros para ayudar a cumplir las obligaciones de cumplimiento de la Ley de registros públicos de Nueva Zelanda.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- Las etiquetas de confidencialidad ahora se admiten para los inquilinos del Gobierno de Estados Unidos (GCC y GCC-H).
+- Nueva [compatibilidad con el etiquetado](sensitivity-labels-office-apps.md) automático para macOS.

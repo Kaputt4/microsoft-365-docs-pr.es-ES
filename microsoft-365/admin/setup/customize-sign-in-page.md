@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personalice la Microsoft 365 de inicio de sesión mediante el Azure Active Directory. Puede agregar una ilustración, un logotipo y texto a la página de inicio de sesión.
-ms.openlocfilehash: 1c805e8f37081b2d09e821b24ce2f83816b23e3d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: efc139ad3aec23470c5c19af6a283069a3cbbc6c08e482259fcd8fa8966fef1c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393552"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822049"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Agregar la personal de marca de la empresa a la página Iniciar sesión
 

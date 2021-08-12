@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Obtenga información sobre cómo comprar Windows 365 Empresa para su organización y ayudar a los usuarios a empezar a usar sus equipos en la nube.
-ms.openlocfilehash: 719faecdde15fbbcce7278cba414a7a4e2d94095
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: b5b09761c264074c8f848a9394a59c1f8e8b47c8373f1e40c0b31227ce94b8a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821929"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Introducción a Windows 365 Equipos empresariales y en la nube
 
@@ -163,6 +163,10 @@ Todos los Windows 365 Empresa tienen privilegios de administrador local en su eq
  ## <a name="management-through-intune"></a>Administración a través de Intune
 
 Windows 365 Empresa no inscribe equipos en la nube en [Intune](/mem/intune/fundamentals/what-is-intune) como parte del proceso de aprovisionamiento. Si la organización y los usuarios tienen una licencia adecuada, los equipos en la nube se pueden inscribir en Intune con el mismo procedimiento para inscribir Windows 10 [equipos en Intune](/mem/intune/user-help/enroll-windows-10-device).
+
+## <a name="sending-outbound-email-messages-using-port-25-is-not-supported"></a>No se admite el envío de mensajes de correo electrónico saliente con el puerto 25
+
+No se admite el envío de mensajes de correo electrónico saliente directamente en el puerto 25 desde Windows 365 Business Cloud PC. La comunicación a través del puerto TCP/25 está bloqueada en la Windows de red de 365 Empresa por motivos de seguridad. Si el servicio de correo electrónico usa el Protocolo simple de transferencia de correo (SMTP) para la aplicación cliente de correo electrónico, puede usar su interfaz web, si está disponible. También puedes pedir ayuda a tu proveedor de servicios de correo electrónico para configurar su aplicación cliente de correo electrónico para que use SMTP seguro sobre seguridad de la capa de transporte (TLS), que usa un puerto diferente.
 
 ## <a name="how-to-get-help"></a>Cómo obtener ayuda
 
