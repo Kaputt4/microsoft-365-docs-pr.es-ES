@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b74ff33fe2ed2581e033511b6ee8069696439a58
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 88235051a50197be56f20dcce22e868ce6bf4b3e
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591180"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726205"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -30,9 +30,6 @@ ms.locfileid: "53591180"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> La característica que se describe en este artículo está en Versión preliminar, no está disponible para todos y está sujeta a cambios.
 
 Para mantener la organización segura de forma [predeterminada,](secure-by-default.md)Exchange Online Protection (EOP) no permite listas seguras ni omitir el filtrado de mensajes identificados como malware o phishing de elevada confianza. Sin embargo, hay escenarios específicos que requieren la entrega de mensajes sin filtrar. Por ejemplo:
 
@@ -65,7 +62,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Entrega avanzada,** abra <https://security.microsoft.com/advanceddelivery> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse a PowerShell del Centro de seguridad y cumplimiento, vea [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 - Debe tener asignados permisos antes de poder realizar los procedimientos descritos en este artículo:
   - Para crear, modificar o quitar la configuración de la directiva de  entrega avanzada, debe ser miembro del grupo de  roles Administrador de seguridad en el **portal de Microsoft 365 Defender** y miembro del grupo de roles Administración de la organización en **Exchange Online**.
@@ -106,7 +103,13 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
 
 3. En el **control desplegable Editar simulación de suplantación** de identidad de terceros que se abre, configure las siguientes opciones: 
 
+La dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** remitente P1 o remitente de sobre) es la dirección de correo electrónico que se usa en la transmisión SMTP del mensaje.
+
    - **Dominio** de envío: expanda esta configuración y escriba al menos un dominio de dirección de correo electrónico (por ejemplo, contoso.com) haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas.
+
+     > [!NOTE]
+     > Use el dominio de la dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** remitente P1 o remitente de sobre) que se usa en la transmisión SMTP del mensaje. Esta dirección de correo electrónico normalmente se registra en el **campo de encabezado Return-Path** en el encabezado del mensaje.
+
    - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores admitidos son:
      - IP única: por ejemplo, 192.168.1.1.
      - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
@@ -132,9 +135,9 @@ Además de los dos escenarios con los que la directiva de entrega avanzada puede
 
 - **Falsos positivos** en revisión: es posible que desee permitir temporalmente que determinados mensajes que Microsoft sigue analizando a través de [envíos](admin-submission.md) de administrador informen de mensajes buenos conocidos que se marcan incorrectamente como incorrectos para Microsoft (falsos positivos). Al igual que con todas las invalidaciones, se **_recomienda encarecidamente_** que estas asignaciones sean temporales.
 
-## <a name="exchange-online-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Exchange Online Procedimientos de PowerShell para buzones de SecOps en la directiva de entrega avanzada
+## <a name="security--compliance-center-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procedimientos & PowerShell del Centro de seguridad y cumplimiento para buzones de SecOps en la directiva de entrega avanzada
 
-En Exchange Online PowerShell, los elementos básicos de los buzones de SecOps en la directiva de entrega avanzada son:
+En PowerShell & centro de seguridad y cumplimiento, los elementos básicos de los buzones de SecOps en la directiva de entrega avanzada son:
 
 - **La directiva de invalidación de SecOps:** controlada por los **\* cmdlets -SecOpsOverridePolicy.**
 - **La regla de invalidación de SecOps**: Controlada por los **\* cmdlets -SecOpsOverrideRule.**
@@ -178,7 +181,7 @@ En este ejemplo se crea la regla de buzón de SecOps con la configuración espec
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
-**Nota:****Independientemente del valor name que especifique, el nombre de la regla será SecOpsOverrideRule donde es un valor GUID único \<GUID\> \<GUID\> (por ejemplo, 6fed4b63-3563-495d-a481-b24a311f8329).
+**Nota:** Independientemente del valor name que especifique, el nombre de la regla será SecOpsOverrideRule, donde es un valor GUID único \<GUID\> \<GUID\> (por ejemplo, 6fed4b63-3563-495d-a481-b24a311f8329).
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule).
 
@@ -262,9 +265,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## <a name="exchange-online-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Exchange Online Procedimientos de PowerShell para simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
+## <a name="security--compliance-center-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procedimientos & PowerShell del Centro de seguridad y cumplimiento para simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
-En Exchange Online PowerShell, los elementos básicos de las simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada son:
+En PowerShell & centro de seguridad y cumplimiento, los elementos básicos de las simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada son:
 
 - **La directiva de invalidación de simulación de suplantación de** identidad : controlada por los **\* cmdlets -PhishSimOverridePolicy.**
 - **La regla de invalidación de simulación de** suplantación de identidad : controlada por los **\* cmdlets -PhishSimOverrideRule.**

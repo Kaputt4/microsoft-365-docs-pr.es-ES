@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3d4e13c5884edc562e1a791c2435148320cf485
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b9311844bbe7bffa0d22d064f4a285af755d0432
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622873"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726193"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer preferencias para Microsoft Defender para endpoint en macOS
 
@@ -581,6 +581,8 @@ Las plantillas siguientes contienen entradas para todas las configuraciones desc
         <true/>
         <key>passiveMode</key>
         <false/>
+        <key>maximumOnDemandScanThreads</key>
+        <integer>1</integer>
         <key>exclusions</key>
         <array>
             <dict>
@@ -731,6 +733,8 @@ Las plantillas siguientes contienen entradas para todas las configuraciones desc
                     <true/>
                     <key>passiveMode</key>
                     <false/>
+                    <key>maximumOnDemandScanThreads</key>
+                    <integer>1</integer>
                     <key>exclusions</key>
                     <array>
                         <dict>

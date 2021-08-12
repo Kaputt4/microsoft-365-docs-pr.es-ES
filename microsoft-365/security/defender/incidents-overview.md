@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 303391a5ed9368e94fe744cf405e2502af0e6ec6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028528"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622741"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidentes en Microsoft 365 Defender
 
@@ -194,6 +194,8 @@ Para obtener más información acerca de SecOps en todos los productos de Micros
   - [Administrar incidentes, que](manage-incidents.md)incluye cambiar el nombre, asignar, clasificar y agregar etiquetas y comentarios en función del flujo de trabajo de administración de incidentes.
 
   - Realizar [investigaciones](investigate-incidents.md) de incidentes.
+
+- Vea cómo [integrar Microsoft 365 Defender en el Centro de operaciones de seguridad (SOC).](integrate-microsoft-365-defender-secops.md)
 
 - Consulta estos [libros de reproducción de respuesta a](/security/compass/incident-response-playbooks) incidentes para obtener instrucciones detalladas sobre los ataques de suplantación de identidad (phishing), el uso de contraseñas y la concesión de consentimiento de la aplicación.
 

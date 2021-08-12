@@ -2,8 +2,8 @@
 title: Crear directivas de aplicación
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de aplicación.
-ms.openlocfilehash: 19056c235fdcd88de20b68bbb473a9b7dcfd3e3c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 70c22201c64e5fa1d4b77eec922fb53f75abfe6b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656564"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541360"
 ---
 # <a name="create-app-policies"></a>Crear directivas de aplicación
 
@@ -48,40 +48,28 @@ El gobierno de las aplicaciones tiene tres categorías de plantillas de directiv
 
 El gobierno de las aplicaciones incluye estas plantillas para generar alertas sobre el uso de las mismas.
 
-<br>
-
-****
-
-|Nombre de la plantilla|Descripción|
-|---|---|
-|Nueva aplicación con un alto volumen de acceso a datos|Destaca las aplicaciones registradas recientemente con un alto volumen de acceso a los datos para asegurarse de que esos patrones de datos son los esperados. <p> De forma predeterminada, esta directiva marcará todas las aplicaciones que se han registrado en los últimos 7 días y que han tenido más de 1 GB de acceso a datos durante ese período. Esta directiva se puede personalizar con más condiciones y acciones.|
+| Nombre de la plantilla | Descripción |
+|:-------|:-----|
+| Nueva aplicación con un alto volumen de acceso a datos | Destaca las aplicaciones registradas recientemente con un alto volumen de acceso a los datos para asegurarse de que esos patrones de datos son los esperados. <br><br> De forma predeterminada, esta directiva marcará todas las aplicaciones que se han registrado en los últimos 7 días y que han tenido más de 1 GB de acceso a datos durante ese período. Esta directiva se puede personalizar con más condiciones y acciones. |
 |||
 
 ### <a name="app-permissions"></a>Permisos de aplicación
 
 El gobierno de las aplicaciones incluye estas plantillas para generar alertas sobre los permisos de las aplicaciones.
 
-<br>
-
-****
-
-|Nombre de la plantilla|Descripción|
-|---|---|
-|Aplicaciones con exceso de privilegios|Destaca cualquier aplicación con más permisos concedidos de los que están siendo utilizados por esas aplicaciones para identificar oportunidades de reducción potencial de permisos. <p> Por defecto, esta directiva marcará todas las aplicaciones que estén marcadas como con exceso de privilegios si no se utilizan durante 90 días. Este filtro de periodo de tiempo se puede personalizar con más condiciones y acciones.|
-|Nueva aplicación con permisos de alto privilegio|Destaca todas las nuevas aplicaciones con permisos de alto privilegio para identificar las posibles aplicaciones de alto impacto que pueden necesitar una mayor investigación. <p> De forma predeterminada, esta directiva marcará todas las aplicaciones registradas en los últimos 7 días que tengan permisos de alto alcance.|
+| Nombre de la plantilla | Descripción |
+|:-------|:-----|
+| Aplicaciones con exceso de privilegios | Destaca cualquier aplicación con más permisos concedidos de los que están siendo utilizados por esas aplicaciones para identificar oportunidades de reducción potencial de permisos. <br><br> Por defecto, esta directiva marcará todas las aplicaciones que estén marcadas como con exceso de privilegios si no se utilizan durante 90 días. Este filtro de periodo de tiempo se puede personalizar con más condiciones y acciones. |
+| Nueva aplicación con permisos de alto privilegio | Destaca todas las nuevas aplicaciones con permisos de alto privilegio para identificar las posibles aplicaciones de alto impacto que pueden necesitar una mayor investigación. <br><br> De forma predeterminada, esta directiva marcará todas las aplicaciones registradas en los últimos 7 días que tengan permisos de alto alcance. |
 |||
 
 ### <a name="m365-certification"></a>Certificación M365
 
 El gobierno de las aplicaciones incluye estas plantillas para generar alertas para la certificación de M365.
 
-<br>
-
-****
-
-|Nombre de la plantilla|Descripción|
-|---|---|
-|Nueva aplicación no certificada|Destaca las nuevas aplicaciones que no han pasado por el proceso de certificación de M365 para garantizar que son esperadas en el espacio empresarial. <p> De forma predeterminada, esta directiva marcará todas las aplicaciones que se hayan registrado en los últimos 7 días y que no estén certificadas.|
+| Nombre de la plantilla | Descripción |
+|:-------|:-----|
+| Nueva aplicación no certificada | Destaca las nuevas aplicaciones que no han pasado por el proceso de certificación de M365 para garantizar que son esperadas en el espacio empresarial. <br><br> De forma predeterminada, esta directiva marcará todas las aplicaciones que se hayan registrado en los últimos 7 días y que no estén certificadas. |
 |||
 
 ## <a name="custom-app-policies"></a>Directivas de aplicación personalizadas
@@ -118,29 +106,25 @@ El panel **Crear regla** permite seleccionar las condiciones para una nueva regl
 
 Estas son las condiciones disponibles para una directiva de aplicación personalizada.
 
-<br>
-
-****
-
-|Condición|Valores de condición aceptados|Más información|
-|---|---|---|
-|Edad de registro de la aplicación|En los últimos X días||
-|Certificación de aplicación|Cumplimiento básico, cumplimiento del MCAS o N/A|[Certificación Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)|
-|Verificación del editor|Sí o no|[Verificación del editor](/azure/active-directory/develop/publisher-verification-overview)|
-|Permiso de aplicación|Seleccione uno o más permisos de API de la lista|[Referencia de permisos de Microsoft Graph](/graph/permissions-reference)|
-|Permiso delegado|Seleccione uno o más permisos de API de la lista|[Referencia de permisos de Microsoft Graph](/graph/permissions-reference)|
-|Privilegio alto|Sí o no|Se trata de una designación interna basada en la misma lógica utilizada por el MCAS.|
-|Aplicación sobre privilegiada|Sí o no|Aplicaciones con más permisos concedidos de los que están siendo utilizados por esas aplicaciones.|
-|Acceso a los datos de la aplicación|Más de X GB de acceso a datos por hora||
-|Tendencia de acceso a los datos de la aplicación|X% de aumento en el uso de datos en los últimos 7 días||
-|Acceso a la API de la aplicación|Más de X llamadas a la API por hora||
-|Tendencia de acceso a la API de la aplicación|X% de aumento en las llamadas a la API en los últimos 7 días||
-|Consentimiento del usuario|(mayor o menor que) X usuarios con consentimiento||
-|El usuario con prioridad ha dado su consentimiento|Sí o no|Un usuario con una [cuenta prioritaria](/microsoft-365/admin/setup/priority-accounts).|
-|Consentimiento de la aplicación concedido por|Seleccionar usuario(s) de la lista||
-|Rol del usuario que da su consentimiento|Seleccione uno o más: Administrador de equipos, Lector de directorios, Lector de seguridad, Administrador de cumplimiento, Administrador de seguridad, Administrador de Helpdesk, Administrador de SharePoint, Administrador de Exchange, Lector global, Administrador global, Administrador de datos de cumplimiento, Administrador de usuarios, Administrador de soporte técnico|La selección múltiple está permitida. <p> Cualquier rol de Azure AD con miembro asignado debe estar disponible en esta lista.|
-|Carga de trabajo a la que se accede|OneDrive y/o SharePoint y/o Exchange|La selección múltiple está permitida.|
-|Tasa de errores|La tasa de error es superior al X% en los últimos 7 días, donde X es un valor definido por el administrador||
+|Condición | Valores de condición aceptados | Más información |
+|:-------|:-----|:-------|
+| Edad de registro de la aplicación | En los últimos X días |  |
+| Certificación de aplicación | Cumplimiento básico, cumplimiento del MCAS o N/A | [Certificación Microsoft 365](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
+| Verificación del editor | Sí o no | [Verificación del editor](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
+| Permiso de aplicación | Seleccione uno o más permisos de API de la lista | [Referencia de permisos de Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) |
+| Permiso delegado | Seleccione uno o más permisos de API de la lista | [Referencia de permisos de Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) |
+| Privilegio alto | Sí o no | Se trata de una designación interna basada en la misma lógica utilizada por el MCAS. |
+| Aplicación sobre privilegiada | Sí o no | Aplicaciones con más permisos concedidos de los que están siendo utilizados por esas aplicaciones. |
+| Acceso a los datos de la aplicación | Más de X GB de acceso a datos por hora |  |
+| Tendencia de acceso a los datos de la aplicación | X% de aumento en el uso de datos en los últimos 7 días |  |
+| Acceso a la API de la aplicación | Más de X llamadas a la API por hora |  |
+| Tendencia de acceso a la API de la aplicación | X% de aumento en las llamadas a la API en los últimos 7 días     |  |
+| Consentimiento del usuario | (mayor o menor que) X usuarios con consentimiento |  |
+| El usuario con prioridad ha dado su consentimiento | Sí o no | Un usuario con una [cuenta prioritaria](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
+| Consentimiento de la aplicación concedido por | Seleccionar usuario(s) de la lista |  |
+| Rol del usuario que da su consentimiento | Seleccione uno o más: Administrador de equipos, Lector de directorios, Lector de seguridad, Administrador de cumplimiento, Administrador de seguridad, Administrador de Helpdesk, Administrador de SharePoint, Administrador de Exchange, Lector global, Administrador global, Administrador de datos de cumplimiento, Administrador de usuarios, Administrador de soporte técnico | La selección múltiple está permitida. <br><br> Cualquier rol de Azure AD con miembro asignado debe estar disponible en esta lista. |
+| Carga de trabajo a la que se accede | OneDrive y/o SharePoint y/o Exchange | La selección múltiple está permitida. |
+| Tasa de errores | La tasa de error es superior al X% en los últimos 7 días, donde X es un valor definido por el administrador |  |
 ||||
 
 Se deben cumplir todas las condiciones especificadas para que esta directiva de aplicación genere una alerta.
@@ -167,7 +151,7 @@ Publish metadata-based policies
 
 ## <a name="test-and-monitor-your-new-app-policy"></a>Pruebe y supervise su nueva directiva de aplicaciones
 
-Ahora que su directiva de aplicación está creada, debe supervisarla en la página de **Directivas** para asegurarse de que está registrando un número esperado de alertas activas y alertas totales durante las pruebas.
+Ahora que su directiva de aplicación está creada, debe supervisarla en la página de **Directivas** para asegurarse de que está registrando un número esperado de alertas activas y alertas totales durante las pruebas. 
 
 ![La página de resumen de las directivas de MAPG en el Centro de cumplimiento de Microsoft 365 con una directiva resaltada](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 

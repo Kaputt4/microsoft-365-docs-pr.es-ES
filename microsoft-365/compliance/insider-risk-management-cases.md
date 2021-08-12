@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 19fd44633f03a7797484ecaa6a15159e24da7fbf
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 405f63c849c33680ff221dd752899682df5d62e7
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326824"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726169"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -151,13 +151,13 @@ Para obtener más información sobre el explorador de actividades, consulte el a
 
 ### <a name="content-explorer"></a>Explorador de contenido
 
-La pestaña de **Explorador de contenido** permite a los analistas de riesgos y a los expertos revisar copias de todos los archivos y mensajes de correo electrónico individuales asociados con alertas de riesgo. Por ejemplo, si se crea una alerta cuando un usuario descarga cientos de archivos de SharePoint Online y la actividad desencadena una alerta de directiva, todos los archivos descargados de la alerta se capturan y copian en el caso de administración de riesgos de insider desde orígenes de almacenamiento originales.
+La **pestaña Explorador de contenido** permite a los investigadores de riesgos revisar copias de todos los archivos individuales y mensajes de correo electrónico asociados con alertas de riesgo. Por ejemplo, si se crea una alerta cuando un usuario descarga cientos de archivos de SharePoint Online y la actividad desencadena una alerta de directiva, todos los archivos descargados de la alerta se capturan y copian en el caso de administración de riesgos de insider desde orígenes de almacenamiento originales.
 
 El explorador de contenido es una herramienta eficaz con características básicas y avanzadas de búsqueda y filtrado. Para obtener más información sobre cómo usar el explorador de contenido, vea [Insider risk management Content explorer](insider-risk-management-content-explorer.md).
 
 ![Explorador de contenido de casos de administración de riesgos de Insider](../media/insider-risk-content-explorer.png)
 
-### <a name="case-notes"></a>Notas de casos
+### <a name="case-notes"></a>Notas del caso
 
 La **pestaña Notas del** caso en el caso es donde los analistas de riesgos e investigadores comparten comentarios, comentarios e información sobre su trabajo para el caso. Las notas son adiciones permanentes a un caso y no se pueden modificar ni eliminar después de guardar la nota. Cuando se crea un caso a partir de una alerta, los comentarios escritos en el cuadro de diálogo **Confirmar alerta y crear casos de riesgo internas** se agregan automáticamente como nota de caso.
 
@@ -206,9 +206,9 @@ Para enviar un aviso al usuario asignado a un caso:
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
 5. Seleccione **Enviar** para enviar el aviso al usuario o **seleccione Cancelar** cerrar el cuadro de diálogo sin enviar el aviso al usuario. Todos los avisos enviados se agregan a la cola de notas de caso en el panel **notas del** caso.
 
-### <a name="escalate-for-investigation"></a>Remitir para investigación
+### <a name="escalate-for-investigation"></a>Escalar para investigación
 
-Escala el caso para la investigación del usuario en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del usuario. Esta extensión abre un nuevo caso de eDiscovery avanzado en su organización de Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Asignar un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información sobre los casos de eDiscovery avanzado, consulte [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
+Escala el caso para la investigación del usuario en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del usuario. Esta extensión abre un nuevo caso de exhibición avanzada de documentos electrónicos en su organización de Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Asignar un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información sobre los casos de exhibición avanzada de documentos electrónicos, [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
 
 Para escalar un caso a una investigación de usuario:
 

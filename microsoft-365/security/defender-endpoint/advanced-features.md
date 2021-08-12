@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2b9914c67ba9e98d68e053b8c3613c7d883f82a5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 165130eeb5cfa8616c2256eb390ac669b466500c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649640"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567701"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -32,7 +32,7 @@ ms.locfileid: "53649640"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Según los productos de seguridad de Microsoft que use, algunas características avanzadas podrían estar disponibles para integrar Defender for Endpoint con.
 
@@ -230,8 +230,8 @@ Al habilitar la integración de Intune, Intune creará automáticamente una dire
 > [!NOTE]
 > La directiva de CA clásica creada por Intune es distinta de las directivas modernas de acceso [condicional,](/azure/active-directory/conditional-access/overview/)que se usan para configurar puntos de conexión.
 
-## <a name="device-discovery"></a>Detección de dispositivo
 
+## <a name="device-discovery"></a>Detección de dispositivo
 Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. Para obtener más información, consulta [Detección de dispositivos](device-discovery.md).
 
 > [!NOTE]
@@ -242,10 +242,6 @@ Le ayuda a encontrar dispositivos no administrados conectados a la red corporati
 Obtenga información sobre las nuevas características en la versión preliminar de Defender for Endpoint. Pruebe las próximas características al activar la experiencia de vista previa.
 
 Tendrás acceso a las próximas características, sobre las que puedes proporcionar comentarios para ayudar a mejorar la experiencia general antes de que las características estén disponibles en general.
-
-## <a name="download-quarantined-files"></a>Descargar archivos en cuarentena
-
-Copia de seguridad de archivos en cuarentena en una ubicación segura y compatible para que se puedan descargar directamente de la cuarentena. El **botón Descargar** archivo siempre estará disponible en la página de archivos. Esta configuración está activada de forma predeterminada. [Más información sobre los requisitos](respond-file-alerts.md#download-quarantined-files)
 
 ## <a name="related-topics"></a>Temas relacionados
 

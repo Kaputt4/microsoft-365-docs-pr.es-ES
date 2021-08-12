@@ -29,7 +29,7 @@ ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/04/2021
-ms.locfileid: "53757071"
+ms.locfileid: "53726229"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Intervalos de direcciones IP y direcciones URL de Office 365
 

@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Usar Microsoft Teams clases con Blackboard Learn Ultra
-ms.openlocfilehash: a97d5bf56e1e045ccb0ef7cc66ecef7dfba4041a
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: fc2bb1fa222dd47917d14c5c055c8f52fcbe7390
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454643"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726217"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Usar Microsoft Teams clases con Blackboard Learn Ultra
 
@@ -46,7 +46,7 @@ Para asegurarse de que los datos son precisos y de que las inscripciones o perte
  Cuando dos direcciones de correo electrónico son diferentes:
 
 - Se debe tomar una decisión sobre qué origen tiene prioridad y se tomarán como correos electrónicos de persona e institución.
-  O
+  O bien
 - Una institución puede establecer una asignación de campo personalizada en su correo electrónico de la institución, que puede resolver un posible conflicto.
 
 La **asignación de campo** De correo electrónico de la institución ya está disponible para todos los tipos de integración de SIS existentes en Configuración avanzada **Configuración**  >  **usuarios aprendan asignación de** campo de tipo de  >  **objeto**.
@@ -178,5 +178,3 @@ Verá una ventana de permisos que explica que está dando permiso a Blackboard L
    - Si no se ha aprobado el consentimiento, siga los pasos descritos para generar la dirección URL para el consentimiento y enviarla al administrador global Microsoft 365 para su aprobación.
 
 5. Una vez que haya confirmado la aprobación, seleccione **Reintentar** para confirmar y, a continuación, **seleccione Enviar**.
-
-   ![Cuadro de diálogo que indica que el acceso se ha bloqueado](media/blocked-access.png)

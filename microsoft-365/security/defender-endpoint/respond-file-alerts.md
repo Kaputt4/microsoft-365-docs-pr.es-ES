@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 813a6e425801bbcad24255839e9f6250aaefa87599f51a45d1adecb29efc9245
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57494202a401edd920ac43defc40f6bebcde778a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793155"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541690"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -33,7 +33,7 @@ ms.locfileid: "53793155"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-responddile-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Responda rápidamente a los ataques detectados deteniendo y anulando archivos o bloqueando un archivo. Después de realizar acciones en los archivos, puede comprobar los detalles de la actividad en el Centro de acciones.
 
@@ -51,17 +51,12 @@ También puede enviar archivos para un análisis profundo, para ejecutar el arch
 
 Algunas acciones requieren ciertos permisos. En la tabla siguiente se describe qué acción pueden realizar ciertos permisos en archivos ejecutables portátiles (PE) y que no son PE:
 
-<br>
-
-****
-
-|Permiso|Archivos PE|Archivos que no son PE|
-|:---------------------|:------:|:----------:|
-|Ver datos|X|X|
-|Investigación de alertas|&#x2611;|X|
-|Respuesta en directo básica|X|X|
-|Respuesta en directo avanzada|&#x2611;|&#x2611;|
-|
+| Permiso             | Archivos PE | Archivos que no son PE |
+| :--------------------- | :------: | :----------: |
+| Ver datos              |     X    |       X      |
+| Investigación de alertas   | &#x2611; |       X      |
+| Respuesta en directo básica    |     X    |       X      |
+| Respuesta en directo avanzada | &#x2611; |   &#x2611;   |
 
 Para obtener más información sobre los roles, vea [Create and manage roles for role-based access control](user-roles.md).
 
@@ -88,7 +83,7 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
 1. Seleccione el archivo que desea detener y poner en cuarentena. Puede seleccionar un archivo de cualquiera de las siguientes vistas o usar el cuadro De búsqueda:
 
    - **Alertas:** haga clic en los vínculos correspondientes de la línea de tiempo Descripción o Detalles de la escala de tiempo del artículo de alerta
-   - **Cuadro de** búsqueda: **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
+   - **Cuadro de búsqueda:** **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
 
    > [!NOTE]
    > La acción de detener y poner en cuarentena el archivo está limitada a un máximo de 1000 dispositivos. Para detener un archivo en un mayor número de dispositivos, vea [Agregar indicador para bloquear o permitir el archivo](#add-indicator-to-block-or-allow-a-file).
@@ -102,7 +97,7 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
    ![Imagen de la ventana modal del archivo de detenerse y poner en cuarentena](images/atp-stop-quarantine.png)
 
    El Centro de acciones muestra la información de envío:
-
+   
    ![Imagen del centro de acciones de archivos de detenerse y poner en cuarentena](images/atp-stopnquarantine-file.png)
 
    - **Tiempo de envío:** muestra cuándo se envió la acción.
@@ -112,8 +107,7 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
 
 4. Seleccione cualquiera de los indicadores de estado para ver más información sobre la acción. Por ejemplo, seleccione **Error** al ver dónde falló la acción.
 
-#### <a name="notification-on-device-user"></a>Notificación en el usuario del dispositivo
-
+**Notificación en el usuario del dispositivo:**</br>
 Cuando se quita el archivo de un dispositivo, se muestra la siguiente notificación:
 
 ![Imagen de notificación en el usuario del dispositivo](images/atp-notification-file.png)
@@ -130,12 +124,12 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 
    1. Vaya a **Inicio** y escriba _cmd_.
 
-   1. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
+   1. Haga clic con el **botón secundario en Símbolo del sistema** y seleccione Ejecutar como **administrador.**
 
 2. Escriba el siguiente comando y presione **Entrar**:
 
-   ```dos
-   "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
+   ```console
+   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
    > [!NOTE]
@@ -150,31 +144,9 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 
 Si selecciona **Descargar archivo de** las acciones de respuesta, puede descargar un archivo local protegido con contraseña .zip que contenga el archivo. Aparecerá un flyout donde puede registrar un motivo para descargar el archivo y establecer una contraseña.
 
-De forma predeterminada, debería poder descargar archivos que se encuentran en cuarentena.
+De forma predeterminada, no podrá descargar archivos que estén en cuarentena.
 
 ![Imagen de la acción de archivo de descarga](images/atp-download-file-action.png)
-
-### <a name="download-quarantined-files"></a>Descargar archivos en cuarentena
-
-Los archivos que han sido puestos en cuarentena por Antivirus de Microsoft Defender o el equipo de seguridad se guardarán de forma compatible de acuerdo con las configuraciones [de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md). El equipo de seguridad puede descargar los archivos directamente desde la página de detalles del archivo a través del botón "Descargar archivo". **Esta característica de vista previa está activada de forma predeterminada.**
-
-La ubicación depende de la configuración geográfica de su organización (UE, Reino Unido o EE. UU.). Un archivo en cuarentena solo se recopilará una vez por organización. Obtenga más información sobre la protección de datos de Microsoft desde el Portal de confianza de servicio en https://aka.ms/STP .
-
-Tener activada esta configuración puede ayudar a los equipos de seguridad a examinar archivos potencialmente no deseados e investigar incidentes de forma rápida y menos arriesgada. Sin embargo, si necesita desactivar esta configuración, vaya **a Configuración** Características avanzadas de extremos descargar archivos en cuarentena para  >    >    >   ajustar la configuración. [Más información sobre las características avanzadas](advanced-features.md)
-
-#### <a name="backing-up-quarantined-files"></a>Copia de seguridad de archivos en cuarentena
-
-Es posible que se pida a los usuarios que proporcionen un consentimiento explícito antes de realizar una copia de seguridad del archivo en cuarentena, según la [configuración de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
-
-Esta característica no funcionará si el envío de ejemplo está desactivado. Si se establece el envío automático de muestra para solicitar permiso al usuario, solo se recopilarán las muestras que el usuario acepte enviar.
-
->[!IMPORTANT]
->Descargar requisitos de archivos en cuarentena:
->- Su organización usa Antivirus de Microsoft Defender en modo activo 
->- La versión del motor antivirus es 1.1.17300.4 o posterior. Ver [Versiones mensuales de la plataforma y el motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
->- La protección basada en la nube está habilitada. Consulte [Activar la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
->- El envío de ejemplo está activado
->- Los dispositivos Windows 10 versión 1703 o posterior, o Windows 2016 o 2019
 
 ### <a name="collect-files"></a>Recopilar archivos
 
@@ -203,7 +175,6 @@ Impedir la propagación posterior de un ataque en la organización mediante la p
 ### <a name="enable-the-block-file-feature"></a>Habilitar la característica de archivo de bloqueo
 
 Para empezar a bloquear archivos, primero debe activar la característica [ **Bloquear**](advanced-features.md) o permitir en Configuración.
-
 ### <a name="allow-or-block-file"></a>Permitir o bloquear archivo
 
 Cuando agregas un hash de indicador para un archivo, puedes elegir generar una alerta y bloquear el archivo siempre que un dispositivo de la organización intente ejecutarlo.
@@ -248,11 +219,10 @@ El resumen de análisis profundo incluye una lista de *comportamientos observado
 
 Los resultados del análisis profundo se comparan con la inteligencia de amenazas y cualquier coincidencia generará alertas adecuadas.
 
-Use la característica de análisis profundo para investigar los detalles de cualquier archivo, normalmente durante una investigación de una alerta o por cualquier otro motivo en el que sospeche un comportamiento malintencionado. Esta característica está disponible en la **pestaña Análisis profundo,** en la página de perfil del archivo.
+Use la característica de análisis profundo para investigar los detalles de cualquier archivo, normalmente durante una investigación de una alerta o por cualquier otro motivo en el que sospeche un comportamiento malintencionado. Esta característica está disponible en la **pestaña Análisis profundo,** en la página de perfil del archivo.<br/>
+<br/>
 
-<br/><br/>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
 
 **Enviar** para análisis profundo está habilitado cuando el archivo está disponible en la colección de muestras back-end de Defender for Endpoint, o si se observó en un dispositivo Windows 10 que admite el envío a un análisis profundo.
 
@@ -270,7 +240,7 @@ También puedes enviar un ejemplo a través del Portal del Centro de seguridad d
 
     - **Alertas:** seleccione los vínculos de archivo de **la línea de tiempo Descripción** o **Detalles** de la línea de tiempo de artículo de alerta
     - **Lista dispositivos:** seleccione los vínculos de archivo de la **sección Descripción** o **Detalles** de la sección Dispositivo **en la** organización
-    - **Cuadro de** búsqueda: **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
+    - **Cuadro de búsqueda:** **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
 
 2. En la **pestaña Análisis profundo** de la vista archivo, seleccione **Enviar**.
 
@@ -312,18 +282,18 @@ Si encuentra un problema al intentar enviar un archivo, pruebe cada uno de los s
 
 4. Si la directiva de colección de ejemplo no está configurada, el comportamiento predeterminado es permitir la colección de muestras. Si está configurado, compruebe que la configuración de directiva permite la colección de muestras antes de enviar el archivo de nuevo. Cuando se configura la colección de ejemplo, compruebe el siguiente valor del Registro:
 
-    ```text
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
     Hexadecimal value :
-      Value = 0 - block sample collection
-      Value = 1 - allow sample collection
+      Value = 0 – block sample collection
+      Value = 1 – allow sample collection
     ```
 
-5. Cambie la unidad organizativa a través de la directiva de grupo. Para obtener más información, vea [Configure with Group Policy](configure-endpoints-gp.md).
+1. Cambie la unidad organizativa a través de la directiva de grupo. Para obtener más información, vea [Configure with Group Policy](configure-endpoints-gp.md).
 
-6. Si estos pasos no resuelven el problema, póngase en [contacto winatp@microsoft.com](mailto:winatp@microsoft.com).
+1. Si estos pasos no resuelven el problema, póngase en [contacto winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## <a name="related-topics"></a>Temas relacionados
 
