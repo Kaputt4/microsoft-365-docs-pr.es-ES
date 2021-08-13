@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: 302ae9aef9669d8eb567680f5d96acf5b0c32009
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ec011330541e9b1c03ba5bb12f3e41645ace5abdecba4de357906e93f9cbfc37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825143"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -58,7 +58,7 @@ También puedes usar la aplicación [Administración de Microsoft 365 en](https:
 
 Para cancelar la suscripción a los correos electrónicos del Centro de mensajes, consulte Cancelar la suscripción a los correos [electrónicos del Centro](#unsubscribe-from-message-center-emails) de mensajes en este artículo.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 <br>
 
@@ -189,7 +189,7 @@ Si la administración se distribuye en toda la organización, es posible que no 
 
 ### <a name="display-messages-in-your-preferred-language"></a>Mostrar mensajes en el idioma preferido
   
-Usamos la traducción automática para mostrar automáticamente los mensajes en el idioma que prefieras. Lea [Traducción de idioma para las publicaciones del Centro de mensajes](language-translation-for-message-center-posts.md) para obtener más información sobre cómo establecer el idioma.
+Usamos la traducción automática para mostrar los mensajes en su idioma de preferencia de forma automática. Para más información sobre cómo establecer su idioma de preferencia vaya a [Traducción de las publicaciones del Centro de mensajes](language-translation-for-message-center-posts.md).
   
 > [!NOTE]
 > El resumen semanal y las publicaciones que se envían por correo electrónico se envían solo en inglés. Los destinatarios pueden usar [Traductor para Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) para leer el mensaje en su idioma preferido.
@@ -304,6 +304,6 @@ Para obtener información general sobre el Centro de mensajes, vea [Centro de me
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Configurar las opciones de versión estándar o dirigida](../manage/release-options-in-office-365.md) (artículo)\
+[Configurar las opciones de las versiones estándar o dirigida](../manage/release-options-in-office-365.md) (artículo)\
 [Administrar qué Office aparecen en Novedades](../manage/show-hide-new-features.md) (artículo)\
 [Suscripciones empresariales y documentación de facturación](../../commerce/index.yml) (página de vínculos)

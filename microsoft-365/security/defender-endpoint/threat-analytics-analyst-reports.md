@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 39949e7a6c51cbad9ea0a34180fde729802f63f3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 150ae09184298cf57887cfb7e9b7efe96a600445ea1a246944e5085b48d9ec0d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656624"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817353"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>El informe de analistas en análisis de amenazas
 

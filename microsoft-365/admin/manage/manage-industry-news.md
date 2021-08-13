@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Proporcione a los usuarios titulares de noticias actualizados sobre su sector e información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización.
-ms.openlocfilehash: dedc39d9c82f66d64660f66be8e77ba954246e09
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ccb2c944fb9f3a68d0670aa86acb0095362516dcad98069defe2aba1ec97dc97
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825169"
 ---
 # <a name="manage-industry-news"></a>Administrar noticias del sector
 
@@ -54,7 +54,7 @@ Como administrador, controla la configuración de la fuente de noticias de su or
 
 1. Puede bloquear los artículos que contienen palabras clave en el **campo Excluir contenido.** Por ejemplo, para evitar que los artículos que contienen la palabra clave "bak" se muestren en la fuente de noticias, agregue la palabra clave "bak" en el **campo Excluir contenido.** Evite incluir términos generales (los, y, etc.); pueden impedir que el contenido relevante aparezca en las fuentes de noticias de la empresa. 
 
-1. Haga clic en **Guardar**. Los cambios pueden tardar hasta 24 horas en aparecer. 
+1. Seleccione **Guardar**. Los cambios pueden tardar hasta 24 horas en aparecer. 
 
 ## <a name="industry-updates-in-email"></a>Actualizaciones del sector en el correo electrónico 
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
-ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
+ms.openlocfilehash: b1cb2b9f7a9f3feddc86fdd5eda5323f5459b427412e334044433f589a85f594
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53347912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833392"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -52,23 +52,23 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |-----|-----|-----|
 | `Timestamp` | datetime | Fecha y hora en que se generó el registro |
 | `Application` | cadena | Aplicación que realizó la acción grabada |
-| `ApplicationId` | string | Identificador único de la aplicación |
-| `IsManagedIdentity`    | boolean       | Indica si el inicio de sesión se inició mediante una identidad administrada |
-| `ErrorCode`    | int | Contiene el código de error si se produce un error de inicio de sesión. Para encontrar una descripción de un código de error específico, visite <https://aka.ms/AADsigninsErrorCodes> . |
-| `CorrelationId`        | string        | Identificador único del evento de inicio de sesión |
-| `ServicePrincipalName` | string        | Nombre de la entidad de servicio que inició el inicio de sesión  |
-| `ServicePrincipalId`   | string        | Identificador único de la entidad de servicio que inició el inicio de sesión  |
-| `ResourceDisplayName`  | string        | Nombre para mostrar del recurso al que se ha accedido  |
-| `ResourceId`           | string        | Identificador único del recurso al que se ha accedido  |
-| `ResourceTenantId`     | string        | Identificador único del inquilino del recurso al que se ha accedido |
-| `IPAddress`            | string        | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas  |
-| `Country`          | string        | Código de dos letras que indica el país donde se geolocalización de la dirección IP del cliente |
-| `State`                | string        | Estado en el que se produjo el inicio de sesión, si está disponible |
-| `City`                 | string        | Ciudad donde se encuentra el usuario de la cuenta  |
-| `Latitude`             | string        | Las coordenadas de norte a sur de la ubicación de inicio de sesión |
-| `Longitude`            | string        | Las coordenadas de este a oeste de la ubicación de inicio de sesión |
-| `RequestId`            | string        | Identificador único de la solicitud |
-|`ReportId` | string | Identificador único del evento |
+| `ApplicationId` | cadena | Identificador único de la aplicación |
+| `IsManagedIdentity`    | booleano       | Indica si el inicio de sesión se inició mediante una identidad administrada |
+| `ErrorCode`    | Entero | Contiene el código de error si se produce un error de inicio de sesión. Para encontrar una descripción de un código de error específico, visite <https://aka.ms/AADsigninsErrorCodes> . |
+| `CorrelationId`        | cadena        | Identificador único del evento de inicio de sesión |
+| `ServicePrincipalName` | cadena        | Nombre de la entidad de servicio que inició el inicio de sesión  |
+| `ServicePrincipalId`   | cadena        | Identificador único de la entidad de servicio que inició el inicio de sesión  |
+| `ResourceDisplayName`  | cadena        | Nombre para mostrar del recurso al que se ha accedido  |
+| `ResourceId`           | cadena        | Identificador único del recurso al que se ha accedido  |
+| `ResourceTenantId`     | cadena        | Identificador único del inquilino del recurso al que se ha accedido |
+| `IPAddress`            | cadena        | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas  |
+| `Country`          | cadena        | Código de dos letras que indica el país donde se geolocalización de la dirección IP del cliente |
+| `State`                | cadena        | Estado en el que se produjo el inicio de sesión, si está disponible |
+| `City`                 | cadena        | Ciudad donde se encuentra el usuario de la cuenta  |
+| `Latitude`             | cadena        | Las coordenadas de norte a sur de la ubicación de inicio de sesión |
+| `Longitude`            | cadena        | Las coordenadas de este a oeste de la ubicación de inicio de sesión |
+| `RequestId`            | cadena        | Identificador único de la solicitud |
+|`ReportId` | cadena | Identificador único del evento |
 
  
 

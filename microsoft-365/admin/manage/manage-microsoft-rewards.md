@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los usuarios que tienen cuentas personales de Microsoft pueden obtener puntos de Microsoft Rewards en relación con sus búsquedas de trabajo si la característica Vincular AAD con Recompensas está habilitada.
-ms.openlocfilehash: 581a7a044ef1b3508591778c9da416ffc3afac2e
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 682bfb9e26ca81ac76f147ce53f3ff92bae1ec47e3b91babcdfde6bf6acab4fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825084"
 ---
 # <a name="manage-microsoft-rewards"></a>Administrar Microsoft Rewards
 
@@ -36,7 +36,7 @@ Esta característica no está disponible para los usuarios gubernamentales. Los 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Configurar Microsoft Search](/microsoftsearch/setup-microsoft-search) (artículo)
+[Configurar Búsqueda de Microsoft](/microsoftsearch/setup-microsoft-search) (artículo)
 
 [Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa](../../security/top-security-tasks-for-remote-work.md) (artículo)
 

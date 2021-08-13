@@ -13,12 +13,12 @@ ms.collection:
 ms.service: o365-administration
 localization_priority: Normal
 description: Como administrador global, puedes anclar hasta tres aplicaciones al iniciador de aplicaciones de los usuarios.
-ms.openlocfilehash: 786368f1236c7a86a6fbd0dd863ad0296cb65fac
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6569b05f29a2219c9d1d6c847e65cd29043d80fd82d5e499e2af57ba96af0da9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579271"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825021"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Anclar aplicaciones al iniciador de aplicaciones de los usuarios
 
@@ -28,7 +28,7 @@ Para obtener más información sobre el iniciador de [](https://support.microsof
 
 ## <a name="use-the-azure-active-directory-portal-to-pin-apps"></a>Usar el portal Azure Active Directory para anclar aplicaciones
 
-1. Vaya al Centro Microsoft 365 administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Vaya a la Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 2. En la navegación izquierda, elija **Mostrar todo** y, en Centros **de administración,** **elija Azure Active Directory**.
 3. En **Azure Active Directory**, elija **Enterprise configuración de** usuario de las  >  **aplicaciones.**
 4. En la **Office 365 Configuración,** elija **Agregar aplicación**.

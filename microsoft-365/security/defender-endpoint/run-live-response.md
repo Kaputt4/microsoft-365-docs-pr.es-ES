@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9c974da84dfffeeb655e29e934e2fe37c9af94bc
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a27761cc6f907905e9aa1a4fb2c1a1dc8120f5acfb15574cae6b170d75d51ec1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833488"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
@@ -60,6 +60,25 @@ Ejecuta una secuencia de comandos de respuesta en directo en un dispositivo
 
 5.  Cuando se produce un error en un comando de respuesta en directo, no se ejecutarán todas las acciones seguidas.
 
+## <a name="minimum-requirements"></a>Requisitos mínimos
+
+Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguientes requisitos:
+
+- **Compruebe que está ejecutando una versión compatible de Windows**.
+
+  Los dispositivos deben ejecutar una de las siguientes versiones de Windows
+
+  - **Windows 10**
+    - [Versión 1909](/windows/whats-new/whats-new-windows-10-version-1909) o posterior
+    - [Versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - [Versión 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Versión 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+
+  - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
+    - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
+    - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Get started](apis-intro.md).
@@ -79,12 +98,12 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|Cadena|Portador\<token>\. Obligatorio.|
+|Authorization|String|Portador\<token>\. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-|Parámetro|Tipo|Descripción|
+|Parámetro|Tipo|Description|
 |---|---|---|
 |Comentario|Cadena|Comentario para asociarlo a la acción.|
 |Comandos|Matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|

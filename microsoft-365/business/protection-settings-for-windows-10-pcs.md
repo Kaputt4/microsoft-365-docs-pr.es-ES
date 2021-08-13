@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración disponible en Microsoft 365 para empresas para proteger Windows 10 dispositivos.
-ms.openlocfilehash: 4859681d5e71a61b8a5dd58114bce899f485967a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: b246a0caeb34bac8b9ccbecc9e1008992a700f9e16083a78c98e780605c5af01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809294"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Editar o crear la configuración de protección de dispositivos Windows 10 equipos
 
@@ -78,7 +78,7 @@ Para obtener más información, vea [How do protection features in Microsoft 365
 |Impedir el acceso a la red a contenido potencialmente malintencionado en Internet  <br/> |Use esta configuración para bloquear las conexiones de usuario salientes a ubicaciones de Internet de baja reputación que pueden hospedar estafas de phishing, vulnerabilidades de seguridad u otro contenido malintencionado. Esta configuración solo está disponible si Antivirus de Windows Defender está establecida en **On**. Para obtener más información, vea [Protect your network](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).  <br/> |
 |Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos al cifrar los discos duros del equipo y proteger ante la exposición de datos en caso del robo o pérdida de un equipo. Para obtener más información, consulta [Preguntas más frecuentes de Bitlocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
 |Permitir a los usuarios descargar aplicaciones desde la Microsoft Store  <br/> |Permite a los usuarios descargar e instalar aplicaciones desde la Microsoft Store. Las aplicaciones pueden ser de cualquier tipo, desde juegos hasta herramientas de productividad, por lo que dejamos esta configuración **activada**, pero puede desactivarla para obtener una capa de seguridad adicional.  <br/> |
-|Permitir a los usuarios acceder a Cortana  <br/> |Cortana puede ser muy útil. Cortana puede activar o desactivar la configuración, dar instrucciones y asegurarse de que está a tiempo para las citas, por lo que esta configuración se mantiene activa de **forma** predeterminada.  <br/> |
+|Permitir a los usuarios acceder a Cortana  <br/> |Cortana puede ser muy útil. Cortana activar o desactivar la configuración, dar instrucciones y asegurarse de que está a tiempo para las citas, por lo que esta configuración se mantiene activa de **forma** predeterminada.  <br/> |
 |Permitir a los usuarios recibir sugerencias de Windows y anuncios de Microsoft  <br/> |Las sugerencias de Windows pueden ser útiles y orientar a los usuarios cuando se publiquen nuevas características.  <br/> |
 |Mantener actualizados automáticamente los dispositivos con Windows 10  <br/> |Garantiza que los dispositivos con Windows 10 reciban automáticamente las actualizaciones más recientes.  <br/> |
 |Apagar la pantalla del dispositivo cuando esté inactivo durante esta cantidad de tiempo  <br/> |Garantiza que los datos de la compañía estén protegidos si un usuario está inactivo. Puede que un usuario trabaje en una ubicación pública, como una cafetería, y se aparte o se distraiga durante un momento, lo que dejaría su dispositivo vulnerable ante miradas indiscretas. Esta configuración le permite controlar cuánto tiempo puede estar inactivo un usuario antes de que se apague la pantalla.  <br/> |

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 184190e57e5f1478dd40e64f4291fa55eb49768f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 211d8071d0b8fcf8c650acb15f2fa29ac9bed456b0c8eed8829a0c4502817d8d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817309"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Seguimiento y respuesta a amenazas emergentes a través del análisis de amenazas
 

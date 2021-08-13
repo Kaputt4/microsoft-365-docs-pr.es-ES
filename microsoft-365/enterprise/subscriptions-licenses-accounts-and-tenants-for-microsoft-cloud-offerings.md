@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Información sobre las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.
-ms.openlocfilehash: 34e920e6b5a48adaffcc31150090e96f9c8d8b0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: 05c30cd47364a9161d0fa95a952f21d0b62940159cb638127d4eb8240b2a108e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794764"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -52,7 +52,7 @@ Una suscripción es un contrato con Microsoft para utilizar uno o más servicios
  
 También puede usar una suscripción de prueba, pero la suscripción expira después de un periodo de tiempo o cargos por consumo determinados. Puede convertir una suscripción de prueba en una suscripción de pago.
   
-Las organizaciones pueden tener varias suscripciones para las ofertas de la nube de Microsoft. En la ilustración 1, se muestra una sola organización con varias suscripciones de Microsoft 365, una suscripción de Dynamics 365 y varias suscripciones de Azure.
+En la ilustración 1, se muestra una sola organización con varias suscripciones de Microsoft 365, una suscripción de Dynamics 365 y varias suscripciones de Azure.
 
 **Ilustración 1: Ejemplo de varias suscripciones para una organización**
 
@@ -60,7 +60,7 @@ Las organizaciones pueden tener varias suscripciones para las ofertas de la nube
   
 ### <a name="licenses"></a>Licencias
 
-Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cuenta de usuario específica utilizar los servicios de la oferta de la nube. Se le cobrará un precio mensual fijo como parte de su suscripción. Los administradores asignan licencias a cuentas de usuario individuales en la suscripción. Para el ejemplo en la figura 2, Contoso Corporation tiene una suscripción a Microsoft 365 E5 con 100 licencias, que permite a hasta 100 cuentas de usuario individuales utilizar las características y los servicios de Microsoft 365 E5.
+Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cuenta de usuario específica usar los servicios de la oferta de la nube. Se le cobrará un precio mensual fijo como parte de su suscripción. Los administradores asignan licencias a cuentas de usuario individuales en la suscripción. En el ejemplo de la ilustración 2, Contoso Corporation tiene una suscripción a Microsoft 365 E5 con 100 licencias, que permite a hasta 100 cuentas de usuario individuales usar las características y los servicios de Microsoft 365 E5.
   
 **Ilustración 2: Licencias en las suscripciones basadas en SaaS para una organización**
 
@@ -78,7 +78,7 @@ Algunas imágenes de máquina virtual tienen versiones de prueba de aplicaciones
   
 ### <a name="user-accounts"></a>Cuentas de usuario
 
-Las cuentas de usuario para todas las ofertas de la nube de Microsoft se almacenan en un espacio empresarial de Azure Active Directory (Azure AD), que contiene grupos y cuentas de usuario. Un inquilino de Azure AD se puede sincronizar con las cuentas existentes de Active Directory Domain Services (AD DS) mediante Azure AD Connect, un servicio basado en Windows Server. Esto se conoce como sincronización de directorios.
+Las cuentas de usuario para todas las ofertas de la nube de Microsoft se almacenan en un inquilino de Azure Active Directory (Azure AD), que contiene grupos y cuentas de usuario. Un inquilino de Azure AD se puede sincronizar con las cuentas existentes de Active Directory Domain Services (AD DS) mediante Azure AD Connect, un servicio basado en Windows Server. Esto se conoce como sincronización de directorios.
   
 En la ilustración 3, se muestra un ejemplo de varias suscripciones de una organización con un espacio empresarial de Azure AD común que contiene las cuentas de la organización.
   
@@ -88,11 +88,11 @@ En la ilustración 3, se muestra un ejemplo de varias suscripciones de una organ
   
 ### <a name="tenants"></a>Espacios empresariales
 
-Para las ofertas de la nube de SaaS, el inquilino es la ubicación regional que hospeda a los servidores que proporcionan servicios en la nube. Por ejemplo, Contoso Corporation eligió la región europea para hospedar sus suscripciones de Microsoft 365, EMS y Dynamics 365 para los 15 000 trabajadores en su sede de París.
+Para las ofertas de la nube de SaaS, el inquilino es la ubicación regional que hospeda a los servidores que proporcionan servicios en la nube. Por ejemplo, Contoso Corporation eligió la región europea para hospedar a sus suscripciones de Microsoft 365, EMS y Dynamics 365 para los 15 000 trabajadores en su sede de París.
   
 Los servicios de PaaS de Azure y las cargas de trabajo basadas en máquina virtual hospedadas en IaaS de Azure pueden tener un arrendamiento en cualquier centro de datos de Azure en todo el mundo. Especifique el centro de datos de Azure, conocido como la ubicación, al crear la aplicación o el servicio de PaaS de Azure, o el elemento de una carga de trabajo de IaaS.
   
-Un espacio empresarial de Azure AD es una instancia específica de Azure AD que contiene cuentas y grupos. Las suscripciones de pago o de prueba de Microsoft 365 o Dynamics 365 incluyen un espacio empresarial de Azure AD gratuito. Este inquilino de Azure AD no incluye otros servicios de Azure y no es lo mismo que una suscripción de prueba o de pago de Azure.
+Un inquilino de Azure AD es una instancia específica de Azure AD que contiene cuentas y grupos. Las suscripciones de prueba o de pago de Microsoft 365 o Dynamics 365 incluyen un inquilino gratuito de Azure AD. Este inquilino de Azure AD no incluye otros servicios de Azure y no es lo mismo que una suscripción de prueba o de pago de Azure.
   
 ### <a name="summary-of-the-hierarchy"></a>Resumen de la jerarquía
 
@@ -120,7 +120,7 @@ Aquí tiene un ejemplo de la relación de las organizaciones, suscripciones, lic
     
   - Las cuentas de usuario de la organización en un inquilino común de Azure AD.
     
-Varias suscripciones de la oferta de la nube de Microsoft pueden usar el mismo inquilino de Azure AD, que actúa como proveedor común de identidades. Un espacio empresarial central de Azure AD que contiene las cuentas sincronizadas de su servidor local de AD DS le proporciona identidad como servicio (IDaaS) basada en la nube para su organización. 
+Varias suscripciones de la oferta de la nube de Microsoft pueden usar el mismo inquilino de Azure AD, que actúa como proveedor común de identidades. Un inquilino central de Azure AD que contiene las cuentas sincronizadas de su AD DS local le proporciona identidad como servicio (IDaaS) basada en la nube para su organización. 
   
 **Ilustración 4: Cuentas locales sincronizadas e IDaaS para una organización**
 

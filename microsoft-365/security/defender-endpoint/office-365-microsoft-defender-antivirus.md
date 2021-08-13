@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c0c3e87644b7666c006f2eaf0632827173f5362f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 558e73d00218e7e9f63ed346ff35e1b996adafab8fd5c7739fca8e9cd38a86ca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542650"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833536"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mejor juntos: Antivirus de Microsoft Defender y Office 365
 

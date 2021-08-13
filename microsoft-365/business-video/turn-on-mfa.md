@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo activar la autenticación multifactor, a veces conocida como autenticación en dos fases.
-ms.openlocfilehash: ec9edd8664f35d3731f1f3c90ff2c60e8b2d2e3d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 7c53417cc4ba8591a5b928c25ee4f0152b4b4fd946657b368ce7aa2a4618824e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394790"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809485"
 ---
 # <a name="turn-on-multifactor-authentication"></a>Activar la autenticación multifactor
 

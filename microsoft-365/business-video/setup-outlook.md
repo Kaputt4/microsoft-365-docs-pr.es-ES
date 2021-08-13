@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar Outlook para su correo Microsoft 365 correo electrónico.
-ms.openlocfilehash: 9dc0ed41df4aaadee060e0c7606600ba5512df09
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ce6ec27043f363f0a4aecd0981e78f7b474e97776d766ecda8ac34a808c44b90
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809569"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Configurar Outlook para Microsoft 365 correo electrónico empresarial 
 
