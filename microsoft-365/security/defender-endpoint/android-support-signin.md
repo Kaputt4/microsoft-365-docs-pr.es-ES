@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d46a2ff2b1faa7360c27ca8c4571bd55e72ede1e93a8bf62dbc24d9f0ea08050
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2981138d6bf8d5bd3fa49120e3469fe29301ef6fbe8bba074ed83495044ef562
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834457"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834744"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para Endpoint en Android
 
@@ -101,3 +101,25 @@ Permiso de dispositivos Xiaomi: "Mostrar ventanas emergentes mientras se ejecuta
 Habilite el permiso necesario en dispositivos Xiaomi.
 
 - Mostrar ventanas emergentes mientras se ejecuta en segundo plano.
+
+
+## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>No se puede permitir el permiso para la "protección permanente" durante la incorporación en algunos dispositivos OEM
+
+**Se aplica a:** Solo dispositivos OEM específicos.
+
+-   **Xiaomi con Android 11** 
+
+Defender App pide permiso de optimización de batería/protección permanente en  dispositivos como parte de la incorporación de aplicaciones y al seleccionar Permitir se devuelve un error que no se pudo establecer el permiso. Solo afecta al último permiso denominado "Protección permanente". 
+ 
+**Causa:** Xiomi cambió los permisos de optimización de batería en Android 11. Defender no puede configurar esta configuración para omitir las optimizaciones de batería.
+
+**Solución:** Estamos trabajando con OEM para encontrar una solución que habilite este permiso desde la pantalla de incorporación de aplicaciones. Actualizaremos la documentación cuando se resuelva.
+Los usuarios pueden seguir estos pasos para habilitar los mismos permisos desde la configuración del dispositivo: 
+
+1. Ve a **Configuración** en el dispositivo.
+2. Busque y seleccione **Optimización de batería.**
+3. En **Acceso especial a la aplicación,** selecciona **Optimización de batería.**
+4. Cambie el menú desplegable para mostrar **Todas las aplicaciones**.
+5. Busque "Punto de conexión de Microsoft Defender" y seleccione **No optimizar**.
+
+Vuelva a la pantalla de incorporación de Puntos de conexión de Microsoft Defender, seleccione **Permitir** y se le redirigirá a la pantalla del panel.

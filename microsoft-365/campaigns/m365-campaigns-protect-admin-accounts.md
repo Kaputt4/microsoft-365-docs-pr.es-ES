@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo configurar y proteger las cuentas de administrador.
-ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: d66ce47886a1743ea39be23df4c9b5d4977bb675e1c835c421bcb61205c1f4fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803047"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteger las cuentas de administrador
 
@@ -57,7 +57,7 @@ Para crear cuentas de administrador adicionales:
 
     ![Elegir el rol de administrador](../media/adminroles.png)
 
- 4. En la **sección Licencias de productos,** mueva el selector de **Microsoft 365 Empresa** a **Desactivado** y Crear usuario sin licencia **de producto** a **On**.
+ 4. En la **sección Licencias de productos,** mueva el selector de **Microsoft 365 Empresa** a **Desactivado** y **Crear usuario** sin licencia de producto a **On**.
 
     ![Elegir la licencia del producto](../media/productlicense.png)
 
@@ -74,7 +74,7 @@ Para crear una nueva cuenta de usuario:
 1. Vaya al Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">de administración y,</a> a continuación, **elija Usuarios** \> **usuarios activos** en la navegación izquierda.
 2. En la **página Usuarios activos,** seleccione Agregar **un** usuario en la parte superior de la página y, en el **panel** Nuevo usuario, escriba el nombre y otra información.
 3. Expanda la **sección Roles** y elija **Usuario (sin acceso administrativo).**
-4. En la **sección Licencias de productos,** mueva el selector **de Microsoft 365 Empresa** a **On**.
+4. En la **sección Licencias de productos,** mueva el selector de **Microsoft 365 Empresa** a **On**.
 
 ## <a name="turn-on-security-defaults"></a>Activar valores predeterminados de seguridad
 

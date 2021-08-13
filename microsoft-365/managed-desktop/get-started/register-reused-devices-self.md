@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: ed254234109bc5ff9865ff49ed3fa0fff8770ab0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6e5db8d641c4b38f6b660479be451ddaa5a23aac440e8d98757cac99f2160fb1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890952"
 ---
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
@@ -172,7 +172,7 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 
 ## <a name="check-the-image"></a>Comprobar la imagen
 
-Si el dispositivo procede de un proveedor de partners de Escritorio administrado de Microsoft, la imagen debe ser correcta.
+Si el dispositivo procede de un proveedor Escritorio administrado de Microsoft asociado, la imagen debe ser correcta.
 
 También puedes aplicar la imagen por tu cuenta si lo prefieres. Para empezar, póngase en contacto con el representante de Microsoft con el que está trabajando y le proporcionarán la ubicación y los pasos para aplicar la imagen.
 
@@ -181,4 +181,4 @@ También puedes aplicar la imagen por tu cuenta si lo prefieres. Para empezar, p
 > [!IMPORTANT]
 > Antes de entregar el dispositivo al usuario, asegúrese de haber obtenido y aplicado las licencias adecuadas [para](../get-ready/prerequisites.md) ese usuario.
 
-Si se aplican todas las [](get-started-devices.md)licencias, puedes preparar a los usuarios para usar dispositivos y, a continuación, el usuario puede iniciar el dispositivo y continuar con la experiencia de configuración de Windows.
+Si se aplican todas las [](get-started-devices.md)licencias, puedes preparar a los usuarios para usar dispositivos y, a continuación, el usuario puede iniciar el dispositivo y continuar con la experiencia de configuración Windows usuario.

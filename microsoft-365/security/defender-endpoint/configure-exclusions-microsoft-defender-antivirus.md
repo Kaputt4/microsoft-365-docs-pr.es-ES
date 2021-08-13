@@ -15,17 +15,14 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: c6daa760dcec7c170cba15619eea380b6a1b882ff5baa7c3fc74c2b88f90ee62
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f3c44ba70debfdf4ecebb089f2015214e92f4b2cef037da5bdf5f7ad0e99c40
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854140"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803637"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 
@@ -50,15 +47,15 @@ Para configurar y validar exclusiones, vea lo siguiente:
 
 Tenga en cuenta los siguientes puntos al definir exclusiones:  
 
-- Las exclusiones son técnicamente un vacío de protección. Tenga en cuenta siempre las mitigaciones al definir exclusiones. Otras mitigaciones podrían ser tan sencillas como asegurarse de que la ubicación excluida tenga las listas de control de acceso (ACL) adecuadas, la directiva de auditoría, se procesa mediante un software actualizado, etc.
+- Las exclusiones son técnicamente un vacío de protección. Tenga en cuenta todas las opciones al definir exclusiones. Otras opciones pueden ser tan sencillas como asegurarse de que la ubicación excluida tenga las listas de control de acceso (ACL) adecuadas o establecer directivas en el modo de auditoría al principio.
 
-- Revise las exclusiones periódicamente. Vuelva a comprobar y volver a aplicar las mitigaciones como parte del proceso de revisión.
+- Revise las exclusiones periódicamente. Vuelva a comprobar y volver a aplicar mitigaciones como parte del proceso de revisión.
 
-- Lo ideal es evitar definir exclusiones que pretenda ser proactivas. Por ejemplo, no excluyas algo solo porque crees que podría ser un problema en el futuro. Use exclusiones solo para problemas específicos, como los relacionados con el rendimiento o la compatibilidad de aplicaciones que las exclusiones podrían mitigar.
+- Lo ideal es evitar definir exclusiones en un esfuerzo por ser proactivo. Por ejemplo, no excluyas algo solo porque crees que podría ser un problema en el futuro. Use exclusiones solo para problemas específicos, como los relacionados con el rendimiento o la compatibilidad de aplicaciones que las exclusiones podrían mitigar.
 
-- Audite los cambios de la lista de exclusión. El administrador de seguridad debe conservar suficiente contexto en torno a por qué se agregó una exclusión determinada. Debería poder proporcionar una respuesta con un razonamiento específico sobre por qué se excluyó una determinada ruta de acceso.
+- Revise y audite los cambios en la lista de exclusiones. El equipo de seguridad debe conservar el contexto en torno a por qué se agregó una exclusión determinada para evitar confusiones más adelante. El equipo de seguridad debe poder proporcionar respuestas específicas a preguntas sobre por qué existen exclusiones.
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="see-also"></a>Consulte también
 
 - [Antivirus de Microsoft Defender exclusiones en Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Errores comunes para evitarlos cuando se definen exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)

@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: Obtén información sobre la configuración disponible en Microsoft 365 para empresas para proteger los archivos de trabajo si el dispositivo de un usuario se pierde o se roba.
-ms.openlocfilehash: b640642d7f6ed9c83376f4cb2a0cdaa610e8159b
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 98967155cb59a2646440dfc4b7b115d4adda7ffb050ca2f57c6249a48deea0fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803250"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Proteger los archivos de trabajo después de la pérdida o robo de un dispositivo móvil
 

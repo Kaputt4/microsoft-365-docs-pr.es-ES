@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 041f493e81a38b09fd064eaac866af74913e0b5c9986dd6e752eec80ba86a9e8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b72218f1174eb06a99b5cc0fbb4788b40c867038fd5edfb3f76632b072ed3f73
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794623"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803481"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
@@ -23,17 +23,17 @@ Puedes enviar vales de soporte técnico o solicitudes de comentarios a Microsoft
 ## <a name="open-a-new-support-request"></a>Abrir una nueva solicitud de soporte técnico
 
 1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **Administración de inquilinos.**
-2. Busque la sección Escritorio administrado de Microsoft y, a continuación, seleccione **Solicitud de servicio**.
-3. En **Solicitudes de soporte** técnico, seleccione + Nuevo vale de soporte **técnico**.
-4. Seleccione el **tipo de solicitud de soporte** técnico que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones.
-5. Seleccione el **nivel de gravedad**. Para obtener más información, vea [Support request severity definitions](#sev).
+2. Busque la sección Escritorio administrado de Microsoft y, a continuación, seleccione **Solicitudes de servicio**.
+3. En la **hoja Solicitudes de servicio,** seleccione **+ Nueva solicitud de soporte técnico**.
+4. Seleccione el **tipo de solicitud** que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones.
+5. Seleccione el **nivel de gravedad.** Para obtener más información, vea [Support request severity definitions](#sev).
 6. Proporcione tanta información sobre la solicitud como sea posible para ayudar al equipo a responder rápidamente. Según el tipo de solicitud, es posible que deba proporcionar diferentes detalles.
 7. Revise toda la información que proporcionó para obtener precisión.
 8. Cuando haya terminado, seleccione **Crear**.
 
 Tipo de solicitud de soporte técnico|Cuándo usarlo
 ---|---
-Incidente|Necesita que el equipo Escritorio administrado de Microsoft Operations investigue, por ejemplo, el impacto generalizado de un cambio o una interrupción del servicio.
+Incidente|El equipo de Escritorio administrado de Microsoft operations debe investigar un problema de usuario causado por, por ejemplo, un impacto generalizado de un cambio o una interrupción del servicio.
 Solicitud de información|Está planeando un cambio en las redes, la configuración de proxy, los sistemas VPN, la expiración del certificado o simplemente necesita información sobre el servicio. Se recomienda una respuesta del equipo Escritorio administrado de Microsoft operaciones al comunicar un cambio dentro de la organización.
 Solicitud de cambio|Es necesario que el equipo Escritorio administrado de Microsoft operaciones realice un cambio, como mover dispositivos entre grupos de actualización.
 
@@ -56,7 +56,7 @@ Aunque el correo electrónico es el enfoque recomendado para interactuar con nue
 
 Si necesita editar los detalles de un caso, por ejemplo, actualizar el contacto principal del caso, deberá seguir estos pasos:
 
-1. En la hoja Solicitud  **de** servicio, en el menú Administración de inquilinos de [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), use la barra de búsqueda o los filtros para encontrar el caso que le interesa editar.
+1. En la hoja Solicitudes de  servicio, en el menú Administración de **inquilinos** de [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), use la barra de búsqueda o los filtros para encontrar el caso que le interesa editar.
 2. Seleccione el caso para abrir los detalles de la solicitud
 3. Desplácese hasta la parte inferior de los detalles de la solicitud y seleccione **Editar**.
 4. Actualice la información editable, agregue datos adjuntos al caso o agregue una nota para el equipo de Ingeniería de servicios y, a continuación, **seleccione Guardar**.

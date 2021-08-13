@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a6af6569358f9f08efb0895a9e82dfbdae28c6b627c8c6ff2d7d08927d8d1619
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 71ae504caa9cea6b7fe2d10437271140986f9f38e1760b81a9019e3bd22ddaba
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834576"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803445"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas frecuentes en Microsoft Defender para endpoint en iOS
 
@@ -96,9 +96,6 @@ Además, se muestra una notificación en el dispositivo iOS. Al pulsar en la not
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>El dispositivo no se ve en la consola de Defender for Endpoint después de la incorporación.
 
 Después de la incorporación, el dispositivo tarda unas horas en aparecer en el inventario de dispositivos en la consola de seguridad de Defender para endpoints. Además, asegúrate de que el dispositivo esté registrado correctamente con Azure Active Directory dispositivo tenga conectividad a Internet. Para una incorporación correcta, el dispositivo debe registrarse a través de Microsoft Authenticator o Portal de empresa de Intune y el usuario debe iniciar sesión con la misma cuenta con la que el dispositivo está registrado en Azure AD.
-
-> [!NOTE]
-> A veces, el nombre del dispositivo no es coherente con el de Microsoft Endpoint Manager (Intune). El nombre del dispositivo en la consola defender para endpoint tiene el formato <username_iPhone/iPad modelo>. También puedes usar el id. de dispositivo de Azure AD para identificar el dispositivo en la consola de Defender para endpoint.
 
 ## <a name="data-and-privacy"></a>Datos y privacidad
 

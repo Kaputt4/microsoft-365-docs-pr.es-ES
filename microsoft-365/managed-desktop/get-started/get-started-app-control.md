@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 431e6cb3b8d7ab7e1dd317918fab4821889c7d4e
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3b1e74289046f7c04b77b25448af409966117fd9836f22dfdf813bdfd732b524
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890964"
 ---
 # <a name="get-started-with-app-control"></a>Introducción al control de aplicaciones
 

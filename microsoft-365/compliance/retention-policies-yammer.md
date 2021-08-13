@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Yammer.
-ms.openlocfilehash: deacfafbc16c2b04b3dad8a4e9c49ffe07fdf165792c7360a31419a821c52c22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea9e1acb96de32565c4d49529af75fd0224db7885fd6431b8de8bc287969c970
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835609"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834540"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Más información sobre la retención para Yammer
 
@@ -41,9 +41,13 @@ Para otras cargas de trabajo, vea:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
-Los siguientes elementos de Yammer se pueden retener y eliminar mediante directivas de retención para Yammer: mensajes de la comunidad y mensajes de usuario.
+Tanto los mensajes de usuario como los mensajes de la comunidad de Yammer se pueden eliminar mediante directivas de retención para Yammer y además del texto de los mensajes, se pueden conservar los siguientes elementos por motivos de cumplimiento: vínculos de hipertexto y vínculos a otros mensajes de Yammer.
 
-En estos mensajes no se incluyen las reacciones de otras personas en forma de iconos gestuales.
+Los mensajes de usuario incluyen todos los nombres de las personas del chat y los mensajes de la comunidad incluyen el nombre de la comunidad y el título del mensaje (si se ha proporcionado).
+
+No se conservan las reacciones de los demás en forma de emoticonos cuando se usan directivas de retención para Yammer.
+
+Los archivos que use con Yammer no se incluyen en las directivas de retención de Yammer. Estos elementos tienen sus propias directivas de retención.
 
 ## <a name="how-retention-works-with-yammer"></a>Cómo funciona la retención con Yammer
 

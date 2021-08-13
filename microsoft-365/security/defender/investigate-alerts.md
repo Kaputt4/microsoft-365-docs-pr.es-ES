@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a9d8d2fe7fe26b90719502fffebaa96526a26d24207b49136e52373fc058d94b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e85231278a03b4c9495e9331e50734f643d3c17def30fdcc4ba3c385aac94b8a
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799374"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834756"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ En la cola de alertas predeterminada, puede seleccionar Filtros **para** ver un 
 
 Puede filtrar alertas según estos criterios:
 
-- Severity
+- Gravedad
 - Estado
 - Categoría
 - Origen de detección
@@ -74,8 +74,6 @@ Una página de alerta se compone de estas secciones:
 
 - Historia de alertas, que es la cadena de eventos y alertas relacionadas con esta alerta en orden cronológico
 - Detalles de resumen
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el portal Microsoft 365 Defender datos":::
 
 A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (**...**) junto a cualquier entidad para ver las acciones disponibles, como abrir la página de alerta o vincular la alerta a otro incidente.
 
@@ -151,7 +149,7 @@ Una vez que haya terminado de analizar una alerta  y se pueda resolver, vaya al 
 
 Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 

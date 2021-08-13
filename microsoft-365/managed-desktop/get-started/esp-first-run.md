@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 99bfaf40ab2bce2878af76650f92dda9f528be59
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c9cbcd9ef9e4557e30409cd471d80cbcca5a2947438ef988c7892c18eddd8a2d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890987"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Experiencia de primera ejecución con piloto automático y la página de estado de inscripción
 

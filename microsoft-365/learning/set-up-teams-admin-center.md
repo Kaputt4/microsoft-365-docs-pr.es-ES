@@ -1,5 +1,5 @@
 ---
-title: Configurar Microsoft Viva Learning (versión preliminar) en el Centro Teams administración
+title: Configurar Aprendizaje Microsoft Viva (versión preliminar) en el Centro Teams administración
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: Obtenga información sobre cómo configurar Microsoft Viva Learning (versión preliminar) en el centro Teams administración.
-ms.openlocfilehash: 99e63210e8f8c10e3721c35fb69df7880c7e1929
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: Obtenga información sobre cómo configurar Aprendizaje Microsoft Viva (versión preliminar) en el centro Teams administración.
+ms.openlocfilehash: 01c3ac59b1f40ba0eb743a4b14bd9c02711cb050724057544a2d6238696015ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891158"
 ---
-# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurar Microsoft Viva Learning (versión preliminar) en el Centro Teams administración
+# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurar Aprendizaje Microsoft Viva (versión preliminar) en el Centro Teams administración
 
 > [!NOTE]
 > La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. 

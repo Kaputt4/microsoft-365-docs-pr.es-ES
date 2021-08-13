@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurar la autenticación multifactor.
-ms.openlocfilehash: 2a0c8b8fb8451d3d8868c493ad5e1f65adc30b6c
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 43ab127d6e3c38ca72d778c94f85997769981bb32bb80c9de5227ea6146f32df
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803151"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 

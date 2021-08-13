@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración Microsoft 365 Empresa Premium para campañas u otras empresas
-ms.openlocfilehash: 08fe74e519c2efab14e4362e35b89128a8442cfb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8bb358575c651cc2dc8097dd76ffa525b95fc5d77faeef5dde14faf2be34ca05
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297385"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802999"
 ---
 # <a name="set-up-microsoft-365"></a>Configurar Microsoft 365
 
@@ -61,7 +61,7 @@ Para configurar dispositivos de usuario:
 Para el personal clave, se recomienda usar dispositivos [administrados](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) para una protección aún mejor. Para todos los dispositivos, querrá configurar la autenticación [multifactor](m365-campaigns-multifactor-authenication.md).
 3. Todos los usuarios deben aprender a protegerse a sí mismos y a su campaña mediante el aprendizaje sobre [la suplantación de identidad (phishing) y otros ataques](m365-campaigns-phishing-and-attacks.md). Esta [infografía también](m365-campaigns-protect-campaign-infographic.md) puede ayudar a los usuarios a comprender cómo proteger la campaña de las amenazas en línea.
 
-## <a name="contact-support"></a>Contactar soporte
+## <a name="contact-support"></a>Ponerse en contacto con soporte técnico
 
  **Si necesita ponerse en contacto con soporte técnico:**
   

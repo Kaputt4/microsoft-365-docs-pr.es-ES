@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 0f471d9ffb559314e1c5d9ea0ee297cdf3e9866d17d87583974438c9bca74c71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b2cbfdddce8f26a64b1def5fa89ead6d7fb0557697363f6d285d8ee82ea353f
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799831"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803421"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Antivirus de Microsoft Defender en Windows
 
@@ -41,7 +41,7 @@ En la tabla siguiente se describe qué esperar cuando el Antivirus de Microsoft 
 | Modo  | Qué ocurre  |
 |---------|---------|
 | Modo activo | En modo activo, el Antivirus de Microsoft Defender se usa como la aplicación antivirus principal en el dispositivo. Los archivos se examinan, se corrigen las amenazas y las amenazas detectadas se enumeran en los informes de seguridad de la organización y en la aplicación de Seguridad de Windows. |
-| Modo pasivo | En modo pasivo, el Antivirus de Microsoft Defender no se usa como la aplicación antivirus principal en el dispositivo. Los archivos se examinan y se notifican las amenazas detectadas, pero el Antivirus de Microsoft Defender no corrige las amenazas.   |
+| Modo pasivo | En modo pasivo, el Antivirus de Microsoft Defender no se usa como la aplicación antivirus principal en el dispositivo. Los archivos se examinan y se notifican las amenazas detectadas, pero el Antivirus de Microsoft Defender no corrige las amenazas. <br/><br/>**IMPORTANTE**: El Antivirus de Microsoft Defender solo se puede ejecutar en modo pasivo en los puntos de conexión que se incorporan a Microsoft Defender para punto de conexión. Consulte [Requisitos para que el Antivirus de Microsoft Defender se ejecute en modo pasivo](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).  |
 | Deshabilitado o desinstalado  | Cuando se deshabilita o desinstala, no se usa el Antivirus de Microsoft Defender. Los archivos no se examinan y las amenazas no se corrigen. En general, no se recomienda deshabilitar o desinstalar el Antivirus de Microsoft Defender.  |
 
 Para más información, consulte [Compatibilidad con Antivirus de Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
@@ -69,11 +69,15 @@ Verá el nombre de la solución antivirus/antimalware en la página de configura
 3. En la lista de resultados, examine la fila **AMRunningMode**.
 
    - **Normal** significa que el Antivirus de Microsoft Defender se ejecuta en modo activo.
-   - **Modo pasivo** significa que el Antivirus de Microsoft Defender está ejecución, pero no es el producto antivirus/antimalware principal del dispositivo.
-   - **Modo de bloqueo de EDR** significa que el Antivirus de Microsoft Defender se está ejecutando y está habilitada una funcionalidad de Microsoft Defender para punto de conexión denominada "EDR en modo de bloqueo". (Ver [Detección y respuesta de punto de conexión (EDR) en el modo bloqueo](edr-in-block-mode.md).)
-   - **Modo pasivo SxS** significa que el Antivirus de Microsoft Defender se ejecuta en modo pasivo junto con otro producto antivirus/antimalware, y el dispositivo no está incorporado a Microsoft Defender para punto de conexión. En este caso, el análisis rápido limitado se utiliza en el Antivirus de Windows Defender. Para obtener más información, consulte [Usar el análisis rápido limitado en el Antivirus de Windows Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
 
-Para obtener más información sobre el cmdlet de Get-MpComputerStatus PowerShell, consulte el artículo de referencia [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).
+   - **Modo pasivo** significa que el Antivirus de Microsoft Defender está ejecución, pero no es el producto antivirus/antimalware principal del dispositivo. El modo pasivo solo está disponible para los dispositivos que se incorporan a Microsoft Defender para punto de conexión y que cumplen determinados requisitos. Consulte [Requisitos para que el Antivirus de Microsoft Defender se ejecute en modo pasivo](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
+
+   - **Modo de bloqueo de EDR**: significa que el Antivirus de Microsoft Defender se está ejecutando y que está habilitada la [Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo](edr-in-block-mode.md), una funcionalidad de Microsoft Defender para punto de conexión.
+
+   - **Modo pasivo de SxS**: significa que el Antivirus de Microsoft Defender se está ejecutando junto con otro producto antivirus o antimalware y se está utilizando el [Examen periódico limitado](limited-periodic-scanning-microsoft-defender-antivirus.md).
+
+> [!TIP]
+> Para obtener más información sobre el cmdlet de Get-MpComputerStatus PowerShell, consulte el artículo de referencia [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).
 
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>Obtener actualizaciones de la plataforma malware/antivirus
 

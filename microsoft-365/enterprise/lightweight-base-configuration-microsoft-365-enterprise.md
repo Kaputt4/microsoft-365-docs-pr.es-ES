@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use esta Guía del laboratorio de pruebas para crear un entorno de prueba ligero para realizar pruebas Microsoft 365 empresa.
-ms.openlocfilehash: 2de0760cef7339f62229575b1e0a54b3c67a4e9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e6ead4dd5c8e0d127b7fc2674111272bffade2f55935b391709a305dca996394
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909711"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803493"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuración básica ligera
 
@@ -71,7 +71,7 @@ Para iniciar la suscripción de prueba de Microsoft 365 E5, en primer lugar nece
 
 1. En el explorador, vaya a [https://aka.ms/e5trial](https://aka.ms/e5trial) .
     
-2. En el paso 1 de la página Gracias por elegir Office 365 **E5,** escriba su nueva dirección de cuenta de correo electrónico.
+2. En el paso 1 de la página Gracias **por elegir** Office 365 E5, escriba la nueva dirección de su cuenta de correo electrónico.
 3. En el paso 2 del proceso de suscripción a trail, escriba la información solicitada y, a continuación, realice la comprobación.
 4. En el paso 3, escriba un nombre de organización y, a continuación, un nombre de cuenta que será el administrador global de la suscripción.
 5. En el paso 4, registre la página de inicio de sesión aquí (seleccionar y copiar):  ![Línea](../media/Common-Images/TableLine.png)
@@ -79,7 +79,7 @@ Para iniciar la suscripción de prueba de Microsoft 365 E5, en primer lugar nece
    Registre la contraseña que escribió en una ubicación segura.
    Este valor se denominará **nombre de administrador global**.
 7. Seleccione **Ir a Instalación**.
-8. En Office 365 configuración de E5, seleccione Continuar con su organización **.onmicrosoft.com** para el correo electrónico y la sesión y, a continuación, seleccione **Salir y continuar más adelante**.
+8. En Office 365 E5 configuración, seleccione Continuar con su organización **.onmicrosoft.com** correo electrónico e iniciar sesión y, a continuación, seleccione **Salir y continuar más adelante.**
 
 Debería ver el Centro de administración de Microsoft 365.
     
@@ -100,29 +100,17 @@ $commonPW="<common user account password>"
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password=$commonPW
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
 $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
 $LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
 $LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+for($i=2;$i -le 4; $i++) {
+    $userUPN= "user$($i)@$($orgName).onmicrosoft.com"
+    New-AzureADUser -DisplayName "User $($i)" -GivenName User -SurName $i -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user$($i)"
+    $userObjectID = (Get-AzureADUser -SearchString $userupn).ObjectID
+    Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
+}
 ```
 > [!NOTE]
 > Aquí se usa una contraseña común para automatizar y facilitar la configuración de un entorno de prueba. Evidentemente, esto no se recomienda en el caso de suscripciones de producción. 
@@ -167,9 +155,9 @@ En esta fase se inscribe en la suscripción de evaluación de Microsoft 365 E5 y
   
 Primero, agregue la suscripción de prueba de Microsoft 365 E5 y asigne la nueva licencia de Microsoft 365 a su cuenta de administrador global.
   
-1. En una ventana privada del explorador de Internet, use las credenciales de la cuenta de administrador global para iniciar sesión en el centro Microsoft 365 de administración en [https://admin.microsoft.com](https://admin.microsoft.com) .
+1. En una ventana privada del explorador de Internet, use las credenciales de la cuenta de administrador global para iniciar sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com) .
     
-2. En la Microsoft 365 centro de **administración,** en la navegación izquierda, seleccione **Facturación > Servicios de compra.**
+2. En la **Centro de administración de Microsoft 365,** en la navegación izquierda, seleccione **Facturación > Servicios de compra.**
     
 3. En la **página Servicios de** compra, seleccione **Microsoft 365 E5** y, a continuación, seleccione Obtener **prueba gratuita.**
 
@@ -179,7 +167,7 @@ Primero, agregue la suscripción de prueba de Microsoft 365 E5 y asigne la nueva
 
 6. En la **página Recibo de pedido,** seleccione **Continuar**.
 
-7. En el Centro Microsoft 365 administración, seleccione **Usuarios > usuarios activos.**
+7. En el Centro de administración de Microsoft 365, seleccione **Usuarios > usuarios activos**.
 
 8. En **Usuarios activos,** seleccione su cuenta de administrador.
 
@@ -302,7 +290,7 @@ Después, una el equipo WIN10 al espacio empresarial de Azure AD de la suscripci
     
 A continuación, Aplicaciones Microsoft 365 para empresas en el equipo WIN10:
   
-1. Abra el Microsoft Edge e inicie sesión en el [centro de administración](https://admin.microsoft.com) de Microsoft 365 con las credenciales de la cuenta de administrador global.
+1. Abra el Microsoft Edge explorador e inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de la cuenta de administrador global.
     
 2. En la **Microsoft Office inicio,** seleccione **Instalar Office**.
     

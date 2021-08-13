@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 36bd812bfe41ca5113fe9ceb5710de3ded15210ca5e4eda4a9065fc1c1a11cdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb5efb5bd001a2659b0c3780af5f195b77b3103b2e8a7d0c7d1eee6915a6e303
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794119"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523365"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -36,19 +36,19 @@ ms.locfileid: "53794119"
 
 Puede habilitar el acceso controlado a carpetas mediante cualquiera de estos métodos:
 
-* [Seguridad de Windows app](#windows-security-app)
-* [Microsoft Endpoint Manager](#endpoint-manager)
-* [Administración de dispositivos móviles (MDM)](#mobile-device-management-mdm)
-* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
-* [Directiva de grupo](#group-policy)
-* [PowerShell](#powershell)
+- [Seguridad de Windows app](#windows-security-app)
+- [Microsoft Endpoint Manager](#endpoint-manager)
+- [Administración de dispositivos móviles (MDM)](#mobile-device-management-mdm)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Directiva de grupo](#group-policy)
+- [PowerShell](#powershell)
 
 [El modo auditoría](evaluate-controlled-folder-access.md) te permite probar cómo funcionaría la característica (y revisar los eventos) sin afectar al uso normal del dispositivo.
 
 La configuración de directiva de grupo que deshabilita la combinación de listas de administradores locales invalidará la configuración de acceso controlado a carpetas. También invalidan las carpetas protegidas y las aplicaciones permitidas establecidas por el administrador local a través del acceso controlado a carpetas. Estas directivas incluyen:
 
-* Antivirus de Microsoft Defender configurar **el comportamiento de combinación de administradores locales para listas**
-* System Center Endpoint Protection permitir **a los usuarios agregar exclusiones e invalidaciones**
+- Antivirus de Microsoft Defender configurar **el comportamiento de combinación de administradores locales para listas**
+- System Center Endpoint Protection permitir **a los usuarios agregar exclusiones e invalidaciones**
 
 Para obtener más información sobre cómo deshabilitar la combinación de listas locales, vea [Prevent or allow users to locally modify Microsoft Defender AV policy settings](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
 
@@ -119,13 +119,13 @@ Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Con
 3. Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender > Windows Defender Exploit Guard > acceso controlado a carpetas**.
 
 4. Haga doble clic en la **opción Configurar acceso controlado a carpetas** y establezca la opción en **Habilitado**. En la sección opciones, debe especificar una de las siguientes opciones:
-    * **Habilitar:** las aplicaciones malintencionadas y sospechosas no podrán realizar cambios en los archivos de carpetas protegidas. Se proporciona una notificación en el registro Windows eventos.
-    * **Deshabilitar (valor predeterminado):** la característica acceso controlado a carpetas no funcionará. Todas las aplicaciones pueden realizar cambios en los archivos de carpetas protegidas.
-    * **Modo auditoría:** se permitirán cambios si una aplicación malintencionada o sospechosa intenta realizar un cambio en un archivo de una carpeta protegida. Sin embargo, se registrará en el registro Windows eventos donde puede evaluar el impacto en su organización.
-    * **Bloquear solo modificación de disco:** los intentos de las aplicaciones que no son de confianza de escribir en los sectores de disco se iniciarán en Windows registro de eventos. Estos registros se pueden encontrar en **Registros** de aplicaciones y servicios > Microsoft > Windows > Windows Defender > Operational > ID. 1123.
-    * **Solo modificación** de disco de auditoría: solo se registrarán los intentos de escritura en los sectores de disco protegido en el registro de eventos de Windows (en Registros de aplicaciones y servicios Microsoft Windows Windows Defender Identificador operativo  >    >    >    >    >  **1124**). No se registrarán los intentos de modificar o eliminar archivos en carpetas protegidas.
+   - **Habilitar:** las aplicaciones malintencionadas y sospechosas no podrán realizar cambios en los archivos de carpetas protegidas. Se proporciona una notificación en el registro Windows eventos.
+   - **Deshabilitar (valor predeterminado):** la característica acceso controlado a carpetas no funcionará. Todas las aplicaciones pueden realizar cambios en los archivos de carpetas protegidas.
+   - **Modo auditoría:** se permitirán cambios si una aplicación malintencionada o sospechosa intenta realizar un cambio en un archivo de una carpeta protegida. Sin embargo, se registrará en el registro Windows eventos donde puede evaluar el impacto en su organización.
+   - **Bloquear solo modificación de disco:** los intentos de las aplicaciones que no son de confianza de escribir en los sectores de disco se iniciarán en Windows registro de eventos. Estos registros se pueden encontrar en **Registros de aplicaciones** y servicios de Microsoft Windows Windows Defender Operational ID \> \> \> \> \> 1123.
+   - **Solo modificación** de disco de auditoría: solo se registrarán los intentos de escritura en los sectores de disco protegido en el registro de eventos de Windows (en Registros de aplicaciones y servicios Microsoft Windows Windows Defender Identificador operativo  >   \>  \>  \>  \> **1124**). No se registrarán los intentos de modificar o eliminar archivos en carpetas protegidas.
 
-      ![Captura de pantalla de la opción de directiva de grupo Habilitada y modo auditoría seleccionada en la lista desplegable](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
+      ![Captura de pantalla de la opción de directiva de grupo Habilitada y modo auditoría seleccionada en la lista desplegable](../../media/cfa-gp-enable.png)
 
 > [!IMPORTANT]
 > Para habilitar completamente el acceso controlado a carpetas, debe establecer la opción Directiva de grupo en **Habilitado** y seleccionar **Bloquear** en el menú desplegable opciones.
@@ -144,8 +144,8 @@ Puede habilitar la característica en modo auditoría especificando en `AuditMod
 
 Se `Disabled` usa para desactivar la característica.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-* [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
-* [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
-* [Microsoft Defender para punto de conexión](evaluate-mde.md)
+- [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
+- [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
+- [Microsoft Defender para punto de conexión](evaluate-mde.md)

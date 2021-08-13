@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Antes de llamar al soporte técnico, consulte el estado de mantenimiento de los servicios de Microsoft 365 para comprobar si existe alguna interrupción del servicio.
-ms.openlocfilehash: fd54e888ffa1522e43c5e798ada855f9ca9f7785
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 8423884aedeb923ed9374595bf32c905a685a1746fb7c9088ec015e857ac0299
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596259"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523410"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
@@ -56,13 +56,13 @@ Si no puede iniciar sesión en el centro de administración, puede usar la [pág
 
 La pestaña de **Todos los servicios** (vista predeterminada) muestra todos los servicios junto con los estados de mantenimiento y cualquier incidente o aviso activo. El icono y estado en la columna de **Estado** indica cómo está cada servicio.
 
-Si existe un incidente o aviso activo de un servicio, los verá bajo el nombre del servicio en una tabla anidada. En esta vista es posible contraer la tabla anidada para ocultar los incidentes o avisos simplemente haciendo clic en el icono de contenido adicional situado a la izquierda del nombre del servicio.   
+Si existe un incidente o aviso activo de un servicio, los verá bajo el nombre del servicio en una tabla anidada. En esta vista es posible contraer la tabla anidada para ocultar los incidentes o avisos simplemente haciendo clic en el icono de contenido adicional situado a la izquierda del nombre del servicio.
 
 Para utilizar el filtro de ver todos los incidentes activos, seleccione la pestaña **Incidentes** en la parte superior de la página. Si selecciona la pestaña de **Avisos** se mostrarán únicamente los avisos publicados.
 
 La pestaña **Historial** muestra todos los incidentes y avisos que se han resuelto en los últimos siete o treinta días.
 
-Si tiene un problema con algún servicio de Microsoft 365 y no lo encuentra en **Estado del servicio**, comuníquelo seleccionando **Notificar un problema** y rellenando el correspondiente formulario. Examinaremos datos e informes de otras organizaciones relacionados con su problema para ver si se trata de un problema extendido y si se originó por nuestro servicio. Si así fuera, lo añadiremos como nuevo incidente o aviso en la página **Estado del servicio** donde podrá darle seguimiento.  La página de **Problemas notificados** le mostrará todos los problemas que el inquilino nos ha notificado desde el formulario y desde el estado.
+Si tiene un problema con algún servicio de Microsoft 365 y no lo encuentra en **Estado del servicio**, comuníquelo seleccionando **Notificar un problema** y rellenando el correspondiente formulario. Examinaremos datos e informes de otras organizaciones relacionados con su problema para ver qué tan extendido se encuentra y si se originó por nuestro servicio. Si así fuera, lo añadiremos como nuevo incidente o aviso en la página **Estado del servicio** donde podrá darle seguimiento.  La página de **Problemas notificados** le mostrará todos los problemas que el inquilino nos ha notificado desde el formulario y desde el estado.
 
 Si quiere personalizar qué servicios se muestran en el panel, vaya a **Preferencias** > **Vista personalizada** y desactive las casillas de los servicios que no desea ver en la vista del panel de estado del servicio. Asegúrese de que las casillas de los servicios que desea supervisar estén activadas.
 
@@ -72,7 +72,8 @@ Si quiere recibir notificaciones por correo electrónico sobre nuevos incidentes
 - Si desea recibir notificaciones de incidentes o avisos
 - Sobre qué servicios desea las notificaciones
 
-También puede suscribirse a notificaciones por correo electrónico de eventos individuales y no de cada evento de un servicio. Para ello seleccione el incidente activo sobre el que quiere recibir notificaciones, vaya a **Administrar notificaciones para este problema** y especifique: 
+También puede suscribirse a notificaciones por correo electrónico de eventos individuales y no de cada evento de un servicio. Para ello seleccione el incidente activo sobre el que quiere recibir notificaciones, vaya a **Administrar notificaciones para este problema** y especifique:
+
 - Hasta dos direcciones de correo electrónico.
 
 > [!NOTE]
@@ -83,9 +84,9 @@ También puede suscribirse a notificaciones por correo electrónico de eventos i
 
 ### <a name="view-details-of-posted-service-health"></a>Ver detalles del estado del servicio publicado
 
-En la vista de **Todos los servicios** seleccione el título del problema y podrá ver una página con información detallada del problema, incluidos los mensajes que iremos publicando mientras trabajamos en la solución. 
+En la vista de **Todos los servicios** seleccione el título del problema y podrá ver una página con información detallada del problema, incluidos los mensajes que iremos publicando mientras trabajamos en la solución.
 
-[ ![Captura de pantalla de avisos del servicio](../media/service-health-advisory.png) ](../media/service-health-advisory.png#lightbox)
+[![Captura de pantalla de avisos del servicio](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 En el resumen del aviso o del incidente, se proporciona la siguiente información:
 
@@ -129,7 +130,7 @@ La mayoría de las veces, los servicios aparecerán como correctos sin especific
 |**Recuperación en proceso** | Este estado indica que se están llevando a cabo acciones correctivas para restablecer el servicio para la mayoría de los usuarios, pero que llevará algún tiempo llegar a todos los sistemas afectados. También es posible que vea este estado en caso de que hayamos aplicado una solución temporal para reducir el impacto a la espera de aplicar una permanente. |
 |**Investigación suspendida** | Si nuestra investigación detallada sobre un problema potencial resulta en una solicitud de información adicional por parte de los clientes para permitirnos investigar de forma más exhaustiva, verá este estado. Si necesitamos su ayuda, le haremos saber qué datos y registros necesitamos. |
 |**Servicio restaurado** | Hemos confirmado que una acción correctiva ha resuelto el problema subyacente y el servicio se ha restaurado al estado correcto. Para averiguar qué ha fallado, vea los detalles del problema. |
-|**Falso positivo** | Después de una investigación detallada, hemos confirmado que el servicio se encuentra en buen estado y funciona correctamente. No se observó ningún impacto en el servicio o la causa del incidente se originó fuera del servicio. |
+|**Falso positivo** | Después de una investigación detallada, hemos confirmado que el servicio se encuentra en buen estado y funciona correctamente. No se observó ningún impacto en el servicio o la causa del incidente se originó fuera del servicio. Los incidentes y avisos con este estado aparecen en la vista de historial hasta que expiran (después del período de tiempo indicado en la publicación final de ese evento). |
 |**Publicación del informe posterior al incidente** | Hemos publicado un Informe posterior al incidente para un problema específico que incluye información de las causas principales y procedimientos a seguir para garantizar que no vuelva a reproducirse un problema similar. |
 
 ### <a name="message-post-types"></a>Tipos de publicación de mensajes
@@ -137,7 +138,7 @@ La mayoría de las veces, los servicios aparecerán como correctos sin especific
 | Tipo | Definición |
 |:-----|:-----|
 |**Actualización rápida** | Actualizaciones breves y frecuentes disponibles para todos los clientes para incidentes de alto impacto. |
-|**Detalles adicionales** | Estas publicaciones adicionales proporcionan detalles técnicos y de resolución más completos para ofrecer una mayor visibilidad al tratamiento de incidentes. Disponible para inquilinos que cumplen con los mismos requisitos que se detallan en la [supervisión de Exchange Online](/microsoft-365/enterprise/microsoft-365-exchange-monitoring?view=o365-worldwide#requirements). |
+|**Detalles adicionales** | Estas publicaciones adicionales proporcionan detalles técnicos y de resolución más completos para ofrecer una mayor visibilidad al tratamiento de incidentes. Disponible para inquilinos que cumplen con los mismos requisitos que se detallan en la [supervisión de Exchange Online](/microsoft-365/enterprise/microsoft-365-exchange-monitoring#requirements). |
 
 ### <a name="history"></a>Historial
 
@@ -147,8 +148,6 @@ Para obtener más información sobre nuestro compromiso con el tiempo de activid
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Informes de actividad del Centro de administración de Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-
-[Preferencias del centro de mensajes](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
-
-[Cómo comprobar el estado de las actualizaciones de Windows en el centro de administración](/windows/deployment/update/check-release-health)
+- [Informes de actividad del Centro de administración de Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+- [Preferencias del centro de mensajes](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
+- [Cómo comprobar el estado de las actualizaciones de Windows en el centro de administración](/windows/deployment/update/check-release-health)

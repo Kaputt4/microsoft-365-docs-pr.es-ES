@@ -18,16 +18,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f79f851f108d38e7900420ed9e6a9ccb9a2164f1
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: fda3c3d5c3603ed4dd4a0f1a42d79afa3ca715360c7e14f40b1467f3e675a56e
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726289"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803253"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para Endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1013998-30121062139980"></a>101.39.98 (30.121062.13998.0)
+
+- Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1013427-30121052134270"></a>101.34.27 (30.121052.13427.0)
 

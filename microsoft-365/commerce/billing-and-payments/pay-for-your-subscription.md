@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 8298cbda4d0f9d038e6142ac7bbb858c603704501974fdae8254433d8d4745e9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802927"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -58,7 +58,7 @@ En algunos casos, puede pagar la suscripción mediante factura con un cheque o E
 - Tener un coste de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
 - Pasar una comprobación de crédito
 
-Si se requiere una comprobación de crédito, se le notificará al comprar su suscripción. Si permite que nos pongamos en contacto con usted, recibirá un correo electrónico con más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
+Si se requiere una comprobación de crédito, recibirá una notificación cuando compre la suscripción. Si acepta que se comuniquen con usted, recibirá un correo electrónico que incluye más información sobre cómo solicitar la aprobación de crédito. Las comprobaciones de crédito suelen completarse en un plazo de dos días laborables.
 
 > [!NOTE]
 > Los clientes que viven en Brasil pueden pagar una suscripción con un Boleto Bancario. Si ha seleccionado esta opción, la factura para el pago se envía al correo electrónico proporcionado durante la compra de la suscripción en los 10 días laborables posteriores a la fecha del pedido. La fecha de vencimiento es 30 días posterior a la fecha del pedido. Si no recibe su Boleto por correo electrónico, compruebe la carpeta de correo no deseado o póngase en contacto con el soporte técnico.

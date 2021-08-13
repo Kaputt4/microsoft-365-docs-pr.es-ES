@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f5a857e2cf9c20f9c31503bb74cbac33bd79a64e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1d1652a866d8d3cfd7b1270a09abead8a27507a7d7ec7dde2a5a5dceb465677e
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649604"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523398"
 ---
 # <a name="collect-investigation-package-api"></a>RECOPILAR API de paquetes de investigación
 
@@ -45,6 +45,10 @@ Recopilar el paquete de investigación de un dispositivo.
 ## <a name="limitations"></a>Limitaciones
 
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+
+> [!IMPORTANT]
+>
+> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10 versión 1703 o posterior.
 
 ## <a name="permissions"></a>Permisos
 
@@ -71,10 +75,10 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 Content-Type|cadena|application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 

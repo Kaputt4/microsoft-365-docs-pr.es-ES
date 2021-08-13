@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: 347d9a6b5de1d9045baf8d4a0778788a18514600bfc6f56652951e4ad420f1bb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 520f500ce6e0ec10f7d37d1d08efcc91c8910352cdf551ee6e37e4904c459688
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834245"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834636"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>Envío de ejemplo de antivirus de protección entregado en la nube
 
@@ -35,11 +35,11 @@ La configuración del envío de ejemplo genera preguntas sobre cómo funciona; p
 - "Enviar todos los ejemplos automáticamente",  
 - "No enviar muestras".  
 
-Para obtener información sobre las opciones de configuración mediante Intune, Configuration Manager, GPO o PowerShell, vea Activar la protección entregada en la [nube en Antivirus de Microsoft Defender](/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus).  
+Para obtener información sobre las opciones de configuración mediante Intune, Configuration Manager, GPO o PowerShell, vea Activar la protección entregada en la [nube en Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).  
 
 ## <a name="customer-data-cloud-protection-and-sample-submission"></a>Datos del cliente, protección en la nube y envío de ejemplo
 
-Al incorporarse a Defender for Endpoint, Defender for Endpoint trata todos los ejemplos de archivos como datos de cliente, respetando las opciones de retención geográfica y de datos que el cliente seleccionó. Las opciones de retención geográfica y de datos se describen aquí: [Microsoft Defender para el almacenamiento de datos de extremo y la privacidad.](/security/defender-endpoint/data-storage-privacy#data-storage-location)
+Al incorporarse a Defender for Endpoint, Defender for Endpoint trata todos los ejemplos de archivos como datos de cliente, respetando las opciones de retención geográfica y de datos que el cliente seleccionó. Las opciones de retención geográfica y de datos se describen aquí: [Microsoft Defender para el almacenamiento de datos de extremo y la privacidad.](data-storage-privacy.md#data-storage-location)
 El producto ha recibido varias certificaciones de cumplimiento, lo que demuestra el cumplimiento continuo de un sofisticado conjunto de controles de cumplimiento:
 
 - ISO 27001
@@ -47,7 +47,7 @@ El producto ha recibido varias certificaciones de cumplimiento, lo que demuestra
 - SOC I, II, III
 - y PCI
 
-[Las ofertas de cumplimiento de Azure](/azure/compliance/#compliance-offerings) proporcionan más información sobre estas certificaciones. Todos los artefactos de certificación de Microsoft Defender para endpoint se pueden encontrar en el [Portal](https://servicetrust.microsoft.com/) de confianza de servicio de Microsoft en cada uno de los informes de certificación de Azure asociados.
+[Las ofertas de cumplimiento de Azure](/azure/storage/common/storage-compliance-offerings) proporcionan más información sobre estas certificaciones. Todos los artefactos de certificación de Microsoft Defender para endpoint se pueden encontrar en el [Portal](https://servicetrust.microsoft.com/) de confianza de servicio de Microsoft en cada uno de los informes de certificación de Azure asociados.
 
 ## <a name="cloud-protection-mechanisms"></a>Mecanismos de protección en la nube
 
@@ -111,11 +111,12 @@ _Figura 3. Protección entregada en la nube y aprendizaje automático en capas_
 
 ## <a name="cloud-delivered-protection-levels"></a>Niveles de protección entregados en la nube
 
-La detección de malware requiere lograr un equilibrio entre proporcionar la protección más sólida posible, al tiempo que se minimiza el número de falsos positivos. Diferentes entornos pueden tener tolerancia a la protección frente al riesgo de falso positivo. Los niveles de protección entregados en la nube permiten al cliente definir el nivel de tolerancia adecuado para el entorno específico. Al habilitar la protección entregada en la nube, el nivel de protección se configura automáticamente para proporcionar una detección segura sin aumentar el riesgo de detectar archivos legítimos. Si desea configurar un nivel de protección diferente, consulte [Specify the cloud-delivered protection level for Antivirus de Microsoft Defender](/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).  
+La detección de malware requiere lograr un equilibrio entre proporcionar la protección más sólida posible, al tiempo que se minimiza el número de falsos positivos. Diferentes entornos pueden tener tolerancia a la protección frente al riesgo de falso positivo. Los niveles de protección entregados en la nube permiten al cliente definir el nivel de tolerancia adecuado para el entorno específico. Al habilitar la protección entregada en la nube, el nivel de protección se configura automáticamente para proporcionar una detección segura sin aumentar el riesgo de detectar archivos legítimos. Si desea configurar un nivel de protección diferente, consulte [Specify the cloud-delivered protection level for Antivirus de Microsoft Defender](specify-cloud-protection-level-microsoft-defender-antivirus.md).  
 
 > [!Note]
 >
 > Cambiar el nivel de protección puede dar como resultado un mayor nivel de falsos positivos y debe evaluarse cuidadosamente antes de cambiar.
+>
 
 ## <a name="other-file-sample-submission-scenarios"></a>Otros escenarios de envío de ejemplo de archivo
 
@@ -125,10 +126,10 @@ Hay dos escenarios más en los que Defender for Endpoint puede solicitar un ejem
 
 Al incorporar dispositivos a Microsoft Defender para endpoint EDR hay una configuración para habilitar colecciones de muestras desde el dispositivo, que puede confundirse con la configuración descrita anteriormente. Esta configuración controla la colección de muestras de archivos de dispositivos cuando se solicita a través del portal administrativo defender para endpoint; está sujeto a los roles y permisos ya establecidos. Esta configuración puede permitir o bloquear la colección de archivos desde el punto de conexión para características como el análisis profundo en el portal de Defender for Endpoint. Si esta configuración no está configurada, el valor predeterminado es habilitar la colección de muestras.
 
-[Defender adicional para la configuración de extremo Configuración](/configure-endpoints#additional-defender-for-endpoint-configuration-settings)
+Obtenga información sobre las opciones de configuración de Defender for Endpoint, vea: Herramientas y métodos de incorporación [para Windows 10 dispositivos en Defender para endpoint](configure-endpoints.md)
 
 ### <a name="automated-investigation-and-response-content-analysis"></a>Análisis automatizado de contenido de investigación y respuesta
 
 Cuando las investigaciones automatizadas se ejecutan en dispositivos (cuando se configura para ejecutarse automáticamente en respuesta a una alerta o ejecutarse manualmente), los archivos identificados como sospechosos se pueden recopilar desde los puntos de conexión para una inspección posterior. La característica de análisis de contenido de archivos para investigaciones automatizadas se puede deshabilitar en el portal de Defender for Endpoint. Los nombres de extensión de archivo también se pueden modificar para agregar o quitar extensiones para otros tipos de archivo que se envían automáticamente durante una investigación automatizada.
 
-[Administrar cargas de archivos de automatización](/manage-automation-file-uploads)
+[Administrar cargas de archivos de automatización](manage-automation-file-uploads.md)

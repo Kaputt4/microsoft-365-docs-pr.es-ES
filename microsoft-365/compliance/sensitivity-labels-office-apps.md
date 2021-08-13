@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac7b2024f0b93fd16a9e37b9ea64dd7c88405c66
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 9fa41e172f970dcac818d989b60a69bbd2ddbfe1c945eff971a4bfc2cca63d02
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726265"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834768"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -44,11 +44,16 @@ Para cada función, las siguientes tablas enumeran la versión mínima de Office
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para obtener más información, incluido el modo de configurar el canal de actualización para poder probar una nueva función de etiquetado que le interese, consulte [Descripción general de los canales de actualización para las Aplicaciones de Microsoft 365](/DeployOffice/overview-update-channels). Las nuevas funciones que están en vista previa privada no se incluyen en la tabla, pero es posible que pueda unirse a estas vistas previas nominando a su organización para el programa de vista previa privada de [Microsoft Information Protection](https://aka.ms/mip-preview).
 
 > [!NOTE]
-> Los nombres de los canales de actualización de las aplicaciones de Office han cambiado recientemente. Por ejemplo, el Canal Mensual es ahora el Canal Actual, y el Office Insider es ahora el Canal Beta. Para más información, consulte [Cambios en canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/update-channels-changes).
+> Los nombres de los canales de actualización de las aplicaciones de Office cambiaron en mayo de 2020. Por ejemplo, el Canal Mensual es ahora el Canal Actual, y el Office Insider es ahora el Canal Beta. Para más información, consulte [Cambios en canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/update-channels-changes).
 
 Office para iOS y Office para Android: Las etiquetas de confidencialidad están integradas en las [aplicación de Office](https://www.microsoft.com/es-ES/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 Las funciones adicionales están disponibles cuando se instala el cliente de etiquetado unificado de Azure Information Protection, que se ejecuta sólo en equipos Windows. Para conocer estos detalles, consulte [Comparar los clientes de etiquetado para equipos con Windows](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+
+> [!TIP]
+> Al comparar las versiones mínimas en las tablas con las versiones que tiene, recuerde que es común que las versiones de lanzamiento omitan los ceros iniciales.
+> 
+> Por ejemplo, tiene la versión 4.2128.0 y la 4.7.1+ es la versión mínima. Para facilitar la comparación, 4.7.1 (sin ceros iniciales) sería 4.**0007**.1 (y no 4.**7000**.1). Su versión de 4.2128.0 es posterior a la 4.0007.1, por lo que es compatible.
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Funciones de etiquetas de confidencialidad en Word, Excel y PowerPoint
 
@@ -159,7 +164,7 @@ Para otras soluciones de etiquetado, compruebe en su documentación los tipos de
 
 Las [plantillas de protección](/azure/information-protection/configure-policy-templates) definidas por el administrador, como las que se definen para el Cifrado de mensajes de Office 365, no son visibles en las aplicaciones de Office cuando se utiliza el etiquetado integrado. Esta experiencia simplificada refleja que no es necesario seleccionar una plantilla de protección, ya que los mismos ajustes se incluyen con las etiquetas de confidencialidad que tienen el cifrado activado.
 
-Si necesita convertir plantillas de protección existentes en etiquetas, use el Microsoft Azure Portal y las siguientes instrucciones: [Convertir plantillas en etiquetas en](/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels).
+Puede convertir una plantilla existente en una etiqueta de confidencialidad cuando use el cmdlet [New-Label](/powershell/module/exchange/new-label) con el parámetro *EncryptionTemplateId*.
 
 ## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>Opciones de administración de derechos de información (IRM) y etiquetas de confidencialidad
 

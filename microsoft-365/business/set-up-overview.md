@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre los pasos de configuración Microsoft 365 Empresa Premium, desde suscribirse, agregar un dominio y usuarios, hasta configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: 008a5c51698589667acc0d01649f67dab33b4c58
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7c09dca354781bf92f6bbecca0f3fb9875fb654515fe35c2f96cc780a894a764
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803230"
 ---
 # <a name="overview-of-setup"></a>Información general sobre la configuración
 
@@ -89,10 +89,10 @@ Al unir un dispositivo Windows 10 a Azure AD, las directivas que establezca para
 
 - **Acceder a recursos locales**
 
-     - Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows 10 y mantener el acceso a los recursos locales que requieren autenticación local. Siga los pasos de [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Empresa Premium](manage-windows-devices.md) to set this up. Este es el método preferido y los dispositivos en este estado se denominan dispositivos unidos a Azure AD híbrido.
+     - Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows 10, al mismo tiempo que mantiene el acceso a los recursos locales que requieren autenticación local. Siga los pasos de [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Empresa Premium](manage-windows-devices.md) to set this up. Este es el método preferido y los dispositivos en este estado se denominan dispositivos unidos a Azure AD híbrido.
 
     - Si su empresa tiene un Active Directory local que contiene algunos recursos locales (como recursos compartidos de archivos e impresoras), puede proporcionar a los dispositivos unidos a Azure AD acceso a estos recursos siguiendo los pasos que se indican a continuación: Obtener acceso a recursos locales desde un dispositivo unido a [Azure AD](access-resources.md)en Microsoft 365 Empresa Premium .
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 vídeos de aprendizaje para empresas](../business-video/index.yml) (página de vínculos)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](../business-video/index.yml) (página de vínculo)

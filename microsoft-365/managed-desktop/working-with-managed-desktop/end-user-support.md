@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 237c6e944669a2041a46465296af71f14851598351f51738d7f3c7f096414247
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9314b1b99afeed1738d03a5f11c513166c37dfa002784b21d3c3b461183b0077
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800671"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803433"
 ---
 # <a name="getting-help-for-users"></a>Obtener ayuda para los usuarios
 
@@ -51,8 +51,10 @@ Antes de solicitar acceso elevado a un dispositivo, es mejor revisar qué accion
 3. Proporcione estos detalles:
     - **Id. de vale de** soporte técnico de su propio sistema de vales de soporte técnico.
     - **Nombre del dispositivo:** escriba el número de serie del dispositivo y, a continuación, seleccione el dispositivo en el menú.
-    - **Categoría:** seleccione la categoría que mejor se adapte a su problema. Si ninguna opción parece estar cerca, selecciona **Otros** y proporciona más información en los campos **Título** y **Plan de** acción. Es mejor seleccionar una categoría si es posible.
-    - **Subcategoría:** seleccione la que mejor se adapte al problema. Si ninguna opción parece estar cerca, seleccione **Otro** y proporcione una breve descripción en **Título**. En **Plan of action**, proporcione los pasos de solución de problemas que tiene previsto realizar una vez que se conceda la elevación.
+    - **Categoría:** seleccione la categoría que mejor se adapte a su problema. Si ninguna opción parece estar cerca, seleccione **Otros**. Es mejor seleccionar una categoría si es posible.
+    - **Subcategoría:** seleccione la que mejor se adapte al problema. Si ninguna opción parece estar cerca, seleccione **Otros**.
+    - **Título:** proporcione una breve descripción del problema en el dispositivo.
+    - **Plan de acción:** proporcione los pasos de solución de problemas que tiene previsto realizar una vez que se conceda la elevación. 
 4. Seleccione **Enviar**.
 
 

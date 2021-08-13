@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 081808a99f7ea18216107f22ff2912cd022eab82
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f6db2ade256710e1972635a6b4cc9bfab20dae37c887a67cf635ece97d4eafdc
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655760"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803469"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Ver eventos de la reducción de la superficie expuesta a ataques
 
@@ -59,8 +59,8 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 3. Seleccionar **acción**  >  **Importar vista personalizada...**
 
-  > [!div class="mx-imgBorder"]
-  > ![Animación resaltando Importar vista personalizada a la izquierda de la ventana Visor par](images/events-import.gif)
+   > [!div class="mx-imgBorder"]
+   > ![Animación resaltando Importar vista personalizada a la izquierda de la ventana Visor par](images/events-import.gif)
 
 4. Navegue hasta donde extrajo el archivo XML para la vista personalizada que desee y selecciónelo.
 
@@ -74,14 +74,14 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 2. En el panel izquierdo, en **Acciones,** seleccione **Crear vista personalizada...**
 
-  > [!div class="mx-imgBorder"]
-  > ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos](images/events-create.gif)
+   > [!div class="mx-imgBorder"]
+   > ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos](images/events-create.gif)
 
 3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente.** Verá una advertencia de que no puede editar  la consulta mediante la pestaña Filtro si usa la opción XML. Seleccione **Sí**.
 
 4. Pegue el código XML de la característica desde la que desea filtrar los eventos en la sección XML.
 
-5. Haga clic en **Aceptar**. Especifique un nombre para el filtro. Esto crea una vista personalizada que filtra para mostrar solo los eventos relacionados con esa característica.
+5. Seleccione **Aceptar**. Especifique un nombre para el filtro. Esto crea una vista personalizada que filtra para mostrar solo los eventos relacionados con esa característica.
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>XML para eventos de regla de reducción de superficie de ataque
 
@@ -148,42 +148,47 @@ Puede tener acceso a estos eventos en Windows visor de eventos:
 
    ![Animación que muestra con el Visor de eventos](images/event-viewer.gif)
 
-Característica | Proveedor u origen | Id. de evento | Descripción
-:-|:-|:-:|:-
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 1 | Auditoría de ACG
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 2 | Aplicación de ACG
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 3 | No permitir procesos secundarios de auditoría
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 4  | No permitir procesos secundarios de bloqueo
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 5  | Bloquear auditoría de imágenes de integridad baja
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 6  | Bloquear bloqueo de imágenes de integridad baja
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 7  | Bloquear auditoría de imágenes remota
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 8  | Bloquear bloqueo de imágenes remoto
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 9  | Deshabilitar auditoría de llamadas del sistema de Win32k
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 10  | Deshabilitar bloqueo de llamadas del sistema de Win32k
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 11 | Auditoría de protección de integridad de código
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 12  | Bloque de protección de integridad de código
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 13 | Auditoría de EAF
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 14  | Aplicación de EAF
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 15 | Auditoría de EAF+
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 16  | Aplicación de EAF+
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 17  | Auditoría de IAF
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 18  | Aplicación de IAF
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 19 | Auditoría ROP StackPivot
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 20 | Aplicación de ROP StackPivot
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) |  21 | Auditoría ROP CallerCheck
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 22 | Aplicación de ROP CallerCheck
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 23 | Auditoría de ROP SimExec
-Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 24 | Aplicación de ROP SimExec
-Protección contra vulnerabilidades de seguridad | Diagnósticos WER | 5  | Bloque CFG
-Protección contra vulnerabilidades de seguridad | Win32K (operativo) | 260 | Fuente que no es de confianza
-Protección de red | Windows Defender (operativo) | 5007 | Evento cuando se cambia la configuración
-Protección de red | Windows Defender (operativo) | 1125 | Evento cuando la protección de red se dispara en modo auditoría
-Protección de red | Windows Defender (operativo) | 1126 | Evento cuando la protección de red se dispara en modo de bloqueo
-Acceso controlado a carpetas | Windows Defender (operativo) | 5007 | Evento cuando se cambia la configuración
-Acceso controlado a carpetas | Windows Defender (operativo) | 1124 | Evento de acceso a carpetas controladas auditadas
-Acceso controlado a carpetas | Windows Defender (operativo) | 1123 | Evento de acceso a carpetas controladas bloqueadas
-Acceso controlado a carpetas | Windows Defender (operativo) | 1127 | Evento de bloque de escritura del sector de acceso controlado a carpetas bloqueadas
-Acceso controlado a carpetas | Windows Defender (operativo) | 1128 | Evento de bloque de escritura auditado del sector de acceso controlado a carpetas
-Reducción de la superficie expuesta a ataques | Windows Defender (operativo) | 5007 | Evento cuando se cambia la configuración
-Reducción de la superficie expuesta a ataques | Windows Defender (operativo) | 1122 | Evento cuando la regla se dispara en modo auditoría
-Reducción de la superficie expuesta a ataques | Windows Defender (operativo) | 1121 | Evento cuando la regla se dispara en modo bloque
+<br>
+
+****
+
+|Característica|Proveedor u origen|Id. de evento|Descripción|
+|---|---|:---:|---|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|1|Auditoría de ACG|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|2|Aplicación de ACG|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|3|No permitir procesos secundarios de auditoría|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|4 |No permitir procesos secundarios de bloqueo|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|5 |Bloquear auditoría de imágenes de integridad baja|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|6 |Bloquear bloqueo de imágenes de integridad baja|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|7 |Bloquear auditoría de imágenes remota|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|8 |Bloquear bloqueo de imágenes remoto|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|9 |Deshabilitar auditoría de llamadas del sistema de Win32k|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|10 |Deshabilitar bloqueo de llamadas del sistema de Win32k|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|11|Auditoría de protección de integridad de código|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|12 |Bloque de protección de integridad de código|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|13|Auditoría de EAF|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|14 |Aplicación de EAF|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|15|Auditoría de EAF+|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|16 |Aplicación de EAF+|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|17 |Auditoría de IAF|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|18 |Aplicación de IAF|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|19|Auditoría ROP StackPivot|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|20|Aplicación de ROP StackPivot|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)| 21|Auditoría ROP CallerCheck|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|22|Aplicación de ROP CallerCheck|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|23|Auditoría de ROP SimExec|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|24|Aplicación de ROP SimExec|
+|Protección contra vulnerabilidades de seguridad|Diagnósticos WER|5 |Bloque CFG|
+|Protección contra vulnerabilidades de seguridad|Win32K (operativo)|260|Fuente que no es de confianza|
+|Protección de red|Windows Defender (operativo)|5007|Evento cuando se cambia la configuración|
+|Protección de red|Windows Defender (operativo)|1125|Evento cuando la protección de red se dispara en modo auditoría|
+|Protección de red|Windows Defender (operativo)|1126|Evento cuando la protección de red se dispara en modo de bloqueo|
+|Acceso controlado a carpetas|Windows Defender (operativo)|5007|Evento cuando se cambia la configuración|
+|Acceso controlado a carpetas|Windows Defender (operativo)|1124|Evento de acceso a carpetas controladas auditadas|
+|Acceso controlado a carpetas|Windows Defender (operativo)|1123|Evento de acceso a carpetas controladas bloqueadas|
+|Acceso controlado a carpetas|Windows Defender (operativo)|1127|Evento de bloque de escritura del sector de acceso controlado a carpetas bloqueadas|
+|Acceso controlado a carpetas|Windows Defender (operativo)|1128|Evento de bloque de escritura auditado del sector de acceso controlado a carpetas|
+|Reducción de la superficie expuesta a ataques|Windows Defender (operativo)|5007|Evento cuando se cambia la configuración|
+|Reducción de la superficie expuesta a ataques|Windows Defender (operativo)|1122|Evento cuando la regla se dispara en modo auditoría|
+|Reducción de la superficie expuesta a ataques|Windows Defender (operativo)|1121|Evento cuando la regla se dispara en modo bloque|
+|
