@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo planear el inicio del portal en SharePoint Online y qué pasos seguir para un inicio correcto
-ms.openlocfilehash: 280aa76c41e7ef72d23b22877482a92d981fe29d
-ms.sourcegitcommit: 69d28334e01ec757c794cf3f8b8c0d85713f975e
+ms.openlocfilehash: abbcb1b69860046d479c4e2808a83b67cfd9e3427e16da5c175ee37cda36a4f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53424027"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891346"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planeación del plan de lanzamiento del portal en SharePoint Online
 

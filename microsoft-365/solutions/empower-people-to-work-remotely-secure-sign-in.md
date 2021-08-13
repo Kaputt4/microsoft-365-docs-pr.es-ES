@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Requerir que los trabajadores híbridos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: 105c2f7170b4bea648427b0fda57ad081cb99a86
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 19a249e25aaa2db21d8b2dea4b4bdd86e673e4f9761a3adcd530b0a21b5c3bfc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805097"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Paso 1. Aumentar la seguridad del inicio de sesión de los trabajadores híbridos con MFA
 

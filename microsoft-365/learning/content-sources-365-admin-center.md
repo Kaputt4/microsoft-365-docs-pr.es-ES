@@ -1,5 +1,5 @@
 ---
-title: Configurar orígenes de contenido de aprendizaje para Microsoft Viva Learning (versión preliminar) en el Centro de administración de Microsoft 365
+title: Configurar orígenes de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar) en el Centro de administración de Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: Obtenga información sobre cómo configurar orígenes de contenido de aprendizaje para Microsoft Viva Learning (versión preliminar) en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: ac9ec6196f758d3ed02d3a102fef80b8a7adeeaa
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: Obtenga información sobre cómo configurar orígenes de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar) en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: f7a712d2b7d4fa2635a27f4d1e36893c75c6f9b120503efba676bdd37e0ab1d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891242"
 ---
-# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurar orígenes de contenido de aprendizaje para Microsoft Viva Learning (versión preliminar) en el Centro de administración de Microsoft 365
+# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurar orígenes de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar) en el Centro de administración de Microsoft 365
 
 > [!NOTE]
 > La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. 
@@ -115,4 +115,4 @@ Debe trabajar con el proveedor del servicio que no es de Microsoft para obtener 
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Configurar SharePoint como origen de contenido de aprendizaje para Microsoft Viva Learning (versión preliminar)](configure-sharepoint-content-source.md)
+[Configurar SharePoint como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar)](configure-sharepoint-content-source.md)

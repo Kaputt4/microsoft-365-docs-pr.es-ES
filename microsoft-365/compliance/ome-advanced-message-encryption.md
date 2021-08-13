@@ -9,19 +9,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 10/16/2019
+ms.date: 08/11/2021
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: El cifrado de mensajes avanzado ayuda a las organizaciones a cumplir sus obligaciones de cumplimiento, ya que permite a los administradores hacer aún más con mensajes protegidos.
-ms.openlocfilehash: d1021d4d424a1ecb984bfd5afa176e9ae3a3451c006df0dd307a5b59d9e4d0e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dbd19c2028a3453d43dc2ce9082955a5ec1165db
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813660"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243938"
 ---
 # <a name="advanced-message-encryption"></a>Cifrado de mensajes avanzado
 
@@ -39,10 +39,10 @@ La organización debe tener una suscripción que incluya Cifrado de mensajes ava
 
 Si aún no ha configurado Cifrado de mensajes de Office 365, vea [Configurar nuevas Cifrado de mensajes de Office 365 funciones](set-up-new-message-encryption-capabilities.md).
 
-Con cifrado de mensajes avanzado no se limita a una sola plantilla de personal de marca. En su lugar, puede crear y usar varias plantillas de personal de marca. Para obtener información, vea Agregar la marca de la organización [a los mensajes cifrados.](add-your-organization-brand-to-encrypted-messages.md)
+Con cifrado de mensajes avanzado, no se limita a una sola plantilla de personal de marca. En su lugar, puede crear y usar varias plantillas de personal de marca. Para obtener información, vea Agregar la marca de la organización [a los mensajes cifrados.](add-your-organization-brand-to-encrypted-messages.md) Al usar la personalización de marca personalizada, los destinatarios externos reciben un correo electrónico de notificación que contiene un vínculo al portal de OME. La regla de flujo de correo determina qué plantilla de personal de marca usan el correo electrónico de notificación y el Portal de OME. De esta forma, el contenido seguro no se envía fuera de la organización.
+
+Solo puede revocar mensajes y aplicar fechas de expiración a los mensajes que los usuarios reciben a través del portal. En otras palabras, el correo electrónico que tiene una plantilla de personalización de marca personalizada aplicada. Para obtener más información y un ejemplo, vea las instrucciones de [Ensure all external recipients use the OME Portal to read encrypted mail](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail).
 
 [Establezca una fecha de expiración para el correo electrónico cifrado por Cifrado de mensajes avanzado de Office 365](ome-advanced-expiration.md). Controle los correos electrónicos confidenciales compartidos fuera de la organización con directivas automáticas que mejoren la protección al expirar el acceso a través de un portal web seguro a los correos electrónicos cifrados.
 
 [Revocar el correo electrónico cifrado Cifrado de mensajes avanzado de Office 365](revoke-ome-encrypted-mail.md). Controle los correos electrónicos confidenciales compartidos fuera de la organización y mejore la protección al revocar el acceso a través de un portal web seguro a los correos electrónicos cifrados.  
-
-Con Cifrado de mensajes avanzado de Office 365, cada vez que aplica una plantilla de personalización de marca personalizada, Microsoft aplica un contenedor al correo electrónico que se ajusta a la regla de flujo de correo a la que aplica la plantilla. Solo puede revocar mensajes y aplicar fechas de expiración a los mensajes que los usuarios reciben a través del portal. En otras palabras, el correo electrónico que tiene una plantilla de personalización de marca personalizada aplicada. Para obtener más información y un ejemplo, vea las instrucciones de [Ensure all external recipients use the OME Portal to read encrypted mail](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail).

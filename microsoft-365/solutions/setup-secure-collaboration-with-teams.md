@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo configurar la colaboración de contenido seguro en Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: 227f63284f6fb2bdae52fe32d1c011698d3f44fd
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ee131718d06e5359e0c4b42d4a79b30e2c92249eeafd0101502f674142a28f3d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804869"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Configurar la colaboración segura con Microsoft 365 y Microsoft Teams
 
@@ -205,7 +205,7 @@ Cuando esté listo para implementar esta solución, siga estos pasos:
 1. Configure los [tres niveles de protección diferentes para Teams](configure-teams-three-tiers-protection.md).
 2. Configurar las opciones [para compartir información de cualquier confidencialidad con personas fuera de la organización.](collaborate-with-people-outside-your-organization.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Documentación de Seguridad de Microsoft 365](../security/index.yml)
 

@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el informe de detalles de no entrega en el panel flujo de correo del Centro de cumplimiento de seguridad de & para supervisar los códigos de error encontrados con más frecuencia en los informes de no entrega (también conocidos como NDR o mensajes de rebote) de los remitentes de su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01d25f11051606139c2ee8b88cade18963de599d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d2ac4d55557165c3f6cf327bcff529edc3dc16ad1fc08eb2a5a30828b7a57661
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56786171"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Informe de no entrega en el Centro de seguridad & cumplimiento
 
@@ -48,7 +48,7 @@ Si mantiene el mouse sobre un color específico (código de error) en un día es
 
 Si hace clic **en Ver tabla de detalles** en una vista de informe, se muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Código de informe de no entrega**
 - **Count**
 - **Mensajes de** ejemplo: los IDs de mensaje de una muestra de mensajes afectados.
@@ -59,7 +59,7 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Al seleccionar una fila de la tabla, aparece un menú desplegable con la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Código de informe de no** entrega: puede hacer clic en el vínculo para obtener más información sobre las causas y soluciones del código de error específico.
 - **Count**
 - **Mensajes de** ejemplo: puede hacer clic **en Ver mensajes de ejemplo** para ver los resultados del seguimiento de mensajes de una muestra de los mensajes afectados. [](message-trace-scc.md)

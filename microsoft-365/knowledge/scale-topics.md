@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre procedimientos recomendados para administrar los muchos temas de su organización con Temas de Viva.
-ms.openlocfilehash: 96580df486195af991e446ae6f1bbb4b08013947
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 92a8dd3e53a14bc0bbf5e2d5570930e3bdc860b5d2cee1ea7bd576c4e1cd871a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891390"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Administrar temas a escala en Temas Microsoft Viva
 
@@ -170,7 +170,7 @@ Los sitios de portal más grandes de la organización podrían haber invertido t
 
 Si su organización ha invertido en bases de conocimiento o sitios wiki, estos pueden proporcionar una lista de temas que usar para sus esfuerzos de curación iniciales. Si son especialmente grandes, seleccione los temas más vistos o editados como punto de partida.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar temas en el centro de temas](manage-topics.md)
 

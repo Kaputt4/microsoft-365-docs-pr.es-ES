@@ -19,12 +19,12 @@ ms.custom:
 description: En este artículo se explican los cambios que se están implantando en las características de protección de Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77d45c8521e67c480b9e5557b05eed8ba5dd2645
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7ec45d7e01c6b0bdb6d49aa5c282189b022d6b2a8a814f38acab750732572d80
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56785916"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Características de protección de Azure Information Protection que se están implementando en los inquilinos existentes
 
@@ -95,6 +95,6 @@ Para no participar en el próximo cambio, siga estos pasos:
 
 Una vez habilitado, siempre que no haya optado por no participar, puede empezar a usar la nueva versión de Cifrado de mensajes de Office 365 que se anunció en [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) y aprovecha las capacidades de cifrado y protección de Azure Information Protection.
 
-![Captura de pantalla que muestra un mensaje protegido por OME Outlook en la web.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
+![Captura de pantalla que muestra un mensaje protegido por OME en Outlook en la Web.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
 Para obtener más información acerca de las nuevas [mejoras, vea Cifrado de mensajes de Office 365](../../compliance/ome.md).

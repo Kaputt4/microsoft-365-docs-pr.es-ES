@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para crear y usar etiquetas de retención en documentos Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 613aa3713b4d72eed1bc0b2d88f70a817d0e7cff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79002397be7c44c5c160d80288d3fea6e9c1f9594a024f5aa4dc501f86dda886
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891324"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Clasificación de datos para su Microsoft 365 entorno de prueba empresarial
 
@@ -78,7 +78,7 @@ En esta fase, detectará el comportamiento predeterminado de la etiqueta de rete
 
 En primer lugar, cree un sitio de grupo SharePoint nivel confidencial:
   
-1. Con una instancia privada del explorador, inicie sesión en el centro de administración de [Microsoft 365](https://admin.microsoft.com) con su cuenta de administrador global.
+1. Con una instancia privada del explorador, inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con su cuenta de administrador global.
 1. En la lista de iconos, seleccione **SharePoint**.
 1. En la nueva **SharePoint** en el explorador, seleccione **Crear sitio**.
 1. En la página **Crear un sitio**, seleccione **Sitio de grupo**.

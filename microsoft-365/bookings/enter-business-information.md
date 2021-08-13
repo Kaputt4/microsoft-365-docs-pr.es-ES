@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Siga estas instrucciones para crear su página Acerca de nosotros, incluido el nombre de empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: fae790405d6691d35f5c0bfe806b6d7d46c3b555ecfd14660d3fb89b34b3efe8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803872"
 ---
 # <a name="enter-your-business-information"></a>Escribir la información de su empresa
 
@@ -57,7 +57,7 @@ Establezca **el horario comercial** en el horario operativo. Estas son las horas
 
 Es posible que deba bloquear una parte de cada día o semana para tener reuniones de personal, actualizar el inventario o ocuparse de otros detalles de ritmo de negocio. La aplicación Bookings te permite limitar las citas de los clientes a las franjas de tiempo especificadas.
 
-Por ejemplo, tiene reuniones de personal todos los jueves de 1 a 2:30 y desea bloquear esa hora para que todos los miembros del personal puedan asistir. Para ello:
+Por ejemplo, tiene reuniones de personal todos los jueves de 1 a 2:30 y desea bloquear esa hora para que todos los miembros del personal puedan asistir. Para hacerlo:
 
 1. En la página Información empresarial, en Horario comercial, seleccione una hora de inicio y finalización para los jueves. En este ejemplo, estableceremos las 8:00 a.m. a la 1:00 p.m.
 

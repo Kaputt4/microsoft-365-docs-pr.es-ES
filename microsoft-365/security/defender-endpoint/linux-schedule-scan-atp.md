@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d8b7bbd2a5f1050b7897af3b208346330172ef94
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b74843982c115753a2cd050f7b2813a33d3e6825bc8d4f679694b2659fd94c65
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623209"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523601"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Programar exámenes con Microsoft Defender para endpoint (Linux)
 
@@ -93,7 +93,7 @@ Escriba " `:wq` " sin las comillas dobles.
 
 Para ver los trabajos de cron, escriba `sudo crontab -l`
 
-:::image type="content" source="/microsoft-365/security/defender-endpoint/images/linux-mdatp-1" alt-text="linux mdatp":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp":::
 
 #### <a name="to-inspect-cron-job-runs"></a>Para inspeccionar las ejecuciones de trabajos cron
 

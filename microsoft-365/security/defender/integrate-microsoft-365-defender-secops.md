@@ -1,5 +1,5 @@
 ---
-title: Introducción a la integración de Microsoft 365 Defender en las operaciones de seguridad
+title: Integración de Microsoft 365 Defender en las operaciones de seguridad
 description: Los conceptos básicos de la integración Microsoft 365 Defender en las operaciones de seguridad.
 keywords: incidentes, alertas, investigar, correlación, ataque, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque, secops, operaciones de seguridad, soc
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 131c0350f27e961e5a98ed94e50d122d346eb1e3
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 8bf84ca58f2a2f263558b89d699184c4b47225c292dc6f17cdfb9fff12d63683
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623863"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523530"
 ---
-# <a name="introduction-to-integrating-microsoft-365-defender-into-your-security-operations"></a>Introducción a la integración de Microsoft 365 Defender en las operaciones de seguridad
+# <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Integración de Microsoft 365 Defender en las operaciones de seguridad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

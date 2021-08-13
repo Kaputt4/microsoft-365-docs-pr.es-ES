@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instrucciones para especificar información sobre ofertas de servicio, incluidos el nombre del servicio, la descripción, la ubicación, la duración y los precios. También puede etiquetar a los empleados que están cualificados para proporcionar el servicio.
-ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 8a287e08a64fd2f7ca94e83f7b99c277f9e0124673697b202eda9ad86b0ff9e4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804031"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definir las ofertas de servicio en Bookings
 
@@ -98,13 +98,13 @@ También puede agregar información personalizada y direcciones URL a la confirm
 
         :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Información adicional en un correo electrónico de Bookings":::
 
-14. **Habilitar notificaciones de mensajes de texto para el cliente** Si se selecciona, SMS mensajes se envían al cliente, pero solo si optan por participar.
+14. **Habilitar notificaciones de mensajes de texto para el cliente** Si se selecciona, los mensajes SMS se envían al cliente, pero solo si optan por participar.
 
     - Cuadro de suscripción en la página manual de reserva y Self-Service:
 
         :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="El cuadro de suscripción en Bookings":::
 
-    - Las notificaciones de mensajes de texto tendrán un aspecto parecido al siguiente (tenga en cuenta que SMS notificaciones solo están disponibles actualmente en Norteamérica):
+    - Las notificaciones de mensajes de texto tendrán un aspecto parecido al siguiente (tenga en cuenta que las notificaciones SMS solo están disponibles actualmente en Norteamérica):
 
         :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Una notificación de texto de Bookings":::
 
