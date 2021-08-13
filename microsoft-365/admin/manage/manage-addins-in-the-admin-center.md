@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos para usuarios y grupos de la organización.
-ms.openlocfilehash: ade5699425c8dc69428fc39898fb0934fb1cd3f1
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: a6eb234f9911b13616483456ef67866b99b4dee39fca90c2b16b272de2a85d62
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825384"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
 
@@ -56,7 +56,7 @@ También puede eliminar un complemento que se implementó.
 1. En el Centro de administración, vaya a la **página Configuración** servicios  >  **& complementos.**
 
     > [!NOTE]
-    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
 
 2. Seleccione el complemento implementado.
 
@@ -71,7 +71,7 @@ Después de la implementación, los administradores también pueden administrar 
 1. En el Centro de administración, vaya a la **página Configuración** servicios  >  **& complementos.**
 
     > [!NOTE]
-    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
 
 
 2. Seleccione el complemento implementado.
@@ -92,7 +92,7 @@ Como organización, es posible que quieras impedir la descarga de nuevos Office 
 1. En el centro de administración, vaya a la página **Configuración** \>[de servicios &amp;complementos](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
     > [!NOTE]
-    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
 
     
 3. Seleccione **Aplicaciones y servicios que pertenecen al usuario**.

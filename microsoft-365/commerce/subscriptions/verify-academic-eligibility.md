@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela Microsoft 365 Educación precios académicos.
 ms.date: 07/21/2020
-ms.openlocfilehash: 7da6fbc73ece51c5d9b845487e344bbbdec679cf
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b861092b0168fa83a8bac423caa3e29621837bc1f08d5af95502cde94c97ff4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808853"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobar la elegibilidad académica para Microsoft 365 Educación suscripciones
 
@@ -41,7 +41,7 @@ Ya debe tener una suscripción de Microsoft 365 Educación de prueba. Si no tien
 
 Si no está seguro de si tiene una Microsoft 365 Educación de prueba, siga estos pasos para comprobar que lo hace.
 
-1. En el centro Microsoft 365 administración,  vaya a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus productos.</a>
+1. En el Centro de administración de Microsoft 365, vaya  a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus</a> productos.
 2. Busque las **Office 365 A1 para pruebas** de profesores y Office 365 A1 **para los alumnos De prueba**. Si no encuentra estas suscripciones, visite esta página [web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y **seleccione Introducción de forma gratuita.**
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Comprobar la elegibilidad académica de su escuela
@@ -59,7 +59,7 @@ Si se deniega su elegibilidad académica, consulte [Mi escuela no es elegible. �
 
 Después de tener una Microsoft 365 Educación, puede comprobar el estado de la elegibilidad académica de su escuela en cualquier momento.
 
-1. Vaya al Centro [Microsoft 365 administración.](https://go.microsoft.com/fwlink/p/?linkid=2024339)
+1. Vaya a la [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 2. En la página principal, busque la tarjeta **de** facturación.\
     La **tarjeta de** facturación indica el estado del proceso de comprobación. La tarjeta muestra uno de los siguientes estados: aprobado, pendiente, rechazado o agregar el dominio.
 
@@ -70,7 +70,7 @@ Después de tener una Microsoft 365 Educación, puede comprobar el estado de la 
 
 Después de comprobar la elegibilidad de su escuela, puede comprar suscripciones a precios académicos. También puede convertir [la versión de prueba gratuita en una suscripción de pago.](../try-or-buy-microsoft-365.md) Si desea convertir la suscripción de prueba, debe hacerlo antes de que finalice el período de prueba.
 
-1. En el centro Microsoft 365 administración, vaya a la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
+1. En el Centro de administración de Microsoft 365, vaya a la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
 2. Para ver ofertas académicas, seleccione la **pestaña** Educación.
 
     > [!NOTE]
@@ -83,7 +83,7 @@ Después de comprobar la elegibilidad de su escuela, puede comprar suscripciones
 
 Puede encontrar la fecha de expiración de su suscripción de prueba gratuita en la **página Sus productos.** También puede ampliar la versión de prueba.
 
-1. En el centro Microsoft 365 administración,  vaya a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus productos.</a>
+1. En el Centro de administración de Microsoft 365, vaya  a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus</a> productos.
 2. Busque la suscripción de prueba.
 3. En la **sección Facturación,** en **Suscripción de prueba gratuita,** se muestra la fecha de expiración.
 4. Si desea ampliar la versión de prueba, seleccione **Extender la versión de prueba**. Solo puedes hacerlo una vez por suscripción de prueba gratuita.

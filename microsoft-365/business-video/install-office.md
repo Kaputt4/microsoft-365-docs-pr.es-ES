@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo instalar Microsoft Office aplicaciones.
-ms.openlocfilehash: 3626b21a3c98fba1830350568440467869577ccb
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 6a19c10036ab7a941ed0e9683fb1307b0037209ee21a95ef56adc5bd7ac1a72c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464374"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856612"
 ---
 # <a name="install-office-apps"></a>Instalar aplicaciones de Office 
 
@@ -47,7 +47,7 @@ Las Office que instalaste ahora aparecen en el **menú** Inicio.
 
 [Migrar el contenido a Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md) (artículo)
 
-[Instalar la Microsoft 365 móvil administrador en el teléfono](admin-mobile.md) (vídeo)
+[Instalar la Administración de Microsoft 365 móvil en el teléfono](admin-mobile.md) (vídeo)
 
 [Introducción a la Microsoft Teams en su pequeña empresa](get-started-teams-small-business.md) (vídeo)
 

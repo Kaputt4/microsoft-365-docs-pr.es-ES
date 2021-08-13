@@ -29,13 +29,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Obtenga información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que incluye Office aplicaciones y protección avanzada contra amenazas cibernéticas.
-ms.openlocfilehash: 96b915924013c29c8f30dd22c85ed389cb66a772
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+description: Obtenga información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que incluye aplicaciones de Office y protección avanzada contra amenazas cibernéticas.
+ms.openlocfilehash: 3c90cec65147e448ea01884f03d80c7f3c116ba938ba0a8106211806ed4baa53
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856533"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Información general sobre Microsoft 365 Empresa Premium
 
@@ -72,11 +72,11 @@ Microsoft 365 Empresa Premium le ayuda a proteger los datos en cada uno de esto
 
 Microsoft 365 Empresa Premium aplica varias medidas que ayudan a **protegerse contra las amenazas**:
 
-- Examinar vínculos en correos electrónicos y documentos en tiempo real para bloquear sitios web no seguros (Caja fuerte vínculos).
+- Examinar vínculos en correos electrónicos y documentos en tiempo real para bloquear sitios web no seguros (vínculos seguros).
 
-- Realizar análisis avanzado de datos adjuntos de correo electrónico en un entorno de espacio aislado para detectar malware recién desarrollado (Caja fuerte datos adjuntos).
+- Realizar análisis avanzado de datos adjuntos de correo electrónico en un entorno de espacio aislado para detectar malware recién desarrollado (datos adjuntos seguros).
 
-- Habilitar directivas contra phishing que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (anti phishing en Defender para la Office 365 inteligencia).
+- Habilitar directivas contra suplantación de identidad que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (anti phishing en la inteligencia de Defender para Office 365).
 
 - Directivas avanzadas que deshabilitan el acceso desde ubicaciones en las que no se confía o que omiten la autenticación multifactor en sitios de confianza como la red de su oficina (Azure MFA, incluido IP de confianza y Acceso condicional).
 
@@ -114,4 +114,4 @@ Para ver la lista completa de las características de seguridad, consulte [Carac
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 Empresa Premium vídeos de aprendizaje](../business-video/index.yml) (página de vínculos)
+[Vídeos de aprendizaje de Microsoft 365 Empresa Premium](../business-video/index.yml) (página de vínculos)

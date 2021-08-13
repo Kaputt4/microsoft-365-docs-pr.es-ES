@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e82f18b129963b254bf2120d444ce81e4e53e89d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 564747e31f7ab412d14790e42e6c8e901e382de4e08834b9a5b2f7c775454c74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816994"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -112,7 +112,7 @@ En las tablas siguientes se describe la configuración de la directiva de acceso
 
 En la **sección Asignaciones:**
 
-|Valor|Propiedades|Valores|Notas|
+|Configuración|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -134,11 +134,11 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 
 En la **sección Controles de** Access:
 
-|Valor|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Conceder|**Conceder acceso**||Select|
+|Conceder|**Conceder acceso**||Seleccionar|
 |||**Requerir autenticación multifactor**|Cheque|
-||**Exigir todos los controles seleccionados**||Select|
+||**Exigir todos los controles seleccionados**||Seleccionar|
 |
 
 Elija **Seleccionar** para guardar la **configuración de** concesión.
@@ -155,7 +155,7 @@ Vea [este artículo](../../enterprise/microsoft-365-client-support-multi-factor-
 
 En la **sección Asignaciones:**
 
-|Valor|Propiedades|Valores|Notas|
+|Configuración|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -165,10 +165,10 @@ En la **sección Asignaciones:**
 
 En la **sección Controles de** Access:
 
-|Valor|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Conceder|**Bloquear acceso**||Select|
-||**Exigir todos los controles seleccionados**||Select|
+|Conceder|**Bloquear acceso**||Seleccionar|
+||**Exigir todos los controles seleccionados**||Seleccionar|
 |
 
 Elija **Seleccionar** para guardar la **configuración de** concesión.
@@ -189,15 +189,15 @@ En la **sección Asignaciones:**
 
 |Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Usuarios|Incluir|**Todos los usuarios**|Select|
-|Riesgo de usuario|**Alto**||Select|
+|Usuarios|Incluir|**Todos los usuarios**|Seleccionar|
+|Riesgo de usuario|**Alto**||Seleccionar|
 |
 
 En la segunda **sección Asignaciones:**
 
 |Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Access|**Permitir acceso**||Select|
+|Acceso|**Permitir acceso**||Seleccionar|
 |||**Exigir cambio de contraseña**|Cheque|
 |
 
@@ -361,9 +361,9 @@ Para ver las reglas de evaluación > Windows servicio de **atestación** de esta
 
 |Propiedades|Valor|Acción|
 |---|---|---|
-|Requerir BitLocker|Obligatoria|Select|
-|Requerir que el arranque seguro esté habilitado en el dispositivo|Obligatoria|Select|
-|Requerir integridad de código|Obligatoria|Select|
+|Requerir BitLocker|Obligatoria|Seleccionar|
+|Requerir que el arranque seguro esté habilitado en el dispositivo|Obligatoria|Seleccionar|
+|Requerir integridad de código|Obligatoria|Seleccionar|
 |
 
 Para **las propiedades del dispositivo,** especifique los valores adecuados para las versiones del sistema operativo en función de las directivas de ti y seguridad.
@@ -374,29 +374,29 @@ Para **Seguridad del sistema,** consulte esta tabla.
 
 |Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
-|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Select|
-||Contraseñas sencillas|Bloquear|Select|
-||Tipo de contraseña|Valor predeterminado del dispositivo|Select|
+|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Seleccionar|
+||Contraseñas sencillas|Bloquear|Seleccionar|
+||Tipo de contraseña|Valor predeterminado del dispositivo|Seleccionar|
 ||Longitud mínima de la contraseña|6 |Tipo|
 ||Minutos máximos de inactividad antes de que se requiera la contraseña|15|Tipo <p> Esta configuración es compatible con las versiones 4.0 y posteriores de Android o KNOX 4.0 y versiones posteriores. Para dispositivos iOS, es compatible con iOS 8.0 y versiones posteriores.|
 ||Expiración de contraseña (días)|41|Tipo|
 ||Número de contraseñas anteriores para evitar la reutilización|5 |Tipo|
 ||Requerir contraseña cuando el dispositivo devuelve el estado de inactividad (móvil y holográfico)|Obligatoria|Disponible para Windows 10 y versiones posteriores|
-|Cifrado|Cifrado del almacenamiento de datos en el dispositivo|Obligatoria|Select|
-|Seguridad de dispositivos|Firewall|Obligatoria|Select|
-||Antivirus|Obligatoria|Select|
-||Antispyware|Obligatoria|Select <p> Esta configuración requiere una solución anti spyware registrada con Seguridad de Windows centro.|
-|Defender|Microsoft Defender Antimalware|Obligatoria|Select|
+|Cifrado|Cifrado del almacenamiento de datos en el dispositivo|Obligatoria|Seleccionar|
+|Seguridad de dispositivos|Firewall|Obligatoria|Seleccionar|
+||Antivirus|Obligatoria|Seleccionar|
+||Antispyware|Obligatoria|Seleccionar <p> Esta configuración requiere una solución anti spyware registrada con Seguridad de Windows centro.|
+|Defender|Microsoft Defender Antimalware|Obligatoria|Seleccionar|
 ||Versión mínima antimalware de Microsoft Defender||Tipo <p> Solo se admite para Windows 10 escritorio. Microsoft recomienda versiones no más de cinco detrás de la versión más reciente.|
-||Firma antimalware de Microsoft Defender actualizada|Obligatoria|Select|
-||Protección en tiempo real|Obligatoria|Select <p> Solo se admite para Windows 10 escritorio|
+||Firma antimalware de Microsoft Defender actualizada|Obligatoria|Seleccionar|
+||Protección en tiempo real|Obligatoria|Seleccionar <p> Solo se admite para Windows 10 escritorio|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
 |Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
-|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mediano|Select|
+|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medio|Seleccionar|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)
