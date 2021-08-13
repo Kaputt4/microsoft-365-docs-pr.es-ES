@@ -22,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: En este artículo, obtenga información sobre cómo integrar Microsoft 365 con los servicios de directorio existentes y los entornos locales.
-ms.openlocfilehash: c0453b7685254ccbbb301a17749fe48549fae78d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 48d7066ea51647cc0e7594dd774201d736471369b6158550cb1a238b65fa0d0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795139"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 integración con entornos locales
 

@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Obtén información sobre cómo obtener el informe de uso de aplicaciones de correo electrónico para saber acerca de las aplicaciones de correo electrónico que se conectan a Exchange Online y la Outlook versión que usan los usuarios.
-ms.openlocfilehash: f2a7b79a00b47896dac4427c532f85dccb931c60
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: b371b0b421ab92f80a31d98ed469061806dd1c60899efc0879b43f0a8556b832
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798151"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365 Informes en el Centro de administración: uso de aplicaciones de correo electrónico
 
@@ -45,7 +45,7 @@ Para obtener una vista de la actividad de las aplicaciones de correo electrónic
   
 ![Clientes de correo electrónico usados](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
   
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |1.  <br/> |El **informe de uso de aplicaciones** de correo electrónico se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.  <br/> |
@@ -54,7 +54,7 @@ Para obtener una vista de la actividad de las aplicaciones de correo electrónic
 |5.  <br/> |La **vista** Versiones muestra el número de usuarios únicos para cada versión de Outlook en Windows.  <br/> |
 |6.  <br/> | En el gráfico **Usuarios**, el eje Y es el recuento total de usuarios únicos que se han conectado a una aplicación en cualquier día del período de informe.  <br/>  En el gráfico **Usuarios**, el eje X es el número de usuarios únicos que han usado la aplicación durante el período de informe.  <br/>  En el gráfico **Aplicaciones**, el eje Y es el recuento total de usuarios únicos que han usado una aplicación específica durante el período de informe.  <br/>  En el gráfico **Aplicaciones**, el eje X es la lista de aplicaciones de su organización.  <br/>  En el gráfico **Versiones**, el eje Y es el recuento total de los usuarios únicos que utilizan una versión específica de escritorio de Outlook. Si el informe no puede resolver el número de versión de Outlook, la cantidad se mostrará como **Undetermined**.  <br/>  En el gráfico **Versiones**, el eje X es la lista de aplicaciones de su organización.  <br/> |
 |7.  <br/> |Puede filtrar la serie que ve en el gráfico seleccionando un elemento en la leyenda.  <br/> |
-|8.  <br/> | Es posible que no vea todos los elementos de las columnas en la lista siguiente hasta que los agregue.<br/> **Username** es el nombre del propietario de la aplicación de correo electrónico.  <br/> **La última fecha de actividad** es la última fecha en la que el usuario leyó o envió un mensaje de correo electrónico.  <br/> **Mail de Mac**, **Outlook para Mac**, **Outlook**, **Outlook móvil** y **Outlook en la web**, son ejemplos de aplicaciones de correo electrónico que es posible que tenga en su organización.  <br/>  Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **¿Cómo se ocultan los detalles** del nivel de usuario? en los informes de actividad en [el centro de administración Microsoft 365 usuario.](activity-reports.md)  <br/> |
+|8.  <br/> | Es posible que no vea todos los elementos de las columnas en la lista siguiente hasta que los agregue.<br/> **Username** es el nombre del propietario de la aplicación de correo electrónico.  <br/> **La última fecha de actividad** es la última fecha en la que el usuario leyó o envió un mensaje de correo electrónico.  <br/> **Mail de Mac**, **Outlook para Mac**, **Outlook**, **Outlook móvil** y **Outlook en la web**, son ejemplos de aplicaciones de correo electrónico que es posible que tenga en su organización.  <br/>  Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **¿Cómo se ocultan los detalles** del nivel de usuario? en los informes de actividad [de la Centro de administración de Microsoft 365](activity-reports.md).  <br/> |
 |9.  <br/> |Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Informe de uso de aplicaciones de correo electrónico: elegir columnas](../../media/041bd6ff-27e8-409d-9608-282edcfa2316.png)|
 |10.  <br/> |También puede exportar los datos del informe a un Excel .csv, seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.  <br/> |
 |||

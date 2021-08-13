@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la corrección de errores para corregir problemas de datos Advanced eDiscovery que podrían impedir el procesamiento adecuado del contenido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 891e8292fca629669a48684e95f522c08838d3aa
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cd2d8e3f681f57c915b610f4771bdeb078fbc79ae3482f7dfacbbc9334697ad1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802171"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 

@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo conservar el contenido del buzón de correo para antiguos empleados convirtiendo el buzón en un buzón inactivo.
-ms.openlocfilehash: 6aeb10f1557a991523b60b8e8e85a99fc61f4b87
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3badfacad1ffc58a686efd1f1971ce6dd015398e6662512c1de4ccb463ee98ef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801931"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Información general sobre buzones inactivos
 
@@ -42,7 +42,7 @@ Pero si su organización necesita conservar el contenido del buzón para antiguo
 
 ## <a name="inactive-mailboxes-and-microsoft-365-retention-policies"></a>Buzones inactivos y directivas Microsoft 365 de retención
 
-Además de la retención por juicio, el uso de la nueva característica de directiva de retención Microsoft 365 en el centro de cumplimiento de Microsoft 365 es otra forma de hacer que un buzón esté inactivo. Para usar una directiva de retención para crear un buzón inactivo:
+Además de la retención por juicio, el uso de la nueva característica Microsoft 365 directiva de retención en el Centro de cumplimiento de Microsoft 365 es otra forma de hacer que un buzón esté inactivo. Para usar una directiva de retención para crear un buzón inactivo:
 
 - Debe configurarse para conservar el contenido o retenerlo y, a continuación, eliminarlo. Si una directiva de retención está configurada para eliminar solo contenido, un buzón al que se aplica la directiva no se volverá inactivo cuando se elimine la cuenta de usuario.
 

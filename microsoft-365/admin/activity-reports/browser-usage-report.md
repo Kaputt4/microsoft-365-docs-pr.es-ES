@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 2f6f287e5a8642d94c9581fc73525b7bfaafb41b
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 7225b3b1d2c86dd917bc4cb69d2cf3ca398221619710e9f0268e9d861d8d261b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798220"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del explorador de Microsoft
 

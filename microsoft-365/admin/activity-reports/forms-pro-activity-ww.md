@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo obtener un informe de actividad de Voz del cliente de Microsoft Dynamics 365 mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365 cliente.
-ms.openlocfilehash: 7975db1f3681ab0823e222f017f6addb514dafd7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Obtenga información sobre cómo obtener un informe de actividad de Voz del cliente de Microsoft Dynamics 365 mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
+ms.openlocfilehash: 3b7e326a8661523865235880b0d0affd98c8836f531908943670caab0ad4fec4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797977"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 Informes en el centro de administración: actividad de Dynamics 365 Customer Voice
 
@@ -49,7 +49,7 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario que realizó la actividad en Microsoft Forms.  <br/> |

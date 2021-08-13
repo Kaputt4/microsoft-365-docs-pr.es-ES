@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 95712ea75b498c159d3a1d982f417a03d1d978a9d8529294522f25eb80cc6a65
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802555"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
@@ -42,7 +42,7 @@ Identifique a las partes interesadas apropiadas de su organización para colabor
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>Planear el flujo de trabajo de investigación y corrección
 
-Seleccione partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el centro de Microsoft 365 [cumplimiento.](https://compliance.microsoft.com/) Asegúrese de comprender cómo asignará usuarios y partes interesadas a diferentes grupos de roles de cumplimiento de comunicaciones de su organización.
+Seleccione las partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Asegúrese de comprender cómo asignará usuarios y partes interesadas a diferentes grupos de roles de cumplimiento de comunicaciones de su organización.
 
 Dependiendo de cómo desee administrar las directivas de comunicación y las alertas, deberá asignar usuarios a uno o varios grupos de roles para administradores, revisores e investigadores. Tiene la opción de asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de cumplimiento de comunicación. O puede decidir asignar todos los usuarios de cumplimiento de comunicación al grupo de roles Cumplimiento de comunicación. Use un único grupo de roles o varios grupos para ajustarse mejor a sus requisitos de administración de cumplimiento.
 

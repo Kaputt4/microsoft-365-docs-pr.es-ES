@@ -10,6 +10,12 @@
           href: ../commerce/try-or-buy-microsoft-365.md
         - name: Planear la configuración
           href: setup/plan-your-setup.md
+        - name: Plan para Windows 365 Empresa
+          items:
+            - name: Introducción a Windows 365 Empresa y equipos en la nube
+              href: setup/get-started-windows-365-business.md
+            - name: Opciones de tamaño de Windows 365 Empresa
+              href: setup/windows-365-business-sizing.md
         - name: Configurar la organización con la configuración guiada
           items:
             - name: Microsoft 365 Empresa Básico
@@ -289,6 +295,8 @@
               href: usage-analytics/active-user-in-usage-reports.md
             - name: Personalizar informes
               href: usage-analytics/customize-reports.md
+            - name: Análisis de uso con Microsoft 365 GCC
+              href: usage-analytics/connect-to-gcc-data-with-usage-analytics.md
             - name: Sobre el modelo de datos de análisis de uso
               href: usage-analytics/usage-analytics-data-model.md
             - name: Solucionar errores de análisis de uso

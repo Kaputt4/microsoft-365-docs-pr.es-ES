@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene recursos para los usuarios que usan Office 2007 o Office 2010 para ayudarles a planear su actualización.
-ms.openlocfilehash: 65f635e5c6195222ef2e39898cb1da2ee0dc0df0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d93a1a00e2738d907fdfc9a9c9cad8a64f23519c647315166f093d424e7217b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927471"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794935"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planear la actualización desde servidores y clientes de Office 2007 o 2010
 
@@ -83,7 +83,7 @@ Si desea ayuda para planear la actualización, tenga en cuenta una o varias de l
 
 - Si su organización compra un número de licencias Microsoft 365, nuestro equipo de FastTrack puede ayudarle a través del proceso de configuración. Para obtener más información, [vea FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365).
 
-- Si forma parte de una organización pequeña o prefiere administrar la actualización de Office de su organización, consulte [Upgrade your Microsoft 365 Empresa users to the latest Office client](/office365/admin/setup/upgrade-users-to-latest-office-client). 
+- Si forma parte de una organización pequeña o prefiere administrar la actualización de Office de su organización, consulte [Upgrade your Microsoft 365 Business users to the latest Office client](/office365/admin/setup/upgrade-users-to-latest-office-client). 
   
 ## <a name="im-a-home-user-what-do-i-do"></a>Soy un usuario doméstico. ¿Qué hago?
 
@@ -91,7 +91,7 @@ Si está usando Office 2007 o Office 2010 en casa, tenga en cuenta las siguiente
 
 - **Use Office en un explorador de forma gratuita.** Cree, vea y edite Office archivos en el explorador. Obtenga acceso a esos archivos desde casi cualquier dispositivo que tenga acceso a Internet. 
 
-  [Office en la Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) incluye [Word para](https://go.microsoft.com/fwlink/p/?linkid=746664)la web , Excel para la [web](https://go.microsoft.com/fwlink/p/?linkid=746665), PowerPoint para la [web](https://go.microsoft.com/fwlink/p/?linkid=746666), OneNote para la [web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [Email](https://go.microsoft.com/fwlink/p/?linkid=746676), [Calendar](https://go.microsoft.com/fwlink/p/?linkid=746678)y [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Para empezar, visite [Office.com](https://office.com) e inicie sesión con su [cuenta de Microsoft](https://account.microsoft.com/account). Si no tiene una cuenta de Microsoft, puede crear una en [Office.com](https://office.com).
+  [Office en la Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) incluye [Word para la Web](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel para la Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint para la Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote para la Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [Email](https://go.microsoft.com/fwlink/p/?linkid=746676), [Calendar](https://go.microsoft.com/fwlink/p/?linkid=746678)y [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Para empezar, visite [Office.com](https://office.com) e inicie sesión con su [cuenta de Microsoft](https://account.microsoft.com/account). Si no tiene una cuenta de Microsoft, puede crear una en [Office.com](https://office.com).
 
 - **Pruebe Microsoft 365 Familia.** Inicie una prueba de [Microsoft 365 Familia](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) para ver cómo funciona. Con Microsoft 365 Familia, disfrutarás del almacenamiento en la nube con OneDrive.
 

@@ -22,12 +22,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar una directiva de administración de información para controlar cuánto tiempo se conserva la información y realizar un seguimiento de quién usa la información.
-ms.openlocfilehash: 626549401f463ca7a28a0cdd8948f710a5128f08
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 94a97aed83f2b0b7b68ba1fb1bb1533718a00b44c1e02df565f8762dd941a013
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802390"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 

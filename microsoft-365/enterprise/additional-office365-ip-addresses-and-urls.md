@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: los nuevos servicios web de puntos de conexión no incluyen un número reducido de puntos de conexión para escenarios específicos.'
 hideEdit: true
-ms.openlocfilehash: 76bfc947460d4c513207c3a53b2f4536282c65e1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9d653b706946158e1a4c4619e1e569ca200011d438eae2605cf5309efed1937a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795223"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 
@@ -61,7 +61,7 @@ Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo q
 |10 |El servicio Detección automática se usa en escenarios de [Exchange híbrido](/exchange/exchange-deployment-assistant) con [Autenticación moderna híbrida con Outlook para iOS y Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <p> `*.acompli.net` <br> `*.outlookmobile.com` <br> `*.outlookmobile.us` <br> `52.125.128.0/20` <br> `52.127.96.0/23`|Servidor de Exchange local de cliente en TCP 443|Tráfico de servidor entrante|
 |11|Exchange autenticación híbrida de Azure AD|*.msappproxy.net|Tráfico de solo servidor saliente TCP|
 |12 |Skype Empresarial en Office 2016 incluye el uso compartido de pantalla basado en vídeo que usa los puertos UDP. Los clientes anteriores de Skype Empresarial de Office 2013 y versiones anteriores usaban RDP mediante un puerto TCP 443.|Puerto TCP 443 abierto para 52.112.0.0/14|Versiones de cliente anteriores de Skype Empresarial en Office 2013 y versiones anteriores|
-|13 |Conectividad de servidor local híbrido de Skype Empresarial para Skype Empresarial Online|13.107.64.0/18, 52.112.0.0/14 <br> Puertos UDP 50,000-59,999 <br> Puertos TCP 50,000-59,999; 5061|Conectividad de salida de servidor local de Skype Empresarial|
+|13|Conectividad de servidor local híbrido de Skype Empresarial para Skype Empresarial Online|13.107.64.0/18, 52.112.0.0/14 <br> Puertos UDP 50,000-59,999 <br> Puertos TCP 50,000-59,999; 5061|Conectividad de salida de servidor local de Skype Empresarial|
 |14 |RTC en la nube con conectividad híbrida local requiere la conectividad de red abierta para los host locales Para más información acerca de las configuraciones híbridas de Skype Empresarial Online,|Consulte [Planear la conectividad híbrida entre Skype Empresarial Server y Office 365](/skypeforbusiness/hybrid/plan-hybrid-connectivity)|Skype Empresarial híbrido local entrante|
 |15|**FQDN de autenticación e identidad** <p> Para que funcione, el FQDN `secure.aadcdn.microsoftonline-p.com` debe estar en el Internet Explorer (IE) del cliente o en su zona de sitios de confianza de Microsoft Edge.||Sitios de confianza|
 |16 |**FQDN de Microsoft Teams** <p> Si usa Internet Explorer o Microsoft Edge, debe habilitar las cookies propias y de terceros y agregar los FQDN para Teams a los sitios de confianza. Esto es complementario a los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14. Para obtener más información, vea [Problemas conocidos de Microsoft Teams](/microsoftteams/known-issues).||Sitios de confianza|

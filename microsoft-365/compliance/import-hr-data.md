@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: eb11eb5790ca9c585db8bbb95b41747a72e5c8f1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 41838fae932dbe8c6d24388f5ce3b241a6742f0412fdb05435f2baf5702047c7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802051"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
-Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 365 para importar datos de recursos humanos (RRHH) relacionados con eventos como la dimisión de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la solución de administración de riesgos [insider](insider-risk-management.md) puede usar los datos de recursos humanos para generar indicadores de riesgo que puedan ayudarle a identificar posibles actividades malintencionadas o robo de datos por parte de los usuarios de su organización.
+Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 365 para importar datos de recursos humanos (RRHH) relacionados con eventos como la dimisión de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la solución de administración de riesgos [insider](insider-risk-management.md) puede usar los datos de recursos humanos para generar indicadores de riesgo que puedan ayudarle a identificar posibles actividades malintencionadas o robo de datos por parte de los usuarios de su organización.
 
-La configuración de un conector para datos de recursos humanos que las directivas de administración de riesgos internas pueden usar para generar indicadores de riesgo consiste en crear un archivo CSV que contenga los datos de recursos humanos, crear una aplicación en Azure Active Directory que se use para la autenticación, crear un conector de datos de RECURSOS humanos en el centro de cumplimiento de Microsoft 365 y, a continuación, ejecutar un script (de forma programada) que ingieren los datos de RECURSOS humanos en archivos CSV a la nube de Microsoft para que esté disponible para la solución de administración de riesgos internas.
+La configuración de un conector para datos de recursos humanos que las directivas de administración de riesgos internas pueden usar para generar indicadores de riesgo consiste en crear un archivo CSV que contenga los datos de recursos humanos, crear una aplicación en Azure Active Directory que se use para la autenticación, crear un conector de datos de RECURSOS humanos en el Centro de cumplimiento de Microsoft 365 y, a continuación, ejecutar un script (de forma programada) que ingiera los datos de recursos humanos en archivos CSV a la nube de Microsoft para que esté disponible para la solución de administración de riesgos internas.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -211,7 +211,7 @@ Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, c
 
 ## <a name="step-3-create-the-hr-connector"></a>Paso 3: Crear el conector de RECURSOS HUMANOS
 
-El siguiente paso es crear un conector de recursos humanos en el centro Microsoft 365 cumplimiento. Después de ejecutar el script en el paso 4, el conector de RECURSOS humanos que cree ingerirá los datos de RECURSOS humanos del archivo CSV a su Microsoft 365 organización. Antes de crear un conector, asegúrese de que tiene una lista de los escenarios de recursos humanos y los nombres de columna CSV correspondientes para cada uno de ellos. Debe asignar los datos necesarios para cada escenario a los nombres de columna reales del archivo CSV al configurar el conector. Como alternativa, puede cargar un archivo CSV de ejemplo al configurar el conector y el asistente le ayudará a asignar el nombre de las columnas a los tipos de datos necesarios.
+El siguiente paso es crear un conector de recursos humanos en el Centro de cumplimiento de Microsoft 365. Después de ejecutar el script en el paso 4, el conector de RECURSOS humanos que cree ingerirá los datos de RECURSOS humanos del archivo CSV a su Microsoft 365 organización. Antes de crear un conector, asegúrese de que tiene una lista de los escenarios de recursos humanos y los nombres de columna CSV correspondientes para cada uno de ellos. Debe asignar los datos necesarios para cada escenario a los nombres de columna reales del archivo CSV al configurar el conector. Como alternativa, puede cargar un archivo CSV de ejemplo al configurar el conector y el asistente le ayudará a asignar el nombre de las columnas a los tipos de datos necesarios.
 
 Después de completar este paso, asegúrese de copiar el identificador de trabajo que se genera al crear el conector. Usará el identificador de trabajo al ejecutar el script.
 
@@ -311,7 +311,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Paso 5: Supervisar el conector de RRHH
 
-Después de crear el conector de recursos humanos y ejecutar el script para cargar los datos de recursos humanos, puede ver el conector y el estado de carga en el centro de Microsoft 365 cumplimiento. Si programa el script para que se ejecute automáticamente de forma regular, también puede ver el estado actual después de la última vez que se ejecutó el script.
+Después de crear el conector de recursos humanos y ejecutar el script para cargar los datos de recursos humanos, puede ver el conector y el estado de carga en el Centro de cumplimiento de Microsoft 365. Si programa el script para que se ejecute automáticamente de forma regular, también puede ver el estado actual después de la última vez que se ejecutó el script.
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **Conectores de datos** en la navegación izquierda.
 
