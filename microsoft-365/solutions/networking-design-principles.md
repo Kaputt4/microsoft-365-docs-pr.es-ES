@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7de9aec29b0a57e85e3539fc2e99384de545c52a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f1d3bcf269211dc00702c08c22ff0c6f6055b1b63f6bfd351d5aba7679b82978
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804761"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>Creación de redes (en la nube): punto de vista de un arquitecto
 

@@ -12,12 +12,12 @@ ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 412a7e44eda23244c519629757d8ad3f8e782827
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 204ddfe5fd7e367775148e31895fdab15a17c982dcb498f07ba11aa59ebb4dc9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802891"
 ---
 # <a name="payment-information-for-belgium"></a>Información de pago para Bélgica
 

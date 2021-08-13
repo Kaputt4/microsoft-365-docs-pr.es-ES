@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8a7e40b7aab787b83cf82f8c4a18f58e3101b068
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f5ac8590969eabec06753f1614fed58a63c5991f703b085bc0fbe167acb2e497
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536675"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802843"
 ---
 # <a name="payment-information-for-hungary"></a>Información de pago para Hungría
 

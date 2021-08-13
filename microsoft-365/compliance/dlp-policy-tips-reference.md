@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0c42569da3fcac40d3121a59f7dc004f25dd3f74
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 785d7fad1cf35bab56594e5b0c11287c153eaa44aedcf2cf6b44a742ed93ee74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814464"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Referencia de sugerencias de directiva de prevención de pérdida de datos
 
@@ -34,9 +34,9 @@ Las sugerencias de directiva DLP en Outlook Web Access se admiten para todas las
 
 - Sender Is
 - Dominio del remitente es
-- Recipient es miembro de
+- El destinatario es un miembro de
 - El encabezado contiene palabras o frases
-- El encabezado coincide con los patrones
+- El encabezado coincide con patrones
 - El tamaño del documento es igual o mayor que
 - El tipo de mensaje es
 - La importancia del mensaje es

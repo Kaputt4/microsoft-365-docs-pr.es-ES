@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente la opción correcta para la administración de dispositivos y aplicaciones para Microsoft 365 inquilinos.
-ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: eb15f5805308c6f575beb9eebd8f7825ebdd13173037870a3770fd306bb090bb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804618"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 5. Administración de dispositivos y aplicaciones para Microsoft 365 para inquilinos empresariales
 
@@ -48,7 +48,7 @@ También determinarás cómo vas a administrar dispositivos personales y disposi
 
 ## <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
-Microsoft proporciona un conjunto de configuraciones para el acceso a identidades y [dispositivos](../security/defender-365-security/microsoft-365-policies-configurations.md) para garantizar un personal seguro y productivo. Estas configuraciones incluyen el uso de:
+Microsoft proporciona un conjunto de configuraciones para el acceso a identidades y [dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md) para garantizar un personal seguro y productivo. Estas configuraciones incluyen el uso de:
 
 - Directivas de acceso condicional de Azure AD
 - Microsoft Intune de cumplimiento de dispositivos y protección de aplicaciones
@@ -61,8 +61,8 @@ Este es un ejemplo de la aplicación de estas directivas y configuraciones para 
 
 Para el acceso a dispositivos y la administración de aplicaciones, usa las configuraciones de estos artículos:
 
-- [Requisitos previos](../security/defender-365-security/identity-access-prerequisites.md)
-- [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md)
+- [Requisitos previos](../security/office-365-security/identity-access-prerequisites.md)
+- [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>Resultados del paso 5
 
