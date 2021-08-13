@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada.
-ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 88fac794b59785a37121800c95a99e2b6be3b35deb2830c927600442f3bdb42f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809129"
 ---
 # <a name="turn-on-security-defaults"></a>Activar valores predeterminados de seguridad
 
@@ -41,7 +41,7 @@ Si la suscripción se creó el 22 de octubre de 2019 o después, es posible que 
 
 Para habilitar los valores predeterminados de seguridad en Azure Active Directory (Azure AD) o para comprobar si ya están habilitados:
 
-1. Inicie sesión en el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administración con</a> credenciales de administrador global.
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> con credenciales de administrador global.
 
 2. En el panel izquierdo, seleccione **Mostrar todo y, a continuación,** en Centros de **administración,** **seleccione Azure Active Directory**.
 

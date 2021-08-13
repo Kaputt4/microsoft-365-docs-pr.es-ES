@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 291a9ab09d14e24d58604644d77381d7f41214d6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3f2b8ff6bd099164e288a244e45a2aa646e5bf391c7a192450a02b3689038101
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835825"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -90,7 +90,7 @@ Puede aplicar directivas DLP a datos en reposo, datos en uso y datos en movimien
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
 - Microsoft Cloud App Security
-- Dispositivos con Windows 10
+- Dispositivos Windows 10
 - Repositorios locales
 
 Cada uno tiene requisitos previos diferentes. Los elementos confidenciales de algunas ubicaciones, como Exchange en línea, se pueden traer bajo el paraguas DLP simplemente configurando una directiva que se aplique a ellos. Otros, como los repositorios de archivos locales, requieren una implementación del escáner de Azure Information Protection (AIP). Deberá preparar el entorno, redactar directivas de código y probarlas exhaustivamente antes de activar cualquier acción de bloqueo.

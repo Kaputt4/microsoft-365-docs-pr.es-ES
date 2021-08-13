@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles.
-ms.openlocfilehash: 5619ce6a8fa2c705acc6be08e3af8ad6f90a6d99
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: e69ad327add8ced4f3bacfa47c5b9424f3601b63a18360983e20c9a68ea83b53
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827076"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 

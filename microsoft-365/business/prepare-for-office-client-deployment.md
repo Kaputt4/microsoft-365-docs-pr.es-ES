@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Obtén información sobre cómo instalar automáticamente las aplicaciones Office de 32 bits en Windows 10 equipos y mantenerlas actualizadas.
-ms.openlocfilehash: 843be426d817da1173769b3b66dc4c054179f0fd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 134d5f2918e3f28c2025b282b9ae0325b64fe0474ae8123d0637bb43c4730c55
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924235"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803568"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Prepararse para la Office cliente mediante Microsoft 365 para empresas
 
@@ -53,7 +53,7 @@ Para determinar si tiene la versión de Hacer clic y ejecutar de Office, en cual
   
 El usuario final cuyo PC:
   
-- **Tiene** una Windows 10 Business de usuario, una licencia activa Microsoft 365 para empresas, Windows 10 Creators Update y se une a Azure Active Directory. 
+- **Tiene** una Windows 10 Business de usuario, una licencia de usuario Microsoft 365 para empresas, Windows 10 Creators Update y se une a Azure Active Directory. 
     
 - **No tiene aplicaciones de** 64 bits Office (por ejemplo: Word, Excel, PowerPoint). Si se requieren aplicaciones de Office de 64 bits, esta característica no es buena porque no hay compatibilidad para desencadenar una versión de 64 bits de hacer clic y ejecutar de Office desde la consola de administración de Microsoft 365 para empresas. 
     

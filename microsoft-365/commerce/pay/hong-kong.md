@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b813ec63f2cd91671f5e265cdac5c023a75dbe71
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 156e95b5dd045e1a06886f739e4e8b13577313caa90d7fcce177313e1f79200c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809001"
 ---
 # <a name="payment-information-for-hong-kong"></a>Información de pago para Hong Kong
 

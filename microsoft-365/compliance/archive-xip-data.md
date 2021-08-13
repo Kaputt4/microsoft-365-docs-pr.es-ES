@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de origen XIP de Veritas a Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: a3906d9a79c214ca7cfc25f868c5f24661f40004
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 664f0050586c7f40f9c770601bdf6418209aa17fa9b146253ed2f9a073def966
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835921"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>Configurar un conector para archivar datos de origen XIP
 

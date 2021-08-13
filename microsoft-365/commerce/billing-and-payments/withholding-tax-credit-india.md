@@ -21,12 +21,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: b588f95309fcaa16bcee1ad71eaaf21ef053eadcd897bc0955eb58c2fc950b9e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809096"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Solicitar un crédito para la retención de impuestos en su cuenta (clientes de India)
 

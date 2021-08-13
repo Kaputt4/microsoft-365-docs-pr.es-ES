@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo conectar el equipo a Microsoft 365 Empresa.
-ms.openlocfilehash: 7afbf3a1a515b1f023d660e72a77144b93d66a89
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ef504bf6a0b6e3f4c97135c073862ffcd2be953104c91fbbdf57efa77cbcb33e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580659"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803587"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Conectar el equipo a Microsoft 365 Empresa Premium
 
@@ -48,10 +48,10 @@ A continuación, conéctese a Microsoft 365 Empresa:
 5. Escribe la contraseña, selecciona  **Iniciar sesión** y, a continuación, comprueba que te unes a la organización correcta.
 6. Seleccione  **Unirse** y, a continuación,  **Seleccione Listo**.
 
-Según la configuración de la empresa Microsoft 365 Empresa, es posible que veas una notificación para cifrar el equipo. Para cifrar el equipo:
+Dependiendo de cómo se configure la empresa Microsoft 365 empresa, es posible que veas una notificación para cifrar el equipo. Para cifrar el equipo:
 
 1. Seleccione el  **mensaje Cifrado**  necesario.
-2. Seleccione No&#39;ningún otro software de cifrado de  **disco instalado, cifre** todos mis discos y, a continuación,  **seleccione Sí**. Verá una ventana **Inicio BitLocker** con una barra de progreso.
+2. Seleccione No&#39;ningún otro software de cifrado de  **disco instalado, cifre** todos mis discos y, a continuación,  **seleccione Sí**. Verás una ventana  **De Inicio de BitLocker**  con una barra de progreso.
 3. En la **ventana Elegir cómo desbloquear la unidad** al inicio, seleccione Escribir un PIN **(recomendado).**
 4. Escriba el PIN y, a continuación, vuelva a escribirlo para comprobarlo. Seleccione  **Establecer PIN**.
 5. Elija un método para guardar una clave de recuperación de cifrado y, a continuación,  **seleccione Siguiente**.

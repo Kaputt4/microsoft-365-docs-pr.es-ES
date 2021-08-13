@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a49295700ca31bca2deddb5c8a940213884657ff
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6540fc02d90fda1aa63710eecc1f886f14c7d37bfe70a95d5c66dcf907018292
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296977"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843820"
 ---
 # <a name="contact-support-for-antigua-and-barbuda"></a>Póngase en contacto con el soporte técnico de Antigua y Barbuda
 

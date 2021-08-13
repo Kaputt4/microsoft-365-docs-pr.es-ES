@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: Obtenga información sobre los elementos sin indizar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que ejecute en el centro de cumplimiento Microsoft 365 de documentos electrónicos.
-ms.openlocfilehash: e1730959cd3177fe1f7bce1f0315c871b5a57598
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Obtenga información sobre los elementos sin indizar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que se ejecuta en el Centro de cumplimiento de Microsoft 365.
+ms.openlocfilehash: a43873b52ad4cf76c694b4666761b6904ab4126c5c7b79a6ca530ef00af5c688
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835756"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos parcialmente indizados en eDiscovery
 
-Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el centro de cumplimiento de Microsoft 365 incluye automáticamente elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos parcialmente indizados Exchange elementos de buzón de correo y documentos en SharePoint y OneDrive para la Empresa sitios que, por algún motivo, no se indizaron completamente para la búsqueda. En Exchange, un elemento parcialmente indizado normalmente contiene un archivo (de un tipo de archivo que no se puede indizar) que se adjunta a un mensaje de correo electrónico. Estos son algunos otros motivos por los que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados al ejecutar una búsqueda de exhibición de documentos electrónicos:
+Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el Centro de cumplimiento de Microsoft 365 incluye automáticamente elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos parcialmente indizados Exchange elementos de buzón de correo y documentos en SharePoint y OneDrive para la Empresa sitios que, por algún motivo, no se indizaron completamente para la búsqueda. En Exchange, un elemento parcialmente indizado normalmente contiene un archivo (de un tipo de archivo que no se puede indizar) que se adjunta a un mensaje de correo electrónico. Estos son algunos otros motivos por los que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
 - El tipo de archivo no se admite o está deshabilitado para la indexación.
 
@@ -115,7 +115,7 @@ Para obtener una lista de los límites de indización SharePoint documentos, vea
 |Salida máxima del analizador  <br/> |2 millones de caracteres  <br/> |La cantidad máxima de salida de texto del analizador indizado. Por ejemplo, si el analizador extrajo 8 millones de caracteres de un documento, solo se indizarán los dos primeros millones de caracteres.  <br/> |
 |Tokens de anotación máximos  <br/> |2 millones  <br/> |Cuando se indiza un mensaje de correo electrónico, cada palabra se anota con diferentes instrucciones de procesamiento que especifican cómo se debe indizar esa palabra. Cada conjunto de instrucciones de procesamiento se denomina token de anotación. Para mantener la calidad del servicio en Office 365, hay un límite de 2 millones de tokens de anotación para un mensaje de correo electrónico.  <br/> |
 |Tamaño máximo del cuerpo en el índice  <br/> |67 millones de caracteres  <br/> |El número total de caracteres en el cuerpo de un mensaje de correo electrónico y todos sus datos adjuntos. Cuando se indiza un mensaje de correo electrónico, todo el texto del cuerpo del mensaje y de todos los datos adjuntos se concatena en una sola cadena. El tamaño máximo de esta cadena indizada es de 67 millones de caracteres.  <br/> |
-|Tokens únicos máximos en el cuerpo  <br/> |1 millón  <br/> |Como se explicó anteriormente, los tokens son el resultado de extraer texto del contenido, quitar la puntuación y los espacios y, a continuación, dividirlo en palabras (denominadas tokens) que se almacenan en el índice. Por ejemplo, la frase  `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 de estos son tokens únicos. Hay un límite de 1 millón de tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice se haga demasiado grande con tokens aleatorios.  <br/> |
+|Tokens únicos máximos en el cuerpo  <br/> |1 millón  <br/> |Como se explicó anteriormente, los tokens son el resultado de extraer texto del contenido, quitar la puntuación y los espacios y, a continuación, dividirlo en palabras (denominadas tokens) que se almacenan en el índice. Por ejemplo, la frase  `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 de estos son tokens únicos. Hay un límite de 1 millón de tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice se haga demasiado grande con tokens aleatorios.  <br/> |
 ||||
 
 ## <a name="more-information-about-partially-indexed-items"></a>Más información sobre elementos parcialmente indizados

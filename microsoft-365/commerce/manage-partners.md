@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo trabajar con proveedores de soluciones certificados por Microsoft (partners) para comprar y administrar productos y servicios para su organización o escuela.
 ms.date: 04/13/2021
-ms.openlocfilehash: 63c5595d14ca0a531f50875ea8058663b626bb89
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 024f8c4154c4e646a5a72fbc0d1b0f980b8b5c8eb854e723d84dc0f5f464911c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809105"
 ---
 # <a name="manage-partner-relationships"></a>Administrar relaciones de partners
 
@@ -32,11 +32,11 @@ Puede trabajar con proveedores de soluciones certificados por Microsoft (partner
 
 1. Los administradores encuentran y se contacta con un partner mediante el formulario en <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> .
 2. Los partners envían una solicitud de correo electrónico a los clientes para establecer una relación de socio.
-3. Los clientes aceptan la invitación en Microsoft 365 centro de administración y comienzan a trabajar con el partner.
+3. Los clientes aceptan la invitación en Centro de administración de Microsoft 365 y comienzan a trabajar con el partner.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para realizar estos pasos. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para realizar estos pasos. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>¿Qué puede hacer un partner para mi organización o escuela?
 
@@ -65,7 +65,7 @@ El partner se pone en contacto con usted y le ofrece la oportunidad de obtener m
 
 Después de encontrar un socio y decidir trabajar con ellos, te envían una invitación por correo electrónico.
 
-1. En el correo electrónico, seleccione el vínculo para ir al Centro Microsoft 365 administración.
+1. En el correo electrónico, seleccione el vínculo para ir al Centro de administración de Microsoft 365.
 2. En la página Aceptar contrato & autorizar **asociado,** seleccione el vínculo para el Contrato de cliente de **Microsoft** y lea el documento.
 3. Active la casilla para confirmar que ha leído el contrato.
 4. Seleccione **Aceptar & Autorizar**.
@@ -75,7 +75,7 @@ Después de encontrar un socio y decidir trabajar con ellos, te envían una invi
 
 Si ya tienes un partner pero aún no has firmado un Contrato de cliente de Microsoft, debes aceptar el contrato antes de que puedan realizar compras o administrar tus suscripciones en tu nombre.
 
-1. Si recibe un correo electrónico de su partner, seleccione el vínculo para ir al centro de administración de Microsoft 365 o vaya a la <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">página Aceptar</a> acuerdo.
+1. Si recibe un correo electrónico de su partner, seleccione el vínculo para ir al Centro de administración de Microsoft 365 o vaya a la <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">página Aceptar</a> acuerdo.
 2. Seleccione el vínculo para el **Contrato de cliente de Microsoft** y lea el documento.
 3. Active la casilla para confirmar que ha leído el contrato.
 4. Seleccione **Aceptar**.

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprenda a cambiar el nombre o la dirección de correo electrónico de un usuario cambiando un nombre para mostrar, alias o dirección de correo electrónico.
-ms.openlocfilehash: c7d960daa8b1b83149db90b10b7af4236d535a9d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 238d4a81853a490fcc92858480e841aeb7aaa8b7c054ae4bd39e5caee11b91d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394838"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803635"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Cambiar el nombre o la dirección de correo electrónico de un usuario
 

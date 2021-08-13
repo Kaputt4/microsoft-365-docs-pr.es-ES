@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describen los límites en el caso principal de exhibición de documentos electrónicos en Microsoft 365.
-ms.openlocfilehash: e7b1013abd9fd94748baf3b83dd04efbc3831a1d
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 2df6bc2182affedaba057b29c98990bc150682d4dbcdef0d15369e158a819c90
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835780"
 ---
 # <a name="limits-in-core-ediscovery"></a>Límites en eDiscovery principal
 
@@ -31,7 +31,7 @@ En la tabla siguiente se enumeran los límites de los casos principales de exhib
   | Descripción del límite | Límite |
   |:-----|:-----|
   |Número máximo de casos para una organización.  <br/> |Sin límite  <br/> |
-  |Número máximo de retenciones de casos para una organización.  <br/> |10 000  <br/> |
+  |Número máximo de retenciones de casos para una organización.  <br/> |10,000  <br/> |
   |Número máximo de buzones en una única retención de casos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |1.000  <br/> |
   |Número máximo de sitios en una única retención de casos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |100  <br/> |
   |Número máximo de casos que se muestran en la página principal de exhibición de documentos electrónicos principal y el número máximo de elementos que se muestran en las pestañas Retenciones, Búsquedas y Exportación dentro de un caso. <sup>1</sup> |1.000|
