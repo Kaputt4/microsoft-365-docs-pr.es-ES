@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 66fc3bcf0820d098303ce1a05a98c18cfd8a3cf0
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7c881402a90c8e858d05556f5d8ed7f1be581581c78b5b084838b4dfb6181255
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651152"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806957"
 ---
 # <a name="isolate-machine-api"></a>AISLAR API de máquina
 
@@ -48,6 +48,12 @@ Aísla un dispositivo del acceso a la red externa.
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+> [!IMPORTANT]
+>
+> - El aislamiento total está disponible para dispositivos Windows 10, versión 1703.
+> - El aislamiento selectivo está disponible para dispositivos Windows 10 versión 1709 o posterior.
+> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
 
 ## <a name="permissions"></a>Permisos
 

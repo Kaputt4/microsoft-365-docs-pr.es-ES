@@ -14,12 +14,12 @@ ms.service: ''
 search.appverid: ''
 localization_priority: Normal
 description: Obtenga información sobre cómo crear un nuevo tema en Temas Microsoft Viva.
-ms.openlocfilehash: 5b275741cad759348bc42ebb6bc7fe0d04199ea5
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 4f6ae1444770f26cdb2aff9c6b7516dc2b9e14f0126bf2833e825f05c75dc779
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840649"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Crear un nuevo tema en Temas Microsoft Viva
 
@@ -29,7 +29,7 @@ En Temas de Viva, puede crear un nuevo tema si uno no se detecta a través de la
 > Aunque la información de un tema recopilado por AI está recortada en [seguridad,](topic-experiences-security-trimming.md)tenga en cuenta que la descripción del tema y la información de personas de un tema creado manualmente es visible para todos los usuarios que tienen permisos para ver el tema. 
 
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Para crear un nuevo tema, debe:
 - Tener una licencia de Temas Microsoft Viva.

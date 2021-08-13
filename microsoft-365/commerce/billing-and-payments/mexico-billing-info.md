@@ -20,12 +20,12 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: 15b29887fcfd301e303d0918e5f3efc2acd7e908
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 0be08294e241120e54711825fc91eccb7c663908a5ab32a91b08c2535171b7c8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856336"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Información de facturación de Microsoft 365 para empresas en México
 

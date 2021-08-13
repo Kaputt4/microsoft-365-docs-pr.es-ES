@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3f37ec12b7e54e0241e66def76d9ed2d6892b7a7
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2d2e2e53061353a4035675c6e24b8dcc19900f672a159d13fe1277bed0393461
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806993"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportar métodos de evaluación y propiedades por dispositivo
 
@@ -185,7 +185,7 @@ CvssScore|cadena|La puntuación CVSS de CVE.
 DeviceId|cadena|Identificador único del dispositivo en el servicio.
 DeviceName|cadena|Nombre de dominio completo (FQDN) del dispositivo.
 DiskPaths|Array[string]|Prueba en disco de que el producto está instalado en el dispositivo.
-EventTimestamp|Cadena|Hora en que se encontró este evento delta.
+EventTimestamp|String|Hora en que se encontró este evento delta.
 ExploitabilityLevel|cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp|cadena|Primera vez que se vio la CVE de este producto en el dispositivo.
 Id|string|Identificador único del registro.  
@@ -199,10 +199,10 @@ RegistryPaths |Array[string]|El Registro evidencia que el producto está insta
 SoftwareName|cadena|Nombre del producto de software.
 SoftwareVendor|cadena|Nombre del proveedor de software.
 SoftwareVersion|cadena|Número de versión del producto de software.
-Estado|Cadena|**Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo).  **Corregido**   (para una vulnerabilidad que ya no existe en el dispositivo, lo que significa que se ha corregido). **Actualizado**   (para una vulnerabilidad en un dispositivo que ha cambiado. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
+Estado|String|**Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo).  **Corregido**   (para una vulnerabilidad que ya no existe en el dispositivo, lo que significa que se ha corregido). **Actualizado**   (para una vulnerabilidad en un dispositivo que ha cambiado. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
 VulnerabilitySeverityLevel|cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Exportar evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)
 - [Exportar evaluación de inventario de software por dispositivo](get-assessment-software-inventory.md)

@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: bee35191e7e80313521891a1efc1780489902ae8
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 21618a078a3104af39727439c6690e31f75fbc93518e534e6759d3a914c414fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394332"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815664"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Roles de administrador de Intune en el Centro de administración de Microsoft 365
 

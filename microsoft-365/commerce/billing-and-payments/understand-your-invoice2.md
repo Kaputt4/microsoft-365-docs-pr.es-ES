@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Interpretar los cargos, la facturación y la información de pago en su factura de Microsoft 365 para empresas, y cómo cambiar un número de pedido de compra.
 ms.date: 05/04/2021
-ms.openlocfilehash: 8881129b6d7013c731dbcb24ebd5f8e21e410b93
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 996c1856eebb378531670bbb8f28f64bcdb409bddce2a089aa70e008a12f81bc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856369"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 

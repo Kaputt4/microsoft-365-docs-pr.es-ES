@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Crear un centro de contenido en Microsoft SharePoint Syntex
-ms.openlocfilehash: a50a31d29cc53a70a7e13f9cd83e76933aa39cf8
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 6ec19516b12166104ab6e78974d349f4113ab55b3bf188fb0291cb8a5429e0c2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850339"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Crear un centro de contenido en Microsoft SharePoint Syntex
 
@@ -46,7 +46,7 @@ Un administrador de SharePoint puede crear un sitio del centro de contenido del 
 
 Para crear un nuevo centro de contenido:
 
-1. En el Centro de administración de Microsoft 365, vaya a la página [Centro de administración de SharePoint **Sitios activos** ](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true).
+1. En el Centro de administración de Microsoft 365, vaya a la página [Centro de administración de SharePoint **Sitios activos**](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true).
 
 2. En la página **Sitios activos**, haga clic en **Crear** y seleccione **Otras opciones**.
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 5785d21d-1abd-4571-a04a-8cc5a65ca9b5
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo bloquear el acceso a Microsoft 365 cuando un empleado abandona su organización.
-ms.openlocfilehash: 0c4b210f9802995a23acbf64241997b8924c00c0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d9099f375af4d3fb6ff7c4583ec2bb925e7f0c342711ade8b8f83c4676cdc4d1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924772"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824208"
 ---
 # <a name="compare-ways-to-block-access"></a>Comparar formas de bloquear el acceso
 

@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ad49b08e687f4ba389616542bd607d4140e91132
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: dcf83a4f90c896ce56a3f5b2fd6430eeb9c939bf2b564a5081ae063d01898a79
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806930"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Usar el análisis rápido limitado en el Antivirus de Windows Defender
 

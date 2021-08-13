@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Summary: Understand why you must use PowerShell to manage Microsoft 365, in some cases more efficiently and in other cases by necessity.'
-ms.openlocfilehash: cbbceddc98bebaed030f4cff2f183d473d716df6
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 1c575cc71186dcf5c82e11f03c266086abac730a7340d89ae5d8c1a005d4496c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807349"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>¿Por qué necesita usar PowerShell para Microsoft 365?
 
@@ -424,7 +424,7 @@ La interpretación de este script de PowerShell es:
 1. Agregue una nueva propiedad a la información del usuario denominada *EnabledForSfB*. Estabózcalo en el valor de la propiedad Enabled de la información de Skype Empresarial Online del usuario (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**).
 1. Mostrar la lista de usuarios, pero incluir solo su nombre, si tienen licencia y las dos nuevas propiedades que indican si su buzón está habilitado y si están habilitados para Skype Empresarial Online (**$x | Seleccione DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 

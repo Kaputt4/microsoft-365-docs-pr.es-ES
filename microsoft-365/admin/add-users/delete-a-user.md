@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario y qué hacer con el correo electrónico del usuario y OneDrive contenido y si desea conservar la licencia del producto.
-ms.openlocfilehash: 81dc71c6734340146e1dd13bcd59696eed5be202
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 8fe01b286f59ea43f1e810f4e70422aeda140db803c76f8b7dafe04fa06953b1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815748"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -132,7 +132,7 @@ Reducir el número de licencias es un paso independiente que solo puede realizar
 
 4. En el **panel Quitar licencias,** en Nueva cantidad **,** en el cuadro **Licencias** totales, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 100 licencias y desea quitar cinco de ellas, escriba 95.
 
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 Más adelante, cuando sigas los pasos para agregar otra persona a tu empresa, se te pedirá que compres una licencia al mismo tiempo, con un solo paso.
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo eliminar o restaurar la cuenta Microsoft 365 usuario.
-ms.openlocfilehash: 56d53a718465d369d4e4e0202c4c97939b70e258
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 78566f9e16d7bd10540fdbbf7fcee1691b30c4b6e5e1c6d0ebafafde9e9f957a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824172"
 ---
 # <a name="quick-help-deleted-user"></a>Ayuda rápida: Usuario eliminado
 

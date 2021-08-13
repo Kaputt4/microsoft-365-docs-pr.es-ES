@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo registrarse para Microsoft 365 Empresa Premium (anteriormente denominado Microsoft 365 Empresa).
-ms.openlocfilehash: 998c1ad6a7ed30adb0d6beb9ebb7762dec8a8485
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Obtenga información sobre cómo registrarse para Microsoft 365 Empresa Premium (anteriormente denominada Microsoft 365 Empresa).
+ms.openlocfilehash: c0ff8a92e240c7b00b505fcd6acacff9c802c81ab7a3ee1be9ed62b9bd2e4a12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803535"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>Registrarse para obtener una Microsoft 365 Empresa Premium suscripción
 
@@ -35,7 +35,7 @@ ms.locfileid: "52706491"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Siga estos pasos para registrarse en Microsoft 365 Empresa Premium (anteriormente denominado Microsoft 365 Empresa):
+Siga estos pasos para registrarse en Microsoft 365 Empresa Premium (anteriormente denominada Microsoft 365 Empresa):
 
 1. Para registrarse para Microsoft 365 Empresa Premium, busque en línea y selecciónelo.
 2. Elija  **Para empresas** y, a continuación, Comprar  **ahora**.
@@ -47,4 +47,4 @@ Siga estos pasos para registrarse en Microsoft 365 Empresa Premium (anteriorment
 8. Escriba el número de usuarios, elija un plan de facturación y, a continuación,  **seleccione Siguiente**.
 9.  Escriba la dirección&#39;empresa y, a continuación,  **Siguiente**.
 10. Escriba la información de la tarjeta de crédito y, a  **continuación, haga el pedido**. Después de unos instantes, se creará la cuenta.
-11. En este punto, puede **seleccionar Continuar para** configurar la cuenta o puede iniciar sesión en el centro de administración de Microsoft 365 y completar la configuración más adelante.
+11. En este punto, puede **seleccionar Continuar para** configurar la cuenta o puede iniciar sesión en el Centro de administración de Microsoft 365 y completar la configuración más adelante.

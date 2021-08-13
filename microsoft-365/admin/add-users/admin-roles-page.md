@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los roles de administrador se asignan a funciones empresariales y proporcionan permisos para realizar tareas específicas en el Centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: 20ba46c94f94267df7117d4baf020bbdc21cad7c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 5e1555d022801eb59bf4a4996c12c95e25037efbde9314e1157b06fa793a1ae2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815941"
 ---
 # <a name="get-started-with-the-roles-page"></a>Introducción a la página roles
 
@@ -101,5 +101,5 @@ En el Centro de administración:
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Acerca Microsoft 365 roles de administrador](about-admin-roles.md) (artículo)\
+[Acerca de los roles de administrador en Microsoft 365](about-admin-roles.md) (artículo)\
 [Asignar roles de administrador](assign-admin-roles.md) (artículo)
