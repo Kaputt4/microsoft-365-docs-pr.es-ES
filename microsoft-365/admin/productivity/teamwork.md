@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles del trabajo en equipo: las personas experimenta la puntuación productividad.'
-ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: db948c7a510c1bfe959b9f8aa07544f0ed9faf03909da9ec182ec18abdea5e82
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579163"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822972"
 ---
 # <a name="teamwork--people-experiences"></a>Trabajo en equipo: experiencias de personas
 
@@ -71,7 +71,7 @@ La información principal examina todas las personas que se comunican mediante c
 1. **Cuerpo:** Proporciona más información sobre cómo la comunicación e interacción con el contenido, cuando se realiza dentro de un área de trabajo compartida, puede tener resultados positivos para la productividad de la organización.
 2. **Visualización (estado actual):**
       - Barra horizontal donde la parte azul representa el porcentaje expresado en el encabezado
-      - Momentos la fracción (numerador/denominador) usada para calcular el porcentaje que se muestra en el encabezado
+      - Resalta la fracción (numerador/denominador) usada para calcular el porcentaje que se muestra en el encabezado
         - Numerador: el número de personas de la organización que envían correo electrónico a un buzón de grupo a través de Exchange, O que envían mensajes de canal a través de Teams, O leer y crear contenido en sitios de grupo SharePoint.
         - Denominador: el número de personas de la organización que envían correos electrónicos a través de Exchange, O envían mensajes (mensajes de chat o canal) en Microsoft Teams, O leen y crean contenido en OneDrive o SharePoint, Y tienen acceso a al menos uno de los siguientes servicios: Exchange, Microsoft Teams o SharePoint.
    - El valor de referencia del mismo nivel de la métrica clave también se muestra como un porcentaje.

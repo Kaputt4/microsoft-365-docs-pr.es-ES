@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Veritas Zoom Meetings en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: b67098f3ddb1149927f4b82270c8fa4f14bbe558
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b3c420c3dc117c8b0c8502ec0c9b7943ce8492a825f928cc49c33080c7af7438
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852005"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurar un conector para archivar datos de reuniones de Zoom
 
-Use un conector Veritas en el centro de Microsoft 365 de cumplimiento para importar y archivar datos de reuniones de Zoom a buzones de usuario de su Microsoft 365 organización. Veritas proporciona un [conector de](https://globanet.com/zoom/) reuniones de Zoom que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importar esos elementos a Microsoft 365. El conector convierte el contenido de las reuniones (incluidos los chats, los archivos grabados y los metadatos) de la cuenta de Reuniones de Zoom a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
+Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de reuniones de Zoom a buzones de usuario de su Microsoft 365 organización. Veritas proporciona un [conector de](https://globanet.com/zoom/) reuniones de Zoom que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importar esos elementos a Microsoft 365. El conector convierte el contenido de las reuniones (incluidos los chats, los archivos grabados y los metadatos) de la cuenta de Reuniones de Zoom a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 
 Después de almacenar los datos de reuniones de Zoom en buzones de usuario, puede aplicar Microsoft 365 características de cumplimiento como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de reuniones de Zoom para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -35,7 +35,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 2. Una vez cada 24 horas, los elementos de reunión de Zoom Meetings se copian en el sitio Veritas Merge1. El conector también convierte el contenido de las reuniones a un formato de mensaje de correo electrónico.
 
-3. El conector de reuniones de zoom que crea en el centro de cumplimiento de Microsoft 365, se conecta a Veritas Merge1 todos los días y transfiere los mensajes de reunión a una ubicación de Azure Storage segura en la nube de Microsoft.
+3. El conector de reuniones de zoom que crea en el Centro de cumplimiento de Microsoft 365, se conecta a Veritas Merge1 todos los días y transfiere los mensajes de reunión a una ubicación de Azure Storage segura en la nube de Microsoft.
 
 4. El conector importa los elementos de reunión convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* y la asignación automática de usuarios, tal como se describe en el paso 3. Se crea una nueva subcarpeta en la carpeta Bandeja de entrada denominada Reuniones de zoom en los **buzones** de usuario y los elementos de la reunión se importan a esa carpeta. El conector hace esto mediante el valor de la *propiedad Email.* Cada elemento de reunión contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante de la reunión.
 
@@ -55,11 +55,11 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
   Para obtener instrucciones paso a paso sobre cómo crear las aplicaciones OAuth y JWT, consulte [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
-- El usuario que crea el conector de reuniones de Zoom en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De exportación de importación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la página **Conectores** de datos del centro de Microsoft 365 cumplimiento. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea el conector de reuniones de Zoom en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De exportación de importación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 ## <a name="step-1-set-up-the-zoom-meetings-connector"></a>Paso 1: Configurar el conector de reuniones de zoom
 
-El primer paso es obtener acceso a los conectores de **datos** en el centro Microsoft 365 cumplimiento y crear un conector de reuniones de zoom.
+El primer paso es obtener acceso a los conectores de **datos** en el Centro de cumplimiento de Microsoft 365 y crear un conector de reuniones de zoom.
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic en **Conectores de datos**  >  **Acercar reuniones**.
 
@@ -75,7 +75,7 @@ El primer paso es obtener acceso a los conectores de **datos** en el centro Micr
 
 El segundo paso es configurar el conector de reuniones de Zoom en el sitio Merge1. Para obtener más información acerca de cómo configurar el conector de reuniones de Zoom en el sitio Veritas Merge1, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
-Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asignación de usuario en el asistente para conectores en Microsoft 365 centro de cumplimiento.
+Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asignación de usuario en el asistente para conector en Centro de cumplimiento de Microsoft 365.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
@@ -87,7 +87,7 @@ Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asigna
 
 ## <a name="step-4-monitor-the-zoom-meetings-connector"></a>Paso 4: Supervisar el conector de reuniones de zoom
 
-Después de crear el conector de reuniones de Zoom, puede ver el estado del conector en el centro de Microsoft 365 cumplimiento.
+Después de crear el conector de reuniones de zoom, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **Conectores de datos** en la navegación izquierda.
 

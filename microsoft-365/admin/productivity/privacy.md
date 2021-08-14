@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cómo se protege la privacidad con la puntuación de productividad.
-ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 928dfc8677cc452fb3c6309d6a42e4390a238d52b7dffa0217a4b4507c8d72a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822921"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Controles de privacidad para la puntuación de productividad
 
@@ -53,7 +53,7 @@ Para ver toda la puntuación de productividad, debe ser uno de los siguientes ro
 
 Asigna el lector de informes o el rol lector de informes de resumen de uso a cualquier persona responsable de la administración y adopción de cambios, pero no necesariamente un administrador de TI. Este rol les da acceso a la experiencia completa de la puntuación de productividad en el Centro Microsoft 365 administración.
 
-El rol Lector de informes de resumen de uso tendrá que asignarse a través de cmdlets de PowerShell hasta que se pueda asignar desde el centro de administración de Microsoft 365 más adelante en 2020.
+El rol Lector de informes de resumen de uso tendrá que asignarse a través de cmdlets de PowerShell hasta que se pueda asignar desde el Centro de administración de Microsoft 365 más adelante en 2020.
 
 Para asignar el rol Lector de informes de resumen de uso con PowerShell:
 

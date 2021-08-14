@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
 ms.date: 04/08/2021
-ms.openlocfilehash: 55a34352da6deef2fd48542dd06859e0024e6966
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: MT
+ms.openlocfilehash: 716dc1df065daf324f8f449c5d74c09d2d4a81ce91a0fca50d1ff84f20133a39
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852072"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 
@@ -82,7 +82,7 @@ Antes de que la suscripción llegue a su fecha de expiración, tendrá algunas o
 - **Habilite la facturación periódica para la suscripción.**
   - Si la **Facturación periódica** ya está activada, no tiene que hacer nada. La suscripción se facturará automáticamente y se le cobrará por un año o mes adicional, según su frecuencia de pago actual. Si, por algún motivo, ha desactivado la **Facturación periódica**, siempre puede [volver a activar la Facturación periódica](renew-your-subscription.md).
   - Si ha comprado Aplicaciones de Microsoft 365 para negocios con una tarjeta de prepago, puede [activar la Facturación periódica](renew-your-subscription.md) para su suscripción.
-  - Si es un cliente del programa de Licencias por volumen abierto con una suscripción prepago de un año, póngase en contacto con su asociado para comprar una clave de producto nueva. Recibirá las instrucciones por correo electrónico para activar su clave en el [Centro de servicio de licencias por volumen](https://go.microsoft.com/fwlink/p/?LinkID=282016). Para obtener información sobre cómo encontrar un nuevo asociado o uno con el que ha trabajado anteriormente, vea [Busque su asociado o revendedor](../../admin/manage/find-your-partner-or-reseller.md).
+  - Si es un cliente del programa de licencias por volumen abierto con una suscripción prepago de un año, póngase en contacto con su partner para comprar una clave de producto nueva. Recibirá las instrucciones por correo electrónico para activar su clave en el [Centro de servicio de licencias por volumen](https://go.microsoft.com/fwlink/p/?LinkID=282016). Para obtener información sobre cómo encontrar un nuevo partner o el partner con el que ha trabajado anteriormente, vea [Buscar un asociado o distribuidor](../../admin/manage/find-your-partner-or-reseller.md).
   - Si tiene Aplicaciones de Microsoft 365 para negocios, consulte [Administrar la facturación periódica de su suscripción](renew-your-subscription.md).
 - **Deje que la suscripción expire.**
   - Si está pagando con tarjeta de crédito o factura y no quiere continuar la suscripción, [desactive la Facturación periódica](renew-your-subscription.md). La suscripción terminará en la fecha de expiración y podrá ignorar todas las notificaciones relacionadas que lleguen por correo electrónico.

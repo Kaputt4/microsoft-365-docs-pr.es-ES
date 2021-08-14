@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de las reuniones: las personas tienen una puntuación de productividad.'
-ms.openlocfilehash: 47a29ee208f9c6957a3fcf7d1a4b0c71518c680b
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: e9de4ab128628b4308b1796ac0c83637283bba7f505e348206c36179a8c19e73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823143"
 ---
 # <a name="meetings--people-experiences"></a>Reuniones: experiencias de personas
 
@@ -83,7 +83,7 @@ También le proporcionamos información de soporte técnico para que comprenda c
 
 :::image type="content" source="../../media/videouse-meetings.png" alt-text="Gráfico que muestra información principal para reuniones: experiencias de personas.":::
 
-1. **Encabezado: Momentos** porcentaje de reuniones en línea Microsoft Teams que usan procedimientos recomendados de vídeo considerados en la información y puntuación principales.  
+1. **Encabezado:**  Destaca el porcentaje de reuniones en línea Microsoft Teams que usan procedimientos recomendados de vídeo que se consideran en la información principal y la puntuación.
 2. **Cuerpo:** Proporciona información sobre el valor del uso de estas prácticas durante las reuniones para hacerlas más atractivas. 
 3. **Visualización:** El desglose de la visualización está destinado a representar hasta qué punto las reuniones en línea Microsoft Teams están siguiendo cada uno de los siguientes procedimientos recomendados: 
     - **Vídeo:** la parte coloreada y la fracción representan el porcentaje de reuniones Microsoft Teams en línea que tienen el vídeo activado. La fracción se construye a partir de: 
@@ -121,7 +121,7 @@ También le proporcionamos información de soporte técnico para que comprenda c
 
 :::image type="content" source="../../media/percentparticipation-meetingtypes.jpg" alt-text="Gráfico que muestra el porcentaje de participación en diferentes tipos de reunión.":::
 
-1. **Encabezado:** Momentos el porcentaje de reuniones en línea instantáneas Microsoft Teams durante los 28 días anteriores que tienen menos de 30 minutos de duración.
+1. **Encabezado:** Destaca el porcentaje de reuniones en línea Microsoft Teams durante los 28 días anteriores que tienen menos de 30 minutos de duración.
 2. **Cuerpo:** Proporciona información sobre el valor de usar &quot; Meet ahora en la característica Microsoft Teams &quot; canal.
 3. **Visualización:** Muestra el tipo de reuniones a las que asisten las personas que asisten a cualquier reunión en línea Microsoft Teams reuniones. Cada tipo de reunión se representa como una barra horizontal, donde la parte coloreada y la fracción representan lo siguiente:
     - **Llamadas instantáneas 1:1**:

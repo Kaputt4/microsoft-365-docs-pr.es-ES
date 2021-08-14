@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtén información sobre cómo mover usuarios entre suscripciones.
 ms.date: 07/01/2020
-ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 014112043582c19d6b8461c8205e03516e68e814bbc2fd62e72aa32772573c01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852084"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -33,7 +33,7 @@ Si tiene más de una suscripción, tiene usuarios con una licencia para una susc
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -57,7 +57,7 @@ Debe ser un administrador global, de licencia o de usuarios para asignar licenci
 
 2. Seleccione los círculos junto a los nombres de los usuarios para los que desea reemplazar las licencias existentes.
 
-3. En la parte superior, seleccione **Administrar licencias de productos**.
+3. En la parte superior, seleccione **Administrar licencias de producto**.
 
 4. En el **panel Administrar licencias de productos,** seleccione **Reemplazar**  y seleccione las licencias que desea asignar a los usuarios.
 

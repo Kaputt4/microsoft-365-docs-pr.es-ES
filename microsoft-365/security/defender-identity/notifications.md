@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 0edae8f92165841e94b8079f32d778bee3c1aeab
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ef5bc9561f79bf1629522a610632d5eb349ab892347843e73701a2efa2ef65c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810923"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Notificaciones de Defender for Identity en Microsoft 365 Defender
 
@@ -94,6 +94,6 @@ Defender for Identity puede notificarte cuando detecta actividades sospechosas e
 
     ![Servicio de Syslog configurado](../../media/defender-identity/syslog-configured.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

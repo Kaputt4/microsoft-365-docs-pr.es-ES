@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: En este artículo, encontrará puntos de conexión accesibles para los clientes que usan Office 365 planes GCC high de Estados Unidos.
 hideEdit: true
-ms.openlocfilehash: 2febfec744dfb527dd99b205f3b2b78f5b9af4e7
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 52027e4c9b503edfb5b051be96c5f238e731c825626b70ee66a2de53f7759dbd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813056"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Puntos de conexión de Office 365 U.S. Government GCC High
 

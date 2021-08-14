@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la movilidad: las personas experimenta la puntuación productividad.'
-ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d3ea6e4803a1aa5d12084d626b60c058dd578832d8707e8269419683a0ed223d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823056"
 ---
 # <a name="mobility--people-experiences"></a>Movilidad: experiencias de personas
 
@@ -142,7 +142,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 :::image type="content" source="../../media/remotework-trend.png" alt-text="Gráfico que muestra cuántas personas trabajan de forma remota, local o ambas.":::
 
 1. **Encabezado:** Muestra el porcentaje de personas que trabajan solo desde casa o fuera de la red de su empresa.
-2. **Cuerpo:** Momentos la importancia de facilitar el trabajo remoto para las personas sin acceso a las oficinas físicas de su organización.
+2. **Cuerpo:** Destaca la importancia de facilitar el trabajo remoto para las personas sin acceso a las oficinas físicas de su organización.
 3. **Visualización:** Muestra la línea de tendencia para el porcentaje diario de personas que solo trabajan de forma remota, así como el porcentaje diario de personas que también trabajan en el sitio. Los usuarios se consideran in situ si realizan al menos tres horas de actividad en Aplicaciones Microsoft 365 en un día.
 
 ## <a name="related-content"></a>Contenido relacionado

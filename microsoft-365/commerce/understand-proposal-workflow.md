@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 5dece5ccc0cc26b157ae0cc33ec9bb1fe44c44b3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 10d4d531acc0e4a323cde6d1034c626419a58a4b06b40be76c0d292c7679ac28
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852036"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprender el flujo de trabajo de propuestas
 
@@ -100,7 +100,7 @@ Después de iniciar sesión, lo primero que hace es revisar la información de s
 
 La **sección Su organización** muestra la cuenta de facturación asociada a ella. La información de la cuenta de facturación se extrae de una cuenta de facturación existente o la crea el representante de Microsoft. Si su organización es una filial de  otra organización, también verá una sección Organización para clientes potenciales con el nombre y la dirección de esa organización.
 
-Si es la primera vez que su organización establece una relación comercial con Microsoft y aún  no  ha firmado un MCA, si la información de Su organización o organización de clientes potenciales es incorrecta, póngase en contacto con el representante para realizar cambios por usted. Después de aceptar un MCA, puede revisar y cambiar la dirección [](https://go.microsoft.com/fwlink/p/?linkid=2084771) y la información de contacto de su organización en la página Cuentas de facturación del Centro de administración de Microsoft 365 administración. Si cambia el nombre de la organización, abra una solicitud de servicio para que se actualice. [Obtenga información sobre cómo abrir una solicitud de servicio](../business-video/get-help-support.md)
+Si es la primera vez que su organización establece una relación comercial con Microsoft y aún  no  ha firmado un MCA, si la información de Su organización o organización de clientes potenciales es incorrecta, póngase en contacto con el representante para realizar cambios por usted. Después de aceptar un MCA, puede revisar y cambiar la dirección y la información de contacto de su organización en la página [Cuentas](https://go.microsoft.com/fwlink/p/?linkid=2084771) de facturación en el Centro de administración de Microsoft 365. Si cambia el nombre de la organización, abra una solicitud de servicio para que se actualice. [Obtenga información sobre cómo abrir una solicitud de servicio](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>Su información
 
@@ -118,11 +118,11 @@ Si desea realizar cualquier cambio en la propuesta después de la revisión, pó
 
 La propuesta contiene la siguiente información:
 
-| Sección | Descripción |
+| Sección | Description |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | La fecha en que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para comunicarles que aún está interesado en la propuesta. |
-| Moneda | Moneda usada para calcular el costo de los elementos de la propuesta. |
+| Divisa | Moneda usada para calcular el costo de los elementos de la propuesta. |
 | Preparado para | Nombre de cuenta de facturación, dirección, dirección de correo electrónico de contacto y número de teléfono de la persona que solicitó la propuesta. |
 | Preparado por | La dirección de correo electrónico del representante de Microsoft que preparó la propuesta. |
 | Resumen | Muestra el subtotal asociado a la propuesta. Si es necesario, también mostrará la tasa de divisas (FX) que se usa para calcular los costos. |

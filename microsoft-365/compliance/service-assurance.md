@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft protege los datos de los clientes y sepa cómo puede cumplir con ISO, HIPAA, FINRA y FedRAMP cuando use Office 365.
-ms.openlocfilehash: 2e473ad4a17ac5c229563ee3286942e90bfc674f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6d0c80389364279425e8539fd9c065d34776692e9e4d189cb2105e0e078027ef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297241"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841602"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el Centro de seguridad y cumplimiento
 
@@ -97,7 +97,7 @@ Según la configuración específica, las opciones incluidas en la vista pueden 
 
 [Contactar con el soporte técnico para productos empresariales: ayuda para administradores](../business-video/get-help-support.md)
   
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>preguntas más frecuentes
 <a name="addother"> </a>
 
  **¿Por qué se produce un error que dice que los documentos de la garantía de servicio están dañados?**

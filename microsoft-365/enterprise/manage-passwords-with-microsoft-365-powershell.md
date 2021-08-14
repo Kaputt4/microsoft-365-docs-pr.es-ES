@@ -17,18 +17,18 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Obtenga información sobre cómo usar PowerShell para administrar contraseñas.
-ms.openlocfilehash: ac0a47edb4ccbed93c1a3b88df083d463784b4a4
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d3f5ebfb7f7171cd45cf5ad1749b7bbb807068f812ee2a37f78ead7f6e8660c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073217"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858752"
 ---
 # <a name="manage-passwords-with-powershell"></a>Administrar contraseñas con PowerShell
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede usar PowerShell para Microsoft 365 como alternativa al Centro de administración de Microsoft 365 para administrar contraseñas en Microsoft 365. 
+Puede usar PowerShell para Microsoft 365 como alternativa a la Centro de administración de Microsoft 365 para administrar contraseñas en Microsoft 365. 
 
 Cuando un bloque de comandos de este artículo requiera que especifique valores de variables, siga estos pasos.
 

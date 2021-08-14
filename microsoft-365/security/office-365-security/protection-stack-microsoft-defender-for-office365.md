@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Siga la ruta de un mensaje entrante a través de la pila de filtrado de amenazas en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1113d04cabdabe2925242cb18dde78daf9ef6e2c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: ea7fc497f42bff24bbf9b5cb69c03144f64503eb381e530135263497486bcb24
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805348"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 
