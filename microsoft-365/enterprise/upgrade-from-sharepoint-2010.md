@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Busque información y recursos para actualizar desde SharePoint 2010 y Sharepoint Server 2010. La compatibilidad con ambos finaliza el 13 de abril de 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4fa82fb0e382a244cdc126609ac62d17280b9702
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 67b8174aa23027b64132cc4676e2e7bfb5675cd1deb4684d18945d58b5cf63ad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848159"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
@@ -181,7 +181,7 @@ Si una granja de servidores SharePoint servidor híbrido es su objetivo de migra
 
 Asegúrese de familiarizarse con los tipos de híbridos existentes y cómo configurar la conexión entre la granja de servidores SharePoint local y la Microsoft 365 suscripción.
 
-|Opción|Descripción|
+|Opción|Description|
 |---|---|
 |[Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home).|[La asistencia de FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) para la migración es limitada.<br/><br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).|
 |Los ingenieros de soporte técnico de Microsoft y los empleados del centro de datos no tienen acceso de administrador sin restricciones a su suscripción.|Puede haber costos adicionales si es necesario actualizar la infraestructura de hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria.|

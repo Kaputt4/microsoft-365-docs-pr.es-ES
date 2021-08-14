@@ -1,5 +1,5 @@
 ---
-title: Administrar la detección de temas en Temas de Microsoft Viva
+title: Administrar la detección de temas en Temas Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,21 +9,21 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Obtenga información sobre cómo administrar la detección de temas en Temas de Microsoft Viva.
-ms.openlocfilehash: 53e304dc69ccf2ca6fe01d29f0997c539406b0fe
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+description: Obtenga información sobre cómo administrar la detección de temas en Temas Microsoft Viva.
+ms.openlocfilehash: 39ecd7ab79267d560b614e981f1ef7ad14fd807db94c64a9483b1603d0e2733a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870114"
 ---
-# <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Administrar la detección de temas en Temas de Microsoft Viva
+# <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Administrar la detección de temas en Temas Microsoft Viva
 
-Puede administrar la configuración de detección de temas [en el centro Microsoft 365 administración.](https://admin.microsoft.com) Debe ser un administrador global o SharePoint administrador para realizar estas tareas.
+Puede administrar la configuración de detección de temas [en el Centro de administración de Microsoft 365](https://admin.microsoft.com). Debe ser un administrador global o SharePoint administrador para realizar estas tareas.
 
 ## <a name="to-access-topics-management-settings"></a>Para acceder a la configuración de administración de temas:
 
-1. En el Centro Microsoft 365 administración, haga clic **en Configuración** y, a continuación, en Configuración de **la organización.**
+1. En la Centro de administración de Microsoft 365, haga clic **en Configuración** y, a continuación, en Configuración de **la organización**.
 2. En la **pestaña Servicios,** haga clic en **Experiencias del tema**.
 
     ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
@@ -47,7 +47,7 @@ Si añade sitios utilizando el selector de sitios, éstos se añaden a la lista 
 Para elegir sitios para la detección de temas
 
 1. En la pestaña **Descubrimiento de temas** en **Seleccionar fuentes de temas de SharePoint**, seleccione **Editar**.
-2. En la **página Seleccionar SharePoint** de temas, seleccione qué sitios SharePoint se rastrearán como orígenes de los temas durante la detección. Esto incluye:
+2. En la **página Seleccionar SharePoint** de temas, seleccione qué sitios SharePoint se rastrearán como orígenes de los temas durante la detección. Esto incluye lo siguiente:
     - **Todos los sitios:** todos SharePoint en el espacio empresarial. Esto captura los sitios actuales y futuros.
     - **Todos, excepto los sitios seleccionados:** escriba los nombres de los sitios que desea excluir.  También puede cargar una lista de sitios que desea excluir de la detección. Los sitios creados en el futuro se incluirán como fuentes para el descubrimiento de temas. 
     - **Solo sitios seleccionados:** escriba los nombres de los sitios que desea incluir. También puede cargar una lista de sitios. Los sitios creados en el futuro no se incluirán como fuentes para el descubrimiento de temas.

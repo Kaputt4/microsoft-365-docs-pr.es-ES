@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: b9696f26dd8f68ba291eab50e11a4cb6dd55ab7a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3e6fcb5f91a90bc062e12a38cf58d5666ec868ab35aa448250d2da8eb3b1b6a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226916"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820359"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de clave doble para Microsoft 365
 
@@ -97,7 +97,7 @@ Seguirá estos pasos generales para configurar el cifrado de clave doble para su
 1. [Clonar el repositorio de GitHub clave doble](#clone-the-dke-github-repository)
 1. [Modificar la configuración de la aplicación](#modify-application-settings)
 1. [Generar claves de prueba](#generate-test-keys)
-1. [Crear el proyecto](#build-the-project)
+1. [Compile el proyecto.](#build-the-project)
 1. [Implementar el servicio DKE y publicar el almacén de claves](#deploy-the-dke-service-and-publish-the-key-store)
 1. [Validar la implementación](#validate-your-deployment)
 1. [Registrar el almacén de claves](#register-your-key-store)
@@ -398,7 +398,7 @@ Para publicar el almacén de claves, creará una instancia de Azure App Service 
 
 #### <a name="publish-via-zipdeployui"></a>Publicar a través de ZipDeployUI
 
-1. Vaya a `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
+1. Ve a `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
 
    Por ejemplo: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 

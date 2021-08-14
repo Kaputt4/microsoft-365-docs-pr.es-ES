@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear cargas personalizadas para el aprendizaje de simulación de ataques en Microsoft Defender para Office 365.
 ms.technology: mdo
-ms.openlocfilehash: ac7963b71c466e8dfdc513a2563776cd4e10af95
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ecd7b539aa22d2935f96860769b30751022d89ea43151a94222caeec9b309928
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878765"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810383"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Crear una carga personalizada para la simulación de ataques formación
 
@@ -32,6 +32,9 @@ El primer paso del asistente le hará seleccionar un tipo de carga. **Actualment
 A continuación, seleccione una técnica asociada. Vea más detalles sobre técnicas en [Seleccionar una técnica de ingeniería social](attack-simulation-training.md#selecting-a-social-engineering-technique).
 
 En el siguiente paso, asigne un nombre a la carga. Opcionalmente, puede darle una descripción.
+
+> [!NOTE]
+> Ciertas marcas comerciales, logotipos, símbolos, insignias y otros identificadores de origen reciben una protección más alta en virtud de leyes y leyes locales, estatales y federales. El uso no autorizado de estos indicadores puede someter a los usuarios a sanciones, incluidas las multas penales. Aunque no es una lista extensa, esto incluye los precintos presidencial, vicepresidenta y congresional, la CIA, el FBI, la Seguridad Social, Medicare y Medicaid, el Servicio de Ingresos Internos de estados Unidos y los Juegos Olímpicos. Más allá de estas categorías de marcas comerciales, el uso y modificación de cualquier marca comercial de terceros conlleva una cantidad inherente de riesgo. Usar sus propias marcas comerciales y logotipos en una carga sería menos arriesgado, especialmente cuando su organización permite el uso. Si tiene más preguntas sobre lo que es o no es apropiado usar al crear o configurar una carga, consulte con sus asesores legales.
 
 ## <a name="configure-payload"></a>Configurar carga
 

@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo asignar licencias Microsoft 365 a cuentas de usuario, ya sea individualmente o en función de la pertenencia a grupos.
-ms.openlocfilehash: 2fe1e2f959fae8b0bc82a7dcd4f65f33b21c368a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e2550f7532c332de3a6d2939a2249788aa04bf1122d00359f860bf8cae349b6f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855220"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Asignar Microsoft 365 a cuentas de usuario
 
@@ -67,7 +67,7 @@ Para obtener más información, consulte [group-based licensing in Azure AD](/az
 
 Con el conjunto adecuado de cuentas de usuario a las que se han asignado licencias, ya está listo para:
 
-- [Implementar la seguridad](../security/defender-365-security/security-roadmap.md)
+- [Implementar la seguridad](../security/office-365-security/security-roadmap.md)
 - [Implementar software cliente, como Aplicaciones Microsoft 365](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Configurar la administración de dispositivos](device-management-roadmap-microsoft-365.md)
 - [Configurar servicios y aplicaciones](configure-services-and-applications.md)

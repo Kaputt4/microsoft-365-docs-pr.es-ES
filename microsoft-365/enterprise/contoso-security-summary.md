@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso usa las características de seguridad de Microsoft 365 para empresas.
-ms.openlocfilehash: 59eed0b7e08aae8397bb037e6d1b515bf6aa0ba8
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 8e207ac55b7d7280adfeb356cef20dec1ada0da89298945f1318bbf656a2310f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855208"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 seguridad empresarial para Contoso Corporation
 
@@ -52,7 +52,7 @@ Contoso siguió estos pasos para preparar su seguridad para su implementación d
 
 Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para los requisitos de implementación empresarial, los administradores de seguridad de Contoso y su departamento de TI implementaron muchas características y funcionalidades de seguridad, como se describe en las secciones siguientes.
 
-## <a name="identity-and-access-management"></a>Administración de identidad y acceso 
+## <a name="identity-and-access-management"></a>Administración de acceso e identidad   
 
 - Cuentas de administrador global dedicadas con MFA y PIM
 
@@ -77,11 +77,11 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - Windows Hello para empresas
 
-  Contoso [implementó Windows Hello para](/windows/security/identity-protection/hello-for-business/hello-identity-verification) empresas para eliminar finalmente la necesidad de contraseñas mediante una autenticación segura en dos fases en equipos y dispositivos móviles que ejecutan Windows 10 Enterprise.
+  Contoso [implementó Windows Hello para](/windows/security/identity-protection/hello-for-business/hello-identity-verification) empresas para eliminar finalmente la necesidad de contraseñas a través de una autenticación segura en dos fases en equipos y dispositivos móviles que ejecutan Windows 10 Enterprise.
 
 - Credential Guard de Windows Defender
 
-  Para bloquear los ataques dirigidos y el malware que se ejecuta en el sistema operativo con privilegios administrativos, Contoso ha Credential Guard de Windows Defender [a](/windows/security/identity-protection/credential-guard/credential-guard) través de la directiva de grupo de AD DS.
+  Para bloquear ataques dirigidos y malware que se ejecutan en el sistema operativo con privilegios administrativos, Contoso ha habilitado [Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) a través de la directiva de grupo de AD DS.
 
 ## <a name="threat-protection"></a>Protección contra amenazas
 

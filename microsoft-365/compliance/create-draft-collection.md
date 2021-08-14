@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Una colección borrador es una búsqueda de exhibición de documentos electrónicos de orígenes de datos custodiales y no custodiales en un caso Advanced eDiscovery que devuelve una estimación de búsqueda que coincide con la consulta de búsqueda de la colección. Puede revisar las estadísticas de búsqueda, obtener una vista previa de un muestreo de elementos y revisar y volver a ejecutar la colección antes de confirmar los resultados en un conjunto de revisión.
-ms.openlocfilehash: 18f018a5e00f355c3f320a963135e76ecc51f086
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 42497a8f5f8d5d8e5ecf58ff8f486bffa578e6f0ca9375ab1924d2f2100b5729
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820441"
 ---
 # <a name="create-a-draft-collection-in-advanced-ediscovery"></a>Crear una colección borrador en Advanced eDiscovery
 
@@ -39,7 +39,7 @@ Después de identificar a los custodios y a los orígenes de datos que no son cu
 
 ## <a name="create-a-draft-collection"></a>Crear una colección de borrador
 
-1. En el Microsoft 365 de cumplimiento, abra el Advanced eDiscovery y, a continuación, seleccione la **pestaña Colecciones.**
+1. En el Centro de cumplimiento de Microsoft 365, abra el Advanced eDiscovery y, a continuación, seleccione la **pestaña Colecciones.**
 
 2. En la **página Colecciones,** seleccione **Nueva colección** Colección  >  **estándar**.
 

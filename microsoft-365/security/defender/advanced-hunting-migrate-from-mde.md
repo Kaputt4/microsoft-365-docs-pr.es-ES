@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: ba6f84f9f08d0635dab6ac65eaa697b8e0e73df7
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 618ead20e8ce9fb3772fb86bb5f4687cd2026552342f8e8cdd975423cfda051d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470693"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810464"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrar consultas de búsqueda avanzada desde Microsoft Defender para endpoint
 
@@ -43,12 +43,12 @@ Mueva los flujos de trabajo de búsqueda avanzados de Microsoft Defender para en
 - Microsoft Defender for Identity
 
 >[!NOTE]
->La mayoría de los clientes de Microsoft Defender para [endpoints pueden usar Microsoft 365 Defender sin licencias adicionales.](prerequisites.md#licensing-requirements) Para iniciar la transición de los flujos de trabajo de búsqueda avanzados desde Defender para endpoint, [active Microsoft 365 Defender](m365d-enable.md).
+>La mayoría de los clientes de Microsoft Defender para endpoint [pueden usar Microsoft 365 Defender sin licencias adicionales.](prerequisites.md#licensing-requirements) Para iniciar la transición de los flujos de trabajo de búsqueda avanzados desde Defender para endpoint, [active Microsoft 365 Defender](m365d-enable.md).
 
 Puede realizar la transición sin afectar a los flujos de trabajo existentes de Defender for Endpoint. Las consultas guardadas permanecen intactas y las reglas de detección personalizadas siguen funcionando y generando alertas. Sin embargo, estarán visibles en Microsoft 365 Defender. 
 
-## <a name="schema-tables-in-microsoft-365-defender-only"></a>Tablas de esquema solo Microsoft 365 Defender
-El [Microsoft 365 de búsqueda](advanced-hunting-schema-tables.md) avanzada de Defender proporciona tablas adicionales que contienen datos de varias Microsoft 365 de seguridad. Las tablas siguientes solo están disponibles en Microsoft 365 Defender:
+## <a name="schema-tables-in-microsoft-365-defender-only"></a>Tablas de esquema en Microsoft 365 Defender solo
+El [Microsoft 365 Defender de búsqueda avanzada proporciona](advanced-hunting-schema-tables.md) tablas adicionales que contienen datos de varias Microsoft 365 de seguridad. Las tablas siguientes solo están disponibles en Microsoft 365 Defender:
 
 | Nombre de tabla | Descripción |
 |------------|-------------|
@@ -127,12 +127,12 @@ Una vez que edite una regla defender para extremo para que consulta las tablas d
 Alertas generadas por la regla migrada:
 
 - Ya no están visibles en el portal de Defender for Endpoint (Centro de seguridad de Microsoft Defender)
-- Deje de entregarse en siem o genere notificaciones por correo electrónico. Para evitar este cambio, configure las notificaciones a través de Microsoft 365 Defender para obtener las alertas. Puede usar la API de [Microsoft 365 Defender para](api-incident.md) recibir notificaciones de alertas de detección de clientes o incidentes relacionados.
+- Deje de entregarse en siem o genere notificaciones por correo electrónico. Para evitar este cambio, configure las notificaciones a través Microsoft 365 Defender para obtener las alertas. Puede usar la API Microsoft 365 Defender [para](api-incident.md) recibir notificaciones de alertas de detección de clientes o incidentes relacionados.
 - Microsoft Defender no suprimirá las reglas de supresión de puntos de conexión. Para evitar que se generen alertas para determinados usuarios, dispositivos o buzones de correo, modifique las consultas correspondientes para excluir esas entidades explícitamente.
 
 Si edita una regla de esta manera, se le pedirá confirmación antes de aplicar dichos cambios.
 
-Las nuevas alertas generadas por reglas de detección personalizadas en Microsoft 365 Portal de Defender se muestran en una página de alerta que proporciona la siguiente información:
+Las nuevas alertas generadas por reglas de detección personalizadas en Microsoft 365 Defender portal se muestran en una página de alerta que proporciona la siguiente información:
 
 - Título y descripción de la alerta 
 - Activos afectados
@@ -145,7 +145,7 @@ Las nuevas alertas generadas por reglas de detección personalizadas en Microsof
 
 ## <a name="write-queries-without-devicealertevents"></a>Escribir consultas sin DeviceAlertEvents
 
-En el esquema Microsoft 365 Defender, las tablas y se proporcionan para dar cabida al conjunto diverso de información que acompaña a las alertas `AlertInfo` `AlertEvidence` de varios orígenes. 
+En el Microsoft 365 Defender, las tablas y se proporcionan para dar cabida al conjunto diverso de información que acompaña a las `AlertInfo` `AlertEvidence` alertas de varios orígenes. 
 
 Para obtener la misma información de alerta que usó para obtener de la tabla en el esquema de Microsoft Defender para endpoint, filtre la tabla y, a continuación, una cada identificador único con la tabla, que proporciona información detallada sobre el evento y la `DeviceAlertEvents` `AlertInfo` `ServiceSource` `AlertEvidence` entidad. 
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 67295529cdb7b8a3e93e663f2a8a28d27a8f6737
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8bc631af17c270f3502e1fa8d36dce07575acdc4d4dcb52d87224931dc6111f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810479"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -37,7 +37,7 @@ ms.locfileid: "51935850"
 
 La `FileProfile()` función es una función de enriquecimiento en búsqueda [avanzada](advanced-hunting-overview.md) que agrega los siguientes datos a los archivos encontrados por la consulta.
 
-| Column | Tipo de datos | Descripción |
+| Columna | Tipo de datos | Descripción |
 |------------|---------------|-------------|
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | cadena | SHA-256 del archivo al que se aplicó la acción grabada |
@@ -49,10 +49,10 @@ La `FileProfile()` función es una función de enriquecimiento en búsqueda [ava
 | `Signer` | cadena | Información sobre el firmante del archivo |
 | `Issuer` | cadena | Información sobre la entidad emisora de certificados (CA) |
 | `SignerHash` | cadena | Valor hash único que identifica el firmante |
-| `IsCertificateValid` | boolean | Si el certificado usado para firmar el archivo es válido |
-| `IsRootSignerMicrosoft` | boolean | Indica si el firmante del certificado raíz es Microsoft |
+| `IsCertificateValid` | booleano | Si el certificado usado para firmar el archivo es válido |
+| `IsRootSignerMicrosoft` | booleano | Indica si el firmante del certificado raíz es Microsoft |
 | `SignatureState` | cadena | Estado de la firma del archivo: SignedValid : el archivo está firmado con una firma válida, SignedInvalid - el archivo está firmado pero el certificado no es válido, No firmado - el archivo no está firmado, Desconocido - la información sobre el archivo no se puede recuperar.
-| `IsExecutable` | boolean | Si el archivo es un archivo ejecutable portátil (PE) |
+| `IsExecutable` | booleano | Si el archivo es un archivo ejecutable portátil (PE) |
 | `ThreatName` | cadena | Nombre de detección de cualquier malware u otras amenazas encontradas |
 | `Publisher` | cadena | Nombre de la organización que publicó el archivo |
 | `SoftwareName` | cadena | Nombre del producto de software |

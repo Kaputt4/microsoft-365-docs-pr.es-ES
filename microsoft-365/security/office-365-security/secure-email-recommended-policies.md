@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 755dbd892d5e772a2bfda3b8e6e959027b74815a2e69ab27659f7f5e4a29bf26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805253"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -70,9 +70,9 @@ Esta directiva impide que los clientes de ActiveSync omitan otras directivas de 
 
 También puede usar directivas de autenticación para [deshabilitar la autenticación básica,](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)lo que fuerza a todas las solicitudes de acceso de cliente a usar la autenticación moderna.
 
-## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Limitar el acceso a Exchange Online desde Outlook en la web
+## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Limitar el acceso a Exchange Online desde Outlook en la Web
 
-Puede restringir la capacidad de los usuarios para descargar datos adjuntos Outlook en la web en dispositivos umnanaged. Los usuarios de estos dispositivos pueden ver y editar estos archivos mediante Office Online sin tener que filtrar y almacenar los archivos en el dispositivo. También puedes impedir que los usuarios vean datos adjuntos en un dispositivo no administrado.
+Puede restringir la capacidad de los usuarios para descargar datos adjuntos Outlook en la Web dispositivos umnanaged. Los usuarios de estos dispositivos pueden ver y editar estos archivos mediante Office Online sin tener que filtrar y almacenar los archivos en el dispositivo. También puedes impedir que los usuarios vean datos adjuntos en un dispositivo no administrado.
 
 Estos son los pasos:
 
