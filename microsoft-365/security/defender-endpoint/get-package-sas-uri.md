@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0828d19f875767ec2285057824c931e3a67477641cdc923bac0a2513e4325ac8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7eb71d0547c0ee242e02697e949bd39c3bdb2f3012adeaf159ca90f953268aa
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800335"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523638"
 ---
 # <a name="get-package-sas-uri-api"></a>Obtener api de URI de SAS del paquete
 
@@ -38,7 +38,9 @@ ms.locfileid: "53800335"
 ## <a name="api-description"></a>Descripción de la API
 Obtener un URI que permite descargar un [paquete de investigación](collect-investigation-package.md).
 
-
+> [!IMPORTANT]
+>
+> - Estas acciones solo están disponibles para dispositivos Windows 10 versión 1703 o posterior.
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Access the Microsoft Defender for Endpoint API](apis-intro.md)
@@ -66,7 +68,7 @@ Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|String|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 

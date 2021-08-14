@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 08/04/2021
-ms.openlocfilehash: d90ae4b8281015c675535f483b23e5c027e6918abc57627e8da3440db9b03064
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.date: 08/05/2021
+ms.openlocfilehash: 80dba315e8293e6a88e8cca7db3bbe12a30226ffb4b6daa4b9cad2343ac9e4a7
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800095"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523650"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -82,18 +82,19 @@ Todas nuestras actualizaciones contienen
 - mejoras de integración (cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
-<summary> Julio-2021 (Plataforma: 4.18.2107.4 | Motor: 1.1.18400.x)</summary>
+<summary> Julio-2021 (Plataforma: 4.18.2107.4 | Motor: 1.1.18400.4)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **x.xxx.xx.x**  
-&ensp;Publicado: **fecha, 2021**  
+&ensp;Versión de actualización de inteligencia de seguridad: **1.345.13.0**  
+&ensp;Publicado: **5 de agosto de 2021**  
 &ensp;Plataforma: **4.18.2107.4**  
-&ensp;Motor: **1.1.18400.x**  
+&ensp;Motor: **1.1.18400.4**  
 &ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**
     
 ### <a name="whats-new"></a>Novedades
 - Compatibilidad con el control de dispositivos agregado para Windows dispositivos portátiles
 - La protección de aplicaciones potencialmente no deseadas (PUA) está activada de forma predeterminada para los consumidores (consulta Las aplicaciones potencialmente no deseadas [se bloquearán de forma predeterminada)](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
 - Los exámenes programados para sistemas administrados de objetos de directiva de grupo se cumplirán con el tiempo de examen configurado por el usuario 
+- Mejoras en el motor de supervisión de comportamiento
 
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos  
@@ -513,6 +514,20 @@ Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Wind
 Para obtener más información, vea [Actualización de Microsoft Defender para obtener Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2108.01</summary>
+
+&ensp;Versión del paquete: **1.1.2108.01**    
+&ensp;Versión de la **plataforma: 4.18.2107.4**   
+&ensp;Versión del motor: **1.1.18300.4**  
+&ensp;Versión de firma: **1.343.2244.0**    
+    
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno  
+<br/>
+</details><details>
 <summary>1.1.2107.02</summary>
 
 &ensp;Versión del paquete: **1.1.2107.02**    

@@ -18,17 +18,16 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dedab8ba3acda9b42e14fc7acae0b321bc26a45179cbc941839d93b33bb9bf7a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09ec44a90c93272da814fd1deba49c364cd8776e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811166"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243951"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurar Microsoft Defender para endpoint en Linux para la detección de proxy estático
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -49,17 +48,17 @@ Durante la instalación, la `HTTPS_PROXY` variable de entorno debe pasarse al ad
   ```
 
 - La `HTTPS_PROXY` variable se define en la configuración global del administrador de paquetes. Por ejemplo, en Ubuntu 18.04, puede agregar la siguiente línea a `/etc/apt/apt.conf.d/proxy.conf` :
-  
+
   ```bash
   Acquire::https::Proxy "http://proxy.server:port/";
   ```
 
   > [!CAUTION]
   > Tenga en cuenta que los dos métodos anteriores podrían definir el proxy que se usará para otras aplicaciones del sistema. Use este método con precaución o solo si está pensado para ser una configuración global general.
-  
-- La `HTTPS_PROXY` variable se antepone a los comandos de instalación o desinstalación. Por ejemplo, con el administrador de paquetes de APT, anteponer la variable de la siguiente manera al instalar Microsoft Defender para endpoint: 
 
-  ```bash  
+- La `HTTPS_PROXY` variable se antepone a los comandos de instalación o desinstalación. Por ejemplo, con el administrador de paquetes de APT, anteponer la variable de la siguiente manera al instalar Microsoft Defender para endpoint:
+
+  ```bash
   HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
   ```
 
@@ -71,22 +70,20 @@ La variable de entorno puede definirse de forma `HTTPS_PROXY` similar durante la
 Tenga en cuenta que la instalación y desinstalación no necesariamente producirán errores si se requiere un proxy pero no está configurado. Sin embargo, la telemetría no se envía y la operación podría tardar mucho más tiempo debido a los tiempos de espera de la red.
 
 ## <a name="post-installation-configuration"></a>Configuración posterior a la instalación
-  
-Después de la instalación, `HTTPS_PROXY` la variable de entorno debe definirse en el archivo de servicio Defender for Endpoint. Para ello, abra `/lib/systemd/system/mdatp.service` en un editor de texto mientras se ejecuta como usuario raíz. A continuación, puede propagar la variable al servicio de dos maneras:
 
-> [!NOTE]
-> En las distribuciones De CentOS o RedHat Linux, la ubicación del archivo de servicio de extremo es `/usr/lib/systemd/system/mdatp.service` .
+Después de la instalación, `HTTPS_PROXY` la variable de entorno debe definirse en el archivo de servicio Defender for Endpoint. Para ello, ejecute `sudo systemctl edit --full mdatp.service` .
+A continuación, puede propagar la variable al servicio de dos maneras:
 
 - Descomprima la línea `#Environment="HTTPS_PROXY=http://address:port"` y especifica la dirección de proxy estática.
 
 - Agregar una línea `EnvironmentFile=/path/to/env/file` . Esta ruta de acceso puede apuntar a o a un archivo personalizado, cualquiera de los `/etc/environment` cuales necesita agregar la siguiente línea:
-  
+
   ```bash
   HTTPS_PROXY="http://proxy.server:port/"
   ```
 
-Después de modificar el `mdatp.service` archivo, guárdelo y cierre. Reinicie el servicio para que se puedan aplicar los cambios. En Ubuntu, esto implica dos comandos:  
+Después de modificar , guarde el archivo y reinicie el servicio para que los cambios se puedan `mdatp.service` aplicar mediante los siguientes comandos:
 
 ```bash
-systemctl daemon-reload; systemctl restart mdatp
+sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```

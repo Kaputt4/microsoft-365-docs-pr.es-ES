@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de cumplimiento de Microsoft 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 3bbd7a59ed0f969293aff738872662afa9738b649876092e17f4d09712d5ebed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a01b981bb8562b59c29c351468060aaaecaed2501b835e7d230054665a7e7e1e
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807629"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834792"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
@@ -41,10 +41,12 @@ Puede usar la característica Búsqueda de contenido para buscar y eliminar un m
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para crear y ejecutar una búsqueda de contenido, tiene que ser un miembro del grupo de roles **Administrador de eDiscovery** o que se le asigne el rol **Búsqueda de cumplimiento** en el Centro de seguridad y cumplimiento. Para eliminar mensajes, debe ser un miembro del grupo de roles **Administración de la organización** o que se le asigne el rol **Buscar y purgar** en el Centro de seguridad y cumplimiento. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](assign-ediscovery-permissions.md).
+- El flujo de trabajo de búsqueda y purga descrito en este artículo no elimina los mensajes de chat ni ningún otro contenido de Microsoft Teams. Si la búsqueda de contenido que se crea en el paso 2 devuelve elementos de Microsoft Teams, esos elementos no se eliminarán cuando se purguen los elementos en el paso 3.
+
+- Para crear y ejecutar una búsqueda de contenido, tiene que ser un miembro del grupo de roles **Administrador de eDiscovery** o que se le asigne el rol **Búsqueda de cumplimiento** en el Centro de cumplimiento de Microsoft 365. Para eliminar mensajes, debe ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol **Buscar y purgar** en el Centro de cumplimiento. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
 
   > [!NOTE]
-  > El rol **Administración de la organización** existe en Exchange Online y en el Centro de seguridad y cumplimiento. Se trata de grupos de roles independientes que conceden permisos diferentes. Ser miembro de la **Administración de la organización** en Exchange Online no concede los permisos necesarios para eliminar mensajes de correo electrónico. Si no se le asigna el rol **Buscar y purgar** en el Centro de seguridad y cumplimiento (ya sea directamente o a través de un grupo de roles como la **Administración de la organización**), recibirá un error en el Paso 3 cuando ejecute el cmdlet **New-ComplianceSearchAction** con el mensaje "No se puede encontrar un parámetro que coincida con el nombre de parámetro 'Purge'".
+  > El rol **Administración de la organización** existe en Exchange Online y en el Centro de cumplimiento de Microsoft 365. Se trata de grupos de roles independientes que conceden permisos diferentes. Ser miembro de la **Administración de la organización** en Exchange Online no concede los permisos necesarios para eliminar mensajes de correo electrónico. Si no se le asigna el rol **Buscar y purgar** en el Centro de cumplimiento (ya sea directamente o a través de un grupo de roles como la **Administración de la organización**), recibirá un error en el Paso 3 cuando ejecute el cmdlet **New-ComplianceSearchAction** con el mensaje "No se puede encontrar un parámetro que coincida con el nombre de parámetro 'Purge'".
 
 - Debe usar el PowerShell del Centro de seguridad y cumplimiento para eliminar mensajes. Vea el [paso 1](#step-1-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
 
@@ -112,13 +114,22 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 ## <a name="step-3-delete-the-message"></a>Paso 3: Eliminar el mensaje
 
-Después de crear y restringir una búsqueda de contenido a fin de obtener el mensaje que desea eliminar, y después de conectarse al PowerShell del Centro de seguridad y cumplimiento, el último paso es ejecutar el cmdlet **New-ComplianceSearchAction** para eliminar el mensaje. Puede eliminar el mensaje de forma temporal o permanente. Un mensaje eliminado temporalmente se mueve a la carpeta Elementos recuperables de un usuario y se conserva hasta que expire el período de retención de elementos eliminados. Los mensajes eliminados permanentemente se marcan para la eliminación definitiva del buzón y se eliminarán la próxima vez que el Asistente para carpetas administradas procese el buzón. Si se habilita la recuperación de un único elemento en el buzón, los elementos eliminados permanentemente se eliminarán definitivamente cuando expire el período de retención de elementos eliminados. Si un buzón está en retención, los mensajes eliminados se conservan hasta que expire la duración del período de retención de un elemento o hasta que se quite la retención del buzón.
+Después de crear y restringir una búsqueda de contenido a fin de obtener el mensaje que desea eliminar, el último paso es ejecutar el comando **New-ComplianceSearchAction -Purge** en el PowerShell del Centro de Seguridad y cumplimiento para eliminar el mensaje. Puede eliminar el mensaje de forma temporal o permanente. Un mensaje eliminado temporalmente se mueve a la carpeta Elementos recuperables de un usuario y se conserva hasta que expire el período de retención de elementos eliminados. Los mensajes eliminados permanentemente se marcan para la eliminación definitiva del buzón y se eliminarán la próxima vez que el Asistente para carpetas administradas procese el buzón. Si se habilita la recuperación de un único elemento en el buzón, los elementos eliminados permanentemente se eliminarán definitivamente cuando expire el período de retención de elementos eliminados. Si un buzón está en retención, los mensajes eliminados se conservan hasta que expire la duración del período de retención de un elemento o hasta que se quite la retención del buzón.
 
-En el ejemplo siguiente, el comando elimina temporalmente (soft-delete) los resultados de la búsqueda obtenidos por una búsqueda de contenido denominada "quitar el mensaje de suplantación de identidad".
+> [!NOTE]
+> Como se ha indicado anteriormente, los elementos de Microsoft Teams devueltos por la búsqueda de contenido no se eliminan cuando se ejecuta el comando **New-ComplianceSearchAction -Purge** .
+
+Para ejecutar los siguientes comandos para eliminar mensajes, asegúrese de que está [conectado al Centro de seguridad y cumplimiento PowerShell](/powershell/exchange/connect-to-scc-powershell).
+
+### <a name="soft-delete-messages"></a>Eliminar mensajes temporalmente
+
+En el ejemplo siguiente, el comando elimina temporalmente los resultados de la búsqueda obtenidos por una búsqueda de contenido denominada "quitar el mensaje de suplantación de identidad".
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
+
+### <a name="hard-delete-messages"></a>Eliminar mensajes de forma permanente
 
 Para eliminar de forma permanente los elementos devueltos por la búsqueda de contenido "quitar el mensaje de suplantación de identidad", ejecutaría este comando:
 
@@ -126,7 +137,7 @@ Para eliminar de forma permanente los elementos devueltos por la búsqueda de co
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
-Cuando ejecuta el comando anterior en mensajes de eliminación parcial o Soft, la búsqueda especificada por el parámetro *SearchName* es la búsqueda de contenido que creó en el paso 1.
+Cuando ejecute los comandos anteriores para eliminar mensajes de forma temporal o permanente, la búsqueda especificada por el parámetro *SearchName* es la búsqueda de contenido que creó en el paso 1.
 
 Para obtener más información, vea [ New-ComplianceSearchAction](/powershell/module/exchange/New-ComplianceSearchAction).
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use casos grandes en Advanced eDiscovery para que pueda agregar más elementos para revisar conjuntos y aprovechar otros límites aumentados.
-ms.openlocfilehash: d4737b6c715ac96fc9e16c40e2f4fa784a66e5d1
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 739fa2a7bb3e1d1d650ef736ca1c480c8b704e6f4c2cc12b6c7fdd7e03fec2ed
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542528"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523662"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>Usar casos grandes en Advanced eDiscovery (versión preliminar)
 
@@ -60,6 +60,12 @@ Esta es una lista de otras ventajas de los casos grandes en el flujo Advanced eD
 Además, el nuevo formato de caso grande incluye una interfaz de usuario actualizada que muestra el tamaño total de cada conjunto de opiniones en el caso. Los tamaños de conjunto de revisión se muestran en una columna de la ficha **Conjuntos** de revisión y en un panel desplegable que persiste de todas las pestañas del caso.
 
 ![Estadísticas de casos grandes en Advanced eDiscovery interfaz de usuario](..\media\LargeCaseUI.png)
+
+## <a name="known-issues"></a>Problemas conocidos
+
+- La opción para exportar contenido como archivos sueltos y **archivos PST** no se admite actualmente en casos grandes (la opción está gris). Esta opción de exportación para casos grandes se admite próximamente. Para obtener más información acerca de la exportación de contenido, vea [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
+
+- La indización avanzada que se produce cuando se agregan custodios y origen de datos no custodiados a un caso actualmente no se admite en casos grandes. El trabajo de indización se crea, pero no se completa. La indización avanzada en casos grandes se admite próximamente. Para obtener más información acerca de la indización avanzada, vea [Indexación avanzada de datos de custodia](indexing-custodian-data.md).
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 

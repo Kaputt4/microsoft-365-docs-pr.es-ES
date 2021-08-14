@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Use la búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: 925a6e5e0e56c63cde8bfa1b39cca6e64abcd016
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: 60f0f51c713abf98109362fd57e3950d2ee17ce307b3c16b6483ada69385c2f1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891803"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usar la búsqueda de contenido para colecciones dirigidas
 
@@ -57,7 +57,7 @@ La herramienta de búsqueda de contenido del Centro de cumplimiento de Microsoft
 
 El script que ejecute en este primer paso devolverá una lista de carpetas de buzones de correo o carpetas SharePoint y OneDrive para la Empresa carpetas, y el identificador de carpeta o ruta de acceso correspondiente para cada carpeta. Al ejecutar este script, se le pedirá la siguiente información.
 
-- **Dirección de correo electrónico o dirección URL** del sitio: escriba una dirección de correo electrónico del custodio para devolver una lista de Exchange carpetas de buzones de correo e IDs de carpeta. O escriba la dirección URL de un SharePoint o un sitio OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Aquí le mostramos otros ejemplos:
+- **Dirección de correo electrónico o dirección URL** del sitio: escriba una dirección de correo electrónico del custodio para devolver una lista de Exchange carpetas de buzones de correo e IDs de carpeta. O escriba la dirección URL de un SharePoint o un sitio OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos:
 
   - **Exchange**: stacig@contoso.onmicrosoft <spam> <spam> .com
 

@@ -72,7 +72,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
     - SIM: preparación
     - Aislamiento de espacios empresariales
 
-### <a name="data-classification"></a>Clasificación de datos
+### <a name="data-classification"></a>Clasificación de los datos
 
 - [Obtenga información sobre la clasificación de datos](data-classification-overview.md). Se actualizó para la versión de GA del clasificador de discriminación que se puede entrenar.
 
@@ -202,7 +202,7 @@ Estos son algunos de los cambios realizados en Microsoft 365 de cumplimiento nor
 - **Exporte documentos** en un conjunto de revisión en una [Azure Storage](/microsoft-365/compliance/download-export-jobs) cuenta.
 - **Módulo de codificación predictiva para Advanced eDiscovery**. Primero vea la nueva funcionalidad [de codificación predictiva](/microsoft-365/compliance/predictive-coding-overview) que reemplaza al módulo relevancia retirado.
 
-### <a name="data-classification"></a>Clasificación de datos
+### <a name="data-classification"></a>Clasificación de los datos
 
 - **Explorador de clasificación de datos**. [Introducción al](/microsoft-365/compliance/data-classification-activity-explorer) explorador de clasificación de datos.
 

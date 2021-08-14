@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3f3ee0590fcbbbbcdb58680e13d154ddc4b2918e48a0c494f8ebdbdf70757bc7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8058109abb8462849af4fea04e43c934ebfce1ad440053c60f8b8e070171e76e
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794035"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523768"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -44,24 +44,24 @@ Compruebe si la protección de red se ha habilitado en un dispositivo local medi
 
 2. Elija **HKEY_LOCAL_MACHINE** en el menú lateral
 
-3. Navegue por los menús anidados a **SOFTWARE**  >  **Microsoft**  >  **Windows Defender**  >  **Windows Defender Protección de red de Protección contra**  >  **vulnerabilidades de seguridad**
+3. Navegue a través de los menús anidados **a Directivas de SOFTWARE** de  >    >  **Microsoft**  >  **Windows Defender** Windows Defender Protección  >  **de red de Protección**  >  **contra vulnerabilidades de seguridad**
 
 4. Selecciona **EnableNetworkProtection** para ver el estado actual de la protección de red en el dispositivo
 
-    * 0 o **Desactivado**
-    * 1 o **On**
-    * 2, o modo **auditoría**
-    
-    ![networkprotection](https://user-images.githubusercontent.com/3296790/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.PNG)
+   - 0 o **Desactivado**
+   - 1 o **On**
+   - 2, o modo **auditoría**
+
+    ![Clave del Registro de Protección de red](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
 ## <a name="enable-network-protection"></a>Habilitar la protección de red
 
 Habilite la protección de red mediante cualquiera de estos métodos:
 
-* [PowerShell](#powershell)
-* [Administración de dispositivos móviles (MDM)](#mobile-device-management-mdm)
-* [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
-* [Directiva de grupo](#group-policy)
+- [PowerShell](#powershell)
+- [Administración de dispositivos móviles (MDM)](#mobile-device-management-mdm)
+- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Directiva de grupo](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
 
@@ -106,13 +106,13 @@ Use el siguiente procedimiento para habilitar la protección de red en equipos u
 
 3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** Windows Defender protección de la red  >    >  **de Protección**  >  **contra vulnerabilidades de seguridad**.
 
-> [!NOTE]
-> En versiones anteriores de Windows, la ruta de acceso de directiva de grupo puede decir "Antivirus de Windows Defender" en lugar de "Antivirus de Microsoft Defender".
+   > [!NOTE]
+   > En versiones anteriores de Windows, la ruta de acceso de directiva de grupo puede decir "Antivirus de Windows Defender" en lugar de "Antivirus de Microsoft Defender".
 
 4. Haz doble clic en la configuración **Impedir que los usuarios y aplicaciones** tengan acceso a sitios web peligrosos y establece la opción en **Habilitado**. En la sección opciones, debe especificar una de las siguientes opciones:
-    * **Bloquear:** los usuarios no pueden acceder a direcciones IP malintencionadas y dominios
-    * **Deshabilitar (predeterminado):** la característica de protección de red no funcionará. Los usuarios no se bloquearán para acceder a dominios malintencionados
-    * **Modo auditoría:** si un usuario visita una dirección IP malintencionada o un dominio, se registrará un evento en el Windows de eventos. Sin embargo, no se bloqueará al usuario para que visite la dirección.
+    - **Bloquear:** los usuarios no pueden acceder a direcciones IP malintencionadas y dominios
+    - **Deshabilitar (predeterminado):** la característica de protección de red no funcionará. Los usuarios no se bloquearán para acceder a dominios malintencionados
+    - **Modo auditoría:** si un usuario visita una dirección IP malintencionada o un dominio, se registrará un evento en el Windows de eventos. Sin embargo, no se bloqueará al usuario para que visite la dirección.
 
 > [!IMPORTANT]
 > Para habilitar completamente la protección de red, debe establecer la opción Directiva de grupo en **Habilitado** y también seleccionar **Bloquear** en el menú desplegable opciones.
@@ -124,12 +124,12 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
 2. Vaya a **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Seleccione **EnableNetworkProtection** y confirme el valor:
-   * 0=Off
-   * 1=On
-   * 2=Auditoría
+   - 0=Off
+   - 1=On
+   - 2=Auditoría
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-* [Protección de red](network-protection.md)
-* [Evaluar protección de red](evaluate-network-protection.md)
-* [Solucionar problemas de protección de red](troubleshoot-np.md)
+- [Protección de red](network-protection.md)
+- [Evaluar protección de red](evaluate-network-protection.md)
+- [Solucionar problemas de protección de red](troubleshoot-np.md)
