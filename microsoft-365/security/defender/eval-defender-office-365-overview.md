@@ -1,5 +1,5 @@
 ---
-title: Evaluar Microsoft Defender para obtener Office 365 información general, cómo evaluar y los pasos de evaluación
+title: Evaluar Microsoft Defender para obtener información Office 365 información general
 description: Use esta información general para obtener información sobre los pasos para configurar un piloto de MDO, incluidos los requisitos, habilitar o activar la eval y configurar el piloto.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c39f5823d87ab7b7ff7795014925ca7c22231a3f
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 1971f70752b7787540e3edd470bece5e609d5bcd6171a7c6a8ef39af44c0ce4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458591"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893918"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Habilitar y piloto Microsoft Defender para Office 365
 

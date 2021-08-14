@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo agregar usuarios en Microsoft 365 para empresas.
-ms.openlocfilehash: 8a9d9cbf0204d9cf4ef878116ddddbe1b2103ccb
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 097bc190fbee5c7fd000849458654afe00129a2217853be243c9b179d795ea00
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821096"
 ---
 # <a name="add-a-new-user"></a>Agregar un nuevo usuario
 
@@ -38,7 +38,7 @@ Cuando una nueva persona se une a su empresa, debe agregarla a su Microsoft 365 
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el centro Microsoft 365 administración, vaya a **Administración de usuarios** y seleccione Agregar usuario.
+1. En el Centro de administración de Microsoft 365, vaya a **Administración de usuarios** y seleccione Agregar usuario.
 1. Escriba el nombre  y el apellido **del nuevo usuario.** El **nombre para** mostrar se rellena automáticamente, pero puede cambiarlo.
 1. Escriba un **nombre de usuario**. Esta será la dirección de correo electrónico del nuevo usuario. Si tiene más de un dominio, seleccione el dominio correcto en la lista desplegable.
 1. Para crear una contraseña automáticamente, **seleccione Auto-generate password**.
@@ -48,4 +48,4 @@ Cuando una nueva persona se une a su empresa, debe agregarla a su Microsoft 365 
 1. Si desea que el usuario sea administrador, expanda **Roles** s, desactive la casilla Usuario (sin acceso de **administrador)** y seleccione un rol de administrador de la lista. Para obtener más información acerca de los roles de administrador y cómo configurarlos, vea [¿Qué es un administrador?](what-is-admin.md)
 1. En **Información de perfil**, escriba detalles sobre el trabajo del usuario, el departamento, la oficina, y así sucesivamente. (Usted o el nuevo usuario siempre pueden agregar esta información más adelante). Seleccione **Siguiente**.
 1. Revise los detalles del usuario. Si necesita comprar una licencia adicional para este usuario, verá una notificación en la página de revisión. Seleccione **Finalizar adición** y, a continuación, **seleccione Cerrar**.
-1. Compruebe que el usuario se ha creado correctamente: en el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione Usuarios **y,** a continuación, **Usuarios activos.** El nuevo usuario debe aparecer en la lista, junto con su licencia asignada.
+1. Compruebe que el usuario se ha creado correctamente: en el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, **Usuarios activos.** El nuevo usuario debe aparecer en la lista, junto con su licencia asignada.

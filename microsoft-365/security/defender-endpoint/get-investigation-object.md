@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b54159cfd7e7a8f6d970db1bc7fcb64539061dbd
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9ecbb39e7dbdc3702c38cf76f2e53b66ec99b67648071931f978c212047a0c7c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53818784"
 ---
 # <a name="get-investigation-api"></a>Obtener API de investigación
 
@@ -73,7 +73,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations/{id}
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization | String | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

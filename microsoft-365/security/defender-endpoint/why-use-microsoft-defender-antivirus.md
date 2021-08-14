@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 97b9d95638c205dd47453bf6ad09c0d0487f0f8e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: b939463f072e976ee75eac98f4630b5e29c56c1d599ad03aeee8789a7368859c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894013"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión
 
@@ -39,7 +39,7 @@ Aunque puedes usar una solución antivirus que no es de Microsoft con Microsoft 
 
 |# |Ventaja  |Por qué es importante |
 |--|--|--|
-|1|Uso compartido de señales antivirus |Las aplicaciones y servicios de Microsoft comparten señales en toda la organización empresarial, lo que proporciona una plataforma más sólida. Vea [Insights from the MITRE ATT&CK-based evaluation of Microsoft Defender for Endpoint](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/). |
+|1|Uso compartido de señales antivirus |Las aplicaciones y servicios de Microsoft comparten señales en toda la organización empresarial, lo que proporciona una plataforma más sólida. Vea Ideas de la evaluación basada en CK&[MITRE ATT de Microsoft Defender para endpoint](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/). |
 |2|Análisis de amenazas y puntuación para dispositivos |Antivirus de Microsoft Defender recopila los datos subyacentes del sistema usados por el análisis [de](/microsoft-365/security/defender-endpoint/threat-analytics) amenazas y [la puntuación segura de Microsoft para dispositivos](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices). Esto proporciona al equipo de seguridad de la organización información más significativa, como recomendaciones y oportunidades para mejorar la posición de seguridad de la organización. |
 |3|Rendimiento |Microsoft Defender para endpoint está diseñado para trabajar con Antivirus de Microsoft Defender, por lo que obtienes un mejor rendimiento cuando usas estas ofertas juntos. [Evaluar Antivirus de Microsoft Defender](evaluate-microsoft-defender-antivirus.md) y [Microsoft Defender para Endpoint](/microsoft-365/security/defender-endpoint/evaluate-mde).|
 |4 |Detalles sobre malware bloqueado |Hay más detalles y acciones para malware bloqueado disponible con Antivirus de Microsoft Defender y Microsoft Defender para endpoint. [Comprender el malware & otras amenazas](/windows/security/threat-protection/intelligence/understanding-malware).|
@@ -47,8 +47,8 @@ Aunque puedes usar una solución antivirus que no es de Microsoft con Microsoft 
 |6 |Bloqueo de archivos |El equipo de seguridad de la organización puede bloquear archivos específicos. [Detener y poner en cuarentena los archivos de la red](/microsoft-365/security/defender-endpoint/respond-file-alerts#stop-and-quarantine-files-in-your-network).|
 |7 |Reducción de superficie de ataque |El equipo de seguridad de la organización puede reducir las vulnerabilidades (superficies de ataque), lo que ofrece a los atacantes menos formas de realizar ataques. La reducción de superficie de ataque usa protección de nube para varias reglas. [Obtenga información general sobre la reducción de superficie de ataque.](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)|
 |8 |Eventos de auditoría |Las señales de eventos de auditoría están [disponibles en detección y respuesta de puntos de conexión funcionalidades](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response). (Estas señales no están disponibles con soluciones antivirus que no sean de Microsoft). |
-|9 |Datos geográficos |Conforme a iso 270001 y retención de datos, los datos geográficos se proporcionan de acuerdo con la soberanía geográfica seleccionada de su organización. Vea [Ofertas de cumplimiento: ISO/IEC 27001:2013 Information Security Management Standards](/microsoft-365/compliance/offering-iso-27001). |
-|10|Recuperación de archivos mediante OneDrive |Si estás usando Antivirus de Microsoft Defender junto con [Office 365](/Office365/Enterprise), y el dispositivo es atacada por ransomware, los archivos están protegidos y recuperables. [OneDrive restaurar archivos y Windows Defender protección contra ransomware un paso más allá](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
+|9 |Datos geográficos |Conforme a la norma ISO 270001 retención de datos, los datos geográficos se proporcionan de acuerdo con la soberanía geográfica seleccionada de la organización. Vea [Ofertas de cumplimiento: ISO/IEC 27001:2013 Information Security Management Standards](/microsoft-365/compliance/offering-iso-27001). |
+|10 |Recuperación de archivos mediante OneDrive |Si estás usando Antivirus de Microsoft Defender junto con [Office 365](/Office365/Enterprise), y el dispositivo es atacada por ransomware, los archivos están protegidos y recuperables. [OneDrive restaurar archivos y Windows Defender protección contra ransomware un paso más allá](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
 |11|Soporte técnico |Al usar Microsoft Defender para Endpoint junto con Antivirus de Microsoft Defender, tienes una empresa para llamar al soporte técnico. [Solucionar problemas de servicio y](/microsoft-365/security/defender-endpoint/troubleshoot-mde) revisar los registros de eventos y los códigos de error con [Antivirus de Microsoft Defender](troubleshoot-microsoft-defender-antivirus.md). |
 
 

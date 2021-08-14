@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 444af2441eef5a3720325656f996e6bcdb42937e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ed32d0216e90a66be30905b5e0d067d730f2ae3418d6f4c0742ef95679bb787a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894028"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 

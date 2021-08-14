@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: baff4d094e4db21946d270202c8c0003167789092745bbff2e6fb07ee7f7db64
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 34ad9d1c6f020fb8e6d8e878803eba23b3aeb5e616146fa5cdf564a19226f826
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834552"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894016"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Buscar dispositivos expuestos: Administración de amenazas y vulnerabilidades
 
@@ -32,7 +32,7 @@ ms.locfileid: "57834552"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -63,19 +63,16 @@ La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en cons
 
 ```kusto
 // Search for devices with High active alerts or Critical CVE public exploit
-let DeviceWithHighAlerts = AlertInfo
-| where Severity == "High"
-| project Timestamp, AlertId, Title, ServiceSource, Severity
-| join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
-| summarize HighSevAlerts = dcount(AlertId) by DeviceId;
-let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
+DeviceTvmSoftwareVulnerabilities
 | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId),
-DeviceName=any(DeviceName) by DeviceId;
-DeviceWithCriticalCve
-| join kind=inner DeviceWithHighAlerts on DeviceId
-| project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
+DeviceName=any(DeviceName) by DeviceId
+| join kind =inner(DeviceAlertEvents) on DeviceId  
+| summarize NumOfVulnerabilities=any(NumOfVulnerabilities),
+DeviceName=any(DeviceName) by DeviceId, AlertId
+| project DeviceName, NumOfVulnerabilities, AlertId  
+| order by NumOfVulnerabilities desc
 ```
 
 ## <a name="related-topics"></a>Temas relacionados

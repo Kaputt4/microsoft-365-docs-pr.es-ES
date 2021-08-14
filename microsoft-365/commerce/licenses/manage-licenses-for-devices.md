@@ -20,12 +20,12 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ms.date: 03/17/2021
-ms.openlocfilehash: c590c2d47699c4c3cbea4b5145bea9e7c9fc79ec
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5866fd7ae42a8e127250a2f02c7378381b736da54027ab80bab1228fbef23e33
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820916"
 ---
 # <a name="manage-licenses-for-devices"></a>Administrar licencias para dispositivos
 
@@ -43,7 +43,7 @@ Para empezar, creas un grupo en el centro Azure Active Directory administración
 
 Al asignar licencias a un grupo, se asignan licencias a todos los dispositivos del grupo. Solo puede asignar una suscripción a cualquier grupo.
 
-1. En el centro Microsoft 365 administración, vaya a la página **Licencias**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">de</a> facturación.
+1. En el Centro de administración de Microsoft 365, vaya a la página **Licencias**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">de</a> facturación.
 2. En la **página Licencias,** elija **Aplicaciones Microsoft 365 educación (dispositivo)** **o Aplicaciones Microsoft 365 para empresas (dispositivo).**
 3. En la página siguiente, elija una suscripción y, a continuación, **elija Asignar licencias.**
 4. En el panel Asignar licencias a un grupo, empiece a escribir un nombre de grupo y, a continuación, elija en los **resultados** para agregarlo a la lista.

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 90c73ac3dc2ed334297381d872036f400985439a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b71ed4cb81da800069df826f9d95737134822ae896dc23cbe37363275264219e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53847420"
 ---
 # <a name="get-domain-statistics-api"></a>Obtener API de estadísticas de dominio
 
@@ -73,7 +73,7 @@ Authorization|Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 
-Nombre|Tipo|Descripción
+Nombre|Tipo|Description
 :---|:---|:---
 lookBackHours|Int32|Define las horas que buscamos para obtener las estadísticas. El valor predeterminado es 30 días. **Opcional**.
 

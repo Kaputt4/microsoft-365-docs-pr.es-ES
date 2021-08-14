@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4df1ac2ca5fdfaa88ec2d08c85112f52da26b873
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 8e41fa007c870615af18a8e0c8bef4aedeb2d1904e032aad08195f133a61701f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893978"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Revisar los requisitos y conceptos clave de la arquitectura de puntos de conexión de Microsoft Defender
 
@@ -63,9 +63,9 @@ Concepto | Descripción | Más información
 Portal de administración | Microsoft 365 Defender para supervisar y ayudar a responder a alertas de posibles infracciones de datos o actividad de amenazas persistentes avanzada. | [Introducción al portal de Microsoft Defender para endpoints](/defender-endpoint/portal-overview)
 Reducción de superficie de ataque | Ayuda a reducir las superficies de ataque minimizando los lugares donde tu organización es vulnerable a ciberamenazas y ataques. | [Introducción a la reducción de la superficie expuesta a ataques](/defender-endpoint/overview-attack-surface-reduction)
 Detección y respuesta de extremos | Las capacidades de detección y respuesta de puntos de conexión proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. | [Información general sobre detección y respuesta de puntos de conexión funcionalidades](/defender-endpoint/overview-endpoint-detection-response)
-Bloqueo y contención del comportamiento | Las capacidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. | [Contención y bloqueo de comportamiento](/defender-endpoint/behavioral-blocking-containment)
+Bloqueo y contención del comportamiento | Las capacidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. | [Bloqueo y contención de comportamientos](/defender-endpoint/behavioral-blocking-containment)
 Investigación y respuesta automatizadas | La investigación automatizada usa varios algoritmos de inspección basados en procesos que usan los analistas de seguridad y diseñados para examinar alertas y tomar medidas inmediatas para resolver infracciones. | [Usar investigaciones automatizadas para investigar y corregir amenazas](/defender-endpoint/automated-investigations)
-Búsqueda avanzada de amenazas | La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que le permite explorar hasta 30 días de datos sin procesar para que pueda inspeccionar de forma proactiva los eventos de la red para localizar indicadores y entidades de amenazas. | [Información general sobre la búsqueda avanzada](/defender-endpoint/advanced-hunting-overview)
+Búsqueda avanzada | La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que le permite explorar hasta 30 días de datos sin procesar para que pueda inspeccionar de forma proactiva los eventos de la red para localizar indicadores y entidades de amenazas. | [Información general sobre la búsqueda avanzada](/defender-endpoint/advanced-hunting-overview)
 Análisis de amenazas | El análisis de amenazas es un conjunto de informes de investigadores expertos en seguridad de Microsoft que cubren las amenazas más relevantes. | [Seguir las amenazas emergentes y responder a ellas](/defender-endpoint/threat-analytics)
 
 
@@ -78,7 +78,7 @@ Puede integrar Microsoft Defender para Endpoint con Azure Sentinel para analizar
 Microsoft Defender para endpoint también se puede integrar en otras soluciones de administración de eventos y de información de seguridad (SIEM). Para obtener más información, vea [Enable SIEM integration in Microsoft Defender for Endpoint](/defender-endpoint/enable-siem-integration).
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 [Habilitar la evaluación](eval-defender-endpoint-enable-eval.md)
 
 Vuelva a la introducción a [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)

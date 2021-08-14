@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos del conector webex de Veritas Teams en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de la organización.
-ms.openlocfilehash: 654ca53fd4cd7c6091ff74360545ba335f753ffd
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7041fcb5b9c284969047f9db9719560be49a7993952da44128ba5bfbdd8d5aca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820629"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Configurar un conector para archivar datos Teams Webex
 
-Use un conector Veritas en el centro de cumplimiento Microsoft 365 para importar y archivar datos de webex Teams buzones de usuario de su Microsoft 365 organización. Veritas proporciona un conector [Teams webex](https://globanet.com/webex-teams/) configurado para capturar elementos de comunicación webex Teams importarlos a Microsoft 365. El conector convierte contenido de Webex Teams, como chats 1:1, conversaciones de grupo, conversaciones de canal y datos adjuntos de la cuenta webex Teams de la organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
+Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de Webex Teams buzones de usuario de su Microsoft 365 organización. Veritas proporciona un conector [Teams webex](https://globanet.com/webex-teams/) configurado para capturar elementos de comunicación webex Teams importarlos a Microsoft 365. El conector convierte contenido de Webex Teams, como chats 1:1, conversaciones de grupo, conversaciones de canal y datos adjuntos de la cuenta webex Teams de la organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
 Después de almacenar Teams webex en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector Teams Webex para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -35,7 +35,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 2. Una vez cada 24 horas, los elementos Teams Webex se copian en el sitio Veritas Merge1. El conector también convierte los elementos webex Teams a un formato de mensaje de correo electrónico.
 
-3. El conector Teams webex que crea en el centro de cumplimiento de Microsoft 365, se conecta a Veritas Merge1 todos los días y transfiere los elementos de webex Teams a una ubicación de Azure Storage segura en la nube de Microsoft.
+3. El conector de Teams webex que crea en el Centro de cumplimiento de Microsoft 365, se conecta a Veritas Merge1 todos los días y transfiere los elementos de webex Teams a una ubicación Azure Storage segura en la nube de Microsoft.
 
 4. El conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Webex Teams** en los buzones de usuario y los elementos se importan a esa carpeta. El conector hace esto mediante el valor de la *propiedad Email.* Cada elemento Teams webex contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
@@ -47,7 +47,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
    Al crear esta aplicación, la plataforma Webex genera un conjunto de credenciales únicas. Estas credenciales se usan en el paso 2 al configurar el conector Teams Webex en el sitio Global Merge1.
 
-- El usuario que crea el conector Teams webex en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol Importar exportación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la página **Conectores** de datos del centro de Microsoft 365 cumplimiento. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea el conector Teams webex en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol Importar exportación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 ## <a name="step-1-set-up-the-webex-teams-connector"></a>Paso 1: Configurar el conector de Teams Webex
 
@@ -67,11 +67,11 @@ El primer paso es obtener acceso a **los conectores** de datos y configurar el c
 
 El segundo paso es configurar el conector Teams Webex en el sitio Merge1. Para obtener información sobre cómo configurar el conector Teams Webex, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf).
 
-Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asignación de usuario en el asistente para conectores en Microsoft 365 centro de cumplimiento.
+Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asignación de usuario en el asistente para conector en Centro de cumplimiento de Microsoft 365.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
-Para asignar usuarios y completar la configuración del conector en el centro de Microsoft 365 cumplimiento, siga estos pasos:
+Para asignar usuarios y completar la configuración del conector en el Centro de cumplimiento de Microsoft 365, siga estos pasos:
 
 1. En la página Asignar **webex Teams a Microsoft 365 usuarios,** habilite la asignación automática de usuarios. Los elementos Teams webex incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un Microsoft 365, los elementos se importan al buzón de ese usuario.
 
@@ -79,7 +79,7 @@ Para asignar usuarios y completar la configuración del conector en el centro de
 
 ## <a name="step-4-monitor-the-webex-teams-connector"></a>Paso 4: Supervisar el conector Teams Webex
 
-Después de crear el conector Teams webex, puede ver el estado del conector en el centro de Microsoft 365 cumplimiento.
+Después de crear el conector Teams Webex, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **Conectores de datos** en la navegación izquierda.
 

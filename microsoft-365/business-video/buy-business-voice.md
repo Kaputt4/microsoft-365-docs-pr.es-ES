@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo comprar el Microsoft 365 Business Voice complemento.
-ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e04d88bdabc1f7e9bf6e26fb3b7d5171cd6f893321b3cacafdcb41c16ddb3ec9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422992"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821108"
 ---
 # <a name="buy-business-voice"></a>Comprar voz empresarial
 
@@ -36,7 +36,7 @@ Con Microsoft 365 Business Voice, puede realizar y recibir llamadas, usar audioc
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el centro Microsoft 365 administración, vaya a **Facturación** y seleccione **Servicios de compra.**
+1. En el Centro de administración de Microsoft 365, vaya a **Facturación** y seleccione **Servicios de compra.**
 1. Desplácese hacia abajo y **elija Complementos**. 
 1. Seleccione **Microsoft 365 Business Voice**.
 

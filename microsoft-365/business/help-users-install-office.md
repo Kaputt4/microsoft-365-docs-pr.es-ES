@@ -26,19 +26,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: Ayude a los usuarios a instalar Office aplicaciones en Windows 10 dispositivos e instalar fácilmente Office en equipos Windows 10 desde el centro Microsoft 365 administración.
-ms.openlocfilehash: 74c17533995b74655be57524b77d9c508f703c50
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Ayuda a los usuarios a instalar Office aplicaciones en Windows 10 dispositivos e instalar fácilmente Office en Windows 10 equipos desde el Centro de administración de Microsoft 365.
+ms.openlocfilehash: bfd0d9baba177bd68b4d3174eba7c5ffb3a38aa8c690c7b8314e5b298bdbdfc1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821023"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Ayudar a los usuarios a instalar Office en Windows 10 dispositivos
 
-[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
+[![Etiqueta para informarle de que el centro de administración está cambiando y de que puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
-Puede instalar de forma rápida y Office en Windows 10 equipos desde el centro Microsoft 365 administración.
+Puede instalar de forma rápida y sencilla Office en Windows 10 equipos desde el Centro de administración de Microsoft 365.
   
 Para entender cómo funciona con aplicaciones de Office instaladas anteriormente, lea [Preparar la instalación del cliente de Office](prepare-for-office-client-deployment.md) antes de empezar.
 
