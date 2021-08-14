@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0f771adb84c4fc335c13909e9da37c3bf27dcda0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2f81c50473f6181d1fb083e03db1f671b2bfdd00c6652aece93fff7a40212b8e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814740"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -318,7 +318,7 @@ Las plantillas de avisos son plantillas de correo electrónico personalizadas do
 |**Nombre de la plantilla** | Sí | Nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Sí | La dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
 | **Direcciones CC y CCO** | No | Usuarios o grupos opcionales que se notificarán de la coincidencia de directiva, seleccionados desde Active Directory para su suscripción. |
-| **Subject** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
 | **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
@@ -355,7 +355,7 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar mensaje
 | **Destinatario** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | Dominio que envió el mensaje. |
-| **Size** | Tamaño del mensaje en KB. |
+| **Tamaño** | Tamaño del mensaje en KB. |
 | **Asunto/Título** | Asunto del mensaje o título del chat. |
 | **Tags** | Las etiquetas asignadas a un mensaje, *ya sea Questionable*, *Compliant* o *Non-compliant*. |
 | **Language** | El idioma de texto detectado en el mensaje. El mensaje se clasifica según el idioma de la mayoría del texto del mensaje. Por ejemplo, para un mensaje que contiene texto alemán e italiano, pero la mayoría de texto es alemán, el mensaje se clasifica como alemán (DE). Se admiten los siguientes idiomas: chino (simplificado - ZH), inglés (EN), francés (FR), alemán (DE), italiano (IT), japonés (JP), portugués (PT) y español (ES). Por ejemplo, para filtrar mensajes clasificados como alemán e italiano, escriba "DE,IT" (los códigos de idioma de 2 dígitos) en el cuadro de búsqueda Filtro de idioma. Para ver la clasificación de idioma detectado para un mensaje, seleccione un mensaje, seleccione Ver detalles del mensaje y desplácese al campo EmailDetectedLanguage. |

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: 5f48418882d5d4c7589b3ef394a0a306c0675f34
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
-ms.translationtype: MT
+ms.openlocfilehash: e3d4f090ebe53175e2957d040ad18c226a7d3177159e2552586cac4a7b259734
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892344"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
 

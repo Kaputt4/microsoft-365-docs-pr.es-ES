@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Obtenga información sobre cómo actualizar de Microsoft Teams gratuita a una nueva suscripción Microsoft 365 para empresas.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 8aab61819f7f335d4865e162ca752aa307f8f7ac
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 326c76c2939e6312eb6ef9865e1197b16e6d0c702af1594517913bc3ba7d52f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892260"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Actualizar de Microsoft Teams gratuito a Microsoft 365 para empresas
 
@@ -49,7 +49,7 @@ Para comenzar el proceso, obtenga el identificador de cuenta de trabajo o escuel
 
 Después de tener la cuenta de trabajo o escuela subyacente para su organización Microsoft Teams gratuita, debe restablecer la contraseña de la cuenta.
 
-1. Vaya al Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administración.</a> Cuando se le pida que inicie sesión, elija **Olvidé mi contraseña.**
+1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Cuando se le pida que inicie sesión, elija **Olvidé mi contraseña.**
 2. Complete el procedimiento de restablecimiento de contraseña con la cuenta de trabajo o escuela subyacente (la que termina con *.onmicrosoft.com*).
 3. Complete los pasos de comprobación. Recibirá un correo electrónico con un código que se usará para establecer una nueva contraseña.
 4. Escriba el código para completar el proceso de verificación.

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 7014e294454095456acdac8e2c60895c400ced3f
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 296c29c61ca411a37f13118e956db7d050d54762940bf81bfbde26fc043b3d23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814608"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 

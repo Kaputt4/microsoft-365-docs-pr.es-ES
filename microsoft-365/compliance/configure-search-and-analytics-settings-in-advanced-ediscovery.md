@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configure Advanced eDiscovery que se aplican a todos los conjunto de revisión en un caso. Esto incluye la configuración de análisis y reconocimiento óptico de caracteres.
-ms.openlocfilehash: 2b9c438e28b8d9b84ec8cc29bf85911e5bdc3c8d
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: fd1d71a7f617ad836b5c8d2cdcc2beea4b37fdc5aeb14031c80984ca2676db5b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892381"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurar las opciones de búsqueda y análisis en Advanced eDiscovery
 

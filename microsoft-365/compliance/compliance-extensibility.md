@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo ampliar Microsoft 365 de cumplimiento normativo mediante conectores de datos de terceros y API Graph Microsoft.
-ms.openlocfilehash: 1fed5ac72c7dbfa4b1be370ec03678e1beecdcd2
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: df3fcf74fb7e042bb13d482fe4433c36dc4c4896c15d094ffb5f408dd3925908
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892272"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 extensibilidad de cumplimiento normativo
 
@@ -39,25 +39,25 @@ Hay dos bloques de creación clave para la extensibilidad de cumplimiento:
 
 ## <a name="data-connectors"></a>Conectores de datos
 
-Microsoft proporciona conectores de datos de terceros que se pueden configurar en el centro de Microsoft 365 cumplimiento. Para obtener una lista de conectores de datos proporcionados por Microsoft, consulte la [tabla Conectores](archiving-third-party-data.md#third-party-data-connectors) de datos de terceros. La tabla de conectores de datos de terceros también resume las soluciones de cumplimiento que puede aplicar a datos de terceros después de importar y archivar datos en Microsoft 365 y vínculos a las instrucciones paso a paso para cada conector.
+Microsoft proporciona conectores de datos de terceros que se pueden configurar en el Centro de cumplimiento de Microsoft 365. Para obtener una lista de conectores de datos proporcionados por Microsoft, consulte la [tabla Conectores](archiving-third-party-data.md#third-party-data-connectors) de datos de terceros. La tabla de conectores de datos de terceros también resume las soluciones de cumplimiento que puede aplicar a datos de terceros después de importar y archivar datos en Microsoft 365 y vínculos a las instrucciones paso a paso para cada conector.
 
-Para obtener más información Microsoft 365 conectores de datos, vea [Archivado de datos de terceros](archiving-third-party-data.md). Si un tipo de datos de terceros no es compatible con los conectores de datos disponibles en el centro de cumplimiento de Microsoft 365, puede trabajar con un partner que pueda proporcionarle un conector personalizado. Para obtener una lista de partners con los que puede trabajar y el proceso paso a paso para este método, vea Trabajar con un partner para archivar datos [de terceros](work-with-partner-to-archive-third-party-data.md).
+Para obtener más información Microsoft 365 conectores de datos, vea [Archivado de datos de terceros](archiving-third-party-data.md). Si un tipo de datos de terceros no es compatible con los conectores de datos disponibles en el Centro de cumplimiento de Microsoft 365, puede trabajar con un partner que pueda proporcionarle un conector personalizado. Para obtener una lista de partners con los que puede trabajar y el proceso paso a paso para este método, vea Trabajar con un partner para archivar datos [de terceros](work-with-partner-to-archive-third-party-data.md).
 
 ### <a name="prerequisites-for-data-connectors"></a>Requisitos previos para conectores de datos
 
-Muchos de los conectores de datos disponibles en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de terceros requieren que prepare y realice tareas de configuración en el origen de datos de terceros. Estos requisitos previos se documentan detalladamente para cada conector de datos de terceros.
+Muchos de los conectores de datos disponibles en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de terceros requieren que prepare y realice tareas de configuración en el origen de datos de terceros. Estos requisitos previos se documentan detalladamente para cada conector de datos de terceros.
 
-Para los conectores de datos del centro de cumplimiento de Microsoft 365 proporcionado por uno de los asociados de Microsoft, la organización necesitará una relación comercial con el partner antes de poder implementar un conector.
+Para los conectores de datos en el Centro de cumplimiento de Microsoft 365 proporcionado por uno de los partners de Microsoft, su organización necesitará una relación comercial con el partner antes de poder implementar un conector.
 
 Puede encontrar requisitos de licencias para conectores de datos de terceros en [el Microsoft 365 comparación](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx) de licencias de cumplimiento.
 
 ## <a name="apis"></a>API
 
-Microsoft 365 api de cumplimiento están disponibles en el SDK de Microsoft Information Protection, la API de Microsoft Graph y la API Office 365 actividad de administración. Algunas API de cumplimiento forman parte de un nuevo conjunto de API de seguridad y cumplimiento que permiten a los desarrolladores de clientes de Microsoft 365, proveedores de software independientes, integradores de sistemas y proveedores de servicios de seguridad administrados crear soluciones de seguridad y cumplimiento de alto valor.
+Microsoft 365 API de cumplimiento están disponibles en el SDK de Microsoft Information Protection, la API de Microsoft Graph y la API Office 365 actividad de administración. Algunas API de cumplimiento forman parte de un nuevo conjunto de API de seguridad y cumplimiento que permiten a los desarrolladores de clientes de Microsoft 365, proveedores de software independientes, integradores de sistemas y proveedores de servicios de seguridad administrados crear soluciones de seguridad y cumplimiento de alto valor.
 
 Para obtener más información sobre cómo obtener acceso a Graph API, vea [Overview of Microsoft Graph](/graph/overview).
 
-### <a name="microsoft-information-protection-mip-sdk"></a>Microsoft Information Protection (MIP) SDK
+### <a name="microsoft-information-protection-mip-sdk"></a>MICROSOFT INFORMATION PROTECTION SDK de Microsoft Information Protection (MIP)
 
 El SDK de MIP expone los servicios de etiquetado y protección de Microsoft 365 de seguridad y cumplimiento a servicios y aplicaciones de terceros. Los desarrolladores pueden usar el SDK para crear compatibilidad nativa para aplicar etiquetas y protección a los archivos. Los desarrolladores pueden determinar qué acciones deben realizarse cuando se detectan etiquetas específicas y la razón sobre la información cifrada por MIP.
 
@@ -97,5 +97,5 @@ Para obtener información sobre los requisitos de licencia para el uso de las AP
 
 ### <a name="microsoft-graph-connector-apis-preview"></a>API de Microsoft Graph Connector (versión preliminar)
 
-Con [los conectores Graph Microsoft,](/microsoftsearch/connectors-overview)las organizaciones pueden indizar datos de terceros para que aparezcan en los resultados de Microsoft Search. Esta característica expande los tipos de orígenes de contenido que se pueden buscar en las aplicaciones de productividad de Microsoft 365 y del ecosistema más amplio de Microsoft. Los datos de terceros se pueden hospedar localmente o en nubes públicas o privadas. A partir Advanced eDiscovery, estamos habilitando la vista previa del desarrollador del valor de cumplimiento integrado de Microsoft 365 aplicaciones conectadas. Esto permite el cumplimiento de aplicaciones que se integran en el Microsoft 365 para habilitar a los usuarios con experiencias de cumplimiento sin problemas. Para obtener más información sobre cómo incorporar las API de Microsoft Graph Connector en la vista aplicaciones, vea [Crear,](/graph/search-index-manage-connections)actualizar y eliminar conexiones en microsoft Graph .
+Con [los conectores Graph Microsoft,](/microsoftsearch/connectors-overview)las organizaciones pueden indizar datos de terceros para que aparezcan en Búsqueda de Microsoft resultados. Esta característica expande los tipos de orígenes de contenido que se pueden buscar en las aplicaciones de productividad de Microsoft 365 y del ecosistema más amplio de Microsoft. Los datos de terceros se pueden hospedar localmente o en nubes públicas o privadas. A partir Advanced eDiscovery, estamos habilitando la vista previa del desarrollador del valor de cumplimiento integrado de Microsoft 365 aplicaciones conectadas. Esto permite el cumplimiento de aplicaciones que se integran en el Microsoft 365 para habilitar a los usuarios con experiencias de cumplimiento sin problemas. Para obtener más información sobre cómo incorporar las API de Microsoft Graph Connector en la vista aplicaciones, vea [Crear,](/graph/search-index-manage-connections)actualizar y eliminar conexiones en microsoft Graph .
 
