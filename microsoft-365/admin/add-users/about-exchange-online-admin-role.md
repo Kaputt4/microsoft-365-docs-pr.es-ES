@@ -21,18 +21,18 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange administradores en línea administran el correo electrónico y los buzones de su organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario.
-ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: e4c5e437ae72e3d3baac4140200670684af73cf1080c7b80edca044389465684
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706219"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816024"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del Exchange Online de administración
 
 Para ayudarle a administrar Microsoft 365, [](assign-admin-roles.md) puede asignar permisos a los usuarios para administrar el correo electrónico y los buzones de su organización desde el centro de administración de [Exchange.](/exchange/exchange-admin-center) Para ello, debe asignarlos al rol de administrador de Exchange.
   
- **Sugerencia:** Al asignar a alguien al Exchange de administración, asígnele también el rol de administrador de servicio. De esta forma, pueden ver información importante en el centro de administración de Microsoft 365, como el estado del servicio Exchange Online, y las notificaciones de cambios y lanzamientos.
+ **Sugerencia:** Al asignar a alguien al Exchange de administración, asígnele también el rol de administrador de servicio. De esta forma, pueden ver información importante en el Centro de administración de Microsoft 365, como el estado del servicio Exchange Online, y las notificaciones de cambio y lanzamiento.
 
 Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se les asigna el Exchange de administración:
   

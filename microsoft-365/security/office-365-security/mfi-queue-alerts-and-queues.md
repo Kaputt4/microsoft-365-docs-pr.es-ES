@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden aprender a usar el widget Colas en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar el flujo de correo fallido a sus organizaciones locales o asociadas a través de conectores salientes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9b4bee0a8be6b7fdcc022add2092fb16b88d5d2f3f245e6a998036d66ed490af
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599988"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56816517"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Información sobre colas en el Centro de seguridad & cumplimiento
 
@@ -95,6 +95,6 @@ Se muestra el mismo menú desplegable después de hacer clic en **Ver cola** en 
 
 ![Los mensajes se han retrasado en los detalles de alerta en el Centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 81ab9b0aabc9b9699e0cee27b0046748a2a585df511f271316e01200ce552221
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56814780"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -38,8 +38,8 @@ Si es un cliente de Microsoft 365 con buzones en Exchange Online o un cliente in
 Las listas de remitentes seguros disponibles se describen en la siguiente lista en orden de lo más recomendado a lo menos recomendado:
 
 1. Reglas de flujo de correo
-2. Outlook Caja fuerte remitentes
-3. Lista de direcciones IP permitidos (filtrado de conexiones)
+2. Remitentes seguros de Outlook
+3. Lista de direcciones IP permitidas (filtrado de conexiones)
 4. Listas de remitentes permitidos o listas de dominios permitidos (directivas contra correo no deseado)
 
 Las reglas de flujo de correo permiten la mayor flexibilidad para garantizar que solo se permiten los mensajes correctos. Las listas de remitentes permitidos y dominios permitidos en directivas contra correo no deseado no son tan seguras como la lista de direcciones IP permitidas, ya que el dominio de correo electrónico del remitente se suplanta fácilmente. Sin embargo, la lista de direcciones IP  permitidos también presenta un riesgo, ya que el correo electrónico de cualquier dominio que se envía desde esa dirección IP omitirá el filtrado de correo no deseado.

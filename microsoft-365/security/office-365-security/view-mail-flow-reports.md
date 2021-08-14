@@ -19,12 +19,12 @@ description: Los administradores pueden obtener información sobre los informes 
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 087b9fea8b22a9d1f99f2bc3a74217a0b21aa264d7e26764e6abfe71f5d84075
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029482"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56816055"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel Informes del Centro de & cumplimiento
 
@@ -36,9 +36,9 @@ ms.locfileid: "53029482"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> La mayoría de los informes que se describen en este tema están disponibles en el Centro de administración de Exchange (EAC). Para obtener más información, vea [Informes de flujo de correo en el nuevo Centro de administración de Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports). El [informe de reglas de transporte de Exchange](view-email-security-reports.md#exchange-transport-rule-report) está disponible en el portal de Microsoft 365 Defender.
+> La mayoría de los informes que se describen en este tema están disponibles en el Centro Exchange administración (EAC). Para obtener más información, vea [Informes de flujo de correo en el nuevo centro Exchange administración](/exchange/monitoring/mail-flow-reports/mail-flow-reports). El [Exchange de regla de transporte](view-email-security-reports.md#exchange-transport-rule-report) está disponible en el portal Microsoft 365 Defender transporte.
 
-Además de los informes de flujo [](mail-flow-insights-v2.md) de correo que están disponibles en el panel flujo de correo en el Centro de seguridad y cumplimiento de &, hay una variedad de informes de flujo de correo adicionales disponibles en el panel informes para ayudarle a supervisar su organización de Microsoft 365.
+Además de los informes de flujo [](mail-flow-insights-v2.md) de correo que están disponibles en el panel flujo de correo en el Centro de seguridad y cumplimiento de &, hay una variedad de informes de flujo de correo adicionales disponibles en el panel Informes para ayudarle a supervisar su organización Microsoft 365.
 
 Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-these-reports)puede ver estos informes en el Centro de seguridad [& cumplimiento](https://protection.office.com) yendo al **Panel de** \> **informes**. Para ir directamente al panel Informes, abra <https://protection.office.com/insightdashboard> .
 
@@ -84,7 +84,7 @@ Si hace clic **en Filtros** en una vista de informe, puede especificar un interv
 
 Si hace clic **en Ver tabla de detalles** en una vista de informe, se muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Dirección y nombre del conector**
 - **Tipo de conector**
 - **¿TLS forzada?**: El valor **True** o **False**.
@@ -98,29 +98,29 @@ Si hace clic **en Filtros en** una vista de tabla de detalles, puede especificar
 
 Para volver a la vista informe, haga clic **en Ver informe**.
 
-## <a name="exchange-transport-rule-report"></a>Informe de reglas de transporte de Exchange
+## <a name="exchange-transport-rule-report"></a>Exchange de regla de transporte
 
-El **informe de reglas de transporte de Exchange** muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
+El **Exchange de regla** de transporte muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Regla de transporte \>  de **Exchange**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Exchange \>  **de transporte**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
-![Widget de regla de transporte de Exchange en el panel Informes](../../media/transport-rule-report-widget.png)
+![Exchange de regla de transporte en el panel Informes](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Vista Informe para el informe de reglas de transporte de Exchange
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Vista Informe para el informe Exchange regla de transporte
 
 Los siguientes gráficos están disponibles en la vista informe:
 
-- **Ver datos por: reglas de transporte de** \> Exchange **Dividir por: Dirección:** este gráfico  muestra  el número de mensajes entrantes y salientes que se vieron afectados por las reglas de transporte.
+- **Ver datos por: Exchange de transporte** \> **Dividir por: Dirección:** este gráfico  muestra  el número de mensajes entrantes y salientes que se vieron afectados por las reglas de transporte.
 
-- **Ver datos por: reglas de transporte de** \> Exchange **Dividir por: Gravedad:** este gráfico muestra  el número de mensajes de gravedad alta y media y **de gravedad** baja. El nivel de gravedad se establece como una acción en la regla (**Auditar** esta regla con el nivel de gravedad o _SetAuditSeverity_). Para obtener más información, vea [Acciones de regla de flujo de correo en Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **Ver datos por: Exchange de transporte** \> **Dividir por: Gravedad:** este gráfico muestra  el número de mensajes de gravedad alta y media y **de gravedad** baja. El nivel de gravedad se establece como una acción en la regla (**Auditar** esta regla con el nivel de gravedad o _SetAuditSeverity_). Para obtener más información, vea [Acciones de regla de flujo de correo en Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Ver datos por: reglas de transporte** \> de DLP Exchange **Dividir por: Dirección:** este gráfico  muestra  el número de mensajes entrantes y salientes que se vieron afectados por las reglas de transporte de prevención de pérdida de datos (DLP). Puede refinar aún más el gráfico seleccionando una de las siguientes opciones:
+- **Ver datos por: DLP Exchange de transporte** \> **Dividir por: Dirección:** este gráfico  muestra  el número de mensajes entrantes y salientes que se vieron afectados por las reglas de transporte de prevención de pérdida de datos (DLP). Puede refinar aún más el gráfico seleccionando una de las siguientes opciones:
 
   - **Mostrar datos para: todas las reglas de transporte DLP**
   - **Mostrar datos para: usuarios en peligro**
   - **Mostrar datos para: Bajo volumen de contenido detectado por la Ley Patriota de EE.UU.**
 
-- **Ver datos por: reglas de transporte** \> de DLP Exchange **Dividir por: Dirección:** esta vista muestra el número de mensajes  de gravedad alta y media y de gravedad baja que se vieron afectados por las reglas de transporte DLP.  Puede refinar aún más el gráfico seleccionando una de las siguientes opciones:
+- **Ver datos por: DLP Exchange de transporte** \> **Dividir por: Dirección:** esta vista muestra el número de mensajes  de gravedad alta y media y de gravedad baja que se vieron afectados por las reglas de transporte DLP.  Puede refinar aún más el gráfico seleccionando una de las siguientes opciones:
 
   - **Mostrar datos para: todas las reglas de transporte DLP**
   - **Mostrar datos para: usuarios en peligro**
@@ -132,32 +132,32 @@ Si hace clic **en Filtros** en una vista de informe, puede modificar los resulta
 - Valores de dirección
 - Valores de gravedad
 
-![Vista Informe en el informe de reglas de transporte de Exchange](../../media/transport-rule-report-report-view.png)
+![Vista Informe en el informe Exchange regla de transporte](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Vista de tabla de detalles para el informe de reglas de transporte de Exchange
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Vista de tabla de detalles para el informe Exchange regla de transporte
 
 Si hace clic **en Ver tabla de detalles,** la información que se muestra depende del gráfico que estaba mirando:
 
-- **Ver datos por: Reglas de transporte de Exchange:**
+- **Ver datos por: Exchange de transporte :**
 
-  - **Fecha**
+  - **Date**
   - **Regla de transporte**
-  - **Asunto**
+  - **Subject**
   - **Dirección del remitente**
   - **Dirección de destinatario**
   - **Gravedad**
-  - **Dirección**
+  - **Direction**
 
-- **Ver datos por: Reglas de transporte de Dlp Exchange**:
+- **Ver datos por: DLP Exchange de transporte:**
 
   - **Fecha**
   - **Directiva DLP**
   - **Regla de transporte**
-  - **Asunto**
+  - **Subject**
   - **Dirección del remitente**
   - **Dirección de destinatario**
   - **Gravedad**
-  - **Dirección**
+  - **Direction**
 
 Si hace clic **en Filtros en** una vista de tabla de detalles, puede modificar los resultados con los filtros siguientes:
 
@@ -230,7 +230,7 @@ Al abrir el informe, la **pestaña Tipo** está seleccionada de forma predetermi
 - **Dirección**:
 
   - **Entrante**
-  - **Saliente**
+  - **Salida**
   - **Intra-org:** este recuento es para mensajes dentro de un espacio empresarial, es decir, sender abc@domain.com al destinatario xyz@domain.com (se cuenta por separado de **Entrante** y **Saliente**)
 
 - **Tipo**:
@@ -248,7 +248,7 @@ Puede cambiar estos filtros haciendo clic en **Filtrar** o haciendo clic en un v
 
 La tabla de datos contiene la siguiente información:
 
-- **Dirección**
+- **Direction**
 - **Tipo**
 - **24 horas**
 - **3 días**
@@ -302,7 +302,7 @@ Si hace clic en la **pestaña Embudo,** de forma predeterminada, esta vista cont
 - **Dirección**:
 
   - **Entrante**
-  - **Saliente**
+  - **Salida**
   - **Intra-org:** este recuento es para los mensajes enviados dentro de un espacio empresarial; Es decir, el remitente abc@domain.com al destinatario xyz@domain.com (se cuenta por separado de Entrante y Saliente).
 
 La vista de agregado y la vista de tabla de datos permiten 90 días de filtrado.
@@ -326,7 +326,7 @@ Para ver el correo electrónico filtrado por EOP o Defender Office 365 por separ
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Fecha**
+- **Date**
 - **Correo electrónico total**
 - **Protección perimetral**
 - **Antimalware, reputación de archivo, bloque de tipo de archivo:**
@@ -372,7 +372,7 @@ Si hace clic en la **pestaña Vista técnica,** de forma predeterminada, esta vi
 - **Dirección**:
 
   - **Entrante**
-  - **Saliente**
+  - **Salida**
   - **Intra-org:** este recuento es para mensajes dentro de un espacio empresarial, es decir, remitente abc@domain.com al destinatario xyz@domain.com (se cuenta por separado de Entrante y Saliente)
 
 La vista de agregado y la vista de tabla de datos permiten 90 días de filtrado.
@@ -473,7 +473,7 @@ Si hace clic **en Ver tabla de detalles** en la vista Dividir **por:** Direcció
 
 - **Fecha (UTC)**
 - **Tipo**
-- **Dirección**
+- **Direction**
 - **Recuento de mensajes**
 
 Si hace clic **en Filtros en** una vista de tabla de detalles, puede modificar los resultados con los filtros siguientes:
@@ -555,7 +555,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+> Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

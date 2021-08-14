@@ -1,5 +1,5 @@
 ---
-title: Modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados
+title: Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,14 +16,14 @@ ms.collection:
 description: Los administradores pueden aprender a modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 23c390babc64909aa860554437b60e2370d0fd1f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 03f2d3f61bc61862bc221f338e6115b035fd2ea349be5531ca2035558046ba06
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56814288"
 ---
-# <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados
+# <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

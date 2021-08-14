@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el informe de dominio no aceptado en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar los mensajes de la organización local donde el dominio del remitente no está configurado en Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb33feb56bf2b52731c03273ce0c6444c333f348
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 018fb5ee8e2d0532cc96f85f4ec66e146dae8eb81a8e189e8746c26fde71fe7e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56816526"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Informe de dominio no aceptado en el Centro de seguridad & cumplimiento
 
@@ -50,7 +50,7 @@ Si mantiene el mouse sobre un punto de datos (día) en el gráfico, verá el nú
 
 Si hace clic **en Ver tabla de detalles** en una vista de informe, se muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Nombre del conector de entrada**
 - **Dominio del remitente**
 - **Recuento de mensajes**
@@ -62,7 +62,7 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Al seleccionar una fila de la tabla, aparece un menú desplegable con la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Nombre del conector de entrada**
 - **Dominio del remitente**
 - **Recuento de mensajes**

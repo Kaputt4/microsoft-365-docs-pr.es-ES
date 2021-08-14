@@ -1,5 +1,5 @@
 ---
-title: Archivos adjuntos seguros
+title: Datos adjuntos seguros
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Caja fuerte datos adjuntos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 127d862d235abc4cd81f62679b97077c7a80bd70
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 0158ef1e182b0c0def6a84f71608660134b5cbc68f467f8a43485447c02c7999
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56815371"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Caja fuerte Datos adjuntos de Microsoft Defender para Office 365
 

@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el mapa de flujo de correo en el panel flujo de correo del Centro de seguridad y cumplimiento de & para visualizar y realizar un seguimiento de cómo fluye el correo hacia y desde su organización a través de conectores y sin usar conectores.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e806dde2e6f3ddde5cce3b61c85fe0b024ba2fe
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6bf906871bc95bd57ef3ffc342352c4ce8b5fea96bb6a5212b04b000d66c7b41
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56816871"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mapa de flujo de correo en el Centro de seguridad & cumplimiento
 
@@ -76,6 +76,6 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Para volver a la vista informes, haga clic **en Ver informe**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

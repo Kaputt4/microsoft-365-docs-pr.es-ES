@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las características de protección contra la suplantación de identidad en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a28e2ecc45be941dbd6e346f9918e1692357840
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 8c1f28aa46b4f20c2ba12eaf7c688089d98ff8b37c08b27e0facb92a672ff2f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083109"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56813760"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protección contra suplantación de identidad en Microsoft 365
 

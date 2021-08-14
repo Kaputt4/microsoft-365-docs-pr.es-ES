@@ -20,12 +20,12 @@ search.appverid:
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico comprometida utilizando las herramientas disponibles en Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 090253806295d0a5db67afbe769c9c0ca8be4b39
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
-ms.translationtype: MT
+ms.openlocfilehash: dc34894998fda5ec28db6752f50c9122d3a2b416c5e5d7bd443e756681ce50b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56815374"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
@@ -136,7 +136,7 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
 
 4. Abra el Centro de administración de Exchange (EAC) en <https://admin.exchange.microsoft.com> y vaya a **Destinatarios** \> **Buzones**.
 
-5. Busque y seleccione el usuario. En el control flotante de detalles del buzón que se abre, siga estos pasos:
+5. Busque y seleccione el usuario. Se abrirá el control flotante de detalles del buzón y deberá seguir estos pasos:
    - En la sección **Aplicaciones de correo electrónico**, bloquee todas las opciones de configuración disponibles. Para ello, mueva el botón de alternancia a la derecha ![Deshabilitar](../../media/scc-toggle-on.png):
      - **Outlook en la Web**
      - **Outlook para escritorio (MAPI)**

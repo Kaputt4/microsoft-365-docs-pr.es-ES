@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo puede establecer una directiva para permitir a los usuarios restablecer sus propias contraseñas mediante la herramienta de restablecimiento de contraseñas de autoservicio.
-ms.openlocfilehash: 284a81e46ff22bf0a2ae514db81432b64e342a7f
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 9743c45d43510eb1db9e4d27d2b7bcf65d1bdb100b53ccefb56c25a9082153f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815652"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 

@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a buscar y usar defender para O
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8bb03202139137adf55c4c10230b1c4e99253ba
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: ca1013e631c0a041d2fa4475081588a65c299129fc017e98235f57c95cba88f1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56817120"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para obtener Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -222,7 +222,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

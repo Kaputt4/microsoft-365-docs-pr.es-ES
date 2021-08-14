@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8d33804e8c1405093843709e06250beb7f10512
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 40301b0fd16b7d0b29b6a89ec009fc07c85b33ba587833866dd2e2b49741f85d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56816532"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Cómo funciona la investigación automatizada y la respuesta en Microsoft Defender para Office 365
 
@@ -95,7 +95,7 @@ Las funcionalidades de AIR en Microsoft Defender para Office 365 [incluyen infor
 
 Por ejemplo, recientemente, una organización estableció una forma de que su equipo de operaciones de seguridad vea alertas de suplantación de identidad notificadas por el usuario que air ya ha procesado. Su solución integra alertas relevantes con el servidor SIEM de la organización y su sistema de administración de casos. La solución reduce en gran medida el número de falsos positivos para que su equipo de operaciones de seguridad pueda centrar su tiempo y esfuerzo en amenazas reales. Para obtener más información sobre esta solución personalizada, vea el blog tech Community: Mejorar la eficacia de su SOC con Microsoft Defender para Office 365 y la API de administración [de O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Introducción al uso de AIR](office-365-air.md)
 - [Ver acciones de corrección pendientes o completadas](air-review-approve-pending-completed-actions.md)

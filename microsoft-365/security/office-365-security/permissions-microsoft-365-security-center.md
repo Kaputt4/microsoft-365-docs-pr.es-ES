@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a administrar los permisos en e
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ed1d90bdc6e222d44179a77e9617d05909a4258
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 9f417bbb784a328970c32602d52a76f5c855016f325b316af53ed0a4ff137db1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926468"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56815236"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Permisos en el portal de Microsoft 365 Defender
 

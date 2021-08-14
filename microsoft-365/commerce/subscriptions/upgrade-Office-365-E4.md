@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Obtenga información sobre cómo actualizar desde una Office 365 de E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ee90038bb80120ed727cd2dee0c43a894053440f
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 3131f163bcf846c623213a3e2d7c88e6d21cd1479f64185d2b70be81de102c23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344631"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892632"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Actualización desde una suscripción Office 365 E4
 
@@ -36,7 +36,7 @@ En este artículo se describe el proceso de actualización de un Office 365 E4 a
 
 ## <a name="what-are-my-options-for-how-to-upgrade"></a>¿Cuáles son mis opciones para actualizar?
 
-La forma más sencilla de actualizar  el plan es usar la pestaña Actualizar en el centro Microsoft 365 administración. Sin embargo, el uso **de la pestaña** Actualizar no se admite en todas las situaciones. Si el escenario no es compatible, es posible que pueda actualizar los planes manualmente.
+La forma más sencilla de actualizar el plan es usar la **pestaña** Actualizar en el Centro de administración de Microsoft 365. Sin embargo, el uso **de la pestaña** Actualizar no se admite en todas las situaciones. Si el escenario no es compatible, es posible que pueda actualizar los planes manualmente.
 
 ## <a name="what-is-the-upgrade-tab"></a>¿Qué es la pestaña Actualizar?
 
@@ -66,7 +66,7 @@ Hay varias razones por las que no puede actualizar los planes automáticamente. 
 
 ## <a name="will-a-credit-check-be-required"></a>¿Se requiere una comprobación de crédito?
 
-Si va a pagar el nuevo plan mediante factura o si la compra supera un determinado costo, es posible que se requiera efectuar una comprobación de crédito. Si se necesita una comprobación de crédito, la actualización puede tardar hasta dos días laborables. Los administradores no tienen acceso al centro de administración Microsoft 365 hasta que se complete la comprobación de crédito. Sin embargo, los usuarios aún tienen acceso completo al plan E4 hasta que finalice la actualización.
+Si va a pagar el nuevo plan mediante factura o si la compra supera un determinado costo, es posible que se requiera efectuar una comprobación de crédito. Si se necesita una comprobación de crédito, la actualización puede tardar hasta dos días laborables. Los administradores no tienen acceso a la Centro de administración de Microsoft 365 hasta que se complete la comprobación de crédito. Sin embargo, los usuarios aún tienen acceso completo al plan E4 hasta que finalice la actualización.
 
 ## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>Actualizar el plan mediante la pestaña Actualizar
 
@@ -74,7 +74,7 @@ Si va a pagar el nuevo plan mediante factura o si la compra supera un determinad
 
 A continuación, le detallamos algunos aspectos importantes que ha de conocer antes de comenzar.
 
-- **Planear el tiempo de inactividad administrativo.** Los administradores no pueden usar el Microsoft 365 de administración mientras se actualiza el plan. Según el número de usuarios que tenga, la actualización puede tardar de minutos a horas. Te recomendamos que planees realizar la actualización cuando no necesites realizar actualizaciones con el centro Microsoft 365 administración.
+- **Planear el tiempo de inactividad administrativo.** Los administradores no pueden usar el Centro de administración de Microsoft 365 mientras se actualiza el plan. Según el número de usuarios que tenga, la actualización puede tardar de minutos a horas. Te recomendamos que planees realizar la actualización cuando no necesites realizar actualizaciones con el Centro de administración de Microsoft 365.
 
     Los usuarios no experimentan ninguna interrupción del servicio mientras se actualiza el plan: siguen teniendo acceso total a la suscripción de E4 durante el proceso de actualización. Una vez finalizada la actualización, los usuarios tienen acceso al nuevo plan.
 - **Usuarios, licencias, facturación y dominios personalizados.** Para comprender cómo se administran los usuarios y las licencias durante la actualización, cómo afectan los planes de actualización a la facturación y cómo controlar dominios personalizados, consulte ¿Qué hace la actualización de un plan a mi servicio y [facturación?](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
@@ -127,7 +127,7 @@ Antes de pasar al siguiente paso, es importante asegurarse de que se hayan confi
 
 ### <a name="step-3-reassign-licenses-to-users"></a>Paso 3: Reasignar licencias a los usuarios
 
-Puede usar el Centro Microsoft 365 administración para reasignar licencias para hasta 20 usuarios a la vez. Para obtener información sobre cómo, vea [Mover usuarios a una suscripción diferente.](move-users-different-subscription.md)
+Puede usar el Centro de administración de Microsoft 365 para reasignar licencias para un máximo de 20 usuarios a la vez. Para obtener información sobre cómo, vea [Mover usuarios a una suscripción diferente.](move-users-different-subscription.md)
 
 > [!TIP]
 > Si tiene una gran cantidad de usuarios, puede usar [Office 365 PowerShell para asignar licencias de usuario en masa](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).

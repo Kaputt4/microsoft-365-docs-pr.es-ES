@@ -15,12 +15,12 @@ ms.custom:
 description: Obtenga información sobre Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 8214e4b64dbd1c89f9b393e9e88cd57e6b72dde73740874b46e4118b9916411a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930168"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56813832"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -100,10 +100,10 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 |Correo no deseado saliente|[Protección contra correo no deseado saliente en EOP](outbound-spam-controls.md) <p> [Configurar el filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md) <p> [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](external-email-forwarding.md)|
 |Filtrado de la conexión|[Configurar el filtrado de la conexión](configure-the-connection-filter-policy.md)|
 |Anti-phishing|[Directivas contra la suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)|
-|Protección contra la suplantación de identidad|[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de permitidos o bloqueados del espacio empresarial](tenant-allow-block-list.md)|
+|Protección contra la suplantación de identidad|[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Purga automática de hora cero (ZAP) para mensajes de malware, correo no deseado y phishing entregados|[ZAP en Exchange Online](zero-hour-auto-purge.md)|
 |Directivas de seguridad predefinidas|[Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
-|Lista de inquilinos permitidos/bloqueados|[Administrar la lista de permitidos o bloqueados del espacio empresarial](tenant-allow-block-list.md)|
+|Lista de bloqueados y permitidos del espacio empresarial|[Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Bloquear listas para remitentes de mensajes|[Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)|
 |Permitir listas para remitentes de mensajes|[Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)|
 |Directory Based Edge Blocking (DBEB)|[Usar bloqueo perimetral basado en directorios para rechazar mensajes enviados a destinatarios no válidos](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|

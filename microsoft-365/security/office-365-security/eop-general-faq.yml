@@ -16,12 +16,12 @@ metadata:
   description: Obtenga respuestas a las preguntas generales más comunes sobre el servicio de filtrado de correo electrónico Exchange Online Protection (EOP) hospedado en la nube.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: e7ae5858841384c31acf9b785fc0071607ba5f1d
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: c46f918b644fdfb85b9290a09a8dea03571840b69d8c9d8508d3be5c9d7d428f
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52625370"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "56814759"
 title: Preguntas más frecuentes sobre EOP
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -52,7 +52,7 @@ summary: >
 
   - [Preguntas frecuentes sobre el seguimiento de mensajes](/exchange/monitoring/trace-an-email-message/message-trace-faq)
 sections:
-- name: Omitido
+- name: Omitidas
   questions:
   - question: >
       ¿Qué es EOP?
@@ -81,7 +81,7 @@ sections:
   - question: >
       ¿Dispone EOP de un portal de comunicación donde pueda obtener información sobre problemas conocidos y soluciones previstas? ¿Qué pasa con las nuevas características?
     answer: >
-      El Microsoft 365 de administración tendrá parte de esta información. Si se ve afectado por un evento de nivel de servicio, debería ver una alerta de comunicación (normalmente acompañada de un icono de timbre) después de iniciar sesión en el centro de administración de Microsoft 365 servicio. Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan.
+      El Centro de administración de Microsoft 365 tendrá parte de esta información. Si se ve afectado por un evento de nivel de servicio, debería ver una alerta de comunicación (normalmente acompañada de un icono de campana) después de iniciar sesión en el Centro de administración de Microsoft 365. Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan.
 
 
       En lo que respecta [](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) a las nuevas características de EOP, Microsoft 365 guía básica para empresas es un buen recurso para obtener información sobre las próximas nuevas características. También publicaremos artículos de blog sobre nuevas características en el sitio [web Microsoft 365 blogs.](https://www.microsoft.com/microsoft-365/blog/)

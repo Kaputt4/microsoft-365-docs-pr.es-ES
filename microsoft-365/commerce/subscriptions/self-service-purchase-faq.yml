@@ -20,15 +20,15 @@ metadata:
   - MET150
   description: Encuentre respuestas a las preguntas más frecuentes acerca de las compras de autoservicio.
   ms.date: 09/15/2020
-  ms.openlocfilehash: 7dcf16ff51854b595f61c2797a62632a3003b7c9
-  ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+  ms.openlocfilehash: 9cca88d8eb2d943d8d8d5377f4223e5a69251d6aa9048d8e0ab721373605cd4d
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "52539316"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53892644"
 title: Preguntas más frecuentes sobre la compra de autoservicio
 summary: >
-  La compra de autoservicio ofrece a los usuarios la oportunidad de probar nuevas tecnologías y desarrollar soluciones que, en última instancia, beneficien a sus organizaciones más grandes. Los equipos centrales de adquisiciones y TI tienen visibilidad para todos los usuarios que compran e implementan soluciones de compra de autoservicio a través <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">del centro Microsoft 365 administración.</a> Los administradores pueden desactivar las compras de autoservicio por producto a través de PowerShell. Para obtener más información, [vea Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
+  La compra de autoservicio ofrece a los usuarios la oportunidad de probar nuevas tecnologías y desarrollar soluciones que, en última instancia, beneficien a sus organizaciones más grandes. Los equipos centrales de adquisiciones y DEA tienen visibilidad para todos los usuarios que compran e implementan soluciones de compra de autoservicio a través de <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">la Centro de administración de Microsoft 365</a>. Los administradores pueden desactivar las compras de autoservicio por producto a través de PowerShell. Para obtener más información, [vea Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
 
   La compra de autoservicio está disponible para Power Platform (Power BI, Power Apps y Power Automate), Project y Visio.
@@ -43,7 +43,7 @@ sections:
   - question: >
       ¿Cómo realiza un cliente una compra de autoservicio?
     answer: >
-      Los clientes pueden realizar una compra de autoservicio en línea desde los sitios web del producto o desde mensajes de compra desde la aplicación. Primero se pide a los clientes que escriban una dirección de correo electrónico para asegurarse de que son un usuario en un inquilino Azure Active Directory (AD). A continuación, se les indica que inicien sesión con sus credenciales de Azure AD. Después de iniciar sesión, se le pide al cliente que seleccione cuántas suscripciones quiere comprar y que proporcione el pago con tarjeta de crédito. Una vez completada la compra, pueden empezar a usar su suscripción. El comprador tiene acceso a una vista limitada del centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> donde puede asignar licencias al producto a otras personas de su organización.
+      Los clientes pueden realizar una compra de autoservicio en línea desde los sitios web del producto o desde mensajes de compra desde la aplicación. Primero se pide a los clientes que escriban una dirección de correo electrónico para asegurarse de que son un usuario en un inquilino Azure Active Directory (AD). A continuación, se les indica que inicien sesión con sus credenciales de Azure AD. Después de iniciar sesión, se le pide al cliente que seleccione cuántas suscripciones quiere comprar y que proporcione el pago con tarjeta de crédito. Una vez completada la compra, pueden empezar a usar su suscripción. El comprador tiene acceso a una vista limitada de la Centro de administración de Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">donde</a> pueden asignar licencias al producto a otras personas de su organización.
   - question: >
       ¿Cuáles son las opciones de pago para las compras de autoservicio?
     answer: >
@@ -66,11 +66,11 @@ sections:
   - question: >
       Quién Pueden los compradores de autoservicio asignar licencias?
     answer: >
-      Los compradores de autoservicio solo pueden asignar licencias a los usuarios del mismo inquilino de Azure AD. El comprador tiene acceso a una vista limitada del centro de <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administración Microsoft 365</a> para asignar licencias. Los compradores pueden asignar licencias a los productos que han comprado a través de la compra de autoservicio y solo pueden asignar esas licencias a los usuarios del mismo inquilino de Azure AD.
+      Los compradores de autoservicio solo pueden asignar licencias a los usuarios del mismo inquilino de Azure AD. El comprador tiene acceso a una vista limitada del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para asignar licencias. Los compradores pueden asignar licencias a los productos que han comprado a través de la compra de autoservicio y solo pueden asignar esas licencias a los usuarios del mismo inquilino de Azure AD.
   - question: >
       ¿Dónde ve y administra sus compras el comprador de autoservicio?
     answer: >
-      Los compradores de autoservicio pueden administrar sus compras en la vista limitada del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro Microsoft 365 administración.</a> Los compradores siempre pueden llegar  al Centro de administración desde el icono Administración del iniciador de aplicaciones integrado en todas las aplicaciones Microsoft 365 y Dynamics Online. Los compradores pueden ver las compras que han realizado, comprar suscripciones adicionales al mismo servicio y asignar licencias para esas suscripciones a otros usuarios de su organización. Además, los compradores pueden ver y pagar su factura, actualizar su método de pago y cancelar su suscripción.
+      Los compradores de autoservicio pueden administrar sus compras en la vista limitada del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Los compradores siempre pueden llegar  al Centro de administración desde el icono Administración del iniciador de aplicaciones integrado en todas las aplicaciones Microsoft 365 y Dynamics Online. Los compradores pueden ver las compras que han realizado, comprar suscripciones adicionales al mismo servicio y asignar licencias para esas suscripciones a otros usuarios de su organización. Además, los compradores pueden ver y pagar su factura, actualizar su método de pago y cancelar su suscripción.
 - name: Precios
   questions:
   - question: >
@@ -86,7 +86,7 @@ sections:
   - question: >
       ¿Qué capacidades tiene un administrador para las compras de autoservicio?
     answer: >
-      Los administradores pueden ver todas las compras de autoservicio realizadas en su organización en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro Microsoft 365 administración.</a> Pueden ver el producto, el nombre del comprador, las suscripciones compradas, la fecha de expiración, el historial de pedidos, el precio de compra y los usuarios asignados para cada compra de autoservicio. En el Centro de administración de Power Platform, los administradores también pueden ver la capacidad de compras de autoservicio. Si es necesario para su organización, los administradores pueden desactivar las compras de autoservicio por producto a través de PowerShell. Los administradores tienen las mismas directivas de administración de datos y acceso a los productos comprados a través de la compra de autoservicio o de forma centralizada.
+      Los administradores pueden ver todas las compras de autoservicio realizadas en su organización en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Pueden ver el producto, el nombre del comprador, las suscripciones compradas, la fecha de expiración, el historial de pedidos, el precio de compra y los usuarios asignados para cada compra de autoservicio. En el Centro de administración de Power Platform, los administradores también pueden ver la capacidad de compras de autoservicio. Si es necesario para su organización, los administradores pueden desactivar las compras de autoservicio por producto a través de PowerShell. Los administradores tienen las mismas directivas de administración de datos y acceso a los productos comprados a través de la compra de autoservicio o de forma centralizada.
 
 
       Los administradores también pueden controlar si los usuarios de su organización pueden realizar compras de autoservicio. Para obtener más información, [vea Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
@@ -105,7 +105,7 @@ sections:
   - question: >
       ¿Dónde ve el administrador las compras de autoservicio?
     answer: >
-      Los administradores globales y de facturación pueden ver las suscripciones compradas a través de la compra de autoservicio en **Facturación** Sus productos en el  >   Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">de administración.</a> Pueden filtrar la lista de productos para mostrar solo las suscripciones compradas a través de compras centrales o para incluir suscripciones compradas a través de la compra de autoservicio.
+      Los administradores globales y de facturación pueden ver las suscripciones compradas a través de la compra de autoservicio en **Facturación** Sus productos en  >   <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">el Centro de administración de Microsoft 365</a>. Pueden filtrar la lista de productos para mostrar solo las suscripciones compradas a través de compras centrales o para incluir suscripciones compradas a través de la compra de autoservicio.
 
 
       Los administradores pueden ver el producto, el nombre del comprador, la suscripción comprada, la fecha de expiración, el historial de pedidos, el precio de compra y los usuarios asignados.
@@ -131,4 +131,4 @@ sections:
   questions:
   - question: >
       ¿Cuál es el rol de los partners de Microsoft en las compras de autoservicio?
-    answer: Los partners que tienen privilegios de administración delegados pueden ver compras de autoservicio en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">el centro</a>de administración de Microsoft 365, al igual que un administrador. Los partners pueden ayudar a admitir una organización que quiere centralizar los productos comprados a través de compras de autoservicio. Además, los partners pueden ofrecer soluciones para ampliar las capacidades de una compra de autoservicio.
+    answer: Los partners que tienen privilegios de administración delegados pueden ver compras de autoservicio en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">el Centro de administración de Microsoft 365</a>, al igual que un administrador. Los partners pueden ayudar a admitir una organización que quiere centralizar los productos comprados a través de compras de autoservicio. Además, los partners pueden ofrecer soluciones para ampliar las capacidades de una compra de autoservicio.

@@ -12,12 +12,12 @@ ms.assetid: ''
 description: Los administradores pueden aprender a usar la información sobre nuevos usuarios que reenvía correo electrónico en el Centro de seguridad & cumplimiento para investigar cuándo los usuarios de su organización reenvía mensajes a nuevos dominios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 807df82ca80e851554db7b8f373a5ca4af02a391
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1791f8663e7ffa0e9d0fb0b55f625f73f1482cf4f61e5f4ce03cdf1e1e525552
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56817141"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuevos usuarios reenviar información de correo electrónico en el Centro de seguridad & cumplimiento
 
@@ -106,7 +106,7 @@ Si selecciona una fila de la tabla, **aparecerá** un menú desplegable Detalles
 - **Detalles**
 - **Count**
 - **Fecha de comienzo**
-- **Recomendación:** Desde aquí, puede hacer clic en el vínculo para administrar el usuario en el centro Microsoft 365 administración.
+- **Recomendación:** Desde aquí, puede hacer clic en el vínculo para administrar el usuario en el Centro de administración de Microsoft 365.
 
 ![Los detalles se desván de la tabla de detalles de la vista Nuevos usuarios de reenvío en el informe Modificaciones de reenvío](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

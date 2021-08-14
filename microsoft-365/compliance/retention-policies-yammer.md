@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Yammer.
-ms.openlocfilehash: ea9e1acb96de32565c4d49529af75fd0224db7885fd6431b8de8bc287969c970
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 46397c4e0c414537b3f737105ce2d60e2c2ec7d366763b174a6ab377db4ee9c2
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834540"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803457"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Más información sobre la retención para Yammer
 

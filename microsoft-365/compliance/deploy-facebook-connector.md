@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar páginas de Facebook Business en Microsoft 365. Después de importar estos datos a Microsoft 365, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar el gobierno de los datos de Facebook de su organización.
-ms.openlocfilehash: b771c50eb5c2eb5f99269f1f399d27043ebee6bb
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 773893884aebba3d55e063e7e4f8fa331553eb215a2e20f6b8833b00811d7c12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892931"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Implementar un conector para archivar datos de páginas de Facebook Empresa
 
@@ -186,7 +186,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
 5. Haga **clic en** Guardar para guardar la configuración del conector.
 
-## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>Paso 5: Configurar un conector de Facebook en el centro de Microsoft 365 cumplimiento
+## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>Paso 5: Configurar un conector de Facebook en el Centro de cumplimiento de Microsoft 365
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic **en Conectores de datos** en la navegación izquierda.
 

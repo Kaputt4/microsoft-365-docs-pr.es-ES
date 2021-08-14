@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 8e1812d8b6df9b48377978715e3a213e66993965ad1d0e6108457150ad1d3d12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56816886"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -82,7 +82,7 @@ Con el Explorador de amenazas, el equipo de operaciones de seguridad puede encon
 
 En el Centro de acciones, puede ver las acciones de corrección que se realizaron y potencialmente deshacer la acción.
 
-1. Vaya al portal Microsoft 365 Defender ( <https://security.microsoft.com> ).
+1. Vaya al portal de Microsoft 365 Defender ( <https://security.microsoft.com> ).
 2. En el panel de navegación, seleccione **Centro de acciones**.
 3. Seleccione la **pestaña** Historial para ver la lista de acciones completadas.
 4. Seleccione un elemento. Se abre el panel desplegable.
