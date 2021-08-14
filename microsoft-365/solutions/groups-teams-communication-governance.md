@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los escenarios de colaboración de gobierno de comunicaciones.
-ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a85a88c79d9a08750c6ca2e9c16028c6a0407aeec68c8eb205f7f8132735d807
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538140"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893524"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gobierno de comunicaciones para escenarios de colaboración
 
@@ -29,18 +29,18 @@ Microsoft 365 ofrece una serie de controles que le ayudarán a controlar la comu
 
 En la tabla siguiente se proporciona una referencia rápida para los controles de comunicaciones disponibles en Microsoft 365. Se proporciona más información en las secciones siguientes.
 
-|Categoría|Descripción|Referencia|
+|Categoría|Description|Referencia|
 |:-------|:----------|:--------|
-|Mensajería |||
+|Mensajería |||
 ||Administrar lo que los usuarios pueden hacer mientras la mensajería se Teams.|[Administrar directivas de mensajería de Teams](/microsoftteams/messaging-policies-in-teams)|
 ||Controle quién puede iniciar y responder a las publicaciones de un canal.|[Configurar y administrar la moderación de canales en Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
-|Reuniones|||
+|Meetings|||
 ||Administrar lo que pueden hacer los participantes de la reunión.|[Manage meeting policies in Teams](/microsoftteams/meeting-policies-in-teams) (Administración de directivas de reunión en Teams)|
 ||Permitir o impedir que los usuarios anónimos se unan a reuniones.|[Permitir que los usuarios anónimos se unan a reuniones](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |Cumplimiento de comunicaciones|||
 ||Surface y responder a comunicaciones negligentes y negligentes|[Cumplimiento de comunicaciones en Microsoft 365](../compliance/communication-compliance.md)|
 
-## <a name="messaging"></a>Mensajería 
+## <a name="messaging"></a>Mensajería 
 
 Puede controlar qué características de mensajería de chat y canal (como editar o eliminar mensajes) están disponibles para los usuarios en Microsoft Teams mediante directivas de mensajería. Puede crear diferentes directivas para diferentes usuarios y grupos.
 
@@ -50,7 +50,7 @@ Puede controlar quién puede iniciar nuevas publicaciones y responder a las publ
 
 [Configurar y administrar la moderación de canales en Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
-## <a name="meetings"></a>Reuniones
+## <a name="meetings"></a>Meetings
 
 Puedes controlar las características que están disponibles para los Teams de la reunión, incluida la programación, el uso compartido de contenido, los participantes y las directivas de audio y vídeo.
 

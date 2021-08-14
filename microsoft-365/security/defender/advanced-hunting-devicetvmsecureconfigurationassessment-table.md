@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2e3e649911cb2ce63c2a49be0ebc93e35e8055d6
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8acb59c220bd400894aba2be17d5b2ac3216d7591fae5f5928b4670e0c4d2b5e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817032"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -53,9 +53,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ConfigurationSubcategory` | cadena | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
 | `ConfigurationImpact` | cadena | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `IsCompliant` | booleano | Indica si la configuración o la directiva está configurada correctamente |
-| `IsApplicable` | boolean | Indica si la configuración o directiva se aplica al dispositivo |
+| `IsApplicable` | booleano | Indica si la configuración o directiva se aplica al dispositivo |
 | `Context` | cadena | Información contextual adicional sobre la configuración o la directiva |
-| `IsExpectedUserImpact` | boolean | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
+| `IsExpectedUserImpact` | booleano | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cd11665983127a920c162cb6e945b0e45d2d077
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: cbaa328f7bf0f72fd05f76c9cd4b06e2cf19ef558b0f37dd538ae2889e0ede56
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651268"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53847252"
 ---
 # <a name="list-devices-by-recommendation"></a>Enumerar dispositivos por recomendación
 
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}/machineReferences
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
