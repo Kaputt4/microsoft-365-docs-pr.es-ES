@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre las nuevas funcionalidades de cifrado de mensajes de Office 365 que permiten la comunicación por correo electrónico protegido con personas de dentro y fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fedbfc753250cd9b2a080aab91342d904876e0ef
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
-ms.translationtype: MT
+ms.openlocfilehash: 0d33caff1499bf0792148039cb90d1aa6187247a90f53b7ea22828385d3d4fa3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819780"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes
 

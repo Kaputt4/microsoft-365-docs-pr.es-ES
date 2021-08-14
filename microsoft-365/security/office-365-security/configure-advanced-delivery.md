@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 88235051a50197be56f20dcce22e868ce6bf4b3e
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 0338cdd6dd45596e31650680d15c9fa31126929ae355389cce66e2045437bfcb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726205"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810335"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -55,7 +55,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 - [Explorador de amenazas/Detecciones](threat-explorer.md)en tiempo real en Defender para Office 365  plan 2: El administrador puede filtrar por el origen de invalidación del sistema y seleccionar simulación de **suplantación** de identidad o buzón **de SecOps**.
 - La entidad Detección de correo electrónico en explorador  de [amenazas/Detecciones](mdo-email-entity-page.md)en tiempo real: el administrador  puede ver un mensaje permitido por la directiva de la organización mediante el buzón **de SecOps** o la simulación de **suplantación** de identidad en invalidación de inquilino en la sección Invalidación.
 - Informe [de estado de](view-email-security-reports.md#threat-protection-status-report)protección  contra amenazas: el administrador puede filtrar por ver los datos por invalidación del sistema en el menú desplegable y seleccionar para ver los mensajes permitidos debido a una invalidación del sistema de simulación de suplantación de identidad. Para ver los mensajes permitidos por la  invalidación del buzón  de SecOps, puede seleccionar el desglose del gráfico por ubicación de entrega en el menú desplegable desglose del gráfico por razón.
-- [Búsqueda avanzada en Microsoft Defender para endpoint:](../defender-endpoint/advanced-hunting-overview.md)la simulación de phishing y las invalidaciones del sistema de buzones de SecOps se mostrarán como opciones dentro de OrgLevelPolicy en EmailEvents. 
+- [Búsqueda avanzada en Microsoft Defender para endpoint:](../defender-endpoint/advanced-hunting-overview.md)la simulación de phishing y las invalidaciones del sistema de buzones de SecOps se mostrarán como opciones dentro de OrgLevelPolicy en EmailEvents.
 - [Vistas de campaña:](campaigns.md)el administrador puede filtrar por **el origen de** invalidación del sistema y seleccionar simulación de **suplantación** de identidad o buzón **de SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
@@ -75,7 +75,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Usar el portal Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Reglas de amenazas sección \>  \>  Reglas de entrega \>  \> **avanzada**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas avanzada en \>  \>  \>  la **sección** Reglas.
 
 2. En la **página Entrega avanzada,** compruebe que la pestaña buzón **de SecOps** está seleccionada y, a continuación, siga uno de los pasos siguientes:
    - Haga ![ clic en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**.
@@ -95,20 +95,18 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Use el portal Microsoft 365 Defender para configurar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Reglas de amenazas sección \>  \>  Reglas de entrega \>  \> **avanzada**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas avanzada en \>  \>  \>  la **sección** Reglas.
 
 2. En la **página Entrega avanzada,** seleccione la pestaña **Simulación de suplantación** de identidad y, a continuación, realice uno de los siguientes pasos:
    - Haga ![ clic en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**.
    - Si no hay simulaciones de suplantación de identidad configuradas, haga clic en **Agregar**.
 
-3. En el **control desplegable Editar simulación de suplantación** de identidad de terceros que se abre, configure las siguientes opciones: 
-
-La dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** remitente P1 o remitente de sobre) es la dirección de correo electrónico que se usa en la transmisión SMTP del mensaje.
+3. En el **control desplegable Editar simulación de suplantación** de identidad de terceros que se abre, configure las siguientes opciones:
 
    - **Dominio** de envío: expanda esta configuración y escriba al menos un dominio de dirección de correo electrónico (por ejemplo, contoso.com) haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas.
 
      > [!NOTE]
-     > Use el dominio de la dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** remitente P1 o remitente de sobre) que se usa en la transmisión SMTP del mensaje. Esta dirección de correo electrónico normalmente se registra en el **campo de encabezado Return-Path** en el encabezado del mensaje.
+     > Use el dominio de la dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** remitente P1 o remitente de sobre) que se usa en la transmisión SMTP del mensaje.
 
    - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores admitidos son:
      - IP única: por ejemplo, 192.168.1.1.
@@ -117,7 +115,7 @@ La dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** 
    - Direcciones **URL** de simulación para permitir: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)
 
    Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
-   
+
    > [!NOTE]
    > Debe especificar al menos un dominio **de** envío y al menos un **IP** de envío para configurar una simulación de suplantación de identidad de terceros en entrega avanzada. Opcionalmente, puede incluir direcciones **URL de Simulation para garantizar** que las direcciones URL presentes en los mensajes de simulación no se bloqueen. Puede especificar hasta 10 entradas para cada campo. Debe haber una coincidencia en al menos un dominio de **envío y** un **IP** de envío, pero no se mantiene ninguna asociación entre valores.
 

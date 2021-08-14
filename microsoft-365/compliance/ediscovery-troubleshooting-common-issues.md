@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Obtenga información sobre los pasos básicos de solución de problemas que puede seguir para resolver problemas comunes en Office 365 exhibición de documentos electrónicos.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1ec120edcbccc64046b57507cd6cd6044fb583c5129c336e28890b67f369cd46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820164"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar y resolver problemas comunes de exhibición de documentos electrónicos
 
@@ -134,7 +134,7 @@ Al exportar resultados de búsqueda desde la exhibición de documentos electrón
 
 2. Busque la cantidad de datos que se descargarán en los parámetros SearchResults y SearchStatistics.
 
-3. Ejecute el siguiente comando:
+3. Ejecute el comando siguiente:
 
    ```powershell
    Get-ComplianceSearchAction | FL

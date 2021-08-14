@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga una lista de requisitos para usar Microsoft 365 Lighthouse.
-ms.openlocfilehash: 9c87744053ffe3bace90534287cd2b81697f3554
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1d2f2812e2f22060c2e401519f18ae8dc6f1959993ef7703fa1a9add69e9ae14
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395352"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53847960"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Requisitos para Microsoft 365 Lighthouse
 
