@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 20816b8b-8b21-458f-81c1-320b8116597e
 ROBOTS: NOINDEX
 description: 'Obtenga información sobre cómo registrarse Office 365 con su dirección de correo electrónico personal, si no prefiere agregar un dominio personalizado. '
-ms.openlocfilehash: fc691e74def953bd7314dcc40a54a58d977f989d
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: ca21978717f8ce4b43eb619e9f6122ec36db9c093a8b3d8be7052a47ce058fc9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823656"
 ---
 # <a name="signing-up-for-office-365-with-a-personal-email-address"></a>Registrarse para obtener Office 365 con una dirección de correo electrónico personal
 

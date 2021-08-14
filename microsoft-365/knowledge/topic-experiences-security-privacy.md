@@ -1,5 +1,5 @@
 ---
-title: Seguridad y privacidad de Microsoft Viva Topics
+title: Temas Microsoft Viva seguridad y privacidad
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Obtenga información sobre cómo planear la seguridad y privacidad de Microsoft Viva Topics
-ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: Obtenga información sobre cómo planear Temas Microsoft Viva seguridad y privacidad
+ms.openlocfilehash: cf7e631970196b2995891ef302f9af33dd2ab0388b95a54ea04b4a3a24d0a838
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864044"
 ---
-# <a name="microsoft-viva-topics-security-and-privacy"></a>Seguridad y privacidad de Microsoft Viva Topics
+# <a name="microsoft-viva-topics-security-and-privacy"></a>Temas Microsoft Viva seguridad y privacidad
 
 Los temas usan características de seguridad de contenido existentes en Microsoft 365, junto con los controles administrativos, para controlar lo que el contenido generado por AI se muestra a los usuarios de la organización. Es la combinación de la Microsoft 365 de seguridad (permisos para sitios, archivos y carpetas) y la configuración de administración temas que determinan lo que un usuario determinado puede ver en los temas.
 
-La configuración de los temas no modifica ningún control de acceso existente en los contenidos de su organización. Los usuarios solo ven el contenido al que tienen acceso.
+La configuración de Temas Viva no modifica ningún control de acceso existente en los contenidos de su organización. Los usuarios solo ven el contenido al que tienen acceso.
 
 En este artículo se describe cómo funcionan los temas desde una perspectiva de seguridad y las opciones que los administradores de conocimientos y los administradores de conocimientos tienen para controlar la visibilidad del tema. Lea este artículo como parte de la [planeación de temas](plan-topic-experiences.md).
 
@@ -86,7 +86,7 @@ Además, se recomiendan estos procedimientos recomendados:
 
 Aunque puede cambiar los permisos de las páginas de temas individuales para restringir el acceso a un grupo específico de usuarios, no se recomienda este enfoque porque se necesita un alto grado de esfuerzo administrativo.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Configurar Teams con tres niveles de protección](../solutions/configure-teams-three-tiers-protection.md)
 

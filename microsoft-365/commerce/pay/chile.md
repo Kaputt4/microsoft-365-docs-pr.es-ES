@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c0818a141b493be7f10eb29a6710c0d003286078
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3bc5cd0d9f83db0b751cd836300369916405459af36fe4baa5309803951fec48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856288"
 ---
 # <a name="payment-information-for-chile"></a>Información de pago para Chile
 

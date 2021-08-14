@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Summary: Use PowerShell to manage your Skype Empresarial Online user account properties with policies.'
-ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 51218d2158558e527f5ce9b3c12388e69cd3d87c140641762247a90d6e78043c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916707"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835060"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Administrar las directivas de Skype Empresarial Online con PowerShell
 
@@ -66,7 +66,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-En este ejemplo, los valores de esta directiva determinan lo que un uso puede o no puede hacer cuando se trata de comunicarse con usuarios federados. Por ejemplo, la propiedad EnableOutsideAccess debe establecerse en True para que un usuario pueda comunicarse con personas fuera de la organización. Tenga en cuenta que esta propiedad no aparece en el centro Microsoft 365 administración. En su lugar, la propiedad se establece automáticamente en True o False en función de las demás selecciones que realice. Las otras dos propiedades de interés son:
+En este ejemplo, los valores de esta directiva determinan lo que un uso puede o no puede hacer cuando se trata de comunicarse con usuarios federados. Por ejemplo, la propiedad EnableOutsideAccess debe establecerse en True para que un usuario pueda comunicarse con personas fuera de la organización. Tenga en cuenta que esta propiedad no aparece en el Centro de administración de Microsoft 365. En su lugar, la propiedad se establece automáticamente en True o False en función de las demás selecciones que realice. Las otras dos propiedades de interés son:
   
 - **EnableFederationAccess** indica si el usuario puede comunicarse con usuarios de dominios federados.
     

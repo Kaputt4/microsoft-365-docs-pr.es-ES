@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 6400e34e50baef8122886027683e6f75277cf85caa2ca539b81a79412462491d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884228"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -52,7 +52,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el equipo. |
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 7 |
 | `OSBuild` | cadena | Versión de compilación del sistema operativo que se ejecuta en la máquina |
-| `IsAzureADJoined` | boolean | Indicador booleano de si la máquina está unida al Azure Active Directory |
+| `IsAzureADJoined` | booleano | Indicador booleano de si la máquina está unida al Azure Active Directory |
 | `AadObjectId` | cadena | Identificador único del dispositivo en Azure AD |
 | `LoggedOnUsers` | cadena | Lista de todos los usuarios que han iniciado sesión en el equipo en el momento del evento en formato de matriz JSON |
 | `RegistryDeviceTag` | cadena | Etiqueta de máquina agregada a través del Registro |

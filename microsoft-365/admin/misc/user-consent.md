@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Obtén información sobre el consentimiento de los usuarios a las aplicaciones y cómo activarlas para permitir que las aplicaciones de terceros accedan a la información Microsoft 365 usuarios.
-ms.openlocfilehash: 629e64494c6d72a13c3b155370a8f47505e9fa20
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 83f48549532b5bf901c9de1416cf5bbe9e6374d23bf2da9c7a4900c847bdf160
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53391236"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823536"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Administración del consentimiento del usuario para aplicaciones en Microsoft 365
 

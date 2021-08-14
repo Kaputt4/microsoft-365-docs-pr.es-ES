@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6f5cc923b5a18b1f45dd186e88228db8c3a891cc
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: b3bf016af1951c8df19708cd89802e4e5d117da9b5cdacc186170103aec6f678
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841308"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863912"
 ---
 # <a name="app-control"></a>Control de aplicaciones
 

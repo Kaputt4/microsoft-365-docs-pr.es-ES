@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar el conmutador de inquilinos y las vistas multiinquilino que le ofrecen la capacidad de administrar los inquilinos desde una única ubicación.
-ms.openlocfilehash: e0bf6c872d4998c0cd0263fd8474ac5e9c99ef14
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 9573106ca7c82f92582fbe9eeebfdb7bc5bab751e67b105f55c35bed397f7d4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823629"
 ---
 # <a name="multi-tenant-management"></a>Administración multiinquilino
 
@@ -36,7 +36,7 @@ La administración multiinquilino ofrece una forma unificada de administración 
 
 ## <a name="move-between-tenants"></a>Mover entre inquilinos
 
-1. En el centro Microsoft 365 administración, seleccione el nombre de la organización.
+1. En el Centro de administración de Microsoft 365, seleccione el nombre de la organización.
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="Conmutador multiinquilino.":::
 
@@ -46,7 +46,7 @@ La administración multiinquilino ofrece una forma unificada de administración 
 
 ## <a name="view-all-tenants-page"></a>Ver la página Todos los inquilinos
 
-1. En el centro Microsoft 365 administración, en el panel de navegación izquierdo, seleccione **Todos los inquilinos**.
+1. En el Centro de administración de Microsoft 365, en la navegación izquierda, seleccione **Todos los inquilinos**.
 - En la **página Todos los inquilinos,** puede
   - Evaluar el estado del servicio
   - Revisar el uso de licencias
@@ -59,7 +59,7 @@ Si ha marcado un espacio empresarial como favorito, se expande automáticamente 
 
 La vista estado del servicio muestra si algún incidente o aviso está afectando a los inquilinos. Incluso le dirá cuántos de los inquilinos administrados se ven afectados.
 
-1. En el centro Microsoft 365 administración, en la vista multiinquilino, seleccione **Estado del servicio**.
+1. En el Centro de administración de Microsoft 365, en la vista multiinquilino, seleccione **Estado del servicio**.
 2. En la **vista** agregada página Estado del servicio, también puede ver el número total de incidentes, el número total de avisos que afectan a cualquiera de los inquilinos administrados y el número de servicios con incidentes activos. También puede ver cuántos de sus inquilinos se ven afectados por incidentes y avisos.
 
     - Puede usar la opción de filtro para ver problemas por tipo de problema o por servicio
@@ -73,9 +73,9 @@ La vista estado del servicio muestra si algún incidente o aviso está afectando
 
 La lista de inquilinos afectados se puede exportar al formato CSV para que los administradores puedan compartirla con equipos de soporte técnico.
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Ver un único espacio empresarial en el centro Microsoft 365 administración
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Ver un único espacio empresarial en el Centro de administración de Microsoft 365
 
-Puede volver al Centro Microsoft 365 administración de cualquiera de los inquilinos desde la **página Todos los inquilinos.**
+Puede volver a la Centro de administración de Microsoft 365 para cualquiera de los inquilinos desde la **página Todos los inquilinos.**
 
 1. En la **página Todos los inquilinos,** seleccione el nombre del inquilino para el que desea ver el Centro de administración.
 2. Se le dirige al Centro de administración de ese espacio empresarial.

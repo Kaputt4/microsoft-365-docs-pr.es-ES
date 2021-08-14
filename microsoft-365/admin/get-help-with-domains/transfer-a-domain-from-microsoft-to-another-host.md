@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Busque los pasos aquí para transferir un dominio de Microsoft a otro registrador. '
-ms.openlocfilehash: f34e9733ab53c8bdc6f4432c96e6232ecc26ee06
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: dfe774644295083c606ad52371ca0e8701fa773f5ff737f40fbcdf16e98077ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126352"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825684"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Transferir un dominio de Microsoft a otro host
 

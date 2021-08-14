@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cb127c838969ca560709ecacf9f7b08432e35250
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7504f29dfbd2c9de4f69f238f0b657fd535c5b3e323196bfaae2e19c3b79023d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863940"
 ---
 # <a name="assign-licenses"></a>Asignar licencias
 

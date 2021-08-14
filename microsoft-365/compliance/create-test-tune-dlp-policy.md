@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderás a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de la organización.
-ms.openlocfilehash: 3b7f74605c8a825bb03244f3a861ad3cca8f550d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: b503fbf62972c2c816fdf7396c7cad4eb2b5fe2514ca36375d7773c9e432d175
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872482"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -56,7 +56,7 @@ Estos permisos son necesarios para crear y aplicar una directiva DLP para no apl
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Cómo dlp detecta información confidencial
 
-DLP busca información confidencial por coincidencia de patrones de expresión regular (RegEx), en combinación con otros indicadores, como la proximidad de determinadas palabras clave a los patrones de coincidencia. Por ejemplo, un número de tarjeta de crédito VISA tiene 16 dígitos. Sin embargo, esos dígitos se pueden escribir de diferentes maneras, como 1111-1111-1111-1111, 1111 1111 1111 o 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+DLP busca información confidencial por coincidencia de patrones de expresión regular (RegEx), en combinación con otros indicadores, como la proximidad de determinadas palabras clave a los patrones de coincidencia. Por ejemplo, un número de tarjeta de crédito VISA tiene 16 dígitos. Sin embargo, estos dígitos se pueden escribir de diferentes maneras, como 1111-1111-1111-1111, 1111 1111 1111 o 1111111111111111.
 
 Cualquier cadena de 16 dígitos no es necesariamente un número de tarjeta de crédito, podría ser un número de vale de un sistema de asistencia o un número de serie de un fragmento de hardware. Para saber la diferencia entre un número de tarjeta de crédito y una cadena inofensiva de 16 dígitos, se realiza un cálculo (suma de comprobación) para confirmar que los números coinciden con un patrón conocido de las distintas marcas de tarjetas de crédito.
 

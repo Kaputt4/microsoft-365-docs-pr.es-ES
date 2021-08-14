@@ -24,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: Asigne licencias dependiendo de si quiere asignar licencias de producto a usuarios específicos o asignar licencias de usuarios a un producto específico.
 ms.date: 04/26/2021
-ms.openlocfilehash: 987572ae15ffdf6d2042c6e54eba586cd39ebcb9
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 03e5a5ef9524e51c6d3ff4bb982e24fd3df26b089985a8602e01cf5e520e0d45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393720"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825600"
 ---
 # <a name="assign-licenses-to-users"></a>Asignar licencias a los usuarios
 

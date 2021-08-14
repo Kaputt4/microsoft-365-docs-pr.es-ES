@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para habilitar la configuración Microsoft 365 seguridad adicional de su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: d1bff8b736e5074f621a173d206f7c5f77841b25
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3decba5b8e75525c8988f07e8e3af3e236ed5e2e597266901bec5346cec8660c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835156"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Mayor Microsoft 365 seguridad para su Microsoft 365 entorno de prueba empresarial
 
@@ -49,13 +49,13 @@ En esta fase, se habilita una mayor Microsoft 365 seguridad para su Microsoft 36
 
 Las aplicaciones que no admiten la autenticación moderna no pueden tener configuraciones de identidad y acceso a [dispositivos aplicadas,](../security/office-365-security/microsoft-365-policies-configurations.md) lo que es un elemento importante para proteger la suscripción Microsoft 365 y sus activos digitales. 
 
-1. Vaya al Centro de Microsoft 365 de administración ( ) e inicie sesión en su Microsoft 365 de laboratorio de [https://portal.microsoft.com](https://portal.microsoft.com) pruebas con su cuenta de administrador global.
+1. Vaya a la Centro de administración de Microsoft 365 ( ) e inicie sesión en su Microsoft 365 de laboratorio de [https://portal.microsoft.com](https://portal.microsoft.com) pruebas con su cuenta de administrador global.
     
   - Si usa el entorno de prueba Microsoft 365 ligero, inicie sesión desde el equipo local.
     
   - Si usa el entorno de prueba simulado de Microsoft 365 empresa, use [Azure Portal](https://portal.azure.com) para conectarse a la máquina virtual CLIENT1 y, a continuación, inicie sesión desde CLIENT1.
  
-2. En la nueva **pestaña Microsoft 365 centro** de administración, en Centros de **administración** en el panel de navegación izquierdo, haga clic **en SharePoint**.
+2. En la nueva **pestaña Centro de administración de Microsoft 365,** en **Centros de administración** en el panel de navegación izquierdo, haga clic en **SharePoint**.
 3. En la nueva **pestaña SharePoint centro de administración,** haga clic en Directivas > control de **acceso**.
 4. Haga **clic en Aplicaciones que no admiten la autenticación moderna,** seleccione Bloquear **acceso** y, a continuación, haga clic en **Guardar**.
 
