@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe Yammer actividad de grupos de usuarios para conocer el número de grupos de Yammer que se crean y usan en la organización y su actividad.
-ms.openlocfilehash: 470fd7dc70069688f6d0ec0bbf3ba92b40a82ae1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ee547e6da465cd36d62f62043c9364350352bc5a6b19da631a9e56071ef9d679
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816168"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer actividad de grupos
 
@@ -48,18 +48,18 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre del grupo  <br/> |Nombre del grupo. <br/> |
 |Administrador de grupo  <br/> |Nombre del administrador del grupo o propietario.  <br/> |
-|Eliminada  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
+|Deleted  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
 |Tipo  <br/> |Tipo de grupo, público o privado. <br/> |
 |Conectado a Office 365  <br/> |Indica si el grupo Yammer es también un Microsoft 365 grupo. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La fecha más reciente en la que el grupo leyó, publicó o gustó un mensaje.  <br/> |
-|Members  <br/> | El número de miembros del grupo.  <br/> |
+|Miembros  <br/> | El número de miembros del grupo.  <br/> |
 |Publicado  <br/> |Número de mensajes publicados en el grupo Yammer durante el período de informes. <br/>|
-|Lectura  <br/> |Número de conversaciones leídas en el grupo Yammer durante el período de informes.  <br/> |
+|Read  <br/> |Número de conversaciones leídas en el grupo Yammer durante el período de informes.  <br/> |
 |Etiquetado como “Me gusta”  <br/> |El número de mensajes que le gustaron en el grupo Yammer durante el período de informes. <br/>|
 |Nombre de red  <br/> |Nombre completo de la red a la que pertenece el grupo. |
 |||

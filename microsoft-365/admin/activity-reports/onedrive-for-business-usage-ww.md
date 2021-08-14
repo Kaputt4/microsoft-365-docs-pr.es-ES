@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Obtenga el OneDrive para la Empresa de uso para conocer el número total de archivos y almacenamiento usados en toda la organización. '
-ms.openlocfilehash: 92dd18c8e8f6ded655ac6f41d1179e96ef81090b
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 5b668880d03c2b14ee09361a68757ce5f6efb694f38e71e765d11a000fb04b61
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816312"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365 Informes en el Centro de administración: OneDrive para la Empresa de administración
 
@@ -56,10 +56,10 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |**Métrica**|**Definición**|
 |URL  <br/> |La dirección web del usuario OneDrive. <br/> |
 |Deleted  <br/> |El estado de eliminación del OneDrive. Pueden pasar al menos 7 días hasta que las cuentas se marquen como eliminadas.  <br/> |
-|Owner  <br/> |Nombre de usuario del administrador principal de la OneDrive.   <br/> |
+|Propietario  <br/> |Nombre de usuario del administrador principal de la OneDrive.   <br/> |
 |Nombre principal del propietario  <br/> |La dirección de correo electrónico del propietario del OneDrive. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La última fecha en que se realizó una actividad de archivo en el OneDrive. Si la OneDrive no ha tenido actividad de archivos, el valor se mostrará en blanco.  <br/> |
-|Archivos  <br/> |El número de archivos de la OneDrive. <br/>|
+|Files  <br/> |El número de archivos de la OneDrive. <br/>|
 |Archivos activos  <br/> | El número de archivos activos dentro del período de tiempo.<br/> NOTA: Si los archivos se quitaron durante el período de tiempo especificado para el informe, el número de archivos activos que se muestran en el informe puede ser mayor que el número actual de archivos de la OneDrive. >  Los usuarios eliminados seguirán apareciendo en los informes de 180 días.  <br/> |
 |Storage usado (MB)  <br/> |La cantidad de almacenamiento que OneDrive usa en MB. |
 |||

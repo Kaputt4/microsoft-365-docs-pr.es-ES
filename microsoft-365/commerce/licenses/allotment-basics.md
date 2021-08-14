@@ -18,12 +18,12 @@ ms.custom:
 - commerce_licensing
 description: Obtenga información sobre la nueva característica de asignación.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0910673ce54f3f977ed8ecbc3d6c77ac2ebad0cc
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: eacb738da3f2b2a3a76333040c945de7f26dee86862b87fcf10210b33e4ae835
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893132"
 ---
 # <a name="allotment-basics"></a>Conceptos básicos de asignación
 

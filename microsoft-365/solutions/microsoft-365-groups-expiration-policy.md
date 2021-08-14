@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Obtenga información sobre Microsoft 365 de expiración de grupos.
-ms.openlocfilehash: a5a57591e1659cf04b46f419bda3d3bca672729c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 831253a64ad30cf37370ec9e93e3f1d8172befc94705758e77367c3697c41686
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816669"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 de expiración de grupo
 
@@ -36,7 +36,7 @@ Los administradores pueden especificar un período de expiración y se eliminar�
 
 Los grupos que se usan activamente se renuevan automáticamente. Cualquiera de las siguientes acciones renovará automáticamente un grupo:
 - SharePoint: ver, editar, descargar, mover, compartir o cargar archivos. (Ver una página SharePoint no cuenta como una acción para la renovación automática).
-- Outlook: unirse al grupo, leer o escribir un mensaje de grupo desde el grupo y, como un mensaje (Outlook en la web).
+- Outlook: unirse al grupo, leer o escribir un mensaje de grupo desde el grupo y, como un mensaje (Outlook en la Web).
 - Teams: visitar un canal de teams.
 
 Tenga en cuenta que la única Yammer que desencadenará una renovación automática del grupo es la carga de un documento en SharePoint dentro de la comunidad.
@@ -47,11 +47,11 @@ Tenga en cuenta que la única Yammer que desencadenará una renovación automát
 Es importante saber que la expiración está desactivada de forma predeterminada. Los administradores tienen que habilitarlo para su organización si quieren usarlo.
 
 > [!NOTE]
-> La configuración y el uso de la directiva de expiración para grupos de Microsoft 365 requiere que poseas, pero no necesariamente asignes licencias de Azure AD Premium para los miembros de todos los grupos a los que se aplica la directiva de expiración. Para obtener más información, [vea Introducción a Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
+> La configuración y el uso de la directiva de expiración para grupos de Microsoft 365 requiere que posea, pero no necesariamente, asigne licencias Azure AD Premium los miembros de todos los grupos a los que se aplica la directiva de expiración. Para obtener más información, [vea Introducción a Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Quién puede configurar y usar la directiva de expiración Microsoft 365 grupos de servidores?
 
-|Función|Qué pueden hacer|
+|Rol|Qué pueden hacer|
 |---------|---------|
 |Office 365 global (en Azure, el administrador de la compañía), el administrador de usuarios|Cree, lea, actualice o elimine la configuración de la directiva Microsoft 365 de expiración de grupos.|
 |Usuario|Renovar o [restaurar](/azure/active-directory/users-groups-roles/groups-restore-deleted) un Microsoft 365 grupo que poseen|

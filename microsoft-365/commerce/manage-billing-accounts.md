@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre las cuentas de facturación y cómo se usan para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras.
 ms.date: 03/17/2021
-ms.openlocfilehash: 7b19c30a8a11a816d5cd8906cdb96da36688573c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0e88a1aa7a690b61744339f9b7e7dc931ed3ab85eb240868b3d66eabcf3c4b4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893144"
 ---
 # <a name="understand-billing-accounts"></a>Comprender las cuentas de facturación
 
@@ -45,7 +45,7 @@ La parte superior de la **página de** detalles cuentas de facturación es su pe
 
 En la tabla siguiente se enumeran los términos importantes que se ven en la página de detalles **cuentas de** facturación.
 
-| Nombre del campo | Descripción |
+| Nombre del campo | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dirección vendida | La entidad jurídica responsable del pago e identificada en la factura. La dirección proporcionada aquí se usa para determinar la tasa de impuestos, a menos que opte por proporcionar una dirección de envío alternativa durante la compra. Para obtener más información, consulte [Información sobre impuestos](billing-and-payments/tax-information.md). |
 | Segmento | Un campo de solo lectura que identifica el segmento de negocio de su organización (Comercial, Educativo, Gubernamental o Sin ánimo de lucro). |

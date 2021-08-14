@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el SharePoint de uso del sitio para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: d2c549dbb5ab456dddedf0422cd8aebafab1987d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2280630999ee3fa95d37b27cc57ec36140dd1d953dec0f2cafea8367baf2391e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816240"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Informes en el Centro de administración: SharePoint de sitio
 
@@ -62,7 +62,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Uso compartido externo  <br/> | La configuración externa que se puede compartir en el sitio.  <br/> |
 |Directiva de dispositivos no administrados  <br/> | La directiva de acceso al sitio para dispositivos no administrados.  <br/> |
 |Ubicación geográfica  <br/> | Ubicación geográfica del sitio.  <br/> |
-|Archivos  <br/> |El número de archivos del sitio. <br/>|
+|Files  <br/> |El número de archivos del sitio. <br/>|
 |Archivos activos  <br/> | Número de archivos activos en el sitio.<br/> NOTA: Si los archivos se quitaron durante el período de tiempo especificado para el informe, el número de archivos activos que se muestran en el informe puede ser mayor que el número actual de archivos en el sitio.  <br/> |
 |Storage usado (MB)  <br/> |La cantidad de almacenamiento que se usa actualmente en el sitio.  <br/>|
 |Storage asignado (MB)  <br/> |La cantidad máxima de almacenamiento asignada al sitio.  <br/>|

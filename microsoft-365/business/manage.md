@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Aprenda a administrar Microsoft 365 tareas de administración relacionadas con la empresa, dispositivos móviles, Windows 10 equipos y muchas de estas tareas.
-ms.openlocfilehash: 0ad2326bdcc785c0d8d1a52dee74187cdc1668e7
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 984554cbed0d8b29b8df82eb21e2fcaa9b9d4476fef6f22a37d253d92888d9cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893175"
 ---
 # <a name="manage-microsoft-365-for-business"></a>Administrar Microsoft 365 para empresas
 
