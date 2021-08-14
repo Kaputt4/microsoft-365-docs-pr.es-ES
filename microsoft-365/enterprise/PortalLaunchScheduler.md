@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo iniciar el portal con el programador de inicio del portal
-ms.openlocfilehash: dd2b6bdabae5f4d24882912709d6f16a637a9721
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 14bbbe671d1708bf0d6674ecab93955066b4093d80b2ced9790030559673dc4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813382"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal con el programador de inicio SharePoint portal de inicio
 
@@ -135,7 +135,7 @@ Si tiene previsto iniciar un portal con más de 100.000 usuarios, envíe una sol
 
 **Siga estos pasos:**
 
-1. Vaya a <https://admin.microsoft.com>.
+1. Ve a <https://admin.microsoft.com>.
 2. Asegúrese de que está usando la nueva vista previa del centro de administración
 3. En el panel de navegación izquierdo, seleccione **Soporte** técnico y, a continuación, **nueva solicitud de servicio**
 

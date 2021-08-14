@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles del estado Aplicaciones Microsoft 365: puntuación de productividad de experiencias tecnológicas.'
-ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: def83cb3a468a31ce5d714af4337f786ef660ebd89293ead9c6c92d9ec23c34d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823403"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Estado de Aplicaciones de Microsoft 365: experiencias tecnológicas
 
@@ -73,7 +73,7 @@ También proporcionamos información de soporte técnico que le ayuda a obtener 
 
 :::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Gráfico que muestra el número de dispositivos en el canal actual compatible.":::
 
-1. **Encabezado:** Momentos el porcentaje de dispositivos en el canal actual están ejecutando versiones compatibles de Aplicaciones Microsoft 365  
+1. **Encabezado:**  Resalta el porcentaje de dispositivos en el canal actual que ejecutan versiones compatibles de Aplicaciones Microsoft 365
 1. **Cuerpo:**  Proporciona información sobre el valor de los dispositivos que ejecutan Microsoft 365 aplicaciones en el canal recomendado.
 1. **Visualización:**  El desglose de la visualización representa hasta qué punto el porcentaje de dispositivos en las versiones más recientes y admitidas de Microsoft 365 aplicaciones en diferentes canales), de la siguiente manera:
     - **Versiones compatibles:** La barra azul representa el porcentaje de dispositivos que se ejecutan en la versión compatible de Microsoft 365 aplicaciones.
@@ -84,7 +84,7 @@ También proporcionamos información de soporte técnico que le ayuda a obtener 
 
 :::image type="content" source="../../media/device-supported-versions.png" alt-text="Gráfico que muestra el número de dispositivos que ejecutan las versiones más recientes y compatibles de las aplicaciones.":::
 
-1. **Encabezado: Momentos** el porcentaje de dispositivos que ejecutan versiones compatibles y dispositivos que ejecutan las versiones más recientes.  
+1. **Encabezado:**  Destaca el porcentaje de dispositivos que ejecutan versiones compatibles y dispositivos que ejecutan las versiones más recientes.
 1. **Cuerpo:**  Proporciona información sobre el valor que se ejecutan los dispositivos en canales recomendados y las versiones admitidas o más recientes.
 1. **Visualización:** El desglose de la visualización está destinado a representar la medida en que se muestran cuántos dispositivos ejecutan versiones compatibles y versiones más recientes de Microsoft 365 aplicaciones):
     - **Versiones compatibles:** La parte azul (coloreada) de la barra y la fracción (numerador/denominador) de la barra representa el porcentaje de dispositivos que ejecutan la versión compatible de Microsoft 365 aplicaciones.

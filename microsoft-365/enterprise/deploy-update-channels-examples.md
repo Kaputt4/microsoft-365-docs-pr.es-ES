@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Ejemplo de cómo las organizaciones implementan y actualizan usando canales.
-ms.openlocfilehash: 8d75d9e0a546b5bfc0dd8493e9b85e7e98b41b12
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 65f644c9888d3ef9998299660b5d97ff7129fab4551a04d63d28975677c875ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813215"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Ejemplo de configuraciones de canal de implementación y actualización
 

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo regular el acceso en Microsoft 365 grupos, Teams y SharePoint.
-ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 37ea23956e4d4953da631eeb47bc227ad1059a335e68752c5c5b9ab82cef6deb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538152"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853012"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Administración del acceso en Microsoft 365 grupos, Teams y SharePoint
 
@@ -29,7 +29,7 @@ Hay muchos controles que permiten controlar la forma en que las personas acceden
 
 En la tabla siguiente se proporciona una referencia rápida para los controles de acceso disponibles en Microsoft 365. Se proporciona más información en las secciones siguientes.
 
-|Categoría|Descripción|Referencia|
+|Categoría|Description|Referencia|
 |:-------|:----------|:--------|
 |Pertenencia|||
 ||Detección de equipos privados|[Administrar la detección de equipos privados en Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)|
@@ -49,7 +49,7 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 ||Controla el tipo de vínculo de uso compartido que se muestra a los usuarios de forma predeterminada.|[Cambiar el tipo de vínculo predeterminado para un sitio](/sharepoint/change-default-sharing-link)|
 ||Limitar el uso compartido externo a personas específicas.|[Limitar el uso compartido externo a grupos de seguridad especificados](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
 ||Controle el acceso de invitado a un grupo, equipo o sitio en función de la confidencialidad de la información.|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Desactivar las opciones de uso compartido.|[Limitar el uso compartido en Microsoft 365](./microsoft-365-limit-sharing.md)|
+||Desactivar las opciones de uso compartido.|[Limitar el uso compartido en Microsoft 365](./microsoft-365-limit-sharing.md)|
 |Administración de usuarios|||
 ||Revise la pertenencia a grupos y equipos de forma periódica.|[¿Qué son las revisiones de acceso de Azure AD?](/azure/active-directory/governance/access-reviews-overview)|
 ||Automatice la administración de acceso a grupos y equipos.|[¿Qué es la administración de derechos de Azure AD?](/azure/active-directory/governance/entitlement-management-overview)|
@@ -128,11 +128,11 @@ En un entorno en el que suele invitar invitados a grupos y equipos, considere la
 
 Microsoft 365 ofrece muchos métodos diferentes para compartir información. Si tiene información confidencial y desea restringir la forma en que se comparte, revise las opciones para limitar el uso compartido:
 
-- [Limitar el uso compartido en Microsoft 365](./microsoft-365-limit-sharing.md)
+- [Limitar el uso compartido en Microsoft 365](./microsoft-365-limit-sharing.md)
 
 Recursos adicionales:
 
-- [Configurar la colaboración segura con Microsoft 365](./setup-secure-collaboration-with-teams.md)
+- [Configurar la colaboración segura con Microsoft 365](./setup-secure-collaboration-with-teams.md)
 
 - [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](./best-practices-anonymous-sharing.md)
 

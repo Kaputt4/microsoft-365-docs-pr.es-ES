@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d3fc8dc128d4ece94a00cf4a0acfcb7d18ca10f2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 4f5b06879b80efcc74425d8b35d0dcaca522e0fbae97862656e13d8e1ac3da73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867444"
 ---
 # <a name="contact-support-for-cameroon"></a>Póngase en contacto con el soporte técnico de Camerún
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización que implementa la versión más reciente usa canales para las aplicaciones de Windows 10 y Microsoft 365.
-ms.openlocfilehash: 29bda1651a83f0e043cf8a0d2a102c6c2e461bfd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 894a4f586109d8abb84c62a1f6c45d013c2934b821a327cb580bdf7fcf9fb164
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813272"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Ejemplo de una amplia implementación para las versiones más recientes
 

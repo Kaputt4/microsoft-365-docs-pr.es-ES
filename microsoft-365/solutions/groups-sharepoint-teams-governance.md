@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las interacciones de configuración entre Microsoft 365 grupos, Teams y SharePoint
-ms.openlocfilehash: 14a21cd34fe38b47d93d0cbcec5e9cb2a3bc49c7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7fa543764be9483a6d600d60a1e61cc2f54067e0f06a02ff330e7c2656c9889a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853029"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Interacciones de configuración entre grupos de Microsoft 365, Teams y SharePoint
 
@@ -31,7 +31,7 @@ Algunas opciones de configuración para grupos de Microsoft 365, Microsoft Teams
 
 ## <a name="the-effects-of-sharepoint-settings-on-groups-and-teams"></a>Efectos de la configuración SharePoint en grupos y equipos
 
-|SharePoint configuración|Descripción|Efecto en Microsoft 365 grupos y Teams|Recomendación|
+|SharePoint configuración|Description|Efecto en Microsoft 365 grupos y Teams|Recomendación|
 |:-----------------|:----------|:---------------------------------------|:-------------|
 |Uso compartido externo para la organización y el sitio|Determina si los sitios, archivos y carpetas se pueden compartir con personas ajenas a la organización.|Si SharePoint, grupos y Teams no coinciden, es posible que los invitados del equipo no tengan acceso al sitio o que se produzca un acceso externo inesperado.|Al cambiar la configuración de uso compartido, comprueba La configuración de grupos, Teams configuración y SharePoint configuración del sitio para sitios de grupo conectados a grupos.<br><br> Consulta [Colaborar con invitados en un equipo](./collaborate-as-team.md)|
 |Domain allow/block|Permite o impide que el contenido se comparta con dominios especificados.|Los grupos y Teams no reconocen SharePoint permitir o bloquear listas. Los usuarios de dominios no permitidos en SharePoint podrían obtener acceso a SharePoint sitios o contenido a través de un equipo.|Administrar listas de dominios permitidos o bloqueados para Azure AD y SharePoint juntos. Cree un proceso de gobierno en toda la organización para permitir y bloquear dominios.<br><br>Consulta [SharePoint configuración de dominio y](/sharepoint/restricted-domains-sharing) configuración de dominio de Azure [AD](/azure/active-directory/b2b/allow-deny-list)|
@@ -41,7 +41,7 @@ Algunas opciones de configuración para grupos de Microsoft 365, Microsoft Teams
 
 ## <a name="the-effects-of-groups-settings-on-teams"></a>Efectos de la configuración de grupos en equipos
 
-|Microsoft 365 configuración de grupos|Descripción|Efecto en Teams|Recomendación|
+|Microsoft 365 configuración de grupos|Description|Efecto en Teams|Recomendación|
 |:---------------------------|:----------|:--------------|:-------------|
 |Directivas de nomenclatura|Especifica prefijos y sufijos de nombre de grupo y palabras bloqueadas para la creación de grupos|Las directivas se aplican para los usuarios que crean equipos.||
 |Acceso de invitado de grupo|Especifica si se pueden agregar personas fuera de la organización a grupos.|Si los grupos o Teams configuración de uso compartido de invitados están desactivados, el equipo no se puede compartir con invitados.|Al cambiar la configuración de uso compartido de invitados, compruebe la configuración de Teams, Grupos y el sitio SharePoint asociado con el equipo.<br><br> Consulta [Colaborar con invitados en un equipo](./collaborate-as-team.md)|

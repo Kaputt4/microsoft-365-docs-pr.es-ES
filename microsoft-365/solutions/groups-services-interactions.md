@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interacciones de servicios de grupos
-ms.openlocfilehash: 13331ea53b69b4559bfe21074dd5c7d998aa68af
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3cf68b0abcf15515ebe724fe795b9b31c5ebd2b6f8b3dd6c9ca76b7b706c8508
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853072"
 ---
 # <a name="groups-services-interactions"></a>Interacciones de servicios de grupos
 
