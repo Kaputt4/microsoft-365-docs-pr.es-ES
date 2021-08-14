@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Describe la sincronización de directorios Microsoft 365, la limpieza de servicios de dominio de Active Directory y la herramienta Azure Active Directory Conectar directorio.
-ms.openlocfilehash: 7b717f65bb434918a5eb0ab2bf4a5acab2d08eea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 10fe97f13f02aa19371b40284ca0549d6f14285042bf19ae174a833e44130343
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927549"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848447"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Identidad híbrida y sincronización de directorios para Microsoft 365
 

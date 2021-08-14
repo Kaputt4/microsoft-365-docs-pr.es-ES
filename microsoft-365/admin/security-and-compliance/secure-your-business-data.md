@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Cómo proteger el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, incluidos ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 8ee8e34ef984cb466f472e5503ad7cc14c181030
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0088e3404227d1340af2801157027c250f5066f11604b2d46afd9910cd622d3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822756"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
@@ -153,9 +153,9 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiar estos valores.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
-| Setting | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
+| Configuración | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla anti ransomware: advertir a los usuarios  <br/> |Regla anti ransomware: bloquear tipos de archivo  <br/> |
 |Aplique esta regla si . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |
@@ -189,9 +189,9 @@ Para crear una regla de transporte de correo:
 
 5. Aplique la configuración en la tabla siguiente. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiar estos valores.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
-|Setting|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
+|Configuración|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
@@ -242,7 +242,7 @@ Se recomienda empezar a usar esta protección mediante la creación de una direc
 
 Para crear una directiva contra la suplantación de identidad en Defender para Office 365, vea un breve [vídeo](../../business-video/setup-anti-phishing.md)de aprendizaje o siga estos pasos:
 
-1. Vaya a <https://protection.office.com>.
+1. Ve a <https://protection.office.com>.
 
 2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** seleccione **Directiva**.
 
@@ -327,7 +327,7 @@ Para modificar la directiva predeterminada:
 
 3. En **Configuración** que se aplican al contenido excepto el correo electrónico , seleccione Office 365 **aplicaciones**, No realizar un seguimiento cuando los usuarios hacen clic en vínculos seguros y No permitir que los usuarios hagan clic a través de vínculos seguros **a** la dirección **URL original.**
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
@@ -335,7 +335,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
 2. Aplique la configuración que se muestra en la tabla siguiente.
 
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
 |Configuración u opción|Valor recomendado|
 |---|---|

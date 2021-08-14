@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5bf4eba9dd5df702fa7ca0e56ae59e54e09b876a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 40d1bdb31d0364ab83cd8cfd76fa5b9d12395237830273d880bf786026323057
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833761"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurar y validar exclusiones para Microsoft Defender para endpoint en macOS
 
@@ -61,7 +61,7 @@ Proceso|Un proceso específico (especificado por la ruta de acceso completa o el
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:
 
-Carácter comodín|Descripción|Ejemplo|Coincidencias|No coincide
+Carácter comodín|Description|Ejemplo|Coincidencias|No coincide
 ---|---|---|---|---
 \*|Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|Coincide con cualquier carácter|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso de reglamento general de protección de datos (RGPD).
-ms.openlocfilehash: 147843fab8fcb8d2d1793a21f9bb897cb4a59672
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: f5070c446a98815061d9e898167a8214d5fc8bb946ba586c47a3a9b230ae4a78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822840"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: Una guía para su pequeña empresa
 
@@ -89,12 +89,12 @@ En esta sección se describen los pasos que una pequeña empresa puede seguir pa
 Una buena manera para que una pequeña empresa empiece con el RGPD es asegurarse de aplicar los siguientes principios clave al recopilar datos personales:
 
 - Recopile datos personales con fines claramente definidos para su uso y no los use para nada más. Por ejemplo, si les pide a sus clientes que proporcionen sus direcciones de correo electrónico para que puedan recibir sus nuevas ofertas o promociones, solo puede usar sus direcciones de correo electrónico para ese propósito específico.
-- No recopile más datos de los que necesita. Por ejemplo, si su empresa requiere una dirección de envío para poder entregar productos, necesita la dirección de un cliente y un nombre, pero no necesita conocer el estado civil de la persona.
+- No recopile más datos de los que sean necesarios. Por ejemplo, si su empresa requiere una dirección de envío para poder entregar productos, necesita la dirección del cliente y el nombre, pero no es necesario saber el estado civil de la persona.
 
 
-### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>Paso 1: Conocer los datos personales que recopila y usa en su empresa y los motivos por los que los necesita
+### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>Paso 1: conocer los datos personales que recopila y usa en su empresa y los motivos por los que los necesita
 
-Como pequeña empresa, uno de los primeros pasos que debe seguir es realizar un inventario de los datos personales que recopila y usa dentro de su empresa, y por qué son necesarios. Esto incluye los datos tanto de los empleados como de los clientes.
+Como pequeña empresa, uno de los primeros pasos que debe seguir es realizar un inventario de los datos personales que recopila y usa dentro de su empresa y definir por qué son necesarios. Nos referimos tanto a los datos de sus empleados como a los de sus clientes.
 
 Por ejemplo, es posible que necesite los datos personales de su empleado en función del contrato laboral y por motivos legales (por ejemplo, declarar impuestos al Servicio de Impuestos Internos).
 
@@ -105,7 +105,7 @@ Como otro ejemplo, puede administrar listas de clientes individuales para enviar
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Paso 2: Informar a sus clientes, empleados y otras personas cuando necesite recopilar sus datos personales
 
-Las personas deben saber que usted procesa sus datos personales y con qué propósito. Por ejemplo, si un cliente necesita crear un perfil de cliente para acceder al sitio en línea de su empresa, asegúrese de indicar específicamente lo que quiere hacer con su información.
+Las personas tienen derecho a saber con qué finalidad se procesan sus datos personales. Por ejemplo, si un cliente necesita crear un perfil de cliente para acceder al sitio web de su empresa, asegúrese de indicarle  expresamente para qué quiere esa información.
 
 Pero no es necesario informar a los usuarios cuando ya saben cómo se usarán los datos. Por ejemplo, cuando le proporcionan una dirección particular para hacer una entrega que han solicitado.
 
@@ -123,7 +123,7 @@ Elimine los datos cuando ya no sean necesarios para los fines para los que los r
 
 ### <a name="step-4-secure-the-personal-data-you-are-processing"></a>Paso 4: Proteger los datos personales que está procesando
 
-Si almacena datos personales en un sistema de TI, limite el acceso a los archivos que contienen los datos, por ejemplo, mediante una contraseña segura. Actualice periódicamente la configuración de seguridad del sistema.
+Si almacena datos personales en un sistema de TI, limite el acceso a los archivos que contienen los datos utilizando, por ejemplo, una contraseña segura. Actualice la configuración de seguridad del sistema de forma periódica.
 
 > [!NOTE]
 > El RGPD no ordena el uso de ningún sistema de TI específico, pero exige que el sistema tenga el nivel de seguridad adecuado. Consulte el [Artículo 32 del RGPD: Seguridad del procesamiento](https://gdpr.eu/article-32-security-of-processing/) para obtener más información.

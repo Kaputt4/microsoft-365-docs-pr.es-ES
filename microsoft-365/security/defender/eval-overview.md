@@ -1,5 +1,5 @@
 ---
-title: Evaluar y piloto Microsoft 365 Defender, una XDR, para evitar, detectar, investigar, responder, puntos de conexión, identidades, aplicaciones, correo electrónico, aplicaciones de colaboración, datos.
+title: Evaluar y piloto Microsoft 365 Defender, un XDR
 description: Planee su Microsoft 365 Defender de prueba o entorno piloto para probar y experimentar una solución de seguridad diseñada para proteger dispositivos, identidad, datos y aplicaciones.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ade3087543f45439664868fbe02f1746e1f5e762
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: e8dc4d61fb0d43d2864245223923936fe4a646e88e93a3c6eda2a672d459b137
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862827"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Evaluar y piloto Microsoft 365 Defender
 
@@ -106,7 +106,7 @@ En la tabla siguiente se describe esta ilustración.
 |4      | [Habilitar Defender para el extremo ](eval-defender-endpoint-overview.md)       | Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.         |
 |5      | [Habilitar Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.        |
 |6      | [Investigar y responder a amenazas](eval-defender-investigate-respond.md)        |   Simular un ataque y empezar a usar las capacidades de respuesta a incidentes.      |
-|7      | [Promover la versión de prueba a la producción](eval-defender-promote-to-production.md)        | Promover los Microsoft 365 componentes de producción uno a uno.        |
+|7      | [Promover la versión de prueba a producción](eval-defender-promote-to-production.md)        | Promover los Microsoft 365 componentes de producción uno a uno.        |
 | | | |
 
 Este es un orden comúnmente recomendado diseñado para obtener el valor de las capacidades rápidamente en función del esfuerzo que normalmente se requiere para implementar y configurar las capacidades. Por ejemplo, Defender para Office 365 puede configurarse mucho más rápido de lo necesario para inscribir dispositivos para Defender para endpoint. Por supuesto, puede priorizar los componentes para satisfacer sus necesidades empresariales y habilitar estos en un orden diferente.

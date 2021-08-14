@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: En este artículo se describen los puntos de conexión y las direcciones URL Office para Mac que las aplicaciones intentan alcanzar y los servicios proporcionados.
-ms.openlocfilehash: b777b4ea7e03495cb6389be8fe05e96a26fd9664
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 48a2dd266e0ed9379651e62ad835f4d27a5228b726b5f0e6da03ed8a55e23606
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848488"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitudes de red en Office para Mac
 
@@ -147,11 +147,11 @@ Los siguientes puntos de conexión de red se aplican tanto a Microsoft 365 de su
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
-|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Servicio web insights  <br/> |
+|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Ideas Servicio web  <br/> |
 |```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |CS  <br/> |Biblioteca JQuery  <br/> |
 |```https://cdnjs.cloudflare.com/```  <br/> |WXPN  <br/> |CS  <br/> |Compatibilidad con la biblioteca de JavaScript  <br/> |
-|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |Proveedor de contenido de Insights  <br/> |
-|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |Proveedor de contenido de Insights  <br/> |
+|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |Ideas Proveedor de contenido  <br/> |
+|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |Ideas Proveedor de contenido  <br/> |
    
  **Diseñador de PowerPoint**
   
@@ -159,7 +159,7 @@ Los siguientes puntos de conexión de red se aplican solo Microsoft 365 suscripc
   
 |**URL**|**Aplicaciones**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|:-----|
-|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |Diseñador de PowerPoint web  <br/> |
+|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint Servicio web de diseñador  <br/> |
    
  **Inicio rápido de PowerPoint**
   
@@ -239,7 +239,7 @@ El siguiente punto de conexión de red se aplica a todas las Office para las Mic
 |**URL**|**Tipo**|**Descripción**|
 |:-----|:-----|:-----|
 |```https://watson.microsoft.com/```  <br/> |ST  <br/> |Servicio de informes de errores de Microsoft  <br/> |
-|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |Office Servicio de información de colaboración  <br/> |
+|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |Office Servicio de Ideas colaboración  <br/> |
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>Opciones para reducir el tráfico y las solicitudes de red
 

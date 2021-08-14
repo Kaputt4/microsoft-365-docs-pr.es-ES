@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Obtenga más información sobre Azure Information Protection (AIP) para Office 365 operado por 21Vianet y cómo configurarlo para clientes en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 8b85ae43df31bb1947b841d616cc83c3a0b614e4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4ccd3a6e86a39931cd30335825adcc0fefe660cc54e0334a62d95ac58b9d4e3f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822384"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Compatibilidad con Azure Information Protection para Office 365 operado por 21Vianet
 
@@ -58,7 +58,7 @@ La siguiente lista incluye las diferencias existentes entre AIP para Office 365 
 Para configurar AIP para clientes en China:
 1. [Habilitar Rights Management para el inquilino](#step-1-enable-rights-management-for-the-tenant).
 
-1. [Agregue la entidad de servicio de sincronización de Microsoft Information Protection](#step-2-add-the-microsoft-information-protection-sync-service-service-principal).
+1. [Agregue la entidad Microsoft Information Protection servicio de sincronización.](#step-2-add-the-microsoft-information-protection-sync-service-service-principal)
 
 1. [Configurar el cifrado DNS](#step-3-configure-dns-encryption).
 
@@ -82,11 +82,11 @@ Para que el cifrado funcione correctamente, RMS debe estar habilitado para el in
 
 2. Si el estado funcional es `Disabled` , ejecute `Enable-AipService` .
 
-### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>Paso 2: Agregar la entidad de servicio de sincronización de Microsoft Information Protection
+### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>Paso 2: Agregar la entidad de servicio Microsoft Information Protection de servicio de sincronización
 
-La **entidad de servicio del** servicio de sincronización de Microsoft Information Protection no está disponible en los inquilinos de Azure China de forma predeterminada y es necesaria para Azure Information Protection.
+La **Microsoft Information Protection de** servicio de sincronización automática no está disponible en los inquilinos de Azure China de forma predeterminada y es necesaria para Azure Information Protection.
 
-1. Cree esta entidad de servicio manualmente con el cmdlet [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) y el identificador de aplicación del servicio de sincronización `870c4f2e-85b6-4d43-bdda-6ed9a579b725` de Microsoft Information Protection. 
+1. Cree esta entidad de servicio manualmente con el cmdlet [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) y el identificador de la aplicación para `870c4f2e-85b6-4d43-bdda-6ed9a579b725` el Microsoft Information Protection sync service. 
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -119,7 +119,7 @@ Además, se supone que los usuarios iniciarán sesión con un nombre de usuario 
 
 3. Asocie el dominio personalizado con el inquilino en [Azure Portal](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). Esto agregará una entrada en DNS, que puede tardar varios minutos en comprobarse después de agregar el valor a la configuración de DNS.
 
-4. Inicie sesión en el Microsoft 365 de administración con las credenciales de administración global correspondientes y agregue el dominio (por ejemplo, `contoso.cn` ) para la creación de usuarios. En el proceso de comprobación, es posible que se necesiten cambios dns adicionales. Una vez que se realiza la comprobación, se pueden crear usuarios.
+4. Inicie sesión en el Centro de administración de Microsoft 365 con las credenciales de administrador global correspondientes y agregue el dominio (por ejemplo, `contoso.cn` ) para la creación de usuarios. En el proceso de comprobación, es posible que se necesiten cambios dns adicionales. Una vez que se realiza la comprobación, se pueden crear usuarios.
 
 #### <a name="configure-dns-encryption---mac-ios-android"></a>Configurar el cifrado DNS: Mac, iOS, Android
 

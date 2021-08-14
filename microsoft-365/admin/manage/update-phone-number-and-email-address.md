@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Actualice el número de teléfono y la dirección de correo electrónico del administrador en el Centro de administración si desea restablecer su propia contraseña de administrador.
-ms.openlocfilehash: 1335f5ff7a39fab53e6f45f47bec293db5650336
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: bbd7e40f8349b067837e8faadc502a96edac046fc10b95393ce0c946475cc8a3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53391308"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824496"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Actualizar el número de teléfono de administrador y la dirección de correo electrónico
 

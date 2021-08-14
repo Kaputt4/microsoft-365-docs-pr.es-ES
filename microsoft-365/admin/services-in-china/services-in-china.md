@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información Office 365 operado por 21Vianet diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: c8d43c385f44434e9ed4832a094ea4909bf505a4
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 3d91c452ddaca7b8214bffcfa7764515f12fac9ebee07fc6d3749767148a652a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822336"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -125,10 +125,10 @@ Para las organizaciones que ejecutan versiones anteriores o mixtas de Exchange S
 
 |**Versión de Exchange local**|**Exchange Versión del servidor híbrido**|**¿Se admite el Asistente para configuración híbrida?**|**Características híbridas compatibles**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | N/D  <br/> | Sí  <br/> | todas  <br/> |
-| 2013 CU5  <br/> | N/D  <br/> | Sí  <br/> | todas  <br/> |
-| 2013 SP1  <br/> | 2013 CU5  <br/> | Sí  <br/> | todas  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | Sí  <br/> | todas  <br/> |
+| 2016  <br/> | N/D  <br/> | Sí  <br/> | Todo  <br/> |
+| 2013 CU5  <br/> | N/D  <br/> | Sí  <br/> | Todo  <br/> |
+| 2013 SP1  <br/> | 2013 CU5  <br/> | Sí  <br/> | Todo  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | Sí  <br/> | Todo  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Sí  <br/> | Todos, excepto exhibición de documentos electrónicos local/archivado, acceso de OWA (vea la tabla siguiente)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Sí  <br/> | Solo libre/ocupado configurado manualmente  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | No  <br/> | Ninguno  <br/> |

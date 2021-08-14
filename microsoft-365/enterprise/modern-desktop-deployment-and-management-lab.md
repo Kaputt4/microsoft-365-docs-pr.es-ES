@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 33db334ecf977b351ac963107c647c7eff414cc0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2cfd687b3f34c1857fa5128cefa236ceb71f6b8ba7ba00a86a3dfceb43b60062
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288892"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870336"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit del laboratorio de implementación de Office 365 y Windows 10
 

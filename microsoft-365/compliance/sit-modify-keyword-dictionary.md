@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo modificar un diccionario de palabras clave en el Centro Microsoft 365 cumplimiento.
-ms.openlocfilehash: 93357d153d9c6a2a4521d1604b2a1cb8cbcec48c
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 17dafeb6302207ded8653f17f7bf40dfaa8a9e2ef07d7eb38a485488f2346eaa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52685226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855465"
 ---
 # <a name="modify-a-keyword-dictionary"></a>Modificar un diccionario de palabras clave
 

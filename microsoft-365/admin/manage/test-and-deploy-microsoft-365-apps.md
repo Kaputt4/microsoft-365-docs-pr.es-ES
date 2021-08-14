@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones asociadas de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal de aplicaciones integradas en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: dcd4a91d9e43c0a740094615cd3dca0b0e8bc0f6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 7a4daff76262e2fc08b5d205eba81bd8016718f8b7461c930a5967454cdaa2eb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824545"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Prueba e implementación de Aplicaciones Microsoft 365 asociados en el portal de aplicaciones integradas
 
@@ -141,24 +141,24 @@ Para word, Excel y PowerPoint complementos, los usuarios deben usar una de las s
 
 Por Outlook, los usuarios deben usar una de las siguientes opciones: 
 - Versión 1701 o posterior de licencias Microsoft 365 Enterprise (E3/E5/F3) o licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium). 
-- Versión 1808 o posterior de Office Professional Plus 2019 u Office Standard 2019. 
-- Versión 16.0.4494.1000 o posterior de Office Professional Plus 2016 (MSI) o Office Standard 2016 (MSI).
+- Versión 1808 o posterior de Office Profesional Plus 2019 o Office Standard 2019. 
+- Versión 16.0.4494.1000 o posterior de Office Profesional Plus 2016 (MSI) o Office Standard 2016 (MSI).
     > [!NOTE]
-    > Las versiones MSI de Outlook muestran complementos instalados por el administrador en la cinta de opciones de Outlook adecuada, no en la sección "Mis complementos".  
-- Versión 15.0.4937.1000 o posterior de Office Professional Plus 2013 (MSI) u Office Standard 2013 (MSI).
+    > Las versiones MSI de Outlook muestran complementos instalados por el administrador en la cinta de opciones Outlook, no en la sección "Mis complementos".  
+- Versión 15.0.4937.1000 o posterior de Office Profesional Plus 2013 (MSI) o Office Standard 2013 (MSI).
 - Versión 16.0.9318.1000 o posterior de Office 2016 para Mac. 
-- Versión 2.75.0 o posterior de Outlook mobile para iOS. 
-- Versión 2.2.145 o posterior de Outlook mobile para Android. 
+- Versión 2.75.0 o posterior de Outlook móvil para iOS. 
+- Versión 2.2.145 o posterior de Outlook móvil para Android. 
 
 
 
-### <a name="exchange-online-requirements"></a>Requisitos de Exchange Online 
-Microsoft Exchange almacena los manifiestos del complemento en el inquilino de la organización. El administrador que implementa complementos y los usuarios que reciben esos complementos deben estar en una versión de Exchange Online que admita la autenticación de OAuth. 
+### <a name="exchange-online-requirements"></a>Exchange Online requisitos 
+Microsoft Exchange los manifiestos del complemento en el inquilino de la organización. El administrador que implementa complementos y los usuarios que reciben esos complementos deben estar en una versión de Exchange Online que admita la autenticación de OAuth. 
 
 Póngase en contacto con el administrador de Exchange de su organización para averiguar qué configuración está en uso. La conectividad de OAuth por usuario se puede comprobar mediante el cmdlet [de PowerShell Test-OAuthConnectivity.](/powershell/module/exchange/test-oauthconnectivity)   
 
 ### <a name="user-and-group-assignments"></a>Asignaciones de usuario y de grupo
-Actualmente, la implementación del complemento se admite en la mayoría de los grupos admitidos por Azure Active Directory, incluidos los grupos de Microsoft 365, las listas de distribución y los grupos de seguridad. La implementación admite usuarios de grupos de nivel superior o grupos sin grupos primarios, pero no usuarios de grupos anidados o grupos que tienen grupos primarios. 
+Actualmente, la implementación del complemento se admite en la mayoría de los grupos admitidos por Azure Active Directory, incluidos Microsoft 365, listas de distribución y grupos de seguridad. La implementación admite usuarios de grupos de nivel superior o grupos sin grupos primarios, pero no usuarios de grupos anidados o grupos que tienen grupos primarios. 
 
 > [!NOTE]
 > Los grupos de seguridad no habilitados para correo no son compatibles en estos momentos. 
@@ -169,15 +169,15 @@ En el ejemplo siguiente, Sandra, Sheila y el grupo Departamento de ventas se asi
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Averiguar si un grupo contiene grupos anidados
 
-La forma más sencilla de detectar si un grupo contiene grupos anidados es ver la tarjeta de contacto del grupo en Outlook. Si escribe el nombre del grupo en el campo **Para** de un correo electrónico y, a continuación, selecciona el nombre del grupo cuando se resuelve, se mostrará si contiene usuarios o   grupos anidados. En el ejemplo siguiente, la pestaña **Miembros** de la tarjeta de contacto de Outlook para el grupo de prueba no muestra usuarios y   solo dos sub grupos. 
+La forma más sencilla de detectar si un grupo contiene grupos anidados es ver la tarjeta de contacto del grupo en Outlook. Si escribe el nombre del grupo en el campo **Para** de un correo electrónico y, a continuación, selecciona el nombre del grupo cuando se resuelve, se mostrará si contiene usuarios o   grupos anidados. En el ejemplo siguiente, la pestaña **Miembros** de la Outlook de contacto del grupo de prueba no muestra usuarios ni   solo dos subgrupos. 
 
-![Ficha Miembros de la tarjeta de contacto de Outlook](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Ficha Miembros de Outlook de contacto](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-Puede realizar la consulta opuesta para comprobar si un grupo es miembro de cualquier otro. En el ejemplo siguiente, puede <b></b>ver en la pestaña Pertenencia de la tarjeta de contacto de Outlook que sub grupo   1 es miembro del grupo de prueba. 
+Puede realizar la consulta opuesta para comprobar si un grupo es miembro de cualquier otro. En el ejemplo siguiente, puede <b></b>ver en la pestaña Pertenencia de la tarjeta de contacto Outlook que sub grupo 1 es miembro   del grupo de prueba. 
 
-![Ficha Pertenencia a la tarjeta de contacto de Outlook](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Ficha Pertenencia de la Outlook de contacto](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Tenga en cuenta que puede usar la API de Graph de Azure Active Directory para ejecutar consultas para buscar la lista de grupos dentro de un grupo. Para obtener más información, vea [Operations on groups | Referencia de la API de Graph](/previous-versions/azure/ad/graph/api/groups-operations). 
+Tenga en cuenta que puede usar la API Azure Active Directory Graph para ejecutar consultas para buscar la lista de grupos dentro de un grupo. Para obtener más información, vea [Operations on groups | Graph Referencia de API](/previous-versions/azure/ad/graph/api/groups-operations). 
 
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Enfoque recomendado para implementar los Complementos de Office 
 Para la implementación de complementos mediante un enfoque por fases, se recomienda lo siguiente: 
@@ -191,7 +191,7 @@ Según el tamaño de la audiencia de destino, puede agregar o quitar pasos de im
 
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Implementar un Complemento de Office con el Centro de administración 
 
-1. En el Centro de administración, selecciona **Configuración** y, a continuación, **selecciona Aplicaciones integradas.** 
+1. En el Centro de administración, **seleccione Configuración** y, a continuación, seleccione **Aplicaciones integradas.** 
 
 2. Selecciona **Obtener aplicaciones** en la parte superior de la página. AppSource se cargará en un formato incrustado. Busque un complemento o báquelo haciendo clic en Producto en la navegación izquierda.  Si el ISV ha vinculado el complemento a una aplicación SaaS u otras aplicaciones y complementos y si la aplicación SaaS es una aplicación de pago, se mostrará un cuadro de diálogo para comprar la licencia o Implementar. Independientemente de si ha comprado la licencia o no, puede continuar con la implementación. Seleccione **Implementar**.  
 
@@ -199,20 +199,20 @@ Según el tamaño de la audiencia de destino, puede agregar o quitar pasos de im
 
 4. Seleccione **Todos**, **Usuarios o grupos específicos** o **Solo yo** para especificar a quién se implementa   el complemento. Use el cuadro Buscar para buscar usuarios o grupos específicos. Si va a probar el complemento, seleccione **Is this a test deployment**. 
 
-5. Seleccione **Siguiente**. Todas las funcionalidades y permisos de la aplicación se muestran en un único panel junto con la información de certificación si la aplicación tiene la certificación de Microsoft 365. La selección del logotipo de certificación permite al usuario ver más detalles sobre la certificación.  
+5. Seleccione **Siguiente**. Todas las capacidades y permisos de la aplicación se muestran en un único panel junto con la información de certificación si la aplicación tiene Microsoft 365 certificación. La selección del logotipo de certificación permite al usuario ver más detalles sobre la certificación.  
 
 6. Revise y, a continuación, **seleccione Finalizar implementación**.  
 
 7. Cuando se implementa el complemento, aparece un icono verde de "tick". Siga las instrucciones de la página para probar el complemento. 
 
 > [!NOTE]
-> Es posible que los usuarios necesiten volver a iniciar Office para ver el icono del complemento en la cinta de opciones de la aplicación. Los complementos de Outlook pueden tardar hasta 24 horas en aparecer en las cintas de opciones de la aplicación. 
+> Es posible que los usuarios necesiten volver a Office para ver el icono del complemento en la cinta de opciones de la aplicación. Outlook complementos pueden tardar hasta 24 horas en aparecer en las cintas de opciones de la aplicación. 
 
 Es una buena práctica informar a los usuarios y grupos de que el complemento implementado está disponible. Considere el envío de un correo electrónico que describa cuándo y cómo usar el complemento. Incluya o vincule para ayudar al contenido o preguntas frecuentes que pueden ayudar a los usuarios si tienen problemas con el complemento. 
 
 ## <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Consideraciones al asignar un complemento a usuarios y grupos 
 
-Los administradores globales y los administradores de Exchange pueden asignar un complemento a todos o a usuarios y grupos específicos. Cada opción tiene implicaciones: 
+Los administradores globales y Exchange pueden asignar un complemento a todos los usuarios o a usuarios y grupos específicos. Cada opción tiene implicaciones: 
 
 - **Todos**   Esta opción asigna el complemento a todos los usuarios de la organización. Use esta opción con moderación y solo para los complementos que realmente sean de uso universal en su organización. 
 
@@ -224,25 +224,25 @@ Los administradores globales y los administradores de Exchange pueden asignar un
 
 La opción correcta para su organización depende de la configuración. Sin embargo, se recomienda realizar asignaciones mediante grupos. Como administrador, es posible que le resulte más fácil administrar complementos mediante grupos y controlando la pertenencia a esos grupos en lugar de asignar usuarios individuales cada vez. En algunas situaciones, es posible que desee restringir el acceso a un pequeño conjunto de usuarios mediante la asignación manual de asignaciones a usuarios específicos. 
 
-### <a name="more-about-office-add-ins-security"></a>Más información sobre la seguridad de complementos de Office 
+### <a name="more-about-office-add-ins-security"></a>Más información sobre Office seguridad de complementos 
 Los complementos de Office combinan un archivo de manifiesto XML que contiene algunos metadatos sobre el complemento, pero lo más importante es que apunta a una aplicación web que contiene todo el código y la lógica. Las funcionalidades de los complementos pueden variar. Estos son algunos ejemplos de las acciones que pueden realizar los complementos:
 - Mostrar datos. 
 - Leer el documento de un usuario para proporcionar servicios contextuales. 
 - Leer datos del documento de un usuario y escribir datos en él para proporcionar valor a ese usuario.  
 
-Para obtener más información sobre los tipos y capacidades de los complementos de Office, vea Información general sobre la plataforma de complementos de [Office,](/office/dev/add-ins/overview/office-add-ins)especialmente la sección "Anatomía de un complemento de Office". 
+Para obtener más información acerca de los tipos y capacidades de los complementos de Office, vea información general sobre la plataforma de complementos de [Office,](/office/dev/add-ins/overview/office-add-ins)especialmente la sección "Anatomía de un complemento Office". 
 
-Para interactuar con el documento del usuario, el complemento debe declarar el permiso que necesita en el manifiesto. Un modelo de permisos de acceso de la API de JavaScript de cinco niveles proporciona la base de privacidad y seguridad para los usuarios de complementos de panel de tareas. La mayoría de los complementos de la Tienda Office son ReadWriteDocument de nivel con casi todos los complementos compatibles con al menos el nivel ReadDocument. Para obtener más información acerca de los niveles de permisos, vea [Requesting permissions for API use in content and task pane add-ins](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
+Para interactuar con el documento del usuario, el complemento debe declarar el permiso que necesita en el manifiesto. Un modelo de permisos de acceso de la API de JavaScript de cinco niveles proporciona la base de privacidad y seguridad para los usuarios de complementos de panel de tareas. La mayoría de los complementos del almacén de Office son ReadWriteDocument de nivel con casi todos los complementos compatibles con al menos el nivel ReadDocument. Para obtener más información acerca de los niveles de permisos, vea [Requesting permissions for API use in content and task pane add-ins](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
 
 Cuando se actualiza un manifiesto, los cambios típicos se aplican al icono de un complemento y al texto. En ocasiones, los comandos del complementos cambian. Sin embargo, los permisos del complemento no cambian. La aplicación web en la que se ejecutan todo el código y la lógica del complemento puede cambiar en cualquier momento, lo que forma parte de la naturaleza de las aplicaciones web. 
 
 Las actualizaciones de los complementos se producen de la siguiente manera: 
 - **Complemento de** línea de negocio: en este caso, donde un administrador cargó explícitamente un manifiesto, el complemento requiere que el administrador cargue un nuevo archivo de manifiesto para admitir los cambios de metadatos. La próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
 
-- Complemento de la Tienda **Office:** cuando un administrador seleccionó un complemento de la Tienda Office, si un complemento se actualiza en la Tienda Office, la próxima vez que se inicien las aplicaciones de Office relevantes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
+- **Office** Complemento de la Tienda: cuando un administrador seleccionó un complemento de la Tienda Office, si un complemento se actualiza en la Tienda Office, la próxima vez que se inicien las aplicaciones de Office relevantes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
 
 > [!NOTE]
-> Para Word, Excel y PowerPoint usan un Catálogo de aplicaciones de [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)para implementar complementos para usuarios en un entorno local sin conexión a Microsoft 365 ni compatibilidad con complementos de   SharePoint necesarios. Para Outlook, use el panel de control de Exchange para implementarlo en un entorno local sin conexión a Microsoft 365.  
+> Para Word, Excel y PowerPoint usan un Catálogo de aplicaciones de [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)para implementar complementos para los usuarios en un entorno local sin conexión Microsoft 365 ni compatibilidad con complementos SharePoint   necesarios. Para Outlook usar Exchange panel de control para implementar en un entorno local sin conexión a Microsoft 365.  
 
 ## <a name="add-in-states"></a>Estados del complemento
 Un complemento puede estar en el **estado On**   o **Off.**   
@@ -289,7 +289,7 @@ Hay dos casos en los que un Exchange no podrá implementar un complemento:
 - Si un complemento está vinculado a dos o más complementos y webapps, y al menos uno de estos complementos lo implementa otro administrador (exchange/global) y la asignación de usuario no es uniforme. Solo se permite la implementación de complementos cuando la asignación de usuario es la misma para todas las aplicaciones ya implementadas.  
 
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>¿Qué rol de administrador necesito para tener acceso a aplicaciones integradas?
 
