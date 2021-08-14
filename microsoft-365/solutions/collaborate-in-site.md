@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los Microsoft 365 de configuración necesarios para configurar un sitio SharePoint para la colaboración con invitados.
-ms.openlocfilehash: f91b9c64dbdca8ed7e3ada3315cb57f1c728f838
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 054de924b2cf5041694ca12dcf2fb4137242d16fb53060421aedb51aed9668a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810179"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -132,7 +132,7 @@ Para invitar usuarios internos a un grupo
 3. Haga clic en **Agregar miembros**.
 4. Escriba los nombres o direcciones de correo electrónico de los usuarios que desea invitar al sitio y, a continuación, haga clic en **Guardar**.
 
-Los invitados no se pueden agregar desde el sitio. Debe agregarlos mediante Outlook en la web. Por lo tanto, como requisito previo para agregar e invitar invitados a un grupo, haga clic en la dirección URL del sitio en la columna **DIRECCIÓN URL**  para navegar a la página específica del sitio. En esta página, haga clic en el **icono del iniciador** de aplicaciones y **seleccione Outlook**. Esta es la pantalla desde la que puedes invitar invitados a un grupo, para el que se describe el procedimiento a continuación.
+Los invitados no se pueden agregar desde el sitio. Debe agregarlos mediante Outlook en la Web. Por lo tanto, como requisito previo para agregar e invitar invitados a un grupo, haga clic en la dirección URL del sitio en la columna **DIRECCIÓN URL**  para navegar a la página específica del sitio. En esta página, haga clic en el **icono del iniciador** de aplicaciones y **seleccione Outlook**. Esta es la pantalla desde la que puedes invitar invitados a un grupo, para el que se describe el procedimiento a continuación.
 
 Para invitar invitados a un grupo
 1. En **Grupos**, haga clic en el grupo al que desea invitar invitados.

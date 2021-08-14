@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: En este artículo, obtenga información sobre qué plataformas, clientes y módulos de PowerShell admiten la autenticación multifactor para Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8749c05e3f7ce5dacf7d3ed1eaa46a46a20482d5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d18ce34ef3b963b66ca2309f8ef0c9cc244aaeb6da4865e9a16a91623430c735
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286458"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855021"
 ---
 # <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 Compatibilidad con aplicaciones cliente: autenticación multifactor
 

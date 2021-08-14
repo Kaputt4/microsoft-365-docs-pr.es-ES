@@ -15,16 +15,16 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: En este artículo, encontrará detalles sobre Microsoft 365 de aplicaciones de cliente y servicios.
-ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c3ca331329719511c834cc0b5c10af511c5450c9fcb684e22cadbc356f26d6d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855040"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 de aplicaciones de cliente y servicios
 
-Microsoft admite una amplia variedad de características de seguridad, autenticación y cumplimiento para mantener la seguridad de los datos de los clientes y permite a los administradores de TI personalizar las directivas dentro del centro de administración de Microsoft 365 para sus usuarios. Las siguientes características son solo un subconjunto de las muchas características empresariales que puede configurar en función de su Microsoft 365 suscripción.
+Microsoft admite una amplia variedad de características de seguridad, autenticación y cumplimiento para mantener la seguridad de los datos de los clientes y permite a los administradores de TI personalizar las directivas dentro del Centro de administración de Microsoft 365 para sus usuarios. Las siguientes características son solo un subconjunto de las muchas características empresariales que puede configurar en función de su Microsoft 365 suscripción.
 
 ## <a name="client-and-service-support"></a>Soporte técnico de cliente y servicio
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2cc83e24d4dd81c9d2e972fa274b48fc3946532a
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 85fe3921aab67e9edb1c79c3c1e89caf945e3279d73e1287f7b7b7733ba40ace
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862575"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -108,13 +108,13 @@ En la vista de detalles de la investigación, puede ver información en las pest
 | **Alertas** | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Microsoft Cloud App Security y otras características Microsoft 365 Defender usuario.|
 | **Dispositivos** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden [al nivel de automatización de los grupos de dispositivos](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)).) |
 | **Buzones** |Enumera los buzones que se verán afectados por las amenazas detectadas.  |
-| **Users**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
+| **Usuarios**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
 | **Evidencia** | Enumera partes de pruebas generadas por alertas o investigaciones. Incluye veredictos ( Malintencionado , *Sospechoso*, Desconocido o *Sin* amenazas encontradas ) y estado de corrección. |
 | **Entities** | Proporciona detalles sobre cada entidad analizada, incluido un veredicto para cada tipo de entidad ( Malintencionada , *Sospechosa* o *Sin amenazas encontradas*).|
 |**Log** | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 | **Historial de acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) para aprobar acciones pendientes. |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver y aprobar acciones de corrección](m365d-autoir-actions.md)
 - [Más información sobre las acciones de corrección](m365d-remediation-actions.md)

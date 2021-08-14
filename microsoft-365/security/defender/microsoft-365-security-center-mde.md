@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: b43b7c99c6585e8610d34f3c4e5b372fb1c829a2
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 7fee84e9be504427bb4320599310c3872ea311d6e2c640d87d83b938a27131ad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842631"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828429"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender para endpoint en Microsoft 365 Defender
 
@@ -49,24 +49,24 @@ La imagen y la tabla siguiente enumeran los cambios en la navegación entre el C
 | Inventario de dispositivos | Inventario de dispositivos |
 | Cola de alertas | Alertas de & incidentes |
 | Investigaciones automatizadas | Centro de actividades |
-| Búsqueda avanzada de amenazas | Búsqueda |
+| Búsqueda avanzada | Búsqueda |
 | Informes | Informes |
 | Partners & API | Partners & API |
 | Administración & vulnerabilidades de amenazas | Administración de amenazas y vulnerabilidades |
 | Evaluación y tutoriales | Tutoriales & evaluación |
 | Administración de la configuración | Administración de la configuración |
-| Configuración | Configuración | 
+| Configuraciones | Configuraciones | 
 
-The improved [Microsoft 365 Defender](overview-security-center.md) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. Esto reúne las funciones de los portales de seguridad de Microsoft existentes, incluidos Centro de seguridad de Microsoft Defender y el centro de Office 365 seguridad & cumplimiento.
+La mejora [Microsoft 365 Defender](overview-security-center.md) en combina las capacidades de seguridad que protegen, detectan, investigan y responden a las amenazas de correo electrónico, colaboración, identidad [https://security.microsoft.com](https://security.microsoft.com) y dispositivo. Esto reúne las funciones de los portales de seguridad de Microsoft existentes, incluidos Centro de seguridad de Microsoft Defender y el centro de Office 365 seguridad & cumplimiento.
 
-Si estás familiarizado con el Centro de seguridad de Microsoft Defender, este artículo ayuda a describir algunos de los cambios y mejoras de Microsoft 365 Defender. Sin embargo, hay algunos elementos nuevos y actualizados que debe tener en cuenta.
+Si está familiarizado con el Centro de seguridad de Microsoft Defender, este artículo ayuda a describir algunos de los cambios y mejoras de Microsoft 365 Defender. Sin embargo, hay algunos elementos nuevos y actualizados que debe tener en cuenta.
 
 Históricamente, el [Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) ha sido el hogar de Microsoft Defender para Endpoint. Enterprise los equipos de seguridad lo han usado para supervisar y ayudar a responder a alertas de posibles infracciones de datos o actividad avanzada de amenazas persistentes. Para ayudar a reducir el número de portales, Microsoft 365 Defender será el hogar para supervisar y administrar la seguridad en todas las identidades, datos, dispositivos, aplicaciones e infraestructura de Microsoft.
 
-Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad [administrados (MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede acceso en el Centro de seguridad [de Microsoft Defender.](mssp-access.md)
+Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad administrados [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede acceso en el Centro de seguridad [de Microsoft Defender](mssp-access.md).
 
 > [!IMPORTANT]
-> Lo que veas en Microsoft 365 Defender depende de tus suscripciones actuales. Por ejemplo, si no tiene una licencia para Microsoft Defender para Office 365, no se mostrará la sección Colaboración de correo & correo electrónico.
+> Lo que ves en Microsoft 365 Defender depende de las suscripciones actuales. Por ejemplo, si no tiene una licencia para Microsoft Defender para Office 365, no se mostrará la sección Colaboración de correo & correo electrónico.
 
 > [!Note]
 > Microsoft 365 Defender no está disponible para:
@@ -88,8 +88,8 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 | Área | Descripción de cambio |
 |---------|---------|
 | [Alertas de & incidentes](incidents-overview.md)  | En Microsoft 365 Defender, puede administrar incidentes y alertas en todos los puntos de conexión, correo electrónico e identidades. Hemos convergedo la experiencia para ayudarle a encontrar eventos relacionados con más facilidad. Para obtener más información, vea [Incidents Overview](incidents-overview.md).   |
-| [Búsqueda](advanced-hunting-overview.md)  |  La modificación de reglas de detección personalizadas creadas en Microsoft Defender para endpoint para incluir tablas de identidad y correo electrónico las mueve automáticamente a Microsoft 365 Defender. Sus alertas correspondientes también aparecerán en Microsoft 365 Defender. Para obtener más información acerca de estos cambios, lea [Migrar reglas de detección personalizadas](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules). <br><br>La `DeviceAlertEvents` tabla de búsqueda avanzada no está disponible en Microsoft 365 Defender. Para consultar información de alerta específica del dispositivo en Microsoft 365 Defender, puede usar las tablas y para dar cabida a más información de un conjunto diverso `AlertInfo` `AlertEvidence` de orígenes. Crea la siguiente consulta relacionada con el dispositivo siguiendo [Escribir consultas sin DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
-|[Centro de actividades](m365d-action-center.md)    | Enumera las acciones pendientes y completadas que se llevaron a cabo después de las investigaciones automatizadas y las acciones de corrección. Anteriormente, el Centro de acciones de la Centro de seguridad de Microsoft Defender enumeraba las acciones pendientes y completadas para las acciones de corrección realizadas solo en dispositivos, mientras que las investigaciones automatizadas enumeraban alertas y estado. En la versión Microsoft 365 Defender, el Centro de acciones reúne acciones e investigaciones de corrección en correo electrónico, dispositivos y usuarios, todo en una ubicación.  |
+| [Búsqueda](advanced-hunting-overview.md)  |  La modificación de reglas de detección personalizadas creadas en Microsoft Defender para endpoint para incluir tablas de identidad y correo electrónico las mueve automáticamente a Microsoft 365 Defender. Sus alertas correspondientes también aparecerán en Microsoft 365 Defender. Para obtener más información acerca de estos cambios, lea [Migrar reglas de detección personalizadas](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules). <br><br>La `DeviceAlertEvents` tabla de búsqueda avanzada no está disponible en Microsoft 365 Defender. Para consultar información de alerta específica del dispositivo en Microsoft 365 Defender, puede usar las tablas y para dar cabida a aún más información de un conjunto diverso `AlertInfo` `AlertEvidence` de orígenes. Crea la siguiente consulta relacionada con el dispositivo siguiendo [Escribir consultas sin DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
+|[Centro de acciones](m365d-action-center.md)    | Enumera las acciones pendientes y completadas que se llevaron a cabo después de las investigaciones automatizadas y las acciones de corrección. Anteriormente, el Centro de acciones de la Centro de seguridad de Microsoft Defender enumeraba las acciones pendientes y completadas para las acciones de corrección realizadas solo en dispositivos, mientras que las investigaciones automatizadas enumeraban alertas y estado. En las mejoras Microsoft 365 Defender, el Centro de acciones reúne acciones e investigaciones de corrección en el correo electrónico, dispositivos y usuarios, todo en una ubicación.  |
 | [Análisis de amenazas](threat-analytics.md) |  Se ha movido a la parte superior de la barra de navegación para facilitar la detección y el uso. Ahora incluye información sobre amenazas para puntos de conexión y correo electrónico y colaboración.    |
 
 ### <a name="endpoints"></a>Puntos de conexión
@@ -115,8 +115,8 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 | Área | Descripción de cambio |
 |---------|---------|
 | Informes  | Consulta informes de puntos de conexión y correo & colaboración, incluida la protección contra amenazas, el estado y cumplimiento del dispositivo y los dispositivos vulnerables. |
-| Salud  |  Actualmente se vincula a la página "Estado del servicio" en el [centro Microsoft 365 administración.](https://admin.microsoft.com/) |
-| Configuración |  Administra la configuración de Microsoft 365 Defender, Endpoints, Email & colaboración, identidades y detección de dispositivos.   |
+| Salud  |  Actualmente se vincula a la página "Estado del servicio" en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/). |
+| Configuraciones |  Administra la configuración de Microsoft 365 Defender, puntos de conexión, correo electrónico & colaboración, identidades y detección de dispositivos.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 navegación y funcionalidades de seguridad
 

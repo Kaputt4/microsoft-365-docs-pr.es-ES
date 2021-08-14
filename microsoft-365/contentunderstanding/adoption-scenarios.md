@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: Busque escenarios sobre cómo usar SharePoint Syntex en su organización.
-ms.openlocfilehash: 4714af4c4182c3c57625a82dff0cfdc1d5260785
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0be3424acd6d3d1b547feedb6854beced4a2453f88530271c1376a8fd07ea09d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819696"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Escenarios y casos de uso de Microsoft SharePoint Syntex
 
@@ -137,6 +137,6 @@ Al automatizar este escenario, puede asegurarse de que:
 - Se reduce el número de avisos manuales.
 - Se reduce el número de multas por incumplimiento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Adopción SharePoint Syntex Microsoft: Introducción](adoption-getstarted.md)

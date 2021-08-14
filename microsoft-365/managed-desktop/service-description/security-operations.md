@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 600755c15ce6da94481ef4d84732991e5006cce1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aaec101b6e7046aaf64fac3a5e0bf52e6ee8dd1159b653feac63135fdb3446d9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819000"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Operaciones de seguridad en Escritorio administrado de Microsoft
 
@@ -37,7 +37,7 @@ El SOC proporciona estos servicios:
 - El proceso permite una recopilación adecuada de información y pruebas, para análisis y documentación y conocimientos posteriores a la recuperación en formas de defender mejor su entorno a través de estas fases:
     - Preparación, detección y análisis
     - Contención
-    - Eliminación
+    - Erradicación
     - Recuperación
     - Actividad posterior al incidente
 - Escritorio administrado de Microsoft clientes pueden inscribirse en el servicio Expertos en amenazas de Microsoft cliente. El SOC se asocia con este servicio para comprender mejor las amenazas complejas que afectan a su organización, incluidas las consultas de alertas, los dispositivos potencialmente comprometidos, la causa raíz de una conexión de red sospechosa y otra inteligencia de amenazas con respecto a las campañas de amenazas persistentes avanzadas en curso. Para obtener más información, [vea Expertos en amenazas de Microsoft](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).

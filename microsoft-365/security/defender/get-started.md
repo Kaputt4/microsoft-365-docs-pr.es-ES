@@ -1,7 +1,7 @@
 ---
 title: Introducción a Microsoft 365 Defender
 ms.reviewer: ''
-description: Obtenga información sobre los pasos que debe seguir para empezar a usar Microsoft 365 Defender
+description: Obtenga información sobre los pasos que debe seguir para empezar a trabajar con Microsoft 365 Defender
 keywords: introducción, microsoft 365 defender, activar, incorporar, implementar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f408ed0fe77034f69fc6e51ada75012f752ee2e7
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 8d479a5cacc5db8961084135eb2b155c4b3af509cc06adecc9b3c2c42688f7d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51759827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828537"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>Introducción a Microsoft 365 para Defender
 
@@ -37,7 +37,7 @@ Microsoft 365 Defender es una experiencia unificada donde puede supervisar y adm
 
 Tanto si es nuevo en el conjunto de productos de seguridad de Microsoft como si está familiarizado con flujos de trabajo individuales, este tema le guiará en los sencillos pasos que debe seguir para empezar a trabajar con Microsoft 365 Defender.
 
-![Imagen de introducción a los pasos Microsoft 365 Defender](../../media/mtp/get-started-m365d.png)
+![Imagen de introducción a los Microsoft 365 Defender pasos](../../media/mtp/get-started-m365d.png)
 
 En general, deberá seguir los siguientes pasos para empezar:
 

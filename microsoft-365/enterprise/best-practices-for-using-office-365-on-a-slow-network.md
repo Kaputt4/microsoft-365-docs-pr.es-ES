@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Este artículo le guía a través de los procedimientos recomendados que puede adoptar para usar Office 365 en una red lenta.
-ms.openlocfilehash: d217ee8bb40898716844717e84db112f356f6672
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b09fe2a38cd98a09e7d6375abccb0486b59c34c092f60c78144ebc695453f7c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226028"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819609"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedimientos recomendados para usar Office 365 en una red lenta
 
@@ -177,7 +177,7 @@ Para obtener más información, vea [Tune Project Online performance](https://su
 
 Microsoft mejora continuamente el rendimiento general de Office 365 mediante la supervisión de la red, la medición del ancho de banda y la latencia, la mejora del tiempo de carga de la página, la reducción de E/S de disco, el rediseño de páginas para usar la estrategia de descarga mínima, la adición de hardware a los centros de datos y la adición de más centros de datos. Para obtener más información sobre cómo comprobar el estado actual y los problemas de informes, vea [How to check Office 365 service health](view-service-health.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Planeamiento de red y ajuste del rendimiento para Office 365](network-planning-and-performance.md)
 

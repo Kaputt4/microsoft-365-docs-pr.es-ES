@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la herramienta de administración de custodia integrada en Advanced eDiscovery coordinar los flujos de trabajo e identificar orígenes de datos relevantes en un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9468fb889e9115b3652d1dba8a6c6632bb367fe3
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: 3fc08eb6602331ef12cba45ed5106cf692272a8f80537a2cd73fc6bd357efd2f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837233"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un Advanced eDiscovery caso
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Requisitos previos de Defender
+title: Microsoft 365 Defender requisitos previos
 description: Obtenga información sobre los requisitos de licencias, hardware y software y otras opciones de configuración para Microsoft 365 Defender
 keywords: requisitos, requisitos previos, hardware, software, explorador, Microsoft 365 Defender, M365, licencia, E5, A5, EMS, compra
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f3fd597181d73c1768057ea7740ab111e5af2068
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 84fad9dc273d020ee48e53c5d9edb57c88041e99dd077151f4b41e8de93da3e7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689162"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862556"
 ---
-# <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Requisitos previos de Defender
+# <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender requisitos previos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,14 +35,14 @@ ms.locfileid: "52689162"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Obtenga información sobre las licencias y otros requisitos para aprovisionar [y usar Microsoft 365 Defender](microsoft-365-defender.md).
+Obtenga información sobre las licencias y otros requisitos para aprovisionar y usar [Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
-Cualquiera de estas licencias le da acceso a las características de Microsoft 365 Defender en Microsoft 365 de seguridad sin costo adicional:
+Cualquiera de estas licencias le da acceso a Microsoft 365 Defender características de Microsoft 365 de seguridad sin costo adicional:
 
 - Microsoft 365 E5 o A5
 - Microsoft 365 E3 con el Seguridad de Microsoft 365 E5 complemento
-- Microsoft 365 A3 con el Microsoft 365 de seguridad A5
+- Microsoft 365 A3 con el complemento Microsoft 365 A5 seguridad
 - Windows 10 Enterprise E5 o A5
 - Enterprise Mobility + Seguridad (EMS) E5 o A5 
 - Office 365 E5 o A5
@@ -56,13 +56,13 @@ Para obtener más información, [vea el Microsoft 365 Enterprise de servicio](ht
 > ¿Todavía no tiene licencia? [Probar o comprar una suscripción a Microsoft 365](../../commerce/try-or-buy-microsoft-365.md)
 
 ### <a name="check-your-existing--licenses"></a>Comprobar las licencias existentes
-Vaya a Microsoft 365 centro de administración ([admin.microsoft.com](https://admin.microsoft.com/)) para ver las licencias existentes. En el Centro de administración, vaya a **Facturación** > **Licencias**.
+Vaya a Centro de administración de Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com/)) para ver las licencias existentes. En el Centro de administración, vaya a **Facturación** > **Licencias**.
 
 >[!NOTE]
 > Debe tener asignado el rol De administrador **de** facturación o Lector **global** en [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) para poder ver la información de licencia. Si tiene problemas de acceso, póngase en contacto con un administrador global.
 
 ## <a name="required-permissions"></a>Permisos necesarios
-Debe ser un administrador **global o** **un** administrador de seguridad en Azure Active Directory para activar Microsoft 365 Defender. Para obtener la lista de roles necesarios para usar Microsoft 365 Defender e información sobre cómo se regula el acceso a los datos, lea acerca de cómo administrar el acceso [a Microsoft 365 Defender](m365d-permissions.md).
+Debe ser un administrador **global o** **un** administrador de seguridad en Azure Active Directory para activar Microsoft 365 Defender. Para obtener la lista de roles necesarios para usar Microsoft 365 Defender información sobre cómo se regula el acceso a los datos, lea acerca de cómo administrar el acceso a [Microsoft 365 Defender](m365d-permissions.md).
 
 ## <a name="browser-requirements"></a>Requisitos de los exploradores
 Acceda Microsoft 365 Defender en el centro Microsoft 365 seguridad mediante Microsoft Edge, Internet Explorer 11 o cualquier explorador web compatible con HTML 5.
@@ -75,7 +75,7 @@ Actualmente, Microsoft 365 Defender *no está* disponible para:
 - Todas las instituciones gubernamentales de ESTADOS UNIDOS con licencias comerciales
 
 
-Actualmente, la integración de Microsoft Defender Office 365 en las características unificadas de Microsoft 365 Defender no están disponibles para los clientes en las siguientes ubicaciones Office 365 centro de datos:
+Actualmente, Microsoft Defender para Office 365 integración en las características de Microsoft 365 Defender unificadas no están disponibles para los clientes en las siguientes ubicaciones Office 365 centro de datos:
 
 - Brasil 
 - Alemania 
@@ -87,6 +87,6 @@ Actualmente, la integración de Microsoft Defender Office 365 en las caracterís
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Microsoft 365 Introducción al defensor](microsoft-365-defender.md)
+- [Microsoft 365 Defender introducción](microsoft-365-defender.md)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 - [Administrar el acceso y los permisos](m365d-permissions.md)

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0d01f33ad92ce5047b9cfda71c8aebcae7be32ee
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 44f88ab39ff8869e37bd187519c177a72565a8ba0d6c87bf69078291e3527240
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837352"
 ---
 # <a name="payment-information-for-curacao"></a>Información de pago para Curazao
 
