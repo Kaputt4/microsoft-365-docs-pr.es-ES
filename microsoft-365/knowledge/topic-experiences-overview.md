@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre cómo usar Viva Topics en su organización.
-ms.openlocfilehash: 943b257750c11bb280fa864a1f8f49a2fb291fc2
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: d8e8de3cead0fc389212b2f3b028769d6b2850138b864c379b87bc9f00dfd8bd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622441"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864096"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de los temas de Microsoft Viva 
 
@@ -144,6 +144,6 @@ Es posible que se pregunte a los usuarios a los que permite acceder a ver temas 
 
 Para obtener más información, vea [Detección de temas y curación.](./topic-experiences-discovery-curation.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Use Búsqueda de Microsoft para buscar temas en Temas de Viva](./search.md)

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprender la resistencia de datos en Microsoft Office 365.'
-ms.openlocfilehash: 89f3fbcc90cee0ad822156014ee4ac9e04fe3371
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 290debbcbb58c7ded884a2443a7c4f31a4b2f92c396500ff1d63f3fcc7221942
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855700"
 ---
 # <a name="service-encryption"></a>Cifrado de servicio
 
@@ -33,7 +33,7 @@ Proporciona claves raíz usadas con el cifrado de servicio y administra estas cl
 
 El cifrado de servicio proporciona varias ventajas:
 
-- Proporciona una capa de protección adicional en la parte superior de BitLocker.
+- Proporciona una capa de protección adicional sobre BitLocker.
 
 - Proporciona la separación Windows administradores del sistema operativo del acceso a los datos de la aplicación almacenados o procesados por el sistema operativo.
 

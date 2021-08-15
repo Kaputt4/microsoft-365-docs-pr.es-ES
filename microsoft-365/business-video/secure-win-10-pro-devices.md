@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo administrar Windows 10 Pro de dispositivos con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 0f7cfff227e1ab4ea992414b513e341adbd9ef22
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: fa639da2b12f97e833d892d2b83939d42481c766f8c57c6f52adf7eb5fae0011
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873116"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>Administrar Windows 10 Pro de dispositivos
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSL?autoplay=false]
 
-Puedes usar Microsoft 365 Empresa para asegurarte de que Antivirus de Windows Defender se activa en Windows 10 dispositivos y las actualizaciones de Microsoft se descargan automáticamente en los dispositivos de los usuarios.
+Puedes usar Microsoft 365 Empresa para garantizar que Antivirus de Windows Defender se active en dispositivos Windows 10 y que las actualizaciones de Microsoft se descarguen automáticamente en los dispositivos de los usuarios.
 
 ## <a name="try-it"></a>¿Se atreve?
 

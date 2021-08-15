@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Después de que Office 365 buzón de correo esté inactivo, cambie la duración de la retención o Office 365 de retención asignada al buzón inactivo.
-ms.openlocfilehash: 49d133c64763cee12cb26e27d372a16ba4ad7e94
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 07ff73218613ecf8b3e670db3a92720b9e08ee2dbee68e77850256bb7ee6768f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918206"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886904"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Cambiar la duración de retención para un buzón inactivo
 
@@ -101,7 +101,7 @@ En la tabla siguiente se identifican los cinco tipos de retención diferentes qu
   
 |**Buzón inactivo**|**Tipo de retención**|**Cómo identificar la retención en el buzón inactivo**|
 |:-----|:-----|:-----|
-|Ann Beebe  <br/> |Retención por juicio  <br/> |La  *propiedad LitigationHoldEnabled*  se establece en  `True` .  <br/> |
+|Ann Beebe  <br/> |Retención por litigio  <br/> |La  *propiedad LitigationHoldEnabled*  se establece en  `True` .  <br/> |
 |Pilar Pinilla  <br/> |Retención en contexto  <br/> |La  *propiedad InPlaceHolds*  contiene el GUID de la retención In-Place que se coloca en el buzón inactivo. Puede saber que se trata de una retención In-Place porque el identificador no comienza con un prefijo.  <br/> Puede usar el comando en Exchange Online PowerShell para obtener información sobre la retención In-Place `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` en el buzón inactivo.  <br/> |
 |Mario Necaise  <br/> |Directiva de retención Microsoft 365 toda la organización en el Centro de seguridad & cumplimiento  <br/> |La  *propiedad InPlaceHolds*  está vacía. Esto indica que se aplica una o varias directivas de retención Exchange toda la organización o (Microsoft 365 de retención) al buzón inactivo. En este caso, puede ejecutar el comando en Exchange Online PowerShell para obtener una lista de los GUID para directivas de retención de Microsoft 365 `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` organización. El GUID de las directivas de retención de toda la organización que se aplican Exchange buzones comienzan con el `mbx` prefijo; por ejemplo, `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> <br/>Para identificar la Microsoft 365 de retención que se aplica al buzón inactivo, ejecute el siguiente comando en PowerShell del Centro de seguridad & cumplimiento.  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
 |Carol Olson  <br/> |Microsoft 365 de retención en el Centro de seguridad & cumplimiento aplicado a buzones específicos  <br/> |La *propiedad InPlaceHolds* contiene el GUID de la Microsoft 365 de retención que se aplica al buzón inactivo. Puede saber que se trata de una directiva de retención que se aplica a buzones específicos porque el GUID comienza por el  `mbx` prefijo. Si el GUID de la directiva de retención aplicada al buzón inactivo comenzó con el prefijo, indicaría que la directiva de retención se aplica a Skype Empresarial `skp` conversaciones.  <br/><br/> Para identificar la Microsoft 365 de retención que se aplica al buzón inactivo, ejecute el siguiente comando en PowerShell del Centro de seguridad & cumplimiento.<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>Asegúrese de quitar el  `mbx` prefijo o al ejecutar este  `skp` comando.  <br/> |

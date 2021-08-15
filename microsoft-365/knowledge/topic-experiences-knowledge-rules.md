@@ -1,5 +1,5 @@
 ---
-title: Administrar visibilidad de temas en Temas de Microsoft Viva
+title: Administrar la visibilidad del tema en Temas Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Obtenga información sobre cómo administrar la visibilidad de temas en Temas de Microsoft Viva.
-ms.openlocfilehash: 07679b2de668ba5e0c9fdf206310233ce7af84a4
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+description: Obtenga información sobre cómo administrar la visibilidad del tema en Temas Microsoft Viva.
+ms.openlocfilehash: 6ac247ba758929f367c99b963a19b0619ab588c077687c8027c2807d98732211
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864123"
 ---
-# <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Administrar visibilidad de temas en Temas de Microsoft Viva
+# <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Administrar la visibilidad del tema en Temas Microsoft Viva
 
 Puede administrar quién puede ver los aspectos destacados del tema, las tarjetas de tema y el centro de temas en el [Centro de administración de Microsoft 365](https://admin.microsoft.com). Debe ser un administrador global o administrador SharePoint administrador de grupos para realizar estas tareas.
 
@@ -49,11 +49,11 @@ Puede cambiar los usuarios que pueden ver temas de su organización.
 > [!Note] 
 > Aunque esta configuración le permite seleccionar cualquier usuario de su organización, solo los usuarios que tengan licencias de Experiencias de tema asignadas podrán ver temas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Administrar la detección de temas en Temas de Microsoft Viva](topic-experiences-discovery.md)
+[Administrar la detección de temas en Temas Microsoft Viva](topic-experiences-discovery.md)
 
-[Administrar permisos de temas en Temas de Microsoft Viva](topic-experiences-user-permissions.md)
+[Administrar permisos de temas en Temas Microsoft Viva](topic-experiences-user-permissions.md)
 
-[Cambiar el nombre del centro de temas en Temas de Microsoft Viva](topic-experiences-administration.md)
+[Cambie el nombre del centro de temas en Temas Microsoft Viva](topic-experiences-administration.md)
 

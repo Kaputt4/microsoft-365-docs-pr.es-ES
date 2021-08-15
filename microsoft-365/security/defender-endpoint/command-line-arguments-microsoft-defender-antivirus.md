@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: efeb49b2741bdc45f7924032c2deb8a27458ca29
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7f407ae3018dc9214d364528c2392b00b7279489d98ec96c5b5d24d8207bfc01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904136"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurar y administrar Antivirus de Microsoft Defender con la mpcmdrun.exe de línea de comandos
 
@@ -51,7 +51,7 @@ En nuestro ejemplo, la utilidad MpCmdRun inicia un examen antivirus completo en 
 
 | Comando  | Descripción   |
 |:----|:----|
-| `-?` **o** `-h`   | Muestra todas las opciones disponibles para la herramienta MpCmdRun |
+| `-?`**o**`-h`   | Muestra todas las opciones disponibles para la herramienta MpCmdRun |
 | `-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Busca software malintencionado. Los valores **de ScanType** son:<p>**0** Valor predeterminado, según la configuración<p>**1** Examen rápido<p>**2** Examen completo<p>**3** Examen personalizado de archivos y directorios.<p>CpuThrottling se ejecuta según las configuraciones de directivas |
 | `-Trace [-Grouping #] [-Level #]` | Inicia el seguimiento de diagnóstico |
 | `-GetFiles [-SupportLogLocation <path>]` | Recopila información de soporte técnico. Vea '[collecting diagnostic data](collect-diagnostic-data.md)'  |
@@ -83,7 +83,7 @@ En la tabla siguiente se enumeran los errores comunes que pueden producirse al u
 | **ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=800722F0D** | El firewall bloquea la conexión o realiza una inspección SSL. |
 | **ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=80072EE7 httpcode=451)** | El firewall bloquea la conexión o realiza una inspección SSL. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar las funciones del Antivirus de Microsoft Defender](configure-microsoft-defender-antivirus-features.md)
 - [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)

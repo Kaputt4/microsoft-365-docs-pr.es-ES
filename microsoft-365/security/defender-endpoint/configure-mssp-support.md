@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 54187862f805c8232aac80199b30dcce7fef2c5b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 92e017d4b068de289204dc891cdee7d3a5c30a214a7e251e977d77909d8429ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652364"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904124"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>Configurar la integración del proveedor de servicios de seguridad administrados
 

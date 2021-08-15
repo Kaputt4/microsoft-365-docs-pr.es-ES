@@ -15,12 +15,12 @@ ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, aprenderá sobre las tecnologías de cifrado que puede administrar y configurar en Microsoft 365.
-ms.openlocfilehash: 6a693c512100c59eef47414fdd6eab4a2924e835
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 04774e6b3c4d514d13e1bf30a70f9eb53c7c97f8308e5cd18d72b3fcf0181c4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855832"
 ---
 # <a name="customer-managed-encryption-features"></a>Características de cifrado administradas por el cliente
 
@@ -52,7 +52,7 @@ Azure Rights Management ayuda a mitigar amenazas como el cableado, los ataques m
 
 Secure/Multipurpose Internet Mail Extensions (S/MIME) es un estándar para el cifrado de claves públicas y la firma digital de datos MIME. S/MIME se define en RFC 3369, 3370, 3850, 3851 y otros. Permite a un usuario cifrar un correo electrónico y firmar digitalmente un correo electrónico. Un correo electrónico cifrado mediante S/MIME solo puede descifrarlo el destinatario del correo electrónico mediante su clave privada, que solo está disponible para ese destinatario. Por lo tanto, los correos electrónicos no pueden ser descifrados por nadie que no sea el destinatario del correo electrónico.
 
-[Microsoft admite S/MIME](https://blogs.technet.com/b/exchange/archive/2014/12/15/how-to-configure-s-mime-in-office-365.aspx). Los certificados públicos se distribuyen en Active Directory local del cliente y se almacenan en atributos que se pueden replicar en un espacio empresarial Microsoft 365 cliente. Las claves privadas que corresponden a las claves públicas permanecen localmente y nunca se transmiten a Office 365. Los usuarios pueden redactar, cifrar, descifrar, leer y firmar digitalmente correos electrónicos entre dos usuarios de una organización mediante Outlook, Outlook en la web y Exchange ActiveSync clientes. Para obtener más información, vea [Cifrado S/MIME ahora en Office 365](https://blogs.office.com/2014/02/26/smime-encryption-now-in-office-365/).
+[Microsoft admite S/MIME](https://blogs.technet.com/b/exchange/archive/2014/12/15/how-to-configure-s-mime-in-office-365.aspx). Los certificados públicos se distribuyen en Active Directory local del cliente y se almacenan en atributos que se pueden replicar en un espacio empresarial Microsoft 365 cliente. Las claves privadas que corresponden a las claves públicas permanecen localmente y nunca se transmiten a Office 365. Los usuarios pueden redactar, cifrar, descifrar, leer y firmar digitalmente correos electrónicos entre dos usuarios de una organización mediante Outlook, Outlook en la Web y Exchange ActiveSync clientes. Para obtener más información, vea [Cifrado S/MIME ahora en Office 365](https://blogs.office.com/2014/02/26/smime-encryption-now-in-office-365/).
 
 ## <a name="office-365-message-encryption"></a>Cifrado de mensajes de Office 365
 

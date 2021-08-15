@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Obtenga información sobre el cifrado disponible en Azure, como Azure Disk Encryption
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee4eb2bec814d7e06d418518bb9be272f1bd5aaa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72a6560d6d3fdb12489b5b2cc988c469277c81c425ca4117b728039ca0de1ff2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855916"
 ---
 # <a name="encryption-in-azure"></a>Cifrado en Azure
 
@@ -36,9 +36,9 @@ Para los datos en reposo, Azure ofrece muchas opciones de cifrado, como la compa
 
 Para obtener más información sobre el cifrado en Azure, vea [Azure encryption overview](/azure/security/security-azure-encryption-overview) y Azure Data [Encryption-at-Rest](/azure/security/azure-security-encryption-atrest).
 
-## <a name="azure-disk-encryption"></a>Azure Disk Encryption
+## <a name="azure-disk-encryption"></a>Cifrado de disco de Azure
 
-Azure Disk Encryption permite cifrar los discos de máquina virtual de Windows y linux infrastructure as a Service (IaaS). Azure Disk Encryption aprovecha la característica BitLocker de Windows y la característica DM-Crypt de Linux para proporcionar cifrado de nivel de volumen para el sistema operativo y los discos de datos. También garantiza que todos los datos de los discos de máquina virtual se cifran en reposo en el almacenamiento de Azure. Azure Disk Encryption está integrado con Azure Key Vault para ayudarle a controlar, administrar y auditar el uso de las claves y secretos de cifrado.
+Azure Disk Encryption le permite cifrar los discos de máquina virtual Windows y Linux Infrastructure as a Service (IaaS). Azure Disk Encryption aprovecha la característica BitLocker de Windows y la característica DM-Crypt de Linux para proporcionar cifrado de nivel de volumen para el sistema operativo y los discos de datos. También garantiza que todos los datos de los discos de máquina virtual se cifran en reposo en el almacenamiento de Azure. Azure Disk Encryption se integra con Azure Key Vault para ayudarle a controlar, administrar y auditar el uso de las claves y secretos de cifrado.
 
 Para obtener más información, vea [Security recommendations for Windows virtual machines in Azure](/azure/virtual-machines/windows/security-recommendations).
 
@@ -46,7 +46,7 @@ Para obtener más información, vea [Security recommendations for Windows virtua
 
 Con [Azure Storage cifrado de](/azure/storage/storage-service-encryption)servicio, Azure Storage cifra automáticamente los datos antes de conservarlos en el almacenamiento y descifra los datos antes de la recuperación. Los procesos de cifrado, descifrado y administración de claves son totalmente transparentes para los usuarios. Azure Storage El cifrado de servicio se puede usar [para Azure Blob Storage](https://azure.microsoft.com/services/storage/blobs/) y Azure [Files](https://azure.microsoft.com/services/storage/files/). También puede usar claves de cifrado administradas por Microsoft con Azure Storage cifrado de servicio o puede usar sus propias claves de cifrado. (Para obtener información sobre cómo usar sus propias claves, consulte [Storage Service Encryption using customer managed keys in Azure Key Vault](/azure/storage/common/storage-service-encryption-customer-managed-keys). Para obtener información acerca del uso de claves administradas por Microsoft, vea [Storage Service Encryption for Data at Rest](/azure/storage/storage-service-encryption).) Además, puede automatizar el uso del cifrado. Por ejemplo, puede habilitar o deshabilitar mediante programación el cifrado de servicio de Storage en una cuenta de almacenamiento mediante la API de REST del proveedor de recursos de [Azure Storage,](/rest/api/storagerp/)la biblioteca de cliente del proveedor de recursos de Storage para [.NET,](/dotnet/api/overview/azure/storage) [Azure PowerShell](/powershell/azureps-cmdlets-docs)o la CLI de [Azure](/azure/storage/storage-azure-cli).
 
-Algunos Microsoft 365 usan Azure para almacenar datos. Por ejemplo, SharePoint Online y OneDrive para la Empresa almacenan datos en Azure Blob Storage y Microsoft Teams almacena datos para su servicio de chat en tablas, blobs y colas. Además, la característica administrador de cumplimiento en el centro de cumplimiento de Microsoft 365 almacena los datos introducidos por el cliente que se almacenan en forma cifrada en [Azure Cosmos DB](/azure/cosmos-db/database-encryption-at-rest), una plataforma como servicio (PaaS), una base de datos multi model distribuida globalmente. Azure Storage Cifrado de servicio cifra los datos almacenados en Azure Blob Storage y en tablas, y Azure Disk Encryption cifra los datos en colas, así como los discos de máquina virtual de Windows e IaaS para proporcionar cifrado de volumen para el sistema operativo y el disco de datos. La solución garantiza que todos los datos de los discos de la máquina virtual se cifran en reposo en el almacenamiento de Azure. [El cifrado en reposo](/azure/cosmos-db/database-encryption-at-rest) en Azure Cosmos DB se implementa mediante varias tecnologías de seguridad, incluidos sistemas de almacenamiento de claves seguros, redes cifradas y API criptográficas.
+Algunos Microsoft 365 usan Azure para almacenar datos. Por ejemplo, SharePoint Online y OneDrive para la Empresa almacenan datos en Azure Blob Storage y Microsoft Teams almacena datos para su servicio de chat en tablas, blobs y colas. Además, la característica administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365 almacena los datos introducidos por el cliente que se almacenan en forma cifrada en [Azure Cosmos DB](/azure/cosmos-db/database-encryption-at-rest), una plataforma como servicio (PaaS), una base de datos de varios modelos distribuida globalmente. Azure Storage Cifrado de servicio cifra los datos almacenados en Azure Blob Storage y en tablas, y Azure Disk Encryption cifra los datos en colas, así como los discos de máquina virtual de Windows e IaaS para proporcionar cifrado de volumen para el sistema operativo y el disco de datos. La solución garantiza que todos los datos de los discos de la máquina virtual se cifran en reposo en el almacenamiento de Azure. [El cifrado en reposo](/azure/cosmos-db/database-encryption-at-rest) en Azure Cosmos DB se implementa mediante varias tecnologías de seguridad, incluidos sistemas de almacenamiento de claves seguros, redes cifradas y API criptográficas.
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 

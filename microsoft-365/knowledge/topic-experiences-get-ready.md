@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 84a07211126e2007b0f5740c18ef871d24497d8746d369acabf0aa9adf0203b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864157"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Prepare el entorno para Temas Microsoft Viva
 
@@ -96,7 +96,7 @@ La buena administración de permisos es fundamental aquí. Y la buena administra
   1. En el sitio, **elija Configuración**  >  **site permissions**. Compruebe quién aparece en Propietarios del sitio, Miembros del sitio y Visitantes del sitio. Compruebe si hay usuarios Invitados.
   2. En la página **Permisos**, elija **Configuración avanzada de permisos**. Puede buscar permisos exclusivos y ver quién tiene acceso limitado a los elementos del sitio.
 
-- Audite Teams y Grupos de Microsoft 365 para asegurarse de que se establecen correctamente como grupos o equipos públicos o privados. Los grupos Teams y Microsoft 365 están establecidos en privado de forma predeterminada, pero cuando se publicó por primera vez eran públicos de forma predeterminada. Si antes eras adoptantes de estas tecnologías, es posible que quieras revisar. Además, la función de un equipo a menudo evoluciona durante su ciclo de vida y es posible que sea necesario actualizar la configuración para reflejar el uso actual del equipo.
+- Audite Teams y Grupos de Microsoft 365 para asegurarse de que se establecen correctamente como grupos o equipos públicos o privados. Los grupos Teams y Microsoft 365 están establecidos en privado de forma predeterminada, pero cuando se publicó por primera vez eran públicos de forma predeterminada. Si antes eras adoptantes de estas tecnologías, es posible que quieras revisar. Además, la función de un equipo a menudo evoluciona durante su ciclo de vida y es posible que sea necesario actualizar la configuración para reflejar el uso actual del equipo.
 - Revise el uso de "todos", "todos excepto los usuarios externos" o grupos de seguridad amplios. El contenido puede compartirse de forma incorrecta con estos valores. Para revisar el uso de estos grupos, puede:
   - Crear una cuenta que no tenga pertenencias a grupos
   - Usar la búsqueda con esta cuenta para encontrar contenido que se comparte de forma general.
@@ -107,7 +107,7 @@ Además de los permisos, también puede controlar el ámbito de lo que se puede 
 Los administradores pueden configurar la indización en el Centro Administración de Microsoft 365 datos. Al configurar Temas [de Viva,](set-up-topic-experiences.md)puede:
 
 - Permita la detección en todos los sitios de SharePoint o especifique sitios para incluirlos o excluirlos como orígenes de temas.
-- Si tiene términos confidenciales, también puede excluir temas por nombre. Por ejemplo, si tiene el nombre de un proyecto confidencial, donde no quiere que se muestre una tarjeta o contenido destacado, independientemente de los permisos del usuario, puede excluir ese nombre de proyecto.
+- Cuando tenga términos confidenciales, también puede excluir temas por nombre. Por ejemplo, si tiene el nombre de un proyecto confidencial, donde no quiere que aparezca un resaltado o una tarjeta, independientemente de los permisos del usuario, puede excluir ese nombre de proyecto.
 
 En el nivel de contenido, también puede controlar lo que se puede detectar. La detección de contenido también usará cualquier configuración que hayas realizado para excluir contenido de la búsqueda. Por lo tanto, por ejemplo, si ha excluido una biblioteca de documentos específica para que no aparezca en los resultados de búsqueda, esta biblioteca de documentos no se usará para la detección de temas.
 
@@ -121,7 +121,7 @@ La administración de temas implica tres roles clave, incluidos dos nuevos roles
 
 Dependiendo de la organización, es posible que haya pocas o muchas personas que actúen en estos roles. Para algunas organizaciones, pueden ser las mismas personas.
 
-| Administrador de la información | Responsable de la información | Colaborador de tema |
+| Administrador de la información | Administrador de conocimientos | Colaborador de tema |
 |:-------|:-------|:-------|:-------|
 | Rol AAD | Rol AAD | SME |
 | Tiene acceso al Centro de administración | Tiene acceso al Centro de administración | Sin acceso al Centro de administración |

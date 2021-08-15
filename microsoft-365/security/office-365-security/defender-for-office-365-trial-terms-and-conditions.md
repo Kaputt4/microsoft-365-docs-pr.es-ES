@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre los términos de uso de Microsoft Defender para Office 365 prueba
-ms.openlocfilehash: 3aa35f2fab6868899884775ea45b41dab813c173
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 128afb36495a5084ab89bb0cd052960878c5522dc6c9cad58a28aac63580986e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205970"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897404"
 ---
 # <a name="microsoft-defender-for-office-365-trial-terms--conditions"></a>Términos de prueba Office 365 de Microsoft Defender para & condiciones
 

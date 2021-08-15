@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo recuperar el contenido de un buzón inactivo en Office 365 convertirlo en un nuevo buzón que contenga el contenido del buzón inactivo.
-ms.openlocfilehash: e7f5ea9e3d47bf6b7ee6de495d2f5f47984cdf8f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 62b3412b0c6152ea0ceb3d902218654f6559c198c680743021bb18f0dcc9e0c4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855652"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Recuperar un buzón inactivo
 
@@ -73,7 +73,7 @@ Use el cmdlet **New-Mailbox** con el  *parámetro InactiveMailbox*  para recuper
 
    La dirección SMTP principal del buzón inactivo recuperado tendrá el mismo valor que la especificada por el parámetro *MicrosoftOnlineServicesID.*
 
-Después de recuperar un buzón inactivo, también se crea una nueva cuenta de usuario. Debe activar esta cuenta de usuario asignando una licencia. Para asignar una licencia en el centro Microsoft 365 administración, vea Agregar usuarios y [asignar licencias al mismo tiempo.](../admin/add-users/add-users.md)
+Después de recuperar un buzón inactivo, también se crea una nueva cuenta de usuario. Debe activar esta cuenta de usuario asignando una licencia. Para asignar una licencia en el Centro de administración de Microsoft 365, vea [Agregar usuarios y asignar licencias al mismo tiempo.](../admin/add-users/add-users.md)
 
 ## <a name="more-information"></a>Más información
 

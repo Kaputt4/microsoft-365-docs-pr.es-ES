@@ -19,16 +19,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Una vez que hayas terminado de configurar Cifrado de mensajes de Office 365 (OME), aprende a personalizar la implementación de varias maneras.
-ms.openlocfilehash: a2b3dde44ea541deb41eeb9d55d5ed745fa6c719
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 73862bd08ba393d7ccc24a2b665cb3ac83df99a9018b3c9945ce3cae691e78a5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52650989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856000"
 ---
 # <a name="manage-office-365-message-encryption"></a>Administrar el Cifrado de mensajes de Office 365
 
-Una vez que haya terminado de configurar Cifrado de mensajes de Office 365 (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso único, mostrar el botón **Cifrar** en Outlook en la web y mucho más. Las tareas de este artículo describen cómo hacerlo.
+Una vez que haya terminado de configurar Cifrado de mensajes de Office 365 (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso único, mostrar el botón **Cifrar** en Outlook en la Web y mucho más. Las tareas de este artículo describen cómo hacerlo.
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Administrar si los destinatarios de cuentas de Google, Yahoo y Microsoft pueden usar estas cuentas para iniciar sesión en el portal de Cifrado de mensajes de Office 365 microsoft
 
@@ -82,11 +82,11 @@ Si el destinatario de un mensaje cifrado por OME no usa Outlook, independienteme
    Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
    ```
 
-## <a name="manage-the-display-of-the-encrypt-button-in-outlook-on-the-web"></a>Administrar la presentación del botón Cifrar en Outlook en la web
+## <a name="manage-the-display-of-the-encrypt-button-in-outlook-on-the-web"></a>Administrar la visualización del botón Cifrar en Outlook en la Web
 
 Como administrador, puede administrar si desea mostrar este botón a los usuarios finales.
   
-### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>Para administrar si el botón Cifrar aparece en Outlook en la web
+### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>Para administrar si el botón Cifrar aparece en Outlook en la Web
   
 1. Use una cuenta de trabajo o escuela que tenga permisos de administrador global en su organización e inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -177,7 +177,7 @@ Para obtener más información acerca de Microsoft 365 implementa el cifrado par
 
 ## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>Asegúrese de que todos los destinatarios externos usan el Portal de OME para leer correo cifrado
 
-Puede usar plantillas de personalización de marca personalizadas para forzar a los destinatarios a recibir un correo contenedor que los dirija a leer correo electrónico cifrado en el Portal de OME en lugar de usar Outlook o Outlook en la web. Es posible que desee hacer esto si desea un mayor control sobre cómo los destinatarios usan el correo que reciben. Por ejemplo, si los destinatarios externos ven el correo electrónico en el portal web, puede establecer una fecha de expiración para el correo electrónico y puede revocar el correo electrónico. Estas características solo se admiten a través del Portal de OME. Puede usar las opciones Cifrar y No reenviar al crear las reglas de flujo de correo.
+Puede usar plantillas de personalización de marca personalizadas para forzar a los destinatarios a recibir un correo contenedor que los dirija a leer correo electrónico cifrado en el Portal de OME en lugar de usar Outlook o Outlook en la Web. Es posible que desee hacer esto si desea un mayor control sobre cómo los destinatarios usan el correo que reciben. Por ejemplo, si los destinatarios externos ven el correo electrónico en el portal web, puede establecer una fecha de expiración para el correo electrónico y puede revocar el correo electrónico. Estas características solo se admiten a través del Portal de OME. Puede usar las opciones Cifrar y No reenviar al crear las reglas de flujo de correo.
 
 ### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>Usar una plantilla personalizada para forzar a todos los destinatarios externos a usar el Portal de OME y para el correo electrónico cifrado
 
@@ -221,7 +221,7 @@ Esperamos que no lo haga, pero si es necesario, deshabilitar las nuevas capacida
   
 1. Con una cuenta de trabajo o escuela que tenga permisos de administrador global en su organización, inicie una sesión Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Si ha habilitado el botón **Cifrar** en Outlook en la web, deshabilite el cmdlet Set-IRMConfiguration con el parámetro SimplifiedClientAccessEnabled. De lo contrario, omita este paso.
+2. Si ha habilitado el **botón Cifrar** en Outlook en la Web, deshabilite el cmdlet Set-IRMConfiguration con el parámetro SimplifiedClientAccessEnabled. De lo contrario, omita este paso.
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false

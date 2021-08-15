@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78a7aca31a4e103c5abe98bffc0e60048e8b0426
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ee2fe84fcacd5f8f6b6eb2d6e1c2fca2d22af6595549ac5c464303f979d0d93b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904089"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 

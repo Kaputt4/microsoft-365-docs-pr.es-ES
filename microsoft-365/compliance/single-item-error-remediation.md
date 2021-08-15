@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Puede corregir un error de procesamiento en un documento en un conjunto de Advanced eDiscovery sin tener que seguir el proceso de corrección masiva de errores.
-ms.openlocfilehash: 8e5d8d00f507dc5792a1beda018d4c76632b82f7
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 038be8d60851dcbd14452d293bad29be4f9de3f8b4c86aab6e7ee7e905b2d13a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751587"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830640"
 ---
 # <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Corrección de errores de elemento único en Advanced eDiscovery
 

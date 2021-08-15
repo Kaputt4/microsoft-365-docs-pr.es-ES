@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 84fb4be9bb6b1f86b8203bef32f890ba5ec1a36f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4c54c8385c3add948bfa3463561055cb4745e2dea5408ea9f181d6f581d1f918
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652916"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839572"
 ---
 # <a name="create-and-manage-device-groups"></a>Crear y administrar grupos de dispositivos
 

@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Puede usar Information Rights Management (IRM) para ayudar a controlar y proteger los archivos que se descargan de listas o bibliotecas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0648d511ee882765f1905e83ebdea673f306c186
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 8e6390e20b19c291ea79417082d926e670d7b59a27572d58e25b888e8a18d023
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887044"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicar Information Rights Management (IRM) a una lista o biblioteca
 
@@ -66,7 +66,7 @@ Puede usar Information Rights Management (IRM) para ayudar a controlar y protege
 
 7. Para aplicar restricciones adicionales a los documentos de esta lista o biblioteca, seleccione **Mostrar opciones** y realice una de las siguientes acciones:
 
-|**Para ello:**|**Haga lo siguiente:**|
+|**Para hacerlo:**|**Haga lo siguiente:**|
 |:-----|:-----|
 |Permitir que las personas impriman documentos de esta lista o biblioteca|Active la **casilla Permitir que los visores impriman.**|
 |Permitir que las personas con al menos el permiso Ver elementos ejecuten código incrustado o macros en un documento.|Active la **casilla Permitir que los visores ejecuten el script y** el lector de pantalla para que funcionen en documentos descargados. Si selecciona esta opción, los usuarios podrían ejecutar código para extraer el contenido de un documento.           |
@@ -136,7 +136,7 @@ Los tipos de restricciones que se aplican a un archivo cuando se descarga de una
 |Administrar permisos, administrar sitio web|**Control total** (tal como lo define el programa cliente): este permiso generalmente permite a un usuario leer, editar, copiar, guardar y modificar permisos de contenido administrado con derechos.|
 |Editar elementos, administrar listas, agregar y personalizar páginas|**Editar**, **Copiar** y **Guardar:** un usuario solo  puede imprimir un archivo si la casilla Permitir que los usuarios impriman documentos está activada en la página Information Rights Management Configuración para la lista o biblioteca.|
 |Ver elementos|**Lea:** Un usuario puede leer el documento, pero no puede copiar ni modificar su contenido. Un usuario solo puede  imprimir si la casilla Permitir que los usuarios impriman documentos está activada en la página Information Rights Management Configuración la lista o biblioteca.|
-|Otros|Ningún otro permiso corresponde directamente a los permisos de IRM.|
+|Otro|Ningún otro permiso corresponde directamente a los permisos de IRM.|
    
 Cuando habilita IRM para una lista o biblioteca en SharePoint Server 2013, solo puede proteger los tipos de archivo de esa lista o biblioteca para la que está instalado un protector en todos los servidores front-end web. Un protector es un programa que controla el cifrado y descifrado de archivos administrados con derechos de un formato de archivo específico. SharePoint incluye protectores para los siguientes tipos de archivo:
   

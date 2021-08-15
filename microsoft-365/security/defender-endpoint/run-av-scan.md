@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a8c21b49e4de23b2f8a822eb06a3d172202d3cf4b8b1c38bec6f23bf08e381b7
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: e4541bf39c034973057f53513afb7b5376d51b0ba7a2232f9fc5594ef64d76f0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523329"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839548"
 ---
 # <a name="run-antivirus-scan-api"></a>Ejecutar LA API de detección antivirus
 
@@ -44,11 +44,6 @@ Inicie Antivirus de Microsoft Defender examen en un dispositivo.
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
-
-> [!IMPORTANT]
->
-> - Esta acción está disponible para dispositivos Windows 10 versión 1709 o posterior.
-> - Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 ## <a name="permissions"></a>Permisos
 
@@ -78,14 +73,14 @@ Nombre|Tipo|Descripción
 Authorization|String|Portador {token}. **Necesario**.
 Content-Type|string|application/json
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Descripción
+Parámetro|Tipo|Description
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-ScanType|String|Define el tipo de examen. **Necesario**.
+ScanType|Cadena|Define el tipo de examen. **Necesario**.
 
 **ScanType** controla el tipo de examen que se va a realizar y puede ser uno de los siguientes:
 
