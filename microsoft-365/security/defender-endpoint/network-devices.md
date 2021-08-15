@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 939a2ef1620b8539c398f320d5e9cf61021eb5fe
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4e3665e148cd08bfef2fd56e1d51595ed7626a57a82cc6c3b3577b8d157bb1a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884588"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 

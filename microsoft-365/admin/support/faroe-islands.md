@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bdbf542b3f98aae77e5654dadd0f445382a460ce
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: defb922c8ed15a11aa5bd7b25a252b81f2b383ddf245966e30077e146cc696e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862232"
 ---
 # <a name="contact-support-for-faroe-islands"></a>Póngase en contacto con el soporte técnico de Islas Feroe
 

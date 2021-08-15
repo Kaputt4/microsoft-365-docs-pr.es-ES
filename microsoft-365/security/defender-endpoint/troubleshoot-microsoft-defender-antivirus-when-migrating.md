@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 9a9d33d123c1b308d31c80663d1a8fc373e955d53e92d3680d39dc8b1d930d00
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623365"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853792"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 
@@ -101,7 +101,7 @@ DisableAntiSpyware|-
 GPO ganador|Win10-Workstations
 Resultado: Correcto|
 **General**|
-Acción|Actualizar
+Action|Actualizar
 **Propiedades**|
 Subárbol|HKEY_LOCAL_MACHINE
 Ruta de acceso clave|SOFTWARE\Policies\Microsoft\Windows Defender
@@ -135,7 +135,7 @@ Otra característica, conocida como [examen periódico limitado,](limited-period
 > [!IMPORTANT]
 > No se recomienda el examen periódico limitado en entornos empresariales. Las capacidades de detección, administración e informes disponibles al ejecutar Antivirus de Microsoft Defender en este modo se reducen en comparación con el modo activo.
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulte también
 
 - [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)
 - [Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md)

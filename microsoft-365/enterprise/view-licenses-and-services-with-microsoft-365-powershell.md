@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica cómo usar PowerShell para ver información sobre los planes de licencias, los servicios y las licencias que están disponibles en su Microsoft 365 organización.
-ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: faf7589cacee5d945ef136c602dd1f3f18ac92dba5e361adc1a9e43580afe24f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830148"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Ver Microsoft 365 licencias y servicios con PowerShell
 
@@ -163,7 +163,7 @@ En este ejemplo se muestran los servicios disponibles en el plan de licencias li
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

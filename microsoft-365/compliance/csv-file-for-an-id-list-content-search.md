@@ -18,12 +18,12 @@ ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
 description: Use un archivo CSV de una búsqueda de contenido existente para crear una búsqueda de lista de identificadores que devuelva elementos de correo electrónico específicos.
-ms.openlocfilehash: 37a398d0896fcfd7b7282bda1f6a549ed9f53601
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: db22ac702e71004d73728350acf4242c9a5ac25d59749584dc8a7948ff2d1065
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871955"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Preparar un archivo CSV para una búsqueda de contenido de lista de identificadores
 
@@ -33,7 +33,7 @@ Puede buscar mensajes de correo electrónico de buzones de correo específicos y
 
 Este es un resumen rápido del proceso para crear una búsqueda de lista de identificadores.
 
-1. Cree y ejecute una nueva búsqueda en el centro Microsoft 365 cumplimiento.
+1. Cree y ejecute una nueva búsqueda en el Centro de cumplimiento de Microsoft 365.
 
 2. Exporte los resultados de búsqueda de contenido o el informe de búsqueda de contenido. Para obtener más información, vea:
 

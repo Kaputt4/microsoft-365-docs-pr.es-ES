@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b671810bce375bfe2574315ea83cd3f939f025fa
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 38e62021346f3802070f40176955d02656bf563e0fc4318c3df96bad1cad610f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828957"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>Informar y solucionar problemas de Microsoft Defender para las reglas ASR de ATP
 
@@ -32,13 +32,14 @@ ms.locfileid: "53567925"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-El Microsoft 365 de seguridad es la nueva interfaz para supervisar y administrar la seguridad en todas las identidades, datos, dispositivos, aplicaciones e infraestructura de Microsoft. Aquí podrá ver fácilmente el estado de seguridad de su organización; configurar dispositivos, usuarios y aplicaciones, así como recibir alertas sobre actividad sospechosa. El Centro de seguridad de Microsoft 365 tiene como fin que los equipos de administración de seguridad y operaciones de seguridad administren y protejan mejor su organización. Visite el centro Microsoft 365 seguridad en https://security.microsoft.com .
+El Microsoft 365 de seguridad es la nueva interfaz para supervisar y administrar la seguridad en todas las identidades, datos, dispositivos, aplicaciones e infraestructura de Microsoft. Aquí podrá ver fácilmente el estado de seguridad de su organización; configurar dispositivos, usuarios y aplicaciones, así como recibir alertas sobre actividad sospechosa. El Centro de seguridad de Microsoft 365 tiene como fin que los equipos de administración de seguridad y operaciones de seguridad administren y protejan mejor su organización. Visite el centro Microsoft 365 seguridad en <https://security.microsoft.com> .
+
 En Microsoft 365 de seguridad, le ofrecemos una vista completa de la configuración y los eventos de reglas ASR actuales en su estado. Tenga en cuenta que los dispositivos deben incorporarse al servicio Microsoft Defender para endpoints para que estos informes se rellenen.
-Esta es una captura de pantalla del centro Microsoft 365 de seguridad (en **Reports**  >  **Devices**  >  **Attack surface reduction**). En el nivel de dispositivo, selecciona **Configuración en** el panel Reglas de reducción de **superficie de** ataque. Se muestra la siguiente pantalla, donde puedes seleccionar un dispositivo específico y comprobar su configuración de regla ASR individual.
+Esta es una captura de pantalla del centro Microsoft 365 de seguridad (en **Reports** \> **Devices** \> **Attack surface reduction**). En el nivel de dispositivo, selecciona **Configuración en** el panel Reglas de reducción de **superficie de** ataque. Se muestra la siguiente pantalla, donde puedes seleccionar un dispositivo específico y comprobar su configuración de regla ASR individual.
 
 :::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="Pantalla de reglas ASR":::
 
-## <a name="microsoft-defender-for-endpoint--advanced-hunting"></a>Microsoft Defender para endpoint: búsqueda avanzada
+## <a name="microsoft-defender-for-endpoint---advanced-hunting"></a>Microsoft Defender para endpoint: búsqueda avanzada
 
 Una de las características más eficaces de Microsoft Defender para Endpoint es la búsqueda avanzada. Si no estás familiarizado con la búsqueda avanzada, consulta búsqueda proactiva de [amenazas con búsqueda avanzada.](advanced-hunting-overview.md)
 
@@ -69,7 +70,9 @@ La primera y más inmediata forma es comprobar localmente, en un dispositivo Win
 Estas son algunas otras fuentes de información que Windows ofrece, para solucionar el impacto y el funcionamiento de las reglas ASR.
 
 ### <a name="querying-which-rules-are-active"></a>Consultar qué reglas están activas
-Una de las formas más sencillas de determinar si las reglas ASR ya están habilitadas y, a través de un cmdlet de PowerShell, Get-MpPreference.
+
+Una de las formas más sencillas de determinar si las reglas ASR ya están habilitadas es a través de un cmdlet de PowerShell, Get-MpPreference.
+
 Aquí le mostramos un ejemplo:
 
 :::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="obtener script mppreference":::
@@ -80,19 +83,24 @@ Para expandir la información anterior sobre las reglas ASR, puede usar las prop
 
 Ejemplo:
 
-*Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids*
+```powershell
+Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids
+```
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="ejemplo de obtener mpreference":::
 
 Lo anterior muestra todos los IDs de las reglas ASR que tienen una configuración diferente de 0 (No configurado).
 
-A continuación, el siguiente paso es enumerar las acciones reales (Bloquear o Auditar) con las que se configura cada regla. 
+A continuación, el siguiente paso es enumerar las acciones reales (Bloquear o Auditar) con las que se configura cada regla.
 
-*Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions*
+```powershell
+Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
+```
 
 :::image type="content" source="images/getmpref-example2new.png" alt-text="get mppreference example2":::
 
 ### <a name="querying-blocking-and-auditing-events"></a>Consulta de eventos de bloqueo y auditoría
+
 Los eventos de regla ASR se pueden ver en el Windows Defender registro.
 
 Para acceder a él, abra Windows visor de eventos y vaya a Registros de aplicaciones y servicios  >  **de Microsoft**  >  **Windows**  >  **Windows Defender**  >  **Operativo**.
@@ -100,6 +108,7 @@ Para acceder a él, abra Windows visor de eventos y vaya a Registros de aplicaci
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="scr del visor de eventos":::
 
 ## <a name="microsoft-defender-malware-protection-logs"></a>Registros de Protección contra malware de Microsoft Defender
+
 También puede ver eventos de regla Antivirus de Microsoft Defender la herramienta de línea de comandos dedicada, denominada , que se puede usar para administrar y configurar y automatizar tareas si `*mpcmdrun.exe*` es necesario.
 
 Puede encontrar esta utilidad en *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. Debe ejecutarlo desde un símbolo del sistema con privilegios elevados (es decir, ejecutar como administrador).
@@ -112,6 +121,6 @@ Extrae ese archivo y tendrás muchos archivos disponibles para solucionar proble
 
 Los archivos más relevantes son los siguientes:
 
-- **MPOperationalEvents.txt:** este archivo contiene el mismo nivel de información que se encuentra en el Visor de eventos para Windows Defender registro operativo de la aplicación.
-- **MPRegistry.txt:** en este archivo puede analizar todas las configuraciones Windows Defender actuales, desde el momento en que se capturaron los registros de soporte técnico.
+- **MPOperationalEvents.txt:** este archivo contiene el mismo nivel de información que se encuentra en el Visor de eventos para el registro operativo de Windows Defender.
+- **MPRegistry.txt:** en este archivo puede analizar todas las configuraciones de Windows Defender actuales, desde el momento en que se capturaron los registros de soporte técnico.
 - **MPLog.txt:** este registro contiene información más detallada acerca de todas las acciones y operaciones del Windows Defender.

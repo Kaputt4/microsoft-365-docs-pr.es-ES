@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar resultados de búsqueda o ejemplos de esos resultados de búsqueda a un Advanced eDiscovery de revisión de casos.
-ms.openlocfilehash: 25ea5fe076753d4a5685f1224b98a2005d334f5f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: dd3b04812f1284d8a95a158f1ef47317bc89c9f28b743a723fc8d21287116e48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837064"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 

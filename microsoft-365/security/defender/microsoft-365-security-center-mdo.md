@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 219689783dbd98c1b6dfa09a2164cc4d350ffd9c
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: a3895b2d3e5ee435f0aeb1bb9b2becf23b6da71ecd387bbbc06fac3f1941a8d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838828"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender para Office 365 en Microsoft 365 Defender
 
@@ -49,7 +49,7 @@ En la tabla siguiente se enumeran los cambios en la navegación entre el Centro 
 |Información de gobierno||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Administración de amenazas|[Colaboración & correo electrónico](https://security.microsoft.com/homepage)|||
 |Permissions|[Permisos & roles](https://security.microsoft.com/emailandcollabpermissions)|Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
-|Flujo de correo|||Consulta [Exchange de administración](https://admin.exchange.microsoft.com/#/)|
+|Flujo del correo|||Consulta [Exchange de administración](https://admin.exchange.microsoft.com/#/)|
 |Privacidad de datos||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Búsqueda|[Auditoría](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Búsqueda (búsqueda de contenido)||
 |Informes|[Informe](https://security.microsoft.com/emailandcollabreport)|||

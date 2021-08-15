@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que se puede entrenar para reconocer varios tipos de contenido para la aplicación de directivas o de la formación, ya que le proporciona ejemplos positivos y negativos que buscar.
-ms.openlocfilehash: 2a98d3d889b1f2d51c795a8668c46ef4e0d7d93e
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 25bbec395b1bb229f62122caf23845c18f5305e324a37cd0a6856e81286d1ee5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53594951"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872120"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -138,7 +138,7 @@ Puede ayudar a mejorar la precisión de todos los clasificadores personalizados 
 
 ![Flujo de trabajo de reciclaje de clasificadores](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

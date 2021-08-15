@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para rápida ejecución con El Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 7652a53e0d63e52d92e0d0506207c28f67459029
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7d7a711514e471a3d239918eaa576746a43dded02da81f8103f5c6213df20839
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287058"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872067"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 
@@ -113,7 +113,7 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
   | 10  | Sudamérica |
   | 11 | Sudáfrica |
   | 12  | Suiza |
-  | 13  | Emiratos Árabes Unidos |
+  | 13 | Emiratos Árabes Unidos |
   | 14  | Reino Unido |
 
 

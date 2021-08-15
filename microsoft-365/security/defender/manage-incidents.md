@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9cb3cc67c3992773897ea8178f261d25dcd87da0
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 87e20b8b44c42c1063155396c1ce1f98d10cd88391336734f28fe24db293a312
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838753"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 

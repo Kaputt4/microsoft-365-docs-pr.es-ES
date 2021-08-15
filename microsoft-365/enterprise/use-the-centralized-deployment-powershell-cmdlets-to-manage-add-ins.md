@@ -20,16 +20,16 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: Use los cmdlets de PowerShell de implementación centralizada para ayudarle a implementar y administrar Office complementos para su Microsoft 365 organización.
-ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8f84c3222fa8a9eefcdda90fa6daf1c453dd73236fd6be61d2c57b63c7feceea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830160"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 
-Como administrador global Microsoft 365, puede implementar complementos de Office para los usuarios mediante la característica implementación centralizada (vea [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)). Además de implementar Office complementos a través del centro de administración de Microsoft 365, también puede usar Microsoft PowerShell. Instale el [módulo de implementación centralizada Add-In O365 para Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+Como administrador global Microsoft 365, puede implementar complementos de Office para los usuarios mediante la característica implementación centralizada (vea [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)). Además de implementar Office complementos mediante el Centro de administración de Microsoft 365, también puede usar PowerShell de Microsoft. Instale el [módulo de implementación centralizada Add-In O365 para Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
 
 Después de descargar el módulo, abra una ventana de Windows PowerShell y ejecute el siguiente cmdlet:
 

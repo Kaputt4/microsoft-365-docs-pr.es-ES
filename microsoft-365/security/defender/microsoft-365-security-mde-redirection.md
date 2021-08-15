@@ -1,7 +1,7 @@
 ---
 title: Redirigir cuentas de Microsoft Defender para endpoint a Microsoft 365 Defender
 description: Cómo redirigir cuentas y sesiones desde Defender for Endpoint a Microsoft 365 Defender.
-keywords: Microsoft 365 Defender, Introducción a Microsoft 365 Defender, redirección del centro de seguridad
+keywords: Microsoft 365 Defender, Introducción a la Microsoft 365 Defender, redirección del centro de seguridad
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c678cb8d9eece9ff3a900a7d2b0c6bf95ad8eda9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c92788d13292501076e98e3cafeb2d145835de4d5ddde6b7822e79bc58680a7b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838732"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Redirigir cuentas de Microsoft Defender para endpoint a Microsoft 365 Defender
 
@@ -37,10 +37,10 @@ ms.locfileid: "52842571"
 
 En línea con el enfoque entre dominios de Microsoft para la protección contra amenazas con SIEM y la detección y respuesta extendidas (XDR), hemos cambiado el nombre de Protección contra amenazas avanzada de Microsoft Defender como Microsoft Defender para endpoint y lo hemos unificado en un único portal integrado: Microsoft 365 Defender.
 
-En esta guía se explica cómo enrutar cuentas a Microsoft 365 Defender habilitando la redirección automática desde el antiguo portal de Microsoft Defender para endpoints (securitycenter.windows.com o securitycenter.microsoft.com) hasta Microsoft 365 Portal de Defender (security.microsoft.com).
+En esta guía se explica cómo enrutar cuentas a Microsoft 365 Defender habilitando la redirección automática desde el antiguo portal de Microsoft Defender para endpoints (securitycenter.windows.com o securitycenter.microsoft.com), Microsoft 365 Defender portal (security.microsoft.com).
 
 > [!NOTE]
-> Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad administrados [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede acceso en el Centro de seguridad de [Microsoft Defender.](./mssp-access.md)
+> Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad [administrados (MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede acceso en el Centro de seguridad [de Microsoft Defender](./mssp-access.md).
 
 ## <a name="what-to-expect"></a>Qué esperar
 Una vez habilitada la redirección automática, las cuentas que tengan acceso al antiguo portal de Microsoft Defender para endpoints en securitycenter.windows.com o securitycenter.microsoft.com, se enruta automáticamente al portal de Microsoft 365 Defender en security.microsoft.com.
@@ -71,7 +71,7 @@ Consulte la tabla siguiente para obtener más información sobre los vínculos y
 | Página de incidentes en el portal del centro de seguridad | Página de incidentes en security.microsoft.com  | Página de incidentes en security.microsoft.com  |
 
 ## <a name="when-does-this-take-effect"></a>¿Cuándo tiene efecto? 
-Una vez habilitada, esta actualización podría tener efecto casi inmediatamente para algunas cuentas. Pero la redirección puede tardar más tiempo en propagarse a todas las cuentas de la organización. Las cuentas en sesiones activas mientras se aplica esta configuración no se expulsarán de su sesión y solo se enrutarán a Microsoft 365 Defender después de finalizar la sesión actual y volver a iniciar sesión.  
+Una vez habilitada, esta actualización podría tener efecto casi inmediatamente para algunas cuentas. Pero la redirección puede tardar más tiempo en propagarse a todas las cuentas de la organización. Las cuentas en sesiones activas mientras se aplica esta configuración no se expulsarán de su sesión y solo se enruta a Microsoft 365 Defender después de finalizar la sesión actual y volver a iniciar sesión.  
 
 ### <a name="set-up-portal-redirection"></a>Configurar la redirección del portal
 Para iniciar el enrutamiento de cuentas a Microsoft 365 Defender:
@@ -86,7 +86,7 @@ Para iniciar el enrutamiento de cuentas a Microsoft 365 Defender:
 5. Haga **clic en** Habilitar para aplicar la redirección automática a Microsoft 365 Defender.
 
 >[!IMPORTANT]
->Si se habilita esta configuración, no se finalizarán las sesiones de usuario activas. Las cuentas que se encuentran en una sesión activa mientras se aplica esta configuración solo se dirigirán a Microsoft 365 Defender después de finalizar la sesión actual y volver a iniciar sesión.
+>Si se habilita esta configuración, no se finalizarán las sesiones de usuario activas. Las cuentas que se encuentran en una sesión activa mientras se aplica esta configuración solo se dirigirán a Microsoft 365 Defender después de finalizar la sesión actual e iniciar sesión de nuevo.
 
 >[!NOTE]
 >Debe ser un administrador global o tener permisos de administrador de seguridad Azure Active Directory para habilitar o deshabilitar esta configuración.  
@@ -109,7 +109,7 @@ Esta configuración se puede habilitar de nuevo en cualquier momento.
 Una vez deshabilitadas, las cuentas ya no se enrutarán a security.microsoft.com y volverás a tener acceso al antiguo portal: securitycenter.windows.com o securitycenter.microsoft.com. 
 
 ## <a name="related-information"></a>Información relacionada
-- [Microsoft 365 Introducción al defensor](overview-security-center.md)
+- [Microsoft 365 Defender introducción](overview-security-center.md)
 - [Microsoft Defender para endpoint en Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft ofrece SIEM y XDR unificados para modernizar las operaciones de seguridad](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR frente a la infografía siem](https://afrait.com/blog/xdr-versus-siem/) 

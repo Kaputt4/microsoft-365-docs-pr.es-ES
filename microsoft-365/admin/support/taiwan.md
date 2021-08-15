@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 76536a2977da404c50ed75980d80683842429f9f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ea6a80fd11222fdc355f7826f75a5a1f63bc26535f2ca0261a403e6d6b874ab2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297589"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861944"
 ---
 # <a name="contact-support-for-taiwan"></a>Póngase en contacto con el soporte técnico de Taiwán
 

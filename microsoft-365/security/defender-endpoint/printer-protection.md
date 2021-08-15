@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4a91bece49c4e1e12e8f0a2d9d2d6f6cf0e2681a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 738a5ae02cba8078b583b138b4e9dfa8733433f07feb69bce96b663a068aaa4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853831"
 ---
 # <a name="device-control-printer-protection"></a>Protección de la impresora de control de dispositivo
 
@@ -66,7 +66,7 @@ Puedes implementar la directiva a través de la directiva de grupo o Intune.
 
 ****
 
-|Título|Descripción|Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en usuarios | Compatibilidad basada en máquina |
+|Cargo|Description|Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en usuarios | Compatibilidad basada en máquina |
 |---|---|:---:|:---:|:---:|:---:|
 |**Habilitar restricciones de impresión del control de dispositivos**|Bloquear la impresión de personas a través de impresoras no corporativas|Sí|Sí|Sí|Sí|
 |**Lista de dispositivos de impresión conectados a USB aprobados**\*|Permitir una impresora USB específica|Sí|Sí|Sí|Sí|

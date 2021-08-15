@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Pruebe estos pasos para realizar un seguimiento de los problemas básicos de movilidad y seguridad
-ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 1ba964f052169b3937ecbc086abd4a686c0a66bb959c4b38d4280c1bbb0225a2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826716"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>Solucionar problemas de movilidad y seguridad básicas
 

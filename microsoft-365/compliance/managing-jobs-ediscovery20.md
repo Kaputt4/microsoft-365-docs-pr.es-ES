@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Advanced eDiscovery trabajos le ayudarán a realizar un seguimiento del estado de los procesos de larga ejecución relacionados con la realización de Advanced eDiscovery tareas.
-ms.openlocfilehash: 27ac98d1f98e85800c8ca3dfc91cc5e0803ae2e8
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 09b114ad39f2bbc7868a5ea6bf2871e0f3cba4a386d359316518bbf1bbe886a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871798"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Administrar trabajos en Advanced eDiscovery
 
@@ -55,5 +55,5 @@ En la tabla siguiente se describen los distintos estados de estado de los trabaj
 | En curso | El trabajo está en curso, puede supervisar el progreso del trabajo en **la** pestaña Trabajos. |
 | Correcto | El trabajo se completó correctamente. La fecha y hora en que se completó el trabajo se muestra en la **columna** Completado de la **ficha** Trabajos. |
 | Parcialmente correcto | El trabajo se ha realizado correctamente. Este estado normalmente se devuelve cuando el trabajo no encontró datos parcialmente indizados (también denominados datos no indexados) en algunos de los orígenes de datos de custodia.  |
-| Failed | Error en el trabajo.  Debe intentar volver a ejecutar la acción que desencadenó el trabajo. Si el trabajo falla una segunda vez, se recomienda ponerse en contacto con el Soporte técnico de Microsoft y proporcionar la información de soporte técnico del trabajo. |
+| Error | Error en el trabajo.  Debe intentar volver a ejecutar la acción que desencadenó el trabajo. Si el trabajo falla una segunda vez, se recomienda ponerse en contacto con el Soporte técnico de Microsoft y proporcionar la información de soporte técnico del trabajo. |
 |||

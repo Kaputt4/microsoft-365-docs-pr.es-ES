@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de458eed2b52b6043a4f5aaa5f8593b6136f9d37
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 457df54dd2e73e7c580059cb698a2345dca92a607e730b9d98b5f27bb4e02134
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853671"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -42,7 +42,7 @@ Como alternativa a una solicitud de corrección cuando una recomendación no es 
 
 Cuando se crea una excepción para una recomendación, la recomendación no estará activa hasta el final de la duración de la excepción. El estado de recomendación cambiará a **Excepción completa** o **Excepción parcial** (por grupo de dispositivos).
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 Solo los usuarios con permisos de "control de excepciones" pueden administrar excepciones (incluida la creación o la cancelación). [Obtenga más información sobre los roles RBAC](user-roles.md).
 
