@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 788641b549119229307a179dbfebed09b2a4c0b0
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 76557d14dbd75b0a2a181b56be27ae672de1bc7939d8e86e70c843fb236296c4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888000"
 ---
 # <a name="contact-support-for-french-guiana"></a>Póngase en contacto con el soporte técnico de la Guayana francesa
 

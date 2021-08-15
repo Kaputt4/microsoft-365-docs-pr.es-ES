@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre lo que necesita para configurar Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 70d0bf00afaa1a504097ac80598f9c1b1a184b05
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9a88b5269b4c3c4b566f50baf535a5896e9ad2bdde148eb82323b31dcdb64420
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831589"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>Información general sobre Microsoft 365 Empresa Premium configuración
 
@@ -55,7 +55,7 @@ Al elegir una suscripción en la nube para su empresa, tiene opciones sobre qué
 
 - Elige [Office 365 Empresa Essentials](https://www.microsoft.com/en-us/p/office-365-business-essentials/cfq7ttc0k59v?rtc=1&amp;activetab=pivot:overviewtab) si solo quieres aplicaciones en línea (aplicaciones a las que puedes acceder en un explorador web) para correo electrónico, creación de documentos, colaboración y almacenamiento en la nube. Esto incluye Word Online, Excel Online, PowerPoint Online y SharePoint Online.
 - Elige [Office 365 Empresa Premium](https://products.office.com/en-us/business/office-365-business-premium) si quieres la versión enriquecte de características de aplicaciones de Office como Word, Excel y Teams que se ejecutan directamente en los equipos y Mac. Esto se suma a las aplicaciones en línea.
-- Elige [Microsoft 365 Empresa](https://www.microsoft.com/microsoft-365/business?rtc=1) si quieres todas las aplicaciones Office, además de la seguridad en la nube y la administración de dispositivos. Esto incluye protección contra virus, malware, ransomware y mucho más, así como la administración y el cifrado de dispositivos. También obtiene una actualización gratuita a Windows 10 Pro desde versiones Windows Professional anteriores.
+- Elige [Microsoft 365 empresa](https://www.microsoft.com/microsoft-365/business?rtc=1) si quieres todas las aplicaciones Office, además de la seguridad en la nube y la administración de dispositivos. Esto incluye protección contra virus, malware, ransomware y mucho más, así como la administración y el cifrado de dispositivos. También obtiene una actualización gratuita a Windows 10 Pro desde versiones Windows Professional anteriores.
 - Si tiene una empresa más grande o necesita servicios y aplicaciones de TI más complejas, obtenga información sobre [nuestros planes Microsoft 365 Enterprise.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
 
 
@@ -79,7 +79,7 @@ Al elegir una suscripción en la nube para su empresa, tiene opciones sobre qué
 
 ## <a name="5-manage-and-secure-your-devices"></a>5. Administrar y proteger los dispositivos
 
-- Con Microsoft 365 Empresa Premium, obtiene protección en sus dispositivos, protección contra amenazas en línea y protección contra pérdida accidental de datos. También obtienes actualizaciones Windows Defender, BitLocker y automáticas para Windows 10 Pro y Office aplicaciones.
+- Con Microsoft 365 Empresa Premium, obtiene protección en sus dispositivos, protección contra amenazas en línea y protección contra pérdida accidental de datos. También obtienes Windows Defender, BitLocker y actualizaciones automáticas para Windows 10 Pro y Office aplicaciones.
 - Puede configurar la autenticación multifactor (MFA), el cifrado de correo electrónico, la protección contra malware y la protección contra ransomware para evitar el acceso no autorizado a dispositivos y datos.
 - Puedes proteger los datos de trabajo valiosos almacenados localmente en el equipo, en SharePoint o OneDrive para la Empresa, o en el dispositivo móvil. La administración de dispositivos móviles (MDM) integrada para Microsoft 365 te ayuda a proteger y administrar a tus usuarios&#39; dispositivos móviles como iPhones, iPads, Androides y Windows teléfonos. Con MDM, puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
 

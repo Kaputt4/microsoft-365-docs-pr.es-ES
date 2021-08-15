@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b553c543989798f46e3e0301c36cfe6b5de80546
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9adb3b64ce53609a416f05fbf89fc064a2cafad6596c8dbf78bc329c5937089c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287568"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861404"
 ---
 # <a name="payment-information-for-canada"></a>Información de pago para Canadá
 

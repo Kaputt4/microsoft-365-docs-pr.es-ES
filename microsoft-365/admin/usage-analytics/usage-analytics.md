@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: 77c1d8a2d2fe0288e7fbe8534ef76760baeac0aa
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 9e1518d85a583af100ea2734fdc1f526599e55b82882733c4516c7f88dcc2451
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394682"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887915"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 
@@ -60,7 +60,7 @@ El Microsoft 365 de información general contiene los siguientes informes. Puede
 
 - **Comunicación** &ndash; Puede ver de un vistazo si los usuarios de su organización prefieren mantenerse en contacto con Teams, Yammer, correo electrónico o Skype llamadas. Puede observar si hay cambios en los patrones en el uso de herramientas de comunicación entre los empleados. 
 
-- **Colaboración** &ndash; Vea cómo los usuarios de su organización usan OneDrive y SharePoint para almacenar documentos y colaborar entre sí, y cómo estas tendencias evolucionan mes a mes. También puede ver cuántos documentos se comparten interna o externamente y cuántos sitios de SharePoint o cuentas de OneDrive se usan activamente, desglosados por propietarios y otros colaboradores.
+- **Colaboración** &ndash; Vea cómo los usuarios de su organización usan OneDrive y SharePoint para almacenar documentos y colaborar entre sí, y cómo estas tendencias evolucionan mes a mes. También puede ver cuántos usuarios compartieron documentos interna o externamente y cuántos usuarios usaron sitios SharePoint o cuentas OneDrive, desglosados por propietarios y otros colaboradores.
 
 - **Storage** &ndash; Use este informe para realizar un seguimiento del almacenamiento en la nube de buzones, OneDrive y SharePoint web.
 
@@ -80,7 +80,7 @@ Este informe contiene un informe independiente para cada servicio de Microsoft 3
 
 ## <a name="user-activity"></a>Actividad de usuario
 
-Los informes de actividad de usuario están disponibles para determinados servicios individuales. Estos informes proporcionan datos de uso de detalles de usuario unidos con atributos de Active Directory. Además, el informe de adopción del departamento le permite segmentar por atributos de Active Directory para que pueda ver usuarios activos en todos los servicios individuales. Todas las métricas se agregan para el último mes completo.
+Los informes de actividad de usuario están disponibles para determinados servicios individuales. Estos informes proporcionan datos de uso de detalles de usuario unidos con atributos de Active Directory. Además, el informe de adopción del departamento le permite segmentar por atributos de Active Directory para que pueda ver usuarios activos en todos los servicios individuales. Todas las métricas se agregan para el último mes completo. Para ver la fecha de contenido, vaya a la página de la tabla y seleccione Tabla UserActivity donde el valor de TimeFrame proporciona el período de informes. 
 
 ## <a name="faq"></a>Preguntas más frecuentes
 

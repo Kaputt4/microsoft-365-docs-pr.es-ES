@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprende a mover tus datos y usuarios de Google Workspace a Microsoft 365 para empresas.
-ms.openlocfilehash: 9d5ec1ce6b9b13026f615c4135546505130fe7b3
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 8a27b83831a10abf7c80bf35f694e50533203d0407fa589c6f08e3f2c9280b30
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873140"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Cambiar de Google Workspace: información general
 

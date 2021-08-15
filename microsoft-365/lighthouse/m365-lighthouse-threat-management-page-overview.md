@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Administración de amenazas.
-ms.openlocfilehash: 10f39737bb69f4a5080b343cfbe6c6cfe5908d72
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2c53c10922befea999a8025e35d53da2225aafc4a9543f13f04a35ca8e7f2ecd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395259"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898988"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de administración de amenazas 
 
@@ -67,7 +67,7 @@ En la tabla siguiente se enumeran los distintos estados de amenaza y su definici
 | Se requiere reiniciar | Es necesario reiniciar el dispositivo. |
 | Corregido con errores no críticos | La amenaza se ha corregido y no se necesitan más acciones. |
 | En cuarentena | La amenaza se ha puesto en cuarentena. No se necesitan más acciones. |
-| Eliminación | La amenaza se ha quitado correctamente del dispositivo. No se necesitan más acciones. |
+| Eliminado | La amenaza se ha quitado correctamente del dispositivo. No se necesitan más acciones. |
 | Limpiado | Antivirus de Microsoft Defender archivos recuperados y desinfectados. No se necesitan más acciones. |
 | Permitido | Un administrador permite que la amenaza permanezca en el dispositivo. | 
 

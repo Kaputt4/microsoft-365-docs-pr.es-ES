@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Comparte archivos y vídeos dentro de la campaña con Microsoft Teams y SharePoint.
-ms.openlocfilehash: d6d168c196a8571cab86a1be57f5b26782bc4d3f
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 90f99f42db7dbfba3d0b7276da8591623cc6a32b588acb212694953a29735d1d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861447"
 ---
 # <a name="share-files-and-videos"></a>Compartir archivos y vídeos
 

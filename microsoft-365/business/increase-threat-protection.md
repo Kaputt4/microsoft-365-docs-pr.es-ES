@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 proteger los datos confidenciales frente a la suplantación de identidad(phishing), malware y otras amenazas.
-ms.openlocfilehash: a995063cef6fdc42ad62079d49d58edc9d07b52c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d5aad66642fc2b509ae40dc1277167deb53de6fbb0593a3dcd766062305fbd6a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831483"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -101,7 +101,7 @@ Los hackers que obtienen acceso al buzón de un usuario pueden robar correo esta
 
 Para crear una regla de transporte de correo, vea [este breve vídeo](../business-video/stop-email-auto-forward.md) o siga estos pasos:
 
-1. En el centro Microsoft 365 administración, seleccione **Centros de administración** \> **Exchange**.
+1. En el Centro de administración de Microsoft 365, seleccione **Centros de administración** \> **Exchange**.
 
 2. En la **categoría flujo de** correo, seleccione **reglas**.
 

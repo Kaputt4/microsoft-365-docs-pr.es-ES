@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Valide Microsoft 365 Empresa Premium de protección de aplicaciones en Windows 10 dispositivos y compruebe que los usuarios no pueden copiar datos de la compañía en archivos personales o aplicaciones no administradas.
-ms.openlocfilehash: e319ffa5149f055b5de45078facc8899acffc223
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ab084ded5ef052a7b85839f0debb96eb1bc5bdf332230293613396825c7263f0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579870"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861763"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de aplicaciones en PC con Windows 10
 

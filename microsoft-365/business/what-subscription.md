@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Determine si Office 365 E3, Microsoft 365 Empresa Estándar o Microsoft 365 Empresa Premium es adecuado para su empresa.
-ms.openlocfilehash: 2f8c59e0af619730060862fc8ee24a702ca00343
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f186e61bff7962911864904415d1a4326931db819abf4f885a87132fd23290f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861567"
 ---
 # <a name="what-subscription-is-right-for-your-small-business"></a>¿Qué suscripción es adecuada para su pequeña empresa?
 

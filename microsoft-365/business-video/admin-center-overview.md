@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use la vista simplificada en Microsoft 365 para administrar tareas comunes o la vista de panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: 61b2fb004ab4c1a84b5550065dd44f7ff7e432d8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 585deb5d4d1b7bf5758854ee90f31150ef1ed9e08b06c4402c90b7324965fad8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873164"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
@@ -148,44 +148,44 @@ El Centro de administración de Microsoft 365 está totalmente localizado en 40 
 |Idioma |Locale |
 |---------|---------|
 |Árabe | ar |
-|Búlgaro | bg |
-|Catalán | ca |
-|Checo | cs |
-|Danés | da |
-|Alemán | de |
-|Griego | el |
-|Español | es |
+|Bulgarian | bg |
+|Catalan | ca |
+|Czech | cs |
+|Danish | da |
+|German | de |
+|Greek | el |
+|Spanish | es |
 |Inglés | en |
-|Estonio | et |
-|Euskera | eu |
-|Finés | fi |
-|Francés | fr |
-|Gallego | gl |
-|Hebreo | he |
-|Croata | hr |
-|Húngaro | hu |
-|Indonesio  | id |
-|Italiano | it |
+|Estonian | et |
+|Basque | eu |
+|Finnish | fi |
+|French | fr |
+|Galician | gl |
+|Hebrew | he |
+|Croatian | hr |
+|Hungarian | hu |
+|Indonesian  | id |
+|Italian | it |
 |Japonés | ja |
 |Coreano | ko |
-|Lituano | lt |
-|Letón | lv |
-|Neerlandés | nl |
+|Lithuanian | lt |
+|Latvian | lv |
+|Dutch | nl |
 |Noruego | no |
-|Polaco | pl |
+|Polish | pl |
 |Portugués (Brasil) | pt |
 |Portugués (Portugal) | pt-pt |
-|Rumano | ro |
-|Ruso | ru |
-|Eslovaco | sk |
-|Esloveno | sl |
+|Romanian | ro |
+|Russian | ru |
+|Slovak | sk |
+|Slovenian | sl |
 |Serbio (cirílico)  | sr-cyrl |
 |Serbian Latin | sr |
-|Sueco | sv |
-|Tailandés | th |
-|Turco | tr |
-|Ucraniano | uk |
-|Vietnamita | vi |
+|Swedish | sv |
+|Thai | th |
+|Turkish | tr |
+|Ukrainian | uk |
+|Vietnamese | vi |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
 

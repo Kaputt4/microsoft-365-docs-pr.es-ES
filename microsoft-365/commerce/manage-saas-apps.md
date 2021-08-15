@@ -17,20 +17,18 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Aprende a activar y administrar aplicaciones de terceros en Microsoft 365 de administración.
+description: Aprende a activar y administrar aplicaciones de terceros en Centro de administración de Microsoft 365.
 ms.date: 04/15/2021
-ms.openlocfilehash: 5a486dba03fbd34fe2e409bba8ba41c1f9873141
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d7de6613ae77d70631b926ac1c2e72fab8b1837bacaf6f6f0e5a4735ef5dd06b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831440"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administrar suscripciones de aplicaciones de terceros para su organización
 
-Puedes administrar las licencias y la facturación de aplicaciones de terceros en el nuevo centro Microsoft 365 administración. Las características actualizadas incluyen una administración de suscripción mejorada, un acceso mejorado a la información de facturación y una mayor flexibilidad para administrar facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como servicio que los clientes compran directamente o a un proveedor de terceros.
-
-Puedes administrar las licencias y la facturación de aplicaciones de terceros en Microsoft 365 centro de administración con el modo de vista previa activado. Las características actualizadas incluyen una administración de suscripción mejorada, un acceso mejorado a la información de facturación y una mayor flexibilidad para administrar facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como servicio que los clientes compran directamente o a un proveedor de terceros.
+Puedes administrar licencias y facturación de aplicaciones de terceros en el nuevo Centro de administración de Microsoft 365. Las características actualizadas incluyen una administración de suscripción mejorada, un acceso mejorado a la información de facturación y una mayor flexibilidad para administrar facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como servicio que los clientes compran directamente o a un proveedor de terceros.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Cómo obtener aplicaciones de software como servicio
 
@@ -40,14 +38,14 @@ Hay varias formas de comprar aplicaciones de terceros.
 - **Compra de partners:** trabaje con un partner a través del Centro de partners para comprar suscripciones.
 - **Propuesta de Microsoft:** responder a una propuesta de Microsoft Sales que incluye aplicaciones de terceros.
 
-Una vez que los clientes compren las aplicaciones y acepten el Contrato de cliente de Microsoft, pueden administrarlas en Microsoft 365 centro de administración o en Microsoft Store para Empresas.
+Una vez que los clientes compren las aplicaciones y acepten el Contrato de cliente de Microsoft, pueden administrarlas en Centro de administración de Microsoft 365 o Microsoft Store para Empresas.
 
 Los proveedores de aplicaciones venden sus aplicaciones a una tarifa plana o comprando licencias para los usuarios.
 
 - **Tarifa plana:** también denominada precio basado en el sitio, las aplicaciones tienen un precio mensual o anual. En la página de la aplicación, la cantidad de licencia aparece en Unlimited.
 - **Licencias:** las aplicaciones tienen un precio por licencia. Los clientes asignan licencias a cada usuario de su organización
 
-## <a name="supported-regions"></a>Regiones admitidas
+## <a name="supported-regions"></a>Regiones compatibles
 
 La compatibilidad con aplicaciones de terceros está disponible en estas regiones:
 
@@ -76,7 +74,7 @@ Se te dirigirá al sitio del editor de aplicaciones donde puedes activar la apli
 
 ## <a name="manage-third-party-apps"></a>Administrar aplicaciones de terceros
 
-Los administradores administran aplicaciones de terceros en dos ubicaciones: Microsoft 365 de administración y el portal del proveedor de aplicaciones de terceros.
+Los administradores administran aplicaciones de terceros en dos ubicaciones: Centro de administración de Microsoft 365 y el portal del proveedor de aplicaciones de terceros.
 
 Esto es lo que puede hacer en cada portal.
 

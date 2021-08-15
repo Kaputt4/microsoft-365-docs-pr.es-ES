@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: cd95c4e0eb04b05860ded256066913cf87d67e86
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: ea4ce5d4883f3e3263a8885f1c347cf9f6fb8fb0c1d4062c1c2a843387d9aea3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53323108"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888073"
 ---
 # <a name="memory-regression-analysis"></a>Análisis de regresión de memoria
 
@@ -70,7 +70,7 @@ Estos archivos zip contienen los resultados de la ejecución de prueba, incluido
 
 Puede descargar y descomprimir los registros de las dos ejecuciones de prueba, localizar el archivo ETL en cada carpeta y cambiar su nombre como target.etl (para la ejecución de prueba en la actualización de versión anterior) y baseline.etl (para la ejecución de prueba en la última actualización publicada) para simplificar la exploración y la navegación.
  
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Avance al siguiente artículo para empezar a comprender el análisis de regresión inteligente de la CPU.
 > [!div class="nextstepaction"]

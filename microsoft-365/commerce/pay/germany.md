@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9a8070e4ef5d33eb8ca7163c42980f50ff8aa573
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fc31fcc67e7bff7dcb58747b5b03d2dd83703bad36c24ccae6d7a8d7f1f2c59e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906488"
 ---
 # <a name="payment-information-for-germany"></a>Información de pago para Alemania
 
