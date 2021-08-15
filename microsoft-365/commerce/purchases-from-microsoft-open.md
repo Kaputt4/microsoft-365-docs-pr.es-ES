@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo activar, renovar o agregar licencias a una suscripción Microsoft 365 para empresas.
 ms.date: 10/21/2020
-ms.openlocfilehash: 78524b47b32d1b827cc6d525e4aa8e3feb499557
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9f928c772d2ae00b529951a2562d4fb3271b825637da561891586aba6f9e67a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872688"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Escriba la clave de producto comprada en Microsoft Open
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre Advanced eDiscovery en Microsoft 365 idiomas chino, japonés y coreano (CJK), que usan un juego de caracteres de doble byte.
-ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7301903effa11dbe090197f0445f572b754fb44ca267b39b8cdc18ed27459fb4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905888"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>Compatibilidad con lenguaje CJK para Advanced eDiscovery
 

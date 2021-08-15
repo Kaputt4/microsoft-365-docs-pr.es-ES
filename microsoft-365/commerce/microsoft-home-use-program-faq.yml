@@ -19,16 +19,16 @@ metadata:
   search.appverid: MET150
   description: Preguntas más frecuentes sobre el Programa para el uso en el hogar de Microsoft.
   ms.date: 05/01/2021
-  ms.openlocfilehash: 467e378244ac991c2b0997b297eb1a751bdf9a85
-  ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+  ms.openlocfilehash: c4345ad61c8a97b953493dcaeffd399ce4cab02c8965934f6ac96ef35a514529
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "52535793"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53831396"
 title: Programa para el uso en el hogar de Microsoft preguntas más frecuentes (PREGUNTAS FRECUENTES)
 summary: "Los clientes de licencias por volumen usan Programa para el uso en el hogar de Microsoft (HUP) en el [Microsoft Store para Empresas web](https://go.microsoft.com/fwlink/?linkid=2139192).\n\nTodos los demás clientes tienen acceso a HUP mediante este paso:\n\n- En el Centro de administración de Microsoft, vaya a la página **Facturación** de sus productos, seleccione la pestaña Beneficios  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054)y, a continuación, seleccione la **pestaña HUP.** \n"
 sections:
-- name: Omitido
+- name: Omitidas
   questions:
   - question: >
       ¿Cuál es el Programa para el uso en el hogar de Microsoft?

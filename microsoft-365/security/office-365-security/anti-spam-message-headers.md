@@ -18,12 +18,12 @@ description: Los administradores pueden obtener información sobre los campos de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9720495fa78b22ee6d18a52b173349f8b3438e94
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
-ms.translationtype: MT
+ms.openlocfilehash: 7c25679e6b997756d9af1ccfd16eb5fd41565c4d4472e7ebc22fe572277997a6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56885534"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Encabezados de mensajes de correo no deseado en Microsoft 365
 

@@ -2,8 +2,8 @@
 title: Obtenga información sobre las directivas de aplicación
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las directivas de aplicación.
-ms.openlocfilehash: 09542f967a02ab475a8726dff51456b4993fb18e
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 056af6702938a6851d8f4de1767644d0cae543a1195883146f04bd0fc6094f5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861296"
 ---
 # <a name="learn-about-app-policies"></a>Obtenga información sobre las directivas de aplicación
 

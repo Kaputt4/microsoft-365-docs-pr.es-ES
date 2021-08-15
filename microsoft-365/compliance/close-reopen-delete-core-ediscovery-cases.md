@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar los casos principales de exhibición de documentos electrónicos. Esto incluye cerrar un caso, volver a abrir un caso cerrado y eliminar un caso.
-ms.openlocfilehash: d729c91d4e81ad12d0b4b16574aa4edad8e239a3
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 407956540e8881f34244e920fe9e49e6fe48ca7f417d084dcbd1845a2c53c4f6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906153"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos principal
 
@@ -36,13 +36,13 @@ Cuando se complete el caso legal o la investigación admitida por un caso de exh
 
 - Cerrar un caso solo desactiva las retenciones que están asociadas a ese caso. Si otras retenciones se colocan en una ubicación de contenido (como una retención por juicio, una directiva de retención o una retención de un caso de exhibición de documentos electrónicos principal diferente) esas retenciones se mantendrán.
 
-- El caso sigue en la lista en la página eDiscovery principal del centro de Microsoft 365 cumplimiento. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
+- El caso sigue estando en la página eDiscovery principal de la Centro de cumplimiento de Microsoft 365. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
 
 - Puede editar un caso después de cerrarlo. Por ejemplo, puede agregar o quitar miembros, crear búsquedas y exportar resultados de búsqueda. La diferencia principal entre los casos activos y cerrados es que las retenciones de exhibición de documentos electrónicos se apagan cuando se cierra un caso.
 
 Para cerrar un caso:
   
-1. En el centro Microsoft 365 cumplimiento, haga clic en **eDiscovery** Core para mostrar la lista de casos principales de exhibición de documentos electrónicos  >   en su organización.
+1. En el Centro de cumplimiento de Microsoft 365, haga clic en **eDiscovery** Core para mostrar la lista de casos principales de exhibición de documentos electrónicos  >   de la organización.
 
 2. Haga clic en el nombre del caso que desea cerrar.
 
@@ -64,7 +64,7 @@ Para cerrar un caso:
 
 Al volver a abrir un caso, las retenciones de exhibición de documentos electrónicos que estaban en su lugar cuando se cerró el caso no se restablecerán automáticamente. Una vez que se vuelva a abrir el caso, tendrás que ir a la página **Retenciones** y activar las retenciones anteriores. Para activar una retención, selecciónela para mostrar la página flotante y luego configure el interruptor de **Estado** en **Activado**.
   
-1. En el centro Microsoft 365 cumplimiento, haga clic en **eDiscovery** Core para mostrar la lista de casos principales de exhibición de documentos electrónicos  >   en su organización.
+1. En el Centro de cumplimiento de Microsoft 365, haga clic en **eDiscovery** Core para mostrar la lista de casos principales de exhibición de documentos electrónicos  >   de la organización.
 
 2. Haga clic en el nombre del caso que desea volver a abrir.
 
@@ -86,7 +86,7 @@ Al volver a abrir un caso, las retenciones de exhibición de documentos electró
   
 ## <a name="delete-a-case"></a>Eliminar un caso
 
-También puede eliminar los casos de exhibición de documentos electrónicos principales activos y cerrados. Al eliminar un caso, se eliminan todas las búsquedas y exportaciones del caso  y el caso se quita de la lista de casos de la página Exhibición de documentos electrónicos principal del centro de cumplimiento de Microsoft 365. No puede volver a abrir un caso eliminado.
+También puede eliminar los casos de exhibición de documentos electrónicos principales activos y cerrados. Al eliminar un caso, se eliminan todas las búsquedas y exportaciones del caso y el caso se quita de la lista de casos de la página **eDiscovery** principal de la Centro de cumplimiento de Microsoft 365. No puede volver a abrir un caso eliminado.
 
 Para poder eliminar un caso (ya sea activo o cerrado), primero debe eliminar todas las retenciones de *exhibición* de documentos electrónicos asociadas con el caso. Esto incluye la eliminación de retenciones con el estado **Off**. 
 
@@ -102,7 +102,7 @@ Para eliminar una retención de exhibición de documentos electrónicos:
 
 Para eliminar un caso:
 
-1. En el centro Microsoft 365 cumplimiento, haga clic en **eDiscovery** Core para mostrar la lista de casos principales de exhibición de documentos electrónicos  >   en su organización.
+1. En el Centro de cumplimiento de Microsoft 365, haga clic en **eDiscovery** Core para mostrar la lista de casos principales de exhibición de documentos electrónicos  >   de la organización.
 
 2. Haga clic en el nombre del caso que desea eliminar.
 

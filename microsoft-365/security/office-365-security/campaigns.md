@@ -19,12 +19,12 @@ ms.collection:
 description: Obtenga información sobre las vistas de campaña en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: d1b080968675de25374019ea96e68cb6e9a63aa2fe72533759065cd4fbbc44c0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56885524"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "52879137"
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-Vistas de campaña es una característica de Microsoft Defender para Office 365 Plan 2 (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento defender para Office 365 Plan 2). Las vistas de campaña en el portal de Microsoft 365 Defender identifican y clasifican los ataques de suplantación de identidad en el servicio. Vistas de la campaña puede ayudarle a:
+Vistas de campaña es una característica de Microsoft Defender para Office 365 Plan 2 (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento defender para Office 365 Plan 2). Las vistas de campaña en el portal de Microsoft 365 Defender identifica y categoriza los ataques de suplantación de identidad en el servicio. Vistas de la campaña puede ayudarle a:
 
 - Investigar y responder eficazmente a los ataques de suplantación de identidad.
 - Entender mejor el alcance del ataque.
@@ -54,11 +54,11 @@ Microsoft aprovecha las grandes cantidades de datos contra suplantación de iden
 
 Una campaña puede ser de corta duración o puede abarcar varios días, semanas o meses con períodos activos e inactivos. Una campaña puede iniciarse en su organización específica o su organización puede formar parte de una campaña más grande en varias empresas.
 
-## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Vistas de campaña en el portal de Microsoft 365 Defender
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Vistas de campaña en el portal de Microsoft 365 Defender campaña
 
 Las vistas de campaña están disponibles en el portal de Microsoft 365 Defender ( ) en <https://security.microsoft.com> **Email &** \> **collaboration Campaigns**, o directamente en <https://security.microsoft.com/campaigns> .
 
-![Introducción a las campañas en el portal Microsoft 365 Defender](../../media/campaigns-overview.png)
+![Introducción a las campañas en el portal Microsoft 365 Defender web](../../media/campaigns-overview.png)
 
 También puedes acceder a vistas de campaña desde:
 
@@ -67,7 +67,7 @@ También puedes acceder a vistas de campaña desde:
 - **Colaboración & correo electrónico** \> **Explorador** \> **Ver** \> **Phish** \> **Pestaña Campaña**
 - **Colaboración & correo electrónico** \> **Explorador** \> **Ver** \> **Malware** \> **Pestaña Campaña**
 
-Para tener acceso a vistas de campaña, debe ser miembro  de los grupos de roles Administración de la **organización,** Administrador de seguridad o Lector de seguridad en el portal de Microsoft 365 Defender. Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+Para tener acceso a vistas de campaña, debe ser miembro  de los grupos de roles Administración de la **organización,** Administrador de seguridad o Lector de seguridad en el portal Microsoft 365 Defender seguridad. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 ## <a name="campaigns-overview"></a>Introducción a las campañas
 
@@ -127,7 +127,7 @@ Las propiedades de campaña filtrables que están disponibles en el botón **Tip
   - **Remitente**
   - **Destinatarios**
   - **Dominio del remitente**
-  - **Asunto**
+  - **Subject**
   - **Nombres de archivos adjuntos**
   - **Familia de malware**
   - **Etiquetas:** usuarios o grupos a los que se ha aplicado la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
@@ -214,7 +214,7 @@ El diagrama contiene la información siguiente:
 
   ****
 
-  |Valor|Veredicto de filtro de correo no deseado|Description|
+  |Valor|Veredicto de filtro de correo no deseado|Descripción|
   |---|---|---|
   |**Permitido**|`SFV:SKN` <p> `SFV:SKI`|El mensaje se marcó como no correo no deseado o filtrado omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, una regla de flujo de correo (también conocida como regla de transporte) marcó el mensaje como no correo no deseado. <p> El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
   |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, mediante una regla de flujo de correo.|
@@ -225,7 +225,7 @@ El diagrama contiene la información siguiente:
   |**Bloque de inquilinos**<sup>\*\*</sup>|`SFV:SKA`|El filtrado de correo no deseado bloqueó el mensaje debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes Caja fuerte usuario.|
   |**Bloqueo de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje se bloqueó mediante el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados de un usuario.|
-  |**ZAP**|No aplicable|[La purga automática de hora cero (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta o cuarentena de correo no deseado. La acción se configura en la directiva contra correo no deseado.|
+  |**ZAP**|N/D|[La purga automática de hora cero (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta o cuarentena de correo no deseado. La acción se configura en la directiva contra correo no deseado.|
   |
 
   <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.

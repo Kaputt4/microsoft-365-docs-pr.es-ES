@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150 S
 description: Obtén información sobre cómo aplicar un código promocional a tu suscripción Microsoft 365 para reducir el precio y cómo solucionar problemas de código de promoción en caso de error.
 ms.date: 03/17/2021
-ms.openlocfilehash: 2a75f3e31a417e505c0f91044c61270f8bad8bae
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 01a185229f7ca07b7f665fa0515ed479490b92f4e8499787711bb847e2cb51e9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344655"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872664"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Usar el código de promoción para reducir el precio
 

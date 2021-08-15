@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la configuración del filtro de correo no deseado avanzado (ASF) que están disponibles en las directivas contra correo no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5f2646863c7b31fae6aa292cca23181996c266b158f168c471675d0f4c6bab69
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56886214"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Configuración avanzada del filtro de correo no deseado (ASF) en EOP
 
@@ -47,7 +47,7 @@ En todas Microsoft 365, la configuración del Filtro de correo no deseado avanza
 > - La presencia de mensajes filtrados en cuarentena.
 > - Los campos `X-CustomSpam:` de encabezado X específicos que se agregan a los mensajes como se describe en este artículo.
 
-En las secciones siguientes se describen las opciones y la configuración de ASF que están disponibles en las directivas contra correo no deseado en el portal de Microsoft 365 Defender y en Exchange Online PowerShell o powershell independiente de EOP ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) y [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
+En las secciones siguientes se describen las opciones y la configuración de ASF que están disponibles en las directivas contra correo no deseado en el Exchange Online portal de Microsoft 365 Defender y en powershell o powershell independiente de EOP ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) y [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Habilitar, deshabilitar o probar la configuración de ASF
 
@@ -76,7 +76,7 @@ La siguiente configuración de ASF establece el nivel de confianza de correo no 
 
 ****
 
-|Configuración de directiva contra correo no deseado|Description|Encabezado X agregado|
+|Configuración de directiva contra correo no deseado|Descripción|Encabezado X agregado|
 |---|---|---|
 |**Vínculos de imagen a sitios web remotos** <p> *IncreaseScoreWithImageLinks*|Los mensajes que contienen vínculos de etiqueta HTML a sitios remotos `<Img>` (por ejemplo, mediante http) se marcan como correo no deseado.|`X-CustomSpam: Image links to remote sites`|
 |**Dirección IP numérica en URL** <p> *IncreaseScoreWithNumericIps*|Los mensajes que contienen direcciones URL basadas en números (normalmente, direcciones IP) se marcan como correo no deseado.|`X-CustomSpam: Numeric IP in URL`|
@@ -92,7 +92,7 @@ La siguiente configuración de ASF establece el SCL de los mensajes detectados e
 
 ****
 
-|Configuración de directiva contra correo no deseado|Description|Encabezado X agregado|
+|Configuración de directiva contra correo no deseado|Descripción|Encabezado X agregado|
 |---|---|---|
 |**Mensajes vacíos** <p> *MarkAsSpamEmptyMessages*|Los mensajes sin asunto, sin contenido en el cuerpo del mensaje y sin datos adjuntos se marcan como correo no deseado de elevada confianza.|`X-CustomSpam: Empty Message`|
 |**Etiquetas incrustadas en HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Los mensajes que contienen `<embed>` etiquetas HTML se marcan como correo no deseado de elevada confianza. <p> Esta etiqueta permite insertar diferentes tipos de documentos en un documento HTML (por ejemplo, sonidos, vídeos o imágenes).|`X-CustomSpam: Embed tag in html`|

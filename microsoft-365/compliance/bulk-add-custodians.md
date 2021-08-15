@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la herramienta de importación dto agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en Advanced eDiscovery.
-ms.openlocfilehash: 98ff3690fe7fd8c956fce436585014ef0db82a26
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ccce04b5821eaff2d2ba65c846d58f3f474fb7277931da1d986f7b7ebe8beccb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421617"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906114"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importar custodios a un Advanced eDiscovery caso
 

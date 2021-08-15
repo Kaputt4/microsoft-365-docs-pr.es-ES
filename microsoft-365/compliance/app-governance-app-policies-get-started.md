@@ -2,8 +2,8 @@
 title: Introducción a las directivas de aplicación
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las directivas de aplicación.
-ms.openlocfilehash: 96acc17322cf811ba2ce36345df972f36b7706c7
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fae9afa65c4bef1d7288493e92c8b78c6fb9d08fa4426c1087622856b4cec921
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861313"
 ---
 # <a name="get-started-with-app-policies"></a>Introducción a las directivas de aplicación
 
@@ -27,7 +27,7 @@ ms.locfileid: "53541288"
 
 Las directivas de aplicación para la gobernanza de aplicaciones de Microsoft le permiten implementar condiciones más proactivas o reactivas a fin de crear alertas o correcciones automáticas para las necesidades específicas de cumplimiento de aplicaciones en la organización.
 
-Para ver una lista de las directivas de aplicaciones actuales, vaya al **Centro de cumplimiento de Microsoft 365 > Protección y gobernanza de aplicaciones > Directivas**.
+Para ver una lista de las directivas de aplicaciones actuales, vaya al **Centro de cumplimiento de Microsoft 365 > Gobernanza de aplicaciones > Directivas**.
 
 ![La página de resumen de directivas de MAPG en el Centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
