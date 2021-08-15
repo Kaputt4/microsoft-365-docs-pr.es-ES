@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure las licencias basadas en grupos y la pertenencia a grupos dinámicos en su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 26840e2884202a0fa9c4bb563f3d7c653482ef87
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8835498f0b56eeafbc86f49a0be2df840359afbfdeb5518ca6fe521b64c8c652
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905373"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859088"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatizar las licencias y la pertenencia a grupos para Microsoft 365 entorno de pruebas empresariales
 
@@ -51,7 +51,7 @@ Si desea probar las licencias automatizadas y la pertenencia a grupos en una emp
 
 En primer lugar, cree un nuevo grupo denominado Ventas y agregue  una regla de pertenencia a grupos dinámicos para que las cuentas de usuario con el Departamento establecido en **Ventas** se unan automáticamente al grupo Ventas.
 
-1. En una instancia privada de su explorador de Internet, inicie sesión en el centro de administración de [Microsoft 365](https://admin.microsoft.com) con la cuenta de administrador global de la suscripción Microsoft 365 E5 laboratorio de pruebas.
+1. En una instancia privada de su explorador de Internet, inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con la cuenta de administrador global de su Microsoft 365 E5 de laboratorio de pruebas.
 2. En una pestaña independiente del explorador, vaya a Azure Portal en [https://portal.azure.com](https://portal.azure.com) .
 3. En Azure Portal, escriba **grupos en** el cuadro de búsqueda y, a continuación, **seleccione Grupos**.
 4. en el **panel Todos los** grupos, seleccione Nuevo **grupo**.
@@ -75,7 +75,7 @@ A continuación, configure el grupo Ventas para que los miembros se asignen auto
 A continuación, pruebe la pertenencia a grupos dinámicos y las licencias automáticas en la cuenta de usuario 4:
 
 1. En la **Microsoft Office inicio** del explorador, seleccione **Administrador**.
-2. En la **pestaña Microsoft 365 centro de administración,** seleccione Usuarios **activos**.
+2. En la **Centro de administración de Microsoft 365,** seleccione **Usuarios activos**.
 3. En la **página Usuarios activos,** seleccione la **cuenta Usuario 4.**
 4. En el **panel Usuario 4,** seleccione **Editar para** licencias **de producto.**
 5. En el **panel Licencias de productos,** deshabilite **la Microsoft 365 E5** y, a continuación, **seleccione Guardar**  >  **cerrar**.

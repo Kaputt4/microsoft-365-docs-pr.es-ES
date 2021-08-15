@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Aprenda a verificar su dominio y a crear registros DNS con Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 64984cc6631e4585b208b67970b1fc91402881ed
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 52fa6a1bfbf3bdbea51431022ab8ec7f8fe287d9a14afe0d8631df017999fdfe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823788"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Conectar su dominio a Microsoft 365
 

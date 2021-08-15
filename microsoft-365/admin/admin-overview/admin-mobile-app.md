@@ -1,5 +1,5 @@
 ---
-title: Acerca de la Microsoft 365 móvil administrador
+title: Acerca de la Administración de Microsoft 365 móvil
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,17 +22,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtén la Microsoft 365 admin y aprende a administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: f8834aca0835a209a4df32a934eca736c5f7808f
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+description: Obtén la Administración de Microsoft 365 y aprende a administrar tu organización en línea desde tu teléfono o tableta.
+ms.openlocfilehash: c6990e8eed4a234c205b0a80b0a14faf18d0eeea6d607eb07b00682d17c40ab5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683240"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827196"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la Microsoft 365 móvil de administrador
 
-¿Es usted un administrador que normalmente está en marcha? Incluso si no lo está, puede que haya ocasiones en las que necesite administrar los Microsoft 365 desde su teléfono o tableta. Echa un vistazo a la [aplicación Microsoft 365 admin](https://go.microsoft.com/fwlink/?LinkID=627216)gratuita, el complemento perfecto para el centro de administración Microsoft 365 web. Puedes descargar la aplicación desde la [Tienda de aplicaciones de Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)y desde Google Play [Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
+¿Es usted un administrador que normalmente está en marcha? Incluso si no lo está, puede que haya ocasiones en las que necesite administrar los Microsoft 365 desde su teléfono o tableta. Echa un vistazo a la [Administración de Microsoft 365 gratuita,](https://go.microsoft.com/fwlink/?LinkID=627216)el complemento perfecto para la aplicación basada en web Centro de administración de Microsoft 365. Puedes descargar la aplicación desde la [Tienda de aplicaciones de Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)y desde Google Play [Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot: Admin mobile app's home page, showing search, Message center, health, and quick links":::
 
@@ -93,7 +93,7 @@ Sí, pero con funcionalidad reducida. Podrá iniciar sesión y ver la informaci�
   
 ### <a name="what-languages-are-supported-by-the-app"></a>¿Qué idiomas son compatibles con la aplicación?
 
-La aplicación admite los 39 idiomas que admite el centro de administración Microsoft 365 web. Para cambiar el idioma, en el menú de navegación izquierdo del Centro de administración, vaya **a Configuración** Idioma o seleccione el icono Idioma en la sección Vínculos rápidos de la página principal de la aplicación móvil  >   de administrador.  
+La aplicación admite los 39 idiomas que admite el Centro de administración de Microsoft 365 web. Para cambiar el idioma, en el menú de navegación izquierdo del Centro de administración, vaya **a Configuración** Idioma o seleccione el icono Idioma en la sección Vínculos rápidos de la página principal de la aplicación móvil  >   de administrador.  
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>¿Cómo puedo compartir los mensajes e incidencias de servicio con el resto de mi organización?
 

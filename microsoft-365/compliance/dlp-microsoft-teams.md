@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams chats y canales admiten directivas de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: fa7e0967e24d8fa5e64b84fbccf54ff8cf45d1d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c71001ec81326df07362c4caa34a2f9d382fb3eb3b18d790a3883f369b41aba7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851341"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams.
 
@@ -31,7 +31,7 @@ Si su organización tiene prevención de pérdida de datos (DLP), puede definir 
     > [!NOTE]
     > DLP para Microsoft Teams bloquea el contenido confidencial cuando se comparte con Microsoft Teams usuarios que tienen:<br/>- [acceso de invitado](/MicrosoftTeams/guest-access) en equipos y canales; o<br/>- [acceso externo en](/MicrosoftTeams/manage-external-access) reuniones y sesiones de chat. <p>DLP para sesiones de chat externas solo funcionará si el remitente y el receptor están en modo de solo Teams y usando Microsoft Teams [federación nativa](/microsoftteams/manage-external-access). DLP para Teams no bloquea los [](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) mensajes en interoperabilidad con Skype Empresarial o sesiones de chat federadas no nativas.
 
-- **Ejemplo 2: Protección de información confidencial en documentos**. Supongamos que alguien intenta compartir un documento con invitados en un canal Microsoft Teams chat y que el documento contiene información confidencial. Si tiene una directiva DLP definida para evitarlo, el documento no se abrirá para esos usuarios. La directiva DLP debe incluir SharePoint y OneDrive para poder establecer la protección. Este es un ejemplo de DLP para SharePoint que se muestra en Microsoft Teams y, por lo tanto, requiere que los usuarios tienen licencia para dlp Office 365 (incluido en Office 365 E3), pero no requiere que los usuarios puedan obtener una licencia para Cumplimiento avanzado de Office 365).
+- **Ejemplo 2: Protección de información confidencial en documentos**. Supongamos que alguien intenta compartir un documento con invitados en un canal Microsoft Teams chat y que el documento contiene información confidencial. Si tiene una directiva DLP definida para evitarlo, el documento no se abrirá para esos usuarios. La directiva DLP debe incluir SharePoint y OneDrive para poder establecer la protección. Este es un ejemplo de DLP para SharePoint que aparece en Microsoft Teams y, por lo tanto, requiere que los usuarios tienen una licencia para DLP de Office 365 (incluida en Office 365 E3), pero no requiere que los usuarios puedan obtener una licencia para Cumplimiento avanzado de Office 365).
 
 ## <a name="dlp-licensing-for-microsoft-teams"></a>Licencias DLP para Microsoft Teams
 
@@ -70,7 +70,7 @@ La protección DLP se aplica de forma diferente a Teams entidades.
 
 ## <a name="policy-tips-help-educate-users"></a>Las sugerencias de directiva ayudan a educar a los usuarios
 
-De forma similar a cómo funciona DLP en [Exchange, Outlook, Outlook](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)en la web , [SharePoint Online,](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)sitios de OneDrive para la Empresa y clientes de escritorio de [Office,](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)aparecen sugerencias de directiva cuando se desencadena una acción con una directiva DLP. Este es un ejemplo de una sugerencia de directiva:
+De forma similar a cómo funciona DLP en [Exchange, Outlook, Outlook en la Web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web), [SharePoint Online,](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)sitios de OneDrive para la Empresa y clientes de escritorio de [Office,](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)aparecen sugerencias de directiva cuando se desencadena una acción con una directiva DLP. Este es un ejemplo de una sugerencia de directiva:
 
 ![Notificación de mensaje bloqueado en Teams](../media/dlp-teams-blockedmessage-notification.png)
 

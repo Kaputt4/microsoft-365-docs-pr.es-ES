@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Conserve el contenido de los buzones eliminados mediante la característica de buzones inactivos en Microsoft 365.
-ms.openlocfilehash: acd00fedcf0949b7d0c9f85c17039105e9b34821
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 7e0fa04d82a52bf41d763255239421eed8e47700b88756140bda81505c4d08f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866456"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -58,14 +58,14 @@ Para obtener procedimientos paso a paso para colocar un buzón en retención por
   
 - [Poner un buzón en retención por juicio](create-a-litigation-hold.md)
 
-- [Más información sobre las directivas y las etiquetas de retención](retention.md)
+- [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 
 > [!NOTE]
 > Para las directivas de retención y retención por juicio, puede crear una retención indefinida o en una retención basada en tiempo. En una retención indefinida, el contenido del buzón inactivo se conservará siempre, hasta que se elimine la retención o hasta que se cambie la duración de la retención. Después de quitar la directiva de retención o retención (suponiendo que el buzón se eliminó hace más de 183 días), el buzón inactivo se marcará para su eliminación permanente y el contenido del buzón ya no se conservará ni se podrá detectar. En una directiva de retención o retención basada en tiempo, especifique la duración de la retención. Esta duración se establece para cada elemento, y se calcula a partir de la fecha en que un elemento de buzón se ha recibido o creado. Una vez que ha expirado la retención para un elemento de buzón, y ese elemento se ha movido a la carpeta Elementos recuperables del buzón inactivo o se encuentra en ella, el elemento se elimina permanentemente (purga) del buzón inactivo. 
   
 ### <a name="step-2-delete-the-mailbox"></a>Paso 2: Eliminar el buzón.
 
-Después de colocar el buzón en espera o de aplicar una directiva de retención, el siguiente paso es eliminar el buzón. La mejor manera de eliminar un buzón es eliminar la cuenta de usuario correspondiente en el centro de administración Microsoft 365 usuario. Para obtener información sobre cómo eliminar cuentas de usuario, vea [Eliminar un usuario de la organización.](../admin/add-users/delete-a-user.md)
+Después de colocar el buzón en espera o de aplicar una directiva de retención, el siguiente paso es eliminar el buzón. La mejor manera de eliminar un buzón es eliminar la cuenta de usuario correspondiente en el Centro de administración de Microsoft 365. Para obtener información sobre cómo eliminar cuentas de usuario, vea [Eliminar un usuario de la organización.](../admin/add-users/delete-a-user.md)
   
 > [!NOTE]
 > También puede eliminar el buzón mediante el cmdlet **Remove-Mailbox** en Exchange Online PowerShell. Para obtener más información, vea [Eliminar o restaurar buzones](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes)de usuario en Exchange Online . 
@@ -74,9 +74,9 @@ Después de colocar el buzón en espera o de aplicar una directiva de retención
 
 Para ver una lista de los buzones inactivos de la organización:
 
-1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
+1. Vaya a e inicie sesión con las credenciales de un administrador global o una cuenta de administrador <https://compliance.microsoft.com> de cumplimiento en su organización.
 
-2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en Mostrar todo y, a continuación, haga clic en Gobierno de **> retención.**
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar** todo y, a continuación, haga clic en Gobierno de **> retención**.
 
    ![Haga clic en el botón Buzón inactivo de la página Retención](../media/MCCInactiveMailboxes1.png)
 

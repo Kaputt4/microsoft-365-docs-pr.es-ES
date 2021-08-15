@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 7cd9098766024093a0b9fa2d6e95131bf13d09df
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d0d4fe867664d090359b1a9f7ab13d3ad46497ce8673a9d1615a112bfe8d78ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052487"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827697"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Obstáculos de seguridad por los que puede navegar: el punto de vista de un arquitecto
 
@@ -49,7 +49,7 @@ Los clientes que navegan por estos obstáculos tienen buenas asociaciones entre 
 
 A continuación, adopte un enfoque de arquitectura de confianza cero. Esto comienza con la creación de un perímetro de seguridad moderno basado en identidades. Diseñe la arquitectura de seguridad en la que cada intento de acceso, ya sea local o en la nube, se trate como no confiable hasta que se compruebe: "nunca confíe, compruebe siempre". Este enfoque de diseño no solo aumenta la seguridad y la productividad, sino que también permite a los usuarios trabajar desde cualquier lugar con cualquier tipo de dispositivo. Los sofisticados controles en la nube incluidos Microsoft 365 le ayudan a proteger las identidades de los usuarios mientras controlan el acceso a recursos valiosos en función del nivel de riesgo del usuario.
 
-Para obtener una configuración recomendada, consulte [Identity and device access configurations](../security/defender-365-security/microsoft-365-policies-configurations.md).
+Para obtener una configuración recomendada, consulte [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="transition-security-controls-to-the-cloud"></a>Transición de controles de seguridad a la nube
 
@@ -75,7 +75,7 @@ La mayoría de los desafíos que he experimentado con la implementación de la s
 
 Para ayudarle a eliminar estos obstáculos, Microsoft ha seleccionado varios recursos diseñados para ayudarle a tomar un enfoque metódico de la estrategia de seguridad y la implementación.
 
-|Resource   |Más información  |
+|Recurso   |Más información  |
 |---------|---------|
 |[Las tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa](../security/top-security-tasks-for-remote-work.md)      | Si de repente se encuentra con un equipo de trabajo en casa, este artículo le ayuda a aumentar la seguridad rápidamente. Incluye las tareas recomendadas más importantes en función del plan de licencias.    |
 |[Microsoft 365 Responsables de la seguridad de las decisiones empresariales](../security/Microsoft-365-security-for-bdm.md)    | Cuando tienes tiempo para un plan más completo, este artículo incluye recomendaciones que abarcan Microsoft 365, priorizado por superficie de ataque. Incluso viene con una hoja de cálculo que puedes usar para ordenar las licencias y el área (como identidad, protección contra amenazas y supervisión).  |

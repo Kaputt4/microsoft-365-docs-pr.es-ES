@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use colecciones en Advanced eDiscovery para buscar y recopilar contenido relacionado con su caso o investigación.
-ms.openlocfilehash: e3f383fab31ec39f22bd781fc84644e3eeee57bb
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: e808db2829c8742fe34faa56965bacb79283b14b67a6ffbfccd8c43c88f12bac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866485"
 ---
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>Obtenga información sobre las colecciones en Advanced eDiscovery
 
@@ -38,7 +38,7 @@ Una vez definida la colección, los administradores de exhibición de documentos
 
 Cuando el administrador está satisfecho con el ámbito de la colección y la cantidad estimada de  contenido que es probable que responda, el administrador puede agregar o confirmar el contenido a un conjunto de revisión. Al confirmar una colección en un conjunto de revisión, ese administrador también tiene las opciones para incluir conversaciones de chat, datos adjuntos en la nube y versiones de documentos. El contenido de la colección también pasa por otro nivel de procesamiento durante la ingesta en el conjunto de revisión. y la colección se actualizará con el resumen final de la colección. Después de agregar contenido al conjunto de revisión, los administradores de exhibición de documentos electrónicos pueden seguir consultando, agrupando y refinando el contenido para ayudar con la minimización y la revisión. Además, la colección se actualiza con información y estadísticas sobre el contenido confirmado en el conjunto de revisión. Esto proporciona una referencia histórica sobre el contenido de la colección.
 
-Con el lanzamiento de colecciones en  un Advanced eDiscovery, la pestaña Búsquedas se ha cambiado a **Colecciones** en un caso Advanced eDiscovery en el centro de Microsoft 365 cumplimiento. Los pasos para definir el ámbito y el tamaño de la colección siguen el mismo proceso que la búsqueda para definir ubicaciones y condiciones. Guardar como borrador y obtener estimaciones de vista previa permite la validación rápida del ámbito de destino de las colecciones antes de confirmar una búsqueda completa y una colección en el conjunto de revisión. Esto permite una administración de trabajos mejorada e iteraciones dirigidas para empezar a minimizar el contenido durante el proceso de búsqueda y recopilación.
+Con el lanzamiento de colecciones en un  Advanced eDiscovery, la pestaña Búsquedas se ha cambiado a **Colecciones** en un Advanced eDiscovery caso en el Centro de cumplimiento de Microsoft 365. Los pasos para definir el ámbito y el tamaño de la colección siguen el mismo proceso que la búsqueda para definir ubicaciones y condiciones. Guardar como borrador y obtener estimaciones de vista previa permite la validación rápida del ámbito de destino de las colecciones antes de confirmar una búsqueda completa y una colección en el conjunto de revisión. Esto permite una administración de trabajos mejorada e iteraciones dirigidas para empezar a minimizar el contenido durante el proceso de búsqueda y recopilación.
 
 ## <a name="collections-workflow"></a>Flujo de trabajo de colecciones
 

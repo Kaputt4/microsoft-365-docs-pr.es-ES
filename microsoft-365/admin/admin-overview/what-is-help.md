@@ -1,5 +1,5 @@
 ---
-title: Cómo obtener ayuda en el Centro Microsoft 365 administración
+title: Cómo obtener ayuda en el Centro de administración de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,19 +20,19 @@ search.appverid:
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: Obtenga información sobre todas las formas en que puede obtener ayuda con el centro Microsoft 365 administración.
-ms.openlocfilehash: fdf88c59c640798469a00d17d0c23efe5fe1ce2b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Obtenga información sobre todas las formas en que puede obtener ayuda con el Centro de administración de Microsoft 365.
+ms.openlocfilehash: 48174626780dcca87e76ec4961c7d9f2c0f6017651129cca1d9fe4d499f51098
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827151"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
-# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Cómo obtener ayuda en el Centro Microsoft 365 administración
+# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Cómo obtener ayuda en el Centro de administración de Microsoft 365
 
-Si eres [administrador,](https://admin.microsoft.com) admin.microsoft.com es tu lugar de acceso para administrar y obtener el máximo partido de tu Microsoft 365 suscripción. En ocasiones, es posible que no encuentre la tarea correcta, que necesite más contexto antes de iniciar un flujo de tareas o que simplemente no esté seguro del ámbito y el impacto de sus acciones como administrador. Para cubrir esas situaciones, proporcionamos ayuda moderna y asistencia inteligente en todo Microsoft 365 centro de administración de estas maneras:
+Si eres [administrador,](https://admin.microsoft.com) admin.microsoft.com es tu lugar de acceso para administrar y obtener el máximo partido de tu Microsoft 365 suscripción. En ocasiones, es posible que no encuentre la tarea correcta, que necesite más contexto antes de iniciar un flujo de tareas o que simplemente no esté seguro del ámbito y el impacto de sus acciones como administrador. Para cubrir estas situaciones, proporcionamos ayuda moderna y asistencia inteligente a lo largo Centro de administración de Microsoft 365 de estas maneras:
 
 * **Ayuda integrada:** ayuda en el Centro de administración
 
@@ -48,7 +48,7 @@ La ayuda se integra en todo el centro de administración, por lo que está ahí 
 
 ## <a name="modern-self-help-powered-by-ai"></a>Auto-ayuda moderna con tecnología de AI
 
-Para abrir nuestra experiencia moderna de auto-ayuda con  tecnología de inteligencia artificial, selecciona el botón Necesita ayuda en el centro de administración Microsoft 365 administración. Por ejemplo, si busca "comprobar mi dominio", recibirá los pasos y algunos artículos que creemos que le ayudarán. Usamos el aprendizaje automático para crear la solución más cercana que ha ayudado a otros administradores que han escrito consultas similares.
+Para abrir nuestra experiencia moderna de auto-ayuda con tecnología de inteligencia artificial, selecciona el botón Necesita **ayuda** en el Centro de administración de Microsoft 365. Por ejemplo, si busca "comprobar mi dominio", recibirá los pasos y algunos artículos que creemos que le ayudarán. Usamos el aprendizaje automático para crear la solución más cercana que ha ayudado a otros administradores que han escrito consultas similares.
 
 O bien, en aquellas ocasiones en las que no sabes cómo hacer algo en tu situación específica, usa el Asistente de soporte técnico. Actualmente, esta experiencia solo está disponible en inglés. Para activar el Asistente de soporte técnico, solo tiene que usar el botón de alternancia en la parte superior del **panel Necesita** ayuda. El Asistente de soporte proporciona una interfaz de conversación para ayudarle. Después de escribir la consulta, el chatbot le hace preguntas aclarantes para obtener la respuesta correcta para su situación específica. Piense en él como su ayudante virtual para descubrir soluciones y completar tareas.
 

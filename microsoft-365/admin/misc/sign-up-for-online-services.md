@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: 'Aprenda a usar el correo electrónico de trabajo o escuela para registrarse en los servicios en línea de Microsoft sin que su departamento de TI se implique. '
-ms.openlocfilehash: ad46d698398da32d88d0c1617499b326e8fcb163
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ce1c8ec579f8d60bb68921c9e03ae1efbb48e8c5fb2a345ae85d94c7921d8371
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823680"
 ---
 # <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Su dominio puede estar en uso si otra persona se ha registrado con él
 

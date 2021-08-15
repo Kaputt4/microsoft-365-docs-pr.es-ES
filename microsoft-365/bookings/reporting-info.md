@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Obtenga información sobre cómo puede ver una vista de 4 meses de su actividad de Bookings
-ms.openlocfilehash: ad0a21454cfe28cec521e545e587105e8f8a7454
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: 8fc8a41a982135550ae711e435905c9bd39460994b1f6757b633aea49a7a48a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838216"
 ---
 # <a name="reporting-info-for-bookings"></a>Información de informes para Bookings
 
@@ -47,7 +47,7 @@ El informe incluye los siguientes campos.
 - **Dirección del cliente**
 - **Plantilla**
 - **Servicio**
-- **Location**
+- **Ubicación**
 - **Duración (minutos)**
 - **Tipo de evento**
 
@@ -58,6 +58,6 @@ El informe mejorado ahora contiene los siguientes campos.
 - **Moneda**   Tipo de moneda establecido para una empresa.
 - **Asistentes de Cc**   Los destinatarios que recibirán las notificaciones por correo electrónico de una reserva. Esto se puede especificar desde la aplicación Teams al crear una reserva.
 - **Recuento de asistentes registrados**   Cuántos clientes reservaron un servicio de reserva de grupo.
-- **Notificaciones de texto habilitadas**   Si los clientes pueden recibir SMS notificaciones relacionadas con texto.
+- **Notificaciones de texto habilitadas**   Si los clientes pueden recibir notificaciones relacionadas con texto SMS.
 - **Campos personalizados**   Todas las preguntas y respuestas relacionadas con una única reserva se combinan en este campo.
 - **Id. de reserva**   Esto es útil para identificar las mismas reservas de un servicio de grupo.

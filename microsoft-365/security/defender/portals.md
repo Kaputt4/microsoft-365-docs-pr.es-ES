@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 182d44c8ad46b8c711705c46aabba3393f4e0801
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 42f4a4e19fbb062789532e1786bfe2f37bdb3448f2671ec9ac3dcd2a0770b6c9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838624"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portales de seguridad de Microsoft y centros de administración
 
@@ -38,7 +38,7 @@ Aunque [Microsoft 365 de](overview-security-center.md) seguridad es el nuevo hog
 Los operadores y administradores de seguridad pueden ir a los siguientes portales para administrar la configuración específica de seguridad, investigar posibles actividades de amenazas, responder a amenazas activas y colaborar con los administradores de TI para solucionar problemas.
 <p></p>
 
-| Nombre del portal | Descripción | Vínculo |
+| Nombre del portal | Description | Vínculo |
 |---|---|---| 
 | Centro de seguridad de Microsoft 365 | Supervisar y responder a la actividad de amenazas y reforzar la posición de seguridad en las identidades, el correo electrónico, los datos, los puntos de conexión y las aplicaciones con [Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Centro de seguridad de Microsoft Defender | Supervisar y responder a la actividad de amenazas en los puntos de conexión con las funcionalidades proporcionadas con [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
@@ -53,7 +53,7 @@ Los operadores y administradores de seguridad pueden ir a los siguientes portale
 Aunque estos portales no son específicamente para administrar la seguridad, admiten varias cargas de trabajo y tareas que pueden afectar a la seguridad. Visite estos portales para administrar identidades, permisos, configuración de dispositivos y directivas de control de datos.
 <p></p>
 
-| Nombre del portal | Descripción | Vínculo | 
+| Nombre del portal | Description | Vínculo | 
 |---|---|---| 
 | Portal de Azure | Ver y administrar [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) y todos los [recursos de Azure](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Centro de cumplimiento de Microsoft 365 | Administrar directivas de tratamiento de datos y garantizar [el cumplimiento de las normativas](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |

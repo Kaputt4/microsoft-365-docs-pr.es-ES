@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 03459c7d1a6d6a4045fb33a73a62d72f5f7cb60ee5af63b195f27c8b477cd89a
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: c66bfd02c83e8d6d7f63c4f80db5f32a7c376dfa3ce52516e5681a86bbbb5c4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523746"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886399"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -57,9 +57,6 @@ Para obtener acceso a la pestaña del explorador de contenido, una cuenta debe t
 > [!IMPORTANT]
 > La pertenencia a estos grupos de roles no le permite ver la lista de elementos en el explorador de contenido o ver el contenido de los elementos en el explorador de contenido.
 
-> [!IMPORTANT]
-> Solo los administradores globales pueden administrar o asignar permisos a otros usuarios en el Centro de cumplimiento. Para más información, vea [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
-> 
 ### <a name="required-permissions-to-access-items-in-content-explorer"></a>Permisos necesarios para acceder a elementos en el explorador de contenido
 
 El acceso al explorador de contenidos está altamente restringido porque permite leer el contenido de los archivos digitalizados.
