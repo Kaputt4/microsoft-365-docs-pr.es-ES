@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0497ac31c11d04d812e9d8aca81304369ef459fb
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: fbc7e7147868649982defec9593b8852737a6ca7642faec4f125eca471c4e89d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853360"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Enumerar la API de incidentes en Microsoft 365 Defender
 
@@ -81,7 +81,7 @@ GET /api/incidents
 
 Nombre|Tipo|Descripción
 ---|---|---
-Authorization|Cadena|Portador {token}. **Required**
+Authorization|String|Portador {token}. **Required**
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -95,7 +95,7 @@ Si se realiza correctamente, este método `200 OK` devuelve y una lista de incid
 
 ### <a name="incident-metadata"></a>Metadatos de incidentes
 
-Nombre del campo|Descripción|Valor de ejemplo
+Nombre del campo|Description|Valor de ejemplo
 ---|---|---
 incidentId|Identificador único para representar el incidente|924565
 redirectIncidentId|Solo se rellena en caso de que un incidente se esté agrupando con otro incidente, como parte de la lógica de procesamiento de incidentes.|924569
@@ -114,7 +114,7 @@ alertas|Matriz que contiene todas las alertas relacionadas con el incidente, ade
 
 ### <a name="alerts-metadata"></a>Metadatos de alertas
 
-Nombre del campo|Descripción|Valor de ejemplo
+Nombre del campo|Description|Valor de ejemplo
 ---|---|---
 alertId|Identificador único para representar la alerta|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId|Identificador único para representar el incidente al que está asociada esta alerta|924565
@@ -140,7 +140,7 @@ dispositivos|Todos los dispositivos en los que se enviaron alertas relacionadas 
 
 ### <a name="device-format"></a>Formato de dispositivo
 
-Nombre del campo|Descripción|Valor de ejemplo
+Nombre del campo|Description|Valor de ejemplo
 ---|---|---
 DeviceId|El identificador de dispositivo designado en Microsoft Defender para endpoint.|24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId|El identificador de dispositivo designado en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis). Solo disponible para dispositivos unidos a un dominio.|nulo
@@ -155,7 +155,7 @@ entidades|Todas las entidades que se han identificado para formar parte o relaci
 
 ### <a name="entity-format"></a>Formato de entidad
 
-Nombre del campo|Descripción|Valor de ejemplo
+Nombre del campo|Description|Valor de ejemplo
 ---|---|---
 entityType|Entidades que se han identificado para formar parte o relacionadas con una alerta determinada.<br>Los valores de propiedades son: *User*, *Ip*, *Url*, *File*, *Process*, *MailBox*, *MailMessage*, *MailCluster*, *Registry*|Usuario
 sha1|Disponible si entityType es *File*.<br>Hash de archivo para alertas asociadas con un archivo o proceso.|5de839186691aa96ee2ca6d74f0a38fb8d1bd6d
@@ -185,7 +185,7 @@ securityGroupId|Disponible si entityType es  *SecurityGroup*.|301c47c8-e15f-4059
 securityGroupName|Disponible si entityType es  *SecurityGroup*.|Operadores de configuración de red
 registryHive|Disponible si entityType es  *Registry*.|MÁQUINA LOCAL HKEY \_ \_|
 registryKey|Disponible si entityType es  *Registry*.|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType|Disponible si entityType es  *Registry*.|Cadena
+registryValueType|Disponible si entityType es  *Registry*.|String
 registryValue|Disponible si entityType es  *Registry*.|31-00-00-00
 deviceId|El identificador, si lo hay, del dispositivo relacionado con la entidad.|986e5df8b73dacd43c8917d17e523e76b13c75cd
 

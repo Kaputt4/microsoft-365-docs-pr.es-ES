@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4e2718806679514af9defb10dd2e5462a7b9982d
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: d8ae4b902bd7544940834f3661d4461f1baebea7ba8170bd87248553dfe5cb05
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568069"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828864"
 ---
 # <a name="troubleshoot-service-issues"></a>Solucionar problemas de servicio
 
@@ -31,20 +31,20 @@ ms.locfileid: "53568069"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
-
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 En esta sección se abordan los problemas que pueden surgir al usar el servicio Microsoft Defender para endpoints.
 
 ## <a name="server-error---access-is-denied-due-to-invalid-credentials"></a>Error del servidor: se deniega el acceso debido a credenciales no válidas
+
 Si se produce un error de servidor al intentar acceder al servicio, deberá cambiar la configuración de cookies del explorador.
 Configure el explorador para permitir cookies.
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>Faltan elementos o datos en el portal
+
 Si faltan algunos elementos o datos en Microsoft 365 Defender es posible que la configuración de proxy lo bloquee.
 
 Asegúrese de que `*.security.microsoft.com` se incluye la lista de permitidos de proxy.
-
 
 > [!NOTE]
 > Debe usar el protocolo HTTPS al agregar los siguientes extremos.
@@ -61,27 +61,33 @@ Para obtener más información, vea [Ensure that Antivirus de Microsoft Defender
 
 ## <a name="known-issues-with-regional-formats"></a>Problemas conocidos con formatos regionales
 
-**Formatos de fecha y hora**<br>
-Hay algunos problemas conocidos con los formatos de fecha y hora. 
+### <a name="date-and-time-formats"></a>Formatos de fecha y hora
+
+Hay algunos problemas conocidos con los formatos de fecha y hora.
 
 Se admiten los siguientes formatos de fecha:
+
 - MM/dd/yyyy
 - dd/MM/yyyy
 
 Actualmente no se admiten los siguientes formatos de fecha y hora:
+
 - Formato de fechayyy/MM/dd
 - Formato de fecha dd/MM/aa
 - Formato de fecha con yy. Solo se mostrará yyyy.
 - No se admite el formato de hora HH:mm:ss (no se admite el formato de 12 horas a.m./pm). Solo se admite el formato de 24 horas.
 
-**Uso de comas para indicar miles**<br>
+### <a name="use-of-comma-to-indicate-thousand"></a>Uso de comas para indicar miles
+
 No se admite el uso de comas como separador en números. Las regiones donde un número está separado con una coma para indicar mil, solo verán el uso de un punto como separador. Por ejemplo, 15,5K se muestra como 15,5K.
 
->¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>El inquilino de Microsoft Defender para endpoint se creó automáticamente en Europa
+
 Cuando usa Azure Defender para supervisar los servidores, se crea automáticamente un inquilino de Microsoft Defender para endpoint. Los datos de Microsoft Defender para endpoint se almacenan en Europa de forma predeterminada.
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)
 - [Revisar eventos y errores con el Visor de eventos](event-error-codes.md)

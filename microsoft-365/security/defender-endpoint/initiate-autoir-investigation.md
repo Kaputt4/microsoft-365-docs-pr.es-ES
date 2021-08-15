@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 918c3787d12704c8aa23e7dd367e9f03909275c6
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b69acd8bb60c6b4c2d254c9cd1ca5aef7de69cf583fa02e56d799076c84d372a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655652"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869028"
 ---
 # <a name="start-investigation-api"></a>INICIAR API de investigación
 
@@ -46,6 +46,17 @@ Vea [Overview of automated investigations](automated-investigations.md) para obt
 ## <a name="limitations"></a>Limitaciones
 
 1. Las limitaciones de velocidad para esta API son 50 llamadas por hora.
+
+## <a name="requirements-for-air"></a>Requisitos para AIR
+
+Su organización debe tener Defender para endpoint (consulte [Requisitos mínimos de Microsoft Defender para endpoint](minimum-requirements.md)).
+
+Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
+
+- Windows Server 2019
+- Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) o posterior
+- Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)o posterior
+- Windows 10, versión [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) o posterior
 
 ## <a name="permissions"></a>Permisos
 
@@ -79,7 +90,7 @@ Content-Type|cadena|application/json. **Necesario**.
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Descripción
+Parámetro|Tipo|Description
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 

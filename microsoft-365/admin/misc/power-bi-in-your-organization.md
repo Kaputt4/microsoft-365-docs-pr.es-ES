@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Obtenga información sobre Power BI y cómo los usuarios de su organización pueden usar este servicio de análisis empresarial.
-ms.openlocfilehash: 6da25932e1813744aa38bab2b399d6ac30c3429a
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: d9e7aa90803dc87aece4246a369f9b4ae83bb7e867fae5790cb82ba615b8385b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823869"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI en su organización
 
@@ -40,7 +40,7 @@ Para obtener más información sobre Power BI cumplimiento normativo, vea [el Ce
   
 ## <a name="how-do-users-sign-up-for-power-bi"></a>¿Cómo se registran los usuarios en Power BI?
 
-Como administrador, puede registrarse en Power BI a través del [sitio web de Power BI](https://powerbi.microsoft.com/en-us/). También puede registrarse a través de la página de servicios de compra en el centro Microsoft 365 administración. Cuando un administrador se registra en Power BI, puede asignar licencias de suscripción a usuarios que deberían tener acceso.
+Como administrador, puede registrarse en Power BI a través del [sitio web de Power BI](https://powerbi.microsoft.com/en-us/). También puede registrarse a través de la página de servicios de compra en el Centro de administración de Microsoft 365. Cuando un administrador se registra en Power BI, puede asignar licencias de suscripción a usuarios que deberían tener acceso.
   
 Además, los usuarios individuales en su organización pueden registrarse en Power BI a través del [sitio web de Power BI](https://powerbi.microsoft.com/en-us/). Cuando un usuario de su organización se registra en Power BI, se le asigna automáticamente una licencia de Power BI.
   

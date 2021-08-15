@@ -1,5 +1,5 @@
 ---
-title: Investigar y responder con Microsoft 365 Defender en un entorno piloto y usar El simulador de ataque, enseñar a los usuarios a detectar, investigar superficies de ataque y reforzar la posición de seguridad
+title: Investigar y responder con Microsoft 365 Defender en un entorno piloto
 description: Configure simulaciones de ataque en Microsoft 365 Defender laboratorio de prueba o entorno piloto para probar la solución de seguridad diseñada para enseñar a los usuarios a proteger dispositivos, identidad, datos y aplicaciones.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 590b9445b08e3a786b32e7086f27b140934d22d0
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 45ae39cde67b556f5bd5a0cd4e8a37f6e3b34e90d49fe663812db4f7727b30cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458817"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853344"
 ---
 # <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Investigar y responder con Microsoft 365 Defender en un entorno piloto
 

@@ -1,5 +1,5 @@
 ---
-title: Pilot Microsoft Defender for Endpoint, set up a pilot, test capabilities in evaluation
+title: Piloto de Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo ejecutar un piloto para Microsoft Defender para Endpoint(MDE), incluida la comprobación del grupo piloto y las capacidades de prueba.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d1efc37bd6412e441593dc9cf81296162f7fa754
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 6d7ccaa890c8678bf1d02e578f33019208e6d2a9050f286435f913e67831d35d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828657"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Piloto de Microsoft Defender para punto de conexión
 

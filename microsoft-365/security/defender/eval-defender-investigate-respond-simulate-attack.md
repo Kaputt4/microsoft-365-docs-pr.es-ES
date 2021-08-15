@@ -1,5 +1,5 @@
 ---
-title: Ejecutar una simulación de ataque en un entorno Microsoft 365 Defender piloto, entorno aislado para simulación de ataque, respuesta, corrección
+title: Ejecutar una simulación de ataque en un Microsoft 365 Defender piloto
 description: Ejecute simulaciones de ataques Microsoft 365 Defender para ver cómo se presentan las alertas e incidentes, se ganan conocimientos y se corrigen rápidamente las amenazas.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ebea0a8eeed737712c55eb80b9ce3c68e06853c1
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 8abbc10c9e8ca5ae9c75210ce2c698f7b7ddd41bc2336e4636a9b365cdba838c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458615"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853444"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Ejecutar una simulación de ataque en un Microsoft 365 Defender piloto
 

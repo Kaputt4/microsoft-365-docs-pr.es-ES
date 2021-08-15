@@ -1,5 +1,5 @@
 ---
-title: Buscar tareas o documentación en el Centro Microsoft 365 administración
+title: Buscar tareas o documentación en el Centro de administración de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar la característica de búsqueda en el Centro de administración para obtener resultados mejores y más rápidos.
-ms.openlocfilehash: 87e7fb78e9d7ce535f481151515791c20c115836
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 64a578f8b7ebf71fbfc162936e8efa09440834d362fcc2b359a18bb9d8c1469a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824817"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Búsqueda en el Centro de administración de Microsoft 365
 
 Como administrador de una Microsoft 365, puede usar la búsqueda para buscar usuarios, realizar acciones, navegar a diferentes configuraciones y leer documentación. Con la nueva funcionalidad de búsqueda, la velocidad de búsqueda ha mejorado y ahora puede buscar desde todas las páginas del Centro de administración. El cuadro de búsqueda se ha movido al área de banner en la parte superior del centro de administración. Puede usar el método **abreviado Alt+S** para usar la búsqueda desde cualquier página.
 
-:::image type="content" source="../../media/search-bar.png" alt-text="Captura de pantalla: barra de búsqueda en el centro Microsoft 365 administración":::
+:::image type="content" source="../../media/search-bar.png" alt-text="Captura de pantalla: barra de búsqueda en el Centro de administración de Microsoft 365":::
 
 Los resultados de la búsqueda se organizan en distintas categorías. La mayoría de las categorías son elementos del Centro de administración. Por ejemplo, usuarios, grupos, buzones compartidos o dominios. Otras categorías muestran los lugares a los que puedes navegar, las acciones que puedes realizar o la configuración de nivel de aplicación que puedes cambiar. Y también hay una categoría relacionada con la documentación.
 
@@ -75,7 +75,7 @@ Los resultados proporcionan una forma de navegar rápidamente a una página espe
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Captura de pantalla: resultados de búsqueda que muestran la ruta de navegación en el Centro de administración":::
 
-## <a name="settings"></a>Configuración
+## <a name="settings"></a>Configuraciones
 
 Busque la configuración de nivel de aplicación compatible relacionada con su organización, los servicios a los que se suscriba y la configuración de seguridad y privacidad.
 

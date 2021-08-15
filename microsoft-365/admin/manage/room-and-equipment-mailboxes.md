@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: 0d999cb04161b1284025aa1b587fe7368c25eb4f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 44233261f266a6caf4b4bea78d0dbf83d98daefe537121e0ba37748e71900462
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824915"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
 
@@ -43,19 +43,19 @@ Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inic
     
 2. En la pestaña **Inicio**, pulse **Nuevos elementos** \> **Reunión**.<br/>![Para programar una reunión, en la pestaña Inicio, en el grupo Nuevo, pulse Nuevos elementos y, después, Reunión.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>O, desde su calendario, simplemente seleccione **Nueva reunión**.
     
-3. En el campo Para, escriba el nombre de la sala de conferencias o del equipamiento que quiere reservar, además de los asistentes a los que quiere invitar.<br/>O, seleccione **Para** y haga doble clic en la sala de conferencias o en el equipamiento de la lista. A continuación, seleccione **Aceptar**.<br/>![Reservar un buzón de sala en Outlook](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+3. En el campo Para, escriba el nombre de la sala de conferencias o del equipamiento que quiere reservar, además de los asistentes a los que quiere invitar.<br/>O bien seleccione **Para** y haga doble clic en la sala de conferencias o en el equipamiento de la lista. A continuación, seleccione **Aceptar**.<br/>![Reservar un buzón de sala en Outlook](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. En la línea **Asunto**, escriba la finalidad de la reserva o de la reunión. 
     
 5. Cambie el valor de la **ubicación** o déjelo como está. 
     
-6. Cambie la **Hora de inicio** y la **Hora de finalización**. O, seleccione **Todo el día**. Para que se repita la reserva o la reunión, seleccione **Periodicidad** en la parte superior.<br/>![Reservar una hora de reunión](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Cambie la **Hora de inicio** y la **Hora de finalización**. O bien pulse **Todo el día**. Para que se repita la reunión o la reserva, pulse **Periodicidad** en la parte superior.<br/>![Reservar una hora de reunión](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Escriba un mensaje describiendo la finalidad y adjunte algún archivo si es necesario.
     
 8. Para permitir que otras personas se unan en línea o llamen a la reunión, seleccione **Reunión de Skype**.
     
-9. Para garantizar que la sala, el equipamiento y las personas que ha invitado están disponibles, seleccione **Asistente para programación** en la parte superior. Después, seleccione una hora disponible en el calendario.<br/> ![Comprobar si el equipamiento de la sala está disponible](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>SUGERENCIA: En el calendario de programación, el azul significa que la sala o el equipo está reservado o ocupado. Seleccione el área blanca o libre del calendario. 
+9. Para garantizar que tanto la sala como el equipamiento y las personas que haya invitado estén disponibles, seleccione **Asistente para programación** en la parte superior. A continuación, seleccione una hora que esté disponible en el calendario.<br/> ![Comprobar si el equipamiento de la sala está disponible](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>SUGERENCIA: En el calendario de programación, el azul significa que la sala o el equipo está reservado o ocupado. Seleccione el área blanca o libre del calendario. 
   
 10. Cuando finalice, haga clic en **Enviar**.
     
@@ -94,7 +94,7 @@ Para configurar un buzón de correo de sala o equipo, vaya al Centro de administ
 
 ### <a name="how-can-you-tell-when-the-room-or-equipment-is-available"></a>¿Cómo puede saber si la sala o el equipamiento está disponible?
 
-Abra Outlook y cree una nueva reunión. Agregue la sala o el equipamiento a la reunión como si fuera una persona y seleccione **Asistente para programación** para ver una vista del calendario dinámico de la disponibilidad de la sala o el equipamiento. Si el espacio horario está vacío, está disponible; si está azul, está reservado. 
+Abra Outlook y cree una nueva reunión. Agregue la sala o el equipamiento a la reunión como si se tratara de una persona y seleccione **Asistente para programación** para ver una vista dinámica del calendario con la disponibilidad de la sala o el equipamiento. Si la franja horaria está vacía, se encuentra disponible. Si está azul, está reservada. 
   
 ### <a name="how-do-you-cancel-a-room-or-equipment-request"></a>¿Cómo puede cancelar una solicitud de sala o equipamiento?
 

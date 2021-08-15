@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 95c82f815c794662f7eb0ffaabcfb5f81df3e828
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 0ecc3f7a91b79651b0a970553576a3c8d93320b25c258dd3f793552a4acf31a8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888780"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Ver y administrar acciones en el Centro de acciones
 
@@ -36,7 +36,7 @@ ms.locfileid: "52782998"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Las características de protección contra amenazas de Microsoft 365 Defender pueden dar lugar a determinadas acciones de corrección. Estos son algunos ejemplos:
+Las características de protección contra amenazas Microsoft 365 Defender pueden dar lugar a determinadas acciones de corrección. Estos son algunos ejemplos:
 
 - [Las investigaciones automatizadas](m365d-autoir.md) pueden dar como resultado acciones de corrección que se toman automáticamente o esperar su aprobación.
 - Antivirus, antimalware y otras características de protección contra amenazas pueden provocar acciones de corrección, como bloquear un archivo, una dirección URL o un proceso, o enviar un artefacto a la cuarentena.
@@ -95,7 +95,7 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más** instancias de este archivo y, a continuación, seleccione **Deshacer**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Dirección de falsos positivos o falsos negativos](m365d-autoir-report-false-positives-negatives.md)

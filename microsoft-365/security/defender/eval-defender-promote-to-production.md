@@ -1,5 +1,5 @@
 ---
-title: Promover el entorno Microsoft 365 Defender evaluación a Producción, Microsoft 365 Defender evaluación, probar una evaluación, mantener una evaluación, evaluación de producción
+title: Promover el entorno Microsoft 365 Defender evaluación a Producción
 description: Use este artículo para promover las evales de MDI, MDO, MDE y MCAS a su entorno vivo en Microsoft 365 Defender o M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3204a5453e3b441e2899a347df6d9e5a6cca2808
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 475260ee10bd1d85c895bcbd69df78b338367931e63a115466a75e9e836b189d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53588130"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853324"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Promover el entorno Microsoft 365 Defender evaluación a la producción
 

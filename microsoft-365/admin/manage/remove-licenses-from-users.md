@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: El método que use para desasignación de licencias de productos depende de si desasigna licencias de usuarios específicos o de un producto específico.
 ms.date: 06/07/2021
-ms.openlocfilehash: 8a67d7e690ff07631f696a97d6ed59925bc871df
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1b471cef43064bf6da792cbb887735c38f35c056036936247958af8797edec2f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824964"
 ---
 # <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
 

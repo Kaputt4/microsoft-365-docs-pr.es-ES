@@ -20,14 +20,14 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ee075f34087d28fc9326d408622d05f363bba768
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: c4093ca351873f3f16742f6c0d131ac39d70c5f6360a3a52bb1dbed1985158d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853295"
 ---
-# <a name="the-action-center"></a>El centro de actividades
+# <a name="the-action-center"></a>El Centro de actividades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -59,7 +59,7 @@ El Centro de acción unificado reúne acciones de corrección en Defender para E
 
 Puede usar el Centro de acciones unificado si tiene los permisos adecuados y una o varias de las siguientes suscripciones:
 
-- [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
+- [Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 

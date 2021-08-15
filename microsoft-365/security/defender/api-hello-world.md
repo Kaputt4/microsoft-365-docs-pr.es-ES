@@ -1,6 +1,6 @@
 ---
-title: Hello World para la API Microsoft 365 REST de Defender
-description: Aprende a crear una aplicación y a usar un token para acceder a las API de Microsoft 365 Defender
+title: Hello World para la API Microsoft 365 Defender REST
+description: Obtén información sobre cómo crear una aplicación y usar un token para obtener acceso a las API Microsoft 365 Defender de usuario
 keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ffdcf91da6b5def7d63e5fdb8ff51ddbdb1ec550
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 50316659caf811410b9422151e47feb17fbead8055bec08a3e4e342d61f2d83b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888862"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World para la API Microsoft 365 REST de Defender
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World para la API Microsoft 365 Defender REST
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -52,10 +52,10 @@ Este proyecto debe tardar entre 5 y 10 minutos. Esta estimación de tiempo inclu
 
 3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, **seleccione Registrar**. Seleccionar un URI de redireccionamiento es opcional. No necesitará uno para completar este ejemplo.
 
-4. En la página de la aplicación, seleccione Permisos de **API** Agregar API de permisos que mi organización usa  >    >   >, escriba **Protección contra amenazas de Microsoft** y seleccione **Protección contra amenazas de Microsoft**. La aplicación ahora puede acceder a Microsoft 365 Defender.
+4. En la página de la aplicación, seleccione **Permisos** de API Agregar API de permisos que mi organización usa  >    >   >, escriba Protección contra amenazas de Microsoft y seleccione **Protección contra** amenazas de Microsoft . La aplicación ahora puede acceder a Microsoft 365 Defender.
 
    > [!TIP]
-   > *Protección contra amenazas de Microsoft* es un nombre antiguo de Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
+   > *Microsoft Threat Protection* es un nombre antiguo para Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
    ![Imagen de selección de permisos de API](../../media/apis-in-my-org-tab.PNG)
 
    - Elija **Permisos de aplicación**  >  **Incident.Read.All** y seleccione Agregar **permisos**.
@@ -172,10 +172,10 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Microsoft 365 Introducción a las API de Defender](api-overview.md)
-- [Acceder a las API Microsoft 365 Defender](api-access.md)
+- [Microsoft 365 Defender Introducción a las API](api-overview.md)
+- [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)
 - [Crear una aplicación para acceder a Microsoft 365 Defender sin un usuario](api-create-app-web.md)
-- [Crear una aplicación para obtener acceso a Microsoft 365 API de Defender en nombre de un usuario](api-create-app-user-context.md)
-- [Crear una aplicación con acceso de asociado multiinquilino a Microsoft 365 API de Defender](api-partner-access.md)
+- [Crear una aplicación para obtener acceso Microsoft 365 Defender API en nombre de un usuario](api-create-app-user-context.md)
+- [Crear una aplicación con acceso de asociado multiinquilino a Microsoft 365 Defender API](api-partner-access.md)
 - [Administrar secretos en las aplicaciones de servidor con Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [Autorización de OAuth 2.0 para el inicio de sesión de usuario y el acceso a la API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
