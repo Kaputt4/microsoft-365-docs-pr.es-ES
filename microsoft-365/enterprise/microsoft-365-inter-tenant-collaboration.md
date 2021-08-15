@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre Microsoft 365 colaboración entre inquilinos y organizaciones, lo que permite que distintas organizaciones trabajen juntas de forma segura.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a0a9d15608e046e72ba579b77ba44092ed2ecb46
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 36e16beb852b99a17f0252217cfd6f148dcf0a0a15feb9770adcc3d5b9d268b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870550"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 colaboración entre inquilinos
 
@@ -64,7 +64,7 @@ Microsoft 365 de colaboración entre inquilinos incluyen el uso de una ubicació
 
 | Finalidad del uso compartido | Acción administrativa | Información sobre cómo hacerlo |
 |:-----|:-----|:-----|
-|Microsoft 365 Grupos: correo electrónico, calendario, OneNote y archivos compartidos en un lugar central | Los grupos son compatibles con Business Essentials, Business Premium, Education y los Enterprise planes E1, E3 y E5. Los usuarios de un Microsoft 365 pueden crear un grupo e invitar a personas de otro Microsoft 365 inquilino como usuarios invitados. También se aplica a Dynamics CRM. |  <ul><li> [Obtener más información sobre los grupos de Microsoft 365](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) </li><li> [Acceso de invitado en Microsoft 365 grupos](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) </li><li> [Implementar Microsoft 365 grupos](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn896591(v=crm.8)) </li></ul> |
+|Microsoft 365 Grupos: correo electrónico, calendario, OneNote y archivos compartidos en un lugar central | Los grupos son compatibles con Business Essentials, Business Premium, Education y los Enterprise planes E1, E3 y E5. Los usuarios de un Microsoft 365 pueden crear un grupo e invitar a personas de otro Microsoft 365 inquilino como usuarios invitados. También se aplica a Dynamics CRM. |  <ul><li> [Obtener información sobre los grupos de Microsoft 365](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) </li><li> [Acceso de invitado en Microsoft 365 grupos](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) </li><li> [Implementar Microsoft 365 grupos](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn896591(v=crm.8)) </li></ul> |
 
 ## <a name="yammer-collaboration-options"></a>Yammer de colaboración
 

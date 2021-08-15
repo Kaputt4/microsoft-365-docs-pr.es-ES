@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: En este artículo se proporcionan listas de comprobación y otros recursos para planear la Microsoft 365 Enterprise implementación.
-ms.openlocfilehash: d31f97ecc13d78ae3e5786cc86f4d8cf44be45b1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb3a62dd1751c51530bec1927e101c0dc5fd35bcf05ce8d7ac62d9fa5809909b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870724"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planeación de Microsoft 365 Enterprise
 

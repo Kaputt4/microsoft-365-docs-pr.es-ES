@@ -1,5 +1,5 @@
 ---
-title: Restringir el acceso a los temas de Temas de Microsoft Viva
+title: Restringir el acceso a los temas de Temas Microsoft Viva
 description: Cómo excluir temas para evitar que se descubran.
 author: efrene
 ms.author: efrene
@@ -13,16 +13,16 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: d6dfb2f7f432a40c5b6e96a9437f50ba47e23387
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: e0fc8d2bce8de471049f36194696fd5600b05476ccceb362a448d7ba79be45d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854680"
 ---
-# <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>Restringir el acceso a los temas de Temas de Microsoft Viva
+# <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>Restringir el acceso a los temas de Temas Microsoft Viva
 
-En Microsoft Viva, es posible que las partes interesadas de la organización quieran asegurarse de que los temas específicos no se descubran y se exponan a los usuarios con licencia. Por ejemplo, es posible que esté trabajando en un proyecto sobre el que aún no desea exponer ninguna información. Aunque Office 365 permisos en sitios, archivos y otros recursos impedirán que los usuarios de Experiencias de tema puedan ver información confidencial en los temas, existen medidas de seguridad adicionales para evitar que se descubran temas específicos.
+In Microsoft Viva, stakeholders in your organization may want to make sure that specific topics aren't discovered and exposed to your licensed users. Por ejemplo, es posible que esté trabajando en un proyecto sobre el que aún no desea exponer ninguna información. Aunque Office 365 permisos en sitios, archivos y otros recursos impedirán que los usuarios de Experiencias de tema puedan ver información confidencial en los temas, existen medidas de seguridad adicionales para evitar que se descubran temas específicos.
 
 Aunque los administradores de conocimientos controlan la configuración para evitar que se descubran los temas, los administradores de conocimientos y otras partes interesadas necesitan saber cómo se hace para que puedan trabajar en colaboración.
 
@@ -31,7 +31,7 @@ Aunque los administradores de conocimientos controlan la configuración para evi
 
 ## <a name="prevent-topics-from-being-identified"></a>Impedir que los temas se identifiquen
 
-El administrador de conocimientos puede restringir el acceso a temas específicos impidiendo que se puedan encontrar en la indización inicial. Hay dos maneras de realizar esta tarea en la configuración de administración de Temas de Viva en el centro Microsoft 365 administración.
+El administrador de conocimientos puede restringir el acceso a temas específicos impidiendo que se puedan encontrar en la indización inicial. Hay dos maneras de realizar esta tarea en la configuración de administración de Temas de Viva en el Centro de administración de Microsoft 365.
  
 - [Seleccione SharePoint sitios para excluir](./topic-experiences-discovery.md#select-sharepoint-topic-sources)de la detección de temas: puede usar esta configuración para evitar que sitios de SharePoint específicos se rastreen para los temas.
 - [Excluir temas por nombre:](./topic-experiences-discovery.md#exclude-topics-by-name)los administradores pueden usar esta configuración para evitar que determinados temas se descubran por su nombre. En la configuración de administración de Temas de Viva, un administrador puede cargar una lista de temas que se excluirán en un archivo CSV. Puede excluir temas que tengan coincidencias exactas o parciales de un nombre de tema.

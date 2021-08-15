@@ -1,5 +1,5 @@
 ---
-title: Piloto de Microsoft Defender para Office 365, use la evaluación en su entorno de producción, promueva la evaluación para que viva en producción, aprenda a evaluar Defender
+title: Piloto de Microsoft Defender para Office 365, use la evaluación en su entorno de producción
 description: Pasos para probar la evaluación con grupos de usuarios activos y existentes para probar correctamente las características de Microsoft Defender para Office 365.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 86f8dcc7b5e06605042f609ede4027510663cc65
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: ce1d08abb6c66df2eb75fd6c9349dcf085096394453375e5f85c5089e908147a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862950"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloto de Microsoft Defender para Office 365
 **Se aplica a:**
@@ -122,7 +122,7 @@ Es importante tener *en cuenta la* prioridad que estas directivas de protección
 
 En la tabla siguiente se proporcionan referencias y instrucciones adicionales para configurar y asignar directivas de protección personalizadas:
 
-|Directiva   |Descripción  |Referencia  |
+|Directiva   |Description  |Referencia  |
 |:---------:|---------|---------|
 |Filtrado de la conexión     |    Identifique los servidores de correo electrónico de origen buenos o malos por sus direcciones IP.     |     [Configurar la directiva de filtro de conexión predeterminada en EOP](../office-365-security/configure-the-connection-filter-policy.md)    |
 |Antimalware    |    Proteger a los usuarios de malware de correo electrónico, incluidas las acciones que se deben realizar y a quién notificar si se detecta malware.     |    [Configurar directivas antimalware en EOP](../office-365-security/configure-anti-malware-policies.md)     |

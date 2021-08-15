@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: En este artículo se proporcionan recursos para diseñar e implementar sitios de Internet de Sharepoint Server 2013 hospedados en Azure Infrastructure Services.
-ms.openlocfilehash: f6c7bec1dccc48c1080f76c30bb31b98a473f66e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9d811900485fe42e218a2e58ec4572d993c849ffe7f5ddbcd54ab16c42887db2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870594"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sitios de Internet en Microsoft Azure con SharePoint Server 2013
 
@@ -45,7 +45,7 @@ Microsoft Azure ofrece una opción atractiva para hospedar sitios de Internet ba
 
 Los artículos e ilustraciones técnicas que detallamos a continuación ofrecen información sobre el procedimiento para diseñar e implementar sitios de Internet en Azure mediante SharePoint Server 2013.
 
-|Resource|Más información|
+|Recurso|Más información|
 |---|---|
 |Sitios de Internet de **SharePoint Server 2013 en Azure** <br/> [![Imagen de sitios de Internet en Azure con SharePoint](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|En este modelo de arquitectura se describen las principales actividades de diseño y las opciones de arquitectura recomendadas para sitios de Internet en Azure.|
 |**Ejemplo de diseño: sitios de Internet en Azure para SharePoint Server 2013** <br/> [ ![ Imagen del ejemplo diseño: sitios de Internet en Microsoft Azure para SharePoint 2013 ](../media/MS-AZ-InternetSitesDesignSample.jpg) ] <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|Use este ejemplo de diseño como punto de partida para su propia arquitectura.|

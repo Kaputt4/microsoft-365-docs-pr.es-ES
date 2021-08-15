@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Es posible que su organización necesite varios dominios para que los clientes puedan encontrarlo. Obtenga información sobre cómo agregar otro dominio a la suscripción.
-ms.openlocfilehash: 766d0f6c1e3c68a262bc01ba432e042f0d274ce8
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: c127abf899985bb23cc3a9906425d4d5408a4376fde3bc88a4c3bdda1277bace
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882614"
 ---
 # <a name="add-another-domain"></a>Agregar otro dominio
 

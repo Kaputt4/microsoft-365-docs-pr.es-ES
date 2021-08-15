@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar Microsoft Teams en su pequeña empresa.
-ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5ba2dee81602cf6c474728879435998b699a1b5439ae751033a3511b17940361
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882450"
 ---
 # <a name="get-started-with-teams"></a>Introducción a Teams
 
@@ -59,13 +59,13 @@ A medida que el equipo trabaja juntos de forma remota, tendrás archivos en los 
 
 Asegúrese de que los documentos clave de su empresa se guardan en la nube y estén listos para compartirse de forma segura con clientes, clientes, socios, proveedores y otras personas de su empresa. Mantener los archivos en la nube también significa que obtiene las ventajas de la copia de seguridad y la capacidad de recuperarse de errores en el disco duro, ataques de ransomware y otras desgracias.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Para profundizar en la funcionalidad de Microsoft Teams...
 
 ### <a name="secure-your-business-as-it-runs-remotely"></a>Proteger su empresa mientras se ejecuta de forma remota
 
-Una característica de seguridad muy recomendada es la autenticación multifactor (MFA). Agregar MFA para empleados remotos requiere que escriban un código de seguridad recibido por una aplicación de texto, llamada telefónica o autenticación cuando inicien sesión en Microsoft 365. Si un hacker obtiene una retención de la contraseña de alguien a través de un ataque de suplantación de identidad ( phishing), no puede usarla para obtener acceso a las cuentas y los datos de su empresa. Puede agregar protección de MFA desde el Centro de administración de Microsoft 365: [Configurar MFA para dispositivos móviles.](set-up-mfa.md)
+Una característica de seguridad muy recomendada es la autenticación multifactor (MFA). Agregar MFA para empleados remotos requiere que escriban un código de seguridad recibido por una aplicación de texto, llamada telefónica o autenticación cuando inicien sesión en Microsoft 365. Si un hacker obtiene una retención de la contraseña de alguien a través de un ataque de suplantación de identidad ( phishing), no puede usarla para obtener acceso a las cuentas y los datos de su empresa. Puede agregar protección de MFA desde el Centro de Administración de Microsoft 365: [Configurar MFA para dispositivos móviles.](set-up-mfa.md)
 
 ### <a name="microsoft-teams-templates"></a>Microsoft Teams plantillas
 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Es posible que reciba errores al configurar buzones compartidos. Pruebe estas soluciones si tiene problemas con buzones compartidos.
-ms.openlocfilehash: ae76bc1cb97c44087be57adc7791ea8814b94b40
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2ec294f4dfe1d15bc4acf2789a35285d1dca78881f30512f08d39fd0a02394e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393948"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825936"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Resolver problemas con los buzones compartidos
 

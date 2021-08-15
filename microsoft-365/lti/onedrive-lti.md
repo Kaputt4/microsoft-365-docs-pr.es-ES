@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Cree y cale las asignaciones, cree y cura el contenido del curso y colabore en archivos en tiempo real con la nueva aplicación de interoperabilidad Microsoft OneDrive Learning Tools.
-ms.openlocfilehash: bcb374ed1666f23fa5f3d4692f43a4369670e891
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: a1a07173b756d8eb86158bb669113d7e9f7202bf1b666ebc2a086f1aed732d2e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830088"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integrar Microsoft OneDrive LTI con Canvas
 
@@ -96,4 +96,4 @@ Un administrador de Canvas puede habilitar Microsoft OneDrive LTI para todos los
 > La colaboración se puede asignar a alumnos individuales y grupos de alumnos. La asignación a alumnos individuales funciona de forma predeterminada. Para poder asignar colaboración a un grupo de alumnos, siga estos pasos:
 
 1. Inicie sesión como administrador y vaya a la **sección Claves de** desarrollador.
-1. Busque la clave con el valor 17000000000710 y estadóla en **On**.
+1. Busque la clave con el valor 170000000000710 y estadúzcala en **On**.

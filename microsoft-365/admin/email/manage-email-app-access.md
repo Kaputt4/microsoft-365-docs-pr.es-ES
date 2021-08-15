@@ -1,5 +1,5 @@
 ---
-title: Administrar el acceso a la aplicación de correo electrónico Microsoft 365 centro de administración
+title: Administrar el acceso a la aplicación de correo electrónico en Centro de administración de Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtén información sobre cómo elegir qué aplicaciones móviles pueden usar los usuarios para acceder al correo electrónico, el calendario y los contactos.
-ms.openlocfilehash: f114aa43b4bbade09d53f415aae4c5c033c20694
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d38730df158758ceb310ba25f45f222d7893afe2d0aefc601a17663e85787552
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400057"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825984"
 ---
-# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Administrar el acceso a la aplicación de correo electrónico en el Centro Microsoft 365 administración
+# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Administrar el acceso a la aplicación de correo electrónico en el Centro de administración de Microsoft 365
 
 Usa la configuración de acceso de correo electrónico móvil para elegir qué aplicaciones móviles pueden usar los usuarios de tu organización para acceder a su cuenta laboral o educativa para acceder al correo electrónico, el calendario y los contactos.
   

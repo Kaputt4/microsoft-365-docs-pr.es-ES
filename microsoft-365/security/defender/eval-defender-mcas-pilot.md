@@ -1,5 +1,5 @@
 ---
-title: Prueba Microsoft Cloud App Security con Microsoft 365 Defender, crear grupos piloto, configurar el control de acceso condicional, probar funcionalidades, configurar como parte de Microsoft 365 Defender
+title: Piloto Microsoft Cloud App Security con Microsoft 365 Defender
 description: Configure su laboratorio Microsoft 365 Defender prueba o entorno piloto para probar y experimentar la solución de seguridad diseñada para proteger dispositivos, identidades, datos y aplicaciones.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 672b01258c68f1cbcbfe3e2315c4b7cbcb36021e
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: a4aeb40e7386ae3648a392b6869551c3f16c2514b459ab1abf11c8ae6ceee46b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862861"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>Piloto Microsoft Cloud App Security con Microsoft 365 Defender
 
@@ -83,7 +83,7 @@ Pruebe Cloud App Security tutoriales:
 
 Para obtener más información sobre la búsqueda avanzada en Microsoft Cloud App Security datos, vea el [vídeo](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa).
 
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Investigar y responder con Microsoft 365 Defender en un entorno piloto](eval-defender-investigate-respond.md)
 

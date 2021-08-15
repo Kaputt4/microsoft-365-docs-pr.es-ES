@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 941fb38cf790e8c77a9ea5a6b9187e89846304c9
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6392a73541c8813179527d0da4ade57fa74794153f0d809fcb3fc667b16318dd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829704"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio de evaluación de Microsoft Defender para puntos de conexión
 
@@ -44,7 +44,7 @@ Con la experiencia de configuración simplificada, puede centrarse en ejecutar s
 
 Tendrás acceso completo a las potentes capacidades de la plataforma, como investigaciones automatizadas, búsqueda avanzada y análisis de amenazas, lo que te permite probar la pila de protección completa que ofrece Defender for Endpoint.
 
-Puede agregar dispositivos Windows 10 o Windows Server 2019 que vienen preconfigurados para tener las versiones más recientes del sistema operativo y los componentes de seguridad adecuados en su lugar, así como Office 2019 Standard instalado.
+Puede agregar dispositivos windows 10 o Windows Server 2019 que vienen preconfigurados para tener instaladas las versiones más recientes del sistema operativo y los componentes de seguridad adecuados, así como Office 2019 Standard.
 
 También puedes instalar simuladores de amenazas. Defender for Endpoint se ha asociado con plataformas de simulación de amenazas líderes del sector para ayudarle a probar las capacidades de Defender for Endpoint sin tener que salir del portal.
 
@@ -106,13 +106,13 @@ Una vez completado el proceso de configuración del laboratorio, puede agregar d
 
 ## <a name="add-devices"></a>Agregar dispositivos
 
-Cuando agregas un dispositivo a tu entorno, Defender para endpoint configura un dispositivo bien configurado con detalles de conexión. Puede agregar dispositivos Windows 10 o Windows Server 2019.
+Cuando agregas un dispositivo a tu entorno, Defender para endpoint configura un dispositivo bien configurado con detalles de conexión. Puedes agregar dispositivos con Windows 10 o Windows Server 2019.
 
 El dispositivo se configurará con la versión más actualizada del sistema operativo y Office 2019 Standard, así como con otras aplicaciones como Java, Python y SysIntenals.
 
 Si optó por agregar un simulador de amenazas durante la configuración del laboratorio, todos los dispositivos tendrán instalado el agente del simulador de amenazas en los dispositivos que agregue.
 
-El dispositivo se incorporará automáticamente al espacio empresarial con los componentes de seguridad Windows recomendados activados y en modo auditoría, sin ningún esfuerzo de su parte.
+El dispositivo se incorporará automáticamente al espacio empresarial con los componentes de seguridad de Windows recomendados activados y en modo auditoría, sin ningún esfuerzo de su parte.
 
 Los siguientes componentes de seguridad están preconfigurados en los dispositivos de prueba:
 
@@ -123,7 +123,7 @@ Los siguientes componentes de seguridad están preconfigurados en los dispositiv
 - [Protección de red](network-protection.md)
 - [Detección de aplicaciones potencialmente no deseadas](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 - [Protección entregada en la nube](cloud-protection-microsoft-defender-antivirus.md)
-- [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
 > Antivirus de Microsoft Defender estará en (no en modo auditoría). Si Antivirus de Microsoft Defender te impide ejecutar la simulación, puedes desactivar la protección en tiempo real en el dispositivo a través de Seguridad de Windows. Para obtener más información, vea [Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
@@ -135,7 +135,7 @@ La configuración de investigación automatizada dependerá de la configuración
 
 1. En el panel, selecciona **Agregar dispositivo**.
 
-2. Elige el tipo de dispositivo que quieres agregar. Puede elegir agregar Windows 10 o Windows Server 2019.
+2. Elige el tipo de dispositivo que quieres agregar. Puedes elegir agregar Windows 10 o Windows Server 2019.
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="Configuración del laboratorio con opciones de dispositivo":::
 
@@ -198,11 +198,11 @@ Si está buscando una simulación pre-made, puede usar nuestros escenarios de at
 > [!NOTE]
 > La conexión a los dispositivos de prueba se realiza con RDP. Asegúrese de que la configuración del firewall permite conexiones RDP.
 
-1. Conectar a tu dispositivo y ejecuta una simulación de ataque seleccionando **Conectar**.
+1. Conéctese al dispositivo y ejecute una simulación de ataque **seleccionando Conectar**.
 
     ![Imagen del botón conectar para dispositivos de prueba](images/test-machine-table.png)
 
-2. Guarde el archivo RDP e inicielo seleccionando **Conectar**.
+2. Guarde el archivo RDP e inicielo **seleccionando Conectar**.
 
     ![Imagen de conexión de escritorio remoto](images/remote-connection.png)
 
