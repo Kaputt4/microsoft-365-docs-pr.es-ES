@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar el examinador local de prevención de pérdida de datos de Microsoft 365 para examinar los datos almacenados e implementar las acciones de protección para los recursos compartidos de archivos locales y las carpetas y bibliotecas de documentos de SharePoint local.
-ms.openlocfilehash: 3d7c2e30092eee022fc0ed2a7ef6a8be7b82e3f1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 60befcd3ba35fe900c9fd90f84b484f9c49c280a53f7e6f31cd5ab17e729c34b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850980"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Usar el examinador de prevención de pérdida de datos locales de Microsoft 365
 

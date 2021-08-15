@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo exportar y descargar contenido de un caso de exhibición de documentos electrónicos principal en Microsoft 365.
-ms.openlocfilehash: 8eb54e23369ef682e8aa1ebf7e681eb34444f1cd
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: c74cf79ffc5defe495ed03ac45182dbd8e36582418879d6cf367242b96095eb9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850825"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exportar contenido desde un caso básico de eDiscovery
 
@@ -32,7 +32,7 @@ Después de ejecutar correctamente una búsqueda asociada a un caso de exhibici�
 
 1. Vaya a e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los [https://compliance.microsoft.com](https://compliance.microsoft.com) permisos de exhibición de documentos electrónicos adecuados.
 
-2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en Mostrar todo **y,** a continuación, haga clic en **eDiscovery > Core**.
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en **Exhibición de documentos electrónicos > Core**.
 
 3. En la **página Exhibición de documentos electrónicos** principal, haga clic en el nombre del caso en el que desea crear la retención.
 

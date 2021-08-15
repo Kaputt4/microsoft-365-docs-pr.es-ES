@@ -2,8 +2,8 @@
 title: Gobernanza de aplicaciones en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -14,16 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Implemente funcionalidades de gobernanza de aplicaciones de Microsoft para controlar sus aplicaciones.
-ms.openlocfilehash: 3665abc224330f0e2f2ba8139acb097a9aad2621
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: e36ab9e3f8d19c68027e6b665bd0755839e1accf952b7df8ca1fe1694c0a8bae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887216"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Complemento de gobernanza de aplicaciones para Microsoft Cloud App Security (en versión preliminar)
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Para suscribirse a la gobernanza de aplicaciones, consulte [Introducción a la gobernanza de aplicaciones (en versión preliminar)](app-governance-get-started.md#add-app-governance-to-your-microsoft-365-account).
 
 Los ciberataques se han vuelto cada vez más sofisticados en las formas en que aprovechan las aplicaciones que ha implementado en sus infraestructuras locales y en la nube, estableciendo un punto de partida para la elevación de privilegios, el movimiento lateral y la filtración de los datos. Para comprender los posibles riesgos y detener estos tipos de ataques, debe obtener una visibilidad clara de la posición de cumplimiento de aplicaciones de su organización para identificar rápidamente cuándo una aplicación muestra comportamientos anómalos y responder cuando estos comportamientos presentan riesgos para su entorno, datos y usuarios.
 
@@ -45,15 +48,9 @@ La gobernanza de aplicaciones le proporciona una solución completa:
 
 La gobernanza de aplicaciones es una solución basada en una plataforma que forma parte integral del ecosistema de aplicaciones de Microsoft 365. La gobernanza de aplicaciones supervisa y controla las aplicaciones habilitadas para OAuth que están registradas con Azure Active Directory (Azure AD) y acceden a los datos a través de la API de Microsoft Graph. La gobernanza de aplicaciones proporciona controles de comportamiento de la aplicación para ayudar a reforzar la posición de seguridad y cumplimiento de su infraestructura de TI.
 
-<!--
-Unlike other application governance products in the marketplace, MAPG is a platform-based solution that is an integral part of the Microsoft 365 application ecosystem. MAPG's initial focus is on OAuth-enabled apps published to the Microsoft 365 platform that are registered with Azure AD and access data through the Graph API. For the initial release, MAPG does not support other, non-OAuth-enabled M365 apps, add-ins (such as PowerBI), or other app vendor ecosystems such as Google, Facebook, Amazon Web Services, Workplace, and Salesforce. MAPG’s focus is on third-party published apps for the Microsoft 365 application platform.
-
-Microsoft allows developers to build cloud applications using Azure Active Directory (Azure AD), Microsoft’s cloud identity platform, and other resources and access to tenant data through the Microsoft Graph. Because of MAPG's visibility, insights, and control capabilities, app developers have the incentive to comply with publisher verification, self-attestation, and Microsoft certification, and can build high-quality productivity apps that are secure and compliant.
--->
-
 ## <a name="a-first-glimpse-at-app-governance"></a>Primer vistazo a la gobernanza de aplicaciones
 
-Para ver el panel de gobernanza de aplicaciones, diríjase a [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Tenga en cuenta que su cuenta de inicio de sesión debe tener uno de los [roles de administrador](app-governance-get-started.md#administrator-roles) para ver cualquier dato de gobernanza de aplicaciones.
+Para ver el panel de gobernanza de aplicaciones, diríjase a [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Tenga en cuenta que su cuenta de inicio de sesión debe tener uno de los [roles de administrador](app-governance-get-started.md#administrator-roles) para ver cualquier dato de gobernanza de aplicaciones.
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>Integración de gobernanza de aplicaciones con Azure AD y Microsoft Cloud App Security
 

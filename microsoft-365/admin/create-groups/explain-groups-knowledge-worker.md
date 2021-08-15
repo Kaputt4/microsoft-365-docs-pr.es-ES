@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo explicar los Microsoft 365 a los usuarios.
-ms.openlocfilehash: 2f983d69f8b3138634739a82e35de9e62821d252
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 7f7b5bbe59f739c591aeb69687edc0c34d97e37286eb6fd72c1bde02cc1b6ea3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826569"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>Explicar los Microsoft 365 a los usuarios
 

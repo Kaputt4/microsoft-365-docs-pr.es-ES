@@ -24,12 +24,12 @@ f1.keywords:
 - NOCSH
 description: En este artículo se proporcionan recursos para ayudarle a actualizar desde Office servidores y clientes de 2007, ya que la compatibilidad con Office 2007 ha finalizado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36ae7ab70b8a95a7762f426f5a0d463083e7bc71
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 661dfca0c9d38d48a083eb9724aeafb9d433d9fffad2d2cc882078c17860d265
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878080"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos para ayudarle a actualizar desde Office servidores y clientes de 2007
 

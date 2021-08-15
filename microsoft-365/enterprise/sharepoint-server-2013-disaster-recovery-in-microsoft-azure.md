@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: En este artículo se describe cómo usar Azure para crear un entorno de recuperación ante desastres para la granja de servidores SharePoint local.
-ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb048b9b0cf297ba5e5cd61e09f9f3164464a41a37fecfe2d27d0ef7be82f37b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907437"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878258"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
@@ -325,7 +325,7 @@ En esta tabla se proporcionan vínculos a entradas de blog y artículos de refer
   
 **Tabla: Artículos de referencia de DFSR**
 
-|**Título**|**Descripción**|
+|**Title**|**Descripción**|
 |:-----|:-----|
 |[Replicación](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770278(v=ws.11)) <br/> |Tema de TechNet sobre administración de DFS con vínculos para la replicación  <br/> |
 |[Replicación DFS: Guía de supervivencia](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Sitio wiki con vínculos a información sobre DFS  <br/> |

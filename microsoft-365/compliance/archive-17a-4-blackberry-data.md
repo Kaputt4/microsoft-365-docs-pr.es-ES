@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector BlackBerry DataParser de 17a-4 para importar y archivar datos de BlackBerry en Microsoft 365.
-ms.openlocfilehash: 565b51c4575324bfe1c80299adf82d391a8d14e1
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 77246709dffa8824bca00ff6fb09bb23e522c443b312027eff70962f57915cbf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454558"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836353"
 ---
 # <a name="set-up-a-connector-to-archive-blackberry-data"></a>Configurar un conector para archivar datos de BlackBerry
 

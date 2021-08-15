@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo obtener acceso y usar estadísticas e informes para borradores de colecciones y colecciones que se han confirmado en un conjunto de revisión en Advanced eDiscovery.
-ms.openlocfilehash: e9be02f0c1c1d20639c7120bc0f357a381411b31
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 050c2f026e0d821befde5aa4437a1e1c5ecfcfd2c0ad4c267995f7d2eefb0fac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541030"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866583"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Estadísticas e informes de colección en Advanced eDiscovery
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Obtenga información sobre cómo agregar invitados a un grupo Microsoft 365, ver usuarios invitados y usar PowerShell para controlar el acceso de invitados.
-ms.openlocfilehash: 41a42a0b4fc76b71892f758519db56f4c1adc897
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: dd29775aebc9b5a6434e7ce5bdbd46b6a874d548b6a82f61f2e525f51b638c27
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826494"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Administrar el acceso de invitado en Microsoft 365 grupos
 
@@ -63,7 +63,7 @@ Si el invitado ya existe en el directorio, puede agregarlos a los grupos desde e
   
 4. Seleccione **Agregar miembros** y elija el nombre del invitado que desea agregar.
     
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 Si desea agregar un invitado al directorio directamente, puede agregar Azure Active Directory usuarios de colaboración [B2B en Azure Portal](/azure/active-directory/b2b/add-users-administrator).
 

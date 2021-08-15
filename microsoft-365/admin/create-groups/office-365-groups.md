@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Con Microsoft 365, puede impulsar el trabajo en equipo en Microsoft 365, ya que proporciona a un grupo de personas acceso a una colección de recursos compartidos.
-ms.openlocfilehash: 612884306b0b999de48f7168981d9c006335f0aa
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f054578e13fb4ee43aa158f615d3a2810769d6982981fcd534bb4ca8d234a70c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393744"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826452"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Información general de los grupos de Microsoft 365 para administradores
 
@@ -82,7 +82,7 @@ Los siguientes límites se aplican a Microsoft 365 grupos:
 |Número de miembros|Más de 1.000, aunque solo 1.000 pueden acceder a las conversaciones de grupo simultáneamente. <br>Es posible que los usuarios notan retrasos al acceder al calendario y a las conversaciones en grupos grandes en Outlook.|
 |Número de grupos de los que un usuario puede ser miembro|7,000|
 |Almacenamiento de archivos.|1 Terabyte + 10 GB por usuario suscrito + cualquier otro almacenamiento comprado. Puede comprar una cantidad ilimitada de almacenamiento adicional.|
-|Tamaño del buzón de grupo|50 GB|
+|Tamaño del buzón de grupo|50 GB|
 
 El número máximo predeterminado de Microsoft 365 que puede tener una organización es 500 000. Para superar el límite predeterminado, debe ponerse en contacto con el Soporte técnico de Microsoft. Para obtener más información sobre Microsoft 365 de grupos, [vea Microsoft 365 Groups - Admin help](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 

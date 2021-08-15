@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo empezar a usar el módulo de codificación predictiva en Advanced eDiscovery. Este artículo le guiará por el proceso completo de usar la codificación predictiva para identificar el contenido de un conjunto de revisión que sea más relevante para la investigación.
-ms.openlocfilehash: 16fb92af5048ae6cd953e522b2e5e5d8f5a7256f
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: fe0e19c61f441f7ae01ba1c8245301ab8c6e00a3c3b1c8ddf601476bcd1f4301
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822624"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866703"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>Inicio rápido: codificación predictiva en Advanced eDiscovery (versión preliminar)
 
@@ -37,7 +37,7 @@ Para obtener una introducción detallada a la codificación predictiva, vea [Lea
 
 El primer paso es crear un nuevo modelo de codificación predictiva en el conjunto de revisión
 
-1. En el centro Microsoft 365 cumplimiento, abra un Advanced eDiscovery caso y, a continuación, seleccione la **pestaña Conjuntos de** revisión.
+1. En el Centro de cumplimiento de Microsoft 365, abra un Advanced eDiscovery y, a continuación, seleccione la **pestaña Conjuntos de** revisión.
 
 2. Abra un conjunto de opiniones y, a continuación, haga clic **en Analytics Administrar**  >  **codificación predictiva (versión preliminar).**
 
