@@ -14,12 +14,12 @@ search.appverid:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para bloquear los mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c844378a19ba7995cbd616f615e8a84994f9bf26
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 31d311fb09f1a53298e3838ba3c3eccee1ee93e4c24ba3980b0d474642ddfe4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624093"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56878239"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Crear listas de remitentes bloqueados en EOP
 
@@ -70,7 +70,7 @@ Cuando los mensajes se bloquean correctamente debido a la lista de remitentes bl
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Usar listas de remitentes bloqueados o listas de dominios bloqueados
 
-Cuando se ven afectados varios usuarios, el ámbito es más amplio, por lo que la siguiente mejor opción es bloquear listas de remitentes o listas de dominio bloqueadas en directivas contra correo no deseado. Los mensajes de remitentes de las listas se marcan como correo no deseado de elevada confianza **y** la acción que has configurado para el veredicto de filtro de **correo** no deseado de confianza alta se toma en el mensaje. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
+Cuando se ven afectados varios usuarios, el ámbito es más amplio, por lo que la siguiente mejor opción es bloquear listas de remitentes o listas de dominio bloqueadas en directivas contra correo no deseado. Los mensajes de remitentes de las listas se marcan como correo no deseado de elevada confianza **y** la acción que has configurado para el veredicto de filtro de **correo** no deseado de confianza alta se toma en el mensaje. Para más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
 
 El límite máximo de estas listas es de aproximadamente 1000 entradas.
 

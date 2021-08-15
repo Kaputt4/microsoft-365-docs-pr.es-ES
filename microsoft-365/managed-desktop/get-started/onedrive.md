@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a26500c1671afffc7b70d509a4242914631b937c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 33d86ff6b63bd8b21ba233ff8b28672a3688fd0c4b20565f69cb9f11b4959426
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904845"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857972"
 ---
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
@@ -42,14 +42,14 @@ Cuando Escritorio administrado de Microsoft usuarios reciben un nuevo dispositiv
 
 :::image type="content" source="media/onedrive-folders.png" alt-text="Notificación en la que el departamento de TI ha copiado de seguridad de las carpetas importantes. Las carpetas ahora se copian de seguridad OneDrive y están disponibles desde otros dispositivos":::
 
-3. Para evitar iconos duplicados en el escritorio cuando los dispositivos se restablecen o se restablecen, el sistema quita automáticamente Microsoft Edge y Microsoft Teams iconos de la sincronización de OneDrive, como se muestra en esta vista en el Explorador de archivos.
+3. Para evitar iconos duplicados en el escritorio cuando los dispositivos se restablecen o se restablecen, el sistema quita automáticamente Microsoft Edge y Microsoft Teams iconos del Sincronización de OneDrive, como se muestra en esta vista en el Explorador de archivos.
 
 :::image type="content" source="media/onedrive-teams.png" alt-text="Explorador de archivos que muestra Teams y listas perimetrales con casillas desactivadas y texto activando la lectura Excluido de la sincronización.":::
 
 
-## <a name="onedrive-sync-restrictions"></a>OneDrive de sincronización
+## <a name="onedrive-sync-restrictions"></a>Sincronización de OneDrive restricciones
 
-Si necesita restringir la sincronización OneDrive, se recomienda controlar el acceso con una Azure Active Directory de acceso condicional. Para obtener más información, consulta [Habilitar la compatibilidad con acceso condicional en la OneDrive de sincronización.](/onedrive/enable-conditional-access)
+Si necesita restringir el Sincronización de OneDrive, se recomienda controlar el acceso con una Azure Active Directory de acceso condicional. Para obtener más información, consulta [Habilitar la compatibilidad con acceso condicional en la Sincronización de OneDrive aplicación](/onedrive/enable-conditional-access).
 
 Si no puede usar una directiva de acceso condicional de Azure AD en su organización, el administrador de TI debe seguir estos pasos:
 

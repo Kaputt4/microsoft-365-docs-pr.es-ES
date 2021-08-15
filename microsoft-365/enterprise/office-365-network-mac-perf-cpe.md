@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de red informado
-ms.openlocfilehash: 5275f8ea55afaf621555b440e7fae4a6d11cad91
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 1a03a832e3c4121f948af0d6e7bc2ff37d2a2b925c7f7d69bac2773bed5abbfe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717593"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857996"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365 enrutamiento de red informado (versión preliminar)
 
@@ -41,7 +41,7 @@ El canal de uso compartido de datos también se usa para recibir periódicamente
 >[!NOTE]
 >Microsoft 365 enrutamiento de red informado admite inquilinos en la nube comercial de WW, pero no en las nube GCC s moderadas, GCC High, DoD, Alemania o China.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 ### <a name="integrated-sd-wan-solutions"></a>Soluciones SD-WAN integradas
 
@@ -63,9 +63,9 @@ Los datos de experiencia de aplicación (reflejados a través de métricas de ca
 
 ## <a name="enabling-informed-network-routing"></a>Habilitar el enrutamiento de red informado
 
-Habilitar el enrutamiento de red informado requiere varios pasos, algunos de los cuales tendrán que realizarse dentro de la interfaz de configuración de la solución SD-WAN. Consulte a su proveedor de soluciones SD-WAN para obtener instrucciones sobre cómo iniciar el proceso de habilitar el enrutamiento informado de red dentro de la solución SD-WAN antes de continuar con la configuración en el centro de administración de Microsoft 365 web.
+Habilitar el enrutamiento de red informado requiere varios pasos, algunos de los cuales tendrán que realizarse dentro de la interfaz de configuración de la solución SD-WAN. Consulte a su proveedor de soluciones SD-WAN para obtener instrucciones sobre cómo iniciar el proceso de habilitar el enrutamiento informado de red dentro de la solución SD-WAN antes de continuar con la configuración en el Centro de administración de Microsoft 365.
 
-Una vez que esté listo para habilitar el enrutamiento de red informado en el centro de administración de Microsoft 365, asegúrese de que tiene los permisos de administrador global necesarios.
+Una vez que esté listo para habilitar el enrutamiento de red informado en el Centro de administración de Microsoft 365, asegúrese de que tiene los permisos de administrador global necesarios.
 
 >[!IMPORTANT]
 >Para proporcionar los permisos de aplicaciones de inquilino necesarios para que la solución SD-WAN seleccionada tenga acceso al canal de uso compartido de datos de enrutamiento de red informado, debe realizar los siguientes pasos como administrador global.
@@ -73,9 +73,9 @@ Una vez que esté listo para habilitar el enrutamiento de red informado en el ce
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Paso 1: Abrir opciones de configuración de soluciones SD-WAN
 
-En el [centro Microsoft 365 administración,](https://admin.microsoft.com/)seleccione **Estado > conectividad de** red en el panel de navegación izquierdo.
+En el [Centro de administración de Microsoft 365](https://admin.microsoft.com/), seleccione **Estado > conectividad de red** en el panel de navegación izquierdo.
 
-En esta sección del Centro de administración se proporcionan métricas de conectividad de red agregadas para su organización y instrucciones sobre cómo mejorar la conectividad. Consulta [Conectividad de red en el Centro Microsoft 365 administración (versión preliminar)](office-365-network-mac-perf-overview.md) para obtener información adicional sobre estas características disponibles en el Centro de administración.
+En esta sección del Centro de administración se proporcionan métricas de conectividad de red agregadas para su organización y instrucciones sobre cómo mejorar la conectividad. Consulta [Conectividad de red en el Centro de Administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md) para obtener información adicional sobre estas características disponibles en el Centro de administración.
 
 Seleccione **Configuración > solución SD-WAN** para abrir el panel de configuración de enrutamiento de red informado. Las otras opciones que aparecen en **Configuración** se aplican a la guía general de conectividad de red en el Centro de administración y no son necesarias para habilitar el enrutamiento de red informado.
 
@@ -113,7 +113,7 @@ Seleccione **Listo** y, a continuación, cierre el panel de configuración de la
 
 Realizará gran parte de la configuración para el enrutamiento de red informado dentro de la solución SD-WAN, como configurar cómo se debe enrutar el tráfico en circunstancias normales y las rutas alternativas que deben usarse si se detectan problemas. Consulte a su proveedor de soluciones SD-WAN para obtener información detallada sobre estos pasos de configuración.
 
-Cada ubicación de oficina debe configurarse en el centro de administración de Microsoft 365 para que el enrutamiento de red informado pueda identificar correctamente el tráfico asociado con los circuitos de red que proporcionan conectividad a estas ubicaciones.
+Cada ubicación de la oficina debe configurarse en el Centro de administración de Microsoft 365 para que el enrutamiento de red informado pueda identificar correctamente el tráfico asociado a los circuitos de red que proporcionan conectividad a estas ubicaciones.
 
 Office pueden detectarse automáticamente como parte de la colección continua de telemetría de red de Microsoft. Como resultado, es posible que algunas ubicaciones se rellenen previamente en el centro de administración del inquilino. 
 
@@ -146,7 +146,7 @@ La característica de enrutamiento de red informada puede deshabilitarse para to
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Paso 1: Abrir opciones de configuración de soluciones SD-WAN
 
-En el [centro Microsoft 365 de administración,](https://admin.microsoft.com/) seleccione **Estado > conectividad de** red en el panel de navegación izquierdo.
+En el [Centro de administración de Microsoft 365](https://admin.microsoft.com/) **seleccione Estado > conectividad de red** en el panel de navegación izquierdo.
 
 Seleccione **Configuración > solución SD-WAN** para abrir el panel de configuración de enrutamiento de red informado.
 
@@ -169,6 +169,6 @@ Los datos se conservan en esta ubicación durante un máximo de 30 días. Cuando
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Conectividad de red en el centro Microsoft 365 administración (versión preliminar)](office-365-network-mac-perf-overview.md)
+[Conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 Servicios de ubicación de conectividad de red (versión preliminar)](office-365-network-mac-location-services.md)

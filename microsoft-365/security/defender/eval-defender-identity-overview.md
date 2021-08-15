@@ -1,5 +1,5 @@
 ---
-title: Evaluar Microsoft 365 Defender información general sobre la identidad, configurar la evaluación, la eval y el piloto
+title: Evaluar Microsoft 365 Defender información general sobre la identidad, configurar la evaluación
 description: Pasos para la evaluación de Microsoft 365 Defender identidad, incluidos los requisitos, habilitar o activar la eval y configurar el piloto o la prueba.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: afa3fd135abf3570d6ea6efbe713a10032bde5e8
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: b4dc8dc7a56725e1b10e37999d26dae81a6fa60b9923dd1ea3de4f242debe6ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867569"
 ---
 # <a name="evaluate-microsoft-defender-for-identity-overview"></a>Evaluación de Información general sobre identidades de Microsoft Defender
 

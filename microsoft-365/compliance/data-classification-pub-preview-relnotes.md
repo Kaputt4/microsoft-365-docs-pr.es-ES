@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión para clasificación de datos.
-ms.openlocfilehash: bbce01555367c6151a7b16b551d5580ebcaf9d43
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: ac6fea2892ab8f57d445d6cc0158326d240388cadc1defb7a8545decb01d0ecd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086711"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830808"
 ---
 # <a name="data-classification-release-notes"></a>Notas de la versión de clasificación de datos
 

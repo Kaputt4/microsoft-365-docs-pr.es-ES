@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos rastreadores notables, para ayudar a su organización a mantenerse al tanto de los problemas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a5db47ccd3e1686b6b49174cb9b3c24256b8cbd
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 8beeceec6c98af093d2fff30e4553a36cdcce28634fadc03cc37c22b96fc4848
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56877739"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -89,7 +89,7 @@ Tanto si está revisando el correo electrónico, el contenido o las actividades 
 
 Y recuerde que siempre puede proporcionarnos comentarios sobre esta u otras  características de seguridad de Microsoft 365 haciendo clic en el botón Comentarios de la esquina inferior derecha.
 
-![Microsoft 365 Defender portal](../../media/microsoft-365-defender-portal.png)
+![Portal de Microsoft 365 Defender](../../media/microsoft-365-defender-portal.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>Rastreadores y Microsoft Defender para Office 365
 
@@ -101,7 +101,7 @@ In today's threat-riddled world, running only traditional anti-malware scans mea
 
 El nuevo filtro de amenazas notables resalta los elementos que se detectaron recientemente a través de Caja fuerte datos adjuntos. Estas detecciones representan elementos que son nuevos archivos malintencionados, que no se han encontrado anteriormente Microsoft 365 en el flujo de correo electrónico o en el correo electrónico de otros clientes. Preste atención a los elementos del Rastreador de amenazas notables, vea quién fue el objetivo de ellos y revise los detalles de detonación que se muestran en la pestaña Análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el Explorador). Nota Solo encontrará esta pestaña en los correos electrónicos detectados por la funcionalidad de datos adjuntos de Caja fuerte: este rastreador notable incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el Explorador.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - Si su organización aún no tiene estas Office 365 de investigación y respuesta de amenazas, vea [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 

@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d214692e5511e7fcb10f2d1c79c9a8797ec04fff
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 9d74bba395854f582a609fec6bbd0b9d504c90eebb8c1328389fefe7c5a3da15
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568141"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56880154"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -85,7 +85,7 @@ La siguiente configuración de directiva está disponible en las directivas cont
   - **Dominios:** uno o varios de los dominios [aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) configurados en Microsoft 365.
 
   - **Excluir estos usuarios, grupos y dominios:** excepciones para la directiva. La configuración y el comportamiento son exactamente iguales a las condiciones:
-    - **Usuarios**
+    - **Users**
     - **Grupos**
     - **Dominios**
 

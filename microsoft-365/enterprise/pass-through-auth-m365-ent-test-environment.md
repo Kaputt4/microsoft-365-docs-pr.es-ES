@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: autenticación de paso a través para el entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: cdbb6927fb8ca0001e3089c7169ce9046208e8f8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6c4366713621a305c7f9000b5971232510cdefb457330f77ed5921a03bf9be37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921533"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858016"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticación de paso a través para el entorno de prueba de Microsoft 365
 

@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71c8ca842d9c88086dee041316899bbc08f943fe
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 156bc4cc6a68d8c2e6fc0d8074e31f6533e6e1f549f15f1fd8bfe66c9348298c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288916"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56879504"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Acciones de corrección en Microsoft Defender para Office 365
 
@@ -64,7 +64,7 @@ Microsoft Defender para Office 365 incluye acciones de corrección para abordar 
 |Usuario|Un usuario envía malware/phish|La investigación automatizada no da como resultado una acción pendiente específica. <p> El usuario puede estar informando de malware/phish, o alguien podría estar suplantando al usuario [como](anti-spoofing-protection.md) parte de un ataque. Use [el Explorador de](threat-explorer.md) amenazas para ver y controlar el correo electrónico que contiene [malware](threat-explorer-views.md#email--malware) o [phish](threat-explorer-views.md#email--phish).|
 |Usuario|Reenvío de correo <br> (Las reglas de reenvío de buzones están configuradas, chch podría usarse para la exfiltración de datos).|Quitar regla de reenvío <p> Use [la información sobre el flujo de correo,](mail-flow-insights-v2.md)incluido el [informe](mfi-auto-forwarded-messages-report.md)de mensajes enviados automáticamente, para ver detalles más específicos sobre el correo electrónico reenviado.|
 |Usuario|Reglas de delegación de correo electrónico <br> (La cuenta de un usuario tiene las delegaciones configuradas).|Quitar regla de delegación <p> Si su organización usa [Microsoft Defender para endpoint,](/windows/security/threat-protection/)considere [la posibilidad de investigar al usuario](/microsoft-365/security/defender-endpoint/investigate-user) que está obteniendo el permiso de delegación.|
-|Usuario|Exfiltración de datos <br> (Un usuario infringió las directivas DLP de correo electrónico o de uso [compartido de archivos](../../compliance/dlp-learn-about-dlp.md) |La investigación automatizada no da como resultado una acción pendiente específica. <p> [Ver informes dlp y tomar medidas.](../../compliance/view-the-dlp-reports.md)|
+|Usuario|Filtración de datos <br> (Un usuario infringió las directivas DLP de correo electrónico o de uso [compartido de archivos](../../compliance/dlp-learn-about-dlp.md) |La investigación automatizada no da como resultado una acción pendiente específica. <p> [Ver informes dlp y tomar medidas.](../../compliance/view-the-dlp-reports.md)|
 |Usuario|Envío de correo electrónico anómalo <br> (Un usuario envió recientemente más correo electrónico que durante los 7-10 días anteriores).|La investigación automatizada no da como resultado una acción pendiente específica. <p> Enviar un gran volumen de correo electrónico no es malintencionado por sí solo; es posible que el usuario acaba de enviar correo electrónico a un gran grupo de destinatarios para un evento. Para investigar, use información sobre [](mfi-mail-flow-map-report.md) el flujo [de](mail-flow-insights-v2.md)correo, incluido el informe de mapa de flujo de correo para determinar lo que está sucediendo y tomar medidas.|
 
 ## <a name="next-steps"></a>Siguientes pasos

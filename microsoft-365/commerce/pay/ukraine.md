@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2fc4f93a998c4d113b8e4ebf1cfe5fce89fff949
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 35d17af65ddadcdee885ae0026802703577985465eac8b46b817e84858543598
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900272"
 ---
 # <a name="payment-information-for-ukraine"></a>Información de pago para Ucrania
 

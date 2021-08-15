@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: En este artículo, obtenga información sobre cómo comprobar el estado de la sincronización de directorios en Office 365.
-ms.openlocfilehash: cbaae8bbd31f6124c2b0f4984b9a625ffbde538f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 766e3ef112ac9493863df0aa6c9958e89ec93c0e2e0c9e307e7371b536f3cb01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840760"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Ver el estado de sincronización de directorios en Microsoft 365
 
@@ -34,7 +34,7 @@ Si ha integrado los Servicios de dominio de Active Directory (AD DS) locales con
   
 ## <a name="view-directory-synchronization-status"></a>Ver el estado de sincronización de directorios
 
-- Inicie sesión en el [centro Microsoft 365 administración y](https://admin.microsoft.com) elija Estado de **DirSync** en la página principal.
+- Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) y elija **Estado de DirSync en** la página principal.
 - Como alternativa, puede ir a **Usuarios** usuarios activos y, en la \> página **Usuarios activos,** elija **Más sincronización** de \> **directorios.** En el panel **Sincronización de** directorios, elija Ir a Administración **de DirSync**.
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Información en la página Administrar sincronización de directorios
@@ -43,7 +43,7 @@ En la tabla siguiente se enumeran las características de las que puede obtener 
   
 Si hay un problema con la sincronización de directorios, los errores también se enumeran en esta página. Para obtener más información acerca de los diferentes errores que puede encontrar, vea Identificar errores de sincronización de [directorios en Microsoft 365](identify-directory-synchronization-errors.md).
   
-|Elemento|Para qué sirve|
+|Item|Para qué sirve|
 |:-----|:-----|
 |**Dominios comprobados** | Número de dominios de su Microsoft 365 inquilino que ha comprobado que es propietario. |
 |**Dominios no comprobados** | Dominios que ha agregado, pero no comprobados. |

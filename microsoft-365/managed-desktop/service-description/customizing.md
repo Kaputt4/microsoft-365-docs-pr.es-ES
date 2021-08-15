@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59a2b8227eb7e410ecf8506ce288978213537edc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 83c5ce953b298c61502f2bc10a5d01191bfb98d1d39690a9472509058d8f37db
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857896"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Excepciones para el plan de servicios
 
@@ -24,7 +24,7 @@ Escritorio administrado de Microsoft proporciona una lista de dispositivos [cura
 
 Una excepción es cualquier adición o cambio a la configuración Escritorio administrado de Microsoft base; Los ejemplos van desde la configuración de puertos USB hasta la implementación de un nuevo controlador de dispositivo. Agrupamos varias excepciones de la siguiente manera:
 
-|Tipo  |Descripción  |
+|Tipo  |Description  |
 |---------|---------|
 |Software de productividad     |  Software de primer plano necesario para los usuarios, restringido por los [requisitos de la aplicación](mmd-app-requirements.md)       |
 |Agentes de seguridad & VPN     |  Software usado para proteger, supervisar o cambiar el comportamiento del dispositivo o la red       |
@@ -32,7 +32,7 @@ Una excepción es cualquier adición o cambio a la configuración Escritorio adm
 |Controladores de hardware o software     |   Controladores de dispositivo, restringidos por los [requisitos de la aplicación](mmd-app-requirements.md)      |
 |Directivas     | Windows 10 o Aplicaciones Microsoft 365 para empresas en un dispositivo administrado        |
 |Dispositivos     | Dispositivos que no están en la Escritorio administrado de Microsoft [dispositivos](device-list.md)        |
-|Otros     |  Cualquier cosa no cubierta por las otras áreas       |
+|Otro     |  Cualquier cosa no cubierta por las otras áreas       |
  
 ## <a name="request-an-exception"></a>Solicitar una excepción
 

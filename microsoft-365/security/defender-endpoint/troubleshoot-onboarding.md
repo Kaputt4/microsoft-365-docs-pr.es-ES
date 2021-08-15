@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 68b627c7cdc215317d737a637316e5edf0971322
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e74ca9a12938028d3e9710e46de8b2f82bca00a3c01f241c74b344f9e211d082
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650924"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890158"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -134,7 +134,7 @@ Nombre del registro: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Pr
 
 Nombre del canal: Administrador
 
-Id. | Severity | Descripción del evento | Pasos para la solución de problemas
+ID | Severity | Descripción del evento | Pasos para la solución de problemas
 :---|:---|:---|:---
 1819 | Error | Microsoft Defender para CSP de extremo: no se pudo establecer el valor del nodo. NodeId: (%1), TokenName: (%2), Result: (%3). | Descargue la [actualización acumulativa para Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
@@ -167,7 +167,7 @@ Si las herramientas de implementación usadas no indican un error en el proceso 
 
 6. Los eventos que pueden indicar problemas aparecerán en el **panel** Operativo. Puede intentar solucionarlos en función de las soluciones de la tabla siguiente:
 
-Identificador de evento | Message | Pasos de resolución
+Identificador de evento | Mensaje | Pasos de resolución
 :---:|:---|:---
  `5` | Error al conectarse al servidor en la variable Microsoft Defender para el servicio de _punto de conexión_ | [Asegúrese de que el dispositivo tiene acceso a Internet.](#ensure-the-device-has-an-internet-connection)
  `6` | El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación. Código de error: _variable_ | [Vuelva a ejecutar el script de incorporación](configure-endpoints-script.md).

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 84e6f58fb9506a1a8c05e759b1273fa3fa97d7ab
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e1b49923b6ecda7c5d5e08f7e85f9466c88ad1a66d047d7831ed87199269d606
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535463"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900420"
 ---
 # <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a>Información de pago para Macedonia, ex República Yugoslava de
 

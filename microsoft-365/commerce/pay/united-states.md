@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f8f5cd4acb6bf8029ba3f953b2681d0619330776
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 291335b0a88de457e9deb931a148fe41635f4d05619d16763bd2c7cba6f6fd5b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830964"
 ---
 # <a name="payment-information-for-united-states"></a>Información de pago para Estados Unidos
 
@@ -30,7 +30,7 @@ Paga solo en USD y haz referencia a tus números de factura en la remesa de pago
 
 **Beneficiario:** Microsoft  
 **Dirección postal:**  
-Correo estándar: CUADRO 842103, Dallas, TX 75284-2103  
+Correo estándar: Po Box 842103, Dallas, TX 75284-2103  
 Express Mail: Lockbox 842103, 1950 N. Stemmons Frwy, Ste. 5010, Dallas, TX 75207-2103
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
