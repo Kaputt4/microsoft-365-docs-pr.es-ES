@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Cómo llegar a los recursos equivalentes al Centro de implementación de escritorio en desuso.
-ms.openlocfilehash: 54847305576cb5b2cf96177ad810c1b1ccb11eed
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4e71d80496ff700e9b662d7109383e04a8ef805045e1ac0085eb195b041b65fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051477"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53849864"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Centro de implementación de escritorio (en desuso)
 
@@ -27,9 +27,9 @@ El cuerpo del contenido que comprendía el Centro de implementación de escritor
 Use estos recursos para implementar escritorios modernos:
 
 - [Windows 10 implementación](/windows/deployment/)
-- [Implementar Aplicaciones de Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Implementar Aplicaciones de Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
-- [Directivas de acceso a dispositivos e identidades](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [Directivas de acceso a dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 También puede ver los vídeos de la [serie de implementación de escritorio de Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).
 

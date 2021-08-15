@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 4008f4e0198058e2b13de62c34697e3034d499b2
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e221c720185e0d6b2d952431b2710d5711b05b39f01ba363c94e33fa41f96c61
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897127"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Implementar capacidades de protección contra amenazas en Microsoft 365 E5
 
@@ -34,7 +34,7 @@ Esta solución describe las potentes capacidades de protección contra amenazas 
 
 ## <a name="threat-protection-in-microsoft-365-e5"></a>Protección contra amenazas en Microsoft 365 E5
 
-Las soluciones de seguridad de Microsoft están integradas en nuestros productos y servicios. Las capacidades de automatización y aprendizaje automático reducen la carga en los equipos de seguridad para asegurarse de que se abordan los elementos correctos. La solidez de las soluciones de seguridad de Microsoft se basa en trillones de señales que procesamos todos los días en nuestro servicio de seguridad [inteligente Graph](/graph/security-concept-overview). Microsoft 365 de seguridad incluyen [Microsoft 365 Defender,](../security/defender/microsoft-365-defender.md)una solución que reúne señales en el correo electrónico, los datos, los dispositivos y las identidades para pintar una imagen de amenazas avanzadas contra su organización.
+Las soluciones de seguridad de Microsoft están integradas en nuestros productos y servicios. Las capacidades de automatización y aprendizaje automático reducen la carga en los equipos de seguridad para asegurarse de que se abordan los elementos correctos. La solidez de las soluciones de seguridad de Microsoft se basa en trillones de señales que procesamos todos los días en nuestro servicio de seguridad [inteligente Graph](/graph/security-concept-overview). Microsoft 365 de seguridad incluyen [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md), una solución que reúne señales en el correo electrónico, los datos, los dispositivos y las identidades para pintar una imagen de amenazas avanzadas contra su organización.
 
 [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) le permite proteger su organización con inteligencia integrada adaptable. Con las capacidades de seguridad de Microsoft 365 E5, puede detectar e investigar amenazas avanzadas, identidades comprometidas y acciones malintencionadas en todo el entorno (local y en la nube).
 
@@ -44,10 +44,10 @@ En Microsoft 365 E5, las capacidades de protección contra amenazas están integ
 
 ![Información general sobre Microsoft 365 Defender](../media/deploy-threat-protection/deploy-threat-protection-across-m365-overview.png)
 
-Microsoft 365 Defender reúne las señales y los datos en un centro de [Microsoft 365 de seguridad unificada.](/microsoft-365/security/defender/overview-security-center) 
+Microsoft 365 Defender une las señales y los datos en un centro de [seguridad Microsoft 365 de seguridad.](/microsoft-365/security/defender/overview-security-center) 
 
 > [!div class="mx-imgBorder"]
-> ![Ilustración conceptual del panel Microsoft 365 Defender](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
+> ![Ilustración conceptual de Microsoft 365 Defender panel](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
 
 ## <a name="deployment-overview"></a>Información general sobre la implementación
 
@@ -65,8 +65,8 @@ En la tabla siguiente se describen las distintas soluciones/capacidades que se d
 |Paso |Solución/funcionalidades  |Descripción  |
 |--|---------|---------|
 | 1 |[Autenticación multifactor y acceso condicional](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)     |Proteger contra identidades y dispositivos en peligro. Comience con esta protección porque es fundamental. La configuración recomendada en esta guía incluye Azure AD Identity Protection como requisito previo. Para obtener más información, vea [Azure AD Identity Protection](/azure/security/fundamentals/threat-detection#azure-active-directory-identity-protection).     |
-| 2 |[Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)     |  Una solución de seguridad basada en la nube que usa las señales locales de Servicios de dominio de Active Directory (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. Céntrate en Microsoft Defender para Identity a continuación porque protege la infraestructura local y en la nube, no tiene dependencias ni requisitos previos y puede proporcionar ventajas de seguridad inmediatas. Para obtener más información, vea [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection). | 
-| 3 |[Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender) |Combina las señales y orquesta las capacidades en una única solución. Permite a los profesionales de seguridad unir señales de amenaza y determinar el alcance completo y el impacto de una amenaza. Microsoft 365 Defender realiza acciones automáticas para evitar o detener el ataque y auto sanar los buzones, puntos de conexión e identidades de usuario afectados. Para obtener más información, [vea Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). |
+| 2 |[Microsoft Defender para la identidad](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)     |  Una solución de seguridad basada en la nube que usa las señales locales de Servicios de dominio de Active Directory (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. Céntrate en Microsoft Defender para Identity a continuación porque protege la infraestructura local y en la nube, no tiene dependencias ni requisitos previos y puede proporcionar ventajas de seguridad inmediatas. Para obtener más información, vea [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection). | 
+| 3 |[Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender) |Combina las señales y orquesta las capacidades en una única solución. Permite a los profesionales de seguridad unir señales de amenaza y determinar el alcance completo y el impacto de una amenaza. Microsoft 365 Defender realiza acciones automáticas para evitar o detener el ataque y auto-sanar los buzones, puntos de conexión e identidades de usuario afectados. Para obtener más información, [vea Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). |
 | 4  |[Microsoft Defender para Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)     | Protege su organización contra las amenazas malintencionadas que suponen los mensajes de correo electrónico, los vínculos (URL) y las herramientas de colaboración. Protege contra malware, phishing, suplantación de identidad y otros tipos de ataques. Se recomienda configurar Microsoft Defender para Office 365 porque el control de cambios, la migración de la configuración desde el sistema actual y otras consideraciones pueden tardar más tiempo en implementarse. Para obtener más información, vea [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365).       |
 | 5  |[Microsoft Defender para punto de conexión](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)    | Ayuda a prevenir, detectar, investigar y responder a amenazas avanzadas en todos los dispositivos (también denominados puntos de conexión). Defender for Endpoint es una sólida oferta de protección contra amenazas. Para obtener más información, vea [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).  |
 | 6  |[Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)     | Un agente de seguridad de acceso a la nube para la detección, investigación y gobierno. Puede habilitar la Microsoft Cloud App Security para empezar a recopilar datos e información. Implementar información y otra protección dirigida en las aplicaciones SaaS implica planear y puede tardar más tiempo. Para obtener más información, vea [What is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)      | 
@@ -84,7 +84,7 @@ Para asegurarse de que su organización tiene la mejor protección posible, [con
 
 1. [Configurar la autenticación multifactor y las directivas de acceso condicional.](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
 2. [Configurar Microsoft Defender para identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity).
-3. [Active Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender).
+3. [Active la Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender).
 4. [Configurar Defender para Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365).
 5. [Configurar Microsoft Defender para endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint).
 6. [Configurar Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security).

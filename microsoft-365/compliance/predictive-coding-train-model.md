@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 84ec1ad42f2cec2487debe7160a3f24e09bdd830
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d628922d5c6933acc386abf14cf6436a3e595419741a4f816fc374b0570b4a73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865225"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entrenar un modelo de codificación predictiva (versión preliminar)
 
@@ -91,6 +91,6 @@ Después de realizar rondas de aprendizaje posteriores (después de la primera r
 
 - El modelo actualizado vuelve a procesar todos los elementos del conjunto de revisión y asigna a cada elemento una puntuación de predicción actualizada.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de realizar la primera ronda de aprendizaje, puede realizar más rondas de aprendizaje o aplicar el filtro de puntuación de predicción del modelo al conjunto de revisión para ver los elementos que el modelo ha predicho como relevantes o no relevantes. Para obtener más información, vea [Apply a prediction score filter to a review set](predictive-coding-apply-prediction-filter.md).

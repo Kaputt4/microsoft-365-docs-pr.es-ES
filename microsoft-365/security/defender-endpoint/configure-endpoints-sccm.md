@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 8f12185a9ef7f988aecfa6a807ff707f5102e18c
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 925e76c595b8714ebc0aaf41329b5edb94967434b6acce46431d326047d4c572
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53874123"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Incorporar los dispositivos Windows 10 con Configuration Manager
 
@@ -35,7 +35,7 @@ ms.locfileid: "53568117"
 - Microsoft Endpoint Configuration Manager rama actual
 - Administrador de configuración de System Center 2012 R2
 
->¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## <a name="supported-client-operating-systems"></a>Sistemas operativos cliente compatibles
 
@@ -87,14 +87,14 @@ Consulte el [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public
     a. Elija una colección de dispositivos predefinida en la que implementar el paquete.
 
 > [!NOTE]
-> Defender for Endpoint no admite la incorporación durante la fase de la experiencia de implementación [(OOBE).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Asegúrese de que los usuarios completen OOBE después de ejecutar Windows instalación o actualización.
+> Defender for Endpoint no admite la incorporación durante la fase de la experiencia de implementación [(OOBE).](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Asegúrese de que los usuarios completen OOBE después de ejecutar Windows instalación o actualización.
 
->[!TIP]
+> [!TIP]
 > Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo defender para endpoint](run-detection-test.md)recién incorporado.
 >
 > Ten en cuenta que es posible crear una regla de detección en una aplicación de Configuration Manager para comprobar continuamente si se ha incorporado un dispositivo. Una aplicación es un tipo diferente de objeto que un paquete y un programa.
 > Si un dispositivo aún no está incorporado (debido a la finalización de OOBE pendiente o a cualquier otro motivo), Configuration Manager volverá a intentar incorporar el dispositivo hasta que la regla detecte el cambio de estado.
-> 
+>
 > Este comportamiento se puede lograr mediante la creación de una regla de detección que comprueba si el valor del Registro "OnboardingState" (de tipo REG_DWORD) = 1.
 > Este valor del Registro se encuentra en "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
 Para obtener más información, vea [Configure Detection Methods in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
@@ -103,8 +103,8 @@ Para obtener más información, vea [Configure Detection Methods in System Cente
 
 Para cada dispositivo, puedes establecer un valor de configuración para especificar si se pueden recopilar muestras del dispositivo cuando se realiza una solicitud a través de Microsoft 365 Defender enviar un archivo para un análisis profundo.
 
->[!NOTE]
->Estas opciones de configuración normalmente se realizan a través de Configuration Manager.
+> [!NOTE]
+> Estas opciones de configuración normalmente se realizan a través de Configuration Manager.
 
 Puedes establecer una regla de cumplimiento para el elemento de configuración en Configuration Manager para cambiar la configuración de recurso compartido de ejemplo en un dispositivo.
 
@@ -112,58 +112,62 @@ Esta regla debe ser un elemento de *configuración* de regla de cumplimiento cor
 
 La configuración se establece mediante la siguiente entrada de clave del Registro:
 
-```console
+```text
 Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-Donde:<br>
-El tipo de clave es un D-WORD. <br>
-Los valores posibles son:
-- 0: no permite el uso compartido de muestras desde este dispositivo
-- 1: permite compartir todos los tipos de archivo desde este dispositivo
+Donde Tipo de clave es un D-WORD. Los valores posibles son:
+
+- 0: No permite el uso compartido de muestras desde este dispositivo
+- 1: Permite compartir todos los tipos de archivo desde este dispositivo
 
 El valor predeterminado en caso de que la clave del Registro no exista es 1.
 
 Para obtener más información sobre System Center Configuration Manager cumplimiento normativo, vea Introducción a la configuración de cumplimiento [en System Center Configuration Manager de 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-
 ## <a name="other-recommended-configuration-settings"></a>Otras opciones de configuración recomendadas
+
 Después de incorporar dispositivos al servicio, es importante aprovechar las capacidades de protección contra amenazas incluidas al habilitarlos con las siguientes opciones de configuración recomendadas.
 
 ### <a name="device-collection-configuration"></a>Configuración de la colección de dispositivos
+
 Si usa Endpoint Configuration Manager, versión 2002 o posterior, puede ampliar la implementación para incluir servidores o clientes de nivel inferior.
 
-
 ### <a name="next-generation-protection-configuration"></a>Configuración de protección de próxima generación
+
 Se recomiendan las siguientes opciones de configuración:
 
-**Escanear** <br>
+#### <a name="scan"></a>Examinar
+
 - Examinar dispositivos de almacenamiento extraíbles, como unidades USB: Sí
 
-**Protección en tiempo real** <br>
+#### <a name="real-time-protection"></a>Protección en tiempo real
+
 - Habilitar supervisión de comportamiento: Sí
 - Habilitar la protección contra aplicaciones potencialmente no deseadas en la descarga y antes de la instalación: Sí
 
-**Servicio de protección en la nube**
+#### <a name="cloud-protection-service"></a>Servicio de protección en la nube
+
 - Tipo de pertenencia al Servicio de protección en la nube: pertenencia avanzada
 
-**Reducción de superficie de ataque** Configure todas las reglas disponibles en Auditar.
+#### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 
->[!NOTE]
+Configure todas las reglas disponibles en Auditar.
+
+> [!NOTE]
 > El bloqueo de estas actividades puede interrumpir procesos empresariales legítimos. El mejor enfoque es establecer todo para auditar, identificar cuáles son seguros para activarse y, a continuación, habilitar esa configuración en puntos de conexión que no tienen detecciones de falsos positivos.
 
+#### <a name="network-protection"></a>Protección de red
 
-**Protección de red** <br>
-Antes de habilitar la protección de red en modo de auditoría o bloqueo, asegúrese de que ha instalado la actualización de la plataforma antimalware, que se puede obtener desde la [página de soporte técnico](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
+Antes de habilitar la protección de red en modo de auditoría o bloqueo, asegúrese de que ha instalado la actualización de la plataforma antimalware, que se puede obtener desde la [página de soporte técnico](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
 
+#### <a name="controlled-folder-access"></a>Acceso controlado a carpetas
 
-**Acceso controlado a carpetas**<br>
 Habilite la característica en modo auditoría durante al menos 30 días. Después de este período, revise las detecciones y cree una lista de aplicaciones que puedan escribir en directorios protegidos.
 
 Para obtener más información, vea [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
-
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Dispositivos offboard con Configuration Manager
 
@@ -180,24 +184,19 @@ Si usa una Microsoft Endpoint Manager actual, vea [Create an offboarding configu
 
 
 1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
-
     1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints** Administración  >  **de dispositivos**  >   **Offboarding**.
-
     1. Seleccione Windows 10 como sistema operativo.
-
     1. En el **campo Método de** implementación, seleccione System Center Configuration Manager **2012/2012 R2/1511/1602**.
-    
     1. Seleccione **Descargar paquete** y guarde el .zip archivo.
 
 2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que puedan tener acceso los administradores de red que implementarán el paquete. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Implemente el paquete siguiendo los pasos descritos en el artículo Paquetes y [programas System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
 
-    a. Elija una colección de dispositivos predefinida en la que implementar el paquete.
+   Elija una colección de dispositivos predefinida en la que implementar el paquete.
 
 > [!IMPORTANT]
 > Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
-
 
 ## <a name="monitor-device-configuration"></a>Supervisar la configuración del dispositivo
 
@@ -240,6 +239,7 @@ Value: "1"
 Para obtener más información, vea Introducción a [la configuración de cumplimiento en System Center Configuration Manager de 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Incorporación Windows 10 dispositivos con directiva de grupo](configure-endpoints-gp.md)
 - [Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
 - [Incorporar dispositivos Windows 10 mediante un script local](configure-endpoints-script.md)

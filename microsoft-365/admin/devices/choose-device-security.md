@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Elige entre diferentes métodos MDM y MAM.
-ms.openlocfilehash: 462fe28b1240681380d6a1d26ae362575c0d7c86
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 933aacd950f67eaab9b538fd6b029a4b6f71d807a27bd33c9139650f57f1d7b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826236"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>Opciones para proteger los dispositivos y los datos de la aplicación
 
@@ -48,7 +48,7 @@ Tiene varias formas de proteger los dispositivos y los datos de las organizacion
 
 - **Azure Active Directory (AD) Premium** son planes independientes que también vienen con algunos de los planes Microsoft 365 para empresas y empresas. Para obtener más información, vea [Precios de Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
 
-     Azure AD Premium P1 y Azure AD Premium P2 le permiten establecer características de acceso condicional, restablecimiento de contraseñas de autoservicio, etc. Para obtener más información sobre las capacidades de los planes Premium, consulte Página de precios [de Azure AD.](https://azure.microsoft.com/pricing/details/active-directory/)
+     Azure AD Premium P1 y Azure AD Premium P2 permiten establecer características de acceso condicional, restablecimiento de contraseña de autoservicio, etc. Para obtener más información sobre las capacidades de los planes Premium, consulte Página de precios [de Azure AD.](https://azure.microsoft.com/pricing/details/active-directory/)
 - **Microsoft 365 Empresa Premium** incluye Intune y Azure Active Directory Premium P1 y Office 365 protección contra amenazas avanzada. 
  
     Microsoft 365 Empresa Premium ofrece un conjunto de plantillas de directiva para proteger los dispositivos y los datos de la aplicación. Ofrece un buen nivel de seguridad y protección contra amenazas para la mayoría de las empresas menores de 300 usuarios. Para obtener más información, vea [Configurar](../../business/set-up.md)Microsoft 365 Empresa Premium en el asistente para la instalación, proteger [Windows 10 equipos](../../business/secure-win-10-pcs.md)y Microsoft 365 Empresa Premium de seguridad [y cumplimiento.](../../business/security-features.md)

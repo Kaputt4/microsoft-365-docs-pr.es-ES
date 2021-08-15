@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo usar la pestaña Prueba después del cálculo por lotes Advanced eDiscovery probar, comparar y validar la calidad general del procesamiento.
-ms.openlocfilehash: 3ac12c176f2e46ac0321976a7e0689fbd8893bba
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 97adafae8cc6113fbc2f34a1c9a95276439fc834e14ef0b45b345e1deb577ca9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865251"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>Análisis de relevancia de prueba en Advanced eDiscovery
   

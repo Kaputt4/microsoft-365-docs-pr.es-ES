@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: 414ef4e5d9f6472180a5eaef391d3eba33463b02
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5570cecdf3b7e6b6959bb20ca2c2fcdd0ad2e6ebd6b579f7caf7a018049beaeb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886423"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
@@ -115,4 +115,4 @@ El valor de comprender qué acciones se están haciendo con el contenido etiquet
 - [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Más información sobre las directivas y las etiquetas de retención](retention.md)
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md)
-- [Obtenga información sobre la clasificación de datos.](data-classification-overview.md)
+- [Obtenga información sobre la clasificación de datos](data-classification-overview.md)

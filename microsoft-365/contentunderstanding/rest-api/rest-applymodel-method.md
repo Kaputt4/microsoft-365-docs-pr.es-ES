@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Use la API de REST para aplicar un modelo de comprensión mediante documentos a una o más bibliotecas.
-ms.openlocfilehash: 04f1dfdb0c16110c9ba7de12f5f0735d498d50cf
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2bcd7bd038c228e09332b7841332b6943edb0232ec27b1315fe612a5a8a4d0c5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865076"
 ---
 # <a name="batch-apply-model"></a>Aplicar modelo en lote
 
