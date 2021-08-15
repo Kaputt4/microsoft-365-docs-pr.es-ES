@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7bf8c07230747906bb7380ef2e98871993100707
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2e9bf600281e11d3a0220be4682e3d47edd660fdece915255aae0273e9b5c1ec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881440"
 ---
 # <a name="payment-information-for-azerbaijan"></a>Información de pago para Azerbaiyán
 

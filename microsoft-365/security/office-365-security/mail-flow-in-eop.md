@@ -15,12 +15,12 @@ ms.custom:
 description: El administrador puede obtener información sobre las opciones para configurar el flujo de correo y el enrutamiento en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9636025796aee1ba2027edff38a16f131974134f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 21702d1b7c57e1d102503cc806fa5699627eedabbb0945e34be91c2c2eb1fedf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56884574"
 ---
 # <a name="mail-flow-in-eop"></a>Flujo de correo en EOP
 
@@ -47,7 +47,7 @@ Si agrega subdominios a la organización, el servicio de EOP también puede ayud
 
 [El filtrado mejorado para conectores](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) describe cómo configurar conectores si el correo se enruta a un servicio o dispositivo antes de EOP.
 
-En entornos híbridos en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). Si no desea mover mensajes a la carpeta correo no deseado de cada usuario, puede elegir otra acción editando las directivas contra correo no deseado (también conocidas como directivas de filtro de contenido). Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
+En entornos híbridos en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). Si no desea mover mensajes a la carpeta correo no deseado de cada usuario, puede elegir otra acción editando las directivas contra correo no deseado (también conocidas como directivas de filtro de contenido). Para más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
 
 ## <a name="verify-mail-flow"></a>Comprobar el flujo de correo
 

@@ -1,5 +1,5 @@
 ---
-title: Revisar los requisitos de arquitectura y el marco técnico de Microsoft Defender para identidad, diagrama de arquitectura, MDI
+title: Revisar los requisitos de arquitectura y el marco técnico para Microsoft Defender for Identity
 description: El diagrama técnico de Microsoft Defender para identity en Microsoft 365 Defender le ayudará a comprender la identidad en Microsoft 365 antes de crear el entorno piloto o el laboratorio de prueba.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8f0c736d07a2a66420416d30ae2dc45ae5fee37a
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: cb243c0100bab3b13939422f61618a2d7e1d77772bbdd14b25007988ea626024
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458708"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867593"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Revisar los requisitos de arquitectura y los conceptos clave para Microsoft Defender for Identity
 
@@ -86,7 +86,7 @@ En la siguiente tabla se identificaron conceptos clave que son importantes para 
 Defender for Identity requiere algunos requisitos previos para garantizar que la identidad local y los componentes de red cumplan los requisitos mínimos. Use este artículo como una lista de comprobación para asegurarse de que el entorno está listo: [requisitos previos](/defender-for-identity/prerequisites)de Microsoft Defender para la identidad .
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Paso 2 de 3: [Habilitar el entorno de evaluación Defender for Identity](eval-defender-identity-enable-eval.md)
 

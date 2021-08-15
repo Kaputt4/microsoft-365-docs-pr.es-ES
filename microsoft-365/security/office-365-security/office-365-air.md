@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08e69013c0108d0caaf76c6a227684f5f1b68355
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 163f21b12d36541556d47b0963029049c277c2d3d701d8bce206338d7ee34cbd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083697"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56883119"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -151,7 +151,7 @@ En la tabla siguiente se enumeran los cambios y mejoras que se han realizado en 
 
 ****
 
-|Elemento|¿Qué está cambiando?|
+|Item|¿Qué está cambiando?|
 |---|---|
 |**Página Investigaciones**|La página **Investigaciones actualizada es** más coherente con lo que se ve en [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Verá algunos cambios generales de formato y estilo que se alinean con la nueva vista **Investigaciones unificada.** Por ejemplo, el gráfico de investigación tiene un formato más unificado.|
 |**Pestaña Usuarios**|La **pestaña Usuarios** ahora es la pestaña **Buzones.** Los detalles sobre los usuarios se enumeran en la **pestaña Buzón** de correo.|
@@ -159,11 +159,11 @@ En la tabla siguiente se enumeran los cambios y mejoras que se han realizado en 
 |**Pestaña Entidades**|La **pestaña Entidades** tiene un estilo de pestaña en pestaña que incluye una vista de resumen total y la capacidad de filtrar por tipo de entidad. La **pestaña Entidades** ahora incluye una opción **Ir** a buscar, además de la opción Abrir **en el** Explorador. Ahora puede usar explorer [o](threat-explorer.md) búsqueda [avanzada](../defender-endpoint/advanced-hunting-overview.md) para buscar entidades y amenazas, y filtrar los resultados.|
 |**Pestaña Acciones**|La pestaña **Acciones** actualizada ahora incluye **una pestaña Acciones pendientes** y una **pestaña Historial de** acciones. Las acciones se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|
 |**Ficha Evidencia**|Una nueva **pestaña Evidencia** muestra los resultados clave de la entidad relacionados con las acciones. Las acciones relacionadas con cada elemento de evidencia se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|
-|**Centro de actividades**|El Centro **de acciones** actualizado ( ) reúne acciones pendientes y completadas en <https://security.microsoft.com/action-center> correo electrónico, dispositivos e identidades. Para obtener más información, consulte Centro de acciones. (Para obtener más información, vea [The Action center](../defender/m365d-action-center.md).)|
+|**Centro de acciones**|El Centro **de acciones** actualizado ( ) reúne acciones pendientes y completadas en <https://security.microsoft.com/action-center> correo electrónico, dispositivos e identidades. Para obtener más información, consulte Centro de acciones. (Para obtener más información, vea [The Action center](../defender/m365d-action-center.md).)|
 |**Página Incidentes**|La **página Incidentes** ahora correlaciona varias investigaciones para proporcionar una mejor vista consolidada de las investigaciones. ([Obtenga más información sobre incidentes](../defender/incidents-overview.md).)|
 |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver detalles y resultados de una investigación automatizada](air-view-investigation-results.md#view-details-of-an-investigation)
 - [Revisar y aprobar acciones pendientes](air-remediation-actions.md)

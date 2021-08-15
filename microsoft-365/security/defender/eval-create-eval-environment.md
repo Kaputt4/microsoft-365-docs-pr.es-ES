@@ -1,5 +1,5 @@
 ---
-title: Cree el entorno Microsoft 365 Defender evaluación. Active o habilite licencias de prueba y continúe con Microsoft Defender for Identity (MDI).
+title: Crear el entorno Microsoft 365 Defender evaluación
 description: Configure el entorno Microsoft 365 Defender prueba o entorno piloto mediante la activación de licencias de prueba. A continuación, configure Microsoft Defender for Identity (MDI) y todas las demás evaluaciones M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 04f7a746788ebcf67525020515cdc7bb20c41bb6
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 6e89591b57be2bf79664547715906074b92b54649e1858bde9ffe06cb2be9335
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867624"
 ---
 # <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Crear el entorno Microsoft 365 Defender evaluación
 
@@ -49,7 +49,7 @@ El segundo es configurar [el entorno de Microsoft 365 Defender de prueba](setup-
 
 :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Hay un botón &quot;Probar ahora&quot; en el panel &quot;Desproteja, confirma tu pedido&quot; (para una Office 365 E5 de prueba de un mes para 25 usuarios).":::
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 [Habilitar Microsoft 365 identidad](eval-defender-identity-overview.md)
 
 Vuelva a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)

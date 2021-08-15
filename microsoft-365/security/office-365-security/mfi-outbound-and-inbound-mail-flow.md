@@ -13,12 +13,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre el flujo de correo saliente y entrante en el panel flujo de correo en el Centro de seguridad & cumplimiento.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a3117223e466a4a7aad7edf25ecdbcf0a3de719
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fd625d4b8ff70d6fba6af17f8f42a78257f97ff4bb64393c4c32a4d1fc1ee7c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205299"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56883124"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Información sobre el flujo de correo entrante y saliente en el Centro de seguridad & cumplimiento
 
@@ -60,6 +60,6 @@ Puede hacer clic en el **vínculo Informe de conector** para ir al informe de [C
 
 Para las conexiones TLS 1.0, realmente necesita actualizar o solucionar el servidor de correo electrónico o el servidor de su partner para evitar cualquier problema cuando la compatibilidad con TLS 1.0 esté en desuso en Microsoft 365.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

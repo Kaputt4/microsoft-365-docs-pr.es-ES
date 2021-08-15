@@ -1,5 +1,5 @@
 ---
-title: 'Configurar su inquilino de Microsoft 365 para aumentar la seguridad '
+title: Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -20,14 +20,14 @@ ms.custom:
 description: En este tema se le guía a través de la configuración recomendada para la configuración de todo el espacio empresarial que afecta a la seguridad del Microsoft 365 empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1bb3f9bf6507e41d8b927137a9ab9ea8803637c
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 1e8008bafe2aae7f3076257662fb3eb0bd513310431cf7711db344379e6923b8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105529"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56885419"
 ---
-# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar su inquilino de Microsoft 365 para aumentar la seguridad 
+# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -71,7 +71,7 @@ Visite estos informes y paneles para obtener más información sobre el estado d
 
 ****
 
-|Panel|Description|
+|Panel|Descripción|
 |---|---|
 |Informes de seguridad de correo electrónico|Estos informes están disponibles en Exchange Online Protection. Para obtener más información, vea [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).|
 |Defender para Office 365 informes|Los informes solo están disponibles en Defender para Office 365. Para obtener más información, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).|

@@ -20,33 +20,33 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Obtén información sobre cómo solucionar problemas con la Microsoft 365 de plantilla análisis de uso.
-ms.openlocfilehash: 74ee32ae015421a2352474daefa0eaa0a53fbbc9
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b0978edd23809d61a7160cb423cf279d425dd0c13c0451798d8d54535a78c284
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901135"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Solución de problemas Microsoft 365 análisis de uso
 
 Explore la siguiente lista de mensajes de error para obtener ayuda con los problemas más comunes con Microsoft 365 análisis de uso.
   
     
-## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>No podemos procesar su solicitud. Primero debe suscribirse a estos datos desde el centro de administración Microsoft 365 de administración
+## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>No podemos procesar su solicitud. Primero debe suscribirse a estos datos desde el Centro de administración de Microsoft 365
 
  **Código de error:** 422 
   
  **Donde verá este mensaje:** In Power BI when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting API. 
   
- **Causa:** Antes de conectarte a la aplicación, tienes que suscribirte a los datos del centro Microsoft 365 administración. Si este paso no se realiza en primer lugar, no podrás conectarte a la aplicación de plantilla, incluso si proporcionas tu identificador Microsoft 365 inquilino. 
+ **Causa:** Para poder conectarte a la aplicación, debes suscribirte a los datos de la Centro de administración de Microsoft 365. Si este paso no se realiza en primer lugar, no podrás conectarte a la aplicación de plantilla, incluso si proporcionas tu identificador Microsoft 365 inquilino. 
   
  **Para corregir este error:** Para suscribirse a los datos, vaya al Centro de administración Informes de uso y busque el icono Microsoft 365 análisis de uso en \>  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank"></a> la página del panel principal. Seleccione el **botón** Introducción y, a continuación, en el panel Informes que se abre, active la opción Hacer que los datos estén **disponibles** para Microsoft 365 análisis de uso para Power BI y **Guardar**. 
   
 ## <a name="we-are-processing-your-data"></a>Estamos procesando sus datos
 
- **Donde verá este mensaje:** En el **icono Microsoft 365 análisis de** uso en el panel De uso del Centro Microsoft 365 administración.  
+ **Donde verá este mensaje:** En el **icono Microsoft 365 análisis de** uso en el panel Uso de la Centro de administración de Microsoft 365.  
   
- **Causa:** Cuando [optas por ver](enable-usage-analytics.md) datos en la aplicación de plantilla desde el centro de administración de Microsoft 365, el sistema Microsoft 365 empieza a generar datos de uso histórico para tu organización. Según el tamaño del espacio empresarial, puede que este paso tarde en completarse de 2 a 48 horas. 
+ **Causa:** Cuando [optas por ver](enable-usage-analytics.md) datos en la aplicación de plantilla desde el Centro de administración de Microsoft 365, el sistema Microsoft 365 empieza a generar datos de uso histórico para tu organización. Según el tamaño del espacio empresarial, puede que este paso tarde en completarse de 2 a 48 horas. 
   
  **Para corregir esto:** Solo tenga paciencia, pero si el mensaje no cambia a **Sus** datos está listo después de 3 días, póngase en contacto Microsoft 365 soporte técnico [para empresas](../../business-video/get-help-support.md).
   

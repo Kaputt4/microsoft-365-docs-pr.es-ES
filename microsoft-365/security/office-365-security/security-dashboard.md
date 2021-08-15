@@ -19,12 +19,12 @@ ms.custom:
 description: Use el nuevo Panel de seguridad para revisar el Office 365 protección contra amenazas y ver y actuar en alertas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1504c84f0657dd049b63908d56c4ec6cca4871de
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 95f0a804491e8f2fe4963379efd68873336966f164fda9692ca289d4bc60253b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56881949"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Panel de seguridad en el Centro de seguridad & cumplimiento
 

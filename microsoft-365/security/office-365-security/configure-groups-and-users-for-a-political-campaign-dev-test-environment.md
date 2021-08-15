@@ -19,12 +19,12 @@ description: 'Resumen: Cree suscripciones de evaluación de Office 365 y Enterpr
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e21cdfb0aabbdb10397d6d16c879756449a498e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d96d91d264911343bac32baee5eee7da08064f5546ac787730ad62a80c441cac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56816874"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
 
@@ -37,7 +37,7 @@ ms.locfileid: "51204969"
 
 Siga las instrucciones de este artículo para crear un entorno de desarrollo y prueba que incluya cuentas de usuario simplificadas y grupos para la solución de [Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md).
 
-## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: Crear el entorno de desarrollo y prueba de Office 365
+## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: Crear el entorno de desarrollo y prueba de Office 365
 
 En esta fase se obtienen suscripciones de evaluación para Office 365 E5 y Enterprise Mobility + Security (EMS) E5 para una organización ficticia que representa una campaña política.
 
@@ -45,7 +45,7 @@ Primero, siga las instrucciones en la **Fase 2** de [la configuración de base l
 
 Después, inscríbase en la suscripción de evaluación de EMS E5 y la agregará a la misma organización de la suscripción de evaluación.
 
-1. Si es necesario, inicie sesión en el centro de administración con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, consulte [Dónde iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si es necesario, inicie sesión en el Centro de administración con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Dónde iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Haga clic en el icono **Administración**.
 
@@ -65,13 +65,13 @@ Después, habilite la licencia de EMS E5 para la cuenta de administrador global.
 
 3. En el panel **Licencias de productos**, cambie la licencia del producto de **Enterprise Mobility + Security E5** a **Activada**, seleccione **Guardar** y, después, haga clic en **Cerrar** dos veces.
 
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>Fase 2: Crear y configurar los grupos de Azure Active Directory (AD)
+## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>Fase 2: Crear y configurar los grupos de Azure Active Directory (AD)
 
 En esta fase se crean y configuran los grupos de Azure AD para la campaña.
 
 En primer lugar, cree un conjunto de grupos para una campaña política típica en Azure Portal.
 
-1. En una pestaña aparte en el explorador, ve a Azure Portal en <https://portal.azure.com>. Si es necesario, inicie sesión con las credenciales de la cuenta de administrador global de la suscripción de evaluación de Office 365 E5.
+1. En una pestaña independiente en el explorador, vaya a Azure Portal en <https://portal.azure.com>. Si es necesario, inicie sesión con las credenciales de la cuenta de administrador global de la suscripción de evaluación de Office 365 E5.
 
 2. En Azure Portal, haga clic en **Azure Active Directory > Usuarios y grupos > Todos los grupos**.
 
@@ -135,7 +135,7 @@ Después, configure los grupos para que a los miembros se les asignen automátic
 
 6. Cierre la pestaña Azure Portal del explorador.
 
-## <a name="phase-3-add-your-user-accounts"></a>Fase 3: Agregar las cuentas de usuario
+## <a name="phase-3-add-your-user-accounts"></a>Fase 3: Agregar las cuentas de usuario
 
 En esta fase se agregan las cuentas de usuario de ejemplo para la campaña política.
 

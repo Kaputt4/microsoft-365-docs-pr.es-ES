@@ -19,12 +19,12 @@ ms.custom:
 description: En este artículo, aprenderá sobre Backscatter y Microsoft Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5882f611c3feec9a22760e696973cd0713649b2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1ae3cf89171f7da89ea1821c693152cdd0e3bf968f3e9ff73d517aecad2de7a5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56881979"
 ---
 # <a name="backscatter-in-eop"></a>Reenvío masivo de correo electrónico en EOP
 

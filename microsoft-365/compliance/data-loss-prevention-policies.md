@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: material de referencia de prevención de pérdida de datos
-ms.openlocfilehash: 3a6d051338784ce4a4fb3ce91a9e2e3cca6a7d49
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: abddda78d8d2eab3cf3931ec4adbc0fa74b8fd657d13f782fc5d93788ec99561
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227144"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842920"
 ---
 # <a name="data-loss-prevention-reference"></a>Referencia de prevención de pérdida de datos
 

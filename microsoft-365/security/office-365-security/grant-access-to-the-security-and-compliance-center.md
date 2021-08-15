@@ -20,12 +20,12 @@ description: Los usuarios deben tener asignados permisos en el Centro de Microso
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cd36ac0dec20851a423acd58e5ad7d38cb65d93
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 93588d7a467c1a3274a803edfc15a4eb51327cdaa320c644d5214defa79798c8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56884579"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
@@ -40,7 +40,7 @@ Los usuarios deben tener asignados permisos en el Centro de seguridad & cumplimi
 
 Para obtener más información acerca de los diferentes permisos que puede conceder a los usuarios en el Centro de seguridad & y cumplimiento, consulte Permisos en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Debe ser administrador global o miembro del grupo de roles OrganizationManagement en el Centro de seguridad & cumplimiento, para completar los pasos de este artículo.
 

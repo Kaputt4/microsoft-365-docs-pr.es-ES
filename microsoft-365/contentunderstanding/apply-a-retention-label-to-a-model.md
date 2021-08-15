@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: Obtenga información sobre cómo aplicar una etiqueta de retención a un modelo en SharePoint Syntex.
-ms.openlocfilehash: 5fa028664f0f981c9a95c31eac256f3a149a250a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: afc131654a536e37834b0a01bc6c46362debeb05ea0e4a372f9f713639032f88
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543190"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859648"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Puede aplicar fácilmente una etiqueta de retención a un modelo en SharePoint Syntex.
 

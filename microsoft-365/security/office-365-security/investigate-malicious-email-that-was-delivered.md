@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo usar las capacidades de investigac
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e49963d1ffaeb7bce20f21f82f37fd3675b9cdd3
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 00a56df1b4c924bb2d1a4edbabac18e7f94747d956f58557d71e8af8cd2c5938
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56880579"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Investigar el correo electrónico malintencionado que se entregó en Microsoft 365
 
@@ -65,13 +65,13 @@ Para realizar determinadas acciones, como ver encabezados de mensaje  o descarga
 |---|---|---|
 |Usar el Explorador de amenazas (y detecciones en tiempo real) para analizar amenazas |Administrador global <p> Administrador de seguridad <p> Lector de seguridad|No|
 |Usar el Explorador de amenazas (y detecciones en tiempo real) para ver encabezados de mensajes de correo electrónico, así como obtener una vista previa y descargar mensajes de correo electrónico en cuarentena|Administrador global <p> Administrador de seguridad <p> Lector de seguridad|No|
-|Usar el Explorador de amenazas para ver encabezados, obtener una vista previa del correo electrónico (solo en la página de entidad de correo electrónico) y descargar mensajes de correo electrónico entregados a buzones de correo|Administrador global <p> Administrador de seguridad <p> Lector de seguridad <p> Versión preliminar|Sí|
+|Usar el Explorador de amenazas para ver encabezados, obtener una vista previa del correo electrónico (solo en la página de entidad de correo electrónico) y descargar mensajes de correo electrónico entregados a buzones de correo|Administrador global <p> Administrador de seguridad <p> Lector de seguridad <p> Vista previa|Sí|
 |
 
 > [!NOTE]
 > *La* vista previa es un rol, no un grupo de funciones. El rol Vista previa debe agregarse a un grupo de roles existente en el portal de Microsoft 365 Defender ( <https://security.microsoft.com> ). Vaya a **Permisos y,** a continuación, edite un grupo de roles existente o agregue un nuevo grupo de funciones con el **rol Vista** previa asignado.
 >
-> Al rol Administrador global se le asigna el Centro de administración de Microsoft 365 ( ), y los roles Administrador de seguridad y Lector de seguridad se <https://admin.microsoft.com> asignan en Microsoft 365 Defender ( <https://security.microsoft.com> ). Para obtener más información acerca de los roles y los permisos, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+> Al rol Administrador global se le asigna el Centro de administración de Microsoft 365 ( ), y los roles Administrador de seguridad y Lector de seguridad se <https://admin.microsoft.com> asignan en Microsoft 365 Defender ( <https://security.microsoft.com> ). Para obtener más información sobre las funciones y los permisos, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 Entendemos que la vista previa y la descarga de correo electrónico son actividades confidenciales, por lo que la auditoría está habilitada para estas. Una vez que un administrador realiza estas actividades en correos electrónicos, los registros de auditoría se generan para el mismo y se pueden ver en el portal de Microsoft 365 Defender ( <https://security.microsoft.com> ). Vaya a **la pestaña Búsqueda** \> **de** auditoría y filtre el nombre del administrador en **el cuadro Usuarios.** Los resultados filtrados mostrarán la **actividad AdminMailAccess**. Seleccione una fila para ver detalles en la **sección Más información** sobre el correo electrónico descargado o con vista previa.
 

@@ -16,14 +16,14 @@ ms.collection:
 description: Los administradores pueden aprender a configurar bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38347850b66c2a83708df12aaa3233a0afe01444
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ad3cf9a4080a5ec50bdff1de623118d70f90bc1240a7eb5b6a09f0b6fe7b2a45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56881959"
 ---
-# <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques en la lista de inquilinos permitidos o bloqueados
+# <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "53544327"
    - **Nunca expire:** realice uno de los siguientes pasos:
      - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
 
-       o
+       o bien
 
      - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
    - **Nota opcional:** escriba texto descriptivo para las entradas.
@@ -63,7 +63,7 @@ ms.locfileid: "53544327"
    - **Nunca expire:** realice uno de los siguientes pasos:
      - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
 
-     o
+     o bien
 
      - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
    - **Nota opcional:** escriba texto descriptivo para las entradas.

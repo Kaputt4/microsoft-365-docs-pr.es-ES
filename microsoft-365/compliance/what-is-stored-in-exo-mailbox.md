@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: El contenido producido por aplicaciones basadas en la nube en Microsoft 365 se almacena o se asocia con el buzón de correo Exchange Online usuario. Este contenido se puede buscar con herramientas de exhibición de documentos electrónicos de Microsoft.
-ms.openlocfilehash: 975f4ac8be8c2cdeed8dea1d73699607662a1ce9
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9df7198f50809af4a97eabecfab02219f7d2d17cfe96037422e8516fd2567a1b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859688"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenido almacenado en Exchange Online buzones de correo para eDiscovery
 
@@ -33,7 +33,7 @@ En la tabla siguiente se enumeran las aplicaciones que almacenan o asocian datos
 
 ****
 
-|Microsoft 365 aplicación|Descripción|
+|Microsoft 365 aplicación|Description|
 |---|---|
 |Formularios<sup>*</sup>|Los formularios y las respuestas a un formulario se almacenan en archivos adjuntos a mensajes de correo electrónico y se almacenan en una carpeta oculta en el buzón del usuario que creó el formulario. Los formularios creados antes de abril de 2020 se almacenan como un archivo PDF. Los formularios creados después de 2020 se almacenan como un archivo JSON. Las respuestas a un formulario se almacenan en un archivo CSV. Al exportar contenido de formularios en un archivo PST, estos datos se encuentran en la carpeta **ApplicationDataRoot** en una subcarpeta denominada con el siguiente identificador único global (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
 |Grupos de Microsoft 365|Los mensajes de correo electrónico, los elementos de calendario, los contactos (personas), las notas y las tareas se almacenan en el buzón asociado a un grupo Microsoft 365 correo.|

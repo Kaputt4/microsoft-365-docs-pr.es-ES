@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: Obtenga información sobre lo que buscan las funciones de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: 787abc1e7fb4c95392a76f7514ceffd3f7f4dda0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7dad18402b25b97097eb35729d4009d9add5533f18f3aec25e63a31015e51b32
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288100"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859676"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Qué buscan las funciones de DLP
 
@@ -253,22 +253,22 @@ Nombres de mes aceptados:
 - Inglés
   - Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
   - Ene. Feb. Mar. Abr. May June July Aug. Oct. Nov. Dec.
-- Neerlandés
+- Dutch
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
   - jan feb maart apr mei jun jul aug sep sept oct okt nov dec
-- Francés
+- French
   - janvier, février, mars, avril, mai, juin juillet, août, septembre, octobre, novembre, décembre
   - janv. févr. mars avril mai juin juil. août sept. oct. nov. déc.
-- Alemán
+- German
   - jänuar, februar, märz, April, mai, juni juli, August, September, oktober, November, dezember
   - Jan./Jän. Feb. März Apr. Mai Juni Juli Aug. Sept. Okt. Nov. Dez.
-- Italiano
+- Italian
   - gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
   - genn. febbr. mar. apr. magg. giugno luglio ag. sett. ott. nov. dic.
 - Portugués
   - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
   - jan fev mar abr mai jun jul ago set out nov dez
-- Español
+- Spanish
   - enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
   - enero feb. marzo abr. mayo jun. jul. agosto sept./set. oct. nov. dic.
 
@@ -314,7 +314,7 @@ Ejemplos:
 
 Nombres de mes aceptados:
 
-- Neerlandés
+- Dutch
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
   - jan feb maart apr jun jun jul aug sep sept out okt nov dec
 

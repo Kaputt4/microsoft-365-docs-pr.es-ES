@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para agregar directivas de cumplimiento de dispositivos de Intune a Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: d42c9a603ca581941cb5a8f30b9ecd9d6f780759
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 697837a93b92006f51aca5d20a5ad62bf130f1bbfaf2c4d00caddfe8ea7d12e1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367100"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858908"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Directivas de cumplimiento de dispositivos para Microsoft 365 entorno de prueba empresarial
 
@@ -50,7 +50,7 @@ Si desea configurar directivas MAM en una empresa simulada, siga las instruccion
 
 En esta fase, creas una directiva de cumplimiento de dispositivos para Windows 10 dispositivos. Esta fase usa Microsoft Intune y el [centro Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431) para agregar un grupo y crear una directiva de cumplimiento.
 
-1. Vaya al Centro [Microsoft 365 administración](https://admin.microsoft.com)e inicie sesión en su Microsoft 365 de laboratorio de pruebas con su cuenta de administrador global. Seleccione el **centro Endpoint Manager** administración. Se [abre Endpoint Manager centro de administración.](https://go.microsoft.com/fwlink/?linkid=2109431)
+1. Vaya a la [Centro de administración de Microsoft 365](https://admin.microsoft.com)e inicie sesión en su Microsoft 365 de laboratorio de pruebas con su cuenta de administrador global. Seleccione el **centro Endpoint Manager** administración. Se [abre Endpoint Manager centro de administración.](https://go.microsoft.com/fwlink/?linkid=2109431)
 
     Si se muestra un mensaje similar a **You haven't enabled device management yet** message, seleccione Intune como entidad de mdma. Para obtener los pasos específicos, consulte [Set the mobile device management authority](/mem/intune/fundamentals/mdm-authority-set).
 

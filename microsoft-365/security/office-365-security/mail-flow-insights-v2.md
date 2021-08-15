@@ -13,12 +13,12 @@ description: Los administradores pueden obtener información sobre los conocimie
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 39f7b43db62fd19f7500972a3016fdd8dd0875b6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7b38bb50bd72ea3391cd908e6e058e050003a17b41777df9d8d2663a50977904
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207279"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56882509"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -74,7 +74,7 @@ El panel flujo de correo está disponible para los miembros de los siguientes gr
 - **Administrador de MailFlow** en el Centro de seguridad & cumplimiento. Si la cuenta no es también miembro de los grupos de roles administración de la organización o Exchange administrador, tenga en cuenta los siguientes problemas:
   - El usuario debe iniciar sesión en el Centro de seguridad & cumplimiento directamente en <https://protection.office.com> .
   - El usuario solo tendrá permiso de solo lectura para el panel flujo de correo.
-  - El usuario no tendrá acceso al centro Microsoft 365 administración.
+  - El usuario no tendrá acceso al Centro de administración de Microsoft 365.
 
 Para obtener más información acerca de los permisos, vea Permisos en el Centro de seguridad [& cumplimiento](permissions-in-the-security-and-compliance-center.md) y Conceder a los usuarios acceso al Centro de seguridad [& cumplimiento](grant-access-to-the-security-and-compliance-center.md).
 

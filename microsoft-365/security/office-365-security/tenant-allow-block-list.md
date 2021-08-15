@@ -16,14 +16,14 @@ ms.collection:
 description: Los administradores pueden aprender a administrar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a09229eb9c7794742248f857384d138e41313b73
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 814ba0695b8b07defbfe991da1c3ed24d0ea0a88679ef36cf43dc49ecefd7a35
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538858"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56884559"
 ---
-# <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de permitidos o bloqueados del espacio empresarial
+# <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

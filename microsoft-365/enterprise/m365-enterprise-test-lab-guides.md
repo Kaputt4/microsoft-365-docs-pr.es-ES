@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilice estas guías de laboratorio de pruebas para configurar una demostración, prueba de concepto o entornos de desarrollo/prueba en Microsoft 365 para empresas.
-ms.openlocfilehash: a006f549d0ac68562faee9c935df7f15161b2f12
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1e5a65ce0ac9320a586e3bad73a6bfbdb967ff39b8cfae3344b4bc633c922041
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858988"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guías de laboratorio para pruebas de Microsoft 365 para empresas
 

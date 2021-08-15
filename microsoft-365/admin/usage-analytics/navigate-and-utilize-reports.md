@@ -1,5 +1,5 @@
 ---
-title: Navegar y usar los informes en análisis de uso de Microsoft 365.
+title: Navegar y usar los informes en Análisis de uso de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Obtenga información sobre cómo ver los informes mediante pestañas y filtros de navegación.
-ms.openlocfilehash: e69953aaf42b7ad55853ac4ad9162a7ae6a4f916
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 242a5f27c47fc1db0d807906f725201d2574712afe75ef421abf8848a334f2f5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579055"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901248"
 ---
-# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Navegar y usar los informes en análisis de uso de Microsoft 365.
+# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Navegar y usar los informes en Análisis de uso de Microsoft 365
 
 El panel proporciona información general rápida sobre las métricas de adopción y uso principal. Al seleccionar las métricas de nivel superior, puede obtener acceso a informes que proporcionan más detalles e información. Cada pestaña de informe contiene visualizaciones de datos específicas de un aspecto de uso y adopción para su organización. Los datos recopilados se explican en el título de cada informe y aparece un icono que contiene más información sobre las visualizaciones en la pestaña informe que está viendo.
 

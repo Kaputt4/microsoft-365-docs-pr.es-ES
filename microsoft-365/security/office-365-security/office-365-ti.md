@@ -21,12 +21,12 @@ ms.custom:
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en Microsoft Defender para Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0a9ff9c06f7e97d6f74c901c156bfae6c9eb91d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 19e41fbca984ed74dc204eb665fdee481738a1a02e078cd8c0aa0f7f8bd3180e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083709"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56885464"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -51,7 +51,7 @@ Las capacidades de investigación y respuesta de amenazas se incluyen en el port
 
 - [Explorador](#explorer)
 - [Incidentes](#incidents)
-- [Aprendizaje de simulación de ataques](attack-simulation-training.md)
+- [Aprendizaje de simulación de ataque](attack-simulation-training.md)
 - [Investigación y respuesta automatizadas](automated-investigation-response-office.md)
 
 ### <a name="explorer"></a>Explorador
@@ -72,7 +72,7 @@ Para ver la lista de incidentes actuales de su organización, en el portal de Mi
 
 ![En el Centro de seguridad & cumplimiento, elija Revisión de administración de \> amenazas](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
-### <a name="attack-simulation-training"></a>Aprendizaje de simulación de ataques
+### <a name="attack-simulation-training"></a>Aprendizaje de simulación de ataque
 
 Usa el entrenamiento de simulación de ataques para configurar y ejecutar ciberataques realistas en tu organización e identificar personas vulnerables antes de que un ataque cibernético real afecte a tu empresa. Para obtener más información, vea [Simulate a phishing attack](attack-simulation-training.md).
 
@@ -115,7 +115,7 @@ Microsoft Defender para Office 365 usa control de acceso basado en roles. Los pe
 |Integrar Microsoft Defender para Office 365 Plan 2 con Microsoft Defender para endpoint <p> Integrar Microsoft Defender para Office 365 Plan 2 con un servidor SIEM|El rol **Administrador global o** administrador de seguridad asignado Azure Active Directory ( ) o el Centro de administración de Microsoft 365 (  <https://portal.azure.com> <https://admin.microsoft.com> ). <p> --- **más** --- <p> Un rol adecuado asignado en aplicaciones adicionales [(como Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor SIEM).|
 |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Más información sobre los rastreadores de amenazas: nuevos y notables](threat-trackers.md)
 - [Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 de amenazas y respuesta)](investigate-malicious-email-that-was-delivered.md)

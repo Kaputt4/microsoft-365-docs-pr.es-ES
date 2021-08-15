@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 748b3534ef1f6ca5736667fc3910bb9fa96d23ff
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 0cbc377a43d37031de024cba6000ab76f59dcfc3283391c1ae356da88d143de9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867648"
 ---
 # <a name="custom-detections-overview"></a>Introducción a las detecciones personalizadas
 

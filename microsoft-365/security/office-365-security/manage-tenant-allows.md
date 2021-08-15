@@ -16,14 +16,14 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5870ff663f0e97d699f6e4a158f8b0b05ee0bf15
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 9a9b682307c9891aab8e73496916205368734b369ecea2f6e43d73f2c2640fbf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544330"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56884529"
 ---
-# <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permite en la lista de inquilinos permitidos o bloqueados
+# <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
