@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: d6fb8dc510e004fa88bf99583cc2cc33ae8c63bb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 820300be1a8c68dab4b000b61023819ce1b75cf800e7cc16915f2aa7a696dfd2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884480"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Use cmdlets de PowerShell para configurar y administrar Antivirus de Microsoft Defender
 
@@ -55,7 +55,7 @@ PowerShell normalmente se instala en la carpeta `%SystemRoot%\system32\WindowsPo
 3. Escriba el comando de PowerShell y los parámetros.
 
 > [!NOTE]
-> Es posible que necesite abrir PowerShell en modo de administrador. Haga clic con el botón secundario en el elemento del menú Inicio, haga clic **en Ejecutar como administrador** y haga clic en Sí **en** el símbolo del sistema de permisos.
+> Es posible que necesite abrir PowerShell en modo de administrador. Haga clic con el botón secundario en el elemento de la menú Inicio, haga clic en **Ejecutar como administrador** y haga clic en **Sí** en el símbolo del sistema de permisos.
 
 Para abrir la ayuda en línea para cualquiera de los cmdlets, escriba lo siguiente:
 

@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumen: Configure la autenticación federada para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 0fb8c55f5b7291cdc6bcec636981a9d31015e723
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: e4d287f82fd267b3a56bcfad8266389e2dffa194c16f9c2fb9048cebe4773232
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870900"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identidad federada para el entorno de prueba de Microsoft 365
 
@@ -201,9 +201,9 @@ Después, use estos pasos para guardar el nuevo certificado autofirmado como arc
   
 1. Seleccione **Inicio**, escriba **mmc.exe** y, a continuación, presione **Entrar**.
     
-2. Seleccione **Agregar**  >  **o quitar archivos Acoplar complemento**.
+2. Seleccione **Agregar**  >  **o quitar complemento de archivo**.
     
-3. En **Agregar o quitar Acoplar,** haga doble  clic en Certificados en la lista de complementos disponibles, seleccione Cuenta de equipo **y,** a continuación, **seleccione Siguiente**.
+3. En **Agregar o quitar complementos,** haga  doble clic en Certificados en la lista de complementos disponibles, seleccione Cuenta de equipo **y,** a continuación, **seleccione Siguiente**.
     
 4. En **Seleccionar equipo,** seleccione **Finalizar** y, a continuación, **seleccione Aceptar**.
     
@@ -277,9 +277,9 @@ Después, siga estos pasos para instalar el certificado autofirmado en **PROXY1 
   
 1. Seleccione **Inicio**, escriba **mmc.exe** y, a continuación, presione **Entrar**.
     
-2. Seleccione **Archivo > Agregar o quitar Acoplar complemento**.
+2. Seleccione **Archivo > Agregar o quitar complemento**.
     
-3. En **Agregar o quitar Acoplar,** haga doble  clic en Certificados en la lista de complementos disponibles, seleccione Cuenta de equipo **y,** a continuación, **seleccione Siguiente**.
+3. En **Agregar o quitar complementos,** haga  doble clic en Certificados en la lista de complementos disponibles, seleccione Cuenta de equipo **y,** a continuación, **seleccione Siguiente**.
     
 4. En **Seleccionar equipo,** seleccione **Finalizar** y, a continuación, **seleccione Aceptar**.
     

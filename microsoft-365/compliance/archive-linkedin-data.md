@@ -15,22 +15,22 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores & usar un conector nativo para importar datos de una página de empresa de LinkedIn a Microsoft 365.
-ms.openlocfilehash: 40e51424d086b0eee42d1f15ea577b7e8f1648c1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 950647d1795e63763631c06a949cf05843420f34a2bc451886eacc88649ddb75
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861029"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurar un conector para archivar datos de LinkedIn
 
-Use un conector en el centro de Microsoft 365 de cumplimiento para importar y archivar datos de páginas de LinkedIn Company. Después de configurar y configurar un conector, se conecta a la cuenta de la página específica de linkedin company una vez cada 24 horas. El conector convierte los mensajes publicados en la página Empresa en un mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón de correo Microsoft 365.
+Use un conector en el Centro de cumplimiento de Microsoft 365 importar y archivar datos de páginas de linkedin company. Después de configurar y configurar un conector, se conecta a la cuenta de la página específica de linkedin company una vez cada 24 horas. El conector convierte los mensajes publicados en la página Empresa en un mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón de correo Microsoft 365.
 
 Después de almacenar los datos de página de linkedin company en un buzón de correo, puede aplicar Microsoft 365 las características de cumplimiento como retención por juicio, búsqueda de contenido, archivado de In-Place, auditoría y directivas de retención Microsoft 365 a los datos de LinkedIn. Por ejemplo, puede buscar estos elementos mediante búsqueda de contenido o asociar el buzón de almacenamiento con un custodio en un Advanced eDiscovery caso. La creación de un conector para importar y archivar datos de LinkedIn en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 
-- Al usuario que crea un conector de página de empresa de LinkedIn se le debe asignar el rol De importación de buzones de Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** del centro de Microsoft 365 cumplimiento. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- Al usuario que crea un conector de página de empresa de LinkedIn se le debe asignar el rol De importación de buzones de Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 - Debe tener las credenciales de inicio de sesión (dirección de correo electrónico o número de teléfono y contraseña) de una cuenta de usuario de LinkedIn que sea administrador de la página de la compañía de LinkedIn que desea archivar. Estas credenciales se usan para iniciar sesión en LinkedIn al configurar el conector.
 

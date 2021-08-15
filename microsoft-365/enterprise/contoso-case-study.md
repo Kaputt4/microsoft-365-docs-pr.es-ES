@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia pero representativa adoptó Microsoft 365 empresa.
-ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: deef90fc670c0baca49d79ea6c285cd6fb2ee4f9151d83b6a336e0e7b81b0ff5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927585"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830280"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 para la empresa para Contoso Corporation
 
@@ -90,7 +90,7 @@ Vea estos escenarios y configuraciones de IT adicionales:
 Obtenga [información sobre Contoso Corporation](contoso-overview.md) y las consideraciones de diseño que se trataron al implementar Microsoft 365 para la empresa.
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 

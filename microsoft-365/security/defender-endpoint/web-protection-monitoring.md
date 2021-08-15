@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 384ea6f07a1b84421e8961d43bb97fd589c0c39a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d0cb507f0d221916e73bfa7261df59d33529639f8197f70fdf88c87b708131f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884512"
 ---
 # <a name="monitor-web-browsing-security"></a>Supervisar la seguridad de exploración web
 

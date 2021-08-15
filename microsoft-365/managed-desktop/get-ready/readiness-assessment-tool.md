@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: caf9274284548a179e088131930ae832c098b521
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7138933c1ef3b849374cda16f5072f408877dd66910808c0ce771fcd2c317d0c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579403"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869860"
 ---
 # <a name="readiness-assessment-tools"></a>Herramientas de evaluación de preparación
 
@@ -51,7 +51,7 @@ La herramienta de evaluación comprueba estos elementos:
 |Región     | Comprueba que la región es compatible con Escritorio administrado de Microsoft        |
 |Líneas base de seguridad     | Comprueba que el perfil de línea base de seguridad no  está dirigido a todos los usuarios o todos los dispositivos (las directivas de línea base de seguridad no deben dirigirse a Escritorio administrado de Microsoft dispositivos).       |
 |Windows aplicaciones     | Revisa las aplicaciones que quieres asignar a Escritorio administrado de Microsoft dispositivos      |
-|Windows Hello para empresas     | Comprueba que Windows hello para empresas está habilitado        |
+|Windows Hello para empresas     | Comprueba que Windows Hello para empresas está habilitada        |
 |Windows 10 de actualización     | Comprueba que la directiva de "anillo de actualización Windows 10" de Intune no está  dirigida a todos los usuarios ni a todos los dispositivos (la directiva no debe dirigirse a Escritorio administrado de Microsoft dispositivos).     |
 
 

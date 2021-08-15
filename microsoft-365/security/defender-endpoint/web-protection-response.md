@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6439088073b9b6cfd86988a395028d64a8981a99
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 47a7471aa5f42ca548b994a5f979dd526219e89e45b6ad522896c6c856b66a20
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884314"
 ---
 # <a name="respond-to-web-threats"></a>Responder a amenazas web
 

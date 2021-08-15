@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ea9062846f540a62c67d1a459581538342dd0acf
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: f45de173b8f316c93d8a65f1c20dbd523038c8855c2c0524770eed3334edee2d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884438"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -150,7 +150,7 @@ En la tabla siguiente se muestran las respuestas y sus características correlac
 
 ## <a name="advanced-hunting-for-web-protection"></a>Búsqueda avanzada para protección web
 
-Las consultas kusto en búsqueda avanzada se pueden usar para resumir los bloques de protección web de la organización durante un máximo de 30 días. Estas consultas usan la información mencionada anteriormente para distinguir entre los distintos orígenes de bloques y resumirlas de una manera fácil de usar. Por ejemplo, en la consulta siguiente se enumeran todos los bloques WCF que se originaron en Microsoft Edge.
+Las consultas kusto en búsqueda avanzada se pueden usar para resumir los bloques de protección web de la organización durante un máximo de 30 días. Estas consultas usan la información mencionada anteriormente para distinguir entre los distintos orígenes de bloques y resumirlas de una manera fácil de usar. Por ejemplo, en la consulta siguiente se enumeran todos los bloques WCF que se originaron Microsoft Edge.
 
 ```kusto
 DeviceEvents  
@@ -179,7 +179,7 @@ Si un usuario visita una página web que supone un riesgo de malware, suplantaci
 > [!div class="mx-imgBorder"]
 > ![Página bloqueada por Microsoft Edge](../../media/web-protection-malicious-block.png)
 
-Si wcf o un indicador personalizado lo bloquean, se muestra una página de bloque en Microsoft Edge que indica al usuario que su organización bloquea este sitio.
+Si está bloqueado por WCF o un indicador personalizado, se muestra una página de bloque en Microsoft Edge que indica al usuario que su organización bloquea este sitio.
 
 > [!div class="mx-imgBorder"]
 > ![Página bloqueada por la organización](../../media/web-protection-indicator-blockpage.png)
@@ -191,7 +191,7 @@ En cualquier caso, no se muestran páginas de bloqueo en exploradores de tercero
 
 ## <a name="report-false-positives"></a>Notificar falsos positivos
 
-Para notificar un falso positivo para sitios que SmartScreen ha considerado peligrosos, usa el vínculo que aparece en la página de bloques de Microsoft Edge (como se muestra anteriormente).
+Para informar de un falso positivo para los sitios que SmartScreen ha considerado peligrosos, usa el vínculo que aparece en la página de bloque en Microsoft Edge (como se muestra anteriormente).
 
 Para WCF, puede disputar la categoría de un dominio. Vaya a la **pestaña Dominios** de los informes WCF y, a continuación, haga clic en Error **de informe**. Se abrirá un flyout. Establezca la prioridad del incidente y proporcione algunos detalles adicionales, como la categoría sugerida. Para obtener más información sobre cómo activar WCF y cómo disputar categorías, vea [Filtrado de contenido web](web-content-filtering.md).
 

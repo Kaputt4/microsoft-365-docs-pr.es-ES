@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus compras de autoservicio.
 ms.date: 03/17/2021
-ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 581a142eb18e64bfec237e6108564d68d715e21ca20b74e39337afbb7ac86491
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852204"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
-Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a personas de su equipo. Eres responsable de pagar las compras de autoservicio que realices. Puede administrar las suscripciones en el centro de administración Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
+Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a personas de su equipo. Eres responsable de pagar las compras de autoservicio que realices. Puede administrar las suscripciones en el Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
 El administrador tiene una vista de solo lectura en las suscripciones que compre. Pueden ver el producto, el nombre del comprador, las suscripciones compradas, la fecha de expiración, el precio de compra y los usuarios asignados para cada suscripción que compres.
 
@@ -145,7 +145,7 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
-2. En la pestaña **Productos**, busque la suscripción que quiere cancelar. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
+2. En la pestaña **Productos**, busque la suscripción que quiere cancelar. Seleccione los tres puntos (más acciones) y después elija **Cancelar suscripción**.
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione los comentarios que tenga.
 4. Seleccione **Guardar**.
 
@@ -160,14 +160,14 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 ### <a name="update-an-existing-payment-method"></a>Actualizar un método de pago existente
 
-1. En el Centro de administración, vaya a la página  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturación & pagos.</a>
+1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 2. En la **pestaña Métodos de** pago, elija un método de pago existente de la lista.
 3. En el panel derecho, elija **Editar**. Puede cambiar el código de seguridad, la fecha de expiración, el nombre de la tarjeta y la dirección.
 4. Realice los cambios necesarios y, a continuación, **elija Guardar**.
 
 ### <a name="add-a-new-payment-method"></a>Agregar un nuevo método de pago
 
-1. En el Centro de administración, vaya a la página  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturación & pagos.</a>
+1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 2. En la **pestaña Métodos de** pago, elija **Agregar un método de pago**.
 3. En el **panel Agregar un método de** pago, escriba la información del nuevo método de pago y, a continuación, elija **Agregar**.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal en Microsoft 365 para conservar el contenido relevante para una investigación o un caso legal.
-ms.openlocfilehash: 61bbe2e8d2713c2960105e2ec4eb4beffcd4306e
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0d7d7438002f811e11a6a303b6fc6947b7db296428dd8cb1cc6c1e418d9530ca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860948"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -42,7 +42,7 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
   
 1. Vaya a e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los [https://compliance.microsoft.com](https://compliance.microsoft.com) permisos de exhibición de documentos electrónicos adecuados.
 
-2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en Mostrar todo **y,** a continuación, haga clic en **eDiscovery > Core**.
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en **Exhibición de documentos electrónicos > Core**.
 
 3. En la **página Exhibición de documentos electrónicos** principal, haga clic en el nombre del caso en el que desea crear la retención.
 
@@ -177,7 +177,7 @@ Tenga en cuenta lo siguiente al colocar grupos Teams y Office 365 en una retenci
   
 - Cuando se busca en el buzón de un usuario, no se buscará en ningún grupo o grupo de Office 365 del que el usuario sea miembro. Del mismo modo, cuando se coloca un grupo o un grupo Office 365 en retención de exhibición de documentos electrónicos, solo el buzón de grupo y el sitio de grupo se colocan en espera. Los buzones y OneDrive para la Empresa de los miembros del grupo no se ponen en espera a menos que los agregue explícitamente a la retención de exhibición de documentos electrónicos. Por lo tanto, si tiene que poner un grupo o un grupo de Office 365 en espera por un motivo legal, considere la posibilidad de agregar los buzones y las cuentas OneDrive de los miembros del equipo o grupo en la misma retención.
 
-- Para obtener una lista de los miembros de un grupo o grupo  de Office 365, puede ver las propiedades en la página Grupos en el centro de administración Microsoft 365 grupo. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
+- Para obtener una lista de los miembros de un grupo o grupo  de Office 365, puede ver las propiedades en la página Grupos en el Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -199,7 +199,7 @@ Después de quitar SharePoint buzón, sitio o OneDrive de una retención de exhi
 
 - **Buzones:** La próxima vez que el Asistente para carpetas administradas procese el buzón y detecte que se quitó una retención de exhibición de documentos electrónicos, se coloca una retención de retraso en un buzón. En concreto, se aplica una retención de retraso a un buzón cuando el Asistente para carpetas administradas establece una de las siguientes propiedades de buzón en **True**:
 
-   - **DelayHoldApplied:** Esta propiedad se aplica al contenido relacionado con el correo electrónico (generado por personas que usan Outlook y Outlook en la web) que se almacena en el buzón de un usuario.
+   - **DelayHoldApplied:** Esta propiedad se aplica al contenido relacionado con el correo electrónico (generado por personas que usan Outlook y Outlook en la Web) que se almacena en el buzón de un usuario.
 
    - **DelayReleaseHoldApplied:** Esta propiedad se aplica al contenido basado en la nube (generado por aplicaciones que no son de Outlook, como Microsoft Teams, Microsoft Forms y Microsoft Yammer) que se almacena en el buzón de un usuario. Los datos en la nube generados por una aplicación microsoft normalmente se almacenan en una carpeta oculta en el buzón de un usuario.
 
@@ -220,7 +220,7 @@ En la tabla siguiente se enumeran los límites para los casos de exhibición de 
   | Descripción del límite | Límite |
   |:-----|:-----|
   |Número máximo de casos para una organización.  <br/> |Sin límite  <br/> |
-  |Número máximo de retenciones de exhibición de documentos electrónicos para una organización.  <br/> |10 000  <br/> |
+  |Número máximo de retenciones de exhibición de documentos electrónicos para una organización.  <br/> |10,000  <br/> |
   |Número máximo de buzones en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |1.000  <br/> |
   |Número máximo de sitios en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |100  <br/> |
   |Número máximo de casos que se muestran en la página principal de exhibición de documentos electrónicos y el número máximo de elementos que se muestran en las pestañas Retenciones, Búsquedas y Exportación dentro de un caso. <sup>1</sup> |1.000|

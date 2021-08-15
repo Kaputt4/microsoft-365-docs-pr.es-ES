@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 00c02bad3f95d2bd8def69d5dd6ad8e1c2e857df
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4bf668379edccff3e85fdeece6cfdcf7482ac8a5a9910cc5a8cf8629463db26c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647943"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884540"
 ---
 # <a name="update-alert"></a>Actualizar alerta
 
@@ -74,7 +74,7 @@ PATCH /api/alerts/{id}
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 Content-Type|Cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -87,7 +87,7 @@ Para obtener el mejor rendimiento, no debe incluir valores existentes que no hay
 
 Propiedad|Tipo|Descripción
 :---|:---|:---
-status|Cadena|Especifica el estado actual de la alerta. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
+status|String|Especifica el estado actual de la alerta. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
 assignedTo|Cadena|Propietario de la alerta
 classification|String|Especifica la especificación de la alerta. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'.
 determinación|Cadena|Especifica la determinación de la alerta. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'

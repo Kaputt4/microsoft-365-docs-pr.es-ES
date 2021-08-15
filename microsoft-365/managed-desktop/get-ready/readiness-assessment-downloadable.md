@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: eec6bdff2e494e0f55b06cb581c5775d3ffeb9e3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8ddc078e2d62881706c4e78d269268373c7e5fef9f25df3980ff411517f2b056
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581039"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869924"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Comprobador de la evaluación de preparación descargable
 

@@ -17,18 +17,18 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: Cómo los partners de distribución y Proveedor de soluciones en la nube (CSP) pueden usar Windows PowerShell para administrar Microsoft 365 inquilinos de clientes.
-ms.openlocfilehash: 352a9a01414b94a1593de6a734151b687524fe7d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e601875f5541f090f596b059db5d92b3494fabd55796945e8d543ba7c9646343
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909531"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830203"
 ---
 # <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>Cómo administrar Microsoft 365 con Windows PowerShell para asociados de permisos de acceso delegado
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Muchos son proveedores de redes o telecomunicaciones. Agrupan Microsoft 365 suscripciones en sus ofertas de servicio. Cuando venden una suscripción Microsoft 365, se les conceden automáticamente permisos Administrar en nombre de (AOBO) a las tenencias del cliente para que puedan administrar e informar sobre esas tenencias. Estas tareas son difíciles de realizar en el centro Microsoft 365 administración. Es mucho más fácil usar PowerShell para Microsoft 365 tareas administrativas como:
+Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Muchos son proveedores de redes o telecomunicaciones. Agrupan Microsoft 365 suscripciones en sus ofertas de servicio. Cuando venden una suscripción Microsoft 365, se les conceden automáticamente permisos Administrar en nombre de (AOBO) a las tenencias del cliente para que puedan administrar e informar sobre esas tenencias. Estas tareas son difíciles de realizar en el Centro de administración de Microsoft 365. Es mucho más fácil usar PowerShell para Microsoft 365 tareas administrativas como:
 - Enumerar todos los **TenantIds del cliente** y sus dominios 
 - Identificar todos los usuarios de un arrendamiento de cliente y sus licencias asignadas
 > [!NOTE]
@@ -40,6 +40,6 @@ En los siguientes artículos se muestra cómo los partners de Syndication y CSP 
     
 - [Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con permiso de acceso delegado (DAP)](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
     
-- [Conectarse al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
+- [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
 - [Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)

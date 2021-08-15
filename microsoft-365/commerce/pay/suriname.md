@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a48f2116ae7ca2f27203cb2a0bc1c966875d4347
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 42843743cc6cfe8b875e831e132728fd1d7adeafda784950c301c6a4fb1dcf78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537804"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852252"
 ---
 # <a name="payment-information-for-suriname"></a>Información de pago para Surinam
 
