@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb0a64b6f6d63e0439a03805e4e8cfc1d05116c7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 38c34198f20c55e1dc6dd2518f30764bf6d58493
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255480"
+ms.locfileid: "58349781"
 ---
 # <a name="remove-app-restriction-api"></a>Quitar la API de restricción de aplicaciones
 
@@ -93,6 +93,8 @@ Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 ## <a name="response"></a>Respuesta
 
 Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
+
+Si envías varias llamadas a la API para quitar las restricciones de la aplicación para el mismo dispositivo, devuelve "acción del equipo pendiente" o HTTP 400 con el mensaje "La acción ya está en curso".
 
 ## <a name="example"></a>Ejemplo
 

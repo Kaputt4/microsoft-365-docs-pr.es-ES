@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 integración con entornos locales
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: En este artículo, obtenga información sobre cómo integrar Microsoft 365 con los servicios de directorio existentes y los entornos locales.
-ms.openlocfilehash: 48d7066ea51647cc0e7594dd774201d736471369b6158550cb1a238b65fa0d0e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0f9f6d053affeae56fd9d26b93680e1f2d6eb139
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795139"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58353725"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 integración con entornos locales
 
@@ -80,6 +80,6 @@ Para obtener más información, [vea single sign-on](/azure/active-directory/man
 
 Azure AD Conectar versiones anteriores de herramientas de integración de identidades, como DirSync y Sincronización de Azure AD. Si desea actualizar desde la sincronización Azure Active Directory a Azure AD Conectar, consulte [las instrucciones de actualización](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started). 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b69de3add4ca159793eada07ff6c121e7e29690a751be682285ffea24ee46ff5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d04590eee8f771fe8001f44dfae490645e270e64
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829308"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349613"
 ---
 # <a name="list-indicators-api"></a>API de indicadores de lista
 
@@ -41,7 +41,9 @@ Recupera una colección de todos los [indicadores activos](ti-indicator.md).
 
 Admite [consultas de OData V4](https://www.odata.org/documentation/).
 
-La consulta de OData `$filter` se admite en: `indicatorValue` , , , y `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` `severity` propiedades.
+La consulta de OData `$filter` se admite en: `application` , , , , , , , `createdByDisplayName` , , `expirationTime` y `generateAlert` `title` `rbacGroupNames` `rbacGroupIds` `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` `severity` propiedades.
+<br>```$stop``` con un valor máximo de 10 000. 
+<br>```$skip```.
 
 Vea ejemplos en [consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)
 
@@ -69,7 +71,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

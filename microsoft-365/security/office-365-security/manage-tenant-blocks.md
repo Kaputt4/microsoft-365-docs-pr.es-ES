@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad3cf9a4080a5ec50bdff1de623118d70f90bc1240a7eb5b6a09f0b6fe7b2a45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd3ff63482340cb69a432e73d7ca8ff258f86522
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56881959"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349961"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -34,6 +34,24 @@ ms.locfileid: "56881959"
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>Uso del portal de Microsoft 365 Defender 
 
+### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>Crear entradas de remitente de bloques en la lista de inquilinos permitidos o bloqueados
+
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
+
+2. En la **página Lista de inquilinos permitidos o** **bloqueados,** compruebe que la pestaña Remitentes está seleccionada y, a continuación, haga clic ![ en Bloquear icono ](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+
+3. En el **menú desplegable Bloquear remitentes** que aparece, configure las siguientes opciones:
+   - **Direcciones de correo electrónico del** remitente o dominios: escriba un remitente (dirección de correo electrónico o dominio) por línea, hasta un máximo de 20.
+   - **Nunca expire:** realice uno de los siguientes pasos:
+     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
+
+       o
+
+     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
+   - **Nota opcional:** escriba texto descriptivo para las entradas.
+
+4. Cuando haya terminado, haga clic en **Agregar**.
+
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>Crear entradas de dirección URL de bloque en la lista de inquilinos permitidos o bloqueados
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
@@ -45,7 +63,7 @@ ms.locfileid: "56881959"
    - **Nunca expire:** realice uno de los siguientes pasos:
      - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
 
-       o bien
+       o
 
      - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
    - **Nota opcional:** escriba texto descriptivo para las entradas.
@@ -63,7 +81,7 @@ ms.locfileid: "56881959"
    - **Nunca expire:** realice uno de los siguientes pasos:
      - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
 
-     o bien
+     o
 
      - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
    - **Nota opcional:** escriba texto descriptivo para las entradas.
@@ -94,12 +112,18 @@ ms.locfileid: "56881959"
 
 ## <a name="use-powershell"></a>Usar PowerShell
 
-### <a name="add-block-file-or-url-entries-to-the-tenant-allowblock-list"></a>Agregar entradas de archivo de bloque o dirección URL a la lista de inquilinos permitidos o bloqueados
+### <a name="add-block-sender-file-or-url-entries-to-the-tenant-allowblock-list"></a>Agregar entradas de remitente, archivo o dirección URL de bloque a la lista de inquilinos permitidos o bloqueados
 
-Para agregar entradas de dirección URL o archivo de bloque en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
+Para agregar entradas de remitente, archivo o dirección URL de bloque en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
 
 ```powershell
-New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
+New-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
+```
+
+En este ejemplo se agrega una entrada de remitente de bloque para el remitente especificado que expira en una fecha específica.
+
+```powershell
+New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattackerdomain.com", "test2@anotherattackerdomain.com" -ExpirationDate 8/20/2021
 ```
 
 En este ejemplo se agrega una entrada de archivo de bloque para los archivos especificados que nunca expiran.

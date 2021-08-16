@@ -1,5 +1,5 @@
 ---
-title: Windows de tamaño de 365 Empresa
+title: Opciones de tamaño de Windows 365 Empresa
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Obtenga información sobre las opciones recomendadas de tamaño de pc en la nube para Windows usuarios de 365 Empresa.
-ms.openlocfilehash: 9119148b7b698b65de8d619e6598558b83d6b2e5624487648dae9aff21b35753
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82fe7093d27fe3d1302e43da415df9ddce2a6064
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838444"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58350069"
 ---
-# <a name="windows-365-business-sizing-options"></a>Windows de tamaño de 365 Empresa
+# <a name="windows-365-business-sizing-options"></a>Opciones de tamaño de Windows 365 Empresa
 
 Windows 365 Empresa ofrece licencias de precio fijo (a través de Microsoft 365) para diferentes tamaños de PC en la nube. Al asignar una licencia a un usuario, debe seleccionar una de varias opciones de tamaño. Cada una tiene un número diferente de CPU, RAM y almacenamiento, y está diseñada para admitir diferentes escenarios de uso. Evalúe los requisitos empresariales para determinar qué tamaños tienen sentido para los usuarios. 
 

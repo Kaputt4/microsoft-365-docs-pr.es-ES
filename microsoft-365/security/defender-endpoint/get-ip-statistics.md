@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e59f59158e36def392255e3034e0123c98ffac7a83548bf5c0284f92bea03a8a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bcabc069bd79444802ca7487de93719cb2bee00
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853924"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347209"
 ---
 # <a name="get-ip-statistics-api"></a>Obtener API de estadísticas IP
 
@@ -42,6 +42,7 @@ Recupera las estadísticas de la DIRECCIÓN IP determinada.
 
 ## <a name="limitations"></a>Limitaciones
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+2. El valor máximo de lookbackhours es 720 horas (30 días).
 
 ## <a name="permissions"></a>Permisos
 
@@ -66,11 +67,11 @@ GET /api/ips/{ip}/stats
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 
-Nombre|Tipo|Description
+Nombre|Tipo|Descripción
 :---|:---|:---
 lookBackHours|Int32|Define las horas que buscamos para obtener las estadísticas. El valor predeterminado es 30 días. **Opcional**.
 
@@ -80,7 +81,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente e ip existe: 200 Aceptar con datos estadísticos en el cuerpo. IP no existe: 404 No se encuentra.
+Si se realiza correctamente e ip existe: 200 Aceptar con datos estadísticos en el cuerpo. Ip es válida pero no existe - organizationPrevalence 0, IP no es válida - HTTP 400.
 
 ## <a name="example"></a>Ejemplo
 

@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0963d80699e171ea72c8873a36da28800bb5bf88
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1c046bf15cf3ccfbbbfb8969b0f0bc48db1ad4f5
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247439"
+ms.locfileid: "58349901"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -41,6 +41,11 @@ En este artículo se enumeran las nuevas características de la versión más re
 Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
 > [!TIP]
 > ¿Aún no tiene Microsoft Defender para Office 365? [Póngase en contacto con ventas para iniciar una versión de prueba.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
+
+## <a name="august-2021"></a>Agosto de 2021
+
+- [Revisión de administrador para los mensajes notificados:](admin-review-reported-message.md)los administradores ahora pueden enviar mensajes con plantilla de vuelta a los usuarios finales después de revisar los mensajes notificados. Las plantillas se pueden personalizar para su organización y también en función del veredicto del administrador.
+- [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md): Allows cannot be added directly to the Tenant Allow/Block List but now can be if the blocked message is submitted as part of the admin submission process. Según el bloque que se haya producido, se agregará una dirección URL, un archivo o un remitente a la lista de inquilinos permitidos o bloqueados. En la mayoría de los casos, se agregan los permitidos para dar al sistema algo de tiempo y permitirlo de forma natural si se garantiza. En algunos casos, Microsoft administra la opción para usted.
 
 ## <a name="july-2021"></a>Julio de 2021
 

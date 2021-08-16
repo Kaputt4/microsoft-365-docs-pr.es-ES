@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5975931dab77752da4ba139b3203fcf1b142150fc642379275a149d84a968120
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d9c244b048685824abfece8302c2528fa51a5802
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828624"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349997"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidentes en Microsoft 365 Defender
 
@@ -100,10 +100,6 @@ Las pestañas adicionales para un incidente son:
 
   Todos los eventos admitidos y las entidades sospechosas en las alertas del incidente.
 
-- Graph (en versión preliminar)
-
-  Una figura que muestra la conexión de alertas a los activos afectados de la organización.
-
 Esta es la relación entre un incidente y sus datos y las pestañas de un incidente en Microsoft 365 Defender portal.
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="La relación de un incidente y sus datos con las pestañas de un incidente en el portal de Microsoft 365 Defender web":::
@@ -171,6 +167,8 @@ Las tareas anuales pueden incluir llevar a cabo un ejercicio importante de incid
 
 Las tareas diarias, mensuales, trimestrales y anuales se pueden usar para actualizar o refinar procesos, directivas y configuraciones de seguridad.
 
+Consulte [Integración de Microsoft 365 Defender en las operaciones de seguridad](integrate-microsoft-365-defender-secops.md) para obtener más información.
+
 ### <a name="secops-resources-across-microsoft-products"></a>Recursos de SecOps en productos de Microsoft
 
 Para obtener más información acerca de SecOps en todos los productos de Microsoft, vea estos recursos:
@@ -179,7 +177,7 @@ Para obtener más información acerca de SecOps en todos los productos de Micros
 - [Procedimientos recomendados](/security/compass/security-operations)
 - [Vídeos y diapositivas](/security/compass/security-operations-videos-and-decks)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 **Si es nuevo en el análisis** de seguridad y la respuesta a incidentes:
 

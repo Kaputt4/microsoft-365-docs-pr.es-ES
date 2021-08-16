@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2eda900a659879fcfe07052e8b51ba3e5a03e633
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bd43fc2bfb8ef83eff988481a87dd48b1b53566b
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257711"
+ms.locfileid: "58350021"
 ---
 # <a name="restrict-app-execution-api"></a>Restringir api de ejecución de aplicaciones
 
@@ -95,6 +95,8 @@ Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 ## <a name="response"></a>Respuesta
 
 Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
+
+Si envías varias llamadas API para restringir la ejecución de aplicaciones para el mismo dispositivo, devuelve "acción de máquina pendiente" o HTTP 400 con el mensaje "La acción ya está en curso".
 
 ## <a name="example"></a>Ejemplo
 

@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo se rellena la lista de usuarios invitados en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 0927666d5bc8f4853976c2ea94c92c49cdd7dade2947afdd2b1e980a398a5bd2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5e1f09d5a791201e29e10af466c578ce0f767d5
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815976"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347029"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Usuarios invitados en Centro de administración de Microsoft 365
 
-Los invitados que agregue a su Microsoft Teams, SharePoint o Azure Active Directory también se  agregarán a la lista de usuarios invitados en el Centro de administración de Microsoft. Los invitados pueden asistir a reuniones, ver documentos y chatear en Teams a la que están invitados.
+Los invitados que agregue a su Microsoft Teams, SharePoint o Azure Active Directory también se agregarán a la **lista** de usuarios invitados de <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">la Centro de administración de Microsoft 365</a>. Los invitados pueden asistir a reuniones, ver documentos y chatear en Teams a la que están invitados.
 Una vez que un usuario aparece en la **lista De usuarios invitados,** puede quitar su acceso allí.
 
-Para ver usuarios invitados, en el Centro de administración de Microsoft 365, en la navegación izquierda, expanda **Usuarios** y, a continuación, elija **Usuarios invitados**.
+Para ver usuarios invitados, en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Centro de administración de Microsoft 365</a>, en la navegación izquierda, expanda **Usuarios** y, a continuación, elija **Usuarios invitados**.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -51,8 +51,8 @@ Debe ser un administrador global para realizar esta tarea.
 
 Para agregar invitados en el Azure Active Directory, vea [Agregar usuarios invitados](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
 
-Después de agregar un usuario, también puedes asignarlos a un grupo o darles acceso a una aplicación de la organización. Una vez que haya agregado un usuario en el portal de Azure AD, ese usuario también aparecerá en la **página Usuarios invitados** de la Centro de administración de Microsoft 365.
-Después de agregar un usuario a la **lista de usuarios invitados,** se pueden agregar a [grupos](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) en el Centro de administración de Microsoft 365.
+Después de agregar un usuario, también puedes asignarlos a un grupo o darles acceso a una aplicación de la organización. Una vez que haya agregado un usuario en el portal de Azure AD, ese usuario también aparecerá en la página Usuarios **invitados** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Centro de administración de Microsoft 365</a>.
+Después de agregar un usuario a la **lista De usuarios** invitados, se pueden agregar a [Grupos](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Centro de administración de Microsoft 365</a>.
 
 Consulta [Agregar invitados en masa](/azure/active-directory/b2b/tutorial-bulk-invite) para invitar a varios invitados a colaborar con la organización.
 
@@ -60,7 +60,7 @@ Consulta [Agregar invitados en masa](/azure/active-directory/b2b/tutorial-bulk-i
 
 Una vez que haya terminado de colaborar con un usuario invitado, puede quitarlos y ya no tendrán acceso a su organización.
 
-1. En el Centro de administración de Microsoft 365, expanda **Usuarios y,** a continuación, elija **Usuarios invitados.**
+1. En el Centro de administración de Microsoft 365, expanda **Usuarios y,** a continuación, elija <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">**Usuarios invitados.**</a>
 1. En la **página Usuarios invitados,** elija el usuario que desea quitar y, a continuación, **elija Eliminar un usuario**.
 
 Para quitar usuarios en El portal de Azure AD, vea [quitar un usuario invitado y recursos](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).

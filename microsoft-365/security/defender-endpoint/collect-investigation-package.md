@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 85a29e312240d416f7a9870bf904865e78e5e59bbc704792269167e8544a5c68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb4de76bacc794805a79597c9088491f057e3ce0
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349265"
 ---
 # <a name="collect-investigation-package-api"></a>RECOPILAR API de paquetes de investigación
 
@@ -45,6 +45,10 @@ Recopilar el paquete de investigación de un dispositivo.
 ## <a name="limitations"></a>Limitaciones
 
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+
+> [!IMPORTANT]
+>
+> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10 versión 1703 o posterior.
 
 ## <a name="permissions"></a>Permisos
 
@@ -71,8 +75,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -84,7 +88,7 @@ Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
+Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta. Si ya se está ejecutando una colección, se devuelve 400 Bad Request.
 
 ## <a name="example"></a>Ejemplo
 

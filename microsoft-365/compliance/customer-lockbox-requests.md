@@ -17,22 +17,24 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a sus datos cuando se encuentra con un problema.
-ms.openlocfilehash: 4669abefe039d0f4ba75f22d267c54696cb680aee44df560befd93006c515ae5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa1a53e2f18f186a31673fa240e1d7bd9b71b5f8
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796279"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58350057"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de seguridad del cliente en Office 365
 
+
+
 En este artículo se proporcionan instrucciones de implementación y configuración para la caja de seguridad del cliente. La Caja de seguridad del cliente admite solicitudes para acceder a datos en Exchange Online, SharePoint Online y OneDrive para la Empresa. Para recomendar la compatibilidad con otros servicios, envíe una solicitud en [Office 365 UserVoice](https://office365.uservoice.com/).
 
-Para ver las opciones para otorgar licencias a los usuarios para que se beneficien de las ofertas de cumplimiento de Microsoft 365, incluida esta, a partir del 1 de abril de 2020, vea la guía de licencias de Microsoft 365 para el cumplimiento de & [seguridad.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+Para ver las opciones para otorgar licencias a los usuarios para que se beneficien de las ofertas de cumplimiento de Microsoft 365, consulte la guía Microsoft 365 de licencias de seguridad [& cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-Caja de seguridad del cliente garantiza que Microsoft no puede acceder al contenido para realizar una operación de servicio sin la aprobación explícita. La Caja de seguridad del cliente le lleva al flujo de trabajo de aprobación de solicitudes para acceder a su contenido.
+Caja de seguridad del cliente garantiza que Microsoft no puede acceder al contenido para realizar operaciones de servicio sin su aprobación explícita. Caja de seguridad del cliente le incluye en el proceso de flujo de trabajo de aprobación que Microsoft usa para garantizar que solo las solicitudes autorizadas permitan el acceso al contenido. Para obtener más información sobre el proceso de flujo de trabajo de Microsoft, vea [Privileged access management in Microsoft 365](privileged-access-management-solution-overview.md).
 
-En ocasiones, los ingenieros de Microsoft ayudan a solucionar problemas y a corregir los problemas notificados por los clientes en el proceso de soporte. Normalmente, los problemas se solucionan con una gran variedad de herramientas de telemetría y depuración que Microsoft tiene para sus servicios. Sin embargo, en algunos casos se requiere que un ingeniero de Microsoft acceda al contenido del cliente para determinar la causa y corregir el problema. La Caja de seguridad del cliente requiere que el ingeniero solicite acceso al cliente como un último paso en el flujo de trabajo de aprobación. Esto ofrece a las organizaciones la opción de aprobar o denegar estas solicitudes y proporcionar control de acceso directo al cliente.
+En ocasiones, los ingenieros de Microsoft ayudan a solucionar problemas que surgen con el servicio. Por lo general, los ingenieros solucionan problemas con extensas herramientas de telemetría y depuración que Microsoft tiene para sus servicios. Sin embargo, algunos casos requieren que un ingeniero de Microsoft acceda al contenido para determinar la causa raíz y solucionar el problema. Caja de seguridad del cliente requiere que el ingeniero solicite acceso como paso final en el flujo de trabajo de aprobación. Esto le ofrece la opción de aprobar o denegar la solicitud para su organización y proporcionar control de acceso directo al contenido.
 
 ### <a name="customer-lockbox-overview-video"></a>Vídeo de introducción a la caja de seguridad del cliente
 
@@ -40,7 +42,7 @@ En ocasiones, los ingenieros de Microsoft ayudan a solucionar problemas y a corr
 
 ## <a name="customer-lockbox-workflow"></a>Flujo de trabajo de Caja de seguridad del cliente
 
-Los pasos siguientes describen el flujo de trabajo típico cuando un ingeniero de Microsoft inicia una solicitud de Caja de seguridad del cliente:
+Estos pasos describen el flujo de trabajo típico cuando un ingeniero de Microsoft inicia una solicitud de caja de seguridad de cliente:
 
 1. Alguien de una organización experimenta un problema con su buzón de correo de Microsoft 365.
 
@@ -94,15 +96,14 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
 
 3. Seleccione una solicitud de caja de seguridad del cliente y, a continuación, **elija Aprobar** o **Denegar**.
 
-    ![Aprobar o denegar solicitudes de caja de seguridad del cliente](../media/CustomerLockbox7.png)
+    ![Aprobar solicitudes de caja de seguridad del cliente](../media/CustomerLockbox7.png)
 
     Se muestra un mensaje de confirmación sobre la aprobación de la solicitud de caja de seguridad del cliente.
 
-    ![Aprobar o denegar solicitudes de caja de seguridad del cliente](../media/CustomerLockbox8.png)
+    ![Denegar solicitudes de caja de seguridad del cliente](../media/CustomerLockbox8.png)
 
 > [!NOTE]
 > Use el cmdlet Set-AccessToCustomerDataRequest para aprobar, rechazar o cancelar solicitudes de caja de seguridad del cliente de Microsoft 365 que controlan el acceso a los datos por parte de los ingenieros de soporte técnico de Microsoft. Para obtener más información, [vea Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
-
 
 ## <a name="auditing-customer-lockbox-requests"></a>Solicitudes de auditoría de caja de seguridad del cliente
 
@@ -177,7 +178,7 @@ Las acciones que ha realizado un ingeniero de Microsoft después de aprobar una 
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
 | Item       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 #### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>¿Microsoft 365 a qué servicios se aplica la caja de seguridad del cliente?
 
@@ -241,7 +242,7 @@ Cada solicitud de caja de seguridad del cliente contiene Microsoft 365 número d
 
 #### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Cuando se aprueba una solicitud de caja de seguridad del cliente, ¿cuánto tiempo son válidos los permisos?
 
-En este momento, el período máximo para los permisos de acceso concedidos al ingeniero de Microsoft es de 4 horas. El ingeniero de Microsoft también puede solicitar un período de tiempo menor.
+Actualmente, el período máximo permitido para los permisos de acceso concedidos al ingeniero del equipo de servicio es de 4 horas. El ingeniero también puede solicitar un período más corto.
 
 #### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>¿Cómo puedo obtener un historial de todas las solicitudes de caja de seguridad del cliente?
 
@@ -253,7 +254,7 @@ La fuente de actividad del Centro de cumplimiento contiene actividades de regist
 
 #### <a name="what-happens-when-a-customer-doesnt-respond-to-a-customer-lockbox-request"></a>¿Qué sucede cuando un cliente no responde a una solicitud de caja de seguridad del cliente?
 
-Las solicitudes de Caja de seguridad del cliente tienen una duración predeterminada de 12 horas. Si no responde a una solicitud en un plazo de 12 horas, la solicitud expira.
+Las solicitudes de caja de seguridad del cliente tienen una duración predeterminada de 12 horas. Si no responde a una solicitud en un plazo de 12 horas, la solicitud expira.
 
 #### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>¿Qué hace Microsoft cuando un cliente rechaza una solicitud de caja de seguridad del cliente?
 

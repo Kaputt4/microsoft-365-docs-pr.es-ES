@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07b3b6174b8f99123cb4184c68fa22fdddf6ca8e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 2ae3c72387b2617bc8fe88349272d27675af16a5
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255761"
+ms.locfileid: "58349217"
 ---
 # <a name="run-antivirus-scan-api"></a>Ejecutar LA API de detección antivirus
 
@@ -95,6 +95,8 @@ ScanType|String|Define el tipo de examen. **Necesario**.
 ## <a name="response"></a>Respuesta
 
 Si se realiza correctamente, este método devuelve 201, Código de respuesta creado y _Objeto MachineAction_ en el cuerpo de la respuesta.
+
+Si envías varias llamadas API para ejecutar un examen antivirus para el mismo dispositivo, devuelve "acción del equipo pendiente" o HTTP 400 con el mensaje "La acción ya está en curso".
 
 ## <a name="example"></a>Ejemplo
 

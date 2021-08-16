@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8116d5d1caaa24951ad9baf9e291bf3fd850abfbe7ae2402022f8fafcf883673
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a28112c8afe9165453153d2d23752325ae2e6d8
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347161"
 ---
 # <a name="work-with-reports"></a>Trabajar con informes
 
@@ -26,12 +26,10 @@ Escritorio administrado de Microsoft proporciona varios informes y paneles que l
 En la **pestaña Resumen,** encontrarás métricas rápidas sobre las actualizaciones de dispositivos. Si selecciona **Ver detalles de** cualquier métrica, podrá descargar información adicional para el análisis sin conexión, incluido el conjunto de datos subyacente de la métrica.
 
 Al seleccionar la **pestaña Informes,** verá descripciones de los informes detallados disponibles. Estos informes son más completos y admiten la visualización y el filtrado de los datos en el portal, así como la exportación de los datos subyacentes para el análisis o distribución sin conexión. Los siguientes informes están disponibles hoy:
-- El **estado del dispositivo** *(versión preliminar)* muestra el uso del servicio Escritorio administrado de Microsoft basado en la actividad y el uso del dispositivo. 
-- Puedes usar la **tendencia de estado** del dispositivo *(versión preliminar)* para supervisar las tendencias del estado del dispositivo en los últimos 60 días para los dispositivos Escritorio administrado de Microsoft dispositivos. Las tendencias pueden ayudarte a asociar el estado del dispositivo con otros cambios con el tiempo, por ejemplo, nuevas implementaciones. 
-- El **Windows de actualizaciones de seguridad** *(versión preliminar)* muestra cómo se Windows actualizaciones de seguridad en todos los Escritorio administrado de Microsoft dispositivos.
+- El [ **informe de estado del** dispositivo](device-status-report.md) (*en* versión preliminar ) muestra el uso del servicio Escritorio administrado de Microsoft basado en la actividad y el uso del dispositivo. 
+- Puedes usar la **tendencia de estado** del dispositivo ( en versión preliminar ) para supervisar las tendencias en el estado del dispositivo en los últimos 60 días para los dispositivos Escritorio administrado de Microsoft dispositivos. Las tendencias pueden ayudarte a asociar el estado del dispositivo con otros cambios con el tiempo, por ejemplo, nuevas implementaciones. 
+- El [ **Windows actualizaciones de**](security-updates-report.md) seguridad *(* en versión preliminar ) muestra cómo se liberan Windows actualizaciones de seguridad en todos los Escritorio administrado de Microsoft dispositivos.
 
-> [!NOTE]
-> Los informes *en (versión preliminar)* pueden cambiar con un aviso limitado a medida que hacemos mejoras en función de los comentarios que recibimos durante la vista previa pública.
 
 ## <a name="endpoint-analytics"></a>Análisis de puntos de conexión
 Escritorio administrado de Microsoft está integrado con endpoint [analytics.](/mem/analytics/overview) Estos informes le proporcionan información para medir cómo funciona su organización y la calidad de la experiencia que se ofrece a los usuarios. El análisis de extremos se encuentra en **el menú** Informes [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Para pivotar una puntuación para incluir solo los dispositivos  administrados por Escritorio administrado de Microsoft ir a cualquier informe, seleccione la lista desplegable Filtro y, a continuación, **seleccione Escritorio administrado de Microsoft dispositivos**.
@@ -39,7 +37,7 @@ Escritorio administrado de Microsoft está integrado con endpoint [analytics.](/
 Si endpoint analytics no se configuró automáticamente para su organización de Azure AD ("inquilino") durante la inscripción, puede hacerlo usted mismo. Para obtener más información, vea [Onboard in the Endpoint analytics portal](/mem/analytics/enroll-intune#bkmk_onboard). Puedes inscribir todos los dispositivos o, si quieres incluir solo dispositivos Escritorio administrado de Microsoft, selecciona los grupos de dispositivos de lugar de trabajo modernos para Test, First, Fast y Broad.  Estos informes pueden requerir permisos diferentes. Para obtener más información, vea [Permissions](/mem/analytics/overview#permissions) to ensure you have roles appropriately assigned.
 
 > [!NOTE]
-> Para respetar mejor la privacidad del usuario, debe haber más de 10 dispositivos Escritorio administrado de Microsoft inscritos en endpoint analytics para usar este filtro.
+> Para respetar mejor la privacidad del usuario, debe haber más de 10 dispositivos Escritorio administrado de Microsoft inscritos con endpoint analytics para usar este filtro.
 
 ## <a name="intune-reports"></a>Informes de Intune
 Microsoft Intune es uno de los servicios que usamos para administrar dispositivos en su nombre. En algunos casos, puede resultar útil usar informes de Intune para supervisar específicamente la administración de los Escritorio administrado de Microsoft dispositivos. O quizás quieras excluir los dispositivos que administramos de un informe que usas para administrar otros dispositivos. Los siguientes informes te permiten filtrar la funcionalidad para incluir o excluir Escritorio administrado de Microsoft dispositivos.

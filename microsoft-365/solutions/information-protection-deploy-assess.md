@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Determine las normativas de privacidad de datos, los escenarios relevantes, la preparación y los tipos de información confidencial que se encuentran en su Microsoft 365 datos.
-ms.openlocfilehash: 106bc0d15c04e44e17bf4c0528b541c5d5fd6d8e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 04dc67ee6316f4549e7d215f997cdc171b0038024f3740d544d6acb214f9be1e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883447"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de datos e identificar elementos confidenciales con Microsoft 365
 
@@ -60,7 +60,7 @@ Para referencia posterior en los artículos de esta solución general, esta tabl
 
 |Reglamento|Artículo o sección|Extracto|Categorías de control técnico aplicables|
 |---|---|---|---|
-|RGPD|Artículo 5(1)(f)|Los datos personales se procesarán de manera que se garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra pérdidas, destrucción o daños accidentales, mediante las medidas técnicas o organizativas apropiadas ("integridad y confidencialidad".|(Todos) <br> Identidad <br> Device <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detectar y responder|
+|RGPD|Artículo 5(1)(f)|Los datos personales se procesarán de manera que se garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra pérdidas, destrucción o daños accidentales, mediante las medidas técnicas o organizativas apropiadas ("integridad y confidencialidad".|(Todos) <br> Identidad <br> Dispositivo <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detectar y responder|
 ||Artículo (32)(1)(a)|Teniendo en cuenta el estado de la técnica, los costos de implementación y la naturaleza, el ámbito, el contexto y los fines del procesamiento, así como el riesgo de que la probabilidad y la gravedad de los derechos y libertades de las personas físicas varían, el responsable del tratamiento y el encargado implementarán las medidas técnicas y organizativas adecuadas para garantizar un nivel de seguridad adecuado para el riesgo. , incluyendo, entre otras cosas, según corresponda: (a) la seudónimo y el cifrado de datos personales.|Protección de la información|
 ||Artículo (13)(2)(a)|"... el responsable del tratamiento, en el momento en que se obtengan los datos personales, proporcionará al interesado la siguiente información adicional necesaria para garantizar un procesamiento justo y transparente: (a) el período durante el cual se almacenarán los datos personales o, si no es posible, los criterios usados para determinar dicho período.|Gobernanza de la información|
 ||Artículo (15)(1)(e)|El interesado tendrá derecho a obtener de la confirmación del responsable del tratamiento si se están procesando o no los datos personales que le conciernen y, en ese caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho a solicitar al responsable rectificar o eliminar datos personales o restringir el tratamiento de datos personales relativos al interesado o a oponerse a dichos datos. procesamiento|Detectar y responder|
@@ -178,9 +178,9 @@ Las organizaciones sujetas a otras normativas de privacidad de datos, como CCPA 
 
 La evaluación del RGPD consta de estas secciones:
 
-|Sección|Descripción|
+|Sección|Description|
 |:-------|:-----|
-|Gobierno|<ol><li>¿La directiva de privacidad establece explícitamente qué información de datos se está procesando? </li><li>¿Ejecuta periódicamente evaluaciones de impacto en la privacidad (CA)? </li><li> ¿Usa una herramienta para administrar la información personal (PI)? </li><li> ¿Tiene autoridad legal para llevar a cabo negocios con datos de PI en una determinada persona? ¿Realiza un seguimiento del consentimiento de los datos? </li><li> ¿Realiza un seguimiento, implementa y administra controles de auditoría? ¿Supervisa las pérdidas de datos? </li></ol>|
+|Gobernanza|<ol><li>¿La directiva de privacidad establece explícitamente qué información de datos se está procesando? </li><li>¿Ejecuta periódicamente evaluaciones de impacto en la privacidad (CA)? </li><li> ¿Usa una herramienta para administrar la información personal (PI)? </li><li> ¿Tiene autoridad legal para llevar a cabo negocios con datos de PI en una determinada persona? ¿Realiza un seguimiento del consentimiento de los datos? </li><li> ¿Realiza un seguimiento, implementa y administra controles de auditoría? ¿Supervisa las pérdidas de datos? </li></ol>|
 |Eliminación y notificación|<ol><li>¿Da instrucciones explícitas sobre cómo se puede acceder a los datos de los usuarios? </li><li> ¿Tiene procesos documentados para controlar el consentimiento de no participar? </li><li> ¿Tiene un proceso de eliminación automatizada para los datos? </li><li> ¿Tiene un proceso para validar la identidad al interactuar con un cliente? </li></ol>|
 |Mitigación de riesgos y seguridad de la información|<ol><li>¿Usa herramientas para examinar datos no estructurados? </li><li>¿Están todos los servidores actualizados y aprovecha los firewalls para protegerlos? </li><li>¿Ejecuta copias de seguridad regulares de los servidores? </li><li>¿Supervisa activamente las pérdidas de datos? </li><li>¿Cifra los datos en reposo y en transmisión? </li></ol>|
 |Administración de directivas|<ol><li>¿Cómo administra las reglas corporativas de enlace (BCR)? </li><li>¿Realiza un seguimiento del consentimiento de los datos? </li><li> En una escala de 1 a 5, con 5 cubiertos por completo, ¿los contratos cubren las clasificaciones de datos y los requisitos de tratamiento? </li><li>¿Tiene y prueba periódicamente un plan de respuesta a incidentes? </li><li>¿Qué directiva usa para administrar el acceso? </li></ol>|

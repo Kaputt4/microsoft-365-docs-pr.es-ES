@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: 059e1653d7db9140dbc80fd69fe36e95a744b079
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 02cc7298afe202ae004a1fff84ea6961535c5b2e2972d08da6527946d7253fae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900022"
 ---
 # <a name="learn-about-privileged-access-management"></a>Obtenga más información sobre la administración del acceso con privilegios
 
@@ -35,7 +35,7 @@ Para obtener una introducción rápida al flujo de trabajo integrado de administ
 
 ## <a name="layers-of-protection"></a>Capas de protección
 
-La administración de acceso con privilegios complementa otras protecciones de características de acceso y datos dentro de la Microsoft 365 de seguridad. La inclusión de la administración de acceso con privilegios como parte de un enfoque integrado y por capas de seguridad proporciona un modelo de seguridad que maximiza la protección de la información confidencial y Microsoft 365 configuración. Como se muestra en el diagrama, la administración de acceso con privilegios se basa en la protección proporcionada con el cifrado nativo de datos de Microsoft 365 y el modelo de seguridad de control de acceso basado en roles de Microsoft 365 servicios. Cuando se usan con [Azure AD Privileged Identity Management,](/azure/active-directory/active-directory-privileged-identity-management-configure)estas dos características proporcionan control de acceso con acceso justo a tiempo en distintos ámbitos.
+Privileged Access Management complementa otras protecciones de características de acceso y datos dentro de la arquitectura de Seguridad de Microsoft 365. Incluir Privileged Access Management como parte de un enfoque integrado y por niveles de seguridad proporciona un modelo de seguridad que maximiza la protección de la información confidencial y las opciones de configuración de Microsoft 365. Como se muestra en el diagrama, Privileged Access Management se basa en la protección proporcionada con el cifrado nativo de datos de Microsoft 365 y el modelo de seguridad del control de acceso basado en roles de los servicios de Microsoft 365. Cuando se usan con [Azure AD Privileged Identity Management,](/azure/active-directory/active-directory-privileged-identity-management-configure)estas dos características proporcionan control de acceso con acceso justo a tiempo en distintos ámbitos.
 
 ![Protección por capas en Microsoft 365](../media/pam-layered-protection.png)
 
@@ -51,13 +51,13 @@ Cada uno de los siguientes flujos de proceso describe la arquitectura del acceso
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>Paso 1: Configurar una directiva de acceso con privilegios
 
-Cuando configura una directiva de acceso con privilegios con el Centro de administración de [Microsoft 365](https://admin.microsoft.com) o powerShell de administración de Exchange, define la directiva y los procesos de características de acceso con privilegios y los atributos de directiva en el substrato de Microsoft 365. Las actividades se registran en el Centro de &amp; cumplimiento de seguridad. Ahora la directiva está habilitada y preparada para administrar las solicitudes entrantes para aprobaciones.
+Al configurar una directiva de acceso con privilegios con el PowerShell de administración de [Centro de administración de Microsoft 365](https://admin.microsoft.com) o Exchange, se definen los procesos de características de acceso con privilegios y los atributos de directiva en el Microsoft 365 base de datos. Las actividades se registran en el Centro de &amp; cumplimiento de seguridad. Ahora la directiva está habilitada y preparada para administrar las solicitudes entrantes para aprobaciones.
 
 ![Paso 1: Creación de directivas](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Paso 2: Solicitud de acceso
 
-En el [Microsoft 365 de administración](https://admin.microsoft.com) o con el PowerShell de administración Exchange, los usuarios pueden solicitar acceso a tareas con privilegios o privilegios elevados. La característica de acceso con privilegios envía la solicitud al substrato de Microsoft 365 para su procesamiento con la directiva de acceso a privilegios configurada y registra la actividad en los registros del Centro de &amp; seguridad y cumplimiento.
+En el [Centro de administración de Microsoft 365](https://admin.microsoft.com) o con powershell de administración Exchange, los usuarios pueden solicitar acceso a tareas con privilegios o privilegios elevados. La característica de acceso con privilegios envía la solicitud al substrato de Microsoft 365 para su procesamiento con la directiva de acceso a privilegios configurada y registra la actividad en los registros del Centro de &amp; seguridad y cumplimiento.
 
 ![Paso 2: Solicitud de acceso](../media/pam-step2-access-request.jpg)
 

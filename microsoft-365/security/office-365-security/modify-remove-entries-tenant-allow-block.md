@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 03f2d3f61bc61862bc221f338e6115b035fd2ea349be5531ca2035558046ba06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 951468fb9b3245135356d956e488c55390e9c6f9
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56814288"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349793"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -41,11 +41,15 @@ Puede usar el portal Microsoft 365 Defender o PowerShell para modificar y quitar
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea modificar:
+   - **Remitentes)
    - **DIRECCIONES URL**
    - **Files**
    - **Spoofing**
 
 3. Seleccione la entrada que desea modificar y, a continuación, haga clic ![ en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**. Los valores que puede modificar en el control desplegable que aparece dependen de la pestaña seleccionada en el paso anterior:
+   - **Remitentes**
+     - **No expire nunca** ni la fecha de expiración.
+     - **Nota opcional**
    - **DIRECCIONES URL**
      - **No expire nunca** ni la fecha de expiración.
      - **Nota opcional**
@@ -56,11 +60,15 @@ Puede usar el portal Microsoft 365 Defender o PowerShell para modificar y quitar
      - **Acción:** puede cambiar el valor a **Permitir** o **Bloquear**.
 4. Cuando haya terminado, haga clic en **Guardar**.
 
+> [!NOTE]
+> Solo puede ampliar permite un máximo de 30 días después de la fecha de creación. Los bloques se pueden extender hasta 90 días, pero a diferencia de lo que permite, también se pueden establecer en Nunca expirar.
+
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>Quitar entradas de la lista de inquilinos permitidos o bloqueados
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea quitar:
+   - **Remitentes**
    - **DIRECCIONES URL**
    - **Files**
    - **Spoofing**
@@ -73,10 +81,10 @@ Puede usar el portal Microsoft 365 Defender o PowerShell para modificar y quitar
 
 ### <a name="modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>Modificar entradas de archivo de bloque y dirección URL en la lista de inquilinos permitidos o bloqueados
 
-Para modificar entradas de archivos de bloque y direcciones URL en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
+Para modificar entradas de remitente, archivo y dirección URL de bloques en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
 ```
 
 En este ejemplo se cambia la fecha de expiración de la entrada de dirección URL de bloque especificada.
@@ -89,10 +97,10 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 ### <a name="remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Quitar direcciones URL o entradas de archivo de la lista de inquilinos permitidos o bloqueados
 
-Para quitar entradas de archivos y direcciones URL de la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
+Para quitar entradas de remitente, archivo y dirección URL de la lista de inquilinos permitidos o bloqueados, use la siguiente sintaxis:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 En este ejemplo se quita la entrada de dirección URL de bloque especificada de la lista de inquilinos permitidos o bloqueados.

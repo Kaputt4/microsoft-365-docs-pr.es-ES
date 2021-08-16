@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre la clave de disponibilidad usada para recuperar las claves de cliente perdidas.
-ms.openlocfilehash: 573c7bb7426dea8594f3a2e73991f845153146996f8a03cab4766855482a7de1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4de9df3fd60a8afe8608615f90d51486d42b6a20
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349925"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Obtener más información sobre la clave de disponibilidad de Clave de cliente
 
@@ -65,7 +65,7 @@ Microsoft emplea una estrategia de defensa en profundidad para evitar que actore
 
 Microsoft 365 se ha creado para evitar el uso incorrecto de la clave de disponibilidad. La capa de aplicación es el único método a través del cual las claves, incluida la clave de disponibilidad, se pueden usar para cifrar y descifrar datos. Solo Microsoft 365 de servicio tiene la capacidad de interpretar y atravesar la jerarquía de claves para las actividades de cifrado y descifrado. Existe aislamiento lógico entre las ubicaciones de almacenamiento de claves de cliente, claves de disponibilidad, otras claves jerárquicas y datos de cliente. Este aislamiento mitiga el riesgo de exposición a datos en caso de que se vea comprometida una o más ubicaciones. Cada capa de la jerarquía ha integrado capacidades de detección de intrusiones 24 x 7 para proteger los datos y secretos almacenados.
 
-Los controles de acceso se implementan para evitar el acceso no autorizado a sistemas internos, incluidos los almacenes secretos de clave de disponibilidad. Los ingenieros de Microsoft no tienen acceso directo a los almacenes secretos de clave de disponibilidad. Para obtener más información sobre los controles de acceso, revise [Administrative Access Controls en Microsoft 365](/compliance/office-365-administrative-access-controls-overview).
+Los controles de acceso se implementan para evitar el acceso no autorizado a sistemas internos, incluidos los almacenes secretos de clave de disponibilidad. Los ingenieros de Microsoft no tienen acceso directo a los almacenes secretos de clave de disponibilidad. Para obtener más información sobre los controles de acceso, revise [Administrative Access Controls en Microsoft 365](/compliance/assurance/assurance-administrative-access-controls-overview).
 
 Los controles técnicos impiden que el personal de Microsoft pueda iniciar sesión en cuentas de servicio con privilegios elevados, que de lo contrario podrían usar los atacantes para suplantar servicios Microsoft. Por ejemplo, estos controles impiden el inicio de sesión interactivo.
 

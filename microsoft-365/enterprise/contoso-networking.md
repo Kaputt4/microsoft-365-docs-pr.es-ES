@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la infraestructura de red de Contoso y cómo la empresa usa su tecnología SD-WAN para obtener un rendimiento de red óptimo para Microsoft 365 servicios en la nube empresariales.
-ms.openlocfilehash: d5f3581b81d33bdc200321692b82d57a96d09298
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: a7b57a4a126b455b3a063abba9e215ec8d02f2b1b630234e647347fdd14dce6e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754019"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899548"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Redes para Contoso Corporation
 
@@ -118,7 +118,7 @@ La adopción correcta de Microsoft 365 para los servicios empresariales por part
 
 Obtenga información sobre cómo Contoso está aprovechando sus servicios de dominio de [Active Directory](contoso-identity.md) locales en la nube para los empleados y la autenticación federada para clientes y socios empresariales.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Guía básica de redes para Microsoft 365](networking-roadmap-microsoft-365.md)
 

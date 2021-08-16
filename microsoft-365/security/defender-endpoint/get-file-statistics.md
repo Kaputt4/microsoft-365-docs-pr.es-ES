@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2e4e01ebb90389f02b7e141a7412927319135e94b63536f19ec0dea8754a262
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6e08f8379189bf221ae8eb450666084932a950b3
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800371"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347137"
 ---
 # <a name="get-file-statistics-api"></a>OBTENER API de estadísticas de archivos
 
@@ -44,6 +44,7 @@ Recupera las estadísticas del archivo dado.
 ## <a name="limitations"></a>Limitaciones
 
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+2. El valor máximo para `lookbackhours` es 720 Horas(30 días).
 
 ## <a name="permissions"></a>Permisos
 
@@ -69,7 +70,7 @@ GET /api/files/{id}/stats
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 

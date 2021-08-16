@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 20c5e392f80a497d58f9f50d6e72996b87741f469bf78994a11c9db50511f987
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 73dd701eff97d7afb3fee7f4480a16296fa3d983
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857584"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347125"
 ---
 # <a name="list-investigations-api"></a>API enumerar investigaciones
 
@@ -43,7 +43,9 @@ Recupera una colección de [Investigaciones](investigation.md).
 
 Admite [consultas de OData V4](https://www.odata.org/documentation/).
 
-La consulta de OData `$filter` se admite en: `startTime` , y `state` `machineId` `triggeringAlertId` propiedades.
+La consulta de OData `$filter` se admite en: `startTime` , , y `id` `state` `machineId` `triggeringAlertId` propiedades.
+<br>```$stop``` con un valor máximo de 10 000
+<br>```$skip```
 
 Vea ejemplos en [consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)
 
@@ -78,7 +80,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

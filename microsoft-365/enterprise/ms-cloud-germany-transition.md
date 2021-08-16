@@ -3,7 +3,6 @@ title: Migración de Microsoft Cloud Deutschland a Office 365 servicios en las n
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: comprender la migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en las nuevas regiones del centro de datos alemán'
-ms.openlocfilehash: 0c5e4418a44c463ab05f920f53f4c46b8fdc7c521d84deca48bdfdbfb207befa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 327c7e5d15b006acd9a8b0df829cd2aadbdf8010
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813011"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349913"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migración de Microsoft Cloud Deutschland a Office 365 servicios en las nuevas regiones del centro de datos alemán
 
@@ -46,7 +45,7 @@ En este artículo se proporciona información general sobre el enfoque basado en
 Los siguientes servicios se migrarán como parte del enfoque liderado por Microsoft:
 
 - Azure Active Directory (Azure AD)
-- Exchange Online
+- Exchange en línea
 - Exchange Online Protection
 - SharePoint Online
 - OneDrive para la Empresa
@@ -121,7 +120,9 @@ Revise la siguiente sección De preguntas más frecuentes.
 
 ### <a name="is-migration-required"></a>¿Es la migración obligatoria?
 
-Microsoft ofrece Office 365 de inquilinos de Microsoft Cloud Deutschland a Office 365 servicios en las nuevas regiones del centro de datos alemán sin costo adicional. Aunque recomendamos encarecidamente que opte por migrar a las nuevas regiones de centros de datos alemanes, seguiremos proporcionando las actualizaciones de seguridad necesarias para la región de Microsoft Cloud Deutschland.
+Microsoft ofreció Office 365 de inquilinos de Microsoft Cloud Deutschland Office 365 servicios en las nuevas regiones del centro de datos alemán sin costo adicional. Ahora se han migrado todos los clientes elegibles de Microsoft Cloud Germany (Microsoft Cloud Deutschland). No se migrarán más clientes a través del proceso automatizado. Las suscripciones e inquilinos restantes de Microsoft Cloud Germany se desactivarán y desaprovisionarán en septiembre de 2021 como parte de las actividades de cierre del servicio.
+
+Seguiremos proporcionando las actualizaciones de seguridad necesarias para la región de Microsoft Cloud Deutschland hasta el cierre del servicio. 
 
 Office 365 servicios en las nuevas regiones del centro de datos alemán:
 
@@ -203,13 +204,9 @@ Si solo es cliente de Azure, puede empezar a migrar [los recursos](/azure/german
 
 Si tiene Azure con Office 365, Dynamics 365 o Power BI, primero debe seguir el proceso de migración de los servicios de Office 365 para garantizar que la migración de Azure AD se realice correctamente antes de poder iniciar la migración autodescrída de Azure. Debe completar la migración de Azure antes de finalizar la migración del espacio empresarial para mantener las cargas de trabajo de Azure con azure AD y Office 365 organización. Consulte Acciones e impactos de fases de migración para la migración [desde Microsoft Cloud Deutschland](ms-cloud-germany-transition-phases.md) para obtener más detalles.
 
-**Office 365**
+**Office 365, Dynamics 365 y Power BI**
 
-[Participe](./ms-cloud-germany-migration-opt-in.md) hoy en la migración liderada por Microsoft. Cuando estemos listos para iniciar la migración, le informaremos a través del Centro de mensajes de la Centro de administración de Microsoft 365.
-
-**Dynamics 365 y Power BI**
-
-Opt-in to the Microsoft-driven migration for [Dynamics 365 Customer Engagement](/dynamics365/get-started/migrate-data-german-region) and [Power BI](/power-bi/admin/service-admin-migrate-data-germany) today. Cuando esté listo para empezar la migración, le informaremos en el Centro de mensajes del Centro de administración de Microsoft 365.
+Ahora se han migrado todos los clientes elegibles de Microsoft Cloud Germany (Microsoft Cloud Deutschland). No se migrarán más clientes a través del proceso automatizado. Las suscripciones e inquilinos restantes de Microsoft Cloud Germany se desactivarán y desaprovisionarán en septiembre de 2021 como parte de las actividades de cierre del servicio.
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>¿Cambiará el precio de los Office 365 servicios que use?
 

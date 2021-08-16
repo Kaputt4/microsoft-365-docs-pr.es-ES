@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 69d892fef4dc83cfc3ef3ff04acc34b873ecc382
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 848d422828a4c0a8c8e5c7aa63c31f0727ea12f4
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254670"
+ms.locfileid: "58349937"
 ---
 # <a name="release-device-from-isolation-api"></a>Liberar dispositivo de la API de aislamiento
 
@@ -92,6 +92,8 @@ Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 ## <a name="response"></a>Respuesta
 
 Si se realiza correctamente, este método devuelve 201: código de respuesta creado y [Acción de](machineaction.md) máquina en el cuerpo de la respuesta.
+
+Si envías varias llamadas API para quitar el aislamiento del mismo dispositivo, devuelve "acción de máquina pendiente" o HTTP 400 con el mensaje "La acción ya está en curso".
 
 ## <a name="example"></a>Ejemplo
 

@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurar la autenticación multifactor.
-ms.openlocfilehash: 43ab127d6e3c38ca72d778c94f85997769981bb32bb80c9de5227ea6146f32df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 81a6ff75cfa5ea0250962f3e21da7890ed795ccb
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803151"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347185"
 ---
-# <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
+# <a name="set-up-multifactor-authentication-on-your-mobile-device"></a>Configurar la autenticación multifactor en el dispositivo móvil
 
 La autenticación multifactor proporciona más seguridad para su empresa. Después de que el administrador te haya requerido que uses MFA, puedes configurar la aplicación Microsoft Authenticator para permitirte iniciar sesión en las aplicaciones clave de forma segura con el teléfono. 
 

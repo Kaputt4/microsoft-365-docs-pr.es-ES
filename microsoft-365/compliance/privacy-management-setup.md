@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar la administración de privacidad para su organización, establecer roles y permisos y configurar opciones importantes.
-ms.openlocfilehash: 1472b20b32315480f5b7b237ca91a465de293747
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 63a6919b2aa4c368360414c683614d8bb4305fd0
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247531"
+ms.locfileid: "58350045"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Introducción a la administración de privacidad (versión preliminar)
 
@@ -38,13 +38,17 @@ Para una guía detallada sobre las licencias, vea: [Guía de licencias de Micros
 
 ## <a name="set-up-privacy-management"></a>Configurar la administración de privacidad
 
-Para empezar con la administración de privacidad, primero obtén la licencia de prueba e inicia sesión. A continuación, puede asignar permisos a los usuarios y revisar la configuración.
+Para empezar con la administración de privacidad, primero obtén la licencia de prueba. A continuación, puede iniciar sesión en la administración de privacidad, asignar permisos para los usuarios y revisar la configuración.
 
 ### <a name="get-trial-license"></a>Obtener licencia de prueba
 
 Para empezar con la vista previa pública, el administrador global puede obtener la licencia de prueba de administración de privacidad gratuita del [Centro de administración.](https://aka.ms/purchasem365privacy) Seleccione "Iniciar prueba" para comenzar. La licencia dura un mes y puede renovarla sin costo según sea necesario durante la versión preliminar pública.
 
-Después de obtener la suscripción, espere hasta 30 minutos para que se active. A continuación, vuelva a la administración de privacidad para empezar. Se le pedirá que confirme que está de acuerdo con los términos y el proceso de evaluación de datos personales ([más información](privacy-management.md#how-we-evaluate-your-data)). Puede revisar los vínculos proporcionados en su totalidad antes de continuar. Una vez que acepte, puede tardar hasta 24 horas antes de que la administración de privacidad comience a proporcionar información sobre los datos de su organización.
+Después de obtener la suscripción, espere hasta 30 minutos para que se active. A continuación, vuelva a la administración de privacidad en el centro de cumplimiento para empezar.
+
+### <a name="accept-privacy-management-terms"></a>Aceptar términos de administración de privacidad
+
+Cuando abra por primera vez la administración de privacidad, se le pedirá que confirme que está de acuerdo con los términos y el proceso de evaluación de datos personales ([más información](privacy-management.md#how-we-evaluate-your-data)). Puede revisar los vínculos proporcionados en su totalidad antes de continuar. Una vez que acepte, puede tardar hasta 24 horas antes de que la administración de privacidad comience a proporcionar información sobre los datos de su organización.
 
 Si no tienes el rol necesario para obtener la suscripción o el consentimiento a los términos de uso de la administración de privacidad, se te pedirá que te contactes con el administrador global para obtener ayuda.
 
@@ -70,6 +74,6 @@ Para obtener más información sobre los  datos a lo largo del tiempo, la págin
 
 Para obtener más información sobre estas páginas, vea [Buscar y visualizar los datos](privacy-management-data-profile.md).
 
-## <a name="get-started-with-default-policies"></a>Introducción a las directivas predeterminadas 
+## <a name="get-started-with-default-policies"></a>Introducción a las directivas predeterminadas
 
 La administración de privacidad ayudará a iniciar el proceso de evaluación de datos creando tres directivas con la configuración predeterminada, usando las plantillas para la minimización de datos, la sobreexposición de datos y las transferencias de datos. Estas directivas estarán activas de forma predeterminada, pero no desencadenarán automáticamente los mensajes de notificación ni los mensajes de corrección. Después de la configuración inicial, puede continuar con la creación y personalización de sus propias directivas. Para obtener más información, vea [Create and manage policies](privacy-management-policies.md).

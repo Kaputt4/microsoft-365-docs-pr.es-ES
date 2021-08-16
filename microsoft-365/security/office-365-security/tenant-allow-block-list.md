@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a administrar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 814ba0695b8b07defbfe991da1c3ed24d0ea0a88679ef36cf43dc49ecefd7a35
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09a710a5fb1518b819704e881534efda15236520
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56884559"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349973"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -34,8 +34,9 @@ ms.locfileid: "56884559"
 
 > [!NOTE]
 >
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones.  Si su organización no tiene las características de suplantación de identidad como se describe en este artículo, vea la experiencia de administración de suplantación de identidad anterior en [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
-
+> Algunas de las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones.
+> 
+> Si su organización no tiene las características de suplantación de identidad como se describe en este artículo, vea la experiencia de administración de suplantación de identidad anterior en [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un mensaje bueno puede marcarse como malo (un falso positivo) o un mensaje malo se puede permitir a través (un falso negativo).
 
@@ -43,9 +44,11 @@ La lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Def
 
 - Direcciones URL que se bloquearán.
 - Archivos que se va a bloquear.
+- Mensajes de correo electrónico o dominios del remitente que se bloquearán.
 - Remitentes suplantados para permitir o bloquear. Si invalida el veredicto permitir o bloquear en la información de inteligencia suplantada, el remitente  suplantado se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del inquilino. [](learn-about-spoof-intelligence.md) También puede crear entradas de permitir o bloquear manualmente para remitentes suplantados aquí antes de que los detecte la inteligencia de suplantación de identidad.
 - Direcciones URL que se permiten.
-- Archivos que se permiten. 
+- Archivos que se permiten.
+- Mensajes de correo electrónico o dominios del remitente que se permitirán.
 
 En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (PowerShell de Exchange Online para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online).
 
@@ -63,7 +66,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 - Los valores de dirección URL disponibles se describen en la sintaxis url de la sección Lista de [inquilinos permitidos o](#url-syntax-for-the-tenant-allowblock-list) bloqueados más adelante en este artículo.
 
-- La lista de inquilinos permitidos o bloqueados permite un máximo de 500 entradas para direcciones URL y 500 entradas para hashes de archivo.
+- La lista de inquilinos permitidos o bloqueados permite un máximo de 500 entradas para remitentes, 500 entradas para direcciones URL y 500 entradas para hashes de archivo.
 
 - El número máximo de caracteres para cada entrada es:
   - Hashes de archivo = 64
@@ -76,8 +79,8 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Debe tener permisos asignados en Exchange Online antes de poder realizar los procedimientos de este artículo:
-  - **Direcciones URL y archivos:**
-    - Para agregar y quitar valores de la lista de inquilinos permitidos o bloqueados, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
+  - **Remitentes, direcciones URL y archivos:**
+    - Para agregar y quitar valores de la lista de inquilinos permitidos o bloqueados, debe ser miembro de los grupos de roles Administración de la **organización,** Administrador de seguridad o Operador de seguridad o se le asigna el rol Administrador de **allowBlockList** de inquilino. 
     - Para obtener acceso de solo lectura a la lista de inquilinos permitidos o bloqueados, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
   - **Suplantación:** una de las siguientes combinaciones:
     - **Administración de organizaciones**
@@ -113,15 +116,21 @@ Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista
 
 2. Seleccione la pestaña que desee. Las columnas disponibles dependen de la pestaña seleccionada:
 
+   - **Remitentes**:
+     - **Valor:** el dominio del remitente o la dirección de correo electrónico.
+     - **Action:** el valor **Allow** o **Block**.
+     - **Actualizado por última vez**
+     - **Quitar en**
+     - **Notas**
    - **DIRECCIONES URL:**
      - **Value**: La dirección URL.
-     - **Action**: El valor **Block**.
+     - **Action:** el valor **Allow** o **Block**.
      - **Actualizado por última vez**
      - **Quitar en**
      - **Notas**
    - **Files**
      - **Valor:** hash de archivo.
-     - **Action**: El valor **Block**.
+     - **Action:** el valor **Allow** o **Block**.
      - **Actualizado por última vez**
      - **Quitar en**
      - **Notas**
@@ -135,6 +144,7 @@ Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista
 
    Puede hacer clic **en Grupo** para agrupar los resultados. Los valores disponibles dependen de la pestaña seleccionada:
 
+   - **Remitentes:** puede agrupar los resultados por **Acción**.
    - **DIRECCIONES URL:** puede agrupar los resultados por **Acción**.
    - **Archivos:** puede agrupar los resultados por **Acción**.
    - **Suplantación:** puede agrupar los resultados por **tipo Action** o **Spoof**.
@@ -143,6 +153,11 @@ Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista
 
    Haga **clic en** Filtrar para filtrar los resultados. Los valores que están disponibles en **el** control desplegable Filtro que aparece dependen de la pestaña seleccionada:
 
+   - **Remitentes**
+     - **Action**
+     - **No expirar nunca**
+     - **Fecha de última actualización**
+     - **Quitar en**
    - **DIRECCIONES URL**
      - **Action**
      - **No expirar nunca**
@@ -161,12 +176,12 @@ Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
-## <a name="view-block-file-or-url-entries-in-the-tenant-allowblock-list"></a>Ver entradas de archivo de bloque o dirección URL en la lista de inquilinos permitidos o bloqueados
+## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>Ver entradas de remitente, archivo o dirección URL en la lista de inquilinos permitidos o bloqueados
 
-Para ver entradas de direcciones URL o archivos bloqueados en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
+Para ver entradas de remitente, archivo o dirección URL de bloque en la lista de inquilinos permitidos o bloqueados, use la siguiente sintaxis:
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType <FileHash | URL> [-Entry <FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
+Get-TenantAllowBlockListItems -ListType <Sender | FileHash | URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
 ```
 
 En este ejemplo se devuelve información sobre el valor hash de archivo especificado.

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
-ms.openlocfilehash: 40ee83defc901805841530404b384671bbcbbd68761476146cff2e4d55993943
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1b1bc9ea01905e38f695707db1b302c160ea5818
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892332"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349877"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
@@ -38,14 +38,24 @@ Tenga en cuenta que los clientes de Community (GCC) moderados, GCC altos y del D
 
 ## <a name="template-availability-and-licensing"></a>Disponibilidad y licencias de plantillas
 
-Las plantillas disponibles para su uso se basan en el contrato de licencia de su organización ([ver detalles de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). Hay dos categorías de plantillas: incluidas y premium.
+Hay dos categorías de plantillas en el Administrador de cumplimiento: incluidas y premium.
 
-#### <a name="included-and-premium-templates"></a>Plantillas incluidas y premium
+1. **Las plantillas incluidas** se conceden mediante la licencia del Administrador de cumplimiento y cubren las normativas y requisitos clave. Para obtener más información sobre qué plantillas están disponibles en el contrato de licencia, consulte [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+2. **Premium plantillas para** cubrir necesidades y escenarios adicionales se pueden obtener mediante la compra de licencias de plantilla.
 
-1. **Las plantillas incluidas** se conceden mediante su licencia y cubren las normativas y requisitos clave.
-2. **Premium pueden adquirirse** plantillas para expandir la biblioteca y cubrir necesidades específicas. Una vez comprado, puede crear tantas evaluaciones de una plantilla como sea necesario. [Obtén información sobre cómo puedes comprar plantillas premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+Al empezar a crear evaluaciones, el Administrador de cumplimiento realizará un seguimiento de cuántas plantillas están activas para que pueda supervisar su uso. Para obtener más información, vea [Plantillas activas e inactivas.](compliance-manager-templates.md#active-and-inactive-templates)
 
-Ver la [lista completa de plantillas](compliance-manager-templates-list.md).
+Vea la [lista completa de plantillas disponibles](compliance-manager-templates-list.md) en el Administrador de cumplimiento.
+
+### <a name="purchase-premium-template-licenses"></a>Comprar licencias de plantilla premium
+
+Las licencias de plantilla se pueden comprar en el Centro de administración (obtenga más información sobre[suscripciones, licencias y facturación).](/microsoft-365/commerce/) Seleccione la cantidad de licencias que desea comprar y su plan de pago. También puede adquirir licencias a través de su participación en el programa [Proveedor de soluciones en la nube o](https://partner.microsoft.com/membership/cloud-solution-provider) licencias [por volumen](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+
+Una vez que se haya finalizado la compra, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas.
+
+### <a name="try-out-premium-templates"></a>Probar plantillas premium
+
+Para probar las plantillas premium antes de realizar una compra, también puede adquirir versiones de prueba de las licencias. Las licencias de prueba son válidas para un máximo de 25 plantillas durante 90 días. Una vez que obtenga la licencia de prueba, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas.
 
 #### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 

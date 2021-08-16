@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 80089d9bb12970c759e0beffb492f9c1a9a04c0c8548574da127ab2770cc96c8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 28eb524645ecbc3867a342bea1fa34a717a3dde5
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818724"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349805"
 ---
 # <a name="list-machineactions-api"></a>Enumerar API MachineActions
 
@@ -42,7 +42,9 @@ Recupera una colección de [acciones de máquina](machineaction.md).
 
 Admite [consultas de OData V4](https://www.odata.org/documentation/).
 
-La consulta de OData `$filter` se admite en: `status` , , y `machineId` `type` `requestor` `creationDateTimeUtc` propiedades.
+La consulta de OData `$filter` se admite en: `id` , , , , y `status` `machineId` `type` `requestor` `creationDateTimeUtc` propiedades.
+<br>```$stop``` con un valor máximo de 10 000
+<br>```$skip```
 
 Vea ejemplos en [consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)
 
@@ -77,7 +79,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

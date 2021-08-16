@@ -21,18 +21,18 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Obtenga información sobre todas las formas en que puede obtener ayuda con el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 48174626780dcca87e76ec4961c7d9f2c0f6017651129cca1d9fe4d499f51098
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9d36658bc94d8aae3873d7669620a17a83f1b211
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827151"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346969"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
 # <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Cómo obtener ayuda en el Centro de administración de Microsoft 365
 
-Si eres [administrador,](https://admin.microsoft.com) admin.microsoft.com es tu lugar de acceso para administrar y obtener el máximo partido de tu Microsoft 365 suscripción. En ocasiones, es posible que no encuentre la tarea correcta, que necesite más contexto antes de iniciar un flujo de tareas o que simplemente no esté seguro del ámbito y el impacto de sus acciones como administrador. Para cubrir estas situaciones, proporcionamos ayuda moderna y asistencia inteligente a lo largo Centro de administración de Microsoft 365 de estas maneras:
+Si eres administrador, es tu lugar de acceso para administrar y obtener el máximo partido de tu <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Microsoft 365 suscripción. En ocasiones, es posible que no encuentre la tarea correcta, que necesite más contexto antes de iniciar un flujo de tareas o que simplemente no esté seguro del ámbito y el impacto de sus acciones como administrador. Para cubrir estas situaciones, proporcionamos ayuda moderna y asistencia inteligente a lo <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">largo Centro de administración de Microsoft 365</a> de estas maneras:
 
 * **Ayuda integrada:** ayuda en el Centro de administración
 
@@ -42,13 +42,13 @@ Si eres [administrador,](https://admin.microsoft.com) admin.microsoft.com es tu 
 
 ## <a name="integrated-help"></a>Ayuda integrada
 
-La ayuda se integra en todo el centro de administración, por lo que está ahí cuando la necesites. En la parte superior de muchas páginas, encontrará texto de ayuda en línea que proporciona una introducción informativo de la tarea en la mano, así como vínculos a artículos que le permiten encontrar rápidamente documentación oficial para un aprendizaje más detallado.
+La ayuda se integra en todo el <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">centro de administración,</a>por lo que está ahí cuando la necesite. En la parte superior de muchas páginas, encontrará texto de ayuda en línea que proporciona una introducción informativo de la tarea en la mano, así como vínculos a artículos que le permiten encontrar rápidamente documentación oficial para un aprendizaje más detallado.
 
 ![Página Grupos que muestra ayuda en línea y vínculos a artículos](../../media/integrated-help.png)
 
 ## <a name="modern-self-help-powered-by-ai"></a>Auto-ayuda moderna con tecnología de AI
 
-Para abrir nuestra experiencia moderna de auto-ayuda con tecnología de inteligencia artificial, selecciona el botón Necesita **ayuda** en el Centro de administración de Microsoft 365. Por ejemplo, si busca "comprobar mi dominio", recibirá los pasos y algunos artículos que creemos que le ayudarán. Usamos el aprendizaje automático para crear la solución más cercana que ha ayudado a otros administradores que han escrito consultas similares.
+Para abrir nuestra experiencia moderna de auto-ayuda con  tecnología de inteligencia artificial, selecciona el botón Necesita ayuda en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centro de administración de Microsoft 365</a>. Por ejemplo, si busca "comprobar mi dominio", recibirá los pasos y algunos artículos que creemos que le ayudarán. Usamos el aprendizaje automático para crear la solución más cercana que ha ayudado a otros administradores que han escrito consultas similares.
 
 O bien, en aquellas ocasiones en las que no sabes cómo hacer algo en tu situación específica, usa el Asistente de soporte técnico. Actualmente, esta experiencia solo está disponible en inglés. Para activar el Asistente de soporte técnico, solo tiene que usar el botón de alternancia en la parte superior del **panel Necesita** ayuda. El Asistente de soporte proporciona una interfaz de conversación para ayudarle. Después de escribir la consulta, el chatbot le hace preguntas aclarantes para obtener la respuesta correcta para su situación específica. Piense en él como su ayudante virtual para descubrir soluciones y completar tareas.
 

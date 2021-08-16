@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd249fd7872d0d7d1a170ae064bf0b88e5d912cb6307df2bc25f5c60eda1a5dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3678101be4f519f621a5fa0dd6b85c3f68e6ef68
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863759"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347257"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
 
@@ -155,7 +155,7 @@ Vea este vídeo para obtener una introducción rápida al Centro de servicios de
 - Recibí una notificación de ataque dirigida de Expertos en amenazas de Microsoft. ¿Qué datos nos puede proporcionar que podamos transmitir a nuestro equipo de respuesta a incidentes?
 
   > [!NOTE]
-  > Expertos en amenazas de Microsoft es un servicio de búsqueda de ciberseguridad administrado y no un servicio de respuesta a incidentes. Sin embargo, los expertos pueden realizar una transición sin problemas de la investigación a los servicios del Equipo de detección y respuesta (DART) de Microsoft Cybersecurity Solutions Group (CSG), cuando sea necesario. También puede optar por interactuar con su propio equipo de respuesta a incidentes para solucionar problemas que requieren una respuesta a incidentes.
+  > Expertos en amenazas de Microsoft es un servicio de búsqueda de ciberseguridad administrado y no un servicio de respuesta a incidentes. Sin embargo, puede interactuar con su propio equipo de respuesta a incidentes para solucionar problemas que requieren una respuesta a incidentes. Si no tienes tu propio equipo de respuesta a incidentes y quieres la ayuda de Microsoft, puedes interactuar con el Equipo de respuesta a incidentes de ciberseguridad (CIRT) de CSS. Pueden abrir un vale para ayudar a resolver su consulta.
 
 ## <a name="scenario"></a>Escenario
 

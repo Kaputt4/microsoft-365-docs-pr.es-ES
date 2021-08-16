@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b9bc82bff9be84c74b9d908b79572b926a943bab
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f04fac6783f07918639e54b3f318b63ed32838fe
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257098"
+ms.locfileid: "58349289"
 ---
 # <a name="get-package-sas-uri-api"></a>Obtener api de URI de SAS del paquete
 
@@ -41,6 +41,11 @@ Obtener un URI que permite descargar un [paquete de investigación](collect-inve
 > [!IMPORTANT]
 >
 > - Estas acciones solo están disponibles para dispositivos Windows 10 versión 1703 o posterior.
+
+## <a name="limitations"></a>Limitaciones
+
+Las limitaciones de velocidad para esta API son 2 llamadas por minuto y 120 llamadas por hora. 
+
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Access the Microsoft Defender for Endpoint API](apis-intro.md)
@@ -74,7 +79,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 código de respuesta Ok con el objeto que contiene el vínculo al paquete en el parámetro "value". Este vínculo es válido durante un tiempo muy corto y debe usarse inmediatamente para descargar el paquete en un almacenamiento local.
+Si se realiza correctamente, este método devuelve 200 código de respuesta Ok con el objeto que contiene el vínculo al paquete en el parámetro "value". Este vínculo es válido durante un tiempo muy corto y debe usarse inmediatamente para descargar el paquete en un almacenamiento local. Si la acción del equipo para la colección existe pero no está completa, devuelve 404 No encontrado.
 
 ## <a name="example"></a>Ejemplo
 

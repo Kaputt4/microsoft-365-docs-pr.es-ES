@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f9002e9a54af37fa2b75e9a4053676bc784678bde8544ee4b93ffad7c0cdd06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 28ea0cfa3d22405d80fdf457cc60ce4627caf9de
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903776"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349601"
 ---
 # <a name="get-user-related-alerts-api"></a>Obtener la API de alertas relacionadas con el usuario
 
@@ -75,7 +75,7 @@ GET /api/users/{id}/alerts
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Autorización | String | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -83,7 +83,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el usuario existe: 200 Aceptar. Si el usuario no existe: 404 No encontrado. 
+Si se realiza correctamente y el usuario existe: 200 Aceptar. Si el usuario no existe: 200 Aceptar con un conjunto vacío. 
 
 ## <a name="example"></a>Ejemplo
 
