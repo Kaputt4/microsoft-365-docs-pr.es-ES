@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a27761cc6f907905e9aa1a4fb2c1a1dc8120f5acfb15574cae6b170d75d51ec1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3edacef44021211d82b1b7d8c477683185c87f00
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833488"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247613"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
@@ -58,7 +58,9 @@ Ejecuta una secuencia de comandos de respuesta en directo en un dispositivo
 
 4.  Los tiempos de espera del comando RunScript se agotan después de 10 minutos.
 
-5.  Cuando se produce un error en un comando de respuesta en directo, no se ejecutarán todas las acciones seguidas.
+5.  Los comandos de respuesta activa no se pueden poner en cola y solo se pueden ejecutar uno a la vez. 
+
+6.  Se pueden ejecutar varios comandos de respuesta en directo en una sola llamada a la API. Sin embargo, cuando se produce un error en un comando de respuesta en directo, no se ejecutarán todas las acciones siguientes.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
@@ -98,12 +100,12 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|String|Portador\<token>\. Obligatorio.|
+|Autorización|String|Portador\<token>\. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-|Parámetro|Tipo|Description|
+|Parámetro|Tipo|Descripción|
 |---|---|---|
 |Comentario|Cadena|Comentario para asociarlo a la acción.|
 |Comandos|Matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|
@@ -118,7 +120,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="response"></a>Respuesta
 
-- Si se realiza correctamente, este método devuelve 200, Ok.
+- Si se realiza correctamente, este método devuelve 201 Created.
 
   Entidad Action. Si no se encontró el equipo con el identificador especificado: 404 No se encontró.
 

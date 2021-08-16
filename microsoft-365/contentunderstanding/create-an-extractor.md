@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: d448458616d7641152e8179c413d4581d4da00fb
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: c2eb18d6cce471dda73cefee65dfd024b81a815988e015ccc42fd891841b37b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865364"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 

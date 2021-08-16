@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: En este artículo se proporcionan detalles sobre cómo aproximar el número de clientes que puede usar por dirección IP en su organización mediante NAT.
-ms.openlocfilehash: f48874853c3acb80927933761862b14379b6d4bd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b2adc326b0797824276c0534d14d17d41fd5533c79fef3cd940e274f00218549
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885152"
 ---
 # <a name="nat-support-with-office-365"></a>Compatibilidad de NAT con Office 365
 

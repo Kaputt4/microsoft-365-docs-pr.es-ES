@@ -1,5 +1,5 @@
 ---
-title: Activar la Microsoft 365 Defender en el centro de Microsoft 365 seguridad
+title: Activar Microsoft 365 Defender
 description: Obtenga información sobre cómo habilitar Microsoft 365 Defender y empezar a integrar la respuesta y el incidente de seguridad.
 keywords: get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 102666834562d0576920c746842582c2870b3738
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: cf3337aa169deb21209f3396742b1764b2b191a6
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007614"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247255"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activar Microsoft 365 Defender
 
@@ -35,13 +35,13 @@ ms.locfileid: "53007614"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) unifica el proceso de respuesta a incidentes integrando funciones clave en Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. Esta experiencia unificada aporta potentes características a las que puede acceder desde el Centro de seguridad de Microsoft 365.
+[Microsoft 365 Defender](microsoft-365-defender.md) unifica el proceso de respuesta a incidentes integrando funciones clave en Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. Esta experiencia unificada agrega características eficaces a las que puede tener acceso en el portal Microsoft 365 Defender web.
 
-Microsoft 365 Defender se activa automáticamente cuando los clientes elegibles con los permisos necesarios visitan Microsoft 365 centro de seguridad. Lea este artículo para comprender varios requisitos previos y cómo Microsoft 365 Defender se aprovisiona.
+Microsoft 365 Defender activa automáticamente cuando los clientes elegibles con los permisos necesarios visitan Microsoft 365 Defender portal. Lea este artículo para comprender varios requisitos previos y cómo Microsoft 365 Defender se aprovisiona.
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Comprobar la elegibilidad de la licencia y los permisos necesarios
 
-Una licencia de un Microsoft 365 de seguridad por lo general le da derecho a usar Microsoft 365 Defender en un centro de seguridad Microsoft 365 sin costo de licencia adicional. Se recomienda obtener una Microsoft 365 E5, una licencia de seguridad de E5, A5 o A5 o una combinación válida de licencias que proporciona acceso a todos los servicios compatibles.
+Una licencia de un Microsoft 365 de seguridad por lo general le da derecho a usar Microsoft 365 Defender sin costo de licencia adicional. Se recomienda obtener una Microsoft 365 E5, una licencia de seguridad de E5, A5 o A5 o una combinación válida de licencias que proporciona acceso a todos los servicios compatibles.
 
 Para obtener información detallada sobre las licencias, [lea los requisitos de licencia](prerequisites.md#licensing-requirements).
 
@@ -62,7 +62,7 @@ La incorporación a Microsoft 365 Defender es sencilla. En el menú de navegaci�
 
 Microsoft 365 Defender almacenará y procesará datos en la [misma ubicación usada por Microsoft Defender para Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si no tienes Microsoft Defender para Endpoint, se selecciona automáticamente una nueva ubicación del centro de datos en función de la ubicación de los servicios de seguridad Microsoft 365 seguridad. La ubicación del centro de datos seleccionada se muestra en la pantalla.
 
-Seleccione **¿Necesita ayuda?** en el centro Microsoft 365 seguridad para ponerse en contacto con el soporte técnico de Microsoft sobre el Microsoft 365 Defender en una ubicación diferente del centro de datos.
+Seleccione **¿Necesita ayuda?** en el portal de Microsoft 365 Defender para ponerse en contacto con el soporte técnico de Microsoft sobre el aprovisionamiento Microsoft 365 Defender en una ubicación diferente del centro de datos.
 
 > [!NOTE]
 > En el pasado, Microsoft Defender para endpoint se aprovisionaba automáticamente en centros de datos de la Unión Europea (UE) cuando se activaba a través de Azure Defender. Microsoft 365 Defender aprovisionará automáticamente en el mismo centro de datos de la UE para los clientes que han aprovisionado Defender para Endpoint de esta manera en el pasado.
@@ -77,8 +77,8 @@ Una vez que recibe el servicio, este agrega:
 - [Capacidades avanzadas de](advanced-hunting-overview.md) búsqueda
 - Análisis de amenazas
 
-![Imagen del Microsoft 365 de navegación del centro de seguridad con Microsoft 365 Defender características Microsoft 365 de seguridad con administración de incidentes y ](../../media/overview-incident.png)
- *otras funcionalidades Microsoft 365 Defender seguridad*
+![Imagen del Microsoft 365 Defender de navegación del portal con Microsoft 365 Defender características Microsoft 365 Defender portal con administración de incidentes ](../../media/overview-incident.png)
+ *y otras funcionalidades*
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Obtener datos de Microsoft Defender para identidades 
 Para habilitar la integración con Microsoft Cloud App Security, deberá iniciar sesión en el Microsoft Cloud App Security al menos una vez.
@@ -87,7 +87,7 @@ Para habilitar la integración con Microsoft Cloud App Security, deberá iniciar
 
 Para obtener respuestas a las preguntas más frecuentes sobre cómo activar Microsoft 365 Defender, [lea las preguntas más frecuentes](m365d-enable-faq.md).
 
-El personal de soporte técnico de Microsoft puede ayudar a aprovisionar o desaprovisionar el servicio y los recursos relacionados en el espacio empresarial. Para obtener ayuda, seleccione **¿Necesita ayuda?** en el centro Microsoft 365 seguridad. Al ponerse en contacto con el soporte técnico, Microsoft 365 Defender.
+El personal de soporte técnico de Microsoft puede ayudar a aprovisionar o desaprovisionar el servicio y los recursos relacionados en el espacio empresarial. Para obtener ayuda, seleccione **¿Necesita ayuda?** en Microsoft 365 Defender portal. Al ponerse en contacto con el soporte técnico, Microsoft 365 Defender.
 
 ## <a name="related-topics"></a>Temas relacionados
 

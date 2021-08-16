@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si quiere ser más estricto? ¿Y qué extras obtiene si también usa Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 72a5491bbad382cc9a22faa64b9e98a4f36893ef
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 23013a2bab538763fd69eb787d7a84904517859b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725845"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258702"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad
 
@@ -74,7 +74,7 @@ Para crear y configurar directivas contra correo no deseado, vea [Configure anti
 |**Actions**|||||
 |**Acción de detección de correo** no deseado <p> _SpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de detección de correo no deseado** de elevada confianza <p> _HighConfidenceSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
-|**Acción de detección** de phishing <p> _PhishSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
+|**Acción de detección** de phishing <p> _PhishSpamAction_|**Colocar el mensaje en cuarentena** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de detección de phishing de elevada** confianza <p> _HighConfidencePhishAction_|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de** detección masiva <p> _BulkSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Conservar el correo no deseado en cuarentena durante estos días** <p> _QuarantineRetentionPeriod_|15 días|30 días|30 días||
@@ -155,7 +155,7 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 |**Habilitar el filtro de datos adjuntos común** <p> _EnableFileFilter_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Esta configuración pone en cuarentena los mensajes que contienen datos adjuntos ejecutables según el tipo de archivo, independientemente del contenido de los datos adjuntos.|
 |**Habilitar la purga automática de hora cero para malware** <p> _ZapEnabled_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |**Notificaciones de destinatarios**|||||
-|**Notificar a los destinatarios cuando los mensajes se ponen en cuarentena como malware** <p> _Acción_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede publicarlo un administrador.|
+|**Notificar a los destinatarios cuando los mensajes se ponen en cuarentena como malware** <p> _Action_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede publicarlo un administrador.|
 |**Notificaciones de remitente**|||||
 |**Notificar a los remitentes internos cuando los mensajes se ponen en cuarentena como malware** <p> _EnableInternalSenderNotifications_|No seleccionada <p> `$false`|No seleccionada <p> `$false`|No seleccionada <p> `$false`||
 |**Notificar a remitentes externos cuando los mensajes se ponen en cuarentena como malware** <p> _EnableExternalSenderNotifications_|No seleccionada <p> `$false`|No seleccionada <p> `$false`|No seleccionada <p> `$false`||
@@ -167,10 +167,10 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 |**Nombre De** <p> _CustomFromName_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Dirección de origen** <p> _CustomFromAddress_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Personalizar notificaciones para mensajes de remitentes internos**||||Esta configuración solo se usa si se selecciona Notificar a **remitentes** internos cuando los mensajes se ponen en cuarentena como malware o notificar a un administrador sobre los mensajes no entregados de **remitentes** internos.|
-|**Asunto** <p> _CustomInternalSubject_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
+|**Subject** <p> _CustomInternalSubject_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Message** <p> _CustomInternalBody_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Personalizar notificaciones para mensajes de remitentes externos**||||Esta configuración solo se usa si se selecciona Notificar a **remitentes externos** cuando los mensajes se ponen en cuarentena como malware o notificar a un administrador sobre los mensajes no entregados de **remitentes externos.**|
-|**Asunto** <p> _CustomExternalSubject_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
+|**Subject** <p> _CustomExternalSubject_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Message** <p> _CustomExternalBody_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |
 
@@ -308,7 +308,7 @@ En PowerShell, use los cmdlets [New-SafeAttachmentPolicy](/powershell/module/exc
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Caja fuerte Respuesta de malware desconocido de datos adjuntos** <p> _Habilitar_ y _acción_|**Desactivado** <p> `-Enable $false`|**Bloquear** <p> `-Enable $true` y `-Action Block`|**Bloquear** <p> `-Enable $true` y `-Action Block`|Cuando el _parámetro Enable_ $false, el valor del _parámetro Action_ no importa.|
+|**Caja fuerte Respuesta de malware desconocido de datos adjuntos** <p> _Habilitar_ y _acción_|**Desactivado** <p> `-Enable $false` y `-Action Block`|**Bloquear** <p> `-Enable $true` y `-Action Block`|**Bloquear** <p> `-Enable $true` y `-Action Block`|Cuando el _parámetro Enable_ $false, el valor del _parámetro Action_ no importa.|
 |**Redirigir datos adjuntos con datos adjuntos** **detectados: habilitar el redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|No seleccionado y no se especifica ninguna dirección de correo electrónico. <p> `-Redirect $false` <p> _RedirectAddress_ está en blanco ( `$null` )|Seleccionada y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Seleccionada y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
 |**Aplicar la respuesta Caja fuerte de detección de datos adjuntos si el examen no se puede completar (tiempo de espera o errores)** <p> _ActionOnError_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |

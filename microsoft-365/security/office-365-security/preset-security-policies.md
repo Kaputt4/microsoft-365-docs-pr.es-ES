@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en todas las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61166c78f31a86882ef0e2dc2a79683aea794040
-ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
+ms.openlocfilehash: cfabb6a33c2d107e4f4822ed57e6e9ff1f8cc718
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53383467"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258666"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -99,7 +99,7 @@ Cuando se aplican varias directivas a un usuario, se aplica el siguiente orden d
 3. Directivas de seguridad personalizadas
 4. Directivas de seguridad predeterminadas
 
-En otras palabras,  la configuración de la  directiva de protección estricta invalida la configuración de la directiva de protección estándar, que invalida la configuración de una directiva personalizada, que invalida la configuración de la directiva predeterminada. 
+En otras palabras,  la configuración de la  directiva de protección estricta invalida la configuración de la directiva de protección estándar, que invalida la configuración de una directiva personalizada, que invalida la configuración de la directiva predeterminada.
 
 Por ejemplo, si existe una configuración de seguridad  en protección estándar y  un administrador ha habilitado la protección estándar para un usuario, la configuración de protección estándar se aplicará en lugar de lo que está configurado para esa configuración en una directiva personalizada o en la directiva predeterminada (para el mismo usuario).  Tenga en cuenta que es posible que tenga una  parte  de su organización a la que desee aplicar solo la directiva de protección estándar o estricta mientras aplica una directiva personalizada a otros usuarios de su organización para satisfacer necesidades específicas.
 
@@ -121,12 +121,12 @@ Por ejemplo, si existe una configuración de seguridad  en protección estándar
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Usar el portal Microsoft 365 Defender para asignar directivas de seguridad preestablecidas a los usuarios
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas plantilla sección Directivas de seguridad \>  \>  \>  \> **preestablecidas**.
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & Directivas de amenazas preconfiguradas en la sección \>  \>  \>  **Directivas con** plantilla.
 
 2. En **Protección estándar o** Protección **estricta,** haga clic **en Editar**.
 
 3. Se **inicia el asistente** Aplicar protección estándar o Aplicar **protección** estricta. En la **página Las protecciones de EOP** se aplican a la página, identifique los destinatarios internos a los que se aplican las protecciones [de EOP](#policies-in-preset-security-policies) (condiciones de destinatario):
-   - **Usuarios**
+   - **Users**
    - **Grupos**
    - **Dominios**
 

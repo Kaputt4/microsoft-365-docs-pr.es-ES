@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8bfc53d46bdcb91c16e9f4a1ddbc8ab3f6dfb47e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 96ad8e55dc4d7bea15da89142d42531ca46c960875b79b8579a3a5e9f0ce31d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922031"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898664"
 ---
 # <a name="deploy-apps-to-devices"></a>Implementar aplicaciones en dispositivos
 Parte de la incorporación a Escritorio administrado de Microsoft incluye agregar e implementar aplicaciones en los dispositivos del usuario. Una vez que estés usando el portal Escritorio administrado de Microsoft, puedes agregar e implementar tus aplicaciones. 

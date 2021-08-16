@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Use la directiva de grupo para implementar el paquete de configuración Windows 10 dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: 284de5169324b6da4038cfe0b50b2f2ffa40e3fd
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 50bca6c4eb9989ce0464fb257bc311ff35a684b4c6d371a4d65387294263a68d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865916"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación Windows 10 dispositivos con directiva de grupo 
 
@@ -112,4 +112,4 @@ Con la directiva de grupo no hay una opción para supervisar la implementación 
 - [Incorporar dispositivos Windows 10 mediante un script local](dlp-configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](dlp-configure-endpoints-vdi.md)
 - [Ejecutar una prueba de detección en un Microsoft Defender recién incorporado para dispositivos de punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Solucionar Protección contra amenazas avanzada de Microsoft Defender problemas de incorporación](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Solucionar problemas de incorporación de Protección contra amenazas avanzada de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

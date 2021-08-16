@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: pasos de migración de Servicios de federación de Active Directory (AD FS) para la migración desde Microsoft Cloud Deutschland.'
-ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: bc71c731dd98dd859e7e19065c4c39fc041a530804b28ed5559ab1ac4a84660a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339615"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885188"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Pasos de migración de AD FS para la migración desde Microsoft Cloud Deutschland
 

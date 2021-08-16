@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Proporciona una lista de vínculos a información útil para implementar Office de servidor en Microsoft Azure.
-ms.openlocfilehash: 47e885d3db7d9211b917414d03efdc5b716dcd1e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b63f2fff61a9fb8a7eb99bd15da13d5c909af86c3362618ab7a438e0a610316
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885392"
 ---
 # <a name="hybrid-solutions"></a>Soluciones híbridas
 

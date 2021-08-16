@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a ver y configurar la configuración global (la lista "Bloquear las siguientes direcciones URL" y la protección para aplicaciones de Office 365) para Caja fuerte Vínculos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 46bafd89400dfa551641c055f6f0e208c0ecd49f
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 9e17aad0910c1e069fe80445c76882aa239217f2
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247354"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurar la configuración global para Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -76,7 +76,7 @@ Puede configurar la configuración global de vínculos de Caja fuerte en el port
 
 La **lista Bloquear las siguientes direcciones URL** identifica los vínculos que siempre deben bloquearse mediante el examen de vínculos Caja fuerte en aplicaciones compatibles. Para obtener más información, vea ["Bloquear las siguientes direcciones URL" para obtener Caja fuerte vínculos](safe-links.md#block-the-following-urls-list-for-safe-links).
 
-1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  \>  \> **Caja fuerte vínculos**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Caja fuerte \>  \>  \> **vínculos en** la **sección** Directivas.
 
 2. En la **página Caja fuerte,** haga clic en **Configuración global**. En el **Caja fuerte de vínculos** de la organización que aparece, vaya al cuadro **Bloquear las siguientes direcciones URL.**
 
@@ -121,7 +121,7 @@ Puede usar el cmdlet **Get-AtpPolicyForO365** para ver las entradas existentes e
 
 Caja fuerte La protección de vínculos Office 365 aplicaciones se aplica a documentos en aplicaciones Office de escritorio, móviles y web compatibles. Para obtener más información, [consulta Caja fuerte configuración de vínculos para Office 365 aplicaciones](safe-links.md#safe-links-settings-for-office-365-apps).
 
-1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas sección Directivas \>  \>  \>  \> **Caja fuerte vínculos**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Caja fuerte \>  \>  \> **vínculos en** la **sección** Directivas.
 
 2. En la **página Caja fuerte,** haga clic en **Configuración global**. En la **directiva Caja fuerte vínculos** de la organización que aparece, configure las siguientes opciones en la sección Configuración que se aplican al contenido de las **aplicaciones** Office 365 compatibles:
 
@@ -157,7 +157,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 Para comprobar que ha configurado correctamente la configuración global de los vínculos de Caja fuerte (la lista Bloquear las siguientes direcciones **URL** y la configuración de protección de aplicaciones de Office 365), siga estos pasos:
 
-- En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** Directivas de colaboración & Reglas Directivas de amenazas sección Directivas Caja fuerte Vínculos haga clic en Configuración global y compruebe la configuración del menú desplegable que \>  \>  \>  \>  \> aparece. 
+- En el portal de Microsoft 365 Defender, vaya a Directivas de colaboración de correo electrónico **&** & Directivas de amenazas de reglas \>  \>  \> **Caja fuerte Vínculos**  en la sección Directivas haga clic en Configuración global y compruebe la configuración del menú desplegable que \> aparece. 
 
 - En Exchange Online PowerShell o Exchange Online Protection PowerShell, ejecute el siguiente comando y compruebe la configuración:
 

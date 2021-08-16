@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a quitar usuarios de la página
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 924db948103a4d3b45c499f433961762a45931af
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
-ms.translationtype: MT
+ms.openlocfilehash: b06cf477ab8d713e0684c0d62567199c6c57cb32
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082857"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258701"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Quitar usuarios bloqueados del portal de Usuarios restringidos en Microsoft 365
 
@@ -83,7 +83,7 @@ Los administradores pueden quitar usuarios de la página Usuarios restringidos e
 6. Haga clic en **Sí** para confirmar el cambio.
 
    > [!NOTE]
-   > Puede que el usuario pasen hasta 24 horas hasta la eliminación de todas las restricciones del usuario.
+   > Todas las restricciones pueden tardar hasta 1 hora en quitarse del usuario.
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Comprobar la configuración de alertas para usuarios restringidos
 

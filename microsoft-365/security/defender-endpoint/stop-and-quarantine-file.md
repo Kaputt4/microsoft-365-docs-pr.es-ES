@@ -1,6 +1,6 @@
 ---
 title: API de archivos de detenerse y poner en cuarentena
-description: Obtén información sobre cómo dejar de ejecutar un archivo en un dispositivo y eliminar el archivo en Microsoft Defender para endpoint. Vea un ejemplo.
+description: Obtén información sobre cómo dejar de ejecutar un archivo en un dispositivo y eliminar el archivo en Microsoft Defender para endpoint. Consulte un ejemplo.
 keywords: api, api de gráfico, api admitidas, archivo de detenerse y poner en cuarentena
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96009bfd61ad22b06a5d5f64351e4983db264395
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2d37eef37400f67421434e36aa3e7b36487afaf4
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651728"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247466"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API de archivos de detenerse y poner en cuarentena
 
@@ -44,6 +44,14 @@ Detenga la ejecución de un archivo en un dispositivo y elimínelo.
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+> [!IMPORTANT]
+> Solo puede realizar esta acción si:
+>
+> - El dispositivo en el que estás llevando a Windows 10, versión 1703 o posterior
+> - El archivo no pertenece a editores de terceros de confianza o no está firmado por Microsoft
+> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+
 
 ## <a name="permissions"></a>Permisos
 
@@ -70,8 +78,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
@@ -79,7 +87,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 Parámetro|Tipo|Descripción
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-Sha1|Cadena|Sha1 del archivo para detener y poner en cuarentena en el dispositivo. **Necesario**.
+Sha1|String|Sha1 del archivo para detener y poner en cuarentena en el dispositivo. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 

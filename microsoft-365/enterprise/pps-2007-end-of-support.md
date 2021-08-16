@@ -16,12 +16,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007, ProClarity y SharePoint Server 2007 han llegado al final de la compatibilidad. Lea este artículo para ayudar a planear la actualización de la solución de BI.
-ms.openlocfilehash: aa6adae24d78b6be72f17fd56c272b1293e6fcdc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6a0803354044f6c94a1907dc919adc2851483e38d7755da84a354075eb623c34
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885164"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de PerformancePoint Server 2007
 

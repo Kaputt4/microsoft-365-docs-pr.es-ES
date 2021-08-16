@@ -24,12 +24,12 @@ ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: eeb2a64c82d5edec57e7f53a00d8dcedcfadc2900161462b826392a1fea4c2be
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 50a2a17987c78b1a5f7aca7046a8cfd34e0ec467
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897760"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247596"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
 
@@ -47,9 +47,9 @@ El proceso de migración a Defender for Endpoint se puede dividir en tres fases,
 
 |Fase |Descripción |
 |--|--|
-|[Preparar la migración](switch-to-microsoft-defender-prepare.md) |Durante [la fase **de** preparación:](switch-to-microsoft-defender-prepare.md) <p>1. Actualice los dispositivos de su organización. <p>2. Obtener Defender para endpoint. <p>3. Planee sus roles y permisos y conceda acceso al portal de Microsoft 365 Defender web. <p>4. Configure el proxy del dispositivo y la configuración de Internet para habilitar la comunicación entre los dispositivos de la organización y Defender para endpoint. |
-|[Configurar Defender para endpoint](switch-to-microsoft-defender-setup.md) |Durante [la fase **de** instalación:](switch-to-microsoft-defender-setup.md) <p>1. Habilite o vuelva a instalar Antivirus de Microsoft Defender. <p>2. Configure Defender for Endpoint. <p>3. Agregue Defender for Endpoint a la lista de exclusión de la solución existente. <p>4. Agregue la solución existente a la lista de exclusión para Antivirus de Microsoft Defender. <p>5. Configure los grupos de dispositivos, las colecciones y las unidades organizativas. <p>6. Configure las directivas antimalware y la configuración de protección en tiempo real.|
-|[Incorporación a Defender para endpoint](switch-to-microsoft-defender-onboard.md) |Durante [la fase de **incorporación**](switch-to-microsoft-defender-onboard.md): <p>1. Incorpore los dispositivos a Defender para endpoint. <p>2. Ejecute una prueba de detección. <p>3. Confirme que Antivirus de Microsoft Defender se está ejecutando en modo pasivo. <p>4. Obtener actualizaciones para Antivirus de Microsoft Defender. <p>5. Desinstale la solución de protección de extremo existente. <p>6. Asegúrese de que Defender for Endpoint funciona correctamente. |
+|[Preparar la migración](switch-to-microsoft-defender-prepare.md) |Durante [la fase **de** preparación:](switch-to-microsoft-defender-prepare.md) <br/>1. Actualice los dispositivos de su organización. <br/>2. Obtener Defender para endpoint. <br/>3. Planee roles y permisos y conceda acceso al portal Microsoft 365 Defender web. <br/>4. Configure el proxy del dispositivo y la configuración de Internet para habilitar la comunicación entre los dispositivos de la organización y Defender para endpoint. |
+|[Configurar Defender para endpoint](switch-to-microsoft-defender-setup.md) |Durante [la fase **de** instalación:](switch-to-microsoft-defender-setup.md) <br/>1. Habilite o vuelva a instalar Antivirus de Microsoft Defender y estabilite en modo pasivo. <br/>2. Configure Defender for Endpoint. <br/>3. Agregue Defender for Endpoint a la lista de exclusión de la solución existente. <br/>4. Agregue la solución existente a la lista de exclusión para Antivirus de Microsoft Defender. <br/>5. Configure los grupos de dispositivos, las colecciones y las unidades organizativas. <br/>6. Configure las directivas antimalware y la configuración de protección en tiempo real.|
+|[Incorporación a Defender para endpoint](switch-to-microsoft-defender-onboard.md) |Durante [la fase de **incorporación**](switch-to-microsoft-defender-onboard.md): <br/>1. Incorpore los dispositivos a Defender para endpoint. <br/>2. Ejecute una prueba de detección. <br/>3. Confirme que Antivirus de Microsoft Defender se está ejecutando en modo pasivo. <br/>4. Obtener actualizaciones para Antivirus de Microsoft Defender. <br/>5. Desinstale la solución de protección de extremo existente. <br/>6. Asegúrese de que Defender for Endpoint funciona correctamente. |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>¿Qué se incluye en Microsoft Defender para endpoint?
 

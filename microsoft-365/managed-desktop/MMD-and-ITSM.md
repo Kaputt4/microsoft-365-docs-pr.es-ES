@@ -8,12 +8,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: f51c99ed39e9f647f3e069c22eb3e37441f57be5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1ecea4104787132de5c67ab578ebbe2d82b8e1762301785c9328bbcee761144f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898700"
 ---
 # <a name="microsoft-managed-desktop-and-itil"></a>Escritorio administrado de Microsoft e ITIL
 

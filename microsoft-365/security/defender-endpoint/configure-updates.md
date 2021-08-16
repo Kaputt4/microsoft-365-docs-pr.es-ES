@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a7a560cb33190105f8df5922e04aeada4d75f398
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9dd87ad952ffd1e2c63ee17a39ddeea372a49e258196105197e714c90862c94e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290044"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854116"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Crear un proceso de implementación gradual personalizado para actualizaciones de Microsoft Defender
 
@@ -42,7 +42,7 @@ Para crear su propio proceso de implementación gradual personalizado para actua
 
 En la tabla siguiente se enumeran las opciones de directiva de grupo disponibles para configurar canales de actualización:
 
-| Título de configuración  | Descripción  | Ubicación  |
+| Título de configuración  | Description  | Ubicación  |
 |:---|:---|:---|
 | Seleccionar el canal de lanzamiento de actualización mensual de la plataforma gradual de Microsoft Defender  | Habilite esta directiva para especificar cuándo los dispositivos reciben actualizaciones de la plataforma de Microsoft Defender durante el lanzamiento gradual mensual. Canal beta: los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba (manuales) y un número limitado de dispositivos.  <br><br>  Canal actual (versión preliminar): los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual mensual. Sugerido para entornos de preproducción/validación.  <br><br>  Canal actual (por fases): se ofrecerán actualizaciones a los dispositivos después del ciclo de lanzamiento gradual mensual. Se sugiere aplicar a una parte pequeña y representativa de la población de producción (~10%).  <br><br>  Canal actual (amplio): los dispositivos solo se ofrecerán actualizaciones una vez completado el ciclo de lanzamiento gradual. Se recomienda aplicar a un amplio conjunto de dispositivos de la población de producción (~10-100%).  <br><br>   Si deshabilitas o no configuras esta directiva, el dispositivo se mantendrá actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos.  | Windows Componentes\Antivirus de Microsoft Defender  |
 | Seleccionar el canal de lanzamiento de actualización mensual del motor de Microsoft Defender gradual  | Habilite esta directiva para especificar cuándo los dispositivos reciben actualizaciones del motor de Microsoft Defender durante el lanzamiento gradual mensual.  <br><br>  Canal beta: los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba (manuales) y un número limitado de dispositivos.  <br><br>  Canal actual (versión preliminar): los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual mensual. Sugerido para entornos de preproducción/validación.  <br><br>  Canal actual (por fases): se ofrecerán actualizaciones a los dispositivos después del ciclo de lanzamiento gradual mensual. Se sugiere aplicar a una parte pequeña y representativa de la población de producción (~10%).  <br><br>  Canal actual (amplio): los dispositivos solo se ofrecerán actualizaciones una vez completado el ciclo de lanzamiento gradual. Se recomienda aplicar a un amplio conjunto de dispositivos de la población de producción (~10-100%).  <br><br>  Si deshabilitas o no configuras esta directiva, el dispositivo se mantendrá actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos.  | Windows Componentes\Antivirus de Microsoft Defender  |

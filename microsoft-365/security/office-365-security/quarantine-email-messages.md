@@ -22,12 +22,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la cuarentena Exchange Online Protection (EOP) que contiene mensajes potencialmente peligrosos o no deseados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2a11f5f9e1e730a3b0cc09625ec8e8cb592d869
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: f0ca5a61a7e71a2414fcaf1c0b02aec04820ca17
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333811"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258665"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>Mensajes de correo electrónico en cuarentena en EOP
 
@@ -42,7 +42,7 @@ En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online
 
 Las directivas antimalware ponen automáticamente en cuarentena un mensaje si *se* encuentra que los datos adjuntos contienen malware. Para obtener más información, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-De forma predeterminada, las policías contra correo no deseado ponen en cuarentena los mensajes de suplantación de identidad (phishing) y entregan mensajes de correo no deseado y de correo masivo a la carpeta correo no deseado del usuario. Sin embargo, también puede crear y personalizar directivas contra correo no deseado para poner en cuarentena los mensajes de correo no deseado y de correo masivo. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
+De forma predeterminada, las policías contra correo no deseado ponen en cuarentena los mensajes de suplantación de identidad (phishing) y de elevada confianza, y entregan correo no deseado, correo no deseado de elevada confianza y mensajes de correo electrónico masivo a la carpeta correo no deseado del usuario. Sin embargo, también puede crear y personalizar directivas contra correo no deseado para poner en cuarentena el correo no deseado, el correo no deseado de alta confianza y los mensajes de correo electrónico masivo. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
 Tanto los usuarios como los administradores pueden trabajar con mensajes en cuarentena:
 

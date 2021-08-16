@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Summary: Understand what has changed for moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: cacc6d75b890585aa7b219b8bbb8f49b3f2d6714fe4502fe1b6b1030f54b9763
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885176"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Qué cambiará después de la migración a Office 365 en las nuevas regiones del centro de datos alemán
 
@@ -68,7 +68,7 @@ Consideraciones a tener en cuenta:
 
 - Después de la migración de las cargas de trabajo individuales, las funciones adicionales están disponibles a través de los servicios Office 365 (como Microsoft Planner y Microsoft Flow) debido a las nuevas suscripciones de Office 365 servicios. Si es apropiado para su organización, el inquilino o el administrador de licencias pueden deshabilitar los nuevos planes de servicio mientras planea la administración de cambios para introducir los nuevos servicios. Para obtener instrucciones sobre cómo deshabilitar los planes de servicio asignados a las licencias de los usuarios, [vea Disable access to Microsoft 365 services while assigning user licenses](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
 
-## <a name="exchange-online"></a>Exchange en línea
+## <a name="exchange-online"></a>Exchange Online
 
 - Exchange de recursos de transición del extremo de Alemania heredado al punto de `outlook.office.de` conexión Office 365 servicios después de la `outlook.office365.com` migración. Los usuarios pueden tener acceso a su buzón migrado mediante la dirección URL heredada hasta que se complete la migración. Los clientes deben realizar la transición de usuarios a la nueva dirección URL tan pronto como sea posible Exchange la migración para evitar que afecte a la retirada del entorno de Alemania. Las Office 365 de servicios de Outlook solo estarán disponibles después de que Exchange la migración.
 

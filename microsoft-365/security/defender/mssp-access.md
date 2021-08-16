@@ -1,7 +1,7 @@
 ---
 title: Proporcionar acceso al proveedor de servicios de seguridad administrado (MSSP)
-description: Obtenga información sobre los cambios de la Centro de seguridad de Microsoft Defender al centro Microsoft 365 seguridad
-keywords: Introducción al centro de seguridad de Microsoft 365, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, panel único de cristal, portal convergente, portal de seguridad, portal de seguridad, portal de seguridad de defender
+description: Obtenga información sobre los cambios de la Centro de seguridad de Microsoft Defender al portal Microsoft 365 Defender web
+keywords: Introducción al portal de Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, panel único de cristal, portal convergente, portal de seguridad, portal de seguridad, portal de seguridad de defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: ddc28149ca2ab43b7c14d3bdbaeeecdad1b18387
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 232cb81080a8d478b57b2f87a8b98752e51b0c20
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289768"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258642"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Proporcionar acceso al proveedor de servicios de seguridad administrado (MSSP) 
 
@@ -38,25 +38,25 @@ ms.locfileid: "53289768"
 
 Para implementar una solución de acceso delegado multiinquilino, siga estos pasos:
 
-1. Habilite [el control de acceso basado](/windows/security/threat-protection/microsoft-defender-atp/rbac) en roles en Defender para endpoint en Microsoft 365 de seguridad y conéctese con Azure Active Directory (Azure AD).
+1. Habilite [el control de](/windows/security/threat-protection/microsoft-defender-atp/rbac) acceso basado en roles en Defender for Endpoint en Microsoft 365 Defender portal y conéctese con Azure Active Directory (Azure AD).
 
 2. Configurar [paquetes de acceso de gobierno](/azure/active-directory/governance/identity-governance-overview) para la solicitud de acceso y el aprovisionamiento.
 
 3. Administrar solicitudes de acceso y auditorías [en Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>Habilitar controles de acceso basados en roles en Microsoft Defender para endpoint en Microsoft 365 de seguridad
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>Habilitar controles de acceso basados en roles en Microsoft Defender para endpoint en Microsoft 365 Defender portal
 
 1. **Crear grupos de acceso para recursos MSSP en Customer AAD: Groups**
 
-    Estos grupos se vincularán a los roles que cree en Defender for Endpoint en Microsoft 365 de seguridad. Para ello, en el inquilino de AD del cliente, cree tres grupos. En nuestro enfoque de ejemplo, creamos los siguientes grupos:
+    Estos grupos se vincularán a los roles que cree en Defender for Endpoint en Microsoft 365 Defender portal. Para ello, en el inquilino de AD del cliente, cree tres grupos. En nuestro enfoque de ejemplo, creamos los siguientes grupos:
 
     - Analista de nivel 1
     - Analista de nivel 2
     - Aprobadores de analistas de MSSP  
 
-2. Cree roles de Defender para endpoint para niveles de acceso adecuados en Customer Defender for Endpoint en Microsoft 365 roles y grupos del centro de seguridad.
+2. Cree roles de Defender para endpoint para niveles de acceso adecuados en Customer Defender for Endpoint en Microsoft 365 Defender roles y grupos del portal.
 
-    Para habilitar RBAC en el centro de seguridad de Microsoft 365 clientes, acceda a permisos > roles de puntos de conexión & grupos > **Roles** con una cuenta de usuario con derechos de administrador global o administrador de seguridad.
+    Para habilitar RBAC en el portal de Microsoft 365 Defender del cliente, acceda a permisos > roles de puntos de conexión & grupos > **Roles** con una cuenta de usuario con derechos de administrador global o administrador de seguridad.
 
     ![Imagen del acceso de MSSP](../../media/mssp-access.png)
 
@@ -125,9 +125,9 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
 2. Aprobar o denegar solicitudes en la sección **Aprobaciones** de la interfaz de usuario.
 
-     En este momento, se ha aprovisionado el acceso de analistas y cada analista debe tener acceso al Centro de seguridad de Microsoft 365 cliente:
+     En este momento, se ha aprovisionado el acceso de analistas y cada analista debe tener acceso al portal de Microsoft 365 Defender cliente:
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` con los permisos y roles que se asignaron.
 
 > [!IMPORTANT]
-> El acceso delegado a Microsoft Defender para endpoint en el centro de seguridad Microsoft 365 permite actualmente el acceso a un único espacio empresarial por ventana del explorador.
+> El acceso delegado a Microsoft Defender para endpoint en el portal de Microsoft 365 Defender permite actualmente el acceso a un único espacio empresarial por ventana del explorador.

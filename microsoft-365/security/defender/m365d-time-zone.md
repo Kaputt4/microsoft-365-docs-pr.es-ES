@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: eb24dee7a79bdf93d4571da0b5a9bd0b92a196a7b1d1767572767f7d92259056
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6665fcfcc5031e9790e7b467e32f18e203f5fe6a
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893728"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247240"
 ---
 # <a name="set-the-time-zone-for-microsoft-365-defender"></a>Establecer la zona horaria para Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "53893728"
 
 
 
-Microsoft 365 Defender puede mostrar información de fecha y hora con su zona horaria local o UTC. La zona horaria seleccionada se aplicará a toda la información de fecha y hora que se muestra en las características siguientes del centro de seguridad de Microsoft 365:
+Microsoft 365 Defender puede mostrar información de fecha y hora con su zona horaria local o UTC. La zona horaria seleccionada se aplicará a toda la información de fecha y hora que se muestra en las siguientes características del portal de Microsoft 365 Defender datos:
 - Incidentes
 - Investigación y corrección automatizada, incluyendo el centro de actividades
 - Búsqueda avanzada

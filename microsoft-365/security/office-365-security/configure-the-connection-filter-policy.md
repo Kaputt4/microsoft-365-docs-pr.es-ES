@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a configurar el filtrado de conexiones en Exchange Online Protection (EOP) para permitir o bloquear correos electrónicos de servidores de correo electrónico.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce1eddbf1ac788ad57ffc57da2156aae1ae69f6a
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 8aa760990eff4bff8e8c4dd26efa74042f4a9208
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108396"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258708"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
@@ -74,7 +74,7 @@ En este artículo se describe cómo configurar la directiva de filtro de conexi�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>Usar el portal Microsoft 365 Defender para modificar la directiva de filtro de conexión predeterminada
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas \>  \>  sección Directivas \>  contra correo no \> **deseado**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas en \>  \>  \>  la **sección** Directivas.
 
 2. En la **página Directivas contra correo** no deseado, seleccione Directiva de filtro de conexión **(Predeterminada)** de la lista haciendo clic en el nombre de la directiva.
 
@@ -105,7 +105,7 @@ En este artículo se describe cómo configurar la directiva de filtro de conexi�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>Usar el portal Microsoft 365 Defender para ver la directiva de filtro de conexión predeterminada
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & página Directivas de amenazas de reglas \>  \>  sección Directivas \>  contra correo no \> **deseado**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas en \>  \>  \>  la **sección** Directivas.
 
 2. En la **página Directivas contra correo** no deseado, se muestran las siguientes propiedades en la lista de directivas:
 
@@ -152,7 +152,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 Para comprobar que ha modificado correctamente la directiva de filtro de conexión predeterminada, siga estos pasos:
 
-- En el portal de Microsoft 365 Defender, vaya **a** Correo electrónico & Directivas de colaboración & Reglas Directivas de amenazas sección Directivas de correo no deseado seleccione Directiva de filtro de conexión \>  \>  \>  \>  \> **(predeterminada)** de la lista haciendo clic en el nombre de la directiva y compruebe la configuración.
+- En el portal de Microsoft 365 Defender, vaya a Directivas de colaboración de correo electrónico **&** & Reglas directivas contra correo no deseado en la sección Directivas seleccione Directiva de filtro de conexión \>  \>  \>   \> **(predeterminada)** de la lista haciendo clic en el nombre de la directiva y compruebe la configuración.
 
 - En Exchange Online PowerShell o PowerShell independiente de EOP, ejecute el siguiente comando y compruebe la configuración:
 

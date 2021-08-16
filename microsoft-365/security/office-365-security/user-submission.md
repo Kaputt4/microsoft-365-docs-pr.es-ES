@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f14f87355181e9b7f6c0b52aa6b122b560c5f23
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 94e796304ed562c7464ad64362159d231ace8882
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53338690"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258624"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -50,15 +50,17 @@ Use los artículos siguientes para configurar los requisitos previos necesarios 
 
 - Omitir el filtrado de correo no deseado en el buzón personalizado mediante la creación de una regla de flujo de correo de Exchange para establecer el nivel de confianza de correo no deseado. Vea [Usar el EAC para crear una](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) regla de flujo de correo que establezca el SCL de un mensaje para establecer el SCL en Omitir filtrado de correo no **deseado.**
 
-- [Cree una directiva Caja fuerte datos](set-up-safe-attachments-policies.md) adjuntos que incluya el buzón personalizado donde se desactivará el examen de datos adjuntos de Caja fuerte ( Caja fuerte Sección De respuesta de **malware** desconocido de datos \> **adjuntos desactivado**).
-
-- [Crear una directiva de vínculos](set-up-safe-links-policies.md) de Caja fuerte que incluya el buzón personalizado donde está desactivado el examen de vínculos de Caja fuerte (**Seleccione** la acción para direcciones URL potencialmente malintencionadas desconocidas en la sección mensajes \> **Desactivado**).
-
 - Cree una directiva [antimalware](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) que incluya el buzón personalizado en el que la purga automática de cero horas (ZAP) para malware está desactivada **(** La sección Configuración de protección Habilitar la purga automática de horas cero para malware no está \>  seleccionada).
 
 - [Cree](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) una directiva contra correo no deseado que incluya el buzón personalizado donde ZAP para correo no deseado y ZAP para phishing están desactivados **(** No está seleccionada la sección Purga automática de hora cero habilitada \> **(ZAP).**
 
 - Deshabilite la regla de correo no deseado en el buzón personalizado. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Después de deshabilitarlo, EOP no puede mover mensajes a la carpeta correo  no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado o a la colección de listas seguras del buzón.
+
+Si tiene Microsoft Defender para Office 365, también debe configurar lo siguiente para que nuestro filtrado avanzado no repercuta en los mensajes de informes de los usuarios:
+
+- [Crear una directiva de vínculos](set-up-safe-links-policies.md) de Caja fuerte que incluya el buzón personalizado donde está desactivado el examen de vínculos de Caja fuerte (**Seleccione** la acción para direcciones URL potencialmente malintencionadas desconocidas en la sección mensajes \> **Desactivado**).
+
+- [Cree una directiva Caja fuerte datos](set-up-safe-attachments-policies.md) adjuntos que incluya el buzón personalizado donde se desactivará el examen de datos adjuntos de Caja fuerte ( Caja fuerte Sección De respuesta de **malware** desconocido de datos \> **adjuntos desactivado**).
 
 Después de comprobar que el buzón cumple todos los requisitos previos aplicables, puede usar los procedimientos de este artículo para configurar el buzón de envíos de usuario.
 

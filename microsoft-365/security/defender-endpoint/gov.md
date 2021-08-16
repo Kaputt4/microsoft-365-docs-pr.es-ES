@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bcd8dabfae373e382a02d982ef764df38516c297d745d14c1e2b486351c3ad7f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c804aa9b557e87b15cf40721239957c122fec22
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845279"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247484"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -73,6 +73,7 @@ Se admiten las siguientes versiones del sistema operativo:
 
 Versión del sistema operativo|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
+Windows 10 versión 21H1 y versiones posteriores|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 20H2 (con [KB4586853](https://support.microsoft.com/help/4586853))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 2004 (con [KB4586853](https://support.microsoft.com/help/4586853))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/4586819))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
@@ -83,7 +84,7 @@ Windows 10, versión 1709|![No](images/svg/check-no.svg) <p> Nota: No se admite|
 Windows 10, versión 1703 y versiones anteriores|![No](images/svg/check-no.svg) <p> Nota: No se admite|![No](images/svg/check-no.svg) <p> Nota: No se admite|![No](images/svg/check-no.svg) <p> Nota: No se admite
 Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 8.1 Enterprise|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 8 Pro|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
@@ -107,7 +108,7 @@ Versión del sistema operativo|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows Server 2019|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 
 ## <a name="required-connectivity-settings"></a>Configuración de conectividad necesaria
@@ -159,12 +160,12 @@ Estas son las diferencias conocidas:
 
 Nombre de la característica|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Detección de redes|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
+Detección de redes|![No](images/svg/check-no.svg) Implementando|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
 Filtrado de contenido web|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
-Integraciones: Azure Sentinel|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg) Alertas <p> ![No](images/svg/check-no.svg) Incidentes & datos sin procesar: En desarrollo|![Sí](images/svg/check-yes.svg) Alertas <p> ![No](images/svg/check-no.svg) Incidentes & datos sin procesar: En desarrollo
+Integraciones: Azure Sentinel|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg) Alertas <p> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar|![Sí](images/svg/check-yes.svg) Alertas <p> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar
 Integraciones: Microsoft Cloud App Security|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
 Integraciones: Administrador de cumplimiento de Microsoft|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Integraciones: Microsoft Defender para la identidad|![No](images/svg/check-no.svg) Implementando|![No](images/svg/check-no.svg) Implementando|![No](images/svg/check-no.svg) Implementando
-Integraciones: DLP de punto de conexión de Microsoft|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
+Integraciones: DLP de punto de conexión de Microsoft|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Implementando
 Integraciones: Microsoft Power Automate & Azure Logic Apps|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg) Azure Logic Apps <p> ![No](images/svg/check-no.svg) Power Automate: En desarrollo
 Expertos en amenazas de Microsoft|![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería|![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería|![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería

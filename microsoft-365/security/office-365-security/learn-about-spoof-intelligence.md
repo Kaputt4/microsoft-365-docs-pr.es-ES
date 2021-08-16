@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la suplantación de inteligencia en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: daec0fe3a667aa92e9c137cdc7e612b6b11fb344
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2f17ac22a85182356ac58952b1d381fc6a98451e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544498"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258738"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 
@@ -92,7 +92,7 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Abra la información de inteligencia de suplantación en el portal Microsoft 365 Defender búsqueda
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas página Directivas de amenazas \>  \>  \> **de inquilinos Permitir/Bloquear listas**.
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & Directivas de amenazas de inquilino Permitir o bloquear listas en \>  \>  \>  la **sección** Reglas.
 
 2. En la **página Listas de permitidos o bloqueados** de inquilinos, la información de inteligencia suplantación tiene este aspecto:
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f9f36d6ca14be610ce9374380349264439282a6a
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 2686ec818fd2c4c912e12df76bf35f2435e2625cf95b53f1bd5a24be4f93c1e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898688"
 ---
 # <a name="install-intune-company-portal-on-devices"></a>Instalar Portal de empresa de Intune dispositivos
 

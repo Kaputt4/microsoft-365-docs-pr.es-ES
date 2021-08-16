@@ -1,6 +1,6 @@
 ---
-title: Implementar servicios compatibles con Microsoft 365 Defender
-description: Obtenga información sobre los servicios de seguridad de Microsoft que puede integrar Microsoft 365 Defender, sus requisitos de licencia y los procedimientos de implementación
+title: Implementar servicios admitidos por Microsoft 365 Defender
+description: Obtenga información sobre los servicios de seguridad de Microsoft que se pueden integrar mediante Microsoft 365 Defender, sus requisitos de licencia y procedimientos de implementación
 keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4e1b36423974e46a485727f7e1f158dc6163d834
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4a3aac06f19c7ed86af67f3b72bac8bf367628a8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935682"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258684"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -39,10 +39,10 @@ ms.locfileid: "51935682"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Microsoft 365 Defender integra](microsoft-365-defender.md) varios servicios de seguridad de Microsoft para proporcionar capacidades centralizadas de detección, prevención e investigación contra ataques sofisticados. En este artículo se describen los servicios admitidos, sus requisitos de licencia, las ventajas y limitaciones asociadas con la implementación de uno o varios servicios y vínculos a cómo puede implementarlos completamente individualmente.
+[Microsoft 365 Defender](microsoft-365-defender.md) integra varios servicios de seguridad de Microsoft para proporcionar capacidades centralizadas de detección, prevención e investigación contra ataques sofisticados. En este artículo se describen los servicios admitidos, sus requisitos de licencia, las ventajas y limitaciones asociadas con la implementación de uno o varios servicios y vínculos a cómo puede implementarlos completamente individualmente.
 
 ## <a name="supported-services"></a>Servicios compatibles
-Una Microsoft 365 E5, E5 Security, A5 o A5 Security o una combinación válida de licencias proporciona acceso a los siguientes servicios compatibles y le da derecho a usar Microsoft 365 Defender en un centro de seguridad Microsoft 365. [Ver requisitos de licencias](prerequisites.md#licensing-requirements)
+Una Microsoft 365 E5, una licencia de seguridad E5, A5 o A5 o una combinación válida de licencias proporciona acceso a los siguientes servicios compatibles y le da derecho a usar Microsoft 365 Defender. [Ver requisitos de licencias](prerequisites.md#licensing-requirements)
 
 | Servicio compatible | Descripción |
 | ------ | ------ |
@@ -61,7 +61,7 @@ Para obtener las ventajas completas de Microsoft 365 Defender, se recomienda imp
 - Se puede consultar un esquema de búsqueda avanzada más completo para los datos de eventos y entidades de dispositivos, buzones y otras entidades
 
 ### <a name="limited-deployment-scenarios"></a>Escenarios de implementación limitados
-Cada servicio compatible que implemente proporciona un conjunto muy enriquecido de señales sin procesar, así como información correlacionada. Aunque la implementación limitada no hace que la funcionalidad de Microsoft 365 Defender se desactive, su capacidad para proporcionar visibilidad completa en los puntos de conexión, aplicaciones, datos e identidades se ve afectada. Al mismo tiempo, las capacidades de corrección solo se aplican a las entidades que los servicios que ha implementado pueden administrar.
+Cada servicio compatible que implemente proporciona un conjunto muy enriquecido de señales sin procesar, así como información correlacionada. Aunque la implementación limitada no hace que Microsoft 365 Defender funcionalidad se desactive, su capacidad para proporcionar visibilidad completa en los puntos de conexión, aplicaciones, datos e identidades se ve afectada. Al mismo tiempo, las capacidades de corrección solo se aplican a las entidades que los servicios que ha implementado pueden administrar.
 
 En la tabla siguiente se muestra cómo cada servicio admitido proporciona datos adicionales, oportunidades para obtener información adicional mediante la correlación de los datos y mejores capacidades de corrección y respuesta.
 
@@ -86,7 +86,7 @@ Una vez que haya implementado los servicios compatibles, [active Microsoft 365 D
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Microsoft 365 Introducción al defensor](microsoft-365-defender.md)
+- [Microsoft 365 Defender introducción](microsoft-365-defender.md)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 - [Introducción a Microsoft Defender para puntos de conexión](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Introducción a Microsoft Defender para Office 365 web](../office-365-security/defender-for-office-365.md)

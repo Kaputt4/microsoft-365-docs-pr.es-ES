@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Obtenga información sobre cómo administrar Microsoft 365 usuarios, licencias y 365 aplicaciones con PowerShell.
-ms.openlocfilehash: dee8fbce03e38a954ddea5a8ec86248f9209d96c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e5f30a9d899ed84039077071fb33a0b540d07747e45c3cec2b2d70fa974eccb9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905109"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885212"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Administrar Microsoft 365 con PowerShell
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-PowerShell para Microsoft 365 es una herramienta de administración eficaz que complementa el centro Microsoft 365 administración. Por ejemplo, puede usar la automatización de PowerShell para administrar fácilmente varias cuentas de usuario y licencias y crear informes.
+PowerShell para Microsoft 365 es una herramienta de administración eficaz que complementa el Centro de administración de Microsoft 365. Por ejemplo, puede usar la automatización de PowerShell para administrar fácilmente varias cuentas de usuario y licencias y crear informes.
 
 Seleccione entre los siguientes temas para obtener información sobre cómo usar PowerShell para administrar Microsoft 365:
   

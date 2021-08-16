@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá acerca de la autenticación moderna híbrida y los requisitos previos para su uso con servidores Skype Empresarial y Exchange locales.
-ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8804fdb10846a9bed665fe1c3db354cc13814efa35c4003faf8b6eb9003689e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907533"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885404"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para el uso en Skype Empresarial y los servidores de Exchange locales
 

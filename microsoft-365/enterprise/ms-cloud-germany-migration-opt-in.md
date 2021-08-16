@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: '
-ms.openlocfilehash: 7b99238b588363203f7aac07b3fb056d7a37e19f
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 959aee9662c843fa89851924c3f5e878d73a382b8ea19258eca2a332ff404169
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899095"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Cómo participar en la nueva migración de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a los servicios Office 365 en las nuevas regiones del centro de datos alemán
 
@@ -48,7 +48,7 @@ Aparecerá una nueva sección en el lado derecho de la pantalla para aceptar la 
  
 ![Aceptación de la participación](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-Una vez que haya optado por participar en nombre de su inquilino, todos los administradores verán la confirmación en Migrar de **Microsoft Cloud Germany (Microsoft Cloud Deutschland) a** los servicios Office 365 en la sección nuevas regiones del centro de datos alemán, incluida la fecha de la suscripción. Los administradores también recibirán una confirmación en el Centro de mensajes del centro Microsoft 365 administración. 
+Una vez que haya optado por participar en nombre de su inquilino, todos los administradores verán la confirmación en Migrar de **Microsoft Cloud Germany (Microsoft Cloud Deutschland) a** los servicios Office 365 en la sección nuevas regiones del centro de datos alemán, incluida la fecha de la suscripción. Los administradores también recibirán una confirmación en el Centro de mensajes de la Centro de administración de Microsoft 365. 
  
 ![Confirmación de participación](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
@@ -62,7 +62,7 @@ Los Términos de Servicios en línea han cambiado para incluir términos que per
 
 El administrador de inquilinos del cliente recibirá un aviso por correo electrónico y el Centro de mensajes le aconsejará que participar en la migración se realizará automáticamente para una migración asistida por Microsoft. Este aviso se enviará al menos 30 días antes de la suscripción automática. Después de la suscripción a la migración, todas las comunicaciones y actualizaciones de estado se envían a los administradores de inquilinos del cliente en el Centro de mensajes.
 
-Se recomienda a los administradores de inquilinos de clientes y asociados que opten por la migración en el centro de administración de Microsoft 365 para que el proceso de migración pueda comenzar lo antes posible.
+Se recomienda a los administradores de inquilinos de clientes y asociados que opten por la migración en el Centro de administración de Microsoft 365 para que el proceso de migración pueda comenzar tan pronto como sea posible.
 
 ## <a name="next-step"></a>Paso siguiente
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Use un filtro de puntuación de predicción para mostrar los elementos que un modelo de codificación predictiva predice como relevantes o no relevantes.
-ms.openlocfilehash: 0ca2770d5ccbcc3ea5f3dec8394f69d1f5117da5
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 99cc9aee90c57f6f48053a6ef7e5a622a15295aa16089416081913ac6e5d3473
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822592"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865856"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Aplicar un filtro de puntuación de predicción a un conjunto de opiniones (versión preliminar)
 
@@ -39,7 +39,7 @@ Estas son dos maneras de usar el filtro de puntuación de predicción:
 
 ## <a name="apply-a-prediction-score-filter"></a>Aplicar un filtro de puntuación de predicción
 
-1. En el Microsoft 365 de cumplimiento, abra el Advanced eDiscovery caso, seleccione la pestaña Conjuntos de revisión y, a continuación, abra el conjunto de revisión. 
+1. En el Centro de cumplimiento de Microsoft 365, abra el Advanced eDiscovery, seleccione la pestaña **Conjuntos** de revisión y, a continuación, abra el conjunto de revisión.
 
    ![Haga clic en Filtros para mostrar la página desplegable Filtros](..\media\PredictionScoreFilter0.png)   
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 870b3491bd0556b2d72de901917713c6d6643a5f3c31871ab33f5eb459fefaf2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b21df0592c2ca6f3f45500236e2cd07ab7128c1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802781"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247553"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -127,6 +127,16 @@ Puede aplicar etiquetas de retención al contenido automáticamente cuando éste
 
 - [Una coincidencia para clasificadores que se pueden entrenar](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
+Las tres condiciones pueden aplicar automáticamente etiquetas de retención a los correos electrónicos a medida que se envían y reciben, pero no a los elementos existentes en el buzón (datos en reposo). Para los elementos de SharePoint y OneDrive, use la tabla siguiente para identificar cuándo se les pueden aplicar automáticamente las etiquetas de retención:
+
+|Condición|Elementos nuevos o modificados |Elementos existentes (datos en reposo)|
+|:-----|:-----|:-----|
+|Tipos de información confidencial: integrado| Sí | Sí |
+|Tipos de información confidencial: personalizado| Sí | No |
+|Palabras clave específicas o propiedades que se pueden buscar| Sí |Sí |
+|Clasificadores que se pueden entrenar| Sí | Sí (solo los últimos seis meses) |
+
+
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Aplicar automáticamente etiquetas a los contenidos con tipos específicos de información sensible
 
 > [!WARNING]
@@ -148,7 +158,7 @@ Para obtener más información sobre estas opciones, consulte las siguientes ins
 
 Que debe tener en cuenta al usar tipos de información confidencial para aplicar las etiquetas de retención automáticamente:
 
-- Se pueden usar etiquetas automáticamente para los elementos nuevos y modificados.
+- Si usa tipos personalizados de información confidencial, estos no pueden etiquetar automáticamente los elementos existentes en SharePoint y OneDrive.
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar automáticamente etiquetas a contenido con palabras clave o propiedades que se puedan buscar
 
@@ -161,8 +171,6 @@ Para obtener más información sobre la sintaxis de consulta que usa el Lenguaje
 Las directivas de aplicación automática basadas en consultas usan el mismo índice de búsqueda que la búsqueda de contenido en eDiscovery para identificar el contenido. Para obtener más información sobre las propiedades utilizables en búsqueda que puede usar, vea [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md).
 
 Aspectos que debe tener en cuenta al usar palabras clave o propiedades utilizables en búsqueda para las etiquetas de retención de aplicación automática:
-
-- Los elementos nuevos, modificados y existentes se etiquetarán automáticamente para SharePoint, OneDrive y Exchange.
 
 - Para SharePoint, las propiedades rastreadas y las propiedades personalizadas no son compatibles con estas consultas de KQL y solo debe usar propiedades administradas predefinidas para documentos. Sin embargo, puede usar las asignaciones en el nivel de espacio empresarial con las propiedades administradas predefinidas que se habilitan como refinadores de forma predeterminada (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09 y RefinableDouble00-09). Para obtener más información, vea [Información general de propiedades administradas y rastreadas en SharePoint Server](/SharePoint/technical-reference/crawled-and-managed-properties-overview) y para obtener instrucciones, consulte [Crear una nueva propiedad administrada](/sharepoint/manage-search-schema#create-a-new-managed-property).
 
@@ -255,7 +263,7 @@ Para más información sobre los clasificadores que se pueden entrenar, consulte
 
 Que debe tener en cuenta al usar clasificadores que se pueden entrenar para aplicar las etiquetas de retención automáticamente:
 
-- Se pueden usar etiquetas automáticamente para los elementos nuevos y modificados, y los elementos existentes de los últimos seis meses.
+- No puede etiquetar automáticamente los elementos de SharePoint y OneDrive que tengan más de seis meses.
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Tiempo que tardan las etiquetas de retención en aplicarse
 

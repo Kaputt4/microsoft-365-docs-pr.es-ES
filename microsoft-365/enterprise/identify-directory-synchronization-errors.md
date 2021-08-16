@@ -22,27 +22,27 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Obtenga información sobre cómo ver errores de sincronización de directorios y posibles correcciones Microsoft 365 centro de administración.
-ms.openlocfilehash: 76717fc158aa0cee47f784919f19a295378bbd5b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Obtenga información sobre cómo ver errores de sincronización de directorios y posibles correcciones en Centro de administración de Microsoft 365.
+ms.openlocfilehash: 37bd25f46c84f2a4ec26f17accdae034487a4dc91023d798cf3459941136c0a6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885272"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Ver errores de sincronización de directorios en Microsoft 365
 
-Puede ver errores de sincronización de directorios en el centro Microsoft 365 administración. Solo se muestran los errores del objeto User. Para ver errores con PowerShell, vea [Identificar objetos con DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Puede ver errores de sincronización de directorios en el Centro de administración de Microsoft 365. Solo se muestran los errores del objeto User. Para ver errores con PowerShell, vea [Identificar objetos con DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
-## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>Ver errores de sincronización de directorios en el centro Microsoft 365 administración
+## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>Ver errores de sincronización de directorios en el Centro de administración de Microsoft 365
 
-Para ver cualquier error en el centro Microsoft 365 administración:
+Para ver cualquier error en el Centro de administración de Microsoft 365:
   
-1. Inicie sesión en el [centro Microsoft 365 administración con](https://admin.microsoft.com) una cuenta de administrador global. 
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con una cuenta de administrador global. 
     
 2. En la **página principal,** verá la tarjeta **de administración de** usuarios. 
     
-    ![La tarjeta de administración de usuario en el centro Microsoft 365 administración](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![La tarjeta de administración de usuario en el Centro de administración de Microsoft 365](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 3. En la tarjeta, elija **Sincronizar errores** en **Azure AD Conectar** para ver los errores en la página Errores de sincronización **de** directorios.   
     

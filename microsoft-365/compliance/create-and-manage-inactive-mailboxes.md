@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Conserve el contenido de los buzones eliminados mediante la característica de buzones inactivos en Microsoft 365.
-ms.openlocfilehash: 7e0fa04d82a52bf41d763255239421eed8e47700b88756140bda81505c4d08f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8d9043d066f2500074b79b6eb06183f093907ba
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866456"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247536"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 

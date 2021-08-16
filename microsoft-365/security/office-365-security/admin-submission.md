@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d18dd7f5dc702f08a722652394aeb0102f100ef
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 4ce1ea9e06167f0fec4431438c48c967f12a8a46
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409061"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258636"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -140,6 +140,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
      - **Motivo para enviar**<sup>\*</sup>
      - **Estado de reescaneo**<sup>\*</sup>
      - **Volver a examinar el resultado**<sup>\*</sup>
+     - **Etiquetas**<sup>\*</sup>
      - **Veredicto de filtro**
      - **Motivo de entrega/bloqueo**
      - **Identificador de envío**
@@ -159,6 +160,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
      - **Identificador de envío:** valor GUID que se asigna a cada envío.
      - **Id. de mensaje de red**
      - **Sender**
+     - **Tags**
 
      Cuando haya terminado, haga clic en **Aplicar**.
 
@@ -169,7 +171,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
      - **Ninguna**
      - **Tipo**
      - **Motivo**
-     - **Estado**
+     - **Status**
      - **Volver a examinar el resultado**
 
    - Para exportar las entradas, haga clic en **Exportar**. En el cuadro de diálogo que aparece, guarde el .csv archivo.
@@ -201,6 +203,7 @@ Si ha implementado el complemento Report  [Message](enable-the-report-message-ad
      - **Remitente**<sup>\*</sup>
      - **Motivo notificado**<sup>\*</sup>
      - **Volver a examinar el resultado**<sup>\*</sup>
+     - **Etiquetas**<sup>\*</sup>
      - **Id. de mensaje notificado**
      - **Id. de mensaje de red**
      - **IP del remitente**
@@ -217,6 +220,7 @@ Si ha implementado el complemento Report  [Message](enable-the-report-message-ad
      - **Sender**
      - **Motivo notificado:** **No es correo no** deseado, **phish** o correo **no deseado.**
      - **Simulación de phish:** **Sí** o **No**
+     - **Tags**
 
      Cuando haya terminado, haga clic en **Aplicar**.
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f728e49d742b20cf8434ca83eaf29e7e91b725ee
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7a7b1522046926fb0ec3998564f83fdb3d28cb74
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657032"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258660"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -83,29 +83,43 @@ En este ejemplo, si solo había publicado un registro TXT de SPF en su dominio, 
 > DKIM usa una clave privada para insertar una firma cifrada en los encabezados del mensaje. El dominio de firma, o el dominio saliente, se inserta como el valor del campo **d=** en el encabezado. El dominio de comprobación, o dominio del destinatario, usa entonces el campo **=d** para buscar la clave pública desde DNS y autenticar el mensaje. Si el mensaje se comprueba, supera la comprobación DKIM.
 
 ## <a name="steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal"></a>Pasos para crear, habilitar y deshabilitar DKIM desde el portal de Microsoft 365 Defender
-Todos los dominios aceptados de su espacio empresarial se mostrarán en el portal Microsoft 365 Defender en la página DKIM. Si no lo ve, agregue el dominio aceptado desde la [página dominios](/microsoft-365/admin/setup/add-domain?view=o365-worldwide#add-a-domain).
+
+Todos los dominios aceptados de su espacio empresarial se mostrarán en el portal Microsoft 365 Defender en la página DKIM. Si no lo ve, agregue el dominio aceptado desde la [página dominios](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Una vez agregado el dominio, siga los pasos que se muestran a continuación para configurar DKIM.
 
-Paso 1: Haga clic en el dominio en el que desea configurar DKIM en la página ![imagen](https://user-images.githubusercontent.com/3039750/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png) de DKIM
+Paso 1: Haga clic en el dominio en el que desea configurar DKIM en la página de DKIM
 
-Paso 2: Haga clic en Crear ![imagen](https://user-images.githubusercontent.com/3039750/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png) de claves
+![Página DKIM en el portal de Microsoft 365 Defender con un dominio seleccionado](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-Paso 3: Copiar los CNAMES que se muestran en la ventana emergente ![imagen](https://user-images.githubusercontent.com/3039750/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
+Paso 2: haga clic en Crear claves DKIM
 
-Paso 4: Publicar los registros CNAME copiados en el proveedor de servicios DNS. En el sitio web del proveedor de DNS, agregue registros CNAME para DKIM que quiera habilitar. Asegúrese de configurar los campos con los siguientes valores para cada uno:
+![Control flotante de detalles del dominio con el botón Crear claves DKIM](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
 
-Tipo de registro: CNAME (Alias). Host: pegue los valores que copie desde la página DKIM.
-Puntos que abordar: copie el valor de la página DKIM.
-TTL: 3600 (o lo predeterminado por el proveedor)
+Paso 3: copiar los CNAMES que se muestran en la ventana emergente
 
-Paso 5: Volver a la página DKIM para habilitar la ![imagen](https://user-images.githubusercontent.com/3039750/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png) DKIM
+![Ventana emergente Publicar CNAME que contiene los dos registros CNAME que se van a copiar](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
-Si ve un error de registro CNAME, es posible que se deba a
+Paso 4: Publicar los registros CNAME copiados en el proveedor de servicios DNS.
+
+En el sitio web del proveedor de DNS, agregue registros CNAME para DKIM que quiera habilitar. Asegúrese de configurar los campos con los siguientes valores para cada uno:
+
+```text
+Record Type: CNAME (Alias)
+> Host: Paste the values you copy from DKIM page.
+Points to address: Copy the value from DKIM page.
+TTL: 3600 (or your provider default)
+```
+
+Paso 5: volver a la página DKIM para habilitar DKIM
+
+![Deslice el botón de alternancia a Habilitado para habilitar DKIM](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+
+Si ve el error El registro CNAME no existe, es posible que se deba a:
+
 1. Sincronización con el servidor DNS, que puede tardar de unos segundos a horas, si el problema persiste, repita los pasos de nuevo.
 2. Compruebe si hay errores de copiar y pegar, como espacio adicional o pestañas, etc.
 
 Si desea deshabilitar DKIM, vuelva al modo de deshabilitación.
-
 
 ## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>Pasos para actualizar manualmente las claves de 1024 bits a claves de cifrado DKIM de 2048 bits
 <a name="1024to2048DKIM"> </a>
@@ -223,7 +237,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
 
 1. Abra el portal de Microsoft 365 Defender [con su cuenta profesional o educativa](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **página de Directivas de amenazas** \> sección de **Reglas** \> **DKIM**. O bien, para ir directamente a la página de DKIM, use <https://security.microsoft.com/dkimv2>.
+2. Vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **DKIM** en la sección **Reglas**. O bien, para ir directamente a la página de DKIM, use <https://security.microsoft.com/dkimv2>.
 
 3. En la página **DKIM**, haga clic en el nombre para seleccionar el dominio.
 
@@ -383,4 +397,4 @@ Aunque DKIM está diseñado para ayudar a evitar la suplantación de identidad, 
 
 ## <a name="more-information"></a>Más información
 
-Rotación de clave mediante PowerShell [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
+Rotación de clave mediante PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)

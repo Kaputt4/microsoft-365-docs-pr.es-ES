@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 79483956fe15cc3aacaaae90f23968efbd317a80a64c1bd7f0e6862c66580988
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 0963d80699e171ea72c8873a36da28800bb5bf88
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520391"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247439"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 

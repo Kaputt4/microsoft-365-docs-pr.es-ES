@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: actividades posteriores a la migración después de pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 3659ce8ffa3424c3521c8f8954be88c7d53d0a51
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: ad696e1012d7b540017db29be7638d50ea2dbc5133411da7ba5e0d0145ada1e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899048"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Actividades posteriores a la migración de Microsoft Cloud Deutschland
 
@@ -73,7 +73,7 @@ The following table provides an overview about which endpoints will replace the 
 
 | Pasos | Descripción | Impacto |
 |:------|:-------|:-------|
-| Actualice los servicios DNS locales para los Office 365 de servicios locales. | Las entradas DNS administradas por el cliente que apuntan a Microsoft Cloud Deutschland deben actualizarse para que apunten a los puntos de conexión Office 365 servicios globales. Consulte Dominios [en el centro de administración Microsoft 365 y](https://admin.microsoft.com/Adminportal/Home#/Domains) aplique los cambios en la configuración de DNS. | Si no lo hace, puede producirse un error en el servicio o en clientes de software. |
+| Actualice los servicios DNS locales para los Office 365 de servicios locales. | Las entradas DNS administradas por el cliente que apuntan a Microsoft Cloud Deutschland deben actualizarse para que apunten a los puntos de conexión Office 365 servicios globales. Consulte Dominios [en el Centro de administración de Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/Domains) y aplique los cambios en la configuración de DNS. | Si no lo hace, puede producirse un error en el servicio o en clientes de software. |
 ||||
 
 ## <a name="third-party-services"></a>Servicios de terceros
