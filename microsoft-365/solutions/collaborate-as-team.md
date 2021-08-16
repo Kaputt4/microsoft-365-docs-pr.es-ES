@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: b8221b457c27bc390aaa05059f8966f2d0e497cbc7e425fe8c6fec5679437781
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7e0d914f4a0541a8b43959447d6fafdcaf8d3210
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897140"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347197"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -177,6 +177,9 @@ Para añadir invitados a un equipo
 3. Haga clic **Editar información de invitado**.
 4. Escriba el nombre completo del invitado y haga clic en la marca de verificación.
 5. Haga clic en **Agregar** y, después, en **Cerrar**.
+
+> [!NOTE]
+> Solo se puede invitar a invitados con una cuenta profesional o educativa mediante el nombre principal de usuario (UPN) (por ejemplo, adele@contoso.com). No se admite la invitación de invitados mediante el id. de EAS u otros formatos de correo electrónico.
 
 ## <a name="see-also"></a>Vea también
 
