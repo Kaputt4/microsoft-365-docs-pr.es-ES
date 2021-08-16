@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 09820fbf6bc636f4312ba26daa85570f36ef1d2d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: c6448a75deb018011f387d719bce4aeb145e1fef6c8279f8e013e3814ea1627a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298931"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907108"
 ---
 # <a name="contact-support-for-djibouti"></a>Póngase en contacto con el soporte técnico de Yibuti
 

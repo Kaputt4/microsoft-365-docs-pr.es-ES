@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Este artículo ayuda a explicar las diferencias entre las diferentes versiones de Cifrado de mensajes de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92beb3625c0b115fe77f1667a448bf0bf9589040
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 5e94183ef90d5e55512f8d62db38be28f14d69d1fa8a5925b4de2afa660db26c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760138"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905492"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 
@@ -56,7 +56,7 @@ Para evaluar si este desuso afecta a su organización, vea [How to migrate AD RM
 Las nuevas funcionalidades proporcionan las siguientes ventajas:
 
 - Posibilidad de usar la opción de solo cifrado (que habilita la colaboración segura), la opción No reenviar y las restricciones personalizadas.
-- Los remitentes pueden enviar correo cifrado con las nuevas funcionalidades manualmente desde Outlook escritorio, Outlook para Mac y Outlook en los clientes web.
+- Los remitentes pueden enviar correo cifrado con las nuevas funcionalidades manualmente desde Outlook escritorio, Outlook para Mac y Outlook en la Web clientes.
 - Microsoft 365 los destinatarios pueden usar una experiencia en línea en clientes Outlook compatibles. Como alternativa, los administradores pueden elegir mostrar a los Microsoft 365 una experiencia de marca.
 - Las cuentas fuera de Microsoft 365, como las cuentas de Gmail, Yahoo y Microsoft, están federadas con el portal de OME, que proporciona una mejor experiencia de usuario para estos destinatarios. Todas las demás identidades usan un código de paso único para obtener acceso a mensajes cifrados.
 - Los administradores pueden personalizar la personalización de marca y crear varias plantillas de personalización de marca.
@@ -83,9 +83,9 @@ Si tiene previsto usar Cifrado de mensajes de Office 365 en un entorno GCC High,
 
 ### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>Correo electrónico cifrado entre GCC destinatarios high y GCC high
 
-Los remitentes pueden cifrar manualmente los correos electrónicos en Outlook para PC y Mac y Outlook en la web, o bien las organizaciones pueden configurar una directiva para cifrar correos electrónicos mediante Exchange reglas de flujo de correo.
+Los remitentes pueden cifrar manualmente los correos electrónicos en Outlook para PC y Mac y Outlook en la Web, o bien las organizaciones pueden configurar una directiva para cifrar correos electrónicos mediante Exchange reglas de flujo de correo.
 
-Los destinatarios de GCC High reciben la misma experiencia de lectura en línea en Outlook para PC y Mac y Outlook en la web que todos los demás usuarios.
+Los destinatarios de GCC High reciben la misma experiencia de lectura en línea en Outlook para PC y Mac y Outlook en la Web que el resto de usuarios.
 
 ### <a name="encrypted-email-between-gcc-high-and-non-gcc-high-recipients"></a>Correo electrónico cifrado entre GCC destinatarios High y Non-GCC High
 
@@ -101,7 +101,7 @@ Puede usar OME heredada y las nuevas funcionalidades en el mismo espacio empresa
 
 - Para especificar las nuevas funcionalidades, use la acción Exchange regla de flujo de correo **Aplicar Cifrado de mensajes de Office 365 y protección de derechos**.
 
-Los usuarios pueden enviar manualmente correo cifrado con las nuevas funcionalidades de Outlook escritorio, Outlook para Mac y Outlook en la web.
+Los usuarios pueden enviar manualmente correo cifrado con las nuevas funcionalidades de Outlook escritorio, Outlook para Mac y Outlook en la Web.
 
 ## <a name="migrate-from-legacy-ome-to-the-new-capabilities"></a>Migrar de la OME heredada a las nuevas funcionalidades
 

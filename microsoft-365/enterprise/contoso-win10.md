@@ -1,9 +1,9 @@
 ---
 title: Implementación de Windows 10 Enterprise para Contoso
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usó Configuration Manager de Microsoft Endpoint para implementar las actualizaciones locales de Windows 10 Enterprise.
-ms.openlocfilehash: 1c7383c8d8813dfefa9b20d57bf489a840b47cb4cd3669aef89d302abb1af14d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1550940afb105c569800767b2e383c6e3322c5b6
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855192"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354817"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Implementación de Windows 10 Enterprise para Contoso
 
@@ -84,7 +84,7 @@ Esta infraestructura consta de:
 
 Obtenga información sobre cómo Contoso está aprovechando su infraestructura de Configuration Manager para [implementar y](contoso-o365pp.md) mantener las actualizaciones Aplicaciones Microsoft 365 para empresas toda la organización. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Windows 10 Enterprise](/windows/deployment/)
 

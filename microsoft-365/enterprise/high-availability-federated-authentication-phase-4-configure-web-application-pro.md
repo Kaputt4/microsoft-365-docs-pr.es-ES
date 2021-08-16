@@ -1,7 +1,7 @@
 ---
 title: Fase 4 de autenticación federada de alta disponibilidad Configurar servidores proxy de aplicación web
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumen: configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad Microsoft 365 en Microsoft Azure.'
-ms.openlocfilehash: cc74fd93fc668094d9627486ac0106447825166e3c69b4c79c36be7ccd6ea107
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c67aa4b2c3583fe4e370fdc750a49d7088e0db2
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870647"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354469"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 
@@ -64,13 +64,13 @@ Debe determinar el nombre DNS para identificar el nombre del servicio de federac
   
 Una vez que tenga el servicio de federación FDQN, cree un registro A de dominio DNS público para el servicio de federación FDQN que se resuelva en la dirección IP pública del equilibrador de carga de Azure Internet.
   
-|**Nombre**|**Tipo**|**TTL**|**Valor**|
+|**Nombre**|**Tipo**|**TTL**|**Value**|
 |:-----|:-----|:-----|:-----|
 |FDQN del servicio de federación  <br/> |A  <br/> |3600  <br/> |dirección IP pública del equilibrador de carga de Azure Internet (mostrado por el comando **Write-Host** en la sección anterior) <br/> |
    
 A continuación le mostramos un ejemplo:
   
-|**Nombre**|**Tipo**|**TTL**|**Valor**|
+|**Nombre**|**Tipo**|**TTL**|**Value**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -162,7 +162,7 @@ Esta es la configuración completada después de la finalización correcta de es
 
 Usar [la fase 5: Configurar la autenticación federada para Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) continuar configurando esta carga de trabajo.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   

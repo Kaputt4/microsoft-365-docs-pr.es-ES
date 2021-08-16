@@ -1,9 +1,9 @@
 ---
 title: Administración de dispositivos móviles para Contoso
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo Contoso usa Microsoft Intune en Microsoft 365 empresa para administrar sus dispositivos y las aplicaciones que se ejecutan en ellos.
-ms.openlocfilehash: f4d1982dbb889f1eefc50a8bf618f54e4867120d754d2ec94f7dc62be855c921
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c7a3a40867e15059c527edb0069ff639d68ae7c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835273"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354901"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Administración de dispositivos móviles para Contoso
 
@@ -72,7 +72,7 @@ Esta es la arquitectura de implementación de administración de dispositivos m�
 
 Obtenga información sobre cómo Contoso usa las [capacidades](contoso-info-protect.md) de protección de la información de Microsoft 365 empresa para clasificar, identificar y proteger activos digitales cruciales en toda su organización.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administración de dispositivos para Microsoft 365](device-management-roadmap-microsoft-365.md)
 

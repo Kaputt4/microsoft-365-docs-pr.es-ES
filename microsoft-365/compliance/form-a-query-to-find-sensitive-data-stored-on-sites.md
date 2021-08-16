@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use prevención de pérdida de datos (DLP) en SharePoint Online para detectar documentos que contienen datos confidenciales en todo el espacio empresarial.
-ms.openlocfilehash: 04bf2e97dd2b5530838aef9fcb4b4467270d2d9d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: cd92fafe5a04de0339c0afb5f5b7cc2b4cc1772fc46dabe6477dd23aa981af23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905586"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Crear una consulta para buscar datos confidenciales almacenados en los sitios
 
@@ -68,7 +68,7 @@ En los ejemplos siguientes se usan diferentes tipos, propiedades y operadores co
 
 ****
 
-|Consulta|Explicación|
+|Query|Explicación|
 |---|---|
 |`SensitiveType:"International Banking Account Number (IBAN)"`|El nombre puede parecer extraño porque es tan largo, pero es el nombre correcto para ese tipo confidencial. Asegúrese de usar nombres exactos del inventario [de tipos de información confidencial](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help). También puede usar el nombre de un tipo [de información confidencial personalizado](create-a-custom-sensitive-information-type.md) que creó para su organización.|
 |`SensitiveType:"Credit Card Number|1..4294967295|1..100"`|Esto devuelve documentos con al menos una coincidencia con el tipo confidencial "Número de tarjeta de crédito". Los valores de cada intervalo son los respectivos valores mínimos y máximos. Una forma más sencilla de escribir esta consulta es  `SensitiveType:"Credit Card Number"` , pero ¿dónde está la diversión en eso?|

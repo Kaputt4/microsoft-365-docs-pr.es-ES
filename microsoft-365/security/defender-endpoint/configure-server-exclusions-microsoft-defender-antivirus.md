@@ -16,12 +16,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 02/10/2021
-ms.openlocfilehash: 31d5c22d11a28c9604b2be3145ebd46715a6e5b3
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6e0636122a5ef2d173e6eee53c4c303bb8cc46c8df7b1eeaa5d7b026f1c04ea0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904040"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 
@@ -334,7 +334,7 @@ En esta sección se enumeran las exclusiones de carpetas que se entregan automá
 - `%systemroot%\SoftwareDistribution\Datastore`
 - `%systemroot%\SoftwareDistribution\Download`
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

@@ -1,9 +1,9 @@
 ---
 title: Identidad para Contoso Corporation
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso aprovecha la Identidad como servicio (IDaaS) y proporciona autenticación basada en la nube a sus empleados y autenticación federada a sus partners y clientes.
-ms.openlocfilehash: 47a9492f0924f777da12361b2c161ef9b5b0770d24d720ac927b02b44f369bc8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9138e0743e5194e98213ab2d2c2bfe457500b0de
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899755"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58353797"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
@@ -78,7 +78,7 @@ Este es el conjunto resultante de directivas de identidad y dispositivo de acces
 
 Obtenga información sobre cómo Contoso usa su Microsoft Endpoint Configuration Manager para [implementar y](contoso-win10.md) mantener las Windows 10 Enterprise en toda su organización.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Plan de identidad para Microsoft 365](identity-roadmap-microsoft-365.md)
 

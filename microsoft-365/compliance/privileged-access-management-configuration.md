@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Use este artículo para obtener más información sobre cómo habilitar y configurar la administración de acceso con privilegios en Office 365.
-ms.openlocfilehash: 13b600c60e1b9c88285ee58efcf80a7ff5ea17fe
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 70af2d3582bd2a8166645ab7507369d48e5c17f0b43dae8543dac9e427bf2285
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905480"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Introducción a la administración del acceso con privilegios
 
@@ -176,7 +176,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Solicitud de autorización de elevación para ejecutar tareas privilegiadas
 
-Las solicitudes de acceso con privilegios son válidas hasta 24 horas después de que se hayan enviado. Si ni se aprueban ni se deniegan, las solicitudes expiran y el acceso no se aprueba.
+Las solicitudes de acceso con privilegios son válidas hasta 24 horas después de que se hayan enviado. Si ni se aprueban ni se deniegan, las solicitudes expiran y el acceso no se aprueba.
 
 #### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de Administración de Microsoft 365 de datos
 

@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b032ea9291e22c5eaa1e2936f412dc39bfb91e2
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 44d00bfd073b41f608a26106488e38c88d59bbecc4747c401fc70690bef1a110
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53903948"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint
 
@@ -66,6 +66,7 @@ En la tabla siguiente se describen las formas en que Microsoft Defender para end
 |[Permitir la instalación y el uso de periféricos aprobados específicamente con los IDs de instancia del dispositivo que coincidan](#allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids)|Solo puedes instalar y usar periféricos aprobados que coincidan con cualquiera de estos IDs de instancia de dispositivo.|
 |[Impedir la instalación y el uso de periféricos específicamente prohibidos con los IDs de instancia del dispositivo que coincidan](#prevent-installation-and-usage-of-specifically-prohibited-peripherals-with-matching-device-instance-ids)|No puedes instalar ni usar periféricos prohibidos que coincidan con ninguno de estos IDs de instancia de dispositivo.|
 |[Limitar servicios que usan Bluetooth](#limit-services-that-use-bluetooth)|Puede limitar los servicios que pueden usar Bluetooth.|
+|[Usar Microsoft Defender para la configuración de línea base de punto de conexión](#use-microsoft-defender-for-endpoint-baseline-settings)|Puede establecer la configuración recomendada para ATP mediante la línea base de seguridad defender para puntos de conexión.|
 |
 
 ### <a name="restrict-usb-drives-and-other-peripherals"></a>Restringir unidades USB y otros periféricos
@@ -237,6 +238,12 @@ Con Intune, puede limitar los servicios que pueden usar Bluetooth a través de [
 > [!div class="mx-imgBorder"]
 > ![captura de pantalla de Bluetooth de configuración](images/bluetooth.png)
 
+### <a name="use-microsoft-defender-for-endpoint-baseline-settings"></a>Usar Microsoft Defender para la configuración de línea base de punto de conexión
+
+La configuración de línea base de Microsoft Defender para extremo representa la configuración recomendada para la protección contra amenazas. Las opciones de configuración para la línea base se encuentran en la página editar perfil de las opciones de configuración.
+
+> [!div class="mx-imgBorder"]
+> ![Líneas base en MEM](images/baselines.png)
 
 ## <a name="prevent-threats-from-removable-storage"></a>Impedir que las amenazas quiten el almacenamiento
   
