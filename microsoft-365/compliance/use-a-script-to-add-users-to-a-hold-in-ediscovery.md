@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo ejecutar un script para agregar buzones & OneDrive para la Empresa sitios a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de Microsoft 365 cumplimiento.
-ms.openlocfilehash: d6e6ff1ca053fd8c729054490e78ef42dc64e829
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Obtenga información sobre cómo ejecutar un script para agregar buzones & OneDrive para la Empresa sitios a una nueva retención asociada con un caso de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
+ms.openlocfilehash: 7f1b5f9d3b8106ca899079d22fd4a46a8270771470be5a288ef5d1f77f1a6cce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909920"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859772"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Usar un script para agregar usuarios a una retención en un caso de exhibición de documentos electrónicos principal
 

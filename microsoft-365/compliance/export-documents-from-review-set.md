@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo seleccionar y exportar contenido de un conjunto de Advanced eDiscovery para presentaciones o revisiones externas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ceb735b4ebce5ef26eb7e7216e1e0f81897c7c0cfbdbb5982b632e6f355e442a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ec92c432d693a46151cd92e9d65e5b6fc9c2734
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905814"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246598"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exportar documentos de un conjunto de revisión en Advanced eDiscovery
 
@@ -76,6 +76,8 @@ Use las siguientes opciones para configurar la exportación. No todas las opcion
   - Archivos de texto: esta opción incluye las versiones de texto extraídas de los archivos nativos en la exportación.
   
   - Reemplace los nativos redactados por archivos PDF convertidos: si los archivos PDF redactados se generan durante la revisión, estos archivos están disponibles para la exportación. Puede elegir exportar solo los archivos nativos que se han redactado (no seleccionando esta opción) o puede seleccionar esta opción para exportar los archivos PDF que contienen las redacciones reales.
+
+  - PDF de conversación en lugar de mensajes de chat individuales: active esta casilla para exportar conversaciones de chat en un archivo PDF. Todos los mensajes de chat de la misma conversación se exportan en el mismo archivo PDF. Si dejas esta casilla sin elegir, cada mensaje único de una conversación de chat se exporta como un elemento independiente. El archivo se exporta en el mismo formato que se guardó en el buzón. Para una conversación específica, recibe varios archivos .msg.
 
 En las secciones siguientes se describe la estructura de carpetas para archivos sueltos y opciones de estructura de directorios condensadas. Las exportaciones se particionan en archivos ZIP con un tamaño máximo de contenido sin comprimir de 75 GB. Si el tamaño de exportación es inferior a 75 GB, la exportación constará de un archivo de resumen y un único archivo ZIP. Para las exportaciones de más de 75 GB de datos sin comprimir, se crearán varios archivos ZIP. Una vez descargados, los archivos ZIP se pueden descomprimir en una sola ubicación para volver a crear la exportación completa.
 

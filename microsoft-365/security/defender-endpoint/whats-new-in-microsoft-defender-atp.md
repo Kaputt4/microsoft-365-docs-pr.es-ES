@@ -1,6 +1,6 @@
 ---
 title: Novedades de Microsoft Defender para punto de conexión
-description: Consulta qué características están disponibles generalmente (GA) en la versión más reciente de Microsoft Defender para Endpoint, así como las características de seguridad en Windows 10 y Windows Server.
+description: Vea qué características están disponibles generalmente (GA) en la versión más reciente de Microsoft Defender para endpoint, así como las características de seguridad en Windows 10 y Windows Server.
 keywords: novedades de Microsoft Defender para Endpoint, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6b1d5496d6476353cfe16acebc43de498547465fab3a8ea245b410de632aadb2
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 85afa2cb66edc471a0a311270e29dd8fd0768dbaae0236769efeecce2015ce01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889020"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -34,7 +34,7 @@ ms.locfileid: "54520572"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Por lo general, las siguientes características están disponibles (GA) en la versión más reciente de Microsoft Defender para Endpoint, así como las características de seguridad en Windows 10 y Windows Server.
+Por lo general, las siguientes características están disponibles (GA) en la versión más reciente de Microsoft Defender para endpoint, así como las características de seguridad en Windows 10 y Windows Server.
 
 Para obtener más información sobre las características de vista previa, vea [Preview features](preview.md).
 
@@ -43,16 +43,16 @@ Para obtener más información sobre las características de vista previa, vea [
 > Fuente RSS: recibe una notificación cuando se actualiza esta página copiando y pegando la siguiente dirección URL en el lector de fuentes:
 >
 > ```https
-> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 ## <a name="june-2021"></a>Junio de 2021
 
 - [Evaluación de vulnerabilidades de software de exportación de Delta](get-assessment-methods-properties.md#31-methods) API <br> Una adición a la [colección export assessments of vulnerabilities and secure configurations](get-assessment-methods-properties.md) API. <br> A diferencia de la evaluación completa de vulnerabilidades de software (respuesta JSON), que se usa para obtener una instantánea completa de la evaluación de vulnerabilidades de software de su organización por dispositivo, la llamada a la API de exportación delta se usa para capturar solo los cambios que se han producido entre una fecha seleccionada y la fecha actual (la llamada a la API "delta"). En lugar de obtener una exportación completa con una gran cantidad de datos cada vez, solo se obtiene información específica sobre vulnerabilidades nuevas, fijas y actualizadas. La llamada a la API de exportación delta también se puede usar para calcular diferentes KPI, como "cuántas vulnerabilidades se han corregido" o "cuántas vulnerabilidades nuevas se agregaron a una organización".
 
-- [Exportar evaluaciones de vulnerabilidades y configuraciones seguras](get-assessment-methods-properties.md) API <br> Agrega una colección de API que extrae datos de administración de amenazas y vulnerabilidades por dispositivo. Hay diferentes llamadas api para obtener diferentes tipos de datos: evaluación de configuración segura, evaluación de inventario de software y evaluación de vulnerabilidades de software. Cada llamada a la API contiene los datos necesarios para los dispositivos de la organización.
+- [Exportar evaluaciones de vulnerabilidades y configuraciones seguras](get-assessment-methods-properties.md) API <br> Agrega una colección de API que Administración de amenazas y vulnerabilidades datos por dispositivo. Hay diferentes llamadas api para obtener diferentes tipos de datos: evaluación de configuración segura, evaluación de inventario de software y evaluación de vulnerabilidades de software. Cada llamada a la API contiene los datos necesarios para los dispositivos de la organización.
 
-- [Actividad de corrección](get-remediation-methods-properties.md) API <br>  Agrega una colección de API con respuestas que contienen actividades de corrección de la administración de amenazas y vulnerabilidades que se han creado en el espacio empresarial. Los tipos de información de respuesta incluyen una actividad de corrección por identificador, todas las actividades de corrección y dispositivos expuestos de una actividad de corrección.
+- [Actividad de corrección](get-remediation-methods-properties.md) API <br>  Agrega una colección de API con respuestas que contienen Administración de amenazas y vulnerabilidades de corrección que se han creado en el espacio empresarial. Los tipos de información de respuesta incluyen una actividad de corrección por identificador, todas las actividades de corrección y dispositivos expuestos de una actividad de corrección.
 
 - [Detección de dispositivo](device-discovery.md) <br> Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. A continuación, puede incorporar dispositivos detectados para reducir los riesgos asociados con tener puntos de conexión no administrados en la red.
 
@@ -62,7 +62,7 @@ Para obtener más información sobre las características de vista previa, vea [
 - [Las definiciones de grupo de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) ahora pueden incluir varios valores para cada condición. Puedes establecer varias etiquetas, nombres de dispositivo y dominios en la definición de un único grupo de dispositivos.
 
 ## <a name="march-2021"></a>Marzo 2021
-- [Administrar la protección contra alteraciones con el Centro de seguridad de Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puedes administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016 y Windows Server 2019 mediante un método denominado *tenant attach*.
+- [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016 y Windows Server 2019 mediante un método denominado *tenant attach*.
 
 
 ## <a name="january-2021"></a>Enero de 2021
@@ -76,7 +76,7 @@ Para obtener más información sobre las características de vista previa, vea [
 ## <a name="september-2020"></a>Septiembre de 2020
 
 - [Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Android. Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Android.
-- [Compatibilidad con macOS de administración de amenazas y vulnerabilidades](tvm-supported-os.md)<br> La administración de amenazas y vulnerabilidades para macOS está ahora en versión preliminar pública y detectará continuamente vulnerabilidades en los dispositivos macOS para ayudarle a priorizar la corrección centrándose en el riesgo. Obtenga más información en esta [entrada de blog de Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
+- [Amenaza y compatibilidad administración de vulnerabilidades macOS](tvm-supported-os.md)<br> La amenaza y administración de vulnerabilidades para macOS está ahora en versión preliminar pública y detectará continuamente vulnerabilidades en los dispositivos macOS para ayudarle a priorizar la corrección centrándose en el riesgo. Obtenga más información en esta [entrada Community blog de Microsoft Tech](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 ## <a name="august-2020"></a>Agosto de 2020
 
@@ -94,11 +94,11 @@ Para obtener más información sobre las características de vista previa, vea [
 
 ## <a name="april-2020"></a>Abril de 2020
 
-- [Compatibilidad & API de administración de vulnerabilidades](exposed-apis-list.md) <BR>Ejecute las llamadas API relacionadas con la administración de vulnerabilidades de Threat &, como obtener la puntuación de exposición a amenazas de su organización o la puntuación segura del dispositivo, el inventario de vulnerabilidades de software y dispositivos, la distribución de versiones de software, la información de vulnerabilidad del dispositivo, la información de recomendación de seguridad. Obtenga más información en esta [entrada de blog de Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+- [Compatibilidad & API de administración de vulnerabilidades](exposed-apis-list.md) <BR>Ejecute las llamadas API relacionadas con la administración de vulnerabilidades de Threat &, como obtener la puntuación de exposición a amenazas de su organización o la puntuación segura del dispositivo, el inventario de vulnerabilidades de software y dispositivos, la distribución de versiones de software, la información de vulnerabilidad del dispositivo, la información de recomendación de seguridad. Obtenga más información en esta [entrada Community blog de Microsoft Tech](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender para endpoint en macOS ofrece la protección de última generación a los dispositivos Mac. Los componentes principales de la plataforma de seguridad de extremo unificado ahora estarán disponibles para dispositivos Mac, incluida la [detección y respuesta de puntos de conexión.](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender para endpoint en macOS ofrece la protección de última generación a los dispositivos Mac. Los componentes principales de la plataforma de seguridad de extremo unificado ahora estarán disponibles para dispositivos Mac, [incluidos detección y respuesta de puntos de conexión](microsoft-defender-endpoint-mac.md).
 
 - [Información & de la aplicación de administración de vulnerabilidades y la versión de la aplicación](tvm-security-recommendation.md) <BR>Las aplicaciones y las versiones de aplicaciones que han llegado a su fin de vida se etiquetan o etiquetan como tales, por lo que es consciente de que ya no se admiten y pueden realizar acciones para desinstalar o reemplazar. Si lo hace, se reducirán los riesgos relacionados con diversas exposiciones de vulnerabilidades debido a las aplicaciones no apareadas.
 
@@ -112,7 +112,7 @@ Para obtener más información sobre las características de vista previa, vea [
 
 - [Indicadores de direcciones IP, direcciones URL/dominios](manage-indicators.md) <BR> Ahora puede permitir o bloquear direcciones URL o dominios con su propia inteligencia de amenazas.
 
-- [Expertos en amenazas de Microsoft: expertos a petición](microsoft-threat-experts.md) <BR> Ahora tiene la opción de consultar con expertos en amenazas de Microsoft desde varios lugares del portal para ayudarle en el contexto de la investigación.
+- [Expertos en amenazas de Microsoft: expertos a petición](microsoft-threat-experts.md) <BR> Ahora tiene la opción de consultar con Expertos en amenazas de Microsoft desde varios lugares del portal para ayudarle en el contexto de la investigación.
 
 - [Aplicaciones conectadas de Azure AD](connected-applications.md)<br> La página Aplicaciones conectadas proporciona información sobre las aplicaciones de Azure AD conectadas a Microsoft Defender para endpoint en su organización.
 
@@ -120,13 +120,13 @@ Para obtener más información sobre las características de vista previa, vea [
 
 ## <a name="september-2019"></a>Septiembre de 2019
 
-- [Configuración de protección contra alteraciones con Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Ahora puede activar (o desactivar) la Protección contra manipulaciones de su organización en el Portal de administración de dispositivos de Microsoft 365 (Intune).
+- [Configuración de protección contra alteraciones con Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Ahora puedes activar (o desactivar) la protección contra alteraciones de la organización en el portal de administración de dispositivos de Microsoft 365 (Intune).
 
 - [Respuesta en directo](live-response.md) <BR> Obtenga acceso instantáneo a un dispositivo mediante una conexión de shell remota. Realice un trabajo de investigación detallado y realice acciones de respuesta inmediatas para contener rápidamente las amenazas identificadas: en tiempo real.
 
 - [Laboratorio de evaluación](evaluation-lab.md) <BR> El laboratorio de evaluación de Microsoft Defender para endpoints está diseñado para eliminar las complejidades de la configuración de dispositivos y entornos para que puedas centrarte en evaluar las capacidades de la plataforma, ejecutar simulaciones y ver las características de prevención, detección y corrección en acción.
 
-- [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> Ahora puedes incorporar Windows Server 2008 R2 SP1.
+- [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> Ahora puede incorporar Windows Server 2008 R2 SP1.
 
 ## <a name="june-2019"></a>Junio de 2019
 

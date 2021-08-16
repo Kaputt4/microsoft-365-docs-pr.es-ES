@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 87c4ca3eddbc7e67f6fb9918bfc343f1ba9a3c0f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: cb71f31cb047d7310b9534cd75350b25ebc7e7b865f403b7fcf22fa01ffe1718
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648884"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889032"
 ---
 # <a name="remove-app-restriction-api"></a>Quitar la API de restricción de aplicaciones
 
@@ -48,6 +48,12 @@ Habilitar la ejecución de cualquier aplicación en el dispositivo.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
+> [!IMPORTANT]
+>
+> - El aislamiento total está disponible para dispositivos Windows 10, versión 1703.
+> - El aislamiento selectivo está disponible para dispositivos Windows 10 versión 1709 o posterior.
+> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
+
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
@@ -73,7 +79,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/unrestrictCodeEx
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

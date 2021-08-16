@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b44977252b18c29a5f05a67f4ffbdb7dc85a8188
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f718c5d81e0dc4c5b228540f949c99fca2e46928
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256788"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247049"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de idioma ofensivo para Microsoft Teams, Exchange y Yammer comunicaciones
 
@@ -91,8 +91,8 @@ Contoso decide usar el grupo de roles *Cumplimiento* de comunicaciones para asig
 | **Investigador de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver los metadatos y el contenido de los mensajes, escalar a revisores adicionales, escalar a un caso Advanced eDiscovery, enviar notificaciones a los usuarios y resolver la alerta. |
 | **Visor de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que administrarán informes de comunicación. Los usuarios asignados a este grupo de roles pueden tener acceso a todos los widgets de informes de la página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
 
-1. Los administradores de TI de Contoso inician sesión en la página Office 365 Permisos del Centro de seguridad **&** Cumplimiento [( https://compliance.microsoft.com/permissions)](https://compliance.microsoft.com/permissions) con credenciales para una cuenta de administrador global y seleccionan el vínculo para ver y administrar roles en Microsoft 365.
-2. En el **Centro de & seguridad,** van a **Permisos** y seleccionan el vínculo para ver y administrar roles en Office 365.
+1. Los administradores de TI de Contoso inician sesión en la [página Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/permissions) permisos con credenciales para una cuenta de administrador global y seleccionan el vínculo para ver y administrar roles en Microsoft 365.
+2. En el **Centro de cumplimiento de Microsoft 365**, van a **Permisos** y seleccionan el vínculo para ver y administrar roles en Office 365.
 3. Los administradores seleccionan el grupo de roles *Cumplimiento* de comunicaciones y, a continuación, **selecciona Editar grupo de funciones**.
 4. Los administradores **seleccionan Elegir miembros** en el panel de navegación izquierdo y, a continuación, selecciona **Editar**.
 5. Seleccionan **Agregar y,** a continuación, seleccionan la casilla para todos los usuarios de Contoso que administrarán el cumplimiento de la comunicación, investigarán y revisarán las alertas.
@@ -118,7 +118,7 @@ La forma más rápida de obtener acceso a la solución es iniciar sesión direct
 
 Otra forma fácil de que los administradores de TI de Contoso y los especialistas en cumplimiento accedan a la solución de cumplimiento de comunicaciones es iniciar sesión directamente en **el Centro de cumplimiento de Microsoft 365** [( . https://compliance.microsoft.com)](https://compliance.microsoft.com) Después de iniciar sesión, los usuarios simplemente necesitan seleccionar el control **Mostrar todo** para que se muestren todas las soluciones de cumplimiento y, después, seleccionar la solución **Cumplimiento de comunicaciones** para empezar.
 
-![Centro de cumplimiento de normas](../media/communication-compliance-case-center.png)
+![Centro de cumplimiento normativo](../media/communication-compliance-case-center.png)
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>A partir del catálogo Microsoft 365 de soluciones
 

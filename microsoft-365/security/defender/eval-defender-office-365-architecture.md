@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2a62756522ad82d04c72995508ca8ada1e575f94c9bc9940069d59057f7de63f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82931431b2c299a6ca367fa682218e5e3a461af7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897694"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247160"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Revisar Microsoft Defender para obtener Office 365 de arquitectura y conceptos clave
 
@@ -49,8 +49,8 @@ En la tabla siguiente se describe esta ilustración.
 |Llamada  |Descripción  |
 |---------|---------|
 |1     | El servidor host del remitente externo suele realizar una búsqueda de DNS pública para un registro MX que proporciona al servidor de destino para retransmitir el mensaje.  Esta referencia puede ser Exchange Online (EXO) directamente o una puerta de enlace SMTP que se ha configurado para retransmitir con EXO.  |
-|2     | Exchange Online Protection negocia y valida la conexión entrante e inspecciona los encabezados y el contenido del mensaje para determinar qué directivas adicionales, etiquetado o procesamiento son necesarios.  |
-|3     | Exchange Online se integra con Microsoft Defender para Office 365 ofrecer protección, mitigación y corrección de amenazas más avanzada. |
+|2      | Exchange Online Protection negocia y valida la conexión entrante e inspecciona los encabezados y el contenido del mensaje para determinar qué directivas adicionales, etiquetado o procesamiento son necesarios.  |
+|3      | Exchange Online se integra con Microsoft Defender para Office 365 ofrecer protección, mitigación y corrección de amenazas más avanzada. |
 |4      | Un mensaje que no es malintencionado, bloqueado o en cuarentena se procesa y entrega al destinatario en EXO donde las preferencias del usuario relacionadas con el correo no deseado, las reglas de buzón u otras opciones de configuración se evalúan y desencadenan. |
 |5      | La integración con Active Directory local se puede habilitar con Azure AD Conectar para sincronizar y aprovisionar cuentas y objetos habilitados para correo para Azure Active Directory y, en última instancia, Exchange Online. |
 |6      | Al integrar un entorno local, se recomienda encarecidamente usar un servidor Exchange para la administración y administración compatibles de atributos, configuraciones y configuraciones relacionados con el correo |

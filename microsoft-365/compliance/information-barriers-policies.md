@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08a0b3722bad18b2823b0ba0e5c998d570f3654e
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8b29c2f5256c991e327e8962f02a96a294a6bec6
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362587"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246552"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -29,7 +29,7 @@ Con las barreras de información, puede definir directivas diseñadas para imped
 En este artículo se describe cómo planear, definir, implementar y administrar directivas de barrera de información. Hay varios pasos implicados y el flujo de trabajo se divide en varias partes. Asegúrese de leer los [requisitos previos](#prerequisites) y todo el proceso antes de empezar a definir (o editar) directivas de barrera de información.
 
 > [!TIP]
-> En este artículo se incluye un [escenario](#example-contosos-departments-segments-and-policies) de ejemplo y un libro de Excel [para](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) ayudarle a planear y definir las directivas de barrera de información.
+> En este artículo se incluye un [escenario de ejemplo](#example-contosos-departments-segments-and-policies) para ayudarle a planear y definir las directivas de barrera de información.
 
 ## <a name="concepts-of-information-barrier-policies"></a>Conceptos de las directivas de barrera de información
 
@@ -98,7 +98,7 @@ Además de las licencias y permisos [necesarios,](information-barriers.md#requir
 Cuando se cumplan todos los requisitos previos, continúe con la siguiente sección.
 
 > [!TIP]
-> Para ayudarle a preparar el plan, se incluye un escenario de ejemplo en este artículo. [Vea Departamentos, segmentos](#example-contosos-departments-segments-and-policies)y directivas de Contoso.<p>Además, hay disponible un Excel de datos descargable para ayudarle a planear y definir sus segmentos y directivas (y crear los cmdlets de PowerShell). [Obtener el libro](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx).
+> Para ayudarle a preparar el plan, se incluye un escenario de ejemplo en este artículo. [Vea Departamentos, segmentos](#example-contosos-departments-segments-and-policies)y directivas de Contoso.
 
 ## <a name="part-1-segment-users"></a>Parte 1: Segmentar usuarios
 
@@ -260,7 +260,7 @@ Con PowerShell, puede ver el estado de cuentas de usuario, segmentos, directivas
 | Segmentos | Use el cmdlet **Get-OrganizationSegment.**<p> Sintaxis: `Get-OrganizationSegment` <p> Este cmdlet mostrará una lista de todos los segmentos definidos para su organización. |
 | Directivas de barreras de información | Use el cmdlet **Get-InformationBarrierPolicy.** <p> Sintaxis: `Get-InformationBarrierPolicy` <p> Este cmdlet mostrará una lista de directivas de barrera de información definidas y su estado. |
 | La aplicación de directiva de barrera de información más reciente | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus.** <p> Sintaxis: `Get-InformationBarrierPoliciesApplicationStatus`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se ha completado, ha fallado o está en curso. |
-| Todas las aplicaciones de directiva de barrera de información|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se ha completado, ha fallado o está en curso.|
+| Todas las aplicaciones de directiva de barrera de información|El uso de `Get-InformationBarrierPoliciesApplicationStatus -All`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se ha completado, ha fallado o está en curso.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 
@@ -315,11 +315,11 @@ Con los segmentos definidos, Contoso continúa con la definición de directivas.
 
 Contoso define tres directivas, como se describe en la tabla siguiente:
 
-| Policy | Definición de directiva |
+| Directiva | Definición de directiva |
 |:---------|:--------------------|
 | **Directiva 1: impedir que Ventas se comunique con Investigación** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> En este ejemplo, la directiva de barrera de información se denomina *Ventas-Investigación*. Cuando esta directiva esté activa y se aplique, le ayudará a evitar que los usuarios que se encuentran en el segmento Ventas se comuniquen con usuarios en el segmento Investigación. Esta directiva es una directiva uni-way; no impedirá que Research se comunique con Sales. Para eso, es necesaria la directiva 2. |
 | **Directiva 2: impedir que Investigación se comunique con Ventas** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> En este ejemplo, la directiva de barrera de información se denomina *Investigación-Ventas*. Cuando esta directiva esté activa y se aplique, le ayudará a evitar que los usuarios que se encuentran en el segmento Investigación se comuniquen con usuarios en el segmento Ventas. |
-| **Directiva 3: Permitir que la fabricación se comunique solo con recursos humanos y marketing** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> En este caso, la directiva de barrera de información se denomina *Industria-RR.HH.Marketing*. Cuando esta directiva está activa y se aplica, Industria solo puede comunicarse con RR. HH. y Marketing. Los recursos humanos y el marketing no están restringidos para comunicarse con otros segmentos. |
+| **Directiva 3: Permitir que la fabricación se comunique solo con recursos humanos y marketing** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> En este caso, la directiva de barrera de información se denomina *Industria-RR.HH.Marketing*. Cuando esta directiva está activa y se aplica, Industria solo puede comunicarse con RR. HH. y Marketing. Los recursos humanos y el marketing no están restringidos para comunicarse con otros segmentos. |
 
 Con segmentos y directivas definidos, Contoso aplica las directivas ejecutando el cmdlet **Start-InformationBarrierPoliciesApplication.**
 

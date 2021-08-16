@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7df4e9f2a9827289ab0bd85c9696e03aac9e3bb3
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f629d399846ce9e241c088b5f1791faf54ab0cbe9b4ca7072a5b7fc73b5f54b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873252"
 ---
 # <a name="contact-support-for-kenya"></a>Póngase en contacto con el soporte técnico de Kenia
 

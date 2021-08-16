@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 1aa318c75dcfcb339ae1f7c52832938805593e47b966d68694380e3d760f0569
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: b61abfa58d10aca154cee02edf15a56b516495b8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523792"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247079"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -63,7 +63,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
         - Estos archivos se pueden etiquetar automáticamente en reposo antes o después de que se creen las políticas de etiquetado automático. Los archivos no se pueden etiquetar automáticamente si forman parte de una sesión abierta (el archivo está abierto).
         - Actualmente, los datos adjuntos a elementos de lista no son compatibles y no se etiquetarán automáticamente.
     - Máximo 25 000 archivos etiquetados automáticamente en su espacio empresarial por día
-    - Máximo de 10 directivas de etiquetado automático por espacio empresarial, cada una con un máximo de 10 sitios (SharePoint o OneDrive). Con las [recientes mejoras que se están implementando](#recent-enhancements-for-auto-labeling-policies), estas cifras aumentan a 100 directivas y 100 sitios cuando se especifican individualmente. También puede especificar todos los sitios, y esta configuración está exenta del máximo de 100 sitios.
+    - Máximo de 100 directivas de etiquetado automático por espacio empresarial, cada una con un máximo de 100 sitios (SharePoint o OneDrive) cuando se especifican individualmente. También puede especificar todos los sitios, y esta configuración está exenta del máximo de 100 sitios.
     - Los valores existentes para modificado, modificado por y la fecha no se cambian como resultado de las directivas de etiquetado automático, tanto en el modo de simulación como al aplicar las etiquetas.
     - Cuando la etiqueta aplica el cifrado de, el [issuer Management y el propietario de Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la cuenta en la que se modificó por última vez el archivo.
 
@@ -98,7 +98,7 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 |Reemplazar el cifrado IRM aplicado sin una etiqueta|Sí, si el usuario tiene el uso mínimo adecuado de exportar |Sí (solo correo electrónico) |
 |Etiquetar correo electrónico entrante|No |Sí|
 
-\*El etiquetado automático no está disponible actualmente en todas las regiones. Si su espacio empresarial no es compatible con esta funcionalidad, la pestaña etiquetado automático no se puede ver en el centro de etiquetado de administración.
+\*El etiquetado automático no está disponible actualmente en todas las regiones. Si su espacio empresarial no es compatible con esta funcionalidad, la pestaña **Etiquetado automático** no se puede ver en el Centro de cumplimiento.
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Forma en que se evalúan varias condiciones cuando se aplican en más de una etiqueta
 
@@ -185,7 +185,7 @@ Específico para las etiquetas integradas:
 
 - Para las etiquetas recomendadas en las versiones de escritorio de Word, el contenido confidencial que desencadenó la recomendación está marcado para que los usuarios puedan revisar y quitar el contenido confidencial en lugar de aplicar la etiqueta de confidencialidad recomendada.
 
-- Para obtener más información sobre cómo se aplican estas etiquetas en las aplicaciones de Office, capturas de pantalla de ejemplo, y cómo se detecta la información confidencial, consulte [Aplicar o recomendar automáticamente etiquetas de confidencialidad a sus archivos y correos electrónicos en Office](https://support.office.com/es-ES/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Para obtener más información sobre cómo se aplican estas etiquetas en las aplicaciones de Office, capturas de pantalla de ejemplo, y cómo se detecta la información confidencial, consulte [Aplicar o recomendar automáticamente etiquetas de confidencialidad a sus archivos y correos electrónicos en Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Específico del cliente de etiquetado unificado de Azure Information Protection:
 
@@ -196,9 +196,6 @@ Específico del cliente de etiquetado unificado de Azure Information Protection:
 - La información confidencial se detecta en el texto del cuerpo de los documentos y correos electrónicos, y en los encabezados y pies de página, pero no en la línea de asunto o en los datos adjuntos de correo electrónico.
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange
-
-> [!IMPORTANT]
-> Actualmente se están implementando nuevas mejoras para las directivas de etiquetado automático que incluyen resultados de simulación más rápidos, compatibilidad para más archivos y más sitios, y notificaciones por correo electrónico. Para obtener más información, vea [Mejoras recientes para las directivas de etiquetado automático](#recent-enhancements-for-auto-labeling-policies).
 
 Asegúrese de tener en cuenta los requisitos previos antes de configurar las directivas de etiquetado automático.
 
@@ -231,9 +228,7 @@ Flujo de trabajo para una directiva de etiquetado automático:
 
 1. Crear y configurar una directiva de etiquetado automático.
 
-2. Ejecute la directiva en modo simulación, que puede tardar 48 horas en completarse.
-    
-    Con las [recientes mejoras](#recent-enhancements-for-auto-labeling-policies) que se están implementando, este tiempo se reduce a 12 horas y la simulación completada activa una notificación por correo electrónico que se envía al usuario configurado para recibir [alertas de actividad](alert-policies.md).
+2. Ejecute la directiva en modo simulación, que puede tardar 12 horas en completarse. La simulación completada desencadena una notificación por correo electrónico que se envía al usuario configurado para recibir [alertas de actividad](alert-policies.md).
 
 3. Revise los resultados y, si es necesario, perfeccione su directiva. Vuelva a ejecutar el modo de simulación y espere a que se complete de nuevo.
 
@@ -270,7 +265,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 5. En la página **Cambiar el nombre de la directiva de etiquetado automático**: proporcione un nombre único y, opcionalmente, una descripción que ayude a identificar la etiqueta aplicada automáticamente, las ubicaciones y las condiciones que identifican el contenido que se va a etiquetar.
 
-6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, sitios de SharePoint y OneDrive. Después, seleccione **Siguiente**.
+6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, SharePoint y OneDrive. Si no desea mantener el valor predeterminado de **Todos** para las ubicaciones elegidas, seleccione el vínculo para elegir instancias específicas. Después, seleccione **Siguiente**.
 
     ![Asistente de etiquetado automático de la página Elegir ubicaciones](../media/locations-auto-labeling-wizard.png)
     
@@ -382,7 +377,7 @@ Para obtener más información sobre los cmdlets de PowerShell que son compatibl
 
 ## <a name="recent-enhancements-for-auto-labeling-policies"></a>Mejoras recientes para las directivas de etiquetado automático.
 
-Las recientes mejoras que se están implementando para las directivas de etiquetado automático para OneDrive y SharePoint tienen las siguientes mejoras con respecto a la versión anterior:
+Las recientes mejoras para las directivas de etiquetado automático para OneDrive y SharePoint tienen las siguientes mejoras con respecto a la versión anterior:
 
 - Máximo de 100 directivas de etiquetado automático por espacio empresarial en lugar de 10.
 
@@ -409,8 +404,6 @@ Las recientes mejoras que se están implementando para las directivas de etiquet
 Cuando su espacio empresarial tenga las nuevas mejoras, verá la siguiente notificación en la pestaña **Etiquetado automático**:
 
 ![Banner de notificación para confirmar que un espacio empresarial tiene las nuevas mejoras](../media/auto-labeling-updatedbanner.png)
-
-Si no ve esta notificación, el espacio empresarial no ha obtenido las nuevas mejoras, pero vuelva a comprobarlo en unos días.
 
 > [!NOTE]
 > Si tenía directivas de etiquetado automático que estaban en modo de simulación cuando el espacio empresarial recibió las nuevas mejoras, debe volver a ejecutar la simulación. Si este escenario se aplica a usted, se le pedirá que seleccione **reiniciar simulación** al revisar la simulación. Si no reinicia la simulación, no se completará.
