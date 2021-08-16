@@ -1,5 +1,5 @@
 ---
-title: Habilitar el entorno de evaluación de Microsoft Defender para Identity, configurar la instancia MDI, instalar y configurar el sensor MDI, permitir que el sensor MDI detecte administradores locales
+title: Habilitar el entorno de evaluación para Microsoft Defender for Identity
 description: Configure Microsoft Defender for Identity en un entorno piloto Microsoft 365 Defender de prueba mediante la instalación de & la configuración del sensor y la descubriendo administradores locales en otros equipos.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f739c9897c9c43831cb4ed23cabaa1705c75d712
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: cff8a37999014cc037a0d76e99ff5b9a05ec44d28acab66e3238d0b4576969fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839017"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Habilitar el entorno de evaluación para Microsoft Defender for Identity
 

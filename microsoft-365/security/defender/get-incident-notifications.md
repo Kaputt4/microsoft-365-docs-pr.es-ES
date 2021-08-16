@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2e47b35646a1cd6e1075d80f9ed0550e8e1e819f
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 33de1e3adc004e05a8c383c8277c358d769bf520528c4c7332e23c5d05635051
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651397"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838945"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtener notificaciones de incidentes por correo electrónico
 
@@ -37,7 +37,7 @@ ms.locfileid: "52651397"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Puedes configurar Microsoft 365 Defender para notificar a tu personal con un correo electrónico sobre nuevos incidentes o actualizaciones de incidentes existentes. Puede elegir obtener notificaciones en función de:
+Puede configurar Microsoft 365 Defender para notificar a su personal con un correo electrónico sobre nuevos incidentes o actualizaciones de incidentes existentes. Puede elegir obtener notificaciones en función de:
 
 - Gravedad del incidente.
 - Grupo de dispositivos.
@@ -55,7 +55,7 @@ Del mismo modo, si tu organización usa el control de acceso basado en roles (RB
 
 Siga estos pasos para crear una nueva regla y personalizar la configuración de notificaciones por correo electrónico.
 
-1. En el panel de navegación, **seleccione Configuración > Microsoft 365 Defender > notificaciones de correo** electrónico de incidentes .
+1. En el panel de navegación, **seleccione Configuración > Microsoft 365 Defender > notificaciones de correo electrónico de incidentes**.
 2. Seleccione **Agregar elemento**.
 3. En la **página Conceptos básicos,** escriba el nombre de la regla y una descripción y, a continuación, **seleccione Siguiente**.
 4. En la **página Configuración de** notificaciones, configure:

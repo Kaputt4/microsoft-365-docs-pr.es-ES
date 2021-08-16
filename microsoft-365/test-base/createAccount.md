@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 18609d83b64f03958ed4b74cf0f8a430665e520f
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 8c31ed87e8662d8e0b2bdc6321f980621a7c08d7c32fa4f7b0c7d6fc285042c9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53323028"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888321"
 ---
 # <a name="step-1-create-a-test-base-account"></a>Paso 1: Crear una cuenta base de prueba
 
@@ -49,7 +49,7 @@ Si no tienes una suscripción a Azure, crea una [cuenta gratuita antes](https://
 
 5.  Por último, haga clic en ```Review + Create``` para validar y habilitar la cuenta recién creada.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Avance al siguiente artículo para empezar con step 2: **Learn how upload your package.**
 > [!div class="nextstepaction"]

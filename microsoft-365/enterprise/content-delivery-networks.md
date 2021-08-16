@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre cómo Office 365 redes de entrega de contenido (CDN) para mejorar el rendimiento.
-ms.openlocfilehash: 1a963d14df14e8644072a159e35c8590f953dae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 853c145e616739fb9cbc1e15a9939dbc38c2b2cf1803e5bfca1b36d2dc254373
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911101"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870968"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de entrega de contenido (CDN)
 
@@ -76,7 +76,7 @@ Para ver una serie de vídeos cortos que proporcionan información conceptual y 
 
 Aunque no forma parte del Office 365 CDN, puede usar estas CDN en su inquilino de Office 365 para obtener acceso a bibliotecas de desarrollo de SharePoint, código personalizado y otros fines que se encuentran fuera del ámbito del Office 365 CDN.
 
-### <a name="azure-cdn"></a>Azure CDN
+### <a name="azure-cdn"></a>CDN de Azure
 
 >[!NOTE]
 >A partir del tercer trimestre de 2020, SharePoint Online empezará a almacenar vídeos en caché en el Azure CDN para admitir una reproducción y confiabilidad de vídeo mejoradas. Los vídeos populares se transmitirán desde CDN punto de conexión más cercano al usuario. Estos datos permanecerán dentro del límite Microsoft 365 cumplimiento. Este es un servicio gratuito para todos los inquilinos y no requiere ninguna acción del cliente para configurar.
@@ -130,7 +130,7 @@ Las CDN en uso por Office 365 siempre están sujetas a cambios y, en muchos caso
 |CDN  |Empresa  |Uso  |Vínculo  |
 |---------|---------|---------|---------|
 |Office 365 CDN     |Akamai         |Activos genéricos en orígenes públicos, SharePoint de usuario en orígenes privados         |[Uso de la red de entrega de contenido de Office 365 con SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
-|Azure CDN     |Microsoft         |Código personalizado, SharePoint Framework soluciones         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
+|CDN de Azure     |Microsoft         |Código personalizado, SharePoint Framework soluciones         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Microsoft Ajax CDN (solo lectura)     |Microsoft         |Bibliotecas comunes para Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js etc.         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>¿Qué mejoras de rendimiento CDN proporciona?

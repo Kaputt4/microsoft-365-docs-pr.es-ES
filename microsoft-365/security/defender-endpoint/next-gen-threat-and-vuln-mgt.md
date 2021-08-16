@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 06fdea1c4d84ca4cd23aeb7e715c0087f65275b1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c71a3e5169334adc5d6d6f2b901d82678e5aa27bee47bd20faf06e569a14b63c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857308"
 ---
 # <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 
@@ -83,7 +83,7 @@ Vea este vídeo para ver un recorrido completo de Administración de amenazas y 
 
 ## <a name="navigation-pane"></a>Panel de navegación 
 
-Área | Descripción
+Área | Description
 :---|:---
 **Panel**   | Obtenga una vista de alto nivel de la puntuación de exposición de la organización, puntuación segura de Microsoft para dispositivos, distribución de exposición de dispositivos, recomendaciones de seguridad principales, software vulnerable superior, actividades de corrección superior y datos de dispositivos expuestos superiores.
 [**Recomendaciones de seguridad**](tvm-security-recommendation.md) | Consulta la lista de recomendaciones de seguridad e información de amenazas relacionada. Al seleccionar un elemento de la lista, se abre un panel desplegable con detalles de vulnerabilidad, un vínculo para abrir la página de software y opciones de corrección y excepción. También puedes abrir un vale en Intune si los dispositivos están unidos a través de Azure Active Directory y has habilitado las conexiones de Intune en Defender para endpoint.
@@ -106,7 +106,7 @@ Vea los siguientes artículos para obtener las API relacionadas:
 - [API de vulnerabilidad](vulnerability.md)
 - [Enumerar vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Plataformas y sistemas operativos compatibles](tvm-supported-os.md)
 - [Panel de administración de vulnerabilidades amenazas](tvm-dashboard-insights.md)

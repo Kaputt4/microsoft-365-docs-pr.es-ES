@@ -9,12 +9,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Obtenga información sobre nuevas formas de descubrir y explorar información en Temas Microsoft Viva.
-ms.openlocfilehash: 65084663db1b9cdee4a179831a98c297c83d30d7
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 07b12ab191ec3222deb3e01f4b039f7b15dc8a5bed64047d144af35a9159a611
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840160"
 ---
 # <a name="get-started-with-microsoft-viva-topics"></a>Introducción a los temas de Microsoft Viva
 
@@ -44,7 +44,7 @@ Solo se mostrarán los recursos que se han compartido con usted. Otros pueden ve
 
 Las páginas de temas proporcionan todos los detalles de un tema y pueden ser curadas por cualquier persona designada por su organización. Aunque en la tarjeta del tema solo se muestran dos personas y recursos, verá la lista completa en la página del tema. Edite la página para mejorar la descripción o actualizar las conexiones a personas y recursos. Aunque todos pueden proporcionar comentarios para mejorar la red, es posible que la organización restrinja quién puede editar temas directamente. Solo las personas con las que se han compartido los recursos verán los temas y los recursos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 [Información general de Temas Microsoft Viva](topic-experiences-overview.md)</br>
 [Información general del centro de temas](topic-center-overview.md)</br>
 [Crear un tema](create-a-topic.md)</br>

@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Configurar SharePoint Syntex
-ms.openlocfilehash: 7d97685db30d5eac1c0316d5ce36bf627b02b8a1cc771a11aca7ece81230227c
-ms.sourcegitcommit: 584778d28c280b8747c11d14aeb3eac58909e580
+ms.openlocfilehash: b856cafb7c2be292ed912fc94329ae6f3f23bb5f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57791193"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257110"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ed597c55a646eb00d6e6d256c287b22c119f8148
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 787fd55e9ad17607cfa0fa5f787a279bb0e2d1839d2029b9a7ec6a4bb5f1b65a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297349"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838973"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
 
@@ -36,7 +36,7 @@ ms.locfileid: "52297349"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender no solo proporciona capacidades de detección y análisis, sino que también proporciona contención y eliminación de malware. La contención incluye pasos para reducir el impacto del ataque, mientras que la eliminación garantiza que todos los seguimientos de la actividad del atacante se quiten de la red.  Microsoft 365 Defender ofrece varias acciones de corrección que se pueden configurar para [corregir](m365d-autoir.md) automáticamente según el sistema operativo y el tipo de ataque.
+Microsoft 365 Defender proporciona capacidades de detección y análisis, sino que también proporciona contención y eliminación de malware. La contención incluye pasos para reducir el impacto del ataque, mientras que la eliminación garantiza que todos los seguimientos de la actividad del atacante se quiten de la red.  Microsoft 365 Defender ofrece varias acciones de corrección que [](m365d-autoir.md) se pueden configurar para corregir automáticamente según el sistema operativo y el tipo de ataque.
 
 Microsoft 365 Defender ofrece varias acciones de corrección que los analistas pueden iniciar manualmente. Las acciones se separan en dos categorías: Acciones en dispositivos y Acciones en archivos. Algunas acciones se pueden usar para detener inmediatamente la amenaza, mientras que otras ayudan a realizar más análisis forenses.
 
@@ -60,7 +60,7 @@ Microsoft 365 Defender ofrece varias acciones de corrección que los analistas p
 Continuando con el ejemplo [de Detectar, analizar](first-incident-analyze.md#analyze-your-first-incident)y analizar incidentes, un analista puede corregir este incidente con estas acciones:
 
 1. Restablecer inmediatamente la contraseña de la cuenta de usuario
-2. Aislar el dispositivo en Microsoft 365 Defender hasta que se complete el análisis profundo
+2. Aísle el dispositivo en Microsoft 365 Defender hasta que se complete el análisis profundo
 3. Asegúrese de que el archivo malintencionado se ha puesto en cuarentena SharePoint
 4. Comprobar qué puntos de conexión se vieron afectados por malware
 5. Recompilar sistemas

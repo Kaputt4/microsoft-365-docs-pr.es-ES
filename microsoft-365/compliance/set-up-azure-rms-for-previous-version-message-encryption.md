@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versión anterior de Cifrado de mensajes de Office 365 depende de Microsoft Azure Rights Management (anteriormente conocido como Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 978a8027c79de574b80aeedabcbbd51fa6f9e2a0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 611e8f645b9149898e5c3cb0f10305e49deb90cd92b14aad7c946ead147e8fd9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871374"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configurar Azure Rights Management para la versión anterior del cifrado de mensajes
 
@@ -58,7 +58,7 @@ Un TPD es un archivo XML que contiene información sobre la configuración de ad
 
 2. Elija la dirección URL de uso compartido de claves que corresponda a la ubicación geográfica de su organización:
 
-|**Location**|**Url de ubicación de uso compartido de claves**|
+|**Ubicación**|**Url de ubicación de uso compartido de claves**|
 |:-----|:-----|
 |Norteamérica  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Unión Europea  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
@@ -94,7 +94,7 @@ Un TPD es un archivo XML que contiene información sobre la configuración de ad
 
    Entre otras cosas, este cmdlet comprueba la conectividad con el servicio Azure Rights Management, descarga el TPD y comprueba su validez.
 
-6. Ejecute el cmdlet [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) de la siguiente manera para deshabilitar que las plantillas Azure Rights Management estén disponibles en Outlook web y Outlook: 
+6. Ejecute el cmdlet [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) de la siguiente manera para deshabilitar que las plantillas Azure Rights Management estén disponibles en Outlook en la Web y Outlook: 
 
    ```powershell
    Set-IRMConfiguration -ClientAccessServerEnabled $false
@@ -113,7 +113,7 @@ Un TPD es un archivo XML que contiene información sobre la configuración de ad
 
 Puede seguir usando las reglas de flujo de correo Cifrado de mensajes de Office 365 existentes con Active Directory Rights Management, pero no puede configurar ni usar las nuevas funcionalidades de OME. En su lugar, debe migrar a Azure Information Protection. Para obtener información sobre la migración y lo que esto significa para su organización, vea Migración de [AD RMS a Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="importTPDs"> </a>
 
 Una vez que haya completado Azure Rights Management configuración, si desea habilitar las nuevas funcionalidades de OME, consulte Configurar nuevas funcionalidades de Cifrado de mensajes de Office 365 integradas en [Azure Information Protection.](./set-up-new-message-encryption-capabilities.md)

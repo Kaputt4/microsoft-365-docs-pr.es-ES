@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos principal.
-ms.openlocfilehash: 8d2e2a20135312a8f111a071abbe77b03b8e8363
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: b71dfdbdee715c41c5aa2f5f1fe235c8a42412c01184a54172cf8846c3e48a14
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311782"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871434"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos principal
 
-Después de crear un caso de exhibición de documentos electrónicos principal y de que los interesados en el caso estén en espera, puede crear y ejecutar una o más búsquedas de contenido relevante para el caso. Las búsquedas asociadas con un caso de  exhibición de documentos electrónicos principales no aparecen en la página Búsqueda de contenido del centro de Microsoft 365 cumplimiento. Estas búsquedas se enumeran en la **página Búsquedas** del caso de exhibición de documentos electrónicos principales al que están asociadas las búsquedas. Esto también significa que los miembros del caso solo pueden acceder a las búsquedas asociadas a un caso.
+Después de crear un caso de exhibición de documentos electrónicos principal y de que los interesados en el caso estén en espera, puede crear y ejecutar una o más búsquedas de contenido relevante para el caso. Las búsquedas asociadas con un caso de exhibición de documentos electrónicos principales no aparecen en la página **Búsqueda** de contenido en el Centro de cumplimiento de Microsoft 365. Estas búsquedas se enumeran en la **página Búsquedas** del caso de exhibición de documentos electrónicos principales al que están asociadas las búsquedas. Esto también significa que los miembros del caso solo pueden acceder a las búsquedas asociadas a un caso.
 
 Para crear una búsqueda de exhibición de documentos electrónicos principal:
   
 1. Vaya a e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados y es miembro <https://compliance.microsoft.com> del caso.
 
-2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en Mostrar todo **y,** a continuación, haga clic en **eDiscovery > Core**.
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en **Exhibición de documentos electrónicos > Core**.
 
 3. En la **página Exhibición de** documentos electrónicos principal, seleccione el caso en el que desea crear una búsqueda asociada y, a continuación, haga clic **en Abrir caso**.
 

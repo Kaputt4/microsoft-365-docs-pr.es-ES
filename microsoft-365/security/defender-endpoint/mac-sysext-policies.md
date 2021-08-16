@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0d1edd11f378f91dabd7e1ca7910070ab6961e90
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 49ea9fff9ab6d12cd9483c574d33f1e8d247ac7fe1728383311a4e65195eec8b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857394"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 
@@ -308,7 +308,7 @@ Para implementar este perfil de configuración personalizado:
 1. En Intune, abra **Administrar configuración**  >  **de dispositivo.** Seleccione **Administrar**  >  **perfiles Crear**  >  **perfil**.
 2. Elija un nombre para el perfil. Cambiar **Platform=macOS** y **Profile type=Custom**. Seleccione **Configurar**.
 3. Abra el perfil de configuración y cargue **sysext.xml**. Este archivo se creó en el paso anterior.
-4. Haga clic en **Aceptar**.
+4. Seleccione **Aceptar**.
 
     ![Extensión del sistema en la captura de pantalla de Intune](images/mac-system-extension-intune.png)
 

@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-ms.openlocfilehash: 22d146b1d376bab134e82ad7d1313cb7881ca45b
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 9d42e5f352631c744d04d312f40f359017c6100b392541b1c5136971bcc09494
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50144976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871118"
 ---
 # <a name="push-content-types-to-a-hub"></a>Insertar tipos de contenido en un centro
 
@@ -41,7 +41,7 @@ Insertar tipos de contenido en un centro
 5. Seleccione los sitios del sitio central que quiera y después **Aceptar**.
 6. Seleccione **Guardar**.
 
-Cuando inserta un tipo de contenido en un centro existente y sus sitios asociados existentes por primera vez, puede tardar hasta una hora desde la visita al centro o a los sitios asociados para que la configuración se actualice en el sitio. Ninguna nueva asociación al centro requerirá esta espera y todas reflejarán la configuración en unos cuantos minutos.
+Al insertar un tipo de contenido en un centro existente y sus sitios asociados existentes por primera vez, pueden tardar hasta una hora desde el momento en que se visitan el centro o los sitios asociados para que la configuración se actualice en el sitio. Las nuevas asociaciones al centro no requerirán esta espera y tendrán la configuración reflejada en unos minutos.
 
 Una vez actualizada la configuración, el tipo de contenido con estas opciones de configuración estará disponible en cualquier sitio recientemente asociado con el centro en cuestión de minutos. Después, el tipo de contenido se agregará automáticamente a las nuevas listas o bibliotecas creadas unos minutos después de la creación. Un tipo de contenido insertado se agregará a una biblioteca de documentos solo si se deriva directa o indirectamente del tipo de contenido de documento, y un tipo de contenido se agregará a una lista solo si no deriva de forma directa o indirecta del tipo de contenido del documento.
 

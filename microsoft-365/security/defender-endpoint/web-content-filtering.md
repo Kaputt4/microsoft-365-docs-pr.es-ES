@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7395e7fb22c8ad090ab35868d385fa240700505c
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 9ee25f7f9e227cbaf5691489bcdea9c421762b40e9984d7ddaf641028fcf9e66
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726417"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834804"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -62,7 +62,7 @@ Antes de probar esta característica, asegúrese de cumplir los siguientes requi
 
 ## <a name="user-experience"></a>Experiencia del usuario
 
-La protección de red proporciona la experiencia de bloqueo para exploradores compatibles con terceros, que proporciona una notificación del sistema que notifica al usuario de una conexión bloqueada. Para una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
+La protección de red proporciona la experiencia de bloqueo para exploradores compatibles con terceros, que proporciona un mensaje de nivel del sistema que notifica al usuario de una conexión bloqueada. Para una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
 
 ## <a name="data-handling"></a>Control de datos
 
@@ -117,7 +117,7 @@ Se abrirá un panel donde puede seleccionar la prioridad y agregar detalles adic
 
 ### <a name="url-category-lookup"></a>Búsqueda de categorías de dirección URL
 
-Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal Microsoft 365 Defender web ( https://security.microsoft.com) . En los resultados de búsqueda url, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Los administradores también pueden disputar la categoría del dominio directamente desde esta página, como se muestra en la imagen siguiente. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
+Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal de Microsoft 365 Defender ( en https://security.microsoft.com) **Búsqueda de extremos**  >  . En los resultados de búsqueda url, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Los administradores también pueden disputar la categoría del dominio directamente desde esta página, como se muestra en la imagen siguiente. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
 
 ![Imagen de resultados de búsqueda de categorías de filtrado de contenido web](../../media/web-content-filtering-category-lookup.png)
 
@@ -176,4 +176,3 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 - [Supervisar la seguridad web](web-protection-monitoring.md)
 - [Responder a amenazas web](web-protection-response.md)
 - [Requisitos de protección de red](web-content-filtering.md)
-

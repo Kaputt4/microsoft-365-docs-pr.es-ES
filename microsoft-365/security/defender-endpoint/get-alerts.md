@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c200e2e0b214b634b3a893d07cc8044995190f8eb89f8adad1e3b96ad1f7ae19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e295d4014231242bf1e3ae7dceaeb38dfea2fa1c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818778"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246313"
 ---
 # <a name="list-alerts-api"></a>API de listas de alertas
 
@@ -43,7 +43,7 @@ ms.locfileid: "53818778"
 Recupera una colección de alertas.
 <br>Admite [consultas de OData V4](https://www.odata.org/documentation/).
 <br>Operadores compatibles con OData:
-<br>```$filter``` on: ```alertCreationTime``` , , , , y ```lastUpdateTime``` ```incidentId``` ```InvestigationId``` ```status``` ```severity``` ```category``` properties.
+<br>```$filter``` on: ```alertCreationTime``` , , , , , , , , y ```lastUpdateTime``` ```incidentId``` ```InvestigationId``` ```id``` ```asssignedTo``` ```detectionSource``` ```lastEventTime``` ```status``` ```severity``` ```category``` properties.
 <br>```$top``` con un valor máximo de 10 000
 <br>```$skip```
 <br>```$expand``` de ```evidence```
@@ -83,7 +83,7 @@ GET /api/alerts
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Autorización | String | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -314,6 +314,6 @@ Aquí tiene un ejemplo de la respuesta.
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)

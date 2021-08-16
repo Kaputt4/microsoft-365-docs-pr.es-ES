@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ce048796acd52e6daf8d4694cf72a0bd17c75ab4
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 91fcbdfeeec0a4127f0e1642049fd421a30df00ed4bd757a89d582015d477fc6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53323327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888336"
 ---
 # <a name="windows-feature-update-validation"></a>Windows Validación de actualización de características
 
@@ -52,7 +52,7 @@ A continuación se indican los pasos que debe seguir al rellenar los detalles **
 ![La validación de actualización de características le permite revisar los resultados rápidamente](Media/Feature-update-validation-04.png)
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Avance al siguiente artículo para empezar a comprender el análisis de regresión de memoria.
 > [!div class="nextstepaction"]

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4fab4e7d8b736646223928610e257e84d628b6d960f15f480506627b9ecf5960
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ca52f60d6bece71ca778c067fb96241b82c9093
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801850"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246382"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -138,9 +138,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 
 [Paso 2: Vea los resultados de la búsqueda](#step-2-view-the-search-results)
 
-[Paso 3: Filtre los resultados de la búsqueda](#step-3-filter-the-search-results)
-
-[Paso 4: Exportar los resultados de búsqueda a un archivo](#step-4-export-the-search-results-to-a-file)
+[Paso 3: Exportar los resultados de la búsqueda a un archivo](#step-3-export-the-search-results-to-a-file)
 
 ### <a name="step-1-run-an-audit-log-search"></a>Paso 1: Ejecute una búsqueda de registros de auditoría
 
@@ -191,7 +189,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 
 - Tiene que seleccionar **Mostrar resultados para todas las actividades** en la lista de **Actividades** para mostrar los eventos del registro de auditoría de administración de Exchange. Los eventos de este registro de auditoría muestran un nombre de cmdlet (por ejemplo,**Set-Mailbox**) en la columna de **Actividad** en los resultados. Para obtener más información, haga clic en la pestaña **actividades auditadas** de este tema y luego haga clic en **actividades de administración de Exchange**.
 
-  De forma similar, hay algunas actividades de auditoría que no tienen un elemento correspondiente en la lista **Actividades**. Si sabe el nombre de la operación para estas actividades, puede buscarlas todas y luego filtrar los resultados escribiendo el nombre de la operación en el cuadro de la columna de **Actividad**. Consulte [Paso 3: Filtrar los resultados de búsqueda](#step-3-filter-the-search-results) para obtener más información sobre cómo filtrar los resultados.
+  De forma similar, hay algunas actividades de auditoría que no tienen un elemento correspondiente en la lista **Actividades**. Si conoce el nombre de la operación para estas actividades, puede buscar todas las actividades y, a continuación, filtrar las operaciones después de exportar los resultados de la búsqueda a un archivo CSV.
 
 - Haga clic en **Borrar** para borrar los criterios actuales de búsqueda. El intervalo de fecha vuelve al predeterminado de los últimos siete días. También puede hacer clic en **Borrar todo para mostrar los resultados de todas las actividades** para cancelar todas las actividades seleccionadas.
 
@@ -223,55 +221,28 @@ Los resultados contienen la siguiente información sobre cada evento que la bús
 
 #### <a name="view-the-details-for-a-specific-event"></a>Ver los detalles de un evento específico
 
-Puede ver más detalles sobre un evento al hacer clic en el registro de eventos de la lista de resultados de búsqueda. Se muestra una página de **detalles** que contiene las propiedades detalladas del registro de eventos. Las propiedades que se muestran dependen del servicio en el que se produce el evento. Para mostrar esos detalles, haga clic en **Más información**. Para ver descripciones, consulte[Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
+Puede ver más detalles sobre un evento al hacer clic en el registro de eventos de la lista de resultados de búsqueda. Se muestra una página de control flotante que contiene las propiedades detalladas del registro de eventos. Las propiedades que se muestran dependen del servicio en el que se produce el evento. 
 
-![Haga clic en Obtener más información para ver las propiedades detalladas del registro de eventos de auditoría.](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
-
-### <a name="step-3-filter-the-search-results"></a>Paso 3: Filtrar los resultados de la búsqueda
-
-Además de ordenar, también puede filtrar los resultados de una búsqueda de registro de auditoría. Esta es una característica excelente que puede ayudarle a filtrar rápidamente los resultados específicos de un usuario o actividad. Puede crear inicialmente una amplia búsqueda y, después, filtrar rápidamente los resultados para ver los eventos específicos. Luego puede restringir los criterios de búsqueda, y volver a ejecutar la búsqueda para volver a un conjunto de resultados más pequeño y conciso.
-
-Para filtrar los resultados:
-
-1. Ejecute una búsqueda de registros de auditoría.
-
-2. Cuando se muestren los resultados, haga clic en **Filtrar resultados**.
-
-   Los cuadros de palabra clave se muestran en cada encabezado de columna.
-
-3. Haga clic en uno de lo cuadros que se visualizan en las cabeceras de columna y escriba una palabra o frase, dependiendo de la columna que esté filtrando. Los resultados se volverán a ajustar de manera dinámica para mostrar los eventos que coincidan con su filtro.
-
-   ![Escriba una palabra en el filtro para mostrar los eventos que coincidan con el filtro](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
-
-4. Para borrar un filtro, haga clic en la **X** en el cuadro de filtro o haga clic en **Ocultar filtrado**.
-
-> [!TIP]
-> Para mostrar los eventos del registro de auditoría de administración de Exchange, escriba un **-** (guion) en el cuadro de filtro **Actividad**. Esto mostrará los nombres de los cmdlet, que se muestran en la columna **Actividad** de los eventos de administración de Exchange. Luego usted puede ordenar los nombres de cmdlet en orden alfabético.
-
-### <a name="step-4-export-the-search-results-to-a-file"></a>Paso 4: Exportar los resultados de búsqueda a un archivo
+### <a name="step-3-export-the-search-results-to-a-file"></a>Paso 3: Exportar los resultados de la búsqueda a un archivo
 
 Puede exportar los resultados de una búsqueda de registro de auditoría a un archivo de valores separados por comas (CSV) en su computadora local. Puede abrir este archivo en Microsoft Excel y usar características como buscar, ordenar, filtrar y dividir una sola columna (que contiene múltiples propiedades) en columnas múltiples.
 
 1. Ejecute una búsqueda de registro de auditoría, y luego revise los criterios de búsqueda hasta que tenga los resultados deseados.
 
-2. Haga clic en **Exportar resultados** y seleccione una de las siguientes opciones:
+2. En la página de resultados de la búsqueda, haga clic en **Exportar** > **Descargar todos los resultados**.
 
-   - **Guardar los resultados cargados**: elija esta opción para exportar solo las entradas que se muestran en los **Resultados** en la página de **Búsqueda de registros de auditoría**. El archivo CSV que se descarga contiene las mismas columnas (y datos) que se muestran en la página (Fecha, Usuario, Actividad, Elemento y Detalles). Se incluye una columna adicional (denominada **Más**) en el archivo CSV que contiene más información de la entrada del registro de auditoría. Como está exportando los mismos resultados que se han cargado (y visualizado) en la página **Búsqueda de registros de auditoría**, se exportan un máximo de 5 000 entradas.
-
-   - **Descargar todos los resultados**: elija esta opción para exportar todas las entradas del registro de auditoría que cumplan los criterios de búsqueda. Para obtener un conjunto amplio de resultados de búsqueda, elija esta opción para descargar todas las entradas del registro de auditoría además de los 5 000 resultados que se muestran en la página **Búsqueda de registros de auditoría**. Esta opción descargará los datos sin procesar del registro de auditoría a un archivo CSV, y contiene información adicional de la entrada del registro de auditoría en una columna denominada **AuditData**. Puede tardar más en descargar el archivo si elige esta opción de exportación ya que el archivo puede ser mucho más grande que el que se descarga si eligiera otra opción.
+   Todas las entradas del registro de auditoría que cumplen los criterios de búsqueda se exportan a un archivo CSV. Los datos sin procesar del registro de auditoría se guardan en un archivo CSV. Se incluye información adicional de la entrada del registro de auditoría en una columna denominada **AuditData** en el archivo CSV.
 
      > [!IMPORTANT]
      > Puede descargar un máximo de 50 000 entradas en un archivo CSV desde una única búsqueda de registros de auditoría. Si se descargan 50 000 entradas en el archivo CSV, probablemente puede suponer que existen más de 50 000 eventos que cumplen los criterios de búsqueda. Para exportar más de este límite, pruebe a usar un intervalo de fecha para reducir el número de entradas de registro de auditoría. Puede que tenga que ejecutar varias búsquedas con intervalos de fecha de menor tamaño para exportar más de 50 000 entradas.
 
-3. Después de que seleccione una opción de exportación, se muestra un mensaje en la parte inferior de la ventana que le solicita que abra el archivo CSV, lo guarde en la carpeta de descargas o que lo guarde en una carpeta específica.
+3. Una vez completado el proceso de exportación, se muestra un mensaje en la parte superior de la ventana que le pide que abra el archivo CSV y lo guarde en el equipo local. También puede acceder al archivo CSV en la carpeta Descargas.
 
-#### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Obtener más información sobre exportar y visualizar resultados de búsqueda del registro de auditoría
+#### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Obtener más información sobre exportar y visualizar resultados de la búsqueda del registro de auditoría
 
-- Si descarga todos los resultados, el archivo CSV contiene una columna denominada **AuditData**, que contiene información adicional sobre cada evento. Los datos en esta columna se componen de un objeto JSON que contiene varias propiedades del registro de auditoría. Cada *propiedad: valor* par del objeto JSON es separado por una coma. Puede usar la herramienta de transformación de JSON en el editor de Power Query en Excel para dividir la columna **AuditData** en columnas múltiples de forma que cada propiedad del objeto JSON tenga su propia columna. Esto le permitirá ordenar y filtrar en una o más de estas propiedades. Para obtener instrucciones paso a paso para usar el editor de Power Query para transformar el objeto JSON, consulte[exportar, configurar y ver los archivos de registros de auditoría](export-view-audit-log-records.md). 
+- Al descargar todos los resultados de la búsqueda, el archivo CSV contiene las columnas **CreationDate**, **UserIds**, **Operations** y **AuditData**. La columna **AuditData** contiene información adicional sobre cada evento (similar a la información detallada que se muestra en la página de control flotante al ver los resultados de la búsqueda en el centro de cumplimiento). Los datos en esta columna se componen de un objeto JSON que contiene varias propiedades del registro de auditoría. Cada *propiedad: valor* par del objeto JSON es separado por una coma. Puede usar la herramienta de transformación de JSON en el editor de Power Query en Excel para dividir la columna **AuditData** en columnas múltiples de forma que cada propiedad del objeto JSON tenga su propia columna. Esto le permitirá ordenar y filtrar en una o más de estas propiedades. Para obtener instrucciones paso a paso para usar el editor de Power Query para transformar el objeto JSON, consulte[exportar, configurar y ver los archivos de registros de auditoría](export-view-audit-log-records.md). 
 
   Después de que divida la columna **AuditData**, puede filtrar en la columna de **Operaciones** para mostrar las propiedades detalladas de un tipo de actividad específico.
-
-- La opción **Descargar todos los resultados** descarga los datos sin procesar del registro de auditoría en un archivo CSV. Este archivo contiene diferentes nombres de columna (CreationDate, Identificadores de usuario, Operaciones, AuditData) que los del archivo que se descarga si selecciona la opción **Guardar resultados cargados**. Los valores de los dos archivos CSV diferentes para la misma actividad también podrían ser distintos. Por ejemplo, la actividad de la columna **Acción** en el archivo CSV y podría tener un valor diferente que el nombre "sencillo" de usuario que se muestra en la columna de **Actividad** de la página de **Búsqueda de registros de auditoría**. Por ejemplo, MailboxLogin vs. el usuario ha iniciado sesión en el buzón.
 
 - Cuando descargue todos los resultados de una consulta de búsqueda que contenga eventos de diferentes servicios, la columna **AuditData** del archivo CSV contiene diferentes propiedades en función del servicio en que se ha realizado la acción. Por ejemplo, las entradas de los registros de auditoría de Exchange y Azure AD incluyen una propiedad denominada **ResultStatus** que indica si la acción se ha realizado correctamente o no. Esta propiedad no se incluye para los eventos en SharePoint. De manera similar, los eventos de SharePoint tienen una propiedad que identifica la dirección URL del sitio para las actividades relacionadas con la carpeta y el archivo. Para mitigar este comportamiento, considere la posibilidad de usar diferentes búsquedas para exportar los resultados de las actividades de un único servicio.
 

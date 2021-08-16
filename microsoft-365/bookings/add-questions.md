@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Si necesita hacer preguntas a los clientes cuando reserven una cita con usted en línea, puede agregar preguntas personalizadas y necesarias a la página de reserva.
-ms.openlocfilehash: ebbb07857fd8bb196f769dfb7e71ad25a85dfd54
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 7ee5710d20145dc1cb819c03c0a86336241ba829173f8abc3b4fdf2a96aa719e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900897"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Agregar preguntas personalizadas y requeridas a la página de reserva
 
@@ -57,7 +57,7 @@ En este ejemplo, puede ver que las preguntas que se agregaron para el primer ser
 
    ![Imagen de las preguntas que aparecen para varios servicios](../media/bookings-questions-services.png)
 
-Si la página de reserva ya está publicada, no es necesario hacer nada más. Los clientes verán las preguntas la próxima vez que reserven con usted. Si la página de reserva aún no  se ha publicado, vaya a la página de reserva desde Outlook en la web y, a continuación, seleccione **Guardar y publicar**.
+Si la página de reserva ya está publicada, no es necesario hacer nada más. Los clientes verán las preguntas la próxima vez que reserven con usted. Si la página de reserva aún no  se ha publicado, vaya a la página de reserva desde Outlook en la Web y, a continuación, seleccione **Guardar y publicar**.
 
 > [!WARNING]
 > También puede eliminar preguntas de la lista maestra. Sin embargo, si elimina una pregunta, se eliminará de todos los servicios. Se recomienda deshabilitar la pregunta seleccionándose para asegurarse de que no afecta a ningún otro servicio. Puede ver que una pregunta está deshabilitada si no está rodeada por un rectángulo resaltado.

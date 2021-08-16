@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f37dc12e14561b46e264f46cb7e07c4a9cc757083bbe8402f07bdf4705f08f1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817698"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256979"
 ---
 # <a name="advanced-hunting-api"></a>API de búsqueda avanzada
 
@@ -50,6 +50,8 @@ ms.locfileid: "53817698"
 4. El tiempo máximo de ejecución de una sola solicitud es de 10 minutos.
 
 5. La respuesta 429 representará alcanzar el límite de cuota por número de solicitudes o por CPU. Lea el cuerpo de la respuesta para comprender qué límite se ha alcanzado. 
+
+6. El tamaño máximo del resultado de la consulta de una sola solicitud no puede superar los 124 MB. Si se supera, HTTP 400 Bad Request con el mensaje "La ejecución de la consulta ha excedido el tamaño de resultado permitido. Optimizar la consulta limitando la cantidad de resultados e intentarlo de nuevo" aparecerá.
 
 ## <a name="permissions"></a>Permisos
 
@@ -85,7 +87,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 Parámetro|Tipo|Descripción
 :---|:---|:---
-Query|Texto|Consulta que se debe ejecutar. **Necesario**.
+Consulta|Texto|Consulta que se debe ejecutar. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 

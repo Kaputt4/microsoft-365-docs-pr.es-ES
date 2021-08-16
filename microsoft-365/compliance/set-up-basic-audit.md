@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar auditoría básica para que pueda empezar a buscar actividades de auditoría realizadas por usuarios y administradores de su organización.
-ms.openlocfilehash: 59b5c85003ef0e19f7d3dd7417f764f446244652
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 59a1af0946fbfbef6f2a1f5f6b8c3d7be002786239f1665d0ddbff09af254d1e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52564834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871309"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>Configurar auditoría básica en Microsoft 365
 
@@ -48,7 +48,7 @@ Para obtener una lista de los requisitos de suscripción y licencias para audito
 
 ## <a name="step-2-assign-permissions-to-search-the-audit-log"></a>Paso 2: Asignar permisos para buscar en el registro de auditoría
 
-A los administradores y miembros de los equipos de investigación se les debe asignar el rol View-Only registros de auditoría o registros de auditoría en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **permisos** del centro de administración de Exchange. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles Administración de la organización en Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
+A los administradores y miembros de los equipos de investigación se les debe asignar el rol View-Only registros de auditoría o registros de auditoría en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **permisos** del centro de administración de Exchange. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles de administración de la organización en Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
 
 En la siguiente captura de pantalla se muestran los dos roles relacionados con la auditoría asignados al grupo de roles administración de la organización en el centro Exchange administración.
 
@@ -56,11 +56,11 @@ En la siguiente captura de pantalla se muestran los dos roles relacionados con l
 
 ## <a name="step-3-search-the-audit-log"></a>Paso 3: Buscar en el registro de auditoría
 
-Ahora ya está listo para buscar el registro de auditoría en el centro Microsoft 365 cumplimiento.
+Ahora ya está listo para buscar el registro de auditoría en el Centro de cumplimiento de Microsoft 365.
 
 1. Vaya a e inicie sesión con una cuenta a la que se han <https://compliance.microsoft.com> asignado los permisos de auditoría adecuados.
 
-2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en **Mostrar todo** y, a continuación, haga clic en **Auditar**.
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, a continuación, haga clic en **Auditar**.
 
 3. En la **página Auditoría,** configure la búsqueda con las siguientes condiciones en la **pestaña** Buscar. 
 

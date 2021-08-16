@@ -15,15 +15,15 @@
           href: sign-up.md
         - name: Configurar el servicio
           href: set-up.md
-        - name: "Proteger equipos con Windows\_10"
+        - name: Proteger equipos con Windows 10
           href: secure-win10-pcs.md
         - name: Crear un sitio web de GoDaddy
           href: create-web-site.md
     - name: Configuración del dispositivo
       items:
-        - name: "Actualizar a Windows\_10\_Pro"
+        - name: Actualizar a Windows 10 Pro
           href: upgrade.md
-        - name: "Conectar equipos a Microsoft\_365"
+        - name: Conectar equipos a Microsoft 365
           href: connect.md
         - name: Instalar las aplicaciones de Microsoft Office
           href: install-office.md
@@ -137,7 +137,7 @@
           href: secure-office-on-ios.md
     - name: Seguridad y cumplimiento
       items:
-        - name: "Información general sobre la seguridad en Microsoft\_365 Empresa Premium"
+        - name: Información general sobre la seguridad en Microsoft 365 Empresa Premium
           href: overview-m365-security.md
         - name: Proteger las cuentas de los empleados con autenticación multifactor
           href: turn-on-mfa.md

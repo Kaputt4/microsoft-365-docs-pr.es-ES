@@ -1,5 +1,5 @@
 ---
-title: Revise los requisitos de arquitectura y la estructura para Microsoft Cloud App Security, planee la configuración y el diseño conociendo el marco de Cloud App Security en Microsoft 365 Defender
+title: Revise los requisitos de arquitectura y la estructura de Microsoft Cloud App Security
 description: Microsoft Cloud App Security diagramas técnicos explican la arquitectura de Microsoft 365 Defender, lo que le ayudará a crear un entorno piloto.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a3fa9670262b90d1566c375680946a131bb9c78a
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: f06804e7a6944f119401f8cf2ea5cc0496fd30e841129cef061d8caee4964887
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458519"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839068"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>Revise los requisitos de arquitectura y los conceptos clave para Microsoft Cloud App Security
 
@@ -58,7 +58,7 @@ El primer paso para administrar el uso de aplicaciones en la nube es descubrir q
 ![Arquitectura para Microsoft Cloud App Security: detección en la nube](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 En esta ilustración, hay dos métodos que se pueden usar para supervisar el tráfico de red y detectar las aplicaciones en la nube que está utilizando la organización.
-- R: Cloud App Discovery se integra con Microsoft Defender para Endpoint de forma nativa. Defender para endpoint informa de los servicios y aplicaciones en la nube a los que se accede desde dispositivos Windows 10 ti. 
+- R. Cloud App Discovery se integra con Microsoft Defender para Endpoint de forma nativa. Defender para endpoint informa de los servicios y aplicaciones en la nube a los que se accede desde dispositivos Windows 10 ti. 
 - B. Para la cobertura en todos los dispositivos conectados a una red, el recopilador de registros Cloud App Security se instala en firewalls y otros servidores proxy para recopilar datos de puntos de conexión. Estos datos se envían a Cloud App Security para su análisis.
 
 #### <a name="managing-cloud-apps"></a>Administración de aplicaciones en la nube
@@ -122,7 +122,7 @@ En la siguiente tabla se identificaron conceptos clave que son importantes para 
 |Aplicaciones conectadas |Cloud App Security proporciona protección de extremo a extremo para aplicaciones conectadas mediante integración de nube a nube, conectores de API y controles de acceso y sesión en tiempo real que aprovechan nuestros controles de acceso condicional a aplicaciones. |[Protección de aplicaciones conectadas](/cloud-app-security/protect-connected-apps) |
 | | | |
 
-## <a name="review-architecture-requirements"></a>Revisar los requisitos de arquitectura
+## <a name="review-architecture-requirements"></a>Revisión de los requisitos de arquitectura
 
 ### <a name="discovering-cloud-apps"></a>Descubriendo aplicaciones en la nube
 

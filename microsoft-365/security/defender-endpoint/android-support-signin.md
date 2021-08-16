@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2981138d6bf8d5bd3fa49120e3469fe29301ef6fbe8bba074ed83495044ef562
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 2ed53a3e8feb9531e4cb75bc9531718d33528870
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834744"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246399"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para Endpoint en Android
 
@@ -117,9 +117,24 @@ Defender App pide permiso de optimización de batería/protección permanente en
 Los usuarios pueden seguir estos pasos para habilitar los mismos permisos desde la configuración del dispositivo: 
 
 1. Ve a **Configuración** en el dispositivo.
+   
 2. Busque y seleccione **Optimización de batería.**
+   
+   ![Busque y seleccione "Optimización de batería".](images/search-battery-optimisation.png)
+
 3. En **Acceso especial a la aplicación,** selecciona **Optimización de batería.**
+   
+   ![En Acceso especial a la aplicación, selecciona "Optimización de batería".](images/special-app-access.png)
+
 4. Cambie el menú desplegable para mostrar **Todas las aplicaciones**.
+
+   ![Cambiar desplegable para mostrar "Todas las aplicaciones".](images/show-all-apps-2.png)
+
+   ![Cambiar desplegable para mostrar "Todas las aplicaciones".](images/show-all-apps-1.png)
+
 5. Busque "Punto de conexión de Microsoft Defender" y seleccione **No optimizar**.
+
+   ![Busque "Punto de conexión de Microsoft Defender" y seleccione "No optimizar".](images/select-dont-optimise.png)
+
 
 Vuelva a la pantalla de incorporación de Puntos de conexión de Microsoft Defender, seleccione **Permitir** y se le redirigirá a la pantalla del panel.

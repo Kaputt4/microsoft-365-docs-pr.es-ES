@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Aprenda cómo encontrar recursos para Temas Microsoft Viva
-ms.openlocfilehash: 7d8a95e924c269660e50355078f4fc9eee9bd333
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: ec078f1a3e1e4dd963111f0c60529173d2aedbcffcd2b61e3248a3021b5eea69
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840172"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introducción a Temas Microsoft Viva
 
@@ -54,7 +54,7 @@ Obtenga más información sobre cómo usar e implementar Temas Microsoft Viva en
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
 |Obtenga información sobre cómo empezar a planear el uso de Temas de Viva |[Introducción](topics-adoption-getstarted.md)|  
-|Configurar y ejecutar un programa piloto de prueba para Temas de Viva |[Ejecutar una prueba](trial-topics.md)|
+|Configurar y ejecutar un programa piloto de prueba para Temas de Viva |[Ejecutar una prueba ](trial-topics.md)|
 
 ## <a name="set-up-and-administration"></a>Configuración y administración
 

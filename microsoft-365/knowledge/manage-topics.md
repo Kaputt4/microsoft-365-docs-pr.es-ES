@@ -1,8 +1,7 @@
 ---
-title: Administrar temas en el centro de temas en Temas de Microsoft Viva
-description: Cómo administrar temas en el centro de temas.
-author: chuckedmonson
+title: Administrar temas en el centro de temas en Temas Microsoft Viva
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ergradel
 audience: admin
@@ -13,14 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+description: Obtenga información sobre cómo administrar temas en el centro de temas en Temas Microsoft Viva.
+ms.openlocfilehash: 53fbc338d69c87029a6e1a65917abcc9b003f36f959e440165405527fdca87e5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840268"
 ---
-# <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Administrar temas en el centro de temas en Temas de Microsoft Viva
+# <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Administrar temas en el centro de temas en Temas Microsoft Viva
 
 </br>
 
@@ -30,13 +30,13 @@ ms.locfileid: "52651167"
 
 En el Centro de temas de Viva  Topics, un administrador de conocimientos puede ver la página Administrar temas para revisar los temas que se han identificado en las ubicaciones de origen según lo especificado por el administrador de conocimientos.  
 
-   ![Centro de temas](../media/knowledge-management/topic-center.png)  
+   ![Centro de temas.](../media/knowledge-management/topic-center.png)  
 
 ## <a name="topic-stages"></a>Fases del tema
 
 Los administradores de conocimientos ayudan a guiar los temas detectados a través de las distintas fases del ciclo de vida del tema: **Sugerido** **,** **Confirmado**, Publicado y **Eliminado.**
 
-   ![Gráfico de ciclo de vida de temas](../media/knowledge-management/topic-lifecycle.png) 
+   ![Gráfico de ciclo de vida de temas.](../media/knowledge-management/topic-lifecycle.png) 
 
 - **Sugerido**: se ha identificado un tema en AI y tiene suficientes recursos compatibles, conexiones y propiedades. (Se marcan como **un tema sugerido** en la interfaz de usuario).
 
@@ -54,27 +54,27 @@ Los administradores de conocimientos ayudan a guiar los temas detectados a trav�
 
    - Varios usuarios emitirán votos negativos mediante el mecanismo de comentarios en la tarjeta de tema. Para que se quite un tema, debe haber una red de dos votos negativos recibidos de los usuarios. Por ejemplo, si un usuario votó negativo y un usuario votó positivo para un tema en particular, aún necesitará dos votos negativos más para que se elimine el tema.
 
-  Cuando se quita un tema publicado, la página con los detalles seleccionados tendrá que eliminarse manualmente a través de la Biblioteca de páginas del centro de temas.
+  Cuando se quita un tema publicado, la página con los detalles seleccionados tendrá que eliminarse manualmente a través de la biblioteca de páginas del centro de temas.
 
 > [!Note] 
 > En la página Administrar **temas,** cada administrador de conocimientos solo podrá ver temas en los que tengan acceso a los archivos y páginas subyacentes conectados al tema. Este recorte de permisos se reflejará en la lista de temas que aparecen en las pestañas **Sugerido,** **Confirmado,** Publicado **y** Eliminado. Sin embargo, los recuentos de temas muestran los recuentos totales de la organización independientemente de los permisos.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Para administrar temas en el centro de temas, debe:
 - Tener una licencia de Temas Microsoft Viva.
 
-- Tenga el [**Quién puede administrar permisos de temas.**](./topic-experiences-user-permissions.md) Los Administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Temas Viva. 
+- Tenga el [**Quién puede administrar permisos de temas.**](./topic-experiences-user-permissions.md) Los administradores del conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Temas Viva. 
 
 No podrá ver la  página Administrar temas en el centro de temas a menos que tenga el permiso **Quién administrar temas.**
 
 En el centro de temas, un administrador de conocimientos puede revisar los temas que se han identificado en las ubicaciones de origen especificadas y puede confirmarlos o quitarlos. Un administrador de conocimientos también puede crear y publicar nuevas páginas de temas si no se encontró una en la detección de temas o editar las existentes si es necesario actualizarlas.
 
-## <a name="review-suggested-topics"></a>Revisar temas sugeridos
+## <a name="suggested-topics"></a>Temas sugeridos
 
 En la **página Administrar temas,** los temas que se detectaron en las ubicaciones SharePoint de origen especificadas se mostrarán en la **pestaña Sugerencias.** Si es necesario, un administrador de conocimientos puede revisar temas no confirmados y elegir confirmarlos o quitarlos.
 
-   ![Temas sugeridos](../media/knowledge-management/quality-score.png) 
+   ![Captura de pantalla de los temas sugeridos.](../media/knowledge-management/quality-score.png) 
 
 Para revisar un tema sugerido:
 
@@ -116,9 +116,21 @@ Tenga en cuenta que todavía puede optar por rechazar un tema confirmado. Para e
 
 ## <a name="published-topics"></a>Temas publicados
 
-Los temas publicados se han editado para que la información específica siempre aparezca a quien encuentre la página. Aquí también se muestran los temas creados manualmente.
+En la **página Administrar temas,** los temas que se detectaron en las ubicaciones SharePoint de origen especificadas aparecerán en la **pestaña Publicado.** Los temas publicados se han editado para que la información específica siempre aparezca a quien encuentre la página. Aquí también se muestran los temas creados manualmente.
 
    ![Administrar temas](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="removed-topics"></a>Temas eliminados
+
+En la **página Administrar temas,** los temas que se detectaron en la lista SharePoint de origen especificadas se mostrarán en la **pestaña Quitado.** Algunos temas sugeridos pueden aparecer aquí en función de los votos del usuario final en las tarjetas de tema en el centro de temas.
+
+Los temas eliminados se pueden agregar más adelante como temas que se pueden ver si es necesario. Si desea volver a agregar un tema eliminado como un tema que se puede ver:
+
+1. En la **pestaña Quitado,** seleccione el tema.
+
+2. Seleccione **Revisar y publicar**.
+
+   ![Captura de pantalla de la pestaña Eliminado que muestra la opción Revisar y publicar.](../media/knowledge-management/review-and-publish-removed-topic.png)
 
 ## <a name="topic-count-dashboard"></a>Panel de recuento de temas
 
@@ -126,4 +138,4 @@ Este gráfico de la vista panel le permite ver el número de temas en el Centro 
 
 Los administradores de conocimientos pueden ver un número  diferente de temas representados en la lista de temas de la página Administrar temas de los que se ven en el panel. Esto se debe a que es posible que un administrador de conocimientos no tenga acceso a todos los temas. El recuento que se muestra en la vista de panel se toma antes de aplicar el recorte de permisos. 
 
-   ![Captura de pantalla del panel de recuento de temas](../media/knowledge-management/topic-count-dashboard.png)
+   ![Captura de pantalla del panel de recuento de temas.](../media/knowledge-management/topic-count-dashboard.png)
