@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fbce67602006a86c71bf3b802d8b69e2cd367104
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 2c58fb68ec96f802621c3b4c3a25d4174fc6017dd7f2855850fbcd6ea052d82d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664074"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863828"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
@@ -122,7 +122,7 @@ DeviceInfo
 
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 - [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

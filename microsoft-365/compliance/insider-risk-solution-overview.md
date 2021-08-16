@@ -1,5 +1,5 @@
 ---
-title: Soluciones de riesgo de Insider
+title: Soluciones de riesgo interno
 description: Obtenga información sobre cómo ayudar a minimizar los riesgos en su organización con soluciones de riesgo de insider en Microsoft 365.
 keywords: Microsoft 365, riesgo interno, cumplimiento
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: c40c30c44e5b8010112adc11d7faee49563761bf
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6967931f2c6a9382825218f36cdf6480d39b9ec3070d4c5f659ec881f1bd6c6e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838275"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879838"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Soluciones de riesgos internos en Microsoft 365
 
@@ -57,9 +57,9 @@ El cumplimiento de la comunicación ayuda a minimizar los riesgos de comunicaci�
 - Microsoft 365 E5 suscripción (versión de pago o de prueba)
 - Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
 - Microsoft 365 E3 suscripción + el Microsoft 365 E5 de Administración de riesgos de Insider
-- Microsoft 365 Suscripción A5 (versión de pago o de prueba)
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 cumplimiento de A5
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 A5 Insider Risk Management
+- Microsoft 365 A5 suscripción (versión de pago o de prueba)
+- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
+- Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
 - Microsoft 365 Suscripción de G5 (versión de pago o de prueba)
 - Microsoft 365 Suscripción de G5 + el Microsoft 365 de cumplimiento de G5
 - Microsoft 365 Suscripción de G5 + el complemento Microsoft 365 G5 Insider Risk Management
@@ -76,13 +76,13 @@ La administración de riesgos de Insider está disponible en las siguientes susc
 - Microsoft 365 E5 suscripción (versión de pago o de prueba)
 - Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
 - Microsoft 365 E3 suscripción + el Microsoft 365 E5 de Administración de riesgos de Insider
-- Microsoft 365 Suscripción A5 (versión de pago o de prueba)
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 cumplimiento de A5
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 A5 Insider Risk Management
+- Microsoft 365 A5 suscripción (versión de pago o de prueba)
+- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
+- Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
 - Microsoft 365 Suscripción de G5 (versión de pago o de prueba)
 - Microsoft 365 G3 suscripción + el Microsoft 365 de cumplimiento de G5
 - Microsoft 365 G3 suscripción + el complemento Microsoft 365 G5 Insider Risk Management
-- Office 365 Suscripción a E3 + Enterprise movilidad y seguridad E3 + el Cumplimiento de Microsoft 365 E5 complemento
+- Office 365 E3 suscripción + Enterprise Mobility and Security E3 + Cumplimiento de Microsoft 365 E5 add-on
 
 ### <a name="information-barriers"></a>Barreras de información
 
@@ -91,14 +91,14 @@ Las barreras de información permiten restringir la comunicación y la colaborac
 Las barreras de información están disponibles en las siguientes suscripciones:
 
 - Microsoft 365 E5 suscripción (versión de pago o de prueba)
-- Microsoft 365 Suscripción A5 (versión de pago o de prueba)
+- Microsoft 365 A5 suscripción (versión de pago o de prueba)
 - Office 365 Enterprise Suscripción E5 (versión de pago o de prueba)
 - Office 365 A5 suscripción (versión de pago o de prueba)
 - Cumplimiento avanzado de Office 365 complemento (ya no está disponible para las nuevas suscripciones)
 - Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
 - Microsoft 365 E3 suscripción + el Microsoft 365 E5 de Administración de riesgos de Insider
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 cumplimiento de A5
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 A5 Insider Risk Management
+- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
+- Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
 
 ### <a name="privileged-access-management"></a>Administración del acceso con privilegios
 
@@ -107,13 +107,13 @@ La administración de acceso con privilegios permite un control de acceso granul
 La administración de acceso con privilegios está disponible en las siguientes suscripciones:
 
 - Microsoft 365 E5 suscripción (versión de pago o de prueba)
-- Microsoft 365 Suscripción A5 (versión de pago o de prueba)
+- Microsoft 365 A5 suscripción (versión de pago o de prueba)
 - Office 365 Enterprise Suscripción E5 (versión de pago o de prueba)
 - Office 365 A5 suscripción (versión de pago o de prueba)
 - Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
 - Microsoft 365 E3 suscripción y el complemento Microsoft 365 E5 protección de la información y gobierno
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 cumplimiento de A5
-- Microsoft 365 Suscripción A3 + el complemento Microsoft 365 A5 Information Protection and Governance
+- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
+- Microsoft 365 A3 suscripción y el complemento Microsoft 365 A5 protección de la información y gobierno
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>Implementar Microsoft 365 de riesgos de insider
 
@@ -143,7 +143,7 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar y forma
 | Solución/área | Recursos |
 |:------------------|:--------------|
 | Administrar el riesgo interno en Microsoft 365 |[Ruta de aprendizaje completa](/learn/paths/m365-compliance-insider) <br> Esta ruta de aprendizaje incluye todos los módulos de solución individuales para el cumplimiento de comunicaciones, la administración de riesgos de información privilegiada, las barreras de información y la administración de acceso con privilegios. Seleccione esta ruta de aprendizaje para completar todos los módulos. |
-| Cumplimiento de comunicaciones | [Módulo de aprendizaje: Preparar el cumplimiento de la comunicación en Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Este módulo le ayuda a aprender los conceptos básicos sobre cómo identificar y corregir infracciones de directivas de código de conducta con el cumplimiento de la comunicación, cubrir los requisitos previos necesarios antes de crear directivas de cumplimiento de comunicaciones y obtener información sobre los tipos de plantillas de directivas predefinidas integradas en el cumplimiento de las comunicaciones. |
-| Administración de riesgos internos | [Módulo de aprendizaje: administración de riesgos de Insider en Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Este módulo le ayuda a aprender cómo la administración de riesgos internos en Microsoft 365 puede ayudar a prevenir, detectar y contener riesgos internos en una organización, aprender sobre los tipos de plantillas de directivas predefinidas integradas, comprender los requisitos previos básicos necesarios antes de crear directivas de riesgo de insider y explica los tipos de acciones que puede llevar a cabo en casos de administración de riesgos internos. |
-| Barreras de información | [Módulo de aprendizaje: Planear las barreras de información](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Este módulo le ayuda a aprender cómo las directivas de barreras de información pueden ayudar a su organización a mantener el cumplimiento de los estándares y normativas relevantes del sector, enumera los tipos de situaciones en las que se aplicarían las barreras de información, ayuda a explicar el proceso de creación de una directiva de barrera de información y ayuda a explicar cómo solucionar problemas inesperados después de que haya barreras de información. |
-| Administración del acceso con privilegios | [Módulo de aprendizaje: implementar la administración de acceso con privilegios](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Este módulo le ayuda a comprender la diferencia entre la administración de acceso con privilegios y la administración de identidades privilegiadas, comprender el flujo del proceso de administración de acceso con privilegios y comprender los conceptos básicos de cómo configurar y habilitar la administración de acceso con privilegios. |
+| Cumplimiento de comunicaciones | [Learning: Preparar el cumplimiento de la comunicación en Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Este módulo le ayuda a aprender los conceptos básicos sobre cómo identificar y corregir infracciones de directivas de código de conducta con el cumplimiento de la comunicación, cubrir los requisitos previos necesarios antes de crear directivas de cumplimiento de comunicaciones y obtener información sobre los tipos de plantillas de directivas predefinidas integradas en el cumplimiento de las comunicaciones. |
+| Administración de riesgos internos | [Learning: administración de riesgos de Insider en Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Este módulo le ayuda a aprender cómo la administración de riesgos internos en Microsoft 365 puede ayudar a prevenir, detectar y contener riesgos internos en una organización, aprender sobre los tipos de plantillas de directivas predefinidas integradas, comprender los requisitos previos básicos necesarios antes de crear directivas de riesgo de insider y explica los tipos de acciones que puede llevar a cabo en casos de administración de riesgos internos. |
+| Barreras de información | [Learning: Planear las barreras de información](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Este módulo le ayuda a aprender cómo las directivas de barreras de información pueden ayudar a su organización a mantener el cumplimiento de los estándares y normativas relevantes del sector, enumera los tipos de situaciones en las que se aplicarían las barreras de información, ayuda a explicar el proceso de creación de una directiva de barrera de información y ayuda a explicar cómo solucionar problemas inesperados después de que haya barreras de información. |
+| Administración del acceso con privilegios | [Learning: implementar la administración de acceso con privilegios](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Este módulo le ayuda a comprender la diferencia entre la administración de acceso con privilegios y la administración de identidades privilegiadas, comprender el flujo del proceso de administración de acceso con privilegios y comprender los conceptos básicos de cómo configurar y habilitar la administración de acceso con privilegios. |

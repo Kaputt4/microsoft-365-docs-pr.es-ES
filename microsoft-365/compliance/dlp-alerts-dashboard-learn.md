@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las alertas de prevención de pérdida de datos y el panel de alertas.
-ms.openlocfilehash: b6fd698e535e006149f6ce3a2a5bc57d0c92c7e2
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 0474c5609fcd979fa8db7e47857c099cbed7be365bb55ee80e507ad3375da660
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760778"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895664"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>Obtenga información sobre el panel de alertas de prevención de pérdida de datos
 
@@ -35,13 +35,13 @@ Cuando los criterios de una directiva de prevención de pérdida de datos (DLP) 
 
 ## <a name="workloads"></a>Cargas de trabajo
 
-El [panel de administración de alertas DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts), en el centro de Microsoft 365 [cumplimiento,](https://compliance.microsoft.com/)muestra alertas para directivas DLP en estas cargas de trabajo:
+El [panel de administración de alertas DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), muestra alertas para directivas DLP en estas cargas de trabajo:
 
 - Exchange
 - SharePoint
 - OneDrive
 - Teams
-- Dispositivos con Windows 10 
+- Dispositivos Windows 10 
 
 > [!TIP]
 > Los clientes que usan [DLP](endpoint-dlp-learn-about.md) de extremo que son elegibles para [Teams DLP](dlp-microsoft-teams.md) verán sus alertas de directiva DLP de punto de conexión y Teams de directivas DLP en el panel de administración de alertas dlp.
@@ -70,12 +70,12 @@ Estos son algunos de los eventos asociados con una alerta. En la interfaz de usu
 
 |Nombre de propiedad |Descripción| Tipos de eventos|
 |---------|---------|---------|
-|Usuario | usuario que realizó la acción que causó la coincidencia de la directiva | todos los eventos|
+|usuario | usuario que realizó la acción que causó la coincidencia de la directiva | todos los eventos|
 |nombre de host | nombre de host del equipo donde se produjo la coincidencia de directiva DLP | eventos de dispositivo|
 |Dirección IP | Dirección IP del equipo donde se produjo la coincidencia de directiva DLP | eventos de dispositivo|
 |sha1 |Hash SHA-1 del archivo | eventos de dispositivo|
 |sha256 | Hash SHA-256 del archivo | eventos de dispositivo|
-|MDATP de dispositivo | identificador de dispositivo de MDATP extremo|
+|Id. de dispositivo MDATP | Id. MDATP del dispositivo de extremo|
 |tamaño de archivo | tamaño del archivo| SharePoint, OneDrive y eventos de dispositivo|
 |ruta de acceso del archivo | la ruta de acceso absoluta del elemento implicado con la coincidencia de directiva DLP | SharePoint, OneDrive y eventos de dispositivos|
 |destinatarios de correo electrónico |si un correo electrónico era el elemento confidencial que coincidía con la directiva DLP, este campo incluye los destinatarios de ese correo electrónico| Exchange eventos|

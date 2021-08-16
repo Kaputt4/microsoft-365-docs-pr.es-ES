@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: acf37d183df430ab86d021fec547fa1c1e11441a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e59f59158e36def392255e3034e0123c98ffac7a83548bf5c0284f92bea03a8a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853924"
 ---
 # <a name="get-ip-statistics-api"></a>Obtener API de estadísticas IP
 
@@ -70,7 +70,7 @@ Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 
-Nombre|Tipo|Descripción
+Nombre|Tipo|Description
 :---|:---|:---
 lookBackHours|Int32|Define las horas que buscamos para obtener las estadísticas. El valor predeterminado es 30 días. **Opcional**.
 

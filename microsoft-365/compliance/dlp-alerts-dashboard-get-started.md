@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Introducción a la definición y administración de alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f8c8474a3bb70c46ab087572bd5c2bd2eb4138dbd51d0d7a43c2d7ca7e1590b3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895708"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Introducción al panel de alertas de prevención de pérdida de datos
 
-Las directivas de prevención de pérdida de datos (DLP) pueden realizar acciones de protección para evitar el uso compartido involuntario de elementos confidenciales. Cuando se hace una acción en un elemento confidencial, se le puede notificar configurando alertas para DLP. En este artículo se muestra cómo definir directivas de alerta enriquecciones vinculadas a las directivas de prevención de pérdida de datos (DLP). Verá cómo usar el panel de administración de alertas [DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) en el Centro de cumplimiento de [Microsoft 365](https://compliance.microsoft.com/) para ver alertas, eventos y metadatos asociados para infracciones de directivas DLP.
+Las directivas de prevención de pérdida de datos (DLP) pueden realizar acciones de protección para evitar el uso compartido involuntario de elementos confidenciales. Cuando se hace una acción en un elemento confidencial, se le puede notificar configurando alertas para DLP. En este artículo se muestra cómo definir directivas de alerta enriquecciones vinculadas a las directivas de prevención de pérdida de datos (DLP). Verá cómo usar el panel de administración de alertas [DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) para ver alertas, eventos y metadatos asociados para infracciones de directivas DLP.
 
 Si no es nuevo en las alertas dlp, debe revisar Información sobre el panel de [alertas de](dlp-alerts-dashboard-learn.md) prevención de pérdida de datos
 
@@ -115,7 +115,7 @@ Si su organización tiene licencia para [opciones](#licensing-for-alert-configur
 
 Para trabajar con el panel de administración de alertas DLP:
 
-1. En el [centro Microsoft 365 cumplimiento,](https://www.compliance.microsoft.com)vaya a **Prevención de pérdida de datos**.
+1. En el [Centro de cumplimiento de Microsoft 365](https://www.compliance.microsoft.com), vaya a **Prevención de pérdida de datos**.
 2. Seleccione la **pestaña Alertas** para ver el panel de alertas dlp.
 3. Seleccione una alerta para ver los detalles:
 

@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Resumen: use el modo remoto de Windows PowerShell para Microsoft Exchange Online para recuperar informes de espacios empresariales de clientes individuales.'
-ms.openlocfilehash: 8a244e1178e64d27d5e0f061d094dccd39bb8275
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 0f31c3db550b78f20e444047b79f3372b70cca5a866af4ebc9d6c22f91843b9e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904472"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners
 

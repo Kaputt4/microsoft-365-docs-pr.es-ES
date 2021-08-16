@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07821a55728483b5c87a55a4ec736ac2b8dca26b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f5f9cd4515c79513bf9690023e05a541f7495acbd19f4d51df7b46eae295dba2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649383"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853972"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Capturar alertas desde el inquilino del cliente de MSSP
 
@@ -187,7 +187,7 @@ Ahora puede descargar el archivo de configuración correspondiente para siem y c
 Para obtener información sobre cómo capturar alertas mediante la API de REST, vea [Extraer alertas mediante la API de REST](pull-alerts-using-rest-api.md).
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Conceder acceso a MSSP al portal](grant-mssp-access.md)
 - [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
 - [Configurar notificaciones de alerta](configure-mssp-notifications.md)

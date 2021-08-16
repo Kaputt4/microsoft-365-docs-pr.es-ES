@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: b3a3978bc166f9c302fe9c28b016d56742acd9de
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
-ms.translationtype: MT
+ms.openlocfilehash: ee2e3630901f5c18382f2671ba72f684602a309edd2b28efa22f3ea14567a326
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864188"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
