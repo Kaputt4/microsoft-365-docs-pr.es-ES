@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de extensiones personalizadas en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: af3645274b800a4eb8090957fc62397465022343
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c0944742ca375856a17f8777e22ee358fb88c070e27b57f26106a4f2d7080934
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864301"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de extensiones personalizadas en páginas del sitio modernas de SharePoint Online
 
