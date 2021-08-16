@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar páginas de Facebook Business en Microsoft 365. Después de importar estos datos a Microsoft 365, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar el gobierno de los datos de Facebook de su organización.
-ms.openlocfilehash: 773893884aebba3d55e063e7e4f8fa331553eb215a2e20f6b8833b00811d7c12
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14793931ec6e58571dd870bd48b2150d2d00fa09
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892931"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248071"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Implementar un conector para archivar datos de páginas de Facebook Empresa
 
@@ -124,7 +124,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    ![Haga clic en Agregar productos y, a continuación, en **Webhooks](../media/FBCimage32.png)
 
-9. Agregue la dirección URL de devolución de llamada de webhooks y agregue un token de comprobación. El formato de la dirección URL de devolución de llamada, use el formato **<connectorserviceuri> /api/FbPageWebhook**, donde el valor de connectorserviceuri es la dirección URL del servicio de aplicaciones de Azure para su organización; por `https://fbconnector.azurewebsites.net` ejemplo.
+9. Agregue la dirección URL de devolución de llamada de webhooks y agregue un token de comprobación. El formato de la dirección URL de devolución de llamada, use el formato , donde el valor de connectorserviceuri es la dirección URL del servicio de aplicaciones de Azure para `<connectorserviceuri>/api/FbPageWebhook` su organización; por `https://fbconnector.azurewebsites.net` ejemplo.
 
    El token de comprobación debe ser similar a una contraseña segura. Copie el token de comprobación en un archivo de texto u otra ubicación de almacenamiento.
 

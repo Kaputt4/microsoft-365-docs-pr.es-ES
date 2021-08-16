@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Comprenda cómo realizar la transición de archivos heredados a Cifrado de mensajes de Office 365 (OME) para su organización.
-ms.openlocfilehash: eabf655b6fa92a6f502ebe1e071d41f394f78929
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6f2b2719a66449f01b3810c8bb65020c49568248de253a7e35b84c8ae283f220
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051832"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859841"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -69,7 +69,7 @@ Para obtener más información acerca de cómo crear Exchange de flujo de correo
 
 2. Elija el **icono** Administrador.
 
-3. En el centro Microsoft 365 administración, elija **Centros de administración** \> **Exchange**.
+3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
 
 4. En el EAC, vaya a **Flujo de correo** \> **Reglas** y **seleccione Nuevo** icono Nuevo ![ Crear una nueva ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
@@ -125,7 +125,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 2. Elija el **icono** Administrador.
 
-3. En el centro Microsoft 365 administración, elija **Centros de administración** \> **Exchange**.
+3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
 
 4. En el EAC, vaya a **Flujo de correo** \> **Reglas** y **seleccione Nuevo** icono Nuevo ![ Crear una nueva ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
@@ -233,7 +233,7 @@ En la tabla siguiente se proporcionan detalles técnicos para el servicio Cifrad
 
 ¿Tiene preguntas sobre Cifrado de mensajes de Office 365? Aquí encontrará algunas respuestas. Si no encuentra lo que necesita, consulte los foros de [Microsoft Tech Community para Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
   
- **P. Mis usuarios envían mensajes de correo electrónico cifrados a destinatarios fuera de nuestra organización. ¿Hay algo que los destinatarios externos tengan que hacer para leer y responder a los mensajes de correo electrónico cifrados con Cifrado de mensajes de Office 365?**
+ **Q. Mis usuarios envían mensajes de correo electrónico cifrados a destinatarios fuera de nuestra organización. ¿Hay algo que los destinatarios externos tengan que hacer para leer y responder a los mensajes de correo electrónico cifrados con Cifrado de mensajes de Office 365?**
   
 Los destinatarios fuera de la organización que reciben Microsoft 365 mensajes cifrados pueden verlos de dos maneras:
   
@@ -241,7 +241,7 @@ Los destinatarios fuera de la organización que reciben Microsoft 365 mensajes c
 
 - Mediante un código de paso único.
 
- **P. ¿Microsoft 365 mensajes cifrados en la nube o en servidores microsoft?**
+ **Q. ¿Microsoft 365 mensajes cifrados en la nube o en servidores microsoft?**
   
 No, los mensajes cifrados se mantienen en el sistema de correo electrónico del destinatario y, cuando el destinatario abre el mensaje, se publica temporalmente para su visualización en servidores Microsoft. Pero los mensajes no se almacenan ahí.
   
@@ -257,11 +257,11 @@ Se requiere una licencia para cada usuario de la organización que envíe correo
   
 No, los destinatarios externos no requieren una suscripción para leer o responder los mensajes cifrados.
   
- **P. ¿En Cifrado de mensajes de Office 365 es diferente de Rights Management Services (RMS)?**
+ **Q. ¿En Cifrado de mensajes de Office 365 es diferente de Rights Management Services (RMS)?**
   
 RMS proporciona funcionalidades de Information Rights Protection para los correos electrónicos internos de una organización proporcionando plantillas integradas, como: No reenviar y Confidencial de la empresa. El cifrado de mensajes de Office 365 es compatible con el cifrado para los mensajes de correo electrónico que se envían a destinatarios externos, así como destinatarios internos.
   
- **P. ¿En Cifrado de mensajes de Office 365 es diferente de S/MIME?**
+ **Q. ¿En Cifrado de mensajes de Office 365 es diferente de S/MIME?**
   
 S/MIME es básicamente una tecnología de cifrado del lado cliente y requiere la administración de certificados complicados y la publicación de infraestructura. Cifrado de mensajes de Office 365 reglas de flujo de correo (también conocidas como reglas de transporte) y no depende de la publicación de certificados.
   
@@ -273,11 +273,11 @@ Sí, puedes ver mensajes en Android e iOS descargando las aplicaciones visor de 
   
 Sí. Las respuestas se siguen cifrando durante todo el período de la conversación.
   
- **P. ¿Cifrado de mensajes de Office 365 proporciona localización?**
+ **Q. ¿Cifrado de mensajes de Office 365 proporciona localización?**
   
 El correo electrónico entrante y el contenido HTML se localiza según la configuración de correo electrónico del remitente. El portal de visualización se localiza según la configuración del explorador del destinatario. Sin embargo, el cuerpo (contenido) del mensaje cifrado no se localiza.
   
- **P. ¿Qué método de cifrado se usa para Cifrado de mensajes de Office 365?**
+ **Q. ¿Qué método de cifrado se usa para Cifrado de mensajes de Office 365?**
   
 Cifrado de mensajes de Office 365 Rights Management Services (RMS) como su infraestructura de cifrado. El método de cifrado utilizado depende de dónde obtiene las claves de RMS utilizadas para cifrar y descifrar mensajes.
   
@@ -291,15 +291,15 @@ Para obtener más información, [vea Modos criptográficos de AD RMS](/previous-
   
 Cuando se envía una respuesta cifrada desde el portal de cifrado o a través de la aplicación del Visor de OME, la dirección de correo electrónico de envío se establece en Office365@messaging.microsoft.com porque el mensaje cifrado se envía a través de un extremo de Microsoft. Esto ayuda a evitar que los mensajes cifrados se marquen como correo no deseado. El nombre mostrado en el correo electrónico y la dirección del portal de cifrado no se modifican a causa de este etiquetado. Además, este etiquetado solo se aplica a los mensajes enviados a través del portal, no a través de cualquier otro cliente de correo electrónico.
   
- **P. Soy un suscriptor Exchange cifrado hospedado (EHE). ¿Dónde puedo obtener más información sobre la actualización a Cifrado de mensajes de Office 365?**
+ **Q. Soy un suscriptor Exchange cifrado hospedado (EHE). ¿Dónde puedo obtener más información sobre la actualización a Cifrado de mensajes de Office 365?**
   
-Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite [el centro Exchange de actualización](../security/defender-365-security/exchange-online-protection-overview.md)de cifrado hospedado .
+Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite [el centro Exchange de actualización](../security/office-365-security/exchange-online-protection-overview.md)de cifrado hospedado .
   
- **P. ¿Necesito abrir direcciones URL, direcciones IP o puertos en el firewall de mi organización para admitir Cifrado de mensajes de Office 365?**
+ **Q. ¿Necesito abrir direcciones URL, direcciones IP o puertos en el firewall de mi organización para admitir Cifrado de mensajes de Office 365?**
   
 Sí. Debe agregar direcciones URL para Exchange Online para que la lista de permitidos de la organización habilite la autenticación de los mensajes cifrados por parte del servicio de cifrado de mensajes de Office 365. Para obtener una lista de Exchange Online direcciones URL, vea Microsoft 365 direcciones URL e [intervalos de direcciones IP](../enterprise/urls-and-ip-address-ranges.md).
   
- **P. ¿A cuántos destinatarios puedo enviar un Microsoft 365 cifrado?**
+ **Q. ¿A cuántos destinatarios puedo enviar un Microsoft 365 cifrado?**
   
 El límite de destinatarios es de 500 destinatarios por mensaje o, cuando se combina después de la expansión de la lista de distribución, 11.980 caracteres en el campo **Para** del mensaje, lo que sea primero.
   
@@ -315,7 +315,7 @@ No hay un informe que muestre si se ha visto un mensaje cifrado, pero hay inform
   
 La [Office 365 privacidad del Portal](https://privacy.microsoft.com/privacystatement) de cifrado de mensajería proporciona información detallada sobre lo que Microsoft hace y no hace con su información privada.
 
-**P. ¿Qué hago si no recibo el código de paso de una sola vez después de solicitarlo?**
+**Q. ¿Qué hago si no recibo el código de paso de una sola vez después de solicitarlo?**
 
 En primer lugar, compruebe la carpeta de correo no deseado o correo no deseado en el cliente de correo electrónico. La configuración de DKIM y DMARC para su organización puede hacer que estos correos electrónicos terminen filtrados como correo no deseado.
 

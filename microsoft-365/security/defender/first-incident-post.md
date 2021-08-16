@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 7098da4150b95b2567f068d83afa431ad3a71ca3b4ff996e5f0a2b7588f0c256
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651373"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873480"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Paso 3. Realizar una revisión posterior al incidente de su primer incidente
 
@@ -58,7 +58,7 @@ Vea estas rutas de investigación adicionales:
 - [Ataque basado en identidad](first-incident-path-identity.md)
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

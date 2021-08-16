@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ba4c4dbb2b5b8315fb09023b9fa0c0e29c4fd1c3b3f95da0328522a7d839ffc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d309f8851720578dfdd321efff862f15afd9bca8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884264"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250554"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Proteja su organización contra las amenazas web
 
@@ -49,6 +49,31 @@ Para activar la protección de red en los dispositivos:
 
 > [!NOTE]
 > Si establece la protección de red en **Solo auditoría,** el bloqueo no estará disponible. Además, podrás detectar e registrar intentos de acceso a sitios web malintencionados y no deseados en Microsoft Edge solo.
+
+## <a name="configure-web-threat-protection"></a>Configurar la protección contra amenazas web
+
+En el siguiente procedimiento se describe cómo configurar la protección contra amenazas web mediante el centro Microsoft Endpoint Manager administración.
+
+1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
+ 
+2. Elija **Endpoint security** Attack surface  >  **reduction** y, a continuación, elija + Create **policy**.
+
+3. Seleccione una plataforma, como Windows 10 y **posterior,** seleccione el perfil de protección **web** y, a continuación, **elija Crear**. 
+
+4. En la **pestaña Conceptos** básicos, especifique un nombre y una descripción y, a continuación, elija **Siguiente**.
+
+5. En la **pestaña Configuración,** expanda **Protección web**, especifique la configuración y, a continuación, **elija Siguiente**.
+
+   - Establezca **Habilitar la protección de red** en Habilitado **para** que la protección web esté activada. Como alternativa, puede establecer la protección de red en **modo auditoría** para ver cómo funcionará en su entorno. En el modo de auditoría, la protección de red no impide que los usuarios visiten sitios o dominios, pero sí realiza un seguimiento de las detecciones como eventos. 
+   - Para proteger a los usuarios de posibles estafas de suplantación de identidad (phishing) y software malintencionado, active **Requerir SmartScreen para Microsoft Edge (versión anterior)** a **Sí**.
+   - Para evitar que los usuarios omitan advertencias sobre sitios potencialmente malintencionados, establezca **Bloquear el acceso a sitios malintencionados** en **Sí**.
+   - Para evitar que los usuarios omitan las advertencias y descarguen archivos noverificados, establezca Bloquear descarga de archivos **noverificados** tl **Sí**. 
+
+6. En la **pestaña Etiquetas de ámbito,** si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, **elija Siguiente**. (Si no usa etiquetas de ámbito, elija **Siguiente**.) Para obtener más información acerca de las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+
+7. En la **pestaña Asignaciones,** especifique los usuarios y dispositivos para recibir la directiva de protección web y, a continuación, elija **Siguiente**.
+
+8. En la **pestaña Revisar + crear,** revise la configuración de la directiva y, a continuación, elija **Crear**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo crear una directiva de archivado y eliminación en Microsoft 365 que mueve automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: 45d6428f5b0a856538d500b1d1f0447447b9dfe9
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: a7367bc8861f02b31a4782770e28c86c133b5b46add0fa22da30f2f078f47881
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341645"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871577"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 
@@ -63,7 +63,7 @@ El primer paso es habilitar el buzón de archivo para cada usuario de la organiz
 > [!NOTE]
 > Puede habilitar buzones de archivo en cualquier momento durante este proceso, siempre y cuando se habiliten en algún momento antes de completar el proceso. Si un buzón de archivo no está habilitado, no se hace ninguna acción en los elementos que tienen asignada una directiva de archivo o eliminación.
   
-1. Vaya a <https://compliance.microsoft.com>.
+1. Ve a <https://compliance.microsoft.com>.
 
 2. Inicie sesión con su cuenta de administrador global.
     

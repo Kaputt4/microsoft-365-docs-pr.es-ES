@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 5211bf98e4cdfe4357a8aebe4aa803fb8ffd5576
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c92d53045c56adf300dc2d67c92f8e7c6b6333e6739a10f476461252321ca3bb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857620"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Revisar eventos y errores con el Visor de eventos
 
@@ -57,22 +57,22 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 
    ****
 
-   |Identificador de evento|Message|Descripción|Acción|
+   |Identificador de evento|Mensaje|Description|Action|
    |---|---|---|---|
-   |1 |Se inició el servicio de Microsoft Defender para puntos de conexión `variable` (versión).|Se produce durante el inicio, apagado y durante la incorporación del sistema.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
-   |2 |Cierre del servicio de Microsoft Defender para puntos de conexión.|Se produce cuando el dispositivo se apaga o se apaga.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
-   |3 |Microsoft Defender para el servicio de extremo no se pudo iniciar. Código de error: `variable` .|El servicio no se ha empezado.|Revise otros mensajes para determinar posibles causas y pasos de solución de problemas.|
+   |1|Se inició el servicio de Microsoft Defender para puntos de conexión `variable` (versión).|Se produce durante el inicio, apagado y durante la incorporación del sistema.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
+   |2|Cierre del servicio de Microsoft Defender para puntos de conexión.|Se produce cuando el dispositivo se apaga o se apaga.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
+   |3|Microsoft Defender para el servicio de extremo no se pudo iniciar. Código de error: `variable` .|El servicio no se ha empezado.|Revise otros mensajes para determinar posibles causas y pasos de solución de problemas.|
    |4 |Microsoft Defender para el servicio de extremo se puso en contacto con el servidor en `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> Esta dirección URL coincidirá con la que se ve en el Firewall o la actividad de red.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |5 |Microsoft Defender para el servicio de extremo no se pudo conectar al servidor en `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> El servicio no pudo ponerse en contacto con los servidores de procesamiento externos en esa dirección URL.|Compruebe la conexión a la dirección URL. Consulte [Configure proxy and Internet connectivity](configure-proxy-internet.md).|
    |6 |El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación.|El dispositivo no se incorporó correctamente y no se va a informar al portal.|La incorporación debe ejecutarse antes de iniciar el servicio. <p> Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
    |7 |Microsoft Defender para el servicio de extremo no pudo leer los parámetros de incorporación. Error: `variable` .|Variable = descripción detallada del error. El dispositivo no se incorporó correctamente y no se va a informar al portal.|Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
    |8 |Microsoft Defender para el servicio de extremo no pudo limpiar su configuración. Código de error: `variable` .|**Durante la incorporación:** El servicio no pudo limpiar su configuración durante la incorporación. El proceso de incorporación continúa. <p> **Durante el offboarding:** El servicio no pudo limpiar su configuración durante el offboarding. El proceso de offboarding ha finalizado, pero el servicio sigue ejecutándose.|**Incorporación:** No se requiere ninguna acción. <p> **Offboarding:** Reinicie el sistema. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
    |9 |Microsoft Defender para el servicio de extremo no pudo cambiar su tipo de inicio. Código de error: `variable` .|**Durante la incorporación:** El dispositivo no se incorporó correctamente y no se va a informar al portal. <p>**Durante el offboarding:** No se pudo cambiar el tipo de inicio del servicio. El proceso de offboarding continúa. |Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
-   |10|Microsoft Defender para el servicio de extremo no pudo conservar la información de incorporación. Código de error: `variable` .|El dispositivo no se incorporó correctamente y no se va a informar al portal.|Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
-   |11 |Se completó la incorporación o la incorporación de Defender para el servicio de extremo.|El dispositivo se incorporó correctamente.|Notificación de funcionamiento normal; no se requiere ninguna acción. <p> El dispositivo puede tardar varias horas en aparecer en el portal.|
+   |10 |Microsoft Defender para el servicio de extremo no pudo conservar la información de incorporación. Código de error: `variable` .|El dispositivo no se incorporó correctamente y no se va a informar al portal.|Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
+   |11|Se completó la incorporación o la incorporación de Defender para el servicio de extremo.|El dispositivo se incorporó correctamente.|Notificación de funcionamiento normal; no se requiere ninguna acción. <p> El dispositivo puede tardar varias horas en aparecer en el portal.|
    |12 |Microsoft Defender para endpoint no pudo aplicar la configuración predeterminada.|El servicio no pudo aplicar la configuración predeterminada.|Este error debe resolverse después de un breve período de tiempo.|
-   |13 |Microsoft Defender para el identificador de dispositivo de extremo calculado: `variable` .|Proceso operativo normal.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
-   |15 |Microsoft Defender para endpoint no puede iniciar el canal de comandos con dirección URL: `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> El servicio no pudo ponerse en contacto con los servidores de procesamiento externos en esa dirección URL.|Compruebe la conexión a la dirección URL. Consulte [Configure proxy and Internet connectivity](configure-proxy-internet.md).|
+   |13|Microsoft Defender para el identificador de dispositivo de extremo calculado: `variable` .|Proceso operativo normal.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
+   |15|Microsoft Defender para endpoint no puede iniciar el canal de comandos con dirección URL: `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> El servicio no pudo ponerse en contacto con los servidores de procesamiento externos en esa dirección URL.|Compruebe la conexión a la dirección URL. Consulte [Configure proxy and Internet connectivity](configure-proxy-internet.md).|
    |17 |Microsoft Defender para el servicio de extremo no pudo cambiar la ubicación del servicio Telemetría y experiencias del usuario conectado. Código de error: `variable` .|Se produjo un error con el servicio Windows telemetría.|[Asegúrese de que el servicio de datos de](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)diagnóstico está habilitado ">asegúrese de que el servicio de datos de diagnóstico está habilitado. <p> Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
    |18 |OOBE (Windows bienvenida) se ha completado.|El servicio solo se iniciará después de que Windows actualizaciones haya terminado de instalarse.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |19|OOBE (Windows bienvenida) aún no se ha completado.|El servicio solo se iniciará después de que Windows actualizaciones haya terminado de instalarse.|Notificación de funcionamiento normal; no se requiere ninguna acción. <p> Si este error persiste después de reiniciar el sistema, asegúrese de que todas Windows actualizaciones se han instalado por completo.|
@@ -149,10 +149,8 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
+
 - [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md)
 - [Solucionar problemas de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)
-- [Introducción al analizador de cliente](overview-client-analyzer.md)
-- [Descargar y ejecutar el analizador de cliente](download-client-analyzer.md)
-- [Comprender el informe HTML del analizador](analyzer-report.md)

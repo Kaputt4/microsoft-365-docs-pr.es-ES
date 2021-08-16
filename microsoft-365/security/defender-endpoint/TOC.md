@@ -561,7 +561,7 @@
 ####### [Propiedades y métodos estáticos](recommendation.md)
 ####### [Enumerar todas las recomendaciones](get-all-recommendations.md)
 ####### [Obtener recomendación por identificación](get-recommendation-by-id.md)
-####### [Obtener recomendación por software](get-recommendation-software.md)
+####### [Obtener recomendación por software](list-recommendation-software.md)
 ####### [Enumerar máquinas por recomendación](get-recommendation-machines.md)
 ####### [Enumerar vulnerabilidades por recomendación](get-recommendation-vulnerabilities.md)
 
@@ -666,6 +666,17 @@
 ##### [Dispositivos inactivos](fix-unhealthy-sensors.md#inactive-devices)
 ##### [Dispositivos mal configurados](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Revisar los eventos de sensor y los errores en máquinas con el Visor de eventos](event-error-codes.md)
+
+#### [Solución de problemas de mantenimiento del sensor mediante el Analizador de clientes]()
+##### [Información general del Analizador de clientes](overview-client-analyzer.md)
+##### [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
+##### [Ejecutar el Analizador de clientes en Windows](run-analyzer-windows.md)
+##### [Ejecutar el Analizador de clientes en macOS o Linux](run-analyzer-macos-linux.md)
+##### [ Recopilación de datos para solucionar problemas avanzados en Windows](data-collection-analyzer.md)
+##### [Comprender el informe HTML del analizador](analyzer-report.md)
+##### [Proporcionar comentarios sobre la herramienta del Analizador de clientes](analyzer-feedback.md)
+
+  
 
 #### [Solucionar problemas de servicio de Microsoft Defender para punto de conexión]()
 ##### [Solucionar problemas de servicio](troubleshoot-mdatp.md)

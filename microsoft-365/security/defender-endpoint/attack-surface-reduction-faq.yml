@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: bb03140622cc848f9c668bdaa72e833fe35c5b37
-  ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+  ms.openlocfilehash: 1310ec8aafc41276e8c2e4e13d93310a4400d95d376b61612df30959683e019e
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/30/2021
-  ms.locfileid: "53664117"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53869721"
 title: Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -34,7 +34,7 @@ summary: >
 
   - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 sections:
-- name: Ignorado
+- name: Omitidas
   questions:
   - question: >
       ¿La reducción de superficie de ataque (ASR) forma parte de Windows?
@@ -225,7 +225,7 @@ sections:
     answer: >
       Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
   - question: >
-      Recursos adicionales
+      Consulte también
     answer: >-
       * [Introducción a la reducción de superficie de ataque](attack-surface-reduction.md)
 

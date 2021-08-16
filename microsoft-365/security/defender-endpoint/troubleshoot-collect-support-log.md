@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 69c6bb7a054841cdb7ee7feded55d8f27b3fb93c9e411c3c69853e49141723ed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 518194e3cbf185da415104991e1d7186f5912953
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839233"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250569"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Recopilar registros de soporte técnico en Microsoft Defender para endpoint mediante respuesta en directo
 
@@ -81,3 +81,13 @@ En este tema se proporcionan instrucciones sobre cómo ejecutar la herramienta m
 >   ```
 >
 > - Para obtener más información sobre la recopilación de datos localmente en una máquina en caso de que la máquina no se comunique con Microsoft Defender para los servicios en la nube de endpoints o no aparezca en el portal de Microsoft Defender para endpoints como se esperaba, consulte [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls).
+
+
+## <a name="see-also"></a>Vea también
+- [Información general del Analizador de clientes](overview-client-analyzer.md)
+- [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
+- [Ejecutar el Analizador de clientes en Windows](run-analyzer-windows.md)
+- [Ejecutar el Analizador de clientes en macOS o Linux](run-analyzer-macos-linux.md)
+- [ Recopilación de datos para solucionar problemas avanzados en Windows](data-collection-analyzer.md)
+- [Comprender el informe HTML del analizador](analyzer-report.md)
+

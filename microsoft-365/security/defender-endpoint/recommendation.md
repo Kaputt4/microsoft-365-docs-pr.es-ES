@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9361e791eafad1a3d7243a0d11821c9286c5e3bebf64f878af1e72cda6bfa952
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65486a046967ef3a3961220af0c9077a7d3fbd94
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829116"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253420"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso Recomendación
 
@@ -39,12 +39,12 @@ ms.locfileid: "53829116"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="methods"></a>Methods
-Método |Tipo de valor devuelto |Description
+## <a name="methods"></a>Métodos
+Método |Tipo de valor devuelto |Descripción
 :---|:---|:---
 [Enumerar todas las recomendaciones](get-all-recommendations.md) | Colección de recomendaciones | Recupera una lista de todas las recomendaciones de seguridad que afectan a la organización
 [Obtener recomendación por identificador](get-recommendation-by-id.md) | Recomendación | Recupera una recomendación de seguridad por su identificador
-[Obtener software de recomendación](get-recommendation-software.md)| [Software](software.md) | Recupera una recomendación de seguridad relacionada con un software específico
+[Obtener software de recomendación](list-recommendation-software.md)| [Software](software.md) | Recupera una recomendación de seguridad relacionada con un software específico
 [Obtener dispositivos de recomendación](get-recommendation-machines.md)|Colección MachineRef | Recupera una lista de dispositivos asociados con la recomendación de seguridad
 [Obtener vulnerabilidades de recomendación](get-recommendation-vulnerabilities.md) | [Colección Vulnerability](vulnerability.md) | Recupera una lista de vulnerabilidades asociadas con la recomendación de seguridad
 
@@ -54,17 +54,17 @@ Propiedad |   Tipo   |   Descripción
 :---|:---|:---
 id | String | Id. de recomendación
 productName | cadena | Nombre de software relacionado  
-recommendationName | Cadena | Nombre de recomendación
+recommendationName | String | Nombre de recomendación
 Debilidades | Long | Número de vulnerabilidades detectadas
-Proveedor | Cadena | Nombre de proveedor relacionado
+Proveedor | String | Nombre de proveedor relacionado
 recommendedVersion | String | Versión recomendada
 recommendationCategory | String | Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityStack
-subCategory | Cadena | Subcategoría recomendación
+subCategory | String | Subcategoría recomendación
 severityScore | Doble | Posible impacto de la configuración en la puntuación segura de Microsoft para dispositivos de la organización (1-10)
-publicExploit | Boolean | La vulnerabilidad pública está disponible 
+publicExploit | Booleano | La vulnerabilidad pública está disponible 
 activeAlert | Booleano | La alerta activa está asociada con esta recomendación
-associatedThreats | Colección string | El informe de análisis de amenazas está asociado a esta recomendación
-remediationType | Cadena | Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"
+associatedThreats | Colección String | El informe de análisis de amenazas está asociado a esta recomendación
+remediationType | String | Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"
 Estado | Enum | Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"
 configScoreImpact | Doble | Impacto de puntuación segura de Microsoft para dispositivos
 exposureImpacte | Doble | Impacto de la puntuación de exposición

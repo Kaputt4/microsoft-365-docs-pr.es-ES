@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 26b68fe1adcf9841b69f86000c4c0d77d1db860fc64e713f2c186ad295b63ffc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7357c05809ffc31783f985adc04cabc70742dbe9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888680"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247944"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -93,10 +93,10 @@ Microsoft 365 Defender características entre productos incluyen:
 
 
 ## <a name="get-started"></a>Introducción
-Microsoft 365 Defender requisitos de licencia deben cumplirse antes de habilitar el servicio en el centro de seguridad de Microsoft 365 en [security.microsoft.com](https://security.microsoft.com). Para obtener más información, lea:
+Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilitar el servicio en el portal de Microsoft 365 Defender en [security.microsoft.com](https://security.microsoft.com). Para obtener más información, lea:
 - [Requisitos de licencia](prerequisites.md#licensing-requirements)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 - [Implementar capacidades de protección contra amenazas en Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection)

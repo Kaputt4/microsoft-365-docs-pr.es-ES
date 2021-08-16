@@ -1,5 +1,5 @@
 ---
-title: Habilitar características de soporte técnico de usuario
+title: Habilitar características de soporte técnico para usuarios
 description: Cómo habilitar las características de elevación y escalación para la compatibilidad con el usuario
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e0dac3752d28d1e8888ba16e28cfc9e3cd012130
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 6645f8f5822ba01960ebb6bf619e19c1bdb0ce347faa1ca4a9882c001e50668b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362787"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869824"
 ---
-# <a name="enable-user-support-features"></a>Habilitar características de soporte técnico de usuario
+# <a name="enable-user-support-features"></a>Habilitar características de soporte técnico para usuarios
 
 Ya sea que proporciones soporte técnico a tu propio usuario o trabajes con un partner para proporcionarlo, sigue estos pasos para permitir al proveedor de soporte técnico solicitar acceso elevado a dispositivos o escalar problemas a Escritorio administrado de Microsoft, si es necesario.
 

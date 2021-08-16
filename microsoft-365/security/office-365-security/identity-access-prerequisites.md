@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: edce65314062f731673926195be791f77d1cb823
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 684585d38bd66e5a62df82e9c757a80775f4403e42d4f28c929d1f6e3fe3852f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873368"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo previo para implementar directivas de acceso a dispositivos y identidades
 
@@ -116,7 +116,7 @@ Para obtener más información acerca de la compatibilidad de Microsoft 365, vea
 
 ## <a name="protecting-administrator-accounts"></a>Protección de cuentas de administrador
 
-Para Microsoft 365 E3 o E5 o con licencias de Azure AD Premium P1 o P2 independientes, puede requerir MFA para cuentas de administrador con una directiva de acceso condicional creada manualmente. Consulte [Acceso condicional: requerir MFA para administradores](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) para obtener más información.
+Para Microsoft 365 E3 O E5 o con licencias Azure AD Premium P1 o P2 independientes, puede requerir MFA para cuentas de administrador con una directiva de acceso condicional creada manualmente. Consulte [Acceso condicional: requerir MFA para administradores](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) para obtener más información.
 
 Para las ediciones de Microsoft 365 o Office 365 que no admiten el [](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) acceso condicional, puede habilitar los valores predeterminados de seguridad para requerir MFA para todas las cuentas.
 

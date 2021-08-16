@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de red informado
-ms.openlocfilehash: 1a03a832e3c4121f948af0d6e7bc2ff37d2a2b925c7f7d69bac2773bed5abbfe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea5bdf38cc9fd56a08ddc20a83c4557e5bda0cd2
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857996"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253844"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365 enrutamiento de red informado (versión preliminar)
 
@@ -34,14 +34,14 @@ El enrutamiento de red informado proporciona un canal bidireccional de uso compa
 
 Las degradaciones de la calidad del servicio en la ruta de acceso de un circuito de Internet determinado, como el aumento de la latencia o la alta pérdida de paquetes, son difíciles de detectar de forma continua. Estas degradaciones pueden ser perjudiciales para las experiencias del usuario para aplicaciones como Exchange Online, SharePoint, OneDrive y Microsoft Teams. Los síntomas comunes incluyen una búsqueda lenta de contenido Exchange, tiempos de transferencia altos al interactuar con bibliotecas de documentos SharePoint o OneDrive, o mala calidad de llamadas o reuniones en Microsoft Teams.
 
-El mecanismo de comentarios y recuperación dentro del enrutamiento informado de red busca detectar dinámicamente estos problemas en tiempo casi real e informa a la solución SD-WAN implementada para que lleve a cabo acciones de recuperación automática.
+El mecanismo de comentarios y recuperación dentro del enrutamiento de red informado busca detectar dinámicamente estos problemas en tiempo casi real e informa a la solución SD-WAN implementada para que lleve a cabo acciones de recuperación automática.
 
 El canal de uso compartido de datos también se usa para recibir periódicamente datos de óptica de nivel de red de la solución SD-WAN, incluida la información de configuración y las estadísticas de uso asociadas con el dispositivo y los circuitos conectados. No se recopila ni almacena información personal. Toda la información recopilada se agrega a ubicaciones de oficina y circuitos de Internet conectados. Esta información puede ayudar a Microsoft a resolver de forma más eficaz y eficaz los problemas notificados con el uso de Microsoft 365 servicios y aplicaciones.
 
 >[!NOTE]
 >Microsoft 365 enrutamiento de red informado admite inquilinos en la nube comercial de WW, pero no en las nube GCC s moderadas, GCC High, DoD, Alemania o China.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 ### <a name="integrated-sd-wan-solutions"></a>Soluciones SD-WAN integradas
 
@@ -55,7 +55,7 @@ Microsoft está trabajando con varios partners para habilitar la integración Mi
 
 Actualmente, el enrutamiento de red informado identifica el tráfico asociado a una ubicación de oficina específica y un circuito de Internet en función de la dirección IP pública usada para enviar tráfico de red a Microsoft. 
 
-En el caso de que no haya al menos un circuito de red que proporcione acceso directo a Internet en una ubicación de sucursal, es posible que el enrutamiento informado de red no proporcione un valor significativo.
+En el caso de que no haya al menos un circuito de red que proporcione acceso directo a Internet en una ubicación de sucursal, es posible que el enrutamiento de red informado no proporcione un valor significativo.
 
 ### <a name="application-usage"></a>Uso de aplicaciones
 
@@ -63,7 +63,7 @@ Los datos de experiencia de aplicación (reflejados a través de métricas de ca
 
 ## <a name="enabling-informed-network-routing"></a>Habilitar el enrutamiento de red informado
 
-Habilitar el enrutamiento de red informado requiere varios pasos, algunos de los cuales tendrán que realizarse dentro de la interfaz de configuración de la solución SD-WAN. Consulte a su proveedor de soluciones SD-WAN para obtener instrucciones sobre cómo iniciar el proceso de habilitar el enrutamiento informado de red dentro de la solución SD-WAN antes de continuar con la configuración en el Centro de administración de Microsoft 365.
+Habilitar el enrutamiento de red informado requiere varios pasos, algunos de los cuales tendrán que realizarse dentro de la interfaz de configuración de la solución SD-WAN. Consulte a su proveedor de soluciones SD-WAN para obtener instrucciones sobre cómo iniciar el proceso de habilitar el enrutamiento de red informado dentro de la solución SD-WAN antes de continuar con la configuración en el Centro de administración de Microsoft 365.
 
 Una vez que esté listo para habilitar el enrutamiento de red informado en el Centro de administración de Microsoft 365, asegúrese de que tiene los permisos de administrador global necesarios.
 
@@ -83,7 +83,7 @@ En el panel de configuración, seleccione **Agregar la solución SD-WAN (versió
 
 ### <a name="step-2-select-your-sd-wan-solution-and-data-storage-location"></a>Paso 2: Seleccionar la solución SD-WAN y la ubicación de almacenamiento de datos
 
-En los cuadros desplegables, seleccione la solución SD-WAN que ha implementado y la ubicación donde desea que se almacenen los datos asociados con el enrutamiento informado de red. Consulte la [sección almacenamiento de](#data-storage) datos para obtener información adicional.
+En los cuadros desplegables, seleccione la solución SD-WAN que ha implementado y la ubicación donde desea que se almacenen los datos asociados con el enrutamiento de red informado. Consulte la [sección almacenamiento de](#data-storage) datos para obtener información adicional.
 
 Seleccione **Siguiente**.
 
@@ -103,13 +103,13 @@ Una vez que haya completado la concesión de permisos, seleccione **Siguiente**.
 
 ### <a name="step-5-confirm-your-configuration-settings"></a>Paso 5: Confirmar las opciones de configuración
 
-El último paso para habilitar el enrutamiento informado de red para el inquilino es una página de confirmación que muestra la configuración que ha proporcionado. 
+El último paso para habilitar el enrutamiento de red informado para el inquilino es una página de confirmación que muestra la configuración que ha proporcionado. 
 
 El enrutamiento de red informado ahora está habilitado para el inquilino.
 
 Seleccione **Listo** y, a continuación, cierre el panel de configuración de la solución SD-WAN.
 
-## <a name="configuring-network-informed-routing"></a>Configuración del enrutamiento informado de red
+## <a name="configuring-informed-network-routing"></a>Configuración del enrutamiento de red informado
 
 Realizará gran parte de la configuración para el enrutamiento de red informado dentro de la solución SD-WAN, como configurar cómo se debe enrutar el tráfico en circunstancias normales y las rutas alternativas que deben usarse si se detectan problemas. Consulte a su proveedor de soluciones SD-WAN para obtener información detallada sobre estos pasos de configuración.
 
@@ -140,9 +140,9 @@ Asegúrese de que cada ubicación de oficina en la que desee habilitar el enruta
 
 4. Seleccione **Guardar** para guardar los cambios.
 
-## <a name="disabling-network-informed-routing"></a>Deshabilitar el enrutamiento informado de red
+## <a name="disabling-informed-network-routing"></a>Deshabilitar el enrutamiento de red informado
 
-La característica de enrutamiento de red informada puede deshabilitarse para todo el inquilino mediante el restablecimiento de la configuración de la solución SD-WAN. Aunque esto detendrá todo el procesamiento de datos dentro de Microsoft 365, también debe deshabilitar el enrutamiento informado de red dentro del centro de administración.
+La característica de enrutamiento de red informada puede deshabilitarse para todo el inquilino mediante el restablecimiento de la configuración de la solución SD-WAN. Aunque esto detendrá todo el procesamiento de datos dentro de Microsoft 365, también debe deshabilitar el enrutamiento de red informado dentro del centro de administración.
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Paso 1: Abrir opciones de configuración de soluciones SD-WAN
 
@@ -160,12 +160,14 @@ La configuración se ha restablecido y se ha deshabilitado el enrutamiento de re
 
 ## <a name="data-storage"></a>Almacenamiento de datos
 
-Los datos intercambiados entre Microsoft y el proveedor de soluciones SD-WAN se almacenan en la ubicación de almacenamiento de datos seleccionada durante la habilitación inicial del enrutamiento informado de red. Las opciones de ubicación de almacenamiento de datos representan áreas geográficas que Microsoft Azure regiones donde se almacenan los datos.
+Los datos intercambiados entre Microsoft y el proveedor de soluciones SD-WAN se almacenan en la ubicación de almacenamiento de datos seleccionada durante la habilitación inicial del enrutamiento de red informado. Las opciones de ubicación de almacenamiento de datos representan áreas geográficas que Microsoft Azure regiones donde se almacenan los datos.
 
 >[!NOTE]
 >Durante la fase de vista previa, la única ubicación de almacenamiento de datos disponible es **Norteamérica.** Las ubicaciones de almacenamiento de datos adicionales estarán disponibles antes de la disponibilidad general del enrutamiento de red informado.
 
 Los datos se conservan en esta ubicación durante un máximo de 30 días. Cuando se deshabilita, todos los datos restantes se quitan dentro de esta ventana de retención de 30 días.
+
+Los datos de esta ubicación se intercambian con la solución SD-WAN seleccionada y es posible que la ubicación de la solución SD-WAN configurada no esté dentro de la misma región. Los clientes deben trabajar con su proveedor de soluciones SD-WAN para evaluar los requisitos de ubicación de almacenamiento de datos antes de la implementación de producción.
 
 ## <a name="related-topics"></a>Temas relacionados
 

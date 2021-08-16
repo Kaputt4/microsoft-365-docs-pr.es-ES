@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 41a2c73ce5e1c3060d88572f4fa7afe63e193f46
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 16599fc3941c2e3e86600ee5f45b3ea2eb43c6924259468c00edfdc773577338
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299993"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873555"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Ejemplo de un ataque de correo electrónico de suplantación de identidad
 
@@ -36,7 +36,7 @@ ms.locfileid: "52299993"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender puede ayudar a detectar datos adjuntos malintencionados entregados por correo electrónico. Dado que [el Centro](https://protection.office.com/) de seguridad y cumplimiento de Office 365 se integra con Microsoft 365 Defender, los analistas de seguridad pueden tener visibilidad de las amenazas procedentes de Office 365, como los datos adjuntos de correo electrónico.
+Microsoft 365 Defender puede ayudar a detectar datos adjuntos malintencionados entregados por correo electrónico. Dado que [el Centro de](https://protection.office.com/) seguridad y cumplimiento de Office 365 se integra con Microsoft 365 Defender, los analistas de seguridad pueden tener visibilidad de las amenazas procedentes de Office 365, como los datos adjuntos de correo electrónico.
 
 Por ejemplo, a un analista se le asignó un incidente de varias fases.
  
@@ -64,7 +64,7 @@ Otras acciones se pueden realizar en mensajes específicos seleccionando **Accio
 
 Consulta la [ruta de investigación de ataques basada](first-incident-path-identity.md) en identidades.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

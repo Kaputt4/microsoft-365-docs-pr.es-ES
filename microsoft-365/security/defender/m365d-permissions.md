@@ -1,5 +1,5 @@
 ---
-title: Administrar el acceso a Microsoft 365 Defender datos en el centro Microsoft 365 seguridad
+title: Administrar el acceso a Microsoft 365 Defender datos en el portal Microsoft 365 Defender web
 description: Obtenga información sobre cómo administrar los permisos de los datos en Microsoft 365 Defender
 keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 33b53356f4569954b2e5905b953bc1edaa7f750f8dff0d09133ec520a67ec615
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 61d76d873005c2bdd37fc37f05cf6e520a302647
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902204"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247961"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Administrar el acceso a Microsoft 365 Defender con Azure Active Directory roles globales
 
@@ -46,7 +46,7 @@ Las cuentas asignadas a **los siguientes roles Azure Active Directory global (AD
 - Lector global
 - Lector de seguridad
 
-Para revisar cuentas con estos roles, [vea los permisos en el centro de seguridad 365 de Microsoft](https://security.microsoft.com/permissions).
+Para revisar las cuentas con estos roles, [vea Permisos en el portal de Microsoft 365 Defender.](https://security.microsoft.com/permissions)
 
 **El acceso** a roles personalizado es una nueva funcionalidad en Microsoft 365 Defender y le permite administrar el acceso a datos, tareas y capacidades específicos en Microsoft Defender 365. Los roles personalizados ofrecen más control que los roles globales de Azure AD, lo que proporciona a los usuarios solo el acceso que necesitan con los roles menos permisivos necesarios.  Los roles personalizados se pueden crear además de los roles globales de Azure AD. [Obtenga más información sobre los roles personalizados](custom-roles.md).
 
